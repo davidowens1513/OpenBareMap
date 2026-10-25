@@ -1,0 +1,23 @@
+{
+  "coverage": [
+    -11,
+    51,
+    -5,
+    56
+  ],
+  "coast_context_bounds": [
+    -16.30824,
+    47.96052,
+    0,
+    56.86553
+  ],
+  "projected_crs": "EPSG:2157",
+  "ground_resolution_m": 30,
+  "contour_interval_m": 10,
+  "contour_simplification_m": 3,
+  "hillshade_altitude": 45,
+  "hillshade_zoom": 12,
+  "vector_maxzoom": 14,
+  "land_maxzoom": 12,
+  "hillshade_mode": "multidirectional"
+}

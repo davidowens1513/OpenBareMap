@@ -1,0 +1,53 @@
+{
+  "datasets": {
+    "basemap": {
+      "path": "build/ireland-a/basemap.mbtiles",
+      "sha256": "cbec80e11c080d779174a3f7b98f27b19050ebf5de373cc448c29971ed5a6e87"
+    },
+    "topography": {
+      "path": "build/topography-a/topography.mbtiles",
+      "sha256": "a6d187fe0ee38da4c7073a3a41ae04fb30b6525aaada400f4d2bdeef33915b5e"
+    },
+    "hillshade": {
+      "path": "build/hillshade-a/hillshade.mbtiles",
+      "sha256": "55d199c8ca56463286944c9ad2ef39c7ed3b844ebee151dafb11908ade2ac2e0"
+    }
+  },
+  "views": [
+    {
+      "name": "Kerry mountain detail",
+      "camera": {
+        "longitude": -9.742,
+        "latitude": 51.999,
+        "zoom": 13.5
+      },
+      "screenshot": "topography-preview.png",
+      "checks": [
+        "contours visible",
+        "index contour labels visible",
+        "shaded relief visible",
+        "paths and water visible",
+        "land remains visible beyond coast source maximum zoom"
+      ],
+      "screenshot_sha256": "4bb44f240db92e37fd68321832e6d427a695da99e21cec32a8aa168a27d12b4a"
+    },
+    {
+      "name": "Kerry coast",
+      "camera": {
+        "longitude": -10.21,
+        "latitude": 52.061,
+        "zoom": 8.34
+      },
+      "screenshot": "coast-preview.png",
+      "checks": [
+        "coastal land fill visible",
+        "sea remains blue with transparent terrain no-data",
+        "offshore islands visible",
+        "settlement labels visible"
+      ],
+      "screenshot_sha256": "3b70ce33a7b9add6097b73cb8c071859d17e35700f339e526ccb7aefa84aaaf5"
+    }
+  ],
+  "scope": "Representative views only; full cartographic acceptance remains pending",
+  "automated_tests": 9
+}

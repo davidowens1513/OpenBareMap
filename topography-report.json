@@ -1,0 +1,41 @@
+{
+  "coverage": "Whole island of Ireland and Northern Ireland; elevation grid -11 to -5 longitude, 51 to 56 latitude; coast includes surrounding context",
+  "contour_interval_m": 10,
+  "elevation_ground_resolution_m": 30,
+  "same_machine_repeatability": {
+    "topography.mbtiles": {
+      "logical_tiles_match": true,
+      "archive_bytes_match": true,
+      "metadata_match": true,
+      "bytes": 680263680,
+      "validation": {
+        "empty_tile_count": 151727,
+        "logical_tiles_sha256": "22444fc6c0d6fe439db6294a417fbd95eac458aae302abd8b9d0fd8ed08bec9d",
+        "tile_count": 219608
+      },
+      "artifact": "build/topography-a/topography.mbtiles"
+    },
+    "hillshade.mbtiles": {
+      "logical_tiles_match": true,
+      "archive_bytes_match": true,
+      "metadata_match": true,
+      "bytes": 105943040,
+      "validation": {
+        "empty_tile_count": 0,
+        "logical_tiles_sha256": "2a15c10ca1306303534950c991cf978da714f95f416f8980b53f213c862bad7b",
+        "tile_count": 4258
+      },
+      "artifact": "build/hillshade-a/hillshade.mbtiles",
+      "note": "Corrected no-data transparency; canonical SQLite packaging"
+    }
+  },
+  "limitations": [
+    "Portable container and complete shared-library pinning remain pending",
+    "Representative visual review is not complete cartographic acceptance",
+    "Road labels, hiking features, bridge and tunnel ordering remain pending"
+  ],
+  "elevation_checkpoints_match": true,
+  "sea_alpha_check": 0,
+  "raster_pipeline": "Independent raster stage from identical recorded projected elevation checkpoints",
+  "visual_review": "visual-review.json"
+}

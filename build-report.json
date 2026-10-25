@@ -1,0 +1,19 @@
+{
+  "coverage": "Full Geofabrik Ireland and Northern Ireland extract, no custom crop",
+  "source_snapshot_date": "2026-10-24",
+  "source_sha256": "ed9974ce4c9a2da813bddea4b7b978ed2047c90974ea1104e4521dabe3518aaa",
+  "logical_tiles_match": true,
+  "archive_bytes_match": true,
+  "validation": {
+    "empty_tile_count": 112,
+    "logical_tiles_sha256": "6c1de927093ca5e022b6d6652779f03264fbebb6713787147148beae72158bc3",
+    "tile_count": 56157
+  },
+  "output_bytes": 731512832,
+  "limitations": [
+    "Same-machine repeatability only; full dependency pinning remains pending",
+    "No rendered visual verification",
+    "Contours, hillshade, styling, fonts, coast polygons, route relations and complete label presentation remain unfinished"
+  ],
+  "metadata_match": true
+}

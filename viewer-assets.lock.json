@@ -1,0 +1,39 @@
+{
+  "assets": [
+    {
+      "path": "viewer/fonts/LICENSE-APACHE-2.0.txt",
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "origin": "OpenBareMap 1.1 reference bundle; Open Sans glyphs attributed there to OpenMapTiles fonts v2.0; generation recipe not yet recovered"
+    },
+    {
+      "path": "viewer/fonts/Open Sans Regular/0-255.pbf",
+      "sha256": "0c8bdb284f2ad6f69bbb434a0208393f3a517bc8bf7ed1eccc4ac4791ebbcbfe",
+      "origin": "OpenBareMap 1.1 reference bundle; Open Sans glyphs attributed there to OpenMapTiles fonts v2.0; generation recipe not yet recovered"
+    },
+    {
+      "path": "viewer/fonts/Open Sans Regular/256-511.pbf",
+      "sha256": "9962ad38d064edbeb226a6c7dcf1d58e7678508a805f980d2fe81bb3178ba68a",
+      "origin": "OpenBareMap 1.1 reference bundle; Open Sans glyphs attributed there to OpenMapTiles fonts v2.0; generation recipe not yet recovered"
+    },
+    {
+      "path": "viewer/fonts/Open Sans Regular/8192-8447.pbf",
+      "sha256": "a57611157f0597b267ef36eb07ce5a41dddcc3b2f3b5b85779108b7bb48b1cde",
+      "origin": "OpenBareMap 1.1 reference bundle; Open Sans glyphs attributed there to OpenMapTiles fonts v2.0; generation recipe not yet recovered"
+    },
+    {
+      "path": "viewer/vendor/LICENSE.txt",
+      "sha256": "ee5fc05a0677eaf69601d2c7db0d9ecd6cc27c3abc1d0733bc9ed34707cf8ef2",
+      "origin": "https://unpkg.com/maplibre-gl@5.6.1/LICENSE.txt"
+    },
+    {
+      "path": "viewer/vendor/maplibre-gl.css",
+      "sha256": "792ac997dcf6ae6f643eb4e2dee4630c85e7056526bd8fb85ffe83c67d6c41b4",
+      "origin": "https://unpkg.com/maplibre-gl@5.6.1/dist/maplibre-gl.css"
+    },
+    {
+      "path": "viewer/vendor/maplibre-gl.js",
+      "sha256": "b5a34e6930ff937dbbb9eec8892cffb80ba473cce88ae5ca8c4654432f5f0ebc",
+      "origin": "https://unpkg.com/maplibre-gl@5.6.1/dist/maplibre-gl.js"
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "layers": {
+    "water": {
+      "minzoom": 4,
+      "maxzoom": 14
+    },
+    "landcover": {
+      "minzoom": 4,
+      "maxzoom": 14
+    },
+    "waterway": {
+      "minzoom": 4,
+      "maxzoom": 14
+    },
+    "transportation": {
+      "minzoom": 4,
+      "maxzoom": 14
+    },
+    "building": {
+      "minzoom": 13,
+      "maxzoom": 14
+    },
+    "place": {
+      "minzoom": 4,
+      "maxzoom": 14
+    }
+  },
+  "settings": {
+    "minzoom": 4,
+    "maxzoom": 14,
+    "basezoom": 14,
+    "include_ids": true,
+    "compress": "gzip",
+    "name": "OpenBareMap Ireland and Northern Ireland",
+    "version": "0.1.0",
+    "description": "Fresh-build vector foundation, not a finished topographic map"
+  }
+}

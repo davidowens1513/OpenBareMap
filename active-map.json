@@ -1,0 +1,17 @@
+{
+  "format": "openbaremap-development-viewer-v1",
+  "datasets": {
+    "basemap": {
+      "path": "build/ireland-a/basemap.mbtiles",
+      "sha256": "cbec80e11c080d779174a3f7b98f27b19050ebf5de373cc448c29971ed5a6e87"
+    },
+    "topography": {
+      "path": "build/topography-a/topography.mbtiles",
+      "sha256": "a6d187fe0ee38da4c7073a3a41ae04fb30b6525aaada400f4d2bdeef33915b5e"
+    },
+    "hillshade": {
+      "path": "build/hillshade-a/hillshade.mbtiles",
+      "sha256": "55d199c8ca56463286944c9ad2ef39c7ed3b844ebee151dafb11908ade2ac2e0"
+    }
+  }
+}
