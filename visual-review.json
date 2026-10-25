@@ -1,8 +1,8 @@
 {
   "datasets": {
     "basemap": {
-      "path": "build/ireland-a/basemap.mbtiles",
-      "sha256": "cbec80e11c080d779174a3f7b98f27b19050ebf5de373cc448c29971ed5a6e87"
+      "path": "build/ireland-outdoors-a/basemap.mbtiles",
+      "sha256": "788b002ea7505e68436ec13c8056d82e295dcea79a4dc51c21bad99071b55721"
     },
     "topography": {
       "path": "build/topography-a/topography.mbtiles",
@@ -29,7 +29,22 @@
         "paths and water visible",
         "land remains visible beyond coast source maximum zoom"
       ],
-      "screenshot_sha256": "4bb44f240db92e37fd68321832e6d427a695da99e21cec32a8aa168a27d12b4a"
+      "screenshot_sha256": "4bb44f240db92e37fd68321832e6d427a695da99e21cec32a8aa168a27d12b4a",
+      "historical": true,
+      "datasets": {
+        "basemap": {
+          "path": "build/ireland-a/basemap.mbtiles",
+          "sha256": "cbec80e11c080d779174a3f7b98f27b19050ebf5de373cc448c29971ed5a6e87"
+        },
+        "topography": {
+          "path": "build/topography-a/topography.mbtiles",
+          "sha256": "a6d187fe0ee38da4c7073a3a41ae04fb30b6525aaada400f4d2bdeef33915b5e"
+        },
+        "hillshade": {
+          "path": "build/hillshade-a/hillshade.mbtiles",
+          "sha256": "55d199c8ca56463286944c9ad2ef39c7ed3b844ebee151dafb11908ade2ac2e0"
+        }
+      }
     },
     {
       "name": "Kerry coast",
@@ -45,9 +60,63 @@
         "offshore islands visible",
         "settlement labels visible"
       ],
-      "screenshot_sha256": "3b70ce33a7b9add6097b73cb8c071859d17e35700f339e526ccb7aefa84aaaf5"
+      "screenshot_sha256": "3b70ce33a7b9add6097b73cb8c071859d17e35700f339e526ccb7aefa84aaaf5",
+      "historical": true,
+      "datasets": {
+        "basemap": {
+          "path": "build/ireland-a/basemap.mbtiles",
+          "sha256": "cbec80e11c080d779174a3f7b98f27b19050ebf5de373cc448c29971ed5a6e87"
+        },
+        "topography": {
+          "path": "build/topography-a/topography.mbtiles",
+          "sha256": "a6d187fe0ee38da4c7073a3a41ae04fb30b6525aaada400f4d2bdeef33915b5e"
+        },
+        "hillshade": {
+          "path": "build/hillshade-a/hillshade.mbtiles",
+          "sha256": "55d199c8ca56463286944c9ad2ef39c7ed3b844ebee151dafb11908ade2ac2e0"
+        }
+      }
+    },
+    {
+      "name": "Kerry outdoor features",
+      "camera": {
+        "longitude": -9.742695,
+        "latitude": 51.999451,
+        "zoom": 14
+      },
+      "screenshot": "outdoors-preview.png",
+      "screenshot_sha256": "52a2993761dab18d71001eb28535965132bfb10ecb55cab45f7d05368bfaa0fb",
+      "checks": [
+        "summit icons and names",
+        "source elevation labels",
+        "shelter and viewpoint symbols",
+        "walking route highlight",
+        "summit popup preserves original OSM height"
+      ]
+    },
+    {
+      "name": "Wicklow outdoor features",
+      "camera": {
+        "longitude": -6.342,
+        "latitude": 53.012,
+        "zoom": 13
+      },
+      "screenshot": "wicklow-outdoors-preview.png",
+      "screenshot_sha256": "8b6b1022203a2ee802b921fe5d2c90c6ca7e9f9d19f1f5f71ad406ae7f38cb6c",
+      "checks": [
+        "walking route labels",
+        "guideposts",
+        "drinking water and toilets",
+        "summits and heights"
+      ]
     }
   ],
   "scope": "Representative views only; full cartographic acceptance remains pending",
-  "automated_tests": 9
+  "automated_tests": 12,
+  "map_version": "0.2.0",
+  "style_sha256": "152238e4eb39f008e9459f0290372fb07eaed6c97b0eef71f30ad535de547e04",
+  "style_preferences": {
+    "labels": "No white text halos",
+    "walking_routes": "No white outer casing"
+  }
 }

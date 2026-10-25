@@ -56,3 +56,22 @@ class ViewerTests(unittest.TestCase):
         names={Path(asset['path']).name for asset in lock['assets']}
         expected={f'N{lat:02d}W{abs(lon):03d}.hgt.gz' for lat in range(51,56) for lon in range(-11,-5)}
         self.assertEqual(names,expected)
+
+    def test_outdoor_sprite_atlases_are_complete_and_consistent(self):
+        import hashlib
+        import struct
+        first=json.loads((ROOT/'viewer/sprites/outdoors.json').read_text())
+        second=json.loads((ROOT/'viewer/sprites/outdoors@2x.json').read_text())
+        expected={'outdoor-'+name for name in ['peak','saddle','hut','shelter','trailhead','viewpoint','campsite','drinking_water','toilets','guidepost','parking','rescue']}
+        self.assertEqual(set(first),expected);self.assertEqual(set(second),expected)
+        for suffix,index,ratio in [('',first,1),('@2x',second,2)]:
+            data=(ROOT/f'viewer/sprites/outdoors{suffix}.png').read_bytes()
+            width,height=struct.unpack('>II',data[16:24])
+            for item in index.values():
+                self.assertEqual(item['pixelRatio'],ratio)
+                self.assertLessEqual(item['x']+item['width'],width)
+                self.assertLessEqual(item['y']+item['height'],height)
+        lock=json.loads((ROOT/'assets/sprites.lock.json').read_text())
+        for item in lock['assets']:
+            self.assertEqual(hashlib.sha256((ROOT/item['path']).read_bytes()).hexdigest(),item['sha256'])
+        self.assertEqual(hashlib.sha256((ROOT/'scripts/build_sprites.py').read_bytes()).hexdigest(),lock['generator_sha256'])

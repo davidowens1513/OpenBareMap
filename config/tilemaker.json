@@ -23,6 +23,22 @@
     "place": {
       "minzoom": 4,
       "maxzoom": 14
+    },
+    "mountain": {
+      "minzoom": 9,
+      "maxzoom": 14
+    },
+    "hiking_poi": {
+      "minzoom": 10,
+      "maxzoom": 14
+    },
+    "hiking_route": {
+      "minzoom": 8,
+      "maxzoom": 14
+    },
+    "natural_line": {
+      "minzoom": 12,
+      "maxzoom": 14
     }
   },
   "settings": {
@@ -32,7 +48,7 @@
     "include_ids": true,
     "compress": "gzip",
     "name": "OpenBareMap Ireland and Northern Ireland",
-    "version": "0.1.0",
-    "description": "Fresh-build vector foundation, not a finished topographic map"
+    "version": "0.2.0",
+    "description": "All-Ireland outdoor basemap with summits, hiking POIs and walking routes"
   }
 }

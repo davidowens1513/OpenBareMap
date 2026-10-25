@@ -75,6 +75,7 @@ class Handler(BaseHTTPRequestHandler):
                 if 'url' in source:source['url']=urljoin(base,source['url'])
                 if 'tiles' in source:source['tiles']=[urljoin(base,url) for url in source['tiles']]
             style['glyphs']=urljoin(base,style['glyphs'])
+            if 'sprite' in style:style['sprite']=urljoin(base,style['sprite'])
             self.reply(200, json.dumps(style).encode(), 'application/json')
             return
         name = 'index.html' if path == '/' else path.lstrip('/')

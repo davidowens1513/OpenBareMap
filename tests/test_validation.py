@@ -40,3 +40,10 @@ class TileValidationTests(unittest.TestCase):
             result = obm.inspect_tiles(path)
             self.assertEqual(result['tile_count'], 2)
             self.assertEqual(result['empty_tile_count'], 1)
+
+    def test_build_names_cannot_escape_the_build_directory(self):
+        import argparse
+        for name in ['../outside','/tmp/output','.', '', 'two words']:
+            with self.subTest(name=name):
+                with self.assertRaises(argparse.ArgumentTypeError):obm.build_name(name)
+        self.assertEqual(obm.build_name('ireland-outdoors-2026-a'),'ireland-outdoors-2026-a')

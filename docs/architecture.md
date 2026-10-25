@@ -6,7 +6,7 @@ OpenBareMap owns its source recipes, data schema, cartography and package format
 
 Inputs are immutable snapshots with provenance, acquisition date, snapshot date, exact content checksums and retrieval instructions. Tool versions and full runtime dependencies must be fixed. Generated outputs are never hand edited. Any cartographic correction must be expressed in a tracked input, transformation or style rule.
 
-The initial all-Ireland schema starts with water, land cover, waterways, transportation, buildings and place points. Their class attributes preserve source classifications; styling is separate. Settlement labels are now present in the reference viewer. Coastal land, contours, hillshade and settlement labels are now available. Complete label presentation, route relations and full cartographic acceptance remain unfinished. Polygon relation behavior needs fixture-based and real-world verification with the chosen Tilemaker version.
+The all-Ireland schema includes water, land cover, waterways, transportation, buildings, place points, mountains, outdoor POIs, walking-route relations and cliff lines. Their class attributes preserve source classifications; styling is separate. Settlement labels are now present in the reference viewer. Coastal land, contours, hillshade and settlement labels are now available. Direct walking-route relations, summits and hiking amenities are also implemented. Road labels, nested route semantics and full cartographic acceptance remain unfinished. Polygon relation behavior needs fixture-based and real-world verification with the chosen Tilemaker version.
 
 Do not carry forward separate overlay databases merely because the old package used them. Split physical databases only for distinct update cycles, size or rendering requirements. Vector basemap and raster hillshade are natural candidates; contour packaging remains a decision to test.
 
@@ -39,3 +39,9 @@ Official OSM land polygons supply a sea mask and coastal fill. Elevation grids a
 Raster and vector builds record their inputs separately. Current corrected raster artifacts are generated from recorded, identical elevation checkpoints without repeating unchanged contour processing. Raster archives are canonically packaged into fresh SQLite databases with fixed schema and row ordering. This removes file-layout differences without changing pixels. SQLite runtime version is recorded.
 
 The active development viewer selects three checksum-verified databases via active-map.json. Build records are preserved separately from later visual review. A portable fully pinned runtime and a final release package remain pending.
+
+## Outdoor schema 0.2
+
+Outdoor features are produced in the same OSM build as the base map, rather than patched into separate hand-maintained overlays. The new layers are mountain, hiking_poi, hiking_route and natural_line. Elevations retain their source strings and numeric metre values separately. OSM summit heights and DEM-derived contours have distinct provenance. Style expressions and sprite assets provide presentation; source classification does not embed icon or colour choices.
+
+Processing fixtures cover elevation parsing, unnamed summits, saddles, area POIs, access attributes, disused features and route acceptance. An inventory reads actual highest-zoom MVT features and deduplicates IDs to report emitted classes and example geometry. This is build-output evidence, not an independent audit of OSM completeness. Atlas tests verify symbol completeness, bounds, resolution variants and asset integrity.

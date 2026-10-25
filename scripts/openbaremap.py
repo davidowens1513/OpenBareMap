@@ -5,12 +5,18 @@ from contextlib import closing
 import gzip
 import hashlib
 import json
+import re
 import shutil
 import sqlite3
 import subprocess
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
+
+def build_name(value):
+    if not re.fullmatch(r'[a-z0-9][a-z0-9_-]{0,63}',value):
+        raise argparse.ArgumentTypeError('Use a short build name containing lowercase letters, digits, underscores or hyphens')
+    return value
 
 def digest(path):
     h = hashlib.sha256()
@@ -100,7 +106,7 @@ def build(args):
     from audit import audit
     write(destination / 'audit.json', audit(destination / 'basemap.mbtiles'))
     record['output_sha256'] = digest(destination / 'basemap.mbtiles')
-    record['status'] = 'validated vector foundation'
+    record['status'] = 'validated vector build'
     write(destination / 'build.json', record)
     print(json.dumps(record['validation'], indent=2))
 
@@ -112,9 +118,11 @@ def main():
     reg.add_argument('--url', required=True)
     reg.add_argument('--date', required=True, help='Actual source snapshot date, YYYY-MM-DD')
     run = sub.add_parser('build')
-    run.add_argument('name', choices=['ireland-a', 'ireland-b'])
+    run.add_argument('name',type=build_name)
     run.add_argument('--accept-toolchain', action='store_true')
-    sub.add_parser('compare')
+    compare = sub.add_parser('compare')
+    compare.add_argument('first',nargs='?',default='ireland-a',type=build_name)
+    compare.add_argument('second',nargs='?',default='ireland-b',type=build_name)
     args = parser.parse_args()
     try:
         if args.action == 'register':
@@ -124,8 +132,8 @@ def main():
         elif args.action == 'build':
             build(args)
         else:
-            a = inspect_tiles(ROOT / 'build/ireland-a/basemap.mbtiles')
-            b = inspect_tiles(ROOT / 'build/ireland-b/basemap.mbtiles')
+            a = inspect_tiles(ROOT / 'build' / args.first / 'basemap.mbtiles')
+            b = inspect_tiles(ROOT / 'build' / args.second / 'basemap.mbtiles')
             if a != b:
                 raise ValueError('Tile payloads differ between builds')
             print('PASS: coordinate-sorted, decompressed tile payloads match. Metadata and visual correctness require separate review.')
