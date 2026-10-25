@@ -16,6 +16,17 @@ The selected databases are recorded with checksums in `active-map.json`:
 
 This is a development map, not a finished OpenBareMap release. Road labels, summit and hiking features, routes, cliff detail, bridge/tunnel ordering, and other acceptance checks remain pending.
 
+## Restore the map and source snapshots
+
+The three selected map databases and the exact OSM, coast and elevation inputs are stored with Git LFS. Duplicate builds, failed runs and processing intermediates are excluded.
+
+```sh
+git lfs install --local
+git lfs pull
+```
+
+Run those commands inside a clone of this repository before opening the viewer or rebuilding. The LFS files are checked against the existing source locks and active map checksums. These snapshots provide recovery even when upstream download URLs change. Restoring the map does not require rebuilding it.
+
 ## Open the viewer
 
 From this project folder:
