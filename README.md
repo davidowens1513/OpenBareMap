@@ -101,8 +101,8 @@ The `hiking_route` layer contains direct OSM hiking, foot and walking route rela
 
 The `natural_line` layer preserves cliff lines. Their current dotted presentation does not assert which side is the drop; directional hachures are pending.
 
-Original outdoor symbols are generated from code without system fonts. To rebuild the 1x and 2x sprite atlases, install `assets/requirements.txt` in an isolated Python environment and run `python3 scripts/build_sprites.py`. The generator, Pillow version and output checksums are recorded in `assets/sprites.lock.json`. Lua processing fixtures run as part of the tests when a `lua` executable is installed; a missing Lua runtime is reported as a skipped test.
+The conventional white parking P on a blue square is generated from code without system fonts. No other pictograms are included in the atlas. To rebuild the 1x and 2x sprite atlases, install `assets/requirements.txt` in an isolated Python environment and run `python3 scripts/build_sprites.py`. The generator, Pillow version and output checksums are recorded in `assets/sprites.lock.json`. Lua processing fixtures run as part of the tests when a `lua` executable is installed; a missing Lua runtime is reported as a skipped test.
 
 The reference style uses plain labels without white halos and walking routes without white outer casings.
 
-Summits and viewpoints use text labels only in the reference style. Summit triangles and viewpoint-eye symbols remain unused in the sprite asset library. Other amenity and saddle symbols remain enabled.
+Outdoor features, including summits, saddles, viewpoints and amenities, use small dots with text labels. Parking alone uses the conventional white P on a blue square. Unnamed amenities and saddles receive generic text labels; named features keep their mapped names.

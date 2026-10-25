@@ -85,11 +85,11 @@
         "zoom": 14
       },
       "screenshot": "outdoors-preview.png",
-      "screenshot_sha256": "64f86157fd3a21930fab71df6ee45b0ae3cc1d4b9c0919fb2dfc0d8737457d25",
+      "screenshot_sha256": "6ebb18e52ee5f25839c19faa49957f2eeca645d467712975fdf83ee2dacc38eb",
       "checks": [
         "summit names without triangles",
         "source elevation labels",
-        "shelter symbols and viewpoint labels",
+        "dots and text labels for outdoor amenities",
         "walking route highlight",
         "summit popup preserves original OSM height"
       ]
@@ -97,28 +97,32 @@
     {
       "name": "Wicklow outdoor features",
       "camera": {
-        "longitude": -6.342,
+        "longitude": -6.329,
         "latitude": 53.012,
-        "zoom": 13
+        "zoom": 14
       },
       "screenshot": "wicklow-outdoors-preview.png",
-      "screenshot_sha256": "3dcb7dc047928f3e4c6fc4d29a26b82299bcd7c89fd8bfc566cf2547525fbea1",
+      "screenshot_sha256": "b0ca219b9a2e17cb3b0f52d26d94236def4fe2bee5a39d9c567b252a1d34c212",
       "checks": [
         "walking route labels",
         "guideposts",
         "drinking water and toilets",
-        "summits and heights"
+        "summits and heights",
+        "conventional white P on blue square for parking"
       ]
     }
   ],
   "scope": "Representative views only; full cartographic acceptance remains pending",
   "automated_tests": 12,
   "map_version": "0.2.0",
-  "style_sha256": "f05b2c916d3cc0ac5695437879ce16e9a0e0d13c3f3f505ae487ade08c6a41cb",
+  "style_sha256": "49ce0dc216a29be4aa80617f9962c545c5ff2a7db1853930e75c51ef93a03403",
   "style_preferences": {
     "labels": "No white text halos",
     "walking_routes": "No white outer casing",
-    "summits": "Labels only; no triangle",
-    "viewpoints": "Labels only; no eye pictogram"
+    "summits": "Dots and labels",
+    "viewpoints": "Dots and labels",
+    "outdoor_amenities": "Dots and labels",
+    "saddles": "Dots and labels",
+    "parking": "Conventional white P on a blue square"
   }
 }

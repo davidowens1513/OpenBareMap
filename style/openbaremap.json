@@ -1261,21 +1261,39 @@
       }
     },
     {
-      "id": "hiking-poi-symbols",
+      "id": "outdoor-feature-dots",
+      "type": "circle",
+      "source": "basemap",
+      "source-layer": "hiking_poi",
+      "minzoom": 10,
+      "filter": [
+        "!=",
+        [
+          "get",
+          "class"
+        ],
+        "parking"
+      ],
+      "paint": {
+        "circle-radius": 2.2,
+        "circle-color": "#354d40"
+      }
+    },
+    {
+      "id": "outdoor-feature-labels",
       "type": "symbol",
       "source": "basemap",
       "source-layer": "hiking_poi",
       "minzoom": 10,
-      "layout": {
-        "icon-image": [
-          "concat",
-          "outdoor-",
-          [
-            "get",
-            "class"
-          ]
+      "filter": [
+        "!=",
+        [
+          "get",
+          "class"
         ],
-        "icon-size": 0.7,
+        "parking"
+      ],
+      "layout": {
         "text-field": [
           "coalesce",
           [
@@ -1297,7 +1315,7 @@
               "class"
             ],
             "drinking_water",
-            "Water",
+            "Drinking water",
             "toilets",
             "Toilets",
             "hut",
@@ -1310,7 +1328,13 @@
             "Trailhead",
             "campsite",
             "Campsite",
-            ""
+            "guidepost",
+            "Guidepost",
+            "viewpoint",
+            "Viewpoint",
+            "parking",
+            "Parking",
+            "Feature"
           ]
         ],
         "text-font": [
@@ -1320,30 +1344,31 @@
         "text-anchor": "top",
         "text-offset": [
           0,
-          0.85
+          0.5
         ],
-        "text-max-width": 12,
-        "text-optional": true
+        "text-max-width": 12
       },
       "paint": {
         "text-color": "#354d40"
-      },
+      }
+    },
+    {
+      "id": "parking-symbols",
+      "type": "symbol",
+      "source": "basemap",
+      "source-layer": "hiking_poi",
+      "minzoom": 14,
       "filter": [
-        "!=",
+        "==",
         [
           "get",
           "class"
         ],
-        "viewpoint"
-      ]
-    },
-    {
-      "id": "viewpoint-labels",
-      "type": "symbol",
-      "source": "basemap",
-      "source-layer": "hiking_poi",
-      "minzoom": 10,
+        "parking"
+      ],
       "layout": {
+        "icon-image": "outdoor-parking",
+        "icon-size": 0.7,
         "text-field": [
           "coalesce",
           [
@@ -1358,30 +1383,33 @@
             "get",
             "name_ga"
           ],
-          "Viewpoint"
+          ""
         ],
         "text-font": [
           "Open Sans Regular"
         ],
         "text-size": 11,
-        "text-anchor": "center",
+        "text-anchor": "top",
         "text-offset": [
           0,
-          0
+          0.9
         ],
-        "text-max-width": 12
+        "text-optional": true
       },
       "paint": {
         "text-color": "#354d40"
-      },
-      "filter": [
-        "==",
-        [
-          "get",
-          "class"
-        ],
-        "viewpoint"
-      ]
+      }
+    },
+    {
+      "id": "mountain-dots",
+      "type": "circle",
+      "source": "basemap",
+      "source-layer": "mountain",
+      "minzoom": 9,
+      "paint": {
+        "circle-radius": 2.2,
+        "circle-color": "#4b382c"
+      }
     },
     {
       "id": "summit-labels",
@@ -1465,10 +1493,10 @@
           14,
           13
         ],
-        "text-anchor": "center",
+        "text-anchor": "top",
         "text-offset": [
           0,
-          0
+          0.5
         ],
         "text-max-width": 11,
         "text-line-height": 1.1,
@@ -1498,21 +1526,12 @@
       ]
     },
     {
-      "id": "saddle-symbols",
+      "id": "saddle-labels",
       "type": "symbol",
       "source": "basemap",
       "source-layer": "mountain",
       "minzoom": 9,
       "layout": {
-        "icon-image": [
-          "concat",
-          "outdoor-",
-          [
-            "get",
-            "class"
-          ]
-        ],
-        "icon-size": 0.72,
         "text-field": [
           "concat",
           [
@@ -1529,36 +1548,13 @@
               "get",
               "name_ga"
             ],
-            ""
+            "Saddle"
           ],
           [
             "case",
             [
-              "all",
-              [
-                "!=",
-                [
-                  "coalesce",
-                  [
-                    "get",
-                    "name_en"
-                  ],
-                  [
-                    "get",
-                    "name"
-                  ],
-                  [
-                    "get",
-                    "name_ga"
-                  ],
-                  ""
-                ],
-                ""
-              ],
-              [
-                "has",
-                "ele_label"
-              ]
+              "has",
+              "ele_label"
             ],
             "\n",
             ""
@@ -1591,11 +1587,10 @@
         "text-anchor": "top",
         "text-offset": [
           0,
-          0.85
+          0.5
         ],
         "text-max-width": 11,
         "text-line-height": 1.1,
-        "text-optional": true,
         "symbol-sort-key": [
           "-",
           0,

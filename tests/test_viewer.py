@@ -62,7 +62,7 @@ class ViewerTests(unittest.TestCase):
         import struct
         first=json.loads((ROOT/'viewer/sprites/outdoors.json').read_text())
         second=json.loads((ROOT/'viewer/sprites/outdoors@2x.json').read_text())
-        expected={'outdoor-'+name for name in ['peak','saddle','hut','shelter','trailhead','viewpoint','campsite','drinking_water','toilets','guidepost','parking','rescue']}
+        expected={'outdoor-parking'}
         self.assertEqual(set(first),expected);self.assertEqual(set(second),expected)
         for suffix,index,ratio in [('',first,1),('@2x',second,2)]:
             data=(ROOT/f'viewer/sprites/outdoors{suffix}.png').read_bytes()
