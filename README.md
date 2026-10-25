@@ -109,4 +109,4 @@ Outdoor features, including summits, saddles, viewpoints and amenities, use smal
 
 Contour labels cover every 50-metre interval from zoom 12, with 200-pixel repeat spacing (50% more placement opportunities than the original 300-pixel spacing). Collision handling still determines the actual number shown. Legend dash swatches read the map paint properties and convert line-width-relative dash lengths into SVG lengths at the current zoom. See `legend-preview.png` for the current style; the separate contour preview images record the preceding adjustments.
 
-Hillshade display opacity is 30% so contours remain the stronger terrain cue.
+Hillshade display opacity is 45%, paired with contour strokes 40% heavier than the original style so relief and contours remain legible together.

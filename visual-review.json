@@ -146,13 +146,29 @@
       "checks": [
         "lighter relief",
         "10-metre contour lines and 50-metre labels remain visible"
+      ],
+      "historical": true
+    },
+    {
+      "name": "Balanced hillshade and heavier contours",
+      "camera": {
+        "longitude": -9.91954,
+        "latitude": 51.89755,
+        "zoom": 13.85
+      },
+      "screenshot": "terrain-balance-preview.png",
+      "screenshot_sha256": "d8ec5db010ec12fe17fe2b34d0b0155a578962eccbcab9663fc660b699f77d5d",
+      "style_sha256": "afbe1dc4ea05695f2de849380a9022c33f810b787fdf89f30b16441f4b860587",
+      "checks": [
+        "stronger hillshade",
+        "heavier contour strokes remain visible over relief"
       ]
     }
   ],
   "scope": "Representative views only; full cartographic acceptance remains pending",
   "automated_tests": 12,
   "map_version": "0.2.0",
-  "style_sha256": "12f366f2f72295c04d6a2b7f45dac5b79433f7957be60203e447435b194119b9",
+  "style_sha256": "afbe1dc4ea05695f2de849380a9022c33f810b787fdf89f30b16441f4b860587",
   "style_preferences": {
     "labels": "No white text halos",
     "walking_routes": "No white outer casing",
@@ -161,6 +177,7 @@
     "outdoor_amenities": "Dots and labels",
     "saddles": "Dots and labels",
     "parking": "Conventional white P on a blue square",
-    "hillshade": "30% display opacity; contours remain above hillshade"
+    "hillshade": "45% display opacity",
+    "contours": "40% heavier than original stroke widths; 1.19px index, 0.84px intermediate, 0.56px detail"
   }
 }

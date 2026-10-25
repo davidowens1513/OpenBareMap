@@ -90,7 +90,7 @@
       "source": "hillshade",
       "minzoom": 6,
       "paint": {
-        "raster-opacity": 0.3,
+        "raster-opacity": 0.45,
         "raster-fade-duration": 0
       }
     },
@@ -245,7 +245,7 @@
       ],
       "paint": {
         "line-color": "#a38b69",
-        "line-width": 0.85,
+        "line-width": 1.19,
         "line-opacity": 0.72
       }
     },
@@ -284,7 +284,7 @@
       ],
       "paint": {
         "line-color": "#a38b69",
-        "line-width": 0.6,
+        "line-width": 0.84,
         "line-opacity": 0.72
       }
     },
@@ -323,7 +323,7 @@
       ],
       "paint": {
         "line-color": "#a38b69",
-        "line-width": 0.4,
+        "line-width": 0.56,
         "line-opacity": 0.72
       }
     },
