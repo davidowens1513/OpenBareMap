@@ -130,13 +130,29 @@
         "50-metre contour labels visible",
         "denser 200-pixel repeat spacing",
         "no white route casing or label halos"
+      ],
+      "historical": true
+    },
+    {
+      "name": "Contour visibility with lighter hillshade",
+      "camera": {
+        "longitude": -9.93175,
+        "latitude": 51.89464,
+        "zoom": 14.65
+      },
+      "screenshot": "lighter-hillshade-preview.png",
+      "screenshot_sha256": "31c775a9acf592250a05553729ce5982087ed489a68fed1afc1e7e870474b4dc",
+      "style_sha256": "12f366f2f72295c04d6a2b7f45dac5b79433f7957be60203e447435b194119b9",
+      "checks": [
+        "lighter relief",
+        "10-metre contour lines and 50-metre labels remain visible"
       ]
     }
   ],
   "scope": "Representative views only; full cartographic acceptance remains pending",
   "automated_tests": 12,
   "map_version": "0.2.0",
-  "style_sha256": "a45e5a3fce612e967fc42d04223e91d4e2627723fd50222acaf8faa567fa27e3",
+  "style_sha256": "12f366f2f72295c04d6a2b7f45dac5b79433f7957be60203e447435b194119b9",
   "style_preferences": {
     "labels": "No white text halos",
     "walking_routes": "No white outer casing",
@@ -144,6 +160,7 @@
     "viewpoints": "Dots and labels",
     "outdoor_amenities": "Dots and labels",
     "saddles": "Dots and labels",
-    "parking": "Conventional white P on a blue square"
+    "parking": "Conventional white P on a blue square",
+    "hillshade": "30% display opacity; contours remain above hillshade"
   }
 }

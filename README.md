@@ -108,3 +108,5 @@ The reference style uses plain labels without white halos and walking routes wit
 Outdoor features, including summits, saddles, viewpoints and amenities, use small dots with text labels. Parking alone uses the conventional white P on a blue square. Unnamed amenities and saddles receive generic text labels; named features keep their mapped names.
 
 Contour labels cover every 50-metre interval from zoom 12, with 200-pixel repeat spacing (50% more placement opportunities than the original 300-pixel spacing). Collision handling still determines the actual number shown. Legend dash swatches read the map paint properties and convert line-width-relative dash lengths into SVG lengths at the current zoom. See `legend-preview.png` for the current style; the separate contour preview images record the preceding adjustments.
+
+Hillshade display opacity is 30% so contours remain the stronger terrain cue.
