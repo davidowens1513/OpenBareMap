@@ -1,0 +1,212 @@
+{
+  "zoom": 14,
+  "distinct_emitted_feature_ids_by_class": {
+    "landcover": {
+      "bare_rock": 11851,
+      "beach": 1771,
+      "bog": 5044,
+      "farmland": 73932,
+      "grass": 239781,
+      "heath": 4010,
+      "peat_cutting": 4,
+      "scree": 467,
+      "scrub": 24901,
+      "wetland": 8468,
+      "wood": 99944
+    }
+  },
+  "examples": {
+    "landcover": {
+      "bare_rock": {
+        "class": "bare_rock",
+        "natural": "bare_rock",
+        "name": "Tearaght Rocks",
+        "first_coordinate": [
+          -10.668932,
+          52.073868
+        ],
+        "id": 639496240
+      },
+      "beach": {
+        "class": "beach",
+        "natural": "beach",
+        "first_coordinate": [
+          -10.512956,
+          52.106219
+        ],
+        "id": 305104931
+      },
+      "bog": {
+        "natural": "wetland",
+        "class": "bog",
+        "wetland": "bog",
+        "first_coordinate": [
+          -10.372907,
+          52.128835
+        ],
+        "id": 1310632672
+      },
+      "farmland": {
+        "class": "farmland",
+        "landuse": "farmland",
+        "first_coordinate": [
+          -10.417539,
+          52.164041
+        ],
+        "id": 1064448855
+      },
+      "grass": {
+        "class": "grass",
+        "landuse": "meadow",
+        "first_coordinate": [
+          -10.415232,
+          52.165387
+        ],
+        "id": 1064448856
+      },
+      "heath": {
+        "class": "heath",
+        "natural": "heath",
+        "first_coordinate": [
+          -10.436395,
+          52.102278
+        ],
+        "id": 1064454467
+      },
+      "peat_cutting": {
+        "class": "peat_cutting",
+        "landuse": "peat_cutting",
+        "first_coordinate": [
+          -7.197198,
+          55.198994
+        ],
+        "id": 560575443
+      },
+      "scree": {
+        "class": "scree",
+        "natural": "scree",
+        "first_coordinate": [
+          -10.503568,
+          52.115753
+        ],
+        "id": 685108102
+      },
+      "scrub": {
+        "class": "scrub",
+        "natural": "scrub",
+        "first_coordinate": [
+          -10.403162,
+          52.137647
+        ],
+        "id": 1310767153
+      },
+      "wetland": {
+        "class": "wetland",
+        "natural": "wetland",
+        "wetland": "marsh",
+        "first_coordinate": [
+          -10.388625,
+          52.112432
+        ],
+        "id": 203255322
+      },
+      "wood": {
+        "class": "wood",
+        "landuse": "forest",
+        "first_coordinate": [
+          -10.414824,
+          52.173001
+        ],
+        "id": 207739287
+      }
+    }
+  },
+  "note": "Distinct emitted MVT IDs, not an independent source completeness audit. Coordinates mark first geometry points.",
+  "build_a": {
+    "command": [
+      "/usr/local/bin/tilemaker",
+      "--input",
+      "/Users/davidowens/Documents/Codex/2026-10-25/i-x20/outputs/OpenBareMap/data/ireland-and-northern-ireland-261024.osm.pbf",
+      "--output",
+      "/Users/davidowens/Documents/Codex/2026-10-25/i-x20/outputs/OpenBareMap/build/ireland-landcover-a/basemap.mbtiles",
+      "--config",
+      "/Users/davidowens/Documents/Codex/2026-10-25/i-x20/outputs/OpenBareMap/build/ireland-landcover-a/tilemaker.json",
+      "--process",
+      "/Users/davidowens/Documents/Codex/2026-10-25/i-x20/outputs/OpenBareMap/build/ireland-landcover-a/process.lua",
+      "--threads",
+      "1"
+    ],
+    "config_sha256": "d880f215335fc7a4559ba2a737ece5c4a2d25bbada8d77966773725ee4d6cf91",
+    "exit_code": 0,
+    "output_sha256": "7a6937ca3d1da0b56c8f95e683622dd03092baabcd49d20d8a441f1ce19c8ed3",
+    "process_sha256": "baa33a03807a5cca300930907910af815901d4dd058f62f64949236aad8d7a65",
+    "region": {
+      "coverage": "Complete Ireland and Northern Ireland OSM extract; preserve source extent without a custom crop",
+      "maxzoom": 14,
+      "minzoom": 4,
+      "name": "OpenBareMap Ireland and Northern Ireland",
+      "status": "Development outdoor map with summits, hiking amenities, walking routes, coastal land, contours and hillshade; cartographic acceptance pending"
+    },
+    "source": {
+      "bytes": 416526430,
+      "path": "data/ireland-and-northern-ireland-261024.osm.pbf",
+      "sha256": "ed9974ce4c9a2da813bddea4b7b978ed2047c90974ea1104e4521dabe3518aaa",
+      "snapshot_date": "2026-10-24",
+      "url": "https://download.geofabrik.de/europe/ireland-and-northern-ireland-261024.osm.pbf"
+    },
+    "status": "validated vector build",
+    "toolchain": {
+      "sha256": "d43847b5d5662b9139461921d55bfab56f3db2098946209a5c7a26b03255b123",
+      "version": "tilemaker v3.1.0+ge16203e4e2fb"
+    },
+    "validation": {
+      "empty_tile_count": 110,
+      "logical_tiles_sha256": "c61aed4bd47b96173358ce5aef5091ef578e6a46fcdfef0c2e4d65d9caa6f6ed",
+      "tile_count": 56345
+    }
+  },
+  "build_b": {
+    "command": [
+      "/usr/local/bin/tilemaker",
+      "--input",
+      "/Users/davidowens/Documents/Codex/2026-10-25/i-x20/outputs/OpenBareMap/data/ireland-and-northern-ireland-261024.osm.pbf",
+      "--output",
+      "/Users/davidowens/Documents/Codex/2026-10-25/i-x20/outputs/OpenBareMap/build/ireland-landcover-b/basemap.mbtiles",
+      "--config",
+      "/Users/davidowens/Documents/Codex/2026-10-25/i-x20/outputs/OpenBareMap/build/ireland-landcover-b/tilemaker.json",
+      "--process",
+      "/Users/davidowens/Documents/Codex/2026-10-25/i-x20/outputs/OpenBareMap/build/ireland-landcover-b/process.lua",
+      "--threads",
+      "1"
+    ],
+    "config_sha256": "d880f215335fc7a4559ba2a737ece5c4a2d25bbada8d77966773725ee4d6cf91",
+    "exit_code": 0,
+    "output_sha256": "7a6937ca3d1da0b56c8f95e683622dd03092baabcd49d20d8a441f1ce19c8ed3",
+    "process_sha256": "baa33a03807a5cca300930907910af815901d4dd058f62f64949236aad8d7a65",
+    "region": {
+      "coverage": "Complete Ireland and Northern Ireland OSM extract; preserve source extent without a custom crop",
+      "maxzoom": 14,
+      "minzoom": 4,
+      "name": "OpenBareMap Ireland and Northern Ireland",
+      "status": "Development outdoor map with summits, hiking amenities, walking routes, coastal land, contours and hillshade; cartographic acceptance pending"
+    },
+    "source": {
+      "bytes": 416526430,
+      "path": "data/ireland-and-northern-ireland-261024.osm.pbf",
+      "sha256": "ed9974ce4c9a2da813bddea4b7b978ed2047c90974ea1104e4521dabe3518aaa",
+      "snapshot_date": "2026-10-24",
+      "url": "https://download.geofabrik.de/europe/ireland-and-northern-ireland-261024.osm.pbf"
+    },
+    "status": "validated vector build",
+    "toolchain": {
+      "sha256": "d43847b5d5662b9139461921d55bfab56f3db2098946209a5c7a26b03255b123",
+      "version": "tilemaker v3.1.0+ge16203e4e2fb"
+    },
+    "validation": {
+      "empty_tile_count": 110,
+      "logical_tiles_sha256": "c61aed4bd47b96173358ce5aef5091ef578e6a46fcdfef0c2e4d65d9caa6f6ed",
+      "tile_count": 56345
+    }
+  },
+  "archives_byte_identical": true
+}

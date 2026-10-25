@@ -10,9 +10,9 @@ data/elevation/*
 !data/elevation/*.hgt.gz
 build/*
 !build/.gitkeep
-!build/ireland-outdoors-a/
-build/ireland-outdoors-a/*
-!build/ireland-outdoors-a/basemap.mbtiles
+!build/ireland-landcover-a/
+build/ireland-landcover-a/*
+!build/ireland-landcover-a/basemap.mbtiles
 !build/topography-a/
 build/topography-a/*
 !build/topography-a/topography.mbtiles

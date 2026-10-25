@@ -179,5 +179,23 @@
     "parking": "Conventional white P on a blue square",
     "hillshade": "45% display opacity",
     "contours": "40% heavier than original stroke widths; 1.19px index, 0.84px intermediate, 0.56px detail"
+  },
+  "landcover_0_3": {
+    "style_sha256": "bdd1f62bc5e44455ab88f8d6edfc81a7708edc4a10834fd07e5ecb25a70a8589",
+    "basemap": {
+      "path": "build/ireland-landcover-a/basemap.mbtiles",
+      "sha256": "7a6937ca3d1da0b56c8f95e683622dd03092baabcd49d20d8a441f1ce19c8ed3"
+    },
+    "views": [
+      {
+        "image": "landcover-preview.png",
+        "url": "http://127.0.0.1:8765/#13/52.1288/-10.3729"
+      },
+      {
+        "image": "rock-scree-preview.png",
+        "url": "http://127.0.0.1:8765/#13.5/51.99945/-9.74269"
+      }
+    ],
+    "review": "Separate muted terrain fills; current hillshade, contour weights and labels retained. Coverage follows mapped OSM tags."
   }
 }

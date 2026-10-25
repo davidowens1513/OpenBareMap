@@ -1,4 +1,4 @@
--- OpenBareMap schema 0.2. Cartographic presentation belongs in the style.
+-- OpenBareMap schema 0.3. Cartographic presentation belongs in the style.
 node_keys = {"place", "natural", "tourism", "amenity", "highway", "information", "emergency"}
 way_keys = {"highway", "waterway", "natural", "landuse", "building", "tourism", "amenity", "information", "emergency"}
 
@@ -130,10 +130,18 @@ function way_function()
     end
     local classes = {wood="wood", forest="wood", heath="heath", scrub="scrub", grassland="grass", meadow="grass", grass="grass", farmland="farmland", wetland="wetland", beach="beach"}
     local class = classes[Find("landuse")] or classes[Find("natural")]
+    -- Explicit terrain classes take precedence over broad land-use tags.
+    local natural, wetland = Find("natural"), Find("wetland")
+    if Find("landuse") == "peat_cutting" then class = "peat_cutting"
+    elseif natural == "bare_rock" or natural == "scree" then class = natural
+    elseif natural == "wetland" and (wetland == "bog" or wetland == "string_bog") then class = "bog" end
     if class then
       Layer("landcover", true)
       Attribute("class", class)
       attribute("wetland")
+      attribute("natural")
+      attribute("landuse")
+      names()
     end
     if Find("building") ~= "" then
       Layer("building", true)

@@ -3,7 +3,7 @@
   "name": "OpenBareMap outdoors",
   "metadata": {
     "status": "Development outdoor cartography; broader acceptance and road structure ordering pending",
-    "version": "0.2.0"
+    "version": "0.3.0"
   },
   "glyphs": "../fonts/{fontstack}/{range}.pbf",
   "sources": {
@@ -81,6 +81,97 @@
           "#efe0a2",
           "#e4e6cf"
         ],
+        "fill-opacity": 0.85
+      },
+      "filter": [
+        "!",
+        [
+          "in",
+          [
+            "get",
+            "class"
+          ],
+          [
+            "literal",
+            [
+              "bog",
+              "peat_cutting",
+              "bare_rock",
+              "scree"
+            ]
+          ]
+        ]
+      ]
+    },
+    {
+      "id": "landcover-bog",
+      "type": "fill",
+      "source": "basemap",
+      "source-layer": "landcover",
+      "filter": [
+        "==",
+        [
+          "get",
+          "class"
+        ],
+        "bog"
+      ],
+      "paint": {
+        "fill-color": "#c9b7ae",
+        "fill-opacity": 0.85
+      }
+    },
+    {
+      "id": "landcover-peat_cutting",
+      "type": "fill",
+      "source": "basemap",
+      "source-layer": "landcover",
+      "filter": [
+        "==",
+        [
+          "get",
+          "class"
+        ],
+        "peat_cutting"
+      ],
+      "paint": {
+        "fill-color": "#b99c8a",
+        "fill-opacity": 0.85
+      }
+    },
+    {
+      "id": "landcover-bare_rock",
+      "type": "fill",
+      "source": "basemap",
+      "source-layer": "landcover",
+      "filter": [
+        "==",
+        [
+          "get",
+          "class"
+        ],
+        "bare_rock"
+      ],
+      "paint": {
+        "fill-color": "#d1d0c9",
+        "fill-opacity": 0.85
+      }
+    },
+    {
+      "id": "landcover-scree",
+      "type": "fill",
+      "source": "basemap",
+      "source-layer": "landcover",
+      "filter": [
+        "==",
+        [
+          "get",
+          "class"
+        ],
+        "scree"
+      ],
+      "paint": {
+        "fill-color": "#c4beb0",
         "fill-opacity": 0.85
       }
     },

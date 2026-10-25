@@ -32,8 +32,9 @@ def first_point(data,extent,z,x,tms_y):
     gy=((2**z-1-tms_y)+py/extent)/(2**z)
     return [round(gx*360-180,6),round(math.degrees(math.atan(math.sinh(math.pi*(1-2*gy)))),6)]
 
-def inventory(path):
-    features={name:{} for name in LAYERS}
+def inventory(path, layers=None):
+    selected = LAYERS if layers is None else set(layers)
+    features={name:{} for name in selected}
     with closing(sqlite3.connect(Path(path).resolve().as_uri()+'?mode=ro',uri=True)) as db:
         zoom=db.execute('SELECT MAX(zoom_level) FROM tiles').fetchone()[0]
         for x,y,payload in db.execute('SELECT tile_column,tile_row,tile_data FROM tiles WHERE zoom_level=? ORDER BY tile_column,tile_row',(zoom,)):
@@ -41,7 +42,7 @@ def inventory(path):
             for number,wire,layer in fields(payload):
                 if number!=3 or wire!=2:continue
                 entries=list(fields(layer));name=next(item.decode() for n,w,item in entries if n==1)
-                if name not in LAYERS:continue
+                if name not in selected:continue
                 keys=[item.decode() for n,w,item in entries if n==3]
                 values=[value(item) for n,w,item in entries if n==4]
                 extent=next((item for n,w,item in entries if n==5),4096)
@@ -58,6 +59,10 @@ def inventory(path):
                     attrs['first_coordinate']=first_point(geometry,extent,zoom,x,y)
                     attrs['id']=identifier;features[name][identifier]=attrs
     counts={name:dict(sorted(Counter(f['class'] for f in items.values()).items())) for name,items in sorted(features.items())}
+    if layers is not None:
+        return {'zoom':zoom,'distinct_emitted_feature_ids_by_class':counts,
+                'examples':{name:{cl:next(f for f in items.values() if f['class']==cl) for cl in counts[name]} for name,items in features.items()},
+                'note':'Distinct emitted MVT IDs, not an independent source completeness audit. Coordinates mark first geometry points.'}
     peaks=sorted((f for f in features['mountain'].values() if f['class']=='peak' and 'ele_m' in f),key=lambda f:-f['ele_m'])[:20]
     routes=sorted((f for f in features['hiking_route'].values() if any(word in (f.get('name_en','')+' '+f.get('name','')).lower() for word in ['wicklow','kerry way','dingle way','ulster way'])),key=lambda f:f.get('name_en',f.get('name','')))[:20]
     if not all(features.values()):raise ValueError('Missing outdoor layer features')

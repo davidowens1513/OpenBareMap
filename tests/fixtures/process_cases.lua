@@ -48,3 +48,19 @@ run("relation",{type="route",route="foot",network="lwn"});assert(find("hiking_ro
 run("relation",{type="route",route="hiking",state="proposed"});assert(not accepted and #emitted==0)
 run("relation",{type="route",route="bicycle"});assert(not accepted and #emitted==0)
 print("Outdoor classification, elevations, access attributes, area POIs and route rules passed.")
+
+for _, case in ipairs({
+  {{natural="wetland",wetland="bog"},"bog"},
+  {{natural="wetland",wetland="string_bog",landuse="forest"},"bog"},
+  {{natural="wetland",wetland="fen"},"wetland"},
+  {{landuse="peat_cutting",natural="wetland",wetland="bog"},"peat_cutting"},
+  {{natural="bare_rock",landuse="grass"},"bare_rock"},
+  {{natural="scree"},"scree"}
+}) do
+  run("way",case[1],true)
+  assert(find("landcover").attributes.class==case[2])
+  assert(find("landcover").attributes.natural==case[1].natural)
+end
+run("way",{natural="scree"},false);assert(not find("landcover"))
+run("way",{highway="track",surface="gravel"},true);assert(not find("landcover"))
+print("Bog, peat workings, rock and scree classification passed.")

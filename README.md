@@ -110,3 +110,10 @@ Outdoor features, including summits, saddles, viewpoints and amenities, use smal
 Contour labels cover every 50-metre interval from zoom 12, with 200-pixel repeat spacing (50% more placement opportunities than the original 300-pixel spacing). Collision handling still determines the actual number shown. Legend dash swatches read the map paint properties and convert line-width-relative dash lengths into SVG lengths at the current zoom. See `legend-preview.png` for the current style; the separate contour preview images record the preceding adjustments.
 
 Hillshade display opacity is 45%, paired with contour strokes 40% heavier than the original style so relief and contours remain legible together.
+
+
+## Land cover in version 0.3
+
+Mapped bog (`natural=wetland` with `wetland=bog` or `string_bog`), peat workings (`landuse=peat_cutting`), bare rock and scree have separate classes and muted fills. Fen and other wetlands retain the general wetland class. Natural, land-use and wetland tags and names are preserved for inspection. Explicit terrain classifications take precedence over broad land-use tags on the same feature; these fills draw above general land cover and below hillshade and contours. Unmapped land remains unclassified. This update does not supply missing coverage or establish ground conditions.
+
+Classification references: [OSM bog](https://wiki.openstreetmap.org/wiki/Tag:wetland=bog), [peat cutting](https://wiki.openstreetmap.org/wiki/Tag:landuse=peat_cutting), [bare rock](https://wiki.openstreetmap.org/wiki/Tag:natural=bare_rock), [scree](https://wiki.openstreetmap.org/wiki/Tag:natural=scree).
