@@ -92,7 +92,9 @@
         "dots and text labels for outdoor amenities",
         "walking route highlight",
         "summit popup preserves original OSM height"
-      ]
+      ],
+      "historical": true,
+      "style_sha256": "49ce0dc216a29be4aa80617f9962c545c5ff2a7db1853930e75c51ef93a03403"
     },
     {
       "name": "Wicklow outdoor features",
@@ -109,13 +111,32 @@
         "drinking water and toilets",
         "summits and heights",
         "conventional white P on blue square for parking"
+      ],
+      "historical": true,
+      "style_sha256": "49ce0dc216a29be4aa80617f9962c545c5ff2a7db1853930e75c51ef93a03403"
+    },
+    {
+      "name": "Legend and 50-metre contour labels",
+      "camera": {
+        "longitude": -9.742695,
+        "latitude": 51.999451,
+        "zoom": 14
+      },
+      "screenshot": "legend-preview.png",
+      "screenshot_sha256": "ab7dcf54fbc6f1bd7e5bf91853cb411592728cf3d960377ee09f5cd112967f00",
+      "style_sha256": "a45e5a3fce612e967fc42d04223e91d4e2627723fd50222acaf8faa567fa27e3",
+      "checks": [
+        "legend path, track and walking route dashes read the map style",
+        "50-metre contour labels visible",
+        "denser 200-pixel repeat spacing",
+        "no white route casing or label halos"
       ]
     }
   ],
   "scope": "Representative views only; full cartographic acceptance remains pending",
   "automated_tests": 12,
   "map_version": "0.2.0",
-  "style_sha256": "49ce0dc216a29be4aa80617f9962c545c5ff2a7db1853930e75c51ef93a03403",
+  "style_sha256": "a45e5a3fce612e967fc42d04223e91d4e2627723fd50222acaf8faa567fa27e3",
   "style_preferences": {
     "labels": "No white text halos",
     "walking_routes": "No white outer casing",
