@@ -1327,10 +1327,178 @@
       },
       "paint": {
         "text-color": "#354d40"
-      }
+      },
+      "filter": [
+        "!=",
+        [
+          "get",
+          "class"
+        ],
+        "viewpoint"
+      ]
     },
     {
-      "id": "mountain-symbols",
+      "id": "viewpoint-labels",
+      "type": "symbol",
+      "source": "basemap",
+      "source-layer": "hiking_poi",
+      "minzoom": 10,
+      "layout": {
+        "text-field": [
+          "coalesce",
+          [
+            "get",
+            "name_en"
+          ],
+          [
+            "get",
+            "name"
+          ],
+          [
+            "get",
+            "name_ga"
+          ],
+          "Viewpoint"
+        ],
+        "text-font": [
+          "Open Sans Regular"
+        ],
+        "text-size": 11,
+        "text-anchor": "center",
+        "text-offset": [
+          0,
+          0
+        ],
+        "text-max-width": 12
+      },
+      "paint": {
+        "text-color": "#354d40"
+      },
+      "filter": [
+        "==",
+        [
+          "get",
+          "class"
+        ],
+        "viewpoint"
+      ]
+    },
+    {
+      "id": "summit-labels",
+      "type": "symbol",
+      "source": "basemap",
+      "source-layer": "mountain",
+      "minzoom": 9,
+      "layout": {
+        "text-field": [
+          "concat",
+          [
+            "coalesce",
+            [
+              "get",
+              "name_en"
+            ],
+            [
+              "get",
+              "name"
+            ],
+            [
+              "get",
+              "name_ga"
+            ],
+            ""
+          ],
+          [
+            "case",
+            [
+              "all",
+              [
+                "!=",
+                [
+                  "coalesce",
+                  [
+                    "get",
+                    "name_en"
+                  ],
+                  [
+                    "get",
+                    "name"
+                  ],
+                  [
+                    "get",
+                    "name_ga"
+                  ],
+                  ""
+                ],
+                ""
+              ],
+              [
+                "has",
+                "ele_label"
+              ]
+            ],
+            "\n",
+            ""
+          ],
+          [
+            "coalesce",
+            [
+              "get",
+              "ele_label"
+            ],
+            ""
+          ]
+        ],
+        "text-font": [
+          "Open Sans Regular"
+        ],
+        "text-size": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "zoom"
+          ],
+          9,
+          11,
+          14,
+          13
+        ],
+        "text-anchor": "center",
+        "text-offset": [
+          0,
+          0
+        ],
+        "text-max-width": 11,
+        "text-line-height": 1.1,
+        "symbol-sort-key": [
+          "-",
+          0,
+          [
+            "coalesce",
+            [
+              "get",
+              "ele_m"
+            ],
+            0
+          ]
+        ]
+      },
+      "paint": {
+        "text-color": "#4b382c"
+      },
+      "filter": [
+        "==",
+        [
+          "get",
+          "class"
+        ],
+        "peak"
+      ]
+    },
+    {
+      "id": "saddle-symbols",
       "type": "symbol",
       "source": "basemap",
       "source-layer": "mountain",
@@ -1443,7 +1611,15 @@
       },
       "paint": {
         "text-color": "#4b382c"
-      }
+      },
+      "filter": [
+        "==",
+        [
+          "get",
+          "class"
+        ],
+        "saddle"
+      ]
     }
   ],
   "sprite": "../sprites/outdoors"
