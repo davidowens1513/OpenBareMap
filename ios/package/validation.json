@@ -1,0 +1,44 @@
+{
+  "checksums": true,
+  "databases": {
+    "basemap": {
+      "integrity": "ok",
+      "minzoom": 4,
+      "maxzoom": 14,
+      "tiles": 99549
+    },
+    "topography": {
+      "integrity": "ok",
+      "minzoom": 4,
+      "maxzoom": 14,
+      "tiles": 219608
+    },
+    "hillshade": {
+      "integrity": "ok",
+      "minzoom": 6,
+      "maxzoom": 12,
+      "tiles": 4258
+    },
+    "irish-grid": {
+      "integrity": "ok",
+      "minzoom": 10,
+      "maxzoom": 13,
+      "tiles": 31241
+    },
+    "coast": {
+      "integrity": "ok",
+      "minzoom": 4,
+      "maxzoom": 12,
+      "tiles": 14743
+    }
+  },
+  "styleSourceFiles": true,
+  "fontRanges": true,
+  "spriteReferences": true,
+  "nativeDeviceRenderTested": false,
+  "totalBytes": 2016662741,
+  "fileCount": 43,
+  "swiftLoaderMacOSExecution": "passed: real Bundle lookup and runtime URL resolution",
+  "swiftLoaderIOSSimulatorTypecheck": "passed: arm64 iOS 15 target, Xcode iPhoneSimulator SDK",
+  "checksumEntriesVerified": 42
+}

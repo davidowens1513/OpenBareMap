@@ -79,4 +79,4 @@ def assemble(destination):
     validation['totalBytes']=sum(p.stat().st_size for p in bundle.rglob('*') if p.is_file());validation['fileCount']=sum(1 for p in bundle.rglob('*') if p.is_file());write(destination/'validation.json',validation)
     print(json.dumps({'bundle':str(bundle),'bytes':validation['totalBytes'],'files':validation['fileCount']},indent=2))
 if __name__=='__main__':
-    parser=argparse.ArgumentParser();parser.add_argument('--output',type=Path,default=ROOT.parent/'OpenBareMap-iOS');args=parser.parse_args();assemble(args.output.resolve())
+    parser=argparse.ArgumentParser();parser.add_argument('--output',type=Path,default=ROOT/'ios/package');args=parser.parse_args();assemble(args.output.resolve())

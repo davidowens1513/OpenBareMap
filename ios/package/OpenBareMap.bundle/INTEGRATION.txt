@@ -1,0 +1,29 @@
+OpenBareMap — MapLibre Native iOS resource integration
+
+1. Add the entire OpenBareMap.bundle to the Xcode application target's Copy Bundle Resources. Preserve its directory structure; do not flatten files.
+2. Add the supplied OpenBareMapResources.swift to the application target.
+3. Resolve the runtime paths and load the prepared style:
+
+   import MapLibre
+
+   let resources = try OpenBareMapResources.bundled()
+   let styleURL = try OpenBareMapResources.prepareStyle(in: resources)
+   mapView.styleURL = styleURL
+
+   Retain the generated style file for as long as the map may reload it. The helper creates one temporary style per call; remove obsolete temporary style directories only after the associated map is released. Do not copy the MBTiles to temporary storage.
+
+4. Start around longitude -8.15, latitude 53.4, zoom 7. The map is designed for full-island coverage.
+5. Include an accessible attribution/credits view using ATTRIBUTION.txt and terrain-attribution.html. The app supplies its own controls and legend UI; legend/ contains PNG/SVG assets.
+
+The style.json inside the bundle is a template. Do not assign it directly to mapView.styleURL: sandbox paths contain a runtime application identifier. The Swift helper substitutes absolute mbtiles:///... URLs and absolute local file URLs for glyphs, sprites and townlands. It does not require a web tile service or localhost server. The bundle contains no executable code and no GPS/location permission request.
+
+The dedicated coast archive includes unchanged low-zoom terrain tile payloads capped at zoom 12. The coast style only renders its land layer, allowing overzoom without dropping land polygons. Contours use the complete topography archive through zoom 14. Grid maxzoom is 13; hillshade maxzoom is 12. Normal renderer overzoom applies.
+
+Verify SHA256SUMS.txt before distribution. Sources and renderer integration are deliberately separate. MapLibre Native's local MBTiles feature and styleURL loading are required; confirm support in the SDK version used by the app. Do not treat this resource bundle as a MapLibre offline-pack database or a Mapbox SDK package.
+
+Validation supplied with this package verifies file/database integrity, resources and the Foundation Swift loader. Rendering, performance and memory use on an iOS simulator/device must still be checked in the consuming app. In particular, the style has generated crossing-level drawing passes; verify them with the selected Native SDK. No iOS rendering test is claimed.
+
+MapLibre references:
+https://maplibre.org/maplibre-native/ios/latest/documentation/maplibre/
+https://github.com/maplibre/maplibre-native/issues/739
+https://github.com/maplibre/maplibre-native/discussions/393

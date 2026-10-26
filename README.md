@@ -80,4 +80,4 @@ Road bridges have darker, wider edges. Path/track bridge strokes are slightly wi
 
 Every text-size output is at least 6 pixels, including interpolated stops. Larger sizes and townlands are unchanged by this minimum.
 
-An iOS resource-bundle assembler and MapLibre Native runtime path loader are now in `scripts/build_ios_bundle.py` and `ios/`. The generated `.bundle` is a separate local deliverable; the repository retains its source resources and assembly recipe. See `ios/README.md` for integration and validation limits.
+An iOS resource-bundle assembler and MapLibre Native runtime path loader are now in `ios/build_bundle.py` and `ios/`. The generated `.bundle` is stored under `ios/package/` in this repository, with large databases and townland GeoJSON tracked through Git LFS. See `ios/README.md` for integration and validation limits.

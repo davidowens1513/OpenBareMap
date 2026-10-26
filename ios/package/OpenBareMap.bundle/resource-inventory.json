@@ -1,0 +1,209 @@
+{
+  "files": [
+    {
+      "path": "ATTRIBUTION.txt",
+      "bytes": 743,
+      "sha256": "68b00756ebaacabe371f8f956b5c1ef6f2cf79fb1a5902c5488769ae45a68308"
+    },
+    {
+      "path": "INTEGRATION.txt",
+      "bytes": 2713,
+      "sha256": "66967c65b0e987ec71ab4754d18731ee977d52068ee5694340cc8c277b727268"
+    },
+    {
+      "path": "Info.plist",
+      "bytes": 669,
+      "sha256": "47667d11649253246f618996932aa12a74108044404765f68cfb47e34f6bc791"
+    },
+    {
+      "path": "fonts/LICENSE-APACHE-2.0.txt",
+      "bytes": 11358,
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+    },
+    {
+      "path": "fonts/Open Sans Bold/0-255.pbf",
+      "bytes": 80025,
+      "sha256": "b3a5c066b416d69012009e3446ddd9544607ceb7355734922635521b6834c4d8"
+    },
+    {
+      "path": "fonts/Open Sans Bold/256-511.pbf",
+      "bytes": 70900,
+      "sha256": "910a9d831040b8accfc9d70cf235dd4822e59a24e0d5e1736cee5d501c3d17a7"
+    },
+    {
+      "path": "fonts/Open Sans Bold/8192-8447.pbf",
+      "bytes": 10494,
+      "sha256": "18c7dbc4a21e80172e15cdd0c3f53de9f48663f5f8193fe153bb763ac1d731d8"
+    },
+    {
+      "path": "fonts/Open Sans Regular/0-255.pbf",
+      "bytes": 74696,
+      "sha256": "0c8bdb284f2ad6f69bbb434a0208393f3a517bc8bf7ed1eccc4ac4791ebbcbfe"
+    },
+    {
+      "path": "fonts/Open Sans Regular/256-511.pbf",
+      "bytes": 66481,
+      "sha256": "9962ad38d064edbeb226a6c7dcf1d58e7678508a805f980d2fe81bb3178ba68a"
+    },
+    {
+      "path": "fonts/Open Sans Regular/8192-8447.pbf",
+      "bytes": 9663,
+      "sha256": "a57611157f0597b267ef36eb07ce5a41dddcc3b2f3b5b85779108b7bb48b1cde"
+    },
+    {
+      "path": "fonts/Open Sans Semibold/0-255.pbf",
+      "bytes": 77571,
+      "sha256": "64da7011e07531351a249a3d26aad76e2f22e4e321e50833f742697b453e8365"
+    },
+    {
+      "path": "fonts/Open Sans Semibold/256-511.pbf",
+      "bytes": 68869,
+      "sha256": "78298bbd8198c117ccdffe66bf9bbf646fdc1210b7e1bf222f5a9b29b366d7a5"
+    },
+    {
+      "path": "fonts/Open Sans Semibold/8192-8447.pbf",
+      "bytes": 10092,
+      "sha256": "ee80ee7ef05e77bea017bcb387d970d61823fc37fdb0a51c446ae322c5974990"
+    },
+    {
+      "path": "legend/README.txt",
+      "bytes": 1030,
+      "sha256": "0bbb32b6a84ec5cee57b036c745c1440ee6d9546baff106daa71be30b9dfe434"
+    },
+    {
+      "path": "legend/legend-manifest.json",
+      "bytes": 513,
+      "sha256": "ac34e810bcadbda4aae0b43d46f6ac8f396d27edfc80310e7c3be5009ab2aa96"
+    },
+    {
+      "path": "legend/openbaremap-legend.png",
+      "bytes": 160380,
+      "sha256": "f7a7b31d28df262c304817b7d22644381cbd06e909682b9b59b276e8b7fb731c"
+    },
+    {
+      "path": "legend/openbaremap-legend.svg",
+      "bytes": 24913,
+      "sha256": "f0127a7a7e551f6aae8f408fbeb77ccc110971037696630a8e143bbe7ba49a5c"
+    },
+    {
+      "path": "legend/openbaremap-legend@2x.png",
+      "bytes": 198063,
+      "sha256": "73ecf93c95d6787bad2bb01384fa45722fd645214b41689039442b698155a212"
+    },
+    {
+      "path": "manifest.json",
+      "bytes": 1995,
+      "sha256": "edf218ca204dc467d937d50e1a978ba566ae668f08bf19f26602be654bde7803"
+    },
+    {
+      "path": "maps/basemap.mbtiles",
+      "bytes": 942342144,
+      "sha256": "df5b1c0122a051bfb2e7cdd427f924beb0967f49fda3a90b5aa46815c0492a72"
+    },
+    {
+      "path": "maps/coast.mbtiles",
+      "bytes": 265506816,
+      "sha256": "79fd6d481fd89be84efd3d333ddaed028922ffb41465f7a9ac046cd434587a32"
+    },
+    {
+      "path": "maps/grid.mbtiles",
+      "bytes": 9764864,
+      "sha256": "449f6302f12b1d606de3e1d0467346e394e25c6c4c0b2b901f6a070873f58972"
+    },
+    {
+      "path": "maps/hillshade.mbtiles",
+      "bytes": 105943040,
+      "sha256": "55d199c8ca56463286944c9ad2ef39c7ed3b844ebee151dafb11908ade2ac2e0"
+    },
+    {
+      "path": "maps/topography.mbtiles",
+      "bytes": 680263680,
+      "sha256": "a6d187fe0ee38da4c7073a3a41ae04fb30b6525aaada400f4d2bdeef33915b5e"
+    },
+    {
+      "path": "provenance/active-map.json",
+      "bytes": 710,
+      "sha256": "2c70010d8f3674bfe67e15a2afc0f6e288ad100be843e63063a5178188b4d976"
+    },
+    {
+      "path": "provenance/coast-sources.lock.json",
+      "bytes": 526,
+      "sha256": "2f753ac9c9f3d036776b871109406d37aa668884795f88e4668a12d7430a80f9"
+    },
+    {
+      "path": "provenance/legacy-assets.lock.json",
+      "bytes": 3483,
+      "sha256": "2d734a0db8bb8e49e72cf55e4a779e33b5961d05953d22b6a57bf6082f44c2ff"
+    },
+    {
+      "path": "provenance/sources.lock.json",
+      "bytes": 318,
+      "sha256": "fc3807f33d665938a76e34f6d70674bd83dd93d7aae405a201378dae93bb5227"
+    },
+    {
+      "path": "provenance/sprites.lock.json",
+      "bytes": 713,
+      "sha256": "adcbe7a3f965ecc6b7052bdf240243580d34a6e268b9490f41203a4703470ac5"
+    },
+    {
+      "path": "provenance/terrain-attribution.md",
+      "bytes": 12300,
+      "sha256": "2ce4d3414b4592d17ad56a5af57feb480686ddcfb0a3e4ea0b566d28cde13567"
+    },
+    {
+      "path": "provenance/terrain-data-sources.md",
+      "bytes": 12162,
+      "sha256": "dcf07b156bc25930dfe3e1a55d8efd4a2e3b5376393d23bf24d1fc1dd02c5948"
+    },
+    {
+      "path": "provenance/terrain-sources.lock.json",
+      "bytes": 7955,
+      "sha256": "7336551caeaa254c02e7a2512278de2a390582fb6fcf520f61ea02a9f5f46798"
+    },
+    {
+      "path": "provenance/transport-style.json",
+      "bytes": 8578,
+      "sha256": "a8b90d5937969461f9c54d37a7b0e5a24b4168868a77023530f2bdbe3b694443"
+    },
+    {
+      "path": "provenance/viewer-assets.lock.json",
+      "bytes": 1884,
+      "sha256": "f64059adf6595b448a14de0c91f53579267bc7082c80c23a6f39a4b704335112"
+    },
+    {
+      "path": "sprites/outdoors.json",
+      "bytes": 760,
+      "sha256": "da40363fcd9a8e5d977e3218b0c3b950482e2db967cf4e6035de7f9b3a335b34"
+    },
+    {
+      "path": "sprites/outdoors.png",
+      "bytes": 2840,
+      "sha256": "0bf6e473ef48be2bcc05d0bf2ac322a8cb6fda2e57773e5f6aa62c099ff6ab19"
+    },
+    {
+      "path": "sprites/outdoors@2x.json",
+      "bytes": 769,
+      "sha256": "8d6734a5f72c3b92c49d06d8141b9ddc97afd754bbd4f2a0a19a6ca6967b8bc8"
+    },
+    {
+      "path": "sprites/outdoors@2x.png",
+      "bytes": 6066,
+      "sha256": "84b0f4027a7623705819757e6fae04886637f5d3db5b08abbb16d4be20c628d7"
+    },
+    {
+      "path": "style.json",
+      "bytes": 2483980,
+      "sha256": "07a52ff34135fea90fd5ca41c543d2e49a47587df70531427313f0d114645df0"
+    },
+    {
+      "path": "terrain-attribution.html",
+      "bytes": 13815,
+      "sha256": "b3863a283cb2c9f55ae3186b4ca01611f049212a02ae12c0d3dbf6c6833459c5"
+    },
+    {
+      "path": "townlands.geojson",
+      "bytes": 9403579,
+      "sha256": "ab3d1d254517904918fed1e93f614c2c0f2d6940b948844e39c63cdee31a1d62"
+    }
+  ]
+}
