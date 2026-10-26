@@ -1,0 +1,18 @@
+{
+  "device": "Garmin Montana 750i",
+  "routing": false,
+  "coverage": "All Ireland and Northern Ireland, including offshore islands",
+  "contourIntervalMetres": 10,
+  "familyId": 4831,
+  "tileStartId": 48310001,
+  "maxNodesPerTile": 1000000,
+  "compilerOptions": [
+    "--max-jobs=2", "--style-file=garmin/style", "--family-id=4831", "--product-id=1",
+    "--family-name=OpenBareMap Ireland", "--series-name=OpenBareMap Montana 750i",
+    "--description=OpenBareMap Ireland 10m", "--code-page=1252", "--lower-case",
+    "--name-tag-list=name:en,name,name:ga", "--levels=0:24,1:22,2:20,3:18,4:16",
+    "--gmapsupp", "--add-pois-to-areas", "--dem=garmin/work/hgt", "--dem-poly=garmin/ireland.poly",
+    "--dem-dists=3312,13248,26512,53024,106048", "--dem-interpolation=bilinear",
+    "--copyright-file=garmin/copyright.txt"
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "tools": [
+    {
+      "path": "garmin/tools/splitter-r654.zip",
+      "url": "https://www.mkgmap.org.uk/download/splitter-r654.zip",
+      "sha256": "87b0ca0e827bef556341f66ec8dd7f48eea2a479d1ff3659caa5d6f0e9a9b68c"
+    },
+    {
+      "path": "garmin/tools/mkgmap-r4924.zip",
+      "url": "https://www.mkgmap.org.uk/download/mkgmap-r4924.zip",
+      "sha256": "b2170799b61a95d4fc258e8e4fb4e21396809e0390789178f94c77109f8e0d84"
+    },
+    {
+      "path": "garmin/tools/osmium-4.2.0-cp312-cp312-macosx_11_0_arm64.whl",
+      "source": "PyPI osmium 4.2.0, CPython 3.12 macOS arm64 wheel",
+      "sha256": "75ae8612e2ef93510c6add81083d9b099330ce49e754e3d2210a5230121e0b92"
+    }
+  ],
+  "java": "Android Studio bundled OpenJDK; build records capture exact version"
+}

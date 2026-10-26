@@ -1,0 +1,29 @@
+# Display-only rules: intentionally no road_class / road_speed definitions.
+contour=elevation & obm:interval=100 { name '${ele|conv:m=>ft}' } [0x22 resolution 20]
+contour=elevation & obm:interval=50 { name '${ele|conv:m=>ft}' } [0x21 resolution 22]
+contour=elevation { name '${ele|conv:m=>ft}' } [0x20 resolution 24]
+obm:walking=yes [0x10001 resolution 22 continue]
+obm:cycling=yes [0x10002 resolution 22 continue]
+(highway=motorway | highway=motorway_link) [0x01 resolution 18]
+(highway=trunk | highway=trunk_link) [0x02 resolution 18]
+(highway=primary | highway=primary_link) [0x03 resolution 18]
+(highway=secondary | highway=secondary_link) [0x04 resolution 18]
+(highway=tertiary | highway=tertiary_link | highway=residential | highway=unclassified | highway=living_street | highway=road) [0x06 resolution 22]
+highway=service [0x07 resolution 22]
+highway=track [0x0a resolution 22]
+(highway=path | highway=footway) [0x16 resolution 22]
+highway=bridleway [0x10003 resolution 22]
+highway=cycleway [0x10004 resolution 22]
+highway=steps [0x10005 resolution 23]
+natural=cliff [0x10006 resolution 22]
+(railway=rail | railway=light_rail | railway=narrow_gauge | railway=tram) [0x14 resolution 21]
+route=ferry [0x1a resolution 20]
+waterway=river [0x1f resolution 20]
+(waterway=stream | waterway=canal | waterway=drain | waterway=ditch) [0x18 resolution 22]
+boundary=administrative & admin_level=2 [0x1e resolution 18]
+boundary=administrative & (admin_level=5 | admin_level=6) [0x1c resolution 20]
+boundary=administrative [0x1d resolution 23]
+
+<finalize>
+name=* {name '${name:en}' | '${name}' | '${name:ga}'}
+name!=* & ref=* {name '${ref}'}

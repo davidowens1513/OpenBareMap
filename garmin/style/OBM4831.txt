@@ -1,0 +1,942 @@
+; -*- coding: UTF-8 -*-
+; OpenBareMap Montana 750i display-only cartography.
+[_id]
+FID=4831
+ProductCode=1
+CodePage=1252
+[end]
+[_drawOrder]
+Type=0x4b,1
+Type=0x32,2
+Type=0x54,3
+Type=0x50,4
+Type=0x10101,4
+Type=0x10102,4
+Type=0x10103,4
+Type=0x10104,4
+Type=0x51,4
+Type=0x10105,5
+Type=0x10106,5
+Type=0x10107,5
+Type=0x10108,5
+Type=0x10109,6
+Type=0x1010a,6
+Type=0x1010b,6
+Type=0x3c,7
+Type=0x13,8
+[end]
+[_polygon]
+Type=0x4b
+String=Background
+FontStyle=NoLabel
+DayCustomColor=#554b3d
+NightCustomColor=#554b3d
+Xpm="0 0 1 0"
+"a c #f3efe6"
+[end]
+[_polygon]
+Type=0x32
+String=Sea
+FontStyle=NoLabel
+DayCustomColor=#554b3d
+NightCustomColor=#554b3d
+Xpm="0 0 1 0"
+"a c #a8d7ff"
+[end]
+[_polygon]
+Type=0x54
+String=Land
+FontStyle=NoLabel
+DayCustomColor=#554b3d
+NightCustomColor=#554b3d
+Xpm="0 0 1 0"
+"a c #f3efe6"
+[end]
+[_polygon]
+Type=0x50
+String=Woodland
+FontStyle=NoLabel
+DayCustomColor=#554b3d
+NightCustomColor=#554b3d
+Xpm="0 0 1 0"
+"a c #afd190"
+[end]
+[_polygon]
+Type=0x10101
+String=Farmland
+FontStyle=NoLabel
+DayCustomColor=#554b3d
+NightCustomColor=#554b3d
+Xpm="0 0 1 0"
+"a c #e4dfbd"
+[end]
+[_polygon]
+Type=0x10102
+String=Grass
+FontStyle=NoLabel
+DayCustomColor=#554b3d
+NightCustomColor=#554b3d
+Xpm="0 0 1 0"
+"a c #dce7c6"
+[end]
+[_polygon]
+Type=0x10103
+String=Heath
+FontStyle=NoLabel
+DayCustomColor=#554b3d
+NightCustomColor=#554b3d
+Xpm="0 0 1 0"
+"a c #d8cbb8"
+[end]
+[_polygon]
+Type=0x10104
+String=Scrub
+FontStyle=NoLabel
+DayCustomColor=#554b3d
+NightCustomColor=#554b3d
+Xpm="0 0 1 0"
+"a c #cdd9b8"
+[end]
+[_polygon]
+Type=0x51
+String=Wetland
+FontStyle=NoLabel
+DayCustomColor=#554b3d
+NightCustomColor=#554b3d
+Xpm="0 0 1 0"
+"a c #c4d8cc"
+[end]
+[_polygon]
+Type=0x10105
+String=Beach
+FontStyle=NoLabel
+DayCustomColor=#554b3d
+NightCustomColor=#554b3d
+Xpm="0 0 1 0"
+"a c #f1dfae"
+[end]
+[_polygon]
+Type=0x10106
+String=Sand
+FontStyle=NoLabel
+DayCustomColor=#554b3d
+NightCustomColor=#554b3d
+Xpm="0 0 1 0"
+"a c #ead9ae"
+[end]
+[_polygon]
+Type=0x10107
+String=Bog
+FontStyle=NoLabel
+DayCustomColor=#554b3d
+NightCustomColor=#554b3d
+Xpm="32 32 2 1"
+"a c #b9aa92"
+"b c #8e825f"
+"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+"aaabaaaaaaaaabaaaaaaaaabaaaaaaaa"
+"aaabaaaaaaaaabaaaaaaaaabaaaaaaaa"
+"aabbbaaaaaaabbbaaaaaaabbbaaaaaaa"
+"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+"aaabaaaaaaaaabaaaaaaaaabaaaaaaaa"
+"aaabaaaaaaaaabaaaaaaaaabaaaaaaaa"
+"aabbbaaaaaaabbbaaaaaaabbbaaaaaaa"
+"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+"aaabaaaaaaaaabaaaaaaaaabaaaaaaaa"
+"aaabaaaaaaaaabaaaaaaaaabaaaaaaaa"
+"aabbbaaaaaaabbbaaaaaaabbbaaaaaaa"
+"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+"aaabaaaaaaaaabaaaaaaaaabaaaaaaaa"
+"aaabaaaaaaaaabaaaaaaaaabaaaaaaaa"
+"aabbbaaaaaaabbbaaaaaaabbbaaaaaaa"
+"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+[end]
+[_polygon]
+Type=0x10108
+String=Peat workings
+FontStyle=NoLabel
+DayCustomColor=#554b3d
+NightCustomColor=#554b3d
+Xpm="32 32 2 1"
+"a c #a58b70"
+"b c #8e825f"
+"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+"aaabaaaaaaaaabaaaaaaaaabaaaaaaaa"
+"aaabaaaaaaaaabaaaaaaaaabaaaaaaaa"
+"aabbbaaaaaaabbbaaaaaaabbbaaaaaaa"
+"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+"aaabaaaaaaaaabaaaaaaaaabaaaaaaaa"
+"aaabaaaaaaaaabaaaaaaaaabaaaaaaaa"
+"aabbbaaaaaaabbbaaaaaaabbbaaaaaaa"
+"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+"aaabaaaaaaaaabaaaaaaaaabaaaaaaaa"
+"aaabaaaaaaaaabaaaaaaaaabaaaaaaaa"
+"aabbbaaaaaaabbbaaaaaaabbbaaaaaaa"
+"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+"aaabaaaaaaaaabaaaaaaaaabaaaaaaaa"
+"aaabaaaaaaaaabaaaaaaaaabaaaaaaaa"
+"aabbbaaaaaaabbbaaaaaaabbbaaaaaaa"
+"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+[end]
+[_polygon]
+Type=0x10109
+String=Bare rock
+FontStyle=NoLabel
+DayCustomColor=#554b3d
+NightCustomColor=#554b3d
+Xpm="32 32 2 1"
+"a c #d0ccc2"
+"b c #8e825f"
+"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+"aaaaaaaaaaaaaaaaaaabaaaabaaaaaaa"
+"aabaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+"aaaaaaaaaaaaaaaaaaaaaaaaaabaaaab"
+"aaaabaaaabaaaaaaaaabaaaaaaaaaaaa"
+"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+"aaaaaaaaaaaaaaaabaaaaaaaaabaaaaa"
+"aaaabaaaabaaaaaaaaaaaaaaaaaaaaaa"
+"aaaaaaaaaaaaaaaaaaaaaaabaaaaaaaa"
+"aaaaaaaaaaabaaaabaaaaaaaaaaaaaaa"
+"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+"aaaaaaaaaaaaaaaaaabaaaabaaaaaaaa"
+"abaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+"aaaaaaaaaaaaaaaaaaaaaaaaabaaaaba"
+"aaabaaaabaaaaaaaaabaaaaaaaaaaaaa"
+"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+"aaaaaaaaaaaaaaabaaaaaaaaabaaaaaa"
+"aaabaaaabaaaaaaaaaaaaaaaaaaaaaaa"
+"aaaaaaaaaaaaaaaaaaaaaabaaaaaaaaa"
+"aaaaaaaaaabaaaabaaaaaaaaaaaaaaaa"
+"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+"aaaaaaaaaaaaaaaaabaaaabaaaaaaaaa"
+"baaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+"aaaaaaaaaaaaaaaaaaaaaaaabaaaabaa"
+"aabaaaabaaaaaaaaabaaaaaaaaaaaaaa"
+"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaab"
+"aaaaaaaaaaaaaabaaaaaaaaabaaaaaaa"
+"aabaaaabaaaaaaaaaaaaaaaaaaaaaaaa"
+"aaaaaaaaaaaaaaaaaaaaabaaaaaaaaab"
+"aaaaaaaaabaaaabaaaaaaaaaaaaaaaaa"
+"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+"aaaaaaaaaaaaaaaabaaaabaaaaaaaaaa"
+[end]
+[_polygon]
+Type=0x1010a
+String=Scree
+FontStyle=NoLabel
+DayCustomColor=#554b3d
+NightCustomColor=#554b3d
+Xpm="32 32 2 1"
+"a c #c9c4b8"
+"b c #8e825f"
+"baaaaaabaaaaaabaaaaaabaaaaaabaaa"
+"aaabaaaaaaaaabaaaaaaaaabaaaaaaba"
+"aaaaaaaaaaaabaaaaaaaaabaabaaaaaa"
+"aaaaabaabaaaaaaaaaaaaaaaaaabaaba"
+"abaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+"baabaabaaaaaaaaaaaaaaaaaaabaabaa"
+"aaaaaaaabaaaaaaaaaaaaabaabaaaaaa"
+"aabaaaaaaabaaaaaaaaaabaaaaaaaaaa"
+"aaaabaaaaaaabaaaaaaabaaaaaaabaaa"
+"abaaaabaaaaaaabaaaabaaaaaaaaaaaa"
+"aaabaaaabaaaabaaaaaaaaaaaaaaaaaa"
+"baaaabaaaabaaaaaaaaaaaaaaaaaaaaa"
+"aabaaaaaaaaaaabaaaabaaaaaabaaaab"
+"aaaabaaaaaabaaaaaabaaaaaabaaaaaa"
+"aaaaaaaabaaaaaabaaaaaaaaaaaaaaab"
+"aaabaaaaaaaabaaaaaaaabaaaaaaaaba"
+"aaaaaaabaaaaaaaaaabaaaaaaaaaabaa"
+"baaaaaaaaaaaababaaaaaaaaaaaabaaa"
+"aaaaaababaaaaaaaaaaaaaaaababaaaa"
+"aaaaaaaaaaaaaaaaaaaabababaaaaaaa"
+"ababababaaaaaaaaaaaaaaaaaaaaaaaa"
+"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+"aaaaaaaaaabababaaaaaaaaaaaaaaaaa"
+"babaaaaaaaaaaaaaaaababaaaaaaaaaa"
+"aaaaaaaaababaaaaaaaaaaaabaaaaaaa"
+"aaabaaaaaaaaaababaaaaaaaaaabaaaa"
+"aaaaaaaaaabaaaaaaaabaaaaaaaabaaa"
+"aaaaaaaaaaaaabaaaaaabaaaaaaaabaa"
+"aabaaaaaabaaaaaabaaaaaabaaaaaaaa"
+"baaaaaaaaaaabaaaaaaaaaaabaaaaaaa"
+"aaabaaaaaaaaaaaaaaaaaaaaabaaaaba"
+[end]
+[_polygon]
+Type=0x1010b
+String=Shingle
+FontStyle=NoLabel
+DayCustomColor=#554b3d
+NightCustomColor=#554b3d
+Xpm="32 32 2 1"
+"a c #d8d1c3"
+"b c #8e825f"
+"baaaaaabaaaaaabaaaaaabaaaaaabaaa"
+"aaabaaaaaaaaabaaaaaaaaabaaaaaaba"
+"aaaaaaaaaaaabaaaaaaaaabaabaaaaaa"
+"aaaaabaabaaaaaaaaaaaaaaaaaabaaba"
+"abaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+"baabaabaaaaaaaaaaaaaaaaaaabaabaa"
+"aaaaaaaabaaaaaaaaaaaaabaabaaaaaa"
+"aabaaaaaaabaaaaaaaaaabaaaaaaaaaa"
+"aaaabaaaaaaabaaaaaaabaaaaaaabaaa"
+"abaaaabaaaaaaabaaaabaaaaaaaaaaaa"
+"aaabaaaabaaaabaaaaaaaaaaaaaaaaaa"
+"baaaabaaaabaaaaaaaaaaaaaaaaaaaaa"
+"aabaaaaaaaaaaabaaaabaaaaaabaaaab"
+"aaaabaaaaaabaaaaaabaaaaaabaaaaaa"
+"aaaaaaaabaaaaaabaaaaaaaaaaaaaaab"
+"aaabaaaaaaaabaaaaaaaabaaaaaaaaba"
+"aaaaaaabaaaaaaaaaabaaaaaaaaaabaa"
+"baaaaaaaaaaaababaaaaaaaaaaaabaaa"
+"aaaaaababaaaaaaaaaaaaaaaababaaaa"
+"aaaaaaaaaaaaaaaaaaaabababaaaaaaa"
+"ababababaaaaaaaaaaaaaaaaaaaaaaaa"
+"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+"aaaaaaaaaabababaaaaaaaaaaaaaaaaa"
+"babaaaaaaaaaaaaaaaababaaaaaaaaaa"
+"aaaaaaaaababaaaaaaaaaaaabaaaaaaa"
+"aaabaaaaaaaaaababaaaaaaaaaabaaaa"
+"aaaaaaaaaabaaaaaaaabaaaaaaaabaaa"
+"aaaaaaaaaaaaabaaaaaabaaaaaaaabaa"
+"aabaaaaaabaaaaaabaaaaaabaaaaaaaa"
+"baaaaaaaaaaabaaaaaaaaaaabaaaaaaa"
+"aaabaaaaaaaaaaaaaaaaaaaaabaaaaba"
+[end]
+[_polygon]
+Type=0x3c
+String=Water
+FontStyle=NoLabel
+DayCustomColor=#554b3d
+NightCustomColor=#554b3d
+Xpm="0 0 1 0"
+"a c #a8d7ff"
+[end]
+[_polygon]
+Type=0x13
+String=Buildings
+FontStyle=NoLabel
+DayCustomColor=#554b3d
+NightCustomColor=#554b3d
+Xpm="0 0 1 0"
+"a c #898c8b"
+[end]
+[_line]
+Type=0x1
+String=Motorway
+FontStyle=SmallFont
+DayCustomColor=#554b3d
+NightCustomColor=#554b3d
+LineWidth=4
+BorderWidth=1
+Xpm="0 0 2 0"
+"a c #f39a3d"
+"b c #8f806b"
+[end]
+[_line]
+Type=0x2
+String=Trunk
+FontStyle=SmallFont
+DayCustomColor=#554b3d
+NightCustomColor=#554b3d
+LineWidth=4
+BorderWidth=1
+Xpm="0 0 2 0"
+"a c #ee9d4a"
+"b c #8f806b"
+[end]
+[_line]
+Type=0x3
+String=Primary
+FontStyle=SmallFont
+DayCustomColor=#554b3d
+NightCustomColor=#554b3d
+LineWidth=3
+BorderWidth=1
+Xpm="0 0 2 0"
+"a c #f0ad61"
+"b c #8f806b"
+[end]
+[_line]
+Type=0x4
+String=Secondary
+FontStyle=SmallFont
+DayCustomColor=#554b3d
+NightCustomColor=#554b3d
+LineWidth=3
+BorderWidth=1
+Xpm="0 0 2 0"
+"a c #f4bf7b"
+"b c #8f806b"
+[end]
+[_line]
+Type=0x6
+String=Minor road
+FontStyle=SmallFont
+DayCustomColor=#554b3d
+NightCustomColor=#554b3d
+LineWidth=2
+BorderWidth=1
+Xpm="0 0 2 0"
+"a c #e6cf98"
+"b c #8f806b"
+[end]
+[_line]
+Type=0x7
+String=Service road
+FontStyle=SmallFont
+DayCustomColor=#554b3d
+NightCustomColor=#554b3d
+LineWidth=2
+BorderWidth=1
+Xpm="0 0 2 0"
+"a c #ffffff"
+"b c #8f806b"
+[end]
+[_line]
+Type=0xa
+String=Track
+FontStyle=SmallFont
+DayCustomColor=#554b3d
+NightCustomColor=#554b3d
+UseOrientation=Y
+Xpm="32 2 2 1"
+"a c #8b6f47"
+". c none"
+"aaaaaa....aaaaaa....aaaaaa....aa"
+"aaaaaa....aaaaaa....aaaaaa....aa"
+[end]
+[_line]
+Type=0x16
+String=Path and footway
+FontStyle=SmallFont
+DayCustomColor=#554b3d
+NightCustomColor=#554b3d
+UseOrientation=Y
+Xpm="32 2 2 1"
+"a c #6a8f5a"
+". c none"
+"aaa...aaa...aaa...aaa...aaa...aa"
+"aaa...aaa...aaa...aaa...aaa...aa"
+[end]
+[_line]
+Type=0x10003
+String=Bridleway
+FontStyle=SmallFont
+DayCustomColor=#554b3d
+NightCustomColor=#554b3d
+UseOrientation=Y
+Xpm="32 2 2 1"
+"a c #867044"
+". c none"
+"aaaaaa...aaaaaa...aaaaaa...aaaaa"
+"aaaaaa...aaaaaa...aaaaaa...aaaaa"
+[end]
+[_line]
+Type=0x10004
+String=Cycleway
+FontStyle=SmallFont
+DayCustomColor=#554b3d
+NightCustomColor=#554b3d
+UseOrientation=Y
+Xpm="32 2 2 1"
+"a c #347bb7"
+". c none"
+"aaaaa...aaaaa...aaaaa...aaaaa..."
+"aaaaa...aaaaa...aaaaa...aaaaa..."
+[end]
+[_line]
+Type=0x10005
+String=Steps
+FontStyle=SmallFont
+DayCustomColor=#554b3d
+NightCustomColor=#554b3d
+UseOrientation=Y
+Xpm="32 2 2 1"
+"a c #6a8f5a"
+". c none"
+"a..a..a..a..a..a..a..a..a..a..a."
+"a..a..a..a..a..a..a..a..a..a..a."
+[end]
+[_line]
+Type=0x10006
+String=Cliffs
+FontStyle=SmallFont
+DayCustomColor=#554b3d
+NightCustomColor=#554b3d
+UseOrientation=Y
+Xpm="32 5 2 1"
+"a c #5f584f"
+". c none"
+"................................"
+"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+"..a.......a.......a.......a....."
+"...a.......a.......a.......a...."
+"....a.......a.......a.......a..."
+[end]
+[_line]
+Type=0x14
+String=Railway
+FontStyle=SmallFont
+DayCustomColor=#554b3d
+NightCustomColor=#554b3d
+UseOrientation=Y
+Xpm="32 2 2 1"
+"a c #68645f"
+". c none"
+"aaaaaa..aaaaaa..aaaaaa..aaaaaa.."
+"aaaaaa..aaaaaa..aaaaaa..aaaaaa.."
+[end]
+[_line]
+Type=0x1a
+String=Ferry
+FontStyle=SmallFont
+DayCustomColor=#554b3d
+NightCustomColor=#554b3d
+UseOrientation=Y
+Xpm="32 2 2 1"
+"a c #468db6"
+". c none"
+"aaaaaaa....aaaaaaa....aaaaaaa..."
+"aaaaaaa....aaaaaaa....aaaaaaa..."
+[end]
+[_line]
+Type=0x1f
+String=River
+FontStyle=SmallFont
+DayCustomColor=#554b3d
+NightCustomColor=#554b3d
+LineWidth=2
+BorderWidth=0
+Xpm="0 0 1 0"
+"a c #74b5e6"
+[end]
+[_line]
+Type=0x18
+String=Stream
+FontStyle=SmallFont
+DayCustomColor=#554b3d
+NightCustomColor=#554b3d
+LineWidth=1
+BorderWidth=0
+Xpm="0 0 1 0"
+"a c #74b5e6"
+[end]
+[_line]
+Type=0x20
+String=10 metre contour
+FontStyle=SmallFont
+DayCustomColor=#554b3d
+NightCustomColor=#554b3d
+LineWidth=1
+BorderWidth=0
+Xpm="0 0 1 0"
+"a c #9a8161"
+[end]
+[_line]
+Type=0x21
+String=50 metre contour
+FontStyle=SmallFont
+DayCustomColor=#554b3d
+NightCustomColor=#554b3d
+LineWidth=1
+BorderWidth=0
+Xpm="0 0 1 0"
+"a c #9a8161"
+[end]
+[_line]
+Type=0x22
+String=100 metre contour
+FontStyle=SmallFont
+DayCustomColor=#554b3d
+NightCustomColor=#554b3d
+LineWidth=2
+BorderWidth=0
+Xpm="0 0 1 0"
+"a c #8b6f47"
+[end]
+[_line]
+Type=0x10001
+String=Walking route
+FontStyle=SmallFont
+DayCustomColor=#554b3d
+NightCustomColor=#554b3d
+UseOrientation=Y
+Xpm="32 2 2 1"
+"a c #cc553d"
+". c none"
+"aaaaaa...aaaaaa...aaaaaa...aaaaa"
+"aaaaaa...aaaaaa...aaaaaa...aaaaa"
+[end]
+[_line]
+Type=0x10002
+String=Cycling route
+FontStyle=SmallFont
+DayCustomColor=#554b3d
+NightCustomColor=#554b3d
+LineWidth=2
+BorderWidth=0
+Xpm="0 0 1 0"
+"a c #347bb7"
+[end]
+[_line]
+Type=0x1e
+String=National boundary
+FontStyle=SmallFont
+DayCustomColor=#554b3d
+NightCustomColor=#554b3d
+UseOrientation=Y
+Xpm="32 2 2 1"
+"a c #755778"
+". c none"
+"aaaaaaaa....aaaaaaaa....aaaaaaaa"
+"aaaaaaaa....aaaaaaaa....aaaaaaaa"
+[end]
+[_line]
+Type=0x1c
+String=County boundary
+FontStyle=SmallFont
+DayCustomColor=#554b3d
+NightCustomColor=#554b3d
+UseOrientation=Y
+Xpm="32 1 2 1"
+"a c #927d96"
+". c none"
+"aaaaaa....aaaaaa....aaaaaa....aa"
+[end]
+[_line]
+Type=0x1d
+String=Local boundary
+FontStyle=SmallFont
+DayCustomColor=#554b3d
+NightCustomColor=#554b3d
+UseOrientation=Y
+Xpm="32 1 2 1"
+"a c #82678b"
+". c none"
+"aaa....aaa....aaa....aaa....aaa."
+[end]
+[_point]
+Type=0x100
+String=City
+FontStyle=NormalFont
+DayCustomColor=#554b3d
+NightCustomColor=#554b3d
+DayXpm="8 8 2 1"
+"a c #554b3d"
+". c none"
+"........"
+"........"
+"........"
+"........"
+"........"
+"........"
+"........"
+"........"
+[end]
+[_point]
+Type=0x600
+String=Town
+FontStyle=SmallFont
+DayCustomColor=#554b3d
+NightCustomColor=#554b3d
+DayXpm="8 8 2 1"
+"a c #554b3d"
+". c none"
+"........"
+"........"
+"........"
+"........"
+"........"
+"........"
+"........"
+"........"
+[end]
+[_point]
+Type=0x800
+String=Village
+FontStyle=SmallFont
+DayCustomColor=#554b3d
+NightCustomColor=#554b3d
+DayXpm="8 8 2 1"
+"a c #554b3d"
+". c none"
+"........"
+"........"
+"........"
+"........"
+"........"
+"........"
+"........"
+"........"
+[end]
+[_point]
+Type=0xb00
+String=Hamlet
+FontStyle=SmallFont
+DayCustomColor=#554b3d
+NightCustomColor=#554b3d
+DayXpm="8 8 2 1"
+"a c #554b3d"
+". c none"
+"........"
+"........"
+"........"
+"........"
+"........"
+"........"
+"........"
+"........"
+[end]
+[_point]
+Type=0xc00
+String=Locality
+FontStyle=SmallFont
+DayCustomColor=#554b3d
+NightCustomColor=#554b3d
+DayXpm="8 8 2 1"
+"a c #554b3d"
+". c none"
+"........"
+"........"
+"........"
+"........"
+"........"
+"........"
+"........"
+"........"
+[end]
+[_point]
+Type=0x650c
+String=Island
+FontStyle=SmallFont
+DayCustomColor=#554b3d
+NightCustomColor=#554b3d
+DayXpm="8 8 2 1"
+"a c #554b3d"
+". c none"
+"........"
+"........"
+"........"
+"........"
+"........"
+"........"
+"........"
+"........"
+[end]
+[_point]
+Type=0x6603
+String=Water name
+FontStyle=SmallFont
+DayCustomColor=#554b3d
+NightCustomColor=#554b3d
+DayXpm="8 8 2 1"
+"a c #554b3d"
+". c none"
+"........"
+"........"
+"........"
+"........"
+"........"
+"........"
+"........"
+"........"
+[end]
+[_point]
+Type=0x10006
+String=Point of interest
+FontStyle=SmallFont
+DayCustomColor=#554b3d
+NightCustomColor=#554b3d
+DayXpm="8 8 2 1"
+"a c #554b3d"
+". c none"
+"........"
+"........"
+"........"
+"........"
+"........"
+"........"
+"........"
+"........"
+[end]
+[_point]
+Type=0x6616
+String=Summit
+FontStyle=SmallFont
+DayCustomColor=#554b3d
+NightCustomColor=#554b3d
+DayXpm="8 8 2 1"
+"a c #554b3d"
+". c none"
+"........"
+"........"
+"...aa..."
+"..aaaa.."
+"..aaaa.."
+"...aa..."
+"........"
+"........"
+[end]
+[_point]
+Type=0x6615
+String=Saddle
+FontStyle=SmallFont
+DayCustomColor=#554b3d
+NightCustomColor=#554b3d
+DayXpm="8 8 2 1"
+"a c #554b3d"
+". c none"
+"........"
+"........"
+"...aa..."
+"..aaaa.."
+"..aaaa.."
+"...aa..."
+"........"
+"........"
+[end]
+[_point]
+Type=0x10001
+String=Hiking facility
+FontStyle=SmallFont
+DayCustomColor=#554b3d
+NightCustomColor=#554b3d
+DayXpm="8 8 2 1"
+"a c #554b3d"
+". c none"
+"........"
+"........"
+"...aa..."
+"..aaaa.."
+"..aaaa.."
+"...aa..."
+"........"
+"........"
+[end]
+[_point]
+Type=0x10002
+String=Outdoor feature
+FontStyle=SmallFont
+DayCustomColor=#554b3d
+NightCustomColor=#554b3d
+DayXpm="8 8 2 1"
+"a c #554b3d"
+". c none"
+"........"
+"........"
+"...aa..."
+"..aaaa.."
+"..aaaa.."
+"...aa..."
+"........"
+"........"
+[end]
+[_point]
+Type=0x10003
+String=Amenity
+FontStyle=SmallFont
+DayCustomColor=#554b3d
+NightCustomColor=#554b3d
+DayXpm="8 8 2 1"
+"a c #554b3d"
+". c none"
+"........"
+"........"
+"...aa..."
+"..aaaa.."
+"..aaaa.."
+"...aa..."
+"........"
+"........"
+[end]
+[_point]
+Type=0x10004
+String=Station
+FontStyle=SmallFont
+DayCustomColor=#554b3d
+NightCustomColor=#554b3d
+DayXpm="8 8 2 1"
+"a c #554b3d"
+". c none"
+"........"
+"........"
+"...aa..."
+"..aaaa.."
+"..aaaa.."
+"...aa..."
+"........"
+"........"
+[end]
+[_point]
+Type=0x10005
+String=Townland
+FontStyle=SmallFont
+DayCustomColor=#554b3d
+NightCustomColor=#554b3d
+DayXpm="8 8 2 1"
+"a c #554b3d"
+". c none"
+"........"
+"........"
+"........"
+"........"
+"........"
+"........"
+"........"
+"........"
+[end]
+[_point]
+Type=0x2f0b
+String=Parking
+FontStyle=SmallFont
+DayCustomColor=#554b3d
+NightCustomColor=#554b3d
+DayXpm="12 12 3 1"
+"b c #0057b8"
+"w c #ffffff"
+". c none"
+"bbbbbbbbbbbb"
+"bbbbbbbbbbbb"
+"bbbwwwwwwbbb"
+"bbbwwwwwwwbb"
+"bbbwwbbbwwbb"
+"bbbwwbbbwwbb"
+"bbbwwwwwwbbb"
+"bbbwwbbbbbbb"
+"bbbwwbbbbbbb"
+"bbbwwbbbbbbb"
+"bbbbbbbbbbbb"
+"bbbbbbbbbbbb"
+[end]

@@ -1,0 +1,35 @@
+{
+  "purpose": "Eastern neighbour HGT cells required by Garmin DEM interpolation. Main Ireland elevation source remains the existing 30 locked Terrain Tiles grids.",
+  "assets": [
+    {
+      "path": "garmin/inputs/dem-padding/N51W005.hgt.gz",
+      "url": "https://elevation-tiles-prod.s3.amazonaws.com/skadi/N51/N51W005.hgt.gz",
+      "sha256": "311663bd45124e2b54b56021643df5bc022077e7cf14e3e7443f6ef553f91e4d",
+      "bytes": 3229001
+    },
+    {
+      "path": "garmin/inputs/dem-padding/N52W005.hgt.gz",
+      "url": "https://elevation-tiles-prod.s3.amazonaws.com/skadi/N52/N52W005.hgt.gz",
+      "sha256": "668a09f19cd75e3ef6aa27a4d294b68cc5416df3ceabdc3768481e81e2ad42b5",
+      "bytes": 3077935
+    },
+    {
+      "path": "garmin/inputs/dem-padding/N53W005.hgt.gz",
+      "url": "https://elevation-tiles-prod.s3.amazonaws.com/skadi/N53/N53W005.hgt.gz",
+      "sha256": "a159bab2a767e937625e8fe6199416184255c814e4666d2937db9dfc45f6a1d4",
+      "bytes": 1832494
+    },
+    {
+      "path": "garmin/inputs/dem-padding/N54W005.hgt.gz",
+      "url": "https://elevation-tiles-prod.s3.amazonaws.com/skadi/N54/N54W005.hgt.gz",
+      "sha256": "2a368b359b4d1126b0aa1dea9825195682e8f2d119ba7060994850e28e2f8b8a",
+      "bytes": 2702122
+    },
+    {
+      "path": "garmin/inputs/dem-padding/N55W005.hgt.gz",
+      "url": "https://elevation-tiles-prod.s3.amazonaws.com/skadi/N55/N55W005.hgt.gz",
+      "sha256": "a94a6175399650c184b9201475e445076dc2b657162773d2dd0d3c107850deb7",
+      "bytes": 6563032
+    }
+  ]
+}

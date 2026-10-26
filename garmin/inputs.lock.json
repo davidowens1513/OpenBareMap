@@ -1,0 +1,20 @@
+{
+  "coverage": "All Ireland and Northern Ireland, including offshore islands within shared terrain extent",
+  "terrain_interval_metres": 10,
+  "inputs": [
+    {
+      "path": "garmin/inputs/contours-10m.geojson.gz",
+      "sha256": "e967823486beb7152b1a7d8da478cbd49c80aa0e3adc78520dce3987d10481ba",
+      "derived_from": "Shared topography-a 10 m contours; exact existing GeoJSON compressed without geometry changes",
+      "uncompressed_sha256": "7196989bdcddefe7c600e2dc4cd83d8f4363388feac276570b69fcdea3ce7a70"
+    },
+    {
+      "path": "garmin/inputs/land-ireland.geojson.gz",
+      "sha256": "615c12fcc004031f618401a7beb6a5f309011793074861b57c4dd325ac952c8f",
+      "derived_from": "Locked OSM land polygons / shared topography-a land; clipped to full-island terrain extent [-11,51,-5,56] with GDAL 3.12.3"
+    }
+  ],
+  "elevation_lock": "terrain-sources.lock.json",
+  "osm_lock": "sources.lock.json",
+  "townland_source": "viewer/townlands.geojson"
+}

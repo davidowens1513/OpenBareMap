@@ -1,0 +1,33 @@
+obm:townland=yes [0x10005 resolution 23]
+place=city [0x0100 resolution 16]
+place=town [0x0600 resolution 18]
+place=village [0x0800 resolution 20]
+place=hamlet [0x0b00 resolution 22]
+place=locality | place=suburb | place=neighbourhood [0x0c00 resolution 22]
+place=island [0x650c resolution 20]
+place=islet [0x650c resolution 23]
+(natural=peak | natural=volcano) & ele>=600 [0x6616 resolution 22]
+(natural=peak | natural=volcano) & ele>=300 [0x6616 resolution 23]
+natural=peak | natural=volcano [0x6616 resolution 24]
+natural=saddle | mountain_pass=yes [0x6615 resolution 24]
+(disused=yes | abandoned=yes) {deletealltags}
+amenity=parking {add name='Parking'} [0x2f0b resolution 24]
+(tourism=alpine_hut | tourism=wilderness_hut) {add name='Hut'} [0x10001 resolution 22]
+amenity=shelter {add name='Shelter'} [0x10001 resolution 22]
+emergency=mountain_rescue | amenity=mountain_rescue {add name='Mountain rescue'} [0x10001 resolution 22]
+highway=trailhead | information=trailhead {add name='Trailhead'} [0x10001 resolution 23]
+tourism=viewpoint {add name='Viewpoint'} [0x10002 resolution 23]
+tourism=camp_site | tourism=camp_pitch {add name='Campsite'} [0x10002 resolution 23]
+amenity=drinking_water {add name='Drinking water'} [0x10003 resolution 24]
+amenity=toilets {add name='Toilets'} [0x10003 resolution 24]
+information=guidepost {add name='Guidepost'} [0x10003 resolution 24]
+railway=station | railway=halt {add name='Station'} [0x10004 resolution 23]
+
+natural=water & name=* [0x6603 resolution 22]
+amenity=* & name=* [0x10006 resolution 24]
+tourism=* & name=* [0x10006 resolution 24]
+shop=* & name=* [0x10006 resolution 24]
+historic=* & name=* [0x10006 resolution 24]
+
+<finalize>
+name=* {name '${name:en}' | '${name}' | '${name:ga}'}

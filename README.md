@@ -83,3 +83,7 @@ Every text-size output is at least 6 pixels, including interpolated stops. Large
 An iOS resource-bundle assembler and MapLibre Native runtime path loader are now in `ios/build_bundle.py` and `ios/`. The generated `.bundle` is stored under `ios/package/` in this repository, with large databases and townland GeoJSON tracked through Git LFS. See `ios/README.md` for integration and validation limits.
 
 Android support is under `android/`: a MapLibre Native Kotlin loader, Android Studio reference app, compiled test APK/AAR, and full offline resource package. Map data remains separate from the APK and is imported through the document picker. See `android/README.md` for building, package restore/export, integration and device-validation limits. Both Android and iOS share the capped-coast packaging helper.
+
+## Garmin Montana 750i
+
+The display-only Garmin export is in [garmin/](garmin/README.md), including the installable `garmin/dist/OpenBareMap-Ireland.img`, device instructions, legend, pinned inputs/tools and binary validation report. It covers the full island with 10 m contours and native DEM. Hardware rendering remains to be checked; strict byte-for-byte repeatability is not yet achieved. Garmin-specific files are kept separate from the iOS, Android and shared map resources.
