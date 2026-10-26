@@ -3,6 +3,9 @@
 import argparse,hashlib,json,plistlib,shutil,sqlite3,subprocess
 from pathlib import Path
 ROOT=Path(__file__).resolve().parents[1]
+import sys
+sys.path.insert(0,str(ROOT/"scripts"))
+from package_resources import build_capped_coast
 def sha(path):
     with path.open('rb') as f:return hashlib.file_digest(f,'sha256').hexdigest()
 def write(path,obj):path.write_text(json.dumps(obj,indent=2,ensure_ascii=False)+'\n')
@@ -21,15 +24,7 @@ def assemble(destination):
         source_files['irish-grid' if name=='grid' else name]=relative
     # A real capped source archive avoids relying on SDK-specific TileJSON overrides.
     top=bundle/'maps/topography.mbtiles';coast=bundle/'maps/coast.mbtiles'
-    src=sqlite3.connect(top.as_uri()+'?mode=ro',uri=True);dst=sqlite3.connect(coast)
-    metadata=dict(src.execute('SELECT name,value FROM metadata'));metadata['maxzoom']='12';metadata['name']='OpenBareMap capped coast source';metadata['description']='Unchanged topography tile payloads through zoom 12, packaged for coastline overzoom'
-    schema=json.loads(metadata['json'])
-    for layer in schema['vector_layers']:layer['maxzoom']=min(12,layer['maxzoom'])
-    metadata['json']=json.dumps(schema,separators=(',',':'))
-    dst.execute('CREATE TABLE metadata (name TEXT NOT NULL,value TEXT)')
-    dst.execute('CREATE TABLE tiles (zoom_level INTEGER NOT NULL,tile_column INTEGER NOT NULL,tile_row INTEGER NOT NULL,tile_data BLOB NOT NULL,PRIMARY KEY(zoom_level,tile_column,tile_row))')
-    dst.executemany('INSERT INTO metadata VALUES (?,?)',sorted(metadata.items()))
-    dst.executemany('INSERT INTO tiles VALUES (?,?,?,?)',src.execute('SELECT zoom_level,tile_column,tile_row,tile_data FROM tiles WHERE zoom_level<=12 ORDER BY zoom_level,tile_column,tile_row'));dst.commit();dst.close();src.close()
+    build_capped_coast(top, coast)
     source_files['coast']='maps/coast.mbtiles';records['coast']={'path':'maps/coast.mbtiles','sha256':sha(coast),'derived_from':active['datasets']['topography']['sha256'],'maxzoom':12,'operation':'Copy unchanged coordinate-sorted tile payloads through zoom 12; update source metadata maxzoom.'}
     for source,target in [('viewer/fonts','fonts'),('viewer/sprites','sprites'),('app-legend','legend')]:shutil.copytree(ROOT/source,bundle/target)
     shutil.copyfile(ROOT/'viewer/townlands.geojson',bundle/'townlands.geojson')

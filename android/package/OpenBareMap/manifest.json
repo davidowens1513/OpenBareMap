@@ -1,0 +1,41 @@
+{
+  "packageFormat": "openbaremap-android-resources-v1",
+  "mapVersion": "0.4.0",
+  "sourceCommit": "512e38c61f3ece20f4505fb448161e45bf7def83",
+  "sourceStyleSHA256": "4a8a3c5957c34b5e452bdc5becb53fccaee3cd4e32b2f5a4b4c296c9eaff921f",
+  "renderer": "MapLibre Native Android",
+  "sourceFiles": {
+    "basemap": "maps/basemap.mbtiles",
+    "topography": "maps/topography.mbtiles",
+    "hillshade": "maps/hillshade.mbtiles",
+    "irish-grid": "maps/grid.mbtiles",
+    "coast": "maps/coast.mbtiles"
+  },
+  "databases": {
+    "basemap": {
+      "path": "maps/basemap.mbtiles",
+      "sha256": "df5b1c0122a051bfb2e7cdd427f924beb0967f49fda3a90b5aa46815c0492a72"
+    },
+    "topography": {
+      "path": "maps/topography.mbtiles",
+      "sha256": "a6d187fe0ee38da4c7073a3a41ae04fb30b6525aaada400f4d2bdeef33915b5e"
+    },
+    "hillshade": {
+      "path": "maps/hillshade.mbtiles",
+      "sha256": "55d199c8ca56463286944c9ad2ef39c7ed3b844ebee151dafb11908ade2ac2e0"
+    },
+    "grid": {
+      "path": "maps/grid.mbtiles",
+      "sha256": "449f6302f12b1d606de3e1d0467346e394e25c6c4c0b2b901f6a070873f58972"
+    },
+    "coast": {
+      "path": "maps/coast.mbtiles",
+      "sha256": "79fd6d481fd89be84efd3d333ddaed028922ffb41465f7a9ac046cd434587a32",
+      "derivedFrom": "a6d187fe0ee38da4c7073a3a41ae04fb30b6525aaada400f4d2bdeef33915b5e"
+    }
+  },
+  "contourIntervalMetres": 10,
+  "osmSnapshot": "2026-10-24",
+  "inheritedAssets": "Pinned OpenBareMap 1.1 townland points, fixed grid, glyphs and original patterns; see provenance.",
+  "requiresRuntimePathResolution": true
+}

@@ -1,0 +1,34 @@
+{
+  "build": "passed: loader release AAR and debug APK",
+  "kotlinTests": {
+    "tests": "5",
+    "skipped": "0",
+    "failures": "0",
+    "errors": "0"
+  },
+  "sharedMapTests": 18,
+  "realFullIrelandPackageTested": true,
+  "deviceRenderingTested": false,
+  "reason": "No connected Android device or configured emulator",
+  "maplibre": "org.maplibre.gl:android-sdk-opengl:13.6.1",
+  "gradle": "9.4.1",
+  "androidGradlePlugin": "9.2.1",
+  "compileSDK": "36.1",
+  "minSDK": 23,
+  "targetSDK": 36,
+  "artifacts": [
+    {
+      "path": "android/dist/OpenBareMap-debug.apk",
+      "bytes": 44697898,
+      "sha256": "78f3a67b3d7b0c91f225071a5de8988f957e9041fba4c5b7377f6f6d02196a20"
+    },
+    {
+      "path": "android/dist/openbaremap-loader-release.aar",
+      "bytes": 8470,
+      "sha256": "960cc23fcc74e2b0c5a25121c0444f66e133f792a7610ce5d9e3c71cbf602804"
+    }
+  ],
+  "locationPermissionsDeclared": false,
+  "packageZipReexportDeterministic": true,
+  "sharedCoastMatchesIOS": true
+}

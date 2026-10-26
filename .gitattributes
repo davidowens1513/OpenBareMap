@@ -4,3 +4,6 @@
 *.hgt.gz filter=lfs diff=lfs merge=lfs -text
 viewer/townlands.geojson filter=lfs diff=lfs merge=lfs -text
 ios/package/OpenBareMap.bundle/townlands.geojson filter=lfs diff=lfs merge=lfs -text
+android/package/OpenBareMap/townlands.geojson filter=lfs diff=lfs merge=lfs -text
+*.apk filter=lfs diff=lfs merge=lfs -text
+*.aar filter=lfs diff=lfs merge=lfs -text
