@@ -946,6 +946,154 @@
       "minzoom": 11
     },
     {
+      "id": "footways",
+      "type": "line",
+      "source": "basemap",
+      "source-layer": "transportation",
+      "filter": [
+        "==",
+        [
+          "get",
+          "class"
+        ],
+        "footway"
+      ],
+      "paint": {
+        "line-color": "#6a8f5a",
+        "line-width": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "zoom"
+          ],
+          8,
+          0.45,
+          12,
+          1.1,
+          14,
+          2.1
+        ],
+        "line-dasharray": [
+          1.2,
+          1.2
+        ]
+      },
+      "minzoom": 11
+    },
+    {
+      "id": "bridleways",
+      "type": "line",
+      "source": "basemap",
+      "source-layer": "transportation",
+      "filter": [
+        "==",
+        [
+          "get",
+          "class"
+        ],
+        "bridleway"
+      ],
+      "paint": {
+        "line-color": "#867044",
+        "line-width": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "zoom"
+          ],
+          8,
+          0.45,
+          12,
+          1.1,
+          14,
+          2.1
+        ],
+        "line-dasharray": [
+          2.4,
+          1.2
+        ]
+      },
+      "minzoom": 11
+    },
+    {
+      "id": "cycleways",
+      "type": "line",
+      "source": "basemap",
+      "source-layer": "transportation",
+      "filter": [
+        "==",
+        [
+          "get",
+          "class"
+        ],
+        "cycleway"
+      ],
+      "paint": {
+        "line-color": "#347bb7",
+        "line-width": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "zoom"
+          ],
+          8,
+          0.45,
+          12,
+          1.1,
+          14,
+          2.1
+        ],
+        "line-dasharray": [
+          2,
+          1.2
+        ]
+      },
+      "minzoom": 11
+    },
+    {
+      "id": "steps",
+      "type": "line",
+      "source": "basemap",
+      "source-layer": "transportation",
+      "filter": [
+        "==",
+        [
+          "get",
+          "class"
+        ],
+        "steps"
+      ],
+      "paint": {
+        "line-color": "#6a8f5a",
+        "line-width": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "zoom"
+          ],
+          8,
+          0.45,
+          12,
+          1.1,
+          14,
+          2.1
+        ],
+        "line-dasharray": [
+          0.5,
+          1
+        ]
+      },
+      "minzoom": 11
+    },
+    {
       "id": "tracks",
       "type": "line",
       "source": "basemap",

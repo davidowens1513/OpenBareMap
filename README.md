@@ -66,3 +66,5 @@ Grid and local boundaries use stronger strokes: 10 km grid at 72% opacity from z
 Road visibility: major roads (motorway, trunk, primary and secondary) start at zoom 7. Minor/service roads, tracks and paths start at zoom 11. Walking and cycling route overlays, including national/international routes, also start at zoom 11. Matching casing layers use the same thresholds.
 
 Tracks and paths render as dashes only, without the shared continuous minor-road casing. Their legend samples likewise omit the casing.
+
+Footways, bridleways, cycleways and steps are drawn from zoom 11 as dash-only lines. Footways share the green path pattern; bridleways use longer olive-brown dashes, cycleways blue dashes, and steps short green marks. Pedestrian streets remain unstyled. Each has a style-derived legend entry.
