@@ -6,3 +6,7 @@
 
 aside{max-height:calc(100dvh - 48px);overflow-y:auto}
 @media(max-width:600px){aside{max-height:calc(100dvh - 24px)}}
+
+.legend canvas{width:32px;height:12px;flex:0 0 32px;border-radius:2px}.parking-key{display:inline-flex;align-items:center;justify-content:center;background:#0057b8;color:white;width:17px;height:17px;font:700 14px system-ui}
+aside{width:305px}.legend{column-gap:10px}.legend span{min-width:0}
+@media(max-width:600px){aside{width:220px}.legend{display:grid}}

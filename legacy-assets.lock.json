@@ -1,0 +1,87 @@
+{
+  "origin": "/Users/davidowens/Desktop/BareGPSIrelandDataFiles/OpenBareMap/1.1/OpenBareMap-1.1.0-DropIn/OpenBareMap.bundle",
+  "map_version": "1.1.0",
+  "note": "Copied reference cartography, terrain patterns, fonts, townland label points and fixed EPSG:29903 grid. Grid and townlands are inherited assets, not regenerated from the current OSM snapshot. Old basemap/contours/hillshade not reused.",
+  "assets": [
+    {
+      "path": "assets/legacy-1.1/baregps-style.json",
+      "sha256": "a2ea15d31c950eab14830523f2074d32a2b52235cf5dbd34a59d3db0077926d1"
+    },
+    {
+      "path": "assets/legacy-1.1/build-sources/process.lua",
+      "sha256": "71ccd2d5fe8d3f9db07dd2a2bbbd82f1b895f7ada69cc46adeba7b01cac644b6"
+    },
+    {
+      "path": "assets/legacy-1.1/build-sources/config.json",
+      "sha256": "a8536f387e1625f06d593a6d12ac94978f99865685b8fc8b6080646cbc011a5e"
+    },
+    {
+      "path": "assets/legacy-1.1/manifest.json",
+      "sha256": "618adbd824e84299efe9ba99627f736bb9b8acc4b1b6586fb61449eeffb22a19"
+    },
+    {
+      "path": "assets/legacy-1.1/ATTRIBUTION.txt",
+      "sha256": "219429018b1d303af9952d74a502eea7d0f478ceefae3355883193d7d5f17eff"
+    },
+    {
+      "path": "assets/legacy-1.1/NOTICE.txt",
+      "sha256": "3cb510cb149bf41c6ae3e711b946f8c9f9531e796363eef7d6c0717590b3e4c8"
+    },
+    {
+      "path": "assets/legacy-1.1/LICENSE-APACHE-2.0.txt",
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+    },
+    {
+      "path": "assets/legacy-1.1/documentation/OpenBareMap-Legend.png",
+      "sha256": "07e7eed0d7eeec97b671c06021abc4bff9c305d835b6ff5d5d8b4e260fff3000"
+    },
+    {
+      "path": "assets/legacy-1.1/sprites/baregps-bog27.json",
+      "sha256": "c1ab438b83fbd384e3fe10b372f58966b0461652b6a2fbc5a5ea7e638c948d74"
+    },
+    {
+      "path": "assets/legacy-1.1/sprites/baregps-bog27.png",
+      "sha256": "23bb477ca24f6effe0934913defdca78e0ab963a1293bc22f909cd12d3143b59"
+    },
+    {
+      "path": "assets/legacy-1.1/sprites/baregps-bog27@2x.json",
+      "sha256": "c1ab438b83fbd384e3fe10b372f58966b0461652b6a2fbc5a5ea7e638c948d74"
+    },
+    {
+      "path": "assets/legacy-1.1/sprites/baregps-bog27@2x.png",
+      "sha256": "23bb477ca24f6effe0934913defdca78e0ab963a1293bc22f909cd12d3143b59"
+    },
+    {
+      "path": "assets/irish-grid.mbtiles",
+      "sha256": "449f6302f12b1d606de3e1d0467346e394e25c6c4c0b2b901f6a070873f58972"
+    },
+    {
+      "path": "viewer/townlands.geojson",
+      "sha256": "ab3d1d254517904918fed1e93f614c2c0f2d6940b948844e39c63cdee31a1d62"
+    },
+    {
+      "path": "viewer/fonts/Open Sans Semibold/8192-8447.pbf",
+      "sha256": "ee80ee7ef05e77bea017bcb387d970d61823fc37fdb0a51c446ae322c5974990"
+    },
+    {
+      "path": "viewer/fonts/Open Sans Semibold/0-255.pbf",
+      "sha256": "64da7011e07531351a249a3d26aad76e2f22e4e321e50833f742697b453e8365"
+    },
+    {
+      "path": "viewer/fonts/Open Sans Semibold/256-511.pbf",
+      "sha256": "78298bbd8198c117ccdffe66bf9bbf646fdc1210b7e1bf222f5a9b29b366d7a5"
+    },
+    {
+      "path": "viewer/fonts/Open Sans Bold/8192-8447.pbf",
+      "sha256": "18c7dbc4a21e80172e15cdd0c3f53de9f48663f5f8193fe153bb763ac1d731d8"
+    },
+    {
+      "path": "viewer/fonts/Open Sans Bold/0-255.pbf",
+      "sha256": "b3a5c066b416d69012009e3446ddd9544607ceb7355734922635521b6834c4d8"
+    },
+    {
+      "path": "viewer/fonts/Open Sans Bold/256-511.pbf",
+      "sha256": "910a9d831040b8accfc9d70cf235dd4822e59a24e0d5e1736cee5d501c3d17a7"
+    }
+  ]
+}

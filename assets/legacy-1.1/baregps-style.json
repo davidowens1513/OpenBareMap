@@ -1,0 +1,903 @@
+{
+  "version": 8,
+  "name": "BareGPS Ireland",
+  "sprite": "./sprites/baregps-bog27",
+  "glyphs": "./fonts/{fontstack}/{range}.pbf",
+  "sources": {
+    "ireland": {
+      "type": "vector",
+      "url": "PASTE_YOUR_LOCAL_TILE_SOURCE_HERE"
+    },
+    "contours": {
+      "type": "vector",
+      "url": "PASTE_YOUR_LOCAL_CONTOUR_SOURCE_HERE"
+    },
+    "environment": {
+      "type": "vector",
+      "url": "PASTE_YOUR_LOCAL_ENVIRONMENT_SOURCE_HERE"
+    },
+    "hillshade": {
+      "type": "raster",
+      "url": "PASTE_YOUR_LOCAL_HILLSHADE_SOURCE_HERE",
+      "tileSize": 256
+    },
+    "hiking": {
+      "type": "vector",
+      "url": "PASTE_YOUR_LOCAL_HIKING_SOURCE_HERE",
+      "attribution": "© OpenStreetMap contributors"
+    },
+    "irish-grid": {
+      "type": "vector",
+      "url": "PASTE_YOUR_LOCAL_GRID_SOURCE_HERE",
+      "attribution": "Irish Grid (EPSG:29903)"
+    },
+    "islands": {
+      "type": "vector",
+      "url": "PASTE_YOUR_LOCAL_ISLAND_SOURCE_HERE",
+      "attribution": "© OpenStreetMap contributors"
+    },
+    "townlands": {
+      "type": "geojson",
+      "data": "./townlands.geojson",
+      "attribution": "Townland placenames"
+    }
+  },
+  "layers": [
+    {
+      "id": "background",
+      "type": "background",
+      "paint": {
+        "background-color": "#a8d7ff"
+      }
+    },
+    {
+      "id": "land",
+      "type": "fill",
+      "source": "environment",
+      "source-layer": "land",
+      "paint": {
+        "fill-color": "#f3efe6",
+        "fill-opacity": 1
+      }
+    },
+    {
+      "id": "landcover",
+      "type": "fill",
+      "source": "ireland",
+      "source-layer": "landcover",
+      "paint": {
+        "fill-color": [
+          "match",
+          ["get", "class"],
+          "wood", "#afd190",
+          "farmland", "#e4dfbd",
+          "grass", "#dce7c6",
+          "heath", "#d8cbb8",
+          "scrub", "#cdd9b8",
+          "bog", "#b9aa92",
+          "wetland", "#c4d8cc",
+          "beach", "#f1dfae",
+          "sand", "#ead9ae",
+          "#ddd8c8"
+        ],
+        "fill-opacity": 0.72
+      }
+    },
+    {
+      "id": "terrain-hillshade",
+      "type": "raster",
+      "source": "hillshade",
+      "minzoom": 6,
+      "maxzoom": 17,
+      "paint": {
+        "raster-opacity": 0.46,
+        "raster-resampling": "linear",
+        "raster-fade-duration": 0
+      }
+    },
+    {
+      "id": "bare-rock",
+      "type": "fill",
+      "source": "environment",
+      "source-layer": "terrain",
+      "minzoom": 10,
+      "filter": ["==", ["get", "class"], "bare_rock"],
+      "paint": {
+        "fill-color": "#d0ccc2",
+        "fill-opacity": ["interpolate", ["linear"], ["zoom"], 10, 0.2, 14, 0.42]
+      }
+    },
+    {
+      "id": "scree-and-shingle",
+      "type": "fill",
+      "source": "environment",
+      "source-layer": "terrain",
+      "minzoom": 12,
+      "filter": ["in", ["get", "class"], ["literal", ["scree", "shingle"]]],
+      "paint": {
+        "fill-color": ["match", ["get", "class"], "scree", "#c9c4b8", "#d8d1c3"],
+        "fill-opacity": ["interpolate", ["linear"], ["zoom"], 11, 0.22, 14, 0.4],
+        "fill-outline-color": "#b6b0a4"
+      }
+    },
+    {
+      "id": "bare-rock-stipple",
+      "type": "fill",
+      "source": "environment",
+      "source-layer": "terrain",
+      "minzoom": 10,
+      "filter": ["==", ["get", "class"], "bare_rock"],
+      "paint": {
+        "fill-pattern": "bare-rock-stipple",
+        "fill-opacity": ["interpolate", ["linear"], ["zoom"], 10, 0.28, 13, 0.42, 16, 0.5]
+      }
+    },
+    {
+      "id": "scree-stipple",
+      "type": "fill",
+      "source": "environment",
+      "source-layer": "terrain",
+      "minzoom": 12,
+      "filter": ["in", ["get", "class"], ["literal", ["scree", "shingle"]]],
+      "paint": {
+        "fill-pattern": "scree-stipple",
+        "fill-opacity": ["interpolate", ["linear"], ["zoom"], 12, 0.37, 14, 0.53, 16, 0.62]
+      }
+    },
+    {
+      "id": "cliffs-base",
+      "type": "line",
+      "source": "environment",
+      "source-layer": "terrain",
+      "minzoom": 11,
+      "filter": ["==", ["get", "class"], "cliff"],
+      "layout": {
+        "line-cap": "round",
+        "line-join": "round"
+      },
+      "paint": {
+        "line-color": "#5f584f",
+        "line-opacity": ["interpolate", ["linear"], ["zoom"], 11, 0.72, 14, 0.92],
+        "line-width": ["interpolate", ["linear"], ["zoom"], 11, 0.8, 14, 1.4]
+      }
+    },
+    {
+      "id": "cliffs-and-crags",
+      "type": "line",
+      "source": "environment",
+      "source-layer": "terrain",
+      "minzoom": 11,
+      "filter": ["==", ["get", "class"], "cliff"],
+      "paint": {
+        "line-opacity": ["interpolate", ["linear"], ["zoom"], 11, 0.78, 14, 0.96],
+        "line-width": ["interpolate", ["linear"], ["zoom"], 11, 7, 14, 10],
+        "line-pattern": "cliff-teeth"
+      }
+    },
+    {
+      "id": "water",
+      "type": "fill",
+      "source": "ireland",
+      "source-layer": "water",
+      "paint": {
+        "fill-color": "#a8d7ff"
+      }
+    },
+    {
+      "id": "coastline",
+      "type": "line",
+      "source": "ireland",
+      "source-layer": "coastline",
+      "paint": {
+        "line-color": "#6399b8",
+        "line-width": 0.8
+      }
+    },
+    {
+      "id": "administrative-boundaries",
+      "type": "line",
+      "source": "ireland",
+      "source-layer": "boundary",
+      "filter": ["==", "admin_level", "2"],
+      "paint": {
+        "line-color": "#755778",
+        "line-width": ["interpolate", ["linear"], ["zoom"], 4, 1.1, 12, 2.2],
+        "line-dasharray": [4, 2],
+        "line-opacity": 0.9
+      }
+    },
+    {
+      "id": "county-boundaries",
+      "type": "line",
+      "source": "ireland",
+      "source-layer": "boundary",
+      "minzoom": 6,
+      "filter": ["in", "admin_level", "5", "6"],
+      "paint": {
+        "line-color": "#927d96",
+        "line-width": ["interpolate", ["linear"], ["zoom"], 6, 0.55, 12, 1.1],
+        "line-dasharray": [3, 2],
+        "line-opacity": 0.7
+      }
+    },
+    {
+      "id": "local-boundaries",
+      "type": "line",
+      "source": "ireland",
+      "source-layer": "boundary",
+      "minzoom": 10,
+      "filter": ["!in", "admin_level", "2", "5", "6"],
+      "paint": {
+        "line-color": "#aa9bad",
+        "line-width": ["interpolate", ["linear"], ["zoom"], 10, 0.35, 14, 0.75],
+        "line-dasharray": [2, 3],
+        "line-opacity": 0.5
+      }
+    },
+    {
+      "id": "waterway",
+      "type": "line",
+      "source": "ireland",
+      "source-layer": "waterway",
+      "paint": {
+        "line-color": "#74b5e6",
+        "line-width": [
+          "interpolate",
+          ["linear"],
+          ["zoom"],
+          6, 0.6,
+          10, 1,
+          14, 1.8
+        ]
+      }
+    },
+    {
+      "id": "contours",
+      "type": "line",
+      "source": "contours",
+      "source-layer": "contour",
+      "minzoom": 8,
+      "filter": ["==", ["%", ["get", "ELEV"], 100], 0],
+      "layout": {
+        "line-cap": "round",
+        "line-join": "round"
+      },
+      "paint": {
+        "line-color": "#8b6f47",
+        "line-width": [
+          "interpolate",
+          ["linear"],
+          ["zoom"],
+          8, 0.45,
+          11, 0.75,
+          14, 1.15,
+          16, 1.5
+        ]
+      }
+    },
+    {
+      "id": "contour-intermediate-lines",
+      "type": "line",
+      "source": "contours",
+      "source-layer": "contour",
+      "minzoom": 11,
+      "filter": ["!=", ["%", ["get", "ELEV"], 100], 0],
+      "layout": {
+        "line-cap": "round",
+        "line-join": "round"
+      },
+      "paint": {
+        "line-color": "#9a8161",
+        "line-width": [
+          "interpolate",
+          ["linear"],
+          ["zoom"],
+          11, 0.25,
+          13, 0.5,
+          16, 0.9
+        ],
+        "line-opacity": 0.75
+      }
+    },
+    {
+      "id": "contour-index-labels",
+      "type": "symbol",
+      "source": "contours",
+      "source-layer": "contour",
+      "minzoom": 9,
+      "filter": ["==", ["%", ["get", "ELEV"], 100], 0],
+      "layout": {
+        "symbol-placement": "line",
+        "symbol-spacing": 220,
+        "text-field": ["concat", ["to-string", ["get", "ELEV"]], " m"],
+        "text-font": ["Open Sans Regular"],
+        "text-size": 12.075,
+        "text-max-angle": 30,
+        "text-padding": 2,
+        "text-allow-overlap": false,
+        "text-ignore-placement": false
+      },
+      "paint": {
+        "text-color": "#715a3b",
+        "text-halo-color": "#f3efe6",
+        "text-halo-width": 1.2
+      }
+    },
+    {
+      "id": "contour-intermediate-labels",
+      "type": "symbol",
+      "source": "contours",
+      "source-layer": "contour",
+      "minzoom": 12,
+      "filter": ["!=", ["%", ["get", "ELEV"], 100], 0],
+      "layout": {
+        "symbol-placement": "line",
+        "symbol-spacing": 180,
+        "text-field": ["concat", ["to-string", ["get", "ELEV"]], " m"],
+        "text-font": ["Open Sans Regular"],
+        "text-size": 10.925,
+        "text-max-angle": 30,
+        "text-padding": 1,
+        "text-allow-overlap": false,
+        "text-ignore-placement": false
+      },
+      "paint": {
+        "text-color": "#806b4f",
+        "text-halo-color": "#f3efe6",
+        "text-halo-width": 1
+      }
+    },
+    {
+      "id": "land-cover-buffer",
+      "type": "fill",
+      "source": "ireland",
+      "source-layer": "building",
+      "paint": {
+        "fill-color": "#898c8b",
+        "fill-opacity": 0.82
+      }
+    },
+    {
+      "id": "roads-casing-major",
+      "type": "line",
+      "source": "ireland",
+      "source-layer": "transportation",
+      "filter": ["in", "class", "motorway", "trunk", "primary", "secondary"],
+      "paint": {
+        "line-color": "#d8c2a4",
+        "line-width": [
+          "interpolate",
+          ["linear"],
+          ["zoom"],
+          6, 0.8,
+          10, 2.2,
+          14, 4.8
+        ],
+        "line-opacity": 1
+      }
+    },
+    {
+      "id": "roads-major",
+      "type": "line",
+      "source": "ireland",
+      "source-layer": "transportation",
+      "filter": ["in", "class", "motorway", "trunk", "primary", "secondary"],
+      "paint": {
+        "line-color": [
+          "match",
+          ["get", "class"],
+          "motorway", "#f39a3d",
+          "trunk", "#ee9d4a",
+          "primary", "#f0ad61",
+          "secondary", "#f4bf7b",
+          "#f0ad61"
+        ],
+        "line-width": [
+          "interpolate",
+          ["linear"],
+          ["zoom"],
+          6, 0.5,
+          10, 1.6,
+          14, 3.6
+        ]
+      }
+    },
+    {
+      "id": "roads-casing-minor",
+      "type": "line",
+      "source": "ireland",
+      "source-layer": "transportation",
+      "filter": ["in", "class", "tertiary", "tertiary_link", "residential", "unclassified", "living_street", "road", "service", "track", "path"],
+      "paint": {
+        "line-color": "#8f806b",
+        "line-width": [
+          "interpolate",
+          ["linear"],
+          ["zoom"],
+          8, 0.65,
+          12, 1.6,
+          14, 2.8
+        ]
+      }
+    },
+    {
+      "id": "roads-minor",
+      "type": "line",
+      "source": "ireland",
+      "source-layer": "transportation",
+      "filter": ["in", "class", "tertiary", "tertiary_link", "residential", "unclassified", "living_street", "road", "service", "track", "path"],
+      "paint": {
+        "line-color": [
+          "match",
+          ["get", "class"],
+          "path", "#6a8f5a",
+          "track", "#8b6f47",
+          "service", "#ffffff",
+          "#e6cf98"
+        ],
+        "line-width": [
+          "interpolate",
+          ["linear"],
+          ["zoom"],
+          8, 0.45,
+          12, 1.1,
+          14, 2.1
+        ],
+        "line-dasharray": [
+          "match",
+          ["get", "class"],
+          "path", ["literal", [1.2, 1.2]],
+          "track", ["literal", [2, 1.2]],
+          ["literal", [1, 0]]
+        ]
+      }
+    },
+    {
+      "id": "railways",
+      "type": "line",
+      "source": "ireland",
+      "source-layer": "railway",
+      "filter": ["!in", "class", "abandoned", "disused", "razed"],
+      "paint": {
+        "line-color": "#68645f",
+        "line-width": ["interpolate", ["linear"], ["zoom"], 7, 0.5, 14, 1.5],
+        "line-dasharray": [3, 1]
+      }
+    },
+    {
+      "id": "ferry-routes",
+      "type": "line",
+      "source": "ireland",
+      "source-layer": "ferry",
+      "paint": {
+        "line-color": "#468db6",
+        "line-width": ["interpolate", ["linear"], ["zoom"], 6, 0.8, 14, 2],
+        "line-dasharray": [4, 2]
+      }
+    },
+    {
+      "id": "cycling-routes",
+      "type": "line",
+      "source": "ireland",
+      "source-layer": "cycling_route",
+      "paint": {
+        "line-color": "#347bb7",
+        "line-width": ["interpolate", ["linear"], ["zoom"], 7, 0.8, 14, 2.4],
+        "line-opacity": 0.75
+      }
+    },
+    {
+      "id": "hiking-routes",
+      "type": "line",
+      "source": "ireland",
+      "source-layer": "hiking_route",
+      "paint": {
+        "line-color": "#cc553d",
+        "line-width": ["interpolate", ["linear"], ["zoom"], 7, 0.8, 14, 2.6],
+        "line-dasharray": [2, 1],
+        "line-opacity": 0.8
+      }
+    },
+    {
+      "id": "road-labels",
+      "type": "symbol",
+      "source": "ireland",
+      "source-layer": "transportation_name",
+      "minzoom": 10,
+      "layout": {
+        "symbol-placement": "line",
+        "text-field": ["coalesce", ["get", "name_en"], ["get", "name"], ["get", "name_ga"]],
+        "text-font": ["Open Sans Regular"],
+        "text-size": [
+          "interpolate",
+          ["linear"],
+          ["zoom"],
+          10, 12,
+          14, 15.6
+        ],
+        "text-allow-overlap": false
+      },
+      "paint": {
+        "text-color": "#3b372f",
+        "text-halo-color": "#f3efe6",
+        "text-halo-width": 1.2
+      }
+    },
+    {
+      "id": "townland-labels",
+      "type": "symbol",
+      "source": "townlands",
+      "minzoom": 12,
+      "layout": {
+        "text-field": ["get", "name"],
+        "text-font": ["Open Sans Regular"],
+        "text-size": 11.9,
+        "text-transform": "uppercase",
+        "text-letter-spacing": 0.04,
+        "text-allow-overlap": false,
+        "text-optional": true
+      },
+      "paint": {
+        "text-color": "#5b5548",
+        "text-halo-color": "#f3efe6",
+        "text-halo-width": 1.1,
+        "text-opacity": [
+          "interpolate",
+          ["linear"],
+          ["zoom"],
+          12, 0.45,
+          13, 0.78,
+          14, 0.92
+        ]
+      }
+    },
+    {
+      "id": "island-labels",
+      "type": "symbol",
+      "source": "islands",
+      "source-layer": "island_name",
+      "minzoom": 10,
+      "filter": ["!in", "name", "Éire / Ireland", "Ireland / Éire", "Ireland", "Éire"],
+      "layout": {
+        "text-field": ["coalesce", ["get", "name_en"], ["get", "name"], ["get", "name_ga"]],
+        "text-font": ["Open Sans Regular"],
+        "text-size": [
+          "interpolate", ["linear"], ["zoom"],
+          10, ["match", ["get", "class"], "island", 11.45, 10.1],
+          13, ["match", ["get", "class"], "island", 14.6, 11.45]
+        ],
+        "text-letter-spacing": 0.08,
+        "text-allow-overlap": true,
+        "text-ignore-placement": true
+      },
+      "paint": {
+        "text-color": "#46534c",
+        "text-halo-color": "#f3efe6",
+        "text-halo-width": 1.2
+      }
+    },
+    {
+      "id": "irish-grid-1km",
+      "type": "line",
+      "source": "irish-grid",
+      "source-layer": "grid_1km",
+      "minzoom": 12,
+      "paint": {
+        "line-color": "#6f929f",
+        "line-opacity": ["interpolate", ["linear"], ["zoom"], 12, 0.2, 14, 0.28, 16, 0.32],
+        "line-width": ["interpolate", ["linear"], ["zoom"], 12, 0.45, 14, 0.58, 16, 0.68]
+      }
+    },
+    {
+      "id": "irish-grid-10km",
+      "type": "line",
+      "source": "irish-grid",
+      "source-layer": "grid_10km",
+      "minzoom": 10,
+      "paint": {
+        "line-color": "#628592",
+        "line-opacity": ["interpolate", ["linear"], ["zoom"], 10, 0.22, 12, 0.3, 15, 0.36],
+        "line-width": ["interpolate", ["linear"], ["zoom"], 10, 0.58, 12, 0.72, 15, 0.86]
+      }
+    },
+    {
+      "id": "irish-grid-labels",
+      "type": "symbol",
+      "source": "irish-grid",
+      "source-layer": "grid_10km",
+      "minzoom": 12,
+      "layout": {
+        "symbol-placement": "line",
+        "symbol-spacing": 420,
+        "text-field": ["get", "label"],
+        "text-font": ["Open Sans Regular"],
+        "text-size": ["interpolate", ["linear"], ["zoom"], 12, 7, 15, 8.5],
+        "text-max-angle": 5,
+        "text-allow-overlap": false
+      },
+      "paint": {
+        "text-color": "#567783",
+        "text-opacity": 0.58,
+        "text-halo-color": "#f3efe6",
+        "text-halo-width": 1
+      }
+    },
+    {
+      "id": "water-labels",
+      "type": "symbol",
+      "source": "ireland",
+      "source-layer": "water_name",
+      "minzoom": 12,
+      "layout": {
+        "text-field": ["coalesce", ["get", "name_en"], ["get", "name"], ["get", "name_ga"]],
+        "text-font": ["Open Sans Regular"],
+        "text-size": 10,
+        "text-allow-overlap": false
+      },
+      "paint": {
+        "text-color": "#985b55",
+        "text-halo-color": "#f5eeea",
+        "text-halo-width": 1
+      }
+    },
+    {
+      "id": "natural-labels",
+      "type": "symbol",
+      "source": "ireland",
+      "source-layer": "natural",
+      "filter": ["in", "class", "peak", "volcano", "saddle"],
+      "minzoom": 9,
+      "layout": {
+        "text-field": ["coalesce", ["get", "name_en"], ["get", "name"], ["get", "name_ga"]],
+        "text-font": ["Open Sans Semibold"],
+        "text-size": 11,
+        "text-offset": [0, 0.8],
+        "text-allow-overlap": false
+      },
+      "paint": {
+        "text-color": "#554b3d",
+        "text-halo-color": "#f3efe6",
+        "text-halo-width": 1
+      }
+    },
+    {
+      "id": "hiking-priority-points",
+      "type": "circle",
+      "source": "hiking",
+      "source-layer": "hiking",
+      "minzoom": 10,
+      "filter": ["all", ["has", "name"], ["match", ["get", "class"], ["hut", "shelter", "trailhead", "rescue"], true, false]],
+      "paint": {"circle-radius": 1.36, "circle-color": "#596957", "circle-stroke-color": "#f3efe6", "circle-stroke-width": 0.75, "circle-opacity": 0.9}
+    },
+    {
+      "id": "hiking-access-points",
+      "type": "circle",
+      "source": "hiking",
+      "source-layer": "hiking",
+      "minzoom": 12,
+      "filter": ["all", ["has", "name"], ["match", ["get", "class"], ["viewpoint", "campsite", "parking"], true, false]],
+      "paint": {"circle-radius": 1.36, "circle-color": "#596957", "circle-stroke-color": "#f3efe6", "circle-stroke-width": 0.75, "circle-opacity": 0.9}
+    },
+    {
+      "id": "hiking-amenity-points",
+      "type": "circle",
+      "source": "hiking",
+      "source-layer": "hiking",
+      "minzoom": 14,
+      "filter": ["all", ["has", "name"], ["match", ["get", "class"], ["drinking_water", "toilets"], true, false]],
+      "paint": {"circle-radius": 1.36, "circle-color": "#596957", "circle-stroke-color": "#f3efe6", "circle-stroke-width": 0.75, "circle-opacity": 0.9}
+    },
+    {
+      "id": "hiking-viewpoint-labels",
+      "type": "symbol",
+      "source": "hiking",
+      "source-layer": "hiking",
+      "minzoom": 12,
+      "filter": ["all", ["has", "name"], ["==", ["get", "class"], "viewpoint"]],
+      "layout": {"text-field": ["get", "name"], "text-font": ["Open Sans Semibold"], "text-size": 7, "text-offset": [0, 0.85], "text-anchor": "top", "text-optional": true},
+      "paint": {"text-color": "#394a39", "text-halo-color": "#f3efe6", "text-halo-width": 0.82}
+    },
+    {
+      "id": "hiking-trailhead-labels",
+      "type": "symbol",
+      "source": "hiking",
+      "source-layer": "hiking",
+      "minzoom": 11,
+      "filter": ["all", ["has", "name"], ["==", ["get", "class"], "trailhead"]],
+      "layout": {"text-field": ["get", "name"], "text-font": ["Open Sans Semibold"], "text-size": 7, "text-offset": [0, 0.85], "text-anchor": "top", "text-optional": true},
+      "paint": {"text-color": "#36332f", "text-halo-color": "#f3efe6", "text-halo-width": 0.85}
+    },
+    {
+      "id": "hiking-priority-labels",
+      "type": "symbol",
+      "source": "hiking",
+      "source-layer": "hiking",
+      "minzoom": 11,
+      "filter": ["all", ["has", "name"], ["match", ["get", "class"], ["hut", "shelter", "rescue"], true, false]],
+      "layout": {
+        "text-field": ["get", "name"],
+        "text-font": ["Open Sans Semibold"], "text-size": 7, "text-offset": [0, 0.85], "text-anchor": "top", "text-optional": true
+      },
+      "paint": {"text-color": "#36332f", "text-halo-color": "#f3efe6", "text-halo-width": 0.85}
+    },
+    {
+      "id": "hiking-access-labels",
+      "type": "symbol",
+      "source": "hiking",
+      "source-layer": "hiking",
+      "minzoom": 14,
+      "filter": ["all", ["has", "name"], ["match", ["get", "class"], ["campsite", "parking", "drinking_water", "toilets"], true, false]],
+      "layout": {
+        "text-field": ["get", "name"],
+        "text-font": ["Open Sans Regular"], "text-size": 7, "text-offset": [0, 0.85], "text-anchor": "top", "text-optional": true
+      },
+      "paint": {"text-color": "#49453e", "text-halo-color": "#f3efe6", "text-halo-width": 0.65}
+    },
+    {
+      "id": "mountain-pass-labels",
+      "type": "symbol",
+      "source": "hiking",
+      "source-layer": "hiking",
+      "minzoom": 11,
+      "filter": ["all", ["has", "name"], ["==", ["get", "class"], "pass"]],
+      "layout": {
+        "text-field": ["get", "name"],
+        "text-font": ["Open Sans Semibold"],
+        "text-size": 10.5,
+        "text-offset": [0, 0.7],
+        "text-allow-overlap": false
+      },
+      "paint": {
+        "text-color": "#554b3d",
+        "text-halo-color": "#f3efe6",
+        "text-halo-width": 1
+      }
+    },
+    {
+      "id": "station-labels",
+      "type": "symbol",
+      "source": "ireland",
+      "source-layer": "station",
+      "minzoom": 10,
+      "layout": {
+        "text-field": ["coalesce", ["get", "name_en"], ["get", "name"], ["get", "name_ga"]],
+        "text-font": ["Open Sans Regular"],
+        "text-size": 11,
+        "text-allow-overlap": false
+      },
+      "paint": {
+        "text-color": "#4e4a46",
+        "text-halo-color": "#f3efe6",
+        "text-halo-width": 1
+      }
+    },
+    {
+      "id": "city-labels",
+      "type": "symbol",
+      "source": "ireland",
+      "source-layer": "place",
+      "minzoom": 4,
+      "filter": [
+        "all",
+        ["==", "class", "city"],
+        ["!in", "name", "Éire / Ireland", "Ireland / Éire", "Ireland", "Éire"]
+      ],
+      "layout": {
+        "text-field": ["coalesce", ["get", "name_en"], ["get", "name"], ["get", "name_ga"]],
+        "text-font": ["Open Sans Semibold"],
+        "text-size": 16,
+        "text-allow-overlap": false
+      },
+      "paint": {
+        "text-color": "#2f2a22",
+        "text-halo-color": "#f3efe6",
+        "text-halo-width": 1.4
+      }
+    },
+    {
+      "id": "town-labels",
+      "type": "symbol",
+      "source": "ireland",
+      "source-layer": "place",
+      "minzoom": 6,
+      "filter": [
+        "all",
+        ["==", "class", "town"],
+        ["!in", "name", "Éire / Ireland", "Ireland / Éire", "Ireland", "Éire"]
+      ],
+      "layout": {
+        "text-field": ["coalesce", ["get", "name_en"], ["get", "name"], ["get", "name_ga"]],
+        "text-font": ["Open Sans Semibold"],
+        "text-size": 13,
+        "text-allow-overlap": false
+      },
+      "paint": {
+        "text-color": "#2f2a22",
+        "text-halo-color": "#f3efe6",
+        "text-halo-width": 1.4
+      }
+    },
+    {
+      "id": "place-labels",
+      "type": "symbol",
+      "source": "ireland",
+      "source-layer": "place",
+      "minzoom": 7,
+      "filter": [
+        "all",
+        ["!in", "class", "city", "town", "island", "islet", "village", "hamlet"],
+        ["!in", "name", "Éire / Ireland", "Ireland / Éire", "Ireland", "Éire"]
+      ],
+      "layout": {
+        "text-field": ["coalesce", ["get", "name_en"], ["get", "name"], ["get", "name_ga"]],
+        "text-font": ["Open Sans Semibold"],
+        "text-size": 11,
+        "text-allow-overlap": false
+      },
+      "paint": {
+        "text-color": "#2f2a22",
+        "text-halo-color": "#f3efe6",
+        "text-halo-width": 1.4
+      }
+    },
+    {
+      "id": "village-labels",
+      "type": "symbol",
+      "source": "ireland",
+      "source-layer": "place",
+      "minzoom": 7,
+      "filter": ["==", "class", "village"],
+      "layout": {
+        "text-field": ["coalesce", ["get", "name_en"], ["get", "name"], ["get", "name_ga"]],
+        "text-font": ["Open Sans Semibold"],
+        "text-size": 10,
+        "text-allow-overlap": false
+      },
+      "paint": {
+        "text-color": "#2f2a22",
+        "text-halo-color": "#f3efe6",
+        "text-halo-width": 1.4
+      }
+    },
+    {
+      "id": "hamlet-labels",
+      "type": "symbol",
+      "source": "ireland",
+      "source-layer": "place",
+      "minzoom": 8,
+      "filter": ["==", "class", "hamlet"],
+      "layout": {
+        "text-field": ["coalesce", ["get", "name_en"], ["get", "name"], ["get", "name_ga"]],
+        "text-font": ["Open Sans Semibold"],
+        "text-size": 9,
+        "text-allow-overlap": false
+      },
+      "paint": {
+        "text-color": "#2f2a22",
+        "text-halo-color": "#f3efe6",
+        "text-halo-width": 1.4
+      }
+    },
+    {
+      "id": "pois",
+      "type": "symbol",
+      "source": "ireland",
+      "source-layer": "poi",
+      "minzoom": 12,
+      "layout": {
+        "text-field": ["coalesce", ["get", "name_en"], ["get", "name"], ["get", "name_ga"]],
+        "text-font": ["Open Sans Regular"],
+        "text-size": 13.2,
+        "icon-image": ["coalesce", ["get", "class"], "marker-15"],
+        "icon-size": 0.9,
+        "icon-allow-overlap": false,
+        "text-optional": true
+      },
+      "paint": {
+        "text-color": "#3b372f",
+        "text-halo-color": "#f3efe6",
+        "text-halo-width": 1
+      }
+    }
+  ]
+}

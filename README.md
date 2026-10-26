@@ -1,121 +1,54 @@
 # OpenBareMap
 
-An independent offline topographic map build for the whole island of Ireland, including Northern Ireland and offshore islands. All real-data builds use full-island coverage; there is no sample-area stage. The old 1.1 map bundle is retained outside this project as a visual reference.
+An offline topographic map for the whole island of Ireland, including Northern Ireland and offshore islands. Every real-data build covers the full source extract.
 
-## Current map
+## Current map: 1.1 cartography, rebuilt data
 
-The 0.2 development map includes fresh OSM roads, paths, tracks, buildings, water and land cover; settlement and summit labels, saddles, cliff lines, hiking amenities and walking-route relations; official OSM coastal land polygons; and new contours and shaded relief. Contours are generated at 10-metre intervals from approximately 30-metre composite elevation data. The displayed interval changes with zoom to show 100-metre, then 50-metre, then 10-metre detail.
+Development version 0.4 restores OpenBareMap 1.1's palette, Open Sans typography, road/route styles, boundaries, naming layers and terrain textures. Text halos are omitted at the user’s request. The original 1.1 bundle is preserved selectively in `assets/legacy-1.1` as reference material; the runtime entry point is `style/openbaremap.json`.
 
-The selected databases are recorded with checksums in `active-map.json`:
+The basemap is rebuilt from our locked 2026-10-24 full-island OSM snapshot. It includes roads, paths, tracks, water, land cover, buildings, settlements, summits and saddles, hiking facilities, walking and cycling relations, boundaries, railways, stations, ferries, road names, water names and island names. Hiking facilities use dots and words; parking retains the conventional white P on blue. Missing general POI icons from the old bundle are not referenced.
 
-| Content | Selected file |
-| --- | --- |
-| Base vectors | `build/ireland-outdoors-a/basemap.mbtiles` |
-| Coastal land and contours | `build/topography-a/topography.mbtiles` |
-| Corrected hillshade | `build/hillshade-a/hillshade.mbtiles` |
+Contours retain **10-metre intervals** from our approximately 30-metre composite elevation data. The progressive 1.1 treatment shows 100 m index lines from zoom 8 and their labels from zoom 9; all intermediate 10 m lines enter at zoom 11 and their labels at zoom 12. This replaces the preceding 100/50/10 m display stages. Index and intermediate strokes and text scale differently. Contour label repeat spacing is 440 pixels for index labels and 360 pixels for intermediate labels, halving repeat placement opportunities relative to 1.1; collision handling affects actual visible counts. Hillshade is 46% opaque. Rock and scree fills and stipples draw above hillshade; cliffs use the copied teeth pattern. Bog textures now actually render, using low/mid/high patterns at zooms 9/12/14. Peat workings remain separately classified.
 
-This is a development map, not a finished OpenBareMap release. Road labels, directional cliff presentation, bridge/tunnel ordering, broader hiking-feature review and other acceptance checks remain pending.
+The 1.1 townland label points (50,380 features) and fixed Irish Grid are inherited assets with exact checksums, not claimed as newly regenerated data. Grid lines show 10 km spacing from zoom 10 and 1 km from zoom 12. Their provenance and all copied font/pattern/reference files are recorded in `legacy-assets.lock.json`. The old basemap, contours and hillshade are not reused. Glyph generation and grid/townland generation recipes remain to be recovered or replaced.
 
-## Restore the map and source snapshots
+`classic-map-report.json` records the new builds and tile inventories. `classic-terrain-preview.png` and `classic-bog-preview.png` show the active cartography; earlier screenshots and reports are historical.
 
-The three selected map databases and the exact OSM, coast and elevation inputs are stored with Git LFS. Duplicate builds, failed runs and processing intermediates are excluded.
+## Restore and view
+
+The selected map databases and exact OSM, coast and elevation inputs are stored with Git LFS. Duplicate builds and intermediates are excluded.
 
 ```sh
 git lfs install --local
 git lfs pull
-```
-
-Run those commands inside a clone of this repository before opening the viewer or rebuilding. The LFS files are checked against the existing source locks and active map checksums. These snapshots provide recovery even when upstream download URLs change. Restoring the map does not require rebuilding it.
-
-## Open the viewer
-
-From this project folder:
-
-```sh
 python3 scripts/serve.py
 ```
 
-Open http://127.0.0.1:8765 while that process is running. The server is restricted to this Mac's loopback address and verifies selected database checksums at startup. It exposes XYZ tile requests and converts rows to MBTiles TMS addressing. It does not change the databases.
+Open http://127.0.0.1:8765 while the server runs. It verifies `active-map.json` checksums, serves local resources, and converts XYZ requests to MBTiles TMS rows. Coast uses a separately capped source to overzoom its zoom-12 polygons while contours continue through zoom 14. The four selected databases are the fresh basemap, existing coast/contours, existing corrected hillshade, and copied grid. Their exact paths are in `active-map.json`.
 
-The reference style is `style/openbaremap.json`. The server resolves resource addresses against its local origin; it does not repair schema or cartography. Coast geometry is stored through zoom 12 and deliberately uses a separate capped source to overzoom at higher magnifications while contours continue through zoom 14.
+MapLibre GL JS 5.6.1 and its stylesheet are vendored. All runtime map, glyph, sprite and townland requests are local. Attribution links are external only when followed. See `viewer-assets.lock.json`, `legacy-assets.lock.json` and the viewer's terrain attribution page.
 
-Renderer, stylesheet, glyph and tile requests are local. Attribution links are external only when followed. MapLibre GL JS 5.6.1 assets are vendored with their license and checksums. Open Sans glyphs are temporarily reused from the old bundle with their Apache license and recorded provenance; a fresh glyph generation recipe remains pending. See `viewer-assets.lock.json`.
+The legend reads active style colours, opacity, dash lengths and textures. Hillshade and contour density still affect the apparent colours on the map. The archived illustrated 1.1 legend is reference material, not the runtime legend.
 
-`outdoors-preview.png` shows summit labels and outdoor features; `wicklow-outdoors-preview.png` shows walking routes and hiking amenities. The earlier `topography-preview.png` shows terrain-only mountain detail; `coast-preview.png` shows Kerry's coast. The older `viewer-preview.png` records the vector-only stage.
+## Sources and rebuilding
 
-## Recorded source data
+The Geofabrik Ireland and Northern Ireland extract is dated 2026-10-24; its checksum is recorded in `sources.lock.json`. The OSM coast archive is recorded in `coast-sources.lock.json`. Elevation uses 30 Terrain Tiles skadi grids covering longitude -11 to -5 and latitude 51 to 56, with exact checksums in `terrain-sources.lock.json`. This elevation product is composite data, not pure SRTM. Mutable upstream URLs never silently replace locked source bytes.
 
-The base OSM extract is the complete Geofabrik Ireland and Northern Ireland source dated 2026-10-24. Its download matched Geofabrik's published checksum, and its SHA-256 is recorded in `sources.lock.json`.
-
-The coast source is the official OSM split land-polygons archive in WGS84. Its checksums and HTTP publication information are recorded in `coast-sources.lock.json`. Publication time is not claimed to be an exact OSM snapshot timestamp.
-
-Elevation uses 30 one-degree Mapzen / Terrain Tiles skadi grids covering longitude -11 to -5 and latitude 51 to 56. This is a composite elevation product, not pure SRTM. Each compressed grid has been checked for gzip integrity, expected dimensions and SHA-256. See `terrain-sources.lock.json`, `source-documents.lock.json` and the viewer's terrain attribution page.
-
-Keep the actual source files durably. Mutable download URLs cannot guarantee future recovery of identical snapshots. No source is silently replaced when its checksum changes.
-
-## Rebuild
-
-The following commands are for fresh output directories. Existing build folders are never overwritten; archive or rename a prior run before reusing its name.
+Use fresh build names: existing output directories are never overwritten.
 
 ```sh
-python3 scripts/fetch_coast.py
-python3 scripts/fetch_terrain.py
-python3 scripts/openbaremap.py build ireland-outdoors-a --accept-toolchain
-python3 scripts/openbaremap.py build ireland-outdoors-b
-python3 scripts/openbaremap.py compare ireland-outdoors-a ireland-outdoors-b
-python3 scripts/build_topography.py topography-a --accept-toolchain
-python3 scripts/build_topography.py topography-b
+python3 scripts/openbaremap.py build ireland-classic-d
+python3 scripts/openbaremap.py build ireland-classic-e
+python3 scripts/openbaremap.py compare ireland-classic-d ireland-classic-e
 python3 -m unittest discover -s tests -v
 ```
 
-The registered OSM source must already be present. For a new source registration, use `openbaremap.py register /absolute/path/input.osm.pbf --url ACTUAL_SOURCE_URL --date YYYY-MM-DD`. Existing source locks are intentionally protected against replacement.
+Build commands record the exact input, processor, configuration and Tilemaker binary. Restore the selected archives without rebuilding when those build names already exist. Terrain rebuild scripts are `scripts/build_topography.py` and `scripts/build_hillshade.py`; their records and locks retain the independent elevation provenance.
 
-The complete topography builder generates the land clip, projected elevation, contours, vector tiles and the corrected, canonically packaged hillshade. Its raster stage can also be rebuilt independently from a recorded elevation checkpoint:
+The sprite atlas is assembled from the checked-in original terrain textures and a generated parking P. Install `assets/requirements.txt` in an isolated Python environment and run `python3 scripts/build_sprites.py`. Output hashes and Pillow version are in `assets/sprites.lock.json`.
 
-```sh
-python3 scripts/build_hillshade.py topography-a hillshade-a
-python3 scripts/build_hillshade.py topography-b hillshade-b
-```
+## Limits and remaining work
 
-The selected current hillshade comes from those independent raster builds, after a visual check identified and corrected no-data transparency. Earlier outputs and failed-run logs are retained under `build/` as diagnostics and are not selected by the viewer. Build records remain immutable; visual review is recorded separately in `visual-review.json`.
+This remains development cartography. Independent land-cover completeness, directional cliff correctness, bridge/tunnel ordering, nested route semantics, language policy and cross-device acceptance remain unfinished. The copied cliff pattern follows geometry, but has not been verified as indicating the downhill side. OSM access tags do not establish public access or route safety. The inherited townlands and grid are pinned binary/source assets with incomplete generation recipes. A portable pinned toolchain, fresh font generation and an app-independent release package are still required.
 
-Builds use the installed Tilemaker and QGIS-bundled GDAL tools. The scripts record executable identities and explicitly locate QGIS's GDAL and PROJ data. `topography-toolchain.lock.json` includes hashes of those data files. This proves local repeatability; a portable container with all shared libraries pinned remains pending.
-
-## Validation and remaining work
-
-Two base builds match byte-for-byte. Two coast/contour builds also match byte-for-byte. The final hillshade builds use identical elevation checkpoints and produce identical tiles, metadata and complete archive bytes after canonical SQLite packaging. Canonical packaging sorts metadata and tile rows into a fresh database so incidental storage layout does not affect a release checksum. It does not alter tile pixels.
-
-See `outdoors-report.json` for the current base map, and `topography-report.json` for the terrain layers. `build-report.json` retains the vector-only baseline. Actual vector layer presence was checked by parsing tile contents. Representative elevation checks cover upland locations in Kerry, Wicklow, the Mournes and Donegal; sea no-data and final raster transparency were checked separately. These are sanity checks, not a survey of vertical accuracy. Representative coast and mountain views were inspected in the viewer.
-
-Next work is cartographic completeness and full acceptance: road labels and structure ordering, broader outdoor-feature review, language policy, legend consistency, source/style compatibility, fresh font generation, portable dependency pinning, and a release package independent of any particular consuming app.
-
-References: [Tilemaker](https://github.com/systemed/tilemaker/tree/master/docs), [OSM land polygons](https://osmdata.openstreetmap.de/data/land-polygons.html), [Terrain Tiles](https://registry.opendata.aws/terrain-tiles/), [GDAL](https://gdal.org/en/stable/), [MapLibre style specification](https://maplibre.org/maplibre-style-spec/).
-
-## Outdoor features in version 0.2
-
-The `mountain` layer contains summits and saddles. OSM heights are preserved as `ele_raw`; recognized metre or explicit feet values also have normalized `ele_m` and a whole-metre `ele_label`. Ambiguous elevation strings remain inspectable but do not produce a numeric height. Labels do not substitute heights from the contour DEM. English, original and Irish names are preserved separately; the reference style prefers English when available.
-
-The `hiking_poi` layer includes huts, shelters, trailheads, viewpoints, campsites and camp pitches, drinking water, toilets, guideposts, parking and mountain-rescue facilities. Nodes and closed-area centroids are supported. Access, foot access, operator, opening hours and relevant amenity tags are retained; a symbol is not an assertion of public access. Parking is displayed only at close zoom levels. Disused and abandoned POIs are omitted.
-
-The `hiking_route` layer contains direct OSM hiking, foot and walking route relations. Proposed routes and cycling relations are excluded. Geometry, names, ref, network, operator and route tags are retained. Purple lines indicate mapped walking routes, not routing calculations. Nested superroute hierarchy and member-role differentiation remain separate acceptance work.
-
-The `natural_line` layer preserves cliff lines. Their current dotted presentation does not assert which side is the drop; directional hachures are pending.
-
-The conventional white parking P on a blue square is generated from code without system fonts. No other pictograms are included in the atlas. To rebuild the 1x and 2x sprite atlases, install `assets/requirements.txt` in an isolated Python environment and run `python3 scripts/build_sprites.py`. The generator, Pillow version and output checksums are recorded in `assets/sprites.lock.json`. Lua processing fixtures run as part of the tests when a `lua` executable is installed; a missing Lua runtime is reported as a skipped test.
-
-The reference style uses plain labels without white halos and walking routes without white outer casings.
-
-Outdoor features, including summits, saddles, viewpoints and amenities, use small dots with text labels. Parking alone uses the conventional white P on a blue square. Unnamed amenities and saddles receive generic text labels; named features keep their mapped names.
-
-Contour labels cover every 50-metre interval from zoom 12, with 200-pixel repeat spacing (50% more placement opportunities than the original 300-pixel spacing). Collision handling still determines the actual number shown. Legend dash swatches read the map paint properties and convert line-width-relative dash lengths into SVG lengths at the current zoom. See `legend-preview.png` for the current style; the separate contour preview images record the preceding adjustments.
-
-Hillshade display opacity is 45%, paired with contour strokes 40% heavier than the original style so relief and contours remain legible together.
-
-
-## Land cover in version 0.3
-
-Mapped bog (`natural=wetland` with `wetland=bog` or `string_bog`), peat workings (`landuse=peat_cutting`), bare rock and scree have separate classes and muted fills. Fen and other wetlands retain the general wetland class. Natural, land-use and wetland tags and names are preserved for inspection. Explicit terrain classifications take precedence over broad land-use tags on the same feature; these fills draw above general land cover and below hillshade and contours. Unmapped land remains unclassified. This update does not supply missing coverage or establish ground conditions.
-
-Classification references: [OSM bog](https://wiki.openstreetmap.org/wiki/Tag:wetland=bog), [peat cutting](https://wiki.openstreetmap.org/wiki/Tag:landuse=peat_cutting), [bare rock](https://wiki.openstreetmap.org/wiki/Tag:natural=bare_rock), [scree](https://wiki.openstreetmap.org/wiki/Tag:natural=scree).
-
-The land-cover legend includes all eleven mapped land-cover classes plus water. Fill colours and opacity come directly from the active map style, including its categorical colour expression, so style edits do not require copying colours into the legend. Hillshade can alter the appearance of the same fill across slopes.
+Tests cover source classification and elevations, restored layer emission, tile integrity and row addressing, deterministic packaging, resource references, font/pattern availability, copied asset checksums and contour configuration. Reports distinguish build checks from independent geographic accuracy.

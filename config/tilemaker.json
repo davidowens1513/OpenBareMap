@@ -33,11 +33,47 @@
       "maxzoom": 14
     },
     "hiking_route": {
-      "minzoom": 8,
+      "minzoom": 7,
       "maxzoom": 14
     },
     "natural_line": {
-      "minzoom": 12,
+      "minzoom": 11,
+      "maxzoom": 14
+    },
+    "transportation_name": {
+      "minzoom": 10,
+      "maxzoom": 14
+    },
+    "water_name": {
+      "minzoom": 11,
+      "maxzoom": 14
+    },
+    "station": {
+      "minzoom": 9,
+      "maxzoom": 14
+    },
+    "railway": {
+      "minzoom": 6,
+      "maxzoom": 14
+    },
+    "ferry": {
+      "minzoom": 6,
+      "maxzoom": 14
+    },
+    "cycling_route": {
+      "minzoom": 7,
+      "maxzoom": 14
+    },
+    "boundary": {
+      "minzoom": 4,
+      "maxzoom": 14
+    },
+    "poi": {
+      "minzoom": 10,
+      "maxzoom": 14
+    },
+    "island_name": {
+      "minzoom": 7,
       "maxzoom": 14
     }
   },
@@ -48,7 +84,7 @@
     "include_ids": true,
     "compress": "gzip",
     "name": "OpenBareMap Ireland and Northern Ireland",
-    "version": "0.3.0",
+    "version": "0.4.0",
     "description": "All-Ireland outdoor basemap with summits, hiking POIs and walking routes"
   }
 }

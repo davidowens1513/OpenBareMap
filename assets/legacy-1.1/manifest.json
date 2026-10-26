@@ -1,0 +1,33 @@
+{
+  "packageFormat": "baregps-ireland-map-package-v1",
+  "name": "BareGPS Ireland 2.0 Map Package",
+  "created": "2026-10-17",
+  "targetApplication": {
+    "name": "BareGPS Ireland",
+    "version": "2.0"
+  },
+  "map": {
+    "name": "OpenBareMap",
+    "version": "1.1.0",
+    "style": "baregps-style.json"
+  },
+  "sources": {
+    "ireland": { "file": "ireland.mbtiles", "type": "vector", "minzoom": 4, "maxzoom": 14 },
+    "contours": { "file": "contours.mbtiles", "type": "vector", "minzoom": 8, "maxzoom": 14 },
+    "environment": { "file": "environment.mbtiles", "type": "vector", "minzoom": 4, "maxzoom": 14 },
+    "hillshade": { "file": "hillshade.mbtiles", "type": "raster", "minzoom": 6, "maxzoom": 12 },
+    "hiking": { "file": "hiking.mbtiles", "type": "vector", "minzoom": 10, "maxzoom": 14 },
+    "irish-grid": { "file": "grid.mbtiles", "type": "vector", "minzoom": 10, "maxzoom": 13 },
+    "islands": { "file": "islands.mbtiles", "type": "vector", "minzoom": 7, "maxzoom": 14 },
+    "townlands": { "file": "style/townlands.geojson", "type": "geojson" }
+  },
+  "resources": {
+    "fonts": "fonts",
+    "sprites": "sprites/baregps-bog27",
+    "legend": "documentation/OpenBareMap-Legend.png",
+    "glyphRanges": ["0-255", "256-511", "8192-8447"]
+  },
+  "checksums": "SHA256SUMS.txt",
+  "attribution": "ATTRIBUTION.txt",
+  "notice": "NOTICE.txt"
+}

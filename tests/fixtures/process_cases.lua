@@ -7,6 +7,7 @@ function AttributeNumeric(key,value) assert(type(value)=="number"); Attribute(ke
 function MinZoom(zoom) current.minzoom=zoom end
 function IsClosed() return closed end
 function Accept() accepted=true end
+function NextRelation() return nil end
 
 dofile(arg[1])
 local function run(kind, input, is_closed)
@@ -46,7 +47,7 @@ run("way",{highway="path",name="A path"},false);assert(find("transportation").at
 run("relation",{type="route",route="hiking",network="nwn",name="Long route",ref="TEST"});assert(accepted and find("hiking_route").attributes.ref=="TEST" and find("hiking_route").minzoom==8)
 run("relation",{type="route",route="foot",network="lwn"});assert(find("hiking_route").minzoom==11)
 run("relation",{type="route",route="hiking",state="proposed"});assert(not accepted and #emitted==0)
-run("relation",{type="route",route="bicycle"});assert(not accepted and #emitted==0)
+run("relation",{type="route",route="bicycle"});assert(accepted and find("cycling_route"))
 print("Outdoor classification, elevations, access attributes, area POIs and route rules passed.")
 
 for _, case in ipairs({
@@ -64,3 +65,12 @@ end
 run("way",{natural="scree"},false);assert(not find("landcover"))
 run("way",{highway="track",surface="gravel"},true);assert(not find("landcover"))
 print("Bog, peat workings, rock and scree classification passed.")
+
+run("way",{highway="residential",name="Street"},false);assert(find("transportation_name").attributes.name=="Street")
+run("way",{natural="water",name="Lough"},true);assert(find("water_name").centroid)
+run("way",{boundary="administrative",admin_level="6"},false);assert(find("boundary").attributes.admin_level=="6")
+run("way",{railway="rail"},false);assert(find("railway"))
+run("way",{route="ferry"},false);assert(find("ferry"))
+run("node",{railway="station",name="Station"});assert(find("station"))
+run("node",{place="island",name="Island"});assert(find("island_name"))
+run("node",{mountain_pass="yes",name="Pass"});assert(find("hiking_poi").attributes.class=="pass")

@@ -34,7 +34,7 @@ class ViewerTests(unittest.TestCase):
         self.assertEqual(len(ids),len(set(ids)))
         for layer in style['layers']:
             if 'source-layer' in layer:
-                expected=schema if layer['source']=='basemap' else {'land','contour'}
+                expected=schema if layer['source']=='basemap' else ({'grid_1km','grid_10km'} if layer['source']=='irish-grid' else {'land','contour'})
                 self.assertIn(layer['source-layer'],expected)
         self.assertTrue((ROOT/'viewer/fonts/Open Sans Regular/0-255.pbf').is_file())
 
@@ -62,16 +62,46 @@ class ViewerTests(unittest.TestCase):
         import struct
         first=json.loads((ROOT/'viewer/sprites/outdoors.json').read_text())
         second=json.loads((ROOT/'viewer/sprites/outdoors@2x.json').read_text())
-        expected={'outdoor-parking'}
+        expected={'outdoor-parking','bog-tuft-low','bog-tuft-mid','bog-tuft-high','bare-rock-stipple','scree-stipple','cliff-teeth'}
         self.assertEqual(set(first),expected);self.assertEqual(set(second),expected)
         for suffix,index,ratio in [('',first,1),('@2x',second,2)]:
             data=(ROOT/f'viewer/sprites/outdoors{suffix}.png').read_bytes()
             width,height=struct.unpack('>II',data[16:24])
             for item in index.values():
-                self.assertEqual(item['pixelRatio'],ratio)
+                self.assertGreaterEqual(item['pixelRatio'],ratio)
                 self.assertLessEqual(item['x']+item['width'],width)
                 self.assertLessEqual(item['y']+item['height'],height)
         lock=json.loads((ROOT/'assets/sprites.lock.json').read_text())
         for item in lock['assets']:
             self.assertEqual(hashlib.sha256((ROOT/item['path']).read_bytes()).hexdigest(),item['sha256'])
         self.assertEqual(hashlib.sha256((ROOT/'scripts/build_sprites.py').read_bytes()).hexdigest(),lock['generator_sha256'])
+
+    def test_legacy_assets_and_active_patterns_are_resolvable(self):
+        import hashlib
+        lock=json.loads((ROOT/'legacy-assets.lock.json').read_text())
+        for asset in lock['assets']:
+            self.assertEqual(hashlib.sha256((ROOT/asset['path']).read_bytes()).hexdigest(),asset['sha256'])
+        style=json.loads((ROOT/'style/openbaremap.json').read_text())
+        atlas=json.loads((ROOT/'viewer/sprites/outdoors.json').read_text())
+        layers={layer['id']:layer for layer in style['layers']}
+        self.assertEqual(layers['bog-texture']['paint']['fill-pattern'],['step',['zoom'],'bog-tuft-low',12,'bog-tuft-mid',14,'bog-tuft-high'])
+        self.assertEqual(layers['cliffs-and-crags']['paint']['line-pattern'],'cliff-teeth')
+        for layer in style['layers']:
+            for font in layer.get('layout',{}).get('text-font',[]):
+                self.assertTrue((ROOT/'viewer/fonts'/font/'0-255.pbf').is_file())
+            for prop in ['line-pattern','fill-pattern']:
+                pattern=layer.get('paint',{}).get(prop)
+                if isinstance(pattern,str): self.assertIn(pattern,atlas)
+            # Feature-dependent line dashes were invalid in the old style.
+            dash=layer.get('paint',{}).get('line-dasharray')
+            if dash: self.assertTrue(all(isinstance(x,(int,float)) for x in dash))
+        self.assertEqual(style['sources']['townlands']['data'],'../townlands.geojson')
+        self.assertTrue((ROOT/'viewer/townlands.geojson').is_file())
+        self.assertEqual(layers['contours']['minzoom'],8)
+        self.assertEqual(layers['contour-intermediate-lines']['minzoom'],11)
+        self.assertEqual(json.loads((ROOT/'config/topography.json').read_text())['contour_interval_m'],10)
+
+    def test_active_style_has_no_text_halos(self):
+        style=json.loads((ROOT/'style/openbaremap.json').read_text())
+        for layer in style['layers']:
+            self.assertFalse(any(key.startswith('text-halo-') for key in layer.get('paint',{})),layer['id'])

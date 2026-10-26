@@ -10,9 +10,9 @@ data/elevation/*
 !data/elevation/*.hgt.gz
 build/*
 !build/.gitkeep
-!build/ireland-landcover-a/
-build/ireland-landcover-a/*
-!build/ireland-landcover-a/basemap.mbtiles
+!build/ireland-classic-d/
+build/ireland-classic-d/*
+!build/ireland-classic-d/basemap.mbtiles
 !build/topography-a/
 build/topography-a/*
 !build/topography-a/topography.mbtiles

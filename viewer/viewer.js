@@ -29,32 +29,72 @@ function updateLineLegend() {
     const id = svg.dataset.mapLine;
     if (!map.getLayer(id)) continue;
     const width = legendLineWidth(map.getPaintProperty(id,'line-width') ?? 1,map.getZoom());
-    const dash = map.getPaintProperty(id,'line-dasharray');
+    const dash = legendValue(map.getPaintProperty(id,'line-dasharray'),svg.dataset.mapClass);
     const line = document.createElementNS('http://www.w3.org/2000/svg','line');
-    for (const [key,value] of Object.entries({x1:0,x2:32,y1:6,y2:6,stroke:map.getPaintProperty(id,'line-color'),'stroke-width':width,'stroke-opacity':map.getPaintProperty(id,'line-opacity') ?? 1,'stroke-linecap':map.getLayoutProperty(id,'line-cap') ?? 'butt'})) line.setAttribute(key,String(value));
+    for (const [key,value] of Object.entries({x1:0,x2:32,y1:6,y2:6,stroke:legendValue(map.getPaintProperty(id,'line-color'),svg.dataset.mapClass),'stroke-width':width,'stroke-opacity':legendLineWidth(map.getPaintProperty(id,'line-opacity') ?? 1,map.getZoom()),'stroke-linecap':map.getLayoutProperty(id,'line-cap') ?? 'butt'})) line.setAttribute(key,String(value));
     if (dash) line.setAttribute('stroke-dasharray',dash.map(length => length*width).join(' '));
-    svg.replaceChildren(line);
+    const casingId = id === 'roads-major' ? 'roads-casing-major' : ['roads-minor','paths','tracks'].includes(id) ? 'roads-casing-minor' : null;
+    if (casingId) {
+      const casing=line.cloneNode();casing.removeAttribute('stroke-dasharray');
+      casing.setAttribute('stroke',map.getPaintProperty(casingId,'line-color'));
+      casing.setAttribute('stroke-width',legendLineWidth(map.getPaintProperty(casingId,'line-width'),map.getZoom()));
+      svg.replaceChildren(casing,line);
+    } else svg.replaceChildren(line);
   }
 }
 map.on('load',updateLineLegend);
 map.on('zoomend',updateLineLegend);
 
-// Resolve the current categorical land-cover colours instead of copying hex codes.
+
+function legendValue(value, category) {
+  if (!Array.isArray(value)) return value;
+  if (value[0] === 'literal') return value[1];
+  if (value[0] === 'match') {
+    for (let i=2;i<value.length-1;i+=2) {
+      if (value[i] === category || (Array.isArray(value[i]) && value[i].includes(category))) return legendValue(value[i+1],category);
+    }
+    return legendValue(value[value.length-1],category);
+  }
+  if (value[0] === 'step') {
+    let result=value[2];
+    for (let i=3;i<value.length;i+=2) if (map.getZoom()>=value[i]) result=value[i+1];
+    return result;
+  }
+  return value;
+}
+let legendAtlas, legendIndex;
+function paintPattern(context, pattern, width, height) {
+  if (!legendAtlas || !legendIndex[pattern]) return;
+  const item=legendIndex[pattern], tile=document.createElement('canvas');
+  tile.width=Math.round(item.width/item.pixelRatio*2);tile.height=Math.round(item.height/item.pixelRatio*2);
+  tile.getContext('2d').drawImage(legendAtlas,item.x,item.y,item.width,item.height,0,0,tile.width,tile.height);
+  context.fillStyle=context.createPattern(tile,'repeat');context.fillRect(0,0,width,height);
+}
 function updateFillLegend() {
   for (const swatch of document.querySelectorAll('[data-map-fill]')) {
-    const id = swatch.dataset.mapFill;
-    let colour = map.getPaintProperty(id, 'fill-color');
-    if (Array.isArray(colour) && colour[0] === 'match') {
-      const category = swatch.dataset.mapClass;
-      let selected = colour[colour.length - 1];
-      for (let i = 2; i < colour.length - 1; i += 2) {
-        if (colour[i] === category) { selected = colour[i + 1]; break; }
-      }
-      colour = selected;
+    const id=swatch.dataset.mapFill, ctx=swatch.getContext('2d');
+    ctx.clearRect(0,0,swatch.width,swatch.height);
+    ctx.fillStyle='#f3efe6';ctx.fillRect(0,0,swatch.width,swatch.height);
+    ctx.globalAlpha=legendLineWidth(map.getPaintProperty(id,'fill-opacity') ?? 1,map.getZoom());
+    ctx.fillStyle=legendValue(map.getPaintProperty(id,'fill-color'),swatch.dataset.mapClass);
+    ctx.fillRect(0,0,swatch.width,swatch.height);ctx.globalAlpha=1;
+    if (swatch.dataset.mapPattern) {
+      const layer=swatch.dataset.mapPattern;
+      ctx.globalAlpha=legendLineWidth(map.getPaintProperty(layer,'fill-opacity') ?? 1,map.getZoom());
+      paintPattern(ctx,legendValue(map.getPaintProperty(layer,'fill-pattern')),swatch.width,swatch.height);ctx.globalAlpha=1;
     }
-    swatch.style.backgroundColor = colour;
-    swatch.style.opacity = map.getPaintProperty(id, 'fill-opacity') ?? 1;
+  }
+  const cliff=document.querySelector('[data-map-line="cliffs-and-crags"]');
+  if (cliff && legendAtlas) {
+    const canvas=document.createElement('canvas');canvas.width=64;canvas.height=12;
+    paintPattern(canvas.getContext('2d'),'cliff-teeth',64,12);
+    const img=document.createElementNS('http://www.w3.org/2000/svg','image');
+    img.setAttribute('href',canvas.toDataURL());img.setAttribute('width','32');img.setAttribute('height','6');img.setAttribute('y','3');cliff.replaceChildren(img);
   }
 }
-map.on('load', updateFillLegend);
-map.on('styledata', () => { if (map.isStyleLoaded()) updateFillLegend(); });
+map.on('load', async () => {
+  legendIndex=await (await fetch('/sprites/outdoors.json')).json();
+  legendAtlas=new Image();legendAtlas.src='/sprites/outdoors.png';await legendAtlas.decode();
+  updateFillLegend();
+});
+map.on('zoomend',updateFillLegend);

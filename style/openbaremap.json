@@ -1,10 +1,7 @@
 {
   "version": 8,
-  "name": "OpenBareMap outdoors",
-  "metadata": {
-    "status": "Development outdoor cartography; broader acceptance and road structure ordering pending",
-    "version": "0.3.0"
-  },
+  "name": "OpenBareMap \u00b7 1.1 cartography with 10 m contours",
+  "sprite": "../sprites/outdoors",
   "glyphs": "../fonts/{fontstack}/{range}.pbf",
   "sources": {
     "basemap": {
@@ -34,6 +31,15 @@
       "type": "raster",
       "url": "../hillshade.json",
       "tileSize": 256
+    },
+    "irish-grid": {
+      "type": "vector",
+      "url": "../grid.json"
+    },
+    "townlands": {
+      "type": "geojson",
+      "data": "../townlands.geojson",
+      "attribution": "Townland placenames \u00b7 preserved OpenBareMap 1.1 snapshot"
     }
   },
   "layers": [
@@ -41,7 +47,7 @@
       "id": "background",
       "type": "background",
       "paint": {
-        "background-color": "#b5d5df"
+        "background-color": "#a8d7ff"
       }
     },
     {
@@ -50,7 +56,8 @@
       "source": "coast",
       "source-layer": "land",
       "paint": {
-        "fill-color": "#f3f0df"
+        "fill-color": "#f3efe6",
+        "fill-opacity": 1
       }
     },
     {
@@ -66,22 +73,28 @@
             "class"
           ],
           "wood",
-          "#b8d1a1",
-          "heath",
-          "#d5c6a7",
-          "scrub",
-          "#c5d0a8",
-          "wetland",
-          "#c1d5ca",
-          "grass",
-          "#dce4b9",
+          "#afd190",
           "farmland",
-          "#e7e7c9",
+          "#e4dfbd",
+          "grass",
+          "#dce7c6",
+          "heath",
+          "#d8cbb8",
+          "scrub",
+          "#cdd9b8",
+          "bog",
+          "#b9aa92",
+          "wetland",
+          "#c4d8cc",
           "beach",
-          "#efe0a2",
-          "#e4e6cf"
+          "#f1dfae",
+          "sand",
+          "#ead9ae",
+          "peat_cutting",
+          "#a58b70",
+          "#ddd8c8"
         ],
-        "fill-opacity": 0.85
+        "fill-opacity": 0.72
       },
       "filter": [
         "!",
@@ -94,56 +107,81 @@
           [
             "literal",
             [
-              "bog",
-              "peat_cutting",
               "bare_rock",
-              "scree"
+              "scree",
+              "shingle"
             ]
           ]
         ]
       ]
     },
     {
-      "id": "landcover-bog",
+      "id": "bog-texture",
       "type": "fill",
       "source": "basemap",
       "source-layer": "landcover",
+      "minzoom": 9,
       "filter": [
-        "==",
+        "in",
         [
           "get",
           "class"
         ],
-        "bog"
-      ],
-      "paint": {
-        "fill-color": "#c9b7ae",
-        "fill-opacity": 0.85
-      }
-    },
-    {
-      "id": "landcover-peat_cutting",
-      "type": "fill",
-      "source": "basemap",
-      "source-layer": "landcover",
-      "filter": [
-        "==",
         [
-          "get",
-          "class"
-        ],
-        "peat_cutting"
+          "literal",
+          [
+            "bog",
+            "peat_cutting"
+          ]
+        ]
       ],
       "paint": {
-        "fill-color": "#b99c8a",
-        "fill-opacity": 0.85
+        "fill-pattern": [
+          "step",
+          [
+            "zoom"
+          ],
+          "bog-tuft-low",
+          12,
+          "bog-tuft-mid",
+          14,
+          "bog-tuft-high"
+        ],
+        "fill-opacity": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "zoom"
+          ],
+          9,
+          0.3,
+          12,
+          0.45,
+          15,
+          0.6
+        ]
       }
     },
     {
-      "id": "landcover-bare_rock",
+      "id": "terrain-hillshade",
+      "type": "raster",
+      "source": "hillshade",
+      "minzoom": 6,
+      "maxzoom": 17,
+      "paint": {
+        "raster-opacity": 0.46,
+        "raster-resampling": "linear",
+        "raster-fade-duration": 0
+      }
+    },
+    {
+      "id": "bare-rock",
       "type": "fill",
       "source": "basemap",
       "source-layer": "landcover",
+      "minzoom": 10,
       "filter": [
         "==",
         [
@@ -153,36 +191,231 @@
         "bare_rock"
       ],
       "paint": {
-        "fill-color": "#d1d0c9",
-        "fill-opacity": 0.85
+        "fill-color": "#d0ccc2",
+        "fill-opacity": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "zoom"
+          ],
+          10,
+          0.2,
+          14,
+          0.42
+        ]
       }
     },
     {
-      "id": "landcover-scree",
+      "id": "scree-and-shingle",
       "type": "fill",
       "source": "basemap",
       "source-layer": "landcover",
+      "minzoom": 12,
+      "filter": [
+        "in",
+        [
+          "get",
+          "class"
+        ],
+        [
+          "literal",
+          [
+            "scree",
+            "shingle"
+          ]
+        ]
+      ],
+      "paint": {
+        "fill-color": [
+          "match",
+          [
+            "get",
+            "class"
+          ],
+          "scree",
+          "#c9c4b8",
+          "#d8d1c3"
+        ],
+        "fill-opacity": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "zoom"
+          ],
+          11,
+          0.22,
+          14,
+          0.4
+        ],
+        "fill-outline-color": "#b6b0a4"
+      }
+    },
+    {
+      "id": "bare-rock-stipple",
+      "type": "fill",
+      "source": "basemap",
+      "source-layer": "landcover",
+      "minzoom": 10,
       "filter": [
         "==",
         [
           "get",
           "class"
         ],
-        "scree"
+        "bare_rock"
       ],
       "paint": {
-        "fill-color": "#c4beb0",
-        "fill-opacity": 0.85
+        "fill-pattern": "bare-rock-stipple",
+        "fill-opacity": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "zoom"
+          ],
+          10,
+          0.28,
+          13,
+          0.42,
+          16,
+          0.5
+        ]
       }
     },
     {
-      "id": "hillshade",
-      "type": "raster",
-      "source": "hillshade",
-      "minzoom": 6,
+      "id": "scree-stipple",
+      "type": "fill",
+      "source": "basemap",
+      "source-layer": "landcover",
+      "minzoom": 12,
+      "filter": [
+        "in",
+        [
+          "get",
+          "class"
+        ],
+        [
+          "literal",
+          [
+            "scree",
+            "shingle"
+          ]
+        ]
+      ],
       "paint": {
-        "raster-opacity": 0.45,
-        "raster-fade-duration": 0
+        "fill-pattern": "scree-stipple",
+        "fill-opacity": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "zoom"
+          ],
+          12,
+          0.37,
+          14,
+          0.53,
+          16,
+          0.62
+        ]
+      }
+    },
+    {
+      "id": "cliffs-base",
+      "type": "line",
+      "source": "basemap",
+      "source-layer": "natural_line",
+      "minzoom": 11,
+      "filter": [
+        "==",
+        [
+          "get",
+          "class"
+        ],
+        "cliff"
+      ],
+      "layout": {
+        "line-cap": "round",
+        "line-join": "round"
+      },
+      "paint": {
+        "line-color": "#5f584f",
+        "line-opacity": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "zoom"
+          ],
+          11,
+          0.72,
+          14,
+          0.92
+        ],
+        "line-width": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "zoom"
+          ],
+          11,
+          0.8,
+          14,
+          1.4
+        ]
+      }
+    },
+    {
+      "id": "cliffs-and-crags",
+      "type": "line",
+      "source": "basemap",
+      "source-layer": "natural_line",
+      "minzoom": 11,
+      "filter": [
+        "==",
+        [
+          "get",
+          "class"
+        ],
+        "cliff"
+      ],
+      "paint": {
+        "line-opacity": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "zoom"
+          ],
+          11,
+          0.78,
+          14,
+          0.96
+        ],
+        "line-width": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "zoom"
+          ],
+          11,
+          7,
+          14,
+          10
+        ],
+        "line-pattern": "cliff-teeth"
       }
     },
     {
@@ -191,17 +424,21 @@
       "source": "basemap",
       "source-layer": "water",
       "paint": {
-        "fill-color": "#a4cede",
-        "fill-outline-color": "#80b2c8"
+        "fill-color": "#a8d7ff"
       }
     },
     {
-      "id": "waterways-river",
+      "id": "administrative-boundaries",
       "type": "line",
       "source": "basemap",
-      "source-layer": "waterway",
+      "source-layer": "boundary",
+      "filter": [
+        "==",
+        "admin_level",
+        "2"
+      ],
       "paint": {
-        "line-color": "#82b3c9",
+        "line-color": "#755778",
         "line-width": [
           "interpolate",
           [
@@ -210,35 +447,32 @@
           [
             "zoom"
           ],
-          7,
-          0.35,
-          14,
-          1.6
-        ]
-      },
+          4,
+          1.1,
+          12,
+          2.2
+        ],
+        "line-dasharray": [
+          4,
+          2
+        ],
+        "line-opacity": 0.9
+      }
+    },
+    {
+      "id": "county-boundaries",
+      "type": "line",
+      "source": "basemap",
+      "source-layer": "boundary",
       "minzoom": 6,
       "filter": [
         "in",
-        [
-          "get",
-          "class"
-        ],
-        [
-          "literal",
-          [
-            "river",
-            "canal"
-          ]
-        ]
-      ]
-    },
-    {
-      "id": "waterways-stream",
-      "type": "line",
-      "source": "basemap",
-      "source-layer": "waterway",
+        "admin_level",
+        "5",
+        "6"
+      ],
       "paint": {
-        "line-color": "#82b3c9",
+        "line-color": "#927d96",
         "line-width": [
           "interpolate",
           [
@@ -247,34 +481,144 @@
           [
             "zoom"
           ],
-          7,
+          6,
+          0.55,
+          12,
+          1.1
+        ],
+        "line-dasharray": [
+          3,
+          2
+        ],
+        "line-opacity": 0.7
+      }
+    },
+    {
+      "id": "local-boundaries",
+      "type": "line",
+      "source": "basemap",
+      "source-layer": "boundary",
+      "minzoom": 10,
+      "filter": [
+        "!in",
+        "admin_level",
+        "2",
+        "5",
+        "6"
+      ],
+      "paint": {
+        "line-color": "#aa9bad",
+        "line-width": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "zoom"
+          ],
+          10,
           0.35,
           14,
-          1.6
+          0.75
+        ],
+        "line-dasharray": [
+          2,
+          3
+        ],
+        "line-opacity": 0.5
+      }
+    },
+    {
+      "id": "waterway",
+      "type": "line",
+      "source": "basemap",
+      "source-layer": "waterway",
+      "paint": {
+        "line-color": "#74b5e6",
+        "line-width": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "zoom"
+          ],
+          6,
+          0.6,
+          10,
+          1,
+          14,
+          1.8
         ]
+      }
+    },
+    {
+      "id": "contours",
+      "type": "line",
+      "source": "topography",
+      "source-layer": "contour",
+      "minzoom": 8,
+      "filter": [
+        "==",
+        [
+          "%",
+          [
+            "get",
+            "elevation"
+          ],
+          100
+        ],
+        0
+      ],
+      "layout": {
+        "line-cap": "round",
+        "line-join": "round"
       },
+      "paint": {
+        "line-color": "#8b6f47",
+        "line-width": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "zoom"
+          ],
+          8,
+          0.45,
+          11,
+          0.75,
+          14,
+          1.15,
+          16,
+          1.5
+        ]
+      }
+    },
+    {
+      "id": "contour-intermediate-lines",
+      "type": "line",
+      "source": "topography",
+      "source-layer": "contour",
       "minzoom": 11,
       "filter": [
-        "in",
+        "!=",
         [
-          "get",
-          "class"
-        ],
-        [
-          "literal",
+          "%",
           [
-            "stream"
-          ]
-        ]
-      ]
-    },
-    {
-      "id": "waterways-drain",
-      "type": "line",
-      "source": "basemap",
-      "source-layer": "waterway",
+            "get",
+            "elevation"
+          ],
+          100
+        ],
+        0
+      ],
+      "layout": {
+        "line-cap": "round",
+        "line-join": "round"
+      },
       "paint": {
-        "line-color": "#82b3c9",
+        "line-color": "#9a8161",
         "line-width": [
           "interpolate",
           [
@@ -283,42 +627,19 @@
           [
             "zoom"
           ],
-          7,
-          0.35,
-          14,
-          1.6
-        ]
-      },
-      "minzoom": 13,
-      "filter": [
-        "in",
-        [
-          "get",
-          "class"
+          11,
+          0.25,
+          13,
+          0.5,
+          16,
+          0.9
         ],
-        [
-          "literal",
-          [
-            "drain",
-            "ditch"
-          ]
-        ]
-      ]
+        "line-opacity": 0.75
+      }
     },
     {
-      "id": "buildings",
-      "type": "fill",
-      "source": "basemap",
-      "source-layer": "building",
-      "paint": {
-        "fill-color": "#c2b6a6",
-        "fill-outline-color": "#a79a8b"
-      },
-      "minzoom": 13
-    },
-    {
-      "id": "contour-index",
-      "type": "line",
+      "id": "contour-index-labels",
+      "type": "symbol",
       "source": "topography",
       "source-layer": "contour",
       "minzoom": 9,
@@ -334,964 +655,9 @@
         ],
         0
       ],
-      "paint": {
-        "line-color": "#a38b69",
-        "line-width": 1.19,
-        "line-opacity": 0.72
-      }
-    },
-    {
-      "id": "contour-intermediate",
-      "type": "line",
-      "source": "topography",
-      "source-layer": "contour",
-      "minzoom": 11,
-      "filter": [
-        "all",
-        [
-          "==",
-          [
-            "%",
-            [
-              "get",
-              "elevation"
-            ],
-            50
-          ],
-          0
-        ],
-        [
-          "!=",
-          [
-            "%",
-            [
-              "get",
-              "elevation"
-            ],
-            100
-          ],
-          0
-        ]
-      ],
-      "paint": {
-        "line-color": "#a38b69",
-        "line-width": 0.84,
-        "line-opacity": 0.72
-      }
-    },
-    {
-      "id": "contour-detail",
-      "type": "line",
-      "source": "topography",
-      "source-layer": "contour",
-      "minzoom": 13,
-      "filter": [
-        "all",
-        [
-          "==",
-          [
-            "%",
-            [
-              "get",
-              "elevation"
-            ],
-            10
-          ],
-          0
-        ],
-        [
-          "!=",
-          [
-            "%",
-            [
-              "get",
-              "elevation"
-            ],
-            50
-          ],
-          0
-        ]
-      ],
-      "paint": {
-        "line-color": "#a38b69",
-        "line-width": 0.56,
-        "line-opacity": 0.72
-      }
-    },
-    {
-      "id": "roads-casing-major",
-      "type": "line",
-      "source": "basemap",
-      "source-layer": "transportation",
-      "paint": {
-        "line-color": "#9c978c",
-        "line-width": [
-          "interpolate",
-          [
-            "linear"
-          ],
-          [
-            "zoom"
-          ],
-          6,
-          0.5,
-          12,
-          2.8,
-          16,
-          9
-        ]
-      },
-      "filter": [
-        "in",
-        [
-          "get",
-          "class"
-        ],
-        [
-          "literal",
-          [
-            "motorway",
-            "motorway_link",
-            "trunk",
-            "trunk_link",
-            "primary",
-            "primary_link"
-          ]
-        ]
-      ],
-      "minzoom": 4
-    },
-    {
-      "id": "roads-casing-regional",
-      "type": "line",
-      "source": "basemap",
-      "source-layer": "transportation",
-      "paint": {
-        "line-color": "#9c978c",
-        "line-width": [
-          "interpolate",
-          [
-            "linear"
-          ],
-          [
-            "zoom"
-          ],
-          6,
-          0.5,
-          12,
-          2.8,
-          16,
-          9
-        ]
-      },
-      "filter": [
-        "in",
-        [
-          "get",
-          "class"
-        ],
-        [
-          "literal",
-          [
-            "secondary",
-            "secondary_link",
-            "tertiary",
-            "tertiary_link"
-          ]
-        ]
-      ],
-      "minzoom": 8
-    },
-    {
-      "id": "roads-casing-local",
-      "type": "line",
-      "source": "basemap",
-      "source-layer": "transportation",
-      "paint": {
-        "line-color": "#9c978c",
-        "line-width": [
-          "interpolate",
-          [
-            "linear"
-          ],
-          [
-            "zoom"
-          ],
-          6,
-          0.5,
-          12,
-          2.8,
-          16,
-          9
-        ]
-      },
-      "filter": [
-        "in",
-        [
-          "get",
-          "class"
-        ],
-        [
-          "literal",
-          [
-            "residential",
-            "unclassified",
-            "living_street",
-            "road"
-          ]
-        ]
-      ],
-      "minzoom": 11
-    },
-    {
-      "id": "roads-casing-service",
-      "type": "line",
-      "source": "basemap",
-      "source-layer": "transportation",
-      "paint": {
-        "line-color": "#9c978c",
-        "line-width": [
-          "interpolate",
-          [
-            "linear"
-          ],
-          [
-            "zoom"
-          ],
-          6,
-          0.5,
-          12,
-          2.8,
-          16,
-          9
-        ]
-      },
-      "filter": [
-        "in",
-        [
-          "get",
-          "class"
-        ],
-        [
-          "literal",
-          [
-            "service"
-          ]
-        ]
-      ],
-      "minzoom": 13
-    },
-    {
-      "id": "roads-major",
-      "type": "line",
-      "source": "basemap",
-      "source-layer": "transportation",
-      "paint": {
-        "line-color": [
-          "match",
-          [
-            "get",
-            "class"
-          ],
-          "motorway",
-          "#e8b28c",
-          "trunk",
-          "#f0c39b",
-          "primary",
-          "#f4d3a3",
-          "secondary",
-          "#f8e6b6",
-          "#fffdf4"
-        ],
-        "line-width": [
-          "interpolate",
-          [
-            "linear"
-          ],
-          [
-            "zoom"
-          ],
-          6,
-          0.2,
-          12,
-          1.6,
-          16,
-          7
-        ]
-      },
-      "filter": [
-        "in",
-        [
-          "get",
-          "class"
-        ],
-        [
-          "literal",
-          [
-            "motorway",
-            "motorway_link",
-            "trunk",
-            "trunk_link",
-            "primary",
-            "primary_link"
-          ]
-        ]
-      ],
-      "minzoom": 4
-    },
-    {
-      "id": "roads-regional",
-      "type": "line",
-      "source": "basemap",
-      "source-layer": "transportation",
-      "paint": {
-        "line-color": [
-          "match",
-          [
-            "get",
-            "class"
-          ],
-          "motorway",
-          "#e8b28c",
-          "trunk",
-          "#f0c39b",
-          "primary",
-          "#f4d3a3",
-          "secondary",
-          "#f8e6b6",
-          "#fffdf4"
-        ],
-        "line-width": [
-          "interpolate",
-          [
-            "linear"
-          ],
-          [
-            "zoom"
-          ],
-          6,
-          0.2,
-          12,
-          1.6,
-          16,
-          7
-        ]
-      },
-      "filter": [
-        "in",
-        [
-          "get",
-          "class"
-        ],
-        [
-          "literal",
-          [
-            "secondary",
-            "secondary_link",
-            "tertiary",
-            "tertiary_link"
-          ]
-        ]
-      ],
-      "minzoom": 8
-    },
-    {
-      "id": "roads-local",
-      "type": "line",
-      "source": "basemap",
-      "source-layer": "transportation",
-      "paint": {
-        "line-color": [
-          "match",
-          [
-            "get",
-            "class"
-          ],
-          "motorway",
-          "#e8b28c",
-          "trunk",
-          "#f0c39b",
-          "primary",
-          "#f4d3a3",
-          "secondary",
-          "#f8e6b6",
-          "#fffdf4"
-        ],
-        "line-width": [
-          "interpolate",
-          [
-            "linear"
-          ],
-          [
-            "zoom"
-          ],
-          6,
-          0.2,
-          12,
-          1.6,
-          16,
-          7
-        ]
-      },
-      "filter": [
-        "in",
-        [
-          "get",
-          "class"
-        ],
-        [
-          "literal",
-          [
-            "residential",
-            "unclassified",
-            "living_street",
-            "road"
-          ]
-        ]
-      ],
-      "minzoom": 11
-    },
-    {
-      "id": "roads-service",
-      "type": "line",
-      "source": "basemap",
-      "source-layer": "transportation",
-      "paint": {
-        "line-color": [
-          "match",
-          [
-            "get",
-            "class"
-          ],
-          "motorway",
-          "#e8b28c",
-          "trunk",
-          "#f0c39b",
-          "primary",
-          "#f4d3a3",
-          "secondary",
-          "#f8e6b6",
-          "#fffdf4"
-        ],
-        "line-width": [
-          "interpolate",
-          [
-            "linear"
-          ],
-          [
-            "zoom"
-          ],
-          6,
-          0.2,
-          12,
-          1.6,
-          16,
-          7
-        ]
-      },
-      "filter": [
-        "in",
-        [
-          "get",
-          "class"
-        ],
-        [
-          "literal",
-          [
-            "service"
-          ]
-        ]
-      ],
-      "minzoom": 13
-    },
-    {
-      "id": "walking-routes",
-      "type": "line",
-      "source": "basemap",
-      "source-layer": "hiking_route",
-      "minzoom": 8,
-      "paint": {
-        "line-color": "#925f90",
-        "line-width": [
-          "interpolate",
-          [
-            "linear"
-          ],
-          [
-            "zoom"
-          ],
-          8,
-          0.8,
-          14,
-          2.5
-        ],
-        "line-opacity": 0.8,
-        "line-dasharray": [
-          3,
-          1.5
-        ]
-      }
-    },
-    {
-      "id": "cliffs",
-      "type": "line",
-      "source": "basemap",
-      "source-layer": "natural_line",
-      "minzoom": 12,
-      "filter": [
-        "==",
-        [
-          "get",
-          "class"
-        ],
-        "cliff"
-      ],
-      "paint": {
-        "line-color": "#6d5d4b",
-        "line-width": 1.2,
-        "line-dasharray": [
-          1,
-          1.5
-        ]
-      }
-    },
-    {
-      "id": "tracks",
-      "type": "line",
-      "source": "basemap",
-      "source-layer": "transportation",
-      "paint": {
-        "line-color": "#a18560",
-        "line-width": [
-          "interpolate",
-          [
-            "linear"
-          ],
-          [
-            "zoom"
-          ],
-          9,
-          0.5,
-          14,
-          1.8
-        ],
-        "line-dasharray": [
-          3,
-          2
-        ]
-      },
-      "filter": [
-        "==",
-        [
-          "get",
-          "class"
-        ],
-        "track"
-      ],
-      "minzoom": 9
-    },
-    {
-      "id": "paths",
-      "type": "line",
-      "source": "basemap",
-      "source-layer": "transportation",
-      "paint": {
-        "line-color": "#9c6551",
-        "line-width": [
-          "interpolate",
-          [
-            "linear"
-          ],
-          [
-            "zoom"
-          ],
-          10,
-          0.5,
-          14,
-          1.3
-        ],
-        "line-dasharray": [
-          2,
-          2
-        ]
-      },
-      "filter": [
-        "all",
-        [
-          "in",
-          [
-            "get",
-            "class"
-          ],
-          [
-            "literal",
-            [
-              "path",
-              "footway",
-              "bridleway",
-              "cycleway",
-              "steps",
-              "track"
-            ]
-          ]
-        ],
-        [
-          "!=",
-          [
-            "get",
-            "class"
-          ],
-          "track"
-        ]
-      ],
-      "minzoom": 10
-    },
-    {
-      "id": "place-points-city",
-      "type": "circle",
-      "source": "basemap",
-      "source-layer": "place",
-      "paint": {
-        "circle-radius": 2.5,
-        "circle-color": "#56534a",
-        "circle-stroke-color": "#fffdf3",
-        "circle-stroke-width": 1
-      },
-      "filter": [
-        "in",
-        [
-          "get",
-          "class"
-        ],
-        [
-          "literal",
-          [
-            "city"
-          ]
-        ]
-      ],
-      "minzoom": 4
-    },
-    {
-      "id": "place-points-town",
-      "type": "circle",
-      "source": "basemap",
-      "source-layer": "place",
-      "paint": {
-        "circle-radius": 2.5,
-        "circle-color": "#56534a",
-        "circle-stroke-color": "#fffdf3",
-        "circle-stroke-width": 1
-      },
-      "filter": [
-        "in",
-        [
-          "get",
-          "class"
-        ],
-        [
-          "literal",
-          [
-            "town"
-          ]
-        ]
-      ],
-      "minzoom": 8
-    },
-    {
-      "id": "place-points-village",
-      "type": "circle",
-      "source": "basemap",
-      "source-layer": "place",
-      "paint": {
-        "circle-radius": 2.5,
-        "circle-color": "#56534a",
-        "circle-stroke-color": "#fffdf3",
-        "circle-stroke-width": 1
-      },
-      "filter": [
-        "in",
-        [
-          "get",
-          "class"
-        ],
-        [
-          "literal",
-          [
-            "village"
-          ]
-        ]
-      ],
-      "minzoom": 11
-    },
-    {
-      "id": "place-labels-city",
-      "type": "symbol",
-      "source": "basemap",
-      "source-layer": "place",
-      "paint": {
-        "text-color": "#3d4136"
-      },
-      "filter": [
-        "in",
-        [
-          "get",
-          "class"
-        ],
-        [
-          "literal",
-          [
-            "city"
-          ]
-        ]
-      ],
-      "layout": {
-        "text-field": [
-          "coalesce",
-          [
-            "get",
-            "name_en"
-          ],
-          [
-            "get",
-            "name"
-          ],
-          [
-            "get",
-            "name_ga"
-          ]
-        ],
-        "text-font": [
-          "Open Sans Regular"
-        ],
-        "text-size": [
-          "interpolate",
-          [
-            "linear"
-          ],
-          [
-            "zoom"
-          ],
-          6,
-          11,
-          13,
-          16
-        ],
-        "text-anchor": "top",
-        "text-offset": [
-          0,
-          0.4
-        ],
-        "text-max-width": 8
-      },
-      "minzoom": 4
-    },
-    {
-      "id": "place-labels-town",
-      "type": "symbol",
-      "source": "basemap",
-      "source-layer": "place",
-      "paint": {
-        "text-color": "#3d4136"
-      },
-      "filter": [
-        "in",
-        [
-          "get",
-          "class"
-        ],
-        [
-          "literal",
-          [
-            "town"
-          ]
-        ]
-      ],
-      "layout": {
-        "text-field": [
-          "coalesce",
-          [
-            "get",
-            "name_en"
-          ],
-          [
-            "get",
-            "name"
-          ],
-          [
-            "get",
-            "name_ga"
-          ]
-        ],
-        "text-font": [
-          "Open Sans Regular"
-        ],
-        "text-size": [
-          "interpolate",
-          [
-            "linear"
-          ],
-          [
-            "zoom"
-          ],
-          6,
-          11,
-          13,
-          16
-        ],
-        "text-anchor": "top",
-        "text-offset": [
-          0,
-          0.4
-        ],
-        "text-max-width": 8
-      },
-      "minzoom": 8
-    },
-    {
-      "id": "place-labels-village",
-      "type": "symbol",
-      "source": "basemap",
-      "source-layer": "place",
-      "paint": {
-        "text-color": "#3d4136"
-      },
-      "filter": [
-        "in",
-        [
-          "get",
-          "class"
-        ],
-        [
-          "literal",
-          [
-            "village"
-          ]
-        ]
-      ],
-      "layout": {
-        "text-field": [
-          "coalesce",
-          [
-            "get",
-            "name_en"
-          ],
-          [
-            "get",
-            "name"
-          ],
-          [
-            "get",
-            "name_ga"
-          ]
-        ],
-        "text-font": [
-          "Open Sans Regular"
-        ],
-        "text-size": [
-          "interpolate",
-          [
-            "linear"
-          ],
-          [
-            "zoom"
-          ],
-          6,
-          11,
-          13,
-          16
-        ],
-        "text-anchor": "top",
-        "text-offset": [
-          0,
-          0.4
-        ],
-        "text-max-width": 8
-      },
-      "minzoom": 11
-    },
-    {
-      "id": "place-labels-hamlet",
-      "type": "symbol",
-      "source": "basemap",
-      "source-layer": "place",
-      "paint": {
-        "text-color": "#3d4136"
-      },
-      "filter": [
-        "in",
-        [
-          "get",
-          "class"
-        ],
-        [
-          "literal",
-          [
-            "hamlet"
-          ]
-        ]
-      ],
-      "layout": {
-        "text-field": [
-          "coalesce",
-          [
-            "get",
-            "name_en"
-          ],
-          [
-            "get",
-            "name"
-          ],
-          [
-            "get",
-            "name_ga"
-          ]
-        ],
-        "text-font": [
-          "Open Sans Regular"
-        ],
-        "text-size": [
-          "interpolate",
-          [
-            "linear"
-          ],
-          [
-            "zoom"
-          ],
-          6,
-          11,
-          13,
-          16
-        ],
-        "text-anchor": "top",
-        "text-offset": [
-          0,
-          0.4
-        ],
-        "text-max-width": 8
-      },
-      "minzoom": 13
-    },
-    {
-      "id": "contour-labels",
-      "type": "symbol",
-      "source": "topography",
-      "source-layer": "contour",
-      "minzoom": 12,
-      "filter": [
-        "==",
-        [
-          "%",
-          [
-            "get",
-            "elevation"
-          ],
-          50
-        ],
-        0
-      ],
       "layout": {
         "symbol-placement": "line",
+        "symbol-spacing": 440,
         "text-field": [
           "concat",
           [
@@ -1306,29 +672,433 @@
         "text-font": [
           "Open Sans Regular"
         ],
-        "text-size": 10,
-        "symbol-spacing": 200
+        "text-size": 12.075,
+        "text-max-angle": 30,
+        "text-padding": 2,
+        "text-allow-overlap": false,
+        "text-ignore-placement": false
       },
       "paint": {
-        "text-color": "#886d4d"
+        "text-color": "#715a3b"
       }
     },
     {
-      "id": "walking-route-labels",
+      "id": "contour-intermediate-labels",
       "type": "symbol",
+      "source": "topography",
+      "source-layer": "contour",
+      "minzoom": 12,
+      "filter": [
+        "!=",
+        [
+          "%",
+          [
+            "get",
+            "elevation"
+          ],
+          100
+        ],
+        0
+      ],
+      "layout": {
+        "symbol-placement": "line",
+        "symbol-spacing": 360,
+        "text-field": [
+          "concat",
+          [
+            "to-string",
+            [
+              "get",
+              "elevation"
+            ]
+          ],
+          " m"
+        ],
+        "text-font": [
+          "Open Sans Regular"
+        ],
+        "text-size": 10.925,
+        "text-max-angle": 30,
+        "text-padding": 1,
+        "text-allow-overlap": false,
+        "text-ignore-placement": false
+      },
+      "paint": {
+        "text-color": "#806b4f"
+      }
+    },
+    {
+      "id": "land-cover-buffer",
+      "type": "fill",
+      "source": "basemap",
+      "source-layer": "building",
+      "paint": {
+        "fill-color": "#898c8b",
+        "fill-opacity": 0.82
+      }
+    },
+    {
+      "id": "roads-casing-major",
+      "type": "line",
+      "source": "basemap",
+      "source-layer": "transportation",
+      "filter": [
+        "in",
+        "class",
+        "motorway",
+        "trunk",
+        "primary",
+        "secondary"
+      ],
+      "paint": {
+        "line-color": "#d8c2a4",
+        "line-width": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "zoom"
+          ],
+          6,
+          0.8,
+          10,
+          2.2,
+          14,
+          4.8
+        ],
+        "line-opacity": 1
+      }
+    },
+    {
+      "id": "roads-major",
+      "type": "line",
+      "source": "basemap",
+      "source-layer": "transportation",
+      "filter": [
+        "in",
+        "class",
+        "motorway",
+        "trunk",
+        "primary",
+        "secondary"
+      ],
+      "paint": {
+        "line-color": [
+          "match",
+          [
+            "get",
+            "class"
+          ],
+          "motorway",
+          "#f39a3d",
+          "trunk",
+          "#ee9d4a",
+          "primary",
+          "#f0ad61",
+          "secondary",
+          "#f4bf7b",
+          "#f0ad61"
+        ],
+        "line-width": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "zoom"
+          ],
+          6,
+          0.5,
+          10,
+          1.6,
+          14,
+          3.6
+        ]
+      }
+    },
+    {
+      "id": "roads-casing-minor",
+      "type": "line",
+      "source": "basemap",
+      "source-layer": "transportation",
+      "filter": [
+        "in",
+        "class",
+        "tertiary",
+        "tertiary_link",
+        "residential",
+        "unclassified",
+        "living_street",
+        "road",
+        "service",
+        "track",
+        "path"
+      ],
+      "paint": {
+        "line-color": "#8f806b",
+        "line-width": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "zoom"
+          ],
+          8,
+          0.65,
+          12,
+          1.6,
+          14,
+          2.8
+        ]
+      }
+    },
+    {
+      "id": "roads-minor",
+      "type": "line",
+      "source": "basemap",
+      "source-layer": "transportation",
+      "filter": [
+        "in",
+        "class",
+        "tertiary",
+        "tertiary_link",
+        "residential",
+        "unclassified",
+        "living_street",
+        "road",
+        "service"
+      ],
+      "paint": {
+        "line-color": [
+          "match",
+          [
+            "get",
+            "class"
+          ],
+          "path",
+          "#6a8f5a",
+          "track",
+          "#8b6f47",
+          "service",
+          "#ffffff",
+          "#e6cf98"
+        ],
+        "line-width": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "zoom"
+          ],
+          8,
+          0.45,
+          12,
+          1.1,
+          14,
+          2.1
+        ],
+        "line-dasharray": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "id": "paths",
+      "type": "line",
+      "source": "basemap",
+      "source-layer": "transportation",
+      "filter": [
+        "==",
+        [
+          "get",
+          "class"
+        ],
+        "path"
+      ],
+      "paint": {
+        "line-color": "#6a8f5a",
+        "line-width": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "zoom"
+          ],
+          8,
+          0.45,
+          12,
+          1.1,
+          14,
+          2.1
+        ],
+        "line-dasharray": [
+          1.2,
+          1.2
+        ]
+      }
+    },
+    {
+      "id": "tracks",
+      "type": "line",
+      "source": "basemap",
+      "source-layer": "transportation",
+      "filter": [
+        "==",
+        [
+          "get",
+          "class"
+        ],
+        "track"
+      ],
+      "paint": {
+        "line-color": "#8b6f47",
+        "line-width": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "zoom"
+          ],
+          8,
+          0.45,
+          12,
+          1.1,
+          14,
+          2.1
+        ],
+        "line-dasharray": [
+          2,
+          1.2
+        ]
+      }
+    },
+    {
+      "id": "railways",
+      "type": "line",
+      "source": "basemap",
+      "source-layer": "railway",
+      "filter": [
+        "!in",
+        "class",
+        "abandoned",
+        "disused",
+        "razed"
+      ],
+      "paint": {
+        "line-color": "#68645f",
+        "line-width": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "zoom"
+          ],
+          7,
+          0.5,
+          14,
+          1.5
+        ],
+        "line-dasharray": [
+          3,
+          1
+        ]
+      }
+    },
+    {
+      "id": "ferry-routes",
+      "type": "line",
+      "source": "basemap",
+      "source-layer": "ferry",
+      "paint": {
+        "line-color": "#468db6",
+        "line-width": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "zoom"
+          ],
+          6,
+          0.8,
+          14,
+          2
+        ],
+        "line-dasharray": [
+          4,
+          2
+        ]
+      }
+    },
+    {
+      "id": "cycling-routes",
+      "type": "line",
+      "source": "basemap",
+      "source-layer": "cycling_route",
+      "paint": {
+        "line-color": "#347bb7",
+        "line-width": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "zoom"
+          ],
+          7,
+          0.8,
+          14,
+          2.4
+        ],
+        "line-opacity": 0.75
+      }
+    },
+    {
+      "id": "hiking-routes",
+      "type": "line",
       "source": "basemap",
       "source-layer": "hiking_route",
-      "minzoom": 12,
+      "paint": {
+        "line-color": "#cc553d",
+        "line-width": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "zoom"
+          ],
+          7,
+          0.8,
+          14,
+          2.6
+        ],
+        "line-dasharray": [
+          2,
+          1
+        ],
+        "line-opacity": 0.8
+      }
+    },
+    {
+      "id": "road-labels",
+      "type": "symbol",
+      "source": "basemap",
+      "source-layer": "transportation_name",
+      "minzoom": 10,
       "layout": {
         "symbol-placement": "line",
         "text-field": [
           "coalesce",
           [
             "get",
-            "ref"
-          ],
-          [
-            "get",
             "name_en"
           ],
           [
@@ -1338,51 +1108,81 @@
           [
             "get",
             "name_ga"
-          ],
-          ""
+          ]
         ],
         "text-font": [
           "Open Sans Regular"
         ],
-        "text-size": 10,
-        "symbol-spacing": 450
+        "text-size": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "zoom"
+          ],
+          10,
+          12,
+          14,
+          15.6
+        ],
+        "text-allow-overlap": false
       },
       "paint": {
-        "text-color": "#794a78"
+        "text-color": "#3b372f"
       }
     },
     {
-      "id": "outdoor-feature-dots",
-      "type": "circle",
-      "source": "basemap",
-      "source-layer": "hiking_poi",
-      "minzoom": 10,
-      "filter": [
-        "!=",
-        [
+      "id": "townland-labels",
+      "type": "symbol",
+      "source": "townlands",
+      "minzoom": 12,
+      "layout": {
+        "text-field": [
           "get",
-          "class"
+          "name"
         ],
-        "parking"
-      ],
+        "text-font": [
+          "Open Sans Regular"
+        ],
+        "text-size": 11.9,
+        "text-transform": "uppercase",
+        "text-letter-spacing": 0.04,
+        "text-allow-overlap": false,
+        "text-optional": true
+      },
       "paint": {
-        "circle-radius": 2.2,
-        "circle-color": "#354d40"
+        "text-color": "#5b5548",
+        "text-opacity": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "zoom"
+          ],
+          12,
+          0.45,
+          13,
+          0.78,
+          14,
+          0.92
+        ]
       }
     },
     {
-      "id": "outdoor-feature-labels",
+      "id": "island-labels",
       "type": "symbol",
       "source": "basemap",
-      "source-layer": "hiking_poi",
+      "source-layer": "island_name",
       "minzoom": 10,
       "filter": [
-        "!=",
-        [
-          "get",
-          "class"
-        ],
-        "parking"
+        "!in",
+        "name",
+        "\u00c9ire / Ireland",
+        "Ireland / \u00c9ire",
+        "Ireland",
+        "\u00c9ire"
       ],
       "layout": {
         "text-field": [
@@ -1398,6 +1198,358 @@
           [
             "get",
             "name_ga"
+          ]
+        ],
+        "text-font": [
+          "Open Sans Regular"
+        ],
+        "text-size": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "zoom"
+          ],
+          10,
+          [
+            "match",
+            [
+              "get",
+              "class"
+            ],
+            "island",
+            11.45,
+            10.1
+          ],
+          13,
+          [
+            "match",
+            [
+              "get",
+              "class"
+            ],
+            "island",
+            14.6,
+            11.45
+          ]
+        ],
+        "text-letter-spacing": 0.08,
+        "text-allow-overlap": true,
+        "text-ignore-placement": true
+      },
+      "paint": {
+        "text-color": "#46534c"
+      }
+    },
+    {
+      "id": "irish-grid-1km",
+      "type": "line",
+      "source": "irish-grid",
+      "source-layer": "grid_1km",
+      "minzoom": 12,
+      "paint": {
+        "line-color": "#6f929f",
+        "line-opacity": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "zoom"
+          ],
+          12,
+          0.2,
+          14,
+          0.28,
+          16,
+          0.32
+        ],
+        "line-width": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "zoom"
+          ],
+          12,
+          0.45,
+          14,
+          0.58,
+          16,
+          0.68
+        ]
+      }
+    },
+    {
+      "id": "irish-grid-10km",
+      "type": "line",
+      "source": "irish-grid",
+      "source-layer": "grid_10km",
+      "minzoom": 10,
+      "paint": {
+        "line-color": "#628592",
+        "line-opacity": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "zoom"
+          ],
+          10,
+          0.22,
+          12,
+          0.3,
+          15,
+          0.36
+        ],
+        "line-width": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "zoom"
+          ],
+          10,
+          0.58,
+          12,
+          0.72,
+          15,
+          0.86
+        ]
+      }
+    },
+    {
+      "id": "irish-grid-labels",
+      "type": "symbol",
+      "source": "irish-grid",
+      "source-layer": "grid_10km",
+      "minzoom": 12,
+      "layout": {
+        "symbol-placement": "line",
+        "symbol-spacing": 420,
+        "text-field": [
+          "get",
+          "label"
+        ],
+        "text-font": [
+          "Open Sans Regular"
+        ],
+        "text-size": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "zoom"
+          ],
+          12,
+          7,
+          15,
+          8.5
+        ],
+        "text-max-angle": 5,
+        "text-allow-overlap": false
+      },
+      "paint": {
+        "text-color": "#567783",
+        "text-opacity": 0.58
+      }
+    },
+    {
+      "id": "water-labels",
+      "type": "symbol",
+      "source": "basemap",
+      "source-layer": "water_name",
+      "minzoom": 12,
+      "layout": {
+        "text-field": [
+          "coalesce",
+          [
+            "get",
+            "name_en"
+          ],
+          [
+            "get",
+            "name"
+          ],
+          [
+            "get",
+            "name_ga"
+          ]
+        ],
+        "text-font": [
+          "Open Sans Regular"
+        ],
+        "text-size": 10,
+        "text-allow-overlap": false
+      },
+      "paint": {
+        "text-color": "#985b55"
+      }
+    },
+    {
+      "id": "natural-labels",
+      "type": "symbol",
+      "source": "basemap",
+      "source-layer": "mountain",
+      "filter": [
+        "in",
+        "class",
+        "peak",
+        "volcano",
+        "saddle"
+      ],
+      "minzoom": 9,
+      "layout": {
+        "text-field": [
+          "coalesce",
+          [
+            "get",
+            "name_en"
+          ],
+          [
+            "get",
+            "name"
+          ],
+          [
+            "get",
+            "name_ga"
+          ]
+        ],
+        "text-font": [
+          "Open Sans Semibold"
+        ],
+        "text-size": 11,
+        "text-offset": [
+          0,
+          0.8
+        ],
+        "text-allow-overlap": false
+      },
+      "paint": {
+        "text-color": "#554b3d"
+      }
+    },
+    {
+      "id": "hiking-priority-points",
+      "type": "circle",
+      "source": "basemap",
+      "source-layer": "hiking_poi",
+      "minzoom": 10,
+      "filter": [
+        "all",
+        [
+          "match",
+          [
+            "get",
+            "class"
+          ],
+          [
+            "hut",
+            "shelter",
+            "trailhead",
+            "rescue"
+          ],
+          true,
+          false
+        ]
+      ],
+      "paint": {
+        "circle-radius": 1.36,
+        "circle-color": "#596957",
+        "circle-stroke-color": "#f3efe6",
+        "circle-stroke-width": 0.75,
+        "circle-opacity": 0.9
+      }
+    },
+    {
+      "id": "hiking-access-points",
+      "type": "circle",
+      "source": "basemap",
+      "source-layer": "hiking_poi",
+      "minzoom": 12,
+      "filter": [
+        "all",
+        [
+          "in",
+          [
+            "get",
+            "class"
+          ],
+          [
+            "literal",
+            [
+              "viewpoint",
+              "campsite"
+            ]
+          ]
+        ]
+      ],
+      "paint": {
+        "circle-radius": 1.36,
+        "circle-color": "#596957",
+        "circle-stroke-color": "#f3efe6",
+        "circle-stroke-width": 0.75,
+        "circle-opacity": 0.9
+      }
+    },
+    {
+      "id": "hiking-amenity-points",
+      "type": "circle",
+      "source": "basemap",
+      "source-layer": "hiking_poi",
+      "minzoom": 14,
+      "filter": [
+        "all",
+        [
+          "match",
+          [
+            "get",
+            "class"
+          ],
+          [
+            "drinking_water",
+            "toilets"
+          ],
+          true,
+          false
+        ]
+      ],
+      "paint": {
+        "circle-radius": 1.36,
+        "circle-color": "#596957",
+        "circle-stroke-color": "#f3efe6",
+        "circle-stroke-width": 0.75,
+        "circle-opacity": 0.9
+      }
+    },
+    {
+      "id": "hiking-viewpoint-labels",
+      "type": "symbol",
+      "source": "basemap",
+      "source-layer": "hiking_poi",
+      "minzoom": 12,
+      "filter": [
+        "all",
+        [
+          "==",
+          [
+            "get",
+            "class"
+          ],
+          "viewpoint"
+        ]
+      ],
+      "layout": {
+        "text-field": [
+          "coalesce",
+          [
+            "get",
+            "name"
           ],
           [
             "match",
@@ -1409,6 +1561,8 @@
             "Drinking water",
             "toilets",
             "Toilets",
+            "campsite",
+            "Campsite",
             "hut",
             "Hut",
             "shelter",
@@ -1417,31 +1571,594 @@
             "Mountain rescue",
             "trailhead",
             "Trailhead",
-            "campsite",
-            "Campsite",
-            "guidepost",
-            "Guidepost",
             "viewpoint",
             "Viewpoint",
-            "parking",
-            "Parking",
-            "Feature"
+            [
+              "get",
+              "class"
+            ]
+          ]
+        ],
+        "text-font": [
+          "Open Sans Semibold"
+        ],
+        "text-size": 7,
+        "text-offset": [
+          0,
+          0.85
+        ],
+        "text-anchor": "top",
+        "text-optional": true
+      },
+      "paint": {
+        "text-color": "#394a39"
+      }
+    },
+    {
+      "id": "hiking-trailhead-labels",
+      "type": "symbol",
+      "source": "basemap",
+      "source-layer": "hiking_poi",
+      "minzoom": 11,
+      "filter": [
+        "all",
+        [
+          "==",
+          [
+            "get",
+            "class"
+          ],
+          "trailhead"
+        ]
+      ],
+      "layout": {
+        "text-field": [
+          "coalesce",
+          [
+            "get",
+            "name"
+          ],
+          [
+            "match",
+            [
+              "get",
+              "class"
+            ],
+            "drinking_water",
+            "Drinking water",
+            "toilets",
+            "Toilets",
+            "campsite",
+            "Campsite",
+            "hut",
+            "Hut",
+            "shelter",
+            "Shelter",
+            "rescue",
+            "Mountain rescue",
+            "trailhead",
+            "Trailhead",
+            "viewpoint",
+            "Viewpoint",
+            [
+              "get",
+              "class"
+            ]
+          ]
+        ],
+        "text-font": [
+          "Open Sans Semibold"
+        ],
+        "text-size": 7,
+        "text-offset": [
+          0,
+          0.85
+        ],
+        "text-anchor": "top",
+        "text-optional": true
+      },
+      "paint": {
+        "text-color": "#36332f"
+      }
+    },
+    {
+      "id": "hiking-priority-labels",
+      "type": "symbol",
+      "source": "basemap",
+      "source-layer": "hiking_poi",
+      "minzoom": 11,
+      "filter": [
+        "all",
+        [
+          "match",
+          [
+            "get",
+            "class"
+          ],
+          [
+            "hut",
+            "shelter",
+            "rescue"
+          ],
+          true,
+          false
+        ]
+      ],
+      "layout": {
+        "text-field": [
+          "coalesce",
+          [
+            "get",
+            "name"
+          ],
+          [
+            "match",
+            [
+              "get",
+              "class"
+            ],
+            "drinking_water",
+            "Drinking water",
+            "toilets",
+            "Toilets",
+            "campsite",
+            "Campsite",
+            "hut",
+            "Hut",
+            "shelter",
+            "Shelter",
+            "rescue",
+            "Mountain rescue",
+            "trailhead",
+            "Trailhead",
+            "viewpoint",
+            "Viewpoint",
+            [
+              "get",
+              "class"
+            ]
+          ]
+        ],
+        "text-font": [
+          "Open Sans Semibold"
+        ],
+        "text-size": 7,
+        "text-offset": [
+          0,
+          0.85
+        ],
+        "text-anchor": "top",
+        "text-optional": true
+      },
+      "paint": {
+        "text-color": "#36332f"
+      }
+    },
+    {
+      "id": "hiking-access-labels",
+      "type": "symbol",
+      "source": "basemap",
+      "source-layer": "hiking_poi",
+      "minzoom": 14,
+      "filter": [
+        "all",
+        [
+          "in",
+          [
+            "get",
+            "class"
+          ],
+          [
+            "literal",
+            [
+              "campsite",
+              "drinking_water",
+              "toilets"
+            ]
+          ]
+        ]
+      ],
+      "layout": {
+        "text-field": [
+          "coalesce",
+          [
+            "get",
+            "name"
+          ],
+          [
+            "match",
+            [
+              "get",
+              "class"
+            ],
+            "drinking_water",
+            "Drinking water",
+            "toilets",
+            "Toilets",
+            "campsite",
+            "Campsite",
+            "hut",
+            "Hut",
+            "shelter",
+            "Shelter",
+            "rescue",
+            "Mountain rescue",
+            "trailhead",
+            "Trailhead",
+            "viewpoint",
+            "Viewpoint",
+            [
+              "get",
+              "class"
+            ]
+          ]
+        ],
+        "text-font": [
+          "Open Sans Regular"
+        ],
+        "text-size": 7,
+        "text-offset": [
+          0,
+          0.85
+        ],
+        "text-anchor": "top",
+        "text-optional": true
+      },
+      "paint": {
+        "text-color": "#49453e"
+      }
+    },
+    {
+      "id": "mountain-pass-labels",
+      "type": "symbol",
+      "source": "basemap",
+      "source-layer": "hiking_poi",
+      "minzoom": 11,
+      "filter": [
+        "all",
+        [
+          "has",
+          "name"
+        ],
+        [
+          "==",
+          [
+            "get",
+            "class"
+          ],
+          "pass"
+        ]
+      ],
+      "layout": {
+        "text-field": [
+          "get",
+          "name"
+        ],
+        "text-font": [
+          "Open Sans Semibold"
+        ],
+        "text-size": 10.5,
+        "text-offset": [
+          0,
+          0.7
+        ],
+        "text-allow-overlap": false
+      },
+      "paint": {
+        "text-color": "#554b3d"
+      }
+    },
+    {
+      "id": "station-labels",
+      "type": "symbol",
+      "source": "basemap",
+      "source-layer": "station",
+      "minzoom": 10,
+      "layout": {
+        "text-field": [
+          "coalesce",
+          [
+            "get",
+            "name_en"
+          ],
+          [
+            "get",
+            "name"
+          ],
+          [
+            "get",
+            "name_ga"
           ]
         ],
         "text-font": [
           "Open Sans Regular"
         ],
         "text-size": 11,
-        "text-anchor": "top",
-        "text-offset": [
-          0,
-          0.5
-        ],
-        "text-max-width": 12
+        "text-allow-overlap": false
       },
       "paint": {
-        "text-color": "#354d40"
+        "text-color": "#4e4a46"
       }
+    },
+    {
+      "id": "city-labels",
+      "type": "symbol",
+      "source": "basemap",
+      "source-layer": "place",
+      "minzoom": 4,
+      "filter": [
+        "all",
+        [
+          "==",
+          "class",
+          "city"
+        ],
+        [
+          "!in",
+          "name",
+          "\u00c9ire / Ireland",
+          "Ireland / \u00c9ire",
+          "Ireland",
+          "\u00c9ire"
+        ]
+      ],
+      "layout": {
+        "text-field": [
+          "coalesce",
+          [
+            "get",
+            "name_en"
+          ],
+          [
+            "get",
+            "name"
+          ],
+          [
+            "get",
+            "name_ga"
+          ]
+        ],
+        "text-font": [
+          "Open Sans Semibold"
+        ],
+        "text-size": 16,
+        "text-allow-overlap": false
+      },
+      "paint": {
+        "text-color": "#2f2a22"
+      }
+    },
+    {
+      "id": "town-labels",
+      "type": "symbol",
+      "source": "basemap",
+      "source-layer": "place",
+      "minzoom": 6,
+      "filter": [
+        "all",
+        [
+          "==",
+          "class",
+          "town"
+        ],
+        [
+          "!in",
+          "name",
+          "\u00c9ire / Ireland",
+          "Ireland / \u00c9ire",
+          "Ireland",
+          "\u00c9ire"
+        ]
+      ],
+      "layout": {
+        "text-field": [
+          "coalesce",
+          [
+            "get",
+            "name_en"
+          ],
+          [
+            "get",
+            "name"
+          ],
+          [
+            "get",
+            "name_ga"
+          ]
+        ],
+        "text-font": [
+          "Open Sans Semibold"
+        ],
+        "text-size": 13,
+        "text-allow-overlap": false
+      },
+      "paint": {
+        "text-color": "#2f2a22"
+      }
+    },
+    {
+      "id": "place-labels",
+      "type": "symbol",
+      "source": "basemap",
+      "source-layer": "place",
+      "minzoom": 7,
+      "filter": [
+        "all",
+        [
+          "!in",
+          "class",
+          "city",
+          "town",
+          "island",
+          "islet",
+          "village",
+          "hamlet"
+        ],
+        [
+          "!in",
+          "name",
+          "\u00c9ire / Ireland",
+          "Ireland / \u00c9ire",
+          "Ireland",
+          "\u00c9ire"
+        ]
+      ],
+      "layout": {
+        "text-field": [
+          "coalesce",
+          [
+            "get",
+            "name_en"
+          ],
+          [
+            "get",
+            "name"
+          ],
+          [
+            "get",
+            "name_ga"
+          ]
+        ],
+        "text-font": [
+          "Open Sans Semibold"
+        ],
+        "text-size": 11,
+        "text-allow-overlap": false
+      },
+      "paint": {
+        "text-color": "#2f2a22"
+      }
+    },
+    {
+      "id": "village-labels",
+      "type": "symbol",
+      "source": "basemap",
+      "source-layer": "place",
+      "minzoom": 7,
+      "filter": [
+        "==",
+        "class",
+        "village"
+      ],
+      "layout": {
+        "text-field": [
+          "coalesce",
+          [
+            "get",
+            "name_en"
+          ],
+          [
+            "get",
+            "name"
+          ],
+          [
+            "get",
+            "name_ga"
+          ]
+        ],
+        "text-font": [
+          "Open Sans Semibold"
+        ],
+        "text-size": 10,
+        "text-allow-overlap": false
+      },
+      "paint": {
+        "text-color": "#2f2a22"
+      }
+    },
+    {
+      "id": "hamlet-labels",
+      "type": "symbol",
+      "source": "basemap",
+      "source-layer": "place",
+      "minzoom": 8,
+      "filter": [
+        "==",
+        "class",
+        "hamlet"
+      ],
+      "layout": {
+        "text-field": [
+          "coalesce",
+          [
+            "get",
+            "name_en"
+          ],
+          [
+            "get",
+            "name"
+          ],
+          [
+            "get",
+            "name_ga"
+          ]
+        ],
+        "text-font": [
+          "Open Sans Semibold"
+        ],
+        "text-size": 9,
+        "text-allow-overlap": false
+      },
+      "paint": {
+        "text-color": "#2f2a22"
+      }
+    },
+    {
+      "id": "pois",
+      "type": "symbol",
+      "source": "basemap",
+      "source-layer": "poi",
+      "minzoom": 12,
+      "layout": {
+        "text-field": [
+          "coalesce",
+          [
+            "get",
+            "name_en"
+          ],
+          [
+            "get",
+            "name"
+          ],
+          [
+            "get",
+            "name_ga"
+          ]
+        ],
+        "text-font": [
+          "Open Sans Regular"
+        ],
+        "text-size": 13.2,
+        "text-optional": true
+      },
+      "paint": {
+        "text-color": "#3b372f"
+      },
+      "filter": [
+        "!",
+        [
+          "in",
+          [
+            "get",
+            "class"
+          ],
+          [
+            "literal",
+            [
+              "parking",
+              "viewpoint",
+              "camp_site",
+              "camp_pitch",
+              "alpine_hut",
+              "wilderness_hut",
+              "shelter",
+              "drinking_water",
+              "toilets",
+              "mountain_rescue"
+            ]
+          ]
+        ]
+      ]
     },
     {
       "id": "parking-symbols",
@@ -1492,221 +2209,66 @@
       }
     },
     {
-      "id": "mountain-dots",
-      "type": "circle",
+      "id": "guidepost-labels",
+      "type": "symbol",
       "source": "basemap",
-      "source-layer": "mountain",
-      "minzoom": 9,
+      "source-layer": "hiking_poi",
+      "minzoom": 13,
+      "filter": [
+        "==",
+        [
+          "get",
+          "class"
+        ],
+        "guidepost"
+      ],
+      "layout": {
+        "text-field": [
+          "coalesce",
+          [
+            "get",
+            "name"
+          ],
+          "Guidepost"
+        ],
+        "text-font": [
+          "Open Sans Semibold"
+        ],
+        "text-size": 7,
+        "text-offset": [
+          0,
+          0.85
+        ],
+        "text-anchor": "top",
+        "text-optional": true
+      },
       "paint": {
-        "circle-radius": 2.2,
-        "circle-color": "#4b382c"
+        "text-color": "#36332f"
       }
     },
     {
-      "id": "summit-labels",
-      "type": "symbol",
+      "id": "guidepost-dots",
+      "type": "circle",
       "source": "basemap",
-      "source-layer": "mountain",
-      "minzoom": 9,
-      "layout": {
-        "text-field": [
-          "concat",
-          [
-            "coalesce",
-            [
-              "get",
-              "name_en"
-            ],
-            [
-              "get",
-              "name"
-            ],
-            [
-              "get",
-              "name_ga"
-            ],
-            ""
-          ],
-          [
-            "case",
-            [
-              "all",
-              [
-                "!=",
-                [
-                  "coalesce",
-                  [
-                    "get",
-                    "name_en"
-                  ],
-                  [
-                    "get",
-                    "name"
-                  ],
-                  [
-                    "get",
-                    "name_ga"
-                  ],
-                  ""
-                ],
-                ""
-              ],
-              [
-                "has",
-                "ele_label"
-              ]
-            ],
-            "\n",
-            ""
-          ],
-          [
-            "coalesce",
-            [
-              "get",
-              "ele_label"
-            ],
-            ""
-          ]
-        ],
-        "text-font": [
-          "Open Sans Regular"
-        ],
-        "text-size": [
-          "interpolate",
-          [
-            "linear"
-          ],
-          [
-            "zoom"
-          ],
-          9,
-          11,
-          14,
-          13
-        ],
-        "text-anchor": "top",
-        "text-offset": [
-          0,
-          0.5
-        ],
-        "text-max-width": 11,
-        "text-line-height": 1.1,
-        "symbol-sort-key": [
-          "-",
-          0,
-          [
-            "coalesce",
-            [
-              "get",
-              "ele_m"
-            ],
-            0
-          ]
-        ]
-      },
-      "paint": {
-        "text-color": "#4b382c"
-      },
+      "source-layer": "hiking_poi",
+      "minzoom": 13,
       "filter": [
         "==",
         [
           "get",
           "class"
         ],
-        "peak"
-      ]
-    },
-    {
-      "id": "saddle-labels",
-      "type": "symbol",
-      "source": "basemap",
-      "source-layer": "mountain",
-      "minzoom": 9,
-      "layout": {
-        "text-field": [
-          "concat",
-          [
-            "coalesce",
-            [
-              "get",
-              "name_en"
-            ],
-            [
-              "get",
-              "name"
-            ],
-            [
-              "get",
-              "name_ga"
-            ],
-            "Saddle"
-          ],
-          [
-            "case",
-            [
-              "has",
-              "ele_label"
-            ],
-            "\n",
-            ""
-          ],
-          [
-            "coalesce",
-            [
-              "get",
-              "ele_label"
-            ],
-            ""
-          ]
-        ],
-        "text-font": [
-          "Open Sans Regular"
-        ],
-        "text-size": [
-          "interpolate",
-          [
-            "linear"
-          ],
-          [
-            "zoom"
-          ],
-          9,
-          11,
-          14,
-          13
-        ],
-        "text-anchor": "top",
-        "text-offset": [
-          0,
-          0.5
-        ],
-        "text-max-width": 11,
-        "text-line-height": 1.1,
-        "symbol-sort-key": [
-          "-",
-          0,
-          [
-            "coalesce",
-            [
-              "get",
-              "ele_m"
-            ],
-            0
-          ]
-        ]
-      },
+        "guidepost"
+      ],
       "paint": {
-        "text-color": "#4b382c"
-      },
-      "filter": [
-        "==",
-        [
-          "get",
-          "class"
-        ],
-        "saddle"
-      ]
+        "circle-radius": 1.36,
+        "circle-color": "#596957"
+      }
     }
   ],
-  "sprite": "../sprites/outdoors"
+  "metadata": {
+    "version": "0.4.0",
+    "cartography_origin": "OpenBareMap 1.1.0",
+    "contour_interval_metres": 10
+  }
 }

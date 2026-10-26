@@ -38,7 +38,7 @@ class Handler(BaseHTTPRequestHandler):
     def do_GET(self):
         path = unquote(urlsplit(self.path).path)
         origin = f'http://127.0.0.1:{self.server.server_port}'
-        match = re.fullmatch(r'/tiles/(?:(topography|hillshade)/)?(\d+)/(\d+)/(\d+)\.(?:pbf|png)', path)
+        match = re.fullmatch(r'/tiles/(?:(topography|hillshade|grid)/)?(\d+)/(\d+)/(\d+)\.(?:pbf|png)', path)
         if match:
             try:
                 dataset = match.group(1) or 'basemap'
@@ -54,8 +54,8 @@ class Handler(BaseHTTPRequestHandler):
             else:
                 self.reply(200, payload, 'image/png' if dataset == 'hillshade' else 'application/x-protobuf', payload[:2] == b'\x1f\x8b')
             return
-        if path in ['/tiles.json','/topography.json','/hillshade.json']:
-            dataset={'/tiles.json':'basemap','/topography.json':'topography','/hillshade.json':'hillshade'}[path]
+        if path in ['/tiles.json','/topography.json','/hillshade.json','/grid.json']:
+            dataset={'/tiles.json':'basemap','/topography.json':'topography','/hillshade.json':'hillshade','/grid.json':'grid'}[path]
             if dataset not in self.server.datasets:
                 self.reply(404)
                 return
@@ -63,6 +63,7 @@ class Handler(BaseHTTPRequestHandler):
             prefix='' if dataset=='basemap' else dataset+'/'
             suffix='png' if dataset=='hillshade' else 'pbf'
             attribution='© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap contributors</a>'
+            if dataset=='grid':attribution='Irish Grid (EPSG:29903) · OpenBareMap 1.1 asset'
             if dataset=='hillshade':
                 attribution='Terrain Tiles / Mapzen · Copernicus EU-DEM · USGS · NOAA · <a href="/terrain-attribution.html">Terrain attribution</a>'
             data={'tilejson':'3.0.0','name':metadata.get('name',dataset),'scheme':'xyz','tiles':[origin+'/tiles/'+prefix+'{z}/{x}/{y}.'+suffix],'minzoom':int(metadata['minzoom']),'maxzoom':int(metadata['maxzoom']),'bounds':list(map(float,metadata['bounds'].split(','))),'attribution':attribution}
@@ -73,6 +74,7 @@ class Handler(BaseHTTPRequestHandler):
             base=origin+'/style/openbaremap.json'
             for source in style['sources'].values():
                 if 'url' in source:source['url']=urljoin(base,source['url'])
+                if 'data' in source and isinstance(source['data'],str):source['data']=urljoin(base,source['data'])
                 if 'tiles' in source:source['tiles']=[urljoin(base,url) for url in source['tiles']]
             style['glyphs']=urljoin(base,style['glyphs'])
             if 'sprite' in style:style['sprite']=urljoin(base,style['sprite'])

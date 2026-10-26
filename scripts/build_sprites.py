@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Generate the conventional parking P on a blue square at 1x and 2x."""
+"""Assemble preserved 1.1 terrain textures plus the conventional parking P."""
 import hashlib
 import json
 from pathlib import Path
@@ -23,9 +23,18 @@ def main():
     paths=[]
     for ratio,suffix in [(1,''),(2,'@2x')]:
         base=ROOT/'viewer/sprites'/('outdoors'+suffix)
-        image=base.with_suffix('.png');parking(ratio).save(image,compress_level=9)
+        legacy=ROOT/'assets/legacy-1.1/sprites/baregps-bog27'
+        original=Image.open(legacy.with_suffix('.png')).convert('RGBA')
+        atlas=Image.new('RGBA',((original.width+24)*ratio,original.height*ratio))
+        atlas.paste(original.resize((original.width*ratio,original.height*ratio),Image.Resampling.NEAREST),(0,0))
+        atlas.paste(parking(ratio),(original.width*ratio,0))
+        image=base.with_suffix('.png');atlas.save(image,compress_level=9)
+        index=json.loads(legacy.with_suffix('.json').read_text())
+        for item in index.values():
+            for key in ['x','y','width','height','pixelRatio']:item[key]*=ratio
+        index['outdoor-parking']={'x':original.width*ratio,'y':0,'width':24*ratio,'height':24*ratio,'pixelRatio':ratio}
         description=base.with_suffix('.json')
-        description.write_text(json.dumps({'outdoor-parking':{'x':0,'y':0,'width':24*ratio,'height':24*ratio,'pixelRatio':ratio}},indent=2,sort_keys=True)+'\n')
+        description.write_text(json.dumps(index,indent=2,sort_keys=True)+'\n')
         paths.extend([image,description])
     lock={'generator_sha256':hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),'pillow_version':PIL.__version__,'assets':[{'path':str(p.relative_to(ROOT)),'sha256':hashlib.sha256(p.read_bytes()).hexdigest()} for p in paths]}
     (ROOT/'assets/sprites.lock.json').write_text(json.dumps(lock,indent=2)+'\n')

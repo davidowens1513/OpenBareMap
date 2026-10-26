@@ -1,0 +1,31 @@
+ATTRIBUTION AND DATA SOURCES
+
+OpenStreetMap data
+Copyright OpenStreetMap contributors. Data is available under the Open Database
+License (ODbL) 1.0.
+https://www.openstreetmap.org/copyright
+https://opendatacommons.org/licenses/odbl/1-0/
+
+The basemap and the environmental, hiking and island layers contain data
+derived from OpenStreetMap. Processing inputs include the Geofabrik Ireland
+and Northern Ireland extract dated 2026-08-25. Coastline/land polygons are
+derived from OpenStreetMap and were processed by osmdata.openstreetmap.de.
+https://download.geofabrik.de/europe/ireland-and-northern-ireland.html
+https://osmdata.openstreetmap.de/data/land-polygons.html
+
+Terrain and contours
+Hillshade and contour lines were derived from SRTM 1 Arc-Second Global,
+Version 3 elevation data. SRTM was produced by NASA and NGA and is distributed
+by the USGS; USGS identifies this data as public domain.
+https://www.usgs.gov/centers/eros/science/usgs-eros-archive-digital-elevation-shuttle-radar-topography-mission-srtm
+
+Fonts
+Map glyphs were generated from Open Sans and distributed in the OpenMapTiles
+fonts v2.0 bundle. Open Sans in that bundle is licensed under the Apache
+License 2.0. A copy is included as LICENSE-APACHE-2.0.txt.
+https://github.com/openmaptiles/fonts
+
+Style and graphics
+baregps-style.json and the bundled pattern/crag sprites are the custom
+cartography prepared for BareGPS Ireland.
+

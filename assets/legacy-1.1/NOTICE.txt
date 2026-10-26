@@ -1,0 +1,16 @@
+NOTICE
+
+This directory is the offline map payload for BareGPS Ireland 2.0. It is not a
+standalone application. The host app must read local MBTiles, load the bundled
+style and serve the local fonts, sprites and GeoJSON without network access.
+
+Required visible attribution in a browsable map:
+  Copyright OpenStreetMap contributors
+
+OpenStreetMap-derived databases remain subject to ODbL 1.0. SRTM-derived
+terrain is public-domain US government data. Bundled Open Sans glyphs are
+covered by Apache License 2.0. See ATTRIBUTION.txt and
+LICENSE-APACHE-2.0.txt.
+
+The OpenBareMap map-data version is 1.1.0. The target application release is
+BareGPS Ireland 2.0; these are deliberately recorded as separate versions.
