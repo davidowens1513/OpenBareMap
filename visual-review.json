@@ -233,5 +233,19 @@
       }
     ],
     "review": "1.1 palette and type, bog/rock/scree textures and cliff teeth visible; restored names and grid render. Text halos removed. Contour spacing doubled to 440/360 pixels; geometry remains 10 m. This is representative visual review, not complete geographic acceptance."
+  },
+  "transport_structures": {
+    "style_sha256": "0240e1fb877f292f42fd1270a48bdea851bf7c52e397d1f7dd413f96d91a1f2d",
+    "views": [
+      {
+        "image": "road-structures-preview.png",
+        "camera": "14/53.318/-6.371"
+      },
+      {
+        "image": "tunnel-preview.png",
+        "camera": "13/53.370/-6.227"
+      }
+    ],
+    "review": "M50/N7 junction link ramps and bridge decks reviewed; Dublin tunnel reviewed with surface network. Text floor 6 pixels; no access styling changes. Tests exercise crossing order, tag fallbacks, links, dash-only paths and minimum text outputs."
   }
 }

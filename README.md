@@ -70,3 +70,12 @@ Tracks and paths render as dashes only, without the shared continuous minor-road
 Footways, bridleways, cycleways and steps are drawn from zoom 11 as dash-only lines. Footways share the green path pattern; bridleways use longer olive-brown dashes, cycleways blue dashes, and steps short green marks. Pedestrian streets remain unstyled. Each has a style-derived legend entry.
 
 All text sizes except townlands are reduced by 1.5 screen pixels, including zoom-dependent size outputs; zoom stops and visibility thresholds are unchanged. Townlands remain 11.9 pixels.
+
+
+## Road connections, structures and text floor
+
+Motorway/trunk/primary/secondary link roads now use their parent road colours and zoom-7 threshold; tertiary links remain minor roads from zoom 11. Numeric OSM `layer` orders roads and railways together, with tunnels before surface ways and bridges after them at the same level. Untagged bridges default to level 1 and tunnels to -1; explicit levels take precedence. All levels found in the selected data are represented, including -6 and -1.5. This orders recorded crossings; it cannot repair missing or wrong source tags. Walking/cycling route overlays remain above the underlying network.
+
+Road bridges have darker, wider edges. Path/track bridge strokes are slightly wider but remain dashed with no solid casing. Tunnels use faded strokes; solid roads gain dashes, while dashed paths retain their own patterns. Access styling is unchanged. Runtime drawing passes are generated from `config/transport-style.json` by `python3 scripts/style_transport.py`; rerun it after editing the transport templates. `transport-report.json` records source class/structure/level counts and examples.
+
+Every text-size output is at least 6 pixels, including interpolated stops. Larger sizes and townlands are unchanged by this minimum.

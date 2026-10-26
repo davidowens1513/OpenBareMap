@@ -32,7 +32,7 @@ def first_point(data,extent,z,x,tms_y):
     gy=((2**z-1-tms_y)+py/extent)/(2**z)
     return [round(gx*360-180,6),round(math.degrees(math.atan(math.sinh(math.pi*(1-2*gy)))),6)]
 
-def inventory(path, layers=None):
+def inventory(path, layers=None, attributes=()):
     selected = LAYERS if layers is None else set(layers)
     features={name:{} for name in selected}
     with closing(sqlite3.connect(Path(path).resolve().as_uri()+'?mode=ro',uri=True)) as db:
@@ -62,6 +62,8 @@ def inventory(path, layers=None):
     if layers is not None:
         return {'zoom':zoom,'distinct_emitted_feature_ids_by_class':counts,
                 'examples':{name:{cl:next(f for f in items.values() if f['class']==cl) for cl in counts[name]} for name,items in features.items()},
+                'attribute_counts':{name:{attr:dict(Counter(str(f.get(attr,'')) for f in items.values())) for attr in attributes} for name,items in features.items()},
+                'attribute_examples':{name:{attr:{str(v):next(f for f in items.values() if f.get(attr)==v) for v in {f[attr] for f in items.values() if attr in f}} for attr in attributes} for name,items in features.items()},
                 'note':'Distinct emitted MVT IDs, not an independent source completeness audit. Coordinates mark first geometry points.'}
     peaks=sorted((f for f in features['mountain'].values() if f['class']=='peak' and 'ele_m' in f),key=lambda f:-f['ele_m'])[:20]
     routes=sorted((f for f in features['hiking_route'].values() if any(word in (f.get('name_en','')+' '+f.get('name','')).lower() for word in ['wicklow','kerry way','dingle way','ulster way'])),key=lambda f:f.get('name_en',f.get('name','')))[:20]

@@ -1,0 +1,504 @@
+{
+  "levels": [
+    -6,
+    -5,
+    -4,
+    -3,
+    -2,
+    -1.5,
+    -1,
+    0,
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "templates": [
+    {
+      "id": "roads-casing-major",
+      "type": "line",
+      "source": "basemap",
+      "source-layer": "transportation",
+      "filter": [
+        "in",
+        [
+          "get",
+          "class"
+        ],
+        [
+          "literal",
+          [
+            "motorway",
+            "trunk",
+            "primary",
+            "secondary",
+            "motorway_link",
+            "trunk_link",
+            "primary_link",
+            "secondary_link"
+          ]
+        ]
+      ],
+      "paint": {
+        "line-color": "#d8c2a4",
+        "line-width": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "zoom"
+          ],
+          6,
+          0.8,
+          10,
+          2.2,
+          14,
+          4.8
+        ],
+        "line-opacity": 1
+      },
+      "minzoom": 7
+    },
+    {
+      "id": "roads-major",
+      "type": "line",
+      "source": "basemap",
+      "source-layer": "transportation",
+      "filter": [
+        "in",
+        [
+          "get",
+          "class"
+        ],
+        [
+          "literal",
+          [
+            "motorway",
+            "trunk",
+            "primary",
+            "secondary",
+            "motorway_link",
+            "trunk_link",
+            "primary_link",
+            "secondary_link"
+          ]
+        ]
+      ],
+      "paint": {
+        "line-color": [
+          "match",
+          [
+            "get",
+            "class"
+          ],
+          "motorway",
+          "#f39a3d",
+          "trunk",
+          "#ee9d4a",
+          "primary",
+          "#f0ad61",
+          "secondary",
+          "#f4bf7b",
+          "motorway_link",
+          "#f39a3d",
+          "trunk_link",
+          "#ee9d4a",
+          "primary_link",
+          "#f0ad61",
+          "secondary_link",
+          "#f4bf7b",
+          "#f0ad61"
+        ],
+        "line-width": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "zoom"
+          ],
+          6,
+          0.5,
+          10,
+          1.6,
+          14,
+          3.6
+        ]
+      },
+      "minzoom": 7
+    },
+    {
+      "id": "roads-casing-minor",
+      "type": "line",
+      "source": "basemap",
+      "source-layer": "transportation",
+      "filter": [
+        "in",
+        [
+          "get",
+          "class"
+        ],
+        [
+          "literal",
+          [
+            "tertiary",
+            "tertiary_link",
+            "residential",
+            "unclassified",
+            "living_street",
+            "road",
+            "service"
+          ]
+        ]
+      ],
+      "paint": {
+        "line-color": "#8f806b",
+        "line-width": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "zoom"
+          ],
+          8,
+          0.65,
+          12,
+          1.6,
+          14,
+          2.8
+        ]
+      },
+      "minzoom": 11
+    },
+    {
+      "id": "roads-minor",
+      "type": "line",
+      "source": "basemap",
+      "source-layer": "transportation",
+      "filter": [
+        "in",
+        [
+          "get",
+          "class"
+        ],
+        [
+          "literal",
+          [
+            "tertiary",
+            "tertiary_link",
+            "residential",
+            "unclassified",
+            "living_street",
+            "road",
+            "service"
+          ]
+        ]
+      ],
+      "paint": {
+        "line-color": [
+          "match",
+          [
+            "get",
+            "class"
+          ],
+          "path",
+          "#6a8f5a",
+          "track",
+          "#8b6f47",
+          "service",
+          "#ffffff",
+          "#e6cf98"
+        ],
+        "line-width": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "zoom"
+          ],
+          8,
+          0.45,
+          12,
+          1.1,
+          14,
+          2.1
+        ],
+        "line-dasharray": [
+          1,
+          0
+        ]
+      },
+      "minzoom": 11
+    },
+    {
+      "id": "paths",
+      "type": "line",
+      "source": "basemap",
+      "source-layer": "transportation",
+      "filter": [
+        "==",
+        [
+          "get",
+          "class"
+        ],
+        "path"
+      ],
+      "paint": {
+        "line-color": "#6a8f5a",
+        "line-width": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "zoom"
+          ],
+          8,
+          0.45,
+          12,
+          1.1,
+          14,
+          2.1
+        ],
+        "line-dasharray": [
+          1.2,
+          1.2
+        ]
+      },
+      "minzoom": 11
+    },
+    {
+      "id": "footways",
+      "type": "line",
+      "source": "basemap",
+      "source-layer": "transportation",
+      "filter": [
+        "==",
+        [
+          "get",
+          "class"
+        ],
+        "footway"
+      ],
+      "paint": {
+        "line-color": "#6a8f5a",
+        "line-width": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "zoom"
+          ],
+          8,
+          0.45,
+          12,
+          1.1,
+          14,
+          2.1
+        ],
+        "line-dasharray": [
+          1.2,
+          1.2
+        ]
+      },
+      "minzoom": 11
+    },
+    {
+      "id": "bridleways",
+      "type": "line",
+      "source": "basemap",
+      "source-layer": "transportation",
+      "filter": [
+        "==",
+        [
+          "get",
+          "class"
+        ],
+        "bridleway"
+      ],
+      "paint": {
+        "line-color": "#867044",
+        "line-width": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "zoom"
+          ],
+          8,
+          0.45,
+          12,
+          1.1,
+          14,
+          2.1
+        ],
+        "line-dasharray": [
+          2.4,
+          1.2
+        ]
+      },
+      "minzoom": 11
+    },
+    {
+      "id": "cycleways",
+      "type": "line",
+      "source": "basemap",
+      "source-layer": "transportation",
+      "filter": [
+        "==",
+        [
+          "get",
+          "class"
+        ],
+        "cycleway"
+      ],
+      "paint": {
+        "line-color": "#347bb7",
+        "line-width": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "zoom"
+          ],
+          8,
+          0.45,
+          12,
+          1.1,
+          14,
+          2.1
+        ],
+        "line-dasharray": [
+          2,
+          1.2
+        ]
+      },
+      "minzoom": 11
+    },
+    {
+      "id": "steps",
+      "type": "line",
+      "source": "basemap",
+      "source-layer": "transportation",
+      "filter": [
+        "==",
+        [
+          "get",
+          "class"
+        ],
+        "steps"
+      ],
+      "paint": {
+        "line-color": "#6a8f5a",
+        "line-width": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "zoom"
+          ],
+          8,
+          0.45,
+          12,
+          1.1,
+          14,
+          2.1
+        ],
+        "line-dasharray": [
+          0.5,
+          1
+        ]
+      },
+      "minzoom": 11
+    },
+    {
+      "id": "tracks",
+      "type": "line",
+      "source": "basemap",
+      "source-layer": "transportation",
+      "filter": [
+        "==",
+        [
+          "get",
+          "class"
+        ],
+        "track"
+      ],
+      "paint": {
+        "line-color": "#8b6f47",
+        "line-width": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "zoom"
+          ],
+          8,
+          0.45,
+          12,
+          1.1,
+          14,
+          2.1
+        ],
+        "line-dasharray": [
+          2,
+          1.2
+        ]
+      },
+      "minzoom": 11
+    },
+    {
+      "id": "railways",
+      "type": "line",
+      "source": "basemap",
+      "source-layer": "railway",
+      "filter": [
+        "!",
+        [
+          "in",
+          [
+            "get",
+            "class"
+          ],
+          [
+            "literal",
+            [
+              "abandoned",
+              "disused",
+              "razed"
+            ]
+          ]
+        ]
+      ],
+      "paint": {
+        "line-color": "#68645f",
+        "line-width": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "zoom"
+          ],
+          7,
+          0.5,
+          14,
+          1.5
+        ],
+        "line-dasharray": [
+          3,
+          1
+        ]
+      }
+    }
+  ]
+}

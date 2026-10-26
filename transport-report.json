@@ -1,0 +1,833 @@
+{
+  "zoom": 14,
+  "distinct_emitted_feature_ids_by_class": {
+    "transportation": {
+      "bridleway": 237,
+      "bus_stop": 12,
+      "busway": 143,
+      "construction": 1374,
+      "corridor": 1205,
+      "cycleway": 15000,
+      "elevator": 6,
+      "escape": 3,
+      "footway": 178117,
+      "ladder": 2,
+      "living_street": 640,
+      "motorway": 1951,
+      "motorway_link": 1528,
+      "path": 39200,
+      "pedestrian": 3933,
+      "platform": 28,
+      "primary": 11811,
+      "primary_link": 189,
+      "proposed": 469,
+      "raceway": 334,
+      "residential": 141168,
+      "rest_area": 43,
+      "road": 2,
+      "secondary": 46928,
+      "secondary_link": 705,
+      "ser": 1,
+      "service": 744514,
+      "services": 48,
+      "stairs": 1,
+      "steps": 10410,
+      "tertiary": 52111,
+      "tertiary_link": 401,
+      "track": 164026,
+      "trailhead": 3,
+      "trunk": 10837,
+      "trunk_link": 1760,
+      "unclassified": 121377
+    }
+  },
+  "examples": {
+    "transportation": {
+      "bridleway": {
+        "class": "bridleway",
+        "name": "Beara Bridle Way",
+        "first_coordinate": [
+          -9.97071,
+          51.675552
+        ],
+        "id": 759697226
+      },
+      "bus_stop": {
+        "class": "bus_stop",
+        "ref": "555041",
+        "name": "Galway Bus Station",
+        "first_coordinate": [
+          -9.046388,
+          53.273545
+        ],
+        "id": 1189418679
+      },
+      "busway": {
+        "class": "busway",
+        "name": "Bus Parking",
+        "first_coordinate": [
+          -8.48461,
+          54.181987
+        ],
+        "id": 1514582290
+      },
+      "construction": {
+        "class": "construction",
+        "first_coordinate": [
+          -10.267051,
+          52.144606
+        ],
+        "id": 1449862726
+      },
+      "corridor": {
+        "class": "corridor",
+        "first_coordinate": [
+          -9.716238,
+          52.261233
+        ],
+        "id": 1181746125
+      },
+      "cycleway": {
+        "foot": "yes",
+        "surface": "asphalt",
+        "class": "cycleway",
+        "first_coordinate": [
+          -10.13374,
+          52.144751
+        ],
+        "id": 1357068560
+      },
+      "elevator": {
+        "class": "elevator",
+        "first_coordinate": [
+          -8.499749,
+          51.893093
+        ],
+        "id": 1494602221
+      },
+      "escape": {
+        "class": "escape",
+        "first_coordinate": [
+          -7.696041,
+          54.9378
+        ],
+        "id": 375563797
+      },
+      "footway": {
+        "access": "private",
+        "class": "footway",
+        "surface": "grass",
+        "name": "Upper Lighthouse Road",
+        "first_coordinate": [
+          -10.543345,
+          51.770094
+        ],
+        "id": 512561730
+      },
+      "ladder": {
+        "foot": "private",
+        "class": "ladder",
+        "first_coordinate": [
+          -6.062211,
+          54.178242
+        ],
+        "id": 1410714410
+      },
+      "living_street": {
+        "surface": "paving_stones",
+        "class": "living_street",
+        "name": "P\u00e1irc an Chol\u00e1iste",
+        "first_coordinate": [
+          -9.98278,
+          54.216091
+        ],
+        "id": 1497372453
+      },
+      "motorway": {
+        "surface": "asphalt",
+        "class": "motorway",
+        "name": "Ennis Bypass",
+        "ref": "M18",
+        "first_coordinate": [
+          -8.944786,
+          52.883612
+        ],
+        "id": 24525773
+      },
+      "motorway_link": {
+        "surface": "asphalt",
+        "class": "motorway_link",
+        "first_coordinate": [
+          -8.94558,
+          52.884602
+        ],
+        "id": 25559870
+      },
+      "path": {
+        "class": "path",
+        "first_coordinate": [
+          -10.661116,
+          52.075688
+        ],
+        "id": 880810237
+      },
+      "pedestrian": {
+        "surface": "asphalt",
+        "class": "pedestrian",
+        "first_coordinate": [
+          -10.365788,
+          51.886091
+        ],
+        "id": 722965230
+      },
+      "platform": {
+        "foot": "yes",
+        "class": "platform",
+        "first_coordinate": [
+          -8.630426,
+          52.648473
+        ],
+        "id": 1550159647
+      },
+      "primary": {
+        "surface": "asphalt",
+        "class": "primary",
+        "ref": "N86",
+        "first_coordinate": [
+          -10.260807,
+          52.13141
+        ],
+        "id": 416771548
+      },
+      "primary_link": {
+        "surface": "asphalt",
+        "class": "primary_link",
+        "first_coordinate": [
+          -9.665329,
+          52.27491
+        ],
+        "id": 209956315
+      },
+      "proposed": {
+        "class": "proposed",
+        "first_coordinate": [
+          -10.275747,
+          51.929825
+        ],
+        "id": 1262506219
+      },
+      "raceway": {
+        "class": "raceway",
+        "first_coordinate": [
+          -9.538252,
+          52.355978
+        ],
+        "id": 333149199
+      },
+      "residential": {
+        "class": "residential",
+        "first_coordinate": [
+          -10.459381,
+          52.13789
+        ],
+        "id": 881035063
+      },
+      "rest_area": {
+        "class": "rest_area",
+        "first_coordinate": [
+          -9.424848,
+          53.814636
+        ],
+        "id": 1185292111
+      },
+      "road": {
+        "access": "no",
+        "class": "road",
+        "first_coordinate": [
+          -8.004457,
+          53.413209
+        ],
+        "id": 1569764991
+      },
+      "secondary": {
+        "class": "secondary",
+        "surface": "asphalt",
+        "ref": "R559",
+        "first_coordinate": [
+          -10.458748,
+          52.108485
+        ],
+        "id": 207558095
+      },
+      "secondary_link": {
+        "surface": "asphalt",
+        "class": "secondary_link",
+        "first_coordinate": [
+          -10.349379,
+          52.216551
+        ],
+        "id": 239432604
+      },
+      "ser": {
+        "class": "ser",
+        "first_coordinate": [
+          -6.515429,
+          54.285502
+        ],
+        "id": 1571417309
+      },
+      "service": {
+        "access": "private",
+        "class": "service",
+        "surface": "stone",
+        "name": "B\u00f3thar an T\u00ed Solais",
+        "first_coordinate": [
+          -10.541017,
+          51.768879
+        ],
+        "id": 1064721119
+      },
+      "services": {
+        "class": "services",
+        "name": "The Banner Plaza",
+        "first_coordinate": [
+          -8.937464,
+          52.829295
+        ],
+        "id": 1473311886
+      },
+      "stairs": {
+        "surface": "asphalt",
+        "class": "stairs",
+        "first_coordinate": [
+          -5.889959,
+          54.513805
+        ],
+        "id": 762297480
+      },
+      "steps": {
+        "access": "yes",
+        "surface": "paved",
+        "class": "steps",
+        "name": "South Steps",
+        "first_coordinate": [
+          -10.539075,
+          51.769928
+        ],
+        "id": 165846660
+      },
+      "tertiary": {
+        "class": "tertiary",
+        "first_coordinate": [
+          -10.449221,
+          52.131904
+        ],
+        "id": 41731697
+      },
+      "tertiary_link": {
+        "class": "tertiary_link",
+        "first_coordinate": [
+          -9.695413,
+          52.263381
+        ],
+        "id": 38180870
+      },
+      "track": {
+        "class": "track",
+        "surface": "dirt",
+        "first_coordinate": [
+          -10.546639,
+          52.092078
+        ],
+        "id": 71506749
+      },
+      "trailhead": {
+        "class": "trailhead",
+        "name": "Medieval Mile Museum",
+        "first_coordinate": [
+          -7.252532,
+          52.651828
+        ],
+        "id": 1023719146
+      },
+      "trunk": {
+        "access": "yes",
+        "surface": "asphalt",
+        "class": "trunk",
+        "name": "Tralee to Bealagrellagh Road",
+        "ref": "N22",
+        "first_coordinate": [
+          -9.665367,
+          52.245516
+        ],
+        "id": 234548483
+      },
+      "trunk_link": {
+        "surface": "asphalt",
+        "class": "trunk_link",
+        "first_coordinate": [
+          -9.298081,
+          53.833727
+        ],
+        "id": 905168899
+      },
+      "unclassified": {
+        "surface": "asphalt",
+        "class": "unclassified",
+        "first_coordinate": [
+          -10.464215,
+          52.110795
+        ],
+        "id": 25192979
+      }
+    }
+  },
+  "attribute_counts": {
+    "transportation": {
+      "bridge": {
+        "": 1517433,
+        "yes": 32802,
+        "boardwalk": 189,
+        "movable": 35,
+        "aqueduct": 3,
+        "log_bridge": 1,
+        "abandoned": 4,
+        "low_water_crossing": 8,
+        "viaduct": 34,
+        "ruins": 1,
+        "covered": 3,
+        "no": 2,
+        "construction": 1,
+        "pier": 1
+      },
+      "tunnel": {
+        "": 1545359,
+        "yes": 1947,
+        "building_passage": 3176,
+        "covered": 28,
+        "cave": 2,
+        "no": 3,
+        "passage": 2
+      },
+      "layer": {
+        "": 1516814,
+        "-1": 2753,
+        "1": 30515,
+        "2": 296,
+        "0": 78,
+        "4": 8,
+        "-2": 22,
+        "5": 7,
+        "3": 13,
+        "-4": 1,
+        "-6": 1,
+        "-3": 6,
+        "-5": 2,
+        "-1.5": 1
+      }
+    }
+  },
+  "attribute_examples": {
+    "transportation": {
+      "bridge": {
+        "aqueduct": {
+          "class": "service",
+          "bridge": "aqueduct",
+          "layer": "1",
+          "first_coordinate": [
+            -9.284332,
+            53.54192
+          ],
+          "id": 199738763
+        },
+        "ruins": {
+          "class": "service",
+          "bridge": "ruins",
+          "layer": "0",
+          "first_coordinate": [
+            -8.233239,
+            52.586051
+          ],
+          "id": 1049531582
+        },
+        "no": {
+          "class": "pedestrian",
+          "surface": "concrete",
+          "foot": "designated",
+          "bridge": "no",
+          "tunnel": "no",
+          "first_coordinate": [
+            -6.241661,
+            53.427553
+          ],
+          "id": 175815176
+        },
+        "low_water_crossing": {
+          "surface": "asphalt",
+          "class": "unclassified",
+          "bridge": "low_water_crossing",
+          "layer": "1",
+          "first_coordinate": [
+            -8.991231,
+            53.162398
+          ],
+          "id": 570373179
+        },
+        "construction": {
+          "class": "path",
+          "bridge": "construction",
+          "layer": "1",
+          "first_coordinate": [
+            -6.230584,
+            53.343551
+          ],
+          "id": 1527862569
+        },
+        "log_bridge": {
+          "foot": "yes",
+          "class": "path",
+          "surface": "wood",
+          "bridge": "log_bridge",
+          "layer": "1",
+          "first_coordinate": [
+            -9.127418,
+            53.270378
+          ],
+          "id": 1514043480
+        },
+        "boardwalk": {
+          "foot": "designated",
+          "class": "cycleway",
+          "surface": "wood",
+          "bridge": "boardwalk",
+          "layer": "1",
+          "name": "South Kerry Greenway",
+          "first_coordinate": [
+            -9.99236,
+            52.035726
+          ],
+          "id": 1493644439
+        },
+        "abandoned": {
+          "foot": "no",
+          "bridge": "abandoned",
+          "class": "proposed",
+          "layer": "1",
+          "name": "Clifden Railway Pedestrian and Cycle Bridge",
+          "first_coordinate": [
+            -9.056463,
+            53.27876
+          ],
+          "id": 1273660517
+        },
+        "covered": {
+          "foot": "designated",
+          "surface": "paved",
+          "class": "cycleway",
+          "bridge": "covered",
+          "ref": "L5149",
+          "layer": "1",
+          "name": "Hayden's Lane",
+          "first_coordinate": [
+            -6.448363,
+            53.335556
+          ],
+          "id": 67323893
+        },
+        "pier": {
+          "class": "service",
+          "bridge": "pier",
+          "layer": "1",
+          "first_coordinate": [
+            -6.221094,
+            53.346132
+          ],
+          "id": 1436187439
+        },
+        "movable": {
+          "class": "secondary",
+          "surface": "asphalt",
+          "bridge": "movable",
+          "ref": "R319",
+          "name": "Droichead Mh\u00edche\u00e1l Mhic Dh\u00e1ibh\u00e9id",
+          "layer": "1",
+          "first_coordinate": [
+            -9.921931,
+            53.932658
+          ],
+          "id": 738740397
+        },
+        "yes": {
+          "bridge": "yes",
+          "class": "path",
+          "layer": "1",
+          "first_coordinate": [
+            -10.462434,
+            52.129543
+          ],
+          "id": 275280151
+        },
+        "viaduct": {
+          "surface": "asphalt",
+          "class": "motorway",
+          "bridge": "viaduct",
+          "name": "Gort to Tuam Motorway",
+          "layer": "1",
+          "ref": "M18",
+          "first_coordinate": [
+            -8.830143,
+            53.215214
+          ],
+          "id": 463595887
+        }
+      },
+      "tunnel": {
+        "no": {
+          "surface": "paving_stones",
+          "class": "footway",
+          "tunnel": "no",
+          "name": "Dame Court",
+          "first_coordinate": [
+            -6.263757,
+            53.343865
+          ],
+          "id": 1481236408
+        },
+        "cave": {
+          "class": "path",
+          "tunnel": "cave",
+          "first_coordinate": [
+            -7.27164,
+            52.137123
+          ],
+          "id": 79281393
+        },
+        "covered": {
+          "class": "service",
+          "tunnel": "covered",
+          "layer": "-1",
+          "first_coordinate": [
+            -7.299685,
+            54.601285
+          ],
+          "id": 245223826
+        },
+        "yes": {
+          "access": "private",
+          "foot": "yes",
+          "surface": "concrete",
+          "tunnel": "yes",
+          "class": "path",
+          "layer": "-1",
+          "name": "B\u00f3thar an T\u00ed Solais",
+          "first_coordinate": [
+            -10.538469,
+            51.770645
+          ],
+          "id": 512376550
+        },
+        "passage": {
+          "access": "private",
+          "class": "service",
+          "surface": "paved",
+          "tunnel": "passage",
+          "layer": "-1",
+          "first_coordinate": [
+            -5.935568,
+            54.593876
+          ],
+          "id": 1216461272
+        },
+        "building_passage": {
+          "class": "footway",
+          "tunnel": "building_passage",
+          "first_coordinate": [
+            -10.352951,
+            52.173695
+          ],
+          "id": 1273538351
+        }
+      },
+      "layer": {
+        "0": {
+          "class": "track",
+          "surface": "dirt",
+          "layer": "0",
+          "first_coordinate": [
+            -9.19973,
+            51.859237
+          ],
+          "id": 177305403
+        },
+        "5": {
+          "access": "private",
+          "bridge": "yes",
+          "class": "footway",
+          "layer": "5",
+          "first_coordinate": [
+            -8.501567,
+            51.886412
+          ],
+          "id": 138290300
+        },
+        "3": {
+          "surface": "metal",
+          "foot": "destination",
+          "class": "corridor",
+          "layer": "3",
+          "first_coordinate": [
+            -8.482663,
+            51.898886
+          ],
+          "id": 111343401
+        },
+        "-1.5": {
+          "class": "footway",
+          "tunnel": "yes",
+          "foot": "permit",
+          "layer": "-1.5",
+          "first_coordinate": [
+            -6.317552,
+            53.330303
+          ],
+          "id": 1536245408
+        },
+        "1": {
+          "bridge": "yes",
+          "class": "path",
+          "layer": "1",
+          "first_coordinate": [
+            -10.462434,
+            52.129543
+          ],
+          "id": 275280151
+        },
+        "-2": {
+          "class": "pedestrian",
+          "layer": "-2",
+          "first_coordinate": [
+            -8.592103,
+            51.88812
+          ],
+          "id": 1298935737
+        },
+        "-1": {
+          "access": "private",
+          "foot": "yes",
+          "surface": "concrete",
+          "tunnel": "yes",
+          "class": "path",
+          "layer": "-1",
+          "name": "B\u00f3thar an T\u00ed Solais",
+          "first_coordinate": [
+            -10.538469,
+            51.770645
+          ],
+          "id": 512376550
+        },
+        "-3": {
+          "foot": "permissive",
+          "surface": "paved",
+          "class": "steps",
+          "layer": "-3",
+          "first_coordinate": [
+            -8.459006,
+            51.901243
+          ],
+          "id": 551517807
+        },
+        "-4": {
+          "access": "permissive",
+          "surface": "paved",
+          "class": "corridor",
+          "layer": "-4",
+          "first_coordinate": [
+            -8.458968,
+            51.901226
+          ],
+          "id": 551517809
+        },
+        "-5": {
+          "foot": "permissive",
+          "surface": "paved",
+          "class": "steps",
+          "layer": "-5",
+          "first_coordinate": [
+            -8.458979,
+            51.901216
+          ],
+          "id": 551517806
+        },
+        "-6": {
+          "access": "permissive",
+          "foot": "yes",
+          "surface": "paved",
+          "tunnel": "yes",
+          "class": "corridor",
+          "layer": "-6",
+          "first_coordinate": [
+            -8.458947,
+            51.901392
+          ],
+          "id": 551517810
+        },
+        "4": {
+          "foot": "yes",
+          "surface": "asphalt",
+          "class": "trunk",
+          "bridge": "yes",
+          "name": "Ballina Road",
+          "ref": "N26",
+          "layer": "4",
+          "first_coordinate": [
+            -8.965868,
+            53.949696
+          ],
+          "id": 228838203
+        },
+        "2": {
+          "class": "secondary",
+          "surface": "asphalt",
+          "bridge": "yes",
+          "ref": "R549",
+          "layer": "2",
+          "first_coordinate": [
+            -10.350108,
+            52.217277
+          ],
+          "id": 203307293
+        }
+      }
+    }
+  },
+  "note": "Distinct highest-zoom feature IDs from selected basemap; not counts of complete bridges, tunnels or routes. Drawing order follows recorded layer, default bridge 1 and tunnel -1. Route overlays remain above the network. Access styling unchanged.",
+  "railway_layer_counts": {
+    "railway": {
+      "layer": {
+        "": 8965,
+        "1": 1951,
+        "-1": 277,
+        "4": 1,
+        "2": 85,
+        "0": 4,
+        "-3": 2,
+        "-2": 1
+      }
+    }
+  },
+  "render_levels": [
+    -6,
+    -5,
+    -4,
+    -3,
+    -2,
+    -1.5,
+    -1,
+    0,
+    1,
+    2,
+    3,
+    4,
+    5
+  ]
+}
