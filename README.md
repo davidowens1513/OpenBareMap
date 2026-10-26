@@ -79,3 +79,5 @@ Motorway/trunk/primary/secondary link roads now use their parent road colours an
 Road bridges have darker, wider edges. Path/track bridge strokes are slightly wider but remain dashed with no solid casing. Tunnels use faded strokes; solid roads gain dashes, while dashed paths retain their own patterns. Access styling is unchanged. Runtime drawing passes are generated from `config/transport-style.json` by `python3 scripts/style_transport.py`; rerun it after editing the transport templates. `transport-report.json` records source class/structure/level counts and examples.
 
 Every text-size output is at least 6 pixels, including interpolated stops. Larger sizes and townlands are unchanged by this minimum.
+
+An iOS resource-bundle assembler and MapLibre Native runtime path loader are now in `scripts/build_ios_bundle.py` and `ios/`. The generated `.bundle` is a separate local deliverable; the repository retains its source resources and assembly recipe. See `ios/README.md` for integration and validation limits.
