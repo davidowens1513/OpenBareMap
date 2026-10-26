@@ -1397,13 +1397,221 @@
       "source": "basemap",
       "source-layer": "mountain",
       "filter": [
-        "in",
-        "class",
-        "peak",
-        "volcano",
+        "all",
+        [
+          "in",
+          [
+            "get",
+            "class"
+          ],
+          [
+            "literal",
+            [
+              "peak",
+              "volcano"
+            ]
+          ]
+        ],
+        [
+          ">=",
+          [
+            "coalesce",
+            [
+              "get",
+              "ele_m"
+            ],
+            0
+          ],
+          600
+        ]
+      ],
+      "minzoom": 11,
+      "layout": {
+        "text-field": [
+          "coalesce",
+          [
+            "get",
+            "name_en"
+          ],
+          [
+            "get",
+            "name"
+          ],
+          [
+            "get",
+            "name_ga"
+          ]
+        ],
+        "text-font": [
+          "Open Sans Semibold"
+        ],
+        "text-size": 11,
+        "text-offset": [
+          0,
+          0.8
+        ],
+        "text-allow-overlap": false
+      },
+      "paint": {
+        "text-color": "#554b3d"
+      }
+    },
+    {
+      "id": "mountain-mid-labels",
+      "type": "symbol",
+      "source": "basemap",
+      "source-layer": "mountain",
+      "filter": [
+        "all",
+        [
+          "in",
+          [
+            "get",
+            "class"
+          ],
+          [
+            "literal",
+            [
+              "peak",
+              "volcano"
+            ]
+          ]
+        ],
+        [
+          ">=",
+          [
+            "coalesce",
+            [
+              "get",
+              "ele_m"
+            ],
+            0
+          ],
+          300
+        ],
+        [
+          "<",
+          [
+            "coalesce",
+            [
+              "get",
+              "ele_m"
+            ],
+            0
+          ],
+          600
+        ]
+      ],
+      "minzoom": 12,
+      "layout": {
+        "text-field": [
+          "coalesce",
+          [
+            "get",
+            "name_en"
+          ],
+          [
+            "get",
+            "name"
+          ],
+          [
+            "get",
+            "name_ga"
+          ]
+        ],
+        "text-font": [
+          "Open Sans Semibold"
+        ],
+        "text-size": 11,
+        "text-offset": [
+          0,
+          0.8
+        ],
+        "text-allow-overlap": false
+      },
+      "paint": {
+        "text-color": "#554b3d"
+      }
+    },
+    {
+      "id": "mountain-low-labels",
+      "type": "symbol",
+      "source": "basemap",
+      "source-layer": "mountain",
+      "filter": [
+        "all",
+        [
+          "in",
+          [
+            "get",
+            "class"
+          ],
+          [
+            "literal",
+            [
+              "peak",
+              "volcano"
+            ]
+          ]
+        ],
+        [
+          "<",
+          [
+            "coalesce",
+            [
+              "get",
+              "ele_m"
+            ],
+            0
+          ],
+          300
+        ]
+      ],
+      "minzoom": 13,
+      "layout": {
+        "text-field": [
+          "coalesce",
+          [
+            "get",
+            "name_en"
+          ],
+          [
+            "get",
+            "name"
+          ],
+          [
+            "get",
+            "name_ga"
+          ]
+        ],
+        "text-font": [
+          "Open Sans Semibold"
+        ],
+        "text-size": 11,
+        "text-offset": [
+          0,
+          0.8
+        ],
+        "text-allow-overlap": false
+      },
+      "paint": {
+        "text-color": "#554b3d"
+      }
+    },
+    {
+      "id": "saddle-labels",
+      "type": "symbol",
+      "source": "basemap",
+      "source-layer": "mountain",
+      "filter": [
+        "==",
+        [
+          "get",
+          "class"
+        ],
         "saddle"
       ],
-      "minzoom": 9,
+      "minzoom": 14,
       "layout": {
         "text-field": [
           "coalesce",
