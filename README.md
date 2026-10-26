@@ -54,3 +54,5 @@ This remains development cartography. Independent land-cover completeness, direc
 Tests cover source classification and elevations, restored layer emission, tile integrity and row addressing, deterministic packaging, resource references, font/pattern availability, copied asset checksums and contour configuration. Reports distinguish build checks from independent geographic accuracy.
 
 Mountain names now start two zoom levels later: 600 m+ at zoom 11, 300–599 m at zoom 12, lower or unrecorded heights at zoom 13, and saddles at zoom 14. These presentation rules use retained numeric OSM elevations and do not require rebuilding geometry.
+
+Settlement names start at zoom 6 for cities, 8 for towns, 9 for villages and other localities, and 10 for hamlets. Townlands remain at zoom 12.
