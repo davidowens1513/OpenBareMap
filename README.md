@@ -62,3 +62,5 @@ A further two-zoom delay applies to all text labels except townlands: cities 8, 
 The last global text delay is reduced from two zooms to one: cities 7, towns 9, villages/localities 10, hamlets 11; mountains 600 m+ 12, 300–599 m 13, lower/unknown 14, saddles 15. All other text from that adjustment also moves one zoom earlier. Townlands remain at 12.
 
 Grid and local boundaries use stronger strokes: 10 km grid at 72% opacity from zoom 10; 1 km grid at 60% from zoom 12; local boundaries at 80% from zoom 10. The legend uses the same paint values.
+
+Road visibility: major roads (motorway, trunk, primary and secondary) start at zoom 7. Minor/service roads, tracks and paths start at zoom 11. Walking and cycling route overlays, including national/international routes, also start at zoom 11. Matching casing layers use the same thresholds.

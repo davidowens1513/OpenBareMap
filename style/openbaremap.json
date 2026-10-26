@@ -768,7 +768,8 @@
           4.8
         ],
         "line-opacity": 1
-      }
+      },
+      "minzoom": 7
     },
     {
       "id": "roads-major",
@@ -815,7 +816,8 @@
           14,
           3.6
         ]
-      }
+      },
+      "minzoom": 7
     },
     {
       "id": "roads-casing-minor",
@@ -852,7 +854,8 @@
           14,
           2.8
         ]
-      }
+      },
+      "minzoom": 11
     },
     {
       "id": "roads-minor",
@@ -904,7 +907,8 @@
           1,
           0
         ]
-      }
+      },
+      "minzoom": 11
     },
     {
       "id": "paths",
@@ -940,7 +944,8 @@
           1.2,
           1.2
         ]
-      }
+      },
+      "minzoom": 11
     },
     {
       "id": "tracks",
@@ -976,7 +981,8 @@
           2,
           1.2
         ]
-      }
+      },
+      "minzoom": 11
     },
     {
       "id": "railways",
@@ -1058,7 +1064,8 @@
           2.4
         ],
         "line-opacity": 0.75
-      }
+      },
+      "minzoom": 11
     },
     {
       "id": "hiking-routes",
@@ -1085,7 +1092,8 @@
           1
         ],
         "line-opacity": 0.8
-      }
+      },
+      "minzoom": 11
     },
     {
       "id": "road-labels",
