@@ -33,7 +33,7 @@ function updateLineLegend() {
     const line = document.createElementNS('http://www.w3.org/2000/svg','line');
     for (const [key,value] of Object.entries({x1:0,x2:32,y1:6,y2:6,stroke:legendValue(map.getPaintProperty(id,'line-color'),svg.dataset.mapClass),'stroke-width':width,'stroke-opacity':legendLineWidth(map.getPaintProperty(id,'line-opacity') ?? 1,map.getZoom()),'stroke-linecap':map.getLayoutProperty(id,'line-cap') ?? 'butt'})) line.setAttribute(key,String(value));
     if (dash) line.setAttribute('stroke-dasharray',dash.map(length => length*width).join(' '));
-    const casingId = id === 'roads-major' ? 'roads-casing-major' : ['roads-minor','paths','tracks'].includes(id) ? 'roads-casing-minor' : null;
+    const casingId = id === 'roads-major' ? 'roads-casing-major' : id === 'roads-minor' ? 'roads-casing-minor' : null;
     if (casingId) {
       const casing=line.cloneNode();casing.removeAttribute('stroke-dasharray');
       casing.setAttribute('stroke',map.getPaintProperty(casingId,'line-color'));

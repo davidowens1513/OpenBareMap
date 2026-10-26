@@ -64,3 +64,5 @@ The last global text delay is reduced from two zooms to one: cities 7, towns 9, 
 Grid and local boundaries use stronger strokes: 10 km grid at 72% opacity from zoom 10; 1 km grid at 60% from zoom 12; local boundaries at 80% from zoom 10. The legend uses the same paint values.
 
 Road visibility: major roads (motorway, trunk, primary and secondary) start at zoom 7. Minor/service roads, tracks and paths start at zoom 11. Walking and cycling route overlays, including national/international routes, also start at zoom 11. Matching casing layers use the same thresholds.
+
+Tracks and paths render as dashes only, without the shared continuous minor-road casing. Their legend samples likewise omit the casing.
