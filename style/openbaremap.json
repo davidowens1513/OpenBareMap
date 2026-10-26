@@ -114773,6 +114773,138 @@
       }
     },
     {
+      "id": "summit-dots-natural-labels",
+      "type": "circle",
+      "source": "basemap",
+      "source-layer": "mountain",
+      "minzoom": 12,
+      "filter": [
+        "all",
+        [
+          "in",
+          [
+            "get",
+            "class"
+          ],
+          [
+            "literal",
+            [
+              "peak",
+              "volcano"
+            ]
+          ]
+        ],
+        [
+          ">=",
+          [
+            "coalesce",
+            [
+              "get",
+              "ele_m"
+            ],
+            0
+          ],
+          600
+        ]
+      ],
+      "paint": {
+        "circle-radius": 1.8,
+        "circle-color": "#554b3d"
+      }
+    },
+    {
+      "id": "summit-dots-mountain-mid-labels",
+      "type": "circle",
+      "source": "basemap",
+      "source-layer": "mountain",
+      "minzoom": 13,
+      "filter": [
+        "all",
+        [
+          "in",
+          [
+            "get",
+            "class"
+          ],
+          [
+            "literal",
+            [
+              "peak",
+              "volcano"
+            ]
+          ]
+        ],
+        [
+          ">=",
+          [
+            "coalesce",
+            [
+              "get",
+              "ele_m"
+            ],
+            0
+          ],
+          300
+        ],
+        [
+          "<",
+          [
+            "coalesce",
+            [
+              "get",
+              "ele_m"
+            ],
+            0
+          ],
+          600
+        ]
+      ],
+      "paint": {
+        "circle-radius": 1.8,
+        "circle-color": "#554b3d"
+      }
+    },
+    {
+      "id": "summit-dots-mountain-low-labels",
+      "type": "circle",
+      "source": "basemap",
+      "source-layer": "mountain",
+      "minzoom": 14,
+      "filter": [
+        "all",
+        [
+          "in",
+          [
+            "get",
+            "class"
+          ],
+          [
+            "literal",
+            [
+              "peak",
+              "volcano"
+            ]
+          ]
+        ],
+        [
+          "<",
+          [
+            "coalesce",
+            [
+              "get",
+              "ele_m"
+            ],
+            0
+          ],
+          300
+        ]
+      ],
+      "paint": {
+        "circle-radius": 1.8,
+        "circle-color": "#554b3d"
+      }
+    },
+    {
       "id": "natural-labels",
       "type": "symbol",
       "source": "basemap",
