@@ -56,3 +56,5 @@ Tests cover source classification and elevations, restored layer emission, tile 
 Mountain names now start two zoom levels later: 600 m+ at zoom 11, 300–599 m at zoom 12, lower or unrecorded heights at zoom 13, and saddles at zoom 14. These presentation rules use retained numeric OSM elevations and do not require rebuilding geometry.
 
 Settlement names start at zoom 6 for cities, 8 for towns, 9 for villages and other localities, and 10 for hamlets. Townlands remain at zoom 12.
+
+A further two-zoom delay applies to all text labels except townlands: cities 8, towns 10, villages/localities 11, hamlets 12; mountains 600 m+ 13, 300–599 m 14, lower/unknown 15, saddles 16. Townlands stay at 12. Road, water, island, amenity, grid and contour text also starts two zooms later than before this adjustment. Geometry and parking symbols keep their previous visibility thresholds; parking text is a separate layer.
