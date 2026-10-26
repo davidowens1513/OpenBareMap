@@ -68,3 +68,5 @@ Road visibility: major roads (motorway, trunk, primary and secondary) start at z
 Tracks and paths render as dashes only, without the shared continuous minor-road casing. Their legend samples likewise omit the casing.
 
 Footways, bridleways, cycleways and steps are drawn from zoom 11 as dash-only lines. Footways share the green path pattern; bridleways use longer olive-brown dashes, cycleways blue dashes, and steps short green marks. Pedestrian streets remain unstyled. Each has a style-derived legend entry.
+
+All text sizes except townlands are reduced by 1.5 screen pixels, including zoom-dependent size outputs; zoom stops and visibility thresholds are unchanged. Townlands remain 11.9 pixels.
