@@ -642,7 +642,7 @@
       "type": "symbol",
       "source": "topography",
       "source-layer": "contour",
-      "minzoom": 11,
+      "minzoom": 10,
       "filter": [
         "==",
         [
@@ -687,7 +687,7 @@
       "type": "symbol",
       "source": "topography",
       "source-layer": "contour",
-      "minzoom": 14,
+      "minzoom": 13,
       "filter": [
         "!=",
         [
@@ -1092,7 +1092,7 @@
       "type": "symbol",
       "source": "basemap",
       "source-layer": "transportation_name",
-      "minzoom": 12,
+      "minzoom": 11,
       "layout": {
         "symbol-placement": "line",
         "text-field": [
@@ -1175,7 +1175,7 @@
       "type": "symbol",
       "source": "basemap",
       "source-layer": "island_name",
-      "minzoom": 12,
+      "minzoom": 11,
       "filter": [
         "!in",
         "name",
@@ -1327,7 +1327,7 @@
       "type": "symbol",
       "source": "irish-grid",
       "source-layer": "grid_10km",
-      "minzoom": 14,
+      "minzoom": 13,
       "layout": {
         "symbol-placement": "line",
         "symbol-spacing": 420,
@@ -1364,7 +1364,7 @@
       "type": "symbol",
       "source": "basemap",
       "source-layer": "water_name",
-      "minzoom": 14,
+      "minzoom": 13,
       "layout": {
         "text-field": [
           "coalesce",
@@ -1425,7 +1425,7 @@
           600
         ]
       ],
-      "minzoom": 13,
+      "minzoom": 12,
       "layout": {
         "text-field": [
           "coalesce",
@@ -1502,7 +1502,7 @@
           600
         ]
       ],
-      "minzoom": 14,
+      "minzoom": 13,
       "layout": {
         "text-field": [
           "coalesce",
@@ -1567,7 +1567,7 @@
           300
         ]
       ],
-      "minzoom": 15,
+      "minzoom": 14,
       "layout": {
         "text-field": [
           "coalesce",
@@ -1611,7 +1611,7 @@
         ],
         "saddle"
       ],
-      "minzoom": 16,
+      "minzoom": 15,
       "layout": {
         "text-field": [
           "coalesce",
@@ -1740,7 +1740,7 @@
       "type": "symbol",
       "source": "basemap",
       "source-layer": "hiking_poi",
-      "minzoom": 14,
+      "minzoom": 13,
       "filter": [
         "all",
         [
@@ -1807,7 +1807,7 @@
       "type": "symbol",
       "source": "basemap",
       "source-layer": "hiking_poi",
-      "minzoom": 13,
+      "minzoom": 12,
       "filter": [
         "all",
         [
@@ -1874,7 +1874,7 @@
       "type": "symbol",
       "source": "basemap",
       "source-layer": "hiking_poi",
-      "minzoom": 13,
+      "minzoom": 12,
       "filter": [
         "all",
         [
@@ -1947,7 +1947,7 @@
       "type": "symbol",
       "source": "basemap",
       "source-layer": "hiking_poi",
-      "minzoom": 16,
+      "minzoom": 15,
       "filter": [
         "all",
         [
@@ -2021,7 +2021,7 @@
       "type": "symbol",
       "source": "basemap",
       "source-layer": "hiking_poi",
-      "minzoom": 13,
+      "minzoom": 12,
       "filter": [
         "all",
         [
@@ -2061,7 +2061,7 @@
       "type": "symbol",
       "source": "basemap",
       "source-layer": "station",
-      "minzoom": 12,
+      "minzoom": 11,
       "layout": {
         "text-field": [
           "coalesce",
@@ -2093,7 +2093,7 @@
       "type": "symbol",
       "source": "basemap",
       "source-layer": "place",
-      "minzoom": 8,
+      "minzoom": 7,
       "filter": [
         "all",
         [
@@ -2141,7 +2141,7 @@
       "type": "symbol",
       "source": "basemap",
       "source-layer": "place",
-      "minzoom": 10,
+      "minzoom": 9,
       "filter": [
         "all",
         [
@@ -2189,7 +2189,7 @@
       "type": "symbol",
       "source": "basemap",
       "source-layer": "place",
-      "minzoom": 11,
+      "minzoom": 10,
       "filter": [
         "all",
         [
@@ -2242,7 +2242,7 @@
       "type": "symbol",
       "source": "basemap",
       "source-layer": "place",
-      "minzoom": 11,
+      "minzoom": 10,
       "filter": [
         "==",
         "class",
@@ -2279,7 +2279,7 @@
       "type": "symbol",
       "source": "basemap",
       "source-layer": "place",
-      "minzoom": 12,
+      "minzoom": 11,
       "filter": [
         "==",
         "class",
@@ -2316,7 +2316,7 @@
       "type": "symbol",
       "source": "basemap",
       "source-layer": "poi",
-      "minzoom": 14,
+      "minzoom": 13,
       "layout": {
         "text-field": [
           "coalesce",
@@ -2393,7 +2393,7 @@
       "type": "symbol",
       "source": "basemap",
       "source-layer": "hiking_poi",
-      "minzoom": 15,
+      "minzoom": 14,
       "filter": [
         "==",
         [
@@ -2450,7 +2450,7 @@
       "type": "symbol",
       "source": "basemap",
       "source-layer": "hiking_poi",
-      "minzoom": 16,
+      "minzoom": 15,
       "filter": [
         "==",
         [

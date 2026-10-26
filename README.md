@@ -58,3 +58,5 @@ Mountain names now start two zoom levels later: 600 m+ at zoom 11, 300–599 m a
 Settlement names start at zoom 6 for cities, 8 for towns, 9 for villages and other localities, and 10 for hamlets. Townlands remain at zoom 12.
 
 A further two-zoom delay applies to all text labels except townlands: cities 8, towns 10, villages/localities 11, hamlets 12; mountains 600 m+ 13, 300–599 m 14, lower/unknown 15, saddles 16. Townlands stay at 12. Road, water, island, amenity, grid and contour text also starts two zooms later than before this adjustment. Geometry and parking symbols keep their previous visibility thresholds; parking text is a separate layer.
+
+The last global text delay is reduced from two zooms to one: cities 7, towns 9, villages/localities 10, hamlets 11; mountains 600 m+ 12, 300–599 m 13, lower/unknown 14, saddles 15. All other text from that adjustment also moves one zoom earlier. Townlands remain at 12.
