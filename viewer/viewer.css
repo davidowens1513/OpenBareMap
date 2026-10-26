@@ -3,3 +3,6 @@
 .legend img{width:17px;height:17px}
 
 .legend-line{display:block;flex:0 0 32px;overflow:visible}
+
+aside{max-height:calc(100dvh - 48px);overflow-y:auto}
+@media(max-width:600px){aside{max-height:calc(100dvh - 24px)}}

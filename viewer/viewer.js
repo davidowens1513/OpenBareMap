@@ -38,3 +38,23 @@ function updateLineLegend() {
 }
 map.on('load',updateLineLegend);
 map.on('zoomend',updateLineLegend);
+
+// Resolve the current categorical land-cover colours instead of copying hex codes.
+function updateFillLegend() {
+  for (const swatch of document.querySelectorAll('[data-map-fill]')) {
+    const id = swatch.dataset.mapFill;
+    let colour = map.getPaintProperty(id, 'fill-color');
+    if (Array.isArray(colour) && colour[0] === 'match') {
+      const category = swatch.dataset.mapClass;
+      let selected = colour[colour.length - 1];
+      for (let i = 2; i < colour.length - 1; i += 2) {
+        if (colour[i] === category) { selected = colour[i + 1]; break; }
+      }
+      colour = selected;
+    }
+    swatch.style.backgroundColor = colour;
+    swatch.style.opacity = map.getPaintProperty(id, 'fill-opacity') ?? 1;
+  }
+}
+map.on('load', updateFillLegend);
+map.on('styledata', () => { if (map.isStyleLoaded()) updateFillLegend(); });
