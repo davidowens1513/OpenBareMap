@@ -100,4 +100,6 @@ OpenStreetMap-derived data is subject to the [Open Database Licence](https://ope
 
 Source completeness, geographic accuracy and device readability require assessment independently of software tests. Cliff markings are not certified as indicating the downhill side. Source access tags do not establish a right of access or route safety. Townland, grid and font-generation recipes have incomplete provenance. Garmin inputs and tools are pinned, but the compiled map is not byte-for-byte reproducible across repeated builds.
 
+[Map versioning and platform adaptations](docs/versioning-and-platforms.md) explains what is pinned, how each application uses the map, and the proposed release structure.
+
 [Development history and build workflow](docs/development-history.md) describes the project's development, packaging approach and maintenance commands. [Architecture](docs/architecture.md) describes the underlying map pipeline.
