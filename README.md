@@ -1,11 +1,13 @@
-# OpenBareMap
+# OpenBareMap 2.0
 
 OpenBareMap is an offline topographic map of the whole island of Ireland, including Northern Ireland and offshore islands. It provides map resources for Garmin handhelds, Android and iOS, plus a browser viewer for inspecting the map on a computer.
 
+The map release is **2.0.0**, identified by Git tag `v2.0.0` and the [release manifest](releases/2.0.0/manifest.json). Platform packages record their source revision and resource checksums.
+
 ## The map
 
-- **Terrain:** 10-metre contours with progressive detail, hillshade, summit and saddle names, summit dots and cliff markings.
-- **Land cover:** woodland, farmland, grass, heath, scrub, wetlands, textured bog, peat workings, rock, scree, sand and beaches.
+- **Terrain:** Gently smoothed 10-metre contours with fine overview strokes for 100 m and 50 m lines, hillshade, summit and saddle names, summit dots and fine cliff markings.
+- **Land cover:** smoothed boundaries for woodland, farmland, grass, heath, scrub, wetlands, textured bog, peat workings, rock, scree, sand and beaches.
 - **Transport:** roads and connecting links, tracks, paths, footways, bridleways, cycleways, steps, walking and cycling routes, railways and ferries.
 - **Places and facilities:** settlements, townlands, islands, water names, outdoor facilities and points of interest. Parking uses a white P on blue; outdoor facilities use dots and text.
 - **Offline resources:** local map databases, styles, symbols, fonts, legends and attribution notices. An internet connection is not required to display the installed map.
@@ -18,12 +20,12 @@ The Garmin edition is a **display-only map**, with no turn-by-turn routing. It i
 
 | Resource | Location |
 | --- | --- |
-| Installable map, approximately 250 MB | [OpenBareMap-Ireland.img](garmin/dist/OpenBareMap-Ireland.img) |
+| Installable map, see release manifest for file size | [OpenBareMap-Ireland.img](garmin/dist/OpenBareMap-Ireland.img) |
 | Installation instructions | [INSTALL.txt](garmin/dist/INSTALL.txt) |
 | Legend | [Montana-750i-Legend.png](garmin/dist/Montana-750i-Legend.png) |
 | Build, integration and validation details | [Garmin guide](garmin/README.md) |
 
-The map is installed on a **Montana 750i** and a **GPSMAP 67i**. Installation copies are checksum-verified. Montana display checks include mountain names and parking; the 67i requires further visual and performance assessment.
+Target devices are the **Montana 750i** and **GPSMAP 67i**. The same IMG serves both devices. Version 2.0 has binary-content checks; device rendering and performance require acceptance on each model.
 
 Install the `.img` in the device's `Garmin` folder or on a supported memory card, and enable **OpenBareMap Ireland** in the device's map controls. The 67i uses MTP for USB file transfers on macOS. Point-label text must be enabled for mountain names. Disable overlapping detailed maps and satellite imagery when viewing OpenBareMap on its own.
 
@@ -39,7 +41,7 @@ The Android edition uses **MapLibre Native** and includes a reference app and a 
 | --- | --- |
 | Debug-signed reference app | [OpenBareMap-debug.apk](android/dist/OpenBareMap-debug.apk) |
 | Reusable loader library | [openbaremap-loader-release.aar](android/dist/openbaremap-loader-release.aar) |
-| Offline map resources, approximately 2 GB | [android/package/OpenBareMap](android/package/OpenBareMap/) |
+| Offline map resources, full-island package | [android/package/OpenBareMap](android/package/OpenBareMap/) |
 | Setup, building and integration | [Android guide](android/README.md) |
 
 Install the APK, open the app and choose **Import map** to select the map ZIP. The map, legend and credits are available offline after import. The resource package is separate from the APK; allow several GB of storage for the archive and installed map.
@@ -58,7 +60,7 @@ The iOS edition is a **resource bundle and Swift loader for MapLibre Native**, i
 
 | Resource | Location |
 | --- | --- |
-| Offline resource bundle, approximately 2 GB | [OpenBareMap.bundle](ios/package/OpenBareMap.bundle/) |
+| Offline resource bundle, full-island package | [OpenBareMap.bundle](ios/package/OpenBareMap.bundle/) |
 | Swift loader | [OpenBareMapResources.swift](ios/OpenBareMapResources.swift) |
 | Xcode integration example | [INTEGRATION.txt](ios/INTEGRATION.txt) |
 | Packaging and validation | [iOS guide](ios/README.md) |
@@ -98,7 +100,7 @@ The OpenStreetMap extract covers Ireland and Northern Ireland and is dated **24 
 
 OpenStreetMap-derived data is subject to the [Open Database Licence](https://opendatacommons.org/licenses/odbl/1-0/), with [OpenStreetMap attribution](https://www.openstreetmap.org/copyright). Packages include source, font and other applicable notices; consuming applications must make those notices available to users.
 
-Source completeness, geographic accuracy and device readability require assessment independently of software tests. Cliff markings are not certified as indicating the downhill side. Source access tags do not establish a right of access or route safety. Townland, grid and font-generation recipes have incomplete provenance. Garmin inputs and tools are pinned, but the compiled map is not byte-for-byte reproducible across repeated builds.
+Source completeness, geographic accuracy and device readability require assessment independently of software tests. Cliff markings are not certified as indicating the downhill side. Source access tags do not establish a right of access or route safety. Townland, grid and font-generation recipes have incomplete provenance. Release artifacts are pinned by checksum. Exact byte-for-byte recompilation is not guaranteed; Garmin compilation has known binary differences between repeated builds.
 
 [Map versioning and platform adaptations](docs/versioning-and-platforms.md) explains what is pinned, how each application uses the map, and the proposed release structure.
 

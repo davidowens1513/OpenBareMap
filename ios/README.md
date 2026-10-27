@@ -1,8 +1,8 @@
-# iOS resource bundle
+# OpenBareMap 2.0 for iOS
 
 The current all-Ireland bundle is stored in this repository at `ios/package/OpenBareMap.bundle`. Add the complete `.bundle` as an Xcode resource and add `OpenBareMapResources.swift` to the app target. See `INTEGRATION.txt` for the MapLibre Native loading example and attribution requirements.
 
-The bundle includes the selected MBTiles, a dedicated zoom-capped coast archive, runtime style, townland points, Open Sans glyphs, sprites, app legend, provenance, checksums and `Info.plist`. It does not include the original large source snapshots or a renderer binary. Those source snapshots remain in the main repository via LFS. The bundle is roughly 2 GB; choose distribution/storage policy in the consuming app.
+The bundle includes the selected MBTiles, a dedicated zoom-capped coast archive, runtime style, townland points, Open Sans glyphs, sprites, app legend, provenance, checksums and `Info.plist`. It does not include the original large source snapshots or a renderer binary. Those source snapshots remain in the main repository via LFS. The bundle is a full-island offline dataset; choose distribution/storage policy in the consuming app.
 
 Build into a new directory (existing outputs are never overwritten):
 

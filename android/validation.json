@@ -6,7 +6,7 @@
     "failures": "0",
     "errors": "0"
   },
-  "sharedMapTests": 18,
+  "sharedMapTests": 25,
   "realFullIrelandPackageTested": true,
   "deviceRenderingTested": false,
   "reason": "No connected Android device or configured emulator",
@@ -19,8 +19,8 @@
   "artifacts": [
     {
       "path": "android/dist/OpenBareMap-debug.apk",
-      "bytes": 44697898,
-      "sha256": "78f3a67b3d7b0c91f225071a5de8988f957e9041fba4c5b7377f6f6d02196a20"
+      "bytes": 44671535,
+      "sha256": "7431c2593fee62f326aaf0fe800714717489ff905bb33a4dfb92040e3eec79da"
     },
     {
       "path": "android/dist/openbaremap-loader-release.aar",
@@ -30,5 +30,6 @@
   ],
   "locationPermissionsDeclared": false,
   "packageZipReexportDeterministic": true,
-  "sharedCoastMatchesIOS": true
+  "sharedCoastMatchesIOS": true,
+  "mapVersion": "2.0.0"
 }

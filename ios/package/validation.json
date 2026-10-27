@@ -5,13 +5,13 @@
       "integrity": "ok",
       "minzoom": 4,
       "maxzoom": 14,
-      "tiles": 99549
+      "tiles": 99548
     },
     "topography": {
       "integrity": "ok",
       "minzoom": 4,
       "maxzoom": 14,
-      "tiles": 219608
+      "tiles": 219603
     },
     "hillshade": {
       "integrity": "ok",
@@ -36,9 +36,6 @@
   "fontRanges": true,
   "spriteReferences": true,
   "nativeDeviceRenderTested": false,
-  "totalBytes": 2016662741,
-  "fileCount": 43,
-  "swiftLoaderMacOSExecution": "passed: real Bundle lookup and runtime URL resolution",
-  "swiftLoaderIOSSimulatorTypecheck": "passed: arm64 iOS 15 target, Xcode iPhoneSimulator SDK",
-  "checksumEntriesVerified": 42
+  "totalBytes": 2599257720,
+  "fileCount": 43
 }

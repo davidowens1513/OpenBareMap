@@ -1,0 +1,212 @@
+{
+  "format": "openbaremap-release-v1",
+  "mapVersion": "2.0.0",
+  "releaseDate": "2026-10-27",
+  "gitTag": "v2.0.0",
+  "implementationCommit": "e562c5656d34e24615339220d1469299e8173222",
+  "coverage": "Whole island of Ireland, including Northern Ireland and offshore islands",
+  "osmSnapshot": "2026-10-24",
+  "contourIntervalMetres": 10,
+  "activeMap": {
+    "format": "openbaremap-development-viewer-v1",
+    "datasets": {
+      "basemap": {
+        "path": "build/cartography-2.0/basemap.mbtiles",
+        "sha256": "cc35935af487e144a23391f0e53ec6b0e1a638a2438e98157e3f1e6fcbc7d600"
+      },
+      "topography": {
+        "path": "build/cartography-2.0/topography.mbtiles",
+        "sha256": "fc79c9e20a5a440c6533318c3f3837edb5246df8225417d50e3b1ca67c2bf3c0"
+      },
+      "hillshade": {
+        "path": "build/hillshade-a/hillshade.mbtiles",
+        "sha256": "55d199c8ca56463286944c9ad2ef39c7ed3b844ebee151dafb11908ade2ac2e0"
+      },
+      "grid": {
+        "path": "assets/irish-grid.mbtiles",
+        "sha256": "449f6302f12b1d606de3e1d0467346e394e25c6c4c0b2b901f6a070873f58972"
+      }
+    },
+    "mapVersion": "2.0.0"
+  },
+  "sourceRecords": [
+    {
+      "path": "sources.lock.json",
+      "bytes": 318,
+      "sha256": "fc3807f33d665938a76e34f6d70674bd83dd93d7aae405a201378dae93bb5227"
+    },
+    {
+      "path": "coast-sources.lock.json",
+      "bytes": 526,
+      "sha256": "2f753ac9c9f3d036776b871109406d37aa668884795f88e4668a12d7430a80f9"
+    },
+    {
+      "path": "terrain-sources.lock.json",
+      "bytes": 7955,
+      "sha256": "7336551caeaa254c02e7a2512278de2a390582fb6fcf520f61ea02a9f5f46798"
+    },
+    {
+      "path": "legacy-assets.lock.json",
+      "bytes": 3483,
+      "sha256": "2d734a0db8bb8e49e72cf55e4a779e33b5961d05953d22b6a57bf6082f44c2ff"
+    },
+    {
+      "path": "releases/2.0.0/geometry-report.json",
+      "bytes": 1981,
+      "sha256": "648acde57f62ba9b57bc82cd5ebdbeb92a745b1fe8da2e8d050bacb430ea077a"
+    },
+    {
+      "path": "releases/2.0.0/vector-build-report.json",
+      "bytes": 1878,
+      "sha256": "29790d62fa276ba6e3298eb143644c41e070368c912cacd158b4e92c2d91c737"
+    }
+  ],
+  "profiles": {
+    "maplibre": {
+      "path": "style/openbaremap.json",
+      "bytes": 2485109,
+      "sha256": "218af2e21e2eb7b8233fc80365f0f2f6562260848f3f3919d91fe75f096d68d0"
+    },
+    "geometry": {
+      "path": "config/cartography-2.0.json",
+      "bytes": 477,
+      "sha256": "7108de50e09d1f33e0c9395da0853bb8f96745f8a4a27283dc9e9f479f4c9bfe"
+    },
+    "garmin": {
+      "path": "garmin/config.json",
+      "bytes": 827,
+      "sha256": "2ba2cb191cea040013d23bd2df91b19d5f28e63ec9a40de4df63970e1a169a5c"
+    },
+    "garminStyle": {
+      "OBM4831.txt": "58e8edf1a2631a3cc5cabbe00d7183d0fee00b46b4c4f8c0fe99b3618d714069",
+      "info": "e4905b041ce4173b10757ae97a6ed2180c68980e0b6d626837771982f35d75e5",
+      "lines": "c0f09bd1a0ad4f7800a805f5f693e1f25f7df6420df2f333c159e6820551f576",
+      "options": "d4b26b3eedcdf3203944084dedc6f27461dda0e05f72d353b97e4829839f4b77",
+      "points": "5693e648a029c4b57b1b2a994a3000ccc41e0b0231ff5a7c093635f4d4bb526b",
+      "polygons": "f353afa46616b136b398acf4752a7efa2a0dd9484b12d0624d35fb4a767f021a",
+      "relations": "288011d18d342ba76672a79d0d19d2fa16f000fb6a63b28a829f595329bd2bb2",
+      "version": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    "garminToolchain": {
+      "path": "garmin/toolchain.lock.json",
+      "bytes": 767,
+      "sha256": "3102365e2f17af3f70b80f963f8712b3ed00bc34abfff2cf6ce9bb7196d9912b"
+    }
+  },
+  "platforms": {
+    "ios": {
+      "resources": {
+        "path": "ios/package/OpenBareMap.bundle",
+        "fileCount": 43,
+        "totalBytes": 2599257720,
+        "manifest": {
+          "path": "ios/package/OpenBareMap.bundle/manifest.json",
+          "bytes": 1967,
+          "sha256": "ce288824bda80ff17d25620cf55ef3f4ac921e76180a9ab508d0ce7cead4c620"
+        },
+        "resourceChecksumList": {
+          "path": "ios/package/OpenBareMap.bundle/SHA256SUMS.txt",
+          "bytes": 3918,
+          "sha256": "ca3207f9441663c226e4eb6d14b8ad6260fb7c88303fe996a8da5ddbe7ac8b27"
+        }
+      },
+      "loader": {
+        "path": "ios/OpenBareMapResources.swift",
+        "bytes": 2936,
+        "sha256": "f606aa67c147ebeab45df6a44257306159b3517a9bd029f153d63a8feb104898"
+      },
+      "validation": {
+        "path": "ios/package/validation.json",
+        "bytes": 769,
+        "sha256": "9c871172cd84f3b4526d542e3e5ec3ef0ca1c43852e556ab2ecd2ba46ddc4713"
+      }
+    },
+    "android": {
+      "resources": {
+        "path": "android/package/OpenBareMap",
+        "fileCount": 39,
+        "totalBytes": 2599238193,
+        "manifest": {
+          "path": "android/package/OpenBareMap/manifest.json",
+          "bytes": 1561,
+          "sha256": "83905ae15e1720feb193c0d302b40b4cccba276d43770ac1e24280967954eb5d"
+        },
+        "resourceChecksumList": {
+          "path": "android/package/OpenBareMap/SHA256SUMS.txt",
+          "bytes": 3571,
+          "sha256": "1de5c7214bee896e32f87230805fb8fb92fc800610ce77ee9cc47930547b8470"
+        }
+      },
+      "referenceApp": {
+        "path": "android/dist/OpenBareMap-debug.apk",
+        "bytes": 44671535,
+        "sha256": "7431c2593fee62f326aaf0fe800714717489ff905bb33a4dfb92040e3eec79da"
+      },
+      "loaderLibrary": {
+        "path": "android/dist/openbaremap-loader-release.aar",
+        "bytes": 8470,
+        "sha256": "960cc23fcc74e2b0c5a25121c0444f66e133f792a7610ce5d9e3c71cbf602804"
+      },
+      "importArchive": {
+        "path": "android/package/OpenBareMap-Android.zip",
+        "bytes": 2599243525,
+        "sha256": "4e522d9958df90f45345f760e79f4a18c8d35b8a9882afc4f5b607a817ce4951",
+        "trackedInGit": false,
+        "restoreCommand": "python3 android/build_package.py --zip-only"
+      },
+      "validation": {
+        "path": "android/package/validation.json",
+        "bytes": 728,
+        "sha256": "5581e09f69e0a86a8e81e770ec2e1b41304c55071594dbc2c70a90977ad3b890"
+      }
+    },
+    "garmin": {
+      "targetDevices": [
+        "Montana 750i",
+        "GPSMAP 67i"
+      ],
+      "map": {
+        "path": "garmin/dist/OpenBareMap-Ireland.img",
+        "bytes": 277012480,
+        "sha256": "be621dfe5eb97f6a672cf398afa8cedc12692f7cc0685785696e56225b2090b4"
+      },
+      "validation": {
+        "path": "garmin/build-report.json",
+        "bytes": 15423,
+        "sha256": "c977184fbbb44c9d9cf9a8288ad33fcac48025d06b15e2dc60e881cda4a926b6"
+      },
+      "routing": false
+    }
+  },
+  "legends": {
+    "maplibre": {
+      "path": "app-legend/legend-manifest.json",
+      "bytes": 513,
+      "sha256": "2fe5a9f3e9a6a9b874a4b7ad0e114ad99ca96ed5b0d2b01e334140dba9a1a53d"
+    },
+    "garmin": {
+      "path": "garmin/dist/Montana-750i-Legend.png",
+      "bytes": 246585,
+      "sha256": "f54697ccc3130b58b04e5c5f9300590c7347ead5dd1338ee2903bebfc7f6e13a"
+    }
+  },
+  "validation": {
+    "pythonTestsPassed": 25,
+    "androidLoaderTests": {
+      "tests": "5",
+      "failures": "0",
+      "errors": "0",
+      "skipped": "0"
+    },
+    "iosLoaderSmokeTest": true,
+    "mobileResourcesMatch": true,
+    "allMobileResourceChecksumsVerified": true,
+    "unrelatedVectorLayersUnchanged": true,
+    "browserVisualCheck": "Kerry/Carrauntoohil at zoom 12 and a wider overview",
+    "garminBinaryReadback": true,
+    "version2HardwareRenderingTested": false,
+    "version2InstalledOnHandhelds": false
+  },
+  "personalTrackOverlayIncluded": false,
+  "recompilationGuarantee": "Exact distributed artifacts and inputs are checksum-pinned. Byte-identical recompilation is not claimed."
+}

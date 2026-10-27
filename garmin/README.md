@@ -1,8 +1,8 @@
-# OpenBareMap for Garmin
+# OpenBareMap 2.0 for Garmin
 
-Display-only, full-island Ireland and Northern Ireland map. The deliverable is `dist/OpenBareMap-Ireland.img` (249.5 MB). Copy instructions are in `dist/INSTALL.txt`. The map is installed on a Montana 750i and GPSMAP 67i; installation copies are checksum-verified.
+Display-only, full-island Ireland and Northern Ireland map. The deliverable is `dist/OpenBareMap-Ireland.img` (size and checksum in the release manifest). Copy instructions are in `dist/INSTALL.txt`. Target devices are the Montana 750i and GPSMAP 67i. The version 2.0 IMG is common to both devices; device acceptance is separate from binary validation.
 
-Includes roads, tracks, footways, bridleways, cycleways, steps, walking/cycling overlays, water, land cover, buildings, boundaries, townlands, place names, summit dots, parking P symbols, bog texture and cliff teeth. Contours retain the shared 10 m geometry. Native DEM elevation data supports Garmin's terrain rendering. No routing network or turn instructions are generated.
+Includes roads, tracks, footways, bridleways, cycleways, steps, walking/cycling overlays, water, land cover, buildings, boundaries, townlands, place names, summit dots, parking P symbols, bog texture and cliff teeth. Contours use the shared, gently smoothed 10 m geometry. Land-cover polygons use the shared smoothed source snapshot. Native DEM elevation data supports Garmin's terrain rendering. No routing network or turn instructions are generated.
 
 ## Native cartography
 
@@ -11,12 +11,12 @@ Garmin renders its own fonts, labels and detail levels. This is a native adaptat
 | Detail level | Garmin resolution | Contours |
 | --- | --- | --- |
 | 0, closest | 24 | 10 m, 50 m and 100 m |
-| 1 | 22 | 50 m and 100 m |
-| 2 | 20 | 100 m |
+| 1 | 22 | Fine 50 m overview strokes and 100 m |
+| 2 | 20 | Fine 100 m overview strokes |
 | 3 | 18 | None |
 | 4, overview | 16 | None |
 
-These are Garmin resolution bits, not web zoom numbers. Native contour elevation attributes use feet, as required by Garmin; set device elevation units to metres. The underlying spacing remains 10 m. Irish Grid lines are not exported in this version. Bridges and tunnels do not yet receive a distinct Garmin rendering. MapLibre raster hillshade, pixel text sizes and label spacing do not transfer directly.
+These are Garmin resolution bits, not web zoom numbers. Native close-detail contour elevation attributes use feet; set device elevation units to metres. Overview-only contour types have no labels. The underlying spacing remains 10 m. Irish Grid lines are not exported in this version. Bridges and tunnels do not yet receive a distinct Garmin rendering. MapLibre raster hillshade, pixel text sizes and label spacing do not transfer directly.
 
 ## Source and tool records
 
@@ -52,10 +52,10 @@ Use the platform classpath separator on Windows. The inspector requires embedded
 
 ## Validation and limitations
 
-Two complete compiles succeeded with no compiler exceptions or missing elevation files. Binary read-back verified 70 tiles, DEM, custom TYP, progressive contours and names including Carrauntoohil, Belfast and Dublin. Automated checks cover the map profile and deterministic TYP generation.
+The version 2.0 build report records the compiled tile inventory, DEM, custom TYP, progressive contours and names including Carrauntoohil, Belfast and Dublin. Automated checks cover the map profile, smoothing behaviour and deterministic TYP generation.
 
-The two compiles are not byte-for-byte identical, even after excluding creation timestamps: RGN payload sizes differ by 76 bytes and some encoded line instances differ. Source inputs, tools and style are pinned, but strict binary reproducibility remains unresolved. Both inspections passed. The full comparison is recorded rather than hidden.
+Strict binary recompilation reproducibility is unresolved. A repeated-build comparison of the preceding profile found a 76-byte RGN payload-size difference beyond creation timestamps. The release manifest pins the exact version 2.0 IMG bytes without claiming byte-identical recompilation.
 
-Montana 750i display checks include mountain names and parking. Keep Map Points text enabled and its zoom setting on Auto. GPSMAP 67i installation is verified by reading both installed map files back over MTP and comparing checksums. Comprehensive rendering, contour-unit and performance acceptance is separate from installation verification.
+Keep Map Points text enabled and its zoom setting on Auto. Version 2.0 hardware rendering, contour-unit and performance acceptance is required on both devices. Its binaries are not automatically installed when the repository is updated.
 
 On the GPSMAP 67i, installed detailed maps are managed under Setup > Map > Map Manager. Satellite imagery is controlled separately from the map page using MENU > Map Layers. Display appearance is under Setup > Display > Appearance > Mode (Day, Night or Auto). A personal-track overlay is a separate optional map layer and can be toggled independently of OpenBareMap.

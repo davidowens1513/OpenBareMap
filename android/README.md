@@ -1,4 +1,4 @@
-# OpenBareMap for Android
+# OpenBareMap 2.0 for Android
 
 MapLibre Native Android implementation, separated from the iOS integration. Shared map data and styling remain in the repository root. The reference app is for testing/integration, not a signed production release.
 
@@ -7,7 +7,7 @@ MapLibre Native Android implementation, separated from the iOS integration. Shar
 - `dist/OpenBareMap-debug.apk`: installable, debug-signed reference app. The map is imported separately.
 - `dist/openbaremap-loader-release.aar`: reusable Android library for installation, verification and local style resolution.
 - `package/OpenBareMap/`: complete full-Ireland runtime resource package, tracked in Git with LFS for large files.
-- `package/OpenBareMap-Android.zip`: local import archive, about 2 GB. The duplicate ZIP is generated and not tracked; regenerate it after cloning.
+- `package/OpenBareMap-Android.zip`: local import archive, a full-island dataset. The duplicate ZIP is generated and not tracked; regenerate it after cloning.
 
 Install the APK on a test device, transfer the ZIP to a location accessible through Android's document picker, launch OpenBareMap and tap **Import map**. Extraction and checksum verification run on a worker thread. The map, legend and credits then work offline. Import uses app-private storage without requesting broad storage or location access. Allow several GB of working storage for the archive and installed map. Previous installed map versions are retained; the reference app does not yet offer version management/removal.
 

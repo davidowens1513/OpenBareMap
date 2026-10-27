@@ -1,6 +1,6 @@
 {
   "version": 8,
-  "name": "OpenBareMap · 1.1 cartography with 10 m contours",
+  "name": "OpenBareMap 2.0",
   "sprite": "{bundle}/sprites/outdoors",
   "glyphs": "{bundle}/fonts/{fontstack}/{range}.pbf",
   "sources": {
@@ -355,9 +355,9 @@
             "zoom"
           ],
           11,
-          0.72,
+          0.55,
           14,
-          0.92
+          0.72
         ],
         "line-width": [
           "interpolate",
@@ -368,9 +368,9 @@
             "zoom"
           ],
           11,
-          0.8,
+          0.5,
           14,
-          1.4
+          0.85
         ]
       }
     },
@@ -398,9 +398,9 @@
             "zoom"
           ],
           11,
-          0.78,
+          0.58,
           14,
-          0.96
+          0.74
         ],
         "line-width": [
           "interpolate",
@@ -411,9 +411,9 @@
             "zoom"
           ],
           11,
-          7,
+          4.5,
           14,
-          10
+          6.5
         ],
         "line-pattern": "cliff-teeth"
       }
@@ -585,13 +585,99 @@
             "zoom"
           ],
           8,
-          0.45,
+          0.25,
           11,
-          0.75,
+          0.45,
           14,
-          1.15,
+          0.9,
           16,
-          1.5
+          1.25
+        ],
+        "line-opacity": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "zoom"
+          ],
+          8,
+          0.6,
+          11,
+          0.72,
+          14,
+          0.9
+        ]
+      }
+    },
+    {
+      "id": "contour-50m-lines",
+      "type": "line",
+      "source": "topography",
+      "source-layer": "contour",
+      "minzoom": 11,
+      "filter": [
+        "all",
+        [
+          "==",
+          [
+            "%",
+            [
+              "get",
+              "elevation"
+            ],
+            50
+          ],
+          0
+        ],
+        [
+          "!=",
+          [
+            "%",
+            [
+              "get",
+              "elevation"
+            ],
+            100
+          ],
+          0
+        ]
+      ],
+      "layout": {
+        "line-cap": "round",
+        "line-join": "round"
+      },
+      "paint": {
+        "line-color": "#9a8161",
+        "line-width": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "zoom"
+          ],
+          11,
+          0.18,
+          13,
+          0.35,
+          16,
+          0.7
+        ],
+        "line-opacity": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "zoom"
+          ],
+          11,
+          0.5,
+          13,
+          0.65,
+          16,
+          0.75
         ]
       }
     },
@@ -609,7 +695,7 @@
             "get",
             "elevation"
           ],
-          100
+          50
         ],
         0
       ],
@@ -116008,6 +116094,7 @@
   "metadata": {
     "version": "0.4.0",
     "cartography_origin": "OpenBareMap 1.1.0",
-    "contour_interval_metres": 10
+    "contour_interval_metres": 10,
+    "openbaremap:version": "2.0.0"
   }
 }

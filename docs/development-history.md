@@ -30,6 +30,16 @@ The map was installed on a Montana 750i and GPSMAP 67i, with transferred files r
 
 A separate local personal-track overlay contains 355 tracks selected from the user's 557-track MountainViews/Onzy archive. Tracks extending outside the shared Ireland extent were excluded as whole tracks. The transparent overlay preserves GPX segment breaks and displays purple lines and green start markers without names. The personal track files are separate from the published basemap; this documentation update does not publish those files.
 
+## Version 2.0 cartography and release
+
+Version 2.0 introduces a bounded source-geometry smoothing pass before tile clipping. Contours use a 4 m maximum corner cut and land-cover boundaries use 6 m. Open contour endpoints are retained. Land-cover candidates must pass GEOS validity and a 2% area-change limit; otherwise the source geometry is retained. The pass preserves the 10 m contour interval and feature attributes.
+
+The source pass contains 246,999 contour features and 476,073 land-cover features. Of the land-cover features, 447,217 pass the smoothing guard and 28,856 retain their original geometry. The vector build replaces only contour and land-cover layers, checking exact payload hashes for all other layers. Source snapshots, reports and the cross-platform release manifest are under `releases/2.0.0/`.
+
+The MapLibre style has a distinct 50 m contour class, fine overview contour strokes and reduced cliff line/teeth weight. Browser, app and Garmin legends reflect their respective styles. Garmin uses native overview-only contour types with light, single-pixel strokes; close-detail contour types retain native metric-display behaviour. All Garmin overview contour labels are suppressed to keep the wider views clear.
+
+The release includes refreshed iOS and Android resource packages, the Android reference APK and the Garmin IMG. The release manifest identifies the code revision, shared data/style hashes, platform profiles, artifact hashes and validation scope. Git tag `v2.0.0` identifies the complete release snapshot. The previous map inputs and package versions remain accessible through Git history; `releases/0.4.0/` records the earlier active-map selection and original contour source.
+
 ## Maintenance commands
 
 Run commands from the repository root unless a platform guide specifies otherwise. Git LFS must restore the actual large-file contents before validation or packaging.
@@ -49,7 +59,7 @@ python3 scripts/openbaremap.py build ireland-custom-b
 python3 scripts/openbaremap.py compare ireland-custom-a ireland-custom-b
 ```
 
-Build records capture input checksums, processor configuration and the Tilemaker binary. Terrain generation is implemented in `scripts/build_topography.py` and `scripts/build_hillshade.py`. Their source locks and reports retain the independent elevation provenance.
+Build records capture input checksums, processor configuration and the Tilemaker binary. Version 2.0 source preparation and tile assembly use `scripts/prepare_cartography_2.py` and `scripts/build_cartography_2.py`; the smoothing library is `scripts/smooth_geometry.py`. The source preparation requires Python with osmium and the recorded QGIS GEOS library. It verifies source checksums, and writes fresh output directories. Terrain generation is implemented in `scripts/build_topography.py` and `scripts/build_hillshade.py`. Their source locks and reports retain the independent elevation provenance.
 
 Transport drawing passes are generated from `config/transport-style.json`:
 

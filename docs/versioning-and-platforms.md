@@ -1,26 +1,26 @@
 # Map versioning and platform adaptations
 
-Status assessed **27 October 2026**. This note describes the current version controls and how each application uses the map. The release recommendations below are proposals, not an implemented release policy.
+OpenBareMap's map release is **2.0.0**, identified by Git tag **v2.0.0** and the [release manifest](../releases/2.0.0/manifest.json). The manifest pins the shared map selection, source/style records, platform profiles, package checksums and validation scope. Release identity and byte-for-byte recompilation are different guarantees.
 
 ## What is locked
 
-OpenBareMap has a pinned map snapshot, but no single formally locked release covering all platforms. Source and output checksums identify exact files; they do not by themselves guarantee that every build can be reproduced byte for byte or that every platform renders identically.
-
-| Component | Current control |
+| Component | Release control |
 | --- | --- |
 | OpenStreetMap data | Exact extract and checksum in [sources.lock.json](../sources.lock.json); snapshot dated 24 October 2026. |
 | Coastline and elevation inputs | Exact inputs in [coast-sources.lock.json](../coast-sources.lock.json) and [terrain-sources.lock.json](../terrain-sources.lock.json). |
-| Selected shared map databases | Four database paths and checksums in [active-map.json](../active-map.json). |
-| Shared MapLibre appearance | Git-versioned [style/openbaremap.json](../style/openbaremap.json), with fonts, sprites and asset records. |
-| iOS package | Version 0.4.0, source commit, source-style hash, resource checksums and inventory under [ios/package/OpenBareMap.bundle](../ios/package/OpenBareMap.bundle/). |
-| Android package | Version 0.4.0, source commit, source-style hash and resource checksums under [android/package/OpenBareMap](../android/package/OpenBareMap/). |
-| Garmin basemap | Checksum-pinned IMG, source/tool locks, style hashes and binary inspection in [garmin/build-report.json](../garmin/build-report.json). |
-| Cross-platform release | No release tag or single release manifest tying all platform deliverables to one map release. |
-| Personal-track overlay | Separate local package and build files; not committed or pushed at the date of this assessment. |
+| Smoothed geometry | Contour and land-cover snapshots and the [geometry report](../releases/2.0.0/geometry-report.json), with bounded smoothing and polygon validity/area guards. |
+| Selected shared map databases | Paths and checksums in [active-map.json](../active-map.json), also captured in the release manifest. |
+| Shared MapLibre appearance | [style/openbaremap.json](../style/openbaremap.json), with source hash and legend records. |
+| iOS package | Map version 2.0.0, code revision, source-style hash, resource checksums and inventory under [ios/package/OpenBareMap.bundle](../ios/package/OpenBareMap.bundle/). |
+| Android package | Map version 2.0.0, code revision, source-style hash and resource checksums under [android/package/OpenBareMap](../android/package/OpenBareMap/). |
+| Garmin basemap | Exact IMG checksum, source/tool locks, profile hashes and [binary inspection report](../garmin/build-report.json). |
+| Personal-track overlay | Independently maintained local map, outside the published basemap release. |
 
-The iOS and Android packages were checked against each other: all five packaged map-database hashes match, including the derived coast archive. Their styling layers are identical and match the current shared style. Their source commits differ because the packages were assembled at different repository commits; their recorded source-style hashes match.
+The release manifest refers to an implementation commit and hashes the files and package records that define the release. The release tag points to the complete committed snapshot, including the manifest and platform deliverables. A code revision recorded inside a package need not equal the final release commit, which also contains generated outputs and documentation.
 
-Garmin's distributed IMG is an identifiable, checksum-pinned artifact. Repeated compilation with the recorded inputs and style produces differences beyond creation timestamps, including a 76-byte difference in RGN payload sizes. Strict binary reproducibility is therefore unresolved. This is separate from being able to retain and verify the exact distributed file.
+The iOS and Android packages use matching map-database hashes and styling layers, verified during release validation. Retain their manifests and resource checksums alongside any distributed packages.
+
+An exact release artifact can be restored and verified by checksum without recompiling it. Strict binary recompilation is not guaranteed. Garmin has documented repeated-build differences beyond creation timestamps; the release pins its distributed bytes rather than claiming identical regenerated output. Portable toolchain and inherited resource-generation limitations remain documented in the platform guides.
 
 ## How the map varies by application
 
@@ -29,40 +29,31 @@ Garmin's distributed IMG is an identifiable, checksum-pinned artifact. Repeated 
 | Browser | Selected databases, MapLibre style, fonts, symbols and townland points. | A local server supplies resources to MapLibre GL JS. |
 | iOS | The same selected databases and shared MapLibre cartography. | A resource bundle and Swift loader resolve local URLs for MapLibre Native. |
 | Android | The same selected databases and shared MapLibre cartography. | A ZIP resource package and Kotlin loader install, verify and resolve local URLs for MapLibre Native. |
-| Garmin | Locked OSM and terrain sources, shared contour geometry and townland points. | Separate compilation into native Garmin geometry, elevation data, fonts, symbols, textures and detail levels. |
+| Garmin | Locked OSM and terrain sources, shared smoothed contour/land-cover geometry and townland points. | Separate compilation into native Garmin geometry, elevation data, fonts, symbols, textures and detail levels. |
 
 ### Browser, iOS and Android
 
-The MapLibre applications use the same intended cartography. The native package builders copy the selected databases and shared visual resources, create a zoom-capped coast archive, and adapt resource URLs and attribution fields. The application loaders resolve those URLs to local files.
+The MapLibre applications share intended cartography. Native package builders copy the selected databases and visual resources, create a zoom-capped coast archive, and adapt resource URLs and attribution fields. Application loaders resolve those URLs to local files. Label collision, text rendering, performance and other renderer/device behaviour can differ.
 
-Packaging and integration differ; label collision, text rendering, performance and other renderer/device behaviour can still differ. Sharing a style is not proof of identical pixels or device acceptance.
-
-Packages are snapshots. Editing the shared style or changing the selected databases does not update an existing iOS bundle or Android installation automatically. Each affected package must be assembled, validated and distributed again.
+Packages are snapshots. A shared-style or database change requires reassembly, validation and distribution of each affected package. Existing installations do not change automatically when the repository changes.
 
 ### Garmin
 
-Garmin has a separately maintained presentation under [garmin/style](../garmin/style/), [garmin/generate_typ.py](../garmin/generate_typ.py) and [garmin/config.json](../garmin/config.json). These define native colours, patterns, symbols, fonts, contour treatment and detail levels. They are not automatically derived from the MapLibre style.
+Garmin's presentation is maintained under [garmin/style](../garmin/style/), [garmin/generate_typ.py](../garmin/generate_typ.py) and [garmin/config.json](../garmin/config.json). These specify native colours, patterns, symbols, fonts, progressive contour types and detail levels. They are not automatically derived from the MapLibre style.
 
-A colour, text or visibility change to the MapLibre style therefore does not change the Garmin edition. A corresponding Garmin change requires an explicit style update and compilation. Garmin omits the Irish Grid and distinct bridge/tunnel presentation; native DEM terrain rendering replaces the MapLibre raster hillshade presentation.
+A shared MapLibre style change requires an explicit corresponding Garmin decision. Version 2.0 uses fine, pale overview strokes for 100 m and 50 m contours and a fine cliff pattern. Native close-detail contours support the device's elevation-unit setting; overview contour labels are suppressed. Garmin omits the Irish Grid and distinct bridge/tunnel presentation. Native DEM rendering supplies terrain shading.
 
-The Montana 750i and GPSMAP 67i use the same basemap IMG and the same optional personal-track IMG. Device settings for map detail, point text, imagery layers and day/night appearance add another level of variation without modifying either file.
+The Montana 750i and GPSMAP 67i use the same basemap IMG. Their settings for map detail, point text, imagery layers and day/night appearance add variation without modifying that file. Package validation does not imply hardware acceptance or installation of this release.
 
 ### Personal tracks
 
-Personal recorded tracks are a separate transparent Garmin layer. They can be updated or disabled independently of the basemap. The local package contains 355 Irish tracks as purple lines with green start markers and no track or start-point names. It does not alter the OpenBareMap basemap or import those tracks into the device's saved-track library.
+Recorded tracks form a separate transparent Garmin layer. They can be updated or disabled independently of the basemap and are versioned outside this release. The local personal package has 355 Irish tracks as purple lines and green start markers, without names. It does not import tracks into the device's saved-track library. Personal source files and binaries are not included in the published release.
 
-The personal-track package is not part of the published basemap release or this documentation commit.
+## Release maintenance
 
-## Recommended release structure
+- Preserve each release identifier and its artifacts. Publish a map change under a new identifier.
+- Record shared data/style hashes, platform profile hashes, tool versions, artifact checksums and validation scope in the release manifest.
+- Keep map-release versions independent of consuming application versions and personal-track overlay versions.
+- Record a device installation's map release, exact installed-file checksum, platform profile and any optional overlay version.
 
-The following would establish a formal, identifiable map release while retaining controlled platform differences:
-
-1. **One map release identifier and Git tag.** Identify the shared map snapshot independently of host-app versions.
-2. **One release manifest.** Record the shared data/style hashes, platform profile hashes, builder/tool versions, deliverable checksums and validation scope. A release tag should identify the committed snapshot referenced by that manifest.
-3. **Explicit platform profiles.** Document which presentation rules are shared, adapted or omitted, particularly for Garmin.
-4. **Independent overlay versions.** Version personal-track layers separately and record the basemap release used for their checks.
-5. **Preserved release artifacts.** Publish changes as a new release rather than replacing the files associated with an existing release identifier.
-
-A device installation record should identify the map release, platform profile, exact installed-file checksum and any optional overlay version. This would answer “which OpenBareMap version is on this device?” without implying that the host app, map data and personal tracks all share one version number.
-
-[Back to the README](../README.md)
+[Development history and build workflow](development-history.md) records development and build details. [Back to the README](../README.md).

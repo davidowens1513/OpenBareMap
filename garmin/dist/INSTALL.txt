@@ -1,4 +1,4 @@
-OpenBareMap Ireland — Garmin Montana 750i
+OpenBareMap Ireland 2.0 — Garmin Montana 750i / GPSMAP 67i
 
 1. Use a microSD card supported by the Montana 750i (up to 32 GB), formatted FAT32.
 2. Connect the device or card to your computer. Create a Garmin folder at the card root if needed.
@@ -10,6 +10,8 @@ OpenBareMap Ireland — Garmin Montana 750i
 
 This map covers Ireland and Northern Ireland, with 10 m contours, native elevation data and custom topographic styling. It has no turn-by-turn routing. Device track recording and separately loaded GPX tracks are independent of this map.
 
-The file has been compiled and its binary contents checked, but has not yet been tested on a Montana 750i. Check Carrauntoohil for contour spacing/units, textured bog, cliff markings, roads and place names. Device rendering and performance still need that practical test.
+The version 2.0 file has been compiled and its binary contents checked. Hardware acceptance on the Montana 750i and GPSMAP 67i is required. Check Carrauntoohil for contour spacing/units, textured bog, cliff markings, roads and place names. Device rendering and performance still need that practical test.
 
 Keep ATTRIBUTION.txt and the accompanying terrain notices available with copies of the map.
+
+GPSMAP 67i: use MTP for USB transfers on macOS. Installed maps are under Setup > Map > Map Manager. Satellite imagery is separate: from the map, MENU > Map Layers. Keep Map Points text enabled.
