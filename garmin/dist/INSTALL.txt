@@ -1,17 +1,20 @@
-OpenBareMap Ireland 2.0 — Garmin Montana 750i / GPSMAP 67i
+OpenBareMap Ireland 2.0 — Montana 750i / GPSMAP 67i / GPSMAP H1
+Garmin package revision: 2.0.0-townland-labels
 
-1. Use a microSD card supported by the Montana 750i (up to 32 GB), formatted FAT32.
-2. Connect the device or card to your computer. Create a Garmin folder at the card root if needed.
-3. Copy OpenBareMap-Ireland.img into that Garmin folder. Keep existing map files.
-4. Safely eject and restart the Montana.
-5. In Setup > Map > Configure Maps, enable OpenBareMap Ireland. If Automatic Maps is enabled, turn it off to select this map manually. Disable overlapping detailed maps while reviewing it; keep the worldwide DEM basemap enabled.
-6. Under Setup > Units, set elevation to metres. Garmin stores native contour values in feet and uses the device unit setting to display them; geometry is spaced every 10 m.
-7. Start with normal map detail. Advanced map settings control text size, zoom levels and, where available, shaded relief.
+Copy OpenBareMap-Ireland.img into the Garmin folder in internal storage or on a memory card supported by your device. Replace an existing file of that name; do not keep multiple OpenBareMap Ireland versions enabled. Preserve other map files. Safely disconnect and restart the handheld.
 
-This map covers Ireland and Northern Ireland, with 10 m contours, native elevation data and custom topographic styling. It has no turn-by-turn routing. Device track recording and separately loaded GPX tracks are independent of this map.
+Montana 750i: Setup > Map > Configure Maps > OpenBareMap Ireland. Automatic Maps may need to be off for manual selection.
+GPSMAP 67i: Setup > Map > Map Manager. Satellite imagery is controlled separately under Map > MENU > Map Layers.
+GPSMAP H1: from the map, MENU > Map Layers. Select the map in the available map type/detail controls.
 
-The version 2.0 file has been compiled and its binary contents checked. Hardware acceptance on the Montana 750i and GPSMAP 67i is required. Check Carrauntoohil for contour spacing/units, textured bog, cliff markings, roads and place names. Device rendering and performance still need that practical test.
+Disable overlapping detailed maps and satellite imagery to view OpenBareMap on its own. Keep point-label text enabled for mountain and facility names. Set elevation units to metres. Start with normal map detail; device settings control text size, detail and shaded relief.
+
+The 67i and H1 use MTP for USB file transfers. They do not appear as ordinary Finder volumes on macOS; use an MTP-capable file-transfer tool or a card reader for a compatible memory card. Copying a map does not require modifying the preloaded Garmin maps.
+
+The map covers Ireland and Northern Ireland, with 10 m contours, native elevation data and custom topographic styling. It has no turn-by-turn routing. Townlands use native text labels without markers; displayed capitalisation and size depend on the device.
+
+Recorded personal tracks, when supplied, use a separate OpenBareMap-My-Tracks.img layer. Enable or disable that layer independently. It is not part of the public basemap package and does not import records into the saved-track library.
+
+All three device installations have file read-back verification. Townland rendering has been accepted on the Montana; visual review on the 67i and H1 remains pending. Check contour units, land-cover textures, cliff markings and label readability on each device.
 
 Keep ATTRIBUTION.txt and the accompanying terrain notices available with copies of the map.
-
-GPSMAP 67i: use MTP for USB transfers on macOS. Installed maps are under Setup > Map > Map Manager. Satellite imagery is separate: from the map, MENU > Map Layers. Keep Map Points text enabled.

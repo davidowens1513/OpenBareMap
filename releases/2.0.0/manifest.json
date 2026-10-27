@@ -78,11 +78,11 @@
       "sha256": "2ba2cb191cea040013d23bd2df91b19d5f28e63ec9a40de4df63970e1a169a5c"
     },
     "garminStyle": {
-      "OBM4831.txt": "58e8edf1a2631a3cc5cabbe00d7183d0fee00b46b4c4f8c0fe99b3618d714069",
+      "OBM4831.txt": "ec63b2de32695d3344626b8a36b94767901284702a6b11328439deabc9a02c03",
       "info": "e4905b041ce4173b10757ae97a6ed2180c68980e0b6d626837771982f35d75e5",
       "lines": "c0f09bd1a0ad4f7800a805f5f693e1f25f7df6420df2f333c159e6820551f576",
       "options": "d4b26b3eedcdf3203944084dedc6f27461dda0e05f72d353b97e4829839f4b77",
-      "points": "5693e648a029c4b57b1b2a994a3000ccc41e0b0231ff5a7c093635f4d4bb526b",
+      "points": "3099f9726aed6258561433049eb7912f3ccf0bb7ea4c0522cdb442b425532449",
       "polygons": "f353afa46616b136b398acf4752a7efa2a0dd9484b12d0624d35fb4a767f021a",
       "relations": "288011d18d342ba76672a79d0d19d2fa16f000fb6a63b28a829f595329bd2bb2",
       "version": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
@@ -163,19 +163,25 @@
     "garmin": {
       "targetDevices": [
         "Montana 750i",
-        "GPSMAP 67i"
+        "GPSMAP 67i",
+        "GPSMAP H1"
       ],
       "map": {
         "path": "garmin/dist/OpenBareMap-Ireland.img",
-        "bytes": 277012480,
-        "sha256": "be621dfe5eb97f6a672cf398afa8cedc12692f7cc0685785696e56225b2090b4"
+        "bytes": 277078016,
+        "sha256": "775c2f8c2afa900a15cd7e436ece22b553db4e35c33db0d284b754cfd8542eac"
       },
       "validation": {
         "path": "garmin/build-report.json",
-        "bytes": 15423,
-        "sha256": "c977184fbbb44c9d9cf9a8288ad33fcac48025d06b15e2dc60e881cda4a926b6"
+        "bytes": 16455,
+        "sha256": "036d889d5278fd4bfebe62e36e6c4d4edc36ce80025046b2be9922a48a78e624"
       },
-      "routing": false
+      "routing": false,
+      "deviceInstallations": {
+        "path": "garmin/device-installations.json",
+        "bytes": 916,
+        "sha256": "2a2ecb03517bf9391055bdcd7469eb66a9ba6c0c20490ca629c69e88d5e3df97"
+      }
     }
   },
   "legends": {
@@ -204,9 +210,24 @@
     "unrelatedVectorLayersUnchanged": true,
     "browserVisualCheck": "Kerry/Carrauntoohil at zoom 12 and a wider overview",
     "garminBinaryReadback": true,
-    "version2HardwareRenderingTested": false,
-    "version2InstalledOnHandhelds": false
+    "version2HardwareRenderingTested": "Montana townland labels accepted; complete multi-device rendering acceptance pending",
+    "version2InstalledOnHandhelds": true
   },
   "personalTrackOverlayIncluded": false,
-  "recompilationGuarantee": "Exact distributed artifacts and inputs are checksum-pinned. Byte-identical recompilation is not claimed."
+  "recompilationGuarantee": "Exact distributed artifacts and inputs are checksum-pinned. Byte-identical recompilation is not claimed.",
+  "platformRevisions": {
+    "garmin": {
+      "revision": "2.0.0-townland-labels",
+      "date": "2026-10-27",
+      "scope": "Garmin townland labels only",
+      "publicationStatus": "repository package revision",
+      "originalArtifact": {
+        "path": "garmin/dist/OpenBareMap-Ireland.img",
+        "bytes": 277012480,
+        "sha256": "be621dfe5eb97f6a672cf398afa8cedc12692f7cc0685785696e56225b2090b4"
+      },
+      "gitTagNote": "v2.0.0 preserves the original release; this Garmin-only revision is recorded in subsequent repository history.",
+      "hardwareReview": "Montana townland appearance accepted; 67i and H1 full-file installation verified, visual review pending."
+    }
+  }
 }

@@ -1,4 +1,5 @@
-obm:townland=yes [0x10005 resolution 23]
+# Standard region text type: custom extended POI labels were absent on Montana.
+obm:townland=yes [0x1e00 resolution 23]
 place=city [0x0100 resolution 16]
 place=town [0x0600 resolution 18]
 place=village [0x0800 resolution 20]

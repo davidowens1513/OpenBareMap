@@ -16,7 +16,7 @@ OpenBareMap's map release is **2.0.0**, identified by Git tag **v2.0.0** and the
 | Garmin basemap | Exact IMG checksum, source/tool locks, profile hashes and [binary inspection report](../garmin/build-report.json). |
 | Personal-track overlay | Independently maintained local map, outside the published basemap release. |
 
-The release manifest refers to an implementation commit and hashes the files and package records that define the release. The release tag points to the complete committed snapshot, including the manifest and platform deliverables. A code revision recorded inside a package need not equal the final release commit, which also contains generated outputs and documentation.
+The release manifest refers to an implementation commit and hashes the files and package records that define the release. The original `v2.0.0` tag points to its complete release snapshot, including its manifest and platform deliverables. The current manifest also records Garmin package revision `2.0.0-townland-labels`, a subsequent platform-only adaptation; checking out the original tag restores the original Garmin artifact. A code revision recorded inside a package need not equal the final release commit, which also contains generated outputs and documentation.
 
 The iOS and Android packages use matching map-database hashes and styling layers, verified during release validation. Retain their manifests and resource checksums alongside any distributed packages.
 
@@ -43,7 +43,7 @@ Garmin's presentation is maintained under [garmin/style](../garmin/style/), [gar
 
 A shared MapLibre style change requires an explicit corresponding Garmin decision. Version 2.0 uses fine, pale overview strokes for 100 m and 50 m contours and a fine cliff pattern. Native close-detail contours support the device's elevation-unit setting; overview contour labels are suppressed. Garmin omits the Irish Grid and distinct bridge/tunnel presentation. Native DEM rendering supplies terrain shading.
 
-The Montana 750i and GPSMAP 67i use the same basemap IMG. Their settings for map detail, point text, imagery layers and day/night appearance add variation without modifying that file. Package validation does not imply hardware acceptance or installation of this release.
+The Montana 750i, GPSMAP 67i and GPSMAP H1 have the same Garmin 2.0 basemap IMG installed, verified by full read-back. Their settings for map detail, point text, imagery layers and day/night appearance add variation without modifying that file. The Garmin-only `2.0.0-townland-labels` profile uses standard region-text points for townlands, NormalFont and muted grey-brown. Uppercase source names do not guarantee uppercase device rendering. The Montana rendering has been accepted; the 67i and H1 require visual review. See [device installation records](../garmin/device-installations.json).
 
 ### Personal tracks
 

@@ -1,12 +1,12 @@
 # OpenBareMap 2.0 for Garmin
 
-Display-only, full-island Ireland and Northern Ireland map. The deliverable is `dist/OpenBareMap-Ireland.img` (size and checksum in the release manifest). Copy instructions are in `dist/INSTALL.txt`. Target devices are the Montana 750i and GPSMAP 67i. The version 2.0 IMG is common to both devices; device acceptance is separate from binary validation.
+Display-only, full-island Ireland and Northern Ireland map. The deliverable is `dist/OpenBareMap-Ireland.img` (size and checksum in the release manifest). Copy instructions are in `dist/INSTALL.txt`. The same IMG is installed on the Montana 750i, GPSMAP 67i and GPSMAP H1. Full-file read-back verification is recorded in [device-installations.json](device-installations.json). Townland appearance is accepted on the Montana; visual acceptance on the 67i and H1 remains pending. The Garmin package revision is `2.0.0-townland-labels`, within map version 2.0.0.
 
 Includes roads, tracks, footways, bridleways, cycleways, steps, walking/cycling overlays, water, land cover, buildings, boundaries, townlands, place names, summit dots, parking P symbols, bog texture and cliff teeth. Contours use the shared, gently smoothed 10 m geometry. Land-cover polygons use the shared smoothed source snapshot. Native DEM elevation data supports Garmin's terrain rendering. No routing network or turn instructions are generated.
 
 ## Native cartography
 
-Garmin renders its own fonts, labels and detail levels. This is a native adaptation, not pixel-identical to the MapLibre map. SmallFont is used for most names, NormalFont for cities; device settings affect actual size. Text has no custom halo. Day and night palettes currently match. Bog/rock patterns are native two-colour bitmaps. The supplied legend is generated from the same palette and patterns.
+Garmin renders its own fonts, labels and detail levels. This is a native adaptation, not pixel-identical to the MapLibre map. SmallFont is used for most names, NormalFont for cities and townlands; device settings affect actual size. Text has no custom halo. Day and night palettes currently match. Bog/rock patterns are native two-colour bitmaps. The supplied legend is generated from the same palette and patterns.
 
 | Detail level | Garmin resolution | Contours |
 | --- | --- | --- |
@@ -17,6 +17,8 @@ Garmin renders its own fonts, labels and detail levels. This is a native adaptat
 | 4, overview | 16 | None |
 
 These are Garmin resolution bits, not web zoom numbers. Native close-detail contour elevation attributes use feet; set device elevation units to metres. Overview-only contour types have no labels. The underlying spacing remains 10 m. Irish Grid lines are not exported in this version. Bridges and tunnels do not yet receive a distinct Garmin rendering. MapLibre raster hillshade, pixel text sizes and label spacing do not transfer directly.
+
+Townlands use Garmin’s standard region-text category, without a marker, in muted grey-brown (`#817b70`). Source names are uppercase; the device controls the displayed capitalisation and size. The current rendering has been accepted on the Montana 750i. The label profile is installed on the GPSMAP 67i and H1, with file integrity verified; its on-screen appearance has not yet been reviewed on those models.
 
 ## Source and tool records
 

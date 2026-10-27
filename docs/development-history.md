@@ -82,3 +82,8 @@ python3 scripts/build_sprites.py
 - [iOS guide](../ios/README.md): bundle assembly, Xcode integration and Swift loader checks.
 
 Use new package/build destinations where the platform builder requires them. Keep source/tool locks, output checksums and validation records consistent with any published package.
+
+
+### Garmin 2.0 townland label adaptation — 27 October 2026
+
+Townlands use the standard region-text point category `0x1e00`, NormalFont and muted grey-brown `#817b70`, without a marker. A font-only change to the previous custom category did not expose the labels on the Montana 750i. The standard category produced larger labels with mixed-case appearance; this result was accepted for Garmin 2.0. The input names remain uppercase, but displayed capitalisation follows the handheld. The same revision was subsequently installed on the GPSMAP 67i and GPSMAP H1, with full read-back verification. Their on-screen appearance remains to be reviewed. The shared map, iOS and Android remain unchanged. The distribution and checksum manifest contain the accepted IMG; the existing `v2.0.0` Git tag preserves the original release, while the Garmin-only revision is recorded in subsequent repository history.

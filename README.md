@@ -2,7 +2,7 @@
 
 OpenBareMap is an offline topographic map of the whole island of Ireland, including Northern Ireland and offshore islands. It provides map resources for Garmin handhelds, Android and iOS, plus a browser viewer for inspecting the map on a computer.
 
-The map release is **2.0.0**, identified by Git tag `v2.0.0` and the [release manifest](releases/2.0.0/manifest.json). Platform packages record their source revision and resource checksums.
+The shared map release is **2.0.0**. Git tag `v2.0.0` preserves the original release snapshot; the [release manifest](releases/2.0.0/manifest.json) records the current packages, including the Garmin-only townland-label revision. Platform packages record their source revision and resource checksums.
 
 ## The map
 
@@ -25,9 +25,11 @@ The Garmin edition is a **display-only map**, with no turn-by-turn routing. It i
 | Legend | [Montana-750i-Legend.png](garmin/dist/Montana-750i-Legend.png) |
 | Build, integration and validation details | [Garmin guide](garmin/README.md) |
 
-Target devices are the **Montana 750i** and **GPSMAP 67i**. The same IMG serves both devices. Version 2.0 has binary-content checks; device rendering and performance require acceptance on each model.
+The same Garmin 2.0 IMG is installed on the **Montana 750i**, **GPSMAP 67i** and **GPSMAP H1**, with full file read-back verification. Townland rendering has been accepted on the Montana; visual checks on the 67i and H1 remain outstanding. [Device installation records](garmin/device-installations.json) describe the validation scope.
 
-Install the `.img` in the device's `Garmin` folder or on a supported memory card, and enable **OpenBareMap Ireland** in the device's map controls. The 67i uses MTP for USB file transfers on macOS. Point-label text must be enabled for mountain names. Disable overlapping detailed maps and satellite imagery when viewing OpenBareMap on its own.
+The Garmin package revision is **2.0.0-townland-labels**. Townlands use a native text category, NormalFont and muted grey-brown, without a marker. Displayed capitalisation and size depend on the device. This adaptation applies only to Garmin; the main MapLibre map, iOS and Android retain their 2.0.0 resources.
+
+Install the `.img` in the device's `Garmin` folder or on a supported memory card, and enable **OpenBareMap Ireland** in the device's map controls. The 67i and H1 use MTP for USB file transfers on macOS. Point-label text must be enabled for mountain names. Disable overlapping detailed maps and satellite imagery when viewing OpenBareMap on its own.
 
 Personal recorded tracks can be displayed as a separate transparent map layer and switched independently of the basemap. The personal track package is separate from the basemap distributed here.
 
