@@ -10,7 +10,7 @@ im=Image.new('RGB',(W*S,H*S),'#fffdf8');d=ImageDraw.Draw(im)
 regular='/System/Library/Fonts/Supplemental/Arial.ttf';bold='/System/Library/Fonts/Supplemental/Arial Bold.ttf'
 def text(x,y,s,size=17,strong=False,color='#35483d'):d.text((x*S,y*S),s,font=ImageFont.truetype(bold if strong else regular,size*S),fill=color)
 def heading(x,y,s):text(x,y,s,21,True);d.line((x*S,(y+36)*S,(x+470)*S,(y+36)*S),fill='#d8dfd6',width=2)
-text(50,35,'OpenBareMap · Ireland',36,True);text(50,88,'MONTANA 750i  /  DISPLAY-ONLY MAP',14,True);heading(50,145,'Landscape');heading(590,145,'Ways & terrain')
+text(50,35,'OpenBareMap 2.0 · Ireland',36,True);text(50,88,'MONTANA 750i · GPSMAP 67i  /  DISPLAY-ONLY MAP',14,True);heading(50,145,'Landscape');heading(590,145,'Ways & terrain')
 land=[x for x in typ.polygons if x[1] not in ['Background','Land','Sea']]
 for i,(code,name,color,order,pattern) in enumerate(land):
  y=202+i*43;sw=Image.new('RGB',(96,32),color)

@@ -6,8 +6,8 @@ android {
         applicationId = "org.openbaremap.demo"
         minSdk = 23
         targetSdk = 36
-        versionCode = 1
-        versionName = "0.4.0"
+        versionCode = 20000
+        versionName = "2.0.0"
     }
     compileOptions { sourceCompatibility = JavaVersion.VERSION_17; targetCompatibility = JavaVersion.VERSION_17 }
 }

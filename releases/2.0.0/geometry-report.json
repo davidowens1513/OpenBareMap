@@ -1,0 +1,56 @@
+{
+  "builder_sha256": "847ff9e93ab45ff85551513f2e6ebd47903d0015cdf97aea2013765e75a2b976",
+  "config": {
+    "contour_interval_m": 10,
+    "map_version": "2.0.0",
+    "smoothing": {
+      "algorithm": "single-pass bounded corner cutting in local metre coordinates",
+      "contour_max_cut_m": 4,
+      "fraction": 0.18,
+      "landcover_max_cut_m": 6,
+      "maximum_polygon_area_change_fraction": 0.02,
+      "maximum_turn_degrees": 150,
+      "minimum_turn_degrees": 8,
+      "polygon_validation": "GEOS validity and area guard; retain original on failure",
+      "preserve_line_endpoints": true
+    }
+  },
+  "counts": {
+    "contour_features": 246999,
+    "landcover_classes": {
+      "bare_rock": 11853,
+      "beach": 1771,
+      "bog": 5045,
+      "farmland": 73933,
+      "grass": 241111,
+      "heath": 4010,
+      "peat_cutting": 4,
+      "sand": 2891,
+      "scree": 467,
+      "scrub": 24902,
+      "shingle": 1673,
+      "wetland": 8468,
+      "wood": 99945
+    },
+    "landcover_features": 476073,
+    "polygon_retained_by_guard": 28856,
+    "polygon_smoothed": 447217
+  },
+  "geos_library_sha256": "1bc9e1aec357cb66edd2e0a080a7ba2649514efe43b665b6d7e2d908b18ea19b",
+  "inputs": [
+    {
+      "path": "releases/2.0.0/contours.geojson.gz",
+      "sha256": "cfa8346e9c5f181d8cb5a01d6469f23d643ccbae7bca9630add9d4b10578c2df",
+      "uncompressed_sha256": "9e992798d1baed4c7bb2cdc4dfb5a6f755768c5e1e46a83375deeaa937a7c88b"
+    },
+    {
+      "path": "releases/2.0.0/landcover.geojson.gz",
+      "sha256": "1bc12c5c0e600b212783226193ca6bc64979c5ee87153784fbd1edbc81773d01",
+      "uncompressed_sha256": "34bf6f61773d18bf3a6cb33bbba2843739bccdd4f08e06d6a1d2215777585e78"
+    }
+  ],
+  "original_contour_sha256": "7196989bdcddefe7c600e2dc4cd83d8f4363388feac276570b69fcdea3ce7a70",
+  "osm_sha256": "ed9974ce4c9a2da813bddea4b7b978ed2047c90974ea1104e4521dabe3518aaa",
+  "smoother_sha256": "7581d024dc1c1bec931642c7201db149bf64a64c814c451fa8bf37a0881ea6c9",
+  "version": "2.0.0"
+}

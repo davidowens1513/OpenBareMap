@@ -20,7 +20,7 @@ def prepare():
  result=WORK/'overlays.osm.gz'
  if result.exists():raise FileExistsError(result)
  nodefile=WORK/'overlay-nodes.xml';wayfile=WORK/'overlay-ways.xml';relfile=WORK/'overlay-relations.xml'
- counts={'contours':0,'land_polygons':0,'townlands':0,'nodes':0,'ways':0,'relations':0,'contour_intervals':{},'coverage':[-11,51,-5,56]}
+ counts={'contours':0,'land_polygons':0,'landcover_polygons':0,'townlands':0,'nodes':0,'ways':0,'relations':0,'contour_intervals':{},'coverage':[-11,51,-5,56]}
  nodes=nodefile.open('w');ways=wayfile.open('w');rels=relfile.open('w')
  next_node=30000000000;next_way=30000000000;next_relation=30000000000
  def tags(values):return ''.join('<tag k='+quoteattr(k)+' v='+quoteattr(str(v))+'/>' for k,v in values.items())
@@ -58,6 +58,9 @@ def prepare():
  for f in features(ROOT/'garmin/inputs/land-ireland.geojson.gz'):
   g=f['geometry'];polys=[g['coordinates']] if g['type']=='Polygon' else g['coordinates']
   for rings in polys:polygon(rings,{'natural':'land'});counts['land_polygons']+=1
+ for f in features(ROOT/'garmin/inputs/landcover-smoothed.geojson.gz'):
+  g=f['geometry'];polys=[g['coordinates']] if g['type']=='Polygon' else g['coordinates']
+  for rings in polys:polygon(rings,{'obm:landcover':f['properties']['class']});counts['landcover_polygons']+=1
  polygon([[[-11,51],[-5,51],[-5,56],[-11,56],[-11,51]]],{'obm:sea':'yes'})
  towns=json.loads((ROOT/'viewer/townlands.geojson').read_text())
  for f in towns['features']:

@@ -496,14 +496,12 @@ FontStyle=SmallFont
 DayCustomColor=#554b3d
 NightCustomColor=#554b3d
 UseOrientation=Y
-Xpm="32 5 2 1"
-"a c #5f584f"
+Xpm="32 3 2 1"
+"a c #837c73"
 ". c none"
 "................................"
 "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
 "..a.......a.......a.......a....."
-"...a.......a.......a.......a...."
-"....a.......a.......a.......a..."
 [end]
 [_line]
 Type=0x14
@@ -552,6 +550,28 @@ LineWidth=1
 BorderWidth=0
 Xpm="0 0 1 0"
 "a c #74b5e6"
+[end]
+[_line]
+Type=0x10008
+String=100 metre contour - overview
+FontStyle=NoLabel
+DayCustomColor=#554b3d
+NightCustomColor=#554b3d
+LineWidth=1
+BorderWidth=0
+Xpm="0 0 1 0"
+"a c #b8a68b"
+[end]
+[_line]
+Type=0x10009
+String=50 metre contour - overview
+FontStyle=NoLabel
+DayCustomColor=#554b3d
+NightCustomColor=#554b3d
+LineWidth=1
+BorderWidth=0
+Xpm="0 0 1 0"
+"a c #bcae99"
 [end]
 [_line]
 Type=0x20

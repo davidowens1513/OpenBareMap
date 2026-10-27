@@ -1,0 +1,43 @@
+{
+  "builder_sha256": "6f64377fb670dc7332cf4feb1514d447da7771789b6ea923f43a8d5e9b83bedc",
+  "command": [
+    "/usr/local/bin/tilemaker",
+    "--output",
+    "/Users/davidowens/Documents/Codex/2026-10-25/i-x20/outputs/OpenBareMap/build/cartography-2.0/geometry.mbtiles",
+    "--config",
+    "/Users/davidowens/Documents/Codex/2026-10-25/i-x20/outputs/OpenBareMap/build/cartography-2.0/tilemaker.json",
+    "--process",
+    "/Users/davidowens/Documents/Codex/2026-10-25/i-x20/outputs/OpenBareMap/build/cartography-2.0/process.lua",
+    "--threads",
+    "1"
+  ],
+  "geometry_report_sha256": "648acde57f62ba9b57bc82cd5ebdbeb92a745b1fe8da2e8d050bacb430ea077a",
+  "outputs": {
+    "basemap": {
+      "changed_tiles": 49233,
+      "path": "build/cartography-2.0/basemap.mbtiles",
+      "replacement_feature_instances": 4287140,
+      "sha256": "cc35935af487e144a23391f0e53ec6b0e1a638a2438e98157e3f1e6fcbc7d600",
+      "unchanged_other_layers_sha256": "60b2c5b7e57cef3cb40fcda3514bc11f9a24e1a0e308afd08df84b6a14f81a70",
+      "validation": {
+        "empty_tile_count": 34246,
+        "logical_tiles_sha256": "e877d868f8406bbe84175073064518ab4798bcfd7ea53f735722800bae16a0a9",
+        "tile_count": 99548
+      }
+    },
+    "topography": {
+      "changed_tiles": 58858,
+      "path": "build/cartography-2.0/topography.mbtiles",
+      "replacement_feature_instances": 2226102,
+      "sha256": "fc79c9e20a5a440c6533318c3f3837edb5246df8225417d50e3b1ca67c2bf3c0",
+      "unchanged_other_layers_sha256": "34589394aadc462bc64e8fc89d29912bc98ef573f42dc4b3ff07ad127a5129bf",
+      "validation": {
+        "empty_tile_count": 151727,
+        "logical_tiles_sha256": "b12e74de034c3c512dd0f52b7ad04da8fb6a28f80317e7ccdb4f9f0c737d08b3",
+        "tile_count": 219603
+      }
+    }
+  },
+  "toolchain_sha256": "d43847b5d5662b9139461921d55bfab56f3db2098946209a5c7a26b03255b123",
+  "version": "2.0.0"
+}

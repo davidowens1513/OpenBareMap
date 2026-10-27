@@ -68,7 +68,7 @@ def linerow(x,y,label,layer,cl=None,casing=None):
   c=LAYERS[casing]['paint'];line(x,y+12,x+96,y+12,value(c['line-color'],cl),value(c['line-width'])*1.6,value(c.get('line-opacity',1)))
  line(x,y+12,x+96,y+12,value(p['line-color'],cl),width,value(p.get('line-opacity',1)),[d*width for d in p['line-dasharray']] if 'line-dasharray' in p else None)
  text(x+114,y+3,label)
-text(48,38,'OpenBareMap',36,'#213d30',True);text(49,88,'MAP LEGEND',13,'#647b6c',True)
+text(48,38,'OpenBareMap 2.0',36,'#213d30',True);text(49,88,'MAP LEGEND',13,'#647b6c',True)
 line(48,123,952,123,'#d8dfd9')
 heading(48,153,'Landscape')
 rows=[('Woodland / forest','landcover','wood',None),('Scrub','landcover','scrub',None),('Grassland / meadow','landcover','grass',None),('Farmland','landcover','farmland',None),('Heath','landcover','heath',None),('Wetland','landcover','wetland',None),('Bog','landcover','bog','bog-texture'),('Peat workings','landcover','peat_cutting','bog-texture'),('Bare rock','bare-rock',None,'bare-rock-stipple'),('Scree','scree-and-shingle','scree','scree-stipple'),('Shingle','scree-and-shingle','shingle','scree-stipple'),('Beach','landcover','beach',None),('Sand','landcover','sand',None),('Water','water',None,None),('Buildings','land-cover-buffer',None,None)]
@@ -77,8 +77,8 @@ heading(528,153,'Roads & routes')
 rows=[('Major road','roads-major','primary','roads-casing-major'),('Minor road','roads-minor','residential','roads-casing-minor'),('Service road','roads-minor','service','roads-casing-minor'),('Road bridge','roads-major--bridge-1','primary','roads-casing-major--bridge-1'),('Tunnel','roads-major--tunnel--1','primary',None),('Track','tracks',None,None),('Path / footway','paths',None,None),('Bridleway','bridleways',None,None),('Cycleway','cycleways',None,None),('Steps','steps',None,None),('Walking route','hiking-routes',None,None),('Cycling route','cycling-routes',None,None),('Railway','railways',None,None),('Ferry','ferry-routes',None,None),('Watercourse','waterway',None,None)]
 for i,(label,layer,cl,casing) in enumerate(rows):linerow(528,204+i*36,label,layer,cl,casing)
 heading(48,786,'Terrain')
-linerow(48,837,'100 m index contour','contours');linerow(48,883,'10 m intermediate contour','contour-intermediate-lines')
-cliff=texture('cliff-teeth',96,6);image(cliff,48,937,96,6);text(162,931,'Cliff / crag')
+linerow(48,830,'100 m index contour','contours');linerow(48,869,'50 m contour','contour-50m-lines');linerow(48,908,'10 m intermediate contour','contour-intermediate-lines')
+cliff=texture('cliff-teeth',96,6);opacity=value(LAYERS['cliffs-and-crags']['paint']['line-opacity']);cliff.putalpha(cliff.getchannel('A').point(lambda a:round(a*opacity)));image(cliff,48,951,96,value(LAYERS['cliffs-and-crags']['paint']['line-width']));text(162,945,'Cliff / crag')
 # Illustrative relief swatch, clearly distinct from mapped feature patterns.
 shade=Image.new('RGBA',(96*S,24*S))
 for x in range(shade.width):

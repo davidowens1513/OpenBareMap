@@ -1,6 +1,8 @@
 # Display-only rules: intentionally no road_class / road_speed definitions.
-contour=elevation & obm:interval=100 { name '${ele|conv:m=>ft}' } [0x22 resolution 20]
-contour=elevation & obm:interval=50 { name '${ele|conv:m=>ft}' } [0x21 resolution 22]
+contour=elevation & obm:interval=100 [0x10008 resolution 20-21 continue]
+contour=elevation & obm:interval=100 { name '${ele|conv:m=>ft}' } [0x22 resolution 22]
+contour=elevation & obm:interval=50 [0x10009 resolution 22-23 continue]
+contour=elevation & obm:interval=50 { name '${ele|conv:m=>ft}' } [0x21 resolution 24]
 contour=elevation { name '${ele|conv:m=>ft}' } [0x20 resolution 24]
 obm:walking=yes [0x10001 resolution 22 continue]
 obm:cycling=yes [0x10002 resolution 22 continue]

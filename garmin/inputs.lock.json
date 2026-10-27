@@ -4,17 +4,24 @@
   "inputs": [
     {
       "path": "garmin/inputs/contours-10m.geojson.gz",
-      "sha256": "e967823486beb7152b1a7d8da478cbd49c80aa0e3adc78520dce3987d10481ba",
-      "derived_from": "Shared topography-a 10 m contours; exact existing GeoJSON compressed without geometry changes",
-      "uncompressed_sha256": "7196989bdcddefe7c600e2dc4cd83d8f4363388feac276570b69fcdea3ce7a70"
+      "sha256": "cfa8346e9c5f181d8cb5a01d6469f23d643ccbae7bca9630add9d4b10578c2df",
+      "uncompressed_sha256": "9e992798d1baed4c7bb2cdc4dfb5a6f755768c5e1e46a83375deeaa937a7c88b",
+      "derived_from": "OpenBareMap 2.0 bounded source smoothing; releases/2.0.0/geometry-report.json"
     },
     {
       "path": "garmin/inputs/land-ireland.geojson.gz",
       "sha256": "615c12fcc004031f618401a7beb6a5f309011793074861b57c4dd325ac952c8f",
       "derived_from": "Locked OSM land polygons / shared topography-a land; clipped to full-island terrain extent [-11,51,-5,56] with GDAL 3.12.3"
+    },
+    {
+      "path": "garmin/inputs/landcover-smoothed.geojson.gz",
+      "sha256": "1bc12c5c0e600b212783226193ca6bc64979c5ee87153784fbd1edbc81773d01",
+      "uncompressed_sha256": "34bf6f61773d18bf3a6cb33bbba2843739bccdd4f08e06d6a1d2215777585e78",
+      "derived_from": "OpenBareMap 2.0 bounded source smoothing; releases/2.0.0/geometry-report.json"
     }
   ],
   "elevation_lock": "terrain-sources.lock.json",
   "osm_lock": "sources.lock.json",
-  "townland_source": "viewer/townlands.geojson"
+  "townland_source": "viewer/townlands.geojson",
+  "map_version": "2.0.0"
 }

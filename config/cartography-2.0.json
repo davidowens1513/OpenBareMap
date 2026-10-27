@@ -1,0 +1,15 @@
+{
+  "map_version": "2.0.0",
+  "smoothing": {
+    "algorithm": "single-pass bounded corner cutting in local metre coordinates",
+    "fraction": 0.18,
+    "contour_max_cut_m": 4,
+    "landcover_max_cut_m": 6,
+    "maximum_polygon_area_change_fraction": 0.02,
+    "minimum_turn_degrees": 8,
+    "maximum_turn_degrees": 150,
+    "preserve_line_endpoints": true,
+    "polygon_validation": "GEOS validity and area guard; retain original on failure"
+  },
+  "contour_interval_m": 10
+}

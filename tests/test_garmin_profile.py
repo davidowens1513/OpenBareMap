@@ -8,8 +8,10 @@ class GarminProfileTests(unittest.TestCase):
         self.assertFalse(any(x.startswith('--route') for x in profile['compilerOptions']))
         rules=(ROOT/'garmin/style/lines').read_text()
         self.assertIn('contour=elevation & obm:interval=100',rules)
-        self.assertIn('[0x22 resolution 20]',rules)
-        self.assertIn('[0x21 resolution 22]',rules)
+        self.assertIn('[0x10008 resolution 20-21 continue]',rules)
+        self.assertIn('[0x22 resolution 22]',rules)
+        self.assertIn('[0x10009 resolution 22-23 continue]',rules)
+        self.assertIn('[0x21 resolution 24]',rules)
         self.assertIn('[0x20 resolution 24]',rules)
         self.assertIn('<finalize>',(ROOT/'garmin/style/points').read_text())
     def test_typ_generation_is_deterministic_and_all_polygons_have_draw_order(self):

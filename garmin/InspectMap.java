@@ -53,7 +53,7 @@ public class InspectMap {
                         Map<String,Long> cc=contourLevels.computeIfAbsent(level.getLevel(),k->new TreeMap<>());
                         for(Polyline line:reader.linesForLevel(level.getLevel())) {
                             if(level.getLevel()==0)count(lines,line.getType());
-                            if(Set.of(0x20,0x21,0x22).contains(line.getType()))count(cc,line.getType());
+                            if(Set.of(0x20,0x21,0x22,0x10008,0x10009).contains(line.getType()))count(cc,line.getType());
                         }
                     }
                 }

@@ -89,7 +89,7 @@ function updateFillLegend() {
     const canvas=document.createElement('canvas');canvas.width=64;canvas.height=12;
     paintPattern(canvas.getContext('2d'),'cliff-teeth',64,12);
     const img=document.createElementNS('http://www.w3.org/2000/svg','image');
-    img.setAttribute('href',canvas.toDataURL());img.setAttribute('width','32');img.setAttribute('height','6');img.setAttribute('y','3');cliff.replaceChildren(img);
+    img.setAttribute('href',canvas.toDataURL());img.setAttribute('width','32');const height=legendLineWidth(map.getPaintProperty('cliffs-and-crags','line-width'),map.getZoom());img.setAttribute('height',String(height));img.setAttribute('y',String((12-height)/2));img.setAttribute('opacity',String(legendLineWidth(map.getPaintProperty('cliffs-and-crags','line-opacity'),map.getZoom())));cliff.replaceChildren(img);
   }
 }
 map.on('load', async () => {
