@@ -1,6 +1,6 @@
-# OpenBareMap for Garmin Montana 750i
+# OpenBareMap for Garmin
 
-Display-only, full-island Ireland and Northern Ireland map. The deliverable is `dist/OpenBareMap-Ireland.img` (249.5 MB). Copy instructions are in `dist/INSTALL.txt`. No map has been installed on a device by this build.
+Display-only, full-island Ireland and Northern Ireland map. The deliverable is `dist/OpenBareMap-Ireland.img` (249.5 MB). Copy instructions are in `dist/INSTALL.txt`. The map is installed on a Montana 750i and GPSMAP 67i; installation copies are checksum-verified.
 
 Includes roads, tracks, footways, bridleways, cycleways, steps, walking/cycling overlays, water, land cover, buildings, boundaries, townlands, place names, summit dots, parking P symbols, bog texture and cliff teeth. Contours retain the shared 10 m geometry. Native DEM elevation data supports Garmin's terrain rendering. No routing network or turn instructions are generated.
 
@@ -52,8 +52,10 @@ Use the platform classpath separator on Windows. The inspector requires embedded
 
 ## Validation and limitations
 
-Two complete compiles succeeded with no compiler exceptions or missing elevation files. Binary read-back verified 70 tiles, DEM, custom TYP, progressive contours and names including Carrauntoohil, Belfast and Dublin. All 20 repository Python tests passed.
+Two complete compiles succeeded with no compiler exceptions or missing elevation files. Binary read-back verified 70 tiles, DEM, custom TYP, progressive contours and names including Carrauntoohil, Belfast and Dublin. Automated checks cover the map profile and deterministic TYP generation.
 
 The two compiles are not byte-for-byte identical, even after excluding creation timestamps: RGN payload sizes differ by 76 bytes and some encoded line instances differ. Source inputs, tools and style are pinned, but strict binary reproducibility remains unresolved. Both inspections passed. The full comparison is recorded rather than hidden.
 
-No Montana hardware rendering or performance test has been performed. Font readability, contour label units, texture density, terrain shading and map selection should be checked on the actual 750i before treating this as a finished device release.
+Montana 750i display checks include mountain names and parking. Keep Map Points text enabled and its zoom setting on Auto. GPSMAP 67i installation is verified by reading both installed map files back over MTP and comparing checksums. Comprehensive rendering, contour-unit and performance acceptance is separate from installation verification.
+
+On the GPSMAP 67i, installed detailed maps are managed under Setup > Map > Map Manager. Satellite imagery is controlled separately from the map page using MENU > Map Layers. Display appearance is under Setup > Display > Appearance > Mode (Day, Night or Auto). A personal-track overlay is a separate optional map layer and can be toggled independently of OpenBareMap.

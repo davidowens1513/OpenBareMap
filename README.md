@@ -1,89 +1,103 @@
 # OpenBareMap
 
-An offline topographic map for the whole island of Ireland, including Northern Ireland and offshore islands. Every real-data build covers the full source extract.
+OpenBareMap is an offline topographic map of the whole island of Ireland, including Northern Ireland and offshore islands. It provides map resources for Garmin handhelds, Android and iOS, plus a browser viewer for inspecting the map on a computer.
 
-## Current map: 1.1 cartography, rebuilt data
+## The map
 
-Development version 0.4 restores OpenBareMap 1.1's palette, Open Sans typography, road/route styles, boundaries, naming layers and terrain textures. Text halos are omitted at the user’s request. The original 1.1 bundle is preserved selectively in `assets/legacy-1.1` as reference material; the runtime entry point is `style/openbaremap.json`.
+- **Terrain:** 10-metre contours with progressive detail, hillshade, summit and saddle names, summit dots and cliff markings.
+- **Land cover:** woodland, farmland, grass, heath, scrub, wetlands, textured bog, peat workings, rock, scree, sand and beaches.
+- **Transport:** roads and connecting links, tracks, paths, footways, bridleways, cycleways, steps, walking and cycling routes, railways and ferries.
+- **Places and facilities:** settlements, townlands, islands, water names, outdoor facilities and points of interest. Parking uses a white P on blue; outdoor facilities use dots and text.
+- **Offline resources:** local map databases, styles, symbols, fonts, legends and attribution notices. An internet connection is not required to display the installed map.
 
-The basemap is rebuilt from our locked 2026-10-24 full-island OSM snapshot. It includes roads, paths, tracks, water, land cover, buildings, settlements, summits and saddles, hiking facilities, walking and cycling relations, boundaries, railways, stations, ferries, road names, water names and island names. Hiking facilities use dots and words; parking retains the conventional white P on blue. Missing general POI icons from the old bundle are not referenced.
+The MapLibre presentation uses Open Sans text without halos, dashed tracks and paths, bridge/tunnel styling and an Irish Grid overlay. Garmin uses native device fonts, symbols, terrain rendering and detail levels. The presentations share source data but have different rendering capabilities.
 
-Contours retain **10-metre intervals** from our approximately 30-metre composite elevation data. The progressive 1.1 treatment shows 100 m index lines from zoom 8 and their labels from zoom 9; all intermediate 10 m lines enter at zoom 11 and their labels at zoom 12. This replaces the preceding 100/50/10 m display stages. Index and intermediate strokes and text scale differently. Contour label repeat spacing is 440 pixels for index labels and 360 pixels for intermediate labels, halving repeat placement opportunities relative to 1.1; collision handling affects actual visible counts. Hillshade is 46% opaque. Rock and scree fills and stipples draw above hillshade; cliffs use the copied teeth pattern. Bog textures now actually render, using low/mid/high patterns at zooms 9/12/14. Peat workings remain separately classified.
+## Garmin
 
-The 1.1 townland label points (50,380 features) and fixed Irish Grid are inherited assets with exact checksums, not claimed as newly regenerated data. Grid lines show 10 km spacing from zoom 10 and 1 km from zoom 12. Their provenance and all copied font/pattern/reference files are recorded in `legacy-assets.lock.json`. The old basemap, contours and hillshade are not reused. Glyph generation and grid/townland generation recipes remain to be recovered or replaced.
+The Garmin edition is a **display-only map**, with no turn-by-turn routing. It includes 10-metre contours, native elevation data, land-cover textures, cliff markings, place names and outdoor features.
 
-`classic-map-report.json` records the new builds and tile inventories. `classic-terrain-preview.png` and `classic-bog-preview.png` show the active cartography; earlier screenshots and reports are historical.
+| Resource | Location |
+| --- | --- |
+| Installable map, approximately 250 MB | [OpenBareMap-Ireland.img](garmin/dist/OpenBareMap-Ireland.img) |
+| Installation instructions | [INSTALL.txt](garmin/dist/INSTALL.txt) |
+| Legend | [Montana-750i-Legend.png](garmin/dist/Montana-750i-Legend.png) |
+| Build, integration and validation details | [Garmin guide](garmin/README.md) |
 
-## Restore and view
+The map is installed on a **Montana 750i** and a **GPSMAP 67i**. Installation copies are checksum-verified. Montana display checks include mountain names and parking; the 67i requires further visual and performance assessment.
 
-The selected map databases and exact OSM, coast and elevation inputs are stored with Git LFS. Duplicate builds and intermediates are excluded.
+Install the `.img` in the device's `Garmin` folder or on a supported memory card, and enable **OpenBareMap Ireland** in the device's map controls. The 67i uses MTP for USB file transfers on macOS. Point-label text must be enabled for mountain names. Disable overlapping detailed maps and satellite imagery when viewing OpenBareMap on its own.
+
+Personal recorded tracks can be displayed as a separate transparent map layer and switched independently of the basemap. The personal track package is separate from the basemap distributed here.
+
+Garmin uses its own zoom and font controls. Irish Grid lines and distinct bridge/tunnel styling are not included in this edition. Set elevation units to metres for metric contour labels.
+
+## Android
+
+The Android edition uses **MapLibre Native** and includes a reference app and a reusable Kotlin resource loader. It supports Android 6.0 / API 23 and later.
+
+| Resource | Location |
+| --- | --- |
+| Debug-signed reference app | [OpenBareMap-debug.apk](android/dist/OpenBareMap-debug.apk) |
+| Reusable loader library | [openbaremap-loader-release.aar](android/dist/openbaremap-loader-release.aar) |
+| Offline map resources, approximately 2 GB | [android/package/OpenBareMap](android/package/OpenBareMap/) |
+| Setup, building and integration | [Android guide](android/README.md) |
+
+Install the APK, open the app and choose **Import map** to select the map ZIP. The map, legend and credits are available offline after import. The resource package is separate from the APK; allow several GB of storage for the archive and installed map.
+
+To generate the import ZIP from a restored checkout, run:
 
 ```sh
+python3 android/build_package.py --zip-only
+```
+
+Open `android/` in Android Studio for app development. The reference app is debug-signed; production signing and distribution belong to the consuming application. Build, loader and resource-integrity checks pass. Device rendering, import performance and memory use require hardware assessment.
+
+## iOS
+
+The iOS edition is a **resource bundle and Swift loader for MapLibre Native**, intended for integration into an iOS application.
+
+| Resource | Location |
+| --- | --- |
+| Offline resource bundle, approximately 2 GB | [OpenBareMap.bundle](ios/package/OpenBareMap.bundle/) |
+| Swift loader | [OpenBareMapResources.swift](ios/OpenBareMapResources.swift) |
+| Xcode integration example | [INTEGRATION.txt](ios/INTEGRATION.txt) |
+| Packaging and validation | [iOS guide](ios/README.md) |
+
+Add the complete bundle as an Xcode resource and include the Swift loader in the app target. The loader resolves local style and resource paths for MapLibre Native without a local web server. The host app supplies the renderer, map interface and access to the attribution notices.
+
+The bundle contains map databases, townland points, styles, glyphs, sprites, a legend and provenance records. Resource integrity and Swift loader checks pass; MapLibre rendering and performance require simulator/device assessment. This package is an integration component rather than a standalone iOS app.
+
+## Browser viewer
+
+The repository includes a MapLibre GL JS viewer with an interactive legend. To restore the large files and open the map locally:
+
+```sh
+git clone https://github.com/davidowens1513/OpenBareMap.git
+cd OpenBareMap
 git lfs install --local
 git lfs pull
 python3 scripts/serve.py
 ```
 
-Open http://127.0.0.1:8765 while the server runs. It verifies `active-map.json` checksums, serves local resources, and converts XYZ requests to MBTiles TMS rows. Coast uses a separately capped source to overzoom its zoom-12 polygons while contours continue through zoom 14. The four selected databases are the fresh basemap, existing coast/contours, existing corrected hillshade, and copied grid. Their exact paths are in `active-map.json`.
+Open [http://127.0.0.1:8765](http://127.0.0.1:8765) while the server is running. The viewer serves local map, font, symbol and townland resources. Its active databases and checksums are listed in [active-map.json](active-map.json).
 
-MapLibre GL JS 5.6.1 and its stylesheet are vendored. All runtime map, glyph, sprite and townland requests are local. Attribution links are external only when followed. See `viewer-assets.lock.json`, `legacy-assets.lock.json` and the viewer's terrain attribution page.
+Git LFS is required to obtain the map databases, source archives and packaged binaries. A checkout containing only LFS pointer files is not a usable offline package.
 
-The legend reads active style colours, opacity, dash lengths and textures. Hillshade and contour density still affect the apparent colours on the map. The archived illustrated 1.1 legend is reference material, not the runtime legend.
+## Data, attribution and validation
 
-## Sources and rebuilding
+The OpenStreetMap extract covers Ireland and Northern Ireland and is dated **24 October 2026**. Terrain uses approximately 30-metre composite elevation data from Terrain Tiles. The 10-metre contour interval describes line spacing, not a guarantee of 10-metre terrain accuracy.
 
-The Geofabrik Ireland and Northern Ireland extract is dated 2026-10-24; its checksum is recorded in `sources.lock.json`. The OSM coast archive is recorded in `coast-sources.lock.json`. Elevation uses 30 Terrain Tiles skadi grids covering longitude -11 to -5 and latitude 51 to 56, with exact checksums in `terrain-sources.lock.json`. This elevation product is composite data, not pure SRTM. Mutable upstream URLs never silently replace locked source bytes.
+| Source or record | Details |
+| --- | --- |
+| OpenStreetMap extract | [sources.lock.json](sources.lock.json) |
+| Coastline data | [coast-sources.lock.json](coast-sources.lock.json) |
+| Elevation grids | [terrain-sources.lock.json](terrain-sources.lock.json) |
+| Townlands, Irish Grid and reference assets | [legacy-assets.lock.json](legacy-assets.lock.json) |
+| Elevation source notices | [Terrain attribution](viewer/terrain-attribution.html) |
+| Platform-specific source and tool records | [Garmin](garmin/README.md), [Android](android/README.md), [iOS](ios/README.md) |
 
-Use fresh build names: existing output directories are never overwritten.
+OpenStreetMap-derived data is subject to the [Open Database Licence](https://opendatacommons.org/licenses/odbl/1-0/), with [OpenStreetMap attribution](https://www.openstreetmap.org/copyright). Packages include source, font and other applicable notices; consuming applications must make those notices available to users.
 
-```sh
-python3 scripts/openbaremap.py build ireland-classic-d
-python3 scripts/openbaremap.py build ireland-classic-e
-python3 scripts/openbaremap.py compare ireland-classic-d ireland-classic-e
-python3 -m unittest discover -s tests -v
-```
+Source completeness, geographic accuracy and device readability require assessment independently of software tests. Cliff markings are not certified as indicating the downhill side. Source access tags do not establish a right of access or route safety. Townland, grid and font-generation recipes have incomplete provenance. Garmin inputs and tools are pinned, but the compiled map is not byte-for-byte reproducible across repeated builds.
 
-Build commands record the exact input, processor, configuration and Tilemaker binary. Restore the selected archives without rebuilding when those build names already exist. Terrain rebuild scripts are `scripts/build_topography.py` and `scripts/build_hillshade.py`; their records and locks retain the independent elevation provenance.
-
-The sprite atlas is assembled from the checked-in original terrain textures and a generated parking P. Install `assets/requirements.txt` in an isolated Python environment and run `python3 scripts/build_sprites.py`. Output hashes and Pillow version are in `assets/sprites.lock.json`.
-
-## Limits and remaining work
-
-This remains development cartography. Independent land-cover completeness, directional cliff correctness, bridge/tunnel ordering, nested route semantics, language policy and cross-device acceptance remain unfinished. The copied cliff pattern follows geometry, but has not been verified as indicating the downhill side. OSM access tags do not establish public access or route safety. The inherited townlands and grid are pinned binary/source assets with incomplete generation recipes. A portable pinned toolchain, fresh font generation and an app-independent release package are still required.
-
-Tests cover source classification and elevations, restored layer emission, tile integrity and row addressing, deterministic packaging, resource references, font/pattern availability, copied asset checksums and contour configuration. Reports distinguish build checks from independent geographic accuracy.
-
-Mountain names now start two zoom levels later: 600 m+ at zoom 11, 300–599 m at zoom 12, lower or unrecorded heights at zoom 13, and saddles at zoom 14. These presentation rules use retained numeric OSM elevations and do not require rebuilding geometry.
-
-Settlement names start at zoom 6 for cities, 8 for towns, 9 for villages and other localities, and 10 for hamlets. Townlands remain at zoom 12.
-
-A further two-zoom delay applies to all text labels except townlands: cities 8, towns 10, villages/localities 11, hamlets 12; mountains 600 m+ 13, 300–599 m 14, lower/unknown 15, saddles 16. Townlands stay at 12. Road, water, island, amenity, grid and contour text also starts two zooms later than before this adjustment. Geometry and parking symbols keep their previous visibility thresholds; parking text is a separate layer.
-
-The last global text delay is reduced from two zooms to one: cities 7, towns 9, villages/localities 10, hamlets 11; mountains 600 m+ 12, 300–599 m 13, lower/unknown 14, saddles 15. All other text from that adjustment also moves one zoom earlier. Townlands remain at 12.
-
-Grid and local boundaries use stronger strokes: 10 km grid at 72% opacity from zoom 10; 1 km grid at 60% from zoom 12; local boundaries at 80% from zoom 10. The legend uses the same paint values.
-
-Road visibility: major roads (motorway, trunk, primary and secondary) start at zoom 7. Minor/service roads, tracks and paths start at zoom 11. Walking and cycling route overlays, including national/international routes, also start at zoom 11. Matching casing layers use the same thresholds.
-
-Tracks and paths render as dashes only, without the shared continuous minor-road casing. Their legend samples likewise omit the casing.
-
-Footways, bridleways, cycleways and steps are drawn from zoom 11 as dash-only lines. Footways share the green path pattern; bridleways use longer olive-brown dashes, cycleways blue dashes, and steps short green marks. Pedestrian streets remain unstyled. Each has a style-derived legend entry.
-
-All text sizes except townlands are reduced by 1.5 screen pixels, including zoom-dependent size outputs; zoom stops and visibility thresholds are unchanged. Townlands remain 11.9 pixels.
-
-
-## Road connections, structures and text floor
-
-Motorway/trunk/primary/secondary link roads now use their parent road colours and zoom-7 threshold; tertiary links remain minor roads from zoom 11. Numeric OSM `layer` orders roads and railways together, with tunnels before surface ways and bridges after them at the same level. Untagged bridges default to level 1 and tunnels to -1; explicit levels take precedence. All levels found in the selected data are represented, including -6 and -1.5. This orders recorded crossings; it cannot repair missing or wrong source tags. Walking/cycling route overlays remain above the underlying network.
-
-Road bridges have darker, wider edges. Path/track bridge strokes are slightly wider but remain dashed with no solid casing. Tunnels use faded strokes; solid roads gain dashes, while dashed paths retain their own patterns. Access styling is unchanged. Runtime drawing passes are generated from `config/transport-style.json` by `python3 scripts/style_transport.py`; rerun it after editing the transport templates. `transport-report.json` records source class/structure/level counts and examples.
-
-Every text-size output is at least 6 pixels, including interpolated stops. Larger sizes and townlands are unchanged by this minimum.
-
-An iOS resource-bundle assembler and MapLibre Native runtime path loader are now in `ios/build_bundle.py` and `ios/`. The generated `.bundle` is stored under `ios/package/` in this repository, with large databases and townland GeoJSON tracked through Git LFS. See `ios/README.md` for integration and validation limits.
-
-Android support is under `android/`: a MapLibre Native Kotlin loader, Android Studio reference app, compiled test APK/AAR, and full offline resource package. Map data remains separate from the APK and is imported through the document picker. See `android/README.md` for building, package restore/export, integration and device-validation limits. Both Android and iOS share the capped-coast packaging helper.
-
-## Garmin Montana 750i
-
-The display-only Garmin export is in [garmin/](garmin/README.md), including the installable `garmin/dist/OpenBareMap-Ireland.img`, device instructions, legend, pinned inputs/tools and binary validation report. It covers the full island with 10 m contours and native DEM. Hardware rendering remains to be checked; strict byte-for-byte repeatability is not yet achieved. Garmin-specific files are kept separate from the iOS, Android and shared map resources.
+[Development history and build workflow](docs/development-history.md) describes the project's development, packaging approach and maintenance commands. [Architecture](docs/architecture.md) describes the underlying map pipeline.
