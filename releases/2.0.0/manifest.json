@@ -109,6 +109,11 @@
       "path": "scripts/build_sprites.py",
       "bytes": 3038,
       "sha256": "2e86034edda630606a3437e314342f0e8b1f444f30437321f20e7b4a57a25180"
+    },
+    {
+      "path": "scripts/build_app_legend.py",
+      "bytes": 9322,
+      "sha256": "18f49ccf6e83564177fbebc2cb2a455d51d3f6de1b36c1d6b47505bd3bd80c09"
     }
   ],
   "profiles": {
@@ -153,7 +158,7 @@
       "resources": {
         "path": "ios/package/OpenBareMap.bundle",
         "fileCount": 43,
-        "totalBytes": 1008308341,
+        "totalBytes": 1008356638,
         "manifest": {
           "path": "ios/package/OpenBareMap.bundle/manifest.json",
           "bytes": 2190,
@@ -162,7 +167,7 @@
         "resourceChecksumList": {
           "path": "ios/package/OpenBareMap.bundle/SHA256SUMS.txt",
           "bytes": 3918,
-          "sha256": "d671fc6f1e2b1dcffc9bb61c60a5b02849ce749895651e20fb830b014617efd6"
+          "sha256": "95f5797ba3274638330bba6ab68efbbb70a22b147c36fbcbbe16894ea5a71666"
         }
       },
       "loader": {
@@ -173,7 +178,7 @@
       "validation": {
         "path": "ios/package/validation.json",
         "bytes": 769,
-        "sha256": "a37b0da814cc73744716910fda26099e684626c1997479a5fcf513621c4a8922"
+        "sha256": "9c759d33f8e53e36bf1373443706d89f9c6b43a45d9b1debae9d750a6acf9e9d"
       },
       "contourIntervalMetres": 20
     },
@@ -181,7 +186,7 @@
       "resources": {
         "path": "android/package/OpenBareMap",
         "fileCount": 39,
-        "totalBytes": 1008288589,
+        "totalBytes": 1008336886,
         "manifest": {
           "path": "android/package/OpenBareMap/manifest.json",
           "bytes": 1602,
@@ -190,7 +195,7 @@
         "resourceChecksumList": {
           "path": "android/package/OpenBareMap/SHA256SUMS.txt",
           "bytes": 3571,
-          "sha256": "b284a7bcaa5138f8659a6fcc7a28ee7047b22467a8fd22c7dfbc91fde75a5630"
+          "sha256": "8ed7ff603759ca2e9182b20891314d5b70cbee89b7503d3ce6a6e49058cd7842"
         }
       },
       "referenceApp": {
@@ -205,15 +210,15 @@
       },
       "importArchive": {
         "path": "android/package/OpenBareMap-Android.zip",
-        "bytes": 1008293653,
-        "sha256": "02ff23a8e3040694e5f24bd0cf00b19e735440c108f8a9173b02f68bd754dc76",
+        "bytes": 1008341950,
+        "sha256": "7b807503c092467a9876f27ec549d651e70e8c7b12ee6680983d87a9faad25c7",
         "trackedInGit": false,
         "restoreCommand": "python3 android/build_package.py --zip-only"
       },
       "validation": {
         "path": "android/package/validation.json",
         "bytes": 728,
-        "sha256": "b042274f32cfc5257aa4e15c4a2df07c3a83737d970ade7fa572cca2b8cb631b"
+        "sha256": "1702dd01d92af7474db26825ff1a6418ff565426de2722a5bd6c389a5b891fa4"
       },
       "contourIntervalMetres": 20
     },
@@ -245,8 +250,8 @@
   "legends": {
     "maplibre": {
       "path": "app-legend/legend-manifest.json",
-      "bytes": 513,
-      "sha256": "15e94da604f91911a0efd647137b1cfe3dd527075f6306b03f17632ddf48da63"
+      "bytes": 639,
+      "sha256": "3468b4bcc6003af5fef961a85b88c57a40ff0e3b75b0f42b6f6c37957f0b1832"
     },
     "garmin": {
       "path": "garmin/dist/Montana-750i-Legend.png",
@@ -315,5 +320,6 @@
   "detailRevision": "2.0.0-20m",
   "localBorders": false,
   "countyBorders": true,
-  "spriteRevision": "2.0.0-cliffs-r1"
+  "spriteRevision": "2.0.0-cliffs-r1",
+  "legendRevision": "2.0.0-bold-r1"
 }

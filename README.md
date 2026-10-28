@@ -109,3 +109,5 @@ Source completeness, geographic accuracy and device readability require assessme
 [Development history and build workflow](docs/development-history.md) describes the project's development, packaging approach and maintenance commands. [Architecture](docs/architecture.md) describes the underlying map pipeline.
 
 Cliffs use a shared periodic teeth pattern with 16 × 6 logical-pixel cells, supplied at both atlas resolutions. Cliff line weight and visibility start at zoom 11. Device appearance comparison remains pending.
+
+The shared app legend uses bold dark labels, enlarged line samples and outlined colour swatches with enhanced contrast and saturation. These presentation adjustments aid reading; the map style is unchanged.

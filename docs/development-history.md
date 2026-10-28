@@ -107,3 +107,7 @@ Storage revision `2.0.0-storage-r3` removes contour segments wholly outside each
 ### Shared cliff pattern — 28 October 2026
 
 The inherited 48-pixel-wide cliff cell is replaced by a generated periodic cell, 64 pixels wide at pixel ratio 4 and 128 pixels wide at pixel ratio 8. Both represent a 16 × 6 logical-pixel cell containing four teeth. Rendering beyond the cell before cropping keeps antialiasing periodic. The other sprite entries retain their pixels and metadata. Cliff opacity, line width, source geometry and zoom thresholds are unchanged. The shared browser, iOS and Android resources and app legend use the same pattern; installed apps require resource updates, and matching native-device visual acceptance is pending.
+
+### Legend emphasis — 28 October 2026
+
+The shared app legend uses bold 17 px labels, line samples scaled 2.2× with minimum 2.2 px width and 0.9 opacity, stronger point markers and outlined landscape swatches enhanced to 1.3× saturation and 1.12× contrast. Both platform resource sets carry the same exports. These are legend-only presentation adjustments, noted in its footer and manifest; map rendering is unchanged.
