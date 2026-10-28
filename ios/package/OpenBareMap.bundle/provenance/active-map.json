@@ -2,12 +2,12 @@
   "format": "openbaremap-development-viewer-v1",
   "datasets": {
     "basemap": {
-      "path": "build/cartography-2.0/basemap.mbtiles",
-      "sha256": "cc35935af487e144a23391f0e53ec6b0e1a638a2438e98157e3f1e6fcbc7d600"
+      "path": "build/detail-2.0/basemap.mbtiles",
+      "sha256": "cb2e6ec1ebe474563422e44db2c5d30c2efa7c73ebb55a262b85508710943431"
     },
     "topography": {
-      "path": "build/cartography-2.0/topography.mbtiles",
-      "sha256": "fc79c9e20a5a440c6533318c3f3837edb5246df8225417d50e3b1ca67c2bf3c0"
+      "path": "build/padding-2.0/topography.mbtiles",
+      "sha256": "73811c156a62d3ce945bee34c9c2f2c8ad1bc66c87d4fd4d43e0ce314ed74ec5"
     },
     "hillshade": {
       "path": "build/hillshade-a/hillshade.mbtiles",
@@ -18,5 +18,10 @@
       "sha256": "449f6302f12b1d606de3e1d0467346e394e25c6c4c0b2b901f6a070873f58972"
     }
   },
-  "mapVersion": "2.0.0"
+  "mapVersion": "2.0.0",
+  "storageRevision": "2.0.0-storage-r3",
+  "detailRevision": "2.0.0-20m",
+  "contourIntervalMetres": 20,
+  "localBorders": false,
+  "spriteRevision": "2.0.0-cliffs-r1"
 }

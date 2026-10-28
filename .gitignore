@@ -28,3 +28,18 @@ work/
 build/cartography-2.0/*
 !build/cartography-2.0/basemap.mbtiles
 !build/cartography-2.0/topography.mbtiles
+
+!build/storage-2.0/
+build/storage-2.0/*
+!build/storage-2.0/basemap.mbtiles
+!build/storage-2.0/topography.mbtiles
+
+!build/detail-2.0/
+build/detail-2.0/*
+!build/detail-2.0/basemap.mbtiles
+!build/detail-2.0/topography.mbtiles
+
+# Selected contour storage revision
+!build/padding-2.0/
+build/padding-2.0/*
+!build/padding-2.0/topography.mbtiles

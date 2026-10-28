@@ -6,17 +6,17 @@
   "implementationCommit": "e562c5656d34e24615339220d1469299e8173222",
   "coverage": "Whole island of Ireland, including Northern Ireland and offshore islands",
   "osmSnapshot": "2026-10-24",
-  "contourIntervalMetres": 10,
+  "contourIntervalMetres": 20,
   "activeMap": {
     "format": "openbaremap-development-viewer-v1",
     "datasets": {
       "basemap": {
-        "path": "build/cartography-2.0/basemap.mbtiles",
-        "sha256": "cc35935af487e144a23391f0e53ec6b0e1a638a2438e98157e3f1e6fcbc7d600"
+        "path": "build/detail-2.0/basemap.mbtiles",
+        "sha256": "cb2e6ec1ebe474563422e44db2c5d30c2efa7c73ebb55a262b85508710943431"
       },
       "topography": {
-        "path": "build/cartography-2.0/topography.mbtiles",
-        "sha256": "fc79c9e20a5a440c6533318c3f3837edb5246df8225417d50e3b1ca67c2bf3c0"
+        "path": "build/padding-2.0/topography.mbtiles",
+        "sha256": "73811c156a62d3ce945bee34c9c2f2c8ad1bc66c87d4fd4d43e0ce314ed74ec5"
       },
       "hillshade": {
         "path": "build/hillshade-a/hillshade.mbtiles",
@@ -27,7 +27,12 @@
         "sha256": "449f6302f12b1d606de3e1d0467346e394e25c6c4c0b2b901f6a070873f58972"
       }
     },
-    "mapVersion": "2.0.0"
+    "mapVersion": "2.0.0",
+    "storageRevision": "2.0.0-storage-r3",
+    "detailRevision": "2.0.0-20m",
+    "contourIntervalMetres": 20,
+    "localBorders": false,
+    "spriteRevision": "2.0.0-cliffs-r1"
   },
   "sourceRecords": [
     {
@@ -59,13 +64,58 @@
       "path": "releases/2.0.0/vector-build-report.json",
       "bytes": 1878,
       "sha256": "29790d62fa276ba6e3298eb143644c41e070368c912cacd158b4e92c2d91c737"
+    },
+    {
+      "path": "config/storage-2.0.json",
+      "bytes": 540,
+      "sha256": "14fdd41f004bebe13df5558c6563e36880844275f7721e768a5f219cefade8c5"
+    },
+    {
+      "path": "releases/2.0.0/storage-report.json",
+      "bytes": 3051,
+      "sha256": "62f16c05d51bdc8746055e7d1c4c3fa417424dd018367784144083fe2a498ad1"
+    },
+    {
+      "path": "config/map-detail-2.0.json",
+      "bytes": 519,
+      "sha256": "0d8b977fa6776bceccee7826f40bced5c685c15835a6ade58a182ff6c40aed3b"
+    },
+    {
+      "path": "releases/2.0.0/detail-report.json",
+      "bytes": 2400,
+      "sha256": "1d8b79429dab6572536e032b133257068e54add2db18169d97bcdbf5dc471ad0"
+    },
+    {
+      "path": "config/contour-padding-2.0.json",
+      "bytes": 233,
+      "sha256": "1596322fe476b0dfddfd4cf0927b1781ffd691073c0346b8664cede246cb77c6"
+    },
+    {
+      "path": "scripts/trim_contour_padding.py",
+      "bytes": 5655,
+      "sha256": "e7324ed7a913cd97fe564112b28ceb88e5952789d4ff4dee221af4c2179ff5f3"
+    },
+    {
+      "path": "releases/2.0.0/contour-padding-report.json",
+      "bytes": 913,
+      "sha256": "609f1b1696e4b6767812d06cddfc546cd84e9e0544271ba5fff0307f9f0988ab"
+    },
+    {
+      "path": "assets/sprites.lock.json",
+      "bytes": 713,
+      "sha256": "2acd2cba3212581e0a1fc1d7800e7d8f374f3825af35c0100226bd1c226f3793"
+    },
+    {
+      "path": "scripts/build_sprites.py",
+      "bytes": 3038,
+      "sha256": "2e86034edda630606a3437e314342f0e8b1f444f30437321f20e7b4a57a25180"
     }
   ],
   "profiles": {
     "maplibre": {
       "path": "style/openbaremap.json",
-      "bytes": 2485109,
-      "sha256": "218af2e21e2eb7b8233fc80365f0f2f6562260848f3f3919d91fe75f096d68d0"
+      "bytes": 2483371,
+      "sha256": "9d1021314a47efea3600acc6859f11915256e387fce3f873eb3b5c9906879cdb"
     },
     "geometry": {
       "path": "config/cartography-2.0.json",
@@ -91,6 +141,11 @@
       "path": "garmin/toolchain.lock.json",
       "bytes": 767,
       "sha256": "3102365e2f17af3f70b80f963f8712b3ed00bc34abfff2cf6ce9bb7196d9912b"
+    },
+    "sharedDetail": {
+      "path": "config/map-detail-2.0.json",
+      "bytes": 519,
+      "sha256": "0d8b977fa6776bceccee7826f40bced5c685c15835a6ade58a182ff6c40aed3b"
     }
   },
   "platforms": {
@@ -98,16 +153,16 @@
       "resources": {
         "path": "ios/package/OpenBareMap.bundle",
         "fileCount": 43,
-        "totalBytes": 2599257720,
+        "totalBytes": 1008308341,
         "manifest": {
           "path": "ios/package/OpenBareMap.bundle/manifest.json",
-          "bytes": 1967,
-          "sha256": "ce288824bda80ff17d25620cf55ef3f4ac921e76180a9ab508d0ce7cead4c620"
+          "bytes": 2190,
+          "sha256": "0f3b97b77dc6cfc0c6278196bc88a90b5bf32e0e2f7fe26192df04e61e814925"
         },
         "resourceChecksumList": {
           "path": "ios/package/OpenBareMap.bundle/SHA256SUMS.txt",
           "bytes": 3918,
-          "sha256": "ca3207f9441663c226e4eb6d14b8ad6260fb7c88303fe996a8da5ddbe7ac8b27"
+          "sha256": "d671fc6f1e2b1dcffc9bb61c60a5b02849ce749895651e20fb830b014617efd6"
         }
       },
       "loader": {
@@ -118,23 +173,24 @@
       "validation": {
         "path": "ios/package/validation.json",
         "bytes": 769,
-        "sha256": "9c871172cd84f3b4526d542e3e5ec3ef0ca1c43852e556ab2ecd2ba46ddc4713"
-      }
+        "sha256": "a37b0da814cc73744716910fda26099e684626c1997479a5fcf513621c4a8922"
+      },
+      "contourIntervalMetres": 20
     },
     "android": {
       "resources": {
         "path": "android/package/OpenBareMap",
         "fileCount": 39,
-        "totalBytes": 2599238193,
+        "totalBytes": 1008288589,
         "manifest": {
           "path": "android/package/OpenBareMap/manifest.json",
-          "bytes": 1561,
-          "sha256": "83905ae15e1720feb193c0d302b40b4cccba276d43770ac1e24280967954eb5d"
+          "bytes": 1602,
+          "sha256": "2c513323faa3b2356cbc3ea17ad5c92e5cfda135699ad8884ec9f29004db39cc"
         },
         "resourceChecksumList": {
           "path": "android/package/OpenBareMap/SHA256SUMS.txt",
           "bytes": 3571,
-          "sha256": "1de5c7214bee896e32f87230805fb8fb92fc800610ce77ee9cc47930547b8470"
+          "sha256": "b284a7bcaa5138f8659a6fcc7a28ee7047b22467a8fd22c7dfbc91fde75a5630"
         }
       },
       "referenceApp": {
@@ -149,16 +205,17 @@
       },
       "importArchive": {
         "path": "android/package/OpenBareMap-Android.zip",
-        "bytes": 2599243525,
-        "sha256": "4e522d9958df90f45345f760e79f4a18c8d35b8a9882afc4f5b607a817ce4951",
+        "bytes": 1008293653,
+        "sha256": "02ff23a8e3040694e5f24bd0cf00b19e735440c108f8a9173b02f68bd754dc76",
         "trackedInGit": false,
         "restoreCommand": "python3 android/build_package.py --zip-only"
       },
       "validation": {
         "path": "android/package/validation.json",
         "bytes": 728,
-        "sha256": "5581e09f69e0a86a8e81e770ec2e1b41304c55071594dbc2c70a90977ad3b890"
-      }
+        "sha256": "b042274f32cfc5257aa4e15c4a2df07c3a83737d970ade7fa572cca2b8cb631b"
+      },
+      "contourIntervalMetres": 20
     },
     "garmin": {
       "targetDevices": [
@@ -181,14 +238,15 @@
         "path": "garmin/device-installations.json",
         "bytes": 916,
         "sha256": "2a2ecb03517bf9391055bdcd7469eb66a9ba6c0c20490ca629c69e88d5e3df97"
-      }
+      },
+      "contourIntervalMetres": 10
     }
   },
   "legends": {
     "maplibre": {
       "path": "app-legend/legend-manifest.json",
       "bytes": 513,
-      "sha256": "2fe5a9f3e9a6a9b874a4b7ad0e114ad99ca96ed5b0d2b01e334140dba9a1a53d"
+      "sha256": "15e94da604f91911a0efd647137b1cfe3dd527075f6306b03f17632ddf48da63"
     },
     "garmin": {
       "path": "garmin/dist/Montana-750i-Legend.png",
@@ -197,7 +255,7 @@
     }
   },
   "validation": {
-    "pythonTestsPassed": 25,
+    "pythonTestsPassed": 36,
     "androidLoaderTests": {
       "tests": "5",
       "failures": "0",
@@ -208,10 +266,22 @@
     "mobileResourcesMatch": true,
     "allMobileResourceChecksumsVerified": true,
     "unrelatedVectorLayersUnchanged": true,
-    "browserVisualCheck": "Kerry/Carrauntoohil at zoom 12 and a wider overview",
+    "browserVisualCheck": "Revised cliff teeth rendered at Carrauntoohil zoom 14; native-device visual comparison pending.",
     "garminBinaryReadback": true,
     "version2HardwareRenderingTested": "Montana townland labels accepted; complete multi-device rendering acceptance pending",
-    "version2InstalledOnHandhelds": true
+    "version2InstalledOnHandhelds": true,
+    "storageOptimization": {
+      "detailedTilesByteIdentical": false,
+      "retainedOverviewFeatureGeometryAndAttributesVerified": true,
+      "coastLandBytesAndEmptyTilePositionsPreserved": true,
+      "nativeDevicesRetested": false,
+      "note": "Distant contour segments omitted; original coordinates retained for all segments intersecting padded tile. Other layers and all tile coordinates retained.",
+      "contourOriginalSegmentsWithinPaddedTilePreserved": true,
+      "contourPaddingTileUnits": 1024
+    },
+    "allTilePositionsAndUnrelatedLayersVerified": 219603,
+    "cliffSpritesMatchAcrossPackages": true,
+    "otherSpritePixelsUnchanged": true
   },
   "personalTrackOverlayIncluded": false,
   "recompilationGuarantee": "Exact distributed artifacts and inputs are checksum-pinned. Byte-identical recompilation is not claimed.",
@@ -228,6 +298,22 @@
       },
       "gitTagNote": "v2.0.0 preserves the original release; this Garmin-only revision is recorded in subsequent repository history.",
       "hardwareReview": "Montana townland appearance accepted; 67i and H1 full-file installation verified, visual review pending."
+    },
+    "sharedMap": {
+      "revision": "2.0.0-20m",
+      "storageRevision": "2.0.0-storage-r3",
+      "date": "2026-10-28",
+      "scope": "Shared browser/iOS/Android map: 20 m contours; county/national borders; contour segments outside quarter-tile padding omitted",
+      "publicationStatus": "repository package revision",
+      "retainedGeometryChanged": true,
+      "garminUnchanged": true,
+      "visibleContourCoordinatesChanged": false,
+      "spriteRevision": "2.0.0-cliffs-r1"
     }
-  }
+  },
+  "storageRevision": "2.0.0-storage-r3",
+  "detailRevision": "2.0.0-20m",
+  "localBorders": false,
+  "countyBorders": true,
+  "spriteRevision": "2.0.0-cliffs-r1"
 }

@@ -17,7 +17,7 @@ OpenBareMap — MapLibre Native iOS resource integration
 
 The style.json inside the bundle is a template. Do not assign it directly to mapView.styleURL: sandbox paths contain a runtime application identifier. The Swift helper substitutes absolute mbtiles:///... URLs and absolute local file URLs for glyphs, sprites and townlands. It does not require a web tile service or localhost server. The bundle contains no executable code and no GPS/location permission request.
 
-The dedicated coast archive includes unchanged low-zoom terrain tile payloads capped at zoom 12. The coast style only renders its land layer, allowing overzoom without dropping land polygons. Contours use the complete topography archive through zoom 14. Grid maxzoom is 13; hillshade maxzoom is 12. Normal renderer overzoom applies.
+The dedicated coast archive includes only unchanged low-zoom land-layer payloads capped at zoom 12; explicit empty tile positions are retained. The coast style only renders its land layer, allowing overzoom without dropping land polygons. Contours use the complete topography archive through zoom 14. Grid maxzoom is 13; hillshade maxzoom is 12. Normal renderer overzoom applies.
 
 Verify SHA256SUMS.txt before distribution. Sources and renderer integration are deliberately separate. MapLibre Native's local MBTiles feature and styleURL loading are required; confirm support in the SDK version used by the app. Do not treat this resource bundle as a MapLibre offline-pack database or a Mapbox SDK package.
 

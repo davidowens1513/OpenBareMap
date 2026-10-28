@@ -1,0 +1,62 @@
+{
+  "revision": "2.0.0-20m",
+  "storageRevision": "2.0.0-storage-r2",
+  "contourIntervalMetres": 20,
+  "localBorders": false,
+  "countyBorders": true,
+  "nationalBorders": true,
+  "sourceConfigSHA256": "0d8b977fa6776bceccee7826f40bced5c685c15835a6ade58a182ff6c40aed3b",
+  "builderSHA256": "c31a04b767da4421e1a54e51f00c138ca63faeb25432a79112cf4bc12773b694",
+  "styleSHA256": "9d1021314a47efea3600acc6859f11915256e387fce3f873eb3b5c9906879cdb",
+  "outputs": {
+    "basemap": {
+      "source": {
+        "path": "build/storage-2.0/basemap.mbtiles",
+        "sha256": "5d1f11f5424ffb7feeb4d2956e612a9c7e3182d58007dcbfb09f2994981b98fe"
+      },
+      "path": "build/detail-2.0/basemap.mbtiles",
+      "sha256": "cb2e6ec1ebe474563422e44db2c5d30c2efa7c73ebb55a262b85508710943431",
+      "bytes": 679026688,
+      "tiles": 99548,
+      "removedFeatureInstances": 1850113,
+      "everyTileValidated": true,
+      "allRetainedGeometryAndAttributesVerified": true,
+      "allOtherLayerPayloadsByteIdentical": true
+    },
+    "topography": {
+      "source": {
+        "path": "build/storage-2.0/topography.mbtiles",
+        "sha256": "ca613eb8d1ed8cb1513959cbc1a522d5edbb29986ba6e017a2474dfec6d8ba0c"
+      },
+      "path": "build/detail-2.0/topography.mbtiles",
+      "sha256": "f7d86f2ed61ab3a4bb0b98554a036000094b9c5c1b546aced3ea688082b5eafd",
+      "bytes": 467628032,
+      "tiles": 219603,
+      "removedFeatureInstances": 791075,
+      "everyTileValidated": true,
+      "allRetainedGeometryAndAttributesVerified": true,
+      "allOtherLayerPayloadsByteIdentical": true
+    }
+  },
+  "packages": {
+    "ios": {
+      "bytes": 1284159549,
+      "manifestSHA256": "71fce718da278a71bf31bb6e23f471726e64d6fd8b2d6423f7be16057dedf668",
+      "checksumsSHA256": "ffe96f4dbe4ca5260508288c6a9a24fbd835378c95cb1e3b0748e7144e84dfb1"
+    },
+    "android": {
+      "bytes": 1284139797,
+      "manifestSHA256": "fbbf778ad3846e020c8fe4e595e690673bbad37dc81265b06b6034d7e0dd41fb",
+      "checksumsSHA256": "a11d77384a8c6eaa7d18e4760fda78db02e7d1343c831d18755028929fb1cb5b"
+    }
+  },
+  "validation": {
+    "pythonTestsPassed": 31,
+    "iosLoaderSmokeTest": true,
+    "androidLoaderTestsPassed": 5,
+    "matchingMobileDatabases": true,
+    "allPackageChecksumsVerified": true,
+    "browserVisualCheck": "Kerry / Carrauntoohil, zoom 12, ready; 20 m badge and matching legend",
+    "nativeDeviceRenderingRetested": false
+  }
+}

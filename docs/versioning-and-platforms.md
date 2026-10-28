@@ -18,6 +18,10 @@ OpenBareMap's map release is **2.0.0**, identified by Git tag **v2.0.0** and the
 
 The release manifest refers to an implementation commit and hashes the files and package records that define the release. The original `v2.0.0` tag points to its complete release snapshot, including its manifest and platform deliverables. The current manifest also records Garmin package revision `2.0.0-townland-labels`, a subsequent platform-only adaptation; checking out the original tag restores the original Garmin artifact. A code revision recorded inside a package need not equal the final release commit, which also contains generated outputs and documentation.
 
+The selected shared detail revision is `2.0.0-20m`, with storage revision `2.0.0-storage-r3` and map version 2.0.0. Browser, iOS and Android use 20 m contours with 100 m index lines, national borders and county borders. Local border lines are omitted; townland and settlement names remain. Contour segments intersecting the tile plus a 128-pixel buffer retain their original coordinates and attributes; distant segments are omitted. Other feature geometry is unchanged. The [detail report](../releases/2.0.0/detail-report.json) pins the selected inputs and outputs; [map-detail configuration](../config/map-detail-2.0.json) and the detail builder reproduce the selection from preserved 10 m source databases. The land-only coast archive retains its empty tile positions. Earlier storage measurements are retained in the [storage report](../releases/2.0.0/storage-report.json).
+
+Garmin remains a separate 10 m contour package; this shared-map selection does not alter its IMG. Existing mobile app installations need updated resources to use the selected shared map.
+
 The iOS and Android packages use matching map-database hashes and styling layers, verified during release validation. Retain their manifests and resource checksums alongside any distributed packages.
 
 An exact release artifact can be restored and verified by checksum without recompiling it. Strict binary recompilation is not guaranteed. Garmin has documented repeated-build differences beyond creation timestamps; the release pins its distributed bytes rather than claiming identical regenerated output. Portable toolchain and inherited resource-generation limitations remain documented in the platform guides.
@@ -57,3 +61,5 @@ Recorded tracks form a separate transparent Garmin layer. They can be updated or
 - Record a device installation's map release, exact installed-file checksum, platform profile and any optional overlay version.
 
 [Development history and build workflow](development-history.md) records development and build details. [Back to the README](../README.md).
+
+Contour storage is pinned by [configuration](../config/contour-padding-2.0.json) and the [full-island report](../releases/2.0.0/contour-padding-report.json). `scripts/trim_contour_padding.py` reproduces the selected topography database from the preserved 20 m source. Segments crossing the padded tile are retained whole, including their original endpoints; no curve simplification or intersection coordinates are introduced. Tile positions, empty tiles and other layer bytes are preserved. At a 512-pixel tile size the buffer is 128 pixels (1024 of 4096 tile coordinate units). Native device rendering acceptance remains pending.

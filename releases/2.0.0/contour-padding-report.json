@@ -1,0 +1,26 @@
+{
+  "revision": "2.0.0-storage-r3",
+  "input": {
+    "path": "build/detail-2.0/topography.mbtiles",
+    "sha256": "f7d86f2ed61ab3a4bb0b98554a036000094b9c5c1b546aced3ea688082b5eafd"
+  },
+  "output": {
+    "path": "build/padding-2.0/topography.mbtiles",
+    "sha256": "73811c156a62d3ce945bee34c9c2f2c8ad1bc66c87d4fd4d43e0ce314ed74ec5",
+    "bytes": 191774720
+  },
+  "sourceBytes": 467628032,
+  "savedBytes": 275853312,
+  "paddingTileUnits": 1024,
+  "paddingPixelsAt512TileSize": 128,
+  "tileCount": 219603,
+  "allTileCoordinatesPreserved": true,
+  "visibleSegmentsPreservedWithoutCoordinateChanges": true,
+  "otherLayersByteUnchanged": true,
+  "inputSegments": 261260372,
+  "retainedSegments": 83345719,
+  "removedOutsideSegments": 177914653,
+  "changedFeatures": 283752,
+  "productionOutputMatchesVisuallyCheckedTrial": true,
+  "builderSHA256": "e7324ed7a913cd97fe564112b28ceb88e5952789d4ff4dee221af4c2179ff5f3"
+}

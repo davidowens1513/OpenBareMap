@@ -1,0 +1,91 @@
+{
+  "storageRevision": "2.0.0-storage-r1",
+  "mapVersion": "2.0.0",
+  "styleSHA256": "218af2e21e2eb7b8233fc80365f0f2f6562260848f3f3919d91fe75f096d68d0",
+  "geometryChanged": false,
+  "outputs": {
+    "basemap": {
+      "source": "build/cartography-2.0/basemap.mbtiles",
+      "path": "build/storage-2.0/basemap.mbtiles",
+      "beforeBytes": 1062797312,
+      "afterBytes": 742858752,
+      "sha256": "5d1f11f5424ffb7feeb4d2956e612a9c7e3182d58007dcbfb09f2994981b98fe",
+      "tiles": 99548,
+      "changedOverviewTiles": 312,
+      "unchangedTilePayloads": 99236,
+      "removedHiddenFeatureInstances": {
+        "boundary": 1703839,
+        "landcover": 0,
+        "place": 0,
+        "transportation": 7484581,
+        "water": 0,
+        "waterway": 0,
+        "ferry": 0,
+        "railway": 0,
+        "island_name": 0,
+        "hiking_route": 0,
+        "mountain": 0,
+        "station": 0,
+        "poi": 0,
+        "transportation_name": 0,
+        "hiking_poi": 0
+      },
+      "allRetainedGeometryAndAttributesVerified": true,
+      "allZoom11Through14TilePayloadsUnchanged": true
+    },
+    "topography": {
+      "source": "build/cartography-2.0/topography.mbtiles",
+      "path": "build/storage-2.0/topography.mbtiles",
+      "beforeBytes": 1040777216,
+      "afterBytes": 848384000,
+      "sha256": "ca613eb8d1ed8cb1513959cbc1a522d5edbb29986ba6e017a2474dfec6d8ba0c",
+      "tiles": 219603,
+      "changedOverviewTiles": 342,
+      "unchangedTilePayloads": 219261,
+      "removedHiddenFeatureInstances": {
+        "land": 0,
+        "contour": 652537
+      },
+      "allRetainedGeometryAndAttributesVerified": true,
+      "allZoom11Through14TilePayloadsUnchanged": true
+    }
+  },
+  "coast": {
+    "beforeBytes": 367120384,
+    "afterBytes": 8953856,
+    "allLandLayerPayloadsUnchanged": true,
+    "allCoordinatesAndEmptyTilesPreserved": true,
+    "tiles": 14743
+  },
+  "packages": {
+    "ios": {
+      "beforeBytes": 2599257720,
+      "afterBytes": 1728759715,
+      "savedBytes": 870498005,
+      "savingPercent": 33.49
+    },
+    "android": {
+      "beforeBytes": 2599238193,
+      "afterBytes": 1728739963,
+      "savedBytes": 870498230,
+      "savingPercent": 33.49
+    }
+  },
+  "validation": {
+    "pythonTestsPassed": 28,
+    "iosLoaderSmokeTest": true,
+    "androidLoaderTestsPassed": 5,
+    "matchingMobileMapDatabases": true,
+    "allPackageChecksumsVerified": true,
+    "browserVisualChecks": "Overview zooms 8 and 10; close-up Kerry zoom 12 ready; detailed tiles 11\u201314 byte-identical",
+    "nativeDeviceRenderingRetested": false
+  },
+  "notes": [
+    "Source geometry is not simplified further.",
+    "Only features hidden at overview zooms by the checksum-pinned style are removed.",
+    "Zooms 11 through 14 preserve original tile payloads byte for byte.",
+    "Garmin and the BareGPS-Ireland-Android app repository are unchanged."
+  ],
+  "optimizerSHA256": "94a59fbddd2840f2a575fcd1f41a93620ed34acc89cc1bb7a3ada806cbcc3236",
+  "coastPackagerSHA256": "dd510a1edde9287a24409c9b809197a7b91e675c5e23b4e436f824a4750867e9"
+}

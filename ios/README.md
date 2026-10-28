@@ -22,3 +22,9 @@ swiftc ios/OpenBareMapResources.swift ios/tests/main.swift -o /tmp/OpenBareMapLo
 The loader was also typechecked against the iOS Simulator SDK for arm64/iOS 15. `bundle-validation.json` records the resource/SQLite/loader checks. Actual MapLibre rendering, memory use and performance on a simulator/device remain unverified. No device acceptance is claimed.
 
 All iOS-specific code, integration notes, tests and packaged resources live under `ios/`. `package/` contains the ready-to-copy bundle, loader and instructions. Run `git lfs pull` after cloning to restore its MBTiles and townland GeoJSON. The default assembler destination is `ios/package`; pass a fresh `--output` directory when it already exists.
+
+## Map storage revision
+
+The current resource package uses `2.0.0-storage-r3`, approximately 1.01 GB. It preserves all-Ireland coverage, 20 m contours and national/county borders. Local border lines are omitted; townland and settlement names remain. Contour segments intersecting the tile plus a 128-pixel buffer retain their original coordinates and attributes; distant segments are omitted. Other feature geometry is unchanged. Overview tiles omit features the pinned style does not display. The capped coast archive contains only the unchanged land layer, with empty tile positions retained. Resource checksums and package validation identify the exact files. Existing app installations require a resource update. The BareGPS Android app includes these resources; the Samsung SM-A075F installation is verified. iOS device appearance comparison remains pending.
+
+Cliffs use a shared periodic teeth pattern with 16 × 6 logical-pixel cells, supplied at both atlas resolutions. Cliff line weight and visibility start at zoom 11. Device appearance comparison remains pending.

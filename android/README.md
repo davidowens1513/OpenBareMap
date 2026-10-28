@@ -36,7 +36,7 @@ This exports the import ZIP from `android/package/OpenBareMap/`, verifying check
 python3 android/build_package.py --output /absolute/path/to/new-package
 ```
 
-It reads `active-map.json` and the shared style/fonts/sprites/legend. It does not read the iOS bundle. Both platform builders share the coast-capping function in `scripts/package_resources.py`. The capped coast archive keeps coast overzoom separate from the full 10 m contour archive.
+It reads `active-map.json` and the shared style/fonts/sprites/legend. It does not read the iOS bundle. Both platform builders share the coast-capping function in `scripts/package_resources.py`. The capped coast archive keeps coast overzoom separate from the full 20 m contour archive.
 
 ## Use the loader in another Android app
 
@@ -65,3 +65,9 @@ Tests cover escaped sandbox paths, offline URL resolution, repeatable installati
 The reference APK and loader AAR compile successfully; real package checks and SQLite integrity checks pass. No connected device or configured emulator was available, so Android rendering, import speed, memory use and UI layout remain to be tested on hardware. The reference app does not yet provide a production map-update service, release signing or old-version management.
 
 References: [MapLibre Android quickstart](https://maplibre.org/maplibre-native/android/examples/getting-started/), [renderer artifacts](https://maplibre.org/maplibre-native/android/examples/artifacts/), [Style.Builder.fromJson](https://maplibre.org/maplibre-native/android/api/-map-libre%20-native%20-android/org.maplibre.android.maps/-style/-builder/from-json.html), [local MBTiles discussion](https://github.com/maplibre/maplibre-native/discussions/393).
+
+## Map storage revision
+
+The current resource package uses `2.0.0-storage-r3`, approximately 1.01 GB. It preserves all-Ireland coverage, 20 m contours and national/county borders. Local border lines are omitted; townland and settlement names remain. Contour segments intersecting the tile plus a 128-pixel buffer retain their original coordinates and attributes; distant segments are omitted. Other feature geometry is unchanged. Overview tiles omit features the pinned style does not display. The capped coast archive contains only the unchanged land layer, with empty tile positions retained. Resource checksums and package validation identify the exact files. Existing app installations require a resource update. The BareGPS Android app includes these resources; the Samsung SM-A075F installation is verified. iOS device appearance comparison remains pending.
+
+Cliffs use a shared periodic teeth pattern with 16 × 6 logical-pixel cells, supplied at both atlas resolutions. Cliff line weight and visibility start at zoom 11. Device appearance comparison remains pending.

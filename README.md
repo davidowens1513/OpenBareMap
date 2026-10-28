@@ -2,11 +2,11 @@
 
 OpenBareMap is an offline topographic map of the whole island of Ireland, including Northern Ireland and offshore islands. It provides map resources for Garmin handhelds, Android and iOS, plus a browser viewer for inspecting the map on a computer.
 
-The shared map release is **2.0.0**. Git tag `v2.0.0` preserves the original release snapshot; the [release manifest](releases/2.0.0/manifest.json) records the current packages, including the Garmin-only townland-label revision. Platform packages record their source revision and resource checksums.
+The shared map release is **2.0.0**. Git tag `v2.0.0` preserves the original release snapshot; the [release manifest](releases/2.0.0/manifest.json) records the current packages, including the Garmin-only townland-label revision. Platform packages record their source revision and resource checksums. The current shared storage revision is **2.0.0-storage-r3**; the shared map uses 20 m contours and national/county borders. The iOS and Android resource sets are approximately **1.01 GB each**. The main databases total approximately **987 MB**. [Contour storage checks](releases/2.0.0/contour-padding-report.json) and [detail selection checks](releases/2.0.0/detail-report.json) record validation.
 
 ## The map
 
-- **Terrain:** Gently smoothed 10-metre contours with fine overview strokes for 100 m and 50 m lines, hillshade, summit and saddle names, summit dots and fine cliff markings.
+- **Terrain:** Gently smoothed 20-metre contours with fine overview strokes for 100 m index lines, hillshade, summit and saddle names, summit dots and fine cliff markings.
 - **Land cover:** smoothed boundaries for woodland, farmland, grass, heath, scrub, wetlands, textured bog, peat workings, rock, scree, sand and beaches.
 - **Transport:** roads and connecting links, tracks, paths, footways, bridleways, cycleways, steps, walking and cycling routes, railways and ferries.
 - **Places and facilities:** settlements, townlands, islands, water names, outdoor facilities and points of interest. Parking uses a white P on blue; outdoor facilities use dots and text.
@@ -89,7 +89,7 @@ Git LFS is required to obtain the map databases, source archives and packaged bi
 
 ## Data, attribution and validation
 
-The OpenStreetMap extract covers Ireland and Northern Ireland and is dated **24 October 2026**. Terrain uses approximately 30-metre composite elevation data from Terrain Tiles. The 10-metre contour interval describes line spacing, not a guarantee of 10-metre terrain accuracy.
+The OpenStreetMap extract covers Ireland and Northern Ireland and is dated **24 October 2026**. Terrain uses approximately 30-metre composite elevation data from Terrain Tiles. The shared map’s 20-metre contour interval describes line spacing, not a statement of terrain accuracy.
 
 | Source or record | Details |
 | --- | --- |
@@ -107,3 +107,5 @@ Source completeness, geographic accuracy and device readability require assessme
 [Map versioning and platform adaptations](docs/versioning-and-platforms.md) explains what is pinned, how each application uses the map, and the proposed release structure.
 
 [Development history and build workflow](docs/development-history.md) describes the project's development, packaging approach and maintenance commands. [Architecture](docs/architecture.md) describes the underlying map pipeline.
+
+Cliffs use a shared periodic teeth pattern with 16 × 6 logical-pixel cells, supplied at both atlas resolutions. Cliff line weight and visibility start at zoom 11. Device appearance comparison remains pending.

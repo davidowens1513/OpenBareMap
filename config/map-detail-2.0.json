@@ -1,0 +1,18 @@
+{
+  "revision": "2.0.0-20m",
+  "storageRevision": "2.0.0-storage-r2",
+  "contourIntervalMetres": 20,
+  "localBorders": false,
+  "countyBorders": true,
+  "nationalBorders": true,
+  "inputs": {
+    "basemap": {
+      "path": "build/storage-2.0/basemap.mbtiles",
+      "sha256": "5d1f11f5424ffb7feeb4d2956e612a9c7e3182d58007dcbfb09f2994981b98fe"
+    },
+    "topography": {
+      "path": "build/storage-2.0/topography.mbtiles",
+      "sha256": "ca613eb8d1ed8cb1513959cbc1a522d5edbb29986ba6e017a2474dfec6d8ba0c"
+    }
+  }
+}

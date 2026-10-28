@@ -87,3 +87,23 @@ Use new package/build destinations where the platform builder requires them. Kee
 ### Garmin 2.0 townland label adaptation — 27 October 2026
 
 Townlands use the standard region-text point category `0x1e00`, NormalFont and muted grey-brown `#817b70`, without a marker. A font-only change to the previous custom category did not expose the labels on the Montana 750i. The standard category produced larger labels with mixed-case appearance; this result was accepted for Garmin 2.0. The input names remain uppercase, but displayed capitalisation follows the handheld. The same revision was subsequently installed on the GPSMAP 67i and GPSMAP H1, with full read-back verification. Their on-screen appearance remains to be reviewed. The shared map, iOS and Android remain unchanged. The distribution and checksum manifest contain the accepted IMG; the existing `v2.0.0` Git tag preserves the original release, while the Garmin-only revision is recorded in subsequent repository history.
+
+
+### Shared map storage revision — 28 October 2026
+
+The `2.0.0-storage-r1` pass rewrites the selected basemap and topography databases into compact files. It omits minor roads below zoom 11, all roads below zoom 7, local boundaries below zoom 10, county boundaries below zoom 6, and non-100 m contours below zoom 11, matching the current style. Retained features preserve geometry and attributes; all tile coordinates and detailed payloads at zooms 11–14 are retained. Unused overview attribute-table entries are pruned after filtering. No further geometric simplification is applied.
+
+The mobile coast packager retains only land-layer payloads through zoom 12, including explicit empty tiles to preserve fallback behaviour. Both native resource packages are reassembled and verified, without changing the Garmin IMG or the separate BareGPS Android application repository. Run `python3 scripts/optimize_storage.py` only with fresh output paths; `config/storage-2.0.json` pins baseline inputs and the style. The script refuses changed inputs/styles or pre-existing outputs.
+
+
+### Selected 20 m detail — 28 October 2026
+
+The shared browser/iOS/Android map retains national and county borders and omits local border lines. Contour features are selected at elevations divisible by 20, with 100 m index lines; the separate 50 m contour treatment is removed. Names are retained. The source 10 m geometry is preserved for regeneration and the independent Garmin profile. `config/map-detail-2.0.json` pins inputs; `scripts/build_map_detail.py` applies the selection without modifying retained coordinates or attributes. Every selected tile is checked against this rule and unaffected layer bytes are compared. New native resource packages and legends share this selection. No device app installation or Garmin rebuild is performed.
+
+### Contour tile padding — 28 October 2026
+
+Storage revision `2.0.0-storage-r3` removes contour segments wholly outside each tile plus a quarter-tile buffer. Crossing segments retain their original endpoints and coordinates. This avoids approximate curve simplification and leaves land cover unchanged. The full-island reduction is 275,853,312 bytes, with all tile positions and unrelated layer payloads retained. The main databases total 986,509,312 bytes; mobile resources are approximately 1.01 GB each. The pinned builder, configuration and contour-padding report describe the operation. Browser comparison was performed in Kerry at zoom 14; native hardware has not been retested. Garmin and the separate BareGPS Android application repository are unchanged.
+
+### Shared cliff pattern — 28 October 2026
+
+The inherited 48-pixel-wide cliff cell is replaced by a generated periodic cell, 64 pixels wide at pixel ratio 4 and 128 pixels wide at pixel ratio 8. Both represent a 16 × 6 logical-pixel cell containing four teeth. Rendering beyond the cell before cropping keeps antialiasing periodic. The other sprite entries retain their pixels and metadata. Cliff opacity, line width, source geometry and zoom thresholds are unchanged. The shared browser, iOS and Android resources and app legend use the same pattern; installed apps require resource updates, and matching native-device visual acceptance is pending.

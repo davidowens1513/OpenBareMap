@@ -1,9 +1,12 @@
 {
   "packageFormat": "openbaremap-ios-resources-v1",
   "mapVersion": "2.0.0",
-  "cartography": "OpenBareMap 2.0; 10 m contours",
-  "sourceCommit": "e562c5656d34e24615339220d1469299e8173222",
-  "sourceStyleSHA256": "218af2e21e2eb7b8233fc80365f0f2f6562260848f3f3919d91fe75f096d68d0",
+  "storageRevision": "2.0.0-storage-r3",
+  "cartography": "OpenBareMap 2.0; 20 m contours",
+  "sourceCommit": "5bf95e1198c15c60849c0701e258d9dba4cd11de",
+  "packagerSHA256": "796dd421c889f8d9643d1a05f9459ab6f482d50ce7ba00e988341cd18a2aa62c",
+  "sourceRevisionNote": "Base repository commit; resource/style checksums and storageRevision identify this package.",
+  "sourceStyleSHA256": "9d1021314a47efea3600acc6859f11915256e387fce3f873eb3b5c9906879cdb",
   "renderer": "MapLibre Native iOS",
   "style": "style.json",
   "requiresRuntimePathResolution": true,
@@ -18,11 +21,11 @@
   "datasets": {
     "basemap": {
       "path": "maps/basemap.mbtiles",
-      "sha256": "cc35935af487e144a23391f0e53ec6b0e1a638a2438e98157e3f1e6fcbc7d600"
+      "sha256": "cb2e6ec1ebe474563422e44db2c5d30c2efa7c73ebb55a262b85508710943431"
     },
     "topography": {
       "path": "maps/topography.mbtiles",
-      "sha256": "fc79c9e20a5a440c6533318c3f3837edb5246df8225417d50e3b1ca67c2bf3c0"
+      "sha256": "73811c156a62d3ce945bee34c9c2f2c8ad1bc66c87d4fd4d43e0ce314ed74ec5"
     },
     "hillshade": {
       "path": "maps/hillshade.mbtiles",
@@ -34,13 +37,13 @@
     },
     "coast": {
       "path": "maps/coast.mbtiles",
-      "sha256": "cfac26cbc4caaa38797b7e70bea4730e136d2e3a481030efd9c7a495b4d97cb0",
-      "derived_from": "fc79c9e20a5a440c6533318c3f3837edb5246df8225417d50e3b1ca67c2bf3c0",
+      "sha256": "89df36cc0e9a977775e443e9a8abf906431405334db723d702558d7f53751feb",
+      "derived_from": "73811c156a62d3ce945bee34c9c2f2c8ad1bc66c87d4fd4d43e0ce314ed74ec5",
       "maxzoom": 12,
-      "operation": "Copy unchanged coordinate-sorted tile payloads through zoom 12; update source metadata maxzoom."
+      "operation": "Preserve land-layer MVT bytes only through zoom 12; omit other layers."
     }
   },
-  "contourIntervalMetres": 10,
+  "contourIntervalMetres": 20,
   "osmSnapshot": "2026-10-24",
   "inheritedAssets": "Townlands, Irish Grid, font glyphs and original patterns are pinned 1.1 assets; see provenance/legacy-assets.lock.json",
   "validation": "Resource integrity and loader tests; actual iOS device rendering remains to be verified."

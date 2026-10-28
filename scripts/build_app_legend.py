@@ -77,7 +77,7 @@ heading(528,153,'Roads & routes')
 rows=[('Major road','roads-major','primary','roads-casing-major'),('Minor road','roads-minor','residential','roads-casing-minor'),('Service road','roads-minor','service','roads-casing-minor'),('Road bridge','roads-major--bridge-1','primary','roads-casing-major--bridge-1'),('Tunnel','roads-major--tunnel--1','primary',None),('Track','tracks',None,None),('Path / footway','paths',None,None),('Bridleway','bridleways',None,None),('Cycleway','cycleways',None,None),('Steps','steps',None,None),('Walking route','hiking-routes',None,None),('Cycling route','cycling-routes',None,None),('Railway','railways',None,None),('Ferry','ferry-routes',None,None),('Watercourse','waterway',None,None)]
 for i,(label,layer,cl,casing) in enumerate(rows):linerow(528,204+i*36,label,layer,cl,casing)
 heading(48,786,'Terrain')
-linerow(48,830,'100 m index contour','contours');linerow(48,869,'50 m contour','contour-50m-lines');linerow(48,908,'10 m intermediate contour','contour-intermediate-lines')
+linerow(48,830,'100 m index contour','contours');linerow(48,869,'20 m intermediate contour','contour-intermediate-lines')
 cliff=texture('cliff-teeth',96,6);opacity=value(LAYERS['cliffs-and-crags']['paint']['line-opacity']);cliff.putalpha(cliff.getchannel('A').point(lambda a:round(a*opacity)));image(cliff,48,951,96,value(LAYERS['cliffs-and-crags']['paint']['line-width']));text(162,945,'Cliff / crag')
 # Illustrative relief swatch, clearly distinct from mapped feature patterns.
 shade=Image.new('RGBA',(96*S,24*S))
@@ -85,7 +85,7 @@ for x in range(shade.width):
  c=round(238-70*(math.sin(x/shade.width*math.pi)**2));ImageDraw.Draw(shade).line((x,0,x,shade.height),fill=(c,c,c,255))
 image(shade,48,977,96,24);text(162,980,'Hillshade')
 heading(528,786,'Boundaries & grid')
-for i,(label,layer) in enumerate([('National boundary','administrative-boundaries'),('County boundary','county-boundaries'),('Local boundary','local-boundaries'),('Irish Grid · 10 km','irish-grid-10km'),('Irish Grid · 1 km','irish-grid-1km')]):linerow(528,837+i*36,label,layer)
+for i,(label,layer) in enumerate([('National boundary','administrative-boundaries'),('County boundary','county-boundaries'),('Irish Grid · 10 km','irish-grid-10km'),('Irish Grid · 1 km','irish-grid-1km')]):linerow(528,837+i*36,label,layer)
 heading(48,1065,'Points')
 # Use actual summit paint and actual parking atlas artwork.
 p=LAYERS['summit-dots-natural-labels']['paint'];cx,cy=96,1128;rad=p['circle-radius']*1.6
@@ -94,7 +94,7 @@ a=INDEX['outdoor-parking'];im=ATLAS.crop((a['x'],a['y'],a['x']+a['width'],a['y']
 heading(528,1065,'Feature labels')
 draw.ellipse((572*S,1125*S,578*S,1131*S),fill='#596957');svg.append('<circle cx="575" cy="1128" r="3" fill="#596957"/>');text(642,1119,'Outdoor facility')
 text(528,1164,'Names identify places and mapped features.',13,'#647b6c')
-line(48,1232,952,1232,'#d8dfd9');text(48,1252,'10 m contours  ·  Colours and patterns from the active map style',13,'#647b6c');text(48,1277,'Relief shading changes apparent colours. Line samples enlarged for clarity.',12,'#7a897f')
+line(48,1232,952,1232,'#d8dfd9');text(48,1252,'20 m contours  ·  Colours and patterns from the active map style',13,'#647b6c');text(48,1277,'Relief shading changes apparent colours. Line samples enlarged for clarity.',12,'#7a897f')
 svg.append('</svg>');(OUT/'openbaremap-legend.svg').write_text('\n'.join(svg)+'\n');canvas.save(OUT/'openbaremap-legend@2x.png',optimize=True);canvas.resize((W,H),Image.Resampling.LANCZOS).save(OUT/'openbaremap-legend.png',optimize=True)
 (OUT/'legend-manifest.json').write_text(json.dumps({'style_sha256':hashlib.sha256((ROOT/'style/openbaremap.json').read_bytes()).hexdigest(),'reference_zoom':14,'logical_size':[W,H],'png_2x_size':[W*S,H*S],'note':'SVG is self-contained with embedded pattern/symbol PNGs and system sans-serif text. Hillshade swatch is illustrative. Line strokes enlarged 1.6x for legibility; map dash ratios preserved.','outputs':['openbaremap-legend.svg','openbaremap-legend.png','openbaremap-legend@2x.png']},indent=2)+'\n')
 print(OUT)

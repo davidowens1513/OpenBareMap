@@ -71,6 +71,12 @@ class ViewerTests(unittest.TestCase):
                 self.assertGreaterEqual(item['pixelRatio'],ratio)
                 self.assertLessEqual(item['x']+item['width'],width)
                 self.assertLessEqual(item['y']+item['height'],height)
+        cliff=first['cliff-teeth'];cliff2=second['cliff-teeth']
+        self.assertEqual(cliff['width'] & (cliff['width']-1),0)
+        self.assertEqual(cliff2['width'] & (cliff2['width']-1),0)
+        self.assertEqual(cliff['width']/cliff['pixelRatio'],16)
+        self.assertEqual(cliff2['width']/cliff2['pixelRatio'],16)
+        self.assertEqual(cliff['height']/cliff['pixelRatio'],6)
         lock=json.loads((ROOT/'assets/sprites.lock.json').read_text())
         for item in lock['assets']:
             self.assertEqual(hashlib.sha256((ROOT/item['path']).read_bytes()).hexdigest(),item['sha256'])
