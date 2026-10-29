@@ -1,28 +1,40 @@
 {
   "mapVersion": "2.0.0",
-  "garminPackageRevision": "2.0.0-townland-labels",
-  "date": "2026-10-27",
+  "garminPackageRevision": "2.0.0-20m",
+  "date": "2026-10-28",
   "devices": [
     {
       "device": "Montana 750i",
-      "mapSHA256": "775c2f8c2afa900a15cd7e436ece22b553db4e35c33db0d284b754cfd8542eac",
+      "mapSHA256": "2e0e907e52b0bd535481b013c2487bb327e749fcf62ab61935ae2d94396b6c96",
       "fullReadbackVerified": true,
-      "visualReview": "townland appearance accepted by user; complete device acceptance not claimed",
-      "personalTrackLayerInstalled": true
+      "visualReview": "20 m edition pending hardware visual review; existing townland treatment retained",
+      "personalTrackLayerInstalled": true,
+      "garminPackageRevision": "2.0.0-20m",
+      "contourIntervalMetres": 20,
+      "bytes": 228810752,
+      "personalTracksUnchanged": true,
+      "installedDate": "2026-10-28"
     },
     {
       "device": "GPSMAP 67i",
-      "mapSHA256": "775c2f8c2afa900a15cd7e436ece22b553db4e35c33db0d284b754cfd8542eac",
+      "mapSHA256": "2e0e907e52b0bd535481b013c2487bb327e749fcf62ab61935ae2d94396b6c96",
       "fullReadbackVerified": true,
-      "visualReview": "pending",
-      "personalTrackLayerInstalled": true
+      "visualReview": "20 m edition pending hardware visual review; existing townland treatment retained",
+      "personalTrackLayerInstalled": true,
+      "garminPackageRevision": "2.0.0-20m",
+      "contourIntervalMetres": 20,
+      "bytes": 228810752,
+      "personalTracksUnchanged": true,
+      "installedDate": "2026-10-28"
     },
     {
       "device": "GPSMAP H1",
       "mapSHA256": "775c2f8c2afa900a15cd7e436ece22b553db4e35c33db0d284b754cfd8542eac",
       "fullReadbackVerified": true,
       "visualReview": "pending",
-      "personalTrackLayerInstalled": true
+      "personalTrackLayerInstalled": true,
+      "garminPackageRevision": "2.0.0-townland-labels",
+      "contourIntervalMetres": 10
     }
   ]
 }

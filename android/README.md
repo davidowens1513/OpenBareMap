@@ -73,3 +73,5 @@ The current resource package uses `2.0.0-storage-r3`, approximately 1.01 GB. It 
 Cliffs use a shared periodic teeth pattern with 16 × 6 logical-pixel cells, supplied at both atlas resolutions. Cliff line weight and visibility start at zoom 11. Device appearance comparison remains pending.
 
 The shared app legend uses bold dark labels, enlarged line samples and outlined colour swatches with enhanced contrast and saturation. These presentation adjustments aid reading; the map style is unchanged.
+
+Paths and footways use saturated green; tracks use orange-brown. Strokes are approximately 40% heavier for contrast over higher-ground fills, with the existing distinct dash patterns and visibility thresholds. Shared platform legends match this styling. Installed apps require refreshed resources.

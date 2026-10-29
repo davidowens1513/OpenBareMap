@@ -1,6 +1,6 @@
 {
   "coverage": "All Ireland and Northern Ireland, including offshore islands within shared terrain extent",
-  "terrain_interval_metres": 10,
+  "terrain_interval_metres": 20,
   "inputs": [
     {
       "path": "garmin/inputs/contours-10m.geojson.gz",
@@ -23,5 +23,6 @@
   "elevation_lock": "terrain-sources.lock.json",
   "osm_lock": "sources.lock.json",
   "townland_source": "viewer/townlands.geojson",
-  "map_version": "2.0.0"
+  "map_version": "2.0.0",
+  "source_contour_interval_metres": 10
 }

@@ -16,7 +16,7 @@ The MapLibre presentation uses Open Sans text without halos, dashed tracks and p
 
 ## Garmin
 
-The Garmin edition is a **display-only map**, with no turn-by-turn routing. It includes 10-metre contours, native elevation data, land-cover textures, cliff markings, place names and outdoor features.
+The Garmin edition is a **display-only map**, with no turn-by-turn routing. It includes 20-metre contours, native elevation data, land-cover textures, cliff markings, place names and outdoor features.
 
 | Resource | Location |
 | --- | --- |
@@ -25,9 +25,9 @@ The Garmin edition is a **display-only map**, with no turn-by-turn routing. It i
 | Legend | [Montana-750i-Legend.png](garmin/dist/Montana-750i-Legend.png) |
 | Build, integration and validation details | [Garmin guide](garmin/README.md) |
 
-The same Garmin 2.0 IMG is installed on the **Montana 750i**, **GPSMAP 67i** and **GPSMAP H1**, with full file read-back verification. Townland rendering has been accepted on the Montana; visual checks on the 67i and H1 remain outstanding. [Device installation records](garmin/device-installations.json) describe the validation scope.
+The 20 m Garmin edition is installed on the **Montana 750i** and **GPSMAP 67i**, with full file read-back verification. The GPSMAP H1 retains the preceding 10 m edition. Visual review of the new edition is pending. [Device installation records](garmin/device-installations.json) identify the exact installed revisions.
 
-The Garmin package revision is **2.0.0-townland-labels**. Townlands use a native text category, NormalFont and muted grey-brown, without a marker. Displayed capitalisation and size depend on the device. This adaptation applies only to Garmin; the main MapLibre map, iOS and Android retain their 2.0.0 resources.
+The Garmin package revision is **2.0.0-20m**. Townlands use a native text category, NormalFont and muted grey-brown, without a marker. Displayed capitalisation and size depend on the device. This adaptation applies only to Garmin; the main MapLibre map, iOS and Android retain their 2.0.0 resources.
 
 Install the `.img` in the device's `Garmin` folder or on a supported memory card, and enable **OpenBareMap Ireland** in the device's map controls. The 67i and H1 use MTP for USB file transfers on macOS. Point-label text must be enabled for mountain names. Disable overlapping detailed maps and satellite imagery when viewing OpenBareMap on its own.
 
@@ -111,3 +111,7 @@ Source completeness, geographic accuracy and device readability require assessme
 Cliffs use a shared periodic teeth pattern with 16 × 6 logical-pixel cells, supplied at both atlas resolutions. Cliff line weight and visibility start at zoom 11. Device appearance comparison remains pending.
 
 The shared app legend uses bold dark labels, enlarged line samples and outlined colour swatches with enhanced contrast and saturation. These presentation adjustments aid reading; the map style is unchanged.
+
+The Garmin 20 m profile retains national and county boundaries, townland labels, summit names, native DEM relief, bog texture and cliff markings. Local boundary lines and the former 50 m contour class are omitted. The personal-track overlay remains independent.
+
+Paths and footways use saturated green; tracks use orange-brown. Strokes are approximately 40% heavier for contrast over higher-ground fills, with the existing distinct dash patterns and visibility thresholds. Shared platform legends match this styling. Installed apps require refreshed resources.

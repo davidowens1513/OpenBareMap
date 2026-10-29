@@ -69,7 +69,8 @@ public class InspectMap {
         String combined=logicalHash(directory.resolve("gmapsupp.img"),sizes);
         if(tiles==0 || sizes.getOrDefault("DEM",0L)==0 || sizes.getOrDefault("TYP",0L)==0)throw new IllegalStateException("Missing tiles, DEM or TYP");
         if(sizes.containsKey("NET")||sizes.containsKey("NOD"))throw new IllegalStateException("Unexpected routing network");
-        for(String type:List.of("0x20","0x21","0x22"))if(!lines.containsKey(type))throw new IllegalStateException("Missing contour type "+type);
+        for(String type:List.of("0x20","0x22"))if(!lines.containsKey(type))throw new IllegalStateException("Missing contour type "+type);
+        if(lines.containsKey("0x21")||lines.containsKey("0x1d"))throw new IllegalStateException("Unexpected 50 m contour or local boundary");
         if(!polygons.containsKey("0x10107")||!points.containsKey("0x6616"))throw new IllegalStateException("Missing bog or summit features");
         for(String name:List.of("Carrauntoohil","Dublin","Belfast","Galway","Cork"))if(!anchors.containsKey(name))throw new IllegalStateException("Missing anchor label: "+name);
         StringJoiner anchorsJson=new StringJoiner(",","{","}");anchors.forEach((k,v)->anchorsJson.add(quote(k)+":"+quote(v)));

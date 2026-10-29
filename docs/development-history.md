@@ -111,3 +111,11 @@ The inherited 48-pixel-wide cliff cell is replaced by a generated periodic cell,
 ### Legend emphasis — 28 October 2026
 
 The shared app legend uses bold 17 px labels, line samples scaled 2.2× with minimum 2.2 px width and 0.9 opacity, stronger point markers and outlined landscape swatches enhanced to 1.3× saturation and 1.12× contrast. Both platform resource sets carry the same exports. These are legend-only presentation adjustments, noted in its footer and manifest; map rendering is unchanged.
+
+### Garmin 20 m edition — 28 October 2026
+
+The Garmin profile selects 20 m contours from the pinned smoothed 10 m inputs, retains 100 m index progression, removes 50 m-specific styling and omits local administrative boundaries. The full-island source is merged, split and compiled with the pinned toolchain and existing townland/summit label treatment. Garmin-native DEM and TYP patterns remain separate from MapLibre. The generated IMG is structurally inspected before device installation; each device receives full read-back verification. Exact output hashes identify this build; byte-identical recompilation is not claimed.
+
+### Path and track contrast — 29 October 2026
+
+The shared MapLibre path/footway colour is #006f32 and track colour #aa4209. Base line-width stop values are multiplied by approximately 1.40; generated bridge passes retain their 0.5 px increment and tunnel opacity is unchanged. All 117 affected rendering passes preserve dash arrays, filters and visibility thresholds. Other layers and databases are unchanged. Browser and app legends and iOS/Android resource packages are refreshed. Garmin and installed app copies are unchanged by this style-only revision.

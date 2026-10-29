@@ -1,8 +1,6 @@
 # Display-only rules: intentionally no road_class / road_speed definitions.
 contour=elevation & obm:interval=100 [0x10008 resolution 20-21 continue]
 contour=elevation & obm:interval=100 { name '${ele|conv:m=>ft}' } [0x22 resolution 22]
-contour=elevation & obm:interval=50 [0x10009 resolution 22-23 continue]
-contour=elevation & obm:interval=50 { name '${ele|conv:m=>ft}' } [0x21 resolution 24]
 contour=elevation { name '${ele|conv:m=>ft}' } [0x20 resolution 24]
 obm:walking=yes [0x10001 resolution 22 continue]
 obm:cycling=yes [0x10002 resolution 22 continue]
@@ -24,7 +22,6 @@ waterway=river [0x1f resolution 20]
 (waterway=stream | waterway=canal | waterway=drain | waterway=ditch) [0x18 resolution 22]
 boundary=administrative & admin_level=2 [0x1e resolution 18]
 boundary=administrative & (admin_level=5 | admin_level=6) [0x1c resolution 20]
-boundary=administrative [0x1d resolution 23]
 
 <finalize>
 name=* {name '${name:en}' | '${name}' | '${name:ga}'}

@@ -14,6 +14,7 @@ def features(path):
     yield json.loads(line.strip().rstrip(','))
 def prepare():
  WORK.mkdir(exist_ok=True)
+ config=json.loads((ROOT/'garmin/config.json').read_text());contour_step=config['contourIntervalMetres']
  lock=json.loads((ROOT/'garmin/inputs.lock.json').read_text())
  for item in lock['inputs']:
   if digest(ROOT/item['path'])!=item['sha256']:raise ValueError('Garmin input checksum changed')
@@ -50,8 +51,8 @@ def prepare():
   rels.write(f'<relation id="{identifier}" version="1">'+''.join(f'<member type="way" ref="{w}" role="{role}"/>' for w,role in members)+tags({'type':'multipolygon',**values})+'</relation>\n')
  for f in features(ROOT/'garmin/inputs/contours-10m.geojson.gz'):
   ele=int(round(f['properties']['elevation']))
-  if ele<=0 or ele%10:continue
-  interval=100 if ele%100==0 else 50 if ele%50==0 else 10
+  if ele<=0 or ele%contour_step:continue
+  interval=100 if ele%100==0 else contour_step
   geometry=f['geometry'];parts=[geometry['coordinates']] if geometry['type']=='LineString' else geometry['coordinates']
   for part in parts:line(part,{'contour':'elevation','ele':ele,'obm:interval':interval});counts['contours']+=1
   counts['contour_intervals'][interval]=counts['contour_intervals'].get(interval,0)+1

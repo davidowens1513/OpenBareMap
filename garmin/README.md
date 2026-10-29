@@ -1,8 +1,8 @@
 # OpenBareMap 2.0 for Garmin
 
-Display-only, full-island Ireland and Northern Ireland map. The deliverable is `dist/OpenBareMap-Ireland.img` (size and checksum in the release manifest). Copy instructions are in `dist/INSTALL.txt`. The same IMG is installed on the Montana 750i, GPSMAP 67i and GPSMAP H1. Full-file read-back verification is recorded in [device-installations.json](device-installations.json). Townland appearance is accepted on the Montana; visual acceptance on the 67i and H1 remains pending. The Garmin package revision is `2.0.0-townland-labels`, within map version 2.0.0.
+Display-only, full-island Ireland and Northern Ireland map. The deliverable is `dist/OpenBareMap-Ireland.img` (size and checksum in the release manifest). Copy instructions are in `dist/INSTALL.txt`. The selected IMG targets the Montana 750i, GPSMAP 67i and GPSMAP H1. Per-device installed revisions are recorded separately. Full-file read-back verification is recorded in [device-installations.json](device-installations.json). Townland appearance is accepted on the Montana; visual acceptance on the 67i and H1 remains pending. The Garmin package revision is `2.0.0-20m`, within map version 2.0.0.
 
-Includes roads, tracks, footways, bridleways, cycleways, steps, walking/cycling overlays, water, land cover, buildings, boundaries, townlands, place names, summit dots, parking P symbols, bog texture and cliff teeth. Contours use the shared, gently smoothed 10 m geometry. Land-cover polygons use the shared smoothed source snapshot. Native DEM elevation data supports Garmin's terrain rendering. No routing network or turn instructions are generated.
+Includes roads, tracks, footways, bridleways, cycleways, steps, walking/cycling overlays, water, land cover, buildings, boundaries, townlands, place names, summit dots, parking P symbols, bog texture and cliff teeth. Contours use the shared, gently smoothed source geometry selected at 20 m intervals. Land-cover polygons use the shared smoothed source snapshot. Native DEM elevation data supports Garmin's terrain rendering. No routing network or turn instructions are generated.
 
 ## Native cartography
 
@@ -10,13 +10,13 @@ Garmin renders its own fonts, labels and detail levels. This is a native adaptat
 
 | Detail level | Garmin resolution | Contours |
 | --- | --- | --- |
-| 0, closest | 24 | 10 m, 50 m and 100 m |
-| 1 | 22 | Fine 50 m overview strokes and 100 m |
+| 0, closest | 24 | 20 m and 100 m |
+| 1 | 22 | 100 m |
 | 2 | 20 | Fine 100 m overview strokes |
 | 3 | 18 | None |
 | 4, overview | 16 | None |
 
-These are Garmin resolution bits, not web zoom numbers. Native close-detail contour elevation attributes use feet; set device elevation units to metres. Overview-only contour types have no labels. The underlying spacing remains 10 m. Irish Grid lines are not exported in this version. Bridges and tunnels do not yet receive a distinct Garmin rendering. MapLibre raster hillshade, pixel text sizes and label spacing do not transfer directly.
+These are Garmin resolution bits, not web zoom numbers. Native close-detail contour elevation attributes use feet; set device elevation units to metres. Overview-only contour types have no labels. The underlying spacing is 20 m. Irish Grid lines are not exported in this version. Bridges and tunnels do not yet receive a distinct Garmin rendering. MapLibre raster hillshade, pixel text sizes and label spacing do not transfer directly.
 
 Townlands use Garmin’s standard region-text category, without a marker, in muted grey-brown (`#817b70`). Source names are uppercase; the device controls the displayed capitalisation and size. The current rendering has been accepted on the Montana 750i. The label profile is installed on the GPSMAP 67i and H1, with file integrity verified; its on-screen appearance has not yet been reviewed on those models.
 
@@ -61,3 +61,7 @@ Strict binary recompilation reproducibility is unresolved. A repeated-build comp
 Keep Map Points text enabled and its zoom setting on Auto. Version 2.0 hardware rendering, contour-unit and performance acceptance is required on both devices. Its binaries are not automatically installed when the repository is updated.
 
 On the GPSMAP 67i, installed detailed maps are managed under Setup > Map > Map Manager. Satellite imagery is controlled separately from the map page using MENU > Map Layers. Display appearance is under Setup > Display > Appearance > Mode (Day, Night or Auto). A personal-track overlay is a separate optional map layer and can be toggled independently of OpenBareMap.
+
+The Garmin 20 m profile retains national and county boundaries, townland labels, summit names, native DEM relief, bog texture and cliff markings. Local boundary lines and the former 50 m contour class are omitted. The personal-track overlay remains independent.
+
+The Montana 750i and GPSMAP 67i have the 20 m edition installed and fully read-back verified; their personal-track layers are unchanged. The GPSMAP H1 retains the preceding 10 m edition. Hardware visual review of the 20 m edition is pending.

@@ -1,5 +1,5 @@
 OpenBareMap Ireland 2.0 — Montana 750i / GPSMAP 67i / GPSMAP H1
-Garmin package revision: 2.0.0-townland-labels
+Garmin package revision: 2.0.0-20m
 
 Copy OpenBareMap-Ireland.img into the Garmin folder in internal storage or on a memory card supported by your device. Replace an existing file of that name; do not keep multiple OpenBareMap Ireland versions enabled. Preserve other map files. Safely disconnect and restart the handheld.
 
@@ -11,10 +11,12 @@ Disable overlapping detailed maps and satellite imagery to view OpenBareMap on i
 
 The 67i and H1 use MTP for USB file transfers. They do not appear as ordinary Finder volumes on macOS; use an MTP-capable file-transfer tool or a card reader for a compatible memory card. Copying a map does not require modifying the preloaded Garmin maps.
 
-The map covers Ireland and Northern Ireland, with 10 m contours, native elevation data and custom topographic styling. It has no turn-by-turn routing. Townlands use native text labels without markers; displayed capitalisation and size depend on the device.
+The map covers Ireland and Northern Ireland, with 20 m contours, native elevation data and custom topographic styling. It has no turn-by-turn routing. Townlands use native text labels without markers; displayed capitalisation and size depend on the device.
 
 Recorded personal tracks, when supplied, use a separate OpenBareMap-My-Tracks.img layer. Enable or disable that layer independently. It is not part of the public basemap package and does not import records into the saved-track library.
 
-All three device installations have file read-back verification. Townland rendering has been accepted on the Montana; visual review on the 67i and H1 remains pending. Check contour units, land-cover textures, cliff markings and label readability on each device.
+The Montana 750i and GPSMAP 67i have the 20 m edition installed with full file read-back verification. The H1 retains the prior 10 m edition. Townland rendering has been accepted on the Montana; visual review on the 67i and H1 remains pending. Check contour units, land-cover textures, cliff markings and label readability on each device.
 
 Keep ATTRIBUTION.txt and the accompanying terrain notices available with copies of the map.
+
+The Garmin 20 m profile retains national and county boundaries, townland labels, summit names, native DEM relief, bog texture and cliff markings. Local boundary lines and the former 50 m contour class are omitted. The personal-track overlay remains independent.

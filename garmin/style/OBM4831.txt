@@ -563,30 +563,8 @@ Xpm="0 0 1 0"
 "a c #b8a68b"
 [end]
 [_line]
-Type=0x10009
-String=50 metre contour - overview
-FontStyle=NoLabel
-DayCustomColor=#554b3d
-NightCustomColor=#554b3d
-LineWidth=1
-BorderWidth=0
-Xpm="0 0 1 0"
-"a c #bcae99"
-[end]
-[_line]
 Type=0x20
-String=10 metre contour
-FontStyle=SmallFont
-DayCustomColor=#554b3d
-NightCustomColor=#554b3d
-LineWidth=1
-BorderWidth=0
-Xpm="0 0 1 0"
-"a c #9a8161"
-[end]
-[_line]
-Type=0x21
-String=50 metre contour
+String=20 metre contour
 FontStyle=SmallFont
 DayCustomColor=#554b3d
 NightCustomColor=#554b3d
@@ -654,18 +632,6 @@ Xpm="32 1 2 1"
 "a c #927d96"
 ". c none"
 "aaaaaa....aaaaaa....aaaaaa....aa"
-[end]
-[_line]
-Type=0x1d
-String=Local boundary
-FontStyle=SmallFont
-DayCustomColor=#554b3d
-NightCustomColor=#554b3d
-UseOrientation=Y
-Xpm="32 1 2 1"
-"a c #82678b"
-". c none"
-"aaa....aaa....aaa....aaa....aaa."
 [end]
 [_point]
 Type=0x100
