@@ -44,11 +44,17 @@ class MainActivity : Activity() {
             insets
         }
         val controls = LinearLayout(this)
-        importButton = Button(this).apply { text = "Import map"; setOnClickListener { chooseMap() } }
+        importButton = Button(this).apply { text = "Import"; setOnClickListener { chooseMap() } }
         controls.addView(importButton)
         controls.addView(Button(this).apply { text = "Maps"; setOnClickListener { chooseInstalledMap() } })
         controls.addView(Button(this).apply { text = "Legend"; setOnClickListener { showLegend() } })
         controls.addView(Button(this).apply { text = "Credits"; setOnClickListener { showCredits() } })
+        for (index in 0 until controls.childCount) {
+            val button = controls.getChildAt(index) as Button
+            button.minimumWidth = 0
+            button.setPadding(8,button.paddingTop,8,button.paddingBottom)
+            button.layoutParams = LinearLayout.LayoutParams(0,ViewGroup.LayoutParams.WRAP_CONTENT,1f)
+        }
         root.addView(controls)
         status = TextView(this).apply { text = "Choose the OpenBareMap offline package to begin."; setPadding(16, 8, 16, 8); textSize = 14f }
         root.addView(status)

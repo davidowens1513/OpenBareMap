@@ -65,7 +65,7 @@ def finish(region):
         'contour':{'minzoom':8,'maxzoom':14,'source':str(geometry/'contours.geojson'),'source_columns':['elevation'],'simplify_below':13,'simplify_level':.00001},
         'grid_1km':{'minzoom':12,'maxzoom':14,'source':str(geometry/'grid_1km.geojson'),'source_columns':['label','metres','axis']},
         'grid_10km':{'minzoom':10,'maxzoom':14,'source':str(geometry/'grid_10km.geojson'),'source_columns':['label','metres','axis']}},
-        'settings':{'minzoom':4,'maxzoom':14,'basezoom':14,'bounding_box':p['bounds'],'include_ids':False,'compress':'gzip','name':p['name']+' geometry','version':p['mapVersion']}}
+        'settings':{'minzoom':4,'maxzoom':14,'basezoom':14,'bounding_box':p['bounds'],'include_ids':False,'compress':'gzip','name':p['name']+' geometry','description':p['coverage'],'version':p['mapVersion']}}
     write(final/'tilemaker.json',config);(final/'process.lua').write_text('node_keys={}\nway_keys={}\nfunction node_function() end\nfunction way_function() end\n')
     tool=shutil.which('tilemaker')
     if digest(tool)!=json.loads((ROOT/'toolchain.lock.json').read_text())['tilemaker']['sha256']:raise ValueError('Tilemaker changed')
