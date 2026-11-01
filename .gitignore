@@ -59,3 +59,7 @@ data/regions/england-wales/*
 !data/regions/england-wales/elevation/
 data/regions/england-wales/elevation/*
 !data/regions/england-wales/elevation/*.hgt.gz
+
+# Reassembled locally from verified LFS parts (GitHub per-object limit)
+/releases/england-wales/2.0.0/maps/basemap.mbtiles
+*.restoring

@@ -30,6 +30,18 @@ python3 ios/build_bundle.py --region england-wales --output /absolute/new/englan
 python3 android/build_package.py --region england-wales --output /absolute/new/england-wales-android
 ```
 
+To download only one region’s large files after cloning with `GIT_LFS_SKIP_SMUDGE=1`, use the matching selection below. Source OSM/elevation archives are needed for rebuilding, but not for exporting the accepted maps.
+
+```sh
+# Ireland map resources and Garmin image only
+git lfs pull --include="build/detail-2.0/basemap.mbtiles,build/padding-2.0/topography.mbtiles,build/hillshade-a/hillshade.mbtiles,assets/irish-grid.mbtiles,viewer/townlands.geojson,garmin/dist/OpenBareMap-Ireland.img"
+
+# England/Wales map resources and Garmin image only
+git lfs pull --include="releases/england-wales/2.0.0/maps/*.mbtiles*,regions/england-wales/garmin/dist/OpenBareMap-England-Wales.img"
+```
+
+The England/Wales basemap exceeds GitHub’s single-object limit, so Git LFS stores it as three verified parts. The viewer and resource exporters reassemble the identical database automatically when selected. You can also run `python3 scripts/restore_map_parts.py` explicitly. Allow space for both the downloaded parts and the restored database.
+
 Each iOS export contains `OpenBareMap.bundle` and its Swift loader. Each Android export contains an `OpenBareMap` resource folder and its own `OpenBareMap-Android.zip`. Keep exports in separate region-named folders. These are map resources, not changes to an installed BareGPS app. Garmin maps already have distinct filenames and identifiers and can coexist on a device.
 
 Open independent local previews:
@@ -57,7 +69,7 @@ Garmin uses native device fonts, symbols, terrain rendering and detail levels. T
 
 ## Garmin — both regions
 
-Choose the region-specific `.img` in the table above. The details below describe the established Ireland package; England/Wales has its own [installation instructions](regions/england-wales/garmin/dist/INSTALL.txt) and [build inspection](regions/england-wales/garmin/build-report.json). Both are display-only.
+Choose the region-specific `.img` in the table above. England/Wales is installed on the Montana 750i and GPSMAP 67i with full read-back verification; [separate device records](regions/england-wales/garmin/device-installations.json) confirm that Ireland and personal tracks were preserved. Device display review remains pending. The details below describe the established Ireland package; England/Wales has its own [installation instructions](regions/england-wales/garmin/dist/INSTALL.txt) and [build inspection](regions/england-wales/garmin/build-report.json). Both are display-only.
 
 The Garmin edition is a **display-only map**, with no turn-by-turn routing. It includes 20-metre contours, native elevation data, land-cover textures, cliff markings, place names and outdoor features.
 
@@ -117,6 +129,13 @@ The iOS edition is a **resource bundle and Swift loader for MapLibre Native**, i
 Add the complete bundle as an Xcode resource and include the Swift loader in the app target. The loader resolves local style and resource paths for MapLibre Native without a local web server. The host app supplies the renderer, map interface and access to the attribution notices.
 
 The bundle contains map databases, townland points, styles, glyphs, sprites, a legend and provenance records. Resource integrity and Swift loader checks pass; MapLibre rendering and performance require simulator/device assessment. This package is an integration component rather than a standalone iOS app.
+
+## Public previews — both regions
+
+- [Preview Ireland](https://downloads.appsbyonzy.dev/OpenBareMap/preview-v2/ireland/index.html)
+- [Preview England & Wales](https://downloads.appsbyonzy.dev/OpenBareMap/preview-v2/england-wales/index.html)
+
+Both tools display the complete selected map, with pan/zoom, regional destinations and a map key. They can be linked or embedded on appsbyonzy.dev. These online previews load tiles as needed; they do not replace the offline downloads. See [web preview packaging](web-preview/README.md) for updating and embedding them.
 
 ## Browser viewer
 

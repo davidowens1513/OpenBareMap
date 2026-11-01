@@ -16,7 +16,13 @@ def region_path(region, name):
     return ROOT/name if region == 'ireland' else ROOT/'regions'/region/name
 
 def active_map(region='ireland'):
-    return json.loads(region_path(region, 'active-map.json').read_text())
+    selected=json.loads(region_path(region, 'active-map.json').read_text())
+    for item in selected['datasets'].values():
+        target=ROOT/item['path'];manifest=target.with_name(target.name+'.parts.json')
+        if not target.exists() and manifest.exists():
+            from restore_map_parts import restore
+            restore(manifest)
+    return selected
 
 def region_style(region='ireland'):
     style = json.loads((ROOT/'style/openbaremap.json').read_text())

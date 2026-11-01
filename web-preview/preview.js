@@ -1,0 +1,11 @@
+const region=await fetch('./region.json').then(r=>r.json());
+const protocol=new pmtiles.Protocol();maplibregl.addProtocol('pmtiles',protocol.tile);
+const bounds=[[region.bounds[0],region.bounds[1]],[region.bounds[2],region.bounds[3]]];
+const status=document.getElementById('status');
+const map=new maplibregl.Map({container:'map',style:'./style.json',bounds,fitBoundsOptions:{padding:{top:155,left:30,right:30,bottom:40}},hash:true,minZoom:4,maxZoom:18,renderWorldCopies:false,attributionControl:false});
+map.addControl(new maplibregl.NavigationControl(),'top-right');map.addControl(new maplibregl.ScaleControl({unit:'metric'}),'bottom-left');map.addControl(new maplibregl.AttributionControl({compact:false}),'bottom-right');
+let errors=0;map.on('error',e=>{errors++;status.textContent='Some map data could not load. Please refresh.';console.error(e.error)});map.on('idle',()=>{if(!errors)status.textContent=region.label+' · 20 m contours'});
+const locations=region.destinations||{island:[-8.15,53.4,6],wicklow:[-6.32,53.04,12],kerry:[-9.54,52,12],donegal:[-8.11,55.03,12],belfast:[-5.93,54.6,12],dublin:[-6.26,53.35,12],aran:[-9.72,53.12,12]};
+const labels={island:'All '+region.label,snowdonia:'Eryri / Snowdonia',lakes:'Lake District',peaks:'Peak District',brecon:'Bannau Brycheiniog',dartmoor:'Dartmoor',london:'London',scilly:'Isles of Scilly',northumberland:'Northumberland',wicklow:'Wicklow Mountains',kerry:'Killarney',donegal:'Donegal',belfast:'Belfast',dublin:'Dublin',aran:'Aran Islands'};
+const select=document.getElementById('location');select.replaceChildren(...Object.keys(locations).map(k=>new Option(labels[k]||k,k)));select.addEventListener('change',()=>{if(select.value==='island')map.fitBounds(bounds,{padding:{top:155,left:30,right:30,bottom:40}});else{const [lng,lat,zoom]=locations[select.value];map.flyTo({center:[lng,lat],zoom})}});
+const button=document.getElementById('key-toggle'),key=document.getElementById('key');button.addEventListener('click',()=>{key.hidden=!key.hidden;button.setAttribute('aria-expanded',String(!key.hidden))});

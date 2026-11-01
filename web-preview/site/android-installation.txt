@@ -1,0 +1,341 @@
+BAREGPS IRELAND - INSTALLATION AND PHONE SETUP
+Release APK: BareGPS-Ireland-1.0-release-2026-10-31.apk
+Instructions dated 31 October 2026
+
+1. BEFORE YOU INSTALL
+
+You need an Android phone running Android 7.0 or later. This APK cannot be
+installed on an iPhone.
+
+The APK is approximately 1 GB because it includes the OpenBareMap offline map.
+The installed application also extracts map resources into its private storage.
+Have several GB free before installation; allowing roughly 6 GB free is a
+sensible starting point, rather than a guaranteed storage requirement.
+
+Use Wi-Fi to obtain the APK. Keep the phone charged during installation and
+first launch. No separate map ZIP or map import is required for this BareGPS
+release: OpenBareMap is included.
+
+Only install the APK received from the developer or a source you trust.
+You do not need a computer, developer mode, USB debugging or a Google Play
+tester account to install this file.
+
+
+2. INSTALLING THE APK
+
+1. Download or transfer the APK onto your phone, preferably into Downloads.
+   If downloading from a cloud drive, ensure you download the actual APK,
+   rather than a shortcut or web page.
+
+2. Open the phone's Files or My Files application, go to Downloads, and tap:
+   BareGPS-Ireland-1.0-release-2026-10-31.apk
+
+3. Android may say that this source is not allowed to install unknown apps.
+   Tap Settings in that message and enable "Allow from this source" for the
+   application opening the APK, such as Files, My Files or your browser.
+   Return to the installer and tap Install.
+
+   Menu names vary. You can usually find the setting by searching the phone's
+   Settings for "Install unknown apps". It applies to the source application,
+   not to BareGPS itself.
+
+4. Read any security messages. Keep Google Play Protect enabled and let it
+   scan the app if offered. If Android reports a harmful app or an unexplained
+   security block, stop and contact the developer rather than disabling
+   protection.
+
+5. When installation finishes, tap Open.
+
+6. Return to "Install unknown apps" and turn off the permission you enabled
+   for Files or the browser once installation is complete.
+
+Some Samsung phones have an Auto Blocker setting that blocks installation
+outside an app store. If it blocks this trusted APK, review that setting in
+Security and privacy. On a work-managed phone, your administrator may prohibit
+APK installation; do not bypass an organisation's device controls.
+
+FIRST INSTALL OVER AN EXISTING DEVELOPMENT COPY:
+A copy installed from Android Studio is normally signed with a different key.
+Android may refuse to replace it with this release and say "App not installed"
+or report a conflicting package.
+
+Do not immediately uninstall the existing app. Export and check your GPX
+recordings and any other important data first. Uninstalling or clearing storage
+can delete saved tracks, waypoints, logs, preferences and cached maps. Once your
+data is safe, uninstall the old copy and install this release.
+
+Future releases signed with the same release key can normally install over
+this release without uninstalling. Do not uninstall routinely to update.
+
+
+3. FIRST LAUNCH AND OFFLINE MAP
+
+Open BareGPS Ireland while the phone has good battery and free storage.
+Allow time for the initial map resources to be prepared. Stay in the app until
+the map appears; first launch can take longer than subsequent launches.
+
+Use Map Layer to select OpenBareMap. Pan and zoom to your intended walking
+area and make sure map detail and contours appear.
+
+OpenBareMap covers the island of Ireland and is bundled for offline use.
+You do not need to import OpenBareMap-Android.zip. That ZIP belongs to a
+separate reference-app workflow and is not needed for this APK.
+
+Other layers have different requirements:
+- OpenTopo: internet required unless the relevant area has been cached.
+- Satellite: internet required unless the relevant area has been cached.
+- OpenStreetMap: plan on needing internet.
+- Weather and external website/directions links need internet.
+
+A downloaded APK alone is not a substitute for a first-launch check. Open the
+installed app and verify the map before leaving home.
+
+
+4. LOCATION PERMISSION AND ACCURACY
+
+Turn on the phone's Location switch.
+
+When BareGPS asks for location permission, choose "While using the app" or
+"Allow only while using the app", and enable "Use precise location" if offered.
+
+To check later:
+Settings > Apps > BareGPS Ireland > Permissions > Location
+
+This release uses a foreground location service for user-started recording.
+It does not request the separate "Allow all the time" background location
+permission. You do not need to find or enable that option. Recording should
+be started while the app is visible, before you lock the screen or switch apps.
+
+If the in-app Android Setup help suggests choosing "Allow all the time",
+use these instructions instead for this release.
+
+Approximate location may be sufficient for some general map uses, but precise
+location is recommended for position, Go To and GPX recording.
+
+If available, Google Location Accuracy can help obtain a first position,
+especially around buildings. Menu names and availability vary by phone.
+Satellite GPS can work without mobile data, although the initial fix may take
+longer without network assistance.
+
+Go outdoors with a clear view of the sky and wait for the position and accuracy
+to settle before recording. Do not trust an old position immediately after
+opening the app. Buildings, cliffs, trees and deep valleys can reduce accuracy.
+
+
+5. ALLOW RECORDING NOTIFICATIONS
+
+Allow BareGPS notifications when prompted, especially on Android 13 or later.
+
+Check:
+Settings > Apps > BareGPS Ireland > Notifications
+
+Enable notifications and, if listed, the GPX Recording notification category.
+During recording, the app uses a foreground service with a recording
+notification so you can see that tracking is active.
+
+Notification permission and location permission are separate. Allow both for
+the clearest recording experience. Denied notifications do not by themselves
+prove that recording has stopped, so check the recording state inside the app.
+
+
+6. BATTERY AND BACKGROUND SETTINGS
+
+To reduce the chance of the phone interrupting a long recording:
+
+- Open Settings > Apps > BareGPS Ireland > Battery.
+- Choose Unrestricted, No restrictions or Allow background activity if offered.
+- Disable "Pause app activity if unused" or automatic permission removal for
+  BareGPS if you use it only occasionally and that setting is offered.
+- Avoid Battery Saver, Extreme Battery Saver or Ultra Power Saving during an
+  important recording.
+- Do not Force stop the app, clear its storage, run a cleaner that closes it,
+  or reboot the phone during recording.
+- Avoid swiping it away from Recent apps while recording; manufacturer
+  behaviour varies.
+
+Samsung:
+Look under Settings > Battery > Background usage limits. Remove BareGPS from
+Sleeping apps and Deep sleeping apps. Add it to Never auto sleeping apps if
+that option is available.
+
+Other manufacturers:
+Search Settings for "App battery", "Background activity", "Battery optimisation"
+or "App launch". Some phones offer automatic app management or background launch
+controls. Allow BareGPS to continue running where those settings exist.
+
+Menu names vary by Android version and phone model. These settings improve the
+chance of reliable recording but cannot guarantee it. Test your own phone with
+the screen locked before relying on it for a long walk.
+
+
+7. TEST BACKGROUND RECORDING BEFORE A WALK
+
+1. Go outdoors and wait for a stable current position.
+2. Open the GPX recording/handling panel.
+3. Tap Start and confirm that recording is active.
+4. Lock the screen and walk for at least 10-15 minutes.
+5. Unlock the phone and reopen BareGPS.
+6. Check that time and distance advanced and the track contains the walk.
+7. Tap Stop, then Save, and give the recording a meaningful name.
+8. Reopen it from the saved GPX list.
+9. Share/export a copy and check that the file opens in a compatible GPX viewer.
+
+Repeat with another app in the foreground. A short test is useful evidence
+about your phone's settings; it does not guarantee an all-day recording.
+
+If the track has gaps, review battery restrictions, precise location and GPS
+reception. Keep the phone somewhere with reasonable sky exposure, rather than
+buried beneath equipment or shielded by metal.
+
+
+8. USING THE APP'S MAIN FEATURES
+
+MAP AND POSITION
+Use Recenter to return to your current position. Settings offers map
+orientation options including North Up and Heads Up. Compass/heading behaviour
+depends on the phone's sensors. Keep magnetic cases, magnets and metal away
+from the phone when checking heading.
+
+HILLS AND SEARCH
+Tap a hill marker to see details. Search is affected by the currently displayed
+hills and starting-point filters. If a hill seems missing, remove filters or
+use Log Register search to search the full hill database.
+
+ADDITIONAL STARTING POINTS AND TRAILS
+In Settings, enable Coillte, Sport Ireland and Outscape datasets if wanted;
+these optional providers may be off by default. Tap a starting point to inspect
+available route information. A displayed start point or path is not a guarantee
+of public access or a suitable approach.
+
+WAYPOINTS AND GO TO
+Long-press the map to create a personal waypoint or choose Go To.
+Go To provides direction, distance and bearing guidance. Its line is not a
+calculated safe walking route and does not account for cliffs, rivers, fences,
+access restrictions or the actual path you should follow.
+
+RECORDING
+Choose recording quality in Settings before starting. Begin with the default
+quality and test it. Higher detail can increase battery and storage use.
+Use Start to record, Stop to end recording and Save to keep it.
+Discard deletes an unwanted recording. The compact on-map metrics strip is
+a display; use the recording panel for recording controls.
+
+IMPORT AND EXPORT
+Use the GPX panel to import a file through Android's file picker. The saved GPX
+list provides open, rename, share and delete actions. Imported files saved back
+by the app may be simplified; retain your original GPX file separately.
+
+LOG REGISTER
+Use the Log Register to review and manage logged hills and export available
+records. Keep copies of important exports outside the app.
+
+LEGEND
+Open About > OpenBareMap to view the legend. Tap it for a larger view; pinch
+to zoom and drag to inspect the symbols.
+
+
+9. OPTIONAL CACHED MAPS AND WEATHER
+
+OpenBareMap needs no caching.
+
+For OpenTopo or Satellite, while online:
+1. Select the layer.
+2. Move the map to the required area.
+3. Open Cache and choose the available detail/area settings.
+4. Wait for completion and inspect the reported status.
+5. Test the area offline at the zoom levels you expect to use.
+
+Do not assume a partial cache contains every tile inside its outline. Large
+areas and high detail consume more storage and bandwidth.
+
+Weather is an online feature. Check the forecast location and time. A forecast
+for the vicinity of a hill is not a summit forecast; higher ground can be much
+colder and windier. Consult appropriate mountain forecasts and warnings too.
+
+
+10. PRE-WALK CHECKLIST
+
+- Charge the phone and take a charged power bank for longer walks.
+- Leave enough storage for recordings and map resources.
+- Open the app before leaving home and check the intended area.
+- Select OpenBareMap, or verify any optional cached layer.
+- Import any planned GPX while you still have internet access.
+- Turn Location on and allow precise location.
+- Allow recording notifications.
+- Check battery/background restrictions.
+- Go outdoors and wait for a stable position.
+- Start GPX recording while the app is visible, if required.
+- Confirm recording is active before locking the screen.
+- Carry an independent map/compass or suitable backup and know how to use it.
+
+You can test offline behaviour by disabling Wi-Fi and mobile data. If using
+airplane mode, confirm Location remains enabled and verify your position; radio
+behaviour varies. Airplane mode also prevents normal calls and messages, so
+choose your connectivity settings deliberately.
+
+Use sensible screen brightness and lock the screen between checks to conserve
+power. Protect the phone from rain, cold and damage.
+
+
+11. KEEP YOUR RECORDINGS SAFE
+
+Save completed recordings and periodically share/export them to another
+location, such as a computer or your own storage service. Check the exported
+files before deleting originals.
+
+Do not assume Android backup preserves everything. Uninstalling, clearing app
+storage, losing the phone or a failed device can lose local data. The original
+APK on its own does not contain your later recordings or waypoints.
+
+The app stores tracks and other user data locally. Choosing Share sends the
+selected file to the destination you choose; GPX can reveal precise location
+and times. Online layers, weather requests and external links contact their
+respective services.
+
+
+12. TROUBLESHOOTING
+
+"App not installed" or conflicting package:
+Check whether a development copy or differently signed version is installed.
+Export important data before considering uninstalling it. Also check free
+space, Android version and whether the download completed.
+
+The APK will not open:
+Use Files/My Files and ensure the file ends in .apk. Some messaging services
+rename or incompletely download large files. Obtain a complete copy again.
+
+Blank map or missing map detail:
+Select OpenBareMap, allow first-launch preparation to finish and check free
+storage. Close and reopen normally. If another layer is selected, check
+internet or cache coverage. Do not clear storage as a first troubleshooting step.
+
+No current position:
+Check phone Location, app permission and precise location. Go outside and wait.
+Offline map display does not itself mean a GPS fix has been obtained.
+
+Recording stops or has gaps:
+Check background/battery settings, location permission and reception. Repeat
+the locked-screen test. Avoid force stopping, rebooting or using battery-saving
+modes during recording.
+
+No hills in search:
+Check map filters and enabled datasets. Try the full Log Register search.
+
+Weather or web links fail:
+Check internet access. These features are not provided by the offline map.
+
+Contact:
+AppsbyOnzy@gmail.com
+
+Include your phone model, Android version, app version, what you were doing
+and the exact error. Do not email private GPX tracks unless you intend to
+share their location history.
+
+
+SAFETY AND ACCESS
+
+Do not use this app as your only navigation aid. Maps and datasets can contain
+errors or be out of date. Straight-line distances and Go To guidance do not
+prove that a route is safe, passable or legally accessible. Respect private
+land and local restrictions. Plan for battery failure, poor weather and loss
+of phone signal.

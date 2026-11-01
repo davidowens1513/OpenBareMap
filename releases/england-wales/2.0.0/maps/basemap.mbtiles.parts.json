@@ -1,0 +1,23 @@
+{
+  "path": "releases/england-wales/2.0.0/maps/basemap.mbtiles",
+  "bytes": 2714329088,
+  "sha256": "ff60d06aa4646b9a917fea499d69ad9d04d46c63c8ab981e5653a320d1fc3fac",
+  "parts": [
+    {
+      "path": "releases/england-wales/2.0.0/maps/basemap.mbtiles.part01",
+      "bytes": 1073741824,
+      "sha256": "acfd034aef22df0ad25bb5fd82d3dada733ef36b33ae3505e8cecda2d1aea742"
+    },
+    {
+      "path": "releases/england-wales/2.0.0/maps/basemap.mbtiles.part02",
+      "bytes": 1073741824,
+      "sha256": "2e2eb1af3d12a7e53e97b172a29fc87b8d5f07e150c62585f2ed5a7b584c7811"
+    },
+    {
+      "path": "releases/england-wales/2.0.0/maps/basemap.mbtiles.part03",
+      "bytes": 566845440,
+      "sha256": "6015d8f3ff48b7b293f827a4cb6fef4d6db388d5ebeb18d4d01d6ac687020f3e"
+    }
+  ],
+  "reason": "GitHub LFS limits individual objects to 2 GiB; concatenation restores the identical SQLite database."
+}
