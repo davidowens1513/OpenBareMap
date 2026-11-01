@@ -53,10 +53,10 @@ def select_detail(source,target):
             dst.commit()
         finally:opt.eligible,opt.visible=old_eligible,old_visible
 
-def finish(region):
+def finish(region, reuse_geometry=False):
     p=profile(region);base=ROOT/'build'/(region+'-basemap');top=ROOT/'build'/(region+'-topography');geometry=ROOT/'build'/(region+'-geometry');final=ROOT/'build'/(region+'-release')
-    if final.exists():raise FileExistsError(final)
-    final.mkdir()
+    if final.exists() and not reuse_geometry:raise FileExistsError(final)
+    if not reuse_geometry:final.mkdir()
     report=json.loads((geometry/'geometry-report.json').read_text())
     for name,expected in report['outputs'].items():
         if digest(geometry/name)!=expected:raise ValueError('Geometry changed: '+name)
@@ -66,11 +66,18 @@ def finish(region):
         'grid_1km':{'minzoom':12,'maxzoom':14,'source':str(geometry/'grid_1km.geojson'),'source_columns':['label','metres','axis']},
         'grid_10km':{'minzoom':10,'maxzoom':14,'source':str(geometry/'grid_10km.geojson'),'source_columns':['label','metres','axis']}},
         'settings':{'minzoom':4,'maxzoom':14,'basezoom':14,'bounding_box':p['bounds'],'include_ids':False,'compress':'gzip','name':p['name']+' geometry','description':p['coverage'],'version':p['mapVersion']}}
-    write(final/'tilemaker.json',config);(final/'process.lua').write_text('node_keys={}\nway_keys={}\nfunction node_function() end\nfunction way_function() end\n')
-    tool=shutil.which('tilemaker')
-    if digest(tool)!=json.loads((ROOT/'toolchain.lock.json').read_text())['tilemaker']['sha256']:raise ValueError('Tilemaker changed')
-    with (final/'tilemaker.log').open('w') as log:
-        subprocess.run([tool,'--output',str(final/'geometry.mbtiles'),'--config',str(final/'tilemaker.json'),'--process',str(final/'process.lua'),'--threads','1'],stdout=log,stderr=subprocess.STDOUT,check=True)
+    if reuse_geometry:
+        checkpoint=json.loads((final/'geometry-validation.json').read_text())
+        if json.loads((final/'tilemaker.json').read_text())!=config or digest(final/'geometry.mbtiles')!=checkpoint['sha256'] or digest(final/'tilemaker.json')!=checkpoint['configSHA256']:
+            raise ValueError('Geometry checkpoint changed')
+    else:
+        write(final/'tilemaker.json',config);(final/'process.lua').write_text('node_keys={}\nway_keys={}\nfunction node_function() end\nfunction way_function() end\n')
+        tool=shutil.which('tilemaker')
+        if digest(tool)!=json.loads((ROOT/'toolchain.lock.json').read_text())['tilemaker']['sha256']:raise ValueError('Tilemaker changed')
+        with (final/'tilemaker.log').open('w') as log:
+            subprocess.run([tool,'--output',str(final/'geometry.mbtiles'),'--config',str(final/'tilemaker.json'),'--process',str(final/'process.lua'),'--threads','1'],stdout=log,stderr=subprocess.STDOUT,check=True)
+        from audit import audit
+        write(final/'geometry-validation.json',{'sha256':digest(final/'geometry.mbtiles'),'configSHA256':digest(final/'tilemaker.json'),'validation':inspect_tiles(final/'geometry.mbtiles'),'audit':audit(final/'geometry.mbtiles',{'landcover','contour','grid_1km','grid_10km'})})
     replacements={}
     replacements['basemap']=rebuild(base/'basemap.mbtiles',final/'basemap-smoothed.mbtiles',final/'geometry.mbtiles','landcover')
     replacements['topography']=rebuild(top/'topography.mbtiles',final/'topography-smoothed.mbtiles',final/'geometry.mbtiles','contour')
@@ -105,7 +112,7 @@ def finish(region):
     shutil.copyfile(geometry/'grid-provenance.json',region_path(region,'grid-provenance.json'))
 
 def main():
-    parser=argparse.ArgumentParser();parser.add_argument('--region',choices=['england-wales'],required=True);parser.add_argument('--stage',choices=['basemap','geometry','finish','packages','all'],default='all');args=parser.parse_args();region=args.region
+    parser=argparse.ArgumentParser();parser.add_argument('--region',choices=['england-wales'],required=True);parser.add_argument('--resume-geometry',action='store_true');parser.add_argument('--stage',choices=['basemap','geometry','finish','packages','all'],default='all');args=parser.parse_args();region=args.region
     if args.stage in ('basemap','all'):
         dest=ROOT/'build'/(region+'-basemap')
         if not dest.exists():run(sys.executable,'scripts/openbaremap.py','build',region+'-basemap','--region',region)
@@ -117,7 +124,7 @@ def main():
         if not dest.exists():geometry_build(region,ROOT/'build'/(region+'-topography'))
         elif not (dest/'geometry-report.json').exists():raise ValueError('Incomplete geometry stage')
     if args.stage in ('finish','all'):
-        if not region_path(region,'active-map.json').exists():finish(region)
+        if not region_path(region,'active-map.json').exists():finish(region,args.resume_geometry)
         else:
             for item in json.loads(region_path(region,'active-map.json').read_text())['datasets'].values():
                 if digest(ROOT/item['path'])!=item['sha256']:raise ValueError('Selected output changed')

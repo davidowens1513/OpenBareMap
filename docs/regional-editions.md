@@ -25,7 +25,7 @@ The generated British National Grid uses EPSG:27700, with 1 km/10 km lines and p
 | Garmin | Family 4831 | Family 4832, tiles starting 48320001 |
 | Release records | `releases/2.0.0/` | `releases/england-wales/2.0.0/` |
 
-The Garmin family and tile identifiers differ, allowing both images to coexist. Both Garmin editions are display-only. The Android loader installs packages by manifest hash, preserves older versions and supplies an installed-map selector in the reference app. The iOS resources use the same loader, with an edition-specific bundle identifier; a host app decides which bundle or installed resource directory to load.
+The Garmin family and tile identifiers differ, allowing both images to coexist. Both Garmin editions are display-only. The Android resource loader installs map packages by manifest hash and preserves older versions. Consuming applications choose which map to load; this map build does not modify BareGPS applications. The iOS resources use the same loader, with an edition-specific bundle identifier; a host app decides which bundle or installed resource directory to load.
 
 ## Complete build
 
