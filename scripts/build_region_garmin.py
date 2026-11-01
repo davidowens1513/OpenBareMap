@@ -9,7 +9,7 @@ import subprocess
 import sys
 sys.path.insert(0,str(Path(__file__).resolve().parents[1]/'garmin'))
 from openbaremap import ROOT,digest,write
-from regions import profile,region_path
+from regions import profile,region_path,garmin_work
 from build import java_path,tools,run
 
 def compress(source,target):
@@ -20,7 +20,7 @@ def main(region):
     from fetch_region import fetch_dem_padding
     fetch_dem_padding(region)
     p=profile(region);dest=ROOT/'regions'/region/'garmin';dest.mkdir(parents=True,exist_ok=True)
-    work=dest/'work';work.mkdir(exist_ok=True)
+    work=garmin_work(region);work.mkdir(parents=True,exist_ok=True)
     inputs=dest/'inputs';inputs.mkdir(exist_ok=True)
     lock=dest/'inputs.lock.json'
     geometry=ROOT/'build'/(region+'-geometry')
@@ -68,6 +68,9 @@ def main(region):
     else:
         compiled=json.loads((compile_dir/'build.json').read_text())
         if compiled['status']!='compiled; inspection pending' or digest(compile_dir/'gmapsupp.img')!=compiled['outputSHA256']:raise ValueError('Existing Garmin compile is incomplete or changed')
+    expected={p.name[:8] for p in split.glob('[0-9]*.osm.pbf')}
+    actual={p.stem for p in compile_dir.glob('[0-9]*.img')}
+    if expected!=actual:raise ValueError('Garmin sections missing: '+str(sorted(expected-actual)))
     image=compile_dir/'gmapsupp.img'
     if not image.is_file() or not 0<image.stat().st_size<4*1024**3:raise ValueError('Missing image or exceeds FAT32 single-file limit')
     java=Path(java_path());javac=java.with_name('javac');jar=ROOT/'garmin/tools/mkgmap-r4924/mkgmap.jar'

@@ -26,6 +26,7 @@ def run(command,log):
  print('Running',log.name,flush=True)
  with log.open('w') as out:subprocess.run(command,cwd=ROOT,stdout=out,stderr=subprocess.STDOUT,check=True)
  text=log.read_text(errors='replace')
+ if 'Bad file format:' in text or 'Failed to read binary file' in text:raise ValueError('Compiler could not read a source file; inspect '+str(log))
  if 'Number of MapFailedExceptions:' in text and not re.search(r'Number of MapFailedExceptions: 0\b',text):raise ValueError('Map compile failed; inspect '+str(log))
  if 'Number of ExitExceptions:' in text and not re.search(r'Number of ExitExceptions: 0\b',text):raise ValueError('Compiler exit exceptions; inspect '+str(log))
 def compile_map(name):

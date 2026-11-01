@@ -7,11 +7,11 @@ sys.path.insert(0,str(ROOT/'scripts'))
 sys.path.insert(0,str(ROOT/'work/python'))
 sys.path.insert(0,str(ROOT/'garmin/work/python'))
 from openbaremap import digest,write
-from regions import region_path
+from regions import region_path,garmin_work
 
 def merge(region='ireland'):
  import osmium
- work=ROOT/'garmin/work' if region=='ireland' else ROOT/'regions'/region/'garmin/work'
+ work=garmin_work(region)
  source=json.loads(region_path(region,'sources.lock.json').read_text())['osm']
  if digest(ROOT/source['path'])!=source['sha256']:raise ValueError('OSM source mismatch')
  merger=osmium.MergeInputReader();size=merger.add_file(str(work/'overlays.osm.gz'));print('Overlay buffers:',size,flush=True)

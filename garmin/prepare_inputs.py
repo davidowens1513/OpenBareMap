@@ -3,7 +3,7 @@
 from pathlib import Path
 import argparse,gzip,hashlib,json,shutil,sys
 sys.path.insert(0,str(Path(__file__).resolve().parents[1]/"scripts"))
-from regions import profile,region_path
+from regions import profile,region_path,garmin_work
 from xml.sax.saxutils import escape,quoteattr
 ROOT=Path(__file__).resolve().parents[1]
 WORK=ROOT/'garmin/work'
@@ -17,7 +17,7 @@ def features(path):
 def prepare(region='ireland'):
  global WORK
  p=profile(region)
- WORK=ROOT/'garmin/work' if region=='ireland' else ROOT/'regions'/region/'garmin/work'
+ WORK=garmin_work(region)
  WORK.mkdir(parents=True,exist_ok=True)
  config=json.loads((ROOT/'garmin/config.json' if region=='ireland' else ROOT/'regions'/region/'garmin/config.json').read_text());contour_step=config['contourIntervalMetres']
  lock=json.loads((ROOT/'garmin/inputs.lock.json' if region=='ireland' else ROOT/'regions'/region/'garmin/inputs.lock.json').read_text())

@@ -11,13 +11,24 @@ def run(*args):subprocess.run([sys.executable,*map(str,args)],cwd=ROOT,check=Tru
 
 def main(region):
     run('scripts/fetch_region.py','--region',region)
-    top=ROOT/'build'/(region+'-topography')
-    if not top.exists():run('scripts/build_topography.py',region+'-topography','--region',region)
-    elif not json.loads((top/'build.json').read_text())['status'].startswith('built and structurally validated'):
-        raise ValueError('Topography stage is incomplete; inspect its build record before resuming')
-    for name,item in json.loads((top/'build.json').read_text())['outputs'].items():
-        if digest(top/name)!=item['sha256']:raise ValueError('Topography checkpoint changed: '+name)
-    run('scripts/build_region.py','--region',region)
+    selection=region_path(region,'active-map.json')
+    if not selection.exists():
+        top=ROOT/'build'/(region+'-topography')
+        if not top.exists():run('scripts/build_topography.py',region+'-topography','--region',region)
+        elif not json.loads((top/'build.json').read_text())['status'].startswith('built and structurally validated'):
+            raise ValueError('Topography stage is incomplete; inspect its build record before resuming')
+        for name,item in json.loads((top/'build.json').read_text())['outputs'].items():
+            if digest(top/name)!=item['sha256']:raise ValueError('Topography checkpoint changed: '+name)
+        for stage in ('basemap','geometry','finish'):run('scripts/build_region.py','--region',region,'--stage',stage)
+    # Accepted datasets remain usable after redundant intermediates are cleaned.
+    active=json.loads(selection.read_text())
+    for name,item in active['datasets'].items():
+        if digest(ROOT/item['path'])!=item['sha256']:raise ValueError('Selected dataset changed: '+name)
+    if active['storageRevision']=='2.0.0-england-wales-r1':
+        run('scripts/build_region_context.py','--region',region)
+    elif active['storageRevision']!='2.0.0-england-wales-r3':
+        raise ValueError('Coastal background needs repair before packaging')
+    run('scripts/build_region.py','--region',region,'--stage','packages')
     if not (ROOT/'regions'/region/'garmin/build-report.json').exists():run('scripts/build_region_garmin.py','--region',region)
     run('scripts/validate_region.py','--region',region)
 

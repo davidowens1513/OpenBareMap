@@ -27,6 +27,47 @@ def xyz(lon,lat,zoom):
     n=2**zoom
     return int((lon+180)/360*n),int((1-math.asinh(math.tan(math.radians(lat)))/math.pi)/2*n)
 
+def land_coverage(path,anchors=None):
+    """Check actual polygon coverage, including the two reported blue patches."""
+    anchors=anchors or {'Moelwyn':[-3.995,52.965],'Llandeilo':[-3.991,51.886],
+             'London':[-.128,51.507],'Cardiff':[-3.179,51.482],
+             'Carlisle':[-2.938,54.893],'Dartmoor':[-3.94,50.58]}
+    def contains(raw,px,py):
+        extent=next((v for n,w,v in fields(raw) if n==5),4096)
+        px*=extent;py*=extent
+        for n,w,feature in fields(raw):
+            if n!=2 or w!=2:continue
+            geometry=next((packed(v) for n,w,v in fields(feature) if n==4 and w==2),[])
+            i=x=y=0;rings=[];ring=[]
+            while i<len(geometry):
+                command=geometry[i];i+=1;op=command&7;count=command>>3
+                if op==7:
+                    if ring:rings.append(ring);ring=[]
+                    continue
+                if op not in (1,2):raise ValueError('Unexpected land geometry command')
+                for _ in range(count):
+                    dx,dy=geometry[i:i+2];i+=2
+                    x+=(dx>>1)^-(dx&1);y+=(dy>>1)^-(dy&1)
+                    if op==1 and ring:rings.append(ring);ring=[]
+                    ring.append((x,y))
+            if ring:rings.append(ring)
+            inside=False
+            for ring in rings:
+                for a,b in zip(ring,ring[1:]+ring[:1]):
+                    if (a[1]>py)!=(b[1]>py) and px<(b[0]-a[0])*(py-a[1])/(b[1]-a[1])+a[0]:inside=not inside
+            if inside:return True
+        return False
+    result={}
+    with closing(sqlite3.connect(path.as_uri()+'?mode=ro',uri=True)) as db:
+        for name,(lon,lat) in anchors.items():
+            for z in range(8,13):
+                fx=(lon+180)/360*2**z;fy=(1-math.asinh(math.tan(math.radians(lat)))/math.pi)/2*2**z
+                row=db.execute('SELECT tile_data FROM tiles WHERE zoom_level=? AND tile_column=? AND tile_row=?',(z,int(fx),2**z-1-int(fy))).fetchone()
+                if not row or not any(contains(raw,fx%1,fy%1) for layer,raw in layers(row[0]) if layer=='land'):
+                    raise ValueError(f'Missing land background at {name}, zoom {z}')
+            result[name]={'coordinate':[lon,lat],'verifiedZooms':[8,9,10,11,12]}
+    return result
+
 def coverage(path):
     result={}
     with closing(sqlite3.connect(path.as_uri()+'?mode=ro',uri=True)) as db:
@@ -63,6 +104,11 @@ def detail(path):
 def package(root,platform):
     manifest=json.loads((root/'manifest.json').read_text());style=json.loads((root/'style.json').read_text())
     if manifest['region']!='england-wales':raise ValueError('Wrong package region')
+    selected=active_map(manifest['region'])
+    if manifest['storageRevision']!=selected['storageRevision']:raise ValueError('Stale package revision')
+    for name,item in selected['datasets'].items():
+        if manifest['datasets'][name]['sha256']!=item['sha256']:raise ValueError('Stale packaged dataset: '+name)
+    if manifest['regionStyleSHA256']!=digest(region_path(manifest['region'],'style.json')):raise ValueError('Stale regional package style')
     if 'townlands' in style['sources'] or 'irish-grid' in style['sources']:raise ValueError('Ireland-specific source leaked')
     if 'british-grid' not in style['sources']:raise ValueError('Missing British National Grid')
     checked=0
@@ -97,6 +143,7 @@ def validate(region):
         if digest(path)!=item['sha256']:raise ValueError('Selected dataset changed: '+name)
         output['datasets'][name]=inspect_tiles(path)
     output['coverageAnchors']=coverage(ROOT/active['datasets']['basemap']['path'])
+    output['landBackground']=land_coverage(ROOT/active['datasets']['topography']['path'])
     output['detail']={name:detail(ROOT/active['datasets'][name]['path']) for name in ('basemap','topography')}
     output['packages']={platform:package(ROOT/'regions'/region/platform/folder,platform) for platform,folder in [('ios','OpenBareMap.bundle'),('android','OpenBareMap')]}
     baseline=json.loads((ROOT/'regions/ireland/preservation-baseline.json').read_text())

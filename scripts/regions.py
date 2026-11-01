@@ -62,3 +62,12 @@ def process_script(region='ireland'):
     script=(ROOT/'config/process.lua').read_text()
     if region=='ireland':return script
     return script.replace('name:ga','name:cy').replace('name_ga','name_cy').replace('"tracktype", "access"','"tracktype", "designation", "bicycle", "horse", "sac_scale", "trail_visibility", "access"')
+
+
+def garmin_work(region='ireland'):
+    profile(region)
+    if region=='ireland':return ROOT/'garmin/work'
+    import hashlib,os,tempfile
+    cache=Path(os.environ.get('OPENBAREMAP_BUILD_ROOT',tempfile.gettempdir()))
+    identity=hashlib.sha256(str(ROOT).encode()).hexdigest()[:12]
+    return cache/'OpenBareMap-builds'/identity/region/'garmin'
