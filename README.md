@@ -12,7 +12,7 @@ OpenBareMap provides two independently usable offline topographic map editions: 
 | Selected map | [Ireland selection](active-map.json) | [England/Wales selection](regions/england-wales/active-map.json) |
 | Release records | [Ireland manifest](releases/2.0.0/manifest.json) | [England/Wales manifest](releases/england-wales/2.0.0/manifest.json) |
 | Garmin map | [OpenBareMap-Ireland.img](garmin/dist/OpenBareMap-Ireland.img) | [OpenBareMap-England-Wales.img](regions/england-wales/garmin/dist/OpenBareMap-England-Wales.img) |
-| Garmin family ID | 4831 | 4832 |
+| Garmin family ID | 4831 | 4833 |
 | iOS resource bundle | `ios/package/OpenBareMap.bundle` | `regions/england-wales/ios/OpenBareMap.bundle` |
 | Android resources | `android/package/OpenBareMap` | `regions/england-wales/android/OpenBareMap` |
 
@@ -69,7 +69,7 @@ Garmin uses native device fonts, symbols, terrain rendering and detail levels. T
 
 ## Garmin — both regions
 
-Choose the region-specific `.img` in the table above. England/Wales is installed on the Montana 750i and GPSMAP 67i with full read-back verification; [separate device records](regions/england-wales/garmin/device-installations.json) confirm that Ireland and personal tracks were preserved. Device display review remains pending. The details below describe the established Ireland package; England/Wales has its own [installation instructions](regions/england-wales/garmin/dist/INSTALL.txt) and [build inspection](regions/england-wales/garmin/build-report.json). Both are display-only.
+Choose the region-specific `.img` in the table above. England/Wales is installed on the Montana 750i and GPSMAP 67i with full read-back verification; [separate device records](regions/england-wales/garmin/device-installations.json) confirm that Ireland and personal tracks were preserved. England/Wales revision **2.0.0-garmin-r2** fixes the large blue-area display issue and uses identifiers separate from both Ireland and the optional personal-track layer. The repaired appearance has been accepted on GPSMAP 67i; Montana visual review remains pending. The public [England/Wales download](https://downloads.appsbyonzy.dev/Garmin/OpenBareMap-England-Wales.img) matches the installed repair. The details below describe the established Ireland package; England/Wales has its own [installation instructions](regions/england-wales/garmin/dist/INSTALL.txt) and [build inspection](regions/england-wales/garmin/build-report.json). Both are display-only.
 
 The Garmin edition is a **display-only map**, with no turn-by-turn routing. It includes 20-metre contours, native elevation data, land-cover textures, cliff markings, place names and outdoor features.
 
@@ -82,7 +82,7 @@ The Garmin edition is a **display-only map**, with no turn-by-turn routing. It i
 
 The 20 m Garmin edition is installed on the **Montana 750i** and **GPSMAP 67i**, with full file read-back verification. The GPSMAP H1 has the 10 m edition installed. Visual review of the new edition is pending. [Device installation records](garmin/device-installations.json) identify the exact installed revisions.
 
-The Garmin package revision is **2.0.0-20m**. Townlands use a native text category, NormalFont and muted grey-brown, without a marker. Displayed capitalisation and size depend on the device. This native label treatment applies to Garmin; MapLibre applications use the shared font and label resources.
+The Ireland Garmin package revision is **2.0.0-20m**. Townlands use a native text category, NormalFont and muted grey-brown, without a marker. Displayed capitalisation and size depend on the device. This native label treatment applies to Garmin; MapLibre applications use the shared font and label resources.
 
 Install the `.img` in the device's `Garmin` folder or on a supported memory card, and enable **OpenBareMap Ireland** in the device's map controls. The 67i and H1 use MTP for USB file transfers on macOS. Point-label text must be enabled for mountain names. Disable overlapping detailed maps and satellite imagery when viewing OpenBareMap on its own.
 
