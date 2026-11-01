@@ -15,7 +15,7 @@ def build(output,origin):
  if output.exists():raise FileExistsError(output)
  output.mkdir(parents=True);assets=output/'assets';assets.mkdir();maps=output/'data';maps.mkdir()
  for folder in ['fonts','sprites']:shutil.copytree(ROOT/'viewer'/folder,assets/folder)
- for file in ['maplibre-gl.js','maplibre-gl.css']:shutil.copyfile(ROOT/'viewer/vendor'/file,assets/file)
+ for file in ['maplibre-gl.js','maplibre-gl.css','LICENSE.txt']:shutil.copyfile(ROOT/'viewer/vendor'/file,assets/file)
  shutil.copyfile(ROOT/'viewer/terrain-attribution.html',assets/'terrain-attribution.html')
  shutil.copyfile(ROOT/'viewer/townlands.geojson',assets/'townlands.geojson')
  package=output/'pmtiles.tgz';urllib.request.urlretrieve('https://registry.npmjs.org/pmtiles/-/pmtiles-4.5.0.tgz',package)
