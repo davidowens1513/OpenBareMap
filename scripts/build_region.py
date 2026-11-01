@@ -105,7 +105,7 @@ def finish(region, reuse_geometry=False):
         shutil.copyfile(ROOT/item['path'],target)
         if digest(target)!=item['sha256']:raise ValueError('Release copy changed: '+name)
         item['path']=str(target.relative_to(ROOT))
-    active={'format':'openbaremap-development-viewer-v1','region':region,'mapVersion':p['mapVersion'],'storageRevision':'2.0.0-england-wales-r1','contourIntervalMetres':20,'localBorders':False,'datasets':datasets,'coverage':p['coverage']}
+    active={'format':'openbaremap-development-viewer-v1','region':region,'mapVersion':p['mapVersion'],'storageRevision':'2.0.0-england-wales-r1','contourIntervalMetres':20,'localBorders':False,'styleRevision':p.get('styleRevision','shared'),'datasets':datasets,'coverage':p['coverage']}
     write(region_path(region,'active-map.json'),active)
     write(final/'build.json',{'status':'built and structurally validated; visual/device review pending','region':region,'geometryReport':report,'replacements':replacements,'outputs':datasets,'builderSHA256':digest(Path(__file__))})
     write(region_path(region,'style.json'),region_style(region))

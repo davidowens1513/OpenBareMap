@@ -40,18 +40,10 @@ def main(region):
             if file.is_file():file.write_text(file.read_text().replace('name:ga','name:cy').replace('OpenBareMap Ireland',p['name']).replace('Full Ireland',p['label']))
         typ=style/'OBM4831.txt';text=typ.read_text().replace('FID=4831','FID='+str(p['garminFamilyId']));typ.unlink();(style/('OBM'+str(p['garminFamilyId'])+'.txt')).write_text(text)
         lines=style/'lines';lines.write_text(lines.read_text().replace('admin_level=2 [','(admin_level=2 | admin_level=4) ['))
-    # Merge all polygon sections with unique names; preserve holes and offshore islands.
+    # Dissolve overlapping source buffers into valid outer rings for Java readers.
+    from region_coverage import polygon_union
     polygon=dest/'coverage.poly'
-    if not polygon.exists():
-        parts=[p['label']+'\n']
-        for slug in p['sourceSlugs']:
-            lines=(ROOT/'data/regions'/region/(slug+'.poly')).read_text().splitlines()[1:]
-            for line in lines[:-1]:
-                stripped=line.strip()
-                if stripped and stripped!='END' and not line[0].isspace():
-                    hole=stripped.startswith('!');line=('!' if hole else '')+slug+'-'+stripped.lstrip('!')
-                parts.append(line+'\n')
-        parts.append('END\n');polygon.write_text(''.join(parts))
+    if not polygon.exists():polygon_union(region,polygon)
     copyright_file=dest/'copyright.txt'
     copyright_file.write_text((ROOT/'garmin/copyright.txt').read_text().replace('Ireland',p['label']).replace('Townlands','Inherited font and pattern assets'))
     options=['--max-jobs=2','--style-file='+str(style),'--family-id='+str(p['garminFamilyId']),'--product-id=1','--family-name='+p['name'],'--series-name=OpenBareMap Garmin 2.0','--description='+p['name']+' 2.0','--code-page=1252','--lower-case','--name-tag-list=name:en,name,name:cy','--levels=0:24,1:22,2:20,3:18,4:16','--gmapsupp','--add-pois-to-areas','--dem='+str(work/'hgt'),'--dem-poly='+str(polygon),'--dem-dists=3312,13248,26512,53024,106048','--dem-interpolation=bilinear','--copyright-file='+str(copyright_file)]

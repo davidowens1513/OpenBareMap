@@ -4,7 +4,7 @@ from pathlib import Path
 import argparse,hashlib,json,shutil,sqlite3,sys,zipfile,subprocess
 ROOT=Path(__file__).resolve().parents[1]
 sys.path.insert(0,str(ROOT/'scripts'))
-from package_resources import build_capped_coast
+from package_resources import build_capped_coast, copy_map_file
 from regions import profile, active_map, region_style, provenance_files, region_path
 
 def sha(p):
@@ -18,7 +18,7 @@ def assemble(output, region='ireland'):
     for name,item in active['datasets'].items():
         src=ROOT/item['path'];relative=f'maps/{name}.mbtiles'
         if sha(src)!=item['sha256']:raise ValueError('Selected map changed: '+name)
-        dst=package/relative;shutil.copyfile(src,dst)
+        dst=package/relative;copy_map_file(src,dst)
         if sha(dst)!=item['sha256']:raise ValueError('Copied map differs: '+name)
         files[edition['gridSource'] if name=='grid' else name]=relative
         databases[name]={'path':relative,'sha256':sha(dst)}
@@ -39,7 +39,7 @@ def assemble(output, region='ireland'):
     style['sources']['basemap']['attribution']='© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap contributors</a>'
     style['sources']['hillshade']['attribution']='Terrain Tiles / Mapzen · Copernicus EU-DEM · USGS · NOAA'
     write(package/'style.json',style)
-    write(package/'manifest.json',{'packageFormat':'openbaremap-android-resources-v1','mapVersion':active.get('mapVersion','2.0.0'),'region':region,'displayName':edition['label'],'bounds':edition['bounds'],'coverage':edition.get('coverage',edition['label']),'storageRevision':active.get('storageRevision','original'),'sourceCommit':subprocess.check_output(['git','rev-parse','HEAD'],cwd=ROOT,text=True).strip(),'sourceStyleSHA256':sha(ROOT/'style/openbaremap.json'),'renderer':'MapLibre Native Android','sourceFiles':files,'databases':databases,'contourIntervalMetres':active.get('contourIntervalMetres',10),'osmSnapshot':json.loads(region_path(region,'sources.lock.json').read_text())['osm']['snapshot_date'],'inheritedAssets':('Pinned OpenBareMap 1.1 townland points, fixed grid, glyphs and original patterns.' if edition['townlands'] else 'Pinned font glyphs and original patterns; generated British National Grid.'),'requiresRuntimePathResolution':True})
+    write(package/'manifest.json',{'packageFormat':'openbaremap-android-resources-v1','mapVersion':active.get('mapVersion','2.0.0'),'region':region,'displayName':edition['label'],'bounds':edition['bounds'],'coverage':edition.get('coverage',edition['label']),'storageRevision':active.get('storageRevision','original'),'styleRevision':active.get('styleRevision','shared'),'regionStyleSHA256':sha(region_path(region,'style.json')) if region!='ireland' else sha(ROOT/'style/openbaremap.json'),'sourceCommit':subprocess.check_output(['git','rev-parse','HEAD'],cwd=ROOT,text=True).strip(),'sourceStyleSHA256':sha(ROOT/'style/openbaremap.json'),'renderer':'MapLibre Native Android','sourceFiles':files,'databases':databases,'contourIntervalMetres':active.get('contourIntervalMetres',10),'osmSnapshot':json.loads(region_path(region,'sources.lock.json').read_text())['osm']['snapshot_date'],'inheritedAssets':('Pinned OpenBareMap 1.1 townland points, fixed grid, glyphs and original patterns.' if edition['townlands'] else 'Pinned font glyphs and original patterns; generated British National Grid.'),'requiresRuntimePathResolution':True})
     (package/'ATTRIBUTION.txt').write_text('OpenBareMap\n\n© OpenStreetMap contributors. OSM-derived databases: ODbL 1.0.\nhttps://www.openstreetmap.org/copyright\nhttps://opendatacommons.org/licenses/odbl/1-0/\n\nElevation: Terrain Tiles / Mapzen composite, including Copernicus EU-DEM, USGS and NOAA. See terrain-attribution.html and provenance/terrain-data-sources.md. Not claimed to use pure SRTM.\n\nOpen Sans glyphs: Apache License 2.0, see fonts/LICENSE-APACHE-2.0.txt.\nCustom style and pattern assets: OpenBareMap.\nTownlands and Irish Grid inherited from OpenBareMap 1.1; see provenance.\n\nMake full attribution accessible in the host app.\n')
     if not edition['townlands']:
         notice=package/'ATTRIBUTION.txt'

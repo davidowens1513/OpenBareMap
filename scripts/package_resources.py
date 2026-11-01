@@ -18,3 +18,14 @@ def build_capped_coast(top, coast):
         # Keep explicit empty tiles so clients cannot fall back to coarser land.
         dst.execute('INSERT INTO tiles VALUES (?,?,?,?)',(z,x,y,encode(land)))
     dst.commit();dst.close();src.close()
+
+
+def copy_map_file(source, destination):
+    """Use independent copy-on-write files on APFS; retain a portable fallback."""
+    import shutil,subprocess,sys
+    if destination.exists():raise FileExistsError(destination)
+    if sys.platform=='darwin':
+        result=subprocess.run(['/bin/cp','-c',str(source),str(destination)],stdout=subprocess.DEVNULL,stderr=subprocess.DEVNULL)
+        if result.returncode==0:return
+        if destination.exists():destination.unlink()
+    shutil.copyfile(source,destination)

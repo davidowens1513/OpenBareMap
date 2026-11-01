@@ -1,4 +1,5 @@
 """Edition settings, keeping the established Ireland paths as the default."""
+import copy
 import json
 from pathlib import Path
 from openbaremap import ROOT
@@ -44,6 +45,12 @@ def region_style(region='ireland'):
         # England/Wales constituent-country boundaries use OSM admin_level 4.
         if layer['id'] == 'administrative-boundaries':
             layer['filter'] = ['in', ['to-string', ['get','admin_level']], ['literal',['2','4']]]
+    if 'minorWaterwayMinzoom' in p:
+        index=next(i for i,layer in enumerate(style['layers']) if layer['id']=='waterway')
+        major=style['layers'][index];minor=copy.deepcopy(major)
+        major['filter']=['in',['get','class'],['literal',['river','canal']]]
+        minor.update(id='waterway-minor',minzoom=p['minorWaterwayMinzoom'],filter=['!',major['filter']])
+        style['layers'].insert(index+1,minor)
     return style
 
 def provenance_files(region='ireland'):
