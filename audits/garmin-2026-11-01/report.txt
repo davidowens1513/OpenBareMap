@@ -1,0 +1,50 @@
+OpenBareMap Garmin audit — 1 November 2026
+
+Assessment
+A serious identifier collision is confirmed in the distributed England & Wales and My Tracks maps. It is the leading suspect for incorrect device rendering when these maps are installed together. The exact cause of the reported huge blue areas is not yet confirmed on hardware. No compiled maps were changed or installed during this audit.
+
+1. Confirmed identifier and appearance-file conflict
+Distributed binary metadata, rather than just build settings, confirms:
+- Ireland: family 4831 / product 1; 91 sections.
+- England & Wales: family 4832 / product 1; 318 sections, including 48320001.
+- My Tracks: family 4832 / product 1; one section, also 48320001.
+England & Wales and My Tracks also embed the same appearance-file name, 0OBM4832.TYP, with different contents: 2,902 bytes versus 257 bytes. The track appearance file defines its own line and point symbols, without the regional map's land/sea palette and polygon drawing order. This is a real coexistence defect. Which duplicate the device uses, and whether it produces this particular blue-area symptom, requires a device test.
+The builders and installation records explicitly allow these maps to coexist. Existing validation failed to detect their conflicting identifiers.
+Evidence: binary-inventory.txt; garmin/my-tracks/build.py; scripts/build_region_garmin.py.
+
+2. Low-zoom land and water
+Read every TRE/RGN land, sea and water polygon at all five content levels directly from the two distributed regional IMG files: 409 sections total, resolutions 24, 22, 20, 18 and 16.
+Ireland's land polygon count decreases from 8,936 at closest detail to 255 at lowest detail. England & Wales decreases from 15,565 to 572. All 91 Ireland and all 318 England & Wales sections still contain land at the lowest detail level. Polygon counts alone do not indicate missing coverage because simplification and merging reduce counts.
+The summed decoded land-polygon area falls by approximately 0.193% for Ireland and 0.342% for England & Wales between resolutions 24 and 16. These are net changes in summed polygon area, not surveyed ground areas or exact missing-land percentages. The decoded comparison images show coastal losses and straight clipping/simplification edges; they do not show wholesale mainland disappearance within either map viewed independently.
+The map profile uses a synthetic blue sea rectangle beneath land. Both regional maps have priority 25 and are built as opaque maps. Overlapping tile rectangles therefore require deliberate coexistence testing. Correct land/sea rendering depends on the intended appearance file and drawing order.
+A further geometric union/difference comparison measures land present at closest detail but absent at lowest detail as approximately 0.968% for Ireland and 0.443% for England & Wales. This includes coastal boundary movement as well as disappearing small features; it is larger than the net area change because simplification also adds land elsewhere. Overlaying the regional tile envelopes reveals only small additional mismatches between their land masks, not a large missing mainland region. Source-versus-output differences for England & Wales include context land outside the selected regional tile coverage and should not all be classified as missing edition coverage. See geometry-checks.json.
+The supplied images reconstruct land geometry only. They are not Garmin screenshots and do not emulate device map selection, text, terrain rendering or appearance-file conflicts.
+Evidence: coast-analysis.json, *-tiles.ndjson, *-land-comparison.png, CoastAudit.java.
+
+3. Source integrity and provenance
+All 162 unique locked source/output files passed full SHA-256 comparison against their recorded values. This includes regional OSM snapshots, coastline archive, Garmin contour/land/land-cover overlays, elevation and padding files, tool archives, and the three distributed IMG files. Initially cloud-offloaded files became readable during the audit; the final source-checks.json is complete and every status is match.
+Ireland OSM snapshot: 24 October 2026. England and Wales source snapshots: 30 October 2026. All 4,510 Ireland and 8,021 England & Wales source land features also passed geometry-validity checks. The shared coastline archive was published 25 October 2026; its lock explicitly distinguishes publication time from an OSM snapshot date. Different snapshot dates are documented and do not establish corruption.
+The distributed outputs match installation records:
+- Ireland: 228,810,752 bytes; SHA-256 2e0e907e52b0bd535481b013c2487bb327e749fcf62ab61935ae2d94396b6c96.
+- England & Wales: 699,531,264 bytes; SHA-256 c0792c5b885c4f44e3c2189c2cc2d7e9508b52f68067fdb6b5a23e94f3e59855.
+- My Tracks: 284,160 bytes; SHA-256 1c8d81a890151a1758ef7ae7212018906e61d851ea1b32da2cace0a5f3a0b5d8.
+All nine extracted Java archives match their pinned distribution-archive members. Current Ireland config, input locks and style files match their recorded build hashes. The England & Wales style files match the copies used in recovery.
+Evidence: source-checks.json; build-consistency.json.
+
+4. Build and validation weaknesses
+The first England & Wales compilation failed to read 21 cloud-offloaded source chunks. Recovery recompiled those chunks, preserved the other 297 sections, and assembled 318 sections. The recovery and combination logs both report zero map failures and zero exit exceptions. The distributed file matches the recovered release checksum. The failed original compilation log should not be mistaken for the final release outcome; conversely, the abandoned original compile directory should not be reused as the final build.
+The existing binary inspector counts polygons only at closest detail and checks contours at other levels. It does not test land coverage at low detail, compare map identifiers across products, or simulate combined installed maps. File transfer/read-back validation establishes identical bytes, not correct rendering. All four existing Garmin unit tests passed, demonstrating this gap rather than proving display correctness.
+The regional builder snapshots its style only when the regional style directory does not exist. Later changes to the shared style therefore do not automatically propagate to an existing regional edition.
+Byte-identical rebuilding is already documented as unresolved. This audit checked distributed outputs and build evidence; it did not perform a fresh full recompilation.
+
+5. Recommended correction order
+First, allocate My Tracks a separate family/product identity, tile number and appearance-file name; for example family 4833 and tile 48330001 after checking the full installed-map inventory. Rebuild that small overlay and add automated uniqueness checks across all three products.
+Then test each regional map alone and together with the corrected overlay at the same affected location and scales on Montana 750i and GPSMAP 67i. If blue areas persist with a regional map enabled alone, compare that location against the decoded low-detail land geometry and adjust coastline preservation, polygon size filtering and coverage masks as supported by the result.
+Add land/sea geometry checks at every content level, coastal/island reference locations, and tests of overlapping regional tile coverage. Require these checks before release and retain final recovery-build provenance as the authoritative build record.
+
+Limits
+No live device rendering was inspected; no Garmin was mounted as a filesystem during the audit. The last recorded installations were byte-verified, but current device enablement, firmware, other installed maps and the exact affected location/scale remain unverified. The identifier collision is confirmed; its responsibility for the reported blue areas remains a hypothesis until isolated on hardware.
+
+Upstream references
+https://www.mkgmap.org.uk/doc/options — unique map identifiers, transparent maps, default map priority, and polygon filtering.
+https://www.mkgmap.org.uk/doc/pdf/style-manual.pdf — map levels and native device rendering.

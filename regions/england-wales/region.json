@@ -24,8 +24,8 @@
   "gridSource": "british-grid",
   "townlands": false,
   "contourIntervalMetres": 20,
-  "garminFamilyId": 4832,
-  "garminTileStartId": 48320001,
+  "garminFamilyId": 4833,
+  "garminTileStartId": 48330001,
   "sourceDate": "2026-10-30",
   "sourceSlugs": [
     "england",
@@ -85,5 +85,6 @@
     59
   ],
   "minorWaterwayMinzoom": 10,
-  "styleRevision": "2.0.0-england-wales-overview-r1"
+  "styleRevision": "2.0.0-england-wales-overview-r1",
+  "garminPackageRevision": "2.0.0-garmin-r2"
 }

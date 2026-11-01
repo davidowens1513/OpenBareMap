@@ -1,0 +1,91 @@
+{
+  "date": "2026-11-01",
+  "reason": "Only abandoned Git LFS temporary files older than ten minutes and not open by any process. Concurrently completing Git operations and recent temporary files are preserved. Git history and canonical LFS objects unchanged.",
+  "originalObservedTemporaryBytes": 9883454464,
+  "removed": [
+    {
+      "name": "4025775780",
+      "bytes": 201491456,
+      "allocatedBytes": 201494528
+    },
+    {
+      "name": "1795821173",
+      "bytes": 625345536,
+      "allocatedBytes": 625348608
+    },
+    {
+      "name": "1855471171",
+      "bytes": 81495040,
+      "allocatedBytes": 81498112
+    },
+    {
+      "name": "2814249841",
+      "bytes": 60720128,
+      "allocatedBytes": 60723200
+    },
+    {
+      "name": "664637890",
+      "bytes": 60589056,
+      "allocatedBytes": 60592128
+    },
+    {
+      "name": "695009482",
+      "bytes": 430277632,
+      "allocatedBytes": 430280704
+    },
+    {
+      "name": "1632679482",
+      "bytes": 253461504,
+      "allocatedBytes": 253464576
+    },
+    {
+      "name": "1703818449",
+      "bytes": 251659264,
+      "allocatedBytes": 251662336
+    },
+    {
+      "name": "3553517013",
+      "bytes": 196641792,
+      "allocatedBytes": 196644864
+    },
+    {
+      "name": "2575419668",
+      "bytes": 260408320,
+      "allocatedBytes": 260411392
+    },
+    {
+      "name": "203756869",
+      "bytes": 45712384,
+      "allocatedBytes": 45715456
+    }
+  ],
+  "kept": [
+    "4008585195",
+    "3145295944",
+    "1115434738",
+    "127310416",
+    "4194035144",
+    "3452536335",
+    "3894864395",
+    "3053425019",
+    "615085780",
+    "1435239519",
+    "2785571087",
+    "4192671127",
+    "2261474465",
+    "3826600997",
+    "1280173504",
+    "910613945",
+    "813737212",
+    "2225449161",
+    "170483486",
+    "2811280548",
+    "3266178304"
+  ],
+  "vanishedDuringScan": [],
+  "earlierPassRemovedSomeStaleFiles": true,
+  "logicalBytesRemovedThisPass": 2467802112,
+  "allocatedBytesRemovedThisPass": 2467835904,
+  "freeBytesAfter": 74834296832,
+  "remainingTemporaryBytes": 5928769536
+}

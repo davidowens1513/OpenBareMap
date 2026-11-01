@@ -1,0 +1,47 @@
+{
+  "region": "england-wales",
+  "mapVersion": "2.0.0",
+  "installedDate": "2026-11-01",
+  "devices": [
+    {
+      "date": "2026-11-01",
+      "mapSHA256": "c0792c5b885c4f44e3c2189c2cc2d7e9508b52f68067fdb6b5a23e94f3e59855",
+      "bytes": 699531264,
+      "familyId": 4832,
+      "region": "england-wales",
+      "visualReview": "Device map display pending; USB transfer and full read-back checked.",
+      "device": "Montana 750i",
+      "fullReadbackVerified": true,
+      "irelandUnchanged": true,
+      "personalTracksUnchanged": true,
+      "preservedSHA256": {
+        "OpenBareMap-Ireland.img": "2e0e907e52b0bd535481b013c2487bb327e749fcf62ab61935ae2d94396b6c96",
+        "OpenBareMap-My-Tracks.img": "1c8d81a890151a1758ef7ae7212018906e61d851ea1b32da2cace0a5f3a0b5d8"
+      }
+    },
+    {
+      "date": "2026-11-01",
+      "mapSHA256": "c0792c5b885c4f44e3c2189c2cc2d7e9508b52f68067fdb6b5a23e94f3e59855",
+      "bytes": 699531264,
+      "familyId": 4832,
+      "region": "england-wales",
+      "visualReview": "Device map display pending; USB transfer and full read-back checked.",
+      "device": "GPSMAP 67i",
+      "fullReadbackVerified": true,
+      "irelandUnchanged": true,
+      "personalTracksUnchanged": true,
+      "preservedSHA256": {
+        "Ireland": "2e0e907e52b0bd535481b013c2487bb327e749fcf62ab61935ae2d94396b6c96",
+        "My-Tracks": "1c8d81a890151a1758ef7ae7212018906e61d851ea1b32da2cace0a5f3a0b5d8"
+      },
+      "objectId": 217
+    }
+  ],
+  "availableRevision": {
+    "garminPackageRevision": "2.0.0-garmin-r2",
+    "familyId": 4833,
+    "sha256": "0fec64c33bbd62c6465726fca9904545478eba8656055f02a11d9babeb32edda",
+    "bytes": 699564032,
+    "installationStatus": "Replacement on Montana 750i and GPSMAP 67i pending; existing device entries record the superseded build."
+  }
+}

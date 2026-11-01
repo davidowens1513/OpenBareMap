@@ -1,0 +1,44 @@
+{
+  "date": "2026-11-01",
+  "checkedLockedFiles": 162,
+  "allLockedFilesMatch": true,
+  "regionalSectionsRead": 409,
+  "contentResolutionsChecked": [
+    24,
+    22,
+    20,
+    18,
+    16
+  ],
+  "confirmedConflict": {
+    "familyId": 4832,
+    "productId": 1,
+    "tileId": 48320001,
+    "appearanceFile": "0OBM4832.TYP",
+    "maps": [
+      "England & Wales",
+      "My Tracks"
+    ]
+  },
+  "landLossAtLowestDetailPercent": {
+    "ireland": 0.9678954266845138,
+    "england-wales": 0.4426284057920234
+  },
+  "sourceLandInvalidFeatures": {
+    "ireland": 0,
+    "england-wales": 0
+  },
+  "existingGarminTests": {
+    "passed": 4,
+    "failed": 0
+  },
+  "freshFullRebuildPerformed": false,
+  "deviceRenderingInspected": false,
+  "rootCauseOfReportedSymptomConfirmed": false,
+  "rawGeometryNote": "Large intermediate decoded polygon listings removed after analysis; regenerate with CoastAudit.java if needed.",
+  "supersededEnglandWalesOutput": {
+    "revision": "2.0.0-garmin-r2",
+    "sha256": "0fec64c33bbd62c6465726fca9904545478eba8656055f02a11d9babeb32edda",
+    "repairReport": "regions/england-wales/garmin/repair-report.txt"
+  }
+}

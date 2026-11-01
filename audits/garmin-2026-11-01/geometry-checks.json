@@ -1,0 +1,224 @@
+{
+  "ireland": {
+    "sourceFeatures": 4510,
+    "sourceInvalidGeometries": 0,
+    "sourceBounds": [
+      -10.6626169,
+      51.3887089,
+      -5.0,
+      56.0
+    ],
+    "sourceUnionAreaSquareDegrees": 11.857673316507903,
+    "compiled": {
+      "4": {
+        "unionAreaSquareDegrees": 11.771750105693513,
+        "sourceLandMissingSquareDegrees": 0.15861404795226422,
+        "outsideSourceSquareDegrees": 0.07269083713777022
+      },
+      "3": {
+        "unionAreaSquareDegrees": 11.806342272245478,
+        "sourceLandMissingSquareDegrees": 0.07581232116742875,
+        "outsideSourceSquareDegrees": 0.024481276904887914
+      },
+      "2": {
+        "unionAreaSquareDegrees": 11.812128749947787,
+        "sourceLandMissingSquareDegrees": 0.053093405883629576,
+        "outsideSourceSquareDegrees": 0.007548839323394218
+      },
+      "1": {
+        "unionAreaSquareDegrees": 11.813181991783312,
+        "sourceLandMissingSquareDegrees": 0.046608974334121436,
+        "outsideSourceSquareDegrees": 0.0021176496094244663
+      },
+      "0": {
+        "unionAreaSquareDegrees": 11.813401696248148,
+        "sourceLandMissingSquareDegrees": 0.04457960204413088,
+        "outsideSourceSquareDegrees": 0.00030798178426243286
+      }
+    },
+    "lowZoomLostFromClosestSquareDegrees": 0.1143413747538566,
+    "lowZoomLossPercentOfClosest": 0.9678954266845138,
+    "largestCloseWaterPolygons": [
+      {
+        "tile": "48310023",
+        "areaSquareDegrees": 0.009044985841910602,
+        "bounds": [
+          -6.4194488525390625,
+          54.60670709609985,
+          -6.32462739944458,
+          54.70215082168579
+        ]
+      },
+      {
+        "tile": "48310023",
+        "areaSquareDegrees": 0.008642007736625601,
+        "bounds": [
+          -6.514291763305664,
+          54.519546031951904,
+          -6.4194488525390625,
+          54.61095571517944
+        ]
+      },
+      {
+        "tile": "48310023",
+        "areaSquareDegrees": 0.004974012728098387,
+        "bounds": [
+          -6.4194488525390625,
+          54.56276178359985,
+          -6.2824201583862305,
+          54.60670709609985
+        ]
+      },
+      {
+        "tile": "48310023",
+        "areaSquareDegrees": 0.0021806038063232336,
+        "bounds": [
+          -6.32462739944458,
+          54.68886852264404,
+          -6.239290237426758,
+          54.71524000167847
+        ]
+      },
+      {
+        "tile": "48310060",
+        "areaSquareDegrees": 0.0021792462234770937,
+        "bounds": [
+          -9.302716255187988,
+          53.455824851989746,
+          -9.256453514099121,
+          53.525390625
+        ]
+      }
+    ]
+  },
+  "england-wales": {
+    "sourceFeatures": 8021,
+    "sourceInvalidGeometries": 0,
+    "sourceBounds": [
+      -6.7,
+      49.8,
+      2.1,
+      55.9
+    ],
+    "sourceUnionAreaSquareDegrees": 25.790697258589425,
+    "compiled": {
+      "4": {
+        "unionAreaSquareDegrees": 20.71512256255371,
+        "sourceLandMissingSquareDegrees": 5.139497285466634,
+        "outsideSourceSquareDegrees": 0.06392258943062598
+      },
+      "3": {
+        "unionAreaSquareDegrees": 20.738681794174617,
+        "sourceLandMissingSquareDegrees": 5.072797458386039,
+        "outsideSourceSquareDegrees": 0.02078199397101335
+      },
+      "2": {
+        "unionAreaSquareDegrees": 20.74176689296074,
+        "sourceLandMissingSquareDegrees": 5.055478681292595,
+        "outsideSourceSquareDegrees": 0.006548315663644126
+      },
+      "1": {
+        "unionAreaSquareDegrees": 20.742765669737384,
+        "sourceLandMissingSquareDegrees": 5.049940901463166,
+        "outsideSourceSquareDegrees": 0.002009312610794841
+      },
+      "0": {
+        "unionAreaSquareDegrees": 20.74301371554634,
+        "sourceLandMissingSquareDegrees": 5.04798632431047,
+        "outsideSourceSquareDegrees": 0.0003027812672293404
+      }
+    },
+    "lowZoomLostFromClosestSquareDegrees": 0.09181447092234352,
+    "lowZoomLossPercentOfClosest": 0.4426284057920234,
+    "largestCloseWaterPolygons": [
+      {
+        "tile": "48320276",
+        "areaSquareDegrees": 0.0018234029710129107,
+        "bounds": [
+          -0.6059432029724121,
+          53.69490623474121,
+          -0.4833984375,
+          53.71183633804321
+        ]
+      },
+      {
+        "tile": "48320074",
+        "areaSquareDegrees": 0.0010198094656743706,
+        "bounds": [
+          -3.536825180053711,
+          54.895527362823486,
+          -3.41524600982666,
+          54.93434429168701
+        ]
+      },
+      {
+        "tile": "48320277",
+        "areaSquareDegrees": 0.0008157956358445517,
+        "bounds": [
+          -0.4833984375,
+          53.69271755218506,
+          -0.4390239715576172,
+          53.717243671417236
+        ]
+      },
+      {
+        "tile": "48320238",
+        "areaSquareDegrees": 0.0008144304558754811,
+        "bounds": [
+          0.439453125,
+          51.47562503814697,
+          0.4723477363586426,
+          51.50390625
+        ]
+      },
+      {
+        "tile": "48320063",
+        "areaSquareDegrees": 0.0007061523461970864,
+        "bounds": [
+          -2.450895309448242,
+          51.73665761947632,
+          -2.4169921875,
+          51.7665696144104
+        ]
+      }
+    ]
+  },
+  "crossMapSeaMask": {
+    "ireland-under-england-wales-level-0": {
+      "areaSquareDegrees": 0.00010067219238951427,
+      "bounds": [
+        -6.679773330688477,
+        51.619863510131836,
+        -5.0537109375,
+        52.82235145568848
+      ]
+    },
+    "ireland-under-england-wales-level-4": {
+      "areaSquareDegrees": 0.0005093569679267096,
+      "bounds": [
+        -6.679773330688477,
+        51.6668701171875,
+        -5.0537109375,
+        52.82235145568848
+      ]
+    },
+    "england-wales-under-ireland-level-0": {
+      "areaSquareDegrees": 2.282425677030269e-07,
+      "bounds": [
+        -6.6295623779296875,
+        51.620163917541504,
+        -5.054376125335693,
+        52.81194448471069
+      ]
+    },
+    "england-wales-under-ireland-level-4": {
+      "areaSquareDegrees": 0.002146721048464947,
+      "bounds": [
+        -6.3555908203125,
+        51.61826393821023,
+        -5.0537109375,
+        52.66194188317587
+      ]
+    }
+  }
+}

@@ -1,0 +1,293 @@
+{
+  "date": "2026-11-01",
+  "purpose": "Remove obsolete builds, generated duplicate exports and temporary transfer/publishing files after verified repair publication. Preserve active release files, source data, toolchains, source code and Git history.",
+  "targets": [
+    {
+      "path": "/Users/davidowens/Documents/Codex/2026-10-25/i-x20/outputs/OpenBareMap/regions/england-wales/garmin/work",
+      "logicalBytes": 12021486036,
+      "allocatedBytes": 7440596992,
+      "files": 742
+    },
+    {
+      "path": "/Users/davidowens/Documents/Codex/2026-10-25/i-x20/outputs/OpenBareMap/work/separate-exports",
+      "logicalBytes": 13437847744,
+      "allocatedBytes": 13438816256,
+      "files": 180
+    },
+    {
+      "path": "/Users/davidowens/Documents/Codex/2026-10-25/i-x20/outputs/OpenBareMap/work/web-previews",
+      "logicalBytes": 4219618816,
+      "allocatedBytes": 4219703296,
+      "files": 40
+    },
+    {
+      "path": "/Users/davidowens/Documents/Codex/2026-10-25/i-x20/outputs/OpenBareMap/work/superseded-england-wales-maps",
+      "logicalBytes": 835416064,
+      "allocatedBytes": 835416064,
+      "files": 2
+    },
+    {
+      "path": "/Users/davidowens/Documents/Codex/2026-10-25/i-x20/outputs/OpenBareMap/work/full-map-reassembly-check",
+      "logicalBytes": 0,
+      "allocatedBytes": 0,
+      "files": 0
+    },
+    {
+      "path": "/Users/davidowens/Documents/Codex/2026-10-25/i-x20/outputs/OpenBareMap/work/grid-clone-check.mbtiles",
+      "logicalBytes": 76009472,
+      "allocatedBytes": 0,
+      "files": 1
+    },
+    {
+      "path": "/Users/davidowens/Documents/Codex/2026-10-25/i-x20/outputs/OpenBareMap/work/swift-ios-module-cache",
+      "logicalBytes": 16242410,
+      "allocatedBytes": 712704,
+      "files": 44
+    },
+    {
+      "path": "/Users/davidowens/Documents/Codex/2026-10-25/i-x20/outputs/OpenBareMap/work/swift-module-cache",
+      "logicalBytes": 30519509,
+      "allocatedBytes": 14913536,
+      "files": 53
+    },
+    {
+      "path": "/Users/davidowens/Documents/Codex/2026-10-25/i-x20/outputs/OpenBareMap/work/swift-region-module-cache",
+      "logicalBytes": 30522525,
+      "allocatedBytes": 1757184,
+      "files": 53
+    },
+    {
+      "path": "/Users/davidowens/Documents/Codex/2026-10-25/i-x20/outputs/OpenBareMap/work/test-ios-loader-2.0",
+      "logicalBytes": 98320,
+      "allocatedBytes": 102400,
+      "files": 1
+    },
+    {
+      "path": "/Users/davidowens/Documents/Codex/2026-10-25/i-x20/outputs/OpenBareMap/work/test-regional-ios-loader",
+      "logicalBytes": 98024,
+      "allocatedBytes": 98304,
+      "files": 1
+    },
+    {
+      "path": "/Users/davidowens/Documents/Codex/2026-10-25/i-x20/outputs/OpenBareMap/work/stale-index-lock-20261101-113159",
+      "logicalBytes": 0,
+      "allocatedBytes": 0,
+      "files": 1
+    },
+    {
+      "path": "/Users/davidowens/Documents/Codex/2026-10-25/i-x20/outputs/OpenBareMap/work/stale-index-lock-20261101-121044",
+      "logicalBytes": 0,
+      "allocatedBytes": 0,
+      "files": 1
+    },
+    {
+      "path": "/Users/davidowens/Documents/Codex/2026-10-25/i-x20/outputs/OpenBareMap/build/england-wales-release",
+      "logicalBytes": 37726,
+      "allocatedBytes": 0,
+      "files": 8
+    },
+    {
+      "path": "/Users/davidowens/Documents/Codex/2026-10-25/i-x20/outputs/OpenBareMap/build/england-wales-coast-context",
+      "logicalBytes": 523613767,
+      "allocatedBytes": 0,
+      "files": 6
+    },
+    {
+      "path": "/Users/davidowens/Documents/Codex/2026-10-25/i-x20/outputs/OpenBareMap/android/app/build",
+      "logicalBytes": 137753169,
+      "allocatedBytes": 22532096,
+      "files": 475
+    },
+    {
+      "path": "/Users/davidowens/Documents/Codex/2026-10-25/i-x20/outputs/OpenBareMap/android/loader/build",
+      "logicalBytes": 1315047,
+      "allocatedBytes": 331776,
+      "files": 262
+    },
+    {
+      "path": "/private/tmp/openbaremap-device-install",
+      "logicalBytes": 1157721088,
+      "allocatedBytes": 1157726208,
+      "files": 5
+    },
+    {
+      "path": "/private/tmp/openbaremap-ew-coast-fix",
+      "logicalBytes": 15139572,
+      "allocatedBytes": 15147008,
+      "files": 3
+    },
+    {
+      "path": "/private/tmp/openbaremap-ew-garmin-final",
+      "logicalBytes": 5500062798,
+      "allocatedBytes": 5501022208,
+      "files": 583
+    },
+    {
+      "path": "/private/tmp/openbaremap-ew-garmin-r2",
+      "logicalBytes": 5498364692,
+      "allocatedBytes": 5513150464,
+      "files": 659
+    },
+    {
+      "path": "/private/tmp/openbaremap-ew-r2-install",
+      "logicalBytes": 2327789555,
+      "allocatedBytes": 2327814144,
+      "files": 14
+    },
+    {
+      "path": "/private/tmp/openbaremap-publish",
+      "logicalBytes": 6911405499,
+      "allocatedBytes": 6911963136,
+      "files": 204
+    },
+    {
+      "path": "/private/tmp/openbaremap-publish.git",
+      "logicalBytes": 33398,
+      "allocatedBytes": 155648,
+      "files": 36
+    },
+    {
+      "path": "/private/tmp/openbaremap-publish-rewrite.log",
+      "logicalBytes": 1278,
+      "allocatedBytes": 4096,
+      "files": 1
+    },
+    {
+      "path": "/private/tmp/openbaremap-public-r2-verification.img",
+      "logicalBytes": 699564032,
+      "allocatedBytes": 704835584,
+      "files": 1
+    },
+    {
+      "path": "/private/tmp/openbaremap-live-site-r2.html",
+      "logicalBytes": 13139,
+      "allocatedBytes": 16384,
+      "files": 1
+    },
+    {
+      "path": "/private/tmp/openbaremap-ew-usb-devices.json",
+      "logicalBytes": 30,
+      "allocatedBytes": 4096,
+      "files": 1
+    },
+    {
+      "path": "/private/tmp/openbaremap-ew-current-devices.log",
+      "logicalBytes": 0,
+      "allocatedBytes": 0,
+      "files": 1
+    },
+    {
+      "path": "/private/tmp/openbaremap-IMG_7455.png",
+      "logicalBytes": 11833885,
+      "allocatedBytes": 11837440,
+      "files": 1
+    },
+    {
+      "path": "/private/tmp/openbaremap-IMG_7456.png",
+      "logicalBytes": 14521111,
+      "allocatedBytes": 14524416,
+      "files": 1
+    },
+    {
+      "path": "/private/tmp/openbaremap-IMG_7457.png",
+      "logicalBytes": 14558155,
+      "allocatedBytes": 14561280,
+      "files": 1
+    },
+    {
+      "path": "/private/tmp/openbaremap-montana-sample.txt",
+      "logicalBytes": 76783,
+      "allocatedBytes": 77824,
+      "files": 1
+    },
+    {
+      "path": "/private/tmp/openbaremap-mtp-detect.log",
+      "logicalBytes": 18566,
+      "allocatedBytes": 20480,
+      "files": 1
+    },
+    {
+      "path": "/private/tmp/openbaremap-mtp-errors.log",
+      "logicalBytes": 19,
+      "allocatedBytes": 4096,
+      "files": 1
+    },
+    {
+      "path": "/private/tmp/openbaremap-mtp-folders.log",
+      "logicalBytes": 4155,
+      "allocatedBytes": 8192,
+      "files": 1
+    },
+    {
+      "path": "/private/tmp/openbaremap-mtp-maps.log",
+      "logicalBytes": 277,
+      "allocatedBytes": 4096,
+      "files": 1
+    },
+    {
+      "path": "/private/tmp/openbaremap-sample-status.log",
+      "logicalBytes": 218,
+      "allocatedBytes": 4096,
+      "files": 1
+    },
+    {
+      "path": "/private/tmp/openbaremap_mtp",
+      "logicalBytes": 51632,
+      "allocatedBytes": 53248,
+      "files": 1
+    },
+    {
+      "path": "/private/tmp/openbaremap_mtp.c",
+      "logicalBytes": 3798,
+      "allocatedBytes": 4096,
+      "files": 1
+    },
+    {
+      "path": "/private/tmp/CoastAudit.class",
+      "logicalBytes": 8344,
+      "allocatedBytes": 12288,
+      "files": 1
+    },
+    {
+      "path": "/private/tmp/Inventory.class",
+      "logicalBytes": 4197,
+      "allocatedBytes": 8192,
+      "files": 1
+    },
+    {
+      "path": "/private/tmp/ValidateMapSet.class",
+      "logicalBytes": 9443,
+      "allocatedBytes": 12288,
+      "files": 1
+    },
+    {
+      "path": "/private/tmp/InspectMap.class",
+      "logicalBytes": 13349,
+      "allocatedBytes": 16384,
+      "files": 1
+    }
+  ],
+  "protectedActiveFiles": {
+    "/Users/davidowens/Documents/Codex/2026-10-25/i-x20/outputs/OpenBareMap/build/detail-2.0/basemap.mbtiles": "cb2e6ec1ebe474563422e44db2c5d30c2efa7c73ebb55a262b85508710943431",
+    "/Users/davidowens/Documents/Codex/2026-10-25/i-x20/outputs/OpenBareMap/build/padding-2.0/topography.mbtiles": "73811c156a62d3ce945bee34c9c2f2c8ad1bc66c87d4fd4d43e0ce314ed74ec5",
+    "/Users/davidowens/Documents/Codex/2026-10-25/i-x20/outputs/OpenBareMap/build/hillshade-a/hillshade.mbtiles": "55d199c8ca56463286944c9ad2ef39c7ed3b844ebee151dafb11908ade2ac2e0",
+    "/Users/davidowens/Documents/Codex/2026-10-25/i-x20/outputs/OpenBareMap/assets/irish-grid.mbtiles": "449f6302f12b1d606de3e1d0467346e394e25c6c4c0b2b901f6a070873f58972",
+    "/Users/davidowens/Documents/Codex/2026-10-25/i-x20/outputs/OpenBareMap/releases/england-wales/2.0.0/maps/basemap.mbtiles": "ff60d06aa4646b9a917fea499d69ad9d04d46c63c8ab981e5653a320d1fc3fac",
+    "/Users/davidowens/Documents/Codex/2026-10-25/i-x20/outputs/OpenBareMap/releases/england-wales/2.0.0/maps/grid.mbtiles": "3008b9d2db998edb4a8d0d200e673e472e110290eed2b303874f2c5b36cf08af",
+    "/Users/davidowens/Documents/Codex/2026-10-25/i-x20/outputs/OpenBareMap/releases/england-wales/2.0.0/maps/hillshade.mbtiles": "1c7ac27cd22ff21f98ec2a51dc989999e89dbcaa24eb1e9510c9a80f2ae6cdd3",
+    "/Users/davidowens/Documents/Codex/2026-10-25/i-x20/outputs/OpenBareMap/releases/england-wales/2.0.0/maps/topography-fixed.mbtiles": "6228ae3821d85526d24f33b21d6db1be300b75babd3e254c9dfa0f1cd96066e1",
+    "/Users/davidowens/Documents/Codex/2026-10-25/i-x20/outputs/OpenBareMap/garmin/dist/OpenBareMap-Ireland.img": "2e0e907e52b0bd535481b013c2487bb327e749fcf62ab61935ae2d94396b6c96",
+    "/Users/davidowens/Documents/Codex/2026-10-25/i-x20/outputs/OpenBareMap/regions/england-wales/garmin/dist/OpenBareMap-England-Wales.img": "0fec64c33bbd62c6465726fca9904545478eba8656055f02a11d9babeb32edda",
+    "/Users/davidowens/Documents/Codex/2026-10-25/i-x20/outputs/OpenBareMap/garmin/dist/OpenBareMap-My-Tracks.img": "1c8d81a890151a1758ef7ae7212018906e61d851ea1b32da2cace0a5f3a0b5d8"
+  },
+  "freeBytesBefore": 49971200000,
+  "status": "completed",
+  "metadataArchive": "maintenance/removed-build-metadata-2026-11-01.zip",
+  "freeBytesAfter": 70041600000,
+  "measuredFreeBytesIncrease": 20070400000,
+  "finalFreeBytesAfterCacheCleanup": 74956800000,
+  "totalMeasuredFreeBytesIncreaseIncludingCacheCleanup": 24985600000,
+  "garminTestsPassed": 9,
+  "regionalTestsPassed": 5,
+  "publicGarminDownloadVerified": true
+}

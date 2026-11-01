@@ -1,0 +1,20 @@
+FILE garmin/dist/OpenBareMap-Ireland.img
+MAKEGMAP.MPS bytes=6959
+PRODUCT family=4831 product=1 OpenBareMap Ireland
+MAPS 91
+0OBM4831.TYP bytes=2902
+TYP normalised SHA256=cb7ea4742daffbec3557ad55e4bd77154555b7efc2c0ede16e8ac02f4739d1e7
+FILE regions/england-wales/garmin/dist/OpenBareMap-England-Wales.img
+MAKEGMAP.MPS bytes=26763
+PRODUCT family=4832 product=1 OpenBareMap England & Wales
+MAPS 318
+COLLIDING TILE 48320001 family=4832 OpenBareMap England & Wales
+0OBM4832.TYP bytes=2902
+TYP normalised SHA256=cae66c1554002fd7c46ae88c897507925baba01a4ff9c9f69a8d3cecb6540ac4
+FILE garmin/dist/OpenBareMap-My-Tracks.img
+MAKEGMAP.MPS bytes=124
+PRODUCT family=4832 product=1 OpenBareMap - My Tracks
+MAPS 1
+COLLIDING TILE 48320001 family=4832 Onzy Ireland tracks
+0OBM4832.TYP bytes=257
+TYP normalised SHA256=0fe8123c9df8a9cb3403bb6c16e71b3dd6a1436cb95f3f08a178a7a561c75a47

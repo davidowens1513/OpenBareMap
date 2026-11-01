@@ -40,7 +40,7 @@ public class InspectMap {
         List<String> targets = args.length > 1 ? Arrays.asList(args).subList(1,args.length) : List.of("Carrauntoohil","Dublin","Belfast","Galway","Cork");
         Path directory=Path.of(args[0]);Map<String,Long> lines=new TreeMap<>(),polygons=new TreeMap<>(),points=new TreeMap<>(),sizes=new TreeMap<>();
         SortedMap<String,String> anchors=new TreeMap<>(),hashes=new TreeMap<>();
-        Map<Integer,Map<String,Long>> contourLevels=new TreeMap<>();
+        Map<Integer,Map<String,Long>> contourLevels=new TreeMap<>(),coastLevels=new TreeMap<>();
         int tiles=0;double minLat=90,minLon=180,maxLat=-90,maxLon=-180;List<String> bounds=new ArrayList<>();
         List<Path> files;
         try(var paths=Files.list(directory)) {files=paths.filter(p->p.getFileName().toString().matches("[0-9]{8}\\.img")).sorted().toList();}
@@ -52,6 +52,9 @@ public class InspectMap {
                 for(Zoom level:reader.getLevels()) {
                     if(level.getLevel()<=4) {
                         Map<String,Long> cc=contourLevels.computeIfAbsent(level.getLevel(),k->new TreeMap<>());
+                        Map<String,Long> coast=coastLevels.computeIfAbsent(level.getLevel(),k->new TreeMap<>());
+                        for(Polygon polygon:reader.shapesForLevel(level.getLevel(),false))
+                            if(Set.of(0x32,0x54).contains(polygon.getType()))count(coast,polygon.getType());
                         for(Polyline line:reader.linesForLevel(level.getLevel())) {
                             if(level.getLevel()==0)count(lines,line.getType());
                             if(Set.of(0x20,0x21,0x22,0x10008,0x10009).contains(line.getType()))count(cc,line.getType());
@@ -76,7 +79,10 @@ public class InspectMap {
         for(String name:targets)if(!anchors.containsKey(name))throw new IllegalStateException("Missing anchor label: "+name);
         StringJoiner anchorsJson=new StringJoiner(",","{","}");anchors.forEach((k,v)->anchorsJson.add(quote(k)+":"+quote(v)));
         StringJoiner levelsJson=new StringJoiner(",","{","}");contourLevels.forEach((k,v)->levelsJson.add(quote(k.toString())+":"+mapJson(v)));
+        for(int level=0;level<=4;level++)if(coastLevels.getOrDefault(level,Map.of()).getOrDefault("0x54",0L)==0)
+            throw new IllegalStateException("Missing land at map level "+level);
+        StringJoiner coastJson=new StringJoiner(",","{","}");coastLevels.forEach((k,v)->coastJson.add(quote(k.toString())+":"+mapJson(v)));
         StringJoiner hashJson=new StringJoiner(",","{","}");hashes.forEach((k,v)->hashJson.add(quote(k)+":"+quote(v)));
-        System.out.println("{\"tiles\":"+tiles+",\"bounds\":["+minLon+","+minLat+","+maxLon+","+maxLat+"],\"subfileBytes\":"+mapJson(sizes)+",\"lineInstancesAtHighestDetail\":"+mapJson(lines)+",\"polygonInstancesAtHighestDetail\":"+mapJson(polygons)+",\"pointInstancesAtHighestDetail\":"+mapJson(points)+",\"contoursByLevel\":"+levelsJson+",\"anchorLabels\":"+anchorsJson+",\"logicalCombinedSHA256\":"+quote(combined)+",\"logicalTileSHA256\":"+hashJson+",\"logicalHashNote\":\"Internal file names, sizes and payloads; only CommonHeader creation-date bytes 14..20 are zeroed for hashing. IMG archive headers are excluded. Output bytes are never modified.\",\"routing\":false}");
+        System.out.println("{\"tiles\":"+tiles+",\"bounds\":["+minLon+","+minLat+","+maxLon+","+maxLat+"],\"subfileBytes\":"+mapJson(sizes)+",\"lineInstancesAtHighestDetail\":"+mapJson(lines)+",\"polygonInstancesAtHighestDetail\":"+mapJson(polygons)+",\"pointInstancesAtHighestDetail\":"+mapJson(points)+",\"contoursByLevel\":"+levelsJson+",\"coastPolygonsByLevel\":"+coastJson+",\"anchorLabels\":"+anchorsJson+",\"logicalCombinedSHA256\":"+quote(combined)+",\"logicalTileSHA256\":"+hashJson+",\"logicalHashNote\":\"Internal file names, sizes and payloads; only CommonHeader creation-date bytes 14..20 are zeroed for hashing. IMG archive headers are excluded. Output bytes are never modified.\",\"routing\":false}");
     }
 }

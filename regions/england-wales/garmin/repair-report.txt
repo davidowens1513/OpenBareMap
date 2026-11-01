@@ -1,0 +1,18 @@
+OpenBareMap England & Wales — Garmin repair r2
+1 November 2026
+
+The England & Wales map now uses family 4833, tile IDs 48330001–48330318 and appearance file 0OBM4833.TYP. These are separate from Ireland and My Tracks. The previous edition conflicted with My Tracks in all three identities.
+
+The supplied photos show large blue inland blocks around Shrewsbury and across Wales at roughly 5–18 km scales, along with symbols and colours inconsistent with the intended regional style. All 80 land-location checks also pass on the old geometry, supporting the appearance-file conflict as the explanation rather than wholesale missing land. The user has confirmed correct appearance on GPSMAP 67i; Montana visual review remains pending.
+
+The full 318-section map was rebuilt with the same verified source geometry and elevation data. Land and sea polygons now bypass the low-zoom size filter. Land polygon instances at the lowest content level increase from 572 to 660.
+
+Validation: zero compiler map/exit failures; complete structural inspection with DEM and appearance file; no routing; all three OpenBareMap files checked together for unique products, tiles and appearance files; all 80 land checks across five detail levels passed, including the photographed inland areas. Nine Garmin regression tests passed, including a small-island fixture that fails under the old settings. Five regional tests also passed. All 108 uncompressed elevation grids match their locked sources.
+
+Ireland and My Tracks have unchanged SHA-256 checksums. Superseded England & Wales binaries and temporary builds were removed after the repaired public download was verified. Source locks, build reports and installation history remain available; cleanup details are in maintenance/cleanup-2026-11-01.json. Installation records now identify the repaired build on both devices. The preceding installation records are preserved in installation-history-r1.json.
+
+Replacement: regions/england-wales/garmin/dist/OpenBareMap-England-Wales.img
+Bytes: 699564032
+SHA-256: 0fec64c33bbd62c6465726fca9904545478eba8656055f02a11d9babeb32edda
+
+Replace the existing England & Wales IMG using the same filename, then restart the Garmin. Do not keep an old England & Wales IMG beside it in the Garmin folder. Ireland and My Tracks require no changes. The repaired build has now been installed on Montana 750i and GPSMAP 67i. Full-file read-back verified both copies. Ireland and My Tracks were also checked and retain their original hashes. The user subsequently confirmed correct GPSMAP 67i appearance; Montana visual review remains pending.

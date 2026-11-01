@@ -1,0 +1,1626 @@
+{
+  "files": [
+    {
+      "path": "data/ireland-and-northern-ireland-261024.osm.pbf",
+      "expected": "ed9974ce4c9a2da813bddea4b7b978ed2047c90974ea1104e4521dabe3518aaa",
+      "locks": [
+        "sources.lock.json"
+      ],
+      "actual": "ed9974ce4c9a2da813bddea4b7b978ed2047c90974ea1104e4521dabe3518aaa",
+      "bytes": 416526430,
+      "status": "match"
+    },
+    {
+      "path": "data/land-polygons-split-4326.zip",
+      "expected": "5911e273096f9585425a17c30a8a98785cc33ed2718ff88987768933b8a327f7",
+      "locks": [
+        "coast-sources.lock.json"
+      ],
+      "actual": "5911e273096f9585425a17c30a8a98785cc33ed2718ff88987768933b8a327f7",
+      "bytes": 928538219,
+      "status": "match"
+    },
+    {
+      "path": "data/elevation/N51W011.hgt.gz",
+      "expected": "5b5c1b38971263210b421e0a3ece4a02cd95dbfdbfb2cb5005eeaacdf07a2895",
+      "locks": [
+        "terrain-sources.lock.json"
+      ],
+      "actual": "5b5c1b38971263210b421e0a3ece4a02cd95dbfdbfb2cb5005eeaacdf07a2895",
+      "bytes": 1470510,
+      "status": "match"
+    },
+    {
+      "path": "data/elevation/N51W010.hgt.gz",
+      "expected": "e2ed9e160696ee1cbc374f18c153911e211147249bba924e0bbc33239ca49ff1",
+      "locks": [
+        "terrain-sources.lock.json"
+      ],
+      "actual": "e2ed9e160696ee1cbc374f18c153911e211147249bba924e0bbc33239ca49ff1",
+      "bytes": 4440406,
+      "status": "match"
+    },
+    {
+      "path": "data/elevation/N51W009.hgt.gz",
+      "expected": "bac8bfea854fff55312462df01d08e0fefdbdd5b9a4b79fa220f4333552e0129",
+      "locks": [
+        "terrain-sources.lock.json"
+      ],
+      "actual": "bac8bfea854fff55312462df01d08e0fefdbdd5b9a4b79fa220f4333552e0129",
+      "bytes": 2342865,
+      "status": "match"
+    },
+    {
+      "path": "data/elevation/N51W008.hgt.gz",
+      "expected": "82f227e325adaa556220e986aec94ba58aa35cbdfd82138086970ecb8b929183",
+      "locks": [
+        "terrain-sources.lock.json"
+      ],
+      "actual": "82f227e325adaa556220e986aec94ba58aa35cbdfd82138086970ecb8b929183",
+      "bytes": 460562,
+      "status": "match"
+    },
+    {
+      "path": "data/elevation/N51W007.hgt.gz",
+      "expected": "5e12dfb4b29bb441bd7c6143e34179914be53e15f838c37f393332a12a11dfbe",
+      "locks": [
+        "terrain-sources.lock.json"
+      ],
+      "actual": "5e12dfb4b29bb441bd7c6143e34179914be53e15f838c37f393332a12a11dfbe",
+      "bytes": 316850,
+      "status": "match"
+    },
+    {
+      "path": "data/elevation/N51W006.hgt.gz",
+      "expected": "ecc67584d5c11abe7bac01874670024c334ab8169ca93a1825d7858ecb24b5f1",
+      "locks": [
+        "terrain-sources.lock.json"
+      ],
+      "actual": "ecc67584d5c11abe7bac01874670024c334ab8169ca93a1825d7858ecb24b5f1",
+      "bytes": 853993,
+      "status": "match"
+    },
+    {
+      "path": "data/elevation/N52W011.hgt.gz",
+      "expected": "bbc1e1912b0c9d4d4f4e1610ede8dd54f1d385909905f571e51e1f6f19a306fd",
+      "locks": [
+        "terrain-sources.lock.json"
+      ],
+      "actual": "bbc1e1912b0c9d4d4f4e1610ede8dd54f1d385909905f571e51e1f6f19a306fd",
+      "bytes": 1269779,
+      "status": "match"
+    },
+    {
+      "path": "data/elevation/N52W010.hgt.gz",
+      "expected": "be5307dfac3a7002493d1b28536a32c1bc2b3b5684eb9682c67736a9ce9e2ecd",
+      "locks": [
+        "terrain-sources.lock.json"
+      ],
+      "actual": "be5307dfac3a7002493d1b28536a32c1bc2b3b5684eb9682c67736a9ce9e2ecd",
+      "bytes": 4780956,
+      "status": "match"
+    },
+    {
+      "path": "data/elevation/N52W009.hgt.gz",
+      "expected": "71c03766fe8172a187fcb9f5804de74ba4015c222dda4b92be12d74f35afc7fc",
+      "locks": [
+        "terrain-sources.lock.json"
+      ],
+      "actual": "71c03766fe8172a187fcb9f5804de74ba4015c222dda4b92be12d74f35afc7fc",
+      "bytes": 6177538,
+      "status": "match"
+    },
+    {
+      "path": "data/elevation/N52W008.hgt.gz",
+      "expected": "23b21561227f84d8875ca4a1f9599e1173ee8047bff8b85ba35cf202ec93bea2",
+      "locks": [
+        "terrain-sources.lock.json"
+      ],
+      "actual": "23b21561227f84d8875ca4a1f9599e1173ee8047bff8b85ba35cf202ec93bea2",
+      "bytes": 5895440,
+      "status": "match"
+    },
+    {
+      "path": "data/elevation/N52W007.hgt.gz",
+      "expected": "39281545b67174ead17031b69b73f05136229282bf89f9c2cd14d382c8f2111d",
+      "locks": [
+        "terrain-sources.lock.json"
+      ],
+      "actual": "39281545b67174ead17031b69b73f05136229282bf89f9c2cd14d382c8f2111d",
+      "bytes": 4562836,
+      "status": "match"
+    },
+    {
+      "path": "data/elevation/N52W006.hgt.gz",
+      "expected": "4bff675f1fda26e497e390e01966d58f81806262b6ef73e1e35d8383847a7380",
+      "locks": [
+        "terrain-sources.lock.json"
+      ],
+      "actual": "4bff675f1fda26e497e390e01966d58f81806262b6ef73e1e35d8383847a7380",
+      "bytes": 485879,
+      "status": "match"
+    },
+    {
+      "path": "data/elevation/N53W011.hgt.gz",
+      "expected": "757e1aeafa2e25ed0de688b3aa4b2efef1181f461ebcedfffd56fabd6e9034cc",
+      "locks": [
+        "terrain-sources.lock.json"
+      ],
+      "actual": "757e1aeafa2e25ed0de688b3aa4b2efef1181f461ebcedfffd56fabd6e9034cc",
+      "bytes": 962931,
+      "status": "match"
+    },
+    {
+      "path": "data/elevation/N53W010.hgt.gz",
+      "expected": "60fd12f709be26a768d90e480cd21000eeb9985bcbc4b5e788bc1ba6a12be215",
+      "locks": [
+        "terrain-sources.lock.json"
+      ],
+      "actual": "60fd12f709be26a768d90e480cd21000eeb9985bcbc4b5e788bc1ba6a12be215",
+      "bytes": 5232749,
+      "status": "match"
+    },
+    {
+      "path": "data/elevation/N53W009.hgt.gz",
+      "expected": "caad5ea41d1aa29036ead93b167e417a14cd0585e20f59dde4ed297ed1c2bc02",
+      "locks": [
+        "terrain-sources.lock.json"
+      ],
+      "actual": "caad5ea41d1aa29036ead93b167e417a14cd0585e20f59dde4ed297ed1c2bc02",
+      "bytes": 4316022,
+      "status": "match"
+    },
+    {
+      "path": "data/elevation/N53W008.hgt.gz",
+      "expected": "12b3c384af4a72db7a22ef6b50fc8a361593eb412c0f67c5346da66d1edace8e",
+      "locks": [
+        "terrain-sources.lock.json"
+      ],
+      "actual": "12b3c384af4a72db7a22ef6b50fc8a361593eb412c0f67c5346da66d1edace8e",
+      "bytes": 4794876,
+      "status": "match"
+    },
+    {
+      "path": "data/elevation/N53W007.hgt.gz",
+      "expected": "c1b01742a50466ee4f47c6d8e14b5b76382bfce487b27a34a638932900303623",
+      "locks": [
+        "terrain-sources.lock.json"
+      ],
+      "actual": "c1b01742a50466ee4f47c6d8e14b5b76382bfce487b27a34a638932900303623",
+      "bytes": 4918819,
+      "status": "match"
+    },
+    {
+      "path": "data/elevation/N53W006.hgt.gz",
+      "expected": "9848b9e97fc6768243acedf75b7220808ea8ab861912c9df24f23685b713e6a9",
+      "locks": [
+        "terrain-sources.lock.json"
+      ],
+      "actual": "9848b9e97fc6768243acedf75b7220808ea8ab861912c9df24f23685b713e6a9",
+      "bytes": 600514,
+      "status": "match"
+    },
+    {
+      "path": "data/elevation/N54W011.hgt.gz",
+      "expected": "464b007abbcd7c5a1e5e9c583495438ce87b1f78b2a8dc4eaa5a09481288830e",
+      "locks": [
+        "terrain-sources.lock.json"
+      ],
+      "actual": "464b007abbcd7c5a1e5e9c583495438ce87b1f78b2a8dc4eaa5a09481288830e",
+      "bytes": 1777808,
+      "status": "match"
+    },
+    {
+      "path": "data/elevation/N54W010.hgt.gz",
+      "expected": "3fa3d8446370d0b0ac500755c596c4e3ac402985072c9669f1a3a0e40b95cfa8",
+      "locks": [
+        "terrain-sources.lock.json"
+      ],
+      "actual": "3fa3d8446370d0b0ac500755c596c4e3ac402985072c9669f1a3a0e40b95cfa8",
+      "bytes": 2150102,
+      "status": "match"
+    },
+    {
+      "path": "data/elevation/N54W009.hgt.gz",
+      "expected": "e42049b35680872dfd51cdd1acc620477aa019616b5217b9c113cc78c5f379ce",
+      "locks": [
+        "terrain-sources.lock.json"
+      ],
+      "actual": "e42049b35680872dfd51cdd1acc620477aa019616b5217b9c113cc78c5f379ce",
+      "bytes": 5131162,
+      "status": "match"
+    },
+    {
+      "path": "data/elevation/N54W008.hgt.gz",
+      "expected": "fdb494a1c82ec7d2a8e34ae947d6f8af2069360d67c9ce971ae90185a0b25225",
+      "locks": [
+        "terrain-sources.lock.json"
+      ],
+      "actual": "fdb494a1c82ec7d2a8e34ae947d6f8af2069360d67c9ce971ae90185a0b25225",
+      "bytes": 6755339,
+      "status": "match"
+    },
+    {
+      "path": "data/elevation/N54W007.hgt.gz",
+      "expected": "a6a26e7f4c8cad4cdcacab804622d60a1d5b75ecb1b16a09e16998805d1c057a",
+      "locks": [
+        "terrain-sources.lock.json"
+      ],
+      "actual": "a6a26e7f4c8cad4cdcacab804622d60a1d5b75ecb1b16a09e16998805d1c057a",
+      "bytes": 6388043,
+      "status": "match"
+    },
+    {
+      "path": "data/elevation/N54W006.hgt.gz",
+      "expected": "237c267452e2acc19b5c63e76247aa1ae770c4b46e412b310038625786e093f7",
+      "locks": [
+        "terrain-sources.lock.json"
+      ],
+      "actual": "237c267452e2acc19b5c63e76247aa1ae770c4b46e412b310038625786e093f7",
+      "bytes": 3031988,
+      "status": "match"
+    },
+    {
+      "path": "data/elevation/N55W011.hgt.gz",
+      "expected": "3995cea25944aa1f7dfc1f8f02778ebc913844a798d1b4c569f1499142ae4941",
+      "locks": [
+        "terrain-sources.lock.json"
+      ],
+      "actual": "3995cea25944aa1f7dfc1f8f02778ebc913844a798d1b4c569f1499142ae4941",
+      "bytes": 1990529,
+      "status": "match"
+    },
+    {
+      "path": "data/elevation/N55W010.hgt.gz",
+      "expected": "c5e647607997d5f3c2fb8240e6d3e7e8c599ca556133a3a6c97317ec25bce5dc",
+      "locks": [
+        "terrain-sources.lock.json"
+      ],
+      "actual": "c5e647607997d5f3c2fb8240e6d3e7e8c599ca556133a3a6c97317ec25bce5dc",
+      "bytes": 1792708,
+      "status": "match"
+    },
+    {
+      "path": "data/elevation/N55W009.hgt.gz",
+      "expected": "8906f89918b76395b17c81d7ca753074e5c13d2184709e6c7e9a2602383cefca",
+      "locks": [
+        "terrain-sources.lock.json"
+      ],
+      "actual": "8906f89918b76395b17c81d7ca753074e5c13d2184709e6c7e9a2602383cefca",
+      "bytes": 987430,
+      "status": "match"
+    },
+    {
+      "path": "data/elevation/N55W008.hgt.gz",
+      "expected": "04b01e932e1f51ec868a3a6c9196b40b3856c518aae4e7580ac40d7922ac7292",
+      "locks": [
+        "terrain-sources.lock.json"
+      ],
+      "actual": "04b01e932e1f51ec868a3a6c9196b40b3856c518aae4e7580ac40d7922ac7292",
+      "bytes": 2248967,
+      "status": "match"
+    },
+    {
+      "path": "data/elevation/N55W007.hgt.gz",
+      "expected": "251b4bcbf8b1656b434fe9f126364d305e3b542a1c48f9b896c9b741c02892d2",
+      "locks": [
+        "terrain-sources.lock.json"
+      ],
+      "actual": "251b4bcbf8b1656b434fe9f126364d305e3b542a1c48f9b896c9b741c02892d2",
+      "bytes": 3003271,
+      "status": "match"
+    },
+    {
+      "path": "data/elevation/N55W006.hgt.gz",
+      "expected": "b5d2d80eb621e7157afe082d41b26875a8d08fa1bc5ea474c7726b2d26073820",
+      "locks": [
+        "terrain-sources.lock.json"
+      ],
+      "actual": "b5d2d80eb621e7157afe082d41b26875a8d08fa1bc5ea474c7726b2d26073820",
+      "bytes": 4113150,
+      "status": "match"
+    },
+    {
+      "path": "garmin/inputs/contours-10m.geojson.gz",
+      "expected": "cfa8346e9c5f181d8cb5a01d6469f23d643ccbae7bca9630add9d4b10578c2df",
+      "locks": [
+        "garmin/inputs.lock.json"
+      ],
+      "actual": "cfa8346e9c5f181d8cb5a01d6469f23d643ccbae7bca9630add9d4b10578c2df",
+      "bytes": 183574561,
+      "status": "match"
+    },
+    {
+      "path": "garmin/inputs/land-ireland.geojson.gz",
+      "expected": "615c12fcc004031f618401a7beb6a5f309011793074861b57c4dd325ac952c8f",
+      "locks": [
+        "garmin/inputs.lock.json"
+      ],
+      "actual": "615c12fcc004031f618401a7beb6a5f309011793074861b57c4dd325ac952c8f",
+      "bytes": 4144744,
+      "status": "match"
+    },
+    {
+      "path": "garmin/inputs/landcover-smoothed.geojson.gz",
+      "expected": "1bc12c5c0e600b212783226193ca6bc64979c5ee87153784fbd1edbc81773d01",
+      "locks": [
+        "garmin/inputs.lock.json"
+      ],
+      "actual": "1bc12c5c0e600b212783226193ca6bc64979c5ee87153784fbd1edbc81773d01",
+      "bytes": 120811376,
+      "status": "match"
+    },
+    {
+      "path": "garmin/inputs/dem-padding/N51W005.hgt.gz",
+      "expected": "311663bd45124e2b54b56021643df5bc022077e7cf14e3e7443f6ef553f91e4d",
+      "locks": [
+        "garmin/dem-padding.lock.json"
+      ],
+      "actual": "311663bd45124e2b54b56021643df5bc022077e7cf14e3e7443f6ef553f91e4d",
+      "bytes": 3229001,
+      "status": "match"
+    },
+    {
+      "path": "garmin/inputs/dem-padding/N52W005.hgt.gz",
+      "expected": "668a09f19cd75e3ef6aa27a4d294b68cc5416df3ceabdc3768481e81e2ad42b5",
+      "locks": [
+        "garmin/dem-padding.lock.json"
+      ],
+      "actual": "668a09f19cd75e3ef6aa27a4d294b68cc5416df3ceabdc3768481e81e2ad42b5",
+      "bytes": 3077935,
+      "status": "match"
+    },
+    {
+      "path": "garmin/inputs/dem-padding/N53W005.hgt.gz",
+      "expected": "a159bab2a767e937625e8fe6199416184255c814e4666d2937db9dfc45f6a1d4",
+      "locks": [
+        "garmin/dem-padding.lock.json"
+      ],
+      "actual": "a159bab2a767e937625e8fe6199416184255c814e4666d2937db9dfc45f6a1d4",
+      "bytes": 1832494,
+      "status": "match"
+    },
+    {
+      "path": "garmin/inputs/dem-padding/N54W005.hgt.gz",
+      "expected": "2a368b359b4d1126b0aa1dea9825195682e8f2d119ba7060994850e28e2f8b8a",
+      "locks": [
+        "garmin/dem-padding.lock.json"
+      ],
+      "actual": "2a368b359b4d1126b0aa1dea9825195682e8f2d119ba7060994850e28e2f8b8a",
+      "bytes": 2702122,
+      "status": "match"
+    },
+    {
+      "path": "garmin/inputs/dem-padding/N55W005.hgt.gz",
+      "expected": "a94a6175399650c184b9201475e445076dc2b657162773d2dd0d3c107850deb7",
+      "locks": [
+        "garmin/dem-padding.lock.json"
+      ],
+      "actual": "a94a6175399650c184b9201475e445076dc2b657162773d2dd0d3c107850deb7",
+      "bytes": 6563032,
+      "status": "match"
+    },
+    {
+      "path": "garmin/tools/splitter-r654.zip",
+      "expected": "87b0ca0e827bef556341f66ec8dd7f48eea2a479d1ff3659caa5d6f0e9a9b68c",
+      "locks": [
+        "garmin/toolchain.lock.json"
+      ],
+      "actual": "87b0ca0e827bef556341f66ec8dd7f48eea2a479d1ff3659caa5d6f0e9a9b68c",
+      "bytes": 1580386,
+      "status": "match"
+    },
+    {
+      "path": "garmin/tools/mkgmap-r4924.zip",
+      "expected": "b2170799b61a95d4fc258e8e4fb4e21396809e0390789178f94c77109f8e0d84",
+      "locks": [
+        "garmin/toolchain.lock.json"
+      ],
+      "actual": "b2170799b61a95d4fc258e8e4fb4e21396809e0390789178f94c77109f8e0d84",
+      "bytes": 3527235,
+      "status": "match"
+    },
+    {
+      "path": "garmin/tools/osmium-4.2.0-cp312-cp312-macosx_11_0_arm64.whl",
+      "expected": "75ae8612e2ef93510c6add81083d9b099330ce49e754e3d2210a5230121e0b92",
+      "locks": [
+        "garmin/toolchain.lock.json"
+      ],
+      "actual": "75ae8612e2ef93510c6add81083d9b099330ce49e754e3d2210a5230121e0b92",
+      "bytes": 1213353,
+      "status": "match"
+    },
+    {
+      "path": "data/regions/england-wales/england-261030.osm.pbf",
+      "expected": "4dd4a3659e8830222363803b92d3c754f506c24fb0f45866e296b0a05f074f6d",
+      "locks": [
+        "regions/england-wales/sources.lock.json"
+      ],
+      "actual": "4dd4a3659e8830222363803b92d3c754f506c24fb0f45866e296b0a05f074f6d",
+      "bytes": 1709222833,
+      "status": "match"
+    },
+    {
+      "path": "data/regions/england-wales/wales-261030.osm.pbf",
+      "expected": "680743d0dfa520bd76f68dbd405eb6133772c6df6da1cfa021dc5e0820d11dfe",
+      "locks": [
+        "regions/england-wales/sources.lock.json"
+      ],
+      "actual": "680743d0dfa520bd76f68dbd405eb6133772c6df6da1cfa021dc5e0820d11dfe",
+      "bytes": 150119349,
+      "status": "match"
+    },
+    {
+      "path": "data/regions/england-wales/england-wales-261030.osm.pbf",
+      "expected": "dd983328bdc2cc7d5330a5f68f89daf3fa2730658f93b5b59f09e04a9650851d",
+      "locks": [
+        "regions/england-wales/sources.lock.json"
+      ],
+      "actual": "dd983328bdc2cc7d5330a5f68f89daf3fa2730658f93b5b59f09e04a9650851d",
+      "bytes": 1859551571,
+      "status": "match"
+    },
+    {
+      "path": "data/regions/england-wales/england.poly",
+      "expected": "2a3f3f0b6716d52990a973835789227a190e2c1770e33acacb15241685e96b53",
+      "locks": [
+        "regions/england-wales/sources.lock.json"
+      ],
+      "actual": "2a3f3f0b6716d52990a973835789227a190e2c1770e33acacb15241685e96b53",
+      "bytes": 11945,
+      "status": "match"
+    },
+    {
+      "path": "data/regions/england-wales/wales.poly",
+      "expected": "c7b9cf40de410cc5821c71469a15fc1b5c0a5b12190cc10968df533ec7eda08f",
+      "locks": [
+        "regions/england-wales/sources.lock.json"
+      ],
+      "actual": "c7b9cf40de410cc5821c71469a15fc1b5c0a5b12190cc10968df533ec7eda08f",
+      "bytes": 10767,
+      "status": "match"
+    },
+    {
+      "path": "data/regions/england-wales/elevation/N49W007.hgt.gz",
+      "expected": "d9f4932964d545e585c936491ff77848e6a85f92b8fec60ec1ea6f9bde123e16",
+      "locks": [
+        "regions/england-wales/terrain-sources.lock.json"
+      ],
+      "actual": "d9f4932964d545e585c936491ff77848e6a85f92b8fec60ec1ea6f9bde123e16",
+      "bytes": 471233,
+      "status": "match"
+    },
+    {
+      "path": "data/regions/england-wales/elevation/N49W006.hgt.gz",
+      "expected": "3f4f1438834d52d3c07fbaa607d184b5b4c7a4260783545421323dce46ec47b6",
+      "locks": [
+        "regions/england-wales/terrain-sources.lock.json"
+      ],
+      "actual": "3f4f1438834d52d3c07fbaa607d184b5b4c7a4260783545421323dce46ec47b6",
+      "bytes": 396097,
+      "status": "match"
+    },
+    {
+      "path": "data/regions/england-wales/elevation/N49W005.hgt.gz",
+      "expected": "dfacd2682f488a463a6b5d68c80f60994fb05d2db5be8ca499f191ad87105d20",
+      "locks": [
+        "regions/england-wales/terrain-sources.lock.json"
+      ],
+      "actual": "dfacd2682f488a463a6b5d68c80f60994fb05d2db5be8ca499f191ad87105d20",
+      "bytes": 270621,
+      "status": "match"
+    },
+    {
+      "path": "data/regions/england-wales/elevation/N49W004.hgt.gz",
+      "expected": "255d24b3f2e6184ddcc1fd87e59d69d14c47b009d02f42d34670b993ebb127cb",
+      "locks": [
+        "regions/england-wales/terrain-sources.lock.json"
+      ],
+      "actual": "255d24b3f2e6184ddcc1fd87e59d69d14c47b009d02f42d34670b993ebb127cb",
+      "bytes": 359362,
+      "status": "match"
+    },
+    {
+      "path": "data/regions/england-wales/elevation/N49W003.hgt.gz",
+      "expected": "ab7f439a1339ccea8e20facc730153b0b9bc6796483f2685de97b2a4c41a68f0",
+      "locks": [
+        "regions/england-wales/terrain-sources.lock.json"
+      ],
+      "actual": "ab7f439a1339ccea8e20facc730153b0b9bc6796483f2685de97b2a4c41a68f0",
+      "bytes": 785650,
+      "status": "match"
+    },
+    {
+      "path": "data/regions/england-wales/elevation/N49W002.hgt.gz",
+      "expected": "957ad3256f9dd8bb4ebf8175c0c9715d914a352bc235157a6fdc82fcf14df5de",
+      "locks": [
+        "regions/england-wales/terrain-sources.lock.json"
+      ],
+      "actual": "957ad3256f9dd8bb4ebf8175c0c9715d914a352bc235157a6fdc82fcf14df5de",
+      "bytes": 3019178,
+      "status": "match"
+    },
+    {
+      "path": "data/regions/england-wales/elevation/N49W001.hgt.gz",
+      "expected": "3d0f391f15924e3baa8ed31b226cdddda24ef485413113d110ffb8e23b7b0c4d",
+      "locks": [
+        "regions/england-wales/terrain-sources.lock.json"
+      ],
+      "actual": "3d0f391f15924e3baa8ed31b226cdddda24ef485413113d110ffb8e23b7b0c4d",
+      "bytes": 2250798,
+      "status": "match"
+    },
+    {
+      "path": "data/regions/england-wales/elevation/N49E000.hgt.gz",
+      "expected": "369a39257f5c5e04ddd294ac58adcf60301f1bc4c8a74fe6907fbd95790b0424",
+      "locks": [
+        "regions/england-wales/terrain-sources.lock.json"
+      ],
+      "actual": "369a39257f5c5e04ddd294ac58adcf60301f1bc4c8a74fe6907fbd95790b0424",
+      "bytes": 5054500,
+      "status": "match"
+    },
+    {
+      "path": "data/regions/england-wales/elevation/N49E001.hgt.gz",
+      "expected": "9ac959dac7ae6018a8f3c305bcc2790fa3f1c66d94f906a7b0bdfd36b5bd746f",
+      "locks": [
+        "regions/england-wales/terrain-sources.lock.json"
+      ],
+      "actual": "9ac959dac7ae6018a8f3c305bcc2790fa3f1c66d94f906a7b0bdfd36b5bd746f",
+      "bytes": 6802511,
+      "status": "match"
+    },
+    {
+      "path": "data/regions/england-wales/elevation/N49E002.hgt.gz",
+      "expected": "f6829b5748f600f01484ca115f353f58d78c8fa5a093cd2d5a11428bd4304b40",
+      "locks": [
+        "regions/england-wales/terrain-sources.lock.json"
+      ],
+      "actual": "f6829b5748f600f01484ca115f353f58d78c8fa5a093cd2d5a11428bd4304b40",
+      "bytes": 6176144,
+      "status": "match"
+    },
+    {
+      "path": "data/regions/england-wales/elevation/N50W007.hgt.gz",
+      "expected": "332dfc310b94df318164da7f7e84366caea3d67dcfbf7dcb72ac33f76f47e7a4",
+      "locks": [
+        "regions/england-wales/terrain-sources.lock.json"
+      ],
+      "actual": "332dfc310b94df318164da7f7e84366caea3d67dcfbf7dcb72ac33f76f47e7a4",
+      "bytes": 324220,
+      "status": "match"
+    },
+    {
+      "path": "data/regions/england-wales/elevation/N50W006.hgt.gz",
+      "expected": "7db5bfe12164ee814e0dde260a05dadf87a83e8a7a6ed1c78523918615795819",
+      "locks": [
+        "regions/england-wales/terrain-sources.lock.json"
+      ],
+      "actual": "7db5bfe12164ee814e0dde260a05dadf87a83e8a7a6ed1c78523918615795819",
+      "bytes": 1569624,
+      "status": "match"
+    },
+    {
+      "path": "data/regions/england-wales/elevation/N50W005.hgt.gz",
+      "expected": "c3b528a418e7d5a452a35bfb848309931693fd36bbf505948a5efb05e1028069",
+      "locks": [
+        "regions/england-wales/terrain-sources.lock.json"
+      ],
+      "actual": "c3b528a418e7d5a452a35bfb848309931693fd36bbf505948a5efb05e1028069",
+      "bytes": 4472518,
+      "status": "match"
+    },
+    {
+      "path": "data/regions/england-wales/elevation/N50W004.hgt.gz",
+      "expected": "32ef7a6d228374236cefc776bf2104d15a72934e98506e2c085acd60cf2a0e00",
+      "locks": [
+        "regions/england-wales/terrain-sources.lock.json"
+      ],
+      "actual": "32ef7a6d228374236cefc776bf2104d15a72934e98506e2c085acd60cf2a0e00",
+      "bytes": 4646467,
+      "status": "match"
+    },
+    {
+      "path": "data/regions/england-wales/elevation/N50W003.hgt.gz",
+      "expected": "4f3aa8b11d621773b2fb6a1557bcf84a81533f5ed9590942572bb3683f1cf730",
+      "locks": [
+        "regions/england-wales/terrain-sources.lock.json"
+      ],
+      "actual": "4f3aa8b11d621773b2fb6a1557bcf84a81533f5ed9590942572bb3683f1cf730",
+      "bytes": 2591797,
+      "status": "match"
+    },
+    {
+      "path": "data/regions/england-wales/elevation/N50W002.hgt.gz",
+      "expected": "eae10e520cc8e2a537b9d54b02ba0d83a9474bd9191b2504142d64f6e43d9adf",
+      "locks": [
+        "regions/england-wales/terrain-sources.lock.json"
+      ],
+      "actual": "eae10e520cc8e2a537b9d54b02ba0d83a9474bd9191b2504142d64f6e43d9adf",
+      "bytes": 2022135,
+      "status": "match"
+    },
+    {
+      "path": "data/regions/england-wales/elevation/N50W001.hgt.gz",
+      "expected": "51d36af49470b86ce71c0b9f3cd5041eea853fab2e9b41d81c777aaa4137e1a8",
+      "locks": [
+        "regions/england-wales/terrain-sources.lock.json"
+      ],
+      "actual": "51d36af49470b86ce71c0b9f3cd5041eea853fab2e9b41d81c777aaa4137e1a8",
+      "bytes": 1496103,
+      "status": "match"
+    },
+    {
+      "path": "data/regions/england-wales/elevation/N50E000.hgt.gz",
+      "expected": "ccdf1fbace5e13198a2e7e3cf730a15da249abe85f3117b10589fb3f752eab9c",
+      "locks": [
+        "regions/england-wales/terrain-sources.lock.json"
+      ],
+      "actual": "ccdf1fbace5e13198a2e7e3cf730a15da249abe85f3117b10589fb3f752eab9c",
+      "bytes": 1262016,
+      "status": "match"
+    },
+    {
+      "path": "data/regions/england-wales/elevation/N50E001.hgt.gz",
+      "expected": "f2623456f583e19b617e2765e0caa353b717bc4f424000bf60dbb8ef341af0ed",
+      "locks": [
+        "regions/england-wales/terrain-sources.lock.json"
+      ],
+      "actual": "f2623456f583e19b617e2765e0caa353b717bc4f424000bf60dbb8ef341af0ed",
+      "bytes": 2942944,
+      "status": "match"
+    },
+    {
+      "path": "data/regions/england-wales/elevation/N50E002.hgt.gz",
+      "expected": "223143ff0c391e90f7d5f7ba1e7f9c3c815489c9ee4793e6478ab525e33d209a",
+      "locks": [
+        "regions/england-wales/terrain-sources.lock.json"
+      ],
+      "actual": "223143ff0c391e90f7d5f7ba1e7f9c3c815489c9ee4793e6478ab525e33d209a",
+      "bytes": 4882213,
+      "status": "match"
+    },
+    {
+      "path": "data/regions/england-wales/elevation/N51W007.hgt.gz",
+      "expected": "5e12dfb4b29bb441bd7c6143e34179914be53e15f838c37f393332a12a11dfbe",
+      "locks": [
+        "regions/england-wales/terrain-sources.lock.json"
+      ],
+      "actual": "5e12dfb4b29bb441bd7c6143e34179914be53e15f838c37f393332a12a11dfbe",
+      "bytes": 316850,
+      "status": "match"
+    },
+    {
+      "path": "data/regions/england-wales/elevation/N51W006.hgt.gz",
+      "expected": "ecc67584d5c11abe7bac01874670024c334ab8169ca93a1825d7858ecb24b5f1",
+      "locks": [
+        "regions/england-wales/terrain-sources.lock.json"
+      ],
+      "actual": "ecc67584d5c11abe7bac01874670024c334ab8169ca93a1825d7858ecb24b5f1",
+      "bytes": 853993,
+      "status": "match"
+    },
+    {
+      "path": "data/regions/england-wales/elevation/N51W005.hgt.gz",
+      "expected": "311663bd45124e2b54b56021643df5bc022077e7cf14e3e7443f6ef553f91e4d",
+      "locks": [
+        "regions/england-wales/terrain-sources.lock.json"
+      ],
+      "actual": "311663bd45124e2b54b56021643df5bc022077e7cf14e3e7443f6ef553f91e4d",
+      "bytes": 3229001,
+      "status": "match"
+    },
+    {
+      "path": "data/regions/england-wales/elevation/N51W004.hgt.gz",
+      "expected": "ad5bda5dac14da2d28f23ab6468c608cf219104d999b5ae4d47e6148e1ac143f",
+      "locks": [
+        "regions/england-wales/terrain-sources.lock.json"
+      ],
+      "actual": "ad5bda5dac14da2d28f23ab6468c608cf219104d999b5ae4d47e6148e1ac143f",
+      "bytes": 6827798,
+      "status": "match"
+    },
+    {
+      "path": "data/regions/england-wales/elevation/N51W003.hgt.gz",
+      "expected": "b4f96f673e3ce9df7194b57c5ff8e2bef282aabc2bb1270328821dbda7138369",
+      "locks": [
+        "regions/england-wales/terrain-sources.lock.json"
+      ],
+      "actual": "b4f96f673e3ce9df7194b57c5ff8e2bef282aabc2bb1270328821dbda7138369",
+      "bytes": 6334319,
+      "status": "match"
+    },
+    {
+      "path": "data/regions/england-wales/elevation/N51W002.hgt.gz",
+      "expected": "fc520b22c8c90ef3343e84a6e6b10b1f8b9ada0939c8766d953a32d123c2e46c",
+      "locks": [
+        "regions/england-wales/terrain-sources.lock.json"
+      ],
+      "actual": "fc520b22c8c90ef3343e84a6e6b10b1f8b9ada0939c8766d953a32d123c2e46c",
+      "bytes": 5670415,
+      "status": "match"
+    },
+    {
+      "path": "data/regions/england-wales/elevation/N51W001.hgt.gz",
+      "expected": "6146494670cc9f6fa1c333e65e094f54716b70e2413b166c58a9d8fcb0723eed",
+      "locks": [
+        "regions/england-wales/terrain-sources.lock.json"
+      ],
+      "actual": "6146494670cc9f6fa1c333e65e094f54716b70e2413b166c58a9d8fcb0723eed",
+      "bytes": 5828123,
+      "status": "match"
+    },
+    {
+      "path": "data/regions/england-wales/elevation/N51E000.hgt.gz",
+      "expected": "06790d5abe9fee12da5b60cbe1253cff04878dd219dc3b7c0ff1ca34d963e0f3",
+      "locks": [
+        "regions/england-wales/terrain-sources.lock.json"
+      ],
+      "actual": "06790d5abe9fee12da5b60cbe1253cff04878dd219dc3b7c0ff1ca34d963e0f3",
+      "bytes": 4945227,
+      "status": "match"
+    },
+    {
+      "path": "data/regions/england-wales/elevation/N51E001.hgt.gz",
+      "expected": "e37651a3e39132fbaa9ea69abb222f901485aa37ca2b53f330452ed4c77f25c8",
+      "locks": [
+        "regions/england-wales/terrain-sources.lock.json"
+      ],
+      "actual": "e37651a3e39132fbaa9ea69abb222f901485aa37ca2b53f330452ed4c77f25c8",
+      "bytes": 1335248,
+      "status": "match"
+    },
+    {
+      "path": "data/regions/england-wales/elevation/N51E002.hgt.gz",
+      "expected": "876a79fd429de9c1ac46f47192d7f02252cc58e81466a6e2084c69c0fd984370",
+      "locks": [
+        "regions/england-wales/terrain-sources.lock.json"
+      ],
+      "actual": "876a79fd429de9c1ac46f47192d7f02252cc58e81466a6e2084c69c0fd984370",
+      "bytes": 634586,
+      "status": "match"
+    },
+    {
+      "path": "data/regions/england-wales/elevation/N52W007.hgt.gz",
+      "expected": "39281545b67174ead17031b69b73f05136229282bf89f9c2cd14d382c8f2111d",
+      "locks": [
+        "regions/england-wales/terrain-sources.lock.json"
+      ],
+      "actual": "39281545b67174ead17031b69b73f05136229282bf89f9c2cd14d382c8f2111d",
+      "bytes": 4562836,
+      "status": "match"
+    },
+    {
+      "path": "data/regions/england-wales/elevation/N52W006.hgt.gz",
+      "expected": "4bff675f1fda26e497e390e01966d58f81806262b6ef73e1e35d8383847a7380",
+      "locks": [
+        "regions/england-wales/terrain-sources.lock.json"
+      ],
+      "actual": "4bff675f1fda26e497e390e01966d58f81806262b6ef73e1e35d8383847a7380",
+      "bytes": 485879,
+      "status": "match"
+    },
+    {
+      "path": "data/regions/england-wales/elevation/N52W005.hgt.gz",
+      "expected": "668a09f19cd75e3ef6aa27a4d294b68cc5416df3ceabdc3768481e81e2ad42b5",
+      "locks": [
+        "regions/england-wales/terrain-sources.lock.json"
+      ],
+      "actual": "668a09f19cd75e3ef6aa27a4d294b68cc5416df3ceabdc3768481e81e2ad42b5",
+      "bytes": 3077935,
+      "status": "match"
+    },
+    {
+      "path": "data/regions/england-wales/elevation/N52W004.hgt.gz",
+      "expected": "f2ee32ba34b8366737672bf01fc0d786efb79cea5a54212a49887e41e10ee3cd",
+      "locks": [
+        "regions/england-wales/terrain-sources.lock.json"
+      ],
+      "actual": "f2ee32ba34b8366737672bf01fc0d786efb79cea5a54212a49887e41e10ee3cd",
+      "bytes": 9593373,
+      "status": "match"
+    },
+    {
+      "path": "data/regions/england-wales/elevation/N52W003.hgt.gz",
+      "expected": "d4ed51458de6ab3da478795fb9660bdae7df89a4b83d2a17a414a5183aec6d4f",
+      "locks": [
+        "regions/england-wales/terrain-sources.lock.json"
+      ],
+      "actual": "d4ed51458de6ab3da478795fb9660bdae7df89a4b83d2a17a414a5183aec6d4f",
+      "bytes": 6299288,
+      "status": "match"
+    },
+    {
+      "path": "data/regions/england-wales/elevation/N52W002.hgt.gz",
+      "expected": "4060183851b93769430428f9b36dbbea97f7c53ce8531dd7f9fe8a13095d389a",
+      "locks": [
+        "regions/england-wales/terrain-sources.lock.json"
+      ],
+      "actual": "4060183851b93769430428f9b36dbbea97f7c53ce8531dd7f9fe8a13095d389a",
+      "bytes": 5375475,
+      "status": "match"
+    },
+    {
+      "path": "data/regions/england-wales/elevation/N52W001.hgt.gz",
+      "expected": "f1c7df781193157d313c0a7654f01c6ec4dfd1dcafaa234282a1a6c0064ead2d",
+      "locks": [
+        "regions/england-wales/terrain-sources.lock.json"
+      ],
+      "actual": "f1c7df781193157d313c0a7654f01c6ec4dfd1dcafaa234282a1a6c0064ead2d",
+      "bytes": 4747478,
+      "status": "match"
+    },
+    {
+      "path": "data/regions/england-wales/elevation/N52E000.hgt.gz",
+      "expected": "d2162e426854ee7016aa5402da6d162ade13b6d512fdef647bf1a03698780a33",
+      "locks": [
+        "regions/england-wales/terrain-sources.lock.json"
+      ],
+      "actual": "d2162e426854ee7016aa5402da6d162ade13b6d512fdef647bf1a03698780a33",
+      "bytes": 3929220,
+      "status": "match"
+    },
+    {
+      "path": "data/regions/england-wales/elevation/N52E001.hgt.gz",
+      "expected": "a6750bbf676c05df7e47f1f85155bb44715ddd26f3e62e7d887d7c46523b4055",
+      "locks": [
+        "regions/england-wales/terrain-sources.lock.json"
+      ],
+      "actual": "a6750bbf676c05df7e47f1f85155bb44715ddd26f3e62e7d887d7c46523b4055",
+      "bytes": 2764003,
+      "status": "match"
+    },
+    {
+      "path": "data/regions/england-wales/elevation/N52E002.hgt.gz",
+      "expected": "c2d5ca60d79babba3ae98c8833b3abaabc0f679e168e427c4e530918fa46953c",
+      "locks": [
+        "regions/england-wales/terrain-sources.lock.json"
+      ],
+      "actual": "c2d5ca60d79babba3ae98c8833b3abaabc0f679e168e427c4e530918fa46953c",
+      "bytes": 238718,
+      "status": "match"
+    },
+    {
+      "path": "data/regions/england-wales/elevation/N53W007.hgt.gz",
+      "expected": "c1b01742a50466ee4f47c6d8e14b5b76382bfce487b27a34a638932900303623",
+      "locks": [
+        "regions/england-wales/terrain-sources.lock.json"
+      ],
+      "actual": "c1b01742a50466ee4f47c6d8e14b5b76382bfce487b27a34a638932900303623",
+      "bytes": 4918819,
+      "status": "match"
+    },
+    {
+      "path": "data/regions/england-wales/elevation/N53W006.hgt.gz",
+      "expected": "9848b9e97fc6768243acedf75b7220808ea8ab861912c9df24f23685b713e6a9",
+      "locks": [
+        "regions/england-wales/terrain-sources.lock.json"
+      ],
+      "actual": "9848b9e97fc6768243acedf75b7220808ea8ab861912c9df24f23685b713e6a9",
+      "bytes": 600514,
+      "status": "match"
+    },
+    {
+      "path": "data/regions/england-wales/elevation/N53W005.hgt.gz",
+      "expected": "a159bab2a767e937625e8fe6199416184255c814e4666d2937db9dfc45f6a1d4",
+      "locks": [
+        "regions/england-wales/terrain-sources.lock.json"
+      ],
+      "actual": "a159bab2a767e937625e8fe6199416184255c814e4666d2937db9dfc45f6a1d4",
+      "bytes": 1832494,
+      "status": "match"
+    },
+    {
+      "path": "data/regions/england-wales/elevation/N53W004.hgt.gz",
+      "expected": "902f1a2d6606ffff42e6a38c7ea4d128cd31f2affc4b5ba57e579c547bae1d94",
+      "locks": [
+        "regions/england-wales/terrain-sources.lock.json"
+      ],
+      "actual": "902f1a2d6606ffff42e6a38c7ea4d128cd31f2affc4b5ba57e579c547bae1d94",
+      "bytes": 3187118,
+      "status": "match"
+    },
+    {
+      "path": "data/regions/england-wales/elevation/N53W003.hgt.gz",
+      "expected": "fdaaaf8249fdfdb86165a28620a0f75bb0da45261194e0c055ac7762960e1417",
+      "locks": [
+        "regions/england-wales/terrain-sources.lock.json"
+      ],
+      "actual": "fdaaaf8249fdfdb86165a28620a0f75bb0da45261194e0c055ac7762960e1417",
+      "bytes": 6302863,
+      "status": "match"
+    },
+    {
+      "path": "data/regions/england-wales/elevation/N53W002.hgt.gz",
+      "expected": "7c55daaabedc27af19af55fea0d90b04f1e4c3f4d2fe64c87b969b9aa9ce8800",
+      "locks": [
+        "regions/england-wales/terrain-sources.lock.json"
+      ],
+      "actual": "7c55daaabedc27af19af55fea0d90b04f1e4c3f4d2fe64c87b969b9aa9ce8800",
+      "bytes": 7150499,
+      "status": "match"
+    },
+    {
+      "path": "data/regions/england-wales/elevation/N53W001.hgt.gz",
+      "expected": "0dbe106781b0049742e7c31b282cc493fb7053ec99f4bf3533fb363a76104fa4",
+      "locks": [
+        "regions/england-wales/terrain-sources.lock.json"
+      ],
+      "actual": "0dbe106781b0049742e7c31b282cc493fb7053ec99f4bf3533fb363a76104fa4",
+      "bytes": 3968122,
+      "status": "match"
+    },
+    {
+      "path": "data/regions/england-wales/elevation/N53E000.hgt.gz",
+      "expected": "35cbe1010de958c1aad68e02c6414f6f13a20cdb194b16b8ec520132713381f2",
+      "locks": [
+        "regions/england-wales/terrain-sources.lock.json"
+      ],
+      "actual": "35cbe1010de958c1aad68e02c6414f6f13a20cdb194b16b8ec520132713381f2",
+      "bytes": 841364,
+      "status": "match"
+    },
+    {
+      "path": "data/regions/england-wales/elevation/N53E001.hgt.gz",
+      "expected": "81237dd69b17ec4a55b699ff950f6b7eabc468cf10465d01bc28cb7d97617070",
+      "locks": [
+        "regions/england-wales/terrain-sources.lock.json"
+      ],
+      "actual": "81237dd69b17ec4a55b699ff950f6b7eabc468cf10465d01bc28cb7d97617070",
+      "bytes": 297334,
+      "status": "match"
+    },
+    {
+      "path": "data/regions/england-wales/elevation/N53E002.hgt.gz",
+      "expected": "36cc8aa9d78db9eee55d24321d1951217b94bd9c5fe953aab087924466c812a6",
+      "locks": [
+        "regions/england-wales/terrain-sources.lock.json"
+      ],
+      "actual": "36cc8aa9d78db9eee55d24321d1951217b94bd9c5fe953aab087924466c812a6",
+      "bytes": 315374,
+      "status": "match"
+    },
+    {
+      "path": "data/regions/england-wales/elevation/N54W007.hgt.gz",
+      "expected": "a6a26e7f4c8cad4cdcacab804622d60a1d5b75ecb1b16a09e16998805d1c057a",
+      "locks": [
+        "regions/england-wales/terrain-sources.lock.json"
+      ],
+      "actual": "a6a26e7f4c8cad4cdcacab804622d60a1d5b75ecb1b16a09e16998805d1c057a",
+      "bytes": 6388043,
+      "status": "match"
+    },
+    {
+      "path": "data/regions/england-wales/elevation/N54W006.hgt.gz",
+      "expected": "237c267452e2acc19b5c63e76247aa1ae770c4b46e412b310038625786e093f7",
+      "locks": [
+        "regions/england-wales/terrain-sources.lock.json"
+      ],
+      "actual": "237c267452e2acc19b5c63e76247aa1ae770c4b46e412b310038625786e093f7",
+      "bytes": 3031988,
+      "status": "match"
+    },
+    {
+      "path": "data/regions/england-wales/elevation/N54W005.hgt.gz",
+      "expected": "2a368b359b4d1126b0aa1dea9825195682e8f2d119ba7060994850e28e2f8b8a",
+      "locks": [
+        "regions/england-wales/terrain-sources.lock.json"
+      ],
+      "actual": "2a368b359b4d1126b0aa1dea9825195682e8f2d119ba7060994850e28e2f8b8a",
+      "bytes": 2702122,
+      "status": "match"
+    },
+    {
+      "path": "data/regions/england-wales/elevation/N54W004.hgt.gz",
+      "expected": "40a4b66a95172468fe22535f794e71b17caed99fc7ef9e8053594830e03611f5",
+      "locks": [
+        "regions/england-wales/terrain-sources.lock.json"
+      ],
+      "actual": "40a4b66a95172468fe22535f794e71b17caed99fc7ef9e8053594830e03611f5",
+      "bytes": 4401948,
+      "status": "match"
+    },
+    {
+      "path": "data/regions/england-wales/elevation/N54W003.hgt.gz",
+      "expected": "021f97677d94ea762da609fc70357db5f8802bda31b00c9d015f0dcaa14e53e3",
+      "locks": [
+        "regions/england-wales/terrain-sources.lock.json"
+      ],
+      "actual": "021f97677d94ea762da609fc70357db5f8802bda31b00c9d015f0dcaa14e53e3",
+      "bytes": 8268057,
+      "status": "match"
+    },
+    {
+      "path": "data/regions/england-wales/elevation/N54W002.hgt.gz",
+      "expected": "4750963904204efa051ad5c4de34535df30610cd88758b35732de56cb6e5f063",
+      "locks": [
+        "regions/england-wales/terrain-sources.lock.json"
+      ],
+      "actual": "4750963904204efa051ad5c4de34535df30610cd88758b35732de56cb6e5f063",
+      "bytes": 5739403,
+      "status": "match"
+    },
+    {
+      "path": "data/regions/england-wales/elevation/N54W001.hgt.gz",
+      "expected": "0a6f6074f8bf955e957a74acad8e4c3a05f616a6fc296192133f83d75f27c0b0",
+      "locks": [
+        "regions/england-wales/terrain-sources.lock.json"
+      ],
+      "actual": "0a6f6074f8bf955e957a74acad8e4c3a05f616a6fc296192133f83d75f27c0b0",
+      "bytes": 2508272,
+      "status": "match"
+    },
+    {
+      "path": "data/regions/england-wales/elevation/N54E000.hgt.gz",
+      "expected": "e474ebf016b75119713c5d0ceea292164340d8ff92bf90fe6d4c71c9ab92596d",
+      "locks": [
+        "regions/england-wales/terrain-sources.lock.json"
+      ],
+      "actual": "e474ebf016b75119713c5d0ceea292164340d8ff92bf90fe6d4c71c9ab92596d",
+      "bytes": 315385,
+      "status": "match"
+    },
+    {
+      "path": "data/regions/england-wales/elevation/N54E001.hgt.gz",
+      "expected": "bf0e8b35e5efb7cfcb433aa51107264861b0ad801fc4fb0c45a27978b2d16328",
+      "locks": [
+        "regions/england-wales/terrain-sources.lock.json"
+      ],
+      "actual": "bf0e8b35e5efb7cfcb433aa51107264861b0ad801fc4fb0c45a27978b2d16328",
+      "bytes": 345728,
+      "status": "match"
+    },
+    {
+      "path": "data/regions/england-wales/elevation/N54E002.hgt.gz",
+      "expected": "774036126ec52ca4fc0b13f2235aa9c0cd6508e8b49735a97ec547bf669eef85",
+      "locks": [
+        "regions/england-wales/terrain-sources.lock.json"
+      ],
+      "actual": "774036126ec52ca4fc0b13f2235aa9c0cd6508e8b49735a97ec547bf669eef85",
+      "bytes": 242694,
+      "status": "match"
+    },
+    {
+      "path": "data/regions/england-wales/elevation/N55W007.hgt.gz",
+      "expected": "251b4bcbf8b1656b434fe9f126364d305e3b542a1c48f9b896c9b741c02892d2",
+      "locks": [
+        "regions/england-wales/terrain-sources.lock.json"
+      ],
+      "actual": "251b4bcbf8b1656b434fe9f126364d305e3b542a1c48f9b896c9b741c02892d2",
+      "bytes": 3003271,
+      "status": "match"
+    },
+    {
+      "path": "data/regions/england-wales/elevation/N55W006.hgt.gz",
+      "expected": "b5d2d80eb621e7157afe082d41b26875a8d08fa1bc5ea474c7726b2d26073820",
+      "locks": [
+        "regions/england-wales/terrain-sources.lock.json"
+      ],
+      "actual": "b5d2d80eb621e7157afe082d41b26875a8d08fa1bc5ea474c7726b2d26073820",
+      "bytes": 4113150,
+      "status": "match"
+    },
+    {
+      "path": "data/regions/england-wales/elevation/N55W005.hgt.gz",
+      "expected": "a94a6175399650c184b9201475e445076dc2b657162773d2dd0d3c107850deb7",
+      "locks": [
+        "regions/england-wales/terrain-sources.lock.json"
+      ],
+      "actual": "a94a6175399650c184b9201475e445076dc2b657162773d2dd0d3c107850deb7",
+      "bytes": 6563032,
+      "status": "match"
+    },
+    {
+      "path": "data/regions/england-wales/elevation/N55W004.hgt.gz",
+      "expected": "61c9bcf1d6297b9154d380cc662f302644d445d66f1b357db465364880c4e620",
+      "locks": [
+        "regions/england-wales/terrain-sources.lock.json"
+      ],
+      "actual": "61c9bcf1d6297b9154d380cc662f302644d445d66f1b357db465364880c4e620",
+      "bytes": 7892864,
+      "status": "match"
+    },
+    {
+      "path": "data/regions/england-wales/elevation/N55W003.hgt.gz",
+      "expected": "07608f5a46a2abd9c1ec51f2d74fbeefc0abaf6c866f0db8ebed5108bb0588e2",
+      "locks": [
+        "regions/england-wales/terrain-sources.lock.json"
+      ],
+      "actual": "07608f5a46a2abd9c1ec51f2d74fbeefc0abaf6c866f0db8ebed5108bb0588e2",
+      "bytes": 7219966,
+      "status": "match"
+    },
+    {
+      "path": "data/regions/england-wales/elevation/N55W002.hgt.gz",
+      "expected": "d85071a97b4851263c4fe40eef548db02d986e07761fd7905ae9c4bf0652fce8",
+      "locks": [
+        "regions/england-wales/terrain-sources.lock.json"
+      ],
+      "actual": "d85071a97b4851263c4fe40eef548db02d986e07761fd7905ae9c4bf0652fce8",
+      "bytes": 2122769,
+      "status": "match"
+    },
+    {
+      "path": "data/regions/england-wales/elevation/N55W001.hgt.gz",
+      "expected": "bb5a62737939fa0dbee0aa38ba7b9d4ef61536b61603acf0b0ad06c18ab31e22",
+      "locks": [
+        "regions/england-wales/terrain-sources.lock.json"
+      ],
+      "actual": "bb5a62737939fa0dbee0aa38ba7b9d4ef61536b61603acf0b0ad06c18ab31e22",
+      "bytes": 308093,
+      "status": "match"
+    },
+    {
+      "path": "data/regions/england-wales/elevation/N55E000.hgt.gz",
+      "expected": "d9ef46c288f45747e50abf40255767df7275fcf0e22fdcdc54f84c015c3c8f3f",
+      "locks": [
+        "regions/england-wales/terrain-sources.lock.json"
+      ],
+      "actual": "d9ef46c288f45747e50abf40255767df7275fcf0e22fdcdc54f84c015c3c8f3f",
+      "bytes": 284306,
+      "status": "match"
+    },
+    {
+      "path": "data/regions/england-wales/elevation/N55E001.hgt.gz",
+      "expected": "cad525d3167a0f8b748ac4af56c91fe1a514198da92277846bfd3f3a32b25746",
+      "locks": [
+        "regions/england-wales/terrain-sources.lock.json"
+      ],
+      "actual": "cad525d3167a0f8b748ac4af56c91fe1a514198da92277846bfd3f3a32b25746",
+      "bytes": 283719,
+      "status": "match"
+    },
+    {
+      "path": "data/regions/england-wales/elevation/N55E002.hgt.gz",
+      "expected": "d738e42118900abc202163b399fc91e97fad7050ef823847a991b3ac865b3275",
+      "locks": [
+        "regions/england-wales/terrain-sources.lock.json"
+      ],
+      "actual": "d738e42118900abc202163b399fc91e97fad7050ef823847a991b3ac865b3275",
+      "bytes": 204642,
+      "status": "match"
+    },
+    {
+      "path": "regions/england-wales/garmin/inputs/contours.geojson.gz",
+      "expected": "60c1528cca8c228d01b8ed45c61c881aeecf20b648ef79a9714ce0ab4b1bb735",
+      "locks": [
+        "regions/england-wales/garmin/inputs.lock.json"
+      ],
+      "actual": "60c1528cca8c228d01b8ed45c61c881aeecf20b648ef79a9714ce0ab4b1bb735",
+      "bytes": 205596509,
+      "status": "match"
+    },
+    {
+      "path": "regions/england-wales/garmin/inputs/landcover.geojson.gz",
+      "expected": "b9f18993a268fc92df1efb22a03ba9e0f036ce35a50993d61c42cd2109c71992",
+      "locks": [
+        "regions/england-wales/garmin/inputs.lock.json"
+      ],
+      "actual": "b9f18993a268fc92df1efb22a03ba9e0f036ce35a50993d61c42cd2109c71992",
+      "bytes": 563485774,
+      "status": "match"
+    },
+    {
+      "path": "regions/england-wales/garmin/inputs/land.geojson.gz",
+      "expected": "86cf23a9c3c0d8837e4d884aa92321274c5a7a3b71ec0b858395c95ba9d69939",
+      "locks": [
+        "regions/england-wales/garmin/inputs.lock.json"
+      ],
+      "actual": "86cf23a9c3c0d8837e4d884aa92321274c5a7a3b71ec0b858395c95ba9d69939",
+      "bytes": 8607813,
+      "status": "match"
+    },
+    {
+      "path": "data/regions/england-wales/elevation/N48W008.hgt.gz",
+      "expected": "fbee659d9bce4462b8a0e44000243c0dd132c47767655d1ae28810f396fa690a",
+      "locks": [
+        "regions/england-wales/garmin/dem-padding.lock.json"
+      ],
+      "actual": "fbee659d9bce4462b8a0e44000243c0dd132c47767655d1ae28810f396fa690a",
+      "bytes": 690871,
+      "status": "match"
+    },
+    {
+      "path": "data/regions/england-wales/elevation/N48W007.hgt.gz",
+      "expected": "f7f36d25173975b618782448444511af1cdc5a75f8a62d7edd34cf9b15285fff",
+      "locks": [
+        "regions/england-wales/garmin/dem-padding.lock.json"
+      ],
+      "actual": "f7f36d25173975b618782448444511af1cdc5a75f8a62d7edd34cf9b15285fff",
+      "bytes": 454944,
+      "status": "match"
+    },
+    {
+      "path": "data/regions/england-wales/elevation/N48W006.hgt.gz",
+      "expected": "d30725c2069e3a5d9026ef24b829dc445d2653a79185a48b346d9efa98259c7d",
+      "locks": [
+        "regions/england-wales/garmin/dem-padding.lock.json"
+      ],
+      "actual": "d30725c2069e3a5d9026ef24b829dc445d2653a79185a48b346d9efa98259c7d",
+      "bytes": 466418,
+      "status": "match"
+    },
+    {
+      "path": "data/regions/england-wales/elevation/N48W005.hgt.gz",
+      "expected": "35f533e27266be95a8f9ffa0a4cc851ef0e59395cb3e02b5b7b353f7dd396c86",
+      "locks": [
+        "regions/england-wales/garmin/dem-padding.lock.json"
+      ],
+      "actual": "35f533e27266be95a8f9ffa0a4cc851ef0e59395cb3e02b5b7b353f7dd396c86",
+      "bytes": 3330855,
+      "status": "match"
+    },
+    {
+      "path": "data/regions/england-wales/elevation/N48W004.hgt.gz",
+      "expected": "b18ca969399ef8f9293d33585290a0beb63cebf71d0dfc38ac493134dc6496eb",
+      "locks": [
+        "regions/england-wales/garmin/dem-padding.lock.json"
+      ],
+      "actual": "b18ca969399ef8f9293d33585290a0beb63cebf71d0dfc38ac493134dc6496eb",
+      "bytes": 5865722,
+      "status": "match"
+    },
+    {
+      "path": "data/regions/england-wales/elevation/N48W003.hgt.gz",
+      "expected": "986803b34d24b3b805d6208519ed37b73542c9c763f497c708580bb1aa8c083f",
+      "locks": [
+        "regions/england-wales/garmin/dem-padding.lock.json"
+      ],
+      "actual": "986803b34d24b3b805d6208519ed37b73542c9c763f497c708580bb1aa8c083f",
+      "bytes": 4432718,
+      "status": "match"
+    },
+    {
+      "path": "data/regions/england-wales/elevation/N48W002.hgt.gz",
+      "expected": "93cd91d86cc192f0d1a806fe789e2252c1c8bacff7855ff5cc4572de91025032",
+      "locks": [
+        "regions/england-wales/garmin/dem-padding.lock.json"
+      ],
+      "actual": "93cd91d86cc192f0d1a806fe789e2252c1c8bacff7855ff5cc4572de91025032",
+      "bytes": 5628228,
+      "status": "match"
+    },
+    {
+      "path": "data/regions/england-wales/elevation/N48W001.hgt.gz",
+      "expected": "8cda3f55e004c825a316797e9b687a2fd1295f54ba6d0769c049c4a74edfd171",
+      "locks": [
+        "regions/england-wales/garmin/dem-padding.lock.json"
+      ],
+      "actual": "8cda3f55e004c825a316797e9b687a2fd1295f54ba6d0769c049c4a74edfd171",
+      "bytes": 7015866,
+      "status": "match"
+    },
+    {
+      "path": "data/regions/england-wales/elevation/N48E000.hgt.gz",
+      "expected": "396b3713834e41d25ec1f01b118a3359909146d10af82828fb352012b1c24acd",
+      "locks": [
+        "regions/england-wales/garmin/dem-padding.lock.json"
+      ],
+      "actual": "396b3713834e41d25ec1f01b118a3359909146d10af82828fb352012b1c24acd",
+      "bytes": 6637430,
+      "status": "match"
+    },
+    {
+      "path": "data/regions/england-wales/elevation/N48E001.hgt.gz",
+      "expected": "5c34fa008d27f3fbb7767c5183b161684da75d4f567c170db8839865ad426389",
+      "locks": [
+        "regions/england-wales/garmin/dem-padding.lock.json"
+      ],
+      "actual": "5c34fa008d27f3fbb7767c5183b161684da75d4f567c170db8839865ad426389",
+      "bytes": 5357770,
+      "status": "match"
+    },
+    {
+      "path": "data/regions/england-wales/elevation/N48E002.hgt.gz",
+      "expected": "f5f6c6744cd3bb7fc46d59bb49400574e9c22e8916c3b59c5dc35ffc454cbd2d",
+      "locks": [
+        "regions/england-wales/garmin/dem-padding.lock.json"
+      ],
+      "actual": "f5f6c6744cd3bb7fc46d59bb49400574e9c22e8916c3b59c5dc35ffc454cbd2d",
+      "bytes": 5885987,
+      "status": "match"
+    },
+    {
+      "path": "data/regions/england-wales/elevation/N48E003.hgt.gz",
+      "expected": "45b5450ce82e1a2a962047c7c76c4b2ba57dd3fddfc56aaa34bca0559a49c09a",
+      "locks": [
+        "regions/england-wales/garmin/dem-padding.lock.json"
+      ],
+      "actual": "45b5450ce82e1a2a962047c7c76c4b2ba57dd3fddfc56aaa34bca0559a49c09a",
+      "bytes": 6283853,
+      "status": "match"
+    },
+    {
+      "path": "data/regions/england-wales/elevation/N49W008.hgt.gz",
+      "expected": "710cc7c3673c58e39396b6f590136027fc09209c5b8d1ff1f2b2b2896fafcef7",
+      "locks": [
+        "regions/england-wales/garmin/dem-padding.lock.json"
+      ],
+      "actual": "710cc7c3673c58e39396b6f590136027fc09209c5b8d1ff1f2b2b2896fafcef7",
+      "bytes": 523276,
+      "status": "match"
+    },
+    {
+      "path": "data/regions/england-wales/elevation/N49E003.hgt.gz",
+      "expected": "4a70c08bed5e921b7a16a078c0ff41abc444f4305bea0d3ff712be3bf5d96c42",
+      "locks": [
+        "regions/england-wales/garmin/dem-padding.lock.json"
+      ],
+      "actual": "4a70c08bed5e921b7a16a078c0ff41abc444f4305bea0d3ff712be3bf5d96c42",
+      "bytes": 6561148,
+      "status": "match"
+    },
+    {
+      "path": "data/regions/england-wales/elevation/N50W008.hgt.gz",
+      "expected": "b0ecd4b36e55ca577486449c71a0d0ead1f98c1f91a72a92687e38dff793c0c7",
+      "locks": [
+        "regions/england-wales/garmin/dem-padding.lock.json"
+      ],
+      "actual": "b0ecd4b36e55ca577486449c71a0d0ead1f98c1f91a72a92687e38dff793c0c7",
+      "bytes": 389335,
+      "status": "match"
+    },
+    {
+      "path": "data/regions/england-wales/elevation/N50E003.hgt.gz",
+      "expected": "cf49e3fb4e9d5f30b46b4dd1f64b2940aa03c1c87afeb0ea228d022e91e0c2d7",
+      "locks": [
+        "regions/england-wales/garmin/dem-padding.lock.json"
+      ],
+      "actual": "cf49e3fb4e9d5f30b46b4dd1f64b2940aa03c1c87afeb0ea228d022e91e0c2d7",
+      "bytes": 4997586,
+      "status": "match"
+    },
+    {
+      "path": "data/regions/england-wales/elevation/N51W008.hgt.gz",
+      "expected": "82f227e325adaa556220e986aec94ba58aa35cbdfd82138086970ecb8b929183",
+      "locks": [
+        "regions/england-wales/garmin/dem-padding.lock.json"
+      ],
+      "actual": "82f227e325adaa556220e986aec94ba58aa35cbdfd82138086970ecb8b929183",
+      "bytes": 460562,
+      "status": "match"
+    },
+    {
+      "path": "data/regions/england-wales/elevation/N51E003.hgt.gz",
+      "expected": "e152ef757d1d5344828f8500d657749275e945af8fdc206f8a0228eb21062a98",
+      "locks": [
+        "regions/england-wales/garmin/dem-padding.lock.json"
+      ],
+      "actual": "e152ef757d1d5344828f8500d657749275e945af8fdc206f8a0228eb21062a98",
+      "bytes": 1827856,
+      "status": "match"
+    },
+    {
+      "path": "data/regions/england-wales/elevation/N52W008.hgt.gz",
+      "expected": "23b21561227f84d8875ca4a1f9599e1173ee8047bff8b85ba35cf202ec93bea2",
+      "locks": [
+        "regions/england-wales/garmin/dem-padding.lock.json"
+      ],
+      "actual": "23b21561227f84d8875ca4a1f9599e1173ee8047bff8b85ba35cf202ec93bea2",
+      "bytes": 5895440,
+      "status": "match"
+    },
+    {
+      "path": "data/regions/england-wales/elevation/N52E003.hgt.gz",
+      "expected": "c6a041cd1bedc762e0d7e4b9297519913afca1ab59157491d4ce42133aae7d46",
+      "locks": [
+        "regions/england-wales/garmin/dem-padding.lock.json"
+      ],
+      "actual": "c6a041cd1bedc762e0d7e4b9297519913afca1ab59157491d4ce42133aae7d46",
+      "bytes": 141905,
+      "status": "match"
+    },
+    {
+      "path": "data/regions/england-wales/elevation/N53W008.hgt.gz",
+      "expected": "12b3c384af4a72db7a22ef6b50fc8a361593eb412c0f67c5346da66d1edace8e",
+      "locks": [
+        "regions/england-wales/garmin/dem-padding.lock.json"
+      ],
+      "actual": "12b3c384af4a72db7a22ef6b50fc8a361593eb412c0f67c5346da66d1edace8e",
+      "bytes": 4794876,
+      "status": "match"
+    },
+    {
+      "path": "data/regions/england-wales/elevation/N53E003.hgt.gz",
+      "expected": "676125f851dfc9b7a40127de5ab0cd3cbabd3ccdf12ddbc6059fd2c9ba5ece7c",
+      "locks": [
+        "regions/england-wales/garmin/dem-padding.lock.json"
+      ],
+      "actual": "676125f851dfc9b7a40127de5ab0cd3cbabd3ccdf12ddbc6059fd2c9ba5ece7c",
+      "bytes": 183939,
+      "status": "match"
+    },
+    {
+      "path": "data/regions/england-wales/elevation/N54W008.hgt.gz",
+      "expected": "fdb494a1c82ec7d2a8e34ae947d6f8af2069360d67c9ce971ae90185a0b25225",
+      "locks": [
+        "regions/england-wales/garmin/dem-padding.lock.json"
+      ],
+      "actual": "fdb494a1c82ec7d2a8e34ae947d6f8af2069360d67c9ce971ae90185a0b25225",
+      "bytes": 6755339,
+      "status": "match"
+    },
+    {
+      "path": "data/regions/england-wales/elevation/N54E003.hgt.gz",
+      "expected": "98ab9e5bd6238e9d580c0e8073d8a1bdfd2d226df91f1e3b5dd19f1fcf315adf",
+      "locks": [
+        "regions/england-wales/garmin/dem-padding.lock.json"
+      ],
+      "actual": "98ab9e5bd6238e9d580c0e8073d8a1bdfd2d226df91f1e3b5dd19f1fcf315adf",
+      "bytes": 175528,
+      "status": "match"
+    },
+    {
+      "path": "data/regions/england-wales/elevation/N55W008.hgt.gz",
+      "expected": "04b01e932e1f51ec868a3a6c9196b40b3856c518aae4e7580ac40d7922ac7292",
+      "locks": [
+        "regions/england-wales/garmin/dem-padding.lock.json"
+      ],
+      "actual": "04b01e932e1f51ec868a3a6c9196b40b3856c518aae4e7580ac40d7922ac7292",
+      "bytes": 2248967,
+      "status": "match"
+    },
+    {
+      "path": "data/regions/england-wales/elevation/N55E003.hgt.gz",
+      "expected": "6e3baeaea250aa7fe2dffbf20622cb14988c189603efdb02311d3125109b9b55",
+      "locks": [
+        "regions/england-wales/garmin/dem-padding.lock.json"
+      ],
+      "actual": "6e3baeaea250aa7fe2dffbf20622cb14988c189603efdb02311d3125109b9b55",
+      "bytes": 171446,
+      "status": "match"
+    },
+    {
+      "path": "data/regions/england-wales/elevation/N56W008.hgt.gz",
+      "expected": "b35d9a5e6c827ad6120312f5e0d19290ec182e0e02f84ee44e17de2a2987fa54",
+      "locks": [
+        "regions/england-wales/garmin/dem-padding.lock.json"
+      ],
+      "actual": "b35d9a5e6c827ad6120312f5e0d19290ec182e0e02f84ee44e17de2a2987fa54",
+      "bytes": 1087832,
+      "status": "match"
+    },
+    {
+      "path": "data/regions/england-wales/elevation/N56W007.hgt.gz",
+      "expected": "2a839190288da4f07292d00625c67037925291510e42667f7d29df4b5e87a869",
+      "locks": [
+        "regions/england-wales/garmin/dem-padding.lock.json"
+      ],
+      "actual": "2a839190288da4f07292d00625c67037925291510e42667f7d29df4b5e87a869",
+      "bytes": 2455368,
+      "status": "match"
+    },
+    {
+      "path": "data/regions/england-wales/elevation/N56W006.hgt.gz",
+      "expected": "7b57a2d509c8c7ec9dd8956e8cff07f12da43828f02ba876620baef9f13f8c0d",
+      "locks": [
+        "regions/england-wales/garmin/dem-padding.lock.json"
+      ],
+      "actual": "7b57a2d509c8c7ec9dd8956e8cff07f12da43828f02ba876620baef9f13f8c0d",
+      "bytes": 9016378,
+      "status": "match"
+    },
+    {
+      "path": "data/regions/england-wales/elevation/N56W005.hgt.gz",
+      "expected": "73956d39ce7310ffa787144635e423b6a3b9b26e208106f2450bb3fd7efaeb14",
+      "locks": [
+        "regions/england-wales/garmin/dem-padding.lock.json"
+      ],
+      "actual": "73956d39ce7310ffa787144635e423b6a3b9b26e208106f2450bb3fd7efaeb14",
+      "bytes": 10321176,
+      "status": "match"
+    },
+    {
+      "path": "data/regions/england-wales/elevation/N56W004.hgt.gz",
+      "expected": "e8c99f7fd9a55bcb885004cb438511c5be047c14b9b7f178d9fb12523768315c",
+      "locks": [
+        "regions/england-wales/garmin/dem-padding.lock.json"
+      ],
+      "actual": "e8c99f7fd9a55bcb885004cb438511c5be047c14b9b7f178d9fb12523768315c",
+      "bytes": 7692875,
+      "status": "match"
+    },
+    {
+      "path": "data/regions/england-wales/elevation/N56W003.hgt.gz",
+      "expected": "4fd85f5085f467296b55ac8312ee4824ac43a8f03fdf7010b922773ed418f1c0",
+      "locks": [
+        "regions/england-wales/garmin/dem-padding.lock.json"
+      ],
+      "actual": "4fd85f5085f467296b55ac8312ee4824ac43a8f03fdf7010b922773ed418f1c0",
+      "bytes": 3119688,
+      "status": "match"
+    },
+    {
+      "path": "data/regions/england-wales/elevation/N56W002.hgt.gz",
+      "expected": "4f83019b3bea21283d1e13b23f0c385f62c2e98aadf48b70de75129325bf197d",
+      "locks": [
+        "regions/england-wales/garmin/dem-padding.lock.json"
+      ],
+      "actual": "4f83019b3bea21283d1e13b23f0c385f62c2e98aadf48b70de75129325bf197d",
+      "bytes": 411144,
+      "status": "match"
+    },
+    {
+      "path": "data/regions/england-wales/elevation/N56W001.hgt.gz",
+      "expected": "dcd952c838be4c94e1c88cab53d7f86bad96587833170f32f582436d6060a1e8",
+      "locks": [
+        "regions/england-wales/garmin/dem-padding.lock.json"
+      ],
+      "actual": "dcd952c838be4c94e1c88cab53d7f86bad96587833170f32f582436d6060a1e8",
+      "bytes": 278637,
+      "status": "match"
+    },
+    {
+      "path": "data/regions/england-wales/elevation/N56E000.hgt.gz",
+      "expected": "fe135f658a87aa6d726f01f0aced287b54fa573a09cc277ed48ff400ae59542a",
+      "locks": [
+        "regions/england-wales/garmin/dem-padding.lock.json"
+      ],
+      "actual": "fe135f658a87aa6d726f01f0aced287b54fa573a09cc277ed48ff400ae59542a",
+      "bytes": 366563,
+      "status": "match"
+    },
+    {
+      "path": "data/regions/england-wales/elevation/N56E001.hgt.gz",
+      "expected": "e54b8b11622d2c6f5e70270e07fea2ab020d1adb7886be14de5743de91faef2a",
+      "locks": [
+        "regions/england-wales/garmin/dem-padding.lock.json"
+      ],
+      "actual": "e54b8b11622d2c6f5e70270e07fea2ab020d1adb7886be14de5743de91faef2a",
+      "bytes": 297007,
+      "status": "match"
+    },
+    {
+      "path": "data/regions/england-wales/elevation/N56E002.hgt.gz",
+      "expected": "41e2df42e0545567b5a57cfc14796f7921454a150660de22f1d398c8bcda30fa",
+      "locks": [
+        "regions/england-wales/garmin/dem-padding.lock.json"
+      ],
+      "actual": "41e2df42e0545567b5a57cfc14796f7921454a150660de22f1d398c8bcda30fa",
+      "bytes": 211708,
+      "status": "match"
+    },
+    {
+      "path": "data/regions/england-wales/elevation/N56E003.hgt.gz",
+      "expected": "de2a637e3a9f356df28261f6ddf4031b1dbc1305ab368bbfc49d217724faf4f2",
+      "locks": [
+        "regions/england-wales/garmin/dem-padding.lock.json"
+      ],
+      "actual": "de2a637e3a9f356df28261f6ddf4031b1dbc1305ab368bbfc49d217724faf4f2",
+      "bytes": 250086,
+      "status": "match"
+    },
+    {
+      "path": "garmin/dist/OpenBareMap-Ireland.img",
+      "expected": "2e0e907e52b0bd535481b013c2487bb327e749fcf62ab61935ae2d94396b6c96",
+      "locks": [
+        "build/install records"
+      ],
+      "actual": "2e0e907e52b0bd535481b013c2487bb327e749fcf62ab61935ae2d94396b6c96",
+      "bytes": 228810752,
+      "status": "match"
+    },
+    {
+      "path": "regions/england-wales/garmin/dist/OpenBareMap-England-Wales.img",
+      "expected": "c0792c5b885c4f44e3c2189c2cc2d7e9508b52f68067fdb6b5a23e94f3e59855",
+      "locks": [
+        "build/install records"
+      ],
+      "actual": "c0792c5b885c4f44e3c2189c2cc2d7e9508b52f68067fdb6b5a23e94f3e59855",
+      "bytes": 699531264,
+      "status": "match"
+    },
+    {
+      "path": "garmin/dist/OpenBareMap-My-Tracks.img",
+      "expected": "1c8d81a890151a1758ef7ae7212018906e61d851ea1b32da2cace0a5f3a0b5d8",
+      "locks": [
+        "build/install records"
+      ],
+      "actual": "1c8d81a890151a1758ef7ae7212018906e61d851ea1b32da2cace0a5f3a0b5d8",
+      "bytes": 284160,
+      "status": "match"
+    }
+  ],
+  "complete": true,
+  "expectedFiles": 162
+}
