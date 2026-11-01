@@ -1,0 +1,22 @@
+{
+  "storageRevision": "2.0.0-england-wales-r3",
+  "browserReview": {
+    "southWales": "south-wales-fixed.png",
+    "Moelwyn": "moelwyn-fixed.png",
+    "fullExtent": "england-wales-overview.png",
+    "blueRectanglesResolved": true,
+    "consoleErrorsOrWarnings": []
+  },
+  "landRegression": {
+    "oldMap": "Fails at Moelwyn zoom 12",
+    "correctedMap": "Passes six inland anchors at zooms 8 through 12"
+  },
+  "softwareTests": {
+    "passed": 39,
+    "failed": 0
+  },
+  "iosResourceLoader": "Passed bundle lookup and local map/font/sprite/GeoJSON URL resolution",
+  "nativeDeviceRenderingTested": false,
+  "garmin": "All 318 map sections compiled and structurally inspected; hardware display review pending.",
+  "bareGPSIreland": "No host app changes"
+}

@@ -1,0 +1,37 @@
+{
+  "coastSHA256": "56b6a87483649ce6ba1294659220402445ff596b7123ce4b13a2b478949d2205",
+  "emptyHighZoomTilesRemoved": 382248,
+  "output": {
+    "bytes": 422789120,
+    "path": "releases/england-wales/2.0.0/maps/topography-fixed.mbtiles",
+    "sha256": "6228ae3821d85526d24f33b21d6db1be300b75babd3e254c9dfa0f1cd96066e1",
+    "validation": {
+      "empty_tile_count": 30535,
+      "logical_tiles_sha256": "91d94f6f59d362c2b3af9274b4dee2cc8aaa57eda4d559821322d42c31240fac",
+      "tile_count": 162177
+    }
+  },
+  "previousTopography": {
+    "bytes": 422744064,
+    "path": "releases/england-wales/2.0.0/maps/topography-context.mbtiles",
+    "sha256": "171c268fde39c7ce06c1f550289fb8dcc2104db3982ac0eaf7040914fd21b48d",
+    "validation": {
+      "empty_tile_count": 30535,
+      "logical_tiles_sha256": "b76b121b0a6905b5254d753285070016c813ff3cde2312f3e564a118f3d84ee5",
+      "tile_count": 162172
+    }
+  },
+  "reason": "Corrected coastal land tile precision: base/max zoom 14 with land layer capped at 12.",
+  "replacement": {
+    "changed_tiles": 24905,
+    "path": "releases/england-wales/2.0.0/maps/topography-fixed.mbtiles",
+    "replacement_feature_instances": 160419,
+    "sha256": "6228ae3821d85526d24f33b21d6db1be300b75babd3e254c9dfa0f1cd96066e1",
+    "unchanged_other_layers_sha256": "84f502221f219d824841bd92ffdf649d8d29e6dff32536e977db25b1cb83fc83",
+    "validation": {
+      "empty_tile_count": 30535,
+      "logical_tiles_sha256": "91d94f6f59d362c2b3af9274b4dee2cc8aaa57eda4d559821322d42c31240fac",
+      "tile_count": 162177
+    }
+  }
+}

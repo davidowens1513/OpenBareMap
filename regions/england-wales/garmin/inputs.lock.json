@@ -1,0 +1,20 @@
+{
+  "inputs": [
+    {
+      "path": "regions/england-wales/garmin/inputs/contours.geojson.gz",
+      "sha256": "60c1528cca8c228d01b8ed45c61c881aeecf20b648ef79a9714ce0ab4b1bb735",
+      "uncompressedSHA256": "21fe4f57df24b93657967f6c1d25e8699d6ff85a453c35a0cab6b1ef1d403ab4"
+    },
+    {
+      "path": "regions/england-wales/garmin/inputs/landcover.geojson.gz",
+      "sha256": "b9f18993a268fc92df1efb22a03ba9e0f036ce35a50993d61c42cd2109c71992",
+      "uncompressedSHA256": "07a478d1b0b38c8687c0e5bde50092bf66b44e63e939c009e57f5087072eb9a3"
+    },
+    {
+      "path": "regions/england-wales/garmin/inputs/land.geojson.gz",
+      "sha256": "86cf23a9c3c0d8837e4d884aa92321274c5a7a3b71ec0b858395c95ba9d69939",
+      "uncompressedSHA256": "99c40b5ebde2f3268676cf419048417e9fc922824af658b053767c30d2bafcb2"
+    }
+  ],
+  "region": "england-wales"
+}

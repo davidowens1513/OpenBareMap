@@ -10,8 +10,12 @@ from regions import region_path
 def run(*args):subprocess.run([sys.executable,*map(str,args)],cwd=ROOT,check=True)
 
 def main(region):
-    run('scripts/fetch_region.py','--region',region)
     selection=region_path(region,'active-map.json')
+    native_report=ROOT/'regions'/region/'garmin/build-report.json'
+    # A finished release can be checked without rehydrating archived raw inputs.
+    # Any stage that still needs to build must first verify its locked sources.
+    if not selection.exists() or not native_report.exists():
+        run('scripts/fetch_region.py','--region',region)
     if not selection.exists():
         top=ROOT/'build'/(region+'-topography')
         if not top.exists():run('scripts/build_topography.py',region+'-topography','--region',region)
@@ -29,7 +33,7 @@ def main(region):
     elif active['storageRevision']!='2.0.0-england-wales-r3':
         raise ValueError('Coastal background needs repair before packaging')
     run('scripts/build_region.py','--region',region,'--stage','packages')
-    if not (ROOT/'regions'/region/'garmin/build-report.json').exists():run('scripts/build_region_garmin.py','--region',region)
+    if not native_report.exists():run('scripts/build_region_garmin.py','--region',region)
     run('scripts/validate_region.py','--region',region)
 
 if __name__=='__main__':

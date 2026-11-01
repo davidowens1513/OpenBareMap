@@ -106,8 +106,9 @@ def package(root,platform):
     if manifest['region']!='england-wales':raise ValueError('Wrong package region')
     selected=active_map(manifest['region'])
     if manifest['storageRevision']!=selected['storageRevision']:raise ValueError('Stale package revision')
+    databases=manifest['datasets'] if platform=='ios' else manifest['databases']
     for name,item in selected['datasets'].items():
-        if manifest['datasets'][name]['sha256']!=item['sha256']:raise ValueError('Stale packaged dataset: '+name)
+        if databases[name]['sha256']!=item['sha256']:raise ValueError('Stale packaged dataset: '+name)
     if manifest['regionStyleSHA256']!=digest(region_path(manifest['region'],'style.json')):raise ValueError('Stale regional package style')
     if 'townlands' in style['sources'] or 'irish-grid' in style['sources']:raise ValueError('Ireland-specific source leaked')
     if 'british-grid' not in style['sources']:raise ValueError('Missing British National Grid')

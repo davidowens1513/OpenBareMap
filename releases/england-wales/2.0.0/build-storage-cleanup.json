@@ -1,0 +1,88 @@
+{
+  "reason": "Discard generated intermediate copies after verifying selected release databases; locked inputs and smoothed source geometry retained.",
+  "verifiedDatasets": {
+    "basemap": {
+      "bytes": 2714329088,
+      "path": "releases/england-wales/2.0.0/maps/basemap.mbtiles",
+      "sha256": "ff60d06aa4646b9a917fea499d69ad9d04d46c63c8ab981e5653a320d1fc3fac",
+      "validation": {
+        "empty_tile_count": 97801,
+        "logical_tiles_sha256": "0eea976356ea6da221b1f7a31e1d04f85d3d40ba8d8e3f9238d2f5a041b7b6a3",
+        "tile_count": 208061
+      }
+    },
+    "grid": {
+      "bytes": 76009472,
+      "path": "releases/england-wales/2.0.0/maps/grid.mbtiles",
+      "sha256": "3008b9d2db998edb4a8d0d200e673e472e110290eed2b303874f2c5b36cf08af",
+      "validation": {
+        "empty_tile_count": 0,
+        "logical_tiles_sha256": "c62a9e53048727a337536c0a0f02fc695390b08b299c0456c18c9b59036b08d2",
+        "tile_count": 236502
+      }
+    },
+    "hillshade": {
+      "bytes": 238579712,
+      "path": "releases/england-wales/2.0.0/maps/hillshade.mbtiles",
+      "sha256": "1c7ac27cd22ff21f98ec2a51dc989999e89dbcaa24eb1e9510c9a80f2ae6cdd3",
+      "validation": {
+        "empty_tile_count": 0,
+        "logical_tiles_sha256": "1ce096346da07a71f611adc64957f2cef21aa7166c2d9a318504aa7e15e49f47",
+        "tile_count": 8627
+      }
+    },
+    "topography": {
+      "bytes": 422744064,
+      "path": "releases/england-wales/2.0.0/maps/topography-context.mbtiles",
+      "sha256": "171c268fde39c7ce06c1f550289fb8dcc2104db3982ac0eaf7040914fd21b48d",
+      "validation": {
+        "empty_tile_count": 30535,
+        "logical_tiles_sha256": "b76b121b0a6905b5254d753285070016c813ff3cde2312f3e564a118f3d84ee5",
+        "tile_count": 162172
+      }
+    }
+  },
+  "removed": [
+    {
+      "path": "build/england-wales-basemap",
+      "bytes": 3590507361
+    },
+    {
+      "path": "build/england-wales-topography",
+      "bytes": 4828479225
+    },
+    {
+      "path": "build/england-wales-geometry-failed-1",
+      "bytes": 780725580
+    },
+    {
+      "path": "build/england-wales-release-failed-1",
+      "bytes": 1845
+    },
+    {
+      "path": "build/england-wales-release/topography.mbtiles",
+      "bytes": 412672000
+    },
+    {
+      "path": "build/england-wales-release/geometry.mbtiles",
+      "bytes": 2188771328
+    },
+    {
+      "path": "build/england-wales-release/basemap.mbtiles",
+      "bytes": 2714329088
+    },
+    {
+      "path": "build/england-wales-release/grid.mbtiles",
+      "bytes": 76009472
+    },
+    {
+      "path": "build/england-wales-release/basemap-smoothed.mbtiles",
+      "bytes": 3790536704
+    },
+    {
+      "path": "build/england-wales-release/topography-smoothed.mbtiles",
+      "bytes": 1455751168
+    }
+  ],
+  "bytesReclaimed": 19837783771
+}

@@ -1,0 +1,65 @@
+{
+  "objective": "Implement and build a full England/Wales edition alongside maintained Ireland; no pilot.",
+  "requirements": [
+    {
+      "requirement": "Full England and Wales coverage",
+      "evidence": "Complete locked England and Wales extracts with a common timestamp; 16 detailed coverage anchors pass.",
+      "result": "passed"
+    },
+    {
+      "requirement": "Shared tools with independent editions",
+      "evidence": "Region-aware build and packaging commands; Ireland remains the default and has independent selection and source locks.",
+      "result": "passed"
+    },
+    {
+      "requirement": "Browser map",
+      "evidence": "Corrected r3 datasets selected; Moelwyn, south Wales and full-extent screenshots reviewed.",
+      "result": "passed"
+    },
+    {
+      "requirement": "iOS and Android map resources",
+      "evidence": "Every packaged file checksum verified; both packages match the selected r3 datasets and regional style.",
+      "result": "passed"
+    },
+    {
+      "requirement": "Complete Garmin export",
+      "evidence": "All 318 source sections compiled and inspected; DEM, TYP and contour checks pass; no routing sections.",
+      "result": "passed"
+    },
+    {
+      "requirement": "Ireland preservation",
+      "evidence": "All saved baseline hashes match; no Android reference app source changes from the original base.",
+      "result": "passed"
+    },
+    {
+      "requirement": "Release records",
+      "evidence": "Versioned selection, artifact checksums, source locks, processing reports and visual review are saved separately for England/Wales.",
+      "result": "passed"
+    }
+  ],
+  "storageRevision": "2.0.0-england-wales-r3",
+  "validation": "validation.json",
+  "manifest": "manifest.json",
+  "visualReview": "visual-review.json",
+  "softwareTests": {
+    "passed": 39,
+    "failed": 0
+  },
+  "deviceDisplayTesting": "Not performed; no hardware installation was requested.",
+  "publication": "Local build and local preview; no remote publication.",
+  "implementationSHA256": {
+    "scripts/run_full_region.py": "f4d9f2aebf45e308316c13f7e069373ec9a713421dd34444ac5aa9e94ceab690",
+    "scripts/build_region.py": "0b2baa769d50583b1b86d3652ed6cdf07772d176a7688b151aeeb0e7c942ee91",
+    "scripts/build_region_context.py": "09883c487cae21ce6a29442d936edb0d840578d8d96d49d0936277e95bdfe65f",
+    "scripts/build_region_garmin.py": "010f1017295ce3c93cb9499015d904e44ff51707a5f4ecc2b4cd51b1e798e369",
+    "scripts/validate_region.py": "90a546c00edc6bfa67306a271a5a43c6cb3d5f8a77d15a0ba2d473ab3ffaa111",
+    "scripts/regions.py": "666a6ccb79b4dc376d6d8fd70b28983e603be831a6ad4a172f72f95a400533a5",
+    "scripts/package_resources.py": "134c1ce3952e7e1ab48a71b374074f1547680f3a818692eced904bd5a79facb8",
+    "ios/build_bundle.py": "ee6e39c293dac00b6962629c83b09ea44a592af186aad454f74bf14d00d8be36",
+    "android/build_package.py": "e4476b5416605cc178250a837973ae882c04acf158b53c2ec809cd077c7440b4",
+    "viewer/viewer.js": "43a26f76a19c5f12237f824fd8f489ff5f7cf1153eefd613e5babb5ba6029f5c",
+    "tests/test_regions.py": "c83bb27f2515b3a234c2fa23bc2f8b5e824b08620a9a342660c14bc3d4c1b24c"
+  },
+  "releaseManifestSHA256": "0bcf103b0f4a9e3193066e40f3a96459f66019ef2cd0dded124e176d00d76420",
+  "fullWorkflow": "build-records/release-workflow.log"
+}

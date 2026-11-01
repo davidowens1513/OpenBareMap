@@ -1,0 +1,53 @@
+{
+  "combinedSourceSHA256": "7f5a037150b2afbd62d33e2908d81254453d05ed526bbf808e0d16d2c99e8395",
+  "command": [
+    "/opt/homebrew/opt/openjdk@21/libexec/openjdk.jdk/Contents/Home/bin/java",
+    "-Xmx6g",
+    "-jar",
+    "/Users/davidowens/Documents/Codex/2026-10-25/i-x20/outputs/OpenBareMap/garmin/tools/mkgmap-r4924/mkgmap.jar",
+    "--output-dir=/Users/davidowens/Documents/Codex/2026-10-25/i-x20/outputs/OpenBareMap/regions/england-wales/garmin/work/compile",
+    "--max-jobs=2",
+    "--style-file=/Users/davidowens/Documents/Codex/2026-10-25/i-x20/outputs/OpenBareMap/regions/england-wales/garmin/style",
+    "--family-id=4832",
+    "--product-id=1",
+    "--family-name=OpenBareMap England & Wales",
+    "--series-name=OpenBareMap Garmin 2.0",
+    "--description=OpenBareMap England & Wales 2.0",
+    "--code-page=1252",
+    "--lower-case",
+    "--name-tag-list=name:en,name,name:cy",
+    "--levels=0:24,1:22,2:20,3:18,4:16",
+    "--gmapsupp",
+    "--add-pois-to-areas",
+    "--dem=/Users/davidowens/Documents/Codex/2026-10-25/i-x20/outputs/OpenBareMap/regions/england-wales/garmin/work/hgt",
+    "--dem-poly=/Users/davidowens/Documents/Codex/2026-10-25/i-x20/outputs/OpenBareMap/regions/england-wales/garmin/coverage.poly",
+    "--dem-dists=3312,13248,26512,53024,106048",
+    "--dem-interpolation=bilinear",
+    "--copyright-file=/Users/davidowens/Documents/Codex/2026-10-25/i-x20/outputs/OpenBareMap/regions/england-wales/garmin/copyright.txt",
+    "-c",
+    "/Users/davidowens/Documents/Codex/2026-10-25/i-x20/outputs/OpenBareMap/regions/england-wales/garmin/work/split/template.args",
+    "/Users/davidowens/Documents/Codex/2026-10-25/i-x20/outputs/OpenBareMap/regions/england-wales/garmin/style/OBM4832.txt"
+  ],
+  "demPaddingLockSHA256": "48d120f59e74e0007a6e038f4f0338f4875cbefede0c050b7b321ac9b84c1a5f",
+  "inputsLockSHA256": "75fb796b8fa3949e65e7ae9444b5aae5add9464b47a3d260a91777999f1d882e",
+  "osm": {
+    "bytes": 1859551571,
+    "operation": "libosmium sorted merge; duplicate OSM objects resolved by version",
+    "path": "data/regions/england-wales/england-wales-261030.osm.pbf",
+    "replicationTimestamp": "2026-10-30T21:24:51Z",
+    "sha256": "dd983328bdc2cc7d5330a5f68f89daf3fa2730658f93b5b59f09e04a9650851d",
+    "snapshot_date": "2026-10-30",
+    "url": null
+  },
+  "status": "started",
+  "style": {
+    "OBM4832.txt": "f9e5d6c4bf1ed5d0be72f68e546f05f5f3eab0809044e000d7f63dd8f085c2b1",
+    "info": "62215a5850bd6e84c027b0f93124df351470467353e840d419bf069374b0236d",
+    "lines": "c4924d90240da29c1b31fe8ec828be6c031ce2961da2d5d5a0bcc95c18ca4aaf",
+    "options": "d4b26b3eedcdf3203944084dedc6f27461dda0e05f72d353b97e4829839f4b77",
+    "points": "e55e5b1d14e16b5fa78cb90fe8f655cb7b66e3b18e7f147989efd3e8c028457a",
+    "polygons": "f353afa46616b136b398acf4752a7efa2a0dd9484b12d0624d35fb4a767f021a",
+    "relations": "288011d18d342ba76672a79d0d19d2fa16f000fb6a63b28a829f595329bd2bb2",
+    "version": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+  }
+}

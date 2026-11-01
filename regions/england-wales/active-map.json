@@ -1,0 +1,52 @@
+{
+  "contourIntervalMetres": 20,
+  "coverage": "Complete Geofabrik England and Wales extracts, including offshore islands; no pilot or regional sampling",
+  "datasets": {
+    "basemap": {
+      "bytes": 2714329088,
+      "path": "releases/england-wales/2.0.0/maps/basemap.mbtiles",
+      "sha256": "ff60d06aa4646b9a917fea499d69ad9d04d46c63c8ab981e5653a320d1fc3fac",
+      "validation": {
+        "empty_tile_count": 97801,
+        "logical_tiles_sha256": "0eea976356ea6da221b1f7a31e1d04f85d3d40ba8d8e3f9238d2f5a041b7b6a3",
+        "tile_count": 208061
+      }
+    },
+    "grid": {
+      "bytes": 76009472,
+      "path": "releases/england-wales/2.0.0/maps/grid.mbtiles",
+      "sha256": "3008b9d2db998edb4a8d0d200e673e472e110290eed2b303874f2c5b36cf08af",
+      "validation": {
+        "empty_tile_count": 0,
+        "logical_tiles_sha256": "c62a9e53048727a337536c0a0f02fc695390b08b299c0456c18c9b59036b08d2",
+        "tile_count": 236502
+      }
+    },
+    "hillshade": {
+      "bytes": 238579712,
+      "path": "releases/england-wales/2.0.0/maps/hillshade.mbtiles",
+      "sha256": "1c7ac27cd22ff21f98ec2a51dc989999e89dbcaa24eb1e9510c9a80f2ae6cdd3",
+      "validation": {
+        "empty_tile_count": 0,
+        "logical_tiles_sha256": "1ce096346da07a71f611adc64957f2cef21aa7166c2d9a318504aa7e15e49f47",
+        "tile_count": 8627
+      }
+    },
+    "topography": {
+      "bytes": 422789120,
+      "path": "releases/england-wales/2.0.0/maps/topography-fixed.mbtiles",
+      "sha256": "6228ae3821d85526d24f33b21d6db1be300b75babd3e254c9dfa0f1cd96066e1",
+      "validation": {
+        "empty_tile_count": 30535,
+        "logical_tiles_sha256": "91d94f6f59d362c2b3af9274b4dee2cc8aaa57eda4d559821322d42c31240fac",
+        "tile_count": 162177
+      }
+    }
+  },
+  "format": "openbaremap-development-viewer-v1",
+  "localBorders": false,
+  "mapVersion": "2.0.0",
+  "region": "england-wales",
+  "storageRevision": "2.0.0-england-wales-r3",
+  "styleRevision": "2.0.0-england-wales-overview-r1"
+}

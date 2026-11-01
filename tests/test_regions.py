@@ -6,10 +6,29 @@ import shutil
 import subprocess
 import tempfile
 import unittest
+from unittest.mock import patch
 sys.path.insert(0,str(Path(__file__).resolve().parents[1]/'scripts'))
 from regions import ROOT,profile,region_path,region_style,active_map,process_script
 
 class RegionalEditionTests(unittest.TestCase):
+    def test_finished_release_survives_removed_intermediates_but_rejects_changed_maps(self):
+        import run_full_region
+        with tempfile.TemporaryDirectory() as directory:
+            root=Path(directory);region=root/'regions/england-wales';region.mkdir(parents=True)
+            tile=root/'map.mbtiles';tile.write_bytes(b'verified release checkpoint')
+            selection=region/'active-map.json'
+            selection.write_text(json.dumps({'storageRevision':'2.0.0-england-wales-r3','datasets':{'basemap':{'path':tile.name,'sha256':hashlib.sha256(tile.read_bytes()).hexdigest()}}}))
+            (region/'garmin').mkdir();(region/'garmin/build-report.json').write_text('{}')
+            with patch.object(run_full_region,'ROOT',root),patch.object(run_full_region,'region_path',return_value=selection),patch.object(run_full_region,'run') as run:
+                run_full_region.main('england-wales')
+                scripts=[c.args[0] for c in run.call_args_list]
+                self.assertNotIn('scripts/fetch_region.py',scripts)
+                self.assertNotIn('scripts/build_topography.py',scripts)
+                self.assertIn('scripts/validate_region.py',scripts)
+                run.reset_mock();tile.write_bytes(b'changed release')
+                with self.assertRaisesRegex(ValueError,'Selected dataset changed'):run_full_region.main('england-wales')
+                run.assert_not_called()
+
     def test_ireland_paths_and_cartography_remain_default(self):
         self.assertEqual(region_path('ireland','active-map.json'),ROOT/'active-map.json')
         self.assertEqual(region_style(),json.loads((ROOT/'style/openbaremap.json').read_text()))

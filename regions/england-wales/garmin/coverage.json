@@ -1,0 +1,37 @@
+{
+  "areaSquareDegrees": 35.173881006156876,
+  "bounds": [
+    -7.101192,
+    49.57808,
+    2.249944,
+    56.06997
+  ],
+  "inputs": [
+    {
+      "bytes": 11945,
+      "path": "data/regions/england-wales/england.poly",
+      "sha256": "2a3f3f0b6716d52990a973835789227a190e2c1770e33acacb15241685e96b53",
+      "url": "https://download.geofabrik.de/europe/united-kingdom/england.poly"
+    },
+    {
+      "bytes": 10767,
+      "path": "data/regions/england-wales/wales.poly",
+      "sha256": "c7b9cf40de410cc5821c71469a15fc1b5c0a5b12190cc10968df533ec7eda08f",
+      "url": "https://download.geofabrik.de/europe/united-kingdom/wales.poly"
+    }
+  ],
+  "knownDestinationsCovered": [
+    "island",
+    "snowdonia",
+    "lakes",
+    "peaks",
+    "brecon",
+    "dartmoor",
+    "london",
+    "scilly",
+    "northumberland"
+  ],
+  "operation": "Geometric union of complete England and Wales source outlines; overlapping buffers dissolved",
+  "polygons": 1,
+  "sha256": "b5dd61d5eb07fc47eaebffd208bc1c078abdf8b5b781ce3ebb640c7fe32a36ed"
+}

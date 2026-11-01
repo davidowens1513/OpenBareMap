@@ -1,0 +1,52 @@
+{
+  "builderSHA256": "8a7a95c9ef6eea05ba54cbc18c5b5ae01ace2836c7c1adfc494fcb0d9e769fed",
+  "contextBounds": [
+    -13,
+    47,
+    6,
+    59
+  ],
+  "note": "Contour payloads preserved exactly while extending land background outside edition coverage.",
+  "oldTopography": {
+    "bytes": 412672000,
+    "path": "releases/england-wales/2.0.0/maps/topography.mbtiles",
+    "sha256": "128a83adce61817d571a47b08023efb57735e4f270c89de85c1ad6ebbb609a64",
+    "validation": {
+      "empty_tile_count": 30536,
+      "logical_tiles_sha256": "e65a22b92b928ab8a15d2779c077db57f5c5785a94c0ea9e2869d4c5374826a7",
+      "tile_count": 145952
+    }
+  },
+  "output": {
+    "bytes": 422744064,
+    "path": "releases/england-wales/2.0.0/maps/topography-context.mbtiles",
+    "sha256": "171c268fde39c7ce06c1f550289fb8dcc2104db3982ac0eaf7040914fd21b48d",
+    "validation": {
+      "empty_tile_count": 30535,
+      "logical_tiles_sha256": "b76b121b0a6905b5254d753285070016c813ff3cde2312f3e564a118f3d84ee5",
+      "tile_count": 162172
+    }
+  },
+  "replacement": {
+    "changed_tiles": 24901,
+    "path": "build/england-wales-coast-context/combined.mbtiles",
+    "replacement_feature_instances": 160393,
+    "sha256": "6c8c552981dc4e69afa5225fa7beaaa49f85e3d018b3601eec4cce161efaf8ee",
+    "unchanged_other_layers_sha256": "84f502221f219d824841bd92ffdf649d8d29e6dff32536e977db25b1cb83fc83",
+    "validation": {
+      "empty_tile_count": 30535,
+      "logical_tiles_sha256": "b76b121b0a6905b5254d753285070016c813ff3cde2312f3e564a118f3d84ee5",
+      "tile_count": 162172
+    }
+  },
+  "source": {
+    "accessed_utc": "2026-10-25T12:59:16.751893+00:00",
+    "bytes": 928538219,
+    "http_headers_path": "data/land-polygons.headers",
+    "license": "ODbL 1.0; OpenStreetMap contributors",
+    "path": "data/land-polygons-split-4326.zip",
+    "sha256": "5911e273096f9585425a17c30a8a98785cc33ed2718ff88987768933b8a327f7",
+    "source_snapshot": "HTTP Last-Modified 2026-10-25T03:43:12Z; this is file publication, not a guaranteed OSM snapshot timestamp",
+    "url": "https://osmdata.openstreetmap.de/download/land-polygons-split-4326.zip"
+  }
+}
