@@ -63,7 +63,9 @@ def register(args):
     print('Source registered; its exact content will be checked before every build.')
 
 def build(args):
-    lock = ROOT / 'sources.lock.json'
+    from regions import region_path, profile
+    region_id = getattr(args, 'region', 'ireland')
+    lock = region_path(region_id, 'sources.lock.json')
     if not lock.exists():
         raise ValueError('Register an OSM source first. See README.md.')
     source = json.loads(lock.read_text())['osm']
@@ -86,27 +88,36 @@ def build(args):
         raise ValueError('Tilemaker differs from the recorded toolchain')
     destination = ROOT / 'build' / args.name
     destination.mkdir(parents=True, exist_ok=False)
-    region = json.loads((ROOT / 'config/region.json').read_text())
+    region = json.loads((ROOT / 'config/region.json').read_text()) if region_id == 'ireland' else profile(region_id)
     config = json.loads((ROOT / 'config/tilemaker.json').read_text())
     config['settings']['minzoom'] = region['minzoom']
     config['settings']['maxzoom'] = region['maxzoom']
+    if region_id != 'ireland':
+        config['settings'].update(name=region['name'], description=region['coverage'])
     write(destination / 'tilemaker.json', config)
-    shutil.copy2(ROOT / 'config/process.lua', destination / 'process.lua')
+    from regions import process_script
+    (destination / 'process.lua').write_text(process_script(region_id))
     command = [tool, '--input', str(source_path), '--output', str(destination / 'basemap.mbtiles'), '--config', str(destination / 'tilemaker.json'), '--process', str(destination / 'process.lua'), '--threads', '1']
     record = {'status': 'started', 'source': source, 'region': region, 'toolchain': identity, 'command': command, 'config_sha256': digest(destination / 'tilemaker.json'), 'process_sha256': digest(destination / 'process.lua')}
     write(destination / 'build.json', record)
     with (destination / 'build.log').open('w') as log:
         result = subprocess.run(command, stdout=log, stderr=subprocess.STDOUT)
-    record['status'] = 'failed'
+    record['status'] = 'failed' if result.returncode else 'validating vector build'
     record['exit_code'] = result.returncode
     write(destination / 'build.json', record)
     if result.returncode:
         raise ValueError('Tilemaker failed; inspect ' + str(destination / 'build.log'))
-    record['validation'] = inspect_tiles(destination / 'basemap.mbtiles')
-    from audit import audit
-    write(destination / 'audit.json', audit(destination / 'basemap.mbtiles'))
-    record['output_sha256'] = digest(destination / 'basemap.mbtiles')
-    record['status'] = 'validated vector build'
+    try:
+        record['validation'] = inspect_tiles(destination / 'basemap.mbtiles')
+        from audit import audit
+        write(destination / 'audit.json', audit(destination / 'basemap.mbtiles'))
+        record['output_sha256'] = digest(destination / 'basemap.mbtiles')
+        record['status'] = 'validated vector build'
+    except Exception as error:
+        record['status'] = 'failed'
+        record['error'] = str(error)
+        write(destination / 'build.json', record)
+        raise
     write(destination / 'build.json', record)
     print(json.dumps(record['validation'], indent=2))
 
@@ -120,6 +131,7 @@ def main():
     run = sub.add_parser('build')
     run.add_argument('name',type=build_name)
     run.add_argument('--accept-toolchain', action='store_true')
+    run.add_argument('--region', choices=['ireland','england-wales'], default='ireland')
     compare = sub.add_parser('compare')
     compare.add_argument('first',nargs='?',default='ireland-a',type=build_name)
     compare.add_argument('second',nargs='?',default='ireland-b',type=build_name)

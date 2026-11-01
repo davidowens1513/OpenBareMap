@@ -37,6 +37,7 @@ public class InspectMap {
         return HexFormat.of().formatHex(digest.digest());
     }
     public static void main(String[] args) throws Exception {
+        List<String> targets = args.length > 1 ? Arrays.asList(args).subList(1,args.length) : List.of("Carrauntoohil","Dublin","Belfast","Galway","Cork");
         Path directory=Path.of(args[0]);Map<String,Long> lines=new TreeMap<>(),polygons=new TreeMap<>(),points=new TreeMap<>(),sizes=new TreeMap<>();
         SortedMap<String,String> anchors=new TreeMap<>(),hashes=new TreeMap<>();
         Map<Integer,Map<String,Long>> contourLevels=new TreeMap<>();
@@ -60,7 +61,7 @@ public class InspectMap {
                 for(Polygon polygon:reader.shapesForLevel(0,true))count(polygons,polygon.getType());
                 for(Point point:reader.pointsForLevel(0,true)) {
                     count(points,point.getType());String name=point.getLabel()!=null ? point.getLabel().getText() : point.getPOIRecord()!=null && point.getPOIRecord().getNameLabel()!=null ? point.getPOIRecord().getNameLabel().getText() : "";
-                    for(String target:List.of("Carrauntoohil","Dublin","Belfast","Galway","Cork","Letterkenny"))
+                    for(String target:targets)
                         if(name.equalsIgnoreCase(target))anchors.put(target,name);
                 }
             }
@@ -72,7 +73,7 @@ public class InspectMap {
         for(String type:List.of("0x20","0x22"))if(!lines.containsKey(type))throw new IllegalStateException("Missing contour type "+type);
         if(lines.containsKey("0x21")||lines.containsKey("0x1d"))throw new IllegalStateException("Unexpected 50 m contour or local boundary");
         if(!polygons.containsKey("0x10107")||!points.containsKey("0x6616"))throw new IllegalStateException("Missing bog or summit features");
-        for(String name:List.of("Carrauntoohil","Dublin","Belfast","Galway","Cork"))if(!anchors.containsKey(name))throw new IllegalStateException("Missing anchor label: "+name);
+        for(String name:targets)if(!anchors.containsKey(name))throw new IllegalStateException("Missing anchor label: "+name);
         StringJoiner anchorsJson=new StringJoiner(",","{","}");anchors.forEach((k,v)->anchorsJson.add(quote(k)+":"+quote(v)));
         StringJoiner levelsJson=new StringJoiner(",","{","}");contourLevels.forEach((k,v)->levelsJson.add(quote(k.toString())+":"+mapJson(v)));
         StringJoiner hashJson=new StringJoiner(",","{","}");hashes.forEach((k,v)->hashJson.add(quote(k)+":"+quote(v)));

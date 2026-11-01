@@ -10,3 +10,4 @@ android/package/OpenBareMap/townlands.geojson filter=lfs diff=lfs merge=lfs -tex
 *.img filter=lfs diff=lfs merge=lfs -text
 garmin/inputs/*.geojson.gz filter=lfs diff=lfs merge=lfs -text
 releases/**/*.geojson.gz filter=lfs diff=lfs merge=lfs -text
+regions/**/*.geojson.gz filter=lfs diff=lfs merge=lfs -text

@@ -6,49 +6,58 @@ ROOT=Path(__file__).resolve().parents[1]
 import sys
 sys.path.insert(0,str(ROOT/"scripts"))
 from package_resources import build_capped_coast
+from regions import profile, active_map, region_style, provenance_files, region_path
 def sha(path):
     with path.open('rb') as f:return hashlib.file_digest(f,'sha256').hexdigest()
 def write(path,obj):path.write_text(json.dumps(obj,indent=2,ensure_ascii=False)+'\n')
-def assemble(destination):
+def assemble(destination, region='ireland'):
+    edition=profile(region)
     if destination.exists():raise FileExistsError(destination)
     destination.mkdir(parents=True)
     bundle=destination/'OpenBareMap.bundle';bundle.mkdir()
     (bundle/'maps').mkdir()
-    active=json.loads((ROOT/'active-map.json').read_text());source_files={};records={}
+    active=active_map(region);source_files={};records={}
     for name,item in active['datasets'].items():
         src=ROOT/item['path']
         if sha(src)!=item['sha256']:raise ValueError('Selected input changed: '+name)
         relative='maps/'+name+'.mbtiles';dst=bundle/relative;shutil.copyfile(src,dst)
         if sha(dst)!=item['sha256']:raise ValueError('Copied database changed: '+name)
         records[name]={'path':relative,'sha256':item['sha256']}
-        source_files['irish-grid' if name=='grid' else name]=relative
+        source_files[edition['gridSource'] if name=='grid' else name]=relative
     # A real capped source archive avoids relying on SDK-specific TileJSON overrides.
     top=bundle/'maps/topography.mbtiles';coast=bundle/'maps/coast.mbtiles'
     build_capped_coast(top, coast)
     source_files['coast']='maps/coast.mbtiles';records['coast']={'path':'maps/coast.mbtiles','sha256':sha(coast),'derived_from':active['datasets']['topography']['sha256'],'maxzoom':12,'operation':'Preserve land-layer MVT bytes only through zoom 12; omit other layers.'}
-    for source,target in [('viewer/fonts','fonts'),('viewer/sprites','sprites'),('app-legend','legend')]:shutil.copytree(ROOT/source,bundle/target)
-    shutil.copyfile(ROOT/'viewer/townlands.geojson',bundle/'townlands.geojson')
+    for source,target in [('viewer/fonts','fonts'),('viewer/sprites','sprites'),('app-legend' if region=='ireland' else 'regions/'+region+'/legend','legend')]:shutil.copytree(ROOT/source,bundle/target)
+    if edition['townlands']:shutil.copyfile(ROOT/'viewer/townlands.geojson',bundle/'townlands.geojson')
     shutil.copyfile(ROOT/'viewer/terrain-attribution.html',bundle/'terrain-attribution.html')
     (bundle/'provenance').mkdir()
-    for name in ['active-map.json','sources.lock.json','coast-sources.lock.json','terrain-sources.lock.json','legacy-assets.lock.json','viewer-assets.lock.json','assets/sprites.lock.json','config/transport-style.json']:
-        shutil.copyfile(ROOT/name,bundle/'provenance'/Path(name).name)
+    for source in provenance_files(region):
+        shutil.copyfile(source,bundle/'provenance'/source.name)
+    shutil.copyfile(ROOT/'regions'/region/'region.json',bundle/'provenance/region.json')
     for name in ['terrain-attribution.md','terrain-data-sources.md']:
         shutil.copyfile(ROOT/'data'/name,bundle/'provenance'/name)
-    style=json.loads((ROOT/'style/openbaremap.json').read_text())
+    style=region_style(region)
     for name,path in source_files.items():
         source=style['sources'][name];source.pop('tiles',None);source['url']='mbtiles://{bundle}/'+path
-    style['sources']['townlands']['data']='{bundle}/townlands.geojson'
+    if edition['townlands']:style['sources']['townlands']['data']='{bundle}/townlands.geojson'
     style['sources']['basemap']['attribution']='© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap contributors</a>'
     style['sources']['hillshade']['attribution']='Terrain Tiles / Mapzen · Copernicus EU-DEM · USGS · NOAA'
     style['glyphs']='{bundle}/fonts/{fontstack}/{range}.pbf';style['sprite']='{bundle}/sprites/outdoors'
     write(bundle/'style.json',style)
     commit=subprocess.check_output(['git','rev-parse','HEAD'],cwd=ROOT,text=True).strip()
-    write(bundle/'manifest.json',{'packageFormat':'openbaremap-ios-resources-v1','mapVersion':'2.0.0','storageRevision':active.get('storageRevision','original'),'cartography':'OpenBareMap 2.0; '+str(active.get('contourIntervalMetres',10))+' m contours','sourceCommit':commit,'packagerSHA256':sha(Path(__file__)),'sourceRevisionNote':'Base repository commit; resource/style checksums and storageRevision identify this package.','sourceStyleSHA256':sha(ROOT/'style/openbaremap.json'),'renderer':'MapLibre Native iOS','style':'style.json','requiresRuntimePathResolution':True,'loader':'OpenBareMapResources.swift (provided alongside bundle)','sourceFiles':source_files,'datasets':records,'contourIntervalMetres':active.get('contourIntervalMetres',10),'osmSnapshot':'2026-10-24','inheritedAssets':'Townlands, Irish Grid, font glyphs and original patterns are pinned 1.1 assets; see provenance/legacy-assets.lock.json','validation':'Resource integrity and loader tests; actual iOS device rendering remains to be verified.'})
-    info={'CFBundleIdentifier':'org.openbaremap.resources','CFBundleName':'OpenBareMap','CFBundleDisplayName':'OpenBareMap','CFBundlePackageType':'BNDL','CFBundleShortVersionString':'2.0.0','CFBundleVersion':'1','CFBundleDevelopmentRegion':'en','CFBundleInfoDictionaryVersion':'6.0'}
+    write(bundle/'manifest.json',{'packageFormat':'openbaremap-ios-resources-v1','mapVersion':active.get('mapVersion','2.0.0'),'region':region,'displayName':edition['label'],'bounds':edition['bounds'],'coverage':edition.get('coverage',edition['label']),'storageRevision':active.get('storageRevision','original'),'cartography':'OpenBareMap 2.0; '+str(active.get('contourIntervalMetres',10))+' m contours','sourceCommit':commit,'packagerSHA256':sha(Path(__file__)),'sourceRevisionNote':'Base repository commit; resource/style checksums and storageRevision identify this package.','sourceStyleSHA256':sha(ROOT/'style/openbaremap.json'),'renderer':'MapLibre Native iOS','style':'style.json','requiresRuntimePathResolution':True,'loader':'OpenBareMapResources.swift (provided alongside bundle)','loaderSHA256':sha(ROOT/'ios/OpenBareMapResources.swift'),'sourceFiles':source_files,'datasets':records,'contourIntervalMetres':active.get('contourIntervalMetres',10),'osmSnapshot':json.loads(region_path(region,'sources.lock.json').read_text())['osm']['snapshot_date'],'inheritedAssets':('Townlands, Irish Grid, font glyphs and original patterns are pinned 1.1 assets.' if edition['townlands'] else 'Font glyphs and original patterns are pinned 1.1 assets; British National Grid is generated from EPSG:27700.'),'validation':'Resource integrity and loader tests; actual iOS device rendering remains to be verified.'})
+    info={'CFBundleIdentifier':'org.openbaremap.resources' if region=='ireland' else 'org.openbaremap.resources.'+region,'CFBundleName':'OpenBareMap','CFBundleDisplayName':'OpenBareMap','CFBundlePackageType':'BNDL','CFBundleShortVersionString':'2.0.0','CFBundleVersion':'1','CFBundleDevelopmentRegion':'en','CFBundleInfoDictionaryVersion':'6.0'}
     (bundle/'Info.plist').write_bytes(plistlib.dumps(info,sort_keys=True))
     (bundle/'ATTRIBUTION.txt').write_text('OpenBareMap\n\n© OpenStreetMap contributors. OSM-derived databases are distributed under ODbL 1.0.\nhttps://www.openstreetmap.org/copyright\nhttps://opendatacommons.org/licenses/odbl/1-0/\n\nElevation: Terrain Tiles / Mapzen composite data, including Copernicus EU-DEM, USGS and NOAA. See terrain-attribution.html and provenance/terrain-data-sources.md for full source notices. This rebuild is not claimed to use pure SRTM.\n\nOpen Sans glyphs: Apache License 2.0; see fonts/LICENSE-APACHE-2.0.txt.\nMap colours and custom pattern assets: OpenBareMap.\nTownland label points and fixed Irish Grid are inherited from OpenBareMap 1.1; source dates/generation recipes are not newly asserted.\n\nThe host app must make these attributions accessible to users.\n')
+    if not edition['townlands']:
+        notice=bundle/'ATTRIBUTION.txt'
+        notice.write_text(notice.read_text().replace('Townland label points and fixed Irish Grid are inherited from OpenBareMap 1.1; source dates/generation recipes are not newly asserted.', 'British National Grid generated using EPSG:27700; font glyphs and original patterns inherited from OpenBareMap 1.1.').replace('Townlands and Irish Grid inherited from OpenBareMap 1.1; see provenance.', 'British National Grid generated using EPSG:27700; see provenance.'))
     shutil.copyfile(ROOT/'ios/OpenBareMapResources.swift',destination/'OpenBareMapResources.swift')
     shutil.copyfile(ROOT/'ios/INTEGRATION.txt',destination/'INTEGRATION.txt');shutil.copyfile(ROOT/'ios/INTEGRATION.txt',bundle/'INTEGRATION.txt')
+    if region != 'ireland':
+        for file in [destination/'INTEGRATION.txt',bundle/'INTEGRATION.txt']:
+            file.write_text(file.read_text().replace('Start around longitude -8.15, latitude 53.4, zoom 7. The map is designed for full-island coverage.', 'Use the region bounds in manifest.json, or longitude -2.3, latitude 52.8, zoom 6, for the full England/Wales edition.'))
     inventory=[]
     for p in sorted(bundle.rglob('*')):
         if p.is_file():inventory.append({'path':str(p.relative_to(bundle)),'bytes':p.stat().st_size,'sha256':sha(p)})
@@ -74,4 +83,4 @@ def assemble(destination):
     validation['totalBytes']=sum(p.stat().st_size for p in bundle.rglob('*') if p.is_file());validation['fileCount']=sum(1 for p in bundle.rglob('*') if p.is_file());write(destination/'validation.json',validation)
     print(json.dumps({'bundle':str(bundle),'bytes':validation['totalBytes'],'files':validation['fileCount']},indent=2))
 if __name__=='__main__':
-    parser=argparse.ArgumentParser();parser.add_argument('--output',type=Path,default=ROOT/'ios/package');args=parser.parse_args();assemble(args.output.resolve())
+    parser=argparse.ArgumentParser();parser.add_argument('--output',type=Path);parser.add_argument('--region',choices=['ireland','england-wales'],default='ireland');args=parser.parse_args();assemble((args.output or (ROOT/'ios/package' if args.region=='ireland' else ROOT/'regions'/args.region/'ios')).resolve(),args.region)

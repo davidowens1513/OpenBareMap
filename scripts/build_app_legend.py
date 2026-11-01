@@ -1,11 +1,13 @@
 #!/usr/bin/env python3
 """Export the active map legend to scalable SVG and 2x PNG (Pillow required)."""
 from pathlib import Path
-import base64,hashlib,html,io,json,math
+import argparse,base64,hashlib,html,io,json,math
+from regions import profile,region_style
 from PIL import Image,ImageDraw,ImageFont,ImageEnhance
 ROOT=Path(__file__).resolve().parents[1]
-OUT=ROOT/'app-legend';OUT.mkdir(exist_ok=True)
-STYLE=json.loads((ROOT/'style/openbaremap.json').read_text());LAYERS={l['id']:l for l in STYLE['layers']}
+parser=argparse.ArgumentParser();parser.add_argument('--region',choices=['ireland','england-wales'],default='ireland');args=parser.parse_args();edition=profile(args.region)
+OUT=ROOT/'app-legend' if args.region=='ireland' else ROOT/'regions'/args.region/'legend';OUT.mkdir(exist_ok=True)
+STYLE=region_style(args.region);LAYERS={l['id']:l for l in STYLE['layers']}
 ATLAS=Image.open(ROOT/'viewer/sprites/outdoors.png').convert('RGBA');INDEX=json.loads((ROOT/'viewer/sprites/outdoors.json').read_text())
 W,H,S=1000,1320,2
 canvas=Image.new('RGB',(W*S,H*S),'white');draw=ImageDraw.Draw(canvas)
@@ -89,7 +91,7 @@ for x in range(shade.width):
  c=round(238-70*(math.sin(x/shade.width*math.pi)**2));ImageDraw.Draw(shade).line((x,0,x,shade.height),fill=(c,c,c,255))
 image(shade,48,977,96,24);text(162,980,'Hillshade')
 heading(528,786,'Boundaries & grid')
-for i,(label,layer) in enumerate([('National boundary','administrative-boundaries'),('County boundary','county-boundaries'),('Irish Grid · 10 km','irish-grid-10km'),('Irish Grid · 1 km','irish-grid-1km')]):linerow(528,837+i*36,label,layer)
+for i,(label,layer) in enumerate([('National boundary','administrative-boundaries'),('County boundary','county-boundaries'),(edition['gridName']+' · 10 km',edition['gridSource']+'-10km'),(edition['gridName']+' · 1 km',edition['gridSource']+'-1km')]):linerow(528,837+i*36,label,layer)
 heading(48,1065,'Points')
 # Use actual summit paint and actual parking atlas artwork.
 p=LAYERS['summit-dots-natural-labels']['paint'];cx,cy=96,1128;rad=max(3,p['circle-radius']*2.2)
@@ -100,5 +102,5 @@ draw.ellipse((572*S,1125*S,578*S,1131*S),fill='#596957');svg.append('<circle cx=
 text(528,1164,'Names identify places and mapped features.',13,'#394d40')
 line(48,1232,952,1232,'#d8dfd9');text(48,1252,'20 m contours  ·  Map colour families and patterns · Samples enhanced for clarity',13,'#394d40');text(48,1277,'Bolder strokes and stronger swatches aid reading. Map colours vary with relief shading.',12,'#394d40')
 svg.append('</svg>');(OUT/'openbaremap-legend.svg').write_text('\n'.join(svg)+'\n');canvas.save(OUT/'openbaremap-legend@2x.png',optimize=True);canvas.resize((W,H),Image.Resampling.LANCZOS).save(OUT/'openbaremap-legend.png',optimize=True)
-(OUT/'legend-manifest.json').write_text(json.dumps({'style_sha256':hashlib.sha256((ROOT/'style/openbaremap.json').read_bytes()).hexdigest(),'reference_zoom':14,'logical_size':[W,H],'png_2x_size':[W*S,H*S],'note':'SVG is self-contained with embedded pattern/symbol PNGs and system sans-serif text. Hillshade swatch is illustrative. Bold labels; line strokes enlarged 2.2x with minimum 2.2 px, minimum opacity 0.9; dash ratios preserved. Colour swatches use 1.3x saturation and 1.12x contrast with outlines. Map style unchanged.','outputs':['openbaremap-legend.svg','openbaremap-legend.png','openbaremap-legend@2x.png']},indent=2)+'\n')
+(OUT/'legend-manifest.json').write_text(json.dumps({'style_sha256':hashlib.sha256(json.dumps(STYLE,sort_keys=True).encode()).hexdigest(),'reference_zoom':14,'logical_size':[W,H],'png_2x_size':[W*S,H*S],'note':'SVG is self-contained with embedded pattern/symbol PNGs and system sans-serif text. Hillshade swatch is illustrative. Bold labels; line strokes enlarged 2.2x with minimum 2.2 px, minimum opacity 0.9; dash ratios preserved. Colour swatches use 1.3x saturation and 1.12x contrast with outlines. Map style unchanged.','outputs':['openbaremap-legend.svg','openbaremap-legend.png','openbaremap-legend@2x.png']},indent=2)+'\n')
 print(OUT)

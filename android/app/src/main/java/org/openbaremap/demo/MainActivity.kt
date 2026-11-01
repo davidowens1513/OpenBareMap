@@ -10,6 +10,9 @@ import android.view.ViewGroup
 import android.widget.*
 import org.maplibre.android.MapLibre
 import org.maplibre.android.camera.CameraPosition
+import org.maplibre.android.camera.CameraUpdateFactory
+import org.maplibre.android.geometry.LatLngBounds
+import org.json.JSONObject
 import org.maplibre.android.geometry.LatLng
 import org.maplibre.android.maps.MapView
 import org.maplibre.android.maps.MapLibreMap
@@ -43,6 +46,7 @@ class MainActivity : Activity() {
         val controls = LinearLayout(this)
         importButton = Button(this).apply { text = "Import map"; setOnClickListener { chooseMap() } }
         controls.addView(importButton)
+        controls.addView(Button(this).apply { text = "Maps"; setOnClickListener { chooseInstalledMap() } })
         controls.addView(Button(this).apply { text = "Legend"; setOnClickListener { showLegend() } })
         controls.addView(Button(this).apply { text = "Credits"; setOnClickListener { showCredits() } })
         root.addView(controls)
@@ -92,13 +96,46 @@ class MainActivity : Activity() {
             try {
                 if (verify) OpenBareMapResources.verify(directory)
                 val style = OpenBareMapResources.prepareStyle(directory)
+                val metadata = JSONObject(File(directory,"manifest.json").readText())
+                val bounds = metadata.optJSONArray("bounds")
                 runOnUiThread {
                     if (isFinishing || isDestroyed) return@runOnUiThread
                     current = directory
-                    map?.setStyle(Style.Builder().fromJson(style)) { status.text = "Offline map ready"; importButton.isEnabled = true }
+                    map?.setStyle(Style.Builder().fromJson(style)) {
+                        if (bounds != null && bounds.length() == 4) {
+                            val area = LatLngBounds.Builder()
+                                .include(LatLng(bounds.getDouble(1),bounds.getDouble(0)))
+                                .include(LatLng(bounds.getDouble(3),bounds.getDouble(2))).build()
+                            map?.moveCamera(CameraUpdateFactory.newLatLngBounds(area,48))
+                        }
+                        status.text = metadata.optString("displayName","OpenBareMap") + " · offline map ready"
+                        importButton.isEnabled = true
+                    }
                 }
             } catch (failure: Exception) { runOnUiThread { status.text = "Map could not load: ${failure.message}"; importButton.isEnabled = true } }
         }
+    }
+    private fun chooseInstalledMap() {
+        val packages = File(filesDir,"maps").listFiles()?.filter {
+            it.isDirectory && it.name.startsWith("map-") && File(it,"manifest.json").isFile
+        }?.sortedByDescending { it.lastModified() }.orEmpty()
+        if (packages.isEmpty()) { status.text = "Import a map to begin."; return }
+        val labels = packages.map { directory ->
+            runCatching {
+                val metadata = JSONObject(File(directory,"manifest.json").readText())
+                val region = when(metadata.optString("region","ireland")) {
+                    "england-wales" -> "England & Wales"
+                    "ireland" -> "Ireland"
+                    else -> metadata.optString("region")
+                }
+                "$region · ${metadata.optString("mapVersion")} · ${metadata.optString("osmSnapshot")}"
+            }.getOrDefault(directory.name)
+        }.toTypedArray()
+        AlertDialog.Builder(this).setTitle("Installed maps").setItems(labels) { _, index ->
+            val selected = packages[index]
+            getPreferences(MODE_PRIVATE).edit().putString("mapDirectory",selected.absolutePath).apply()
+            loadMap(selected,true)
+        }.setNegativeButton("Close",null).show()
     }
     private fun showCredits() {
         val text = current?.let { File(it, "ATTRIBUTION.txt").takeIf(File::isFile)?.readText() }

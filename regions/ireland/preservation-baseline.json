@@ -1,0 +1,17 @@
+{
+  "baseCommit": "f46c61d2b608119c982c5b4624bf05af0d0a77c1",
+  "files": {
+    "active-map.json": "4f33222c2df3c16e5f9b91bfc458394f98b6b9c3227650aa8bbb65ee1e5816c3",
+    "sources.lock.json": "fc3807f33d665938a76e34f6d70674bd83dd93d7aae405a201378dae93bb5227",
+    "terrain-sources.lock.json": "7336551caeaa254c02e7a2512278de2a390582fb6fcf520f61ea02a9f5f46798",
+    "style/openbaremap.json": "be29f6993e8d5cd1f79921bf828f0d1263aa4e349aff1cf1b154ec805d0206da",
+    "garmin/dist/OpenBareMap-Ireland.img": "2e0e907e52b0bd535481b013c2487bb327e749fcf62ab61935ae2d94396b6c96",
+    "ios/package/OpenBareMap.bundle/manifest.json": "22dbf14f33319d518908583c310b4cacd238f5ff95818fdfc1e100bc1e2e7164",
+    "android/package/OpenBareMap/manifest.json": "ce08b0d0ce4fe4f6a5e9cf5225539ea6fa40868e94c8f540dbce386aa968ce66",
+    "build/detail-2.0/basemap.mbtiles": "cb2e6ec1ebe474563422e44db2c5d30c2efa7c73ebb55a262b85508710943431",
+    "build/padding-2.0/topography.mbtiles": "73811c156a62d3ce945bee34c9c2f2c8ad1bc66c87d4fd4d43e0ce314ed74ec5",
+    "build/hillshade-a/hillshade.mbtiles": "55d199c8ca56463286944c9ad2ef39c7ed3b844ebee151dafb11908ade2ac2e0",
+    "assets/irish-grid.mbtiles": "449f6302f12b1d606de3e1d0467346e394e25c6c4c0b2b901f6a070873f58972"
+  },
+  "note": "Ireland inputs and accepted map/package outputs preserved while introducing another edition; existing unrelated local files are not removed."
+}

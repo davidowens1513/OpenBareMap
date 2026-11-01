@@ -1,0 +1,32 @@
+{
+  "id": "england-wales",
+  "name": "OpenBareMap England & Wales",
+  "label": "England & Wales",
+  "mapVersion": "2.0.0",
+  "minzoom": 4,
+  "maxzoom": 14,
+  "coverage": "Complete Geofabrik England and Wales extracts, including offshore islands; no pilot or regional sampling",
+  "bounds": [-6.7, 49.8, 2.1, 55.9],
+  "terrainBounds": [-7, 49, 3, 56],
+  "projectedCRS": "EPSG:27700",
+  "gridCRS": "EPSG:27700",
+  "gridName": "British National Grid",
+  "gridSource": "british-grid",
+  "townlands": false,
+  "contourIntervalMetres": 20,
+  "garminFamilyId": 4832,
+  "garminTileStartId": 48320001,
+  "sourceDate": "2026-10-30",
+  "sourceSlugs": ["england", "wales"],
+  "destinations": {
+    "island": [-2.3, 52.8, 6],
+    "snowdonia": [-4.076, 53.068, 12],
+    "lakes": [-3.211, 54.455, 12],
+    "peaks": [-1.837, 53.35, 12],
+    "brecon": [-3.436, 51.884, 12],
+    "dartmoor": [-3.94, 50.58, 12],
+    "london": [-0.128, 51.507, 12],
+    "scilly": [-6.31, 49.92, 12],
+    "northumberland": [-2.124, 55.478, 12]
+  }
+}

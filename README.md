@@ -4,6 +4,12 @@ OpenBareMap is an offline topographic map of the whole island of Ireland, includ
 
 The map release is **2.0.0**. The shared browser, iOS and Android map uses **20 m contours**, national/county borders and no local boundary lines. Its storage revision is **2.0.0-storage-r3** and style revision is **2.0.0-path-contrast-r2**. The iOS and Android resources are approximately **1.01 GB each**; the main databases total approximately **987 MB**. The [release manifest](releases/2.0.0/manifest.json) identifies exact packages, inputs, checksums and validation records.
 
+## Regional editions
+
+Ireland remains the default edition and keeps its existing release resources. A separate **England & Wales** edition uses the complete England and Wales extracts, the shared 20 m cartography and a generated British National Grid. Regional outputs, source locks and releases are separate; shared improvements can be applied to either edition independently.
+
+See [regional builds and maintenance](docs/regional-editions.md) for the complete build, platform packages and side-by-side viewers. England/Wales release records live under `releases/england-wales/2.0.0/`; their validation and visual-review records state the actual acceptance scope.
+
 ## The map
 
 - **Terrain:** Gently smoothed 20-metre contours with fine overview strokes for 100 m index lines, hillshade, summit and saddle names, summit dots and fine cliff markings.

@@ -1,17 +1,25 @@
 #!/usr/bin/env python3
-"""Merge contour/coast/townland overlays with OSM using libosmium object sorting."""
+"""Merge complete OSM and region overlays with libosmium object sorting."""
 from pathlib import Path
-import json,hashlib,sys
+import argparse,json,sys
 ROOT=Path(__file__).resolve().parents[1]
+sys.path.insert(0,str(ROOT/'scripts'))
+sys.path.insert(0,str(ROOT/'work/python'))
 sys.path.insert(0,str(ROOT/'garmin/work/python'))
-import osmium
-work=ROOT/'garmin/work'
-source=json.loads((ROOT/'sources.lock.json').read_text())['osm']
-with (ROOT/source['path']).open('rb') as f:
- if hashlib.file_digest(f,'sha256').hexdigest()!=source['sha256']:raise ValueError('OSM source mismatch')
-merger=osmium.MergeInputReader();size=merger.add_file(str(work/'overlays.osm.gz'));print('Overlay buffers:',size,flush=True)
-with osmium.io.Reader(str(ROOT/source['path'])) as reader:
- writer=osmium.io.Writer(str(work/'combined.osm.pbf'),reader.header())
- try:merger.apply_to_reader(reader,writer)
- finally:writer.close()
-print('Sorted full-island source written',flush=True)
+from openbaremap import digest,write
+from regions import region_path
+
+def merge(region='ireland'):
+ import osmium
+ work=ROOT/'garmin/work' if region=='ireland' else ROOT/'regions'/region/'garmin/work'
+ source=json.loads(region_path(region,'sources.lock.json').read_text())['osm']
+ if digest(ROOT/source['path'])!=source['sha256']:raise ValueError('OSM source mismatch')
+ merger=osmium.MergeInputReader();size=merger.add_file(str(work/'overlays.osm.gz'));print('Overlay buffers:',size,flush=True)
+ with osmium.io.Reader(str(ROOT/source['path'])) as reader:
+  writer=osmium.io.Writer(str(work/'combined.osm.pbf'),reader.header())
+  try:merger.apply_to_reader(reader,writer)
+  finally:writer.close()
+ write(work/'merge-record.json',{'osmSHA256':source['sha256'],'overlaySHA256':digest(work/'overlays.osm.gz'),'combinedSHA256':digest(work/'combined.osm.pbf')})
+ print('Sorted complete regional source written',flush=True)
+if __name__=='__main__':
+ parser=argparse.ArgumentParser();parser.add_argument('--region',choices=['ireland','england-wales'],default='ireland');args=parser.parse_args();merge(args.region)

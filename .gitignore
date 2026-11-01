@@ -43,3 +43,19 @@ build/detail-2.0/*
 !build/padding-2.0/
 build/padding-2.0/*
 !build/padding-2.0/topography.mbtiles
+
+# Regional full-build intermediates and local platform distributions
+regions/*/ios/
+regions/*/android/
+regions/*/garmin/work/
+
+# Locked England/Wales inputs (large files use the existing Git LFS rules)
+!data/regions/
+data/regions/*
+!data/regions/england-wales/
+data/regions/england-wales/*
+!data/regions/england-wales/*.osm.pbf
+!data/regions/england-wales/*.poly
+!data/regions/england-wales/elevation/
+data/regions/england-wales/elevation/*
+!data/regions/england-wales/elevation/*.hgt.gz

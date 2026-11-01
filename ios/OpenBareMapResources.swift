@@ -34,9 +34,14 @@ public enum OpenBareMapResources {
             source["url"] = "mbtiles://" + String(file.absoluteString.dropFirst("file://".count))
             sources[name] = source
         }
-        guard var townlands = sources["townlands"] else { throw ResourceError.invalidStyle }
-        townlands["data"] = root.appendingPathComponent("townlands.geojson").absoluteString
-        sources["townlands"] = townlands
+        if var townlands = sources["townlands"] {
+            let file = root.appendingPathComponent("townlands.geojson")
+            guard FileManager.default.fileExists(atPath: file.path) else {
+                throw ResourceError.missingResource("townlands.geojson")
+            }
+            townlands["data"] = file.absoluteString
+            sources["townlands"] = townlands
+        }
         style["sources"] = sources
         style["glyphs"] = root.appendingPathComponent("fonts").absoluteString + "/{fontstack}/{range}.pbf"
         style["sprite"] = root.appendingPathComponent("sprites/outdoors").absoluteString

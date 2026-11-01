@@ -25,7 +25,11 @@ object OpenBareMapResources {
             source.remove("tiles")
             source.put("url", "mbtiles://" + file.toURI().rawPath)
         }
-        sources.getJSONObject("townlands").put("data", fileURL(File(packageDirectory, "townlands.geojson")))
+        sources.optJSONObject("townlands")?.let { townlands ->
+            val file = containedFile(packageDirectory, "townlands.geojson")
+            require(file.isFile) { "Missing townland labels" }
+            townlands.put("data", fileURL(file))
+        }
         style.put("glyphs", fileURL(File(packageDirectory, "fonts")).trimEnd('/') + "/{fontstack}/{range}.pbf")
         style.put("sprite", fileURL(File(packageDirectory, "sprites/outdoors")))
         return style.toString()

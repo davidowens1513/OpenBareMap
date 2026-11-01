@@ -40,6 +40,20 @@ class ResourcesTest {
             assertFalse(style.toString().contains("http://"))
         } finally { dir.deleteRecursively() }
     }
+    @Test fun resolvesEditionWithoutTownlandsAndRejectsMissingDeclaredLabels() {
+        val dir=root()
+        try {
+            fixture(dir)
+            File(dir,"townlands.geojson").delete()
+            assertThrows(IllegalArgumentException::class.java) { OpenBareMapResources.prepareStyle(dir) }
+            val style=JSONObject(File(dir,"style.json").readText())
+            style.getJSONObject("sources").remove("townlands")
+            File(dir,"style.json").writeText(style.toString())
+            val resolved=JSONObject(OpenBareMapResources.prepareStyle(dir))
+            assertFalse(resolved.getJSONObject("sources").has("townlands"))
+            assertTrue(resolved.getJSONObject("sources").getJSONObject("basemap").getString("url").startsWith("mbtiles:///"))
+        } finally { dir.deleteRecursively() }
+    }
     @Test fun verifiedInstallIsRepeatableAndPreservesPreviousVersion() {
         val source=root(); val storage=root()
         try {
@@ -76,11 +90,14 @@ class ResourcesTest {
         OpenBareMapResources.verify(directory)
         val style=JSONObject(OpenBareMapResources.prepareStyle(directory))
         val sources=style.getJSONObject("sources")
-        for (name in listOf("basemap","coast","topography","hillshade","irish-grid")) {
+        val manifest = JSONObject(File(directory,"manifest.json").readText())
+        for (name in manifest.getJSONObject("sourceFiles").keys()) {
             val url=sources.getJSONObject(name).getString("url")
             assertTrue(url.startsWith("mbtiles:///")); assertFalse(url.contains("{package}"))
         }
-        assertTrue(sources.getJSONObject("townlands").getString("data").startsWith("file:///"))
+        sources.optJSONObject("townlands")?.let {
+            assertTrue(it.getString("data").startsWith("file:///"))
+        }
     }
 
 }

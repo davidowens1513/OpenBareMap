@@ -10,17 +10,23 @@ import shutil
 import sqlite3
 import subprocess
 import sys
-from openbaremap import ROOT, digest, inspect_tiles, write
+from openbaremap import ROOT, digest, inspect_tiles, write, build_name
+from regions import region_path, profile
 
 GDAL=Path('/Applications/QGIS.app/Contents/MacOS')
 TOOLS=['ogr2ogr','gdalbuildvrt','gdalwarp','gdaldem','gdal_contour','gdal_translate','gdaladdo','gdalinfo']
 
 def build(args):
     coast=json.loads((ROOT/'coast-sources.lock.json').read_text())
-    terrain=json.loads((ROOT/'terrain-sources.lock.json').read_text())
+    region_id=getattr(args,'region','ireland')
+    terrain_lock=region_path(region_id,'terrain-sources.lock.json')
+    terrain=json.loads(terrain_lock.read_text())
     for item in [coast]+terrain['assets']:
         if digest(ROOT/item['path'])!=item['sha256']:raise ValueError('Input changed: '+item['path'])
     config=json.loads((ROOT/'config/topography.json').read_text())
+    if region_id != 'ireland':
+        p=profile(region_id)
+        config.update(coverage=p['terrainBounds'], coast_context_bounds=p['bounds'], projected_crs=p['projectedCRS'], contour_interval_m=p['contourIntervalMetres'])
     tools={name:str(GDAL/name) for name in TOOLS}
     tools['tilemaker']=shutil.which('tilemaker')
     identity={name:{'path':path,'sha256':digest(path)} for name,path in tools.items()}
@@ -37,7 +43,7 @@ def build(args):
     else:raise ValueError('Use --accept-toolchain once to record the local tools')
     dest=ROOT/'build'/args.name
     dest.mkdir(exist_ok=False)
-    record={'status':'started','config':config,'toolchain':identity,'coast_source':coast,'terrain_source_lock_sha256':digest(ROOT/'terrain-sources.lock.json'),'builder_sha256':digest(Path(__file__)),'raster_builder_sha256':digest(Path(__file__).with_name('build_hillshade.py')),'packager_sha256':digest(Path(__file__).with_name('mbtiles.py')),'commands':[],'scope':'local runtime; shared-library and portable container pinning remain pending'}
+    record={'status':'started','config':config,'toolchain':identity,'coast_source':coast,'terrain_source_lock_sha256':digest(terrain_lock),'builder_sha256':digest(Path(__file__)),'raster_builder_sha256':digest(Path(__file__).with_name('build_hillshade.py')),'packager_sha256':digest(Path(__file__).with_name('mbtiles.py')),'commands':[],'scope':'local runtime; shared-library and portable container pinning remain pending'}
     write(dest/'build.json',record)
     def run(tool,*argv):
         command=[tools[tool],*map(str,argv)]
@@ -82,7 +88,8 @@ def build(args):
 
 if __name__=='__main__':
     parser=argparse.ArgumentParser()
-    parser.add_argument('name',choices=['topography-a','topography-b'])
+    parser.add_argument('name',type=build_name)
+    parser.add_argument('--region',choices=['ireland','england-wales'],default='ireland')
     parser.add_argument('--accept-toolchain',action='store_true')
     try:build(parser.parse_args())
     except (OSError,ValueError,subprocess.SubprocessError) as error:sys.exit(str(error))

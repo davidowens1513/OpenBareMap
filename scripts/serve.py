@@ -63,14 +63,15 @@ class Handler(BaseHTTPRequestHandler):
             prefix='' if dataset=='basemap' else dataset+'/'
             suffix='png' if dataset=='hillshade' else 'pbf'
             attribution='© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap contributors</a>'
-            if dataset=='grid':attribution='Irish Grid (EPSG:29903) · OpenBareMap 1.1 asset'
+            if dataset=='grid':attribution=self.server.grid_attribution
             if dataset=='hillshade':
                 attribution='Terrain Tiles / Mapzen · Copernicus EU-DEM · USGS · NOAA · <a href="/terrain-attribution.html">Terrain attribution</a>'
             data={'tilejson':'3.0.0','name':metadata.get('name',dataset),'scheme':'xyz','tiles':[origin+'/tiles/'+prefix+'{z}/{x}/{y}.'+suffix],'minzoom':int(metadata['minzoom']),'maxzoom':int(metadata['maxzoom']),'bounds':list(map(float,metadata['bounds'].split(','))),'attribution':attribution}
             self.reply(200,json.dumps(data).encode(),'application/json')
             return
         if path == '/style/openbaremap.json':
-            style = json.loads((ROOT/'style/openbaremap.json').read_text())
+            from regions import region_style
+            style = region_style(self.server.region)
             base=origin+'/style/openbaremap.json'
             for source in style['sources'].values():
                 if 'url' in source:source['url']=urljoin(base,source['url'])
@@ -80,19 +81,28 @@ class Handler(BaseHTTPRequestHandler):
             if 'sprite' in style:style['sprite']=urljoin(base,style['sprite'])
             self.reply(200, json.dumps(style).encode(), 'application/json')
             return
+        if path == '/region.json':
+            from regions import profile
+            self.reply(200,json.dumps(profile(self.server.region)).encode(),'application/json')
+            return
         name = 'index.html' if path == '/' else path.lstrip('/')
         target = (ROOT/'viewer'/name).resolve()
         if not target.is_relative_to((ROOT/'viewer').resolve()) or not target.is_file():
             self.reply(404)
             return
-        self.reply(200,target.read_bytes(), mimetypes.guess_type(target)[0] or 'application/octet-stream')
+        body=target.read_bytes()
+        if name == 'index.html' and self.server.region != 'ireland':
+            body=body.decode().replace('Ireland', 'England &amp; Wales').replace('IRELAND & NORTHERN IRELAND', 'ENGLAND &amp; WALES').replace('Irish Grid', 'British National Grid').replace('irish-grid-', 'british-grid-').encode()
+        self.reply(200,body, mimetypes.guess_type(target)[0] or 'application/octet-stream')
 
 def main():
     parser=argparse.ArgumentParser()
     parser.add_argument('--port',type=int,default=8765)
+    parser.add_argument('--region',choices=['ireland','england-wales'],default='ireland')
     parser.add_argument('--database',type=Path,help='Optional override for the base vector database')
     args=parser.parse_args()
-    manifest=json.loads((ROOT/'active-map.json').read_text())
+    from regions import active_map, profile
+    manifest=active_map(args.region)
     datasets={}
     from openbaremap import digest
     for name,item in manifest['datasets'].items():
@@ -105,6 +115,9 @@ def main():
             datasets[name]={'path':path,'metadata':dict(db.execute('SELECT name,value FROM metadata'))}
     server=ThreadingHTTPServer(('127.0.0.1',args.port),Handler)
     server.datasets=datasets
+    server.region=args.region
+    p=profile(args.region)
+    server.grid_attribution=p['gridName']+' ('+p['gridCRS']+') · OpenBareMap'
     print(f'OpenBareMap viewer: http://127.0.0.1:{server.server_port}',flush=True)
     try:
         server.serve_forever()

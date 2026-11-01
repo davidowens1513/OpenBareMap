@@ -30,7 +30,7 @@ The supplied 1.1 bundle records an OSM Ireland and Northern Ireland extract date
 
 ## Geographic scope
 
-Every real-data build targets the complete island of Ireland, including Northern Ireland and offshore islands, using the source extract extent. No Wicklow crop or sampling build is part of the workflow. Repeatability comparisons run on two complete builds.
+Every real-data build targets its complete edition. Ireland includes Northern Ireland and offshore islands; England/Wales uses both complete source extracts, including offshore islands. No crop, pilot or sampling map build is part of the workflow. Edition profiles, locks and outputs are separate; Ireland remains the default. See regional-editions.md. Repeatability comparisons, when run, use complete builds.
 
 ## Topography processing
 
