@@ -1,0 +1,39 @@
+{
+  "date": "2026-11-01",
+  "regions": {
+    "ireland": {
+      "preview": "https://downloads.appsbyonzy.dev/OpenBareMap/preview-v2/ireland/index.html",
+      "zoomableKey": "https://downloads.appsbyonzy.dev/OpenBareMap/preview-v2/ireland/legend.html",
+      "imageSHA256": "9bce5f3d93aacb0267e268dd9add6967992c0f461c5b968a5b41e2c61198a159",
+      "publicImageMatchesApprovedLegend": true,
+      "opensSeparateWindow": true
+    },
+    "england-wales": {
+      "preview": "https://downloads.appsbyonzy.dev/OpenBareMap/preview-v2/england-wales/index.html",
+      "zoomableKey": "https://downloads.appsbyonzy.dev/OpenBareMap/preview-v2/england-wales/legend.html",
+      "imageSHA256": "7ca7d1fe4a1c9d33f7177341793f2502963543b1f1df4997ba7f44de326c082b",
+      "publicImageMatchesApprovedLegend": true,
+      "opensSeparateWindow": true
+    }
+  },
+  "browserChecks": [
+    "Public England/Wales map key opened its separate legend window",
+    "Published zoom-in increased displayed scale",
+    "100% and fit-to-page controls worked",
+    "Ireland public preview exposes matching regional viewer and image"
+  ],
+  "mapArchivesRebuilt": false,
+  "mapArchivesChanged": false,
+  "websiteFooter": {
+    "url": "https://appsbyonzy.dev/",
+    "email": "appsbyonzy@gmail.com",
+    "position": "Immediately after copyright",
+    "liveMailtoVerifiedInBrowser": true,
+    "hosting": "Existing Cloudflare Pages appsbyonzy production deployment"
+  },
+  "priorDeploymentHistory": "Unchanged",
+  "tests": {
+    "previewPackaging": 2,
+    "passed": true
+  }
+}

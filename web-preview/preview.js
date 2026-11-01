@@ -9,3 +9,5 @@ const locations=region.destinations||{island:[-8.15,53.4,6],wicklow:[-6.32,53.04
 const labels={island:'All '+region.label,snowdonia:'Eryri / Snowdonia',lakes:'Lake District',peaks:'Peak District',brecon:'Bannau Brycheiniog',dartmoor:'Dartmoor',london:'London',scilly:'Isles of Scilly',northumberland:'Northumberland',wicklow:'Wicklow Mountains',kerry:'Killarney',donegal:'Donegal',belfast:'Belfast',dublin:'Dublin',aran:'Aran Islands'};
 const select=document.getElementById('location');select.replaceChildren(...Object.keys(locations).map(k=>new Option(labels[k]||k,k)));select.addEventListener('change',()=>{if(select.value==='island')map.fitBounds(bounds,{padding:{top:155,left:30,right:30,bottom:40}});else{const [lng,lat,zoom]=locations[select.value];map.flyTo({center:[lng,lat],zoom})}});
 const button=document.getElementById('key-toggle'),key=document.getElementById('key');button.addEventListener('click',()=>{key.hidden=!key.hidden;button.setAttribute('aria-expanded',String(!key.hidden))});
+
+document.addEventListener('keydown',e=>{if(e.key==='Escape'&&!key.hidden){key.hidden=true;button.setAttribute('aria-expanded','false');button.focus();}});

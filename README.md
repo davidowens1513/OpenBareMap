@@ -63,7 +63,7 @@ See [regional builds and maintenance](docs/regional-editions.md) for independent
 
 The MapLibre presentation uses Open Sans text without halos, bridge/tunnel styling and a regional grid overlay: Irish Grid for Ireland or British National Grid for England/Wales. Paths and footways are saturated green; tracks are orange-brown, with distinct dash patterns and prominent strokes for contrast over higher-ground fills. Cliff markings use a repeating teeth pattern from zoom 11.
 
-The shared app legend has bold dark labels, enlarged line samples and outlined colour swatches with enhanced contrast and saturation. Its samples are enhanced for readability; the map itself retains its cartographic colours. The browser legend reads its samples from the active map style.
+The shared app legend has bold dark labels, enlarged line samples and outlined colour swatches with enhanced contrast and saturation. Its samples are enhanced for readability; the map itself retains its cartographic colours. The public previews use matching regional legend images with a separate zoomable view; the local development viewer reads its legend samples from the active map style.
 
 Garmin uses native device fonts, symbols, terrain rendering and detail levels. The presentations share source data but have different rendering capabilities.
 
@@ -132,10 +132,14 @@ The bundle contains map databases, townland points, styles, glyphs, sprites, a l
 
 ## Public previews — both regions
 
-- [Preview Ireland](https://downloads.appsbyonzy.dev/OpenBareMap/preview-v2/ireland/index.html)
-- [Preview England & Wales](https://downloads.appsbyonzy.dev/OpenBareMap/preview-v2/england-wales/index.html)
+| Ireland | England & Wales |
+| --- | --- |
+| [Open map preview](https://downloads.appsbyonzy.dev/OpenBareMap/preview-v2/ireland/index.html) · [Open zoomable map key](https://downloads.appsbyonzy.dev/OpenBareMap/preview-v2/ireland/legend.html) | [Open map preview](https://downloads.appsbyonzy.dev/OpenBareMap/preview-v2/england-wales/index.html) · [Open zoomable map key](https://downloads.appsbyonzy.dev/OpenBareMap/preview-v2/england-wales/legend.html) |
+| <a href="https://downloads.appsbyonzy.dev/OpenBareMap/preview-v2/ireland/legend.html"><img src="https://downloads.appsbyonzy.dev/OpenBareMap/preview-v2/assets/legends/ireland@2x.png" width="220" alt="Ireland map key — click to open and zoom"></a> | <a href="https://downloads.appsbyonzy.dev/OpenBareMap/preview-v2/england-wales/legend.html"><img src="https://downloads.appsbyonzy.dev/OpenBareMap/preview-v2/assets/legends/england-wales@2x.png" width="220" alt="England and Wales map key — click to open and zoom"></a> |
 
-Both tools display the complete selected map, with pan/zoom, regional destinations and a map key. They can be linked or embedded on appsbyonzy.dev. These online previews load tiles as needed; they do not replace the offline downloads. See [web preview packaging](web-preview/README.md) for updating and embedding them.
+Click a key image or its link to open the full-size legend. The separate legend page has zoom controls, a fit-to-page view and image download; larger views can be scrolled or dragged. Ireland uses the Irish Grid key and England & Wales uses the British National Grid key. The website previews use these same legend pages.
+
+Both previews display the complete selected map, with pan/zoom and regional destinations. These online previews load tiles as needed; they do not replace the offline downloads. See [web preview packaging](web-preview/README.md) for updating and embedding them.
 
 ## Browser viewer
 

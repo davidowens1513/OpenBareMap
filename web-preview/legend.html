@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Map key · {{REGION}} · OpenBareMap</title>
+  <link rel="stylesheet" href="../assets/legend.css?v=20261101">
+</head>
+<body>
+  <header>
+    <a href="./index.html">← Back to {{REGION}} map</a>
+    <h1>OpenBareMap · {{REGION}} map key</h1>
+    <div class="zoom-controls" role="group" aria-label="Legend zoom">
+      <button id="zoom-out" type="button" aria-label="Zoom out">−</button>
+      <output id="zoom-level" aria-live="polite">100%</output>
+      <button id="zoom-in" type="button" aria-label="Zoom in">+</button>
+      <button id="fit-page" type="button">Fit page</button>
+      <button id="actual-size" type="button">100%</button>
+      <a href="../assets/legends/{{ID}}@2x.png" download="OpenBareMap-{{ID}}-legend.png">Download image</a>
+    </div>
+    <p>Use + and − to zoom. Scroll or drag to explore; pinch to zoom on a touch screen.</p>
+  </header>
+  <main id="legend-viewport" tabindex="0" aria-label="Scrollable map legend">
+    <div id="legend-canvas">
+      <img id="legend-image" src="../assets/legends/{{ID}}@2x.png" width="2000" height="2640" alt="{{REGION}} map legend: landscape, roads and routes, terrain, boundaries and grid, points and feature labels" draggable="false">
+    </div>
+  </main>
+  <script src="../assets/legend.js?v=20261101" defer></script>
+</body>
+</html>

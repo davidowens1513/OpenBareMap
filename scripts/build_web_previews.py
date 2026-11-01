@@ -7,6 +7,7 @@ from regions import ROOT,active_map,profile,region_style
 from pmtiles.convert import mbtiles_to_pmtiles
 from pmtiles.reader import Reader,MmapSource
 from package_resources import build_capped_coast
+from package_preview_ui import package_ui
 
 def digest(p):
  with p.open('rb') as f:return hashlib.file_digest(f,'sha256').hexdigest()
@@ -25,10 +26,10 @@ def build(output,origin):
  if not (assets/'pmtiles.js').is_file():raise ValueError('Missing browser protocol library')
  package.unlink()
  urllib.request.urlretrieve('https://raw.githubusercontent.com/protomaps/PMTiles/main/LICENSE',assets/'PMTiles-LICENSE.txt')
- for file in ['preview.js','preview.css']:shutil.copyfile(ROOT/'web-preview'/file,assets/file)
+ package_ui(output)
  jobs=[];records={}
  for region in ['ireland','england-wales']:
-  p=profile(region);active=active_map(region);directory=output/region;directory.mkdir();(maps/region).mkdir();records[region]={}
+  p=profile(region);active=active_map(region);directory=output/region;directory.mkdir(exist_ok=True);(maps/region).mkdir();records[region]={}
   style=region_style(region)
   for name,item in active['datasets'].items():
    source=ROOT/item['path']
@@ -43,9 +44,7 @@ def build(output,origin):
     source.pop('tiles',None);source['url']='pmtiles://'+origin.rstrip('/')+'/data/'+region+'/'+name+'.pmtiles'
    elif source_name=='townlands':source['data']=origin.rstrip('/')+'/assets/townlands.geojson'
   style['glyphs']=origin.rstrip('/')+'/assets/fonts/{fontstack}/{range}.pbf';style['sprite']=origin.rstrip('/')+'/assets/sprites/outdoors'
-  write(directory/'style.json',style);write(directory/'region.json',p)
-  page=(ROOT/'web-preview/index.html').read_text().replace('{{REGION}}',p['label']).replace('{{ID}}',region)
-  (directory/'index.html').write_text(page)
+  write(directory/'style.json',style)
  def convert(job):
   region,name,source,target,sha=job;print('Converting',region,name,flush=True)
   mbtiles_to_pmtiles(str(source),str(target),None)

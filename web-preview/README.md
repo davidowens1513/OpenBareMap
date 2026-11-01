@@ -5,7 +5,7 @@ The two tools use the full accepted maps, with separate entry pages and PMTiles 
 - [Ireland preview](https://downloads.appsbyonzy.dev/OpenBareMap/preview-v2/ireland/index.html)
 - [England & Wales preview](https://downloads.appsbyonzy.dev/OpenBareMap/preview-v2/england-wales/index.html)
 
-Each provides pan/zoom, regional destinations, a collapsible map key and source notices. Website buttons open the chosen region directly. Both device downloads and native app-resource exports remain separate from these online previews.
+Each provides pan/zoom, regional destinations, a collapsible regional key with a clickable full-size, zoomable legend and source notices. Website buttons open the chosen region directly. Both device downloads and native app-resource exports remain separate from these online previews.
 
 ## Rebuild
 
@@ -42,3 +42,15 @@ To embed a map, use the corresponding URL in an iframe:
 ```
 
 Change both the title and region path for England/Wales. The website integration snapshot in `site/` contains the separate regional preview and Garmin buttons. Its other app links are preserved.
+
+## Update the key or preview controls
+
+The website and the repository README link to the same regional pages. Each map key opens `legend.html` in a separate browser tab/window, with +/−, fit-to-page, 100% and image download controls. Mouse users can drag enlarged images; touch users can scroll and pinch to zoom.
+
+To package page/key updates without rebuilding or uploading map archives:
+
+```sh
+python3 scripts/package_preview_ui.py --output /absolute/new/preview-ui
+```
+
+Upload that directory's files under the existing `OpenBareMap/preview-v2/` prefix, retaining all other files. The full preview builder also includes these pages and images automatically. The legend images come from `app-legend/` for Ireland and `regions/england-wales/legend/` for England & Wales.
