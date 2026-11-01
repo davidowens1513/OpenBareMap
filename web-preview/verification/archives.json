@@ -1,0 +1,73 @@
+{
+  "regions": {
+    "ireland": {
+      "basemap": {
+        "sourceSHA256": "cb2e6ec1ebe474563422e44db2c5d30c2efa7c73ebb55a262b85508710943431",
+        "bytes": 634522399,
+        "sha256": "040b1c1a72d8b7ebf53d160562310b2fcf38e85116497c1f3914d319302c1fc9",
+        "tiles": 99548
+      },
+      "topography": {
+        "sourceSHA256": "73811c156a62d3ce945bee34c9c2f2c8ad1bc66c87d4fd4d43e0ce314ed74ec5",
+        "bytes": 154981099,
+        "sha256": "4786583f2ac72084f86344f7b474d556a8755aba8ff9d85ec08c3487f5c84d06",
+        "tiles": 219603
+      },
+      "hillshade": {
+        "sourceSHA256": "55d199c8ca56463286944c9ad2ef39c7ed3b844ebee151dafb11908ade2ac2e0",
+        "bytes": 102600893,
+        "sha256": "2cc4803c7655ca9923d00a6d722095ec1178ae95a515371876736a4c867dfe88",
+        "tiles": 4258
+      },
+      "grid": {
+        "sourceSHA256": "449f6302f12b1d606de3e1d0467346e394e25c6c4c0b2b901f6a070873f58972",
+        "bytes": 8323630,
+        "sha256": "12e7c5070747539e2d518b4b15ad8b7e43f9899555f06b2c6228fdf6e09fb6d2",
+        "tiles": 31241
+      },
+      "coast": {
+        "sourceSHA256": "89df36cc0e9a977775e443e9a8abf906431405334db723d702558d7f53751feb",
+        "bytes": 6741317,
+        "sha256": "29f06b3bfb492f2ebce5a5781f3490cd779b97cb89938260d9682ef1f6b7c12a",
+        "tiles": 14743
+      }
+    },
+    "england-wales": {
+      "basemap": {
+        "sourceSHA256": "ff60d06aa4646b9a917fea499d69ad9d04d46c63c8ab981e5653a320d1fc3fac",
+        "bytes": 2631942962,
+        "sha256": "50065b9ae4c0ed36b3ee589b88661198db22a3feccdc8a757c90ae28073d818d",
+        "tiles": 208061
+      },
+      "grid": {
+        "sourceSHA256": "3008b9d2db998edb4a8d0d200e673e472e110290eed2b303874f2c5b36cf08af",
+        "bytes": 64406829,
+        "sha256": "366064c27c4aa5b29beca4535571a40066d61d0847e2df2a5dd91f60b7ba8495",
+        "tiles": 236502
+      },
+      "hillshade": {
+        "sourceSHA256": "1c7ac27cd22ff21f98ec2a51dc989999e89dbcaa24eb1e9510c9a80f2ae6cdd3",
+        "bytes": 231969694,
+        "sha256": "243531375c65af8f28a6ad342e1f79fed68d4e46da40e62fd3cec0868b6a20ef",
+        "tiles": 8627
+      },
+      "topography": {
+        "sourceSHA256": "6228ae3821d85526d24f33b21d6db1be300b75babd3e254c9dfa0f1cd96066e1",
+        "bytes": 356268296,
+        "sha256": "3df8f2d6d5fbf7633af8f6cc040f7007c0de5113325ba31295aa5ae9791d5db0",
+        "tiles": 162177
+      },
+      "coast": {
+        "sourceSHA256": "ccf8ffd4ec85b58f6510389177e79e5e6e8a87c8c3a4295675a875a2d2aaae85",
+        "bytes": 11934112,
+        "sha256": "884831a22b5c1c8fd21c41ea8aebe7374ed07cda986af4eafd884995e88b62de",
+        "tiles": 26091
+      }
+    }
+  },
+  "pmtilesPython": "3.8.1",
+  "pmtilesJS": "4.5.0",
+  "librarySHA256": "caf981bc46f6327ee7e65d5dc964d89d38a69f60edca2bd4c5c890c21b554c6c",
+  "dataOrigin": "https://downloads.appsbyonzy.dev/OpenBareMap/preview-v2",
+  "scope": "Complete selected map tiles; no regional or zoom sampling."
+}

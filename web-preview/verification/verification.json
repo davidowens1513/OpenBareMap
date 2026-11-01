@@ -1,0 +1,23 @@
+{
+  "date": "2026-11-01",
+  "website": "https://appsbyonzy.dev/#openbaremap",
+  "deployment": "Cloudflare Pages existing appsbyonzy project; dashboard Success and public site confirmed",
+  "previews": {
+    "ireland": "https://downloads.appsbyonzy.dev/OpenBareMap/preview-v2/ireland/index.html",
+    "england-wales": "https://downloads.appsbyonzy.dev/OpenBareMap/preview-v2/england-wales/index.html"
+  },
+  "browserChecks": [
+    "Both region overviews load",
+    "Ireland Wicklow destination and map-key toggle work",
+    "England/Wales Eryri destination loads at zoom 12 without console errors",
+    "Font and sprite URLs corrected to absolute public URLs",
+    "Website exposes separate working region links"
+  ],
+  "separateExports": [
+    "Ireland iOS",
+    "Ireland Android",
+    "England/Wales iOS",
+    "England/Wales Android"
+  ],
+  "basemapReassembly": "Full 2714329088-byte database restored from three parts and SHA256 matches ff60d06aa4646b9a917fea499d69ad9d04d46c63c8ab981e5653a320d1fc3fac"
+}
