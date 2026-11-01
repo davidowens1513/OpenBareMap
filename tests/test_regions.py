@@ -28,7 +28,7 @@ class RegionalEditionTests(unittest.TestCase):
             if 'source' in layer:self.assertIn(layer['source'],style['sources'])
         self.assertNotIn('name_ga',json.dumps(style))
         self.assertIn('name_cy',json.dumps(style))
-        self.assertEqual(style['sources']['coast']['bounds'],profile('england-wales')['bounds'])
+        self.assertEqual(style['sources']['coast']['bounds'],profile('england-wales')['coastContextBounds'])
 
     def test_full_extent_and_independent_garmin_identity(self):
         p=profile('england-wales')

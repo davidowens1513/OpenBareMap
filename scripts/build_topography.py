@@ -26,7 +26,7 @@ def build(args):
     config=json.loads((ROOT/'config/topography.json').read_text())
     if region_id != 'ireland':
         p=profile(region_id)
-        config.update(coverage=p['terrainBounds'], coast_context_bounds=p['bounds'], projected_crs=p['projectedCRS'], contour_interval_m=p['contourIntervalMetres'])
+        config.update(coverage=p['terrainBounds'], coast_context_bounds=p.get('coastContextBounds',p['bounds']), projected_crs=p['projectedCRS'], contour_interval_m=p['contourIntervalMetres'])
     tools={name:str(GDAL/name) for name in TOOLS}
     tools['tilemaker']=shutil.which('tilemaker')
     identity={name:{'path':path,'sha256':digest(path)} for name,path in tools.items()}

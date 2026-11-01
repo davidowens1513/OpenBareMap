@@ -25,7 +25,7 @@ def region_style(region='ireland'):
     style['name'] = p['name'] + ' ' + p['mapVersion']
     style['center'] = p['destinations']['island'][:2]
     style['zoom'] = p['destinations']['island'][2]
-    style['sources']['coast']['bounds'] = p['bounds']
+    style['sources']['coast']['bounds'] = p.get('coastContextBounds',p['bounds'])
     del style['sources']['townlands']
     grid = style['sources'].pop('irish-grid')
     style['sources'][p['gridSource']] = grid
