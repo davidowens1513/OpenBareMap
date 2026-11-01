@@ -17,6 +17,8 @@ def compress(source,target):
     return {'path':str(target.relative_to(ROOT)),'sha256':digest(target),'uncompressedSHA256':digest(source)}
 
 def main(region):
+    from fetch_region import fetch_dem_padding
+    fetch_dem_padding(region)
     p=profile(region);dest=ROOT/'regions'/region/'garmin';dest.mkdir(parents=True,exist_ok=True)
     work=dest/'work';work.mkdir(exist_ok=True)
     inputs=dest/'inputs';inputs.mkdir(exist_ok=True)
@@ -67,7 +69,7 @@ def main(region):
     compile_dir=work/'compile'
     if not compile_dir.exists():
         compile_dir.mkdir();command=[java_path(),'-Xmx6g','-jar',str(ROOT/'garmin/tools/mkgmap-r4924/mkgmap.jar'),'--output-dir='+str(compile_dir),*options,'-c',str(split/'template.args'),str(style/('OBM'+str(p['garminFamilyId'])+'.txt'))]
-        write(compile_dir/'build.json',{'status':'started','command':command,'osm':json.loads(region_path(region,'sources.lock.json').read_text())['osm'],'combinedSourceSHA256':merged['combinedSHA256'],'inputsLockSHA256':digest(lock),'style':{f.name:digest(f) for f in style.iterdir() if f.is_file()}})
+        write(compile_dir/'build.json',{'status':'started','command':command,'osm':json.loads(region_path(region,'sources.lock.json').read_text())['osm'],'demPaddingLockSHA256':digest(dest/'dem-padding.lock.json'),'combinedSourceSHA256':merged['combinedSHA256'],'inputsLockSHA256':digest(lock),'style':{f.name:digest(f) for f in style.iterdir() if f.is_file()}})
         run(command,work/'compile.log')
         compiled=json.loads((compile_dir/'build.json').read_text());compiled.update(status='compiled; inspection pending',outputSHA256=digest(compile_dir/'gmapsupp.img'))
         write(compile_dir/'build.json',compiled)
@@ -86,6 +88,7 @@ def main(region):
     if digest(output)!=digest(image):raise ValueError('Distribution copy mismatch')
     (dist/'INSTALL.txt').write_text('OpenBareMap England & Wales 2.0\n\nCopy OpenBareMap-England-Wales.img into the Garmin folder on your device or memory card. Enable OpenBareMap England & Wales. This map has a different family ID from Ireland; both may be installed. Display-only: no turn-by-turn routing. Use metres for contour labels.\n\nDevice rendering has not yet been reviewed.\n')
     shutil.copyfile(copyright_file,dist/'ATTRIBUTION.txt')
+    for name in ('terrain-attribution.md','terrain-data-sources.md'):shutil.copyfile(ROOT/'data'/name,dist/name)
     write(dest/'build-report.json',{'status':'compiled and structurally inspected; hardware rendering pending','familyId':p['garminFamilyId'],'routing':False,'output':{'path':str(output.relative_to(ROOT)),'bytes':output.stat().st_size,'sha256':digest(output)},'inspection':json.loads((dest/'inspection.json').read_text())})
 
 if __name__=='__main__':

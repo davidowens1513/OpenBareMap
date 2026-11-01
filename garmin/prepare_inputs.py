@@ -82,7 +82,7 @@ def prepare(region='ireland'):
   out.write(b'</osm>\n')
  for path in [nodefile,wayfile,relfile]:path.unlink()
  hgt=WORK/'hgt';hgt.mkdir(exist_ok=True)
- for item in json.loads(region_path(region,'terrain-sources.lock.json').read_text())['assets'] + (json.loads((ROOT/'garmin/dem-padding.lock.json').read_text())['assets'] if region=='ireland' else []):
+ for item in json.loads(region_path(region,'terrain-sources.lock.json').read_text())['assets'] + (json.loads((ROOT/'garmin/dem-padding.lock.json').read_text())['assets'] if region=='ireland' else json.loads((ROOT/'regions'/region/'garmin/dem-padding.lock.json').read_text())['assets']):
   src=ROOT/item['path']
   if digest(src)!=item['sha256']:raise ValueError('Elevation source changed: '+str(src))
   dest=hgt/src.stem

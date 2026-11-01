@@ -82,7 +82,25 @@ def fetch_terrain(region):
         assets=list(pool.map(fetch,[(lat,lon) for lat in range(south,north) for lon in range(west,east)]))
     write(lockpath,{'dataset':'Mapzen/Terrain Tiles skadi composite elevation, not pure SRTM','coverage':p['terrainBounds'],'grid':'3601 by 3601 signed 16-bit heights per degree tile','accessed_utc':datetime.now(timezone.utc).isoformat(),'documentation':'https://github.com/tilezen/joerd/tree/master/docs','assets':assets})
 
+def fetch_dem_padding(region):
+    p=profile(region);lockpath=ROOT/'regions'/region/'garmin/dem-padding.lock.json'
+    if lockpath.exists():verify(json.loads(lockpath.read_text())['assets']);return
+    existing={Path(item['path']).name for item in json.loads(region_path(region,'terrain-sources.lock.json').read_text())['assets']}
+    west,south,east,north=p['terrainBounds'];directory=ROOT/'data/regions'/region/'elevation'
+    cells=[(lat,lon) for lat in range(south-1,north+1) for lon in range(west-1,east+1)]
+    def fetch(cell):
+        lat,lon=cell;name=f'N{lat:02d}{"W" if lon<0 else "E"}{abs(lon):03d}.hgt.gz'
+        if name in existing:return None
+        item=download(f'https://elevation-tiles-prod.s3.amazonaws.com/skadi/N{lat:02d}/{name}',directory/name)
+        if len(gzip.decompress((ROOT/item['path']).read_bytes()))!=3601*3601*2:raise ValueError('Invalid padding HGT: '+name)
+        return item
+    with ThreadPoolExecutor(max_workers=4) as pool:assets=[item for item in pool.map(fetch,cells) if item]
+    lockpath.parent.mkdir(parents=True,exist_ok=True)
+    write(lockpath,{'dataset':'Mapzen/Terrain Tiles skadi composite elevation','purpose':'Garmin DEM interpolation padding beyond the complete regional source extent','coverage':[west-1,south-1,east+1,north+1],'assets':assets,'accessed_utc':datetime.now(timezone.utc).isoformat()})
+    print('Garmin DEM padding locked:',len(assets),'additional cells',flush=True)
+
 if __name__=='__main__':
-    parser=argparse.ArgumentParser();parser.add_argument('--region',choices=['england-wales'],required=True);parser.add_argument('--stage',choices=['osm','terrain','all'],default='all');args=parser.parse_args()
+    parser=argparse.ArgumentParser();parser.add_argument('--region',choices=['england-wales'],required=True);parser.add_argument('--stage',choices=['osm','terrain','padding','all'],default='all');args=parser.parse_args()
+    if args.stage=='padding':fetch_dem_padding(args.region)
     if args.stage in ('terrain','all'):fetch_terrain(args.region)
     if args.stage in ('osm','all'):fetch_osm(args.region)
