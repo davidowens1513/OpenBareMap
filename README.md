@@ -1,30 +1,63 @@
 # OpenBareMap 2.0
 
-OpenBareMap is an offline topographic map of the whole island of Ireland, including Northern Ireland and offshore islands. It provides map resources for Garmin handhelds, Android and iOS, plus a browser viewer for inspecting the map on a computer.
+OpenBareMap provides two independently usable offline topographic map editions: **Ireland** and **England & Wales**. Both use shared cartography and build tools, with separate source snapshots, selected databases, packages and release records. Both releases are **2.0.0**, with **20 m contours**. Updating or exporting one region does not replace the other, and does not modify a BareGPS host app.
 
-The map release is **2.0.0**. The shared browser, iOS and Android map uses **20 m contours**, national/county borders and no local boundary lines. Its storage revision is **2.0.0-storage-r3** and style revision is **2.0.0-path-contrast-r2**. The iOS and Android resources are approximately **1.01 GB each**; the main databases total approximately **987 MB**. The [release manifest](releases/2.0.0/manifest.json) identifies exact packages, inputs, checksums and validation records.
+## Choose a region
 
-## Regional editions
+| | Ireland | England & Wales |
+| --- | --- | --- |
+| Coverage | Whole island, Northern Ireland and offshore islands | Complete England and Wales extracts, including offshore islands; no pilot |
+| OSM snapshot | 24 October 2026 | 30 October 2026 |
+| Grid / regional labels | Irish Grid and townlands | British National Grid (EPSG:27700), Welsh name fallback; no Irish townlands |
+| Selected map | [Ireland selection](active-map.json) | [England/Wales selection](regions/england-wales/active-map.json) |
+| Release records | [Ireland manifest](releases/2.0.0/manifest.json) | [England/Wales manifest](releases/england-wales/2.0.0/manifest.json) |
+| Garmin map | [OpenBareMap-Ireland.img](garmin/dist/OpenBareMap-Ireland.img) | [OpenBareMap-England-Wales.img](regions/england-wales/garmin/dist/OpenBareMap-England-Wales.img) |
+| Garmin family ID | 4831 | 4832 |
+| iOS resource bundle | `ios/package/OpenBareMap.bundle` | `regions/england-wales/ios/OpenBareMap.bundle` |
+| Android resources | `android/package/OpenBareMap` | `regions/england-wales/android/OpenBareMap` |
 
-Ireland remains the default edition and keeps its existing release resources. A separate **England & Wales** edition uses the complete England and Wales extracts, the shared 20 m cartography and a generated British National Grid. Regional outputs, source locks and releases are separate; shared improvements can be applied to either edition independently.
+## Export each region separately
 
-See [regional builds and maintenance](docs/regional-editions.md) for the complete build, platform packages and side-by-side viewers. England/Wales release records live under `releases/england-wales/2.0.0/`; their validation and visual-review records state the actual acceptance scope.
+Install Git LFS and restore the files before exporting. Each command below writes only its selected region to a new destination; existing outputs are never overwritten. The region selection is explicit, so both packages can be extracted independently from the same checkout.
+
+```sh
+# Ireland
+python3 ios/build_bundle.py --region ireland --output /absolute/new/ireland-ios
+python3 android/build_package.py --region ireland --output /absolute/new/ireland-android
+
+# England & Wales
+python3 ios/build_bundle.py --region england-wales --output /absolute/new/england-wales-ios
+python3 android/build_package.py --region england-wales --output /absolute/new/england-wales-android
+```
+
+Each iOS export contains `OpenBareMap.bundle` and its Swift loader. Each Android export contains an `OpenBareMap` resource folder and its own `OpenBareMap-Android.zip`. Keep exports in separate region-named folders. These are map resources, not changes to an installed BareGPS app. Garmin maps already have distinct filenames and identifiers and can coexist on a device.
+
+Open independent local previews:
+
+```sh
+python3 scripts/serve.py --region ireland --port 8765
+python3 scripts/serve.py --region england-wales --port 8766
+```
+
+See [regional builds and maintenance](docs/regional-editions.md) for independent source updates and full rebuilds. Existing commands without `--region` continue to select Ireland.
 
 ## The map
 
 - **Terrain:** Gently smoothed 20-metre contours with fine overview strokes for 100 m index lines, hillshade, summit and saddle names, summit dots and fine cliff markings.
 - **Land cover:** smoothed boundaries for woodland, farmland, grass, heath, scrub, wetlands, textured bog, peat workings, rock, scree, sand and beaches.
 - **Transport:** roads and connecting links, tracks, paths, footways, bridleways, cycleways, steps, walking and cycling routes, railways and ferries.
-- **Places and facilities:** settlements, townlands, islands, water names, outdoor facilities and points of interest. Parking uses a white P on blue; outdoor facilities use dots and text.
+- **Places and facilities:** settlements, islands, water names, Ireland townlands, outdoor facilities and points of interest. Parking uses a white P on blue; outdoor facilities use dots and text.
 - **Offline resources:** local map databases, styles, symbols, fonts, legends and attribution notices. An internet connection is not required to display the installed map.
 
-The MapLibre presentation uses Open Sans text without halos, bridge/tunnel styling and an Irish Grid overlay. Paths and footways are saturated green; tracks are orange-brown, with distinct dash patterns and prominent strokes for contrast over higher-ground fills. Cliff markings use a repeating teeth pattern from zoom 11.
+The MapLibre presentation uses Open Sans text without halos, bridge/tunnel styling and a regional grid overlay: Irish Grid for Ireland or British National Grid for England/Wales. Paths and footways are saturated green; tracks are orange-brown, with distinct dash patterns and prominent strokes for contrast over higher-ground fills. Cliff markings use a repeating teeth pattern from zoom 11.
 
 The shared app legend has bold dark labels, enlarged line samples and outlined colour swatches with enhanced contrast and saturation. Its samples are enhanced for readability; the map itself retains its cartographic colours. The browser legend reads its samples from the active map style.
 
 Garmin uses native device fonts, symbols, terrain rendering and detail levels. The presentations share source data but have different rendering capabilities.
 
-## Garmin
+## Garmin — both regions
+
+Choose the region-specific `.img` in the table above. The details below describe the established Ireland package; England/Wales has its own [installation instructions](regions/england-wales/garmin/dist/INSTALL.txt) and [build inspection](regions/england-wales/garmin/build-report.json). Both are display-only.
 
 The Garmin edition is a **display-only map**, with no turn-by-turn routing. It includes 20-metre contours, native elevation data, land-cover textures, cliff markings, place names and outdoor features.
 
@@ -45,7 +78,9 @@ Personal recorded tracks can be displayed as a separate transparent map layer an
 
 Garmin uses its own zoom and font controls. Irish Grid lines and distinct bridge/tunnel styling are not included in this edition. Set elevation units to metres for metric contour labels.
 
-## Android
+## Android — map resources for each region
+
+Use the export commands above for either region. The reference app and links below are the existing Ireland integration; no England/Wales host app is created or installed by the map build.
 
 The Android edition uses **MapLibre Native** and includes a reference app and a reusable Kotlin resource loader. It supports Android 6.0 / API 23 and later.
 
@@ -66,7 +101,9 @@ python3 android/build_package.py --zip-only
 
 Open `android/` in Android Studio for app development. The reference app is debug-signed; production signing and distribution belong to the consuming application. Build, loader and resource-integrity checks pass. The host application requires device-specific rendering, import-performance and memory assessment. The [BareGPS Android app](https://github.com/davidowens1513/BareGPS-Ireland-Android) bundles the map directly and supplies its own map interface and zoom-dependent hill/start markers.
 
-## iOS
+## iOS — map resources for each region
+
+Use the export commands above to produce a separate bundle for the chosen region. The links below describe the existing Ireland integration.
 
 The iOS edition is a **resource bundle and Swift loader for MapLibre Native**, intended for integration into an iOS application.
 
@@ -99,7 +136,7 @@ Git LFS is required to obtain the map databases, source archives and packaged bi
 
 ## Data, attribution and validation
 
-The OpenStreetMap extract covers Ireland and Northern Ireland and is dated **24 October 2026**. Terrain uses approximately 30-metre composite elevation data from Terrain Tiles. The shared map’s 20-metre contour interval describes line spacing, not a statement of terrain accuracy.
+Ireland uses the **24 October 2026** Ireland/Northern Ireland extract. England/Wales uses both complete **30 October 2026** extracts, with a shared replication timestamp; its separate [source lock](regions/england-wales/sources.lock.json) and [terrain lock](regions/england-wales/terrain-sources.lock.json) pin the inputs. Terrain uses approximately 30-metre composite elevation data from Terrain Tiles. The shared map’s 20-metre contour interval describes line spacing, not a statement of terrain accuracy.
 
 | Source or record | Details |
 | --- | --- |
