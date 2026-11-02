@@ -34,9 +34,10 @@ def contours(source,destination):
     if not out.count:raise ValueError('No contours')
     return out.count
 
-def landcover(source,destination):
+def landcover(source,destination,bounds=None):
     import osmium
-    from shapely.geometry import shape
+    from shapely.geometry import shape,box
+    extent=box(*bounds) if bounds else None
     out=Collection(destination);factory=osmium.geom.GeoJSONFactory()
     classes={'wood':'wood','forest':'wood','farm':'farmland','village_green':'grass','recreation_ground':'grass','heath':'heath','scrub':'scrub','grassland':'grass','meadow':'grass','grass':'grass','farmland':'farmland','wetland':'wetland','beach':'beach','sand':'sand','shingle':'shingle'}
     counts={'smoothed':0,'retained':0,'empty_source_areas':[]}
@@ -59,12 +60,14 @@ def landcover(source,destination):
                 counts['empty_source_areas'].append({'area_id':a.id,'outer_ring_sizes':rings,'reason':str(error)})
                 print(f'Empty, nondrawable source area recorded: {a.id}; outer rings {rings}',flush=True)
                 return
+            old=shape(original)
+            if extent is not None and not extent.intersects(old):return
             candidate=smooth_polygon_geometry(original,6)
-            old=shape(original);new=shape(candidate)
+            new=shape(candidate)
             if old.is_valid and new.is_valid and old.area and abs(new.area-old.area)/old.area<=.02:
                 geometry=candidate;counts['smoothed']+=1
             else:geometry=original;counts['retained']+=1
-            props={k.replace(':','_'):v for k,v in tags.items() if k in ('wetland','natural','landuse','name','name:en','name:cy','name:gd','official_name','short_name')};props['class']=cl
+            props={k.replace(':','_'):v for k,v in tags.items() if k in ('wetland','natural','landuse','name','name:en','name:cy','name:gd','name:es','official_name','short_name')};props['class']=cl
             out.add(geometry,props)
     Handler().apply_file(str(source),locations=True,idx='flex_mem');out.close()
     if not out.count:raise ValueError('No landcover')
@@ -83,7 +86,7 @@ def grid(region,destination):
                 coords=[list(transform.transform(fixed,v) if axis=='E' else transform.transform(v,fixed)) for v in range(crossmin,crossmax+1,1000)]
                 out.add({'type':'LineString','coordinates':coords},{'label':f'{fixed//1000} km {axis}','metres':fixed,'axis':axis})
         out.close();counts[layer]=out.count
-    transform.transform(400000,300000)
+    transform.transform((west+east)/2,(south+north)/2)
     operation=transform.get_last_used_operation()
     write(destination/'grid-provenance.json',{'crs':p['gridCRS'],'pyprojVersion':pyproj_version,'operation':operation.description,'statedOperationAccuracyMetres':operation.accuracy,'note':'Cartographic grid generated from projected metre coordinates; not a survey transformation guarantee.'})
     return counts
@@ -93,9 +96,9 @@ def build(region,topography):
     from regions import region_path
     source=json.loads(region_path(region,'sources.lock.json').read_text())['osm'];osm=ROOT/source['path']
     if digest(osm)!=source['sha256']:raise ValueError('OSM source changed')
-    counts={'contours':contours(topography/'contours.geojson',dest/'contours.geojson'),'landcover':landcover(osm,dest/'landcover.geojson'),'grid':grid(region,dest)}
+    counts={'contours':contours(topography/'contours.geojson',dest/'contours.geojson'),'landcover':landcover(osm,dest/'landcover.geojson',p['bounds'] if p.get('clipBasemap') else None),'grid':grid(region,dest)}
     write(dest/'geometry-report.json',{'region':region,'counts':counts,'osm':source,'contoursSourceSHA256':digest(topography/'contours.geojson'),'outputs':{f.name:digest(f) for f in dest.glob('*.geojson')},'builderSHA256':digest(Path(__file__)),'smootherSHA256':digest(Path(__file__).with_name('smooth_geometry.py'))})
     print(json.dumps(counts),flush=True)
 
 if __name__=='__main__':
-    p=argparse.ArgumentParser();p.add_argument('--region',choices=['england-wales','scotland'],required=True);a=p.parse_args();build(a.region,ROOT/'build'/(a.region+'-topography'))
+    p=argparse.ArgumentParser();p.add_argument('--region',choices=['england-wales','scotland','sierra-nevada'],required=True);a=p.parse_args();build(a.region,ROOT/'build'/(a.region+'-topography'))

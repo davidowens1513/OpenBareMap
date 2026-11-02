@@ -61,7 +61,7 @@ def finish(region, reuse_geometry=False):
     for name,expected in report['outputs'].items():
         if digest(geometry/name)!=expected:raise ValueError('Geometry changed: '+name)
     config={'layers':{
-        'landcover':{'minzoom':4,'maxzoom':14,'source':str(geometry/'landcover.geojson'),'source_columns':['class','wetland','natural','landuse','name','name_en','name_cy','name_gd','official_name','short_name'],'simplify_below':14,'simplify_level':.000008,'simplify_ratio':2},
+        'landcover':{'minzoom':4,'maxzoom':14,'source':str(geometry/'landcover.geojson'),'source_columns':['class','wetland','natural','landuse','name','name_en','name_cy','name_gd','name_es','official_name','short_name'],'simplify_below':14,'simplify_level':.000008,'simplify_ratio':2},
         'contour':{'minzoom':8,'maxzoom':14,'source':str(geometry/'contours.geojson'),'source_columns':['elevation'],'simplify_below':13,'simplify_level':.00001},
         'grid_1km':{'minzoom':12,'maxzoom':14,'source':str(geometry/'grid_1km.geojson'),'source_columns':['label','metres','axis']},
         'grid_10km':{'minzoom':10,'maxzoom':14,'source':str(geometry/'grid_10km.geojson'),'source_columns':['label','metres','axis']}},
@@ -112,7 +112,7 @@ def finish(region, reuse_geometry=False):
     shutil.copyfile(geometry/'grid-provenance.json',region_path(region,'grid-provenance.json'))
 
 def main():
-    parser=argparse.ArgumentParser();parser.add_argument('--region',choices=['england-wales','scotland'],required=True);parser.add_argument('--resume-geometry',action='store_true');parser.add_argument('--stage',choices=['basemap','geometry','finish','packages','all'],default='all');args=parser.parse_args();region=args.region
+    parser=argparse.ArgumentParser();parser.add_argument('--region',choices=['england-wales','scotland','sierra-nevada'],required=True);parser.add_argument('--resume-geometry',action='store_true');parser.add_argument('--stage',choices=['basemap','geometry','finish','packages','all'],default='all');args=parser.parse_args();region=args.region
     if args.stage in ('basemap','all'):
         dest=ROOT/'build'/(region+'-basemap')
         if not dest.exists():run(sys.executable,'scripts/openbaremap.py','build',region+'-basemap','--region',region)

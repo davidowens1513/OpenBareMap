@@ -1,0 +1,52 @@
+{
+  "contourIntervalMetres": 20,
+  "coverage": "Official Sierra Nevada National Park boundary with a 25 km buffer measured in ETRS89 / UTM 30N; complete source ways and polygons retained at the edge. Rectangular tile envelope includes additional context.",
+  "datasets": {
+    "basemap": {
+      "bytes": 90144768,
+      "path": "releases/sierra-nevada/2.0.0/maps/basemap.mbtiles",
+      "sha256": "d6403659122142f0153a50a2a472408620bc7bdfe4aec01f9f8f8af5e05c586d",
+      "validation": {
+        "empty_tile_count": 8,
+        "logical_tiles_sha256": "5d390f9e555bb7eefaeca0effa651fcb97ed7975aa260c4090889fbe9a5b72d7",
+        "tile_count": 3689
+      }
+    },
+    "grid": {
+      "bytes": 1351680,
+      "path": "releases/sierra-nevada/2.0.0/maps/grid.mbtiles",
+      "sha256": "cfc3682766d7e0b558f157e39a4815241f98b9d8e164c9a15ef352c8a1e32c4b",
+      "validation": {
+        "empty_tile_count": 0,
+        "logical_tiles_sha256": "4bc16abcd9150b5b4f7e7674146643fd85c3fda290960a079e0d3a4f896344ef",
+        "tile_count": 3784
+      }
+    },
+    "hillshade": {
+      "bytes": 11206656,
+      "path": "releases/sierra-nevada/2.0.0/maps/hillshade.mbtiles",
+      "sha256": "b9d22f34db147318cd69faea88fb2b2bcfed0d5952cfe6ad0942ede2447fda29",
+      "validation": {
+        "empty_tile_count": 0,
+        "logical_tiles_sha256": "b3195ffd97783f3268c5aa6bb051746a850db536fb5cee7fbae39aa6973ab6e8",
+        "tile_count": 256
+      }
+    },
+    "topography": {
+      "bytes": 54927360,
+      "path": "releases/sierra-nevada/2.0.0/maps/topography.mbtiles",
+      "sha256": "cf54bb56b66568fbbf3f0878eb180c6fb03efc64772e1f4701f5644d77e8ee72",
+      "validation": {
+        "empty_tile_count": 169,
+        "logical_tiles_sha256": "7a6c109b3a8e79f491efed5976b22a3cd49bc4c64e2620c0849f3aa7c48d765b",
+        "tile_count": 3794
+      }
+    }
+  },
+  "format": "openbaremap-development-viewer-v1",
+  "localBorders": false,
+  "mapVersion": "2.0.0",
+  "region": "sierra-nevada",
+  "storageRevision": "2.0.0-sierra-nevada-r3",
+  "styleRevision": "2.0.0-sierra-nevada-r1"
+}

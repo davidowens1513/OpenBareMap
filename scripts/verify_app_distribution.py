@@ -32,5 +32,5 @@ def verify(region):
     write(ROOT/'distribution/app-bundles-v1'/('publication-'+region+'.json'),result)
     return result
 if __name__=='__main__':
-    parser=argparse.ArgumentParser();parser.add_argument('--regions',nargs='+',choices=['ireland','england-wales','scotland'],default=['ireland','england-wales','scotland']);args=parser.parse_args()
+    parser=argparse.ArgumentParser();parser.add_argument('--regions',nargs='+',choices=['ireland','england-wales','scotland','sierra-nevada'],default=['ireland','england-wales','scotland']);args=parser.parse_args()
     with ThreadPoolExecutor(max_workers=2) as pool:list(pool.map(verify,args.regions))

@@ -1,0 +1,103 @@
+{
+  "id": "sierra-nevada",
+  "name": "OpenBareMap Sierra Nevada",
+  "label": "Sierra Nevada · Spain",
+  "mapVersion": "2.0.0",
+  "minzoom": 4,
+  "maxzoom": 14,
+  "coverage": "Official Sierra Nevada National Park boundary with a 25 km buffer measured in ETRS89 / UTM 30N; complete source ways and polygons retained at the edge. Rectangular tile envelope includes additional context.",
+  "bounds": [
+    -3.8286890657119104,
+    36.71525811988457,
+    -2.382596049479036,
+    37.43653023328945
+  ],
+  "terrainBounds": [
+    -4,
+    36,
+    -2,
+    38
+  ],
+  "coastContextBounds": [
+    -3.8286890657119104,
+    36.71525811988457,
+    -2.382596049479036,
+    37.43653023328945
+  ],
+  "projectedCRS": "EPSG:25830",
+  "gridCRS": "EPSG:25830",
+  "gridName": "ETRS89 / UTM 30N",
+  "gridSource": "utm-grid",
+  "townlands": false,
+  "contourIntervalMetres": 20,
+  "sourceDate": "2026-10-31",
+  "sourceSlugs": [
+    "andalucia"
+  ],
+  "sourceBaseURL": "https://download.geofabrik.de/europe/spain/",
+  "nativeLanguage": "es",
+  "minorWaterwayMinzoom": 10,
+  "clipBasemap": true,
+  "boundaryPreview": false,
+  "gridExtent": [
+    420000,
+    560000,
+    4060000,
+    4150000
+  ],
+  "destinations": {
+    "island": [
+      -3.15,
+      37.06,
+      9
+    ],
+    "mulhacen": [
+      -3.3114,
+      37.0547,
+      13
+    ],
+    "veleta": [
+      -3.3656,
+      37.0504,
+      13
+    ],
+    "capileira": [
+      -3.358,
+      36.961,
+      13
+    ],
+    "trevelez": [
+      -3.265,
+      37.002,
+      13
+    ],
+    "granada": [
+      -3.5986,
+      37.1765,
+      12
+    ],
+    "puerto-de-la-ragua": [
+      -3.031,
+      37.114,
+      13
+    ]
+  },
+  "coverageBoundary": true,
+  "garminFamilyId": 4835,
+  "garminTileStartId": 48350001,
+  "garminFilename": "OpenBareMap-Sierra-Nevada.img",
+  "garminPackageRevision": "2.0.0-garmin-r1",
+  "styleRevision": "2.0.0-sierra-nevada-r1",
+  "garminContextBounds": [
+    -4.4,
+    36.2,
+    -1.8,
+    38
+  ],
+  "inspectionNames": [
+    "Granada",
+    "Capileira",
+    "Trevélez",
+    "Mulhacén"
+  ]
+}

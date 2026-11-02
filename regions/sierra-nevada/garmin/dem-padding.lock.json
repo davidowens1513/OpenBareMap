@@ -1,0 +1,85 @@
+{
+  "accessed_utc": "2026-11-02T17:05:25.837644+00:00",
+  "assets": [
+    {
+      "bytes": 5409694,
+      "path": "data/regions/sierra-nevada/elevation/N35W005.hgt.gz",
+      "sha256": "7429d87823f89a1c41d60d780695f0697c5bbd70025209a88046ecbaac237ad0",
+      "url": "https://elevation-tiles-prod.s3.amazonaws.com/skadi/N35/N35W005.hgt.gz"
+    },
+    {
+      "bytes": 5536171,
+      "path": "data/regions/sierra-nevada/elevation/N35W004.hgt.gz",
+      "sha256": "69a0fb30974fb255ca2e7d37c9ca470339b82faa04d513c0c9d95e447a0bab56",
+      "url": "https://elevation-tiles-prod.s3.amazonaws.com/skadi/N35/N35W004.hgt.gz"
+    },
+    {
+      "bytes": 3615418,
+      "path": "data/regions/sierra-nevada/elevation/N35W003.hgt.gz",
+      "sha256": "9b8f517260e578323d1be0aa47592cfe5ac81e0ed9c44a7a605fb78bf94bfa1e",
+      "url": "https://elevation-tiles-prod.s3.amazonaws.com/skadi/N35/N35W003.hgt.gz"
+    },
+    {
+      "bytes": 5921282,
+      "path": "data/regions/sierra-nevada/elevation/N35W002.hgt.gz",
+      "sha256": "f32111dbf5368e5c47b1b1615e9066875ad1004368d72427d9bb69d6934380d0",
+      "url": "https://elevation-tiles-prod.s3.amazonaws.com/skadi/N35/N35W002.hgt.gz"
+    },
+    {
+      "bytes": 6565566,
+      "path": "data/regions/sierra-nevada/elevation/N36W005.hgt.gz",
+      "sha256": "6df2beabbe14dc7790bb05f676bf6d4d5063f676c1fd2f138c91fb95276acb0b",
+      "url": "https://elevation-tiles-prod.s3.amazonaws.com/skadi/N36/N36W005.hgt.gz"
+    },
+    {
+      "bytes": 3258827,
+      "path": "data/regions/sierra-nevada/elevation/N36W002.hgt.gz",
+      "sha256": "bbb5fe39b48f093e33cd97f69c71314c41e48b3e2b467366a28f824935970b88",
+      "url": "https://elevation-tiles-prod.s3.amazonaws.com/skadi/N36/N36W002.hgt.gz"
+    },
+    {
+      "bytes": 10859716,
+      "path": "data/regions/sierra-nevada/elevation/N37W005.hgt.gz",
+      "sha256": "b50fa2d3d1c524ad8ad06ccdae1f5d764fa7e25f7348afb07fb865550c9fcadb",
+      "url": "https://elevation-tiles-prod.s3.amazonaws.com/skadi/N37/N37W005.hgt.gz"
+    },
+    {
+      "bytes": 9511064,
+      "path": "data/regions/sierra-nevada/elevation/N37W002.hgt.gz",
+      "sha256": "d32daa5e0faa691b58d683d78d50c4d9cfb1b121930cfdad758ee0ffe1e03700",
+      "url": "https://elevation-tiles-prod.s3.amazonaws.com/skadi/N37/N37W002.hgt.gz"
+    },
+    {
+      "bytes": 10983296,
+      "path": "data/regions/sierra-nevada/elevation/N38W005.hgt.gz",
+      "sha256": "8881d2e79c882aeaf4c031b231e245a89ae6691b2de9842815dcdec3e7210ed8",
+      "url": "https://elevation-tiles-prod.s3.amazonaws.com/skadi/N38/N38W005.hgt.gz"
+    },
+    {
+      "bytes": 9946287,
+      "path": "data/regions/sierra-nevada/elevation/N38W004.hgt.gz",
+      "sha256": "460be20ffd3ae454c8addfc04d753efc3c3c8730818b3da2c74ee1665935ff90",
+      "url": "https://elevation-tiles-prod.s3.amazonaws.com/skadi/N38/N38W004.hgt.gz"
+    },
+    {
+      "bytes": 12135859,
+      "path": "data/regions/sierra-nevada/elevation/N38W003.hgt.gz",
+      "sha256": "68846ce997d79e82f79ce3c778749649c29b6e889b878b6098dbc6eb4885af87",
+      "url": "https://elevation-tiles-prod.s3.amazonaws.com/skadi/N38/N38W003.hgt.gz"
+    },
+    {
+      "bytes": 10210369,
+      "path": "data/regions/sierra-nevada/elevation/N38W002.hgt.gz",
+      "sha256": "81def47c09293afd455665ecb990de5aa1071ff601a9e204e2c33a18973f3ed4",
+      "url": "https://elevation-tiles-prod.s3.amazonaws.com/skadi/N38/N38W002.hgt.gz"
+    }
+  ],
+  "coverage": [
+    -5,
+    35,
+    -1,
+    39
+  ],
+  "dataset": "Mapzen/Terrain Tiles skadi composite elevation",
+  "purpose": "Garmin DEM interpolation padding beyond the complete regional source extent"
+}

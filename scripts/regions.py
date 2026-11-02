@@ -4,7 +4,7 @@ import json
 from pathlib import Path
 from openbaremap import ROOT
 
-REGIONS = ('ireland', 'england-wales', 'scotland')
+REGIONS = ('ireland', 'england-wales', 'scotland', 'sierra-nevada')
 
 def profile(region='ireland'):
     if region not in REGIONS:
@@ -57,10 +57,18 @@ def region_style(region='ireland'):
         major['filter']=['in',['get','class'],['literal',['river','canal']]]
         minor.update(id='waterway-minor',minzoom=p['minorWaterwayMinzoom'],filter=['!',major['filter']])
         style['layers'].insert(index+1,minor)
+    if p.get('coverageBoundary') or p.get('boundaryPreview'):
+        for name in ('park-boundary','coverage','coverage-mask'):
+            style['sources'][name]={'type':'geojson','data':json.loads(region_path(region,name+'.geojson').read_text()),'attribution':'Fuente: Organismo Autónomo Parques Nacionales · CC BY 4.0'}
+        # Hide rectangular tile padding so the preview follows the actual buffer.
+        style['layers'] += [
+            {'id':'coverage-mask','type':'fill','source':'coverage-mask','paint':{'fill-color':'#f5f3ec','fill-antialias':False}},
+            {'id':'park-boundary','type':'line','source':'park-boundary','paint':{'line-color':'#8c278b','line-width':2.5,'line-opacity':0.95}},
+            {'id':'coverage-boundary','type':'line','source':'coverage','paint':{'line-color':'#444444','line-width':2,'line-dasharray':[4,3]}}]
     return style
 
 def provenance_files(region='ireland'):
-    return [region_path(region, name) for name in ('active-map.json','sources.lock.json','terrain-sources.lock.json')] + [ROOT/name for name in ('coast-sources.lock.json','legacy-assets.lock.json','viewer-assets.lock.json','assets/sprites.lock.json','config/transport-style.json')] + ([region_path(region,'grid-provenance.json'),region_path(region,'python-runtime.json')] if region!='ireland' else [])
+    return [region_path(region, name) for name in ('active-map.json','sources.lock.json','terrain-sources.lock.json')] + [ROOT/name for name in ('coast-sources.lock.json','legacy-assets.lock.json','viewer-assets.lock.json','assets/sprites.lock.json','config/transport-style.json')] + ([region_path(region,name) for name in ('boundary-source.json','park-boundary.geojson','coverage.geojson','coverage-mask.geojson')] if profile(region).get('coverageBoundary') else []) + ([region_path(region,'grid-provenance.json'),region_path(region,'python-runtime.json')] if region!='ireland' else [])
 
 
 def process_script(region='ireland'):

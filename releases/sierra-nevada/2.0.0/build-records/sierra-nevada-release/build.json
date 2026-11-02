@@ -1,0 +1,107 @@
+{
+  "builderSHA256": "555405412247ced9f7d381dae23a70b345e143ee17144d70cc29c5375fc37e1f",
+  "geometryReport": {
+    "builderSHA256": "db2fd8f777779c8fc75aefe814fa92c5fcf76a692c15b42e08bba747d4c80f02",
+    "contoursSourceSHA256": "068b93da2fe75d85f48f222f9c31ced5cdb666bf7b748a19bd90f30b3a060e23",
+    "counts": {
+      "contours": 13851,
+      "grid": {
+        "grid_10km": 25,
+        "grid_1km": 232
+      },
+      "landcover": {
+        "empty_source_areas": [],
+        "features": 30049,
+        "retained": 3908,
+        "smoothed": 26141
+      }
+    },
+    "osm": {
+      "bytes": 195921650,
+      "operation": "Complete upstream extract; no merge or spatial filtering",
+      "path": "data/regions/sierra-nevada/andalucia-261031.osm.pbf",
+      "replicationTimestamp": "2026-10-31T21:23:06Z",
+      "sha256": "eccbdd9dbc99f69269537512b4f9c36a8ca672acf5279a4d5e7961dd981b3af6",
+      "snapshot_date": "2026-10-31",
+      "url": "https://download.geofabrik.de/europe/spain/andalucia-261031.osm.pbf"
+    },
+    "outputs": {
+      "contours.geojson": "6ad051f20d401c4a05f91ceb47134b6b06a37a12e08ca25a1d714bc9936f54d8",
+      "grid_10km.geojson": "549f9d1f2a302ee6eb4526af8db494e00200e9123d4a72c9e107e13f0c4da1a0",
+      "grid_1km.geojson": "32b120c168161dad81f0a0cc08be78c44a1e61e2bef54255bb49f436aa806c9c",
+      "landcover.geojson": "8527bb0e01f355f6f642c6b7700585cadc17d23942caa3197de0c23f4c0acb55"
+    },
+    "region": "sierra-nevada",
+    "smootherSHA256": "7581d024dc1c1bec931642c7201db149bf64a64c814c451fa8bf37a0881ea6c9"
+  },
+  "outputs": {
+    "basemap": {
+      "bytes": 90144768,
+      "path": "releases/sierra-nevada/2.0.0-preview.1/maps/basemap.mbtiles",
+      "sha256": "4b8b367f163e88a105ef844d41b0115d2a271389ca8b3ab688bc825b47e7740d",
+      "validation": {
+        "empty_tile_count": 8,
+        "logical_tiles_sha256": "5d390f9e555bb7eefaeca0effa651fcb97ed7975aa260c4090889fbe9a5b72d7",
+        "tile_count": 3689
+      }
+    },
+    "grid": {
+      "bytes": 1351680,
+      "path": "releases/sierra-nevada/2.0.0-preview.1/maps/grid.mbtiles",
+      "sha256": "44fea7f5967e720582962e0a8f5c34ee5f78e8160d2c9161f61639feafd61b9b",
+      "validation": {
+        "empty_tile_count": 0,
+        "logical_tiles_sha256": "4bc16abcd9150b5b4f7e7674146643fd85c3fda290960a079e0d3a4f896344ef",
+        "tile_count": 3784
+      }
+    },
+    "hillshade": {
+      "bytes": 11206656,
+      "path": "releases/sierra-nevada/2.0.0-preview.1/maps/hillshade.mbtiles",
+      "sha256": "0226134a0b333eac6ea96299812f0871c072ac1842d5ad93644321b6d16e86e2",
+      "validation": {
+        "empty_tile_count": 0,
+        "logical_tiles_sha256": "b3195ffd97783f3268c5aa6bb051746a850db536fb5cee7fbae39aa6973ab6e8",
+        "tile_count": 256
+      }
+    },
+    "topography": {
+      "bytes": 54927360,
+      "path": "releases/sierra-nevada/2.0.0-preview.1/maps/topography.mbtiles",
+      "sha256": "e7368e752b463720be5ebc310158a621e1b99e8e43ad517248d0af334b8257ae",
+      "validation": {
+        "empty_tile_count": 169,
+        "logical_tiles_sha256": "7a6c109b3a8e79f491efed5976b22a3cd49bc4c64e2620c0849f3aa7c48d765b",
+        "tile_count": 3794
+      }
+    }
+  },
+  "region": "sierra-nevada",
+  "replacements": {
+    "basemap": {
+      "changed_tiles": 2477,
+      "path": "build/sierra-nevada-release/basemap-smoothed.mbtiles",
+      "replacement_feature_instances": 233783,
+      "sha256": "3a3c8f9ea7f8f7e9d584949193e4b1b2a8fd9972294ac7158271b348e02b81eb",
+      "unchanged_other_layers_sha256": "cce0534cb7e0f91740966b6bf176347a39944c28647f3d4f74c44c6d92777c51",
+      "validation": {
+        "empty_tile_count": 8,
+        "logical_tiles_sha256": "de84587fc010db342b06a6e7ea525d59710fe6d8d05f1eb6486edb1bedc38f5c",
+        "tile_count": 3689
+      }
+    },
+    "topography": {
+      "changed_tiles": 3622,
+      "path": "build/sierra-nevada-release/topography-smoothed.mbtiles",
+      "replacement_feature_instances": 167775,
+      "sha256": "4b9a67237335e64bc7176f1d40482935e3ce0077c37c3a8114d1e648a4966baa",
+      "unchanged_other_layers_sha256": "4e079060bbe2c9571b4fc40d5b265d7e40903d7684f1dc37c0be76c4f3836280",
+      "validation": {
+        "empty_tile_count": 169,
+        "logical_tiles_sha256": "7b28c1af998733ee174f1ad6bbca960d7954629ff4e2d313617dd46ac8ba908a",
+        "tile_count": 3794
+      }
+    }
+  },
+  "status": "built and structurally validated; visual/device review pending"
+}

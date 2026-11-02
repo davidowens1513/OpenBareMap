@@ -5,7 +5,7 @@ import argparse,base64,hashlib,html,io,json,math
 from regions import profile,region_style
 from PIL import Image,ImageDraw,ImageFont,ImageEnhance
 ROOT=Path(__file__).resolve().parents[1]
-parser=argparse.ArgumentParser();parser.add_argument('--region',choices=['ireland','england-wales','scotland'],default='ireland');args=parser.parse_args();edition=profile(args.region)
+parser=argparse.ArgumentParser();parser.add_argument('--region',choices=['ireland','england-wales','scotland','sierra-nevada'],default='ireland');args=parser.parse_args();edition=profile(args.region)
 OUT=ROOT/'app-legend' if args.region=='ireland' else ROOT/'regions'/args.region/'legend';OUT.mkdir(exist_ok=True)
 STYLE=region_style(args.region);LAYERS={l['id']:l for l in STYLE['layers']}
 ATLAS=Image.open(ROOT/'viewer/sprites/outdoors.png').convert('RGBA');INDEX=json.loads((ROOT/'viewer/sprites/outdoors.json').read_text())
@@ -91,7 +91,9 @@ for x in range(shade.width):
  c=round(238-70*(math.sin(x/shade.width*math.pi)**2));ImageDraw.Draw(shade).line((x,0,x,shade.height),fill=(c,c,c,255))
 image(shade,48,977,96,24);text(162,980,'Hillshade')
 heading(528,786,'Boundaries & grid')
-for i,(label,layer) in enumerate([('National boundary','administrative-boundaries'),('County boundary','county-boundaries'),(edition['gridName']+' · 10 km',edition['gridSource']+'-10km'),(edition['gridName']+' · 1 km',edition['gridSource']+'-1km')]):linerow(528,837+i*36,label,layer)
+for i,(label,layer) in enumerate([('National boundary','administrative-boundaries'),('Province boundary' if edition.get('nativeLanguage')=='es' else 'County boundary','county-boundaries'),(edition['gridName']+' · 10 km',edition['gridSource']+'-10km'),(edition['gridName']+' · 1 km',edition['gridSource']+'-1km')]):linerow(528,837+i*36,label,layer)
+if edition.get('coverageBoundary'):
+ linerow(528,981,'National park','park-boundary');linerow(528,1017,'25 km coverage limit','coverage-boundary')
 heading(48,1065,'Points')
 # Use actual summit paint and actual parking atlas artwork.
 p=LAYERS['summit-dots-natural-labels']['paint'];cx,cy=96,1128;rad=max(3,p['circle-radius']*2.2)

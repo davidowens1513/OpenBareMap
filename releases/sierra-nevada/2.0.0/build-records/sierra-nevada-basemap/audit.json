@@ -1,0 +1,49 @@
+{
+  "feature_instances_by_layer": {
+    "boundary": 29530,
+    "building": 688240,
+    "cycling_route": 950,
+    "ferry": 176,
+    "hiking_poi": 5990,
+    "hiking_route": 4848,
+    "island_name": 82,
+    "landcover": 299846,
+    "mountain": 50394,
+    "natural_line": 6147,
+    "place": 234011,
+    "poi": 82443,
+    "railway": 15853,
+    "station": 243,
+    "transportation": 3019035,
+    "transportation_name": 369439,
+    "water": 76914,
+    "water_name": 719,
+    "waterway": 282523
+  },
+  "metadata": {
+    "bounds": "-3.828689,36.715258,-2.382596,37.436530",
+    "center": "-3.105643,37.075894,9",
+    "description": "Official Sierra Nevada National Park boundary with a 25 km buffer measured in ETRS89 / UTM 30N; complete source ways and polygons retained at the edge. Rectangular tile envelope includes additional context.",
+    "format": "pbf",
+    "json": "{\"vector_layers\":[{\"id\":\"boundary\",\"fields\":{\"admin_level\":\"String\",\"class\":\"String\",\"name\":\"String\"},\"minzoom\":4,\"maxzoom\":14},{\"id\":\"building\",\"fields\":{\"class\":\"String\"},\"minzoom\":13,\"maxzoom\":14},{\"id\":\"cycling_route\",\"fields\":{\"class\":\"String\",\"colour\":\"String\",\"foot\":\"String\",\"name\":\"String\",\"name_en\":\"String\",\"name_es\":\"String\",\"network\":\"String\",\"operator\":\"String\",\"osmc:symbol\":\"String\",\"ref\":\"String\"},\"minzoom\":7,\"maxzoom\":14},{\"id\":\"ferry\",\"fields\":{\"access\":\"String\",\"class\":\"String\",\"duration\":\"String\",\"foot\":\"String\",\"name\":\"String\",\"name_es\":\"String\",\"official_name\":\"String\",\"operator\":\"String\"},\"minzoom\":6,\"maxzoom\":14},{\"id\":\"hiking_poi\",\"fields\":{\"access\":\"String\",\"backcountry\":\"String\",\"class\":\"String\",\"drinking_water\":\"String\",\"ele_label\":\"String\",\"ele_m\":\"Number\",\"ele_raw\":\"String\",\"fee\":\"String\",\"foot\":\"String\",\"name\":\"String\",\"name_en\":\"String\",\"name_es\":\"String\",\"official_name\":\"String\",\"opening_hours\":\"String\",\"operator\":\"String\",\"ref\":\"String\",\"shelter_type\":\"String\",\"wheelchair\":\"String\"},\"minzoom\":10,\"maxzoom\":14},{\"id\":\"hiking_route\",\"fields\":{\"class\":\"String\",\"colour\":\"String\",\"foot\":\"String\",\"name\":\"String\",\"name_en\":\"String\",\"name_es\":\"String\",\"network\":\"String\",\"operator\":\"String\",\"osmc:symbol\":\"String\",\"ref\":\"String\",\"short_name\":\"String\",\"symbol\":\"String\"},\"minzoom\":7,\"maxzoom\":14},{\"id\":\"island_name\",\"fields\":{\"class\":\"String\",\"name\":\"String\",\"name_en\":\"String\",\"name_es\":\"String\"},\"minzoom\":7,\"maxzoom\":14},{\"id\":\"landcover\",\"fields\":{\"class\":\"String\",\"landuse\":\"String\",\"name\":\"String\",\"name_en\":\"String\",\"name_es\":\"String\",\"natural\":\"String\",\"official_name\":\"String\",\"short_name\":\"String\",\"wetland\":\"String\"},\"minzoom\":4,\"maxzoom\":14},{\"id\":\"mountain\",\"fields\":{\"class\":\"String\",\"ele_label\":\"String\",\"ele_m\":\"Number\",\"ele_raw\":\"String\",\"name\":\"String\",\"name_en\":\"String\",\"name_es\":\"String\"},\"minzoom\":9,\"maxzoom\":14},{\"id\":\"natural_line\",\"fields\":{\"class\":\"String\",\"name\":\"String\",\"name_en\":\"String\",\"name_es\":\"String\"},\"minzoom\":11,\"maxzoom\":14},{\"id\":\"place\",\"fields\":{\"class\":\"String\",\"name\":\"String\",\"name_en\":\"String\",\"name_es\":\"String\"},\"minzoom\":4,\"maxzoom\":14},{\"id\":\"poi\",\"fields\":{\"access\":\"String\",\"category\":\"String\",\"class\":\"String\",\"foot\":\"String\",\"name\":\"String\",\"name_en\":\"String\",\"name_es\":\"String\",\"official_name\":\"String\",\"short_name\":\"String\"},\"minzoom\":10,\"maxzoom\":14},{\"id\":\"railway\",\"fields\":{\"access\":\"String\",\"bridge\":\"String\",\"class\":\"String\",\"foot\":\"String\",\"layer\":\"String\",\"name\":\"String\",\"name_es\":\"String\",\"official_name\":\"String\",\"operator\":\"String\",\"service\":\"String\",\"short_name\":\"String\",\"tunnel\":\"String\",\"usage\":\"String\"},\"minzoom\":6,\"maxzoom\":14},{\"id\":\"station\",\"fields\":{\"class\":\"String\",\"name\":\"String\",\"name_es\":\"String\",\"network\":\"String\",\"operator\":\"String\",\"short_name\":\"String\"},\"minzoom\":9,\"maxzoom\":14},{\"id\":\"transportation\",\"fields\":{\"access\":\"String\",\"bicycle\":\"String\",\"bridge\":\"String\",\"class\":\"String\",\"designation\":\"String\",\"foot\":\"String\",\"horse\":\"String\",\"layer\":\"String\",\"name\":\"String\",\"ref\":\"String\",\"sac_scale\":\"String\",\"surface\":\"String\",\"tracktype\":\"String\",\"trail_visibility\":\"String\",\"tunnel\":\"String\"},\"minzoom\":4,\"maxzoom\":14},{\"id\":\"transportation_name\",\"fields\":{\"class\":\"String\",\"name\":\"String\",\"name_en\":\"String\",\"name_es\":\"String\",\"official_name\":\"String\",\"ref\":\"String\",\"short_name\":\"String\"},\"minzoom\":10,\"maxzoom\":14},{\"id\":\"water\",\"fields\":{\"class\":\"String\",\"name\":\"String\"},\"minzoom\":4,\"maxzoom\":14},{\"id\":\"water_name\",\"fields\":{\"name\":\"String\",\"name_en\":\"String\",\"name_es\":\"String\",\"official_name\":\"String\",\"short_name\":\"String\"},\"minzoom\":11,\"maxzoom\":14},{\"id\":\"waterway\",\"fields\":{\"class\":\"String\",\"intermittent\":\"String\",\"name\":\"String\"},\"minzoom\":4,\"maxzoom\":14}]}",
+    "maxzoom": "14",
+    "minzoom": "4",
+    "name": "OpenBareMap Sierra Nevada",
+    "type": "baselayer",
+    "version": "2.0.0"
+  },
+  "note": "Feature instances include repetition across tiles and zooms; not unique OSM objects. This checks MVT framing and layer presence, not geometry or cartographic correctness.",
+  "tiles_by_zoom": {
+    "4": 1,
+    "5": 1,
+    "6": 1,
+    "7": 2,
+    "8": 2,
+    "9": 6,
+    "10": 15,
+    "11": 53,
+    "12": 184,
+    "13": 700,
+    "14": 2724
+  }
+}

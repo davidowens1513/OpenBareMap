@@ -3,6 +3,7 @@
 import argparse
 import gzip
 import json
+import os
 from pathlib import Path
 import shutil
 import subprocess
@@ -28,9 +29,23 @@ def main(region):
     geometry_report=json.loads((geometry/'geometry-report.json').read_text())
     for name,expected in geometry_report['outputs'].items():
         if digest(geometry/name)!=expected:raise ValueError('Geometry checkpoint changed: '+name)
+    land_source=ROOT/'build'/(region+'-topography')/'land.geojson'
+    if p.get('garminContextBounds'):
+        context=dest/'coastal-context';context.mkdir(exist_ok=True)
+        land_source=context/'land.geojson'
+        coastal=json.loads((ROOT/'coast-sources.lock.json').read_text())
+        toolchain=json.loads((ROOT/'topography-toolchain.lock.json').read_text())
+        ogr=toolchain['ogr2ogr']['path']
+        if digest(ROOT/coastal['path'])!=coastal['sha256'] or digest(ogr)!=toolchain['ogr2ogr']['sha256']:raise ValueError('Garmin coastal source/tool changed')
+        if not land_source.exists():
+            env=os.environ.copy();env['PROJ_DATA']=str(Path(toolchain['proj_database']['path']).parent)
+            source='/vsizip/'+str(ROOT/coastal['path'])+'/land-polygons-split-4326/land_polygons.shp'
+            subprocess.run([ogr,'-f','GeoJSON',str(land_source),source,'-spat',*map(str,p['garminContextBounds']),'-clipsrc',*map(str,p['garminContextBounds']),'-lco','COORDINATE_PRECISION=7'],env=env,check=True)
+            write(context/'source.json',{'source':coastal,'bounds':p['garminContextBounds'],'sha256':digest(land_source)})
+        if digest(land_source)!=json.loads((context/'source.json').read_text())['sha256']:raise ValueError('Garmin coastal context changed')
     if not lock.exists():
         records=[]
-        for name,path in [('contours',ROOT/'build'/(region+'-geometry')/'contours.geojson'),('landcover',ROOT/'build'/(region+'-geometry')/'landcover.geojson'),('land',ROOT/'build'/(region+'-topography')/'land.geojson')]:records.append(compress(path,inputs/(name+'.geojson.gz')))
+        for name,path in [('contours',ROOT/'build'/(region+'-geometry')/'contours.geojson'),('landcover',ROOT/'build'/(region+'-geometry')/'landcover.geojson'),('land',land_source)]:records.append(compress(path,inputs/(name+'.geojson.gz')))
         write(lock,{'region':region,'inputs':records})
     for item in json.loads(lock.read_text())['inputs']:
         if digest(ROOT/item['path'])!=item['sha256']:raise ValueError('Garmin input changed')
@@ -41,6 +56,11 @@ def main(region):
             if file.is_file():file.write_text(file.read_text().replace('name:ga','name:'+p.get('nativeLanguage','cy')).replace('OpenBareMap Ireland',p['name']).replace('Full Ireland',p['label']))
         typ=style/'OBM4831.txt';text=typ.read_text().replace('FID=4831','FID='+str(p['garminFamilyId']));typ.unlink();(style/('OBM'+str(p['garminFamilyId'])+'.txt')).write_text(text)
         lines=style/'lines';lines.write_text(lines.read_text().replace('admin_level=2 [','(admin_level=2 | admin_level=4) ['))
+    if p.get('coverageBoundary'):
+        typ=style/('OBM'+str(p['garminFamilyId'])+'.txt')
+        if 'Type=0x10009' not in typ.read_text():
+            typ.write_text(typ.read_text()+'\n[_line]\nType=0x10009\nString=National park boundary\nUseOrientation=N\nXpm="32 2 1 1"\n"a c #8c278b"\n"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"\n"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"\n[end]\n[_line]\nType=0x1000a\nString=25 km coverage limit\nUseOrientation=N\nXpm="32 1 2 1"\n"a c #444444"\n". c none"\n"aaaaaaaa........aaaaaaaa........"\n[end]\n')
+            lines=style/'lines';lines.write_text('obm:park_boundary=yes [0x10009 resolution 16]\nobm:coverage_boundary=yes [0x1000a resolution 16]\n'+lines.read_text())
     # Coast/background geometry must survive low-detail polygon size filtering.
     polygons=style/'polygons'
     rules=polygons.read_text().replace('obm:sea=yes [','obm:sea=yes { set mkgmap:skipSizeFilter=true } [').replace('natural=land [','natural=land { set mkgmap:skipSizeFilter=true } [')
@@ -52,6 +72,7 @@ def main(region):
     copyright_file=dest/'copyright.txt'
     copyright_file.write_text((ROOT/'garmin/copyright.txt').read_text().replace('Ireland',p['label']).replace('Townlands','Inherited font and pattern assets'))
     options=['--max-jobs=2','--style-file='+str(style),'--family-id='+str(p['garminFamilyId']),'--product-id=1','--family-name='+p['name'],'--series-name=OpenBareMap Garmin 2.0','--description='+p['name']+' 2.0','--code-page=1252','--lower-case','--name-tag-list=name:en,name,name:'+p.get('nativeLanguage','cy'),'--levels=0:24,1:22,2:20,3:18,4:16','--gmapsupp','--add-pois-to-areas','--dem='+str(work/'hgt'),'--dem-poly='+str(polygon),'--dem-dists=3312,13248,26512,53024,106048','--dem-interpolation=bilinear','--copyright-file='+str(copyright_file)]
+    if p.get('coverageBoundary'):copyright_file.write_text(copyright_file.read_text()+'\nNational park boundary: Fuente: Organismo Autónomo Parques Nacionales (MITECO/OAPN), CC BY 4.0. See boundary-source.json.\n')
     config={'routing':False,'coverage':p['coverage'],'contourIntervalMetres':20,'familyId':p['garminFamilyId'],'tileStartId':p['garminTileStartId'],'compilerOptions':options,'garminPackageRevision':p.get('garminPackageRevision',p['mapVersion'])}
     validate_config(region,config)
     write(dest/'config.json',config);tools()
@@ -90,7 +111,7 @@ def main(region):
     with (dest/'inspection.json').open('w') as out:subprocess.run(command,stdout=out,check=True)
     # Inspect the prospective binary together with the other installed products.
     subprocess.run([str(javac),'-cp',str(jar),'-d',str(work),str(ROOT/'garmin/ValidateMapSet.java')],check=True)
-    companions=[f for f in [ROOT/'garmin/dist/OpenBareMap-Ireland.img',ROOT/'garmin/dist/OpenBareMap-My-Tracks.img',ROOT/'regions/england-wales/garmin/dist/OpenBareMap-England-Wales.img'] if f.exists() and region not in f.parts]
+    companions=[f for f in [ROOT/'garmin/dist/OpenBareMap-Ireland.img',ROOT/'garmin/dist/OpenBareMap-My-Tracks.img',ROOT/'regions/england-wales/garmin/dist/OpenBareMap-England-Wales.img',ROOT/'regions/scotland/garmin/dist/OpenBareMap-Scotland.img'] if f.exists() and region not in f.parts]
     with (dest/'map-set-validation.txt').open('w') as out:subprocess.run([str(java),'-Djava.awt.headless=true',*(['-Dopenbaremap.scotland.tiles='+str(len(expected))] if region=='scotland' else []),'-Xmx2g','-cp',str(work)+':'+str(jar),'ValidateMapSet',*map(str,companions),str(image)],stdout=out,check=True)
     dist=dest/'dist';dist.mkdir(exist_ok=True);output=dist/p.get('garminFilename','OpenBareMap-England-Wales.img')
     if output.exists():raise FileExistsError(output)
@@ -99,8 +120,9 @@ def main(region):
     from build_distribution_instructions import garmin_instructions
     (dist/'INSTALL.txt').write_text(garmin_instructions(region,output.name))
     shutil.copyfile(copyright_file,dist/'ATTRIBUTION.txt')
+    if p.get('coverageBoundary'):shutil.copyfile(region_path(region,'boundary-source.json'),dist/'boundary-source.json')
     for name in ('terrain-attribution.md','terrain-data-sources.md'):shutil.copyfile(ROOT/'data'/name,dist/name)
     write(dest/'build-report.json',{'status':'compiled and structurally inspected; hardware rendering pending','familyId':p['garminFamilyId'],'garminPackageRevision':config['garminPackageRevision'],'routing':False,'output':{'path':str(output.relative_to(ROOT)),'bytes':output.stat().st_size,'sha256':digest(output)},'inspection':json.loads((dest/'inspection.json').read_text())})
 
 if __name__=='__main__':
-    parser=argparse.ArgumentParser();parser.add_argument('--region',choices=['england-wales','scotland'],required=True);args=parser.parse_args();main(args.region)
+    parser=argparse.ArgumentParser();parser.add_argument('--region',choices=['england-wales','scotland','sierra-nevada'],required=True);args=parser.parse_args();main(args.region)

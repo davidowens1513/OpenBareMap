@@ -4,6 +4,7 @@ The regional previews use the full accepted maps, with separate entry pages and 
 
 - [Ireland preview](https://downloads.appsbyonzy.dev/OpenBareMap/preview-v2/ireland/index.html)
 - [England & Wales preview](https://downloads.appsbyonzy.dev/OpenBareMap/preview-v2/england-wales/index.html)
+- [Sierra Nevada preview](https://downloads.appsbyonzy.dev/OpenBareMap/preview-v2/sierra-nevada/index.html)
 - [Scotland preview](https://downloads.appsbyonzy.dev/OpenBareMap/preview-v2/scotland/index.html)
 
 Each provides pan/zoom, regional destinations, a collapsible regional key with a clickable full-size, zoomable legend and source notices. Website buttons open the chosen region directly. Both device downloads and native app-resource exports remain separate from these online previews.
@@ -42,7 +43,7 @@ To embed a map, use the corresponding URL in an iframe:
   style="width:100%;height:650px;border:0"></iframe>
 ```
 
-Change both the title and region path for England/Wales or Scotland. The website integration snapshot in `site/` contains the separate regional preview and Garmin buttons. Its other app links are preserved.
+Change both the title and region path for England/Wales or Scotland, or use Sierra Nevada. The website integration snapshot in `site/` contains the separate regional preview and Garmin buttons. Its other app links are preserved.
 
 ## Update the key or preview controls
 
@@ -54,6 +55,6 @@ To package page/key updates without rebuilding or uploading map archives:
 python3 scripts/package_preview_ui.py --output /absolute/new/preview-ui
 ```
 
-Upload that directory's files under the existing `OpenBareMap/preview-v2/` prefix, retaining all other files. The full preview builder also includes these pages and images automatically. The legend images come from `app-legend/` for Ireland and `regions/<region>/legend/` for England & Wales and Scotland.
+Upload that directory's files under the existing `OpenBareMap/preview-v2/` prefix, retaining all other files. The full preview builder also includes these pages and images automatically. The legend images come from `app-legend/` for Ireland and `regions/<region>/legend/` for England & Wales, Scotland and Sierra Nevada.
 
 Use `--regions scotland` with the full exporter to build only the new Scotland archives. When publishing into the shared preview prefix, retain other editions and merge their manifest records; do not replace the shared manifest with a single-edition inventory.

@@ -1,0 +1,386 @@
+{
+  "coverage": "Official Sierra Nevada National Park boundary with a 25 km buffer measured in ETRS89 / UTM 30N; complete source ways and polygons retained at the edge. Rectangular tile envelope includes additional context.",
+  "coverageAnchors": {
+    "capileira": {
+      "coordinate": [
+        -3.358,
+        36.961
+      ],
+      "featuresInNeighbouringDetailedTiles": 4525
+    },
+    "granada": {
+      "coordinate": [
+        -3.5986,
+        37.1765
+      ],
+      "featuresInNeighbouringDetailedTiles": 62167
+    },
+    "mulhacen": {
+      "coordinate": [
+        -3.3114,
+        37.0547
+      ],
+      "featuresInNeighbouringDetailedTiles": 646
+    },
+    "puerto-de-la-ragua": {
+      "coordinate": [
+        -3.031,
+        37.114
+      ],
+      "featuresInNeighbouringDetailedTiles": 506
+    },
+    "trevelez": {
+      "coordinate": [
+        -3.265,
+        37.002
+      ],
+      "featuresInNeighbouringDetailedTiles": 1778
+    },
+    "veleta": {
+      "coordinate": [
+        -3.3656,
+        37.0504
+      ],
+      "featuresInNeighbouringDetailedTiles": 827
+    }
+  },
+  "datasets": {
+    "basemap": {
+      "empty_tile_count": 8,
+      "logical_tiles_sha256": "5d390f9e555bb7eefaeca0effa651fcb97ed7975aa260c4090889fbe9a5b72d7",
+      "tile_count": 3689
+    },
+    "grid": {
+      "empty_tile_count": 0,
+      "logical_tiles_sha256": "4bc16abcd9150b5b4f7e7674146643fd85c3fda290960a079e0d3a4f896344ef",
+      "tile_count": 3784
+    },
+    "hillshade": {
+      "empty_tile_count": 0,
+      "logical_tiles_sha256": "b3195ffd97783f3268c5aa6bb051746a850db536fb5cee7fbae39aa6973ab6e8",
+      "tile_count": 256
+    },
+    "topography": {
+      "empty_tile_count": 169,
+      "logical_tiles_sha256": "7a6c109b3a8e79f491efed5976b22a3cd49bc4c64e2620c0849f3aa7c48d765b",
+      "tile_count": 3794
+    }
+  },
+  "detail": {
+    "basemap": {
+      "boundaries": 2893,
+      "contours": 0
+    },
+    "topography": {
+      "boundaries": 0,
+      "contours": 135393
+    }
+  },
+  "garmin": {
+    "familyId": 4835,
+    "garminPackageRevision": "2.0.0-garmin-r1",
+    "inspection": {
+      "anchorLabels": {
+        "Capileira": "Capileira",
+        "Granada": "Granada",
+        "Mulhac\u00e9n": "Mulhac\u00e9n",
+        "Trev\u00e9lez": "Trev\u00e9lez"
+      },
+      "bounds": [
+        -3.8672733306884766,
+        36.6943359375,
+        -2.373046875,
+        37.44149208068848
+      ],
+      "coastPolygonsByLevel": {
+        "0": {
+          "0x32": 14,
+          "0x54": 71
+        },
+        "1": {
+          "0x32": 14,
+          "0x54": 32
+        },
+        "2": {
+          "0x32": 14,
+          "0x54": 24
+        },
+        "3": {
+          "0x32": 14,
+          "0x54": 23
+        },
+        "4": {
+          "0x32": 14,
+          "0x54": 21
+        }
+      },
+      "contoursByLevel": {
+        "0": {
+          "0x10009": 73,
+          "0x20": 23819,
+          "0x22": 5852
+        },
+        "1": {
+          "0x10009": 42,
+          "0x22": 4101
+        },
+        "2": {
+          "0x10008": 3610,
+          "0x10009": 36
+        },
+        "3": {
+          "0x10009": 24
+        },
+        "4": {
+          "0x10009": 17
+        }
+      },
+      "lineInstancesAtHighestDetail": {
+        "0x1": 1502,
+        "0x10001": 5159,
+        "0x10002": 926,
+        "0x10004": 661,
+        "0x10005": 2914,
+        "0x10006": 1391,
+        "0x10009": 73,
+        "0x1000a": 18,
+        "0x14": 356,
+        "0x16": 36229,
+        "0x18": 10422,
+        "0x1a": 14,
+        "0x1c": 128,
+        "0x1e": 51,
+        "0x1f": 328,
+        "0x2": 799,
+        "0x20": 23819,
+        "0x22": 5852,
+        "0x3": 1246,
+        "0x4": 1870,
+        "0x6": 43072,
+        "0x7": 17618,
+        "0xa": 29199
+      },
+      "logicalCombinedSHA256": "03c33ad265a267abdcf3d6a8b42f568630868388c2921bc73fbafff412d0cdc2",
+      "logicalHashNote": "Internal file names, sizes and payloads; only CommonHeader creation-date bytes 14..20 are zeroed for hashing. IMG archive headers are excluded. Output bytes are never modified.",
+      "logicalTileSHA256": {
+        "48350001.img": "65da52b4118016722dcaaca4d50f4205b6bfca242002b21b434e37784ac16fa3",
+        "48350002.img": "b91f82c7a97ac9bbb1143685e5963393cb8e13caee1a5b5acf19796864ecae88",
+        "48350003.img": "57d374054abcbdbae6e0012294eeb91a31a356208be88b8d988fc5bb16bc6e6e",
+        "48350004.img": "5fe3cacd383c99118ba03bc3785208634a7addee64cf9e24c56784e7f7bffcec",
+        "48350005.img": "c12d6ab967ad4dcbaaa70d8fec5518248fa02edff1cfa85471bed9c4947fec42",
+        "48350006.img": "9901ae2adb18c08aa52a8114ce4f4b54ccebc9b7f62b9a63fbc487c52f681fc7",
+        "48350007.img": "487722abb1d2eff9d19fc560821c49a4717d2f1885d2de2ca319a1de57e0773d",
+        "48350008.img": "a2a918cc292bcd20c872686529fb0d20277e6bd3e20665722b5b21e32446cc42",
+        "48350009.img": "15a35b57daa4ad68c730162f3941568ea697281182b4d4cbb3f3b450157dc817",
+        "48350010.img": "59cf61d0cf79c923edc9f87d5c509ed6e65339e22a71cd31771f0f3b66c2b9ab",
+        "48350011.img": "8ec411521f9ec5a1d08efb4c7646f5a8673f8d54bb4b6b9b8fc1988c2371c838",
+        "48350012.img": "3d0dbdabe9140b55dc9c93a09bae2898a9cbef53f49235b7d2f27b325f5a046b",
+        "48350013.img": "35d6c44688568b548430fc88c6b88d575b80f07bdf0ce7dc37b102bc9b49db92",
+        "48350014.img": "0e2aef63804aaca3800f03894d72e8c9f97c468597cde1bce5bc9b69d9f08a7e"
+      },
+      "pointInstancesAtHighestDetail": {
+        "0x100": 2,
+        "0x10001": 520,
+        "0x10002": 588,
+        "0x10003": 1601,
+        "0x10004": 37,
+        "0x10006": 16673,
+        "0x2f0b": 6807,
+        "0x600": 24,
+        "0x650c": 7,
+        "0x6603": 190,
+        "0x6615": 1134,
+        "0x6616": 8681,
+        "0x800": 201,
+        "0xb00": 348,
+        "0xc00": 7930
+      },
+      "polygonInstancesAtHighestDetail": {
+        "0x10101": 10633,
+        "0x10102": 4514,
+        "0x10103": 148,
+        "0x10104": 5266,
+        "0x10105": 83,
+        "0x10106": 328,
+        "0x10107": 3,
+        "0x10109": 277,
+        "0x1010a": 122,
+        "0x1010b": 208,
+        "0x13": 149285,
+        "0x32": 14,
+        "0x3c": 7363,
+        "0x4b": 14,
+        "0x50": 12084,
+        "0x51": 345,
+        "0x54": 71
+      },
+      "routing": false,
+      "subfileBytes": {
+        "DEM": 4504510,
+        "LBL": 1070419,
+        "MPS": 1197,
+        "RGN": 20025671,
+        "SRT": 912,
+        "TRE": 233389,
+        "TYP": 2980
+      },
+      "tiles": 14
+    },
+    "output": {
+      "bytes": 25946112,
+      "path": "regions/sierra-nevada/garmin/dist/OpenBareMap-Sierra-Nevada.img",
+      "sha256": "55c9233b119a40ae9826e7c9e1d857e9f0c750ac40df0b323c165ae5e1d93b7d"
+    },
+    "routing": false,
+    "status": "compiled and structurally inspected; hardware rendering pending"
+  },
+  "geometryProcessing": {
+    "contours": 13851,
+    "grid": {
+      "grid_10km": 25,
+      "grid_1km": 232
+    },
+    "landcover": {
+      "empty_source_areas": [],
+      "features": 30049,
+      "retained": 3908,
+      "smoothed": 26141
+    }
+  },
+  "irelandPreserved": true,
+  "labelGlyphs": {
+    "Open Sans Bold": true,
+    "Open Sans Regular": true,
+    "Open Sans Semibold": true
+  },
+  "landBackground": {
+    "capileira": {
+      "coordinate": [
+        -3.358,
+        36.961
+      ],
+      "verifiedZooms": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    },
+    "granada": {
+      "coordinate": [
+        -3.5986,
+        37.1765
+      ],
+      "verifiedZooms": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    },
+    "mulhacen": {
+      "coordinate": [
+        -3.3114,
+        37.0547
+      ],
+      "verifiedZooms": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    },
+    "puerto-de-la-ragua": {
+      "coordinate": [
+        -3.031,
+        37.114
+      ],
+      "verifiedZooms": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    },
+    "trevelez": {
+      "coordinate": [
+        -3.265,
+        37.002
+      ],
+      "verifiedZooms": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    },
+    "veleta": {
+      "coordinate": [
+        -3.3656,
+        37.0504
+      ],
+      "verifiedZooms": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    }
+  },
+  "packages": {
+    "android": {
+      "checkedFiles": 44,
+      "nativeDeviceRenderingTested": false,
+      "sourceFiles": {
+        "basemap": "maps/basemap.mbtiles",
+        "coast": "maps/coast.mbtiles",
+        "hillshade": "maps/hillshade.mbtiles",
+        "topography": "maps/topography.mbtiles",
+        "utm-grid": "maps/grid.mbtiles"
+      }
+    },
+    "ios": {
+      "checkedFiles": 47,
+      "nativeDeviceRenderingTested": false,
+      "sourceFiles": {
+        "basemap": "maps/basemap.mbtiles",
+        "coast": "maps/coast.mbtiles",
+        "hillshade": "maps/hillshade.mbtiles",
+        "topography": "maps/topography.mbtiles",
+        "utm-grid": "maps/grid.mbtiles"
+      }
+    }
+  },
+  "region": "sierra-nevada",
+  "status": "automated checks passed; visual and hardware acceptance pending"
+}

@@ -1,0 +1,38 @@
+{
+  "accessed_utc": "2026-11-02T16:48:10.088967+00:00",
+  "assets": [
+    {
+      "bytes": 6088828,
+      "path": "data/regions/sierra-nevada/elevation/N36W004.hgt.gz",
+      "sha256": "c8e58ea4d6e4b597dbb515cd81d0ad67cc1a2c28fed1f2533223358567e44e2c",
+      "url": "https://elevation-tiles-prod.s3.amazonaws.com/skadi/N36/N36W004.hgt.gz"
+    },
+    {
+      "bytes": 5680102,
+      "path": "data/regions/sierra-nevada/elevation/N36W003.hgt.gz",
+      "sha256": "464a67dfd42f3fd0d13e7dcdd59d0510e69a55eba35bfec6799541be8a8e0dfd",
+      "url": "https://elevation-tiles-prod.s3.amazonaws.com/skadi/N36/N36W003.hgt.gz"
+    },
+    {
+      "bytes": 13049108,
+      "path": "data/regions/sierra-nevada/elevation/N37W004.hgt.gz",
+      "sha256": "9275c6ef716289613b772a1eab446e0650bacce13e0cc06096e56548398a2da7",
+      "url": "https://elevation-tiles-prod.s3.amazonaws.com/skadi/N37/N37W004.hgt.gz"
+    },
+    {
+      "bytes": 13173399,
+      "path": "data/regions/sierra-nevada/elevation/N37W003.hgt.gz",
+      "sha256": "91d88f2bfc0427ef74d248dcb3af7b0254caf3a1838b04480f03a025c5f94430",
+      "url": "https://elevation-tiles-prod.s3.amazonaws.com/skadi/N37/N37W003.hgt.gz"
+    }
+  ],
+  "coverage": [
+    -4,
+    36,
+    -2,
+    38
+  ],
+  "dataset": "Mapzen/Terrain Tiles skadi composite elevation, not pure SRTM",
+  "documentation": "https://github.com/tilezen/joerd/tree/master/docs",
+  "grid": "3601 by 3601 signed 16-bit heights per degree tile"
+}

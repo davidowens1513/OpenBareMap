@@ -13,7 +13,7 @@ def digest(p):
  with p.open('rb') as f:return hashlib.file_digest(f,'sha256').hexdigest()
 def write(p,v):p.write_text(json.dumps(v,indent=2,ensure_ascii=False)+'\n')
 def build(output,origin,regions=None):
- regions=regions or ['ireland','england-wales','scotland']
+ regions=regions or ['ireland','england-wales','scotland','sierra-nevada']
  if output.exists():raise FileExistsError(output)
  output.mkdir(parents=True);assets=output/'assets';assets.mkdir();maps=output/'data';maps.mkdir()
  for folder in ['fonts','sprites']:shutil.copytree(ROOT/'viewer'/folder,assets/folder)
@@ -41,9 +41,12 @@ def build(output,origin,regions=None):
   jobs.append((region,'coast',coast,maps/region/'coast.pmtiles',digest(coast)))
   for source_name,source in style['sources'].items():
    if source['type']=='vector' or source['type']=='raster':
-    name='grid' if source_name in ['irish-grid','british-grid'] else source_name
+    name='grid' if source_name==p['gridSource'] else source_name
     source.pop('tiles',None);source['url']='pmtiles://'+origin.rstrip('/')+'/data/'+region+'/'+name+'.pmtiles'
    elif source_name=='townlands':source['data']=origin.rstrip('/')+'/assets/townlands.geojson'
+  style['sources']['basemap']['attribution']='© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap contributors</a>'
+  style['sources']['hillshade']['attribution']='Terrain Tiles / Mapzen · Copernicus EU-DEM · USGS · NOAA · <a href="'+origin.rstrip('/')+'/assets/terrain-attribution.html">Terrain attribution</a>'
+  style['sources'][p['gridSource']]['attribution']=p['gridName']+' ('+p['gridCRS']+')'
   style['glyphs']=origin.rstrip('/')+'/assets/fonts/{fontstack}/{range}.pbf';style['sprite']=origin.rstrip('/')+'/assets/sprites/outdoors'
   write(directory/'style.json',style)
  def convert(job):
@@ -60,4 +63,4 @@ def build(output,origin,regions=None):
  write(output/'manifest.json',{'regions':records,'pmtilesPython':'3.8.1','pmtilesJS':'4.5.0','librarySHA256':digest(assets/'pmtiles.js'),'dataOrigin':origin,'scope':'Complete selected map tiles; no regional or zoom sampling.'})
  print('Complete previews exported:',', '.join(regions),output,flush=True)
 if __name__=='__main__':
- p=argparse.ArgumentParser();p.add_argument('--output',type=Path,required=True);p.add_argument('--origin',required=True);p.add_argument('--regions',nargs='+',choices=['ireland','england-wales','scotland']);args=p.parse_args();build(args.output.resolve(),args.origin,args.regions)
+ p=argparse.ArgumentParser();p.add_argument('--output',type=Path,required=True);p.add_argument('--origin',required=True);p.add_argument('--regions',nargs='+',choices=['ireland','england-wales','scotland','sierra-nevada']);args=p.parse_args();build(args.output.resolve(),args.origin,args.regions)

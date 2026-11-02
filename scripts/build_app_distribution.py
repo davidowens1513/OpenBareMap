@@ -47,7 +47,7 @@ def archive_tree(payload,target):
         if archive.testzip():raise ValueError('Archive CRC failure')
 
 def build_one(region,output):
-    p=profile(region);records={};title={'ireland':'Ireland','england-wales':'England-Wales','scotland':'Scotland'}[region]
+    p=profile(region);records={};title={'ireland':'Ireland','england-wales':'England-Wales','scotland':'Scotland','sierra-nevada':'Sierra-Nevada'}[region]
     directory=output/region;directory.mkdir(parents=True,exist_ok=False)
     for platform,folder in [('ios','OpenBareMap.bundle'),('android','OpenBareMap')]:
         print(region,platform,'verifying resources',flush=True)
@@ -97,9 +97,11 @@ def build_one(region,output):
     return region,records
 
 if __name__=='__main__':
-    parser=argparse.ArgumentParser();parser.add_argument('--output',type=Path,default=ROOT/'work'/VERSION);parser.add_argument('--regions',nargs='+',choices=['ireland','england-wales','scotland'],default=['ireland','england-wales','scotland']);args=parser.parse_args();args.output.mkdir(parents=True,exist_ok=True)
+    parser=argparse.ArgumentParser();parser.add_argument('--output',type=Path,default=ROOT/'work'/VERSION);parser.add_argument('--regions',nargs='+',choices=['ireland','england-wales','scotland','sierra-nevada'],default=['ireland','england-wales','scotland','sierra-nevada']);args=parser.parse_args();args.output.mkdir(parents=True,exist_ok=True)
     with ThreadPoolExecutor(max_workers=2) as pool:records=dict(pool.map(lambda r:build_one(r,args.output),args.regions))
-    records={region:json.loads((args.output/region/'manifest.json').read_text()) for region in ['ireland','england-wales','scotland'] if (args.output/region/'manifest.json').exists()}
+    records={region:json.loads((args.output/region/'manifest.json').read_text()) for region in ['ireland','england-wales','scotland','sierra-nevada'] if (args.output/region/'manifest.json').exists()}
     dest=ROOT/'distribution'/VERSION;dest.mkdir(exist_ok=True)
+    existing=json.loads((dest/'catalog.json').read_text())['regions'] if (dest/'catalog.json').exists() else {}
+    records={**existing,**records}
     write(dest/'catalog.json',{'format':'openbaremap-app-bundle-catalog-v1','mapVersion':'2.0.0','regions':records,'sourceCommit':__import__('subprocess').check_output(['git','rev-parse','HEAD'],text=True).strip()})
     print('All regional app integration bundles complete',flush=True)

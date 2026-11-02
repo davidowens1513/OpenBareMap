@@ -1,0 +1,96 @@
+{
+  "layers": {
+    "boundary": {
+      "maxzoom": 14,
+      "minzoom": 4
+    },
+    "building": {
+      "maxzoom": 14,
+      "minzoom": 13
+    },
+    "cycling_route": {
+      "maxzoom": 14,
+      "minzoom": 7
+    },
+    "ferry": {
+      "maxzoom": 14,
+      "minzoom": 6
+    },
+    "hiking_poi": {
+      "maxzoom": 14,
+      "minzoom": 10
+    },
+    "hiking_route": {
+      "maxzoom": 14,
+      "minzoom": 7
+    },
+    "island_name": {
+      "maxzoom": 14,
+      "minzoom": 7
+    },
+    "landcover": {
+      "maxzoom": 14,
+      "minzoom": 4
+    },
+    "mountain": {
+      "maxzoom": 14,
+      "minzoom": 9
+    },
+    "natural_line": {
+      "maxzoom": 14,
+      "minzoom": 11
+    },
+    "place": {
+      "maxzoom": 14,
+      "minzoom": 4
+    },
+    "poi": {
+      "maxzoom": 14,
+      "minzoom": 10
+    },
+    "railway": {
+      "maxzoom": 14,
+      "minzoom": 6
+    },
+    "station": {
+      "maxzoom": 14,
+      "minzoom": 9
+    },
+    "transportation": {
+      "maxzoom": 14,
+      "minzoom": 4
+    },
+    "transportation_name": {
+      "maxzoom": 14,
+      "minzoom": 10
+    },
+    "water": {
+      "maxzoom": 14,
+      "minzoom": 4
+    },
+    "water_name": {
+      "maxzoom": 14,
+      "minzoom": 11
+    },
+    "waterway": {
+      "maxzoom": 14,
+      "minzoom": 4
+    }
+  },
+  "settings": {
+    "basezoom": 14,
+    "bounding_box": [
+      -3.8286890657119104,
+      36.71525811988457,
+      -2.382596049479036,
+      37.43653023328945
+    ],
+    "compress": "gzip",
+    "description": "Official Sierra Nevada National Park boundary with a 25 km buffer measured in ETRS89 / UTM 30N; complete source ways and polygons retained at the edge. Rectangular tile envelope includes additional context.",
+    "include_ids": true,
+    "maxzoom": 14,
+    "minzoom": 4,
+    "name": "OpenBareMap Sierra Nevada",
+    "version": "2.0.0"
+  }
+}

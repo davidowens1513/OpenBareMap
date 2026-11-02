@@ -211,7 +211,77 @@
         "sha256": "d8ec7868706fee8f71f2b2c4d2fbb0d841e99f6fb7bc550efb5f245f87ac813d",
         "url": "https://downloads.appsbyonzy.dev/OpenBareMap/scotland/2.0.0/app-bundles-v1/ios/OpenBareMap-Scotland-iOS-Bundle.zip"
       }
+    },
+    "sierra-nevada": {
+      "android": {
+        "bytes": 167562254,
+        "datasets": {
+          "basemap": {
+            "path": "maps/basemap.mbtiles",
+            "sha256": "d6403659122142f0153a50a2a472408620bc7bdfe4aec01f9f8f8af5e05c586d"
+          },
+          "coast": {
+            "derivedFrom": "cf54bb56b66568fbbf3f0878eb180c6fb03efc64772e1f4701f5644d77e8ee72",
+            "path": "maps/coast.mbtiles",
+            "sha256": "97ef54635c0f93edde94eafdec435ffda7457625bd4613039bff2c5cbf221573"
+          },
+          "grid": {
+            "path": "maps/grid.mbtiles",
+            "sha256": "cfc3682766d7e0b558f157e39a4815241f98b9d8e164c9a15ef352c8a1e32c4b"
+          },
+          "hillshade": {
+            "path": "maps/hillshade.mbtiles",
+            "sha256": "b9d22f34db147318cd69faea88fb2b2bcfed0d5952cfe6ad0942ede2447fda29"
+          },
+          "topography": {
+            "path": "maps/topography.mbtiles",
+            "sha256": "cf54bb56b66568fbbf3f0878eb180c6fb03efc64772e1f4701f5644d77e8ee72"
+          }
+        },
+        "instructionsSHA256": "913e3757a4669d60e45d4e2765999a601848d0c870e44efc8ab8477e213f675a",
+        "instructionsURL": "https://downloads.appsbyonzy.dev/OpenBareMap/sierra-nevada/2.0.0/app-bundles-v1/android/instructions.txt",
+        "localPath": "work/app-bundles-v1/sierra-nevada/android/OpenBareMap-Sierra-Nevada-Android-Bundle.zip",
+        "mapManifestSHA256": "63505f11202561cb5e9c4c3fcf3eb3aff5eb2837df52f1c09d332854c6068ffe",
+        "r2Key": "OpenBareMap/sierra-nevada/2.0.0/app-bundles-v1/android/OpenBareMap-Sierra-Nevada-Android-Bundle.zip",
+        "sha256": "be97c40ca9e15c5e73bb9a4d0e14d277adaf6ac25696758edf35baaa125719f2",
+        "url": "https://downloads.appsbyonzy.dev/OpenBareMap/sierra-nevada/2.0.0/app-bundles-v1/android/OpenBareMap-Sierra-Nevada-Android-Bundle.zip"
+      },
+      "ios": {
+        "bytes": 167563001,
+        "datasets": {
+          "basemap": {
+            "path": "maps/basemap.mbtiles",
+            "sha256": "d6403659122142f0153a50a2a472408620bc7bdfe4aec01f9f8f8af5e05c586d"
+          },
+          "coast": {
+            "derived_from": "cf54bb56b66568fbbf3f0878eb180c6fb03efc64772e1f4701f5644d77e8ee72",
+            "maxzoom": 12,
+            "operation": "Preserve land-layer MVT bytes only through zoom 12; omit other layers.",
+            "path": "maps/coast.mbtiles",
+            "sha256": "97ef54635c0f93edde94eafdec435ffda7457625bd4613039bff2c5cbf221573"
+          },
+          "grid": {
+            "path": "maps/grid.mbtiles",
+            "sha256": "cfc3682766d7e0b558f157e39a4815241f98b9d8e164c9a15ef352c8a1e32c4b"
+          },
+          "hillshade": {
+            "path": "maps/hillshade.mbtiles",
+            "sha256": "b9d22f34db147318cd69faea88fb2b2bcfed0d5952cfe6ad0942ede2447fda29"
+          },
+          "topography": {
+            "path": "maps/topography.mbtiles",
+            "sha256": "cf54bb56b66568fbbf3f0878eb180c6fb03efc64772e1f4701f5644d77e8ee72"
+          }
+        },
+        "instructionsSHA256": "e7025887329ca308c04bc11c3ff7f14a2e1707b2d8939f7957f374f96f847ad3",
+        "instructionsURL": "https://downloads.appsbyonzy.dev/OpenBareMap/sierra-nevada/2.0.0/app-bundles-v1/ios/instructions.txt",
+        "localPath": "work/app-bundles-v1/sierra-nevada/ios/OpenBareMap-Sierra-Nevada-iOS-Bundle.zip",
+        "mapManifestSHA256": "14a9ace106e9f4fc5fe1365cf6a989a9d028f07b5ff3916a4e1125540f5b6551",
+        "r2Key": "OpenBareMap/sierra-nevada/2.0.0/app-bundles-v1/ios/OpenBareMap-Sierra-Nevada-iOS-Bundle.zip",
+        "sha256": "19da55ab5393e48904b348c5397fe9ed47ff2d0b75899ef8997bb6ba794fb245",
+        "url": "https://downloads.appsbyonzy.dev/OpenBareMap/sierra-nevada/2.0.0/app-bundles-v1/ios/OpenBareMap-Sierra-Nevada-iOS-Bundle.zip"
+      }
     }
   },
-  "sourceCommit": "f55b85940689f37e0474d416cec440913cb06e85"
+  "sourceCommit": "45e4435b12d9c8fddc735b6cd49abff63d16557b"
 }

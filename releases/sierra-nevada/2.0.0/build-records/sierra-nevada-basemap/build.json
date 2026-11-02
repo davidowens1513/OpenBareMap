@@ -1,0 +1,123 @@
+{
+  "command": [
+    "/usr/local/bin/tilemaker",
+    "--input",
+    "/Users/davidowens/Documents/Codex/2026-10-25/i-x20/outputs/OpenBareMap/data/regions/sierra-nevada/andalucia-261031.osm.pbf",
+    "--output",
+    "/Users/davidowens/Documents/Codex/2026-10-25/i-x20/outputs/OpenBareMap/build/sierra-nevada-basemap/basemap.mbtiles",
+    "--config",
+    "/Users/davidowens/Documents/Codex/2026-10-25/i-x20/outputs/OpenBareMap/build/sierra-nevada-basemap/tilemaker.json",
+    "--process",
+    "/Users/davidowens/Documents/Codex/2026-10-25/i-x20/outputs/OpenBareMap/build/sierra-nevada-basemap/process.lua",
+    "--threads",
+    "1"
+  ],
+  "config_sha256": "06f691c85155f72f43c39418f058b6e4b8879161c8676086fcea4ba9aed7c758",
+  "exit_code": 0,
+  "output_sha256": "81013e8a810f1dd566e27dea7afbbc714a2331d3bf661940e351b2c1e6007407",
+  "process_sha256": "760ca54c71ac1441fd64ba4132fc6002ebbf9bea83c43f681e6b555d196327bb",
+  "region": {
+    "boundaryPreview": true,
+    "bounds": [
+      -3.8286890657119104,
+      36.71525811988457,
+      -2.382596049479036,
+      37.43653023328945
+    ],
+    "clipBasemap": true,
+    "coastContextBounds": [
+      -3.8286890657119104,
+      36.71525811988457,
+      -2.382596049479036,
+      37.43653023328945
+    ],
+    "contourIntervalMetres": 20,
+    "coverage": "Official Sierra Nevada National Park boundary with a 25 km buffer measured in ETRS89 / UTM 30N; complete source ways and polygons retained at the edge. Rectangular tile envelope includes additional context.",
+    "destinations": {
+      "capileira": [
+        -3.358,
+        36.961,
+        13
+      ],
+      "granada": [
+        -3.5986,
+        37.1765,
+        12
+      ],
+      "island": [
+        -3.15,
+        37.06,
+        9
+      ],
+      "mulhacen": [
+        -3.3114,
+        37.0547,
+        13
+      ],
+      "puerto-de-la-ragua": [
+        -3.031,
+        37.114,
+        13
+      ],
+      "trevelez": [
+        -3.265,
+        37.002,
+        13
+      ],
+      "veleta": [
+        -3.3656,
+        37.0504,
+        13
+      ]
+    },
+    "gridCRS": "EPSG:25830",
+    "gridExtent": [
+      420000,
+      560000,
+      4060000,
+      4150000
+    ],
+    "gridName": "ETRS89 / UTM 30N",
+    "gridSource": "utm-grid",
+    "id": "sierra-nevada",
+    "label": "Sierra Nevada \u00b7 Spain",
+    "mapVersion": "2.0.0-preview.1",
+    "maxzoom": 14,
+    "minorWaterwayMinzoom": 10,
+    "minzoom": 4,
+    "name": "OpenBareMap Sierra Nevada",
+    "nativeLanguage": "es",
+    "projectedCRS": "EPSG:25830",
+    "sourceBaseURL": "https://download.geofabrik.de/europe/spain/",
+    "sourceDate": "2026-10-31",
+    "sourceSlugs": [
+      "andalucia"
+    ],
+    "terrainBounds": [
+      -4,
+      36,
+      -2,
+      38
+    ],
+    "townlands": false
+  },
+  "source": {
+    "bytes": 195921650,
+    "operation": "Complete upstream extract; no merge or spatial filtering",
+    "path": "data/regions/sierra-nevada/andalucia-261031.osm.pbf",
+    "replicationTimestamp": "2026-10-31T21:23:06Z",
+    "sha256": "eccbdd9dbc99f69269537512b4f9c36a8ca672acf5279a4d5e7961dd981b3af6",
+    "snapshot_date": "2026-10-31",
+    "url": "https://download.geofabrik.de/europe/spain/andalucia-261031.osm.pbf"
+  },
+  "status": "validated vector build",
+  "toolchain": {
+    "sha256": "d43847b5d5662b9139461921d55bfab56f3db2098946209a5c7a26b03255b123",
+    "version": "tilemaker v3.1.0+ge16203e4e2fb"
+  },
+  "validation": {
+    "empty_tile_count": 8,
+    "logical_tiles_sha256": "a62183511d7b0e18a2358d68301ed2bdc57d7058c252f57511c8e0801b000d22",
+    "tile_count": 3689
+  }
+}

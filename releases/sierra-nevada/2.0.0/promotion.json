@@ -1,0 +1,31 @@
+{
+  "operation": "Verified copies of reviewed map; only version and storage-revision metadata changed",
+  "fromVersion": "2.0.0-preview.1",
+  "toVersion": "2.0.0",
+  "datasets": {
+    "basemap": {
+      "reviewedSHA256": "4b8b367f163e88a105ef844d41b0115d2a271389ca8b3ab688bc825b47e7740d",
+      "releaseSHA256": "d6403659122142f0153a50a2a472408620bc7bdfe4aec01f9f8f8af5e05c586d",
+      "logicalTilesSHA256": "5d390f9e555bb7eefaeca0effa651fcb97ed7975aa260c4090889fbe9a5b72d7",
+      "tilePayloadsPreserved": true
+    },
+    "grid": {
+      "reviewedSHA256": "44fea7f5967e720582962e0a8f5c34ee5f78e8160d2c9161f61639feafd61b9b",
+      "releaseSHA256": "cfc3682766d7e0b558f157e39a4815241f98b9d8e164c9a15ef352c8a1e32c4b",
+      "logicalTilesSHA256": "4bc16abcd9150b5b4f7e7674146643fd85c3fda290960a079e0d3a4f896344ef",
+      "tilePayloadsPreserved": true
+    },
+    "hillshade": {
+      "reviewedSHA256": "0226134a0b333eac6ea96299812f0871c072ac1842d5ad93644321b6d16e86e2",
+      "releaseSHA256": "b9d22f34db147318cd69faea88fb2b2bcfed0d5952cfe6ad0942ede2447fda29",
+      "logicalTilesSHA256": "b3195ffd97783f3268c5aa6bb051746a850db536fb5cee7fbae39aa6973ab6e8",
+      "tilePayloadsPreserved": true
+    },
+    "topography": {
+      "reviewedSHA256": "e7368e752b463720be5ebc310158a621e1b99e8e43ad517248d0af334b8257ae",
+      "releaseSHA256": "cf54bb56b66568fbbf3f0878eb180c6fb03efc64772e1f4701f5644d77e8ee72",
+      "logicalTilesSHA256": "7a6c109b3a8e79f491efed5976b22a3cd49bc4c64e2620c0849f3aa7c48d765b",
+      "tilePayloadsPreserved": true
+    }
+  }
+}

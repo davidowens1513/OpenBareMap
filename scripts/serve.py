@@ -82,6 +82,11 @@ class Handler(BaseHTTPRequestHandler):
             if 'sprite' in style:style['sprite']=urljoin(base,style['sprite'])
             self.reply(200, json.dumps(style).encode(), 'application/json')
             return
+        if path in ('/park-boundary.geojson','/coverage.geojson','/coverage-mask.geojson'):
+            from regions import profile, region_path
+            if not (profile(self.server.region).get('coverageBoundary') or profile(self.server.region).get('boundaryPreview')):
+                self.reply(404); return
+            self.reply(200,region_path(self.server.region,path[1:]).read_bytes(),'application/geo+json'); return
         if path == '/region.json':
             from regions import profile
             self.reply(200,json.dumps(profile(self.server.region)).encode(),'application/json')
@@ -94,14 +99,22 @@ class Handler(BaseHTTPRequestHandler):
         body=target.read_bytes()
         if name == 'index.html' and self.server.region != 'ireland':
             from regions import profile
-            label=profile(self.server.region)['label']
-            body=body.decode().replace('IRELAND & NORTHERN IRELAND',html.escape(label.upper())).replace('Ireland',html.escape(label)).replace('Irish Grid', 'British National Grid').replace('irish-grid-', 'british-grid-').encode()
+            p=profile(self.server.region);label=p['label']
+            body=body.decode().replace('IRELAND & NORTHERN IRELAND',html.escape(label.upper())).replace('Ireland',html.escape(label)).replace('Irish Grid', html.escape(p['gridName'])).replace('irish-grid-', p['gridSource']+'-').encode()
+        if name == 'index.html':
+            from regions import profile
+            if profile(self.server.region).get('coverageBoundary') or profile(self.server.region).get('boundaryPreview'):
+                body=body.replace(b'County border',b'Province border')
+                body=body.replace(b'<div class="legend">',b'<details class="preview-key"><summary>Map key</summary><div class="legend">').replace(b'</div>\n<p class="note">',b'</div></details>\n<p class="note">')
+                body=body.replace(b'</head>',b'<style>.preview-key{margin-top:14px}.preview-key summary{cursor:pointer;font-size:12px}@media(max-width:600px){aside{width:calc(100% - 70px);max-height:300px}.badge{margin-bottom:4px}aside p{margin:8px 0}.preview-key{margin-top:10px}}</style></head>')
+                body=body.replace('Version 2.0 · 20 m contours'.encode(),'Local preview · 20 m contours'.encode())
+                body=body.replace(b'<label for="location">',b'<p style="font-size:12px"><span style="color:#8c278b">&#9473;</span> National park &nbsp; &#9476; 25 km boundary</p><label for="location">')
         self.reply(200,body, mimetypes.guess_type(target)[0] or 'application/octet-stream')
 
 def main():
     parser=argparse.ArgumentParser()
     parser.add_argument('--port',type=int,default=8765)
-    parser.add_argument('--region',choices=['ireland','england-wales','scotland'],default='ireland')
+    parser.add_argument('--region',choices=['ireland','england-wales','scotland','sierra-nevada'],default='ireland')
     parser.add_argument('--database',type=Path,help='Optional override for the base vector database')
     args=parser.parse_args()
     from regions import active_map, profile

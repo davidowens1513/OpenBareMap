@@ -37,4 +37,4 @@ def main(region):
     run('scripts/validate_region.py','--region',region)
 
 if __name__=='__main__':
-    p=argparse.ArgumentParser();p.add_argument('--region',choices=['england-wales','scotland'],required=True);a=p.parse_args();main(a.region)
+    p=argparse.ArgumentParser();p.add_argument('--region',choices=['england-wales','scotland','sierra-nevada'],required=True);a=p.parse_args();main(a.region)

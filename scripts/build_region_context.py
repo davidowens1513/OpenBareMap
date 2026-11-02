@@ -45,4 +45,4 @@ def build(region):
     print('Coastal context extended; contour layer payloads preserved.',flush=True)
 
 if __name__=='__main__':
-    parser=argparse.ArgumentParser();parser.add_argument('--region',choices=['england-wales','scotland'],required=True);args=parser.parse_args();build(args.region)
+    parser=argparse.ArgumentParser();parser.add_argument('--region',choices=['england-wales','scotland','sierra-nevada'],required=True);args=parser.parse_args();build(args.region)

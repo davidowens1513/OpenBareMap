@@ -1,0 +1,140 @@
+{
+  "verifiedUTC": "2026-11-02T18:23:43.769557+00:00",
+  "region": "sierra-nevada",
+  "files": [
+    {
+      "url": "https://downloads.appsbyonzy.dev/OpenBareMap/sierra-nevada/2.0.0/android/OpenBareMap-SierraNevada-Android.zip",
+      "bytes": 167533799,
+      "sha256": "7e8278cb8d55061cfa943d1be446c08db95bb4dbab31bff68020147dcdab124a",
+      "fullPublicReadbackVerified": true,
+      "contentType": "application/zip"
+    },
+    {
+      "url": "https://downloads.appsbyonzy.dev/OpenBareMap/sierra-nevada/2.0.0/ios/OpenBareMap-SierraNevada-iOS.zip",
+      "bytes": 167554946,
+      "sha256": "c50ba8fa8ba674addbfc2eaf48921f62159ab2188b4b288d6c9e959508498253",
+      "fullPublicReadbackVerified": true,
+      "contentType": "application/zip"
+    },
+    {
+      "url": "https://downloads.appsbyonzy.dev/Garmin/OpenBareMap-Sierra-Nevada.img",
+      "bytes": 25946112,
+      "sha256": "55c9233b119a40ae9826e7c9e1d857e9f0c750ac40df0b323c165ae5e1d93b7d",
+      "fullPublicReadbackVerified": true,
+      "contentType": "application/octet-stream"
+    },
+    {
+      "url": "https://downloads.appsbyonzy.dev/OpenBareMap/preview-v2/data/sierra-nevada/basemap.pmtiles",
+      "bytes": 87281328,
+      "sha256": "8c18c22b4781d36f6fa755101cf1d7299186a75dce08995ecbb70d7c455b3fe8",
+      "fullPublicReadbackVerified": true,
+      "contentType": "application/octet-stream",
+      "httpByteRangesVerified": true
+    },
+    {
+      "url": "https://downloads.appsbyonzy.dev/OpenBareMap/preview-v2/data/sierra-nevada/grid.pmtiles",
+      "bytes": 1149029,
+      "sha256": "b57d0fd4852758e832ae6f45c098d2fcb4d86ad74d005df3a12576ce0bc12d2a",
+      "fullPublicReadbackVerified": true,
+      "contentType": "application/octet-stream",
+      "httpByteRangesVerified": true
+    },
+    {
+      "url": "https://downloads.appsbyonzy.dev/OpenBareMap/preview-v2/data/sierra-nevada/hillshade.pmtiles",
+      "bytes": 10982795,
+      "sha256": "1c41e14632eba3137d540d14c8da752b617227213200316c5808877d223f13f3",
+      "fullPublicReadbackVerified": true,
+      "contentType": "application/octet-stream",
+      "httpByteRangesVerified": true
+    },
+    {
+      "url": "https://downloads.appsbyonzy.dev/OpenBareMap/preview-v2/data/sierra-nevada/topography.pmtiles",
+      "bytes": 52232557,
+      "sha256": "21375deba5d5c6fbf69b60cc1880570cd686a691303cf4338365e4d32f0333ba",
+      "fullPublicReadbackVerified": true,
+      "contentType": "application/octet-stream",
+      "httpByteRangesVerified": true
+    },
+    {
+      "url": "https://downloads.appsbyonzy.dev/OpenBareMap/preview-v2/data/sierra-nevada/coast.pmtiles",
+      "bytes": 28021,
+      "sha256": "3a2956ac28cd032b5dd2c66c31bf68fa13d410ca705db868ee72f7b045b22334",
+      "fullPublicReadbackVerified": true,
+      "contentType": "application/octet-stream",
+      "httpByteRangesVerified": true
+    },
+    {
+      "url": "https://downloads.appsbyonzy.dev/OpenBareMap/preview-v2/sierra-nevada/index.html",
+      "sha256": "67a5d8ef0bce36e148ba8e91148b9c03ddfb9d3b0d9ef9e6d9f61d5ceb409a79",
+      "exactPublishedFileVerified": true,
+      "contentType": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://downloads.appsbyonzy.dev/OpenBareMap/preview-v2/sierra-nevada/region.json",
+      "sha256": "c8ea411ac0a39716c6958ba1068c1781f699b26a6957fe68ad6a6c94dcbbc714",
+      "exactPublishedFileVerified": true,
+      "contentType": "application/json"
+    },
+    {
+      "url": "https://downloads.appsbyonzy.dev/OpenBareMap/preview-v2/sierra-nevada/style.json",
+      "sha256": "b22311d4828ac3eb14ee151c8ecb6bd31a64d54fedd1603c91705698d770e3dc",
+      "exactPublishedFileVerified": true,
+      "contentType": "application/json"
+    },
+    {
+      "url": "https://downloads.appsbyonzy.dev/OpenBareMap/preview-v2/sierra-nevada/legend.html",
+      "sha256": "1b51e253095b330f6c0fba7395d65cbd1b0e79c0fb0743bc635e1203baa99512",
+      "exactPublishedFileVerified": true,
+      "contentType": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://downloads.appsbyonzy.dev/OpenBareMap/preview-v2/assets/legends/sierra-nevada@2x.png",
+      "sha256": "f286f39e1e68de72ca2751d6750e228f03490df84d8d0c4f4f7718cf7f4d212b",
+      "exactPublishedFileVerified": true,
+      "contentType": "image/png"
+    },
+    {
+      "url": "https://downloads.appsbyonzy.dev/OpenBareMap/preview-v2/assets/preview.js?v=20261102-sierra-r2",
+      "sha256": "b5dc1873046977cc302c857a8d78ee9d4ae4a3efbb071da2ba856d89ff140bc0",
+      "exactPublishedFileVerified": true,
+      "contentType": "text/javascript; charset=utf-8"
+    },
+    {
+      "url": "https://downloads.appsbyonzy.dev/OpenBareMap/preview-v2/assets/preview.css?v=20261102-sierra-r2",
+      "sha256": "cc9fca137a8bb3f22ea59387a84c92b7a548d5a71736b10ab52b9f02a0ba77c0",
+      "exactPublishedFileVerified": true,
+      "contentType": "text/css; charset=utf-8"
+    },
+    {
+      "url": "https://downloads.appsbyonzy.dev/OpenBareMap/preview-v2/manifest.json",
+      "sha256": "3ca6cd25882c518bd5de126e5dc91ec85c3bafc3de3d5c78a580813354cf7ba5",
+      "exactPublishedFileVerified": true,
+      "contentType": "application/json"
+    }
+  ],
+  "allFourRegionCatalogsVerified": true,
+  "privateTrackDataPublished": false,
+  "website": {
+    "url": "https://appsbyonzy.dev/",
+    "sha256": "f953464ce5fd539a410370292c745227f408ace56cb32e09f60c20112e78d892",
+    "sourceMatchAfterCloudflareEmailProtectionNormalization": true,
+    "cloudflareEmailProtectionVerified": true,
+    "normalizedSourceSHA256": "3efc0069574f31167126e663cd059086598cf19abb94066ed18bb0a1dcccc315",
+    "allFourRegionsLinked": true,
+    "deploymentId": "8942d493-50e8-4aa5-b65d-441d8d9a5da4",
+    "deploymentURL": "https://8942d493.appsbyonzy.pages.dev/",
+    "screenshot": "regions/sierra-nevada/preview/website-live.png"
+  },
+  "browserChecks": {
+    "liveMapURL": "https://downloads.appsbyonzy.dev/OpenBareMap/preview-v2/sierra-nevada/index.html",
+    "mountainDetailZoom": 13,
+    "spanishPlaceMenuVerified": true,
+    "utmGridAttributionVerified": true,
+    "parkAnd25kmOutlinesRendered": true,
+    "mobileNavigationAndCreditsFit": true,
+    "zoomableLegendURL": "https://downloads.appsbyonzy.dev/OpenBareMap/preview-v2/sierra-nevada/legend.html",
+    "legendZoomControlVerifiedPercent": 125,
+    "consoleWarningsOrErrors": 0,
+    "existingScotlandPreviewVerified": true
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "builderSHA256": "db2fd8f777779c8fc75aefe814fa92c5fcf76a692c15b42e08bba747d4c80f02",
+  "contoursSourceSHA256": "068b93da2fe75d85f48f222f9c31ced5cdb666bf7b748a19bd90f30b3a060e23",
+  "counts": {
+    "contours": 13851,
+    "grid": {
+      "grid_10km": 25,
+      "grid_1km": 232
+    },
+    "landcover": {
+      "empty_source_areas": [],
+      "features": 30049,
+      "retained": 3908,
+      "smoothed": 26141
+    }
+  },
+  "osm": {
+    "bytes": 195921650,
+    "operation": "Complete upstream extract; no merge or spatial filtering",
+    "path": "data/regions/sierra-nevada/andalucia-261031.osm.pbf",
+    "replicationTimestamp": "2026-10-31T21:23:06Z",
+    "sha256": "eccbdd9dbc99f69269537512b4f9c36a8ca672acf5279a4d5e7961dd981b3af6",
+    "snapshot_date": "2026-10-31",
+    "url": "https://download.geofabrik.de/europe/spain/andalucia-261031.osm.pbf"
+  },
+  "outputs": {
+    "contours.geojson": "6ad051f20d401c4a05f91ceb47134b6b06a37a12e08ca25a1d714bc9936f54d8",
+    "grid_10km.geojson": "549f9d1f2a302ee6eb4526af8db494e00200e9123d4a72c9e107e13f0c4da1a0",
+    "grid_1km.geojson": "32b120c168161dad81f0a0cc08be78c44a1e61e2bef54255bb49f436aa806c9c",
+    "landcover.geojson": "8527bb0e01f355f6f642c6b7700585cadc17d23942caa3197de0c23f4c0acb55"
+  },
+  "region": "sierra-nevada",
+  "smootherSHA256": "7581d024dc1c1bec931642c7201db149bf64a64c814c451fa8bf37a0881ea6c9"
+}

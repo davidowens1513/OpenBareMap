@@ -1,0 +1,63 @@
+{
+  "status": "Local preview ready for review",
+  "coverage": "Official Sierra Nevada national park plus 25 km",
+  "upstreamOSMPolygonCoversEntireBufferedFootprint": true,
+  "terrainValidation": "terrain-validation.json",
+  "boundaryValidation": "boundary-validation.json",
+  "datasets": {
+    "basemap": {
+      "bytes": 90144768,
+      "path": "releases/sierra-nevada/2.0.0-preview.1/maps/basemap.mbtiles",
+      "sha256": "4b8b367f163e88a105ef844d41b0115d2a271389ca8b3ab688bc825b47e7740d",
+      "validation": {
+        "empty_tile_count": 8,
+        "logical_tiles_sha256": "5d390f9e555bb7eefaeca0effa651fcb97ed7975aa260c4090889fbe9a5b72d7",
+        "tile_count": 3689
+      }
+    },
+    "grid": {
+      "bytes": 1351680,
+      "path": "releases/sierra-nevada/2.0.0-preview.1/maps/grid.mbtiles",
+      "sha256": "44fea7f5967e720582962e0a8f5c34ee5f78e8160d2c9161f61639feafd61b9b",
+      "validation": {
+        "empty_tile_count": 0,
+        "logical_tiles_sha256": "4bc16abcd9150b5b4f7e7674146643fd85c3fda290960a079e0d3a4f896344ef",
+        "tile_count": 3784
+      }
+    },
+    "hillshade": {
+      "bytes": 11206656,
+      "path": "releases/sierra-nevada/2.0.0-preview.1/maps/hillshade.mbtiles",
+      "sha256": "0226134a0b333eac6ea96299812f0871c072ac1842d5ad93644321b6d16e86e2",
+      "validation": {
+        "empty_tile_count": 0,
+        "logical_tiles_sha256": "b3195ffd97783f3268c5aa6bb051746a850db536fb5cee7fbae39aa6973ab6e8",
+        "tile_count": 256
+      }
+    },
+    "topography": {
+      "bytes": 54927360,
+      "path": "releases/sierra-nevada/2.0.0-preview.1/maps/topography.mbtiles",
+      "sha256": "e7368e752b463720be5ebc310158a621e1b99e8e43ad517248d0af334b8257ae",
+      "validation": {
+        "empty_tile_count": 169,
+        "logical_tiles_sha256": "7a6c109b3a8e79f491efed5976b22a3cd49bc4c64e2620c0849f3aa7c48d765b",
+        "tile_count": 3794
+      }
+    }
+  },
+  "selectedBytes": 157630464,
+  "regressionTestsPassed": 17,
+  "browserChecks": {
+    "overview": "ready at zoom 8.8",
+    "mountainDetail": "ready at zoom 13",
+    "consoleWarningsOrErrors": 0,
+    "narrowScreen": "coverage visible; full key expandable"
+  },
+  "previewURL": "http://127.0.0.1:8874/",
+  "screenshots": [
+    "preview/coverage-overview.png",
+    "preview/mulhacen-detail.png"
+  ],
+  "publication": "Local preview only; not uploaded, packaged, committed or pushed"
+}

@@ -1,0 +1,20 @@
+{
+  "inputs": [
+    {
+      "path": "regions/sierra-nevada/garmin/inputs/contours.geojson.gz",
+      "sha256": "cba153bd75e53bb4c50d15b6bdb453df3170f84a175c1ca52ca00d821841078c",
+      "uncompressedSHA256": "6ad051f20d401c4a05f91ceb47134b6b06a37a12e08ca25a1d714bc9936f54d8"
+    },
+    {
+      "path": "regions/sierra-nevada/garmin/inputs/landcover.geojson.gz",
+      "sha256": "612169230ebd9539608996b2af6130d6489a1af1795b25bf7db81200f8f2b39e",
+      "uncompressedSHA256": "8527bb0e01f355f6f642c6b7700585cadc17d23942caa3197de0c23f4c0acb55"
+    },
+    {
+      "path": "regions/sierra-nevada/garmin/inputs/land.geojson.gz",
+      "sha256": "e65beefc176478aab7823630354235480ccad323364198dbbba565ff0d887697",
+      "uncompressedSHA256": "772ca7667d255bbfab13ccb80ca3dcffcdace16a9ff03735548aad4d2b489464"
+    }
+  ],
+  "region": "sierra-nevada"
+}

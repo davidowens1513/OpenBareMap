@@ -1,0 +1,71 @@
+{
+  "layers": {
+    "contour": {
+      "maxzoom": 14,
+      "minzoom": 8,
+      "simplify_below": 13,
+      "simplify_level": 1e-05,
+      "source": "/Users/davidowens/Documents/Codex/2026-10-25/i-x20/outputs/OpenBareMap/build/sierra-nevada-geometry/contours.geojson",
+      "source_columns": [
+        "elevation"
+      ]
+    },
+    "grid_10km": {
+      "maxzoom": 14,
+      "minzoom": 10,
+      "source": "/Users/davidowens/Documents/Codex/2026-10-25/i-x20/outputs/OpenBareMap/build/sierra-nevada-geometry/grid_10km.geojson",
+      "source_columns": [
+        "label",
+        "metres",
+        "axis"
+      ]
+    },
+    "grid_1km": {
+      "maxzoom": 14,
+      "minzoom": 12,
+      "source": "/Users/davidowens/Documents/Codex/2026-10-25/i-x20/outputs/OpenBareMap/build/sierra-nevada-geometry/grid_1km.geojson",
+      "source_columns": [
+        "label",
+        "metres",
+        "axis"
+      ]
+    },
+    "landcover": {
+      "maxzoom": 14,
+      "minzoom": 4,
+      "simplify_below": 14,
+      "simplify_level": 8e-06,
+      "simplify_ratio": 2,
+      "source": "/Users/davidowens/Documents/Codex/2026-10-25/i-x20/outputs/OpenBareMap/build/sierra-nevada-geometry/landcover.geojson",
+      "source_columns": [
+        "class",
+        "wetland",
+        "natural",
+        "landuse",
+        "name",
+        "name_en",
+        "name_cy",
+        "name_gd",
+        "name_es",
+        "official_name",
+        "short_name"
+      ]
+    }
+  },
+  "settings": {
+    "basezoom": 14,
+    "bounding_box": [
+      -3.8286890657119104,
+      36.71525811988457,
+      -2.382596049479036,
+      37.43653023328945
+    ],
+    "compress": "gzip",
+    "description": "Official Sierra Nevada National Park boundary with a 25 km buffer measured in ETRS89 / UTM 30N; complete source ways and polygons retained at the edge. Rectangular tile envelope includes additional context.",
+    "include_ids": false,
+    "maxzoom": 14,
+    "minzoom": 4,
+    "name": "OpenBareMap Sierra Nevada geometry",
+    "version": "2.0.0-preview.1"
+  }
+}

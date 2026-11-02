@@ -1,0 +1,15 @@
+{
+  "sampleSpacingMetres": 500,
+  "landSamplesInsideParkAnd25km": 30330,
+  "missingElevationSamples": 1,
+  "sampleElevationRangeMetres": [
+    1,
+    3353
+  ],
+  "note": "Includes only the buffered footprint on land; sea excluded using the locked coastal land source.",
+  "missingInlandSamples": 0,
+  "coastlinePixelEdgeSamples": 1,
+  "missingSampleDistancesFromCoastMetres": [
+    3.2461807426578773
+  ]
+}

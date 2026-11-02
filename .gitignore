@@ -85,3 +85,16 @@ data/regions/scotland/elevation/*
 
 # Published standalone resource ZIPs are pinned by the release/publication manifests.
 regions/*/exports/
+
+# Sierra Nevada pinned sources and local review checkpoint.
+!data/regions/sierra-nevada/
+data/regions/sierra-nevada/*
+!data/regions/sierra-nevada/*.osm.pbf
+!data/regions/sierra-nevada/*.poly
+!data/regions/sierra-nevada/elevation/
+data/regions/sierra-nevada/elevation/*
+!data/regions/sierra-nevada/elevation/*.hgt.gz
+!data/regions/sierra-nevada/boundary/
+data/regions/sierra-nevada/boundary/*
+!data/regions/sierra-nevada/boundary/Limites_PPNN.kml
+/releases/sierra-nevada/2.0.0-preview.1/

@@ -25,7 +25,7 @@ python3 scripts/build_distribution_instructions.py
 ```
 
 Runtime maps must already be assembled in ios/package and android/package for
-Ireland, or regions/<region>/<platform> for England/Wales and Scotland. The
+Ireland, or regions/<region>/<platform> for England/Wales, Scotland and Sierra Nevada. The
 builder verifies all resource hashes against their current map selections,
 checks the native Android ZIP's individual members, creates the outer kits and
 verifies their CRCs. It writes only a new work/app-bundles-v1 directory and the

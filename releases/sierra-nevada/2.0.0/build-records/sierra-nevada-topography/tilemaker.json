@@ -1,0 +1,38 @@
+{
+  "layers": {
+    "contour": {
+      "maxzoom": 14,
+      "minzoom": 8,
+      "simplify_below": 13,
+      "simplify_level": 2e-05,
+      "source": "/Users/davidowens/Documents/Codex/2026-10-25/i-x20/outputs/OpenBareMap/build/sierra-nevada-topography/contours.geojson",
+      "source_columns": [
+        "elevation"
+      ]
+    },
+    "land": {
+      "maxzoom": 12,
+      "minzoom": 4,
+      "simplify_below": 12,
+      "simplify_level": 3e-05,
+      "simplify_ratio": 2,
+      "source": "/Users/davidowens/Documents/Codex/2026-10-25/i-x20/outputs/OpenBareMap/build/sierra-nevada-topography/land.geojson"
+    }
+  },
+  "settings": {
+    "basezoom": 14,
+    "bounding_box": [
+      -3.8286890657119104,
+      36.71525811988457,
+      -2.382596049479036,
+      37.43653023328945
+    ],
+    "compress": "gzip",
+    "description": "OSM coastal land and Terrain Tiles elevation contours",
+    "include_ids": false,
+    "maxzoom": 14,
+    "minzoom": 4,
+    "name": "OpenBareMap coast and contours",
+    "version": "0.1.0"
+  }
+}

@@ -35,9 +35,10 @@ def fetch_osm(region):
     if lockpath.exists():
         existing=json.loads(lockpath.read_text());verify(existing['inputs']+[existing['osm']]);return
     directory=ROOT/'data/regions'/region;stamp=p['sourceDate'].replace('-','')[2:]
+    base=p.get('sourceBaseURL','https://download.geofabrik.de/europe/united-kingdom/')
     inputs=[]
     for slug in p['sourceSlugs']:
-        name=f'{slug}-{stamp}.osm.pbf';url='https://download.geofabrik.de/europe/united-kingdom/'+name
+        name=f'{slug}-{stamp}.osm.pbf';url=base+name
         path=directory/name
         if not path.exists():
             from download_ranges import fetch
@@ -52,7 +53,7 @@ def fetch_osm(region):
     timestamps={item['replicationTimestamp'] for item in inputs}
     if len(timestamps)!=1 or not next(iter(timestamps)):
         raise ValueError('Regional inputs must share a nonempty OSM snapshot timestamp')
-    polygons=[download('https://download.geofabrik.de/europe/united-kingdom/'+slug+'.poly',directory/(slug+'.poly')) for slug in p['sourceSlugs']]
+    polygons=[download(base+slug+'.poly',directory/(slug+'.poly')) for slug in p['sourceSlugs']]
     if len(inputs)==1:
         merged={**inputs[0],'snapshot_date':p['sourceDate'],'operation':'Complete upstream extract; no merge or spatial filtering'}
     else:
@@ -103,7 +104,7 @@ def fetch_dem_padding(region):
     print('Garmin DEM padding locked:',len(assets),'additional cells',flush=True)
 
 if __name__=='__main__':
-    parser=argparse.ArgumentParser();parser.add_argument('--region',choices=['england-wales','scotland'],required=True);parser.add_argument('--stage',choices=['osm','terrain','padding','all'],default='all');args=parser.parse_args()
+    parser=argparse.ArgumentParser();parser.add_argument('--region',choices=['england-wales','scotland','sierra-nevada'],required=True);parser.add_argument('--stage',choices=['osm','terrain','padding','all'],default='all');args=parser.parse_args()
     if args.stage=='padding':fetch_dem_padding(args.region)
     if args.stage in ('terrain','all'):fetch_terrain(args.region)
     if args.stage in ('osm','all'):fetch_osm(args.region)

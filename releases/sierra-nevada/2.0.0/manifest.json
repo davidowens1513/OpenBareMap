@@ -1,0 +1,119 @@
+{
+  "acceptance": "Automated checks only; see validation and visual-review records for actual reviewed scope.",
+  "coverage": "Official Sierra Nevada National Park boundary with a 25 km buffer measured in ETRS89 / UTM 30N; complete source ways and polygons retained at the edge. Rectangular tile envelope includes additional context.",
+  "datasets": {
+    "basemap": {
+      "bytes": 90144768,
+      "path": "releases/sierra-nevada/2.0.0/maps/basemap.mbtiles",
+      "sha256": "d6403659122142f0153a50a2a472408620bc7bdfe4aec01f9f8f8af5e05c586d",
+      "validation": {
+        "empty_tile_count": 8,
+        "logical_tiles_sha256": "5d390f9e555bb7eefaeca0effa651fcb97ed7975aa260c4090889fbe9a5b72d7",
+        "tile_count": 3689
+      }
+    },
+    "grid": {
+      "bytes": 1351680,
+      "path": "releases/sierra-nevada/2.0.0/maps/grid.mbtiles",
+      "sha256": "cfc3682766d7e0b558f157e39a4815241f98b9d8e164c9a15ef352c8a1e32c4b",
+      "validation": {
+        "empty_tile_count": 0,
+        "logical_tiles_sha256": "4bc16abcd9150b5b4f7e7674146643fd85c3fda290960a079e0d3a4f896344ef",
+        "tile_count": 3784
+      }
+    },
+    "hillshade": {
+      "bytes": 11206656,
+      "path": "releases/sierra-nevada/2.0.0/maps/hillshade.mbtiles",
+      "sha256": "b9d22f34db147318cd69faea88fb2b2bcfed0d5952cfe6ad0942ede2447fda29",
+      "validation": {
+        "empty_tile_count": 0,
+        "logical_tiles_sha256": "b3195ffd97783f3268c5aa6bb051746a850db536fb5cee7fbae39aa6973ab6e8",
+        "tile_count": 256
+      }
+    },
+    "topography": {
+      "bytes": 54927360,
+      "path": "releases/sierra-nevada/2.0.0/maps/topography.mbtiles",
+      "sha256": "cf54bb56b66568fbbf3f0878eb180c6fb03efc64772e1f4701f5644d77e8ee72",
+      "validation": {
+        "empty_tile_count": 169,
+        "logical_tiles_sha256": "7a6c109b3a8e79f491efed5976b22a3cd49bc4c64e2620c0849f3aa7c48d765b",
+        "tile_count": 3794
+      }
+    }
+  },
+  "garmin": {
+    "bytes": 25946112,
+    "path": "regions/sierra-nevada/garmin/dist/OpenBareMap-Sierra-Nevada.img",
+    "sha256": "55c9233b119a40ae9826e7c9e1d857e9f0c750ac40df0b323c165ae5e1d93b7d"
+  },
+  "geometryReport": {
+    "path": "releases/sierra-nevada/2.0.0/build-records/sierra-nevada-geometry/geometry-report.json",
+    "sha256": "b4bc0a225a9710fb7e6e6e30e82835e92191cf5207ca4e911af1ec6b4bc17ad1"
+  },
+  "hostAppsModified": false,
+  "mapVersion": "2.0.0",
+  "osm": {
+    "bytes": 195921650,
+    "operation": "Complete upstream extract; no merge or spatial filtering",
+    "path": "data/regions/sierra-nevada/andalucia-261031.osm.pbf",
+    "replicationTimestamp": "2026-10-31T21:23:06Z",
+    "sha256": "eccbdd9dbc99f69269537512b4f9c36a8ca672acf5279a4d5e7961dd981b3af6",
+    "snapshot_date": "2026-10-31",
+    "url": "https://download.geofabrik.de/europe/spain/andalucia-261031.osm.pbf"
+  },
+  "packages": {
+    "android": {
+      "archive": {
+        "bytes": 167533799,
+        "path": "regions/sierra-nevada/android/OpenBareMap-Android.zip",
+        "sha256": "7e8278cb8d55061cfa943d1be446c08db95bb4dbab31bff68020147dcdab124a"
+      },
+      "checksumsSHA256": "96aaf9099cf6243993d0e04c8027e1dcd33fbf9232ab33c1c1aed1b52475a3a3",
+      "manifestSHA256": "63505f11202561cb5e9c4c3fcf3eb3aff5eb2837df52f1c09d332854c6068ffe",
+      "path": "regions/sierra-nevada/android",
+      "validationSHA256": "b9a8a6a0202284deda37139a85874c0db7c5590c37c7c71c4be73f00ac26cf81"
+    },
+    "ios": {
+      "checksumsSHA256": "d4ff4310d33aa59f13bdffa864f9beea18ffa75c84103a129b1908588029d5ab",
+      "manifestSHA256": "14a9ace106e9f4fc5fe1365cf6a989a9d028f07b5ff3916a4e1125540f5b6551",
+      "path": "regions/sierra-nevada/ios",
+      "validationSHA256": "4b2f4589852b8a2c4135cfcd285a9f98e2484e119eacf6b3d2ba4c2d173281ec"
+    }
+  },
+  "pythonRuntime": {
+    "packages": {
+      "Pillow": "12.3.0",
+      "certifi": "2026.10.23",
+      "charset-normalizer": "3.5.2",
+      "idna": "3.20",
+      "numpy": "2.5.4",
+      "osmium": "4.3.2",
+      "pyproj": "3.8.0",
+      "requests": "2.34.2",
+      "shapely": "2.2.0",
+      "urllib3": "2.8.0"
+    },
+    "platform": "macOS-27.0.1-arm64-arm-64bit-Mach-O",
+    "python": "3.14.5 (main, May 10 2026, 10:21:34) [Clang 21.0.0 (clang-2100.0.123.102)]"
+  },
+  "region": "sierra-nevada",
+  "standaloneResourceArchives": {
+    "android": {
+      "bytes": 167533799,
+      "path": "regions/sierra-nevada/exports/android/OpenBareMap-SierraNevada-Android.zip",
+      "sha256": "7e8278cb8d55061cfa943d1be446c08db95bb4dbab31bff68020147dcdab124a",
+      "url": "https://downloads.appsbyonzy.dev/OpenBareMap/sierra-nevada/2.0.0/android/OpenBareMap-SierraNevada-Android.zip"
+    },
+    "ios": {
+      "bytes": 167554946,
+      "path": "regions/sierra-nevada/exports/ios/OpenBareMap-SierraNevada-iOS.zip",
+      "sha256": "c50ba8fa8ba674addbfc2eaf48921f62159ab2188b4b288d6c9e959508498253",
+      "url": "https://downloads.appsbyonzy.dev/OpenBareMap/sierra-nevada/2.0.0/ios/OpenBareMap-SierraNevada-iOS.zip"
+    }
+  },
+  "styleSHA256": "9f0061b89e9950d82e7b91ab7ed281f89021ebe24e8b54a2f65d849b12bdca17",
+  "terrainLockSHA256": "63f16097e51fc812698a51a7918090f0e103c00172dd34f801c4bf21d50d054a",
+  "validation": "validation.json"
+}

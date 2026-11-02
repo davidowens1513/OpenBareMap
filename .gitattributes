@@ -16,3 +16,6 @@ regions/**/*.geojson.gz filter=lfs diff=lfs merge=lfs -text
 
 # Preserve compiler/build records exactly, including terminal progress whitespace.
 releases/scotland/2.0.0/build-records/** -whitespace
+
+data/regions/sierra-nevada/boundary/*.kml filter=lfs diff=lfs merge=lfs -text
+releases/sierra-nevada/2.0.0/build-records/** -whitespace

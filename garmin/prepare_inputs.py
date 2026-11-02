@@ -26,7 +26,7 @@ def prepare(region='ireland'):
  result=WORK/'overlays.osm.gz'
  if result.exists():raise FileExistsError(result)
  nodefile=WORK/'overlay-nodes.xml';wayfile=WORK/'overlay-ways.xml';relfile=WORK/'overlay-relations.xml'
- counts={'contours':0,'land_polygons':0,'landcover_polygons':0,'townlands':0,'nodes':0,'ways':0,'relations':0,'contour_intervals':{},'coverage':[-11,51,-5,56] if region=='ireland' else p['bounds']}
+ counts={'contours':0,'land_polygons':0,'landcover_polygons':0,'townlands':0,'nodes':0,'ways':0,'relations':0,'contour_intervals':{},'coverage':[-11,51,-5,56] if region=='ireland' else p.get('garminContextBounds',p['bounds'])}
  nodes=nodefile.open('w');ways=wayfile.open('w');rels=relfile.open('w')
  next_node=30000000000;next_way=30000000000;next_relation=30000000000
  def tags(values):return ''.join('<tag k='+quoteattr(k)+' v='+quoteattr(str(v))+'/>' for k,v in values.items())
@@ -67,6 +67,13 @@ def prepare(region='ireland'):
  for f in features(ROOT/'garmin/inputs/landcover-smoothed.geojson.gz' if region=='ireland' else ROOT/'regions'/region/'garmin/inputs/landcover.geojson.gz'):
   g=f['geometry'];polys=[g['coordinates']] if g['type']=='Polygon' else g['coordinates']
   for rings in polys:polygon(rings,{'obm:landcover':f['properties']['class']});counts['landcover_polygons']+=1
+ if p.get('coverageBoundary'):
+  for name,tag in [('park-boundary','obm:park_boundary'),('coverage','obm:coverage_boundary')]:
+   data=json.loads(region_path(region,name+'.geojson').read_text())
+   for f in data['features']:
+    g=f['geometry'];polys=[g['coordinates']] if g['type']=='Polygon' else g['coordinates']
+    for rings in polys:
+     for ring in rings:line(ring,{tag:'yes','name':'Sierra Nevada National Park' if name=='park-boundary' else '25 km coverage limit'},closed=True)
  west,south,east,north=counts['coverage']
  polygon([[[west,south],[east,south],[east,north],[west,north],[west,south]]],{'obm:sea':'yes'})
  if p['townlands']:
@@ -91,4 +98,4 @@ def prepare(region='ireland'):
  counts['overlay_sha256']=digest(result);counts['overlay_bytes']=result.stat().st_size
  (WORK/'prepared.json').write_text(json.dumps(counts,indent=2)+'\n');print(json.dumps(counts,indent=2))
 if __name__=='__main__':
- parser=argparse.ArgumentParser();parser.add_argument('--region',choices=['ireland','england-wales','scotland'],default='ireland');args=parser.parse_args();prepare(args.region)
+ parser=argparse.ArgumentParser();parser.add_argument('--region',choices=['ireland','england-wales','scotland','sierra-nevada'],default='ireland');args=parser.parse_args();prepare(args.region)

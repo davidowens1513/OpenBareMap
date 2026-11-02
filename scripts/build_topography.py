@@ -89,7 +89,7 @@ def build(args):
 if __name__=='__main__':
     parser=argparse.ArgumentParser()
     parser.add_argument('name',type=build_name)
-    parser.add_argument('--region',choices=['ireland','england-wales','scotland'],default='ireland')
+    parser.add_argument('--region',choices=['ireland','england-wales','scotland','sierra-nevada'],default='ireland')
     parser.add_argument('--accept-toolchain',action='store_true')
     try:build(parser.parse_args())
     except (OSError,ValueError,subprocess.SubprocessError) as error:sys.exit(str(error))

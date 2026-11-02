@@ -1,0 +1,29 @@
+{
+  "accessed_utc": "2026-11-02T16:52:11.473047+00:00",
+  "inputs": [
+    {
+      "bytes": 195921650,
+      "path": "data/regions/sierra-nevada/andalucia-261031.osm.pbf",
+      "replicationTimestamp": "2026-10-31T21:23:06Z",
+      "sha256": "eccbdd9dbc99f69269537512b4f9c36a8ca672acf5279a4d5e7961dd981b3af6",
+      "url": "https://download.geofabrik.de/europe/spain/andalucia-261031.osm.pbf"
+    }
+  ],
+  "osm": {
+    "bytes": 195921650,
+    "operation": "Complete upstream extract; no merge or spatial filtering",
+    "path": "data/regions/sierra-nevada/andalucia-261031.osm.pbf",
+    "replicationTimestamp": "2026-10-31T21:23:06Z",
+    "sha256": "eccbdd9dbc99f69269537512b4f9c36a8ca672acf5279a4d5e7961dd981b3af6",
+    "snapshot_date": "2026-10-31",
+    "url": "https://download.geofabrik.de/europe/spain/andalucia-261031.osm.pbf"
+  },
+  "polygons": [
+    {
+      "bytes": 6031,
+      "path": "data/regions/sierra-nevada/andalucia.poly",
+      "sha256": "a801f43682c70935ccc3d87ac9f5905c6434c75d6a1e6b85bb336a8b679eb1f3",
+      "url": "https://download.geofabrik.de/europe/spain/andalucia.poly"
+    }
+  ]
+}

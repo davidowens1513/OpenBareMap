@@ -1,0 +1,31 @@
+{
+  "areaSquareDegrees": 0.7933341452219882,
+  "bounds": [
+    -3.8286890657119104,
+    36.71525811988457,
+    -2.382596049479036,
+    37.43653023328945
+  ],
+  "entireRequestedFootprintCovered": true,
+  "exactFootprint": "regions/sierra-nevada/coverage.geojson",
+  "inputs": [
+    {
+      "bytes": 6031,
+      "path": "data/regions/sierra-nevada/andalucia.poly",
+      "sha256": "a801f43682c70935ccc3d87ac9f5905c6434c75d6a1e6b85bb336a8b679eb1f3",
+      "url": "https://download.geofabrik.de/europe/spain/andalucia.poly"
+    }
+  ],
+  "knownDestinationsCovered": [
+    "island",
+    "mulhacen",
+    "veleta",
+    "capileira",
+    "trevelez",
+    "granada",
+    "puerto-de-la-ragua"
+  ],
+  "operation": "Conservative convex tile-selection envelope covering official park plus 25 km; exact boundaries retained in map overlays",
+  "polygons": 1,
+  "sha256": "b7311f4c011e991f08a34e54a4315ae8fad546cf65d3b25e8ac803ce4a462165"
+}

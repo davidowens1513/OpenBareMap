@@ -1,0 +1,27 @@
+{
+  "localBuildsComplete": true,
+  "pythonRegressionTests": 61,
+  "swiftLoader": "Loaded actual Sierra Nevada bundle; all offline sources and three inline geometries retained",
+  "androidLoader": "7 unit tests passed, including actual Sierra Nevada package verification and offline boundary preservation",
+  "garminMapSet": "Five binaries, 509 unique sections, 190 regional land checks across all five detail levels",
+  "hardwareRenderingTested": false,
+  "publicationStatus": "Published to R2 and production appsbyonzy.dev; full public download checksums verified",
+  "androidLoaderTests": 7,
+  "androidLoaderTestsPassed": 7,
+  "androidLoaderTestsSkipped": 0,
+  "finalLegend": "Province boundary, national park and 25 km coverage lines",
+  "integrationArchives": {
+    "android": {
+      "path": "work/app-bundles-v1/sierra-nevada/android/OpenBareMap-Sierra-Nevada-Android-Bundle.zip",
+      "sha256": "be97c40ca9e15c5e73bb9a4d0e14d277adaf6ac25696758edf35baaa125719f2",
+      "bytes": 167562254,
+      "archiveVerified": true
+    },
+    "ios": {
+      "path": "work/app-bundles-v1/sierra-nevada/ios/OpenBareMap-Sierra-Nevada-iOS-Bundle.zip",
+      "sha256": "19da55ab5393e48904b348c5397fe9ed47ff2d0b75899ef8997bb6ba794fb245",
+      "bytes": 167563001,
+      "archiveVerified": true
+    }
+  }
+}

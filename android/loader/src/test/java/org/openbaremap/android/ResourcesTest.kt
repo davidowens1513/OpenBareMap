@@ -54,6 +54,23 @@ class ResourcesTest {
             assertTrue(resolved.getJSONObject("sources").getJSONObject("basemap").getString("url").startsWith("mbtiles:///"))
         } finally { dir.deleteRecursively() }
     }
+    @Test fun preservesEmbeddedRegionalBoundariesWithoutNetworkLookups() {
+        val dir=root()
+        try {
+            fixture(dir)
+            val style=JSONObject(File(dir,"style.json").readText())
+            val inline=JSONObject("""{"type":"FeatureCollection","features":[{"type":"Feature","properties":{"name":"Sierra Nevada · España"},"geometry":{"type":"Point","coordinates":[-3.3114,37.0547]}}]}""")
+            for (name in listOf("park-boundary","coverage","coverage-mask")) {
+                style.getJSONObject("sources").put(name,JSONObject().put("type","geojson").put("data",inline))
+            }
+            File(dir,"style.json").writeText(style.toString())
+            val resolved=JSONObject(OpenBareMapResources.prepareStyle(dir))
+            for (name in listOf("park-boundary","coverage","coverage-mask")) {
+                assertEquals(inline.toString(),resolved.getJSONObject("sources").getJSONObject(name).getJSONObject("data").toString())
+            }
+            assertFalse(resolved.toString().contains("http://"))
+        } finally { dir.deleteRecursively() }
+    }
     @Test fun verifiedInstallIsRepeatableAndPreservesPreviousVersion() {
         val source=root(); val storage=root()
         try {
