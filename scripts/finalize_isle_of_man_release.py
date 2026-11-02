@@ -19,8 +19,10 @@ def main(build):
   b=ROOT/'garmin' if r=='ireland' else ROOT/'regions'/r/'garmin';j=json.loads((b/'build-report.json').read_text());p=b/'dist'/('OpenBareMap-'+title+'.img');assert digest(p)==j['output']['sha256'];records[r]={'image':p,'build':j,'base':b}
  java=Path('/opt/homebrew/opt/openjdk@21/bin/java');jar=ROOT/'garmin/tools/mkgmap-r4924/mkgmap.jar';classes=ROOT/'work/isle-of-man/validation-classes';classes.mkdir(exist_ok=True)
  subprocess.run([str(java.with_name('javac')),'-cp',str(jar),'-d',str(classes),str(ROOT/'garmin/ValidateMapSet.java')],check=True)
+ companions=[ROOT/'garmin/dist/OpenBareMap-My-Tracks.img']
+ companions=[p for p in companions if p.exists()]
  with (dest/'map-set-validation.txt').open('w') as f:
-  subprocess.run([str(java),'-Djava.awt.headless=true',*['-Dopenbaremap.tiles.'+str(x['build']['familyId'])+'='+str(x['build']['inspection']['tiles']) for x in records.values()],'-Xmx2g','-cp',str(classes)+':'+str(jar),'ValidateMapSet',*[str(x['image']) for x in records.values()],str(ROOT/'garmin/dist/OpenBareMap-My-Tracks.img')],stdout=f,check=True)
+  subprocess.run([str(java),'-Djava.awt.headless=true',*['-Dopenbaremap.tiles.'+str(x['build']['familyId'])+'='+str(x['build']['inspection']['tiles']) for x in records.values()],'-Xmx2g','-cp',str(classes)+':'+str(jar),'ValidateMapSet',*[str(x['image']) for x in records.values()],*map(str,companions)],stdout=f,check=True)
  instructions()
  manifest={'format':'openbaremap-garmin-release-v1','releaseDate':'2026-11-02','collectionRevision':REV,'nativeLevels':[24,23,22,20,18,16],'hikingLineResolution':24,'hikingLineWidthPixels':4,'whiteBacking':False,'buildingResolution':24,'fineContourResolution':23,'routing':False,'regions':{},'validation':record(dest/'map-set-validation.txt')}
  staging=ROOT/'work/isle-of-man/garmin-public';staging.mkdir(exist_ok=True)

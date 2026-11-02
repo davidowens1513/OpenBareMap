@@ -23,8 +23,12 @@ def main():
  old=json.loads((record/'previous-active-map.json').read_text());active=json.loads((ROOT/'regions/england-wales/active-map.json').read_text());baseline=ROOT/old['datasets']['basemap']['path'];target=ROOT/active['datasets']['basemap']['path']
  extension=json.loads((record/'map-extension.json').read_text())
  assert extension['originalBasemap']==old['datasets']['basemap'],'Extension provenance must retain the original baseline'
+ for path in [baseline,target]:
+  if not path.exists():
+   from restore_map_parts import restore
+   restore(path.with_name(path.name+'.parts.json'))
  unchanged=changed=features=0
- with sqlite3.connect(baseline) as src,sqlite3.connect(target) as dst:
+ with sqlite3.connect(baseline.as_uri()+'?mode=ro',uri=True) as src,sqlite3.connect(target.as_uri()+'?mode=ro',uri=True) as dst:
   for z,x,y,payload in src.execute('SELECT zoom_level,tile_column,tile_row,tile_data FROM tiles'):
    row=dst.execute('SELECT tile_data FROM tiles WHERE zoom_level=? AND tile_column=? AND tile_row=?',(z,x,y)).fetchone();assert row,'Original tile lost'
    if payload==row[0]:unchanged+=1;continue
