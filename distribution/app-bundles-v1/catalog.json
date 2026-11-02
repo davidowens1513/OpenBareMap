@@ -1,0 +1,217 @@
+{
+  "format": "openbaremap-app-bundle-catalog-v1",
+  "mapVersion": "2.0.0",
+  "regions": {
+    "england-wales": {
+      "android": {
+        "bytes": 3470954242,
+        "datasets": {
+          "basemap": {
+            "path": "maps/basemap.mbtiles",
+            "sha256": "ff60d06aa4646b9a917fea499d69ad9d04d46c63c8ab981e5653a320d1fc3fac"
+          },
+          "coast": {
+            "derivedFrom": "6228ae3821d85526d24f33b21d6db1be300b75babd3e254c9dfa0f1cd96066e1",
+            "path": "maps/coast.mbtiles",
+            "sha256": "ccf8ffd4ec85b58f6510389177e79e5e6e8a87c8c3a4295675a875a2d2aaae85"
+          },
+          "grid": {
+            "path": "maps/grid.mbtiles",
+            "sha256": "3008b9d2db998edb4a8d0d200e673e472e110290eed2b303874f2c5b36cf08af"
+          },
+          "hillshade": {
+            "path": "maps/hillshade.mbtiles",
+            "sha256": "1c7ac27cd22ff21f98ec2a51dc989999e89dbcaa24eb1e9510c9a80f2ae6cdd3"
+          },
+          "topography": {
+            "path": "maps/topography.mbtiles",
+            "sha256": "6228ae3821d85526d24f33b21d6db1be300b75babd3e254c9dfa0f1cd96066e1"
+          }
+        },
+        "instructionsSHA256": "c6ced1e729ddc319e4c61488e22ff35b04aeaeb57143c5f58261d7a7236e5ffe",
+        "instructionsURL": "https://downloads.appsbyonzy.dev/OpenBareMap/england-wales/2.0.0/app-bundles-v1/android/instructions.txt",
+        "localPath": "work/app-bundles-v1/england-wales/android/OpenBareMap-England-Wales-Android-Bundle.zip",
+        "mapManifestSHA256": "7e2db25a6d22ed47720d22b1420c0122712101caecac76ee3f7f43c181e779ac",
+        "r2Key": "OpenBareMap/england-wales/2.0.0/app-bundles-v1/android/OpenBareMap-England-Wales-Android-Bundle.zip",
+        "sha256": "55bd6478d2f65b8ebb96c06ae0dff79cea1922714f20a8693a58fd48fc534ff4",
+        "url": "https://downloads.appsbyonzy.dev/OpenBareMap/england-wales/2.0.0/app-bundles-v1/android/OpenBareMap-England-Wales-Android-Bundle.zip"
+      },
+      "ios": {
+        "bytes": 3470953602,
+        "datasets": {
+          "basemap": {
+            "path": "maps/basemap.mbtiles",
+            "sha256": "ff60d06aa4646b9a917fea499d69ad9d04d46c63c8ab981e5653a320d1fc3fac"
+          },
+          "coast": {
+            "derived_from": "6228ae3821d85526d24f33b21d6db1be300b75babd3e254c9dfa0f1cd96066e1",
+            "maxzoom": 12,
+            "operation": "Preserve land-layer MVT bytes only through zoom 12; omit other layers.",
+            "path": "maps/coast.mbtiles",
+            "sha256": "ccf8ffd4ec85b58f6510389177e79e5e6e8a87c8c3a4295675a875a2d2aaae85"
+          },
+          "grid": {
+            "path": "maps/grid.mbtiles",
+            "sha256": "3008b9d2db998edb4a8d0d200e673e472e110290eed2b303874f2c5b36cf08af"
+          },
+          "hillshade": {
+            "path": "maps/hillshade.mbtiles",
+            "sha256": "1c7ac27cd22ff21f98ec2a51dc989999e89dbcaa24eb1e9510c9a80f2ae6cdd3"
+          },
+          "topography": {
+            "path": "maps/topography.mbtiles",
+            "sha256": "6228ae3821d85526d24f33b21d6db1be300b75babd3e254c9dfa0f1cd96066e1"
+          }
+        },
+        "instructionsSHA256": "d9810045328f78bcba401b406222b1db6e083c608aa1bf1e904b83efac4d829c",
+        "instructionsURL": "https://downloads.appsbyonzy.dev/OpenBareMap/england-wales/2.0.0/app-bundles-v1/ios/instructions.txt",
+        "localPath": "work/app-bundles-v1/england-wales/ios/OpenBareMap-England-Wales-iOS-Bundle.zip",
+        "mapManifestSHA256": "1c927d7c6f507242f9d70546c2974c7a3cfe4deff06f7cf72c3466c52818d6f0",
+        "r2Key": "OpenBareMap/england-wales/2.0.0/app-bundles-v1/ios/OpenBareMap-England-Wales-iOS-Bundle.zip",
+        "sha256": "2db3e42d30804b0576f3e646fd03f7aef5d13c2a3870aaa17fa5ec03acc709a1",
+        "url": "https://downloads.appsbyonzy.dev/OpenBareMap/england-wales/2.0.0/app-bundles-v1/ios/OpenBareMap-England-Wales-iOS-Bundle.zip"
+      }
+    },
+    "ireland": {
+      "android": {
+        "bytes": 1008370658,
+        "datasets": {
+          "basemap": {
+            "path": "maps/basemap.mbtiles",
+            "sha256": "cb2e6ec1ebe474563422e44db2c5d30c2efa7c73ebb55a262b85508710943431"
+          },
+          "coast": {
+            "derivedFrom": "73811c156a62d3ce945bee34c9c2f2c8ad1bc66c87d4fd4d43e0ce314ed74ec5",
+            "path": "maps/coast.mbtiles",
+            "sha256": "89df36cc0e9a977775e443e9a8abf906431405334db723d702558d7f53751feb"
+          },
+          "grid": {
+            "path": "maps/grid.mbtiles",
+            "sha256": "449f6302f12b1d606de3e1d0467346e394e25c6c4c0b2b901f6a070873f58972"
+          },
+          "hillshade": {
+            "path": "maps/hillshade.mbtiles",
+            "sha256": "55d199c8ca56463286944c9ad2ef39c7ed3b844ebee151dafb11908ade2ac2e0"
+          },
+          "topography": {
+            "path": "maps/topography.mbtiles",
+            "sha256": "73811c156a62d3ce945bee34c9c2f2c8ad1bc66c87d4fd4d43e0ce314ed74ec5"
+          }
+        },
+        "instructionsSHA256": "9369a5448622e49e32f23af787b2f88c076fafd5b463172db20c0f1d7a16afdf",
+        "instructionsURL": "https://downloads.appsbyonzy.dev/OpenBareMap/ireland/2.0.0/app-bundles-v1/android/instructions.txt",
+        "localPath": "work/app-bundles-v1/ireland/android/OpenBareMap-Ireland-Android-Bundle.zip",
+        "mapManifestSHA256": "ce08b0d0ce4fe4f6a5e9cf5225539ea6fa40868e94c8f540dbce386aa968ce66",
+        "r2Key": "OpenBareMap/ireland/2.0.0/app-bundles-v1/android/OpenBareMap-Ireland-Android-Bundle.zip",
+        "sha256": "e5c347ad9ac2874c62a680ccb693a7919791241c547448133486de555904de82",
+        "url": "https://downloads.appsbyonzy.dev/OpenBareMap/ireland/2.0.0/app-bundles-v1/android/OpenBareMap-Ireland-Android-Bundle.zip"
+      },
+      "ios": {
+        "bytes": 1008378490,
+        "datasets": {
+          "basemap": {
+            "path": "maps/basemap.mbtiles",
+            "sha256": "cb2e6ec1ebe474563422e44db2c5d30c2efa7c73ebb55a262b85508710943431"
+          },
+          "coast": {
+            "derived_from": "73811c156a62d3ce945bee34c9c2f2c8ad1bc66c87d4fd4d43e0ce314ed74ec5",
+            "maxzoom": 12,
+            "operation": "Preserve land-layer MVT bytes only through zoom 12; omit other layers.",
+            "path": "maps/coast.mbtiles",
+            "sha256": "89df36cc0e9a977775e443e9a8abf906431405334db723d702558d7f53751feb"
+          },
+          "grid": {
+            "path": "maps/grid.mbtiles",
+            "sha256": "449f6302f12b1d606de3e1d0467346e394e25c6c4c0b2b901f6a070873f58972"
+          },
+          "hillshade": {
+            "path": "maps/hillshade.mbtiles",
+            "sha256": "55d199c8ca56463286944c9ad2ef39c7ed3b844ebee151dafb11908ade2ac2e0"
+          },
+          "topography": {
+            "path": "maps/topography.mbtiles",
+            "sha256": "73811c156a62d3ce945bee34c9c2f2c8ad1bc66c87d4fd4d43e0ce314ed74ec5"
+          }
+        },
+        "instructionsSHA256": "7e1fc809e4cd12fa275f3c36ae88200c3c8e0450b74810ef738075218f6caa8d",
+        "instructionsURL": "https://downloads.appsbyonzy.dev/OpenBareMap/ireland/2.0.0/app-bundles-v1/ios/instructions.txt",
+        "localPath": "work/app-bundles-v1/ireland/ios/OpenBareMap-Ireland-iOS-Bundle.zip",
+        "mapManifestSHA256": "22dbf14f33319d518908583c310b4cacd238f5ff95818fdfc1e100bc1e2e7164",
+        "r2Key": "OpenBareMap/ireland/2.0.0/app-bundles-v1/ios/OpenBareMap-Ireland-iOS-Bundle.zip",
+        "sha256": "cc03cee98aafa76a32a9f9a847790ec9c1a6e594461212ef9575a97c134623b7",
+        "url": "https://downloads.appsbyonzy.dev/OpenBareMap/ireland/2.0.0/app-bundles-v1/ios/OpenBareMap-Ireland-iOS-Bundle.zip"
+      }
+    },
+    "scotland": {
+      "android": {
+        "bytes": 1340627060,
+        "datasets": {
+          "basemap": {
+            "path": "maps/basemap.mbtiles",
+            "sha256": "194a5fabae662750fde88ca56ba60aae15fc8dd262ead11f27db47833d7bf366"
+          },
+          "coast": {
+            "derivedFrom": "42228623d26b85157cc022c511e4cb2ce598411507bb2170d95d7bb8e640b067",
+            "path": "maps/coast.mbtiles",
+            "sha256": "501085ed99313d5acaf8a056cf7b826fb1f8f32f897ecb8d4e466cc9d8469595"
+          },
+          "grid": {
+            "path": "maps/grid.mbtiles",
+            "sha256": "c6d6e919fd1241950300102acfcb086e488b7a90e81d3204557bda61150194be"
+          },
+          "hillshade": {
+            "path": "maps/hillshade.mbtiles",
+            "sha256": "d212ecd57f613849c940eedb5e1d32c4500ad506c9a14ea7fbc29d3e17e944c2"
+          },
+          "topography": {
+            "path": "maps/topography.mbtiles",
+            "sha256": "42228623d26b85157cc022c511e4cb2ce598411507bb2170d95d7bb8e640b067"
+          }
+        },
+        "instructionsSHA256": "a9de15db13338e1a573d49da61317099c586b250265b1478c65eb77bc5e2e79d",
+        "instructionsURL": "https://downloads.appsbyonzy.dev/OpenBareMap/scotland/2.0.0/app-bundles-v1/android/instructions.txt",
+        "localPath": "work/app-bundles-v1/scotland/android/OpenBareMap-Scotland-Android-Bundle.zip",
+        "mapManifestSHA256": "6e26461e81104a26a011322ba73c88b1865ad972559b9472e561e5dab1c11837",
+        "r2Key": "OpenBareMap/scotland/2.0.0/app-bundles-v1/android/OpenBareMap-Scotland-Android-Bundle.zip",
+        "sha256": "a91f322e3b917e064aae4ca8c9511c6ad8595673af35bceabc83d33f92e44dd2",
+        "url": "https://downloads.appsbyonzy.dev/OpenBareMap/scotland/2.0.0/app-bundles-v1/android/OpenBareMap-Scotland-Android-Bundle.zip"
+      },
+      "ios": {
+        "bytes": 1340626533,
+        "datasets": {
+          "basemap": {
+            "path": "maps/basemap.mbtiles",
+            "sha256": "194a5fabae662750fde88ca56ba60aae15fc8dd262ead11f27db47833d7bf366"
+          },
+          "coast": {
+            "derived_from": "42228623d26b85157cc022c511e4cb2ce598411507bb2170d95d7bb8e640b067",
+            "maxzoom": 12,
+            "operation": "Preserve land-layer MVT bytes only through zoom 12; omit other layers.",
+            "path": "maps/coast.mbtiles",
+            "sha256": "501085ed99313d5acaf8a056cf7b826fb1f8f32f897ecb8d4e466cc9d8469595"
+          },
+          "grid": {
+            "path": "maps/grid.mbtiles",
+            "sha256": "c6d6e919fd1241950300102acfcb086e488b7a90e81d3204557bda61150194be"
+          },
+          "hillshade": {
+            "path": "maps/hillshade.mbtiles",
+            "sha256": "d212ecd57f613849c940eedb5e1d32c4500ad506c9a14ea7fbc29d3e17e944c2"
+          },
+          "topography": {
+            "path": "maps/topography.mbtiles",
+            "sha256": "42228623d26b85157cc022c511e4cb2ce598411507bb2170d95d7bb8e640b067"
+          }
+        },
+        "instructionsSHA256": "87c15226e48da7dc8b18d0a4eaaa582d380d08f45ed12f4c7de0039d18343e16",
+        "instructionsURL": "https://downloads.appsbyonzy.dev/OpenBareMap/scotland/2.0.0/app-bundles-v1/ios/instructions.txt",
+        "localPath": "work/app-bundles-v1/scotland/ios/OpenBareMap-Scotland-iOS-Bundle.zip",
+        "mapManifestSHA256": "0c2ed1bc2814cd85517c83f85ff86a476b230705460a9b285d16342e3a7273a7",
+        "r2Key": "OpenBareMap/scotland/2.0.0/app-bundles-v1/ios/OpenBareMap-Scotland-iOS-Bundle.zip",
+        "sha256": "d8ec7868706fee8f71f2b2c4d2fbb0d841e99f6fb7bc550efb5f245f87ac813d",
+        "url": "https://downloads.appsbyonzy.dev/OpenBareMap/scotland/2.0.0/app-bundles-v1/ios/OpenBareMap-Scotland-iOS-Bundle.zip"
+      }
+    }
+  },
+  "sourceCommit": "f55b85940689f37e0474d416cec440913cb06e85"
+}

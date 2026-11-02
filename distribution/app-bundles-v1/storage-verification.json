@@ -1,0 +1,55 @@
+{
+  "regions": {
+    "ireland": {
+      "r2Prefix": "OpenBareMap/ireland/2.0.0/app-bundles-v1/",
+      "objects": [
+        "android/OpenBareMap-Ireland-Android-Bundle.zip",
+        "android/SHA256SUMS.txt",
+        "android/instructions.txt",
+        "android/manifest.json",
+        "ios/OpenBareMap-Ireland-iOS-Bundle.zip",
+        "ios/SHA256SUMS.txt",
+        "ios/instructions.txt",
+        "ios/manifest.json",
+        "manifest.json"
+      ],
+      "publicBundlesVerified": 2,
+      "garminInstructionsVerified": true
+    },
+    "england-wales": {
+      "r2Prefix": "OpenBareMap/england-wales/2.0.0/app-bundles-v1/",
+      "objects": [
+        "android/OpenBareMap-England-Wales-Android-Bundle.zip",
+        "android/SHA256SUMS.txt",
+        "android/instructions.txt",
+        "android/manifest.json",
+        "ios/OpenBareMap-England-Wales-iOS-Bundle.zip",
+        "ios/SHA256SUMS.txt",
+        "ios/instructions.txt",
+        "ios/manifest.json",
+        "manifest.json"
+      ],
+      "publicBundlesVerified": 2,
+      "garminInstructionsVerified": true
+    },
+    "scotland": {
+      "r2Prefix": "OpenBareMap/scotland/2.0.0/app-bundles-v1/",
+      "objects": [
+        "android/OpenBareMap-Scotland-Android-Bundle.zip",
+        "android/SHA256SUMS.txt",
+        "android/instructions.txt",
+        "android/manifest.json",
+        "ios/OpenBareMap-Scotland-iOS-Bundle.zip",
+        "ios/SHA256SUMS.txt",
+        "ios/instructions.txt",
+        "ios/manifest.json",
+        "manifest.json"
+      ],
+      "publicBundlesVerified": 2,
+      "garminInstructionsVerified": true
+    }
+  },
+  "sharedCatalogURL": "https://downloads.appsbyonzy.dev/OpenBareMap/app-bundles-v1/catalog.json",
+  "sharedCatalogSHA256": "365572a34d35de1ede0065a7e3ce24b6bed0bc66ef4c55feb0b6a48e5d6c78c7",
+  "temporaryUnpackedPayloadsPublished": false
+}

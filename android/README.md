@@ -1,5 +1,7 @@
 # OpenBareMap 2.0 for Android
 
+For complete regional app integration downloads, use the [bundle catalog](../distribution/app-bundles-v1/catalog.json) and the [regional download table](../README.md#downloads-and-incorporation-instructions). Each kit includes its matching instructions, current resources, loader and example code.
+
 MapLibre Native Android implementation, separated from the iOS integration. Shared map data and styling remain in the repository root. The reference app is for testing/integration, not a signed production release.
 
 ## Ready-to-use outputs

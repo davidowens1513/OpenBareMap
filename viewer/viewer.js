@@ -1,7 +1,7 @@
 const edition = await fetch('/region.json').then(response => response.json());
 const editionBounds = edition.bounds ? [[edition.bounds[0],edition.bounds[1]],[edition.bounds[2],edition.bounds[3]]] : [[-10.9,51.25],[-5.35,55.5]];
 const status = document.getElementById('status');
-const map = new maplibregl.Map({container:'map',style:'/style/openbaremap.json',bounds:editionBounds,fitBoundsOptions:{padding:innerWidth<600?{top:225,bottom:35,left:25,right:25}:{top:35,bottom:35,left:330,right:45}},minZoom:4,maxZoom:18,hash:true,renderWorldCopies:false,attributionControl:false});
+const map = new maplibregl.Map({container:'map',style:'/style/openbaremap.json',bounds:editionBounds,fitBoundsOptions:{padding:innerWidth<600?{top:225,bottom:35,left:25,right:25}:{top:35,bottom:35,left:330,right:45}},minZoom:4,maxZoom:18,hash:true,pitch:0,minPitch:0,maxPitch:0,pitchWithRotate:false,touchPitch:false,renderWorldCopies:false,attributionControl:false});
 window.referenceMap = map;
 window.mapErrors = [];
 map.addControl(new maplibregl.NavigationControl(), 'top-right');

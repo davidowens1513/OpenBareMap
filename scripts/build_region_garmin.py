@@ -96,7 +96,8 @@ def main(region):
     if output.exists():raise FileExistsError(output)
     shutil.copyfile(image,output)
     if digest(output)!=digest(image):raise ValueError('Distribution copy mismatch')
-    (dist/'INSTALL.txt').write_text(f"{p['name']} {p['mapVersion']}\n\nCopy {output.name} into the Garmin folder on your device or memory card, then enable {p['name']}. This edition has its own reserved family ID and can coexist with the other OpenBareMap editions. Display-only: no turn-by-turn routing. Use metres for contour labels.\n\nDevice rendering has not yet been reviewed.\n\nAttribution: https://downloads.appsbyonzy.dev/Garmin/{region}/ATTRIBUTION.txt\nElevation sources: https://downloads.appsbyonzy.dev/Garmin/{region}/terrain-data-sources.md\nElevation attribution: https://downloads.appsbyonzy.dev/Garmin/{region}/terrain-attribution.md\n")
+    from build_distribution_instructions import garmin_instructions
+    (dist/'INSTALL.txt').write_text(garmin_instructions(region,output.name))
     shutil.copyfile(copyright_file,dist/'ATTRIBUTION.txt')
     for name in ('terrain-attribution.md','terrain-data-sources.md'):shutil.copyfile(ROOT/'data'/name,dist/name)
     write(dest/'build-report.json',{'status':'compiled and structurally inspected; hardware rendering pending','familyId':p['garminFamilyId'],'garminPackageRevision':config['garminPackageRevision'],'routing':False,'output':{'path':str(output.relative_to(ROOT)),'bytes':output.stat().st_size,'sha256':digest(output)},'inspection':json.loads((dest/'inspection.json').read_text())})

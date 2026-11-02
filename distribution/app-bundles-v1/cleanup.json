@@ -1,0 +1,31 @@
+{
+  "temporaryPayloadsRemovedAfterPublicReadback": [
+    {
+      "path": "work/app-bundles-v1/ireland/android/payload",
+      "logicalBytes": 1008369506
+    },
+    {
+      "path": "work/app-bundles-v1/ireland/ios/payload",
+      "logicalBytes": 1008370612
+    },
+    {
+      "path": "work/app-bundles-v1/england-wales/android/payload",
+      "logicalBytes": 3470952914
+    },
+    {
+      "path": "work/app-bundles-v1/england-wales/ios/payload",
+      "logicalBytes": 3470945072
+    },
+    {
+      "path": "work/app-bundles-v1/scotland/android/payload",
+      "logicalBytes": 1340625908
+    },
+    {
+      "path": "work/app-bundles-v1/scotland/ios/payload",
+      "logicalBytes": 1340618443
+    }
+  ],
+  "referenceSDKCacheRemoved": true,
+  "deliveryZIPsRetained": true,
+  "canonicalMapResourcesUnchanged": true
+}

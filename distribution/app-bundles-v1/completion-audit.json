@@ -1,0 +1,69 @@
+{
+  "verifiedUTC": "2026-11-02T16:27:37.345177+00:00",
+  "requirements": {
+    "sixAppReadyBundles": {
+      "passed": true,
+      "evidence": [
+        "catalog.json",
+        "publication-ireland.json",
+        "publication-england-wales.json",
+        "publication-scotland.json"
+      ]
+    },
+    "loadersDependenciesExamplesAndNotices": {
+      "passed": true,
+      "evidence": [
+        "ios-sdk-validation.json",
+        "ios-loader-validation.json",
+        "android-loader-validation.json",
+        "catalog.json"
+      ]
+    },
+    "distinctR2Storage": {
+      "passed": true,
+      "evidence": "storage-verification.json"
+    },
+    "websiteRowsAndSpacing": {
+      "passed": true,
+      "evidence": [
+        "website-verification.json",
+        "verification/website-bundle-links-live.png"
+      ]
+    },
+    "consistentDeviceIndependentInstructions": {
+      "passed": true,
+      "mobileGuides": 6,
+      "garminGuides": 3,
+      "evidence": [
+        "../templates/ios-instructions.txt",
+        "../templates/android-instructions.txt",
+        "../templates/garmin-instructions.txt",
+        "garmin/"
+      ]
+    },
+    "overheadOnlyPreviews": {
+      "passed": true,
+      "evidence": [
+        "website-verification.json",
+        "verification/overhead-preview-live.png"
+      ]
+    },
+    "requestedWebsiteWording": {
+      "passed": true,
+      "evidence": [
+        "website-verification.json",
+        "verification/website-wording-live.png"
+      ]
+    },
+    "asIsRootREADME": {
+      "passed": true,
+      "path": "README.md"
+    },
+    "regressionAndPreservation": {
+      "passed": true,
+      "evidence": "regression-validation.json"
+    }
+  },
+  "nativeAppProjectsModified": false,
+  "gitPublicationCheck": "Commit and push task files; verify local HEAD equals origin/main and the GitHub remote ref."
+}

@@ -1,0 +1,63 @@
+OpenBareMap {{LABEL}} 2.0.0 — iOS Bundle
+For incorporation in iOS apps
+
+1. Contents
+OpenBareMap.bundle contains the complete regional map databases, offline style,
+fonts, sprites, legend, attribution, provenance and resource checksums. The ZIP
+also contains OpenBareMapResources.swift, an example view controller and bundle
+checksums. The renderer is an external dependency installed through Xcode.
+
+2. Requirements
+Use Xcode and an iOS application target with MapLibre Native for iOS. Add the
+MapLibre product through Xcode > File > Add Package Dependencies using:
+https://github.com/maplibre/maplibre-gl-native-distribution
+The reference dependency is MapLibre 7.0.0; select that release and retain its
+Package.resolved in your app repository. Follow that SDK’s iOS deployment requirements. The SDK must support local mbtiles:/// source URLs. Use UIKit
+MLNMapView directly, or wrap it in UIViewRepresentable for a SwiftUI application.
+Allow room for the extracted bundle, archive and your app's other resources.
+
+3. Incorporation
+Verify SHA256SUMS.txt beside the download before extracting the ZIP. Add the
+complete OpenBareMap.bundle to the application target's Copy Bundle Resources;
+preserve its directory structure and avoid flattening its contents. Add
+OpenBareMapResources.swift and the supplied example to the application target.
+Load the style with:
+
+    import MapLibre
+    let resources = try OpenBareMapResources.bundled()
+    let styleURL = try OpenBareMapResources.prepareStyle(in: resources)
+    mapView.styleURL = styleURL
+
+Start at latitude {{LAT}}, longitude {{LON}}, zoom {{ZOOM}}, or fit the region bounds
+in manifest.json. The example view controller demonstrates this setup. The helper
+resolves sandbox paths for MBTiles, glyphs, sprites and any regional GeoJSON.
+Keep the generated style and original bundle available while the map is in use.
+If storing a downloaded bundle in Application Support instead of the app target,
+open it using Bundle(url:) and pass that Bundle to prepareStyle(in:).
+Give each region a distinct parent directory. The bundled() shortcut expects one
+resource named OpenBareMap.bundle; use explicit Bundle URLs for multiple regions.
+
+4. Verification and offline use
+From the extracted ZIP directory on macOS, run: shasum -a 256 -c CHECKSUMS.txt
+The resource bundle also contains SHA256SUMS.txt for its own contents. Load the
+example, check the region's mountains, coast, text, hillshade and legend, then
+repeat with networking disabled. No tile server, localhost service or location
+permission is required to display the supplied offline map. A GPS feature in the
+consuming app requires its own permissions and implementation.
+
+5. Attribution and distribution
+Make ATTRIBUTION.txt and terrain-attribution.html accessible in the app, including
+the linked source notices and fonts/LICENSE-APACHE-2.0.txt. Preserve the bundled
+ODbL and elevation notices when redistributing map data. The app supplies its
+own controls, credits presentation and legend UI. PNG/SVG legends are included.
+
+6. Compatibility and support
+This is an OpenBareMap resource bundle, not a MapLibre offline-pack database.
+Use the helper rather than loading the unresolved style.json directly. Resource
+integrity and loader URL resolution are checked separately from app rendering;
+check performance, memory and rendering in your chosen SDK and deployment target.
+
+MapLibre iOS documentation: https://maplibre.org/maplibre-native/ios/latest/documentation/maplibre/
+Local MBTiles integration: https://github.com/maplibre/maplibre-native/issues/739
+Project: https://github.com/davidowens1513/OpenBareMap
+Contact: appsbyonzy@gmail.com

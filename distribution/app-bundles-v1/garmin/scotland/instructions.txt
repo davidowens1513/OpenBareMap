@@ -1,0 +1,47 @@
+OpenBareMap Scotland 2.0.0 — Garmin Map
+For compatible Garmin mapping products
+
+1. Contents
+OpenBareMap-Scotland.img contains the regional display-only topographic map,
+20-metre contours, native elevation data, land-cover styling and place names.
+It has its own map family identifier (4834) and can coexist with other
+OpenBareMap regions. It provides no turn-by-turn routing.
+
+2. Requirements
+Use a Garmin mapping product that accepts custom .img maps. Check its manual
+for custom-map support, storage location and map-management controls. Ensure
+there is enough free storage for the complete download. Keep its original map
+files and your personal data intact.
+
+3. Installation
+Download OpenBareMap-Scotland.img and verify its SHA-256 against:
+https://downloads.appsbyonzy.dev/Garmin/scotland-SHA256SUMS.txt
+Place the complete .img file in the Garmin map folder on supported internal
+storage or removable media, following your product's manual. Retain the supplied
+filename. Remove only superseded copies of this same OpenBareMap region; do not
+remove factory maps, other regional editions or personal overlays. Safely
+disconnect the storage, restart or refresh maps as needed, and enable OpenBareMap
+Scotland through the map settings. Use metres for metric contour labels.
+
+4. Verification and offline use
+Confirm the region is listed and enabled. Check an overview and detailed views
+of known mountains, coast and settlements. The installed map works offline.
+If it is not listed, check the file finished copying, its checksum matches and
+the storage location is supported. Avoid enabling duplicate copies of the same
+regional edition. Rendering and available controls depend on the Garmin product.
+
+5. Attribution and distribution
+OpenStreetMap-derived data is distributed under ODbL 1.0. Preserve the map and
+terrain notices when redistributing it:
+https://downloads.appsbyonzy.dev/Garmin/scotland/ATTRIBUTION.txt
+https://downloads.appsbyonzy.dev/Garmin/scotland/terrain-attribution.md
+https://downloads.appsbyonzy.dev/Garmin/scotland/terrain-data-sources.md
+
+6. Compatibility and support
+The Garmin rendering uses native fonts, symbols and detail levels. Its appearance
+differs from the interactive web and mobile previews. Follow the product manual
+for map selection and troubleshooting. This map is a navigation aid; source
+coverage and cartographic detail do not establish route suitability or access.
+
+Project: https://github.com/davidowens1513/OpenBareMap
+Contact: appsbyonzy@gmail.com

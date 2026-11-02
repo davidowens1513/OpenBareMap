@@ -1,0 +1,11 @@
+OpenBareMap Ireland
+
+© OpenStreetMap contributors. OSM-derived data is distributed under ODbL 1.0.
+https://www.openstreetmap.org/copyright
+https://opendatacommons.org/licenses/odbl/1-0/
+
+Elevation: Terrain Tiles / Mapzen composite, including Copernicus EU-DEM, USGS and NOAA. See terrain-attribution.html and terrain-data-sources.md for detailed notices. This is not claimed to be pure SRTM.
+
+Townland label points are inherited from OpenBareMap 1.1; their original generation recipe/date is not newly asserted. Colours and custom pattern design: OpenBareMap. Garmin renders native device fonts; this export does not embed Open Sans glyphs.
+
+Build tools: mkgmap and splitter (GPL; upstream source and licence notices are available at https://www.mkgmap.org.uk/ and in the pinned archives under garmin/tools). Python osmium notices are included in its pinned wheel. Tool licences do not replace the source-data notices above.
