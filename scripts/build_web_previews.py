@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Export both complete selected editions as static PMTiles browser previews."""
+"""Export complete selected editions as static PMTiles browser previews."""
 import argparse,hashlib,json,shutil,sqlite3,sys,tarfile,urllib.request
 from pathlib import Path
 from concurrent.futures import ThreadPoolExecutor
@@ -12,7 +12,8 @@ from package_preview_ui import package_ui
 def digest(p):
  with p.open('rb') as f:return hashlib.file_digest(f,'sha256').hexdigest()
 def write(p,v):p.write_text(json.dumps(v,indent=2,ensure_ascii=False)+'\n')
-def build(output,origin):
+def build(output,origin,regions=None):
+ regions=regions or ['ireland','england-wales','scotland']
  if output.exists():raise FileExistsError(output)
  output.mkdir(parents=True);assets=output/'assets';assets.mkdir();maps=output/'data';maps.mkdir()
  for folder in ['fonts','sprites']:shutil.copytree(ROOT/'viewer'/folder,assets/folder)
@@ -26,9 +27,9 @@ def build(output,origin):
  if not (assets/'pmtiles.js').is_file():raise ValueError('Missing browser protocol library')
  package.unlink()
  urllib.request.urlretrieve('https://raw.githubusercontent.com/protomaps/PMTiles/main/LICENSE',assets/'PMTiles-LICENSE.txt')
- package_ui(output)
+ package_ui(output,regions)
  jobs=[];records={}
- for region in ['ireland','england-wales']:
+ for region in regions:
   p=profile(region);active=active_map(region);directory=output/region;directory.mkdir(exist_ok=True);(maps/region).mkdir();records[region]={}
   style=region_style(region)
   for name,item in active['datasets'].items():
@@ -55,8 +56,8 @@ def build(output,origin):
   return region,name,{'sourceSHA256':sha,'bytes':target.stat().st_size,'sha256':digest(target),'tiles':count}
  with ThreadPoolExecutor(max_workers=2) as pool:
   for region,name,record in pool.map(convert,jobs):records[region][name]=record
- for region in ['ireland','england-wales']:(output/('coast-'+region+'.mbtiles')).unlink()
+ for region in regions:(output/('coast-'+region+'.mbtiles')).unlink()
  write(output/'manifest.json',{'regions':records,'pmtilesPython':'3.8.1','pmtilesJS':'4.5.0','librarySHA256':digest(assets/'pmtiles.js'),'dataOrigin':origin,'scope':'Complete selected map tiles; no regional or zoom sampling.'})
- print('Both full-region previews exported:',output,flush=True)
+ print('Complete previews exported:',', '.join(regions),output,flush=True)
 if __name__=='__main__':
- p=argparse.ArgumentParser();p.add_argument('--output',type=Path,required=True);p.add_argument('--origin',required=True);args=p.parse_args();build(args.output.resolve(),args.origin)
+ p=argparse.ArgumentParser();p.add_argument('--output',type=Path,required=True);p.add_argument('--origin',required=True);p.add_argument('--regions',nargs='+',choices=['ireland','england-wales','scotland']);args=p.parse_args();build(args.output.resolve(),args.origin,args.regions)

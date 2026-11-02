@@ -1,0 +1,20 @@
+{
+  "inputs": [
+    {
+      "path": "regions/scotland/garmin/inputs/contours.geojson.gz",
+      "sha256": "9a873cf79872c9fc6108d038d56c8995c5f5cc05d20be4a977743422dcf95d6f",
+      "uncompressedSHA256": "dece915633dd0d924a2dc7aacf38ad1d152f45a137c778e81843e7429c7a4350"
+    },
+    {
+      "path": "regions/scotland/garmin/inputs/landcover.geojson.gz",
+      "sha256": "ff23ea78240b8ede102f9db0a615da6d63353d079cd276f82c54c4f1ee0e2e05",
+      "uncompressedSHA256": "538806857932a465f2dc209da1f3c333fe533a228f14f65bec60442c0d33064d"
+    },
+    {
+      "path": "regions/scotland/garmin/inputs/land.geojson.gz",
+      "sha256": "e14ca402a8b287f9607964444c40f6392674710a4ddfa0562d78e165915a2203",
+      "uncompressedSHA256": "3e00fcf2d66b7e5671638c6587c73545a1152930c17c7f40756d23f2555b38f3"
+    }
+  ],
+  "region": "scotland"
+}

@@ -91,4 +91,4 @@ def prepare(region='ireland'):
  counts['overlay_sha256']=digest(result);counts['overlay_bytes']=result.stat().st_size
  (WORK/'prepared.json').write_text(json.dumps(counts,indent=2)+'\n');print(json.dumps(counts,indent=2))
 if __name__=='__main__':
- parser=argparse.ArgumentParser();parser.add_argument('--region',choices=['ireland','england-wales'],default='ireland');args=parser.parse_args();prepare(args.region)
+ parser=argparse.ArgumentParser();parser.add_argument('--region',choices=['ireland','england-wales','scotland'],default='ireland');args=parser.parse_args();prepare(args.region)

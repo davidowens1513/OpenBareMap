@@ -1,0 +1,34 @@
+{
+  "builderSHA256": "1abdc1dc556619346ae9f7436184b51d2816112bc10b485dd20260bdedce71ad",
+  "contoursSourceSHA256": "831de43769666adfddff959652ea1112110f859f4de4fb165c0c43e5eeed9179",
+  "counts": {
+    "contours": 158266,
+    "grid": {
+      "grid_10km": 242,
+      "grid_1km": 2402
+    },
+    "landcover": {
+      "empty_source_areas": [],
+      "features": 422813,
+      "retained": 34165,
+      "smoothed": 388648
+    }
+  },
+  "osm": {
+    "bytes": 329502519,
+    "operation": "Complete upstream extract; no merge or spatial filtering",
+    "path": "data/regions/scotland/scotland-261031.osm.pbf",
+    "replicationTimestamp": "2026-10-31T21:23:06Z",
+    "sha256": "7c50d0f0470f5f5ce3581608283e415ec9806df1c5f04dd1ed6d0a98aa8ca4c0",
+    "snapshot_date": "2026-10-31",
+    "url": "https://download.geofabrik.de/europe/united-kingdom/scotland-261031.osm.pbf"
+  },
+  "outputs": {
+    "contours.geojson": "dece915633dd0d924a2dc7aacf38ad1d152f45a137c778e81843e7429c7a4350",
+    "grid_10km.geojson": "a638e6c6f38e933b988130db1569eef58f9bc850245e9b4e71370ca3d286ea0a",
+    "grid_1km.geojson": "8b47fa85cbc7d148e86515e1796256527c7ce28441b71b7ae50eef36257ef7b0",
+    "landcover.geojson": "538806857932a465f2dc209da1f3c333fe533a228f14f65bec60442c0d33064d"
+  },
+  "region": "scotland",
+  "smootherSHA256": "7581d024dc1c1bec931642c7201db149bf64a64c814c451fa8bf37a0881ea6c9"
+}

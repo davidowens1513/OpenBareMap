@@ -64,4 +64,4 @@ On the GPSMAP 67i, installed detailed maps are managed under Setup > Map > Map M
 
 The Garmin 20 m profile retains national and county boundaries, townland labels, summit names, native DEM relief, bog texture and cliff markings. Local boundary lines and the former 50 m contour class are omitted. The personal-track overlay remains independent.
 
-The Montana 750i and GPSMAP 67i have the 20 m edition installed and fully read-back verified; their personal-track layers are unchanged. The GPSMAP H1 retains the preceding 10 m edition. Hardware visual review of the 20 m edition is pending.
+The Montana 750i, GPSMAP 67i and GPSMAP H1 have the 20 m edition installed and fully read-back verified; their personal-track layers are unchanged. The preceding 10 m Ireland map was removed from the H1. Hardware visual review of the 20 m edition is pending.

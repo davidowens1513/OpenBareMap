@@ -32,17 +32,17 @@ def build(region):
         db.commit();db.execute('VACUUM')
     replacement=rebuild(ROOT/old['path'],dest/'combined.mbtiles',dest/'coast.mbtiles','land')
     with closing(sqlite3.connect(dest/'combined.mbtiles')) as db:
-        for name,value in [('bounds',','.join(map(str,bounds))),('openbaremap_storage_revision','2.0.0-england-wales-r3')]:
+        for name,value in [('bounds',','.join(map(str,bounds))),('openbaremap_storage_revision',p['mapVersion']+'-'+region+'-r3')]:
             db.execute('DELETE FROM metadata WHERE name=?',(name,));db.execute('INSERT INTO metadata VALUES (?,?)',(name,value))
         db.commit()
     output=ROOT/'releases'/region/p['mapVersion']/'maps/topography-context.mbtiles';canonicalize(dest/'combined.mbtiles',output)
     record={'path':str(output.relative_to(ROOT)),'sha256':digest(output),'bytes':output.stat().st_size,'validation':inspect_tiles(output)}
     release=output.parent.parent
     write(release/'initial-active-map.json',active)
-    active['datasets']['topography']=record;active['storageRevision']='2.0.0-england-wales-r3'
+    active['datasets']['topography']=record;active['storageRevision']=p['mapVersion']+'-'+region+'-r3'
     write(region_path(region,'active-map.json'),active);write(region_path(region,'style.json'),region_style(region))
     write(release/'coast-context-report.json',{'source':coast,'contextBounds':bounds,'oldTopography':old,'replacement':replacement,'output':record,'builderSHA256':digest(Path(__file__)),'note':'Contour payloads preserved exactly while extending land background outside edition coverage.'})
     print('Coastal context extended; contour layer payloads preserved.',flush=True)
 
 if __name__=='__main__':
-    parser=argparse.ArgumentParser();parser.add_argument('--region',choices=['england-wales'],required=True);args=parser.parse_args();build(args.region)
+    parser=argparse.ArgumentParser();parser.add_argument('--region',choices=['england-wales','scotland'],required=True);args=parser.parse_args();build(args.region)

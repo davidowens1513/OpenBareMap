@@ -11,7 +11,7 @@ class PreviewKeyTests(unittest.TestCase):
  def test_each_preview_opens_its_own_full_size_regional_key(self):
   with tempfile.TemporaryDirectory() as directory:
    output=package_ui(Path(directory))
-   for region in ['ireland','england-wales']:
+   for region in ['ireland','england-wales','scotland']:
     page=Elements();page.feed((output/region/'index.html').read_text())
     links=[a for tag,a in page.elements if tag=='a' and a.get('href')=='./legend.html']
     self.assertEqual(len(links),2)
@@ -20,7 +20,7 @@ class PreviewKeyTests(unittest.TestCase):
     viewer=Elements();viewer.feed((output/region/'legend.html').read_text())
     image=next(a for tag,a in viewer.elements if tag=='img')
     path=(output/region/image['src']).resolve();self.assertTrue(path.is_file())
-    source=ROOT/'app-legend/openbaremap-legend@2x.png' if region=='ireland' else ROOT/'regions/england-wales/legend/openbaremap-legend@2x.png'
+    source=ROOT/'app-legend/openbaremap-legend@2x.png' if region=='ireland' else ROOT/'regions'/region/'legend/openbaremap-legend@2x.png'
     self.assertEqual(hashlib.sha256(path.read_bytes()).digest(),hashlib.sha256(source.read_bytes()).digest())
     self.assertTrue({'zoom-in','zoom-out','fit-page','actual-size'} <= {a.get('id') for tag,a in viewer.elements if tag=='button'})
     self.assertIn('pinch to zoom',(output/region/'legend.html').read_text())

@@ -1,0 +1,782 @@
+{
+  "accessed_utc": "2026-11-02T14:33:48.772278+00:00",
+  "assets": [
+    {
+      "bytes": 1302381,
+      "path": "data/regions/scotland/elevation/N54W015.hgt.gz",
+      "sha256": "acc11e9da0c9392efff0da3425742cda3335c7ba314d26e63f6bc6680d135685",
+      "url": "https://elevation-tiles-prod.s3.amazonaws.com/skadi/N54/N54W015.hgt.gz"
+    },
+    {
+      "bytes": 1449568,
+      "path": "data/regions/scotland/elevation/N54W014.hgt.gz",
+      "sha256": "127874e585f0f0ded607031cb2d693267d6b082a90acd6121912c9100598d1d3",
+      "url": "https://elevation-tiles-prod.s3.amazonaws.com/skadi/N54/N54W014.hgt.gz"
+    },
+    {
+      "bytes": 1889632,
+      "path": "data/regions/scotland/elevation/N54W013.hgt.gz",
+      "sha256": "ed2421170d9deea766dd52f9830bab9cd013558081cdd1071f1e443dde30e3a1",
+      "url": "https://elevation-tiles-prod.s3.amazonaws.com/skadi/N54/N54W013.hgt.gz"
+    },
+    {
+      "bytes": 2226341,
+      "path": "data/regions/scotland/elevation/N54W012.hgt.gz",
+      "sha256": "ab566155727bcc3159422acd7f3f668eccd30c83676b70b9d31d1caed31ea04b",
+      "url": "https://elevation-tiles-prod.s3.amazonaws.com/skadi/N54/N54W012.hgt.gz"
+    },
+    {
+      "bytes": 1777808,
+      "path": "data/regions/scotland/elevation/N54W011.hgt.gz",
+      "sha256": "464b007abbcd7c5a1e5e9c583495438ce87b1f78b2a8dc4eaa5a09481288830e",
+      "url": "https://elevation-tiles-prod.s3.amazonaws.com/skadi/N54/N54W011.hgt.gz"
+    },
+    {
+      "bytes": 2150102,
+      "path": "data/regions/scotland/elevation/N54W010.hgt.gz",
+      "sha256": "3fa3d8446370d0b0ac500755c596c4e3ac402985072c9669f1a3a0e40b95cfa8",
+      "url": "https://elevation-tiles-prod.s3.amazonaws.com/skadi/N54/N54W010.hgt.gz"
+    },
+    {
+      "bytes": 5131162,
+      "path": "data/regions/scotland/elevation/N54W009.hgt.gz",
+      "sha256": "e42049b35680872dfd51cdd1acc620477aa019616b5217b9c113cc78c5f379ce",
+      "url": "https://elevation-tiles-prod.s3.amazonaws.com/skadi/N54/N54W009.hgt.gz"
+    },
+    {
+      "bytes": 6755339,
+      "path": "data/regions/scotland/elevation/N54W008.hgt.gz",
+      "sha256": "fdb494a1c82ec7d2a8e34ae947d6f8af2069360d67c9ce971ae90185a0b25225",
+      "url": "https://elevation-tiles-prod.s3.amazonaws.com/skadi/N54/N54W008.hgt.gz"
+    },
+    {
+      "bytes": 6388043,
+      "path": "data/regions/scotland/elevation/N54W007.hgt.gz",
+      "sha256": "a6a26e7f4c8cad4cdcacab804622d60a1d5b75ecb1b16a09e16998805d1c057a",
+      "url": "https://elevation-tiles-prod.s3.amazonaws.com/skadi/N54/N54W007.hgt.gz"
+    },
+    {
+      "bytes": 3031988,
+      "path": "data/regions/scotland/elevation/N54W006.hgt.gz",
+      "sha256": "237c267452e2acc19b5c63e76247aa1ae770c4b46e412b310038625786e093f7",
+      "url": "https://elevation-tiles-prod.s3.amazonaws.com/skadi/N54/N54W006.hgt.gz"
+    },
+    {
+      "bytes": 2702122,
+      "path": "data/regions/scotland/elevation/N54W005.hgt.gz",
+      "sha256": "2a368b359b4d1126b0aa1dea9825195682e8f2d119ba7060994850e28e2f8b8a",
+      "url": "https://elevation-tiles-prod.s3.amazonaws.com/skadi/N54/N54W005.hgt.gz"
+    },
+    {
+      "bytes": 4401948,
+      "path": "data/regions/scotland/elevation/N54W004.hgt.gz",
+      "sha256": "40a4b66a95172468fe22535f794e71b17caed99fc7ef9e8053594830e03611f5",
+      "url": "https://elevation-tiles-prod.s3.amazonaws.com/skadi/N54/N54W004.hgt.gz"
+    },
+    {
+      "bytes": 8268057,
+      "path": "data/regions/scotland/elevation/N54W003.hgt.gz",
+      "sha256": "021f97677d94ea762da609fc70357db5f8802bda31b00c9d015f0dcaa14e53e3",
+      "url": "https://elevation-tiles-prod.s3.amazonaws.com/skadi/N54/N54W003.hgt.gz"
+    },
+    {
+      "bytes": 5739403,
+      "path": "data/regions/scotland/elevation/N54W002.hgt.gz",
+      "sha256": "4750963904204efa051ad5c4de34535df30610cd88758b35732de56cb6e5f063",
+      "url": "https://elevation-tiles-prod.s3.amazonaws.com/skadi/N54/N54W002.hgt.gz"
+    },
+    {
+      "bytes": 2508272,
+      "path": "data/regions/scotland/elevation/N54W001.hgt.gz",
+      "sha256": "0a6f6074f8bf955e957a74acad8e4c3a05f616a6fc296192133f83d75f27c0b0",
+      "url": "https://elevation-tiles-prod.s3.amazonaws.com/skadi/N54/N54W001.hgt.gz"
+    },
+    {
+      "bytes": 315385,
+      "path": "data/regions/scotland/elevation/N54E000.hgt.gz",
+      "sha256": "e474ebf016b75119713c5d0ceea292164340d8ff92bf90fe6d4c71c9ab92596d",
+      "url": "https://elevation-tiles-prod.s3.amazonaws.com/skadi/N54/N54E000.hgt.gz"
+    },
+    {
+      "bytes": 1658709,
+      "path": "data/regions/scotland/elevation/N55W015.hgt.gz",
+      "sha256": "69a615c850d418bb40dd73c51f0eb883ede1544b7820fd445e9b2bbd343ebfdd",
+      "url": "https://elevation-tiles-prod.s3.amazonaws.com/skadi/N55/N55W015.hgt.gz"
+    },
+    {
+      "bytes": 979022,
+      "path": "data/regions/scotland/elevation/N55W014.hgt.gz",
+      "sha256": "290310a384e2e9c3dba4cbdc7a0d9756a321af7cd04c96922539a85829e91830",
+      "url": "https://elevation-tiles-prod.s3.amazonaws.com/skadi/N55/N55W014.hgt.gz"
+    },
+    {
+      "bytes": 830452,
+      "path": "data/regions/scotland/elevation/N55W013.hgt.gz",
+      "sha256": "b81f4913d87b6d04f83d1589193d3de11e88065a85a9e348a189000796dadd41",
+      "url": "https://elevation-tiles-prod.s3.amazonaws.com/skadi/N55/N55W013.hgt.gz"
+    },
+    {
+      "bytes": 890021,
+      "path": "data/regions/scotland/elevation/N55W012.hgt.gz",
+      "sha256": "d956a6ea18fc55e1672ad2da6b7d87916a4772612b1f7c727260470760fa18eb",
+      "url": "https://elevation-tiles-prod.s3.amazonaws.com/skadi/N55/N55W012.hgt.gz"
+    },
+    {
+      "bytes": 1990529,
+      "path": "data/regions/scotland/elevation/N55W011.hgt.gz",
+      "sha256": "3995cea25944aa1f7dfc1f8f02778ebc913844a798d1b4c569f1499142ae4941",
+      "url": "https://elevation-tiles-prod.s3.amazonaws.com/skadi/N55/N55W011.hgt.gz"
+    },
+    {
+      "bytes": 1792708,
+      "path": "data/regions/scotland/elevation/N55W010.hgt.gz",
+      "sha256": "c5e647607997d5f3c2fb8240e6d3e7e8c599ca556133a3a6c97317ec25bce5dc",
+      "url": "https://elevation-tiles-prod.s3.amazonaws.com/skadi/N55/N55W010.hgt.gz"
+    },
+    {
+      "bytes": 987430,
+      "path": "data/regions/scotland/elevation/N55W009.hgt.gz",
+      "sha256": "8906f89918b76395b17c81d7ca753074e5c13d2184709e6c7e9a2602383cefca",
+      "url": "https://elevation-tiles-prod.s3.amazonaws.com/skadi/N55/N55W009.hgt.gz"
+    },
+    {
+      "bytes": 2248967,
+      "path": "data/regions/scotland/elevation/N55W008.hgt.gz",
+      "sha256": "04b01e932e1f51ec868a3a6c9196b40b3856c518aae4e7580ac40d7922ac7292",
+      "url": "https://elevation-tiles-prod.s3.amazonaws.com/skadi/N55/N55W008.hgt.gz"
+    },
+    {
+      "bytes": 3003271,
+      "path": "data/regions/scotland/elevation/N55W007.hgt.gz",
+      "sha256": "251b4bcbf8b1656b434fe9f126364d305e3b542a1c48f9b896c9b741c02892d2",
+      "url": "https://elevation-tiles-prod.s3.amazonaws.com/skadi/N55/N55W007.hgt.gz"
+    },
+    {
+      "bytes": 4113150,
+      "path": "data/regions/scotland/elevation/N55W006.hgt.gz",
+      "sha256": "b5d2d80eb621e7157afe082d41b26875a8d08fa1bc5ea474c7726b2d26073820",
+      "url": "https://elevation-tiles-prod.s3.amazonaws.com/skadi/N55/N55W006.hgt.gz"
+    },
+    {
+      "bytes": 6563032,
+      "path": "data/regions/scotland/elevation/N55W005.hgt.gz",
+      "sha256": "a94a6175399650c184b9201475e445076dc2b657162773d2dd0d3c107850deb7",
+      "url": "https://elevation-tiles-prod.s3.amazonaws.com/skadi/N55/N55W005.hgt.gz"
+    },
+    {
+      "bytes": 7892864,
+      "path": "data/regions/scotland/elevation/N55W004.hgt.gz",
+      "sha256": "61c9bcf1d6297b9154d380cc662f302644d445d66f1b357db465364880c4e620",
+      "url": "https://elevation-tiles-prod.s3.amazonaws.com/skadi/N55/N55W004.hgt.gz"
+    },
+    {
+      "bytes": 7219966,
+      "path": "data/regions/scotland/elevation/N55W003.hgt.gz",
+      "sha256": "07608f5a46a2abd9c1ec51f2d74fbeefc0abaf6c866f0db8ebed5108bb0588e2",
+      "url": "https://elevation-tiles-prod.s3.amazonaws.com/skadi/N55/N55W003.hgt.gz"
+    },
+    {
+      "bytes": 2122769,
+      "path": "data/regions/scotland/elevation/N55W002.hgt.gz",
+      "sha256": "d85071a97b4851263c4fe40eef548db02d986e07761fd7905ae9c4bf0652fce8",
+      "url": "https://elevation-tiles-prod.s3.amazonaws.com/skadi/N55/N55W002.hgt.gz"
+    },
+    {
+      "bytes": 308093,
+      "path": "data/regions/scotland/elevation/N55W001.hgt.gz",
+      "sha256": "bb5a62737939fa0dbee0aa38ba7b9d4ef61536b61603acf0b0ad06c18ab31e22",
+      "url": "https://elevation-tiles-prod.s3.amazonaws.com/skadi/N55/N55W001.hgt.gz"
+    },
+    {
+      "bytes": 284306,
+      "path": "data/regions/scotland/elevation/N55E000.hgt.gz",
+      "sha256": "d9ef46c288f45747e50abf40255767df7275fcf0e22fdcdc54f84c015c3c8f3f",
+      "url": "https://elevation-tiles-prod.s3.amazonaws.com/skadi/N55/N55E000.hgt.gz"
+    },
+    {
+      "bytes": 1704308,
+      "path": "data/regions/scotland/elevation/N56W015.hgt.gz",
+      "sha256": "a2a754fe21049594c78b72f65eab18f8e741430b97c071f02d242cc165630aea",
+      "url": "https://elevation-tiles-prod.s3.amazonaws.com/skadi/N56/N56W015.hgt.gz"
+    },
+    {
+      "bytes": 1957571,
+      "path": "data/regions/scotland/elevation/N56W014.hgt.gz",
+      "sha256": "851ae76f5485fe16ffd3ea93d21ad31a316b597e349f72e7954a825dee7386f0",
+      "url": "https://elevation-tiles-prod.s3.amazonaws.com/skadi/N56/N56W014.hgt.gz"
+    },
+    {
+      "bytes": 874429,
+      "path": "data/regions/scotland/elevation/N56W013.hgt.gz",
+      "sha256": "39a83ac194e28ad35e67aac32016d1e10ec1bb50d287473b48702581f97a5b1f",
+      "url": "https://elevation-tiles-prod.s3.amazonaws.com/skadi/N56/N56W013.hgt.gz"
+    },
+    {
+      "bytes": 834485,
+      "path": "data/regions/scotland/elevation/N56W012.hgt.gz",
+      "sha256": "552c6be0185dbdb06af599dd55d5855136c45124c024e0076b176e93eed991d1",
+      "url": "https://elevation-tiles-prod.s3.amazonaws.com/skadi/N56/N56W012.hgt.gz"
+    },
+    {
+      "bytes": 1553863,
+      "path": "data/regions/scotland/elevation/N56W011.hgt.gz",
+      "sha256": "cddcfa9502c79f30f5a718fa5e63b0c294a437c474dad927838c302fb3af3e38",
+      "url": "https://elevation-tiles-prod.s3.amazonaws.com/skadi/N56/N56W011.hgt.gz"
+    },
+    {
+      "bytes": 2386731,
+      "path": "data/regions/scotland/elevation/N56W010.hgt.gz",
+      "sha256": "f5e06da3815808e6d92ed3cdba0ad270f8fb61f3ee86c996f6c9cbedca48f019",
+      "url": "https://elevation-tiles-prod.s3.amazonaws.com/skadi/N56/N56W010.hgt.gz"
+    },
+    {
+      "bytes": 701311,
+      "path": "data/regions/scotland/elevation/N56W009.hgt.gz",
+      "sha256": "9c1067ae257785f0f38fe9e22c67794c59200244a687e514a3d3971cf760257e",
+      "url": "https://elevation-tiles-prod.s3.amazonaws.com/skadi/N56/N56W009.hgt.gz"
+    },
+    {
+      "bytes": 1087832,
+      "path": "data/regions/scotland/elevation/N56W008.hgt.gz",
+      "sha256": "b35d9a5e6c827ad6120312f5e0d19290ec182e0e02f84ee44e17de2a2987fa54",
+      "url": "https://elevation-tiles-prod.s3.amazonaws.com/skadi/N56/N56W008.hgt.gz"
+    },
+    {
+      "bytes": 2455368,
+      "path": "data/regions/scotland/elevation/N56W007.hgt.gz",
+      "sha256": "2a839190288da4f07292d00625c67037925291510e42667f7d29df4b5e87a869",
+      "url": "https://elevation-tiles-prod.s3.amazonaws.com/skadi/N56/N56W007.hgt.gz"
+    },
+    {
+      "bytes": 9016378,
+      "path": "data/regions/scotland/elevation/N56W006.hgt.gz",
+      "sha256": "7b57a2d509c8c7ec9dd8956e8cff07f12da43828f02ba876620baef9f13f8c0d",
+      "url": "https://elevation-tiles-prod.s3.amazonaws.com/skadi/N56/N56W006.hgt.gz"
+    },
+    {
+      "bytes": 10321176,
+      "path": "data/regions/scotland/elevation/N56W005.hgt.gz",
+      "sha256": "73956d39ce7310ffa787144635e423b6a3b9b26e208106f2450bb3fd7efaeb14",
+      "url": "https://elevation-tiles-prod.s3.amazonaws.com/skadi/N56/N56W005.hgt.gz"
+    },
+    {
+      "bytes": 7692875,
+      "path": "data/regions/scotland/elevation/N56W004.hgt.gz",
+      "sha256": "e8c99f7fd9a55bcb885004cb438511c5be047c14b9b7f178d9fb12523768315c",
+      "url": "https://elevation-tiles-prod.s3.amazonaws.com/skadi/N56/N56W004.hgt.gz"
+    },
+    {
+      "bytes": 3119688,
+      "path": "data/regions/scotland/elevation/N56W003.hgt.gz",
+      "sha256": "4fd85f5085f467296b55ac8312ee4824ac43a8f03fdf7010b922773ed418f1c0",
+      "url": "https://elevation-tiles-prod.s3.amazonaws.com/skadi/N56/N56W003.hgt.gz"
+    },
+    {
+      "bytes": 411144,
+      "path": "data/regions/scotland/elevation/N56W002.hgt.gz",
+      "sha256": "4f83019b3bea21283d1e13b23f0c385f62c2e98aadf48b70de75129325bf197d",
+      "url": "https://elevation-tiles-prod.s3.amazonaws.com/skadi/N56/N56W002.hgt.gz"
+    },
+    {
+      "bytes": 278637,
+      "path": "data/regions/scotland/elevation/N56W001.hgt.gz",
+      "sha256": "dcd952c838be4c94e1c88cab53d7f86bad96587833170f32f582436d6060a1e8",
+      "url": "https://elevation-tiles-prod.s3.amazonaws.com/skadi/N56/N56W001.hgt.gz"
+    },
+    {
+      "bytes": 366563,
+      "path": "data/regions/scotland/elevation/N56E000.hgt.gz",
+      "sha256": "fe135f658a87aa6d726f01f0aced287b54fa573a09cc277ed48ff400ae59542a",
+      "url": "https://elevation-tiles-prod.s3.amazonaws.com/skadi/N56/N56E000.hgt.gz"
+    },
+    {
+      "bytes": 849214,
+      "path": "data/regions/scotland/elevation/N57W015.hgt.gz",
+      "sha256": "6cd8709d3c7d1f43c87c30d9b2ce5fe68e0843a47680fd208bea5bc529e42428",
+      "url": "https://elevation-tiles-prod.s3.amazonaws.com/skadi/N57/N57W015.hgt.gz"
+    },
+    {
+      "bytes": 1358813,
+      "path": "data/regions/scotland/elevation/N57W014.hgt.gz",
+      "sha256": "993798d36b48ecce2f934192cb58eadba740ce7d5d5716a9da062dc5fab0140d",
+      "url": "https://elevation-tiles-prod.s3.amazonaws.com/skadi/N57/N57W014.hgt.gz"
+    },
+    {
+      "bytes": 1633674,
+      "path": "data/regions/scotland/elevation/N57W013.hgt.gz",
+      "sha256": "7c28bd3d35eaba463252bb3341b0bff64a59136007f2dee0671dc2233008acc3",
+      "url": "https://elevation-tiles-prod.s3.amazonaws.com/skadi/N57/N57W013.hgt.gz"
+    },
+    {
+      "bytes": 1652141,
+      "path": "data/regions/scotland/elevation/N57W012.hgt.gz",
+      "sha256": "cf8efea971cfdd03df707fd9651aa36d14a178f8ac2dd48f5b427e40fff00134",
+      "url": "https://elevation-tiles-prod.s3.amazonaws.com/skadi/N57/N57W012.hgt.gz"
+    },
+    {
+      "bytes": 1604172,
+      "path": "data/regions/scotland/elevation/N57W011.hgt.gz",
+      "sha256": "a0773b0657823b7e24f649774307e47feb36927e5b39d9eb565a1a8af3d391be",
+      "url": "https://elevation-tiles-prod.s3.amazonaws.com/skadi/N57/N57W011.hgt.gz"
+    },
+    {
+      "bytes": 2226033,
+      "path": "data/regions/scotland/elevation/N57W010.hgt.gz",
+      "sha256": "91614df27c4cefc11d193ffd29473492d792bc5147d0cd9342ef8f4418806b13",
+      "url": "https://elevation-tiles-prod.s3.amazonaws.com/skadi/N57/N57W010.hgt.gz"
+    },
+    {
+      "bytes": 725530,
+      "path": "data/regions/scotland/elevation/N57W009.hgt.gz",
+      "sha256": "cb94591a15d4004910e1958ec006eb505e39ec0d2d3a7aedacf98c7e2900d394",
+      "url": "https://elevation-tiles-prod.s3.amazonaws.com/skadi/N57/N57W009.hgt.gz"
+    },
+    {
+      "bytes": 1801885,
+      "path": "data/regions/scotland/elevation/N57W008.hgt.gz",
+      "sha256": "55a0e79f8ba2c4c982bf4e665bff266ee4ce937ae77a5dba977570365f25dfa7",
+      "url": "https://elevation-tiles-prod.s3.amazonaws.com/skadi/N57/N57W008.hgt.gz"
+    },
+    {
+      "bytes": 4419286,
+      "path": "data/regions/scotland/elevation/N57W007.hgt.gz",
+      "sha256": "7e62af200b094c5974aa0d6d7cc661dda734a73e344b3dedc8dbfcb285b7e801",
+      "url": "https://elevation-tiles-prod.s3.amazonaws.com/skadi/N57/N57W007.hgt.gz"
+    },
+    {
+      "bytes": 9015298,
+      "path": "data/regions/scotland/elevation/N57W006.hgt.gz",
+      "sha256": "1841302b27b3c86b700b816635cb930bb7a75cee519bc12ee7dd876f88b5909e",
+      "url": "https://elevation-tiles-prod.s3.amazonaws.com/skadi/N57/N57W006.hgt.gz"
+    },
+    {
+      "bytes": 8623466,
+      "path": "data/regions/scotland/elevation/N57W005.hgt.gz",
+      "sha256": "260bf16da3ec2b9fd61133b4a509d8b044e6f5a681178817edceeab1188b6469",
+      "url": "https://elevation-tiles-prod.s3.amazonaws.com/skadi/N57/N57W005.hgt.gz"
+    },
+    {
+      "bytes": 5725700,
+      "path": "data/regions/scotland/elevation/N57W004.hgt.gz",
+      "sha256": "9a7267c945f022c70a9c8df7b42feb70539472a0c7af116a364b8cb034fff98e",
+      "url": "https://elevation-tiles-prod.s3.amazonaws.com/skadi/N57/N57W004.hgt.gz"
+    },
+    {
+      "bytes": 4608519,
+      "path": "data/regions/scotland/elevation/N57W003.hgt.gz",
+      "sha256": "7fca06d465b9284578e328d19291e3daeb56538ada15e8976bdf7210fce47257",
+      "url": "https://elevation-tiles-prod.s3.amazonaws.com/skadi/N57/N57W003.hgt.gz"
+    },
+    {
+      "bytes": 743493,
+      "path": "data/regions/scotland/elevation/N57W002.hgt.gz",
+      "sha256": "a66f6efc2bce2460b2bab9d7140d48a2dbccf0d498383f741dd3025c35f424be",
+      "url": "https://elevation-tiles-prod.s3.amazonaws.com/skadi/N57/N57W002.hgt.gz"
+    },
+    {
+      "bytes": 312021,
+      "path": "data/regions/scotland/elevation/N57W001.hgt.gz",
+      "sha256": "2f6edf7f0bcc058626232bb0e9815739ff0b8c1a9d26f76bced6dab549681a3d",
+      "url": "https://elevation-tiles-prod.s3.amazonaws.com/skadi/N57/N57W001.hgt.gz"
+    },
+    {
+      "bytes": 319304,
+      "path": "data/regions/scotland/elevation/N57E000.hgt.gz",
+      "sha256": "a9ec713bff3cf97ab9d9d51d9d78511eebfcbe7eb6a9804966f147498bf49360",
+      "url": "https://elevation-tiles-prod.s3.amazonaws.com/skadi/N57/N57E000.hgt.gz"
+    },
+    {
+      "bytes": 1343343,
+      "path": "data/regions/scotland/elevation/N58W015.hgt.gz",
+      "sha256": "0f55d1fc2f61ed831b9fc9417282bee550308850de8c710397f5ceb82e8a0d25",
+      "url": "https://elevation-tiles-prod.s3.amazonaws.com/skadi/N58/N58W015.hgt.gz"
+    },
+    {
+      "bytes": 1777818,
+      "path": "data/regions/scotland/elevation/N58W014.hgt.gz",
+      "sha256": "822ec0ab359ccf318a79d12057f99dfc1edbd2c92710143cd9004f61b3d89796",
+      "url": "https://elevation-tiles-prod.s3.amazonaws.com/skadi/N58/N58W014.hgt.gz"
+    },
+    {
+      "bytes": 781827,
+      "path": "data/regions/scotland/elevation/N58W013.hgt.gz",
+      "sha256": "d9e8f80fe58a9eca1012f8e1c61e8c192efd4b8d04d0c7dfb4749cac9adac8c5",
+      "url": "https://elevation-tiles-prod.s3.amazonaws.com/skadi/N58/N58W013.hgt.gz"
+    },
+    {
+      "bytes": 707103,
+      "path": "data/regions/scotland/elevation/N58W012.hgt.gz",
+      "sha256": "0e7269106d4615f087946ba9f1ff3d59a3062356a09dd312dc05c9d61bfa15b0",
+      "url": "https://elevation-tiles-prod.s3.amazonaws.com/skadi/N58/N58W012.hgt.gz"
+    },
+    {
+      "bytes": 846021,
+      "path": "data/regions/scotland/elevation/N58W011.hgt.gz",
+      "sha256": "1dbce4cc24a1bcf1aae549daae6b112b1c0008f11da7c8a7c53586354c1732b0",
+      "url": "https://elevation-tiles-prod.s3.amazonaws.com/skadi/N58/N58W011.hgt.gz"
+    },
+    {
+      "bytes": 1786353,
+      "path": "data/regions/scotland/elevation/N58W010.hgt.gz",
+      "sha256": "bf4785b804783211420a715152aa88e696ac556832d12e937752c800498c5c40",
+      "url": "https://elevation-tiles-prod.s3.amazonaws.com/skadi/N58/N58W010.hgt.gz"
+    },
+    {
+      "bytes": 1154855,
+      "path": "data/regions/scotland/elevation/N58W009.hgt.gz",
+      "sha256": "b86e056bb04543f04218d8099059e7170810a6fce5008e3069cbb087056fccea",
+      "url": "https://elevation-tiles-prod.s3.amazonaws.com/skadi/N58/N58W009.hgt.gz"
+    },
+    {
+      "bytes": 1343339,
+      "path": "data/regions/scotland/elevation/N58W008.hgt.gz",
+      "sha256": "2425467056a84bdf4dac50ffa6081f76d2c1f9914dc6f77211951111b8f54d76",
+      "url": "https://elevation-tiles-prod.s3.amazonaws.com/skadi/N58/N58W008.hgt.gz"
+    },
+    {
+      "bytes": 2116541,
+      "path": "data/regions/scotland/elevation/N58W007.hgt.gz",
+      "sha256": "a8bd18c2a5674c50d44fb0cd8a6b9e95d4fd4897d33c1b435863a9d6f34330ed",
+      "url": "https://elevation-tiles-prod.s3.amazonaws.com/skadi/N58/N58W007.hgt.gz"
+    },
+    {
+      "bytes": 1891345,
+      "path": "data/regions/scotland/elevation/N58W006.hgt.gz",
+      "sha256": "ba437a4292a261a449bd4d840080e20be7c7881fa3e199d27b34196b4f41baa1",
+      "url": "https://elevation-tiles-prod.s3.amazonaws.com/skadi/N58/N58W006.hgt.gz"
+    },
+    {
+      "bytes": 4774831,
+      "path": "data/regions/scotland/elevation/N58W005.hgt.gz",
+      "sha256": "a07a2d265ff6b9c9de5dbc8fcf379d9a99e0289a698763ece2ecb3d5247588ea",
+      "url": "https://elevation-tiles-prod.s3.amazonaws.com/skadi/N58/N58W005.hgt.gz"
+    },
+    {
+      "bytes": 3108848,
+      "path": "data/regions/scotland/elevation/N58W004.hgt.gz",
+      "sha256": "b93079a46e7b1cb37a79052e8ee8d3f3bd24c2ef897d0fb0d454202cec05282e",
+      "url": "https://elevation-tiles-prod.s3.amazonaws.com/skadi/N58/N58W004.hgt.gz"
+    },
+    {
+      "bytes": 617436,
+      "path": "data/regions/scotland/elevation/N58W003.hgt.gz",
+      "sha256": "c83766cd1356818440d8836498f5013d5005d0fa42d9591591cb75eb3a24bb70",
+      "url": "https://elevation-tiles-prod.s3.amazonaws.com/skadi/N58/N58W003.hgt.gz"
+    },
+    {
+      "bytes": 371200,
+      "path": "data/regions/scotland/elevation/N58W002.hgt.gz",
+      "sha256": "9497b1717fba3ade875d16643dc1c60002d4ceb94b1b38f99d55e85b623f402d",
+      "url": "https://elevation-tiles-prod.s3.amazonaws.com/skadi/N58/N58W002.hgt.gz"
+    },
+    {
+      "bytes": 375032,
+      "path": "data/regions/scotland/elevation/N58W001.hgt.gz",
+      "sha256": "834f3268c384b403826acb9d25b1a93f5fb1b2289833f9d0f2684971b0a1100b",
+      "url": "https://elevation-tiles-prod.s3.amazonaws.com/skadi/N58/N58W001.hgt.gz"
+    },
+    {
+      "bytes": 275578,
+      "path": "data/regions/scotland/elevation/N58E000.hgt.gz",
+      "sha256": "02bed493e5ede08bcc8abd770436d66bf228cc645af20c2faa498a20a2f1854a",
+      "url": "https://elevation-tiles-prod.s3.amazonaws.com/skadi/N58/N58E000.hgt.gz"
+    },
+    {
+      "bytes": 1266529,
+      "path": "data/regions/scotland/elevation/N59W015.hgt.gz",
+      "sha256": "1e47f1fe705313c7056280f1da06efd428fa8882e145c5133438317d4b3b5d7b",
+      "url": "https://elevation-tiles-prod.s3.amazonaws.com/skadi/N59/N59W015.hgt.gz"
+    },
+    {
+      "bytes": 1173618,
+      "path": "data/regions/scotland/elevation/N59W014.hgt.gz",
+      "sha256": "1696a17d59e3095e329451d395976eed59e246d54fd578c6678d65e178d22343",
+      "url": "https://elevation-tiles-prod.s3.amazonaws.com/skadi/N59/N59W014.hgt.gz"
+    },
+    {
+      "bytes": 838769,
+      "path": "data/regions/scotland/elevation/N59W013.hgt.gz",
+      "sha256": "825e5dfb4fe357fb95ffc686f8e0ce940db2f91ffef66a6114afec18a0fc2345",
+      "url": "https://elevation-tiles-prod.s3.amazonaws.com/skadi/N59/N59W013.hgt.gz"
+    },
+    {
+      "bytes": 1133975,
+      "path": "data/regions/scotland/elevation/N59W012.hgt.gz",
+      "sha256": "7b57c1beb05884614f323f78c45bfcac1c5d2ff2a3a89122dcac8b41b9e348d7",
+      "url": "https://elevation-tiles-prod.s3.amazonaws.com/skadi/N59/N59W012.hgt.gz"
+    },
+    {
+      "bytes": 1692391,
+      "path": "data/regions/scotland/elevation/N59W011.hgt.gz",
+      "sha256": "61a92839fa842ab8d4050e77a1316169296cadb8995a505153d0f6734144c4c5",
+      "url": "https://elevation-tiles-prod.s3.amazonaws.com/skadi/N59/N59W011.hgt.gz"
+    },
+    {
+      "bytes": 1306588,
+      "path": "data/regions/scotland/elevation/N59W010.hgt.gz",
+      "sha256": "944ff91bad5c74b6cdddde1ad3a4d4be3e236dad2f78a88de43c4448f304201e",
+      "url": "https://elevation-tiles-prod.s3.amazonaws.com/skadi/N59/N59W010.hgt.gz"
+    },
+    {
+      "bytes": 1013774,
+      "path": "data/regions/scotland/elevation/N59W009.hgt.gz",
+      "sha256": "1bd6be96905a426c27e74eecd765f1e83dee69573971e020b4792cb9ece2fb9c",
+      "url": "https://elevation-tiles-prod.s3.amazonaws.com/skadi/N59/N59W009.hgt.gz"
+    },
+    {
+      "bytes": 1225111,
+      "path": "data/regions/scotland/elevation/N59W008.hgt.gz",
+      "sha256": "5f406ca15a7d9fd3809eeac3ab14ee7424305041fb72267a440f3aff8be5a7e4",
+      "url": "https://elevation-tiles-prod.s3.amazonaws.com/skadi/N59/N59W008.hgt.gz"
+    },
+    {
+      "bytes": 1360239,
+      "path": "data/regions/scotland/elevation/N59W007.hgt.gz",
+      "sha256": "9755f47eed8e1426d0fbccaa9a758ada5ab58ad07052b2025716c99106f17fc5",
+      "url": "https://elevation-tiles-prod.s3.amazonaws.com/skadi/N59/N59W007.hgt.gz"
+    },
+    {
+      "bytes": 857543,
+      "path": "data/regions/scotland/elevation/N59W006.hgt.gz",
+      "sha256": "5cc80ae4a23bcd03f38dd54e2aa4a2dfccf1cda36e4f76e4ed4d424a7fe05dfe",
+      "url": "https://elevation-tiles-prod.s3.amazonaws.com/skadi/N59/N59W006.hgt.gz"
+    },
+    {
+      "bytes": 606738,
+      "path": "data/regions/scotland/elevation/N59W005.hgt.gz",
+      "sha256": "23bce5b5fa2fbf3321ff5f9f98003494a09a56b2bd3e342cb0d63500a096ed27",
+      "url": "https://elevation-tiles-prod.s3.amazonaws.com/skadi/N59/N59W005.hgt.gz"
+    },
+    {
+      "bytes": 961462,
+      "path": "data/regions/scotland/elevation/N59W004.hgt.gz",
+      "sha256": "3d9d35b06da0f69fb3714dbf47be481ded4677f9c1387d5291aa047402d4fc99",
+      "url": "https://elevation-tiles-prod.s3.amazonaws.com/skadi/N59/N59W004.hgt.gz"
+    },
+    {
+      "bytes": 759025,
+      "path": "data/regions/scotland/elevation/N59W003.hgt.gz",
+      "sha256": "812dba8a6ce0e6b0ede25fc510196931d5931cf2437c3fbce04a9cf0a865f219",
+      "url": "https://elevation-tiles-prod.s3.amazonaws.com/skadi/N59/N59W003.hgt.gz"
+    },
+    {
+      "bytes": 639115,
+      "path": "data/regions/scotland/elevation/N59W002.hgt.gz",
+      "sha256": "da0575ea52d8f75b0ad9c9758c9b5f284a97e9181c0289f72d90c67c347e1cfa",
+      "url": "https://elevation-tiles-prod.s3.amazonaws.com/skadi/N59/N59W002.hgt.gz"
+    },
+    {
+      "bytes": 392851,
+      "path": "data/regions/scotland/elevation/N59W001.hgt.gz",
+      "sha256": "99a496337cc74394250f51771a0a1ad3c0e40d33c801911c70bb17aa47e43d9a",
+      "url": "https://elevation-tiles-prod.s3.amazonaws.com/skadi/N59/N59W001.hgt.gz"
+    },
+    {
+      "bytes": 345286,
+      "path": "data/regions/scotland/elevation/N59E000.hgt.gz",
+      "sha256": "ae65fe42379ddf641bf9b0727c96af68a5065c28ee4cda9b5a9ecbb6a0159346",
+      "url": "https://elevation-tiles-prod.s3.amazonaws.com/skadi/N59/N59E000.hgt.gz"
+    },
+    {
+      "bytes": 1170312,
+      "path": "data/regions/scotland/elevation/N60W015.hgt.gz",
+      "sha256": "b0e1c18f345dec23a51e2230bc7e2ffc456d87d6e442206557173a1d074f3338",
+      "url": "https://elevation-tiles-prod.s3.amazonaws.com/skadi/N60/N60W015.hgt.gz"
+    },
+    {
+      "bytes": 1579229,
+      "path": "data/regions/scotland/elevation/N60W014.hgt.gz",
+      "sha256": "9b4065bd4d145490f92fb55f74eed004585af2ca6e4dcd072cf69ced7fe72cd2",
+      "url": "https://elevation-tiles-prod.s3.amazonaws.com/skadi/N60/N60W014.hgt.gz"
+    },
+    {
+      "bytes": 1455986,
+      "path": "data/regions/scotland/elevation/N60W013.hgt.gz",
+      "sha256": "087ed39ed016b33c49ac021486a1008eebbe92312631cf0ff81a8e40e79c5353",
+      "url": "https://elevation-tiles-prod.s3.amazonaws.com/skadi/N60/N60W013.hgt.gz"
+    },
+    {
+      "bytes": 1871440,
+      "path": "data/regions/scotland/elevation/N60W012.hgt.gz",
+      "sha256": "3f3f261fbf4df87508d6769429bb89e2f679ed77aad62b9c870809a05ba678ec",
+      "url": "https://elevation-tiles-prod.s3.amazonaws.com/skadi/N60/N60W012.hgt.gz"
+    },
+    {
+      "bytes": 1254553,
+      "path": "data/regions/scotland/elevation/N60W011.hgt.gz",
+      "sha256": "a9a6c65d9b60b4c004e50b60d9ca5dbd8e0948ba4216d36c5741be0562fa1df1",
+      "url": "https://elevation-tiles-prod.s3.amazonaws.com/skadi/N60/N60W011.hgt.gz"
+    },
+    {
+      "bytes": 1801030,
+      "path": "data/regions/scotland/elevation/N60W010.hgt.gz",
+      "sha256": "ba4b746690dd68e2cd19aa3fc2054fe0e36138aadeeb6190b962fd21bf057d31",
+      "url": "https://elevation-tiles-prod.s3.amazonaws.com/skadi/N60/N60W010.hgt.gz"
+    },
+    {
+      "bytes": 1525050,
+      "path": "data/regions/scotland/elevation/N60W009.hgt.gz",
+      "sha256": "158df4b33bfd666581b2da7df45b37391780e9d9295b071727d70530e80e8133",
+      "url": "https://elevation-tiles-prod.s3.amazonaws.com/skadi/N60/N60W009.hgt.gz"
+    },
+    {
+      "bytes": 1407691,
+      "path": "data/regions/scotland/elevation/N60W008.hgt.gz",
+      "sha256": "7c027c32e1683e7a41416aa104048b8babd7d6aca1c6755d14842a9db51a973f",
+      "url": "https://elevation-tiles-prod.s3.amazonaws.com/skadi/N60/N60W008.hgt.gz"
+    },
+    {
+      "bytes": 1263307,
+      "path": "data/regions/scotland/elevation/N60W007.hgt.gz",
+      "sha256": "aa02dc1029dee43704a164d42d8f67c0461bfd7e91d23d9561e6336e9d44853f",
+      "url": "https://elevation-tiles-prod.s3.amazonaws.com/skadi/N60/N60W007.hgt.gz"
+    },
+    {
+      "bytes": 1279711,
+      "path": "data/regions/scotland/elevation/N60W006.hgt.gz",
+      "sha256": "5acf1913f2c8d84b9d0c31d439b2ff2d34817050184dfbb5734951d2111fd0ba",
+      "url": "https://elevation-tiles-prod.s3.amazonaws.com/skadi/N60/N60W006.hgt.gz"
+    },
+    {
+      "bytes": 1049565,
+      "path": "data/regions/scotland/elevation/N60W005.hgt.gz",
+      "sha256": "5d40fdaa5434dae21cde9f015de7915514f19328aa043eb2eca4ee9ddbf3d69d",
+      "url": "https://elevation-tiles-prod.s3.amazonaws.com/skadi/N60/N60W005.hgt.gz"
+    },
+    {
+      "bytes": 963406,
+      "path": "data/regions/scotland/elevation/N60W004.hgt.gz",
+      "sha256": "44ebbdbd0fc1dbccf5e9a0ffe34315951a1e7bc19e2f798bc589ad4e401a1063",
+      "url": "https://elevation-tiles-prod.s3.amazonaws.com/skadi/N60/N60W004.hgt.gz"
+    },
+    {
+      "bytes": 758029,
+      "path": "data/regions/scotland/elevation/N60W003.hgt.gz",
+      "sha256": "f94c5352c51e1193a84f791d6a303adf001ad196095dd596a2d13e6e489afee1",
+      "url": "https://elevation-tiles-prod.s3.amazonaws.com/skadi/N60/N60W003.hgt.gz"
+    },
+    {
+      "bytes": 2109143,
+      "path": "data/regions/scotland/elevation/N60W002.hgt.gz",
+      "sha256": "c181a2ea4d72446e47c92bb2fc1c2ac9eb85f9fadd30be9e25b872c7e24be5cb",
+      "url": "https://elevation-tiles-prod.s3.amazonaws.com/skadi/N60/N60W002.hgt.gz"
+    },
+    {
+      "bytes": 890943,
+      "path": "data/regions/scotland/elevation/N60W001.hgt.gz",
+      "sha256": "b14b9f239f802c9e8d9a1f1ea25b446b2a585d6eaa43ee7d86a44d858138ee44",
+      "url": "https://elevation-tiles-prod.s3.amazonaws.com/skadi/N60/N60W001.hgt.gz"
+    },
+    {
+      "bytes": 390348,
+      "path": "data/regions/scotland/elevation/N60E000.hgt.gz",
+      "sha256": "7f4b1228661a21ec3038020ed7bf9851b05cd94678cab9e79163fd2fb877c446",
+      "url": "https://elevation-tiles-prod.s3.amazonaws.com/skadi/N60/N60E000.hgt.gz"
+    },
+    {
+      "bytes": 966785,
+      "path": "data/regions/scotland/elevation/N61W015.hgt.gz",
+      "sha256": "89c6f90d16a3e9ff8b290e7eba88779faa3e2ca5baa571d28ce503fc96ac0866",
+      "url": "https://elevation-tiles-prod.s3.amazonaws.com/skadi/N61/N61W015.hgt.gz"
+    },
+    {
+      "bytes": 993706,
+      "path": "data/regions/scotland/elevation/N61W014.hgt.gz",
+      "sha256": "1d3630de7268ec9fe834aae6d79a9f3eca9d33b0972c26a632215d1d20ea2a77",
+      "url": "https://elevation-tiles-prod.s3.amazonaws.com/skadi/N61/N61W014.hgt.gz"
+    },
+    {
+      "bytes": 1053280,
+      "path": "data/regions/scotland/elevation/N61W013.hgt.gz",
+      "sha256": "638a43611f2fe301e5cdcd25acc3ca79ab50a29c48e9bfe4b9830debf6568dc3",
+      "url": "https://elevation-tiles-prod.s3.amazonaws.com/skadi/N61/N61W013.hgt.gz"
+    },
+    {
+      "bytes": 1333380,
+      "path": "data/regions/scotland/elevation/N61W012.hgt.gz",
+      "sha256": "d48dbcd3fb94fef4d436c9689458cb58f3872fd9f0c9a3eee91611054829af76",
+      "url": "https://elevation-tiles-prod.s3.amazonaws.com/skadi/N61/N61W012.hgt.gz"
+    },
+    {
+      "bytes": 1259184,
+      "path": "data/regions/scotland/elevation/N61W011.hgt.gz",
+      "sha256": "8e6a0211fb8431de3c14982ac50d1a38f1b6679d47f335bbc7b3d22ff934de98",
+      "url": "https://elevation-tiles-prod.s3.amazonaws.com/skadi/N61/N61W011.hgt.gz"
+    },
+    {
+      "bytes": 1198174,
+      "path": "data/regions/scotland/elevation/N61W010.hgt.gz",
+      "sha256": "011076e62bbf8026c78c06703b2119f3a5a3c9559611ca2b082f9fdb6da6552b",
+      "url": "https://elevation-tiles-prod.s3.amazonaws.com/skadi/N61/N61W010.hgt.gz"
+    },
+    {
+      "bytes": 1286318,
+      "path": "data/regions/scotland/elevation/N61W009.hgt.gz",
+      "sha256": "23d3007abd9eb9d132171c394782c712c6e01c4c6df0917da0acb9346c3d042b",
+      "url": "https://elevation-tiles-prod.s3.amazonaws.com/skadi/N61/N61W009.hgt.gz"
+    },
+    {
+      "bytes": 1390730,
+      "path": "data/regions/scotland/elevation/N61W008.hgt.gz",
+      "sha256": "68ca9920f7e82bcbf65bdec5060d3305dfedae2ad76e4609cf76e346d69d0a3f",
+      "url": "https://elevation-tiles-prod.s3.amazonaws.com/skadi/N61/N61W008.hgt.gz"
+    },
+    {
+      "bytes": 1624435,
+      "path": "data/regions/scotland/elevation/N61W007.hgt.gz",
+      "sha256": "ffa4c9d146102a9569f326a3eedaffa6b1d6a603194bd5d0c9ad7f9f814bc12d",
+      "url": "https://elevation-tiles-prod.s3.amazonaws.com/skadi/N61/N61W007.hgt.gz"
+    },
+    {
+      "bytes": 837696,
+      "path": "data/regions/scotland/elevation/N61W006.hgt.gz",
+      "sha256": "d9974fde7e753c4a8881f2fa2111a6f467261895605a642bcd5117f15587f0aa",
+      "url": "https://elevation-tiles-prod.s3.amazonaws.com/skadi/N61/N61W006.hgt.gz"
+    },
+    {
+      "bytes": 1190131,
+      "path": "data/regions/scotland/elevation/N61W005.hgt.gz",
+      "sha256": "7f844423975349fe2872b6f416efae41073a40b42848c944ca7162e84f7ce7cb",
+      "url": "https://elevation-tiles-prod.s3.amazonaws.com/skadi/N61/N61W005.hgt.gz"
+    },
+    {
+      "bytes": 1034507,
+      "path": "data/regions/scotland/elevation/N61W004.hgt.gz",
+      "sha256": "78a9f6981c53f19161c63d0a789f7f5a8c59cbbe8f9cea9eec937249cb182a55",
+      "url": "https://elevation-tiles-prod.s3.amazonaws.com/skadi/N61/N61W004.hgt.gz"
+    },
+    {
+      "bytes": 1033197,
+      "path": "data/regions/scotland/elevation/N61W003.hgt.gz",
+      "sha256": "671ed2d67c145abb82f696b6bcb497234124693b097ea07defa486a993201f54",
+      "url": "https://elevation-tiles-prod.s3.amazonaws.com/skadi/N61/N61W003.hgt.gz"
+    },
+    {
+      "bytes": 1272828,
+      "path": "data/regions/scotland/elevation/N61W002.hgt.gz",
+      "sha256": "5d7f377154a2ef6dde6442e2c1b382bacce3b4a03c72b4d911117e58d8566178",
+      "url": "https://elevation-tiles-prod.s3.amazonaws.com/skadi/N61/N61W002.hgt.gz"
+    },
+    {
+      "bytes": 705374,
+      "path": "data/regions/scotland/elevation/N61W001.hgt.gz",
+      "sha256": "f4dedbb1dc0323a436202035580d71ac32653f824247e9a8400b8b8b3028cf2f",
+      "url": "https://elevation-tiles-prod.s3.amazonaws.com/skadi/N61/N61W001.hgt.gz"
+    },
+    {
+      "bytes": 591790,
+      "path": "data/regions/scotland/elevation/N61E000.hgt.gz",
+      "sha256": "aee9bee424fa116ec6a6b656418bbbc89e9f184225b3b9af03a4e2521d3545ea",
+      "url": "https://elevation-tiles-prod.s3.amazonaws.com/skadi/N61/N61E000.hgt.gz"
+    }
+  ],
+  "coverage": [
+    -15,
+    54,
+    1,
+    62
+  ],
+  "dataset": "Mapzen/Terrain Tiles skadi composite elevation, not pure SRTM",
+  "documentation": "https://github.com/tilezen/joerd/tree/master/docs",
+  "grid": "3601 by 3601 signed 16-bit heights per degree tile"
+}

@@ -1,0 +1,29 @@
+{
+  "accessed_utc": "2026-11-02T14:35:11.301441+00:00",
+  "inputs": [
+    {
+      "bytes": 329502519,
+      "path": "data/regions/scotland/scotland-261031.osm.pbf",
+      "replicationTimestamp": "2026-10-31T21:23:06Z",
+      "sha256": "7c50d0f0470f5f5ce3581608283e415ec9806df1c5f04dd1ed6d0a98aa8ca4c0",
+      "url": "https://download.geofabrik.de/europe/united-kingdom/scotland-261031.osm.pbf"
+    }
+  ],
+  "osm": {
+    "bytes": 329502519,
+    "operation": "Complete upstream extract; no merge or spatial filtering",
+    "path": "data/regions/scotland/scotland-261031.osm.pbf",
+    "replicationTimestamp": "2026-10-31T21:23:06Z",
+    "sha256": "7c50d0f0470f5f5ce3581608283e415ec9806df1c5f04dd1ed6d0a98aa8ca4c0",
+    "snapshot_date": "2026-10-31",
+    "url": "https://download.geofabrik.de/europe/united-kingdom/scotland-261031.osm.pbf"
+  },
+  "polygons": [
+    {
+      "bytes": 4204,
+      "path": "data/regions/scotland/scotland.poly",
+      "sha256": "21a760a04939c3facdc4a99e7ea8cfa5d2e1180b936230fb5801c85f1732455b",
+      "url": "https://download.geofabrik.de/europe/united-kingdom/scotland.poly"
+    }
+  ]
+}

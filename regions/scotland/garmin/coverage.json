@@ -1,0 +1,35 @@
+{
+  "areaSquareDegrees": 52.55301553198354,
+  "bounds": [
+    -14.86155,
+    54.54001,
+    0.2160547,
+    61.13564
+  ],
+  "inputs": [
+    {
+      "bytes": 4204,
+      "path": "data/regions/scotland/scotland.poly",
+      "sha256": "21a760a04939c3facdc4a99e7ea8cfa5d2e1180b936230fb5801c85f1732455b",
+      "url": "https://download.geofabrik.de/europe/united-kingdom/scotland.poly"
+    }
+  ],
+  "knownDestinationsCovered": [
+    "island",
+    "edinburgh",
+    "glasgow",
+    "cairngorms",
+    "ben-nevis",
+    "skye",
+    "lewis",
+    "orkney",
+    "shetland",
+    "unst",
+    "st-kilda",
+    "rockall",
+    "borders"
+  ],
+  "operation": "Geometric union of complete upstream region outlines; overlapping buffers dissolved",
+  "polygons": 1,
+  "sha256": "387c1b775b06680754fd62e0e482a435f30bed614f20db14fcc41200e12b293c"
+}

@@ -57,7 +57,7 @@ def assemble(destination, region='ireland'):
     shutil.copyfile(ROOT/'ios/INTEGRATION.txt',destination/'INTEGRATION.txt');shutil.copyfile(ROOT/'ios/INTEGRATION.txt',bundle/'INTEGRATION.txt')
     if region != 'ireland':
         for file in [destination/'INTEGRATION.txt',bundle/'INTEGRATION.txt']:
-            file.write_text(file.read_text().replace('Start around longitude -8.15, latitude 53.4, zoom 7. The map is designed for full-island coverage.', 'Use the region bounds in manifest.json, or longitude -2.3, latitude 52.8, zoom 6, for the full England/Wales edition.'))
+            file.write_text(file.read_text().replace('Start around longitude -8.15, latitude 53.4, zoom 7. The map is designed for full-island coverage.', f"Use the region bounds in manifest.json, or longitude {edition['destinations']['island'][0]}, latitude {edition['destinations']['island'][1]}, zoom {edition['destinations']['island'][2]}, for {edition['name']}."))
     inventory=[]
     for p in sorted(bundle.rglob('*')):
         if p.is_file():inventory.append({'path':str(p.relative_to(bundle)),'bytes':p.stat().st_size,'sha256':sha(p)})
@@ -83,4 +83,4 @@ def assemble(destination, region='ireland'):
     validation['totalBytes']=sum(p.stat().st_size for p in bundle.rglob('*') if p.is_file());validation['fileCount']=sum(1 for p in bundle.rglob('*') if p.is_file());write(destination/'validation.json',validation)
     print(json.dumps({'bundle':str(bundle),'bytes':validation['totalBytes'],'files':validation['fileCount']},indent=2))
 if __name__=='__main__':
-    parser=argparse.ArgumentParser();parser.add_argument('--output',type=Path);parser.add_argument('--region',choices=['ireland','england-wales'],default='ireland');args=parser.parse_args();assemble((args.output or (ROOT/'ios/package' if args.region=='ireland' else ROOT/'regions'/args.region/'ios')).resolve(),args.region)
+    parser=argparse.ArgumentParser();parser.add_argument('--output',type=Path);parser.add_argument('--region',choices=['ireland','england-wales','scotland'],default='ireland');args=parser.parse_args();assemble((args.output or (ROOT/'ios/package' if args.region=='ireland' else ROOT/'regions'/args.region/'ios')).resolve(),args.region)

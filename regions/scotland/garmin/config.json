@@ -1,0 +1,28 @@
+{
+  "compilerOptions": [
+    "--max-jobs=2",
+    "--style-file=/Users/davidowens/Documents/Codex/2026-10-25/i-x20/outputs/OpenBareMap/regions/scotland/garmin/style",
+    "--family-id=4834",
+    "--product-id=1",
+    "--family-name=OpenBareMap Scotland",
+    "--series-name=OpenBareMap Garmin 2.0",
+    "--description=OpenBareMap Scotland 2.0",
+    "--code-page=1252",
+    "--lower-case",
+    "--name-tag-list=name:en,name,name:gd",
+    "--levels=0:24,1:22,2:20,3:18,4:16",
+    "--gmapsupp",
+    "--add-pois-to-areas",
+    "--dem=/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/hgt",
+    "--dem-poly=/Users/davidowens/Documents/Codex/2026-10-25/i-x20/outputs/OpenBareMap/regions/scotland/garmin/coverage.poly",
+    "--dem-dists=3312,13248,26512,53024,106048",
+    "--dem-interpolation=bilinear",
+    "--copyright-file=/Users/davidowens/Documents/Codex/2026-10-25/i-x20/outputs/OpenBareMap/regions/scotland/garmin/copyright.txt"
+  ],
+  "contourIntervalMetres": 20,
+  "coverage": "Complete Geofabrik Scotland extract, including the Hebrides, Orkney, Shetland and Rockall; no pilot or regional sampling",
+  "familyId": 4834,
+  "garminPackageRevision": "2.0.0-garmin-r1",
+  "routing": false,
+  "tileStartId": 48340001
+}

@@ -1,0 +1,2305 @@
+{
+  "dateUTC": "2026-11-02T15:14:36.071730+00:00",
+  "scope": "Only this task\u2019s redundant Scotland build intermediates; selected databases, pinned sources, native bundles and exports retained",
+  "preservedFiles": {
+    "releases/scotland/2.0.0/maps/basemap.mbtiles": "194a5fabae662750fde88ca56ba60aae15fc8dd262ead11f27db47833d7bf366",
+    "releases/scotland/2.0.0/maps/grid.mbtiles": "c6d6e919fd1241950300102acfcb086e488b7a90e81d3204557bda61150194be",
+    "releases/scotland/2.0.0/maps/hillshade.mbtiles": "d212ecd57f613849c940eedb5e1d32c4500ad506c9a14ea7fbc29d3e17e944c2",
+    "releases/scotland/2.0.0/maps/topography-context.mbtiles": "42228623d26b85157cc022c511e4cb2ce598411507bb2170d95d7bb8e640b067",
+    "regions/scotland/garmin/dist/OpenBareMap-Scotland.img": "bd048bef54c0f06313454f81dfa60a3703d27fab881daa2d771d08f6c8d7f589",
+    "data/regions/scotland/scotland-261031.osm.pbf": "7c50d0f0470f5f5ce3581608283e415ec9806df1c5f04dd1ed6d0a98aa8ca4c0",
+    "data/regions/scotland/elevation/N54W015.hgt.gz": "acc11e9da0c9392efff0da3425742cda3335c7ba314d26e63f6bc6680d135685",
+    "data/regions/scotland/elevation/N54W014.hgt.gz": "127874e585f0f0ded607031cb2d693267d6b082a90acd6121912c9100598d1d3",
+    "data/regions/scotland/elevation/N54W013.hgt.gz": "ed2421170d9deea766dd52f9830bab9cd013558081cdd1071f1e443dde30e3a1",
+    "data/regions/scotland/elevation/N54W012.hgt.gz": "ab566155727bcc3159422acd7f3f668eccd30c83676b70b9d31d1caed31ea04b",
+    "data/regions/scotland/elevation/N54W011.hgt.gz": "464b007abbcd7c5a1e5e9c583495438ce87b1f78b2a8dc4eaa5a09481288830e",
+    "data/regions/scotland/elevation/N54W010.hgt.gz": "3fa3d8446370d0b0ac500755c596c4e3ac402985072c9669f1a3a0e40b95cfa8",
+    "data/regions/scotland/elevation/N54W009.hgt.gz": "e42049b35680872dfd51cdd1acc620477aa019616b5217b9c113cc78c5f379ce",
+    "data/regions/scotland/elevation/N54W008.hgt.gz": "fdb494a1c82ec7d2a8e34ae947d6f8af2069360d67c9ce971ae90185a0b25225",
+    "data/regions/scotland/elevation/N54W007.hgt.gz": "a6a26e7f4c8cad4cdcacab804622d60a1d5b75ecb1b16a09e16998805d1c057a",
+    "data/regions/scotland/elevation/N54W006.hgt.gz": "237c267452e2acc19b5c63e76247aa1ae770c4b46e412b310038625786e093f7",
+    "data/regions/scotland/elevation/N54W005.hgt.gz": "2a368b359b4d1126b0aa1dea9825195682e8f2d119ba7060994850e28e2f8b8a",
+    "data/regions/scotland/elevation/N54W004.hgt.gz": "40a4b66a95172468fe22535f794e71b17caed99fc7ef9e8053594830e03611f5",
+    "data/regions/scotland/elevation/N54W003.hgt.gz": "021f97677d94ea762da609fc70357db5f8802bda31b00c9d015f0dcaa14e53e3",
+    "data/regions/scotland/elevation/N54W002.hgt.gz": "4750963904204efa051ad5c4de34535df30610cd88758b35732de56cb6e5f063",
+    "data/regions/scotland/elevation/N54W001.hgt.gz": "0a6f6074f8bf955e957a74acad8e4c3a05f616a6fc296192133f83d75f27c0b0",
+    "data/regions/scotland/elevation/N54E000.hgt.gz": "e474ebf016b75119713c5d0ceea292164340d8ff92bf90fe6d4c71c9ab92596d",
+    "data/regions/scotland/elevation/N55W015.hgt.gz": "69a615c850d418bb40dd73c51f0eb883ede1544b7820fd445e9b2bbd343ebfdd",
+    "data/regions/scotland/elevation/N55W014.hgt.gz": "290310a384e2e9c3dba4cbdc7a0d9756a321af7cd04c96922539a85829e91830",
+    "data/regions/scotland/elevation/N55W013.hgt.gz": "b81f4913d87b6d04f83d1589193d3de11e88065a85a9e348a189000796dadd41",
+    "data/regions/scotland/elevation/N55W012.hgt.gz": "d956a6ea18fc55e1672ad2da6b7d87916a4772612b1f7c727260470760fa18eb",
+    "data/regions/scotland/elevation/N55W011.hgt.gz": "3995cea25944aa1f7dfc1f8f02778ebc913844a798d1b4c569f1499142ae4941",
+    "data/regions/scotland/elevation/N55W010.hgt.gz": "c5e647607997d5f3c2fb8240e6d3e7e8c599ca556133a3a6c97317ec25bce5dc",
+    "data/regions/scotland/elevation/N55W009.hgt.gz": "8906f89918b76395b17c81d7ca753074e5c13d2184709e6c7e9a2602383cefca",
+    "data/regions/scotland/elevation/N55W008.hgt.gz": "04b01e932e1f51ec868a3a6c9196b40b3856c518aae4e7580ac40d7922ac7292",
+    "data/regions/scotland/elevation/N55W007.hgt.gz": "251b4bcbf8b1656b434fe9f126364d305e3b542a1c48f9b896c9b741c02892d2",
+    "data/regions/scotland/elevation/N55W006.hgt.gz": "b5d2d80eb621e7157afe082d41b26875a8d08fa1bc5ea474c7726b2d26073820",
+    "data/regions/scotland/elevation/N55W005.hgt.gz": "a94a6175399650c184b9201475e445076dc2b657162773d2dd0d3c107850deb7",
+    "data/regions/scotland/elevation/N55W004.hgt.gz": "61c9bcf1d6297b9154d380cc662f302644d445d66f1b357db465364880c4e620",
+    "data/regions/scotland/elevation/N55W003.hgt.gz": "07608f5a46a2abd9c1ec51f2d74fbeefc0abaf6c866f0db8ebed5108bb0588e2",
+    "data/regions/scotland/elevation/N55W002.hgt.gz": "d85071a97b4851263c4fe40eef548db02d986e07761fd7905ae9c4bf0652fce8",
+    "data/regions/scotland/elevation/N55W001.hgt.gz": "bb5a62737939fa0dbee0aa38ba7b9d4ef61536b61603acf0b0ad06c18ab31e22",
+    "data/regions/scotland/elevation/N55E000.hgt.gz": "d9ef46c288f45747e50abf40255767df7275fcf0e22fdcdc54f84c015c3c8f3f",
+    "data/regions/scotland/elevation/N56W015.hgt.gz": "a2a754fe21049594c78b72f65eab18f8e741430b97c071f02d242cc165630aea",
+    "data/regions/scotland/elevation/N56W014.hgt.gz": "851ae76f5485fe16ffd3ea93d21ad31a316b597e349f72e7954a825dee7386f0",
+    "data/regions/scotland/elevation/N56W013.hgt.gz": "39a83ac194e28ad35e67aac32016d1e10ec1bb50d287473b48702581f97a5b1f",
+    "data/regions/scotland/elevation/N56W012.hgt.gz": "552c6be0185dbdb06af599dd55d5855136c45124c024e0076b176e93eed991d1",
+    "data/regions/scotland/elevation/N56W011.hgt.gz": "cddcfa9502c79f30f5a718fa5e63b0c294a437c474dad927838c302fb3af3e38",
+    "data/regions/scotland/elevation/N56W010.hgt.gz": "f5e06da3815808e6d92ed3cdba0ad270f8fb61f3ee86c996f6c9cbedca48f019",
+    "data/regions/scotland/elevation/N56W009.hgt.gz": "9c1067ae257785f0f38fe9e22c67794c59200244a687e514a3d3971cf760257e",
+    "data/regions/scotland/elevation/N56W008.hgt.gz": "b35d9a5e6c827ad6120312f5e0d19290ec182e0e02f84ee44e17de2a2987fa54",
+    "data/regions/scotland/elevation/N56W007.hgt.gz": "2a839190288da4f07292d00625c67037925291510e42667f7d29df4b5e87a869",
+    "data/regions/scotland/elevation/N56W006.hgt.gz": "7b57a2d509c8c7ec9dd8956e8cff07f12da43828f02ba876620baef9f13f8c0d",
+    "data/regions/scotland/elevation/N56W005.hgt.gz": "73956d39ce7310ffa787144635e423b6a3b9b26e208106f2450bb3fd7efaeb14",
+    "data/regions/scotland/elevation/N56W004.hgt.gz": "e8c99f7fd9a55bcb885004cb438511c5be047c14b9b7f178d9fb12523768315c",
+    "data/regions/scotland/elevation/N56W003.hgt.gz": "4fd85f5085f467296b55ac8312ee4824ac43a8f03fdf7010b922773ed418f1c0",
+    "data/regions/scotland/elevation/N56W002.hgt.gz": "4f83019b3bea21283d1e13b23f0c385f62c2e98aadf48b70de75129325bf197d",
+    "data/regions/scotland/elevation/N56W001.hgt.gz": "dcd952c838be4c94e1c88cab53d7f86bad96587833170f32f582436d6060a1e8",
+    "data/regions/scotland/elevation/N56E000.hgt.gz": "fe135f658a87aa6d726f01f0aced287b54fa573a09cc277ed48ff400ae59542a",
+    "data/regions/scotland/elevation/N57W015.hgt.gz": "6cd8709d3c7d1f43c87c30d9b2ce5fe68e0843a47680fd208bea5bc529e42428",
+    "data/regions/scotland/elevation/N57W014.hgt.gz": "993798d36b48ecce2f934192cb58eadba740ce7d5d5716a9da062dc5fab0140d",
+    "data/regions/scotland/elevation/N57W013.hgt.gz": "7c28bd3d35eaba463252bb3341b0bff64a59136007f2dee0671dc2233008acc3",
+    "data/regions/scotland/elevation/N57W012.hgt.gz": "cf8efea971cfdd03df707fd9651aa36d14a178f8ac2dd48f5b427e40fff00134",
+    "data/regions/scotland/elevation/N57W011.hgt.gz": "a0773b0657823b7e24f649774307e47feb36927e5b39d9eb565a1a8af3d391be",
+    "data/regions/scotland/elevation/N57W010.hgt.gz": "91614df27c4cefc11d193ffd29473492d792bc5147d0cd9342ef8f4418806b13",
+    "data/regions/scotland/elevation/N57W009.hgt.gz": "cb94591a15d4004910e1958ec006eb505e39ec0d2d3a7aedacf98c7e2900d394",
+    "data/regions/scotland/elevation/N57W008.hgt.gz": "55a0e79f8ba2c4c982bf4e665bff266ee4ce937ae77a5dba977570365f25dfa7",
+    "data/regions/scotland/elevation/N57W007.hgt.gz": "7e62af200b094c5974aa0d6d7cc661dda734a73e344b3dedc8dbfcb285b7e801",
+    "data/regions/scotland/elevation/N57W006.hgt.gz": "1841302b27b3c86b700b816635cb930bb7a75cee519bc12ee7dd876f88b5909e",
+    "data/regions/scotland/elevation/N57W005.hgt.gz": "260bf16da3ec2b9fd61133b4a509d8b044e6f5a681178817edceeab1188b6469",
+    "data/regions/scotland/elevation/N57W004.hgt.gz": "9a7267c945f022c70a9c8df7b42feb70539472a0c7af116a364b8cb034fff98e",
+    "data/regions/scotland/elevation/N57W003.hgt.gz": "7fca06d465b9284578e328d19291e3daeb56538ada15e8976bdf7210fce47257",
+    "data/regions/scotland/elevation/N57W002.hgt.gz": "a66f6efc2bce2460b2bab9d7140d48a2dbccf0d498383f741dd3025c35f424be",
+    "data/regions/scotland/elevation/N57W001.hgt.gz": "2f6edf7f0bcc058626232bb0e9815739ff0b8c1a9d26f76bced6dab549681a3d",
+    "data/regions/scotland/elevation/N57E000.hgt.gz": "a9ec713bff3cf97ab9d9d51d9d78511eebfcbe7eb6a9804966f147498bf49360",
+    "data/regions/scotland/elevation/N58W015.hgt.gz": "0f55d1fc2f61ed831b9fc9417282bee550308850de8c710397f5ceb82e8a0d25",
+    "data/regions/scotland/elevation/N58W014.hgt.gz": "822ec0ab359ccf318a79d12057f99dfc1edbd2c92710143cd9004f61b3d89796",
+    "data/regions/scotland/elevation/N58W013.hgt.gz": "d9e8f80fe58a9eca1012f8e1c61e8c192efd4b8d04d0c7dfb4749cac9adac8c5",
+    "data/regions/scotland/elevation/N58W012.hgt.gz": "0e7269106d4615f087946ba9f1ff3d59a3062356a09dd312dc05c9d61bfa15b0",
+    "data/regions/scotland/elevation/N58W011.hgt.gz": "1dbce4cc24a1bcf1aae549daae6b112b1c0008f11da7c8a7c53586354c1732b0",
+    "data/regions/scotland/elevation/N58W010.hgt.gz": "bf4785b804783211420a715152aa88e696ac556832d12e937752c800498c5c40",
+    "data/regions/scotland/elevation/N58W009.hgt.gz": "b86e056bb04543f04218d8099059e7170810a6fce5008e3069cbb087056fccea",
+    "data/regions/scotland/elevation/N58W008.hgt.gz": "2425467056a84bdf4dac50ffa6081f76d2c1f9914dc6f77211951111b8f54d76",
+    "data/regions/scotland/elevation/N58W007.hgt.gz": "a8bd18c2a5674c50d44fb0cd8a6b9e95d4fd4897d33c1b435863a9d6f34330ed",
+    "data/regions/scotland/elevation/N58W006.hgt.gz": "ba437a4292a261a449bd4d840080e20be7c7881fa3e199d27b34196b4f41baa1",
+    "data/regions/scotland/elevation/N58W005.hgt.gz": "a07a2d265ff6b9c9de5dbc8fcf379d9a99e0289a698763ece2ecb3d5247588ea",
+    "data/regions/scotland/elevation/N58W004.hgt.gz": "b93079a46e7b1cb37a79052e8ee8d3f3bd24c2ef897d0fb0d454202cec05282e",
+    "data/regions/scotland/elevation/N58W003.hgt.gz": "c83766cd1356818440d8836498f5013d5005d0fa42d9591591cb75eb3a24bb70",
+    "data/regions/scotland/elevation/N58W002.hgt.gz": "9497b1717fba3ade875d16643dc1c60002d4ceb94b1b38f99d55e85b623f402d",
+    "data/regions/scotland/elevation/N58W001.hgt.gz": "834f3268c384b403826acb9d25b1a93f5fb1b2289833f9d0f2684971b0a1100b",
+    "data/regions/scotland/elevation/N58E000.hgt.gz": "02bed493e5ede08bcc8abd770436d66bf228cc645af20c2faa498a20a2f1854a",
+    "data/regions/scotland/elevation/N59W015.hgt.gz": "1e47f1fe705313c7056280f1da06efd428fa8882e145c5133438317d4b3b5d7b",
+    "data/regions/scotland/elevation/N59W014.hgt.gz": "1696a17d59e3095e329451d395976eed59e246d54fd578c6678d65e178d22343",
+    "data/regions/scotland/elevation/N59W013.hgt.gz": "825e5dfb4fe357fb95ffc686f8e0ce940db2f91ffef66a6114afec18a0fc2345",
+    "data/regions/scotland/elevation/N59W012.hgt.gz": "7b57c1beb05884614f323f78c45bfcac1c5d2ff2a3a89122dcac8b41b9e348d7",
+    "data/regions/scotland/elevation/N59W011.hgt.gz": "61a92839fa842ab8d4050e77a1316169296cadb8995a505153d0f6734144c4c5",
+    "data/regions/scotland/elevation/N59W010.hgt.gz": "944ff91bad5c74b6cdddde1ad3a4d4be3e236dad2f78a88de43c4448f304201e",
+    "data/regions/scotland/elevation/N59W009.hgt.gz": "1bd6be96905a426c27e74eecd765f1e83dee69573971e020b4792cb9ece2fb9c",
+    "data/regions/scotland/elevation/N59W008.hgt.gz": "5f406ca15a7d9fd3809eeac3ab14ee7424305041fb72267a440f3aff8be5a7e4",
+    "data/regions/scotland/elevation/N59W007.hgt.gz": "9755f47eed8e1426d0fbccaa9a758ada5ab58ad07052b2025716c99106f17fc5",
+    "data/regions/scotland/elevation/N59W006.hgt.gz": "5cc80ae4a23bcd03f38dd54e2aa4a2dfccf1cda36e4f76e4ed4d424a7fe05dfe",
+    "data/regions/scotland/elevation/N59W005.hgt.gz": "23bce5b5fa2fbf3321ff5f9f98003494a09a56b2bd3e342cb0d63500a096ed27",
+    "data/regions/scotland/elevation/N59W004.hgt.gz": "3d9d35b06da0f69fb3714dbf47be481ded4677f9c1387d5291aa047402d4fc99",
+    "data/regions/scotland/elevation/N59W003.hgt.gz": "812dba8a6ce0e6b0ede25fc510196931d5931cf2437c3fbce04a9cf0a865f219",
+    "data/regions/scotland/elevation/N59W002.hgt.gz": "da0575ea52d8f75b0ad9c9758c9b5f284a97e9181c0289f72d90c67c347e1cfa",
+    "data/regions/scotland/elevation/N59W001.hgt.gz": "99a496337cc74394250f51771a0a1ad3c0e40d33c801911c70bb17aa47e43d9a",
+    "data/regions/scotland/elevation/N59E000.hgt.gz": "ae65fe42379ddf641bf9b0727c96af68a5065c28ee4cda9b5a9ecbb6a0159346",
+    "data/regions/scotland/elevation/N60W015.hgt.gz": "b0e1c18f345dec23a51e2230bc7e2ffc456d87d6e442206557173a1d074f3338",
+    "data/regions/scotland/elevation/N60W014.hgt.gz": "9b4065bd4d145490f92fb55f74eed004585af2ca6e4dcd072cf69ced7fe72cd2",
+    "data/regions/scotland/elevation/N60W013.hgt.gz": "087ed39ed016b33c49ac021486a1008eebbe92312631cf0ff81a8e40e79c5353",
+    "data/regions/scotland/elevation/N60W012.hgt.gz": "3f3f261fbf4df87508d6769429bb89e2f679ed77aad62b9c870809a05ba678ec",
+    "data/regions/scotland/elevation/N60W011.hgt.gz": "a9a6c65d9b60b4c004e50b60d9ca5dbd8e0948ba4216d36c5741be0562fa1df1",
+    "data/regions/scotland/elevation/N60W010.hgt.gz": "ba4b746690dd68e2cd19aa3fc2054fe0e36138aadeeb6190b962fd21bf057d31",
+    "data/regions/scotland/elevation/N60W009.hgt.gz": "158df4b33bfd666581b2da7df45b37391780e9d9295b071727d70530e80e8133",
+    "data/regions/scotland/elevation/N60W008.hgt.gz": "7c027c32e1683e7a41416aa104048b8babd7d6aca1c6755d14842a9db51a973f",
+    "data/regions/scotland/elevation/N60W007.hgt.gz": "aa02dc1029dee43704a164d42d8f67c0461bfd7e91d23d9561e6336e9d44853f",
+    "data/regions/scotland/elevation/N60W006.hgt.gz": "5acf1913f2c8d84b9d0c31d439b2ff2d34817050184dfbb5734951d2111fd0ba",
+    "data/regions/scotland/elevation/N60W005.hgt.gz": "5d40fdaa5434dae21cde9f015de7915514f19328aa043eb2eca4ee9ddbf3d69d",
+    "data/regions/scotland/elevation/N60W004.hgt.gz": "44ebbdbd0fc1dbccf5e9a0ffe34315951a1e7bc19e2f798bc589ad4e401a1063",
+    "data/regions/scotland/elevation/N60W003.hgt.gz": "f94c5352c51e1193a84f791d6a303adf001ad196095dd596a2d13e6e489afee1",
+    "data/regions/scotland/elevation/N60W002.hgt.gz": "c181a2ea4d72446e47c92bb2fc1c2ac9eb85f9fadd30be9e25b872c7e24be5cb",
+    "data/regions/scotland/elevation/N60W001.hgt.gz": "b14b9f239f802c9e8d9a1f1ea25b446b2a585d6eaa43ee7d86a44d858138ee44",
+    "data/regions/scotland/elevation/N60E000.hgt.gz": "7f4b1228661a21ec3038020ed7bf9851b05cd94678cab9e79163fd2fb877c446",
+    "data/regions/scotland/elevation/N61W015.hgt.gz": "89c6f90d16a3e9ff8b290e7eba88779faa3e2ca5baa571d28ce503fc96ac0866",
+    "data/regions/scotland/elevation/N61W014.hgt.gz": "1d3630de7268ec9fe834aae6d79a9f3eca9d33b0972c26a632215d1d20ea2a77",
+    "data/regions/scotland/elevation/N61W013.hgt.gz": "638a43611f2fe301e5cdcd25acc3ca79ab50a29c48e9bfe4b9830debf6568dc3",
+    "data/regions/scotland/elevation/N61W012.hgt.gz": "d48dbcd3fb94fef4d436c9689458cb58f3872fd9f0c9a3eee91611054829af76",
+    "data/regions/scotland/elevation/N61W011.hgt.gz": "8e6a0211fb8431de3c14982ac50d1a38f1b6679d47f335bbc7b3d22ff934de98",
+    "data/regions/scotland/elevation/N61W010.hgt.gz": "011076e62bbf8026c78c06703b2119f3a5a3c9559611ca2b082f9fdb6da6552b",
+    "data/regions/scotland/elevation/N61W009.hgt.gz": "23d3007abd9eb9d132171c394782c712c6e01c4c6df0917da0acb9346c3d042b",
+    "data/regions/scotland/elevation/N61W008.hgt.gz": "68ca9920f7e82bcbf65bdec5060d3305dfedae2ad76e4609cf76e346d69d0a3f",
+    "data/regions/scotland/elevation/N61W007.hgt.gz": "ffa4c9d146102a9569f326a3eedaffa6b1d6a603194bd5d0c9ad7f9f814bc12d",
+    "data/regions/scotland/elevation/N61W006.hgt.gz": "d9974fde7e753c4a8881f2fa2111a6f467261895605a642bcd5117f15587f0aa",
+    "data/regions/scotland/elevation/N61W005.hgt.gz": "7f844423975349fe2872b6f416efae41073a40b42848c944ca7162e84f7ce7cb",
+    "data/regions/scotland/elevation/N61W004.hgt.gz": "78a9f6981c53f19161c63d0a789f7f5a8c59cbbe8f9cea9eec937249cb182a55",
+    "data/regions/scotland/elevation/N61W003.hgt.gz": "671ed2d67c145abb82f696b6bcb497234124693b097ea07defa486a993201f54",
+    "data/regions/scotland/elevation/N61W002.hgt.gz": "5d7f377154a2ef6dde6442e2c1b382bacce3b4a03c72b4d911117e58d8566178",
+    "data/regions/scotland/elevation/N61W001.hgt.gz": "f4dedbb1dc0323a436202035580d71ac32653f824247e9a8400b8b8b3028cf2f",
+    "data/regions/scotland/elevation/N61E000.hgt.gz": "aee9bee424fa116ec6a6b656418bbbc89e9f184225b3b9af03a4e2521d3545ea",
+    "data/regions/scotland/elevation/N53W016.hgt.gz": "a8bc6ebcb5d28d3ecc40ea5a939f764d90d51ae1267d9e8594eb998c89682932",
+    "data/regions/scotland/elevation/N53W015.hgt.gz": "d79de759602f6adbf8dc7fa844400ba47dfbfd21f139a662f3c63698683e568b",
+    "data/regions/scotland/elevation/N53W014.hgt.gz": "4ca684efe3bf460717efcd822bdd556a6aea04b822a929936b1932723e5b84a4",
+    "data/regions/scotland/elevation/N53W013.hgt.gz": "897220b65bc314748c860001895859ec238814b1121bcef6611f580ed3014823",
+    "data/regions/scotland/elevation/N53W012.hgt.gz": "e6f4f022584f6d12a05a7c0392a222ab23860f3a88df6be1c10bb1edfca61cb7",
+    "data/regions/scotland/elevation/N53W011.hgt.gz": "757e1aeafa2e25ed0de688b3aa4b2efef1181f461ebcedfffd56fabd6e9034cc",
+    "data/regions/scotland/elevation/N53W010.hgt.gz": "60fd12f709be26a768d90e480cd21000eeb9985bcbc4b5e788bc1ba6a12be215",
+    "data/regions/scotland/elevation/N53W009.hgt.gz": "caad5ea41d1aa29036ead93b167e417a14cd0585e20f59dde4ed297ed1c2bc02",
+    "data/regions/scotland/elevation/N53W008.hgt.gz": "12b3c384af4a72db7a22ef6b50fc8a361593eb412c0f67c5346da66d1edace8e",
+    "data/regions/scotland/elevation/N53W007.hgt.gz": "c1b01742a50466ee4f47c6d8e14b5b76382bfce487b27a34a638932900303623",
+    "data/regions/scotland/elevation/N53W006.hgt.gz": "9848b9e97fc6768243acedf75b7220808ea8ab861912c9df24f23685b713e6a9",
+    "data/regions/scotland/elevation/N53W005.hgt.gz": "a159bab2a767e937625e8fe6199416184255c814e4666d2937db9dfc45f6a1d4",
+    "data/regions/scotland/elevation/N53W004.hgt.gz": "902f1a2d6606ffff42e6a38c7ea4d128cd31f2affc4b5ba57e579c547bae1d94",
+    "data/regions/scotland/elevation/N53W003.hgt.gz": "fdaaaf8249fdfdb86165a28620a0f75bb0da45261194e0c055ac7762960e1417",
+    "data/regions/scotland/elevation/N53W002.hgt.gz": "7c55daaabedc27af19af55fea0d90b04f1e4c3f4d2fe64c87b969b9aa9ce8800",
+    "data/regions/scotland/elevation/N53W001.hgt.gz": "0dbe106781b0049742e7c31b282cc493fb7053ec99f4bf3533fb363a76104fa4",
+    "data/regions/scotland/elevation/N53E000.hgt.gz": "35cbe1010de958c1aad68e02c6414f6f13a20cdb194b16b8ec520132713381f2",
+    "data/regions/scotland/elevation/N53E001.hgt.gz": "81237dd69b17ec4a55b699ff950f6b7eabc468cf10465d01bc28cb7d97617070",
+    "data/regions/scotland/elevation/N54W016.hgt.gz": "7e409c96a4e89acf76c5724da16a213c47ebd0b25eff13412c7e592314303418",
+    "data/regions/scotland/elevation/N54E001.hgt.gz": "bf0e8b35e5efb7cfcb433aa51107264861b0ad801fc4fb0c45a27978b2d16328",
+    "data/regions/scotland/elevation/N55W016.hgt.gz": "2573002883c365bb00f502e0612d7da82ec3d9c67f6ffa3ef8a7e4031d8c8b70",
+    "data/regions/scotland/elevation/N55E001.hgt.gz": "cad525d3167a0f8b748ac4af56c91fe1a514198da92277846bfd3f3a32b25746",
+    "data/regions/scotland/elevation/N56W016.hgt.gz": "68843e52d0a06f560e42d21e281a80154609fb651f91878365832b7c528e24a0",
+    "data/regions/scotland/elevation/N56E001.hgt.gz": "e54b8b11622d2c6f5e70270e07fea2ab020d1adb7886be14de5743de91faef2a",
+    "data/regions/scotland/elevation/N57W016.hgt.gz": "f09032f60ce3ab675f2a366e6e65716c5764341b10b2769c95e6a48b73d3a11d",
+    "data/regions/scotland/elevation/N57E001.hgt.gz": "5d47d7f50396f79cfde59a0c4a5fcd188f5540d580fd939e29be9d496781d9ce",
+    "data/regions/scotland/elevation/N58W016.hgt.gz": "35311ea4999b900c28158be2c7a246edd3a3d96a3c3174f6b4cb09b44449d2e7",
+    "data/regions/scotland/elevation/N58E001.hgt.gz": "b68c0c97070fb49f0170ee595a7e1fb5a456136f7cbc9bddbf3087832f2fc976",
+    "data/regions/scotland/elevation/N59W016.hgt.gz": "fa7c418f56ba4b3505240b103b986f6ab74f03ef4dfddf4feda56d8ba4b61857",
+    "data/regions/scotland/elevation/N59E001.hgt.gz": "c388f34fff98bf57cbba8ed4dab7383ee870e4f4d8d847e98d94be9ed0e7711b",
+    "data/regions/scotland/elevation/N60W016.hgt.gz": "5306bdf82fa43fbc92860d8559fac6e524f744533b402db247a2ced81677a929",
+    "data/regions/scotland/elevation/N60E001.hgt.gz": "175aef0d9ffd2d3cbdaee313cd6668da8ed1479fa030e7796c69e551dcc4dea2",
+    "data/regions/scotland/elevation/N61W016.hgt.gz": "f718ecd94323df764ab47ae08bd1c9215c03db77e6196646f1d2fb0e964d0531",
+    "data/regions/scotland/elevation/N61E001.hgt.gz": "11004d9aed95eb67e031ffa5f5e3ab04375351b8f79494f9ec0e082fee7707b9",
+    "data/regions/scotland/elevation/N62W016.hgt.gz": "6ff5810cb842e5a9af77fe58908ed12ecd73424399ae484db369d91b752b6b7b",
+    "data/regions/scotland/elevation/N62W015.hgt.gz": "154878d5f9fd24c56d5db4f69b202db5de0a0d51fdf293a850e94244f1219148",
+    "data/regions/scotland/elevation/N62W014.hgt.gz": "9d1e7e3acd26b337f0bf630ea2b3a344541e26a65b6bf0666de6c541e61ea8ea",
+    "data/regions/scotland/elevation/N62W013.hgt.gz": "a7b8e6724e36543aa62d27fe80f7b300071fd2614315ccab5834f61b6c6b93d2",
+    "data/regions/scotland/elevation/N62W012.hgt.gz": "878c589e86849019623317175f34fc679a56d08d1d50c11a0ca2be165ab2b5d6",
+    "data/regions/scotland/elevation/N62W011.hgt.gz": "55b852482bebfccf4ea03fb52060fcd7495c345cc92c0b962c66cbfe8807f8f9",
+    "data/regions/scotland/elevation/N62W010.hgt.gz": "6ba6514faf5ba14c0aa6f788dac87cb3768fed6d19be8c76b8d1ecda4635a8b7",
+    "data/regions/scotland/elevation/N62W009.hgt.gz": "ca30b4480003e8b3912633448b3f845e063fe3afa0af5489789cb2c2b793b224",
+    "data/regions/scotland/elevation/N62W008.hgt.gz": "dc45042b44ee710f420b1e370fc90e05165190e82c6cb418a6efb2884bae1010",
+    "data/regions/scotland/elevation/N62W007.hgt.gz": "67af1b9ab4f644613847581c3ee8ff57336a5a9f425e34e0e01f914a3ce5fbfe",
+    "data/regions/scotland/elevation/N62W006.hgt.gz": "3c20569ba80bf9464b7fee1a753a3872cf8e66367ead6a049543192fc1f19ad1",
+    "data/regions/scotland/elevation/N62W005.hgt.gz": "2db706620acddc216ce62cd2bca47f13e28c33ab18e491f6277f6c3c5809184b",
+    "data/regions/scotland/elevation/N62W004.hgt.gz": "98c0e6ac4023ec1c850021338e755392cb5c57c6d09f4cc855e1a39fb3e8b57d",
+    "data/regions/scotland/elevation/N62W003.hgt.gz": "b980107776787e6efb417e31a3cd7565037d07ababd8c3f2090041b0bc4b4226",
+    "data/regions/scotland/elevation/N62W002.hgt.gz": "f4df488179d252f11706b0f0bbc4f5e7ddbdeb5e36adb17d2bc79d32b0e4ca13",
+    "data/regions/scotland/elevation/N62W001.hgt.gz": "3b133c05b7b46336c6b264d2b9cfe93f3a2a6fb35fa8724dbe6d6d7d5295614c",
+    "data/regions/scotland/elevation/N62E000.hgt.gz": "5c384acf0deaa8270c37c2a6a0949b0d96b56b279fd8368c6d25afd761d7ccb1",
+    "data/regions/scotland/elevation/N62E001.hgt.gz": "b1dc702405ae6a6276f589f37752d506df308c5006b4ebc83e504a809c8dbe61",
+    "regions/scotland/exports/android/OpenBareMap-Scotland-Android.zip": "b5966d71b025211c7a21dfc410f61d26cd5209a38a8bb111dcf70f6c36ea4255",
+    "regions/scotland/exports/ios/OpenBareMap-Scotland-iOS.zip": "aebe7015dea7d661dbd76d431db86b09460fbd672834c57e997707fb1464d88d"
+  },
+  "removedFiles": [
+    {
+      "path": "build/scotland-basemap/basemap.mbtiles",
+      "bytes": 706609152
+    },
+    {
+      "path": "build/scotland-topography/contours.geojson",
+      "bytes": 383854166
+    },
+    {
+      "path": "build/scotland-topography/contours.gpkg",
+      "bytes": 597196800
+    },
+    {
+      "path": "build/scotland-topography/elevation/N54E000.hgt",
+      "bytes": 25934402
+    },
+    {
+      "path": "build/scotland-topography/elevation/N54W001.hgt",
+      "bytes": 25934402
+    },
+    {
+      "path": "build/scotland-topography/elevation/N54W002.hgt",
+      "bytes": 25934402
+    },
+    {
+      "path": "build/scotland-topography/elevation/N54W003.hgt",
+      "bytes": 25934402
+    },
+    {
+      "path": "build/scotland-topography/elevation/N54W004.hgt",
+      "bytes": 25934402
+    },
+    {
+      "path": "build/scotland-topography/elevation/N54W005.hgt",
+      "bytes": 25934402
+    },
+    {
+      "path": "build/scotland-topography/elevation/N54W006.hgt",
+      "bytes": 25934402
+    },
+    {
+      "path": "build/scotland-topography/elevation/N54W007.hgt",
+      "bytes": 25934402
+    },
+    {
+      "path": "build/scotland-topography/elevation/N54W008.hgt",
+      "bytes": 25934402
+    },
+    {
+      "path": "build/scotland-topography/elevation/N54W009.hgt",
+      "bytes": 25934402
+    },
+    {
+      "path": "build/scotland-topography/elevation/N54W010.hgt",
+      "bytes": 25934402
+    },
+    {
+      "path": "build/scotland-topography/elevation/N54W011.hgt",
+      "bytes": 25934402
+    },
+    {
+      "path": "build/scotland-topography/elevation/N54W012.hgt",
+      "bytes": 25934402
+    },
+    {
+      "path": "build/scotland-topography/elevation/N54W013.hgt",
+      "bytes": 25934402
+    },
+    {
+      "path": "build/scotland-topography/elevation/N54W014.hgt",
+      "bytes": 25934402
+    },
+    {
+      "path": "build/scotland-topography/elevation/N54W015.hgt",
+      "bytes": 25934402
+    },
+    {
+      "path": "build/scotland-topography/elevation/N55E000.hgt",
+      "bytes": 25934402
+    },
+    {
+      "path": "build/scotland-topography/elevation/N55W001.hgt",
+      "bytes": 25934402
+    },
+    {
+      "path": "build/scotland-topography/elevation/N55W002.hgt",
+      "bytes": 25934402
+    },
+    {
+      "path": "build/scotland-topography/elevation/N55W003.hgt",
+      "bytes": 25934402
+    },
+    {
+      "path": "build/scotland-topography/elevation/N55W004.hgt",
+      "bytes": 25934402
+    },
+    {
+      "path": "build/scotland-topography/elevation/N55W005.hgt",
+      "bytes": 25934402
+    },
+    {
+      "path": "build/scotland-topography/elevation/N55W006.hgt",
+      "bytes": 25934402
+    },
+    {
+      "path": "build/scotland-topography/elevation/N55W007.hgt",
+      "bytes": 25934402
+    },
+    {
+      "path": "build/scotland-topography/elevation/N55W008.hgt",
+      "bytes": 25934402
+    },
+    {
+      "path": "build/scotland-topography/elevation/N55W009.hgt",
+      "bytes": 25934402
+    },
+    {
+      "path": "build/scotland-topography/elevation/N55W010.hgt",
+      "bytes": 25934402
+    },
+    {
+      "path": "build/scotland-topography/elevation/N55W011.hgt",
+      "bytes": 25934402
+    },
+    {
+      "path": "build/scotland-topography/elevation/N55W012.hgt",
+      "bytes": 25934402
+    },
+    {
+      "path": "build/scotland-topography/elevation/N55W013.hgt",
+      "bytes": 25934402
+    },
+    {
+      "path": "build/scotland-topography/elevation/N55W014.hgt",
+      "bytes": 25934402
+    },
+    {
+      "path": "build/scotland-topography/elevation/N55W015.hgt",
+      "bytes": 25934402
+    },
+    {
+      "path": "build/scotland-topography/elevation/N56E000.hgt",
+      "bytes": 25934402
+    },
+    {
+      "path": "build/scotland-topography/elevation/N56W001.hgt",
+      "bytes": 25934402
+    },
+    {
+      "path": "build/scotland-topography/elevation/N56W002.hgt",
+      "bytes": 25934402
+    },
+    {
+      "path": "build/scotland-topography/elevation/N56W003.hgt",
+      "bytes": 25934402
+    },
+    {
+      "path": "build/scotland-topography/elevation/N56W004.hgt",
+      "bytes": 25934402
+    },
+    {
+      "path": "build/scotland-topography/elevation/N56W005.hgt",
+      "bytes": 25934402
+    },
+    {
+      "path": "build/scotland-topography/elevation/N56W006.hgt",
+      "bytes": 25934402
+    },
+    {
+      "path": "build/scotland-topography/elevation/N56W007.hgt",
+      "bytes": 25934402
+    },
+    {
+      "path": "build/scotland-topography/elevation/N56W008.hgt",
+      "bytes": 25934402
+    },
+    {
+      "path": "build/scotland-topography/elevation/N56W009.hgt",
+      "bytes": 25934402
+    },
+    {
+      "path": "build/scotland-topography/elevation/N56W010.hgt",
+      "bytes": 25934402
+    },
+    {
+      "path": "build/scotland-topography/elevation/N56W011.hgt",
+      "bytes": 25934402
+    },
+    {
+      "path": "build/scotland-topography/elevation/N56W012.hgt",
+      "bytes": 25934402
+    },
+    {
+      "path": "build/scotland-topography/elevation/N56W013.hgt",
+      "bytes": 25934402
+    },
+    {
+      "path": "build/scotland-topography/elevation/N56W014.hgt",
+      "bytes": 25934402
+    },
+    {
+      "path": "build/scotland-topography/elevation/N56W015.hgt",
+      "bytes": 25934402
+    },
+    {
+      "path": "build/scotland-topography/elevation/N57E000.hgt",
+      "bytes": 25934402
+    },
+    {
+      "path": "build/scotland-topography/elevation/N57W001.hgt",
+      "bytes": 25934402
+    },
+    {
+      "path": "build/scotland-topography/elevation/N57W002.hgt",
+      "bytes": 25934402
+    },
+    {
+      "path": "build/scotland-topography/elevation/N57W003.hgt",
+      "bytes": 25934402
+    },
+    {
+      "path": "build/scotland-topography/elevation/N57W004.hgt",
+      "bytes": 25934402
+    },
+    {
+      "path": "build/scotland-topography/elevation/N57W005.hgt",
+      "bytes": 25934402
+    },
+    {
+      "path": "build/scotland-topography/elevation/N57W006.hgt",
+      "bytes": 25934402
+    },
+    {
+      "path": "build/scotland-topography/elevation/N57W007.hgt",
+      "bytes": 25934402
+    },
+    {
+      "path": "build/scotland-topography/elevation/N57W008.hgt",
+      "bytes": 25934402
+    },
+    {
+      "path": "build/scotland-topography/elevation/N57W009.hgt",
+      "bytes": 25934402
+    },
+    {
+      "path": "build/scotland-topography/elevation/N57W010.hgt",
+      "bytes": 25934402
+    },
+    {
+      "path": "build/scotland-topography/elevation/N57W011.hgt",
+      "bytes": 25934402
+    },
+    {
+      "path": "build/scotland-topography/elevation/N57W012.hgt",
+      "bytes": 25934402
+    },
+    {
+      "path": "build/scotland-topography/elevation/N57W013.hgt",
+      "bytes": 25934402
+    },
+    {
+      "path": "build/scotland-topography/elevation/N57W014.hgt",
+      "bytes": 25934402
+    },
+    {
+      "path": "build/scotland-topography/elevation/N57W015.hgt",
+      "bytes": 25934402
+    },
+    {
+      "path": "build/scotland-topography/elevation/N58E000.hgt",
+      "bytes": 25934402
+    },
+    {
+      "path": "build/scotland-topography/elevation/N58W001.hgt",
+      "bytes": 25934402
+    },
+    {
+      "path": "build/scotland-topography/elevation/N58W002.hgt",
+      "bytes": 25934402
+    },
+    {
+      "path": "build/scotland-topography/elevation/N58W003.hgt",
+      "bytes": 25934402
+    },
+    {
+      "path": "build/scotland-topography/elevation/N58W004.hgt",
+      "bytes": 25934402
+    },
+    {
+      "path": "build/scotland-topography/elevation/N58W005.hgt",
+      "bytes": 25934402
+    },
+    {
+      "path": "build/scotland-topography/elevation/N58W006.hgt",
+      "bytes": 25934402
+    },
+    {
+      "path": "build/scotland-topography/elevation/N58W007.hgt",
+      "bytes": 25934402
+    },
+    {
+      "path": "build/scotland-topography/elevation/N58W008.hgt",
+      "bytes": 25934402
+    },
+    {
+      "path": "build/scotland-topography/elevation/N58W009.hgt",
+      "bytes": 25934402
+    },
+    {
+      "path": "build/scotland-topography/elevation/N58W010.hgt",
+      "bytes": 25934402
+    },
+    {
+      "path": "build/scotland-topography/elevation/N58W011.hgt",
+      "bytes": 25934402
+    },
+    {
+      "path": "build/scotland-topography/elevation/N58W012.hgt",
+      "bytes": 25934402
+    },
+    {
+      "path": "build/scotland-topography/elevation/N58W013.hgt",
+      "bytes": 25934402
+    },
+    {
+      "path": "build/scotland-topography/elevation/N58W014.hgt",
+      "bytes": 25934402
+    },
+    {
+      "path": "build/scotland-topography/elevation/N58W015.hgt",
+      "bytes": 25934402
+    },
+    {
+      "path": "build/scotland-topography/elevation/N59E000.hgt",
+      "bytes": 25934402
+    },
+    {
+      "path": "build/scotland-topography/elevation/N59W001.hgt",
+      "bytes": 25934402
+    },
+    {
+      "path": "build/scotland-topography/elevation/N59W002.hgt",
+      "bytes": 25934402
+    },
+    {
+      "path": "build/scotland-topography/elevation/N59W003.hgt",
+      "bytes": 25934402
+    },
+    {
+      "path": "build/scotland-topography/elevation/N59W004.hgt",
+      "bytes": 25934402
+    },
+    {
+      "path": "build/scotland-topography/elevation/N59W005.hgt",
+      "bytes": 25934402
+    },
+    {
+      "path": "build/scotland-topography/elevation/N59W006.hgt",
+      "bytes": 25934402
+    },
+    {
+      "path": "build/scotland-topography/elevation/N59W007.hgt",
+      "bytes": 25934402
+    },
+    {
+      "path": "build/scotland-topography/elevation/N59W008.hgt",
+      "bytes": 25934402
+    },
+    {
+      "path": "build/scotland-topography/elevation/N59W009.hgt",
+      "bytes": 25934402
+    },
+    {
+      "path": "build/scotland-topography/elevation/N59W010.hgt",
+      "bytes": 25934402
+    },
+    {
+      "path": "build/scotland-topography/elevation/N59W011.hgt",
+      "bytes": 25934402
+    },
+    {
+      "path": "build/scotland-topography/elevation/N59W012.hgt",
+      "bytes": 25934402
+    },
+    {
+      "path": "build/scotland-topography/elevation/N59W013.hgt",
+      "bytes": 25934402
+    },
+    {
+      "path": "build/scotland-topography/elevation/N59W014.hgt",
+      "bytes": 25934402
+    },
+    {
+      "path": "build/scotland-topography/elevation/N59W015.hgt",
+      "bytes": 25934402
+    },
+    {
+      "path": "build/scotland-topography/elevation/N60E000.hgt",
+      "bytes": 25934402
+    },
+    {
+      "path": "build/scotland-topography/elevation/N60W001.hgt",
+      "bytes": 25934402
+    },
+    {
+      "path": "build/scotland-topography/elevation/N60W002.hgt",
+      "bytes": 25934402
+    },
+    {
+      "path": "build/scotland-topography/elevation/N60W003.hgt",
+      "bytes": 25934402
+    },
+    {
+      "path": "build/scotland-topography/elevation/N60W004.hgt",
+      "bytes": 25934402
+    },
+    {
+      "path": "build/scotland-topography/elevation/N60W005.hgt",
+      "bytes": 25934402
+    },
+    {
+      "path": "build/scotland-topography/elevation/N60W006.hgt",
+      "bytes": 25934402
+    },
+    {
+      "path": "build/scotland-topography/elevation/N60W007.hgt",
+      "bytes": 25934402
+    },
+    {
+      "path": "build/scotland-topography/elevation/N60W008.hgt",
+      "bytes": 25934402
+    },
+    {
+      "path": "build/scotland-topography/elevation/N60W009.hgt",
+      "bytes": 25934402
+    },
+    {
+      "path": "build/scotland-topography/elevation/N60W010.hgt",
+      "bytes": 25934402
+    },
+    {
+      "path": "build/scotland-topography/elevation/N60W011.hgt",
+      "bytes": 25934402
+    },
+    {
+      "path": "build/scotland-topography/elevation/N60W012.hgt",
+      "bytes": 25934402
+    },
+    {
+      "path": "build/scotland-topography/elevation/N60W013.hgt",
+      "bytes": 25934402
+    },
+    {
+      "path": "build/scotland-topography/elevation/N60W014.hgt",
+      "bytes": 25934402
+    },
+    {
+      "path": "build/scotland-topography/elevation/N60W015.hgt",
+      "bytes": 25934402
+    },
+    {
+      "path": "build/scotland-topography/elevation/N61E000.hgt",
+      "bytes": 25934402
+    },
+    {
+      "path": "build/scotland-topography/elevation/N61W001.hgt",
+      "bytes": 25934402
+    },
+    {
+      "path": "build/scotland-topography/elevation/N61W002.hgt",
+      "bytes": 25934402
+    },
+    {
+      "path": "build/scotland-topography/elevation/N61W003.hgt",
+      "bytes": 25934402
+    },
+    {
+      "path": "build/scotland-topography/elevation/N61W004.hgt",
+      "bytes": 25934402
+    },
+    {
+      "path": "build/scotland-topography/elevation/N61W005.hgt",
+      "bytes": 25934402
+    },
+    {
+      "path": "build/scotland-topography/elevation/N61W006.hgt",
+      "bytes": 25934402
+    },
+    {
+      "path": "build/scotland-topography/elevation/N61W007.hgt",
+      "bytes": 25934402
+    },
+    {
+      "path": "build/scotland-topography/elevation/N61W008.hgt",
+      "bytes": 25934402
+    },
+    {
+      "path": "build/scotland-topography/elevation/N61W009.hgt",
+      "bytes": 25934402
+    },
+    {
+      "path": "build/scotland-topography/elevation/N61W010.hgt",
+      "bytes": 25934402
+    },
+    {
+      "path": "build/scotland-topography/elevation/N61W011.hgt",
+      "bytes": 25934402
+    },
+    {
+      "path": "build/scotland-topography/elevation/N61W012.hgt",
+      "bytes": 25934402
+    },
+    {
+      "path": "build/scotland-topography/elevation/N61W013.hgt",
+      "bytes": 25934402
+    },
+    {
+      "path": "build/scotland-topography/elevation/N61W014.hgt",
+      "bytes": 25934402
+    },
+    {
+      "path": "build/scotland-topography/elevation/N61W015.hgt",
+      "bytes": 25934402
+    },
+    {
+      "path": "build/scotland-topography/elevation-itm.tif",
+      "bytes": 104737943
+    },
+    {
+      "path": "build/scotland-topography/elevation.vrt",
+      "bytes": 55592
+    },
+    {
+      "path": "build/scotland-topography/hillshade-mercator.tif",
+      "bytes": 151812968
+    },
+    {
+      "path": "build/scotland-topography/hillshade-raw.mbtiles",
+      "bytes": 189681664
+    },
+    {
+      "path": "build/scotland-topography/hillshade-rgba.tif",
+      "bytes": 101145694
+    },
+    {
+      "path": "build/scotland-topography/hillshade.mbtiles",
+      "bytes": 189792256
+    },
+    {
+      "path": "build/scotland-topography/hillshade.tif",
+      "bytes": 97373599
+    },
+    {
+      "path": "build/scotland-topography/land.geojson",
+      "bytes": 53792272
+    },
+    {
+      "path": "build/scotland-topography/topography.mbtiles",
+      "bytes": 888406016
+    },
+    {
+      "path": "build/scotland-geometry/contours.geojson",
+      "bytes": 599164357
+    },
+    {
+      "path": "build/scotland-geometry/grid_10km.geojson",
+      "bytes": 11448736
+    },
+    {
+      "path": "build/scotland-geometry/grid_1km.geojson",
+      "bytes": 113636045
+    },
+    {
+      "path": "build/scotland-geometry/landcover.geojson",
+      "bytes": 526846712
+    },
+    {
+      "path": "build/scotland-release/basemap-smoothed.mbtiles",
+      "bytes": 795475968
+    },
+    {
+      "path": "build/scotland-release/basemap.mbtiles",
+      "bytes": 598016000
+    },
+    {
+      "path": "build/scotland-release/geometry.mbtiles",
+      "bytes": 1490878464
+    },
+    {
+      "path": "build/scotland-release/grid.mbtiles",
+      "bytes": 172294144
+    },
+    {
+      "path": "build/scotland-release/topography-smoothed.mbtiles",
+      "bytes": 1261699072
+    },
+    {
+      "path": "build/scotland-release/topography.mbtiles",
+      "bytes": 366673920
+    },
+    {
+      "path": "build/scotland-coast-context/coast.mbtiles",
+      "bytes": 10223616
+    },
+    {
+      "path": "build/scotland-coast-context/combined.mbtiles",
+      "bytes": 366727168
+    },
+    {
+      "path": "build/scotland-coast-context/land.geojson",
+      "bytes": 53792272
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/ValidateMapSet.class",
+      "bytes": 10687
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/prepared.json",
+      "bytes": 404
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/overlays.osm.gz",
+      "bytes": 663206554
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/merge.log",
+      "bytes": 68
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/InspectMap.class",
+      "bytes": 13349
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/compile.log",
+      "bytes": 206
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/combined.osm.pbf",
+      "bytes": 505204080
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/prepare.log",
+      "bytes": 404
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/compile-tiles.args",
+      "bytes": 15725
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/merge-record.json",
+      "bytes": 261
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/splitter.log",
+      "bytes": 74066
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/split/48340007.osm.pbf",
+      "bytes": 17807978
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/split/48340017.osm.pbf",
+      "bytes": 15697346
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/split/48340065.osm.pbf",
+      "bytes": 8658867
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/split/48340075.osm.pbf",
+      "bytes": 18975342
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/split/48340081.osm.pbf",
+      "bytes": 16707880
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/split/48340038.osm.pbf",
+      "bytes": 15923566
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/split/48340028.osm.pbf",
+      "bytes": 17705722
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/split/48340043.osm.pbf",
+      "bytes": 16579163
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/split/48340053.osm.pbf",
+      "bytes": 16864397
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/split/48340021.osm.pbf",
+      "bytes": 16852997
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/split/48340031.osm.pbf",
+      "bytes": 16486246
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/split/48340052.osm.pbf",
+      "bytes": 16565149
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/split/48340042.osm.pbf",
+      "bytes": 16956840
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/split/48340030.osm.pbf",
+      "bytes": 16871613
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/split/48340020.osm.pbf",
+      "bytes": 7631855
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/split/48340016.osm.pbf",
+      "bytes": 15849807
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/split/48340006.osm.pbf",
+      "bytes": 15560902
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/split/48340074.osm.pbf",
+      "bytes": 16586148
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/split/48340064.osm.pbf",
+      "bytes": 16118009
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/split/48340029.osm.pbf",
+      "bytes": 15441615
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/split/48340039.osm.pbf",
+      "bytes": 16306831
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/split/48340080.osm.pbf",
+      "bytes": 16369468
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/split/48340022.osm.pbf",
+      "bytes": 17294425
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/split/48340032.osm.pbf",
+      "bytes": 12701168
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/split/48340040.osm.pbf",
+      "bytes": 16189102
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/split/48340050.osm.pbf",
+      "bytes": 16600873
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/split/48340066.osm.pbf",
+      "bytes": 8011022
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/split/48340076.osm.pbf",
+      "bytes": 18997488
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/split/48340004.osm.pbf",
+      "bytes": 14557738
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/split/48340014.osm.pbf",
+      "bytes": 15156328
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/split/48340059.osm.pbf",
+      "bytes": 16761247
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/split/48340049.osm.pbf",
+      "bytes": 16394420
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/split/densities-out.txt",
+      "bytes": 242787
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/split/48340082.osm.pbf",
+      "bytes": 18693143
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/split/48340077.osm.pbf",
+      "bytes": 15874824
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/split/48340067.osm.pbf",
+      "bytes": 8477511
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/split/48340015.osm.pbf",
+      "bytes": 17525031
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/split/48340005.osm.pbf",
+      "bytes": 17390257
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/split/48340048.osm.pbf",
+      "bytes": 15919491
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/split/48340058.osm.pbf",
+      "bytes": 16687956
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/split/48340083.osm.pbf",
+      "bytes": 18238977
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/split/48340033.osm.pbf",
+      "bytes": 16261731
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/split/48340023.osm.pbf",
+      "bytes": 16742557
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/split/template.args",
+      "bytes": 7242
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/split/48340051.osm.pbf",
+      "bytes": 16298982
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/split/48340041.osm.pbf",
+      "bytes": 10887243
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/split/48340026.osm.pbf",
+      "bytes": 17368110
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/split/48340036.osm.pbf",
+      "bytes": 16037226
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/split/48340044.osm.pbf",
+      "bytes": 16972508
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/split/48340054.osm.pbf",
+      "bytes": 16208555
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/split/48340019.osm.pbf",
+      "bytes": 15237053
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/split/48340009.osm.pbf",
+      "bytes": 17044969
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/split/areas.list",
+      "bytes": 8466
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/split/48340062.osm.pbf",
+      "bytes": 15627775
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/split/48340072.osm.pbf",
+      "bytes": 17719373
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/split/48340010.osm.pbf",
+      "bytes": 17136176
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/split/48340073.osm.pbf",
+      "bytes": 17547583
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/split/48340063.osm.pbf",
+      "bytes": 8236204
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/split/48340011.osm.pbf",
+      "bytes": 15432695
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/split/48340001.osm.pbf",
+      "bytes": 14729520
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/split/48340037.osm.pbf",
+      "bytes": 16011120
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/split/48340027.osm.pbf",
+      "bytes": 16800230
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/split/Scotland-areas.poly",
+      "bytes": 774
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/split/48340055.osm.pbf",
+      "bytes": 16285435
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/split/48340045.osm.pbf",
+      "bytes": 17510054
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/split/48340008.osm.pbf",
+      "bytes": 13887953
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/split/48340018.osm.pbf",
+      "bytes": 17678749
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/split/48340085.osm.pbf",
+      "bytes": 17776304
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/split/Scotland-template.args",
+      "bytes": 7242
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/split/48340003.osm.pbf",
+      "bytes": 16971733
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/split/48340013.osm.pbf",
+      "bytes": 16969972
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/split/48340061.osm.pbf",
+      "bytes": 16368058
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/split/48340071.osm.pbf",
+      "bytes": 20965209
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/split/48340047.osm.pbf",
+      "bytes": 9615422
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/split/48340057.osm.pbf",
+      "bytes": 16584178
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/split/48340025.osm.pbf",
+      "bytes": 17023500
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/split/48340035.osm.pbf",
+      "bytes": 15473944
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/split/areas.poly",
+      "bytes": 774
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/split/48340078.osm.pbf",
+      "bytes": 16009821
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/split/48340068.osm.pbf",
+      "bytes": 16660817
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/split/48340056.osm.pbf",
+      "bytes": 17191133
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/split/48340046.osm.pbf",
+      "bytes": 8404460
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/split/48340034.osm.pbf",
+      "bytes": 14726074
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/split/48340024.osm.pbf",
+      "bytes": 18148807
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/split/48340069.osm.pbf",
+      "bytes": 16890914
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/split/48340079.osm.pbf",
+      "bytes": 17917399
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/split/48340084.osm.pbf",
+      "bytes": 18487604
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/split/48340012.osm.pbf",
+      "bytes": 16211705
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/split/48340002.osm.pbf",
+      "bytes": 16991568
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/split/48340070.osm.pbf",
+      "bytes": 18036655
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/split/48340060.osm.pbf",
+      "bytes": 16055341
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/hgt/N55W014.hgt",
+      "bytes": 25934402
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/hgt/N62W007.hgt",
+      "bytes": 25934402
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/hgt/N62W013.hgt",
+      "bytes": 25934402
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/hgt/N54W011.hgt",
+      "bytes": 25934402
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/hgt/N54W005.hgt",
+      "bytes": 25934402
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/hgt/N56E000.hgt",
+      "bytes": 25934402
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/hgt/N56E001.hgt",
+      "bytes": 25934402
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/hgt/N54W004.hgt",
+      "bytes": 25934402
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/hgt/N54W010.hgt",
+      "bytes": 25934402
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/hgt/N62W012.hgt",
+      "bytes": 25934402
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/hgt/N62W006.hgt",
+      "bytes": 25934402
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/hgt/N55W015.hgt",
+      "bytes": 25934402
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/hgt/N55W001.hgt",
+      "bytes": 25934402
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/hgt/N58W008.hgt",
+      "bytes": 25934402
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/hgt/N55W003.hgt",
+      "bytes": 25934402
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/hgt/N62W010.hgt",
+      "bytes": 25934402
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/hgt/N62W004.hgt",
+      "bytes": 25934402
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/hgt/N54W006.hgt",
+      "bytes": 25934402
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/hgt/N54W012.hgt",
+      "bytes": 25934402
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/hgt/N60E001.hgt",
+      "bytes": 25934402
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/hgt/N60E000.hgt",
+      "bytes": 25934402
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/hgt/N54W013.hgt",
+      "bytes": 25934402
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/hgt/N54W007.hgt",
+      "bytes": 25934402
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/hgt/N62W005.hgt",
+      "bytes": 25934402
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/hgt/N62W011.hgt",
+      "bytes": 25934402
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/hgt/N55W002.hgt",
+      "bytes": 25934402
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/hgt/N55W016.hgt",
+      "bytes": 25934402
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/hgt/N58W009.hgt",
+      "bytes": 25934402
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/hgt/N55W012.hgt",
+      "bytes": 25934402
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/hgt/N55W006.hgt",
+      "bytes": 25934402
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/hgt/N54W003.hgt",
+      "bytes": 25934402
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/hgt/N59W008.hgt",
+      "bytes": 25934402
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/hgt/N62W015.hgt",
+      "bytes": 25934402
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/hgt/N62W001.hgt",
+      "bytes": 25934402
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/hgt/N61E001.hgt",
+      "bytes": 25934402
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/hgt/N61E000.hgt",
+      "bytes": 25934402
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/hgt/N59W009.hgt",
+      "bytes": 25934402
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/hgt/N62W014.hgt",
+      "bytes": 25934402
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/hgt/N54W016.hgt",
+      "bytes": 25934402
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/hgt/N54W002.hgt",
+      "bytes": 25934402
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/hgt/N55W007.hgt",
+      "bytes": 25934402
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/hgt/N55W013.hgt",
+      "bytes": 25934402
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/hgt/N55W005.hgt",
+      "bytes": 25934402
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/hgt/N55W011.hgt",
+      "bytes": 25934402
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/hgt/N54W014.hgt",
+      "bytes": 25934402
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/hgt/N62W002.hgt",
+      "bytes": 25934402
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/hgt/N62W016.hgt",
+      "bytes": 25934402
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/hgt/N57E000.hgt",
+      "bytes": 25934402
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/hgt/N57E001.hgt",
+      "bytes": 25934402
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/hgt/N62W003.hgt",
+      "bytes": 25934402
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/hgt/N54W001.hgt",
+      "bytes": 25934402
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/hgt/N54W015.hgt",
+      "bytes": 25934402
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/hgt/N55W010.hgt",
+      "bytes": 25934402
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/hgt/N55W004.hgt",
+      "bytes": 25934402
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/hgt/N61W010.hgt",
+      "bytes": 25934402
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/hgt/N61W004.hgt",
+      "bytes": 25934402
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/hgt/N57W006.hgt",
+      "bytes": 25934402
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/hgt/N57W012.hgt",
+      "bytes": 25934402
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/hgt/N60W001.hgt",
+      "bytes": 25934402
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/hgt/N60W015.hgt",
+      "bytes": 25934402
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/hgt/N56W003.hgt",
+      "bytes": 25934402
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/hgt/N56W002.hgt",
+      "bytes": 25934402
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/hgt/N56W016.hgt",
+      "bytes": 25934402
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/hgt/N60W014.hgt",
+      "bytes": 25934402
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/hgt/N57W013.hgt",
+      "bytes": 25934402
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/hgt/N57W007.hgt",
+      "bytes": 25934402
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/hgt/N61W005.hgt",
+      "bytes": 25934402
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/hgt/N61W011.hgt",
+      "bytes": 25934402
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/hgt/N55E000.hgt",
+      "bytes": 25934402
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/hgt/N61W007.hgt",
+      "bytes": 25934402
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/hgt/N61W013.hgt",
+      "bytes": 25934402
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/hgt/N57W011.hgt",
+      "bytes": 25934402
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/hgt/N57W005.hgt",
+      "bytes": 25934402
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/hgt/N60W016.hgt",
+      "bytes": 25934402
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/hgt/N60W002.hgt",
+      "bytes": 25934402
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/hgt/N56W014.hgt",
+      "bytes": 25934402
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/hgt/N56W015.hgt",
+      "bytes": 25934402
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/hgt/N56W001.hgt",
+      "bytes": 25934402
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/hgt/N60W003.hgt",
+      "bytes": 25934402
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/hgt/N57W004.hgt",
+      "bytes": 25934402
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/hgt/N57W010.hgt",
+      "bytes": 25934402
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/hgt/N61W012.hgt",
+      "bytes": 25934402
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/hgt/N61W006.hgt",
+      "bytes": 25934402
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/hgt/N55E001.hgt",
+      "bytes": 25934402
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/hgt/N53W008.hgt",
+      "bytes": 25934402
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/hgt/N54E000.hgt",
+      "bytes": 25934402
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/hgt/N57W014.hgt",
+      "bytes": 25934402
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/hgt/N61W002.hgt",
+      "bytes": 25934402
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/hgt/N61W016.hgt",
+      "bytes": 25934402
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/hgt/N56W005.hgt",
+      "bytes": 25934402
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/hgt/N56W011.hgt",
+      "bytes": 25934402
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/hgt/N60W013.hgt",
+      "bytes": 25934402
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/hgt/N60W007.hgt",
+      "bytes": 25934402
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/hgt/N60W006.hgt",
+      "bytes": 25934402
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/hgt/N60W012.hgt",
+      "bytes": 25934402
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/hgt/N56W010.hgt",
+      "bytes": 25934402
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/hgt/N56W004.hgt",
+      "bytes": 25934402
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/hgt/N61W003.hgt",
+      "bytes": 25934402
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/hgt/N57W001.hgt",
+      "bytes": 25934402
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/hgt/N57W015.hgt",
+      "bytes": 25934402
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/hgt/N54E001.hgt",
+      "bytes": 25934402
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/hgt/N53W009.hgt",
+      "bytes": 25934402
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/hgt/N62E001.hgt",
+      "bytes": 25934402
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/hgt/N57W003.hgt",
+      "bytes": 25934402
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/hgt/N61W015.hgt",
+      "bytes": 25934402
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/hgt/N61W001.hgt",
+      "bytes": 25934402
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/hgt/N56W012.hgt",
+      "bytes": 25934402
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/hgt/N56W006.hgt",
+      "bytes": 25934402
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/hgt/N60W004.hgt",
+      "bytes": 25934402
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/hgt/N60W010.hgt",
+      "bytes": 25934402
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/hgt/N60W011.hgt",
+      "bytes": 25934402
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/hgt/N60W005.hgt",
+      "bytes": 25934402
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/hgt/N56W007.hgt",
+      "bytes": 25934402
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/hgt/N56W013.hgt",
+      "bytes": 25934402
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/hgt/N61W014.hgt",
+      "bytes": 25934402
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/hgt/N57W016.hgt",
+      "bytes": 25934402
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/hgt/N57W002.hgt",
+      "bytes": 25934402
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/hgt/N62E000.hgt",
+      "bytes": 25934402
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/hgt/N58E001.hgt",
+      "bytes": 25934402
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/hgt/N53W013.hgt",
+      "bytes": 25934402
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/hgt/N53W007.hgt",
+      "bytes": 25934402
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/hgt/N60W008.hgt",
+      "bytes": 25934402
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/hgt/N60W009.hgt",
+      "bytes": 25934402
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/hgt/N53W006.hgt",
+      "bytes": 25934402
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/hgt/N53W012.hgt",
+      "bytes": 25934402
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/hgt/N58E000.hgt",
+      "bytes": 25934402
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/hgt/N53W004.hgt",
+      "bytes": 25934402
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/hgt/N53W010.hgt",
+      "bytes": 25934402
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/hgt/N56W009.hgt",
+      "bytes": 25934402
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/hgt/N56W008.hgt",
+      "bytes": 25934402
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/hgt/N53W011.hgt",
+      "bytes": 25934402
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/hgt/N53W005.hgt",
+      "bytes": 25934402
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/hgt/N53W001.hgt",
+      "bytes": 25934402
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/hgt/N53W015.hgt",
+      "bytes": 25934402
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/hgt/N57W009.hgt",
+      "bytes": 25934402
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/hgt/N57W008.hgt",
+      "bytes": 25934402
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/hgt/N53W014.hgt",
+      "bytes": 25934402
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/hgt/N53W016.hgt",
+      "bytes": 25934402
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/hgt/N53W002.hgt",
+      "bytes": 25934402
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/hgt/N59E001.hgt",
+      "bytes": 25934402
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/hgt/N61W008.hgt",
+      "bytes": 25934402
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/hgt/N61W009.hgt",
+      "bytes": 25934402
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/hgt/N59E000.hgt",
+      "bytes": 25934402
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/hgt/N53W003.hgt",
+      "bytes": 25934402
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/hgt/N55W009.hgt",
+      "bytes": 25934402
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/hgt/N58W016.hgt",
+      "bytes": 25934402
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/hgt/N58W002.hgt",
+      "bytes": 25934402
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/hgt/N59W007.hgt",
+      "bytes": 25934402
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/hgt/N59W013.hgt",
+      "bytes": 25934402
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/hgt/N59W012.hgt",
+      "bytes": 25934402
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/hgt/N59W006.hgt",
+      "bytes": 25934402
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/hgt/N58W003.hgt",
+      "bytes": 25934402
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/hgt/N55W008.hgt",
+      "bytes": 25934402
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/hgt/N58W001.hgt",
+      "bytes": 25934402
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/hgt/N58W015.hgt",
+      "bytes": 25934402
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/hgt/N59W010.hgt",
+      "bytes": 25934402
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/hgt/N59W004.hgt",
+      "bytes": 25934402
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/hgt/N59W005.hgt",
+      "bytes": 25934402
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/hgt/N59W011.hgt",
+      "bytes": 25934402
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/hgt/N58W014.hgt",
+      "bytes": 25934402
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/hgt/N58W004.hgt",
+      "bytes": 25934402
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/hgt/N58W010.hgt",
+      "bytes": 25934402
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/hgt/N59W015.hgt",
+      "bytes": 25934402
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/hgt/N62W008.hgt",
+      "bytes": 25934402
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/hgt/N59W001.hgt",
+      "bytes": 25934402
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/hgt/N59W014.hgt",
+      "bytes": 25934402
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/hgt/N62W009.hgt",
+      "bytes": 25934402
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/hgt/N58W011.hgt",
+      "bytes": 25934402
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/hgt/N58W005.hgt",
+      "bytes": 25934402
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/hgt/N58W013.hgt",
+      "bytes": 25934402
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/hgt/N58W007.hgt",
+      "bytes": 25934402
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/hgt/N53E001.hgt",
+      "bytes": 25934402
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/hgt/N59W002.hgt",
+      "bytes": 25934402
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/hgt/N59W016.hgt",
+      "bytes": 25934402
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/hgt/N54W009.hgt",
+      "bytes": 25934402
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/hgt/N54W008.hgt",
+      "bytes": 25934402
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/hgt/N59W003.hgt",
+      "bytes": 25934402
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/hgt/N53E000.hgt",
+      "bytes": 25934402
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/hgt/N58W006.hgt",
+      "bytes": 25934402
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/hgt/N58W012.hgt",
+      "bytes": 25934402
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/compile/48340023.img",
+      "bytes": 2504704
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/compile/48340037.img",
+      "bytes": 2867200
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/compile/48340036.img",
+      "bytes": 4540416
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/compile/48340022.img",
+      "bytes": 2416640
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/compile/48340008.img",
+      "bytes": 5007360
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/compile/48340034.img",
+      "bytes": 2945024
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/compile/48340020.img",
+      "bytes": 2797568
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/compile/48340021.img",
+      "bytes": 2247680
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/compile/48340035.img",
+      "bytes": 3596288
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/compile/48340009.img",
+      "bytes": 2179072
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/compile/48340031.img",
+      "bytes": 2416640
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/compile/OBM4834.typ",
+      "bytes": 2902
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/compile/48340025.img",
+      "bytes": 1423360
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/compile/48340019.img",
+      "bytes": 2336768
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/compile/48340018.img",
+      "bytes": 2560000
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/compile/48340024.img",
+      "bytes": 2344960
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/compile/48340030.img",
+      "bytes": 1905664
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/compile/48340026.img",
+      "bytes": 2518016
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/compile/48340032.img",
+      "bytes": 6129664
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/compile/osmmap.tdb",
+      "bytes": 12477
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/compile/48340033.img",
+      "bytes": 6072320
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/compile/48340027.img",
+      "bytes": 2859008
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/compile/48340083.img",
+      "bytes": 2347008
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/compile/48340068.img",
+      "bytes": 2357248
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/compile/48340040.img",
+      "bytes": 2410496
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/compile/48340054.img",
+      "bytes": 2658304
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/compile/gmapsupp.img",
+      "bytes": 243965952
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/compile/48340055.img",
+      "bytes": 2416640
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/compile/48340041.img",
+      "bytes": 3211264
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/compile/48340069.img",
+      "bytes": 2326528
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/compile/osmmap.img",
+      "bytes": 8704
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/compile/48340082.img",
+      "bytes": 1892352
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/compile/48340080.img",
+      "bytes": 2248704
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/compile/48340057.img",
+      "bytes": 2458624
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/compile/48340043.img",
+      "bytes": 2418688
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/compile/48340042.img",
+      "bytes": 2445312
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/compile/48340056.img",
+      "bytes": 2568192
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/compile/48340081.img",
+      "bytes": 2575360
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/compile/48340085.img",
+      "bytes": 2508800
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/compile/48340052.img",
+      "bytes": 2244608
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/compile/48340046.img",
+      "bytes": 2100224
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/compile/48340047.img",
+      "bytes": 2500608
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/compile/48340053.img",
+      "bytes": 2660352
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/compile/48340084.img",
+      "bytes": 2639872
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/compile/48340045.img",
+      "bytes": 2375680
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/compile/48340051.img",
+      "bytes": 1908736
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/compile/48340079.img",
+      "bytes": 2260992
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/compile/48340078.img",
+      "bytes": 1851392
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/compile/48340050.img",
+      "bytes": 2509824
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/compile/48340044.img",
+      "bytes": 2243584
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/compile/48340049.img",
+      "bytes": 2357248
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/compile/48340061.img",
+      "bytes": 2728960
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/compile/48340075.img",
+      "bytes": 2106368
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/compile/48340074.img",
+      "bytes": 2211840
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/compile/48340060.img",
+      "bytes": 2425856
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/compile/48340048.img",
+      "bytes": 2742272
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/compile/48340076.img",
+      "bytes": 2039808
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/compile/48340062.img",
+      "bytes": 1992704
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/compile/48340063.img",
+      "bytes": 1915904
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/compile/48340077.img",
+      "bytes": 2241536
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/compile/48340073.img",
+      "bytes": 2594816
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/compile/48340067.img",
+      "bytes": 2506752
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/compile/48340066.img",
+      "bytes": 2850816
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/compile/48340072.img",
+      "bytes": 2342912
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/compile/48340064.img",
+      "bytes": 1946624
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/compile/48340070.img",
+      "bytes": 2036736
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/compile/48340058.img",
+      "bytes": 2295808
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/compile/48340059.img",
+      "bytes": 2494464
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/compile/48340071.img",
+      "bytes": 1596416
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/compile/48340065.img",
+      "bytes": 2850816
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/compile/48340002.img",
+      "bytes": 3170304
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/compile/48340016.img",
+      "bytes": 2783232
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/compile/48340017.img",
+      "bytes": 2041856
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/compile/48340003.img",
+      "bytes": 3379200
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/compile/48340029.img",
+      "bytes": 2196480
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/compile/48340015.img",
+      "bytes": 2490368
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/compile/48340001.img",
+      "bytes": 13053952
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/compile/48340014.img",
+      "bytes": 2234368
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/compile/48340028.img",
+      "bytes": 2317312
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/compile/48340010.img",
+      "bytes": 3222528
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/compile/48340004.img",
+      "bytes": 16035840
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/compile/48340038.img",
+      "bytes": 2089984
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/compile/48340039.img",
+      "bytes": 2441216
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/compile/48340005.img",
+      "bytes": 3979264
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/compile/48340011.img",
+      "bytes": 2179072
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/compile/48340007.img",
+      "bytes": 2955264
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/compile/48340013.img",
+      "bytes": 1900544
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/compile/build.json",
+      "bytes": 3098
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/compile/48340012.img",
+      "bytes": 2785280
+    },
+    {
+      "path": "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/compile/48340006.img",
+      "bytes": 2515968
+    }
+  ],
+  "removedLogicalBytes": 20828906227,
+  "allPreservationChecksPassed": true,
+  "removedPreviewStaging": {
+    "path": "work/scotland-web-preview",
+    "files": 44,
+    "logicalBytes": 1216325441,
+    "verifiedPublicCopies": true,
+    "retainedManifest": "releases/scotland/2.0.0/shared-preview-manifest.json"
+  }
+}

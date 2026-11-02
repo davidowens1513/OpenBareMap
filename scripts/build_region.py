@@ -23,14 +23,14 @@ def run(*args):
 def record_output(path):
     return {'path':str(path.relative_to(ROOT)),'sha256':digest(path),'bytes':path.stat().st_size,'validation':inspect_tiles(path)}
 
-def select_detail(source,target):
+def select_detail(source,target,revision="2.0.0-england-wales-r1"):
     """Shared visibility rules, with constituent-country borders and bounded padding."""
     if target.exists():raise FileExistsError(target)
     from audit import audit
     with closing(sqlite3.connect(source.as_uri()+'?mode=ro',uri=True)) as src, closing(sqlite3.connect(target)) as dst:
         dst.execute('CREATE TABLE metadata(name TEXT,value TEXT)')
         dst.execute('CREATE TABLE tiles(zoom_level INTEGER,tile_column INTEGER,tile_row INTEGER,tile_data BLOB,PRIMARY KEY(zoom_level,tile_column,tile_row))')
-        metadata=dict(src.execute('SELECT name,value FROM metadata'));metadata.update(openbaremap_contour_interval_metres='20',openbaremap_storage_revision='2.0.0-england-wales-r1')
+        metadata=dict(src.execute('SELECT name,value FROM metadata'));metadata.update(openbaremap_contour_interval_metres='20',openbaremap_storage_revision=revision)
         dst.executemany('INSERT INTO metadata VALUES (?,?)',metadata.items())
         old_eligible,old_visible=opt.eligible,opt.visible
         def visible(layer,zoom,props):
@@ -61,7 +61,7 @@ def finish(region, reuse_geometry=False):
     for name,expected in report['outputs'].items():
         if digest(geometry/name)!=expected:raise ValueError('Geometry changed: '+name)
     config={'layers':{
-        'landcover':{'minzoom':4,'maxzoom':14,'source':str(geometry/'landcover.geojson'),'source_columns':['class','wetland','natural','landuse','name','name_en','name_cy','official_name','short_name'],'simplify_below':14,'simplify_level':.000008,'simplify_ratio':2},
+        'landcover':{'minzoom':4,'maxzoom':14,'source':str(geometry/'landcover.geojson'),'source_columns':['class','wetland','natural','landuse','name','name_en','name_cy','name_gd','official_name','short_name'],'simplify_below':14,'simplify_level':.000008,'simplify_ratio':2},
         'contour':{'minzoom':8,'maxzoom':14,'source':str(geometry/'contours.geojson'),'source_columns':['elevation'],'simplify_below':13,'simplify_level':.00001},
         'grid_1km':{'minzoom':12,'maxzoom':14,'source':str(geometry/'grid_1km.geojson'),'source_columns':['label','metres','axis']},
         'grid_10km':{'minzoom':10,'maxzoom':14,'source':str(geometry/'grid_10km.geojson'),'source_columns':['label','metres','axis']}},
@@ -82,7 +82,7 @@ def finish(region, reuse_geometry=False):
     replacements['basemap']=rebuild(base/'basemap.mbtiles',final/'basemap-smoothed.mbtiles',final/'geometry.mbtiles','landcover')
     replacements['topography']=rebuild(top/'topography.mbtiles',final/'topography-smoothed.mbtiles',final/'geometry.mbtiles','contour')
     for name in ('basemap','topography'):
-        select_detail(final/(name+'-smoothed.mbtiles'),final/(name+'.mbtiles'))
+        select_detail(final/(name+'-smoothed.mbtiles'),final/(name+'.mbtiles'),p['mapVersion']+'-'+region+'-r1')
     # Extract only grid layers; unrelated contour and landcover do not enter this DB.
     with closing(sqlite3.connect((final/'geometry.mbtiles').as_uri()+'?mode=ro',uri=True)) as src,closing(sqlite3.connect(final/'grid.mbtiles')) as dst:
         dst.execute('CREATE TABLE metadata(name TEXT,value TEXT)');dst.execute('CREATE TABLE tiles(zoom_level INTEGER,tile_column INTEGER,tile_row INTEGER,tile_data BLOB,PRIMARY KEY(zoom_level,tile_column,tile_row))')
@@ -105,14 +105,14 @@ def finish(region, reuse_geometry=False):
         shutil.copyfile(ROOT/item['path'],target)
         if digest(target)!=item['sha256']:raise ValueError('Release copy changed: '+name)
         item['path']=str(target.relative_to(ROOT))
-    active={'format':'openbaremap-development-viewer-v1','region':region,'mapVersion':p['mapVersion'],'storageRevision':'2.0.0-england-wales-r1','contourIntervalMetres':20,'localBorders':False,'styleRevision':p.get('styleRevision','shared'),'datasets':datasets,'coverage':p['coverage']}
+    active={'format':'openbaremap-development-viewer-v1','region':region,'mapVersion':p['mapVersion'],'storageRevision':p['mapVersion']+'-'+region+'-r1','contourIntervalMetres':20,'localBorders':False,'styleRevision':p.get('styleRevision','shared'),'datasets':datasets,'coverage':p['coverage']}
     write(region_path(region,'active-map.json'),active)
     write(final/'build.json',{'status':'built and structurally validated; visual/device review pending','region':region,'geometryReport':report,'replacements':replacements,'outputs':datasets,'builderSHA256':digest(Path(__file__))})
     write(region_path(region,'style.json'),region_style(region))
     shutil.copyfile(geometry/'grid-provenance.json',region_path(region,'grid-provenance.json'))
 
 def main():
-    parser=argparse.ArgumentParser();parser.add_argument('--region',choices=['england-wales'],required=True);parser.add_argument('--resume-geometry',action='store_true');parser.add_argument('--stage',choices=['basemap','geometry','finish','packages','all'],default='all');args=parser.parse_args();region=args.region
+    parser=argparse.ArgumentParser();parser.add_argument('--region',choices=['england-wales','scotland'],required=True);parser.add_argument('--resume-geometry',action='store_true');parser.add_argument('--stage',choices=['basemap','geometry','finish','packages','all'],default='all');args=parser.parse_args();region=args.region
     if args.stage in ('basemap','all'):
         dest=ROOT/'build'/(region+'-basemap')
         if not dest.exists():run(sys.executable,'scripts/openbaremap.py','build',region+'-basemap','--region',region)

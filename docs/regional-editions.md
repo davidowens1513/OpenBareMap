@@ -1,6 +1,6 @@
 # Maintaining regional editions
 
-OpenBareMap uses one repository and shared cartography for Ireland and England/Wales. Each edition selects its own source snapshots, coordinate grid, map databases and platform packages. A regional release does not replace another edition's resources or require it to be released at the same time.
+OpenBareMap uses one repository and shared cartography for Ireland, England/Wales and Scotland. Each edition selects its own source snapshots, coordinate grid, map databases and platform packages. A regional release does not replace another edition's resources or require it to be released at the same time.
 
 Ireland remains the default for existing build, viewer and packaging commands. Its selected map stays in the root `active-map.json`. The accepted Ireland inputs and outputs are recorded in `regions/ireland/preservation-baseline.json`; regional validation verifies their checksums.
 
@@ -12,6 +12,31 @@ It shares the Ireland edition's colours, symbols, transport passes, hillshade pr
 
 The generated British National Grid uses EPSG:27700, with 1 km/10 km lines and projected metre-coordinate labels. Its exact transformation, library version and stated accuracy are recorded in `grid-provenance.json` in the geometry build. It is a cartographic overlay. Empty multipolygon assemblies in the OSM source are recorded explicitly in the geometry report; missing locations or failed nonempty geometry remain build errors. The grid overlay is included in the browser and mobile packages; the Garmin export does not embed grid lines. Ireland retains its pinned Irish Grid and townland points; neither is included in England/Wales packages.
 
+## Scotland scope
+
+Scotland uses the complete Geofabrik extract dated 31 October 2026, with its own
+source lock. Coverage includes the Hebrides, Orkney, Shetland, St Kilda and Rockall.
+The profile bounds contain the entire upstream coverage outline. Terrain cells
+span longitude −15 to +1 and latitude 54 to 62, with an additional Garmin DEM
+padding ring. The large ocean extent is intentional to include Rockall.
+
+Scottish Gaelic `name:gd` is retained alongside source and English names. The
+British National Grid overlay extends through Shetland and uses negative projected
+eastings in the far west; it is a cartographic overlay, not a survey guarantee.
+Scotland uses the same 20 m contours, land-cover smoothing and overview waterway
+rules as England/Wales. Ireland's townland data is not included.
+
+All Scotland-specific paths follow the England/Wales layout with `scotland` in
+place of `england-wales`: `regions/scotland/`, `data/regions/scotland/`,
+`releases/scotland/2.0.0/` and temporary `build/scotland-*` stages. Its Garmin family
+is **4834**, product 1, with tiles reserved from **48340001 to 48349999**. Family
+4832 remains reserved for the private personal-track layer.
+
+Run `PYTHONPATH=work/python python3 scripts/run_full_region.py --region scotland`
+for a complete build. The standalone `regions/scotland/ios/` and
+`regions/scotland/android/` exports are built without modifying BareGPS app projects.
+Use `scripts/serve.py --region scotland --port 8767` for the local viewer.
+
 ## Paths and release independence
 
 | Resource | Ireland | England/Wales |
@@ -22,7 +47,7 @@ The generated British National Grid uses EPSG:27700, with 1 km/10 km lines and p
 | Build outputs | Existing `build/` selections | `build/england-wales-*` |
 | iOS resources | `ios/package/` | `regions/england-wales/ios/` |
 | Android import package | `android/package/` | `regions/england-wales/android/` |
-| Garmin | Family 4831 | Family 4832, tiles starting 48320001 |
+| Garmin | Family 4831 | Family 4833, tiles starting 48330001 |
 | Release records | `releases/2.0.0/` | `releases/england-wales/2.0.0/` |
 
 The Garmin family and tile identifiers differ, allowing both images to coexist. England/Wales Garmin intermediates use a local temporary build cache (override with `OPENBAREMAP_BUILD_ROOT`) so cloud storage cannot offload files during compilation. Accepted maps remain in the repository release folders. Both Garmin editions are display-only. The Android resource loader installs map packages by manifest hash and preserves older versions. Consuming applications choose which map to load; this map build does not modify BareGPS applications. The iOS resources use the same loader, with an edition-specific bundle identifier; a host app decides which bundle or installed resource directory to load.
@@ -77,3 +102,5 @@ The first command serves England/Wales; the second serves Ireland. Both use loca
 `releases/england-wales/2.0.0/validation.json` checks detailed coverage around geographically distributed anchors, all contour intervals, selected boundaries, SQLite integrity, package checksums and Ireland preservation. The Garmin inspector requires the distinct family configuration, contours, DEM, TYP, summit/bog features, city labels and absence of routing sections. Release manifests pin exact artifact hashes.
 
 Automated checks do not establish geographic completeness of OpenStreetMap, legal access, or native-device appearance. Browser visual review and mobile/Garmin device testing have separate records. No hardware installation is performed by the build.
+
+Scotland retains the small build records under `releases/scotland/2.0.0/build-records/`. Accepted-release validation can read its archived geometry report after redundant raw intermediates are removed. The selected map databases, source locks, native resources and Garmin image remain separate from those temporary stages.

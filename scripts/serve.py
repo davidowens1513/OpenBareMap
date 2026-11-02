@@ -4,6 +4,7 @@ import argparse
 from contextlib import closing
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 import json
+import html
 import mimetypes
 from pathlib import Path
 import re
@@ -92,13 +93,15 @@ class Handler(BaseHTTPRequestHandler):
             return
         body=target.read_bytes()
         if name == 'index.html' and self.server.region != 'ireland':
-            body=body.decode().replace('Ireland', 'England &amp; Wales').replace('IRELAND & NORTHERN IRELAND', 'ENGLAND &amp; WALES').replace('Irish Grid', 'British National Grid').replace('irish-grid-', 'british-grid-').encode()
+            from regions import profile
+            label=profile(self.server.region)['label']
+            body=body.decode().replace('IRELAND & NORTHERN IRELAND',html.escape(label.upper())).replace('Ireland',html.escape(label)).replace('Irish Grid', 'British National Grid').replace('irish-grid-', 'british-grid-').encode()
         self.reply(200,body, mimetypes.guess_type(target)[0] or 'application/octet-stream')
 
 def main():
     parser=argparse.ArgumentParser()
     parser.add_argument('--port',type=int,default=8765)
-    parser.add_argument('--region',choices=['ireland','england-wales'],default='ireland')
+    parser.add_argument('--region',choices=['ireland','england-wales','scotland'],default='ireland')
     parser.add_argument('--database',type=Path,help='Optional override for the base vector database')
     args=parser.parse_args()
     from regions import active_map, profile

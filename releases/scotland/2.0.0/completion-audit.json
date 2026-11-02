@@ -1,0 +1,80 @@
+{
+  "dateUTC": "2026-11-02T15:24:53.169604+00:00",
+  "scope": "Source, artifact, storage and public deployment audit; Git ref equality is checked separately after committing and pushing.",
+  "requirements": {
+    "completeScotlandSource": {
+      "passed": true,
+      "evidence": [
+        "regions/scotland/sources.lock.json",
+        "regions/scotland/terrain-sources.lock.json",
+        "regions/scotland/garmin/coverage.json",
+        "tests.json",
+        "validation.json"
+      ]
+    },
+    "standaloneIOSBundle": {
+      "passed": true,
+      "path": "regions/scotland/ios/OpenBareMap.bundle",
+      "publicArchive": {
+        "url": "https://downloads.appsbyonzy.dev/OpenBareMap/scotland/2.0.0/ios/OpenBareMap-Scotland-iOS.zip",
+        "bytes": 1340618979,
+        "sha256": "aebe7015dea7d661dbd76d431db86b09460fbd672834c57e997707fb1464d88d",
+        "fullPublicReadbackVerified": true
+      }
+    },
+    "standaloneAndroidBundle": {
+      "passed": true,
+      "path": "regions/scotland/android/OpenBareMap",
+      "publicArchive": {
+        "url": "https://downloads.appsbyonzy.dev/OpenBareMap/scotland/2.0.0/android/OpenBareMap-Scotland-Android.zip",
+        "bytes": 1340598633,
+        "sha256": "b5966d71b025211c7a21dfc410f61d26cd5209a38a8bb111dcf70f6c36ea4255",
+        "fullPublicReadbackVerified": true
+      }
+    },
+    "BareGPSAppProjectsUnchanged": {
+      "passed": true,
+      "evidence": "Build commands write only this map repository\u2019s separate region directories; no BareGPS app source or project was edited."
+    },
+    "garmin": {
+      "passed": true,
+      "sections": 85,
+      "familyId": 4834,
+      "nativeDEM": true,
+      "routing": false,
+      "evidence": [
+        "regions/scotland/garmin/inspection.json",
+        "regions/scotland/garmin/map-set-validation.txt",
+        "publication.json"
+      ]
+    },
+    "websiteParallelToEnglandWales": {
+      "passed": true,
+      "evidence": [
+        "browser-verification.json",
+        "verification/website-scotland-live.png",
+        "publication.json"
+      ]
+    },
+    "R2FilesAndLinks": {
+      "passed": true,
+      "publicFilesFullyReadBack": 22,
+      "rangeCapablePMTiles": 5,
+      "evidence": "publication.json"
+    },
+    "distinctStorageAndPreservation": {
+      "passed": true,
+      "evidence": [
+        "storage.json",
+        "cleanup.json",
+        "manifest.json",
+        "validation.json"
+      ]
+    }
+  },
+  "acceptanceLimits": [
+    "Scotland native mobile and Garmin rendering has not been reviewed on devices.",
+    "No Scotland map was installed on a Garmin or added to a BareGPS app project."
+  ],
+  "gitPublicationCheck": "After commit/push, compare local HEAD with origin/main and GitHub\u2019s remote main ref; do not force-push."
+}

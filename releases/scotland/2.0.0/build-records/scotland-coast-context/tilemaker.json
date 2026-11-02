@@ -1,0 +1,28 @@
+{
+  "layers": {
+    "land": {
+      "maxzoom": 12,
+      "minzoom": 4,
+      "simplify_below": 12,
+      "simplify_level": 3e-05,
+      "simplify_ratio": 2,
+      "source": "/Users/davidowens/Documents/Codex/2026-10-25/i-x20/outputs/OpenBareMap/build/scotland-coast-context/land.geojson"
+    }
+  },
+  "settings": {
+    "basezoom": 14,
+    "bounding_box": [
+      -17,
+      52,
+      4,
+      64
+    ],
+    "compress": "gzip",
+    "description": "Coastal background beyond edition coverage; source OSM land polygons",
+    "include_ids": false,
+    "maxzoom": 14,
+    "minzoom": 4,
+    "name": "OpenBareMap Scotland coastal context",
+    "version": "2.0.0"
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "feature_instances_by_layer": {
+    "boundary": 73888,
+    "building": 4240346,
+    "cycling_route": 17483,
+    "ferry": 8051,
+    "hiking_poi": 29916,
+    "hiking_route": 17751,
+    "island_name": 28892,
+    "landcover": 3886397,
+    "mountain": 53472,
+    "natural_line": 43548,
+    "place": 235914,
+    "poi": 333678,
+    "railway": 183571,
+    "station": 2637,
+    "transportation": 8606129,
+    "transportation_name": 1153774,
+    "water": 419529,
+    "water_name": 34650,
+    "waterway": 1642771
+  },
+  "metadata": {
+    "bounds": "-14.861554,54.540010,0.731931,61.351310",
+    "center": "-7.064812,57.945660,9",
+    "description": "Complete Geofabrik Scotland extract, including the Hebrides, Orkney, Shetland and Rockall; no pilot or regional sampling",
+    "format": "pbf",
+    "json": "{\"vector_layers\":[{\"id\":\"boundary\",\"fields\":{\"admin_level\":\"String\",\"class\":\"String\",\"name\":\"String\"},\"minzoom\":4,\"maxzoom\":14},{\"id\":\"building\",\"fields\":{\"class\":\"String\"},\"minzoom\":13,\"maxzoom\":14},{\"id\":\"cycling_route\",\"fields\":{\"class\":\"String\",\"colour\":\"String\",\"foot\":\"String\",\"name\":\"String\",\"name_en\":\"String\",\"name_gd\":\"String\",\"network\":\"String\",\"official_name\":\"String\",\"operator\":\"String\",\"osmc:symbol\":\"String\",\"ref\":\"String\"},\"minzoom\":7,\"maxzoom\":14},{\"id\":\"ferry\",\"fields\":{\"access\":\"String\",\"class\":\"String\",\"duration\":\"String\",\"foot\":\"String\",\"name\":\"String\",\"name_en\":\"String\",\"name_gd\":\"String\",\"operator\":\"String\"},\"minzoom\":6,\"maxzoom\":14},{\"id\":\"hiking_poi\",\"fields\":{\"access\":\"String\",\"backcountry\":\"String\",\"class\":\"String\",\"drinking_water\":\"String\",\"ele_label\":\"String\",\"ele_m\":\"Number\",\"ele_raw\":\"String\",\"fee\":\"String\",\"foot\":\"String\",\"name\":\"String\",\"name_en\":\"String\",\"name_gd\":\"String\",\"opening_hours\":\"String\",\"operator\":\"String\",\"ref\":\"String\",\"shelter_type\":\"String\",\"wheelchair\":\"String\"},\"minzoom\":10,\"maxzoom\":14},{\"id\":\"hiking_route\",\"fields\":{\"class\":\"String\",\"colour\":\"String\",\"foot\":\"String\",\"name\":\"String\",\"name_en\":\"String\",\"name_gd\":\"String\",\"network\":\"String\",\"operator\":\"String\",\"osmc:symbol\":\"String\",\"ref\":\"String\",\"short_name\":\"String\",\"symbol\":\"String\"},\"minzoom\":7,\"maxzoom\":14},{\"id\":\"island_name\",\"fields\":{\"class\":\"String\",\"name\":\"String\",\"name_en\":\"String\",\"name_gd\":\"String\",\"official_name\":\"String\"},\"minzoom\":7,\"maxzoom\":14},{\"id\":\"landcover\",\"fields\":{\"class\":\"String\",\"landuse\":\"String\",\"name\":\"String\",\"name_en\":\"String\",\"name_gd\":\"String\",\"natural\":\"String\",\"short_name\":\"String\",\"wetland\":\"String\"},\"minzoom\":4,\"maxzoom\":14},{\"id\":\"mountain\",\"fields\":{\"class\":\"String\",\"ele_label\":\"String\",\"ele_m\":\"Number\",\"ele_raw\":\"String\",\"name\":\"String\",\"name_en\":\"String\",\"name_gd\":\"String\"},\"minzoom\":9,\"maxzoom\":14},{\"id\":\"natural_line\",\"fields\":{\"class\":\"String\",\"name\":\"String\",\"name_en\":\"String\",\"name_gd\":\"String\"},\"minzoom\":11,\"maxzoom\":14},{\"id\":\"place\",\"fields\":{\"class\":\"String\",\"name\":\"String\",\"name_en\":\"String\",\"name_gd\":\"String\"},\"minzoom\":4,\"maxzoom\":14},{\"id\":\"poi\",\"fields\":{\"access\":\"String\",\"category\":\"String\",\"class\":\"String\",\"foot\":\"String\",\"name\":\"String\",\"name_en\":\"String\",\"name_gd\":\"String\",\"official_name\":\"String\",\"short_name\":\"String\"},\"minzoom\":10,\"maxzoom\":14},{\"id\":\"railway\",\"fields\":{\"access\":\"String\",\"bridge\":\"String\",\"class\":\"String\",\"foot\":\"String\",\"layer\":\"String\",\"name\":\"String\",\"name_en\":\"String\",\"name_gd\":\"String\",\"operator\":\"String\",\"service\":\"String\",\"short_name\":\"String\",\"tunnel\":\"String\",\"usage\":\"String\"},\"minzoom\":6,\"maxzoom\":14},{\"id\":\"station\",\"fields\":{\"class\":\"String\",\"name\":\"String\",\"name_en\":\"String\",\"name_gd\":\"String\",\"network\":\"String\",\"operator\":\"String\",\"short_name\":\"String\"},\"minzoom\":9,\"maxzoom\":14},{\"id\":\"transportation\",\"fields\":{\"access\":\"String\",\"bicycle\":\"String\",\"bridge\":\"String\",\"class\":\"String\",\"designation\":\"String\",\"foot\":\"String\",\"horse\":\"String\",\"layer\":\"String\",\"name\":\"String\",\"ref\":\"String\",\"sac_scale\":\"String\",\"surface\":\"String\",\"tracktype\":\"String\",\"trail_visibility\":\"String\",\"tunnel\":\"String\"},\"minzoom\":4,\"maxzoom\":14},{\"id\":\"transportation_name\",\"fields\":{\"class\":\"String\",\"name\":\"String\",\"name_en\":\"String\",\"name_gd\":\"String\",\"official_name\":\"String\",\"ref\":\"String\",\"short_name\":\"String\"},\"minzoom\":10,\"maxzoom\":14},{\"id\":\"water\",\"fields\":{\"class\":\"String\",\"name\":\"String\"},\"minzoom\":4,\"maxzoom\":14},{\"id\":\"water_name\",\"fields\":{\"name\":\"String\",\"name_en\":\"String\",\"name_gd\":\"String\"},\"minzoom\":11,\"maxzoom\":14},{\"id\":\"waterway\",\"fields\":{\"class\":\"String\",\"intermittent\":\"String\",\"name\":\"String\"},\"minzoom\":4,\"maxzoom\":14}]}",
+    "maxzoom": "14",
+    "minzoom": "4",
+    "name": "OpenBareMap Scotland",
+    "type": "baselayer",
+    "version": "2.0.0"
+  },
+  "note": "Feature instances include repetition across tiles and zooms; not unique OSM objects. This checks MVT framing and layer presence, not geometry or cartographic correctness.",
+  "tiles_by_zoom": {
+    "4": 4,
+    "5": 5,
+    "6": 10,
+    "7": 19,
+    "8": 54,
+    "9": 164,
+    "10": 527,
+    "11": 1758,
+    "12": 6009,
+    "13": 21927,
+    "14": 83466
+  }
+}

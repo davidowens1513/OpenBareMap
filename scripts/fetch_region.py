@@ -51,20 +51,23 @@ def fetch_osm(region):
         inputs.append(item)
     timestamps={item['replicationTimestamp'] for item in inputs}
     if len(timestamps)!=1 or not next(iter(timestamps)):
-        raise ValueError('England and Wales must share the same OSM snapshot timestamp')
+        raise ValueError('Regional inputs must share a nonempty OSM snapshot timestamp')
     polygons=[download('https://download.geofabrik.de/europe/united-kingdom/'+slug+'.poly',directory/(slug+'.poly')) for slug in p['sourceSlugs']]
-    # Only Wales is buffered; the much larger England extract streams from disk.
-    output=directory/('england-wales-'+stamp+'.osm.pbf')
-    if output.exists():raise FileExistsError('Unregistered merged input: '+str(output))
-    merger=osmium.MergeInputReader();merger.add_file(str(ROOT/inputs[1]['path']))
-    with osmium.io.Reader(str(ROOT/inputs[0]['path'])) as reader:
-        header=reader.header();header.set('osmosis_replication_timestamp',next(iter(timestamps)))
-        writer=osmium.io.Writer(str(output),header)
-        try:merger.apply_to_reader(reader,writer)
-        finally:writer.close()
-    merged={'path':str(output.relative_to(ROOT)),'sha256':digest(output),'bytes':output.stat().st_size,'snapshot_date':p['sourceDate'],'replicationTimestamp':next(iter(timestamps)),'operation':'libosmium sorted merge; duplicate OSM objects resolved by version','url':None}
+    if len(inputs)==1:
+        merged={**inputs[0],'snapshot_date':p['sourceDate'],'operation':'Complete upstream extract; no merge or spatial filtering'}
+    else:
+        # Only Wales is buffered; the much larger England extract streams from disk.
+        output=directory/('england-wales-'+stamp+'.osm.pbf')
+        if output.exists():raise FileExistsError('Unregistered merged input: '+str(output))
+        merger=osmium.MergeInputReader();merger.add_file(str(ROOT/inputs[1]['path']))
+        with osmium.io.Reader(str(ROOT/inputs[0]['path'])) as reader:
+            header=reader.header();header.set('osmosis_replication_timestamp',next(iter(timestamps)))
+            writer=osmium.io.Writer(str(output),header)
+            try:merger.apply_to_reader(reader,writer)
+            finally:writer.close()
+        merged={'path':str(output.relative_to(ROOT)),'sha256':digest(output),'bytes':output.stat().st_size,'snapshot_date':p['sourceDate'],'replicationTimestamp':next(iter(timestamps)),'operation':'libosmium sorted merge; duplicate OSM objects resolved by version','url':None}
     write(lockpath,{'osm':merged,'inputs':inputs,'polygons':polygons,'accessed_utc':datetime.now(timezone.utc).isoformat()})
-    print('Full England/Wales OSM source locked.',flush=True)
+    print('Full '+p['label']+' OSM source locked.',flush=True)
 
 def fetch_terrain(region):
     p=profile(region);lockpath=region_path(region,'terrain-sources.lock.json')
@@ -100,7 +103,7 @@ def fetch_dem_padding(region):
     print('Garmin DEM padding locked:',len(assets),'additional cells',flush=True)
 
 if __name__=='__main__':
-    parser=argparse.ArgumentParser();parser.add_argument('--region',choices=['england-wales'],required=True);parser.add_argument('--stage',choices=['osm','terrain','padding','all'],default='all');args=parser.parse_args()
+    parser=argparse.ArgumentParser();parser.add_argument('--region',choices=['england-wales','scotland'],required=True);parser.add_argument('--stage',choices=['osm','terrain','padding','all'],default='all');args=parser.parse_args()
     if args.stage=='padding':fetch_dem_padding(args.region)
     if args.stage in ('terrain','all'):fetch_terrain(args.region)
     if args.stage in ('osm','all'):fetch_osm(args.region)

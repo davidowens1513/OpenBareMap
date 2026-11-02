@@ -38,7 +38,7 @@ def main(region):
     if not style.exists():
         shutil.copytree(ROOT/'garmin/style',style)
         for file in style.iterdir():
-            if file.is_file():file.write_text(file.read_text().replace('name:ga','name:cy').replace('OpenBareMap Ireland',p['name']).replace('Full Ireland',p['label']))
+            if file.is_file():file.write_text(file.read_text().replace('name:ga','name:'+p.get('nativeLanguage','cy')).replace('OpenBareMap Ireland',p['name']).replace('Full Ireland',p['label']))
         typ=style/'OBM4831.txt';text=typ.read_text().replace('FID=4831','FID='+str(p['garminFamilyId']));typ.unlink();(style/('OBM'+str(p['garminFamilyId'])+'.txt')).write_text(text)
         lines=style/'lines';lines.write_text(lines.read_text().replace('admin_level=2 [','(admin_level=2 | admin_level=4) ['))
     # Coast/background geometry must survive low-detail polygon size filtering.
@@ -51,7 +51,7 @@ def main(region):
     if not polygon.exists():polygon_union(region,polygon)
     copyright_file=dest/'copyright.txt'
     copyright_file.write_text((ROOT/'garmin/copyright.txt').read_text().replace('Ireland',p['label']).replace('Townlands','Inherited font and pattern assets'))
-    options=['--max-jobs=2','--style-file='+str(style),'--family-id='+str(p['garminFamilyId']),'--product-id=1','--family-name='+p['name'],'--series-name=OpenBareMap Garmin 2.0','--description='+p['name']+' 2.0','--code-page=1252','--lower-case','--name-tag-list=name:en,name,name:cy','--levels=0:24,1:22,2:20,3:18,4:16','--gmapsupp','--add-pois-to-areas','--dem='+str(work/'hgt'),'--dem-poly='+str(polygon),'--dem-dists=3312,13248,26512,53024,106048','--dem-interpolation=bilinear','--copyright-file='+str(copyright_file)]
+    options=['--max-jobs=2','--style-file='+str(style),'--family-id='+str(p['garminFamilyId']),'--product-id=1','--family-name='+p['name'],'--series-name=OpenBareMap Garmin 2.0','--description='+p['name']+' 2.0','--code-page=1252','--lower-case','--name-tag-list=name:en,name,name:'+p.get('nativeLanguage','cy'),'--levels=0:24,1:22,2:20,3:18,4:16','--gmapsupp','--add-pois-to-areas','--dem='+str(work/'hgt'),'--dem-poly='+str(polygon),'--dem-dists=3312,13248,26512,53024,106048','--dem-interpolation=bilinear','--copyright-file='+str(copyright_file)]
     config={'routing':False,'coverage':p['coverage'],'contourIntervalMetres':20,'familyId':p['garminFamilyId'],'tileStartId':p['garminTileStartId'],'compilerOptions':options,'garminPackageRevision':p.get('garminPackageRevision',p['mapVersion'])}
     validate_config(region,config)
     write(dest/'config.json',config);tools()
@@ -86,20 +86,20 @@ def main(region):
     if not image.is_file() or not 0<image.stat().st_size<4*1024**3:raise ValueError('Missing image or exceeds FAT32 single-file limit')
     java=Path(java_path());javac=java.with_name('javac');jar=ROOT/'garmin/tools/mkgmap-r4924/mkgmap.jar'
     subprocess.run([str(javac),'-cp',str(jar),'-d',str(work),str(ROOT/'garmin/InspectMap.java')],check=True)
-    command=[str(java),'-Xmx2g','-cp',str(work)+':'+str(jar),'InspectMap',str(compile_dir),'London','Cardiff','Newcastle upon Tyne','Plymouth','Carlisle']
+    command=[str(java),'-Xmx2g','-cp',str(work)+':'+str(jar),'InspectMap',str(compile_dir),*p.get('inspectionNames',['London','Cardiff','Newcastle upon Tyne','Plymouth','Carlisle'])]
     with (dest/'inspection.json').open('w') as out:subprocess.run(command,stdout=out,check=True)
     # Inspect the prospective binary together with the other installed products.
     subprocess.run([str(javac),'-cp',str(jar),'-d',str(work),str(ROOT/'garmin/ValidateMapSet.java')],check=True)
-    companions=[f for f in [ROOT/'garmin/dist/OpenBareMap-Ireland.img',ROOT/'garmin/dist/OpenBareMap-My-Tracks.img'] if f.exists()]
-    with (dest/'map-set-validation.txt').open('w') as out:subprocess.run([str(java),'-Djava.awt.headless=true','-Xmx2g','-cp',str(work)+':'+str(jar),'ValidateMapSet',*map(str,companions),str(image)],stdout=out,check=True)
-    dist=dest/'dist';dist.mkdir(exist_ok=True);output=dist/'OpenBareMap-England-Wales.img'
+    companions=[f for f in [ROOT/'garmin/dist/OpenBareMap-Ireland.img',ROOT/'garmin/dist/OpenBareMap-My-Tracks.img',ROOT/'regions/england-wales/garmin/dist/OpenBareMap-England-Wales.img'] if f.exists() and region not in f.parts]
+    with (dest/'map-set-validation.txt').open('w') as out:subprocess.run([str(java),'-Djava.awt.headless=true',*(['-Dopenbaremap.scotland.tiles='+str(len(expected))] if region=='scotland' else []),'-Xmx2g','-cp',str(work)+':'+str(jar),'ValidateMapSet',*map(str,companions),str(image)],stdout=out,check=True)
+    dist=dest/'dist';dist.mkdir(exist_ok=True);output=dist/p.get('garminFilename','OpenBareMap-England-Wales.img')
     if output.exists():raise FileExistsError(output)
     shutil.copyfile(image,output)
     if digest(output)!=digest(image):raise ValueError('Distribution copy mismatch')
-    (dist/'INSTALL.txt').write_text('OpenBareMap England & Wales 2.0\n\nCopy OpenBareMap-England-Wales.img into the Garmin folder on your device or memory card. Enable OpenBareMap England & Wales. This map has a different family ID from Ireland; both may be installed. Display-only: no turn-by-turn routing. Use metres for contour labels.\n\nDevice rendering has not yet been reviewed.\n')
+    (dist/'INSTALL.txt').write_text(f"{p['name']} {p['mapVersion']}\n\nCopy {output.name} into the Garmin folder on your device or memory card, then enable {p['name']}. This edition has its own reserved family ID and can coexist with the other OpenBareMap editions. Display-only: no turn-by-turn routing. Use metres for contour labels.\n\nDevice rendering has not yet been reviewed.\n\nAttribution: https://downloads.appsbyonzy.dev/Garmin/{region}/ATTRIBUTION.txt\nElevation sources: https://downloads.appsbyonzy.dev/Garmin/{region}/terrain-data-sources.md\nElevation attribution: https://downloads.appsbyonzy.dev/Garmin/{region}/terrain-attribution.md\n")
     shutil.copyfile(copyright_file,dist/'ATTRIBUTION.txt')
     for name in ('terrain-attribution.md','terrain-data-sources.md'):shutil.copyfile(ROOT/'data'/name,dist/name)
     write(dest/'build-report.json',{'status':'compiled and structurally inspected; hardware rendering pending','familyId':p['garminFamilyId'],'garminPackageRevision':config['garminPackageRevision'],'routing':False,'output':{'path':str(output.relative_to(ROOT)),'bytes':output.stat().st_size,'sha256':digest(output)},'inspection':json.loads((dest/'inspection.json').read_text())})
 
 if __name__=='__main__':
-    parser=argparse.ArgumentParser();parser.add_argument('--region',choices=['england-wales'],required=True);args=parser.parse_args();main(args.region)
+    parser=argparse.ArgumentParser();parser.add_argument('--region',choices=['england-wales','scotland'],required=True);args=parser.parse_args();main(args.region)

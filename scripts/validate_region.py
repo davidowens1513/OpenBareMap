@@ -27,7 +27,7 @@ def xyz(lon,lat,zoom):
     n=2**zoom
     return int((lon+180)/360*n),int((1-math.asinh(math.tan(math.radians(lat)))/math.pi)/2*n)
 
-def land_coverage(path,anchors=None):
+def land_coverage(path,anchors=None,zoom_levels=range(8,13)):
     """Check actual polygon coverage, including the two reported blue patches."""
     anchors=anchors or {'Moelwyn':[-3.995,52.965],'Llandeilo':[-3.991,51.886],
              'London':[-.128,51.507],'Cardiff':[-3.179,51.482],
@@ -60,18 +60,18 @@ def land_coverage(path,anchors=None):
     result={}
     with closing(sqlite3.connect(path.as_uri()+'?mode=ro',uri=True)) as db:
         for name,(lon,lat) in anchors.items():
-            for z in range(8,13):
+            for z in zoom_levels:
                 fx=(lon+180)/360*2**z;fy=(1-math.asinh(math.tan(math.radians(lat)))/math.pi)/2*2**z
                 row=db.execute('SELECT tile_data FROM tiles WHERE zoom_level=? AND tile_column=? AND tile_row=?',(z,int(fx),2**z-1-int(fy))).fetchone()
                 if not row or not any(contains(raw,fx%1,fy%1) for layer,raw in layers(row[0]) if layer=='land'):
                     raise ValueError(f'Missing land background at {name}, zoom {z}')
-            result[name]={'coordinate':[lon,lat],'verifiedZooms':[8,9,10,11,12]}
+            result[name]={'coordinate':[lon,lat],'verifiedZooms':list(zoom_levels)}
     return result
 
-def coverage(path):
+def coverage(path,anchors=None):
     result={}
     with closing(sqlite3.connect(path.as_uri()+'?mode=ro',uri=True)) as db:
-        for name,(lon,lat) in ANCHORS.items():
+        for name,(lon,lat) in (anchors or ANCHORS).items():
             x,y=xyz(lon,lat,14);count=0
             for xx in range(x-1,x+2):
                 for yy in range(y-1,y+2):
@@ -101,9 +101,9 @@ def detail(path):
                         counts['boundaries']+=1
     return counts
 
-def package(root,platform):
+def package(root,platform,region="england-wales"):
     manifest=json.loads((root/'manifest.json').read_text());style=json.loads((root/'style.json').read_text())
-    if manifest['region']!='england-wales':raise ValueError('Wrong package region')
+    if manifest['region']!=region:raise ValueError('Wrong package region')
     selected=active_map(manifest['region'])
     if manifest['storageRevision']!=selected['storageRevision']:raise ValueError('Stale package revision')
     databases=manifest['datasets'] if platform=='ios' else manifest['databases']
@@ -123,17 +123,19 @@ def package(root,platform):
         if not source['url'].startswith('mbtiles://{'):raise ValueError('Nonlocal runtime source')
     return {'checkedFiles':checked,'sourceFiles':manifest['sourceFiles'],'nativeDeviceRenderingTested':False}
 
-def welsh_glyphs():
+def label_glyphs(region):
     result={}
     for font in (ROOT/'viewer/fonts').iterdir():
         if not font.is_dir():continue
         glyphs=set()
-        for n,w,stack in fields((font/'256-511.pbf').read_bytes()):
+        required={ord(c) for c in ('ÀàÈèÌìÒòÙùÁáÉéÓó' if region=='scotland' else 'ŴŵŶŷ')}
+        filename='0-255.pbf' if region=='scotland' else '256-511.pbf'
+        for n,w,stack in fields((font/filename).read_bytes()):
             if n==1 and w==2:
                 for number,wire,glyph in fields(stack):
                     if number==3 and wire==2:
                         glyphs.update(v for k,t,v in fields(glyph) if k==1 and t==0)
-        if not {372,373,374,375}.issubset(glyphs):raise ValueError('Missing Welsh glyphs: '+font.name)
+        if not required.issubset(glyphs):raise ValueError('Missing regional label glyphs: '+font.name)
         result[font.name]=True
     return result
 
@@ -143,16 +145,22 @@ def validate(region):
         path=ROOT/item['path']
         if digest(path)!=item['sha256']:raise ValueError('Selected dataset changed: '+name)
         output['datasets'][name]=inspect_tiles(path)
-    output['coverageAnchors']=coverage(ROOT/active['datasets']['basemap']['path'])
-    output['landBackground']=land_coverage(ROOT/active['datasets']['topography']['path'])
+    anchors={name:xy[:2] for name,xy in p['destinations'].items() if name!='island'} if region=='scotland' else None
+    output['coverageAnchors']=coverage(ROOT/active['datasets']['basemap']['path'],anchors)
+    output['landBackground']=land_coverage(ROOT/active['datasets']['topography']['path'],{name:xy for name,xy in anchors.items() if name!='rockall'} if anchors else None,zoom_levels=range(4,13) if region=='scotland' else range(8,13))
+    if region=='scotland':
+        output['smallIslandLandBackground']=land_coverage(ROOT/active['datasets']['topography']['path'],{'rockall':p['destinations']['rockall'][:2]},zoom_levels=[11,12])
     output['detail']={name:detail(ROOT/active['datasets'][name]['path']) for name in ('basemap','topography')}
-    output['packages']={platform:package(ROOT/'regions'/region/platform/folder,platform) for platform,folder in [('ios','OpenBareMap.bundle'),('android','OpenBareMap')]}
+    output['packages']={platform:package(ROOT/'regions'/region/platform/folder,platform,region) for platform,folder in [('ios','OpenBareMap.bundle'),('android','OpenBareMap')]}
     baseline=json.loads((ROOT/'regions/ireland/preservation-baseline.json').read_text())
     for relative,expected in baseline['files'].items():
         if digest(ROOT/relative)!=expected:raise ValueError('Ireland baseline changed: '+relative)
     output['irelandPreserved']=True
-    output['welshGlyphs']=welsh_glyphs()
-    geometry=json.loads((ROOT/'build'/(region+'-geometry')/'geometry-report.json').read_text())
+    output['labelGlyphs']=label_glyphs(region)
+    geometry_path=ROOT/'releases'/region/p['mapVersion']/'build-records'/(region+'-geometry')/'geometry-report.json'
+    if not geometry_path.exists():geometry_path=ROOT/'build'/(region+'-geometry')/'geometry-report.json'
+    geometry=json.loads(geometry_path.read_text())
+    if geometry['osm']['sha256']!=json.loads(region_path(region,'sources.lock.json').read_text())['osm']['sha256']:raise ValueError('Wrong geometry source record')
     output['geometryProcessing']=geometry['counts']
     garmin=json.loads((ROOT/'regions'/region/'garmin/build-report.json').read_text())
     if garmin['familyId']!=p['garminFamilyId'] or garmin['routing']:raise ValueError('Wrong Garmin identity or routing')
@@ -167,8 +175,18 @@ def validate(region):
         if platform=='android':
             archive=directory/'OpenBareMap-Android.zip'
             package_records[platform]['archive']={'path':str(archive.relative_to(ROOT)),'bytes':archive.stat().st_size,'sha256':digest(archive)}
-    write(release/'manifest.json',{'region':region,'mapVersion':p['mapVersion'],'coverage':p['coverage'],'datasets':active['datasets'],'osm':json.loads(region_path(region,'sources.lock.json').read_text())['osm'],'terrainLockSHA256':digest(region_path(region,'terrain-sources.lock.json')),'styleSHA256':digest(region_path(region,'style.json')),'pythonRuntime':json.loads(region_path(region,'python-runtime.json').read_text()),'garmin':garmin['output'],'packages':package_records,'validation':'validation.json','acceptance':'Automated checks only; see validation and visual-review records for actual reviewed scope.'})
-    print('Full England/Wales build, packages and Ireland preservation verified.',flush=True)
+    manifest={'region':region,'mapVersion':p['mapVersion'],'coverage':p['coverage'],'datasets':active['datasets'],'osm':json.loads(region_path(region,'sources.lock.json').read_text())['osm'],'terrainLockSHA256':digest(region_path(region,'terrain-sources.lock.json')),'styleSHA256':digest(region_path(region,'style.json')),'pythonRuntime':json.loads(region_path(region,'python-runtime.json').read_text()),'garmin':garmin['output'],'packages':package_records,'validation':'validation.json','acceptance':'Automated checks only; see validation and visual-review records for actual reviewed scope.'}
+    exports=ROOT/'regions'/region/'exports/manifest.json'
+    if exports.exists():
+        exported=json.loads(exports.read_text())
+        if exported['region']!=region:raise ValueError('Wrong standalone archive region')
+        for item in exported['archives'].values():
+            if digest(ROOT/item['path'])!=item['sha256']:raise ValueError('Standalone archive changed')
+        manifest['standaloneResourceArchives']=exported['archives']
+    manifest['geometryReport']={'path':str(geometry_path.relative_to(ROOT)),'sha256':digest(geometry_path)}
+    manifest['hostAppsModified']=False
+    write(release/'manifest.json',manifest)
+    print('Full '+p['label']+' build, packages and Ireland preservation verified.',flush=True)
 
 if __name__=='__main__':
-    parser=argparse.ArgumentParser();parser.add_argument('--region',choices=['england-wales'],required=True);args=parser.parse_args();validate(args.region)
+    parser=argparse.ArgumentParser();parser.add_argument('--region',choices=['england-wales','scotland'],required=True);args=parser.parse_args();validate(args.region)

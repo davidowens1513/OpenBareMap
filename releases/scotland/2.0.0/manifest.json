@@ -1,0 +1,119 @@
+{
+  "acceptance": "Automated checks only; see validation and visual-review records for actual reviewed scope.",
+  "coverage": "Complete Geofabrik Scotland extract, including the Hebrides, Orkney, Shetland and Rockall; no pilot or regional sampling",
+  "datasets": {
+    "basemap": {
+      "bytes": 598016000,
+      "path": "releases/scotland/2.0.0/maps/basemap.mbtiles",
+      "sha256": "194a5fabae662750fde88ca56ba60aae15fc8dd262ead11f27db47833d7bf366",
+      "validation": {
+        "empty_tile_count": 36911,
+        "logical_tiles_sha256": "db9f3003545694ec068274d8d5f1442b8b00af2b5d82c6cfb1d24da59bd6c201",
+        "tile_count": 113942
+      }
+    },
+    "grid": {
+      "bytes": 172294144,
+      "path": "releases/scotland/2.0.0/maps/grid.mbtiles",
+      "sha256": "c6d6e919fd1241950300102acfcb086e488b7a90e81d3204557bda61150194be",
+      "validation": {
+        "empty_tile_count": 0,
+        "logical_tiles_sha256": "3ba7f47c9eca38ac92192b01440a72b1e18ffa5998af2142495fa20a1f257d88",
+        "tile_count": 537803
+      }
+    },
+    "hillshade": {
+      "bytes": 189792256,
+      "path": "releases/scotland/2.0.0/maps/hillshade.mbtiles",
+      "sha256": "d212ecd57f613849c940eedb5e1d32c4500ad506c9a14ea7fbc29d3e17e944c2",
+      "validation": {
+        "empty_tile_count": 0,
+        "logical_tiles_sha256": "253a1314dc6011ef42baec73fe3d1a1d16f524c2ad4573cfeaa9ec0464dc3fac",
+        "tile_count": 7537
+      }
+    },
+    "topography": {
+      "bytes": 366231552,
+      "path": "releases/scotland/2.0.0/maps/topography-context.mbtiles",
+      "sha256": "42228623d26b85157cc022c511e4cb2ce598411507bb2170d95d7bb8e640b067",
+      "validation": {
+        "empty_tile_count": 106746,
+        "logical_tiles_sha256": "4af912a13900bda484a1dc604d60e20b48fcf1f50fe2ffacd91850dac683225d",
+        "tile_count": 198323
+      }
+    }
+  },
+  "garmin": {
+    "bytes": 243965952,
+    "path": "regions/scotland/garmin/dist/OpenBareMap-Scotland.img",
+    "sha256": "bd048bef54c0f06313454f81dfa60a3703d27fab881daa2d771d08f6c8d7f589"
+  },
+  "geometryReport": {
+    "path": "releases/scotland/2.0.0/build-records/scotland-geometry/geometry-report.json",
+    "sha256": "03066d8a1f3060dc08d8d0d7d1cedfd58fc831214b6e54727f057c85667adfb8"
+  },
+  "hostAppsModified": false,
+  "mapVersion": "2.0.0",
+  "osm": {
+    "bytes": 329502519,
+    "operation": "Complete upstream extract; no merge or spatial filtering",
+    "path": "data/regions/scotland/scotland-261031.osm.pbf",
+    "replicationTimestamp": "2026-10-31T21:23:06Z",
+    "sha256": "7c50d0f0470f5f5ce3581608283e415ec9806df1c5f04dd1ed6d0a98aa8ca4c0",
+    "snapshot_date": "2026-10-31",
+    "url": "https://download.geofabrik.de/europe/united-kingdom/scotland-261031.osm.pbf"
+  },
+  "packages": {
+    "android": {
+      "archive": {
+        "bytes": 1340598633,
+        "path": "regions/scotland/android/OpenBareMap-Android.zip",
+        "sha256": "b5966d71b025211c7a21dfc410f61d26cd5209a38a8bb111dcf70f6c36ea4255"
+      },
+      "checksumsSHA256": "c27afc5d7be8a6ca51d79c2ebb2d485878ffedf482b2aac24bc84095002c03dc",
+      "manifestSHA256": "6e26461e81104a26a011322ba73c88b1865ad972559b9472e561e5dab1c11837",
+      "path": "regions/scotland/android",
+      "validationSHA256": "35668b1a8beb30bb06e45043e1c57690abd9be004277dea326c49ba5cd02afb1"
+    },
+    "ios": {
+      "checksumsSHA256": "265484ca19119b408c2ba99e60cc9ff11daf7363b1e7d523cd6622c0679862a8",
+      "manifestSHA256": "0c2ed1bc2814cd85517c83f85ff86a476b230705460a9b285d16342e3a7273a7",
+      "path": "regions/scotland/ios",
+      "validationSHA256": "0e964105751a861ff36ec302c11e8fa89f29f89e0453d9be989c734c82cc3cd1"
+    }
+  },
+  "pythonRuntime": {
+    "packages": {
+      "Pillow": "12.3.0",
+      "certifi": "2026.10.23",
+      "charset-normalizer": "3.5.2",
+      "idna": "3.20",
+      "numpy": "2.5.4",
+      "osmium": "4.3.2",
+      "pyproj": "3.8.0",
+      "requests": "2.34.2",
+      "shapely": "2.2.0",
+      "urllib3": "2.8.0"
+    },
+    "platform": "macOS-27.0.1-arm64-arm-64bit-Mach-O",
+    "python": "3.14.5 (main, May 10 2026, 10:21:34) [Clang 21.0.0 (clang-2100.0.123.102)]"
+  },
+  "region": "scotland",
+  "standaloneResourceArchives": {
+    "android": {
+      "bytes": 1340598633,
+      "path": "regions/scotland/exports/android/OpenBareMap-Scotland-Android.zip",
+      "sha256": "b5966d71b025211c7a21dfc410f61d26cd5209a38a8bb111dcf70f6c36ea4255",
+      "url": "https://downloads.appsbyonzy.dev/OpenBareMap/scotland/2.0.0/android/OpenBareMap-Scotland-Android.zip"
+    },
+    "ios": {
+      "bytes": 1340618979,
+      "path": "regions/scotland/exports/ios/OpenBareMap-Scotland-iOS.zip",
+      "sha256": "aebe7015dea7d661dbd76d431db86b09460fbd672834c57e997707fb1464d88d",
+      "url": "https://downloads.appsbyonzy.dev/OpenBareMap/scotland/2.0.0/ios/OpenBareMap-Scotland-iOS.zip"
+    }
+  },
+  "styleSHA256": "c886621815c0e9ce6bed04bd9c87c463b82176cb1a72449d0ca20522bdc84083",
+  "terrainLockSHA256": "62a464d1e8e52c65b6e6b382ed0a7f7036d9ae765243f1c8e93e79677e945fa5",
+  "validation": "validation.json"
+}

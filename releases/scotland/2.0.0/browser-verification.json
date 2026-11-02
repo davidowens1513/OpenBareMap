@@ -1,0 +1,34 @@
+{
+  "website": {
+    "ScotlandSectionParallelToEnglandWales": true,
+    "previewAndGarminInstructionsLinksVerified": true,
+    "footerMailtoVerified": true
+  },
+  "previews": {
+    "scotland": {
+      "overviewLoaded": true,
+      "benNevisDetailRendered": true,
+      "zoomableKeyOpenedInSeparateTab": true,
+      "zoomInObserved": "28% to 35%",
+      "actualSizeObserved": "100%",
+      "fitPageObserved": "26%",
+      "rockallDetailedDestinationRendered": true
+    },
+    "ireland": {
+      "overviewReady": true,
+      "ScotlandNavigationPresent": true
+    },
+    "england-wales": {
+      "overviewReady": true,
+      "ScotlandNavigationPresent": true
+    }
+  },
+  "screenshots": [
+    "verification/website-scotland-live.png",
+    "verification/ben-nevis-live.png",
+    "verification/zoomable-key-live.png",
+    "verification/rockall-live.png"
+  ],
+  "nativeDeviceRenderingReviewed": false,
+  "BareGPSAppProjectsModified": false
+}

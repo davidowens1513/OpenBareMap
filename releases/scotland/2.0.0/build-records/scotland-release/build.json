@@ -1,0 +1,107 @@
+{
+  "builderSHA256": "7ec99449db0dba1927016ce60657da2e98620bd7fb5ea5f6931a0ddd25fcf7ef",
+  "geometryReport": {
+    "builderSHA256": "1abdc1dc556619346ae9f7436184b51d2816112bc10b485dd20260bdedce71ad",
+    "contoursSourceSHA256": "831de43769666adfddff959652ea1112110f859f4de4fb165c0c43e5eeed9179",
+    "counts": {
+      "contours": 158266,
+      "grid": {
+        "grid_10km": 242,
+        "grid_1km": 2402
+      },
+      "landcover": {
+        "empty_source_areas": [],
+        "features": 422813,
+        "retained": 34165,
+        "smoothed": 388648
+      }
+    },
+    "osm": {
+      "bytes": 329502519,
+      "operation": "Complete upstream extract; no merge or spatial filtering",
+      "path": "data/regions/scotland/scotland-261031.osm.pbf",
+      "replicationTimestamp": "2026-10-31T21:23:06Z",
+      "sha256": "7c50d0f0470f5f5ce3581608283e415ec9806df1c5f04dd1ed6d0a98aa8ca4c0",
+      "snapshot_date": "2026-10-31",
+      "url": "https://download.geofabrik.de/europe/united-kingdom/scotland-261031.osm.pbf"
+    },
+    "outputs": {
+      "contours.geojson": "dece915633dd0d924a2dc7aacf38ad1d152f45a137c778e81843e7429c7a4350",
+      "grid_10km.geojson": "a638e6c6f38e933b988130db1569eef58f9bc850245e9b4e71370ca3d286ea0a",
+      "grid_1km.geojson": "8b47fa85cbc7d148e86515e1796256527c7ce28441b71b7ae50eef36257ef7b0",
+      "landcover.geojson": "538806857932a465f2dc209da1f3c333fe533a228f14f65bec60442c0d33064d"
+    },
+    "region": "scotland",
+    "smootherSHA256": "7581d024dc1c1bec931642c7201db149bf64a64c814c451fa8bf37a0881ea6c9"
+  },
+  "outputs": {
+    "basemap": {
+      "bytes": 598016000,
+      "path": "releases/scotland/2.0.0/maps/basemap.mbtiles",
+      "sha256": "194a5fabae662750fde88ca56ba60aae15fc8dd262ead11f27db47833d7bf366",
+      "validation": {
+        "empty_tile_count": 36911,
+        "logical_tiles_sha256": "db9f3003545694ec068274d8d5f1442b8b00af2b5d82c6cfb1d24da59bd6c201",
+        "tile_count": 113942
+      }
+    },
+    "grid": {
+      "bytes": 172294144,
+      "path": "releases/scotland/2.0.0/maps/grid.mbtiles",
+      "sha256": "c6d6e919fd1241950300102acfcb086e488b7a90e81d3204557bda61150194be",
+      "validation": {
+        "empty_tile_count": 0,
+        "logical_tiles_sha256": "3ba7f47c9eca38ac92192b01440a72b1e18ffa5998af2142495fa20a1f257d88",
+        "tile_count": 537803
+      }
+    },
+    "hillshade": {
+      "bytes": 189792256,
+      "path": "releases/scotland/2.0.0/maps/hillshade.mbtiles",
+      "sha256": "d212ecd57f613849c940eedb5e1d32c4500ad506c9a14ea7fbc29d3e17e944c2",
+      "validation": {
+        "empty_tile_count": 0,
+        "logical_tiles_sha256": "253a1314dc6011ef42baec73fe3d1a1d16f524c2ad4573cfeaa9ec0464dc3fac",
+        "tile_count": 7537
+      }
+    },
+    "topography": {
+      "bytes": 366673920,
+      "path": "releases/scotland/2.0.0/maps/topography.mbtiles",
+      "sha256": "4869cc8d7002205444049b0222c2a9ab3f53c82fc2c9fcb9770b2b817a4f32f9",
+      "validation": {
+        "empty_tile_count": 106746,
+        "logical_tiles_sha256": "4af912a13900bda484a1dc604d60e20b48fcf1f50fe2ffacd91850dac683225d",
+        "tile_count": 198323
+      }
+    }
+  },
+  "region": "scotland",
+  "replacements": {
+    "basemap": {
+      "changed_tiles": 56609,
+      "path": "build/scotland-release/basemap-smoothed.mbtiles",
+      "replacement_feature_instances": 3847725,
+      "sha256": "db3c6a4f21f1f607462f32ff29a174042ce1d381bc8772d7ae6e58eb55af0fa7",
+      "unchanged_other_layers_sha256": "9a974a1000b85ffa5bc70862bb3ae02142fe4589f8d4928dc0733d02e4defd5a",
+      "validation": {
+        "empty_tile_count": 36911,
+        "logical_tiles_sha256": "e9fe70569ad1eb15f5caf62503f9145dabb46870e4ae0bf1f4c38b766d124e0f",
+        "tile_count": 113942
+      }
+    },
+    "topography": {
+      "changed_tiles": 98791,
+      "path": "build/scotland-release/topography-smoothed.mbtiles",
+      "replacement_feature_instances": 1613376,
+      "sha256": "aad76d0b056d4e0486e053759e5343196149c3a7bf2841c5741a19aeb3297213",
+      "unchanged_other_layers_sha256": "58fcdfa8d05e2c5bff2c82a4f87d36e903085c32a5aed6302c126107005acb91",
+      "validation": {
+        "empty_tile_count": 106746,
+        "logical_tiles_sha256": "9915c9d8a81b5b77c3361d6017098cd624ccb4ac7b6535233cceba1a0068f4d8",
+        "tile_count": 198323
+      }
+    }
+  },
+  "status": "built and structurally validated; visual/device review pending"
+}

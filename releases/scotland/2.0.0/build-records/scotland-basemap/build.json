@@ -1,0 +1,162 @@
+{
+  "command": [
+    "/usr/local/bin/tilemaker",
+    "--input",
+    "/Users/davidowens/Documents/Codex/2026-10-25/i-x20/outputs/OpenBareMap/data/regions/scotland/scotland-261031.osm.pbf",
+    "--output",
+    "/Users/davidowens/Documents/Codex/2026-10-25/i-x20/outputs/OpenBareMap/build/scotland-basemap/basemap.mbtiles",
+    "--config",
+    "/Users/davidowens/Documents/Codex/2026-10-25/i-x20/outputs/OpenBareMap/build/scotland-basemap/tilemaker.json",
+    "--process",
+    "/Users/davidowens/Documents/Codex/2026-10-25/i-x20/outputs/OpenBareMap/build/scotland-basemap/process.lua",
+    "--threads",
+    "1"
+  ],
+  "config_sha256": "e2e408e19e68ce74a04d77f4751c9d4bb75cc6094e884cbbd2f025c0f3178852",
+  "exit_code": 0,
+  "output_sha256": "f534af77fdad249d1f8c7ef729f4fac32984c5c4af73d048053fec2a7b9a42ac",
+  "process_sha256": "a2dd9b696fed5b877e64b9cbc5c0e86e1b03aae6e056580809615e4366a83828",
+  "region": {
+    "bounds": [
+      -15,
+      54.4,
+      0.3,
+      61.2
+    ],
+    "coastContextBounds": [
+      -17,
+      52,
+      4,
+      64
+    ],
+    "contourIntervalMetres": 20,
+    "coverage": "Complete Geofabrik Scotland extract, including the Hebrides, Orkney, Shetland and Rockall; no pilot or regional sampling",
+    "destinations": {
+      "ben-nevis": [
+        -5.004,
+        56.796,
+        13
+      ],
+      "borders": [
+        -2.45,
+        55.6,
+        11
+      ],
+      "cairngorms": [
+        -3.67,
+        57.08,
+        12
+      ],
+      "edinburgh": [
+        -3.188,
+        55.953,
+        12
+      ],
+      "glasgow": [
+        -4.252,
+        55.86,
+        12
+      ],
+      "island": [
+        -4.5,
+        57.3,
+        5
+      ],
+      "lewis": [
+        -6.38,
+        58.21,
+        11
+      ],
+      "orkney": [
+        -2.96,
+        58.98,
+        11
+      ],
+      "rockall": [
+        -13.688,
+        57.596,
+        14
+      ],
+      "shetland": [
+        -1.15,
+        60.15,
+        11
+      ],
+      "skye": [
+        -6.2,
+        57.3,
+        10
+      ],
+      "st-kilda": [
+        -8.58,
+        57.814,
+        13
+      ],
+      "unst": [
+        -0.84,
+        60.75,
+        12
+      ]
+    },
+    "garminFamilyId": 4834,
+    "garminFilename": "OpenBareMap-Scotland.img",
+    "garminPackageRevision": "2.0.0-garmin-r1",
+    "garminTileStartId": 48340001,
+    "gridCRS": "EPSG:27700",
+    "gridExtent": [
+      0,
+      700000,
+      0,
+      1300000
+    ],
+    "gridName": "British National Grid",
+    "gridSource": "british-grid",
+    "id": "scotland",
+    "inspectionNames": [
+      "Edinburgh",
+      "Glasgow",
+      "Inverness",
+      "Lerwick",
+      "Kirkwall"
+    ],
+    "label": "Scotland",
+    "mapVersion": "2.0.0",
+    "maxzoom": 14,
+    "minorWaterwayMinzoom": 10,
+    "minzoom": 4,
+    "name": "OpenBareMap Scotland",
+    "nativeLanguage": "gd",
+    "projectedCRS": "EPSG:27700",
+    "sourceDate": "2026-10-31",
+    "sourceSlugs": [
+      "scotland"
+    ],
+    "styleRevision": "2.0.0-scotland-overview-r1",
+    "terrainBounds": [
+      -15,
+      54,
+      1,
+      62
+    ],
+    "townlands": false
+  },
+  "source": {
+    "bytes": 329502519,
+    "operation": "Complete upstream extract; no merge or spatial filtering",
+    "path": "data/regions/scotland/scotland-261031.osm.pbf",
+    "replicationTimestamp": "2026-10-31T21:23:06Z",
+    "sha256": "7c50d0f0470f5f5ce3581608283e415ec9806df1c5f04dd1ed6d0a98aa8ca4c0",
+    "snapshot_date": "2026-10-31",
+    "url": "https://download.geofabrik.de/europe/united-kingdom/scotland-261031.osm.pbf"
+  },
+  "status": "validated vector build",
+  "toolchain": {
+    "sha256": "d43847b5d5662b9139461921d55bfab56f3db2098946209a5c7a26b03255b123",
+    "version": "tilemaker v3.1.0+ge16203e4e2fb"
+  },
+  "validation": {
+    "empty_tile_count": 36913,
+    "logical_tiles_sha256": "fea36562cb097b2cf7d2e8405b8f1d64debd537f83a372ee691a195a3c45818f",
+    "tile_count": 113943
+  }
+}

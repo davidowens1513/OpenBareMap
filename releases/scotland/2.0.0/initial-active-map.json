@@ -1,0 +1,52 @@
+{
+  "contourIntervalMetres": 20,
+  "coverage": "Complete Geofabrik Scotland extract, including the Hebrides, Orkney, Shetland and Rockall; no pilot or regional sampling",
+  "datasets": {
+    "basemap": {
+      "bytes": 598016000,
+      "path": "releases/scotland/2.0.0/maps/basemap.mbtiles",
+      "sha256": "194a5fabae662750fde88ca56ba60aae15fc8dd262ead11f27db47833d7bf366",
+      "validation": {
+        "empty_tile_count": 36911,
+        "logical_tiles_sha256": "db9f3003545694ec068274d8d5f1442b8b00af2b5d82c6cfb1d24da59bd6c201",
+        "tile_count": 113942
+      }
+    },
+    "grid": {
+      "bytes": 172294144,
+      "path": "releases/scotland/2.0.0/maps/grid.mbtiles",
+      "sha256": "c6d6e919fd1241950300102acfcb086e488b7a90e81d3204557bda61150194be",
+      "validation": {
+        "empty_tile_count": 0,
+        "logical_tiles_sha256": "3ba7f47c9eca38ac92192b01440a72b1e18ffa5998af2142495fa20a1f257d88",
+        "tile_count": 537803
+      }
+    },
+    "hillshade": {
+      "bytes": 189792256,
+      "path": "releases/scotland/2.0.0/maps/hillshade.mbtiles",
+      "sha256": "d212ecd57f613849c940eedb5e1d32c4500ad506c9a14ea7fbc29d3e17e944c2",
+      "validation": {
+        "empty_tile_count": 0,
+        "logical_tiles_sha256": "253a1314dc6011ef42baec73fe3d1a1d16f524c2ad4573cfeaa9ec0464dc3fac",
+        "tile_count": 7537
+      }
+    },
+    "topography": {
+      "bytes": 366673920,
+      "path": "releases/scotland/2.0.0/maps/topography.mbtiles",
+      "sha256": "4869cc8d7002205444049b0222c2a9ab3f53c82fc2c9fcb9770b2b817a4f32f9",
+      "validation": {
+        "empty_tile_count": 106746,
+        "logical_tiles_sha256": "4af912a13900bda484a1dc604d60e20b48fcf1f50fe2ffacd91850dac683225d",
+        "tile_count": 198323
+      }
+    }
+  },
+  "format": "openbaremap-development-viewer-v1",
+  "localBorders": false,
+  "mapVersion": "2.0.0",
+  "region": "scotland",
+  "storageRevision": "2.0.0-scotland-r1",
+  "styleRevision": "2.0.0-scotland-overview-r1"
+}

@@ -28,13 +28,13 @@ def main(region):
     active=json.loads(selection.read_text())
     for name,item in active['datasets'].items():
         if digest(ROOT/item['path'])!=item['sha256']:raise ValueError('Selected dataset changed: '+name)
-    if active['storageRevision']=='2.0.0-england-wales-r1':
+    if active['storageRevision']=='2.0.0-'+region+'-r1':
         run('scripts/build_region_context.py','--region',region)
-    elif active['storageRevision']!='2.0.0-england-wales-r3':
+    elif active['storageRevision']!='2.0.0-'+region+'-r3':
         raise ValueError('Coastal background needs repair before packaging')
     run('scripts/build_region.py','--region',region,'--stage','packages')
     if not native_report.exists():run('scripts/build_region_garmin.py','--region',region)
     run('scripts/validate_region.py','--region',region)
 
 if __name__=='__main__':
-    p=argparse.ArgumentParser();p.add_argument('--region',choices=['england-wales'],required=True);a=p.parse_args();main(a.region)
+    p=argparse.ArgumentParser();p.add_argument('--region',choices=['england-wales','scotland'],required=True);a=p.parse_args();main(a.region)

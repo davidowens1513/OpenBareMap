@@ -36,4 +36,4 @@ def polygon_union(region,destination):
         for label,ring in [(str(index),poly.exterior)]+[(f'!{index}-{i}',ring) for i,ring in enumerate(poly.interiors,1)]:
             output.append(label);output.extend(f'  {x:.8f}  {y:.8f}' for x,y in ring.coords);output.append('END')
     output.append('END');destination.write_text('\n'.join(output)+'\n')
-    write(destination.with_suffix('.json'),{'operation':'Geometric union of complete England and Wales source outlines; overlapping buffers dissolved','inputs':lock['polygons'],'bounds':list(geometry.bounds),'areaSquareDegrees':geometry.area,'polygons':len(polygons),'sha256':digest(destination),'knownDestinationsCovered':list(p['destinations'])})
+    write(destination.with_suffix('.json'),{'operation':'Geometric union of complete upstream region outlines; overlapping buffers dissolved','inputs':lock['polygons'],'bounds':list(geometry.bounds),'areaSquareDegrees':geometry.area,'polygons':len(polygons),'sha256':digest(destination),'knownDestinationsCovered':list(p['destinations'])})

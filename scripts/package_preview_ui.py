@@ -4,10 +4,10 @@ import argparse,html,shutil,json
 from pathlib import Path
 from regions import ROOT,profile
 
-def package_ui(output):
+def package_ui(output,regions=None):
  output=Path(output);assets=output/'assets';(assets/'legends').mkdir(parents=True,exist_ok=True)
  for name in ['preview.js','preview.css','legend.js','legend.css']:shutil.copyfile(ROOT/'web-preview'/name,assets/name)
- for region in ['ireland','england-wales']:
+ for region in (regions or ['ireland','england-wales','scotland']):
   p=profile(region);directory=output/region;directory.mkdir(exist_ok=True)
   for name in ['index.html','legend.html']:
    text=(ROOT/'web-preview'/name).read_text().replace('{{REGION}}',html.escape(p['label'],quote=True)).replace('{{ID}}',region)

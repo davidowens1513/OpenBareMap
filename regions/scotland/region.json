@@ -1,0 +1,124 @@
+{
+  "id": "scotland",
+  "name": "OpenBareMap Scotland",
+  "label": "Scotland",
+  "mapVersion": "2.0.0",
+  "minzoom": 4,
+  "maxzoom": 14,
+  "coverage": "Complete Geofabrik Scotland extract, including the Hebrides, Orkney, Shetland and Rockall; no pilot or regional sampling",
+  "bounds": [
+    -15,
+    54.4,
+    0.3,
+    61.2
+  ],
+  "terrainBounds": [
+    -15,
+    54,
+    1,
+    62
+  ],
+  "projectedCRS": "EPSG:27700",
+  "gridCRS": "EPSG:27700",
+  "gridName": "British National Grid",
+  "gridSource": "british-grid",
+  "townlands": false,
+  "contourIntervalMetres": 20,
+  "garminFamilyId": 4834,
+  "garminTileStartId": 48340001,
+  "sourceDate": "2026-10-31",
+  "sourceSlugs": [
+    "scotland"
+  ],
+  "destinations": {
+    "island": [
+      -4.5,
+      57.3,
+      5
+    ],
+    "edinburgh": [
+      -3.188,
+      55.953,
+      12
+    ],
+    "glasgow": [
+      -4.252,
+      55.86,
+      12
+    ],
+    "cairngorms": [
+      -3.67,
+      57.08,
+      12
+    ],
+    "ben-nevis": [
+      -5.004,
+      56.796,
+      13
+    ],
+    "skye": [
+      -6.2,
+      57.3,
+      10
+    ],
+    "lewis": [
+      -6.38,
+      58.21,
+      11
+    ],
+    "orkney": [
+      -2.96,
+      58.98,
+      11
+    ],
+    "shetland": [
+      -1.25,
+      60.3,
+      10
+    ],
+    "unst": [
+      -0.84,
+      60.75,
+      12
+    ],
+    "st-kilda": [
+      -8.58,
+      57.814,
+      13
+    ],
+    "rockall": [
+      -13.687237,
+      57.5962764,
+      14
+    ],
+    "borders": [
+      -2.45,
+      55.6,
+      11
+    ]
+  },
+  "coastContextBounds": [
+    -17,
+    52,
+    4,
+    64
+  ],
+  "minorWaterwayMinzoom": 10,
+  "styleRevision": "2.0.0-scotland-overview-r1",
+  "garminPackageRevision": "2.0.0-garmin-r1",
+  "nativeLanguage": "gd",
+  "gridExtent": [
+    -400000,
+    700000,
+    0,
+    1300000
+  ],
+  "garminFilename": "OpenBareMap-Scotland.img",
+  "inspectionNames": [
+    "Edinburgh",
+    "Glasgow",
+    "Inverness",
+    "Lerwick",
+    "Kirkwall"
+  ]
+}

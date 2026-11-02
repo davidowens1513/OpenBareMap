@@ -4,7 +4,7 @@ import json
 from pathlib import Path
 from openbaremap import ROOT
 
-REGIONS = ('ireland', 'england-wales')
+REGIONS = ('ireland', 'england-wales', 'scotland')
 
 def profile(region='ireland'):
     if region not in REGIONS:
@@ -42,7 +42,7 @@ def region_style(region='ireland'):
             return [translate(item) for item in value]
         if isinstance(value, dict):
             return {key: translate(item) for key,item in value.items()}
-        return 'name_cy' if value == 'name_ga' else value
+        return 'name_'+p.get('nativeLanguage','cy') if value == 'name_ga' else value
     style = translate(style)
     for layer in style['layers']:
         if layer.get('source') == 'irish-grid':
@@ -67,7 +67,8 @@ def process_script(region='ireland'):
     profile(region)
     script=(ROOT/'config/process.lua').read_text()
     if region=='ireland':return script
-    return script.replace('name:ga','name:cy').replace('name_ga','name_cy').replace('"tracktype", "access"','"tracktype", "designation", "bicycle", "horse", "sac_scale", "trail_visibility", "access"')
+    language=profile(region).get('nativeLanguage','cy')
+    return script.replace('name:ga','name:'+language).replace('name_ga','name_'+language).replace('"tracktype", "access"','"tracktype", "designation", "bicycle", "horse", "sac_scale", "trail_visibility", "access"')
 
 
 def garmin_work(region='ireland'):

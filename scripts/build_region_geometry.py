@@ -64,7 +64,7 @@ def landcover(source,destination):
             if old.is_valid and new.is_valid and old.area and abs(new.area-old.area)/old.area<=.02:
                 geometry=candidate;counts['smoothed']+=1
             else:geometry=original;counts['retained']+=1
-            props={k.replace(':','_'):v for k,v in tags.items() if k in ('wetland','natural','landuse','name','name:en','name:cy','official_name','short_name')};props['class']=cl
+            props={k.replace(':','_'):v for k,v in tags.items() if k in ('wetland','natural','landuse','name','name:en','name:cy','name:gd','official_name','short_name')};props['class']=cl
             out.add(geometry,props)
     Handler().apply_file(str(source),locations=True,idx='flex_mem');out.close()
     if not out.count:raise ValueError('No landcover')
@@ -76,10 +76,11 @@ def grid(region,destination):
     counts={}
     for step,layer in [(1000,'grid_1km'),(10000,'grid_10km')]:
         out=Collection(destination/(layer+'.geojson'))
-        # Full BNG rectangle covering England/Wales, including Scilly and Northumberland.
-        for axis,maximum,cross in [('E',700000,650000),('N',650000,700000)]:
-            for fixed in range(0,maximum+1,step):
-                coords=[list(transform.transform(fixed,v) if axis=='E' else transform.transform(v,fixed)) for v in range(0,cross+1,1000)]
+        # Projected metre rectangle from the edition profile; includes northern islands.
+        west,east,south,north=p.get('gridExtent',[0,700000,0,650000])
+        for axis,minimum,maximum,crossmin,crossmax in [('E',west,east,south,north),('N',south,north,west,east)]:
+            for fixed in range(minimum,maximum+1,step):
+                coords=[list(transform.transform(fixed,v) if axis=='E' else transform.transform(v,fixed)) for v in range(crossmin,crossmax+1,1000)]
                 out.add({'type':'LineString','coordinates':coords},{'label':f'{fixed//1000} km {axis}','metres':fixed,'axis':axis})
         out.close();counts[layer]=out.count
     transform.transform(400000,300000)
@@ -97,4 +98,4 @@ def build(region,topography):
     print(json.dumps(counts),flush=True)
 
 if __name__=='__main__':
-    p=argparse.ArgumentParser();p.add_argument('--region',choices=['england-wales'],required=True);a=p.parse_args();build(a.region,ROOT/'build'/(a.region+'-topography'))
+    p=argparse.ArgumentParser();p.add_argument('--region',choices=['england-wales','scotland'],required=True);a=p.parse_args();build(a.region,ROOT/'build'/(a.region+'-topography'))

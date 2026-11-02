@@ -1,24 +1,24 @@
 # OpenBareMap 2.0
 
-OpenBareMap provides two independently usable offline topographic map editions: **Ireland** and **England & Wales**. Both use shared cartography and build tools, with separate source snapshots, selected databases, packages and release records. Both releases are **2.0.0**, with **20 m contours**. Updating or exporting one region does not replace the other, and does not modify a BareGPS host app.
+OpenBareMap provides three independently usable offline topographic map editions: **Ireland**, **England & Wales** and **Scotland**. They use shared cartography and build tools, with separate source snapshots, selected databases, packages and release records. All three editions are **2.0.0**, with **20 m contours**. Updating or exporting one region does not replace the other, and does not modify a BareGPS host app.
 
 ## Choose a region
 
-| | Ireland | England & Wales |
-| --- | --- | --- |
-| Coverage | Whole island, Northern Ireland and offshore islands | Complete England and Wales extracts, including offshore islands; no pilot |
-| OSM snapshot | 24 October 2026 | 30 October 2026 |
-| Grid / regional labels | Irish Grid and townlands | British National Grid (EPSG:27700), Welsh name fallback; no Irish townlands |
-| Selected map | [Ireland selection](active-map.json) | [England/Wales selection](regions/england-wales/active-map.json) |
-| Release records | [Ireland manifest](releases/2.0.0/manifest.json) | [England/Wales manifest](releases/england-wales/2.0.0/manifest.json) |
-| Garmin map | [OpenBareMap-Ireland.img](garmin/dist/OpenBareMap-Ireland.img) | [OpenBareMap-England-Wales.img](regions/england-wales/garmin/dist/OpenBareMap-England-Wales.img) |
-| Garmin family ID | 4831 | 4833 |
-| iOS resource bundle | `ios/package/OpenBareMap.bundle` | `regions/england-wales/ios/OpenBareMap.bundle` |
-| Android resources | `android/package/OpenBareMap` | `regions/england-wales/android/OpenBareMap` |
+| | Ireland | England & Wales | Scotland |
+| --- | --- | --- | --- |
+| Coverage | Whole island, Northern Ireland and offshore islands | Complete England and Wales extracts, including offshore islands | Complete Scotland extract, including the Hebrides, Orkney, Shetland and Rockall |
+| OSM snapshot | 24 October 2026 | 30 October 2026 | 31 October 2026 |
+| Grid / regional labels | Irish Grid and townlands | British National Grid, Welsh name fallback | British National Grid, Scottish Gaelic name fallback |
+| Selected map | [Ireland](active-map.json) | [England/Wales](regions/england-wales/active-map.json) | [Scotland](regions/scotland/active-map.json) |
+| Release records | [Ireland](releases/2.0.0/manifest.json) | [England/Wales](releases/england-wales/2.0.0/manifest.json) | [Scotland](releases/scotland/2.0.0/manifest.json) |
+| Garmin map | [Ireland IMG](garmin/dist/OpenBareMap-Ireland.img) | [England/Wales IMG](regions/england-wales/garmin/dist/OpenBareMap-England-Wales.img) | [Scotland IMG](regions/scotland/garmin/dist/OpenBareMap-Scotland.img) |
+| Garmin family ID | 4831 | 4833 | 4834 |
+| iOS resource bundle | `ios/package/OpenBareMap.bundle` | `regions/england-wales/ios/OpenBareMap.bundle` | `regions/scotland/ios/OpenBareMap.bundle` |
+| Android resources | `android/package/OpenBareMap` | `regions/england-wales/android/OpenBareMap` | `regions/scotland/android/OpenBareMap` |
 
 ## Export each region separately
 
-Install Git LFS and restore the files before exporting. Each command below writes only its selected region to a new destination; existing outputs are never overwritten. The region selection is explicit, so both packages can be extracted independently from the same checkout.
+Install Git LFS and restore the files before exporting. Each command below writes only its selected region to a new destination; existing outputs are never overwritten. The region selection is explicit, so each edition can be exported independently from the same checkout.
 
 ```sh
 # Ireland
@@ -28,6 +28,10 @@ python3 android/build_package.py --region ireland --output /absolute/new/ireland
 # England & Wales
 python3 ios/build_bundle.py --region england-wales --output /absolute/new/england-wales-ios
 python3 android/build_package.py --region england-wales --output /absolute/new/england-wales-android
+
+# Scotland (standalone resources; no BareGPS app integration)
+python3 ios/build_bundle.py --region scotland --output /absolute/new/scotland-ios
+python3 android/build_package.py --region scotland --output /absolute/new/scotland-android
 ```
 
 To download only one region’s large files after cloning with `GIT_LFS_SKIP_SMUDGE=1`, use the matching selection below. Source OSM/elevation archives are needed for rebuilding, but not for exporting the accepted maps.
@@ -38,6 +42,9 @@ git lfs pull --include="build/detail-2.0/basemap.mbtiles,build/padding-2.0/topog
 
 # England/Wales map resources and Garmin image only
 git lfs pull --include="releases/england-wales/2.0.0/maps/*.mbtiles*,regions/england-wales/garmin/dist/OpenBareMap-England-Wales.img"
+
+# Scotland map resources and Garmin image only
+git lfs pull --include="releases/scotland/2.0.0/maps/*.mbtiles*,regions/scotland/garmin/dist/OpenBareMap-Scotland.img"
 ```
 
 The England/Wales basemap exceeds GitHub’s single-object limit, so Git LFS stores it as three verified parts. The viewer and resource exporters reassemble the identical database automatically when selected. You can also run `python3 scripts/restore_map_parts.py` explicitly. Allow space for both the downloaded parts and the restored database.
@@ -49,6 +56,7 @@ Open independent local previews:
 ```sh
 python3 scripts/serve.py --region ireland --port 8765
 python3 scripts/serve.py --region england-wales --port 8766
+python3 scripts/serve.py --region scotland --port 8767
 ```
 
 See [regional builds and maintenance](docs/regional-editions.md) for independent source updates and full rebuilds. Existing commands without `--region` continue to select Ireland.
@@ -61,15 +69,19 @@ See [regional builds and maintenance](docs/regional-editions.md) for independent
 - **Places and facilities:** settlements, islands, water names, Ireland townlands, outdoor facilities and points of interest. Parking uses a white P on blue; outdoor facilities use dots and text.
 - **Offline resources:** local map databases, styles, symbols, fonts, legends and attribution notices. An internet connection is not required to display the installed map.
 
-The MapLibre presentation uses Open Sans text without halos, bridge/tunnel styling and a regional grid overlay: Irish Grid for Ireland or British National Grid for England/Wales. Paths and footways are saturated green; tracks are orange-brown, with distinct dash patterns and prominent strokes for contrast over higher-ground fills. Cliff markings use a repeating teeth pattern from zoom 11.
+The MapLibre presentation uses Open Sans text without halos, bridge/tunnel styling and a regional grid overlay: Irish Grid for Ireland or British National Grid for England/Wales and Scotland. Paths and footways are saturated green; tracks are orange-brown, with distinct dash patterns and prominent strokes for contrast over higher-ground fills. Cliff markings use a repeating teeth pattern from zoom 11.
 
 The shared app legend has bold dark labels, enlarged line samples and outlined colour swatches with enhanced contrast and saturation. Its samples are enhanced for readability; the map itself retains its cartographic colours. The public previews use matching regional legend images with a separate zoomable view; the local development viewer reads its legend samples from the active map style.
 
 Garmin uses native device fonts, symbols, terrain rendering and detail levels. The presentations share source data but have different rendering capabilities.
 
-## Garmin — both regions
+## Garmin — regional editions
 
-Choose the region-specific `.img` in the table above. England/Wales is installed on the Montana 750i and GPSMAP 67i with full read-back verification; [separate device records](regions/england-wales/garmin/device-installations.json) confirm that Ireland and personal tracks were preserved. England/Wales revision **2.0.0-garmin-r2** fixes the large blue-area display issue and uses identifiers separate from both Ireland and the optional personal-track layer. The repaired appearance has been accepted on GPSMAP 67i; Montana visual review remains pending. The public [England/Wales download](https://downloads.appsbyonzy.dev/Garmin/OpenBareMap-England-Wales.img) matches the installed repair. The details below describe the established Ireland package; England/Wales has its own [installation instructions](regions/england-wales/garmin/dist/INSTALL.txt) and [build inspection](regions/england-wales/garmin/build-report.json). Both are display-only.
+Choose the region-specific `.img` in the table above. England/Wales is installed on the Montana 750i, GPSMAP 67i and GPSMAP H1 with full read-back verification; [separate device records](regions/england-wales/garmin/device-installations.json) confirm that Ireland and personal tracks were preserved. England/Wales revision **2.0.0-garmin-r2** fixes the large blue-area display issue and uses identifiers separate from both Ireland and the optional personal-track layer. The repaired appearance has been accepted on GPSMAP 67i; Montana and H1 visual review remain pending. The public [England/Wales download](https://downloads.appsbyonzy.dev/Garmin/OpenBareMap-England-Wales.img) matches the installed repair. The details below describe the established Ireland package; England/Wales has its own [installation instructions](regions/england-wales/garmin/dist/INSTALL.txt) and [build inspection](regions/england-wales/garmin/build-report.json). Both are display-only.
+
+Scotland has its own [Garmin download](https://downloads.appsbyonzy.dev/Garmin/OpenBareMap-Scotland.img), [instructions](https://downloads.appsbyonzy.dev/Garmin/scotland-instructions.txt) and [binary inspection](regions/scotland/garmin/inspection.json). Its family 4834 is separate from Ireland, England/Wales and the private track layer. Scotland's Garmin rendering has not yet been reviewed on hardware.
+
+The standalone Scotland [iOS resource archive](https://downloads.appsbyonzy.dev/OpenBareMap/scotland/2.0.0/ios/OpenBareMap-Scotland-iOS.zip) and [Android resource archive](https://downloads.appsbyonzy.dev/OpenBareMap/scotland/2.0.0/android/OpenBareMap-Scotland-Android.zip) contain maps, style, fonts, symbols and provenance. They have **not been added to either BareGPS app project**. [Published checksums](https://downloads.appsbyonzy.dev/OpenBareMap/scotland/2.0.0/SHA256SUMS.txt) identify the exact exports.
 
 The Garmin edition is a **display-only map**, with no turn-by-turn routing. It includes 20-metre contours, native elevation data, land-cover textures, cliff markings, place names and outdoor features.
 
@@ -80,7 +92,7 @@ The Garmin edition is a **display-only map**, with no turn-by-turn routing. It i
 | Legend | [Montana-750i-Legend.png](garmin/dist/Montana-750i-Legend.png) |
 | Build, integration and validation details | [Garmin guide](garmin/README.md) |
 
-The 20 m Garmin edition is installed on the **Montana 750i** and **GPSMAP 67i**, with full file read-back verification. The GPSMAP H1 has the 10 m edition installed. Visual review of the new edition is pending. [Device installation records](garmin/device-installations.json) identify the exact installed revisions.
+The 20 m Garmin edition is installed on the **Montana 750i**, **GPSMAP 67i** and **GPSMAP H1**, with full file read-back verification. The preceding 10 m Ireland map was removed from the H1. Visual review of the new edition is pending. [Device installation records](garmin/device-installations.json) identify the exact installed revisions.
 
 The Ireland Garmin package revision is **2.0.0-20m**. Townlands use a native text category, NormalFont and muted grey-brown, without a marker. Displayed capitalisation and size depend on the device. This native label treatment applies to Garmin; MapLibre applications use the shared font and label resources.
 
@@ -92,7 +104,7 @@ Garmin uses its own zoom and font controls. Irish Grid lines and distinct bridge
 
 ## Android — map resources for each region
 
-Use the export commands above for either region. The reference app and links below are the existing Ireland integration; no England/Wales host app is created or installed by the map build.
+Use the export commands above for any region. The reference app and links below are the existing Ireland integration; no England/Wales or Scotland host app is created or installed by the map build.
 
 The Android edition uses **MapLibre Native** and includes a reference app and a reusable Kotlin resource loader. It supports Android 6.0 / API 23 and later.
 
@@ -130,16 +142,16 @@ Add the complete bundle as an Xcode resource and include the Swift loader in the
 
 The bundle contains map databases, townland points, styles, glyphs, sprites, a legend and provenance records. Resource integrity and Swift loader checks pass; MapLibre rendering and performance require simulator/device assessment. This package is an integration component rather than a standalone iOS app.
 
-## Public previews — both regions
+## Public previews — all regions
 
-| Ireland | England & Wales |
-| --- | --- |
-| [Open map preview](https://downloads.appsbyonzy.dev/OpenBareMap/preview-v2/ireland/index.html) · [Open zoomable map key](https://downloads.appsbyonzy.dev/OpenBareMap/preview-v2/ireland/legend.html) | [Open map preview](https://downloads.appsbyonzy.dev/OpenBareMap/preview-v2/england-wales/index.html) · [Open zoomable map key](https://downloads.appsbyonzy.dev/OpenBareMap/preview-v2/england-wales/legend.html) |
-| <a href="https://downloads.appsbyonzy.dev/OpenBareMap/preview-v2/ireland/legend.html"><img src="https://downloads.appsbyonzy.dev/OpenBareMap/preview-v2/assets/legends/ireland@2x.png" width="220" alt="Ireland map key — click to open and zoom"></a> | <a href="https://downloads.appsbyonzy.dev/OpenBareMap/preview-v2/england-wales/legend.html"><img src="https://downloads.appsbyonzy.dev/OpenBareMap/preview-v2/assets/legends/england-wales@2x.png" width="220" alt="England and Wales map key — click to open and zoom"></a> |
+| Ireland | England & Wales | Scotland |
+| --- | --- | --- |
+| [Open map preview](https://downloads.appsbyonzy.dev/OpenBareMap/preview-v2/ireland/index.html) · [Open zoomable map key](https://downloads.appsbyonzy.dev/OpenBareMap/preview-v2/ireland/legend.html) | [Open map preview](https://downloads.appsbyonzy.dev/OpenBareMap/preview-v2/england-wales/index.html) · [Open zoomable map key](https://downloads.appsbyonzy.dev/OpenBareMap/preview-v2/england-wales/legend.html) | [Open map preview](https://downloads.appsbyonzy.dev/OpenBareMap/preview-v2/scotland/index.html) · [Open zoomable map key](https://downloads.appsbyonzy.dev/OpenBareMap/preview-v2/scotland/legend.html) |
+| <a href="https://downloads.appsbyonzy.dev/OpenBareMap/preview-v2/ireland/legend.html"><img src="https://downloads.appsbyonzy.dev/OpenBareMap/preview-v2/assets/legends/ireland@2x.png" width="220" alt="Ireland map key — click to open and zoom"></a> | <a href="https://downloads.appsbyonzy.dev/OpenBareMap/preview-v2/england-wales/legend.html"><img src="https://downloads.appsbyonzy.dev/OpenBareMap/preview-v2/assets/legends/england-wales@2x.png" width="220" alt="England & Wales map key — click to open and zoom"></a> | <a href="https://downloads.appsbyonzy.dev/OpenBareMap/preview-v2/scotland/legend.html"><img src="https://downloads.appsbyonzy.dev/OpenBareMap/preview-v2/assets/legends/scotland@2x.png" width="220" alt="Scotland map key — click to open and zoom"></a> |
 
-Click a key image or its link to open the full-size legend. The separate legend page has zoom controls, a fit-to-page view and image download; larger views can be scrolled or dragged. Ireland uses the Irish Grid key and England & Wales uses the British National Grid key. The website previews use these same legend pages.
+Click a key to open its full-size legend with zoom controls, fit-to-page and image download. The website previews use these same legend pages. Ireland uses the Irish Grid key; England & Wales and Scotland use British National Grid keys.
 
-Both previews display the complete selected map, with pan/zoom and regional destinations. These online previews load tiles as needed; they do not replace the offline downloads. See [web preview packaging](web-preview/README.md) for updating and embedding them.
+Each preview displays the complete selected map with regional destinations. Online previews load tiles as needed and remain separate from offline downloads. See [web preview packaging](web-preview/README.md).
 
 ## Browser viewer
 
@@ -159,7 +171,7 @@ Git LFS is required to obtain the map databases, source archives and packaged bi
 
 ## Data, attribution and validation
 
-Ireland uses the **24 October 2026** Ireland/Northern Ireland extract. England/Wales uses both complete **30 October 2026** extracts, with a shared replication timestamp; its separate [source lock](regions/england-wales/sources.lock.json) and [terrain lock](regions/england-wales/terrain-sources.lock.json) pin the inputs. Terrain uses approximately 30-metre composite elevation data from Terrain Tiles. The shared map’s 20-metre contour interval describes line spacing, not a statement of terrain accuracy.
+Ireland uses the **24 October 2026** Ireland/Northern Ireland extract. Scotland uses the complete **31 October 2026** extract ([source lock](regions/scotland/sources.lock.json)). England/Wales uses both complete **30 October 2026** extracts, with a shared replication timestamp; its separate [source lock](regions/england-wales/sources.lock.json) and [terrain lock](regions/england-wales/terrain-sources.lock.json) pin the inputs. Terrain uses approximately 30-metre composite elevation data from Terrain Tiles. The shared map’s 20-metre contour interval describes line spacing, not a statement of terrain accuracy.
 
 | Source or record | Details |
 | --- | --- |

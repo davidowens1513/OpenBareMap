@@ -1,0 +1,26 @@
+{
+  "feature_instances_by_layer": {
+    "grid_10km": 228328,
+    "grid_1km": 2068162
+  },
+  "metadata": {
+    "bounds": "-15.000000,54.400000,0.300000,61.200000",
+    "center": "-7.350000,57.800000,9",
+    "description": "Complete Geofabrik Scotland extract, including the Hebrides, Orkney, Shetland and Rockall; no pilot or regional sampling",
+    "format": "pbf",
+    "json": "{\"vector_layers\": [{\"id\": \"grid_10km\", \"fields\": {\"axis\": \"String\", \"label\": \"String\", \"metres\": \"Number\"}, \"minzoom\": 10, \"maxzoom\": 14}, {\"id\": \"grid_1km\", \"fields\": {\"axis\": \"String\", \"label\": \"String\", \"metres\": \"Number\"}, \"minzoom\": 12, \"maxzoom\": 14}]}",
+    "maxzoom": "14",
+    "minzoom": "10",
+    "name": "British National Grid",
+    "type": "baselayer",
+    "version": "2.0.0"
+  },
+  "note": "Feature instances include repetition across tiles and zooms; not unique OSM objects. This checks MVT framing and layer presence, not geometry or cartographic correctness.",
+  "tiles_by_zoom": {
+    "10": 1617,
+    "11": 6440,
+    "12": 25490,
+    "13": 100965,
+    "14": 403291
+  }
+}

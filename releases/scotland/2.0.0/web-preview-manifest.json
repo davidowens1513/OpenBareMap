@@ -1,0 +1,41 @@
+{
+  "regions": {
+    "scotland": {
+      "basemap": {
+        "sourceSHA256": "194a5fabae662750fde88ca56ba60aae15fc8dd262ead11f27db47833d7bf366",
+        "bytes": 554638430,
+        "sha256": "a98785ab3cde44cd7d74117c8cf3dbcd28b07522b644f5270587029f61a980e4",
+        "tiles": 113942
+      },
+      "grid": {
+        "sourceSHA256": "c6d6e919fd1241950300102acfcb086e488b7a90e81d3204557bda61150194be",
+        "bytes": 146169842,
+        "sha256": "e8f0def10b44c24ce0d5b70553d637d50a1156fe22c550fcde780ef96a5eb945",
+        "tiles": 537803
+      },
+      "hillshade": {
+        "sourceSHA256": "d212ecd57f613849c940eedb5e1d32c4500ad506c9a14ea7fbc29d3e17e944c2",
+        "bytes": 184023302,
+        "sha256": "405a594cbd9c770c810758a667201a9e26a036ca582c6a776996c58100d170af",
+        "tiles": 7537
+      },
+      "topography": {
+        "sourceSHA256": "42228623d26b85157cc022c511e4cb2ce598411507bb2170d95d7bb8e640b067",
+        "bytes": 309034562,
+        "sha256": "42bb4499f5cf11111492a33e34a756982c99c999d9fa772c8062c4c8895a5ceb",
+        "tiles": 198323
+      },
+      "coast": {
+        "sourceSHA256": "501085ed99313d5acaf8a056cf7b826fb1f8f32f897ecb8d4e466cc9d8469595",
+        "bytes": 8368257,
+        "sha256": "e7238345dbc1fd1f3ee0c1b5cee975ebc01f52b9c47b7e69b09af5bd2b4c7fa8",
+        "tiles": 14445
+      }
+    }
+  },
+  "pmtilesPython": "3.8.1",
+  "pmtilesJS": "4.5.0",
+  "librarySHA256": "caf981bc46f6327ee7e65d5dc964d89d38a69f60edca2bd4c5c890c21b554c6c",
+  "dataOrigin": "https://downloads.appsbyonzy.dev/OpenBareMap/preview-v2",
+  "scope": "Complete selected map tiles; no regional or zoom sampling."
+}

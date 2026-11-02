@@ -73,3 +73,15 @@ data/regions/england-wales/elevation/*
 # Local metadata backups and upload/build staging logs.
 /maintenance/removed-build-metadata-*.zip
 /regions/*/garmin/rebuild-*.log
+
+# Pinned Scotland inputs; accepted resources remain under releases/scotland.
+!data/regions/scotland/
+data/regions/scotland/*
+!data/regions/scotland/*.osm.pbf
+!data/regions/scotland/*.poly
+!data/regions/scotland/elevation/
+data/regions/scotland/elevation/*
+!data/regions/scotland/elevation/*.hgt.gz
+
+# Published standalone resource ZIPs are pinned by the release/publication manifests.
+regions/*/exports/

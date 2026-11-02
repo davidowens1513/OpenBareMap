@@ -1,0 +1,569 @@
+Splitter version 654 compiled 2025-04-13T22:39:53+01:00
+boundary-tags=use-exclude-list
+cache=
+description=OpenBareMap Scotland
+geonames-file=
+handle-element-version=remove
+ignore-osm-bounds=false
+keep-complete=true
+mapid=48340001
+max-areas=2048
+max-nodes=1000000
+max-threads=2
+mixed=false
+no-trim=false
+num-tiles=
+output=pbf
+output-dir=/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/split
+overlap=auto
+polygon-desc-file=
+polygon-file=/Users/davidowens/Documents/Codex/2026-10-25/i-x20/outputs/OpenBareMap/regions/scotland/garmin/coverage.poly
+precomp-sea=
+problem-file=
+problem-report=
+resolution=13
+route-rel-values=
+search-limit=200000
+split-file=
+status-freq=120
+stop-after=dist
+wanted-admin-level=5
+write-kml=
+Elapsed time: 0s   Memory: Current 260MB (5MB used, 255MB free) Max 6144MB
+Time started: Mon Nov 02 14:42:39 GMT 2026
+Warning: Bounding polygon is complex. Splitter might not be able to fit all tiles into the polygon!
+Map is being split for resolution 13:
+ - area boundaries are aligned to 0x800 map units (0.0439453125 degrees)
+ - areas are multiples of 0x800 map units wide and high
+Processing /var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/combined.osm.pbf
+Bounding box -14.861554000000002 54.54001 0.731931 61.351310000000005
+10,000,000 nodes parsed... id=3099204225
+20,000,000 nodes parsed... id=8155594115
+30,000,000 nodes parsed... id=11067647953
+40,000,000 nodes parsed... id=13691874990
+50,000,000 nodes parsed... id=30008100302
+60,000,000 nodes parsed... id=30018100302
+70,000,000 nodes parsed... id=30028100302
+80,000,000 nodes parsed... id=30038100302
+Fill-densities-map pass took 7718 ms
+Exact map coverage read from input file(s) is (54.540016651153564,-14.861562252044678) to (61.351304054260254,0.7319211959838867)
+Exact map coverage after applying bounding box of polygon-file is (54.540016651153564,-14.861540794372559) to (61.13563299179077,0.21605730056762695)
+Rounded map coverage is (54.5361328125,-14.8974609375) to (61.171875,0.2197265625)
+Splitting nodes into areas containing a maximum of 1,000,000 nodes each...
+splitting Scotland
+Highest node count in a single grid element is 297,194
+Highest node count in a single grid element within the bounding polygon is 297,194
+Warning: rastered shape is too complex, using rectangle (54.5361328125,-14.8974609375) to (61.171875,0.2197265625) with 83,000,022 nodes instead
+Splitting tile (54.5361328125,-14.8974609375) to (61.171875,0.2197265625) with 83,000,022 nodes, goal is to get near 80 tiles
+S2 FULL: step 1 goal: 80 tiles, now: 130 tile(s). The smallest node count is 75074 (7 %), cache size 303
+S1 SOME: step 1 goal: 80 tiles, now: 110 tile(s). The smallest node count is 75074 (7 %), cache size 89
+S1 SOME: step 2 goal: 80 tiles, now: 89 tile(s). The smallest node count is 371227 (37 %), cache size 3,112
+S2 FULL: step 2 goal: 80 tiles, now: 91 tile(s). The smallest node count is 255519 (25 %), cache size 3,887
+S1 SOME: step 3 goal: 80 tiles, now: 87 tile(s). The smallest node count is 720981 (72 %), cache size 4,556
+S2 FULL: step 3 goal: 80 tiles, now: 91 tile(s). The smallest node count is 452427 (45 %), cache size 6,993
+S2 FULL: step 4 goal: 80 tiles, now: 89 tile(s). The smallest node count is 589100 (58 %), cache size 8,975
+S1 SOME: step 5 goal: 80 tiles, now: 87 tile(s). The smallest node count is 834006 (83 %), cache size 9,297
+S2 FULL: step 5 goal: 80 tiles, now: 87 tile(s). The smallest node count is 770690 (77 %), cache size 10,362
+S1 SOME: step 8 goal: 80 tiles, now: 85 tile(s). The smallest node count is 872178 (87 %), cache size 45,656
+S2 FULL: step 7 goal: 80 tiles, now: 85 tile(s). The smallest node count is 855630 (85 %), cache size 28,017
+S2 FULL: step 10 goal: 80 tiles, now: 85 tile(s). The smallest node count is 878747 (87 %), cache size 59,049
+S1 SOME: step 14 goal: 80 tiles, now: 85 tile(s). The smallest node count is 874454 (87 %), cache size 114,943
+S2 FULL: step 14 goal: 80 tiles, now: 85 tile(s). The smallest node count is 882923 (88 %), cache size 88,490
+S1 SOME: step 15 goal: 80 tiles, now: 85 tile(s). The smallest node count is 880413 (88 %), cache size 118,889
+S2 FULL: step 17 goal: 80 tiles, now: 85 tile(s). The smallest node count is 884178 (88 %), cache size 100,849
+S1 SOME: step 18 goal: 80 tiles, now: 85 tile(s). The smallest node count is 881978 (88 %), cache size 126,129
+S2 FULL goal was 80 tiles, solver finished with : 85 tile(s). The smallest node count is 884178 (88 %)
+S1 SOME: step 20 goal: 80 tiles, now: 85 tile(s). The smallest node count is 882454 (88 %), cache size 140,016
+S1 SOME: step 21 goal: 80 tiles, now: 85 tile(s). The smallest node count is 883159 (88 %), cache size 140,016
+S1 SOME goal was 80 tiles, solver finished with : 85 tile(s). The smallest node count is 883159 (88 %)
+Solution is nice. Can't find a better solution with search-limit 200000: 85 tile(s). The smallest node count is 884178 (88 %)
+Trying to cut the areas so that they fit into the polygon ...
+Area 48340001 covers (55.5029296875,-14.6337890625) to (57.4365234375,-6.85546875) and contains 992417 nodes (99 %)
+Area 48340002 covers (56.6455078125,-6.85546875) to (57.4365234375,-6.064453125) and contains 932983 nodes (93 %)
+Area 48340003 covers (55.2392578125,-6.85546875) to (56.6455078125,-6.064453125) and contains 993311 nodes (99 %)
+Area 48340004 covers (57.4365234375,-14.8974609375) to (59.765625,-7.0751953125) and contains 896539 nodes (89 %)
+Area 48340005 covers (58.18359375,-7.0751953125) to (60.0732421875,-6.064453125) and contains 969396 nodes (96 %)
+Area 48340006 covers (57.4365234375,-7.0751953125) to (58.18359375,-6.6796875) and contains 959987 nodes (95 %)
+Area 48340007 covers (57.4365234375,-6.6796875) to (58.18359375,-6.064453125) and contains 998631 nodes (99 %)
+Area 48340008 covers (58.3154296875,-6.064453125) to (60.46875,-4.482421875) and contains 897102 nodes (89 %)
+Area 48340009 covers (57.48046875,-6.064453125) to (57.7001953125,-5.09765625) and contains 920975 nodes (92 %)
+Area 48340010 covers (57.7001953125,-6.064453125) to (58.3154296875,-5.09765625) and contains 997380 nodes (99 %)
+Area 48340011 covers (57.919921875,-5.09765625) to (58.3154296875,-4.482421875) and contains 973255 nodes (97 %)
+Area 48340012 covers (57.48046875,-5.09765625) to (57.919921875,-4.482421875) and contains 992140 nodes (99 %)
+Area 48340013 covers (57.2607421875,-6.064453125) to (57.48046875,-5.3173828125) and contains 904801 nodes (90 %)
+Area 48340014 covers (56.7333984375,-6.064453125) to (56.9970703125,-5.3173828125) and contains 933733 nodes (93 %)
+Area 48340015 covers (56.9970703125,-6.064453125) to (57.2607421875,-5.3173828125) and contains 965191 nodes (96 %)
+Area 48340016 covers (57.1728515625,-5.3173828125) to (57.48046875,-4.482421875) and contains 896616 nodes (89 %)
+Area 48340017 covers (56.7333984375,-4.8779296875) to (57.1728515625,-4.482421875) and contains 917918 nodes (91 %)
+Area 48340018 covers (56.7333984375,-5.3173828125) to (57.1728515625,-4.8779296875) and contains 994255 nodes (99 %)
+Area 48340019 covers (55.107421875,-6.064453125) to (55.4150390625,-4.482421875) and contains 886915 nodes (88 %)
+Area 48340020 covers (54.5361328125,-5.888671875) to (55.107421875,-4.482421875) and contains 919701 nodes (91 %)
+Area 48340021 covers (55.4150390625,-6.064453125) to (55.810546875,-5.2294921875) and contains 959430 nodes (95 %)
+Area 48340022 covers (55.4150390625,-4.658203125) to (55.810546875,-4.482421875) and contains 919448 nodes (91 %)
+Area 48340023 covers (55.4150390625,-5.2294921875) to (55.810546875,-4.658203125) and contains 938689 nodes (93 %)
+Area 48340024 covers (56.5576171875,-5.4931640625) to (56.7333984375,-4.482421875) and contains 891924 nodes (89 %)
+Area 48340025 covers (56.5576171875,-6.064453125) to (56.7333984375,-5.4931640625) and contains 896778 nodes (89 %)
+Area 48340026 covers (55.810546875,-4.921875) to (56.0302734375,-4.482421875) and contains 953545 nodes (95 %)
+Area 48340027 covers (56.0302734375,-4.921875) to (56.5576171875,-4.482421875) and contains 988025 nodes (98 %)
+Area 48340028 covers (56.3818359375,-6.064453125) to (56.5576171875,-4.921875) and contains 888970 nodes (88 %)
+Area 48340029 covers (55.810546875,-5.2294921875) to (56.3818359375,-4.921875) and contains 931623 nodes (93 %)
+Area 48340030 covers (55.810546875,-5.4931640625) to (56.3818359375,-5.2294921875) and contains 891011 nodes (89 %)
+Area 48340031 covers (55.810546875,-6.064453125) to (56.3818359375,-5.4931640625) and contains 896196 nodes (89 %)
+Area 48340032 covers (60.1611328125,-4.482421875) to (61.171875,0.2197265625) and contains 893599 nodes (89 %)
+Area 48340033 covers (57.48046875,-2.28515625) to (60.1611328125,0.17578125) and contains 928819 nodes (92 %)
+Area 48340034 covers (58.0517578125,-4.482421875) to (58.4033203125,-2.28515625) and contains 922356 nodes (92 %)
+Area 48340035 covers (58.4033203125,-3.2080078125) to (60.1611328125,-2.28515625) and contains 898930 nodes (89 %)
+Area 48340036 covers (58.4033203125,-4.482421875) to (60.1611328125,-3.2080078125) and contains 943984 nodes (94 %)
+Area 48340037 covers (57.48046875,-3.1640625) to (58.0517578125,-2.28515625) and contains 926179 nodes (92 %)
+Area 48340038 covers (57.7880859375,-4.482421875) to (58.0517578125,-3.1640625) and contains 914299 nodes (91 %)
+Area 48340039 covers (57.48046875,-4.482421875) to (57.7880859375,-3.9111328125) and contains 884431 nodes (88 %)
+Area 48340040 covers (57.48046875,-3.9111328125) to (57.7880859375,-3.1640625) and contains 887018 nodes (88 %)
+Area 48340041 covers (56.1181640625,-2.1533203125) to (57.48046875,-0.52734375) and contains 980740 nodes (98 %)
+Area 48340042 covers (56.1181640625,-3.251953125) to (56.2939453125,-2.1533203125) and contains 932358 nodes (93 %)
+Area 48340043 covers (56.6015625,-3.251953125) to (56.77734375,-2.1533203125) and contains 886826 nodes (88 %)
+Area 48340044 covers (56.2939453125,-2.9443359375) to (56.6015625,-2.1533203125) and contains 904964 nodes (90 %)
+Area 48340045 covers (56.2939453125,-3.251953125) to (56.6015625,-2.9443359375) and contains 916315 nodes (91 %)
+Area 48340046 covers (56.77734375,-2.5048828125) to (57.12890625,-2.1533203125) and contains 930150 nodes (93 %)
+Area 48340047 covers (57.12890625,-2.5048828125) to (57.48046875,-2.1533203125) and contains 953617 nodes (95 %)
+Area 48340048 covers (57.1728515625,-3.251953125) to (57.48046875,-2.5048828125) and contains 919619 nodes (91 %)
+Area 48340049 covers (56.77734375,-2.8564453125) to (57.1728515625,-2.5048828125) and contains 920213 nodes (92 %)
+Area 48340050 covers (56.77734375,-3.251953125) to (57.1728515625,-2.8564453125) and contains 979267 nodes (97 %)
+Area 48340051 covers (56.1181640625,-4.482421875) to (56.2939453125,-3.8671875) and contains 929612 nodes (92 %)
+Area 48340052 covers (56.1181640625,-3.8671875) to (56.2939453125,-3.251953125) and contains 992820 nodes (99 %)
+Area 48340053 covers (57.0849609375,-4.482421875) to (57.48046875,-3.955078125) and contains 981664 nodes (98 %)
+Area 48340054 covers (56.2939453125,-4.482421875) to (56.7333984375,-3.955078125) and contains 954232 nodes (95 %)
+Area 48340055 covers (56.7333984375,-4.482421875) to (57.0849609375,-3.955078125) and contains 998231 nodes (99 %)
+Area 48340056 covers (56.2939453125,-3.955078125) to (56.513671875,-3.251953125) and contains 908992 nodes (90 %)
+Area 48340057 covers (56.953125,-3.955078125) to (57.48046875,-3.603515625) and contains 944264 nodes (94 %)
+Area 48340058 covers (56.513671875,-3.955078125) to (56.953125,-3.603515625) and contains 962146 nodes (96 %)
+Area 48340059 covers (56.513671875,-3.603515625) to (56.9970703125,-3.251953125) and contains 953925 nodes (95 %)
+Area 48340060 covers (56.9970703125,-3.603515625) to (57.48046875,-3.251953125) and contains 990325 nodes (99 %)
+Area 48340061 covers (55.7666015625,-2.724609375) to (56.1181640625,-1.0986328125) and contains 968799 nodes (96 %)
+Area 48340062 covers (55.1513671875,-2.724609375) to (55.5029296875,-2.1533203125) and contains 890260 nodes (89 %)
+Area 48340063 covers (55.5029296875,-2.4609375) to (55.7666015625,-2.0654296875) and contains 927941 nodes (92 %)
+Area 48340064 covers (55.5029296875,-2.724609375) to (55.7666015625,-2.4609375) and contains 949430 nodes (94 %)
+Area 48340065 covers (54.7998046875,-3.5595703125) to (55.283203125,-2.724609375) and contains 981127 nodes (98 %)
+Area 48340066 covers (54.5361328125,-4.482421875) to (55.0634765625,-3.5595703125) and contains 932386 nodes (93 %)
+Area 48340067 covers (55.0634765625,-4.482421875) to (55.283203125,-3.5595703125) and contains 933305 nodes (93 %)
+Area 48340068 covers (55.283203125,-3.0322265625) to (55.6787109375,-2.724609375) and contains 926984 nodes (92 %)
+Area 48340069 covers (55.6787109375,-3.0322265625) to (56.1181640625,-2.724609375) and contains 937410 nodes (93 %)
+Area 48340070 covers (55.9423828125,-3.4716796875) to (56.1181640625,-3.251953125) and contains 896369 nodes (89 %)
+Area 48340071 covers (55.9423828125,-3.251953125) to (56.1181640625,-3.0322265625) and contains 922123 nodes (92 %)
+Area 48340072 covers (55.9423828125,-3.8232421875) to (56.1181640625,-3.4716796875) and contains 916309 nodes (91 %)
+Area 48340073 covers (55.9423828125,-4.482421875) to (56.1181640625,-3.8232421875) and contains 961442 nodes (96 %)
+Area 48340074 covers (55.283203125,-3.427734375) to (55.6787109375,-3.0322265625) and contains 918732 nodes (91 %)
+Area 48340075 covers (55.6787109375,-3.2080078125) to (55.9423828125,-3.0322265625) and contains 967039 nodes (96 %)
+Area 48340076 covers (55.6787109375,-3.427734375) to (55.9423828125,-3.2080078125) and contains 978477 nodes (97 %)
+Area 48340077 covers (55.283203125,-4.482421875) to (55.458984375,-3.427734375) and contains 924835 nodes (92 %)
+Area 48340078 covers (55.458984375,-4.482421875) to (55.810546875,-4.306640625) and contains 884178 nodes (88 %)
+Area 48340079 covers (55.810546875,-4.482421875) to (55.9423828125,-4.306640625) and contains 915274 nodes (91 %)
+Area 48340080 covers (55.458984375,-4.306640625) to (55.7666015625,-3.955078125) and contains 889091 nodes (88 %)
+Area 48340081 covers (55.458984375,-3.955078125) to (55.7666015625,-3.427734375) and contains 926988 nodes (92 %)
+Area 48340082 covers (55.7666015625,-4.306640625) to (55.9423828125,-4.21875) and contains 916282 nodes (91 %)
+Area 48340083 covers (55.7666015625,-4.21875) to (55.9423828125,-4.0869140625) and contains 995547 nodes (99 %)
+Area 48340084 covers (55.7666015625,-4.0869140625) to (55.9423828125,-3.8232421875) and contains 928902 nodes (92 %)
+Area 48340085 covers (55.7666015625,-3.8232421875) to (55.9423828125,-3.427734375) and contains 988023 nodes (98 %)
+One or more areas do not exactly fit into the bounding polygon
+Creating the initial areas took 1117 ms
+85 areas:
+Area 48340001: 2586624,-681984 to 2676736,-319488 covers (0x277800,0xfff59800) to (0x28d800,0xfffb2000) OpenBareMap Scotland
+Area 48340002: 2639872,-319488 to 2676736,-282624 covers (0x284800,0xfffb2000) to (0x28d800,0xfffbb000) OpenBareMap Scotland
+Area 48340003: 2574336,-319488 to 2639872,-282624 covers (0x274800,0xfffb2000) to (0x284800,0xfffbb000) OpenBareMap Scotland
+Area 48340004: 2676736,-694272 to 2785280,-329728 covers (0x28d800,0xfff56800) to (0x2a8000,0xfffaf800) OpenBareMap Scotland
+Area 48340005: 2711552,-329728 to 2799616,-282624 covers (0x296000,0xfffaf800) to (0x2ab800,0xfffbb000) OpenBareMap Scotland
+Area 48340006: 2676736,-329728 to 2711552,-311296 covers (0x28d800,0xfffaf800) to (0x296000,0xfffb4000) OpenBareMap Scotland
+Area 48340007: 2676736,-311296 to 2711552,-282624 covers (0x28d800,0xfffb4000) to (0x296000,0xfffbb000) OpenBareMap Scotland
+Area 48340008: 2717696,-282624 to 2818048,-208896 covers (0x297800,0xfffbb000) to (0x2b0000,0xfffcd000) OpenBareMap Scotland
+Area 48340009: 2678784,-282624 to 2689024,-237568 covers (0x28e000,0xfffbb000) to (0x290800,0xfffc6000) OpenBareMap Scotland
+Area 48340010: 2689024,-282624 to 2717696,-237568 covers (0x290800,0xfffbb000) to (0x297800,0xfffc6000) OpenBareMap Scotland
+Area 48340011: 2699264,-237568 to 2717696,-208896 covers (0x293000,0xfffc6000) to (0x297800,0xfffcd000) OpenBareMap Scotland
+Area 48340012: 2678784,-237568 to 2699264,-208896 covers (0x28e000,0xfffc6000) to (0x293000,0xfffcd000) OpenBareMap Scotland
+Area 48340013: 2668544,-282624 to 2678784,-247808 covers (0x28b800,0xfffbb000) to (0x28e000,0xfffc3800) OpenBareMap Scotland
+Area 48340014: 2643968,-282624 to 2656256,-247808 covers (0x285800,0xfffbb000) to (0x288800,0xfffc3800) OpenBareMap Scotland
+Area 48340015: 2656256,-282624 to 2668544,-247808 covers (0x288800,0xfffbb000) to (0x28b800,0xfffc3800) OpenBareMap Scotland
+Area 48340016: 2664448,-247808 to 2678784,-208896 covers (0x28a800,0xfffc3800) to (0x28e000,0xfffcd000) OpenBareMap Scotland
+Area 48340017: 2643968,-227328 to 2664448,-208896 covers (0x285800,0xfffc8800) to (0x28a800,0xfffcd000) OpenBareMap Scotland
+Area 48340018: 2643968,-247808 to 2664448,-227328 covers (0x285800,0xfffc3800) to (0x28a800,0xfffc8800) OpenBareMap Scotland
+Area 48340019: 2568192,-282624 to 2582528,-208896 covers (0x273000,0xfffbb000) to (0x276800,0xfffcd000) OpenBareMap Scotland
+Area 48340020: 2541568,-274432 to 2568192,-208896 covers (0x26c800,0xfffbd000) to (0x273000,0xfffcd000) OpenBareMap Scotland
+Area 48340021: 2582528,-282624 to 2600960,-243712 covers (0x276800,0xfffbb000) to (0x27b000,0xfffc4800) OpenBareMap Scotland
+Area 48340022: 2582528,-217088 to 2600960,-208896 covers (0x276800,0xfffcb000) to (0x27b000,0xfffcd000) OpenBareMap Scotland
+Area 48340023: 2582528,-243712 to 2600960,-217088 covers (0x276800,0xfffc4800) to (0x27b000,0xfffcb000) OpenBareMap Scotland
+Area 48340024: 2635776,-256000 to 2643968,-208896 covers (0x283800,0xfffc1800) to (0x285800,0xfffcd000) OpenBareMap Scotland
+Area 48340025: 2635776,-282624 to 2643968,-256000 covers (0x283800,0xfffbb000) to (0x285800,0xfffc1800) OpenBareMap Scotland
+Area 48340026: 2600960,-229376 to 2611200,-208896 covers (0x27b000,0xfffc8000) to (0x27d800,0xfffcd000) OpenBareMap Scotland
+Area 48340027: 2611200,-229376 to 2635776,-208896 covers (0x27d800,0xfffc8000) to (0x283800,0xfffcd000) OpenBareMap Scotland
+Area 48340028: 2627584,-282624 to 2635776,-229376 covers (0x281800,0xfffbb000) to (0x283800,0xfffc8000) OpenBareMap Scotland
+Area 48340029: 2600960,-243712 to 2627584,-229376 covers (0x27b000,0xfffc4800) to (0x281800,0xfffc8000) OpenBareMap Scotland
+Area 48340030: 2600960,-256000 to 2627584,-243712 covers (0x27b000,0xfffc1800) to (0x281800,0xfffc4800) OpenBareMap Scotland
+Area 48340031: 2600960,-282624 to 2627584,-256000 covers (0x27b000,0xfffbb000) to (0x281800,0xfffc1800) OpenBareMap Scotland
+Area 48340032: 2803712,-208896 to 2850816,10240 covers (0x2ac800,0xfffcd000) to (0x2b8000,0x2800) OpenBareMap Scotland
+Area 48340033: 2678784,-106496 to 2803712,8192 covers (0x28e000,0xfffe6000) to (0x2ac800,0x2000) OpenBareMap Scotland
+Area 48340034: 2705408,-208896 to 2721792,-106496 covers (0x294800,0xfffcd000) to (0x298800,0xfffe6000) OpenBareMap Scotland
+Area 48340035: 2721792,-149504 to 2803712,-106496 covers (0x298800,0xfffdb800) to (0x2ac800,0xfffe6000) OpenBareMap Scotland
+Area 48340036: 2721792,-208896 to 2803712,-149504 covers (0x298800,0xfffcd000) to (0x2ac800,0xfffdb800) OpenBareMap Scotland
+Area 48340037: 2678784,-147456 to 2705408,-106496 covers (0x28e000,0xfffdc000) to (0x294800,0xfffe6000) OpenBareMap Scotland
+Area 48340038: 2693120,-208896 to 2705408,-147456 covers (0x291800,0xfffcd000) to (0x294800,0xfffdc000) OpenBareMap Scotland
+Area 48340039: 2678784,-208896 to 2693120,-182272 covers (0x28e000,0xfffcd000) to (0x291800,0xfffd3800) OpenBareMap Scotland
+Area 48340040: 2678784,-182272 to 2693120,-147456 covers (0x28e000,0xfffd3800) to (0x291800,0xfffdc000) OpenBareMap Scotland
+Area 48340041: 2615296,-100352 to 2678784,-24576 covers (0x27e800,0xfffe7800) to (0x28e000,0xffffa000) OpenBareMap Scotland
+Area 48340042: 2615296,-151552 to 2623488,-100352 covers (0x27e800,0xfffdb000) to (0x280800,0xfffe7800) OpenBareMap Scotland
+Area 48340043: 2637824,-151552 to 2646016,-100352 covers (0x284000,0xfffdb000) to (0x286000,0xfffe7800) OpenBareMap Scotland
+Area 48340044: 2623488,-137216 to 2637824,-100352 covers (0x280800,0xfffde800) to (0x284000,0xfffe7800) OpenBareMap Scotland
+Area 48340045: 2623488,-151552 to 2637824,-137216 covers (0x280800,0xfffdb000) to (0x284000,0xfffde800) OpenBareMap Scotland
+Area 48340046: 2646016,-116736 to 2662400,-100352 covers (0x286000,0xfffe3800) to (0x28a000,0xfffe7800) OpenBareMap Scotland
+Area 48340047: 2662400,-116736 to 2678784,-100352 covers (0x28a000,0xfffe3800) to (0x28e000,0xfffe7800) OpenBareMap Scotland
+Area 48340048: 2664448,-151552 to 2678784,-116736 covers (0x28a800,0xfffdb000) to (0x28e000,0xfffe3800) OpenBareMap Scotland
+Area 48340049: 2646016,-133120 to 2664448,-116736 covers (0x286000,0xfffdf800) to (0x28a800,0xfffe3800) OpenBareMap Scotland
+Area 48340050: 2646016,-151552 to 2664448,-133120 covers (0x286000,0xfffdb000) to (0x28a800,0xfffdf800) OpenBareMap Scotland
+Area 48340051: 2615296,-208896 to 2623488,-180224 covers (0x27e800,0xfffcd000) to (0x280800,0xfffd4000) OpenBareMap Scotland
+Area 48340052: 2615296,-180224 to 2623488,-151552 covers (0x27e800,0xfffd4000) to (0x280800,0xfffdb000) OpenBareMap Scotland
+Area 48340053: 2660352,-208896 to 2678784,-184320 covers (0x289800,0xfffcd000) to (0x28e000,0xfffd3000) OpenBareMap Scotland
+Area 48340054: 2623488,-208896 to 2643968,-184320 covers (0x280800,0xfffcd000) to (0x285800,0xfffd3000) OpenBareMap Scotland
+Area 48340055: 2643968,-208896 to 2660352,-184320 covers (0x285800,0xfffcd000) to (0x289800,0xfffd3000) OpenBareMap Scotland
+Area 48340056: 2623488,-184320 to 2633728,-151552 covers (0x280800,0xfffd3000) to (0x283000,0xfffdb000) OpenBareMap Scotland
+Area 48340057: 2654208,-184320 to 2678784,-167936 covers (0x288000,0xfffd3000) to (0x28e000,0xfffd7000) OpenBareMap Scotland
+Area 48340058: 2633728,-184320 to 2654208,-167936 covers (0x283000,0xfffd3000) to (0x288000,0xfffd7000) OpenBareMap Scotland
+Area 48340059: 2633728,-167936 to 2656256,-151552 covers (0x283000,0xfffd7000) to (0x288800,0xfffdb000) OpenBareMap Scotland
+Area 48340060: 2656256,-167936 to 2678784,-151552 covers (0x288800,0xfffd7000) to (0x28e000,0xfffdb000) OpenBareMap Scotland
+Area 48340061: 2598912,-126976 to 2615296,-51200 covers (0x27a800,0xfffe1000) to (0x27e800,0xffff3800) OpenBareMap Scotland
+Area 48340062: 2570240,-126976 to 2586624,-100352 covers (0x273800,0xfffe1000) to (0x277800,0xfffe7800) OpenBareMap Scotland
+Area 48340063: 2586624,-114688 to 2598912,-96256 covers (0x277800,0xfffe4000) to (0x27a800,0xfffe8800) OpenBareMap Scotland
+Area 48340064: 2586624,-126976 to 2598912,-114688 covers (0x277800,0xfffe1000) to (0x27a800,0xfffe4000) OpenBareMap Scotland
+Area 48340065: 2553856,-165888 to 2576384,-126976 covers (0x26f800,0xfffd7800) to (0x275000,0xfffe1000) OpenBareMap Scotland
+Area 48340066: 2541568,-208896 to 2566144,-165888 covers (0x26c800,0xfffcd000) to (0x272800,0xfffd7800) OpenBareMap Scotland
+Area 48340067: 2566144,-208896 to 2576384,-165888 covers (0x272800,0xfffcd000) to (0x275000,0xfffd7800) OpenBareMap Scotland
+Area 48340068: 2576384,-141312 to 2594816,-126976 covers (0x275000,0xfffdd800) to (0x279800,0xfffe1000) OpenBareMap Scotland
+Area 48340069: 2594816,-141312 to 2615296,-126976 covers (0x279800,0xfffdd800) to (0x27e800,0xfffe1000) OpenBareMap Scotland
+Area 48340070: 2607104,-161792 to 2615296,-151552 covers (0x27c800,0xfffd8800) to (0x27e800,0xfffdb000) OpenBareMap Scotland
+Area 48340071: 2607104,-151552 to 2615296,-141312 covers (0x27c800,0xfffdb000) to (0x27e800,0xfffdd800) OpenBareMap Scotland
+Area 48340072: 2607104,-178176 to 2615296,-161792 covers (0x27c800,0xfffd4800) to (0x27e800,0xfffd8800) OpenBareMap Scotland
+Area 48340073: 2607104,-208896 to 2615296,-178176 covers (0x27c800,0xfffcd000) to (0x27e800,0xfffd4800) OpenBareMap Scotland
+Area 48340074: 2576384,-159744 to 2594816,-141312 covers (0x275000,0xfffd9000) to (0x279800,0xfffdd800) OpenBareMap Scotland
+Area 48340075: 2594816,-149504 to 2607104,-141312 covers (0x279800,0xfffdb800) to (0x27c800,0xfffdd800) OpenBareMap Scotland
+Area 48340076: 2594816,-159744 to 2607104,-149504 covers (0x279800,0xfffd9000) to (0x27c800,0xfffdb800) OpenBareMap Scotland
+Area 48340077: 2576384,-208896 to 2584576,-159744 covers (0x275000,0xfffcd000) to (0x277000,0xfffd9000) OpenBareMap Scotland
+Area 48340078: 2584576,-208896 to 2600960,-200704 covers (0x277000,0xfffcd000) to (0x27b000,0xfffcf000) OpenBareMap Scotland
+Area 48340079: 2600960,-208896 to 2607104,-200704 covers (0x27b000,0xfffcd000) to (0x27c800,0xfffcf000) OpenBareMap Scotland
+Area 48340080: 2584576,-200704 to 2598912,-184320 covers (0x277000,0xfffcf000) to (0x27a800,0xfffd3000) OpenBareMap Scotland
+Area 48340081: 2584576,-184320 to 2598912,-159744 covers (0x277000,0xfffd3000) to (0x27a800,0xfffd9000) OpenBareMap Scotland
+Area 48340082: 2598912,-200704 to 2607104,-196608 covers (0x27a800,0xfffcf000) to (0x27c800,0xfffd0000) OpenBareMap Scotland
+Area 48340083: 2598912,-196608 to 2607104,-190464 covers (0x27a800,0xfffd0000) to (0x27c800,0xfffd1800) OpenBareMap Scotland
+Area 48340084: 2598912,-190464 to 2607104,-178176 covers (0x27a800,0xfffd1800) to (0x27c800,0xfffd4800) OpenBareMap Scotland
+Area 48340085: 2598912,-178176 to 2607104,-159744 covers (0x27a800,0xfffd4800) to (0x27c800,0xfffd9000) OpenBareMap Scotland
+Generating problem list for 85 distinct areas
+Processing 85 areas in a single pass
+Pseudo areas:
+Pseudo area -86 covers (61.171875,-180.0) to (90.0,180.0)
+Pseudo area -87 covers (-90.0,-180.0) to (54.5361328125,180.0)
+Pseudo area -88 covers (54.5361328125,-180.0) to (61.171875,-14.8974609375)
+Pseudo area -89 covers (54.5361328125,-14.8974609375) to (57.4365234375,-14.6337890625)
+Pseudo area -90 covers (59.765625,-14.8974609375) to (61.171875,-7.0751953125)
+Pseudo area -91 covers (54.5361328125,-14.6337890625) to (55.5029296875,-6.85546875)
+Pseudo area -92 covers (60.0732421875,-7.0751953125) to (61.171875,-6.064453125)
+Pseudo area -93 covers (54.5361328125,-6.85546875) to (55.2392578125,-6.064453125)
+Pseudo area -94 covers (54.5361328125,-6.064453125) to (55.107421875,-5.888671875)
+Pseudo area -95 covers (60.46875,-6.064453125) to (61.171875,-4.482421875)
+Pseudo area -96 covers (54.5361328125,-3.5595703125) to (54.7998046875,-2.724609375)
+Pseudo area -97 covers (54.5361328125,-2.724609375) to (55.1513671875,-2.1533203125)
+Pseudo area -98 covers (54.5361328125,-2.1533203125) to (55.5029296875,-2.0654296875)
+Pseudo area -99 covers (54.5361328125,-2.0654296875) to (55.7666015625,-1.0986328125)
+Pseudo area -100 covers (54.5361328125,-1.0986328125) to (56.1181640625,-0.52734375)
+Pseudo area -101 covers (54.5361328125,-0.52734375) to (57.48046875,0.17578125)
+Pseudo area -102 covers (54.5361328125,0.17578125) to (60.1611328125,0.2197265625)
+Pseudo area -103 covers (54.5361328125,0.2197265625) to (61.171875,180.0)
+cached 111 combinations of areas that form rectangles.
+AreaGridTree [512][512] for grid area (-90.0,-180.0) to (90.0,180.0) requires max. 9 checks for each node (0 sub grid(s))
+Starting problem-list-generator pass(es)
+-----------------------------------
+Starting problem-list-generator pass 1 of 1
+way Map: uses SparseLong2IntMap
+coord Map: uses SparseLong2IntMap
+Processing /var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/combined.osm.pbf
+Bounding box -14.861554000000002 54.54001 0.731931 61.351310000000005
+10,000,000 nodes parsed... id=3099204225
+coord MAP occupancy: 10,000,000, number of area dictionary entries: 405
+20,000,000 nodes parsed... id=8155594115
+coord MAP occupancy: 20,000,000, number of area dictionary entries: 430
+30,000,000 nodes parsed... id=11067647953
+coord MAP occupancy: 30,000,000, number of area dictionary entries: 441
+40,000,000 nodes parsed... id=13691874990
+coord MAP occupancy: 40,000,000, number of area dictionary entries: 443
+50,000,000 nodes parsed... id=30008100302
+coord MAP occupancy: 50,000,000, number of area dictionary entries: 447
+60,000,000 nodes parsed... id=30018100302
+coord MAP occupancy: 60,000,000, number of area dictionary entries: 458
+70,000,000 nodes parsed... id=30028100302
+coord MAP occupancy: 70,000,000, number of area dictionary entries: 467
+80,000,000 nodes parsed... id=30038100302
+coord MAP occupancy: 80,000,000, number of area dictionary entries: 468
+1,000,000 ways parsed... id=371155640
+2,000,000 ways parsed... id=851508764
+3,000,000 ways parsed... id=1118851989
+4,000,000 ways parsed... id=1357717438
+5,000,000 ways parsed... id=30000372040
+Processing /var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/combined.osm.pbf
+Bounding box -14.861554000000002 54.54001 0.731931 61.351310000000005
+100,000 relations parsed... id=30000069465
+200,000 relations parsed... id=30000169465
+300,000 relations parsed... id=30000269465
+400,000 relations parsed... id=30000369465
+coord Map: 87,671,763 stored long/int pairs require ca. 11 bytes per pair. 2,268,537 chunks are used, the avg. number of values in one 64-chunk is 38.
+coord Map details: ~887 MB, including 108 array(s) with 8 MB
+
+way Map: 5,246,058 stored long/int pairs require ca. 22 bytes per pair. 484,844 chunks are used, the avg. number of values in one 64-chunk is 10.
+way Map details: ~109 MB, including 13 array(s) with 8 MB
+
+
+  Number of stored area combis for nodes: 87,671,763
+  Number of stored area combis for ways: 5,246,058
+  Number of stored Integers for rels: 0
+  Number of stored combis in dictionary: 812
+  Number of detected problem ways: 44,760
+  Number of detected problem rels: 7,954
+  JVM Memory Info: Current 2632MB (1838MB used, 794MB free) Max 6144MB
+
+Problem-list-generator pass 1 took 8564 ms
+Problem-list-generator pass(es) took 8599 ms
+cached 88 combinations of areas that form rectangles.
+AreaGridTree [512][512] for grid area (54.5361328125,-14.8974609375) to (61.171875,0.2197265625) requires max. 4 checks for each node (0 sub grid(s))
+-----------------------------------
+Executing multi-tile analyses phase 1
+Processing /var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/combined.osm.pbf
+Bounding box -14.861554000000002 54.54001 0.731931 61.351310000000005
+100,000 relations parsed... id=30000069465
+200,000 relations parsed... id=30000169465
+300,000 relations parsed... id=30000269465
+400,000 relations parsed... id=30000369465
+Stats for MultiTileProcessor pass 1
+  SparseBitSet problemRels contains now 7,954 Ids.
+  SparseBitSet neededWays contains now 44,760 Ids.
+  SparseBitSet mpWays contains now 0 Ids.
+  SparseBitSet neededNodes contains now 0 Ids.
+  Number of stored relations: 474,203
+  Number of stored tile combinations in multiTileDictionary: 456
+Status: Finished collecting relations.
+  JVM Memory Info: Current 2632MB (1847MB used, 785MB free) Max 6144MB
+starting to resolve relations containing problem relations ...
+Finished adding members of problem relations to problem lists.
+Stats for MultiTileProcessor pass 1
+  SparseBitSet neededWays contains now 72,501 Ids.
+  SparseBitSet mpWays contains now 36,528 Ids.
+  SparseBitSet neededNodes contains now 244 Ids.
+  Number of stored relations: 7,975
+  Number of stored tile combinations in multiTileDictionary: 456
+Status: starting to collect ids of needed way nodes ...
+Multi-tile analyses phase 1 took 310 ms
+-----------------------------------
+Executing multi-tile analyses phase 2
+Processing /var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/combined.osm.pbf
+Bounding box -14.861554000000002 54.54001 0.731931 61.351310000000005
+1,000,000 ways parsed... id=371155640
+2,000,000 ways parsed... id=851508764
+3,000,000 ways parsed... id=1118851989
+4,000,000 ways parsed... id=1357717438
+5,000,000 ways parsed... id=30000372040
+Stats for MultiTileProcessor pass 2
+  SparseBitSet neededWays contains now 72,501 Ids.
+  SparseBitSet mpWays contains now 6,910 Ids.
+  SparseBitSet neededNodes contains now 13,900,484 Ids.
+  Number of stored relations: 7,975
+  Number of stored tile combinations in multiTileDictionary: 456
+Status: Finished collecting problem ways.
+Found 65,591 of 72,501 needed ways.
+Found 29,618 of 36,528 needed multipolygon ways.
+Stats for MultiTileProcessor pass 2
+  SparseBitSet neededWays contains now 72,501 Ids.
+  SparseBitSet mpWays contains now 6,910 Ids.
+  SparseBitSet neededNodes contains now 13,900,484 Ids.
+  Number of stored relations: 7,975
+  Number of stored tile combinations in multiTileDictionary: 456
+Status: Starting to collect coordinates for 13,900,484 needed nodes.
+  JVM Memory Info: Current 432MB (223MB used, 209MB free) Max 6144MB
+Multi-tile analyses phase 2 took 2137 ms
+-----------------------------------
+Executing multi-tile analyses phase 3
+Processing /var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/combined.osm.pbf
+Bounding box -14.861554000000002 54.54001 0.731931 61.351310000000005
+10,000,000 nodes parsed... id=3099204225
+20,000,000 nodes parsed... id=8155594115
+30,000,000 nodes parsed... id=11067647953
+40,000,000 nodes parsed... id=13691874990
+50,000,000 nodes parsed... id=30008100302
+60,000,000 nodes parsed... id=30018100302
+70,000,000 nodes parsed... id=30028100302
+80,000,000 nodes parsed... id=30038100302
+1,000,000 ways parsed... id=371155640
+2,000,000 ways parsed... id=851508764
+3,000,000 ways parsed... id=1118851989
+4,000,000 ways parsed... id=1357717438
+5,000,000 ways parsed... id=30000372040
+Found 13,900,470 of 13,900,484 needed nodes.
+  JVM Memory Info: Current 760MB (395MB used, 365MB free) Max 6144MB
+Calculating tiles for problem relations...
+Warning: Incomplete multipolygon relation 62273 (Ireland): using bbox of unclosed polygon to calc tiles, ways: [1225520900]
+Warning: Incomplete multipolygon relation 88065 (Cumbria): using bbox of unclosed polygon to calc tiles, ways: [232928850]
+Warning: Incomplete multipolygon relation 88065 (Cumbria): using bbox of unclosed polygon to calc tiles, ways: [232929524, 232929523]
+Warning: Incomplete multipolygon relation 88065 (Cumbria): using bbox of unclosed polygon to calc tiles, ways: [632468568, 1268767661, 599479103, 599479105, 599479100, 599479101, 599479104, 369520845, 599588919, 599588996, 599966516, 10377127]
+Warning: Incomplete multipolygon relation 88066 (Northumberland): using bbox of unclosed polygon to calc tiles, ways: [10377127, 632475941, 606154081, 147078911, 179086121, 606164991, 606167215, 606167220, 606260385, 606265926, 606451347, 606453820, 606457551, 606457552, 1327181462, 606463075]
+Warning: Incomplete multipolygon relation 88066 (Northumberland): using bbox of unclosed polygon to calc tiles, ways: [142982510, 141730497, 229560142]
+Warning: Incomplete multipolygon relation 151164 (North East England): using bbox of unclosed polygon to calc tiles, ways: [10377127, 632475941, 606154081, 147078911, 179086121, 606164991, 606167215, 606167220, 606260385, 606265926, 606451347, 606453820, 606457551, 606457552, 1327181462, 606463075]
+Warning: Incomplete multipolygon relation 151164 (North East England): using bbox of unclosed polygon to calc tiles, ways: [142982510, 141730497, 229560142]
+Warning: Incomplete multipolygon relation 151261 (North West England): using bbox of unclosed polygon to calc tiles, ways: [10377127, 599966516, 599588996, 599588919, 369520845, 599479104, 599479101, 599479100, 599479105, 599479103, 632468568, 1268767661]
+Warning: Incomplete multipolygon relation 151261 (North West England): using bbox of unclosed polygon to calc tiles, ways: [232929523, 232929524]
+Warning: Incomplete multipolygon relation 151261 (North West England): using bbox of unclosed polygon to calc tiles, ways: [232928850]
+Warning: Incomplete multipolygon relation 156393 (Northern Ireland / Tuaisceart Éireann): using bbox of unclosed polygon to calc tiles, ways: [76169009]
+Warning: Incomplete multipolygon relation 182118 (Carlisle): using bbox of unclosed polygon to calc tiles, ways: [599966516, 599588996, 10377127, 599588919, 369520845, 599479104, 599479101, 599479100, 599479105, 599479103, 632468568, 1268767661]
+Warning: Incomplete multipolygon relation 182118 (Carlisle): using bbox of unclosed polygon to calc tiles, ways: [232929524, 232929523]
+Warning: Incomplete multipolygon relation 1168821 (Northumberland National Park): using bbox of unclosed polygon to calc tiles, ways: [606167215, 606167220, 606164991, 147077888, 179086121, 498592677, 4088839, 76705384]
+Warning: Incomplete multipolygon relation 1877232 (Dumfries and Galloway): using bbox of unclosed polygon to calc tiles, ways: [1058263303, 1058263302, 1058263305, 1058263304, 1058263306, 1058263307, 1058261659, 139312630, 694591952, 212488385, 212488379, 139314201, 139313036, 694591953, 139314363, 139311863, 139312360, 694591985, 232928850, 141800237, 694591962, 139313461, 694591961, 141750096, 1267914877, 1267914875, 369520845, 599479104, 599479101, 599479100, 599479105, 599479103, 632468568, 1268767661]
+Warning: Incomplete multipolygon relation 1877232 (Dumfries and Galloway): using bbox of unclosed polygon to calc tiles, ways: [232929524, 232929523]
+Warning: Incomplete multipolygon relation 1919950 (Scottish Borders): using bbox of unclosed polygon to calc tiles, ways: [658408004, 658407999, 658408006, 658408005, 658408007, 141730507, 141730497, 142982510, 141730510, 141730505, 141730508, 141730495, 141752061, 141730509, 694591961, 141750096, 1267914877, 1267914875, 599588919, 599588996, 599966516, 632475941, 606154081, 147078911, 179086121, 606164991, 606167215, 606167220, 606260385, 606265926, 606451347, 606453820, 606457551, 606457552, 1327181462, 606463075]
+Warning: Incomplete multipolygon relation 4121287 (Exclusive Economic Zone of Ireland): using bbox of unclosed polygon to calc tiles, ways: [1091091200, 1091091197, 1091091198, 770779515, 1225520900]
+Warning: Incomplete multipolygon relation 6038068 (Great Britain): using bbox of unclosed polygon to calc tiles, ways: [223606684, 1562734488, 1562734464, 1562734485, 1562734466, 223606715, 1562734487, 223606721, 84939994, 3497196, 3497189, 723873040, 3497167, 54639439, 3497126, 3497037, 3497033, 3497032, 3497031, 3497030, 3497028, 995905198, 3497026, 3497024, 723876149, 1481983263, 1481983262, 931585183, 3496987, 3496952, 3496910, 3494637, 172214950, 958826060, 3494607, 931585185, 3494604, 3494574, 3494570, 3494353, 3494352, 3494350, 661448076, 3494346, 931601342, 723883751, 3494339, 931601341, 931580299, 3494338, 3494325, 3494310, 3494527, 182241964, 3494517, 3494504, 3494502, 3494501, 724091430, 3494484, 3494456, 862481794, 3494455, 959727891, 3494453, 3494168, 3494167, 931580297, 3494161, 3494110, 862488519, 3494092, 931580295, 959727814, 959727813, 3493992, 3494171, 3494170, 3494198, 3494197, 3494187, 3494185, 931580296, 931580293, 3494183, 3494180, 724450316, 959727800, 3494178, 48503451, 3494173, 3494235, 3494223, 3494206, 3493981, 3493980, 931580292, 3493977, 3493975, 3493968, 3493945, 958798772, 724450910, 3493927, 958798749, 3494447, 958798751, 3494436, 958798754, 3494430, 3494407, 3494307, 3494303, 958798771, 958785757, 958785760, 958788595, 724621222, 3494284, 958791753, 958791757, 958791752, 958791755, 3493888, 3493878, 3493845, 3493460, 3619513, 724622426, 959727752, 169069254, 3619415, 3619327, 3619256, 661448081, 931587998, 3619254, 958894747, 959727854, 3619107, 3619094, 3619066, 3619036, 3619035, 958894757, 958894760, 3619034, 958894758, 958894750, 985087756, 3619030, 3619029, 931587995, 895648046, 895651353, 56645705, 396681214, 56672355, 56445142, 895648047, 56445178, 56445140, 56445141, 200398190, 200398191, 200396359, 200396360, 56445096, 3619007, 200395175, 959700063, 959700066, 959700068, 3618921, 931992883, 996120580, 3618851, 931992885, 3618726, 3618662, 3618660, 3618658, 3618732, 3618657, 3618656, 48503380, 48503382, 3618655, 934027444, 3618654, 3618637, 3618618, 3618452, 3618829, 17505031, 3618823, 507746503, 3618813, 302608245, 507746504, 894675256, 507746502, 3618809, 3618807, 3618804, 3618800, 3618774, 3618394, 3618386, 3618352, 3618324, 894671651, 3618294, 931989442, 931989443, 931989440, 3618271, 931989439, 931989445, 3618230, 931989444, 3618227, 3618226, 931989450, 3618225, 931989451, 931989454, 894671652, 3618221, 3618205, 931989452, 3618002, 3618000, 3617994, 943315892, 3617988, 48856293, 3617985, 3617952, 3617703, 1003999631, 3617702, 943319594, 3617695, 931953865, 3617661, 3617658, 48345252, 48345257, 48361889, 931953874, 48345876, 931953873, 931953876, 3617715, 3617589, 960845714, 3617586, 959505654, 959505655, 3617543, 931953871, 48609698, 48614438, 3617489, 931953866, 3617487, 931953868, 960850118, 1498440790, 3617465, 931953869, 3617462, 48424291, 3617461, 931953863, 959456540, 1498440789, 959456542, 48628985, 3617445, 1496295016, 1496295015, 1496295014, 1496295013, 3617443, 931991391, 931991392, 3617442, 48856101, 303013169, 53237961, 932648701, 3617006, 958904566, 3616968, 3616941, 3616922, 3614303, 3614300, 143629138, 827900094, 144426752, 143629146, 145316709, 3614158, 3614129, 3614000, 3615898, 827900095, 3615896, 931954852, 3615895, 3615880, 3615846, 3615796, 3615146, 3615145, 931954853, 958811630, 1535587829, 959802352, 1535587823, 20825062, 3615081, 1017673533, 1017673532, 958811628, 959802353, 3617333, 3617309, 1535587816, 3617282, 1535587817, 932639906, 3617250, 171926895, 97887900, 530787309, 3617208, 3617163, 3617128, 3617100, 3617069, 3615317, 931955393, 3615314, 3615310, 3615309, 932600236, 3615292, 3615289, 958811625, 958811631, 3615274, 3617430, 48546046, 3617428, 3617424, 931956095, 958811626, 3617391, 3617387, 3617383, 3617378, 3617377, 3617339, 931956099, 932097666, 3616218, 931956097, 3616207, 958820651, 3616135, 3616072, 146534903, 958820656, 3616022, 3615941, 3615646, 3615641, 3615593, 932037589, 3615530, 3615496, 3615472, 3615440, 3615263, 3615252, 3615208, 932010838, 3615168, 959700076, 1304245134, 3615149, 1304245132, 3615148, 3615003, 3614997, 3614957, 47392427, 3614921, 924522474, 3614857, 3614428, 3614358, 3614341, 924469732, 3614329, 609926238, 3613950, 924467639, 3613933, 520357713, 520357707, 3613876, 3613870, 3613848, 3613844, 3613819, 3613794, 924465996, 3613764, 3613724, 843918945, 3613716, 4004425, 4004424, 145796816, 4004423, 843918944, 4004422, 4004421, 4004420, 846079581, 4004419, 3617059, 3617058, 846247900, 3617052, 1116086845, 1116086846, 1116086847, 1117092996, 1117099357, 1117099356, 1117099360, 1117099359, 1117099362, 1116768759, 1117099364, 1117099363, 1117099366, 1117099365, 1117099368, 1117099367, 1117099371, 1117099370, 1117099374, 1117099373, 1116770656, 1116774643, 1116781794, 1116882223, 1117088276, 49953982, 49953983, 3488746, 897693568, 778113956, 3488719, 3489196, 3489187, 3489153, 49930131, 3488899, 3488868, 50658196, 778113954, 778113953, 50658152, 50658178, 3488851, 3488825, 3488805, 3489071, 3489034, 4004182, 4004193, 4004191, 4004190, 4004189, 4004188, 4004187, 4004215, 897682353, 141147526, 778113949, 147634868, 897682346, 897682349, 678103128, 678103129, 147684374, 190017392, 190017391, 156912997, 327695690, 327695689, 147732658, 778113945, 824565906, 778113951, 147739335, 204989419, 147684346, 152082503, 209276728, 897074974, 1307773333, 1307773334, 897074978, 236298647, 898525316, 236298649, 145041436, 778113947, 824565905, 145041434, 675814310, 675814308, 675814315, 675814314, 1156291656, 1156291655, 1156291654, 3491991, 666699754, 1058583928, 1058583927, 666699696, 1058583934, 1058583933, 1169909143, 1169909141, 1169909142, 1169909140, 4004246, 1446271866, 1446271867, 4004207, 59536926, 106768502, 77508473, 59536916, 4004204, 4004224, 4004223, 517314482, 65262778, 51097833, 517318660, 51097881, 733106092, 517318659, 51097795, 99166717, 4004221, 3473804, 3473802, 30662818, 1134125830, 22561180, 1145357012, 1134125829, 22561179, 98712222, 98708414, 3473760, 142113616, 3473754, 3473688, 577819807, 576078670, 3473624, 123485303, 3473612, 123485304, 3473579, 98860216, 98855755, 98855752, 605881152, 100787893, 89727659, 239452903, 89868548, 89724842, 4015488, 89725583, 888389464, 888389461, 255926735, 4015489, 888457892, 246330803, 239456381, 4015491, 99316092, 99322659, 318827698, 318827697, 318827700, 889539003, 98865207, 201542445, 201542439, 201542441, 201542442, 746439140, 746439141, 4015753, 1017693979, 746439139, 4015754, 322711466, 322840102, 322708129, 889591219, 115715645, 363962724, 67657358, 363962720, 217560652, 217560651, 534239086, 534238332, 43158375, 4015758, 122511914, 80237181, 80237199, 122421755, 4015759, 183991660, 1007781907, 105133446, 79741471, 57016091, 205229683, 57016109, 949102149, 618972934, 1054175312, 622109709, 128912761, 17213635, 905199801, 905199797, 905199800, 905199796, 905199798, 905197414, 3473942, 949094544, 3473844, 3473920, 3473918, 3473895, 3468554, 3468552, 513869998, 317425214, 3468525, 231750452, 3468509, 231748504, 3468695, 231748502, 3468693, 3468690, 3468685, 881761335, 881761334, 882577408, 3468659, 881761333, 513657492, 513657489, 3468564, 513657496, 3468778, 3468763, 3468741, 621842456, 671822611, 3468736, 3468732, 3468716, 3468864, 70528118, 69922027, 3468855, 3468851, 3468847, 517307923, 517307922, 3468828, 3468966, 517307928, 3468965, 353946743, 3468932, 3468897, 3468894, 517307929, 933245259, 517307924, 517499712, 517499710, 517499711, 517500729, 357758202, 517500731, 357758203, 517500732, 356853525, 517500734, 517499709, 3468981, 23860236, 3466457, 164708305, 3466432, 3466629, 3466591, 933245256, 3466975, 55681572, 4967529, 3466914, 3466904, 3466868, 3467018, 3466983, 3466670, 682021472, 7657992, 7657985, 7657996, 7657997, 7657995, 876271647, 933245255, 876271646, 876271649, 876271648, 933245258, 3469115, 1412493365, 3469087, 1380692194, 3469081, 24149519, 24149520, 3469070, 3469169, 3469167, 1378710584, 516112792, 516112789, 516112785, 3469165, 516112788, 3469158, 516112784, 888763489, 609618951, 636012442, 636012444, 3469193, 554968011, 554968012, 618636016, 35313011, 3469179, 3469174, 915041293, 549925399, 549925400, 3469264, 513866252, 3469250, 656359272, 656359273, 740824531, 3469291, 740824530, 3469287, 3469283, 3467079, 3467051, 3467767, 3467756, 389451306, 80239014, 3467719, 3467685, 3467657, 3467632, 3468303, 782859932, 782859930, 95085618, 3468283, 3468261, 625136225, 621811903, 3468240, 3468224, 3468305, 3468210, 102542509, 3468205, 3468201, 327535666, 3468195, 3468122, 3468107, 3468095, 3468083, 3467295, 3467271, 3467239, 102549520, 3467156, 102549519, 103212477, 3467130, 3467124, 3467108, 3467091, 3467629, 3467628, 738262766, 3467350, 3467788, 3468190, 3468176, 3468164, 55670906, 3468158, 3468155, 3468151, 3120024, 3120064, 25844033, 3120048, 3120084, 3120132, 3468307, 4626716, 3120109, 55603048, 3120314, 177067866, 3120309, 121113631, 121113622, 218079018, 121113657, 121113624, 177067868, 759886044, 218079019, 121113618, 121113607, 121113653, 3120283, 218079186, 177067820, 218079189, 177067821, 759886045, 58460086, 101538424, 101538422, 4626810, 100141367, 177067773, 925271362, 100141370, 100141368, 763993881, 763993879, 763993878, 3120182, 177068805, 176798831, 3120326, 28182176, 65482609, 3101277, 937256429, 3469306, 3469448, 3469447, 445469591, 3469443, 1186521530, 1186521529, 1186521528, 1186521527, 3469395, 3469381, 3469341, 97178447, 982950603, 977535148, 4643373, 94516890, 116514244, 94516879, 116514246, 210860087, 116514250, 143029768, 143029755, 273909804, 763470234, 763470233, 763470231, 763470236, 763470232, 763465487, 763465488, 763465481, 763465486, 763465485, 763465484, 763465483, 763465482, 763465480, 763462777, 763462782, 763462779, 763462783, 763462780, 763462781, 763457694, 763457696, 763457693, 763457695, 932006089, 932006078, 932006080, 932006081, 932006004, 932006087, 932006086, 763457692, 229560140, 84940018, 84940014, 84939863, 84939672, 84939687, 84939587, 84939343, 31049327, 54638909, 54638910, 3497511, 806961370, 3497544, 3497581, 52718840, 963465429, 52719731, 52719737, 52723390, 52723777, 52723779, 52723780, 963467225, 52874940, 52875136, 1456037792, 52875139, 52875465, 1456037787, 52875475, 963468206, 52877485, 3494930, 59321322, 59355852, 59355851, 59355853, 59355855, 59355856, 59355858, 59355861, 59355885, 59355865, 59355862, 59355867, 59355889, 59355882, 59355883, 963469784, 3494991, 3494997, 44694237, 44694241, 3495022, 3495041, 210480635, 3496516, 3496539, 3496548, 74659291, 224399033, 224402082, 224399040, 224402083, 806961369, 224399031, 224402084, 224399061, 224402085, 224399053, 224399099, 3496623, 495193645, 3496626, 3496655, 3496645, 30119328, 495193664, 74660922, 215668177, 36860664, 963474550, 36860643, 218781491, 218781500, 55729132, 55731149, 1292339090, 1292339091, 224517469, 224516418, 224516428, 224516430, 224516432, 1292339088, 55736912, 1292339086, 224517456, 55751407, 224528605, 224528606, 171925613, 43180537, 210519631, 3496691, 495193652, 584886402, 203505782, 3496706, 3496766, 963489332, 3496777, 680367285, 43184171, 1363610360, 1363610357, 184066167, 1363610356, 680367283, 3496793, 495193663, 960708431, 3496794, 960708385, 960708384, 50058223, 3496798, 960190894, 960190892, 960190893, 3496828, 963491506, 55660864, 44703033, 3496861, 3495405, 24781721, 584886405, 1230317403, 1230317404, 3495369, 3495388, 967051679, 3495389, 3496870, 3496871, 1230317405, 3496873, 967053396, 3496875, 3496876, 1230317394, 3496879, 3495522, 3495527, 202527387, 202527389, 967054867, 3495545, 3495552, 3495555, 3495559, 1230317393, 3495565, 967272615, 3495567, 1230317395, 3495571, 3495576, 3495666, 82987228, 967273795, 3495680, 3495685, 3495686, 3495687, 3495716, 967297355, 692062137, 673258658, 3495794, 967337866, 3495812, 3495830, 3495832, 3496038, 164202307, 3496074, 684445528, 684201266, 684324645, 3496220, 95562836, 3496370, 684201267, 3496371, 4010082, 4010083, 684201269, 4010086, 4010087, 4010115, 673258659, 52102455, 52102456, 674007000, 674007001, 52102457, 4010088, 684201270, 52103870, 52103874, 684445529, 52103879, 52103887, 52103892, 52103896, 52103902, 52103865, 3496455, 987680963, 26147698, 987680962, 26147699, 967340543, 4010121, 4010122, 4010123, 55680263, 302487833, 4010124, 4010126, 970492226, 4010175, 987679222, 4010176, 4010177, 4010178, 4010179, 1143934393, 302497949, 4010185, 960209609, 730239716, 4010186, 730238849, 987362517, 730238850, 4010187, 4010188, 730238703, 503834565, 4010189, 503834564, 4010190, 960208538, 987362515, 4010191, 60065830, 4010192, 4010193, 4010194, 730238705, 4010195, 985811947, 985811946, 960202632, 730244033, 730244034, 730244030, 730244031, 730244641, 730244642, 4010196, 4009338, 931496202, 4009376, 4009377, 4009378, 4009382, 4009385, 986302220, 931496200, 4009387, 931496198, 818081850, 4009392, 530787314, 4009393, 1116033643, 4009394, 960199187, 518346282, 518346281, 931794189, 4009496, 4009497, 4009498, 750271405, 750271407, 750271408, 750275323, 750275324, 750275321, 4009450, 4009451, 4009452, 302240569, 8131972, 4009425, 4009426, 4009427, 734998402, 4009428, 4009429, 4009430, 4009431, 4009432, 1255318849, 1255317572, 1255315004, 1069023933, 610569251, 697547499, 1135734444, 610569202, 931998628, 610765187, 610765186, 178434456, 1135734443, 683969829, 610765190, 931998626, 610574016, 610560989, 610558070, 684003232, 610556794, 734944840, 610556775, 1221364556, 610548505, 1221364557, 612994668, 610547586, 734807770, 734807771, 612245430, 734812908, 734812889, 734809189, 1135734448, 683969826, 927135665, 734809190, 1210940424, 734807769, 4009244, 1050429208, 1221364558, 4009245, 1221364555, 734946932, 4009262, 5046265, 4009253, 210604255, 4009254, 4009255, 5046264, 2929637, 210373044, 4009256, 734948457, 4009257, 158015106, 4009259, 4009260, 4824485, 4009263, 4009264, 63956662, 4009265, 4009266, 4009267, 100225731, 4008801, 888185889, 932002890, 697521188, 204578482, 204551956, 203297868, 204554614, 204554612, 203295352, 4008838, 170169467, 170169464, 170169480, 170169477, 697520313, 171014082, 171014108, 932002887, 171014462, 171071071, 171014256, 171014360, 171014561, 171071047, 171014031, 171014121, 171014362, 171014380, 171014259, 171014530, 4008868, 931829066, 4008878, 4008879, 150063990, 202370530, 202380585, 202381204, 202379528, 202379526, 202379530, 202065539, 202089366, 238142734, 238142728, 202092629, 202256896, 931829068, 513931049, 513922746, 202281488, 202281486, 202281487, 925605458, 201946988, 201946993, 150031043, 201272277, 201272279, 839272232, 201272278, 201270557, 201270559, 201268851, 925605457, 931830929, 201268852, 201265767, 201264283, 201261492, 201257427, 201257415, 201254592, 931830931, 201098449, 200960557, 200960556, 200960558, 201009848, 201009849, 201009850, 201011701, 201013425, 201014744, 200999541, 1143989704, 200992081, 23438739, 200982984, 932008062, 4007427, 4007347, 102275282, 4007349, 102275258, 4007350, 4825270, 932008063, 4007452, 932004442, 4007372, 4007373, 4007377, 4007244, 932004440, 238142733, 238142732, 702118056, 702118055, 932004439, 4007245, 237304071, 237304079, 4007375, 4007460, 932004443, 4007243, 1433190451, 4007103, 4007105, 200202926, 200202928, 932012798, 4007135, 200198062, 932012795, 200198061, 932012797, 703034935, 703034934, 703034939, 4007473, 703034940, 703034945, 4007230, 932012792, 932012793, 4566723, 4007231, 4007232, 4007239, 4566722, 4007241, 4007137, 4007138, 4007139, 932012803, 4007086, 4007088, 4007115, 932035101, 4007118, 201599000, 932035100, 201598999, 201598991, 201610264, 931756179, 201610268, 931756180, 201449909, 201610272, 931756177, 201438298, 201386047, 1433190447, 201416210, 201422777, 201422772, 201380648, 834047444, 246314204, 201327219, 201324471, 201324470, 201324469, 201324468, 201319889, 201319886, 201319887, 201319885, 201319888, 201317767, 201309390, 368616037, 652283522, 201296121, 1174061512, 1174061513, 201883704, 201883703, 652281499, 104804727, 747165855, 747907149, 747907151, 717613609, 932095368, 747907152, 717613612, 747165856, 932095369, 201884626, 204684472, 4006796, 1175755084, 1175755083, 1175755102, 1175755103, 1175755105, 1175755106, 1175755097, 1175755108, 4006797, 1175985153, 1177340784, 1175985154, 1177340783, 1177340781, 4006778, 4006775, 1177340631, 4006873, 4006767, 4006763, 4003016, 4003017, 4003018, 4003000, 4003241, 4003240, 4004013, 4003994, 932055943, 4003995, 1433190454, 260518962, 260518949, 260518959, 260518950, 4003996, 932055944, 260518938, 260518942, 260518937, 260518944, 4003997, 8131711, 260518935, 260518941, 260518933, 260518943, 4003789, 4003790, 932055941, 4003791, 1433190453, 104655548, 4003793, 4003794, 203928874, 4003865, 55874325, 932055937, 55874326, 932055940, 113694069, 932055938, 113694057, 4003832, 4003846, 4003848, 4003852, 4003854, 4003855, 4003887, 4003888, 4003800, 4003801, 4003802, 4003803, 4003804, 519150408, 519150404, 4003218, 181364848, 181364861, 4003233, 4003234, 4003235, 697064766, 4003236, 4003237, 4003273, 4003266, 4003267, 931855815, 4003268, 4003269, 931855816, 4003270, 4233847, 4003140, 4003141, 4003139, 931855818, 4003132, 4003133, 4003134, 4003135, 4003136, 4003138, 4003157, 784857218, 784857216, 784857217, 2931104, 10154298, 144629202, 697066311, 697066312, 10154299, 10154303, 2930567, 932038991, 10298946, 10298947, 10298948, 10298949, 10298950, 264138855, 264138854, 10298951, 10298952, 10298953, 932038989, 10298955, 894342485, 2930177, 10299048, 10299050, 10299052, 10299053, 10299054, 144629148, 10299055, 10299057, 2930967, 10154306, 1324500070, 10154307, 10154308, 10154309, 697066314, 2930892, 10298580, 10298432, 1324500069, 701972527, 10298438, 4055058, 10298425, 813405106, 8836950, 8836951, 2931110, 123003638, 8836952, 697067400, 8836953, 8836954, 48393645, 48393347, 315926437, 8836958, 159711213, 159711205, 8836960, 697067401, 8836963, 815012419, 815012421, 815012422, 815012420, 815012418, 815012416, 785066925, 785066928, 785066924, 785066927, 785075937, 785075929, 785075931, 785075939, 785075938, 785075932, 785075930, 785075935, 785075936, 785075940, 785075933, 785075934, 56124781, 8836995, 125336172, 125336171, 8836998, 96217357, 1471101122, 4531953, 671167493, 671167492, 2933492, 10298769, 10298781, 784376111, 4003747, 4003582, 4003583, 4003584, 4003585, 4003696, 4003586, 4003589, 4003590, 4003591, 4003600, 4003603, 4003604, 4003606, 4003552, 4003551, 4003545, 4003543, 4003542, 20490748, 4003537, 4003534, 4003533, 4003532, 4003531, 4003530, 4003529, 4003528, 4003527, 932192244, 884079756, 932193088, 4003512, 4003511, 58630837, 4003506, 4003504, 4003502, 4003503, 4003505, 4003507, 4003567, 2929383, 932193086, 4003473, 4003501, 4003500, 4003499, 4818173, 4003496, 4003492, 4003490, 1492960075, 4003491, 4003488, 4003485, 4003484, 3098840, 3098850, 3098810, 3098811, 3098828, 3098829, 3098833, 3098837, 3098838, 3098797, 4566467, 3098806, 3098807, 3098751, 3098759, 3098779, 3098780, 290597684, 3098787, 290597666, 290597688, 4761907, 1346398569, 3120355, 3120456, 3098277, 904470046, 904470044, 3098561, 3098588, 3098622, 3098657, 253898861, 3098674, 3098675, 3098386, 134558298]
+Warning: Incomplete multipolygon relation 6038068 (Great Britain): using bbox of closed polygon to calc tiles, ways: [6396297]
+Warning: Incomplete multipolygon relation 6038068 (Great Britain): using bbox of unclosed polygon to calc tiles, ways: [1327181464, 632812680]
+Warning: rel 6038068 touches 81 tiles.
+Warning: Incomplete multipolygon relation 7456970 (Straits of Moyle): using bbox of unclosed polygon to calc tiles, ways: [1174061510, 1174061506, 1174061507, 1174061509, 1174061516, 1174061515, 144504293, 514079646, 514079643]
+Warning: Incomplete multipolygon relation 8395457 (Rockcliffe): using bbox of unclosed polygon to calc tiles, ways: [232929523, 232929524]
+Warning: Incomplete multipolygon relation 8395559 (Kirkandrews): using bbox of unclosed polygon to calc tiles, ways: [599479104, 599479101, 599479100, 599479105, 599479103, 632468568, 1268767661]
+Warning: Incomplete multipolygon relation 8396223 (Nicholforest): using bbox of unclosed polygon to calc tiles, ways: [599588919, 599588996, 369520845]
+Warning: Incomplete multipolygon relation 8398146 (Bewcastle): using bbox of unclosed polygon to calc tiles, ways: [10377127, 599966516]
+Warning: Incomplete multipolygon relation 8417817 (Berwick-upon-Tweed): using bbox of unclosed polygon to calc tiles, ways: [142982510, 141730497, 229560142]
+Warning: Incomplete multipolygon relation 8436316 (Kirknewton): using bbox of unclosed polygon to calc tiles, ways: [606167215]
+Warning: Incomplete multipolygon relation 8796018 (Cumberland): using bbox of unclosed polygon to calc tiles, ways: [10377127, 599966516, 599588996, 599588919, 369520845, 599479104, 599479101, 599479100, 599479105, 599479103, 632468568, 1268767661]
+Warning: Incomplete multipolygon relation 8796018 (Cumberland): using bbox of unclosed polygon to calc tiles, ways: [232929523, 232929524]
+Warning: Incomplete multipolygon relation 8796018 (Cumberland): using bbox of unclosed polygon to calc tiles, ways: [232928850]
+Warning: Incomplete multipolygon relation 8796241 (Northumberland): using bbox of unclosed polygon to calc tiles, ways: [606154081, 147078911, 179086121, 606164991, 606167215, 606167220, 606260385, 606265926, 606451347, 606453820, 606457551, 606457552, 1327181462, 606463075, 632475941, 10377127]
+Warning: Incomplete multipolygon relation 8796241 (Northumberland): using bbox of unclosed polygon to calc tiles, ways: [142982510, 141730497, 229560142]
+Warning: Incomplete multipolygon relation 9051063 (North Sea / Nordsee / Noordzee / Nordsøen / Nordsjøen / Mer du Nord): using bbox of unclosed polygon to calc tiles, ways: [775645338, 649423001, 649423002]
+Warning: rel 9051063 touches 50 tiles.
+Warning: Incomplete multipolygon relation 9382298 (Norwegian Sea): using bbox of unclosed polygon to calc tiles, ways: [1151403975, 775645338]
+Warning: Incomplete multipolygon relation 13428950 (Ireland): using bbox of unclosed polygon to calc tiles, ways: [1225520900]
+Warning: Incomplete multipolygon relation 13428950 (Ireland): using bbox of unclosed polygon to calc tiles, ways: [76169009]
+Warning: Incomplete multipolygon relation 14151426 (Interventiezone van Nederland): using bbox of unclosed polygon to calc tiles, ways: [28421645, 1061190745, 1061190746]
+Warning: Incomplete multipolygon relation 14209397 (North East): using bbox of unclosed polygon to calc tiles, ways: [229560142, 141730497, 142982510]
+Warning: Incomplete multipolygon relation 14209397 (North East): using bbox of unclosed polygon to calc tiles, ways: [606463075, 1327181462, 606457552, 606457551, 606453820, 606451347, 606265926, 606260385, 606167220, 606167215, 606164991, 179086121, 147078911, 606154081, 632475941, 10377127]
+Warning: Incomplete multipolygon relation 14530729 (Serøkið / Special Area): using bbox of unclosed polygon to calc tiles, ways: [778830226]
+Warning: Incomplete multipolygon relation 14530730 (Sgìre Ghlèidhte Mhara Iar air Alba): using bbox of unclosed polygon to calc tiles, ways: [1091081482, 1091091200, 1091091199]
+Warning: Incomplete multipolygon relation 14531196 (United Kingdom Exclusive Economic Zone): using bbox of unclosed polygon to calc tiles, ways: [1091089361]
+Warning: Incomplete multipolygon relation 14531196 (United Kingdom Exclusive Economic Zone): using bbox of unclosed polygon to calc tiles, ways: [1091091200, 1091091197, 1091091198, 770779515]
+Warning: Incomplete multipolygon relation 14531196 (United Kingdom Exclusive Economic Zone): using bbox of unclosed polygon to calc tiles, ways: [1225520902, 160695678, 1224869316, 160695675, 28421930, 28421701, 28421682, 160844043, 1061190745, 28421645]
+Warning: rel 14531196 touches 85 tiles.
+Warning: Incomplete multipolygon relation 14543431 (Fiskiøkið við Føroyar): using bbox of unclosed polygon to calc tiles, ways: [778830226]
+Warning: Incomplete multipolygon relation 15684264 (Cumberland): using bbox of unclosed polygon to calc tiles, ways: [232928850]
+Warning: Incomplete multipolygon relation 15684264 (Cumberland): using bbox of unclosed polygon to calc tiles, ways: [232929524, 232929523]
+Warning: Incomplete multipolygon relation 15684264 (Cumberland): using bbox of unclosed polygon to calc tiles, ways: [632468568, 1268767661, 599479103, 599479105, 599479100, 599479101, 599479104, 369520845, 599588919, 599588996, 599966516, 10377127]
+Warning: Incomplete multipolygon relation 16710856 (UTC−01:00 standard time): using bbox of unclosed polygon to calc tiles, ways: [1225520901, 160695678, 1224869325]
+Warning: Incomplete multipolygon relation 16732433 (UTC+00:00 standard time): using bbox of unclosed polygon to calc tiles, ways: [1225520901, 160695678, 1224869325]
+Warning: Incomplete multipolygon relation 16732433 (UTC+00:00 standard time): using bbox of closed polygon to calc tiles, ways: [144804249]
+Warning: Incomplete multipolygon relation 16732433 (UTC+00:00 standard time): using bbox of closed polygon to calc tiles, ways: [28421934]
+Warning: Incomplete multipolygon relation 17589007 (Southern Scotland): using bbox of unclosed polygon to calc tiles, ways: [658408006, 658408005, 658408007, 141730507, 141730510, 141730505, 141730508, 141730495, 141752061, 141750868, 609603823, 141812009, 141819836, 1226922084, 1119046832, 752946914, 752946915, 752942509, 1163862819, 1469670445, 1469670444, 1163862820, 752942510, 722054078, 753203973, 753203974, 754497770, 754497771, 754497769, 699283786, 1058264837, 1058264833, 819036055, 819036054, 1058264835, 1058264834, 1058264836, 818984655, 818798475, 818862592, 818862595, 818862596, 818862590, 141874057, 896778227, 814991170, 1051022785, 326279553, 785449346, 785449345, 785449344, 785449343, 453270116, 694274617, 141885586, 212488385, 212488379, 139314201, 139313036, 694591953, 139314363, 139311863, 139312360, 694591985, 232928850, 658407999, 658408004, 141730497, 142982510]
+Warning: Incomplete multipolygon relation 17589007 (Southern Scotland): using bbox of unclosed polygon to calc tiles, ways: [232929524, 232929523]
+Warning: Incomplete multipolygon relation 17589007 (Southern Scotland): using bbox of unclosed polygon to calc tiles, ways: [1268767661, 632468568, 599479103, 599479105, 599479100, 599479101, 599479104, 369520845, 599588919, 599588996, 599966516, 632475941, 606154081, 147078911, 179086121, 606164991, 606167215, 606167220, 606260385, 606265926, 606451347, 606453820, 606457551, 606457552, 1327181462, 606463075]
+Warning: Incomplete multipolygon relation 17604144 (Cumbria): using bbox of unclosed polygon to calc tiles, ways: [232928850]
+Warning: Incomplete multipolygon relation 17604144 (Cumbria): using bbox of unclosed polygon to calc tiles, ways: [232929524, 232929523]
+Warning: Incomplete multipolygon relation 17604144 (Cumbria): using bbox of unclosed polygon to calc tiles, ways: [1268767661, 632468568, 599479103, 599479105, 599479100, 599479101, 599479104, 369520845, 599588919, 599588996, 599966516, 10377127]
+Warning: Incomplete multipolygon relation 17604311 (Northumberland, and Tyne and Wear): using bbox of unclosed polygon to calc tiles, ways: [229560142, 141730497, 142982510]
+Warning: Incomplete multipolygon relation 17604311 (Northumberland, and Tyne and Wear): using bbox of unclosed polygon to calc tiles, ways: [606463075, 1327181462, 606457552, 606457551, 606453820, 606451347, 606265926, 606260385, 606167220, 606167215, 606164991, 179086121, 147078911, 606154081, 632475941, 10377127]
+Warning: rel 17623802 touches 77 tiles.
+Warning: Incomplete multipolygon relation 19178373 (Cumbria): using bbox of unclosed polygon to calc tiles, ways: [232928850]
+Warning: Incomplete multipolygon relation 19178373 (Cumbria): using bbox of unclosed polygon to calc tiles, ways: [232929524, 232929523]
+Warning: Incomplete multipolygon relation 19178373 (Cumbria): using bbox of unclosed polygon to calc tiles, ways: [632468568, 1268767661, 599479103, 599479105, 599479100, 599479101, 599479104, 369520845, 599588919, 599588996, 599966516, 10377127]
+Warning: Incomplete multipolygon relation 19178381 (Northumberland): using bbox of unclosed polygon to calc tiles, ways: [10377127, 632475941, 606154081, 147078911, 179086121, 606164991, 606167215, 606167220, 606260385, 606265926, 606451347, 606453820, 606457551, 606457552, 1327181462, 606463075]
+Warning: Incomplete multipolygon relation 19178381 (Northumberland): using bbox of unclosed polygon to calc tiles, ways: [142982510, 141730497, 229560142]
+Warning: Incomplete multipolygon relation 19178446 (Scotland): using bbox of unclosed polygon to calc tiles, ways: [141730497, 142982510, 160844050, 1061190745, 160844043, 28421682, 28421701, 28421930, 160695675, 1224869316, 160695678, 1225520902, 76169009]
+Warning: Incomplete multipolygon relation 19178446 (Scotland): using bbox of unclosed polygon to calc tiles, ways: [606463075, 1327181462, 606457552, 606457551, 606453820, 606451347, 606265926, 606260385, 606167220, 606167215, 606164991, 179086121, 147078911, 606154081, 632475941, 599966516, 599588996, 599588919, 369520845, 599479104, 599479101, 599479100, 599479105, 599479103, 632468568, 1268767661]
+Warning: Incomplete multipolygon relation 19178446 (Scotland): using bbox of unclosed polygon to calc tiles, ways: [232929523, 232929524]
+Warning: Incomplete multipolygon relation 19178446 (Scotland): using bbox of unclosed polygon to calc tiles, ways: [232928850]
+Warning: Incomplete multipolygon relation 19178446 (Scotland): using bbox of unclosed polygon to calc tiles, ways: [160844037]
+Warning: Incomplete multipolygon relation 19178446 (Scotland): using bbox of closed polygon to calc tiles, ways: [144804249]
+Warning: Incomplete multipolygon relation 19178446 (Scotland): using bbox of closed polygon to calc tiles, ways: [28421901]
+Warning: Incomplete multipolygon relation 19178446 (Scotland): using bbox of closed polygon to calc tiles, ways: [28421899]
+Warning: Incomplete multipolygon relation 19178446 (Scotland): using bbox of closed polygon to calc tiles, ways: [28421934]
+Warning: rel 19178446 touches 85 tiles.
+Warning: Incomplete multipolygon relation 19178452 (Northern Ireland): using bbox of unclosed polygon to calc tiles, ways: [76169009]
+Warning: Incomplete multipolygon relation 19285177 (Europe/London timezone): using bbox of unclosed polygon to calc tiles, ways: [1225520902, 160695678, 1224869316, 160695675, 28421930, 28421701, 28421682, 160844043, 1061190745, 28421645]
+Warning: Incomplete multipolygon relation 19285177 (Europe/London timezone): using bbox of closed polygon to calc tiles, ways: [144804249]
+Warning: Incomplete multipolygon relation 19285177 (Europe/London timezone): using bbox of closed polygon to calc tiles, ways: [28421934]
+Warning: Incomplete multipolygon relation 19285177 (Europe/London timezone): using bbox of closed polygon to calc tiles, ways: [28421901]
+Warning: Incomplete multipolygon relation 19285177 (Europe/London timezone): using bbox of closed polygon to calc tiles, ways: [28421899]
+Warning: rel 19285177 touches 85 tiles.
+Warning: Incomplete multipolygon relation 19292287 (Europe/Dublin timezones): using bbox of unclosed polygon to calc tiles, ways: [1225520900]
+Warning: Incomplete multipolygon relation 19365479 (English offshore region): using bbox of unclosed polygon to calc tiles, ways: [28421645, 1415491933]
+Warning: Incomplete multipolygon relation 19365480 (Exclusive economic zone adjacent to Scotland): using bbox of unclosed polygon to calc tiles, ways: [1061190745, 160844043, 28421682, 28421701, 28421930, 160695675, 1224869316, 160695678, 1225520902, 1415491933]
+Warning: Incomplete multipolygon relation 19365480 (Exclusive economic zone adjacent to Scotland): using bbox of unclosed polygon to calc tiles, ways: [770779515, 1091091198, 1091091197, 1091091200]
+Warning: Incomplete multipolygon relation 19365480 (Exclusive economic zone adjacent to Scotland): using bbox of unclosed polygon to calc tiles, ways: [1091089361]
+Warning: rel 19365480 touches 80 tiles.
+Warning: rel 30000443668 touches 85 tiles.
+Stats for MultiTileProcessor pass 3
+  SparseBitSet neededWays contains now 72,501 Ids.
+  Number of stored tile combinations in multiTileDictionary: 849
+Status: Making sure that needed way nodes of relations are written to the correct tiles...
+Multi-tile analyses phase 3 took 9458 ms
+-----------------------------------
+Executing multi-tile analyses phase 4
+Processing /var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/combined.osm.pbf
+Bounding box -14.861554000000002 54.54001 0.731931 61.351310000000005
+1,000,000 ways parsed... id=371155640
+2,000,000 ways parsed... id=851508764
+3,000,000 ways parsed... id=1118851989
+4,000,000 ways parsed... id=1357717438
+dictionary contains now 1,000 entries
+5,000,000 ways parsed... id=30000372040
+Stats for MultiTileProcessor pass 4
+  SparseBitSet neededWays contains now 72,501 Ids.
+  Number of stored tile combinations in multiTileDictionary: 1,023
+  nodeWriterMap contains 13,900,470 pairs.
+  wayWriterMap contains 65,591 pairs.
+  relWriterMap contains 7,970 pairs.
+Status: Finished processing problem lists.
+Multi-tile analyses phase 4 took 3188 ms
+-----------------------------------
+Writing results of MultiTileAnalyser to temp files ...
+Wrote 13900470 node pairs to /var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/split/node10682142471613778680.tmp
+Wrote 65591 way pairs to /var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/split/way10966564967491236457.tmp
+Wrote 7970 rel pairs to /var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/split/rel15857743550646072435.tmp
+Writing temp files took 270 ms
+Distributing data Mon Nov 02 14:43:12 GMT 2026
+Processing 85 areas in a single pass
+coord Map: uses SparseLong2IntMap
+way Map: uses SparseLong2IntMap
+Starting distribution pass 1 of 1, processing 85 areas (48340001 to 48340085)
+Processing /var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/combined.osm.pbf
+Bounding box -14.861554000000002 54.54001 0.731931 61.351310000000005
+10,000,000 nodes parsed... id=3099204225
+20,000,000 nodes parsed... id=8155594115
+30,000,000 nodes parsed... id=11067647953
+40,000,000 nodes parsed... id=13691874990
+50,000,000 nodes parsed... id=30008100302
+60,000,000 nodes parsed... id=30018100302
+70,000,000 nodes parsed... id=30028100302
+80,000,000 nodes parsed... id=30038100302
+Writing ways Mon Nov 02 14:43:51 GMT 2026
+1,000,000 ways parsed... id=371155640
+2,000,000 ways parsed... id=851508764
+3,000,000 ways parsed... id=1118851989
+4,000,000 ways parsed... id=1357717438
+5,000,000 ways parsed... id=30000372040
+Writing relations Mon Nov 02 14:44:07 GMT 2026
+100,000 relations parsed... id=30000069465
+200,000 relations parsed... id=30000169465
+300,000 relations parsed... id=30000269465
+400,000 relations parsed... id=30000369465
+coord Map: 79,616,055 stored long/int pairs require ca. 12 bytes per pair. 2,147,010 chunks are used, the avg. number of values in one 64-chunk is 37.
+coord Map details: ~886 MB, including 108 array(s) with 8 MB
+
+way Map: 5,184,441 stored long/int pairs require ca. 22 bytes per pair. 484,250 chunks are used, the avg. number of values in one 64-chunk is 10.
+way Map details: ~109 MB, including 13 array(s) with 8 MB
+
+  JVM Memory Info: Current 2676MB (2198MB used, 478MB free) Max 6144MB
+Full Node tests:  18,499,877
+Quick Node tests: 70,642,579
+Thread worker-0 has finished
+Distribution pass(es) took 55809 ms
+temporary file /var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/split/node10682142471613778680.tmp was deleted
+temporary file /var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/split/way10966564967491236457.tmp was deleted
+temporary file /var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/3ada1b0dd1ae/scotland/garmin/split/rel15857743550646072435.tmp was deleted
+Time finished: Mon Nov 02 14:44:08 GMT 2026
+Total time taken: 1 minute 28 seconds
