@@ -179,22 +179,22 @@
     [
       10,
       "Track",
-      "#8b6f47",
-      2,
+      "#654321",
+      4,
       [
-        6,
-        4
+        10,
+        6
       ],
       0
     ],
     [
       22,
       "Path and footway",
-      "#6a8f5a",
-      2,
+      "#269e3f",
+      4,
       [
-        3,
-        3
+        4,
+        4
       ],
       0
     ],
@@ -304,11 +304,11 @@
     [
       65537,
       "Walking route",
-      "#cc553d",
-      2,
+      "#d13d2c",
+      4,
       [
-        6,
-        3
+        12,
+        4
       ],
       0
     ],
@@ -338,6 +338,17 @@
       1,
       [
         6,
+        4
+      ],
+      0
+    ],
+    [
+      65547,
+      "Walking route on road",
+      "#d13d2c",
+      4,
+      [
+        12,
         4
       ],
       0
@@ -420,8 +431,8 @@
       "NormalFont"
     ]
   ],
-  "target": "Montana 750i",
+  "target": "Compatible Garmin mapping products",
   "routing": false,
   "native_fonts": "Garmin SmallFont/NormalFont; no Open Sans pixel-size equivalence",
-  "night": "Same map colours in day and night for this first device profile"
+  "night": "Same map colours in day and night"
 }

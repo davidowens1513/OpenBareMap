@@ -44,10 +44,11 @@
     }
   },
   "garmin": {
+    "bytes": 873824256,
     "path": "regions/england-wales/garmin/dist/OpenBareMap-England-Wales.img",
-    "bytes": 699564032,
-    "sha256": "0fec64c33bbd62c6465726fca9904545478eba8656055f02a11d9babeb32edda"
+    "sha256": "0c015951887b537b489dfdb492b5efa440708b1419ddb010cfbc514983e68c7b"
   },
+  "garminPackageRevision": "2.0.0-hiking-r1",
   "mapVersion": "2.0.0",
   "osm": {
     "bytes": 1859551571,
@@ -96,6 +97,5 @@
   "region": "england-wales",
   "styleSHA256": "72a50fa0e81ca0d7d866e2d3984cef26ced13c4b1dda3799752e464813905d03",
   "terrainLockSHA256": "d1f1484cb49fab6439a925797c71bd4cb7ca6310fb43c1fcbdc5e09d1ddf5797",
-  "validation": "validation.json",
-  "garminPackageRevision": "2.0.0-garmin-r2"
+  "validation": "validation.json"
 }

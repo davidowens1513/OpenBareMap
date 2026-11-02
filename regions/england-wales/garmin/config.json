@@ -10,12 +10,12 @@
     "--code-page=1252",
     "--lower-case",
     "--name-tag-list=name:en,name,name:cy",
-    "--levels=0:24,1:22,2:20,3:18,4:16",
+    "--levels=0:24,1:23,2:22,3:20,4:18,5:16",
     "--gmapsupp",
     "--add-pois-to-areas",
     "--dem=/Users/davidowens/Documents/Codex/2026-10-25/i-x20/outputs/OpenBareMap/regions/england-wales/garmin/work/hgt",
     "--dem-poly=/Users/davidowens/Documents/Codex/2026-10-25/i-x20/outputs/OpenBareMap/regions/england-wales/garmin/coverage.poly",
-    "--dem-dists=3312,13248,26512,53024,106048",
+    "--dem-dists=3312,3312,13248,26512,53024,106048",
     "--dem-interpolation=bilinear",
     "--copyright-file=/Users/davidowens/Documents/Codex/2026-10-25/i-x20/outputs/OpenBareMap/regions/england-wales/garmin/copyright.txt"
   ],
@@ -24,5 +24,17 @@
   "familyId": 4833,
   "routing": false,
   "tileStartId": 48330001,
-  "garminPackageRevision": "2.0.0-garmin-r2"
+  "garminPackageRevision": "2.0.0-hiking-r1",
+  "nativeLevels": [
+    24,
+    23,
+    22,
+    20,
+    18,
+    16
+  ],
+  "hikingLineResolution": 24,
+  "hikingLineWidthPixels": 4,
+  "buildingResolution": 24,
+  "fineContourResolution": 23
 }

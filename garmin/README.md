@@ -1,67 +1,38 @@
-# OpenBareMap 2.0 for Garmin
+# OpenBareMap for Garmin
 
-Display-only, full-island Ireland and Northern Ireland map. The deliverable is `dist/OpenBareMap-Ireland.img` (size and checksum in the release manifest). Copy instructions are in `dist/INSTALL.txt`. The selected IMG targets the Montana 750i, GPSMAP 67i and GPSMAP H1. Per-device installed revisions are recorded separately. Full-file read-back verification is recorded in [device-installations.json](device-installations.json). Townland appearance is accepted on the Montana; visual acceptance on the 67i and H1 remains pending. The Garmin package revision is `2.0.0-20m`, within map version 2.0.0.
-
-Includes roads, tracks, footways, bridleways, cycleways, steps, walking/cycling overlays, water, land cover, buildings, boundaries, townlands, place names, summit dots, parking P symbols, bog texture and cliff teeth. Contours use the shared, gently smoothed source geometry selected at 20 m intervals. Land-cover polygons use the shared smoothed source snapshot. Native DEM elevation data supports Garmin's terrain rendering. No routing network or turn instructions are generated.
+OpenBareMap supplies display-only Garmin maps for Ireland, England & Wales, Scotland and Sierra Nevada National Park in Spain with 25 km around its boundary. The Garmin package is **2.0.0-hiking-r1**, within map version 2.0.0. [Release manifest](releases/2.0.0-hiking-r1/manifest.json) records the exact downloads, identifiers and checksums. Generic installation instructions are supplied with every region.
 
 ## Native cartography
 
-Garmin renders its own fonts, labels and detail levels. This is a native adaptation, not pixel-identical to the MapLibre map. SmallFont is used for most names, NormalFont for cities and townlands; device settings affect actual size. Text has no custom halo. Day and night palettes currently match. Bog/rock patterns are native two-colour bitmaps. The supplied legend is generated from the same palette and patterns.
+Green paths, brown tracks (including farm and forest access tracks) and red walking routes use equal **4-pixel dashed strokes**, transparent gaps and no white backing. Walking-route sections on roads use one red stroke. Ordinary roads remain visible before route markings appear. Tracks and paths describe mapped features; they do not establish public access rights.
 
-| Detail level | Garmin resolution | Contours |
-| --- | --- | --- |
-| 0, closest | 24 | 20 m and 100 m |
-| 1 | 22 | 100 m |
-| 2 | 20 | Fine 100 m overview strokes |
-| 3 | 18 | None |
-| 4, overview | 16 | None |
+All these hiking lines share the same resolution-24 threshold, two stored detail steps beyond resolution 22. Buildings are also limited to resolution 24. Garmin firmware, map themes, detail settings and screen characteristics determine the actual display scale; stored resolutions are not fixed metre-scale cutoffs.
 
-These are Garmin resolution bits, not web zoom numbers. Native close-detail contour elevation attributes use feet; set device elevation units to metres. Overview-only contour types have no labels. The underlying spacing is 20 m. Irish Grid lines are not exported in this version. Bridges and tunnels do not yet receive a distinct Garmin rendering. MapLibre raster hillshade, pixel text sizes and label spacing do not transfer directly.
+| Native level | Resolution | Contours | Hiking lines | Buildings |
+| --- | --- | --- | --- | --- |
+| 0 | 24 | 20 m and 100 m | Yes | Yes |
+| 1 | 23 | 20 m and 100 m | No | No |
+| 2 | 22 | 100 m | No | No |
+| 3 | 20 | 100 m overview | No | No |
+| 4 | 18 | None | No | No |
+| 5 | 16 | None | No | No |
 
-Townlands use Garmin’s standard region-text category, without a marker, in muted grey-brown (`#817b70`). Source names are uppercase; the device controls the displayed capitalisation and size. The current rendering has been accepted on the Montana 750i. The label profile is installed on the GPSMAP 67i and H1, with file integrity verified; its on-screen appearance has not yet been reviewed on those models.
+Native DEM supports Garmin relief shading. Colours match in day and night mode. Fonts, labels, symbols and terrain rendering differ from the mobile/web maps. Contours retain their 20 m spacing; Garmin close-detail elevation attributes use feet, so select metric elevation units when needed. Irish Grid lines and MapLibre raster hillshade are not exported. No turn-by-turn routing is included.
 
-## Source and tool records
+The editions have separate map family, tile and appearance-file identities. England & Wales retains coast/land polygons at overview levels. Sierra Nevada includes the purple national park boundary and dashed 25 km coverage limit; its conservative Garmin tile envelope can show context beyond that limit.
 
-- Shared `sources.lock.json`, `terrain-sources.lock.json` and townland data remain authoritative.
-- `inputs.lock.json`: exact compressed shared contour geometry and full-island coast mask.
-- `dem-padding.lock.json`: five adjacent eastern elevation cells needed by DEM interpolation.
-- `toolchain.lock.json`: pinned mkgmap r4924, splitter r654 and macOS ARM Python 3.12 osmium wheel. Archives retain their upstream licence notices.
-- `config.json`, `style/`, `generate_typ.py`: native map profile and custom symbols.
-- `build-report.json`: output checksums, source counts, binary read-back and repeat-build comparison.
-- `work/`: ignored intermediate files; `dist/`: installable map and notices.
+## Sources and rebuilding
 
-## Rebuild
+The locked OSM extracts, contour/land-cover inputs and elevation grids are authoritative. `config.json`, `style/`, `cartography.json` and `generate_typ.py` define the Ireland profile; other regional styles and configurations are in `regions/<region>/garmin/`. `map-identities.json` reserves disjoint identifiers. mkgmap r4924 and splitter r654 archives are pinned in `toolchain.lock.json`.
 
-Run from the repository root after `git lfs pull`. Use Java 17 or newer and Python 3.12 with osmium 4.2.0. The builder uses JAVA_HOME, Android Studio's bundled Java on macOS, or Java on PATH. Set JAVA_HOME explicitly for other environments. Allow roughly 15 GB working space and at least 8 GB RAM.
-
-On macOS ARM with Python 3.12:
+Restore sources with Git LFS before building. Use Java 21 and Python with the locked project's osmium dependency. The regional release builder verifies source and elevation checksums, creates complete source sections where needed, compiles the selected style, and inspects the native geometry, elevation, labels and hiking thresholds. Completed build checkpoints are verified before reuse.
 
 ```sh
-python3.12 -m pip install --no-deps --target garmin/work/python garmin/tools/osmium-4.2.0-cp312-cp312-macosx_11_0_arm64.whl
-python3.12 garmin/build.py --name compile-release
+export JAVA_HOME=/path/to/java-21
+PYTHONPATH=work/python python3 scripts/build_garmin_hiking_release.py --region ireland
+PYTHONPATH=work/python python3 scripts/build_garmin_hiking_release.py --region england-wales
+PYTHONPATH=work/python python3 scripts/build_garmin_hiking_release.py --region scotland
+PYTHONPATH=work/python python3 scripts/build_garmin_hiking_release.py --region sierra-nevada
 ```
 
-On other platforms install the pinned osmium version for that Python/platform. Pillow is needed only to regenerate the legend (`make_legend.py`). The builder verifies pinned tool archives and extracts them locally. It prepares the full contour/coast/townland overlay, merges it with the locked OSM snapshot, splits complete features and compiles the map. Existing split/build directories cause an error: preserve or move an old work directory before a fresh build, then reinstall the local Python dependency. The build never silently overwrites a previous compiled map.
-
-Read back the compiled files before publishing:
-
-```sh
-javac -cp garmin/tools/mkgmap-r4924/mkgmap.jar -d garmin/work garmin/InspectMap.java
-java -Xmx2g -cp garmin/work:garmin/tools/mkgmap-r4924/mkgmap.jar InspectMap garmin/work/compile-release > garmin/work/inspection.json
-```
-
-Use the platform classpath separator on Windows. The inspector requires embedded DEM/TYP, all three contour types, summit/bog features, known place names, and no NET/NOD routing sections. After successful inspection, copy that build's `gmapsupp.img` into `dist/OpenBareMap-Ireland.img` and refresh checksums/report.
-
-## Validation and limitations
-
-The version 2.0 build report records the compiled tile inventory, DEM, custom TYP, progressive contours and names including Carrauntoohil, Belfast and Dublin. Automated checks cover the map profile, smoothing behaviour and deterministic TYP generation.
-
-Strict binary recompilation reproducibility is unresolved. A repeated-build comparison of the preceding profile found a 76-byte RGN payload-size difference beyond creation timestamps. The release manifest pins the exact version 2.0 IMG bytes without claiming byte-identical recompilation.
-
-Keep Map Points text enabled and its zoom setting on Auto. Version 2.0 hardware rendering, contour-unit and performance acceptance is required on both devices. Its binaries are not automatically installed when the repository is updated.
-
-On the GPSMAP 67i, installed detailed maps are managed under Setup > Map > Map Manager. Satellite imagery is controlled separately from the map page using MENU > Map Layers. Display appearance is under Setup > Display > Appearance > Mode (Day, Night or Auto). A personal-track overlay is a separate optional map layer and can be toggled independently of OpenBareMap.
-
-The Garmin 20 m profile retains national and county boundaries, townland labels, summit names, native DEM relief, bog texture and cliff markings. Local boundary lines and the former 50 m contour class are omitted. The personal-track overlay remains independent.
-
-The Montana 750i, GPSMAP 67i and GPSMAP H1 have the 20 m edition installed and fully read-back verified; their personal-track layers are unchanged. The preceding 10 m Ireland map was removed from the H1. Hardware visual review of the 20 m edition is pending.
+Build intermediates are ignored. Inspection records, native-level checks and the map-set identity/land checks accompany the accepted release. Exact bytes are pinned by checksums; byte-identical recompilation is not claimed. [Installation records](device-installations.json) describe actual device copies separately from the release and from hardware visual review.

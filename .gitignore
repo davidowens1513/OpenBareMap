@@ -98,3 +98,7 @@ data/regions/sierra-nevada/elevation/*
 data/regions/sierra-nevada/boundary/*
 !data/regions/sierra-nevada/boundary/Limites_PPNN.kml
 /releases/sierra-nevada/2.0.0-preview.1/
+
+# Local Ireland hardware styling experiments; canonical release styles are in garmin/style.
+/garmin/hiking-visibility-v*/
+/scripts/build_ireland_hiking_visibility.py

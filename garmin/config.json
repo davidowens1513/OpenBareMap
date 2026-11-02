@@ -17,16 +17,28 @@
     "--code-page=1252",
     "--lower-case",
     "--name-tag-list=name:en,name,name:ga",
-    "--levels=0:24,1:22,2:20,3:18,4:16",
+    "--levels=0:24,1:23,2:22,3:20,4:18,5:16",
     "--gmapsupp",
     "--add-pois-to-areas",
     "--dem=garmin/work/hgt",
     "--dem-poly=garmin/ireland.poly",
-    "--dem-dists=3312,13248,26512,53024,106048",
+    "--dem-dists=3312,3312,13248,26512,53024,106048",
     "--dem-interpolation=bilinear",
     "--copyright-file=garmin/copyright.txt"
   ],
   "localBorders": false,
   "countyBorders": true,
-  "garminPackageRevision": "2.0.0-20m"
+  "garminPackageRevision": "2.0.0-hiking-r1",
+  "nativeLevels": [
+    24,
+    23,
+    22,
+    20,
+    18,
+    16
+  ],
+  "hikingLineResolution": 24,
+  "hikingLineWidthPixels": 4,
+  "buildingResolution": 24,
+  "fineContourResolution": 23
 }

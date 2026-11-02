@@ -1,0 +1,40 @@
+{
+  "compilerOptions": [
+    "--max-jobs=2",
+    "--style-file=/Users/davidowens/Documents/Codex/2026-10-25/i-x20/outputs/OpenBareMap/regions/england-wales/garmin/style",
+    "--family-id=4833",
+    "--product-id=1",
+    "--family-name=OpenBareMap England & Wales",
+    "--series-name=OpenBareMap Garmin 2.0",
+    "--description=OpenBareMap England & Wales 2.0",
+    "--code-page=1252",
+    "--lower-case",
+    "--name-tag-list=name:en,name,name:cy",
+    "--levels=0:24,1:23,2:22,3:20,4:18,5:16",
+    "--gmapsupp",
+    "--add-pois-to-areas",
+    "--dem=/Users/davidowens/Documents/Codex/2026-10-25/i-x20/outputs/OpenBareMap/regions/england-wales/garmin/work/hgt",
+    "--dem-poly=/Users/davidowens/Documents/Codex/2026-10-25/i-x20/outputs/OpenBareMap/regions/england-wales/garmin/coverage.poly",
+    "--dem-dists=3312,3312,13248,26512,53024,106048",
+    "--dem-interpolation=bilinear",
+    "--copyright-file=/Users/davidowens/Documents/Codex/2026-10-25/i-x20/outputs/OpenBareMap/regions/england-wales/garmin/copyright.txt"
+  ],
+  "contourIntervalMetres": 20,
+  "coverage": "Complete Geofabrik England and Wales extracts, including offshore islands; no pilot or regional sampling",
+  "familyId": 4833,
+  "routing": false,
+  "tileStartId": 48330001,
+  "garminPackageRevision": "2.0.0-hiking-r1",
+  "nativeLevels": [
+    24,
+    23,
+    22,
+    20,
+    18,
+    16
+  ],
+  "hikingLineResolution": 24,
+  "hikingLineWidthPixels": 4,
+  "buildingResolution": 24,
+  "fineContourResolution": 23
+}

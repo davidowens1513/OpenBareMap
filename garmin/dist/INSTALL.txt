@@ -1,9 +1,14 @@
-OpenBareMap Ireland & Northern Ireland 2.0.0 — Garmin Map
+OpenBareMap Ireland & Northern Ireland 2.0.0 — Garmin Map (2.0.0-hiking-r1)
 For compatible Garmin mapping products
 
 1. Contents
 OpenBareMap-Ireland.img contains the regional display-only topographic map,
 20-metre contours, native elevation data, land-cover styling and place names.
+Paths, tracks (including farm/forest access tracks) and walking routes share a
+4-pixel dashed stroke and the same close-detail visibility threshold. Green
+marks paths, brown tracks and red walking routes. No white backing is added.
+Buildings are limited to the finest stored detail level; fine contours are
+retained in the intervening level. Garmin settings control the screen scale.
 It has its own map family identifier (4831) and can coexist with other
 OpenBareMap regions. It provides no turn-by-turn routing.
 

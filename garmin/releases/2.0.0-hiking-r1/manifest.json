@@ -1,0 +1,104 @@
+{
+  "buildingResolution": 24,
+  "fineContourResolution": 23,
+  "format": "openbaremap-garmin-release-v1",
+  "garminPackageRevision": "2.0.0-hiking-r1",
+  "hikingLineResolution": 24,
+  "hikingLineWidthPixels": 4,
+  "lineColours": {
+    "path": "#269e3f",
+    "track": "#654321",
+    "walkingRoute": "#d13d2c"
+  },
+  "mapVersion": "2.0.0",
+  "nativeLevels": [
+    24,
+    23,
+    22,
+    20,
+    18,
+    16
+  ],
+  "regions": {
+    "england-wales": {
+      "buildReport": {
+        "bytes": 32657,
+        "path": "regions/england-wales/garmin/build-report.json",
+        "sha256": "592e6692873b327a512a837c7ccdfdda41a46ef13ae793bfd0c18c92fc11bcd6"
+      },
+      "bytes": 873824256,
+      "demPaddingLockSHA256": "48d120f59e74e0007a6e038f4f0338f4875cbefede0c050b7b321ac9b84c1a5f",
+      "downloadURL": "https://downloads.appsbyonzy.dev/Garmin/OpenBareMap-England-Wales.img?v=2.0.0-hiking-r1",
+      "familyId": 4833,
+      "garminInputsLockSHA256": "75fb796b8fa3949e65e7ae9444b5aae5add9464b47a3d260a91777999f1d882e",
+      "instructionsURL": "https://downloads.appsbyonzy.dev/Garmin/england-wales-instructions.txt",
+      "path": "regions/england-wales/garmin/dist/OpenBareMap-England-Wales.img",
+      "sha256": "0c015951887b537b489dfdb492b5efa440708b1419ddb010cfbc514983e68c7b",
+      "sourceLockSHA256": "926ce6acaf936c2fbd54982ef2db1b68427660331ac9c083fce882c767e472db",
+      "terrainLockSHA256": "d1f1484cb49fab6439a925797c71bd4cb7ca6310fb43c1fcbdc5e09d1ddf5797",
+      "tileCount": 318
+    },
+    "ireland": {
+      "buildReport": {
+        "bytes": 12132,
+        "path": "garmin/build-report.json",
+        "sha256": "3e60b4f078cb30bd1f82ed184041c3105391d68a489be6d410f19267b3067859"
+      },
+      "bytes": 315375616,
+      "demPaddingLockSHA256": "e9906630f4150eebaec56734b9c3e2f84ad0792a93c5682c4efe8a17a7e344b9",
+      "downloadURL": "https://downloads.appsbyonzy.dev/Garmin/OpenBareMap-Ireland.img?v=2.0.0-hiking-r1",
+      "familyId": 4831,
+      "garminInputsLockSHA256": "1c3c6c922b6e829fc6ce72e3077e8e0958f0c35833951de43018c477c86679de",
+      "instructionsURL": "https://downloads.appsbyonzy.dev/Garmin/instructions.txt",
+      "path": "garmin/dist/OpenBareMap-Ireland.img",
+      "sha256": "83cde2062e09171382be31c98c991282182eb8129110dbf75a1010a956d6611e",
+      "sourceLockSHA256": "fc3807f33d665938a76e34f6d70674bd83dd93d7aae405a201378dae93bb5227",
+      "terrainLockSHA256": "7336551caeaa254c02e7a2512278de2a390582fb6fcf520f61ea02a9f5f46798",
+      "tileCount": 91
+    },
+    "scotland": {
+      "buildReport": {
+        "bytes": 11627,
+        "path": "regions/scotland/garmin/build-report.json",
+        "sha256": "1820229c527898acfee767e9acd715d452ff46ad5b4657e56242c75c9bff7d96"
+      },
+      "bytes": 359235584,
+      "demPaddingLockSHA256": "b345fb607e7bb743fc18049a8d0e89c3117e20119f52a6b261852b65599d1c6a",
+      "downloadURL": "https://downloads.appsbyonzy.dev/Garmin/OpenBareMap-Scotland.img?v=2.0.0-hiking-r1",
+      "familyId": 4834,
+      "garminInputsLockSHA256": "17e949faf375d6f746db02ca25671f3d056fff8f213609708d7823e682cb94d4",
+      "instructionsURL": "https://downloads.appsbyonzy.dev/Garmin/scotland-instructions.txt",
+      "path": "regions/scotland/garmin/dist/OpenBareMap-Scotland.img",
+      "sha256": "55e0ebc8a9cbf6746e55a9b08fbb01f1cff07dc467f1d2d8bb598df1c6ac9ff2",
+      "sourceLockSHA256": "2bdd576b72e9e579412e8ae54dd630380c3a52593b2581bb2338a1aa0a39b3ab",
+      "terrainLockSHA256": "62a464d1e8e52c65b6e6b382ed0a7f7036d9ae765243f1c8e93e79677e945fa5",
+      "tileCount": 85
+    },
+    "sierra-nevada": {
+      "buildReport": {
+        "bytes": 5305,
+        "path": "regions/sierra-nevada/garmin/build-report.json",
+        "sha256": "7e2e20d7b4ff49c53fbe34c9531b24f54f0aceecaa59ccabcd5ee925cdd1105d"
+      },
+      "bytes": 33868800,
+      "demPaddingLockSHA256": "cf3094cb2aba89b6493206598ef0ee8bd49d55a4f559451efa08d569cf1ce228",
+      "downloadURL": "https://downloads.appsbyonzy.dev/Garmin/OpenBareMap-Sierra-Nevada.img?v=2.0.0-hiking-r1",
+      "familyId": 4835,
+      "garminInputsLockSHA256": "2590112bd51d01c5e1e9afa76d6b3a678a71778c7b9718e97970553d8bf66696",
+      "instructionsURL": "https://downloads.appsbyonzy.dev/Garmin/sierra-nevada-instructions.txt",
+      "path": "regions/sierra-nevada/garmin/dist/OpenBareMap-Sierra-Nevada.img",
+      "sha256": "0eb8f7b386a9b2a1383fcdac4379e22d5146208f045dfd2327ce9c5466c6fea8",
+      "sourceLockSHA256": "6e1b6b971268eb22f7212003334c04b1a3609e27b0455a8fff461511456f01f7",
+      "terrainLockSHA256": "63f16097e51fc812698a51a7918090f0e103c00172dd34f801c4bf21d50d054a",
+      "tileCount": 14
+    }
+  },
+  "releaseDate": "2026-11-02",
+  "routing": false,
+  "validation": {
+    "bytes": 669,
+    "path": "garmin/releases/2.0.0-hiking-r1/map-set-validation.txt",
+    "sha256": "ed7b1126d298d0c88194a0c613ae44427262becdf5f58f6e0d01aac5e61e0c9f"
+  },
+  "whiteBacking": false
+}

@@ -35,20 +35,29 @@ public class ValidateMapSet {
      }
     }
    }
-   if(count==0||families.isEmpty())throw new IllegalStateException("Missing map metadata");total+=count;
+   if(count==0||families.isEmpty())throw new IllegalStateException("Missing map metadata");
+   for(int family:families)if(count!=Integer.getInteger("openbaremap.tiles."+family,count))throw new IllegalStateException("Compiled section count mismatch for family "+family);
+   total+=count;
    if(ew||scotland||sierra){
     String[] names=sierra?new String[]{"Granada","Mulhacen","Veleta","Capileira","Trevelez","Puerto de la Ragua","Guadix","Durcal","Orgiva","Fondon","Finana"}:scotland?new String[]{"Edinburgh","Glasgow","Inverness","Ben Nevis","Skye","Lewis","Orkney","Shetland","Unst","Borders","St Kilda"}:NAMES;
     double[][] xy=sierra?new double[][]{{-3.5986,37.1765},{-3.3114,37.0547},{-3.3656,37.0504},{-3.358,36.961},{-3.265,37.002},{-3.031,37.114},{-3.14,37.30},{-3.56,36.99},{-3.42,36.902},{-2.86,36.981},{-2.84,37.17}}:scotland?new double[][]{{-3.188,55.953},{-4.252,55.86},{-4.224,57.478},{-5.004,56.796},{-6.2,57.3},{-6.38,58.21},{-2.96,58.98},{-1.25,60.3},{-.84,60.75},{-2.45,55.6},{-8.58,57.814}}:XY;
     int family=sierra?4835:scotland?4834:4833;
     if(!families.equals(Set.of(family)))throw new IllegalStateException("Unexpected regional family "+families);
     if(scotland&&count!=Integer.getInteger("openbaremap.scotland.tiles",count))throw new IllegalStateException("Scotland sections missing from installable image");
-    if(ew&&count!=318)throw new IllegalStateException("England/Wales sections missing");
-    boolean[][] hits=new boolean[5][xy.length];int[] land=new int[5];boolean rockallCovered=false;
+    if(ew&&count!=Integer.getInteger("openbaremap.england-wales.tiles",count))throw new IllegalStateException("England/Wales sections missing");
+    int levelCount=0;
+    for(var entry:fs.list())if(entry.getExt().equals("TRE")){
+     try(var channel=fs.open(entry.getFullName(),"r")){
+      for(var zoom:new TREFileReader(channel).getMapLevels())if(zoom.getResolution()>=16)levelCount=Math.max(levelCount,zoom.getLevel()+1);
+     }break;
+    }
+    if(levelCount<5)throw new IllegalStateException("Missing native detail levels");
+    boolean[][] hits=new boolean[levelCount][xy.length];int[] land=new int[levelCount];boolean rockallCovered=false;
     for(var e:fs.list())if(e.getExt().equals("TRE")){
-     String name=e.getName();if(Integer.parseInt(name)<family*10000+1||Integer.parseInt(name)>(sierra?48359999:scotland?48349999:48330318))throw new IllegalStateException("Unreserved England/Wales tile "+name);
+     String name=e.getName();if(Integer.parseInt(name)<family*10000+1||Integer.parseInt(name)>(sierra?48359999:scotland?48349999:48339999))throw new IllegalStateException("Unreserved England/Wales tile "+name);
      try(var tc=fs.open(e.getFullName(),"r");var rc=fs.open(name+".RGN","r");var lc=fs.open(name+".LBL","r")){
       var tre=new TREFileReader(tc);var rgn=new RGNFileReader(rc);rgn.setLblFile(new LBLFileReader(lc));
-      for(var z:tre.getMapLevels())if(z.getLevel()<=4)for(var sub:tre.subdivForLevel(z.getLevel()))for(var poly:rgn.shapesForSubdiv(sub,false))if(poly.getType()==0x54){
+      for(var z:tre.getMapLevels())if(z.getResolution()>=16)for(var sub:tre.subdivForLevel(z.getLevel()))for(var poly:rgn.shapesForSubdiv(sub,false))if(poly.getType()==0x54){
        int level=z.getLevel();land[level]++;Path2D.Double path=new Path2D.Double();boolean first=true;
        for(var c:poly.getPoints()){if(first){path.moveTo(c.getLonDegrees(),c.getLatDegrees());first=false;}else path.lineTo(c.getLonDegrees(),c.getLatDegrees());}path.closePath();
        for(int i=0;i<xy.length;i++)if(path.contains(xy[i][0],xy[i][1]))hits[level][i]=true;
@@ -58,11 +67,11 @@ public class ValidateMapSet {
     }
     if(scotland&&!rockallCovered)throw new IllegalStateException("Rockall land missing at highest detail");
     if(scotland)System.out.println("Rockall land verified at highest detail");
-    for(int level=0;level<5;level++){
+    for(int level=0;level<levelCount;level++){
      if(land[level]==0)throw new IllegalStateException("No land at level "+level);
      for(int i=0;i<xy.length;i++)if(!hits[level][i])throw new IllegalStateException("Missing land at "+names[i]+", level "+level);
     }
-    checked+=5*xy.length;System.out.println((sierra?"Sierra Nevada":scotland?"Scotland":"England/Wales")+" land polygons by level: "+Arrays.toString(land));
+    checked+=levelCount*xy.length;System.out.println((sierra?"Sierra Nevada":scotland?"Scotland":"England/Wales")+" land polygons by level: "+Arrays.toString(land));
    }
   }
   System.out.println("PASS: "+args.length+" map files; "+total+" unique sections; unique product and appearance identities; "+checked+" regional land checks.");

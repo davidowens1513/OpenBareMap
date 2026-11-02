@@ -1,0 +1,52 @@
+{
+  "garminPackageRevision": "2.0.0-hiking-r1",
+  "verifiedUTC": "2026-11-02T21:27:03.159044+00:00",
+  "regions": {
+    "england-wales": {
+      "url": "https://downloads.appsbyonzy.dev/Garmin/OpenBareMap-England-Wales.img?v=2.0.0-hiking-r1",
+      "bytes": 873824256,
+      "sha256": "0c015951887b537b489dfdb492b5efa440708b1419ddb010cfbc514983e68c7b",
+      "fullPublicReadbackVerified": true,
+      "metadataSHA256": {
+        "england-wales-instructions.txt": "8b4969cd71a24d5c3c05a4abd943167c82b9187def1a4071a657771279397798",
+        "england-wales-SHA256SUMS.txt": "6fc2a2dfa0a2afc67128a7abe53b55cd8f634c1db9c9f6c8950d9d1a573af9c2",
+        "england-wales/manifest.json": "853ccbb5f26cd484e0ad4f0f6187ad9435f722bf04a6d2fb9f84b7c1c895a9c0"
+      }
+    },
+    "ireland": {
+      "url": "https://downloads.appsbyonzy.dev/Garmin/OpenBareMap-Ireland.img?v=2.0.0-hiking-r1",
+      "bytes": 315375616,
+      "sha256": "83cde2062e09171382be31c98c991282182eb8129110dbf75a1010a956d6611e",
+      "fullPublicReadbackVerified": true,
+      "metadataSHA256": {
+        "instructions.txt": "b35402311288d6a416bf31a5f1a7f98603fb17272d3b2d8302e85134373235a2",
+        "ireland-SHA256SUMS.txt": "88f3cc302c35be84ae62776e004d67615d54e368cd7b777a032a59920e2af04d",
+        "ireland/manifest.json": "51a15cd74d9793bc21dcedf34081ef7b899d66e452658e0cb09f63d4bfb8bf8e"
+      }
+    },
+    "scotland": {
+      "url": "https://downloads.appsbyonzy.dev/Garmin/OpenBareMap-Scotland.img?v=2.0.0-hiking-r1",
+      "bytes": 359235584,
+      "sha256": "55e0ebc8a9cbf6746e55a9b08fbb01f1cff07dc467f1d2d8bb598df1c6ac9ff2",
+      "fullPublicReadbackVerified": true,
+      "metadataSHA256": {
+        "scotland-instructions.txt": "45b7d968cdafe02c4d3949807985c8b806d9feacae55fffe28cd08b59d58fcc9",
+        "scotland-SHA256SUMS.txt": "f64a8eef76f3bffc0cb8fda62d7e49ba829eab5749624c3fbb5640ebf051181c",
+        "scotland/manifest.json": "c40aae55b9dabaf758bfcd38bf64a8227a54a36c5c96368a1136ccde29298960"
+      }
+    },
+    "sierra-nevada": {
+      "url": "https://downloads.appsbyonzy.dev/Garmin/OpenBareMap-Sierra-Nevada.img?v=2.0.0-hiking-r1",
+      "bytes": 33868800,
+      "sha256": "0eb8f7b386a9b2a1383fcdac4379e22d5146208f045dfd2327ce9c5466c6fea8",
+      "fullPublicReadbackVerified": true,
+      "metadataSHA256": {
+        "sierra-nevada-instructions.txt": "ed24434a0b3b0e1e5b4fd51c648949344bc7ffac50740c4b290b5c5f4dafce44",
+        "sierra-nevada-SHA256SUMS.txt": "cea1be9c09dd8b67f3f5cc6fb2286c1613d2866529b1852ec223dcbfe99dfb77",
+        "sierra-nevada/manifest.json": "4fab2d7a02246f5f80f4fee22d8dc73542632c1c4d4125c64a015db06367842b"
+      }
+    }
+  },
+  "publicManifestMatches": true,
+  "irelandLegendMatches": true
+}

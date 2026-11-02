@@ -29,12 +29,16 @@ class RegionalEditionTests(unittest.TestCase):
                 with self.assertRaisesRegex(ValueError,'Selected dataset changed'):run_full_region.main('england-wales')
                 run.assert_not_called()
 
-    def test_ireland_paths_and_cartography_remain_default(self):
+    def test_ireland_defaults_and_mobile_baseline_are_preserved(self):
         self.assertEqual(region_path('ireland','active-map.json'),ROOT/'active-map.json')
         self.assertEqual(region_style(),json.loads((ROOT/'style/openbaremap.json').read_text()))
         self.assertEqual(active_map(),json.loads((ROOT/'active-map.json').read_text()))
         baseline=json.loads((ROOT/'regions/ireland/preservation-baseline.json').read_text())
         for relative,expected in baseline['files'].items():
+            # Garmin has its own accepted profile; shared/mobile resources retain the original baseline.
+            if relative=='garmin/dist/OpenBareMap-Ireland.img':
+                release=json.loads((ROOT/'garmin/releases/2.0.0-hiking-r1/manifest.json').read_text())
+                expected=release['regions']['ireland']['sha256']
             with (ROOT/relative).open('rb') as stream:
                 self.assertEqual(hashlib.file_digest(stream,'sha256').hexdigest(),expected,relative)
 

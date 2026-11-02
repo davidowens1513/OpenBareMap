@@ -1,5 +1,5 @@
 ; -*- coding: UTF-8 -*-
-; OpenBareMap Montana 750i display-only cartography.
+; OpenBareMap Garmin display-only cartography.
 [_id]
 FID=4831
 ProductCode=1
@@ -431,11 +431,13 @@ FontStyle=SmallFont
 DayCustomColor=#554b3d
 NightCustomColor=#554b3d
 UseOrientation=Y
-Xpm="32 2 2 1"
-"a c #8b6f47"
+Xpm="32 4 2 1"
+"a c #654321"
 ". c none"
-"aaaaaa....aaaaaa....aaaaaa....aa"
-"aaaaaa....aaaaaa....aaaaaa....aa"
+"aaaaaaaaaa......aaaaaaaaaa......"
+"aaaaaaaaaa......aaaaaaaaaa......"
+"aaaaaaaaaa......aaaaaaaaaa......"
+"aaaaaaaaaa......aaaaaaaaaa......"
 [end]
 [_line]
 Type=0x16
@@ -444,11 +446,13 @@ FontStyle=SmallFont
 DayCustomColor=#554b3d
 NightCustomColor=#554b3d
 UseOrientation=Y
-Xpm="32 2 2 1"
-"a c #6a8f5a"
+Xpm="32 4 2 1"
+"a c #269e3f"
 ". c none"
-"aaa...aaa...aaa...aaa...aaa...aa"
-"aaa...aaa...aaa...aaa...aaa...aa"
+"aaaa....aaaa....aaaa....aaaa...."
+"aaaa....aaaa....aaaa....aaaa...."
+"aaaa....aaaa....aaaa....aaaa...."
+"aaaa....aaaa....aaaa....aaaa...."
 [end]
 [_line]
 Type=0x10003
@@ -591,11 +595,13 @@ FontStyle=SmallFont
 DayCustomColor=#554b3d
 NightCustomColor=#554b3d
 UseOrientation=Y
-Xpm="32 2 2 1"
-"a c #cc553d"
+Xpm="32 4 2 1"
+"a c #d13d2c"
 ". c none"
-"aaaaaa...aaaaaa...aaaaaa...aaaaa"
-"aaaaaa...aaaaaa...aaaaaa...aaaaa"
+"aaaaaaaaaaaa....aaaaaaaaaaaa...."
+"aaaaaaaaaaaa....aaaaaaaaaaaa...."
+"aaaaaaaaaaaa....aaaaaaaaaaaa...."
+"aaaaaaaaaaaa....aaaaaaaaaaaa...."
 [end]
 [_line]
 Type=0x10002
@@ -632,6 +638,21 @@ Xpm="32 1 2 1"
 "a c #927d96"
 ". c none"
 "aaaaaa....aaaaaa....aaaaaa....aa"
+[end]
+[_line]
+Type=0x1000b
+String=Walking route on road
+FontStyle=SmallFont
+DayCustomColor=#554b3d
+NightCustomColor=#554b3d
+UseOrientation=Y
+Xpm="32 4 2 1"
+"a c #d13d2c"
+". c none"
+"aaaaaaaaaaaa....aaaaaaaaaaaa...."
+"aaaaaaaaaaaa....aaaaaaaaaaaa...."
+"aaaaaaaaaaaa....aaaaaaaaaaaa...."
+"aaaaaaaaaaaa....aaaaaaaaaaaa...."
 [end]
 [_point]
 Type=0x100
