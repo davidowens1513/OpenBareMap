@@ -86,3 +86,18 @@ def garmin_work(region='ireland'):
     cache=Path(os.environ.get('OPENBAREMAP_BUILD_ROOT',tempfile.gettempdir()))
     identity=hashlib.sha256(str(ROOT).encode()).hexdigest()[:12]
     return cache/'OpenBareMap-builds'/identity/region/'garmin'
+
+
+def accepted_ireland_baseline():
+    """Keep shared/mobile preservation pins while selecting the accepted native release."""
+    baseline = json.loads((ROOT/'regions/ireland/preservation-baseline.json').read_text())
+    config = json.loads((ROOT/'garmin/config.json').read_text())
+    revision = config.get('garminPackageRevision')
+    manifest = ROOT/'garmin/releases'/str(revision)/'manifest.json'
+    if manifest.exists():
+        released = json.loads(manifest.read_text())
+        if released['garminPackageRevision'] != revision:
+            raise ValueError('Wrong accepted Garmin preservation revision')
+        baseline['files']['garmin/dist/OpenBareMap-Ireland.img'] = released['regions']['ireland']['sha256']
+        baseline['garminPackageRevision'] = revision
+    return baseline

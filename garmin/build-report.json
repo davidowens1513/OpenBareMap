@@ -1,5 +1,6 @@
 {
   "configSHA256": "29a71dfd4aced855794d060d6e556b6a59371eef619008a55ef76612f7f91447",
+  "contourIntervalMetres": 20,
   "familyId": 4831,
   "garminPackageRevision": "2.0.0-hiking-r1",
   "inspection": {
@@ -229,6 +230,7 @@
     "sha256": "83cde2062e09171382be31c98c991282182eb8129110dbf75a1010a956d6611e"
   },
   "region": "ireland",
+  "routing": false,
   "status": "compiled and structurally verified; device rendering depends on Garmin settings",
   "styleSHA256": {
     "OBM4831.txt": "bb608c157ce99687a427f2b2068e7bf3c14c02d9e90c010d0773780e5a86e8db",

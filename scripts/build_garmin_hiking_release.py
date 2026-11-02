@@ -66,7 +66,7 @@ def main(region):
  names=['Dublin','Belfast','Carrauntoohil'] if region=='ireland' else p.get('inspectionNames',['London','Cardiff','Newcastle upon Tyne','Plymouth','Carlisle'])
  with (out/'inspection.json').open('w') as f:subprocess.run([str(java),'-Xmx2g','-cp',str(out)+':'+str(jar),'InspectMap',str(out),*names],stdout=f,check=True)
  with (out/'hiking-validation.txt').open('w') as f:subprocess.run([str(java),'-Xmx2g','-cp',str(out)+':'+str(jar),'CheckHikingRelease',str(out)],stdout=f,check=True)
- write(out/'release.json',{'region':region,'garminPackageRevision':REVISION,'familyId':config['familyId'],'output':{'path':str(image),'bytes':image.stat().st_size,'sha256':digest(image)},'configSHA256':digest(base/'config.json'),'styleSHA256':{f.name:digest(f) for f in (base/'style').iterdir() if f.is_file()},'inspection':json.loads((out/'inspection.json').read_text()),'status':'compiled and structurally verified; device rendering depends on Garmin settings'})
+ write(out/'release.json',{'region':region,'garminPackageRevision':REVISION,'familyId':config['familyId'],'routing':False,'contourIntervalMetres':20,'output':{'path':str(image),'bytes':image.stat().st_size,'sha256':digest(image)},'configSHA256':digest(base/'config.json'),'styleSHA256':{f.name:digest(f) for f in (base/'style').iterdir() if f.is_file()},'inspection':json.loads((out/'inspection.json').read_text()),'status':'compiled and structurally verified; device rendering depends on Garmin settings'})
  print('GARMIN HIKING RELEASE VERIFIED:',region,flush=True)
 if __name__=='__main__':
  parser=argparse.ArgumentParser();parser.add_argument('--region',required=True,choices=['ireland','england-wales','scotland','sierra-nevada']);main(parser.parse_args().region)

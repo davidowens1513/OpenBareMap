@@ -52,10 +52,15 @@
   "personalTrackOverlayIncluded": false,
   "platformRevisions": {
     "garmin": {
+      "montanaInstallation": {
+        "bytes": 1705,
+        "path": "garmin/releases/2.0.0-hiking-r1/montana-installation.json",
+        "sha256": "7739fe2f49b2a5e34f597cbadac998902b1d6f8cc521c0526e15399a8adf9ccd"
+      },
       "releaseManifest": {
         "bytes": 4879,
         "path": "garmin/releases/2.0.0-hiking-r1/manifest.json",
-        "sha256": "2f40a8e716bfae3d8b3c52d6406226c5f85f337450d1bb587514aa4dc197b450"
+        "sha256": "ea55f5f9abd13369ff88bbc16762bc5a10354ddcd294ccd1ff4de07c8448967d"
       },
       "revision": "2.0.0-hiking-r1",
       "routing": false,
@@ -119,9 +124,9 @@
       "contourIntervalMetres": 20,
       "countyBorders": true,
       "deviceInstallations": {
-        "bytes": 1436,
+        "bytes": 2662,
         "path": "garmin/device-installations.json",
-        "sha256": "c2c23932229580e76b868fa1d4b19e28b569efb0547fdfc17a2ded4cefddb5cb"
+        "sha256": "73c5ccffcead91cfa127819d2d9ee20c45ad87c3b015d5b530943a0b2819d3d5"
       },
       "garminPackageRevision": "2.0.0-hiking-r1",
       "localBorders": false,
@@ -137,9 +142,9 @@
         "GPSMAP H1"
       ],
       "validation": {
-        "bytes": 12132,
+        "bytes": 12183,
         "path": "garmin/build-report.json",
-        "sha256": "3e60b4f078cb30bd1f82ed184041c3105391d68a489be6d410f19267b3067859"
+        "sha256": "5259d22e197f11cf6bc003877c2a006e779902ba07fcb51a680e139c9bb0a398"
       }
     },
     "ios": {
@@ -349,8 +354,9 @@
     "garminBinaryReadback": true,
     "garminHikingProfile": {
       "completeMapSetChecked": true,
-      "hardwareVisualReview": "Depends on Garmin settings; device file verification recorded separately",
+      "hardwareVisualReview": "User review pending for the current native profile",
       "hikingVisibilityCheckedInEveryCompiledSection": true,
+      "montanaFullReadbackVerified": true,
       "structuralInspectionPassed": true
     },
     "iosLoaderSmokeTest": true,

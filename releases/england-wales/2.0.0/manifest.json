@@ -97,5 +97,10 @@
   "region": "england-wales",
   "styleSHA256": "72a50fa0e81ca0d7d866e2d3984cef26ced13c4b1dda3799752e464813905d03",
   "terrainLockSHA256": "d1f1484cb49fab6439a925797c71bd4cb7ca6310fb43c1fcbdc5e09d1ddf5797",
-  "validation": "validation.json"
+  "validation": "validation.json",
+  "garminMontanaInstallation": {
+    "path": "regions/england-wales/garmin/installation-montana.json",
+    "bytes": 573,
+    "sha256": "f043a6791c7cca306a5e7bbee4f777a6f0a572c9b13bfda6b9731f370161e707"
+  }
 }

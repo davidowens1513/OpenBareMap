@@ -1,5 +1,6 @@
 {
   "configSHA256": "03ebee89792ddd76a83510f2ce9e61b7da0582a6c3acd8f1b8548eca88447a7f",
+  "contourIntervalMetres": 20,
   "familyId": 4835,
   "garminPackageRevision": "2.0.0-hiking-r1",
   "inspection": {
@@ -158,6 +159,7 @@
     "sha256": "0eb8f7b386a9b2a1383fcdac4379e22d5146208f045dfd2327ce9c5466c6fea8"
   },
   "region": "sierra-nevada",
+  "routing": false,
   "status": "compiled and structurally verified; device rendering depends on Garmin settings",
   "styleSHA256": {
     "OBM4835.txt": "636593d1720836f57e0952582148e0faf786bf63a24aac537dd0629d8bfc41a2",

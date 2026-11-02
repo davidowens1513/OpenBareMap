@@ -1,17 +1,17 @@
 {
-  "date": "2026-11-01",
   "device": "Montana 750i",
   "region": "england-wales",
-  "garminPackageRevision": "2.0.0-garmin-r2",
+  "mapVersion": "2.0.0",
+  "garminPackageRevision": "2.0.0-hiking-r1",
   "familyId": 4833,
-  "mapSHA256": "0fec64c33bbd62c6465726fca9904545478eba8656055f02a11d9babeb32edda",
-  "bytes": 699564032,
+  "mapSHA256": "0c015951887b537b489dfdb492b5efa440708b1419ddb010cfbc514983e68c7b",
+  "bytes": 873824256,
+  "installedDate": "2026-11-02",
+  "verifiedUTC": "2026-11-02T21:44:32.781376+00:00",
   "fullReadbackVerified": true,
-  "irelandUnchanged": true,
+  "storage": "memory card/Garmin",
+  "previousMapRetainedAsInactiveBackup": true,
   "personalTracksUnchanged": true,
-  "preservedSHA256": {
-    "OpenBareMap-Ireland.img": "2e0e907e52b0bd535481b013c2487bb327e749fcf62ab61935ae2d94396b6c96",
-    "OpenBareMap-My-Tracks.img": "1c8d81a890151a1758ef7ae7212018906e61d851ea1b32da2cace0a5f3a0b5d8"
-  },
-  "visualReview": "Repaired build installed and fully read-back verified; reboot and on-screen review pending."
+  "otherMapsUnchanged": true,
+  "visualReview": "Hardware visual review pending"
 }

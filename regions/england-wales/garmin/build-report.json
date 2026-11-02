@@ -1,5 +1,6 @@
 {
   "configSHA256": "17e5ecd3c292ee54037421c88197ed8ff3919693244b803dd26250eb21b31bff",
+  "contourIntervalMetres": 20,
   "familyId": 4833,
   "garminPackageRevision": "2.0.0-hiking-r1",
   "inspection": {
@@ -456,6 +457,7 @@
     "sha256": "0c015951887b537b489dfdb492b5efa440708b1419ddb010cfbc514983e68c7b"
   },
   "region": "england-wales",
+  "routing": false,
   "status": "compiled and structurally verified; device rendering depends on Garmin settings",
   "styleSHA256": {
     "OBM4833.txt": "2a6e95560bc83ccac397e2ac3de9864a750132eca489f4f23703bdd962654d59",

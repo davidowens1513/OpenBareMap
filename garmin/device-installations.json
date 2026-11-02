@@ -1,31 +1,24 @@
 {
   "mapVersion": "2.0.0",
-  "garminPackageRevision": "2.0.0-20m",
-  "date": "2026-10-28",
+  "garminPackageRevision": "2.0.0-hiking-r1",
+  "date": "2026-11-02",
   "devices": [
     {
       "device": "Montana 750i",
-      "mapSHA256": "2e0e907e52b0bd535481b013c2487bb327e749fcf62ab61935ae2d94396b6c96",
+      "region": "ireland",
+      "mapVersion": "2.0.0",
+      "garminPackageRevision": "2.0.0-hiking-r1",
+      "familyId": 4831,
+      "mapSHA256": "83cde2062e09171382be31c98c991282182eb8129110dbf75a1010a956d6611e",
+      "bytes": 315375616,
+      "installedDate": "2026-11-02",
+      "verifiedUTC": "2026-11-02T21:44:32.781376+00:00",
       "fullReadbackVerified": true,
-      "visualReview": "20 m edition pending hardware visual review; existing townland treatment retained",
-      "personalTrackLayerInstalled": true,
-      "garminPackageRevision": "2.0.0-20m",
-      "contourIntervalMetres": 20,
-      "bytes": 228810752,
+      "storage": "memory card/Garmin",
+      "previousMapRetainedAsInactiveBackup": true,
       "personalTracksUnchanged": true,
-      "installedDate": "2026-10-28"
-    },
-    {
-      "device": "GPSMAP 67i",
-      "mapSHA256": "2e0e907e52b0bd535481b013c2487bb327e749fcf62ab61935ae2d94396b6c96",
-      "fullReadbackVerified": true,
-      "visualReview": "20 m edition pending hardware visual review; existing townland treatment retained",
-      "personalTrackLayerInstalled": true,
-      "garminPackageRevision": "2.0.0-20m",
-      "contourIntervalMetres": 20,
-      "bytes": 228810752,
-      "personalTracksUnchanged": true,
-      "installedDate": "2026-10-28"
+      "otherMapsUnchanged": true,
+      "visualReview": "Hardware visual review pending"
     },
     {
       "date": "2026-11-01",
@@ -62,7 +55,23 @@
       "visualReview": "Installed and fully read-back verified; restart and on-screen review pending.",
       "personalTrackLayerInstalled": true,
       "installedDate": "2026-11-01"
+    },
+    {
+      "device": "GPSMAP 67i",
+      "region": "ireland",
+      "garminPackageRevision": "ireland-hiking-visibility-v10",
+      "mapSHA256": "b775aae46cd2c095a44ab4395c1c146fa1c720d25f264485c56e14a0db5eb416",
+      "bytes": 315383808,
+      "installedDate": "2026-11-02",
+      "fullReadbackVerified": true,
+      "personalTracksUnchanged": true,
+      "otherMapsUnchanged": true,
+      "publication": "Local styling trial; separate from the public release image",
+      "visualReview": "User review pending"
     }
   ],
-  "lastInstallationUpdate": "2026-11-01"
+  "lastInstallationUpdate": "2026-11-02",
+  "region": "ireland",
+  "installedDate": "2026-11-02",
+  "availableRevision": "2.0.0-hiking-r1"
 }

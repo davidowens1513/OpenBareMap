@@ -1,0 +1,44 @@
+{
+  "device": "Montana 750i",
+  "garminPackageRevision": "2.0.0-hiking-r1",
+  "verifiedUTC": "2026-11-02T21:44:32.781376+00:00",
+  "allFourActiveMapsFullyReadBackVerified": true,
+  "previousCopiesRetainedAsInactiveBackups": true,
+  "otherMapsUnchanged": true,
+  "personalTracksUnchanged": true,
+  "visualReview": "Hardware visual review pending",
+  "regions": {
+    "england-wales": {
+      "filename": "OpenBareMap-England-Wales.img",
+      "bytes": 873824256,
+      "sha256": "0c015951887b537b489dfdb492b5efa440708b1419ddb010cfbc514983e68c7b",
+      "storage": "memory card/Garmin",
+      "fullReadbackVerified": true,
+      "previousBackupFilename": "OpenBareMap-England-Wales.before-hiking-r1"
+    },
+    "ireland": {
+      "filename": "OpenBareMap-Ireland.img",
+      "bytes": 315375616,
+      "sha256": "83cde2062e09171382be31c98c991282182eb8129110dbf75a1010a956d6611e",
+      "storage": "memory card/Garmin",
+      "fullReadbackVerified": true,
+      "previousBackupFilename": "OpenBareMap-Ireland.before-hiking-r1"
+    },
+    "scotland": {
+      "filename": "OpenBareMap-Scotland.img",
+      "bytes": 359235584,
+      "sha256": "55e0ebc8a9cbf6746e55a9b08fbb01f1cff07dc467f1d2d8bb598df1c6ac9ff2",
+      "storage": "memory card/Garmin",
+      "fullReadbackVerified": true,
+      "previousBackupFilename": "OpenBareMap-Scotland.before-hiking-r1"
+    },
+    "sierra-nevada": {
+      "filename": "OpenBareMap-Sierra-Nevada.img",
+      "bytes": 33868800,
+      "sha256": "0eb8f7b386a9b2a1383fcdac4379e22d5146208f045dfd2327ce9c5466c6fea8",
+      "storage": "memory card/Garmin",
+      "fullReadbackVerified": true,
+      "previousBackupFilename": "OpenBareMap-Sierra-Nevada.before-hiking-r1"
+    }
+  }
+}

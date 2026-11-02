@@ -23,11 +23,12 @@ def main():
   base=ROOT/'garmin' if region=='ireland' else ROOT/'regions'/region/'garmin';image=base/'dist'/('OpenBareMap-'+TITLES[region]+'.img');tmp=image.with_suffix('.img.next');shutil.copyfile(source,tmp);assert digest(tmp)==records[region]['output']['sha256'];tmp.replace(image)
   for name in ['inspection.json','hiking-validation.txt']:
    shutil.copyfile(garmin_work(region)/'hiking-r1'/name,base/name)
-  build=records[region];build['output']=record(image);write(base/'build-report.json',build)
+  build=records[region];build.update(routing=False,contourIntervalMetres=20);build['output']=record(image);write(base/'build-report.json',build)
   shutil.copyfile(base/'config.json',dest/(region+'-config.json'));shutil.copyfile(base/'hiking-validation.txt',dest/(region+'-hiking-validation.txt'))
   filename=image.name;manifest['regions'][region]={**record(image),'familyId':build['familyId'],'tileCount':build['inspection']['tiles'],'downloadURL':'https://downloads.appsbyonzy.dev/Garmin/'+filename+'?v='+REV,'instructionsURL':'https://downloads.appsbyonzy.dev/Garmin/'+('instructions.txt' if region=='ireland' else region+'-instructions.txt'),'sourceLockSHA256':digest(region_path(region,'sources.lock.json')),'terrainLockSHA256':digest(region_path(region,'terrain-sources.lock.json')),'garminInputsLockSHA256':digest(base/'inputs.lock.json'),'demPaddingLockSHA256':digest(base/'dem-padding.lock.json'),'buildReport':record(base/'build-report.json')}
   if region!='ireland':
    mp=ROOT/'releases'/region/'2.0.0/manifest.json';data=json.loads(mp.read_text());data['garmin']=record(image);data['garminPackageRevision']=REV;write(mp,data)
+   vp=mp.with_name('validation.json');validation=json.loads(vp.read_text());validation['garmin']=build;validation['garminMapSetValidation']=record(dest/'map-set-validation.txt');validation['irelandGarminPackageRevision']=REV;write(vp,validation)
  instructions()
  for region in TITLES:
   base=ROOT/'garmin' if region=='ireland' else ROOT/'regions'/region/'garmin';folder=base/'dist';sums=folder/'SHA256SUMS.txt'

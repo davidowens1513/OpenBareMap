@@ -156,10 +156,12 @@ def validate(region):
         output['smallIslandLandBackground']=land_coverage(ROOT/active['datasets']['topography']['path'],{'rockall':p['destinations']['rockall'][:2]},zoom_levels=[11,12])
     output['detail']={name:detail(ROOT/active['datasets'][name]['path']) for name in ('basemap','topography')}
     output['packages']={platform:package(ROOT/'regions'/region/platform/folder,platform,region) for platform,folder in [('ios','OpenBareMap.bundle'),('android','OpenBareMap')]}
-    baseline=json.loads((ROOT/'regions/ireland/preservation-baseline.json').read_text())
+    from regions import accepted_ireland_baseline
+    baseline=accepted_ireland_baseline()
     for relative,expected in baseline['files'].items():
         if digest(ROOT/relative)!=expected:raise ValueError('Ireland baseline changed: '+relative)
     output['irelandPreserved']=True
+    output['irelandGarminPackageRevision']=baseline.get('garminPackageRevision','2.0.0-20m')
     output['labelGlyphs']=label_glyphs(region)
     geometry_path=ROOT/'releases'/region/p['mapVersion']/'build-records'/(region+'-geometry')/'geometry-report.json'
     if not geometry_path.exists():geometry_path=ROOT/'build'/(region+'-geometry')/'geometry-report.json'
