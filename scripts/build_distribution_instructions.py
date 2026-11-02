@@ -29,5 +29,10 @@ def build():
         (dest/'instructions.txt').write_text(text);(dest/'SHA256SUMS.txt').write_text(sha+'  '+filename+'\n')
         shutil.copyfile(source/'ATTRIBUTION.txt',dest/'ATTRIBUTION.txt')
         for name in ['terrain-attribution.md','terrain-data-sources.md']:shutil.copyfile(ROOT/'data'/name,dest/name)
-        write(dest/'manifest.json',{'region':region,'downloadURL':'https://downloads.appsbyonzy.dev/Garmin/'+filename,'instructionsURL':'https://downloads.appsbyonzy.dev/Garmin/'+('instructions.txt' if region=='ireland' else region+'-instructions.txt'),'imageSHA256':sha,'instructionsSHA256':digest(dest/'instructions.txt')})
+        record={'region':region,'downloadURL':'https://downloads.appsbyonzy.dev/Garmin/'+filename,'instructionsURL':'https://downloads.appsbyonzy.dev/Garmin/'+('instructions.txt' if region=='ireland' else region+'-instructions.txt'),'imageSHA256':sha,'instructionsSHA256':digest(dest/'instructions.txt')}
+        boundary=source/'boundary-source.json'
+        if boundary.exists():
+            shutil.copyfile(boundary,dest/boundary.name)
+            record.update(boundarySourceURL='https://downloads.appsbyonzy.dev/Garmin/'+region+'/'+boundary.name,boundarySourceSHA256=digest(boundary))
+        write(dest/'manifest.json',record)
 if __name__=='__main__':build()
