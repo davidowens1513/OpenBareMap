@@ -1,0 +1,90 @@
+{
+  "buildingResolution": 24,
+  "collectionRevision": "2.0.1-isle-of-man-r1",
+  "fineContourResolution": 23,
+  "format": "openbaremap-garmin-release-v1",
+  "hikingLineResolution": 24,
+  "hikingLineWidthPixels": 4,
+  "nativeLevels": [
+    24,
+    23,
+    22,
+    20,
+    18,
+    16
+  ],
+  "regions": {
+    "england-wales": {
+      "buildReport": {
+        "bytes": 33354,
+        "path": "regions/england-wales/garmin/build-report.json",
+        "sha256": "02cb782f6737b031d501927753384945e80b5de1d5eecdb959e158fff2ef9a85"
+      },
+      "bytes": 919142400,
+      "downloadURL": "https://downloads.appsbyonzy.dev/Garmin/OpenBareMap-England-Wales.img?v=2.0.1-isle-of-man-r1",
+      "familyId": 4833,
+      "garminPackageRevision": "2.0.1-isle-of-man-r1",
+      "instructionsURL": "https://downloads.appsbyonzy.dev/Garmin/england-wales-instructions.txt",
+      "path": "regions/england-wales/garmin/dist/OpenBareMap-England-Wales.img",
+      "sha256": "e28943068173e7d0a09ae740d5a6900115eb2cd515a2e26bf3d3464b1db62475",
+      "sourceLockSHA256": "ccff46e007e87c93ef013e66bbdd759167e9856f67f5113667d0f2deffa6e577",
+      "tileCount": 324
+    },
+    "ireland": {
+      "buildReport": {
+        "bytes": 12183,
+        "path": "garmin/build-report.json",
+        "sha256": "5259d22e197f11cf6bc003877c2a006e779902ba07fcb51a680e139c9bb0a398"
+      },
+      "bytes": 315375616,
+      "downloadURL": "https://downloads.appsbyonzy.dev/Garmin/OpenBareMap-Ireland.img?v=2.0.0-hiking-r1",
+      "familyId": 4831,
+      "garminPackageRevision": "2.0.0-hiking-r1",
+      "instructionsURL": "https://downloads.appsbyonzy.dev/Garmin/instructions.txt",
+      "path": "garmin/dist/OpenBareMap-Ireland.img",
+      "sha256": "83cde2062e09171382be31c98c991282182eb8129110dbf75a1010a956d6611e",
+      "sourceLockSHA256": "fc3807f33d665938a76e34f6d70674bd83dd93d7aae405a201378dae93bb5227",
+      "tileCount": 91
+    },
+    "scotland": {
+      "buildReport": {
+        "bytes": 11678,
+        "path": "regions/scotland/garmin/build-report.json",
+        "sha256": "928cbcc9c317f5accd3d3a5586b22a5de64d7dd45e3b6556298198dd4137efa7"
+      },
+      "bytes": 359235584,
+      "downloadURL": "https://downloads.appsbyonzy.dev/Garmin/OpenBareMap-Scotland.img?v=2.0.0-hiking-r1",
+      "familyId": 4834,
+      "garminPackageRevision": "2.0.0-hiking-r1",
+      "instructionsURL": "https://downloads.appsbyonzy.dev/Garmin/scotland-instructions.txt",
+      "path": "regions/scotland/garmin/dist/OpenBareMap-Scotland.img",
+      "sha256": "55e0ebc8a9cbf6746e55a9b08fbb01f1cff07dc467f1d2d8bb598df1c6ac9ff2",
+      "sourceLockSHA256": "2bdd576b72e9e579412e8ae54dd630380c3a52593b2581bb2338a1aa0a39b3ab",
+      "tileCount": 85
+    },
+    "sierra-nevada": {
+      "buildReport": {
+        "bytes": 5356,
+        "path": "regions/sierra-nevada/garmin/build-report.json",
+        "sha256": "b8ba0961911fcd1d75797b7467805beaa19552cf125de9affcece7a3405d20c2"
+      },
+      "bytes": 33868800,
+      "downloadURL": "https://downloads.appsbyonzy.dev/Garmin/OpenBareMap-Sierra-Nevada.img?v=2.0.0-hiking-r1",
+      "familyId": 4835,
+      "garminPackageRevision": "2.0.0-hiking-r1",
+      "instructionsURL": "https://downloads.appsbyonzy.dev/Garmin/sierra-nevada-instructions.txt",
+      "path": "regions/sierra-nevada/garmin/dist/OpenBareMap-Sierra-Nevada.img",
+      "sha256": "0eb8f7b386a9b2a1383fcdac4379e22d5146208f045dfd2327ce9c5466c6fea8",
+      "sourceLockSHA256": "6e1b6b971268eb22f7212003334c04b1a3609e27b0455a8fff461511456f01f7",
+      "tileCount": 14
+    }
+  },
+  "releaseDate": "2026-11-02",
+  "routing": false,
+  "validation": {
+    "bytes": 670,
+    "path": "garmin/releases/2.0.1-isle-of-man-r1/map-set-validation.txt",
+    "sha256": "fa814c4726abda1485436d06bcb040085230ad8d7180e5bfca420dfb2ca3604f"
+  },
+  "whiteBacking": false
+}

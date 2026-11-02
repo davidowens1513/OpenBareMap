@@ -1,0 +1,46 @@
+{
+  "files": 41,
+  "databases": {
+    "basemap": {
+      "integrity": "ok",
+      "zooms": [
+        4,
+        14
+      ]
+    },
+    "british-grid": {
+      "integrity": "ok",
+      "zooms": [
+        10,
+        14
+      ]
+    },
+    "hillshade": {
+      "integrity": "ok",
+      "zooms": [
+        6,
+        12
+      ]
+    },
+    "topography": {
+      "integrity": "ok",
+      "zooms": [
+        4,
+        14
+      ]
+    },
+    "coast": {
+      "integrity": "ok",
+      "zooms": [
+        4,
+        12
+      ]
+    }
+  },
+  "androidDeviceRenderingTested": false,
+  "zip": {
+    "name": "OpenBareMap-Android.zip",
+    "bytes": 3483075855,
+    "sha256": "54cdd187e3c165c131989fc5128de54da5a2ed7ceded9e6f10f65558fe82623a"
+  }
+}

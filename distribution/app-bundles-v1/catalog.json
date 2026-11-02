@@ -1,14 +1,19 @@
 {
   "format": "openbaremap-app-bundle-catalog-v1",
-  "mapVersion": "2.0.0",
+  "mapVersions": {
+    "england-wales": "2.0.1",
+    "ireland": "2.0.0",
+    "scotland": "2.0.0",
+    "sierra-nevada": "2.0.0"
+  },
   "regions": {
     "england-wales": {
       "android": {
-        "bytes": 3470954242,
+        "bytes": 3483104475,
         "datasets": {
           "basemap": {
             "path": "maps/basemap.mbtiles",
-            "sha256": "ff60d06aa4646b9a917fea499d69ad9d04d46c63c8ab981e5653a320d1fc3fac"
+            "sha256": "4597d90fd9dce0a120dccad6b52f05d7189f4ea4a34471bb7be91b97d86f224e"
           },
           "coast": {
             "derivedFrom": "6228ae3821d85526d24f33b21d6db1be300b75babd3e254c9dfa0f1cd96066e1",
@@ -28,20 +33,20 @@
             "sha256": "6228ae3821d85526d24f33b21d6db1be300b75babd3e254c9dfa0f1cd96066e1"
           }
         },
-        "instructionsSHA256": "c6ced1e729ddc319e4c61488e22ff35b04aeaeb57143c5f58261d7a7236e5ffe",
-        "instructionsURL": "https://downloads.appsbyonzy.dev/OpenBareMap/england-wales/2.0.0/app-bundles-v1/android/instructions.txt",
-        "localPath": "work/app-bundles-v1/england-wales/android/OpenBareMap-England-Wales-Android-Bundle.zip",
-        "mapManifestSHA256": "7e2db25a6d22ed47720d22b1420c0122712101caecac76ee3f7f43c181e779ac",
-        "r2Key": "OpenBareMap/england-wales/2.0.0/app-bundles-v1/android/OpenBareMap-England-Wales-Android-Bundle.zip",
-        "sha256": "55bd6478d2f65b8ebb96c06ae0dff79cea1922714f20a8693a58fd48fc534ff4",
-        "url": "https://downloads.appsbyonzy.dev/OpenBareMap/england-wales/2.0.0/app-bundles-v1/android/OpenBareMap-England-Wales-Android-Bundle.zip"
+        "instructionsSHA256": "f7722c1814410a0a6e4d7515d8670e27f8184d982377f03bf9a4da91b41c6641",
+        "instructionsURL": "https://downloads.appsbyonzy.dev/OpenBareMap/england-wales/2.0.1/app-bundles-v1/android/instructions.txt",
+        "localPath": "work/isle-of-man/kits/england-wales/android/OpenBareMap-England-Wales-Android-Bundle.zip",
+        "mapManifestSHA256": "4c3b2a7bb0a0669f259bfd06d8216955a6d102cc9138545ddff8e260da383f73",
+        "r2Key": "OpenBareMap/england-wales/2.0.1/app-bundles-v1/android/OpenBareMap-England-Wales-Android-Bundle.zip",
+        "sha256": "4bfbe3535754100fd2b449a6bad978e224f6597a6557bcf71f78ccc399ca450e",
+        "url": "https://downloads.appsbyonzy.dev/OpenBareMap/england-wales/2.0.1/app-bundles-v1/android/OpenBareMap-England-Wales-Android-Bundle.zip"
       },
       "ios": {
-        "bytes": 3470953602,
+        "bytes": 3483103819,
         "datasets": {
           "basemap": {
             "path": "maps/basemap.mbtiles",
-            "sha256": "ff60d06aa4646b9a917fea499d69ad9d04d46c63c8ab981e5653a320d1fc3fac"
+            "sha256": "4597d90fd9dce0a120dccad6b52f05d7189f4ea4a34471bb7be91b97d86f224e"
           },
           "coast": {
             "derived_from": "6228ae3821d85526d24f33b21d6db1be300b75babd3e254c9dfa0f1cd96066e1",
@@ -63,13 +68,13 @@
             "sha256": "6228ae3821d85526d24f33b21d6db1be300b75babd3e254c9dfa0f1cd96066e1"
           }
         },
-        "instructionsSHA256": "d9810045328f78bcba401b406222b1db6e083c608aa1bf1e904b83efac4d829c",
-        "instructionsURL": "https://downloads.appsbyonzy.dev/OpenBareMap/england-wales/2.0.0/app-bundles-v1/ios/instructions.txt",
-        "localPath": "work/app-bundles-v1/england-wales/ios/OpenBareMap-England-Wales-iOS-Bundle.zip",
-        "mapManifestSHA256": "1c927d7c6f507242f9d70546c2974c7a3cfe4deff06f7cf72c3466c52818d6f0",
-        "r2Key": "OpenBareMap/england-wales/2.0.0/app-bundles-v1/ios/OpenBareMap-England-Wales-iOS-Bundle.zip",
-        "sha256": "2db3e42d30804b0576f3e646fd03f7aef5d13c2a3870aaa17fa5ec03acc709a1",
-        "url": "https://downloads.appsbyonzy.dev/OpenBareMap/england-wales/2.0.0/app-bundles-v1/ios/OpenBareMap-England-Wales-iOS-Bundle.zip"
+        "instructionsSHA256": "042b28e818d101a7c0c7feb8cc8f0d12d9dd235d09288b1a16089147787ac370",
+        "instructionsURL": "https://downloads.appsbyonzy.dev/OpenBareMap/england-wales/2.0.1/app-bundles-v1/ios/instructions.txt",
+        "localPath": "work/isle-of-man/kits/england-wales/ios/OpenBareMap-England-Wales-iOS-Bundle.zip",
+        "mapManifestSHA256": "acfacffa096db7a0db9059cc87b65afee84c10cf06a82175bdacc14d1c1bec01",
+        "r2Key": "OpenBareMap/england-wales/2.0.1/app-bundles-v1/ios/OpenBareMap-England-Wales-iOS-Bundle.zip",
+        "sha256": "985de4d38fc60efec32e834dc9594d9bd160e6c43750f78cf3ace7c542943ba6",
+        "url": "https://downloads.appsbyonzy.dev/OpenBareMap/england-wales/2.0.1/app-bundles-v1/ios/OpenBareMap-England-Wales-iOS-Bundle.zip"
       }
     },
     "ireland": {
@@ -283,5 +288,6 @@
       }
     }
   },
-  "sourceCommit": "45e4435b12d9c8fddc735b6cd49abff63d16557b"
+  "sourceCommit": "f9a79e41b159fc9e135ead562332e7f2e7efe2ca",
+  "sourceRevisionNote": "Base repository commit; the per-region storage revisions and dataset/archive SHA-256 values identify the exact packages."
 }

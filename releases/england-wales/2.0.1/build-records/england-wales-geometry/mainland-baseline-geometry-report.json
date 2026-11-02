@@ -1,0 +1,80 @@
+{
+  "builderSHA256": "1fca45d3c03bf96b39b15ac9a8fde7e054aec5f12598669197a035d32c28c283",
+  "contoursSourceSHA256": "ccc2d51fcfff368dac3a6f74488a51eae4fc34699d340db6afc5c52f572e2c9b",
+  "counts": {
+    "contours": 228657,
+    "grid": {
+      "grid_10km": 137,
+      "grid_1km": 1352
+    },
+    "landcover": {
+      "empty_source_areas": [
+        {
+          "area_id": 43651871,
+          "outer_ring_sizes": [],
+          "reason": "invalid area (area_id=43651871)"
+        },
+        {
+          "area_id": 31843017,
+          "outer_ring_sizes": [],
+          "reason": "invalid area (area_id=31843017)"
+        },
+        {
+          "area_id": 37575935,
+          "outer_ring_sizes": [],
+          "reason": "invalid area (area_id=37575935)"
+        },
+        {
+          "area_id": 38966523,
+          "outer_ring_sizes": [],
+          "reason": "invalid area (area_id=38966523)"
+        },
+        {
+          "area_id": 7624595,
+          "outer_ring_sizes": [],
+          "reason": "invalid area (area_id=7624595)"
+        },
+        {
+          "area_id": 6749461,
+          "outer_ring_sizes": [],
+          "reason": "invalid area (area_id=6749461)"
+        },
+        {
+          "area_id": 42818331,
+          "outer_ring_sizes": [],
+          "reason": "invalid area (area_id=42818331)"
+        },
+        {
+          "area_id": 42956567,
+          "outer_ring_sizes": [],
+          "reason": "invalid area (area_id=42956567)"
+        },
+        {
+          "area_id": 43179685,
+          "outer_ring_sizes": [],
+          "reason": "invalid area (area_id=43179685)"
+        }
+      ],
+      "features": 2056811,
+      "retained": 202120,
+      "smoothed": 1854691
+    }
+  },
+  "osm": {
+    "bytes": 1859551571,
+    "operation": "libosmium sorted merge; duplicate OSM objects resolved by version",
+    "path": "data/regions/england-wales/england-wales-261030.osm.pbf",
+    "replicationTimestamp": "2026-10-30T21:24:51Z",
+    "sha256": "dd983328bdc2cc7d5330a5f68f89daf3fa2730658f93b5b59f09e04a9650851d",
+    "snapshot_date": "2026-10-30",
+    "url": null
+  },
+  "outputs": {
+    "contours.geojson": "21fe4f57df24b93657967f6c1d25e8699d6ff85a453c35a0cab6b1ef1d403ab4",
+    "grid_10km.geojson": "b74fec9260cc7ad726566cde5cf5615c982fc70f3d386b840b7656ceaa5f3a9a",
+    "grid_1km.geojson": "9a8d8ae438c4ab277b2cdb378f6f4c8ceef833bf085fc481f963cc6382c5c3b6",
+    "landcover.geojson": "07a478d1b0b38c8687c0e5bde50092bf66b44e63e939c009e57f5087072eb9a3"
+  },
+  "region": "england-wales",
+  "smootherSHA256": "7581d024dc1c1bec931642c7201db149bf64a64c814c451fa8bf37a0881ea6c9"
+}

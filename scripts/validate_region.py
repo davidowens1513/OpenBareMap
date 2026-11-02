@@ -20,7 +20,11 @@ ANCHORS={
     'Anglesey':[-4.331,53.229], 'Eryri':[-4.076,53.068],
     'Bannau Brycheiniog':[-3.436,51.884], 'Peak District':[-1.837,53.35],
     'Lake District':[-3.211,54.455], 'Carlisle':[-2.938,54.893],
-    'Berwick upon Tweed':[-2.004,55.77], 'Holy Island':[-1.802,55.67]
+    'Berwick upon Tweed':[-2.004,55.77], 'Holy Island':[-1.802,55.67],
+    'Douglas':[-4.48,54.15], 'Ramsey':[-4.39,54.32],
+    'Peel':[-4.69,54.223], 'Snaefell':[-4.462,54.263],
+    'Castletown':[-4.65,54.074], 'Calf of Man':[-4.825,54.055],
+    'Point of Ayre':[-4.37,54.409]
 }
 
 def xyz(lon,lat,zoom):
@@ -31,7 +35,9 @@ def land_coverage(path,anchors=None,zoom_levels=range(8,13)):
     """Check actual polygon coverage, including the two reported blue patches."""
     anchors=anchors or {'Moelwyn':[-3.995,52.965],'Llandeilo':[-3.991,51.886],
              'London':[-.128,51.507],'Cardiff':[-3.179,51.482],
-             'Carlisle':[-2.938,54.893],'Dartmoor':[-3.94,50.58]}
+             'Carlisle':[-2.938,54.893],'Dartmoor':[-3.94,50.58],
+             'Douglas':[-4.48,54.15],'Snaefell':[-4.462,54.263],
+             'Calf of Man':[-4.825,54.055]}
     def contains(raw,px,py):
         extent=next((v for n,w,v in fields(raw) if n==5),4096)
         px*=extent;py*=extent

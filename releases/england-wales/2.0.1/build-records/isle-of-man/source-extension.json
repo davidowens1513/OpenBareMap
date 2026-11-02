@@ -1,0 +1,28 @@
+{
+  "isleOfMan": {
+    "bytes": 6116247,
+    "path": "data/regions/england-wales/isle-of-man-261030.osm.pbf",
+    "replicationTimestamp": "2026-10-30T21:24:51Z",
+    "sha256": "14a10af67ac5fb604f39cca8c70be392684dae7211152da81b3ebacfb73b0c3b",
+    "url": "https://download.geofabrik.de/europe/isle-of-man-261030.osm.pbf"
+  },
+  "newCombinedOSM": {
+    "bytes": 1865917879,
+    "operation": "Sorted libosmium union of complete England, Wales and Isle of Man extracts; duplicate objects resolved by version",
+    "path": "data/regions/england-wales/england-wales-isle-of-man-261030.osm.pbf",
+    "replicationTimestamp": "2026-10-30T21:24:51Z",
+    "sha256": "816c0266055734cd8f95fe944d35b2c4986c4fa95314fd4f0ffab6c0576b9899",
+    "snapshot_date": "2026-10-30",
+    "url": null
+  },
+  "previousCombinedOSM": {
+    "bytes": 1859551571,
+    "operation": "libosmium sorted merge; duplicate OSM objects resolved by version",
+    "path": "data/regions/england-wales/england-wales-261030.osm.pbf",
+    "replicationTimestamp": "2026-10-30T21:24:51Z",
+    "sha256": "dd983328bdc2cc7d5330a5f68f89daf3fa2730658f93b5b59f09e04a9650851d",
+    "snapshot_date": "2026-10-30",
+    "url": null
+  },
+  "sameReplicationTimestamp": true
+}

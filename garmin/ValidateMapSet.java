@@ -11,7 +11,7 @@ import uk.me.parabola.imgfmt.app.lbl.LBLFileReader;
 /** Reject collisions across the actual installable binaries and missing low-detail land. */
 public class ValidateMapSet {
  static final String[] NAMES={"London","Cardiff","Newcastle","Dartmoor","Snowdonia","Peak District","Anglesey","Isle of Wight","St Marys Scilly","Shrewsbury","Whitchurch","Wem","Bangor","Tywyn","Newtown","Hereford"};
- static final double[][] XY={{-.128,51.507},{-3.179,51.482},{-1.617,54.978},{-3.94,50.58},{-4.076,53.068},{-1.837,53.35},{-4.35,53.28},{-1.30,50.67},{-6.3113,49.9140},{-2.754,52.707},{-2.683,52.970},{-2.720,52.858},{-4.128,53.228},{-4.089,52.585},{-3.317,52.516},{-2.715,52.056}};
+ static final double[][] XY={{-.128,51.507},{-3.179,51.482},{-1.617,54.978},{-3.94,50.58},{-4.076,53.068},{-1.837,53.35},{-4.35,53.28},{-1.30,50.67},{-6.3113,49.9140},{-2.754,52.707},{-2.683,52.970},{-2.720,52.858},{-4.128,53.228},{-4.089,52.585},{-3.317,52.516},{-2.715,52.056},{-4.48,54.15},{-4.462,54.263},{-4.69,54.223},{-4.825,54.055},{-4.39,54.32},{-4.65,54.074}};
  public static void main(String[] args)throws Exception {
   Set<String> identities=new HashSet<>(),tiles=new HashSet<>(),types=new HashSet<>();int total=0,checked=0;
   for(String file:args)try(var fs=ImgFS.openFs(file)) {

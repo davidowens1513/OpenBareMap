@@ -13,7 +13,7 @@ BASE='https://downloads.appsbyonzy.dev/'
 def render(name,p):
     text=(ROOT/'distribution/templates'/name).read_text()
     lon,lat,zoom=p.get('destinations',{'island':[-8.15,53.4,7]})['island']
-    for key,value in {'LABEL':p['label'],'LAT':lat,'LON':lon,'ZOOM':zoom}.items():text=text.replace('{{'+key+'}}',str(value))
+    for key,value in {'LABEL':p['label'],'VERSION':p['mapVersion'],'LAT':lat,'LON':lon,'ZOOM':zoom}.items():text=text.replace('{{'+key+'}}',str(value))
     if '{{' in text:raise ValueError('Unresolved instruction template')
     return text
 
@@ -46,10 +46,12 @@ def archive_tree(payload,target):
     with zipfile.ZipFile(target) as archive:
         if archive.testzip():raise ValueError('Archive CRC failure')
 
-def build_one(region,output):
+def build_one(region,output,platforms=('ios','android')):
     p=profile(region);records={};title={'ireland':'Ireland','england-wales':'England-Wales','scotland':'Scotland','sierra-nevada':'Sierra-Nevada'}[region]
-    directory=output/region;directory.mkdir(parents=True,exist_ok=False)
+    directory=output/region;directory.mkdir(parents=True,exist_ok=True)
+    if (directory/'manifest.json').exists():records=json.loads((directory/'manifest.json').read_text())
     for platform,folder in [('ios','OpenBareMap.bundle'),('android','OpenBareMap')]:
+        if platform not in platforms:continue
         print(region,platform,'verifying resources',flush=True)
         source=package_root(region,platform);manifest=verify_resources(source/folder,region,platform)
         dest=directory/platform;dest.mkdir();payload=dest/'payload';payload.mkdir();support=payload/'integration';support.mkdir()
@@ -97,11 +99,11 @@ def build_one(region,output):
     return region,records
 
 if __name__=='__main__':
-    parser=argparse.ArgumentParser();parser.add_argument('--output',type=Path,default=ROOT/'work'/VERSION);parser.add_argument('--regions',nargs='+',choices=['ireland','england-wales','scotland','sierra-nevada'],default=['ireland','england-wales','scotland','sierra-nevada']);args=parser.parse_args();args.output.mkdir(parents=True,exist_ok=True)
-    with ThreadPoolExecutor(max_workers=2) as pool:records=dict(pool.map(lambda r:build_one(r,args.output),args.regions))
+    parser=argparse.ArgumentParser();parser.add_argument('--output',type=Path,default=ROOT/'work'/VERSION);parser.add_argument('--platforms',nargs='+',choices=['ios','android'],default=['ios','android']);parser.add_argument('--regions',nargs='+',choices=['ireland','england-wales','scotland','sierra-nevada'],default=['ireland','england-wales','scotland','sierra-nevada']);args=parser.parse_args();args.output=args.output.resolve();args.output.mkdir(parents=True,exist_ok=True)
+    with ThreadPoolExecutor(max_workers=2) as pool:records=dict(pool.map(lambda r:build_one(r,args.output,args.platforms),args.regions))
     records={region:json.loads((args.output/region/'manifest.json').read_text()) for region in ['ireland','england-wales','scotland','sierra-nevada'] if (args.output/region/'manifest.json').exists()}
     dest=ROOT/'distribution'/VERSION;dest.mkdir(exist_ok=True)
     existing=json.loads((dest/'catalog.json').read_text())['regions'] if (dest/'catalog.json').exists() else {}
     records={**existing,**records}
-    write(dest/'catalog.json',{'format':'openbaremap-app-bundle-catalog-v1','mapVersion':'2.0.0','regions':records,'sourceCommit':__import__('subprocess').check_output(['git','rev-parse','HEAD'],text=True).strip()})
+    write(dest/'catalog.json',{'format':'openbaremap-app-bundle-catalog-v1','mapVersions':{r:profile(r)['mapVersion'] for r in records},'regions':records,'sourceCommit':__import__('subprocess').check_output(['git','rev-parse','HEAD'],text=True).strip()})
     print('All regional app integration bundles complete',flush=True)

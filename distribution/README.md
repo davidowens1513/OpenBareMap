@@ -2,7 +2,7 @@
 
 `app-bundles-v1/catalog.json` identifies the iOS and Android kit for each edition,
 including its public R2 URL, instructions, archive size and SHA-256. Each region
-uses `OpenBareMap/<region>/2.0.0/app-bundles-v1/<platform>/` in R2. The shared
+uses `OpenBareMap/<region>/<map-version>/app-bundles-v1/<platform>/` in R2. The shared
 catalog is published at `OpenBareMap/app-bundles-v1/catalog.json`.
 
 The iOS ZIP contains an unchanged, checksum-verified regional OpenBareMap.bundle,
@@ -36,7 +36,7 @@ Publish only the delivery files, excluding each temporary payload directory:
 
 ```sh
 rclone copy work/app-bundles-v1/<region> \
-  r2:baregps-production-assets/OpenBareMap/<region>/2.0.0/app-bundles-v1 \
+  r2:baregps-production-assets/OpenBareMap/<region>/<map-version>/app-bundles-v1 \
   --exclude '**/payload/**' --checksum --s3-no-check-bucket
 ```
 
@@ -44,3 +44,5 @@ The website and root README use the catalog's URLs. Public file readbacks,
 SDK example checks and browser checks are recorded beside the catalog. Garmin
 instructions use one template across editions; device-specific installation and
 historical build records remain in the platform/release subdirectories.
+
+The catalog records versions per region: England/Wales includes the Isle of Man in 2.0.1; the other editions remain 2.0.0. Use the catalog URL and checksum for the selected region. `--platforms ios` or `--platforms android` packages one platform at a time when disk space is limited.

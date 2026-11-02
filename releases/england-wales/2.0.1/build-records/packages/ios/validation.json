@@ -1,0 +1,41 @@
+{
+  "checksums": true,
+  "databases": {
+    "basemap": {
+      "integrity": "ok",
+      "minzoom": 4,
+      "maxzoom": 14,
+      "tiles": 208061
+    },
+    "british-grid": {
+      "integrity": "ok",
+      "minzoom": 10,
+      "maxzoom": 14,
+      "tiles": 236502
+    },
+    "hillshade": {
+      "integrity": "ok",
+      "minzoom": 6,
+      "maxzoom": 12,
+      "tiles": 8627
+    },
+    "topography": {
+      "integrity": "ok",
+      "minzoom": 4,
+      "maxzoom": 14,
+      "tiles": 162177
+    },
+    "coast": {
+      "integrity": "ok",
+      "minzoom": 4,
+      "maxzoom": 12,
+      "tiles": 26091
+    }
+  },
+  "styleSourceFiles": true,
+  "fontRanges": true,
+  "spriteReferences": true,
+  "nativeDeviceRenderTested": false,
+  "totalBytes": 3483081453,
+  "fileCount": 44
+}

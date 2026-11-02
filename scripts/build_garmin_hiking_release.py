@@ -10,8 +10,9 @@ from build import java_path,tools,run
 from identities import write_tile_args,validate_config
 REVISION='2.0.0-hiking-r1'
 def main(region):
- p=profile(region);base=ROOT/'garmin' if region=='ireland' else ROOT/'regions'/region/'garmin';config=json.loads((base/'config.json').read_text());validate_config(region,config);assert config['garminPackageRevision']==REVISION
- work=garmin_work(region);coverage_polygon=base/('ireland.poly' if region=='ireland' else 'coverage.poly');out=work/'hiking-r1';out.mkdir(parents=True,exist_ok=True);tools()
+ global REVISION
+ p=profile(region);base=ROOT/'garmin' if region=='ireland' else ROOT/'regions'/region/'garmin';config=json.loads((base/'config.json').read_text());validate_config(region,config);REVISION=config['garminPackageRevision']
+ work=garmin_work(region);coverage_polygon=base/('ireland.poly' if region=='ireland' else 'coverage.poly');out=work/('hiking-r1' if REVISION=='2.0.0-hiking-r1' else REVISION);out.mkdir(parents=True,exist_ok=True);tools()
  if (out/'release.json').exists():
   report=json.loads((out/'release.json').read_text());assert digest(out/'gmapsupp.img')==report['output']['sha256'];assert digest(base/'config.json')==report['configSHA256'];assert report['styleSHA256']=={f.name:digest(f) for f in (base/'style').iterdir() if f.is_file()};print('Verified completed build:',region,flush=True);return
  # Source locks must always match the complete local inputs.

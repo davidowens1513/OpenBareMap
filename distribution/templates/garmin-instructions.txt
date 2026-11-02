@@ -1,4 +1,4 @@
-OpenBareMap {{LABEL}} 2.0.0 — Garmin Map (2.0.0-hiking-r1)
+OpenBareMap {{LABEL}} {{VERSION}} — Garmin Map ({{REVISION}})
 For compatible Garmin mapping products
 
 1. Contents
@@ -33,7 +33,9 @@ Confirm the region is listed and enabled. Check an overview and detailed views
 of known mountains, coast and settlements. The installed map works offline.
 If it is not listed, check the file finished copying, its checksum matches and
 the storage location is supported. Avoid enabling duplicate copies of the same
-regional edition. Rendering and available controls depend on the Garmin product.
+regional edition. If a rectangular photographic patch covers the map, check
+for separately enabled BirdsEye or custom imagery covering that area. Disable
+only the conflicting imagery layer and retain a backup. Rendering and available controls depend on the Garmin product.
 
 5. Attribution and distribution
 OpenStreetMap-derived data is distributed under ODbL 1.0. Preserve the map and

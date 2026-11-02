@@ -93,6 +93,9 @@ def prepare(region='ireland'):
   src=ROOT/item['path']
   if digest(src)!=item['sha256']:raise ValueError('Elevation source changed: '+str(src))
   dest=hgt/src.stem
+  if dest.exists():
+   with gzip.open(src,'rb') as inp:expected=hashlib.file_digest(inp,'sha256').hexdigest()
+   if digest(dest)==expected:continue
   with gzip.open(src,'rb') as inp,dest.open('wb') as out:shutil.copyfileobj(inp,out)
   if dest.stat().st_size!=3601*3601*2:raise ValueError('Invalid HGT size')
  counts['overlay_sha256']=digest(result);counts['overlay_bytes']=result.stat().st_size

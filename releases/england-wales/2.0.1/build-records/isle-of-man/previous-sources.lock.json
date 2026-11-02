@@ -1,0 +1,42 @@
+{
+  "accessed_utc": "2026-11-01T11:50:17.323409+00:00",
+  "inputs": [
+    {
+      "bytes": 1709222833,
+      "path": "data/regions/england-wales/england-261030.osm.pbf",
+      "replicationTimestamp": "2026-10-30T21:24:51Z",
+      "sha256": "4dd4a3659e8830222363803b92d3c754f506c24fb0f45866e296b0a05f074f6d",
+      "url": "https://download.geofabrik.de/europe/united-kingdom/england-261030.osm.pbf"
+    },
+    {
+      "bytes": 150119349,
+      "path": "data/regions/england-wales/wales-261030.osm.pbf",
+      "replicationTimestamp": "2026-10-30T21:24:51Z",
+      "sha256": "680743d0dfa520bd76f68dbd405eb6133772c6df6da1cfa021dc5e0820d11dfe",
+      "url": "https://download.geofabrik.de/europe/united-kingdom/wales-261030.osm.pbf"
+    }
+  ],
+  "osm": {
+    "bytes": 1859551571,
+    "operation": "libosmium sorted merge; duplicate OSM objects resolved by version",
+    "path": "data/regions/england-wales/england-wales-261030.osm.pbf",
+    "replicationTimestamp": "2026-10-30T21:24:51Z",
+    "sha256": "dd983328bdc2cc7d5330a5f68f89daf3fa2730658f93b5b59f09e04a9650851d",
+    "snapshot_date": "2026-10-30",
+    "url": null
+  },
+  "polygons": [
+    {
+      "bytes": 11945,
+      "path": "data/regions/england-wales/england.poly",
+      "sha256": "2a3f3f0b6716d52990a973835789227a190e2c1770e33acacb15241685e96b53",
+      "url": "https://download.geofabrik.de/europe/united-kingdom/england.poly"
+    },
+    {
+      "bytes": 10767,
+      "path": "data/regions/england-wales/wales.poly",
+      "sha256": "c7b9cf40de410cc5821c71469a15fc1b5c0a5b12190cc10968df533ec7eda08f",
+      "url": "https://download.geofabrik.de/europe/united-kingdom/wales.poly"
+    }
+  ]
+}

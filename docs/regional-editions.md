@@ -1,12 +1,12 @@
 # Maintaining regional editions
 
-OpenBareMap uses one repository and shared cartography for Ireland, England/Wales and Scotland. Each edition selects its own source snapshots, coordinate grid, map databases and platform packages. A regional release does not replace another edition's resources or require it to be released at the same time.
+OpenBareMap uses one repository and shared cartography for Ireland, England/Wales, Scotland and Sierra Nevada. Each edition selects its own source snapshots, coordinate grid, map databases and platform packages. A regional release does not replace another edition's resources or require it to be released at the same time.
 
 Ireland remains the default for existing build, viewer and packaging commands. Its selected map stays in the root `active-map.json`. The accepted Ireland inputs and outputs are recorded in `regions/ireland/preservation-baseline.json`; regional validation verifies their checksums.
 
 ## England/Wales scope
 
-The edition uses both complete Geofabrik extracts, merged by OSM object identity/version. It includes England, Wales and their offshore islands, including the Isles of Scilly and Anglesey. It is not a pilot or a sample. Terrain acquisition covers every one-degree cell in longitude −7 to +3 and latitude 49 to 56. Surrounding coastal land/terrain is context; the OSM coverage follows the source extracts.
+The edition uses the three complete Geofabrik England, Wales and Isle of Man extracts, merged by OSM object identity/version. It includes the Isle of Man, Isles of Scilly, Anglesey and other offshore islands. It is not a pilot or a sample. Terrain acquisition covers every one-degree cell in longitude −7 to +3 and latitude 49 to 56. Surrounding coastal land/terrain is context; the OSM coverage follows the source extracts.
 
 It shares the Ireland edition's colours, symbols, transport passes, hillshade processing, 20 m contours, 100 m index contours and bounded geometry smoothing. In the England/Wales overview, rivers and canals remain visible while smaller waterways appear from zoom 10; all source features remain in the databases. Surrounding coastlines extend beyond the country coverage so the map has no rectangular land cutoffs. Welsh `name:cy` values replace the Ireland-specific Irish-language fallback in this edition's processing/style. Source `name` and English names are retained. The transport schema also retains OSM designation, horse/bicycle/foot access, trail visibility and hiking difficulty for inspection; these tags do not certify a legal right of way.
 
@@ -48,13 +48,13 @@ Use `scripts/serve.py --region scotland --port 8767` for the local viewer.
 | iOS resources | `ios/package/` | `regions/england-wales/ios/` |
 | Android import package | `android/package/` | `regions/england-wales/android/` |
 | Garmin | Family 4831 | Family 4833, tiles starting 48330001 |
-| Release records | `releases/2.0.0/` | `releases/england-wales/2.0.0/` |
+| Release records | `releases/2.0.0/` | `releases/england-wales/2.0.1/` |
 
 The Garmin family and tile identifiers differ, allowing both images to coexist. England/Wales Garmin intermediates use a local temporary build cache (override with `OPENBAREMAP_BUILD_ROOT`) so cloud storage cannot offload files during compilation. Accepted maps remain in the repository release folders. Both Garmin editions are display-only. The Android resource loader installs map packages by manifest hash and preserves older versions. Consuming applications choose which map to load; this map build does not modify BareGPS applications. The iOS resources use the same loader, with an edition-specific bundle identifier; a host app decides which bundle or installed resource directory to load.
 
 ## Complete build
 
-The current source date is selected explicitly in the edition profile. Downloads are verified against upstream MD5 and then recorded with SHA-256. England and Wales must have identical replication timestamps. A locked source is never silently refreshed.
+The current source date is selected explicitly in the edition profile. Downloads are verified against upstream MD5 and then recorded with SHA-256. England, Wales and Isle of Man must have identical replication timestamps. A locked source is never silently refreshed.
 
 Install the additional Python packages into the ignored local runtime:
 
@@ -104,3 +104,7 @@ The first command serves England/Wales; the second serves Ireland. Both use loca
 Automated checks do not establish geographic completeness of OpenStreetMap, legal access, or native-device appearance. Browser visual review and mobile/Garmin device testing have separate records. No hardware installation is performed by the build.
 
 Scotland retains the small build records under `releases/scotland/2.0.0/build-records/`. Accepted-release validation can read its archived geometry report after redundant raw intermediates are removed. The selected map databases, source locks, native resources and Garmin image remain separate from those temporary stages.
+
+The 2.0.1 England/Wales extension preserves every prior mainland vector feature and retains the accepted terrain, contours, hillshade and grid byte-for-byte. `scripts/verify_isle_of_man.py` verifies the island anchors and semantic preservation of features in changed tiles. Source and baseline records are under `releases/england-wales/2.0.1/build-records/isle-of-man/`. The full native image is recompiled from the three-extract union and extended coverage polygon, with shared 4-pixel hiking strokes at resolution 24.
+
+A rectangular photographic patch can come from separately enabled BirdsEye imagery. The Sierra Nevada public image was checked against the affected installation; the map checksum and source elevation data were intact. Its conflicting satellite layer was disabled with an inactive backup retained. No clean Sierra map data was changed for that device-layer fault.

@@ -1,0 +1,119 @@
+{
+  "acceptance": "Automated checks only; see validation and visual-review records for actual reviewed scope.",
+  "coverage": "Complete England, Wales and Isle of Man extracts, including offshore islands; no regional sampling",
+  "datasets": {
+    "basemap": {
+      "bytes": 2726477824,
+      "path": "releases/england-wales/2.0.1/maps/basemap.mbtiles",
+      "sha256": "4597d90fd9dce0a120dccad6b52f05d7189f4ea4a34471bb7be91b97d86f224e",
+      "validation": {
+        "empty_tile_count": 96947,
+        "logical_tiles_sha256": "50737bbc65c89af75bd0a4841c4ac1b965ce44888270f7403d9c37bdfb54f7bd",
+        "tile_count": 208061
+      }
+    },
+    "grid": {
+      "bytes": 76009472,
+      "path": "releases/england-wales/2.0.0/maps/grid.mbtiles",
+      "sha256": "3008b9d2db998edb4a8d0d200e673e472e110290eed2b303874f2c5b36cf08af",
+      "validation": {
+        "empty_tile_count": 0,
+        "logical_tiles_sha256": "c62a9e53048727a337536c0a0f02fc695390b08b299c0456c18c9b59036b08d2",
+        "tile_count": 236502
+      }
+    },
+    "hillshade": {
+      "bytes": 238579712,
+      "path": "releases/england-wales/2.0.0/maps/hillshade.mbtiles",
+      "sha256": "1c7ac27cd22ff21f98ec2a51dc989999e89dbcaa24eb1e9510c9a80f2ae6cdd3",
+      "validation": {
+        "empty_tile_count": 0,
+        "logical_tiles_sha256": "1ce096346da07a71f611adc64957f2cef21aa7166c2d9a318504aa7e15e49f47",
+        "tile_count": 8627
+      }
+    },
+    "topography": {
+      "bytes": 422789120,
+      "path": "releases/england-wales/2.0.0/maps/topography-fixed.mbtiles",
+      "sha256": "6228ae3821d85526d24f33b21d6db1be300b75babd3e254c9dfa0f1cd96066e1",
+      "validation": {
+        "empty_tile_count": 30535,
+        "logical_tiles_sha256": "91d94f6f59d362c2b3af9274b4dee2cc8aaa57eda4d559821322d42c31240fac",
+        "tile_count": 162177
+      }
+    }
+  },
+  "garmin": {
+    "bytes": 919142400,
+    "path": "regions/england-wales/garmin/dist/OpenBareMap-England-Wales.img",
+    "sha256": "e28943068173e7d0a09ae740d5a6900115eb2cd515a2e26bf3d3464b1db62475"
+  },
+  "geometryReport": {
+    "path": "releases/england-wales/2.0.1/build-records/england-wales-geometry/geometry-report.json",
+    "sha256": "b9ec1199abc7d6632c5b93909fd85c4c3e9ebe55e8a0e47c47eed06a91973552"
+  },
+  "hostAppsModified": false,
+  "mapVersion": "2.0.1",
+  "osm": {
+    "bytes": 1865917879,
+    "operation": "Sorted libosmium union of complete England, Wales and Isle of Man extracts; duplicate objects resolved by version",
+    "path": "data/regions/england-wales/england-wales-isle-of-man-261030.osm.pbf",
+    "replicationTimestamp": "2026-10-30T21:24:51Z",
+    "sha256": "816c0266055734cd8f95fe944d35b2c4986c4fa95314fd4f0ffab6c0576b9899",
+    "snapshot_date": "2026-10-30",
+    "url": null
+  },
+  "packages": {
+    "android": {
+      "archive": {
+        "bytes": 3483075855,
+        "path": "regions/england-wales/android/OpenBareMap-Android.zip",
+        "sha256": "54cdd187e3c165c131989fc5128de54da5a2ed7ceded9e6f10f65558fe82623a"
+      },
+      "checksumsSHA256": "ef415ae7b5100c02f7c7b1a39bb79800477e0daf56629843f9989fd4d63fbd02",
+      "manifestSHA256": "4c3b2a7bb0a0669f259bfd06d8216955a6d102cc9138545ddff8e260da383f73",
+      "path": "regions/england-wales/android",
+      "validationSHA256": "a6ca34c0c2fd261bfd88eab16cb445515619436802e8e7c383c1aba3afb613b8"
+    },
+    "ios": {
+      "checksumsSHA256": "844dff2345a785ed49ed79bdf3fd2124401b0cc39afd6479a1d198436d5442b0",
+      "manifestSHA256": "acfacffa096db7a0db9059cc87b65afee84c10cf06a82175bdacc14d1c1bec01",
+      "path": "regions/england-wales/ios",
+      "validationSHA256": "a08403bf459c3ecd5a43a5befc51adc52c720b1661a0ce136849b8a9d39d96e7"
+    }
+  },
+  "pythonRuntime": {
+    "packages": {
+      "Pillow": "12.3.0",
+      "certifi": "2026.10.23",
+      "charset-normalizer": "3.5.2",
+      "idna": "3.20",
+      "numpy": "2.5.4",
+      "osmium": "4.3.2",
+      "pyproj": "3.8.0",
+      "requests": "2.34.2",
+      "shapely": "2.2.0",
+      "urllib3": "2.8.0"
+    },
+    "platform": "macOS-27.0.1-arm64-arm-64bit-Mach-O",
+    "python": "3.14.5 (main, May 10 2026, 10:21:34) [Clang 21.0.0 (clang-2100.0.123.102)]"
+  },
+  "region": "england-wales",
+  "standaloneResourceArchives": {
+    "android": {
+      "bytes": 3483075855,
+      "path": "regions/england-wales/exports/android/OpenBareMap-EnglandWales-Android.zip",
+      "sha256": "54cdd187e3c165c131989fc5128de54da5a2ed7ceded9e6f10f65558fe82623a",
+      "url": "https://downloads.appsbyonzy.dev/OpenBareMap/england-wales/2.0.1/android/OpenBareMap-EnglandWales-Android.zip"
+    },
+    "ios": {
+      "bytes": 3483096243,
+      "path": "regions/england-wales/exports/ios/OpenBareMap-EnglandWales-iOS.zip",
+      "sha256": "15984a1e143d7dcb06b0be84af037809274ae4792821a31eb628eac46cc19290",
+      "url": "https://downloads.appsbyonzy.dev/OpenBareMap/england-wales/2.0.1/ios/OpenBareMap-EnglandWales-iOS.zip"
+    }
+  },
+  "styleSHA256": "948653da95cfe16495ff6846ebeedb15036e01f9d01711a430ee6b31ee425b0d",
+  "terrainLockSHA256": "d1f1484cb49fab6439a925797c71bd4cb7ca6310fb43c1fcbdc5e09d1ddf5797",
+  "validation": "validation.json"
+}

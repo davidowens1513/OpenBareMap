@@ -1,0 +1,23 @@
+{
+  "bytes": 2726477824,
+  "parts": [
+    {
+      "bytes": 1073741824,
+      "path": "releases/england-wales/2.0.1/maps/basemap.mbtiles.part01",
+      "sha256": "f09d934f955a1f9e47ba2ab49d93dbca513c873a5d306eabbbf6b858ffa38354"
+    },
+    {
+      "bytes": 1073741824,
+      "path": "releases/england-wales/2.0.1/maps/basemap.mbtiles.part02",
+      "sha256": "dc4795fd472e77943a36d97817b929d4172e375f8aa7697adc377610ef68e2f8"
+    },
+    {
+      "bytes": 578994176,
+      "path": "releases/england-wales/2.0.1/maps/basemap.mbtiles.part03",
+      "sha256": "9d8e83f636c94c485a1ad06d4e6c9884d4133f193efcf9b91667fa301bf9a4a1"
+    }
+  ],
+  "path": "releases/england-wales/2.0.1/maps/basemap.mbtiles",
+  "reason": "GitHub LFS individual-object limit; concatenate the verified parts to restore the identical SQLite database.",
+  "sha256": "4597d90fd9dce0a120dccad6b52f05d7189f4ea4a34471bb7be91b97d86f224e"
+}

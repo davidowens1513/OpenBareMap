@@ -1,11 +1,13 @@
 {
-  "areaSquareDegrees": 35.173881006156876,
+  "areaSquareDegrees": 36.219648766222754,
   "bounds": [
     -7.101192,
     49.57808,
     2.249944,
     56.06997
   ],
+  "entireRequestedFootprintCovered": true,
+  "exactFootprint": null,
   "inputs": [
     {
       "bytes": 11945,
@@ -18,20 +20,27 @@
       "path": "data/regions/england-wales/wales.poly",
       "sha256": "c7b9cf40de410cc5821c71469a15fc1b5c0a5b12190cc10968df533ec7eda08f",
       "url": "https://download.geofabrik.de/europe/united-kingdom/wales.poly"
+    },
+    {
+      "bytes": 175,
+      "path": "data/regions/england-wales/isle-of-man.poly",
+      "sha256": "b0e8395acdbf35e98624a5c3d533019028b89b0da49eeff9e83fa71f827ba864",
+      "url": "https://download.geofabrik.de/europe/isle-of-man.poly"
     }
   ],
   "knownDestinationsCovered": [
-    "island",
-    "snowdonia",
-    "lakes",
-    "peaks",
     "brecon",
     "dartmoor",
+    "island",
+    "isle-of-man",
+    "lakes",
     "london",
+    "northumberland",
+    "peaks",
     "scilly",
-    "northumberland"
+    "snowdonia"
   ],
-  "operation": "Geometric union of complete England and Wales source outlines; overlapping buffers dissolved",
+  "operation": "Geometric union of complete upstream region outlines; overlapping buffers dissolved",
   "polygons": 1,
-  "sha256": "b5dd61d5eb07fc47eaebffd208bc1c078abdf8b5b781ce3ebb640c7fe32a36ed"
+  "sha256": "41d51beb93493cc1ba8554ef6e036361dba994ea5eba19ff418be00c941c3ae8"
 }

@@ -1,0 +1,52 @@
+{
+  "addedFeatureInstances": {
+    "boundary": 1413,
+    "building": 67433,
+    "cycling_route": 241,
+    "ferry": 299,
+    "hiking_poi": 799,
+    "hiking_route": 317,
+    "island_name": 192,
+    "landcover": 164415,
+    "mountain": 262,
+    "natural_line": 618,
+    "place": 13731,
+    "poi": 6323,
+    "railway": 3535,
+    "station": 566,
+    "transportation": 96886,
+    "transportation_name": 34910,
+    "water": 3086,
+    "water_name": 143,
+    "waterway": 15282
+  },
+  "basemap": {
+    "bytes": 2726477824,
+    "path": "releases/england-wales/2.0.1/maps/basemap.mbtiles",
+    "sha256": "4597d90fd9dce0a120dccad6b52f05d7189f4ea4a34471bb7be91b97d86f224e",
+    "validation": {
+      "empty_tile_count": 96947,
+      "logical_tiles_sha256": "50737bbc65c89af75bd0a4841c4ac1b965ce44888270f7403d9c37bdfb54f7bd",
+      "tile_count": 208061
+    }
+  },
+  "changedTiles": 998,
+  "isleOfManOSMSHA256": "14a10af67ac5fb604f39cca8c70be392684dae7211152da81b3ebacfb73b0c3b",
+  "originalBasemap": {
+    "bytes": 2726477824,
+    "path": "releases/england-wales/2.0.1/maps/basemap.mbtiles",
+    "sha256": "4597d90fd9dce0a120dccad6b52f05d7189f4ea4a34471bb7be91b97d86f224e",
+    "validation": {
+      "empty_tile_count": 96947,
+      "logical_tiles_sha256": "50737bbc65c89af75bd0a4841c4ac1b965ce44888270f7403d9c37bdfb54f7bd",
+      "tile_count": 208061
+    }
+  },
+  "status": "complete source extension; coverage verification pending",
+  "terrainGridAndHillshadePreserved": {
+    "grid": "3008b9d2db998edb4a8d0d200e673e472e110290eed2b303874f2c5b36cf08af",
+    "hillshade": "1c7ac27cd22ff21f98ec2a51dc989999e89dbcaa24eb1e9510c9a80f2ae6cdd3",
+    "topography": "6228ae3821d85526d24f33b21d6db1be300b75babd3e254c9dfa0f1cd96066e1"
+  },
+  "unchangedOriginalTilesVerified": 207063
+}

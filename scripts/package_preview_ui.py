@@ -6,11 +6,15 @@ from regions import ROOT,profile
 
 def package_ui(output,regions=None):
  output=Path(output);assets=output/'assets';(assets/'legends').mkdir(parents=True,exist_ok=True)
+ selected=regions or ['ireland','england-wales','scotland','sierra-nevada']
  for name in ['preview.js','preview.css','legend.js','legend.css']:shutil.copyfile(ROOT/'web-preview'/name,assets/name)
- for region in (regions or ['ireland','england-wales','scotland','sierra-nevada']):
+ for region in selected:
   p=profile(region);directory=output/region;directory.mkdir(exist_ok=True)
   for name in ['index.html','legend.html']:
    text=(ROOT/'web-preview'/name).read_text().replace('{{REGION}}',html.escape(p['label'],quote=True)).replace('{{ID}}',region)
+   for edition in ['ireland','england-wales','scotland','sierra-nevada']:
+    if edition not in selected:
+     text=text.replace('../'+edition+'/index.html','https://downloads.appsbyonzy.dev/OpenBareMap/preview-v2/'+edition+'/index.html')
    (directory/name).write_text(text)
   (directory/'region.json').write_text(json.dumps(p,indent=2)+'\n')
   source=ROOT/'app-legend/openbaremap-legend@2x.png' if region=='ireland' else ROOT/'regions'/region/'legend/openbaremap-legend@2x.png'

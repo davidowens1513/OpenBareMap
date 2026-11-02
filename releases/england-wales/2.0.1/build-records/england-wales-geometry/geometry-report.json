@@ -1,0 +1,83 @@
+{
+  "baselineReportSHA256": "6c1544a43d0215aebaeb7f5757a0c945feea227ef21a61f72ecd84fa43851b3e",
+  "counts": {
+    "isleOfManLandcover": {
+      "empty_source_areas": [],
+      "features": 17962,
+      "retained": 694,
+      "smoothed": 17268
+    },
+    "mainlandBaseline": {
+      "contours": 228657,
+      "grid": {
+        "grid_10km": 137,
+        "grid_1km": 1352
+      },
+      "landcover": {
+        "empty_source_areas": [
+          {
+            "area_id": 43651871,
+            "outer_ring_sizes": [],
+            "reason": "invalid area (area_id=43651871)"
+          },
+          {
+            "area_id": 31843017,
+            "outer_ring_sizes": [],
+            "reason": "invalid area (area_id=31843017)"
+          },
+          {
+            "area_id": 37575935,
+            "outer_ring_sizes": [],
+            "reason": "invalid area (area_id=37575935)"
+          },
+          {
+            "area_id": 38966523,
+            "outer_ring_sizes": [],
+            "reason": "invalid area (area_id=38966523)"
+          },
+          {
+            "area_id": 7624595,
+            "outer_ring_sizes": [],
+            "reason": "invalid area (area_id=7624595)"
+          },
+          {
+            "area_id": 6749461,
+            "outer_ring_sizes": [],
+            "reason": "invalid area (area_id=6749461)"
+          },
+          {
+            "area_id": 42818331,
+            "outer_ring_sizes": [],
+            "reason": "invalid area (area_id=42818331)"
+          },
+          {
+            "area_id": 42956567,
+            "outer_ring_sizes": [],
+            "reason": "invalid area (area_id=42956567)"
+          },
+          {
+            "area_id": 43179685,
+            "outer_ring_sizes": [],
+            "reason": "invalid area (area_id=43179685)"
+          }
+        ],
+        "features": 2056811,
+        "retained": 202120,
+        "smoothed": 1854691
+      }
+    }
+  },
+  "coverageValidation": "releases/england-wales/2.0.1/build-records/isle-of-man/coverage-validation.json",
+  "extensionReportSHA256": "c9218278767dfb648e6188d8d20a3129cf44974f65e9a054e2432e73b33a9b63",
+  "operation": "Complete Isle of Man vector-source extension; prior terrain, grid, hillshade and mainland features retained",
+  "osm": {
+    "bytes": 1865917879,
+    "operation": "Sorted libosmium union of complete England, Wales and Isle of Man extracts; duplicate objects resolved by version",
+    "path": "data/regions/england-wales/england-wales-isle-of-man-261030.osm.pbf",
+    "replicationTimestamp": "2026-10-30T21:24:51Z",
+    "sha256": "816c0266055734cd8f95fe944d35b2c4986c4fa95314fd4f0ffab6c0576b9899",
+    "snapshot_date": "2026-10-30",
+    "url": null
+  },
+  "region": "england-wales"
+}

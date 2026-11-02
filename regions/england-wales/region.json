@@ -1,57 +1,19 @@
 {
-  "id": "england-wales",
-  "name": "OpenBareMap England & Wales",
-  "label": "England & Wales",
-  "mapVersion": "2.0.0",
-  "minzoom": 4,
-  "maxzoom": 14,
-  "coverage": "Complete Geofabrik England and Wales extracts, including offshore islands; no pilot or regional sampling",
   "bounds": [
     -6.7,
     49.8,
     2.1,
     55.9
   ],
-  "terrainBounds": [
-    -7,
-    49,
-    3,
-    56
+  "coastContextBounds": [
+    -13,
+    47,
+    6,
+    59
   ],
-  "projectedCRS": "EPSG:27700",
-  "gridCRS": "EPSG:27700",
-  "gridName": "British National Grid",
-  "gridSource": "british-grid",
-  "townlands": false,
   "contourIntervalMetres": 20,
-  "garminFamilyId": 4833,
-  "garminTileStartId": 48330001,
-  "sourceDate": "2026-10-30",
-  "sourceSlugs": [
-    "england",
-    "wales"
-  ],
+  "coverage": "Complete England, Wales and Isle of Man extracts, including offshore islands; no regional sampling",
   "destinations": {
-    "island": [
-      -2.3,
-      52.8,
-      6
-    ],
-    "snowdonia": [
-      -4.076,
-      53.068,
-      12
-    ],
-    "lakes": [
-      -3.211,
-      54.455,
-      12
-    ],
-    "peaks": [
-      -1.837,
-      53.35,
-      12
-    ],
     "brecon": [
       -3.436,
       51.884,
@@ -62,9 +24,34 @@
       50.58,
       12
     ],
+    "island": [
+      -2.3,
+      52.8,
+      6
+    ],
+    "isle-of-man": [
+      -4.53,
+      54.23,
+      10
+    ],
+    "lakes": [
+      -3.211,
+      54.455,
+      12
+    ],
     "london": [
       -0.128,
       51.507,
+      12
+    ],
+    "northumberland": [
+      -2.124,
+      55.478,
+      12
+    ],
+    "peaks": [
+      -1.837,
+      53.35,
       12
     ],
     "scilly": [
@@ -72,19 +59,52 @@
       49.92,
       12
     ],
-    "northumberland": [
-      -2.124,
-      55.478,
+    "snowdonia": [
+      -4.076,
+      53.068,
       12
     ]
   },
-  "coastContextBounds": [
-    -13,
-    47,
-    6,
-    59
-  ],
+  "garminFamilyId": 4833,
+  "garminPackageRevision": "2.0.1-isle-of-man-r1",
+  "garminTileStartId": 48330001,
+  "gridCRS": "EPSG:27700",
+  "gridName": "British National Grid",
+  "gridSource": "british-grid",
+  "id": "england-wales",
+  "label": "England & Wales",
+  "mapVersion": "2.0.1",
+  "maxzoom": 14,
   "minorWaterwayMinzoom": 10,
+  "minzoom": 4,
+  "name": "OpenBareMap England & Wales",
+  "projectedCRS": "EPSG:27700",
+  "sourceBaseOverrides": {
+    "isle-of-man": "https://download.geofabrik.de/europe/"
+  },
+  "sourceDate": "2026-10-30",
+  "sourceOutputStem": "england-wales-isle-of-man",
+  "sourceSlugs": [
+    "england",
+    "wales",
+    "isle-of-man"
+  ],
   "styleRevision": "2.0.0-england-wales-overview-r1",
-  "garminPackageRevision": "2.0.0-hiking-r1"
+  "terrainBounds": [
+    -7,
+    49,
+    3,
+    56
+  ],
+  "townlands": false,
+  "inspectionNames": [
+    "London",
+    "Cardiff",
+    "Carlisle",
+    "Newcastle upon Tyne",
+    "Plymouth",
+    "Douglas",
+    "Ramsey",
+    "Snaefell"
+  ]
 }

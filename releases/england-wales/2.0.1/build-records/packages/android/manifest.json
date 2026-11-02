@@ -1,0 +1,53 @@
+{
+  "packageFormat": "openbaremap-android-resources-v1",
+  "mapVersion": "2.0.1",
+  "region": "england-wales",
+  "displayName": "England & Wales",
+  "bounds": [
+    -6.7,
+    49.8,
+    2.1,
+    55.9
+  ],
+  "coverage": "Complete England, Wales and Isle of Man extracts, including offshore islands; no regional sampling",
+  "storageRevision": "2.0.1-england-wales-r3",
+  "styleRevision": "2.0.0-england-wales-overview-r1",
+  "regionStyleSHA256": "948653da95cfe16495ff6846ebeedb15036e01f9d01711a430ee6b31ee425b0d",
+  "sourceCommit": "f9a79e41b159fc9e135ead562332e7f2e7efe2ca",
+  "sourceStyleSHA256": "be29f6993e8d5cd1f79921bf828f0d1263aa4e349aff1cf1b154ec805d0206da",
+  "renderer": "MapLibre Native Android",
+  "sourceFiles": {
+    "basemap": "maps/basemap.mbtiles",
+    "british-grid": "maps/grid.mbtiles",
+    "hillshade": "maps/hillshade.mbtiles",
+    "topography": "maps/topography.mbtiles",
+    "coast": "maps/coast.mbtiles"
+  },
+  "databases": {
+    "basemap": {
+      "path": "maps/basemap.mbtiles",
+      "sha256": "4597d90fd9dce0a120dccad6b52f05d7189f4ea4a34471bb7be91b97d86f224e"
+    },
+    "grid": {
+      "path": "maps/grid.mbtiles",
+      "sha256": "3008b9d2db998edb4a8d0d200e673e472e110290eed2b303874f2c5b36cf08af"
+    },
+    "hillshade": {
+      "path": "maps/hillshade.mbtiles",
+      "sha256": "1c7ac27cd22ff21f98ec2a51dc989999e89dbcaa24eb1e9510c9a80f2ae6cdd3"
+    },
+    "topography": {
+      "path": "maps/topography.mbtiles",
+      "sha256": "6228ae3821d85526d24f33b21d6db1be300b75babd3e254c9dfa0f1cd96066e1"
+    },
+    "coast": {
+      "path": "maps/coast.mbtiles",
+      "sha256": "ccf8ffd4ec85b58f6510389177e79e5e6e8a87c8c3a4295675a875a2d2aaae85",
+      "derivedFrom": "6228ae3821d85526d24f33b21d6db1be300b75babd3e254c9dfa0f1cd96066e1"
+    }
+  },
+  "contourIntervalMetres": 20,
+  "osmSnapshot": "2026-10-30",
+  "inheritedAssets": "Pinned font glyphs and original patterns; generated British National Grid (EPSG:27700).",
+  "requiresRuntimePathResolution": true
+}

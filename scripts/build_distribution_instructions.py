@@ -9,7 +9,7 @@ TITLES={'ireland':'Ireland','england-wales':'England-Wales','scotland':'Scotland
 def garmin_instructions(region,filename=None):
     p=profile(region);identity=json.loads((ROOT/'garmin/map-identities.json').read_text())[region]
     text=(ROOT/'distribution/templates/garmin-instructions.txt').read_text()
-    for key,value in {'LABEL':p['label'],'FILENAME':filename or 'OpenBareMap-'+TITLES[region]+'.img','FAMILY':identity['familyId'],'SLUG':region}.items():text=text.replace('{{'+key+'}}',str(value))
+    for key,value in {'LABEL':p['label'],'VERSION':p['mapVersion'],'REVISION':json.loads((ROOT/('garmin/config.json' if region=='ireland' else 'regions/'+region+'/garmin/config.json')).read_text())['garminPackageRevision'],'FILENAME':filename or 'OpenBareMap-'+TITLES[region]+'.img','FAMILY':identity['familyId'],'SLUG':region}.items():text=text.replace('{{'+key+'}}',str(value))
     if '{{' in text:raise ValueError('Unresolved Garmin instruction')
     return text
 

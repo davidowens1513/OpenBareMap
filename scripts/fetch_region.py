@@ -38,7 +38,7 @@ def fetch_osm(region):
     base=p.get('sourceBaseURL','https://download.geofabrik.de/europe/united-kingdom/')
     inputs=[]
     for slug in p['sourceSlugs']:
-        name=f'{slug}-{stamp}.osm.pbf';url=base+name
+        name=f'{slug}-{stamp}.osm.pbf';source_base=p.get('sourceBaseOverrides',{}).get(slug,base);url=source_base+name
         path=directory/name
         if not path.exists():
             from download_ranges import fetch
@@ -53,14 +53,15 @@ def fetch_osm(region):
     timestamps={item['replicationTimestamp'] for item in inputs}
     if len(timestamps)!=1 or not next(iter(timestamps)):
         raise ValueError('Regional inputs must share a nonempty OSM snapshot timestamp')
-    polygons=[download(base+slug+'.poly',directory/(slug+'.poly')) for slug in p['sourceSlugs']]
+    polygons=[download(p.get('sourceBaseOverrides',{}).get(slug,base)+slug+'.poly',directory/(slug+'.poly')) for slug in p['sourceSlugs']]
     if len(inputs)==1:
         merged={**inputs[0],'snapshot_date':p['sourceDate'],'operation':'Complete upstream extract; no merge or spatial filtering'}
     else:
-        # Only Wales is buffered; the much larger England extract streams from disk.
-        output=directory/('england-wales-'+stamp+'.osm.pbf')
+        # Additional extracts are buffered; the largest primary extract streams from disk.
+        output=directory/(p.get('sourceOutputStem',region)+'-'+stamp+'.osm.pbf')
         if output.exists():raise FileExistsError('Unregistered merged input: '+str(output))
-        merger=osmium.MergeInputReader();merger.add_file(str(ROOT/inputs[1]['path']))
+        merger=osmium.MergeInputReader()
+        for item in inputs[1:]:merger.add_file(str(ROOT/item['path']))
         with osmium.io.Reader(str(ROOT/inputs[0]['path'])) as reader:
             header=reader.header();header.set('osmosis_replication_timestamp',next(iter(timestamps)))
             writer=osmium.io.Writer(str(output),header)

@@ -7,14 +7,27 @@
     },
     {
       "path": "regions/england-wales/garmin/inputs/landcover.geojson.gz",
-      "sha256": "b9f18993a268fc92df1efb22a03ba9e0f036ce35a50993d61c42cd2109c71992",
-      "uncompressedSHA256": "07a478d1b0b38c8687c0e5bde50092bf66b44e63e939c009e57f5087072eb9a3"
+      "sha256": "8e0158a6f5d76e54be1f0ded6ee3a2b03b68a11154d5722dcd3f80eec7cc52fe",
+      "uncompressedSHA256": "4d2f087a8be06ff01cb6ae08f8373ad352f26f9b71abf6eb1b1c6d39997cedf5"
     },
     {
       "path": "regions/england-wales/garmin/inputs/land.geojson.gz",
       "sha256": "86cf23a9c3c0d8837e4d884aa92321274c5a7a3b71ec0b858395c95ba9d69939",
       "uncompressedSHA256": "99c40b5ebde2f3268676cf419048417e9fc922824af658b053767c30d2bafcb2"
+    },
+    {
+      "path": "regions/england-wales/garmin/inputs/isle-of-man-landcover.geojson.gz",
+      "sha256": "f8e3ab314aa30973c941944bbf3d01ddbdd6b29ee618d9a7df07a7c0858c0328"
     }
   ],
-  "region": "england-wales"
+  "region": "england-wales",
+  "sourceExtension": {
+    "builderSHA256": "22d730f04b5e47c48c98f9515b3416bb2d72f1a5220fd71b910afeb4e63d42ac",
+    "featuresAdded": 17962,
+    "previousLandcoverSHA256": "b9f18993a268fc92df1efb22a03ba9e0f036ce35a50993d61c42cd2109c71992",
+    "region": "isle-of-man",
+    "smoothedLandcoverSHA256": "f8e3ab314aa30973c941944bbf3d01ddbdd6b29ee618d9a7df07a7c0858c0328",
+    "snapshotDate": "2026-10-30",
+    "sourceSHA256": "14a10af67ac5fb604f39cca8c70be392684dae7211152da81b3ebacfb73b0c3b"
+  }
 }

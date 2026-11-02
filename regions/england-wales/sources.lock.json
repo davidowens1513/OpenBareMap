@@ -1,5 +1,5 @@
 {
-  "accessed_utc": "2026-11-01T11:50:17.323409+00:00",
+  "accessed_utc": "2026-11-02T22:36:16.913682+00:00",
   "inputs": [
     {
       "bytes": 1709222833,
@@ -14,14 +14,21 @@
       "replicationTimestamp": "2026-10-30T21:24:51Z",
       "sha256": "680743d0dfa520bd76f68dbd405eb6133772c6df6da1cfa021dc5e0820d11dfe",
       "url": "https://download.geofabrik.de/europe/united-kingdom/wales-261030.osm.pbf"
+    },
+    {
+      "bytes": 6116247,
+      "path": "data/regions/england-wales/isle-of-man-261030.osm.pbf",
+      "replicationTimestamp": "2026-10-30T21:24:51Z",
+      "sha256": "14a10af67ac5fb604f39cca8c70be392684dae7211152da81b3ebacfb73b0c3b",
+      "url": "https://download.geofabrik.de/europe/isle-of-man-261030.osm.pbf"
     }
   ],
   "osm": {
-    "bytes": 1859551571,
-    "operation": "libosmium sorted merge; duplicate OSM objects resolved by version",
-    "path": "data/regions/england-wales/england-wales-261030.osm.pbf",
+    "bytes": 1865917879,
+    "operation": "Sorted libosmium union of complete England, Wales and Isle of Man extracts; duplicate objects resolved by version",
+    "path": "data/regions/england-wales/england-wales-isle-of-man-261030.osm.pbf",
     "replicationTimestamp": "2026-10-30T21:24:51Z",
-    "sha256": "dd983328bdc2cc7d5330a5f68f89daf3fa2730658f93b5b59f09e04a9650851d",
+    "sha256": "816c0266055734cd8f95fe944d35b2c4986c4fa95314fd4f0ffab6c0576b9899",
     "snapshot_date": "2026-10-30",
     "url": null
   },
@@ -37,6 +44,21 @@
       "path": "data/regions/england-wales/wales.poly",
       "sha256": "c7b9cf40de410cc5821c71469a15fc1b5c0a5b12190cc10968df533ec7eda08f",
       "url": "https://download.geofabrik.de/europe/united-kingdom/wales.poly"
+    },
+    {
+      "bytes": 175,
+      "path": "data/regions/england-wales/isle-of-man.poly",
+      "sha256": "b0e8395acdbf35e98624a5c3d533019028b89b0da49eeff9e83fa71f827ba864",
+      "url": "https://download.geofabrik.de/europe/isle-of-man.poly"
     }
-  ]
+  ],
+  "previousAcceptedOSM": {
+    "bytes": 1859551571,
+    "operation": "libosmium sorted merge; duplicate OSM objects resolved by version",
+    "path": "data/regions/england-wales/england-wales-261030.osm.pbf",
+    "replicationTimestamp": "2026-10-30T21:24:51Z",
+    "sha256": "dd983328bdc2cc7d5330a5f68f89daf3fa2730658f93b5b59f09e04a9650851d",
+    "snapshot_date": "2026-10-30",
+    "url": null
+  }
 }

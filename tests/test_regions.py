@@ -52,7 +52,9 @@ class RegionalEditionTests(unittest.TestCase):
 
     def test_full_extent_and_independent_garmin_identity(self):
         p=profile('england-wales')
-        self.assertEqual(p['sourceSlugs'],['england','wales'])
+        self.assertEqual(p['sourceSlugs'],['england','wales','isle-of-man'])
+        self.assertEqual(p['sourceBaseOverrides']['isle-of-man'],'https://download.geofabrik.de/europe/')
+        self.assertIn('Isle of Man',p['coverage'])
         self.assertEqual(p['terrainBounds'],[-7,49,3,56])
         self.assertNotEqual(p['garminFamilyId'],json.loads((ROOT/'garmin/config.json').read_text())['familyId'])
         self.assertEqual(p['contourIntervalMetres'],20)
