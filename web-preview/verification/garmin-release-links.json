@@ -1,0 +1,37 @@
+{
+  "verifiedUTC": "2026-11-02T21:31:13.507763+00:00",
+  "garminPackageRevision": "2.0.0-hiking-r1",
+  "existingWebsiteLinksServeVerifiedRelease": true,
+  "regions": {
+    "england-wales": {
+      "websiteURL": "https://downloads.appsbyonzy.dev/Garmin/OpenBareMap-England-Wales.img",
+      "verifiedReleaseURL": "https://downloads.appsbyonzy.dev/Garmin/OpenBareMap-England-Wales.img?v=2.0.0-hiking-r1",
+      "bytes": 873824256,
+      "sameStrongETag": "\"5eacdbd68a6bde76c3adc1cbae38a319-9\"",
+      "fullReleaseReadbackSHA256": "0c015951887b537b489dfdb492b5efa440708b1419ddb010cfbc514983e68c7b"
+    },
+    "ireland": {
+      "websiteURL": "https://downloads.appsbyonzy.dev/Garmin/OpenBareMap-Ireland.img",
+      "verifiedReleaseURL": "https://downloads.appsbyonzy.dev/Garmin/OpenBareMap-Ireland.img?v=2.0.0-hiking-r1",
+      "bytes": 315375616,
+      "sameStrongETag": "\"2b84733135494781256c2f23ee6f122c-4\"",
+      "fullReleaseReadbackSHA256": "83cde2062e09171382be31c98c991282182eb8129110dbf75a1010a956d6611e"
+    },
+    "scotland": {
+      "websiteURL": "https://downloads.appsbyonzy.dev/Garmin/OpenBareMap-Scotland.img",
+      "verifiedReleaseURL": "https://downloads.appsbyonzy.dev/Garmin/OpenBareMap-Scotland.img?v=2.0.0-hiking-r1",
+      "bytes": 359235584,
+      "sameStrongETag": "\"52ab41c60d82e0c004be788fd3a5f13e-4\"",
+      "fullReleaseReadbackSHA256": "55e0ebc8a9cbf6746e55a9b08fbb01f1cff07dc467f1d2d8bb598df1c6ac9ff2"
+    },
+    "sierra-nevada": {
+      "websiteURL": "https://downloads.appsbyonzy.dev/Garmin/OpenBareMap-Sierra-Nevada.img",
+      "verifiedReleaseURL": "https://downloads.appsbyonzy.dev/Garmin/OpenBareMap-Sierra-Nevada.img?v=2.0.0-hiking-r1",
+      "bytes": 33868800,
+      "sameStrongETag": "\"129f8bbf2effe598a487b2b56fdd65d8\"",
+      "fullReleaseReadbackSHA256": "0eb8f7b386a9b2a1383fcdac4379e22d5146208f045dfd2327ce9c5466c6fea8"
+    }
+  },
+  "deployedMainContentMatchesSource": true,
+  "mainContentSHA256": "77ac3f248d5771b430435c1e9a08abb4628675b6209836556411d58adc55356e"
+}
