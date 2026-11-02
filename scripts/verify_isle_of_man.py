@@ -21,6 +21,8 @@ def signatures(raw):
 def main():
  record=ROOT/'releases/england-wales/2.0.1/build-records/isle-of-man'
  old=json.loads((record/'previous-active-map.json').read_text());active=json.loads((ROOT/'regions/england-wales/active-map.json').read_text());baseline=ROOT/old['datasets']['basemap']['path'];target=ROOT/active['datasets']['basemap']['path']
+ extension=json.loads((record/'map-extension.json').read_text())
+ assert extension['originalBasemap']==old['datasets']['basemap'],'Extension provenance must retain the original baseline'
  unchanged=changed=features=0
  with sqlite3.connect(baseline) as src,sqlite3.connect(target) as dst:
   for z,x,y,payload in src.execute('SELECT zoom_level,tile_column,tile_row,tile_data FROM tiles'):

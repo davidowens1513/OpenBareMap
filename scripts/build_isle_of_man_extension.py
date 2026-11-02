@@ -91,7 +91,7 @@ def main():
  with sqlite3.connect(original) as src,sqlite3.connect(target) as dst:
   for z,x,y,data in src.execute('SELECT zoom_level,tile_column,tile_row,tile_data FROM tiles'):
    if (z,x,y) not in coords:assert dst.execute('SELECT tile_data FROM tiles WHERE zoom_level=? AND tile_column=? AND tile_row=?',(z,x,y)).fetchone()[0]==data;preserved+=1
- active={**old,'mapVersion':'2.0.1','storageRevision':'2.0.1-england-wales-r3','coverage':p['coverage'],'sourceExtension':'isle-of-man'};active['datasets']['basemap']={'path':str(target.relative_to(ROOT)),'bytes':target.stat().st_size,'sha256':digest(target),'validation':inspect_tiles(target)}
+ active={**old,'datasets':dict(old['datasets']),'mapVersion':'2.0.1','storageRevision':'2.0.1-england-wales-r3','coverage':p['coverage'],'sourceExtension':'isle-of-man'};active['datasets']['basemap']={'path':str(target.relative_to(ROOT)),'bytes':target.stat().st_size,'sha256':digest(target),'validation':inspect_tiles(target)}
  write(ROOT/'regions/england-wales/active-map.json',active)
  from regions import region_style
  write(ROOT/'regions/england-wales/style.json',region_style('england-wales'))

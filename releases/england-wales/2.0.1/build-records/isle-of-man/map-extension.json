@@ -33,16 +33,16 @@
   "changedTiles": 998,
   "isleOfManOSMSHA256": "14a10af67ac5fb604f39cca8c70be392684dae7211152da81b3ebacfb73b0c3b",
   "originalBasemap": {
-    "bytes": 2726477824,
-    "path": "releases/england-wales/2.0.1/maps/basemap.mbtiles",
-    "sha256": "4597d90fd9dce0a120dccad6b52f05d7189f4ea4a34471bb7be91b97d86f224e",
+    "bytes": 2714329088,
+    "path": "releases/england-wales/2.0.0/maps/basemap.mbtiles",
+    "sha256": "ff60d06aa4646b9a917fea499d69ad9d04d46c63c8ab981e5653a320d1fc3fac",
     "validation": {
-      "empty_tile_count": 96947,
-      "logical_tiles_sha256": "50737bbc65c89af75bd0a4841c4ac1b965ce44888270f7403d9c37bdfb54f7bd",
+      "empty_tile_count": 97801,
+      "logical_tiles_sha256": "0eea976356ea6da221b1f7a31e1d04f85d3d40ba8d8e3f9238d2f5a041b7b6a3",
       "tile_count": 208061
     }
   },
-  "status": "complete source extension; coverage verification pending",
+  "status": "Complete source extension; all original features and island coverage independently verified",
   "terrainGridAndHillshadePreserved": {
     "grid": "3008b9d2db998edb4a8d0d200e673e472e110290eed2b303874f2c5b36cf08af",
     "hillshade": "1c7ac27cd22ff21f98ec2a51dc989999e89dbcaa24eb1e9510c9a80f2ae6cdd3",
