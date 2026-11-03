@@ -1,0 +1,91 @@
+{
+  "device": "GPSMAP H1",
+  "garminPackageRevision": "2.0.1-trail-detail-r1",
+  "verifiedUTC": "2026-11-03T08:32:53.538794+00:00",
+  "maps": [
+    {
+      "device": "GPSMAP H1",
+      "region": "england-wales",
+      "mapVersion": "2.0.1",
+      "garminPackageRevision": "2.0.1-trail-detail-r1",
+      "familyId": 4833,
+      "mapSHA256": "477d275202aa4d8031199c98c375c93d970c9e0992fb86aabdd2f214d6ced264",
+      "bytes": 911212544,
+      "installedDate": "2026-11-03",
+      "verifiedUTC": "2026-11-03T08:32:53.538794+00:00",
+      "fullReadbackVerified": true,
+      "previousMapRetainedAsInactiveBackup": false,
+      "personalTracksUnchanged": true,
+      "otherMapsUnchanged": true,
+      "visualReview": "Installed file checksums verified; on-screen review pending."
+    },
+    {
+      "device": "GPSMAP H1",
+      "region": "ireland",
+      "mapVersion": "2.0.0",
+      "garminPackageRevision": "2.0.1-trail-detail-r1",
+      "familyId": 4831,
+      "mapSHA256": "e78f3b86298c4a141d3b4b95fd1eb98c71a276d0bbc92a7448eb5299db3ea0ef",
+      "bytes": 314253312,
+      "installedDate": "2026-11-03",
+      "verifiedUTC": "2026-11-03T08:32:53.538794+00:00",
+      "fullReadbackVerified": true,
+      "previousMapRetainedAsInactiveBackup": false,
+      "personalTracksUnchanged": true,
+      "otherMapsUnchanged": true,
+      "visualReview": "Installed file checksums verified; on-screen review pending."
+    },
+    {
+      "device": "GPSMAP H1",
+      "region": "scotland",
+      "mapVersion": "2.0.0",
+      "garminPackageRevision": "2.0.1-trail-detail-r1",
+      "familyId": 4834,
+      "mapSHA256": "dbedf150ec0771ebf20eae18a361445785f0303ff7aa0fa43c7e05109046a7f7",
+      "bytes": 358293504,
+      "installedDate": "2026-11-03",
+      "verifiedUTC": "2026-11-03T08:32:53.538794+00:00",
+      "fullReadbackVerified": true,
+      "previousMapRetainedAsInactiveBackup": false,
+      "personalTracksUnchanged": true,
+      "otherMapsUnchanged": true,
+      "visualReview": "Installed file checksums verified; on-screen review pending."
+    },
+    {
+      "device": "GPSMAP H1",
+      "region": "sierra-nevada",
+      "mapVersion": "2.0.0",
+      "garminPackageRevision": "2.0.1-trail-detail-r1",
+      "familyId": 4835,
+      "mapSHA256": "dd506bb8377886fc7e9bc0c475aed6b391fadc789bff60040bf33de2c672c163",
+      "bytes": 33787904,
+      "installedDate": "2026-11-03",
+      "verifiedUTC": "2026-11-03T08:32:53.538794+00:00",
+      "fullReadbackVerified": true,
+      "previousMapRetainedAsInactiveBackup": false,
+      "personalTracksUnchanged": true,
+      "otherMapsUnchanged": true,
+      "visualReview": "Installed file checksums verified; on-screen review pending."
+    }
+  ],
+  "personalTracksUnchanged": true,
+  "factoryMapsPreserved": true,
+  "verificationScope": "Full installed-file checksum readbacks; hardware visual review remains separate.",
+  "cleanup": {
+    "device": "GPSMAP H1",
+    "verifiedUTC": "2026-11-03T08:36:05.958104+00:00",
+    "removedSupersededMaps": [
+      {
+        "filename": "OpenBareMap-Ireland.before-h1-current",
+        "bytes": 228810752
+      },
+      {
+        "filename": "OpenBareMap-England-Wales.before-h1-current",
+        "bytes": 699564032
+      }
+    ],
+    "currentRegionalMapsRetained": 4,
+    "factoryMapsAndPersonalTracksPreserved": true,
+    "noOlderOpenBareMapCopiesRemain": true
+  }
+}
