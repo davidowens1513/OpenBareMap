@@ -1,0 +1,55 @@
+{
+  "features": [
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              -6.063212,
+              55.37104
+            ],
+            [
+              -5.431093,
+              54.99403
+            ],
+            [
+              -5.059265,
+              54.46769
+            ],
+            [
+              -5.260553,
+              52.33405
+            ],
+            [
+              -6.676647638573826,
+              51.0
+            ],
+            [
+              -11.0,
+              51.0
+            ],
+            [
+              -11.0,
+              56.0
+            ],
+            [
+              -7.194747221144451,
+              56.0
+            ],
+            [
+              -6.063212,
+              55.37104
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "properties": {
+        "purpose": "Limit opaque native background and land-cover polygons; retain complete accepted OSM and terrain inputs",
+        "region": "ireland"
+      },
+      "type": "Feature"
+    }
+  ],
+  "type": "FeatureCollection"
+}

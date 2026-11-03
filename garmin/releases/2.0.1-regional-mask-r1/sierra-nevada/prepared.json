@@ -1,0 +1,136 @@
+{
+  "contours": 13851,
+  "land_polygons": 64,
+  "landcover_polygons": 30065,
+  "townlands": 0,
+  "nodes": 5936123,
+  "ways": 40760,
+  "relations": 25827,
+  "contour_intervals": {
+    "20": 11217,
+    "100": 2634
+  },
+  "coverage": [
+    -4.4,
+    36.2,
+    -1.8,
+    38
+  ],
+  "overlay_sha256": "688930fc6a3e00acda69446db2aae0d5d29928ccad8cf66297c6c600b8dba545",
+  "overlay_bytes": 85132609,
+  "renderFootprintSHA256": "6540aa5250eece76c7980d431751c428b837aefff3034f68995aee9f727a5706",
+  "polygonClipping": {
+    "land": {
+      "input": 64,
+      "inside": 0,
+      "clipped": 4,
+      "excluded": 60,
+      "repaired": 0,
+      "emitted": 4
+    },
+    "scrub": {
+      "input": 4914,
+      "inside": 4456,
+      "clipped": 43,
+      "excluded": 415,
+      "repaired": 0,
+      "emitted": 4502
+    },
+    "shingle": {
+      "input": 180,
+      "inside": 158,
+      "clipped": 5,
+      "excluded": 17,
+      "repaired": 0,
+      "emitted": 163
+    },
+    "beach": {
+      "input": 101,
+      "inside": 15,
+      "clipped": 0,
+      "excluded": 86,
+      "repaired": 0,
+      "emitted": 15
+    },
+    "wetland": {
+      "input": 337,
+      "inside": 316,
+      "clipped": 1,
+      "excluded": 20,
+      "repaired": 0,
+      "emitted": 317
+    },
+    "wood": {
+      "input": 8439,
+      "inside": 7860,
+      "clipped": 34,
+      "excluded": 545,
+      "repaired": 0,
+      "emitted": 7901
+    },
+    "grass": {
+      "input": 4734,
+      "inside": 2328,
+      "clipped": 2,
+      "excluded": 2404,
+      "repaired": 0,
+      "emitted": 2330
+    },
+    "sand": {
+      "input": 323,
+      "inside": 214,
+      "clipped": 0,
+      "excluded": 109,
+      "repaired": 0,
+      "emitted": 214
+    },
+    "heath": {
+      "input": 138,
+      "inside": 98,
+      "clipped": 1,
+      "excluded": 39,
+      "repaired": 0,
+      "emitted": 99
+    },
+    "farmland": {
+      "input": 10543,
+      "inside": 9900,
+      "clipped": 59,
+      "excluded": 584,
+      "repaired": 0,
+      "emitted": 9962
+    },
+    "bare_rock": {
+      "input": 257,
+      "inside": 220,
+      "clipped": 1,
+      "excluded": 36,
+      "repaired": 0,
+      "emitted": 221
+    },
+    "scree": {
+      "input": 96,
+      "inside": 95,
+      "clipped": 0,
+      "excluded": 1,
+      "repaired": 0,
+      "emitted": 95
+    },
+    "bog": {
+      "input": 3,
+      "inside": 3,
+      "clipped": 0,
+      "excluded": 0,
+      "repaired": 0,
+      "emitted": 3
+    },
+    "sea": {
+      "input": 1,
+      "inside": 0,
+      "clipped": 1,
+      "excluded": 0,
+      "repaired": 0,
+      "emitted": 1
+    }
+  }
+}

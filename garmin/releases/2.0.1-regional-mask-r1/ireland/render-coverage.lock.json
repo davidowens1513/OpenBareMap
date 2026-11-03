@@ -1,0 +1,72 @@
+{
+  "bounds": [
+    -11.0,
+    51.0,
+    -5.059265,
+    56.0
+  ],
+  "contextEnvelope": [
+    -11,
+    51,
+    -5,
+    56
+  ],
+  "drawPriority": 25,
+  "format": "openbaremap-garmin-render-footprint-v1",
+  "geometry": {
+    "bytes": 1077,
+    "path": "garmin/render-coverage.geojson",
+    "sha256": "c4d211392f14a40dc4de1b4b4b1067148b9d304bb10e8dbbe53ad63703e2d478"
+  },
+  "inputs": [
+    {
+      "accessedUTC": "2026-11-03T00:34:23.772977+00:00",
+      "bytes": 367,
+      "path": "garmin/render-coverage-sources/ireland-and-northern-ireland.poly",
+      "purpose": "Garmin regional drawing footprint only; the accepted 2026-10-24 Ireland OSM snapshot is unchanged.",
+      "sha256": "fc56ea18191a8d272ae491fc14281ddc01ac9835d77e2cded56fb6d1829f0fe8",
+      "url": "https://download.geofabrik.de/europe/ireland-and-northern-ireland.poly"
+    }
+  ],
+  "knownDestinationsCovered": {
+    "Aran Islands": [
+      -9.76,
+      53.12
+    ],
+    "Belfast": [
+      -5.93,
+      54.6
+    ],
+    "Cork": [
+      -8.47,
+      51.9
+    ],
+    "Dublin": [
+      -6.2603,
+      53.3493
+    ],
+    "Fastnet": [
+      -9.6,
+      51.389
+    ],
+    "Great Blasket": [
+      -10.54,
+      52.1
+    ],
+    "Malin Head": [
+      -7.34,
+      55.38
+    ],
+    "Skellig Michael": [
+      -10.54,
+      51.77
+    ],
+    "Tory Island": [
+      -8.23,
+      55.26
+    ]
+  },
+  "purpose": "Rectangular Garmin tiles may overlap other countries. Do not fill their padding with sea, land or land-cover polygons.",
+  "region": "ireland",
+  "transparentNativeMap": true
+}

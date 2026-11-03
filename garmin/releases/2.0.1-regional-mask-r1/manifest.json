@@ -1,0 +1,167 @@
+{
+  "buildingResolution": 24,
+  "collectionRevision": "2.0.1-regional-mask-r1",
+  "drawPriority": 25,
+  "fineContourResolution": 23,
+  "format": "openbaremap-garmin-release-v1",
+  "garminPackageRevision": "2.0.1-regional-mask-r1",
+  "hikingLineResolution": 24,
+  "hikingLineWidthPixels": 4,
+  "lineColours": {
+    "path": "#269e3f",
+    "track": "#654321",
+    "walkingRoute": "#d13d2c"
+  },
+  "nativeLevels": [
+    24,
+    23,
+    22,
+    20,
+    18,
+    16
+  ],
+  "regionalBackgrounds": "Clipped to locked source footprints; no automatic rectangular filler",
+  "regions": {
+    "england-wales": {
+      "backgroundValidation": {
+        "bytes": 194,
+        "path": "garmin/releases/2.0.1-regional-mask-r1/england-wales-background-validation.txt",
+        "sha256": "dfd4d5b726cf0949d2ee2db749dea327e3469f9cc0655791c4023c6d45b9e0b6"
+      },
+      "buildReport": {
+        "bytes": 33602,
+        "path": "regions/england-wales/garmin/build-report.json",
+        "sha256": "286e08f368d232f61920740363054154c5386aa07b0cbcc9cdb387d082e8ecf1"
+      },
+      "bytes": 918454272,
+      "downloadURL": "https://downloads.appsbyonzy.dev/Garmin/OpenBareMap-England-Wales.img?v=2.0.1-regional-mask-r1",
+      "familyId": 4833,
+      "garminPackageRevision": "2.0.1-regional-mask-r1",
+      "instructionsURL": "https://downloads.appsbyonzy.dev/Garmin/england-wales-instructions.txt",
+      "mapVersion": "2.0.1",
+      "path": "regions/england-wales/garmin/dist/OpenBareMap-England-Wales.img",
+      "renderFootprint": {
+        "bytes": 11274,
+        "path": "regions/england-wales/garmin/render-coverage.geojson",
+        "sha256": "2d3134d571fdad5719bf085c75f3049c0d9f232b45d1786202bb7566d30809bc"
+      },
+      "renderFootprintLock": {
+        "bytes": 1856,
+        "path": "regions/england-wales/garmin/render-coverage.lock.json",
+        "sha256": "3b33b5636cc456ddc3f8b8fb943117efede7940366b9876793a615f717389d55"
+      },
+      "sha256": "d63bd3af2585ef2b0301f391a27be6fdf41a700a948d0b66535e82760c2f7ebf",
+      "sourceLockSHA256": "ccff46e007e87c93ef013e66bbdd759167e9856f67f5113667d0f2deffa6e577",
+      "terrainLockSHA256": "d1f1484cb49fab6439a925797c71bd4cb7ca6310fb43c1fcbdc5e09d1ddf5797",
+      "tileCount": 324
+    },
+    "ireland": {
+      "backgroundValidation": {
+        "bytes": 186,
+        "path": "garmin/releases/2.0.1-regional-mask-r1/ireland-background-validation.txt",
+        "sha256": "a37496317ff0c76e3bef25ad9520e29ffbfbf38d7152174c75a00dc544b6016b"
+      },
+      "buildReport": {
+        "bytes": 12438,
+        "path": "garmin/build-report.json",
+        "sha256": "3a275f0628a6539cfded965b8c6394202739711c7826a24319a4e800446d1295"
+      },
+      "bytes": 315039744,
+      "downloadURL": "https://downloads.appsbyonzy.dev/Garmin/OpenBareMap-Ireland.img?v=2.0.1-regional-mask-r1",
+      "familyId": 4831,
+      "garminPackageRevision": "2.0.1-regional-mask-r1",
+      "instructionsURL": "https://downloads.appsbyonzy.dev/Garmin/instructions.txt",
+      "mapVersion": "2.0.0",
+      "path": "garmin/dist/OpenBareMap-Ireland.img",
+      "renderFootprint": {
+        "bytes": 1077,
+        "path": "garmin/render-coverage.geojson",
+        "sha256": "c4d211392f14a40dc4de1b4b4b1067148b9d304bb10e8dbbe53ad63703e2d478"
+      },
+      "renderFootprintLock": {
+        "bytes": 1541,
+        "path": "garmin/render-coverage.lock.json",
+        "sha256": "6767dede625615b84897d4f015b5765a34babeec219e460593b15be791b3ab4b"
+      },
+      "sha256": "d043742adc8fbee5015e9d65b0937f5373cd06df0985514a1f1e1c7266d6de4a",
+      "sourceLockSHA256": "fc3807f33d665938a76e34f6d70674bd83dd93d7aae405a201378dae93bb5227",
+      "terrainLockSHA256": "7336551caeaa254c02e7a2512278de2a390582fb6fcf520f61ea02a9f5f46798",
+      "tileCount": 91
+    },
+    "scotland": {
+      "backgroundValidation": {
+        "bytes": 187,
+        "path": "garmin/releases/2.0.1-regional-mask-r1/scotland-background-validation.txt",
+        "sha256": "09d61a037c1a721d4d07fb001b0a82c6d7b71dddaa63393993500f636bfbff15"
+      },
+      "buildReport": {
+        "bytes": 11842,
+        "path": "regions/scotland/garmin/build-report.json",
+        "sha256": "12990a1fd4e35849a20770678040fb2bb48a3906fbb546940a4e28007ec3dde7"
+      },
+      "bytes": 359022592,
+      "downloadURL": "https://downloads.appsbyonzy.dev/Garmin/OpenBareMap-Scotland.img?v=2.0.1-regional-mask-r1",
+      "familyId": 4834,
+      "garminPackageRevision": "2.0.1-regional-mask-r1",
+      "instructionsURL": "https://downloads.appsbyonzy.dev/Garmin/scotland-instructions.txt",
+      "mapVersion": "2.0.0",
+      "path": "regions/scotland/garmin/dist/OpenBareMap-Scotland.img",
+      "renderFootprint": {
+        "bytes": 10456,
+        "path": "regions/scotland/garmin/render-coverage.geojson",
+        "sha256": "f50d4b5c7c9b52908b0f01851c6070eee8522bc6b064b6d0abb3e762a6e6a8be"
+      },
+      "renderFootprintLock": {
+        "bytes": 1502,
+        "path": "regions/scotland/garmin/render-coverage.lock.json",
+        "sha256": "32b9647254d589c7b0b2f39c43b52553c21687329ebfea78672ce40a194af147"
+      },
+      "sha256": "ea626b6604d076bdf0e3a32c61b28ee6d55384168681c4b4ae11b32cc1e4d4ce",
+      "sourceLockSHA256": "2bdd576b72e9e579412e8ae54dd630380c3a52593b2581bb2338a1aa0a39b3ab",
+      "terrainLockSHA256": "62a464d1e8e52c65b6e6b382ed0a7f7036d9ae765243f1c8e93e79677e945fa5",
+      "tileCount": 84
+    },
+    "sierra-nevada": {
+      "backgroundValidation": {
+        "bytes": 191,
+        "path": "garmin/releases/2.0.1-regional-mask-r1/sierra-nevada-background-validation.txt",
+        "sha256": "8dafae1aaf5bfa803b17a721fed3d456f5f76d5fb6017b99c6a44047cb0a912f"
+      },
+      "buildReport": {
+        "bytes": 5610,
+        "path": "regions/sierra-nevada/garmin/build-report.json",
+        "sha256": "9a81f0c9be37327dcb3167c88b547e05ff4efc4b9b48909f83b86f8809b25520"
+      },
+      "bytes": 33880064,
+      "downloadURL": "https://downloads.appsbyonzy.dev/Garmin/OpenBareMap-Sierra-Nevada.img?v=2.0.1-regional-mask-r1",
+      "familyId": 4835,
+      "garminPackageRevision": "2.0.1-regional-mask-r1",
+      "instructionsURL": "https://downloads.appsbyonzy.dev/Garmin/sierra-nevada-instructions.txt",
+      "mapVersion": "2.0.0",
+      "path": "regions/sierra-nevada/garmin/dist/OpenBareMap-Sierra-Nevada.img",
+      "renderFootprint": {
+        "bytes": 59673,
+        "path": "regions/sierra-nevada/garmin/render-coverage.geojson",
+        "sha256": "6540aa5250eece76c7980d431751c428b837aefff3034f68995aee9f727a5706"
+      },
+      "renderFootprintLock": {
+        "bytes": 1271,
+        "path": "regions/sierra-nevada/garmin/render-coverage.lock.json",
+        "sha256": "2b9884059a4ee0896cd9f0f93440e31048521254bbb5abce7f5258024fd3ef9c"
+      },
+      "sha256": "8af431bfa7b7b75ab3be1aa30625ce90a5ab8eec317339e811ebf84f2c8fcfe3",
+      "sourceLockSHA256": "6e1b6b971268eb22f7212003334c04b1a3609e27b0455a8fff461511456f01f7",
+      "terrainLockSHA256": "63f16097e51fc812698a51a7918090f0e103c00172dd34f801c4bf21d50d054a",
+      "tileCount": 14
+    }
+  },
+  "releaseDate": "2026-11-03",
+  "routing": false,
+  "transparent": true,
+  "validation": {
+    "bytes": 736,
+    "path": "garmin/releases/2.0.1-regional-mask-r1/map-set-validation.txt",
+    "sha256": "88a3ad9461cf66021cc7c8bee9d5083f653fa600e08cd740f372c25cfb20070c"
+  },
+  "whiteBacking": false
+}

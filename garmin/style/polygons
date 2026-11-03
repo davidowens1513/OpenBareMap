@@ -1,5 +1,5 @@
-obm:sea=yes [0x32 resolution 16]
-natural=land [0x54 resolution 16]
+obm:sea=yes { set mkgmap:skipSizeFilter=true } [0x32 resolution 16]
+natural=land { set mkgmap:skipSizeFilter=true } [0x54 resolution 16]
 natural=water [0x3c resolution 18]
 landuse=reservoir | landuse=basin [0x3c resolution 20]
 obm:landcover=peat_cutting [0x10108 resolution 20]

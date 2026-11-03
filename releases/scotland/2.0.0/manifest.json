@@ -44,11 +44,16 @@
     }
   },
   "garmin": {
-    "bytes": 359235584,
+    "bytes": 359022592,
     "path": "regions/scotland/garmin/dist/OpenBareMap-Scotland.img",
-    "sha256": "55e0ebc8a9cbf6746e55a9b08fbb01f1cff07dc467f1d2d8bb598df1c6ac9ff2"
+    "sha256": "ea626b6604d076bdf0e3a32c61b28ee6d55384168681c4b4ae11b32cc1e4d4ce"
   },
-  "garminPackageRevision": "2.0.0-hiking-r1",
+  "garminMontanaInstallation": {
+    "bytes": 568,
+    "path": "regions/scotland/garmin/installation-montana.json",
+    "sha256": "ae031bc027a0a5ee8681cb26ec2ec6184f8009ad64764b67a68959f356cc1fe2"
+  },
+  "garminPackageRevision": "2.0.1-regional-mask-r1",
   "geometryReport": {
     "path": "releases/scotland/2.0.0/build-records/scotland-geometry/geometry-report.json",
     "sha256": "03066d8a1f3060dc08d8d0d7d1cedfd58fc831214b6e54727f057c85667adfb8"
@@ -116,10 +121,5 @@
   },
   "styleSHA256": "c886621815c0e9ce6bed04bd9c87c463b82176cb1a72449d0ca20522bdc84083",
   "terrainLockSHA256": "62a464d1e8e52c65b6e6b382ed0a7f7036d9ae765243f1c8e93e79677e945fa5",
-  "validation": "validation.json",
-  "garminMontanaInstallation": {
-    "path": "regions/scotland/garmin/installation-montana.json",
-    "bytes": 568,
-    "sha256": "ae031bc027a0a5ee8681cb26ec2ec6184f8009ad64764b67a68959f356cc1fe2"
-  }
+  "validation": "validation.json"
 }

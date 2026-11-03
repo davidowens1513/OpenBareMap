@@ -23,6 +23,8 @@ def prepare(region='ireland'):
  lock=json.loads((ROOT/'garmin/inputs.lock.json' if region=='ireland' else ROOT/'regions'/region/'garmin/inputs.lock.json').read_text())
  for item in lock['inputs']:
   if digest(ROOT/item['path'])!=item['sha256']:raise ValueError('Garmin input checksum changed')
+ from garmin_render_coverage import load,CoverageClipper
+ footprint,footprint_record=load(region);clipper=CoverageClipper(footprint)
  result=WORK/'overlays.osm.gz'
  if result.exists():raise FileExistsError(result)
  nodefile=WORK/'overlay-nodes.xml';wayfile=WORK/'overlay-ways.xml';relfile=WORK/'overlay-relations.xml'
@@ -45,7 +47,7 @@ def prepare(region='ireland'):
    identifier=next_way;next_way+=1;counts['ways']+=1;emitted.append(identifier)
    ways.write(f'<way id="{identifier}" version="1">'+''.join(f'<nd ref="{n}"/>' for n in part)+tags(values)+'</way>\n')
   return emitted
- def polygon(rings,values):
+ def emit_polygon(rings,values):
   nonlocal next_relation
   members=[]
   for i,ring in enumerate(rings):
@@ -54,6 +56,9 @@ def prepare(region='ireland'):
   if not members:return
   identifier=next_relation;next_relation+=1;counts['relations']+=1
   rels.write(f'<relation id="{identifier}" version="1">'+''.join(f'<member type="way" ref="{w}" role="{role}"/>' for w,role in members)+tags({'type':'multipolygon',**values})+'</relation>\n')
+ def polygon(rings,values):
+  kind=values.get('obm:landcover','sea' if 'obm:sea' in values else 'land')
+  for clipped in clipper.polygons({'type':'Polygon','coordinates':rings},kind):emit_polygon(clipped,values)
  for f in features(ROOT/'garmin/inputs/contours-10m.geojson.gz' if region=='ireland' else ROOT/'regions'/region/'garmin/inputs/contours.geojson.gz'):
   ele=int(round(f['properties']['elevation']))
   if ele<=0 or ele%contour_step:continue
@@ -99,6 +104,7 @@ def prepare(region='ireland'):
   with gzip.open(src,'rb') as inp,dest.open('wb') as out:shutil.copyfileobj(inp,out)
   if dest.stat().st_size!=3601*3601*2:raise ValueError('Invalid HGT size')
  counts['overlay_sha256']=digest(result);counts['overlay_bytes']=result.stat().st_size
+ counts['renderFootprintSHA256']=footprint_record['geometry']['sha256'];counts['polygonClipping']=clipper.stats
  (WORK/'prepared.json').write_text(json.dumps(counts,indent=2)+'\n');print(json.dumps(counts,indent=2))
 if __name__=='__main__':
  parser=argparse.ArgumentParser();parser.add_argument('--region',choices=['ireland','england-wales','scotland','sierra-nevada'],default='ireland');args=parser.parse_args();prepare(args.region)

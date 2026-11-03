@@ -18,13 +18,15 @@
     "--dem-poly=/Users/davidowens/Documents/Codex/2026-10-25/i-x20/outputs/OpenBareMap/regions/england-wales/garmin/coverage.poly",
     "--dem-dists=3312,3312,13248,26512,53024,106048",
     "--dem-interpolation=bilinear",
-    "--copyright-file=/Users/davidowens/Documents/Codex/2026-10-25/i-x20/outputs/OpenBareMap/regions/england-wales/garmin/copyright.txt"
+    "--copyright-file=/Users/davidowens/Documents/Codex/2026-10-25/i-x20/outputs/OpenBareMap/regions/england-wales/garmin/copyright.txt",
+    "--transparent",
+    "--draw-priority=25"
   ],
   "contourIntervalMetres": 20,
   "coverage": "England, Wales and Isle of Man, including offshore islands",
   "familyId": 4833,
   "fineContourResolution": 23,
-  "garminPackageRevision": "2.0.1-isle-of-man-r1",
+  "garminPackageRevision": "2.0.1-regional-mask-r1",
   "hikingLineResolution": 24,
   "hikingLineWidthPixels": 4,
   "nativeLevels": [
@@ -36,5 +38,8 @@
     16
   ],
   "routing": false,
-  "tileStartId": 48330001
+  "tileStartId": 48330001,
+  "regionalRenderMask": "render-coverage.lock.json",
+  "transparent": true,
+  "drawPriority": 25
 }

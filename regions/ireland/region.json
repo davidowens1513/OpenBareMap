@@ -5,10 +5,16 @@
   "mapVersion": "2.0.0",
   "minzoom": 4,
   "maxzoom": 14,
-  "bounds": [-10.9, 51.25, -5.35, 55.5],
+  "bounds": [
+    -10.9,
+    51.25,
+    -5.35,
+    55.5
+  ],
   "gridCRS": "EPSG:29903",
   "gridName": "Irish Grid",
   "gridSource": "irish-grid",
   "townlands": true,
-  "activeMap": "active-map.json"
+  "activeMap": "active-map.json",
+  "garminPackageRevision": "2.0.1-regional-mask-r1"
 }

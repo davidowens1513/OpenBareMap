@@ -1,4 +1,4 @@
-OpenBareMap Scotland 2.0.0 — Garmin Map (2.0.0-hiking-r1)
+OpenBareMap Scotland 2.0.0 — Garmin Map (2.0.1-regional-mask-r1)
 For compatible Garmin mapping products
 
 1. Contents
@@ -10,7 +10,9 @@ marks paths, brown tracks and red walking routes. No white backing is added.
 Buildings are limited to the finest stored detail level; fine contours are
 retained in the intervening level. Garmin settings control the screen scale.
 It has its own map family identifier (4834) and can coexist with other
-OpenBareMap regions. It provides no turn-by-turn routing.
+OpenBareMap regions. Its regional background is confined to the published
+coverage footprint, so neighbouring regions can remain enabled together.
+It provides no turn-by-turn routing.
 
 2. Requirements
 Use a Garmin mapping product that accepts custom .img maps. Check its manual

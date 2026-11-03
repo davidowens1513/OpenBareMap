@@ -24,11 +24,13 @@
     "--dem-poly=garmin/ireland.poly",
     "--dem-dists=3312,3312,13248,26512,53024,106048",
     "--dem-interpolation=bilinear",
-    "--copyright-file=garmin/copyright.txt"
+    "--copyright-file=garmin/copyright.txt",
+    "--transparent",
+    "--draw-priority=25"
   ],
   "localBorders": false,
   "countyBorders": true,
-  "garminPackageRevision": "2.0.0-hiking-r1",
+  "garminPackageRevision": "2.0.1-regional-mask-r1",
   "nativeLevels": [
     24,
     23,
@@ -40,5 +42,8 @@
   "hikingLineResolution": 24,
   "hikingLineWidthPixels": 4,
   "buildingResolution": 24,
-  "fineContourResolution": 23
+  "fineContourResolution": 23,
+  "regionalRenderMask": "render-coverage.lock.json",
+  "transparent": true,
+  "drawPriority": 25
 }

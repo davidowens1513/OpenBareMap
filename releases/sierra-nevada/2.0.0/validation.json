@@ -77,10 +77,11 @@
     }
   },
   "garmin": {
-    "configSHA256": "03ebee89792ddd76a83510f2ce9e61b7da0582a6c3acd8f1b8548eca88447a7f",
+    "configSHA256": "62a968d1d3ee9f87770981d029b465dac5616c3078ad507619dcd6d6fbe60970",
     "contourIntervalMetres": 20,
+    "drawPriority": 25,
     "familyId": 4835,
-    "garminPackageRevision": "2.0.0-hiking-r1",
+    "garminPackageRevision": "2.0.1-regional-mask-r1",
     "inspection": {
       "anchorLabels": {
         "Capileira": "Capileira",
@@ -97,15 +98,15 @@
       "coastPolygonsByLevel": {
         "0": {
           "0x32": 14,
-          "0x54": 71
+          "0x54": 27
         },
         "1": {
           "0x32": 14,
-          "0x54": 41
+          "0x54": 24
         },
         "2": {
           "0x32": 14,
-          "0x54": 32
+          "0x54": 24
         },
         "3": {
           "0x32": 14,
@@ -113,130 +114,132 @@
         },
         "4": {
           "0x32": 14,
-          "0x54": 23
+          "0x54": 24
         }
       },
       "contoursByLevel": {
         "0": {
-          "0x10009": 73,
-          "0x20": 23819,
-          "0x22": 5852
+          "0x10009": 72,
+          "0x20": 24112,
+          "0x22": 5890
         },
         "1": {
-          "0x10009": 51,
-          "0x20": 17961,
-          "0x22": 4399
+          "0x10009": 55,
+          "0x20": 18283,
+          "0x22": 4440
         },
         "2": {
-          "0x10009": 41,
-          "0x22": 4064
+          "0x10009": 40,
+          "0x22": 4099
         },
         "3": {
-          "0x10008": 3610,
-          "0x10009": 36
+          "0x10008": 3640,
+          "0x10009": 37
         },
         "4": {
-          "0x10009": 24
+          "0x10009": 28
         }
       },
       "lineInstancesAtHighestDetail": {
-        "0x1": 1500,
-        "0x10001": 3166,
-        "0x10002": 924,
-        "0x10004": 658,
-        "0x10005": 2862,
-        "0x10006": 1391,
-        "0x10009": 73,
+        "0x1": 1520,
+        "0x10001": 3162,
+        "0x10002": 871,
+        "0x10004": 651,
+        "0x10005": 2814,
+        "0x10006": 1378,
+        "0x10009": 72,
         "0x1000a": 18,
-        "0x1000b": 2125,
-        "0x14": 355,
-        "0x16": 34742,
-        "0x18": 10404,
-        "0x1a": 14,
-        "0x1c": 124,
-        "0x1e": 51,
-        "0x1f": 328,
-        "0x2": 797,
-        "0x20": 23819,
-        "0x22": 5852,
-        "0x3": 1232,
-        "0x4": 1843,
-        "0x6": 42050,
-        "0x7": 17582,
-        "0xa": 28054
+        "0x1000b": 2143,
+        "0x14": 352,
+        "0x16": 34715,
+        "0x18": 10604,
+        "0x1a": 8,
+        "0x1c": 159,
+        "0x1e": 53,
+        "0x1f": 321,
+        "0x2": 814,
+        "0x20": 24112,
+        "0x22": 5890,
+        "0x3": 1174,
+        "0x4": 1794,
+        "0x6": 41937,
+        "0x7": 17933,
+        "0xa": 28880
       },
-      "logicalCombinedSHA256": "43f407da8764e5fb5638240713cb6fb688ff8bc5aa2b62544853e42bc0968795",
+      "logicalCombinedSHA256": "5b7070a46f5e888b45ee8c9b2ecee7a0c0d80b77fadbb3a512d197af6b53e7b9",
       "logicalHashNote": "Internal file names, sizes and payloads; only CommonHeader creation-date bytes 14..20 are zeroed for hashing. IMG archive headers are excluded. Output bytes are never modified.",
       "logicalTileSHA256": {
-        "48350001.img": "534d00b9ce87d97ef369fdaf750bb67beb68f386e344bef043d14d8bc1e20ae7",
-        "48350002.img": "ce3a505c6c011968cf2587009b60b653437e580c119bd1dd3e8b6551f36ccf32",
-        "48350003.img": "20522435d04ad9d8d8f97398af5efb9babbb10a83d9ac281a7acc0c1c4a9b67f",
-        "48350004.img": "30007f1d50c92877dfea5443dda1f556ab6062d0d1431bdd1846e46c355883bd",
-        "48350005.img": "4c248d1f3be87d6edeb7e6a95f752a6c12a8afb435409cf51b71a6e14a8562d7",
-        "48350006.img": "90d5955d43df624f9a577fbee787eff1f9c1be9c13838aa01ef0e408d6e4f2c8",
-        "48350007.img": "f36cec24f0c8eefacd2dac7f1182f2d24f5fef99f48a8ddc376847119c679ec3",
-        "48350008.img": "4b8081dd4f6a1eaf745e6e06e289ad5c15588da2afbc689c966493daf4b8e00d",
-        "48350009.img": "3579eee0373e58a109df729bdb34f18d5b456510a71fedf8039bb452da8427b8",
-        "48350010.img": "9c24ef5a337fa20b5204b5bbbf4b1d0e5b1b3af77bb3d5ae8ad76cc84aad5e6e",
-        "48350011.img": "1b949f608cfe60905903584e2981ad7aad8bf41b67fa1d2a20c8db3b5a844e56",
-        "48350012.img": "b5d3bb29d53c584e428de20ab56d4723832bd4fdf590e8be9107c1537ce76d51",
-        "48350013.img": "295894de291b1c1be23b48b18efae1e2ca8e638c53a24de3a4512f9bdfd32ea5",
-        "48350014.img": "32f65f4a58b09fb706c4172202b50330c20ffef3ffa6828024ac6fc585188ee0"
+        "48350001.img": "613c5bcb4d4c201f738b9ec8c1c077f83f20c65be4274e4a96db120d39b91b31",
+        "48350002.img": "7cfe9c0a42849715c0e4e6ddbd0546180a41bf7a764dc7877c5ee9be42d2e24d",
+        "48350003.img": "a1d5e1dc33f975fa2ea9ba2df34b7c77e2565de3a001124bae769f0f28a4b369",
+        "48350004.img": "6aaf779e558e28b66d8b1a6bcc335d988dfea62229285f97b7f271460b5530bb",
+        "48350005.img": "5df68efb2108218eb37f2087c8e9fcba0f0e8fafe10257677602acb15029dcee",
+        "48350006.img": "69b5bd315a811d742a14c4fe963a0187ca8f00fdb77400bc04a37455520ee3a6",
+        "48350007.img": "e366ab86aa768afd6a462e2a150df80db4cef4127a5e621fb5cdd486e873456b",
+        "48350008.img": "ab3603a2606f0b9751c4d333e2b78eda13e98606de7708b8e19695208a7729eb",
+        "48350009.img": "f50005205470e532394c6fdb6d596c407e2d7b36d68f36a78b0ac07180aeb0c3",
+        "48350010.img": "9071df3dedc3fbcfd22cfbc166ac782aa6ec243d25dfee6b3eacc82249bc2ab0",
+        "48350011.img": "95044e6c7dc428164bf96690be4a248453b140437d2d3290b79e9d876de1654b",
+        "48350012.img": "5a2291d3433d9f09f3864d77fc369262cf7be0c2cab274c134ee9471910822bd",
+        "48350013.img": "e35178e9d15773a3368ff8dab56eaaa92e0abec2bdd109f962ab31c2412468df",
+        "48350014.img": "3a5d0196be5265d56b07c0ee588fadd3c4fa8f175d0e7922c52a3893edcad418"
       },
       "pointInstancesAtHighestDetail": {
         "0x100": 2,
-        "0x10001": 520,
-        "0x10002": 588,
-        "0x10003": 1601,
+        "0x10001": 544,
+        "0x10002": 604,
+        "0x10003": 1593,
         "0x10004": 37,
-        "0x10006": 16673,
-        "0x2f0b": 6807,
-        "0x600": 24,
+        "0x10006": 16395,
+        "0x2f0b": 6839,
+        "0x600": 20,
         "0x650c": 7,
         "0x6603": 190,
-        "0x6615": 1134,
-        "0x6616": 8681,
-        "0x800": 201,
-        "0xb00": 348,
-        "0xc00": 7930
+        "0x6615": 1141,
+        "0x6616": 8714,
+        "0x800": 205,
+        "0xb00": 355,
+        "0xc00": 8022
       },
       "polygonInstancesAtHighestDetail": {
-        "0x10101": 10633,
-        "0x10102": 4514,
-        "0x10103": 148,
-        "0x10104": 5266,
-        "0x10105": 83,
-        "0x10106": 328,
+        "0x10101": 10118,
+        "0x10102": 2299,
+        "0x10103": 109,
+        "0x10104": 4904,
+        "0x10105": 16,
+        "0x10106": 220,
         "0x10107": 3,
-        "0x10109": 277,
-        "0x1010a": 122,
-        "0x1010b": 208,
-        "0x13": 149278,
+        "0x10109": 246,
+        "0x1010a": 120,
+        "0x1010b": 190,
+        "0x13": 155548,
         "0x32": 14,
-        "0x3c": 7363,
-        "0x4b": 14,
-        "0x50": 12085,
-        "0x51": 345,
-        "0x54": 71
+        "0x3c": 9724,
+        "0x50": 11522,
+        "0x51": 328,
+        "0x54": 27
       },
       "routing": false,
       "subfileBytes": {
-        "DEM": 8336217,
-        "LBL": 1070419,
-        "MPS": 1365,
-        "RGN": 24038476,
+        "DEM": 8339803,
+        "LBL": 1062673,
+        "MPS": 1463,
+        "RGN": 24057062,
         "SRT": 912,
-        "TRE": 297444,
+        "TRE": 293629,
         "TYP": 3060
       },
       "tiles": 14
     },
+    "nativeElevation": true,
     "output": {
-      "bytes": 33868800,
+      "bytes": 33880064,
       "path": "regions/sierra-nevada/garmin/dist/OpenBareMap-Sierra-Nevada.img",
-      "sha256": "0eb8f7b386a9b2a1383fcdac4379e22d5146208f045dfd2327ce9c5466c6fea8"
+      "sha256": "8af431bfa7b7b75ab3be1aa30625ce90a5ab8eec317339e811ebf84f2c8fcfe3"
     },
     "region": "sierra-nevada",
+    "renderFootprintLockSHA256": "2b9884059a4ee0896cd9f0f93440e31048521254bbb5abce7f5258024fd3ef9c",
+    "renderFootprintSHA256": "6540aa5250eece76c7980d431751c428b837aefff3034f68995aee9f727a5706",
     "routing": false,
     "status": "compiled and structurally verified; device rendering depends on Garmin settings",
     "styleSHA256": {
@@ -248,12 +251,13 @@
       "polygons": "c9674984ff4343aacfc1696d519b0225d18fa0f0e1b5968e6717cc5526b665d6",
       "relations": "288011d18d342ba76672a79d0d19d2fa16f000fb6a63b28a829f595329bd2bb2",
       "version": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
-    }
+    },
+    "transparent": true
   },
   "garminMapSetValidation": {
-    "bytes": 669,
-    "path": "garmin/releases/2.0.0-hiking-r1/map-set-validation.txt",
-    "sha256": "ed7b1126d298d0c88194a0c613ae44427262becdf5f58f6e0d01aac5e61e0c9f"
+    "bytes": 736,
+    "path": "garmin/releases/2.0.1-regional-mask-r1/map-set-validation.txt",
+    "sha256": "88a3ad9461cf66021cc7c8bee9d5083f653fa600e08cd740f372c25cfb20070c"
   },
   "geometryProcessing": {
     "contours": 13851,
@@ -268,7 +272,7 @@
       "smoothed": 26141
     }
   },
-  "irelandGarminPackageRevision": "2.0.0-hiking-r1",
+  "irelandGarminPackageRevision": "2.0.1-regional-mask-r1",
   "irelandPreserved": true,
   "labelGlyphs": {
     "Open Sans Bold": true,

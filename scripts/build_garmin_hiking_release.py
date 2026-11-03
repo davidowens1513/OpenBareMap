@@ -14,15 +14,19 @@ def main(region):
  p=profile(region);base=ROOT/'garmin' if region=='ireland' else ROOT/'regions'/region/'garmin';config=json.loads((base/'config.json').read_text());validate_config(region,config);REVISION=config['garminPackageRevision']
  work=garmin_work(region);coverage_polygon=base/('ireland.poly' if region=='ireland' else 'coverage.poly');out=work/('hiking-r1' if REVISION=='2.0.0-hiking-r1' else REVISION);out.mkdir(parents=True,exist_ok=True);tools()
  if (out/'release.json').exists():
-  report=json.loads((out/'release.json').read_text());assert digest(out/'gmapsupp.img')==report['output']['sha256'];assert digest(base/'config.json')==report['configSHA256'];assert report['styleSHA256']=={f.name:digest(f) for f in (base/'style').iterdir() if f.is_file()};print('Verified completed build:',region,flush=True);return
+  report=json.loads((out/'release.json').read_text());assert digest(out/'gmapsupp.img')==report['output']['sha256'];assert digest(base/'config.json')==report['configSHA256'];assert report['styleSHA256']=={f.name:digest(f) for f in (base/'style').iterdir() if f.is_file()}
+  if config.get('regionalRenderMask'):
+   from garmin_render_coverage import load as render_coverage
+   _,footprint=render_coverage(region);assert report['renderFootprintSHA256']==footprint['geometry']['sha256'];assert report['renderFootprintLockSHA256']==digest(base/'render-coverage.lock.json')
+  print('Verified completed build:',region,flush=True);return
  # Source locks must always match the complete local inputs.
- for lock in [region_path(region,'sources.lock.json'),region_path(region,'terrain-sources.lock.json'),base/'dem-padding.lock.json',base/'inputs.lock.json']:
+ for lock in [region_path(region,'sources.lock.json'),region_path(region,'terrain-sources.lock.json'),base/'dem-padding.lock.json',base/'inputs.lock.json',base/'render-coverage.lock.json']:
   data=json.loads(lock.read_text())
-  items=([data['osm']] if 'osm' in data else [])+data.get('assets',[])+data.get('inputs',[])
+  items=([data['osm']] if 'osm' in data else [])+data.get('assets',[])+data.get('inputs',[])+([data['geometry']] if 'geometry' in data else [])
   for item in items:
    if item.get('path') and item.get('sha256'):assert digest(ROOT/item['path'])==item['sha256'],item['path']
  reuse=ROOT/'garmin/work/ireland-hiking-visibility-v10'
- if region=='ireland' and reuse.exists() and not (out/'gmapsupp.img').exists():
+ if region=='ireland' and REVISION=='2.0.0-hiking-r1' and reuse.exists() and not (out/'gmapsupp.img').exists():
   old=json.loads((reuse/'build.json').read_text());assert digest(reuse/'gmapsupp.img')==old['output']['sha256']
   for name in ['lines','points','polygons','options','relations']:assert (base/'style'/name).read_bytes()==(ROOT/'garmin/hiking-visibility-v10/style'/name).read_bytes(),name
   records={}
@@ -36,6 +40,9 @@ def main(region):
   run(command,out/'compile.log')
  elif not (out/'gmapsupp.img').exists():
   if not (work/'prepared.json').exists():run([sys.executable,str(ROOT/'garmin/prepare_inputs.py'),'--region',region],out/'prepare.log')
+  from garmin_render_coverage import load as render_coverage
+  _,footprint=render_coverage(region)
+  assert json.loads((work/'prepared.json').read_text())['renderFootprintSHA256']==footprint['geometry']['sha256'],'Stale overlays; use a fresh OPENBAREMAP_BUILD_ROOT'
   assert digest(work/'overlays.osm.gz')==json.loads((work/'prepared.json').read_text())['overlay_sha256']
   if not (work/'merge-record.json').exists():run([sys.executable,str(ROOT/'garmin/merge_inputs.py'),'--region',region],out/'merge.log')
   merged=json.loads((work/'merge-record.json').read_text());assert digest(work/'combined.osm.pbf')==merged['combinedSHA256'];assert merged['osmSHA256']==json.loads(region_path(region,'sources.lock.json').read_text())['osm']['sha256']
@@ -63,11 +70,13 @@ def main(region):
   expected=set(re.findall(r'^mapname:\s*(\d+)',(out/'tiles.args').read_text(),re.M));assert expected=={f.stem for f in out.glob('[0-9]*.img')}
  elif region=='ireland':assert len(list(out.glob('[0-9]*.img')))==91
  jar=ROOT/'garmin/tools/mkgmap-r4924/mkgmap.jar';java=Path(java_path())
- subprocess.run([str(java.with_name('javac')),'-cp',str(jar),'-d',str(out),str(ROOT/'garmin/InspectMap.java'),str(ROOT/'garmin/CheckHikingRelease.java')],check=True)
+ subprocess.run([str(java.with_name('javac')),'-cp',str(jar),'-d',str(out),str(ROOT/'garmin/InspectMap.java'),str(ROOT/'garmin/CheckHikingRelease.java'),str(ROOT/'garmin/CheckRegionalBackgrounds.java')],check=True)
  names=['Dublin','Belfast','Carrauntoohil'] if region=='ireland' else p.get('inspectionNames',['London','Cardiff','Newcastle upon Tyne','Plymouth','Carlisle'])
  with (out/'inspection.json').open('w') as f:subprocess.run([str(java),'-Xmx2g','-cp',str(out)+':'+str(jar),'InspectMap',str(out),*names],stdout=f,check=True)
  with (out/'hiking-validation.txt').open('w') as f:subprocess.run([str(java),'-Xmx2g','-cp',str(out)+':'+str(jar),'CheckHikingRelease',str(out)],stdout=f,check=True)
- write(out/'release.json',{'region':region,'garminPackageRevision':REVISION,'familyId':config['familyId'],'routing':False,'contourIntervalMetres':20,'output':{'path':str(image),'bytes':image.stat().st_size,'sha256':digest(image)},'configSHA256':digest(base/'config.json'),'styleSHA256':{f.name:digest(f) for f in (base/'style').iterdir() if f.is_file()},'inspection':json.loads((out/'inspection.json').read_text()),'status':'compiled and structurally verified; device rendering depends on Garmin settings'})
+ if config.get('regionalRenderMask'):
+  with (out/'background-validation.txt').open('w') as f:subprocess.run([str(java),'-Xmx2g','-cp',str(out)+':'+str(jar),'CheckRegionalBackgrounds',region,str(image)],stdout=f,check=True)
+ write(out/'release.json',{'region':region,'garminPackageRevision':REVISION,'familyId':config['familyId'],'routing':False,'transparent':config.get('transparent',False),'drawPriority':config.get('drawPriority',25),'renderFootprintSHA256':digest(base/'render-coverage.geojson'),'renderFootprintLockSHA256':digest(base/'render-coverage.lock.json'),'contourIntervalMetres':20,'output':{'path':str(image),'bytes':image.stat().st_size,'sha256':digest(image)},'configSHA256':digest(base/'config.json'),'styleSHA256':{f.name:digest(f) for f in (base/'style').iterdir() if f.is_file()},'inspection':json.loads((out/'inspection.json').read_text()),'status':'compiled and structurally verified; device rendering depends on Garmin settings'})
  print('GARMIN HIKING RELEASE VERIFIED:',region,flush=True)
 if __name__=='__main__':
  parser=argparse.ArgumentParser();parser.add_argument('--region',required=True,choices=['ireland','england-wales','scotland','sierra-nevada']);main(parser.parse_args().region)

@@ -17,12 +17,14 @@
     "--dem-poly=/Users/davidowens/Documents/Codex/2026-10-25/i-x20/outputs/OpenBareMap/regions/scotland/garmin/coverage.poly",
     "--dem-dists=3312,3312,13248,26512,53024,106048",
     "--dem-interpolation=bilinear",
-    "--copyright-file=/Users/davidowens/Documents/Codex/2026-10-25/i-x20/outputs/OpenBareMap/regions/scotland/garmin/copyright.txt"
+    "--copyright-file=/Users/davidowens/Documents/Codex/2026-10-25/i-x20/outputs/OpenBareMap/regions/scotland/garmin/copyright.txt",
+    "--transparent",
+    "--draw-priority=25"
   ],
   "contourIntervalMetres": 20,
   "coverage": "Complete Geofabrik Scotland extract, including the Hebrides, Orkney, Shetland and Rockall; no pilot or regional sampling",
   "familyId": 4834,
-  "garminPackageRevision": "2.0.0-hiking-r1",
+  "garminPackageRevision": "2.0.1-regional-mask-r1",
   "routing": false,
   "tileStartId": 48340001,
   "nativeLevels": [
@@ -36,5 +38,8 @@
   "hikingLineResolution": 24,
   "hikingLineWidthPixels": 4,
   "buildingResolution": 24,
-  "fineContourResolution": 23
+  "fineContourResolution": 23,
+  "regionalRenderMask": "render-coverage.lock.json",
+  "transparent": true,
+  "drawPriority": 25
 }

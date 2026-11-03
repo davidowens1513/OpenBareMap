@@ -18,10 +18,11 @@ mobile/web styles embed the park, coverage and outside-mask geometry offline.
 
 Garmin family 4835 and tile IDs 48350001–48359999 are reserved for this edition.
 Garmin uses rectangular native tiles selected with a conservative convex
-coverage envelope, retaining the full park and 25 km area. Additional tile
-context can appear beyond the dashed coverage line. Exact park and coverage
-outlines are included as native line overlays. Land geometry extends beyond
-the selection so coastal/background polygons remain present at low detail.
+coverage envelope, retaining the full park and 25 km area. Generated sea, land
+and land cover are clipped to the exact `coverage.geojson` footprint at every
+detail level. Sections are transparent at priority 25 and omit automatic
+rectangular filler. Additional source features can appear beyond the dashed
+coverage line. Exact park and coverage outlines are native line overlays.
 The map is display-only with native elevation and no turn-by-turn routing.
 Automated binary checks are recorded separately from actual hardware testing.
 

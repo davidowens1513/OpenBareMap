@@ -81,8 +81,8 @@ def process_script(region='ireland'):
 
 def garmin_work(region='ireland'):
     profile(region)
-    if region=='ireland':return ROOT/'garmin/work'
     import hashlib,os,tempfile
+    if region=='ireland' and not os.environ.get('OPENBAREMAP_BUILD_ROOT'):return ROOT/'garmin/work'
     cache=Path(os.environ.get('OPENBAREMAP_BUILD_ROOT',tempfile.gettempdir()))
     identity=hashlib.sha256(str(ROOT).encode()).hexdigest()[:12]
     return cache/'OpenBareMap-builds'/identity/region/'garmin'
@@ -94,6 +94,13 @@ def accepted_ireland_baseline():
     config = json.loads((ROOT/'garmin/config.json').read_text())
     revision = config.get('garminPackageRevision')
     manifest = ROOT/'garmin/releases'/str(revision)/'manifest.json'
+    # A new compiler configuration is not an accepted release until promoted.
+    if not manifest.exists():
+        report=ROOT/'garmin/build-report.json'
+        if report.exists():
+            accepted=json.loads(report.read_text()).get('garminPackageRevision')
+            candidate=ROOT/'garmin/releases'/str(accepted)/'manifest.json'
+            if candidate.exists():revision=accepted;manifest=candidate
     if manifest.exists():
         released = json.loads(manifest.read_text())
         if released['garminPackageRevision'] != revision:

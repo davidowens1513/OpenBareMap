@@ -1,0 +1,35 @@
+{
+  "garminPackageRevision": "2.0.1-regional-mask-r1",
+  "verifiedUTC": "2026-11-03T01:12:04.545296+00:00",
+  "regions": {
+    "england-wales": {
+      "url": "https://downloads.appsbyonzy.dev/Garmin/OpenBareMap-England-Wales.img?v=2.0.1-regional-mask-r1",
+      "bytes": 918454272,
+      "sha256": "d63bd3af2585ef2b0301f391a27be6fdf41a700a948d0b66535e82760c2f7ebf",
+      "fullDownloadVerified": true,
+      "instructionsChecksumsAndRegionalManifestVerified": true
+    },
+    "ireland": {
+      "url": "https://downloads.appsbyonzy.dev/Garmin/OpenBareMap-Ireland.img?v=2.0.1-regional-mask-r1",
+      "bytes": 315039744,
+      "sha256": "d043742adc8fbee5015e9d65b0937f5373cd06df0985514a1f1e1c7266d6de4a",
+      "fullDownloadVerified": true,
+      "instructionsChecksumsAndRegionalManifestVerified": true
+    },
+    "scotland": {
+      "url": "https://downloads.appsbyonzy.dev/Garmin/OpenBareMap-Scotland.img?v=2.0.1-regional-mask-r1",
+      "bytes": 359022592,
+      "sha256": "ea626b6604d076bdf0e3a32c61b28ee6d55384168681c4b4ae11b32cc1e4d4ce",
+      "fullDownloadVerified": true,
+      "instructionsChecksumsAndRegionalManifestVerified": true
+    },
+    "sierra-nevada": {
+      "url": "https://downloads.appsbyonzy.dev/Garmin/OpenBareMap-Sierra-Nevada.img?v=2.0.1-regional-mask-r1",
+      "bytes": 33880064,
+      "sha256": "8af431bfa7b7b75ab3be1aa30625ce90a5ab8eec317339e811ebf84f2c8fcfe3",
+      "fullDownloadVerified": true,
+      "instructionsChecksumsAndRegionalManifestVerified": true
+    }
+  },
+  "currentPublicReleaseManifestVerified": true
+}

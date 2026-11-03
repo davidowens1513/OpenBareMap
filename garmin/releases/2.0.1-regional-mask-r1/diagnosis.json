@@ -1,0 +1,29 @@
+{
+  "compiledEvidence": {
+    "englandWalesBackgroundTypesAtDublin": [
+      "0x32",
+      "0x4b",
+      "0x54"
+    ],
+    "englandWalesBuildingsNearDublin": 0,
+    "irelandBuildingInstances": 3066881,
+    "oldPriority": 25,
+    "oldTransparent": false
+  },
+  "correctedHardwareReview": "Pending installation",
+  "correction": "Clip generated sea, land and land cover to locked regional footprints; transparent native sections at priority25 omit rectangular filler",
+  "hardwareEvidence": [
+    "Synthetic large and small building blocks render correctly",
+    "Exact production appearance file renders the same blocks correctly",
+    "Real Irish buildings appear when England/Wales and temporary diagnostics are disabled"
+  ],
+  "mobileResourcesChanged": false,
+  "problem": "Irish buildings obscured by England/Wales regional backgrounds",
+  "retainedStyling": {
+    "buildingsResolution": 24,
+    "fineContoursResolution": 23,
+    "hikingPixels": 4,
+    "hikingResolution": 24,
+    "whiteBacking": false
+  }
+}

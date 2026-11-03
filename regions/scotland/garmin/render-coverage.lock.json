@@ -1,0 +1,82 @@
+{
+  "bounds": [
+    -14.86155,
+    54.54001,
+    0.2160547,
+    61.13564
+  ],
+  "contextEnvelope": [
+    -15,
+    54.4,
+    0.3,
+    61.2
+  ],
+  "drawPriority": 25,
+  "format": "openbaremap-garmin-render-footprint-v1",
+  "geometry": {
+    "bytes": 10456,
+    "path": "regions/scotland/garmin/render-coverage.geojson",
+    "sha256": "f50d4b5c7c9b52908b0f01851c6070eee8522bc6b064b6d0abb3e762a6e6a8be"
+  },
+  "inputs": [
+    {
+      "bytes": 4204,
+      "path": "data/regions/scotland/scotland.poly",
+      "sha256": "21a760a04939c3facdc4a99e7ea8cfa5d2e1180b936230fb5801c85f1732455b",
+      "url": "https://download.geofabrik.de/europe/united-kingdom/scotland.poly"
+    }
+  ],
+  "knownDestinationsCovered": {
+    "ben-nevis": [
+      -5.004,
+      56.796
+    ],
+    "borders": [
+      -2.45,
+      55.6
+    ],
+    "cairngorms": [
+      -3.67,
+      57.08
+    ],
+    "edinburgh": [
+      -3.188,
+      55.953
+    ],
+    "glasgow": [
+      -4.252,
+      55.86
+    ],
+    "lewis": [
+      -6.38,
+      58.21
+    ],
+    "orkney": [
+      -2.96,
+      58.98
+    ],
+    "rockall": [
+      -13.687237,
+      57.5962764
+    ],
+    "shetland": [
+      -1.25,
+      60.3
+    ],
+    "skye": [
+      -6.2,
+      57.3
+    ],
+    "st-kilda": [
+      -8.58,
+      57.814
+    ],
+    "unst": [
+      -0.84,
+      60.75
+    ]
+  },
+  "purpose": "Rectangular Garmin tiles may overlap other countries. Do not fill their padding with sea, land or land-cover polygons.",
+  "region": "scotland",
+  "transparentNativeMap": true
+}

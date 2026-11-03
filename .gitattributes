@@ -21,3 +21,5 @@ data/regions/sierra-nevada/boundary/*.kml filter=lfs diff=lfs merge=lfs -text
 releases/sierra-nevada/2.0.0/build-records/** -whitespace
 
 releases/england-wales/2.0.1/build-records/garmin/** -whitespace
+
+garmin/releases/2.0.1-regional-mask-r1/*/tiles.args -whitespace

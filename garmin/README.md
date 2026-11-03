@@ -1,6 +1,6 @@
 # OpenBareMap for Garmin
 
-OpenBareMap supplies display-only Garmin maps for Ireland, England & Wales, Scotland and Sierra Nevada National Park in Spain with 25 km around its boundary. The Garmin package is **2.0.0-hiking-r1**, within map version 2.0.0. [Release manifest](releases/2.0.0-hiking-r1/manifest.json) records the exact downloads, identifiers and checksums. Generic installation instructions are supplied with every region.
+OpenBareMap supplies display-only Garmin maps for Ireland, England & Wales, Scotland and Sierra Nevada National Park in Spain with 25 km around its boundary. The Garmin package is **2.0.1-regional-mask-r1** for all four regions. Mobile map versions remain 2.0.1 for England & Wales and 2.0.0 for the other editions. [Release manifest](releases/2.0.1-regional-mask-r1/manifest.json) records the exact downloads, identifiers and checksums. Generic installation instructions are supplied with every region.
 
 ## Native cartography
 
@@ -19,20 +19,21 @@ All these hiking lines share the same resolution-24 threshold, two stored detail
 
 Native DEM supports Garmin relief shading. Colours match in day and night mode. Fonts, labels, symbols and terrain rendering differ from the mobile/web maps. Contours retain their 20 m spacing; Garmin close-detail elevation attributes use feet, so select metric elevation units when needed. Irish Grid lines and MapLibre raster hillshade are not exported. No turn-by-turn routing is included.
 
-The editions have separate map family, tile and appearance-file identities. England & Wales retains coast/land polygons at overview levels. Sierra Nevada includes the purple national park boundary and dashed 25 km coverage limit; its conservative Garmin tile envelope can show context beyond that limit.
+The editions have separate map family, tile and appearance-file identities. Every native section is transparent at priority 25, with generated sea, land and land cover clipped to its locked regional drawing footprint. Automatic rectangular background filler is omitted, allowing neighbouring editions to remain enabled together. Coast and land polygons remain present at overview levels. Sierra Nevada uses the exact park-plus-25-km footprint for its background and includes both boundary lines; rectangular tiles can retain additional source features outside that footprint.
 
 ## Sources and rebuilding
 
-The locked OSM extracts, contour/land-cover inputs and elevation grids are authoritative. `config.json`, `style/`, `cartography.json` and `generate_typ.py` define the Ireland profile; other regional styles and configurations are in `regions/<region>/garmin/`. `map-identities.json` reserves disjoint identifiers. mkgmap r4924 and splitter r654 archives are pinned in `toolchain.lock.json`.
+The locked OSM extracts, contour/land-cover inputs and elevation grids are authoritative. `config.json`, `style/`, `cartography.json` and `generate_typ.py` define the Ireland profile; other regional styles and configurations are in `regions/<region>/garmin/`. `map-identities.json` reserves disjoint identifiers. Each edition’s `render-coverage.lock.json` pins its drawing outline and source geometry. mkgmap r4924 and splitter r654 archives are pinned in `toolchain.lock.json`.
 
 Restore sources with Git LFS before building. Use Java 21 and Python with the locked project's osmium dependency. The regional release builder verifies source and elevation checksums, creates complete source sections where needed, compiles the selected style, and inspects the native geometry, elevation, labels and hiking thresholds. Completed build checkpoints are verified before reuse.
 
 ```sh
 export JAVA_HOME=/path/to/java-21
+export OPENBAREMAP_BUILD_ROOT=/absolute/path/outside-cloud-storage/new-build-cache
 PYTHONPATH=work/python python3 scripts/build_garmin_hiking_release.py --region ireland
 PYTHONPATH=work/python python3 scripts/build_garmin_hiking_release.py --region england-wales
 PYTHONPATH=work/python python3 scripts/build_garmin_hiking_release.py --region scotland
 PYTHONPATH=work/python python3 scripts/build_garmin_hiking_release.py --region sierra-nevada
 ```
 
-Build intermediates are ignored. Inspection records, native-level checks and the map-set identity/land checks accompany the accepted release. Exact bytes are pinned by checksums; byte-identical recompilation is not claimed. [Installation records](device-installations.json) describe actual device copies separately from the release and from hardware visual review.
+Build intermediates are ignored. Inspection records, native-level checks, foreign-background checks and the map-set identity/land checks accompany the accepted release. Exact bytes are pinned by checksums; byte-identical recompilation is not claimed. [Installation records](device-installations.json) describe actual device copies separately from the release and from hardware visual review.

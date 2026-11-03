@@ -1,0 +1,57 @@
+{
+  "bounds": [
+    -3.8286890657119104,
+    36.71525811988457,
+    -2.382596049479036,
+    37.43653023328945
+  ],
+  "contextEnvelope": [
+    -4.4,
+    36.2,
+    -1.8,
+    38
+  ],
+  "drawPriority": 25,
+  "format": "openbaremap-garmin-render-footprint-v1",
+  "geometry": {
+    "bytes": 59673,
+    "path": "regions/sierra-nevada/garmin/render-coverage.geojson",
+    "sha256": "6540aa5250eece76c7980d431751c428b837aefff3034f68995aee9f727a5706"
+  },
+  "inputs": [
+    {
+      "path": "regions/sierra-nevada/coverage.geojson",
+      "purpose": "Exact official park plus 25 km footprint; not its rectangular tile envelope",
+      "sha256": "89a525ab625e99f7be54b0fe7c27ccf3c966d2929e2ba2a2115822d157354dee"
+    }
+  ],
+  "knownDestinationsCovered": {
+    "capileira": [
+      -3.358,
+      36.961
+    ],
+    "granada": [
+      -3.5986,
+      37.1765
+    ],
+    "mulhacen": [
+      -3.3114,
+      37.0547
+    ],
+    "puerto-de-la-ragua": [
+      -3.031,
+      37.114
+    ],
+    "trevelez": [
+      -3.265,
+      37.002
+    ],
+    "veleta": [
+      -3.3656,
+      37.0504
+    ]
+  },
+  "purpose": "Rectangular Garmin tiles may overlap other countries. Do not fill their padding with sea, land or land-cover polygons.",
+  "region": "sierra-nevada",
+  "transparentNativeMap": true
+}

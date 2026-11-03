@@ -1,0 +1,82 @@
+{
+  "bounds": [
+    -6.7,
+    49.8,
+    2.1,
+    55.9
+  ],
+  "contextEnvelope": [
+    -6.7,
+    49.8,
+    2.1,
+    55.9
+  ],
+  "drawPriority": 25,
+  "format": "openbaremap-garmin-render-footprint-v1",
+  "geometry": {
+    "bytes": 11274,
+    "path": "regions/england-wales/garmin/render-coverage.geojson",
+    "sha256": "2d3134d571fdad5719bf085c75f3049c0d9f232b45d1786202bb7566d30809bc"
+  },
+  "inputs": [
+    {
+      "bytes": 11945,
+      "path": "data/regions/england-wales/england.poly",
+      "sha256": "2a3f3f0b6716d52990a973835789227a190e2c1770e33acacb15241685e96b53",
+      "url": "https://download.geofabrik.de/europe/united-kingdom/england.poly"
+    },
+    {
+      "bytes": 10767,
+      "path": "data/regions/england-wales/wales.poly",
+      "sha256": "c7b9cf40de410cc5821c71469a15fc1b5c0a5b12190cc10968df533ec7eda08f",
+      "url": "https://download.geofabrik.de/europe/united-kingdom/wales.poly"
+    },
+    {
+      "bytes": 175,
+      "path": "data/regions/england-wales/isle-of-man.poly",
+      "sha256": "b0e8395acdbf35e98624a5c3d533019028b89b0da49eeff9e83fa71f827ba864",
+      "url": "https://download.geofabrik.de/europe/isle-of-man.poly"
+    }
+  ],
+  "knownDestinationsCovered": {
+    "brecon": [
+      -3.436,
+      51.884
+    ],
+    "dartmoor": [
+      -3.94,
+      50.58
+    ],
+    "isle-of-man": [
+      -4.53,
+      54.23
+    ],
+    "lakes": [
+      -3.211,
+      54.455
+    ],
+    "london": [
+      -0.128,
+      51.507
+    ],
+    "northumberland": [
+      -2.124,
+      55.478
+    ],
+    "peaks": [
+      -1.837,
+      53.35
+    ],
+    "scilly": [
+      -6.31,
+      49.92
+    ],
+    "snowdonia": [
+      -4.076,
+      53.068
+    ]
+  },
+  "purpose": "Rectangular Garmin tiles may overlap other countries. Do not fill their padding with sea, land or land-cover polygons.",
+  "region": "england-wales",
+  "transparentNativeMap": true
+}

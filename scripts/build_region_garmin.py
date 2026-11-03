@@ -71,12 +71,16 @@ def main(region):
     if not polygon.exists():polygon_union(region,polygon)
     copyright_file=dest/'copyright.txt'
     copyright_file.write_text((ROOT/'garmin/copyright.txt').read_text().replace('Ireland',p['label']).replace('Townlands','Inherited font and pattern assets'))
-    options=['--max-jobs=2','--style-file='+str(style),'--family-id='+str(p['garminFamilyId']),'--product-id=1','--family-name='+p['name'],'--series-name=OpenBareMap Garmin 2.0','--description='+p['name']+' 2.0','--code-page=1252','--lower-case','--name-tag-list=name:en,name,name:'+p.get('nativeLanguage','cy'),'--levels=0:24,1:23,2:22,3:20,4:18,5:16','--gmapsupp','--add-pois-to-areas','--dem='+str(work/'hgt'),'--dem-poly='+str(polygon),'--dem-dists=3312,3312,13248,26512,53024,106048','--dem-interpolation=bilinear','--copyright-file='+str(copyright_file)]
+    options=['--max-jobs=2','--style-file='+str(style),'--family-id='+str(p['garminFamilyId']),'--product-id=1','--family-name='+p['name'],'--series-name=OpenBareMap Garmin 2.0','--description='+p['name']+' 2.0','--code-page=1252','--lower-case','--name-tag-list=name:en,name,name:'+p.get('nativeLanguage','cy'),'--levels=0:24,1:23,2:22,3:20,4:18,5:16','--gmapsupp','--transparent','--draw-priority=25','--add-pois-to-areas','--dem='+str(work/'hgt'),'--dem-poly='+str(polygon),'--dem-dists=3312,3312,13248,26512,53024,106048','--dem-interpolation=bilinear','--copyright-file='+str(copyright_file)]
     if p.get('coverageBoundary'):copyright_file.write_text(copyright_file.read_text()+'\nNational park boundary: Fuente: Organismo Autónomo Parques Nacionales (MITECO/OAPN), CC BY 4.0. See boundary-source.json.\n')
-    config={'routing':False,'coverage':p['coverage'],'contourIntervalMetres':20,'familyId':p['garminFamilyId'],'tileStartId':p['garminTileStartId'],'compilerOptions':options,'garminPackageRevision':p.get('garminPackageRevision',p['mapVersion'])}
+    from garmin_render_coverage import generate as generate_render_coverage
+    generate_render_coverage(region)
+    config={'routing':False,'transparent':True,'drawPriority':25,'regionalRenderMask':'render-coverage.lock.json','coverage':p['coverage'],'contourIntervalMetres':20,'familyId':p['garminFamilyId'],'tileStartId':p['garminTileStartId'],'compilerOptions':options,'garminPackageRevision':p.get('garminPackageRevision',p['mapVersion'])}
     validate_config(region,config)
     write(dest/'config.json',config);tools()
     if not (work/'prepared.json').exists():run([sys.executable,'garmin/prepare_inputs.py','--region',region],work/'prepare.log')
+    footprint=json.loads((dest/'render-coverage.lock.json').read_text())
+    if json.loads((work/'prepared.json').read_text()).get('renderFootprintSHA256')!=footprint['geometry']['sha256']:raise ValueError('Stale regional overlays; use a fresh OPENBAREMAP_BUILD_ROOT')
     if digest(work/'overlays.osm.gz')!=json.loads((work/'prepared.json').read_text())['overlay_sha256']:raise ValueError('Prepared overlay changed')
     if not (work/'combined.osm.pbf').exists():run([sys.executable,'garmin/merge_inputs.py','--region',region],work/'merge.log')
     merged=json.loads((work/'merge-record.json').read_text())
@@ -101,12 +105,14 @@ def main(region):
     else:
         compiled=json.loads((compile_dir/'build.json').read_text())
         if compiled['status']!='compiled; inspection pending' or digest(compile_dir/'gmapsupp.img')!=compiled['outputSHA256']:raise ValueError('Existing Garmin compile is incomplete or changed')
+        if compiled['combinedSourceSHA256']!=merged['combinedSHA256'] or compiled['style']!={f.name:digest(f) for f in style.iterdir() if f.is_file()} or '--transparent' not in compiled['command'] or '--draw-priority=25' not in compiled['command']:raise ValueError('Stale Garmin compile; use a fresh OPENBAREMAP_BUILD_ROOT')
     actual={p.stem for p in compile_dir.glob('[0-9]*.img')}
     if expected!=actual:raise ValueError('Garmin sections missing: '+str(sorted(expected-actual)))
     image=compile_dir/'gmapsupp.img'
     if not image.is_file() or not 0<image.stat().st_size<4*1024**3:raise ValueError('Missing image or exceeds FAT32 single-file limit')
     java=Path(java_path());javac=java.with_name('javac');jar=ROOT/'garmin/tools/mkgmap-r4924/mkgmap.jar'
-    subprocess.run([str(javac),'-cp',str(jar),'-d',str(work),str(ROOT/'garmin/InspectMap.java')],check=True)
+    subprocess.run([str(javac),'-cp',str(jar),'-d',str(work),str(ROOT/'garmin/InspectMap.java'),str(ROOT/'garmin/CheckRegionalBackgrounds.java')],check=True)
+    with (dest/'background-validation.txt').open('w') as out:subprocess.run([str(java),'-Xmx2g','-cp',str(work)+':'+str(jar),'CheckRegionalBackgrounds',region,str(image)],stdout=out,check=True)
     command=[str(java),'-Xmx2g','-cp',str(work)+':'+str(jar),'InspectMap',str(compile_dir),*p.get('inspectionNames',['London','Cardiff','Newcastle upon Tyne','Plymouth','Carlisle'])]
     with (dest/'inspection.json').open('w') as out:subprocess.run(command,stdout=out,check=True)
     # Inspect the prospective binary together with the other installed products.
