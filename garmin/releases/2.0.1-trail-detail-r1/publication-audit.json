@@ -1,0 +1,101 @@
+{
+  "verifiedUTC": "2026-11-03T08:13:58.657254+00:00",
+  "garminPackageRevision": "2.0.1-trail-detail-r1",
+  "checks": [
+    {
+      "region": "england-wales",
+      "platform": "garmin",
+      "currentURLVerified": true,
+      "bytes": 911212544,
+      "sha256": "477d275202aa4d8031199c98c375c93d970c9e0992fb86aabdd2f214d6ced264",
+      "objectUnchangedSinceFullDownloadVerification": true,
+      "instructionsAndPublicChecksumsMatch": true
+    },
+    {
+      "region": "ireland",
+      "platform": "garmin",
+      "currentURLVerified": true,
+      "bytes": 314253312,
+      "sha256": "e78f3b86298c4a141d3b4b95fd1eb98c71a276d0bbc92a7448eb5299db3ea0ef",
+      "objectUnchangedSinceFullDownloadVerification": true,
+      "instructionsAndPublicChecksumsMatch": true
+    },
+    {
+      "region": "scotland",
+      "platform": "garmin",
+      "currentURLVerified": true,
+      "bytes": 358293504,
+      "sha256": "dbedf150ec0771ebf20eae18a361445785f0303ff7aa0fa43c7e05109046a7f7",
+      "objectUnchangedSinceFullDownloadVerification": true,
+      "instructionsAndPublicChecksumsMatch": true
+    },
+    {
+      "region": "sierra-nevada",
+      "platform": "garmin",
+      "currentURLVerified": true,
+      "bytes": 33787904,
+      "sha256": "dd506bb8377886fc7e9bc0c475aed6b391fadc789bff60040bf33de2c672c163",
+      "objectUnchangedSinceFullDownloadVerification": true,
+      "instructionsAndPublicChecksumsMatch": true
+    },
+    {
+      "region": "england-wales",
+      "platform": "android",
+      "currentURLVerified": true,
+      "bytes": 3483104475,
+      "instructionsAndPublicChecksumsMatchCatalog": true
+    },
+    {
+      "region": "england-wales",
+      "platform": "ios",
+      "currentURLVerified": true,
+      "bytes": 3483103819,
+      "instructionsAndPublicChecksumsMatchCatalog": true
+    },
+    {
+      "region": "ireland",
+      "platform": "android",
+      "currentURLVerified": true,
+      "bytes": 1008370658,
+      "instructionsAndPublicChecksumsMatchCatalog": true
+    },
+    {
+      "region": "ireland",
+      "platform": "ios",
+      "currentURLVerified": true,
+      "bytes": 1008378490,
+      "instructionsAndPublicChecksumsMatchCatalog": true
+    },
+    {
+      "region": "scotland",
+      "platform": "android",
+      "currentURLVerified": true,
+      "bytes": 1340627060,
+      "instructionsAndPublicChecksumsMatchCatalog": true
+    },
+    {
+      "region": "scotland",
+      "platform": "ios",
+      "currentURLVerified": true,
+      "bytes": 1340626533,
+      "instructionsAndPublicChecksumsMatchCatalog": true
+    },
+    {
+      "region": "sierra-nevada",
+      "platform": "android",
+      "currentURLVerified": true,
+      "bytes": 167562254,
+      "instructionsAndPublicChecksumsMatchCatalog": true
+    },
+    {
+      "region": "sierra-nevada",
+      "platform": "ios",
+      "currentURLVerified": true,
+      "bytes": 167563001,
+      "instructionsAndPublicChecksumsMatchCatalog": true
+    }
+  ],
+  "previewPagesVerified": 4,
+  "liveWebsiteAndReadmeLinksMatch": true,
+  "currentPublicGarminManifestMatches": true
+}
