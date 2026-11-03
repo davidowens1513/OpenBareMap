@@ -54,7 +54,9 @@ The previews retain a directly overhead view. Pan, zoom, regional destinations a
 
 It is important to note the appearance on a Garmin unit will differ from the preview due to internal Garmin constraints.
 
-## App integration For iOS, add the full `OpenBareMap.bundle` as a resource and the supplied Swift loader to the application target, then load its resolved style using MapLibre. The kit includes a UIKit example suitable for adaptation to UIKit or SwiftUI. Use explicit Bundle URLs when an app contains multiple regions.
+## App integration
+
+For iOS, add the full `OpenBareMap.bundle` as a resource and the supplied Swift loader to the application target, then load its resolved style using MapLibre. The kit includes a UIKit example suitable for adaptation to UIKit or SwiftUI. Use explicit Bundle URLs when an app contains multiple regions.
 
 For Android, add the supplied loader AAR or Kotlin source and the documented renderer dependencies. Install the inner resource ZIP on a worker thread into persistent app-private storage, then load the resolved style on the main thread. The example includes MapView lifecycle handling, map import, legend and credits.
 
