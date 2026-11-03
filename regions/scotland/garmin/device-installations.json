@@ -17,12 +17,45 @@
       "personalTracksUnchanged": true,
       "otherMapsUnchanged": true,
       "visualReview": "Hardware visual review pending"
+    },
+    {
+      "device": "GPSMAP 67i",
+      "region": "scotland",
+      "mapVersion": "2.0.0",
+      "garminPackageRevision": "2.0.1-regional-mask-r1",
+      "familyId": 4834,
+      "mapSHA256": "ea626b6604d076bdf0e3a32c61b28ee6d55384168681c4b4ae11b32cc1e4d4ce",
+      "bytes": 359022592,
+      "installedDate": "2026-11-03",
+      "verifiedUTC": "2026-11-03T01:23:03.087968+00:00",
+      "fullReadbackVerified": true,
+      "previousMapRetainedAsInactiveBackup": true,
+      "personalTracksUnchanged": true,
+      "otherMapsUnchanged": true,
+      "visualReview": "User review of corrected collection pending; original overlap diagnosis was confirmed on GPSMAP."
+    },
+    {
+      "device": "Montana 750i",
+      "region": "scotland",
+      "mapVersion": "2.0.0",
+      "garminPackageRevision": "2.0.1-regional-mask-r1",
+      "familyId": 4834,
+      "mapSHA256": "ea626b6604d076bdf0e3a32c61b28ee6d55384168681c4b4ae11b32cc1e4d4ce",
+      "bytes": 359022592,
+      "installedDate": "2026-11-03",
+      "verifiedUTC": "2026-11-03T01:38:31.303770+00:00",
+      "fullReadbackVerified": true,
+      "previousMapRetainedAsInactiveBackup": true,
+      "personalTracksUnchanged": true,
+      "otherMapsUnchanged": true,
+      "visualReview": "User review of corrected collection pending; original overlap diagnosis was confirmed on GPSMAP."
     }
   ],
-  "date": "2026-11-02",
-  "installedDate": "2026-11-02",
+  "date": "2026-11-03",
+  "installedDate": "2026-11-03",
   "mapVersion": "2.0.0",
-  "garminPackageRevision": "2.0.0-hiking-r1",
-  "availableRevision": "2.0.0-hiking-r1",
-  "lastInstallationUpdate": "2026-11-02"
+  "garminPackageRevision": "2.0.1-regional-mask-r1",
+  "availableRevision": "2.0.1-regional-mask-r1",
+  "lastInstallationUpdate": "2026-11-03",
+  "currentCollectionManifest": "garmin/releases/2.0.1-regional-mask-r1/manifest.json"
 }

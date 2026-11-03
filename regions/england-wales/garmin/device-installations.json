@@ -1,8 +1,8 @@
 {
   "region": "england-wales",
-  "mapVersion": "2.0.0",
-  "garminPackageRevision": "2.0.0-hiking-r1",
-  "installedDate": "2026-11-02",
+  "mapVersion": "2.0.1",
+  "garminPackageRevision": "2.0.1-regional-mask-r1",
+  "installedDate": "2026-11-03",
   "devices": [
     {
       "device": "Montana 750i",
@@ -73,9 +73,42 @@
       "previousIrelandSHA256": "775c2f8c2afa900a15cd7e436ece22b553db4e35c33db0d284b754cfd8542eac",
       "visualReview": "Installed and fully read-back verified; restart and on-screen review pending.",
       "irelandUpdatedToCurrent20m": true
+    },
+    {
+      "device": "GPSMAP 67i",
+      "region": "england-wales",
+      "mapVersion": "2.0.1",
+      "garminPackageRevision": "2.0.1-regional-mask-r1",
+      "familyId": 4833,
+      "mapSHA256": "d63bd3af2585ef2b0301f391a27be6fdf41a700a948d0b66535e82760c2f7ebf",
+      "bytes": 918454272,
+      "installedDate": "2026-11-03",
+      "verifiedUTC": "2026-11-03T01:23:03.087968+00:00",
+      "fullReadbackVerified": true,
+      "previousMapRetainedAsInactiveBackup": true,
+      "personalTracksUnchanged": true,
+      "otherMapsUnchanged": true,
+      "visualReview": "User review of corrected collection pending; original overlap diagnosis was confirmed on GPSMAP."
+    },
+    {
+      "device": "Montana 750i",
+      "region": "england-wales",
+      "mapVersion": "2.0.1",
+      "garminPackageRevision": "2.0.1-regional-mask-r1",
+      "familyId": 4833,
+      "mapSHA256": "d63bd3af2585ef2b0301f391a27be6fdf41a700a948d0b66535e82760c2f7ebf",
+      "bytes": 918454272,
+      "installedDate": "2026-11-03",
+      "verifiedUTC": "2026-11-03T01:38:31.303770+00:00",
+      "fullReadbackVerified": true,
+      "previousMapRetainedAsInactiveBackup": true,
+      "personalTracksUnchanged": true,
+      "otherMapsUnchanged": true,
+      "visualReview": "User review of corrected collection pending; original overlap diagnosis was confirmed on GPSMAP."
     }
   ],
-  "availableRevision": "2.0.0-hiking-r1",
-  "date": "2026-11-02",
-  "lastInstallationUpdate": "2026-11-02"
+  "availableRevision": "2.0.1-regional-mask-r1",
+  "date": "2026-11-03",
+  "lastInstallationUpdate": "2026-11-03",
+  "currentCollectionManifest": "garmin/releases/2.0.1-regional-mask-r1/manifest.json"
 }

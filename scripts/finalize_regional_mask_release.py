@@ -1,19 +1,21 @@
 #!/usr/bin/env python3
 """Validate and promote the four Garmin maps with bounded regional backgrounds."""
-import json,shutil,subprocess
+import json,os,shutil,subprocess,sys,tempfile
 from pathlib import Path
 from openbaremap import ROOT,digest,write
 from package_resources import copy_map_file
 from regions import garmin_work,profile,region_path
 from build_distribution_instructions import build as instructions
+sys.path.insert(0,str(ROOT/'garmin'))
+from build import java_path
 
 REV='2.0.1-regional-mask-r1'
 TITLES={'ireland':'Ireland','england-wales':'England-Wales','scotland':'Scotland','sierra-nevada':'Sierra-Nevada'}
 def record(path):return {'path':str(path.relative_to(ROOT)),'bytes':path.stat().st_size,'sha256':digest(path)}
 def main():
     dest=ROOT/'garmin/releases'/REV;dest.mkdir(parents=True,exist_ok=True)
-    staging=Path('/private/tmp/OpenBareMap-regional-mask/Garmin');staging.mkdir(parents=True,exist_ok=True)
-    java=Path('/opt/homebrew/opt/openjdk@21/bin/java');jar=ROOT/'garmin/tools/mkgmap-r4924/mkgmap.jar'
+    staging=Path(os.environ.get('OPENBAREMAP_BUILD_ROOT',str(Path(tempfile.gettempdir())/'OpenBareMap-regional-mask')))/'Garmin';staging.mkdir(parents=True,exist_ok=True)
+    java=Path(java_path());jar=ROOT/'garmin/tools/mkgmap-r4924/mkgmap.jar'
     classes=staging.parent/'validation-classes';classes.mkdir(exist_ok=True)
     subprocess.run([str(java.with_name('javac')),'-cp',str(jar),'-d',str(classes),str(ROOT/'garmin/ValidateMapSet.java'),str(ROOT/'garmin/CheckRegionalBackgrounds.java')],check=True)
     records={}
@@ -41,6 +43,8 @@ def main():
         if not pending.exists():copy_map_file(x['source'],pending)
         assert digest(pending)==report['output']['sha256'];pending.replace(image)
         for name in ['inspection.json','hiking-validation.txt']:shutil.copyfile(build/name,base/name)
+        shutil.copyfile(dest/'map-set-validation.txt',base/'map-set-validation.txt')
+        shutil.copyfile(dest/(region+'-background-validation.txt'),base/'background-validation.txt')
         report['output']=record(image);report['nativeElevation']=True;write(base/'build-report.json',report)
         archive=dest/region;archive.mkdir(exist_ok=True)
         for name in ['config.json','render-coverage.geojson','render-coverage.lock.json']:shutil.copyfile(base/name,archive/name)
