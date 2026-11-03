@@ -24,7 +24,7 @@
   "contourIntervalMetres": 20,
   "coverage": "Complete Geofabrik Scotland extract, including the Hebrides, Orkney, Shetland and Rockall; no pilot or regional sampling",
   "familyId": 4834,
-  "garminPackageRevision": "2.0.1-regional-mask-r1",
+  "garminPackageRevision": "2.0.1-trail-detail-r1",
   "routing": false,
   "tileStartId": 48340001,
   "nativeLevels": [
@@ -41,5 +41,16 @@
   "fineContourResolution": 23,
   "regionalRenderMask": "render-coverage.lock.json",
   "transparent": true,
-  "drawPriority": 25
+  "drawPriority": 25,
+  "closeDetailLineTypes": [
+    "path",
+    "track",
+    "farm-track",
+    "forest-track",
+    "walking-route",
+    "cycling-route",
+    "bridleway",
+    "cycleway",
+    "steps"
+  ]
 }

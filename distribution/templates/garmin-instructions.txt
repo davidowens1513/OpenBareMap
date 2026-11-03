@@ -7,6 +7,8 @@ For compatible Garmin mapping products
 Paths, tracks (including farm/forest access tracks) and walking routes share a
 4-pixel dashed stroke and the same close-detail visibility threshold. Green
 marks paths, brown tracks and red walking routes. No white backing is added.
+Bridleways, cycleways, steps and cycling-route markings use the same closest-
+detail visibility threshold.
 Buildings are limited to the finest stored detail level; fine contours are
 retained in the intervening level. Garmin settings control the screen scale.
 It has its own map family identifier ({{FAMILY}}) and can coexist with other

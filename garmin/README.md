@@ -1,12 +1,12 @@
 # OpenBareMap for Garmin
 
-OpenBareMap supplies display-only Garmin maps for Ireland, England & Wales, Scotland and Sierra Nevada National Park in Spain with 25 km around its boundary. The Garmin package is **2.0.1-regional-mask-r1** for all four regions. Mobile map versions remain 2.0.1 for England & Wales and 2.0.0 for the other editions. [Release manifest](releases/2.0.1-regional-mask-r1/manifest.json) records the exact downloads, identifiers and checksums. Generic installation instructions are supplied with every region.
+OpenBareMap supplies display-only Garmin maps for Ireland, England & Wales, Scotland and Sierra Nevada National Park in Spain with 25 km around its boundary. The Garmin package is **2.0.1-trail-detail-r1** for all four regions. Mobile map versions remain 2.0.1 for England & Wales and 2.0.0 for the other editions. [Release manifest](releases/2.0.1-trail-detail-r1/manifest.json) records the exact downloads, identifiers and checksums. Generic installation instructions are supplied with every region.
 
 ## Native cartography
 
 Green paths, brown tracks (including farm and forest access tracks) and red walking routes use equal **4-pixel dashed strokes**, transparent gaps and no white backing. Walking-route sections on roads use one red stroke. Ordinary roads remain visible before route markings appear. Tracks and paths describe mapped features; they do not establish public access rights.
 
-All these hiking lines share the same resolution-24 threshold, two stored detail steps beyond resolution 22. Buildings are also limited to resolution 24. Garmin firmware, map themes, detail settings and screen characteristics determine the actual display scale; stored resolutions are not fixed metre-scale cutoffs.
+Bridleways, cycleways, steps and cycling-route markings also use resolution 24. All these path and track categories share the same resolution-24 threshold, two stored detail steps beyond resolution 22. Buildings are also limited to resolution 24. Garmin firmware, map themes, detail settings and screen characteristics determine the actual display scale; stored resolutions are not fixed metre-scale cutoffs.
 
 | Native level | Resolution | Contours | Hiking lines | Buildings |
 | --- | --- | --- | --- | --- |

@@ -75,7 +75,7 @@ def main(region):
     if p.get('coverageBoundary'):copyright_file.write_text(copyright_file.read_text()+'\nNational park boundary: Fuente: Organismo Autónomo Parques Nacionales (MITECO/OAPN), CC BY 4.0. See boundary-source.json.\n')
     from garmin_render_coverage import generate as generate_render_coverage
     generate_render_coverage(region)
-    config={'routing':False,'transparent':True,'drawPriority':25,'regionalRenderMask':'render-coverage.lock.json','coverage':p['coverage'],'contourIntervalMetres':20,'familyId':p['garminFamilyId'],'tileStartId':p['garminTileStartId'],'compilerOptions':options,'garminPackageRevision':p.get('garminPackageRevision',p['mapVersion'])}
+    config={'routing':False,'transparent':True,'drawPriority':25,'nativeLevels':[24,23,22,20,18,16],'hikingLineResolution':24,'hikingLineWidthPixels':4,'buildingResolution':24,'fineContourResolution':23,'closeDetailLineTypes':['path','track','farm-track','forest-track','walking-route','cycling-route','bridleway','cycleway','steps'],'regionalRenderMask':'render-coverage.lock.json','coverage':p['coverage'],'contourIntervalMetres':20,'familyId':p['garminFamilyId'],'tileStartId':p['garminTileStartId'],'compilerOptions':options,'garminPackageRevision':p.get('garminPackageRevision',p['mapVersion'])}
     validate_config(region,config)
     write(dest/'config.json',config);tools()
     if not (work/'prepared.json').exists():run([sys.executable,'garmin/prepare_inputs.py','--region',region],work/'prepare.log')

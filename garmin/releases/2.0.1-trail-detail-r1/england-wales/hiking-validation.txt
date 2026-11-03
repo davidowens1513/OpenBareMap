@@ -1,0 +1,7 @@
+Resolution 24: buildings=10288389, fineContours=248363, hiking={10=327086, 22=1517116, 65537=72577, 65538=95297, 65539=37140, 65540=96438, 65541=82056, 65547=49967}
+Resolution 23: buildings=0, fineContours=214265, hiking={}
+Resolution 22: buildings=0, fineContours=0, hiking={}
+Resolution 20: buildings=0, fineContours=0, hiking={}
+Resolution 18: buildings=0, fineContours=0, hiking={}
+Resolution 16: buildings=0, fineContours=0, hiking={}
+PASS: six native detail levels; buildings only at 24; existing fine contour detail carried into 23; paths, tracks, walking/cycling routes, bridleways, cycleways and steps only at resolution 24; all absent at every lower-resolution level.

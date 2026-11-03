@@ -44,16 +44,16 @@
     }
   },
   "garmin": {
-    "bytes": 33880064,
+    "bytes": 33787904,
     "path": "regions/sierra-nevada/garmin/dist/OpenBareMap-Sierra-Nevada.img",
-    "sha256": "8af431bfa7b7b75ab3be1aa30625ce90a5ab8eec317339e811ebf84f2c8fcfe3"
+    "sha256": "dd506bb8377886fc7e9bc0c475aed6b391fadc789bff60040bf33de2c672c163"
   },
   "garminMontanaInstallation": {
     "bytes": 572,
     "path": "regions/sierra-nevada/garmin/installation-montana.json",
     "sha256": "44f09ff48d0cbae98cb72ee30e451e4d69573e90fefcde691527057ee2cad3cc"
   },
-  "garminPackageRevision": "2.0.1-regional-mask-r1",
+  "garminPackageRevision": "2.0.1-trail-detail-r1",
   "geometryReport": {
     "path": "releases/sierra-nevada/2.0.0/build-records/sierra-nevada-geometry/geometry-report.json",
     "sha256": "b4bc0a225a9710fb7e6e6e30e82835e92191cf5207ca4e911af1ec6b4bc17ad1"

@@ -24,7 +24,7 @@
   "contourIntervalMetres": 20,
   "coverage": "Official Sierra Nevada National Park boundary with a 25 km buffer measured in ETRS89 / UTM 30N; complete source ways and polygons retained at the edge. Rectangular tile envelope includes additional context.",
   "familyId": 4835,
-  "garminPackageRevision": "2.0.1-regional-mask-r1",
+  "garminPackageRevision": "2.0.1-trail-detail-r1",
   "routing": false,
   "tileStartId": 48350001,
   "nativeLevels": [
@@ -41,5 +41,16 @@
   "fineContourResolution": 23,
   "regionalRenderMask": "render-coverage.lock.json",
   "transparent": true,
-  "drawPriority": 25
+  "drawPriority": 25,
+  "closeDetailLineTypes": [
+    "path",
+    "track",
+    "farm-track",
+    "forest-track",
+    "walking-route",
+    "cycling-route",
+    "bridleway",
+    "cycleway",
+    "steps"
+  ]
 }

@@ -1,0 +1,40 @@
+{
+  "website": "https://appsbyonzy.dev/",
+  "garminPackageRevision": "2.0.1-trail-detail-r1",
+  "verifiedUTC": "2026-11-03T07:39:17.202357+00:00",
+  "regions": {
+    "england-wales": {
+      "liveWebsiteDownloadURL": "https://downloads.appsbyonzy.dev/Garmin/OpenBareMap-England-Wales.img?v=2.0.1-trail-detail-r1",
+      "bytes": 911212544,
+      "sha256": "477d275202aa4d8031199c98c375c93d970c9e0992fb86aabdd2f214d6ced264",
+      "matchesFullDownloadVerification": true,
+      "fullDownloadVerification": "public-download-verification.json",
+      "liveLinkHTTPStatus": 200
+    },
+    "ireland": {
+      "liveWebsiteDownloadURL": "https://downloads.appsbyonzy.dev/Garmin/OpenBareMap-Ireland.img?v=2.0.1-trail-detail-r1",
+      "bytes": 314253312,
+      "sha256": "e78f3b86298c4a141d3b4b95fd1eb98c71a276d0bbc92a7448eb5299db3ea0ef",
+      "matchesFullDownloadVerification": true,
+      "fullDownloadVerification": "public-download-verification.json",
+      "liveLinkHTTPStatus": 200
+    },
+    "scotland": {
+      "liveWebsiteDownloadURL": "https://downloads.appsbyonzy.dev/Garmin/OpenBareMap-Scotland.img?v=2.0.1-trail-detail-r1",
+      "bytes": 358293504,
+      "sha256": "dbedf150ec0771ebf20eae18a361445785f0303ff7aa0fa43c7e05109046a7f7",
+      "matchesFullDownloadVerification": true,
+      "fullDownloadVerification": "public-download-verification.json",
+      "liveLinkHTTPStatus": 200
+    },
+    "sierra-nevada": {
+      "liveWebsiteDownloadURL": "https://downloads.appsbyonzy.dev/Garmin/OpenBareMap-Sierra-Nevada.img?v=2.0.1-trail-detail-r1",
+      "bytes": 33787904,
+      "sha256": "dd506bb8377886fc7e9bc0c475aed6b391fadc789bff60040bf33de2c672c163",
+      "matchesFullDownloadVerification": true,
+      "fullDownloadVerification": "public-download-verification.json",
+      "liveLinkHTTPStatus": 200
+    }
+  },
+  "htmlLinksMatchCurrentRelease": true
+}

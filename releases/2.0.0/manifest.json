@@ -53,13 +53,13 @@
   "platformRevisions": {
     "garmin": {
       "releaseManifest": {
-        "bytes": 7314,
-        "path": "garmin/releases/2.0.1-regional-mask-r1/manifest.json",
-        "sha256": "76975dc6b9c001544bc4f24c14dd97bdd609fb0f7e5a7a8239594c6b562f5b36"
+        "bytes": 7482,
+        "path": "garmin/releases/2.0.1-trail-detail-r1/manifest.json",
+        "sha256": "b3cf0542648e38b421042237d2ae0cbb5f7de0d899b3ebe7c7ace97f7c49ef0b"
       },
-      "revision": "2.0.1-regional-mask-r1",
+      "revision": "2.0.1-trail-detail-r1",
       "routing": false,
-      "scope": "Regional backgrounds confined to locked drawing footprints; six native levels, 4-pixel hiking lines at resolution24, buildings24, fine contours23"
+      "scope": "All path, track, walking/cycling route, bridleway, cycleway and step types at resolution24; bounded regional backgrounds, six native levels, buildings24 and fine contours23"
     },
     "sharedMap": {
       "date": "2026-10-29",
@@ -123,12 +123,12 @@
         "path": "garmin/device-installations.json",
         "sha256": "73c5ccffcead91cfa127819d2d9ee20c45ad87c3b015d5b530943a0b2819d3d5"
       },
-      "garminPackageRevision": "2.0.1-regional-mask-r1",
+      "garminPackageRevision": "2.0.1-trail-detail-r1",
       "localBorders": false,
       "map": {
-        "bytes": 315039744,
+        "bytes": 314253312,
         "path": "garmin/dist/OpenBareMap-Ireland.img",
-        "sha256": "d043742adc8fbee5015e9d65b0937f5373cd06df0985514a1f1e1c7266d6de4a"
+        "sha256": "e78f3b86298c4a141d3b4b95fd1eb98c71a276d0bbc92a7448eb5299db3ea0ef"
       },
       "routing": false,
       "targetDevices": [
@@ -137,9 +137,9 @@
         "GPSMAP H1"
       ],
       "validation": {
-        "bytes": 12438,
+        "bytes": 12437,
         "path": "garmin/build-report.json",
-        "sha256": "3a275f0628a6539cfded965b8c6394202739711c7826a24319a4e800446d1295"
+        "sha256": "656608d12fa5deff634558ba185e5210cb95aec97f2a791f113b439dcc3fa7c9"
       }
     },
     "ios": {
@@ -173,14 +173,14 @@
   },
   "profiles": {
     "garmin": {
-      "bytes": 1320,
+      "bytes": 1502,
       "path": "garmin/config.json",
-      "sha256": "9f4c3feee2fddb6e81284450c2f95a4b11da3450907c2a35a952fbb1926979fd"
+      "sha256": "3441ef22d0fae213202ad57cfdbb79bda753673ab4f8e28a4be9ae115d5cb0a6"
     },
     "garminStyle": {
       "OBM4831.txt": "bb608c157ce99687a427f2b2068e7bf3c14c02d9e90c010d0773780e5a86e8db",
       "info": "e4905b041ce4173b10757ae97a6ed2180c68980e0b6d626837771982f35d75e5",
-      "lines": "21b22de26151d6ba674581309703e7781454f6f4e5f202ccbc6018965cf8b799",
+      "lines": "959fe7ce593e7545276e4cce2955c6028b0a4c2d584f2d15f8adee84a1bbc747",
       "options": "13d2760cf17cd30f68a3e84d1f14b19f0d078cb4d6663788e1930204f9359363",
       "points": "3152e7f97e8cc92b541b0486bd6077270f8adaabafadb58094af580d8b4d2732",
       "polygons": "c9674984ff4343aacfc1696d519b0225d18fa0f0e1b5968e6717cc5526b665d6",

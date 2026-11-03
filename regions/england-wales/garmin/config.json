@@ -26,7 +26,7 @@
   "coverage": "England, Wales and Isle of Man, including offshore islands",
   "familyId": 4833,
   "fineContourResolution": 23,
-  "garminPackageRevision": "2.0.1-regional-mask-r1",
+  "garminPackageRevision": "2.0.1-trail-detail-r1",
   "hikingLineResolution": 24,
   "hikingLineWidthPixels": 4,
   "nativeLevels": [
@@ -41,5 +41,16 @@
   "tileStartId": 48330001,
   "regionalRenderMask": "render-coverage.lock.json",
   "transparent": true,
-  "drawPriority": 25
+  "drawPriority": 25,
+  "closeDetailLineTypes": [
+    "path",
+    "track",
+    "farm-track",
+    "forest-track",
+    "walking-route",
+    "cycling-route",
+    "bridleway",
+    "cycleway",
+    "steps"
+  ]
 }

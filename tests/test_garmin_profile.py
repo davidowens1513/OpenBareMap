@@ -34,8 +34,8 @@ class GarminProfileTests(unittest.TestCase):
             self.assertEqual(config['hikingLineResolution'],24)
             self.assertEqual(config['hikingLineWidthPixels'],4)
             rules=(base/'style/lines').read_text()
-            for code in ['0a','16','10001','1000b']:
-                self.assertIn('[0x'+code+' resolution 24]',rules)
+            for code in ['0a','16','10001','10002','10003','10004','10005','1000b']:
+                self.assertRegex(rules,r'\[0x'+code+r' resolution 24(?: continue)?\]')
             self.assertNotIn('[0x1000b resolution 24 continue]',rules)
             text=(base/'style'/('OBM'+str(config['familyId'])+'.txt')).read_text()
             for code in ['a','16','10001','1000b']:
