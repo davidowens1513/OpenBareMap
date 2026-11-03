@@ -50,9 +50,9 @@ Click a key to open its full-size legend with zoom controls, fit-to-page and ima
 Each preview displays the complete selected map with regional destinations. Online previews load tiles as needed and remain separate from offline downloads. See [web preview packaging](web-preview/README.md).
 
 
-The previews retain a directly overhead view. Appearance on a Garmin unit will differ slightly due to internal Garmin constraints. Pan, zoom, regional destinations and the separate zoomable map keys are available for every edition.
+The previews retain a directly overhead view. Pan, zoom, regional destinations and the separate zoomable map keys are available for every edition.
 
-## App integration
+## App integrationit is important to note the appearance on a Garmin unit will differ from the preview due to internal Garmin constraints.
 
 For iOS, add the full `OpenBareMap.bundle` as a resource and the supplied Swift loader to the application target, then load its resolved style using MapLibre. The kit includes a UIKit example suitable for adaptation to UIKit or SwiftUI. Use explicit Bundle URLs when an app contains multiple regions.
 
