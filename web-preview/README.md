@@ -64,3 +64,20 @@ Use `--regions scotland` with the full exporter to build only the new Scotland a
 The Pyrenees and Dolomites previews use their own versioned prefixes. All previews preserve the shared map colours, line weights, hillshade and full-size regional key.
 
 `config/preview-regions.json` is the shared catalog for Region options and their canonical public URLs. Packaging a single edition still includes every region in the menu. UI-only updates must also be applied to the versioned England/Wales, Pyrenees and Dolomites prefixes, and to the older England/Wales entry under `preview-v2`. Copy only reviewed UI files to existing releases; preserve map profiles, styles and data archives.
+
+
+## Browser caching of preview controls
+
+Preview HTML and its small shared UI files must be published with
+`Cache-Control: no-cache, max-age=0, must-revalidate`. Without an explicit policy,
+browsers may reuse an older page containing the previous region link row even
+when the current object already contains the Region dropdown. For R2 uploads,
+use `--metadata --metadata-set 'cache-control=no-cache, max-age=0, must-revalidate'
+--s3-no-system-metadata=false` with rclone. Force the small UI files to upload
+when changing only metadata. Preserve the cache policy of map archives, styles,
+fonts and other unchanged map resources.
+
+An already-open tab can retain the old document until reloaded. A fresh URL such
+as `index.html?ui=regions-20261105` also bypasses a previously cached document.
+The live header and dropdown checks are recorded in
+`verification/preview-cache-policy.json`.
