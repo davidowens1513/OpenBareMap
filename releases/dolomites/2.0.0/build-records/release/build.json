@@ -1,0 +1,107 @@
+{
+  "builderSHA256": "54cb5cecfffadba74b3e3570657372b496f3795cf69949185c51cffe0e5e5d32",
+  "geometryReport": {
+    "builderSHA256": "32d085121efb2abaa13e851aa0854bca5031f7c12ec82349dd0f3c1692035b53",
+    "contoursSourceSHA256": "8fd68ed1798d05d585a25f40571d196fe64cca2b5a6b5386a7f4c7e00ed1717b",
+    "counts": {
+      "contours": 206818,
+      "grid": {
+        "grid_10km": 38,
+        "grid_1km": 362
+      },
+      "landcover": {
+        "empty_source_areas": [],
+        "features": 282522,
+        "retained": 30376,
+        "smoothed": 252146
+      }
+    },
+    "osm": {
+      "bytes": 283475522,
+      "operation": "Complete-feature bbox extraction with nested relation references, then libosmium sorted merge; duplicate OSM objects resolved by version",
+      "path": "data/regions/dolomites/dolomites-261104.osm.pbf",
+      "replicationTimestamp": "2026-11-04T21:21:03Z",
+      "sha256": "a835d74e63c7c4520870d2890de805b4ae628898588f6e1e1ad5cdeef1d9af63",
+      "snapshot_date": "2026-11-04",
+      "url": null
+    },
+    "outputs": {
+      "contours.geojson": "9efeee3d7bf6edcc1738b9407f445d343e10cb41a5b04d7a164ff45880917045",
+      "grid_10km.geojson": "3344544dd8fed503cd21db9077ced2178eaa18953b537b838984614a8a634afc",
+      "grid_1km.geojson": "a3210b4b56992efbba2b679efb7ab33a51744c87980a0bda86aaa5f268bbce35",
+      "landcover.geojson": "8d61174553539bcd00cfabf09c71486fd37195d3bc892ad7cc5ba3cfcf8f0dc0"
+    },
+    "region": "dolomites",
+    "smootherSHA256": "7581d024dc1c1bec931642c7201db149bf64a64c814c451fa8bf37a0881ea6c9"
+  },
+  "outputs": {
+    "basemap": {
+      "bytes": 426749952,
+      "path": "releases/dolomites/2.0.0/maps/basemap.mbtiles",
+      "sha256": "fdbf05ef3cf7a9128d317fee351b3bb4fd5bbdb2d7673d36fd5cf97b68e1174c",
+      "validation": {
+        "empty_tile_count": 1,
+        "logical_tiles_sha256": "ad56ce0f318783514d9fe7616ab721f67ea7fe8cc84f073c4a76b9b92457477a",
+        "tile_count": 13259
+      }
+    },
+    "grid": {
+      "bytes": 4628480,
+      "path": "releases/dolomites/2.0.0/maps/grid.mbtiles",
+      "sha256": "c50ff7859253da33995da17d9c0bc2daff8b0c9660b83fdcfb261aa0d19ffbfb",
+      "validation": {
+        "empty_tile_count": 0,
+        "logical_tiles_sha256": "5ed597d196c9f2a12ccf6a1c9f91621bd734e9c4f4ea47149bc1aff424e89fb0",
+        "tile_count": 13232
+      }
+    },
+    "hillshade": {
+      "bytes": 138899456,
+      "path": "releases/dolomites/2.0.0/maps/hillshade.mbtiles",
+      "sha256": "6633dc950536cef2a123259756f90fa39ef102ff315cbdde70616e7e474c8213",
+      "validation": {
+        "empty_tile_count": 0,
+        "logical_tiles_sha256": "53357e8955e597ff5e10d51de64c724d4a9cb259e61f0467fa5858c5cd8544d6",
+        "tile_count": 3109
+      }
+    },
+    "topography": {
+      "bytes": 277950464,
+      "path": "releases/dolomites/2.0.0/maps/topography.mbtiles",
+      "sha256": "d2dafa521f69493978bfb970545fc7c48d4b56ecbc5c647b88e8d2c7201331b5",
+      "validation": {
+        "empty_tile_count": 221034,
+        "logical_tiles_sha256": "cdf2868851f42c96ed8e2dbf9d95fa06def318e2a49325ea261d65dcf3f3c98b",
+        "tile_count": 250107
+      }
+    }
+  },
+  "region": "dolomites",
+  "replacements": {
+    "basemap": {
+      "changed_tiles": 13020,
+      "path": "build/dolomites-release/basemap-smoothed.mbtiles",
+      "replacement_feature_instances": 2217372,
+      "sha256": "cdf69a22a82bf3f29d50865050b16c5f72fb07118cc8fbea1753f8a7de274b1f",
+      "unchanged_other_layers_sha256": "8df65e1ef39ed9efcf682f82788675d6bf4f2c15ee25a9431ea20e5f42b5381a",
+      "validation": {
+        "empty_tile_count": 1,
+        "logical_tiles_sha256": "52c8326194246dc719b1a38b4ecdcc15e6c756a9ba26b1de59c0fafb825de49b",
+        "tile_count": 13259
+      }
+    },
+    "topography": {
+      "changed_tiles": 42195,
+      "path": "build/dolomites-release/topography-smoothed.mbtiles",
+      "replacement_feature_instances": 857115,
+      "sha256": "5b17bfdddf338ce9b1f731b4f9499fbd0debc2f3a5ab4114c9cfcaeb34af6441",
+      "unchanged_other_layers_sha256": "85317f6c0bf081231fe7e6aa2538c86b3f9ff62b13f89cf0451a69ac18f590d5",
+      "validation": {
+        "empty_tile_count": 221034,
+        "logical_tiles_sha256": "48492f386aa4bbee8a5875811d68ae1b0a74e3d9ac426901eb0f1eb5591e1a85",
+        "tile_count": 250107
+      }
+    }
+  },
+  "status": "built and structurally validated; visual/device review pending"
+}

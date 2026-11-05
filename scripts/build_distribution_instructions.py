@@ -5,7 +5,7 @@ import json,shutil
 from openbaremap import ROOT,digest,write
 from regions import profile
 
-TITLES={'ireland':'Ireland','england-wales':'England-Wales','scotland':'Scotland','sierra-nevada':'Sierra-Nevada','pyrenees':'Pyrenees'}
+TITLES={'ireland':'Ireland','england-wales':'England-Wales','scotland':'Scotland','sierra-nevada':'Sierra-Nevada','pyrenees':'Pyrenees','dolomites':'Dolomites'}
 def garmin_instructions(region,filename=None):
     p=profile(region);identity=json.loads((ROOT/'garmin/map-identities.json').read_text())[region]
     text=(ROOT/'distribution/templates/garmin-instructions.txt').read_text()

@@ -1,0 +1,96 @@
+{
+  "layers": {
+    "boundary": {
+      "maxzoom": 14,
+      "minzoom": 4
+    },
+    "building": {
+      "maxzoom": 14,
+      "minzoom": 13
+    },
+    "cycling_route": {
+      "maxzoom": 14,
+      "minzoom": 7
+    },
+    "ferry": {
+      "maxzoom": 14,
+      "minzoom": 6
+    },
+    "hiking_poi": {
+      "maxzoom": 14,
+      "minzoom": 10
+    },
+    "hiking_route": {
+      "maxzoom": 14,
+      "minzoom": 7
+    },
+    "island_name": {
+      "maxzoom": 14,
+      "minzoom": 7
+    },
+    "landcover": {
+      "maxzoom": 14,
+      "minzoom": 4
+    },
+    "mountain": {
+      "maxzoom": 14,
+      "minzoom": 9
+    },
+    "natural_line": {
+      "maxzoom": 14,
+      "minzoom": 11
+    },
+    "place": {
+      "maxzoom": 14,
+      "minzoom": 4
+    },
+    "poi": {
+      "maxzoom": 14,
+      "minzoom": 10
+    },
+    "railway": {
+      "maxzoom": 14,
+      "minzoom": 6
+    },
+    "station": {
+      "maxzoom": 14,
+      "minzoom": 9
+    },
+    "transportation": {
+      "maxzoom": 14,
+      "minzoom": 4
+    },
+    "transportation_name": {
+      "maxzoom": 14,
+      "minzoom": 10
+    },
+    "water": {
+      "maxzoom": 14,
+      "minzoom": 4
+    },
+    "water_name": {
+      "maxzoom": 14,
+      "minzoom": 11
+    },
+    "waterway": {
+      "maxzoom": 14,
+      "minzoom": 4
+    }
+  },
+  "settings": {
+    "basezoom": 14,
+    "bounding_box": [
+      10.65,
+      45.7,
+      13.1,
+      47.0
+    ],
+    "compress": "gzip",
+    "description": "Dolomites regional edition; approved rectangular coverage 10.65\u201313.10\u00b0E, 45.70\u201347.00\u00b0N. Complete OSM features retained at the edge.",
+    "include_ids": true,
+    "maxzoom": 14,
+    "minzoom": 4,
+    "name": "OpenBareMap Dolomites",
+    "version": "2.0.0"
+  }
+}

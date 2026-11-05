@@ -1,0 +1,49 @@
+{
+  "feature_instances_by_layer": {
+    "boundary": 95730,
+    "building": 2841508,
+    "cycling_route": 6448,
+    "ferry": 729,
+    "hiking_poi": 58382,
+    "hiking_route": 72135,
+    "island_name": 219,
+    "landcover": 2253796,
+    "mountain": 55457,
+    "natural_line": 35368,
+    "place": 295711,
+    "poi": 328591,
+    "railway": 102340,
+    "station": 1419,
+    "transportation": 6068680,
+    "transportation_name": 1079740,
+    "water": 67612,
+    "water_name": 5074,
+    "waterway": 740869
+  },
+  "metadata": {
+    "bounds": "10.650000,45.700000,13.100000,47.000000",
+    "center": "11.875000,46.350000,9",
+    "description": "Dolomites regional edition; approved rectangular coverage 10.65\u201313.10\u00b0E, 45.70\u201347.00\u00b0N. Complete OSM features retained at the edge.",
+    "format": "pbf",
+    "json": "{\"vector_layers\":[{\"id\":\"boundary\",\"fields\":{\"admin_level\":\"String\",\"class\":\"String\",\"name\":\"String\"},\"minzoom\":4,\"maxzoom\":14},{\"id\":\"building\",\"fields\":{\"class\":\"String\"},\"minzoom\":13,\"maxzoom\":14},{\"id\":\"cycling_route\",\"fields\":{\"class\":\"String\",\"colour\":\"String\",\"foot\":\"String\",\"name\":\"String\",\"name_en\":\"String\",\"name_it\":\"String\",\"network\":\"String\",\"official_name\":\"String\",\"operator\":\"String\",\"osmc:symbol\":\"String\",\"ref\":\"String\",\"symbol\":\"String\"},\"minzoom\":7,\"maxzoom\":14},{\"id\":\"ferry\",\"fields\":{\"access\":\"String\",\"class\":\"String\",\"duration\":\"String\",\"foot\":\"String\",\"name\":\"String\",\"operator\":\"String\"},\"minzoom\":6,\"maxzoom\":14},{\"id\":\"hiking_poi\",\"fields\":{\"access\":\"String\",\"backcountry\":\"String\",\"class\":\"String\",\"drinking_water\":\"String\",\"ele_label\":\"String\",\"ele_m\":\"Number\",\"ele_raw\":\"String\",\"fee\":\"String\",\"foot\":\"String\",\"name\":\"String\",\"name_en\":\"String\",\"name_it\":\"String\",\"official_name\":\"String\",\"opening_hours\":\"String\",\"operator\":\"String\",\"ref\":\"String\",\"shelter_type\":\"String\",\"short_name\":\"String\",\"wheelchair\":\"String\"},\"minzoom\":10,\"maxzoom\":14},{\"id\":\"hiking_route\",\"fields\":{\"access\":\"String\",\"class\":\"String\",\"colour\":\"String\",\"foot\":\"String\",\"name\":\"String\",\"name_en\":\"String\",\"name_it\":\"String\",\"network\":\"String\",\"official_name\":\"String\",\"operator\":\"String\",\"osmc:symbol\":\"String\",\"ref\":\"String\",\"short_name\":\"String\",\"symbol\":\"String\"},\"minzoom\":7,\"maxzoom\":14},{\"id\":\"island_name\",\"fields\":{\"class\":\"String\",\"name\":\"String\",\"name_it\":\"String\"},\"minzoom\":7,\"maxzoom\":14},{\"id\":\"landcover\",\"fields\":{\"class\":\"String\",\"landuse\":\"String\",\"name\":\"String\",\"name_en\":\"String\",\"name_it\":\"String\",\"natural\":\"String\",\"official_name\":\"String\",\"short_name\":\"String\",\"wetland\":\"String\"},\"minzoom\":4,\"maxzoom\":14},{\"id\":\"mountain\",\"fields\":{\"class\":\"String\",\"ele_label\":\"String\",\"ele_m\":\"Number\",\"ele_raw\":\"String\",\"name\":\"String\",\"name_en\":\"String\",\"name_it\":\"String\",\"official_name\":\"String\",\"short_name\":\"String\"},\"minzoom\":9,\"maxzoom\":14},{\"id\":\"natural_line\",\"fields\":{\"class\":\"String\",\"name\":\"String\",\"name_en\":\"String\",\"name_it\":\"String\"},\"minzoom\":11,\"maxzoom\":14},{\"id\":\"place\",\"fields\":{\"class\":\"String\",\"name\":\"String\",\"name_en\":\"String\",\"name_it\":\"String\"},\"minzoom\":4,\"maxzoom\":14},{\"id\":\"poi\",\"fields\":{\"access\":\"String\",\"category\":\"String\",\"class\":\"String\",\"foot\":\"String\",\"name\":\"String\",\"name_en\":\"String\",\"name_it\":\"String\",\"official_name\":\"String\",\"short_name\":\"String\"},\"minzoom\":10,\"maxzoom\":14},{\"id\":\"railway\",\"fields\":{\"access\":\"String\",\"bridge\":\"String\",\"class\":\"String\",\"foot\":\"String\",\"layer\":\"String\",\"name\":\"String\",\"name_en\":\"String\",\"name_it\":\"String\",\"operator\":\"String\",\"service\":\"String\",\"short_name\":\"String\",\"tunnel\":\"String\",\"usage\":\"String\"},\"minzoom\":6,\"maxzoom\":14},{\"id\":\"station\",\"fields\":{\"class\":\"String\",\"name\":\"String\",\"name_en\":\"String\",\"name_it\":\"String\",\"network\":\"String\",\"official_name\":\"String\",\"operator\":\"String\",\"short_name\":\"String\"},\"minzoom\":9,\"maxzoom\":14},{\"id\":\"transportation\",\"fields\":{\"access\":\"String\",\"bicycle\":\"String\",\"bridge\":\"String\",\"class\":\"String\",\"designation\":\"String\",\"foot\":\"String\",\"horse\":\"String\",\"layer\":\"String\",\"name\":\"String\",\"ref\":\"String\",\"sac_scale\":\"String\",\"surface\":\"String\",\"tracktype\":\"String\",\"trail_visibility\":\"String\",\"tunnel\":\"String\"},\"minzoom\":4,\"maxzoom\":14},{\"id\":\"transportation_name\",\"fields\":{\"class\":\"String\",\"name\":\"String\",\"name_en\":\"String\",\"name_it\":\"String\",\"official_name\":\"String\",\"ref\":\"String\",\"short_name\":\"String\"},\"minzoom\":10,\"maxzoom\":14},{\"id\":\"water\",\"fields\":{\"class\":\"String\",\"name\":\"String\"},\"minzoom\":4,\"maxzoom\":14},{\"id\":\"water_name\",\"fields\":{\"name\":\"String\",\"name_en\":\"String\",\"name_it\":\"String\",\"official_name\":\"String\",\"short_name\":\"String\"},\"minzoom\":11,\"maxzoom\":14},{\"id\":\"waterway\",\"fields\":{\"class\":\"String\",\"intermittent\":\"String\",\"name\":\"String\"},\"minzoom\":4,\"maxzoom\":14}]}",
+    "maxzoom": "14",
+    "minzoom": "4",
+    "name": "OpenBareMap Dolomites",
+    "type": "baselayer",
+    "version": "2.0.0"
+  },
+  "note": "Feature instances include repetition across tiles and zooms; not unique OSM objects. This checks MVT framing and layer presence, not geometry or cartographic correctness.",
+  "tiles_by_zoom": {
+    "4": 1,
+    "5": 2,
+    "6": 2,
+    "7": 2,
+    "8": 6,
+    "9": 12,
+    "10": 48,
+    "11": 180,
+    "12": 667,
+    "13": 2508,
+    "14": 9831
+  }
+}

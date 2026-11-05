@@ -120,3 +120,19 @@ data/regions/pyrenees/elevation/*
 /regions/pyrenees/garmin/coastal-context/
 /releases/pyrenees/2.0.0/maps/topography.mbtiles
 /releases/pyrenees/2.0.0/maps/topography-context.mbtiles
+
+# Dolomites locked source inputs, matching the other regional editions.
+!data/regions/dolomites/
+data/regions/dolomites/*
+!data/regions/dolomites/*.osm.pbf
+!data/regions/dolomites/*.poly
+!data/regions/dolomites/*.extract.json
+!data/regions/dolomites/elevation/
+data/regions/dolomites/elevation/*
+!data/regions/dolomites/elevation/*.hgt.gz
+
+# Reproducible Dolomites intermediates; only selected release maps are pinned.
+/data/regions/dolomites/*.clipped.osm.pbf
+/regions/dolomites/garmin/coastal-context/
+/releases/dolomites/2.0.0/maps/topography.mbtiles
+/releases/dolomites/2.0.0/maps/topography-context.mbtiles

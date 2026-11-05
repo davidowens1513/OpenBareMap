@@ -1,0 +1,49 @@
+{
+  "areaSquareDegrees": 3.184999999999992,
+  "bounds": [
+    10.65,
+    45.7,
+    13.1,
+    47.0
+  ],
+  "entireRequestedFootprintCovered": true,
+  "exactFootprint": null,
+  "inputs": [
+    {
+      "bytes": 28225,
+      "path": "data/regions/dolomites/nord-est.poly",
+      "sha256": "a7fb592a32b68e07f34a6fc90f04ad3566f8e73e346acc76d1d6ef36faac5e13",
+      "url": "https://download.geofabrik.de/europe/italy/nord-est.poly"
+    },
+    {
+      "bytes": 15515,
+      "path": "data/regions/dolomites/nord-ovest.poly",
+      "sha256": "4d6962b497cca39705476917d3c1749f7bab138b9ec97306d8847ccceb836395",
+      "url": "https://download.geofabrik.de/europe/italy/nord-ovest.poly"
+    },
+    {
+      "bytes": 15484,
+      "path": "data/regions/dolomites/austria.poly",
+      "sha256": "88873792ab48a4cc1a85a9d74ca39ff12c73a0d941b4bf2705cf4be66f546634",
+      "url": "https://download.geofabrik.de/europe/austria.poly"
+    }
+  ],
+  "knownDestinationsCovered": [
+    "island",
+    "cortina",
+    "brenta",
+    "marmolada",
+    "tre-cime",
+    "val-gardena",
+    "pale-di-san-martino",
+    "friulian-dolomites",
+    "bolzano",
+    "trento",
+    "belluno",
+    "bressanone",
+    "lienz"
+  ],
+  "operation": "Requested rectangular crop; source outlines cover all destination anchors",
+  "polygons": 1,
+  "sha256": "1eb2df1685d84df27b2c751af286a9254045d9016fa0187452ddb035b55735fb"
+}

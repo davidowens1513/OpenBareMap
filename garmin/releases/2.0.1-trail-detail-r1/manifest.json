@@ -12,6 +12,7 @@
     "steps"
   ],
   "collectionRevision": "2.0.1-trail-detail-r1",
+  "collectionUpdatedUTC": "2026-11-05T23:33:00.786198+00:00",
   "drawPriority": 25,
   "fineContourResolution": 23,
   "format": "openbaremap-garmin-release-v1",
@@ -33,6 +34,39 @@
   ],
   "regionalBackgrounds": "Clipped to locked source footprints; no automatic rectangular filler",
   "regions": {
+    "dolomites": {
+      "backgroundValidation": {
+        "bytes": 188,
+        "path": "garmin/releases/2.0.1-trail-detail-r1/dolomites-background-validation.txt",
+        "sha256": "432674a8d381bf36e5339b703fdb1e9c4746a6ec24ad7566cc6c057dd1fe0e75"
+      },
+      "buildReport": {
+        "bytes": 9641,
+        "path": "regions/dolomites/garmin/build-report.json",
+        "sha256": "20e33f3a0b773609ee41d36a30d85c9f6f9e4076a73f351f89d008e89def4a69"
+      },
+      "bytes": 176525312,
+      "downloadURL": "https://downloads.appsbyonzy.dev/Garmin/OpenBareMap-Dolomites.img?v=2.0.1-trail-detail-r1",
+      "familyId": 4837,
+      "garminPackageRevision": "2.0.1-trail-detail-r1",
+      "instructionsURL": "https://downloads.appsbyonzy.dev/Garmin/dolomites-instructions.txt",
+      "mapVersion": "2.0.0",
+      "path": "regions/dolomites/garmin/dist/OpenBareMap-Dolomites.img",
+      "renderFootprint": {
+        "bytes": 734,
+        "path": "regions/dolomites/garmin/render-coverage.geojson",
+        "sha256": "f8e031cc3f5ef1f8a7527e795e7db5c48a5d245e36250bb13d84ae34d2873079"
+      },
+      "renderFootprintLock": {
+        "bytes": 2009,
+        "path": "regions/dolomites/garmin/render-coverage.lock.json",
+        "sha256": "2f437d6aa0e753e1cc92d959ffb17f2cd2e8ce69e0d0507bbf955266f8f27117"
+      },
+      "sha256": "ec961d1092e0fcb08b5b99eb6345bfefd8cc6f30cd4fe4c143a6c1fee9e67f97",
+      "sourceLockSHA256": "1c1716f0090b2f2eeaceceed562314fae1b5ae843d1d0c73fade05d262335a16",
+      "terrainLockSHA256": "461a94f09268a7b8b7bd43a5faefc31b5ce1608378ad28ae701c49eec0ec3948",
+      "tileCount": 73
+    },
     "england-wales": {
       "backgroundValidation": {
         "bytes": 194,
@@ -98,6 +132,39 @@
       "sourceLockSHA256": "fc3807f33d665938a76e34f6d70674bd83dd93d7aae405a201378dae93bb5227",
       "terrainLockSHA256": "7336551caeaa254c02e7a2512278de2a390582fb6fcf520f61ea02a9f5f46798",
       "tileCount": 91
+    },
+    "pyrenees": {
+      "backgroundValidation": {
+        "bytes": 188,
+        "path": "garmin/releases/2.0.1-trail-detail-r1/pyrenees-background-validation.txt",
+        "sha256": "b1a42a79cb31d74e69bd3cf492688c0ebadf281f4da7a91b346ffa5ba314a77f"
+      },
+      "buildReport": {
+        "bytes": 17909,
+        "path": "regions/pyrenees/garmin/build-report.json",
+        "sha256": "12c51e2fd8a03257477a202bc947a8158ef03edc4ac79136524ed8f8893c8a06"
+      },
+      "bytes": 422412288,
+      "downloadURL": "https://downloads.appsbyonzy.dev/Garmin/OpenBareMap-Pyrenees.img?v=2.0.1-trail-detail-r1",
+      "familyId": 4836,
+      "garminPackageRevision": "2.0.1-trail-detail-r1",
+      "instructionsURL": "https://downloads.appsbyonzy.dev/Garmin/pyrenees-instructions.txt",
+      "mapVersion": "2.0.0",
+      "path": "regions/pyrenees/garmin/dist/OpenBareMap-Pyrenees.img",
+      "renderFootprint": {
+        "bytes": 728,
+        "path": "regions/pyrenees/garmin/render-coverage.geojson",
+        "sha256": "e5eac07148fa6c5597e310f95db5055349bb85f4cd13aa46959df3689092bb7e"
+      },
+      "renderFootprintLock": {
+        "bytes": 3176,
+        "path": "regions/pyrenees/garmin/render-coverage.lock.json",
+        "sha256": "3a3e57977f897167a222b0f988ed9c108986387f3c8f323743d13db9b1d48ec6"
+      },
+      "sha256": "04527bd857abd639e6805817635cc9dfc62eade3b4659112418ea9916936825b",
+      "sourceLockSHA256": "330359702281b478b622421def3c4567ea621477b18470568386ef61a0fff3dd",
+      "terrainLockSHA256": "124aa5c579d6c15331eec8e2fec81083bbe67a30e63524b0a72daf9a98084551",
+      "tileCount": 164
     },
     "scotland": {
       "backgroundValidation": {
@@ -170,9 +237,9 @@
   "routing": false,
   "transparent": true,
   "validation": {
-    "bytes": 736,
+    "bytes": 992,
     "path": "garmin/releases/2.0.1-trail-detail-r1/map-set-validation.txt",
-    "sha256": "88a3ad9461cf66021cc7c8bee9d5083f653fa600e08cd740f372c25cfb20070c"
+    "sha256": "01160f84fb02916b2498fbc2c22dc02bb20589415811d14d178abbade923367d"
   },
   "whiteBacking": false
 }

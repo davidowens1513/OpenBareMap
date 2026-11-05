@@ -1,0 +1,39 @@
+{
+  "features": [
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              13.1,
+              45.7
+            ],
+            [
+              13.1,
+              47.0
+            ],
+            [
+              10.65,
+              47.0
+            ],
+            [
+              10.65,
+              45.7
+            ],
+            [
+              13.1,
+              45.7
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "properties": {
+        "purpose": "Limit opaque native background and land-cover polygons; retain complete accepted OSM and terrain inputs",
+        "region": "dolomites"
+      },
+      "type": "Feature"
+    }
+  ],
+  "type": "FeatureCollection"
+}

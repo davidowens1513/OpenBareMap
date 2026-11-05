@@ -1,0 +1,52 @@
+{
+  "contourIntervalMetres": 20,
+  "coverage": "Dolomites regional edition; approved rectangular coverage 10.65\u201313.10\u00b0E, 45.70\u201347.00\u00b0N. Complete OSM features retained at the edge.",
+  "datasets": {
+    "basemap": {
+      "bytes": 426749952,
+      "path": "releases/dolomites/2.0.0/maps/basemap.mbtiles",
+      "sha256": "fdbf05ef3cf7a9128d317fee351b3bb4fd5bbdb2d7673d36fd5cf97b68e1174c",
+      "validation": {
+        "empty_tile_count": 1,
+        "logical_tiles_sha256": "ad56ce0f318783514d9fe7616ab721f67ea7fe8cc84f073c4a76b9b92457477a",
+        "tile_count": 13259
+      }
+    },
+    "grid": {
+      "bytes": 4628480,
+      "path": "releases/dolomites/2.0.0/maps/grid.mbtiles",
+      "sha256": "c50ff7859253da33995da17d9c0bc2daff8b0c9660b83fdcfb261aa0d19ffbfb",
+      "validation": {
+        "empty_tile_count": 0,
+        "logical_tiles_sha256": "5ed597d196c9f2a12ccf6a1c9f91621bd734e9c4f4ea47149bc1aff424e89fb0",
+        "tile_count": 13232
+      }
+    },
+    "hillshade": {
+      "bytes": 138899456,
+      "path": "releases/dolomites/2.0.0/maps/hillshade.mbtiles",
+      "sha256": "6633dc950536cef2a123259756f90fa39ef102ff315cbdde70616e7e474c8213",
+      "validation": {
+        "empty_tile_count": 0,
+        "logical_tiles_sha256": "53357e8955e597ff5e10d51de64c724d4a9cb259e61f0467fa5858c5cd8544d6",
+        "tile_count": 3109
+      }
+    },
+    "topography": {
+      "bytes": 277950464,
+      "path": "releases/dolomites/2.0.0/maps/topography.mbtiles",
+      "sha256": "d2dafa521f69493978bfb970545fc7c48d4b56ecbc5c647b88e8d2c7201331b5",
+      "validation": {
+        "empty_tile_count": 221034,
+        "logical_tiles_sha256": "cdf2868851f42c96ed8e2dbf9d95fa06def318e2a49325ea261d65dcf3f3c98b",
+        "tile_count": 250107
+      }
+    }
+  },
+  "format": "openbaremap-development-viewer-v1",
+  "localBorders": false,
+  "mapVersion": "2.0.0",
+  "region": "dolomites",
+  "storageRevision": "2.0.0-dolomites-r1",
+  "styleRevision": "2.0.0-dolomites-r1"
+}

@@ -1,0 +1,94 @@
+{
+  "bounds": [
+    10.65,
+    45.7,
+    13.1,
+    47.0
+  ],
+  "contextEnvelope": [
+    10.65,
+    45.7,
+    13.1,
+    47.0
+  ],
+  "drawPriority": 25,
+  "format": "openbaremap-garmin-render-footprint-v1",
+  "geometry": {
+    "bytes": 734,
+    "path": "regions/dolomites/garmin/render-coverage.geojson",
+    "sha256": "f8e031cc3f5ef1f8a7527e795e7db5c48a5d245e36250bb13d84ae34d2873079"
+  },
+  "inputs": [
+    {
+      "bytes": 28225,
+      "path": "data/regions/dolomites/nord-est.poly",
+      "sha256": "a7fb592a32b68e07f34a6fc90f04ad3566f8e73e346acc76d1d6ef36faac5e13",
+      "url": "https://download.geofabrik.de/europe/italy/nord-est.poly"
+    },
+    {
+      "bytes": 15515,
+      "path": "data/regions/dolomites/nord-ovest.poly",
+      "sha256": "4d6962b497cca39705476917d3c1749f7bab138b9ec97306d8847ccceb836395",
+      "url": "https://download.geofabrik.de/europe/italy/nord-ovest.poly"
+    },
+    {
+      "bytes": 15484,
+      "path": "data/regions/dolomites/austria.poly",
+      "sha256": "88873792ab48a4cc1a85a9d74ca39ff12c73a0d941b4bf2705cf4be66f546634",
+      "url": "https://download.geofabrik.de/europe/austria.poly"
+    }
+  ],
+  "knownDestinationsCovered": {
+    "belluno": [
+      12.2176,
+      46.1391
+    ],
+    "bolzano": [
+      11.3548,
+      46.4983
+    ],
+    "brenta": [
+      10.89,
+      46.17
+    ],
+    "bressanone": [
+      11.657,
+      46.7167
+    ],
+    "cortina": [
+      12.1357,
+      46.5405
+    ],
+    "friulian-dolomites": [
+      12.58,
+      46.32
+    ],
+    "lienz": [
+      12.769,
+      46.828
+    ],
+    "marmolada": [
+      11.862,
+      46.435
+    ],
+    "pale-di-san-martino": [
+      11.85,
+      46.28
+    ],
+    "tre-cime": [
+      12.3,
+      46.619
+    ],
+    "trento": [
+      11.1211,
+      46.0679
+    ],
+    "val-gardena": [
+      11.756,
+      46.557
+    ]
+  },
+  "purpose": "Rectangular Garmin tiles may overlap other countries. Do not fill their padding with sea, land or land-cover polygons.",
+  "region": "dolomites",
+  "transparentNativeMap": true
+}

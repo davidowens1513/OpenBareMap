@@ -1,0 +1,136 @@
+{
+  "contours": 206818,
+  "land_polygons": 12,
+  "landcover_polygons": 285426,
+  "townlands": 0,
+  "nodes": 75332657,
+  "ways": 554760,
+  "relations": 285692,
+  "contour_intervals": {
+    "100": 36158,
+    "20": 170660
+  },
+  "coverage": [
+    10.65,
+    45.7,
+    13.1,
+    47.0
+  ],
+  "overlay_sha256": "fb964a16b46af328e57071d96b7cb17fe431a57decc257465f69d2ba73c7adfb",
+  "overlay_bytes": 1087345579,
+  "renderFootprintSHA256": "f8e031cc3f5ef1f8a7527e795e7db5c48a5d245e36250bb13d84ae34d2873079",
+  "polygonClipping": {
+    "land": {
+      "input": 12,
+      "inside": 12,
+      "clipped": 0,
+      "excluded": 0,
+      "repaired": 0,
+      "emitted": 12
+    },
+    "grass": {
+      "input": 110863,
+      "inside": 110589,
+      "clipped": 263,
+      "excluded": 11,
+      "repaired": 0,
+      "emitted": 110899
+    },
+    "scrub": {
+      "input": 31829,
+      "inside": 31742,
+      "clipped": 86,
+      "excluded": 1,
+      "repaired": 0,
+      "emitted": 31845
+    },
+    "shingle": {
+      "input": 1154,
+      "inside": 1146,
+      "clipped": 8,
+      "excluded": 0,
+      "repaired": 0,
+      "emitted": 1154
+    },
+    "wood": {
+      "input": 59860,
+      "inside": 59589,
+      "clipped": 267,
+      "excluded": 4,
+      "repaired": 0,
+      "emitted": 59953
+    },
+    "farmland": {
+      "input": 48675,
+      "inside": 48258,
+      "clipped": 414,
+      "excluded": 3,
+      "repaired": 0,
+      "emitted": 48710
+    },
+    "wetland": {
+      "input": 1399,
+      "inside": 1384,
+      "clipped": 15,
+      "excluded": 0,
+      "repaired": 0,
+      "emitted": 1400
+    },
+    "scree": {
+      "input": 16495,
+      "inside": 16377,
+      "clipped": 118,
+      "excluded": 0,
+      "repaired": 0,
+      "emitted": 16534
+    },
+    "bare_rock": {
+      "input": 13299,
+      "inside": 13212,
+      "clipped": 86,
+      "excluded": 1,
+      "repaired": 0,
+      "emitted": 13328
+    },
+    "bog": {
+      "input": 54,
+      "inside": 54,
+      "clipped": 0,
+      "excluded": 0,
+      "repaired": 0,
+      "emitted": 54
+    },
+    "beach": {
+      "input": 98,
+      "inside": 98,
+      "clipped": 0,
+      "excluded": 0,
+      "repaired": 0,
+      "emitted": 98
+    },
+    "heath": {
+      "input": 1605,
+      "inside": 1584,
+      "clipped": 21,
+      "excluded": 0,
+      "repaired": 0,
+      "emitted": 1609
+    },
+    "sand": {
+      "input": 95,
+      "inside": 95,
+      "clipped": 0,
+      "excluded": 0,
+      "repaired": 0,
+      "emitted": 95
+    },
+    "sea": {
+      "input": 1,
+      "inside": 1,
+      "clipped": 0,
+      "excluded": 0,
+      "repaired": 0,
+      "emitted": 1
+    }
+  }
+}

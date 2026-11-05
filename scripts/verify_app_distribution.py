@@ -4,6 +4,7 @@ import argparse,hashlib,json,urllib.request,datetime
 from pathlib import Path
 from concurrent.futures import ThreadPoolExecutor
 from openbaremap import ROOT,write
+from regions import REGIONS
 
 CATALOG=ROOT/'distribution/app-bundles-v1/catalog.json'
 def read_hash(url):
@@ -32,5 +33,5 @@ def verify(region):
     write(ROOT/'distribution/app-bundles-v1'/('publication-'+region+'.json'),result)
     return result
 if __name__=='__main__':
-    parser=argparse.ArgumentParser();parser.add_argument('--regions',nargs='+',choices=['ireland','england-wales','scotland','sierra-nevada'],default=['ireland','england-wales','scotland']);args=parser.parse_args()
+    parser=argparse.ArgumentParser();parser.add_argument('--regions',nargs='+',choices=REGIONS,default=['ireland','england-wales','scotland']);args=parser.parse_args()
     with ThreadPoolExecutor(max_workers=2) as pool:list(pool.map(verify,args.regions))

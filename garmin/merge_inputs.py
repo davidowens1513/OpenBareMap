@@ -22,4 +22,4 @@ def merge(region='ireland'):
  write(work/'merge-record.json',{'osmSHA256':source['sha256'],'overlaySHA256':digest(work/'overlays.osm.gz'),'combinedSHA256':digest(work/'combined.osm.pbf')})
  print('Sorted complete regional source written',flush=True)
 if __name__=='__main__':
- parser=argparse.ArgumentParser();parser.add_argument('--region',choices=['ireland','england-wales','scotland','sierra-nevada','pyrenees'],default='ireland');args=parser.parse_args();merge(args.region)
+ parser=argparse.ArgumentParser();parser.add_argument('--region',choices=['ireland','england-wales','scotland','sierra-nevada','pyrenees','dolomites'],default='ireland');args=parser.parse_args();merge(args.region)

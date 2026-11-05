@@ -1,0 +1,21 @@
+{
+  "combinedSHA256": "396164ea544aafa18c71e7929bfafb33c227732b1f92b5ed54e6cada37b91bdd",
+  "command": [
+    "/opt/homebrew/opt/openjdk@21/libexec/openjdk.jdk/Contents/Home/bin/java",
+    "-Xmx6g",
+    "-jar",
+    "/Volumes/Extreme SSD/Projects/OpenBareMap/garmin/tools/splitter-r654/splitter.jar",
+    "--mapid=48370001",
+    "--description=OpenBareMap Dolomites",
+    "--max-nodes=1000000",
+    "--max-threads=2",
+    "--keep-complete=true",
+    "--output=pbf",
+    "--polygon-file=/Volumes/Extreme SSD/Projects/OpenBareMap/regions/dolomites/garmin/coverage.poly",
+    "--output-dir=/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/906ead9d53a7/dolomites/garmin/split",
+    "--ignore-osm-bounds=true",
+    "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/906ead9d53a7/dolomites/garmin/combined.osm.pbf"
+  ],
+  "coverageSHA256": "1eb2df1685d84df27b2c751af286a9254045d9016fa0187452ddb035b55735fb",
+  "ignoreSourceHeaderBounds": true
+}

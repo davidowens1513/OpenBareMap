@@ -1,0 +1,52 @@
+{
+  "builderSHA256": "de51a20f74bcad7d1aa0818ab997f37f8e55e7a2e635fb114bdcbcfdd21dc3aa",
+  "contextBounds": [
+    7,
+    42,
+    17,
+    50
+  ],
+  "note": "Contour payloads preserved exactly while extending land background outside edition coverage.",
+  "oldTopography": {
+    "bytes": 277950464,
+    "path": "releases/dolomites/2.0.0/maps/topography.mbtiles",
+    "sha256": "d2dafa521f69493978bfb970545fc7c48d4b56ecbc5c647b88e8d2c7201331b5",
+    "validation": {
+      "empty_tile_count": 221034,
+      "logical_tiles_sha256": "cdf2868851f42c96ed8e2dbf9d95fa06def318e2a49325ea261d65dcf3f3c98b",
+      "tile_count": 250107
+    }
+  },
+  "output": {
+    "bytes": 277413888,
+    "path": "releases/dolomites/2.0.0/maps/topography-context.mbtiles",
+    "sha256": "68a552d522566b2489f8cb692b6835dbf8b0d8696be4858387d0fc55d31fed4b",
+    "validation": {
+      "empty_tile_count": 221034,
+      "logical_tiles_sha256": "cdf2868851f42c96ed8e2dbf9d95fa06def318e2a49325ea261d65dcf3f3c98b",
+      "tile_count": 250107
+    }
+  },
+  "replacement": {
+    "changed_tiles": 17254,
+    "path": "build/dolomites-coast-context/combined.mbtiles",
+    "replacement_feature_instances": 32318,
+    "sha256": "e22001c16402f5dee1c73eca6b178e64f83f19bb55d9a68bdc2bffe6e7b06055",
+    "unchanged_other_layers_sha256": "af4cb1a9e737b956b8f836af43217df6c8168070f33cfc91f97391b97d48bfa2",
+    "validation": {
+      "empty_tile_count": 221034,
+      "logical_tiles_sha256": "cdf2868851f42c96ed8e2dbf9d95fa06def318e2a49325ea261d65dcf3f3c98b",
+      "tile_count": 250107
+    }
+  },
+  "source": {
+    "accessed_utc": "2026-10-25T12:59:16.751893+00:00",
+    "bytes": 928538219,
+    "http_headers_path": "data/land-polygons.headers",
+    "license": "ODbL 1.0; OpenStreetMap contributors",
+    "path": "data/land-polygons-split-4326.zip",
+    "sha256": "5911e273096f9585425a17c30a8a98785cc33ed2718ff88987768933b8a327f7",
+    "source_snapshot": "HTTP Last-Modified 2026-10-25T03:43:12Z; this is file publication, not a guaranteed OSM snapshot timestamp",
+    "url": "https://osmdata.openstreetmap.de/download/land-polygons-split-4326.zip"
+  }
+}

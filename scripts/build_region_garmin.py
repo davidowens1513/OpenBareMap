@@ -10,7 +10,7 @@ import subprocess
 import sys
 sys.path.insert(0,str(Path(__file__).resolve().parents[1]/'garmin'))
 from openbaremap import ROOT,digest,write
-from regions import profile,region_path,garmin_work
+from regions import profile,region_path,garmin_work,REGIONS
 from build import java_path,tools,run
 from identities import validate_config,write_tile_args
 
@@ -125,7 +125,8 @@ def main(region):
     with (dest/'inspection.json').open('w') as out:subprocess.run(command,stdout=out,check=True)
     # Inspect the prospective binary together with the other installed products.
     subprocess.run([str(javac),'-cp',str(jar),'-d',str(work),str(ROOT/'garmin/ValidateMapSet.java')],check=True)
-    companions=[f for f in [ROOT/'garmin/dist/OpenBareMap-Ireland.img',ROOT/'garmin/dist/OpenBareMap-My-Tracks.img',ROOT/'regions/england-wales/garmin/dist/OpenBareMap-England-Wales.img',ROOT/'regions/scotland/garmin/dist/OpenBareMap-Scotland.img',ROOT/'regions/sierra-nevada/garmin/dist/OpenBareMap-Sierra-Nevada.img'] if f.exists() and region not in f.parts]
+    companions=[region_path(r,'garmin/dist')/profile(r).get('garminFilename','OpenBareMap-'+'-'.join(part.title() for part in r.split('-'))+'.img') for r in REGIONS if r!=region]
+    companions=[f for f in [*companions,ROOT/'garmin/dist/OpenBareMap-My-Tracks.img'] if f.exists()]
     with (dest/'map-set-validation.txt').open('w') as out:subprocess.run([str(java),'-Djava.awt.headless=true',*(['-Dopenbaremap.scotland.tiles='+str(len(expected))] if region=='scotland' else []),'-Xmx2g','-cp',str(work)+':'+str(jar),'ValidateMapSet',*map(str,companions),str(image)],stdout=out,check=True)
     dist=dest/'dist';dist.mkdir(exist_ok=True);output=dist/p.get('garminFilename','OpenBareMap-England-Wales.img')
     if output.exists():raise FileExistsError(output)
@@ -139,4 +140,4 @@ def main(region):
     write(dest/'build-report.json',{'status':'compiled and structurally inspected; hardware rendering pending','familyId':p['garminFamilyId'],'garminPackageRevision':config['garminPackageRevision'],'routing':False,'output':{'path':str(output.relative_to(ROOT)),'bytes':output.stat().st_size,'sha256':digest(output)},'inspection':json.loads((dest/'inspection.json').read_text())})
 
 if __name__=='__main__':
-    parser=argparse.ArgumentParser();parser.add_argument('--region',choices=['england-wales','scotland','sierra-nevada','pyrenees'],required=True);args=parser.parse_args();main(args.region)
+    parser=argparse.ArgumentParser();parser.add_argument('--region',choices=['england-wales','scotland','sierra-nevada','pyrenees','dolomites'],required=True);args=parser.parse_args();main(args.region)

@@ -1,0 +1,119 @@
+{
+  "acceptance": "Automated checks only; see validation and visual-review records for actual reviewed scope.",
+  "coverage": "Dolomites regional edition; approved rectangular coverage 10.65\u201313.10\u00b0E, 45.70\u201347.00\u00b0N. Complete OSM features retained at the edge.",
+  "datasets": {
+    "basemap": {
+      "bytes": 426749952,
+      "path": "releases/dolomites/2.0.0/maps/basemap.mbtiles",
+      "sha256": "fdbf05ef3cf7a9128d317fee351b3bb4fd5bbdb2d7673d36fd5cf97b68e1174c",
+      "validation": {
+        "empty_tile_count": 1,
+        "logical_tiles_sha256": "ad56ce0f318783514d9fe7616ab721f67ea7fe8cc84f073c4a76b9b92457477a",
+        "tile_count": 13259
+      }
+    },
+    "grid": {
+      "bytes": 4628480,
+      "path": "releases/dolomites/2.0.0/maps/grid.mbtiles",
+      "sha256": "c50ff7859253da33995da17d9c0bc2daff8b0c9660b83fdcfb261aa0d19ffbfb",
+      "validation": {
+        "empty_tile_count": 0,
+        "logical_tiles_sha256": "5ed597d196c9f2a12ccf6a1c9f91621bd734e9c4f4ea47149bc1aff424e89fb0",
+        "tile_count": 13232
+      }
+    },
+    "hillshade": {
+      "bytes": 138899456,
+      "path": "releases/dolomites/2.0.0/maps/hillshade.mbtiles",
+      "sha256": "6633dc950536cef2a123259756f90fa39ef102ff315cbdde70616e7e474c8213",
+      "validation": {
+        "empty_tile_count": 0,
+        "logical_tiles_sha256": "53357e8955e597ff5e10d51de64c724d4a9cb259e61f0467fa5858c5cd8544d6",
+        "tile_count": 3109
+      }
+    },
+    "topography": {
+      "bytes": 277413888,
+      "path": "releases/dolomites/2.0.0/maps/topography-context.mbtiles",
+      "sha256": "68a552d522566b2489f8cb692b6835dbf8b0d8696be4858387d0fc55d31fed4b",
+      "validation": {
+        "empty_tile_count": 221034,
+        "logical_tiles_sha256": "cdf2868851f42c96ed8e2dbf9d95fa06def318e2a49325ea261d65dcf3f3c98b",
+        "tile_count": 250107
+      }
+    }
+  },
+  "garmin": {
+    "bytes": 176525312,
+    "path": "regions/dolomites/garmin/dist/OpenBareMap-Dolomites.img",
+    "sha256": "ec961d1092e0fcb08b5b99eb6345bfefd8cc6f30cd4fe4c143a6c1fee9e67f97"
+  },
+  "geometryReport": {
+    "path": "build/dolomites-geometry/geometry-report.json",
+    "sha256": "5f10071eb268f232260f7d134bd90c00df38c1c0c0bcc589461ac606ae6b4d39"
+  },
+  "hostAppsModified": false,
+  "mapVersion": "2.0.0",
+  "osm": {
+    "bytes": 283475522,
+    "operation": "Complete-feature bbox extraction with nested relation references, then libosmium sorted merge; duplicate OSM objects resolved by version",
+    "path": "data/regions/dolomites/dolomites-261104.osm.pbf",
+    "replicationTimestamp": "2026-11-04T21:21:03Z",
+    "sha256": "a835d74e63c7c4520870d2890de805b4ae628898588f6e1e1ad5cdeef1d9af63",
+    "snapshot_date": "2026-11-04",
+    "url": null
+  },
+  "packages": {
+    "android": {
+      "archive": {
+        "bytes": 855034987,
+        "path": "regions/dolomites/android/OpenBareMap-Android.zip",
+        "sha256": "210b3e5e680b16496594f90da20141a4ec2565c973c517093c0eec0ea9c86ff8"
+      },
+      "checksumsSHA256": "277d0480fe5aa42addc8b9fd1391152b5b6158fa4479fe985132b24caa3cbe6f",
+      "manifestSHA256": "f3247931f45a1f8c0271c82db1bdd2f20d9004074a5029ba9e20eaa743ad6995",
+      "path": "regions/dolomites/android",
+      "validationSHA256": "46d748d8b8b47a916cc58d61ad483d063e18bb2a61a2a949aee7fa48ef908917"
+    },
+    "ios": {
+      "checksumsSHA256": "6b250190c79a36712037372233f9df3119d462968b7983beada8ea669bae83e4",
+      "manifestSHA256": "35de5a331260ecf7a6f08622a17e7b5b7e2e3559a4834deadb6720d5ebd169bf",
+      "path": "regions/dolomites/ios",
+      "validationSHA256": "ba40566d46d7f1ac0a5be4b00e8f9c2ad6cc028d37797d5d13d321f510bf866e"
+    }
+  },
+  "pythonRuntime": {
+    "packages": {
+      "Pillow": "12.3.0",
+      "certifi": "2026.10.23",
+      "charset-normalizer": "3.5.2",
+      "idna": "3.20",
+      "numpy": "2.5.4",
+      "osmium": "4.3.2",
+      "pyproj": "3.8.0",
+      "requests": "2.34.2",
+      "shapely": "2.2.0",
+      "urllib3": "2.8.0"
+    },
+    "platform": "macOS-27.0.1-arm64-arm-64bit-Mach-O",
+    "python": "3.14.5 (main, May 10 2026, 10:21:34) [Clang 21.0.0 (clang-2100.0.123.102)]"
+  },
+  "region": "dolomites",
+  "standaloneResourceArchives": {
+    "android": {
+      "bytes": 855034987,
+      "path": "regions/dolomites/exports/android/OpenBareMap-Dolomites-Android.zip",
+      "sha256": "210b3e5e680b16496594f90da20141a4ec2565c973c517093c0eec0ea9c86ff8",
+      "url": "https://downloads.appsbyonzy.dev/OpenBareMap/dolomites/2.0.0/android/OpenBareMap-Dolomites-Android.zip"
+    },
+    "ios": {
+      "bytes": 855055318,
+      "path": "regions/dolomites/exports/ios/OpenBareMap-Dolomites-iOS.zip",
+      "sha256": "9c6c66b8b45649c19dc2762430d0afa2efc5c47cba3f081e3d6dd94a975cdb22",
+      "url": "https://downloads.appsbyonzy.dev/OpenBareMap/dolomites/2.0.0/ios/OpenBareMap-Dolomites-iOS.zip"
+    }
+  },
+  "styleSHA256": "a64a20de60e99372f10d57e79577424a1e225052f142f15f602c32c5523918e6",
+  "terrainLockSHA256": "461a94f09268a7b8b7bd43a5faefc31b5ce1608378ad28ae701c49eec0ec3948",
+  "validation": "validation.json"
+}

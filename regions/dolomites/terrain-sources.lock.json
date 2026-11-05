@@ -1,0 +1,86 @@
+{
+  "accessed_utc": "2026-11-05T23:01:50.808739+00:00",
+  "assets": [
+    {
+      "bytes": 9863860,
+      "path": "data/regions/dolomites/elevation/N45E010.hgt.gz",
+      "sha256": "6ed526fcbe3e86012cd45027aaebc8b5ab689dd3e990dc09983ad05ed586c260",
+      "url": "https://elevation-tiles-prod.s3.amazonaws.com/skadi/N45/N45E010.hgt.gz"
+    },
+    {
+      "bytes": 9398779,
+      "path": "data/regions/dolomites/elevation/N45E011.hgt.gz",
+      "sha256": "8ba4ef0f16272a8d426b37ecfa51a2399c80c24869be08947329d1f25c9806a2",
+      "url": "https://elevation-tiles-prod.s3.amazonaws.com/skadi/N45/N45E011.hgt.gz"
+    },
+    {
+      "bytes": 3665669,
+      "path": "data/regions/dolomites/elevation/N45E012.hgt.gz",
+      "sha256": "cd92041aa6f146d26553537feb92d324c2fdfc5af69f5a2863506ba57466385a",
+      "url": "https://elevation-tiles-prod.s3.amazonaws.com/skadi/N45/N45E012.hgt.gz"
+    },
+    {
+      "bytes": 5687146,
+      "path": "data/regions/dolomites/elevation/N45E013.hgt.gz",
+      "sha256": "48794ad02c05119a5ee35cc7e6c900390e95dba72d9238c609ea117e3e6ebb51",
+      "url": "https://elevation-tiles-prod.s3.amazonaws.com/skadi/N45/N45E013.hgt.gz"
+    },
+    {
+      "bytes": 17629356,
+      "path": "data/regions/dolomites/elevation/N46E010.hgt.gz",
+      "sha256": "2b96e5f3864246d732310df8d1f9e9f45b8ba942b213f2fef24e2047c4ae1ce1",
+      "url": "https://elevation-tiles-prod.s3.amazonaws.com/skadi/N46/N46E010.hgt.gz"
+    },
+    {
+      "bytes": 17104279,
+      "path": "data/regions/dolomites/elevation/N46E011.hgt.gz",
+      "sha256": "1be1b2c230ba569c5574ada2d687e48bf06227f9984505ab078a430f70980917",
+      "url": "https://elevation-tiles-prod.s3.amazonaws.com/skadi/N46/N46E011.hgt.gz"
+    },
+    {
+      "bytes": 16312539,
+      "path": "data/regions/dolomites/elevation/N46E012.hgt.gz",
+      "sha256": "e7b756c2026e98a80c2d1caf405869f7a91be333defeeb49dfa2a1e2b0eac523",
+      "url": "https://elevation-tiles-prod.s3.amazonaws.com/skadi/N46/N46E012.hgt.gz"
+    },
+    {
+      "bytes": 15367765,
+      "path": "data/regions/dolomites/elevation/N46E013.hgt.gz",
+      "sha256": "476ac43deaceb30721b8c0ff4a04f5fec37bad9a64c8dc78f23a537305cc724a",
+      "url": "https://elevation-tiles-prod.s3.amazonaws.com/skadi/N46/N46E013.hgt.gz"
+    },
+    {
+      "bytes": 13586656,
+      "path": "data/regions/dolomites/elevation/N47E010.hgt.gz",
+      "sha256": "247874ed191f70e7ae611a2100b43296916a2b3abe2e0b935020072a66df7144",
+      "url": "https://elevation-tiles-prod.s3.amazonaws.com/skadi/N47/N47E010.hgt.gz"
+    },
+    {
+      "bytes": 14063455,
+      "path": "data/regions/dolomites/elevation/N47E011.hgt.gz",
+      "sha256": "8607d04d340b5b7bc853aa3511701460dcaf9dfe056f05bc4d70ce7bdeaccde4",
+      "url": "https://elevation-tiles-prod.s3.amazonaws.com/skadi/N47/N47E011.hgt.gz"
+    },
+    {
+      "bytes": 14516007,
+      "path": "data/regions/dolomites/elevation/N47E012.hgt.gz",
+      "sha256": "40ffc7d5ad56a0f101d4670943c8b98f022725d917d6ec3bea067b248dc37922",
+      "url": "https://elevation-tiles-prod.s3.amazonaws.com/skadi/N47/N47E012.hgt.gz"
+    },
+    {
+      "bytes": 15176367,
+      "path": "data/regions/dolomites/elevation/N47E013.hgt.gz",
+      "sha256": "80c0470c1aa6d896ee6ca96fc9302a693b6321834db006f3d4e7c5fa4891f31d",
+      "url": "https://elevation-tiles-prod.s3.amazonaws.com/skadi/N47/N47E013.hgt.gz"
+    }
+  ],
+  "coverage": [
+    10,
+    45,
+    14,
+    48
+  ],
+  "dataset": "Mapzen/Terrain Tiles skadi composite elevation, not pure SRTM",
+  "documentation": "https://github.com/tilezen/joerd/tree/master/docs",
+  "grid": "3601 by 3601 signed 16-bit heights per degree tile"
+}

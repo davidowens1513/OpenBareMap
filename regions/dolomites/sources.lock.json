@@ -1,0 +1,55 @@
+{
+  "accessed_utc": "2026-11-05T23:08:21.263477+00:00",
+  "inputs": [
+    {
+      "bytes": 626813768,
+      "path": "data/regions/dolomites/nord-est-261104.osm.pbf",
+      "replicationTimestamp": "2026-11-04T21:21:03Z",
+      "sha256": "a4a39a8e740c632b2e96f06dc737f4f98eee0de1712bc978c75b16e9040e8c64",
+      "url": "https://download.geofabrik.de/europe/italy/nord-est-261104.osm.pbf"
+    },
+    {
+      "bytes": 594760218,
+      "path": "data/regions/dolomites/nord-ovest-261104.osm.pbf",
+      "replicationTimestamp": "2026-11-04T21:21:03Z",
+      "sha256": "e1e7aed156af639b56f4cc1d4dbed522e4e44116844e45d18a37321e59b2ee47",
+      "url": "https://download.geofabrik.de/europe/italy/nord-ovest-261104.osm.pbf"
+    },
+    {
+      "bytes": 814589439,
+      "path": "data/regions/dolomites/austria-261104.osm.pbf",
+      "replicationTimestamp": "2026-11-04T21:21:03Z",
+      "sha256": "7a2e91d740e25ab2d3b0eb385780aaf3e461217f4e3e8f06353c95b3fd7c75df",
+      "url": "https://download.geofabrik.de/europe/austria-261104.osm.pbf"
+    }
+  ],
+  "osm": {
+    "bytes": 283475522,
+    "operation": "Complete-feature bbox extraction with nested relation references, then libosmium sorted merge; duplicate OSM objects resolved by version",
+    "path": "data/regions/dolomites/dolomites-261104.osm.pbf",
+    "replicationTimestamp": "2026-11-04T21:21:03Z",
+    "sha256": "a835d74e63c7c4520870d2890de805b4ae628898588f6e1e1ad5cdeef1d9af63",
+    "snapshot_date": "2026-11-04",
+    "url": null
+  },
+  "polygons": [
+    {
+      "bytes": 28225,
+      "path": "data/regions/dolomites/nord-est.poly",
+      "sha256": "a7fb592a32b68e07f34a6fc90f04ad3566f8e73e346acc76d1d6ef36faac5e13",
+      "url": "https://download.geofabrik.de/europe/italy/nord-est.poly"
+    },
+    {
+      "bytes": 15515,
+      "path": "data/regions/dolomites/nord-ovest.poly",
+      "sha256": "4d6962b497cca39705476917d3c1749f7bab138b9ec97306d8847ccceb836395",
+      "url": "https://download.geofabrik.de/europe/italy/nord-ovest.poly"
+    },
+    {
+      "bytes": 15484,
+      "path": "data/regions/dolomites/austria.poly",
+      "sha256": "88873792ab48a4cc1a85a9d74ca39ff12c73a0d941b4bf2705cf4be66f546634",
+      "url": "https://download.geofabrik.de/europe/austria.poly"
+    }
+  ]
+}

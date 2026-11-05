@@ -1,0 +1,34 @@
+{
+  "builderSHA256": "32d085121efb2abaa13e851aa0854bca5031f7c12ec82349dd0f3c1692035b53",
+  "contoursSourceSHA256": "8fd68ed1798d05d585a25f40571d196fe64cca2b5a6b5386a7f4c7e00ed1717b",
+  "counts": {
+    "contours": 206818,
+    "grid": {
+      "grid_10km": 38,
+      "grid_1km": 362
+    },
+    "landcover": {
+      "empty_source_areas": [],
+      "features": 282522,
+      "retained": 30376,
+      "smoothed": 252146
+    }
+  },
+  "osm": {
+    "bytes": 283475522,
+    "operation": "Complete-feature bbox extraction with nested relation references, then libosmium sorted merge; duplicate OSM objects resolved by version",
+    "path": "data/regions/dolomites/dolomites-261104.osm.pbf",
+    "replicationTimestamp": "2026-11-04T21:21:03Z",
+    "sha256": "a835d74e63c7c4520870d2890de805b4ae628898588f6e1e1ad5cdeef1d9af63",
+    "snapshot_date": "2026-11-04",
+    "url": null
+  },
+  "outputs": {
+    "contours.geojson": "9efeee3d7bf6edcc1738b9407f445d343e10cb41a5b04d7a164ff45880917045",
+    "grid_10km.geojson": "3344544dd8fed503cd21db9077ced2178eaa18953b537b838984614a8a634afc",
+    "grid_1km.geojson": "a3210b4b56992efbba2b679efb7ab33a51744c87980a0bda86aaa5f268bbce35",
+    "landcover.geojson": "8d61174553539bcd00cfabf09c71486fd37195d3bc892ad7cc5ba3cfcf8f0dc0"
+  },
+  "region": "dolomites",
+  "smootherSHA256": "7581d024dc1c1bec931642c7201db149bf64a64c814c451fa8bf37a0881ea6c9"
+}

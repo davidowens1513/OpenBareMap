@@ -42,4 +42,4 @@ def export(region,output):
     return records
 
 if __name__=='__main__':
-    parser=argparse.ArgumentParser();parser.add_argument('--region',choices=['england-wales','scotland','sierra-nevada','pyrenees'],required=True);args=parser.parse_args();export(args.region,ROOT/'regions'/args.region/'exports')
+    parser=argparse.ArgumentParser();parser.add_argument('--region',choices=['england-wales','scotland','sierra-nevada','pyrenees','dolomites'],required=True);args=parser.parse_args();export(args.region,ROOT/'regions'/args.region/'exports')

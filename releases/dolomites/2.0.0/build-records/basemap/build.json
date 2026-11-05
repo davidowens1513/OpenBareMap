@@ -1,0 +1,189 @@
+{
+  "command": [
+    "/usr/local/bin/tilemaker",
+    "--input",
+    "/Volumes/Extreme SSD/Projects/OpenBareMap/data/regions/dolomites/dolomites-261104.osm.pbf",
+    "--output",
+    "/Volumes/Extreme SSD/Projects/OpenBareMap/build/dolomites-basemap/basemap.mbtiles",
+    "--config",
+    "/Volumes/Extreme SSD/Projects/OpenBareMap/build/dolomites-basemap/tilemaker.json",
+    "--process",
+    "/Volumes/Extreme SSD/Projects/OpenBareMap/build/dolomites-basemap/process.lua",
+    "--threads",
+    "1"
+  ],
+  "config_sha256": "d9b9eadbdff0a7339dd08c7b51c1e38f2bb193495b2e7ea979343f31b80b1f1f",
+  "exit_code": 0,
+  "output_sha256": "333ba957919dad33e91985d4f68153386311ec661c6ec85eafe412bf1a2074e6",
+  "process_sha256": "8520e4e415334d281423ad48957a9e8d7397f99640eddd990a5c3839e6caab28",
+  "region": {
+    "bounds": [
+      10.65,
+      45.7,
+      13.1,
+      47.0
+    ],
+    "clipBasemap": true,
+    "clipSource": true,
+    "coastContextBounds": [
+      7,
+      42,
+      17,
+      50
+    ],
+    "contourIntervalMetres": 20,
+    "coverage": "Dolomites regional edition; approved rectangular coverage 10.65\u201313.10\u00b0E, 45.70\u201347.00\u00b0N. Complete OSM features retained at the edge.",
+    "destinationLabels": {
+      "belluno": "Belluno",
+      "bolzano": "Bolzano / Bozen",
+      "brenta": "Brenta",
+      "bressanone": "Bressanone / Brixen",
+      "cortina": "Cortina d\u2019Ampezzo",
+      "friulian-dolomites": "Friulian Dolomites",
+      "island": "All Dolomites",
+      "lienz": "Lienz",
+      "marmolada": "Marmolada",
+      "pale-di-san-martino": "Pale di San Martino",
+      "tre-cime": "Tre Cime di Lavaredo",
+      "trento": "Trento",
+      "val-gardena": "Val Gardena / Gr\u00f6den"
+    },
+    "destinations": {
+      "belluno": [
+        12.2176,
+        46.1391,
+        12
+      ],
+      "bolzano": [
+        11.3548,
+        46.4983,
+        12
+      ],
+      "brenta": [
+        10.89,
+        46.17,
+        12
+      ],
+      "bressanone": [
+        11.657,
+        46.7167,
+        12
+      ],
+      "cortina": [
+        12.1357,
+        46.5405,
+        12
+      ],
+      "friulian-dolomites": [
+        12.58,
+        46.32,
+        12
+      ],
+      "island": [
+        11.875,
+        46.35,
+        8
+      ],
+      "lienz": [
+        12.769,
+        46.828,
+        12
+      ],
+      "marmolada": [
+        11.862,
+        46.435,
+        13
+      ],
+      "pale-di-san-martino": [
+        11.85,
+        46.28,
+        12
+      ],
+      "tre-cime": [
+        12.3,
+        46.619,
+        13
+      ],
+      "trento": [
+        11.1211,
+        46.0679,
+        12
+      ],
+      "val-gardena": [
+        11.756,
+        46.557,
+        12
+      ]
+    },
+    "garminContextBounds": [
+      10.65,
+      45.7,
+      13.1,
+      47.0
+    ],
+    "garminFamilyId": 4837,
+    "garminFilename": "OpenBareMap-Dolomites.img",
+    "garminPackageRevision": "2.0.1-trail-detail-r1",
+    "garminTileStartId": 48370001,
+    "gridCRS": "EPSG:25832",
+    "gridExtent": [
+      620000,
+      820000,
+      5060000,
+      5220000
+    ],
+    "gridName": "ETRS89 / UTM 32N",
+    "gridSource": "utm-grid",
+    "id": "dolomites",
+    "inspectionNames": [
+      "Bolzano",
+      "Trento",
+      "Belluno"
+    ],
+    "label": "Dolomites",
+    "mapVersion": "2.0.0",
+    "maxzoom": 14,
+    "minorWaterwayMinzoom": 10,
+    "minzoom": 4,
+    "name": "OpenBareMap Dolomites",
+    "nativeLanguage": "it",
+    "projectedCRS": "EPSG:25832",
+    "sourceBaseOverrides": {
+      "austria": "https://download.geofabrik.de/europe/"
+    },
+    "sourceBaseURL": "https://download.geofabrik.de/europe/italy/",
+    "sourceDate": "2026-11-04",
+    "sourceSlugs": [
+      "nord-est",
+      "nord-ovest",
+      "austria"
+    ],
+    "styleRevision": "2.0.0-dolomites-r1",
+    "terrainBounds": [
+      10,
+      45,
+      14,
+      48
+    ],
+    "townlands": false
+  },
+  "source": {
+    "bytes": 283475522,
+    "operation": "Complete-feature bbox extraction with nested relation references, then libosmium sorted merge; duplicate OSM objects resolved by version",
+    "path": "data/regions/dolomites/dolomites-261104.osm.pbf",
+    "replicationTimestamp": "2026-11-04T21:21:03Z",
+    "sha256": "a835d74e63c7c4520870d2890de805b4ae628898588f6e1e1ad5cdeef1d9af63",
+    "snapshot_date": "2026-11-04",
+    "url": null
+  },
+  "status": "validated vector build",
+  "toolchain": {
+    "sha256": "d43847b5d5662b9139461921d55bfab56f3db2098946209a5c7a26b03255b123",
+    "version": "tilemaker v3.1.0+ge16203e4e2fb"
+  },
+  "validation": {
+    "empty_tile_count": 1,
+    "logical_tiles_sha256": "24ac98e57a781545d2800222c77cd430052b0d96d2222a903fb859499b78c467",
+    "tile_count": 13259
+  }
+}

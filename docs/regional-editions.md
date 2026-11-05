@@ -141,3 +141,23 @@ For merged cropped inputs, the Garmin splitter derives bounds from actual nodes
 (`--ignore-osm-bounds=true`) before applying the requested coverage polygon. A
 split-plan check requires every destination anchor before native compilation;
 this prevents a primary input's inherited PBF header bounds truncating the union.
+
+
+## Dolomites scope
+
+The Dolomites edition uses the approved rectangle 10.65–13.10°E, 45.70–47.00°N.
+The dated 4 November 2026 Nord-Est, Nord-Ovest and Austria Geofabrik extracts
+are verified against upstream checksums and a shared replication timestamp.
+Complete features and their references are retained at the crop before merging.
+Nord-Ovest supplies the small southwest corner of the rectangle.
+
+It uses the shared 20 m contours, 100 m index contours, multidirectional warm
+hillshade, transport colours, line weights and visibility rules. The metre grid
+is ETRS89 / UTM 32N. Original place names use Italian fallback.
+
+Run `PYTHONPATH=work/python python3 scripts/run_full_region.py --region dolomites`.
+Regional resources and locks use `regions/dolomites/`, selected databases use
+`releases/dolomites/2.0.0/maps/`, and native family 4837 reserves tile IDs
+48370001–48379999. Native backgrounds use the approved rectangular crop.
+All public previews share the six-edition catalog in `config/preview-regions.json`;
+Region changes edition and Explore selects a destination within that edition.

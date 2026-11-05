@@ -67,7 +67,7 @@ def landcover(source,destination,bounds=None):
             if old.is_valid and new.is_valid and old.area and abs(new.area-old.area)/old.area<=.02:
                 geometry=candidate;counts['smoothed']+=1
             else:geometry=original;counts['retained']+=1
-            props={k.replace(':','_'):v for k,v in tags.items() if k in ('wetland','natural','landuse','name','name:en','name:cy','name:gd','name:es','name:fr','official_name','short_name')};props['class']=cl
+            props={k.replace(':','_'):v for k,v in tags.items() if k in ('wetland','natural','landuse','name','name:en','name:cy','name:gd','name:es','name:fr','name:it','name:de','official_name','short_name')};props['class']=cl
             out.add(geometry,props)
     Handler().apply_file(str(source),locations=True,idx='flex_mem');out.close()
     if not out.count:raise ValueError('No landcover')
@@ -101,4 +101,4 @@ def build(region,topography):
     print(json.dumps(counts),flush=True)
 
 if __name__=='__main__':
-    p=argparse.ArgumentParser();p.add_argument('--region',choices=['england-wales','scotland','sierra-nevada','pyrenees'],required=True);a=p.parse_args();build(a.region,ROOT/'build'/(a.region+'-topography'))
+    p=argparse.ArgumentParser();p.add_argument('--region',choices=['england-wales','scotland','sierra-nevada','pyrenees','dolomites'],required=True);a=p.parse_args();build(a.region,ROOT/'build'/(a.region+'-topography'))

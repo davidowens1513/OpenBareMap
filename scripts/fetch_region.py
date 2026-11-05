@@ -141,7 +141,7 @@ def fetch_dem_padding(region):
     print('Garmin DEM padding locked:',len(assets),'additional cells',flush=True)
 
 if __name__=='__main__':
-    parser=argparse.ArgumentParser();parser.add_argument('--region',choices=['england-wales','scotland','sierra-nevada','pyrenees'],required=True);parser.add_argument('--stage',choices=['osm','terrain','padding','all'],default='all');args=parser.parse_args()
+    parser=argparse.ArgumentParser();parser.add_argument('--region',choices=['england-wales','scotland','sierra-nevada','pyrenees','dolomites'],required=True);parser.add_argument('--stage',choices=['osm','terrain','padding','all'],default='all');args=parser.parse_args()
     if args.stage=='padding':fetch_dem_padding(args.region)
     if args.stage in ('terrain','all'):fetch_terrain(args.region)
     if args.stage in ('osm','all'):fetch_osm(args.region)

@@ -118,7 +118,7 @@ class MapServer(ThreadingHTTPServer):
 def main():
     parser=argparse.ArgumentParser()
     parser.add_argument('--port',type=int,default=8765)
-    parser.add_argument('--region',choices=['ireland','england-wales','scotland','sierra-nevada','pyrenees'],default='ireland')
+    parser.add_argument('--region',choices=['ireland','england-wales','scotland','sierra-nevada','pyrenees','dolomites'],default='ireland')
     parser.add_argument('--database',type=Path,help='Optional override for the base vector database')
     args=parser.parse_args()
     from regions import active_map, profile

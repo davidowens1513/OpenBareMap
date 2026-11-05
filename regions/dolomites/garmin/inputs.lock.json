@@ -1,0 +1,20 @@
+{
+  "inputs": [
+    {
+      "path": "regions/dolomites/garmin/inputs/contours.geojson.gz",
+      "sha256": "dd660370c52078ff28fcd4ad52b9a5306a7b3368afc88c4f1b82158cfdbb1a26",
+      "uncompressedSHA256": "9efeee3d7bf6edcc1738b9407f445d343e10cb41a5b04d7a164ff45880917045"
+    },
+    {
+      "path": "regions/dolomites/garmin/inputs/landcover.geojson.gz",
+      "sha256": "ec878b7085f4877dd0c28d83545b8e7183d80c562d7639ccc052f550961d50af",
+      "uncompressedSHA256": "8d61174553539bcd00cfabf09c71486fd37195d3bc892ad7cc5ba3cfcf8f0dc0"
+    },
+    {
+      "path": "regions/dolomites/garmin/inputs/land.geojson.gz",
+      "sha256": "e1ee70f7bdcc6b1856de4aaec472b7e9844565f42e50fb516b10cd51431459e5",
+      "uncompressedSHA256": "6e438461c3244eae2c425195268bb09e0126bf19eed1ab69039c2ef8137f35c0"
+    }
+  ],
+  "region": "dolomites"
+}

@@ -1,6 +1,7 @@
 {
   "format": "openbaremap-app-bundle-catalog-v1",
   "mapVersions": {
+    "dolomites": "2.0.0",
     "england-wales": "2.0.1",
     "ireland": "2.0.0",
     "pyrenees": "2.0.0",
@@ -8,6 +9,76 @@
     "sierra-nevada": "2.0.0"
   },
   "regions": {
+    "dolomites": {
+      "android": {
+        "bytes": 855063423,
+        "datasets": {
+          "basemap": {
+            "path": "maps/basemap.mbtiles",
+            "sha256": "fdbf05ef3cf7a9128d317fee351b3bb4fd5bbdb2d7673d36fd5cf97b68e1174c"
+          },
+          "coast": {
+            "derivedFrom": "68a552d522566b2489f8cb692b6835dbf8b0d8696be4858387d0fc55d31fed4b",
+            "path": "maps/coast.mbtiles",
+            "sha256": "07006ed7386c9e29e9d142ef69f5f2fdead0fcca5d91736ef7cdd607a67d1411"
+          },
+          "grid": {
+            "path": "maps/grid.mbtiles",
+            "sha256": "c50ff7859253da33995da17d9c0bc2daff8b0c9660b83fdcfb261aa0d19ffbfb"
+          },
+          "hillshade": {
+            "path": "maps/hillshade.mbtiles",
+            "sha256": "6633dc950536cef2a123259756f90fa39ef102ff315cbdde70616e7e474c8213"
+          },
+          "topography": {
+            "path": "maps/topography.mbtiles",
+            "sha256": "68a552d522566b2489f8cb692b6835dbf8b0d8696be4858387d0fc55d31fed4b"
+          }
+        },
+        "instructionsSHA256": "1841138f8ee1649c73905ec54b1d403f5365ce2aeef8f3c10c1c5e0642f44699",
+        "instructionsURL": "https://downloads.appsbyonzy.dev/OpenBareMap/dolomites/2.0.0/app-bundles-v1/android/instructions.txt",
+        "localPath": "releases/dolomites/2.0.0/app-bundles-v1/android/OpenBareMap-Dolomites-Android-Bundle.zip",
+        "mapManifestSHA256": "f3247931f45a1f8c0271c82db1bdd2f20d9004074a5029ba9e20eaa743ad6995",
+        "r2Key": "OpenBareMap/dolomites/2.0.0/app-bundles-v1/android/OpenBareMap-Dolomites-Android-Bundle.zip",
+        "sha256": "d1945d53ad3bad251132d3d6d6d660c1c28e6e965b6eab3804652e66db506b67",
+        "url": "https://downloads.appsbyonzy.dev/OpenBareMap/dolomites/2.0.0/app-bundles-v1/android/OpenBareMap-Dolomites-Android-Bundle.zip"
+      },
+      "ios": {
+        "bytes": 855062884,
+        "datasets": {
+          "basemap": {
+            "path": "maps/basemap.mbtiles",
+            "sha256": "fdbf05ef3cf7a9128d317fee351b3bb4fd5bbdb2d7673d36fd5cf97b68e1174c"
+          },
+          "coast": {
+            "derived_from": "68a552d522566b2489f8cb692b6835dbf8b0d8696be4858387d0fc55d31fed4b",
+            "maxzoom": 12,
+            "operation": "Preserve land-layer MVT bytes only through zoom 12; omit other layers.",
+            "path": "maps/coast.mbtiles",
+            "sha256": "07006ed7386c9e29e9d142ef69f5f2fdead0fcca5d91736ef7cdd607a67d1411"
+          },
+          "grid": {
+            "path": "maps/grid.mbtiles",
+            "sha256": "c50ff7859253da33995da17d9c0bc2daff8b0c9660b83fdcfb261aa0d19ffbfb"
+          },
+          "hillshade": {
+            "path": "maps/hillshade.mbtiles",
+            "sha256": "6633dc950536cef2a123259756f90fa39ef102ff315cbdde70616e7e474c8213"
+          },
+          "topography": {
+            "path": "maps/topography.mbtiles",
+            "sha256": "68a552d522566b2489f8cb692b6835dbf8b0d8696be4858387d0fc55d31fed4b"
+          }
+        },
+        "instructionsSHA256": "967dd599ac78b036e5484df8111453e5b7c27572be2b071ff4fc59bce31a844b",
+        "instructionsURL": "https://downloads.appsbyonzy.dev/OpenBareMap/dolomites/2.0.0/app-bundles-v1/ios/instructions.txt",
+        "localPath": "releases/dolomites/2.0.0/app-bundles-v1/ios/OpenBareMap-Dolomites-iOS-Bundle.zip",
+        "mapManifestSHA256": "35de5a331260ecf7a6f08622a17e7b5b7e2e3559a4834deadb6720d5ebd169bf",
+        "r2Key": "OpenBareMap/dolomites/2.0.0/app-bundles-v1/ios/OpenBareMap-Dolomites-iOS-Bundle.zip",
+        "sha256": "343ffaf2fd9d3ef98a540abd8f2014621d0bb04e32af3d1c84b64cabd704a662",
+        "url": "https://downloads.appsbyonzy.dev/OpenBareMap/dolomites/2.0.0/app-bundles-v1/ios/OpenBareMap-Dolomites-iOS-Bundle.zip"
+      }
+    },
     "england-wales": {
       "android": {
         "bytes": 3483104475,
@@ -359,5 +430,5 @@
       }
     }
   },
-  "sourceCommit": "aff4b3d09bdd10e795b88d1261bf485aab740adf"
+  "sourceCommit": "2d5e359fc1a204990daaabc32d00c69272ebae7f"
 }

@@ -3,7 +3,7 @@
 import argparse,json,shutil,sys,zipfile,hashlib
 from pathlib import Path
 from concurrent.futures import ThreadPoolExecutor
-from regions import ROOT,profile,active_map
+from regions import ROOT,profile,active_map,REGIONS
 from openbaremap import digest,write
 from package_resources import copy_map_file
 
@@ -47,7 +47,7 @@ def archive_tree(payload,target):
         if archive.testzip():raise ValueError('Archive CRC failure')
 
 def build_one(region,output,platforms=('ios','android')):
-    p=profile(region);records={};title={'ireland':'Ireland','england-wales':'England-Wales','scotland':'Scotland','sierra-nevada':'Sierra-Nevada','pyrenees':'Pyrenees'}[region]
+    p=profile(region);records={};title={'ireland':'Ireland','england-wales':'England-Wales','scotland':'Scotland','sierra-nevada':'Sierra-Nevada','pyrenees':'Pyrenees','dolomites':'Dolomites'}[region]
     directory=output/region;directory.mkdir(parents=True,exist_ok=True)
     if (directory/'manifest.json').exists():records=json.loads((directory/'manifest.json').read_text())
     for platform,folder in [('ios','OpenBareMap.bundle'),('android','OpenBareMap')]:
@@ -99,9 +99,9 @@ def build_one(region,output,platforms=('ios','android')):
     return region,records
 
 if __name__=='__main__':
-    parser=argparse.ArgumentParser();parser.add_argument('--output',type=Path,default=ROOT/'work'/VERSION);parser.add_argument('--platforms',nargs='+',choices=['ios','android'],default=['ios','android']);parser.add_argument('--regions',nargs='+',choices=['ireland','england-wales','scotland','sierra-nevada','pyrenees'],default=['ireland','england-wales','scotland','sierra-nevada']);args=parser.parse_args();args.output=args.output.resolve();args.output.mkdir(parents=True,exist_ok=True)
+    parser=argparse.ArgumentParser();parser.add_argument('--output',type=Path,default=ROOT/'work'/VERSION);parser.add_argument('--platforms',nargs='+',choices=['ios','android'],default=['ios','android']);parser.add_argument('--regions',nargs='+',choices=REGIONS,default=list(REGIONS));args=parser.parse_args();args.output=args.output.resolve();args.output.mkdir(parents=True,exist_ok=True)
     with ThreadPoolExecutor(max_workers=2) as pool:records=dict(pool.map(lambda r:build_one(r,args.output,args.platforms),args.regions))
-    records={region:json.loads((args.output/region/'manifest.json').read_text()) for region in ['ireland','england-wales','scotland','sierra-nevada','pyrenees'] if (args.output/region/'manifest.json').exists()}
+    records={region:json.loads((args.output/region/'manifest.json').read_text()) for region in REGIONS if (args.output/region/'manifest.json').exists()}
     dest=ROOT/'distribution'/VERSION;dest.mkdir(exist_ok=True)
     existing=json.loads((dest/'catalog.json').read_text())['regions'] if (dest/'catalog.json').exists() else {}
     records={**existing,**records}

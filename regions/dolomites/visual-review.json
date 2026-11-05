@@ -1,0 +1,280 @@
+{
+  "region": "dolomites",
+  "storageRevision": "2.0.0-dolomites-r3",
+  "review": "Browser visual review; native device rendering requires restart and on-screen review",
+  "views": [
+    {
+      "view": "overview",
+      "state": {
+        "ready": true,
+        "errors": [],
+        "status": "Loading local map\u2026"
+      },
+      "renderedLayers": {
+        "place": 5,
+        "ferry": 32,
+        "transportation": 78866,
+        "railway": 5608,
+        "contour": 9757,
+        "waterway": 3486,
+        "boundary": 604,
+        "water": 4721,
+        "landcover": 177364,
+        "land": 35
+      },
+      "screenshot": "regions/dolomites/review/overview.png",
+      "centerZoom": {
+        "center": {
+          "lng": 11.586398978170678,
+          "lat": 46.35386532447001
+        },
+        "zoom": 8.439522892382088
+      }
+    },
+    {
+      "view": "cortina",
+      "state": {
+        "ready": true,
+        "errors": [],
+        "status": "Local map \u00b7 zoom 8.4 \u00b7 ready"
+      },
+      "renderedLayers": {
+        "place": 142,
+        "hiking_poi": 97,
+        "mountain": 259,
+        "grid_10km": 14,
+        "grid_1km": 126,
+        "transportation_name": 1,
+        "hiking_route": 268,
+        "cycling_route": 22,
+        "transportation": 4739,
+        "contour": 1827,
+        "waterway": 246,
+        "boundary": 9,
+        "water": 34,
+        "natural_line": 45,
+        "landcover": 2196,
+        "land": 15
+      },
+      "screenshot": "regions/dolomites/review/cortina.png",
+      "centerZoom": {
+        "center": {
+          "lng": 12.1357,
+          "lat": 46.5405
+        },
+        "zoom": 12
+      }
+    },
+    {
+      "view": "brenta",
+      "state": {
+        "ready": true,
+        "errors": [],
+        "status": "Local map \u00b7 zoom 12.0 \u00b7 ready"
+      },
+      "renderedLayers": {
+        "place": 141,
+        "hiking_poi": 111,
+        "mountain": 204,
+        "grid_10km": 15,
+        "grid_1km": 121,
+        "transportation_name": 1,
+        "hiking_route": 180,
+        "cycling_route": 10,
+        "transportation": 5716,
+        "contour": 1855,
+        "waterway": 351,
+        "water": 48,
+        "natural_line": 358,
+        "landcover": 2453,
+        "land": 15
+      },
+      "screenshot": "regions/dolomites/review/brenta.png",
+      "centerZoom": {
+        "center": {
+          "lng": 10.89,
+          "lat": 46.17
+        },
+        "zoom": 12
+      }
+    },
+    {
+      "view": "marmolada",
+      "state": {
+        "ready": true,
+        "errors": [],
+        "status": "Local map \u00b7 zoom 12.0 \u00b7 ready"
+      },
+      "renderedLayers": {
+        "hiking_poi": 51,
+        "poi": 26,
+        "place": 32,
+        "mountain": 98,
+        "water_name": 1,
+        "grid_10km": 6,
+        "grid_1km": 62,
+        "transportation_name": 1,
+        "hiking_route": 79,
+        "transportation": 797,
+        "building": 511,
+        "contour": 1099,
+        "waterway": 88,
+        "boundary": 9,
+        "water": 12,
+        "natural_line": 72,
+        "landcover": 427,
+        "land": 4
+      },
+      "screenshot": "regions/dolomites/review/marmolada.png",
+      "centerZoom": {
+        "center": {
+          "lng": 11.862,
+          "lat": 46.435
+        },
+        "zoom": 13
+      }
+    },
+    {
+      "view": "tre-cime",
+      "state": {
+        "ready": true,
+        "errors": [],
+        "status": "Local map \u00b7 zoom 13.0 \u00b7 ready"
+      },
+      "renderedLayers": {
+        "hiking_poi": 92,
+        "poi": 29,
+        "place": 14,
+        "mountain": 112,
+        "water_name": 6,
+        "grid_10km": 11,
+        "grid_1km": 54,
+        "hiking_route": 95,
+        "cycling_route": 6,
+        "transportation": 825,
+        "building": 194,
+        "contour": 890,
+        "waterway": 113,
+        "boundary": 8,
+        "water": 18,
+        "natural_line": 40,
+        "landcover": 1189,
+        "land": 4
+      },
+      "screenshot": "regions/dolomites/review/tre-cime.png",
+      "centerZoom": {
+        "center": {
+          "lng": 12.3,
+          "lat": 46.619
+        },
+        "zoom": 13
+      }
+    },
+    {
+      "view": "friulian-dolomites",
+      "state": {
+        "ready": true,
+        "errors": [],
+        "status": "Local map \u00b7 zoom 13.0 \u00b7 ready"
+      },
+      "renderedLayers": {
+        "place": 199,
+        "hiking_poi": 41,
+        "mountain": 264,
+        "grid_10km": 14,
+        "grid_1km": 128,
+        "hiking_route": 81,
+        "transportation": 1108,
+        "contour": 1669,
+        "waterway": 508,
+        "boundary": 10,
+        "water": 8,
+        "natural_line": 22,
+        "landcover": 820,
+        "land": 12
+      },
+      "screenshot": "regions/dolomites/review/friulian-dolomites.png",
+      "centerZoom": {
+        "center": {
+          "lng": 12.58,
+          "lat": 46.32
+        },
+        "zoom": 12
+      }
+    },
+    {
+      "view": "bolzano",
+      "state": {
+        "ready": true,
+        "errors": [],
+        "status": "Local map \u00b7 zoom 12.0 \u00b7 ready"
+      },
+      "renderedLayers": {
+        "place": 454,
+        "station": 4,
+        "hiking_poi": 112,
+        "mountain": 49,
+        "grid_10km": 10,
+        "grid_1km": 98,
+        "transportation_name": 2,
+        "hiking_route": 335,
+        "cycling_route": 41,
+        "transportation": 23501,
+        "railway": 483,
+        "contour": 1040,
+        "waterway": 457,
+        "boundary": 4,
+        "water": 225,
+        "natural_line": 254,
+        "landcover": 3024,
+        "land": 8
+      },
+      "screenshot": "regions/dolomites/review/bolzano.png",
+      "centerZoom": {
+        "center": {
+          "lng": 11.3548,
+          "lat": 46.4983
+        },
+        "zoom": 12
+      }
+    },
+    {
+      "view": "lienz",
+      "state": {
+        "ready": true,
+        "errors": [],
+        "status": "Local map \u00b7 zoom 12.0 \u00b7 ready"
+      },
+      "renderedLayers": {
+        "place": 131,
+        "station": 4,
+        "hiking_poi": 57,
+        "mountain": 71,
+        "grid_10km": 11,
+        "grid_1km": 128,
+        "transportation_name": 5,
+        "hiking_route": 79,
+        "cycling_route": 19,
+        "transportation": 14774,
+        "railway": 172,
+        "contour": 1353,
+        "waterway": 1166,
+        "boundary": 6,
+        "water": 262,
+        "natural_line": 44,
+        "landcover": 4646,
+        "land": 12
+      },
+      "screenshot": "regions/dolomites/review/lienz.png",
+      "centerZoom": {
+        "center": {
+          "lng": 12.769,
+          "lat": 46.828
+        },
+        "zoom": 12
+      }
+    }
+  ],
+  "visualReviewComplete": true,
+  "reviewedScope": "Overview and seven detailed views checked for terrain, contours, transport, names and edge coverage; no browser map errors"
+}

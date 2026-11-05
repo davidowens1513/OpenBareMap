@@ -3,12 +3,13 @@
 The regional previews use the full accepted maps, with separate entry pages and PMTiles archives. They do not load or modify a BareGPS app.
 
 - [Ireland preview](https://downloads.appsbyonzy.dev/OpenBareMap/preview-v2/ireland/index.html)
-- [England & Wales preview](https://downloads.appsbyonzy.dev/OpenBareMap/preview-v2/england-wales/index.html)
+- [England & Wales preview](https://downloads.appsbyonzy.dev/OpenBareMap/england-wales/2.0.1/preview/england-wales/index.html)
 - [Sierra Nevada preview](https://downloads.appsbyonzy.dev/OpenBareMap/preview-v2/sierra-nevada/index.html)
+- [Dolomites preview](https://downloads.appsbyonzy.dev/OpenBareMap/dolomites/2.0.0/preview/dolomites/index.html)
 - [Pyrenees preview](https://downloads.appsbyonzy.dev/OpenBareMap/pyrenees/2.0.0/preview/pyrenees/index.html)
 - [Scotland preview](https://downloads.appsbyonzy.dev/OpenBareMap/preview-v2/scotland/index.html)
 
-Each provides pan/zoom, regional destinations, a collapsible regional key with a clickable full-size, zoomable legend and source notices. Website buttons open the chosen region directly. Both device downloads and native app-resource exports remain separate from these online previews.
+Each provides a Region dropdown with all six editions, an Explore destination dropdown, pan/zoom, a collapsible regional key with a clickable full-size, zoomable legend and source notices. Website buttons open the chosen region directly. Both device downloads and native app-resource exports remain separate from these online previews.
 
 ## Rebuild
 
@@ -33,7 +34,7 @@ Links require no server-side map code:
 
 ```html
 <a href="https://downloads.appsbyonzy.dev/OpenBareMap/preview-v2/ireland/index.html">Preview Ireland</a>
-<a href="https://downloads.appsbyonzy.dev/OpenBareMap/preview-v2/england-wales/index.html">Preview England &amp; Wales</a>
+<a href="https://downloads.appsbyonzy.dev/OpenBareMap/england-wales/2.0.1/preview/england-wales/index.html">Preview England &amp; Wales</a>
 ```
 
 To embed a map, use the corresponding URL in an iframe:
@@ -60,4 +61,6 @@ Upload that directory's files under the existing `OpenBareMap/preview-v2/` prefi
 
 Use `--regions scotland` with the full exporter to build only the new Scotland archives. When publishing into the shared preview prefix, retain other editions and merge their manifest records; do not replace the shared manifest with a single-edition inventory.
 
-The Pyrenees preview uses its own versioned prefix, includes Monte Perdido / Mont Perdu, and preserves the existing map colours, line weights, hillshade and full-size key.
+The Pyrenees and Dolomites previews use their own versioned prefixes. All previews preserve the shared map colours, line weights, hillshade and full-size regional key.
+
+`config/preview-regions.json` is the shared catalog for Region options and their canonical public URLs. Packaging a single edition still includes every region in the menu. UI-only updates must also be applied to the versioned England/Wales, Pyrenees and Dolomites prefixes, and to the older England/Wales entry under `preview-v2`. Copy only reviewed UI files to existing releases; preserve map profiles, styles and data archives.
