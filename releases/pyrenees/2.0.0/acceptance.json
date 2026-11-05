@@ -45,12 +45,15 @@
   },
   "localPreviewURL": "http://127.0.0.1:8769",
   "webPreviewExport": "work/pyrenees-web-2.0.0/manifest.json",
-  "publication": "All platform downloads and preview published and verified; main website deployment pending access",
+  "publication": "Website, all platform downloads and public preview published and verified",
   "publicPreviewURL": "https://downloads.appsbyonzy.dev/OpenBareMap/pyrenees/2.0.0/preview/pyrenees/index.html",
   "deviceInstallations": {
     "path": "regions/pyrenees/garmin/device-installations.json",
     "sha256": "4310002daa9d07cf6c4ac805ac020a0eb449ca7b779a77c588b05a5d52b772e8",
     "verifiedDevices": 3,
     "fullReadbackVerified": true
-  }
+  },
+  "websiteURL": "https://appsbyonzy.dev/#openbaremap",
+  "websiteDeploymentId": "32845544-671c-44e2-bd25-e8db50ae1e6b",
+  "gitReleaseCommit": "5bd4539a1e4e4e1740994f6d572af19ed26ce19a"
 }

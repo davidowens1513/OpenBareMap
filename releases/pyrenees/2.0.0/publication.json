@@ -7,14 +7,26 @@
   "browserChecks": "web-preview/verification/pyrenees-publication-browser.json",
   "website": {
     "url": "https://appsbyonzy.dev",
-    "status": "Prepared, desktop/mobile checked; deployment access pending",
+    "status": "Production deployed and custom-domain content verified",
     "source": "web-preview/site/index.html",
-    "deploymentArchive": "/Users/davidowens/Documents/ChatGPT/appsbyonzy.dev/outputs/baregps-cloudflare.zip"
+    "deploymentArchive": "/Users/davidowens/Documents/ChatGPT/appsbyonzy.dev/outputs/baregps-cloudflare.zip",
+    "deploymentId": "32845544-671c-44e2-bd25-e8db50ae1e6b",
+    "deploymentURL": "https://32845544.appsbyonzy.pages.dev",
+    "verifiedUTC": "2026-11-05T22:28:37.724895+00:00",
+    "mainContentMatchesReviewedSource": true,
+    "allPlatformLinksPresent": true
   },
   "deviceInstallations": {
     "path": "regions/pyrenees/garmin/device-installations.json",
     "sha256": "4310002daa9d07cf6c4ac805ac020a0eb449ca7b779a77c588b05a5d52b772e8",
     "verifiedDevices": 3,
     "fullReadbackVerified": true
+  },
+  "git": {
+    "repository": "https://github.com/davidowens1513/OpenBareMap",
+    "releaseCommit": "5bd4539a1e4e4e1740994f6d572af19ed26ce19a",
+    "remoteVerified": true,
+    "platformArchivesTrackedWithGitLFS": true,
+    "verifiedUTC": "2026-11-05T22:31:29.540226+00:00"
   }
 }
