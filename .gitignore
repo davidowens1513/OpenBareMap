@@ -104,3 +104,19 @@ data/regions/sierra-nevada/boundary/*
 /scripts/build_ireland_hiking_visibility.py
 
 /releases/england-wales/2.0.1/maps/basemap.mbtiles
+
+# Pyrenees locked source inputs, matching the other regional editions.
+!data/regions/pyrenees/
+data/regions/pyrenees/*
+!data/regions/pyrenees/*.osm.pbf
+!data/regions/pyrenees/*.poly
+!data/regions/pyrenees/*.extract.json
+!data/regions/pyrenees/elevation/
+data/regions/pyrenees/elevation/*
+!data/regions/pyrenees/elevation/*.hgt.gz
+
+# Reproducible Pyrenees intermediates; only selected release maps are pinned.
+/data/regions/pyrenees/*.clipped.osm.pbf
+/regions/pyrenees/garmin/coastal-context/
+/releases/pyrenees/2.0.0/maps/topography.mbtiles
+/releases/pyrenees/2.0.0/maps/topography-context.mbtiles

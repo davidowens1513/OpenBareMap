@@ -1,0 +1,26 @@
+{
+  "feature_instances_by_layer": {
+    "grid_10km": 23578,
+    "grid_1km": 210180
+  },
+  "metadata": {
+    "bounds": "-2.200000,41.900000,3.400000,43.900000",
+    "center": "0.600000,42.900000,9",
+    "description": "Full Pyrenees from Atlantic to Mediterranean, including Bayonne, French and Spanish slopes and Andorra; bounds 2.2\u00b0W\u20133.4\u00b0E, 41.9\u00b0N\u201343.9\u00b0N. Complete OSM features retained at the edge.",
+    "format": "pbf",
+    "json": "{\"vector_layers\": [{\"id\": \"grid_10km\", \"fields\": {\"axis\": \"String\", \"label\": \"String\", \"metres\": \"Number\"}, \"minzoom\": 10, \"maxzoom\": 14}, {\"id\": \"grid_1km\", \"fields\": {\"axis\": \"String\", \"label\": \"String\", \"metres\": \"Number\"}, \"minzoom\": 12, \"maxzoom\": 14}]}",
+    "maxzoom": "14",
+    "minzoom": "10",
+    "name": "ETRS89 / UTM 31N",
+    "type": "baselayer",
+    "version": "2.0.0"
+  },
+  "note": "Feature instances include repetition across tiles and zooms; not unique OSM objects. This checks MVT framing and layer presence, not geometry or cartographic correctness.",
+  "tiles_by_zoom": {
+    "10": 153,
+    "11": 561,
+    "12": 2144,
+    "13": 8255,
+    "14": 32255
+  }
+}

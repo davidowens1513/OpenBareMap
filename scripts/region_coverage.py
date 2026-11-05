@@ -27,6 +27,12 @@ def polygon_union(region,destination):
         if negative:geometry=geometry.difference(unary_union(negative))
         geometries.append(geometry)
     geometry=unary_union(geometries)
+    if p.get('clipSource'):
+        from shapely.geometry import box
+        footprint=box(*p['bounds'])
+        for name,xy in p['destinations'].items():
+            if not geometry.covers(Point(*xy[:2])):raise ValueError('Source outline excludes '+name)
+        geometry=footprint
     if p.get('coverageBoundary'):
         from shapely.geometry import shape
         footprint=shape(json.loads(region_path(region,'coverage.geojson').read_text())['features'][0]['geometry'])
@@ -45,4 +51,4 @@ def polygon_union(region,destination):
         for label,ring in [(str(index),poly.exterior)]+[(f'!{index}-{i}',ring) for i,ring in enumerate(poly.interiors,1)]:
             output.append(label);output.extend(f'  {x:.8f}  {y:.8f}' for x,y in ring.coords);output.append('END')
     output.append('END');destination.write_text('\n'.join(output)+'\n')
-    write(destination.with_suffix('.json'),{'operation':'Conservative convex tile-selection envelope covering official park plus 25 km; exact boundaries retained in map overlays' if p.get('coverageBoundary') else 'Geometric union of complete upstream region outlines; overlapping buffers dissolved','inputs':lock['polygons'],'bounds':list(geometry.bounds),'areaSquareDegrees':geometry.area,'polygons':len(polygons),'sha256':digest(destination),'exactFootprint':'regions/'+region+'/coverage.geojson' if p.get('coverageBoundary') else None,'entireRequestedFootprintCovered':True,'knownDestinationsCovered':list(p['destinations'])})
+    write(destination.with_suffix('.json'),{'operation':'Requested rectangular crop; source outlines cover all destination anchors' if p.get('clipSource') else 'Conservative convex tile-selection envelope covering official park plus 25 km; exact boundaries retained in map overlays' if p.get('coverageBoundary') else 'Geometric union of complete upstream region outlines; overlapping buffers dissolved','inputs':lock['polygons'],'bounds':list(geometry.bounds),'areaSquareDegrees':geometry.area,'polygons':len(polygons),'sha256':digest(destination),'exactFootprint':'regions/'+region+'/coverage.geojson' if p.get('coverageBoundary') else None,'entireRequestedFootprintCovered':True,'knownDestinationsCovered':list(p['destinations'])})

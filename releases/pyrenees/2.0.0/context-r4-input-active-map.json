@@ -1,0 +1,52 @@
+{
+  "contourIntervalMetres": 20,
+  "coverage": "Full Pyrenees from Atlantic to Mediterranean, including Bayonne, French and Spanish slopes and Andorra; bounds 2.2\u00b0W\u20133.4\u00b0E, 41.9\u00b0N\u201343.9\u00b0N. Complete OSM features retained at the edge.",
+  "datasets": {
+    "basemap": {
+      "bytes": 1036873728,
+      "path": "releases/pyrenees/2.0.0/maps/basemap.mbtiles",
+      "sha256": "d30cf7a1046b0260731d088b984f650ae2d217a1b46cbce0c69bd0297399dfb6",
+      "validation": {
+        "empty_tile_count": 31,
+        "logical_tiles_sha256": "502a950a1440aad73350a3e58a2eb823f6aae6567f1aa7ea8fb2c173b52f1cb4",
+        "tile_count": 40490
+      }
+    },
+    "grid": {
+      "bytes": 15597568,
+      "path": "releases/pyrenees/2.0.0/maps/grid.mbtiles",
+      "sha256": "2403c0d15c957a8043452ca705cec54f0c22421e09a5332d6d30bd116215dfbc",
+      "validation": {
+        "empty_tile_count": 0,
+        "logical_tiles_sha256": "365fc567965cb8b75fc669042ad92c3292c457b5d5755d0d0b30dd3fc9d10500",
+        "tile_count": 43368
+      }
+    },
+    "hillshade": {
+      "bytes": 170639360,
+      "path": "releases/pyrenees/2.0.0/maps/hillshade.mbtiles",
+      "sha256": "22881414cea150df4bd80e0a276bf5a4fe9b66202fdbd01a659790304689e8bc",
+      "validation": {
+        "empty_tile_count": 0,
+        "logical_tiles_sha256": "506d2a20eb2ab4f09caaa73cd19ecc6aecdabe502a17a23369f572f1e59c236f",
+        "tile_count": 3851
+      }
+    },
+    "topography": {
+      "bytes": 504811520,
+      "path": "releases/pyrenees/2.0.0/maps/topography-context.mbtiles",
+      "sha256": "939206e41e5143590a3363b758c0dfcd74392ca4d91cc34de3b232c12ffe2c84",
+      "validation": {
+        "empty_tile_count": 15098,
+        "logical_tiles_sha256": "b8198b15ebd8be4cb7aaeb7faef2e29ce9ea7a2563b341fc50070509a915b3fd",
+        "tile_count": 57112
+      }
+    }
+  },
+  "format": "openbaremap-development-viewer-v1",
+  "localBorders": false,
+  "mapVersion": "2.0.0",
+  "region": "pyrenees",
+  "storageRevision": "2.0.0-pyrenees-r3",
+  "styleRevision": "2.0.0-pyrenees-r1"
+}

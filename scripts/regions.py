@@ -4,7 +4,7 @@ import json
 from pathlib import Path
 from openbaremap import ROOT
 
-REGIONS = ('ireland', 'england-wales', 'scotland', 'sierra-nevada')
+REGIONS = ('ireland', 'england-wales', 'scotland', 'sierra-nevada', 'pyrenees')
 
 def profile(region='ireland'):
     if region not in REGIONS:

@@ -5,6 +5,7 @@ The regional previews use the full accepted maps, with separate entry pages and 
 - [Ireland preview](https://downloads.appsbyonzy.dev/OpenBareMap/preview-v2/ireland/index.html)
 - [England & Wales preview](https://downloads.appsbyonzy.dev/OpenBareMap/preview-v2/england-wales/index.html)
 - [Sierra Nevada preview](https://downloads.appsbyonzy.dev/OpenBareMap/preview-v2/sierra-nevada/index.html)
+- [Pyrenees preview](https://downloads.appsbyonzy.dev/OpenBareMap/pyrenees/2.0.0/preview/pyrenees/index.html)
 - [Scotland preview](https://downloads.appsbyonzy.dev/OpenBareMap/preview-v2/scotland/index.html)
 
 Each provides pan/zoom, regional destinations, a collapsible regional key with a clickable full-size, zoomable legend and source notices. Website buttons open the chosen region directly. Both device downloads and native app-resource exports remain separate from these online previews.
@@ -58,3 +59,5 @@ python3 scripts/package_preview_ui.py --output /absolute/new/preview-ui
 Upload that directory's files under the existing `OpenBareMap/preview-v2/` prefix, retaining all other files. The full preview builder also includes these pages and images automatically. The legend images come from `app-legend/` for Ireland and `regions/<region>/legend/` for England & Wales, Scotland and Sierra Nevada.
 
 Use `--regions scotland` with the full exporter to build only the new Scotland archives. When publishing into the shared preview prefix, retain other editions and merge their manifest records; do not replace the shared manifest with a single-edition inventory.
+
+The Pyrenees preview uses its own versioned prefix, includes Monte Perdido / Mont Perdu, and preserves the existing map colours, line weights, hillshade and full-size key.

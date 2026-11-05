@@ -138,13 +138,14 @@ def label_glyphs(region):
     for font in (ROOT/'viewer/fonts').iterdir():
         if not font.is_dir():continue
         glyphs=set()
-        required={ord(c) for c in ('ÁáÉéÍíÓóÚúÑñÜü' if region=='sierra-nevada' else 'ÀàÈèÌìÒòÙùÁáÉéÓó' if region=='scotland' else 'ŴŵŶŷ')}
-        filename='0-255.pbf' if region in ('scotland','sierra-nevada') else '256-511.pbf'
-        for n,w,stack in fields((font/filename).read_bytes()):
-            if n==1 and w==2:
-                for number,wire,glyph in fields(stack):
-                    if number==3 and wire==2:
-                        glyphs.update(v for k,t,v in fields(glyph) if k==1 and t==0)
+        required={ord(c) for c in ('ÀàÂâÇçÈèÉéÊêËëÎîÏïÔôÙùÛûÜüŸÿÁáÍíÓóÚúÑñ' if region=='pyrenees' else 'ÁáÉéÍíÓóÚúÑñÜü' if region=='sierra-nevada' else 'ÀàÈèÌìÒòÙùÁáÉéÓó' if region=='scotland' else 'ŴŵŶŷ')}
+        for group in sorted({code//256 for code in required}):
+            filename=f'{group*256}-{group*256+255}.pbf'
+            for n,w,stack in fields((font/filename).read_bytes()):
+                if n==1 and w==2:
+                    for number,wire,glyph in fields(stack):
+                        if number==3 and wire==2:
+                            glyphs.update(v for k,t,v in fields(glyph) if k==1 and t==0)
         if not required.issubset(glyphs):raise ValueError('Missing regional label glyphs: '+font.name)
         result[font.name]=True
     return result
@@ -155,9 +156,9 @@ def validate(region):
         path=ROOT/item['path']
         if digest(path)!=item['sha256']:raise ValueError('Selected dataset changed: '+name)
         output['datasets'][name]=inspect_tiles(path)
-    anchors={name:xy[:2] for name,xy in p['destinations'].items() if name!='island'} if region in ('scotland','sierra-nevada') else None
+    anchors={name:xy[:2] for name,xy in p['destinations'].items() if name!='island'} if region in ('scotland','sierra-nevada','pyrenees') else None
     output['coverageAnchors']=coverage(ROOT/active['datasets']['basemap']['path'],anchors)
-    output['landBackground']=land_coverage(ROOT/active['datasets']['topography']['path'],{name:xy for name,xy in anchors.items() if name!='rockall'} if anchors else None,zoom_levels=range(4,13) if region in ('scotland','sierra-nevada') else range(8,13))
+    output['landBackground']=land_coverage(ROOT/active['datasets']['topography']['path'],{name:xy for name,xy in anchors.items() if name!='rockall'} if anchors else None,zoom_levels=range(4,13) if region in ('scotland','sierra-nevada','pyrenees') else range(8,13))
     if region=='scotland':
         output['smallIslandLandBackground']=land_coverage(ROOT/active['datasets']['topography']['path'],{'rockall':p['destinations']['rockall'][:2]},zoom_levels=[11,12])
     output['detail']={name:detail(ROOT/active['datasets'][name]['path']) for name in ('basemap','topography')}
@@ -201,4 +202,4 @@ def validate(region):
     print('Full '+p['label']+' build, packages and Ireland preservation verified.',flush=True)
 
 if __name__=='__main__':
-    parser=argparse.ArgumentParser();parser.add_argument('--region',choices=['england-wales','scotland','sierra-nevada'],required=True);args=parser.parse_args();validate(args.region)
+    parser=argparse.ArgumentParser();parser.add_argument('--region',choices=['england-wales','scotland','sierra-nevada','pyrenees'],required=True);args=parser.parse_args();validate(args.region)

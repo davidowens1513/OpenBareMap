@@ -1,0 +1,72 @@
+{
+  "layers": {
+    "contour": {
+      "maxzoom": 14,
+      "minzoom": 8,
+      "simplify_below": 13,
+      "simplify_level": 1e-05,
+      "source": "/Volumes/Extreme SSD/Projects/OpenBareMap/build/pyrenees-geometry/contours.geojson",
+      "source_columns": [
+        "elevation"
+      ]
+    },
+    "grid_10km": {
+      "maxzoom": 14,
+      "minzoom": 10,
+      "source": "/Volumes/Extreme SSD/Projects/OpenBareMap/build/pyrenees-geometry/grid_10km.geojson",
+      "source_columns": [
+        "label",
+        "metres",
+        "axis"
+      ]
+    },
+    "grid_1km": {
+      "maxzoom": 14,
+      "minzoom": 12,
+      "source": "/Volumes/Extreme SSD/Projects/OpenBareMap/build/pyrenees-geometry/grid_1km.geojson",
+      "source_columns": [
+        "label",
+        "metres",
+        "axis"
+      ]
+    },
+    "landcover": {
+      "maxzoom": 14,
+      "minzoom": 4,
+      "simplify_below": 14,
+      "simplify_level": 8e-06,
+      "simplify_ratio": 2,
+      "source": "/Volumes/Extreme SSD/Projects/OpenBareMap/build/pyrenees-geometry/landcover.geojson",
+      "source_columns": [
+        "class",
+        "wetland",
+        "natural",
+        "landuse",
+        "name",
+        "name_en",
+        "name_cy",
+        "name_gd",
+        "name_es",
+        "name_fr",
+        "official_name",
+        "short_name"
+      ]
+    }
+  },
+  "settings": {
+    "basezoom": 14,
+    "bounding_box": [
+      -2.2,
+      41.9,
+      3.4,
+      43.9
+    ],
+    "compress": "gzip",
+    "description": "Full Pyrenees from Atlantic to Mediterranean, including Bayonne, French and Spanish slopes and Andorra; bounds 2.2\u00b0W\u20133.4\u00b0E, 41.9\u00b0N\u201343.9\u00b0N. Complete OSM features retained at the edge.",
+    "include_ids": false,
+    "maxzoom": 14,
+    "minzoom": 4,
+    "name": "OpenBareMap Pyrenees geometry",
+    "version": "2.0.0"
+  }
+}

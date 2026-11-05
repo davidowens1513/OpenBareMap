@@ -1,0 +1,74 @@
+OpenBareMap Pyrenees · France, Spain & Andorra 2.0.0 — Android Bundle
+For incorporation in Android apps
+
+1. Contents
+OpenBareMap-Resources.zip is the importable regional map package. It contains the
+complete databases, offline style, fonts, sprites, legend, attribution, provenance
+and resource checksums. integration/ contains the reusable loader AAR and Kotlin
+source. example/ contains an Activity, manifest and dependency fragment. The
+MapLibre renderer is an external Maven dependency, not part of this download.
+
+2. Requirements
+Use an Android app with minimum API 23, Kotlin 2.2.10 (or compatible) and JVM target 17.
+The integration uses MapLibre Native Android OpenGL ES 13.6.1. Ensure your Gradle
+repositories include google() and mavenCentral(), and add:
+
+    implementation("org.maplibre.gl:android-sdk-opengl:13.6.1")
+    implementation("org.jetbrains.kotlin:kotlin-stdlib:2.2.10")
+    implementation(files("libs/openbaremap-loader-release.aar"))
+
+Copy integration/openbaremap-loader-release.aar into your app module's libs/.
+Alternatively compile the supplied Kotlin loader source in your app, keeping its
+package org.openbaremap.android; choose the AAR or source, not both. The loader
+uses built-in Android JSON and file APIs. Match the renderer's SDK requirements.
+Allow storage for the archive, extracted map and app data; installations preserve
+previous map versions until your app deliberately removes them.
+
+3. Incorporation
+Verify SHA256SUMS.txt beside the download and extract the OUTER bundle ZIP first.
+Pass the included OpenBareMap-Resources.zip, not the outer bundle, to the loader.
+Initialize MapLibre.getInstance(context) before creating a MapView and forward
+all MapView lifecycle callbacks, as shown in example/MainActivity.kt. Import and
+verify the map on a worker thread into app-private persistent storage:
+
+    import org.openbaremap.android.OpenBareMapResources
+    val directory = OpenBareMapResources.installZip(inputStream, File(context.filesDir, "maps"))
+    val styleJson = OpenBareMapResources.prepareStyle(directory)
+
+Then, on the main thread after mapView.getMapAsync:
+
+    map.setStyle(Style.Builder().fromJson(styleJson))
+
+Use the supplied example Activity and fully qualified manifest entry, or adapt
+the calls into your app. Start at latitude 42.9, longitude 0.6, zoom 7,
+or fit the bounds in the installed manifest.json. Retain the installed directory
+while the map is in use. For a pre-extracted map directory, call verify(directory)
+before prepareStyle(directory). Local MBTiles must be real files in app storage;
+do not point the renderer at compressed APK assets or an unextracted ZIP.
+
+4. Verification and offline use
+From the outer ZIP directory, run: shasum -a 256 -c CHECKSUMS.txt
+On Windows, Get-FileHash can verify individual SHA-256 values. The loader verifies
+every inner resource and rejects invalid paths, duplicate entries and corrupt or
+unlisted files. Test mountains, coast, text, hillshade and legends in your app,
+then repeat with networking disabled. The map needs no tile server or localhost
+service. Use Android's document picker for imports; displaying the map does not
+require broad storage access or location permission. Add any GPS permissions
+and location features separately in the consuming app.
+
+5. Attribution and distribution
+Expose ATTRIBUTION.txt, terrain-attribution.html and the source notices from the
+installed package in your app. Preserve ODbL, elevation and font notices when
+redistributing map data. The app supplies controls, credits and legend UI; the
+included example demonstrates the latter. Keep all font and sprite files.
+
+6. Compatibility and support
+The loader resolves mbtiles:/// and local file URLs at runtime. Keep Android and
+iOS resource bundles separate; the inner Android ZIP is the loader's input.
+Validate rendering, memory use, imports and lifecycle handling with the selected
+renderer and Android targets. This download contains integration components and
+map resources; application signing and release configuration belong to your app.
+
+MapLibre Android quickstart: https://maplibre.org/maplibre-native/android/examples/getting-started/
+Project: https://github.com/davidowens1513/OpenBareMap
+Contact: appsbyonzy@gmail.com

@@ -1,0 +1,34 @@
+{
+  "builderSHA256": "f4f12e04cd575aec4972b795a2b9b4270e74585904a8c3ff549a6c7f8126c7e1",
+  "contoursSourceSHA256": "c277506d781a3ece39128b422a7d2a089f3ac0298dcce2041280ee8344d5afb7",
+  "counts": {
+    "contours": 239012,
+    "grid": {
+      "grid_10km": 75,
+      "grid_1km": 732
+    },
+    "landcover": {
+      "empty_source_areas": [],
+      "features": 478486,
+      "retained": 21314,
+      "smoothed": 457172
+    }
+  },
+  "osm": {
+    "bytes": 643558307,
+    "operation": "Complete-feature bbox extraction with nested relation references, then libosmium sorted merge; duplicate OSM objects resolved by version",
+    "path": "data/regions/pyrenees/pyrenees-261031.osm.pbf",
+    "replicationTimestamp": "2026-10-31T21:23:06Z",
+    "sha256": "4143a1bae031da426b5e80a73561d9ce5941dbb67b439263e71c11c06558c0db",
+    "snapshot_date": "2026-10-31",
+    "url": null
+  },
+  "outputs": {
+    "contours.geojson": "499f927cdc375aae7a001725de04833c9246f283b74531014ad6f3af36835aac",
+    "grid_10km.geojson": "851c8d503979004ef54e4e9c30414d710a8645d7cde54f7dc6f3839537e15cd9",
+    "grid_1km.geojson": "010d0499bf31a72176da6c7425db60be5f7f1483ca7e306488c8a24517e559a3",
+    "landcover.geojson": "50854d0fe279b6790f8d943e26a37b61b0201a5bcb9c79b21afe404b4942832a"
+  },
+  "region": "pyrenees",
+  "smootherSHA256": "7581d024dc1c1bec931642c7201db149bf64a64c814c451fa8bf37a0881ea6c9"
+}

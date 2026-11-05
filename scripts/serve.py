@@ -111,10 +111,14 @@ class Handler(BaseHTTPRequestHandler):
                 body=body.replace(b'<label for="location">',b'<p style="font-size:12px"><span style="color:#8c278b">&#9473;</span> National park &nbsp; &#9476; 25 km boundary</p><label for="location">')
         self.reply(200,body, mimetypes.guess_type(target)[0] or 'application/octet-stream')
 
+class MapServer(ThreadingHTTPServer):
+    # MapLibre requests many independent tiles together; retain the full burst.
+    request_queue_size = 128
+
 def main():
     parser=argparse.ArgumentParser()
     parser.add_argument('--port',type=int,default=8765)
-    parser.add_argument('--region',choices=['ireland','england-wales','scotland','sierra-nevada'],default='ireland')
+    parser.add_argument('--region',choices=['ireland','england-wales','scotland','sierra-nevada','pyrenees'],default='ireland')
     parser.add_argument('--database',type=Path,help='Optional override for the base vector database')
     args=parser.parse_args()
     from regions import active_map, profile
@@ -129,7 +133,7 @@ def main():
             parser.error('Selected database checksum mismatch: '+name)
         with closing(sqlite3.connect(path.resolve().as_uri()+'?mode=ro',uri=True)) as db:
             datasets[name]={'path':path,'metadata':dict(db.execute('SELECT name,value FROM metadata'))}
-    server=ThreadingHTTPServer(('127.0.0.1',args.port),Handler)
+    server=MapServer(('127.0.0.1',args.port),Handler)
     server.datasets=datasets
     server.region=args.region
     p=profile(args.region)

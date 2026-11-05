@@ -1,0 +1,29 @@
+{
+  "region": "pyrenees",
+  "bounds": [
+    -2.2,
+    41.9,
+    3.4,
+    43.9
+  ],
+  "sharedStyleSHA256": "be29f6993e8d5cd1f79921bf828f0d1263aa4e349aff1cf1b154ec805d0206da",
+  "regionalStyleSHA256": "272dc0fedce159acdc2d7d4bf1b745d4b9e3f7400861f9845c3b92a4a451262d",
+  "transportConfigurationSHA256": "f66481485f825e3a67bed5c78ae4eae16ab4b0919cf8cdbd063946401729789f",
+  "hillshadeBuilderSHA256": "754f21f3dd881d6ef215da3286455504093153f8025799be4f85cf6825275633",
+  "terrainBuildRecordSHA256": "7847d8e51f0e54fb1d7a2eb7a2a92703b142a03b7ad994fc3137403861cdabba",
+  "contourIntervalMetres": 20,
+  "hillshade": "Shared multidirectional 45\u00b0 hillshade, warm brown RGBA palette and transparent no-data",
+  "automatedPreflight": {
+    "pyreneesCoverageAndExtraction": 4,
+    "transport": 3,
+    "geometrySmoothing": 3,
+    "regionalPreservation": 5,
+    "nativeIdentities": 5,
+    "viewer": 8,
+    "nativeBackgrounds": 8,
+    "previewKeys": 2
+  },
+  "status": "Build and automated/browser acceptance complete; device rendering not tested",
+  "finalStyleSHA256": "b7fb792c4f458f3a70df88763232a046664f528d71f3ab9878e091e2960a962a",
+  "acceptance": "releases/pyrenees/2.0.0/acceptance.json"
+}

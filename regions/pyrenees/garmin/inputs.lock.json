@@ -1,0 +1,20 @@
+{
+  "inputs": [
+    {
+      "path": "regions/pyrenees/garmin/inputs/contours.geojson.gz",
+      "sha256": "e8c4b89cd5e38d8413333adb400f7200aba56b1c428551f417a0773b81ea4645",
+      "uncompressedSHA256": "499f927cdc375aae7a001725de04833c9246f283b74531014ad6f3af36835aac"
+    },
+    {
+      "path": "regions/pyrenees/garmin/inputs/landcover.geojson.gz",
+      "sha256": "f485952dd55a391513103ef77d35cf8cba0518188d718cdf79799a42d57108fc",
+      "uncompressedSHA256": "50854d0fe279b6790f8d943e26a37b61b0201a5bcb9c79b21afe404b4942832a"
+    },
+    {
+      "path": "regions/pyrenees/garmin/inputs/land.geojson.gz",
+      "sha256": "3f72cb866dd60ef8f912b556e58d080d7719546ada68862b6ce23a48b86bd049",
+      "uncompressedSHA256": "42a7b62fdd454ead84b3cc007f2ae3082b55deb8ac31bf576a2cf4450ee6df1f"
+    }
+  ],
+  "region": "pyrenees"
+}

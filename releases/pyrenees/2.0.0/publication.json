@@ -1,0 +1,20 @@
+{
+  "region": "pyrenees",
+  "verifiedUTC": "2026-11-05T22:12:15.280571+00:00",
+  "mobileReadback": "distribution/app-bundles-v1/publication-pyrenees.json",
+  "garminReadback": "regions/pyrenees/garmin/publication.json",
+  "publicPreviewURL": "https://downloads.appsbyonzy.dev/OpenBareMap/pyrenees/2.0.0/preview/pyrenees/index.html",
+  "browserChecks": "web-preview/verification/pyrenees-publication-browser.json",
+  "website": {
+    "url": "https://appsbyonzy.dev",
+    "status": "Prepared, desktop/mobile checked; deployment access pending",
+    "source": "web-preview/site/index.html",
+    "deploymentArchive": "/Users/davidowens/Documents/ChatGPT/appsbyonzy.dev/outputs/baregps-cloudflare.zip"
+  },
+  "deviceInstallations": {
+    "path": "regions/pyrenees/garmin/device-installations.json",
+    "sha256": "4310002daa9d07cf6c4ac805ac020a0eb449ca7b779a77c588b05a5d52b772e8",
+    "verifiedDevices": 3,
+    "fullReadbackVerified": true
+  }
+}

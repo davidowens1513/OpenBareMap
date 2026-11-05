@@ -30,11 +30,11 @@ def main(region):
         if digest(ROOT/item['path'])!=item['sha256']:raise ValueError('Selected dataset changed: '+name)
     if active['storageRevision']==active.get('mapVersion','2.0.0')+'-'+region+'-r1':
         run('scripts/build_region_context.py','--region',region)
-    elif active['storageRevision']!=active.get('mapVersion','2.0.0')+'-'+region+'-r3':
+    elif active['storageRevision'] not in {active.get('mapVersion','2.0.0')+'-'+region+'-r'+str(r) for r in (3,4)}:
         raise ValueError('Coastal background needs repair before packaging')
     run('scripts/build_region.py','--region',region,'--stage','packages')
     if not native_report.exists():run('scripts/build_region_garmin.py','--region',region)
     run('scripts/validate_region.py','--region',region)
 
 if __name__=='__main__':
-    p=argparse.ArgumentParser();p.add_argument('--region',choices=['england-wales','scotland','sierra-nevada'],required=True);a=p.parse_args();main(a.region)
+    p=argparse.ArgumentParser();p.add_argument('--region',choices=['england-wales','scotland','sierra-nevada','pyrenees'],required=True);a=p.parse_args();main(a.region)

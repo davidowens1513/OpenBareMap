@@ -1,0 +1,33 @@
+{
+  "bytes": 1736453122,
+  "datasets": {
+    "basemap": {
+      "path": "maps/basemap.mbtiles",
+      "sha256": "d30cf7a1046b0260731d088b984f650ae2d217a1b46cbce0c69bd0297399dfb6"
+    },
+    "coast": {
+      "derivedFrom": "4fc742fb3061ff00428c82037d904804397581617e1778eaebfb3b96623691bd",
+      "path": "maps/coast.mbtiles",
+      "sha256": "a86790a00f9900908f5e42b3f6b81e1bba5d9b4d62e23ab2dd13db167e902f4f"
+    },
+    "grid": {
+      "path": "maps/grid.mbtiles",
+      "sha256": "2403c0d15c957a8043452ca705cec54f0c22421e09a5332d6d30bd116215dfbc"
+    },
+    "hillshade": {
+      "path": "maps/hillshade.mbtiles",
+      "sha256": "22881414cea150df4bd80e0a276bf5a4fe9b66202fdbd01a659790304689e8bc"
+    },
+    "topography": {
+      "path": "maps/topography.mbtiles",
+      "sha256": "4fc742fb3061ff00428c82037d904804397581617e1778eaebfb3b96623691bd"
+    }
+  },
+  "instructionsSHA256": "329a5f9cc02ff233e3c3551a4c976db29720f3fdc1ce8c46d89a8e3a242d2305",
+  "instructionsURL": "https://downloads.appsbyonzy.dev/OpenBareMap/pyrenees/2.0.0/app-bundles-v1/android/instructions.txt",
+  "localPath": "releases/pyrenees/2.0.0/app-bundles-v1/android/OpenBareMap-Pyrenees-Android-Bundle.zip",
+  "mapManifestSHA256": "7601efd3d533c1a550c282a5283cba7a646a71a3b95c0d4c71d2dc7cceacfe19",
+  "r2Key": "OpenBareMap/pyrenees/2.0.0/app-bundles-v1/android/OpenBareMap-Pyrenees-Android-Bundle.zip",
+  "sha256": "bfb286e39bb543f3daa9dc2dc0d2325aed2667a91187cb6e035ea4f2771e1c62",
+  "url": "https://downloads.appsbyonzy.dev/OpenBareMap/pyrenees/2.0.0/app-bundles-v1/android/OpenBareMap-Pyrenees-Android-Bundle.zip"
+}

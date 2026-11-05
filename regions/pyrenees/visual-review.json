@@ -1,0 +1,219 @@
+{
+  "region": "pyrenees",
+  "storageRevision": "2.0.0-pyrenees-r4",
+  "review": "Browser visual review; hardware/device rendering not tested",
+  "views": [
+    {
+      "view": "overview",
+      "state": {
+        "ready": true,
+        "errors": [],
+        "status": "Loading local map\u2026"
+      },
+      "renderedLayers": {
+        "place": 14,
+        "ferry": 34,
+        "transportation": 196231,
+        "railway": 14543,
+        "waterway": 10701,
+        "boundary": 3930,
+        "water": 12808,
+        "landcover": 302241,
+        "land": 101
+      },
+      "screenshot": "regions/pyrenees/review/pyrenees-overview-qa.png",
+      "centerZoom": {
+        "center": {
+          "lng": -0.051,
+          "lat": 42.908
+        },
+        "zoom": 7.26
+      },
+      "screenshotSHA256": "69767d70fd9cc3ff86ddf70865da28b36abeb1a20621779a6f01e851ab3d236c"
+    },
+    {
+      "view": "bayonne",
+      "state": {
+        "ready": true,
+        "errors": [],
+        "status": "Local map \u00b7 zoom 7.3 \u00b7 ready"
+      },
+      "renderedLayers": {
+        "place": 186,
+        "station": 1,
+        "hiking_poi": 64,
+        "grid_10km": 15,
+        "grid_1km": 131,
+        "island_name": 20,
+        "transportation_name": 4,
+        "hiking_route": 29,
+        "cycling_route": 17,
+        "railway": 322,
+        "transportation": 44574,
+        "contour": 421,
+        "waterway": 852,
+        "boundary": 41,
+        "water": 279,
+        "natural_line": 64,
+        "landcover": 2671,
+        "land": 30
+      },
+      "screenshot": "regions/pyrenees/review/pyrenees-bayonne-qa.png",
+      "centerZoom": {
+        "center": {
+          "lng": -1.4748,
+          "lat": 43.4929
+        },
+        "zoom": 12
+      },
+      "screenshotSHA256": "cc6a80c79d33d1b8be4d8939414505b7f019661caaffd47d831a8359cfc79c85"
+    },
+    {
+      "view": "gavarnie",
+      "state": {
+        "ready": true,
+        "errors": [],
+        "status": "Local map \u00b7 zoom 12.0 \u00b7 ready"
+      },
+      "renderedLayers": {
+        "hiking_poi": 45,
+        "poi": 17,
+        "place": 12,
+        "mountain": 67,
+        "water_name": 3,
+        "grid_10km": 5,
+        "grid_1km": 63,
+        "hiking_route": 49,
+        "transportation": 692,
+        "building": 232,
+        "contour": 855,
+        "waterway": 294,
+        "boundary": 2,
+        "water": 15,
+        "natural_line": 84,
+        "landcover": 1809,
+        "land": 8
+      },
+      "screenshot": "regions/pyrenees/review/pyrenees-gavarnie-qa.png",
+      "centerZoom": {
+        "center": {
+          "lng": -0.0105,
+          "lat": 42.732
+        },
+        "zoom": 13
+      },
+      "screenshotSHA256": "a442015811d947d421cfdcc14aa8bb2b98c0f12fe911e11175e2e88e5ef5387e"
+    },
+    {
+      "view": "aneto",
+      "state": {
+        "ready": true,
+        "errors": [],
+        "status": "Local map \u00b7 zoom 13.0 \u00b7 ready"
+      },
+      "renderedLayers": {
+        "place": 53,
+        "hiking_poi": 20,
+        "mountain": 194,
+        "water_name": 19,
+        "grid_10km": 11,
+        "grid_1km": 59,
+        "hiking_route": 20,
+        "transportation": 187,
+        "building": 5,
+        "contour": 888,
+        "waterway": 122,
+        "boundary": 5,
+        "water": 107,
+        "natural_line": 22,
+        "landcover": 261,
+        "land": 6
+      },
+      "screenshot": "regions/pyrenees/review/pyrenees-aneto-qa.png",
+      "centerZoom": {
+        "center": {
+          "lng": 0.6579,
+          "lat": 42.631
+        },
+        "zoom": 13
+      },
+      "screenshotSHA256": "08fae3ccf824d05b564077204494f9b4f8dbf590a91c1a845e3d33d177754ddb"
+    },
+    {
+      "view": "andorra",
+      "state": {
+        "ready": true,
+        "errors": [],
+        "status": "Local map \u00b7 zoom 13.0 \u00b7 ready"
+      },
+      "renderedLayers": {
+        "place": 163,
+        "hiking_poi": 81,
+        "mountain": 130,
+        "grid_10km": 10,
+        "grid_1km": 120,
+        "hiking_route": 40,
+        "cycling_route": 29,
+        "transportation": 9348,
+        "contour": 1121,
+        "waterway": 808,
+        "boundary": 12,
+        "water": 122,
+        "natural_line": 132,
+        "landcover": 3281,
+        "land": 12
+      },
+      "screenshot": "regions/pyrenees/review/pyrenees-andorra-qa.png",
+      "centerZoom": {
+        "center": {
+          "lng": 1.5218,
+          "lat": 42.5063
+        },
+        "zoom": 12
+      },
+      "screenshotSHA256": "65c8593a115faf26bfeef077158281913b7bd515b5a5ade1457b2e3a0a9bb191"
+    },
+    {
+      "view": "cap-de-creus",
+      "state": {
+        "ready": true,
+        "errors": [],
+        "status": "Local map \u00b7 zoom 12.0 \u00b7 ready"
+      },
+      "renderedLayers": {
+        "place": 103,
+        "hiking_poi": 27,
+        "mountain": 2,
+        "grid_10km": 12,
+        "grid_1km": 94,
+        "island_name": 57,
+        "hiking_route": 27,
+        "cycling_route": 1,
+        "ferry": 9,
+        "transportation": 3240,
+        "contour": 272,
+        "waterway": 330,
+        "boundary": 173,
+        "water": 16,
+        "natural_line": 38,
+        "landcover": 956,
+        "land": 238
+      },
+      "screenshot": "regions/pyrenees/review/pyrenees-cap-de-creus-qa.png",
+      "centerZoom": {
+        "center": {
+          "lng": 3.316,
+          "lat": 42.319
+        },
+        "zoom": 12
+      },
+      "screenshotSHA256": "b30d42b361d412a0806af07798989cf487584d8671578e081b1f718797181f69"
+    }
+  ],
+  "visuallyInspected": true,
+  "findings": [
+    "Shared hillshade, 20 m contours, land-cover textures and transport styling checked in rendered views.",
+    "Bayonne, Gavarnie, Aneto, Andorra and Mediterranean endpoint render with no browser map errors.",
+    "Extended coastal land context removes the false straight coastline from the initial view."
+  ]
+}

@@ -1,0 +1,120 @@
+{
+  "accessed_utc": "2026-11-05T20:14:25.326457+00:00",
+  "inputs": [
+    {
+      "bytes": 363766916,
+      "path": "data/regions/pyrenees/midi-pyrenees-261031.osm.pbf",
+      "replicationTimestamp": "2026-10-31T21:23:06Z",
+      "sha256": "130be2417ff0c21eeef5754ae6d251c15bbb9384fadecc817f02b1dc5c675393",
+      "url": "https://download.geofabrik.de/europe/france/midi-pyrenees-261031.osm.pbf"
+    },
+    {
+      "bytes": 296701924,
+      "path": "data/regions/pyrenees/aquitaine-261031.osm.pbf",
+      "replicationTimestamp": "2026-10-31T21:23:06Z",
+      "sha256": "37d9bfe4d86c6f7501a9dca6a2020d2bc052691e57fdfa37990259001831fe97",
+      "url": "https://download.geofabrik.de/europe/france/aquitaine-261031.osm.pbf"
+    },
+    {
+      "bytes": 270668371,
+      "path": "data/regions/pyrenees/languedoc-roussillon-261031.osm.pbf",
+      "replicationTimestamp": "2026-10-31T21:23:06Z",
+      "sha256": "0a894da98d4c92e6d60832fbe8610c2bac3545e90f531f3921da1aacee46c05b",
+      "url": "https://download.geofabrik.de/europe/france/languedoc-roussillon-261031.osm.pbf"
+    },
+    {
+      "bytes": 272916461,
+      "path": "data/regions/pyrenees/cataluna-261031.osm.pbf",
+      "replicationTimestamp": "2026-10-31T21:23:06Z",
+      "sha256": "e08dd6eac80f09964f70ca8ce704fb28788c4c7eb29db0981f2ff1bd0e5f12e9",
+      "url": "https://download.geofabrik.de/europe/spain/cataluna-261031.osm.pbf"
+    },
+    {
+      "bytes": 95295841,
+      "path": "data/regions/pyrenees/aragon-261031.osm.pbf",
+      "replicationTimestamp": "2026-10-31T21:23:06Z",
+      "sha256": "daee921b863ee788f806f2d33d03b4be893c60d11cac673e579b81406f0f4c7b",
+      "url": "https://download.geofabrik.de/europe/spain/aragon-261031.osm.pbf"
+    },
+    {
+      "bytes": 37528144,
+      "path": "data/regions/pyrenees/navarra-261031.osm.pbf",
+      "replicationTimestamp": "2026-10-31T21:23:06Z",
+      "sha256": "ce7fafb83ffbc479c134c9682367c5a502c1e23015b7afbaeffabe9d0402bdd0",
+      "url": "https://download.geofabrik.de/europe/spain/navarra-261031.osm.pbf"
+    },
+    {
+      "bytes": 69230244,
+      "path": "data/regions/pyrenees/pais-vasco-261031.osm.pbf",
+      "replicationTimestamp": "2026-10-31T21:23:06Z",
+      "sha256": "2095d31139e9c54e4fe36fc9a50ee1e9325d63c3d6c6fa72e3727d3b68ac9706",
+      "url": "https://download.geofabrik.de/europe/spain/pais-vasco-261031.osm.pbf"
+    },
+    {
+      "bytes": 3507206,
+      "path": "data/regions/pyrenees/andorra-261031.osm.pbf",
+      "replicationTimestamp": "2026-10-31T21:23:06Z",
+      "sha256": "33c9105620169906286fc92aa74c8f35b9f150c6fa43b61011fd7f79f48632eb",
+      "url": "https://download.geofabrik.de/europe/andorra-261031.osm.pbf"
+    }
+  ],
+  "osm": {
+    "bytes": 643558307,
+    "operation": "Complete-feature bbox extraction with nested relation references, then libosmium sorted merge; duplicate OSM objects resolved by version",
+    "path": "data/regions/pyrenees/pyrenees-261031.osm.pbf",
+    "replicationTimestamp": "2026-10-31T21:23:06Z",
+    "sha256": "4143a1bae031da426b5e80a73561d9ce5941dbb67b439263e71c11c06558c0db",
+    "snapshot_date": "2026-10-31",
+    "url": null
+  },
+  "polygons": [
+    {
+      "bytes": 48139,
+      "path": "data/regions/pyrenees/midi-pyrenees.poly",
+      "sha256": "4a3b87a2b1d75ad5f89fff3280803442dd7dda3cf1dbc29fd7b029aa9bd4a0b4",
+      "url": "https://download.geofabrik.de/europe/france/midi-pyrenees.poly"
+    },
+    {
+      "bytes": 22820,
+      "path": "data/regions/pyrenees/aquitaine.poly",
+      "sha256": "57095926b499121231a20a2355a30b7a607be011251b882f94b435c36b790285",
+      "url": "https://download.geofabrik.de/europe/france/aquitaine.poly"
+    },
+    {
+      "bytes": 23265,
+      "path": "data/regions/pyrenees/languedoc-roussillon.poly",
+      "sha256": "0daa6b9b3288837844a33e60932846fd33e7da206aba4363e4b3734dda35898e",
+      "url": "https://download.geofabrik.de/europe/france/languedoc-roussillon.poly"
+    },
+    {
+      "bytes": 6494,
+      "path": "data/regions/pyrenees/cataluna.poly",
+      "sha256": "ef0264c6200af7d7b3a8031e9374fddd29daabd6318aa4f6ed271b3dfb3a284d",
+      "url": "https://download.geofabrik.de/europe/spain/cataluna.poly"
+    },
+    {
+      "bytes": 7306,
+      "path": "data/regions/pyrenees/aragon.poly",
+      "sha256": "58aace56ecc3c61d9f1b7922ee18f5c5faecdf2da5517143d14f8ea1d1efabc6",
+      "url": "https://download.geofabrik.de/europe/spain/aragon.poly"
+    },
+    {
+      "bytes": 7631,
+      "path": "data/regions/pyrenees/navarra.poly",
+      "sha256": "602dead03e0738e1c34019d44ae6f6950351d7f19f93db684a6f6214def1c8a0",
+      "url": "https://download.geofabrik.de/europe/spain/navarra.poly"
+    },
+    {
+      "bytes": 6511,
+      "path": "data/regions/pyrenees/pais-vasco.poly",
+      "sha256": "1a59186f511f8f9631fbf03db79d0cb398e7b217e9d13a50ee56afa61415b8ba",
+      "url": "https://download.geofabrik.de/europe/spain/pais-vasco.poly"
+    },
+    {
+      "bytes": 3673,
+      "path": "data/regions/pyrenees/andorra.poly",
+      "sha256": "d875d3c72a180a34620bcd5dc92d31ae27dde8f4f28b14acc6dc249792872e83",
+      "url": "https://download.geofabrik.de/europe/andorra.poly"
+    }
+  ]
+}

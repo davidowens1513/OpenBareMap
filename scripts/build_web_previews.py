@@ -63,4 +63,4 @@ def build(output,origin,regions=None):
  write(output/'manifest.json',{'regions':records,'pmtilesPython':'3.8.1','pmtilesJS':'4.5.0','librarySHA256':digest(assets/'pmtiles.js'),'dataOrigin':origin,'scope':'Complete selected map tiles; no regional or zoom sampling.'})
  print('Complete previews exported:',', '.join(regions),output,flush=True)
 if __name__=='__main__':
- p=argparse.ArgumentParser();p.add_argument('--output',type=Path,required=True);p.add_argument('--origin',required=True);p.add_argument('--regions',nargs='+',choices=['ireland','england-wales','scotland','sierra-nevada']);args=p.parse_args();build(args.output.resolve(),args.origin,args.regions)
+ p=argparse.ArgumentParser();p.add_argument('--output',type=Path,required=True);p.add_argument('--origin',required=True);p.add_argument('--regions',nargs='+',choices=['ireland','england-wales','scotland','sierra-nevada','pyrenees']);args=p.parse_args();build(args.output.resolve(),args.origin,args.regions)

@@ -1,0 +1,107 @@
+{
+  "builderSHA256": "6dbfcfbb8c39c6b50a4b4f2a5fa3775ecfb3d239e02803e3763e788ff44bba43",
+  "geometryReport": {
+    "builderSHA256": "f4f12e04cd575aec4972b795a2b9b4270e74585904a8c3ff549a6c7f8126c7e1",
+    "contoursSourceSHA256": "c277506d781a3ece39128b422a7d2a089f3ac0298dcce2041280ee8344d5afb7",
+    "counts": {
+      "contours": 239012,
+      "grid": {
+        "grid_10km": 75,
+        "grid_1km": 732
+      },
+      "landcover": {
+        "empty_source_areas": [],
+        "features": 478486,
+        "retained": 21314,
+        "smoothed": 457172
+      }
+    },
+    "osm": {
+      "bytes": 643558307,
+      "operation": "Complete-feature bbox extraction with nested relation references, then libosmium sorted merge; duplicate OSM objects resolved by version",
+      "path": "data/regions/pyrenees/pyrenees-261031.osm.pbf",
+      "replicationTimestamp": "2026-10-31T21:23:06Z",
+      "sha256": "4143a1bae031da426b5e80a73561d9ce5941dbb67b439263e71c11c06558c0db",
+      "snapshot_date": "2026-10-31",
+      "url": null
+    },
+    "outputs": {
+      "contours.geojson": "499f927cdc375aae7a001725de04833c9246f283b74531014ad6f3af36835aac",
+      "grid_10km.geojson": "851c8d503979004ef54e4e9c30414d710a8645d7cde54f7dc6f3839537e15cd9",
+      "grid_1km.geojson": "010d0499bf31a72176da6c7425db60be5f7f1483ca7e306488c8a24517e559a3",
+      "landcover.geojson": "50854d0fe279b6790f8d943e26a37b61b0201a5bcb9c79b21afe404b4942832a"
+    },
+    "region": "pyrenees",
+    "smootherSHA256": "7581d024dc1c1bec931642c7201db149bf64a64c814c451fa8bf37a0881ea6c9"
+  },
+  "outputs": {
+    "basemap": {
+      "bytes": 1036873728,
+      "path": "releases/pyrenees/2.0.0/maps/basemap.mbtiles",
+      "sha256": "d30cf7a1046b0260731d088b984f650ae2d217a1b46cbce0c69bd0297399dfb6",
+      "validation": {
+        "empty_tile_count": 31,
+        "logical_tiles_sha256": "502a950a1440aad73350a3e58a2eb823f6aae6567f1aa7ea8fb2c173b52f1cb4",
+        "tile_count": 40490
+      }
+    },
+    "grid": {
+      "bytes": 15597568,
+      "path": "releases/pyrenees/2.0.0/maps/grid.mbtiles",
+      "sha256": "2403c0d15c957a8043452ca705cec54f0c22421e09a5332d6d30bd116215dfbc",
+      "validation": {
+        "empty_tile_count": 0,
+        "logical_tiles_sha256": "365fc567965cb8b75fc669042ad92c3292c457b5d5755d0d0b30dd3fc9d10500",
+        "tile_count": 43368
+      }
+    },
+    "hillshade": {
+      "bytes": 170639360,
+      "path": "releases/pyrenees/2.0.0/maps/hillshade.mbtiles",
+      "sha256": "22881414cea150df4bd80e0a276bf5a4fe9b66202fdbd01a659790304689e8bc",
+      "validation": {
+        "empty_tile_count": 0,
+        "logical_tiles_sha256": "506d2a20eb2ab4f09caaa73cd19ecc6aecdabe502a17a23369f572f1e59c236f",
+        "tile_count": 3851
+      }
+    },
+    "topography": {
+      "bytes": 504930304,
+      "path": "releases/pyrenees/2.0.0/maps/topography.mbtiles",
+      "sha256": "580a1b1ec76413e56af0befa71ad4e3bc39e7deea3ab695de4b461b51f339a37",
+      "validation": {
+        "empty_tile_count": 15098,
+        "logical_tiles_sha256": "b8198b15ebd8be4cb7aaeb7faef2e29ce9ea7a2563b341fc50070509a915b3fd",
+        "tile_count": 57112
+      }
+    }
+  },
+  "region": "pyrenees",
+  "replacements": {
+    "basemap": {
+      "changed_tiles": 38623,
+      "path": "build/pyrenees-release/basemap-smoothed.mbtiles",
+      "replacement_feature_instances": 4223874,
+      "sha256": "37c130f32145c7ddcdbd914c049a480a8b8d017570a2240a35f4bbdccd326e35",
+      "unchanged_other_layers_sha256": "408507d8d15c7692f9cd6323d6e1c649d83e54686cc3007164290708aa9636f7",
+      "validation": {
+        "empty_tile_count": 31,
+        "logical_tiles_sha256": "52ff7f14b064514d7d1075eb3a6030294563f5be800d42ab36cadc4163baa9dc",
+        "tile_count": 40490
+      }
+    },
+    "topography": {
+      "changed_tiles": 58141,
+      "path": "build/pyrenees-release/topography-smoothed.mbtiles",
+      "replacement_feature_instances": 1716585,
+      "sha256": "74decb33a2b566da7673382a06a0093483b3bf1529a9b60dae8d41289c4851c6",
+      "unchanged_other_layers_sha256": "5c312567536f661aa95d9c88bd1cefd82c777192b1c8fd96095579a1e64c03b9",
+      "validation": {
+        "empty_tile_count": 15098,
+        "logical_tiles_sha256": "f465abfe400fec0e83530348fd0d48bf727f8749754c1289e0ec667faa1099a0",
+        "tile_count": 57112
+      }
+    }
+  },
+  "status": "built and structurally validated; visual/device review pending"
+}

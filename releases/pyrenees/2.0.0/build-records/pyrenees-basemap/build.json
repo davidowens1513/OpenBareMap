@@ -1,0 +1,193 @@
+{
+  "command": [
+    "/usr/local/bin/tilemaker",
+    "--input",
+    "/Volumes/Extreme SSD/Projects/OpenBareMap/data/regions/pyrenees/pyrenees-261031.osm.pbf",
+    "--output",
+    "/Volumes/Extreme SSD/Projects/OpenBareMap/build/pyrenees-basemap/basemap.mbtiles",
+    "--config",
+    "/Volumes/Extreme SSD/Projects/OpenBareMap/build/pyrenees-basemap/tilemaker.json",
+    "--process",
+    "/Volumes/Extreme SSD/Projects/OpenBareMap/build/pyrenees-basemap/process.lua",
+    "--threads",
+    "1"
+  ],
+  "config_sha256": "f977e0f42ab20aaa97a6ddcd7e7196d3a6d76e7fc1c495b847a9049d72495d62",
+  "exit_code": 0,
+  "output_sha256": "466a65cbecaf45708c96c84f6ab3bb4871fe4adcf982dd930bdce5f811daf002",
+  "process_sha256": "aff8cc5516e697643fffda04e142e91b0f61b114824ef5b9331974df6a5d51ed",
+  "region": {
+    "bounds": [
+      -2.2,
+      41.9,
+      3.4,
+      43.9
+    ],
+    "clipBasemap": true,
+    "clipSource": true,
+    "coastContextBounds": [
+      -3.2,
+      41.4,
+      4.4,
+      44.4
+    ],
+    "contourIntervalMetres": 20,
+    "coverage": "Full Pyrenees from Atlantic to Mediterranean, including Bayonne, French and Spanish slopes and Andorra; bounds 2.2\u00b0W\u20133.4\u00b0E, 41.9\u00b0N\u201343.9\u00b0N. Complete OSM features retained at the edge.",
+    "destinationLabels": {
+      "andorra": "Andorra la Vella",
+      "aneto": "Aneto",
+      "bayonne": "Bayonne",
+      "cap-de-creus": "Cap de Creus",
+      "gavarnie": "Gavarnie",
+      "girona": "Girona",
+      "hendaye": "Hendaye / Hendaia",
+      "island": "All Pyrenees",
+      "jaca": "Jaca",
+      "pamplona": "Pamplona / Iru\u00f1a",
+      "pau": "Pau",
+      "perpignan": "Perpignan / Perpiny\u00e0"
+    },
+    "destinations": {
+      "andorra": [
+        1.5218,
+        42.5063,
+        12
+      ],
+      "aneto": [
+        0.6579,
+        42.631,
+        13
+      ],
+      "bayonne": [
+        -1.4748,
+        43.4929,
+        12
+      ],
+      "cap-de-creus": [
+        3.316,
+        42.319,
+        12
+      ],
+      "gavarnie": [
+        -0.0105,
+        42.732,
+        13
+      ],
+      "girona": [
+        2.8214,
+        41.9794,
+        12
+      ],
+      "hendaye": [
+        -1.773,
+        43.358,
+        12
+      ],
+      "island": [
+        0.6,
+        42.9,
+        7
+      ],
+      "jaca": [
+        -0.5499,
+        42.571,
+        12
+      ],
+      "pamplona": [
+        -1.6432,
+        42.8125,
+        12
+      ],
+      "pau": [
+        -0.3708,
+        43.2951,
+        12
+      ],
+      "perpignan": [
+        2.8954,
+        42.6986,
+        12
+      ]
+    },
+    "garminContextBounds": [
+      -2.2,
+      41.9,
+      3.4,
+      43.9
+    ],
+    "garminFamilyId": 4836,
+    "garminFilename": "OpenBareMap-Pyrenees.img",
+    "garminPackageRevision": "2.0.1-trail-detail-r1",
+    "garminTileStartId": 48360001,
+    "gridCRS": "EPSG:25831",
+    "gridExtent": [
+      60000,
+      540000,
+      4630000,
+      4880000
+    ],
+    "gridName": "ETRS89 / UTM 31N",
+    "gridSource": "utm-grid",
+    "id": "pyrenees",
+    "inspectionNames": [
+      "Bayonne",
+      "Pau",
+      "Jaca",
+      "Andorra la Vella"
+    ],
+    "label": "Pyrenees \u00b7 France, Spain & Andorra",
+    "mapVersion": "2.0.0",
+    "maxzoom": 14,
+    "minorWaterwayMinzoom": 10,
+    "minzoom": 4,
+    "name": "OpenBareMap Pyrenees",
+    "nativeLanguage": "fr",
+    "projectedCRS": "EPSG:25831",
+    "sourceBaseOverrides": {
+      "andorra": "https://download.geofabrik.de/europe/",
+      "aragon": "https://download.geofabrik.de/europe/spain/",
+      "cataluna": "https://download.geofabrik.de/europe/spain/",
+      "navarra": "https://download.geofabrik.de/europe/spain/",
+      "pais-vasco": "https://download.geofabrik.de/europe/spain/"
+    },
+    "sourceBaseURL": "https://download.geofabrik.de/europe/france/",
+    "sourceDate": "2026-10-31",
+    "sourceSlugs": [
+      "midi-pyrenees",
+      "aquitaine",
+      "languedoc-roussillon",
+      "cataluna",
+      "aragon",
+      "navarra",
+      "pais-vasco",
+      "andorra"
+    ],
+    "styleRevision": "2.0.0-pyrenees-r1",
+    "terrainBounds": [
+      -3,
+      41,
+      4,
+      44
+    ],
+    "townlands": false
+  },
+  "source": {
+    "bytes": 643558307,
+    "operation": "Complete-feature bbox extraction with nested relation references, then libosmium sorted merge; duplicate OSM objects resolved by version",
+    "path": "data/regions/pyrenees/pyrenees-261031.osm.pbf",
+    "replicationTimestamp": "2026-10-31T21:23:06Z",
+    "sha256": "4143a1bae031da426b5e80a73561d9ce5941dbb67b439263e71c11c06558c0db",
+    "snapshot_date": "2026-10-31",
+    "url": null
+  },
+  "status": "validated vector build",
+  "toolchain": {
+    "sha256": "d43847b5d5662b9139461921d55bfab56f3db2098946209a5c7a26b03255b123",
+    "version": "tilemaker v3.1.0+ge16203e4e2fb"
+  },
+  "validation": {
+    "empty_tile_count": 31,
+    "logical_tiles_sha256": "658a8c3e62c23c3a028c299ed3c71e26b29085efc1214952176c73e504d5ed61",
+    "tile_count": 40490
+  }
+}

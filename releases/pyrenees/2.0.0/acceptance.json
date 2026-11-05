@@ -1,0 +1,56 @@
+{
+  "format": "openbaremap-local-build-acceptance-v1",
+  "region": "pyrenees",
+  "completedUTC": "2026-11-05T21:10:55.310003+00:00",
+  "storageRevision": "2.0.0-pyrenees-r4",
+  "contourIntervalMetres": 20,
+  "artifacts": {
+    "android": {
+      "path": "releases/pyrenees/2.0.0/app-bundles-v1/android/OpenBareMap-Pyrenees-Android-Bundle.zip",
+      "bytes": 1736453122,
+      "sha256": "bfb286e39bb543f3daa9dc2dc0d2325aed2667a91187cb6e035ea4f2771e1c62"
+    },
+    "ios": {
+      "path": "releases/pyrenees/2.0.0/app-bundles-v1/ios/OpenBareMap-Pyrenees-iOS-Bundle.zip",
+      "bytes": 1736452579,
+      "sha256": "58d8d6a12604a133b361479405b113eeaac26e9e8bcdade848c70ce9537ad999"
+    },
+    "garmin": {
+      "bytes": 422412288,
+      "path": "regions/pyrenees/garmin/dist/OpenBareMap-Pyrenees.img",
+      "sha256": "04527bd857abd639e6805817635cc9dfc62eade3b4659112418ea9916936825b"
+    }
+  },
+  "mobileSizeComparedWithEnglandWales": {
+    "android": 0.4985360429075272,
+    "ios": 0.49853598090525364
+  },
+  "automatedValidation": {
+    "path": "releases/pyrenees/2.0.0/validation.json",
+    "sha256": "43efc4a3aef922b9584867a8abdd17009c4174a3b6697375dd882718a8a0d688"
+  },
+  "browserReview": {
+    "path": "regions/pyrenees/visual-review.json",
+    "sha256": "32248c6e028d771ad78651e4c78d990a1c3a2c579122202d001ff86b0c60afd9",
+    "views": 6,
+    "errors": 0,
+    "visuallyInspected": true
+  },
+  "nativeInspection": {
+    "sections": 164,
+    "routing": false,
+    "familyId": 4836,
+    "paletteAndStrokeDimensionsMatchSharedStyle": true,
+    "hardwareRenderingTested": false
+  },
+  "localPreviewURL": "http://127.0.0.1:8769",
+  "webPreviewExport": "work/pyrenees-web-2.0.0/manifest.json",
+  "publication": "All platform downloads and preview published and verified; main website deployment pending access",
+  "publicPreviewURL": "https://downloads.appsbyonzy.dev/OpenBareMap/pyrenees/2.0.0/preview/pyrenees/index.html",
+  "deviceInstallations": {
+    "path": "regions/pyrenees/garmin/device-installations.json",
+    "sha256": "4310002daa9d07cf6c4ac805ac020a0eb449ca7b779a77c588b05a5d52b772e8",
+    "verifiedDevices": 3,
+    "fullReadbackVerified": true
+  }
+}

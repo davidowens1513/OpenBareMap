@@ -1,0 +1,34 @@
+{
+  "feature_instances_by_layer": {
+    "contour": 1342365,
+    "land": 10001
+  },
+  "metadata": {
+    "bounds": "-3.200000,41.400000,4.400000,44.400000",
+    "center": "0.600000,42.900000,9",
+    "description": "OSM coastal land and Terrain Tiles elevation contours",
+    "format": "pbf",
+    "json": "{\"vector_layers\":[{\"id\":\"contour\",\"fields\":{\"elevation\":\"Number\"},\"minzoom\":8,\"maxzoom\":14},{\"id\":\"land\",\"fields\":{},\"minzoom\":4,\"maxzoom\":12}]}",
+    "maxzoom": "14",
+    "minzoom": "4",
+    "name": "OpenBareMap coast and contours",
+    "openbaremap_contour_interval_metres": "20",
+    "openbaremap_storage_revision": "2.0.0-pyrenees-r1",
+    "type": "baselayer",
+    "version": "2.0.0"
+  },
+  "note": "Feature instances include repetition across tiles and zooms; not unique OSM objects. This checks MVT framing and layer presence, not geometry or cartographic correctness.",
+  "tiles_by_zoom": {
+    "4": 2,
+    "5": 2,
+    "6": 2,
+    "7": 8,
+    "8": 24,
+    "9": 72,
+    "10": 258,
+    "11": 923,
+    "12": 3528,
+    "13": 10533,
+    "14": 41760
+  }
+}

@@ -108,3 +108,36 @@ Scotland retains the small build records under `releases/scotland/2.0.0/build-re
 The 2.0.1 England/Wales extension preserves every prior mainland vector feature and retains the accepted terrain, contours, hillshade and grid byte-for-byte. `scripts/verify_isle_of_man.py` verifies the island anchors and semantic preservation of features in changed tiles. Source and baseline records are under `releases/england-wales/2.0.1/build-records/isle-of-man/`. The full native image is recompiled from the three-extract union and extended coverage polygon, with shared 4-pixel hiking strokes at resolution 24.
 
 A rectangular photographic patch can come from separately enabled BirdsEye imagery. The Sierra Nevada public image was checked against the affected installation; the map checksum and source elevation data were intact. Its conflicting satellite layer was disabled with an inactive backup retained. No clean Sierra map data was changed for that device-layer fault.
+
+## Pyrenees scope
+
+The Pyrenees edition covers longitude −2.2 to +3.4 and latitude 41.9 to 43.9,
+including Bayonne with northern margin, both coastal ends, the French and Spanish
+slopes and Andorra. Dated 31 October 2026 Geofabrik Aquitaine, Midi-Pyrénées,
+Languedoc-Roussillon, Catalonia, Aragon, Navarra, Basque Country and Andorra inputs
+are checksum-verified and must share a replication timestamp. Complete edge ways,
+relations and their backward references are extracted before duplicate objects
+are merged by version. The original extracts and extraction checkpoints are retained.
+
+Terrain uses the same Terrain Tiles composite DEM, 30 m projected processing,
+20 m contours, 100 m index contours, bounded smoothing, multidirectional hillshade
+and warm transparent shading as the accepted editions. The map shares the existing
+transport colours, line weights, symbols and visibility rules. ETRS89 / UTM 31N
+provides one continuous metre grid across the range; it is a cartographic overlay.
+Source place names are retained with French fallback; no translation is inferred.
+
+Run `PYTHONPATH=work/python python3 scripts/run_full_region.py --region pyrenees`.
+The profile, source locks, active selection and exports use `regions/pyrenees/`;
+selected databases use `releases/pyrenees/2.0.0/maps/`. Garmin family **4836**, tiles
+**48360001–48369999**, is reserved for this edition. Native background and land
+cover use the requested crop rather than entire source administrative regions.
+Use `scripts/serve.py --region pyrenees --port 8769` for local viewing.
+
+The reviewed Pyrenees map uses storage revision `2.0.0-pyrenees-r4`, with a wider
+coastal land background so the initial viewport has no false straight coastline.
+The context revision preserves every contour layer payload. Earlier generated
+mobile resources are retained under the ignored local `work/pyrenees-resources-r3/`.
+For merged cropped inputs, the Garmin splitter derives bounds from actual nodes
+(`--ignore-osm-bounds=true`) before applying the requested coverage polygon. A
+split-plan check requires every destination anchor before native compilation;
+this prevents a primary input's inherited PBF header bounds truncating the union.

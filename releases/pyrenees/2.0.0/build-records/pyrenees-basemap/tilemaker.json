@@ -1,0 +1,96 @@
+{
+  "layers": {
+    "boundary": {
+      "maxzoom": 14,
+      "minzoom": 4
+    },
+    "building": {
+      "maxzoom": 14,
+      "minzoom": 13
+    },
+    "cycling_route": {
+      "maxzoom": 14,
+      "minzoom": 7
+    },
+    "ferry": {
+      "maxzoom": 14,
+      "minzoom": 6
+    },
+    "hiking_poi": {
+      "maxzoom": 14,
+      "minzoom": 10
+    },
+    "hiking_route": {
+      "maxzoom": 14,
+      "minzoom": 7
+    },
+    "island_name": {
+      "maxzoom": 14,
+      "minzoom": 7
+    },
+    "landcover": {
+      "maxzoom": 14,
+      "minzoom": 4
+    },
+    "mountain": {
+      "maxzoom": 14,
+      "minzoom": 9
+    },
+    "natural_line": {
+      "maxzoom": 14,
+      "minzoom": 11
+    },
+    "place": {
+      "maxzoom": 14,
+      "minzoom": 4
+    },
+    "poi": {
+      "maxzoom": 14,
+      "minzoom": 10
+    },
+    "railway": {
+      "maxzoom": 14,
+      "minzoom": 6
+    },
+    "station": {
+      "maxzoom": 14,
+      "minzoom": 9
+    },
+    "transportation": {
+      "maxzoom": 14,
+      "minzoom": 4
+    },
+    "transportation_name": {
+      "maxzoom": 14,
+      "minzoom": 10
+    },
+    "water": {
+      "maxzoom": 14,
+      "minzoom": 4
+    },
+    "water_name": {
+      "maxzoom": 14,
+      "minzoom": 11
+    },
+    "waterway": {
+      "maxzoom": 14,
+      "minzoom": 4
+    }
+  },
+  "settings": {
+    "basezoom": 14,
+    "bounding_box": [
+      -2.2,
+      41.9,
+      3.4,
+      43.9
+    ],
+    "compress": "gzip",
+    "description": "Full Pyrenees from Atlantic to Mediterranean, including Bayonne, French and Spanish slopes and Andorra; bounds 2.2\u00b0W\u20133.4\u00b0E, 41.9\u00b0N\u201343.9\u00b0N. Complete OSM features retained at the edge.",
+    "include_ids": true,
+    "maxzoom": 14,
+    "minzoom": 4,
+    "name": "OpenBareMap Pyrenees",
+    "version": "2.0.0"
+  }
+}

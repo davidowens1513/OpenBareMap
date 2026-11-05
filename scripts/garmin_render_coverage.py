@@ -42,6 +42,11 @@ def generate(region):
     if p.get('coverageBoundary'):geometry=shape(json.loads((ROOT/records[0]['path']).read_text())['features'][0]['geometry'])
     else:geometry=unary_union([read_poly(ROOT/item['path']) for item in records])
     geometry=geometry.intersection(box(*context))
+    if p.get('clipSource'):
+        footprint=box(*p['bounds'])
+        for name,xy in p['destinations'].items():
+            if not geometry.covers(Point(*xy[:2])):raise ValueError('Source outline excludes '+name)
+        geometry=footprint
     if not geometry.is_valid or geometry.is_empty:raise ValueError('Invalid regional rendering footprint')
     anchors={n:xy[:2] for n,xy in p.get('destinations',{}).items() if n!='island'}
     if region=='ireland':anchors={'Dublin':[-6.2603,53.3493],'Belfast':[-5.93,54.6],'Cork':[-8.47,51.9],'Malin Head':[-7.34,55.38],'Tory Island':[-8.23,55.26],'Aran Islands':[-9.76,53.12],'Great Blasket':[-10.54,52.10],'Skellig Michael':[-10.54,51.77],'Fastnet':[-9.60,51.389]}

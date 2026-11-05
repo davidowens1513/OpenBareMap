@@ -87,8 +87,16 @@ def main(region):
     if digest(work/'combined.osm.pbf')!=merged['combinedSHA256'] or digest(work/'overlays.osm.gz')!=merged['overlaySHA256'] or json.loads(region_path(region,'sources.lock.json').read_text())['osm']['sha256']!=merged['osmSHA256']:raise ValueError('Merged Garmin source changed')
     split=work/'split'
     if not split.exists():
-        split.mkdir();run([java_path(),'-Xmx6g','-jar',str(ROOT/'garmin/tools/splitter-r654/splitter.jar'),'--mapid='+str(p['garminTileStartId']),'--description='+p['name'],'--max-nodes=1000000','--max-threads=2','--keep-complete=true','--output=pbf','--polygon-file='+str(polygon),'--output-dir='+str(split),str(work/'combined.osm.pbf')],work/'splitter.log')
+        split.mkdir()
+        command=[java_path(),'-Xmx6g','-jar',str(ROOT/'garmin/tools/splitter-r654/splitter.jar'),'--mapid='+str(p['garminTileStartId']),'--description='+p['name'],'--max-nodes=1000000','--max-threads=2','--keep-complete=true','--output=pbf','--polygon-file='+str(polygon),'--output-dir='+str(split),*(['--ignore-osm-bounds=true'] if p.get('clipSource') else []),str(work/'combined.osm.pbf')]
+        write(work/'splitter-record.json',{'command':command,'combinedSHA256':merged['combinedSHA256'],'coverageSHA256':digest(polygon),'ignoreSourceHeaderBounds':bool(p.get('clipSource'))})
+        run(command,work/'splitter.log')
     elif not (split/'template.args').exists():raise ValueError('Incomplete split stage')
+    if p.get('clipSource'):
+        from garmin_split_coverage import validate_split
+        write(work/'split-coverage-validation.json',validate_split(split/'areas.list',p))
+        for name in ('splitter-record.json','split-coverage-validation.json'):
+            shutil.copyfile(work/name,dest/name)
     # Cached split chunks retain their old source names after an identity change.
     # Assign output map IDs from the current reserved range, not template.args.
     source_tiles=sorted(split.glob('[0-9]*.osm.pbf'))
@@ -117,7 +125,7 @@ def main(region):
     with (dest/'inspection.json').open('w') as out:subprocess.run(command,stdout=out,check=True)
     # Inspect the prospective binary together with the other installed products.
     subprocess.run([str(javac),'-cp',str(jar),'-d',str(work),str(ROOT/'garmin/ValidateMapSet.java')],check=True)
-    companions=[f for f in [ROOT/'garmin/dist/OpenBareMap-Ireland.img',ROOT/'garmin/dist/OpenBareMap-My-Tracks.img',ROOT/'regions/england-wales/garmin/dist/OpenBareMap-England-Wales.img',ROOT/'regions/scotland/garmin/dist/OpenBareMap-Scotland.img'] if f.exists() and region not in f.parts]
+    companions=[f for f in [ROOT/'garmin/dist/OpenBareMap-Ireland.img',ROOT/'garmin/dist/OpenBareMap-My-Tracks.img',ROOT/'regions/england-wales/garmin/dist/OpenBareMap-England-Wales.img',ROOT/'regions/scotland/garmin/dist/OpenBareMap-Scotland.img',ROOT/'regions/sierra-nevada/garmin/dist/OpenBareMap-Sierra-Nevada.img'] if f.exists() and region not in f.parts]
     with (dest/'map-set-validation.txt').open('w') as out:subprocess.run([str(java),'-Djava.awt.headless=true',*(['-Dopenbaremap.scotland.tiles='+str(len(expected))] if region=='scotland' else []),'-Xmx2g','-cp',str(work)+':'+str(jar),'ValidateMapSet',*map(str,companions),str(image)],stdout=out,check=True)
     dist=dest/'dist';dist.mkdir(exist_ok=True);output=dist/p.get('garminFilename','OpenBareMap-England-Wales.img')
     if output.exists():raise FileExistsError(output)
@@ -131,4 +139,4 @@ def main(region):
     write(dest/'build-report.json',{'status':'compiled and structurally inspected; hardware rendering pending','familyId':p['garminFamilyId'],'garminPackageRevision':config['garminPackageRevision'],'routing':False,'output':{'path':str(output.relative_to(ROOT)),'bytes':output.stat().st_size,'sha256':digest(output)},'inspection':json.loads((dest/'inspection.json').read_text())})
 
 if __name__=='__main__':
-    parser=argparse.ArgumentParser();parser.add_argument('--region',choices=['england-wales','scotland','sierra-nevada'],required=True);args=parser.parse_args();main(args.region)
+    parser=argparse.ArgumentParser();parser.add_argument('--region',choices=['england-wales','scotland','sierra-nevada','pyrenees'],required=True);args=parser.parse_args();main(args.region)

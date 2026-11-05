@@ -1,0 +1,51 @@
+{
+  "feature_instances_by_layer": {
+    "boundary": 45181,
+    "building": 9478721,
+    "cycling_route": 13913,
+    "ferry": 578,
+    "hiking_poi": 85594,
+    "hiking_route": 56354,
+    "island_name": 2347,
+    "landcover": 4223874,
+    "mountain": 114122,
+    "natural_line": 74806,
+    "place": 1441729,
+    "poi": 679475,
+    "railway": 200939,
+    "station": 2640,
+    "transportation": 7451010,
+    "transportation_name": 2943777,
+    "water": 301028,
+    "water_name": 12836,
+    "waterway": 1969739
+  },
+  "metadata": {
+    "bounds": "-2.200000,41.900000,3.400000,43.900000",
+    "center": "0.600000,42.900000,9",
+    "description": "Full Pyrenees from Atlantic to Mediterranean, including Bayonne, French and Spanish slopes and Andorra; bounds 2.2\u00b0W\u20133.4\u00b0E, 41.9\u00b0N\u201343.9\u00b0N. Complete OSM features retained at the edge.",
+    "format": "pbf",
+    "json": "{\"vector_layers\":[{\"id\":\"boundary\",\"fields\":{\"admin_level\":\"String\",\"class\":\"String\",\"name\":\"String\"},\"minzoom\":4,\"maxzoom\":14},{\"id\":\"building\",\"fields\":{\"class\":\"String\"},\"minzoom\":13,\"maxzoom\":14},{\"id\":\"cycling_route\",\"fields\":{\"class\":\"String\",\"colour\":\"String\",\"foot\":\"String\",\"name\":\"String\",\"name_fr\":\"String\",\"network\":\"String\",\"operator\":\"String\",\"osmc:symbol\":\"String\",\"ref\":\"String\"},\"minzoom\":7,\"maxzoom\":14},{\"id\":\"ferry\",\"fields\":{\"access\":\"String\",\"class\":\"String\",\"duration\":\"String\",\"foot\":\"String\",\"name\":\"String\",\"name_fr\":\"String\",\"operator\":\"String\"},\"minzoom\":6,\"maxzoom\":14},{\"id\":\"hiking_poi\",\"fields\":{\"access\":\"String\",\"backcountry\":\"String\",\"class\":\"String\",\"drinking_water\":\"String\",\"ele_label\":\"String\",\"ele_m\":\"Number\",\"ele_raw\":\"String\",\"fee\":\"String\",\"foot\":\"String\",\"name\":\"String\",\"name_en\":\"String\",\"name_fr\":\"String\",\"official_name\":\"String\",\"opening_hours\":\"String\",\"operator\":\"String\",\"ref\":\"String\",\"shelter_type\":\"String\",\"short_name\":\"String\",\"wheelchair\":\"String\"},\"minzoom\":10,\"maxzoom\":14},{\"id\":\"hiking_route\",\"fields\":{\"class\":\"String\",\"colour\":\"String\",\"foot\":\"String\",\"name\":\"String\",\"name_en\":\"String\",\"name_fr\":\"String\",\"network\":\"String\",\"official_name\":\"String\",\"operator\":\"String\",\"osmc:symbol\":\"String\",\"ref\":\"String\",\"symbol\":\"String\"},\"minzoom\":7,\"maxzoom\":14},{\"id\":\"island_name\",\"fields\":{\"class\":\"String\",\"name\":\"String\",\"name_en\":\"String\",\"name_fr\":\"String\"},\"minzoom\":7,\"maxzoom\":14},{\"id\":\"landcover\",\"fields\":{\"class\":\"String\",\"landuse\":\"String\",\"name\":\"String\",\"name_en\":\"String\",\"name_fr\":\"String\",\"natural\":\"String\",\"official_name\":\"String\",\"short_name\":\"String\",\"wetland\":\"String\"},\"minzoom\":4,\"maxzoom\":14},{\"id\":\"mountain\",\"fields\":{\"class\":\"String\",\"ele_label\":\"String\",\"ele_m\":\"Number\",\"ele_raw\":\"String\",\"name\":\"String\",\"name_en\":\"String\",\"name_fr\":\"String\",\"official_name\":\"String\"},\"minzoom\":9,\"maxzoom\":14},{\"id\":\"natural_line\",\"fields\":{\"class\":\"String\",\"name\":\"String\",\"name_en\":\"String\",\"name_fr\":\"String\"},\"minzoom\":11,\"maxzoom\":14},{\"id\":\"place\",\"fields\":{\"class\":\"String\",\"name\":\"String\",\"name_en\":\"String\",\"name_fr\":\"String\"},\"minzoom\":4,\"maxzoom\":14},{\"id\":\"poi\",\"fields\":{\"access\":\"String\",\"category\":\"String\",\"class\":\"String\",\"foot\":\"String\",\"name\":\"String\",\"name_en\":\"String\",\"name_fr\":\"String\",\"official_name\":\"String\",\"short_name\":\"String\"},\"minzoom\":10,\"maxzoom\":14},{\"id\":\"railway\",\"fields\":{\"access\":\"String\",\"bridge\":\"String\",\"class\":\"String\",\"foot\":\"String\",\"layer\":\"String\",\"name\":\"String\",\"name_en\":\"String\",\"name_fr\":\"String\",\"official_name\":\"String\",\"operator\":\"String\",\"service\":\"String\",\"short_name\":\"String\",\"tunnel\":\"String\",\"usage\":\"String\"},\"minzoom\":6,\"maxzoom\":14},{\"id\":\"station\",\"fields\":{\"class\":\"String\",\"name\":\"String\",\"name_fr\":\"String\",\"network\":\"String\",\"official_name\":\"String\",\"operator\":\"String\",\"short_name\":\"String\"},\"minzoom\":9,\"maxzoom\":14},{\"id\":\"transportation\",\"fields\":{\"access\":\"String\",\"bicycle\":\"String\",\"bridge\":\"String\",\"class\":\"String\",\"designation\":\"String\",\"foot\":\"String\",\"horse\":\"String\",\"layer\":\"String\",\"name\":\"String\",\"ref\":\"String\",\"sac_scale\":\"String\",\"surface\":\"String\",\"tracktype\":\"String\",\"trail_visibility\":\"String\",\"tunnel\":\"String\"},\"minzoom\":4,\"maxzoom\":14},{\"id\":\"transportation_name\",\"fields\":{\"class\":\"String\",\"name\":\"String\",\"name_en\":\"String\",\"name_fr\":\"String\",\"official_name\":\"String\",\"ref\":\"String\",\"short_name\":\"String\"},\"minzoom\":10,\"maxzoom\":14},{\"id\":\"water\",\"fields\":{\"class\":\"String\",\"name\":\"String\"},\"minzoom\":4,\"maxzoom\":14},{\"id\":\"water_name\",\"fields\":{\"name\":\"String\",\"name_en\":\"String\",\"name_fr\":\"String\",\"official_name\":\"String\"},\"minzoom\":11,\"maxzoom\":14},{\"id\":\"waterway\",\"fields\":{\"class\":\"String\",\"intermittent\":\"String\",\"name\":\"String\"},\"minzoom\":4,\"maxzoom\":14}]}",
+    "maxzoom": "14",
+    "minzoom": "4",
+    "name": "OpenBareMap Pyrenees",
+    "openbaremap_contour_interval_metres": "20",
+    "openbaremap_storage_revision": "2.0.0-pyrenees-r1",
+    "type": "baselayer",
+    "version": "2.0.0"
+  },
+  "note": "Feature instances include repetition across tiles and zooms; not unique OSM objects. This checks MVT framing and layer presence, not geometry or cartographic correctness.",
+  "tiles_by_zoom": {
+    "4": 2,
+    "5": 2,
+    "6": 2,
+    "7": 6,
+    "8": 15,
+    "9": 44,
+    "10": 150,
+    "11": 546,
+    "12": 2027,
+    "13": 7721,
+    "14": 29975
+  }
+}

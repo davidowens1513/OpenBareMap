@@ -1,0 +1,20 @@
+{
+  "region": "pyrenees",
+  "mapVersion": "2.0.0",
+  "garminPackageRevision": "2.0.1-trail-detail-r1",
+  "familyId": 4836,
+  "image": {
+    "bytes": 422412288,
+    "path": "regions/pyrenees/garmin/dist/OpenBareMap-Pyrenees.img",
+    "sha256": "04527bd857abd639e6805817635cc9dfc62eade3b4659112418ea9916936825b"
+  },
+  "sourceBounds": [
+    -2.2,
+    41.9,
+    3.4,
+    43.9
+  ],
+  "nativeSections": 164,
+  "routing": false,
+  "hardwareRenderingTested": false
+}
