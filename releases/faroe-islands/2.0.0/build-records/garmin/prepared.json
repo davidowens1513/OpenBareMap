@@ -1,0 +1,128 @@
+{
+  "contours": 6118,
+  "land_polygons": 319,
+  "landcover_polygons": 8658,
+  "townlands": 0,
+  "nodes": 1411556,
+  "ways": 15260,
+  "relations": 8978,
+  "contour_intervals": {
+    "20": 5301,
+    "100": 817
+  },
+  "coverage": [
+    -7.85,
+    61.3,
+    -6.1,
+    62.5
+  ],
+  "overlay_sha256": "6505d9a3342a2a4ffe01887a7366d0e65d79dbf0430980f547152f36fea3da48",
+  "overlay_bytes": 19906915,
+  "renderFootprintSHA256": "2077f1e389c6cf2e55ac5e56702468a89fe6225b7ed517bf1f6af15366fb8a0e",
+  "polygonClipping": {
+    "land": {
+      "input": 319,
+      "inside": 319,
+      "clipped": 0,
+      "excluded": 0,
+      "repaired": 0,
+      "emitted": 319
+    },
+    "grass": {
+      "input": 3318,
+      "inside": 3318,
+      "clipped": 0,
+      "excluded": 0,
+      "repaired": 0,
+      "emitted": 3318
+    },
+    "bare_rock": {
+      "input": 1091,
+      "inside": 1091,
+      "clipped": 0,
+      "excluded": 0,
+      "repaired": 0,
+      "emitted": 1091
+    },
+    "farmland": {
+      "input": 3385,
+      "inside": 3385,
+      "clipped": 0,
+      "excluded": 0,
+      "repaired": 0,
+      "emitted": 3385
+    },
+    "beach": {
+      "input": 201,
+      "inside": 201,
+      "clipped": 0,
+      "excluded": 0,
+      "repaired": 0,
+      "emitted": 201
+    },
+    "wood": {
+      "input": 173,
+      "inside": 173,
+      "clipped": 0,
+      "excluded": 0,
+      "repaired": 0,
+      "emitted": 173
+    },
+    "scree": {
+      "input": 176,
+      "inside": 176,
+      "clipped": 0,
+      "excluded": 0,
+      "repaired": 0,
+      "emitted": 176
+    },
+    "heath": {
+      "input": 9,
+      "inside": 9,
+      "clipped": 0,
+      "excluded": 0,
+      "repaired": 0,
+      "emitted": 9
+    },
+    "wetland": {
+      "input": 45,
+      "inside": 45,
+      "clipped": 0,
+      "excluded": 0,
+      "repaired": 0,
+      "emitted": 45
+    },
+    "sand": {
+      "input": 50,
+      "inside": 50,
+      "clipped": 0,
+      "excluded": 0,
+      "repaired": 0,
+      "emitted": 50
+    },
+    "shingle": {
+      "input": 120,
+      "inside": 120,
+      "clipped": 0,
+      "excluded": 0,
+      "repaired": 0,
+      "emitted": 120
+    },
+    "scrub": {
+      "input": 90,
+      "inside": 90,
+      "clipped": 0,
+      "excluded": 0,
+      "repaired": 0,
+      "emitted": 90
+    },
+    "sea": {
+      "input": 1,
+      "inside": 1,
+      "clipped": 0,
+      "excluded": 0,
+      "repaired": 0,
+      "emitted": 1
+    }
+  }
+}

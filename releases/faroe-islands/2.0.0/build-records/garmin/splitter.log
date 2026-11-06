@@ -1,0 +1,200 @@
+Splitter version 654 compiled 2025-04-13T22:39:53+01:00
+boundary-tags=use-exclude-list
+cache=
+description=OpenBareMap Faroe Islands
+geonames-file=
+handle-element-version=remove
+ignore-osm-bounds=true
+keep-complete=true
+mapid=48380001
+max-areas=2048
+max-nodes=1000000
+max-threads=2
+mixed=false
+no-trim=false
+num-tiles=
+output=pbf
+output-dir=/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/906ead9d53a7/faroe-islands/garmin/split
+overlap=auto
+polygon-desc-file=
+polygon-file=/Volumes/Extreme SSD/Projects/OpenBareMap/regions/faroe-islands/garmin/coverage.poly
+precomp-sea=
+problem-file=
+problem-report=
+resolution=13
+route-rel-values=
+search-limit=200000
+split-file=
+status-freq=120
+stop-after=dist
+wanted-admin-level=5
+write-kml=
+Elapsed time: 0s   Memory: Current 260MB (5MB used, 255MB free) Max 6144MB
+Time started: Fri Nov 06 00:12:30 GMT 2026
+Map is being split for resolution 13:
+ - area boundaries are aligned to 0x800 map units (0.0439453125 degrees)
+ - areas are multiples of 0x800 map units wide and high
+Processing /var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/906ead9d53a7/faroe-islands/garmin/combined.osm.pbf
+Bounding box -8.690197000000001 60.86631800000001 -5.515148 62.905232000000005
+Fill-densities-map pass took 332 ms
+Exact map coverage read from input file(s) is (57.59588956832886,-14.003684520721436) to (70.90052604675293,9.9755859375)
+Exact map coverage after applying bounding box of polygon-file is (61.29999876022339,-7.850010395050049) to (62.49999761581421,-6.100008487701416)
+Rounded map coverage is (61.259765625,-7.8662109375) to (62.5341796875,-6.064453125)
+Splitting nodes into areas containing a maximum of 1,000,000 nodes each...
+splitting Faroe Islands
+Highest node count in a single grid element is 79,448
+Highest node count in a single grid element within the bounding polygon is 79,448
+Splitting tile (61.259765625,-7.8662109375) to (62.5341796875,-6.064453125) with 2,609,305 nodes, goal is to get near 3 tiles
+S2 FULL: step 1 goal: 3 tiles, now: 5 tile(s). The smallest node count is 401050 (40 %), cache size 0
+S2 FULL: step 2 goal: 3 tiles, now: 3 tile(s). The smallest node count is 818004 (81 %), cache size 0
+S2 FULL goal was 3 tiles, solver finished with : 3 tile(s). The smallest node count is 818004 (81 %)
+Solution is nice. Can't find a better solution with search-limit 200000: 3 tile(s). The smallest node count is 818004 (81 %)
+Trying to cut the areas so that they fit into the polygon ...
+Area 48380001 covers (61.29999876022339,-7.850010395050049) to (62.05078125,-6.100008487701416) and contains 818004 nodes (81 %)
+Area 48380002 covers (62.05078125,-7.850010395050049) to (62.49999761581421,-6.943359375) and contains 841851 nodes (84 %)
+Area 48380003 covers (62.05078125,-6.943359375) to (62.49999761581421,-6.100008487701416) and contains 949450 nodes (94 %)
+Creating the initial areas took 5 ms
+3 areas:
+Area 48380001: 2856787,-365837 to 2891776,-284281 covers (0x2b9753,0xfffa6af3) to (0x2c2000,0xfffba987) OpenBareMap Faroe Islands
+Area 48380002: 2891776,-365837 to 2912711,-323584 covers (0x2c2000,0xfffa6af3) to (0x2c71c7,0xfffb1000) OpenBareMap Faroe Islands
+Area 48380003: 2891776,-323584 to 2912711,-284281 covers (0x2c2000,0xfffb1000) to (0x2c71c7,0xfffba987) OpenBareMap Faroe Islands
+Generating problem list for 3 distinct areas
+Processing 3 areas in a single pass
+Pseudo areas:
+Pseudo area -4 covers (62.49999761581421,-180.0) to (90.0,180.0)
+Pseudo area -5 covers (-90.0,-180.0) to (61.29999876022339,180.0)
+Pseudo area -6 covers (61.29999876022339,-180.0) to (62.49999761581421,-7.850010395050049)
+Pseudo area -7 covers (61.29999876022339,-6.100008487701416) to (62.49999761581421,180.0)
+cached 8 combinations of areas that form rectangles.
+AreaGridTree [512][512] for grid area (-90.0,-180.0) to (90.0,180.0) requires max. 3 checks for each node (0 sub grid(s))
+Starting problem-list-generator pass(es)
+-----------------------------------
+Starting problem-list-generator pass 1 of 1
+way Map: uses SparseLong2IntMap
+coord Map: uses SparseLong2IntMap
+Processing /var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/906ead9d53a7/faroe-islands/garmin/combined.osm.pbf
+Bounding box -8.690197000000001 60.86631800000001 -5.515148 62.905232000000005
+Processing /var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/906ead9d53a7/faroe-islands/garmin/combined.osm.pbf
+Bounding box -8.690197000000001 60.86631800000001 -5.515148 62.905232000000005
+coord Map: 2,610,046 stored long/int pairs require ca. 345 bytes per pair. 53,238 chunks are used, the avg. number of values in one 64-chunk is 49.
+coord Map details: ~858 MB, including 107 array(s) with 8 MB
+
+way Map: 111,075 stored long/int pairs require ca. 984 bytes per pair. 6,333 chunks are used, the avg. number of values in one 64-chunk is 17.
+way Map details: ~104 MB, including 13 array(s) with 8 MB
+
+
+  Number of stored area combis for nodes: 2,610,046
+  Number of stored area combis for ways: 111,075
+  Number of stored Integers for rels: 0
+  Number of stored combis in dictionary: 29
+  Number of detected problem ways: 592
+  Number of detected problem rels: 100
+  JVM Memory Info: Current 2592MB (1608MB used, 984MB free) Max 6144MB
+
+Problem-list-generator pass 1 took 397 ms
+Problem-list-generator pass(es) took 425 ms
+cached 2 combinations of areas that form rectangles.
+AreaGridTree [512][512] for grid area (61.29999876022339,-7.850010395050049) to (62.49999761581421,-6.100008487701416) requires max. 3 checks for each node (0 sub grid(s))
+-----------------------------------
+Executing multi-tile analyses phase 1
+Processing /var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/906ead9d53a7/faroe-islands/garmin/combined.osm.pbf
+Bounding box -8.690197000000001 60.86631800000001 -5.515148 62.905232000000005
+Stats for MultiTileProcessor pass 1
+  SparseBitSet problemRels contains now 100 Ids.
+  SparseBitSet neededWays contains now 592 Ids.
+  SparseBitSet mpWays contains now 0 Ids.
+  SparseBitSet neededNodes contains now 0 Ids.
+  Number of stored relations: 10,211
+  Number of stored tile combinations in multiTileDictionary: 7
+Status: Finished collecting relations.
+  JVM Memory Info: Current 2592MB (1666MB used, 926MB free) Max 6144MB
+starting to resolve relations containing problem relations ...
+Finished adding members of problem relations to problem lists.
+Stats for MultiTileProcessor pass 1
+  SparseBitSet neededWays contains now 2,157 Ids.
+  SparseBitSet mpWays contains now 1,664 Ids.
+  SparseBitSet neededNodes contains now 18 Ids.
+  Number of stored relations: 100
+  Number of stored tile combinations in multiTileDictionary: 7
+Status: starting to collect ids of needed way nodes ...
+Multi-tile analyses phase 1 took 13 ms
+-----------------------------------
+Executing multi-tile analyses phase 2
+Processing /var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/906ead9d53a7/faroe-islands/garmin/combined.osm.pbf
+Bounding box -8.690197000000001 60.86631800000001 -5.515148 62.905232000000005
+Stats for MultiTileProcessor pass 2
+  SparseBitSet neededWays contains now 2,157 Ids.
+  SparseBitSet mpWays contains now 1,015 Ids.
+  SparseBitSet neededNodes contains now 236,840 Ids.
+  Number of stored relations: 100
+  Number of stored tile combinations in multiTileDictionary: 7
+Status: Finished collecting problem ways.
+Found 1,142 of 2,157 needed ways.
+Found 649 of 1,664 needed multipolygon ways.
+Stats for MultiTileProcessor pass 2
+  SparseBitSet neededWays contains now 2,157 Ids.
+  SparseBitSet mpWays contains now 1,015 Ids.
+  SparseBitSet neededNodes contains now 236,840 Ids.
+  Number of stored relations: 100
+  Number of stored tile combinations in multiTileDictionary: 7
+Status: Starting to collect coordinates for 236,840 needed nodes.
+  JVM Memory Info: Current 2592MB (1855MB used, 737MB free) Max 6144MB
+Multi-tile analyses phase 2 took 58 ms
+-----------------------------------
+Executing multi-tile analyses phase 3
+Processing /var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/906ead9d53a7/faroe-islands/garmin/combined.osm.pbf
+Bounding box -8.690197000000001 60.86631800000001 -5.515148 62.905232000000005
+Found 236,840 of 236,840 needed nodes.
+  JVM Memory Info: Current 2592MB (1860MB used, 732MB free) Max 6144MB
+Calculating tiles for problem relations...
+Warning: Incomplete multipolygon relation 16464296 (Norden / Pohjoismaat / Norðurlönd): using bbox of closed polygon to calc tiles, ways: [1224869326, 993986849, 1224869328]
+Warning: Incomplete multipolygon relation 16710856 (UTC−01:00 standard time): using bbox of unclosed polygon to calc tiles, ways: [1224869325, 1224869328, 1224869329]
+Warning: Incomplete multipolygon relation 16732433 (UTC+00:00 standard time): using bbox of unclosed polygon to calc tiles, ways: [1224869329, 1224869328, 1224869325]
+Stats for MultiTileProcessor pass 3
+  SparseBitSet neededWays contains now 2,157 Ids.
+  Number of stored tile combinations in multiTileDictionary: 7
+Status: Making sure that needed way nodes of relations are written to the correct tiles...
+Multi-tile analyses phase 3 took 250 ms
+-----------------------------------
+Executing multi-tile analyses phase 4
+Processing /var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/906ead9d53a7/faroe-islands/garmin/combined.osm.pbf
+Bounding box -8.690197000000001 60.86631800000001 -5.515148 62.905232000000005
+Stats for MultiTileProcessor pass 4
+  SparseBitSet neededWays contains now 2,157 Ids.
+  Number of stored tile combinations in multiTileDictionary: 7
+  nodeWriterMap contains 236,840 pairs.
+  wayWriterMap contains 1,142 pairs.
+  relWriterMap contains 100 pairs.
+Status: Finished processing problem lists.
+Multi-tile analyses phase 4 took 60 ms
+-----------------------------------
+Writing results of MultiTileAnalyser to temp files ...
+Wrote 236840 node pairs to /var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/906ead9d53a7/faroe-islands/garmin/split/node2950805770324159200.tmp
+Wrote 1142 way pairs to /var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/906ead9d53a7/faroe-islands/garmin/split/way16128976076067066780.tmp
+Wrote 100 rel pairs to /var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/906ead9d53a7/faroe-islands/garmin/split/rel14126047996618437680.tmp
+Writing temp files took 26 ms
+Distributing data Fri Nov 06 00:12:31 GMT 2026
+Processing 3 areas in a single pass
+coord Map: uses SparseLong2IntMap
+way Map: uses SparseLong2IntMap
+Starting distribution pass 1 of 1, processing 3 areas (48380001 to 48380003)
+Processing /var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/906ead9d53a7/faroe-islands/garmin/combined.osm.pbf
+Bounding box -8.690197000000001 60.86631800000001 -5.515148 62.905232000000005
+Writing ways Fri Nov 06 00:12:32 GMT 2026
+Writing relations Fri Nov 06 00:12:32 GMT 2026
+coord Map: 2,609,219 stored long/int pairs require ca. 345 bytes per pair. 53,179 chunks are used, the avg. number of values in one 64-chunk is 49.
+coord Map details: ~858 MB, including 107 array(s) with 8 MB
+
+way Map: 111,075 stored long/int pairs require ca. 984 bytes per pair. 6,333 chunks are used, the avg. number of values in one 64-chunk is 17.
+way Map details: ~104 MB, including 13 array(s) with 8 MB
+
+  JVM Memory Info: Current 2692MB (1799MB used, 893MB free) Max 6144MB
+Full Node tests:  42,277
+Quick Node tests: 2,588,099
+Thread worker-0 has finished
+Distribution pass(es) took 1555 ms
+temporary file /var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/906ead9d53a7/faroe-islands/garmin/split/node2950805770324159200.tmp was deleted
+temporary file /var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/906ead9d53a7/faroe-islands/garmin/split/way16128976076067066780.tmp was deleted
+temporary file /var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/906ead9d53a7/faroe-islands/garmin/split/rel14126047996618437680.tmp was deleted
+Time finished: Fri Nov 06 00:12:32 GMT 2026
+Total time taken: 2 seconds

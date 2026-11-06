@@ -1,6 +1,6 @@
 {
   "garminPackageRevision": "2.0.1-trail-detail-r1",
-  "date": "2026-11-05",
+  "date": "2026-11-06",
   "devices": [
     {
       "device": "Montana 750i",
@@ -481,6 +481,55 @@
       "mapVersion": "2.0.0",
       "garminPackageRevision": "2.0.1-trail-detail-r1",
       "familyId": 4837
+    },
+    {
+      "device": "Montana 750i",
+      "storage": "Memory card/Garmin",
+      "file": "OpenBareMap-Faroe-Islands.img",
+      "bytes": 7987200,
+      "sha256": "33d63a6050f29fdf72187ad69af3e4396536a6c88aa723da15800065a68bf216",
+      "fullReadbackVerified": true,
+      "otherMapNamesAndSizesPreserved": true,
+      "verifiedUTC": "2026-11-06T00:15:26.046728+00:00",
+      "hardwareVisualReview": "Pending device restart and on-screen review",
+      "region": "faroe-islands",
+      "mapVersion": "2.0.0",
+      "garminPackageRevision": "2.0.1-trail-detail-r1",
+      "familyId": 4838
+    },
+    {
+      "device": "GPSMAP H1",
+      "storageId": 65537,
+      "folderId": 1,
+      "objectId": 748,
+      "file": "OpenBareMap-Faroe-Islands.img",
+      "bytes": 7987200,
+      "sha256": "33d63a6050f29fdf72187ad69af3e4396536a6c88aa723da15800065a68bf216",
+      "fullReadbackVerified": true,
+      "otherMapNamesAndSizesPreserved": true,
+      "verifiedUTC": "2026-11-06T00:15:28.036752+00:00",
+      "hardwareVisualReview": "Pending device restart and on-screen review",
+      "region": "faroe-islands",
+      "mapVersion": "2.0.0",
+      "garminPackageRevision": "2.0.1-trail-detail-r1",
+      "familyId": 4838
+    },
+    {
+      "device": "GPSMAP 67i",
+      "storageId": 131073,
+      "folderId": 231,
+      "objectId": 239,
+      "file": "OpenBareMap-Faroe-Islands.img",
+      "bytes": 7987200,
+      "sha256": "33d63a6050f29fdf72187ad69af3e4396536a6c88aa723da15800065a68bf216",
+      "fullReadbackVerified": true,
+      "otherMapNamesAndSizesPreserved": true,
+      "verifiedUTC": "2026-11-06T00:15:31.003348+00:00",
+      "hardwareVisualReview": "Pending device restart and on-screen review",
+      "region": "faroe-islands",
+      "mapVersion": "2.0.0",
+      "garminPackageRevision": "2.0.1-trail-detail-r1",
+      "familyId": 4838
     }
   ],
   "lastInstallationUpdate": "2026-11-05",

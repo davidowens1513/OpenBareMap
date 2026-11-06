@@ -55,6 +55,9 @@ class Handler(BaseHTTPRequestHandler):
             else:
                 self.reply(200, payload, 'image/png' if dataset == 'hillshade' else 'application/x-protobuf', payload[:2] == b'\x1f\x8b')
             return
+        if path=='/terrain-attribution.html':
+            from regions import terrain_file
+            self.reply(200,terrain_file(self.server.region,'terrain-attribution.html').read_bytes(),'text/html; charset=utf-8');return
         if path in ['/tiles.json','/topography.json','/hillshade.json','/grid.json']:
             dataset={'/tiles.json':'basemap','/topography.json':'topography','/hillshade.json':'hillshade','/grid.json':'grid'}[path]
             if dataset not in self.server.datasets:
@@ -66,7 +69,8 @@ class Handler(BaseHTTPRequestHandler):
             attribution='© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap contributors</a>'
             if dataset=='grid':attribution=self.server.grid_attribution
             if dataset=='hillshade':
-                attribution='Terrain Tiles / Mapzen · Copernicus EU-DEM · USGS · NOAA · <a href="/terrain-attribution.html">Terrain attribution</a>'
+                from regions import profile
+                attribution=profile(self.server.region).get('terrainAttribution','Terrain Tiles / Mapzen · Copernicus EU-DEM · USGS · NOAA')+' · <a href="/terrain-attribution.html">Terrain attribution</a>'
             data={'tilejson':'3.0.0','name':metadata.get('name',dataset),'scheme':'xyz','tiles':[origin+'/tiles/'+prefix+'{z}/{x}/{y}.'+suffix],'minzoom':int(metadata['minzoom']),'maxzoom':int(metadata['maxzoom']),'bounds':list(map(float,metadata['bounds'].split(','))),'attribution':attribution}
             self.reply(200,json.dumps(data).encode(),'application/json')
             return
@@ -118,7 +122,7 @@ class MapServer(ThreadingHTTPServer):
 def main():
     parser=argparse.ArgumentParser()
     parser.add_argument('--port',type=int,default=8765)
-    parser.add_argument('--region',choices=['ireland','england-wales','scotland','sierra-nevada','pyrenees','dolomites'],default='ireland')
+    parser.add_argument('--region',choices=['ireland','england-wales','scotland','sierra-nevada','pyrenees','dolomites','faroe-islands'],default='ireland')
     parser.add_argument('--database',type=Path,help='Optional override for the base vector database')
     args=parser.parse_args()
     from regions import active_map, profile

@@ -108,6 +108,9 @@ def fetch_osm(region):
     print('Full '+p['label']+' OSM source locked.',flush=True)
 
 def fetch_terrain(region):
+    if profile(region).get('terrainProvider')=='copernicus-glo30':
+        from fetch_copernicus import fetch
+        return fetch(region)
     p=profile(region);lockpath=region_path(region,'terrain-sources.lock.json')
     if lockpath.exists():verify(json.loads(lockpath.read_text())['assets']);return
     west,south,east,north=p['terrainBounds']
@@ -124,6 +127,9 @@ def fetch_terrain(region):
     write(lockpath,{'dataset':'Mapzen/Terrain Tiles skadi composite elevation, not pure SRTM','coverage':p['terrainBounds'],'grid':'3601 by 3601 signed 16-bit heights per degree tile','accessed_utc':datetime.now(timezone.utc).isoformat(),'documentation':'https://github.com/tilezen/joerd/tree/master/docs','assets':assets})
 
 def fetch_dem_padding(region):
+    if profile(region).get('terrainProvider')=='copernicus-glo30':
+        from fetch_copernicus import fetch
+        return fetch(region,padding=True)
     p=profile(region);lockpath=ROOT/'regions'/region/'garmin/dem-padding.lock.json'
     if lockpath.exists():verify(json.loads(lockpath.read_text())['assets']);return
     existing={Path(item['path']).name for item in json.loads(region_path(region,'terrain-sources.lock.json').read_text())['assets']}
@@ -141,7 +147,7 @@ def fetch_dem_padding(region):
     print('Garmin DEM padding locked:',len(assets),'additional cells',flush=True)
 
 if __name__=='__main__':
-    parser=argparse.ArgumentParser();parser.add_argument('--region',choices=['england-wales','scotland','sierra-nevada','pyrenees','dolomites'],required=True);parser.add_argument('--stage',choices=['osm','terrain','padding','all'],default='all');args=parser.parse_args()
+    parser=argparse.ArgumentParser();parser.add_argument('--region',choices=['england-wales','scotland','sierra-nevada','pyrenees','dolomites','faroe-islands'],required=True);parser.add_argument('--stage',choices=['osm','terrain','padding','all'],default='all');args=parser.parse_args()
     if args.stage=='padding':fetch_dem_padding(args.region)
     if args.stage in ('terrain','all'):fetch_terrain(args.region)
     if args.stage in ('osm','all'):fetch_osm(args.region)

@@ -12,7 +12,7 @@
     "steps"
   ],
   "collectionRevision": "2.0.1-trail-detail-r1",
-  "collectionUpdatedUTC": "2026-11-05T23:33:00.786198+00:00",
+  "collectionUpdatedUTC": "2026-11-06T00:20:39.786192+00:00",
   "drawPriority": 25,
   "fineContourResolution": 23,
   "format": "openbaremap-garmin-release-v1",
@@ -99,6 +99,39 @@
       "sourceLockSHA256": "ccff46e007e87c93ef013e66bbdd759167e9856f67f5113667d0f2deffa6e577",
       "terrainLockSHA256": "d1f1484cb49fab6439a925797c71bd4cb7ca6310fb43c1fcbdc5e09d1ddf5797",
       "tileCount": 324
+    },
+    "faroe-islands": {
+      "backgroundValidation": {
+        "bytes": 189,
+        "path": "garmin/releases/2.0.1-trail-detail-r1/faroe-islands-background-validation.txt",
+        "sha256": "dee037226047e1634539263f37879c300b94e2db76487fb81443ad6a27b0177e"
+      },
+      "buildReport": {
+        "bytes": 3131,
+        "path": "regions/faroe-islands/garmin/build-report.json",
+        "sha256": "a2204d33b299fa6e5b96a5a307a2117cd07c0100010be5470ab09b678796b465"
+      },
+      "bytes": 7987200,
+      "downloadURL": "https://downloads.appsbyonzy.dev/Garmin/OpenBareMap-Faroe-Islands.img?v=2.0.1-trail-detail-r1",
+      "familyId": 4838,
+      "garminPackageRevision": "2.0.1-trail-detail-r1",
+      "instructionsURL": "https://downloads.appsbyonzy.dev/Garmin/faroe-islands-instructions.txt",
+      "mapVersion": "2.0.0",
+      "path": "regions/faroe-islands/garmin/dist/OpenBareMap-Faroe-Islands.img",
+      "renderFootprint": {
+        "bytes": 739,
+        "path": "regions/faroe-islands/garmin/render-coverage.geojson",
+        "sha256": "2077f1e389c6cf2e55ac5e56702468a89fe6225b7ed517bf1f6af15366fb8a0e"
+      },
+      "renderFootprintLock": {
+        "bytes": 1501,
+        "path": "regions/faroe-islands/garmin/render-coverage.lock.json",
+        "sha256": "b48e7e086158c5df0463fabf7c348e3ef31de0e044ee0a6a33fb8c6bf1e5d706"
+      },
+      "sha256": "33d63a6050f29fdf72187ad69af3e4396536a6c88aa723da15800065a68bf216",
+      "sourceLockSHA256": "be908805ada78cdcf1878df0afbe570dbd95b98b6ee9817822e1496b7a5f3e01",
+      "terrainLockSHA256": "c6de48e7e31d53e990b8b76fb832ea5d3841f5cfb2a2bea7ca94eea7b0341263",
+      "tileCount": 3
     },
     "ireland": {
       "backgroundValidation": {
@@ -237,9 +270,9 @@
   "routing": false,
   "transparent": true,
   "validation": {
-    "bytes": 992,
+    "bytes": 1122,
     "path": "garmin/releases/2.0.1-trail-detail-r1/map-set-validation.txt",
-    "sha256": "01160f84fb02916b2498fbc2c22dc02bb20589415811d14d178abbade923367d"
+    "sha256": "d4b20b631ccd94e0d60271b1ded05d94177ee28715490c178361808f016d4148"
   },
   "whiteBacking": false
 }

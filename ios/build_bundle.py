@@ -6,7 +6,7 @@ ROOT=Path(__file__).resolve().parents[1]
 import sys
 sys.path.insert(0,str(ROOT/"scripts"))
 from package_resources import build_capped_coast, copy_map_file
-from regions import profile, active_map, region_style, provenance_files, region_path
+from regions import terrain_file,apply_terrain_notice,profile, active_map, region_style, provenance_files, region_path
 def sha(path):
     with path.open('rb') as f:return hashlib.file_digest(f,'sha256').hexdigest()
 def write(path,obj):path.write_text(json.dumps(obj,indent=2,ensure_ascii=False)+'\n')
@@ -30,19 +30,19 @@ def assemble(destination, region='ireland'):
     source_files['coast']='maps/coast.mbtiles';records['coast']={'path':'maps/coast.mbtiles','sha256':sha(coast),'derived_from':active['datasets']['topography']['sha256'],'maxzoom':12,'operation':'Preserve land-layer MVT bytes only through zoom 12; omit other layers.'}
     for source,target in [('viewer/fonts','fonts'),('viewer/sprites','sprites'),('app-legend' if region=='ireland' else 'regions/'+region+'/legend','legend')]:shutil.copytree(ROOT/source,bundle/target)
     if edition['townlands']:shutil.copyfile(ROOT/'viewer/townlands.geojson',bundle/'townlands.geojson')
-    shutil.copyfile(ROOT/'viewer/terrain-attribution.html',bundle/'terrain-attribution.html')
+    shutil.copyfile(terrain_file(region,'terrain-attribution.html'),bundle/'terrain-attribution.html')
     (bundle/'provenance').mkdir()
     for source in provenance_files(region):
         shutil.copyfile(source,bundle/'provenance'/source.name)
     shutil.copyfile(ROOT/'regions'/region/'region.json',bundle/'provenance/region.json')
     for name in ['terrain-attribution.md','terrain-data-sources.md']:
-        shutil.copyfile(ROOT/'data'/name,bundle/'provenance'/name)
+        shutil.copyfile(terrain_file(region,name),bundle/'provenance'/name)
     style=region_style(region)
     for name,path in source_files.items():
         source=style['sources'][name];source.pop('tiles',None);source['url']='mbtiles://{bundle}/'+path
     if edition['townlands']:style['sources']['townlands']['data']='{bundle}/townlands.geojson'
     style['sources']['basemap']['attribution']='© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap contributors</a>'
-    style['sources']['hillshade']['attribution']='Terrain Tiles / Mapzen · Copernicus EU-DEM · USGS · NOAA'
+    style['sources']['hillshade']['attribution']=edition.get('terrainAttribution','Terrain Tiles / Mapzen · Copernicus EU-DEM · USGS · NOAA')
     style['glyphs']='{bundle}/fonts/{fontstack}/{range}.pbf';style['sprite']='{bundle}/sprites/outdoors'
     write(bundle/'style.json',style)
     commit=subprocess.check_output(['git','rev-parse','HEAD'],cwd=ROOT,text=True).strip()
@@ -61,6 +61,7 @@ def assemble(destination, region='ireland'):
     if region != 'ireland':
         for file in [destination/'INTEGRATION.txt',bundle/'INTEGRATION.txt']:
             file.write_text(file.read_text().replace('Start around longitude -8.15, latitude 53.4, zoom 7. The map is designed for full-island coverage.', f"Use the region bounds in manifest.json, or longitude {edition['destinations']['island'][0]}, latitude {edition['destinations']['island'][1]}, zoom {edition['destinations']['island'][2]}, for {edition['name']}."))
+    apply_terrain_notice(bundle,region)
     inventory=[]
     for p in sorted(bundle.rglob('*')):
         if p.is_file():inventory.append({'path':str(p.relative_to(bundle)),'bytes':p.stat().st_size,'sha256':sha(p)})
@@ -86,4 +87,4 @@ def assemble(destination, region='ireland'):
     validation['totalBytes']=sum(p.stat().st_size for p in bundle.rglob('*') if p.is_file());validation['fileCount']=sum(1 for p in bundle.rglob('*') if p.is_file());write(destination/'validation.json',validation)
     print(json.dumps({'bundle':str(bundle),'bytes':validation['totalBytes'],'files':validation['fileCount']},indent=2))
 if __name__=='__main__':
-    parser=argparse.ArgumentParser();parser.add_argument('--output',type=Path);parser.add_argument('--region',choices=['ireland','england-wales','scotland','sierra-nevada','pyrenees','dolomites'],default='ireland');args=parser.parse_args();assemble((args.output or (ROOT/'ios/package' if args.region=='ireland' else ROOT/'regions'/args.region/'ios')).resolve(),args.region)
+    parser=argparse.ArgumentParser();parser.add_argument('--output',type=Path);parser.add_argument('--region',choices=['ireland','england-wales','scotland','sierra-nevada','pyrenees','dolomites','faroe-islands'],default='ireland');args=parser.parse_args();assemble((args.output or (ROOT/'ios/package' if args.region=='ireland' else ROOT/'regions'/args.region/'ios')).resolve(),args.region)

@@ -1,0 +1,24 @@
+#
+# This file can be given to mkgmap using the -c option
+# Please edit it first to add a description of each map.
+#
+
+# You can set the family id for the map
+# family-id: 980
+# product-id: 1
+
+# Following is a list of map tiles.  Add a suitable description
+# for each one.
+
+mapname: 48380001
+description: OpenBareMap Faroe Islands
+input-file: 48380001.osm.pbf
+
+mapname: 48380002
+description: OpenBareMap Faroe Islands
+input-file: 48380002.osm.pbf
+
+mapname: 48380003
+description: OpenBareMap Faroe Islands
+input-file: 48380003.osm.pbf
+

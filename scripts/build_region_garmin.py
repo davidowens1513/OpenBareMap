@@ -10,7 +10,7 @@ import subprocess
 import sys
 sys.path.insert(0,str(Path(__file__).resolve().parents[1]/'garmin'))
 from openbaremap import ROOT,digest,write
-from regions import profile,region_path,garmin_work,REGIONS
+from regions import terrain_file,profile,region_path,garmin_work,REGIONS
 from build import java_path,tools,run
 from identities import validate_config,write_tile_args
 
@@ -71,6 +71,7 @@ def main(region):
     if not polygon.exists():polygon_union(region,polygon)
     copyright_file=dest/'copyright.txt'
     copyright_file.write_text((ROOT/'garmin/copyright.txt').read_text().replace('Ireland',p['label']).replace('Townlands','Inherited font and pattern assets'))
+    if p.get('terrainNotice'):copyright_file.write_text(copyright_file.read_text().replace('Terrain Tiles / Mapzen composite elevation; see distributed attribution',p['terrainNotice']))
     options=['--max-jobs=2','--style-file='+str(style),'--family-id='+str(p['garminFamilyId']),'--product-id=1','--family-name='+p['name'],'--series-name=OpenBareMap Garmin 2.0','--description='+p['name']+' 2.0','--code-page=1252','--lower-case','--name-tag-list=name:en,name,name:'+p.get('nativeLanguage','cy'),'--levels=0:24,1:23,2:22,3:20,4:18,5:16','--gmapsupp','--transparent','--draw-priority=25','--add-pois-to-areas','--dem='+str(work/'hgt'),'--dem-poly='+str(polygon),'--dem-dists=3312,3312,13248,26512,53024,106048','--dem-interpolation=bilinear','--copyright-file='+str(copyright_file)]
     if p.get('coverageBoundary'):copyright_file.write_text(copyright_file.read_text()+'\nNational park boundary: Fuente: Organismo Autónomo Parques Nacionales (MITECO/OAPN), CC BY 4.0. See boundary-source.json.\n')
     from garmin_render_coverage import generate as generate_render_coverage
@@ -88,11 +89,11 @@ def main(region):
     split=work/'split'
     if not split.exists():
         split.mkdir()
-        command=[java_path(),'-Xmx6g','-jar',str(ROOT/'garmin/tools/splitter-r654/splitter.jar'),'--mapid='+str(p['garminTileStartId']),'--description='+p['name'],'--max-nodes=1000000','--max-threads=2','--keep-complete=true','--output=pbf','--polygon-file='+str(polygon),'--output-dir='+str(split),*(['--ignore-osm-bounds=true'] if p.get('clipSource') else []),str(work/'combined.osm.pbf')]
-        write(work/'splitter-record.json',{'command':command,'combinedSHA256':merged['combinedSHA256'],'coverageSHA256':digest(polygon),'ignoreSourceHeaderBounds':bool(p.get('clipSource'))})
+        command=[java_path(),'-Xmx6g','-jar',str(ROOT/'garmin/tools/splitter-r654/splitter.jar'),'--mapid='+str(p['garminTileStartId']),'--description='+p['name'],'--max-nodes=1000000','--max-threads=2','--keep-complete=true','--output=pbf','--polygon-file='+str(polygon),'--output-dir='+str(split),*(['--ignore-osm-bounds=true'] if p.get('ignoreSourceHeaderBounds',p.get('clipSource')) else []),str(work/'combined.osm.pbf')]
+        write(work/'splitter-record.json',{'command':command,'combinedSHA256':merged['combinedSHA256'],'coverageSHA256':digest(polygon),'ignoreSourceHeaderBounds':bool(p.get('ignoreSourceHeaderBounds',p.get('clipSource')))})
         run(command,work/'splitter.log')
     elif not (split/'template.args').exists():raise ValueError('Incomplete split stage')
-    if p.get('clipSource'):
+    if p.get('clipSource') or p.get('garminCoverageBounds'):
         from garmin_split_coverage import validate_split
         write(work/'split-coverage-validation.json',validate_split(split/'areas.list',p))
         for name in ('splitter-record.json','split-coverage-validation.json'):
@@ -121,7 +122,7 @@ def main(region):
     java=Path(java_path());javac=java.with_name('javac');jar=ROOT/'garmin/tools/mkgmap-r4924/mkgmap.jar'
     subprocess.run([str(javac),'-cp',str(jar),'-d',str(work),str(ROOT/'garmin/InspectMap.java'),str(ROOT/'garmin/CheckRegionalBackgrounds.java')],check=True)
     with (dest/'background-validation.txt').open('w') as out:subprocess.run([str(java),'-Xmx2g','-cp',str(work)+':'+str(jar),'CheckRegionalBackgrounds',region,str(image)],stdout=out,check=True)
-    command=[str(java),'-Xmx2g','-cp',str(work)+':'+str(jar),'InspectMap',str(compile_dir),*p.get('inspectionNames',['London','Cardiff','Newcastle upon Tyne','Plymouth','Carlisle'])]
+    command=[str(java),*(['-Dopenbaremap.requireBog=false'] if not p.get('requireBogFeatures',True) else []),'-Xmx2g','-cp',str(work)+':'+str(jar),'InspectMap',str(compile_dir),*p.get('inspectionNames',['London','Cardiff','Newcastle upon Tyne','Plymouth','Carlisle'])]
     with (dest/'inspection.json').open('w') as out:subprocess.run(command,stdout=out,check=True)
     # Inspect the prospective binary together with the other installed products.
     subprocess.run([str(javac),'-cp',str(jar),'-d',str(work),str(ROOT/'garmin/ValidateMapSet.java')],check=True)
@@ -136,8 +137,8 @@ def main(region):
     (dist/'INSTALL.txt').write_text(garmin_instructions(region,output.name))
     shutil.copyfile(copyright_file,dist/'ATTRIBUTION.txt')
     if p.get('coverageBoundary'):shutil.copyfile(region_path(region,'boundary-source.json'),dist/'boundary-source.json')
-    for name in ('terrain-attribution.md','terrain-data-sources.md'):shutil.copyfile(ROOT/'data'/name,dist/name)
+    for name in ('terrain-attribution.md','terrain-data-sources.md'):shutil.copyfile(terrain_file(region,name),dist/name)
     write(dest/'build-report.json',{'status':'compiled and structurally inspected; hardware rendering pending','familyId':p['garminFamilyId'],'garminPackageRevision':config['garminPackageRevision'],'routing':False,'output':{'path':str(output.relative_to(ROOT)),'bytes':output.stat().st_size,'sha256':digest(output)},'inspection':json.loads((dest/'inspection.json').read_text())})
 
 if __name__=='__main__':
-    parser=argparse.ArgumentParser();parser.add_argument('--region',choices=['england-wales','scotland','sierra-nevada','pyrenees','dolomites'],required=True);args=parser.parse_args();main(args.region)
+    parser=argparse.ArgumentParser();parser.add_argument('--region',choices=['england-wales','scotland','sierra-nevada','pyrenees','dolomites','faroe-islands'],required=True);args=parser.parse_args();main(args.region)

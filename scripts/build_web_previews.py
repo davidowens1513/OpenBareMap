@@ -3,7 +3,7 @@
 import argparse,hashlib,json,shutil,sqlite3,sys,tarfile,urllib.request
 from pathlib import Path
 from concurrent.futures import ThreadPoolExecutor
-from regions import ROOT,active_map,profile,region_style,REGIONS
+from regions import terrain_html,ROOT,active_map,profile,region_style,REGIONS
 from pmtiles.convert import mbtiles_to_pmtiles
 from pmtiles.reader import Reader,MmapSource
 from package_resources import build_capped_coast
@@ -18,7 +18,7 @@ def build(output,origin,regions=None):
  output.mkdir(parents=True);assets=output/'assets';assets.mkdir();maps=output/'data';maps.mkdir()
  for folder in ['fonts','sprites']:shutil.copytree(ROOT/'viewer'/folder,assets/folder)
  for file in ['maplibre-gl.js','maplibre-gl.css','LICENSE.txt']:shutil.copyfile(ROOT/'viewer/vendor'/file,assets/file)
- shutil.copyfile(ROOT/'viewer/terrain-attribution.html',assets/'terrain-attribution.html')
+ (assets/'terrain-attribution.html').write_text(terrain_html(regions))
  shutil.copyfile(ROOT/'viewer/townlands.geojson',assets/'townlands.geojson')
  package=output/'pmtiles.tgz';urllib.request.urlretrieve('https://registry.npmjs.org/pmtiles/-/pmtiles-4.5.0.tgz',package)
  with tarfile.open(package) as archive:
@@ -45,7 +45,7 @@ def build(output,origin,regions=None):
     source.pop('tiles',None);source['url']='pmtiles://'+origin.rstrip('/')+'/data/'+region+'/'+name+'.pmtiles'
    elif source_name=='townlands':source['data']=origin.rstrip('/')+'/assets/townlands.geojson'
   style['sources']['basemap']['attribution']='© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap contributors</a>'
-  style['sources']['hillshade']['attribution']='Terrain Tiles / Mapzen · Copernicus EU-DEM · USGS · NOAA · <a href="'+origin.rstrip('/')+'/assets/terrain-attribution.html">Terrain attribution</a>'
+  style['sources']['hillshade']['attribution']=p.get('terrainAttribution','Terrain Tiles / Mapzen · Copernicus EU-DEM · USGS · NOAA')+' · <a href="'+origin.rstrip('/')+'/assets/terrain-attribution.html">Terrain attribution</a>'
   style['sources'][p['gridSource']]['attribution']=p['gridName']+' ('+p['gridCRS']+')'
   style['glyphs']=origin.rstrip('/')+'/assets/fonts/{fontstack}/{range}.pbf';style['sprite']=origin.rstrip('/')+'/assets/sprites/outdoors'
   write(directory/'style.json',style)
@@ -63,4 +63,4 @@ def build(output,origin,regions=None):
  write(output/'manifest.json',{'regions':records,'pmtilesPython':'3.8.1','pmtilesJS':'4.5.0','librarySHA256':digest(assets/'pmtiles.js'),'dataOrigin':origin,'scope':'Complete selected map tiles; no regional or zoom sampling.'})
  print('Complete previews exported:',', '.join(regions),output,flush=True)
 if __name__=='__main__':
- p=argparse.ArgumentParser();p.add_argument('--output',type=Path,required=True);p.add_argument('--origin',required=True);p.add_argument('--regions',nargs='+',choices=['ireland','england-wales','scotland','sierra-nevada','pyrenees','dolomites']);args=p.parse_args();build(args.output.resolve(),args.origin,args.regions)
+ p=argparse.ArgumentParser();p.add_argument('--output',type=Path,required=True);p.add_argument('--origin',required=True);p.add_argument('--regions',nargs='+',choices=['ireland','england-wales','scotland','sierra-nevada','pyrenees','dolomites','faroe-islands']);args=p.parse_args();build(args.output.resolve(),args.origin,args.regions)

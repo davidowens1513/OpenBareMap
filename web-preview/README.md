@@ -5,11 +5,12 @@ The regional previews use the full accepted maps, with separate entry pages and 
 - [Ireland preview](https://downloads.appsbyonzy.dev/OpenBareMap/preview-v2/ireland/index.html)
 - [England & Wales preview](https://downloads.appsbyonzy.dev/OpenBareMap/england-wales/2.0.1/preview/england-wales/index.html)
 - [Sierra Nevada preview](https://downloads.appsbyonzy.dev/OpenBareMap/preview-v2/sierra-nevada/index.html)
+- [Faroe Islands preview](https://downloads.appsbyonzy.dev/OpenBareMap/faroe-islands/2.0.0/preview/faroe-islands/index.html?ui=20261106-regions-v2)
 - [Dolomites preview](https://downloads.appsbyonzy.dev/OpenBareMap/dolomites/2.0.0/preview/dolomites/index.html)
 - [Pyrenees preview](https://downloads.appsbyonzy.dev/OpenBareMap/pyrenees/2.0.0/preview/pyrenees/index.html)
 - [Scotland preview](https://downloads.appsbyonzy.dev/OpenBareMap/preview-v2/scotland/index.html)
 
-Each provides a Region dropdown with all six editions, an Explore destination dropdown, pan/zoom, a collapsible regional key with a clickable full-size, zoomable legend and source notices. Website buttons open the chosen region directly. Both device downloads and native app-resource exports remain separate from these online previews.
+Each provides a Region dropdown with every edition, an Explore destination dropdown, pan/zoom, a collapsible regional key with a clickable full-size, zoomable legend and source notices. Website buttons open the chosen region directly. Both device downloads and native app-resource exports remain separate from these online previews.
 
 ## Rebuild
 
@@ -81,3 +82,7 @@ An already-open tab can retain the old document until reloaded. A fresh URL such
 as `index.html?ui=regions-20261105` also bypasses a previously cached document.
 The live header and dropdown checks are recorded in
 `verification/preview-cache-policy.json`.
+
+Canonical preview links carry a UI revision query parameter so an existing browser cache cannot keep serving the old navigation when following the updated website or Region menu. Map archive URLs remain unchanged.
+
+Use `scripts/publish_preview_ui.py --output /absolute/new/preview-ui-staging` to publish only the shared controls and entry HTML to every canonical prefix with the required revalidation policy. The legacy England/Wales entry redirects to the active version. Use `--stage-only` for review without uploading.

@@ -1,0 +1,196 @@
+{
+  "accessed_utc": "2026-11-06T00:10:15.928682+00:00",
+  "assets": [
+    {
+      "bytes": 25239,
+      "operation": "Zero ocean cell: no tile in the pinned official GLO-30 public inventory",
+      "path": "data/regions/faroe-islands/elevation/N60W009.hgt.gz",
+      "sha256": "ef878716b82ba575fc448ca49fae2f720981192a09f3cb94ba95a759e62e0767",
+      "url": null
+    },
+    {
+      "bytes": 25239,
+      "operation": "Zero ocean cell: no tile in the pinned official GLO-30 public inventory",
+      "path": "data/regions/faroe-islands/elevation/N60W008.hgt.gz",
+      "sha256": "ef878716b82ba575fc448ca49fae2f720981192a09f3cb94ba95a759e62e0767",
+      "url": null
+    },
+    {
+      "bytes": 25239,
+      "operation": "Zero ocean cell: no tile in the pinned official GLO-30 public inventory",
+      "path": "data/regions/faroe-islands/elevation/N60W007.hgt.gz",
+      "sha256": "ef878716b82ba575fc448ca49fae2f720981192a09f3cb94ba95a759e62e0767",
+      "url": null
+    },
+    {
+      "bytes": 25239,
+      "operation": "Zero ocean cell: no tile in the pinned official GLO-30 public inventory",
+      "path": "data/regions/faroe-islands/elevation/N60W006.hgt.gz",
+      "sha256": "ef878716b82ba575fc448ca49fae2f720981192a09f3cb94ba95a759e62e0767",
+      "url": null
+    },
+    {
+      "bytes": 25239,
+      "operation": "Zero ocean cell: no tile in the pinned official GLO-30 public inventory",
+      "path": "data/regions/faroe-islands/elevation/N61W009.hgt.gz",
+      "sha256": "ef878716b82ba575fc448ca49fae2f720981192a09f3cb94ba95a759e62e0767",
+      "url": null
+    },
+    {
+      "bytes": 25239,
+      "operation": "Zero ocean cell: no tile in the pinned official GLO-30 public inventory",
+      "path": "data/regions/faroe-islands/elevation/N61W006.hgt.gz",
+      "sha256": "ef878716b82ba575fc448ca49fae2f720981192a09f3cb94ba95a759e62e0767",
+      "url": null
+    },
+    {
+      "bytes": 25239,
+      "operation": "Zero ocean cell: no tile in the pinned official GLO-30 public inventory",
+      "path": "data/regions/faroe-islands/elevation/N62W009.hgt.gz",
+      "sha256": "ef878716b82ba575fc448ca49fae2f720981192a09f3cb94ba95a759e62e0767",
+      "url": null
+    },
+    {
+      "bytes": 25239,
+      "operation": "Zero ocean cell: no tile in the pinned official GLO-30 public inventory",
+      "path": "data/regions/faroe-islands/elevation/N62W006.hgt.gz",
+      "sha256": "ef878716b82ba575fc448ca49fae2f720981192a09f3cb94ba95a759e62e0767",
+      "url": null
+    },
+    {
+      "bytes": 25239,
+      "operation": "Zero ocean cell: no tile in the pinned official GLO-30 public inventory",
+      "path": "data/regions/faroe-islands/elevation/N63W009.hgt.gz",
+      "sha256": "ef878716b82ba575fc448ca49fae2f720981192a09f3cb94ba95a759e62e0767",
+      "url": null
+    },
+    {
+      "bytes": 25239,
+      "operation": "Zero ocean cell: no tile in the pinned official GLO-30 public inventory",
+      "path": "data/regions/faroe-islands/elevation/N63W008.hgt.gz",
+      "sha256": "ef878716b82ba575fc448ca49fae2f720981192a09f3cb94ba95a759e62e0767",
+      "url": null
+    },
+    {
+      "bytes": 25239,
+      "operation": "Zero ocean cell: no tile in the pinned official GLO-30 public inventory",
+      "path": "data/regions/faroe-islands/elevation/N63W007.hgt.gz",
+      "sha256": "ef878716b82ba575fc448ca49fae2f720981192a09f3cb94ba95a759e62e0767",
+      "url": null
+    },
+    {
+      "bytes": 25239,
+      "operation": "Zero ocean cell: no tile in the pinned official GLO-30 public inventory",
+      "path": "data/regions/faroe-islands/elevation/N63W006.hgt.gz",
+      "sha256": "ef878716b82ba575fc448ca49fae2f720981192a09f3cb94ba95a759e62e0767",
+      "url": null
+    }
+  ],
+  "commands": [],
+  "coverage": [
+    -9,
+    60,
+    -5,
+    64
+  ],
+  "dataset": "Copernicus DEM GLO-30 Public, AWS 2021 release",
+  "grid": "3601 by 3601 signed 16-bit point-aligned HGT cells; ocean cells zero",
+  "sourceAssets": [
+    {
+      "bytes": 1110900,
+      "path": "data/regions/faroe-islands/copernicus/tileList.txt",
+      "sha256": "10604e3052c98a09e9216f1a8f0a555a04148419757575f783d4937fd44316dc",
+      "url": "https://copernicus-dem-30m.s3.amazonaws.com/tileList.txt"
+    }
+  ],
+  "sourceDocumentation": "https://registry.opendata.aws/copernicus-dem/",
+  "toolchain": {
+    "gdal_translate": {
+      "path": "/Applications/QGIS.app/Contents/MacOS/gdal_translate",
+      "sha256": "20bee1aad39868f3aa506312cad8415bbe12fa004cbf75b27114f527178b632a"
+    },
+    "gdalbuildvrt": {
+      "path": "/Applications/QGIS.app/Contents/MacOS/gdalbuildvrt",
+      "sha256": "5694fb873506db8342bedbf18635fe6d3dbf97971dc25f2ea7f94ff4f6f77b30"
+    },
+    "gdalwarp": {
+      "path": "/Applications/QGIS.app/Contents/MacOS/gdalwarp",
+      "sha256": "da68256b5787bd76d876a409fd452cc8290be13c6f28aece569242682a003057"
+    }
+  },
+  "verticalDatum": "EGM2008 orthometric metres",
+  "oceanCellReview": [
+    {
+      "cell": "N60W009.hgt.gz",
+      "coastalLandSHA256": "a9e28ebc109af7968d497e7bb2d18731c2969c8c93a9880bfdef5125ffa30381",
+      "landIntersectionSquareDegrees": 0,
+      "allHeightsZero": true
+    },
+    {
+      "cell": "N60W008.hgt.gz",
+      "coastalLandSHA256": "a9e28ebc109af7968d497e7bb2d18731c2969c8c93a9880bfdef5125ffa30381",
+      "landIntersectionSquareDegrees": 0,
+      "allHeightsZero": true
+    },
+    {
+      "cell": "N60W007.hgt.gz",
+      "coastalLandSHA256": "a9e28ebc109af7968d497e7bb2d18731c2969c8c93a9880bfdef5125ffa30381",
+      "landIntersectionSquareDegrees": 0,
+      "allHeightsZero": true
+    },
+    {
+      "cell": "N60W006.hgt.gz",
+      "coastalLandSHA256": "a9e28ebc109af7968d497e7bb2d18731c2969c8c93a9880bfdef5125ffa30381",
+      "landIntersectionSquareDegrees": 0,
+      "allHeightsZero": true
+    },
+    {
+      "cell": "N61W009.hgt.gz",
+      "coastalLandSHA256": "a9e28ebc109af7968d497e7bb2d18731c2969c8c93a9880bfdef5125ffa30381",
+      "landIntersectionSquareDegrees": 0,
+      "allHeightsZero": true
+    },
+    {
+      "cell": "N61W006.hgt.gz",
+      "coastalLandSHA256": "a9e28ebc109af7968d497e7bb2d18731c2969c8c93a9880bfdef5125ffa30381",
+      "landIntersectionSquareDegrees": 0,
+      "allHeightsZero": true
+    },
+    {
+      "cell": "N62W009.hgt.gz",
+      "coastalLandSHA256": "a9e28ebc109af7968d497e7bb2d18731c2969c8c93a9880bfdef5125ffa30381",
+      "landIntersectionSquareDegrees": 0,
+      "allHeightsZero": true
+    },
+    {
+      "cell": "N62W006.hgt.gz",
+      "coastalLandSHA256": "a9e28ebc109af7968d497e7bb2d18731c2969c8c93a9880bfdef5125ffa30381",
+      "landIntersectionSquareDegrees": 0,
+      "allHeightsZero": true
+    },
+    {
+      "cell": "N63W009.hgt.gz",
+      "coastalLandSHA256": "a9e28ebc109af7968d497e7bb2d18731c2969c8c93a9880bfdef5125ffa30381",
+      "landIntersectionSquareDegrees": 0,
+      "allHeightsZero": true
+    },
+    {
+      "cell": "N63W008.hgt.gz",
+      "coastalLandSHA256": "a9e28ebc109af7968d497e7bb2d18731c2969c8c93a9880bfdef5125ffa30381",
+      "landIntersectionSquareDegrees": 0,
+      "allHeightsZero": true
+    },
+    {
+      "cell": "N63W007.hgt.gz",
+      "coastalLandSHA256": "a9e28ebc109af7968d497e7bb2d18731c2969c8c93a9880bfdef5125ffa30381",
+      "landIntersectionSquareDegrees": 0,
+      "allHeightsZero": true
+    },
+    {
+      "cell": "N63W006.hgt.gz",
+      "coastalLandSHA256": "a9e28ebc109af7968d497e7bb2d18731c2969c8c93a9880bfdef5125ffa30381",
+      "landIntersectionSquareDegrees": 0,
+      "allHeightsZero": true
+    }
+  ]
+}

@@ -1,0 +1,281 @@
+{
+  "command": [
+    "/usr/local/bin/tilemaker",
+    "--input",
+    "/Volumes/Extreme SSD/Projects/OpenBareMap/data/regions/faroe-islands/faroe-islands-261104.osm.pbf",
+    "--output",
+    "/Volumes/Extreme SSD/Projects/OpenBareMap/build/faroe-islands-basemap/basemap.mbtiles",
+    "--config",
+    "/Volumes/Extreme SSD/Projects/OpenBareMap/build/faroe-islands-basemap/tilemaker.json",
+    "--process",
+    "/Volumes/Extreme SSD/Projects/OpenBareMap/build/faroe-islands-basemap/process.lua",
+    "--threads",
+    "1"
+  ],
+  "config_sha256": "1699a2f6f6cd4d9e492e218c1cf7a6db0ad0e565921db8dee472ee8996326729",
+  "exit_code": 0,
+  "output_sha256": "c65c3d42198cd5b9d0d68730547213f51bfd987b45673b6f772d6867348bea4c",
+  "process_sha256": "097e2e926555585b0fc83cf4fdc33c7cfa18d4ba13e3930b14594d0c9fe71f1b",
+  "region": {
+    "bounds": [
+      -7.85,
+      61.3,
+      -6.1,
+      62.5
+    ],
+    "clipBasemap": true,
+    "clipSource": false,
+    "coastContextBounds": [
+      -10,
+      60,
+      -4,
+      64
+    ],
+    "contourIntervalMetres": 20,
+    "coverage": "The complete Faroe Islands archipelago, including the smaller outlying islands; coverage 7.85\u20136.10\u00b0W, 61.30\u201362.50\u00b0N.",
+    "destinationLabels": {
+      "gasadalur": "G\u00e1sadalur",
+      "gjogv": "Gj\u00f3gv",
+      "island": "All Faroe Islands",
+      "klaksvik": "Klaksv\u00edk",
+      "mykines": "Mykines",
+      "sandur": "Sandur",
+      "slaettaratindur": "Sl\u00e6ttaratindur",
+      "suduroy": "Su\u00f0uroy",
+      "torshavn": "T\u00f3rshavn",
+      "tvoroyri": "Tv\u00f8royri",
+      "vidareidi": "Vi\u00f0arei\u00f0i"
+    },
+    "destinations": {
+      "gasadalur": [
+        -7.4360093,
+        62.109738,
+        13
+      ],
+      "gjogv": [
+        -6.9430295,
+        62.3257427,
+        13
+      ],
+      "island": [
+        -6.975,
+        61.9,
+        8
+      ],
+      "klaksvik": [
+        -6.5837755,
+        62.2254921,
+        13
+      ],
+      "mykines": [
+        -7.6476479,
+        62.1042514,
+        13
+      ],
+      "sandur": [
+        -6.8167192,
+        61.8348502,
+        13
+      ],
+      "slaettaratindur": [
+        -7.0132,
+        62.296717,
+        13
+      ],
+      "suduroy": [
+        -6.814186643797399,
+        61.52106515,
+        11
+      ],
+      "torshavn": [
+        -6.7715709,
+        62.0101396,
+        13
+      ],
+      "tvoroyri": [
+        -6.8046823,
+        61.5553294,
+        13
+      ],
+      "vidareidi": [
+        -6.5354618,
+        62.3602003,
+        13
+      ]
+    },
+    "garminContextBounds": [
+      -7.85,
+      61.3,
+      -6.1,
+      62.5
+    ],
+    "garminFamilyId": 4838,
+    "garminFilename": "OpenBareMap-Faroe-Islands.img",
+    "garminPackageRevision": "2.0.1-trail-detail-r1",
+    "garminTileStartId": 48380001,
+    "gridCRS": "EPSG:25829",
+    "gridExtent": [
+      550000,
+      660000,
+      6790000,
+      6940000
+    ],
+    "gridName": "ETRS89 / UTM 29N",
+    "gridSource": "utm-grid",
+    "id": "faroe-islands",
+    "inspectionNames": [
+      "T\u00f3rshavn",
+      "Klaksv\u00edk"
+    ],
+    "islandValidationAnchors": {
+      "Bor\u00f0oy": [
+        -6.519960153215357,
+        62.263797350000004
+      ],
+      "Eysturoy": [
+        -6.817845062972005,
+        62.198870400000004
+      ],
+      "Fugloy": [
+        -6.295083714926933,
+        62.335528749999995
+      ],
+      "Hestur": [
+        -6.8906230651131,
+        61.95078735
+      ],
+      "Kalsoy": [
+        -6.742989818875409,
+        62.2981508
+      ],
+      "Koltur": [
+        -6.974831795485134,
+        61.9874722
+      ],
+      "Kunoy": [
+        -6.659841603548006,
+        62.308899999999994
+      ],
+      "L\u00edtla D\u00edmun": [
+        -6.710878974728262,
+        61.6332145
+      ],
+      "Mykines": [
+        -7.604653567580989,
+        62.1045075
+      ],
+      "N\u00f3lsoy": [
+        -6.653136725815699,
+        61.9854463
+      ],
+      "Sandoy": [
+        -6.723989940433405,
+        61.8333877
+      ],
+      "Sk\u00fagvoy": [
+        -6.826961985197521,
+        61.76644315
+      ],
+      "Streymoy": [
+        -7.015882816156839,
+        62.1237192
+      ],
+      "St\u00f3ra D\u00edmun": [
+        -6.756602847705695,
+        61.694632600000006
+      ],
+      "Su\u00f0uroy": [
+        -6.814186643797399,
+        61.52106515
+      ],
+      "Sv\u00ednoy": [
+        -6.370266050279082,
+        62.269355399999995
+      ],
+      "Vi\u00f0oy": [
+        -6.522562763215868,
+        62.33562725
+      ],
+      "V\u00e1gar": [
+        -7.234584100845196,
+        62.089898500000004
+      ]
+    },
+    "islandValidationZooms": [
+      10,
+      11,
+      12
+    ],
+    "label": "Faroe Islands",
+    "mapVersion": "2.0.0",
+    "maxzoom": 14,
+    "minorWaterwayMinzoom": 10,
+    "minzoom": 4,
+    "name": "OpenBareMap Faroe Islands",
+    "nativeLanguage": "fo",
+    "optionalBasemapLayerReason": "The locked Faroe Islands OSM source contains no railway station, halt or tram-stop features.",
+    "optionalBasemapLayers": [
+      "station"
+    ],
+    "overviewLandAnchors": {
+      "Bor\u00f0oy": [
+        -6.519960153215357,
+        62.263797350000004
+      ],
+      "Eysturoy": [
+        -6.817845062972005,
+        62.198870400000004
+      ],
+      "Sandoy": [
+        -6.723989940433405,
+        61.8333877
+      ],
+      "Streymoy": [
+        -7.015882816156839,
+        62.1237192
+      ],
+      "Su\u00f0uroy": [
+        -6.814186643797399,
+        61.52106515
+      ],
+      "V\u00e1gar": [
+        -7.234584100845196,
+        62.089898500000004
+      ]
+    },
+    "projectedCRS": "EPSG:25829",
+    "sourceBaseOverrides": {},
+    "sourceBaseURL": "https://download.geofabrik.de/europe/",
+    "sourceDate": "2026-11-04",
+    "sourceSlugs": [
+      "faroe-islands"
+    ],
+    "styleRevision": "2.0.0-faroe-islands-r1",
+    "terrainBounds": [
+      -8,
+      61,
+      -6,
+      63
+    ],
+    "townlands": false
+  },
+  "source": {
+    "bytes": 7736538,
+    "operation": "Complete upstream extract; no merge or spatial filtering",
+    "path": "data/regions/faroe-islands/faroe-islands-261104.osm.pbf",
+    "replicationTimestamp": "2026-11-04T21:21:03Z",
+    "sha256": "4b1b878772d1bc51623a9b12741eb9b54bd79ffdb61dfa15684ff5531297802d",
+    "snapshot_date": "2026-11-04",
+    "url": "https://download.geofabrik.de/europe/faroe-islands-261104.osm.pbf"
+  },
+  "status": "validated vector build",
+  "toolchain": {
+    "sha256": "d43847b5d5662b9139461921d55bfab56f3db2098946209a5c7a26b03255b123",
+    "version": "tilemaker v3.1.0+ge16203e4e2fb"
+  },
+  "validation": {
+    "empty_tile_count": 1001,
+    "logical_tiles_sha256": "e232a7c7b5e515293cc0fb1e5c2bfa6f074568913060cb48f99ecbac8cddfc21",
+    "tile_count": 4001
+  }
+}

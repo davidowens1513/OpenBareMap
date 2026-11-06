@@ -136,3 +136,24 @@ data/regions/dolomites/elevation/*
 /regions/dolomites/garmin/coastal-context/
 /releases/dolomites/2.0.0/maps/topography.mbtiles
 /releases/dolomites/2.0.0/maps/topography-context.mbtiles
+
+# Faroe Islands locked source inputs, matching the other regional editions.
+!data/regions/faroe-islands/
+data/regions/faroe-islands/*
+!data/regions/faroe-islands/*.osm.pbf
+!data/regions/faroe-islands/*.poly
+!data/regions/faroe-islands/*.extract.json
+!data/regions/faroe-islands/elevation/
+data/regions/faroe-islands/elevation/*
+!data/regions/faroe-islands/elevation/*.hgt.gz
+
+# Reproducible Faroe Islands intermediates; only selected release maps are pinned.
+/data/regions/faroe-islands/*.clipped.osm.pbf
+/regions/faroe-islands/garmin/coastal-context/
+/releases/faroe-islands/2.0.0/maps/topography.mbtiles
+/releases/faroe-islands/2.0.0/maps/topography-context.mbtiles
+
+!data/regions/faroe-islands/copernicus/
+data/regions/faroe-islands/copernicus/*
+!data/regions/faroe-islands/copernicus/*.tif
+!data/regions/faroe-islands/copernicus/tileList.txt

@@ -1,0 +1,50 @@
+{
+  "feature_instances_by_layer": {
+    "boundary": 5694,
+    "building": 68676,
+    "cycling_route": 17,
+    "ferry": 606,
+    "hiking_poi": 865,
+    "hiking_route": 10,
+    "island_name": 491,
+    "landcover": 66502,
+    "mountain": 2242,
+    "natural_line": 13721,
+    "place": 22770,
+    "poi": 6273,
+    "railway": 55,
+    "transportation": 107993,
+    "transportation_name": 29887,
+    "water": 8329,
+    "water_name": 901,
+    "waterway": 103714
+  },
+  "metadata": {
+    "bounds": "-7.850000,61.300000,-6.100000,62.500000",
+    "center": "-6.975000,61.900000,9",
+    "description": "The complete Faroe Islands archipelago, including the smaller outlying islands; coverage 7.85\u20136.10\u00b0W, 61.30\u201362.50\u00b0N.",
+    "format": "pbf",
+    "json": "{\"vector_layers\":[{\"id\":\"boundary\",\"fields\":{\"admin_level\":\"String\",\"class\":\"String\",\"name\":\"String\"},\"minzoom\":4,\"maxzoom\":14},{\"id\":\"building\",\"fields\":{\"class\":\"String\"},\"minzoom\":13,\"maxzoom\":14},{\"id\":\"cycling_route\",\"fields\":{\"class\":\"String\",\"name\":\"String\",\"network\":\"String\"},\"minzoom\":7,\"maxzoom\":14},{\"id\":\"ferry\",\"fields\":{\"class\":\"String\",\"duration\":\"String\",\"foot\":\"String\",\"name\":\"String\",\"operator\":\"String\"},\"minzoom\":6,\"maxzoom\":14},{\"id\":\"hiking_poi\",\"fields\":{\"access\":\"String\",\"class\":\"String\",\"drinking_water\":\"String\",\"ele_label\":\"String\",\"ele_m\":\"Number\",\"ele_raw\":\"String\",\"fee\":\"String\",\"name\":\"String\",\"name_en\":\"String\",\"opening_hours\":\"String\",\"operator\":\"String\",\"shelter_type\":\"String\",\"wheelchair\":\"String\"},\"minzoom\":10,\"maxzoom\":14},{\"id\":\"hiking_route\",\"fields\":{\"class\":\"String\",\"name\":\"String\",\"network\":\"String\"},\"minzoom\":7,\"maxzoom\":14},{\"id\":\"island_name\",\"fields\":{\"class\":\"String\",\"name\":\"String\"},\"minzoom\":7,\"maxzoom\":14},{\"id\":\"landcover\",\"fields\":{\"class\":\"String\",\"landuse\":\"String\",\"name\":\"String\",\"natural\":\"String\",\"wetland\":\"String\"},\"minzoom\":4,\"maxzoom\":14},{\"id\":\"mountain\",\"fields\":{\"class\":\"String\",\"ele_label\":\"String\",\"ele_m\":\"Number\",\"ele_raw\":\"String\",\"name\":\"String\",\"name_en\":\"String\",\"short_name\":\"String\"},\"minzoom\":9,\"maxzoom\":14},{\"id\":\"natural_line\",\"fields\":{\"class\":\"String\",\"name\":\"String\"},\"minzoom\":11,\"maxzoom\":14},{\"id\":\"place\",\"fields\":{\"class\":\"String\",\"name\":\"String\",\"name_en\":\"String\",\"name_fo\":\"String\"},\"minzoom\":4,\"maxzoom\":14},{\"id\":\"poi\",\"fields\":{\"access\":\"String\",\"category\":\"String\",\"class\":\"String\",\"name\":\"String\",\"name_en\":\"String\",\"name_fo\":\"String\",\"official_name\":\"String\"},\"minzoom\":10,\"maxzoom\":14},{\"id\":\"railway\",\"fields\":{\"class\":\"String\",\"layer\":\"String\",\"name\":\"String\",\"service\":\"String\",\"tunnel\":\"String\",\"usage\":\"String\"},\"minzoom\":6,\"maxzoom\":14},{\"id\":\"station\",\"fields\":{},\"minzoom\":9,\"maxzoom\":14},{\"id\":\"transportation\",\"fields\":{\"access\":\"String\",\"bicycle\":\"String\",\"bridge\":\"String\",\"class\":\"String\",\"designation\":\"String\",\"foot\":\"String\",\"horse\":\"String\",\"layer\":\"String\",\"name\":\"String\",\"ref\":\"String\",\"sac_scale\":\"String\",\"surface\":\"String\",\"tracktype\":\"String\",\"trail_visibility\":\"String\",\"tunnel\":\"String\"},\"minzoom\":4,\"maxzoom\":14},{\"id\":\"transportation_name\",\"fields\":{\"class\":\"String\",\"name\":\"String\",\"name_en\":\"String\",\"ref\":\"String\"},\"minzoom\":10,\"maxzoom\":14},{\"id\":\"water\",\"fields\":{\"class\":\"String\",\"name\":\"String\"},\"minzoom\":4,\"maxzoom\":14},{\"id\":\"water_name\",\"fields\":{\"name\":\"String\"},\"minzoom\":11,\"maxzoom\":14},{\"id\":\"waterway\",\"fields\":{\"class\":\"String\",\"intermittent\":\"String\",\"name\":\"String\"},\"minzoom\":4,\"maxzoom\":14}]}",
+    "maxzoom": "14",
+    "minzoom": "4",
+    "name": "OpenBareMap Faroe Islands",
+    "openbaremap_contour_interval_metres": "20",
+    "openbaremap_storage_revision": "2.0.0-faroe-islands-r1",
+    "type": "baselayer",
+    "version": "2.0.0"
+  },
+  "note": "Feature instances include repetition across tiles and zooms; not unique OSM objects. This checks MVT framing and layer presence, not geometry or cartographic correctness.",
+  "tiles_by_zoom": {
+    "4": 1,
+    "5": 2,
+    "6": 2,
+    "7": 2,
+    "8": 6,
+    "9": 15,
+    "10": 42,
+    "11": 100,
+    "12": 273,
+    "13": 828,
+    "14": 2730
+  }
+}

@@ -159,5 +159,32 @@ Run `PYTHONPATH=work/python python3 scripts/run_full_region.py --region dolomite
 Regional resources and locks use `regions/dolomites/`, selected databases use
 `releases/dolomites/2.0.0/maps/`, and native family 4837 reserves tile IDs
 48370001–48379999. Native backgrounds use the approved rectangular crop.
-All public previews share the six-edition catalog in `config/preview-regions.json`;
+All public previews share the shared edition catalog in `config/preview-regions.json`;
 Region changes edition and Explore selects a destination within that edition.
+
+
+## Faroe Islands scope
+
+The Faroe Islands edition covers the whole archipelago, including all 18 main
+islands and outlying coast features, within 7.85–6.10°W and 61.30–62.50°N.
+The complete 4 November 2026 Geofabrik Faroe Islands extract is retained and
+verified against its upstream checksum. Faroese names and character glyphs are
+retained. ETRS89 / UTM 29N supplies the metre grid. Native family 4838 reserves
+map tile IDs 48380001–48389999.
+
+The elevation source is Copernicus DEM GLO-30 Public from the pinned AWS 2021
+release, using orthometric EGM2008 heights. Original COGs and conversion records
+are retained. HGT conversion provides point-aligned signed integer degree cells;
+missing ocean cells are zero, based on the pinned official public tile inventory.
+The shared 30 m projected processing, 20 m contours, bounded smoothing and warm
+multidirectional hillshade are preserved. The usual composite source was rejected
+for this edition after its summit sample was about 90 m below the source summit
+height. The selected DEM samples approximately 874 m at the 880 m summit.
+
+All 18 main islands have independent detailed land checks; major island interiors
+are also checked at overview zooms. There are no station or bog-tagged features
+in the locked source; their absence is recorded rather than inventing features.
+The regional terrain notice and full Copernicus licence are included in exports.
+Use `scripts/run_full_region.py --region faroe-islands` for the complete build.
+
+Faroe native land checks cover all 18 islands at every native detail level. At resolutions 18 and 16, a half-grid-cell tolerance accounts for coarse coordinate quantization; finer levels require the actual interior point to be inside the compiled land polygon.

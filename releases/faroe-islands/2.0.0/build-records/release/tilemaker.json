@@ -1,0 +1,75 @@
+{
+  "layers": {
+    "contour": {
+      "maxzoom": 14,
+      "minzoom": 8,
+      "simplify_below": 13,
+      "simplify_level": 1e-05,
+      "source": "/Volumes/Extreme SSD/Projects/OpenBareMap/build/faroe-islands-geometry/contours.geojson",
+      "source_columns": [
+        "elevation"
+      ]
+    },
+    "grid_10km": {
+      "maxzoom": 14,
+      "minzoom": 10,
+      "source": "/Volumes/Extreme SSD/Projects/OpenBareMap/build/faroe-islands-geometry/grid_10km.geojson",
+      "source_columns": [
+        "label",
+        "metres",
+        "axis"
+      ]
+    },
+    "grid_1km": {
+      "maxzoom": 14,
+      "minzoom": 12,
+      "source": "/Volumes/Extreme SSD/Projects/OpenBareMap/build/faroe-islands-geometry/grid_1km.geojson",
+      "source_columns": [
+        "label",
+        "metres",
+        "axis"
+      ]
+    },
+    "landcover": {
+      "maxzoom": 14,
+      "minzoom": 4,
+      "simplify_below": 14,
+      "simplify_level": 8e-06,
+      "simplify_ratio": 2,
+      "source": "/Volumes/Extreme SSD/Projects/OpenBareMap/build/faroe-islands-geometry/landcover.geojson",
+      "source_columns": [
+        "class",
+        "wetland",
+        "natural",
+        "landuse",
+        "name",
+        "name_en",
+        "name_cy",
+        "name_gd",
+        "name_es",
+        "name_fr",
+        "name_it",
+        "name_de",
+        "name_fo",
+        "official_name",
+        "short_name"
+      ]
+    }
+  },
+  "settings": {
+    "basezoom": 14,
+    "bounding_box": [
+      -7.85,
+      61.3,
+      -6.1,
+      62.5
+    ],
+    "compress": "gzip",
+    "description": "The complete Faroe Islands archipelago, including the smaller outlying islands; coverage 7.85\u20136.10\u00b0W, 61.30\u201362.50\u00b0N.",
+    "include_ids": false,
+    "maxzoom": 14,
+    "minzoom": 4,
+    "name": "OpenBareMap Faroe Islands geometry",
+    "version": "2.0.0"
+  }
+}

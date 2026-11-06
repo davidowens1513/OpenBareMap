@@ -1,0 +1,133 @@
+{
+  "familyId": 4838,
+  "garminPackageRevision": "2.0.1-trail-detail-r1",
+  "inspection": {
+    "anchorLabels": {
+      "Klaksv\u00edk": "Klaksv\u00edk",
+      "T\u00f3rshavn": "T\u00f3rshavn"
+    },
+    "bounds": [
+      -7.850074768066406,
+      61.29993438720703,
+      -6.099987030029297,
+      62.50001907348633
+    ],
+    "coastPolygonsByLevel": {
+      "0": {
+        "0x32": 12,
+        "0x54": 765
+      },
+      "1": {
+        "0x32": 4,
+        "0x54": 423
+      },
+      "2": {
+        "0x32": 3,
+        "0x54": 319
+      },
+      "3": {
+        "0x32": 3,
+        "0x54": 115
+      },
+      "4": {
+        "0x32": 3,
+        "0x54": 43
+      }
+    },
+    "contoursByLevel": {
+      "0": {
+        "0x20": 6516,
+        "0x22": 1119
+      },
+      "1": {
+        "0x20": 5840,
+        "0x22": 958
+      },
+      "2": {
+        "0x22": 918
+      },
+      "3": {
+        "0x10008": 896
+      },
+      "4": {}
+    },
+    "lineInstancesAtHighestDetail": {
+      "0x10001": 3,
+      "0x10002": 15,
+      "0x10004": 51,
+      "0x10005": 1267,
+      "0x10006": 3146,
+      "0x14": 2,
+      "0x16": 6395,
+      "0x18": 5973,
+      "0x1a": 15,
+      "0x1c": 679,
+      "0x1e": 10,
+      "0x1f": 363,
+      "0x20": 6516,
+      "0x22": 1119,
+      "0x3": 290,
+      "0x4": 252,
+      "0x6": 2301,
+      "0x7": 8957,
+      "0xa": 2075
+    },
+    "logicalCombinedSHA256": "8b1535bea6659449b2938eeaa03d582711791144f63f606ded2d4368d3d7eb02",
+    "logicalHashNote": "Internal file names, sizes and payloads; only CommonHeader creation-date bytes 14..20 are zeroed for hashing. IMG archive headers are excluded. Output bytes are never modified.",
+    "logicalTileSHA256": {
+      "48380001.img": "26302b154aea3c44faa9d38a71646aa94c6dee6e1cb493d64d80b150df50b71d",
+      "48380002.img": "71f9262216824bca574104df45be8fda9f0b4c39e9cbe84c1d146cd42fe942c5",
+      "48380003.img": "05814d44768c99fec6eaf564fdc4a007fec94170659db3f363f4eb6b160b6e9a"
+    },
+    "pointInstancesAtHighestDetail": {
+      "0x10001": 19,
+      "0x10002": 85,
+      "0x10003": 67,
+      "0x10006": 1038,
+      "0x2f0b": 1551,
+      "0x600": 4,
+      "0x650c": 71,
+      "0x6603": 222,
+      "0x6615": 131,
+      "0x6616": 361,
+      "0x800": 116,
+      "0xb00": 11,
+      "0xc00": 2050
+    },
+    "polygonInstancesAtHighestDetail": {
+      "0x10101": 3542,
+      "0x10102": 3766,
+      "0x10103": 24,
+      "0x10104": 90,
+      "0x10105": 212,
+      "0x10106": 50,
+      "0x10109": 1406,
+      "0x1010a": 288,
+      "0x1010b": 121,
+      "0x13": 31392,
+      "0x32": 12,
+      "0x3c": 1371,
+      "0x50": 180,
+      "0x51": 50,
+      "0x54": 765
+    },
+    "routing": false,
+    "subfileBytes": {
+      "DEM": 2407003,
+      "LBL": 101349,
+      "MPS": 295,
+      "RGN": 5363674,
+      "SRT": 912,
+      "TRE": 80763,
+      "TYP": 2982
+    },
+    "tiles": 3
+  },
+  "output": {
+    "bytes": 7987200,
+    "path": "regions/faroe-islands/garmin/dist/OpenBareMap-Faroe-Islands.img",
+    "sha256": "33d63a6050f29fdf72187ad69af3e4396536a6c88aa723da15800065a68bf216"
+  },
+  "routing": false,
+  "status": "compiled and structurally inspected; hardware rendering pending"
+}

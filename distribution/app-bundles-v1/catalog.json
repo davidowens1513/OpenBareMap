@@ -3,6 +3,7 @@
   "mapVersions": {
     "dolomites": "2.0.0",
     "england-wales": "2.0.1",
+    "faroe-islands": "2.0.0",
     "ireland": "2.0.0",
     "pyrenees": "2.0.0",
     "scotland": "2.0.0",
@@ -147,6 +148,76 @@
         "r2Key": "OpenBareMap/england-wales/2.0.1/app-bundles-v1/ios/OpenBareMap-England-Wales-iOS-Bundle.zip",
         "sha256": "985de4d38fc60efec32e834dc9594d9bd160e6c43750f78cf3ace7c542943ba6",
         "url": "https://downloads.appsbyonzy.dev/OpenBareMap/england-wales/2.0.1/app-bundles-v1/ios/OpenBareMap-England-Wales-iOS-Bundle.zip"
+      }
+    },
+    "faroe-islands": {
+      "android": {
+        "bytes": 41568961,
+        "datasets": {
+          "basemap": {
+            "path": "maps/basemap.mbtiles",
+            "sha256": "b67847aeb5d066222453f1c449bc2da20996f740fe8d6344068a6624bdb4b75e"
+          },
+          "coast": {
+            "derivedFrom": "56622a7141dc8d04991ce03910d732cc9be8b0c0e2df6c2c6cea3fc067ab89e3",
+            "path": "maps/coast.mbtiles",
+            "sha256": "a499832ee21888c7cec134d819084e23d993dd75472f20c5c31e0488cae1db1d"
+          },
+          "grid": {
+            "path": "maps/grid.mbtiles",
+            "sha256": "a852a2483bddf68d938f11c44078747840e9c3f44877ead2aa1147d713bd15df"
+          },
+          "hillshade": {
+            "path": "maps/hillshade.mbtiles",
+            "sha256": "81cd323c3b2c091a979aa2d90b369b85cd336cd2b6359d0e51e4a48603a60c5e"
+          },
+          "topography": {
+            "path": "maps/topography.mbtiles",
+            "sha256": "56622a7141dc8d04991ce03910d732cc9be8b0c0e2df6c2c6cea3fc067ab89e3"
+          }
+        },
+        "instructionsSHA256": "56dfe87c7d45d799bc674760344ec31214d6600a96e3cd38a96a52f56d33962f",
+        "instructionsURL": "https://downloads.appsbyonzy.dev/OpenBareMap/faroe-islands/2.0.0/app-bundles-v1/android/instructions.txt",
+        "localPath": "releases/faroe-islands/2.0.0/app-bundles-v1/android/OpenBareMap-Faroe-Islands-Android-Bundle.zip",
+        "mapManifestSHA256": "be314fcd0c3defeb71ea0e56a7a8a8c915187411940ab927f937cadfd18f35b3",
+        "r2Key": "OpenBareMap/faroe-islands/2.0.0/app-bundles-v1/android/OpenBareMap-Faroe-Islands-Android-Bundle.zip",
+        "sha256": "3e8e2cf650aa29494ccdad954bb9dc3eeff419443fd277e36a47a3630a637ae6",
+        "url": "https://downloads.appsbyonzy.dev/OpenBareMap/faroe-islands/2.0.0/app-bundles-v1/android/OpenBareMap-Faroe-Islands-Android-Bundle.zip"
+      },
+      "ios": {
+        "bytes": 41568703,
+        "datasets": {
+          "basemap": {
+            "path": "maps/basemap.mbtiles",
+            "sha256": "b67847aeb5d066222453f1c449bc2da20996f740fe8d6344068a6624bdb4b75e"
+          },
+          "coast": {
+            "derived_from": "56622a7141dc8d04991ce03910d732cc9be8b0c0e2df6c2c6cea3fc067ab89e3",
+            "maxzoom": 12,
+            "operation": "Preserve land-layer MVT bytes only through zoom 12; omit other layers.",
+            "path": "maps/coast.mbtiles",
+            "sha256": "a499832ee21888c7cec134d819084e23d993dd75472f20c5c31e0488cae1db1d"
+          },
+          "grid": {
+            "path": "maps/grid.mbtiles",
+            "sha256": "a852a2483bddf68d938f11c44078747840e9c3f44877ead2aa1147d713bd15df"
+          },
+          "hillshade": {
+            "path": "maps/hillshade.mbtiles",
+            "sha256": "81cd323c3b2c091a979aa2d90b369b85cd336cd2b6359d0e51e4a48603a60c5e"
+          },
+          "topography": {
+            "path": "maps/topography.mbtiles",
+            "sha256": "56622a7141dc8d04991ce03910d732cc9be8b0c0e2df6c2c6cea3fc067ab89e3"
+          }
+        },
+        "instructionsSHA256": "9aa319a571f850889323fe99f837400d65df89c5e9c42aa112ec780df55411a4",
+        "instructionsURL": "https://downloads.appsbyonzy.dev/OpenBareMap/faroe-islands/2.0.0/app-bundles-v1/ios/instructions.txt",
+        "localPath": "releases/faroe-islands/2.0.0/app-bundles-v1/ios/OpenBareMap-Faroe-Islands-iOS-Bundle.zip",
+        "mapManifestSHA256": "9b65e577161e0590f66664226e808ddafff05b1706e65520d44d304372a44a3b",
+        "r2Key": "OpenBareMap/faroe-islands/2.0.0/app-bundles-v1/ios/OpenBareMap-Faroe-Islands-iOS-Bundle.zip",
+        "sha256": "eee4c2be42354c8b92a460d270d3e5dd2986e77cd1c9ae4430106f9eba11cff6",
+        "url": "https://downloads.appsbyonzy.dev/OpenBareMap/faroe-islands/2.0.0/app-bundles-v1/ios/OpenBareMap-Faroe-Islands-iOS-Bundle.zip"
       }
     },
     "ireland": {
@@ -430,5 +501,5 @@
       }
     }
   },
-  "sourceCommit": "2d5e359fc1a204990daaabc32d00c69272ebae7f"
+  "sourceCommit": "8f770fa5b833d7f51c2e579f9285ec01d83570df"
 }

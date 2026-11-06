@@ -1,0 +1,119 @@
+{
+  "acceptance": "Automated checks only; see validation and visual-review records for actual reviewed scope.",
+  "coverage": "The complete Faroe Islands archipelago, including the smaller outlying islands; coverage 7.85\u20136.10\u00b0W, 61.30\u201362.50\u00b0N.",
+  "datasets": {
+    "basemap": {
+      "bytes": 17383424,
+      "path": "releases/faroe-islands/2.0.0/maps/basemap.mbtiles",
+      "sha256": "b67847aeb5d066222453f1c449bc2da20996f740fe8d6344068a6624bdb4b75e",
+      "validation": {
+        "empty_tile_count": 1001,
+        "logical_tiles_sha256": "5cd36533f8457c4cb71aad38ee5f82c541976f67c5fbca534229c9ba484cd1a0",
+        "tile_count": 4001
+      }
+    },
+    "grid": {
+      "bytes": 3600384,
+      "path": "releases/faroe-islands/2.0.0/maps/grid.mbtiles",
+      "sha256": "a852a2483bddf68d938f11c44078747840e9c3f44877ead2aa1147d713bd15df",
+      "validation": {
+        "empty_tile_count": 0,
+        "logical_tiles_sha256": "d8084c40b8f5759fd2c65edae798d22d7ec65f3f4febcbcae34ffd60ed2c1aa7",
+        "tile_count": 12737
+      }
+    },
+    "hillshade": {
+      "bytes": 3743744,
+      "path": "releases/faroe-islands/2.0.0/maps/hillshade.mbtiles",
+      "sha256": "81cd323c3b2c091a979aa2d90b369b85cd336cd2b6359d0e51e4a48603a60c5e",
+      "validation": {
+        "empty_tile_count": 0,
+        "logical_tiles_sha256": "eb18edb3fde123f99397534ef34502760a479e36cab68cfdbed9594cb4d81916",
+        "tile_count": 246
+      }
+    },
+    "topography": {
+      "bytes": 12447744,
+      "path": "releases/faroe-islands/2.0.0/maps/topography-context.mbtiles",
+      "sha256": "56622a7141dc8d04991ce03910d732cc9be8b0c0e2df6c2c6cea3fc067ab89e3",
+      "validation": {
+        "empty_tile_count": 985,
+        "logical_tiles_sha256": "d54b02e525d399e255a08b37987b94326cd6858813c210fa62c434b1c4672dec",
+        "tile_count": 3198
+      }
+    }
+  },
+  "garmin": {
+    "bytes": 7987200,
+    "path": "regions/faroe-islands/garmin/dist/OpenBareMap-Faroe-Islands.img",
+    "sha256": "33d63a6050f29fdf72187ad69af3e4396536a6c88aa723da15800065a68bf216"
+  },
+  "geometryReport": {
+    "path": "build/faroe-islands-geometry/geometry-report.json",
+    "sha256": "79f58673a7ecb55077795baa59f797a28e3797f652c964aa8aa6d36ff778c6fb"
+  },
+  "hostAppsModified": false,
+  "mapVersion": "2.0.0",
+  "osm": {
+    "bytes": 7736538,
+    "operation": "Complete upstream extract; no merge or spatial filtering",
+    "path": "data/regions/faroe-islands/faroe-islands-261104.osm.pbf",
+    "replicationTimestamp": "2026-11-04T21:21:03Z",
+    "sha256": "4b1b878772d1bc51623a9b12741eb9b54bd79ffdb61dfa15684ff5531297802d",
+    "snapshot_date": "2026-11-04",
+    "url": "https://download.geofabrik.de/europe/faroe-islands-261104.osm.pbf"
+  },
+  "packages": {
+    "android": {
+      "archive": {
+        "bytes": 41540515,
+        "path": "regions/faroe-islands/android/OpenBareMap-Android.zip",
+        "sha256": "1a0334c678aa3c60eaab57e11e4515953a544cc186d18b3614b11acb89cea53c"
+      },
+      "checksumsSHA256": "a861c3e408c721573d7333edb4e6186fc3945c3cd844c2ec23df1cf9e15629da",
+      "manifestSHA256": "be314fcd0c3defeb71ea0e56a7a8a8c915187411940ab927f937cadfd18f35b3",
+      "path": "regions/faroe-islands/android",
+      "validationSHA256": "c93859bec53ff6f2f43133353f5d31cd2407c244c6c2e3dc9ceb7e0a25e1a3d8"
+    },
+    "ios": {
+      "checksumsSHA256": "f1270801bbbb2553dd621d4fcb41fe8ae97651ccd07f222ce93dc188e30fb2ae",
+      "manifestSHA256": "9b65e577161e0590f66664226e808ddafff05b1706e65520d44d304372a44a3b",
+      "path": "regions/faroe-islands/ios",
+      "validationSHA256": "9e2667cc5257e07ff48ea7b111f6338261b83eeed3a75ac0517b4dc4e3c19988"
+    }
+  },
+  "pythonRuntime": {
+    "packages": {
+      "Pillow": "12.3.0",
+      "certifi": "2026.10.23",
+      "charset-normalizer": "3.5.2",
+      "idna": "3.20",
+      "numpy": "2.5.4",
+      "osmium": "4.3.2",
+      "pyproj": "3.8.0",
+      "requests": "2.34.2",
+      "shapely": "2.2.0",
+      "urllib3": "2.8.0"
+    },
+    "platform": "macOS-27.0.1-arm64-arm-64bit-Mach-O",
+    "python": "3.14.5 (main, May 10 2026, 10:21:34) [Clang 21.0.0 (clang-2100.0.123.102)]"
+  },
+  "region": "faroe-islands",
+  "standaloneResourceArchives": {
+    "android": {
+      "bytes": 41540515,
+      "path": "regions/faroe-islands/exports/android/OpenBareMap-FaroeIslands-Android.zip",
+      "sha256": "1a0334c678aa3c60eaab57e11e4515953a544cc186d18b3614b11acb89cea53c",
+      "url": "https://downloads.appsbyonzy.dev/OpenBareMap/faroe-islands/2.0.0/android/OpenBareMap-FaroeIslands-Android.zip"
+    },
+    "ios": {
+      "bytes": 41561004,
+      "path": "regions/faroe-islands/exports/ios/OpenBareMap-FaroeIslands-iOS.zip",
+      "sha256": "0ef97cffb25de10210297cde79c88d2ea6ec50f4f2939571b6885739167e4c19",
+      "url": "https://downloads.appsbyonzy.dev/OpenBareMap/faroe-islands/2.0.0/ios/OpenBareMap-FaroeIslands-iOS.zip"
+    }
+  },
+  "styleSHA256": "383fe888c4238720edcde3c94949ffd520fa2af4ccb7328d1e7cdf46471515cf",
+  "terrainLockSHA256": "c6de48e7e31d53e990b8b76fb832ea5d3841f5cfb2a2bea7ca94eea7b0341263",
+  "validation": "validation.json"
+}

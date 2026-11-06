@@ -1,0 +1,29 @@
+{
+  "accessed_utc": "2026-11-05T23:59:07.780081+00:00",
+  "inputs": [
+    {
+      "bytes": 7736538,
+      "path": "data/regions/faroe-islands/faroe-islands-261104.osm.pbf",
+      "replicationTimestamp": "2026-11-04T21:21:03Z",
+      "sha256": "4b1b878772d1bc51623a9b12741eb9b54bd79ffdb61dfa15684ff5531297802d",
+      "url": "https://download.geofabrik.de/europe/faroe-islands-261104.osm.pbf"
+    }
+  ],
+  "osm": {
+    "bytes": 7736538,
+    "operation": "Complete upstream extract; no merge or spatial filtering",
+    "path": "data/regions/faroe-islands/faroe-islands-261104.osm.pbf",
+    "replicationTimestamp": "2026-11-04T21:21:03Z",
+    "sha256": "4b1b878772d1bc51623a9b12741eb9b54bd79ffdb61dfa15684ff5531297802d",
+    "snapshot_date": "2026-11-04",
+    "url": "https://download.geofabrik.de/europe/faroe-islands-261104.osm.pbf"
+  },
+  "polygons": [
+    {
+      "bytes": 175,
+      "path": "data/regions/faroe-islands/faroe-islands.poly",
+      "sha256": "12cbf750f083ad314e9c083e580ad60da01c7cde890cbe2c0daa3d30d710d98f",
+      "url": "https://download.geofabrik.de/europe/faroe-islands.poly"
+    }
+  ]
+}

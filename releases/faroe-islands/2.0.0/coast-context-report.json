@@ -1,0 +1,52 @@
+{
+  "builderSHA256": "4d6e55e722313662b456e894933cd93726130d207ac11d31fd1dd45f838b8a64",
+  "contextBounds": [
+    -10,
+    60,
+    -4,
+    64
+  ],
+  "note": "Contour payloads preserved exactly while extending land background outside edition coverage.",
+  "oldTopography": {
+    "bytes": 12451840,
+    "path": "releases/faroe-islands/2.0.0/maps/topography.mbtiles",
+    "sha256": "bf577bdef9b3fe877e625260be7363a1049fca8ae80e648b978b9384dc387b12",
+    "validation": {
+      "empty_tile_count": 985,
+      "logical_tiles_sha256": "d54b02e525d399e255a08b37987b94326cd6858813c210fa62c434b1c4672dec",
+      "tile_count": 3198
+    }
+  },
+  "output": {
+    "bytes": 12447744,
+    "path": "releases/faroe-islands/2.0.0/maps/topography-context.mbtiles",
+    "sha256": "56622a7141dc8d04991ce03910d732cc9be8b0c0e2df6c2c6cea3fc067ab89e3",
+    "validation": {
+      "empty_tile_count": 985,
+      "logical_tiles_sha256": "d54b02e525d399e255a08b37987b94326cd6858813c210fa62c434b1c4672dec",
+      "tile_count": 3198
+    }
+  },
+  "replacement": {
+    "changed_tiles": 253,
+    "path": "build/faroe-islands-coast-context/combined.mbtiles",
+    "replacement_feature_instances": 1932,
+    "sha256": "7d390ece893551aa8a978bf438f30742c61d6abf960d6250a0f9e2614a7b5089",
+    "unchanged_other_layers_sha256": "49c4538136c1136691c94fec523ce1ea67b51a2c467534ec96fa1718e026579c",
+    "validation": {
+      "empty_tile_count": 985,
+      "logical_tiles_sha256": "d54b02e525d399e255a08b37987b94326cd6858813c210fa62c434b1c4672dec",
+      "tile_count": 3198
+    }
+  },
+  "source": {
+    "accessed_utc": "2026-10-25T12:59:16.751893+00:00",
+    "bytes": 928538219,
+    "http_headers_path": "data/land-polygons.headers",
+    "license": "ODbL 1.0; OpenStreetMap contributors",
+    "path": "data/land-polygons-split-4326.zip",
+    "sha256": "5911e273096f9585425a17c30a8a98785cc33ed2718ff88987768933b8a327f7",
+    "source_snapshot": "HTTP Last-Modified 2026-10-25T03:43:12Z; this is file publication, not a guaranteed OSM snapshot timestamp",
+    "url": "https://osmdata.openstreetmap.de/download/land-polygons-split-4326.zip"
+  }
+}

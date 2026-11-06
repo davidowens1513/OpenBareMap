@@ -20,6 +20,7 @@ public class CheckRegionalBackgrounds {
    case "sierra-nevada" -> new double[][]{{-3.8,37.4},{-2.7,37.4},{-3.7038,40.4168},{-4.4214,36.7213}};
    case "pyrenees" -> new double[][]{{-3.7038,40.4168},{2.3522,48.8566},{-2.3,43.0},{0.0,44.0},{3.5,42.5}};
    case "dolomites" -> new double[][]{{9.19,45.46},{12.5,41.9},{10.4,46.3},{13.4,46.3},{11.8,47.3}};
+   case "faroe-islands" -> new double[][]{{-3.188,55.953},{-1.25,60.3},{-21.94,64.15},{5.32,60.39},{-8.1,62.0},{-5.9,62.0}};
    default -> throw new IllegalArgumentException(args[0]);
   };
   int tiles=0,polygons=0;Set<Integer> resolutions=new TreeSet<>();

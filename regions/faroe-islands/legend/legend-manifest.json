@@ -1,0 +1,18 @@
+{
+  "style_sha256": "fff118ffe503b30d0a93e6253c3c58ef5d0a461dd570b49fe5d6cb7c5e3d7e32",
+  "reference_zoom": 14,
+  "logical_size": [
+    1000,
+    1320
+  ],
+  "png_2x_size": [
+    2000,
+    2640
+  ],
+  "note": "SVG is self-contained with embedded pattern/symbol PNGs and system sans-serif text. Hillshade swatch is illustrative. Bold labels; line strokes enlarged 2.2x with minimum 2.2 px, minimum opacity 0.9; dash ratios preserved. Colour swatches use 1.3x saturation and 1.12x contrast with outlines. Map style unchanged.",
+  "outputs": [
+    "openbaremap-legend.svg",
+    "openbaremap-legend.png",
+    "openbaremap-legend@2x.png"
+  ]
+}

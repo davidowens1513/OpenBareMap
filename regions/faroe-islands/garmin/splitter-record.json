@@ -1,0 +1,21 @@
+{
+  "combinedSHA256": "c97ed3010daaf12fec7345f8d9d62f5538d907b0ac27fa5d06254f57ba023be2",
+  "command": [
+    "/opt/homebrew/opt/openjdk@21/libexec/openjdk.jdk/Contents/Home/bin/java",
+    "-Xmx6g",
+    "-jar",
+    "/Volumes/Extreme SSD/Projects/OpenBareMap/garmin/tools/splitter-r654/splitter.jar",
+    "--mapid=48380001",
+    "--description=OpenBareMap Faroe Islands",
+    "--max-nodes=1000000",
+    "--max-threads=2",
+    "--keep-complete=true",
+    "--output=pbf",
+    "--polygon-file=/Volumes/Extreme SSD/Projects/OpenBareMap/regions/faroe-islands/garmin/coverage.poly",
+    "--output-dir=/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/906ead9d53a7/faroe-islands/garmin/split",
+    "--ignore-osm-bounds=true",
+    "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/906ead9d53a7/faroe-islands/garmin/combined.osm.pbf"
+  ],
+  "coverageSHA256": "5251af15c9e1e3a58ea5f76d2673c1db9b6f571b933c96738c5eff5b5aac3a10",
+  "ignoreSourceHeaderBounds": true
+}

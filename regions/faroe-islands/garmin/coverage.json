@@ -1,0 +1,35 @@
+{
+  "areaSquareDegrees": 2.100000000000005,
+  "bounds": [
+    -7.85,
+    61.3,
+    -6.1,
+    62.5
+  ],
+  "entireRequestedFootprintCovered": true,
+  "exactFootprint": null,
+  "inputs": [
+    {
+      "bytes": 175,
+      "path": "data/regions/faroe-islands/faroe-islands.poly",
+      "sha256": "12cbf750f083ad314e9c083e580ad60da01c7cde890cbe2c0daa3d30d710d98f",
+      "url": "https://download.geofabrik.de/europe/faroe-islands.poly"
+    }
+  ],
+  "knownDestinationsCovered": [
+    "island",
+    "torshavn",
+    "klaksvik",
+    "mykines",
+    "gasadalur",
+    "gjogv",
+    "vidareidi",
+    "sandur",
+    "tvoroyri",
+    "suduroy",
+    "slaettaratindur"
+  ],
+  "operation": "Requested rectangular crop; source outlines cover all destination anchors",
+  "polygons": 1,
+  "sha256": "5251af15c9e1e3a58ea5f76d2673c1db9b6f571b933c96738c5eff5b5aac3a10"
+}

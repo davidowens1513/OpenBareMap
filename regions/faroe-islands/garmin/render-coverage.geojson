@@ -1,0 +1,39 @@
+{
+  "features": [
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              -7.85,
+              61.3
+            ],
+            [
+              -7.85,
+              62.5
+            ],
+            [
+              -6.1,
+              62.5
+            ],
+            [
+              -6.1,
+              61.3
+            ],
+            [
+              -7.85,
+              61.3
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "properties": {
+        "purpose": "Limit opaque native background and land-cover polygons; retain complete accepted OSM and terrain inputs",
+        "region": "faroe-islands"
+      },
+      "type": "Feature"
+    }
+  ],
+  "type": "FeatureCollection"
+}

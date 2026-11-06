@@ -112,7 +112,8 @@ def build(args):
     try:
         record['validation'] = inspect_tiles(destination / 'basemap.mbtiles')
         from audit import audit
-        write(destination / 'audit.json', audit(destination / 'basemap.mbtiles'))
+        from regions import expected_basemap_layers
+        write(destination / 'audit.json', audit(destination / 'basemap.mbtiles',expected_basemap_layers(region_id)))
         record['output_sha256'] = digest(destination / 'basemap.mbtiles')
         record['status'] = 'validated vector build'
     except Exception as error:
@@ -133,7 +134,7 @@ def main():
     run = sub.add_parser('build')
     run.add_argument('name',type=build_name)
     run.add_argument('--accept-toolchain', action='store_true')
-    run.add_argument('--region', choices=['ireland','england-wales','scotland','sierra-nevada','pyrenees','dolomites'], default='ireland')
+    run.add_argument('--region', choices=['ireland','england-wales','scotland','sierra-nevada','pyrenees','dolomites','faroe-islands'], default='ireland')
     compare = sub.add_parser('compare')
     compare.add_argument('first',nargs='?',default='ireland-a',type=build_name)
     compare.add_argument('second',nargs='?',default='ireland-b',type=build_name)

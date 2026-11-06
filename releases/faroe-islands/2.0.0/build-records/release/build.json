@@ -1,0 +1,107 @@
+{
+  "builderSHA256": "798636a96c48eb9e0ddaa0fd4411976271079d5f3e937f2e1ef606dd4e25e6ed",
+  "geometryReport": {
+    "builderSHA256": "9bf7e290ec55dd9d2c84a3deb454ddd17bdbd32979205872b7fc78ec930c23e1",
+    "contoursSourceSHA256": "e2eed8b966f89bc76ea2c43619daca54df0c68ccd31350231eeb42c824068b4f",
+    "counts": {
+      "contours": 6118,
+      "grid": {
+        "grid_10km": 28,
+        "grid_1km": 262
+      },
+      "landcover": {
+        "empty_source_areas": [],
+        "features": 8301,
+        "retained": 596,
+        "smoothed": 7705
+      }
+    },
+    "osm": {
+      "bytes": 7736538,
+      "operation": "Complete upstream extract; no merge or spatial filtering",
+      "path": "data/regions/faroe-islands/faroe-islands-261104.osm.pbf",
+      "replicationTimestamp": "2026-11-04T21:21:03Z",
+      "sha256": "4b1b878772d1bc51623a9b12741eb9b54bd79ffdb61dfa15684ff5531297802d",
+      "snapshot_date": "2026-11-04",
+      "url": "https://download.geofabrik.de/europe/faroe-islands-261104.osm.pbf"
+    },
+    "outputs": {
+      "contours.geojson": "9d2e5d136cebcfe0c6d25b20452adc66cd83eb8f5800da75b74fe1ad8d572173",
+      "grid_10km.geojson": "aad1494a6cba314b9efa78549ab0d6156bf5d2ddbb892a1da62c73b0447b7270",
+      "grid_1km.geojson": "4744ab0ec886cceb4634c88c2457bfb09b2b2ae03667cd9dd41cbe442ac86289",
+      "landcover.geojson": "57e57dfc070dc09642946363109553e005cb66e9b6f2781414875ed4536929bb"
+    },
+    "region": "faroe-islands",
+    "smootherSHA256": "7581d024dc1c1bec931642c7201db149bf64a64c814c451fa8bf37a0881ea6c9"
+  },
+  "outputs": {
+    "basemap": {
+      "bytes": 17383424,
+      "path": "releases/faroe-islands/2.0.0/maps/basemap.mbtiles",
+      "sha256": "b67847aeb5d066222453f1c449bc2da20996f740fe8d6344068a6624bdb4b75e",
+      "validation": {
+        "empty_tile_count": 1001,
+        "logical_tiles_sha256": "5cd36533f8457c4cb71aad38ee5f82c541976f67c5fbca534229c9ba484cd1a0",
+        "tile_count": 4001
+      }
+    },
+    "grid": {
+      "bytes": 3600384,
+      "path": "releases/faroe-islands/2.0.0/maps/grid.mbtiles",
+      "sha256": "a852a2483bddf68d938f11c44078747840e9c3f44877ead2aa1147d713bd15df",
+      "validation": {
+        "empty_tile_count": 0,
+        "logical_tiles_sha256": "d8084c40b8f5759fd2c65edae798d22d7ec65f3f4febcbcae34ffd60ed2c1aa7",
+        "tile_count": 12737
+      }
+    },
+    "hillshade": {
+      "bytes": 3743744,
+      "path": "releases/faroe-islands/2.0.0/maps/hillshade.mbtiles",
+      "sha256": "81cd323c3b2c091a979aa2d90b369b85cd336cd2b6359d0e51e4a48603a60c5e",
+      "validation": {
+        "empty_tile_count": 0,
+        "logical_tiles_sha256": "eb18edb3fde123f99397534ef34502760a479e36cab68cfdbed9594cb4d81916",
+        "tile_count": 246
+      }
+    },
+    "topography": {
+      "bytes": 12451840,
+      "path": "releases/faroe-islands/2.0.0/maps/topography.mbtiles",
+      "sha256": "bf577bdef9b3fe877e625260be7363a1049fca8ae80e648b978b9384dc387b12",
+      "validation": {
+        "empty_tile_count": 985,
+        "logical_tiles_sha256": "d54b02e525d399e255a08b37987b94326cd6858813c210fa62c434b1c4672dec",
+        "tile_count": 3198
+      }
+    }
+  },
+  "region": "faroe-islands",
+  "replacements": {
+    "basemap": {
+      "changed_tiles": 1220,
+      "path": "build/faroe-islands-release/basemap-smoothed.mbtiles",
+      "replacement_feature_instances": 66502,
+      "sha256": "b31fe800ffd2d84250a4be11b709423208997486f440e0de3a11ae9f706f8b41",
+      "unchanged_other_layers_sha256": "3539e7adf2658561708a20ea4646e3a1c6346ffddaa2341f847d4850a0e28231",
+      "validation": {
+        "empty_tile_count": 1001,
+        "logical_tiles_sha256": "c6c550646e897f08a2614aa7622780850c9962191ac386db369f1980198442c5",
+        "tile_count": 4001
+      }
+    },
+    "topography": {
+      "changed_tiles": 2198,
+      "path": "build/faroe-islands-release/topography-smoothed.mbtiles",
+      "replacement_feature_instances": 80274,
+      "sha256": "6f89db8227015a4a8001aaa1bffc4b59152c1d98801bdc3a91068dd663d56161",
+      "unchanged_other_layers_sha256": "d1dbb2c7a98fd1e6165ba5c77a5be7d7e3d05f9b464bb7bb9fb231a5e22e72a0",
+      "validation": {
+        "empty_tile_count": 985,
+        "logical_tiles_sha256": "a34eb474a2c8a841c4fd0878902185bf8408ca6dd620bd1adbc32e43d2a4b891",
+        "tile_count": 3198
+      }
+    }
+  },
+  "status": "built and structurally validated; visual/device review pending"
+}

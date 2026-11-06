@@ -1,0 +1,74 @@
+{
+  "bounds": [
+    -7.85,
+    61.3,
+    -6.1,
+    62.5
+  ],
+  "contextEnvelope": [
+    -7.85,
+    61.3,
+    -6.1,
+    62.5
+  ],
+  "drawPriority": 25,
+  "format": "openbaremap-garmin-render-footprint-v1",
+  "geometry": {
+    "bytes": 739,
+    "path": "regions/faroe-islands/garmin/render-coverage.geojson",
+    "sha256": "2077f1e389c6cf2e55ac5e56702468a89fe6225b7ed517bf1f6af15366fb8a0e"
+  },
+  "inputs": [
+    {
+      "bytes": 175,
+      "path": "data/regions/faroe-islands/faroe-islands.poly",
+      "sha256": "12cbf750f083ad314e9c083e580ad60da01c7cde890cbe2c0daa3d30d710d98f",
+      "url": "https://download.geofabrik.de/europe/faroe-islands.poly"
+    }
+  ],
+  "knownDestinationsCovered": {
+    "gasadalur": [
+      -7.4360093,
+      62.109738
+    ],
+    "gjogv": [
+      -6.9430295,
+      62.3257427
+    ],
+    "klaksvik": [
+      -6.5837755,
+      62.2254921
+    ],
+    "mykines": [
+      -7.6476479,
+      62.1042514
+    ],
+    "sandur": [
+      -6.8167192,
+      61.8348502
+    ],
+    "slaettaratindur": [
+      -7.0132,
+      62.296717
+    ],
+    "suduroy": [
+      -6.814186643797399,
+      61.52106515
+    ],
+    "torshavn": [
+      -6.7715709,
+      62.0101396
+    ],
+    "tvoroyri": [
+      -6.8046823,
+      61.5553294
+    ],
+    "vidareidi": [
+      -6.5354618,
+      62.3602003
+    ]
+  },
+  "purpose": "Rectangular Garmin tiles may overlap other countries. Do not fill their padding with sea, land or land-cover polygons.",
+  "region": "faroe-islands",
+  "transparentNativeMap": true
+}

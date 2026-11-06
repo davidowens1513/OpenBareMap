@@ -1,0 +1,590 @@
+{
+  "coverage": "The complete Faroe Islands archipelago, including the smaller outlying islands; coverage 7.85\u20136.10\u00b0W, 61.30\u201362.50\u00b0N.",
+  "coverageAnchors": {
+    "gasadalur": {
+      "coordinate": [
+        -7.4360093,
+        62.109738
+      ],
+      "featuresInNeighbouringDetailedTiles": 432
+    },
+    "gjogv": {
+      "coordinate": [
+        -6.9430295,
+        62.3257427
+      ],
+      "featuresInNeighbouringDetailedTiles": 1145
+    },
+    "klaksvik": {
+      "coordinate": [
+        -6.5837755,
+        62.2254921
+      ],
+      "featuresInNeighbouringDetailedTiles": 3095
+    },
+    "mykines": {
+      "coordinate": [
+        -7.6476479,
+        62.1042514
+      ],
+      "featuresInNeighbouringDetailedTiles": 478
+    },
+    "sandur": {
+      "coordinate": [
+        -6.8167192,
+        61.8348502
+      ],
+      "featuresInNeighbouringDetailedTiles": 1169
+    },
+    "slaettaratindur": {
+      "coordinate": [
+        -7.0132,
+        62.296717
+      ],
+      "featuresInNeighbouringDetailedTiles": 134
+    },
+    "suduroy": {
+      "coordinate": [
+        -6.814186643797399,
+        61.52106515
+      ],
+      "featuresInNeighbouringDetailedTiles": 418
+    },
+    "torshavn": {
+      "coordinate": [
+        -6.7715709,
+        62.0101396
+      ],
+      "featuresInNeighbouringDetailedTiles": 9153
+    },
+    "tvoroyri": {
+      "coordinate": [
+        -6.8046823,
+        61.5553294
+      ],
+      "featuresInNeighbouringDetailedTiles": 3216
+    },
+    "vidareidi": {
+      "coordinate": [
+        -6.5354618,
+        62.3602003
+      ],
+      "featuresInNeighbouringDetailedTiles": 808
+    }
+  },
+  "datasets": {
+    "basemap": {
+      "empty_tile_count": 1001,
+      "logical_tiles_sha256": "5cd36533f8457c4cb71aad38ee5f82c541976f67c5fbca534229c9ba484cd1a0",
+      "tile_count": 4001
+    },
+    "grid": {
+      "empty_tile_count": 0,
+      "logical_tiles_sha256": "d8084c40b8f5759fd2c65edae798d22d7ec65f3f4febcbcae34ffd60ed2c1aa7",
+      "tile_count": 12737
+    },
+    "hillshade": {
+      "empty_tile_count": 0,
+      "logical_tiles_sha256": "eb18edb3fde123f99397534ef34502760a479e36cab68cfdbed9594cb4d81916",
+      "tile_count": 246
+    },
+    "topography": {
+      "empty_tile_count": 985,
+      "logical_tiles_sha256": "d54b02e525d399e255a08b37987b94326cd6858813c210fa62c434b1c4672dec",
+      "tile_count": 3198
+    }
+  },
+  "detail": {
+    "basemap": {
+      "boundaries": 5694,
+      "contours": 0
+    },
+    "topography": {
+      "boundaries": 0,
+      "contours": 63345
+    }
+  },
+  "garmin": {
+    "familyId": 4838,
+    "garminPackageRevision": "2.0.1-trail-detail-r1",
+    "inspection": {
+      "anchorLabels": {
+        "Klaksv\u00edk": "Klaksv\u00edk",
+        "T\u00f3rshavn": "T\u00f3rshavn"
+      },
+      "bounds": [
+        -7.850074768066406,
+        61.29993438720703,
+        -6.099987030029297,
+        62.50001907348633
+      ],
+      "coastPolygonsByLevel": {
+        "0": {
+          "0x32": 12,
+          "0x54": 765
+        },
+        "1": {
+          "0x32": 4,
+          "0x54": 423
+        },
+        "2": {
+          "0x32": 3,
+          "0x54": 319
+        },
+        "3": {
+          "0x32": 3,
+          "0x54": 115
+        },
+        "4": {
+          "0x32": 3,
+          "0x54": 43
+        }
+      },
+      "contoursByLevel": {
+        "0": {
+          "0x20": 6516,
+          "0x22": 1119
+        },
+        "1": {
+          "0x20": 5840,
+          "0x22": 958
+        },
+        "2": {
+          "0x22": 918
+        },
+        "3": {
+          "0x10008": 896
+        },
+        "4": {}
+      },
+      "lineInstancesAtHighestDetail": {
+        "0x10001": 3,
+        "0x10002": 15,
+        "0x10004": 51,
+        "0x10005": 1267,
+        "0x10006": 3146,
+        "0x14": 2,
+        "0x16": 6395,
+        "0x18": 5973,
+        "0x1a": 15,
+        "0x1c": 679,
+        "0x1e": 10,
+        "0x1f": 363,
+        "0x20": 6516,
+        "0x22": 1119,
+        "0x3": 290,
+        "0x4": 252,
+        "0x6": 2301,
+        "0x7": 8957,
+        "0xa": 2075
+      },
+      "logicalCombinedSHA256": "8b1535bea6659449b2938eeaa03d582711791144f63f606ded2d4368d3d7eb02",
+      "logicalHashNote": "Internal file names, sizes and payloads; only CommonHeader creation-date bytes 14..20 are zeroed for hashing. IMG archive headers are excluded. Output bytes are never modified.",
+      "logicalTileSHA256": {
+        "48380001.img": "26302b154aea3c44faa9d38a71646aa94c6dee6e1cb493d64d80b150df50b71d",
+        "48380002.img": "71f9262216824bca574104df45be8fda9f0b4c39e9cbe84c1d146cd42fe942c5",
+        "48380003.img": "05814d44768c99fec6eaf564fdc4a007fec94170659db3f363f4eb6b160b6e9a"
+      },
+      "pointInstancesAtHighestDetail": {
+        "0x10001": 19,
+        "0x10002": 85,
+        "0x10003": 67,
+        "0x10006": 1038,
+        "0x2f0b": 1551,
+        "0x600": 4,
+        "0x650c": 71,
+        "0x6603": 222,
+        "0x6615": 131,
+        "0x6616": 361,
+        "0x800": 116,
+        "0xb00": 11,
+        "0xc00": 2050
+      },
+      "polygonInstancesAtHighestDetail": {
+        "0x10101": 3542,
+        "0x10102": 3766,
+        "0x10103": 24,
+        "0x10104": 90,
+        "0x10105": 212,
+        "0x10106": 50,
+        "0x10109": 1406,
+        "0x1010a": 288,
+        "0x1010b": 121,
+        "0x13": 31392,
+        "0x32": 12,
+        "0x3c": 1371,
+        "0x50": 180,
+        "0x51": 50,
+        "0x54": 765
+      },
+      "routing": false,
+      "subfileBytes": {
+        "DEM": 2407003,
+        "LBL": 101349,
+        "MPS": 295,
+        "RGN": 5363674,
+        "SRT": 912,
+        "TRE": 80763,
+        "TYP": 2982
+      },
+      "tiles": 3
+    },
+    "output": {
+      "bytes": 7987200,
+      "path": "regions/faroe-islands/garmin/dist/OpenBareMap-Faroe-Islands.img",
+      "sha256": "33d63a6050f29fdf72187ad69af3e4396536a6c88aa723da15800065a68bf216"
+    },
+    "routing": false,
+    "status": "compiled and structurally inspected; hardware rendering pending"
+  },
+  "geometryProcessing": {
+    "contours": 6118,
+    "grid": {
+      "grid_10km": 28,
+      "grid_1km": 262
+    },
+    "landcover": {
+      "empty_source_areas": [],
+      "features": 8301,
+      "retained": 596,
+      "smoothed": 7705
+    }
+  },
+  "irelandGarminPackageRevision": "2.0.1-trail-detail-r1",
+  "irelandPreserved": true,
+  "islandLandBackground": {
+    "Bor\u00f0oy": {
+      "coordinate": [
+        -6.519960153215357,
+        62.263797350000004
+      ],
+      "verifiedZooms": [
+        10,
+        11,
+        12
+      ]
+    },
+    "Eysturoy": {
+      "coordinate": [
+        -6.817845062972005,
+        62.198870400000004
+      ],
+      "verifiedZooms": [
+        10,
+        11,
+        12
+      ]
+    },
+    "Fugloy": {
+      "coordinate": [
+        -6.295083714926933,
+        62.335528749999995
+      ],
+      "verifiedZooms": [
+        10,
+        11,
+        12
+      ]
+    },
+    "Hestur": {
+      "coordinate": [
+        -6.8906230651131,
+        61.95078735
+      ],
+      "verifiedZooms": [
+        10,
+        11,
+        12
+      ]
+    },
+    "Kalsoy": {
+      "coordinate": [
+        -6.742989818875409,
+        62.2981508
+      ],
+      "verifiedZooms": [
+        10,
+        11,
+        12
+      ]
+    },
+    "Koltur": {
+      "coordinate": [
+        -6.974831795485134,
+        61.9874722
+      ],
+      "verifiedZooms": [
+        10,
+        11,
+        12
+      ]
+    },
+    "Kunoy": {
+      "coordinate": [
+        -6.659841603548006,
+        62.308899999999994
+      ],
+      "verifiedZooms": [
+        10,
+        11,
+        12
+      ]
+    },
+    "L\u00edtla D\u00edmun": {
+      "coordinate": [
+        -6.710878974728262,
+        61.6332145
+      ],
+      "verifiedZooms": [
+        10,
+        11,
+        12
+      ]
+    },
+    "Mykines": {
+      "coordinate": [
+        -7.604653567580989,
+        62.1045075
+      ],
+      "verifiedZooms": [
+        10,
+        11,
+        12
+      ]
+    },
+    "N\u00f3lsoy": {
+      "coordinate": [
+        -6.653136725815699,
+        61.9854463
+      ],
+      "verifiedZooms": [
+        10,
+        11,
+        12
+      ]
+    },
+    "Sandoy": {
+      "coordinate": [
+        -6.723989940433405,
+        61.8333877
+      ],
+      "verifiedZooms": [
+        10,
+        11,
+        12
+      ]
+    },
+    "Sk\u00fagvoy": {
+      "coordinate": [
+        -6.826961985197521,
+        61.76644315
+      ],
+      "verifiedZooms": [
+        10,
+        11,
+        12
+      ]
+    },
+    "Streymoy": {
+      "coordinate": [
+        -7.015882816156839,
+        62.1237192
+      ],
+      "verifiedZooms": [
+        10,
+        11,
+        12
+      ]
+    },
+    "St\u00f3ra D\u00edmun": {
+      "coordinate": [
+        -6.756602847705695,
+        61.694632600000006
+      ],
+      "verifiedZooms": [
+        10,
+        11,
+        12
+      ]
+    },
+    "Su\u00f0uroy": {
+      "coordinate": [
+        -6.814186643797399,
+        61.52106515
+      ],
+      "verifiedZooms": [
+        10,
+        11,
+        12
+      ]
+    },
+    "Sv\u00ednoy": {
+      "coordinate": [
+        -6.370266050279082,
+        62.269355399999995
+      ],
+      "verifiedZooms": [
+        10,
+        11,
+        12
+      ]
+    },
+    "Vi\u00f0oy": {
+      "coordinate": [
+        -6.522562763215868,
+        62.33562725
+      ],
+      "verifiedZooms": [
+        10,
+        11,
+        12
+      ]
+    },
+    "V\u00e1gar": {
+      "coordinate": [
+        -7.234584100845196,
+        62.089898500000004
+      ],
+      "verifiedZooms": [
+        10,
+        11,
+        12
+      ]
+    }
+  },
+  "labelGlyphs": {
+    "Open Sans Bold": true,
+    "Open Sans Regular": true,
+    "Open Sans Semibold": true
+  },
+  "landBackground": {
+    "Bor\u00f0oy": {
+      "coordinate": [
+        -6.519960153215357,
+        62.263797350000004
+      ],
+      "verifiedZooms": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    },
+    "Eysturoy": {
+      "coordinate": [
+        -6.817845062972005,
+        62.198870400000004
+      ],
+      "verifiedZooms": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    },
+    "Sandoy": {
+      "coordinate": [
+        -6.723989940433405,
+        61.8333877
+      ],
+      "verifiedZooms": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    },
+    "Streymoy": {
+      "coordinate": [
+        -7.015882816156839,
+        62.1237192
+      ],
+      "verifiedZooms": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    },
+    "Su\u00f0uroy": {
+      "coordinate": [
+        -6.814186643797399,
+        61.52106515
+      ],
+      "verifiedZooms": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    },
+    "V\u00e1gar": {
+      "coordinate": [
+        -7.234584100845196,
+        62.089898500000004
+      ],
+      "verifiedZooms": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    }
+  },
+  "packages": {
+    "android": {
+      "checkedFiles": 41,
+      "nativeDeviceRenderingTested": false,
+      "sourceFiles": {
+        "basemap": "maps/basemap.mbtiles",
+        "coast": "maps/coast.mbtiles",
+        "hillshade": "maps/hillshade.mbtiles",
+        "topography": "maps/topography.mbtiles",
+        "utm-grid": "maps/grid.mbtiles"
+      }
+    },
+    "ios": {
+      "checkedFiles": 44,
+      "nativeDeviceRenderingTested": false,
+      "sourceFiles": {
+        "basemap": "maps/basemap.mbtiles",
+        "coast": "maps/coast.mbtiles",
+        "hillshade": "maps/hillshade.mbtiles",
+        "topography": "maps/topography.mbtiles",
+        "utm-grid": "maps/grid.mbtiles"
+      }
+    }
+  },
+  "region": "faroe-islands",
+  "status": "automated checks passed; visual and hardware acceptance pending"
+}

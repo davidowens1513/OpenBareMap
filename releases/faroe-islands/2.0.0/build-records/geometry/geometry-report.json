@@ -1,0 +1,34 @@
+{
+  "builderSHA256": "9bf7e290ec55dd9d2c84a3deb454ddd17bdbd32979205872b7fc78ec930c23e1",
+  "contoursSourceSHA256": "e2eed8b966f89bc76ea2c43619daca54df0c68ccd31350231eeb42c824068b4f",
+  "counts": {
+    "contours": 6118,
+    "grid": {
+      "grid_10km": 28,
+      "grid_1km": 262
+    },
+    "landcover": {
+      "empty_source_areas": [],
+      "features": 8301,
+      "retained": 596,
+      "smoothed": 7705
+    }
+  },
+  "osm": {
+    "bytes": 7736538,
+    "operation": "Complete upstream extract; no merge or spatial filtering",
+    "path": "data/regions/faroe-islands/faroe-islands-261104.osm.pbf",
+    "replicationTimestamp": "2026-11-04T21:21:03Z",
+    "sha256": "4b1b878772d1bc51623a9b12741eb9b54bd79ffdb61dfa15684ff5531297802d",
+    "snapshot_date": "2026-11-04",
+    "url": "https://download.geofabrik.de/europe/faroe-islands-261104.osm.pbf"
+  },
+  "outputs": {
+    "contours.geojson": "9d2e5d136cebcfe0c6d25b20452adc66cd83eb8f5800da75b74fe1ad8d572173",
+    "grid_10km.geojson": "aad1494a6cba314b9efa78549ab0d6156bf5d2ddbb892a1da62c73b0447b7270",
+    "grid_1km.geojson": "4744ab0ec886cceb4634c88c2457bfb09b2b2ae03667cd9dd41cbe442ac86289",
+    "landcover.geojson": "57e57dfc070dc09642946363109553e005cb66e9b6f2781414875ed4536929bb"
+  },
+  "region": "faroe-islands",
+  "smootherSHA256": "7581d024dc1c1bec931642c7201db149bf64a64c814c451fa8bf37a0881ea6c9"
+}

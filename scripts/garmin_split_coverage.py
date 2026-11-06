@@ -12,7 +12,7 @@ def validate_split(path,profile):
             boxes.append((west*unit,south*unit,east*unit,north*unit))
     if not boxes:raise ValueError('No native split areas')
     checked=[]
-    for name,xy in profile['destinations'].items():
+    for name,xy in {**profile['destinations'],**profile.get('islandValidationAnchors',{})}.items():
         lon,lat=xy[:2]
         if not any(w<=lon<=e and s<=lat<=n for w,s,e,n in boxes):
             raise ValueError('Native split plan excludes '+name)

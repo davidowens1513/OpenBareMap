@@ -1,0 +1,284 @@
+{
+  "region": "faroe-islands",
+  "storageRevision": "2.0.0-faroe-islands-r3",
+  "review": "Browser visual review; native device rendering requires restart and on-screen review",
+  "views": [
+    {
+      "view": "overview",
+      "state": {
+        "ready": true,
+        "errors": [],
+        "status": "Local map \u00b7 zoom 8.0 \u00b7 ready"
+      },
+      "renderedLayers": {
+        "ferry": 14,
+        "transportation": 1812,
+        "railway": 5,
+        "contour": 863,
+        "waterway": 447,
+        "boundary": 400,
+        "water": 695,
+        "landcover": 5142,
+        "land": 194
+      },
+      "screenshot": "regions/faroe-islands/review/overview.png",
+      "centerZoom": {
+        "center": {
+          "lng": -7.365431574680372,
+          "lat": 61.905884515004715
+        },
+        "zoom": 8.003529570132658
+      }
+    },
+    {
+      "view": "torshavn",
+      "state": {
+        "ready": true,
+        "errors": [],
+        "status": "Local map \u00b7 zoom 8.0 \u00b7 ready"
+      },
+      "renderedLayers": {
+        "poi": 57,
+        "place": 3,
+        "hiking_poi": 14,
+        "mountain": 2,
+        "water_name": 3,
+        "grid_10km": 5,
+        "grid_1km": 45,
+        "island_name": 1,
+        "transportation_name": 24,
+        "cycling_route": 4,
+        "ferry": 19,
+        "transportation": 4737,
+        "building": 5872,
+        "contour": 134,
+        "waterway": 226,
+        "boundary": 10,
+        "water": 59,
+        "natural_line": 26,
+        "landcover": 364,
+        "land": 10
+      },
+      "screenshot": "regions/faroe-islands/review/torshavn.png",
+      "centerZoom": {
+        "center": {
+          "lng": -6.7715709,
+          "lat": 62.0101396
+        },
+        "zoom": 13
+      }
+    },
+    {
+      "view": "mykines",
+      "state": {
+        "ready": true,
+        "errors": [],
+        "status": "Local map \u00b7 zoom 13.0 \u00b7 ready"
+      },
+      "renderedLayers": {
+        "poi": 4,
+        "place": 44,
+        "hiking_poi": 4,
+        "mountain": 2,
+        "grid_10km": 4,
+        "grid_1km": 32,
+        "island_name": 2,
+        "ferry": 3,
+        "transportation": 137,
+        "building": 119,
+        "contour": 316,
+        "waterway": 13,
+        "boundary": 21,
+        "water": 1,
+        "natural_line": 49,
+        "landcover": 251,
+        "land": 49
+      },
+      "screenshot": "regions/faroe-islands/review/mykines.png",
+      "centerZoom": {
+        "center": {
+          "lng": -7.6476479,
+          "lat": 62.1042514
+        },
+        "zoom": 13
+      }
+    },
+    {
+      "view": "gasadalur",
+      "state": {
+        "ready": true,
+        "errors": [],
+        "status": "Local map \u00b7 zoom 13.0 \u00b7 ready"
+      },
+      "renderedLayers": {
+        "poi": 3,
+        "place": 61,
+        "hiking_poi": 4,
+        "mountain": 17,
+        "water_name": 1,
+        "grid_10km": 5,
+        "grid_1km": 42,
+        "transportation_name": 2,
+        "transportation": 175,
+        "building": 61,
+        "contour": 408,
+        "waterway": 110,
+        "boundary": 12,
+        "water": 1,
+        "natural_line": 38,
+        "landcover": 259,
+        "land": 22
+      },
+      "screenshot": "regions/faroe-islands/review/gasadalur.png",
+      "centerZoom": {
+        "center": {
+          "lng": -7.4360093,
+          "lat": 62.109738
+        },
+        "zoom": 13
+      }
+    },
+    {
+      "view": "slaettaratindur",
+      "state": {
+        "ready": true,
+        "errors": [],
+        "status": "Local map \u00b7 zoom 13.0 \u00b7 ready"
+      },
+      "renderedLayers": {
+        "poi": 2,
+        "place": 3,
+        "hiking_poi": 7,
+        "mountain": 10,
+        "water_name": 2,
+        "grid_10km": 14,
+        "grid_1km": 44,
+        "transportation_name": 9,
+        "transportation": 255,
+        "building": 180,
+        "contour": 468,
+        "waterway": 207,
+        "boundary": 7,
+        "water": 26,
+        "natural_line": 2,
+        "landcover": 312,
+        "land": 6
+      },
+      "screenshot": "regions/faroe-islands/review/slaettaratindur.png",
+      "centerZoom": {
+        "center": {
+          "lng": -7.0132,
+          "lat": 62.296717
+        },
+        "zoom": 13
+      }
+    },
+    {
+      "view": "vidareidi",
+      "state": {
+        "ready": true,
+        "errors": [],
+        "status": "Local map \u00b7 zoom 13.0 \u00b7 ready"
+      },
+      "renderedLayers": {
+        "place": 11,
+        "hiking_poi": 5,
+        "mountain": 7,
+        "grid_10km": 5,
+        "grid_1km": 45,
+        "transportation_name": 7,
+        "transportation": 404,
+        "building": 362,
+        "contour": 418,
+        "waterway": 99,
+        "boundary": 12,
+        "water": 3,
+        "natural_line": 6,
+        "landcover": 25,
+        "land": 5
+      },
+      "screenshot": "regions/faroe-islands/review/vidareidi.png",
+      "centerZoom": {
+        "center": {
+          "lng": -6.5354618,
+          "lat": 62.3602003
+        },
+        "zoom": 13
+      }
+    },
+    {
+      "view": "sandur",
+      "state": {
+        "ready": true,
+        "errors": [],
+        "status": "Local map \u00b7 zoom 13.0 \u00b7 ready"
+      },
+      "renderedLayers": {
+        "poi": 6,
+        "place": 28,
+        "hiking_poi": 1,
+        "mountain": 4,
+        "water_name": 13,
+        "grid_10km": 4,
+        "grid_1km": 42,
+        "island_name": 2,
+        "transportation_name": 5,
+        "ferry": 2,
+        "transportation": 565,
+        "building": 609,
+        "contour": 181,
+        "waterway": 182,
+        "boundary": 17,
+        "water": 29,
+        "landcover": 13,
+        "land": 4
+      },
+      "screenshot": "regions/faroe-islands/review/sandur.png",
+      "centerZoom": {
+        "center": {
+          "lng": -6.8167192,
+          "lat": 61.8348502
+        },
+        "zoom": 13
+      }
+    },
+    {
+      "view": "tvoroyri",
+      "state": {
+        "ready": true,
+        "errors": [],
+        "status": "Local map \u00b7 zoom 13.0 \u00b7 ready"
+      },
+      "renderedLayers": {
+        "poi": 26,
+        "place": 17,
+        "hiking_poi": 10,
+        "mountain": 11,
+        "grid_10km": 5,
+        "grid_1km": 43,
+        "island_name": 1,
+        "transportation_name": 8,
+        "ferry": 4,
+        "transportation": 2440,
+        "building": 1767,
+        "contour": 366,
+        "waterway": 406,
+        "boundary": 13,
+        "water": 25,
+        "natural_line": 110,
+        "landcover": 732,
+        "land": 7
+      },
+      "screenshot": "regions/faroe-islands/review/tvoroyri.png",
+      "centerZoom": {
+        "center": {
+          "lng": -6.8046823,
+          "lat": 61.5553294
+        },
+        "zoom": 13
+      }
+    }
+  ],
+  "visualReviewComplete": true,
+  "reviewedScope": "Overview and seven detailed views reviewed for contours, hillshade, coastline, labels and paths; no map errors"
+}

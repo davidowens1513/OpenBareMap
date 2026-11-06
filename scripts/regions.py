@@ -4,7 +4,7 @@ import json
 from pathlib import Path
 from openbaremap import ROOT
 
-REGIONS = ('ireland', 'england-wales', 'scotland', 'sierra-nevada', 'pyrenees', 'dolomites')
+REGIONS = ('ireland', 'england-wales', 'scotland', 'sierra-nevada', 'pyrenees', 'dolomites', 'faroe-islands')
 
 def profile(region='ireland'):
     if region not in REGIONS:
@@ -29,6 +29,7 @@ def region_style(region='ireland'):
     if region == 'ireland':
         return style
     p = profile(region)
+    if p.get('terrainAttribution'):style['sources']['hillshade']['attribution']=p['terrainAttribution']
     style['name'] = p['name'] + ' ' + p['mapVersion']
     style['center'] = p['destinations']['island'][:2]
     style['zoom'] = p['destinations']['island'][2]
@@ -68,7 +69,7 @@ def region_style(region='ireland'):
     return style
 
 def provenance_files(region='ireland'):
-    return [region_path(region, name) for name in ('active-map.json','sources.lock.json','terrain-sources.lock.json')] + [ROOT/name for name in ('coast-sources.lock.json','legacy-assets.lock.json','viewer-assets.lock.json','assets/sprites.lock.json','config/transport-style.json')] + ([region_path(region,name) for name in ('boundary-source.json','park-boundary.geojson','coverage.geojson','coverage-mask.geojson')] if profile(region).get('coverageBoundary') else []) + ([region_path(region,'grid-provenance.json'),region_path(region,'python-runtime.json')] if region!='ireland' else [])
+    return ([region_path(region,'copernicus-license.pdf')] if region_path(region,'copernicus-license.pdf').exists() else []) + [region_path(region, name) for name in ('active-map.json','sources.lock.json','terrain-sources.lock.json')] + [ROOT/name for name in ('coast-sources.lock.json','legacy-assets.lock.json','viewer-assets.lock.json','assets/sprites.lock.json','config/transport-style.json')] + ([region_path(region,name) for name in ('boundary-source.json','park-boundary.geojson','coverage.geojson','coverage-mask.geojson')] if profile(region).get('coverageBoundary') else []) + ([region_path(region,'grid-provenance.json'),region_path(region,'python-runtime.json')] if region!='ireland' else [])
 
 
 def process_script(region='ireland'):
@@ -108,3 +109,36 @@ def accepted_ireland_baseline():
         baseline['files']['garmin/dist/OpenBareMap-Ireland.img'] = released['regions']['ireland']['sha256']
         baseline['garminPackageRevision'] = revision
     return baseline
+
+
+def expected_basemap_layers(region='ireland'):
+    required=set(json.loads((ROOT/'config/tilemaker.json').read_text())['layers'])
+    optional=set(profile(region).get('optionalBasemapLayers',[]))
+    if not optional.issubset(required):raise ValueError('Unknown optional basemap layer')
+    return required-optional
+
+
+def terrain_file(region,name):
+    override=region_path(region,name)
+    if override.exists():return override
+    return ROOT/('viewer' if name.endswith('.html') else 'data')/name
+
+def apply_terrain_notice(directory,region):
+    import re
+    notice=profile(region).get('terrainNotice')
+    if notice:
+        p=Path(directory)/'ATTRIBUTION.txt'
+        p.write_text(re.sub(r'Elevation:[^\n]*',lambda m:notice,p.read_text()))
+
+def terrain_html(regions):
+    import re
+    original=(ROOT/'viewer/terrain-attribution.html').read_text()
+    overrides=[terrain_file(r,'terrain-attribution.html') for r in regions if terrain_file(r,'terrain-attribution.html')!=ROOT/'viewer/terrain-attribution.html']
+    if len(regions)==1 and overrides:return overrides[0].read_text()
+    for p in dict.fromkeys(overrides):
+        body=re.search(r'<body[^>]*>(.*?)</body>',p.read_text(),re.S).group(1)
+        section='<section>'+body+'</section>'
+        if '</body>' in original:original=original.replace('</body>',section+'</body>')
+        elif '</html>' in original:original=original.replace('</html>',section+'</html>')
+        else:original+=section
+    return original

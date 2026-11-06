@@ -1,0 +1,20 @@
+{
+  "inputs": [
+    {
+      "path": "regions/faroe-islands/garmin/inputs/contours.geojson.gz",
+      "sha256": "6b4c950c8ae8c124a6a1876825b0058ffa9e0c4126050973a41d6aee5fbb849e",
+      "uncompressedSHA256": "9d2e5d136cebcfe0c6d25b20452adc66cd83eb8f5800da75b74fe1ad8d572173"
+    },
+    {
+      "path": "regions/faroe-islands/garmin/inputs/landcover.geojson.gz",
+      "sha256": "f5f651b3ad405406786d8a274627d300f8e4af8f97ffd5bc651f8cc82cf2f9f1",
+      "uncompressedSHA256": "57e57dfc070dc09642946363109553e005cb66e9b6f2781414875ed4536929bb"
+    },
+    {
+      "path": "regions/faroe-islands/garmin/inputs/land.geojson.gz",
+      "sha256": "773f79f74452efad36d10aaf5e00d7234035b7d27dd50baae361cee9975d8fb0",
+      "uncompressedSHA256": "a9e28ebc109af7968d497e7bb2d18731c2969c8c93a9880bfdef5125ffa30381"
+    }
+  ],
+  "region": "faroe-islands"
+}

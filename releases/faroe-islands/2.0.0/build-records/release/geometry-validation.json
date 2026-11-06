@@ -1,0 +1,43 @@
+{
+  "audit": {
+    "feature_instances_by_layer": {
+      "contour": 80274,
+      "grid_10km": 4569,
+      "grid_1km": 39975,
+      "landcover": 66502
+    },
+    "metadata": {
+      "bounds": "-7.850000,61.300000,-6.100000,62.500000",
+      "center": "-6.975000,61.900000,9",
+      "description": "The complete Faroe Islands archipelago, including the smaller outlying islands; coverage 7.85\u20136.10\u00b0W, 61.30\u201362.50\u00b0N.",
+      "format": "pbf",
+      "json": "{\"vector_layers\":[{\"id\":\"contour\",\"fields\":{\"elevation\":\"Number\"},\"minzoom\":8,\"maxzoom\":14},{\"id\":\"grid_10km\",\"fields\":{\"axis\":\"String\",\"label\":\"String\",\"metres\":\"Number\"},\"minzoom\":10,\"maxzoom\":14},{\"id\":\"grid_1km\",\"fields\":{\"axis\":\"String\",\"label\":\"String\",\"metres\":\"Number\"},\"minzoom\":12,\"maxzoom\":14},{\"id\":\"landcover\",\"fields\":{\"class\":\"String\",\"landuse\":\"String\",\"name\":\"String\",\"natural\":\"String\",\"wetland\":\"String\"},\"minzoom\":4,\"maxzoom\":14}]}",
+      "maxzoom": "14",
+      "minzoom": "4",
+      "name": "OpenBareMap Faroe Islands geometry",
+      "type": "baselayer",
+      "version": "2.0.0"
+    },
+    "note": "Feature instances include repetition across tiles and zooms; not unique OSM objects. This checks MVT framing and layer presence, not geometry or cartographic correctness.",
+    "tiles_by_zoom": {
+      "4": 1,
+      "5": 2,
+      "6": 2,
+      "7": 2,
+      "8": 6,
+      "9": 16,
+      "10": 48,
+      "11": 165,
+      "12": 630,
+      "13": 2419,
+      "14": 9476
+    }
+  },
+  "configSHA256": "39be1eedccd6f59855e6a2d448ea657750a9edd56c8570332883c13fff3539a5",
+  "sha256": "921d8e92a7a75fb82a7120634834cc1017a2ad68edf465de697e4de678329551",
+  "validation": {
+    "empty_tile_count": 10,
+    "logical_tiles_sha256": "70b0d4e64846105ab72cb70d00119e2b8e8f0386e5890ea02c0c0ac8a87f75ff",
+    "tile_count": 12767
+  }
+}

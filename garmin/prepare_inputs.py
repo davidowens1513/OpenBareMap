@@ -107,4 +107,4 @@ def prepare(region='ireland'):
  counts['renderFootprintSHA256']=footprint_record['geometry']['sha256'];counts['polygonClipping']=clipper.stats
  (WORK/'prepared.json').write_text(json.dumps(counts,indent=2)+'\n');print(json.dumps(counts,indent=2))
 if __name__=='__main__':
- parser=argparse.ArgumentParser();parser.add_argument('--region',choices=['ireland','england-wales','scotland','sierra-nevada','pyrenees','dolomites'],default='ireland');args=parser.parse_args();prepare(args.region)
+ parser=argparse.ArgumentParser();parser.add_argument('--region',choices=['ireland','england-wales','scotland','sierra-nevada','pyrenees','dolomites','faroe-islands'],default='ireland');args=parser.parse_args();prepare(args.region)
