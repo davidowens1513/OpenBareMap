@@ -1,0 +1,61 @@
+BAREGPS TRACK EDITOR - iOS BUNDLE
+Version 0.1.1 | 6 November 2026
+
+Will be available through App Store
+
+1. WHAT THIS DOWNLOAD IS
+
+This bundle contains the iOS Xcode project, shared app source and prebuilt
+web assets. It is a source bundle for building the app with Xcode, not an
+App Store download or an IPA that installs directly from a browser.
+No Apple certificate, private key or device provisioning profile is included.
+
+2. BUILD AND INSTALL WITH XCODE
+
+Use a Mac with a current Xcode and its iOS SDK. The app supports iOS 16.4
+or later. Unzip the bundle and open ios/App/App.xcodeproj in Xcode.
+Allow Xcode to resolve the pinned Capacitor Swift package.
+Choose the App scheme and your connected iPhone or iPad.
+
+In the App target's Signing & Capabilities panel, choose your own Apple
+Development Team and enable automatic signing. Adjust the bundle identifier
+if required by your development account. On the device, complete Apple's
+normal Trust and Developer Mode steps if Xcode asks for them.
+
+Choose Product > Run. Xcode signs and installs the app on your device.
+Your Apple account and provisioning rules determine where that development
+build can run and for how long it remains valid.
+
+3. EDITING AND REBUILDING THE SHARED APP
+
+The bundle includes prebuilt web assets so the supplied Xcode project can
+be opened directly. To change src/ or public/, install Node.js 22 or newer,
+then run these commands from the extracted bundle root:
+
+  npm ci
+  npm run build
+  npx cap sync ios
+
+Rebuild the App scheme in Xcode afterwards. The full project, including the
+Android version and automated tests, is linked below.
+
+4. USING THE APP
+
+Tap Explore with sample tracks or Irish samples to try the illustrative
+Glendalough Upper Lake and Spinc ridge tracks from County Wicklow.
+Tap Open files to select one or more GPX files from Files.
+Drag the A and B handles on the map, or use the sliders, to choose a section.
+Split or reverse it, or add selected sections to a joined walking route.
+Distance, ascent, descent and the elevation profile update as you edit.
+
+Dashed connections count toward distance and ascent. Connection ascent is
+estimated from endpoint heights until you fetch intermediate terrain.
+The map and optional terrain requests require internet; file operations do not.
+
+Save section or Save route exports a GPX using the system Files save picker.
+The Saved label refers to local workspace recovery, not an exported GPX.
+Export tracks you want to keep before deleting the app or its data.
+
+Project: https://github.com/davidowens1513/BareGPS-Track-Editor
+Website: https://appsbyonzy.dev/#tools
+Contact: appsbyonzy@gmail.com
