@@ -1,0 +1,108 @@
+BAREGPS ROUTE PLANNER - iOS BUNDLE
+GPX Creator and Editor
+Version 0.2.5 | 7 November 2026
+
+Will be available through App Store
+
+1. WHAT THIS DOWNLOAD IS
+
+This bundle contains the iOS Xcode project, shared app source and prebuilt
+web assets. It is a source bundle for building the app with Xcode, not an
+App Store download or an IPA that installs directly from a browser.
+No Apple certificate, private key or device provisioning profile is included.
+
+2. BUILD AND INSTALL WITH XCODE
+
+Use a Mac with a current Xcode and its iOS SDK. The app supports iOS 16.4
+or later. Unzip the bundle.
+Before opening Xcode, install Node.js 22 or newer and run npm ci from the
+extracted bundle root. This supplies the geolocation plugin used by the local
+Swift package. Allow Xcode to resolve its pinned Swift dependencies.
+Open ios/App/App.xcodeproj. Choose the App scheme and your connected iPhone
+or iPad.
+
+In the App target's Signing & Capabilities panel, choose your own Apple
+Development Team and enable automatic signing. Adjust the bundle identifier
+if required by your development account. On the device, complete Apple's
+normal Trust and Developer Mode steps if Xcode asks for them.
+
+Choose Product > Run. Xcode signs and installs the app on your device.
+Your Apple account and provisioning rules determine where that development
+build can run and for how long it remains valid.
+
+3. EDITING AND REBUILDING THE SHARED APP
+
+The bundle includes prebuilt web assets. npm ci is still required to supply
+the native geolocation plugin before building the Xcode project. To change src/ or public/, install Node.js 22 or newer,
+then run these commands from the extracted bundle root:
+
+  npm ci
+  npm run build
+  npx cap sync ios
+
+Rebuild the App scheme in Xcode afterwards. The full project, including the
+Android version and automated tests, is linked below.
+
+4. USING THE APP
+
+Choose Edit and tap Explore with sample tracks on the welcome screen to try the illustrative
+Glendalough Upper Lake and Spinc ridge tracks from County Wicklow.
+Tap Open files to select one or more GPX files from Files.
+Drag the A and B handles on the map, or use the sliders, to choose a section.
+Split or reverse it, or add selected sections to a joined walking route.
+Distance, ascent, descent and the elevation profile update as you edit.
+
+Dashed connections count toward distance and ascent. Connection ascent is
+estimated from endpoint heights until you fetch intermediate terrain.
+The map and optional terrain requests require internet; file operations do not.
+
+5. CREATE A NEW WALKING ROUTE
+
+Create opens by default, on the left tab. Add points below the map is the default: every map tap extends
+the route, even near an existing line. To insert between existing points,
+choose Insert point and tap the chosen line. The app then returns to Add points.
+Drag numbered markers to reshape the route. Close loop connects precisely
+back to the start. The grid lists points in walking order, coordinates,
+leg distances, total distance and available heights. Remove points or undo
+changes as needed. Create preserves its draft and map position. Opening Edit
+resets to Carrauntoohil, hides the examples and shows the file/sample actions.
+Imported tracks remain saved in Your tracks; select one to resume editing.
+
+Lines connect points directly and do not automatically follow paths.
+Fetch terrain to estimate ascent and descent along the whole route.
+Changing route points clears these estimates so you can fetch fresh heights.
+Give the route a name and colour, then Save route exports it as GPX.
+
+Save section or Save route exports a GPX using the system Files save picker.
+The Saved label refers to local workspace recovery, not an exported GPX.
+Export tracks you want to keep before deleting the app or its data.
+
+Project: https://github.com/davidowens1513/BareGPS-Track-Editor
+Website: https://appsbyonzy.dev/#tools
+Contact: appsbyonzy@gmail.com
+
+Browser Preview: https://appsbyonzy.dev/tools/baregps-route-planner/
+
+COORDINATES AND CURRENT POSITION
+
+The cog beneath ? selects Lat/Long, Irish National Grid, British National
+Grid, ITM, MGRS, UTM or USNG. The choice is remembered on this device and
+applies to route points and the map-centre readout. GPX remains WGS84.
+Irish/British grid transformations are approximate. Regional coverage limits
+are shown when appropriate.
+
+The crosshair at the upper right of either map requests one current-position
+fix. Allow location access when prompted if you want this feature. A blue dot
+and accuracy circle mark the position; it never adds a route point. There is
+no background tracking. Zoom controls sit at the lower left above the scale.
+Metrics are centred and show Distance(km), Ascent(m), Descent(m); empty ascent
+and descent show 0. Fetch terrain when heights are needed for a created route.
+
+OPTIONAL POINT NAMES AND ROUTECARDS
+
+In Create, click Name (Opt) beside a point to add or edit its name.
+Names are preserved in GPX exports. Unnamed points retain their number.
+Share Routecard shares a text summary for messages, including point names,
+coordinates, leg and total distances, and available heights. If device sharing
+is unavailable in the browser, copy the routecard from the preview.
+Use the cog beneath ? to choose grid references; changes apply immediately.
