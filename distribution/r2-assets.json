@@ -1,0 +1,83 @@
+{
+  "purpose": "Published R2 assets excluded from Git LFS; restore locally using scripts/restore_r2_assets.py. Historical LFS objects have NOT been purged.",
+  "assets": [
+    {
+      "path": "releases/dolomites/2.0.0/app-bundles-v1/android/OpenBareMap-Dolomites-Android-Bundle.zip",
+      "url": "https://downloads.appsbyonzy.dev/OpenBareMap/dolomites/2.0.0/app-bundles-v1/android/OpenBareMap-Dolomites-Android-Bundle.zip",
+      "bytes": 855063423,
+      "sha256": "d1945d53ad3bad251132d3d6d6d660c1c28e6e965b6eab3804652e66db506b67"
+    },
+    {
+      "path": "releases/dolomites/2.0.0/app-bundles-v1/ios/OpenBareMap-Dolomites-iOS-Bundle.zip",
+      "url": "https://downloads.appsbyonzy.dev/OpenBareMap/dolomites/2.0.0/app-bundles-v1/ios/OpenBareMap-Dolomites-iOS-Bundle.zip",
+      "bytes": 855062884,
+      "sha256": "343ffaf2fd9d3ef98a540abd8f2014621d0bb04e32af3d1c84b64cabd704a662"
+    },
+    {
+      "path": "releases/faroe-islands/2.0.0/app-bundles-v1/android/OpenBareMap-Faroe-Islands-Android-Bundle.zip",
+      "url": "https://downloads.appsbyonzy.dev/OpenBareMap/faroe-islands/2.0.0/app-bundles-v1/android/OpenBareMap-Faroe-Islands-Android-Bundle.zip",
+      "bytes": 41568961,
+      "sha256": "3e8e2cf650aa29494ccdad954bb9dc3eeff419443fd277e36a47a3630a637ae6"
+    },
+    {
+      "path": "releases/faroe-islands/2.0.0/app-bundles-v1/ios/OpenBareMap-Faroe-Islands-iOS-Bundle.zip",
+      "url": "https://downloads.appsbyonzy.dev/OpenBareMap/faroe-islands/2.0.0/app-bundles-v1/ios/OpenBareMap-Faroe-Islands-iOS-Bundle.zip",
+      "bytes": 41568703,
+      "sha256": "eee4c2be42354c8b92a460d270d3e5dd2986e77cd1c9ae4430106f9eba11cff6"
+    },
+    {
+      "path": "releases/pyrenees/2.0.0/app-bundles-v1/android/OpenBareMap-Pyrenees-Android-Bundle.zip",
+      "url": "https://downloads.appsbyonzy.dev/OpenBareMap/pyrenees/2.0.0/app-bundles-v1/android/OpenBareMap-Pyrenees-Android-Bundle.zip",
+      "bytes": 1736453122,
+      "sha256": "bfb286e39bb543f3daa9dc2dc0d2325aed2667a91187cb6e035ea4f2771e1c62"
+    },
+    {
+      "path": "releases/pyrenees/2.0.0/app-bundles-v1/ios/OpenBareMap-Pyrenees-iOS-Bundle.zip",
+      "url": "https://downloads.appsbyonzy.dev/OpenBareMap/pyrenees/2.0.0/app-bundles-v1/ios/OpenBareMap-Pyrenees-iOS-Bundle.zip",
+      "bytes": 1736452579,
+      "sha256": "58d8d6a12604a133b361479405b113eeaac26e9e8bcdade848c70ce9537ad999"
+    },
+    {
+      "path": "regions/dolomites/garmin/dist/OpenBareMap-Dolomites.img",
+      "url": "https://downloads.appsbyonzy.dev/Garmin/OpenBareMap-Dolomites.img?v=2.0.1-trail-detail-r1",
+      "bytes": 176525312,
+      "sha256": "ec961d1092e0fcb08b5b99eb6345bfefd8cc6f30cd4fe4c143a6c1fee9e67f97"
+    },
+    {
+      "path": "regions/england-wales/garmin/dist/OpenBareMap-England-Wales.img",
+      "url": "https://downloads.appsbyonzy.dev/Garmin/OpenBareMap-England-Wales.img?v=2.0.1-trail-detail-r1",
+      "bytes": 911212544,
+      "sha256": "477d275202aa4d8031199c98c375c93d970c9e0992fb86aabdd2f214d6ced264"
+    },
+    {
+      "path": "regions/faroe-islands/garmin/dist/OpenBareMap-Faroe-Islands.img",
+      "url": "https://downloads.appsbyonzy.dev/Garmin/OpenBareMap-Faroe-Islands.img?v=2.0.1-trail-detail-r1",
+      "bytes": 7987200,
+      "sha256": "33d63a6050f29fdf72187ad69af3e4396536a6c88aa723da15800065a68bf216"
+    },
+    {
+      "path": "garmin/dist/OpenBareMap-Ireland.img",
+      "url": "https://downloads.appsbyonzy.dev/Garmin/OpenBareMap-Ireland.img?v=2.0.1-trail-detail-r1",
+      "bytes": 314253312,
+      "sha256": "e78f3b86298c4a141d3b4b95fd1eb98c71a276d0bbc92a7448eb5299db3ea0ef"
+    },
+    {
+      "path": "regions/pyrenees/garmin/dist/OpenBareMap-Pyrenees.img",
+      "url": "https://downloads.appsbyonzy.dev/Garmin/OpenBareMap-Pyrenees.img?v=2.0.1-trail-detail-r1",
+      "bytes": 422412288,
+      "sha256": "04527bd857abd639e6805817635cc9dfc62eade3b4659112418ea9916936825b"
+    },
+    {
+      "path": "regions/scotland/garmin/dist/OpenBareMap-Scotland.img",
+      "url": "https://downloads.appsbyonzy.dev/Garmin/OpenBareMap-Scotland.img?v=2.0.1-trail-detail-r1",
+      "bytes": 358293504,
+      "sha256": "dbedf150ec0771ebf20eae18a361445785f0303ff7aa0fa43c7e05109046a7f7"
+    },
+    {
+      "path": "regions/sierra-nevada/garmin/dist/OpenBareMap-Sierra-Nevada.img",
+      "url": "https://downloads.appsbyonzy.dev/Garmin/OpenBareMap-Sierra-Nevada.img?v=2.0.1-trail-detail-r1",
+      "bytes": 33787904,
+      "sha256": "dd506bb8377886fc7e9bc0c475aed6b391fadc789bff60040bf33de2c672c163"
+    }
+  ]
+}

@@ -114,3 +114,9 @@ Source completeness, geographic accuracy and readability depend on the input dat
 | Sierra Nevada source, terrain and park boundary | [OSM](regions/sierra-nevada/sources.lock.json), [terrain](regions/sierra-nevada/terrain-sources.lock.json), [park boundary](regions/sierra-nevada/boundary-source.json) |
 | Integration bundle catalog | [Catalog](distribution/app-bundles-v1/catalog.json) |
 | Platform references | [Garmin](garmin/README.md), [Android](android/README.md), [iOS](ios/README.md) |
+
+## Restoring published binary assets
+
+The 13 published assets listed in `distribution/r2-assets.json` are hosted in R2 instead of the current Git tree. Their public download links above are unchanged. After cloning, run `python3 scripts/restore_r2_assets.py --list` to inspect them, then `python3 scripts/restore_r2_assets.py --all` to restore them before running builds or checks that use these files. Each download is checked against its recorded size and SHA-256. Raw source datasets and active map databases remain tracked as before.
+
+This change does not remove old LFS objects from GitHub storage. Server-side purging is a separate operation requiring GitHub Support and may require historical references to be removed.

@@ -157,3 +157,18 @@ data/regions/faroe-islands/elevation/*
 data/regions/faroe-islands/copernicus/*
 !data/regions/faroe-islands/copernicus/*.tif
 !data/regions/faroe-islands/copernicus/tileList.txt
+
+# Published R2 assets; restore locally using scripts/restore_r2_assets.py.
+/releases/dolomites/2.0.0/app-bundles-v1/android/OpenBareMap-Dolomites-Android-Bundle.zip
+/releases/dolomites/2.0.0/app-bundles-v1/ios/OpenBareMap-Dolomites-iOS-Bundle.zip
+/releases/faroe-islands/2.0.0/app-bundles-v1/android/OpenBareMap-Faroe-Islands-Android-Bundle.zip
+/releases/faroe-islands/2.0.0/app-bundles-v1/ios/OpenBareMap-Faroe-Islands-iOS-Bundle.zip
+/releases/pyrenees/2.0.0/app-bundles-v1/android/OpenBareMap-Pyrenees-Android-Bundle.zip
+/releases/pyrenees/2.0.0/app-bundles-v1/ios/OpenBareMap-Pyrenees-iOS-Bundle.zip
+/regions/dolomites/garmin/dist/OpenBareMap-Dolomites.img
+/regions/england-wales/garmin/dist/OpenBareMap-England-Wales.img
+/regions/faroe-islands/garmin/dist/OpenBareMap-Faroe-Islands.img
+/garmin/dist/OpenBareMap-Ireland.img
+/regions/pyrenees/garmin/dist/OpenBareMap-Pyrenees.img
+/regions/scotland/garmin/dist/OpenBareMap-Scotland.img
+/regions/sierra-nevada/garmin/dist/OpenBareMap-Sierra-Nevada.img
