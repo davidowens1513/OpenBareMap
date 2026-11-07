@@ -1,0 +1,47 @@
+{
+  "published_at": "2026-11-07T11:23:53.221640+00:00",
+  "app": "BareGPS Track Creator and Editor",
+  "version": "0.2.0",
+  "url": "https://appsbyonzy.dev/#tools",
+  "deployment": "a6a58a7a-e087-43a6-8106-2f17ac4776aa",
+  "website_source_commit": "81ba601",
+  "bundle_source_commit": "1184532",
+  "readme_updated_and_pushed": true,
+  "live_main_matches_source": true,
+  "checks": {
+    "base_url": "https://appsbyonzy.dev",
+    "existing_links_preserved": true,
+    "tools_after_openbaremap": true,
+    "platform_bundles_valid": true,
+    "downloads": [
+      {
+        "path": "tools/baregps-track-editor/0.2.0/android/BareGPS-Track-Creator-and-Editor-0.2.0.apk",
+        "bytes": 4071562,
+        "sha256": "fd8b5a6bc855ea5c110dc5840a62619006e2ac7a2a6fe7f1076d82950c336151"
+      },
+      {
+        "path": "tools/baregps-track-editor/0.2.0/android/BareGPS-Track-Creator-and-Editor-android-Bundle-0.2.0.zip",
+        "bytes": 3737218,
+        "sha256": "7041265e711d0cdf272b2e9e4502b3d9fd6898f31adefec5882de1dcdfb5079c"
+      },
+      {
+        "path": "tools/baregps-track-editor/0.2.0/android/instructions.txt",
+        "bytes": 4325,
+        "sha256": "fd946a69b5c960d2664e3e8ed53ea0f9e3ae726b308a29fcf64dfb1c67bfa60b"
+      },
+      {
+        "path": "tools/baregps-track-editor/0.2.0/ios/BareGPS-Track-Creator-and-Editor-ios-Bundle-0.2.0.zip",
+        "bytes": 341591,
+        "sha256": "ec3f78f1a47e39ae4265cbf520312995729ffd9546b78abf8a94839d9ddcefa6"
+      },
+      {
+        "path": "tools/baregps-track-editor/0.2.0/ios/instructions.txt",
+        "bytes": 3496,
+        "sha256": "7356f3d2d9e9bf4816fca4b99a5ed02a825dd395adc9b0b96d30345548ae801e"
+      }
+    ]
+  },
+  "ios_bundle": "Xcode source and prebuilt web assets; Apple signing required",
+  "ios_only_availability_text": "Will be available through App Store",
+  "website_archive_sha256": "737c982f62cff66180e01b417c66fa49a0eaf53fc4e2fb5a5af076f8a12f3c3c"
+}
