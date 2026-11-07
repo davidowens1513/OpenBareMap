@@ -51,7 +51,7 @@ export default {
         {
           signal: controller.signal,
           headers: { Accept: "application/json" },
-          redirect: "error",
+          redirect: "manual",
         },
       );
       if (!response.ok)
