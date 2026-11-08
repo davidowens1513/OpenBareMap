@@ -1,9 +1,9 @@
 BAREGPS ROUTE PLANNER — ANDROID
-Version 0.2.9 build 40 | 8 November 2026
+Version 0.2.9 build 41 (release signed) | 8 November 2026
 
 INSTALL OR UPDATE
 
-BareGPS-Route-Planner-0.2.9.apk is the installable development Android app.
+BareGPS-Route-Planner-0.2.9.apk is the installable release-signed Android app. Debugging is disabled.
 The ZIP bundle contains the same APK, instructions and checksum. Download the
 APK directly, or extract the bundle and open the APK in Files / My Files.
 
@@ -12,9 +12,18 @@ You can disable that installation permission again afterwards. Follow your
 device's normal security checks. If installation is blocked, do not disable
 security protections to force it.
 
-An update signed with this project's existing key normally keeps the workspace.
-Export important GPX files before updating. A conflicting signature may require
-a different installation path; preserve your data before removing an older app.
+IMPORTANT: MOVING FROM THE EARLIER DEVELOPMENT BUILD
+
+This release uses the permanent BareGPS Route Planner release certificate.
+It cannot normally update an older debug-signed installation in place.
+Before removing an older app, export every important created/edited route
+and keep your original input GPX files. Local workspace state, Route Plan
+copies and Undo history are not preserved by GPX exports. If you need that
+unfinished work, keep the existing app until you have finished and exported it.
+Do not uninstall or clear data until you have checked your exported backups.
+Once your work is safely exported, remove the old development app, install
+this release and reopen the saved GPX files. Future updates using this same
+release certificate can update this release normally without uninstalling.
 
 USING BAREGPS ROUTE PLANNER
 
