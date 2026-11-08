@@ -1,0 +1,138 @@
+BAREGPS ROUTE PLANNER - ANDROID BUNDLE
+GPX Creator and Editor
+Version 0.2.6 | 8 November 2026
+
+1. WHAT IS INCLUDED
+
+BareGPS-Route-Planner-0.2.6.apk is the installable Android app.
+This guide and SHA256SUMS.txt are included in the Android ZIP bundle.
+
+This is a development build, signed with the project's development key.
+It is supplied directly by Apps by Onzy rather than through Google Play.
+
+2. BEFORE YOU INSTALL
+
+Use an Android phone or tablet running Android 7.0 or later, with a current
+Android System WebView or Chrome. The APK is approximately 5 MB.
+Internet access is needed for OpenTopoMap tiles and optional terrain heights.
+Importing, editing and exporting GPX files work without a map connection.
+Location permission is not required to edit tracks.
+
+3. INSTALL THE APK
+
+Download the .apk directly, or unzip the Android Bundle and open the APK.
+In Files / My Files / Downloads, tap BareGPS-Route-Planner-0.2.6.apk.
+If Android asks, allow installation from the browser or Files app you used,
+then return to the APK and choose Install. Open BareGPS Route Planner.
+You can turn off that install permission again afterwards.
+
+Use your device's normal security checks. If installation is blocked,
+check the source of the file and the exact message rather than bypassing it.
+
+4. TRY THE IRISH EXAMPLES
+
+Choose Edit, then tap Explore with sample tracks on its welcome screen.
+The illustrative examples are Glendalough Upper Lake and Spinc ridge in
+County Wicklow. They demonstrate editing and are not navigation directions.
+
+5. OPEN AND EDIT YOUR TRACKS
+
+Tap Open files and select one or more GPX files from the system Files picker.
+Select a track, then drag the A and B handles on the map or use the sliders
+to choose a section. Distance, ascent, descent and elevation update live.
+Use Split to make two new tracks, or Reverse to change a track's direction.
+Start a joined route and append further sections in walking order.
+The round Line colour button opens a spectrum picker with presets and hex
+entry. Apply commits the colour; Cancel leaves it unchanged. You can expand
+or collapse the map.
+
+Dashed connections between separated sections count toward distance and
+ascent because they must be walked. Their initial ascent uses endpoint
+heights and is estimated. Fetch gap terrain to include intermediate hills
+and valleys. Terrain sampling uses straight connections, not trail routing.
+
+6. CREATE A NEW WALKING ROUTE
+
+Create opens by default, on the left tab. Add points below the map is the default: every map tap extends
+the route, even near an existing line. To insert between existing points,
+choose Insert point and tap the chosen line. The app then returns to Add points.
+Drag numbered markers to reshape the route. Close loop connects precisely
+back to the start. The grid lists points in walking order, coordinates,
+leg distances, total distance and available heights. Remove points or undo
+changes as needed. Create preserves its draft and map position. Opening Edit
+resets to Carrauntoohil, hides the examples and shows the file/sample actions.
+Imported tracks remain saved in Your tracks; select one to resume editing.
+
+Lines connect points directly and do not automatically follow paths.
+Fetch terrain to estimate ascent and descent along the whole route.
+Changing route points clears these estimates so you can fetch fresh heights.
+Name the route and choose Created Route Colour in Settings; Save route exports GPX.
+
+7. SAVE YOUR RESULT
+
+Save section exports the chosen A-B portion. Save route exports the joined
+route in Edit, or the new walking route in Create. Choose a destination in
+Files and save the GPX there.
+
+Saved in the header means the workspace is saved on this device. It does
+not mean a GPX file has been exported. Export tracks you want to keep.
+Uninstalling or clearing the app's data can remove the local workspace.
+
+8. UPDATING OR TROUBLESHOOTING
+
+For updates signed with the same project key, installing the newer APK
+normally keeps the workspace. Export important GPX files before an update.
+If Android reports a conflicting signature, export your tracks before
+considering removal of an earlier differently signed copy.
+
+If a file fails to import, choose a valid GPX track or route with at least
+two points. The limit is 15 MB per file. An invalid file is reported by name.
+If the map does not load, check the connection and use Retry; file editing
+and export remain available. Missing GPX heights produce partial ascent.
+
+Project: https://github.com/davidowens1513/BareGPS-Track-Editor
+Website: https://appsbyonzy.dev/#tools
+Contact: appsbyonzy@gmail.com
+
+Browser Preview: https://appsbyonzy.dev/tools/baregps-route-planner/
+
+COORDINATES AND CURRENT POSITION
+
+The cog beneath ? selects Lat/Long, Irish National Grid, British National
+Grid, ITM, MGRS, UTM or USNG. The choice is remembered on this device and
+applies to route points and the map-centre readout. GPX remains WGS84.
+Irish/British grid transformations are approximate. Regional coverage limits
+are shown when appropriate.
+
+The crosshair at the upper right of either map requests one current-position
+fix. Allow location access when prompted if you want this feature. A blue dot
+and accuracy circle mark the position; it never adds a route point. There is
+no background tracking. Zoom controls sit at the lower left above the scale.
+Metrics are centred and show Distance(km), Ascent(m), Descent(m); empty ascent
+and descent show 0. Fetch terrain when heights are needed for a created route.
+
+ROUTE CARD AND SHARING
+
+The main Route Card is centred, with Point, Name, grid reference and Height,
+plus a fifth-column bin button. Point numbers locate points on the map.
+Optional names are editable and limited to 10 characters. Names survive
+point changes, undo/redo and GPX export. The bin removes a point; Undo can
+restore it. Clear route removes the whole created route after confirmation.
+
+Expand Route Card opens a fullscreen table with Distance, Cumul Distance,
+Ascent and Cumul Ascent. Names stay editable; bins are only on the main card.
+Swipe across when necessary. Headings and their units are centred; values
+are right-aligned. Dashes indicate missing elevation information. Terrain
+samples are included in per-leg and cumulative ascent when available.
+
+Share Text and Share PDF appear only in the expanded card. Share Text makes
+a message summary; Share PDF makes a paginated landscape route card. Both
+use your selected grid format. In browsers without device sharing, copy
+the text from the preview or download the PDF.
+
+SETTINGS AND ABOUT
+
+The cog beneath ? opens Settings, with Grid references and Created Route
+Colour sections. Choose a coordinate format or use the spectrum, presets
+or hex input, then Apply colour. Edit's Line colour uses the same picker.
+The ? button opens About, including grid coverage and accuracy guidance.
