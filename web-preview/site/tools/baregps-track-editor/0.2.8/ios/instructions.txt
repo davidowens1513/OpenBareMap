@@ -1,0 +1,121 @@
+BAREGPS ROUTE PLANNER — iOS
+Version 0.2.8 build 30 | 8 November 2026
+
+XCODE SOURCE BUNDLE
+
+This is source plus prebuilt web assets for Xcode. It is not a publicly signed
+IPA or an App Store download. Will be available through App Store.
+
+Extract the ZIP. Install Node.js 22 or newer and run npm ci in the extracted
+project before opening ios/App/App.xcodeproj. This installs the JavaScript and
+local Capacitor geolocation dependencies used by the bundled Swift package.
+The bundle already contains the current web assets. To change src/ or public/,
+run npm run native:sync after editing, then build with Xcode.
+
+Choose the App scheme, your device and your own Apple development team, then
+Product > Run. Normal Apple signing/provisioning requirements apply. No signing
+identity, private key or provisioning profile is included. The project supports
+iOS 16.4 or newer. Use the existing app identifier for an update when appropriate.
+Export important GPX files before uninstalling or clearing data.
+
+USING BAREGPS ROUTE PLANNER
+
+CREATE NEW
+
+Add points in walking order by tapping the map. Insert point adds between
+neighbours on a chosen line, then returns to Add points. Drag numbered markers
+to reshape the route. Close loop joins back to the start. Lines are straight;
+they do not automatically follow roads or paths.
+
+The reduced Route Card scrolls after six point rows. Point numbers locate
+points on the map; bins remove drawing points. Expanded cards add per-leg and
+cumulative distance and ascent, with Share Text and Share PDF fixed below.
+
+Fetch Terrain asks before sending route coordinates to Open Topo Data.
+Expanding a drawing with two or more points and no fetched terrain opens the
+same confirmation. Cancelling leaves the card usable. Moving, adding or removing
+points clears terrain estimates so they can be fetched again.
+
+Name the drawing in the card and choose Created Route Colour in Settings.
+Save route uses the default filename Created Route.gpx. Clear route asks before
+clearing drawing points; Undo restores them. Imported Edit tracks stay intact.
+
+EDIT EXISTING
+
+Open GPX files, including files containing several tracks. Choose a track in
+Input Tracks. In Edit Input Track, use A/B map handles or the lighter slider.
+A/pt and B/pt beside the bar show the current point numbers. Reselecting the
+input track restores its full selection. Save section exports A-B; Split makes
+two tracks sharing the split point; Reverse reverses the whole selected track.
+
+Add to Route Plan stores a copy of the current A-B section and opens its grid.
+Keep adding returns to Input Tracks; Route Plan reopens the saved list. Select
+a row, then Move up, Move down or Remove. Alt+Up/Down also reorders a selected
+section. Plans persist on this device and use Edit Undo/Redo. Later edits or
+removal of an input track do not change its already-added section copies.
+
+Confirm Route assembles the plan in the listed walking order. The Edit Route
+Card stays empty until confirmation. Subsequent additions and reordering leave
+the confirmed route unchanged until you confirm again. Preview selects the
+confirmed route on the map. The card always shows that complete route.
+
+Fetch Terrain, Clear route and Save route are equal-width controls on the
+reduced card. Fetch Terrain is enabled for unsampled connections between plan
+sections. Its confirmation says Fetch Terrain Heights. Confirming a plan and
+expanding its Route Card do not fetch. Heights for the connections are sampled
+from Open Topo Data; existing recorded track points are not all replaced.
+
+Save section and Save route in Edit use the default filename Edited Route.gpx.
+The name stored inside the GPX stays as chosen. Clear route asks before clearing
+the confirmed route, Route Plan and current Edit selection. Input Tracks and
+the Create draft remain; Undo restores cleared work. The Input Tracks bin removes
+a workspace track without deleting its original file.
+
+Create New and Edit Existing have separate maps, drafts and Undo histories.
+To use a drawing in Edit Existing, save it as GPX and open that file there.
+
+SETTINGS, NAMES AND COLOUR
+
+The cog beneath ? opens Grid references, Created Route Colour and Allow Point
+Naming. Point naming defaults off: the reduced grid shows Point, coordinates,
+Height and Distance. On shows editable names in place of reduced-view Distance.
+[Name] marks an empty field; newly entered point names are limited to 10
+characters. Turning naming off hides names without deleting them.
+
+New imported tracks without saved colours start red, blue and pink for the
+first three tracks across files and batches. New joined routes start green.
+Imported tracks have Line colour; the drawing uses Created Route Colour in
+Settings. Use the spectrum, presets or hex input, then Apply colour.
+
+Available Systems has full descriptions; card headings use Lat/Lon, Irish Grid,
+British Grid, ITM, MGRS, UTM and USNG. Shared cards use the selected format;
+GPX always stores WGS84 Lat/Long. Irish/British conversions are approximate.
+Regional coverage limits and missing heights are identified. Reference precision
+does not guarantee the same GPS accuracy.
+
+SHARING, SAVING AND HELP
+
+Share Text and Share PDF are on expanded cards. Text sharing offers a copyable
+preview where sharing is unavailable. PDF creates a paginated landscape card;
+browsers without PDF sharing download it. Large route cards scroll while
+calculations and exports retain every confirmed route point.
+
+Saved on device means workspace recovery, not an exported GPX. Export important
+routes before uninstalling or clearing app data. Workspaces and plans survive
+reopening; Undo history does not. Use header Undo/Redo, Cmd/Ctrl+Z and
+Cmd/Ctrl+Shift+Z. Escape closes a dialog or collapses an expanded card/map.
+
+The elevation profile reserves its final space from the start and has a plain
+empty background. The crosshair requests current position only when tapped;
+it never adds a point or starts background tracking. Map tiles and optional
+terrain requests need internet. File editing/export remain available when tiles
+fail; Retry reloads them. Heights and ascent can be estimated or partial.
+
+The ? button opens About with Create New, Edit Existing and Settings guides.
+OpenTopoMap and Open Topo Data are external services. Check that every straight
+connection follows walkable ground.
+
+Project: https://github.com/davidowens1513/BareGPS-Track-Editor
+Website and downloads: https://appsbyonzy.dev/#tools
+Browser preview: https://appsbyonzy.dev/tools/baregps-route-planner/
+Contact: appsbyonzy@gmail.com
