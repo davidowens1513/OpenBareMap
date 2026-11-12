@@ -1,4 +1,4 @@
-const endpoint = "/tools/baregps-route-planner/terrain/v1/mapzen";
+const prefixes = ["/tools/baregps-route-maker", "/tools/baregps-track-editor", "/tools/baregps-route-planner"];
 const json = (body, status) =>
   new Response(JSON.stringify(body), {
     status,
@@ -11,9 +11,10 @@ const json = (body, status) =>
 export default {
   async fetch(request, env) {
     const url = new URL(request.url);
-    if (!url.pathname.startsWith("/tools/baregps-route-planner/terrain/"))
+    const prefix = prefixes.find(p => url.pathname.startsWith(`${p}/terrain/`));
+    if (!prefix)
       return env.ASSETS.fetch(request);
-    if (url.pathname !== endpoint)
+    if (url.pathname !== `${prefix}/terrain/v1/mapzen`)
       return json({ error: "Unknown terrain endpoint" }, 404);
     if (request.method !== "GET")
       return json({ error: "Use GET for terrain heights" }, 405);

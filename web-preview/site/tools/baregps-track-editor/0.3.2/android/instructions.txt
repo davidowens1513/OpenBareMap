@@ -1,0 +1,15 @@
+BAREGPS TRACK EDITOR — ANDROID
+Version 0.3.2, build 74
+
+Install the release-signed, non-debuggable APK. Keep the same signing identity for future updates. Android phones are targeted; tablets use https://appsbyonzy.dev/tools/baregps-track-editor/.
+
+The ZIP contains the APK, instructions and checksum. It is not an Android Studio source archive; source is on GitHub.
+
+Track inputs open as clean lines. Tap a line to reveal local handles, then drag to reshape a section smoothly. Reset Track restores that input’s saved starting version after confirmation and supports Undo. The initial version of a legacy input is its saved state at upgrade.
+
+Maps and terrain require internet. Lines do not automatically follow paths. Keep your original GPX files and export important work.
+
+Support: appsbyonzy@gmail.com
+Source: https://github.com/davidowens1513/BareGPS-Track-Editor
+
+Inputs remain visible together. The stronger current input has a matching name/colour indicator on the map and in Input Tracks. Tap another line to select it, then tap again for editing handles. Settings can save a default colour before importing.
