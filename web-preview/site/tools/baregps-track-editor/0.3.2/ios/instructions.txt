@@ -1,0 +1,17 @@
+BAREGPS TRACK EDITOR — IPHONE
+Version 0.3.2, build 74
+
+This download is an Xcode source bundle with prebuilt web assets. It is not an installable IPA, App Store or TestFlight release.
+
+Install the locked Node dependencies with npm ci. Open ios/App/App.xcodeproj in Xcode, choose your own development team and connected iPhone, then Build/Run. Native targets iPhone; tablets use https://appsbyonzy.dev/tools/baregps-track-editor/.
+
+The source and native dependencies are independent of Route Maker. If rebuilding web assets, npm run native:sync refreshes both platforms and normalises the iOS package path.
+
+Track inputs open as clean lines. Tap a line for local handles; drags reshape a section smoothly. Reset Track restores the selected input’s saved starting version after confirmation and supports Undo. For workspaces predating this feature, the starting version is their saved state on upgrade.
+
+Maps and terrain need internet. Lines do not automatically follow paths. Keep original GPX files and export important work.
+
+Support: appsbyonzy@gmail.com
+Source: https://github.com/davidowens1513/BareGPS-Track-Editor
+
+Inputs remain visible together. The stronger current input has a matching name/colour indicator on the map and in Input Tracks. Tap another line to select it, then tap again for editing handles. Settings can save a default colour before importing.

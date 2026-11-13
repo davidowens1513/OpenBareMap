@@ -1,0 +1,52 @@
+{
+  "published_at": "2026-11-06T17:37:58.945668+00:00",
+  "url": "https://appsbyonzy.dev/#tools",
+  "cloudflare_project": "appsbyonzy",
+  "production_deployment": "12e5154b-540f-4c91-a3e2-eb3ea935e3a2",
+  "website_source_commit": "4434b6f",
+  "app_source_commit": "44d8d6ec010d2d9e98f19995f28b89aa8f9649b0",
+  "app_distribution_commit": "1cce6f1",
+  "live_main_matches_source": true,
+  "github": "https://github.com/davidowens1513/BareGPS-Track-Editor",
+  "github_visibility_unchanged": true,
+  "ios_bundle": "Xcode source and prebuilt web assets, requires Apple signing; not an App Store release",
+  "downloads": {
+    "base_url": "https://appsbyonzy.dev",
+    "existing_links_preserved": true,
+    "tools_after_openbaremap": true,
+    "platform_bundles_valid": true,
+    "downloads": [
+      {
+        "path": "tools/baregps-track-editor/0.1.1/android/BareGPS-Track-Editor-0.1.1.apk",
+        "bytes": 4064894,
+        "sha256": "d608232f446905227392392c5ccfacce98158a2c4a960fb9bcc04f65ee243002"
+      },
+      {
+        "path": "tools/baregps-track-editor/0.1.1/android/BareGPS-Track-Editor-android-Bundle-0.1.1.zip",
+        "bytes": 3730295,
+        "sha256": "21f213ae0035e1fbbf953bf2089d439759ec788c5a95e067531abd17f8e2835b"
+      },
+      {
+        "path": "tools/baregps-track-editor/0.1.1/android/instructions.txt",
+        "bytes": 3389,
+        "sha256": "c21b2e3e0a2622b302b79d1ae0fb25e1799d3829d8ea53526c4f918f5245a586"
+      },
+      {
+        "path": "tools/baregps-track-editor/0.1.1/ios/BareGPS-Track-Editor-ios-Bundle-0.1.1.zip",
+        "bytes": 323703,
+        "sha256": "a7dcb02db9033e6b3ede3a1aca1918a56b71cff31ab1c0705fc6ee990c993a07"
+      },
+      {
+        "path": "tools/baregps-track-editor/0.1.1/ios/instructions.txt",
+        "bytes": 2640,
+        "sha256": "5d66cf2861ffbe9b45da2ff2bbd280fff00d5b5ba632aeca292817dc7aebadf7"
+      }
+    ]
+  },
+  "fresh_installs_verified": [
+    "Honor BND-L21",
+    "Samsung Galaxy A07",
+    "iPhone 14"
+  ],
+  "deployment_archive_sha256": "d9c68a6655e32dfb8e665f11ac3983d62b33d556926ca25deb577751756a7b63"
+}

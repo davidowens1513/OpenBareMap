@@ -1,0 +1,32 @@
+{
+  "version": "0.2.9",
+  "app_source_commit": "65549550bcdfcd460292df9e970fa4bc2d679d16",
+  "android": {
+    "build": 41,
+    "release_signed": true,
+    "debuggable": false,
+    "signing_certificate_sha256": "8176a4bb5fb5fb0b672346343558c4bb58433e71dda5ebd5dd9aad1bd2c283d9"
+  },
+  "files": {
+    "android/BareGPS-Route-Planner-0.2.9.apk": {
+      "bytes": 4014669,
+      "sha256": "c9b369dd28863c219beb46fe23c11b237c86f41e726c7700bc6ac03571b73caf"
+    },
+    "android/BareGPS-Route-Planner-android-Bundle-0.2.9.zip": {
+      "bytes": 3630153,
+      "sha256": "60b72c9fe6e19972d3264f6626207d61f71a885674ff20fe8a8e8ee7baf3b53c"
+    },
+    "android/instructions.txt": {
+      "bytes": 5587,
+      "sha256": "db2d010189f8f8b4a4f8635cf1031b9c528592e04fbf8d6338defc1ae2f13d7f"
+    },
+    "ios/BareGPS-Route-Planner-ios-Bundle-0.2.9.zip": {
+      "bytes": 1008322,
+      "sha256": "8653f71b714e4bca21bbc0d583a3e1fab3e579c19bba53aaa0644bc0ceb91d70"
+    },
+    "ios/instructions.txt": {
+      "bytes": 5981,
+      "sha256": "e21abda25e90d77f3297faab502530bdf74a23605912eb238fe2085bf8a969e4"
+    }
+  }
+}

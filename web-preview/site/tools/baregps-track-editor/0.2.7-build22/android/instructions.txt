@@ -1,0 +1,106 @@
+BAREGPS ROUTE PLANNER — ANDROID
+Version 0.2.7 build 22 | 8 November 2026
+
+INSTALL OR UPDATE
+
+BareGPS-Route-Planner-0.2.7.apk is the installable development Android app.
+The ZIP bundle contains the same APK, instructions and checksum. Download the
+APK directly, or extract the bundle and open the APK in Files / My Files.
+
+If Android asks, allow installation from the browser or Files app you used.
+You can disable that installation permission again afterwards. Follow your
+device's normal security checks. If installation is blocked, do not disable
+security protections to force it.
+
+An update signed with this project's existing key normally keeps the workspace.
+Export important GPX files before updating. A conflicting signature may require
+a different installation path; preserve your data before removing an older app.
+
+USING BAREGPS ROUTE PLANNER
+
+CREATE
+
+Tap Add points to draw in walking order. Insert point adds between neighbours
+on a chosen line and returns to Add points. Drag markers to reshape the route.
+Close loop joins back to the start. Lines are straight and do not follow paths
+automatically; check they follow walkable ground.
+
+The reduced Route Card shows six point rows before scrolling. Point numbers
+locate points on the map; bins remove individual Create points. Expanded cards
+add per-leg and cumulative distance and ascent, with text/PDF sharing fixed
+at the bottom. Long coordinates fit on one line by reducing their text size.
+
+Fetch terrain asks before sending coordinates to Open Topo Data. Expanding a
+Create card with at least two points and no fetched terrain opens the same
+confirmation. Cancel leaves the card usable. Moving/adding/removing points
+clears estimates so they can be fetched again. Missing heights are unavailable.
+
+Name the route, choose Created Route Colour in Settings, then Save route.
+Fetch terrain, Clear route and Save route appear only on the reduced card.
+Clear asks before clearing Create points; Undo restores them. Edit stays intact.
+
+EDIT
+
+Open GPX tracks/routes from Files, including multiple tracks in one file.
+Choose a track in Your Tracks. Select A-B using map handles or sliders.
+Save section exports A-B; Split creates two tracks sharing the split point;
+Reverse changes the whole selected track's direction. Source files are not
+overwritten automatically.
+
+Start joined route with section, then Append section to route in walking
+order. Dashed gaps count as walking distance; Fetch gap terrain samples heights
+along those connections. Preview selects the joined route on the map.
+
+The Edit Route Card starts with the whole track, then follows A-B. If a joined
+route exists, the card shows that entire route even while choosing other source
+sections. The caption identifies the displayed points. Scroll to access all
+points; all of them are included in exports, even on large tracks.
+
+The reduced Edit card has equal Clear and Save controls. Clear asks before
+removing the joined route and active selection; imported tracks remain in Your
+Tracks and Create is untouched. Undo restores the cleared route. The track-list
+bin removes a workspace track without deleting its original file.
+
+SETTINGS, NAMING AND COORDINATES
+
+Use the cog beneath ? for Grid references, Created Route Colour and Allow Point
+Naming. Naming is off by default and remembered on this device. Off hides Name
+and shows Distance on the reduced card. On shows editable names in both cards;
+[Name] marks an empty name field. Newly entered names have a 10-character limit.
+Turning naming off does not delete existing names. Point names survive GPX export.
+
+Available Systems retains full descriptions. The cards use shorter headings:
+Lat/Lon, Irish Grid, British Grid, ITM, MGRS, UTM and USNG. Shared cards use your
+choice; GPX always uses WGS84 Lat/Long. Irish/British transformations are
+approximate, and regional coverage limits are shown where appropriate.
+
+Created Route Colour uses the spectrum, presets or hex input, then Apply colour.
+Imported tracks have their own Line colour control in Edit using the same picker.
+
+SHARING, SAVING AND HELP
+
+Share Text and Share PDF are on expanded cards. Text sharing offers a copyable
+preview where device sharing is unavailable. PDF sharing creates a paginated
+landscape route card; browsers without PDF sharing download it instead.
+
+Saved on device means workspace recovery, not an exported GPX. Export routes you
+want to keep before uninstalling or clearing app data. Create and Edit have
+separate Undo/Redo histories. Undo history does not survive reopening; workspaces
+do. Use Cmd/Ctrl+Z and Cmd/Ctrl+Shift+Z, or the header controls.
+
+The crosshair requests current position only when tapped and never adds a point
+or starts background tracking. Map tiles and optional terrain requests need
+internet; file editing and export remain available when tiles fail. Retry reloads
+tiles. The ? button opens About, with separate Create and Edit guides and a
+Settings section. OpenTopoMap and Open Topo Data are external services.
+
+Project: https://github.com/davidowens1513/BareGPS-Track-Editor
+Website and downloads: https://appsbyonzy.dev/#tools
+Browser preview: https://appsbyonzy.dev/tools/baregps-route-planner/
+Contact: appsbyonzy@gmail.com
+
+TRACK COLOUR DEFAULTS
+
+New imports without a saved colour use red, blue and pink for the first three
+tracks across files and batches. A new joined route starts green. Saved and
+individually chosen colours are preserved. Create and Edit use separate screens.
