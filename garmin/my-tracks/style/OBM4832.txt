@@ -1,0 +1,37 @@
+[_id]
+FID=4832
+ProductCode=1
+CodePage=1252
+[end]
+[_line]
+Type=0x10007
+String=My recorded track
+FontStyle=NoLabel
+LineWidth=3
+BorderWidth=0
+Xpm="0 0 1 0"
+"a c #992ca8"
+[end]
+[_point]
+Type=0x10007
+String=Track start
+FontStyle=NoLabel
+DayCustomColor=#176d32
+NightCustomColor=#176d32
+DayXpm="12 12 3 1"
+"g c #16853e"
+"w c #ffffff"
+". c none"
+"............"
+"....gggg...."
+"..gggggggg.."
+"..ggwwwwgg.."
+".ggwwwwwwgg."
+".ggwwggwwgg."
+".ggwwggwwgg."
+".ggwwwwwwgg."
+"..ggwwwwgg.."
+"..gggggggg.."
+"....gggg...."
+"............"
+[end]
