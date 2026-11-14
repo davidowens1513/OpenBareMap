@@ -1,0 +1,34 @@
+{
+  "areaSquareDegrees": 94.5,
+  "bounds": [
+    11.0,
+    67.0,
+    32.0,
+    71.5
+  ],
+  "entireRequestedFootprintCovered": true,
+  "exactFootprint": null,
+  "inputs": [
+    {
+      "bytes": 8014,
+      "path": "data/regions/norway-north/norway.poly",
+      "sha256": "bf08b7f9f070e62d1b64b8950c05dbefaa77bba7c0637394acecb4a959d493b4",
+      "url": "https://download.geofabrik.de/europe/norway.poly"
+    }
+  ],
+  "knownDestinationsCovered": [
+    "island",
+    "bodo",
+    "rost",
+    "reine",
+    "svolvaer",
+    "tromso",
+    "alta",
+    "north-cape",
+    "kirkenes",
+    "vardo"
+  ],
+  "operation": "Requested rectangular crop; source outlines cover all destination anchors",
+  "polygons": 1,
+  "sha256": "a27ab9f6ab690132e2ac050bf64def720f09a46b62064f34a79451136360035d"
+}

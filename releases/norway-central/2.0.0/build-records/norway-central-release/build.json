@@ -1,0 +1,107 @@
+{
+  "builderSHA256": "1b93ac2e197f49d1649274b7cd12f28497f2e7821852cdc972a5f2a580f590f6",
+  "geometryReport": {
+    "builderSHA256": "c6af7bb693042e99a511b7527644ad79605ccf5515b172f9653cdef5bb10789f",
+    "contoursSourceSHA256": "e0760555ba713561159df2db1054d4b5c607856bb00989c23c5ad8498e38222b",
+    "counts": {
+      "contours": 299421,
+      "grid": {
+        "grid_10km": 117,
+        "grid_1km": 1152
+      },
+      "landcover": {
+        "empty_source_areas": [],
+        "features": 395549,
+        "retained": 14132,
+        "smoothed": 381417
+      }
+    },
+    "osm": {
+      "bytes": 297056880,
+      "operation": "Complete-feature bbox extraction with nested relation references",
+      "path": "data/regions/norway-central/norway-261113.osm.clipped.osm.pbf",
+      "replicationTimestamp": "2026-11-13T21:22:20Z",
+      "sha256": "7e5f639638e2c9b51b2557a1283552575b65e3875bd8ff463faf56a363ac01f3",
+      "snapshot_date": "2026-11-13",
+      "url": "https://download.geofabrik.de/europe/norway-261113.osm.pbf"
+    },
+    "outputs": {
+      "contours.geojson": "4c67be2cd344b4b362737b4f56809362f7073bf0f5469cbb0186f55ea1bcdde9",
+      "grid_10km.geojson": "f4de6977d27ec35bf5ab3259f57a89d7b8833474c8a9c43a69e4d7e90f12b418",
+      "grid_1km.geojson": "db30cc39cd264f7e2f3bc1b310bd89f9ac7999ee593a75d39bbdc96c2cd940f1",
+      "landcover.geojson": "710813bafa0a0386cd7e5d561748754f590621cbe1aff991eedd154066ee75bc"
+    },
+    "region": "norway-central",
+    "smootherSHA256": "7581d024dc1c1bec931642c7201db149bf64a64c814c451fa8bf37a0881ea6c9"
+  },
+  "outputs": {
+    "basemap": {
+      "bytes": 736968704,
+      "path": "releases/norway-central/2.0.0/maps/basemap.mbtiles",
+      "sha256": "296a88fbf030a86bebc326086d447af0c97f9cced2daea13df616822f0ba40f2",
+      "validation": {
+        "empty_tile_count": 4067,
+        "logical_tiles_sha256": "efdee1cefcf277bc40b7b6eb52e738b0c60ff80fd0bf6e91a509bf34e22e1eb1",
+        "tile_count": 107563
+      }
+    },
+    "grid": {
+      "bytes": 98091008,
+      "path": "releases/norway-central/2.0.0/maps/grid.mbtiles",
+      "sha256": "7ae56ec1ba7b4b4b971b0be48339c2f0aed491fe77d36121db5d2455fb8ea408",
+      "validation": {
+        "empty_tile_count": 0,
+        "logical_tiles_sha256": "3914aecf4092a8a6f4b6d441c28cb89a9688167a41909c066a47059ed5e999e2",
+        "tile_count": 358310
+      }
+    },
+    "hillshade": {
+      "bytes": 373518336,
+      "path": "releases/norway-central/2.0.0/maps/hillshade.mbtiles",
+      "sha256": "7037b3a7a5b60f633bf3f8162e1ccb006e59dc9966e828abb90ec2763942f356",
+      "validation": {
+        "empty_tile_count": 0,
+        "logical_tiles_sha256": "b2ee80bd2b708b3d340182aa395c8529621fab12ed8b476d4b240c555ef45617",
+        "tile_count": 16242
+      }
+    },
+    "topography": {
+      "bytes": 747765760,
+      "path": "releases/norway-central/2.0.0/maps/topography.mbtiles",
+      "sha256": "08b25ed192709d74e48184846f2973a7a04e44ebc61dacf0234348b69f58ba80",
+      "validation": {
+        "empty_tile_count": 289363,
+        "logical_tiles_sha256": "38c7e1ac84ac5b00b7248effe983426883ac5b632b70ecf72c751a52ff07e38e",
+        "tile_count": 526772
+      }
+    }
+  },
+  "region": "norway-central",
+  "replacements": {
+    "basemap": {
+      "changed_tiles": 75509,
+      "path": "build/norway-central-release/basemap-smoothed.mbtiles",
+      "replacement_feature_instances": 3692417,
+      "sha256": "2bba400fa146c8aaa3396b4406811e9b8315631dd7eefc6c5dc588d23829e2da",
+      "unchanged_other_layers_sha256": "a3d2f924851ce7d0fe851bdd53b6112bbad40c0dd700e4bdda0ecd77546544e5",
+      "validation": {
+        "empty_tile_count": 4067,
+        "logical_tiles_sha256": "9bb7e1eb01f8a324f766b25d952d211f7148008956d3818384d339b16a9d0e37",
+        "tile_count": 107563
+      }
+    },
+    "topography": {
+      "changed_tiles": 232587,
+      "path": "build/norway-central-release/topography-smoothed.mbtiles",
+      "replacement_feature_instances": 3710090,
+      "sha256": "7cbe751672d625d95ffb9af57d9f263349f9d8c59dd961dede00313ba29d1831",
+      "unchanged_other_layers_sha256": "537224b8d1925f9bba482f4d62fbff116ad252fcf49747282d76ca3877df5489",
+      "validation": {
+        "empty_tile_count": 289363,
+        "logical_tiles_sha256": "f95acc43239d2e6431c0a7bdaf92be1d980ec54e33f75738b34f54c8cf84f749",
+        "tile_count": 526772
+      }
+    }
+  },
+  "status": "built and structurally validated; visual/device review pending"
+}

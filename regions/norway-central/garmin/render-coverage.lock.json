@@ -1,0 +1,54 @@
+{
+  "bounds": [
+    7.0,
+    63.0,
+    19.0,
+    67.5
+  ],
+  "contextEnvelope": [
+    7.0,
+    63.0,
+    19.0,
+    67.5
+  ],
+  "drawPriority": 25,
+  "format": "openbaremap-garmin-render-footprint-v1",
+  "geometry": {
+    "bytes": 735,
+    "path": "regions/norway-central/garmin/render-coverage.geojson",
+    "sha256": "6289dbab9292acedba498d05b12c8582cf39acafa01e06752a36de591255157b"
+  },
+  "inputs": [
+    {
+      "bytes": 8014,
+      "path": "data/regions/norway-central/norway.poly",
+      "sha256": "bf08b7f9f070e62d1b64b8950c05dbefaa77bba7c0637394acecb4a959d493b4",
+      "url": "https://download.geofabrik.de/europe/norway.poly"
+    }
+  ],
+  "knownDestinationsCovered": {
+    "bodo": [
+      14.4049,
+      67.2804
+    ],
+    "bronnoysund": [
+      12.199,
+      65.474
+    ],
+    "mo-i-rana": [
+      14.1428,
+      66.3128
+    ],
+    "namsos": [
+      11.4957,
+      64.4662
+    ],
+    "trondheim": [
+      10.3951,
+      63.4305
+    ]
+  },
+  "purpose": "Rectangular Garmin tiles may overlap other countries. Do not fill their padding with sea, land or land-cover polygons.",
+  "region": "norway-central",
+  "transparentNativeMap": true
+}

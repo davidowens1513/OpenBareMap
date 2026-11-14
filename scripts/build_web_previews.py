@@ -12,7 +12,14 @@ from package_preview_ui import package_ui
 def digest(p):
  with p.open('rb') as f:return hashlib.file_digest(f,'sha256').hexdigest()
 def write(p,v):p.write_text(json.dumps(v,indent=2,ensure_ascii=False)+'\n')
-def build(output,origin,regions=None):
+def build(output,origin,regions=None,cached_preview=None):
+ # Reuse a verified release's protocol library and licence for offline exports.
+ if cached_preview is not None:
+  cached_preview=Path(cached_preview)
+  cached=json.loads((cached_preview/'manifest.json').read_text())
+  if cached.get('pmtilesJS')!='4.5.0' or digest(cached_preview/'assets/pmtiles.js')!=cached.get('librarySHA256'):
+   raise ValueError('Cached PMTiles library version or checksum differs from its release manifest')
+  if not (cached_preview/'assets/PMTiles-LICENSE.txt').is_file():raise ValueError('Cached PMTiles licence is missing')
  regions=regions or list(REGIONS)
  if output.exists():raise FileExistsError(output)
  output.mkdir(parents=True);assets=output/'assets';assets.mkdir();maps=output/'data';maps.mkdir()
@@ -20,13 +27,16 @@ def build(output,origin,regions=None):
  for file in ['maplibre-gl.js','maplibre-gl.css','LICENSE.txt']:shutil.copyfile(ROOT/'viewer/vendor'/file,assets/file)
  (assets/'terrain-attribution.html').write_text(terrain_html(regions))
  shutil.copyfile(ROOT/'viewer/townlands.geojson',assets/'townlands.geojson')
- package=output/'pmtiles.tgz';urllib.request.urlretrieve('https://registry.npmjs.org/pmtiles/-/pmtiles-4.5.0.tgz',package)
- with tarfile.open(package) as archive:
-  for member in archive.getmembers():
-   if member.name=='package/dist/pmtiles.js':(assets/'pmtiles.js').write_bytes(archive.extractfile(member).read())
- if not (assets/'pmtiles.js').is_file():raise ValueError('Missing browser protocol library')
- package.unlink()
- urllib.request.urlretrieve('https://raw.githubusercontent.com/protomaps/PMTiles/main/LICENSE',assets/'PMTiles-LICENSE.txt')
+ if cached_preview is not None:
+  for name in ['pmtiles.js','PMTiles-LICENSE.txt']:shutil.copyfile(cached_preview/'assets'/name,assets/name)
+ else:
+  package=output/'pmtiles.tgz';urllib.request.urlretrieve('https://registry.npmjs.org/pmtiles/-/pmtiles-4.5.0.tgz',package)
+  with tarfile.open(package) as archive:
+   for member in archive.getmembers():
+    if member.name=='package/dist/pmtiles.js':(assets/'pmtiles.js').write_bytes(archive.extractfile(member).read())
+  if not (assets/'pmtiles.js').is_file():raise ValueError('Missing browser protocol library')
+  package.unlink()
+  urllib.request.urlretrieve('https://raw.githubusercontent.com/protomaps/PMTiles/main/LICENSE',assets/'PMTiles-LICENSE.txt')
  package_ui(output,regions)
  jobs=[];records={}
  for region in regions:
@@ -63,4 +73,4 @@ def build(output,origin,regions=None):
  write(output/'manifest.json',{'regions':records,'pmtilesPython':'3.8.1','pmtilesJS':'4.5.0','librarySHA256':digest(assets/'pmtiles.js'),'dataOrigin':origin,'scope':'Complete selected map tiles; no regional or zoom sampling.'})
  print('Complete previews exported:',', '.join(regions),output,flush=True)
 if __name__=='__main__':
- p=argparse.ArgumentParser();p.add_argument('--output',type=Path,required=True);p.add_argument('--origin',required=True);p.add_argument('--regions',nargs='+',choices=['ireland','england-wales','scotland','sierra-nevada','pyrenees','dolomites','faroe-islands']);args=p.parse_args();build(args.output.resolve(),args.origin,args.regions)
+ p=argparse.ArgumentParser();p.add_argument('--output',type=Path,required=True);p.add_argument('--origin',required=True);p.add_argument('--regions',nargs='+',choices=list(REGIONS));p.add_argument('--cached-preview',type=Path,help='Reuse manifest-verified PMTiles 4.5.0 assets from an existing preview');args=p.parse_args();build(args.output.resolve(),args.origin,args.regions,args.cached_preview)

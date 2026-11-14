@@ -112,7 +112,7 @@ def finish(region, reuse_geometry=False):
     shutil.copyfile(geometry/'grid-provenance.json',region_path(region,'grid-provenance.json'))
 
 def main():
-    parser=argparse.ArgumentParser();parser.add_argument('--region',choices=['england-wales','scotland','sierra-nevada','pyrenees','dolomites','faroe-islands'],required=True);parser.add_argument('--resume-geometry',action='store_true');parser.add_argument('--stage',choices=['basemap','geometry','finish','packages','all'],default='all');args=parser.parse_args();region=args.region
+    parser=argparse.ArgumentParser();parser.add_argument('--region',choices=['england-wales','scotland','sierra-nevada','pyrenees','dolomites','faroe-islands','norway-south','norway-central','norway-north'],required=True);parser.add_argument('--resume-geometry',action='store_true');parser.add_argument('--stage',choices=['basemap','geometry','finish','packages','all'],default='all');args=parser.parse_args();region=args.region
     if args.stage in ('basemap','all'):
         dest=ROOT/'build'/(region+'-basemap')
         if not dest.exists():run(sys.executable,'scripts/openbaremap.py','build',region+'-basemap','--region',region)

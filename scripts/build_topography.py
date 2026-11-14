@@ -57,6 +57,10 @@ def build(args):
         coastfile=dest/'land.geojson'
         zip_path='/vsizip/'+str((ROOT/coast['path']).resolve())+'/land-polygons-split-4326/land_polygons.shp'
         run('ogr2ogr','-f','GeoJSON',coastfile,zip_path,'-spat',*config['coast_context_bounds'],'-clipsrc',*config['coast_context_bounds'],'-lco','COORDINATE_PRECISION=7')
+        from polygonal_coast import polygonal_coast
+        record['coastlineFiltering']=polygonal_coast(coastfile)
+        record['coastlineFilterSHA256']=digest(Path(__file__).with_name('polygonal_coast.py'))
+        write(dest/'build.json',record)
         elevation=dest/'elevation';elevation.mkdir()
         grids=[]
         for asset in terrain['assets']:
@@ -64,7 +68,8 @@ def build(args):
             with gzip.open(ROOT/asset['path'],'rb') as source,path.open('wb') as out:shutil.copyfileobj(source,out)
             grids.append(path)
         run('gdalbuildvrt',dest/'elevation.vrt',*grids)
-        run('gdalwarp','-t_srs',config['projected_crs'],'-tr',config['ground_resolution_m'],config['ground_resolution_m'],'-r','bilinear','-dstnodata','-32768','-cutline',coastfile,'-co','COMPRESS=DEFLATE','-co','TILED=YES',dest/'elevation.vrt',dest/'elevation-itm.tif')
+        alignment=['-tap'] if region_id!='ireland' and p.get('alignedTerrainPixels') else []
+        run('gdalwarp','-t_srs',config['projected_crs'],'-tr',config['ground_resolution_m'],config['ground_resolution_m'],*alignment,'-r','bilinear','-dstnodata','-32768','-cutline',coastfile,'-co','COMPRESS=DEFLATE','-co','TILED=YES',dest/'elevation.vrt',dest/'elevation-itm.tif')
         run('gdal_contour','-i',config['contour_interval_m'],'-a','elevation','-snodata','-32768','-f','GPKG',dest/'elevation-itm.tif',dest/'contours.gpkg')
         run('ogr2ogr','-f','GeoJSON','-t_srs','EPSG:4326','-where','elevation > 0','-simplify',config['contour_simplification_m'],'-lco','COORDINATE_PRECISION=7',dest/'contours.geojson',dest/'contours.gpkg')
         from build_hillshade import raster_stage
@@ -89,7 +94,7 @@ def build(args):
 if __name__=='__main__':
     parser=argparse.ArgumentParser()
     parser.add_argument('name',type=build_name)
-    parser.add_argument('--region',choices=['ireland','england-wales','scotland','sierra-nevada','pyrenees','dolomites','faroe-islands'],default='ireland')
+    parser.add_argument('--region',choices=['ireland','england-wales','scotland','sierra-nevada','pyrenees','dolomites','faroe-islands','norway-south','norway-central','norway-north'],default='ireland')
     parser.add_argument('--accept-toolchain',action='store_true')
     try:build(parser.parse_args())
     except (OSError,ValueError,subprocess.SubprocessError) as error:sys.exit(str(error))

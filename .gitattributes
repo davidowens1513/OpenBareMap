@@ -37,3 +37,9 @@ data/regions/faroe-islands/copernicus/tileList.txt -text -whitespace
 regions/faroe-islands/garmin/copyright.txt -whitespace
 regions/faroe-islands/garmin/dist/ATTRIBUTION.txt -whitespace
 distribution/app-bundles-v1/garmin/faroe-islands/ATTRIBUTION.txt -whitespace
+
+data/regions/norway-*/copernicus/tileList.txt -text -whitespace
+releases/norway-*/2.0.0/build-records/** -whitespace
+regions/norway-*/garmin/copyright.txt -whitespace
+regions/norway-*/garmin/dist/ATTRIBUTION.txt -whitespace
+distribution/app-bundles-v1/garmin/norway-*/ATTRIBUTION.txt -whitespace

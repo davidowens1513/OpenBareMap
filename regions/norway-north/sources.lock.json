@@ -1,0 +1,29 @@
+{
+  "accessed_utc": "2026-11-14T11:12:05.616600+00:00",
+  "inputs": [
+    {
+      "bytes": 1378706900,
+      "path": "data/regions/norway/norway-261113.osm.pbf",
+      "replicationTimestamp": "2026-11-13T21:22:20Z",
+      "sha256": "db7b4891ffa8fe94c44d8ca6e88c7384de907703ebf8df977fcf0af41fc2ac39",
+      "url": "https://download.geofabrik.de/europe/norway-261113.osm.pbf"
+    }
+  ],
+  "osm": {
+    "bytes": 310054822,
+    "operation": "Complete-feature bbox extraction with nested relation references",
+    "path": "data/regions/norway-north/norway-261113.osm.clipped.osm.pbf",
+    "replicationTimestamp": "2026-11-13T21:22:20Z",
+    "sha256": "149cc5091b723ab2c349b47321fdd84c0f45f2653221e81cfc5a2c7b4f06777b",
+    "snapshot_date": "2026-11-13",
+    "url": "https://download.geofabrik.de/europe/norway-261113.osm.pbf"
+  },
+  "polygons": [
+    {
+      "bytes": 8014,
+      "path": "data/regions/norway-north/norway.poly",
+      "sha256": "bf08b7f9f070e62d1b64b8950c05dbefaa77bba7c0637394acecb4a959d493b4",
+      "url": "https://download.geofabrik.de/europe/norway.poly"
+    }
+  ]
+}

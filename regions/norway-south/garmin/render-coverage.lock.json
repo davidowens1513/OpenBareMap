@@ -1,0 +1,58 @@
+{
+  "bounds": [
+    4.0,
+    57.8,
+    13.5,
+    63.5
+  ],
+  "contextEnvelope": [
+    4.0,
+    57.8,
+    13.5,
+    63.5
+  ],
+  "drawPriority": 25,
+  "format": "openbaremap-garmin-render-footprint-v1",
+  "geometry": {
+    "bytes": 733,
+    "path": "regions/norway-south/garmin/render-coverage.geojson",
+    "sha256": "ed2c12e0db0c754b52a3c4de6e739d88aac87c4f90b54541b82febc8968c6d1f"
+  },
+  "inputs": [
+    {
+      "bytes": 8014,
+      "path": "data/regions/norway-south/norway.poly",
+      "sha256": "bf08b7f9f070e62d1b64b8950c05dbefaa77bba7c0637394acecb4a959d493b4",
+      "url": "https://download.geofabrik.de/europe/norway.poly"
+    }
+  ],
+  "knownDestinationsCovered": {
+    "bergen": [
+      5.3221,
+      60.39299
+    ],
+    "galdhopiggen": [
+      8.3125,
+      61.636
+    ],
+    "jotunheimen": [
+      8.3125,
+      61.636
+    ],
+    "oslo": [
+      10.7522,
+      59.9139
+    ],
+    "stavanger": [
+      5.7331,
+      58.97
+    ],
+    "trondheim": [
+      10.3951,
+      63.4305
+    ]
+  },
+  "purpose": "Rectangular Garmin tiles may overlap other countries. Do not fill their padding with sea, land or land-cover polygons.",
+  "region": "norway-south",
+  "transparentNativeMap": true
+}

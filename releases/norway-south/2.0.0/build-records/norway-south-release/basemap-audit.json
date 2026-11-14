@@ -1,0 +1,51 @@
+{
+  "feature_instances_by_layer": {
+    "boundary": 14207,
+    "building": 7121425,
+    "cycling_route": 19099,
+    "ferry": 23383,
+    "hiking_poi": 64994,
+    "hiking_route": 65714,
+    "island_name": 193465,
+    "landcover": 8425021,
+    "mountain": 69316,
+    "natural_line": 30916,
+    "place": 1695773,
+    "poi": 558857,
+    "railway": 192718,
+    "station": 3612,
+    "transportation": 7707281,
+    "transportation_name": 2452141,
+    "water": 4163715,
+    "water_name": 219149,
+    "waterway": 5271220
+  },
+  "metadata": {
+    "bounds": "4.000000,57.800000,13.500000,63.500000",
+    "center": "8.750000,60.650000,9",
+    "description": "Southern coast through Trondheim; includes Oslo, Stavanger, Bergen, Hardangervidda, Jotunheimen and the southern fjords. Mainland Norway and coastal islands only; excludes Svalbard and Jan Mayen. Adjacent editions overlap by 0.5 degrees latitude (approximately 56 km).",
+    "format": "pbf",
+    "json": "{\"vector_layers\":[{\"id\":\"boundary\",\"fields\":{\"admin_level\":\"String\",\"class\":\"String\",\"name\":\"String\"},\"minzoom\":4,\"maxzoom\":14},{\"id\":\"building\",\"fields\":{\"class\":\"String\"},\"minzoom\":13,\"maxzoom\":14},{\"id\":\"cycling_route\",\"fields\":{\"class\":\"String\",\"colour\":\"String\",\"foot\":\"String\",\"name\":\"String\",\"name_en\":\"String\",\"network\":\"String\",\"operator\":\"String\",\"osmc:symbol\":\"String\",\"ref\":\"String\",\"short_name\":\"String\",\"symbol\":\"String\"},\"minzoom\":7,\"maxzoom\":14},{\"id\":\"ferry\",\"fields\":{\"access\":\"String\",\"class\":\"String\",\"duration\":\"String\",\"foot\":\"String\",\"name\":\"String\",\"name_en\":\"String\",\"operator\":\"String\"},\"minzoom\":6,\"maxzoom\":14},{\"id\":\"hiking_poi\",\"fields\":{\"access\":\"String\",\"backcountry\":\"String\",\"class\":\"String\",\"drinking_water\":\"String\",\"ele_label\":\"String\",\"ele_m\":\"Number\",\"ele_raw\":\"String\",\"fee\":\"String\",\"foot\":\"String\",\"name\":\"String\",\"name_en\":\"String\",\"name_no\":\"String\",\"official_name\":\"String\",\"opening_hours\":\"String\",\"operator\":\"String\",\"ref\":\"String\",\"shelter_type\":\"String\",\"wheelchair\":\"String\"},\"minzoom\":10,\"maxzoom\":14},{\"id\":\"hiking_route\",\"fields\":{\"access\":\"String\",\"class\":\"String\",\"colour\":\"String\",\"foot\":\"String\",\"name\":\"String\",\"name_en\":\"String\",\"name_no\":\"String\",\"network\":\"String\",\"operator\":\"String\",\"osmc:symbol\":\"String\",\"ref\":\"String\",\"symbol\":\"String\"},\"minzoom\":7,\"maxzoom\":14},{\"id\":\"island_name\",\"fields\":{\"class\":\"String\",\"name\":\"String\",\"name_en\":\"String\",\"name_no\":\"String\"},\"minzoom\":7,\"maxzoom\":14},{\"id\":\"landcover\",\"fields\":{\"class\":\"String\",\"landuse\":\"String\",\"name\":\"String\",\"name_en\":\"String\",\"name_no\":\"String\",\"natural\":\"String\",\"official_name\":\"String\",\"short_name\":\"String\",\"wetland\":\"String\"},\"minzoom\":4,\"maxzoom\":14},{\"id\":\"mountain\",\"fields\":{\"class\":\"String\",\"ele_label\":\"String\",\"ele_m\":\"Number\",\"ele_raw\":\"String\",\"name\":\"String\",\"name_en\":\"String\",\"name_no\":\"String\",\"official_name\":\"String\"},\"minzoom\":9,\"maxzoom\":14},{\"id\":\"natural_line\",\"fields\":{\"class\":\"String\",\"name\":\"String\",\"name_en\":\"String\"},\"minzoom\":11,\"maxzoom\":14},{\"id\":\"place\",\"fields\":{\"class\":\"String\",\"name\":\"String\",\"name_en\":\"String\",\"name_no\":\"String\"},\"minzoom\":4,\"maxzoom\":14},{\"id\":\"poi\",\"fields\":{\"access\":\"String\",\"category\":\"String\",\"class\":\"String\",\"foot\":\"String\",\"name\":\"String\",\"name_en\":\"String\",\"name_no\":\"String\",\"official_name\":\"String\",\"short_name\":\"String\"},\"minzoom\":10,\"maxzoom\":14},{\"id\":\"railway\",\"fields\":{\"access\":\"String\",\"bridge\":\"String\",\"class\":\"String\",\"foot\":\"String\",\"layer\":\"String\",\"name\":\"String\",\"name_en\":\"String\",\"name_no\":\"String\",\"official_name\":\"String\",\"operator\":\"String\",\"service\":\"String\",\"tunnel\":\"String\",\"usage\":\"String\"},\"minzoom\":6,\"maxzoom\":14},{\"id\":\"station\",\"fields\":{\"class\":\"String\",\"name\":\"String\",\"name_en\":\"String\",\"name_no\":\"String\",\"network\":\"String\",\"official_name\":\"String\",\"operator\":\"String\"},\"minzoom\":9,\"maxzoom\":14},{\"id\":\"transportation\",\"fields\":{\"access\":\"String\",\"bicycle\":\"String\",\"bridge\":\"String\",\"class\":\"String\",\"designation\":\"String\",\"foot\":\"String\",\"horse\":\"String\",\"layer\":\"String\",\"name\":\"String\",\"ref\":\"String\",\"sac_scale\":\"String\",\"surface\":\"String\",\"tracktype\":\"String\",\"trail_visibility\":\"String\",\"tunnel\":\"String\"},\"minzoom\":4,\"maxzoom\":14},{\"id\":\"transportation_name\",\"fields\":{\"class\":\"String\",\"name\":\"String\",\"name_en\":\"String\",\"name_no\":\"String\",\"official_name\":\"String\",\"ref\":\"String\",\"short_name\":\"String\"},\"minzoom\":10,\"maxzoom\":14},{\"id\":\"water\",\"fields\":{\"class\":\"String\",\"name\":\"String\"},\"minzoom\":4,\"maxzoom\":14},{\"id\":\"water_name\",\"fields\":{\"name\":\"String\",\"name_en\":\"String\",\"name_no\":\"String\",\"official_name\":\"String\",\"short_name\":\"String\"},\"minzoom\":11,\"maxzoom\":14},{\"id\":\"waterway\",\"fields\":{\"class\":\"String\",\"intermittent\":\"String\",\"name\":\"String\"},\"minzoom\":4,\"maxzoom\":14}]}",
+    "maxzoom": "14",
+    "minzoom": "4",
+    "name": "OpenBareMap Southern Norway",
+    "openbaremap_contour_interval_metres": "20",
+    "openbaremap_storage_revision": "2.0.0-norway-south-r1",
+    "type": "baselayer",
+    "version": "2.0.0"
+  },
+  "note": "Feature instances include repetition across tiles and zooms; not unique OSM objects. This checks MVT framing and layer presence, not geometry or cartographic correctness.",
+  "tiles_by_zoom": {
+    "4": 1,
+    "5": 4,
+    "6": 9,
+    "7": 19,
+    "8": 63,
+    "9": 215,
+    "10": 770,
+    "11": 2822,
+    "12": 10544,
+    "13": 40090,
+    "14": 153801
+  }
+}

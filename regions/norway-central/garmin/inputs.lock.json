@@ -1,0 +1,20 @@
+{
+  "inputs": [
+    {
+      "path": "regions/norway-central/garmin/inputs/contours.geojson.gz",
+      "sha256": "eface5cd90774407128c0fdff8ece5ffbb4647d01f8f05c7df6add8f381b3f96",
+      "uncompressedSHA256": "4c67be2cd344b4b362737b4f56809362f7073bf0f5469cbb0186f55ea1bcdde9"
+    },
+    {
+      "path": "regions/norway-central/garmin/inputs/landcover.geojson.gz",
+      "sha256": "dc06bfc00fb353bda7fa47b6d172a681367684b24e58fa34f7725b47b9c3975a",
+      "uncompressedSHA256": "710813bafa0a0386cd7e5d561748754f590621cbe1aff991eedd154066ee75bc"
+    },
+    {
+      "path": "regions/norway-central/garmin/inputs/land.geojson.gz",
+      "sha256": "3cdeaa141144ffbb488d87468f3ad5a2386b1ea208a1ff5e2b056a129509b392",
+      "uncompressedSHA256": "268212ac39fe52a39ee8237e4b9fc3fa7eecb83907233017d6a30463aa3564e3"
+    }
+  ],
+  "region": "norway-central"
+}

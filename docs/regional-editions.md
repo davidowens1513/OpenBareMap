@@ -1,5 +1,74 @@
 # Maintaining regional editions
 
+## Norway editions
+
+The coverage plan is recorded in `config/norway-editions.json`. It defines three
+independent downloads for mainland Norway and its coastal islands, excluding
+Svalbard and Jan Mayen. The 13 November 2026 OSM snapshot, Copernicus GLO-30
+elevation and Garmin DEM padding have been acquired for all three editions.
+All three local map builds, iOS and Android integration kits, Garmin images and
+browser previews are complete and validated. All three editions are published,
+phone and Garmin public downloads have passed complete checksum verification,
+and the production website has been checked live.
+
+| Edition | Latitude range | Main coverage |
+| --- | --- | --- |
+| Southern Norway | 57.8–63.5°N | Oslo, Stavanger, Bergen, Jotunheimen and Trondheim |
+| Central Norway | 63.0–67.5°N | Trondheim, Helgeland and Bodø |
+| Northern Norway | 67.0–71.5°N | Bodø, Lofoten, Tromsø, Finnmark and Kirkenes |
+
+Adjacent editions overlap by 0.5° latitude, approximately 56 km, around Trondheim
+and Bodø. Both maps must retain full detail throughout each shared strip, with
+the same source snapshot, contours and cartography. The configured rectangles
+select from Norwegian source coverage. They do not imply full coverage of Sweden
+or Finland. Verify the complete Norwegian coastal outline before building.
+
+The three editions use a shared ETRS89 / UTM 33N grid and aligned 30 m terrain
+pixels. Their native Garmin families are 4839 (south), 4840 (central) and 4841
+(north). Source locks, outputs and mobile packages remain independent under
+`regions/norway-south/`, `regions/norway-central/` and `regions/norway-north/`.
+Each complete build uses `scripts/run_full_region.py --region <edition>`.
+
+After acquiring the sources and padding for all three sections, run
+`scripts/prepare_norway_shared_terrain.py` before building topography. It derives
+each HGT cell once from the union of the verified COGs at a fixed, aligned angular
+resolution, then installs identical shared cells in neighbouring source locks.
+The GDAL VRT default average resolution differs with the selected latitude range
+and must not be used to derive independent Norway overlap cells. Original DEM
+files and pre-alignment locks are retained locally for comparison.
+
+For an offline browser export, use `scripts/build_web_previews.py` with
+`--cached-preview work/faroe-islands-web-2.0.0`. This reuses the existing preview's
+PMTiles 4.5.0 library only after checking its version and release checksum, and
+copies its licence alongside the new export. The Norway preview's shared origin
+is `https://downloads.appsbyonzy.dev/OpenBareMap/norway/2.0.0/preview`.
+
+`scripts/prepare_norway_publication.py` checks every completed edition and stages
+its delivery files. Norway's source extracts, elevation pixels, generated Garmin
+geometry, databases and split database payloads are excluded from Git and LFS.
+Source references, configuration, checksums and small build records remain in Git
+as provenance of the published release. The local bulk files are retained, and
+future builds may use a fresh source snapshot rather than reconstructing the exact
+historical release. Historical selections and checksum records do not mean that
+the corresponding bulk payloads are present in a fresh checkout. Public integration
+ZIPs and Garmin images remain available through their R2 download manifests.
+
+From a Terminal with network access and the existing rclone configuration, run:
+
+```sh
+PYTHONPATH=work/python python3 scripts/publish_norway_release.py --publish --website
+```
+
+The website option requires Wrangler or Node.js/npx and Cloudflare Pages access.
+It checks the existing `appsbyonzy` project's production branch before uploading.
+The publisher uploads map assets, verifies complete public download checksums,
+then publishes preview navigation and the website. Without `--publish`, it only
+prints the prepared plan. Without `--website`, it publishes and verifies the maps
+and navigation; `work/norway-website-20261114.zip` is also ready for a manual upload
+to the existing Pages project after the map checks pass. Publication verification
+is recorded in `web-preview/verification/norway-publication.json`. Git commit and
+push remain separate from publication.
+
 OpenBareMap uses one repository and shared cartography for Ireland, England/Wales, Scotland and Sierra Nevada. Each edition selects its own source snapshots, coordinate grid, map databases and platform packages. A regional release does not replace another edition's resources or require it to be released at the same time.
 
 Ireland remains the default for existing build, viewer and packaging commands. Its selected map stays in the root `active-map.json`. The accepted Ireland inputs and outputs are recorded in `regions/ireland/preservation-baseline.json`; regional validation verifies their checksums.

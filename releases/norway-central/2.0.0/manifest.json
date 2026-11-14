@@ -1,0 +1,106 @@
+{
+  "acceptance": "Automated checks only; see validation and visual-review records for actual reviewed scope.",
+  "coverage": "Trondheim, Trondelag and the Helgeland coast through Bodo. Mainland Norway and coastal islands only; excludes Svalbard and Jan Mayen. Adjacent editions overlap by 0.5 degrees latitude (approximately 56 km).",
+  "datasets": {
+    "basemap": {
+      "bytes": 736968704,
+      "path": "releases/norway-central/2.0.0/maps/basemap.mbtiles",
+      "sha256": "296a88fbf030a86bebc326086d447af0c97f9cced2daea13df616822f0ba40f2",
+      "validation": {
+        "empty_tile_count": 4067,
+        "logical_tiles_sha256": "efdee1cefcf277bc40b7b6eb52e738b0c60ff80fd0bf6e91a509bf34e22e1eb1",
+        "tile_count": 107563
+      }
+    },
+    "grid": {
+      "bytes": 98091008,
+      "path": "releases/norway-central/2.0.0/maps/grid.mbtiles",
+      "sha256": "7ae56ec1ba7b4b4b971b0be48339c2f0aed491fe77d36121db5d2455fb8ea408",
+      "validation": {
+        "empty_tile_count": 0,
+        "logical_tiles_sha256": "3914aecf4092a8a6f4b6d441c28cb89a9688167a41909c066a47059ed5e999e2",
+        "tile_count": 358310
+      }
+    },
+    "hillshade": {
+      "bytes": 373518336,
+      "path": "releases/norway-central/2.0.0/maps/hillshade.mbtiles",
+      "sha256": "7037b3a7a5b60f633bf3f8162e1ccb006e59dc9966e828abb90ec2763942f356",
+      "validation": {
+        "empty_tile_count": 0,
+        "logical_tiles_sha256": "b2ee80bd2b708b3d340182aa395c8529621fab12ed8b476d4b240c555ef45617",
+        "tile_count": 16242
+      }
+    },
+    "topography": {
+      "bytes": 746614784,
+      "path": "releases/norway-central/2.0.0/maps/topography-context.mbtiles",
+      "sha256": "0fa7d7486c22091de3e0401dc6d7562d9a7c16f26bfab259b5d5df029f7656c1",
+      "validation": {
+        "empty_tile_count": 289363,
+        "logical_tiles_sha256": "38c7e1ac84ac5b00b7248effe983426883ac5b632b70ecf72c751a52ff07e38e",
+        "tile_count": 526772
+      }
+    }
+  },
+  "garmin": {
+    "bytes": 518512640,
+    "path": "regions/norway-central/garmin/dist/OpenBareMap-Norway-Central.img",
+    "sha256": "fa1fdfcb0bc7c6e1e15918092fcab99e657e3f7f3fc598e127d730178b7c5719"
+  },
+  "geometryReport": {
+    "path": "releases/norway-central/2.0.0/build-records/norway-central-geometry/geometry-report.json",
+    "sha256": "163f750163bd6327a9fb85ff600976f828d1e4bb5c1832f970890481056f60f2"
+  },
+  "hostAppsModified": false,
+  "mapVersion": "2.0.0",
+  "osm": {
+    "bytes": 297056880,
+    "operation": "Complete-feature bbox extraction with nested relation references",
+    "path": "data/regions/norway-central/norway-261113.osm.clipped.osm.pbf",
+    "replicationTimestamp": "2026-11-13T21:22:20Z",
+    "sha256": "7e5f639638e2c9b51b2557a1283552575b65e3875bd8ff463faf56a363ac01f3",
+    "snapshot_date": "2026-11-13",
+    "url": "https://download.geofabrik.de/europe/norway-261113.osm.pbf"
+  },
+  "packages": {
+    "android": {
+      "archive": {
+        "bytes": 1987843583,
+        "path": "regions/norway-central/android/OpenBareMap-Android.zip",
+        "sha256": "1c7e11d4c2d2bd93a1cb90cb20b4cda128b1948b9821b4dca8b06aaec7a66b7c"
+      },
+      "checksumsSHA256": "4346a5ba20a20ea4d830e897b6f0b2ec4d93364b1995812abe4c41e55b15fcc4",
+      "manifestSHA256": "a0dea9e69a3990a345920431fbf9dca1477509ffbe56547fd8056bcaf06cdecd",
+      "path": "regions/norway-central/android",
+      "validationSHA256": "c77faec92a9674b7a4b41dc2cbe5ec70a203a5bb67121a435c9fb31545fa05eb"
+    },
+    "ios": {
+      "checksumsSHA256": "d8b7e4a17d1497b027186fdcf7143a91fa12a8e3409bcc73a38a9ae095f7ca80",
+      "manifestSHA256": "dd4f871bc4f333bd4362b021bf34308bc2faa46d4e4c2a91d8a2b612986b9928",
+      "path": "regions/norway-central/ios",
+      "validationSHA256": "fdd83c7c5e821f1597ae6cc435be1a87aaa2e3f8d8e74690161bc75271846d2a"
+    }
+  },
+  "pythonRuntime": {
+    "packages": {
+      "Pillow": "12.3.0",
+      "certifi": "2026.10.23",
+      "charset-normalizer": "3.5.2",
+      "idna": "3.20",
+      "numpy": "2.5.4",
+      "osmium": "4.3.2",
+      "pyproj": "3.8.0",
+      "requests": "2.34.2",
+      "shapely": "2.2.0",
+      "urllib3": "2.8.0"
+    },
+    "platform": "macOS-27.2.1-arm64-arm-64bit-Mach-O",
+    "python": "3.14.5 (main, May 10 2026, 10:21:34) [Clang 21.0.0 (clang-2100.0.123.102)]",
+    "requirementsSHA256": "427f12ff8b49bfebac0a7d453c2f65bd15d6695584b18e6ecee1fdfeed20a36c"
+  },
+  "region": "norway-central",
+  "styleSHA256": "84b7403440edf802ddd5900926202c9235ab947dd4c047e82c0602c477b90245",
+  "terrainLockSHA256": "f043e3723c86347c724ea0d0b49de24305e9510c4c451541ffeeb2351d057142",
+  "validation": "validation.json"
+}

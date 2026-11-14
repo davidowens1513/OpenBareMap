@@ -1,0 +1,44 @@
+{
+  "bytes": 7764912,
+  "commands": [
+    [
+      "/Applications/QGIS.app/Contents/MacOS/gdalwarp",
+      "-q",
+      "-of",
+      "GTiff",
+      "-ot",
+      "Int16",
+      "-t_srs",
+      "EPSG:4326",
+      "-te",
+      "20.999861111111112",
+      "68.99986111111112",
+      "22.000138888888888",
+      "70.00013888888888",
+      "-ts",
+      "3601",
+      "3601",
+      "-r",
+      "bilinear",
+      "-dstnodata",
+      "0",
+      "/Volumes/Extreme SSD/Projects/OpenBareMap/data/regions/norway/shared-terrain-v1/source.vrt",
+      "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-Norway-DEM-dwj_x093/cell.tif"
+    ],
+    [
+      "/Applications/QGIS.app/Contents/MacOS/gdal_translate",
+      "-q",
+      "-of",
+      "SRTMHGT",
+      "-a_nodata",
+      "-32768",
+      "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-Norway-DEM-dwj_x093/cell.tif",
+      "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-Norway-DEM-dwj_x093/N69E021.hgt"
+    ]
+  ],
+  "operation": "Bilinear resampling of Copernicus GLO-30 to point-aligned Int16 HGT, EGM2008 heights",
+  "path": "data/regions/norway/shared-terrain-v1/N69E021.hgt.gz",
+  "sha256": "6019d2a612b8e1b27a8d5f7ab61be06ebd327a81677cef9c4aa1df9960b2bab4",
+  "sharedSourceSHA256": "e1cba34d40790053a44c12f514c471fe6eaa5da80121b63049f6e9a683fc27e7",
+  "url": null
+}

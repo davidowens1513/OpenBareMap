@@ -1,0 +1,70 @@
+{
+  "bounds": [
+    11.0,
+    67.0,
+    32.0,
+    71.5
+  ],
+  "contextEnvelope": [
+    11.0,
+    67.0,
+    32.0,
+    71.5
+  ],
+  "drawPriority": 25,
+  "format": "openbaremap-garmin-render-footprint-v1",
+  "geometry": {
+    "bytes": 735,
+    "path": "regions/norway-north/garmin/render-coverage.geojson",
+    "sha256": "9fcd6278cf2ee5ed1445ea99cfe5b515ab1b8f9a910ccaa13de8db575db7d51a"
+  },
+  "inputs": [
+    {
+      "bytes": 8014,
+      "path": "data/regions/norway-north/norway.poly",
+      "sha256": "bf08b7f9f070e62d1b64b8950c05dbefaa77bba7c0637394acecb4a959d493b4",
+      "url": "https://download.geofabrik.de/europe/norway.poly"
+    }
+  ],
+  "knownDestinationsCovered": {
+    "alta": [
+      23.2716,
+      69.9689
+    ],
+    "bodo": [
+      14.4049,
+      67.2804
+    ],
+    "kirkenes": [
+      30.045,
+      69.7271
+    ],
+    "north-cape": [
+      25.784,
+      71.1725
+    ],
+    "reine": [
+      13.089,
+      67.933
+    ],
+    "rost": [
+      12.103,
+      67.518
+    ],
+    "svolvaer": [
+      14.568,
+      68.235
+    ],
+    "tromso": [
+      18.9553,
+      69.6492
+    ],
+    "vardo": [
+      31.1087,
+      70.3705
+    ]
+  },
+  "purpose": "Rectangular Garmin tiles may overlap other countries. Do not fill their padding with sea, land or land-cover polygons.",
+  "region": "norway-north",
+  "transparentNativeMap": true
+}

@@ -6,7 +6,7 @@ ROOT=Path(__file__).resolve().parents[1]
 import sys
 sys.path.insert(0,str(ROOT/"scripts"))
 from package_resources import build_capped_coast, copy_map_file
-from regions import terrain_file,apply_terrain_notice,profile, active_map, region_style, provenance_files, region_path
+from regions import REGIONS,terrain_file,apply_terrain_notice,profile, active_map, region_style, provenance_files, region_path
 def sha(path):
     with path.open('rb') as f:return hashlib.file_digest(f,'sha256').hexdigest()
 def write(path,obj):path.write_text(json.dumps(obj,indent=2,ensure_ascii=False)+'\n')
@@ -87,4 +87,4 @@ def assemble(destination, region='ireland'):
     validation['totalBytes']=sum(p.stat().st_size for p in bundle.rglob('*') if p.is_file());validation['fileCount']=sum(1 for p in bundle.rglob('*') if p.is_file());write(destination/'validation.json',validation)
     print(json.dumps({'bundle':str(bundle),'bytes':validation['totalBytes'],'files':validation['fileCount']},indent=2))
 if __name__=='__main__':
-    parser=argparse.ArgumentParser();parser.add_argument('--output',type=Path);parser.add_argument('--region',choices=['ireland','england-wales','scotland','sierra-nevada','pyrenees','dolomites','faroe-islands'],default='ireland');args=parser.parse_args();assemble((args.output or (ROOT/'ios/package' if args.region=='ireland' else ROOT/'regions'/args.region/'ios')).resolve(),args.region)
+    parser=argparse.ArgumentParser();parser.add_argument('--output',type=Path);parser.add_argument('--region',choices=REGIONS,default='ireland');args=parser.parse_args();assemble((args.output or (ROOT/'ios/package' if args.region=='ireland' else ROOT/'regions'/args.region/'ios')).resolve(),args.region)

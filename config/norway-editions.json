@@ -1,0 +1,86 @@
+{
+  "status": "All three editions published; phone and Garmin public download checksums verified; website checked live",
+  "scope": "Mainland Norway and coastal islands; excludes Svalbard, Jan Mayen and Norwegian dependencies. Bounds select from the Norway source extract, not neighbouring countries.",
+  "boundsOrder": [
+    "west",
+    "south",
+    "east",
+    "north"
+  ],
+  "coordinateSystem": "EPSG:4326",
+  "contourIntervalMetres": 20,
+  "maxzoom": 14,
+  "overlapLatitudeDegrees": 0.5,
+  "overlapApproximateKilometres": 55.6,
+  "overlapPolicy": "Include full basemap, contours, hillshade and grid coverage in both adjacent editions. Use the same source snapshot and shared cartography. No fading or reduced-detail border strips.",
+  "editions": [
+    {
+      "id": "norway-south",
+      "label": "Southern Norway",
+      "bounds": [
+        4.0,
+        57.8,
+        13.5,
+        63.5
+      ],
+      "coverageDescription": "Southern coast through Trondheim; includes Oslo, Stavanger, Bergen, Hardangervidda, Jotunheimen and the southern fjords."
+    },
+    {
+      "id": "norway-central",
+      "label": "Central Norway",
+      "bounds": [
+        7.0,
+        63.0,
+        19.0,
+        67.5
+      ],
+      "coverageDescription": "Trondheim, Trondelag and the Helgeland coast through Bodo."
+    },
+    {
+      "id": "norway-north",
+      "label": "Northern Norway",
+      "bounds": [
+        11.0,
+        67.0,
+        32.0,
+        71.5
+      ],
+      "coverageDescription": "Bodo, Lofoten, Vesteralen, Tromso and Finnmark through North Cape and Kirkenes."
+    }
+  ],
+  "joins": [
+    {
+      "editions": [
+        "norway-south",
+        "norway-central"
+      ],
+      "overlapBounds": [
+        7.0,
+        63.0,
+        13.5,
+        63.5
+      ],
+      "description": "Full-detail shared strip around Trondheim."
+    },
+    {
+      "editions": [
+        "norway-central",
+        "norway-north"
+      ],
+      "overlapBounds": [
+        11.0,
+        67.0,
+        19.0,
+        67.5
+      ],
+      "description": "Full-detail shared strip around Bodo."
+    }
+  ],
+  "buildRequirements": [
+    "Check all three crops against the complete Norway source outline, including outlying coastal islands, before building.",
+    "Choose and verify northern-latitude elevation coverage; keep elevation provenance and licence notices with each edition.",
+    "Generate overlapping terrain and grid from consistent settings and sources so neighbouring maps agree.",
+    "Assign independent regional profiles, output paths and Garmin identities before enabling builds.",
+    "Validate map detail on both sides of each join and measure final download sizes after packaging."
+  ]
+}

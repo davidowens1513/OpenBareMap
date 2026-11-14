@@ -1,0 +1,34 @@
+{
+  "builderSHA256": "c6af7bb693042e99a511b7527644ad79605ccf5515b172f9653cdef5bb10789f",
+  "contoursSourceSHA256": "e0760555ba713561159df2db1054d4b5c607856bb00989c23c5ad8498e38222b",
+  "counts": {
+    "contours": 299421,
+    "grid": {
+      "grid_10km": 117,
+      "grid_1km": 1152
+    },
+    "landcover": {
+      "empty_source_areas": [],
+      "features": 395549,
+      "retained": 14132,
+      "smoothed": 381417
+    }
+  },
+  "osm": {
+    "bytes": 297056880,
+    "operation": "Complete-feature bbox extraction with nested relation references",
+    "path": "data/regions/norway-central/norway-261113.osm.clipped.osm.pbf",
+    "replicationTimestamp": "2026-11-13T21:22:20Z",
+    "sha256": "7e5f639638e2c9b51b2557a1283552575b65e3875bd8ff463faf56a363ac01f3",
+    "snapshot_date": "2026-11-13",
+    "url": "https://download.geofabrik.de/europe/norway-261113.osm.pbf"
+  },
+  "outputs": {
+    "contours.geojson": "4c67be2cd344b4b362737b4f56809362f7073bf0f5469cbb0186f55ea1bcdde9",
+    "grid_10km.geojson": "f4de6977d27ec35bf5ab3259f57a89d7b8833474c8a9c43a69e4d7e90f12b418",
+    "grid_1km.geojson": "db30cc39cd264f7e2f3bc1b310bd89f9ac7999ee593a75d39bbdc96c2cd940f1",
+    "landcover.geojson": "710813bafa0a0386cd7e5d561748754f590621cbe1aff991eedd154066ee75bc"
+  },
+  "region": "norway-central",
+  "smootherSHA256": "7581d024dc1c1bec931642c7201db149bf64a64c814c451fa8bf37a0881ea6c9"
+}

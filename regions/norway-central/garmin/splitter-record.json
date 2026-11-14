@@ -1,0 +1,21 @@
+{
+  "combinedSHA256": "16c861d92f0b45e8a907d8d965940f723f5f5e1b9d3bd1585a352af295cb6a84",
+  "command": [
+    "/opt/homebrew/opt/openjdk@21/libexec/openjdk.jdk/Contents/Home/bin/java",
+    "-Xmx6g",
+    "-jar",
+    "/Volumes/Extreme SSD/Projects/OpenBareMap/garmin/tools/splitter-r654/splitter.jar",
+    "--mapid=48400001",
+    "--description=OpenBareMap Central Norway",
+    "--max-nodes=1000000",
+    "--max-threads=2",
+    "--keep-complete=true",
+    "--output=pbf",
+    "--polygon-file=/Volumes/Extreme SSD/Projects/OpenBareMap/regions/norway-central/garmin/coverage.poly",
+    "--output-dir=/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/906ead9d53a7/norway-central/garmin/split",
+    "--ignore-osm-bounds=true",
+    "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/906ead9d53a7/norway-central/garmin/combined.osm.pbf"
+  ],
+  "coverageSHA256": "5cd401817a88394d54c3f21cf9649463306dbbd351ae6858ada2e6414738c606",
+  "ignoreSourceHeaderBounds": true
+}

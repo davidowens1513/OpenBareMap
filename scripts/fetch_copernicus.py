@@ -5,6 +5,29 @@ from openbaremap import ROOT,digest,write
 from regions import profile,region_path
 
 BASE='https://copernicus-dem-30m.s3.amazonaws.com/'
+
+def ocean_check_land(region):
+ """Prepare independently pinned coastline before the terrain build exists."""
+ p=profile(region);folder=ROOT/'data/regions'/region/'copernicus'
+ folder.mkdir(parents=True,exist_ok=True)
+ land=folder/'ocean-check-land.geojson';record=land.with_suffix('.source.json')
+ coast=json.loads((ROOT/'coast-sources.lock.json').read_text())
+ toolchain=json.loads((ROOT/'topography-toolchain.lock.json').read_text())
+ ogr=toolchain['ogr2ogr']['path'];source=ROOT/coast['path']
+ identity={'sourceSHA256':coast['sha256'],'bounds':p['coastContextBounds'],'toolSHA256':toolchain['ogr2ogr']['sha256']}
+ if digest(source)!=identity['sourceSHA256'] or digest(ogr)!=identity['toolSHA256']:
+  raise ValueError('Ocean-check coastal source or tool changed')
+ if record.exists():
+  saved=json.loads(record.read_text())
+  if any(saved.get(k)!=v for k,v in identity.items()) or digest(land)!=saved['sha256']:
+   raise ValueError('Ocean-check coastline checkpoint changed')
+  return land
+ if land.exists():raise FileExistsError('Unregistered ocean-check coastline: '+str(land))
+ env=os.environ.copy();env['PROJ_DATA']=str(Path(toolchain['proj_database']['path']).parent)
+ subprocess.run([ogr,'-f','GeoJSON',str(land),'/vsizip/'+str(source)+'/land-polygons-split-4326/land_polygons.shp','-spat',*map(str,p['coastContextBounds']),'-clipsrc',*map(str,p['coastContextBounds']),'-lco','COORDINATE_PRECISION=7'],env=env,check=True)
+ write(record,{**identity,'sha256':digest(land)})
+ return land
+
 def fetch(region,padding=False):
  from fetch_region import download,verify
  p=profile(region);folder=ROOT/'data/regions'/region;out=folder/'elevation';out.mkdir(parents=True,exist_ok=True)
@@ -39,7 +62,7 @@ def fetch(region,padding=False):
     from shapely.geometry import shape,box
     from shapely.ops import unary_union
     land_path=ROOT/'build'/(region+'-topography')/'land.geojson'
-    if not land_path.exists():raise ValueError('A missing DEM tile requires an independent coastal land check')
+    if not land_path.exists():land_path=ocean_check_land(region)
     cell=box(lo,la,lo+1,la+1)
     if not box(*p['coastContextBounds']).covers(cell):raise ValueError('Ocean cell extends outside checked coastal context')
     land=unary_union([shape(f['geometry']) for f in json.loads(land_path.read_text())['features']])

@@ -5,7 +5,7 @@ import argparse,hashlib,json,shutil,sqlite3,sys,zipfile,subprocess
 ROOT=Path(__file__).resolve().parents[1]
 sys.path.insert(0,str(ROOT/'scripts'))
 from package_resources import build_capped_coast, copy_map_file
-from regions import terrain_file,apply_terrain_notice,profile, active_map, region_style, provenance_files, region_path
+from regions import REGIONS,terrain_file,apply_terrain_notice,profile, active_map, region_style, provenance_files, region_path
 
 def sha(p):
     with p.open('rb') as f:return hashlib.file_digest(f,'sha256').hexdigest()
@@ -70,4 +70,4 @@ def export_zip(output):
                     with p.open('rb') as src,z.open(entry,'w',force_zip64=p.stat().st_size>=2**31) as dst:shutil.copyfileobj(src,dst,1024*1024)
     return archive
 if __name__=='__main__':
-    p=argparse.ArgumentParser();p.add_argument('--output',type=Path);p.add_argument('--region',choices=['ireland','england-wales','scotland','sierra-nevada','pyrenees','dolomites','faroe-islands'],default='ireland');p.add_argument('--zip-only',action='store_true',help='Export ZIP from the existing checksum-verified package');args=p.parse_args();output=(args.output or (ROOT/'android/package' if args.region=='ireland' else ROOT/'regions'/args.region/'android')).resolve();print(export_zip(output)) if args.zip_only else assemble(output,args.region)
+    p=argparse.ArgumentParser();p.add_argument('--output',type=Path);p.add_argument('--region',choices=REGIONS,default='ireland');p.add_argument('--zip-only',action='store_true',help='Export ZIP from the existing checksum-verified package');args=p.parse_args();output=(args.output or (ROOT/'android/package' if args.region=='ireland' else ROOT/'regions'/args.region/'android')).resolve();print(export_zip(output)) if args.zip_only else assemble(output,args.region)

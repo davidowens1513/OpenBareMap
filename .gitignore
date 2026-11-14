@@ -172,3 +172,27 @@ data/regions/faroe-islands/copernicus/*
 /regions/pyrenees/garmin/dist/OpenBareMap-Pyrenees.img
 /regions/scotland/garmin/dist/OpenBareMap-Scotland.img
 /regions/sierra-nevada/garmin/dist/OpenBareMap-Sierra-Nevada.img
+
+# Norway source inventories and checksums are retained; bulk data is regenerated.
+!data/regions/norway/
+data/regions/norway/*
+!data/regions/norway/shared-terrain-v1/
+data/regions/norway/shared-terrain-v1/*
+!data/regions/norway/shared-terrain-v1/*.json
+!data/regions/norway/shared-terrain-v1/source.vrt
+!data/regions/norway-*/
+data/regions/norway-*/*
+!data/regions/norway-*/*.poly
+!data/regions/norway-*/*.extract.json
+!data/regions/norway-*/copernicus/
+data/regions/norway-*/copernicus/*
+!data/regions/norway-*/copernicus/tileList.txt
+/regions/norway-*/garmin/coastal-context/
+# Reproducible Norway databases, split payloads and Garmin geometry stay local.
+/releases/norway-*/2.0.0/maps/*.mbtiles
+/releases/norway-*/2.0.0/maps/*.mbtiles.part[0-9][0-9]
+/releases/norway-*/2.0.0/maps/*.building
+/regions/norway-*/garmin/inputs/*.geojson.gz
+# Public delivery archives are restored from their R2 manifests, like other editions.
+/regions/norway-*/garmin/dist/*.img
+/releases/norway-*/2.0.0/app-bundles-v1/**/*.zip

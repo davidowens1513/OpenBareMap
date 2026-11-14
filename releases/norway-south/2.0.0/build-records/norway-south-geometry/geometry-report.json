@@ -1,0 +1,65 @@
+{
+  "builderSHA256": "c6af7bb693042e99a511b7527644ad79605ccf5515b172f9653cdef5bb10789f",
+  "contoursSourceSHA256": "d98810b9f2df84d394ad96ff6b326ad022c92c684beb76ccbd66e49a84816ff5",
+  "counts": {
+    "contours": 627556,
+    "grid": {
+      "grid_10km": 130,
+      "grid_1km": 1282
+    },
+    "landcover": {
+      "empty_source_areas": [
+        {
+          "area_id": 9658757,
+          "outer_ring_sizes": [],
+          "reason": "invalid area (area_id=9658757)"
+        },
+        {
+          "area_id": 17208303,
+          "outer_ring_sizes": [],
+          "reason": "invalid area (area_id=17208303)"
+        },
+        {
+          "area_id": 23698411,
+          "outer_ring_sizes": [],
+          "reason": "invalid area (area_id=23698411)"
+        },
+        {
+          "area_id": 19670915,
+          "outer_ring_sizes": [],
+          "reason": "invalid area (area_id=19670915)"
+        },
+        {
+          "area_id": 32765731,
+          "outer_ring_sizes": [],
+          "reason": "invalid area (area_id=32765731)"
+        },
+        {
+          "area_id": 32765999,
+          "outer_ring_sizes": [],
+          "reason": "invalid area (area_id=32765999)"
+        }
+      ],
+      "features": 936875,
+      "retained": 32646,
+      "smoothed": 904229
+    }
+  },
+  "osm": {
+    "bytes": 856359431,
+    "operation": "Complete-feature bbox extraction with nested relation references",
+    "path": "data/regions/norway-south/norway-261113.osm.clipped.osm.pbf",
+    "replicationTimestamp": "2026-11-13T21:22:20Z",
+    "sha256": "d7ba66a94bba227d2bdbeb54a257c4e0ccba11d78b37c57429a787ecb2ae48e8",
+    "snapshot_date": "2026-11-13",
+    "url": "https://download.geofabrik.de/europe/norway-261113.osm.pbf"
+  },
+  "outputs": {
+    "contours.geojson": "d3f680ad1038cea882471a96599496024201383bbec0ebf13f212caf6fe75f76",
+    "grid_10km.geojson": "83b5ebc7e4029e760c9cde39bf579d7adb5bac462692b23d132b1cda908830e6",
+    "grid_1km.geojson": "c957231f4af7a52194e97f745f7d42fd7d55a6fdf4afa7922a2e6134bd2a151e",
+    "landcover.geojson": "015da8ae3360aa35ee7472de83dd1afe1b7238813f41df2ae12e94a82c5802a4"
+  },
+  "region": "norway-south",
+  "smootherSHA256": "7581d024dc1c1bec931642c7201db149bf64a64c814c451fa8bf37a0881ea6c9"
+}

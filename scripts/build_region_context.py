@@ -19,6 +19,9 @@ def build(region,revision=3):
         if digest(tools[name]['path'])!=tools[name]['sha256']:raise ValueError('Tool changed')
     source='/vsizip/'+str(ROOT/coast['path'])+'/land-polygons-split-4326/land_polygons.shp'
     subprocess.run([ogr,'-f','GeoJSON',str(dest/'land.geojson'),source,'-spat',*map(str,bounds),'-clipsrc',*map(str,bounds),'-lco','COORDINATE_PRECISION=7'],env=env,check=True)
+    from polygonal_coast import polygonal_coast
+    coastline_filtering=polygonal_coast(dest/'land.geojson')
+    write(dest/'coastline-filtering.json',coastline_filtering)
     config={'layers':{'land':{'minzoom':4,'maxzoom':12,'source':str(dest/'land.geojson'),'simplify_below':12,'simplify_level':.00003,'simplify_ratio':2}},'settings':{'minzoom':4,'maxzoom':14,'basezoom':14,'bounding_box':bounds,'include_ids':False,'compress':'gzip','name':p['name']+' coastal context','description':'Coastal background beyond edition coverage; source OSM land polygons','version':p['mapVersion']}}
     write(dest/'tilemaker.json',config);(dest/'process.lua').write_text('node_keys={}\nway_keys={}\nfunction node_function() end\nfunction way_function() end\n')
     with (dest/'tilemaker.log').open('w') as log:subprocess.run([tilemaker,'--output',str(dest/'coast.mbtiles'),'--config',str(dest/'tilemaker.json'),'--process',str(dest/'process.lua'),'--threads','1'],stdout=log,stderr=subprocess.STDOUT,check=True)
@@ -45,4 +48,4 @@ def build(region,revision=3):
     print('Coastal context extended; contour layer payloads preserved.',flush=True)
 
 if __name__=='__main__':
-    parser=argparse.ArgumentParser();parser.add_argument('--region',choices=['england-wales','scotland','sierra-nevada','pyrenees','dolomites','faroe-islands'],required=True);parser.add_argument('--revision',type=int,choices=[3,4],default=3);args=parser.parse_args();build(args.region,args.revision)
+    parser=argparse.ArgumentParser();parser.add_argument('--region',choices=['england-wales','scotland','sierra-nevada','pyrenees','dolomites','faroe-islands','norway-south','norway-central','norway-north'],required=True);parser.add_argument('--revision',type=int,choices=[3,4],default=3);args=parser.parse_args();build(args.region,args.revision)

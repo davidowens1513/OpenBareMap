@@ -95,13 +95,13 @@ python3 scripts/serve.py --region england-wales --port 8766
 python3 scripts/serve.py --region scotland --port 8767
 ```
 
-Use `ireland`, `england-wales`, `scotland`, `sierra-nevada`, `pyrenees`, `dolomites` or `faroe-islands` for the resource exporters. The versioned integration kits are assembled by `scripts/build_app_distribution.py`; [distribution packaging](distribution/README.md) describes their contents and storage. [Regional build reference](docs/regional-editions.md) covers sources and full map builds. The England/Wales basemap is stored as verified LFS parts and restored automatically when selected; allow space for the parts and reconstructed database.
+Use `ireland`, `england-wales`, `scotland`, `sierra-nevada`, `pyrenees`, `dolomites`, `faroe-islands`, `norway-south`, `norway-central` or `norway-north` for the resource exporters. The three Norway editions are published; phone and Garmin downloads have passed full public checksum verification. Their [coverage plan](config/norway-editions.json) includes full-detail overlaps around Trondheim and Bodø. The versioned integration kits are assembled by `scripts/build_app_distribution.py`; [distribution packaging](distribution/README.md) describes their contents and storage. [Regional build reference](docs/regional-editions.md) covers sources and full map builds. The England/Wales basemap is stored as verified LFS parts and restored automatically when selected; allow space for the parts and reconstructed database.
 
 ## Data and attribution
 
 OpenStreetMap-derived data uses the [Open Database Licence](https://opendatacommons.org/licenses/odbl/1-0/) with [OpenStreetMap attribution](https://www.openstreetmap.org/copyright). Bundles include the applicable map, font and terrain notices. Sierra Nevada national park boundaries are credited to Organismo Autónomo Parques Nacionales (MITECO/OAPN), CC BY 4.0, with source details in the regional provenance. Consuming apps must make those notices accessible to users.
 
-Elevation comes from approximately 30 m composite Terrain Tiles data, including Copernicus EU-DEM, USGS and NOAA sources. The 20 m contour interval describes line spacing rather than terrain accuracy. [Terrain attribution](viewer/terrain-attribution.html) and the regional source locks identify the inputs.
+Elevation comes from approximately 30 m composite Terrain Tiles data, including Copernicus EU-DEM, USGS and NOAA sources. The Faroe Islands and Norway editions use Copernicus DEM GLO-30 Public with EGM2008 orthometric heights. The 20 m contour interval describes line spacing rather than terrain accuracy. [Terrain attribution](viewer/terrain-attribution.html) and the regional source locks identify the inputs.
 
 Source completeness, geographic accuracy and readability depend on the input data and renderer. Cliff symbols are not certified as indicating the downhill side; access tags do not establish route suitability or access rights. Townland, grid and inherited font provenance is described in the source records.
 

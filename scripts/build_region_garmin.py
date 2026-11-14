@@ -41,7 +41,9 @@ def main(region):
             env=os.environ.copy();env['PROJ_DATA']=str(Path(toolchain['proj_database']['path']).parent)
             source='/vsizip/'+str(ROOT/coastal['path'])+'/land-polygons-split-4326/land_polygons.shp'
             subprocess.run([ogr,'-f','GeoJSON',str(land_source),source,'-spat',*map(str,p['garminContextBounds']),'-clipsrc',*map(str,p['garminContextBounds']),'-lco','COORDINATE_PRECISION=7'],env=env,check=True)
-            write(context/'source.json',{'source':coastal,'bounds':p['garminContextBounds'],'sha256':digest(land_source)})
+            from polygonal_coast import polygonal_coast
+            coastline_filtering=polygonal_coast(land_source)
+            write(context/'source.json',{'source':coastal,'bounds':p['garminContextBounds'],'sha256':digest(land_source),'coastlineFiltering':coastline_filtering})
         if digest(land_source)!=json.loads((context/'source.json').read_text())['sha256']:raise ValueError('Garmin coastal context changed')
     if not lock.exists():
         records=[]
@@ -141,4 +143,4 @@ def main(region):
     write(dest/'build-report.json',{'status':'compiled and structurally inspected; hardware rendering pending','familyId':p['garminFamilyId'],'garminPackageRevision':config['garminPackageRevision'],'routing':False,'output':{'path':str(output.relative_to(ROOT)),'bytes':output.stat().st_size,'sha256':digest(output)},'inspection':json.loads((dest/'inspection.json').read_text())})
 
 if __name__=='__main__':
-    parser=argparse.ArgumentParser();parser.add_argument('--region',choices=['england-wales','scotland','sierra-nevada','pyrenees','dolomites','faroe-islands'],required=True);args=parser.parse_args();main(args.region)
+    parser=argparse.ArgumentParser();parser.add_argument('--region',choices=['england-wales','scotland','sierra-nevada','pyrenees','dolomites','faroe-islands','norway-south','norway-central','norway-north'],required=True);args=parser.parse_args();main(args.region)

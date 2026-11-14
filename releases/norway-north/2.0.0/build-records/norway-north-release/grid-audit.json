@@ -1,0 +1,26 @@
+{
+  "feature_instances_by_layer": {
+    "grid_10km": 219874,
+    "grid_1km": 1995952
+  },
+  "metadata": {
+    "bounds": "11.000000,67.000000,32.000000,71.500000",
+    "center": "21.500000,69.250000,9",
+    "description": "Bodo, Lofoten, Vesteralen, Tromso and Finnmark through North Cape and Kirkenes. Mainland Norway and coastal islands only; excludes Svalbard and Jan Mayen. Adjacent editions overlap by 0.5 degrees latitude (approximately 56 km).",
+    "format": "pbf",
+    "json": "{\"vector_layers\": [{\"id\": \"grid_10km\", \"fields\": {\"axis\": \"String\", \"label\": \"String\", \"metres\": \"Number\"}, \"minzoom\": 10, \"maxzoom\": 14}, {\"id\": \"grid_1km\", \"fields\": {\"axis\": \"String\", \"label\": \"String\", \"metres\": \"Number\"}, \"minzoom\": 12, \"maxzoom\": 14}]}",
+    "maxzoom": "14",
+    "minzoom": "10",
+    "name": "ETRS89 / UTM 33N",
+    "type": "baselayer",
+    "version": "2.0.0"
+  },
+  "note": "Feature instances include repetition across tiles and zooms; not unique OSM objects. This checks MVT framing and layer presence, not geometry or cartographic correctness.",
+  "tiles_by_zoom": {
+    "10": 2256,
+    "11": 8299,
+    "12": 35040,
+    "13": 139389,
+    "14": 552709
+  }
+}

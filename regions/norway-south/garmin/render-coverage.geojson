@@ -1,0 +1,39 @@
+{
+  "features": [
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              13.5,
+              57.8
+            ],
+            [
+              13.5,
+              63.5
+            ],
+            [
+              4.0,
+              63.5
+            ],
+            [
+              4.0,
+              57.8
+            ],
+            [
+              13.5,
+              57.8
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "properties": {
+        "purpose": "Limit opaque native background and land-cover polygons; retain complete accepted OSM and terrain inputs",
+        "region": "norway-south"
+      },
+      "type": "Feature"
+    }
+  ],
+  "type": "FeatureCollection"
+}

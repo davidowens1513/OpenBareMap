@@ -1,0 +1,30 @@
+{
+  "areaSquareDegrees": 54.0,
+  "bounds": [
+    7.0,
+    63.0,
+    19.0,
+    67.5
+  ],
+  "entireRequestedFootprintCovered": true,
+  "exactFootprint": null,
+  "inputs": [
+    {
+      "bytes": 8014,
+      "path": "data/regions/norway-central/norway.poly",
+      "sha256": "bf08b7f9f070e62d1b64b8950c05dbefaa77bba7c0637394acecb4a959d493b4",
+      "url": "https://download.geofabrik.de/europe/norway.poly"
+    }
+  ],
+  "knownDestinationsCovered": [
+    "island",
+    "trondheim",
+    "namsos",
+    "bronnoysund",
+    "mo-i-rana",
+    "bodo"
+  ],
+  "operation": "Requested rectangular crop; source outlines cover all destination anchors",
+  "polygons": 1,
+  "sha256": "5cd401817a88394d54c3f21cf9649463306dbbd351ae6858ada2e6414738c606"
+}

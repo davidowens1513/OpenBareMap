@@ -1,0 +1,52 @@
+{
+  "contourIntervalMetres": 20,
+  "coverage": "Trondheim, Trondelag and the Helgeland coast through Bodo. Mainland Norway and coastal islands only; excludes Svalbard and Jan Mayen. Adjacent editions overlap by 0.5 degrees latitude (approximately 56 km).",
+  "datasets": {
+    "basemap": {
+      "bytes": 736968704,
+      "path": "releases/norway-central/2.0.0/maps/basemap.mbtiles",
+      "sha256": "296a88fbf030a86bebc326086d447af0c97f9cced2daea13df616822f0ba40f2",
+      "validation": {
+        "empty_tile_count": 4067,
+        "logical_tiles_sha256": "efdee1cefcf277bc40b7b6eb52e738b0c60ff80fd0bf6e91a509bf34e22e1eb1",
+        "tile_count": 107563
+      }
+    },
+    "grid": {
+      "bytes": 98091008,
+      "path": "releases/norway-central/2.0.0/maps/grid.mbtiles",
+      "sha256": "7ae56ec1ba7b4b4b971b0be48339c2f0aed491fe77d36121db5d2455fb8ea408",
+      "validation": {
+        "empty_tile_count": 0,
+        "logical_tiles_sha256": "3914aecf4092a8a6f4b6d441c28cb89a9688167a41909c066a47059ed5e999e2",
+        "tile_count": 358310
+      }
+    },
+    "hillshade": {
+      "bytes": 373518336,
+      "path": "releases/norway-central/2.0.0/maps/hillshade.mbtiles",
+      "sha256": "7037b3a7a5b60f633bf3f8162e1ccb006e59dc9966e828abb90ec2763942f356",
+      "validation": {
+        "empty_tile_count": 0,
+        "logical_tiles_sha256": "b2ee80bd2b708b3d340182aa395c8529621fab12ed8b476d4b240c555ef45617",
+        "tile_count": 16242
+      }
+    },
+    "topography": {
+      "bytes": 747765760,
+      "path": "releases/norway-central/2.0.0/maps/topography.mbtiles",
+      "sha256": "08b25ed192709d74e48184846f2973a7a04e44ebc61dacf0234348b69f58ba80",
+      "validation": {
+        "empty_tile_count": 289363,
+        "logical_tiles_sha256": "38c7e1ac84ac5b00b7248effe983426883ac5b632b70ecf72c751a52ff07e38e",
+        "tile_count": 526772
+      }
+    }
+  },
+  "format": "openbaremap-development-viewer-v1",
+  "localBorders": false,
+  "mapVersion": "2.0.0",
+  "region": "norway-central",
+  "storageRevision": "2.0.0-norway-central-r1",
+  "styleRevision": "2.0.0-norway-central-r1"
+}

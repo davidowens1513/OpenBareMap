@@ -5,6 +5,9 @@
     "england-wales": "2.0.1",
     "faroe-islands": "2.0.0",
     "ireland": "2.0.0",
+    "norway-central": "2.0.0",
+    "norway-north": "2.0.0",
+    "norway-south": "2.0.0",
     "pyrenees": "2.0.0",
     "scotland": "2.0.0",
     "sierra-nevada": "2.0.0"
@@ -290,6 +293,216 @@
         "url": "https://downloads.appsbyonzy.dev/OpenBareMap/ireland/2.0.0/app-bundles-v1/ios/OpenBareMap-Ireland-iOS-Bundle.zip"
       }
     },
+    "norway-central": {
+      "android": {
+        "bytes": 1987872026,
+        "datasets": {
+          "basemap": {
+            "path": "maps/basemap.mbtiles",
+            "sha256": "296a88fbf030a86bebc326086d447af0c97f9cced2daea13df616822f0ba40f2"
+          },
+          "coast": {
+            "derivedFrom": "0fa7d7486c22091de3e0401dc6d7562d9a7c16f26bfab259b5d5df029f7656c1",
+            "path": "maps/coast.mbtiles",
+            "sha256": "10a355b999d4616728b5dfe570ad853a4180d1350e1bfa574733829aa96768c9"
+          },
+          "grid": {
+            "path": "maps/grid.mbtiles",
+            "sha256": "7ae56ec1ba7b4b4b971b0be48339c2f0aed491fe77d36121db5d2455fb8ea408"
+          },
+          "hillshade": {
+            "path": "maps/hillshade.mbtiles",
+            "sha256": "7037b3a7a5b60f633bf3f8162e1ccb006e59dc9966e828abb90ec2763942f356"
+          },
+          "topography": {
+            "path": "maps/topography.mbtiles",
+            "sha256": "0fa7d7486c22091de3e0401dc6d7562d9a7c16f26bfab259b5d5df029f7656c1"
+          }
+        },
+        "instructionsSHA256": "3ed7029e09f4fdac320c25239b6352080e4a80cca06ca7cc6d820d4b23bc7d72",
+        "instructionsURL": "https://downloads.appsbyonzy.dev/OpenBareMap/norway-central/2.0.0/app-bundles-v1/android/instructions.txt",
+        "localPath": "releases/norway-central/2.0.0/app-bundles-v1/android/OpenBareMap-Norway-Central-Android-Bundle.zip",
+        "mapManifestSHA256": "a0dea9e69a3990a345920431fbf9dca1477509ffbe56547fd8056bcaf06cdecd",
+        "r2Key": "OpenBareMap/norway-central/2.0.0/app-bundles-v1/android/OpenBareMap-Norway-Central-Android-Bundle.zip",
+        "sha256": "e9cb4a0d0286346105438dc4ae9e842d84e74df86b48e3c12771262df08932d3",
+        "url": "https://downloads.appsbyonzy.dev/OpenBareMap/norway-central/2.0.0/app-bundles-v1/android/OpenBareMap-Norway-Central-Android-Bundle.zip"
+      },
+      "ios": {
+        "bytes": 1987871773,
+        "datasets": {
+          "basemap": {
+            "path": "maps/basemap.mbtiles",
+            "sha256": "296a88fbf030a86bebc326086d447af0c97f9cced2daea13df616822f0ba40f2"
+          },
+          "coast": {
+            "derived_from": "0fa7d7486c22091de3e0401dc6d7562d9a7c16f26bfab259b5d5df029f7656c1",
+            "maxzoom": 12,
+            "operation": "Preserve land-layer MVT bytes only through zoom 12; omit other layers.",
+            "path": "maps/coast.mbtiles",
+            "sha256": "10a355b999d4616728b5dfe570ad853a4180d1350e1bfa574733829aa96768c9"
+          },
+          "grid": {
+            "path": "maps/grid.mbtiles",
+            "sha256": "7ae56ec1ba7b4b4b971b0be48339c2f0aed491fe77d36121db5d2455fb8ea408"
+          },
+          "hillshade": {
+            "path": "maps/hillshade.mbtiles",
+            "sha256": "7037b3a7a5b60f633bf3f8162e1ccb006e59dc9966e828abb90ec2763942f356"
+          },
+          "topography": {
+            "path": "maps/topography.mbtiles",
+            "sha256": "0fa7d7486c22091de3e0401dc6d7562d9a7c16f26bfab259b5d5df029f7656c1"
+          }
+        },
+        "instructionsSHA256": "fac2b44bff0593134343cb565489cde8fdb3529b5d05a504743d747b6b3b170b",
+        "instructionsURL": "https://downloads.appsbyonzy.dev/OpenBareMap/norway-central/2.0.0/app-bundles-v1/ios/instructions.txt",
+        "localPath": "releases/norway-central/2.0.0/app-bundles-v1/ios/OpenBareMap-Norway-Central-iOS-Bundle.zip",
+        "mapManifestSHA256": "dd4f871bc4f333bd4362b021bf34308bc2faa46d4e4c2a91d8a2b612986b9928",
+        "r2Key": "OpenBareMap/norway-central/2.0.0/app-bundles-v1/ios/OpenBareMap-Norway-Central-iOS-Bundle.zip",
+        "sha256": "1f44d514ccc18ebd4ac6a6e8a46a7bb3ee13b6c18901cfd632d2803d397440a8",
+        "url": "https://downloads.appsbyonzy.dev/OpenBareMap/norway-central/2.0.0/app-bundles-v1/ios/OpenBareMap-Norway-Central-iOS-Bundle.zip"
+      }
+    },
+    "norway-north": {
+      "android": {
+        "bytes": 2603150735,
+        "datasets": {
+          "basemap": {
+            "path": "maps/basemap.mbtiles",
+            "sha256": "4b58b5354e3857a6dd6895a8a97fe3ed17c5440b0789497ba95f9db223f6e013"
+          },
+          "coast": {
+            "derivedFrom": "cce406cc6b417072024b05dd91f7cb1bebcdbe6a594e6b5c227d3bea46cc1566",
+            "path": "maps/coast.mbtiles",
+            "sha256": "be0b78758f245c0ca1c2b02d4d2249e26d436dafc1d406d6cb3eabdaa6b3e370"
+          },
+          "grid": {
+            "path": "maps/grid.mbtiles",
+            "sha256": "136e9506681b4ac2aa5c57705f2664a4855b1d79e115359019fea05adfd853b7"
+          },
+          "hillshade": {
+            "path": "maps/hillshade.mbtiles",
+            "sha256": "c9dbd22c65fba6f1b3bef7c0254d89421d0cedca7cec4407af3ff75bb0c3693b"
+          },
+          "topography": {
+            "path": "maps/topography.mbtiles",
+            "sha256": "cce406cc6b417072024b05dd91f7cb1bebcdbe6a594e6b5c227d3bea46cc1566"
+          }
+        },
+        "instructionsSHA256": "e92041b11a138bae745df3f90e42bebd173360bfc2d13450a9a54f8b97297bb5",
+        "instructionsURL": "https://downloads.appsbyonzy.dev/OpenBareMap/norway-north/2.0.0/app-bundles-v1/android/instructions.txt",
+        "localPath": "releases/norway-north/2.0.0/app-bundles-v1/android/OpenBareMap-Norway-North-Android-Bundle.zip",
+        "mapManifestSHA256": "6aaaa360af4bf2194d1756c9dbe39ba5b3bfc144fb8e2853925619a39362fe75",
+        "r2Key": "OpenBareMap/norway-north/2.0.0/app-bundles-v1/android/OpenBareMap-Norway-North-Android-Bundle.zip",
+        "sha256": "877fe66f5e1664c50d2b6f6f2fb7c1905abf29a7bfa26887b0aa21691d76f596",
+        "url": "https://downloads.appsbyonzy.dev/OpenBareMap/norway-north/2.0.0/app-bundles-v1/android/OpenBareMap-Norway-North-Android-Bundle.zip"
+      },
+      "ios": {
+        "bytes": 2603150354,
+        "datasets": {
+          "basemap": {
+            "path": "maps/basemap.mbtiles",
+            "sha256": "4b58b5354e3857a6dd6895a8a97fe3ed17c5440b0789497ba95f9db223f6e013"
+          },
+          "coast": {
+            "derived_from": "cce406cc6b417072024b05dd91f7cb1bebcdbe6a594e6b5c227d3bea46cc1566",
+            "maxzoom": 12,
+            "operation": "Preserve land-layer MVT bytes only through zoom 12; omit other layers.",
+            "path": "maps/coast.mbtiles",
+            "sha256": "be0b78758f245c0ca1c2b02d4d2249e26d436dafc1d406d6cb3eabdaa6b3e370"
+          },
+          "grid": {
+            "path": "maps/grid.mbtiles",
+            "sha256": "136e9506681b4ac2aa5c57705f2664a4855b1d79e115359019fea05adfd853b7"
+          },
+          "hillshade": {
+            "path": "maps/hillshade.mbtiles",
+            "sha256": "c9dbd22c65fba6f1b3bef7c0254d89421d0cedca7cec4407af3ff75bb0c3693b"
+          },
+          "topography": {
+            "path": "maps/topography.mbtiles",
+            "sha256": "cce406cc6b417072024b05dd91f7cb1bebcdbe6a594e6b5c227d3bea46cc1566"
+          }
+        },
+        "instructionsSHA256": "83615b9f8fa151fb4fefe287313bbcad3db3f847fdcb81c87723bf1dad03b807",
+        "instructionsURL": "https://downloads.appsbyonzy.dev/OpenBareMap/norway-north/2.0.0/app-bundles-v1/ios/instructions.txt",
+        "localPath": "releases/norway-north/2.0.0/app-bundles-v1/ios/OpenBareMap-Norway-North-iOS-Bundle.zip",
+        "mapManifestSHA256": "991c0804df8e4214a879c919435da0b3591d90f8bd9c4592354263820a5bc425",
+        "r2Key": "OpenBareMap/norway-north/2.0.0/app-bundles-v1/ios/OpenBareMap-Norway-North-iOS-Bundle.zip",
+        "sha256": "fc7c05d7d9816a101c3f18ac5c535c76c5f3d7e23b462c1698e5a82f0eb98fa5",
+        "url": "https://downloads.appsbyonzy.dev/OpenBareMap/norway-north/2.0.0/app-bundles-v1/ios/OpenBareMap-Norway-North-iOS-Bundle.zip"
+      }
+    },
+    "norway-south": {
+      "android": {
+        "bytes": 3942754272,
+        "datasets": {
+          "basemap": {
+            "path": "maps/basemap.mbtiles",
+            "sha256": "9854dddb055031c780862a836b6230f00e927e3fd76106a9e7ff9c444b9bf6ec"
+          },
+          "coast": {
+            "derivedFrom": "65d1e55fa72ce99033889d095699d39c3b7c78c62b990235c2d4b4720c0d20f6",
+            "path": "maps/coast.mbtiles",
+            "sha256": "1e3d71f403b4ccdefca8046edd92155ea4c186ea3b013a862a9bf0a7387c124d"
+          },
+          "grid": {
+            "path": "maps/grid.mbtiles",
+            "sha256": "7c3af0634f7e98d5c1f517e6c99688d6b9cac081dc9e0601244a5fa8a13da370"
+          },
+          "hillshade": {
+            "path": "maps/hillshade.mbtiles",
+            "sha256": "c3d176ec559db476ff8bfc53f0ff5ab6844e08560aaea6bee2021f0313843191"
+          },
+          "topography": {
+            "path": "maps/topography.mbtiles",
+            "sha256": "65d1e55fa72ce99033889d095699d39c3b7c78c62b990235c2d4b4720c0d20f6"
+          }
+        },
+        "instructionsSHA256": "a2a1b52d57e151441a9ad5ab8d8825a0737d31881d9985bbce37e95f3c159582",
+        "instructionsURL": "https://downloads.appsbyonzy.dev/OpenBareMap/norway-south/2.0.0/app-bundles-v1/android/instructions.txt",
+        "localPath": "releases/norway-south/2.0.0/app-bundles-v1/android/OpenBareMap-Norway-South-Android-Bundle.zip",
+        "mapManifestSHA256": "e0e652ad1b79da4a33cf6316f2582965231efa3535f2a5ef430d51c8b1c88beb",
+        "r2Key": "OpenBareMap/norway-south/2.0.0/app-bundles-v1/android/OpenBareMap-Norway-South-Android-Bundle.zip",
+        "sha256": "25f5227f88969e79758f504a9c92b4b0147c7324e4a26149533185ac06242ae0",
+        "url": "https://downloads.appsbyonzy.dev/OpenBareMap/norway-south/2.0.0/app-bundles-v1/android/OpenBareMap-Norway-South-Android-Bundle.zip"
+      },
+      "ios": {
+        "bytes": 3942753891,
+        "datasets": {
+          "basemap": {
+            "path": "maps/basemap.mbtiles",
+            "sha256": "9854dddb055031c780862a836b6230f00e927e3fd76106a9e7ff9c444b9bf6ec"
+          },
+          "coast": {
+            "derived_from": "65d1e55fa72ce99033889d095699d39c3b7c78c62b990235c2d4b4720c0d20f6",
+            "maxzoom": 12,
+            "operation": "Preserve land-layer MVT bytes only through zoom 12; omit other layers.",
+            "path": "maps/coast.mbtiles",
+            "sha256": "1e3d71f403b4ccdefca8046edd92155ea4c186ea3b013a862a9bf0a7387c124d"
+          },
+          "grid": {
+            "path": "maps/grid.mbtiles",
+            "sha256": "7c3af0634f7e98d5c1f517e6c99688d6b9cac081dc9e0601244a5fa8a13da370"
+          },
+          "hillshade": {
+            "path": "maps/hillshade.mbtiles",
+            "sha256": "c3d176ec559db476ff8bfc53f0ff5ab6844e08560aaea6bee2021f0313843191"
+          },
+          "topography": {
+            "path": "maps/topography.mbtiles",
+            "sha256": "65d1e55fa72ce99033889d095699d39c3b7c78c62b990235c2d4b4720c0d20f6"
+          }
+        },
+        "instructionsSHA256": "f74537bd2c8960e74bbafa842f33cad387eb04885d5a10fc11d480f39d5b71a1",
+        "instructionsURL": "https://downloads.appsbyonzy.dev/OpenBareMap/norway-south/2.0.0/app-bundles-v1/ios/instructions.txt",
+        "localPath": "releases/norway-south/2.0.0/app-bundles-v1/ios/OpenBareMap-Norway-South-iOS-Bundle.zip",
+        "mapManifestSHA256": "852485f5f9cf8a6e19e610221161945636f23710ae2a21b12c9c5c67573722eb",
+        "r2Key": "OpenBareMap/norway-south/2.0.0/app-bundles-v1/ios/OpenBareMap-Norway-South-iOS-Bundle.zip",
+        "sha256": "696abbaa55ee6a14e341a99305205d828b91d9ea9525bb9f22169caa2cb1a1fc",
+        "url": "https://downloads.appsbyonzy.dev/OpenBareMap/norway-south/2.0.0/app-bundles-v1/ios/OpenBareMap-Norway-South-iOS-Bundle.zip"
+      }
+    },
     "pyrenees": {
       "android": {
         "bytes": 1736453122,
@@ -501,5 +714,5 @@
       }
     }
   },
-  "sourceCommit": "8f770fa5b833d7f51c2e579f9285ec01d83570df"
+  "sourceCommit": "8d3e02d7686b31841a526f01df779ed6baa304c2"
 }

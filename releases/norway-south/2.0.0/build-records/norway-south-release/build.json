@@ -1,0 +1,138 @@
+{
+  "builderSHA256": "1b93ac2e197f49d1649274b7cd12f28497f2e7821852cdc972a5f2a580f590f6",
+  "geometryReport": {
+    "builderSHA256": "c6af7bb693042e99a511b7527644ad79605ccf5515b172f9653cdef5bb10789f",
+    "contoursSourceSHA256": "d98810b9f2df84d394ad96ff6b326ad022c92c684beb76ccbd66e49a84816ff5",
+    "counts": {
+      "contours": 627556,
+      "grid": {
+        "grid_10km": 130,
+        "grid_1km": 1282
+      },
+      "landcover": {
+        "empty_source_areas": [
+          {
+            "area_id": 9658757,
+            "outer_ring_sizes": [],
+            "reason": "invalid area (area_id=9658757)"
+          },
+          {
+            "area_id": 17208303,
+            "outer_ring_sizes": [],
+            "reason": "invalid area (area_id=17208303)"
+          },
+          {
+            "area_id": 23698411,
+            "outer_ring_sizes": [],
+            "reason": "invalid area (area_id=23698411)"
+          },
+          {
+            "area_id": 19670915,
+            "outer_ring_sizes": [],
+            "reason": "invalid area (area_id=19670915)"
+          },
+          {
+            "area_id": 32765731,
+            "outer_ring_sizes": [],
+            "reason": "invalid area (area_id=32765731)"
+          },
+          {
+            "area_id": 32765999,
+            "outer_ring_sizes": [],
+            "reason": "invalid area (area_id=32765999)"
+          }
+        ],
+        "features": 936875,
+        "retained": 32646,
+        "smoothed": 904229
+      }
+    },
+    "osm": {
+      "bytes": 856359431,
+      "operation": "Complete-feature bbox extraction with nested relation references",
+      "path": "data/regions/norway-south/norway-261113.osm.clipped.osm.pbf",
+      "replicationTimestamp": "2026-11-13T21:22:20Z",
+      "sha256": "d7ba66a94bba227d2bdbeb54a257c4e0ccba11d78b37c57429a787ecb2ae48e8",
+      "snapshot_date": "2026-11-13",
+      "url": "https://download.geofabrik.de/europe/norway-261113.osm.pbf"
+    },
+    "outputs": {
+      "contours.geojson": "d3f680ad1038cea882471a96599496024201383bbec0ebf13f212caf6fe75f76",
+      "grid_10km.geojson": "83b5ebc7e4029e760c9cde39bf579d7adb5bac462692b23d132b1cda908830e6",
+      "grid_1km.geojson": "c957231f4af7a52194e97f745f7d42fd7d55a6fdf4afa7922a2e6134bd2a151e",
+      "landcover.geojson": "015da8ae3360aa35ee7472de83dd1afe1b7238813f41df2ae12e94a82c5802a4"
+    },
+    "region": "norway-south",
+    "smootherSHA256": "7581d024dc1c1bec931642c7201db149bf64a64c814c451fa8bf37a0881ea6c9"
+  },
+  "outputs": {
+    "basemap": {
+      "bytes": 1989734400,
+      "path": "releases/norway-south/2.0.0/maps/basemap.mbtiles",
+      "sha256": "9854dddb055031c780862a836b6230f00e927e3fd76106a9e7ff9c444b9bf6ec",
+      "validation": {
+        "empty_tile_count": 5005,
+        "logical_tiles_sha256": "c058a6a30d78664c73860ab2f26328c394f23c1cd9c6c56c8765b132e2ee8f34",
+        "tile_count": 208338
+      }
+    },
+    "grid": {
+      "bytes": 96272384,
+      "path": "releases/norway-south/2.0.0/maps/grid.mbtiles",
+      "sha256": "7c3af0634f7e98d5c1f517e6c99688d6b9cac081dc9e0601244a5fa8a13da370",
+      "validation": {
+        "empty_tile_count": 0,
+        "logical_tiles_sha256": "1b461410d407c4362ac03a4dd12e4187c2140aa65dba6d4da781f1c885429baf",
+        "tile_count": 307205
+      }
+    },
+    "hillshade": {
+      "bytes": 574705664,
+      "path": "releases/norway-south/2.0.0/maps/hillshade.mbtiles",
+      "sha256": "c3d176ec559db476ff8bfc53f0ff5ab6844e08560aaea6bee2021f0313843191",
+      "validation": {
+        "empty_tile_count": 0,
+        "logical_tiles_sha256": "fb32a31aa4ed92da2a904655ed4421198af5bf2d76c792df11d9a59596c66704",
+        "tile_count": 18316
+      }
+    },
+    "topography": {
+      "bytes": 1247666176,
+      "path": "releases/norway-south/2.0.0/maps/topography.mbtiles",
+      "sha256": "a5d96b168da5cb3f77768ab68d52250b2b14af83ba94739724de319c114f521c",
+      "validation": {
+        "empty_tile_count": 214623,
+        "logical_tiles_sha256": "26bd01acf1883149a63acd522f498ca5b3dafbf45c5a88d57169dbf184f4865c",
+        "tile_count": 458942
+      }
+    }
+  },
+  "region": "norway-south",
+  "replacements": {
+    "basemap": {
+      "changed_tiles": 169637,
+      "path": "build/norway-south-release/basemap-smoothed.mbtiles",
+      "replacement_feature_instances": 8425021,
+      "sha256": "93a5f4bda9804a7d49f4ddaa66923313ed22fa7b69f4c0566c80e61e0d425239",
+      "unchanged_other_layers_sha256": "d03f5de446115b61bede3c6a5d1ef0d15c88c34595169d3e41d6d1886e50699d",
+      "validation": {
+        "empty_tile_count": 5005,
+        "logical_tiles_sha256": "274acec62287c39eae6c01a5c635ac8545fc062337291f547c40f3d872491426",
+        "tile_count": 208338
+      }
+    },
+    "topography": {
+      "changed_tiles": 267547,
+      "path": "build/norway-south-release/topography-smoothed.mbtiles",
+      "replacement_feature_instances": 6318122,
+      "sha256": "13b93f9446e96f61a5c31509c2dbf949354e858b6f370c3368632bec22e29420",
+      "unchanged_other_layers_sha256": "b5893ee5da74b3a0e0be9c6e422096bd61057cd0cd730c4dcab3dc25c37d0895",
+      "validation": {
+        "empty_tile_count": 214623,
+        "logical_tiles_sha256": "6898cac5b33be39972b4f892e3d49f53b8c578ebb7ce2e87ccd70355c0f7ca2f",
+        "tile_count": 458942
+      }
+    }
+  },
+  "status": "built and structurally validated; visual/device review pending"
+}

@@ -1,0 +1,75 @@
+{
+  "layers": {
+    "contour": {
+      "maxzoom": 14,
+      "minzoom": 8,
+      "simplify_below": 13,
+      "simplify_level": 1e-05,
+      "source": "/Volumes/Extreme SSD/Projects/OpenBareMap/build/norway-south-geometry/contours.geojson",
+      "source_columns": [
+        "elevation"
+      ]
+    },
+    "grid_10km": {
+      "maxzoom": 14,
+      "minzoom": 10,
+      "source": "/Volumes/Extreme SSD/Projects/OpenBareMap/build/norway-south-geometry/grid_10km.geojson",
+      "source_columns": [
+        "label",
+        "metres",
+        "axis"
+      ]
+    },
+    "grid_1km": {
+      "maxzoom": 14,
+      "minzoom": 12,
+      "source": "/Volumes/Extreme SSD/Projects/OpenBareMap/build/norway-south-geometry/grid_1km.geojson",
+      "source_columns": [
+        "label",
+        "metres",
+        "axis"
+      ]
+    },
+    "landcover": {
+      "maxzoom": 14,
+      "minzoom": 4,
+      "simplify_below": 14,
+      "simplify_level": 8e-06,
+      "simplify_ratio": 2,
+      "source": "/Volumes/Extreme SSD/Projects/OpenBareMap/build/norway-south-geometry/landcover.geojson",
+      "source_columns": [
+        "class",
+        "wetland",
+        "natural",
+        "landuse",
+        "name",
+        "name_en",
+        "name_cy",
+        "name_gd",
+        "name_es",
+        "name_fr",
+        "name_it",
+        "name_de",
+        "name_fo",
+        "official_name",
+        "short_name"
+      ]
+    }
+  },
+  "settings": {
+    "basezoom": 14,
+    "bounding_box": [
+      4.0,
+      57.8,
+      13.5,
+      63.5
+    ],
+    "compress": "gzip",
+    "description": "Southern coast through Trondheim; includes Oslo, Stavanger, Bergen, Hardangervidda, Jotunheimen and the southern fjords. Mainland Norway and coastal islands only; excludes Svalbard and Jan Mayen. Adjacent editions overlap by 0.5 degrees latitude (approximately 56 km).",
+    "include_ids": false,
+    "maxzoom": 14,
+    "minzoom": 4,
+    "name": "OpenBareMap Southern Norway geometry",
+    "version": "2.0.0"
+  }
+}

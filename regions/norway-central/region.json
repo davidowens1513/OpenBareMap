@@ -1,0 +1,156 @@
+{
+  "id": "norway-central",
+  "name": "OpenBareMap Central Norway",
+  "label": "Central Norway",
+  "mapVersion": "2.0.0",
+  "minzoom": 4,
+  "maxzoom": 14,
+  "coverage": "Trondheim, Trondelag and the Helgeland coast through Bodo. Mainland Norway and coastal islands only; excludes Svalbard and Jan Mayen. Adjacent editions overlap by 0.5 degrees latitude (approximately 56 km).",
+  "bounds": [
+    7.0,
+    63.0,
+    19.0,
+    67.5
+  ],
+  "terrainBounds": [
+    7,
+    63,
+    19,
+    68
+  ],
+  "coastContextBounds": [
+    5,
+    61,
+    21,
+    70
+  ],
+  "projectedCRS": "EPSG:25833",
+  "gridCRS": "EPSG:25833",
+  "gridName": "ETRS89 / UTM 33N",
+  "gridSource": "utm-grid",
+  "gridExtent": [
+    90000,
+    710000,
+    6980000,
+    7510000
+  ],
+  "townlands": false,
+  "contourIntervalMetres": 20,
+  "sourceDate": "2026-11-13",
+  "sourceSlugs": [
+    "norway"
+  ],
+  "sourceBaseURL": "https://download.geofabrik.de/europe/",
+  "sourceBaseOverrides": {},
+  "nativeLanguage": "no",
+  "minorWaterwayMinzoom": 10,
+  "clipBasemap": true,
+  "clipSource": true,
+  "garminFamilyId": 4840,
+  "garminTileStartId": 48400001,
+  "garminFilename": "OpenBareMap-Norway-Central.img",
+  "garminPackageRevision": "2.0.1-trail-detail-r1",
+  "styleRevision": "2.0.0-norway-central-r1",
+  "garminContextBounds": [
+    7.0,
+    63.0,
+    19.0,
+    67.5
+  ],
+  "inspectionNames": [
+    "Trondheim",
+    "Bodø"
+  ],
+  "destinations": {
+    "island": [
+      13,
+      65.2,
+      6
+    ],
+    "trondheim": [
+      10.3951,
+      63.4305,
+      11
+    ],
+    "namsos": [
+      11.4957,
+      64.4662,
+      11
+    ],
+    "bronnoysund": [
+      12.199,
+      65.474,
+      12
+    ],
+    "mo-i-rana": [
+      14.1428,
+      66.3128,
+      11
+    ],
+    "bodo": [
+      14.4049,
+      67.2804,
+      11
+    ]
+  },
+  "destinationLabels": {
+    "island": "Central Norway",
+    "trondheim": "Trondheim",
+    "namsos": "Namsos",
+    "bronnoysund": "Brønnøysund",
+    "mo-i-rana": "Mo i Rana",
+    "bodo": "Bodø"
+  },
+  "terrainProvider": "copernicus-glo30",
+  "terrainAttribution": "Copernicus DEM GLO-30 · European Union / ESA · DLR / Airbus",
+  "ignoreSourceHeaderBounds": true,
+  "terrainNotice": "Central Norway elevation: Copernicus DEM GLO-30 Public (AWS 2021 release).\n\nproduced using Copernicus WorldDEM-30 © DLR e.V. 2010-2014 and © Airbus Defence and Space GmbH 2014-2018 provided under COPERNICUS by the European Union and ESA; all rights reserved\n\nThe organisations in charge of the Copernicus programme by law or by delegation do not incur any liability for any use of the Copernicus WorldDEM-30.\n\nLicense: https://dataspace.copernicus.eu/sites/default/files/media/files/2025-06/copernicus_contributing_mission_data_access_v2_cop_dem_licenses.pdf\nSource: https://registry.opendata.aws/copernicus-dem/\nVertical datum: EGM2008 orthometric metres. Native approximately 30 m cells are bilinearly resampled to point-aligned Int16 HGT for the shared terrain pipeline. Ocean-only cells absent from the official public inventory are zero.\n",
+  "garminCoverageBounds": [
+    7.0,
+    63.0,
+    19.0,
+    67.5
+  ],
+  "sourceCacheRegion": "norway",
+  "alignedTerrainPixels": true,
+  "overviewLandAnchors": {
+    "trondheim": [
+      10.3951,
+      63.4305
+    ],
+    "namsos": [
+      11.4957,
+      64.4662
+    ],
+    "bronnoysund": [
+      12.215,
+      65.475
+    ],
+    "mo-i-rana": [
+      14.1428,
+      66.3128
+    ],
+    "bodo": [
+      14.4049,
+      67.2804
+    ]
+  },
+  "landValidationNotes": {
+    "bronnoysund": "The town-centre probe is on source land but falls outside its quantized coast at zooms 4 and 5. Use an inland town point for overview checks; retain the Explore coordinate."
+  },
+  "islandValidationAnchors": {
+    "bronnoysund-detailed-town-centre": [
+      12.199,
+      65.474
+    ]
+  },
+  "islandValidationZooms": [
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ]
+}

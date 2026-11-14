@@ -1,0 +1,1540 @@
+<VRTDataset rasterXSize="104400" rasterYSize="57601">
+  <SRS dataAxisToSRSAxisMapping="2,1">GEOGCS["WGS 84",DATUM["WGS_1984",SPHEROID["WGS 84",6378137,298.257223563,AUTHORITY["EPSG","7030"]],AUTHORITY["EPSG","6326"]],PRIMEM["Greenwich",0,AUTHORITY["EPSG","8901"]],UNIT["degree",0.0174532925199433,AUTHORITY["EPSG","9122"]],AXIS["Latitude",NORTH],AXIS["Longitude",EAST],AUTHORITY["EPSG","4326"]]</SRS>
+  <GeoTransform>  3.9997222222222222e+00,  2.7777777777777778e-04,  0.0000000000000000e+00,  7.2000277777777782e+01,  0.0000000000000000e+00, -2.7777777777777778e-04</GeoTransform>
+  <VRTRasterBand dataType="Float32" band="1">
+    <ColorInterp>Gray</ColorInterp>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="0">/Volumes/Extreme SSD/Projects/OpenBareMap/data/regions/norway-south/copernicus/Copernicus_DSM_COG_10_N56_00_E008_00_DEM.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="2400" RasterYSize="3600" DataType="Float32" BlockXSize="1024" BlockYSize="1024" />
+      <SrcRect xOff="0" yOff="0" xSize="2400" ySize="3600" />
+      <DstRect xOff="14400.25" yOff="54000.5" xSize="3600" ySize="3600" />
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="0">/Volumes/Extreme SSD/Projects/OpenBareMap/data/regions/norway-south/copernicus/Copernicus_DSM_COG_10_N56_00_E009_00_DEM.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="2400" RasterYSize="3600" DataType="Float32" BlockXSize="1024" BlockYSize="1024" />
+      <SrcRect xOff="0" yOff="0" xSize="2400" ySize="3600" />
+      <DstRect xOff="18000.25" yOff="54000.5" xSize="3600" ySize="3600" />
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="0">/Volumes/Extreme SSD/Projects/OpenBareMap/data/regions/norway-south/copernicus/Copernicus_DSM_COG_10_N56_00_E010_00_DEM.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="2400" RasterYSize="3600" DataType="Float32" BlockXSize="1024" BlockYSize="1024" />
+      <SrcRect xOff="0" yOff="0" xSize="2400" ySize="3600" />
+      <DstRect xOff="21600.25" yOff="54000.5" xSize="3600" ySize="3600" />
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="0">/Volumes/Extreme SSD/Projects/OpenBareMap/data/regions/norway-south/copernicus/Copernicus_DSM_COG_10_N56_00_E011_00_DEM.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="2400" RasterYSize="3600" DataType="Float32" BlockXSize="1024" BlockYSize="1024" />
+      <SrcRect xOff="0" yOff="0" xSize="2400" ySize="3600" />
+      <DstRect xOff="25200.25" yOff="54000.5" xSize="3600" ySize="3600" />
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="0">/Volumes/Extreme SSD/Projects/OpenBareMap/data/regions/norway-south/copernicus/Copernicus_DSM_COG_10_N56_00_E012_00_DEM.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="2400" RasterYSize="3600" DataType="Float32" BlockXSize="1024" BlockYSize="1024" />
+      <SrcRect xOff="0" yOff="0" xSize="2400" ySize="3600" />
+      <DstRect xOff="28800.25" yOff="54000.5" xSize="3600" ySize="3600" />
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="0">/Volumes/Extreme SSD/Projects/OpenBareMap/data/regions/norway-south/copernicus/Copernicus_DSM_COG_10_N56_00_E013_00_DEM.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="2400" RasterYSize="3600" DataType="Float32" BlockXSize="1024" BlockYSize="1024" />
+      <SrcRect xOff="0" yOff="0" xSize="2400" ySize="3600" />
+      <DstRect xOff="32400.25" yOff="54000.5" xSize="3600" ySize="3600" />
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="0">/Volumes/Extreme SSD/Projects/OpenBareMap/data/regions/norway-south/copernicus/Copernicus_DSM_COG_10_N56_00_E014_00_DEM.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="2400" RasterYSize="3600" DataType="Float32" BlockXSize="1024" BlockYSize="1024" />
+      <SrcRect xOff="0" yOff="0" xSize="2400" ySize="3600" />
+      <DstRect xOff="36000.25" yOff="54000.5" xSize="3600" ySize="3600" />
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="0">/Volumes/Extreme SSD/Projects/OpenBareMap/data/regions/norway-south/copernicus/Copernicus_DSM_COG_10_N57_00_E006_00_DEM.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="2400" RasterYSize="3600" DataType="Float32" BlockXSize="1024" BlockYSize="1024" />
+      <SrcRect xOff="0" yOff="0" xSize="2400" ySize="3600" />
+      <DstRect xOff="7200.25" yOff="50400.5" xSize="3600" ySize="3600" />
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="0">/Volumes/Extreme SSD/Projects/OpenBareMap/data/regions/norway-south/copernicus/Copernicus_DSM_COG_10_N57_00_E007_00_DEM.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="2400" RasterYSize="3600" DataType="Float32" BlockXSize="1024" BlockYSize="1024" />
+      <SrcRect xOff="0" yOff="0" xSize="2400" ySize="3600" />
+      <DstRect xOff="10800.25" yOff="50400.5" xSize="3600" ySize="3600" />
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="0">/Volumes/Extreme SSD/Projects/OpenBareMap/data/regions/norway-south/copernicus/Copernicus_DSM_COG_10_N57_00_E008_00_DEM.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="2400" RasterYSize="3600" DataType="Float32" BlockXSize="1024" BlockYSize="1024" />
+      <SrcRect xOff="0" yOff="0" xSize="2400" ySize="3600" />
+      <DstRect xOff="14400.25" yOff="50400.5" xSize="3600" ySize="3600" />
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="0">/Volumes/Extreme SSD/Projects/OpenBareMap/data/regions/norway-south/copernicus/Copernicus_DSM_COG_10_N57_00_E009_00_DEM.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="2400" RasterYSize="3600" DataType="Float32" BlockXSize="1024" BlockYSize="1024" />
+      <SrcRect xOff="0" yOff="0" xSize="2400" ySize="3600" />
+      <DstRect xOff="18000.25" yOff="50400.5" xSize="3600" ySize="3600" />
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="0">/Volumes/Extreme SSD/Projects/OpenBareMap/data/regions/norway-south/copernicus/Copernicus_DSM_COG_10_N57_00_E010_00_DEM.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="2400" RasterYSize="3600" DataType="Float32" BlockXSize="1024" BlockYSize="1024" />
+      <SrcRect xOff="0" yOff="0" xSize="2400" ySize="3600" />
+      <DstRect xOff="21600.25" yOff="50400.5" xSize="3600" ySize="3600" />
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="0">/Volumes/Extreme SSD/Projects/OpenBareMap/data/regions/norway-south/copernicus/Copernicus_DSM_COG_10_N57_00_E011_00_DEM.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="2400" RasterYSize="3600" DataType="Float32" BlockXSize="1024" BlockYSize="1024" />
+      <SrcRect xOff="0" yOff="0" xSize="2400" ySize="3600" />
+      <DstRect xOff="25200.25" yOff="50400.5" xSize="3600" ySize="3600" />
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="0">/Volumes/Extreme SSD/Projects/OpenBareMap/data/regions/norway-south/copernicus/Copernicus_DSM_COG_10_N57_00_E012_00_DEM.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="2400" RasterYSize="3600" DataType="Float32" BlockXSize="1024" BlockYSize="1024" />
+      <SrcRect xOff="0" yOff="0" xSize="2400" ySize="3600" />
+      <DstRect xOff="28800.25" yOff="50400.5" xSize="3600" ySize="3600" />
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="0">/Volumes/Extreme SSD/Projects/OpenBareMap/data/regions/norway-south/copernicus/Copernicus_DSM_COG_10_N57_00_E013_00_DEM.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="2400" RasterYSize="3600" DataType="Float32" BlockXSize="1024" BlockYSize="1024" />
+      <SrcRect xOff="0" yOff="0" xSize="2400" ySize="3600" />
+      <DstRect xOff="32400.25" yOff="50400.5" xSize="3600" ySize="3600" />
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="0">/Volumes/Extreme SSD/Projects/OpenBareMap/data/regions/norway-south/copernicus/Copernicus_DSM_COG_10_N57_00_E014_00_DEM.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="2400" RasterYSize="3600" DataType="Float32" BlockXSize="1024" BlockYSize="1024" />
+      <SrcRect xOff="0" yOff="0" xSize="2400" ySize="3600" />
+      <DstRect xOff="36000.25" yOff="50400.5" xSize="3600" ySize="3600" />
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="0">/Volumes/Extreme SSD/Projects/OpenBareMap/data/regions/norway-south/copernicus/Copernicus_DSM_COG_10_N58_00_E005_00_DEM.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="2400" RasterYSize="3600" DataType="Float32" BlockXSize="1024" BlockYSize="1024" />
+      <SrcRect xOff="0" yOff="0" xSize="2400" ySize="3600" />
+      <DstRect xOff="3600.25" yOff="46800.5" xSize="3600" ySize="3600" />
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="0">/Volumes/Extreme SSD/Projects/OpenBareMap/data/regions/norway-south/copernicus/Copernicus_DSM_COG_10_N58_00_E006_00_DEM.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="2400" RasterYSize="3600" DataType="Float32" BlockXSize="1024" BlockYSize="1024" />
+      <SrcRect xOff="0" yOff="0" xSize="2400" ySize="3600" />
+      <DstRect xOff="7200.25" yOff="46800.5" xSize="3600" ySize="3600" />
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="0">/Volumes/Extreme SSD/Projects/OpenBareMap/data/regions/norway-south/copernicus/Copernicus_DSM_COG_10_N58_00_E007_00_DEM.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="2400" RasterYSize="3600" DataType="Float32" BlockXSize="1024" BlockYSize="1024" />
+      <SrcRect xOff="0" yOff="0" xSize="2400" ySize="3600" />
+      <DstRect xOff="10800.25" yOff="46800.5" xSize="3600" ySize="3600" />
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="0">/Volumes/Extreme SSD/Projects/OpenBareMap/data/regions/norway-south/copernicus/Copernicus_DSM_COG_10_N58_00_E008_00_DEM.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="2400" RasterYSize="3600" DataType="Float32" BlockXSize="1024" BlockYSize="1024" />
+      <SrcRect xOff="0" yOff="0" xSize="2400" ySize="3600" />
+      <DstRect xOff="14400.25" yOff="46800.5" xSize="3600" ySize="3600" />
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="0">/Volumes/Extreme SSD/Projects/OpenBareMap/data/regions/norway-south/copernicus/Copernicus_DSM_COG_10_N58_00_E009_00_DEM.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="2400" RasterYSize="3600" DataType="Float32" BlockXSize="1024" BlockYSize="1024" />
+      <SrcRect xOff="0" yOff="0" xSize="2400" ySize="3600" />
+      <DstRect xOff="18000.25" yOff="46800.5" xSize="3600" ySize="3600" />
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="0">/Volumes/Extreme SSD/Projects/OpenBareMap/data/regions/norway-south/copernicus/Copernicus_DSM_COG_10_N58_00_E010_00_DEM.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="2400" RasterYSize="3600" DataType="Float32" BlockXSize="1024" BlockYSize="1024" />
+      <SrcRect xOff="0" yOff="0" xSize="2400" ySize="3600" />
+      <DstRect xOff="21600.25" yOff="46800.5" xSize="3600" ySize="3600" />
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="0">/Volumes/Extreme SSD/Projects/OpenBareMap/data/regions/norway-south/copernicus/Copernicus_DSM_COG_10_N58_00_E011_00_DEM.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="2400" RasterYSize="3600" DataType="Float32" BlockXSize="1024" BlockYSize="1024" />
+      <SrcRect xOff="0" yOff="0" xSize="2400" ySize="3600" />
+      <DstRect xOff="25200.25" yOff="46800.5" xSize="3600" ySize="3600" />
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="0">/Volumes/Extreme SSD/Projects/OpenBareMap/data/regions/norway-south/copernicus/Copernicus_DSM_COG_10_N58_00_E012_00_DEM.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="2400" RasterYSize="3600" DataType="Float32" BlockXSize="1024" BlockYSize="1024" />
+      <SrcRect xOff="0" yOff="0" xSize="2400" ySize="3600" />
+      <DstRect xOff="28800.25" yOff="46800.5" xSize="3600" ySize="3600" />
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="0">/Volumes/Extreme SSD/Projects/OpenBareMap/data/regions/norway-south/copernicus/Copernicus_DSM_COG_10_N58_00_E013_00_DEM.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="2400" RasterYSize="3600" DataType="Float32" BlockXSize="1024" BlockYSize="1024" />
+      <SrcRect xOff="0" yOff="0" xSize="2400" ySize="3600" />
+      <DstRect xOff="32400.25" yOff="46800.5" xSize="3600" ySize="3600" />
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="0">/Volumes/Extreme SSD/Projects/OpenBareMap/data/regions/norway-south/copernicus/Copernicus_DSM_COG_10_N58_00_E014_00_DEM.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="2400" RasterYSize="3600" DataType="Float32" BlockXSize="1024" BlockYSize="1024" />
+      <SrcRect xOff="0" yOff="0" xSize="2400" ySize="3600" />
+      <DstRect xOff="36000.25" yOff="46800.5" xSize="3600" ySize="3600" />
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="0">/Volumes/Extreme SSD/Projects/OpenBareMap/data/regions/norway-south/copernicus/Copernicus_DSM_COG_10_N59_00_E004_00_DEM.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="2400" RasterYSize="3600" DataType="Float32" BlockXSize="1024" BlockYSize="1024" />
+      <SrcRect xOff="0" yOff="0" xSize="2400" ySize="3600" />
+      <DstRect xOff="0.250000000000838" yOff="43200.5" xSize="3600" ySize="3600" />
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="0">/Volumes/Extreme SSD/Projects/OpenBareMap/data/regions/norway-south/copernicus/Copernicus_DSM_COG_10_N59_00_E005_00_DEM.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="2400" RasterYSize="3600" DataType="Float32" BlockXSize="1024" BlockYSize="1024" />
+      <SrcRect xOff="0" yOff="0" xSize="2400" ySize="3600" />
+      <DstRect xOff="3600.25" yOff="43200.5" xSize="3600" ySize="3600" />
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="0">/Volumes/Extreme SSD/Projects/OpenBareMap/data/regions/norway-south/copernicus/Copernicus_DSM_COG_10_N59_00_E006_00_DEM.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="2400" RasterYSize="3600" DataType="Float32" BlockXSize="1024" BlockYSize="1024" />
+      <SrcRect xOff="0" yOff="0" xSize="2400" ySize="3600" />
+      <DstRect xOff="7200.25" yOff="43200.5" xSize="3600" ySize="3600" />
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="0">/Volumes/Extreme SSD/Projects/OpenBareMap/data/regions/norway-south/copernicus/Copernicus_DSM_COG_10_N59_00_E007_00_DEM.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="2400" RasterYSize="3600" DataType="Float32" BlockXSize="1024" BlockYSize="1024" />
+      <SrcRect xOff="0" yOff="0" xSize="2400" ySize="3600" />
+      <DstRect xOff="10800.25" yOff="43200.5" xSize="3600" ySize="3600" />
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="0">/Volumes/Extreme SSD/Projects/OpenBareMap/data/regions/norway-south/copernicus/Copernicus_DSM_COG_10_N59_00_E008_00_DEM.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="2400" RasterYSize="3600" DataType="Float32" BlockXSize="1024" BlockYSize="1024" />
+      <SrcRect xOff="0" yOff="0" xSize="2400" ySize="3600" />
+      <DstRect xOff="14400.25" yOff="43200.5" xSize="3600" ySize="3600" />
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="0">/Volumes/Extreme SSD/Projects/OpenBareMap/data/regions/norway-south/copernicus/Copernicus_DSM_COG_10_N59_00_E009_00_DEM.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="2400" RasterYSize="3600" DataType="Float32" BlockXSize="1024" BlockYSize="1024" />
+      <SrcRect xOff="0" yOff="0" xSize="2400" ySize="3600" />
+      <DstRect xOff="18000.25" yOff="43200.5" xSize="3600" ySize="3600" />
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="0">/Volumes/Extreme SSD/Projects/OpenBareMap/data/regions/norway-south/copernicus/Copernicus_DSM_COG_10_N59_00_E010_00_DEM.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="2400" RasterYSize="3600" DataType="Float32" BlockXSize="1024" BlockYSize="1024" />
+      <SrcRect xOff="0" yOff="0" xSize="2400" ySize="3600" />
+      <DstRect xOff="21600.25" yOff="43200.5" xSize="3600" ySize="3600" />
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="0">/Volumes/Extreme SSD/Projects/OpenBareMap/data/regions/norway-south/copernicus/Copernicus_DSM_COG_10_N59_00_E011_00_DEM.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="2400" RasterYSize="3600" DataType="Float32" BlockXSize="1024" BlockYSize="1024" />
+      <SrcRect xOff="0" yOff="0" xSize="2400" ySize="3600" />
+      <DstRect xOff="25200.25" yOff="43200.5" xSize="3600" ySize="3600" />
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="0">/Volumes/Extreme SSD/Projects/OpenBareMap/data/regions/norway-south/copernicus/Copernicus_DSM_COG_10_N59_00_E012_00_DEM.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="2400" RasterYSize="3600" DataType="Float32" BlockXSize="1024" BlockYSize="1024" />
+      <SrcRect xOff="0" yOff="0" xSize="2400" ySize="3600" />
+      <DstRect xOff="28800.25" yOff="43200.5" xSize="3600" ySize="3600" />
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="0">/Volumes/Extreme SSD/Projects/OpenBareMap/data/regions/norway-south/copernicus/Copernicus_DSM_COG_10_N59_00_E013_00_DEM.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="2400" RasterYSize="3600" DataType="Float32" BlockXSize="1024" BlockYSize="1024" />
+      <SrcRect xOff="0" yOff="0" xSize="2400" ySize="3600" />
+      <DstRect xOff="32400.25" yOff="43200.5" xSize="3600" ySize="3600" />
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="0">/Volumes/Extreme SSD/Projects/OpenBareMap/data/regions/norway-south/copernicus/Copernicus_DSM_COG_10_N59_00_E014_00_DEM.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="2400" RasterYSize="3600" DataType="Float32" BlockXSize="1024" BlockYSize="1024" />
+      <SrcRect xOff="0" yOff="0" xSize="2400" ySize="3600" />
+      <DstRect xOff="36000.25" yOff="43200.5" xSize="3600" ySize="3600" />
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="0">/Volumes/Extreme SSD/Projects/OpenBareMap/data/regions/norway-south/copernicus/Copernicus_DSM_COG_10_N60_00_E004_00_DEM.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1800" RasterYSize="3600" DataType="Float32" BlockXSize="1024" BlockYSize="1024" />
+      <SrcRect xOff="0" yOff="0" xSize="1800" ySize="3600" />
+      <DstRect xOff="0" yOff="39600.5" xSize="3600" ySize="3600" />
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="0">/Volumes/Extreme SSD/Projects/OpenBareMap/data/regions/norway-south/copernicus/Copernicus_DSM_COG_10_N60_00_E005_00_DEM.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1800" RasterYSize="3600" DataType="Float32" BlockXSize="1024" BlockYSize="1024" />
+      <SrcRect xOff="0" yOff="0" xSize="1800" ySize="3600" />
+      <DstRect xOff="3600" yOff="39600.5" xSize="3600" ySize="3600" />
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="0">/Volumes/Extreme SSD/Projects/OpenBareMap/data/regions/norway-south/copernicus/Copernicus_DSM_COG_10_N60_00_E006_00_DEM.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1800" RasterYSize="3600" DataType="Float32" BlockXSize="1024" BlockYSize="1024" />
+      <SrcRect xOff="0" yOff="0" xSize="1800" ySize="3600" />
+      <DstRect xOff="7200" yOff="39600.5" xSize="3600" ySize="3600" />
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="0">/Volumes/Extreme SSD/Projects/OpenBareMap/data/regions/norway-south/copernicus/Copernicus_DSM_COG_10_N60_00_E007_00_DEM.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1800" RasterYSize="3600" DataType="Float32" BlockXSize="1024" BlockYSize="1024" />
+      <SrcRect xOff="0" yOff="0" xSize="1800" ySize="3600" />
+      <DstRect xOff="10800" yOff="39600.5" xSize="3600" ySize="3600" />
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="0">/Volumes/Extreme SSD/Projects/OpenBareMap/data/regions/norway-south/copernicus/Copernicus_DSM_COG_10_N60_00_E008_00_DEM.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1800" RasterYSize="3600" DataType="Float32" BlockXSize="1024" BlockYSize="1024" />
+      <SrcRect xOff="0" yOff="0" xSize="1800" ySize="3600" />
+      <DstRect xOff="14400" yOff="39600.5" xSize="3600" ySize="3600" />
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="0">/Volumes/Extreme SSD/Projects/OpenBareMap/data/regions/norway-south/copernicus/Copernicus_DSM_COG_10_N60_00_E009_00_DEM.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1800" RasterYSize="3600" DataType="Float32" BlockXSize="1024" BlockYSize="1024" />
+      <SrcRect xOff="0" yOff="0" xSize="1800" ySize="3600" />
+      <DstRect xOff="18000" yOff="39600.5" xSize="3600" ySize="3600" />
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="0">/Volumes/Extreme SSD/Projects/OpenBareMap/data/regions/norway-south/copernicus/Copernicus_DSM_COG_10_N60_00_E010_00_DEM.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1800" RasterYSize="3600" DataType="Float32" BlockXSize="1024" BlockYSize="1024" />
+      <SrcRect xOff="0" yOff="0" xSize="1800" ySize="3600" />
+      <DstRect xOff="21600" yOff="39600.5" xSize="3600" ySize="3600" />
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="0">/Volumes/Extreme SSD/Projects/OpenBareMap/data/regions/norway-south/copernicus/Copernicus_DSM_COG_10_N60_00_E011_00_DEM.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1800" RasterYSize="3600" DataType="Float32" BlockXSize="1024" BlockYSize="1024" />
+      <SrcRect xOff="0" yOff="0" xSize="1800" ySize="3600" />
+      <DstRect xOff="25200" yOff="39600.5" xSize="3600" ySize="3600" />
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="0">/Volumes/Extreme SSD/Projects/OpenBareMap/data/regions/norway-south/copernicus/Copernicus_DSM_COG_10_N60_00_E012_00_DEM.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1800" RasterYSize="3600" DataType="Float32" BlockXSize="1024" BlockYSize="1024" />
+      <SrcRect xOff="0" yOff="0" xSize="1800" ySize="3600" />
+      <DstRect xOff="28800" yOff="39600.5" xSize="3600" ySize="3600" />
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="0">/Volumes/Extreme SSD/Projects/OpenBareMap/data/regions/norway-south/copernicus/Copernicus_DSM_COG_10_N60_00_E013_00_DEM.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1800" RasterYSize="3600" DataType="Float32" BlockXSize="1024" BlockYSize="1024" />
+      <SrcRect xOff="0" yOff="0" xSize="1800" ySize="3600" />
+      <DstRect xOff="32400" yOff="39600.5" xSize="3600" ySize="3600" />
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="0">/Volumes/Extreme SSD/Projects/OpenBareMap/data/regions/norway-south/copernicus/Copernicus_DSM_COG_10_N60_00_E014_00_DEM.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1800" RasterYSize="3600" DataType="Float32" BlockXSize="1024" BlockYSize="1024" />
+      <SrcRect xOff="0" yOff="0" xSize="1800" ySize="3600" />
+      <DstRect xOff="36000" yOff="39600.5" xSize="3600" ySize="3600" />
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="0">/Volumes/Extreme SSD/Projects/OpenBareMap/data/regions/norway-south/copernicus/Copernicus_DSM_COG_10_N61_00_E004_00_DEM.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1800" RasterYSize="3600" DataType="Float32" BlockXSize="1024" BlockYSize="1024" />
+      <SrcRect xOff="0" yOff="0" xSize="1800" ySize="3600" />
+      <DstRect xOff="0" yOff="36000.5" xSize="3600" ySize="3600" />
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="0">/Volumes/Extreme SSD/Projects/OpenBareMap/data/regions/norway-south/copernicus/Copernicus_DSM_COG_10_N61_00_E005_00_DEM.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1800" RasterYSize="3600" DataType="Float32" BlockXSize="1024" BlockYSize="1024" />
+      <SrcRect xOff="0" yOff="0" xSize="1800" ySize="3600" />
+      <DstRect xOff="3600" yOff="36000.5" xSize="3600" ySize="3600" />
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="0">/Volumes/Extreme SSD/Projects/OpenBareMap/data/regions/norway-south/copernicus/Copernicus_DSM_COG_10_N61_00_E006_00_DEM.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1800" RasterYSize="3600" DataType="Float32" BlockXSize="1024" BlockYSize="1024" />
+      <SrcRect xOff="0" yOff="0" xSize="1800" ySize="3600" />
+      <DstRect xOff="7200" yOff="36000.5" xSize="3600" ySize="3600" />
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="0">/Volumes/Extreme SSD/Projects/OpenBareMap/data/regions/norway-south/copernicus/Copernicus_DSM_COG_10_N61_00_E007_00_DEM.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1800" RasterYSize="3600" DataType="Float32" BlockXSize="1024" BlockYSize="1024" />
+      <SrcRect xOff="0" yOff="0" xSize="1800" ySize="3600" />
+      <DstRect xOff="10800" yOff="36000.5" xSize="3600" ySize="3600" />
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="0">/Volumes/Extreme SSD/Projects/OpenBareMap/data/regions/norway-south/copernicus/Copernicus_DSM_COG_10_N61_00_E008_00_DEM.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1800" RasterYSize="3600" DataType="Float32" BlockXSize="1024" BlockYSize="1024" />
+      <SrcRect xOff="0" yOff="0" xSize="1800" ySize="3600" />
+      <DstRect xOff="14400" yOff="36000.5" xSize="3600" ySize="3600" />
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="0">/Volumes/Extreme SSD/Projects/OpenBareMap/data/regions/norway-south/copernicus/Copernicus_DSM_COG_10_N61_00_E009_00_DEM.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1800" RasterYSize="3600" DataType="Float32" BlockXSize="1024" BlockYSize="1024" />
+      <SrcRect xOff="0" yOff="0" xSize="1800" ySize="3600" />
+      <DstRect xOff="18000" yOff="36000.5" xSize="3600" ySize="3600" />
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="0">/Volumes/Extreme SSD/Projects/OpenBareMap/data/regions/norway-south/copernicus/Copernicus_DSM_COG_10_N61_00_E010_00_DEM.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1800" RasterYSize="3600" DataType="Float32" BlockXSize="1024" BlockYSize="1024" />
+      <SrcRect xOff="0" yOff="0" xSize="1800" ySize="3600" />
+      <DstRect xOff="21600" yOff="36000.5" xSize="3600" ySize="3600" />
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="0">/Volumes/Extreme SSD/Projects/OpenBareMap/data/regions/norway-south/copernicus/Copernicus_DSM_COG_10_N61_00_E011_00_DEM.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1800" RasterYSize="3600" DataType="Float32" BlockXSize="1024" BlockYSize="1024" />
+      <SrcRect xOff="0" yOff="0" xSize="1800" ySize="3600" />
+      <DstRect xOff="25200" yOff="36000.5" xSize="3600" ySize="3600" />
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="0">/Volumes/Extreme SSD/Projects/OpenBareMap/data/regions/norway-south/copernicus/Copernicus_DSM_COG_10_N61_00_E012_00_DEM.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1800" RasterYSize="3600" DataType="Float32" BlockXSize="1024" BlockYSize="1024" />
+      <SrcRect xOff="0" yOff="0" xSize="1800" ySize="3600" />
+      <DstRect xOff="28800" yOff="36000.5" xSize="3600" ySize="3600" />
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="0">/Volumes/Extreme SSD/Projects/OpenBareMap/data/regions/norway-south/copernicus/Copernicus_DSM_COG_10_N61_00_E013_00_DEM.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1800" RasterYSize="3600" DataType="Float32" BlockXSize="1024" BlockYSize="1024" />
+      <SrcRect xOff="0" yOff="0" xSize="1800" ySize="3600" />
+      <DstRect xOff="32400" yOff="36000.5" xSize="3600" ySize="3600" />
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="0">/Volumes/Extreme SSD/Projects/OpenBareMap/data/regions/norway-south/copernicus/Copernicus_DSM_COG_10_N61_00_E014_00_DEM.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1800" RasterYSize="3600" DataType="Float32" BlockXSize="1024" BlockYSize="1024" />
+      <SrcRect xOff="0" yOff="0" xSize="1800" ySize="3600" />
+      <DstRect xOff="36000" yOff="36000.5" xSize="3600" ySize="3600" />
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="0">/Volumes/Extreme SSD/Projects/OpenBareMap/data/regions/norway-south/copernicus/Copernicus_DSM_COG_10_N62_00_E004_00_DEM.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1800" RasterYSize="3600" DataType="Float32" BlockXSize="1024" BlockYSize="1024" />
+      <SrcRect xOff="0" yOff="0" xSize="1800" ySize="3600" />
+      <DstRect xOff="0" yOff="32400.5" xSize="3600" ySize="3600" />
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="0">/Volumes/Extreme SSD/Projects/OpenBareMap/data/regions/norway-south/copernicus/Copernicus_DSM_COG_10_N62_00_E005_00_DEM.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1800" RasterYSize="3600" DataType="Float32" BlockXSize="1024" BlockYSize="1024" />
+      <SrcRect xOff="0" yOff="0" xSize="1800" ySize="3600" />
+      <DstRect xOff="3600" yOff="32400.5" xSize="3600" ySize="3600" />
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="0">/Volumes/Extreme SSD/Projects/OpenBareMap/data/regions/norway-south/copernicus/Copernicus_DSM_COG_10_N62_00_E006_00_DEM.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1800" RasterYSize="3600" DataType="Float32" BlockXSize="1024" BlockYSize="1024" />
+      <SrcRect xOff="0" yOff="0" xSize="1800" ySize="3600" />
+      <DstRect xOff="7200" yOff="32400.5" xSize="3600" ySize="3600" />
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="0">/Volumes/Extreme SSD/Projects/OpenBareMap/data/regions/norway-south/copernicus/Copernicus_DSM_COG_10_N62_00_E007_00_DEM.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1800" RasterYSize="3600" DataType="Float32" BlockXSize="1024" BlockYSize="1024" />
+      <SrcRect xOff="0" yOff="0" xSize="1800" ySize="3600" />
+      <DstRect xOff="10800" yOff="32400.5" xSize="3600" ySize="3600" />
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="0">/Volumes/Extreme SSD/Projects/OpenBareMap/data/regions/norway-south/copernicus/Copernicus_DSM_COG_10_N62_00_E008_00_DEM.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1800" RasterYSize="3600" DataType="Float32" BlockXSize="1024" BlockYSize="1024" />
+      <SrcRect xOff="0" yOff="0" xSize="1800" ySize="3600" />
+      <DstRect xOff="14400" yOff="32400.5" xSize="3600" ySize="3600" />
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="0">/Volumes/Extreme SSD/Projects/OpenBareMap/data/regions/norway-south/copernicus/Copernicus_DSM_COG_10_N62_00_E009_00_DEM.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1800" RasterYSize="3600" DataType="Float32" BlockXSize="1024" BlockYSize="1024" />
+      <SrcRect xOff="0" yOff="0" xSize="1800" ySize="3600" />
+      <DstRect xOff="18000" yOff="32400.5" xSize="3600" ySize="3600" />
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="0">/Volumes/Extreme SSD/Projects/OpenBareMap/data/regions/norway-south/copernicus/Copernicus_DSM_COG_10_N62_00_E010_00_DEM.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1800" RasterYSize="3600" DataType="Float32" BlockXSize="1024" BlockYSize="1024" />
+      <SrcRect xOff="0" yOff="0" xSize="1800" ySize="3600" />
+      <DstRect xOff="21600" yOff="32400.5" xSize="3600" ySize="3600" />
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="0">/Volumes/Extreme SSD/Projects/OpenBareMap/data/regions/norway-south/copernicus/Copernicus_DSM_COG_10_N62_00_E011_00_DEM.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1800" RasterYSize="3600" DataType="Float32" BlockXSize="1024" BlockYSize="1024" />
+      <SrcRect xOff="0" yOff="0" xSize="1800" ySize="3600" />
+      <DstRect xOff="25200" yOff="32400.5" xSize="3600" ySize="3600" />
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="0">/Volumes/Extreme SSD/Projects/OpenBareMap/data/regions/norway-south/copernicus/Copernicus_DSM_COG_10_N62_00_E012_00_DEM.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1800" RasterYSize="3600" DataType="Float32" BlockXSize="1024" BlockYSize="1024" />
+      <SrcRect xOff="0" yOff="0" xSize="1800" ySize="3600" />
+      <DstRect xOff="28800" yOff="32400.5" xSize="3600" ySize="3600" />
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="0">/Volumes/Extreme SSD/Projects/OpenBareMap/data/regions/norway-south/copernicus/Copernicus_DSM_COG_10_N62_00_E013_00_DEM.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1800" RasterYSize="3600" DataType="Float32" BlockXSize="1024" BlockYSize="1024" />
+      <SrcRect xOff="0" yOff="0" xSize="1800" ySize="3600" />
+      <DstRect xOff="32400" yOff="32400.5" xSize="3600" ySize="3600" />
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="0">/Volumes/Extreme SSD/Projects/OpenBareMap/data/regions/norway-south/copernicus/Copernicus_DSM_COG_10_N62_00_E014_00_DEM.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1800" RasterYSize="3600" DataType="Float32" BlockXSize="1024" BlockYSize="1024" />
+      <SrcRect xOff="0" yOff="0" xSize="1800" ySize="3600" />
+      <DstRect xOff="36000" yOff="32400.5" xSize="3600" ySize="3600" />
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="0">/Volumes/Extreme SSD/Projects/OpenBareMap/data/regions/norway-central/copernicus/Copernicus_DSM_COG_10_N62_00_E015_00_DEM.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1800" RasterYSize="3600" DataType="Float32" BlockXSize="1024" BlockYSize="1024" />
+      <SrcRect xOff="0" yOff="0" xSize="1800" ySize="3600" />
+      <DstRect xOff="39600" yOff="32400.5" xSize="3600" ySize="3600" />
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="0">/Volumes/Extreme SSD/Projects/OpenBareMap/data/regions/norway-central/copernicus/Copernicus_DSM_COG_10_N62_00_E016_00_DEM.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1800" RasterYSize="3600" DataType="Float32" BlockXSize="1024" BlockYSize="1024" />
+      <SrcRect xOff="0" yOff="0" xSize="1800" ySize="3600" />
+      <DstRect xOff="43200" yOff="32400.5" xSize="3600" ySize="3600" />
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="0">/Volumes/Extreme SSD/Projects/OpenBareMap/data/regions/norway-central/copernicus/Copernicus_DSM_COG_10_N62_00_E017_00_DEM.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1800" RasterYSize="3600" DataType="Float32" BlockXSize="1024" BlockYSize="1024" />
+      <SrcRect xOff="0" yOff="0" xSize="1800" ySize="3600" />
+      <DstRect xOff="46800" yOff="32400.5" xSize="3600" ySize="3600" />
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="0">/Volumes/Extreme SSD/Projects/OpenBareMap/data/regions/norway-central/copernicus/Copernicus_DSM_COG_10_N62_00_E018_00_DEM.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1800" RasterYSize="3600" DataType="Float32" BlockXSize="1024" BlockYSize="1024" />
+      <SrcRect xOff="0" yOff="0" xSize="1800" ySize="3600" />
+      <DstRect xOff="50400" yOff="32400.5" xSize="3600" ySize="3600" />
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="0">/Volumes/Extreme SSD/Projects/OpenBareMap/data/regions/norway-central/copernicus/Copernicus_DSM_COG_10_N62_00_E019_00_DEM.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1800" RasterYSize="3600" DataType="Float32" BlockXSize="1024" BlockYSize="1024" />
+      <SrcRect xOff="0" yOff="0" xSize="1800" ySize="3600" />
+      <DstRect xOff="54000" yOff="32400.5" xSize="3600" ySize="3600" />
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="0">/Volumes/Extreme SSD/Projects/OpenBareMap/data/regions/norway-south/copernicus/Copernicus_DSM_COG_10_N63_00_E006_00_DEM.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1800" RasterYSize="3600" DataType="Float32" BlockXSize="1024" BlockYSize="1024" />
+      <SrcRect xOff="0" yOff="0" xSize="1800" ySize="3600" />
+      <DstRect xOff="7200" yOff="28800.5" xSize="3600" ySize="3600" />
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="0">/Volumes/Extreme SSD/Projects/OpenBareMap/data/regions/norway-south/copernicus/Copernicus_DSM_COG_10_N63_00_E007_00_DEM.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1800" RasterYSize="3600" DataType="Float32" BlockXSize="1024" BlockYSize="1024" />
+      <SrcRect xOff="0" yOff="0" xSize="1800" ySize="3600" />
+      <DstRect xOff="10800" yOff="28800.5" xSize="3600" ySize="3600" />
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="0">/Volumes/Extreme SSD/Projects/OpenBareMap/data/regions/norway-south/copernicus/Copernicus_DSM_COG_10_N63_00_E008_00_DEM.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1800" RasterYSize="3600" DataType="Float32" BlockXSize="1024" BlockYSize="1024" />
+      <SrcRect xOff="0" yOff="0" xSize="1800" ySize="3600" />
+      <DstRect xOff="14400" yOff="28800.5" xSize="3600" ySize="3600" />
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="0">/Volumes/Extreme SSD/Projects/OpenBareMap/data/regions/norway-south/copernicus/Copernicus_DSM_COG_10_N63_00_E009_00_DEM.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1800" RasterYSize="3600" DataType="Float32" BlockXSize="1024" BlockYSize="1024" />
+      <SrcRect xOff="0" yOff="0" xSize="1800" ySize="3600" />
+      <DstRect xOff="18000" yOff="28800.5" xSize="3600" ySize="3600" />
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="0">/Volumes/Extreme SSD/Projects/OpenBareMap/data/regions/norway-south/copernicus/Copernicus_DSM_COG_10_N63_00_E010_00_DEM.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1800" RasterYSize="3600" DataType="Float32" BlockXSize="1024" BlockYSize="1024" />
+      <SrcRect xOff="0" yOff="0" xSize="1800" ySize="3600" />
+      <DstRect xOff="21600" yOff="28800.5" xSize="3600" ySize="3600" />
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="0">/Volumes/Extreme SSD/Projects/OpenBareMap/data/regions/norway-south/copernicus/Copernicus_DSM_COG_10_N63_00_E011_00_DEM.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1800" RasterYSize="3600" DataType="Float32" BlockXSize="1024" BlockYSize="1024" />
+      <SrcRect xOff="0" yOff="0" xSize="1800" ySize="3600" />
+      <DstRect xOff="25200" yOff="28800.5" xSize="3600" ySize="3600" />
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="0">/Volumes/Extreme SSD/Projects/OpenBareMap/data/regions/norway-south/copernicus/Copernicus_DSM_COG_10_N63_00_E012_00_DEM.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1800" RasterYSize="3600" DataType="Float32" BlockXSize="1024" BlockYSize="1024" />
+      <SrcRect xOff="0" yOff="0" xSize="1800" ySize="3600" />
+      <DstRect xOff="28800" yOff="28800.5" xSize="3600" ySize="3600" />
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="0">/Volumes/Extreme SSD/Projects/OpenBareMap/data/regions/norway-south/copernicus/Copernicus_DSM_COG_10_N63_00_E013_00_DEM.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1800" RasterYSize="3600" DataType="Float32" BlockXSize="1024" BlockYSize="1024" />
+      <SrcRect xOff="0" yOff="0" xSize="1800" ySize="3600" />
+      <DstRect xOff="32400" yOff="28800.5" xSize="3600" ySize="3600" />
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="0">/Volumes/Extreme SSD/Projects/OpenBareMap/data/regions/norway-south/copernicus/Copernicus_DSM_COG_10_N63_00_E014_00_DEM.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1800" RasterYSize="3600" DataType="Float32" BlockXSize="1024" BlockYSize="1024" />
+      <SrcRect xOff="0" yOff="0" xSize="1800" ySize="3600" />
+      <DstRect xOff="36000" yOff="28800.5" xSize="3600" ySize="3600" />
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="0">/Volumes/Extreme SSD/Projects/OpenBareMap/data/regions/norway-central/copernicus/Copernicus_DSM_COG_10_N63_00_E015_00_DEM.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1800" RasterYSize="3600" DataType="Float32" BlockXSize="1024" BlockYSize="1024" />
+      <SrcRect xOff="0" yOff="0" xSize="1800" ySize="3600" />
+      <DstRect xOff="39600" yOff="28800.5" xSize="3600" ySize="3600" />
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="0">/Volumes/Extreme SSD/Projects/OpenBareMap/data/regions/norway-central/copernicus/Copernicus_DSM_COG_10_N63_00_E016_00_DEM.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1800" RasterYSize="3600" DataType="Float32" BlockXSize="1024" BlockYSize="1024" />
+      <SrcRect xOff="0" yOff="0" xSize="1800" ySize="3600" />
+      <DstRect xOff="43200" yOff="28800.5" xSize="3600" ySize="3600" />
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="0">/Volumes/Extreme SSD/Projects/OpenBareMap/data/regions/norway-central/copernicus/Copernicus_DSM_COG_10_N63_00_E017_00_DEM.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1800" RasterYSize="3600" DataType="Float32" BlockXSize="1024" BlockYSize="1024" />
+      <SrcRect xOff="0" yOff="0" xSize="1800" ySize="3600" />
+      <DstRect xOff="46800" yOff="28800.5" xSize="3600" ySize="3600" />
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="0">/Volumes/Extreme SSD/Projects/OpenBareMap/data/regions/norway-central/copernicus/Copernicus_DSM_COG_10_N63_00_E018_00_DEM.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1800" RasterYSize="3600" DataType="Float32" BlockXSize="1024" BlockYSize="1024" />
+      <SrcRect xOff="0" yOff="0" xSize="1800" ySize="3600" />
+      <DstRect xOff="50400" yOff="28800.5" xSize="3600" ySize="3600" />
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="0">/Volumes/Extreme SSD/Projects/OpenBareMap/data/regions/norway-central/copernicus/Copernicus_DSM_COG_10_N63_00_E019_00_DEM.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1800" RasterYSize="3600" DataType="Float32" BlockXSize="1024" BlockYSize="1024" />
+      <SrcRect xOff="0" yOff="0" xSize="1800" ySize="3600" />
+      <DstRect xOff="54000" yOff="28800.5" xSize="3600" ySize="3600" />
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="0">/Volumes/Extreme SSD/Projects/OpenBareMap/data/regions/norway-south/copernicus/Copernicus_DSM_COG_10_N64_00_E008_00_DEM.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1800" RasterYSize="3600" DataType="Float32" BlockXSize="1024" BlockYSize="1024" />
+      <SrcRect xOff="0" yOff="0" xSize="1800" ySize="3600" />
+      <DstRect xOff="14400" yOff="25200.5" xSize="3600" ySize="3600" />
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="0">/Volumes/Extreme SSD/Projects/OpenBareMap/data/regions/norway-south/copernicus/Copernicus_DSM_COG_10_N64_00_E009_00_DEM.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1800" RasterYSize="3600" DataType="Float32" BlockXSize="1024" BlockYSize="1024" />
+      <SrcRect xOff="0" yOff="0" xSize="1800" ySize="3600" />
+      <DstRect xOff="18000" yOff="25200.5" xSize="3600" ySize="3600" />
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="0">/Volumes/Extreme SSD/Projects/OpenBareMap/data/regions/norway-south/copernicus/Copernicus_DSM_COG_10_N64_00_E010_00_DEM.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1800" RasterYSize="3600" DataType="Float32" BlockXSize="1024" BlockYSize="1024" />
+      <SrcRect xOff="0" yOff="0" xSize="1800" ySize="3600" />
+      <DstRect xOff="21600" yOff="25200.5" xSize="3600" ySize="3600" />
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="0">/Volumes/Extreme SSD/Projects/OpenBareMap/data/regions/norway-south/copernicus/Copernicus_DSM_COG_10_N64_00_E011_00_DEM.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1800" RasterYSize="3600" DataType="Float32" BlockXSize="1024" BlockYSize="1024" />
+      <SrcRect xOff="0" yOff="0" xSize="1800" ySize="3600" />
+      <DstRect xOff="25200" yOff="25200.5" xSize="3600" ySize="3600" />
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="0">/Volumes/Extreme SSD/Projects/OpenBareMap/data/regions/norway-south/copernicus/Copernicus_DSM_COG_10_N64_00_E012_00_DEM.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1800" RasterYSize="3600" DataType="Float32" BlockXSize="1024" BlockYSize="1024" />
+      <SrcRect xOff="0" yOff="0" xSize="1800" ySize="3600" />
+      <DstRect xOff="28800" yOff="25200.5" xSize="3600" ySize="3600" />
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="0">/Volumes/Extreme SSD/Projects/OpenBareMap/data/regions/norway-south/copernicus/Copernicus_DSM_COG_10_N64_00_E013_00_DEM.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1800" RasterYSize="3600" DataType="Float32" BlockXSize="1024" BlockYSize="1024" />
+      <SrcRect xOff="0" yOff="0" xSize="1800" ySize="3600" />
+      <DstRect xOff="32400" yOff="25200.5" xSize="3600" ySize="3600" />
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="0">/Volumes/Extreme SSD/Projects/OpenBareMap/data/regions/norway-south/copernicus/Copernicus_DSM_COG_10_N64_00_E014_00_DEM.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1800" RasterYSize="3600" DataType="Float32" BlockXSize="1024" BlockYSize="1024" />
+      <SrcRect xOff="0" yOff="0" xSize="1800" ySize="3600" />
+      <DstRect xOff="36000" yOff="25200.5" xSize="3600" ySize="3600" />
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="0">/Volumes/Extreme SSD/Projects/OpenBareMap/data/regions/norway-central/copernicus/Copernicus_DSM_COG_10_N64_00_E015_00_DEM.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1800" RasterYSize="3600" DataType="Float32" BlockXSize="1024" BlockYSize="1024" />
+      <SrcRect xOff="0" yOff="0" xSize="1800" ySize="3600" />
+      <DstRect xOff="39600" yOff="25200.5" xSize="3600" ySize="3600" />
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="0">/Volumes/Extreme SSD/Projects/OpenBareMap/data/regions/norway-central/copernicus/Copernicus_DSM_COG_10_N64_00_E016_00_DEM.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1800" RasterYSize="3600" DataType="Float32" BlockXSize="1024" BlockYSize="1024" />
+      <SrcRect xOff="0" yOff="0" xSize="1800" ySize="3600" />
+      <DstRect xOff="43200" yOff="25200.5" xSize="3600" ySize="3600" />
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="0">/Volumes/Extreme SSD/Projects/OpenBareMap/data/regions/norway-central/copernicus/Copernicus_DSM_COG_10_N64_00_E017_00_DEM.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1800" RasterYSize="3600" DataType="Float32" BlockXSize="1024" BlockYSize="1024" />
+      <SrcRect xOff="0" yOff="0" xSize="1800" ySize="3600" />
+      <DstRect xOff="46800" yOff="25200.5" xSize="3600" ySize="3600" />
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="0">/Volumes/Extreme SSD/Projects/OpenBareMap/data/regions/norway-central/copernicus/Copernicus_DSM_COG_10_N64_00_E018_00_DEM.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1800" RasterYSize="3600" DataType="Float32" BlockXSize="1024" BlockYSize="1024" />
+      <SrcRect xOff="0" yOff="0" xSize="1800" ySize="3600" />
+      <DstRect xOff="50400" yOff="25200.5" xSize="3600" ySize="3600" />
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="0">/Volumes/Extreme SSD/Projects/OpenBareMap/data/regions/norway-central/copernicus/Copernicus_DSM_COG_10_N64_00_E019_00_DEM.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1800" RasterYSize="3600" DataType="Float32" BlockXSize="1024" BlockYSize="1024" />
+      <SrcRect xOff="0" yOff="0" xSize="1800" ySize="3600" />
+      <DstRect xOff="54000" yOff="25200.5" xSize="3600" ySize="3600" />
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="0">/Volumes/Extreme SSD/Projects/OpenBareMap/data/regions/norway-central/copernicus/Copernicus_DSM_COG_10_N65_00_E010_00_DEM.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1800" RasterYSize="3600" DataType="Float32" BlockXSize="1024" BlockYSize="1024" />
+      <SrcRect xOff="0" yOff="0" xSize="1800" ySize="3600" />
+      <DstRect xOff="21600" yOff="21600.5" xSize="3600" ySize="3600" />
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="0">/Volumes/Extreme SSD/Projects/OpenBareMap/data/regions/norway-central/copernicus/Copernicus_DSM_COG_10_N65_00_E011_00_DEM.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1800" RasterYSize="3600" DataType="Float32" BlockXSize="1024" BlockYSize="1024" />
+      <SrcRect xOff="0" yOff="0" xSize="1800" ySize="3600" />
+      <DstRect xOff="25200" yOff="21600.5" xSize="3600" ySize="3600" />
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="0">/Volumes/Extreme SSD/Projects/OpenBareMap/data/regions/norway-central/copernicus/Copernicus_DSM_COG_10_N65_00_E012_00_DEM.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1800" RasterYSize="3600" DataType="Float32" BlockXSize="1024" BlockYSize="1024" />
+      <SrcRect xOff="0" yOff="0" xSize="1800" ySize="3600" />
+      <DstRect xOff="28800" yOff="21600.5" xSize="3600" ySize="3600" />
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="0">/Volumes/Extreme SSD/Projects/OpenBareMap/data/regions/norway-central/copernicus/Copernicus_DSM_COG_10_N65_00_E013_00_DEM.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1800" RasterYSize="3600" DataType="Float32" BlockXSize="1024" BlockYSize="1024" />
+      <SrcRect xOff="0" yOff="0" xSize="1800" ySize="3600" />
+      <DstRect xOff="32400" yOff="21600.5" xSize="3600" ySize="3600" />
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="0">/Volumes/Extreme SSD/Projects/OpenBareMap/data/regions/norway-central/copernicus/Copernicus_DSM_COG_10_N65_00_E014_00_DEM.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1800" RasterYSize="3600" DataType="Float32" BlockXSize="1024" BlockYSize="1024" />
+      <SrcRect xOff="0" yOff="0" xSize="1800" ySize="3600" />
+      <DstRect xOff="36000" yOff="21600.5" xSize="3600" ySize="3600" />
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="0">/Volumes/Extreme SSD/Projects/OpenBareMap/data/regions/norway-central/copernicus/Copernicus_DSM_COG_10_N65_00_E015_00_DEM.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1800" RasterYSize="3600" DataType="Float32" BlockXSize="1024" BlockYSize="1024" />
+      <SrcRect xOff="0" yOff="0" xSize="1800" ySize="3600" />
+      <DstRect xOff="39600" yOff="21600.5" xSize="3600" ySize="3600" />
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="0">/Volumes/Extreme SSD/Projects/OpenBareMap/data/regions/norway-central/copernicus/Copernicus_DSM_COG_10_N65_00_E016_00_DEM.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1800" RasterYSize="3600" DataType="Float32" BlockXSize="1024" BlockYSize="1024" />
+      <SrcRect xOff="0" yOff="0" xSize="1800" ySize="3600" />
+      <DstRect xOff="43200" yOff="21600.5" xSize="3600" ySize="3600" />
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="0">/Volumes/Extreme SSD/Projects/OpenBareMap/data/regions/norway-central/copernicus/Copernicus_DSM_COG_10_N65_00_E017_00_DEM.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1800" RasterYSize="3600" DataType="Float32" BlockXSize="1024" BlockYSize="1024" />
+      <SrcRect xOff="0" yOff="0" xSize="1800" ySize="3600" />
+      <DstRect xOff="46800" yOff="21600.5" xSize="3600" ySize="3600" />
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="0">/Volumes/Extreme SSD/Projects/OpenBareMap/data/regions/norway-central/copernicus/Copernicus_DSM_COG_10_N65_00_E018_00_DEM.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1800" RasterYSize="3600" DataType="Float32" BlockXSize="1024" BlockYSize="1024" />
+      <SrcRect xOff="0" yOff="0" xSize="1800" ySize="3600" />
+      <DstRect xOff="50400" yOff="21600.5" xSize="3600" ySize="3600" />
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="0">/Volumes/Extreme SSD/Projects/OpenBareMap/data/regions/norway-central/copernicus/Copernicus_DSM_COG_10_N65_00_E019_00_DEM.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1800" RasterYSize="3600" DataType="Float32" BlockXSize="1024" BlockYSize="1024" />
+      <SrcRect xOff="0" yOff="0" xSize="1800" ySize="3600" />
+      <DstRect xOff="54000" yOff="21600.5" xSize="3600" ySize="3600" />
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="0">/Volumes/Extreme SSD/Projects/OpenBareMap/data/regions/norway-central/copernicus/Copernicus_DSM_COG_10_N66_00_E010_00_DEM.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1800" RasterYSize="3600" DataType="Float32" BlockXSize="1024" BlockYSize="1024" />
+      <SrcRect xOff="0" yOff="0" xSize="1800" ySize="3600" />
+      <DstRect xOff="21600" yOff="18000.5" xSize="3600" ySize="3600" />
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="0">/Volumes/Extreme SSD/Projects/OpenBareMap/data/regions/norway-central/copernicus/Copernicus_DSM_COG_10_N66_00_E011_00_DEM.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1800" RasterYSize="3600" DataType="Float32" BlockXSize="1024" BlockYSize="1024" />
+      <SrcRect xOff="0" yOff="0" xSize="1800" ySize="3600" />
+      <DstRect xOff="25200" yOff="18000.5" xSize="3600" ySize="3600" />
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="0">/Volumes/Extreme SSD/Projects/OpenBareMap/data/regions/norway-central/copernicus/Copernicus_DSM_COG_10_N66_00_E012_00_DEM.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1800" RasterYSize="3600" DataType="Float32" BlockXSize="1024" BlockYSize="1024" />
+      <SrcRect xOff="0" yOff="0" xSize="1800" ySize="3600" />
+      <DstRect xOff="28800" yOff="18000.5" xSize="3600" ySize="3600" />
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="0">/Volumes/Extreme SSD/Projects/OpenBareMap/data/regions/norway-central/copernicus/Copernicus_DSM_COG_10_N66_00_E013_00_DEM.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1800" RasterYSize="3600" DataType="Float32" BlockXSize="1024" BlockYSize="1024" />
+      <SrcRect xOff="0" yOff="0" xSize="1800" ySize="3600" />
+      <DstRect xOff="32400" yOff="18000.5" xSize="3600" ySize="3600" />
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="0">/Volumes/Extreme SSD/Projects/OpenBareMap/data/regions/norway-central/copernicus/Copernicus_DSM_COG_10_N66_00_E014_00_DEM.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1800" RasterYSize="3600" DataType="Float32" BlockXSize="1024" BlockYSize="1024" />
+      <SrcRect xOff="0" yOff="0" xSize="1800" ySize="3600" />
+      <DstRect xOff="36000" yOff="18000.5" xSize="3600" ySize="3600" />
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="0">/Volumes/Extreme SSD/Projects/OpenBareMap/data/regions/norway-central/copernicus/Copernicus_DSM_COG_10_N66_00_E015_00_DEM.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1800" RasterYSize="3600" DataType="Float32" BlockXSize="1024" BlockYSize="1024" />
+      <SrcRect xOff="0" yOff="0" xSize="1800" ySize="3600" />
+      <DstRect xOff="39600" yOff="18000.5" xSize="3600" ySize="3600" />
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="0">/Volumes/Extreme SSD/Projects/OpenBareMap/data/regions/norway-central/copernicus/Copernicus_DSM_COG_10_N66_00_E016_00_DEM.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1800" RasterYSize="3600" DataType="Float32" BlockXSize="1024" BlockYSize="1024" />
+      <SrcRect xOff="0" yOff="0" xSize="1800" ySize="3600" />
+      <DstRect xOff="43200" yOff="18000.5" xSize="3600" ySize="3600" />
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="0">/Volumes/Extreme SSD/Projects/OpenBareMap/data/regions/norway-central/copernicus/Copernicus_DSM_COG_10_N66_00_E017_00_DEM.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1800" RasterYSize="3600" DataType="Float32" BlockXSize="1024" BlockYSize="1024" />
+      <SrcRect xOff="0" yOff="0" xSize="1800" ySize="3600" />
+      <DstRect xOff="46800" yOff="18000.5" xSize="3600" ySize="3600" />
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="0">/Volumes/Extreme SSD/Projects/OpenBareMap/data/regions/norway-central/copernicus/Copernicus_DSM_COG_10_N66_00_E018_00_DEM.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1800" RasterYSize="3600" DataType="Float32" BlockXSize="1024" BlockYSize="1024" />
+      <SrcRect xOff="0" yOff="0" xSize="1800" ySize="3600" />
+      <DstRect xOff="50400" yOff="18000.5" xSize="3600" ySize="3600" />
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="0">/Volumes/Extreme SSD/Projects/OpenBareMap/data/regions/norway-central/copernicus/Copernicus_DSM_COG_10_N66_00_E019_00_DEM.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1800" RasterYSize="3600" DataType="Float32" BlockXSize="1024" BlockYSize="1024" />
+      <SrcRect xOff="0" yOff="0" xSize="1800" ySize="3600" />
+      <DstRect xOff="54000" yOff="18000.5" xSize="3600" ySize="3600" />
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="0">/Volumes/Extreme SSD/Projects/OpenBareMap/data/regions/norway-north/copernicus/Copernicus_DSM_COG_10_N66_00_E020_00_DEM.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1800" RasterYSize="3600" DataType="Float32" BlockXSize="1024" BlockYSize="1024" />
+      <SrcRect xOff="0" yOff="0" xSize="1800" ySize="3600" />
+      <DstRect xOff="57600" yOff="18000.5" xSize="3600" ySize="3600" />
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="0">/Volumes/Extreme SSD/Projects/OpenBareMap/data/regions/norway-north/copernicus/Copernicus_DSM_COG_10_N66_00_E021_00_DEM.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1800" RasterYSize="3600" DataType="Float32" BlockXSize="1024" BlockYSize="1024" />
+      <SrcRect xOff="0" yOff="0" xSize="1800" ySize="3600" />
+      <DstRect xOff="61200" yOff="18000.5" xSize="3600" ySize="3600" />
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="0">/Volumes/Extreme SSD/Projects/OpenBareMap/data/regions/norway-north/copernicus/Copernicus_DSM_COG_10_N66_00_E022_00_DEM.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1800" RasterYSize="3600" DataType="Float32" BlockXSize="1024" BlockYSize="1024" />
+      <SrcRect xOff="0" yOff="0" xSize="1800" ySize="3600" />
+      <DstRect xOff="64800" yOff="18000.5" xSize="3600" ySize="3600" />
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="0">/Volumes/Extreme SSD/Projects/OpenBareMap/data/regions/norway-north/copernicus/Copernicus_DSM_COG_10_N66_00_E023_00_DEM.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1800" RasterYSize="3600" DataType="Float32" BlockXSize="1024" BlockYSize="1024" />
+      <SrcRect xOff="0" yOff="0" xSize="1800" ySize="3600" />
+      <DstRect xOff="68400" yOff="18000.5" xSize="3600" ySize="3600" />
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="0">/Volumes/Extreme SSD/Projects/OpenBareMap/data/regions/norway-north/copernicus/Copernicus_DSM_COG_10_N66_00_E024_00_DEM.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1800" RasterYSize="3600" DataType="Float32" BlockXSize="1024" BlockYSize="1024" />
+      <SrcRect xOff="0" yOff="0" xSize="1800" ySize="3600" />
+      <DstRect xOff="72000" yOff="18000.5" xSize="3600" ySize="3600" />
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="0">/Volumes/Extreme SSD/Projects/OpenBareMap/data/regions/norway-north/copernicus/Copernicus_DSM_COG_10_N66_00_E025_00_DEM.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1800" RasterYSize="3600" DataType="Float32" BlockXSize="1024" BlockYSize="1024" />
+      <SrcRect xOff="0" yOff="0" xSize="1800" ySize="3600" />
+      <DstRect xOff="75600" yOff="18000.5" xSize="3600" ySize="3600" />
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="0">/Volumes/Extreme SSD/Projects/OpenBareMap/data/regions/norway-north/copernicus/Copernicus_DSM_COG_10_N66_00_E026_00_DEM.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1800" RasterYSize="3600" DataType="Float32" BlockXSize="1024" BlockYSize="1024" />
+      <SrcRect xOff="0" yOff="0" xSize="1800" ySize="3600" />
+      <DstRect xOff="79200" yOff="18000.5" xSize="3600" ySize="3600" />
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="0">/Volumes/Extreme SSD/Projects/OpenBareMap/data/regions/norway-north/copernicus/Copernicus_DSM_COG_10_N66_00_E027_00_DEM.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1800" RasterYSize="3600" DataType="Float32" BlockXSize="1024" BlockYSize="1024" />
+      <SrcRect xOff="0" yOff="0" xSize="1800" ySize="3600" />
+      <DstRect xOff="82800" yOff="18000.5" xSize="3600" ySize="3600" />
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="0">/Volumes/Extreme SSD/Projects/OpenBareMap/data/regions/norway-north/copernicus/Copernicus_DSM_COG_10_N66_00_E028_00_DEM.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1800" RasterYSize="3600" DataType="Float32" BlockXSize="1024" BlockYSize="1024" />
+      <SrcRect xOff="0" yOff="0" xSize="1800" ySize="3600" />
+      <DstRect xOff="86400" yOff="18000.5" xSize="3600" ySize="3600" />
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="0">/Volumes/Extreme SSD/Projects/OpenBareMap/data/regions/norway-north/copernicus/Copernicus_DSM_COG_10_N66_00_E029_00_DEM.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1800" RasterYSize="3600" DataType="Float32" BlockXSize="1024" BlockYSize="1024" />
+      <SrcRect xOff="0" yOff="0" xSize="1800" ySize="3600" />
+      <DstRect xOff="90000" yOff="18000.5" xSize="3600" ySize="3600" />
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="0">/Volumes/Extreme SSD/Projects/OpenBareMap/data/regions/norway-north/copernicus/Copernicus_DSM_COG_10_N66_00_E030_00_DEM.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1800" RasterYSize="3600" DataType="Float32" BlockXSize="1024" BlockYSize="1024" />
+      <SrcRect xOff="0" yOff="0" xSize="1800" ySize="3600" />
+      <DstRect xOff="93600" yOff="18000.5" xSize="3600" ySize="3600" />
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="0">/Volumes/Extreme SSD/Projects/OpenBareMap/data/regions/norway-north/copernicus/Copernicus_DSM_COG_10_N66_00_E031_00_DEM.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1800" RasterYSize="3600" DataType="Float32" BlockXSize="1024" BlockYSize="1024" />
+      <SrcRect xOff="0" yOff="0" xSize="1800" ySize="3600" />
+      <DstRect xOff="97200" yOff="18000.5" xSize="3600" ySize="3600" />
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="0">/Volumes/Extreme SSD/Projects/OpenBareMap/data/regions/norway-north/copernicus/Copernicus_DSM_COG_10_N66_00_E032_00_DEM.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1800" RasterYSize="3600" DataType="Float32" BlockXSize="1024" BlockYSize="1024" />
+      <SrcRect xOff="0" yOff="0" xSize="1800" ySize="3600" />
+      <DstRect xOff="100800" yOff="18000.5" xSize="3600" ySize="3600" />
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="0">/Volumes/Extreme SSD/Projects/OpenBareMap/data/regions/norway-central/copernicus/Copernicus_DSM_COG_10_N67_00_E010_00_DEM.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1800" RasterYSize="3600" DataType="Float32" BlockXSize="1024" BlockYSize="1024" />
+      <SrcRect xOff="0" yOff="0" xSize="1800" ySize="3600" />
+      <DstRect xOff="21600" yOff="14400.5" xSize="3600" ySize="3600" />
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="0">/Volumes/Extreme SSD/Projects/OpenBareMap/data/regions/norway-central/copernicus/Copernicus_DSM_COG_10_N67_00_E011_00_DEM.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1800" RasterYSize="3600" DataType="Float32" BlockXSize="1024" BlockYSize="1024" />
+      <SrcRect xOff="0" yOff="0" xSize="1800" ySize="3600" />
+      <DstRect xOff="25200" yOff="14400.5" xSize="3600" ySize="3600" />
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="0">/Volumes/Extreme SSD/Projects/OpenBareMap/data/regions/norway-central/copernicus/Copernicus_DSM_COG_10_N67_00_E012_00_DEM.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1800" RasterYSize="3600" DataType="Float32" BlockXSize="1024" BlockYSize="1024" />
+      <SrcRect xOff="0" yOff="0" xSize="1800" ySize="3600" />
+      <DstRect xOff="28800" yOff="14400.5" xSize="3600" ySize="3600" />
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="0">/Volumes/Extreme SSD/Projects/OpenBareMap/data/regions/norway-central/copernicus/Copernicus_DSM_COG_10_N67_00_E013_00_DEM.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1800" RasterYSize="3600" DataType="Float32" BlockXSize="1024" BlockYSize="1024" />
+      <SrcRect xOff="0" yOff="0" xSize="1800" ySize="3600" />
+      <DstRect xOff="32400" yOff="14400.5" xSize="3600" ySize="3600" />
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="0">/Volumes/Extreme SSD/Projects/OpenBareMap/data/regions/norway-central/copernicus/Copernicus_DSM_COG_10_N67_00_E014_00_DEM.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1800" RasterYSize="3600" DataType="Float32" BlockXSize="1024" BlockYSize="1024" />
+      <SrcRect xOff="0" yOff="0" xSize="1800" ySize="3600" />
+      <DstRect xOff="36000" yOff="14400.5" xSize="3600" ySize="3600" />
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="0">/Volumes/Extreme SSD/Projects/OpenBareMap/data/regions/norway-central/copernicus/Copernicus_DSM_COG_10_N67_00_E015_00_DEM.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1800" RasterYSize="3600" DataType="Float32" BlockXSize="1024" BlockYSize="1024" />
+      <SrcRect xOff="0" yOff="0" xSize="1800" ySize="3600" />
+      <DstRect xOff="39600" yOff="14400.5" xSize="3600" ySize="3600" />
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="0">/Volumes/Extreme SSD/Projects/OpenBareMap/data/regions/norway-central/copernicus/Copernicus_DSM_COG_10_N67_00_E016_00_DEM.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1800" RasterYSize="3600" DataType="Float32" BlockXSize="1024" BlockYSize="1024" />
+      <SrcRect xOff="0" yOff="0" xSize="1800" ySize="3600" />
+      <DstRect xOff="43200" yOff="14400.5" xSize="3600" ySize="3600" />
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="0">/Volumes/Extreme SSD/Projects/OpenBareMap/data/regions/norway-central/copernicus/Copernicus_DSM_COG_10_N67_00_E017_00_DEM.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1800" RasterYSize="3600" DataType="Float32" BlockXSize="1024" BlockYSize="1024" />
+      <SrcRect xOff="0" yOff="0" xSize="1800" ySize="3600" />
+      <DstRect xOff="46800" yOff="14400.5" xSize="3600" ySize="3600" />
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="0">/Volumes/Extreme SSD/Projects/OpenBareMap/data/regions/norway-central/copernicus/Copernicus_DSM_COG_10_N67_00_E018_00_DEM.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1800" RasterYSize="3600" DataType="Float32" BlockXSize="1024" BlockYSize="1024" />
+      <SrcRect xOff="0" yOff="0" xSize="1800" ySize="3600" />
+      <DstRect xOff="50400" yOff="14400.5" xSize="3600" ySize="3600" />
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="0">/Volumes/Extreme SSD/Projects/OpenBareMap/data/regions/norway-central/copernicus/Copernicus_DSM_COG_10_N67_00_E019_00_DEM.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1800" RasterYSize="3600" DataType="Float32" BlockXSize="1024" BlockYSize="1024" />
+      <SrcRect xOff="0" yOff="0" xSize="1800" ySize="3600" />
+      <DstRect xOff="54000" yOff="14400.5" xSize="3600" ySize="3600" />
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="0">/Volumes/Extreme SSD/Projects/OpenBareMap/data/regions/norway-north/copernicus/Copernicus_DSM_COG_10_N67_00_E020_00_DEM.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1800" RasterYSize="3600" DataType="Float32" BlockXSize="1024" BlockYSize="1024" />
+      <SrcRect xOff="0" yOff="0" xSize="1800" ySize="3600" />
+      <DstRect xOff="57600" yOff="14400.5" xSize="3600" ySize="3600" />
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="0">/Volumes/Extreme SSD/Projects/OpenBareMap/data/regions/norway-north/copernicus/Copernicus_DSM_COG_10_N67_00_E021_00_DEM.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1800" RasterYSize="3600" DataType="Float32" BlockXSize="1024" BlockYSize="1024" />
+      <SrcRect xOff="0" yOff="0" xSize="1800" ySize="3600" />
+      <DstRect xOff="61200" yOff="14400.5" xSize="3600" ySize="3600" />
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="0">/Volumes/Extreme SSD/Projects/OpenBareMap/data/regions/norway-north/copernicus/Copernicus_DSM_COG_10_N67_00_E022_00_DEM.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1800" RasterYSize="3600" DataType="Float32" BlockXSize="1024" BlockYSize="1024" />
+      <SrcRect xOff="0" yOff="0" xSize="1800" ySize="3600" />
+      <DstRect xOff="64800" yOff="14400.5" xSize="3600" ySize="3600" />
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="0">/Volumes/Extreme SSD/Projects/OpenBareMap/data/regions/norway-north/copernicus/Copernicus_DSM_COG_10_N67_00_E023_00_DEM.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1800" RasterYSize="3600" DataType="Float32" BlockXSize="1024" BlockYSize="1024" />
+      <SrcRect xOff="0" yOff="0" xSize="1800" ySize="3600" />
+      <DstRect xOff="68400" yOff="14400.5" xSize="3600" ySize="3600" />
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="0">/Volumes/Extreme SSD/Projects/OpenBareMap/data/regions/norway-north/copernicus/Copernicus_DSM_COG_10_N67_00_E024_00_DEM.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1800" RasterYSize="3600" DataType="Float32" BlockXSize="1024" BlockYSize="1024" />
+      <SrcRect xOff="0" yOff="0" xSize="1800" ySize="3600" />
+      <DstRect xOff="72000" yOff="14400.5" xSize="3600" ySize="3600" />
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="0">/Volumes/Extreme SSD/Projects/OpenBareMap/data/regions/norway-north/copernicus/Copernicus_DSM_COG_10_N67_00_E025_00_DEM.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1800" RasterYSize="3600" DataType="Float32" BlockXSize="1024" BlockYSize="1024" />
+      <SrcRect xOff="0" yOff="0" xSize="1800" ySize="3600" />
+      <DstRect xOff="75600" yOff="14400.5" xSize="3600" ySize="3600" />
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="0">/Volumes/Extreme SSD/Projects/OpenBareMap/data/regions/norway-north/copernicus/Copernicus_DSM_COG_10_N67_00_E026_00_DEM.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1800" RasterYSize="3600" DataType="Float32" BlockXSize="1024" BlockYSize="1024" />
+      <SrcRect xOff="0" yOff="0" xSize="1800" ySize="3600" />
+      <DstRect xOff="79200" yOff="14400.5" xSize="3600" ySize="3600" />
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="0">/Volumes/Extreme SSD/Projects/OpenBareMap/data/regions/norway-north/copernicus/Copernicus_DSM_COG_10_N67_00_E027_00_DEM.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1800" RasterYSize="3600" DataType="Float32" BlockXSize="1024" BlockYSize="1024" />
+      <SrcRect xOff="0" yOff="0" xSize="1800" ySize="3600" />
+      <DstRect xOff="82800" yOff="14400.5" xSize="3600" ySize="3600" />
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="0">/Volumes/Extreme SSD/Projects/OpenBareMap/data/regions/norway-north/copernicus/Copernicus_DSM_COG_10_N67_00_E028_00_DEM.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1800" RasterYSize="3600" DataType="Float32" BlockXSize="1024" BlockYSize="1024" />
+      <SrcRect xOff="0" yOff="0" xSize="1800" ySize="3600" />
+      <DstRect xOff="86400" yOff="14400.5" xSize="3600" ySize="3600" />
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="0">/Volumes/Extreme SSD/Projects/OpenBareMap/data/regions/norway-north/copernicus/Copernicus_DSM_COG_10_N67_00_E029_00_DEM.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1800" RasterYSize="3600" DataType="Float32" BlockXSize="1024" BlockYSize="1024" />
+      <SrcRect xOff="0" yOff="0" xSize="1800" ySize="3600" />
+      <DstRect xOff="90000" yOff="14400.5" xSize="3600" ySize="3600" />
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="0">/Volumes/Extreme SSD/Projects/OpenBareMap/data/regions/norway-north/copernicus/Copernicus_DSM_COG_10_N67_00_E030_00_DEM.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1800" RasterYSize="3600" DataType="Float32" BlockXSize="1024" BlockYSize="1024" />
+      <SrcRect xOff="0" yOff="0" xSize="1800" ySize="3600" />
+      <DstRect xOff="93600" yOff="14400.5" xSize="3600" ySize="3600" />
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="0">/Volumes/Extreme SSD/Projects/OpenBareMap/data/regions/norway-north/copernicus/Copernicus_DSM_COG_10_N67_00_E031_00_DEM.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1800" RasterYSize="3600" DataType="Float32" BlockXSize="1024" BlockYSize="1024" />
+      <SrcRect xOff="0" yOff="0" xSize="1800" ySize="3600" />
+      <DstRect xOff="97200" yOff="14400.5" xSize="3600" ySize="3600" />
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="0">/Volumes/Extreme SSD/Projects/OpenBareMap/data/regions/norway-north/copernicus/Copernicus_DSM_COG_10_N67_00_E032_00_DEM.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1800" RasterYSize="3600" DataType="Float32" BlockXSize="1024" BlockYSize="1024" />
+      <SrcRect xOff="0" yOff="0" xSize="1800" ySize="3600" />
+      <DstRect xOff="100800" yOff="14400.5" xSize="3600" ySize="3600" />
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="0">/Volumes/Extreme SSD/Projects/OpenBareMap/data/regions/norway-central/copernicus/Copernicus_DSM_COG_10_N68_00_E012_00_DEM.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1800" RasterYSize="3600" DataType="Float32" BlockXSize="1024" BlockYSize="1024" />
+      <SrcRect xOff="0" yOff="0" xSize="1800" ySize="3600" />
+      <DstRect xOff="28800" yOff="10800.5" xSize="3600" ySize="3600" />
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="0">/Volumes/Extreme SSD/Projects/OpenBareMap/data/regions/norway-central/copernicus/Copernicus_DSM_COG_10_N68_00_E013_00_DEM.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1800" RasterYSize="3600" DataType="Float32" BlockXSize="1024" BlockYSize="1024" />
+      <SrcRect xOff="0" yOff="0" xSize="1800" ySize="3600" />
+      <DstRect xOff="32400" yOff="10800.5" xSize="3600" ySize="3600" />
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="0">/Volumes/Extreme SSD/Projects/OpenBareMap/data/regions/norway-central/copernicus/Copernicus_DSM_COG_10_N68_00_E014_00_DEM.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1800" RasterYSize="3600" DataType="Float32" BlockXSize="1024" BlockYSize="1024" />
+      <SrcRect xOff="0" yOff="0" xSize="1800" ySize="3600" />
+      <DstRect xOff="36000" yOff="10800.5" xSize="3600" ySize="3600" />
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="0">/Volumes/Extreme SSD/Projects/OpenBareMap/data/regions/norway-central/copernicus/Copernicus_DSM_COG_10_N68_00_E015_00_DEM.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1800" RasterYSize="3600" DataType="Float32" BlockXSize="1024" BlockYSize="1024" />
+      <SrcRect xOff="0" yOff="0" xSize="1800" ySize="3600" />
+      <DstRect xOff="39600" yOff="10800.5" xSize="3600" ySize="3600" />
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="0">/Volumes/Extreme SSD/Projects/OpenBareMap/data/regions/norway-central/copernicus/Copernicus_DSM_COG_10_N68_00_E016_00_DEM.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1800" RasterYSize="3600" DataType="Float32" BlockXSize="1024" BlockYSize="1024" />
+      <SrcRect xOff="0" yOff="0" xSize="1800" ySize="3600" />
+      <DstRect xOff="43200" yOff="10800.5" xSize="3600" ySize="3600" />
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="0">/Volumes/Extreme SSD/Projects/OpenBareMap/data/regions/norway-central/copernicus/Copernicus_DSM_COG_10_N68_00_E017_00_DEM.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1800" RasterYSize="3600" DataType="Float32" BlockXSize="1024" BlockYSize="1024" />
+      <SrcRect xOff="0" yOff="0" xSize="1800" ySize="3600" />
+      <DstRect xOff="46800" yOff="10800.5" xSize="3600" ySize="3600" />
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="0">/Volumes/Extreme SSD/Projects/OpenBareMap/data/regions/norway-central/copernicus/Copernicus_DSM_COG_10_N68_00_E018_00_DEM.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1800" RasterYSize="3600" DataType="Float32" BlockXSize="1024" BlockYSize="1024" />
+      <SrcRect xOff="0" yOff="0" xSize="1800" ySize="3600" />
+      <DstRect xOff="50400" yOff="10800.5" xSize="3600" ySize="3600" />
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="0">/Volumes/Extreme SSD/Projects/OpenBareMap/data/regions/norway-central/copernicus/Copernicus_DSM_COG_10_N68_00_E019_00_DEM.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1800" RasterYSize="3600" DataType="Float32" BlockXSize="1024" BlockYSize="1024" />
+      <SrcRect xOff="0" yOff="0" xSize="1800" ySize="3600" />
+      <DstRect xOff="54000" yOff="10800.5" xSize="3600" ySize="3600" />
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="0">/Volumes/Extreme SSD/Projects/OpenBareMap/data/regions/norway-north/copernicus/Copernicus_DSM_COG_10_N68_00_E020_00_DEM.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1800" RasterYSize="3600" DataType="Float32" BlockXSize="1024" BlockYSize="1024" />
+      <SrcRect xOff="0" yOff="0" xSize="1800" ySize="3600" />
+      <DstRect xOff="57600" yOff="10800.5" xSize="3600" ySize="3600" />
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="0">/Volumes/Extreme SSD/Projects/OpenBareMap/data/regions/norway-north/copernicus/Copernicus_DSM_COG_10_N68_00_E021_00_DEM.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1800" RasterYSize="3600" DataType="Float32" BlockXSize="1024" BlockYSize="1024" />
+      <SrcRect xOff="0" yOff="0" xSize="1800" ySize="3600" />
+      <DstRect xOff="61200" yOff="10800.5" xSize="3600" ySize="3600" />
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="0">/Volumes/Extreme SSD/Projects/OpenBareMap/data/regions/norway-north/copernicus/Copernicus_DSM_COG_10_N68_00_E022_00_DEM.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1800" RasterYSize="3600" DataType="Float32" BlockXSize="1024" BlockYSize="1024" />
+      <SrcRect xOff="0" yOff="0" xSize="1800" ySize="3600" />
+      <DstRect xOff="64800" yOff="10800.5" xSize="3600" ySize="3600" />
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="0">/Volumes/Extreme SSD/Projects/OpenBareMap/data/regions/norway-north/copernicus/Copernicus_DSM_COG_10_N68_00_E023_00_DEM.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1800" RasterYSize="3600" DataType="Float32" BlockXSize="1024" BlockYSize="1024" />
+      <SrcRect xOff="0" yOff="0" xSize="1800" ySize="3600" />
+      <DstRect xOff="68400" yOff="10800.5" xSize="3600" ySize="3600" />
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="0">/Volumes/Extreme SSD/Projects/OpenBareMap/data/regions/norway-north/copernicus/Copernicus_DSM_COG_10_N68_00_E024_00_DEM.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1800" RasterYSize="3600" DataType="Float32" BlockXSize="1024" BlockYSize="1024" />
+      <SrcRect xOff="0" yOff="0" xSize="1800" ySize="3600" />
+      <DstRect xOff="72000" yOff="10800.5" xSize="3600" ySize="3600" />
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="0">/Volumes/Extreme SSD/Projects/OpenBareMap/data/regions/norway-north/copernicus/Copernicus_DSM_COG_10_N68_00_E025_00_DEM.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1800" RasterYSize="3600" DataType="Float32" BlockXSize="1024" BlockYSize="1024" />
+      <SrcRect xOff="0" yOff="0" xSize="1800" ySize="3600" />
+      <DstRect xOff="75600" yOff="10800.5" xSize="3600" ySize="3600" />
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="0">/Volumes/Extreme SSD/Projects/OpenBareMap/data/regions/norway-north/copernicus/Copernicus_DSM_COG_10_N68_00_E026_00_DEM.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1800" RasterYSize="3600" DataType="Float32" BlockXSize="1024" BlockYSize="1024" />
+      <SrcRect xOff="0" yOff="0" xSize="1800" ySize="3600" />
+      <DstRect xOff="79200" yOff="10800.5" xSize="3600" ySize="3600" />
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="0">/Volumes/Extreme SSD/Projects/OpenBareMap/data/regions/norway-north/copernicus/Copernicus_DSM_COG_10_N68_00_E027_00_DEM.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1800" RasterYSize="3600" DataType="Float32" BlockXSize="1024" BlockYSize="1024" />
+      <SrcRect xOff="0" yOff="0" xSize="1800" ySize="3600" />
+      <DstRect xOff="82800" yOff="10800.5" xSize="3600" ySize="3600" />
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="0">/Volumes/Extreme SSD/Projects/OpenBareMap/data/regions/norway-north/copernicus/Copernicus_DSM_COG_10_N68_00_E028_00_DEM.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1800" RasterYSize="3600" DataType="Float32" BlockXSize="1024" BlockYSize="1024" />
+      <SrcRect xOff="0" yOff="0" xSize="1800" ySize="3600" />
+      <DstRect xOff="86400" yOff="10800.5" xSize="3600" ySize="3600" />
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="0">/Volumes/Extreme SSD/Projects/OpenBareMap/data/regions/norway-north/copernicus/Copernicus_DSM_COG_10_N68_00_E029_00_DEM.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1800" RasterYSize="3600" DataType="Float32" BlockXSize="1024" BlockYSize="1024" />
+      <SrcRect xOff="0" yOff="0" xSize="1800" ySize="3600" />
+      <DstRect xOff="90000" yOff="10800.5" xSize="3600" ySize="3600" />
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="0">/Volumes/Extreme SSD/Projects/OpenBareMap/data/regions/norway-north/copernicus/Copernicus_DSM_COG_10_N68_00_E030_00_DEM.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1800" RasterYSize="3600" DataType="Float32" BlockXSize="1024" BlockYSize="1024" />
+      <SrcRect xOff="0" yOff="0" xSize="1800" ySize="3600" />
+      <DstRect xOff="93600" yOff="10800.5" xSize="3600" ySize="3600" />
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="0">/Volumes/Extreme SSD/Projects/OpenBareMap/data/regions/norway-north/copernicus/Copernicus_DSM_COG_10_N68_00_E031_00_DEM.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1800" RasterYSize="3600" DataType="Float32" BlockXSize="1024" BlockYSize="1024" />
+      <SrcRect xOff="0" yOff="0" xSize="1800" ySize="3600" />
+      <DstRect xOff="97200" yOff="10800.5" xSize="3600" ySize="3600" />
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="0">/Volumes/Extreme SSD/Projects/OpenBareMap/data/regions/norway-north/copernicus/Copernicus_DSM_COG_10_N68_00_E032_00_DEM.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1800" RasterYSize="3600" DataType="Float32" BlockXSize="1024" BlockYSize="1024" />
+      <SrcRect xOff="0" yOff="0" xSize="1800" ySize="3600" />
+      <DstRect xOff="100800" yOff="10800.5" xSize="3600" ySize="3600" />
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="0">/Volumes/Extreme SSD/Projects/OpenBareMap/data/regions/norway-north/copernicus/Copernicus_DSM_COG_10_N69_00_E014_00_DEM.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1800" RasterYSize="3600" DataType="Float32" BlockXSize="1024" BlockYSize="1024" />
+      <SrcRect xOff="0" yOff="0" xSize="1800" ySize="3600" />
+      <DstRect xOff="36000" yOff="7200.50000000003" xSize="3600" ySize="3600" />
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="0">/Volumes/Extreme SSD/Projects/OpenBareMap/data/regions/norway-north/copernicus/Copernicus_DSM_COG_10_N69_00_E015_00_DEM.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1800" RasterYSize="3600" DataType="Float32" BlockXSize="1024" BlockYSize="1024" />
+      <SrcRect xOff="0" yOff="0" xSize="1800" ySize="3600" />
+      <DstRect xOff="39600" yOff="7200.50000000003" xSize="3600" ySize="3600" />
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="0">/Volumes/Extreme SSD/Projects/OpenBareMap/data/regions/norway-north/copernicus/Copernicus_DSM_COG_10_N69_00_E016_00_DEM.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1800" RasterYSize="3600" DataType="Float32" BlockXSize="1024" BlockYSize="1024" />
+      <SrcRect xOff="0" yOff="0" xSize="1800" ySize="3600" />
+      <DstRect xOff="43200" yOff="7200.50000000003" xSize="3600" ySize="3600" />
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="0">/Volumes/Extreme SSD/Projects/OpenBareMap/data/regions/norway-north/copernicus/Copernicus_DSM_COG_10_N69_00_E017_00_DEM.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1800" RasterYSize="3600" DataType="Float32" BlockXSize="1024" BlockYSize="1024" />
+      <SrcRect xOff="0" yOff="0" xSize="1800" ySize="3600" />
+      <DstRect xOff="46800" yOff="7200.50000000003" xSize="3600" ySize="3600" />
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="0">/Volumes/Extreme SSD/Projects/OpenBareMap/data/regions/norway-north/copernicus/Copernicus_DSM_COG_10_N69_00_E018_00_DEM.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1800" RasterYSize="3600" DataType="Float32" BlockXSize="1024" BlockYSize="1024" />
+      <SrcRect xOff="0" yOff="0" xSize="1800" ySize="3600" />
+      <DstRect xOff="50400" yOff="7200.50000000003" xSize="3600" ySize="3600" />
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="0">/Volumes/Extreme SSD/Projects/OpenBareMap/data/regions/norway-north/copernicus/Copernicus_DSM_COG_10_N69_00_E019_00_DEM.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1800" RasterYSize="3600" DataType="Float32" BlockXSize="1024" BlockYSize="1024" />
+      <SrcRect xOff="0" yOff="0" xSize="1800" ySize="3600" />
+      <DstRect xOff="54000" yOff="7200.50000000003" xSize="3600" ySize="3600" />
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="0">/Volumes/Extreme SSD/Projects/OpenBareMap/data/regions/norway-north/copernicus/Copernicus_DSM_COG_10_N69_00_E020_00_DEM.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1800" RasterYSize="3600" DataType="Float32" BlockXSize="1024" BlockYSize="1024" />
+      <SrcRect xOff="0" yOff="0" xSize="1800" ySize="3600" />
+      <DstRect xOff="57600" yOff="7200.50000000003" xSize="3600" ySize="3600" />
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="0">/Volumes/Extreme SSD/Projects/OpenBareMap/data/regions/norway-north/copernicus/Copernicus_DSM_COG_10_N69_00_E021_00_DEM.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1800" RasterYSize="3600" DataType="Float32" BlockXSize="1024" BlockYSize="1024" />
+      <SrcRect xOff="0" yOff="0" xSize="1800" ySize="3600" />
+      <DstRect xOff="61200" yOff="7200.50000000003" xSize="3600" ySize="3600" />
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="0">/Volumes/Extreme SSD/Projects/OpenBareMap/data/regions/norway-north/copernicus/Copernicus_DSM_COG_10_N69_00_E022_00_DEM.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1800" RasterYSize="3600" DataType="Float32" BlockXSize="1024" BlockYSize="1024" />
+      <SrcRect xOff="0" yOff="0" xSize="1800" ySize="3600" />
+      <DstRect xOff="64800" yOff="7200.50000000003" xSize="3600" ySize="3600" />
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="0">/Volumes/Extreme SSD/Projects/OpenBareMap/data/regions/norway-north/copernicus/Copernicus_DSM_COG_10_N69_00_E023_00_DEM.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1800" RasterYSize="3600" DataType="Float32" BlockXSize="1024" BlockYSize="1024" />
+      <SrcRect xOff="0" yOff="0" xSize="1800" ySize="3600" />
+      <DstRect xOff="68400" yOff="7200.50000000003" xSize="3600" ySize="3600" />
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="0">/Volumes/Extreme SSD/Projects/OpenBareMap/data/regions/norway-north/copernicus/Copernicus_DSM_COG_10_N69_00_E024_00_DEM.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1800" RasterYSize="3600" DataType="Float32" BlockXSize="1024" BlockYSize="1024" />
+      <SrcRect xOff="0" yOff="0" xSize="1800" ySize="3600" />
+      <DstRect xOff="72000" yOff="7200.50000000003" xSize="3600" ySize="3600" />
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="0">/Volumes/Extreme SSD/Projects/OpenBareMap/data/regions/norway-north/copernicus/Copernicus_DSM_COG_10_N69_00_E025_00_DEM.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1800" RasterYSize="3600" DataType="Float32" BlockXSize="1024" BlockYSize="1024" />
+      <SrcRect xOff="0" yOff="0" xSize="1800" ySize="3600" />
+      <DstRect xOff="75600" yOff="7200.50000000003" xSize="3600" ySize="3600" />
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="0">/Volumes/Extreme SSD/Projects/OpenBareMap/data/regions/norway-north/copernicus/Copernicus_DSM_COG_10_N69_00_E026_00_DEM.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1800" RasterYSize="3600" DataType="Float32" BlockXSize="1024" BlockYSize="1024" />
+      <SrcRect xOff="0" yOff="0" xSize="1800" ySize="3600" />
+      <DstRect xOff="79200" yOff="7200.50000000003" xSize="3600" ySize="3600" />
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="0">/Volumes/Extreme SSD/Projects/OpenBareMap/data/regions/norway-north/copernicus/Copernicus_DSM_COG_10_N69_00_E027_00_DEM.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1800" RasterYSize="3600" DataType="Float32" BlockXSize="1024" BlockYSize="1024" />
+      <SrcRect xOff="0" yOff="0" xSize="1800" ySize="3600" />
+      <DstRect xOff="82800" yOff="7200.50000000003" xSize="3600" ySize="3600" />
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="0">/Volumes/Extreme SSD/Projects/OpenBareMap/data/regions/norway-north/copernicus/Copernicus_DSM_COG_10_N69_00_E028_00_DEM.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1800" RasterYSize="3600" DataType="Float32" BlockXSize="1024" BlockYSize="1024" />
+      <SrcRect xOff="0" yOff="0" xSize="1800" ySize="3600" />
+      <DstRect xOff="86400" yOff="7200.50000000003" xSize="3600" ySize="3600" />
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="0">/Volumes/Extreme SSD/Projects/OpenBareMap/data/regions/norway-north/copernicus/Copernicus_DSM_COG_10_N69_00_E029_00_DEM.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1800" RasterYSize="3600" DataType="Float32" BlockXSize="1024" BlockYSize="1024" />
+      <SrcRect xOff="0" yOff="0" xSize="1800" ySize="3600" />
+      <DstRect xOff="90000" yOff="7200.50000000003" xSize="3600" ySize="3600" />
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="0">/Volumes/Extreme SSD/Projects/OpenBareMap/data/regions/norway-north/copernicus/Copernicus_DSM_COG_10_N69_00_E030_00_DEM.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1800" RasterYSize="3600" DataType="Float32" BlockXSize="1024" BlockYSize="1024" />
+      <SrcRect xOff="0" yOff="0" xSize="1800" ySize="3600" />
+      <DstRect xOff="93600" yOff="7200.50000000003" xSize="3600" ySize="3600" />
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="0">/Volumes/Extreme SSD/Projects/OpenBareMap/data/regions/norway-north/copernicus/Copernicus_DSM_COG_10_N69_00_E031_00_DEM.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1800" RasterYSize="3600" DataType="Float32" BlockXSize="1024" BlockYSize="1024" />
+      <SrcRect xOff="0" yOff="0" xSize="1800" ySize="3600" />
+      <DstRect xOff="97200" yOff="7200.50000000003" xSize="3600" ySize="3600" />
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="0">/Volumes/Extreme SSD/Projects/OpenBareMap/data/regions/norway-north/copernicus/Copernicus_DSM_COG_10_N69_00_E032_00_DEM.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1800" RasterYSize="3600" DataType="Float32" BlockXSize="1024" BlockYSize="1024" />
+      <SrcRect xOff="0" yOff="0" xSize="1800" ySize="3600" />
+      <DstRect xOff="100800" yOff="7200.50000000003" xSize="3600" ySize="3600" />
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="0">/Volumes/Extreme SSD/Projects/OpenBareMap/data/regions/norway-north/copernicus/Copernicus_DSM_COG_10_N70_00_E018_00_DEM.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1200" RasterYSize="3600" DataType="Float32" BlockXSize="1024" BlockYSize="1024" />
+      <SrcRect xOff="0" yOff="0" xSize="1200" ySize="3600" />
+      <DstRect xOff="50399.5" yOff="3600.50000000003" xSize="3600" ySize="3600" />
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="0">/Volumes/Extreme SSD/Projects/OpenBareMap/data/regions/norway-north/copernicus/Copernicus_DSM_COG_10_N70_00_E019_00_DEM.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1200" RasterYSize="3600" DataType="Float32" BlockXSize="1024" BlockYSize="1024" />
+      <SrcRect xOff="0" yOff="0" xSize="1200" ySize="3600" />
+      <DstRect xOff="53999.5" yOff="3600.50000000003" xSize="3600" ySize="3600" />
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="0">/Volumes/Extreme SSD/Projects/OpenBareMap/data/regions/norway-north/copernicus/Copernicus_DSM_COG_10_N70_00_E020_00_DEM.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1200" RasterYSize="3600" DataType="Float32" BlockXSize="1024" BlockYSize="1024" />
+      <SrcRect xOff="0" yOff="0" xSize="1200" ySize="3600" />
+      <DstRect xOff="57599.5" yOff="3600.50000000003" xSize="3600" ySize="3600" />
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="0">/Volumes/Extreme SSD/Projects/OpenBareMap/data/regions/norway-north/copernicus/Copernicus_DSM_COG_10_N70_00_E021_00_DEM.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1200" RasterYSize="3600" DataType="Float32" BlockXSize="1024" BlockYSize="1024" />
+      <SrcRect xOff="0" yOff="0" xSize="1200" ySize="3600" />
+      <DstRect xOff="61199.5" yOff="3600.50000000003" xSize="3600" ySize="3600" />
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="0">/Volumes/Extreme SSD/Projects/OpenBareMap/data/regions/norway-north/copernicus/Copernicus_DSM_COG_10_N70_00_E022_00_DEM.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1200" RasterYSize="3600" DataType="Float32" BlockXSize="1024" BlockYSize="1024" />
+      <SrcRect xOff="0" yOff="0" xSize="1200" ySize="3600" />
+      <DstRect xOff="64799.5" yOff="3600.50000000003" xSize="3600" ySize="3600" />
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="0">/Volumes/Extreme SSD/Projects/OpenBareMap/data/regions/norway-north/copernicus/Copernicus_DSM_COG_10_N70_00_E023_00_DEM.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1200" RasterYSize="3600" DataType="Float32" BlockXSize="1024" BlockYSize="1024" />
+      <SrcRect xOff="0" yOff="0" xSize="1200" ySize="3600" />
+      <DstRect xOff="68399.5" yOff="3600.50000000003" xSize="3600" ySize="3600" />
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="0">/Volumes/Extreme SSD/Projects/OpenBareMap/data/regions/norway-north/copernicus/Copernicus_DSM_COG_10_N70_00_E024_00_DEM.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1200" RasterYSize="3600" DataType="Float32" BlockXSize="1024" BlockYSize="1024" />
+      <SrcRect xOff="0" yOff="0" xSize="1200" ySize="3600" />
+      <DstRect xOff="71999.5" yOff="3600.50000000003" xSize="3600" ySize="3600" />
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="0">/Volumes/Extreme SSD/Projects/OpenBareMap/data/regions/norway-north/copernicus/Copernicus_DSM_COG_10_N70_00_E025_00_DEM.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1200" RasterYSize="3600" DataType="Float32" BlockXSize="1024" BlockYSize="1024" />
+      <SrcRect xOff="0" yOff="0" xSize="1200" ySize="3600" />
+      <DstRect xOff="75599.5" yOff="3600.50000000003" xSize="3600" ySize="3600" />
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="0">/Volumes/Extreme SSD/Projects/OpenBareMap/data/regions/norway-north/copernicus/Copernicus_DSM_COG_10_N70_00_E026_00_DEM.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1200" RasterYSize="3600" DataType="Float32" BlockXSize="1024" BlockYSize="1024" />
+      <SrcRect xOff="0" yOff="0" xSize="1200" ySize="3600" />
+      <DstRect xOff="79199.5" yOff="3600.50000000003" xSize="3600" ySize="3600" />
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="0">/Volumes/Extreme SSD/Projects/OpenBareMap/data/regions/norway-north/copernicus/Copernicus_DSM_COG_10_N70_00_E027_00_DEM.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1200" RasterYSize="3600" DataType="Float32" BlockXSize="1024" BlockYSize="1024" />
+      <SrcRect xOff="0" yOff="0" xSize="1200" ySize="3600" />
+      <DstRect xOff="82799.5" yOff="3600.50000000003" xSize="3600" ySize="3600" />
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="0">/Volumes/Extreme SSD/Projects/OpenBareMap/data/regions/norway-north/copernicus/Copernicus_DSM_COG_10_N70_00_E028_00_DEM.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1200" RasterYSize="3600" DataType="Float32" BlockXSize="1024" BlockYSize="1024" />
+      <SrcRect xOff="0" yOff="0" xSize="1200" ySize="3600" />
+      <DstRect xOff="86399.5" yOff="3600.50000000003" xSize="3600" ySize="3600" />
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="0">/Volumes/Extreme SSD/Projects/OpenBareMap/data/regions/norway-north/copernicus/Copernicus_DSM_COG_10_N70_00_E029_00_DEM.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1200" RasterYSize="3600" DataType="Float32" BlockXSize="1024" BlockYSize="1024" />
+      <SrcRect xOff="0" yOff="0" xSize="1200" ySize="3600" />
+      <DstRect xOff="89999.5" yOff="3600.50000000003" xSize="3600" ySize="3600" />
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="0">/Volumes/Extreme SSD/Projects/OpenBareMap/data/regions/norway-north/copernicus/Copernicus_DSM_COG_10_N70_00_E030_00_DEM.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1200" RasterYSize="3600" DataType="Float32" BlockXSize="1024" BlockYSize="1024" />
+      <SrcRect xOff="0" yOff="0" xSize="1200" ySize="3600" />
+      <DstRect xOff="93599.5" yOff="3600.50000000003" xSize="3600" ySize="3600" />
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="0">/Volumes/Extreme SSD/Projects/OpenBareMap/data/regions/norway-north/copernicus/Copernicus_DSM_COG_10_N70_00_E031_00_DEM.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1200" RasterYSize="3600" DataType="Float32" BlockXSize="1024" BlockYSize="1024" />
+      <SrcRect xOff="0" yOff="0" xSize="1200" ySize="3600" />
+      <DstRect xOff="97199.5" yOff="3600.50000000003" xSize="3600" ySize="3600" />
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="0">/Volumes/Extreme SSD/Projects/OpenBareMap/data/regions/norway-north/copernicus/Copernicus_DSM_COG_10_N71_00_E022_00_DEM.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1200" RasterYSize="3600" DataType="Float32" BlockXSize="1024" BlockYSize="1024" />
+      <SrcRect xOff="0" yOff="0" xSize="1200" ySize="3600" />
+      <DstRect xOff="64799.5" yOff="0.500000000033651" xSize="3600" ySize="3600" />
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="0">/Volumes/Extreme SSD/Projects/OpenBareMap/data/regions/norway-north/copernicus/Copernicus_DSM_COG_10_N71_00_E023_00_DEM.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1200" RasterYSize="3600" DataType="Float32" BlockXSize="1024" BlockYSize="1024" />
+      <SrcRect xOff="0" yOff="0" xSize="1200" ySize="3600" />
+      <DstRect xOff="68399.5" yOff="0.500000000033651" xSize="3600" ySize="3600" />
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="0">/Volumes/Extreme SSD/Projects/OpenBareMap/data/regions/norway-north/copernicus/Copernicus_DSM_COG_10_N71_00_E024_00_DEM.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1200" RasterYSize="3600" DataType="Float32" BlockXSize="1024" BlockYSize="1024" />
+      <SrcRect xOff="0" yOff="0" xSize="1200" ySize="3600" />
+      <DstRect xOff="71999.5" yOff="0.500000000033651" xSize="3600" ySize="3600" />
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="0">/Volumes/Extreme SSD/Projects/OpenBareMap/data/regions/norway-north/copernicus/Copernicus_DSM_COG_10_N71_00_E025_00_DEM.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1200" RasterYSize="3600" DataType="Float32" BlockXSize="1024" BlockYSize="1024" />
+      <SrcRect xOff="0" yOff="0" xSize="1200" ySize="3600" />
+      <DstRect xOff="75599.5" yOff="0.500000000033651" xSize="3600" ySize="3600" />
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="0">/Volumes/Extreme SSD/Projects/OpenBareMap/data/regions/norway-north/copernicus/Copernicus_DSM_COG_10_N71_00_E026_00_DEM.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1200" RasterYSize="3600" DataType="Float32" BlockXSize="1024" BlockYSize="1024" />
+      <SrcRect xOff="0" yOff="0" xSize="1200" ySize="3600" />
+      <DstRect xOff="79199.5" yOff="0.500000000033651" xSize="3600" ySize="3600" />
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="0">/Volumes/Extreme SSD/Projects/OpenBareMap/data/regions/norway-north/copernicus/Copernicus_DSM_COG_10_N71_00_E027_00_DEM.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1200" RasterYSize="3600" DataType="Float32" BlockXSize="1024" BlockYSize="1024" />
+      <SrcRect xOff="0" yOff="0" xSize="1200" ySize="3600" />
+      <DstRect xOff="82799.5" yOff="0.500000000033651" xSize="3600" ySize="3600" />
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="0">/Volumes/Extreme SSD/Projects/OpenBareMap/data/regions/norway-north/copernicus/Copernicus_DSM_COG_10_N71_00_E028_00_DEM.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1200" RasterYSize="3600" DataType="Float32" BlockXSize="1024" BlockYSize="1024" />
+      <SrcRect xOff="0" yOff="0" xSize="1200" ySize="3600" />
+      <DstRect xOff="86399.5" yOff="0.500000000033651" xSize="3600" ySize="3600" />
+    </SimpleSource>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="0">/Volumes/Extreme SSD/Projects/OpenBareMap/data/regions/norway-north/copernicus/Copernicus_DSM_COG_10_N71_00_E029_00_DEM.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="1200" RasterYSize="3600" DataType="Float32" BlockXSize="1024" BlockYSize="1024" />
+      <SrcRect xOff="0" yOff="0" xSize="1200" ySize="3600" />
+      <DstRect xOff="89999.5" yOff="0.500000000033651" xSize="3600" ySize="3600" />
+    </SimpleSource>
+  </VRTRasterBand>
+</VRTDataset>

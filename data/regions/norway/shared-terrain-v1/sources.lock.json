@@ -1,0 +1,1337 @@
+{
+  "alignment": "One common EPSG:4326 VRT, fixed 1/3600 degree pixels, target-aligned grid",
+  "builderSHA256": "8c4c8a2d36637c70af744e3649b57a164a7d91d2672debca4d93999f577bf8ae",
+  "format": "openbaremap-shared-norway-terrain-v1",
+  "resolutionDegrees": 0.0002777777777777778,
+  "sources": [
+    {
+      "bytes": 23600714,
+      "path": "data/regions/norway-south/copernicus/Copernicus_DSM_COG_10_N56_00_E008_00_DEM.tif",
+      "sha256": "fea0917876f0de8dbb173ba5f2506e896e511a57dda1ee31acd2e240a79c51fe",
+      "url": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N56_00_E008_00_DEM/Copernicus_DSM_COG_10_N56_00_E008_00_DEM.tif"
+    },
+    {
+      "bytes": 30899685,
+      "path": "data/regions/norway-south/copernicus/Copernicus_DSM_COG_10_N56_00_E009_00_DEM.tif",
+      "sha256": "ce6117d059519d54db3359c619bbf7b4075ad214665f48eadd869a8db763f037",
+      "url": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N56_00_E009_00_DEM/Copernicus_DSM_COG_10_N56_00_E009_00_DEM.tif"
+    },
+    {
+      "bytes": 16682979,
+      "path": "data/regions/norway-south/copernicus/Copernicus_DSM_COG_10_N56_00_E010_00_DEM.tif",
+      "sha256": "3b10a93fbefb48471f9e1d5228b91a153bfaff5f36fb5ae6759269352fdfd439",
+      "url": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N56_00_E010_00_DEM/Copernicus_DSM_COG_10_N56_00_E010_00_DEM.tif"
+    },
+    {
+      "bytes": 257923,
+      "path": "data/regions/norway-south/copernicus/Copernicus_DSM_COG_10_N56_00_E011_00_DEM.tif",
+      "sha256": "c8f266528a938a446880917f2ab404f063bb4760820a78d90f3b80ce6ec5a5b7",
+      "url": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N56_00_E011_00_DEM/Copernicus_DSM_COG_10_N56_00_E011_00_DEM.tif"
+    },
+    {
+      "bytes": 13451984,
+      "path": "data/regions/norway-south/copernicus/Copernicus_DSM_COG_10_N56_00_E012_00_DEM.tif",
+      "sha256": "e6a1417ef1fcf54960323a5c9df220e7d91c7dd7fae817c093231d7b94886d91",
+      "url": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N56_00_E012_00_DEM/Copernicus_DSM_COG_10_N56_00_E012_00_DEM.tif"
+    },
+    {
+      "bytes": 31349515,
+      "path": "data/regions/norway-south/copernicus/Copernicus_DSM_COG_10_N56_00_E013_00_DEM.tif",
+      "sha256": "b88e175227cf8c4c053833737d86231962e6e1b6306303d40cb80a0177619c44",
+      "url": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N56_00_E013_00_DEM/Copernicus_DSM_COG_10_N56_00_E013_00_DEM.tif"
+    },
+    {
+      "bytes": 28674283,
+      "path": "data/regions/norway-south/copernicus/Copernicus_DSM_COG_10_N56_00_E014_00_DEM.tif",
+      "sha256": "54ad4ccd25f04333e8219bc18b48820db31fd53a5a4a236505a9cf699d43da77",
+      "url": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N56_00_E014_00_DEM/Copernicus_DSM_COG_10_N56_00_E014_00_DEM.tif"
+    },
+    {
+      "bytes": 76886,
+      "path": "data/regions/norway-south/copernicus/Copernicus_DSM_COG_10_N57_00_E006_00_DEM.tif",
+      "sha256": "bd5e0b4363d9df1d326166ca520372803b469520a65b85f77f2595b16bb7c98a",
+      "url": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N57_00_E006_00_DEM/Copernicus_DSM_COG_10_N57_00_E006_00_DEM.tif"
+    },
+    {
+      "bytes": 240590,
+      "path": "data/regions/norway-south/copernicus/Copernicus_DSM_COG_10_N57_00_E007_00_DEM.tif",
+      "sha256": "04a413827bac51c74784b4083193427e815970319aadc09bd123b2cf860d44f6",
+      "url": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N57_00_E007_00_DEM/Copernicus_DSM_COG_10_N57_00_E007_00_DEM.tif"
+    },
+    {
+      "bytes": 2067756,
+      "path": "data/regions/norway-south/copernicus/Copernicus_DSM_COG_10_N57_00_E008_00_DEM.tif",
+      "sha256": "3e4f3673df6b2fd04e510ae3aa4a4cdfc701803052c11e99bd43e4a22dc8a9b2",
+      "url": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N57_00_E008_00_DEM/Copernicus_DSM_COG_10_N57_00_E008_00_DEM.tif"
+    },
+    {
+      "bytes": 9467171,
+      "path": "data/regions/norway-south/copernicus/Copernicus_DSM_COG_10_N57_00_E009_00_DEM.tif",
+      "sha256": "441dc153716680ae37becf48000d8a89311f3e05db7fcbc38c78b82e3a552d63",
+      "url": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N57_00_E009_00_DEM/Copernicus_DSM_COG_10_N57_00_E009_00_DEM.tif"
+    },
+    {
+      "bytes": 10733760,
+      "path": "data/regions/norway-south/copernicus/Copernicus_DSM_COG_10_N57_00_E010_00_DEM.tif",
+      "sha256": "8145cc788be86257d5d52ed888a2f2cba8e23aff5536f5bf0bd737242c8372d1",
+      "url": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N57_00_E010_00_DEM/Copernicus_DSM_COG_10_N57_00_E010_00_DEM.tif"
+    },
+    {
+      "bytes": 5668561,
+      "path": "data/regions/norway-south/copernicus/Copernicus_DSM_COG_10_N57_00_E011_00_DEM.tif",
+      "sha256": "04cc37917e97648ef45f822971db8ca496ebbb1563f7d2ab10b695a35523bec3",
+      "url": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N57_00_E011_00_DEM/Copernicus_DSM_COG_10_N57_00_E011_00_DEM.tif"
+    },
+    {
+      "bytes": 30096508,
+      "path": "data/regions/norway-south/copernicus/Copernicus_DSM_COG_10_N57_00_E012_00_DEM.tif",
+      "sha256": "4a5eef5035a20fc434ea64af82e0565f52777cb36016ae209223bee024404eba",
+      "url": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N57_00_E012_00_DEM/Copernicus_DSM_COG_10_N57_00_E012_00_DEM.tif"
+    },
+    {
+      "bytes": 29801494,
+      "path": "data/regions/norway-south/copernicus/Copernicus_DSM_COG_10_N57_00_E013_00_DEM.tif",
+      "sha256": "d65bdc6f55ca88555a20dd21b666548077c13237e259672d032d587d65623bea",
+      "url": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N57_00_E013_00_DEM/Copernicus_DSM_COG_10_N57_00_E013_00_DEM.tif"
+    },
+    {
+      "bytes": 28334019,
+      "path": "data/regions/norway-south/copernicus/Copernicus_DSM_COG_10_N57_00_E014_00_DEM.tif",
+      "sha256": "04eabe222124eaece2fc69af2d07b269b4ac3875080342e8286872b6a931268c",
+      "url": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N57_00_E014_00_DEM/Copernicus_DSM_COG_10_N57_00_E014_00_DEM.tif"
+    },
+    {
+      "bytes": 6798499,
+      "path": "data/regions/norway-south/copernicus/Copernicus_DSM_COG_10_N58_00_E005_00_DEM.tif",
+      "sha256": "0a5d10d0ab269796a45d2386f0f1096aabdaf75936cfda192dd60b7e6690eed5",
+      "url": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N58_00_E005_00_DEM/Copernicus_DSM_COG_10_N58_00_E005_00_DEM.tif"
+    },
+    {
+      "bytes": 23851627,
+      "path": "data/regions/norway-south/copernicus/Copernicus_DSM_COG_10_N58_00_E006_00_DEM.tif",
+      "sha256": "30d5d2fdc861bbc93574fdb20da19ce56c97e71fa9c645059891ce9523366dfc",
+      "url": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N58_00_E006_00_DEM/Copernicus_DSM_COG_10_N58_00_E006_00_DEM.tif"
+    },
+    {
+      "bytes": 29540039,
+      "path": "data/regions/norway-south/copernicus/Copernicus_DSM_COG_10_N58_00_E007_00_DEM.tif",
+      "sha256": "dd40766887ae9b1c4638e6c5603f91357cb5adbf9f7aed44b51300489258ea0d",
+      "url": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N58_00_E007_00_DEM/Copernicus_DSM_COG_10_N58_00_E007_00_DEM.tif"
+    },
+    {
+      "bytes": 22622018,
+      "path": "data/regions/norway-south/copernicus/Copernicus_DSM_COG_10_N58_00_E008_00_DEM.tif",
+      "sha256": "257c8fa00b03100842b8a85dc94edae6c93efda0afac60a32074b27ba41a7631",
+      "url": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N58_00_E008_00_DEM/Copernicus_DSM_COG_10_N58_00_E008_00_DEM.tif"
+    },
+    {
+      "bytes": 5607261,
+      "path": "data/regions/norway-south/copernicus/Copernicus_DSM_COG_10_N58_00_E009_00_DEM.tif",
+      "sha256": "6dea30793807c9f5a79cd88a0308ff42048d84c6efdce4fe71abd5f8e2014950",
+      "url": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N58_00_E009_00_DEM/Copernicus_DSM_COG_10_N58_00_E009_00_DEM.tif"
+    },
+    {
+      "bytes": 191410,
+      "path": "data/regions/norway-south/copernicus/Copernicus_DSM_COG_10_N58_00_E010_00_DEM.tif",
+      "sha256": "854842bf921227e10c6d3b530efa386cc58cb04cf7145d12987b7b622b93fae1",
+      "url": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N58_00_E010_00_DEM/Copernicus_DSM_COG_10_N58_00_E010_00_DEM.tif"
+    },
+    {
+      "bytes": 23852490,
+      "path": "data/regions/norway-south/copernicus/Copernicus_DSM_COG_10_N58_00_E011_00_DEM.tif",
+      "sha256": "d1356c3abddc160a5e67454e5bf72328f2b0f3fe9e179e756afc51614a5b8c3b",
+      "url": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N58_00_E011_00_DEM/Copernicus_DSM_COG_10_N58_00_E011_00_DEM.tif"
+    },
+    {
+      "bytes": 24259435,
+      "path": "data/regions/norway-south/copernicus/Copernicus_DSM_COG_10_N58_00_E012_00_DEM.tif",
+      "sha256": "9e8ce232527fd93b1a73be79056f2d942c1d337e401bddcf05134b41df1100a1",
+      "url": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N58_00_E012_00_DEM/Copernicus_DSM_COG_10_N58_00_E012_00_DEM.tif"
+    },
+    {
+      "bytes": 22153075,
+      "path": "data/regions/norway-south/copernicus/Copernicus_DSM_COG_10_N58_00_E013_00_DEM.tif",
+      "sha256": "66047a4142e901a2ee3bb4de70f09e49f9172b73c6a49e575e68d56214fff5e7",
+      "url": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N58_00_E013_00_DEM/Copernicus_DSM_COG_10_N58_00_E013_00_DEM.tif"
+    },
+    {
+      "bytes": 22599970,
+      "path": "data/regions/norway-south/copernicus/Copernicus_DSM_COG_10_N58_00_E014_00_DEM.tif",
+      "sha256": "2584f9ea81e405be7cc4199ad5406e8f59b867d1ae7a204e6d625a5333f8db5a",
+      "url": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N58_00_E014_00_DEM/Copernicus_DSM_COG_10_N58_00_E014_00_DEM.tif"
+    },
+    {
+      "bytes": 124717,
+      "path": "data/regions/norway-south/copernicus/Copernicus_DSM_COG_10_N59_00_E004_00_DEM.tif",
+      "sha256": "407fd8465c64250c3d5013bb839f2725d3e68dd86d414a2d958ad0fd6a6d1b7b",
+      "url": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N59_00_E004_00_DEM/Copernicus_DSM_COG_10_N59_00_E004_00_DEM.tif"
+    },
+    {
+      "bytes": 17280323,
+      "path": "data/regions/norway-south/copernicus/Copernicus_DSM_COG_10_N59_00_E005_00_DEM.tif",
+      "sha256": "020c6dbefe2297153d494017e0c8f40498ae727526de9b37410982db7553f97d",
+      "url": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N59_00_E005_00_DEM/Copernicus_DSM_COG_10_N59_00_E005_00_DEM.tif"
+    },
+    {
+      "bytes": 27739036,
+      "path": "data/regions/norway-south/copernicus/Copernicus_DSM_COG_10_N59_00_E006_00_DEM.tif",
+      "sha256": "aba22050a78c81b2f7540663fd52d6b9c4f50c27b8930e7cab1b38139848e35b",
+      "url": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N59_00_E006_00_DEM/Copernicus_DSM_COG_10_N59_00_E006_00_DEM.tif"
+    },
+    {
+      "bytes": 27595254,
+      "path": "data/regions/norway-south/copernicus/Copernicus_DSM_COG_10_N59_00_E007_00_DEM.tif",
+      "sha256": "4ff62ddda60635c0fc6c3a2973958ab53fa65cd0f53a165885f2ecba0c3a87b4",
+      "url": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N59_00_E007_00_DEM/Copernicus_DSM_COG_10_N59_00_E007_00_DEM.tif"
+    },
+    {
+      "bytes": 27773583,
+      "path": "data/regions/norway-south/copernicus/Copernicus_DSM_COG_10_N59_00_E008_00_DEM.tif",
+      "sha256": "f364540699ff248090a58a24beeff393486ec7b2c9ac69c92784f01c36866219",
+      "url": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N59_00_E008_00_DEM/Copernicus_DSM_COG_10_N59_00_E008_00_DEM.tif"
+    },
+    {
+      "bytes": 30671507,
+      "path": "data/regions/norway-south/copernicus/Copernicus_DSM_COG_10_N59_00_E009_00_DEM.tif",
+      "sha256": "1782d4d19d9e2f799a76f30336270cf8e9bb957897e5f7a6086a39c550786dcc",
+      "url": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N59_00_E009_00_DEM/Copernicus_DSM_COG_10_N59_00_E009_00_DEM.tif"
+    },
+    {
+      "bytes": 25612714,
+      "path": "data/regions/norway-south/copernicus/Copernicus_DSM_COG_10_N59_00_E010_00_DEM.tif",
+      "sha256": "00ee16561aff6d02c6b596df8bc4f7b6e95bd9d4728180942d82be8a4a1b3add",
+      "url": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N59_00_E010_00_DEM/Copernicus_DSM_COG_10_N59_00_E010_00_DEM.tif"
+    },
+    {
+      "bytes": 30078863,
+      "path": "data/regions/norway-south/copernicus/Copernicus_DSM_COG_10_N59_00_E011_00_DEM.tif",
+      "sha256": "a3746bebc93dfdeb9bf34f4d92949d50f99dee5f0c86bbcead00f60ccdad6734",
+      "url": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N59_00_E011_00_DEM/Copernicus_DSM_COG_10_N59_00_E011_00_DEM.tif"
+    },
+    {
+      "bytes": 28915287,
+      "path": "data/regions/norway-south/copernicus/Copernicus_DSM_COG_10_N59_00_E012_00_DEM.tif",
+      "sha256": "30b98c2199c71c5bb14d71563ecd4590e5314a90e5474eedf44b854f12a5c4e7",
+      "url": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N59_00_E012_00_DEM/Copernicus_DSM_COG_10_N59_00_E012_00_DEM.tif"
+    },
+    {
+      "bytes": 22499390,
+      "path": "data/regions/norway-south/copernicus/Copernicus_DSM_COG_10_N59_00_E013_00_DEM.tif",
+      "sha256": "a459f28f15504087f7c55e9203cd28ad2736009c8215d86d9eba95f93de2d80e",
+      "url": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N59_00_E013_00_DEM/Copernicus_DSM_COG_10_N59_00_E013_00_DEM.tif"
+    },
+    {
+      "bytes": 29282171,
+      "path": "data/regions/norway-south/copernicus/Copernicus_DSM_COG_10_N59_00_E014_00_DEM.tif",
+      "sha256": "14cae984ed6988227628a4e5468301974e9e5ae3290e0a395b95c087b0bcb3ba",
+      "url": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N59_00_E014_00_DEM/Copernicus_DSM_COG_10_N59_00_E014_00_DEM.tif"
+    },
+    {
+      "bytes": 2184522,
+      "path": "data/regions/norway-south/copernicus/Copernicus_DSM_COG_10_N60_00_E004_00_DEM.tif",
+      "sha256": "f7dc0d555e73de173a2b4b84a3ca26971e6fc4280f77d415cd6352cb00bef040",
+      "url": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N60_00_E004_00_DEM/Copernicus_DSM_COG_10_N60_00_E004_00_DEM.tif"
+    },
+    {
+      "bytes": 20173593,
+      "path": "data/regions/norway-south/copernicus/Copernicus_DSM_COG_10_N60_00_E005_00_DEM.tif",
+      "sha256": "8ba3cb657bbad6cc9ce460599d4949cf5e355ca2339a5495a74604e486603a4d",
+      "url": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N60_00_E005_00_DEM/Copernicus_DSM_COG_10_N60_00_E005_00_DEM.tif"
+    },
+    {
+      "bytes": 20882137,
+      "path": "data/regions/norway-south/copernicus/Copernicus_DSM_COG_10_N60_00_E006_00_DEM.tif",
+      "sha256": "8a51a4d211336e0d474c1eef969647256fe67a436779f8f48e1bb6e683b4326e",
+      "url": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N60_00_E006_00_DEM/Copernicus_DSM_COG_10_N60_00_E006_00_DEM.tif"
+    },
+    {
+      "bytes": 20354786,
+      "path": "data/regions/norway-south/copernicus/Copernicus_DSM_COG_10_N60_00_E007_00_DEM.tif",
+      "sha256": "c944705ce545f2ab1da4ca304f4e174b00c45ea239c0fe6a8cd775c08979a86f",
+      "url": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N60_00_E007_00_DEM/Copernicus_DSM_COG_10_N60_00_E007_00_DEM.tif"
+    },
+    {
+      "bytes": 20398728,
+      "path": "data/regions/norway-south/copernicus/Copernicus_DSM_COG_10_N60_00_E008_00_DEM.tif",
+      "sha256": "c8b69e45f9b3648faf45670eadc4a53c4cad015aade08dbf6d8c13be86dae212",
+      "url": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N60_00_E008_00_DEM/Copernicus_DSM_COG_10_N60_00_E008_00_DEM.tif"
+    },
+    {
+      "bytes": 22206789,
+      "path": "data/regions/norway-south/copernicus/Copernicus_DSM_COG_10_N60_00_E009_00_DEM.tif",
+      "sha256": "2a1bc944b6e98bf720a6cbe5ec5e58739920a980b1bc397c100725469a749ae8",
+      "url": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N60_00_E009_00_DEM/Copernicus_DSM_COG_10_N60_00_E009_00_DEM.tif"
+    },
+    {
+      "bytes": 21547276,
+      "path": "data/regions/norway-south/copernicus/Copernicus_DSM_COG_10_N60_00_E010_00_DEM.tif",
+      "sha256": "afdb99e1eaefb713ada9ac74e44949d5dea6c7c91e94ce4f74387bd3746c08e1",
+      "url": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N60_00_E010_00_DEM/Copernicus_DSM_COG_10_N60_00_E010_00_DEM.tif"
+    },
+    {
+      "bytes": 22251500,
+      "path": "data/regions/norway-south/copernicus/Copernicus_DSM_COG_10_N60_00_E011_00_DEM.tif",
+      "sha256": "4b6498a35eecf3647ad5ba8f0f82b0980e21c62f70ac4b11f6a0b6aaf61a1904",
+      "url": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N60_00_E011_00_DEM/Copernicus_DSM_COG_10_N60_00_E011_00_DEM.tif"
+    },
+    {
+      "bytes": 22497953,
+      "path": "data/regions/norway-south/copernicus/Copernicus_DSM_COG_10_N60_00_E012_00_DEM.tif",
+      "sha256": "de28c4399232ad16422aabd5b7b72f25583ab80a5a802ec7bedf8176f97e5dbe",
+      "url": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N60_00_E012_00_DEM/Copernicus_DSM_COG_10_N60_00_E012_00_DEM.tif"
+    },
+    {
+      "bytes": 22163282,
+      "path": "data/regions/norway-south/copernicus/Copernicus_DSM_COG_10_N60_00_E013_00_DEM.tif",
+      "sha256": "6ba3bc11c57f5d102f8fb4e42cb6d75228123fe78efba9ed9c6bb95957e141a6",
+      "url": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N60_00_E013_00_DEM/Copernicus_DSM_COG_10_N60_00_E013_00_DEM.tif"
+    },
+    {
+      "bytes": 21268122,
+      "path": "data/regions/norway-south/copernicus/Copernicus_DSM_COG_10_N60_00_E014_00_DEM.tif",
+      "sha256": "01d303fc99b85dbd8e99ce9515b3bd2550e99fee24de24703f49b4c19f0e2a05",
+      "url": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N60_00_E014_00_DEM/Copernicus_DSM_COG_10_N60_00_E014_00_DEM.tif"
+    },
+    {
+      "bytes": 2616319,
+      "path": "data/regions/norway-south/copernicus/Copernicus_DSM_COG_10_N61_00_E004_00_DEM.tif",
+      "sha256": "3770a21c7c4884c40f0951db87ec7223bfabbb154be0d5273617ebbb59e4bafc",
+      "url": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N61_00_E004_00_DEM/Copernicus_DSM_COG_10_N61_00_E004_00_DEM.tif"
+    },
+    {
+      "bytes": 19766726,
+      "path": "data/regions/norway-south/copernicus/Copernicus_DSM_COG_10_N61_00_E005_00_DEM.tif",
+      "sha256": "67b5eebfef52c8244b073519894b95b59a6b4f1d4d50cabfea42ca28d2e9fa3b",
+      "url": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N61_00_E005_00_DEM/Copernicus_DSM_COG_10_N61_00_E005_00_DEM.tif"
+    },
+    {
+      "bytes": 20670736,
+      "path": "data/regions/norway-south/copernicus/Copernicus_DSM_COG_10_N61_00_E006_00_DEM.tif",
+      "sha256": "b617d5b083658a57556197dad11775cc91acba039c52197497316e1b9553d2df",
+      "url": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N61_00_E006_00_DEM/Copernicus_DSM_COG_10_N61_00_E006_00_DEM.tif"
+    },
+    {
+      "bytes": 20970634,
+      "path": "data/regions/norway-south/copernicus/Copernicus_DSM_COG_10_N61_00_E007_00_DEM.tif",
+      "sha256": "b8a0aa72c7e7cff78cdc741c0ae10b785e84dd62b10914b6bbd14b8f6da5a936",
+      "url": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N61_00_E007_00_DEM/Copernicus_DSM_COG_10_N61_00_E007_00_DEM.tif"
+    },
+    {
+      "bytes": 20348384,
+      "path": "data/regions/norway-south/copernicus/Copernicus_DSM_COG_10_N61_00_E008_00_DEM.tif",
+      "sha256": "f031f03618761773edeb546bf5594f4f97ad6a120af91845dfcc1b8edc02a1d1",
+      "url": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N61_00_E008_00_DEM/Copernicus_DSM_COG_10_N61_00_E008_00_DEM.tif"
+    },
+    {
+      "bytes": 20928502,
+      "path": "data/regions/norway-south/copernicus/Copernicus_DSM_COG_10_N61_00_E009_00_DEM.tif",
+      "sha256": "11e65135254628886d82043cebfcbe7a7140515e2f784d0867cf61050c643588",
+      "url": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N61_00_E009_00_DEM/Copernicus_DSM_COG_10_N61_00_E009_00_DEM.tif"
+    },
+    {
+      "bytes": 21170652,
+      "path": "data/regions/norway-south/copernicus/Copernicus_DSM_COG_10_N61_00_E010_00_DEM.tif",
+      "sha256": "6d6ad113e13609440e87213359cbf000f3249ec98e176158e38608cf11799ec2",
+      "url": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N61_00_E010_00_DEM/Copernicus_DSM_COG_10_N61_00_E010_00_DEM.tif"
+    },
+    {
+      "bytes": 20981153,
+      "path": "data/regions/norway-south/copernicus/Copernicus_DSM_COG_10_N61_00_E011_00_DEM.tif",
+      "sha256": "448698ae3669403b4f9d08f4734f0a4499d758edd20cd212afae5f90d11b94cf",
+      "url": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N61_00_E011_00_DEM/Copernicus_DSM_COG_10_N61_00_E011_00_DEM.tif"
+    },
+    {
+      "bytes": 21142802,
+      "path": "data/regions/norway-south/copernicus/Copernicus_DSM_COG_10_N61_00_E012_00_DEM.tif",
+      "sha256": "a468ab2d9f5ad1ca7c57232e20a319bec3f0215c902ad10ebaf0437728d5fac5",
+      "url": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N61_00_E012_00_DEM/Copernicus_DSM_COG_10_N61_00_E012_00_DEM.tif"
+    },
+    {
+      "bytes": 21047528,
+      "path": "data/regions/norway-south/copernicus/Copernicus_DSM_COG_10_N61_00_E013_00_DEM.tif",
+      "sha256": "e77cb217094cd1a893fda640f06a547c67ac41e8271932e45808d0bfa0913686",
+      "url": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N61_00_E013_00_DEM/Copernicus_DSM_COG_10_N61_00_E013_00_DEM.tif"
+    },
+    {
+      "bytes": 21565137,
+      "path": "data/regions/norway-south/copernicus/Copernicus_DSM_COG_10_N61_00_E014_00_DEM.tif",
+      "sha256": "6911da0992db4e2826078fb465c9db15524cf6a84ad4144a6ec8a36e06b5416f",
+      "url": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N61_00_E014_00_DEM/Copernicus_DSM_COG_10_N61_00_E014_00_DEM.tif"
+    },
+    {
+      "bytes": 68036,
+      "path": "data/regions/norway-south/copernicus/Copernicus_DSM_COG_10_N62_00_E004_00_DEM.tif",
+      "sha256": "fc30d4ad6adf7a85ccb1ce32ab4da0fa848b84da8a34618e23598443ade3ac1f",
+      "url": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N62_00_E004_00_DEM/Copernicus_DSM_COG_10_N62_00_E004_00_DEM.tif"
+    },
+    {
+      "bytes": 4986456,
+      "path": "data/regions/norway-south/copernicus/Copernicus_DSM_COG_10_N62_00_E005_00_DEM.tif",
+      "sha256": "096a8ffee1b1487d3227ef229eb7a1dcef84c730180254d4c0081c26636daedd",
+      "url": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N62_00_E005_00_DEM/Copernicus_DSM_COG_10_N62_00_E005_00_DEM.tif"
+    },
+    {
+      "bytes": 13588787,
+      "path": "data/regions/norway-south/copernicus/Copernicus_DSM_COG_10_N62_00_E006_00_DEM.tif",
+      "sha256": "8d7902f7a6d070e5ca41e58e6bdbb7a6415883e6992cce017e3257e7661d15d2",
+      "url": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N62_00_E006_00_DEM/Copernicus_DSM_COG_10_N62_00_E006_00_DEM.tif"
+    },
+    {
+      "bytes": 20361909,
+      "path": "data/regions/norway-south/copernicus/Copernicus_DSM_COG_10_N62_00_E007_00_DEM.tif",
+      "sha256": "b38ade86ae00078b2316ab0712782f86331a96d5ca134689983def7fd9187340",
+      "url": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N62_00_E007_00_DEM/Copernicus_DSM_COG_10_N62_00_E007_00_DEM.tif"
+    },
+    {
+      "bytes": 20601302,
+      "path": "data/regions/norway-south/copernicus/Copernicus_DSM_COG_10_N62_00_E008_00_DEM.tif",
+      "sha256": "3eec7251c411455bd476d29601b737fa97357e2bad6f9c9f403f615576029af9",
+      "url": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N62_00_E008_00_DEM/Copernicus_DSM_COG_10_N62_00_E008_00_DEM.tif"
+    },
+    {
+      "bytes": 20750128,
+      "path": "data/regions/norway-south/copernicus/Copernicus_DSM_COG_10_N62_00_E009_00_DEM.tif",
+      "sha256": "b295ddeb6f62fa35d7efe677a31191c7a84b2686c6f98f4915bd9b0f756484b4",
+      "url": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N62_00_E009_00_DEM/Copernicus_DSM_COG_10_N62_00_E009_00_DEM.tif"
+    },
+    {
+      "bytes": 21275670,
+      "path": "data/regions/norway-south/copernicus/Copernicus_DSM_COG_10_N62_00_E010_00_DEM.tif",
+      "sha256": "d799b03024e52893ce263ba74c28690298ac031d2188284db2945b30b80553f3",
+      "url": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N62_00_E010_00_DEM/Copernicus_DSM_COG_10_N62_00_E010_00_DEM.tif"
+    },
+    {
+      "bytes": 19871588,
+      "path": "data/regions/norway-south/copernicus/Copernicus_DSM_COG_10_N62_00_E011_00_DEM.tif",
+      "sha256": "d822f28efc58af1ae46c6d39b47baea5f4aef4cf164a1c69c9ffe0b9f8b3eb3a",
+      "url": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N62_00_E011_00_DEM/Copernicus_DSM_COG_10_N62_00_E011_00_DEM.tif"
+    },
+    {
+      "bytes": 20410558,
+      "path": "data/regions/norway-south/copernicus/Copernicus_DSM_COG_10_N62_00_E012_00_DEM.tif",
+      "sha256": "9f1fd09c90bfe21e94d371f479d23051ddf53c415209be4acd1f5ba59e7067c7",
+      "url": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N62_00_E012_00_DEM/Copernicus_DSM_COG_10_N62_00_E012_00_DEM.tif"
+    },
+    {
+      "bytes": 20532771,
+      "path": "data/regions/norway-south/copernicus/Copernicus_DSM_COG_10_N62_00_E013_00_DEM.tif",
+      "sha256": "7db4fe60e4cba099c323b7d90089e8657d6f3f4557cc116edeccb834a4bf3905",
+      "url": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N62_00_E013_00_DEM/Copernicus_DSM_COG_10_N62_00_E013_00_DEM.tif"
+    },
+    {
+      "bytes": 20632287,
+      "path": "data/regions/norway-south/copernicus/Copernicus_DSM_COG_10_N62_00_E014_00_DEM.tif",
+      "sha256": "c11d99b4d833b2fa35a4323ce14e1521e8e23eea455b97732426d1248ec227f7",
+      "url": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N62_00_E014_00_DEM/Copernicus_DSM_COG_10_N62_00_E014_00_DEM.tif"
+    },
+    {
+      "bytes": 21255013,
+      "path": "data/regions/norway-central/copernicus/Copernicus_DSM_COG_10_N62_00_E015_00_DEM.tif",
+      "sha256": "4776595b59ad070165e5889346d330b2c47afe6554134016b076aeeb4449a781",
+      "url": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N62_00_E015_00_DEM/Copernicus_DSM_COG_10_N62_00_E015_00_DEM.tif"
+    },
+    {
+      "bytes": 22157961,
+      "path": "data/regions/norway-central/copernicus/Copernicus_DSM_COG_10_N62_00_E016_00_DEM.tif",
+      "sha256": "584f76720e32260ab798e9cb66eac27c178285a16d39cd79582d1eead47d072c",
+      "url": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N62_00_E016_00_DEM/Copernicus_DSM_COG_10_N62_00_E016_00_DEM.tif"
+    },
+    {
+      "bytes": 17858978,
+      "path": "data/regions/norway-central/copernicus/Copernicus_DSM_COG_10_N62_00_E017_00_DEM.tif",
+      "sha256": "21ca8a460470bc288797fcd583a367a3c743c928b620a5e4d3dbdc55a5b1b7b9",
+      "url": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N62_00_E017_00_DEM/Copernicus_DSM_COG_10_N62_00_E017_00_DEM.tif"
+    },
+    {
+      "bytes": 2611966,
+      "path": "data/regions/norway-central/copernicus/Copernicus_DSM_COG_10_N62_00_E018_00_DEM.tif",
+      "sha256": "d46737632efe134fbf863de330e414c057c80976ed42a65d7e98bc0a92de5f04",
+      "url": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N62_00_E018_00_DEM/Copernicus_DSM_COG_10_N62_00_E018_00_DEM.tif"
+    },
+    {
+      "bytes": 50304,
+      "path": "data/regions/norway-central/copernicus/Copernicus_DSM_COG_10_N62_00_E019_00_DEM.tif",
+      "sha256": "34d719cc1670d7a37489b55e3d40b977481e9544291bdb2d9444801283cf54a8",
+      "url": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N62_00_E019_00_DEM/Copernicus_DSM_COG_10_N62_00_E019_00_DEM.tif"
+    },
+    {
+      "bytes": 50304,
+      "path": "data/regions/norway-south/copernicus/Copernicus_DSM_COG_10_N63_00_E006_00_DEM.tif",
+      "sha256": "b4e8fbb82d28ae7b5e59ad71512aae757b01718411eeebd2a3e534cbb14b3cd2",
+      "url": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N63_00_E006_00_DEM/Copernicus_DSM_COG_10_N63_00_E006_00_DEM.tif"
+    },
+    {
+      "bytes": 2380879,
+      "path": "data/regions/norway-south/copernicus/Copernicus_DSM_COG_10_N63_00_E007_00_DEM.tif",
+      "sha256": "4d771dd902f3998e88dbcf15272c151e17cd00b8b09b4050a5f24895d162934a",
+      "url": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N63_00_E007_00_DEM/Copernicus_DSM_COG_10_N63_00_E007_00_DEM.tif"
+    },
+    {
+      "bytes": 12422998,
+      "path": "data/regions/norway-south/copernicus/Copernicus_DSM_COG_10_N63_00_E008_00_DEM.tif",
+      "sha256": "74d7fa48646ad955594d02876970ea6147f834e8af8519408be61994f16272fd",
+      "url": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N63_00_E008_00_DEM/Copernicus_DSM_COG_10_N63_00_E008_00_DEM.tif"
+    },
+    {
+      "bytes": 15536490,
+      "path": "data/regions/norway-south/copernicus/Copernicus_DSM_COG_10_N63_00_E009_00_DEM.tif",
+      "sha256": "180c8d48ba632b666ee1190e666356a70596b6db3f6ab3afef29561a66415ee2",
+      "url": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N63_00_E009_00_DEM/Copernicus_DSM_COG_10_N63_00_E009_00_DEM.tif"
+    },
+    {
+      "bytes": 19833322,
+      "path": "data/regions/norway-south/copernicus/Copernicus_DSM_COG_10_N63_00_E010_00_DEM.tif",
+      "sha256": "eb04dab956d7174ef0c56ef9649d2b30d2e3aca5fdb21bee472d2d1c6ee85818",
+      "url": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N63_00_E010_00_DEM/Copernicus_DSM_COG_10_N63_00_E010_00_DEM.tif"
+    },
+    {
+      "bytes": 20942377,
+      "path": "data/regions/norway-south/copernicus/Copernicus_DSM_COG_10_N63_00_E011_00_DEM.tif",
+      "sha256": "0c09f7e7be6b26f048724fbfe01fa58e5e4d2819200922138113c3fd7fcea867",
+      "url": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N63_00_E011_00_DEM/Copernicus_DSM_COG_10_N63_00_E011_00_DEM.tif"
+    },
+    {
+      "bytes": 19842376,
+      "path": "data/regions/norway-south/copernicus/Copernicus_DSM_COG_10_N63_00_E012_00_DEM.tif",
+      "sha256": "a19e1e9d0edaaa3fa0687c6e1e42284096306bb93554b7ce7e3956c380949f43",
+      "url": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N63_00_E012_00_DEM/Copernicus_DSM_COG_10_N63_00_E012_00_DEM.tif"
+    },
+    {
+      "bytes": 20457236,
+      "path": "data/regions/norway-south/copernicus/Copernicus_DSM_COG_10_N63_00_E013_00_DEM.tif",
+      "sha256": "f18b2af841eefb16e37dfade1daddafe889aa48b612206e7bd65a201a51f1558",
+      "url": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N63_00_E013_00_DEM/Copernicus_DSM_COG_10_N63_00_E013_00_DEM.tif"
+    },
+    {
+      "bytes": 19602151,
+      "path": "data/regions/norway-south/copernicus/Copernicus_DSM_COG_10_N63_00_E014_00_DEM.tif",
+      "sha256": "ed60c762d9ed71c8ed1f466e649cafa63c679cf648ae7bb4ce34b349cc951dc1",
+      "url": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N63_00_E014_00_DEM/Copernicus_DSM_COG_10_N63_00_E014_00_DEM.tif"
+    },
+    {
+      "bytes": 21184984,
+      "path": "data/regions/norway-central/copernicus/Copernicus_DSM_COG_10_N63_00_E015_00_DEM.tif",
+      "sha256": "32a26c0056346cdedb543a18d973b85c774f809b06a8bff51b6e37e3171bf39f",
+      "url": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N63_00_E015_00_DEM/Copernicus_DSM_COG_10_N63_00_E015_00_DEM.tif"
+    },
+    {
+      "bytes": 22135973,
+      "path": "data/regions/norway-central/copernicus/Copernicus_DSM_COG_10_N63_00_E016_00_DEM.tif",
+      "sha256": "e028020826b71e8e010e3b2156957ff6a4c5347195ded24d2c7476cf0efd1bab",
+      "url": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N63_00_E016_00_DEM/Copernicus_DSM_COG_10_N63_00_E016_00_DEM.tif"
+    },
+    {
+      "bytes": 22283994,
+      "path": "data/regions/norway-central/copernicus/Copernicus_DSM_COG_10_N63_00_E017_00_DEM.tif",
+      "sha256": "0b33d5a37046de3d72a18d64305a7f2e7b2e2c72e3901ae96f9ac19e3375b1e4",
+      "url": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N63_00_E017_00_DEM/Copernicus_DSM_COG_10_N63_00_E017_00_DEM.tif"
+    },
+    {
+      "bytes": 20967744,
+      "path": "data/regions/norway-central/copernicus/Copernicus_DSM_COG_10_N63_00_E018_00_DEM.tif",
+      "sha256": "bad8570e48af5a53965e3fdb8d852faa540521fa6250e21f065a09d226f75d04",
+      "url": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N63_00_E018_00_DEM/Copernicus_DSM_COG_10_N63_00_E018_00_DEM.tif"
+    },
+    {
+      "bytes": 13610501,
+      "path": "data/regions/norway-central/copernicus/Copernicus_DSM_COG_10_N63_00_E019_00_DEM.tif",
+      "sha256": "6d260f2bdb49ae10cf65964518f49cb144df972d0392c318efa946e189a80701",
+      "url": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N63_00_E019_00_DEM/Copernicus_DSM_COG_10_N63_00_E019_00_DEM.tif"
+    },
+    {
+      "bytes": 50304,
+      "path": "data/regions/norway-south/copernicus/Copernicus_DSM_COG_10_N64_00_E008_00_DEM.tif",
+      "sha256": "fb27e424f5cbf7e1976a31d9e5b159c2cb518b8f3c5afc4b8e579f6f0e7d3bac",
+      "url": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N64_00_E008_00_DEM/Copernicus_DSM_COG_10_N64_00_E008_00_DEM.tif"
+    },
+    {
+      "bytes": 279489,
+      "path": "data/regions/norway-south/copernicus/Copernicus_DSM_COG_10_N64_00_E009_00_DEM.tif",
+      "sha256": "2db6d7016b52d021a32725909714947e24327eab32999c06f8c687caa517c66f",
+      "url": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N64_00_E009_00_DEM/Copernicus_DSM_COG_10_N64_00_E009_00_DEM.tif"
+    },
+    {
+      "bytes": 9833191,
+      "path": "data/regions/norway-south/copernicus/Copernicus_DSM_COG_10_N64_00_E010_00_DEM.tif",
+      "sha256": "e494aa1183420211beb710929e51da70248d57705f42191f124b4982dfef3620",
+      "url": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N64_00_E010_00_DEM/Copernicus_DSM_COG_10_N64_00_E010_00_DEM.tif"
+    },
+    {
+      "bytes": 20341854,
+      "path": "data/regions/norway-south/copernicus/Copernicus_DSM_COG_10_N64_00_E011_00_DEM.tif",
+      "sha256": "3387df0b1a94608330d5740eb1ca25ed815e78bc71e0ce000b6452e4966c9853",
+      "url": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N64_00_E011_00_DEM/Copernicus_DSM_COG_10_N64_00_E011_00_DEM.tif"
+    },
+    {
+      "bytes": 22219743,
+      "path": "data/regions/norway-south/copernicus/Copernicus_DSM_COG_10_N64_00_E012_00_DEM.tif",
+      "sha256": "e77cfb71a98dc65a196ece76f5c4e44c9c7f16f584d82a2f0833e7f228acb674",
+      "url": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N64_00_E012_00_DEM/Copernicus_DSM_COG_10_N64_00_E012_00_DEM.tif"
+    },
+    {
+      "bytes": 20437292,
+      "path": "data/regions/norway-south/copernicus/Copernicus_DSM_COG_10_N64_00_E013_00_DEM.tif",
+      "sha256": "40ec1cf43cf366b016166ca0d3856f398faf620aa4b752bf9a35fde5b12a620d",
+      "url": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N64_00_E013_00_DEM/Copernicus_DSM_COG_10_N64_00_E013_00_DEM.tif"
+    },
+    {
+      "bytes": 20563874,
+      "path": "data/regions/norway-south/copernicus/Copernicus_DSM_COG_10_N64_00_E014_00_DEM.tif",
+      "sha256": "add932b4418908a308e70cbd734a1cd73644fe2fdf6604d98cb3627749ae5f1a",
+      "url": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N64_00_E014_00_DEM/Copernicus_DSM_COG_10_N64_00_E014_00_DEM.tif"
+    },
+    {
+      "bytes": 20572481,
+      "path": "data/regions/norway-central/copernicus/Copernicus_DSM_COG_10_N64_00_E015_00_DEM.tif",
+      "sha256": "344da292efe941a30b93bedd97584f90630d80a4a8b83b6b27648138af1e6a56",
+      "url": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N64_00_E015_00_DEM/Copernicus_DSM_COG_10_N64_00_E015_00_DEM.tif"
+    },
+    {
+      "bytes": 20838354,
+      "path": "data/regions/norway-central/copernicus/Copernicus_DSM_COG_10_N64_00_E016_00_DEM.tif",
+      "sha256": "d5f5e131974657c276ee338353e82656e1fd522f407de4016d739fd7c94725ee",
+      "url": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N64_00_E016_00_DEM/Copernicus_DSM_COG_10_N64_00_E016_00_DEM.tif"
+    },
+    {
+      "bytes": 20999889,
+      "path": "data/regions/norway-central/copernicus/Copernicus_DSM_COG_10_N64_00_E017_00_DEM.tif",
+      "sha256": "e9dd7450f4f4a81e8110324c7bde6d7b6faf05391245f2a6c4d0e1d9be124897",
+      "url": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N64_00_E017_00_DEM/Copernicus_DSM_COG_10_N64_00_E017_00_DEM.tif"
+    },
+    {
+      "bytes": 21466931,
+      "path": "data/regions/norway-central/copernicus/Copernicus_DSM_COG_10_N64_00_E018_00_DEM.tif",
+      "sha256": "3010207ffc60b2db54ef45663903b9b9372b6569c8d99be7aad5fde5beb96395",
+      "url": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N64_00_E018_00_DEM/Copernicus_DSM_COG_10_N64_00_E018_00_DEM.tif"
+    },
+    {
+      "bytes": 22307681,
+      "path": "data/regions/norway-central/copernicus/Copernicus_DSM_COG_10_N64_00_E019_00_DEM.tif",
+      "sha256": "4114a3534b6d8c412650b19da3700ce90e85b71c405fbb5b1545b86be8d88e86",
+      "url": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N64_00_E019_00_DEM/Copernicus_DSM_COG_10_N64_00_E019_00_DEM.tif"
+    },
+    {
+      "bytes": 93750,
+      "path": "data/regions/norway-central/copernicus/Copernicus_DSM_COG_10_N65_00_E010_00_DEM.tif",
+      "sha256": "059cef88a7fc838c6e60919f7050255ed687a3fa23b22d6201bdcf0241dd9ce4",
+      "url": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N65_00_E010_00_DEM/Copernicus_DSM_COG_10_N65_00_E010_00_DEM.tif"
+    },
+    {
+      "bytes": 2620870,
+      "path": "data/regions/norway-central/copernicus/Copernicus_DSM_COG_10_N65_00_E011_00_DEM.tif",
+      "sha256": "8a3bde9ca294654f4909877c098c314da1cd17365be7c543b48ac505d0448243",
+      "url": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N65_00_E011_00_DEM/Copernicus_DSM_COG_10_N65_00_E011_00_DEM.tif"
+    },
+    {
+      "bytes": 17667309,
+      "path": "data/regions/norway-central/copernicus/Copernicus_DSM_COG_10_N65_00_E012_00_DEM.tif",
+      "sha256": "d2e8cbc9b083303573cb186726d035f01a99d9db47f95d4dc406b019cd3b2d1b",
+      "url": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N65_00_E012_00_DEM/Copernicus_DSM_COG_10_N65_00_E012_00_DEM.tif"
+    },
+    {
+      "bytes": 21768687,
+      "path": "data/regions/norway-central/copernicus/Copernicus_DSM_COG_10_N65_00_E013_00_DEM.tif",
+      "sha256": "ccd0e2fb0f69d3f38326815085a280514ca20ab049bdc40de866994ec73c0cee",
+      "url": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N65_00_E013_00_DEM/Copernicus_DSM_COG_10_N65_00_E013_00_DEM.tif"
+    },
+    {
+      "bytes": 20184456,
+      "path": "data/regions/norway-central/copernicus/Copernicus_DSM_COG_10_N65_00_E014_00_DEM.tif",
+      "sha256": "bbfaef5d9c9bcf936de05ffb7173a067c7f29b9f077380c69780aa7a30a0e703",
+      "url": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N65_00_E014_00_DEM/Copernicus_DSM_COG_10_N65_00_E014_00_DEM.tif"
+    },
+    {
+      "bytes": 20317790,
+      "path": "data/regions/norway-central/copernicus/Copernicus_DSM_COG_10_N65_00_E015_00_DEM.tif",
+      "sha256": "364cecb0f3a4d7a25fb063be2007ba7f53feb8cb0cdf7b90b15a6875eeb17a1e",
+      "url": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N65_00_E015_00_DEM/Copernicus_DSM_COG_10_N65_00_E015_00_DEM.tif"
+    },
+    {
+      "bytes": 20184502,
+      "path": "data/regions/norway-central/copernicus/Copernicus_DSM_COG_10_N65_00_E016_00_DEM.tif",
+      "sha256": "3e60a4196fb1047bf6c5c086faa97b4bc2ded42fca6d6b6fa941998ecc9f4427",
+      "url": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N65_00_E016_00_DEM/Copernicus_DSM_COG_10_N65_00_E016_00_DEM.tif"
+    },
+    {
+      "bytes": 20314460,
+      "path": "data/regions/norway-central/copernicus/Copernicus_DSM_COG_10_N65_00_E017_00_DEM.tif",
+      "sha256": "184dedb67f23c5bddb670670d113da2c3313cb091a7a8ee7c79ca27d7a651aba",
+      "url": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N65_00_E017_00_DEM/Copernicus_DSM_COG_10_N65_00_E017_00_DEM.tif"
+    },
+    {
+      "bytes": 20130061,
+      "path": "data/regions/norway-central/copernicus/Copernicus_DSM_COG_10_N65_00_E018_00_DEM.tif",
+      "sha256": "ece3366a7c450fa7563ea367fa3c52d5a62ed5553436ef84bc1a4bb453642105",
+      "url": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N65_00_E018_00_DEM/Copernicus_DSM_COG_10_N65_00_E018_00_DEM.tif"
+    },
+    {
+      "bytes": 21309245,
+      "path": "data/regions/norway-central/copernicus/Copernicus_DSM_COG_10_N65_00_E019_00_DEM.tif",
+      "sha256": "ab766f718171d2ce9c59a9ec325bb0c9647c5b4dbc5d37dbdc5b2534f5ff0ec6",
+      "url": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N65_00_E019_00_DEM/Copernicus_DSM_COG_10_N65_00_E019_00_DEM.tif"
+    },
+    {
+      "bytes": 50304,
+      "path": "data/regions/norway-central/copernicus/Copernicus_DSM_COG_10_N66_00_E010_00_DEM.tif",
+      "sha256": "7990eebb49ecbcd68373921cfd54578f8e2637a5aa2758843fb32b6f54a2d22c",
+      "url": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N66_00_E010_00_DEM/Copernicus_DSM_COG_10_N66_00_E010_00_DEM.tif"
+    },
+    {
+      "bytes": 145465,
+      "path": "data/regions/norway-central/copernicus/Copernicus_DSM_COG_10_N66_00_E011_00_DEM.tif",
+      "sha256": "74f1de79af464b9fc4c719ffb32c054f6279d0c2af961c2060a3d1fc11436cb2",
+      "url": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N66_00_E011_00_DEM/Copernicus_DSM_COG_10_N66_00_E011_00_DEM.tif"
+    },
+    {
+      "bytes": 4633626,
+      "path": "data/regions/norway-central/copernicus/Copernicus_DSM_COG_10_N66_00_E012_00_DEM.tif",
+      "sha256": "ff2f5f54aad3f9dcf6af1c3363227b89a65e9857a97bc6d9fb99cdb235be9653",
+      "url": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N66_00_E012_00_DEM/Copernicus_DSM_COG_10_N66_00_E012_00_DEM.tif"
+    },
+    {
+      "bytes": 17320448,
+      "path": "data/regions/norway-central/copernicus/Copernicus_DSM_COG_10_N66_00_E013_00_DEM.tif",
+      "sha256": "76e49a6778ab16db389923c5deda8b2ab231f5375ac1e8d9c525f115a05839d0",
+      "url": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N66_00_E013_00_DEM/Copernicus_DSM_COG_10_N66_00_E013_00_DEM.tif"
+    },
+    {
+      "bytes": 20880967,
+      "path": "data/regions/norway-central/copernicus/Copernicus_DSM_COG_10_N66_00_E014_00_DEM.tif",
+      "sha256": "ebea89cd63aa098920195bc3a7111b8790d15c2fb216526f763de8d10c34dfd8",
+      "url": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N66_00_E014_00_DEM/Copernicus_DSM_COG_10_N66_00_E014_00_DEM.tif"
+    },
+    {
+      "bytes": 20537571,
+      "path": "data/regions/norway-central/copernicus/Copernicus_DSM_COG_10_N66_00_E015_00_DEM.tif",
+      "sha256": "1be4fd26b19ae33c695965c3a4cfed4233e75c6f11f8015ac6cfcc6c40619ef6",
+      "url": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N66_00_E015_00_DEM/Copernicus_DSM_COG_10_N66_00_E015_00_DEM.tif"
+    },
+    {
+      "bytes": 20334539,
+      "path": "data/regions/norway-central/copernicus/Copernicus_DSM_COG_10_N66_00_E016_00_DEM.tif",
+      "sha256": "14a91c351a4dce7088f8452bd982240cc45b3b35204d8ae7a36661c3b4297a97",
+      "url": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N66_00_E016_00_DEM/Copernicus_DSM_COG_10_N66_00_E016_00_DEM.tif"
+    },
+    {
+      "bytes": 18976689,
+      "path": "data/regions/norway-central/copernicus/Copernicus_DSM_COG_10_N66_00_E017_00_DEM.tif",
+      "sha256": "28edbb4514a11df5661b6611d1a421c14344fad2a010afa6cc07d6e09041aa1d",
+      "url": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N66_00_E017_00_DEM/Copernicus_DSM_COG_10_N66_00_E017_00_DEM.tif"
+    },
+    {
+      "bytes": 20446040,
+      "path": "data/regions/norway-central/copernicus/Copernicus_DSM_COG_10_N66_00_E018_00_DEM.tif",
+      "sha256": "a0da58e78298759441b7bb212bd1c604b3edbe6115e481574af8bc133eb22470",
+      "url": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N66_00_E018_00_DEM/Copernicus_DSM_COG_10_N66_00_E018_00_DEM.tif"
+    },
+    {
+      "bytes": 20694860,
+      "path": "data/regions/norway-central/copernicus/Copernicus_DSM_COG_10_N66_00_E019_00_DEM.tif",
+      "sha256": "5ab896beaa5d0cff4709606fcb2001aa9b0c95ee2d206d5f8f1f90b311fb6844",
+      "url": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N66_00_E019_00_DEM/Copernicus_DSM_COG_10_N66_00_E019_00_DEM.tif"
+    },
+    {
+      "bytes": 21616313,
+      "path": "data/regions/norway-north/copernicus/Copernicus_DSM_COG_10_N66_00_E020_00_DEM.tif",
+      "sha256": "753f9e7158b6ab26aeabda3c0d56b79b32e94efc72f0d2eb529b3bd7d3a90921",
+      "url": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N66_00_E020_00_DEM/Copernicus_DSM_COG_10_N66_00_E020_00_DEM.tif"
+    },
+    {
+      "bytes": 22168840,
+      "path": "data/regions/norway-north/copernicus/Copernicus_DSM_COG_10_N66_00_E021_00_DEM.tif",
+      "sha256": "8446127f0516435e2b7875cc92dc86bab84749f6a2c27094d783d5b1248ea258",
+      "url": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N66_00_E021_00_DEM/Copernicus_DSM_COG_10_N66_00_E021_00_DEM.tif"
+    },
+    {
+      "bytes": 22778643,
+      "path": "data/regions/norway-north/copernicus/Copernicus_DSM_COG_10_N66_00_E022_00_DEM.tif",
+      "sha256": "70636dd47fa296b89bcd254f4720d0b0d5c1e000e4b46788fb76377d8e2095b6",
+      "url": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N66_00_E022_00_DEM/Copernicus_DSM_COG_10_N66_00_E022_00_DEM.tif"
+    },
+    {
+      "bytes": 22983587,
+      "path": "data/regions/norway-north/copernicus/Copernicus_DSM_COG_10_N66_00_E023_00_DEM.tif",
+      "sha256": "daf931e1bb11f42a6f690ec04984ff0c95a1ca2715c7ce15738876b2226d1fec",
+      "url": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N66_00_E023_00_DEM/Copernicus_DSM_COG_10_N66_00_E023_00_DEM.tif"
+    },
+    {
+      "bytes": 22569063,
+      "path": "data/regions/norway-north/copernicus/Copernicus_DSM_COG_10_N66_00_E024_00_DEM.tif",
+      "sha256": "b80fc336ad3a269fd0b02db87fa73fcb06fba64c4b4c2da13642c9d95a947a1e",
+      "url": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N66_00_E024_00_DEM/Copernicus_DSM_COG_10_N66_00_E024_00_DEM.tif"
+    },
+    {
+      "bytes": 22584536,
+      "path": "data/regions/norway-north/copernicus/Copernicus_DSM_COG_10_N66_00_E025_00_DEM.tif",
+      "sha256": "2d208c587d80da14e2380eef852667857c8ad653bb3660a470324d7e642f60a0",
+      "url": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N66_00_E025_00_DEM/Copernicus_DSM_COG_10_N66_00_E025_00_DEM.tif"
+    },
+    {
+      "bytes": 21893515,
+      "path": "data/regions/norway-north/copernicus/Copernicus_DSM_COG_10_N66_00_E026_00_DEM.tif",
+      "sha256": "af03e41ac7bb2d4205f5ac7258fde1e550fd36f61897a7b94f51fe86b9ae31ef",
+      "url": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N66_00_E026_00_DEM/Copernicus_DSM_COG_10_N66_00_E026_00_DEM.tif"
+    },
+    {
+      "bytes": 20760587,
+      "path": "data/regions/norway-north/copernicus/Copernicus_DSM_COG_10_N66_00_E027_00_DEM.tif",
+      "sha256": "a77afebdb7e68f7e37e6a71b98425291201a3a979b1320bc9f9db0cb15401ae1",
+      "url": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N66_00_E027_00_DEM/Copernicus_DSM_COG_10_N66_00_E027_00_DEM.tif"
+    },
+    {
+      "bytes": 20243410,
+      "path": "data/regions/norway-north/copernicus/Copernicus_DSM_COG_10_N66_00_E028_00_DEM.tif",
+      "sha256": "602e2a335c5beb53c1d3fa2a68f9f3025f38a015e431082b45f2b943548c0e64",
+      "url": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N66_00_E028_00_DEM/Copernicus_DSM_COG_10_N66_00_E028_00_DEM.tif"
+    },
+    {
+      "bytes": 21302645,
+      "path": "data/regions/norway-north/copernicus/Copernicus_DSM_COG_10_N66_00_E029_00_DEM.tif",
+      "sha256": "e45c9d72036642b9069a7db941fe7c5f53c0075a3c1896846b14d363190934c6",
+      "url": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N66_00_E029_00_DEM/Copernicus_DSM_COG_10_N66_00_E029_00_DEM.tif"
+    },
+    {
+      "bytes": 20087637,
+      "path": "data/regions/norway-north/copernicus/Copernicus_DSM_COG_10_N66_00_E030_00_DEM.tif",
+      "sha256": "aadb4061f6adad8128ecbda845aa8e2fd38b2fa6b3aa6a2b2f0fabad37b5faf2",
+      "url": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N66_00_E030_00_DEM/Copernicus_DSM_COG_10_N66_00_E030_00_DEM.tif"
+    },
+    {
+      "bytes": 20147008,
+      "path": "data/regions/norway-north/copernicus/Copernicus_DSM_COG_10_N66_00_E031_00_DEM.tif",
+      "sha256": "c5fa5c612929cb60fc45c35801ca1282641867787efcf55a801eaad92189f46a",
+      "url": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N66_00_E031_00_DEM/Copernicus_DSM_COG_10_N66_00_E031_00_DEM.tif"
+    },
+    {
+      "bytes": 19733040,
+      "path": "data/regions/norway-north/copernicus/Copernicus_DSM_COG_10_N66_00_E032_00_DEM.tif",
+      "sha256": "ac1a75be4814b5882de547817f85232d7266ee3edfafd3da4329faa3343bfbb0",
+      "url": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N66_00_E032_00_DEM/Copernicus_DSM_COG_10_N66_00_E032_00_DEM.tif"
+    },
+    {
+      "bytes": 50304,
+      "path": "data/regions/norway-central/copernicus/Copernicus_DSM_COG_10_N67_00_E010_00_DEM.tif",
+      "sha256": "cfd86717a557945ca17ca17ba73bd3430eb7e9d2d03bb37c10e437bf512094a3",
+      "url": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N67_00_E010_00_DEM/Copernicus_DSM_COG_10_N67_00_E010_00_DEM.tif"
+    },
+    {
+      "bytes": 96811,
+      "path": "data/regions/norway-central/copernicus/Copernicus_DSM_COG_10_N67_00_E011_00_DEM.tif",
+      "sha256": "aa206d1b37a4507f2db829472b22475ce2b6881890750896b98d20fda5656289",
+      "url": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N67_00_E011_00_DEM/Copernicus_DSM_COG_10_N67_00_E011_00_DEM.tif"
+    },
+    {
+      "bytes": 770769,
+      "path": "data/regions/norway-central/copernicus/Copernicus_DSM_COG_10_N67_00_E012_00_DEM.tif",
+      "sha256": "49fb760276da84d0753a64e24ba58dfea4d0f36bdc78b8c96be0062e8508f1fb",
+      "url": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N67_00_E012_00_DEM/Copernicus_DSM_COG_10_N67_00_E012_00_DEM.tif"
+    },
+    {
+      "bytes": 1071731,
+      "path": "data/regions/norway-central/copernicus/Copernicus_DSM_COG_10_N67_00_E013_00_DEM.tif",
+      "sha256": "df033dc4226b28dfc2331c2cfefeb23efa02822c98624d922d0bf6a842eec553",
+      "url": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N67_00_E013_00_DEM/Copernicus_DSM_COG_10_N67_00_E013_00_DEM.tif"
+    },
+    {
+      "bytes": 9072959,
+      "path": "data/regions/norway-central/copernicus/Copernicus_DSM_COG_10_N67_00_E014_00_DEM.tif",
+      "sha256": "2a1630cbf4eafb9b6bd5ef38de4e4ca41a3b6504ece7dc8e72e62bd879ec50d1",
+      "url": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N67_00_E014_00_DEM/Copernicus_DSM_COG_10_N67_00_E014_00_DEM.tif"
+    },
+    {
+      "bytes": 19623236,
+      "path": "data/regions/norway-central/copernicus/Copernicus_DSM_COG_10_N67_00_E015_00_DEM.tif",
+      "sha256": "78198d857f8b8524814bf8a126dd48485cc55804868332915c168d4e1305edaa",
+      "url": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N67_00_E015_00_DEM/Copernicus_DSM_COG_10_N67_00_E015_00_DEM.tif"
+    },
+    {
+      "bytes": 19640941,
+      "path": "data/regions/norway-central/copernicus/Copernicus_DSM_COG_10_N67_00_E016_00_DEM.tif",
+      "sha256": "4c38672e45b565718ee7a8b3f1862780a5dd26f5ea7a3ac60f4106a3371761d3",
+      "url": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N67_00_E016_00_DEM/Copernicus_DSM_COG_10_N67_00_E016_00_DEM.tif"
+    },
+    {
+      "bytes": 19421493,
+      "path": "data/regions/norway-central/copernicus/Copernicus_DSM_COG_10_N67_00_E017_00_DEM.tif",
+      "sha256": "b93f65d14c626bb7b4834071f07c848ec86eb3b315cbdb2c9fff79a2397a9f9d",
+      "url": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N67_00_E017_00_DEM/Copernicus_DSM_COG_10_N67_00_E017_00_DEM.tif"
+    },
+    {
+      "bytes": 20071723,
+      "path": "data/regions/norway-central/copernicus/Copernicus_DSM_COG_10_N67_00_E018_00_DEM.tif",
+      "sha256": "d2fec5e0fd0931e2b8952a635361af92ee00c257d62fcb834b610b9f75a5f363",
+      "url": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N67_00_E018_00_DEM/Copernicus_DSM_COG_10_N67_00_E018_00_DEM.tif"
+    },
+    {
+      "bytes": 19493761,
+      "path": "data/regions/norway-central/copernicus/Copernicus_DSM_COG_10_N67_00_E019_00_DEM.tif",
+      "sha256": "d25f455ecb07a39fe921b9544549d5885c60366a75e51229992a5e315f2569ee",
+      "url": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N67_00_E019_00_DEM/Copernicus_DSM_COG_10_N67_00_E019_00_DEM.tif"
+    },
+    {
+      "bytes": 20577806,
+      "path": "data/regions/norway-north/copernicus/Copernicus_DSM_COG_10_N67_00_E020_00_DEM.tif",
+      "sha256": "906355128cefddaae32783fb41b33362fc9c34ad540ab0be66a76911dce0d776",
+      "url": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N67_00_E020_00_DEM/Copernicus_DSM_COG_10_N67_00_E020_00_DEM.tif"
+    },
+    {
+      "bytes": 20687711,
+      "path": "data/regions/norway-north/copernicus/Copernicus_DSM_COG_10_N67_00_E021_00_DEM.tif",
+      "sha256": "c312f9e481432073264f5a2d7476ef233acba6e5b1502565195ba2d65182c661",
+      "url": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N67_00_E021_00_DEM/Copernicus_DSM_COG_10_N67_00_E021_00_DEM.tif"
+    },
+    {
+      "bytes": 21116705,
+      "path": "data/regions/norway-north/copernicus/Copernicus_DSM_COG_10_N67_00_E022_00_DEM.tif",
+      "sha256": "e54993301e616b700b0d1a7aab0ae898ee7ee896fd62ce9537e778a78ea05e7f",
+      "url": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N67_00_E022_00_DEM/Copernicus_DSM_COG_10_N67_00_E022_00_DEM.tif"
+    },
+    {
+      "bytes": 21448968,
+      "path": "data/regions/norway-north/copernicus/Copernicus_DSM_COG_10_N67_00_E023_00_DEM.tif",
+      "sha256": "6d51077bde99af703577badb354e3d318fc16d3a82f5d54414f689e192112f83",
+      "url": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N67_00_E023_00_DEM/Copernicus_DSM_COG_10_N67_00_E023_00_DEM.tif"
+    },
+    {
+      "bytes": 21538993,
+      "path": "data/regions/norway-north/copernicus/Copernicus_DSM_COG_10_N67_00_E024_00_DEM.tif",
+      "sha256": "31eb766a4920a3c99eaa91c56337e25cbdadc9b18bb47d4ac0ff6b1ecc304894",
+      "url": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N67_00_E024_00_DEM/Copernicus_DSM_COG_10_N67_00_E024_00_DEM.tif"
+    },
+    {
+      "bytes": 21412793,
+      "path": "data/regions/norway-north/copernicus/Copernicus_DSM_COG_10_N67_00_E025_00_DEM.tif",
+      "sha256": "eeeb756157f53b2606d45e3ebb18dbac307bba89843a849366c734fc0cd02b3b",
+      "url": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N67_00_E025_00_DEM/Copernicus_DSM_COG_10_N67_00_E025_00_DEM.tif"
+    },
+    {
+      "bytes": 21048566,
+      "path": "data/regions/norway-north/copernicus/Copernicus_DSM_COG_10_N67_00_E026_00_DEM.tif",
+      "sha256": "f67c04c2ef597806f3fa1e52dc8a26106e35b4ee49750f43b14fee4d698a4943",
+      "url": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N67_00_E026_00_DEM/Copernicus_DSM_COG_10_N67_00_E026_00_DEM.tif"
+    },
+    {
+      "bytes": 19958691,
+      "path": "data/regions/norway-north/copernicus/Copernicus_DSM_COG_10_N67_00_E027_00_DEM.tif",
+      "sha256": "692c4d7bc07f7c9753f4ba04eafed926dc510300a6070b4d10477085e5fc8bf7",
+      "url": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N67_00_E027_00_DEM/Copernicus_DSM_COG_10_N67_00_E027_00_DEM.tif"
+    },
+    {
+      "bytes": 21308108,
+      "path": "data/regions/norway-north/copernicus/Copernicus_DSM_COG_10_N67_00_E028_00_DEM.tif",
+      "sha256": "610202adbf47e3036d57958d956a144785521ce4a7d5b458cc4fe645a74a48f4",
+      "url": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N67_00_E028_00_DEM/Copernicus_DSM_COG_10_N67_00_E028_00_DEM.tif"
+    },
+    {
+      "bytes": 21230696,
+      "path": "data/regions/norway-north/copernicus/Copernicus_DSM_COG_10_N67_00_E029_00_DEM.tif",
+      "sha256": "a607b44831bb079cad455cd554df9f7c20acc1462d984bc9a5605a1925e8bb4b",
+      "url": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N67_00_E029_00_DEM/Copernicus_DSM_COG_10_N67_00_E029_00_DEM.tif"
+    },
+    {
+      "bytes": 21623078,
+      "path": "data/regions/norway-north/copernicus/Copernicus_DSM_COG_10_N67_00_E030_00_DEM.tif",
+      "sha256": "49734acab5919987565a3066b25ca9ca65cdeed3090988c1fdad2f31f6f74e5b",
+      "url": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N67_00_E030_00_DEM/Copernicus_DSM_COG_10_N67_00_E030_00_DEM.tif"
+    },
+    {
+      "bytes": 21231195,
+      "path": "data/regions/norway-north/copernicus/Copernicus_DSM_COG_10_N67_00_E031_00_DEM.tif",
+      "sha256": "7fe049c65c8e661450e2c027a536318eae131ffe6419cd0ba70359265545fa18",
+      "url": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N67_00_E031_00_DEM/Copernicus_DSM_COG_10_N67_00_E031_00_DEM.tif"
+    },
+    {
+      "bytes": 19048385,
+      "path": "data/regions/norway-north/copernicus/Copernicus_DSM_COG_10_N67_00_E032_00_DEM.tif",
+      "sha256": "e5ca6f15e6151ddc0a8ae16a63b302a879e147a92322869f28a1a99003829990",
+      "url": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N67_00_E032_00_DEM/Copernicus_DSM_COG_10_N67_00_E032_00_DEM.tif"
+    },
+    {
+      "bytes": 92685,
+      "path": "data/regions/norway-central/copernicus/Copernicus_DSM_COG_10_N68_00_E012_00_DEM.tif",
+      "sha256": "6fbcadd2eae423cf415c24a50eefe561e458a91a6fd3e911cd48bcfbc34e261c",
+      "url": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N68_00_E012_00_DEM/Copernicus_DSM_COG_10_N68_00_E012_00_DEM.tif"
+    },
+    {
+      "bytes": 3446596,
+      "path": "data/regions/norway-central/copernicus/Copernicus_DSM_COG_10_N68_00_E013_00_DEM.tif",
+      "sha256": "54507ea44df7602c1de8fc86ef45f0fd5722dacd27014fc5016b76849e954908",
+      "url": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N68_00_E013_00_DEM/Copernicus_DSM_COG_10_N68_00_E013_00_DEM.tif"
+    },
+    {
+      "bytes": 7660643,
+      "path": "data/regions/norway-central/copernicus/Copernicus_DSM_COG_10_N68_00_E014_00_DEM.tif",
+      "sha256": "9e2808d08a744d532ae84b0131fd80f5fadffba999222172084311e738f9f9e8",
+      "url": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N68_00_E014_00_DEM/Copernicus_DSM_COG_10_N68_00_E014_00_DEM.tif"
+    },
+    {
+      "bytes": 15237848,
+      "path": "data/regions/norway-central/copernicus/Copernicus_DSM_COG_10_N68_00_E015_00_DEM.tif",
+      "sha256": "c34a996f04c55404ac5a3587494c7f63a973ddd817abfc24aeb560407eb84e68",
+      "url": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N68_00_E015_00_DEM/Copernicus_DSM_COG_10_N68_00_E015_00_DEM.tif"
+    },
+    {
+      "bytes": 15580036,
+      "path": "data/regions/norway-central/copernicus/Copernicus_DSM_COG_10_N68_00_E016_00_DEM.tif",
+      "sha256": "cbdf7560a0ca6949dcbd7d48347a44349996ccb41e2edc050d88a34d48824f2f",
+      "url": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N68_00_E016_00_DEM/Copernicus_DSM_COG_10_N68_00_E016_00_DEM.tif"
+    },
+    {
+      "bytes": 18805525,
+      "path": "data/regions/norway-central/copernicus/Copernicus_DSM_COG_10_N68_00_E017_00_DEM.tif",
+      "sha256": "71450d43aa249b66f4f33fdcc059f1153f6173deecb4874df4a84e3cb2e5461f",
+      "url": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N68_00_E017_00_DEM/Copernicus_DSM_COG_10_N68_00_E017_00_DEM.tif"
+    },
+    {
+      "bytes": 20943743,
+      "path": "data/regions/norway-central/copernicus/Copernicus_DSM_COG_10_N68_00_E018_00_DEM.tif",
+      "sha256": "3598e552b56d3febdd92173cafcad8cc1ff4891d46125462cd961994357548a1",
+      "url": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N68_00_E018_00_DEM/Copernicus_DSM_COG_10_N68_00_E018_00_DEM.tif"
+    },
+    {
+      "bytes": 20033475,
+      "path": "data/regions/norway-central/copernicus/Copernicus_DSM_COG_10_N68_00_E019_00_DEM.tif",
+      "sha256": "44653036dca7d04dfd4a1aec278135e03695d1281ae77d3061a3f2079104722a",
+      "url": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N68_00_E019_00_DEM/Copernicus_DSM_COG_10_N68_00_E019_00_DEM.tif"
+    },
+    {
+      "bytes": 20101787,
+      "path": "data/regions/norway-north/copernicus/Copernicus_DSM_COG_10_N68_00_E020_00_DEM.tif",
+      "sha256": "6e7350d20aebc5b7cb58f25afe567595da8efec0c840ccf05d6e72d547eb816b",
+      "url": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N68_00_E020_00_DEM/Copernicus_DSM_COG_10_N68_00_E020_00_DEM.tif"
+    },
+    {
+      "bytes": 20210929,
+      "path": "data/regions/norway-north/copernicus/Copernicus_DSM_COG_10_N68_00_E021_00_DEM.tif",
+      "sha256": "1d470a612cd66fe9ddbc22e238dfdaf5e13a588147c0912faef04fc4f9e93dca",
+      "url": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N68_00_E021_00_DEM/Copernicus_DSM_COG_10_N68_00_E021_00_DEM.tif"
+    },
+    {
+      "bytes": 20582197,
+      "path": "data/regions/norway-north/copernicus/Copernicus_DSM_COG_10_N68_00_E022_00_DEM.tif",
+      "sha256": "00edccb4d9a4173460187583b98211afd2d5ad4e7682cd350680ba899e2f3993",
+      "url": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N68_00_E022_00_DEM/Copernicus_DSM_COG_10_N68_00_E022_00_DEM.tif"
+    },
+    {
+      "bytes": 20838860,
+      "path": "data/regions/norway-north/copernicus/Copernicus_DSM_COG_10_N68_00_E023_00_DEM.tif",
+      "sha256": "a42a50457e8755b94487d8cbb71d8e8504c2cc56c309a4155eb6cff304f7a927",
+      "url": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N68_00_E023_00_DEM/Copernicus_DSM_COG_10_N68_00_E023_00_DEM.tif"
+    },
+    {
+      "bytes": 20636236,
+      "path": "data/regions/norway-north/copernicus/Copernicus_DSM_COG_10_N68_00_E024_00_DEM.tif",
+      "sha256": "23dfaa6794956786f9b0a14733818cf511d26fbc636f4197bd540c8080e64c83",
+      "url": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N68_00_E024_00_DEM/Copernicus_DSM_COG_10_N68_00_E024_00_DEM.tif"
+    },
+    {
+      "bytes": 20721341,
+      "path": "data/regions/norway-north/copernicus/Copernicus_DSM_COG_10_N68_00_E025_00_DEM.tif",
+      "sha256": "5a5a551d5ec5ab8a72553c2805d9b46fb407d9acd0317baa2c0f73fd4c5ce2ad",
+      "url": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N68_00_E025_00_DEM/Copernicus_DSM_COG_10_N68_00_E025_00_DEM.tif"
+    },
+    {
+      "bytes": 21140260,
+      "path": "data/regions/norway-north/copernicus/Copernicus_DSM_COG_10_N68_00_E026_00_DEM.tif",
+      "sha256": "519a8e4e1614d031bfc7dad7e7bcb983fd3f45f862abf812f144403643747df4",
+      "url": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N68_00_E026_00_DEM/Copernicus_DSM_COG_10_N68_00_E026_00_DEM.tif"
+    },
+    {
+      "bytes": 19958881,
+      "path": "data/regions/norway-north/copernicus/Copernicus_DSM_COG_10_N68_00_E027_00_DEM.tif",
+      "sha256": "491340fd5374fd8a03b2e8230f0185b98961357a7c735fcd39c4d4cb50588679",
+      "url": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N68_00_E027_00_DEM/Copernicus_DSM_COG_10_N68_00_E027_00_DEM.tif"
+    },
+    {
+      "bytes": 21732562,
+      "path": "data/regions/norway-north/copernicus/Copernicus_DSM_COG_10_N68_00_E028_00_DEM.tif",
+      "sha256": "1fac02e33fea1d1c26548a709a63c3cbd4c2ceb83ea753ad9c0cbdb10b6be5a0",
+      "url": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N68_00_E028_00_DEM/Copernicus_DSM_COG_10_N68_00_E028_00_DEM.tif"
+    },
+    {
+      "bytes": 21993744,
+      "path": "data/regions/norway-north/copernicus/Copernicus_DSM_COG_10_N68_00_E029_00_DEM.tif",
+      "sha256": "d4266f4cd86e0cda551d3bc93e3e691d00e878a251582992dd62a6ac28631490",
+      "url": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N68_00_E029_00_DEM/Copernicus_DSM_COG_10_N68_00_E029_00_DEM.tif"
+    },
+    {
+      "bytes": 21239738,
+      "path": "data/regions/norway-north/copernicus/Copernicus_DSM_COG_10_N68_00_E030_00_DEM.tif",
+      "sha256": "4cec53fa8fed8a7f29bcd588f2d65e02e6748c661906c3c67c2a1611908e2dfe",
+      "url": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N68_00_E030_00_DEM/Copernicus_DSM_COG_10_N68_00_E030_00_DEM.tif"
+    },
+    {
+      "bytes": 20790260,
+      "path": "data/regions/norway-north/copernicus/Copernicus_DSM_COG_10_N68_00_E031_00_DEM.tif",
+      "sha256": "25afcbc10a237336c6ef8511c8ef8feec01b1380fdd6aa35dc75f1ccd092fcd1",
+      "url": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N68_00_E031_00_DEM/Copernicus_DSM_COG_10_N68_00_E031_00_DEM.tif"
+    },
+    {
+      "bytes": 22015654,
+      "path": "data/regions/norway-north/copernicus/Copernicus_DSM_COG_10_N68_00_E032_00_DEM.tif",
+      "sha256": "e0a73296eeae1a222065363d62b0d5e7dd289bd858aaad60739271ff8a75a379",
+      "url": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N68_00_E032_00_DEM/Copernicus_DSM_COG_10_N68_00_E032_00_DEM.tif"
+    },
+    {
+      "bytes": 50304,
+      "path": "data/regions/norway-north/copernicus/Copernicus_DSM_COG_10_N69_00_E014_00_DEM.tif",
+      "sha256": "627d98faf691d5e953e49a7795c3514576612dd340a4267b057d76a9f1686cda",
+      "url": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N69_00_E014_00_DEM/Copernicus_DSM_COG_10_N69_00_E014_00_DEM.tif"
+    },
+    {
+      "bytes": 2095084,
+      "path": "data/regions/norway-north/copernicus/Copernicus_DSM_COG_10_N69_00_E015_00_DEM.tif",
+      "sha256": "49bb2a72930c45d6a8c0c4b52b8b265367b3ee161630daef28bb34ea0c4b8688",
+      "url": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N69_00_E015_00_DEM/Copernicus_DSM_COG_10_N69_00_E015_00_DEM.tif"
+    },
+    {
+      "bytes": 1485380,
+      "path": "data/regions/norway-north/copernicus/Copernicus_DSM_COG_10_N69_00_E016_00_DEM.tif",
+      "sha256": "6019e909c644c835e1545fe1cd5b533d1628b9439f7ff6303a044bf34f022c15",
+      "url": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N69_00_E016_00_DEM/Copernicus_DSM_COG_10_N69_00_E016_00_DEM.tif"
+    },
+    {
+      "bytes": 9983467,
+      "path": "data/regions/norway-north/copernicus/Copernicus_DSM_COG_10_N69_00_E017_00_DEM.tif",
+      "sha256": "bb8c1461f9f7302a61e18b81b9873c38ba7ccb7ee3b373a73e0422d836ced467",
+      "url": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N69_00_E017_00_DEM/Copernicus_DSM_COG_10_N69_00_E017_00_DEM.tif"
+    },
+    {
+      "bytes": 16331188,
+      "path": "data/regions/norway-north/copernicus/Copernicus_DSM_COG_10_N69_00_E018_00_DEM.tif",
+      "sha256": "2e1d8ec656abc9910a6e9b2e9997a093b937bb4b385e2a536c5124d40cef86e6",
+      "url": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N69_00_E018_00_DEM/Copernicus_DSM_COG_10_N69_00_E018_00_DEM.tif"
+    },
+    {
+      "bytes": 19621732,
+      "path": "data/regions/norway-north/copernicus/Copernicus_DSM_COG_10_N69_00_E019_00_DEM.tif",
+      "sha256": "ce1c1a37b811d969712a217adf79be4d01c44d26098ba58b15b4f9b5aceee2e7",
+      "url": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N69_00_E019_00_DEM/Copernicus_DSM_COG_10_N69_00_E019_00_DEM.tif"
+    },
+    {
+      "bytes": 18220156,
+      "path": "data/regions/norway-north/copernicus/Copernicus_DSM_COG_10_N69_00_E020_00_DEM.tif",
+      "sha256": "a6d250f094f3930c1f1c20a45c137cf97af80b736fd457c1585552a77572dbec",
+      "url": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N69_00_E020_00_DEM/Copernicus_DSM_COG_10_N69_00_E020_00_DEM.tif"
+    },
+    {
+      "bytes": 19842349,
+      "path": "data/regions/norway-north/copernicus/Copernicus_DSM_COG_10_N69_00_E021_00_DEM.tif",
+      "sha256": "0aacd87f2eef1937b15e9be0b7ac3bd4d921176fef4925389a9e9caff3d75b9a",
+      "url": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N69_00_E021_00_DEM/Copernicus_DSM_COG_10_N69_00_E021_00_DEM.tif"
+    },
+    {
+      "bytes": 20744187,
+      "path": "data/regions/norway-north/copernicus/Copernicus_DSM_COG_10_N69_00_E022_00_DEM.tif",
+      "sha256": "a88f6eb7a1c4d7d1b610b8ab365ddefe201d3b4158bd5f205eca608ad346d764",
+      "url": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N69_00_E022_00_DEM/Copernicus_DSM_COG_10_N69_00_E022_00_DEM.tif"
+    },
+    {
+      "bytes": 21153571,
+      "path": "data/regions/norway-north/copernicus/Copernicus_DSM_COG_10_N69_00_E023_00_DEM.tif",
+      "sha256": "f7d1b703b6943269e9fa2e051dc0ed1e73b236e6ee31055db9bb13b38eaf44f9",
+      "url": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N69_00_E023_00_DEM/Copernicus_DSM_COG_10_N69_00_E023_00_DEM.tif"
+    },
+    {
+      "bytes": 20877895,
+      "path": "data/regions/norway-north/copernicus/Copernicus_DSM_COG_10_N69_00_E024_00_DEM.tif",
+      "sha256": "e0295354aa3a10bcb1d55bee2678e67ab13d75e1144fb381a9886bec998f6fb6",
+      "url": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N69_00_E024_00_DEM/Copernicus_DSM_COG_10_N69_00_E024_00_DEM.tif"
+    },
+    {
+      "bytes": 21492360,
+      "path": "data/regions/norway-north/copernicus/Copernicus_DSM_COG_10_N69_00_E025_00_DEM.tif",
+      "sha256": "ea9312b297da9d4c626d8b7e98f7c6f201a351ecc232fa459cd04bbf63166c99",
+      "url": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N69_00_E025_00_DEM/Copernicus_DSM_COG_10_N69_00_E025_00_DEM.tif"
+    },
+    {
+      "bytes": 21218199,
+      "path": "data/regions/norway-north/copernicus/Copernicus_DSM_COG_10_N69_00_E026_00_DEM.tif",
+      "sha256": "66ee4cbf53b6ffde7d3f715b8069223542e4da738765904ac067bd2816a0beac",
+      "url": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N69_00_E026_00_DEM/Copernicus_DSM_COG_10_N69_00_E026_00_DEM.tif"
+    },
+    {
+      "bytes": 20557402,
+      "path": "data/regions/norway-north/copernicus/Copernicus_DSM_COG_10_N69_00_E027_00_DEM.tif",
+      "sha256": "32875f47b6b5b8098c261be0a68d1487a043771cea5ef5b5051abcb64d670344",
+      "url": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N69_00_E027_00_DEM/Copernicus_DSM_COG_10_N69_00_E027_00_DEM.tif"
+    },
+    {
+      "bytes": 21001365,
+      "path": "data/regions/norway-north/copernicus/Copernicus_DSM_COG_10_N69_00_E028_00_DEM.tif",
+      "sha256": "6f3c7975dd279e2f2fd190dc05b0b52cddb8fe902ed7ffa24f921244b685d12d",
+      "url": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N69_00_E028_00_DEM/Copernicus_DSM_COG_10_N69_00_E028_00_DEM.tif"
+    },
+    {
+      "bytes": 21605226,
+      "path": "data/regions/norway-north/copernicus/Copernicus_DSM_COG_10_N69_00_E029_00_DEM.tif",
+      "sha256": "d915300b78e4f3f042dd956894efef0c2b9c44f0c63e59143f4888b5bd2c8432",
+      "url": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N69_00_E029_00_DEM/Copernicus_DSM_COG_10_N69_00_E029_00_DEM.tif"
+    },
+    {
+      "bytes": 18345251,
+      "path": "data/regions/norway-north/copernicus/Copernicus_DSM_COG_10_N69_00_E030_00_DEM.tif",
+      "sha256": "3834d06c66051851099f4484b9d15802eb2f48f009df400c4835de256c669042",
+      "url": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N69_00_E030_00_DEM/Copernicus_DSM_COG_10_N69_00_E030_00_DEM.tif"
+    },
+    {
+      "bytes": 16887286,
+      "path": "data/regions/norway-north/copernicus/Copernicus_DSM_COG_10_N69_00_E031_00_DEM.tif",
+      "sha256": "d90beb4619930c3d7a46c23df2071ac2966470308e56803709f167844eda09f8",
+      "url": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N69_00_E031_00_DEM/Copernicus_DSM_COG_10_N69_00_E031_00_DEM.tif"
+    },
+    {
+      "bytes": 17208020,
+      "path": "data/regions/norway-north/copernicus/Copernicus_DSM_COG_10_N69_00_E032_00_DEM.tif",
+      "sha256": "1cee204dc275e81567f3578fb4e8e15aae24c47a25df96618df48cd5528bf1a8",
+      "url": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N69_00_E032_00_DEM/Copernicus_DSM_COG_10_N69_00_E032_00_DEM.tif"
+    },
+    {
+      "bytes": 800504,
+      "path": "data/regions/norway-north/copernicus/Copernicus_DSM_COG_10_N70_00_E018_00_DEM.tif",
+      "sha256": "5b8db7e253d7a0a30e60b4dd34030f8e7695c82708e0fb17f33d92953eaebd3d",
+      "url": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N70_00_E018_00_DEM/Copernicus_DSM_COG_10_N70_00_E018_00_DEM.tif"
+    },
+    {
+      "bytes": 2281246,
+      "path": "data/regions/norway-north/copernicus/Copernicus_DSM_COG_10_N70_00_E019_00_DEM.tif",
+      "sha256": "1e404cf31fe9d1849f5cb56c380c500591a1e1f4339ee5a3f1e0f13d7f86d399",
+      "url": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N70_00_E019_00_DEM/Copernicus_DSM_COG_10_N70_00_E019_00_DEM.tif"
+    },
+    {
+      "bytes": 1721733,
+      "path": "data/regions/norway-north/copernicus/Copernicus_DSM_COG_10_N70_00_E020_00_DEM.tif",
+      "sha256": "4a3c16593eb69166eccd5d5671f01172249b82d743c44e6fa0404141638e2547",
+      "url": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N70_00_E020_00_DEM/Copernicus_DSM_COG_10_N70_00_E020_00_DEM.tif"
+    },
+    {
+      "bytes": 2973700,
+      "path": "data/regions/norway-north/copernicus/Copernicus_DSM_COG_10_N70_00_E021_00_DEM.tif",
+      "sha256": "55295f78390e0269eccea0cc987760c8a080182f0a97cfa3a5aba8f917e8f778",
+      "url": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N70_00_E021_00_DEM/Copernicus_DSM_COG_10_N70_00_E021_00_DEM.tif"
+    },
+    {
+      "bytes": 7630389,
+      "path": "data/regions/norway-north/copernicus/Copernicus_DSM_COG_10_N70_00_E022_00_DEM.tif",
+      "sha256": "efc550192c297458d88f26f302b91651daf4f92d08e9323c99a2db45ae0cdc65",
+      "url": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N70_00_E022_00_DEM/Copernicus_DSM_COG_10_N70_00_E022_00_DEM.tif"
+    },
+    {
+      "bytes": 9174937,
+      "path": "data/regions/norway-north/copernicus/Copernicus_DSM_COG_10_N70_00_E023_00_DEM.tif",
+      "sha256": "16a40a0187949623b9dd63bb51e1eebfb6b949cd4612de5ac9bd81cc46efaf0a",
+      "url": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N70_00_E023_00_DEM/Copernicus_DSM_COG_10_N70_00_E023_00_DEM.tif"
+    },
+    {
+      "bytes": 12486522,
+      "path": "data/regions/norway-north/copernicus/Copernicus_DSM_COG_10_N70_00_E024_00_DEM.tif",
+      "sha256": "2e1cd8590ae0d711ec06cb0b3fe7ea1601e0a6e37a12c005ddd11481c3910c5c",
+      "url": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N70_00_E024_00_DEM/Copernicus_DSM_COG_10_N70_00_E024_00_DEM.tif"
+    },
+    {
+      "bytes": 10358942,
+      "path": "data/regions/norway-north/copernicus/Copernicus_DSM_COG_10_N70_00_E025_00_DEM.tif",
+      "sha256": "7d59cfdbfbe58b07536a050bc55d942dcc65419c13cd96da2ee70877990edf9b",
+      "url": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N70_00_E025_00_DEM/Copernicus_DSM_COG_10_N70_00_E025_00_DEM.tif"
+    },
+    {
+      "bytes": 10797106,
+      "path": "data/regions/norway-north/copernicus/Copernicus_DSM_COG_10_N70_00_E026_00_DEM.tif",
+      "sha256": "c22a547230941c050a8391aa5ec5c1f6f3f899133f6b7ae93430b753ea4f1534",
+      "url": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N70_00_E026_00_DEM/Copernicus_DSM_COG_10_N70_00_E026_00_DEM.tif"
+    },
+    {
+      "bytes": 13846137,
+      "path": "data/regions/norway-north/copernicus/Copernicus_DSM_COG_10_N70_00_E027_00_DEM.tif",
+      "sha256": "343f7291c8f550ab410c3cec4826a444cc9a870a9e7526cdfaab03217ede029d",
+      "url": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N70_00_E027_00_DEM/Copernicus_DSM_COG_10_N70_00_E027_00_DEM.tif"
+    },
+    {
+      "bytes": 12262679,
+      "path": "data/regions/norway-north/copernicus/Copernicus_DSM_COG_10_N70_00_E028_00_DEM.tif",
+      "sha256": "8d777fe99c4760781077e506cb2b77171c86cbb7dcbbf0224eedac5d9c72eb7c",
+      "url": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N70_00_E028_00_DEM/Copernicus_DSM_COG_10_N70_00_E028_00_DEM.tif"
+    },
+    {
+      "bytes": 10124179,
+      "path": "data/regions/norway-north/copernicus/Copernicus_DSM_COG_10_N70_00_E029_00_DEM.tif",
+      "sha256": "85c87d402cf2051f6013c82c66898ce84c41d06326e0a58dbb89be24b26f86a9",
+      "url": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N70_00_E029_00_DEM/Copernicus_DSM_COG_10_N70_00_E029_00_DEM.tif"
+    },
+    {
+      "bytes": 5588694,
+      "path": "data/regions/norway-north/copernicus/Copernicus_DSM_COG_10_N70_00_E030_00_DEM.tif",
+      "sha256": "de3ef51ebb509066980e6a490146cba18614c54bac7546c81b0ba158a7d87171",
+      "url": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N70_00_E030_00_DEM/Copernicus_DSM_COG_10_N70_00_E030_00_DEM.tif"
+    },
+    {
+      "bytes": 208870,
+      "path": "data/regions/norway-north/copernicus/Copernicus_DSM_COG_10_N70_00_E031_00_DEM.tif",
+      "sha256": "fd6cf095f0c583b29145d8dd74b5130f47becf53b0aa83aeac76f53fb683fcef",
+      "url": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N70_00_E031_00_DEM/Copernicus_DSM_COG_10_N70_00_E031_00_DEM.tif"
+    },
+    {
+      "bytes": 50304,
+      "path": "data/regions/norway-north/copernicus/Copernicus_DSM_COG_10_N71_00_E022_00_DEM.tif",
+      "sha256": "642edeaec9ddde263396c4e2d85727d21ff3ac914af0930008acce914d4089b6",
+      "url": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N71_00_E022_00_DEM/Copernicus_DSM_COG_10_N71_00_E022_00_DEM.tif"
+    },
+    {
+      "bytes": 148631,
+      "path": "data/regions/norway-north/copernicus/Copernicus_DSM_COG_10_N71_00_E023_00_DEM.tif",
+      "sha256": "be40fc5dfc7b23ed90d85fbe519ec718c6f3c579ef65cd5846e85ed25153521b",
+      "url": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N71_00_E023_00_DEM/Copernicus_DSM_COG_10_N71_00_E023_00_DEM.tif"
+    },
+    {
+      "bytes": 468149,
+      "path": "data/regions/norway-north/copernicus/Copernicus_DSM_COG_10_N71_00_E024_00_DEM.tif",
+      "sha256": "182fac615e4fc57e0fdbeaeb10f12bbca5923a1f3d90deb716123621cf7db392",
+      "url": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N71_00_E024_00_DEM/Copernicus_DSM_COG_10_N71_00_E024_00_DEM.tif"
+    },
+    {
+      "bytes": 1485082,
+      "path": "data/regions/norway-north/copernicus/Copernicus_DSM_COG_10_N71_00_E025_00_DEM.tif",
+      "sha256": "665533481aadf68cb0fdd9bfd69522ae6dd3b4462161609e2321d12205aefffb",
+      "url": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N71_00_E025_00_DEM/Copernicus_DSM_COG_10_N71_00_E025_00_DEM.tif"
+    },
+    {
+      "bytes": 221691,
+      "path": "data/regions/norway-north/copernicus/Copernicus_DSM_COG_10_N71_00_E026_00_DEM.tif",
+      "sha256": "fe48d46cc53c0d410fb0af6c604b368d07ece15e62a605a82f10531b5d5b71de",
+      "url": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N71_00_E026_00_DEM/Copernicus_DSM_COG_10_N71_00_E026_00_DEM.tif"
+    },
+    {
+      "bytes": 867466,
+      "path": "data/regions/norway-north/copernicus/Copernicus_DSM_COG_10_N71_00_E027_00_DEM.tif",
+      "sha256": "941dcbcadf0e85ebd6cc8bba59b8ba13f063c5644be2fe459a7284076a9a79e9",
+      "url": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N71_00_E027_00_DEM/Copernicus_DSM_COG_10_N71_00_E027_00_DEM.tif"
+    },
+    {
+      "bytes": 402276,
+      "path": "data/regions/norway-north/copernicus/Copernicus_DSM_COG_10_N71_00_E028_00_DEM.tif",
+      "sha256": "e0442239fe96e3df88d2d642774d09a4dbbc168ff1170cf6a00ca8c39a8b8c9d",
+      "url": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N71_00_E028_00_DEM/Copernicus_DSM_COG_10_N71_00_E028_00_DEM.tif"
+    },
+    {
+      "bytes": 50304,
+      "path": "data/regions/norway-north/copernicus/Copernicus_DSM_COG_10_N71_00_E029_00_DEM.tif",
+      "sha256": "e8e2f2238aaa81efd00876b129db142f839f7b1546e031c8a9f860c5c7343c02",
+      "url": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N71_00_E029_00_DEM/Copernicus_DSM_COG_10_N71_00_E029_00_DEM.tif"
+    }
+  ],
+  "toolchain": {
+    "gdal_translate": {
+      "path": "/Applications/QGIS.app/Contents/MacOS/gdal_translate",
+      "sha256": "20bee1aad39868f3aa506312cad8415bbe12fa004cbf75b27114f527178b632a"
+    },
+    "gdalbuildvrt": {
+      "path": "/Applications/QGIS.app/Contents/MacOS/gdalbuildvrt",
+      "sha256": "5694fb873506db8342bedbf18635fe6d3dbf97971dc25f2ea7f94ff4f6f77b30"
+    },
+    "gdalwarp": {
+      "path": "/Applications/QGIS.app/Contents/MacOS/gdalwarp",
+      "sha256": "da68256b5787bd76d876a409fd452cc8290be13c6f28aece569242682a003057"
+    }
+  },
+  "verticalDatum": "EGM2008 orthometric metres"
+}

@@ -10,6 +10,8 @@ from regions import region_path
 def run(*args):subprocess.run([sys.executable,*map(str,args)],cwd=ROOT,check=True)
 
 def main(region):
+    if not region_path(region,'python-runtime.json').exists():
+        run('scripts/record_python_runtime.py','--region',region)
     selection=region_path(region,'active-map.json')
     native_report=ROOT/'regions'/region/'garmin/build-report.json'
     # A finished release can be checked without rehydrating archived raw inputs.
@@ -27,6 +29,10 @@ def main(region):
     # Accepted datasets remain usable after redundant intermediates are cleaned.
     active=json.loads(selection.read_text())
     for name,item in active['datasets'].items():
+        target=ROOT/item['path'];parts=target.with_name(target.name+'.parts.json')
+        if not target.exists() and parts.exists():
+            from restore_map_parts import restore
+            restore(parts,root=ROOT)
         if digest(ROOT/item['path'])!=item['sha256']:raise ValueError('Selected dataset changed: '+name)
     if active['storageRevision']==active.get('mapVersion','2.0.0')+'-'+region+'-r1':
         run('scripts/build_region_context.py','--region',region)
@@ -37,4 +43,4 @@ def main(region):
     run('scripts/validate_region.py','--region',region)
 
 if __name__=='__main__':
-    p=argparse.ArgumentParser();p.add_argument('--region',choices=['england-wales','scotland','sierra-nevada','pyrenees','dolomites','faroe-islands'],required=True);a=p.parse_args();main(a.region)
+    p=argparse.ArgumentParser();p.add_argument('--region',choices=['england-wales','scotland','sierra-nevada','pyrenees','dolomites','faroe-islands','norway-south','norway-central','norway-north'],required=True);a=p.parse_args();main(a.region)

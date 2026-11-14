@@ -1,0 +1,123 @@
+{
+  "id": "norway-south",
+  "name": "OpenBareMap Southern Norway",
+  "label": "Southern Norway",
+  "mapVersion": "2.0.0",
+  "minzoom": 4,
+  "maxzoom": 14,
+  "coverage": "Southern coast through Trondheim; includes Oslo, Stavanger, Bergen, Hardangervidda, Jotunheimen and the southern fjords. Mainland Norway and coastal islands only; excludes Svalbard and Jan Mayen. Adjacent editions overlap by 0.5 degrees latitude (approximately 56 km).",
+  "bounds": [
+    4.0,
+    57.8,
+    13.5,
+    63.5
+  ],
+  "terrainBounds": [
+    4,
+    57,
+    14,
+    64
+  ],
+  "coastContextBounds": [
+    2,
+    55,
+    16,
+    66
+  ],
+  "projectedCRS": "EPSG:25833",
+  "gridCRS": "EPSG:25833",
+  "gridName": "ETRS89 / UTM 33N",
+  "gridSource": "utm-grid",
+  "gridExtent": [
+    -160000,
+    430000,
+    6400000,
+    7090000
+  ],
+  "townlands": false,
+  "contourIntervalMetres": 20,
+  "sourceDate": "2026-11-13",
+  "sourceSlugs": [
+    "norway"
+  ],
+  "sourceBaseURL": "https://download.geofabrik.de/europe/",
+  "sourceBaseOverrides": {},
+  "nativeLanguage": "no",
+  "minorWaterwayMinzoom": 10,
+  "clipBasemap": true,
+  "clipSource": true,
+  "garminFamilyId": 4839,
+  "garminTileStartId": 48390001,
+  "garminFilename": "OpenBareMap-Norway-South.img",
+  "garminPackageRevision": "2.0.1-trail-detail-r1",
+  "styleRevision": "2.0.0-norway-south-r1",
+  "garminContextBounds": [
+    4.0,
+    57.8,
+    13.5,
+    63.5
+  ],
+  "inspectionNames": [
+    "Oslo",
+    "Bergen",
+    "Trondheim"
+  ],
+  "destinations": {
+    "island": [
+      9,
+      60.6,
+      6
+    ],
+    "oslo": [
+      10.7522,
+      59.9139,
+      11
+    ],
+    "bergen": [
+      5.3221,
+      60.39299,
+      11
+    ],
+    "stavanger": [
+      5.7331,
+      58.97,
+      11
+    ],
+    "jotunheimen": [
+      8.3125,
+      61.636,
+      10
+    ],
+    "galdhopiggen": [
+      8.3125,
+      61.636,
+      13
+    ],
+    "trondheim": [
+      10.3951,
+      63.4305,
+      11
+    ]
+  },
+  "destinationLabels": {
+    "island": "Southern Norway",
+    "oslo": "Oslo",
+    "bergen": "Bergen",
+    "stavanger": "Stavanger",
+    "jotunheimen": "Jotunheimen",
+    "galdhopiggen": "Galdhøpiggen",
+    "trondheim": "Trondheim"
+  },
+  "terrainProvider": "copernicus-glo30",
+  "terrainAttribution": "Copernicus DEM GLO-30 · European Union / ESA · DLR / Airbus",
+  "ignoreSourceHeaderBounds": true,
+  "terrainNotice": "Southern Norway elevation: Copernicus DEM GLO-30 Public (AWS 2021 release).\n\nproduced using Copernicus WorldDEM-30 © DLR e.V. 2010-2014 and © Airbus Defence and Space GmbH 2014-2018 provided under COPERNICUS by the European Union and ESA; all rights reserved\n\nThe organisations in charge of the Copernicus programme by law or by delegation do not incur any liability for any use of the Copernicus WorldDEM-30.\n\nLicense: https://dataspace.copernicus.eu/sites/default/files/media/files/2025-06/copernicus_contributing_mission_data_access_v2_cop_dem_licenses.pdf\nSource: https://registry.opendata.aws/copernicus-dem/\nVertical datum: EGM2008 orthometric metres. Native approximately 30 m cells are bilinearly resampled to point-aligned Int16 HGT for the shared terrain pipeline. Ocean-only cells absent from the official public inventory are zero.\n",
+  "garminCoverageBounds": [
+    4.0,
+    57.8,
+    13.5,
+    63.5
+  ],
+  "sourceCacheRegion": "norway",
+  "alignedTerrainPixels": true
+}
