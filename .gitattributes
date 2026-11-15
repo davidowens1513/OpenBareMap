@@ -43,3 +43,6 @@ releases/norway-*/2.0.0/build-records/** -whitespace
 regions/norway-*/garmin/copyright.txt -whitespace
 regions/norway-*/garmin/dist/ATTRIBUTION.txt -whitespace
 distribution/app-bundles-v1/garmin/norway-*/ATTRIBUTION.txt -whitespace
+
+# Preserve generated bundle and embedded upstream licence bytes.
+web-preview/site/tools/**/assets/* -whitespace
