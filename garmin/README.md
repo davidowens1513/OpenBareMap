@@ -1,6 +1,6 @@
 # OpenBareMap for Garmin
 
-OpenBareMap supplies display-only Garmin maps for Ireland, England & Wales, Scotland and Sierra Nevada National Park in Spain with 25 km around its boundary. The Garmin package is **2.0.1-trail-detail-r1** for all four regions. Mobile map versions remain 2.0.1 for England & Wales and 2.0.0 for the other editions. [Release manifest](releases/2.0.1-trail-detail-r1/manifest.json) records the exact downloads, identifiers and checksums. Generic installation instructions are supplied with every region.
+OpenBareMap supplies display-only Garmin maps for Ireland, England & Wales, Scotland, Sierra Nevada (Spain), the Pyrenees, the Dolomites, the Faroe Islands, Southern Norway, Central Norway and Northern Norway. The Garmin package is **2.0.1-trail-detail-r1**. Mobile map versions remain 2.0.1 for England & Wales and 2.0.0 for the other editions. The [root download table](../README.md#downloads-and-incorporation-instructions) links every current image and its regional installation instructions. The [earlier release manifest](releases/2.0.1-trail-detail-r1/manifest.json) and [regional Garmin publication records](../distribution/app-bundles-v1/garmin/) record downloads and checksums. Finished Garmin images are hosted on Cloudflare R2, outside Git; see [storage and restoration](../README.md#file-storage-and-restoration).
 
 ## Native cartography
 

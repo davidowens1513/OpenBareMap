@@ -1,8 +1,10 @@
 # OpenBareMap 2.0
 
-OpenBareMap is an offline topographic map for hiking, available as separate regional versions for **Ireland**, **England & Wales (including the Isle of Man)**, **Scotland**, **Sierra Nevada, Spain**, **the Pyrenees (France, Spain & Andorra)**, **the Dolomites, Italy**, and **the Faroe Islands**. Each edition has **20 m contours**, its own source coverage, map databases and platform packages. Mobile bundles are integration components for apps using MapLibre Native; Garmin downloads are display-only maps.
+OpenBareMap is an offline topographic map for hiking, available as separate regional versions for **Ireland**, **England & Wales (including the Isle of Man)**, **Scotland**, **Sierra Nevada, Spain**, **the Pyrenees (France, Spain & Andorra)**, **the Dolomites, Italy**, **the Faroe Islands**, and **Southern, Central and Northern Norway**. Each edition has **20 m contours**, its own source coverage, map databases and platform packages. Mobile bundles are integration components for apps using MapLibre Native; Garmin downloads are display-only maps.
 
 ## Downloads and incorporation instructions
+
+**All finished iOS, Android and Garmin downloads are hosted on Cloudflare R2, outside Git.** Use the direct links below; cloning this repository does not download these packages. See [file storage and restoration](#file-storage-and-restoration) for developer resources.
 
 Each iOS download contains the complete regional resource bundle, Swift loader, example view controller, dependency information and instructions. Each Android download contains the complete importable map ZIP, loader AAR and Kotlin source, an example Activity, dependency information and instructions. Both include checksums, legends and attribution. Install the MapLibre renderer through the dependency instructions supplied with the bundle.
 
@@ -15,6 +17,9 @@ Each iOS download contains the complete regional resource bundle, Swift loader, 
 | Pyrenees | [Download](https://downloads.appsbyonzy.dev/OpenBareMap/pyrenees/2.0.0/app-bundles-v1/ios/OpenBareMap-Pyrenees-iOS-Bundle.zip) · [Instructions](https://downloads.appsbyonzy.dev/OpenBareMap/pyrenees/2.0.0/app-bundles-v1/ios/instructions.txt) | [Download](https://downloads.appsbyonzy.dev/OpenBareMap/pyrenees/2.0.0/app-bundles-v1/android/OpenBareMap-Pyrenees-Android-Bundle.zip) · [Instructions](https://downloads.appsbyonzy.dev/OpenBareMap/pyrenees/2.0.0/app-bundles-v1/android/instructions.txt) | [Download](https://downloads.appsbyonzy.dev/Garmin/OpenBareMap-Pyrenees.img?v=2.0.1-trail-detail-r1) · [Instructions](https://downloads.appsbyonzy.dev/Garmin/pyrenees-instructions.txt) |
 | Dolomites | [Download](https://downloads.appsbyonzy.dev/OpenBareMap/dolomites/2.0.0/app-bundles-v1/ios/OpenBareMap-Dolomites-iOS-Bundle.zip) · [Instructions](https://downloads.appsbyonzy.dev/OpenBareMap/dolomites/2.0.0/app-bundles-v1/ios/instructions.txt) | [Download](https://downloads.appsbyonzy.dev/OpenBareMap/dolomites/2.0.0/app-bundles-v1/android/OpenBareMap-Dolomites-Android-Bundle.zip) · [Instructions](https://downloads.appsbyonzy.dev/OpenBareMap/dolomites/2.0.0/app-bundles-v1/android/instructions.txt) | [Download](https://downloads.appsbyonzy.dev/Garmin/OpenBareMap-Dolomites.img?v=2.0.1-trail-detail-r1) · [Instructions](https://downloads.appsbyonzy.dev/Garmin/dolomites-instructions.txt) |
 | Faroe Islands | [Download](https://downloads.appsbyonzy.dev/OpenBareMap/faroe-islands/2.0.0/app-bundles-v1/ios/OpenBareMap-Faroe-Islands-iOS-Bundle.zip) · [Instructions](https://downloads.appsbyonzy.dev/OpenBareMap/faroe-islands/2.0.0/app-bundles-v1/ios/instructions.txt) | [Download](https://downloads.appsbyonzy.dev/OpenBareMap/faroe-islands/2.0.0/app-bundles-v1/android/OpenBareMap-Faroe-Islands-Android-Bundle.zip) · [Instructions](https://downloads.appsbyonzy.dev/OpenBareMap/faroe-islands/2.0.0/app-bundles-v1/android/instructions.txt) | [Download](https://downloads.appsbyonzy.dev/Garmin/OpenBareMap-Faroe-Islands.img?v=2.0.1-trail-detail-r1) · [Instructions](https://downloads.appsbyonzy.dev/Garmin/faroe-islands-instructions.txt) |
+| Southern Norway | [Download](https://downloads.appsbyonzy.dev/OpenBareMap/norway-south/2.0.0/app-bundles-v1/ios/OpenBareMap-Norway-South-iOS-Bundle.zip) · [Instructions](https://downloads.appsbyonzy.dev/OpenBareMap/norway-south/2.0.0/app-bundles-v1/ios/instructions.txt) | [Download](https://downloads.appsbyonzy.dev/OpenBareMap/norway-south/2.0.0/app-bundles-v1/android/OpenBareMap-Norway-South-Android-Bundle.zip) · [Instructions](https://downloads.appsbyonzy.dev/OpenBareMap/norway-south/2.0.0/app-bundles-v1/android/instructions.txt) | [Download](https://downloads.appsbyonzy.dev/Garmin/OpenBareMap-Norway-South.img?v=2.0.1-trail-detail-r1) · [Instructions](https://downloads.appsbyonzy.dev/Garmin/norway-south-instructions.txt) |
+| Central Norway | [Download](https://downloads.appsbyonzy.dev/OpenBareMap/norway-central/2.0.0/app-bundles-v1/ios/OpenBareMap-Norway-Central-iOS-Bundle.zip) · [Instructions](https://downloads.appsbyonzy.dev/OpenBareMap/norway-central/2.0.0/app-bundles-v1/ios/instructions.txt) | [Download](https://downloads.appsbyonzy.dev/OpenBareMap/norway-central/2.0.0/app-bundles-v1/android/OpenBareMap-Norway-Central-Android-Bundle.zip) · [Instructions](https://downloads.appsbyonzy.dev/OpenBareMap/norway-central/2.0.0/app-bundles-v1/android/instructions.txt) | [Download](https://downloads.appsbyonzy.dev/Garmin/OpenBareMap-Norway-Central.img?v=2.0.1-trail-detail-r1) · [Instructions](https://downloads.appsbyonzy.dev/Garmin/norway-central-instructions.txt) |
+| Northern Norway | [Download](https://downloads.appsbyonzy.dev/OpenBareMap/norway-north/2.0.0/app-bundles-v1/ios/OpenBareMap-Norway-North-iOS-Bundle.zip) · [Instructions](https://downloads.appsbyonzy.dev/OpenBareMap/norway-north/2.0.0/app-bundles-v1/ios/instructions.txt) | [Download](https://downloads.appsbyonzy.dev/OpenBareMap/norway-north/2.0.0/app-bundles-v1/android/OpenBareMap-Norway-North-Android-Bundle.zip) · [Instructions](https://downloads.appsbyonzy.dev/OpenBareMap/norway-north/2.0.0/app-bundles-v1/android/instructions.txt) | [Download](https://downloads.appsbyonzy.dev/Garmin/OpenBareMap-Norway-North.img?v=2.0.1-trail-detail-r1) · [Instructions](https://downloads.appsbyonzy.dev/Garmin/norway-north-instructions.txt) |
 
 The outer Android Bundle ZIP must be extracted first. The included `OpenBareMap-Resources.zip` is the input to the Android loader. The iOS bundle is copied intact into the app target or opened from persistent application storage. Region-specific instructions cover setup, dependency versions, verification, offline use and attribution. Each download's R2 folder contains `SHA256SUMS.txt` and a manifest.
 
@@ -29,6 +34,19 @@ The outer Android Bundle ZIP must be extracted first. The included `OpenBareMap-
 | Pyrenees | Atlantic to Mediterranean, both slopes and Andorra; Bayonne included (2.2°W–3.4°E, 41.9°N–43.9°N) | 31 October 2026 | ETRS89 / UTM 31N; French name fallback | [Pyrenees](regions/pyrenees/active-map.json) | 4836 |
 | Dolomites | Northern Italy and surrounding Alpine valleys (10.65°E–13.10°E, 45.70°N–47.00°N) | 4 November 2026 | ETRS89 / UTM 32N; Italian name fallback | [Dolomites](regions/dolomites/active-map.json) | 4837 |
 | Faroe Islands | Complete archipelago, including outlying islands (7.85°W–6.10°W, 61.30°N–62.50°N) | 4 November 2026 | ETRS89 / UTM 29N; Faroese name fallback | [Faroe Islands](regions/faroe-islands/active-map.json) | 4838 |
+| Southern Norway | 57.8–63.5°N; southern coast, Oslo, Bergen, Jotunheimen and Trondheim | 13 November 2026 | ETRS89 / UTM 33N; Norwegian name fallback | [Southern Norway](regions/norway-south/active-map.json) | 4839 |
+| Central Norway | 63.0–67.5°N; Trondheim, Trøndelag, Helgeland and Bodø | 13 November 2026 | ETRS89 / UTM 33N; Norwegian name fallback | [Central Norway](regions/norway-central/active-map.json) | 4840 |
+| Northern Norway | 67.0–71.5°N; Bodø, Lofoten, Vesterålen, Tromsø, Finnmark and Kirkenes | 13 November 2026 | ETRS89 / UTM 33N; Norwegian name fallback | [Northern Norway](regions/norway-north/active-map.json) | 4841 |
+
+The three Norway editions cover mainland Norway and coastal islands, excluding Svalbard and Jan Mayen. Adjacent editions overlap at full detail by approximately **56 km** around Trondheim and Bodø. All use 20 m contours, Copernicus GLO-30 terrain and a shared UTM 33N grid. Released on 14 November 2026; complete public download checksum checks are recorded in the [publication verification](web-preview/verification/norway-publication.json).
+
+| Norway edition | iOS ZIP | Android ZIP | Garmin image |
+| --- | --- | --- | --- |
+| Southern Norway | 3.94 GB | 3.94 GB | 1.002 GB |
+| Central Norway | 1.99 GB | 1.99 GB | 0.519 GB |
+| Northern Norway | 2.60 GB | 2.60 GB | 0.633 GB |
+
+Sizes are compressed downloads in decimal GB; allow additional space for extraction. See the [Norway coverage plan](config/norway-editions.json) and [build and storage notes](docs/regional-editions.md#norway-editions).
 
 The Pyrenees iOS and Android integration kits are approximately **1.74 GB each**; the Garmin image is approximately **422 MB**. Use `scripts/serve.py --region pyrenees --port 8769` for its interactive preview. Mobile resources are under `regions/pyrenees/ios/` and `regions/pyrenees/android/`; its native image is `regions/pyrenees/garmin/dist/OpenBareMap-Pyrenees.img`. The [regional manifest](releases/pyrenees/2.0.0/manifest.json), [automated validation](releases/pyrenees/2.0.0/validation.json) and [browser review](regions/pyrenees/visual-review.json) record the completed build.
 
@@ -44,7 +62,7 @@ Sierra Nevada uses the MITECO/OAPN national park boundary and a 25,000 m buffer 
 - Places and facilities: settlements, islands, water names, outdoor facilities, parking and regional labels.
 - Offline resources: local databases, styles, fonts, sprites, legends and attribution notices.
 
-Mobile and web maps share cartography. Garmin uses its native fonts, symbols, terrain presentation and detail levels. All Garmin editions use package **2.0.1-trail-detail-r1**: green paths, brown farm/forest tracks and red walking routes share 4-pixel dashed strokes, transparent gaps and one close-detail visibility threshold. Bridleways, cycleways, steps and cycling-route markings also appear only at this finest detail level. Buildings occupy only the finest stored detail level, with fine contours retained in the intervening view. Garmin settings determine the actual screen scale. The Garmin maps are display-only, with native elevation data and no turn-by-turn routing. [Garmin release files and checksums](garmin/releases/2.0.1-trail-detail-r1/manifest.json). Regional filenames, unique identifiers and clipped backgrounds allow the Garmin maps to remain enabled together without covering neighbouring regions. Follow the linked generic installation instructions and the mapping product's manual.
+Mobile and web maps share cartography. Garmin uses its native fonts, symbols, terrain presentation and detail levels. All Garmin editions use package **2.0.1-trail-detail-r1**: green paths, brown farm/forest tracks and red walking routes share 4-pixel dashed strokes, transparent gaps and one close-detail visibility threshold. Bridleways, cycleways, steps and cycling-route markings also appear only at this finest detail level. Buildings occupy only the finest stored detail level, with fine contours retained in the intervening view. Garmin settings determine the actual screen scale. The Garmin maps are display-only, with native elevation data and no turn-by-turn routing. [Earlier Garmin release files and checksums](garmin/releases/2.0.1-trail-detail-r1/manifest.json); [Norway South](distribution/app-bundles-v1/garmin/norway-south/manifest.json), [Central](distribution/app-bundles-v1/garmin/norway-central/manifest.json) and [North](distribution/app-bundles-v1/garmin/norway-north/manifest.json) have separate publication manifests. Regional filenames, unique identifiers and clipped backgrounds allow the Garmin maps to remain enabled together without covering neighbouring regions. Follow the linked generic installation instructions and the mapping product's manual.
 
 The Faroe Islands iOS and Android integration kits are approximately **42 MB each**; its Garmin image is approximately **8 MB**. Its [release manifest](releases/faroe-islands/2.0.0/manifest.json), [automated validation](releases/faroe-islands/2.0.0/validation.json) and [browser review](regions/faroe-islands/visual-review.json) record the build. Terrain uses Copernicus DEM GLO-30 with the shared hillshade and contour treatment.
 
@@ -59,6 +77,9 @@ The Faroe Islands iOS and Android integration kits are approximately **42 MB eac
 | Pyrenees | [Open map preview](https://downloads.appsbyonzy.dev/OpenBareMap/pyrenees/2.0.0/preview/pyrenees/index.html?ui=20261106-regions-v2) | <a href="https://downloads.appsbyonzy.dev/OpenBareMap/pyrenees/2.0.0/preview/pyrenees/legend.html"><img src="https://downloads.appsbyonzy.dev/OpenBareMap/pyrenees/2.0.0/preview/assets/legends/pyrenees@2x.png" width="160" alt="Pyrenees map key — click to open and zoom"></a> |
 | Dolomites | [Open map preview](https://downloads.appsbyonzy.dev/OpenBareMap/dolomites/2.0.0/preview/dolomites/index.html?ui=20261106-regions-v2) | <a href="https://downloads.appsbyonzy.dev/OpenBareMap/dolomites/2.0.0/preview/dolomites/legend.html"><img src="https://downloads.appsbyonzy.dev/OpenBareMap/dolomites/2.0.0/preview/assets/legends/dolomites@2x.png" width="160" alt="Dolomites map key — click to open and zoom"></a> |
 | Faroe Islands | [Open map preview](https://downloads.appsbyonzy.dev/OpenBareMap/faroe-islands/2.0.0/preview/faroe-islands/index.html?ui=20261106-regions-v2) | <a href="https://downloads.appsbyonzy.dev/OpenBareMap/faroe-islands/2.0.0/preview/faroe-islands/legend.html"><img src="https://downloads.appsbyonzy.dev/OpenBareMap/faroe-islands/2.0.0/preview/assets/legends/faroe-islands@2x.png" width="160" alt="Faroe Islands map key — click to open and zoom"></a> |
+| Southern Norway | [Open map preview](https://downloads.appsbyonzy.dev/OpenBareMap/norway/2.0.0/preview/norway-south/index.html?ui=20261114-norway-v1) | <a href="https://downloads.appsbyonzy.dev/OpenBareMap/norway/2.0.0/preview/norway-south/legend.html"><img src="https://downloads.appsbyonzy.dev/OpenBareMap/norway/2.0.0/preview/assets/legends/norway-south@2x.png" width="160" alt="Southern Norway map key — click to open and zoom"></a> |
+| Central Norway | [Open map preview](https://downloads.appsbyonzy.dev/OpenBareMap/norway/2.0.0/preview/norway-central/index.html?ui=20261114-norway-v1) | <a href="https://downloads.appsbyonzy.dev/OpenBareMap/norway/2.0.0/preview/norway-central/legend.html"><img src="https://downloads.appsbyonzy.dev/OpenBareMap/norway/2.0.0/preview/assets/legends/norway-central@2x.png" width="160" alt="Central Norway map key — click to open and zoom"></a> |
+| Northern Norway | [Open map preview](https://downloads.appsbyonzy.dev/OpenBareMap/norway/2.0.0/preview/norway-north/index.html?ui=20261114-norway-v1) | <a href="https://downloads.appsbyonzy.dev/OpenBareMap/norway/2.0.0/preview/norway-north/legend.html"><img src="https://downloads.appsbyonzy.dev/OpenBareMap/norway/2.0.0/preview/assets/legends/norway-north@2x.png" width="160" alt="Northern Norway map key — click to open and zoom"></a> |
 
 Click a key to open its full-size legend with zoom controls, fit-to-page and image download. The website previews use these same legend pages. Ireland uses the Irish Grid key; England & Wales and Scotland use British National Grid keys. Sierra Nevada uses an ETRS89 / UTM 30N key with the national park and 25 km coverage lines.
 
@@ -79,7 +100,7 @@ The bundles contain map data and integration support. The consuming app supplies
 
 ## Source, export and local viewing
 
-Git LFS stores the large source archives, map databases and binary outputs. Restore the required LFS files before exporting; pointer files cannot be used as map resources. Existing commands without a region argument select Ireland.
+Git LFS stores many earlier source archives and selected map databases; finished release downloads are hosted on Cloudflare R2. Norway bulk inputs and databases are excluded from both Git and LFS. Check the [storage guide](#file-storage-and-restoration) before exporting or starting a local viewer: a fresh clone is not a complete map installation. Existing commands without a region argument select Ireland.
 
 ```sh
 git lfs install --local
@@ -112,11 +133,43 @@ Source completeness, geographic accuracy and readability depend on the input dat
 | Scotland source and terrain locks | [OSM](regions/scotland/sources.lock.json), [terrain](regions/scotland/terrain-sources.lock.json) |
 | Shared coastline and inherited assets | [Coast](coast-sources.lock.json), [reference assets](legacy-assets.lock.json) |
 | Sierra Nevada source, terrain and park boundary | [OSM](regions/sierra-nevada/sources.lock.json), [terrain](regions/sierra-nevada/terrain-sources.lock.json), [park boundary](regions/sierra-nevada/boundary-source.json) |
+| Southern Norway source and terrain locks | [OSM](regions/norway-south/sources.lock.json), [terrain](regions/norway-south/terrain-sources.lock.json) |
+| Central Norway source and terrain locks | [OSM](regions/norway-central/sources.lock.json), [terrain](regions/norway-central/terrain-sources.lock.json) |
+| Northern Norway source and terrain locks | [OSM](regions/norway-north/sources.lock.json), [terrain](regions/norway-north/terrain-sources.lock.json) |
 | Integration bundle catalog | [Catalog](distribution/app-bundles-v1/catalog.json) |
 | Platform references | [Garmin](garmin/README.md), [Android](android/README.md), [iOS](ios/README.md) |
 
-## Restoring published binary assets
+## File storage and restoration
 
-The 13 published assets listed in `distribution/r2-assets.json` are hosted in R2 instead of the current Git tree. Their public download links above are unchanged. After cloning, run `python3 scripts/restore_r2_assets.py --list` to inspect them, then `python3 scripts/restore_r2_assets.py --all` to restore them before running builds or checks that use these files. Each download is checked against its recorded size and SHA-256. Raw source datasets and active map databases remain tracked as before.
+A Git clone contains the code, styles, configuration and release records. Large resources have three different storage arrangements:
 
-This change does not remove old LFS objects from GitHub storage. Server-side purging is a separate operation requiring GitHub Support and may require historical references to be removed.
+| Resource | Where it lives | How to obtain it |
+| --- | --- | --- |
+| Finished iOS / Android kits and Garmin images — all ten editions | **Cloudflare R2; outside Git** | Use the download table above, or the verified restore commands below. |
+| Most earlier source datasets and selected working databases | **Git LFS** | Run `git lfs pull` for the files required by your edition. England/Wales basemaps use tracked LFS parts, reassembled when selected. |
+| Norway source extracts, elevation pixels, working databases and database parts | **Rebuildable local files; deliberately outside Git, LFS and Cloudflare backups** | Recreate when needed using the [Norway build workflow](docs/regional-editions.md#norway-editions). Git retains configuration and provenance; Cloudflare retains finished downloads and previews. The restore command does not install working databases. |
+| Dolomites and Faroe Islands selected contour databases | **Git LFS**, alongside their other selected databases | Fetch `releases/<region>/2.0.0/maps/topography-context.mbtiles` with `git lfs pull`. Unselected contour intermediates remain excluded. |
+| Source locks, checksums, release manifests and Norway `.parts.json` records | **Ordinary Git** | Included in a clone. A checksum or parts manifest records a file; it does not contain its bytes. |
+
+### Restore finished downloads from Cloudflare
+
+The [R2 asset inventory](distribution/r2-assets.json) records **30 current delivery files, approximately 38.71 GB total**, with their public URLs, original local paths, exact sizes and SHA-256 checksums. The [app catalog](distribution/app-bundles-v1/catalog.json) also records platform instructions and map versions. These are delivery inventories, not a backup of every source or intermediate file.
+
+```sh
+# Inspect available files without downloading anything.
+python3 scripts/restore_r2_assets.py --list
+
+# Restore just one file to its recorded local path.
+python3 scripts/restore_r2_assets.py --path regions/norway-south/garmin/dist/OpenBareMap-Norway-South.img
+
+# Optional: restore all 30 delivery files (about 38.71 GB).
+python3 scripts/restore_r2_assets.py --all
+```
+
+The restorer checks both size and SHA-256 and verifies existing files rather than replacing them. Some older phone bundles restore under `work/`, matching their catalog paths. Download only the platforms and regions you need; extraction requires additional disk space. To use an offline map, the direct download links are sufficient. To export or run a development preview, the relevant selected databases must also exist locally.
+
+### Storage audit and maintenance
+
+The [15 November 2026 audit](docs/storage-audit-2026-11-15.md) explains the Git / R2 split, missing restoration entries corrected in this update, and the deliberate Norway rebuild policy. Recommended maintenance: keep the delivery inventory synchronized with the app catalog and Garmin manifests, and label externally stored files explicitly. Norway working databases and source data are recreated when needed rather than archived in Git or Cloudflare; exact historical bulk bytes are not promised.
+
+Removing a file from the current Git tree does not purge its historical LFS objects or reduce historical GitHub storage automatically.

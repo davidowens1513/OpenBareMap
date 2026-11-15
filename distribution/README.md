@@ -46,3 +46,14 @@ instructions use one template across editions; device-specific installation and
 historical build records remain in the platform/release subdirectories.
 
 The catalog records versions per region: England/Wales includes the Isle of Man in 2.0.1; the other editions remain 2.0.0. Use the catalog URL and checksum for the selected region. `--platforms ios` or `--platforms android` packages one platform at a time when disk space is limited.
+
+## Git and Cloudflare storage
+
+All 20 current phone kits and ten Garmin images are hosted on Cloudflare R2 and
+excluded from Git. [The restore inventory](r2-assets.json) records their original
+local destinations, public URLs, sizes and SHA-256 checksums. Run
+`python3 scripts/restore_r2_assets.py --list` from the repository root before
+selecting downloads. Downloading a kit does not install development databases.
+See the [root storage guide](../README.md#file-storage-and-restoration) and
+[storage audit](../docs/storage-audit-2026-11-15.md) for Norway resources deliberately kept local and rebuilt when needed. The selected
+Dolomites and Faroe contour databases are included through Git LFS.

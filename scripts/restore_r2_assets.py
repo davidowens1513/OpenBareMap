@@ -50,13 +50,14 @@ def restore(asset):
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--list', action='store_true', help='List assets without downloading')
-    parser.add_argument('--all', action='store_true', help='Restore all assets (approximately 7.49 GB)')
+    parser.add_argument('--all', action='store_true', help='Restore all listed assets; use --list to inspect download sizes')
     parser.add_argument('--path', action='append', default=[], help='Restore a listed repository path; repeatable')
     args = parser.parse_args()
     assets = json.loads((ROOT / 'distribution/r2-assets.json').read_text())['assets']
     if args.list:
         for asset in assets:
             print(f"{asset['bytes'] / 1e9:.3f} GB  {asset['path']}")
+        print(f"Total: {len(assets)} files, {sum(asset['bytes'] for asset in assets) / 1e9:.3f} GB")
         return
     known = {asset['path'] for asset in assets}
     if set(args.path) - known:
