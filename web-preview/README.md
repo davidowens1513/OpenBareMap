@@ -86,3 +86,7 @@ The live header and dropdown checks are recorded in
 Canonical preview links carry a UI revision query parameter so an existing browser cache cannot keep serving the old navigation when following the updated website or Region menu. Map archive URLs remain unchanged.
 
 Use `scripts/publish_preview_ui.py --output /absolute/new/preview-ui-staging` to publish only the shared controls and entry HTML to every canonical prefix with the required revalidation policy. The legacy England/Wales entry redirects to the active version. Use `--stage-only` for review without uploading.
+
+## BareGPS Track Editor release
+
+The website includes Track Editor 0.3.3, build 75, with an updated browser preview, verified permanent-release-signed Android APK/ZIP, and iPhone Xcode source ZIP. This release adds direct edited GPX export, workspace backup/recovery, consistent ascent availability and explicit plan/output freshness. The homepage links to the matching versioned downloads; previous downloads are retained. APK and ZIP responses use attachment download headers. The app README and full source remain in the separate BareGPS-Track-Editor repository.
