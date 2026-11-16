@@ -87,6 +87,10 @@ Canonical preview links carry a UI revision query parameter so an existing brows
 
 Use `scripts/publish_preview_ui.py --output /absolute/new/preview-ui-staging` to publish only the shared controls and entry HTML to every canonical prefix with the required revalidation policy. The legacy England/Wales entry redirects to the active version. Use `--stage-only` for review without uploading.
 
-## BareGPS Track Editor release
+## BareGPS Track Editor
 
-The website includes Track Editor 0.3.3, build 75, with an updated browser preview, verified permanent-release-signed Android APK/ZIP, and iPhone Xcode source ZIP. This release adds direct edited GPX export, workspace backup/recovery, consistent ascent availability and explicit plan/output freshness. The homepage links to the matching versioned downloads; previous downloads are retained. APK and ZIP responses use attachment download headers. The app README and full source remain in the separate BareGPS-Track-Editor repository.
+The website includes Track Editor 0.3.5, build 78, as a browser app, a permanent-release-signed Android APK/ZIP, and an iPhone Xcode source ZIP. The iPhone bundle requires Xcode and a development team; it is not an App Store or TestFlight installation.
+
+Inputs support up to 150,000 points; Route Plan shows its 5,000-point allowance and offers Simplify when an input will not fit. Simplification keeps the original. Terrain jobs support up to 5,000 points, including added samples. Plan replacements retain their chosen reversal, and reversed copies omit recorded timestamps. Map layers toggle between OpenTopo and Satellite. Edited GPX export, workspace backup/recovery and shareable Route Cards are available.
+
+The homepage links to matching versioned downloads. Previous downloads remain available, and APK/ZIP responses use attachment headers. [App source and product README](https://github.com/davidowens1513/BareGPS-Track-Editor) · [Development and validation notes](https://github.com/davidowens1513/BareGPS-Track-Editor/blob/main/docs/development.md). Website publication evidence is kept in [verification](verification/), separately from this product description.
