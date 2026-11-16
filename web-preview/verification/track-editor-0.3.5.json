@@ -1,0 +1,49 @@
+{
+  "version": "0.3.5",
+  "build": 78,
+  "source_commit": "487c6a9",
+  "tests": {
+    "vitest": 155,
+    "native_file_guard": 9,
+    "typescript": "passed",
+    "web_build": "passed",
+    "native_sync": "passed"
+  },
+  "phones": {
+    "ios": "Xcode running App on TestBed iOS; product version 0.3.5 build 78 and all 9 public assets verified",
+    "android": "Android Studio installDebug succeeded on SM-A075F Android 16; adb launched app and reports versionName 0.3.5/versionCode 78; development signed update retains existing data"
+  },
+  "public_android": {
+    "build": 78,
+    "release_signed": true,
+    "debuggable": false,
+    "signing_certificate_sha256": "8176a4bb5fb5fb0b672346343558c4bb58433e71dda5ebd5dd9aad1bd2c283d9"
+  },
+  "downloads": "Versioned signed APK, Android ZIP and iOS Xcode source ZIP staged and checksum-verified; prior links retained",
+  "publication": {
+    "status": "live",
+    "site": "https://appsbyonzy.dev/",
+    "deployment_id": "2b48fe2c-ab82-4c89-9c3e-ae9856623f07",
+    "url": "https://2b48fe2c.appsbyonzy.pages.dev/",
+    "live_checks": [
+      "Homepage shows version 0.3.5 build 78 and correct download links",
+      "Browser app shows 0 of 5,000 points used, including inside Route Plan",
+      "Published About includes timestamp removal, replacement direction and 150,000-point input limit"
+    ],
+    "downloads_verified": [
+      {
+        "file": "android/BareGPS-Track-Editor-0.3.5.apk",
+        "sha256_matches": true
+      },
+      {
+        "file": "android/BareGPS-Track-Editor-android-Bundle-0.3.5.zip",
+        "safari_expanded_files_match": 4
+      },
+      {
+        "file": "ios/BareGPS-Track-Editor-ios-Bundle-0.3.5.zip",
+        "sha256_matches": true
+      }
+    ],
+    "verification_note": "In-app browser download check stalled; Safari downloads and local checksums/expanded contents completed verification."
+  }
+}
