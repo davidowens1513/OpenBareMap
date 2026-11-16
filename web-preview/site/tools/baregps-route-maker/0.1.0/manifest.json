@@ -1,0 +1,32 @@
+{
+  "version": "0.1.0",
+  "app_source_commit": "7b21426c0b4926c8369974d7d90a8b283483cd8f",
+  "android": {
+    "build": 1,
+    "release_signed": true,
+    "debuggable": false,
+    "signing_certificate_sha256": "52e722bdccd99854e77600e1e5e2b44984f6e3e0720b833d2a9fe77f0b373c63"
+  },
+  "files": {
+    "android/BareGPS-Route-Maker-0.1.0.apk": {
+      "bytes": 4016981,
+      "sha256": "b6c15223421c6217c0236e3ba2fa3044be20a67a7c4a8c30df00c4bd03d7bccf"
+    },
+    "android/BareGPS-Route-Maker-android-Bundle-0.1.0.zip": {
+      "bytes": 3628759,
+      "sha256": "3929b485d3f37b783116981f5aedbbd84b1a537f5710845718f8356908b92994"
+    },
+    "android/instructions.txt": {
+      "bytes": 360,
+      "sha256": "2a4a996f2e2c83675a54568515c04412abfaa3929834b5b4d05fe2d42b3c244e"
+    },
+    "ios/BareGPS-Route-Maker-ios-Bundle-0.1.0.zip": {
+      "bytes": 1017186,
+      "sha256": "f7ad38d62976b887cc1d57f0b48f20ab0ee05c80dd2f179fa520a9fcb07348ef"
+    },
+    "ios/instructions.txt": {
+      "bytes": 467,
+      "sha256": "cbad80e49ddb74224c5e52cf29c536e8e377b0bd7e61e187c0f59c7796b7c0ac"
+    }
+  }
+}

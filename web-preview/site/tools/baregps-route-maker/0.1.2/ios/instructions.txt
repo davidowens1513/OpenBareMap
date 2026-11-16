@@ -1,0 +1,13 @@
+BAREGPS ROUTE MAKER - IOS
+Version 0.1.2 build 3
+
+This is an Xcode source bundle, not an installable IPA or TestFlight download. Run npm ci, then npm run native:sync. Open ios/App/App.xcodeproj in Xcode, choose your development team and connected iPhone, and build/run. The bundled web assets are ready. The iOS dependency path is local to this project.
+
+Native target: iPhone only. iPads and other tablets should use https://appsbyonzy.dev/tools/baregps-route-maker/ . Apple may still offer iPhone compatibility mode on iPad.
+
+Maps and terrain require internet. Route lines do not automatically follow paths.
+Support: appsbyonzy@gmail.com
+Source: https://github.com/davidowens1513/BareGPS-Route-Maker
+
+Privacy: https://mixolydian-flyingfish-56d.notion.site/BareGPS-Route-Maker-Privacy-Policy-4150e3f94c35804389a3f3d3773b261e
+Support page: https://mixolydian-flyingfish-56d.notion.site/BareGPS-Route-Maker-Support-Page-4150e3f94c3580c99fd8e2fad309826e
