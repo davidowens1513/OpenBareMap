@@ -89,7 +89,7 @@ Use `scripts/publish_preview_ui.py --output /absolute/new/preview-ui-staging` to
 
 ## BareGPS Track Editor
 
-The website includes Track Editor 0.3.5, build 78, as a browser app, a permanent-release-signed Android APK/ZIP, and an iPhone Xcode source ZIP. The iPhone bundle requires Xcode and a development team; it is not an App Store or TestFlight installation.
+The website includes Track Editor 0.3.6, build 80, as a browser app, a permanent-release-signed Android APK/ZIP, and an iPhone Xcode source ZIP. The iPhone bundle requires Xcode and a development team; it is not an App Store or TestFlight installation.
 
 Inputs support up to 150,000 points; Route Plan shows its 5,000-point allowance and offers Simplify when an input will not fit. Simplification keeps the original. Terrain jobs support up to 5,000 points, including added samples. Plan replacements retain their chosen reversal, and reversed copies omit recorded timestamps. Map layers toggle between OpenTopo and Satellite. Edited GPX export, workspace backup/recovery and shareable Route Cards are available.
 
@@ -98,6 +98,6 @@ The homepage links to matching versioned downloads. Previous downloads remain av
 
 ## BareGPS Route Maker
 
-Route Maker is available as browser/source version 0.1.6, Android 0.1.6 build 12, and iPhone 1.0.1 build 102 Xcode source. It creates routes from map taps, supports direct OpenTopo/Satellite switching with selected-layer About credits, and suggests the chosen route name when saving GPX. Terrain estimates and full Route Card sharing are available. The iOS source bundle requires Xcode and a development team; the App Store link is separate and source versions do not indicate Store availability.
+Route Maker is available as browser/source version 0.1.6, Android 0.1.6 build 13, and iPhone 1.0.1 build 103 Xcode source. It creates routes from map taps, supports direct OpenTopo/Satellite switching with selected-layer About credits, and uses the current route name for the suggested filename and both GPX name fields, including after restoring saved terrain. Terrain estimates and full Route Card sharing are available. The iOS source bundle requires Xcode and a development team; the App Store link is separate and source versions do not indicate Store availability.
 
 [Product README and source](https://github.com/davidowens1513/BareGPS-Route-Maker) · [Development and validation notes](https://github.com/davidowens1513/BareGPS-Route-Maker/blob/main/docs/development.md). Publication evidence is kept in [verification](verification/).

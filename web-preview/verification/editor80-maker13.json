@@ -1,0 +1,23 @@
+{
+  "date": "2026-11-16",
+  "editor": "0.3.6 (80)",
+  "route_maker_ios": "1.0.1 (103)",
+  "route_maker_android": "0.1.6 (13)",
+  "files": 287,
+  "bytes": 235283623,
+  "sha256": "a5ae07f1daded910126d89821e0ce8530fbca83448faf9fff0b8875f9dd4b6e9",
+  "previous_files_retained": true,
+  "changed_existing_files": [
+    "index.html",
+    "_headers",
+    "tools/baregps-track-editor/index.html",
+    "tools/baregps-route-maker/index.html"
+  ],
+  "tests": {
+    "editor": 157,
+    "route_maker": 67
+  },
+  "native_assets_match": true,
+  "status": "staged",
+  "deployment": null
+}
