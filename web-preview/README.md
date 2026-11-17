@@ -89,9 +89,9 @@ Use `scripts/publish_preview_ui.py --output /absolute/new/preview-ui-staging` to
 
 ## BareGPS Track Editor
 
-The website includes Track Editor 0.3.6, build 80, as a browser app, a permanent-release-signed Android APK/ZIP, and an iPhone Xcode source ZIP. The iPhone bundle requires Xcode and a development team; it is not an App Store or TestFlight installation.
+The website includes Track Editor 0.3.7, build 81, as a browser app, a permanent-release-signed Android APK/ZIP, and an iPhone Xcode source ZIP. The iPhone bundle requires Xcode and a development team; it is not an App Store or TestFlight installation.
 
-Inputs support up to 150,000 points; Route Plan shows its 5,000-point allowance and offers Simplify when an input will not fit. Simplification keeps the original. Terrain jobs support up to 5,000 points, including added samples. Plan replacements retain their chosen reversal, and reversed copies omit recorded timestamps. Map layers toggle between OpenTopo and Satellite. Edited GPX export, workspace backup/recovery and shareable Route Cards are available.
+Inputs support up to 150,000 points; Route Plan shows its 5,000-point allowance and offers Simplify when an input will not fit. Simplification keeps the original. Terrain jobs support up to 5,000 points, including added samples. Plan replacements retain their chosen reversal, and reversed copies omit recorded timestamps. Map layers toggle between OpenTopo and Satellite. Edited GPX export, optional workspace remembering, workspace backup/recovery and shareable Route Cards are available. Turning Remember workspace off keeps the current session open and starts fresh next time.
 
 The homepage links to matching versioned downloads. Previous downloads remain available, and APK/ZIP responses use attachment headers. [App source and product README](https://github.com/davidowens1513/BareGPS-Track-Editor) · [Development and validation notes](https://github.com/davidowens1513/BareGPS-Track-Editor/blob/main/docs/development.md). Website publication evidence is kept in [verification](verification/), separately from this product description.
 
