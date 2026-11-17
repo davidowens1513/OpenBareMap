@@ -1,17 +1,69 @@
 BAREGPS TRACK EDITOR — ANDROID
-Version 0.3.5, build 78
+Version 0.3.7, build 81
+Instructions reviewed 17 November 2026
 
-Install the release-signed, non-debuggable APK. Keep the same signing identity for future updates. Android phones are targeted; tablets use https://appsbyonzy.dev/tools/baregps-track-editor/.
+INSTALL ON YOUR ANDROID PHONE (SIDELOADING)
 
-The ZIP contains the APK, instructions and checksum. It is not an Android Studio source archive; source is on GitHub.
+You need an Android phone running Android 7.0 or later. Use the website's
+.apk link for the simplest installation. No computer, Android Studio,
+developer mode, USB debugging or Google Play account is required.
 
-Track inputs open as clean lines. Tap a line to reveal local handles, then drag to reshape a section smoothly. Reset Track restores that input’s saved starting version after confirmation and supports Undo. The initial version of a legacy input is its saved state at upgrade.
+1. On the phone, open https://appsbyonzy.dev/ and find BareGPS Track Editor under
+   BareGPS Tools. Tap .apk and wait for the download to finish.
+   The file is BareGPS-Track-Editor-0.3.7.apk. Only download from a source you trust.
+   If the browser asks whether to keep this APK, check its name and source.
 
-Maps and terrain require internet. Lines do not automatically follow paths. Keep your original GPX files and export important work.
+2. Open Files or My Files > Downloads and tap the APK. If you downloaded the
+   Android Bundle ZIP instead, extract it first and tap the APK inside it.
+   The ZIP is not itself installable and is not an Android Studio project.
+   If downloaded on a computer, copy the APK to the phone's Downloads folder
+   using a USB file-transfer connection or your own cloud storage, then open it.
 
-Support: appsbyonzy@gmail.com
-Source: https://github.com/davidowens1513/BareGPS-Track-Editor
+3. If Android blocks installation from this source, tap Settings in the
+   installer message. On Android 8 or later, enable Allow from this source
+   for the app opening the APK (for example Chrome, Files or My Files).
+   Return to the APK and tap Install. You can also search phone Settings for
+   Install unknown apps; the permission belongs to the browser/file manager.
+   Android 7 uses Settings > Security > Unknown sources instead. Menu names
+   vary by phone. Turn this installation permission off again afterwards.
 
-Inputs remain visible together. The stronger current input has a matching name/colour indicator on the map and in Input Tracks. Tap another line to select it, then tap again for editing handles. Settings can save a default colour before importing.
+4. Let Google Play Protect scan the app if offered. Keep Play Protect on.
+   If a warning identifies the file as harmful or installation is blocked for
+   an unexplained reason, stop and contact support with the exact message.
+   Samsung Auto Blocker can also prevent sideloading: check Settings >
+   Security and privacy > Auto Blocker and Samsung's guidance. Work-managed
+   phones may prohibit installation; contact the administrator in that case.
 
-Export Edited GPX saves the selected edited input directly. Renamed tracks and routes use their names for the GPX filename. Plan copies and confirmed output warn when they are out of date. Settings → Workspace recovery and backup provides full workspace backup export/restore and previous-save recovery. Incomplete or stale ascent totals are shown as unavailable.
+5. When installation finishes, tap Open. BareGPS Track Editor should appear in your
+   app list. Check About for version 0.3.7, build 81.
+
+UPDATING AN EXISTING COPY
+Install the new APK over the existing release and choose Update when offered.
+Updates signed with the same release key normally retain app data. Export
+important GPX files and work before updating.
+
+If Android says App not installed, Conflicting package, or refuses the update,
+a copy installed from Android Studio may have a different signing key, or the
+installed build may be newer. Do not uninstall or clear storage immediately:
+that can delete local work and settings. Export and check your files first;
+Track Editor also offers a workspace backup in Settings. Contact support if
+unsure. Check free space, Android version and that the APK downloaded fully.
+
+PHONE AND FIRST-USE NOTES
+The native app targets phones. On tablets use:
+https://appsbyonzy.dev/tools/baregps-track-editor/
+Maps and terrain estimates require internet; route lines do not automatically
+follow paths. Keep original GPX files and export important work. Allow location
+access only if you want to use the current-position feature. No account is required.
+
+Official Android installation help:
+https://support.google.com/pixelphone/answer/7391672
+Samsung unknown-app installation help:
+https://www.samsung.com/us/support/troubleshoot/TSG10001913/
+
+WORKING WITH TRACKS
+Import GPX tracks, select a line and tap again for editing handles. Export
+Edited GPX saves the selected input directly; Route Plan assembles sections
+into a combined route. Settings > Workspace recovery and backup provides
+workspace backup export/restore. Settings also includes Remember workspace.
+Keep an exported copy of work you want to retain before clearing or leaving.

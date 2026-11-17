@@ -1,0 +1,47 @@
+{
+  "date": "2026-11-17",
+  "scope": "All 35 installation/instruction links on the current homepage",
+  "openbaremap": {
+    "guides_reviewed": 30,
+    "live_copies_read": true,
+    "regional_versions_match_catalog": true,
+    "garmin_guides_match_current_release": true,
+    "changes_required": false
+  },
+  "tools": {
+    "track_editor": {
+      "ios": "0.3.7 build 81",
+      "android": "0.3.7 build 81"
+    },
+    "route_maker": {
+      "ios": "1.0.1 build 103",
+      "android": "0.1.6 build 13"
+    },
+    "android_sideloading": "Download/open APK; extract ZIP; Android 7 and Android 8+ installation settings; updates, signing conflicts, backups, Play Protect and Samsung blockers",
+    "bundled_and_standalone_guides_match": true,
+    "apk_bytes_unchanged": true,
+    "checksums_refreshed": true,
+    "packager_stamps_versions_from_native_metadata": true
+  },
+  "baregps_ireland": {
+    "release": "BareGPS-Ireland-1.0-release-2026-10-31.apk",
+    "guide_reviewed": true,
+    "android_7_setting_clarified": true
+  },
+  "homepage": [
+    "Track Editor links: Privacy | Support",
+    "Removed final Route Maker blurb sentence",
+    "Retained desktop two-column layout"
+  ],
+  "publication_status": "live",
+  "archive_sha256": "cc912b6531c23fd79bf09988531d11c5876178cb3b235f9ccce612b48a1a0a2d",
+  "cloudflare_success_observed": true,
+  "live_standalone_guides_match": true,
+  "live_all_four_zip_bytes_and_embedded_guides_match": true,
+  "live_homepage_labels_and_blurb_verified": true,
+  "previous_site_files_retained": 298,
+  "git": {
+    "track_editor": "789aa16 (pushed)",
+    "route_maker": "0916fc8 (pushed)"
+  }
+}
