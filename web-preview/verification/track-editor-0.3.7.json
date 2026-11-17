@@ -1,0 +1,32 @@
+{
+  "version": "0.3.7",
+  "build": 81,
+  "app_source_commit": "93f4635c9757b27643f19b9387f9f72281c8371c",
+  "files": 298,
+  "previous_files_retained": true,
+  "changed_existing_files": [
+    "index.html",
+    "_headers",
+    "tools/baregps-track-editor/index.html"
+  ],
+  "archive_sha256": "fb21eaf625b5c7436deee2e36d8aadb875cebfdf9b7c278581848e3f6ffaa247",
+  "tests": 170,
+  "native_file_checks": 9,
+  "ios_install": "TestBed iOS: running, WebView loaded",
+  "android_install": "SM-A075F: installed successfully",
+  "status": "live",
+  "public_apk_sha256": "1d4854f60bdb78a9217e32d83f5244683c76ddadf295bbf446486bc317985c5e",
+  "url": "https://appsbyonzy.dev/",
+  "production_deployment_verified_in_cloudflare": true,
+  "homepage_blurb_and_development_label_verified": true,
+  "live_remember_workspace_setting_verified": true,
+  "ios_build_assets_match": true,
+  "android_release_assets_match": true,
+  "download_headers_corrected_and_verified": true,
+  "live_downloads": {
+    "android/BareGPS-Track-Editor-0.3.7.apk": "1d4854f60bdb78a9217e32d83f5244683c76ddadf295bbf446486bc317985c5e",
+    "android/BareGPS-Track-Editor-android-Bundle-0.3.7.zip": "46c4a86a2e8ccd56f2a1dc316a50a3493b058d8840f68aafb39b958d2742ebff",
+    "ios/BareGPS-Track-Editor-ios-Bundle-0.3.7.zip": "c420f98468dfd6bacee3fe0016f0dd82d9efea5f35d2bfee4f5cd216c85191ca"
+  },
+  "final_archive_sha256": "72fe84145c261e43309075a1d2befc5efa95694aa13618a602103a66c8045e47"
+}
