@@ -1,0 +1,52 @@
+{
+  "builderSHA256": "fd5c3bd222cfc433bfbba98aeb1fd41da6f62a65db49a05abe26931b009940cb",
+  "contextBounds": [
+    8,
+    45,
+    15,
+    49
+  ],
+  "note": "Contour payloads preserved exactly while extending land background outside edition coverage.",
+  "oldTopography": {
+    "bytes": 440606720,
+    "path": "releases/alps-tyrol-bavaria/2.0.0/maps/topography.mbtiles",
+    "sha256": "5468da109e6d268bbcd0178b74a6aabd5e1b0336ada96bc7c098873bf9cbccb9",
+    "validation": {
+      "empty_tile_count": 68804,
+      "logical_tiles_sha256": "32f24b963b135e2c2d82e3487a04fb2fae635e24ea96a8a2b73a534398baf5a5",
+      "tile_count": 97888
+    }
+  },
+  "output": {
+    "bytes": 440393728,
+    "path": "releases/alps-tyrol-bavaria/2.0.0/maps/topography-context.mbtiles",
+    "sha256": "21384cf932491f1dbff27b2f9d5307606a6a275bb8cfae6f4c4380621334075a",
+    "validation": {
+      "empty_tile_count": 68804,
+      "logical_tiles_sha256": "32f24b963b135e2c2d82e3487a04fb2fae635e24ea96a8a2b73a534398baf5a5",
+      "tile_count": 97888
+    }
+  },
+  "replacement": {
+    "changed_tiles": 7231,
+    "path": "build/alps-tyrol-bavaria-coast-context/combined.mbtiles",
+    "replacement_feature_instances": 10006,
+    "sha256": "bb7d9b7719cb83d534739a47eb7429482dc78e1e940b0a22923cb3573765e401",
+    "unchanged_other_layers_sha256": "3aa863f9a1cde5426c32a2a6e1da84a551ccdaefbf1b1fff5add28f74276ab29",
+    "validation": {
+      "empty_tile_count": 68804,
+      "logical_tiles_sha256": "32f24b963b135e2c2d82e3487a04fb2fae635e24ea96a8a2b73a534398baf5a5",
+      "tile_count": 97888
+    }
+  },
+  "source": {
+    "accessed_utc": "2026-10-25T12:59:16.751893+00:00",
+    "bytes": 928538219,
+    "http_headers_path": "data/land-polygons.headers",
+    "license": "ODbL 1.0; OpenStreetMap contributors",
+    "path": "data/land-polygons-split-4326.zip",
+    "sha256": "5911e273096f9585425a17c30a8a98785cc33ed2718ff88987768933b8a327f7",
+    "source_snapshot": "HTTP Last-Modified 2026-10-25T03:43:12Z; this is file publication, not a guaranteed OSM snapshot timestamp",
+    "url": "https://osmdata.openstreetmap.de/download/land-polygons-split-4326.zip"
+  }
+}

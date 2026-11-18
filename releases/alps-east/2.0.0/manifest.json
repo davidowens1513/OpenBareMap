@@ -1,0 +1,106 @@
+{
+  "acceptance": "Automated checks only; see validation and visual-review records for actual reviewed scope.",
+  "coverage": "Eastern Austrian Alps, Julian Alps and Karawanks, joining the existing Dolomites around East Tyrol and Friuli.",
+  "datasets": {
+    "basemap": {
+      "bytes": 1107087360,
+      "path": "releases/alps-east/2.0.0/maps/basemap.mbtiles",
+      "sha256": "0ef3c9d57905c396f98f30c423f33cd4ed3c1c093a5936f8b919f7f79b679ae9",
+      "validation": {
+        "empty_tile_count": 425,
+        "logical_tiles_sha256": "9a4507df8c520ca72a1829093931c7486859d2368d05dfb58f2d253857a2b687",
+        "tile_count": 32418
+      }
+    },
+    "grid": {
+      "bytes": 14581760,
+      "path": "releases/alps-east/2.0.0/maps/grid.mbtiles",
+      "sha256": "cf1575b8d07ea3c876e2794537be33938c21a100ec5ee427e8e30ef5ef5f2452",
+      "validation": {
+        "empty_tile_count": 0,
+        "logical_tiles_sha256": "9e168d39f5b20dbfdeeb192ac89e8b03eb294b6733b2bfe48356b4b11100d0b3",
+        "tile_count": 43378
+      }
+    },
+    "hillshade": {
+      "bytes": 226734080,
+      "path": "releases/alps-east/2.0.0/maps/hillshade.mbtiles",
+      "sha256": "bc02653c2b030f4414979346d499625ff433309cbd7d6993fb0d14f2d3b1dc82",
+      "validation": {
+        "empty_tile_count": 0,
+        "logical_tiles_sha256": "4b2c333cfb2a237abc399db99d59bd64d1c2adfc079d391c5f10298b0f70cb0e",
+        "tile_count": 5171
+      }
+    },
+    "topography": {
+      "bytes": 589701120,
+      "path": "releases/alps-east/2.0.0/maps/topography-context.mbtiles",
+      "sha256": "0477fb2c593d1c748789f90d66c02e3fbc01f2abc5cd27d57f6fda9342273113",
+      "validation": {
+        "empty_tile_count": 83830,
+        "logical_tiles_sha256": "1a02242264fd1c0e485e418dc0e1cb3064020a865cb5856b29d63e0fa29d7c13",
+        "tile_count": 133641
+      }
+    }
+  },
+  "garmin": {
+    "bytes": 466657280,
+    "path": "regions/alps-east/garmin/dist/OpenBareMap-Alps-East.img",
+    "sha256": "259f2fd74c91b0b51a5fb0f251a4c623c1c4ed46a9171c73d2b4c89cb25ee475"
+  },
+  "geometryReport": {
+    "path": "releases/alps-east/2.0.0/build-records/geometry-report.json",
+    "sha256": "743f3b98138276cd524a520196c60a235df9fda9e20cd0d19f1d9ad5b29de55f"
+  },
+  "hostAppsModified": false,
+  "mapVersion": "2.0.0",
+  "osm": {
+    "bytes": 661562489,
+    "operation": "Complete-feature bbox extraction with nested relation references",
+    "path": "data/regions/alps-east/alps-261116.osm.clipped.osm.pbf",
+    "replicationTimestamp": "2026-11-16T21:22:36Z",
+    "sha256": "3424a5db5c59196308baccf721cff90a2cfbb31520930e13551f63e810b23d05",
+    "snapshot_date": "2026-11-16",
+    "url": "https://download.geofabrik.de/europe/alps-261116.osm.pbf"
+  },
+  "packages": {
+    "android": {
+      "archive": {
+        "bytes": 1943592329,
+        "path": "regions/alps-east/android/OpenBareMap-Android.zip",
+        "sha256": "f41672df64c848031403b963bd3181aae585339110f4673a5bbd6d4cf4e0c4ee"
+      },
+      "checksumsSHA256": "eb23e43bb458d20b786f349e5fd30788318340f23b63dbdb9a28e343af107cfe",
+      "manifestSHA256": "6c8d46c9bf04e7846838ec13c245a1bedcfee00e152db896d600918323241441",
+      "path": "regions/alps-east/android",
+      "validationSHA256": "b9f94dee4a5472cd3806c34eea50bd4f848444b64a6a3d47cf3842adb2a6f2e1"
+    },
+    "ios": {
+      "checksumsSHA256": "04e8b545391348e10578009dad05277f4d6038f178d640699f04349184089a02",
+      "manifestSHA256": "598bd1fdf60e72859f9476feada1d9467095aceb8bc4807032e1772448f476f7",
+      "path": "regions/alps-east/ios",
+      "validationSHA256": "4cc8114de002e094204e8b46578b5f0a6fd91f342c192cacbc20c82b1d8d90ed"
+    }
+  },
+  "pythonRuntime": {
+    "packages": {
+      "Pillow": "12.3.0",
+      "certifi": "2026.10.23",
+      "charset-normalizer": "3.5.2",
+      "idna": "3.20",
+      "numpy": "2.5.4",
+      "osmium": "4.3.2",
+      "pyproj": "3.8.0",
+      "requests": "2.34.2",
+      "shapely": "2.2.0",
+      "urllib3": "2.8.0"
+    },
+    "platform": "macOS-27.2.1-arm64-arm-64bit-Mach-O",
+    "python": "3.14.5 (main, May 10 2026, 10:21:34) [Clang 21.0.0 (clang-2100.0.123.102)]",
+    "requirementsSHA256": "427f12ff8b49bfebac0a7d453c2f65bd15d6695584b18e6ecee1fdfeed20a36c"
+  },
+  "region": "alps-east",
+  "styleSHA256": "3fef4838494dcf506d2a2f55ebc30890cdec377abd9a1f1b532ee3d3a6d909f0",
+  "terrainLockSHA256": "59e209e6c1adba497aad6d7a6e03801227e84ab65ed465b1f57f2e5a54c508d5",
+  "validation": "validation.json"
+}

@@ -1,0 +1,74 @@
+{
+  "bounds": [
+    12.69,
+    45.71865,
+    16.65,
+    48.3
+  ],
+  "contextEnvelope": [
+    12.69,
+    45.63,
+    16.65,
+    48.3
+  ],
+  "drawPriority": 25,
+  "format": "openbaremap-garmin-render-footprint-v1",
+  "geometry": {
+    "bytes": 2628,
+    "path": "regions/alps-east/garmin/render-coverage.geojson",
+    "sha256": "977b3de1e31bc9225582a9a1026d77ffce2263bfaa05cb2f6a92d48b2fa6dc3b"
+  },
+  "inputs": [
+    {
+      "bytes": 2867,
+      "path": "data/regions/alps-east/alps.poly",
+      "sha256": "f84eadb7f1e87e5befdd0bd228b457ef54b1e2463763514ca25f7cd5359b30e9",
+      "url": "https://download.geofabrik.de/europe/alps.poly"
+    }
+  ],
+  "knownDestinationsCovered": {
+    "bled": [
+      14.1136,
+      46.369
+    ],
+    "dachstein": [
+      13.605,
+      47.475
+    ],
+    "karawanks": [
+      14.173,
+      46.433
+    ],
+    "katschberg": [
+      13.6159,
+      47.056
+    ],
+    "kranjska-gora": [
+      13.784,
+      46.4845
+    ],
+    "lienz": [
+      12.769,
+      46.828
+    ],
+    "schladming": [
+      13.6862,
+      47.3941
+    ],
+    "schneeberg": [
+      15.805,
+      47.767
+    ],
+    "tarvisio": [
+      13.575,
+      46.5055
+    ],
+    "triglav": [
+      13.8369,
+      46.3783
+    ]
+  },
+  "purpose": "Rectangular Garmin tiles may overlap other countries. Do not fill their padding with sea, land or land-cover polygons.",
+  "region": "alps-east",
+  "transparentNativeMap": true
+}

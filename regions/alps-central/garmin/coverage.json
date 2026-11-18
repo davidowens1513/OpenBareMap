@@ -1,0 +1,35 @@
+{
+  "areaSquareDegrees": 10.7169,
+  "bounds": [
+    6.85,
+    45.08,
+    11.02,
+    47.65
+  ],
+  "entireRequestedFootprintCovered": true,
+  "exactFootprint": null,
+  "inputs": [
+    {
+      "bytes": 2867,
+      "path": "data/regions/alps-central/alps.poly",
+      "sha256": "f84eadb7f1e87e5befdd0bd228b457ef54b1e2463763514ca25f7cd5359b30e9",
+      "url": "https://download.geofabrik.de/europe/alps.poly"
+    }
+  ],
+  "knownDestinationsCovered": [
+    "island",
+    "zermatt",
+    "eiger",
+    "davos",
+    "lugano",
+    "vaduz",
+    "stelvio",
+    "arlberg",
+    "champex",
+    "brenta",
+    "aosta"
+  ],
+  "operation": "Requested rectangular crop; source outlines cover all destination anchors",
+  "polygons": 1,
+  "sha256": "98d1f3072bdeabb5490910467f5b6096c486eab86a7c7be4dc868728058b0944"
+}

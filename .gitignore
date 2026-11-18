@@ -276,3 +276,11 @@ data/regions/norway-*/copernicus/*
 /regions/madeira/garmin/dist/*.img
 /releases/madeira/*/maps/
 /releases/madeira/*/app-bundles-v1/**/*.zip
+
+# Rebuildable Alps inputs and local delivery files
+/regions/alps-*/exports/
+/regions/alps-*/garmin/coastal-context/
+/regions/alps-*/garmin/inputs/*.geojson.gz
+/regions/alps-*/garmin/dist/*.img
+/releases/alps-*/*/maps/
+/releases/alps-*/*/app-bundles-v1/**/*.zip

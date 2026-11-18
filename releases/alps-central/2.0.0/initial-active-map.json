@@ -1,0 +1,52 @@
+{
+  "contourIntervalMetres": 20,
+  "coverage": "Swiss, Liechtenstein and adjoining Italian Alps, with overlap from the Mont Blanc approaches to the Arlberg and the western Dolomites.",
+  "datasets": {
+    "basemap": {
+      "bytes": 1161093120,
+      "path": "releases/alps-central/2.0.0/maps/basemap.mbtiles",
+      "sha256": "8bc7d763e033077e3a2b13bbbcbfd561221cf71c2d375785ab51a795811df6d0",
+      "validation": {
+        "empty_tile_count": 1821,
+        "logical_tiles_sha256": "3ca21166e4755cb6ac7ffd02e3495ae52f3f53a588d82d5a51c26cf42ed2fd56",
+        "tile_count": 35881
+      }
+    },
+    "grid": {
+      "bytes": 14745600,
+      "path": "releases/alps-central/2.0.0/maps/grid.mbtiles",
+      "sha256": "d606809c23af755432def37afa8be509b895af5fc9a333b89dabfd58c82bf87d",
+      "validation": {
+        "empty_tile_count": 0,
+        "logical_tiles_sha256": "e66c2f9bc2ed59e060fb0188396fdb170e240113112481af00a7f8e281dc211e",
+        "tile_count": 43611
+      }
+    },
+    "hillshade": {
+      "bytes": 206884864,
+      "path": "releases/alps-central/2.0.0/maps/hillshade.mbtiles",
+      "sha256": "cd88666130a7141c7edbedf11855eedacff0e6aa69ebbb5923edb57a4028adfc",
+      "validation": {
+        "empty_tile_count": 0,
+        "logical_tiles_sha256": "3161a38cbd5d7cc0245c8a0880f74544d52d4d5b3b36f040f1cae447a22b38d1",
+        "tile_count": 4799
+      }
+    },
+    "topography": {
+      "bytes": 716992512,
+      "path": "releases/alps-central/2.0.0/maps/topography.mbtiles",
+      "sha256": "603d191cedc21645cf3f16efe8d4ddf3e4fe270f8da4a2cc60fff9126ffc8fdc",
+      "validation": {
+        "empty_tile_count": 85157,
+        "logical_tiles_sha256": "e25b68468aaf86a960e6932c7aade374d9e55139ae60ad56c87353fb5451514f",
+        "tile_count": 134455
+      }
+    }
+  },
+  "format": "openbaremap-development-viewer-v1",
+  "localBorders": false,
+  "mapVersion": "2.0.0",
+  "region": "alps-central",
+  "storageRevision": "2.0.0-alps-central-r1",
+  "styleRevision": "2.0.0-alps-central-r1"
+}

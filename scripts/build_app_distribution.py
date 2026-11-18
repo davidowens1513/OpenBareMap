@@ -47,7 +47,7 @@ def archive_tree(payload,target):
         if archive.testzip():raise ValueError('Archive CRC failure')
 
 def build_one(region,output,platforms=('ios','android')):
-    p=profile(region);records={};title={'ireland':'Ireland','england-wales':'England-Wales','scotland':'Scotland','sierra-nevada':'Sierra-Nevada','pyrenees':'Pyrenees','dolomites':'Dolomites','faroe-islands':'Faroe-Islands','norway-south':'Norway-South','norway-central':'Norway-Central','norway-north':'Norway-North'}.get(region,p['label'].replace(' ','-'))
+    p=profile(region);records={};title={'ireland':'Ireland','england-wales':'England-Wales','scotland':'Scotland','sierra-nevada':'Sierra-Nevada','pyrenees':'Pyrenees','dolomites':'Dolomites','faroe-islands':'Faroe-Islands','norway-south':'Norway-South','norway-central':'Norway-Central','norway-north':'Norway-North'}.get(region,p['label'].replace(' - ','-').replace(' & ','-').replace(' ','-'))
     directory=output/region;directory.mkdir(parents=True,exist_ok=True)
     if (directory/'manifest.json').exists():records=json.loads((directory/'manifest.json').read_text())
     for platform,folder in [('ios','OpenBareMap.bundle'),('android','OpenBareMap')]:
@@ -99,11 +99,11 @@ def build_one(region,output,platforms=('ios','android')):
     return region,records
 
 if __name__=='__main__':
-    parser=argparse.ArgumentParser();parser.add_argument('--output',type=Path,default=ROOT/'work'/VERSION);parser.add_argument('--platforms',nargs='+',choices=['ios','android'],default=['ios','android']);parser.add_argument('--regions',nargs='+',choices=REGIONS,default=list(REGIONS));args=parser.parse_args();args.output=args.output.resolve();args.output.mkdir(parents=True,exist_ok=True)
+    parser=argparse.ArgumentParser();parser.add_argument('--output',type=Path,default=ROOT/'work'/VERSION);parser.add_argument('--platforms',nargs='+',choices=['ios','android'],default=['ios','android']);parser.add_argument('--regions',nargs='+',choices=REGIONS,default=list(REGIONS));parser.add_argument('--catalog',type=Path,default=ROOT/'distribution'/VERSION/'catalog.json');args=parser.parse_args();args.output=args.output.resolve();args.output.mkdir(parents=True,exist_ok=True)
     with ThreadPoolExecutor(max_workers=2) as pool:records=dict(pool.map(lambda r:build_one(r,args.output,args.platforms),args.regions))
     records={region:json.loads((args.output/region/'manifest.json').read_text()) for region in REGIONS if (args.output/region/'manifest.json').exists()}
-    dest=ROOT/'distribution'/VERSION;dest.mkdir(exist_ok=True)
-    existing=json.loads((dest/'catalog.json').read_text())['regions'] if (dest/'catalog.json').exists() else {}
+    args.catalog.parent.mkdir(parents=True,exist_ok=True)
+    existing=json.loads(args.catalog.read_text())['regions'] if args.catalog.exists() else {}
     records={**existing,**records}
-    write(dest/'catalog.json',{'format':'openbaremap-app-bundle-catalog-v1','mapVersions':{r:profile(r)['mapVersion'] for r in records},'regions':records,'sourceCommit':__import__('subprocess').check_output(['git','rev-parse','HEAD'],text=True).strip()})
+    write(args.catalog,{'format':'openbaremap-app-bundle-catalog-v1','mapVersions':{r:profile(r)['mapVersion'] for r in records},'regions':records,'sourceCommit':__import__('subprocess').check_output(['git','rev-parse','HEAD'],text=True).strip()})
     print('All regional app integration bundles complete',flush=True)

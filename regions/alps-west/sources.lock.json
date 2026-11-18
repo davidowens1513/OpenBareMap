@@ -1,0 +1,29 @@
+{
+  "accessed_utc": "2026-11-18T17:53:39.211995+00:00",
+  "inputs": [
+    {
+      "bytes": 2338864042,
+      "path": "data/regions/alps/alps-261116.osm.pbf",
+      "replicationTimestamp": "2026-11-16T21:22:36Z",
+      "sha256": "f5454c06fa30463d7c758a42831040b5b0598f400c5521bd8c94a7076ff13a68",
+      "url": "https://download.geofabrik.de/europe/alps-261116.osm.pbf"
+    }
+  ],
+  "osm": {
+    "bytes": 599503522,
+    "operation": "Complete-feature bbox extraction with nested relation references",
+    "path": "data/regions/alps-west/alps-261116.osm.clipped.osm.pbf",
+    "replicationTimestamp": "2026-11-16T21:22:36Z",
+    "sha256": "9dd9fb6336b7f2f8e75168b42373e1741367a27bcba0341ee6e702fa8818c89c",
+    "snapshot_date": "2026-11-16",
+    "url": "https://download.geofabrik.de/europe/alps-261116.osm.pbf"
+  },
+  "polygons": [
+    {
+      "bytes": 2867,
+      "path": "data/regions/alps-west/alps.poly",
+      "sha256": "f84eadb7f1e87e5befdd0bd228b457ef54b1e2463763514ca25f7cd5359b30e9",
+      "url": "https://download.geofabrik.de/europe/alps.poly"
+    }
+  ]
+}

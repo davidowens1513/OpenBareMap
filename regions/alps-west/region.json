@@ -1,0 +1,183 @@
+{
+  "id": "alps-west",
+  "name": "OpenBareMap Alps - West",
+  "label": "Alps - West",
+  "mapVersion": "2.0.0",
+  "minzoom": 4,
+  "maxzoom": 14,
+  "coverage": "French and Italian Western Alps from the Mediterranean to Mont Blanc, including the full Tour du Mont Blanc and its Swiss approaches.",
+  "bounds": [
+    4.85,
+    43.65,
+    7.75,
+    46.6
+  ],
+  "terrainBounds": [
+    4,
+    43,
+    8,
+    47
+  ],
+  "coastContextBounds": [
+    3,
+    42,
+    9,
+    48
+  ],
+  "projectedCRS": "EPSG:25832",
+  "gridCRS": "EPSG:25832",
+  "gridName": "ETRS89 / UTM 32N",
+  "gridSource": "utm-grid",
+  "gridExtent": [
+    160000,
+    410000,
+    4830000,
+    5170000
+  ],
+  "townlands": false,
+  "contourIntervalMetres": 20,
+  "sourceDate": "2026-11-16",
+  "sourceSlugs": [
+    "alps"
+  ],
+  "sourceBaseURL": "https://download.geofabrik.de/europe/",
+  "sourceCacheRegion": "alps",
+  "nativeLanguage": "fr",
+  "minorWaterwayMinzoom": 10,
+  "clipBasemap": true,
+  "clipSource": true,
+  "ignoreSourceHeaderBounds": true,
+  "garminUseSourceOutline": true,
+  "alignedTerrainPixels": true,
+  "garminFamilyId": 4851,
+  "garminTileStartId": 48510001,
+  "garminFilename": "OpenBareMap-Alps-West.img",
+  "garminPackageRevision": "2.0.1-trail-detail-r1",
+  "styleRevision": "2.0.0-alps-west-r1",
+  "garminContextBounds": [
+    4.85,
+    43.65,
+    7.75,
+    46.6
+  ],
+  "requireBogFeatures": false,
+  "terrainProvider": "copernicus-glo30",
+  "terrainAttribution": "Copernicus DEM GLO-30 · European Union / ESA · DLR / Airbus",
+  "terrainNotice": "Alps - West elevation: Copernicus DEM GLO-30 Public (AWS 2021 release).\n\nproduced using Copernicus WorldDEM-30 © DLR e.V. 2010-2014 and © Airbus Defence and Space GmbH 2014-2018 provided under COPERNICUS by the European Union and ESA; all rights reserved\n\nThe organisations in charge of the Copernicus programme by law or by delegation do not incur any liability for any use of the Copernicus WorldDEM-30.\n\nLicense: https://dataspace.copernicus.eu/sites/default/files/media/files/2025-06/copernicus_contributing_mission_data_access_v2_cop_dem_licenses.pdf\nSource: https://registry.opendata.aws/copernicus-dem/\nVertical datum: EGM2008 orthometric metres. Native approximately 30 m cells are bilinearly resampled to point-aligned Int16 HGT for the shared terrain pipeline. Ocean-only cells absent from the official public inventory are zero.\n",
+  "inspectionNames": [
+    "Chamonix",
+    "Courmayeur"
+  ],
+  "destinations": {
+    "island": [
+      6.3,
+      45.125,
+      7
+    ],
+    "chamonix": [
+      6.8694,
+      45.9237,
+      12
+    ],
+    "courmayeur": [
+      6.9708,
+      45.7917,
+      12
+    ],
+    "champex": [
+      7.115,
+      46.029,
+      12
+    ],
+    "mont-blanc": [
+      6.865,
+      45.8326,
+      12
+    ],
+    "gran-paradiso": [
+      7.267,
+      45.518,
+      12
+    ],
+    "ecrins": [
+      6.3599,
+      44.9225,
+      12
+    ],
+    "vanoise": [
+      6.721,
+      45.382,
+      12
+    ],
+    "mercantour": [
+      7.255,
+      44.069,
+      12
+    ],
+    "nice": [
+      7.263,
+      43.707,
+      12
+    ],
+    "grenoble": [
+      5.724,
+      45.187,
+      12
+    ]
+  },
+  "destinationLabels": {
+    "island": "Alps - West",
+    "chamonix": "Chamonix",
+    "courmayeur": "Courmayeur",
+    "champex": "Champex-Lac",
+    "mont-blanc": "Mont Blanc",
+    "gran-paradiso": "Gran Paradiso",
+    "ecrins": "Barre des Écrins",
+    "vanoise": "Pralognan-la-Vanoise",
+    "mercantour": "Saint-Martin-Vésubie",
+    "nice": "Nice",
+    "grenoble": "Grenoble"
+  },
+  "validationAnchors": {
+    "chamonix": [
+      6.8694,
+      45.9237
+    ],
+    "courmayeur": [
+      6.9708,
+      45.7917
+    ],
+    "champex": [
+      7.115,
+      46.029
+    ],
+    "mont-blanc": [
+      6.865,
+      45.8326
+    ],
+    "gran-paradiso": [
+      7.267,
+      45.518
+    ],
+    "ecrins": [
+      6.3599,
+      44.9225
+    ],
+    "vanoise": [
+      6.721,
+      45.382
+    ],
+    "mercantour": [
+      7.255,
+      44.069
+    ],
+    "nice": [
+      7.263,
+      43.707
+    ],
+    "grenoble": [
+      5.724,
+      45.187
+    ]
+  }
+}

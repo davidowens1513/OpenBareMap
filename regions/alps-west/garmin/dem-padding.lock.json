@@ -1,0 +1,942 @@
+{
+  "accessed_utc": "2026-11-18T18:16:55.495510+00:00",
+  "assets": [
+    {
+      "bytes": 1148146,
+      "commands": [
+        [
+          "/Applications/QGIS.app/Contents/MacOS/gdalwarp",
+          "-q",
+          "-of",
+          "GTiff",
+          "-ot",
+          "Int16",
+          "-t_srs",
+          "EPSG:4326",
+          "-te",
+          "2.999861111111111",
+          "41.99986111111111",
+          "4.0001388888888885",
+          "43.00013888888889",
+          "-ts",
+          "3601",
+          "3601",
+          "-r",
+          "bilinear",
+          "-dstnodata",
+          "0",
+          "/Volumes/Extreme SSD/Projects/OpenBareMap/data/regions/alps/shared-terrain-v1/source.vrt",
+          "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-Alps-DEM-aj5rjlm0/cell.tif"
+        ],
+        [
+          "/Applications/QGIS.app/Contents/MacOS/gdal_translate",
+          "-q",
+          "-of",
+          "SRTMHGT",
+          "-a_nodata",
+          "-32768",
+          "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-Alps-DEM-aj5rjlm0/cell.tif",
+          "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-Alps-DEM-aj5rjlm0/N42E003.hgt"
+        ]
+      ],
+      "operation": "Bilinear resampling of Copernicus GLO-30 to point-aligned Int16 HGT, EGM2008 heights",
+      "path": "data/regions/alps/shared-terrain-v1/N42E003.hgt.gz",
+      "sha256": "600000656377e41d4cefe2dffe7233a400cc926d4b396fecd9895ffff878a614",
+      "sharedSourceSHA256": "ef53e08fcc8421bab6f0b3be8b0e12964ece6607f4c81777d8fa05efd144b0e9",
+      "url": null
+    },
+    {
+      "bytes": 25239,
+      "commands": [],
+      "operation": "Zero ocean cell: no tile in the pinned official GLO-30 public inventory",
+      "path": "data/regions/alps/shared-terrain-v1/N42E004.hgt.gz",
+      "sha256": "ef878716b82ba575fc448ca49fae2f720981192a09f3cb94ba95a759e62e0767",
+      "sharedSourceSHA256": "ef53e08fcc8421bab6f0b3be8b0e12964ece6607f4c81777d8fa05efd144b0e9",
+      "url": null
+    },
+    {
+      "bytes": 25239,
+      "commands": [],
+      "operation": "Zero ocean cell: no tile in the pinned official GLO-30 public inventory",
+      "path": "data/regions/alps/shared-terrain-v1/N42E005.hgt.gz",
+      "sha256": "ef878716b82ba575fc448ca49fae2f720981192a09f3cb94ba95a759e62e0767",
+      "sharedSourceSHA256": "ef53e08fcc8421bab6f0b3be8b0e12964ece6607f4c81777d8fa05efd144b0e9",
+      "url": null
+    },
+    {
+      "bytes": 38361,
+      "commands": [
+        [
+          "/Applications/QGIS.app/Contents/MacOS/gdalwarp",
+          "-q",
+          "-of",
+          "GTiff",
+          "-ot",
+          "Int16",
+          "-t_srs",
+          "EPSG:4326",
+          "-te",
+          "5.9998611111111115",
+          "41.99986111111111",
+          "7.0001388888888885",
+          "43.00013888888889",
+          "-ts",
+          "3601",
+          "3601",
+          "-r",
+          "bilinear",
+          "-dstnodata",
+          "0",
+          "/Volumes/Extreme SSD/Projects/OpenBareMap/data/regions/alps/shared-terrain-v1/source.vrt",
+          "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-Alps-DEM-6d8fju0h/cell.tif"
+        ],
+        [
+          "/Applications/QGIS.app/Contents/MacOS/gdal_translate",
+          "-q",
+          "-of",
+          "SRTMHGT",
+          "-a_nodata",
+          "-32768",
+          "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-Alps-DEM-6d8fju0h/cell.tif",
+          "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-Alps-DEM-6d8fju0h/N42E006.hgt"
+        ]
+      ],
+      "operation": "Bilinear resampling of Copernicus GLO-30 to point-aligned Int16 HGT, EGM2008 heights",
+      "path": "data/regions/alps/shared-terrain-v1/N42E006.hgt.gz",
+      "sha256": "065dcf6065406e3c946c32407217f98d29799e20cc12a7d8566ff59e10f6cc3e",
+      "sharedSourceSHA256": "ef53e08fcc8421bab6f0b3be8b0e12964ece6607f4c81777d8fa05efd144b0e9",
+      "url": null
+    },
+    {
+      "bytes": 25239,
+      "commands": [],
+      "operation": "Zero ocean cell: no tile in the pinned official GLO-30 public inventory",
+      "path": "data/regions/alps/shared-terrain-v1/N42E007.hgt.gz",
+      "sha256": "ef878716b82ba575fc448ca49fae2f720981192a09f3cb94ba95a759e62e0767",
+      "sharedSourceSHA256": "ef53e08fcc8421bab6f0b3be8b0e12964ece6607f4c81777d8fa05efd144b0e9",
+      "url": null
+    },
+    {
+      "bytes": 3751000,
+      "commands": [
+        [
+          "/Applications/QGIS.app/Contents/MacOS/gdalwarp",
+          "-q",
+          "-of",
+          "GTiff",
+          "-ot",
+          "Int16",
+          "-t_srs",
+          "EPSG:4326",
+          "-te",
+          "7.9998611111111115",
+          "41.99986111111111",
+          "9.00013888888889",
+          "43.00013888888889",
+          "-ts",
+          "3601",
+          "3601",
+          "-r",
+          "bilinear",
+          "-dstnodata",
+          "0",
+          "/Volumes/Extreme SSD/Projects/OpenBareMap/data/regions/alps/shared-terrain-v1/source.vrt",
+          "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-Alps-DEM-jnviczrr/cell.tif"
+        ],
+        [
+          "/Applications/QGIS.app/Contents/MacOS/gdal_translate",
+          "-q",
+          "-of",
+          "SRTMHGT",
+          "-a_nodata",
+          "-32768",
+          "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-Alps-DEM-jnviczrr/cell.tif",
+          "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-Alps-DEM-jnviczrr/N42E008.hgt"
+        ]
+      ],
+      "operation": "Bilinear resampling of Copernicus GLO-30 to point-aligned Int16 HGT, EGM2008 heights",
+      "path": "data/regions/alps/shared-terrain-v1/N42E008.hgt.gz",
+      "sha256": "709733b18a5eb0c789fce533348dee19b28e46bd1be418b8049832e74e8bc917",
+      "sharedSourceSHA256": "ef53e08fcc8421bab6f0b3be8b0e12964ece6607f4c81777d8fa05efd144b0e9",
+      "url": null
+    },
+    {
+      "bytes": 6818069,
+      "commands": [
+        [
+          "/Applications/QGIS.app/Contents/MacOS/gdalwarp",
+          "-q",
+          "-of",
+          "GTiff",
+          "-ot",
+          "Int16",
+          "-t_srs",
+          "EPSG:4326",
+          "-te",
+          "2.999861111111111",
+          "42.99986111111111",
+          "4.0001388888888885",
+          "44.00013888888889",
+          "-ts",
+          "3601",
+          "3601",
+          "-r",
+          "bilinear",
+          "-dstnodata",
+          "0",
+          "/Volumes/Extreme SSD/Projects/OpenBareMap/data/regions/alps/shared-terrain-v1/source.vrt",
+          "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-Alps-DEM-kbb9qohz/cell.tif"
+        ],
+        [
+          "/Applications/QGIS.app/Contents/MacOS/gdal_translate",
+          "-q",
+          "-of",
+          "SRTMHGT",
+          "-a_nodata",
+          "-32768",
+          "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-Alps-DEM-kbb9qohz/cell.tif",
+          "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-Alps-DEM-kbb9qohz/N43E003.hgt"
+        ]
+      ],
+      "operation": "Bilinear resampling of Copernicus GLO-30 to point-aligned Int16 HGT, EGM2008 heights",
+      "path": "data/regions/alps/shared-terrain-v1/N43E003.hgt.gz",
+      "sha256": "cf7a60702a7c19ce0f58f6c8fdf55ff680b2875a4a3c2939b6ca7999c36b1e88",
+      "sharedSourceSHA256": "ef53e08fcc8421bab6f0b3be8b0e12964ece6607f4c81777d8fa05efd144b0e9",
+      "url": null
+    },
+    {
+      "bytes": 283116,
+      "commands": [
+        [
+          "/Applications/QGIS.app/Contents/MacOS/gdalwarp",
+          "-q",
+          "-of",
+          "GTiff",
+          "-ot",
+          "Int16",
+          "-t_srs",
+          "EPSG:4326",
+          "-te",
+          "7.9998611111111115",
+          "42.99986111111111",
+          "9.00013888888889",
+          "44.00013888888889",
+          "-ts",
+          "3601",
+          "3601",
+          "-r",
+          "bilinear",
+          "-dstnodata",
+          "0",
+          "/Volumes/Extreme SSD/Projects/OpenBareMap/data/regions/alps/shared-terrain-v1/source.vrt",
+          "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-Alps-DEM-qvxz2_jg/cell.tif"
+        ],
+        [
+          "/Applications/QGIS.app/Contents/MacOS/gdal_translate",
+          "-q",
+          "-of",
+          "SRTMHGT",
+          "-a_nodata",
+          "-32768",
+          "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-Alps-DEM-qvxz2_jg/cell.tif",
+          "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-Alps-DEM-qvxz2_jg/N43E008.hgt"
+        ]
+      ],
+      "operation": "Bilinear resampling of Copernicus GLO-30 to point-aligned Int16 HGT, EGM2008 heights",
+      "path": "data/regions/alps/shared-terrain-v1/N43E008.hgt.gz",
+      "sha256": "72113b51f0b7855b18d85d96563d566a73ce5ebc56862832379aa822c386a6b3",
+      "sharedSourceSHA256": "ef53e08fcc8421bab6f0b3be8b0e12964ece6607f4c81777d8fa05efd144b0e9",
+      "url": null
+    },
+    {
+      "bytes": 12512018,
+      "commands": [
+        [
+          "/Applications/QGIS.app/Contents/MacOS/gdalwarp",
+          "-q",
+          "-of",
+          "GTiff",
+          "-ot",
+          "Int16",
+          "-t_srs",
+          "EPSG:4326",
+          "-te",
+          "2.999861111111111",
+          "43.99986111111111",
+          "4.0001388888888885",
+          "45.00013888888889",
+          "-ts",
+          "3601",
+          "3601",
+          "-r",
+          "bilinear",
+          "-dstnodata",
+          "0",
+          "/Volumes/Extreme SSD/Projects/OpenBareMap/data/regions/alps/shared-terrain-v1/source.vrt",
+          "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-Alps-DEM-lyef41ql/cell.tif"
+        ],
+        [
+          "/Applications/QGIS.app/Contents/MacOS/gdal_translate",
+          "-q",
+          "-of",
+          "SRTMHGT",
+          "-a_nodata",
+          "-32768",
+          "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-Alps-DEM-lyef41ql/cell.tif",
+          "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-Alps-DEM-lyef41ql/N44E003.hgt"
+        ]
+      ],
+      "operation": "Bilinear resampling of Copernicus GLO-30 to point-aligned Int16 HGT, EGM2008 heights",
+      "path": "data/regions/alps/shared-terrain-v1/N44E003.hgt.gz",
+      "sha256": "b273f926801a7fd2c69b7b99b946d194e51a2983302e3b449d9151f37bd175b4",
+      "sharedSourceSHA256": "ef53e08fcc8421bab6f0b3be8b0e12964ece6607f4c81777d8fa05efd144b0e9",
+      "url": null
+    },
+    {
+      "bytes": 9032417,
+      "commands": [
+        [
+          "/Applications/QGIS.app/Contents/MacOS/gdalwarp",
+          "-q",
+          "-of",
+          "GTiff",
+          "-ot",
+          "Int16",
+          "-t_srs",
+          "EPSG:4326",
+          "-te",
+          "7.9998611111111115",
+          "43.99986111111111",
+          "9.00013888888889",
+          "45.00013888888889",
+          "-ts",
+          "3601",
+          "3601",
+          "-r",
+          "bilinear",
+          "-dstnodata",
+          "0",
+          "/Volumes/Extreme SSD/Projects/OpenBareMap/data/regions/alps/shared-terrain-v1/source.vrt",
+          "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-Alps-DEM-70olmw1a/cell.tif"
+        ],
+        [
+          "/Applications/QGIS.app/Contents/MacOS/gdal_translate",
+          "-q",
+          "-of",
+          "SRTMHGT",
+          "-a_nodata",
+          "-32768",
+          "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-Alps-DEM-70olmw1a/cell.tif",
+          "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-Alps-DEM-70olmw1a/N44E008.hgt"
+        ]
+      ],
+      "operation": "Bilinear resampling of Copernicus GLO-30 to point-aligned Int16 HGT, EGM2008 heights",
+      "path": "data/regions/alps/shared-terrain-v1/N44E008.hgt.gz",
+      "sha256": "e5e5d2409ea9c5fb8e004c8026fa05c265f665527f2da655af0c7a25c9cbba55",
+      "sharedSourceSHA256": "ef53e08fcc8421bab6f0b3be8b0e12964ece6607f4c81777d8fa05efd144b0e9",
+      "url": null
+    },
+    {
+      "bytes": 11542451,
+      "commands": [
+        [
+          "/Applications/QGIS.app/Contents/MacOS/gdalwarp",
+          "-q",
+          "-of",
+          "GTiff",
+          "-ot",
+          "Int16",
+          "-t_srs",
+          "EPSG:4326",
+          "-te",
+          "2.999861111111111",
+          "44.99986111111111",
+          "4.0001388888888885",
+          "46.00013888888889",
+          "-ts",
+          "3601",
+          "3601",
+          "-r",
+          "bilinear",
+          "-dstnodata",
+          "0",
+          "/Volumes/Extreme SSD/Projects/OpenBareMap/data/regions/alps/shared-terrain-v1/source.vrt",
+          "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-Alps-DEM-04_rac68/cell.tif"
+        ],
+        [
+          "/Applications/QGIS.app/Contents/MacOS/gdal_translate",
+          "-q",
+          "-of",
+          "SRTMHGT",
+          "-a_nodata",
+          "-32768",
+          "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-Alps-DEM-04_rac68/cell.tif",
+          "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-Alps-DEM-04_rac68/N45E003.hgt"
+        ]
+      ],
+      "operation": "Bilinear resampling of Copernicus GLO-30 to point-aligned Int16 HGT, EGM2008 heights",
+      "path": "data/regions/alps/shared-terrain-v1/N45E003.hgt.gz",
+      "sha256": "88577a98477462e50226eabff7f1fe40f7bb2d5eb53e424074e77eeedb4bb781",
+      "sharedSourceSHA256": "ef53e08fcc8421bab6f0b3be8b0e12964ece6607f4c81777d8fa05efd144b0e9",
+      "url": null
+    },
+    {
+      "bytes": 8710530,
+      "commands": [
+        [
+          "/Applications/QGIS.app/Contents/MacOS/gdalwarp",
+          "-q",
+          "-of",
+          "GTiff",
+          "-ot",
+          "Int16",
+          "-t_srs",
+          "EPSG:4326",
+          "-te",
+          "7.9998611111111115",
+          "44.99986111111111",
+          "9.00013888888889",
+          "46.00013888888889",
+          "-ts",
+          "3601",
+          "3601",
+          "-r",
+          "bilinear",
+          "-dstnodata",
+          "0",
+          "/Volumes/Extreme SSD/Projects/OpenBareMap/data/regions/alps/shared-terrain-v1/source.vrt",
+          "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-Alps-DEM-0al9eesx/cell.tif"
+        ],
+        [
+          "/Applications/QGIS.app/Contents/MacOS/gdal_translate",
+          "-q",
+          "-of",
+          "SRTMHGT",
+          "-a_nodata",
+          "-32768",
+          "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-Alps-DEM-0al9eesx/cell.tif",
+          "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-Alps-DEM-0al9eesx/N45E008.hgt"
+        ]
+      ],
+      "operation": "Bilinear resampling of Copernicus GLO-30 to point-aligned Int16 HGT, EGM2008 heights",
+      "path": "data/regions/alps/shared-terrain-v1/N45E008.hgt.gz",
+      "sha256": "35d68d185a50607810ea18ed91fbe8cbd3a44c5e158fcb61c537cf99e67604c8",
+      "sharedSourceSHA256": "ef53e08fcc8421bab6f0b3be8b0e12964ece6607f4c81777d8fa05efd144b0e9",
+      "url": null
+    },
+    {
+      "bytes": 7808471,
+      "commands": [
+        [
+          "/Applications/QGIS.app/Contents/MacOS/gdalwarp",
+          "-q",
+          "-of",
+          "GTiff",
+          "-ot",
+          "Int16",
+          "-t_srs",
+          "EPSG:4326",
+          "-te",
+          "2.999861111111111",
+          "45.99986111111111",
+          "4.0001388888888885",
+          "47.00013888888889",
+          "-ts",
+          "3601",
+          "3601",
+          "-r",
+          "bilinear",
+          "-dstnodata",
+          "0",
+          "/Volumes/Extreme SSD/Projects/OpenBareMap/data/regions/alps/shared-terrain-v1/source.vrt",
+          "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-Alps-DEM-k8e_b27v/cell.tif"
+        ],
+        [
+          "/Applications/QGIS.app/Contents/MacOS/gdal_translate",
+          "-q",
+          "-of",
+          "SRTMHGT",
+          "-a_nodata",
+          "-32768",
+          "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-Alps-DEM-k8e_b27v/cell.tif",
+          "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-Alps-DEM-k8e_b27v/N46E003.hgt"
+        ]
+      ],
+      "operation": "Bilinear resampling of Copernicus GLO-30 to point-aligned Int16 HGT, EGM2008 heights",
+      "path": "data/regions/alps/shared-terrain-v1/N46E003.hgt.gz",
+      "sha256": "196a4935b9f51ecb8b2a1257afb49d09de90a4e4581c2fea6d98499e53033f06",
+      "sharedSourceSHA256": "ef53e08fcc8421bab6f0b3be8b0e12964ece6607f4c81777d8fa05efd144b0e9",
+      "url": null
+    },
+    {
+      "bytes": 17222626,
+      "commands": [
+        [
+          "/Applications/QGIS.app/Contents/MacOS/gdalwarp",
+          "-q",
+          "-of",
+          "GTiff",
+          "-ot",
+          "Int16",
+          "-t_srs",
+          "EPSG:4326",
+          "-te",
+          "7.9998611111111115",
+          "45.99986111111111",
+          "9.00013888888889",
+          "47.00013888888889",
+          "-ts",
+          "3601",
+          "3601",
+          "-r",
+          "bilinear",
+          "-dstnodata",
+          "0",
+          "/Volumes/Extreme SSD/Projects/OpenBareMap/data/regions/alps/shared-terrain-v1/source.vrt",
+          "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-Alps-DEM-cerjfto4/cell.tif"
+        ],
+        [
+          "/Applications/QGIS.app/Contents/MacOS/gdal_translate",
+          "-q",
+          "-of",
+          "SRTMHGT",
+          "-a_nodata",
+          "-32768",
+          "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-Alps-DEM-cerjfto4/cell.tif",
+          "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-Alps-DEM-cerjfto4/N46E008.hgt"
+        ]
+      ],
+      "operation": "Bilinear resampling of Copernicus GLO-30 to point-aligned Int16 HGT, EGM2008 heights",
+      "path": "data/regions/alps/shared-terrain-v1/N46E008.hgt.gz",
+      "sha256": "d17c044f791238180bb6c23628ef37d3e6929229c4119f691edddc4bc5408e5e",
+      "sharedSourceSHA256": "ef53e08fcc8421bab6f0b3be8b0e12964ece6607f4c81777d8fa05efd144b0e9",
+      "url": null
+    },
+    {
+      "bytes": 8149070,
+      "commands": [
+        [
+          "/Applications/QGIS.app/Contents/MacOS/gdalwarp",
+          "-q",
+          "-of",
+          "GTiff",
+          "-ot",
+          "Int16",
+          "-t_srs",
+          "EPSG:4326",
+          "-te",
+          "2.999861111111111",
+          "46.99986111111111",
+          "4.0001388888888885",
+          "48.00013888888889",
+          "-ts",
+          "3601",
+          "3601",
+          "-r",
+          "bilinear",
+          "-dstnodata",
+          "0",
+          "/Volumes/Extreme SSD/Projects/OpenBareMap/data/regions/alps/shared-terrain-v1/source.vrt",
+          "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-Alps-DEM-epaw1l2k/cell.tif"
+        ],
+        [
+          "/Applications/QGIS.app/Contents/MacOS/gdal_translate",
+          "-q",
+          "-of",
+          "SRTMHGT",
+          "-a_nodata",
+          "-32768",
+          "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-Alps-DEM-epaw1l2k/cell.tif",
+          "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-Alps-DEM-epaw1l2k/N47E003.hgt"
+        ]
+      ],
+      "operation": "Bilinear resampling of Copernicus GLO-30 to point-aligned Int16 HGT, EGM2008 heights",
+      "path": "data/regions/alps/shared-terrain-v1/N47E003.hgt.gz",
+      "sha256": "33327604a7a5b1673856840746baaf5b26cc3c773eb18adcd7dad3d927e23422",
+      "sharedSourceSHA256": "ef53e08fcc8421bab6f0b3be8b0e12964ece6607f4c81777d8fa05efd144b0e9",
+      "url": null
+    },
+    {
+      "bytes": 8595512,
+      "commands": [
+        [
+          "/Applications/QGIS.app/Contents/MacOS/gdalwarp",
+          "-q",
+          "-of",
+          "GTiff",
+          "-ot",
+          "Int16",
+          "-t_srs",
+          "EPSG:4326",
+          "-te",
+          "3.999861111111111",
+          "46.99986111111111",
+          "5.0001388888888885",
+          "48.00013888888889",
+          "-ts",
+          "3601",
+          "3601",
+          "-r",
+          "bilinear",
+          "-dstnodata",
+          "0",
+          "/Volumes/Extreme SSD/Projects/OpenBareMap/data/regions/alps/shared-terrain-v1/source.vrt",
+          "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-Alps-DEM-rf2zrzr3/cell.tif"
+        ],
+        [
+          "/Applications/QGIS.app/Contents/MacOS/gdal_translate",
+          "-q",
+          "-of",
+          "SRTMHGT",
+          "-a_nodata",
+          "-32768",
+          "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-Alps-DEM-rf2zrzr3/cell.tif",
+          "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-Alps-DEM-rf2zrzr3/N47E004.hgt"
+        ]
+      ],
+      "operation": "Bilinear resampling of Copernicus GLO-30 to point-aligned Int16 HGT, EGM2008 heights",
+      "path": "data/regions/alps/shared-terrain-v1/N47E004.hgt.gz",
+      "sha256": "45c14a297903d4e9964c23939abe4733abc3a0eebf7fb3fd78becdd40a9c34da",
+      "sharedSourceSHA256": "ef53e08fcc8421bab6f0b3be8b0e12964ece6607f4c81777d8fa05efd144b0e9",
+      "url": null
+    },
+    {
+      "bytes": 7742440,
+      "commands": [
+        [
+          "/Applications/QGIS.app/Contents/MacOS/gdalwarp",
+          "-q",
+          "-of",
+          "GTiff",
+          "-ot",
+          "Int16",
+          "-t_srs",
+          "EPSG:4326",
+          "-te",
+          "4.9998611111111115",
+          "46.99986111111111",
+          "6.0001388888888885",
+          "48.00013888888889",
+          "-ts",
+          "3601",
+          "3601",
+          "-r",
+          "bilinear",
+          "-dstnodata",
+          "0",
+          "/Volumes/Extreme SSD/Projects/OpenBareMap/data/regions/alps/shared-terrain-v1/source.vrt",
+          "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-Alps-DEM-cyy3_eyy/cell.tif"
+        ],
+        [
+          "/Applications/QGIS.app/Contents/MacOS/gdal_translate",
+          "-q",
+          "-of",
+          "SRTMHGT",
+          "-a_nodata",
+          "-32768",
+          "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-Alps-DEM-cyy3_eyy/cell.tif",
+          "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-Alps-DEM-cyy3_eyy/N47E005.hgt"
+        ]
+      ],
+      "operation": "Bilinear resampling of Copernicus GLO-30 to point-aligned Int16 HGT, EGM2008 heights",
+      "path": "data/regions/alps/shared-terrain-v1/N47E005.hgt.gz",
+      "sha256": "e429b74c605769077d7524f195517254154bd4650442d6d3eaddcb804dfbff40",
+      "sharedSourceSHA256": "ef53e08fcc8421bab6f0b3be8b0e12964ece6607f4c81777d8fa05efd144b0e9",
+      "url": null
+    },
+    {
+      "bytes": 10740334,
+      "commands": [
+        [
+          "/Applications/QGIS.app/Contents/MacOS/gdalwarp",
+          "-q",
+          "-of",
+          "GTiff",
+          "-ot",
+          "Int16",
+          "-t_srs",
+          "EPSG:4326",
+          "-te",
+          "5.9998611111111115",
+          "46.99986111111111",
+          "7.0001388888888885",
+          "48.00013888888889",
+          "-ts",
+          "3601",
+          "3601",
+          "-r",
+          "bilinear",
+          "-dstnodata",
+          "0",
+          "/Volumes/Extreme SSD/Projects/OpenBareMap/data/regions/alps/shared-terrain-v1/source.vrt",
+          "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-Alps-DEM-rwrp9brz/cell.tif"
+        ],
+        [
+          "/Applications/QGIS.app/Contents/MacOS/gdal_translate",
+          "-q",
+          "-of",
+          "SRTMHGT",
+          "-a_nodata",
+          "-32768",
+          "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-Alps-DEM-rwrp9brz/cell.tif",
+          "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-Alps-DEM-rwrp9brz/N47E006.hgt"
+        ]
+      ],
+      "operation": "Bilinear resampling of Copernicus GLO-30 to point-aligned Int16 HGT, EGM2008 heights",
+      "path": "data/regions/alps/shared-terrain-v1/N47E006.hgt.gz",
+      "sha256": "b10c5e2de77fea0b2480db1460b1bf0ad4341476623a856999fbc4ac1e9d271f",
+      "sharedSourceSHA256": "ef53e08fcc8421bab6f0b3be8b0e12964ece6607f4c81777d8fa05efd144b0e9",
+      "url": null
+    },
+    {
+      "bytes": 10517963,
+      "commands": [
+        [
+          "/Applications/QGIS.app/Contents/MacOS/gdalwarp",
+          "-q",
+          "-of",
+          "GTiff",
+          "-ot",
+          "Int16",
+          "-t_srs",
+          "EPSG:4326",
+          "-te",
+          "6.9998611111111115",
+          "46.99986111111111",
+          "8.00013888888889",
+          "48.00013888888889",
+          "-ts",
+          "3601",
+          "3601",
+          "-r",
+          "bilinear",
+          "-dstnodata",
+          "0",
+          "/Volumes/Extreme SSD/Projects/OpenBareMap/data/regions/alps/shared-terrain-v1/source.vrt",
+          "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-Alps-DEM-g13cd22k/cell.tif"
+        ],
+        [
+          "/Applications/QGIS.app/Contents/MacOS/gdal_translate",
+          "-q",
+          "-of",
+          "SRTMHGT",
+          "-a_nodata",
+          "-32768",
+          "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-Alps-DEM-g13cd22k/cell.tif",
+          "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-Alps-DEM-g13cd22k/N47E007.hgt"
+        ]
+      ],
+      "operation": "Bilinear resampling of Copernicus GLO-30 to point-aligned Int16 HGT, EGM2008 heights",
+      "path": "data/regions/alps/shared-terrain-v1/N47E007.hgt.gz",
+      "sha256": "7892194a1da5059eea9d23774682be30f3be9c6be86b4b643e5e2c9c8481db75",
+      "sharedSourceSHA256": "ef53e08fcc8421bab6f0b3be8b0e12964ece6607f4c81777d8fa05efd144b0e9",
+      "url": null
+    },
+    {
+      "bytes": 10806324,
+      "commands": [
+        [
+          "/Applications/QGIS.app/Contents/MacOS/gdalwarp",
+          "-q",
+          "-of",
+          "GTiff",
+          "-ot",
+          "Int16",
+          "-t_srs",
+          "EPSG:4326",
+          "-te",
+          "7.9998611111111115",
+          "46.99986111111111",
+          "9.00013888888889",
+          "48.00013888888889",
+          "-ts",
+          "3601",
+          "3601",
+          "-r",
+          "bilinear",
+          "-dstnodata",
+          "0",
+          "/Volumes/Extreme SSD/Projects/OpenBareMap/data/regions/alps/shared-terrain-v1/source.vrt",
+          "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-Alps-DEM-wuhp3ue9/cell.tif"
+        ],
+        [
+          "/Applications/QGIS.app/Contents/MacOS/gdal_translate",
+          "-q",
+          "-of",
+          "SRTMHGT",
+          "-a_nodata",
+          "-32768",
+          "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-Alps-DEM-wuhp3ue9/cell.tif",
+          "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-Alps-DEM-wuhp3ue9/N47E008.hgt"
+        ]
+      ],
+      "operation": "Bilinear resampling of Copernicus GLO-30 to point-aligned Int16 HGT, EGM2008 heights",
+      "path": "data/regions/alps/shared-terrain-v1/N47E008.hgt.gz",
+      "sha256": "fdfefee55110bd9fe1a572e889c6676178bcf1c46e0414a8044793f15f944d9b",
+      "sharedSourceSHA256": "ef53e08fcc8421bab6f0b3be8b0e12964ece6607f4c81777d8fa05efd144b0e9",
+      "url": null
+    }
+  ],
+  "commands": [],
+  "coverage": [
+    3,
+    42,
+    9,
+    48
+  ],
+  "dataset": "Copernicus DEM GLO-30 Public, AWS 2021 release",
+  "grid": "3601 by 3601 signed 16-bit point-aligned HGT cells; ocean cells zero",
+  "oceanCellReview": [
+    {
+      "cell": "N42E004.hgt",
+      "coastalLandSHA256": "0076fddf4db378a46382a148754060e0806e9e5fec9886375beddb901a3dbccd",
+      "landIntersectionSquareDegrees": 0
+    },
+    {
+      "cell": "N42E005.hgt",
+      "coastalLandSHA256": "0076fddf4db378a46382a148754060e0806e9e5fec9886375beddb901a3dbccd",
+      "landIntersectionSquareDegrees": 0
+    },
+    {
+      "cell": "N42E007.hgt",
+      "coastalLandSHA256": "0076fddf4db378a46382a148754060e0806e9e5fec9886375beddb901a3dbccd",
+      "landIntersectionSquareDegrees": 0
+    }
+  ],
+  "resampling": "One common EPSG:4326 VRT, fixed 1/3600 degree pixels, target-aligned grid",
+  "sharedAlpsTerrain": {
+    "path": "data/regions/alps/shared-terrain-v1/sources.lock.json",
+    "sha256": "ef53e08fcc8421bab6f0b3be8b0e12964ece6607f4c81777d8fa05efd144b0e9"
+  },
+  "sourceAssets": [
+    {
+      "bytes": 1110900,
+      "path": "data/regions/alps-west/copernicus/tileList.txt",
+      "sha256": "10604e3052c98a09e9216f1a8f0a555a04148419757575f783d4937fd44316dc",
+      "url": "https://copernicus-dem-30m.s3.amazonaws.com/tileList.txt"
+    },
+    {
+      "bytes": 6046009,
+      "path": "data/regions/alps-west/copernicus/Copernicus_DSM_COG_10_N42_00_E003_00_DEM.tif",
+      "sha256": "a808ba2a90cffe8465d700fff6b6accf1381b099e7c7b2eadba8ee99aa0701f2",
+      "url": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N42_00_E003_00_DEM/Copernicus_DSM_COG_10_N42_00_E003_00_DEM.tif"
+    },
+    {
+      "bytes": 146215,
+      "path": "data/regions/alps-west/copernicus/Copernicus_DSM_COG_10_N42_00_E006_00_DEM.tif",
+      "sha256": "cb24aa9d1af590b4cf6e639d1b180f79f9c7629c105fa2ccb5c7451fbbab6b4e",
+      "url": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N42_00_E006_00_DEM/Copernicus_DSM_COG_10_N42_00_E006_00_DEM.tif"
+    },
+    {
+      "bytes": 10220012,
+      "path": "data/regions/alps-west/copernicus/Copernicus_DSM_COG_10_N42_00_E008_00_DEM.tif",
+      "sha256": "c21c7afcd905ed6f278993ebe9e3634a479590eff3ad036287625417580a8e30",
+      "url": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N42_00_E008_00_DEM/Copernicus_DSM_COG_10_N42_00_E008_00_DEM.tif"
+    },
+    {
+      "bytes": 32070160,
+      "path": "data/regions/alps-west/copernicus/Copernicus_DSM_COG_10_N43_00_E003_00_DEM.tif",
+      "sha256": "8b077dabb58ae1503325bd243eaa7c13f804599d1c403c4d38cc518b62292d0e",
+      "url": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N43_00_E003_00_DEM/Copernicus_DSM_COG_10_N43_00_E003_00_DEM.tif"
+    },
+    {
+      "bytes": 889010,
+      "path": "data/regions/alps-west/copernicus/Copernicus_DSM_COG_10_N43_00_E008_00_DEM.tif",
+      "sha256": "bb390a3ff4087d2fa69019d22da2942d0fcce16fb2af5d777174d351a5db7356",
+      "url": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N43_00_E008_00_DEM/Copernicus_DSM_COG_10_N43_00_E008_00_DEM.tif"
+    },
+    {
+      "bytes": 42221433,
+      "path": "data/regions/alps-west/copernicus/Copernicus_DSM_COG_10_N44_00_E003_00_DEM.tif",
+      "sha256": "56bc2e9d076297a247221431c124ec6f1fda300a18da68d76754726777480bf1",
+      "url": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N44_00_E003_00_DEM/Copernicus_DSM_COG_10_N44_00_E003_00_DEM.tif"
+    },
+    {
+      "bytes": 34845275,
+      "path": "data/regions/alps-west/copernicus/Copernicus_DSM_COG_10_N44_00_E008_00_DEM.tif",
+      "sha256": "3838f816be042d16978f2cfa2bc92e54d063b1ec2744de3427e88e4fa84ac9d8",
+      "url": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N44_00_E008_00_DEM/Copernicus_DSM_COG_10_N44_00_E008_00_DEM.tif"
+    },
+    {
+      "bytes": 42453346,
+      "path": "data/regions/alps-west/copernicus/Copernicus_DSM_COG_10_N45_00_E003_00_DEM.tif",
+      "sha256": "6f0d215f4df43ad728481a1ebac50183e1800413abd15f776938c756c97d288f",
+      "url": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N45_00_E003_00_DEM/Copernicus_DSM_COG_10_N45_00_E003_00_DEM.tif"
+    },
+    {
+      "bytes": 43016696,
+      "path": "data/regions/alps-west/copernicus/Copernicus_DSM_COG_10_N45_00_E008_00_DEM.tif",
+      "sha256": "02fac5d646f443f4f288a3d59b4cb995300e1c4fcbe4b5c1c6078a165a3d9ad4",
+      "url": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N45_00_E008_00_DEM/Copernicus_DSM_COG_10_N45_00_E008_00_DEM.tif"
+    },
+    {
+      "bytes": 43298841,
+      "path": "data/regions/alps-west/copernicus/Copernicus_DSM_COG_10_N46_00_E003_00_DEM.tif",
+      "sha256": "d0023a9f172a1927d4372f10a93f91b9bfa191dd0b2b1de6fe650f3979bfdd3f",
+      "url": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N46_00_E003_00_DEM/Copernicus_DSM_COG_10_N46_00_E003_00_DEM.tif"
+    },
+    {
+      "bytes": 42038015,
+      "path": "data/regions/alps-west/copernicus/Copernicus_DSM_COG_10_N46_00_E008_00_DEM.tif",
+      "sha256": "47769664394ee1ff3b51f5c1b43a3441d7f7bce8d086d0ed2f3a892b895fae3e",
+      "url": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N46_00_E008_00_DEM/Copernicus_DSM_COG_10_N46_00_E008_00_DEM.tif"
+    },
+    {
+      "bytes": 44451907,
+      "path": "data/regions/alps-west/copernicus/Copernicus_DSM_COG_10_N47_00_E003_00_DEM.tif",
+      "sha256": "28a887eb305ba36e0d14bd9a3af952848d17eb6cd5c07241d9f652411039ec8b",
+      "url": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N47_00_E003_00_DEM/Copernicus_DSM_COG_10_N47_00_E003_00_DEM.tif"
+    },
+    {
+      "bytes": 43195251,
+      "path": "data/regions/alps-west/copernicus/Copernicus_DSM_COG_10_N47_00_E004_00_DEM.tif",
+      "sha256": "4aa6db5e86e1925156dd060f9cb184f9d9ec332a98443a05d0ce3e3209c62ce5",
+      "url": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N47_00_E004_00_DEM/Copernicus_DSM_COG_10_N47_00_E004_00_DEM.tif"
+    },
+    {
+      "bytes": 43667058,
+      "path": "data/regions/alps-west/copernicus/Copernicus_DSM_COG_10_N47_00_E005_00_DEM.tif",
+      "sha256": "fd23d2d44c1da4a8bb5dcc29c0152d48698ff32e7a8ebbd61cd28f3221a784f0",
+      "url": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N47_00_E005_00_DEM/Copernicus_DSM_COG_10_N47_00_E005_00_DEM.tif"
+    },
+    {
+      "bytes": 43493517,
+      "path": "data/regions/alps-west/copernicus/Copernicus_DSM_COG_10_N47_00_E006_00_DEM.tif",
+      "sha256": "e5bdbe746e733909f0644d69a94d5d8434fa388a3766e05400bec6a1820b8717",
+      "url": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N47_00_E006_00_DEM/Copernicus_DSM_COG_10_N47_00_E006_00_DEM.tif"
+    },
+    {
+      "bytes": 42939950,
+      "path": "data/regions/alps-west/copernicus/Copernicus_DSM_COG_10_N47_00_E007_00_DEM.tif",
+      "sha256": "5012dc32581b4aebbe71dec6f22507a2944b5e6b7f8fa301b0876f947976298b",
+      "url": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N47_00_E007_00_DEM/Copernicus_DSM_COG_10_N47_00_E007_00_DEM.tif"
+    },
+    {
+      "bytes": 41746914,
+      "path": "data/regions/alps-west/copernicus/Copernicus_DSM_COG_10_N47_00_E008_00_DEM.tif",
+      "sha256": "4e2917429d65e049a4f1ddee2093f7fc50f11d22d0fd7cee85f5c8334186d7fe",
+      "url": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N47_00_E008_00_DEM/Copernicus_DSM_COG_10_N47_00_E008_00_DEM.tif"
+    },
+    {
+      "bytes": 33347,
+      "path": "data/regions/alps/shared-terrain-v1/sources.lock.json",
+      "sha256": "ef53e08fcc8421bab6f0b3be8b0e12964ece6607f4c81777d8fa05efd144b0e9"
+    }
+  ],
+  "sourceDocumentation": "https://registry.opendata.aws/copernicus-dem/",
+  "toolchain": {
+    "gdal_translate": {
+      "path": "/Applications/QGIS.app/Contents/MacOS/gdal_translate",
+      "sha256": "20bee1aad39868f3aa506312cad8415bbe12fa004cbf75b27114f527178b632a"
+    },
+    "gdalbuildvrt": {
+      "path": "/Applications/QGIS.app/Contents/MacOS/gdalbuildvrt",
+      "sha256": "5694fb873506db8342bedbf18635fe6d3dbf97971dc25f2ea7f94ff4f6f77b30"
+    },
+    "gdalwarp": {
+      "path": "/Applications/QGIS.app/Contents/MacOS/gdalwarp",
+      "sha256": "da68256b5787bd76d876a409fd452cc8290be13c6f28aece569242682a003057"
+    }
+  },
+  "verticalDatum": "EGM2008 orthometric metres"
+}

@@ -1,0 +1,21 @@
+{
+  "combinedSHA256": "a8e9e3f99c59fffdfcf0ea6fa1960f1338df1254c1dc6920ae104cab2482ff60",
+  "command": [
+    "/opt/homebrew/opt/openjdk@21/libexec/openjdk.jdk/Contents/Home/bin/java",
+    "-Xmx6g",
+    "-jar",
+    "/Volumes/Extreme SSD/Projects/OpenBareMap/garmin/tools/splitter-r654/splitter.jar",
+    "--mapid=48540001",
+    "--description=OpenBareMap Alps - East",
+    "--max-nodes=1000000",
+    "--max-threads=2",
+    "--keep-complete=true",
+    "--output=pbf",
+    "--polygon-file=/Volumes/Extreme SSD/Projects/OpenBareMap/regions/alps-east/garmin/coverage.poly",
+    "--output-dir=/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/906ead9d53a7/alps-east/garmin/split",
+    "--ignore-osm-bounds=true",
+    "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/906ead9d53a7/alps-east/garmin/combined.osm.pbf"
+  ],
+  "coverageSHA256": "73c1aeff9e3e6d247d05e0a8cb7437513f03bfa5882a63acede965483e09a09c",
+  "ignoreSourceHeaderBounds": true
+}

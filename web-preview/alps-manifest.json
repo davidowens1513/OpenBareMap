@@ -1,0 +1,137 @@
+{
+  "dataOrigin": "https://downloads.appsbyonzy.dev/OpenBareMap/alps/2.0.0/preview",
+  "librarySHA256": "caf981bc46f6327ee7e65d5dc964d89d38a69f60edca2bd4c5c890c21b554c6c",
+  "pmtilesJS": "4.5.0",
+  "pmtilesPython": "3.8.1",
+  "regions": {
+    "alps-central": {
+      "basemap": {
+        "bytes": 1134977816,
+        "sha256": "bfba59e2b075791144e3f5c2ad029bad6ddbfe364808d8082cc9f37bfb13650b",
+        "sourceSHA256": "8bc7d763e033077e3a2b13bbbcbfd561221cf71c2d375785ab51a795811df6d0",
+        "tiles": 35881
+      },
+      "coast": {
+        "bytes": 219709,
+        "sha256": "cbe4b13547500f75a1f8dfe400162efef90ee9fd16baabb2339c5adbef74cad2",
+        "sourceSHA256": "8a7dc840d39bf7b0858b9fd41c218611dec54962c8eb647c9bd73cf05e948ba5",
+        "tiles": 10324
+      },
+      "grid": {
+        "bytes": 12600113,
+        "sha256": "5ecda08b42368d6b6841044ede65f856b3befcde099c81e204ae5a523678b7a5",
+        "sourceSHA256": "d606809c23af755432def37afa8be509b895af5fc9a333b89dabfd58c82bf87d",
+        "tiles": 43611
+      },
+      "hillshade": {
+        "bytes": 202999864,
+        "sha256": "2bc0c08b87df06ae6e590bbbd95794933b908638e2e89d8a02f0664f388957db",
+        "sourceSHA256": "cd88666130a7141c7edbedf11855eedacff0e6aa69ebbb5923edb57a4028adfc",
+        "tiles": 4799
+      },
+      "topography": {
+        "bytes": 680953646,
+        "sha256": "5d57c24c84deec1019c63c1247676c0e9654da89397001ce16fb6e52c7b96fe3",
+        "sourceSHA256": "0a8611682f92b208944f1e819d774495c815eb9d0e79053d4ebe27de344cd34e",
+        "tiles": 134455
+      }
+    },
+    "alps-east": {
+      "basemap": {
+        "bytes": 1082271836,
+        "sha256": "818ddb30600dc6ff61bd17cea18fba572a803ddf1607cad4d1424e1fd00e79cc",
+        "sourceSHA256": "0ef3c9d57905c396f98f30c423f33cd4ed3c1c093a5936f8b919f7f79b679ae9",
+        "tiles": 32418
+      },
+      "coast": {
+        "bytes": 829563,
+        "sha256": "24097edaef634e14196d73563a4fa1fbadd44113e1b7268a8e31a97be91975f5",
+        "sourceSHA256": "98b87b600278c94187c142c3c9133000cdc11601501097ce43221b935bef7f85",
+        "tiles": 10576
+      },
+      "grid": {
+        "bytes": 12450405,
+        "sha256": "44b8762692946541c549d3778a90648e17e7d234a9c005100a7f335f3a882d7c",
+        "sourceSHA256": "cf1575b8d07ea3c876e2794537be33938c21a100ec5ee427e8e30ef5ef5f2452",
+        "tiles": 43378
+      },
+      "hillshade": {
+        "bytes": 222624604,
+        "sha256": "3b7eeed160d9f77c379e987ae602f13b40aeb775179c2d58d3db937ba4eaa4fd",
+        "sourceSHA256": "bc02653c2b030f4414979346d499625ff433309cbd7d6993fb0d14f2d3b1dc82",
+        "tiles": 5171
+      },
+      "topography": {
+        "bytes": 553674774,
+        "sha256": "740fad122ba235145b65afb725b182043ff2d041696fd5b297549d4cd40b565a",
+        "sourceSHA256": "0477fb2c593d1c748789f90d66c02e3fbc01f2abc5cd27d57f6fda9342273113",
+        "tiles": 133641
+      }
+    },
+    "alps-tyrol-bavaria": {
+      "basemap": {
+        "bytes": 677790124,
+        "sha256": "68a6643d3e6a51e547ef0434ecb92b72469937ad1304d21708004b35cbb75bd0",
+        "sourceSHA256": "0f44f488b355509a8afdd913948c953ef22f61bc84077fa6a15fb219d1cd6787",
+        "tiles": 22909
+      },
+      "coast": {
+        "bytes": 267458,
+        "sha256": "4709743705393728289ef2483c5b714bed18ff41fe100240dfd6ed3a7d505697",
+        "sourceSHA256": "ac1f72c71364c3f842d8f6f3350f35aff3a37f3f589d7e46d481feaaee767b47",
+        "tiles": 7385
+      },
+      "grid": {
+        "bytes": 7039016,
+        "sha256": "0e77680c725567e36e1b53835cb5c504c0fc636e798477917199819163c3e7c4",
+        "sourceSHA256": "f4e8d483c0f79e4c060e397468ddd793c0b7f29fb51743bc55faeae27d5479af",
+        "tiles": 23480
+      },
+      "hillshade": {
+        "bytes": 126997822,
+        "sha256": "8a9f9a66fa6dd2a571d6426316414ef39c478ff047616347cbefbe823118b8c4",
+        "sourceSHA256": "5a5851c642a0cbab63ff7eba32a66865125d40446a67add0097336155863a1c9",
+        "tiles": 2772
+      },
+      "topography": {
+        "bytes": 417598317,
+        "sha256": "9f4e30b74979d5e1c1c1dcb8230e7cd7568eb39e5981ec4d38ada7d030fc6b5a",
+        "sourceSHA256": "21384cf932491f1dbff27b2f9d5307606a6a275bb8cfae6f4c4380621334075a",
+        "tiles": 97888
+      }
+    },
+    "alps-west": {
+      "basemap": {
+        "bytes": 902542806,
+        "sha256": "1541c3d52220123c602f1818d8d0013348dcf4e262e5acef93a63aef98564e62",
+        "sourceSHA256": "32c03371e280df0203e4ef79cced41a8402435b66502f86c81b01f2426975729",
+        "tiles": 28781
+      },
+      "coast": {
+        "bytes": 688604,
+        "sha256": "d27dee605c823f4072a0b18230939d695ae53f81375826df697d24f5e27c4f62",
+        "sourceSHA256": "65a89af44fd908165e0adafd051446acc7a7691d4822c084c40ea46c6634f500",
+        "tiles": 7470
+      },
+      "grid": {
+        "bytes": 10369093,
+        "sha256": "97bcf585bbd26dd05de70fd3645bf121cea37169acd0034ce9aa4ff9e1c6481f",
+        "sourceSHA256": "a11ae12452b22c6dafef5df669d7d5cc99257c628e90af7714900f9ce642dea1",
+        "tiles": 34045
+      },
+      "hillshade": {
+        "bytes": 163552918,
+        "sha256": "dd4d45ebb84d58e057d336c18dc7d0038e0d8637d67dd93a3418519bf5044610",
+        "sourceSHA256": "e1a7b0fb53253873e47bb3f77db4e8b9ee68ee06a1d70e2c09974633cde00671",
+        "tiles": 3802
+      },
+      "topography": {
+        "bytes": 516078686,
+        "sha256": "b0009a2b7cc80191e5247b0d26b0b7df1dd43d5975b00f938c0b7d592d7bdbe1",
+        "sourceSHA256": "ecc5187246330b516e2de371d2b39a4b6ee9d434d5c4fbdaa48a838cfd840a4d",
+        "tiles": 93869
+      }
+    }
+  },
+  "scope": "Complete selected map tiles; no regional or zoom sampling."
+}

@@ -12,32 +12,35 @@ from openbaremap import ROOT, digest, write
 
 REGIONS = ('norway-south', 'norway-central', 'norway-north')
 
-def main():
-    output = ROOT / 'data/regions/norway/shared-terrain-v1'
+def main(regions=REGIONS, series='norway'):
+    title = 'Norway' if series == 'norway' else 'Alps'
+    lock_key = f'shared{title}Terrain'
+    output = ROOT / f'data/regions/{series}/shared-terrain-v1'
     output.mkdir(parents=True, exist_ok=True)
     if (output / 'complete.json').exists():
         complete = json.loads((output / 'complete.json').read_text())
         if digest(output / 'sources.lock.json') != complete['sourceSHA256']:
             raise ValueError('Installed shared mosaic record changed')
-        for region in REGIONS:
+        for region in regions:
             for name in ('terrain-sources.lock.json', 'garmin/dem-padding.lock.json'):
                 record = json.loads((ROOT / 'regions' / region / name).read_text())
-                if record.get('sharedNorwayTerrain', {}).get('sha256') != complete['sourceSHA256']:
+                if record.get(lock_key, {}).get('sha256') != complete['sourceSHA256']:
                     raise ValueError('Shared terrain lock not installed: ' + region + '/' + name)
                 for item in record['assets'] + record['sourceAssets']:
                     if digest(ROOT / item['path']) != item['sha256']:
                         raise ValueError('Installed terrain input changed: ' + item['path'])
-        print('Verified existing complete shared Norway terrain', flush=True)
+        print(f'Verified existing complete shared {title} terrain', flush=True)
         return
     locks = {}
     sources = {}
     cells = {}
-    for region in REGIONS:
+    for region in regions:
         for name in ('terrain-sources.lock.json', 'garmin/dem-padding.lock.json'):
             path = ROOT / 'regions' / region / name
             record = json.loads(path.read_text())
-            if record.get('sharedNorwayTerrain'):
-                raise ValueError('Shared terrain already installed; use its existing locks')
+            if record.get(lock_key):
+                backup = ROOT / f'work/{series}-terrain-before-alignment' / path.relative_to(ROOT)
+                record = json.loads(backup.read_text())
             locks[path] = record
             for item in record['sourceAssets']:
                 if digest(ROOT / item['path']) != item['sha256']:
@@ -58,7 +61,7 @@ def main():
         if digest(path) != toolchain[name]['sha256']:
             raise ValueError('DEM tool changed: ' + name)
     source_record = {
-        'format': 'openbaremap-shared-norway-terrain-v1',
+        'format': f'openbaremap-shared-{series}-terrain-v1',
         'sources': [sources[k] for k in sorted(sources)],
         'resolutionDegrees': 1 / 3600,
         'alignment': 'One common EPSG:4326 VRT, fixed 1/3600 degree pixels, target-aligned grid',
@@ -91,10 +94,10 @@ def main():
             continue
         match = re.fullmatch(r'N(\d+)([EW])(\d+)\.hgt\.gz', name)
         if not match:
-            raise ValueError('Unexpected Norway DEM name: ' + name)
+            raise ValueError(f'Unexpected {title} DEM name: ' + name)
         lat = int(match[1]); lon = int(match[3]) * (-1 if match[2] == 'W' else 1)
         commands = []
-        with tempfile.TemporaryDirectory(prefix='OpenBareMap-Norway-DEM-') as temporary:
+        with tempfile.TemporaryDirectory(prefix=f'OpenBareMap-{title}-DEM-') as temporary:
             temp = Path(temporary); raw = temp / name.removesuffix('.gz')
             if old['operation'].startswith('Zero ocean cell:'):
                 if digest(ROOT / old['path']) != old['sha256']:
@@ -117,22 +120,22 @@ def main():
         item = {**old, 'path': str(target.relative_to(ROOT)), 'bytes': target.stat().st_size,
                 'sha256': digest(target), 'sharedSourceSHA256': source_sha, 'commands': commands}
         write(checkpoint, item); derived[name] = item
-        print(f'{number}/{len(cells)} shared Norway cell verified: {name}', flush=True)
+        print(f'{number}/{len(cells)} shared {title} cell verified: {name}', flush=True)
     # Install locks only after the entire shared dataset is complete.
-    backup = ROOT / 'work/norway-terrain-before-alignment'
+    backup = ROOT / f'work/{series}-terrain-before-alignment'
     for path, old in locks.items():
         saved = backup / path.relative_to(ROOT)
         if not saved.exists():
             saved.parent.mkdir(parents=True, exist_ok=True); shutil.copyfile(path, saved)
         record = {**old, 'assets': [derived[Path(item['path']).name] for item in old['assets']],
-                  'sharedNorwayTerrain': {'path': str(source_lock.relative_to(ROOT)), 'sha256': source_sha},
+                  lock_key: {'path': str(source_lock.relative_to(ROOT)), 'sha256': source_sha},
                   'sourceAssets': [*old['sourceAssets'], {'path': str(source_lock.relative_to(ROOT)),
                                   'sha256': source_sha, 'bytes': source_lock.stat().st_size}],
                   'commands': [], 'resampling': source_record['alignment']}
         write(path, record)
     write(output / 'complete.json', {'cells': len(derived), 'sourceSHA256': source_sha,
-                                    'status': 'Shared cells installed identically in all Norway source locks'})
-    print('All Norway shared terrain locks installed', flush=True)
+                                    'status': f'Shared cells installed identically in all {title} source locks'})
+    print(f'All {title} shared terrain locks installed', flush=True)
 
 if __name__ == '__main__':
     main()

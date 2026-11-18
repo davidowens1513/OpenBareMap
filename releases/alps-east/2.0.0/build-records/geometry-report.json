@@ -1,0 +1,34 @@
+{
+  "builderSHA256": "a2d345bb6682c31f1688a00fd483998eb467b93f3e591ffea94eac8fcaf26354",
+  "contoursSourceSHA256": "9131cdfcbf3007dbac23a1566f9785bacb4e0aaa5dfe1c149cc27e9904428633",
+  "counts": {
+    "contours": 381851,
+    "grid": {
+      "grid_10km": 65,
+      "grid_1km": 632
+    },
+    "landcover": {
+      "empty_source_areas": [],
+      "features": 831779,
+      "retained": 62583,
+      "smoothed": 769196
+    }
+  },
+  "osm": {
+    "bytes": 661562489,
+    "operation": "Complete-feature bbox extraction with nested relation references",
+    "path": "data/regions/alps-east/alps-261116.osm.clipped.osm.pbf",
+    "replicationTimestamp": "2026-11-16T21:22:36Z",
+    "sha256": "3424a5db5c59196308baccf721cff90a2cfbb31520930e13551f63e810b23d05",
+    "snapshot_date": "2026-11-16",
+    "url": "https://download.geofabrik.de/europe/alps-261116.osm.pbf"
+  },
+  "outputs": {
+    "contours.geojson": "fc63c7435f59e007465fb4525430c58b38a1f052948381c2131838710356376a",
+    "grid_10km.geojson": "86214dcd0e6f0dc99dd3d5a55977f11ebee6952ebdc3c11e47ce2bdd62e4f1f4",
+    "grid_1km.geojson": "c6d96ba90a6d25d97782c9c295dc92147a17eb88e4dcdfbd767b64056efde566",
+    "landcover.geojson": "a89fdc29d3d494b8b407e22a2de875ccfc217dcd8cd687ca3ff2bccb5fa09599"
+  },
+  "region": "alps-east",
+  "smootherSHA256": "7581d024dc1c1bec931642c7201db149bf64a64c814c451fa8bf37a0881ea6c9"
+}

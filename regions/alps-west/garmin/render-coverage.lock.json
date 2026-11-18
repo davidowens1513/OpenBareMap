@@ -1,0 +1,74 @@
+{
+  "bounds": [
+    4.876555,
+    43.65,
+    7.75,
+    46.6
+  ],
+  "contextEnvelope": [
+    4.85,
+    43.65,
+    7.75,
+    46.6
+  ],
+  "drawPriority": 25,
+  "format": "openbaremap-garmin-render-footprint-v1",
+  "geometry": {
+    "bytes": 1914,
+    "path": "regions/alps-west/garmin/render-coverage.geojson",
+    "sha256": "445a950444e4957f9e434e20ee7242586aa79c0dd14520a8ae37d40880320c77"
+  },
+  "inputs": [
+    {
+      "bytes": 2867,
+      "path": "data/regions/alps-west/alps.poly",
+      "sha256": "f84eadb7f1e87e5befdd0bd228b457ef54b1e2463763514ca25f7cd5359b30e9",
+      "url": "https://download.geofabrik.de/europe/alps.poly"
+    }
+  ],
+  "knownDestinationsCovered": {
+    "chamonix": [
+      6.8694,
+      45.9237
+    ],
+    "champex": [
+      7.115,
+      46.029
+    ],
+    "courmayeur": [
+      6.9708,
+      45.7917
+    ],
+    "ecrins": [
+      6.3599,
+      44.9225
+    ],
+    "gran-paradiso": [
+      7.267,
+      45.518
+    ],
+    "grenoble": [
+      5.724,
+      45.187
+    ],
+    "mercantour": [
+      7.255,
+      44.069
+    ],
+    "mont-blanc": [
+      6.865,
+      45.8326
+    ],
+    "nice": [
+      7.263,
+      43.707
+    ],
+    "vanoise": [
+      6.721,
+      45.382
+    ]
+  },
+  "purpose": "Rectangular Garmin tiles may overlap other countries. Do not fill their padding with sea, land or land-cover polygons.",
+  "region": "alps-west",
+  "transparentNativeMap": true
+}

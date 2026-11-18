@@ -1,0 +1,20 @@
+{
+  "inputs": [
+    {
+      "path": "regions/alps-tyrol-bavaria/garmin/inputs/contours.geojson.gz",
+      "sha256": "c39606c3b4d556c05d8caacebe103b939da90f72a3f42034b32a4148133e84fb",
+      "uncompressedSHA256": "e2c2bbf9f2646e3fc1ac8add90c1c907e566dce1ced38d48903384dc6fbb7652"
+    },
+    {
+      "path": "regions/alps-tyrol-bavaria/garmin/inputs/landcover.geojson.gz",
+      "sha256": "60358e95d8b891eb03b193d0cedbecdaf41b991a304a9918c0814e378db24336",
+      "uncompressedSHA256": "c37e8f607e72d1258a8224825dabb8ecfc8b7281e2a78f898af4db284d64b39b"
+    },
+    {
+      "path": "regions/alps-tyrol-bavaria/garmin/inputs/land.geojson.gz",
+      "sha256": "dfae89ab1e8f261b8f863fe360ea0c9eec7821ec0b26306dd3274e336b369e2a",
+      "uncompressedSHA256": "967898d03b04976cb0390f1a817abbccf200e3542c2e922f802237317219140e"
+    }
+  ],
+  "region": "alps-tyrol-bavaria"
+}

@@ -1,0 +1,74 @@
+{
+  "bounds": [
+    6.85,
+    45.08,
+    11.02,
+    47.65
+  ],
+  "contextEnvelope": [
+    6.85,
+    45.08,
+    11.02,
+    47.65
+  ],
+  "drawPriority": 25,
+  "format": "openbaremap-garmin-render-footprint-v1",
+  "geometry": {
+    "bytes": 2757,
+    "path": "regions/alps-central/garmin/render-coverage.geojson",
+    "sha256": "547b7ccd9385b39297317dcb6a33ff61f3c6f12f5e318868d461f1f4177aa8a0"
+  },
+  "inputs": [
+    {
+      "bytes": 2867,
+      "path": "data/regions/alps-central/alps.poly",
+      "sha256": "f84eadb7f1e87e5befdd0bd228b457ef54b1e2463763514ca25f7cd5359b30e9",
+      "url": "https://download.geofabrik.de/europe/alps.poly"
+    }
+  ],
+  "knownDestinationsCovered": {
+    "aosta": [
+      7.32,
+      45.737
+    ],
+    "arlberg": [
+      10.269,
+      47.13
+    ],
+    "brenta": [
+      10.8264,
+      46.23
+    ],
+    "champex": [
+      7.115,
+      46.029
+    ],
+    "davos": [
+      9.8383,
+      46.8027
+    ],
+    "eiger": [
+      8.0054,
+      46.5775
+    ],
+    "lugano": [
+      8.952,
+      46.0037
+    ],
+    "stelvio": [
+      10.4533,
+      46.5286
+    ],
+    "vaduz": [
+      9.5222,
+      47.141
+    ],
+    "zermatt": [
+      7.7491,
+      46.0207
+    ]
+  },
+  "purpose": "Rectangular Garmin tiles may overlap other countries. Do not fill their padding with sea, land or land-cover polygons.",
+  "region": "alps-central",
+  "transparentNativeMap": true
+}

@@ -1,0 +1,20 @@
+{
+  "inputs": [
+    {
+      "path": "regions/alps-east/garmin/inputs/contours.geojson.gz",
+      "sha256": "9f92513c8e4cf3c1559fc7b2b9d2878a7a01fb03e93e1a96cee11d22a72237f1",
+      "uncompressedSHA256": "fc63c7435f59e007465fb4525430c58b38a1f052948381c2131838710356376a"
+    },
+    {
+      "path": "regions/alps-east/garmin/inputs/landcover.geojson.gz",
+      "sha256": "885766d93103d245a958930875e0761ef9976bdf586cc73a101ba4067423d1f1",
+      "uncompressedSHA256": "a89fdc29d3d494b8b407e22a2de875ccfc217dcd8cd687ca3ff2bccb5fa09599"
+    },
+    {
+      "path": "regions/alps-east/garmin/inputs/land.geojson.gz",
+      "sha256": "2c65c3fa77c7c417cfda2b955715f7bfb44c1d7a94a8bac8de127cbc75430da7",
+      "uncompressedSHA256": "17456ec2ef043dd7957776218819bf501debbda13ed42870aea5304520faafb4"
+    }
+  ],
+  "region": "alps-east"
+}

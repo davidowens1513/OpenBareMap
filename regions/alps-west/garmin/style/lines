@@ -1,0 +1,38 @@
+# Display-only rules: intentionally no road_class / road_speed definitions.
+contour=elevation & obm:interval=100 [0x10008 resolution 20-21 continue]
+contour=elevation & obm:interval=100 { name '${ele|conv:m=>ft}' } [0x22 resolution 22]
+contour=elevation { name '${ele|conv:m=>ft}' } [0x20 resolution 23]
+# Preserve cycling membership, then give hiking routes a clear visual priority.
+obm:cycling=yes [0x10002 resolution 24 continue]
+# A single route stroke on off-road ways avoids competing path/track casings.
+obm:walking=yes & (highway=path | highway=footway | highway=track | highway=bridleway | highway=steps | highway=cycleway) [0x10001 resolution 24]
+obm:walking=yes & (highway=motorway | highway=motorway_link) [0x01 resolution 18-23 continue]
+obm:walking=yes & (highway=trunk | highway=trunk_link) [0x02 resolution 18-23 continue]
+obm:walking=yes & (highway=primary | highway=primary_link) [0x03 resolution 18-23 continue]
+obm:walking=yes & (highway=secondary | highway=secondary_link) [0x04 resolution 18-23 continue]
+obm:walking=yes & (highway=tertiary | highway=tertiary_link | highway=residential | highway=unclassified | highway=living_street | highway=road) [0x06 resolution 22-23 continue]
+obm:walking=yes & highway=service [0x07 resolution 22-23 continue]
+# One red route stroke replaces the road stroke at hiking detail levels.
+obm:walking=yes [0x1000b resolution 24]
+(highway=motorway | highway=motorway_link) [0x01 resolution 18]
+(highway=trunk | highway=trunk_link) [0x02 resolution 18]
+(highway=primary | highway=primary_link) [0x03 resolution 18]
+(highway=secondary | highway=secondary_link) [0x04 resolution 18]
+(highway=tertiary | highway=tertiary_link | highway=residential | highway=unclassified | highway=living_street | highway=road) [0x06 resolution 22]
+highway=service [0x07 resolution 22]
+highway=track [0x0a resolution 24]
+(highway=path | highway=footway) [0x16 resolution 24]
+highway=bridleway [0x10003 resolution 24]
+highway=cycleway [0x10004 resolution 24]
+highway=steps [0x10005 resolution 24]
+natural=cliff [0x10006 resolution 22]
+(railway=rail | railway=light_rail | railway=narrow_gauge | railway=tram) [0x14 resolution 21]
+route=ferry [0x1a resolution 20]
+waterway=river [0x1f resolution 20]
+(waterway=stream | waterway=canal | waterway=drain | waterway=ditch) [0x18 resolution 22]
+boundary=administrative & (admin_level=2 | admin_level=4) [0x1e resolution 18]
+boundary=administrative & (admin_level=5 | admin_level=6) [0x1c resolution 20]
+
+<finalize>
+name=* {name '${name:en}' | '${name}' | '${name:fr}'}
+name!=* & ref=* {name '${ref}'}

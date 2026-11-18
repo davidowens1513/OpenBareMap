@@ -7,6 +7,30 @@
       "url": "https://downloads.appsbyonzy.dev/Garmin/OpenBareMap-Ireland.img?v=2.0.1-trail-detail-r1"
     },
     {
+      "bytes": 483131392,
+      "path": "regions/alps-central/garmin/dist/OpenBareMap-Alps-Central.img",
+      "sha256": "01393b02fae3ac756030a8efe3d3aad9d239749e72d25ddadc77968703f75f76",
+      "url": "https://downloads.appsbyonzy.dev/Garmin/OpenBareMap-Alps-Central.img"
+    },
+    {
+      "bytes": 466657280,
+      "path": "regions/alps-east/garmin/dist/OpenBareMap-Alps-East.img",
+      "sha256": "259f2fd74c91b0b51a5fb0f251a4c623c1c4ed46a9171c73d2b4c89cb25ee475",
+      "url": "https://downloads.appsbyonzy.dev/Garmin/OpenBareMap-Alps-East.img"
+    },
+    {
+      "bytes": 289136640,
+      "path": "regions/alps-tyrol-bavaria/garmin/dist/OpenBareMap-Alps-Tyrol-Bavaria.img",
+      "sha256": "c9b1a9f6ffb17e74b2e2f85e9747852c7d176eecb8aa8506a4532e50a88aae8b",
+      "url": "https://downloads.appsbyonzy.dev/Garmin/OpenBareMap-Alps-Tyrol-Bavaria.img"
+    },
+    {
+      "bytes": 381501440,
+      "path": "regions/alps-west/garmin/dist/OpenBareMap-Alps-West.img",
+      "sha256": "23b8581b0f961348b6d84fa3b7d429ad57991442dbef1e6ce73d311dfcf273f0",
+      "url": "https://downloads.appsbyonzy.dev/Garmin/OpenBareMap-Alps-West.img"
+    },
+    {
       "bytes": 23934976,
       "path": "regions/balearic-islands/garmin/dist/OpenBareMap-Balearic-Islands.img",
       "sha256": "3022969fca63b99153e242a419fde7968652b647ba5a06de2959f91b52294f51",
@@ -113,6 +137,54 @@
       "path": "regions/sierra-nevada/garmin/dist/OpenBareMap-Sierra-Nevada.img",
       "sha256": "dd506bb8377886fc7e9bc0c475aed6b391fadc789bff60040bf33de2c672c163",
       "url": "https://downloads.appsbyonzy.dev/Garmin/OpenBareMap-Sierra-Nevada.img?v=2.0.1-trail-detail-r1"
+    },
+    {
+      "bytes": 2104197612,
+      "path": "releases/alps-central/2.0.0/app-bundles-v1/android/OpenBareMap-Alps-Central-Android-Bundle.zip",
+      "sha256": "c965de23e5071a9d8b243357cd4822433990ce06a9c5f8c941232b59b2fd5276",
+      "url": "https://downloads.appsbyonzy.dev/OpenBareMap/alps-central/2.0.0/app-bundles-v1/android/OpenBareMap-Alps-Central-Android-Bundle.zip"
+    },
+    {
+      "bytes": 2104198027,
+      "path": "releases/alps-central/2.0.0/app-bundles-v1/ios/OpenBareMap-Alps-Central-iOS-Bundle.zip",
+      "sha256": "ffec657b6716745e21645669efbbc14d8c06cb5d62cbdd78feb6d79d72c6965e",
+      "url": "https://downloads.appsbyonzy.dev/OpenBareMap/alps-central/2.0.0/app-bundles-v1/ios/OpenBareMap-Alps-Central-iOS-Bundle.zip"
+    },
+    {
+      "bytes": 1943620767,
+      "path": "releases/alps-east/2.0.0/app-bundles-v1/android/OpenBareMap-Alps-East-Android-Bundle.zip",
+      "sha256": "61f00bfcf2e3752cfbdac38531cab6d9ee159ccab9938cbdcf1ebf1bb377116f",
+      "url": "https://downloads.appsbyonzy.dev/OpenBareMap/alps-east/2.0.0/app-bundles-v1/android/OpenBareMap-Alps-East-Android-Bundle.zip"
+    },
+    {
+      "bytes": 1943621176,
+      "path": "releases/alps-east/2.0.0/app-bundles-v1/ios/OpenBareMap-Alps-East-iOS-Bundle.zip",
+      "sha256": "89e49f9be7dd5b018a4a112e50d60dd6fa6cfe45034fd64b4f7e68054039cad5",
+      "url": "https://downloads.appsbyonzy.dev/OpenBareMap/alps-east/2.0.0/app-bundles-v1/ios/OpenBareMap-Alps-East-iOS-Bundle.zip"
+    },
+    {
+      "bytes": 1278048181,
+      "path": "releases/alps-tyrol-bavaria/2.0.0/app-bundles-v1/android/OpenBareMap-Alps-Tyrol-Bavaria-Android-Bundle.zip",
+      "sha256": "45887081f95c4690685c47767c0dcba27aac43868f534f42180787f118fd6bb2",
+      "url": "https://downloads.appsbyonzy.dev/OpenBareMap/alps-tyrol-bavaria/2.0.0/app-bundles-v1/android/OpenBareMap-Alps-Tyrol-Bavaria-Android-Bundle.zip"
+    },
+    {
+      "bytes": 1278048608,
+      "path": "releases/alps-tyrol-bavaria/2.0.0/app-bundles-v1/ios/OpenBareMap-Alps-Tyrol-Bavaria-iOS-Bundle.zip",
+      "sha256": "e8fb2432e06804017b188981c533615b5539b46485906cae92a35b76e6ede08d",
+      "url": "https://downloads.appsbyonzy.dev/OpenBareMap/alps-tyrol-bavaria/2.0.0/app-bundles-v1/ios/OpenBareMap-Alps-Tyrol-Bavaria-iOS-Bundle.zip"
+    },
+    {
+      "bytes": 1652409114,
+      "path": "releases/alps-west/2.0.0/app-bundles-v1/android/OpenBareMap-Alps-West-Android-Bundle.zip",
+      "sha256": "1c88236093b3a896350ed17ab39e17457b669a426cf70d42fc941311982acb8d",
+      "url": "https://downloads.appsbyonzy.dev/OpenBareMap/alps-west/2.0.0/app-bundles-v1/android/OpenBareMap-Alps-West-Android-Bundle.zip"
+    },
+    {
+      "bytes": 1652409520,
+      "path": "releases/alps-west/2.0.0/app-bundles-v1/ios/OpenBareMap-Alps-West-iOS-Bundle.zip",
+      "sha256": "c720efedd9cc965505baacde86d7632a58bfc6b9cf013de84e724e20313d01a4",
+      "url": "https://downloads.appsbyonzy.dev/OpenBareMap/alps-west/2.0.0/app-bundles-v1/ios/OpenBareMap-Alps-West-iOS-Bundle.zip"
     },
     {
       "bytes": 101855589,

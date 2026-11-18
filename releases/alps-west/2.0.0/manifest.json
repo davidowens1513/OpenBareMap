@@ -1,0 +1,106 @@
+{
+  "acceptance": "Automated checks only; see validation and visual-review records for actual reviewed scope.",
+  "coverage": "French and Italian Western Alps from the Mediterranean to Mont Blanc, including the full Tour du Mont Blanc and its Swiss approaches.",
+  "datasets": {
+    "basemap": {
+      "bytes": 924540928,
+      "path": "releases/alps-west/2.0.0/maps/basemap.mbtiles",
+      "sha256": "32c03371e280df0203e4ef79cced41a8402435b66502f86c81b01f2426975729",
+      "validation": {
+        "empty_tile_count": 369,
+        "logical_tiles_sha256": "4d6598c91041ff928e267df4e0d7c2b7d572185ec49adf6d547fca4a6d620a4a",
+        "tile_count": 28781
+      }
+    },
+    "grid": {
+      "bytes": 12075008,
+      "path": "releases/alps-west/2.0.0/maps/grid.mbtiles",
+      "sha256": "a11ae12452b22c6dafef5df669d7d5cc99257c628e90af7714900f9ce642dea1",
+      "validation": {
+        "empty_tile_count": 0,
+        "logical_tiles_sha256": "3ab75118e5adc7c2d7e49b5d935ef1d35c8e83530554dd15657e07b966b3559a",
+        "tile_count": 34045
+      }
+    },
+    "hillshade": {
+      "bytes": 166555648,
+      "path": "releases/alps-west/2.0.0/maps/hillshade.mbtiles",
+      "sha256": "e1a7b0fb53253873e47bb3f77db4e8b9ee68ee06a1d70e2c09974633cde00671",
+      "validation": {
+        "empty_tile_count": 0,
+        "logical_tiles_sha256": "90b513bc6741f3cb414589c2fca306da0d812cd7e6da2b9c136cc9694277e086",
+        "tile_count": 3802
+      }
+    },
+    "topography": {
+      "bytes": 544161792,
+      "path": "releases/alps-west/2.0.0/maps/topography-context.mbtiles",
+      "sha256": "ecc5187246330b516e2de371d2b39a4b6ee9d434d5c4fbdaa48a838cfd840a4d",
+      "validation": {
+        "empty_tile_count": 55414,
+        "logical_tiles_sha256": "2a24d8520634ef9570087ad9dbb421fe9ae29ce6f74955f896a14bfc1b05ca85",
+        "tile_count": 93869
+      }
+    }
+  },
+  "garmin": {
+    "bytes": 381501440,
+    "path": "regions/alps-west/garmin/dist/OpenBareMap-Alps-West.img",
+    "sha256": "23b8581b0f961348b6d84fa3b7d429ad57991442dbef1e6ce73d311dfcf273f0"
+  },
+  "geometryReport": {
+    "path": "releases/alps-west/2.0.0/build-records/geometry-report.json",
+    "sha256": "a43bdb0cb973b63ba5f05884aadbf169f6b8513ed969bc97767bef84f95dea2c"
+  },
+  "hostAppsModified": false,
+  "mapVersion": "2.0.0",
+  "osm": {
+    "bytes": 599503522,
+    "operation": "Complete-feature bbox extraction with nested relation references",
+    "path": "data/regions/alps-west/alps-261116.osm.clipped.osm.pbf",
+    "replicationTimestamp": "2026-11-16T21:22:36Z",
+    "sha256": "9dd9fb6336b7f2f8e75168b42373e1741367a27bcba0341ee6e702fa8818c89c",
+    "snapshot_date": "2026-11-16",
+    "url": "https://download.geofabrik.de/europe/alps-261116.osm.pbf"
+  },
+  "packages": {
+    "android": {
+      "archive": {
+        "bytes": 1652380680,
+        "path": "regions/alps-west/android/OpenBareMap-Android.zip",
+        "sha256": "a2d7d85ea00c324c10b5199bbb2146b9b090607cfa746cfee3c63a920a8e7016"
+      },
+      "checksumsSHA256": "9ed7e453bee78e3756613407f9daeb580c10ac145cc0d602d400378933fcb618",
+      "manifestSHA256": "095fafbffe10b9d7dc220062367aff03462ccbaa81ac1ee60f8df3f280acd342",
+      "path": "regions/alps-west/android",
+      "validationSHA256": "8b29a5864aaa76f8f8708ce4d6db1cc7cbc39cb89c341855e6587d0d079d1959"
+    },
+    "ios": {
+      "checksumsSHA256": "5fc4a86f6e3a89a5a8d129ecc2cb00b5c8ec11985f4f3bf78d8ea4e0bce7f286",
+      "manifestSHA256": "addfa92948a0a928e660a992f0e158745e3bf507ccd03e6207c1d1abc93199d9",
+      "path": "regions/alps-west/ios",
+      "validationSHA256": "25a708aeea252e21fc0118badc0a748d5a7d436ce63241d0b196df900055f2ad"
+    }
+  },
+  "pythonRuntime": {
+    "packages": {
+      "Pillow": "12.3.0",
+      "certifi": "2026.10.23",
+      "charset-normalizer": "3.5.2",
+      "idna": "3.20",
+      "numpy": "2.5.4",
+      "osmium": "4.3.2",
+      "pyproj": "3.8.0",
+      "requests": "2.34.2",
+      "shapely": "2.2.0",
+      "urllib3": "2.8.0"
+    },
+    "platform": "macOS-27.2.1-arm64-arm-64bit-Mach-O",
+    "python": "3.14.5 (main, May 10 2026, 10:21:34) [Clang 21.0.0 (clang-2100.0.123.102)]",
+    "requirementsSHA256": "427f12ff8b49bfebac0a7d453c2f65bd15d6695584b18e6ecee1fdfeed20a36c"
+  },
+  "region": "alps-west",
+  "styleSHA256": "e3407c014ddebf2cb9afd18a17c9a242bee7f2f612fcbf1fa367742a3d474cbd",
+  "terrainLockSHA256": "a683f37e2ce746dee7a9df5bdc78d2c4744f2bb1b8155e0d8d6edfe770f50dc8",
+  "validation": "validation.json"
+}

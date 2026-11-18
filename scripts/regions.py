@@ -4,7 +4,8 @@ import json
 from pathlib import Path
 from openbaremap import ROOT
 
-REGIONS = ('ireland', 'england-wales', 'scotland', 'sierra-nevada', 'pyrenees', 'dolomites', 'faroe-islands','norway-south','norway-central','norway-north', 'balearic-islands', 'corsica', 'sardinia', 'sicily', 'crete', 'cyprus', 'malta', 'canary-islands', 'madeira')
+ALPS_REGIONS = ('alps-west', 'alps-central', 'alps-tyrol-bavaria', 'alps-east')
+REGIONS = ('ireland', 'england-wales', 'scotland', 'sierra-nevada', 'pyrenees', 'dolomites', 'faroe-islands','norway-south','norway-central','norway-north', 'balearic-islands', 'corsica', 'sardinia', 'sicily', 'crete', 'cyprus', 'malta', 'canary-islands', 'madeira') + ALPS_REGIONS
 
 def profile(region='ireland'):
     if region not in REGIONS:
@@ -121,6 +122,8 @@ def expected_basemap_layers(region='ireland'):
 def terrain_file(region,name):
     override=region_path(region,name)
     if override.exists():return override
+    if region in ALPS_REGIONS:
+        return ROOT/'regions/alps'/name
     return ROOT/('viewer' if name.endswith('.html') else 'data')/name
 
 def apply_terrain_notice(directory,region):

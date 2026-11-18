@@ -1,5 +1,38 @@
 # Maintaining regional editions
 
+## Alps editions
+
+The Alpine series uses five display names. **Alps - Dolomites** reuses the
+existing Dolomites map, with its original region ID, package URLs and Garmin
+family. The four new editions are built as a batch.
+
+| Edition | Main coverage | Garmin family |
+| --- | --- | --- |
+| Alps - West | Mediterranean approaches, Mercantour, Écrins, Vanoise, Gran Paradiso and the Tour du Mont Blanc | 4851 |
+| Alps - Central | Valais, Bernese Oberland, Ticino, Graubünden, Liechtenstein and adjoining valleys | 4852 |
+| Alps - Tyrol & Bavaria | Arlberg, Innsbruck, the Bavarian Alps and Hohe Tauern | 4853 |
+| Alps - East | Eastern Austrian Alps, Julian Alps and Karawanks | 4854 |
+
+The new editions share a dated Geofabrik Alps extract, 20 m contours and one
+aligned Copernicus GLO-30 terrain mosaic. The regions overlap at Mont Blanc,
+Arlberg and Katschberg. Verify the transition to the existing Dolomites map
+around Brenta, Brenner and Lienz. Each profile records destination points for
+tile coverage checks. The bounds are build envelopes. Detailed OSM coverage
+within them follows the Geofabrik extract.
+
+From the repository on a machine with access to Geofabrik and Copernicus:
+
+```sh
+PYTHONPATH=work/python:scripts python3 scripts/build_alps.py
+```
+
+The batch builds and validates iOS, Android and Garmin outputs for each new
+edition, then stages integration ZIPs and a local catalogue in
+`work/alps-app-bundles-v1/` and browser previews in `work/alps-web-2.0.0/`.
+The local previews use port 8768 and require an HTTP server that supports
+byte-range requests. Production website and Worldwide catalogue entries are
+released after the four sets of downloads and previews are verified.
+
 ## Norway editions
 
 The coverage plan is recorded in `config/norway-editions.json`. It defines three

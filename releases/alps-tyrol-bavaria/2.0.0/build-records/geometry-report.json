@@ -1,0 +1,40 @@
+{
+  "builderSHA256": "a2d345bb6682c31f1688a00fd483998eb467b93f3e591ffea94eac8fcaf26354",
+  "contoursSourceSHA256": "6f50a551ad5cfb1726d5edac0ec1883f8352bd66966b0c863748ebf09d2e0230",
+  "counts": {
+    "contours": 180857,
+    "grid": {
+      "grid_10km": 52,
+      "grid_1km": 502
+    },
+    "landcover": {
+      "empty_source_areas": [
+        {
+          "area_id": 38355977,
+          "outer_ring_sizes": [],
+          "reason": "invalid area (area_id=38355977)"
+        }
+      ],
+      "features": 390072,
+      "retained": 26965,
+      "smoothed": 363107
+    }
+  },
+  "osm": {
+    "bytes": 430753885,
+    "operation": "Complete-feature bbox extraction with nested relation references",
+    "path": "data/regions/alps-tyrol-bavaria/alps-261116.osm.clipped.osm.pbf",
+    "replicationTimestamp": "2026-11-16T21:22:36Z",
+    "sha256": "19f7941605235521c5f5f0399c0dace0b826e167ea516e1d4be05621a7e37252",
+    "snapshot_date": "2026-11-16",
+    "url": "https://download.geofabrik.de/europe/alps-261116.osm.pbf"
+  },
+  "outputs": {
+    "contours.geojson": "e2c2bbf9f2646e3fc1ac8add90c1c907e566dce1ced38d48903384dc6fbb7652",
+    "grid_10km.geojson": "5471b1eb3787655a65b527a24bf6554ef5c0bbc250239ff12205f0ca821e56ce",
+    "grid_1km.geojson": "ebc921e6a504e3a2a62322fa9488807338510326ce97ff81b359c03860351988",
+    "landcover.geojson": "c37e8f607e72d1258a8224825dabb8ecfc8b7281e2a78f898af4db284d64b39b"
+  },
+  "region": "alps-tyrol-bavaria",
+  "smootherSHA256": "7581d024dc1c1bec931642c7201db149bf64a64c814c451fa8bf37a0881ea6c9"
+}

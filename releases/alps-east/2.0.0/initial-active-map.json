@@ -1,0 +1,52 @@
+{
+  "contourIntervalMetres": 20,
+  "coverage": "Eastern Austrian Alps, Julian Alps and Karawanks, joining the existing Dolomites around East Tyrol and Friuli.",
+  "datasets": {
+    "basemap": {
+      "bytes": 1107087360,
+      "path": "releases/alps-east/2.0.0/maps/basemap.mbtiles",
+      "sha256": "0ef3c9d57905c396f98f30c423f33cd4ed3c1c093a5936f8b919f7f79b679ae9",
+      "validation": {
+        "empty_tile_count": 425,
+        "logical_tiles_sha256": "9a4507df8c520ca72a1829093931c7486859d2368d05dfb58f2d253857a2b687",
+        "tile_count": 32418
+      }
+    },
+    "grid": {
+      "bytes": 14581760,
+      "path": "releases/alps-east/2.0.0/maps/grid.mbtiles",
+      "sha256": "cf1575b8d07ea3c876e2794537be33938c21a100ec5ee427e8e30ef5ef5f2452",
+      "validation": {
+        "empty_tile_count": 0,
+        "logical_tiles_sha256": "9e168d39f5b20dbfdeeb192ac89e8b03eb294b6733b2bfe48356b4b11100d0b3",
+        "tile_count": 43378
+      }
+    },
+    "hillshade": {
+      "bytes": 226734080,
+      "path": "releases/alps-east/2.0.0/maps/hillshade.mbtiles",
+      "sha256": "bc02653c2b030f4414979346d499625ff433309cbd7d6993fb0d14f2d3b1dc82",
+      "validation": {
+        "empty_tile_count": 0,
+        "logical_tiles_sha256": "4b2c333cfb2a237abc399db99d59bd64d1c2adfc079d391c5f10298b0f70cb0e",
+        "tile_count": 5171
+      }
+    },
+    "topography": {
+      "bytes": 589987840,
+      "path": "releases/alps-east/2.0.0/maps/topography.mbtiles",
+      "sha256": "e0b977b0ba23cded9d3b295a07c3cb3db5f6545124f504705818357868c86620",
+      "validation": {
+        "empty_tile_count": 83830,
+        "logical_tiles_sha256": "1a02242264fd1c0e485e418dc0e1cb3064020a865cb5856b29d63e0fa29d7c13",
+        "tile_count": 133641
+      }
+    }
+  },
+  "format": "openbaremap-development-viewer-v1",
+  "localBorders": false,
+  "mapVersion": "2.0.0",
+  "region": "alps-east",
+  "storageRevision": "2.0.0-alps-east-r1",
+  "styleRevision": "2.0.0-alps-east-r1"
+}

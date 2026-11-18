@@ -1,0 +1,106 @@
+{
+  "acceptance": "Automated checks only; see validation and visual-review records for actual reviewed scope.",
+  "coverage": "Bavarian Alps, Austrian Tyrol and Hohe Tauern with links to the existing Dolomites around Brenner and East Tyrol.",
+  "datasets": {
+    "basemap": {
+      "bytes": 695676928,
+      "path": "releases/alps-tyrol-bavaria/2.0.0/maps/basemap.mbtiles",
+      "sha256": "0f44f488b355509a8afdd913948c953ef22f61bc84077fa6a15fb219d1cd6787",
+      "validation": {
+        "empty_tile_count": 20,
+        "logical_tiles_sha256": "3020a6e3735bc1f48e85bf1f493011e44fdbe62ad4f3112322ca8ccaab9761e4",
+        "tile_count": 22909
+      }
+    },
+    "grid": {
+      "bytes": 8187904,
+      "path": "releases/alps-tyrol-bavaria/2.0.0/maps/grid.mbtiles",
+      "sha256": "f4e8d483c0f79e4c060e397468ddd793c0b7f29fb51743bc55faeae27d5479af",
+      "validation": {
+        "empty_tile_count": 0,
+        "logical_tiles_sha256": "d6cd031452a59992a8ccca5780f1bad6bd1407119f9eddbc04b41c66e80976d7",
+        "tile_count": 23480
+      }
+    },
+    "hillshade": {
+      "bytes": 129212416,
+      "path": "releases/alps-tyrol-bavaria/2.0.0/maps/hillshade.mbtiles",
+      "sha256": "5a5851c642a0cbab63ff7eba32a66865125d40446a67add0097336155863a1c9",
+      "validation": {
+        "empty_tile_count": 0,
+        "logical_tiles_sha256": "0f5ed764f49ac834610ef73795549481acfeda698703dca5ebd43f6062b330af",
+        "tile_count": 2772
+      }
+    },
+    "topography": {
+      "bytes": 440393728,
+      "path": "releases/alps-tyrol-bavaria/2.0.0/maps/topography-context.mbtiles",
+      "sha256": "21384cf932491f1dbff27b2f9d5307606a6a275bb8cfae6f4c4380621334075a",
+      "validation": {
+        "empty_tile_count": 68804,
+        "logical_tiles_sha256": "32f24b963b135e2c2d82e3487a04fb2fae635e24ea96a8a2b73a534398baf5a5",
+        "tile_count": 97888
+      }
+    }
+  },
+  "garmin": {
+    "bytes": 289136640,
+    "path": "regions/alps-tyrol-bavaria/garmin/dist/OpenBareMap-Alps-Tyrol-Bavaria.img",
+    "sha256": "c9b1a9f6ffb17e74b2e2f85e9747852c7d176eecb8aa8506a4532e50a88aae8b"
+  },
+  "geometryReport": {
+    "path": "releases/alps-tyrol-bavaria/2.0.0/build-records/geometry-report.json",
+    "sha256": "bcbd23615fb8f99ce229fc97871fe4b217a06c29ab6957c9552584b697f7ec87"
+  },
+  "hostAppsModified": false,
+  "mapVersion": "2.0.0",
+  "osm": {
+    "bytes": 430753885,
+    "operation": "Complete-feature bbox extraction with nested relation references",
+    "path": "data/regions/alps-tyrol-bavaria/alps-261116.osm.clipped.osm.pbf",
+    "replicationTimestamp": "2026-11-16T21:22:36Z",
+    "sha256": "19f7941605235521c5f5f0399c0dace0b826e167ea516e1d4be05621a7e37252",
+    "snapshot_date": "2026-11-16",
+    "url": "https://download.geofabrik.de/europe/alps-261116.osm.pbf"
+  },
+  "packages": {
+    "android": {
+      "archive": {
+        "bytes": 1278019712,
+        "path": "regions/alps-tyrol-bavaria/android/OpenBareMap-Android.zip",
+        "sha256": "1d12c71d718356b77fae31c08a2e96e9d133ba01ad440e3f92e220a265413aae"
+      },
+      "checksumsSHA256": "4bd098cab0bc6701a7b42885b61a0a26727bb2f9502f3b69a1281f739f56861e",
+      "manifestSHA256": "ab4f04d4741f39ee5844c51e3af58370e79deafef1c0be9a73919362556cf635",
+      "path": "regions/alps-tyrol-bavaria/android",
+      "validationSHA256": "a30256463869dff6748ac080e12fefc49e910028f9b3ee36e02cf4ef7f85f90b"
+    },
+    "ios": {
+      "checksumsSHA256": "05b08cdedc07d13701671a5529c4fd48d671282a606a55c7ba6d712b8a1d1b74",
+      "manifestSHA256": "221111cfd12c61b5ab98d0346122de95264c99c9a6b58500b2d8e3e22f61629f",
+      "path": "regions/alps-tyrol-bavaria/ios",
+      "validationSHA256": "941825f4fd8f0f8bdfdb77acf253d89d4ee5a7ac2476becfced34d6d20108bcf"
+    }
+  },
+  "pythonRuntime": {
+    "packages": {
+      "Pillow": "12.3.0",
+      "certifi": "2026.10.23",
+      "charset-normalizer": "3.5.2",
+      "idna": "3.20",
+      "numpy": "2.5.4",
+      "osmium": "4.3.2",
+      "pyproj": "3.8.0",
+      "requests": "2.34.2",
+      "shapely": "2.2.0",
+      "urllib3": "2.8.0"
+    },
+    "platform": "macOS-27.2.1-arm64-arm-64bit-Mach-O",
+    "python": "3.14.5 (main, May 10 2026, 10:21:34) [Clang 21.0.0 (clang-2100.0.123.102)]",
+    "requirementsSHA256": "427f12ff8b49bfebac0a7d453c2f65bd15d6695584b18e6ecee1fdfeed20a36c"
+  },
+  "region": "alps-tyrol-bavaria",
+  "styleSHA256": "d5458183e116de13281b2363f7d40683e1a49d5d2670c3d3fbbb7e3cc1350d2d",
+  "terrainLockSHA256": "409f53ef4562e76171d90eadb536ddbe53268a534a801b34e0d338f8189118e9",
+  "validation": "validation.json"
+}

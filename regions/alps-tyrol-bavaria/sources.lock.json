@@ -1,0 +1,29 @@
+{
+  "accessed_utc": "2026-11-18T18:05:00.789381+00:00",
+  "inputs": [
+    {
+      "bytes": 2338864042,
+      "path": "data/regions/alps/alps-261116.osm.pbf",
+      "replicationTimestamp": "2026-11-16T21:22:36Z",
+      "sha256": "f5454c06fa30463d7c758a42831040b5b0598f400c5521bd8c94a7076ff13a68",
+      "url": "https://download.geofabrik.de/europe/alps-261116.osm.pbf"
+    }
+  ],
+  "osm": {
+    "bytes": 430753885,
+    "operation": "Complete-feature bbox extraction with nested relation references",
+    "path": "data/regions/alps-tyrol-bavaria/alps-261116.osm.clipped.osm.pbf",
+    "replicationTimestamp": "2026-11-16T21:22:36Z",
+    "sha256": "19f7941605235521c5f5f0399c0dace0b826e167ea516e1d4be05621a7e37252",
+    "snapshot_date": "2026-11-16",
+    "url": "https://download.geofabrik.de/europe/alps-261116.osm.pbf"
+  },
+  "polygons": [
+    {
+      "bytes": 2867,
+      "path": "data/regions/alps-tyrol-bavaria/alps.poly",
+      "sha256": "f84eadb7f1e87e5befdd0bd228b457ef54b1e2463763514ca25f7cd5359b30e9",
+      "url": "https://download.geofabrik.de/europe/alps.poly"
+    }
+  ]
+}

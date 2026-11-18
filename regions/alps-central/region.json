@@ -1,0 +1,183 @@
+{
+  "id": "alps-central",
+  "name": "OpenBareMap Alps - Central",
+  "label": "Alps - Central",
+  "mapVersion": "2.0.0",
+  "minzoom": 4,
+  "maxzoom": 14,
+  "coverage": "Swiss, Liechtenstein and adjoining Italian Alps, with overlap from the Mont Blanc approaches to the Arlberg and the western Dolomites.",
+  "bounds": [
+    6.85,
+    45.08,
+    11.02,
+    47.65
+  ],
+  "terrainBounds": [
+    6,
+    45,
+    12,
+    48
+  ],
+  "coastContextBounds": [
+    5,
+    44,
+    13,
+    49
+  ],
+  "projectedCRS": "EPSG:25832",
+  "gridCRS": "EPSG:25832",
+  "gridName": "ETRS89 / UTM 32N",
+  "gridSource": "utm-grid",
+  "gridExtent": [
+    330000,
+    660000,
+    4990000,
+    5280000
+  ],
+  "townlands": false,
+  "contourIntervalMetres": 20,
+  "sourceDate": "2026-11-16",
+  "sourceSlugs": [
+    "alps"
+  ],
+  "sourceBaseURL": "https://download.geofabrik.de/europe/",
+  "sourceCacheRegion": "alps",
+  "nativeLanguage": "de",
+  "minorWaterwayMinzoom": 10,
+  "clipBasemap": true,
+  "clipSource": true,
+  "ignoreSourceHeaderBounds": true,
+  "garminUseSourceOutline": true,
+  "alignedTerrainPixels": true,
+  "garminFamilyId": 4852,
+  "garminTileStartId": 48520001,
+  "garminFilename": "OpenBareMap-Alps-Central.img",
+  "garminPackageRevision": "2.0.1-trail-detail-r1",
+  "styleRevision": "2.0.0-alps-central-r1",
+  "garminContextBounds": [
+    6.85,
+    45.08,
+    11.02,
+    47.65
+  ],
+  "requireBogFeatures": false,
+  "terrainProvider": "copernicus-glo30",
+  "terrainAttribution": "Copernicus DEM GLO-30 · European Union / ESA · DLR / Airbus",
+  "terrainNotice": "Alps - Central elevation: Copernicus DEM GLO-30 Public (AWS 2021 release).\n\nproduced using Copernicus WorldDEM-30 © DLR e.V. 2010-2014 and © Airbus Defence and Space GmbH 2014-2018 provided under COPERNICUS by the European Union and ESA; all rights reserved\n\nThe organisations in charge of the Copernicus programme by law or by delegation do not incur any liability for any use of the Copernicus WorldDEM-30.\n\nLicense: https://dataspace.copernicus.eu/sites/default/files/media/files/2025-06/copernicus_contributing_mission_data_access_v2_cop_dem_licenses.pdf\nSource: https://registry.opendata.aws/copernicus-dem/\nVertical datum: EGM2008 orthometric metres. Native approximately 30 m cells are bilinearly resampled to point-aligned Int16 HGT for the shared terrain pipeline. Ocean-only cells absent from the official public inventory are zero.\n",
+  "inspectionNames": [
+    "Zermatt",
+    "Davos"
+  ],
+  "destinations": {
+    "island": [
+      8.935,
+      46.365,
+      7
+    ],
+    "zermatt": [
+      7.7491,
+      46.0207,
+      12
+    ],
+    "eiger": [
+      8.0054,
+      46.5775,
+      12
+    ],
+    "davos": [
+      9.8383,
+      46.8027,
+      12
+    ],
+    "lugano": [
+      8.952,
+      46.0037,
+      12
+    ],
+    "vaduz": [
+      9.5222,
+      47.141,
+      12
+    ],
+    "stelvio": [
+      10.4533,
+      46.5286,
+      12
+    ],
+    "arlberg": [
+      10.269,
+      47.13,
+      12
+    ],
+    "champex": [
+      7.115,
+      46.029,
+      12
+    ],
+    "brenta": [
+      10.8264,
+      46.23,
+      12
+    ],
+    "aosta": [
+      7.32,
+      45.737,
+      12
+    ]
+  },
+  "destinationLabels": {
+    "island": "Alps - Central",
+    "zermatt": "Zermatt",
+    "eiger": "Eiger",
+    "davos": "Davos",
+    "lugano": "Lugano",
+    "vaduz": "Vaduz",
+    "stelvio": "Stelvio Pass",
+    "arlberg": "St. Anton am Arlberg",
+    "champex": "Champex-Lac",
+    "brenta": "Madonna di Campiglio",
+    "aosta": "Aosta"
+  },
+  "validationAnchors": {
+    "zermatt": [
+      7.7491,
+      46.0207
+    ],
+    "eiger": [
+      8.0054,
+      46.5775
+    ],
+    "davos": [
+      9.8383,
+      46.8027
+    ],
+    "lugano": [
+      8.952,
+      46.0037
+    ],
+    "vaduz": [
+      9.5222,
+      47.141
+    ],
+    "stelvio": [
+      10.4533,
+      46.5286
+    ],
+    "arlberg": [
+      10.269,
+      47.13
+    ],
+    "champex": [
+      7.115,
+      46.029
+    ],
+    "brenta": [
+      10.8264,
+      46.23
+    ],
+    "aosta": [
+      7.32,
+      45.737
+    ]
+  }
+}

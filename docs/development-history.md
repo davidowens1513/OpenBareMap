@@ -2,6 +2,21 @@
 
 This document records the development of OpenBareMap and the structure of its build pipeline. The [main README](../README.md) describes the available map and platform packages.
 
+## Alps editions
+
+Four new editions extend the range from the Maritime Alps and Mont Blanc to
+the Julian Alps and Austria's eastern ranges. Alps - Dolomites is the existing
+edition under its new display name. The four new maps share the Geofabrik
+snapshot of 16 November 2026, an aligned Copernicus terrain mosaic and 20 m
+contours.
+
+The build passed automated checks for iOS, Android and Garmin. The release
+includes four browser previews, regional platform instructions and a
+23-region BareGPS Worldwide catalogue. The [regional build and storage
+reference](regional-editions.md#alps-editions) covers reproducible inputs.
+The [preview manifest](../web-preview/alps-manifest.json) identifies the exported
+tile archives.
+
 ## Cartography and shared data
 
 The project uses OpenBareMap 1.1 as its cartographic reference. Selected colours, terrain textures, typography resources, townland labels and Irish Grid assets are retained under recorded checksums. Reference material is in `assets/legacy-1.1/`; copied resources and their provenance are listed in `legacy-assets.lock.json`. The townland dataset contains 50,380 label points. Original generation recipes for some inherited resources are incomplete.

@@ -1,0 +1,55 @@
+{
+  "features": [
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              9.827269,
+              47.70422
+            ],
+            [
+              10.84282,
+              47.97154
+            ],
+            [
+              12.4863,
+              47.95728
+            ],
+            [
+              12.732571815468122,
+              48.0
+            ],
+            [
+              13.71,
+              48.0
+            ],
+            [
+              13.71,
+              46.55
+            ],
+            [
+              9.8,
+              46.55
+            ],
+            [
+              9.8,
+              47.69894858662506
+            ],
+            [
+              9.827269,
+              47.70422
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "properties": {
+        "purpose": "Limit opaque native background and land-cover polygons; retain complete accepted OSM and terrain inputs",
+        "region": "alps-tyrol-bavaria"
+      },
+      "type": "Feature"
+    }
+  ],
+  "type": "FeatureCollection"
+}

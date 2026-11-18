@@ -1,0 +1,34 @@
+{
+  "areaSquareDegrees": 5.669500000000012,
+  "bounds": [
+    9.8,
+    46.55,
+    13.71,
+    48.0
+  ],
+  "entireRequestedFootprintCovered": true,
+  "exactFootprint": null,
+  "inputs": [
+    {
+      "bytes": 2867,
+      "path": "data/regions/alps-tyrol-bavaria/alps.poly",
+      "sha256": "f84eadb7f1e87e5befdd0bd228b457ef54b1e2463763514ca25f7cd5359b30e9",
+      "url": "https://download.geofabrik.de/europe/alps.poly"
+    }
+  ],
+  "knownDestinationsCovered": [
+    "island",
+    "arlberg",
+    "innsbruck",
+    "otztal",
+    "zugspitze",
+    "garmisch",
+    "brenner",
+    "grossglockner",
+    "lienz",
+    "katschberg"
+  ],
+  "operation": "Requested rectangular crop; source outlines cover all destination anchors",
+  "polygons": 1,
+  "sha256": "11fb40b61e3c6d575dd206a4127230283570afa08bb62bc8c461541b7e3db920"
+}
