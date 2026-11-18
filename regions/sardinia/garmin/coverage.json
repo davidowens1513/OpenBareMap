@@ -1,0 +1,31 @@
+{
+  "areaSquareDegrees": 4.518000000000011,
+  "bounds": [
+    8.08,
+    38.83,
+    9.88,
+    41.34
+  ],
+  "entireRequestedFootprintCovered": true,
+  "exactFootprint": null,
+  "inputs": [
+    {
+      "bytes": 790,
+      "path": "data/regions/sardinia/isole.poly",
+      "sha256": "9ea3885681d0de15f7ccee03cae126612bb595fdb8c3708c3f6f6ff67833706e",
+      "url": "https://download.geofabrik.de/europe/italy/isole.poly"
+    }
+  ],
+  "knownDestinationsCovered": [
+    "island",
+    "nuoro",
+    "cagliari",
+    "la-maddalena",
+    "asinara",
+    "san-pietro",
+    "sant\u2019antioco"
+  ],
+  "operation": "Requested rectangular crop; source outlines cover all destination anchors",
+  "polygons": 1,
+  "sha256": "bcc590d0e1d4bc66a1e02cec31e452a1bdde1b24897d8d59ab4f6a0d76e6f4b8"
+}

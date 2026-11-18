@@ -1,0 +1,52 @@
+{
+  "contourIntervalMetres": 20,
+  "coverage": "Sicily, the Aeolian, Egadi and Pelagie archipelagos, Ustica and Pantelleria.",
+  "datasets": {
+    "basemap": {
+      "bytes": 197410816,
+      "path": "releases/sicily/2.0.0/maps/basemap.mbtiles",
+      "sha256": "3856e3bfeb3303396ec6ba789e6b3720d0d27f2889d93714c6c1c948aedb3ffe",
+      "validation": {
+        "empty_tile_count": 8505,
+        "logical_tiles_sha256": "34837e12498df5ef71aeaddc5a570b9187ba8aa1db983044f384a47a269ba619",
+        "tile_count": 23072
+      }
+    },
+    "grid": {
+      "bytes": 17072128,
+      "path": "releases/sicily/2.0.0/maps/grid.mbtiles",
+      "sha256": "a80d89ddd8e69ea6e74b0d217e255472b8c1d18c751572041989464c0ae94d40",
+      "validation": {
+        "empty_tile_count": 0,
+        "logical_tiles_sha256": "b2324a083d063ad69c6131d46f7ab5d0ed04dd2b0b948a370baf7364834619af",
+        "tile_count": 46253
+      }
+    },
+    "hillshade": {
+      "bytes": 31612928,
+      "path": "releases/sicily/2.0.0/maps/hillshade.mbtiles",
+      "sha256": "d4ff42d80342a425d5ab9981d846ee17125ddc85a4106ebaa795053ae25bf974",
+      "validation": {
+        "empty_tile_count": 0,
+        "logical_tiles_sha256": "68095f6611f8296bd601a8ebfa95d8949603094588ec42020e38e482ce504855",
+        "tile_count": 963
+      }
+    },
+    "topography": {
+      "bytes": 123428864,
+      "path": "releases/sicily/2.0.0/maps/topography-context.mbtiles",
+      "sha256": "451a41e97a8a0dfa2ad4435e88784d5ff3a137ec597ffeb5d3e956a012babd70",
+      "validation": {
+        "empty_tile_count": 22244,
+        "logical_tiles_sha256": "f444e11126ba8e0edbe8492634299da5da8d3b07ee3f5ef4cb90ac75f84b7df8",
+        "tile_count": 33402
+      }
+    }
+  },
+  "format": "openbaremap-development-viewer-v1",
+  "localBorders": false,
+  "mapVersion": "2.0.0",
+  "region": "sicily",
+  "storageRevision": "2.0.0-sicily-r3",
+  "styleRevision": "2.0.0-sicily-r1"
+}

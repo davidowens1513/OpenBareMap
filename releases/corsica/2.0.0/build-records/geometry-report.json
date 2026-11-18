@@ -1,0 +1,34 @@
+{
+  "builderSHA256": "a2d345bb6682c31f1688a00fd483998eb467b93f3e591ffea94eac8fcaf26354",
+  "contoursSourceSHA256": "15a16314cdbc5da2e9095056a380bffc673ad99fd6b0ef68e97b3f21e808d7d4",
+  "counts": {
+    "contours": 19047,
+    "grid": {
+      "grid_10km": 33,
+      "grid_1km": 312
+    },
+    "landcover": {
+      "empty_source_areas": [],
+      "features": 22130,
+      "retained": 1394,
+      "smoothed": 20736
+    }
+  },
+  "osm": {
+    "bytes": 34542450,
+    "operation": "Complete upstream extract; no merge or spatial filtering",
+    "path": "data/regions/corsica/corse-261117.osm.pbf",
+    "replicationTimestamp": "2026-11-17T21:24:30Z",
+    "sha256": "72b2cc67df038fcb40e3c27de48682f66c99302eea4f4ca0d12b18c4ad714b57",
+    "snapshot_date": "2026-11-17",
+    "url": "https://download.geofabrik.de/europe/france/corse-261117.osm.pbf"
+  },
+  "outputs": {
+    "contours.geojson": "8f8d290a18d1c3473a7c3c1f845c0b876a44d8cfb6f6f8532af902948fb98443",
+    "grid_10km.geojson": "95c85110198661cac6465001df838527d7f7a2a7b1b6a7c03ac957546df07bac",
+    "grid_1km.geojson": "c6bbcde020252339884476aed84bd7efe6ced1fdf032c1a6f8615f0e18dfa297",
+    "landcover.geojson": "10e8999bca77071782d0b9dcd38acb53cd1391ce56860f2a637dcc4c5bc1095d"
+  },
+  "region": "corsica",
+  "smootherSHA256": "7581d024dc1c1bec931642c7201db149bf64a64c814c451fa8bf37a0881ea6c9"
+}

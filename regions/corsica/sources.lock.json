@@ -1,0 +1,29 @@
+{
+  "accessed_utc": "2026-11-18T11:24:54.255367+00:00",
+  "inputs": [
+    {
+      "bytes": 34542450,
+      "path": "data/regions/corsica/corse-261117.osm.pbf",
+      "replicationTimestamp": "2026-11-17T21:24:30Z",
+      "sha256": "72b2cc67df038fcb40e3c27de48682f66c99302eea4f4ca0d12b18c4ad714b57",
+      "url": "https://download.geofabrik.de/europe/france/corse-261117.osm.pbf"
+    }
+  ],
+  "osm": {
+    "bytes": 34542450,
+    "operation": "Complete upstream extract; no merge or spatial filtering",
+    "path": "data/regions/corsica/corse-261117.osm.pbf",
+    "replicationTimestamp": "2026-11-17T21:24:30Z",
+    "sha256": "72b2cc67df038fcb40e3c27de48682f66c99302eea4f4ca0d12b18c4ad714b57",
+    "snapshot_date": "2026-11-17",
+    "url": "https://download.geofabrik.de/europe/france/corse-261117.osm.pbf"
+  },
+  "polygons": [
+    {
+      "bytes": 294,
+      "path": "data/regions/corsica/corse.poly",
+      "sha256": "2288b4a29bb119ed981191f2d13e50a4ca99fded8d34c1292e235eb27e338efc",
+      "url": "https://download.geofabrik.de/europe/france/corse.poly"
+    }
+  ]
+}

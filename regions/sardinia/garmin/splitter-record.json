@@ -1,0 +1,21 @@
+{
+  "combinedSHA256": "3161fd366f1a74e06c3976f718710998d30d1790ddef0613e93c95252d0bb4f1",
+  "command": [
+    "/opt/homebrew/opt/openjdk@21/libexec/openjdk.jdk/Contents/Home/bin/java",
+    "-Xmx6g",
+    "-jar",
+    "/Volumes/Extreme SSD/Projects/OpenBareMap/garmin/tools/splitter-r654/splitter.jar",
+    "--mapid=48440001",
+    "--description=OpenBareMap Sardinia",
+    "--max-nodes=1000000",
+    "--max-threads=2",
+    "--keep-complete=true",
+    "--output=pbf",
+    "--polygon-file=/Volumes/Extreme SSD/Projects/OpenBareMap/regions/sardinia/garmin/coverage.poly",
+    "--output-dir=/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/906ead9d53a7/sardinia/garmin/split",
+    "--ignore-osm-bounds=true",
+    "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/906ead9d53a7/sardinia/garmin/combined.osm.pbf"
+  ],
+  "coverageSHA256": "bcc590d0e1d4bc66a1e02cec31e452a1bdde1b24897d8d59ab4f6a0d76e6f4b8",
+  "ignoreSourceHeaderBounds": true
+}

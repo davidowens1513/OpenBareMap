@@ -120,9 +120,10 @@ class MapServer(ThreadingHTTPServer):
     request_queue_size = 128
 
 def main():
+    from regions import REGIONS
     parser=argparse.ArgumentParser()
     parser.add_argument('--port',type=int,default=8765)
-    parser.add_argument('--region',choices=['ireland','england-wales','scotland','sierra-nevada','pyrenees','dolomites','faroe-islands','norway-south','norway-central','norway-north'],default='ireland')
+    parser.add_argument('--region',choices=REGIONS,default='ireland')
     parser.add_argument('--database',type=Path,help='Optional override for the base vector database')
     args=parser.parse_args()
     from regions import active_map, profile

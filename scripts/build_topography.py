@@ -11,7 +11,7 @@ import sqlite3
 import subprocess
 import sys
 from openbaremap import ROOT, digest, inspect_tiles, write, build_name
-from regions import region_path, profile
+from regions import REGIONS, region_path, profile
 
 GDAL=Path('/Applications/QGIS.app/Contents/MacOS')
 TOOLS=['ogr2ogr','gdalbuildvrt','gdalwarp','gdaldem','gdal_contour','gdal_translate','gdaladdo','gdalinfo']
@@ -94,7 +94,7 @@ def build(args):
 if __name__=='__main__':
     parser=argparse.ArgumentParser()
     parser.add_argument('name',type=build_name)
-    parser.add_argument('--region',choices=['ireland','england-wales','scotland','sierra-nevada','pyrenees','dolomites','faroe-islands','norway-south','norway-central','norway-north'],default='ireland')
+    parser.add_argument('--region',choices=REGIONS,default='ireland')
     parser.add_argument('--accept-toolchain',action='store_true')
     try:build(parser.parse_args())
     except (OSError,ValueError,subprocess.SubprocessError) as error:sys.exit(str(error))

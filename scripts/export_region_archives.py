@@ -3,7 +3,7 @@
 import argparse,json,shutil,zipfile
 from pathlib import Path
 from openbaremap import ROOT,digest,write
-from regions import profile
+from regions import REGIONS, profile
 from package_resources import copy_map_file
 
 def verify(root,region):
@@ -42,4 +42,4 @@ def export(region,output):
     return records
 
 if __name__=='__main__':
-    parser=argparse.ArgumentParser();parser.add_argument('--region',choices=['england-wales','scotland','sierra-nevada','pyrenees','dolomites','faroe-islands','norway-south','norway-central','norway-north'],required=True);args=parser.parse_args();export(args.region,ROOT/'regions'/args.region/'exports')
+    parser=argparse.ArgumentParser();parser.add_argument('--region',choices=REGIONS[1:],required=True);args=parser.parse_args();export(args.region,ROOT/'regions'/args.region/'exports')

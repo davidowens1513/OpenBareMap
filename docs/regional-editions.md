@@ -257,3 +257,23 @@ The regional terrain notice and full Copernicus licence are included in exports.
 Use `scripts/run_full_region.py --region faroe-islands` for the complete build.
 
 Faroe native land checks cover all 18 islands at every native detail level. At resolutions 18 and 16, a half-grid-cell tolerance accounts for coarse coordinate quantization; finer levels require the actual interior point to be inside the compiled land polygon.
+
+## Mediterranean island editions
+
+The Balearic Islands, Corsica, Sardinia and Sicily are four independently
+buildable maps. Sardinia and Sicily each crop the shared Geofabrik Isole
+extract. The Balearic Islands and Corsica use their respective Geofabrik
+extracts. All four use the 17 November 2026 OSM snapshots, Copernicus GLO-30
+and 20 m contours. Sicily uses the source outline for its transparent Garmin
+background along the Strait of Messina.
+
+Build each edition with scripts/run_full_region.py --region REGION. Validate
+the selected datasets and native packages before assembling the integration
+kits and exporting PMTiles with the shared browser preview. All editions use
+the same region selector and map-key layout.
+
+As with Norway, source extracts, elevation tiles and working databases are
+rebuildable local data. Git carries configurations, source locks, validation
+records and public download manifests. Cloudflare R2 serves the finished
+integration kits, Garmin images and browser previews. The R2 delivery inventory
+records the exact sizes and checksums of the downloadable kits and images.

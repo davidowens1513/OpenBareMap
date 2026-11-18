@@ -1,0 +1,120 @@
+{
+  "acceptance": "Automated checks only; see validation and visual-review records for actual reviewed scope.",
+  "coverage": "Sardinia and its coastal islands, including La Maddalena, Asinara, San Pietro and Sant\u2019Antioco.",
+  "datasets": {
+    "basemap": {
+      "bytes": 146087936,
+      "path": "releases/sardinia/2.0.0/maps/basemap.mbtiles",
+      "sha256": "9af889c59093a50447f1528aa1927fe10d210a3b201cf93c864d72a33e225dc2",
+      "validation": {
+        "empty_tile_count": 4129,
+        "logical_tiles_sha256": "0828f4b67188253f1b7316f9656e23ec059d683f5621ff1a54b63418a13c09cc",
+        "tile_count": 15588
+      }
+    },
+    "grid": {
+      "bytes": 5881856,
+      "path": "releases/sardinia/2.0.0/maps/grid.mbtiles",
+      "sha256": "0530006a47c5a8bd64f3a48e32fb49aec2f3fab624bd4750afb88c84770b7755",
+      "validation": {
+        "empty_tile_count": 0,
+        "logical_tiles_sha256": "4e8d4432acd1030192a6d31e01ac29010692b482d41a216c01f3714a7e370a5d",
+        "tile_count": 16734
+      }
+    },
+    "hillshade": {
+      "bytes": 32391168,
+      "path": "releases/sardinia/2.0.0/maps/hillshade.mbtiles",
+      "sha256": "ce4d33504e5cf1710581406248482341e486841160a6b6b5e441fa30eb3a317f",
+      "validation": {
+        "empty_tile_count": 0,
+        "logical_tiles_sha256": "e75dad19ccc299677147e2cd4438bfae7cc459ec8e60655628a2e3563e284c64",
+        "tile_count": 860
+      }
+    },
+    "topography": {
+      "bytes": 119898112,
+      "path": "releases/sardinia/2.0.0/maps/topography-context.mbtiles",
+      "sha256": "e124c2dd5bb524b7c3c4fac3c532c8837960736ee914e27fe14a5c1ab39d21ba",
+      "validation": {
+        "empty_tile_count": 9426,
+        "logical_tiles_sha256": "335dff77a90c8a419c4d139502005735f35d5c60f4ce52bbe8ef245b58270bf3",
+        "tile_count": 19681
+      }
+    }
+  },
+  "garmin": {
+    "bytes": 79769600,
+    "path": "regions/sardinia/garmin/dist/OpenBareMap-Sardinia.img",
+    "sha256": "ef158cbf579def3deaa51e02b7998adf4f23bd01b3c810c54edb0928e8ee63bd"
+  },
+  "geometryReport": {
+    "path": "releases/sardinia/2.0.0/build-records/geometry-report.json",
+    "sha256": "a70d38a7ba42340e6ba609381abdb7f5abedf63ea345bb56c4bc63e2e6bca77b"
+  },
+  "hostAppsModified": false,
+  "mapVersion": "2.0.0",
+  "osm": {
+    "bytes": 86851714,
+    "operation": "Complete-feature bbox extraction with nested relation references",
+    "path": "data/regions/sardinia/isole-261117.osm.clipped.osm.pbf",
+    "replicationTimestamp": "2026-11-17T21:24:30Z",
+    "sha256": "9e1cf075ccf0e8a8fd1cb4e6f43664313bc8f7ba911960c358e049747219a58f",
+    "snapshot_date": "2026-11-17",
+    "url": "https://download.geofabrik.de/europe/italy/isole-261117.osm.pbf"
+  },
+  "packages": {
+    "android": {
+      "archive": {
+        "bytes": 309121979,
+        "path": "regions/sardinia/android/OpenBareMap-Android.zip",
+        "sha256": "8261998e583d512aada03ad3860acdeccc8d98eea0eb04b68cbe5d09381c1896"
+      },
+      "checksumsSHA256": "5d0f5b440101e65997b4dddc3aef4919553ddc7e3e5bd26cb147eed52f97409f",
+      "manifestSHA256": "baf6ebc28b9a13dc29974ef9c8dae28d4f252caaac61de8c10379e0002c8aa4f",
+      "path": "regions/sardinia/android",
+      "validationSHA256": "8ba7122d3081a920f48e5c55c50a997f86a4b404246f82c6f7be19e0fe16cefb"
+    },
+    "ios": {
+      "checksumsSHA256": "912603a5ba0303403599595068d4f9c1847a4e4f040d5ab94d90d73c9d4626ab",
+      "manifestSHA256": "1d181229b6d5a76cb59e3a568eb0a0729e7f5d34419f2b33e53ec2866bcdd5a5",
+      "path": "regions/sardinia/ios",
+      "validationSHA256": "d3acca8c6803e1c0c1f371b8b4f600d944a949f47fe4521217b667768fe389fc"
+    }
+  },
+  "pythonRuntime": {
+    "packages": {
+      "Pillow": "12.3.0",
+      "certifi": "2026.10.23",
+      "charset-normalizer": "3.5.2",
+      "idna": "3.20",
+      "numpy": "2.5.4",
+      "osmium": "4.3.2",
+      "pyproj": "3.8.0",
+      "requests": "2.34.2",
+      "shapely": "2.2.0",
+      "urllib3": "2.8.0"
+    },
+    "platform": "macOS-27.2.1-arm64-arm-64bit-Mach-O",
+    "python": "3.14.5 (main, May 10 2026, 10:21:34) [Clang 21.0.0 (clang-2100.0.123.102)]",
+    "requirementsSHA256": "427f12ff8b49bfebac0a7d453c2f65bd15d6695584b18e6ecee1fdfeed20a36c"
+  },
+  "region": "sardinia",
+  "standaloneResourceArchives": {
+    "android": {
+      "bytes": 309121979,
+      "path": "regions/sardinia/exports/android/OpenBareMap-Sardinia-Android.zip",
+      "sha256": "8261998e583d512aada03ad3860acdeccc8d98eea0eb04b68cbe5d09381c1896",
+      "url": "https://downloads.appsbyonzy.dev/OpenBareMap/sardinia/2.0.0/android/OpenBareMap-Sardinia-Android.zip"
+    },
+    "ios": {
+      "bytes": 309142251,
+      "path": "regions/sardinia/exports/ios/OpenBareMap-Sardinia-iOS.zip",
+      "sha256": "094a81ac27261aa41f2a3e5dfbb26ebfd4efab474c53b0bd19c1b0e2e8f21e47",
+      "url": "https://downloads.appsbyonzy.dev/OpenBareMap/sardinia/2.0.0/ios/OpenBareMap-Sardinia-iOS.zip"
+    }
+  },
+  "styleSHA256": "c331086e4516410ddc841431be185652c08f7d456316acc9006ca2f95be8a027",
+  "terrainLockSHA256": "d9a363d3d65e44297c8c86c281aff587bc76b8f3408673891478366977fdb3df",
+  "validation": "validation.json"
+}

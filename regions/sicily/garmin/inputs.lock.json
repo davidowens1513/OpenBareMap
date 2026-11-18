@@ -1,0 +1,20 @@
+{
+  "inputs": [
+    {
+      "path": "regions/sicily/garmin/inputs/contours.geojson.gz",
+      "sha256": "41878b550681c2430e1b457a3ad07539e4e495a2c23868cd7e514da7a030d128",
+      "uncompressedSHA256": "ce36cf23ea10bcbff0375d44fd2fad6843f429bb1d80d245c44576a72bb99577"
+    },
+    {
+      "path": "regions/sicily/garmin/inputs/landcover.geojson.gz",
+      "sha256": "7fe8209f1a410b42291255c85d306bf9e518b5b950237b64290a9435e3c2be75",
+      "uncompressedSHA256": "91f50d03a5bcc8161f33482371d85f6830c9e5f2143d016f2d1e1fddd4f87202"
+    },
+    {
+      "path": "regions/sicily/garmin/inputs/land.geojson.gz",
+      "sha256": "9bb22e8bd35927dcc345c0a574cbc82f3e74dc160d67fc880185b07002a3644d",
+      "uncompressedSHA256": "8d2919bd140320dc793bd4b6c15491fd666ca6d151de40c17dbc9eb73a686696"
+    }
+  ],
+  "region": "sicily"
+}

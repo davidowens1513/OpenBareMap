@@ -1,0 +1,144 @@
+{
+  "familyId": 4842,
+  "garminPackageRevision": "2.0.0-r1",
+  "inspection": {
+    "anchorLabels": {
+      "Palma": "Palma"
+    },
+    "bounds": [
+      1.1199188232421875,
+      38.56999397277832,
+      4.4000244140625,
+      40.15005111694336
+    ],
+    "coastPolygonsByLevel": {
+      "0": {
+        "0x32": 22,
+        "0x54": 1164
+      },
+      "1": {
+        "0x32": 12,
+        "0x54": 708
+      },
+      "2": {
+        "0x32": 9,
+        "0x54": 513
+      },
+      "3": {
+        "0x32": 9,
+        "0x54": 184
+      },
+      "4": {
+        "0x32": 9,
+        "0x54": 57
+      }
+    },
+    "contoursByLevel": {
+      "0": {
+        "0x20": 14060,
+        "0x22": 2558
+      },
+      "1": {
+        "0x20": 12331,
+        "0x22": 2155
+      },
+      "2": {
+        "0x22": 2072
+      },
+      "3": {
+        "0x10008": 1921
+      },
+      "4": {}
+    },
+    "lineInstancesAtHighestDetail": {
+      "0x1": 513,
+      "0x10001": 1197,
+      "0x10002": 920,
+      "0x10003": 17,
+      "0x10004": 535,
+      "0x10005": 2470,
+      "0x10006": 3850,
+      "0x1000b": 1992,
+      "0x14": 239,
+      "0x16": 25853,
+      "0x18": 2725,
+      "0x1a": 73,
+      "0x1c": 901,
+      "0x1e": 760,
+      "0x1f": 11,
+      "0x2": 446,
+      "0x20": 14060,
+      "0x22": 2558,
+      "0x3": 1766,
+      "0x4": 1778,
+      "0x6": 27868,
+      "0x7": 31646,
+      "0xa": 25067
+    },
+    "logicalCombinedSHA256": "c7abf18e94a82297447eaf423da4a303880fd0a1674429bfa4065522d3a08f6f",
+    "logicalHashNote": "Internal file names, sizes and payloads; only CommonHeader creation-date bytes 14..20 are zeroed for hashing. IMG archive headers are excluded. Output bytes are never modified.",
+    "logicalTileSHA256": {
+      "48420001.img": "ace938547cdc78d2a685b4ec0db9cb4cc6c88f298375e0d102f5d4f2e30500b8",
+      "48420002.img": "30f643a3c5c438d863ddb5fd08c2af10e83899d39ed0f64bc2192a330030f222",
+      "48420003.img": "34a3d2b994429011697c58238d8341112dcf6492ab097e650c99ff223dc911dd",
+      "48420004.img": "7195700f1837829f016c03b3f74494de72246b7984f0c07bc360ada64b3b395b",
+      "48420005.img": "182eb989d60cae63f6675cab4c5355d53f7b9e926671f5bd20765d95a6b6e6a1",
+      "48420006.img": "9a26340b398a18c9c9360d40398dce7d81ce0cf10b203e5b5dcabfbb06d78c53",
+      "48420007.img": "d63247089087ffbbf79105f6aa3e64bd1c9775000763b16df310da6c083b0de1",
+      "48420008.img": "c6cf544ab786f9686a123c513a78d413545bf8a30d783740920ac429172ff937",
+      "48420009.img": "9482cb7ffa7b9fb2a6c3d342a56bf9cca379e6f1bfc977fa26fd0b37dd3e1e07"
+    },
+    "pointInstancesAtHighestDetail": {
+      "0x100": 1,
+      "0x10001": 245,
+      "0x10002": 757,
+      "0x10003": 1314,
+      "0x10004": 42,
+      "0x10006": 20955,
+      "0x2f0b": 4341,
+      "0x600": 16,
+      "0x650c": 396,
+      "0x6603": 215,
+      "0x6615": 1018,
+      "0x6616": 1442,
+      "0x800": 172,
+      "0xb00": 195,
+      "0xc00": 7240
+    },
+    "polygonInstancesAtHighestDetail": {
+      "0x10101": 12941,
+      "0x10102": 4302,
+      "0x10103": 135,
+      "0x10104": 8679,
+      "0x10105": 592,
+      "0x10106": 239,
+      "0x10109": 1097,
+      "0x1010a": 126,
+      "0x1010b": 4,
+      "0x13": 195791,
+      "0x32": 22,
+      "0x3c": 5327,
+      "0x50": 11692,
+      "0x51": 295,
+      "0x54": 1164
+    },
+    "routing": false,
+    "subfileBytes": {
+      "DEM": 5037998,
+      "LBL": 905897,
+      "MPS": 817,
+      "RGN": 17689330,
+      "SRT": 912,
+      "TRE": 214824,
+      "TYP": 2982
+    },
+    "tiles": 9
+  },
+  "output": {
+    "bytes": 23934976,
+    "path": "regions/balearic-islands/garmin/dist/OpenBareMap-Balearic-Islands.img",
+    "sha256": "3022969fca63b99153e242a419fde7968652b647ba5a06de2959f91b52294f51"
+  },
+  "routing": false,
+  "status": "compiled and structurally inspected; hardware rendering pending"
+}

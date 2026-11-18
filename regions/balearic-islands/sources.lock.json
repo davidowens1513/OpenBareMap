@@ -1,0 +1,29 @@
+{
+  "accessed_utc": "2026-11-18T11:23:14.430305+00:00",
+  "inputs": [
+    {
+      "bytes": 46870377,
+      "path": "data/regions/balearic-islands/islas-baleares-261117.osm.pbf",
+      "replicationTimestamp": "2026-11-17T21:24:30Z",
+      "sha256": "56e2e564058d0a9cc68fd9e183290556f81d9a26646d12fbf5d2e4e5c8cbbe4e",
+      "url": "https://download.geofabrik.de/europe/spain/islas-baleares-261117.osm.pbf"
+    }
+  ],
+  "osm": {
+    "bytes": 46870377,
+    "operation": "Complete upstream extract; no merge or spatial filtering",
+    "path": "data/regions/balearic-islands/islas-baleares-261117.osm.pbf",
+    "replicationTimestamp": "2026-11-17T21:24:30Z",
+    "sha256": "56e2e564058d0a9cc68fd9e183290556f81d9a26646d12fbf5d2e4e5c8cbbe4e",
+    "snapshot_date": "2026-11-17",
+    "url": "https://download.geofabrik.de/europe/spain/islas-baleares-261117.osm.pbf"
+  },
+  "polygons": [
+    {
+      "bytes": 232,
+      "path": "data/regions/balearic-islands/islas-baleares.poly",
+      "sha256": "2a93d024f378d5fad6c2a8239f6b5f28f529bd006141105ddceb006383aab88a",
+      "url": "https://download.geofabrik.de/europe/spain/islas-baleares.poly"
+    }
+  ]
+}

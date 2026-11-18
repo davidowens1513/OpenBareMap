@@ -1,0 +1,184 @@
+{
+  "mapVersion": "2.0.0",
+  "minzoom": 4,
+  "maxzoom": 14,
+  "townlands": false,
+  "contourIntervalMetres": 20,
+  "minorWaterwayMinzoom": 10,
+  "clipBasemap": true,
+  "gridSource": "utm-grid",
+  "terrainProvider": "copernicus-glo30",
+  "terrainAttribution": "Copernicus DEM GLO-30 · European Union / ESA · DLR / Airbus",
+  "ignoreSourceHeaderBounds": true,
+  "requireBogFeatures": false,
+  "id": "sardinia",
+  "name": "OpenBareMap Sardinia",
+  "label": "Sardinia",
+  "coverage": "Sardinia and its coastal islands, including La Maddalena, Asinara, San Pietro and Sant’Antioco.",
+  "bounds": [
+    8.08,
+    38.83,
+    9.88,
+    41.34
+  ],
+  "terrainBounds": [
+    8,
+    38,
+    10,
+    42
+  ],
+  "coastContextBounds": [
+    7,
+    37,
+    11,
+    43
+  ],
+  "projectedCRS": "EPSG:25832",
+  "gridCRS": "EPSG:25832",
+  "gridName": "ETRS89 / UTM 32N",
+  "gridExtent": [
+    420000,
+    580000,
+    4290000,
+    4580000
+  ],
+  "sourceDate": "2026-11-17",
+  "sourceSlugs": [
+    "isole"
+  ],
+  "sourceBaseURL": "https://download.geofabrik.de/europe/italy/",
+  "nativeLanguage": "sc",
+  "clipSource": true,
+  "garminFamilyId": 4844,
+  "garminTileStartId": 48440001,
+  "garminFilename": "OpenBareMap-Sardinia.img",
+  "garminPackageRevision": "2.0.0-r1",
+  "styleRevision": "2.0.0-sardinia-r1",
+  "garminContextBounds": [
+    8.08,
+    38.83,
+    9.88,
+    41.34
+  ],
+  "garminCoverageBounds": [
+    8.08,
+    38.83,
+    9.88,
+    41.34
+  ],
+  "inspectionNames": [
+    "Nuoro"
+  ],
+  "destinations": {
+    "island": [
+      9.33,
+      40.32,
+      7
+    ],
+    "nuoro": [
+      9.33,
+      40.32,
+      12
+    ],
+    "cagliari": [
+      9.125,
+      39.221,
+      12
+    ],
+    "la-maddalena": [
+      9.413,
+      41.219,
+      12
+    ],
+    "asinara": [
+      8.29,
+      41.07,
+      12
+    ],
+    "san-pietro": [
+      8.25,
+      39.143,
+      12
+    ],
+    "sant’antioco": [
+      8.43,
+      39.06,
+      12
+    ]
+  },
+  "destinationLabels": {
+    "island": "Sardinia",
+    "nuoro": "Nuoro",
+    "cagliari": "Cagliari",
+    "la-maddalena": "La Maddalena",
+    "asinara": "Asinara",
+    "san-pietro": "San Pietro",
+    "sant’antioco": "Sant’Antioco"
+  },
+  "terrainNotice": "Sardinia elevation: Copernicus DEM GLO-30 Public (AWS 2021 release).\n\nproduced using Copernicus WorldDEM-30 © DLR e.V. 2010-2014 and © Airbus Defence and Space GmbH 2014-2018 provided under COPERNICUS by the European Union and ESA; all rights reserved\n\nThe organisations in charge of the Copernicus programme by law or by delegation do not incur any liability for any use of the Copernicus WorldDEM-30.\n\nLicense: https://dataspace.copernicus.eu/sites/default/files/media/files/2025-06/copernicus_contributing_mission_data_access_v2_cop_dem_licenses.pdf\nSource: https://registry.opendata.aws/copernicus-dem/\nVertical datum: EGM2008 orthometric metres. Native approximately 30 m cells are bilinearly resampled to point-aligned Int16 HGT for the shared terrain pipeline. Ocean-only cells absent from the official public inventory are zero.\n",
+  "sourceCacheRegion": "italy-isole",
+  "validationAnchors": {
+    "Nuoro": [
+      9.33,
+      40.32
+    ],
+    "Cagliari": [
+      9.125,
+      39.221
+    ],
+    "La Maddalena": [
+      9.413,
+      41.219
+    ],
+    "Asinara": [
+      8.29,
+      41.07
+    ],
+    "San Pietro": [
+      8.25,
+      39.143
+    ],
+    "Sant’Antioco": [
+      8.43,
+      39.06
+    ]
+  },
+  "islandValidationAnchors": {
+    "Nuoro": [
+      9.33,
+      40.32
+    ],
+    "Cagliari": [
+      9.125,
+      39.221
+    ],
+    "La Maddalena": [
+      9.413,
+      41.219
+    ],
+    "Asinara": [
+      8.29,
+      41.07
+    ],
+    "San Pietro": [
+      8.25,
+      39.143
+    ],
+    "Sant’Antioco": [
+      8.43,
+      39.06
+    ]
+  },
+  "islandValidationZooms": [
+    10,
+    11,
+    12
+  ],
+  "overviewLandAnchors": {
+    "Nuoro": [
+      9.33,
+      40.32
+    ]
+  },
+  "labelGlyphs": "ÀàÈèÉéÌìÒòÙù"
+}

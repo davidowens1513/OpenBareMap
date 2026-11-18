@@ -47,7 +47,7 @@ def archive_tree(payload,target):
         if archive.testzip():raise ValueError('Archive CRC failure')
 
 def build_one(region,output,platforms=('ios','android')):
-    p=profile(region);records={};title={'ireland':'Ireland','england-wales':'England-Wales','scotland':'Scotland','sierra-nevada':'Sierra-Nevada','pyrenees':'Pyrenees','dolomites':'Dolomites','faroe-islands':'Faroe-Islands','norway-south':'Norway-South','norway-central':'Norway-Central','norway-north':'Norway-North'}[region]
+    p=profile(region);records={};title={'ireland':'Ireland','england-wales':'England-Wales','scotland':'Scotland','sierra-nevada':'Sierra-Nevada','pyrenees':'Pyrenees','dolomites':'Dolomites','faroe-islands':'Faroe-Islands','norway-south':'Norway-South','norway-central':'Norway-Central','norway-north':'Norway-North'}.get(region,p['label'].replace(' ','-'))
     directory=output/region;directory.mkdir(parents=True,exist_ok=True)
     if (directory/'manifest.json').exists():records=json.loads((directory/'manifest.json').read_text())
     for platform,folder in [('ios','OpenBareMap.bundle'),('android','OpenBareMap')]:

@@ -1,0 +1,34 @@
+{
+  "builderSHA256": "a2d345bb6682c31f1688a00fd483998eb467b93f3e591ffea94eac8fcaf26354",
+  "contoursSourceSHA256": "8fb33abd2fd1fca76a2d0b2a365f6ae7328ce8b888865edaa7bb60be31f51d27",
+  "counts": {
+    "contours": 42822,
+    "grid": {
+      "grid_10km": 77,
+      "grid_1km": 752
+    },
+    "landcover": {
+      "empty_source_areas": [],
+      "features": 42443,
+      "retained": 5572,
+      "smoothed": 36871
+    }
+  },
+  "osm": {
+    "bytes": 132117042,
+    "operation": "Complete-feature bbox extraction with nested relation references",
+    "path": "data/regions/sicily/isole-261117.osm.clipped.osm.pbf",
+    "replicationTimestamp": "2026-11-17T21:24:30Z",
+    "sha256": "0b91855f7b45705b82b62f650cf7e099a284caf01162ca49041bf0c8ef3ae27e",
+    "snapshot_date": "2026-11-17",
+    "url": "https://download.geofabrik.de/europe/italy/isole-261117.osm.pbf"
+  },
+  "outputs": {
+    "contours.geojson": "ce36cf23ea10bcbff0375d44fd2fad6843f429bb1d80d245c44576a72bb99577",
+    "grid_10km.geojson": "39f1a509d86dd4ce0fd67ddc8bce8545a516d103d876fd5f43a828932ac5f8fb",
+    "grid_1km.geojson": "76caf94292a80621996891d436f565ce5c1f265763fc736f641e7dd458e5dea9",
+    "landcover.geojson": "91f50d03a5bcc8161f33482371d85f6830c9e5f2143d016f2d1e1fddd4f87202"
+  },
+  "region": "sicily",
+  "smootherSHA256": "7581d024dc1c1bec931642c7201db149bf64a64c814c451fa8bf37a0881ea6c9"
+}

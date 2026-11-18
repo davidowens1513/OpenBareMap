@@ -1,0 +1,63 @@
+{
+  "features": [
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              9.62,
+              42.93961785807152
+            ],
+            [
+              9.62,
+              41.69102982535512
+            ],
+            [
+              9.607351,
+              41.58657
+            ],
+            [
+              9.254565,
+              41.31103
+            ],
+            [
+              8.62819,
+              41.45808
+            ],
+            [
+              8.5,
+              41.8723217291852
+            ],
+            [
+              8.5,
+              42.56507984199878
+            ],
+            [
+              9.050408,
+              42.88015
+            ],
+            [
+              9.161525103203813,
+              43.06
+            ],
+            [
+              9.52409421587683,
+              43.06
+            ],
+            [
+              9.62,
+              42.93961785807152
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "properties": {
+        "purpose": "Limit opaque native background and land-cover polygons; retain complete accepted OSM and terrain inputs",
+        "region": "corsica"
+      },
+      "type": "Feature"
+    }
+  ],
+  "type": "FeatureCollection"
+}

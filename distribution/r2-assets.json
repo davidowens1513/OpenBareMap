@@ -1,185 +1,257 @@
 {
-  "purpose": "Published R2 assets excluded from Git LFS; restore locally using scripts/restore_r2_assets.py. Historical LFS objects have NOT been purged.",
   "assets": [
     {
-      "path": "releases/dolomites/2.0.0/app-bundles-v1/android/OpenBareMap-Dolomites-Android-Bundle.zip",
-      "url": "https://downloads.appsbyonzy.dev/OpenBareMap/dolomites/2.0.0/app-bundles-v1/android/OpenBareMap-Dolomites-Android-Bundle.zip",
-      "bytes": 855063423,
-      "sha256": "d1945d53ad3bad251132d3d6d6d660c1c28e6e965b6eab3804652e66db506b67"
-    },
-    {
-      "path": "releases/dolomites/2.0.0/app-bundles-v1/ios/OpenBareMap-Dolomites-iOS-Bundle.zip",
-      "url": "https://downloads.appsbyonzy.dev/OpenBareMap/dolomites/2.0.0/app-bundles-v1/ios/OpenBareMap-Dolomites-iOS-Bundle.zip",
-      "bytes": 855062884,
-      "sha256": "343ffaf2fd9d3ef98a540abd8f2014621d0bb04e32af3d1c84b64cabd704a662"
-    },
-    {
-      "path": "releases/faroe-islands/2.0.0/app-bundles-v1/android/OpenBareMap-Faroe-Islands-Android-Bundle.zip",
-      "url": "https://downloads.appsbyonzy.dev/OpenBareMap/faroe-islands/2.0.0/app-bundles-v1/android/OpenBareMap-Faroe-Islands-Android-Bundle.zip",
-      "bytes": 41568961,
-      "sha256": "3e8e2cf650aa29494ccdad954bb9dc3eeff419443fd277e36a47a3630a637ae6"
-    },
-    {
-      "path": "releases/faroe-islands/2.0.0/app-bundles-v1/ios/OpenBareMap-Faroe-Islands-iOS-Bundle.zip",
-      "url": "https://downloads.appsbyonzy.dev/OpenBareMap/faroe-islands/2.0.0/app-bundles-v1/ios/OpenBareMap-Faroe-Islands-iOS-Bundle.zip",
-      "bytes": 41568703,
-      "sha256": "eee4c2be42354c8b92a460d270d3e5dd2986e77cd1c9ae4430106f9eba11cff6"
-    },
-    {
-      "path": "releases/pyrenees/2.0.0/app-bundles-v1/android/OpenBareMap-Pyrenees-Android-Bundle.zip",
-      "url": "https://downloads.appsbyonzy.dev/OpenBareMap/pyrenees/2.0.0/app-bundles-v1/android/OpenBareMap-Pyrenees-Android-Bundle.zip",
-      "bytes": 1736453122,
-      "sha256": "bfb286e39bb543f3daa9dc2dc0d2325aed2667a91187cb6e035ea4f2771e1c62"
-    },
-    {
-      "path": "releases/pyrenees/2.0.0/app-bundles-v1/ios/OpenBareMap-Pyrenees-iOS-Bundle.zip",
-      "url": "https://downloads.appsbyonzy.dev/OpenBareMap/pyrenees/2.0.0/app-bundles-v1/ios/OpenBareMap-Pyrenees-iOS-Bundle.zip",
-      "bytes": 1736452579,
-      "sha256": "58d8d6a12604a133b361479405b113eeaac26e9e8bcdade848c70ce9537ad999"
-    },
-    {
-      "path": "regions/dolomites/garmin/dist/OpenBareMap-Dolomites.img",
-      "url": "https://downloads.appsbyonzy.dev/Garmin/OpenBareMap-Dolomites.img?v=2.0.1-trail-detail-r1",
-      "bytes": 176525312,
-      "sha256": "ec961d1092e0fcb08b5b99eb6345bfefd8cc6f30cd4fe4c143a6c1fee9e67f97"
-    },
-    {
-      "path": "regions/england-wales/garmin/dist/OpenBareMap-England-Wales.img",
-      "url": "https://downloads.appsbyonzy.dev/Garmin/OpenBareMap-England-Wales.img?v=2.0.1-trail-detail-r1",
-      "bytes": 911212544,
-      "sha256": "477d275202aa4d8031199c98c375c93d970c9e0992fb86aabdd2f214d6ced264"
-    },
-    {
-      "path": "regions/faroe-islands/garmin/dist/OpenBareMap-Faroe-Islands.img",
-      "url": "https://downloads.appsbyonzy.dev/Garmin/OpenBareMap-Faroe-Islands.img?v=2.0.1-trail-detail-r1",
-      "bytes": 7987200,
-      "sha256": "33d63a6050f29fdf72187ad69af3e4396536a6c88aa723da15800065a68bf216"
-    },
-    {
-      "path": "garmin/dist/OpenBareMap-Ireland.img",
-      "url": "https://downloads.appsbyonzy.dev/Garmin/OpenBareMap-Ireland.img?v=2.0.1-trail-detail-r1",
       "bytes": 314253312,
-      "sha256": "e78f3b86298c4a141d3b4b95fd1eb98c71a276d0bbc92a7448eb5299db3ea0ef"
+      "path": "garmin/dist/OpenBareMap-Ireland.img",
+      "sha256": "e78f3b86298c4a141d3b4b95fd1eb98c71a276d0bbc92a7448eb5299db3ea0ef",
+      "url": "https://downloads.appsbyonzy.dev/Garmin/OpenBareMap-Ireland.img?v=2.0.1-trail-detail-r1"
     },
     {
-      "path": "regions/pyrenees/garmin/dist/OpenBareMap-Pyrenees.img",
-      "url": "https://downloads.appsbyonzy.dev/Garmin/OpenBareMap-Pyrenees.img?v=2.0.1-trail-detail-r1",
-      "bytes": 422412288,
-      "sha256": "04527bd857abd639e6805817635cc9dfc62eade3b4659112418ea9916936825b"
+      "bytes": 23934976,
+      "path": "regions/balearic-islands/garmin/dist/OpenBareMap-Balearic-Islands.img",
+      "sha256": "3022969fca63b99153e242a419fde7968652b647ba5a06de2959f91b52294f51",
+      "url": "https://downloads.appsbyonzy.dev/Garmin/OpenBareMap-Balearic-Islands.img"
     },
     {
-      "path": "regions/scotland/garmin/dist/OpenBareMap-Scotland.img",
-      "url": "https://downloads.appsbyonzy.dev/Garmin/OpenBareMap-Scotland.img?v=2.0.1-trail-detail-r1",
-      "bytes": 358293504,
-      "sha256": "dbedf150ec0771ebf20eae18a361445785f0303ff7aa0fa43c7e05109046a7f7"
+      "bytes": 38172672,
+      "path": "regions/corsica/garmin/dist/OpenBareMap-Corsica.img",
+      "sha256": "f14027225f0ecb94eda5036ea4eb2d63b0a97eb79b6949c1132194881f60e0d3",
+      "url": "https://downloads.appsbyonzy.dev/Garmin/OpenBareMap-Corsica.img"
     },
     {
-      "path": "regions/sierra-nevada/garmin/dist/OpenBareMap-Sierra-Nevada.img",
-      "url": "https://downloads.appsbyonzy.dev/Garmin/OpenBareMap-Sierra-Nevada.img?v=2.0.1-trail-detail-r1",
-      "bytes": 33787904,
-      "sha256": "dd506bb8377886fc7e9bc0c475aed6b391fadc789bff60040bf33de2c672c163"
+      "bytes": 176525312,
+      "path": "regions/dolomites/garmin/dist/OpenBareMap-Dolomites.img",
+      "sha256": "ec961d1092e0fcb08b5b99eb6345bfefd8cc6f30cd4fe4c143a6c1fee9e67f97",
+      "url": "https://downloads.appsbyonzy.dev/Garmin/OpenBareMap-Dolomites.img?v=2.0.1-trail-detail-r1"
     },
     {
-      "path": "work/isle-of-man/kits/england-wales/android/OpenBareMap-England-Wales-Android-Bundle.zip",
-      "url": "https://downloads.appsbyonzy.dev/OpenBareMap/england-wales/2.0.1/app-bundles-v1/android/OpenBareMap-England-Wales-Android-Bundle.zip",
-      "bytes": 3483104475,
-      "sha256": "4bfbe3535754100fd2b449a6bad978e224f6597a6557bcf71f78ccc399ca450e"
+      "bytes": 911212544,
+      "path": "regions/england-wales/garmin/dist/OpenBareMap-England-Wales.img",
+      "sha256": "477d275202aa4d8031199c98c375c93d970c9e0992fb86aabdd2f214d6ced264",
+      "url": "https://downloads.appsbyonzy.dev/Garmin/OpenBareMap-England-Wales.img?v=2.0.1-trail-detail-r1"
     },
     {
-      "path": "work/isle-of-man/kits/england-wales/ios/OpenBareMap-England-Wales-iOS-Bundle.zip",
-      "url": "https://downloads.appsbyonzy.dev/OpenBareMap/england-wales/2.0.1/app-bundles-v1/ios/OpenBareMap-England-Wales-iOS-Bundle.zip",
-      "bytes": 3483103819,
-      "sha256": "985de4d38fc60efec32e834dc9594d9bd160e6c43750f78cf3ace7c542943ba6"
+      "bytes": 7987200,
+      "path": "regions/faroe-islands/garmin/dist/OpenBareMap-Faroe-Islands.img",
+      "sha256": "33d63a6050f29fdf72187ad69af3e4396536a6c88aa723da15800065a68bf216",
+      "url": "https://downloads.appsbyonzy.dev/Garmin/OpenBareMap-Faroe-Islands.img?v=2.0.1-trail-detail-r1"
     },
     {
-      "path": "work/app-bundles-v1/ireland/android/OpenBareMap-Ireland-Android-Bundle.zip",
-      "url": "https://downloads.appsbyonzy.dev/OpenBareMap/ireland/2.0.0/app-bundles-v1/android/OpenBareMap-Ireland-Android-Bundle.zip",
-      "bytes": 1008370658,
-      "sha256": "e5c347ad9ac2874c62a680ccb693a7919791241c547448133486de555904de82"
-    },
-    {
-      "path": "work/app-bundles-v1/ireland/ios/OpenBareMap-Ireland-iOS-Bundle.zip",
-      "url": "https://downloads.appsbyonzy.dev/OpenBareMap/ireland/2.0.0/app-bundles-v1/ios/OpenBareMap-Ireland-iOS-Bundle.zip",
-      "bytes": 1008378490,
-      "sha256": "cc03cee98aafa76a32a9f9a847790ec9c1a6e594461212ef9575a97c134623b7"
-    },
-    {
-      "path": "releases/norway-central/2.0.0/app-bundles-v1/android/OpenBareMap-Norway-Central-Android-Bundle.zip",
-      "url": "https://downloads.appsbyonzy.dev/OpenBareMap/norway-central/2.0.0/app-bundles-v1/android/OpenBareMap-Norway-Central-Android-Bundle.zip",
-      "bytes": 1987872026,
-      "sha256": "e9cb4a0d0286346105438dc4ae9e842d84e74df86b48e3c12771262df08932d3"
-    },
-    {
-      "path": "releases/norway-central/2.0.0/app-bundles-v1/ios/OpenBareMap-Norway-Central-iOS-Bundle.zip",
-      "url": "https://downloads.appsbyonzy.dev/OpenBareMap/norway-central/2.0.0/app-bundles-v1/ios/OpenBareMap-Norway-Central-iOS-Bundle.zip",
-      "bytes": 1987871773,
-      "sha256": "1f44d514ccc18ebd4ac6a6e8a46a7bb3ee13b6c18901cfd632d2803d397440a8"
-    },
-    {
-      "path": "releases/norway-north/2.0.0/app-bundles-v1/android/OpenBareMap-Norway-North-Android-Bundle.zip",
-      "url": "https://downloads.appsbyonzy.dev/OpenBareMap/norway-north/2.0.0/app-bundles-v1/android/OpenBareMap-Norway-North-Android-Bundle.zip",
-      "bytes": 2603150735,
-      "sha256": "877fe66f5e1664c50d2b6f6f2fb7c1905abf29a7bfa26887b0aa21691d76f596"
-    },
-    {
-      "path": "releases/norway-north/2.0.0/app-bundles-v1/ios/OpenBareMap-Norway-North-iOS-Bundle.zip",
-      "url": "https://downloads.appsbyonzy.dev/OpenBareMap/norway-north/2.0.0/app-bundles-v1/ios/OpenBareMap-Norway-North-iOS-Bundle.zip",
-      "bytes": 2603150354,
-      "sha256": "fc7c05d7d9816a101c3f18ac5c535c76c5f3d7e23b462c1698e5a82f0eb98fa5"
-    },
-    {
-      "path": "releases/norway-south/2.0.0/app-bundles-v1/android/OpenBareMap-Norway-South-Android-Bundle.zip",
-      "url": "https://downloads.appsbyonzy.dev/OpenBareMap/norway-south/2.0.0/app-bundles-v1/android/OpenBareMap-Norway-South-Android-Bundle.zip",
-      "bytes": 3942754272,
-      "sha256": "25f5227f88969e79758f504a9c92b4b0147c7324e4a26149533185ac06242ae0"
-    },
-    {
-      "path": "releases/norway-south/2.0.0/app-bundles-v1/ios/OpenBareMap-Norway-South-iOS-Bundle.zip",
-      "url": "https://downloads.appsbyonzy.dev/OpenBareMap/norway-south/2.0.0/app-bundles-v1/ios/OpenBareMap-Norway-South-iOS-Bundle.zip",
-      "bytes": 3942753891,
-      "sha256": "696abbaa55ee6a14e341a99305205d828b91d9ea9525bb9f22169caa2cb1a1fc"
-    },
-    {
-      "path": "work/app-bundles-v1/scotland/android/OpenBareMap-Scotland-Android-Bundle.zip",
-      "url": "https://downloads.appsbyonzy.dev/OpenBareMap/scotland/2.0.0/app-bundles-v1/android/OpenBareMap-Scotland-Android-Bundle.zip",
-      "bytes": 1340627060,
-      "sha256": "a91f322e3b917e064aae4ca8c9511c6ad8595673af35bceabc83d33f92e44dd2"
-    },
-    {
-      "path": "work/app-bundles-v1/scotland/ios/OpenBareMap-Scotland-iOS-Bundle.zip",
-      "url": "https://downloads.appsbyonzy.dev/OpenBareMap/scotland/2.0.0/app-bundles-v1/ios/OpenBareMap-Scotland-iOS-Bundle.zip",
-      "bytes": 1340626533,
-      "sha256": "d8ec7868706fee8f71f2b2c4d2fbb0d841e99f6fb7bc550efb5f245f87ac813d"
-    },
-    {
-      "path": "work/app-bundles-v1/sierra-nevada/android/OpenBareMap-Sierra-Nevada-Android-Bundle.zip",
-      "url": "https://downloads.appsbyonzy.dev/OpenBareMap/sierra-nevada/2.0.0/app-bundles-v1/android/OpenBareMap-Sierra-Nevada-Android-Bundle.zip",
-      "bytes": 167562254,
-      "sha256": "be97c40ca9e15c5e73bb9a4d0e14d277adaf6ac25696758edf35baaa125719f2"
-    },
-    {
-      "path": "work/app-bundles-v1/sierra-nevada/ios/OpenBareMap-Sierra-Nevada-iOS-Bundle.zip",
-      "url": "https://downloads.appsbyonzy.dev/OpenBareMap/sierra-nevada/2.0.0/app-bundles-v1/ios/OpenBareMap-Sierra-Nevada-iOS-Bundle.zip",
-      "bytes": 167563001,
-      "sha256": "19da55ab5393e48904b348c5397fe9ed47ff2d0b75899ef8997bb6ba794fb245"
-    },
-    {
-      "path": "regions/norway-south/garmin/dist/OpenBareMap-Norway-South.img",
-      "url": "https://downloads.appsbyonzy.dev/Garmin/OpenBareMap-Norway-South.img",
-      "bytes": 1001701376,
-      "sha256": "06d7e1ee91a13b2c084bac8068571c609a2cd886ad8633bc856c127612494697"
-    },
-    {
-      "path": "regions/norway-central/garmin/dist/OpenBareMap-Norway-Central.img",
-      "url": "https://downloads.appsbyonzy.dev/Garmin/OpenBareMap-Norway-Central.img",
       "bytes": 518512640,
-      "sha256": "fa1fdfcb0bc7c6e1e15918092fcab99e657e3f7f3fc598e127d730178b7c5719"
+      "path": "regions/norway-central/garmin/dist/OpenBareMap-Norway-Central.img",
+      "sha256": "fa1fdfcb0bc7c6e1e15918092fcab99e657e3f7f3fc598e127d730178b7c5719",
+      "url": "https://downloads.appsbyonzy.dev/Garmin/OpenBareMap-Norway-Central.img"
     },
     {
-      "path": "regions/norway-north/garmin/dist/OpenBareMap-Norway-North.img",
-      "url": "https://downloads.appsbyonzy.dev/Garmin/OpenBareMap-Norway-North.img",
       "bytes": 632602624,
-      "sha256": "8fedda00249fbc78e56f8e24bd429e91b2a094ca3cb21280154223577fd4138c"
+      "path": "regions/norway-north/garmin/dist/OpenBareMap-Norway-North.img",
+      "sha256": "8fedda00249fbc78e56f8e24bd429e91b2a094ca3cb21280154223577fd4138c",
+      "url": "https://downloads.appsbyonzy.dev/Garmin/OpenBareMap-Norway-North.img"
+    },
+    {
+      "bytes": 1001701376,
+      "path": "regions/norway-south/garmin/dist/OpenBareMap-Norway-South.img",
+      "sha256": "06d7e1ee91a13b2c084bac8068571c609a2cd886ad8633bc856c127612494697",
+      "url": "https://downloads.appsbyonzy.dev/Garmin/OpenBareMap-Norway-South.img"
+    },
+    {
+      "bytes": 422412288,
+      "path": "regions/pyrenees/garmin/dist/OpenBareMap-Pyrenees.img",
+      "sha256": "04527bd857abd639e6805817635cc9dfc62eade3b4659112418ea9916936825b",
+      "url": "https://downloads.appsbyonzy.dev/Garmin/OpenBareMap-Pyrenees.img?v=2.0.1-trail-detail-r1"
+    },
+    {
+      "bytes": 79769600,
+      "path": "regions/sardinia/garmin/dist/OpenBareMap-Sardinia.img",
+      "sha256": "ef158cbf579def3deaa51e02b7998adf4f23bd01b3c810c54edb0928e8ee63bd",
+      "url": "https://downloads.appsbyonzy.dev/Garmin/OpenBareMap-Sardinia.img"
+    },
+    {
+      "bytes": 358293504,
+      "path": "regions/scotland/garmin/dist/OpenBareMap-Scotland.img",
+      "sha256": "dbedf150ec0771ebf20eae18a361445785f0303ff7aa0fa43c7e05109046a7f7",
+      "url": "https://downloads.appsbyonzy.dev/Garmin/OpenBareMap-Scotland.img?v=2.0.1-trail-detail-r1"
+    },
+    {
+      "bytes": 91090944,
+      "path": "regions/sicily/garmin/dist/OpenBareMap-Sicily.img",
+      "sha256": "b268cfa4d08fed38faa54fdf889d502b2cc264f4e38ba74bed12381513430e2a",
+      "url": "https://downloads.appsbyonzy.dev/Garmin/OpenBareMap-Sicily.img"
+    },
+    {
+      "bytes": 33787904,
+      "path": "regions/sierra-nevada/garmin/dist/OpenBareMap-Sierra-Nevada.img",
+      "sha256": "dd506bb8377886fc7e9bc0c475aed6b391fadc789bff60040bf33de2c672c163",
+      "url": "https://downloads.appsbyonzy.dev/Garmin/OpenBareMap-Sierra-Nevada.img?v=2.0.1-trail-detail-r1"
+    },
+    {
+      "bytes": 101855589,
+      "path": "releases/balearic-islands/2.0.0/app-bundles-v1/android/OpenBareMap-Balearic-Islands-Android-Bundle.zip",
+      "sha256": "4e126f59e9c705eeb1cc1025cd0f3fa72b84eb78f79fe8ec950cb6f9cd81d13e",
+      "url": "https://downloads.appsbyonzy.dev/OpenBareMap/balearic-islands/2.0.0/app-bundles-v1/android/OpenBareMap-Balearic-Islands-Android-Bundle.zip"
+    },
+    {
+      "bytes": 101855009,
+      "path": "releases/balearic-islands/2.0.0/app-bundles-v1/ios/OpenBareMap-Balearic-Islands-iOS-Bundle.zip",
+      "sha256": "807f5d6bb00b0ab528cf702fabafa33761173d66b26e0be56a940dcebe7b4d18",
+      "url": "https://downloads.appsbyonzy.dev/OpenBareMap/balearic-islands/2.0.0/app-bundles-v1/ios/OpenBareMap-Balearic-Islands-iOS-Bundle.zip"
+    },
+    {
+      "bytes": 160981650,
+      "path": "releases/corsica/2.0.0/app-bundles-v1/android/OpenBareMap-Corsica-Android-Bundle.zip",
+      "sha256": "faecb354e27f373df46c81f180446ce08b06238df47e84f57f4c7e661aed7fb5",
+      "url": "https://downloads.appsbyonzy.dev/OpenBareMap/corsica/2.0.0/app-bundles-v1/android/OpenBareMap-Corsica-Android-Bundle.zip"
+    },
+    {
+      "bytes": 160981056,
+      "path": "releases/corsica/2.0.0/app-bundles-v1/ios/OpenBareMap-Corsica-iOS-Bundle.zip",
+      "sha256": "494394a3166205674ae0d2a4e2d080e2e6ed9a1a43526882ca89255d9e824d81",
+      "url": "https://downloads.appsbyonzy.dev/OpenBareMap/corsica/2.0.0/app-bundles-v1/ios/OpenBareMap-Corsica-iOS-Bundle.zip"
+    },
+    {
+      "bytes": 855063423,
+      "path": "releases/dolomites/2.0.0/app-bundles-v1/android/OpenBareMap-Dolomites-Android-Bundle.zip",
+      "sha256": "d1945d53ad3bad251132d3d6d6d660c1c28e6e965b6eab3804652e66db506b67",
+      "url": "https://downloads.appsbyonzy.dev/OpenBareMap/dolomites/2.0.0/app-bundles-v1/android/OpenBareMap-Dolomites-Android-Bundle.zip"
+    },
+    {
+      "bytes": 855062884,
+      "path": "releases/dolomites/2.0.0/app-bundles-v1/ios/OpenBareMap-Dolomites-iOS-Bundle.zip",
+      "sha256": "343ffaf2fd9d3ef98a540abd8f2014621d0bb04e32af3d1c84b64cabd704a662",
+      "url": "https://downloads.appsbyonzy.dev/OpenBareMap/dolomites/2.0.0/app-bundles-v1/ios/OpenBareMap-Dolomites-iOS-Bundle.zip"
+    },
+    {
+      "bytes": 41568961,
+      "path": "releases/faroe-islands/2.0.0/app-bundles-v1/android/OpenBareMap-Faroe-Islands-Android-Bundle.zip",
+      "sha256": "3e8e2cf650aa29494ccdad954bb9dc3eeff419443fd277e36a47a3630a637ae6",
+      "url": "https://downloads.appsbyonzy.dev/OpenBareMap/faroe-islands/2.0.0/app-bundles-v1/android/OpenBareMap-Faroe-Islands-Android-Bundle.zip"
+    },
+    {
+      "bytes": 41568703,
+      "path": "releases/faroe-islands/2.0.0/app-bundles-v1/ios/OpenBareMap-Faroe-Islands-iOS-Bundle.zip",
+      "sha256": "eee4c2be42354c8b92a460d270d3e5dd2986e77cd1c9ae4430106f9eba11cff6",
+      "url": "https://downloads.appsbyonzy.dev/OpenBareMap/faroe-islands/2.0.0/app-bundles-v1/ios/OpenBareMap-Faroe-Islands-iOS-Bundle.zip"
+    },
+    {
+      "bytes": 1987872026,
+      "path": "releases/norway-central/2.0.0/app-bundles-v1/android/OpenBareMap-Norway-Central-Android-Bundle.zip",
+      "sha256": "e9cb4a0d0286346105438dc4ae9e842d84e74df86b48e3c12771262df08932d3",
+      "url": "https://downloads.appsbyonzy.dev/OpenBareMap/norway-central/2.0.0/app-bundles-v1/android/OpenBareMap-Norway-Central-Android-Bundle.zip"
+    },
+    {
+      "bytes": 1987871773,
+      "path": "releases/norway-central/2.0.0/app-bundles-v1/ios/OpenBareMap-Norway-Central-iOS-Bundle.zip",
+      "sha256": "1f44d514ccc18ebd4ac6a6e8a46a7bb3ee13b6c18901cfd632d2803d397440a8",
+      "url": "https://downloads.appsbyonzy.dev/OpenBareMap/norway-central/2.0.0/app-bundles-v1/ios/OpenBareMap-Norway-Central-iOS-Bundle.zip"
+    },
+    {
+      "bytes": 2603150735,
+      "path": "releases/norway-north/2.0.0/app-bundles-v1/android/OpenBareMap-Norway-North-Android-Bundle.zip",
+      "sha256": "877fe66f5e1664c50d2b6f6f2fb7c1905abf29a7bfa26887b0aa21691d76f596",
+      "url": "https://downloads.appsbyonzy.dev/OpenBareMap/norway-north/2.0.0/app-bundles-v1/android/OpenBareMap-Norway-North-Android-Bundle.zip"
+    },
+    {
+      "bytes": 2603150354,
+      "path": "releases/norway-north/2.0.0/app-bundles-v1/ios/OpenBareMap-Norway-North-iOS-Bundle.zip",
+      "sha256": "fc7c05d7d9816a101c3f18ac5c535c76c5f3d7e23b462c1698e5a82f0eb98fa5",
+      "url": "https://downloads.appsbyonzy.dev/OpenBareMap/norway-north/2.0.0/app-bundles-v1/ios/OpenBareMap-Norway-North-iOS-Bundle.zip"
+    },
+    {
+      "bytes": 3942754272,
+      "path": "releases/norway-south/2.0.0/app-bundles-v1/android/OpenBareMap-Norway-South-Android-Bundle.zip",
+      "sha256": "25f5227f88969e79758f504a9c92b4b0147c7324e4a26149533185ac06242ae0",
+      "url": "https://downloads.appsbyonzy.dev/OpenBareMap/norway-south/2.0.0/app-bundles-v1/android/OpenBareMap-Norway-South-Android-Bundle.zip"
+    },
+    {
+      "bytes": 3942753891,
+      "path": "releases/norway-south/2.0.0/app-bundles-v1/ios/OpenBareMap-Norway-South-iOS-Bundle.zip",
+      "sha256": "696abbaa55ee6a14e341a99305205d828b91d9ea9525bb9f22169caa2cb1a1fc",
+      "url": "https://downloads.appsbyonzy.dev/OpenBareMap/norway-south/2.0.0/app-bundles-v1/ios/OpenBareMap-Norway-South-iOS-Bundle.zip"
+    },
+    {
+      "bytes": 1736453122,
+      "path": "releases/pyrenees/2.0.0/app-bundles-v1/android/OpenBareMap-Pyrenees-Android-Bundle.zip",
+      "sha256": "bfb286e39bb543f3daa9dc2dc0d2325aed2667a91187cb6e035ea4f2771e1c62",
+      "url": "https://downloads.appsbyonzy.dev/OpenBareMap/pyrenees/2.0.0/app-bundles-v1/android/OpenBareMap-Pyrenees-Android-Bundle.zip"
+    },
+    {
+      "bytes": 1736452579,
+      "path": "releases/pyrenees/2.0.0/app-bundles-v1/ios/OpenBareMap-Pyrenees-iOS-Bundle.zip",
+      "sha256": "58d8d6a12604a133b361479405b113eeaac26e9e8bcdade848c70ce9537ad999",
+      "url": "https://downloads.appsbyonzy.dev/OpenBareMap/pyrenees/2.0.0/app-bundles-v1/ios/OpenBareMap-Pyrenees-iOS-Bundle.zip"
+    },
+    {
+      "bytes": 309150408,
+      "path": "releases/sardinia/2.0.0/app-bundles-v1/android/OpenBareMap-Sardinia-Android-Bundle.zip",
+      "sha256": "a727fa7af0e5386287c144b8a7c803ed5eeee8a56dfe3d9b0ceef0b69519a830",
+      "url": "https://downloads.appsbyonzy.dev/OpenBareMap/sardinia/2.0.0/app-bundles-v1/android/OpenBareMap-Sardinia-Android-Bundle.zip"
+    },
+    {
+      "bytes": 309149816,
+      "path": "releases/sardinia/2.0.0/app-bundles-v1/ios/OpenBareMap-Sardinia-iOS-Bundle.zip",
+      "sha256": "31b4e3f8fa2f45f4bb99ca22a86a8b43efa7aef5752139c48fafdbf6c6978c7c",
+      "url": "https://downloads.appsbyonzy.dev/OpenBareMap/sardinia/2.0.0/app-bundles-v1/ios/OpenBareMap-Sardinia-iOS-Bundle.zip"
+    },
+    {
+      "bytes": 374071142,
+      "path": "releases/sicily/2.0.0/app-bundles-v1/android/OpenBareMap-Sicily-Android-Bundle.zip",
+      "sha256": "d9c116dabdaa08f75071895f6ca20d40152a719fbf5989c578508df17d710a27",
+      "url": "https://downloads.appsbyonzy.dev/OpenBareMap/sicily/2.0.0/app-bundles-v1/android/OpenBareMap-Sicily-Android-Bundle.zip"
+    },
+    {
+      "bytes": 374070548,
+      "path": "releases/sicily/2.0.0/app-bundles-v1/ios/OpenBareMap-Sicily-iOS-Bundle.zip",
+      "sha256": "75f003dea7891d58697ea48291e4927d3e46dd3e99e62b59fe01aea194abf7ef",
+      "url": "https://downloads.appsbyonzy.dev/OpenBareMap/sicily/2.0.0/app-bundles-v1/ios/OpenBareMap-Sicily-iOS-Bundle.zip"
+    },
+    {
+      "bytes": 1008370658,
+      "path": "work/app-bundles-v1/ireland/android/OpenBareMap-Ireland-Android-Bundle.zip",
+      "sha256": "e5c347ad9ac2874c62a680ccb693a7919791241c547448133486de555904de82",
+      "url": "https://downloads.appsbyonzy.dev/OpenBareMap/ireland/2.0.0/app-bundles-v1/android/OpenBareMap-Ireland-Android-Bundle.zip"
+    },
+    {
+      "bytes": 1008378490,
+      "path": "work/app-bundles-v1/ireland/ios/OpenBareMap-Ireland-iOS-Bundle.zip",
+      "sha256": "cc03cee98aafa76a32a9f9a847790ec9c1a6e594461212ef9575a97c134623b7",
+      "url": "https://downloads.appsbyonzy.dev/OpenBareMap/ireland/2.0.0/app-bundles-v1/ios/OpenBareMap-Ireland-iOS-Bundle.zip"
+    },
+    {
+      "bytes": 1340627060,
+      "path": "work/app-bundles-v1/scotland/android/OpenBareMap-Scotland-Android-Bundle.zip",
+      "sha256": "a91f322e3b917e064aae4ca8c9511c6ad8595673af35bceabc83d33f92e44dd2",
+      "url": "https://downloads.appsbyonzy.dev/OpenBareMap/scotland/2.0.0/app-bundles-v1/android/OpenBareMap-Scotland-Android-Bundle.zip"
+    },
+    {
+      "bytes": 1340626533,
+      "path": "work/app-bundles-v1/scotland/ios/OpenBareMap-Scotland-iOS-Bundle.zip",
+      "sha256": "d8ec7868706fee8f71f2b2c4d2fbb0d841e99f6fb7bc550efb5f245f87ac813d",
+      "url": "https://downloads.appsbyonzy.dev/OpenBareMap/scotland/2.0.0/app-bundles-v1/ios/OpenBareMap-Scotland-iOS-Bundle.zip"
+    },
+    {
+      "bytes": 167562254,
+      "path": "work/app-bundles-v1/sierra-nevada/android/OpenBareMap-Sierra-Nevada-Android-Bundle.zip",
+      "sha256": "be97c40ca9e15c5e73bb9a4d0e14d277adaf6ac25696758edf35baaa125719f2",
+      "url": "https://downloads.appsbyonzy.dev/OpenBareMap/sierra-nevada/2.0.0/app-bundles-v1/android/OpenBareMap-Sierra-Nevada-Android-Bundle.zip"
+    },
+    {
+      "bytes": 167563001,
+      "path": "work/app-bundles-v1/sierra-nevada/ios/OpenBareMap-Sierra-Nevada-iOS-Bundle.zip",
+      "sha256": "19da55ab5393e48904b348c5397fe9ed47ff2d0b75899ef8997bb6ba794fb245",
+      "url": "https://downloads.appsbyonzy.dev/OpenBareMap/sierra-nevada/2.0.0/app-bundles-v1/ios/OpenBareMap-Sierra-Nevada-iOS-Bundle.zip"
+    },
+    {
+      "bytes": 3483104475,
+      "path": "work/isle-of-man/kits/england-wales/android/OpenBareMap-England-Wales-Android-Bundle.zip",
+      "sha256": "4bfbe3535754100fd2b449a6bad978e224f6597a6557bcf71f78ccc399ca450e",
+      "url": "https://downloads.appsbyonzy.dev/OpenBareMap/england-wales/2.0.1/app-bundles-v1/android/OpenBareMap-England-Wales-Android-Bundle.zip"
+    },
+    {
+      "bytes": 3483103819,
+      "path": "work/isle-of-man/kits/england-wales/ios/OpenBareMap-England-Wales-iOS-Bundle.zip",
+      "sha256": "985de4d38fc60efec32e834dc9594d9bd160e6c43750f78cf3ace7c542943ba6",
+      "url": "https://downloads.appsbyonzy.dev/OpenBareMap/england-wales/2.0.1/app-bundles-v1/ios/OpenBareMap-England-Wales-iOS-Bundle.zip"
     }
-  ]
+  ],
+  "purpose": "Published R2 assets excluded from Git LFS; restore locally using scripts/restore_r2_assets.py. Historical LFS objects have NOT been purged."
 }

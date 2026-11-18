@@ -1,0 +1,106 @@
+{
+  "acceptance": "Automated checks only; see validation and visual-review records for actual reviewed scope.",
+  "coverage": "Corsica and its coastal islands, including the Lavezzi Islands.",
+  "datasets": {
+    "basemap": {
+      "bytes": 62029824,
+      "path": "releases/corsica/2.0.0/maps/basemap.mbtiles",
+      "sha256": "14bce6a0186572bd2db478b88262e29ee4c4a48c1a25daca474b70d12be0f6bf",
+      "validation": {
+        "empty_tile_count": 1996,
+        "logical_tiles_sha256": "7fd0715e8ee1084675077c00b6c7fe48bb0ccffae93cdf95d32a81bea852763a",
+        "tile_count": 6949
+      }
+    },
+    "grid": {
+      "bytes": 2617344,
+      "path": "releases/corsica/2.0.0/maps/grid.mbtiles",
+      "sha256": "122d4e16c4e0ea93b7d6e797f163318b2206f004a617859f60ed072dc75ee1a3",
+      "validation": {
+        "empty_tile_count": 0,
+        "logical_tiles_sha256": "611c91392387f1b5c6154b9081846c64b11a7ba7f77fb8f7881de97298ab8a0d",
+        "tile_count": 7616
+      }
+    },
+    "hillshade": {
+      "bytes": 13885440,
+      "path": "releases/corsica/2.0.0/maps/hillshade.mbtiles",
+      "sha256": "937119dbcaed0032080dab126d2cfe98fb77bdca0cc33cbbcb4db4e4748bdbae",
+      "validation": {
+        "empty_tile_count": 0,
+        "logical_tiles_sha256": "3595695cab07ba39bfb8bcf69fc7973eefd2b84b46d6d7ceb8bc93ec458ac382",
+        "tile_count": 408
+      }
+    },
+    "topography": {
+      "bytes": 77500416,
+      "path": "releases/corsica/2.0.0/maps/topography-context.mbtiles",
+      "sha256": "fbb563b9779c47a433ab7e56992ce84007a689b854696eea84045aea3337fa03",
+      "validation": {
+        "empty_tile_count": 28665,
+        "logical_tiles_sha256": "1cec2c34c336249b5dfe1237408eff0aba2e10eac63ac5d698d2579aabe66611",
+        "tile_count": 34383
+      }
+    }
+  },
+  "garmin": {
+    "bytes": 38172672,
+    "path": "regions/corsica/garmin/dist/OpenBareMap-Corsica.img",
+    "sha256": "f14027225f0ecb94eda5036ea4eb2d63b0a97eb79b6949c1132194881f60e0d3"
+  },
+  "geometryReport": {
+    "path": "releases/corsica/2.0.0/build-records/geometry-report.json",
+    "sha256": "7fe463cbfe49d150f47b8c009aec461bb99bb7347b72c037fcfeca0a52b9dd7d"
+  },
+  "hostAppsModified": false,
+  "mapVersion": "2.0.0",
+  "osm": {
+    "bytes": 34542450,
+    "operation": "Complete upstream extract; no merge or spatial filtering",
+    "path": "data/regions/corsica/corse-261117.osm.pbf",
+    "replicationTimestamp": "2026-11-17T21:24:30Z",
+    "sha256": "72b2cc67df038fcb40e3c27de48682f66c99302eea4f4ca0d12b18c4ad714b57",
+    "snapshot_date": "2026-11-17",
+    "url": "https://download.geofabrik.de/europe/france/corse-261117.osm.pbf"
+  },
+  "packages": {
+    "android": {
+      "archive": {
+        "bytes": 160953220,
+        "path": "regions/corsica/android/OpenBareMap-Android.zip",
+        "sha256": "2b67cce15452f2b0d05ad6395c81d208389c496d8bb9a485984fa7240a59c50e"
+      },
+      "checksumsSHA256": "e59daf719f99fbfbf352dd4aa8c3ec14d99b25947c37be199e03be193683b668",
+      "manifestSHA256": "1280507c8754636c494e33120f297b819de0725574d0d401081ef266b4065841",
+      "path": "regions/corsica/android",
+      "validationSHA256": "71640773e4e1b4e8d52dc842f1f37f4d75baf42970f87d3cc89f55e499633a8f"
+    },
+    "ios": {
+      "checksumsSHA256": "22e596cedb1713cd2d99bc1762ede23651e1d1e35b883619649fa2ea71eb6307",
+      "manifestSHA256": "43557d74e2de6f10927677ea96fab2ddfaff214d0f57c769ce376103932dedd3",
+      "path": "regions/corsica/ios",
+      "validationSHA256": "02811965b02e45f689d587e1a7692842fa450a39b93d9bab006696b51842c0e1"
+    }
+  },
+  "pythonRuntime": {
+    "packages": {
+      "Pillow": "12.3.0",
+      "certifi": "2026.10.23",
+      "charset-normalizer": "3.5.2",
+      "idna": "3.20",
+      "numpy": "2.5.4",
+      "osmium": "4.3.2",
+      "pyproj": "3.8.0",
+      "requests": "2.34.2",
+      "shapely": "2.2.0",
+      "urllib3": "2.8.0"
+    },
+    "platform": "macOS-27.2.1-arm64-arm-64bit-Mach-O",
+    "python": "3.14.5 (main, May 10 2026, 10:21:34) [Clang 21.0.0 (clang-2100.0.123.102)]",
+    "requirementsSHA256": "427f12ff8b49bfebac0a7d453c2f65bd15d6695584b18e6ecee1fdfeed20a36c"
+  },
+  "region": "corsica",
+  "styleSHA256": "63ab6cc15f70d7694a3e81925f76cac241c6fba5af990ca080cee2dd498db440",
+  "terrainLockSHA256": "24122dadad074ec6c44f1fb85137133ef33f861e86faaeb09ac93f891016c01e",
+  "validation": "validation.json"
+}

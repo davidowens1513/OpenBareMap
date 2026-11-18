@@ -3,7 +3,7 @@
 from pathlib import Path
 import argparse,gzip,hashlib,json,shutil,sys
 sys.path.insert(0,str(Path(__file__).resolve().parents[1]/"scripts"))
-from regions import profile,region_path,garmin_work
+from regions import REGIONS, profile,region_path,garmin_work
 from xml.sax.saxutils import escape,quoteattr
 ROOT=Path(__file__).resolve().parents[1]
 WORK=ROOT/'garmin/work'
@@ -107,4 +107,4 @@ def prepare(region='ireland'):
  counts['renderFootprintSHA256']=footprint_record['geometry']['sha256'];counts['polygonClipping']=clipper.stats
  (WORK/'prepared.json').write_text(json.dumps(counts,indent=2)+'\n');print(json.dumps(counts,indent=2))
 if __name__=='__main__':
- parser=argparse.ArgumentParser();parser.add_argument('--region',choices=['ireland','england-wales','scotland','sierra-nevada','pyrenees','dolomites','faroe-islands','norway-south','norway-central','norway-north'],default='ireland');args=parser.parse_args();prepare(args.region)
+ parser=argparse.ArgumentParser();parser.add_argument('--region',choices=REGIONS,default='ireland');args=parser.parse_args();prepare(args.region)

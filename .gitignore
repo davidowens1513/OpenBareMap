@@ -194,3 +194,40 @@ data/regions/norway-*/copernicus/*
 # Public delivery archives are restored from their R2 manifests, like other editions.
 /regions/norway-*/garmin/dist/*.img
 /releases/norway-*/2.0.0/app-bundles-v1/**/*.zip
+
+# Rebuildable inputs and local delivery files for balearic-islands
+/data/regions/balearic-islands/
+/regions/balearic-islands/exports/
+/regions/balearic-islands/garmin/coastal-context/
+/regions/balearic-islands/garmin/inputs/*.geojson.gz
+/regions/balearic-islands/garmin/dist/*.img
+/releases/balearic-islands/*/maps/
+/releases/balearic-islands/*/app-bundles-v1/**/*.zip
+
+# Rebuildable inputs and local delivery files for corsica
+/data/regions/corsica/
+/regions/corsica/exports/
+/regions/corsica/garmin/coastal-context/
+/regions/corsica/garmin/inputs/*.geojson.gz
+/regions/corsica/garmin/dist/*.img
+/releases/corsica/*/maps/
+/releases/corsica/*/app-bundles-v1/**/*.zip
+
+# Rebuildable inputs and local delivery files for sardinia
+/data/regions/sardinia/
+/regions/sardinia/exports/
+/regions/sardinia/garmin/coastal-context/
+/regions/sardinia/garmin/inputs/*.geojson.gz
+/regions/sardinia/garmin/dist/*.img
+/releases/sardinia/*/maps/
+/releases/sardinia/*/app-bundles-v1/**/*.zip
+
+# Rebuildable inputs and local delivery files for sicily
+/data/regions/sicily/
+/regions/sicily/exports/
+/regions/sicily/garmin/coastal-context/
+/regions/sicily/garmin/inputs/*.geojson.gz
+/regions/sicily/garmin/dist/*.img
+/releases/sicily/*/maps/
+/releases/sicily/*/app-bundles-v1/**/*.zip
+/data/regions/italy-isole/

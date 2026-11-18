@@ -1,0 +1,21 @@
+{
+  "combinedSHA256": "b8c41eea6153e8dd8263b4dc45b94cb4a58b8e4f416400a4966fa1cd89e95d8c",
+  "command": [
+    "/opt/homebrew/opt/openjdk@21/libexec/openjdk.jdk/Contents/Home/bin/java",
+    "-Xmx6g",
+    "-jar",
+    "/Volumes/Extreme SSD/Projects/OpenBareMap/garmin/tools/splitter-r654/splitter.jar",
+    "--mapid=48430001",
+    "--description=OpenBareMap Corsica",
+    "--max-nodes=1000000",
+    "--max-threads=2",
+    "--keep-complete=true",
+    "--output=pbf",
+    "--polygon-file=/Volumes/Extreme SSD/Projects/OpenBareMap/regions/corsica/garmin/coverage.poly",
+    "--output-dir=/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/906ead9d53a7/corsica/garmin/split",
+    "--ignore-osm-bounds=true",
+    "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/906ead9d53a7/corsica/garmin/combined.osm.pbf"
+  ],
+  "coverageSHA256": "4401b6b191be67740363013ff4b2b23225522e5c1f8930df502836c5c1952e60",
+  "ignoreSourceHeaderBounds": true
+}

@@ -1,0 +1,55 @@
+{
+  "features": [
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              1.845698,
+              40.02341
+            ],
+            [
+              2.2955129051705288,
+              40.15
+            ],
+            [
+              4.4,
+              40.15
+            ],
+            [
+              4.4,
+              39.45418292570891
+            ],
+            [
+              3.284907,
+              38.90386
+            ],
+            [
+              2.466557262941056,
+              38.57
+            ],
+            [
+              1.12,
+              38.57
+            ],
+            [
+              1.12,
+              39.45127663230036
+            ],
+            [
+              1.845698,
+              40.02341
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "properties": {
+        "purpose": "Limit opaque native background and land-cover polygons; retain complete accepted OSM and terrain inputs",
+        "region": "balearic-islands"
+      },
+      "type": "Feature"
+    }
+  ],
+  "type": "FeatureCollection"
+}

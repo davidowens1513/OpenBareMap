@@ -1,0 +1,20 @@
+{
+  "inputs": [
+    {
+      "path": "regions/balearic-islands/garmin/inputs/contours.geojson.gz",
+      "sha256": "dc98325c3a66694b820848a36f7ebc1c5188fe1205ba6df080ccc917694474fb",
+      "uncompressedSHA256": "c242782c2a15c40c02ba51981363b7724d6b0a63db23403f189e7c81e5adb3a7"
+    },
+    {
+      "path": "regions/balearic-islands/garmin/inputs/landcover.geojson.gz",
+      "sha256": "e58f6ce664790390df80268cbb940409e104d1fc1a8cfeea988dfa99d597f003",
+      "uncompressedSHA256": "8bceb582378be0f9eeaf91c70673185c721a62f7c493f86c3b7cd650ccb69870"
+    },
+    {
+      "path": "regions/balearic-islands/garmin/inputs/land.geojson.gz",
+      "sha256": "a585af5c9fde5740b81a6b4e72c9da839eab22d20c7ed97848b853d410e55ba6",
+      "uncompressedSHA256": "4ddc699b3fa0653c5be0c55a9bb3c29d4047bf7e42cb52184376ad440d2f8b40"
+    }
+  ],
+  "region": "balearic-islands"
+}

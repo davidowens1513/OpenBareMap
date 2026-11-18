@@ -5,7 +5,7 @@ import json
 from pathlib import Path
 import sys
 from openbaremap import ROOT, digest, write
-from regions import profile
+from regions import REGIONS, profile
 from smooth_geometry import smooth_line, smooth_polygon_geometry
 sys.path.insert(0,str(ROOT/'work/python'))
 
@@ -101,4 +101,4 @@ def build(region,topography):
     print(json.dumps(counts),flush=True)
 
 if __name__=='__main__':
-    p=argparse.ArgumentParser();p.add_argument('--region',choices=['england-wales','scotland','sierra-nevada','pyrenees','dolomites','faroe-islands','norway-south','norway-central','norway-north'],required=True);a=p.parse_args();build(a.region,ROOT/'build'/(a.region+'-topography'))
+    p=argparse.ArgumentParser();p.add_argument('--region',choices=REGIONS[1:],required=True);a=p.parse_args();build(a.region,ROOT/'build'/(a.region+'-topography'))

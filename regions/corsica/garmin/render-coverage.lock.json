@@ -1,0 +1,50 @@
+{
+  "bounds": [
+    8.5,
+    41.31103,
+    9.62,
+    43.06
+  ],
+  "contextEnvelope": [
+    8.5,
+    41.3,
+    9.62,
+    43.06
+  ],
+  "drawPriority": 25,
+  "format": "openbaremap-garmin-render-footprint-v1",
+  "geometry": {
+    "bytes": 1258,
+    "path": "regions/corsica/garmin/render-coverage.geojson",
+    "sha256": "8efd3a7e663aaf23a0978978bebccb9dd8bf5c245c49f32727152379ab75c30a"
+  },
+  "inputs": [
+    {
+      "bytes": 294,
+      "path": "data/regions/corsica/corse.poly",
+      "sha256": "2288b4a29bb119ed981191f2d13e50a4ca99fded8d34c1292e235eb27e338efc",
+      "url": "https://download.geofabrik.de/europe/france/corse.poly"
+    }
+  ],
+  "knownDestinationsCovered": {
+    "ajaccio": [
+      8.738,
+      41.926
+    ],
+    "bonifacio": [
+      9.16,
+      41.39
+    ],
+    "corte": [
+      9.151,
+      42.304
+    ],
+    "monte-cinto": [
+      8.946,
+      42.378
+    ]
+  },
+  "purpose": "Rectangular Garmin tiles may overlap other countries. Do not fill their padding with sea, land or land-cover polygons.",
+  "region": "corsica",
+  "transparentNativeMap": true
+}

@@ -7,7 +7,7 @@ import math
 from pathlib import Path
 import sqlite3
 from openbaremap import ROOT,digest,inspect_tiles,write
-from regions import active_map,profile,region_path,region_style
+from regions import REGIONS, active_map,profile,region_path,region_style
 from build_cartography_2 import layers
 from audit import fields
 from optimize_storage import packed,value
@@ -135,10 +135,13 @@ def package(root,platform,region="england-wales"):
 
 def label_glyphs(region):
     result={}
+    glyphs_for_region=profile(region).get('labelGlyphs')
+    if not glyphs_for_region:
+        glyphs_for_region='ÆæØøÅåÁáČčĐđŊŋŠšŦŧŽž' if region.startswith('norway-') else 'ÁáÆæÐðÍíÓóØøÚúÝý' if region=='faroe-islands' else 'ÀàÈèÉéÌìÒòÙùÄäÖöÜüß' if region=='dolomites' else 'ÀàÂâÇçÈèÉéÊêËëÎîÏïÔôÙùÛûÜüŸÿÁáÍíÓóÚúÑñ' if region=='pyrenees' else 'ÁáÉéÍíÓóÚúÑñÜü' if region=='sierra-nevada' else 'ÀàÈèÌìÒòÙùÁáÉéÓó' if region=='scotland' else 'ŴŵŶŷ'
+    required={ord(c) for c in glyphs_for_region}
     for font in (ROOT/'viewer/fonts').iterdir():
         if not font.is_dir():continue
         glyphs=set()
-        required={ord(c) for c in ('ÆæØøÅåÁáČčĐđŊŋŠšŦŧŽž' if region.startswith('norway-') else 'ÁáÆæÐðÍíÓóØøÚúÝý' if region=='faroe-islands' else 'ÀàÈèÉéÌìÒòÙùÄäÖöÜüß' if region=='dolomites' else 'ÀàÂâÇçÈèÉéÊêËëÎîÏïÔôÙùÛûÜüŸÿÁáÍíÓóÚúÑñ' if region=='pyrenees' else 'ÁáÉéÍíÓóÚúÑñÜü' if region=='sierra-nevada' else 'ÀàÈèÌìÒòÙùÁáÉéÓó' if region=='scotland' else 'ŴŵŶŷ')}
         for group in sorted({code//256 for code in required}):
             filename=f'{group*256}-{group*256+255}.pbf'
             for n,w,stack in fields((font/filename).read_bytes()):
@@ -205,4 +208,4 @@ def validate(region):
     print('Full '+p['label']+' build, packages and Ireland preservation verified.',flush=True)
 
 if __name__=='__main__':
-    parser=argparse.ArgumentParser();parser.add_argument('--region',choices=['england-wales','scotland','sierra-nevada','pyrenees','dolomites','faroe-islands','norway-south','norway-central','norway-north'],required=True);args=parser.parse_args();validate(args.region)
+    parser=argparse.ArgumentParser();parser.add_argument('--region',choices=REGIONS[1:],required=True);args=parser.parse_args();validate(args.region)

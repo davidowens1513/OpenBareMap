@@ -1,0 +1,52 @@
+{
+  "contourIntervalMetres": 20,
+  "coverage": "Mallorca, Menorca, Ibiza, Formentera, Cabrera and nearby islets.",
+  "datasets": {
+    "basemap": {
+      "bytes": 66048000,
+      "path": "releases/balearic-islands/2.0.0/maps/basemap.mbtiles",
+      "sha256": "3f41cbe3987c433ecf9678fb11191438c4f70da591c19884e4ae7b334b2b0c4d",
+      "validation": {
+        "empty_tile_count": 1739,
+        "logical_tiles_sha256": "834a0e28fbbbe8bab0bb3b5092d77c8bbe85a5093a914f7025e0295adcac7a02",
+        "tile_count": 6517
+      }
+    },
+    "grid": {
+      "bytes": 6782976,
+      "path": "releases/balearic-islands/2.0.0/maps/grid.mbtiles",
+      "sha256": "42f3273d01dc98373481245f6f9b811340f4eb64e404f3ee1c648db253b661ae",
+      "validation": {
+        "empty_tile_count": 0,
+        "logical_tiles_sha256": "f58a68755e920c4848c44666bca3a8e33a58dc99b1f3a29fdf3fcf373bae2e14",
+        "tile_count": 19078
+      }
+    },
+    "hillshade": {
+      "bytes": 5685248,
+      "path": "releases/balearic-islands/2.0.0/maps/hillshade.mbtiles",
+      "sha256": "6b570660db9d5466314f7acd9742ad44d9eb0b8bdaffc85c5126d6b981140bae",
+      "validation": {
+        "empty_tile_count": 0,
+        "logical_tiles_sha256": "4fc5a4ff960f04454605d3fb93e998ed2c28211cf8a71b4abf32088f023a2273",
+        "tile_count": 256
+      }
+    },
+    "topography": {
+      "bytes": 19034112,
+      "path": "releases/balearic-islands/2.0.0/maps/topography-context.mbtiles",
+      "sha256": "2a3c14c42551369fbe87f80c896be64fc747042e3016611aa17e2089076a4272",
+      "validation": {
+        "empty_tile_count": 14957,
+        "logical_tiles_sha256": "37c2a21799acbef565d2502aef60fd064e848d269f05ac3c43726cd8d2044b00",
+        "tile_count": 18077
+      }
+    }
+  },
+  "format": "openbaremap-development-viewer-v1",
+  "localBorders": false,
+  "mapVersion": "2.0.0",
+  "region": "balearic-islands",
+  "storageRevision": "2.0.0-balearic-islands-r3",
+  "styleRevision": "2.0.0-balearic-islands-r1"
+}

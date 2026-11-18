@@ -1,0 +1,155 @@
+{
+  "mapVersion": "2.0.0",
+  "minzoom": 4,
+  "maxzoom": 14,
+  "townlands": false,
+  "contourIntervalMetres": 20,
+  "minorWaterwayMinzoom": 10,
+  "clipBasemap": true,
+  "gridSource": "utm-grid",
+  "terrainProvider": "copernicus-glo30",
+  "terrainAttribution": "Copernicus DEM GLO-30 · European Union / ESA · DLR / Airbus",
+  "ignoreSourceHeaderBounds": true,
+  "requireBogFeatures": false,
+  "id": "corsica",
+  "name": "OpenBareMap Corsica",
+  "label": "Corsica",
+  "coverage": "Corsica and its coastal islands, including the Lavezzi Islands.",
+  "bounds": [
+    8.5,
+    41.3,
+    9.62,
+    43.06
+  ],
+  "terrainBounds": [
+    8,
+    41,
+    10,
+    44
+  ],
+  "coastContextBounds": [
+    7,
+    40,
+    11,
+    45
+  ],
+  "projectedCRS": "EPSG:25832",
+  "gridCRS": "EPSG:25832",
+  "gridName": "ETRS89 / UTM 32N",
+  "gridExtent": [
+    450000,
+    560000,
+    4570000,
+    4770000
+  ],
+  "sourceDate": "2026-11-17",
+  "sourceSlugs": [
+    "corse"
+  ],
+  "sourceBaseURL": "https://download.geofabrik.de/europe/france/",
+  "nativeLanguage": "co",
+  "clipSource": false,
+  "garminFamilyId": 4843,
+  "garminTileStartId": 48430001,
+  "garminFilename": "OpenBareMap-Corsica.img",
+  "garminPackageRevision": "2.0.0-r1",
+  "styleRevision": "2.0.0-corsica-r1",
+  "garminContextBounds": [
+    8.5,
+    41.3,
+    9.62,
+    43.06
+  ],
+  "garminCoverageBounds": [
+    8.5,
+    41.3,
+    9.62,
+    43.06
+  ],
+  "inspectionNames": [
+    "Corte"
+  ],
+  "destinations": {
+    "island": [
+      9.151,
+      42.304,
+      7
+    ],
+    "corte": [
+      9.151,
+      42.304,
+      12
+    ],
+    "monte-cinto": [
+      8.946,
+      42.378,
+      12
+    ],
+    "ajaccio": [
+      8.738,
+      41.926,
+      12
+    ],
+    "bonifacio": [
+      9.16,
+      41.39,
+      12
+    ]
+  },
+  "destinationLabels": {
+    "island": "Corsica",
+    "corte": "Corte",
+    "monte-cinto": "Monte Cinto",
+    "ajaccio": "Ajaccio",
+    "bonifacio": "Bonifacio"
+  },
+  "terrainNotice": "Corsica elevation: Copernicus DEM GLO-30 Public (AWS 2021 release).\n\nproduced using Copernicus WorldDEM-30 © DLR e.V. 2010-2014 and © Airbus Defence and Space GmbH 2014-2018 provided under COPERNICUS by the European Union and ESA; all rights reserved\n\nThe organisations in charge of the Copernicus programme by law or by delegation do not incur any liability for any use of the Copernicus WorldDEM-30.\n\nLicense: https://dataspace.copernicus.eu/sites/default/files/media/files/2025-06/copernicus_contributing_mission_data_access_v2_cop_dem_licenses.pdf\nSource: https://registry.opendata.aws/copernicus-dem/\nVertical datum: EGM2008 orthometric metres. Native approximately 30 m cells are bilinearly resampled to point-aligned Int16 HGT for the shared terrain pipeline. Ocean-only cells absent from the official public inventory are zero.\n",
+  "validationAnchors": {
+    "Corte": [
+      9.151,
+      42.304
+    ],
+    "Monte Cinto": [
+      8.946,
+      42.378
+    ],
+    "Ajaccio": [
+      8.738,
+      41.926
+    ],
+    "Bonifacio": [
+      9.16,
+      41.39
+    ]
+  },
+  "islandValidationAnchors": {
+    "Corte": [
+      9.151,
+      42.304
+    ],
+    "Monte Cinto": [
+      8.946,
+      42.378
+    ],
+    "Ajaccio": [
+      8.738,
+      41.926
+    ],
+    "Bonifacio": [
+      9.16,
+      41.39
+    ]
+  },
+  "islandValidationZooms": [
+    10,
+    11,
+    12
+  ],
+  "overviewLandAnchors": {
+    "Corte": [
+      9.151,
+      42.304
+    ]
+  },
+  "labelGlyphs": "ÀàÂâÇçÈèÉéÊêËëÎîÏïÔôÙùÛûÜüŒœ"
+}

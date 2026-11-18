@@ -1,0 +1,70 @@
+{
+  "bounds": [
+    11.85,
+    35.46,
+    15.70887,
+    38.85
+  ],
+  "contextEnvelope": [
+    11.85,
+    35.46,
+    15.72,
+    38.85
+  ],
+  "drawPriority": 25,
+  "format": "openbaremap-garmin-render-footprint-v1",
+  "geometry": {
+    "bytes": 1471,
+    "path": "regions/sicily/garmin/render-coverage.geojson",
+    "sha256": "1186615407d6dc7fdbb7a7a4b26a998a674c209e8cb9705c1251576e6dbe7deb"
+  },
+  "inputs": [
+    {
+      "bytes": 790,
+      "path": "data/regions/sicily/isole.poly",
+      "sha256": "9ea3885681d0de15f7ccee03cae126612bb595fdb8c3708c3f6f6ff67833706e",
+      "url": "https://download.geofabrik.de/europe/italy/isole.poly"
+    }
+  ],
+  "knownDestinationsCovered": {
+    "enna": [
+      14.28,
+      37.56
+    ],
+    "etna": [
+      14.996,
+      37.75
+    ],
+    "favignana": [
+      12.32,
+      37.93
+    ],
+    "lampedusa": [
+      12.6,
+      35.5
+    ],
+    "linosa": [
+      12.87,
+      35.86
+    ],
+    "palermo": [
+      13.36,
+      38.12
+    ],
+    "pantelleria": [
+      12.0,
+      36.79
+    ],
+    "stromboli": [
+      15.213,
+      38.79
+    ],
+    "ustica": [
+      13.18,
+      38.7
+    ]
+  },
+  "purpose": "Rectangular Garmin tiles may overlap other countries. Do not fill their padding with sea, land or land-cover polygons.",
+  "region": "sicily",
+  "transparentNativeMap": true
+}

@@ -9,7 +9,7 @@ import sqlite3
 import subprocess
 import sys
 from openbaremap import ROOT, digest, inspect_tiles, write
-from regions import profile, region_path, region_style, expected_basemap_layers
+from regions import REGIONS, profile, region_path, region_style, expected_basemap_layers
 from build_cartography_2 import rebuild, layers, encode
 from build_region_geometry import build as geometry_build
 import optimize_storage as opt
@@ -112,7 +112,7 @@ def finish(region, reuse_geometry=False):
     shutil.copyfile(geometry/'grid-provenance.json',region_path(region,'grid-provenance.json'))
 
 def main():
-    parser=argparse.ArgumentParser();parser.add_argument('--region',choices=['england-wales','scotland','sierra-nevada','pyrenees','dolomites','faroe-islands','norway-south','norway-central','norway-north'],required=True);parser.add_argument('--resume-geometry',action='store_true');parser.add_argument('--stage',choices=['basemap','geometry','finish','packages','all'],default='all');args=parser.parse_args();region=args.region
+    parser=argparse.ArgumentParser();parser.add_argument('--region',choices=REGIONS[1:],required=True);parser.add_argument('--resume-geometry',action='store_true');parser.add_argument('--stage',choices=['basemap','geometry','finish','packages','all'],default='all');args=parser.parse_args();region=args.region
     if args.stage in ('basemap','all'):
         dest=ROOT/'build'/(region+'-basemap')
         if not dest.exists():run(sys.executable,'scripts/openbaremap.py','build',region+'-basemap','--region',region)

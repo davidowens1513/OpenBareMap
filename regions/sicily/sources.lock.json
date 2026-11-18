@@ -1,0 +1,29 @@
+{
+  "accessed_utc": "2026-11-18T11:29:03.505288+00:00",
+  "inputs": [
+    {
+      "bytes": 216479035,
+      "path": "data/regions/italy-isole/isole-261117.osm.pbf",
+      "replicationTimestamp": "2026-11-17T21:24:30Z",
+      "sha256": "92bdb6e8d7fd80a8475aa46b82f3b0cb151cc3b4eb3e6b11f7fec8235102ce67",
+      "url": "https://download.geofabrik.de/europe/italy/isole-261117.osm.pbf"
+    }
+  ],
+  "osm": {
+    "bytes": 132117042,
+    "operation": "Complete-feature bbox extraction with nested relation references",
+    "path": "data/regions/sicily/isole-261117.osm.clipped.osm.pbf",
+    "replicationTimestamp": "2026-11-17T21:24:30Z",
+    "sha256": "0b91855f7b45705b82b62f650cf7e099a284caf01162ca49041bf0c8ef3ae27e",
+    "snapshot_date": "2026-11-17",
+    "url": "https://download.geofabrik.de/europe/italy/isole-261117.osm.pbf"
+  },
+  "polygons": [
+    {
+      "bytes": 790,
+      "path": "data/regions/sicily/isole.poly",
+      "sha256": "9ea3885681d0de15f7ccee03cae126612bb595fdb8c3708c3f6f6ff67833706e",
+      "url": "https://download.geofabrik.de/europe/italy/isole.poly"
+    }
+  ]
+}

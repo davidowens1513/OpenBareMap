@@ -119,3 +119,12 @@ The Garmin profile selects 20 m contours from the pinned smoothed 10 m inputs, r
 ### Path and track contrast — 29 October 2026
 
 The shared MapLibre path/footway colour is #006f32 and track colour #aa4209. Base line-width stop values are multiplied by approximately 1.40; generated bridge passes retain their 0.5 px increment and tunnel opacity is unchanged. All 117 affected rendering passes preserve dash arrays, filters and visibility thresholds. Other layers and databases are unchanged. Browser and app legends and iOS/Android resource packages are refreshed. Garmin and installed app copies are unchanged by this style-only revision.
+
+## 18 November 2026 · Mediterranean islands
+
+Built four independent editions for the Balearic Islands, Corsica, Sardinia
+and Sicily. The mobile resource bundles and Garmin images passed automated
+validation. The browser previews share the existing regional viewer and
+navigation. The Sicily Garmin background uses the OSM source outline to avoid
+covering adjacent mainland Italy. This release follows the regional rebuild
+policy for bulky inputs and intermediate datasets.

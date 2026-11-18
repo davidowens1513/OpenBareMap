@@ -5,7 +5,7 @@ import json
 import subprocess
 import sys
 from openbaremap import ROOT,digest
-from regions import region_path
+from regions import REGIONS, region_path
 
 def run(*args):subprocess.run([sys.executable,*map(str,args)],cwd=ROOT,check=True)
 
@@ -43,4 +43,4 @@ def main(region):
     run('scripts/validate_region.py','--region',region)
 
 if __name__=='__main__':
-    p=argparse.ArgumentParser();p.add_argument('--region',choices=['england-wales','scotland','sierra-nevada','pyrenees','dolomites','faroe-islands','norway-south','norway-central','norway-north'],required=True);a=p.parse_args();main(a.region)
+    p=argparse.ArgumentParser();p.add_argument('--region',choices=REGIONS[1:],required=True);a=p.parse_args();main(a.region)

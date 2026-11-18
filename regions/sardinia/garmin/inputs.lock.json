@@ -1,0 +1,20 @@
+{
+  "inputs": [
+    {
+      "path": "regions/sardinia/garmin/inputs/contours.geojson.gz",
+      "sha256": "6adf44da25a64b014dd2decae2b72bcd64bbce4f7ad0b40b73f58c82d42d7999",
+      "uncompressedSHA256": "1c2024db4929e149c832101dfba24a2a8560a83d2acb3f8a93aab456d103ace5"
+    },
+    {
+      "path": "regions/sardinia/garmin/inputs/landcover.geojson.gz",
+      "sha256": "25872a03cffcc9406d6cc086ec98facd2b3af32c48aa8a00edd5d503c90031f6",
+      "uncompressedSHA256": "13b720b19b306366e612686e25eb2875084cb6d9de65e748656220c1e7a8969b"
+    },
+    {
+      "path": "regions/sardinia/garmin/inputs/land.geojson.gz",
+      "sha256": "adac3425c457d51f2263413956504d75608f88f3cdaaa4b2cfb58b1959f4530e",
+      "uncompressedSHA256": "9ec3f8f4ed2702cc9fd39f42b9442b1f63f443a9b59b86e7182af0204714710e"
+    }
+  ],
+  "region": "sardinia"
+}

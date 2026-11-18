@@ -1,0 +1,58 @@
+{
+  "bounds": [
+    8.08,
+    38.83,
+    9.88,
+    41.34
+  ],
+  "contextEnvelope": [
+    8.08,
+    38.83,
+    9.88,
+    41.34
+  ],
+  "drawPriority": 25,
+  "format": "openbaremap-garmin-render-footprint-v1",
+  "geometry": {
+    "bytes": 736,
+    "path": "regions/sardinia/garmin/render-coverage.geojson",
+    "sha256": "f684c1f101b22e737b4673d17e9d383ef664840d05a4f1ca5f389e2682156377"
+  },
+  "inputs": [
+    {
+      "bytes": 790,
+      "path": "data/regions/sardinia/isole.poly",
+      "sha256": "9ea3885681d0de15f7ccee03cae126612bb595fdb8c3708c3f6f6ff67833706e",
+      "url": "https://download.geofabrik.de/europe/italy/isole.poly"
+    }
+  ],
+  "knownDestinationsCovered": {
+    "asinara": [
+      8.29,
+      41.07
+    ],
+    "cagliari": [
+      9.125,
+      39.221
+    ],
+    "la-maddalena": [
+      9.413,
+      41.219
+    ],
+    "nuoro": [
+      9.33,
+      40.32
+    ],
+    "san-pietro": [
+      8.25,
+      39.143
+    ],
+    "sant\u2019antioco": [
+      8.43,
+      39.06
+    ]
+  },
+  "purpose": "Rectangular Garmin tiles may overlap other countries. Do not fill their padding with sea, land or land-cover polygons.",
+  "region": "sardinia",
+  "transparentNativeMap": true
+}

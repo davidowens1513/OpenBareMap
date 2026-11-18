@@ -1,0 +1,34 @@
+{
+  "builderSHA256": "a2d345bb6682c31f1688a00fd483998eb467b93f3e591ffea94eac8fcaf26354",
+  "contoursSourceSHA256": "8c1d5fb08ed067d58e90bbc248c60ac49b7199e55364dc216a0a7b315a66ee79",
+  "counts": {
+    "contours": 47672,
+    "grid": {
+      "grid_10km": 47,
+      "grid_1km": 452
+    },
+    "landcover": {
+      "empty_source_areas": [],
+      "features": 47975,
+      "retained": 2877,
+      "smoothed": 45098
+    }
+  },
+  "osm": {
+    "bytes": 86851714,
+    "operation": "Complete-feature bbox extraction with nested relation references",
+    "path": "data/regions/sardinia/isole-261117.osm.clipped.osm.pbf",
+    "replicationTimestamp": "2026-11-17T21:24:30Z",
+    "sha256": "9e1cf075ccf0e8a8fd1cb4e6f43664313bc8f7ba911960c358e049747219a58f",
+    "snapshot_date": "2026-11-17",
+    "url": "https://download.geofabrik.de/europe/italy/isole-261117.osm.pbf"
+  },
+  "outputs": {
+    "contours.geojson": "1c2024db4929e149c832101dfba24a2a8560a83d2acb3f8a93aab456d103ace5",
+    "grid_10km.geojson": "dc0686a6d2d023ccd3e9b3c4f6345bc3cb26c122678787d80201d9aec9c800b0",
+    "grid_1km.geojson": "5cf89a7aa30c1332b6d608065b9de0d8d6ac82257c79134d7f7be99547878166",
+    "landcover.geojson": "13b720b19b306366e612686e25eb2875084cb6d9de65e748656220c1e7a8969b"
+  },
+  "region": "sardinia",
+  "smootherSHA256": "7581d024dc1c1bec931642c7201db149bf64a64c814c451fa8bf37a0881ea6c9"
+}

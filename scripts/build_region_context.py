@@ -4,7 +4,7 @@ from pathlib import Path
 from contextlib import closing
 import argparse,json,os,shutil,sqlite3,subprocess
 from openbaremap import ROOT,digest,write,inspect_tiles
-from regions import profile,region_path,region_style,active_map
+from regions import REGIONS, profile,region_path,region_style,active_map
 from build_cartography_2 import rebuild,layers
 from mbtiles import canonicalize
 
@@ -48,4 +48,4 @@ def build(region,revision=3):
     print('Coastal context extended; contour layer payloads preserved.',flush=True)
 
 if __name__=='__main__':
-    parser=argparse.ArgumentParser();parser.add_argument('--region',choices=['england-wales','scotland','sierra-nevada','pyrenees','dolomites','faroe-islands','norway-south','norway-central','norway-north'],required=True);parser.add_argument('--revision',type=int,choices=[3,4],default=3);args=parser.parse_args();build(args.region,args.revision)
+    parser=argparse.ArgumentParser();parser.add_argument('--region',choices=REGIONS[1:],required=True);parser.add_argument('--revision',type=int,choices=[3,4],default=3);args=parser.parse_args();build(args.region,args.revision)

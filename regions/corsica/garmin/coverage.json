@@ -1,0 +1,29 @@
+{
+  "areaSquareDegrees": 1.9712000000000043,
+  "bounds": [
+    8.5,
+    41.3,
+    9.62,
+    43.06
+  ],
+  "entireRequestedFootprintCovered": true,
+  "exactFootprint": null,
+  "inputs": [
+    {
+      "bytes": 294,
+      "path": "data/regions/corsica/corse.poly",
+      "sha256": "2288b4a29bb119ed981191f2d13e50a4ca99fded8d34c1292e235eb27e338efc",
+      "url": "https://download.geofabrik.de/europe/france/corse.poly"
+    }
+  ],
+  "knownDestinationsCovered": [
+    "island",
+    "corte",
+    "monte-cinto",
+    "ajaccio",
+    "bonifacio"
+  ],
+  "operation": "Requested rectangular crop; source outlines cover all destination anchors",
+  "polygons": 1,
+  "sha256": "4401b6b191be67740363013ff4b2b23225522e5c1f8930df502836c5c1952e60"
+}

@@ -1,0 +1,227 @@
+{
+  "mapVersion": "2.0.0",
+  "minzoom": 4,
+  "maxzoom": 14,
+  "townlands": false,
+  "contourIntervalMetres": 20,
+  "minorWaterwayMinzoom": 10,
+  "clipBasemap": true,
+  "gridSource": "utm-grid",
+  "terrainProvider": "copernicus-glo30",
+  "terrainAttribution": "Copernicus DEM GLO-30 · European Union / ESA · DLR / Airbus",
+  "ignoreSourceHeaderBounds": true,
+  "requireBogFeatures": false,
+  "id": "sicily",
+  "name": "OpenBareMap Sicily",
+  "label": "Sicily",
+  "coverage": "Sicily, the Aeolian, Egadi and Pelagie archipelagos, Ustica and Pantelleria.",
+  "bounds": [
+    11.85,
+    35.46,
+    15.72,
+    38.85
+  ],
+  "terrainBounds": [
+    11,
+    35,
+    16,
+    39
+  ],
+  "coastContextBounds": [
+    10,
+    34,
+    17,
+    40
+  ],
+  "projectedCRS": "EPSG:25833",
+  "gridCRS": "EPSG:25833",
+  "gridName": "ETRS89 / UTM 33N",
+  "gridExtent": [
+    210000,
+    570000,
+    3920000,
+    4310000
+  ],
+  "sourceDate": "2026-11-17",
+  "sourceSlugs": [
+    "isole"
+  ],
+  "sourceBaseURL": "https://download.geofabrik.de/europe/italy/",
+  "nativeLanguage": "scn",
+  "clipSource": true,
+  "garminUseSourceOutline": true,
+  "garminFamilyId": 4845,
+  "garminTileStartId": 48450001,
+  "garminFilename": "OpenBareMap-Sicily.img",
+  "garminPackageRevision": "2.0.0-r1",
+  "styleRevision": "2.0.0-sicily-r1",
+  "garminContextBounds": [
+    11.85,
+    35.46,
+    15.72,
+    38.85
+  ],
+  "garminCoverageBounds": [
+    11.85,
+    35.46,
+    15.72,
+    38.85
+  ],
+  "inspectionNames": [
+    "Enna"
+  ],
+  "destinations": {
+    "island": [
+      14.28,
+      37.56,
+      7
+    ],
+    "enna": [
+      14.28,
+      37.56,
+      12
+    ],
+    "etna": [
+      14.996,
+      37.75,
+      12
+    ],
+    "palermo": [
+      13.36,
+      38.12,
+      12
+    ],
+    "stromboli": [
+      15.213,
+      38.79,
+      12
+    ],
+    "favignana": [
+      12.32,
+      37.93,
+      12
+    ],
+    "ustica": [
+      13.18,
+      38.7,
+      12
+    ],
+    "pantelleria": [
+      12.0,
+      36.79,
+      12
+    ],
+    "lampedusa": [
+      12.6,
+      35.5,
+      12
+    ],
+    "linosa": [
+      12.87,
+      35.86,
+      12
+    ]
+  },
+  "destinationLabels": {
+    "island": "Sicily",
+    "enna": "Enna",
+    "etna": "Etna",
+    "palermo": "Palermo",
+    "stromboli": "Stromboli",
+    "favignana": "Favignana",
+    "ustica": "Ustica",
+    "pantelleria": "Pantelleria",
+    "lampedusa": "Lampedusa",
+    "linosa": "Linosa"
+  },
+  "terrainNotice": "Sicily elevation: Copernicus DEM GLO-30 Public (AWS 2021 release).\n\nproduced using Copernicus WorldDEM-30 © DLR e.V. 2010-2014 and © Airbus Defence and Space GmbH 2014-2018 provided under COPERNICUS by the European Union and ESA; all rights reserved\n\nThe organisations in charge of the Copernicus programme by law or by delegation do not incur any liability for any use of the Copernicus WorldDEM-30.\n\nLicense: https://dataspace.copernicus.eu/sites/default/files/media/files/2025-06/copernicus_contributing_mission_data_access_v2_cop_dem_licenses.pdf\nSource: https://registry.opendata.aws/copernicus-dem/\nVertical datum: EGM2008 orthometric metres. Native approximately 30 m cells are bilinearly resampled to point-aligned Int16 HGT for the shared terrain pipeline. Ocean-only cells absent from the official public inventory are zero.\n",
+  "sourceCacheRegion": "italy-isole",
+  "validationAnchors": {
+    "Enna": [
+      14.28,
+      37.56
+    ],
+    "Etna": [
+      14.996,
+      37.75
+    ],
+    "Palermo": [
+      13.36,
+      38.12
+    ],
+    "Stromboli": [
+      15.213,
+      38.79
+    ],
+    "Favignana": [
+      12.32,
+      37.93
+    ],
+    "Ustica": [
+      13.18,
+      38.7
+    ],
+    "Pantelleria": [
+      12.0,
+      36.79
+    ],
+    "Lampedusa": [
+      12.6,
+      35.5
+    ],
+    "Linosa": [
+      12.87,
+      35.86
+    ]
+  },
+  "islandValidationAnchors": {
+    "Enna": [
+      14.28,
+      37.56
+    ],
+    "Etna": [
+      14.996,
+      37.75
+    ],
+    "Palermo": [
+      13.36,
+      38.12
+    ],
+    "Stromboli": [
+      15.213,
+      38.79
+    ],
+    "Favignana": [
+      12.32,
+      37.93
+    ],
+    "Ustica": [
+      13.18,
+      38.7
+    ],
+    "Pantelleria": [
+      12.0,
+      36.79
+    ],
+    "Lampedusa": [
+      12.6,
+      35.5
+    ],
+    "Linosa": [
+      12.87,
+      35.86
+    ]
+  },
+  "islandValidationZooms": [
+    10,
+    11,
+    12
+  ],
+  "overviewLandAnchors": {
+    "Enna": [
+      14.28,
+      37.56
+    ]
+  },
+  "labelGlyphs": "ÀàÈèÉéÌìÒòÙù"
+}

@@ -1,0 +1,20 @@
+{
+  "inputs": [
+    {
+      "path": "regions/corsica/garmin/inputs/contours.geojson.gz",
+      "sha256": "5b1d0f6ccf71316c81c03c7a41f2f165c7e8708f08f0baee818e553da5191148",
+      "uncompressedSHA256": "8f8d290a18d1c3473a7c3c1f845c0b876a44d8cfb6f6f8532af902948fb98443"
+    },
+    {
+      "path": "regions/corsica/garmin/inputs/landcover.geojson.gz",
+      "sha256": "59912cc8555928305945f36b961cd2d58da2460c43e951f092b7c5b5aeef2514",
+      "uncompressedSHA256": "10e8999bca77071782d0b9dcd38acb53cd1391ce56860f2a637dcc4c5bc1095d"
+    },
+    {
+      "path": "regions/corsica/garmin/inputs/land.geojson.gz",
+      "sha256": "ea03fa5b069a9351a0c289e3613fd3f8430e50d70cb6fbc5f5aafac8fdbe2809",
+      "uncompressedSHA256": "585e2dc734ad0da8b790e9fea7e52ee5d4ab580081acfa0ac7da3ac8b77dc017"
+    }
+  ],
+  "region": "corsica"
+}

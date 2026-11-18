@@ -2,10 +2,10 @@
 """Export the active map legend to scalable SVG and 2x PNG (Pillow required)."""
 from pathlib import Path
 import argparse,base64,hashlib,html,io,json,math
-from regions import profile,region_style
+from regions import REGIONS, profile,region_style
 from PIL import Image,ImageDraw,ImageFont,ImageEnhance
 ROOT=Path(__file__).resolve().parents[1]
-parser=argparse.ArgumentParser();parser.add_argument('--region',choices=['ireland','england-wales','scotland','sierra-nevada','pyrenees','dolomites','faroe-islands','norway-south','norway-central','norway-north'],default='ireland');args=parser.parse_args();edition=profile(args.region)
+parser=argparse.ArgumentParser();parser.add_argument('--region',choices=REGIONS,default='ireland');args=parser.parse_args();edition=profile(args.region)
 OUT=ROOT/'app-legend' if args.region=='ireland' else ROOT/'regions'/args.region/'legend';OUT.mkdir(exist_ok=True)
 STYLE=region_style(args.region);LAYERS={l['id']:l for l in STYLE['layers']}
 ATLAS=Image.open(ROOT/'viewer/sprites/outdoors.png').convert('RGBA');INDEX=json.loads((ROOT/'viewer/sprites/outdoors.json').read_text())

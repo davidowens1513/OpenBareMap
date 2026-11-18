@@ -1,0 +1,34 @@
+{
+  "areaSquareDegrees": 13.119300000000006,
+  "bounds": [
+    11.85,
+    35.46,
+    15.72,
+    38.85
+  ],
+  "entireRequestedFootprintCovered": true,
+  "exactFootprint": null,
+  "inputs": [
+    {
+      "bytes": 790,
+      "path": "data/regions/sicily/isole.poly",
+      "sha256": "9ea3885681d0de15f7ccee03cae126612bb595fdb8c3708c3f6f6ff67833706e",
+      "url": "https://download.geofabrik.de/europe/italy/isole.poly"
+    }
+  ],
+  "knownDestinationsCovered": [
+    "island",
+    "enna",
+    "etna",
+    "palermo",
+    "stromboli",
+    "favignana",
+    "ustica",
+    "pantelleria",
+    "lampedusa",
+    "linosa"
+  ],
+  "operation": "Requested rectangular crop; source outlines cover all destination anchors",
+  "polygons": 1,
+  "sha256": "30984ab906ffd036d48454b523a4dbe45a790f990381619db338835f3cd826de"
+}

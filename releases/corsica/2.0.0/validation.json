@@ -1,0 +1,320 @@
+{
+  "coverage": "Corsica and its coastal islands, including the Lavezzi Islands.",
+  "coverageAnchors": {
+    "Ajaccio": {
+      "coordinate": [
+        8.738,
+        41.926
+      ],
+      "featuresInNeighbouringDetailedTiles": 12859
+    },
+    "Bonifacio": {
+      "coordinate": [
+        9.16,
+        41.39
+      ],
+      "featuresInNeighbouringDetailedTiles": 3932
+    },
+    "Corte": {
+      "coordinate": [
+        9.151,
+        42.304
+      ],
+      "featuresInNeighbouringDetailedTiles": 5453
+    },
+    "Monte Cinto": {
+      "coordinate": [
+        8.946,
+        42.378
+      ],
+      "featuresInNeighbouringDetailedTiles": 289
+    }
+  },
+  "datasets": {
+    "basemap": {
+      "empty_tile_count": 1996,
+      "logical_tiles_sha256": "7fd0715e8ee1084675077c00b6c7fe48bb0ccffae93cdf95d32a81bea852763a",
+      "tile_count": 6949
+    },
+    "grid": {
+      "empty_tile_count": 0,
+      "logical_tiles_sha256": "611c91392387f1b5c6154b9081846c64b11a7ba7f77fb8f7881de97298ab8a0d",
+      "tile_count": 7616
+    },
+    "hillshade": {
+      "empty_tile_count": 0,
+      "logical_tiles_sha256": "3595695cab07ba39bfb8bcf69fc7973eefd2b84b46d6d7ceb8bc93ec458ac382",
+      "tile_count": 408
+    },
+    "topography": {
+      "empty_tile_count": 28665,
+      "logical_tiles_sha256": "1cec2c34c336249b5dfe1237408eff0aba2e10eac63ac5d698d2579aabe66611",
+      "tile_count": 34383
+    }
+  },
+  "detail": {
+    "basemap": {
+      "boundaries": 6839,
+      "contours": 0
+    },
+    "topography": {
+      "boundaries": 0,
+      "contours": 167000
+    }
+  },
+  "garmin": {
+    "familyId": 4843,
+    "garminPackageRevision": "2.0.0-r1",
+    "inspection": {
+      "anchorLabels": {
+        "Corte": "Corte"
+      },
+      "bounds": [
+        8.499984741210938,
+        41.300010681152344,
+        9.619989395141602,
+        43.060054779052734
+      ],
+      "coastPolygonsByLevel": {
+        "0": {
+          "0x32": 14,
+          "0x54": 2130
+        },
+        "1": {
+          "0x32": 13,
+          "0x54": 1311
+        },
+        "2": {
+          "0x32": 13,
+          "0x54": 847
+        },
+        "3": {
+          "0x32": 13,
+          "0x54": 177
+        },
+        "4": {
+          "0x32": 13,
+          "0x54": 38
+        }
+      },
+      "contoursByLevel": {
+        "0": {
+          "0x20": 32190,
+          "0x22": 7402
+        },
+        "1": {
+          "0x20": 24057,
+          "0x22": 5456
+        },
+        "2": {
+          "0x22": 4946
+        },
+        "3": {
+          "0x10008": 4385
+        },
+        "4": {}
+      },
+      "lineInstancesAtHighestDetail": {
+        "0x10001": 2207,
+        "0x10002": 715,
+        "0x10003": 13,
+        "0x10004": 58,
+        "0x10005": 1724,
+        "0x10006": 584,
+        "0x1000b": 1258,
+        "0x14": 265,
+        "0x16": 13759,
+        "0x18": 10287,
+        "0x1a": 83,
+        "0x1c": 775,
+        "0x1e": 1024,
+        "0x1f": 414,
+        "0x2": 21,
+        "0x20": 32190,
+        "0x22": 7402,
+        "0x3": 1029,
+        "0x4": 1626,
+        "0x6": 11908,
+        "0x7": 19833,
+        "0xa": 12084
+      },
+      "logicalCombinedSHA256": "c18d4af94c38649562b9a1c2b0061161d7e0a05cde5f995936d4a3d37950ae95",
+      "logicalHashNote": "Internal file names, sizes and payloads; only CommonHeader creation-date bytes 14..20 are zeroed for hashing. IMG archive headers are excluded. Output bytes are never modified.",
+      "logicalTileSHA256": {
+        "48430001.img": "bc5e5758229da627af01f3a9ce6aef93715357ecb846808778ad7ffc7087b706",
+        "48430002.img": "bdc85d0298ac059df41d70a2a9e969ef94f6099bb4b638945f0384444da3c682",
+        "48430003.img": "9cb44a35a503019521bfa45688c0ea997cb31d166ceab0c39c0043b024cba762",
+        "48430004.img": "be0986c501d9b06ec353c1180c491ca761494006cf90715bf3b9b64d47265abc",
+        "48430005.img": "3d338ff0d68df1b3e42854536445c68786326533da6b12fede8f87f42fba5dcf",
+        "48430006.img": "8c11f35ca186ed63f0c65664a50033d5bdbe42081b3e30a1f3fbb7a5a60e869e",
+        "48430007.img": "c32d489f1af25e93d40f364d1c2b9a6ed0bc208e66d5d28a10c90f5904859562",
+        "48430008.img": "00b02e82b9a47429e5135a3bbca29f587e3159ccf1cc021ce721cf27bd2809e9",
+        "48430009.img": "9bdf1acbb72f1852d194a160565955e0cf61a5175b539872d588a5ec3e371de6",
+        "48430010.img": "9a2b4371e6971eaf0916319c3172edb55aaa966115a1a88e2f91943e41913aff",
+        "48430011.img": "8c109e82f328809e504e3cb61562e2c7eac3458dad0b55a9445a62be3fdf8c25",
+        "48430012.img": "11215141da6df2a73aac74995e9b6fcdbf3bb9bd1d0006560ec75be1855cf822",
+        "48430013.img": "ea800ff89aecc82c4caf13e7d5a28dcbf4372b4a22bf2118a168bdb77e15c9a6"
+      },
+      "pointInstancesAtHighestDetail": {
+        "0x100": 1,
+        "0x10001": 219,
+        "0x10002": 661,
+        "0x10003": 1526,
+        "0x10004": 70,
+        "0x10006": 8917,
+        "0x2f0b": 3342,
+        "0x600": 8,
+        "0x650c": 409,
+        "0x6603": 120,
+        "0x6615": 334,
+        "0x6616": 1191,
+        "0x800": 469,
+        "0xb00": 1087,
+        "0xc00": 2000
+      },
+      "polygonInstancesAtHighestDetail": {
+        "0x10101": 581,
+        "0x10102": 3853,
+        "0x10103": 2853,
+        "0x10104": 5420,
+        "0x10105": 609,
+        "0x10106": 100,
+        "0x10107": 7,
+        "0x10109": 9979,
+        "0x1010a": 850,
+        "0x1010b": 129,
+        "0x13": 188059,
+        "0x32": 14,
+        "0x3c": 789,
+        "0x50": 6413,
+        "0x51": 207,
+        "0x54": 2130
+      },
+      "routing": false,
+      "subfileBytes": {
+        "DEM": 10936956,
+        "LBL": 552989,
+        "MPS": 1031,
+        "RGN": 26225884,
+        "SRT": 912,
+        "TRE": 327795,
+        "TYP": 2982
+      },
+      "tiles": 13
+    },
+    "output": {
+      "bytes": 38172672,
+      "path": "regions/corsica/garmin/dist/OpenBareMap-Corsica.img",
+      "sha256": "f14027225f0ecb94eda5036ea4eb2d63b0a97eb79b6949c1132194881f60e0d3"
+    },
+    "routing": false,
+    "status": "compiled and structurally inspected; hardware rendering pending"
+  },
+  "geometryProcessing": {
+    "contours": 19047,
+    "grid": {
+      "grid_10km": 33,
+      "grid_1km": 312
+    },
+    "landcover": {
+      "empty_source_areas": [],
+      "features": 22130,
+      "retained": 1394,
+      "smoothed": 20736
+    }
+  },
+  "irelandGarminPackageRevision": "2.0.1-trail-detail-r1",
+  "irelandPreserved": true,
+  "islandLandBackground": {
+    "Ajaccio": {
+      "coordinate": [
+        8.738,
+        41.926
+      ],
+      "verifiedZooms": [
+        10,
+        11,
+        12
+      ]
+    },
+    "Bonifacio": {
+      "coordinate": [
+        9.16,
+        41.39
+      ],
+      "verifiedZooms": [
+        10,
+        11,
+        12
+      ]
+    },
+    "Corte": {
+      "coordinate": [
+        9.151,
+        42.304
+      ],
+      "verifiedZooms": [
+        10,
+        11,
+        12
+      ]
+    },
+    "Monte Cinto": {
+      "coordinate": [
+        8.946,
+        42.378
+      ],
+      "verifiedZooms": [
+        10,
+        11,
+        12
+      ]
+    }
+  },
+  "labelGlyphs": {
+    "Open Sans Bold": true,
+    "Open Sans Regular": true,
+    "Open Sans Semibold": true
+  },
+  "landBackground": {
+    "Corte": {
+      "coordinate": [
+        9.151,
+        42.304
+      ],
+      "verifiedZooms": [
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    }
+  },
+  "packages": {
+    "android": {
+      "checkedFiles": 40,
+      "nativeDeviceRenderingTested": false,
+      "sourceFiles": {
+        "basemap": "maps/basemap.mbtiles",
+        "coast": "maps/coast.mbtiles",
+        "hillshade": "maps/hillshade.mbtiles",
+        "topography": "maps/topography.mbtiles",
+        "utm-grid": "maps/grid.mbtiles"
+      }
+    },
+    "ios": {
+      "checkedFiles": 43,
+      "nativeDeviceRenderingTested": false,
+      "sourceFiles": {
+        "basemap": "maps/basemap.mbtiles",
+        "coast": "maps/coast.mbtiles",
+        "hillshade": "maps/hillshade.mbtiles",
+        "topography": "maps/topography.mbtiles",
+        "utm-grid": "maps/grid.mbtiles"
+      }
+    }
+  },
+  "region": "corsica",
+  "status": "automated checks passed; visual and hardware acceptance pending"
+}

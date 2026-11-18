@@ -7,7 +7,7 @@ sys.path.insert(0,str(ROOT/'scripts'))
 sys.path.insert(0,str(ROOT/'work/python'))
 sys.path.insert(0,str(ROOT/'garmin/work/python'))
 from openbaremap import digest,write
-from regions import region_path,garmin_work
+from regions import REGIONS, region_path,garmin_work
 
 def merge(region='ireland'):
  import osmium
@@ -22,4 +22,4 @@ def merge(region='ireland'):
  write(work/'merge-record.json',{'osmSHA256':source['sha256'],'overlaySHA256':digest(work/'overlays.osm.gz'),'combinedSHA256':digest(work/'combined.osm.pbf')})
  print('Sorted complete regional source written',flush=True)
 if __name__=='__main__':
- parser=argparse.ArgumentParser();parser.add_argument('--region',choices=['ireland','england-wales','scotland','sierra-nevada','pyrenees','dolomites','faroe-islands','norway-south','norway-central','norway-north'],default='ireland');args=parser.parse_args();merge(args.region)
+ parser=argparse.ArgumentParser();parser.add_argument('--region',choices=REGIONS,default='ireland');args=parser.parse_args();merge(args.region)

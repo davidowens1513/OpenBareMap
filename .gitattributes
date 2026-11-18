@@ -46,3 +46,17 @@ distribution/app-bundles-v1/garmin/norway-*/ATTRIBUTION.txt -whitespace
 
 # Preserve generated bundle and embedded upstream licence bytes.
 web-preview/site/tools/**/assets/* -whitespace
+
+# Preserve generated Mediterranean Garmin licence bytes.
+regions/balearic-islands/garmin/copyright.txt -whitespace
+regions/balearic-islands/garmin/dist/ATTRIBUTION.txt -whitespace
+distribution/app-bundles-v1/garmin/balearic-islands/ATTRIBUTION.txt -whitespace
+regions/corsica/garmin/copyright.txt -whitespace
+regions/corsica/garmin/dist/ATTRIBUTION.txt -whitespace
+distribution/app-bundles-v1/garmin/corsica/ATTRIBUTION.txt -whitespace
+regions/sardinia/garmin/copyright.txt -whitespace
+regions/sardinia/garmin/dist/ATTRIBUTION.txt -whitespace
+distribution/app-bundles-v1/garmin/sardinia/ATTRIBUTION.txt -whitespace
+regions/sicily/garmin/copyright.txt -whitespace
+regions/sicily/garmin/dist/ATTRIBUTION.txt -whitespace
+distribution/app-bundles-v1/garmin/sicily/ATTRIBUTION.txt -whitespace

@@ -1,0 +1,52 @@
+{
+  "builderSHA256": "fd5c3bd222cfc433bfbba98aeb1fd41da6f62a65db49a05abe26931b009940cb",
+  "contextBounds": [
+    10,
+    34,
+    17,
+    40
+  ],
+  "note": "Contour payloads preserved exactly while extending land background outside edition coverage.",
+  "oldTopography": {
+    "bytes": 123498496,
+    "path": "releases/sicily/2.0.0/maps/topography.mbtiles",
+    "sha256": "22f5113ea3d848a15de2be1f0a625947c2e21463ff355c76b47a1c6f754d1d12",
+    "validation": {
+      "empty_tile_count": 22244,
+      "logical_tiles_sha256": "f444e11126ba8e0edbe8492634299da5da8d3b07ee3f5ef4cb90ac75f84b7df8",
+      "tile_count": 33402
+    }
+  },
+  "output": {
+    "bytes": 123428864,
+    "path": "releases/sicily/2.0.0/maps/topography-context.mbtiles",
+    "sha256": "451a41e97a8a0dfa2ad4435e88784d5ff3a137ec597ffeb5d3e956a012babd70",
+    "validation": {
+      "empty_tile_count": 22244,
+      "logical_tiles_sha256": "f444e11126ba8e0edbe8492634299da5da8d3b07ee3f5ef4cb90ac75f84b7df8",
+      "tile_count": 33402
+    }
+  },
+  "replacement": {
+    "changed_tiles": 1939,
+    "path": "build/sicily-coast-context/combined.mbtiles",
+    "replacement_feature_instances": 5851,
+    "sha256": "6dc4f9e513b34e6e038ed0149465a58a13e300bb0befd47f928e173ea58aac3a",
+    "unchanged_other_layers_sha256": "2558ca70db310e7c80209d70d43f7aff680f94114a78c3bf9e77dee2e5d00109",
+    "validation": {
+      "empty_tile_count": 22244,
+      "logical_tiles_sha256": "f444e11126ba8e0edbe8492634299da5da8d3b07ee3f5ef4cb90ac75f84b7df8",
+      "tile_count": 33402
+    }
+  },
+  "source": {
+    "accessed_utc": "2026-10-25T12:59:16.751893+00:00",
+    "bytes": 928538219,
+    "http_headers_path": "data/land-polygons.headers",
+    "license": "ODbL 1.0; OpenStreetMap contributors",
+    "path": "data/land-polygons-split-4326.zip",
+    "sha256": "5911e273096f9585425a17c30a8a98785cc33ed2718ff88987768933b8a327f7",
+    "source_snapshot": "HTTP Last-Modified 2026-10-25T03:43:12Z; this is file publication, not a guaranteed OSM snapshot timestamp",
+    "url": "https://osmdata.openstreetmap.de/download/land-polygons-split-4326.zip"
+  }
+}

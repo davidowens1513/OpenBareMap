@@ -1,0 +1,34 @@
+{
+  "builderSHA256": "a2d345bb6682c31f1688a00fd483998eb467b93f3e591ffea94eac8fcaf26354",
+  "contoursSourceSHA256": "04fbb3951b4ee5155f3234228636e5b73f280a7578e73d23fef91f4064e88ae5",
+  "counts": {
+    "contours": 14028,
+    "grid": {
+      "grid_10km": 51,
+      "grid_1km": 492
+    },
+    "landcover": {
+      "empty_source_areas": [],
+      "features": 35681,
+      "retained": 3791,
+      "smoothed": 31890
+    }
+  },
+  "osm": {
+    "bytes": 46870377,
+    "operation": "Complete upstream extract; no merge or spatial filtering",
+    "path": "data/regions/balearic-islands/islas-baleares-261117.osm.pbf",
+    "replicationTimestamp": "2026-11-17T21:24:30Z",
+    "sha256": "56e2e564058d0a9cc68fd9e183290556f81d9a26646d12fbf5d2e4e5c8cbbe4e",
+    "snapshot_date": "2026-11-17",
+    "url": "https://download.geofabrik.de/europe/spain/islas-baleares-261117.osm.pbf"
+  },
+  "outputs": {
+    "contours.geojson": "c242782c2a15c40c02ba51981363b7724d6b0a63db23403f189e7c81e5adb3a7",
+    "grid_10km.geojson": "5dfc2509d749f05ffe7f65f8937ca1c13d0257293d20da94331755e6e2feadf0",
+    "grid_1km.geojson": "c2b684cb2ffcc8091c5e24d3b4b945c65c96212cd43354e950cc2f3d7ecaf3d7",
+    "landcover.geojson": "8bceb582378be0f9eeaf91c70673185c721a62f7c493f86c3b7cd650ccb69870"
+  },
+  "region": "balearic-islands",
+  "smootherSHA256": "7581d024dc1c1bec931642c7201db149bf64a64c814c451fa8bf37a0881ea6c9"
+}

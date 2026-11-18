@@ -94,3 +94,12 @@ promise byte-identical historical output if upstream sources have changed.
 
 No assets were uploaded, deleted, moved or downloaded in bulk during this audit.
 No Git history was rewritten and no commit or push was performed.
+
+## Follow-up on 18 November 2026
+
+The four Mediterranean editions follow the Norway rebuild policy. Git contains
+the build configuration, source locks, checksums and small release records.
+Raw OSM, Copernicus inputs, derived regional databases and Garmin build inputs
+stay local. The finished iOS and Android integration kits, Garmin IMG files
+and browser previews are delivery assets for Cloudflare R2. The restore
+inventory records the kit and IMG paths and hashes.

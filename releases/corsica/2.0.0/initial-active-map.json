@@ -1,0 +1,52 @@
+{
+  "contourIntervalMetres": 20,
+  "coverage": "Corsica and its coastal islands, including the Lavezzi Islands.",
+  "datasets": {
+    "basemap": {
+      "bytes": 62029824,
+      "path": "releases/corsica/2.0.0/maps/basemap.mbtiles",
+      "sha256": "14bce6a0186572bd2db478b88262e29ee4c4a48c1a25daca474b70d12be0f6bf",
+      "validation": {
+        "empty_tile_count": 1996,
+        "logical_tiles_sha256": "7fd0715e8ee1084675077c00b6c7fe48bb0ccffae93cdf95d32a81bea852763a",
+        "tile_count": 6949
+      }
+    },
+    "grid": {
+      "bytes": 2617344,
+      "path": "releases/corsica/2.0.0/maps/grid.mbtiles",
+      "sha256": "122d4e16c4e0ea93b7d6e797f163318b2206f004a617859f60ed072dc75ee1a3",
+      "validation": {
+        "empty_tile_count": 0,
+        "logical_tiles_sha256": "611c91392387f1b5c6154b9081846c64b11a7ba7f77fb8f7881de97298ab8a0d",
+        "tile_count": 7616
+      }
+    },
+    "hillshade": {
+      "bytes": 13885440,
+      "path": "releases/corsica/2.0.0/maps/hillshade.mbtiles",
+      "sha256": "937119dbcaed0032080dab126d2cfe98fb77bdca0cc33cbbcb4db4e4748bdbae",
+      "validation": {
+        "empty_tile_count": 0,
+        "logical_tiles_sha256": "3595695cab07ba39bfb8bcf69fc7973eefd2b84b46d6d7ceb8bc93ec458ac382",
+        "tile_count": 408
+      }
+    },
+    "topography": {
+      "bytes": 77557760,
+      "path": "releases/corsica/2.0.0/maps/topography.mbtiles",
+      "sha256": "c571a2f1a84aeaf2426e4abbef1fb54f1e9e64dd1dc35221eeb97b800b5956df",
+      "validation": {
+        "empty_tile_count": 28665,
+        "logical_tiles_sha256": "1cec2c34c336249b5dfe1237408eff0aba2e10eac63ac5d698d2579aabe66611",
+        "tile_count": 34383
+      }
+    }
+  },
+  "format": "openbaremap-development-viewer-v1",
+  "localBorders": false,
+  "mapVersion": "2.0.0",
+  "region": "corsica",
+  "storageRevision": "2.0.0-corsica-r1",
+  "styleRevision": "2.0.0-corsica-r1"
+}

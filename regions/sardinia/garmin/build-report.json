@@ -1,0 +1,160 @@
+{
+  "familyId": 4844,
+  "garminPackageRevision": "2.0.0-r1",
+  "inspection": {
+    "anchorLabels": {
+      "Nuoro": "Nuoro"
+    },
+    "bounds": [
+      8.07992935180664,
+      38.82997512817383,
+      9.880056381225586,
+      41.3400936126709
+    ],
+    "coastPolygonsByLevel": {
+      "0": {
+        "0x32": 29,
+        "0x54": 1847
+      },
+      "1": {
+        "0x32": 25,
+        "0x54": 1314
+      },
+      "2": {
+        "0x32": 25,
+        "0x54": 997
+      },
+      "3": {
+        "0x32": 25,
+        "0x54": 333
+      },
+      "4": {
+        "0x32": 25,
+        "0x54": 112
+      }
+    },
+    "contoursByLevel": {
+      "0": {
+        "0x20": 59319,
+        "0x22": 13555
+      },
+      "1": {
+        "0x20": 46992,
+        "0x22": 10564
+      },
+      "2": {
+        "0x22": 9766
+      },
+      "3": {
+        "0x10008": 8598
+      },
+      "4": {}
+    },
+    "lineInstancesAtHighestDetail": {
+      "0x10001": 3250,
+      "0x10002": 712,
+      "0x10003": 18,
+      "0x10004": 594,
+      "0x10005": 3959,
+      "0x10006": 1340,
+      "0x1000b": 2122,
+      "0x14": 1405,
+      "0x16": 32491,
+      "0x18": 15553,
+      "0x1a": 77,
+      "0x1c": 2176,
+      "0x1e": 1102,
+      "0x1f": 465,
+      "0x2": 2430,
+      "0x20": 59319,
+      "0x22": 13555,
+      "0x3": 3021,
+      "0x4": 5240,
+      "0x6": 73723,
+      "0x7": 45373,
+      "0xa": 91349
+    },
+    "logicalCombinedSHA256": "20c92adc01b7a4075e32084cee88d9b5a1cefc2f030888c90d7d3e01f4c23152",
+    "logicalHashNote": "Internal file names, sizes and payloads; only CommonHeader creation-date bytes 14..20 are zeroed for hashing. IMG archive headers are excluded. Output bytes are never modified.",
+    "logicalTileSHA256": {
+      "48440001.img": "0fca87fc975b4b538f8bb8b0f8b1524748b2146b679411fc8e166ebb2c225a88",
+      "48440002.img": "b8700e81458de1e3dfe231137aca9ff02164601065e756199adf48261cefbdda",
+      "48440003.img": "5e43bd4f9a97d956a8c45bd744549366c38e6a5105d1263fd3f7ed3fb793f381",
+      "48440004.img": "335739b8ae7f484274dbabbb7c7816c0d572e34bf3fe7f48cb15cc88012a5e20",
+      "48440005.img": "ab7c90cc3ed36156ae65bcdd1689f104c619a1970764d778a0b9a88ce535e88d",
+      "48440006.img": "49e5deb5e8a3c910c6886c12d707a192a11a3e610e72f0ecee69ae52b00fc84a",
+      "48440007.img": "90720a423a1bf958e52687878958f64b2b62a52755da7e8891ffa7d54e9cab25",
+      "48440008.img": "0c8487ede97a905b6a775284c31195fd3be3bad9f0f7ff95554b6b9f41d0c881",
+      "48440009.img": "a701e921cd5eadbbe4e87eac5ec46a01bccda02ab54f4df21143b3bfd64daa30",
+      "48440010.img": "805ed609283eb489024115a966f4fa4dd5245707bef8e7ce8aa84dc5adad2cae",
+      "48440011.img": "eadc5e17832a3f451b99f0da36bb069656b209a718893a8496fb84afa4a5bd92",
+      "48440012.img": "a57bff0995f9912963632b443e4914d0e0e2f8f63c80c449519b8525aa95bcb0",
+      "48440013.img": "b533c75e10145c195072fbaff23125616373ba3ba42d90a6c3ceeb00613e9e32",
+      "48440014.img": "d3c7c6ba8e4fd2580c59eba73ce8b697a80fd2daeb96f6c2a4d473862b5dd3f4",
+      "48440015.img": "a1482952b814c23c286c9a9fff3133cd617010cd432f534ab8827a9225957227",
+      "48440016.img": "bd01bfd10daa3442d2f1b1c384e33e22bae8c32afda7153c1ddc939797798800",
+      "48440017.img": "2283cf50d2cbddedc47f0d02c13a89040c7c0bcac4d79d9029d45033a7e31859",
+      "48440018.img": "cc79005ad2671ee11e1055c94eebe3dd1675698bb9865b5b72076bc8d85ec5dc",
+      "48440019.img": "8b5dd0a1ed81bafbeb1053e761e6bab6895edb1dff364087447064307a8838fd",
+      "48440020.img": "9c6f6ab78c641cde29699ce3171452463633e5383f00c00a9d094d3a8e69e739",
+      "48440021.img": "4901592ef4f9912006fb59185ff2ac313745bfdb88e47faac50396d201c0c1e3",
+      "48440022.img": "c2628b918510b20c5c4e1016502eae7fd5083570fb61a671981ec02cc31e606a",
+      "48440023.img": "c7a98a458180eae8a471bbf7a673b66a6b48c621d25b0a506e63a9407d9c515e",
+      "48440024.img": "201118ff824cb502f1a840b6752ef7cbd55621909114095e5a904be845ad4db7",
+      "48440025.img": "8286e62690a9f9153fd8e2737a4ad1a8ecefe098e1a32011394bd91425590eac"
+    },
+    "pointInstancesAtHighestDetail": {
+      "0x100": 2,
+      "0x10001": 506,
+      "0x10002": 858,
+      "0x10003": 2130,
+      "0x10004": 163,
+      "0x10006": 24690,
+      "0x2f0b": 6697,
+      "0x600": 28,
+      "0x650c": 896,
+      "0x6603": 265,
+      "0x6615": 209,
+      "0x6616": 2429,
+      "0x800": 431,
+      "0xb00": 765,
+      "0xc00": 4148
+    },
+    "polygonInstancesAtHighestDetail": {
+      "0x10101": 8479,
+      "0x10102": 13398,
+      "0x10103": 5597,
+      "0x10104": 11500,
+      "0x10105": 984,
+      "0x10106": 69,
+      "0x10107": 1,
+      "0x10109": 6288,
+      "0x1010a": 139,
+      "0x1010b": 14,
+      "0x13": 556412,
+      "0x32": 29,
+      "0x3c": 3851,
+      "0x50": 8543,
+      "0x51": 529,
+      "0x54": 1847
+    },
+    "routing": false,
+    "subfileBytes": {
+      "DEM": 24780002,
+      "LBL": 1580258,
+      "MPS": 1969,
+      "RGN": 52568303,
+      "SRT": 912,
+      "TRE": 605344,
+      "TYP": 2982
+    },
+    "tiles": 25
+  },
+  "output": {
+    "bytes": 79769600,
+    "path": "regions/sardinia/garmin/dist/OpenBareMap-Sardinia.img",
+    "sha256": "ef158cbf579def3deaa51e02b7998adf4f23bd01b3c810c54edb0928e8ee63bd"
+  },
+  "routing": false,
+  "status": "compiled and structurally inspected; hardware rendering pending"
+}

@@ -125,6 +125,7 @@ def build(args):
     print(json.dumps(record['validation'], indent=2))
 
 def main():
+    from regions import REGIONS
     parser = argparse.ArgumentParser()
     sub = parser.add_subparsers(dest='action', required=True)
     reg = sub.add_parser('register')
@@ -134,7 +135,7 @@ def main():
     run = sub.add_parser('build')
     run.add_argument('name',type=build_name)
     run.add_argument('--accept-toolchain', action='store_true')
-    run.add_argument('--region', choices=['ireland','england-wales','scotland','sierra-nevada','pyrenees','dolomites','faroe-islands','norway-south','norway-central','norway-north'], default='ireland')
+    run.add_argument('--region', choices=REGIONS, default='ireland')
     compare = sub.add_parser('compare')
     compare.add_argument('first',nargs='?',default='ireland-a',type=build_name)
     compare.add_argument('second',nargs='?',default='ireland-b',type=build_name)

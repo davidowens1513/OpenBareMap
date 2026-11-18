@@ -1,0 +1,32 @@
+{
+  "bundles": {
+    "android": {
+      "bytes": 160981650,
+      "contentType": "application/zip",
+      "fullPublicReadbackVerified": true,
+      "instructionsContentType": "text/plain; charset=utf-8",
+      "instructionsSHA256": "61234193145f9257686d69d90e2f486c1551747c9bc9b98149e4ba22022b804e",
+      "instructionsURL": "https://downloads.appsbyonzy.dev/OpenBareMap/corsica/2.0.0/app-bundles-v1/android/instructions.txt",
+      "sha256": "faecb354e27f373df46c81f180446ce08b06238df47e84f57f4c7e661aed7fb5",
+      "url": "https://downloads.appsbyonzy.dev/OpenBareMap/corsica/2.0.0/app-bundles-v1/android/OpenBareMap-Corsica-Android-Bundle.zip"
+    },
+    "ios": {
+      "bytes": 160981056,
+      "contentType": "application/zip",
+      "fullPublicReadbackVerified": true,
+      "instructionsContentType": "text/plain; charset=utf-8",
+      "instructionsSHA256": "e9538d5056db8d27d591f69f5be1ca0dca88431f4e8f5cd50999da5efd3e1bd5",
+      "instructionsURL": "https://downloads.appsbyonzy.dev/OpenBareMap/corsica/2.0.0/app-bundles-v1/ios/instructions.txt",
+      "sha256": "494394a3166205674ae0d2a4e2d080e2e6ed9a1a43526882ca89255d9e824d81",
+      "url": "https://downloads.appsbyonzy.dev/OpenBareMap/corsica/2.0.0/app-bundles-v1/ios/OpenBareMap-Corsica-iOS-Bundle.zip"
+    }
+  },
+  "garminInstructions": {
+    "contentType": "text/plain; charset=utf-8",
+    "sha256": "bc01047ab389f35f60199340486ae0c466f382ebb94786275b088bcaf09a4a8b",
+    "url": "https://downloads.appsbyonzy.dev/Garmin/corsica-instructions.txt",
+    "verified": true
+  },
+  "region": "corsica",
+  "verifiedUTC": "2026-11-18T11:59:56.624345+00:00"
+}

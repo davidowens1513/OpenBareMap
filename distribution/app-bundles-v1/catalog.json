@@ -1,6 +1,8 @@
 {
   "format": "openbaremap-app-bundle-catalog-v1",
   "mapVersions": {
+    "balearic-islands": "2.0.0",
+    "corsica": "2.0.0",
     "dolomites": "2.0.0",
     "england-wales": "2.0.1",
     "faroe-islands": "2.0.0",
@@ -9,10 +11,152 @@
     "norway-north": "2.0.0",
     "norway-south": "2.0.0",
     "pyrenees": "2.0.0",
+    "sardinia": "2.0.0",
     "scotland": "2.0.0",
+    "sicily": "2.0.0",
     "sierra-nevada": "2.0.0"
   },
   "regions": {
+    "balearic-islands": {
+      "android": {
+        "bytes": 101855589,
+        "datasets": {
+          "basemap": {
+            "path": "maps/basemap.mbtiles",
+            "sha256": "3f41cbe3987c433ecf9678fb11191438c4f70da591c19884e4ae7b334b2b0c4d"
+          },
+          "coast": {
+            "derivedFrom": "2a3c14c42551369fbe87f80c896be64fc747042e3016611aa17e2089076a4272",
+            "path": "maps/coast.mbtiles",
+            "sha256": "0476a85f6d95da00aceed0a95c523d573fe5aacf0775207e24d1d6d80231411c"
+          },
+          "grid": {
+            "path": "maps/grid.mbtiles",
+            "sha256": "42f3273d01dc98373481245f6f9b811340f4eb64e404f3ee1c648db253b661ae"
+          },
+          "hillshade": {
+            "path": "maps/hillshade.mbtiles",
+            "sha256": "6b570660db9d5466314f7acd9742ad44d9eb0b8bdaffc85c5126d6b981140bae"
+          },
+          "topography": {
+            "path": "maps/topography.mbtiles",
+            "sha256": "2a3c14c42551369fbe87f80c896be64fc747042e3016611aa17e2089076a4272"
+          }
+        },
+        "instructionsSHA256": "eb0fdedb2be442f9bf09a2e774a42cdf3d32ec3c4e5a8aa5323530a962cbc88b",
+        "instructionsURL": "https://downloads.appsbyonzy.dev/OpenBareMap/balearic-islands/2.0.0/app-bundles-v1/android/instructions.txt",
+        "localPath": "releases/balearic-islands/2.0.0/app-bundles-v1/android/OpenBareMap-Balearic-Islands-Android-Bundle.zip",
+        "mapManifestSHA256": "42ebda3bbab621184fdd42c7fe932eb2c9829e56e4198e5e2668898b291d8542",
+        "r2Key": "OpenBareMap/balearic-islands/2.0.0/app-bundles-v1/android/OpenBareMap-Balearic-Islands-Android-Bundle.zip",
+        "sha256": "4e126f59e9c705eeb1cc1025cd0f3fa72b84eb78f79fe8ec950cb6f9cd81d13e",
+        "url": "https://downloads.appsbyonzy.dev/OpenBareMap/balearic-islands/2.0.0/app-bundles-v1/android/OpenBareMap-Balearic-Islands-Android-Bundle.zip"
+      },
+      "ios": {
+        "bytes": 101855009,
+        "datasets": {
+          "basemap": {
+            "path": "maps/basemap.mbtiles",
+            "sha256": "3f41cbe3987c433ecf9678fb11191438c4f70da591c19884e4ae7b334b2b0c4d"
+          },
+          "coast": {
+            "derived_from": "2a3c14c42551369fbe87f80c896be64fc747042e3016611aa17e2089076a4272",
+            "maxzoom": 12,
+            "operation": "Preserve land-layer MVT bytes only through zoom 12; omit other layers.",
+            "path": "maps/coast.mbtiles",
+            "sha256": "0476a85f6d95da00aceed0a95c523d573fe5aacf0775207e24d1d6d80231411c"
+          },
+          "grid": {
+            "path": "maps/grid.mbtiles",
+            "sha256": "42f3273d01dc98373481245f6f9b811340f4eb64e404f3ee1c648db253b661ae"
+          },
+          "hillshade": {
+            "path": "maps/hillshade.mbtiles",
+            "sha256": "6b570660db9d5466314f7acd9742ad44d9eb0b8bdaffc85c5126d6b981140bae"
+          },
+          "topography": {
+            "path": "maps/topography.mbtiles",
+            "sha256": "2a3c14c42551369fbe87f80c896be64fc747042e3016611aa17e2089076a4272"
+          }
+        },
+        "instructionsSHA256": "9e31b0a69e5658ccb3abbfd873fbc10e37203ca35a17a9d9efdb149792df1bbd",
+        "instructionsURL": "https://downloads.appsbyonzy.dev/OpenBareMap/balearic-islands/2.0.0/app-bundles-v1/ios/instructions.txt",
+        "localPath": "releases/balearic-islands/2.0.0/app-bundles-v1/ios/OpenBareMap-Balearic-Islands-iOS-Bundle.zip",
+        "mapManifestSHA256": "07942b4432c8a526d3d9684f317f760a7c781f29f3fa4a8676b6cb10b6391da4",
+        "r2Key": "OpenBareMap/balearic-islands/2.0.0/app-bundles-v1/ios/OpenBareMap-Balearic-Islands-iOS-Bundle.zip",
+        "sha256": "807f5d6bb00b0ab528cf702fabafa33761173d66b26e0be56a940dcebe7b4d18",
+        "url": "https://downloads.appsbyonzy.dev/OpenBareMap/balearic-islands/2.0.0/app-bundles-v1/ios/OpenBareMap-Balearic-Islands-iOS-Bundle.zip"
+      }
+    },
+    "corsica": {
+      "android": {
+        "bytes": 160981650,
+        "datasets": {
+          "basemap": {
+            "path": "maps/basemap.mbtiles",
+            "sha256": "14bce6a0186572bd2db478b88262e29ee4c4a48c1a25daca474b70d12be0f6bf"
+          },
+          "coast": {
+            "derivedFrom": "fbb563b9779c47a433ab7e56992ce84007a689b854696eea84045aea3337fa03",
+            "path": "maps/coast.mbtiles",
+            "sha256": "f9ea31cf71fdde2cb53a921b1de04ba74a373f3085a4fec8a4a335dcd57d917e"
+          },
+          "grid": {
+            "path": "maps/grid.mbtiles",
+            "sha256": "122d4e16c4e0ea93b7d6e797f163318b2206f004a617859f60ed072dc75ee1a3"
+          },
+          "hillshade": {
+            "path": "maps/hillshade.mbtiles",
+            "sha256": "937119dbcaed0032080dab126d2cfe98fb77bdca0cc33cbbcb4db4e4748bdbae"
+          },
+          "topography": {
+            "path": "maps/topography.mbtiles",
+            "sha256": "fbb563b9779c47a433ab7e56992ce84007a689b854696eea84045aea3337fa03"
+          }
+        },
+        "instructionsSHA256": "61234193145f9257686d69d90e2f486c1551747c9bc9b98149e4ba22022b804e",
+        "instructionsURL": "https://downloads.appsbyonzy.dev/OpenBareMap/corsica/2.0.0/app-bundles-v1/android/instructions.txt",
+        "localPath": "releases/corsica/2.0.0/app-bundles-v1/android/OpenBareMap-Corsica-Android-Bundle.zip",
+        "mapManifestSHA256": "1280507c8754636c494e33120f297b819de0725574d0d401081ef266b4065841",
+        "r2Key": "OpenBareMap/corsica/2.0.0/app-bundles-v1/android/OpenBareMap-Corsica-Android-Bundle.zip",
+        "sha256": "faecb354e27f373df46c81f180446ce08b06238df47e84f57f4c7e661aed7fb5",
+        "url": "https://downloads.appsbyonzy.dev/OpenBareMap/corsica/2.0.0/app-bundles-v1/android/OpenBareMap-Corsica-Android-Bundle.zip"
+      },
+      "ios": {
+        "bytes": 160981056,
+        "datasets": {
+          "basemap": {
+            "path": "maps/basemap.mbtiles",
+            "sha256": "14bce6a0186572bd2db478b88262e29ee4c4a48c1a25daca474b70d12be0f6bf"
+          },
+          "coast": {
+            "derived_from": "fbb563b9779c47a433ab7e56992ce84007a689b854696eea84045aea3337fa03",
+            "maxzoom": 12,
+            "operation": "Preserve land-layer MVT bytes only through zoom 12; omit other layers.",
+            "path": "maps/coast.mbtiles",
+            "sha256": "f9ea31cf71fdde2cb53a921b1de04ba74a373f3085a4fec8a4a335dcd57d917e"
+          },
+          "grid": {
+            "path": "maps/grid.mbtiles",
+            "sha256": "122d4e16c4e0ea93b7d6e797f163318b2206f004a617859f60ed072dc75ee1a3"
+          },
+          "hillshade": {
+            "path": "maps/hillshade.mbtiles",
+            "sha256": "937119dbcaed0032080dab126d2cfe98fb77bdca0cc33cbbcb4db4e4748bdbae"
+          },
+          "topography": {
+            "path": "maps/topography.mbtiles",
+            "sha256": "fbb563b9779c47a433ab7e56992ce84007a689b854696eea84045aea3337fa03"
+          }
+        },
+        "instructionsSHA256": "e9538d5056db8d27d591f69f5be1ca0dca88431f4e8f5cd50999da5efd3e1bd5",
+        "instructionsURL": "https://downloads.appsbyonzy.dev/OpenBareMap/corsica/2.0.0/app-bundles-v1/ios/instructions.txt",
+        "localPath": "releases/corsica/2.0.0/app-bundles-v1/ios/OpenBareMap-Corsica-iOS-Bundle.zip",
+        "mapManifestSHA256": "43557d74e2de6f10927677ea96fab2ddfaff214d0f57c769ce376103932dedd3",
+        "r2Key": "OpenBareMap/corsica/2.0.0/app-bundles-v1/ios/OpenBareMap-Corsica-iOS-Bundle.zip",
+        "sha256": "494394a3166205674ae0d2a4e2d080e2e6ed9a1a43526882ca89255d9e824d81",
+        "url": "https://downloads.appsbyonzy.dev/OpenBareMap/corsica/2.0.0/app-bundles-v1/ios/OpenBareMap-Corsica-iOS-Bundle.zip"
+      }
+    },
     "dolomites": {
       "android": {
         "bytes": 855063423,
@@ -573,6 +717,76 @@
         "url": "https://downloads.appsbyonzy.dev/OpenBareMap/pyrenees/2.0.0/app-bundles-v1/ios/OpenBareMap-Pyrenees-iOS-Bundle.zip"
       }
     },
+    "sardinia": {
+      "android": {
+        "bytes": 309150408,
+        "datasets": {
+          "basemap": {
+            "path": "maps/basemap.mbtiles",
+            "sha256": "9af889c59093a50447f1528aa1927fe10d210a3b201cf93c864d72a33e225dc2"
+          },
+          "coast": {
+            "derivedFrom": "e124c2dd5bb524b7c3c4fac3c532c8837960736ee914e27fe14a5c1ab39d21ba",
+            "path": "maps/coast.mbtiles",
+            "sha256": "566322a45ccf8e676a262028e09b025003ca25b60b93b4bb0bdffa847495a7b9"
+          },
+          "grid": {
+            "path": "maps/grid.mbtiles",
+            "sha256": "0530006a47c5a8bd64f3a48e32fb49aec2f3fab624bd4750afb88c84770b7755"
+          },
+          "hillshade": {
+            "path": "maps/hillshade.mbtiles",
+            "sha256": "ce4d33504e5cf1710581406248482341e486841160a6b6b5e441fa30eb3a317f"
+          },
+          "topography": {
+            "path": "maps/topography.mbtiles",
+            "sha256": "e124c2dd5bb524b7c3c4fac3c532c8837960736ee914e27fe14a5c1ab39d21ba"
+          }
+        },
+        "instructionsSHA256": "5dcd030eb0075f9b09dbbc2dc5ea6af5365db3142e306d74654260fe8272931c",
+        "instructionsURL": "https://downloads.appsbyonzy.dev/OpenBareMap/sardinia/2.0.0/app-bundles-v1/android/instructions.txt",
+        "localPath": "releases/sardinia/2.0.0/app-bundles-v1/android/OpenBareMap-Sardinia-Android-Bundle.zip",
+        "mapManifestSHA256": "baf6ebc28b9a13dc29974ef9c8dae28d4f252caaac61de8c10379e0002c8aa4f",
+        "r2Key": "OpenBareMap/sardinia/2.0.0/app-bundles-v1/android/OpenBareMap-Sardinia-Android-Bundle.zip",
+        "sha256": "a727fa7af0e5386287c144b8a7c803ed5eeee8a56dfe3d9b0ceef0b69519a830",
+        "url": "https://downloads.appsbyonzy.dev/OpenBareMap/sardinia/2.0.0/app-bundles-v1/android/OpenBareMap-Sardinia-Android-Bundle.zip"
+      },
+      "ios": {
+        "bytes": 309149816,
+        "datasets": {
+          "basemap": {
+            "path": "maps/basemap.mbtiles",
+            "sha256": "9af889c59093a50447f1528aa1927fe10d210a3b201cf93c864d72a33e225dc2"
+          },
+          "coast": {
+            "derived_from": "e124c2dd5bb524b7c3c4fac3c532c8837960736ee914e27fe14a5c1ab39d21ba",
+            "maxzoom": 12,
+            "operation": "Preserve land-layer MVT bytes only through zoom 12; omit other layers.",
+            "path": "maps/coast.mbtiles",
+            "sha256": "566322a45ccf8e676a262028e09b025003ca25b60b93b4bb0bdffa847495a7b9"
+          },
+          "grid": {
+            "path": "maps/grid.mbtiles",
+            "sha256": "0530006a47c5a8bd64f3a48e32fb49aec2f3fab624bd4750afb88c84770b7755"
+          },
+          "hillshade": {
+            "path": "maps/hillshade.mbtiles",
+            "sha256": "ce4d33504e5cf1710581406248482341e486841160a6b6b5e441fa30eb3a317f"
+          },
+          "topography": {
+            "path": "maps/topography.mbtiles",
+            "sha256": "e124c2dd5bb524b7c3c4fac3c532c8837960736ee914e27fe14a5c1ab39d21ba"
+          }
+        },
+        "instructionsSHA256": "84e47277be140ed9c243662ba5a51a85a5a752d9d830f844bbea743008c7820d",
+        "instructionsURL": "https://downloads.appsbyonzy.dev/OpenBareMap/sardinia/2.0.0/app-bundles-v1/ios/instructions.txt",
+        "localPath": "releases/sardinia/2.0.0/app-bundles-v1/ios/OpenBareMap-Sardinia-iOS-Bundle.zip",
+        "mapManifestSHA256": "1d181229b6d5a76cb59e3a568eb0a0729e7f5d34419f2b33e53ec2866bcdd5a5",
+        "r2Key": "OpenBareMap/sardinia/2.0.0/app-bundles-v1/ios/OpenBareMap-Sardinia-iOS-Bundle.zip",
+        "sha256": "31b4e3f8fa2f45f4bb99ca22a86a8b43efa7aef5752139c48fafdbf6c6978c7c",
+        "url": "https://downloads.appsbyonzy.dev/OpenBareMap/sardinia/2.0.0/app-bundles-v1/ios/OpenBareMap-Sardinia-iOS-Bundle.zip"
+      }
+    },
     "scotland": {
       "android": {
         "bytes": 1340627060,
@@ -641,6 +855,76 @@
         "r2Key": "OpenBareMap/scotland/2.0.0/app-bundles-v1/ios/OpenBareMap-Scotland-iOS-Bundle.zip",
         "sha256": "d8ec7868706fee8f71f2b2c4d2fbb0d841e99f6fb7bc550efb5f245f87ac813d",
         "url": "https://downloads.appsbyonzy.dev/OpenBareMap/scotland/2.0.0/app-bundles-v1/ios/OpenBareMap-Scotland-iOS-Bundle.zip"
+      }
+    },
+    "sicily": {
+      "android": {
+        "bytes": 374071142,
+        "datasets": {
+          "basemap": {
+            "path": "maps/basemap.mbtiles",
+            "sha256": "3856e3bfeb3303396ec6ba789e6b3720d0d27f2889d93714c6c1c948aedb3ffe"
+          },
+          "coast": {
+            "derivedFrom": "451a41e97a8a0dfa2ad4435e88784d5ff3a137ec597ffeb5d3e956a012babd70",
+            "path": "maps/coast.mbtiles",
+            "sha256": "e54774a009028f3ec4b5ee4c466a62707faab8af63c5b2311ad241d16590867a"
+          },
+          "grid": {
+            "path": "maps/grid.mbtiles",
+            "sha256": "a80d89ddd8e69ea6e74b0d217e255472b8c1d18c751572041989464c0ae94d40"
+          },
+          "hillshade": {
+            "path": "maps/hillshade.mbtiles",
+            "sha256": "d4ff42d80342a425d5ab9981d846ee17125ddc85a4106ebaa795053ae25bf974"
+          },
+          "topography": {
+            "path": "maps/topography.mbtiles",
+            "sha256": "451a41e97a8a0dfa2ad4435e88784d5ff3a137ec597ffeb5d3e956a012babd70"
+          }
+        },
+        "instructionsSHA256": "b707d6ee16a09c75a4444805444e7c3248bc290078764cd530453b1f8c2631f7",
+        "instructionsURL": "https://downloads.appsbyonzy.dev/OpenBareMap/sicily/2.0.0/app-bundles-v1/android/instructions.txt",
+        "localPath": "releases/sicily/2.0.0/app-bundles-v1/android/OpenBareMap-Sicily-Android-Bundle.zip",
+        "mapManifestSHA256": "8f08916203beec5227c058b771db4f37a6599a7370c8fdf8ccca98ce72df6b20",
+        "r2Key": "OpenBareMap/sicily/2.0.0/app-bundles-v1/android/OpenBareMap-Sicily-Android-Bundle.zip",
+        "sha256": "d9c116dabdaa08f75071895f6ca20d40152a719fbf5989c578508df17d710a27",
+        "url": "https://downloads.appsbyonzy.dev/OpenBareMap/sicily/2.0.0/app-bundles-v1/android/OpenBareMap-Sicily-Android-Bundle.zip"
+      },
+      "ios": {
+        "bytes": 374070548,
+        "datasets": {
+          "basemap": {
+            "path": "maps/basemap.mbtiles",
+            "sha256": "3856e3bfeb3303396ec6ba789e6b3720d0d27f2889d93714c6c1c948aedb3ffe"
+          },
+          "coast": {
+            "derived_from": "451a41e97a8a0dfa2ad4435e88784d5ff3a137ec597ffeb5d3e956a012babd70",
+            "maxzoom": 12,
+            "operation": "Preserve land-layer MVT bytes only through zoom 12; omit other layers.",
+            "path": "maps/coast.mbtiles",
+            "sha256": "e54774a009028f3ec4b5ee4c466a62707faab8af63c5b2311ad241d16590867a"
+          },
+          "grid": {
+            "path": "maps/grid.mbtiles",
+            "sha256": "a80d89ddd8e69ea6e74b0d217e255472b8c1d18c751572041989464c0ae94d40"
+          },
+          "hillshade": {
+            "path": "maps/hillshade.mbtiles",
+            "sha256": "d4ff42d80342a425d5ab9981d846ee17125ddc85a4106ebaa795053ae25bf974"
+          },
+          "topography": {
+            "path": "maps/topography.mbtiles",
+            "sha256": "451a41e97a8a0dfa2ad4435e88784d5ff3a137ec597ffeb5d3e956a012babd70"
+          }
+        },
+        "instructionsSHA256": "82323553c5f837e66f5580834e2c66e83e1a4e5cb2060a985da6b158a2914657",
+        "instructionsURL": "https://downloads.appsbyonzy.dev/OpenBareMap/sicily/2.0.0/app-bundles-v1/ios/instructions.txt",
+        "localPath": "releases/sicily/2.0.0/app-bundles-v1/ios/OpenBareMap-Sicily-iOS-Bundle.zip",
+        "mapManifestSHA256": "796fc6f8712827ae027664cac2fa52752a6f2e966db48f62eb8e21502f22a58d",
+        "r2Key": "OpenBareMap/sicily/2.0.0/app-bundles-v1/ios/OpenBareMap-Sicily-iOS-Bundle.zip",
+        "sha256": "75f003dea7891d58697ea48291e4927d3e46dd3e99e62b59fe01aea194abf7ef",
+        "url": "https://downloads.appsbyonzy.dev/OpenBareMap/sicily/2.0.0/app-bundles-v1/ios/OpenBareMap-Sicily-iOS-Bundle.zip"
       }
     },
     "sierra-nevada": {
@@ -714,5 +998,5 @@
       }
     }
   },
-  "sourceCommit": "8d3e02d7686b31841a526f01df779ed6baa304c2"
+  "sourceCommit": "71a6780d092a42a7861618888fbb7a7e3a1dacb4"
 }

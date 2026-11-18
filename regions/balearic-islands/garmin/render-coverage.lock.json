@@ -1,0 +1,58 @@
+{
+  "bounds": [
+    1.12,
+    38.57,
+    4.4,
+    40.15
+  ],
+  "contextEnvelope": [
+    1.12,
+    38.57,
+    4.4,
+    40.15
+  ],
+  "drawPriority": 25,
+  "format": "openbaremap-garmin-render-footprint-v1",
+  "geometry": {
+    "bytes": 1090,
+    "path": "regions/balearic-islands/garmin/render-coverage.geojson",
+    "sha256": "2c241e6b022412f9c3c463a862fd7fa2dd59d71c90efdb9635ec8ec28f8a8552"
+  },
+  "inputs": [
+    {
+      "bytes": 232,
+      "path": "data/regions/balearic-islands/islas-baleares.poly",
+      "sha256": "2a93d024f378d5fad6c2a8239f6b5f28f529bd006141105ddceb006383aab88a",
+      "url": "https://download.geofabrik.de/europe/spain/islas-baleares.poly"
+    }
+  ],
+  "knownDestinationsCovered": {
+    "cabrera": [
+      2.94,
+      39.15
+    ],
+    "formentera": [
+      1.45,
+      38.71
+    ],
+    "ibiza": [
+      1.4,
+      38.96
+    ],
+    "menorca": [
+      4.1,
+      39.98
+    ],
+    "palma": [
+      2.65,
+      39.57
+    ],
+    "s\u00f3ller": [
+      2.715,
+      39.766
+    ]
+  },
+  "purpose": "Rectangular Garmin tiles may overlap other countries. Do not fill their padding with sea, land or land-cover polygons.",
+  "region": "balearic-islands",
+  "transparentNativeMap": true
+}

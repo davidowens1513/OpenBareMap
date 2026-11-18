@@ -1,0 +1,106 @@
+{
+  "acceptance": "Automated checks only; see validation and visual-review records for actual reviewed scope.",
+  "coverage": "Mallorca, Menorca, Ibiza, Formentera, Cabrera and nearby islets.",
+  "datasets": {
+    "basemap": {
+      "bytes": 66048000,
+      "path": "releases/balearic-islands/2.0.0/maps/basemap.mbtiles",
+      "sha256": "3f41cbe3987c433ecf9678fb11191438c4f70da591c19884e4ae7b334b2b0c4d",
+      "validation": {
+        "empty_tile_count": 1739,
+        "logical_tiles_sha256": "834a0e28fbbbe8bab0bb3b5092d77c8bbe85a5093a914f7025e0295adcac7a02",
+        "tile_count": 6517
+      }
+    },
+    "grid": {
+      "bytes": 6782976,
+      "path": "releases/balearic-islands/2.0.0/maps/grid.mbtiles",
+      "sha256": "42f3273d01dc98373481245f6f9b811340f4eb64e404f3ee1c648db253b661ae",
+      "validation": {
+        "empty_tile_count": 0,
+        "logical_tiles_sha256": "f58a68755e920c4848c44666bca3a8e33a58dc99b1f3a29fdf3fcf373bae2e14",
+        "tile_count": 19078
+      }
+    },
+    "hillshade": {
+      "bytes": 5685248,
+      "path": "releases/balearic-islands/2.0.0/maps/hillshade.mbtiles",
+      "sha256": "6b570660db9d5466314f7acd9742ad44d9eb0b8bdaffc85c5126d6b981140bae",
+      "validation": {
+        "empty_tile_count": 0,
+        "logical_tiles_sha256": "4fc5a4ff960f04454605d3fb93e998ed2c28211cf8a71b4abf32088f023a2273",
+        "tile_count": 256
+      }
+    },
+    "topography": {
+      "bytes": 19034112,
+      "path": "releases/balearic-islands/2.0.0/maps/topography-context.mbtiles",
+      "sha256": "2a3c14c42551369fbe87f80c896be64fc747042e3016611aa17e2089076a4272",
+      "validation": {
+        "empty_tile_count": 14957,
+        "logical_tiles_sha256": "37c2a21799acbef565d2502aef60fd064e848d269f05ac3c43726cd8d2044b00",
+        "tile_count": 18077
+      }
+    }
+  },
+  "garmin": {
+    "bytes": 23934976,
+    "path": "regions/balearic-islands/garmin/dist/OpenBareMap-Balearic-Islands.img",
+    "sha256": "3022969fca63b99153e242a419fde7968652b647ba5a06de2959f91b52294f51"
+  },
+  "geometryReport": {
+    "path": "releases/balearic-islands/2.0.0/build-records/geometry-report.json",
+    "sha256": "a9fcda5862a1c026cb7e55dd990e83216317496a5185d791411793fbf9745382"
+  },
+  "hostAppsModified": false,
+  "mapVersion": "2.0.0",
+  "osm": {
+    "bytes": 46870377,
+    "operation": "Complete upstream extract; no merge or spatial filtering",
+    "path": "data/regions/balearic-islands/islas-baleares-261117.osm.pbf",
+    "replicationTimestamp": "2026-11-17T21:24:30Z",
+    "sha256": "56e2e564058d0a9cc68fd9e183290556f81d9a26646d12fbf5d2e4e5c8cbbe4e",
+    "snapshot_date": "2026-11-17",
+    "url": "https://download.geofabrik.de/europe/spain/islas-baleares-261117.osm.pbf"
+  },
+  "packages": {
+    "android": {
+      "archive": {
+        "bytes": 101827136,
+        "path": "regions/balearic-islands/android/OpenBareMap-Android.zip",
+        "sha256": "ebe8eea1d65fa57d4b5cb0ed5a5fdf12cc1dbada91248f54c85bc289de6a4d8e"
+      },
+      "checksumsSHA256": "f78ffd487a1349499f6e7bb9f3263d4e610802becf74b0dbf7bb3a48dc076cf1",
+      "manifestSHA256": "42ebda3bbab621184fdd42c7fe932eb2c9829e56e4198e5e2668898b291d8542",
+      "path": "regions/balearic-islands/android",
+      "validationSHA256": "46d962faeccda4a35c913fc17678cfa8725a4aa25fe22dae018356c57ad5b7d1"
+    },
+    "ios": {
+      "checksumsSHA256": "113500ff8db0d4e64490099316c1caa3029f200f7d5e9cb10bd10ab4f197bf0b",
+      "manifestSHA256": "07942b4432c8a526d3d9684f317f760a7c781f29f3fa4a8676b6cb10b6391da4",
+      "path": "regions/balearic-islands/ios",
+      "validationSHA256": "e2121bb5e73adfa7f9b13506101c2bee94108ec950dcc7e024532d4ecf15dba2"
+    }
+  },
+  "pythonRuntime": {
+    "packages": {
+      "Pillow": "12.3.0",
+      "certifi": "2026.10.23",
+      "charset-normalizer": "3.5.2",
+      "idna": "3.20",
+      "numpy": "2.5.4",
+      "osmium": "4.3.2",
+      "pyproj": "3.8.0",
+      "requests": "2.34.2",
+      "shapely": "2.2.0",
+      "urllib3": "2.8.0"
+    },
+    "platform": "macOS-27.2.1-arm64-arm-64bit-Mach-O",
+    "python": "3.14.5 (main, May 10 2026, 10:21:34) [Clang 21.0.0 (clang-2100.0.123.102)]",
+    "requirementsSHA256": "427f12ff8b49bfebac0a7d453c2f65bd15d6695584b18e6ecee1fdfeed20a36c"
+  },
+  "region": "balearic-islands",
+  "styleSHA256": "e1aa45f999ecf9f42b99b3c3290cb6480ec85475399756539e8180a29a5e6b2f",
+  "terrainLockSHA256": "90265313b862323f895bd6eff01c6c1b8f6bbf32a91eee8ab94d682d7c0962e8",
+  "validation": "validation.json"
+}

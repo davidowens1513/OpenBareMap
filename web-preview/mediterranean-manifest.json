@@ -1,0 +1,137 @@
+{
+  "regions": {
+    "balearic-islands": {
+      "basemap": {
+        "sourceSHA256": "3f41cbe3987c433ecf9678fb11191438c4f70da591c19884e4ae7b334b2b0c4d",
+        "bytes": 63974043,
+        "sha256": "7f2e404292024856f941966790c6fac0de0ae64a6029775426b7fa2b004ab25f",
+        "tiles": 6517
+      },
+      "grid": {
+        "sourceSHA256": "42f3273d01dc98373481245f6f9b811340f4eb64e404f3ee1c648db253b661ae",
+        "bytes": 5822871,
+        "sha256": "57dd88fa7c0c1a85b4b35eba3058024b9fccbd5d09b371567405274cd1329c05",
+        "tiles": 19078
+      },
+      "hillshade": {
+        "sourceSHA256": "6b570660db9d5466314f7acd9742ad44d9eb0b8bdaffc85c5126d6b981140bae",
+        "bytes": 5496420,
+        "sha256": "e13fbf5548ec6f92006523499d7968ddbcb3c07b83d7e0fa2a80b41f92bfe82c",
+        "tiles": 256
+      },
+      "topography": {
+        "sourceSHA256": "2a3c14c42551369fbe87f80c896be64fc747042e3016611aa17e2089076a4272",
+        "bytes": 16625937,
+        "sha256": "0cbbbb0e9235b7a5a595df9547eacc6d402cdb100d660114965299963f485e69",
+        "tiles": 18077
+      },
+      "coast": {
+        "sourceSHA256": "0476a85f6d95da00aceed0a95c523d573fe5aacf0775207e24d1d6d80231411c",
+        "bytes": 583122,
+        "sha256": "215f67a2ec1e03a98b5f9c248620203725d81d5c5a9ef140be419f942429d917",
+        "tiles": 1307
+      }
+    },
+    "corsica": {
+      "basemap": {
+        "sourceSHA256": "14bce6a0186572bd2db478b88262e29ee4c4a48c1a25daca474b70d12be0f6bf",
+        "bytes": 58737055,
+        "sha256": "25b058c39c2b8d3dbbafb033ccefa0bd657fd831a20ce863f29e5b6fe01bfc6e",
+        "tiles": 6949
+      },
+      "grid": {
+        "sourceSHA256": "122d4e16c4e0ea93b7d6e797f163318b2206f004a617859f60ed072dc75ee1a3",
+        "bytes": 2229451,
+        "sha256": "03afc179dde656a2447e180adcd31f564f6e7ced0a6ccccda1a20c114fc045ec",
+        "tiles": 7616
+      },
+      "hillshade": {
+        "sourceSHA256": "937119dbcaed0032080dab126d2cfe98fb77bdca0cc33cbbcb4db4e4748bdbae",
+        "bytes": 13549750,
+        "sha256": "50374fd47bcb0df517482df0559d45b2b1188322c986f20ff0566dd42122dbe1",
+        "tiles": 408
+      },
+      "topography": {
+        "sourceSHA256": "fbb563b9779c47a433ab7e56992ce84007a689b854696eea84045aea3337fa03",
+        "bytes": 72752874,
+        "sha256": "570f1f042311657c5d53dc33cf4b973031e6f841009ff5010d5513ebbbf5bce2",
+        "tiles": 34383
+      },
+      "coast": {
+        "sourceSHA256": "f9ea31cf71fdde2cb53a921b1de04ba74a373f3085a4fec8a4a335dcd57d917e",
+        "bytes": 1066684,
+        "sha256": "d195404dee1b6b39ede4371408ea915ede38a704341c3ad01c9a6810cac6216a",
+        "tiles": 2467
+      }
+    },
+    "sardinia": {
+      "basemap": {
+        "sourceSHA256": "9af889c59093a50447f1528aa1927fe10d210a3b201cf93c864d72a33e225dc2",
+        "bytes": 137826954,
+        "sha256": "7e03eeb91dcfecd53e2546634b6d48470df12629f3810729598dc608708d7ac7",
+        "tiles": 15588
+      },
+      "grid": {
+        "sourceSHA256": "0530006a47c5a8bd64f3a48e32fb49aec2f3fab624bd4750afb88c84770b7755",
+        "bytes": 5038299,
+        "sha256": "4566ad8b56aa788fadbbd335d0e9bf9fc835c4e3a03a45b548dc949f56a013b3",
+        "tiles": 16734
+      },
+      "hillshade": {
+        "sourceSHA256": "ce4d33504e5cf1710581406248482341e486841160a6b6b5e441fa30eb3a317f",
+        "bytes": 31728187,
+        "sha256": "526ea1eb09bea2dcbdf54646851b64aacac758b8f7d984750cff62c7cdcc7e5e",
+        "tiles": 860
+      },
+      "topography": {
+        "sourceSHA256": "e124c2dd5bb524b7c3c4fac3c532c8837960736ee914e27fe14a5c1ab39d21ba",
+        "bytes": 112469783,
+        "sha256": "a10eb996529fab5fd4a1689ab0ea4adbb0e009b1c9245968e8d0e61c3642e6e7",
+        "tiles": 19681
+      },
+      "coast": {
+        "sourceSHA256": "566322a45ccf8e676a262028e09b025003ca25b60b93b4bb0bdffa847495a7b9",
+        "bytes": 1074047,
+        "sha256": "55eb0ce49b25251f566eea4f3fe6a34e6b8c274045dcac1141ba185b2326e90f",
+        "tiles": 1544
+      }
+    },
+    "sicily": {
+      "basemap": {
+        "sourceSHA256": "3856e3bfeb3303396ec6ba789e6b3720d0d27f2889d93714c6c1c948aedb3ffe",
+        "bytes": 189068629,
+        "sha256": "483b22ff43dd66dd5ab6aab16848b20e6f44fa10cc8a9808a481c249d431acc4",
+        "tiles": 23072
+      },
+      "grid": {
+        "sourceSHA256": "a80d89ddd8e69ea6e74b0d217e255472b8c1d18c751572041989464c0ae94d40",
+        "bytes": 14593932,
+        "sha256": "783f601cf01f07eea3b845cddca0ab41a02bc6b0745ab0781d2188ef4b5067ad",
+        "tiles": 46253
+      },
+      "hillshade": {
+        "sourceSHA256": "d4ff42d80342a425d5ab9981d846ee17125ddc85a4106ebaa795053ae25bf974",
+        "bytes": 30875255,
+        "sha256": "c0c4b7d18f3b2ce652921de3b1561fc9c36da138556ee1d77e9dd74c571bd88a",
+        "tiles": 963
+      },
+      "topography": {
+        "sourceSHA256": "451a41e97a8a0dfa2ad4435e88784d5ff3a137ec597ffeb5d3e956a012babd70",
+        "bytes": 114720199,
+        "sha256": "116018be3121003601d9149a95e864be1cfa1afd57c91fa8c84fd38bc565b38f",
+        "tiles": 33402
+      },
+      "coast": {
+        "sourceSHA256": "e54774a009028f3ec4b5ee4c466a62707faab8af63c5b2311ad241d16590867a",
+        "bytes": 724791,
+        "sha256": "989b40c51df67c35deddcf46b4cacc4f2f67cf1300b4ed97c46fb540184a63df",
+        "tiles": 2527
+      }
+    }
+  },
+  "pmtilesPython": "3.8.1",
+  "pmtilesJS": "4.5.0",
+  "librarySHA256": "caf981bc46f6327ee7e65d5dc964d89d38a69f60edca2bd4c5c890c21b554c6c",
+  "dataOrigin": "https://downloads.appsbyonzy.dev/OpenBareMap/mediterranean/2.0.0/preview",
+  "scope": "Complete selected map tiles; no regional or zoom sampling."
+}

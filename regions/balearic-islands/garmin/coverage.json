@@ -1,0 +1,31 @@
+{
+  "areaSquareDegrees": 5.182399999999995,
+  "bounds": [
+    1.12,
+    38.57,
+    4.4,
+    40.15
+  ],
+  "entireRequestedFootprintCovered": true,
+  "exactFootprint": null,
+  "inputs": [
+    {
+      "bytes": 232,
+      "path": "data/regions/balearic-islands/islas-baleares.poly",
+      "sha256": "2a93d024f378d5fad6c2a8239f6b5f28f529bd006141105ddceb006383aab88a",
+      "url": "https://download.geofabrik.de/europe/spain/islas-baleares.poly"
+    }
+  ],
+  "knownDestinationsCovered": [
+    "island",
+    "palma",
+    "menorca",
+    "ibiza",
+    "formentera",
+    "cabrera",
+    "s\u00f3ller"
+  ],
+  "operation": "Requested rectangular crop; source outlines cover all destination anchors",
+  "polygons": 1,
+  "sha256": "656d155bb0d00dcb7efc999396cb845346e37b71d9488ddb6635b1e84d21a172"
+}
