@@ -1,0 +1,66 @@
+{
+  "bounds": [
+    32.2,
+    34.52,
+    34.66,
+    35.76
+  ],
+  "contextEnvelope": [
+    32.2,
+    34.52,
+    34.66,
+    35.76
+  ],
+  "drawPriority": 25,
+  "format": "openbaremap-garmin-render-footprint-v1",
+  "geometry": {
+    "bytes": 1084,
+    "path": "regions/cyprus/garmin/render-coverage.geojson",
+    "sha256": "acf6b1e9763b2b4c6a81742b01be70f1daa422fe24e9d7b14f9eadd2a57c7600"
+  },
+  "inputs": [
+    {
+      "bytes": 263,
+      "path": "data/regions/cyprus/cyprus.poly",
+      "sha256": "8e9d7805c8b215172470dbbc5d13d4ec0efdf170018cda503337165d95c9d7b9",
+      "url": "https://download.geofabrik.de/europe/cyprus.poly"
+    }
+  ],
+  "knownDestinationsCovered": {
+    "akamas": [
+      32.324,
+      35.025
+    ],
+    "karpas": [
+      34.532,
+      35.665
+    ],
+    "kyrenia": [
+      33.315,
+      35.338
+    ],
+    "larnaca": [
+      33.627,
+      34.917
+    ],
+    "limassol": [
+      33.038,
+      34.68
+    ],
+    "nicosia": [
+      33.362,
+      35.173
+    ],
+    "paphos": [
+      32.425,
+      34.776
+    ],
+    "troodos": [
+      32.879,
+      34.923
+    ]
+  },
+  "purpose": "Rectangular Garmin tiles may overlap other countries. Do not fill their padding with sea, land or land-cover polygons.",
+  "region": "cyprus",
+  "transparentNativeMap": true
+}

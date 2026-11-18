@@ -1,0 +1,313 @@
+{
+  "accessed_utc": "2026-11-18T12:34:11.322182+00:00",
+  "assets": [
+    {
+      "bytes": 25239,
+      "operation": "Zero ocean cell: no tile in the pinned official GLO-30 public inventory",
+      "path": "data/regions/malta/elevation/N34E013.hgt.gz",
+      "sha256": "ef878716b82ba575fc448ca49fae2f720981192a09f3cb94ba95a759e62e0767",
+      "url": null
+    },
+    {
+      "bytes": 25239,
+      "operation": "Zero ocean cell: no tile in the pinned official GLO-30 public inventory",
+      "path": "data/regions/malta/elevation/N34E014.hgt.gz",
+      "sha256": "ef878716b82ba575fc448ca49fae2f720981192a09f3cb94ba95a759e62e0767",
+      "url": null
+    },
+    {
+      "bytes": 25239,
+      "operation": "Zero ocean cell: no tile in the pinned official GLO-30 public inventory",
+      "path": "data/regions/malta/elevation/N34E015.hgt.gz",
+      "sha256": "ef878716b82ba575fc448ca49fae2f720981192a09f3cb94ba95a759e62e0767",
+      "url": null
+    },
+    {
+      "bytes": 25239,
+      "operation": "Zero ocean cell: no tile in the pinned official GLO-30 public inventory",
+      "path": "data/regions/malta/elevation/N35E013.hgt.gz",
+      "sha256": "ef878716b82ba575fc448ca49fae2f720981192a09f3cb94ba95a759e62e0767",
+      "url": null
+    },
+    {
+      "bytes": 25239,
+      "operation": "Zero ocean cell: no tile in the pinned official GLO-30 public inventory",
+      "path": "data/regions/malta/elevation/N35E015.hgt.gz",
+      "sha256": "ef878716b82ba575fc448ca49fae2f720981192a09f3cb94ba95a759e62e0767",
+      "url": null
+    },
+    {
+      "bytes": 25239,
+      "operation": "Zero ocean cell: no tile in the pinned official GLO-30 public inventory",
+      "path": "data/regions/malta/elevation/N36E013.hgt.gz",
+      "sha256": "ef878716b82ba575fc448ca49fae2f720981192a09f3cb94ba95a759e62e0767",
+      "url": null
+    },
+    {
+      "bytes": 528780,
+      "operation": "Bilinear resampling of Copernicus GLO-30 to point-aligned Int16 HGT, EGM2008 heights",
+      "path": "data/regions/malta/elevation/N36E015.hgt.gz",
+      "sha256": "f0b7025757c769a895ca4f24d6be6f9a9e9666ac8b1e2e54233a4a9cad0c417f",
+      "url": null
+    },
+    {
+      "bytes": 9074012,
+      "operation": "Bilinear resampling of Copernicus GLO-30 to point-aligned Int16 HGT, EGM2008 heights",
+      "path": "data/regions/malta/elevation/N37E013.hgt.gz",
+      "sha256": "907649e2419745d6569dc46fc86100e6797ca990271cf6f18f2de65c9649eabe",
+      "url": null
+    },
+    {
+      "bytes": 12302507,
+      "operation": "Bilinear resampling of Copernicus GLO-30 to point-aligned Int16 HGT, EGM2008 heights",
+      "path": "data/regions/malta/elevation/N37E014.hgt.gz",
+      "sha256": "c12f69201c7c63c49291d8b1689bd9629a5e6a5bed1235af5daf86dce56ec29b",
+      "url": null
+    },
+    {
+      "bytes": 3345119,
+      "operation": "Bilinear resampling of Copernicus GLO-30 to point-aligned Int16 HGT, EGM2008 heights",
+      "path": "data/regions/malta/elevation/N37E015.hgt.gz",
+      "sha256": "6728781b03dd5c94fb6c7df6c5afbd9d97ee4879f843d47920a74f2c98af6e11",
+      "url": null
+    }
+  ],
+  "commands": [
+    [
+      "/Applications/QGIS.app/Contents/MacOS/gdalbuildvrt",
+      "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-Copernicus-wtdmugpp/source.vrt",
+      "/Volumes/Extreme SSD/Projects/OpenBareMap/data/regions/malta/copernicus/Copernicus_DSM_COG_10_N36_00_E015_00_DEM.tif",
+      "/Volumes/Extreme SSD/Projects/OpenBareMap/data/regions/malta/copernicus/Copernicus_DSM_COG_10_N37_00_E013_00_DEM.tif",
+      "/Volumes/Extreme SSD/Projects/OpenBareMap/data/regions/malta/copernicus/Copernicus_DSM_COG_10_N37_00_E014_00_DEM.tif",
+      "/Volumes/Extreme SSD/Projects/OpenBareMap/data/regions/malta/copernicus/Copernicus_DSM_COG_10_N37_00_E015_00_DEM.tif"
+    ],
+    [
+      "/Applications/QGIS.app/Contents/MacOS/gdalwarp",
+      "-q",
+      "-overwrite",
+      "-of",
+      "GTiff",
+      "-ot",
+      "Int16",
+      "-t_srs",
+      "EPSG:4326",
+      "-te",
+      "14.99986111111111",
+      "35.99986111111111",
+      "16.000138888888888",
+      "37.00013888888889",
+      "-ts",
+      "3601",
+      "3601",
+      "-r",
+      "bilinear",
+      "-dstnodata",
+      "0",
+      "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-Copernicus-wtdmugpp/source.vrt",
+      "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-Copernicus-wtdmugpp/N36E015.hgt.tif"
+    ],
+    [
+      "/Applications/QGIS.app/Contents/MacOS/gdal_translate",
+      "-q",
+      "-of",
+      "SRTMHGT",
+      "-a_nodata",
+      "-32768",
+      "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-Copernicus-wtdmugpp/N36E015.hgt.tif",
+      "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-Copernicus-wtdmugpp/N36E015.hgt"
+    ],
+    [
+      "/Applications/QGIS.app/Contents/MacOS/gdalwarp",
+      "-q",
+      "-overwrite",
+      "-of",
+      "GTiff",
+      "-ot",
+      "Int16",
+      "-t_srs",
+      "EPSG:4326",
+      "-te",
+      "12.99986111111111",
+      "36.99986111111111",
+      "14.00013888888889",
+      "38.00013888888889",
+      "-ts",
+      "3601",
+      "3601",
+      "-r",
+      "bilinear",
+      "-dstnodata",
+      "0",
+      "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-Copernicus-wtdmugpp/source.vrt",
+      "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-Copernicus-wtdmugpp/N37E013.hgt.tif"
+    ],
+    [
+      "/Applications/QGIS.app/Contents/MacOS/gdal_translate",
+      "-q",
+      "-of",
+      "SRTMHGT",
+      "-a_nodata",
+      "-32768",
+      "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-Copernicus-wtdmugpp/N37E013.hgt.tif",
+      "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-Copernicus-wtdmugpp/N37E013.hgt"
+    ],
+    [
+      "/Applications/QGIS.app/Contents/MacOS/gdalwarp",
+      "-q",
+      "-overwrite",
+      "-of",
+      "GTiff",
+      "-ot",
+      "Int16",
+      "-t_srs",
+      "EPSG:4326",
+      "-te",
+      "13.99986111111111",
+      "36.99986111111111",
+      "15.00013888888889",
+      "38.00013888888889",
+      "-ts",
+      "3601",
+      "3601",
+      "-r",
+      "bilinear",
+      "-dstnodata",
+      "0",
+      "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-Copernicus-wtdmugpp/source.vrt",
+      "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-Copernicus-wtdmugpp/N37E014.hgt.tif"
+    ],
+    [
+      "/Applications/QGIS.app/Contents/MacOS/gdal_translate",
+      "-q",
+      "-of",
+      "SRTMHGT",
+      "-a_nodata",
+      "-32768",
+      "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-Copernicus-wtdmugpp/N37E014.hgt.tif",
+      "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-Copernicus-wtdmugpp/N37E014.hgt"
+    ],
+    [
+      "/Applications/QGIS.app/Contents/MacOS/gdalwarp",
+      "-q",
+      "-overwrite",
+      "-of",
+      "GTiff",
+      "-ot",
+      "Int16",
+      "-t_srs",
+      "EPSG:4326",
+      "-te",
+      "14.99986111111111",
+      "36.99986111111111",
+      "16.000138888888888",
+      "38.00013888888889",
+      "-ts",
+      "3601",
+      "3601",
+      "-r",
+      "bilinear",
+      "-dstnodata",
+      "0",
+      "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-Copernicus-wtdmugpp/source.vrt",
+      "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-Copernicus-wtdmugpp/N37E015.hgt.tif"
+    ],
+    [
+      "/Applications/QGIS.app/Contents/MacOS/gdal_translate",
+      "-q",
+      "-of",
+      "SRTMHGT",
+      "-a_nodata",
+      "-32768",
+      "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-Copernicus-wtdmugpp/N37E015.hgt.tif",
+      "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-Copernicus-wtdmugpp/N37E015.hgt"
+    ]
+  ],
+  "coverage": [
+    13,
+    34,
+    16,
+    38
+  ],
+  "dataset": "Copernicus DEM GLO-30 Public, AWS 2021 release",
+  "grid": "3601 by 3601 signed 16-bit point-aligned HGT cells; ocean cells zero",
+  "oceanCellReview": [
+    {
+      "cell": "N34E013.hgt",
+      "coastalLandSHA256": "7c77bc0700507e871f5ce62238067bc2a670728db494c818fd2bfbd24cbae75b",
+      "landIntersectionSquareDegrees": 0
+    },
+    {
+      "cell": "N34E014.hgt",
+      "coastalLandSHA256": "7c77bc0700507e871f5ce62238067bc2a670728db494c818fd2bfbd24cbae75b",
+      "landIntersectionSquareDegrees": 0
+    },
+    {
+      "cell": "N34E015.hgt",
+      "coastalLandSHA256": "7c77bc0700507e871f5ce62238067bc2a670728db494c818fd2bfbd24cbae75b",
+      "landIntersectionSquareDegrees": 0
+    },
+    {
+      "cell": "N35E013.hgt",
+      "coastalLandSHA256": "7c77bc0700507e871f5ce62238067bc2a670728db494c818fd2bfbd24cbae75b",
+      "landIntersectionSquareDegrees": 0
+    },
+    {
+      "cell": "N35E015.hgt",
+      "coastalLandSHA256": "7c77bc0700507e871f5ce62238067bc2a670728db494c818fd2bfbd24cbae75b",
+      "landIntersectionSquareDegrees": 0
+    },
+    {
+      "cell": "N36E013.hgt",
+      "coastalLandSHA256": "7c77bc0700507e871f5ce62238067bc2a670728db494c818fd2bfbd24cbae75b",
+      "landIntersectionSquareDegrees": 0
+    }
+  ],
+  "sourceAssets": [
+    {
+      "bytes": 1110900,
+      "path": "data/regions/malta/copernicus/tileList.txt",
+      "sha256": "10604e3052c98a09e9216f1a8f0a555a04148419757575f783d4937fd44316dc",
+      "url": "https://copernicus-dem-30m.s3.amazonaws.com/tileList.txt"
+    },
+    {
+      "bytes": 2479961,
+      "path": "data/regions/malta/copernicus/Copernicus_DSM_COG_10_N36_00_E015_00_DEM.tif",
+      "sha256": "63e5a9665f5f09c47a0d8cc0856e1832178ea160d26d3bf7e7ed2e1ea145ddea",
+      "url": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N36_00_E015_00_DEM/Copernicus_DSM_COG_10_N36_00_E015_00_DEM.tif"
+    },
+    {
+      "bytes": 31793282,
+      "path": "data/regions/malta/copernicus/Copernicus_DSM_COG_10_N37_00_E013_00_DEM.tif",
+      "sha256": "9ce3a7d3d3a62cca05cc50daf7641a834210ce1e80532debeff71e29bcfdc3b4",
+      "url": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N37_00_E013_00_DEM/Copernicus_DSM_COG_10_N37_00_E013_00_DEM.tif"
+    },
+    {
+      "bytes": 43328063,
+      "path": "data/regions/malta/copernicus/Copernicus_DSM_COG_10_N37_00_E014_00_DEM.tif",
+      "sha256": "ef031472f130b02aa46a2f3a93b6295e2700e13fc395d36c3234b340bb90215c",
+      "url": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N37_00_E014_00_DEM/Copernicus_DSM_COG_10_N37_00_E014_00_DEM.tif"
+    },
+    {
+      "bytes": 11547146,
+      "path": "data/regions/malta/copernicus/Copernicus_DSM_COG_10_N37_00_E015_00_DEM.tif",
+      "sha256": "76bd0a0140382980d3ec0cdff7187cea3f597f00d875abb62d6c8f1b41000095",
+      "url": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N37_00_E015_00_DEM/Copernicus_DSM_COG_10_N37_00_E015_00_DEM.tif"
+    }
+  ],
+  "sourceDocumentation": "https://registry.opendata.aws/copernicus-dem/",
+  "toolchain": {
+    "gdal_translate": {
+      "path": "/Applications/QGIS.app/Contents/MacOS/gdal_translate",
+      "sha256": "20bee1aad39868f3aa506312cad8415bbe12fa004cbf75b27114f527178b632a"
+    },
+    "gdalbuildvrt": {
+      "path": "/Applications/QGIS.app/Contents/MacOS/gdalbuildvrt",
+      "sha256": "5694fb873506db8342bedbf18635fe6d3dbf97971dc25f2ea7f94ff4f6f77b30"
+    },
+    "gdalwarp": {
+      "path": "/Applications/QGIS.app/Contents/MacOS/gdalwarp",
+      "sha256": "da68256b5787bd76d876a409fd452cc8290be13c6f28aece569242682a003057"
+    }
+  },
+  "verticalDatum": "EGM2008 orthometric metres"
+}

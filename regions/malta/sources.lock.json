@@ -1,0 +1,29 @@
+{
+  "accessed_utc": "2026-11-18T12:34:00.413552+00:00",
+  "inputs": [
+    {
+      "bytes": 9011868,
+      "path": "data/regions/malta/malta-261117.osm.pbf",
+      "replicationTimestamp": "2026-11-17T21:24:30Z",
+      "sha256": "ef6e80e3a588cc18b21612f9c568be45377f92cf4c28ff866b562f9a0a1aa8ce",
+      "url": "https://download.geofabrik.de/europe/malta-261117.osm.pbf"
+    }
+  ],
+  "osm": {
+    "bytes": 9011868,
+    "operation": "Complete upstream extract; no merge or spatial filtering",
+    "path": "data/regions/malta/malta-261117.osm.pbf",
+    "replicationTimestamp": "2026-11-17T21:24:30Z",
+    "sha256": "ef6e80e3a588cc18b21612f9c568be45377f92cf4c28ff866b562f9a0a1aa8ce",
+    "snapshot_date": "2026-11-17",
+    "url": "https://download.geofabrik.de/europe/malta-261117.osm.pbf"
+  },
+  "polygons": [
+    {
+      "bytes": 263,
+      "path": "data/regions/malta/malta.poly",
+      "sha256": "8f8435941862120b21516313cd5e50492e755970902182c544db5772e8f60998",
+      "url": "https://download.geofabrik.de/europe/malta.poly"
+    }
+  ]
+}

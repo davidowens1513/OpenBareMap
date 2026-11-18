@@ -1,0 +1,20 @@
+{
+  "inputs": [
+    {
+      "path": "regions/malta/garmin/inputs/contours.geojson.gz",
+      "sha256": "c7669a05ab5155ed6342d854111b9a76e6f4208e84a256cfee6fe75b1f594ebb",
+      "uncompressedSHA256": "1e07027dd221bd5e86414ba91a93492e2880ef912b87fc002e7a05477edc1aa8"
+    },
+    {
+      "path": "regions/malta/garmin/inputs/landcover.geojson.gz",
+      "sha256": "bcca288275f1955c8df3422be299db5376e21eabae007049a21bf9c9d5b9854a",
+      "uncompressedSHA256": "d6d719a9797eba030a0a97e6921aecd54d938b33f66136aacf5a700a6539d1b1"
+    },
+    {
+      "path": "regions/malta/garmin/inputs/land.geojson.gz",
+      "sha256": "9ef01de30a40864972cdbc4394c7bccb0ad9103ff15cfed8758db7b81203064f",
+      "uncompressedSHA256": "1d72f4c1a90bdad934cf41c02eb5a34c0b14e01f024bdd004516b68858bbe5c4"
+    }
+  ],
+  "region": "malta"
+}

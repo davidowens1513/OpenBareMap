@@ -1,0 +1,20 @@
+{
+  "inputs": [
+    {
+      "path": "regions/crete/garmin/inputs/contours.geojson.gz",
+      "sha256": "d83b8c6be94ba4fe4abc8877808e07391f0bf570c4827df274f0f92fe8127db0",
+      "uncompressedSHA256": "106085ea540ea2d771af33174fbe75de5c651ee8d6a4588c34b9b60a7366abf2"
+    },
+    {
+      "path": "regions/crete/garmin/inputs/landcover.geojson.gz",
+      "sha256": "f863aa6bfeb333157957ba8886793418742ddbf5adbddac47d111a5c0a340b71",
+      "uncompressedSHA256": "6a4e28469e3e886c6c8dd08caaa0f8158dd78ab2192b5b05c1141920b920b787"
+    },
+    {
+      "path": "regions/crete/garmin/inputs/land.geojson.gz",
+      "sha256": "1aff666d1fb2aefcc0e8d57b7abcb8a0bc14adcb7a7f98cac8f7cab258851572",
+      "uncompressedSHA256": "10fb1a9fe7f4380fb1335fa741d35312146de45504e238339ebd4b1ba6a9bb94"
+    }
+  ],
+  "region": "crete"
+}

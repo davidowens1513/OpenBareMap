@@ -3,10 +3,13 @@
   "mapVersions": {
     "balearic-islands": "2.0.0",
     "corsica": "2.0.0",
+    "crete": "2.0.0",
+    "cyprus": "2.0.0",
     "dolomites": "2.0.0",
     "england-wales": "2.0.1",
     "faroe-islands": "2.0.0",
     "ireland": "2.0.0",
+    "malta": "2.0.0",
     "norway-central": "2.0.0",
     "norway-north": "2.0.0",
     "norway-south": "2.0.0",
@@ -155,6 +158,146 @@
         "r2Key": "OpenBareMap/corsica/2.0.0/app-bundles-v1/ios/OpenBareMap-Corsica-iOS-Bundle.zip",
         "sha256": "494394a3166205674ae0d2a4e2d080e2e6ed9a1a43526882ca89255d9e824d81",
         "url": "https://downloads.appsbyonzy.dev/OpenBareMap/corsica/2.0.0/app-bundles-v1/ios/OpenBareMap-Corsica-iOS-Bundle.zip"
+      }
+    },
+    "crete": {
+      "android": {
+        "bytes": 122500940,
+        "datasets": {
+          "basemap": {
+            "path": "maps/basemap.mbtiles",
+            "sha256": "a0beb58f5921d0dc5a79f9b810274a3307f146a70eb35cd5a2ef21702474bc08"
+          },
+          "coast": {
+            "derivedFrom": "a59b15f94391fa8c7486259188c8c483994393ab59668bbd77b8b31415cb58cf",
+            "path": "maps/coast.mbtiles",
+            "sha256": "20cf6c7cc317ab46e09436552c53da00914c03ec5bf95cd3f511bc4c1004d7e8"
+          },
+          "grid": {
+            "path": "maps/grid.mbtiles",
+            "sha256": "e1a01709a5ef4e0e5eadddf014d4682c2322ab326a532ab82f0097d3260dcd50"
+          },
+          "hillshade": {
+            "path": "maps/hillshade.mbtiles",
+            "sha256": "72a6eac79bcf974a57d8069822feb909b7cefc6e332c8e4696a1562ed767ca80"
+          },
+          "topography": {
+            "path": "maps/topography.mbtiles",
+            "sha256": "a59b15f94391fa8c7486259188c8c483994393ab59668bbd77b8b31415cb58cf"
+          }
+        },
+        "instructionsSHA256": "2a024078a3ad73f0aaabd79017f0ba7b04714ac041f21d0a9dcd24ddeb7ee6b7",
+        "instructionsURL": "https://downloads.appsbyonzy.dev/OpenBareMap/crete/2.0.0/app-bundles-v1/android/instructions.txt",
+        "localPath": "releases/crete/2.0.0/app-bundles-v1/android/OpenBareMap-Crete-Android-Bundle.zip",
+        "mapManifestSHA256": "ff0422dd5e918a89643cd4183ece0d9b8ed57c73b09efdd84547dd2e3544071d",
+        "r2Key": "OpenBareMap/crete/2.0.0/app-bundles-v1/android/OpenBareMap-Crete-Android-Bundle.zip",
+        "sha256": "3a05e6aa893af170bb847366326dbfb266cf2fdd095cc5468c804e51c2a40264",
+        "url": "https://downloads.appsbyonzy.dev/OpenBareMap/crete/2.0.0/app-bundles-v1/android/OpenBareMap-Crete-Android-Bundle.zip"
+      },
+      "ios": {
+        "bytes": 122501662,
+        "datasets": {
+          "basemap": {
+            "path": "maps/basemap.mbtiles",
+            "sha256": "a0beb58f5921d0dc5a79f9b810274a3307f146a70eb35cd5a2ef21702474bc08"
+          },
+          "coast": {
+            "derived_from": "a59b15f94391fa8c7486259188c8c483994393ab59668bbd77b8b31415cb58cf",
+            "maxzoom": 12,
+            "operation": "Preserve land-layer MVT bytes only through zoom 12; omit other layers.",
+            "path": "maps/coast.mbtiles",
+            "sha256": "20cf6c7cc317ab46e09436552c53da00914c03ec5bf95cd3f511bc4c1004d7e8"
+          },
+          "grid": {
+            "path": "maps/grid.mbtiles",
+            "sha256": "e1a01709a5ef4e0e5eadddf014d4682c2322ab326a532ab82f0097d3260dcd50"
+          },
+          "hillshade": {
+            "path": "maps/hillshade.mbtiles",
+            "sha256": "72a6eac79bcf974a57d8069822feb909b7cefc6e332c8e4696a1562ed767ca80"
+          },
+          "topography": {
+            "path": "maps/topography.mbtiles",
+            "sha256": "a59b15f94391fa8c7486259188c8c483994393ab59668bbd77b8b31415cb58cf"
+          }
+        },
+        "instructionsSHA256": "6dd3e8e4ae58f74c47abc67d639de86763e89281fc3f83fb0a5840aa4e7be3f6",
+        "instructionsURL": "https://downloads.appsbyonzy.dev/OpenBareMap/crete/2.0.0/app-bundles-v1/ios/instructions.txt",
+        "localPath": "releases/crete/2.0.0/app-bundles-v1/ios/OpenBareMap-Crete-iOS-Bundle.zip",
+        "mapManifestSHA256": "272c387b3c0780d148e46a3231169425746b28f2a955df4eafb4230f4fc63835",
+        "r2Key": "OpenBareMap/crete/2.0.0/app-bundles-v1/ios/OpenBareMap-Crete-iOS-Bundle.zip",
+        "sha256": "49e2ae2e2b7c424361a3cdfd6eaf29b00ec2780a06b7c1a8b8b8268ae1e42db3",
+        "url": "https://downloads.appsbyonzy.dev/OpenBareMap/crete/2.0.0/app-bundles-v1/ios/OpenBareMap-Crete-iOS-Bundle.zip"
+      }
+    },
+    "cyprus": {
+      "android": {
+        "bytes": 134066223,
+        "datasets": {
+          "basemap": {
+            "path": "maps/basemap.mbtiles",
+            "sha256": "67171146b55d18cb6458f6d6a89440ed6c554fc663efa9b75ce3ddd697748a7f"
+          },
+          "coast": {
+            "derivedFrom": "ac2b7946317de94e924af7b6aa422c198b2e332b5df891aff65121d9cbd609c1",
+            "path": "maps/coast.mbtiles",
+            "sha256": "a512a569c7a3fc9fe9568b70b44a4bdd3767b7e9657d1421b55638d15c216899"
+          },
+          "grid": {
+            "path": "maps/grid.mbtiles",
+            "sha256": "91713bfc628e6d4acfef5ade8e7190fbfb9ce6636ade3028af6520a3e4d17ebb"
+          },
+          "hillshade": {
+            "path": "maps/hillshade.mbtiles",
+            "sha256": "ffad064c475cb131aed6c6fa3b17778ab9a444fa397e0b573bc4a76116ad83cd"
+          },
+          "topography": {
+            "path": "maps/topography.mbtiles",
+            "sha256": "ac2b7946317de94e924af7b6aa422c198b2e332b5df891aff65121d9cbd609c1"
+          }
+        },
+        "instructionsSHA256": "3938048ad8f9db2e5d9176f3ae383e3ebbde412f5ceb227154bf8c9bcc214e29",
+        "instructionsURL": "https://downloads.appsbyonzy.dev/OpenBareMap/cyprus/2.0.0/app-bundles-v1/android/instructions.txt",
+        "localPath": "releases/cyprus/2.0.0/app-bundles-v1/android/OpenBareMap-Cyprus-Android-Bundle.zip",
+        "mapManifestSHA256": "fd010be688281a8f13a8a37140721fec7b9366f86f293426108aa831e68c5ae1",
+        "r2Key": "OpenBareMap/cyprus/2.0.0/app-bundles-v1/android/OpenBareMap-Cyprus-Android-Bundle.zip",
+        "sha256": "5b7373cf4206e0db87c8944bdfeefab6d61d871c37eaa839d907dfd5e332c912",
+        "url": "https://downloads.appsbyonzy.dev/OpenBareMap/cyprus/2.0.0/app-bundles-v1/android/OpenBareMap-Cyprus-Android-Bundle.zip"
+      },
+      "ios": {
+        "bytes": 134066945,
+        "datasets": {
+          "basemap": {
+            "path": "maps/basemap.mbtiles",
+            "sha256": "67171146b55d18cb6458f6d6a89440ed6c554fc663efa9b75ce3ddd697748a7f"
+          },
+          "coast": {
+            "derived_from": "ac2b7946317de94e924af7b6aa422c198b2e332b5df891aff65121d9cbd609c1",
+            "maxzoom": 12,
+            "operation": "Preserve land-layer MVT bytes only through zoom 12; omit other layers.",
+            "path": "maps/coast.mbtiles",
+            "sha256": "a512a569c7a3fc9fe9568b70b44a4bdd3767b7e9657d1421b55638d15c216899"
+          },
+          "grid": {
+            "path": "maps/grid.mbtiles",
+            "sha256": "91713bfc628e6d4acfef5ade8e7190fbfb9ce6636ade3028af6520a3e4d17ebb"
+          },
+          "hillshade": {
+            "path": "maps/hillshade.mbtiles",
+            "sha256": "ffad064c475cb131aed6c6fa3b17778ab9a444fa397e0b573bc4a76116ad83cd"
+          },
+          "topography": {
+            "path": "maps/topography.mbtiles",
+            "sha256": "ac2b7946317de94e924af7b6aa422c198b2e332b5df891aff65121d9cbd609c1"
+          }
+        },
+        "instructionsSHA256": "ec9906d6678b08b8ac41477bb9489b91f2665d229fd6aa7d830a8dec4e4bded3",
+        "instructionsURL": "https://downloads.appsbyonzy.dev/OpenBareMap/cyprus/2.0.0/app-bundles-v1/ios/instructions.txt",
+        "localPath": "releases/cyprus/2.0.0/app-bundles-v1/ios/OpenBareMap-Cyprus-iOS-Bundle.zip",
+        "mapManifestSHA256": "6faf883d4cc04d3e953dc7bee5527efac98bf7084cd77d37908973f7a0636ccf",
+        "r2Key": "OpenBareMap/cyprus/2.0.0/app-bundles-v1/ios/OpenBareMap-Cyprus-iOS-Bundle.zip",
+        "sha256": "39b85b49fcfac75ac557dce8956a03b096284927efec9d76fb41e0e682bba076",
+        "url": "https://downloads.appsbyonzy.dev/OpenBareMap/cyprus/2.0.0/app-bundles-v1/ios/OpenBareMap-Cyprus-iOS-Bundle.zip"
       }
     },
     "dolomites": {
@@ -435,6 +578,76 @@
         "r2Key": "OpenBareMap/ireland/2.0.0/app-bundles-v1/ios/OpenBareMap-Ireland-iOS-Bundle.zip",
         "sha256": "cc03cee98aafa76a32a9f9a847790ec9c1a6e594461212ef9575a97c134623b7",
         "url": "https://downloads.appsbyonzy.dev/OpenBareMap/ireland/2.0.0/app-bundles-v1/ios/OpenBareMap-Ireland-iOS-Bundle.zip"
+      }
+    },
+    "malta": {
+      "android": {
+        "bytes": 20264257,
+        "datasets": {
+          "basemap": {
+            "path": "maps/basemap.mbtiles",
+            "sha256": "fd81e585780b3c1a36aa57c6ae61b70ef40fb48b447c3974e693c8b7781fb02f"
+          },
+          "coast": {
+            "derivedFrom": "1b4bd3638417d088d27bfc1beb1dea5b5193579e29bfbc7783f9d16db02a3ba2",
+            "path": "maps/coast.mbtiles",
+            "sha256": "1448c1cc0abc3e86bc71bc79a1211be0fc5424f29a61a98b0d6480e6be1d278e"
+          },
+          "grid": {
+            "path": "maps/grid.mbtiles",
+            "sha256": "d4d2cf7345fb90ab9ba9f1244b08206dc77af8827f476104480e303a8bce05e7"
+          },
+          "hillshade": {
+            "path": "maps/hillshade.mbtiles",
+            "sha256": "57969fb070f5410debca201f49feaa00ead453fea3d367ba7675281dfdb78d34"
+          },
+          "topography": {
+            "path": "maps/topography.mbtiles",
+            "sha256": "1b4bd3638417d088d27bfc1beb1dea5b5193579e29bfbc7783f9d16db02a3ba2"
+          }
+        },
+        "instructionsSHA256": "541bdfcd140d89c76f25dd1beaf42a4bb1c913e944d6ed29d0fd845623ead6d0",
+        "instructionsURL": "https://downloads.appsbyonzy.dev/OpenBareMap/malta/2.0.0/app-bundles-v1/android/instructions.txt",
+        "localPath": "releases/malta/2.0.0/app-bundles-v1/android/OpenBareMap-Malta-Android-Bundle.zip",
+        "mapManifestSHA256": "045e87b2b08e4e6d74e0d967d9ec32c833b88d81dac25be3654cca60d419b688",
+        "r2Key": "OpenBareMap/malta/2.0.0/app-bundles-v1/android/OpenBareMap-Malta-Android-Bundle.zip",
+        "sha256": "e878d6b4e50007b13d793ab04427281020dfa5ac6ff2b74d7eaca7e00f04214f",
+        "url": "https://downloads.appsbyonzy.dev/OpenBareMap/malta/2.0.0/app-bundles-v1/android/OpenBareMap-Malta-Android-Bundle.zip"
+      },
+      "ios": {
+        "bytes": 20263983,
+        "datasets": {
+          "basemap": {
+            "path": "maps/basemap.mbtiles",
+            "sha256": "fd81e585780b3c1a36aa57c6ae61b70ef40fb48b447c3974e693c8b7781fb02f"
+          },
+          "coast": {
+            "derived_from": "1b4bd3638417d088d27bfc1beb1dea5b5193579e29bfbc7783f9d16db02a3ba2",
+            "maxzoom": 12,
+            "operation": "Preserve land-layer MVT bytes only through zoom 12; omit other layers.",
+            "path": "maps/coast.mbtiles",
+            "sha256": "1448c1cc0abc3e86bc71bc79a1211be0fc5424f29a61a98b0d6480e6be1d278e"
+          },
+          "grid": {
+            "path": "maps/grid.mbtiles",
+            "sha256": "d4d2cf7345fb90ab9ba9f1244b08206dc77af8827f476104480e303a8bce05e7"
+          },
+          "hillshade": {
+            "path": "maps/hillshade.mbtiles",
+            "sha256": "57969fb070f5410debca201f49feaa00ead453fea3d367ba7675281dfdb78d34"
+          },
+          "topography": {
+            "path": "maps/topography.mbtiles",
+            "sha256": "1b4bd3638417d088d27bfc1beb1dea5b5193579e29bfbc7783f9d16db02a3ba2"
+          }
+        },
+        "instructionsSHA256": "9f7f2ab8f9dc7c60c94305e68d9d1743e3ca83d35e8e5c8866d210daf6228022",
+        "instructionsURL": "https://downloads.appsbyonzy.dev/OpenBareMap/malta/2.0.0/app-bundles-v1/ios/instructions.txt",
+        "localPath": "releases/malta/2.0.0/app-bundles-v1/ios/OpenBareMap-Malta-iOS-Bundle.zip",
+        "mapManifestSHA256": "ca270071007e6b4bb1fc7ab13d285ce4cb93773205127c0920c85ec0127f4308",
+        "r2Key": "OpenBareMap/malta/2.0.0/app-bundles-v1/ios/OpenBareMap-Malta-iOS-Bundle.zip",
+        "sha256": "f37b5b2f77f3ce9f026d3a3afe3ab113a532648e7220af19a2f8d15e81794300",
+        "url": "https://downloads.appsbyonzy.dev/OpenBareMap/malta/2.0.0/app-bundles-v1/ios/OpenBareMap-Malta-iOS-Bundle.zip"
       }
     },
     "norway-central": {
@@ -998,5 +1211,5 @@
       }
     }
   },
-  "sourceCommit": "71a6780d092a42a7861618888fbb7a7e3a1dacb4"
+  "sourceCommit": "3a6d591e5630070fde7c24cc94f110da85a9e08f"
 }

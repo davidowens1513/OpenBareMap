@@ -1,0 +1,303 @@
+{
+  "coverage": "Malta, Gozo and Comino in one map, including their nearby islets.",
+  "coverageAnchors": {
+    "Comino": {
+      "coordinate": [
+        14.338,
+        36.011
+      ],
+      "featuresInNeighbouringDetailedTiles": 3415
+    },
+    "Dingli": {
+      "coordinate": [
+        14.379,
+        35.859
+      ],
+      "featuresInNeighbouringDetailedTiles": 6684
+    },
+    "Gozo": {
+      "coordinate": [
+        14.241,
+        36.043
+      ],
+      "featuresInNeighbouringDetailedTiles": 14150
+    },
+    "Valletta": {
+      "coordinate": [
+        14.512,
+        35.898
+      ],
+      "featuresInNeighbouringDetailedTiles": 24703
+    }
+  },
+  "datasets": {
+    "basemap": {
+      "empty_tile_count": 67,
+      "logical_tiles_sha256": "34d3a36a0696f7632d52ab36af2a3222672bbc34c1543dbb0d30fdb67d79b848",
+      "tile_count": 342
+    },
+    "grid": {
+      "empty_tile_count": 0,
+      "logical_tiles_sha256": "54c9ecbf1ecfcb7b64d72badc983cb4eafea6c79eaf10f04cc7fc0f8e9314283",
+      "tile_count": 652
+    },
+    "hillshade": {
+      "empty_tile_count": 0,
+      "logical_tiles_sha256": "337d03c12fbcc0265132d9a85c2f65c015c6cdb3369fe811c557561876877e81",
+      "tile_count": 86
+    },
+    "topography": {
+      "empty_tile_count": 8770,
+      "logical_tiles_sha256": "289b9d9554b88af3ba586b4e7fa50a4177cfd3f7326322ac567bfeb7664e4301",
+      "tile_count": 9583
+    }
+  },
+  "detail": {
+    "basemap": {
+      "boundaries": 28,
+      "contours": 0
+    },
+    "topography": {
+      "boundaries": 0,
+      "contours": 5078
+    }
+  },
+  "garmin": {
+    "familyId": 4848,
+    "garminPackageRevision": "2.0.0-r1",
+    "inspection": {
+      "anchorLabels": {
+        "Valletta": "Valletta"
+      },
+      "bounds": [
+        14.13991928100586,
+        35.74994087219238,
+        14.610013961791992,
+        36.12004280090332
+      ],
+      "coastPolygonsByLevel": {
+        "0": {
+          "0x32": 2,
+          "0x54": 139
+        },
+        "1": {
+          "0x32": 2,
+          "0x54": 81
+        },
+        "2": {
+          "0x32": 2,
+          "0x54": 55
+        },
+        "3": {
+          "0x32": 2,
+          "0x54": 20
+        },
+        "4": {
+          "0x32": 2,
+          "0x54": 9
+        }
+      },
+      "contoursByLevel": {
+        "0": {
+          "0x20": 986,
+          "0x22": 109
+        },
+        "1": {
+          "0x20": 907,
+          "0x22": 91
+        },
+        "2": {
+          "0x22": 87
+        },
+        "3": {
+          "0x10008": 80
+        },
+        "4": {}
+      },
+      "lineInstancesAtHighestDetail": {
+        "0x10001": 290,
+        "0x10002": 487,
+        "0x10004": 74,
+        "0x10005": 932,
+        "0x10006": 196,
+        "0x1000b": 929,
+        "0x16": 5077,
+        "0x18": 122,
+        "0x1a": 29,
+        "0x1e": 4,
+        "0x1f": 1,
+        "0x2": 550,
+        "0x20": 986,
+        "0x22": 109,
+        "0x3": 446,
+        "0x4": 728,
+        "0x6": 10290,
+        "0x7": 7757,
+        "0xa": 5771
+      },
+      "logicalCombinedSHA256": "7dea0d352602edbfb0c1e3a8ad32b0419671ed6e29d87964bb7e2deac41d8a51",
+      "logicalHashNote": "Internal file names, sizes and payloads; only CommonHeader creation-date bytes 14..20 are zeroed for hashing. IMG archive headers are excluded. Output bytes are never modified.",
+      "logicalTileSHA256": {
+        "48480001.img": "f708d2293dcf49c344dfb530f49d529e60e2ffddd731230e1434662917bfe581",
+        "48480002.img": "55c5da6442fee6d86fde4b8f1574df00d3548778b4f03f4904df98370b613256"
+      },
+      "pointInstancesAtHighestDetail": {
+        "0x100": 2,
+        "0x10001": 61,
+        "0x10002": 132,
+        "0x10003": 221,
+        "0x10006": 7325,
+        "0x2f0b": 1077,
+        "0x600": 29,
+        "0x650c": 22,
+        "0x6603": 23,
+        "0x6616": 28,
+        "0x800": 46,
+        "0xb00": 16,
+        "0xc00": 591
+      },
+      "polygonInstancesAtHighestDetail": {
+        "0x10101": 2580,
+        "0x10102": 2201,
+        "0x10103": 152,
+        "0x10104": 1293,
+        "0x10105": 60,
+        "0x10106": 73,
+        "0x10109": 564,
+        "0x1010a": 6,
+        "0x1010b": 1,
+        "0x13": 23131,
+        "0x32": 2,
+        "0x3c": 1116,
+        "0x50": 236,
+        "0x51": 6,
+        "0x54": 139
+      },
+      "routing": false,
+      "subfileBytes": {
+        "DEM": 311590,
+        "LBL": 277933,
+        "MPS": 189,
+        "RGN": 2483733,
+        "SRT": 912,
+        "TRE": 30112,
+        "TYP": 2982
+      },
+      "tiles": 2
+    },
+    "output": {
+      "bytes": 3125248,
+      "path": "regions/malta/garmin/dist/OpenBareMap-Malta.img",
+      "sha256": "aabc2a63af91d09346b0caf5b453b6af448ebde0d05010f2c583a595d78ed840"
+    },
+    "routing": false,
+    "status": "compiled and structurally inspected; hardware rendering pending"
+  },
+  "geometryProcessing": {
+    "contours": 2786,
+    "grid": {
+      "grid_10km": 12,
+      "grid_1km": 102
+    },
+    "landcover": {
+      "empty_source_areas": [],
+      "features": 6949,
+      "retained": 1270,
+      "smoothed": 5679
+    }
+  },
+  "irelandGarminPackageRevision": "2.0.1-trail-detail-r1",
+  "irelandPreserved": true,
+  "islandLandBackground": {
+    "Comino": {
+      "coordinate": [
+        14.338,
+        36.011
+      ],
+      "verifiedZooms": [
+        10,
+        11,
+        12
+      ]
+    },
+    "Dingli": {
+      "coordinate": [
+        14.379,
+        35.859
+      ],
+      "verifiedZooms": [
+        10,
+        11,
+        12
+      ]
+    },
+    "Gozo": {
+      "coordinate": [
+        14.241,
+        36.043
+      ],
+      "verifiedZooms": [
+        10,
+        11,
+        12
+      ]
+    },
+    "Valletta": {
+      "coordinate": [
+        14.512,
+        35.898
+      ],
+      "verifiedZooms": [
+        10,
+        11,
+        12
+      ]
+    }
+  },
+  "labelGlyphs": {
+    "Open Sans Bold": true,
+    "Open Sans Regular": true,
+    "Open Sans Semibold": true
+  },
+  "landBackground": {
+    "Valletta": {
+      "coordinate": [
+        14.512,
+        35.898
+      ],
+      "verifiedZooms": [
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    }
+  },
+  "packages": {
+    "android": {
+      "checkedFiles": 41,
+      "nativeDeviceRenderingTested": false,
+      "sourceFiles": {
+        "basemap": "maps/basemap.mbtiles",
+        "coast": "maps/coast.mbtiles",
+        "hillshade": "maps/hillshade.mbtiles",
+        "topography": "maps/topography.mbtiles",
+        "utm-grid": "maps/grid.mbtiles"
+      }
+    },
+    "ios": {
+      "checkedFiles": 44,
+      "nativeDeviceRenderingTested": false,
+      "sourceFiles": {
+        "basemap": "maps/basemap.mbtiles",
+        "coast": "maps/coast.mbtiles",
+        "hillshade": "maps/hillshade.mbtiles",
+        "topography": "maps/topography.mbtiles",
+        "utm-grid": "maps/grid.mbtiles"
+      }
+    }
+  },
+  "region": "malta",
+  "status": "automated checks passed; visual and hardware acceptance pending"
+}

@@ -1,0 +1,29 @@
+{
+  "areaSquareDegrees": 0.1738999999999984,
+  "bounds": [
+    14.14,
+    35.75,
+    14.61,
+    36.12
+  ],
+  "entireRequestedFootprintCovered": true,
+  "exactFootprint": null,
+  "inputs": [
+    {
+      "bytes": 263,
+      "path": "data/regions/malta/malta.poly",
+      "sha256": "8f8435941862120b21516313cd5e50492e755970902182c544db5772e8f60998",
+      "url": "https://download.geofabrik.de/europe/malta.poly"
+    }
+  ],
+  "knownDestinationsCovered": [
+    "island",
+    "valletta",
+    "gozo",
+    "comino",
+    "dingli"
+  ],
+  "operation": "Requested rectangular crop; source outlines cover all destination anchors",
+  "polygons": 1,
+  "sha256": "0f3d34a1637fd2195590d4a36997fa5166455a4c6a3b2660263a711670181c52"
+}

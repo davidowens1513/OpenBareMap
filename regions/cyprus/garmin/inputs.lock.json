@@ -1,0 +1,20 @@
+{
+  "inputs": [
+    {
+      "path": "regions/cyprus/garmin/inputs/contours.geojson.gz",
+      "sha256": "2b764a55e7de500c5386dd6017c2fa92c74dca8350ab2ea09ea97452a06731d4",
+      "uncompressedSHA256": "52f30fc27c4e7e22f29c7896ccd184983ddf803821b635eb65647a32a0297936"
+    },
+    {
+      "path": "regions/cyprus/garmin/inputs/landcover.geojson.gz",
+      "sha256": "386d191be171ca093942b5a348833a586e945f209c2364b0b7c9e2f0fea29538",
+      "uncompressedSHA256": "152f08b04a02c6d4d2b5e9d81a77ccb79b2fb77d24d60f907448d5d72cb11259"
+    },
+    {
+      "path": "regions/cyprus/garmin/inputs/land.geojson.gz",
+      "sha256": "8ae23c449979c468f70301e58f023210d4815e587fe0f9efe55f8520842fbc65",
+      "uncompressedSHA256": "b27a9befb1eb369c541f7c6a5b261d4e6466c41412a963a2663545c37068b610"
+    }
+  ],
+  "region": "cyprus"
+}

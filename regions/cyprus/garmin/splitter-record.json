@@ -1,0 +1,21 @@
+{
+  "combinedSHA256": "e2f5e513ac847f198117c32e9960e617133c81137e3342e0282a4ad6d0d5bc20",
+  "command": [
+    "/opt/homebrew/opt/openjdk@21/libexec/openjdk.jdk/Contents/Home/bin/java",
+    "-Xmx6g",
+    "-jar",
+    "/Volumes/Extreme SSD/Projects/OpenBareMap/garmin/tools/splitter-r654/splitter.jar",
+    "--mapid=48470001",
+    "--description=OpenBareMap Cyprus",
+    "--max-nodes=1000000",
+    "--max-threads=2",
+    "--keep-complete=true",
+    "--output=pbf",
+    "--polygon-file=/Volumes/Extreme SSD/Projects/OpenBareMap/regions/cyprus/garmin/coverage.poly",
+    "--output-dir=/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/906ead9d53a7/cyprus/garmin/split",
+    "--ignore-osm-bounds=true",
+    "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/906ead9d53a7/cyprus/garmin/combined.osm.pbf"
+  ],
+  "coverageSHA256": "03e58705a4638b2b5f75e3fa098848130dd3a67ed14eab6b9d1f44a469fbad4c",
+  "ignoreSourceHeaderBounds": true
+}

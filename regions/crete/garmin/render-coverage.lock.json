@@ -1,0 +1,66 @@
+{
+  "bounds": [
+    23.45,
+    34.75,
+    26.4,
+    35.74
+  ],
+  "contextEnvelope": [
+    23.45,
+    34.75,
+    26.4,
+    35.74
+  ],
+  "drawPriority": 25,
+  "format": "openbaremap-garmin-render-footprint-v1",
+  "geometry": {
+    "bytes": 735,
+    "path": "regions/crete/garmin/render-coverage.geojson",
+    "sha256": "ad824a4a9083ff8cc733fd49501179205768a3620f5e7b44212f231682153585"
+  },
+  "inputs": [
+    {
+      "bytes": 12694,
+      "path": "data/regions/crete/greece.poly",
+      "sha256": "037f2c4c8babbe9d34998ab9022f68d751151a8bb079709cd97cf5cbaaadde0f",
+      "url": "https://download.geofabrik.de/europe/greece.poly"
+    }
+  ],
+  "knownDestinationsCovered": {
+    "chania": [
+      24.018,
+      35.511
+    ],
+    "chrissi": [
+      25.709,
+      34.876
+    ],
+    "dia": [
+      25.221,
+      35.447
+    ],
+    "gavdos": [
+      24.087,
+      34.84
+    ],
+    "heraklion": [
+      25.134,
+      35.337
+    ],
+    "koufonisi": [
+      26.145,
+      34.938
+    ],
+    "psiloritis": [
+      24.77,
+      35.227
+    ],
+    "samaria-gorge": [
+      23.966,
+      35.286
+    ]
+  },
+  "purpose": "Rectangular Garmin tiles may overlap other countries. Do not fill their padding with sea, land or land-cover polygons.",
+  "region": "crete",
+  "transparentNativeMap": true
+}

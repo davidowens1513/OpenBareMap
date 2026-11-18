@@ -1,0 +1,29 @@
+{
+  "accessed_utc": "2026-11-18T12:34:25.015454+00:00",
+  "inputs": [
+    {
+      "bytes": 37927218,
+      "path": "data/regions/cyprus/cyprus-261117.osm.pbf",
+      "replicationTimestamp": "2026-11-17T21:24:30Z",
+      "sha256": "102be87a8b9029ac7afb7f7b6e75975089d5381af6a0eaf5c6be4289473fd7c1",
+      "url": "https://download.geofabrik.de/europe/cyprus-261117.osm.pbf"
+    }
+  ],
+  "osm": {
+    "bytes": 37927218,
+    "operation": "Complete upstream extract; no merge or spatial filtering",
+    "path": "data/regions/cyprus/cyprus-261117.osm.pbf",
+    "replicationTimestamp": "2026-11-17T21:24:30Z",
+    "sha256": "102be87a8b9029ac7afb7f7b6e75975089d5381af6a0eaf5c6be4289473fd7c1",
+    "snapshot_date": "2026-11-17",
+    "url": "https://download.geofabrik.de/europe/cyprus-261117.osm.pbf"
+  },
+  "polygons": [
+    {
+      "bytes": 263,
+      "path": "data/regions/cyprus/cyprus.poly",
+      "sha256": "8e9d7805c8b215172470dbbc5d13d4ec0efdf170018cda503337165d95c9d7b9",
+      "url": "https://download.geofabrik.de/europe/cyprus.poly"
+    }
+  ]
+}

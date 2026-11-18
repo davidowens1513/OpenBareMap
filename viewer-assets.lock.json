@@ -34,6 +34,21 @@
       "path": "viewer/vendor/maplibre-gl.js",
       "sha256": "b5a34e6930ff937dbbb9eec8892cffb80ba473cce88ae5ca8c4654432f5f0ebc",
       "origin": "https://unpkg.com/maplibre-gl@5.6.1/dist/maplibre-gl.js"
+    },
+    {
+      "path": "viewer/fonts/Open Sans Regular/768-1023.pbf",
+      "sha256": "fea6a1c8e1be55d9725520627b108d425723b2dc189b7dddfe56abd7d8238ea9",
+      "origin": "https://geoserveis.icgc.cat/contextmaps/glyphs/Open%20Sans%20Regular/768-1023.pbf"
+    },
+    {
+      "path": "viewer/fonts/Open Sans Semibold/768-1023.pbf",
+      "sha256": "35f7d1f9c9dfbc978635b7eb21bffb1113879182b2d518a7fbee6b825dd08274",
+      "origin": "https://geoserveis.icgc.cat/contextmaps/glyphs/Open%20Sans%20Semibold/768-1023.pbf"
+    },
+    {
+      "path": "viewer/fonts/Open Sans Bold/768-1023.pbf",
+      "sha256": "bd7b11497f8cee930c1843e8fe546ce59214b7cfb5e53809d7eca2899ff509bc",
+      "origin": "https://geoserveis.icgc.cat/contextmaps/glyphs/Open%20Sans%20Bold/768-1023.pbf"
     }
   ]
 }

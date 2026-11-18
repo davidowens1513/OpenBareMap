@@ -28,6 +28,9 @@ public class CheckRegionalBackgrounds {
    case "corsica" -> new double[][]{{9.413,41.219},{9.33,40.32},{10.31,42.81}};
    case "sardinia" -> new double[][]{{9.16,41.39},{9.151,42.304},{13.36,38.12}};
    case "sicily" -> new double[][]{{15.65,38.11},{14.51,35.90},{10.18,36.81}};
+   case "crete" -> new double[][]{{25.43,36.42},{22.95,36.15},{26.92,35.42}};
+   case "cyprus" -> new double[][]{{32.50,36.08},{35.10,35.93},{34.62,33.89}};
+   case "malta" -> new double[][]{{14.81,36.73},{12.60,35.50},{12.87,35.86}};
    default -> throw new IllegalArgumentException(args[0]);
   };
   int tiles=0,polygons=0;Set<Integer> resolutions=new TreeSet<>();

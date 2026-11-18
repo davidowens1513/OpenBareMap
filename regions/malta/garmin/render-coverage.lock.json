@@ -1,0 +1,50 @@
+{
+  "bounds": [
+    14.14,
+    35.75,
+    14.61,
+    36.12
+  ],
+  "contextEnvelope": [
+    14.14,
+    35.75,
+    14.61,
+    36.12
+  ],
+  "drawPriority": 25,
+  "format": "openbaremap-garmin-render-footprint-v1",
+  "geometry": {
+    "bytes": 738,
+    "path": "regions/malta/garmin/render-coverage.geojson",
+    "sha256": "3faded43563baf29a3bdcb40ee9527e05fc0bf192daf691f640bca9006073baf"
+  },
+  "inputs": [
+    {
+      "bytes": 263,
+      "path": "data/regions/malta/malta.poly",
+      "sha256": "8f8435941862120b21516313cd5e50492e755970902182c544db5772e8f60998",
+      "url": "https://download.geofabrik.de/europe/malta.poly"
+    }
+  ],
+  "knownDestinationsCovered": {
+    "comino": [
+      14.338,
+      36.011
+    ],
+    "dingli": [
+      14.379,
+      35.859
+    ],
+    "gozo": [
+      14.241,
+      36.043
+    ],
+    "valletta": [
+      14.512,
+      35.898
+    ]
+  },
+  "purpose": "Rectangular Garmin tiles may overlap other countries. Do not fill their padding with sea, land or land-cover polygons.",
+  "region": "malta",
+  "transparentNativeMap": true
+}

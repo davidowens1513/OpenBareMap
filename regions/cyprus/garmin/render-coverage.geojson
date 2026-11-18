@@ -1,0 +1,55 @@
+{
+  "features": [
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              32.89019,
+              35.66106
+            ],
+            [
+              33.42509982669432,
+              35.76
+            ],
+            [
+              34.66,
+              35.76
+            ],
+            [
+              34.66,
+              35.199857506654155
+            ],
+            [
+              34.43924,
+              34.85299
+            ],
+            [
+              33.93105973383031,
+              34.52
+            ],
+            [
+              32.2,
+              34.52
+            ],
+            [
+              32.2,
+              35.43553291943482
+            ],
+            [
+              32.89019,
+              35.66106
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "properties": {
+        "purpose": "Limit opaque native background and land-cover polygons; retain complete accepted OSM and terrain inputs",
+        "region": "cyprus"
+      },
+      "type": "Feature"
+    }
+  ],
+  "type": "FeatureCollection"
+}

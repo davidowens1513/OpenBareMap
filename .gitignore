@@ -231,3 +231,30 @@ data/regions/norway-*/copernicus/*
 /releases/sicily/*/maps/
 /releases/sicily/*/app-bundles-v1/**/*.zip
 /data/regions/italy-isole/
+
+# Rebuildable inputs and local delivery files for crete
+/data/regions/crete/
+/regions/crete/exports/
+/regions/crete/garmin/coastal-context/
+/regions/crete/garmin/inputs/*.geojson.gz
+/regions/crete/garmin/dist/*.img
+/releases/crete/*/maps/
+/releases/crete/*/app-bundles-v1/**/*.zip
+
+# Rebuildable inputs and local delivery files for cyprus
+/data/regions/cyprus/
+/regions/cyprus/exports/
+/regions/cyprus/garmin/coastal-context/
+/regions/cyprus/garmin/inputs/*.geojson.gz
+/regions/cyprus/garmin/dist/*.img
+/releases/cyprus/*/maps/
+/releases/cyprus/*/app-bundles-v1/**/*.zip
+
+# Rebuildable inputs and local delivery files for malta
+/data/regions/malta/
+/regions/malta/exports/
+/regions/malta/garmin/coastal-context/
+/regions/malta/garmin/inputs/*.geojson.gz
+/regions/malta/garmin/dist/*.img
+/releases/malta/*/maps/
+/releases/malta/*/app-bundles-v1/**/*.zip

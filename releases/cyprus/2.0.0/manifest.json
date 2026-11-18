@@ -1,0 +1,106 @@
+{
+  "acceptance": "Automated checks only; see validation and visual-review records for actual reviewed scope.",
+  "coverage": "The whole island of Cyprus, including the Troodos mountains, Akamas and the Karpas peninsula.",
+  "datasets": {
+    "basemap": {
+      "bytes": 72187904,
+      "path": "releases/cyprus/2.0.0/maps/basemap.mbtiles",
+      "sha256": "67171146b55d18cb6458f6d6a89440ed6c554fc663efa9b75ce3ddd697748a7f",
+      "validation": {
+        "empty_tile_count": 4939,
+        "logical_tiles_sha256": "f417ac0ddbde82985d93a68efd192bf67d7eab688aacb285324aea0b594d4e2b",
+        "tile_count": 9438
+      }
+    },
+    "grid": {
+      "bytes": 3915776,
+      "path": "releases/cyprus/2.0.0/maps/grid.mbtiles",
+      "sha256": "91713bfc628e6d4acfef5ade8e7190fbfb9ce6636ade3028af6520a3e4d17ebb",
+      "validation": {
+        "empty_tile_count": 0,
+        "logical_tiles_sha256": "f802dddc19cc81c7bb51bed321675f288b3417e2587bdad517eb6919607e87a6",
+        "tile_count": 10711
+      }
+    },
+    "hillshade": {
+      "bytes": 9498624,
+      "path": "releases/cyprus/2.0.0/maps/hillshade.mbtiles",
+      "sha256": "ffad064c475cb131aed6c6fa3b17778ab9a444fa397e0b573bc4a76116ad83cd",
+      "validation": {
+        "empty_tile_count": 0,
+        "logical_tiles_sha256": "4aaab2c0fcdcd4530d55dba60d3ed717fb1109c380561b42ff547512b0ebf168",
+        "tile_count": 294
+      }
+    },
+    "topography": {
+      "bytes": 43778048,
+      "path": "releases/cyprus/2.0.0/maps/topography-context.mbtiles",
+      "sha256": "ac2b7946317de94e924af7b6aa422c198b2e332b5df891aff65121d9cbd609c1",
+      "validation": {
+        "empty_tile_count": 20561,
+        "logical_tiles_sha256": "d9aacffc68d0be1f22856934390f56ca1dfdb1331786e9ff13e75f401bbead3d",
+        "tile_count": 24923
+      }
+    }
+  },
+  "garmin": {
+    "bytes": 34803712,
+    "path": "regions/cyprus/garmin/dist/OpenBareMap-Cyprus.img",
+    "sha256": "4f2bdef379fa9edc8619cb4e8047246daf0b3e3c7822f2c9a0eba9ea5ca0d455"
+  },
+  "geometryReport": {
+    "path": "releases/cyprus/2.0.0/build-records/geometry-report.json",
+    "sha256": "462be254ec70e611b45bd413b8d96fe26fa7776596a3b6b729da1e714b4a98e3"
+  },
+  "hostAppsModified": false,
+  "mapVersion": "2.0.0",
+  "osm": {
+    "bytes": 37927218,
+    "operation": "Complete upstream extract; no merge or spatial filtering",
+    "path": "data/regions/cyprus/cyprus-261117.osm.pbf",
+    "replicationTimestamp": "2026-11-17T21:24:30Z",
+    "sha256": "102be87a8b9029ac7afb7f7b6e75975089d5381af6a0eaf5c6be4289473fd7c1",
+    "snapshot_date": "2026-11-17",
+    "url": "https://download.geofabrik.de/europe/cyprus-261117.osm.pbf"
+  },
+  "packages": {
+    "android": {
+      "archive": {
+        "bytes": 134037794,
+        "path": "regions/cyprus/android/OpenBareMap-Android.zip",
+        "sha256": "3756ba13eff276f8afba789d7731dee8378b3318ecdc71263082f9ecad2b1b7c"
+      },
+      "checksumsSHA256": "03843cb000ad5166c853d5093a22ed8a7a0959649fe63c7afbb06cc390761087",
+      "manifestSHA256": "fd010be688281a8f13a8a37140721fec7b9366f86f293426108aa831e68c5ae1",
+      "path": "regions/cyprus/android",
+      "validationSHA256": "40dd0c4f1e7c62a35987f8f925aab30b8d3e50bf9ca00523592b7753a1b7cc07"
+    },
+    "ios": {
+      "checksumsSHA256": "1d173e57d962224db8d5fee10eac9b61714d503533a423ee95697af4bf1490c8",
+      "manifestSHA256": "6faf883d4cc04d3e953dc7bee5527efac98bf7084cd77d37908973f7a0636ccf",
+      "path": "regions/cyprus/ios",
+      "validationSHA256": "fb0760acbd7a64ac571bed6f349cb13f576fd39322b8ff72efe7664c8f7882a8"
+    }
+  },
+  "pythonRuntime": {
+    "packages": {
+      "Pillow": "12.3.0",
+      "certifi": "2026.10.23",
+      "charset-normalizer": "3.5.2",
+      "idna": "3.20",
+      "numpy": "2.5.4",
+      "osmium": "4.3.2",
+      "pyproj": "3.8.0",
+      "requests": "2.34.2",
+      "shapely": "2.2.0",
+      "urllib3": "2.8.0"
+    },
+    "platform": "macOS-27.2.1-arm64-arm-64bit-Mach-O",
+    "python": "3.14.5 (main, May 10 2026, 10:21:34) [Clang 21.0.0 (clang-2100.0.123.102)]",
+    "requirementsSHA256": "427f12ff8b49bfebac0a7d453c2f65bd15d6695584b18e6ecee1fdfeed20a36c"
+  },
+  "region": "cyprus",
+  "styleSHA256": "16d6dfa8230219ff20e13b68bbab6025f01d13675bf47a92d36ab353492ba42a",
+  "terrainLockSHA256": "f4fb14a84a20f2ca9bf6ac36987f22ad46bc38eb5b5118654a432f5a0536c9d7",
+  "validation": "validation.json"
+}

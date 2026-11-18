@@ -17,17 +17,19 @@ class Menu(HTMLParser):
 class PreviewRegionsTests(unittest.TestCase):
  def test_all_editions_have_full_menu_and_correct_current_region(self):
   catalog=json.loads((ROOT/'config/preview-regions.json').read_text())
-  self.assertEqual({x['id'] for x in catalog},set(REGIONS))
+  published=[x['id'] for x in catalog]
+  self.assertEqual(len(published),len(set(published)))
+  self.assertTrue(set(published).issubset(REGIONS))
   with tempfile.TemporaryDirectory() as directory:
    output=package_ui(directory)
-   for region in REGIONS:
+   for region in published:
     parser=Menu();parser.feed((output/region/'index.html').read_text())
     self.assertFalse(parser.nav)
     self.assertEqual([x['value'] for x in parser.options],[x['url'] for x in catalog])
     self.assertEqual([x['value'] for x in parser.options if 'selected' in x],[x['url'] for x in catalog if x['id']==region])
  def test_single_region_export_retains_other_regions(self):
   with tempfile.TemporaryDirectory() as directory:
-   out=package_ui(directory,['dolomites']);parser=Menu();parser.feed((out/'dolomites/index.html').read_text());self.assertEqual(len(parser.options),len(REGIONS))
+   out=package_ui(directory,['dolomites']);parser=Menu();parser.feed((out/'dolomites/index.html').read_text());self.assertEqual(len(parser.options),len(json.loads((ROOT/'config/preview-regions.json').read_text())))
    self.assertFalse((out/'ireland').exists())
  def test_dolomites_bounds_identity_and_shared_cartography(self):
   p=profile('dolomites');self.assertEqual(p['bounds'],[10.65,45.7,13.1,47.0]);self.assertEqual(p['garminFamilyId'],4837)

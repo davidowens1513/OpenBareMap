@@ -1,0 +1,106 @@
+{
+  "acceptance": "Automated checks only; see validation and visual-review records for actual reviewed scope.",
+  "coverage": "Crete, Gavdos, Gavdopoula, Dia, Chrissi, Koufonisi and nearby islands.",
+  "datasets": {
+    "basemap": {
+      "bytes": 45199360,
+      "path": "releases/crete/2.0.0/maps/basemap.mbtiles",
+      "sha256": "a0beb58f5921d0dc5a79f9b810274a3307f146a70eb35cd5a2ef21702474bc08",
+      "validation": {
+        "empty_tile_count": 3262,
+        "logical_tiles_sha256": "88a29b29927328a39a79cb41951fc87eb4280d86e968c619acdfa57f607c3e27",
+        "tile_count": 8188
+      }
+    },
+    "grid": {
+      "bytes": 3813376,
+      "path": "releases/crete/2.0.0/maps/grid.mbtiles",
+      "sha256": "e1a01709a5ef4e0e5eadddf014d4682c2322ab326a532ab82f0097d3260dcd50",
+      "validation": {
+        "empty_tile_count": 0,
+        "logical_tiles_sha256": "3077c9959330d49ebf0183da2a8eed5575cd65ac316d2f2accf71d3c27e02e4c",
+        "tile_count": 10120
+      }
+    },
+    "hillshade": {
+      "bytes": 10403840,
+      "path": "releases/crete/2.0.0/maps/hillshade.mbtiles",
+      "sha256": "72a6eac79bcf974a57d8069822feb909b7cefc6e332c8e4696a1562ed767ca80",
+      "validation": {
+        "empty_tile_count": 0,
+        "logical_tiles_sha256": "4ad447cc12eb951cb55eb808bdb5cb77ea5f32484fbf2693802450c721964a02",
+        "tile_count": 352
+      }
+    },
+    "topography": {
+      "bytes": 57323520,
+      "path": "releases/crete/2.0.0/maps/topography-context.mbtiles",
+      "sha256": "a59b15f94391fa8c7486259188c8c483994393ab59668bbd77b8b31415cb58cf",
+      "validation": {
+        "empty_tile_count": 7535,
+        "logical_tiles_sha256": "fd7f4c4cf21907108caafb9c982d5749e6d45bb56f9f949e802883712851660f",
+        "tile_count": 11465
+      }
+    }
+  },
+  "garmin": {
+    "bytes": 29708288,
+    "path": "regions/crete/garmin/dist/OpenBareMap-Crete.img",
+    "sha256": "616ff5cf0e335ead0a84cd2293e5bc005dfd5be31c582c00c2e9a7a6e78b7ce6"
+  },
+  "geometryReport": {
+    "path": "releases/crete/2.0.0/build-records/geometry-report.json",
+    "sha256": "7df256ca91d61e32aa3944e86adca4f35004f46c399acd5701f25b77fe83aa4f"
+  },
+  "hostAppsModified": false,
+  "mapVersion": "2.0.0",
+  "osm": {
+    "bytes": 40115394,
+    "operation": "Complete-feature bbox extraction with nested relation references",
+    "path": "data/regions/crete/greece-261117.osm.clipped.osm.pbf",
+    "replicationTimestamp": "2026-11-17T21:24:30Z",
+    "sha256": "3d138329186fd6a48eb91d6f2ea88e73c37018499cbab7e730a9bc2072b3a377",
+    "snapshot_date": "2026-11-17",
+    "url": "https://download.geofabrik.de/europe/greece-261117.osm.pbf"
+  },
+  "packages": {
+    "android": {
+      "archive": {
+        "bytes": 122472514,
+        "path": "regions/crete/android/OpenBareMap-Android.zip",
+        "sha256": "e9ca7c2c04496dadca8347ed4f63805f28e1d0db43ad4d2b07810b99efa398d7"
+      },
+      "checksumsSHA256": "d641fd8754675ffa3cd5aa7e45b9871d342781b6870166237872224ac167b243",
+      "manifestSHA256": "ff0422dd5e918a89643cd4183ece0d9b8ed57c73b09efdd84547dd2e3544071d",
+      "path": "regions/crete/android",
+      "validationSHA256": "a0fcc8511d9abba8473d34ebf02d8a0650708da0102750156f2e12e0d2925375"
+    },
+    "ios": {
+      "checksumsSHA256": "e6e53cfc6c20bf1e18d275fb299b987262f2fe1353b13fe49d969f6affdaff55",
+      "manifestSHA256": "272c387b3c0780d148e46a3231169425746b28f2a955df4eafb4230f4fc63835",
+      "path": "regions/crete/ios",
+      "validationSHA256": "5ab9e3b1a50b2e886e4eb1aaae9ec229b37094649a3d0c87e0d1700bd36f137c"
+    }
+  },
+  "pythonRuntime": {
+    "packages": {
+      "Pillow": "12.3.0",
+      "certifi": "2026.10.23",
+      "charset-normalizer": "3.5.2",
+      "idna": "3.20",
+      "numpy": "2.5.4",
+      "osmium": "4.3.2",
+      "pyproj": "3.8.0",
+      "requests": "2.34.2",
+      "shapely": "2.2.0",
+      "urllib3": "2.8.0"
+    },
+    "platform": "macOS-27.2.1-arm64-arm-64bit-Mach-O",
+    "python": "3.14.5 (main, May 10 2026, 10:21:34) [Clang 21.0.0 (clang-2100.0.123.102)]",
+    "requirementsSHA256": "427f12ff8b49bfebac0a7d453c2f65bd15d6695584b18e6ecee1fdfeed20a36c"
+  },
+  "region": "crete",
+  "styleSHA256": "5e03c4e4ff1ee6e147cab28bb8b76527e6452095d76074c941068283afd94a58",
+  "terrainLockSHA256": "d8d1d519a28384a9a65d7312b31ecb37f4cc2364636c108e373c78fa45687a91",
+  "validation": "validation.json"
+}

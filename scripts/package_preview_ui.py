@@ -2,12 +2,12 @@
 """Package shared preview pages and zoomable regional keys without rebuilding map archives."""
 import argparse,html,shutil,json
 from pathlib import Path
-from regions import ROOT,profile,REGIONS
+from regions import ROOT,profile
 
 def package_ui(output,regions=None):
  output=Path(output);assets=output/'assets';(assets/'legends').mkdir(parents=True,exist_ok=True)
- selected=regions or list(REGIONS)
  catalog=json.loads((ROOT/'config/preview-regions.json').read_text())
+ selected=regions or [item['id'] for item in catalog]
  for name in ['preview.js','preview.css','legend.js','legend.css']:shutil.copyfile(ROOT/'web-preview'/name,assets/name)
  for region in selected:
   p=profile(region);directory=output/region;directory.mkdir(exist_ok=True)

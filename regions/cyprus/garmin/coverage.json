@@ -1,0 +1,33 @@
+{
+  "areaSquareDegrees": 3.05039999999998,
+  "bounds": [
+    32.2,
+    34.52,
+    34.66,
+    35.76
+  ],
+  "entireRequestedFootprintCovered": true,
+  "exactFootprint": null,
+  "inputs": [
+    {
+      "bytes": 263,
+      "path": "data/regions/cyprus/cyprus.poly",
+      "sha256": "8e9d7805c8b215172470dbbc5d13d4ec0efdf170018cda503337165d95c9d7b9",
+      "url": "https://download.geofabrik.de/europe/cyprus.poly"
+    }
+  ],
+  "knownDestinationsCovered": [
+    "island",
+    "nicosia",
+    "troodos",
+    "akamas",
+    "karpas",
+    "paphos",
+    "kyrenia",
+    "limassol",
+    "larnaca"
+  ],
+  "operation": "Requested rectangular crop; source outlines cover all destination anchors",
+  "polygons": 1,
+  "sha256": "03e58705a4638b2b5f75e3fa098848130dd3a67ed14eab6b9d1f44a469fbad4c"
+}

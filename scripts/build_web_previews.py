@@ -20,7 +20,7 @@ def build(output,origin,regions=None,cached_preview=None):
   if cached.get('pmtilesJS')!='4.5.0' or digest(cached_preview/'assets/pmtiles.js')!=cached.get('librarySHA256'):
    raise ValueError('Cached PMTiles library version or checksum differs from its release manifest')
   if not (cached_preview/'assets/PMTiles-LICENSE.txt').is_file():raise ValueError('Cached PMTiles licence is missing')
- regions=regions or list(REGIONS)
+ regions=regions or [item['id'] for item in json.loads((ROOT/'config/preview-regions.json').read_text())]
  if output.exists():raise FileExistsError(output)
  output.mkdir(parents=True);assets=output/'assets';assets.mkdir();maps=output/'data';maps.mkdir()
  for folder in ['fonts','sprites']:shutil.copytree(ROOT/'viewer'/folder,assets/folder)

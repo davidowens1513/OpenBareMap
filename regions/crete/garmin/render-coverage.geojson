@@ -1,0 +1,39 @@
+{
+  "features": [
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              26.4,
+              34.75
+            ],
+            [
+              26.4,
+              35.74
+            ],
+            [
+              23.45,
+              35.74
+            ],
+            [
+              23.45,
+              34.75
+            ],
+            [
+              26.4,
+              34.75
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "properties": {
+        "purpose": "Limit opaque native background and land-cover polygons; retain complete accepted OSM and terrain inputs",
+        "region": "crete"
+      },
+      "type": "Feature"
+    }
+  ],
+  "type": "FeatureCollection"
+}

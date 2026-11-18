@@ -1,0 +1,40 @@
+{
+  "builderSHA256": "a2d345bb6682c31f1688a00fd483998eb467b93f3e591ffea94eac8fcaf26354",
+  "contoursSourceSHA256": "3aa1de17f9ab2cd7d194f41e8ecf294bfb355a3b137085a7f3773c2dd9d5994a",
+  "counts": {
+    "contours": 20846,
+    "grid": {
+      "grid_10km": 43,
+      "grid_1km": 412
+    },
+    "landcover": {
+      "empty_source_areas": [
+        {
+          "area_id": 24953145,
+          "outer_ring_sizes": [],
+          "reason": "invalid area (area_id=24953145)"
+        }
+      ],
+      "features": 13887,
+      "retained": 2213,
+      "smoothed": 11674
+    }
+  },
+  "osm": {
+    "bytes": 40115394,
+    "operation": "Complete-feature bbox extraction with nested relation references",
+    "path": "data/regions/crete/greece-261117.osm.clipped.osm.pbf",
+    "replicationTimestamp": "2026-11-17T21:24:30Z",
+    "sha256": "3d138329186fd6a48eb91d6f2ea88e73c37018499cbab7e730a9bc2072b3a377",
+    "snapshot_date": "2026-11-17",
+    "url": "https://download.geofabrik.de/europe/greece-261117.osm.pbf"
+  },
+  "outputs": {
+    "contours.geojson": "106085ea540ea2d771af33174fbe75de5c651ee8d6a4588c34b9b60a7366abf2",
+    "grid_10km.geojson": "118092a5b792539509c95c6543f7562710509e75637543746b8efc783d851851",
+    "grid_1km.geojson": "65114ab3665cf2c06509d4442e7913b0e2057d891bc94e6defd83e0c16ea5384",
+    "landcover.geojson": "6a4e28469e3e886c6c8dd08caaa0f8158dd78ab2192b5b05c1141920b920b787"
+  },
+  "region": "crete",
+  "smootherSHA256": "7581d024dc1c1bec931642c7201db149bf64a64c814c451fa8bf37a0881ea6c9"
+}

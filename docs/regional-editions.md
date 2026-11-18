@@ -277,3 +277,15 @@ rebuildable local data. Git carries configurations, source locks, validation
 records and public download manifests. Cloudflare R2 serves the finished
 integration kits, Garmin images and browser previews. The R2 delivery inventory
 records the exact sizes and checksums of the downloadable kits and images.
+
+### Crete, Cyprus and Malta
+
+Crete uses the 17 November 2026 Geofabrik Greece extract clipped to the
+island group, including Gavdos. Cyprus and Malta use their own Geofabrik
+extracts from the same date. Cyprus covers the whole island and Malta covers
+Malta, Gozo and Comino in a single edition. The offline glyph range for
+Greek labels is recorded in the viewer asset lock.
+
+These editions use the same 20 m contours, Copernicus GLO-30, storage rules,
+app integration kits and regional preview format as the other Mediterranean
+island maps. Garmin family IDs are 4846, 4847 and 4848 respectively.

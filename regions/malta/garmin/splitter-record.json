@@ -1,0 +1,21 @@
+{
+  "combinedSHA256": "50c91f5ad607d8f6ca4f88221a89f41cf4c32d90c25b9567249d624ba53c5f2f",
+  "command": [
+    "/opt/homebrew/opt/openjdk@21/libexec/openjdk.jdk/Contents/Home/bin/java",
+    "-Xmx6g",
+    "-jar",
+    "/Volumes/Extreme SSD/Projects/OpenBareMap/garmin/tools/splitter-r654/splitter.jar",
+    "--mapid=48480001",
+    "--description=OpenBareMap Malta",
+    "--max-nodes=1000000",
+    "--max-threads=2",
+    "--keep-complete=true",
+    "--output=pbf",
+    "--polygon-file=/Volumes/Extreme SSD/Projects/OpenBareMap/regions/malta/garmin/coverage.poly",
+    "--output-dir=/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/906ead9d53a7/malta/garmin/split",
+    "--ignore-osm-bounds=true",
+    "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/906ead9d53a7/malta/garmin/combined.osm.pbf"
+  ],
+  "coverageSHA256": "0f3d34a1637fd2195590d4a36997fa5166455a4c6a3b2660263a711670181c52",
+  "ignoreSourceHeaderBounds": true
+}

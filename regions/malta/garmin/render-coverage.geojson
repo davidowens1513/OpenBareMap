@@ -1,0 +1,39 @@
+{
+  "features": [
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              14.14,
+              35.75
+            ],
+            [
+              14.14,
+              36.12
+            ],
+            [
+              14.61,
+              36.12
+            ],
+            [
+              14.61,
+              35.75
+            ],
+            [
+              14.14,
+              35.75
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "properties": {
+        "purpose": "Limit opaque native background and land-cover polygons; retain complete accepted OSM and terrain inputs",
+        "region": "malta"
+      },
+      "type": "Feature"
+    }
+  ],
+  "type": "FeatureCollection"
+}

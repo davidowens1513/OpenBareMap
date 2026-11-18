@@ -1,0 +1,52 @@
+{
+  "contourIntervalMetres": 20,
+  "coverage": "The whole island of Cyprus, including the Troodos mountains, Akamas and the Karpas peninsula.",
+  "datasets": {
+    "basemap": {
+      "bytes": 72187904,
+      "path": "releases/cyprus/2.0.0/maps/basemap.mbtiles",
+      "sha256": "67171146b55d18cb6458f6d6a89440ed6c554fc663efa9b75ce3ddd697748a7f",
+      "validation": {
+        "empty_tile_count": 4939,
+        "logical_tiles_sha256": "f417ac0ddbde82985d93a68efd192bf67d7eab688aacb285324aea0b594d4e2b",
+        "tile_count": 9438
+      }
+    },
+    "grid": {
+      "bytes": 3915776,
+      "path": "releases/cyprus/2.0.0/maps/grid.mbtiles",
+      "sha256": "91713bfc628e6d4acfef5ade8e7190fbfb9ce6636ade3028af6520a3e4d17ebb",
+      "validation": {
+        "empty_tile_count": 0,
+        "logical_tiles_sha256": "f802dddc19cc81c7bb51bed321675f288b3417e2587bdad517eb6919607e87a6",
+        "tile_count": 10711
+      }
+    },
+    "hillshade": {
+      "bytes": 9498624,
+      "path": "releases/cyprus/2.0.0/maps/hillshade.mbtiles",
+      "sha256": "ffad064c475cb131aed6c6fa3b17778ab9a444fa397e0b573bc4a76116ad83cd",
+      "validation": {
+        "empty_tile_count": 0,
+        "logical_tiles_sha256": "4aaab2c0fcdcd4530d55dba60d3ed717fb1109c380561b42ff547512b0ebf168",
+        "tile_count": 294
+      }
+    },
+    "topography": {
+      "bytes": 43823104,
+      "path": "releases/cyprus/2.0.0/maps/topography.mbtiles",
+      "sha256": "6f257da127a6810c0cdd6e4c2be9622c28742b3f2fbb766d69a0f7403b6ce540",
+      "validation": {
+        "empty_tile_count": 20561,
+        "logical_tiles_sha256": "d9aacffc68d0be1f22856934390f56ca1dfdb1331786e9ff13e75f401bbead3d",
+        "tile_count": 24923
+      }
+    }
+  },
+  "format": "openbaremap-development-viewer-v1",
+  "localBorders": false,
+  "mapVersion": "2.0.0",
+  "region": "cyprus",
+  "storageRevision": "2.0.0-cyprus-r1",
+  "styleRevision": "2.0.0-cyprus-r1"
+}

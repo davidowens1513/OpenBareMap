@@ -1,0 +1,33 @@
+{
+  "areaSquareDegrees": 2.920500000000005,
+  "bounds": [
+    23.45,
+    34.75,
+    26.4,
+    35.74
+  ],
+  "entireRequestedFootprintCovered": true,
+  "exactFootprint": null,
+  "inputs": [
+    {
+      "bytes": 12694,
+      "path": "data/regions/crete/greece.poly",
+      "sha256": "037f2c4c8babbe9d34998ab9022f68d751151a8bb079709cd97cf5cbaaadde0f",
+      "url": "https://download.geofabrik.de/europe/greece.poly"
+    }
+  ],
+  "knownDestinationsCovered": [
+    "island",
+    "chania",
+    "heraklion",
+    "psiloritis",
+    "samaria-gorge",
+    "gavdos",
+    "dia",
+    "chrissi",
+    "koufonisi"
+  ],
+  "operation": "Requested rectangular crop; source outlines cover all destination anchors",
+  "polygons": 1,
+  "sha256": "650c91956cccf8f54d99612eba403adefa8ae45e8b2d85a5de116501eba60024"
+}

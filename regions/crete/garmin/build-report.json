@@ -1,0 +1,142 @@
+{
+  "familyId": 4846,
+  "garminPackageRevision": "2.0.0-r1",
+  "inspection": {
+    "anchorLabels": {
+      "Chania": "Chania"
+    },
+    "bounds": [
+      23.449974060058594,
+      34.74992752075195,
+      26.400060653686523,
+      35.74007034301758
+    ],
+    "coastPolygonsByLevel": {
+      "0": {
+        "0x32": 14,
+        "0x54": 1724
+      },
+      "1": {
+        "0x32": 10,
+        "0x54": 1061
+      },
+      "2": {
+        "0x32": 10,
+        "0x54": 576
+      },
+      "3": {
+        "0x32": 10,
+        "0x54": 139
+      },
+      "4": {
+        "0x32": 10,
+        "0x54": 59
+      }
+    },
+    "contoursByLevel": {
+      "0": {
+        "0x20": 29359,
+        "0x22": 6654
+      },
+      "1": {
+        "0x20": 23313,
+        "0x22": 5171
+      },
+      "2": {
+        "0x22": 4787
+      },
+      "3": {
+        "0x10008": 4254
+      },
+      "4": {}
+    },
+    "lineInstancesAtHighestDetail": {
+      "0x1": 189,
+      "0x10001": 977,
+      "0x10003": 4,
+      "0x10004": 36,
+      "0x10005": 1379,
+      "0x10006": 1214,
+      "0x1000b": 872,
+      "0x16": 8225,
+      "0x18": 2080,
+      "0x1a": 74,
+      "0x1c": 225,
+      "0x1e": 95,
+      "0x1f": 121,
+      "0x2": 461,
+      "0x20": 29359,
+      "0x22": 6654,
+      "0x3": 864,
+      "0x4": 1341,
+      "0x6": 30950,
+      "0x7": 23543,
+      "0xa": 31955
+    },
+    "logicalCombinedSHA256": "c634e752ff7b0702dbe5cfd08fbc70ec30e79359e11453fe3fb804eb48e393f1",
+    "logicalHashNote": "Internal file names, sizes and payloads; only CommonHeader creation-date bytes 14..20 are zeroed for hashing. IMG archive headers are excluded. Output bytes are never modified.",
+    "logicalTileSHA256": {
+      "48460001.img": "29830cd8cb2eb78b1606558982ffd07d4479d21994267a91e3540b2950bf776f",
+      "48460002.img": "dbd6b561eff016bae6f81a8d39817ccb898f1c26121d44be262d45d53cd212ac",
+      "48460003.img": "28ac614e3a9c6a2d62deb5c1c369da5663a64b988139451bfab992f972f97c83",
+      "48460004.img": "6d4d38fccf2f3a7177d7df525c40d9b54abdc462345d3eec6fbb1b91f552abd6",
+      "48460005.img": "789fc6b6f1ad8e885364b779e7ec85cf416ebe03131ec9ecbd9c2bb5ab19d9ef",
+      "48460006.img": "01efa1df8cbcde16d72d4983f39450a7f48a5fbf4e5ef223849d13d53d57d3c4",
+      "48460007.img": "2195afdda9abe3d88f8da430201d77b65a977fbb542273f812a6f778327572ee",
+      "48460008.img": "62fdd950dc9524dedec523944f04f51998cb3c90a087d1914001349b27fccc43",
+      "48460009.img": "93f69271a852411b6eb34a17a1fc6326fd589aee7f5fa37f58a42058145e27ee",
+      "48460010.img": "4fba87f764b9747321b5b7ac3223f7ef84639a36c281bfadc42f9001ee50fd65"
+    },
+    "pointInstancesAtHighestDetail": {
+      "0x100": 4,
+      "0x10001": 86,
+      "0x10002": 410,
+      "0x10003": 609,
+      "0x10006": 14470,
+      "0x2f0b": 2125,
+      "0x600": 23,
+      "0x650c": 156,
+      "0x6603": 34,
+      "0x6615": 23,
+      "0x6616": 1825,
+      "0x800": 810,
+      "0xb00": 594,
+      "0xc00": 439
+    },
+    "polygonInstancesAtHighestDetail": {
+      "0x10101": 4135,
+      "0x10102": 1687,
+      "0x10103": 1974,
+      "0x10104": 2295,
+      "0x10105": 602,
+      "0x10106": 170,
+      "0x10109": 2196,
+      "0x1010a": 342,
+      "0x1010b": 10,
+      "0x13": 108395,
+      "0x32": 14,
+      "0x3c": 903,
+      "0x50": 1721,
+      "0x51": 20,
+      "0x54": 1724
+    },
+    "routing": false,
+    "subfileBytes": {
+      "DEM": 9490645,
+      "LBL": 355237,
+      "MPS": 781,
+      "RGN": 19520693,
+      "SRT": 912,
+      "TRE": 238123,
+      "TYP": 2982
+    },
+    "tiles": 10
+  },
+  "output": {
+    "bytes": 29708288,
+    "path": "regions/crete/garmin/dist/OpenBareMap-Crete.img",
+    "sha256": "616ff5cf0e335ead0a84cd2293e5bc005dfd5be31c582c00c2e9a7a6e78b7ce6"
+  },
+  "routing": false,
+  "status": "compiled and structurally inspected; hardware rendering pending"
+}

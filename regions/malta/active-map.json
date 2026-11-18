@@ -1,0 +1,52 @@
+{
+  "contourIntervalMetres": 20,
+  "coverage": "Malta, Gozo and Comino in one map, including their nearby islets.",
+  "datasets": {
+    "basemap": {
+      "bytes": 12238848,
+      "path": "releases/malta/2.0.0/maps/basemap.mbtiles",
+      "sha256": "fd81e585780b3c1a36aa57c6ae61b70ef40fb48b447c3974e693c8b7781fb02f",
+      "validation": {
+        "empty_tile_count": 67,
+        "logical_tiles_sha256": "34d3a36a0696f7632d52ab36af2a3222672bbc34c1543dbb0d30fdb67d79b848",
+        "tile_count": 342
+      }
+    },
+    "grid": {
+      "bytes": 249856,
+      "path": "releases/malta/2.0.0/maps/grid.mbtiles",
+      "sha256": "d4d2cf7345fb90ab9ba9f1244b08206dc77af8827f476104480e303a8bce05e7",
+      "validation": {
+        "empty_tile_count": 0,
+        "logical_tiles_sha256": "54c9ecbf1ecfcb7b64d72badc983cb4eafea6c79eaf10f04cc7fc0f8e9314283",
+        "tile_count": 652
+      }
+    },
+    "hillshade": {
+      "bytes": 1839104,
+      "path": "releases/malta/2.0.0/maps/hillshade.mbtiles",
+      "sha256": "57969fb070f5410debca201f49feaa00ead453fea3d367ba7675281dfdb78d34",
+      "validation": {
+        "empty_tile_count": 0,
+        "logical_tiles_sha256": "337d03c12fbcc0265132d9a85c2f65c015c6cdb3369fe811c557561876877e81",
+        "tile_count": 86
+      }
+    },
+    "topography": {
+      "bytes": 1634304,
+      "path": "releases/malta/2.0.0/maps/topography-context.mbtiles",
+      "sha256": "1b4bd3638417d088d27bfc1beb1dea5b5193579e29bfbc7783f9d16db02a3ba2",
+      "validation": {
+        "empty_tile_count": 8770,
+        "logical_tiles_sha256": "289b9d9554b88af3ba586b4e7fa50a4177cfd3f7326322ac567bfeb7664e4301",
+        "tile_count": 9583
+      }
+    }
+  },
+  "format": "openbaremap-development-viewer-v1",
+  "localBorders": false,
+  "mapVersion": "2.0.0",
+  "region": "malta",
+  "storageRevision": "2.0.0-malta-r3",
+  "styleRevision": "2.0.0-malta-r1"
+}

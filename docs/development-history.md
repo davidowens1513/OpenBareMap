@@ -128,3 +128,10 @@ validation. The browser previews share the existing regional viewer and
 navigation. The Sicily Garmin background uses the OSM source outline to avoid
 covering adjacent mainland Italy. This release follows the regional rebuild
 policy for bulky inputs and intermediate datasets.
+
+## 18 November 2026 · Crete, Cyprus and Malta
+
+Built three further independent editions. Crete includes Gavdos and nearby
+islands. Cyprus covers the whole island. Malta combines Malta, Gozo and Comino.
+iOS, Android and Garmin builds passed automated validation. The Crete and
+Cyprus packages include Greek glyphs for offline labels.

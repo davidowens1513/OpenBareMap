@@ -1,0 +1,34 @@
+{
+  "builderSHA256": "a2d345bb6682c31f1688a00fd483998eb467b93f3e591ffea94eac8fcaf26354",
+  "contoursSourceSHA256": "b75c92f1a9dd584acc8a10cb7a94fc3a213f8287d8fe44416c6d0f0767c4a926",
+  "counts": {
+    "contours": 2786,
+    "grid": {
+      "grid_10km": 12,
+      "grid_1km": 102
+    },
+    "landcover": {
+      "empty_source_areas": [],
+      "features": 6949,
+      "retained": 1270,
+      "smoothed": 5679
+    }
+  },
+  "osm": {
+    "bytes": 9011868,
+    "operation": "Complete upstream extract; no merge or spatial filtering",
+    "path": "data/regions/malta/malta-261117.osm.pbf",
+    "replicationTimestamp": "2026-11-17T21:24:30Z",
+    "sha256": "ef6e80e3a588cc18b21612f9c568be45377f92cf4c28ff866b562f9a0a1aa8ce",
+    "snapshot_date": "2026-11-17",
+    "url": "https://download.geofabrik.de/europe/malta-261117.osm.pbf"
+  },
+  "outputs": {
+    "contours.geojson": "1e07027dd221bd5e86414ba91a93492e2880ef912b87fc002e7a05477edc1aa8",
+    "grid_10km.geojson": "e6857b7da7f0feaa244dfeb374cb2af24b97ecf4b1d3c0137f64b55401b34736",
+    "grid_1km.geojson": "a382fa4f31e6f03e5a9dcd6851a100bc4d6b2cf32b88a9e9ea75d1b83af2dc30",
+    "landcover.geojson": "d6d719a9797eba030a0a97e6921aecd54d938b33f66136aacf5a700a6539d1b1"
+  },
+  "region": "malta",
+  "smootherSHA256": "7581d024dc1c1bec931642c7201db149bf64a64c814c451fa8bf37a0881ea6c9"
+}

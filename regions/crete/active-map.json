@@ -1,0 +1,52 @@
+{
+  "contourIntervalMetres": 20,
+  "coverage": "Crete, Gavdos, Gavdopoula, Dia, Chrissi, Koufonisi and nearby islands.",
+  "datasets": {
+    "basemap": {
+      "bytes": 45199360,
+      "path": "releases/crete/2.0.0/maps/basemap.mbtiles",
+      "sha256": "a0beb58f5921d0dc5a79f9b810274a3307f146a70eb35cd5a2ef21702474bc08",
+      "validation": {
+        "empty_tile_count": 3262,
+        "logical_tiles_sha256": "88a29b29927328a39a79cb41951fc87eb4280d86e968c619acdfa57f607c3e27",
+        "tile_count": 8188
+      }
+    },
+    "grid": {
+      "bytes": 3813376,
+      "path": "releases/crete/2.0.0/maps/grid.mbtiles",
+      "sha256": "e1a01709a5ef4e0e5eadddf014d4682c2322ab326a532ab82f0097d3260dcd50",
+      "validation": {
+        "empty_tile_count": 0,
+        "logical_tiles_sha256": "3077c9959330d49ebf0183da2a8eed5575cd65ac316d2f2accf71d3c27e02e4c",
+        "tile_count": 10120
+      }
+    },
+    "hillshade": {
+      "bytes": 10403840,
+      "path": "releases/crete/2.0.0/maps/hillshade.mbtiles",
+      "sha256": "72a6eac79bcf974a57d8069822feb909b7cefc6e332c8e4696a1562ed767ca80",
+      "validation": {
+        "empty_tile_count": 0,
+        "logical_tiles_sha256": "4ad447cc12eb951cb55eb808bdb5cb77ea5f32484fbf2693802450c721964a02",
+        "tile_count": 352
+      }
+    },
+    "topography": {
+      "bytes": 57323520,
+      "path": "releases/crete/2.0.0/maps/topography-context.mbtiles",
+      "sha256": "a59b15f94391fa8c7486259188c8c483994393ab59668bbd77b8b31415cb58cf",
+      "validation": {
+        "empty_tile_count": 7535,
+        "logical_tiles_sha256": "fd7f4c4cf21907108caafb9c982d5749e6d45bb56f9f949e802883712851660f",
+        "tile_count": 11465
+      }
+    }
+  },
+  "format": "openbaremap-development-viewer-v1",
+  "localBorders": false,
+  "mapVersion": "2.0.0",
+  "region": "crete",
+  "storageRevision": "2.0.0-crete-r3",
+  "styleRevision": "2.0.0-crete-r1"
+}

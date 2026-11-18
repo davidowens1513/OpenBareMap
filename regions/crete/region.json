@@ -1,0 +1,217 @@
+{
+  "mapVersion": "2.0.0",
+  "minzoom": 4,
+  "maxzoom": 14,
+  "townlands": false,
+  "contourIntervalMetres": 20,
+  "minorWaterwayMinzoom": 10,
+  "clipBasemap": true,
+  "gridSource": "utm-grid",
+  "terrainProvider": "copernicus-glo30",
+  "terrainAttribution": "Copernicus DEM GLO-30 · European Union / ESA · DLR / Airbus",
+  "ignoreSourceHeaderBounds": true,
+  "requireBogFeatures": false,
+  "id": "crete",
+  "name": "OpenBareMap Crete",
+  "label": "Crete",
+  "coverage": "Crete, Gavdos, Gavdopoula, Dia, Chrissi, Koufonisi and nearby islands.",
+  "bounds": [
+    23.45,
+    34.75,
+    26.4,
+    35.74
+  ],
+  "terrainBounds": [
+    23,
+    34,
+    27,
+    36
+  ],
+  "coastContextBounds": [
+    22,
+    33,
+    28,
+    37
+  ],
+  "projectedCRS": "EPSG:25835",
+  "gridCRS": "EPSG:25835",
+  "gridName": "ETRS89 / UTM 35N",
+  "gridExtent": [
+    170000,
+    450000,
+    3840000,
+    3970000
+  ],
+  "sourceDate": "2026-11-17",
+  "sourceSlugs": [
+    "greece"
+  ],
+  "sourceBaseURL": "https://download.geofabrik.de/europe/",
+  "nativeLanguage": "el",
+  "clipSource": true,
+  "garminFamilyId": 4846,
+  "garminTileStartId": 48460001,
+  "garminFilename": "OpenBareMap-Crete.img",
+  "garminPackageRevision": "2.0.0-r1",
+  "styleRevision": "2.0.0-crete-r1",
+  "garminContextBounds": [
+    23.45,
+    34.75,
+    26.4,
+    35.74
+  ],
+  "garminCoverageBounds": [
+    23.45,
+    34.75,
+    26.4,
+    35.74
+  ],
+  "inspectionNames": [
+    "Chania"
+  ],
+  "destinations": {
+    "island": [
+      24.018,
+      35.511,
+      8
+    ],
+    "chania": [
+      24.018,
+      35.511,
+      12
+    ],
+    "heraklion": [
+      25.134,
+      35.337,
+      12
+    ],
+    "psiloritis": [
+      24.77,
+      35.227,
+      12
+    ],
+    "samaria-gorge": [
+      23.966,
+      35.286,
+      12
+    ],
+    "gavdos": [
+      24.087,
+      34.84,
+      12
+    ],
+    "dia": [
+      25.221,
+      35.447,
+      12
+    ],
+    "chrissi": [
+      25.709,
+      34.876,
+      12
+    ],
+    "koufonisi": [
+      26.145,
+      34.938,
+      12
+    ]
+  },
+  "destinationLabels": {
+    "island": "Crete",
+    "chania": "Chania",
+    "heraklion": "Heraklion",
+    "psiloritis": "Psiloritis",
+    "samaria-gorge": "Samaria Gorge",
+    "gavdos": "Gavdos",
+    "dia": "Dia",
+    "chrissi": "Chrissi",
+    "koufonisi": "Koufonisi"
+  },
+  "terrainNotice": "Crete elevation: Copernicus DEM GLO-30 Public (AWS 2021 release).\n\nproduced using Copernicus WorldDEM-30 © DLR e.V. 2010-2014 and © Airbus Defence and Space GmbH 2014-2018 provided under COPERNICUS by the European Union and ESA; all rights reserved\n\nThe organisations in charge of the Copernicus programme by law or by delegation do not incur any liability for any use of the Copernicus WorldDEM-30.\n\nLicense: https://dataspace.copernicus.eu/sites/default/files/media/files/2025-06/copernicus_contributing_mission_data_access_v2_cop_dem_licenses.pdf\nSource: https://registry.opendata.aws/copernicus-dem/\nVertical datum: EGM2008 orthometric metres. Native approximately 30 m cells are bilinearly resampled to point-aligned Int16 HGT for the shared terrain pipeline. Ocean-only cells absent from the official public inventory are zero.\n",
+  "validationAnchors": {
+    "Chania": [
+      24.018,
+      35.511
+    ],
+    "Heraklion": [
+      25.134,
+      35.337
+    ],
+    "Psiloritis": [
+      24.77,
+      35.227
+    ],
+    "Samaria Gorge": [
+      23.966,
+      35.286
+    ],
+    "Gavdos": [
+      24.087,
+      34.84
+    ],
+    "Dia": [
+      25.221,
+      35.447
+    ],
+    "Chrissi": [
+      25.709,
+      34.876
+    ],
+    "Koufonisi": [
+      26.145,
+      34.938
+    ]
+  },
+  "islandValidationAnchors": {
+    "Chania": [
+      24.018,
+      35.511
+    ],
+    "Heraklion": [
+      25.134,
+      35.337
+    ],
+    "Psiloritis": [
+      24.77,
+      35.227
+    ],
+    "Samaria Gorge": [
+      23.966,
+      35.286
+    ],
+    "Gavdos": [
+      24.087,
+      34.84
+    ],
+    "Dia": [
+      25.221,
+      35.447
+    ],
+    "Chrissi": [
+      25.709,
+      34.876
+    ],
+    "Koufonisi": [
+      26.145,
+      34.938
+    ]
+  },
+  "islandValidationZooms": [
+    10,
+    11,
+    12
+  ],
+  "overviewLandAnchors": {
+    "Chania": [
+      24.018,
+      35.511
+    ]
+  },
+  "labelGlyphs": "ΑΒΓΔΕΖΗΘΙΚΛΜΝΞΟΠΡΣΤΥΦΧΨΩαβγδεζηθικλμνξοπρσςτυφχψωΆΈΉΊΌΎΏάέήίόύώΐΰϊϋ",
+  "optionalBasemapLayers": [
+    "station",
+    "railway",
+    "cycling_route"
+  ],
+  "optionalBasemapLayerReason": "This island has no operating rail network; any mapped railway or station features are retained. The clipped OSM snapshot contains no non-proposed bicycle route relations."
+}

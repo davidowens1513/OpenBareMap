@@ -1,0 +1,105 @@
+{
+  "regions": {
+    "crete": {
+      "basemap": {
+        "sourceSHA256": "a0beb58f5921d0dc5a79f9b810274a3307f146a70eb35cd5a2ef21702474bc08",
+        "bytes": 42526958,
+        "sha256": "30cc2cb7a480494cf8dfc98b38410b9747345da2a2814f340bf8e34972cf6550",
+        "tiles": 8188
+      },
+      "grid": {
+        "sourceSHA256": "e1a01709a5ef4e0e5eadddf014d4682c2322ab326a532ab82f0097d3260dcd50",
+        "bytes": 3256053,
+        "sha256": "f4d26ce785f0cb9e4034061acdefdf80b1f4ebf8d6126f8c8c0a046076550a3f",
+        "tiles": 10120
+      },
+      "hillshade": {
+        "sourceSHA256": "72a6eac79bcf974a57d8069822feb909b7cefc6e332c8e4696a1562ed767ca80",
+        "bytes": 10134662,
+        "sha256": "c4e964e8aa90144cd92bc2906b69d0ef870c1c3e866958b5df1748b35a8f1f58",
+        "tiles": 352
+      },
+      "topography": {
+        "sourceSHA256": "a59b15f94391fa8c7486259188c8c483994393ab59668bbd77b8b31415cb58cf",
+        "bytes": 54192730,
+        "sha256": "984efdb8908a45755d4035ae694625da23920b001618e9ae7372229b89f5b078",
+        "tiles": 11465
+      },
+      "coast": {
+        "sourceSHA256": "20cf6c7cc317ab46e09436552c53da00914c03ec5bf95cd3f511bc4c1004d7e8",
+        "bytes": 1315267,
+        "sha256": "9ef05ca6e922a9c3a0c2682ac53385b71ca8bc2afdf896e2f7bdb74cff32b530",
+        "tiles": 1084
+      }
+    },
+    "cyprus": {
+      "basemap": {
+        "sourceSHA256": "67171146b55d18cb6458f6d6a89440ed6c554fc663efa9b75ce3ddd697748a7f",
+        "bytes": 69341256,
+        "sha256": "c234a07fb801982fa69e5e48eee80f71ab2da137ec1f566396ea014f0f391dac",
+        "tiles": 9438
+      },
+      "grid": {
+        "sourceSHA256": "91713bfc628e6d4acfef5ade8e7190fbfb9ce6636ade3028af6520a3e4d17ebb",
+        "bytes": 3340317,
+        "sha256": "45141596da6205b95d46b597beec313e16fe0381dd47923e6992d7bfa8eaf639",
+        "tiles": 10711
+      },
+      "hillshade": {
+        "sourceSHA256": "ffad064c475cb131aed6c6fa3b17778ab9a444fa397e0b573bc4a76116ad83cd",
+        "bytes": 9260440,
+        "sha256": "77ff173be89cd7b8e2423417ce360b51a58e70c78fc13d2b345a1fa875134509",
+        "tiles": 294
+      },
+      "topography": {
+        "sourceSHA256": "ac2b7946317de94e924af7b6aa422c198b2e332b5df891aff65121d9cbd609c1",
+        "bytes": 40279063,
+        "sha256": "3fa8f14b12330102847728440115cfb7d1fb07213b787a6621def1e33806f917",
+        "tiles": 24923
+      },
+      "coast": {
+        "sourceSHA256": "a512a569c7a3fc9fe9568b70b44a4bdd3767b7e9657d1421b55638d15c216899",
+        "bytes": 386590,
+        "sha256": "c20fe038a8a7526cc56ba893bc8bcb98aa357e4f818bab1da9796571df34e738",
+        "tiles": 1780
+      }
+    },
+    "malta": {
+      "basemap": {
+        "sourceSHA256": "fd81e585780b3c1a36aa57c6ae61b70ef40fb48b447c3974e693c8b7781fb02f",
+        "bytes": 12053050,
+        "sha256": "79e34f2e9cc1feb7fc72f24ef514a2ef47ab777a4364ac18001dc122fd7df688",
+        "tiles": 342
+      },
+      "grid": {
+        "sourceSHA256": "d4d2cf7345fb90ab9ba9f1244b08206dc77af8827f476104480e303a8bce05e7",
+        "bytes": 198528,
+        "sha256": "8eb813a94277d94491092cd251bc61d6940e155ad9334e762a0911ed5786c079",
+        "tiles": 652
+      },
+      "hillshade": {
+        "sourceSHA256": "57969fb070f5410debca201f49feaa00ead453fea3d367ba7675281dfdb78d34",
+        "bytes": 1757421,
+        "sha256": "ca774c38a4680ef7925b95d885b2bf3cc67fb922346837aa8d27d238229c049b",
+        "tiles": 86
+      },
+      "topography": {
+        "sourceSHA256": "1b4bd3638417d088d27bfc1beb1dea5b5193579e29bfbc7783f9d16db02a3ba2",
+        "bytes": 935538,
+        "sha256": "d7499c62a15cb83124a3106ecaadfb2dbca9cb24d1e2a589981b6ad311bcf972",
+        "tiles": 9583
+      },
+      "coast": {
+        "sourceSHA256": "1448c1cc0abc3e86bc71bc79a1211be0fc5424f29a61a98b0d6480e6be1d278e",
+        "bytes": 197649,
+        "sha256": "460d7986f7e3ae09f4505994e0475955f8f9c4732dc689b23b266b18e8dd34ef",
+        "tiles": 773
+      }
+    }
+  },
+  "pmtilesPython": "3.8.1",
+  "pmtilesJS": "4.5.0",
+  "librarySHA256": "caf981bc46f6327ee7e65d5dc964d89d38a69f60edca2bd4c5c890c21b554c6c",
+  "dataOrigin": "https://downloads.appsbyonzy.dev/OpenBareMap/mediterranean-east/2.0.0/preview",
+  "scope": "Complete selected map tiles; no regional or zoom sampling."
+}
