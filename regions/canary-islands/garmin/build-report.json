@@ -1,0 +1,148 @@
+{
+  "familyId": 4849,
+  "garminPackageRevision": "2.0.0-r1",
+  "inspection": {
+    "anchorLabels": {
+      "Santa Cruz de Tenerife": "Santa Cruz de Tenerife"
+    },
+    "bounds": [
+      -18.250093460083008,
+      27.58993148803711,
+      -13.319978713989258,
+      29.47005271911621
+    ],
+    "coastPolygonsByLevel": {
+      "0": {
+        "0x32": 31,
+        "0x54": 1436
+      },
+      "1": {
+        "0x32": 19,
+        "0x54": 763
+      },
+      "2": {
+        "0x32": 14,
+        "0x54": 518
+      },
+      "3": {
+        "0x32": 14,
+        "0x54": 102
+      },
+      "4": {
+        "0x32": 14,
+        "0x54": 36
+      }
+    },
+    "contoursByLevel": {
+      "0": {
+        "0x20": 25031,
+        "0x22": 5328
+      },
+      "1": {
+        "0x20": 19422,
+        "0x22": 3926
+      },
+      "2": {
+        "0x22": 3583
+      },
+      "3": {
+        "0x10008": 3136
+      },
+      "4": {}
+    },
+    "lineInstancesAtHighestDetail": {
+      "0x1": 1381,
+      "0x10001": 4591,
+      "0x10002": 1393,
+      "0x10003": 8,
+      "0x10004": 370,
+      "0x10005": 8007,
+      "0x10006": 2994,
+      "0x1000b": 3203,
+      "0x14": 102,
+      "0x16": 46932,
+      "0x18": 22930,
+      "0x1a": 75,
+      "0x1c": 1350,
+      "0x1e": 1072,
+      "0x1f": 124,
+      "0x2": 743,
+      "0x20": 25031,
+      "0x22": 5328,
+      "0x3": 2804,
+      "0x4": 3427,
+      "0x6": 44859,
+      "0x7": 31606,
+      "0xa": 28366
+    },
+    "logicalCombinedSHA256": "bf93f6f54264ec86325fb143357010236ec0fa987deb34f1e5755f5556b0ec9d",
+    "logicalHashNote": "Internal file names, sizes and payloads; only CommonHeader creation-date bytes 14..20 are zeroed for hashing. IMG archive headers are excluded. Output bytes are never modified.",
+    "logicalTileSHA256": {
+      "48490001.img": "52cd67b91a4877d33786f24bda1b0ed883757be99efbc34ff7c492e913f80f12",
+      "48490002.img": "0b1ad57327cda4e89e0a135c88971b90ea180954e0e8d330f5410f4c62b039e0",
+      "48490003.img": "4892495c7cea50b30f3eb93d3ef4dc60bdf78ec4ec93faca7688d4121f6f02c7",
+      "48490004.img": "936605b21123758fa6c61f3f4df1de63370a016f864dfd67fe2a239daec3f4ba",
+      "48490005.img": "5b7835e42630aeaa9f218bba0d0d278a9bde72e5e85abbd98f5cc42259b27153",
+      "48490006.img": "dbc9f23323239ca35a78a34e323479ddf2b370b20a53430707a857a3ce7b8930",
+      "48490007.img": "c11dbe3429c75de0cf9d3afe16752eee54a76798f4b36f471ba136220bc2e102",
+      "48490008.img": "5e13578c5abc19cb722a02848294158b3f8dff4706ffb14a4c6655f737653e6a",
+      "48490009.img": "2267c60033f9f409a94b634cedcf32ac0ccdbf5787eb224935ec4d3f59777a35",
+      "48490010.img": "0eaa205145c1d0f8a1c241830d78cb76a33e1f70cb09d58a91ea576f89aee455",
+      "48490011.img": "ac8020f36d9909d14591cfcb3e1515c63315a7061a79cbb7e0a85dcb1a8c5a47",
+      "48490012.img": "f7ba2bc598c7f41fd7c551d07d32367a45d834bce764311f11708d6645cf5536",
+      "48490013.img": "5a8e84022ae517c00699eb47b7547d4532cf2d6b9aa493452845f548551fa473",
+      "48490014.img": "ec60b29762a671df999db1addcd7d2ee20198f82e60b60deebfe9d818c6d0339"
+    },
+    "pointInstancesAtHighestDetail": {
+      "0x100": 2,
+      "0x10001": 612,
+      "0x10002": 1586,
+      "0x10003": 3931,
+      "0x10006": 29253,
+      "0x2f0b": 7260,
+      "0x600": 46,
+      "0x650c": 368,
+      "0x6603": 279,
+      "0x6615": 891,
+      "0x6616": 6233,
+      "0x800": 107,
+      "0xb00": 1380,
+      "0xc00": 3305
+    },
+    "polygonInstancesAtHighestDetail": {
+      "0x10101": 12793,
+      "0x10102": 3791,
+      "0x10103": 228,
+      "0x10104": 6986,
+      "0x10105": 791,
+      "0x10106": 629,
+      "0x10109": 1347,
+      "0x1010a": 348,
+      "0x1010b": 45,
+      "0x13": 228814,
+      "0x32": 31,
+      "0x3c": 17629,
+      "0x50": 4284,
+      "0x51": 31,
+      "0x54": 1436
+    },
+    "routing": false,
+    "subfileBytes": {
+      "DEM": 8423289,
+      "LBL": 1357165,
+      "MPS": 1212,
+      "RGN": 26910358,
+      "SRT": 912,
+      "TRE": 337893,
+      "TYP": 2982
+    },
+    "tiles": 14
+  },
+  "output": {
+    "bytes": 37158912,
+    "path": "regions/canary-islands/garmin/dist/OpenBareMap-Canary-Islands.img",
+    "sha256": "1f1e9eb166346d9c80d646157371753fa22b04884783af7455ac4419fdffc4e3"
+  },
+  "routing": false,
+  "status": "compiled and structurally inspected; hardware rendering pending"
+}

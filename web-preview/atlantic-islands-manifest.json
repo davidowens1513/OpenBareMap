@@ -1,0 +1,73 @@
+{
+  "regions": {
+    "canary-islands": {
+      "basemap": {
+        "sourceSHA256": "7f821124f144b0f218f38c539c61a2009e03e54d8a7abd31cae9f236cf5f8da1",
+        "bytes": 90554465,
+        "sha256": "c363d29feeb730a06ca2c120d7a87cbf9458dc8aa18b8e6cbfb88cbd6473788f",
+        "tiles": 6787
+      },
+      "grid": {
+        "sourceSHA256": "f7d362488d5dd086f393b17b32561297aac36cae38f788d3c0f99fed15064b74",
+        "bytes": 9843602,
+        "sha256": "7f9b572906c34f32e9e63d6821604f0bb5ecdda6cfdc1a8a13a60cc84f79b729",
+        "tiles": 29664
+      },
+      "hillshade": {
+        "sourceSHA256": "a79320b7ec94eeefaac109445f7fcaed6c5c267f4ea2718b488fdbfeb20db939",
+        "bytes": 7749042,
+        "sha256": "56bf845eae3f2349941b25bb514dac150b546242a28cf5b07fe963e8ad9ebb79",
+        "tiles": 328
+      },
+      "topography": {
+        "sourceSHA256": "ed1e0d9fa49fd336dee5908126e416e39e7cfb5063246b76aaf48918016645fd",
+        "bytes": 45906073,
+        "sha256": "02097cbb4770c14a3cb13f0cb058eeeadeda0d1660a69f2b2506f3e1bcc23493",
+        "tiles": 17168
+      },
+      "coast": {
+        "sourceSHA256": "47bd1bff328b89064af43304ee70f59ef5fdde6fc7641667347d72f770bdf9c1",
+        "bytes": 459522,
+        "sha256": "db50f85ff23740d33ade11445b9225d6c649387d9a362cb6ec8a47a4c24e3cec",
+        "tiles": 1318
+      }
+    },
+    "madeira": {
+      "basemap": {
+        "sourceSHA256": "3c9876d5c73226f41d5343699a9b250afbf63bdabf679918c62159d5b8f9ae9b",
+        "bytes": 18861535,
+        "sha256": "9a4844af7d9430111078f98421b135f8aae9707a5f077aba506c26ed74ec7c1c",
+        "tiles": 1292
+      },
+      "grid": {
+        "sourceSHA256": "1db56f1cafc3039f640f174365c95067266658d43543b514575adcd5363d91c5",
+        "bytes": 5442063,
+        "sha256": "ac15a09eb2cf1ece493e34dde00ee0d10889ddbb0d94d3d826d3b3014aa3c4cd",
+        "tiles": 16664
+      },
+      "hillshade": {
+        "sourceSHA256": "778cb7d772f8949e70d8c29192dd0b05c2e6e7e4c110f40afea370924afe4ab7",
+        "bytes": 1102241,
+        "sha256": "dbfcbb531a8f794d64acbb6ba4a2738cbf95ac7ab90a842456b5958b1eefed95",
+        "tiles": 76
+      },
+      "topography": {
+        "sourceSHA256": "460e5e9f552b4000ffecf49b6f7b2150fea922e1438bc2cba3802fa6014f3370",
+        "bytes": 8516280,
+        "sha256": "df0631764d28a04d35295d3f00fe5c6d296723cce36b806838824e2054d9b72f",
+        "tiles": 626
+      },
+      "coast": {
+        "sourceSHA256": "d5fc5bcf7a3404ffe539b7eef7e8c788c3868f4b007c3fc9f8025f78d0f29d8f",
+        "bytes": 119975,
+        "sha256": "875f655cb618b5c2d18124dce93b387ef80b8999430c6b31579be2e66f17756a",
+        "tiles": 89
+      }
+    }
+  },
+  "pmtilesPython": "3.8.1",
+  "pmtilesJS": "4.5.0",
+  "librarySHA256": "caf981bc46f6327ee7e65d5dc964d89d38a69f60edca2bd4c5c890c21b554c6c",
+  "dataOrigin": "https://downloads.appsbyonzy.dev/OpenBareMap/atlantic-islands/2.0.0/preview",
+  "scope": "Complete selected map tiles; no regional or zoom sampling."
+}

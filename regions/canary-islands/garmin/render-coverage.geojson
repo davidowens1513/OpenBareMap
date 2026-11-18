@@ -1,0 +1,55 @@
+{
+  "features": [
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              -13.815840903306214,
+              27.59
+            ],
+            [
+              -18.25,
+              27.59
+            ],
+            [
+              -18.25,
+              29.33609642844507
+            ],
+            [
+              -18.24516,
+              29.34705
+            ],
+            [
+              -15.53783,
+              28.80727
+            ],
+            [
+              -14.675367763264124,
+              29.47
+            ],
+            [
+              -13.32,
+              29.47
+            ],
+            [
+              -13.32,
+              28.368024207472523
+            ],
+            [
+              -13.815840903306214,
+              27.59
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "properties": {
+        "purpose": "Limit opaque native background and land-cover polygons; retain complete accepted OSM and terrain inputs",
+        "region": "canary-islands"
+      },
+      "type": "Feature"
+    }
+  ],
+  "type": "FeatureCollection"
+}

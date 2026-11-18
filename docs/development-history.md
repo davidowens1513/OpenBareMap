@@ -135,3 +135,9 @@ Built three further independent editions. Crete includes Gavdos and nearby
 islands. Cyprus covers the whole island. Malta combines Malta, Gozo and Comino.
 iOS, Android and Garmin builds passed automated validation. The Crete and
 Cyprus packages include Greek glyphs for offline labels.
+
+## 18 November 2026 · Canary Islands and Madeira
+
+Built one Canary Islands edition and a separate Madeira edition. Both passed
+automated mobile, Garmin and coastline checks. The browser previews use the
+shared region selector and map-key format.

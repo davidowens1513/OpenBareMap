@@ -1,0 +1,29 @@
+{
+  "accessed_utc": "2026-11-18T13:39:29.873480+00:00",
+  "inputs": [
+    {
+      "bytes": 60559354,
+      "path": "data/regions/canary-islands/canary-islands-261117.osm.pbf",
+      "replicationTimestamp": "2026-11-17T21:24:30Z",
+      "sha256": "076687d9cba420e9a3d821c74309f6504f828e270257e1548874e07e9b919148",
+      "url": "https://download.geofabrik.de/africa/canary-islands-261117.osm.pbf"
+    }
+  ],
+  "osm": {
+    "bytes": 60559354,
+    "operation": "Complete upstream extract; no merge or spatial filtering",
+    "path": "data/regions/canary-islands/canary-islands-261117.osm.pbf",
+    "replicationTimestamp": "2026-11-17T21:24:30Z",
+    "sha256": "076687d9cba420e9a3d821c74309f6504f828e270257e1548874e07e9b919148",
+    "snapshot_date": "2026-11-17",
+    "url": "https://download.geofabrik.de/africa/canary-islands-261117.osm.pbf"
+  },
+  "polygons": [
+    {
+      "bytes": 271,
+      "path": "data/regions/canary-islands/canary-islands.poly",
+      "sha256": "79a0494234c9e6d2eef15fe5830a6ba3a5ba36e731c526f5bc99117ae73c9b99",
+      "url": "https://download.geofabrik.de/africa/canary-islands.poly"
+    }
+  ]
+}

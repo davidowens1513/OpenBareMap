@@ -1,0 +1,82 @@
+{
+  "bounds": [
+    -18.25,
+    27.59,
+    -13.32,
+    29.47
+  ],
+  "contextEnvelope": [
+    -18.25,
+    27.59,
+    -13.32,
+    29.47
+  ],
+  "drawPriority": 25,
+  "format": "openbaremap-garmin-render-footprint-v1",
+  "geometry": {
+    "bytes": 1112,
+    "path": "regions/canary-islands/garmin/render-coverage.geojson",
+    "sha256": "40ed3c1a768b2d0ccef5ff34775a3ed138cadc90d9e4271cb2d8177bebb37654"
+  },
+  "inputs": [
+    {
+      "bytes": 271,
+      "path": "data/regions/canary-islands/canary-islands.poly",
+      "sha256": "79a0494234c9e6d2eef15fe5830a6ba3a5ba36e731c526f5bc99117ae73c9b99",
+      "url": "https://download.geofabrik.de/africa/canary-islands.poly"
+    }
+  ],
+  "knownDestinationsCovered": {
+    "alegranza": [
+      -13.518,
+      29.4
+    ],
+    "el-hierro": [
+      -18.02,
+      27.73
+    ],
+    "fuerteventura": [
+      -14.012,
+      28.43
+    ],
+    "gran-canaria": [
+      -15.59,
+      27.97
+    ],
+    "la-gomera": [
+      -17.24,
+      28.11
+    ],
+    "la-graciosa": [
+      -13.505,
+      29.253
+    ],
+    "la-palma": [
+      -17.88,
+      28.65
+    ],
+    "lanzarote": [
+      -13.61,
+      29.03
+    ],
+    "lobos": [
+      -13.821,
+      28.748
+    ],
+    "roque-nublo": [
+      -15.613,
+      27.968
+    ],
+    "teide": [
+      -16.643,
+      28.273
+    ],
+    "tenerife": [
+      -16.6,
+      28.31
+    ]
+  },
+  "purpose": "Rectangular Garmin tiles may overlap other countries. Do not fill their padding with sea, land or land-cover polygons.",
+  "region": "canary-islands",
+  "transparentNativeMap": true
+}

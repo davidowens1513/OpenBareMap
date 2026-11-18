@@ -71,3 +71,11 @@ distribution/app-bundles-v1/garmin/cyprus/ATTRIBUTION.txt -whitespace
 regions/malta/garmin/copyright.txt -whitespace
 regions/malta/garmin/dist/ATTRIBUTION.txt -whitespace
 distribution/app-bundles-v1/garmin/malta/ATTRIBUTION.txt -whitespace
+
+# Preserve generated Atlantic island Garmin licence bytes.
+regions/canary-islands/garmin/copyright.txt -whitespace
+regions/canary-islands/garmin/dist/ATTRIBUTION.txt -whitespace
+distribution/app-bundles-v1/garmin/canary-islands/ATTRIBUTION.txt -whitespace
+regions/madeira/garmin/copyright.txt -whitespace
+regions/madeira/garmin/dist/ATTRIBUTION.txt -whitespace
+distribution/app-bundles-v1/garmin/madeira/ATTRIBUTION.txt -whitespace

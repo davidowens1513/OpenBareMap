@@ -2,6 +2,7 @@
   "format": "openbaremap-app-bundle-catalog-v1",
   "mapVersions": {
     "balearic-islands": "2.0.0",
+    "canary-islands": "2.0.0",
     "corsica": "2.0.0",
     "crete": "2.0.0",
     "cyprus": "2.0.0",
@@ -9,6 +10,7 @@
     "england-wales": "2.0.1",
     "faroe-islands": "2.0.0",
     "ireland": "2.0.0",
+    "madeira": "2.0.0",
     "malta": "2.0.0",
     "norway-central": "2.0.0",
     "norway-north": "2.0.0",
@@ -88,6 +90,76 @@
         "r2Key": "OpenBareMap/balearic-islands/2.0.0/app-bundles-v1/ios/OpenBareMap-Balearic-Islands-iOS-Bundle.zip",
         "sha256": "807f5d6bb00b0ab528cf702fabafa33761173d66b26e0be56a940dcebe7b4d18",
         "url": "https://downloads.appsbyonzy.dev/OpenBareMap/balearic-islands/2.0.0/app-bundles-v1/ios/OpenBareMap-Balearic-Islands-iOS-Bundle.zip"
+      }
+    },
+    "canary-islands": {
+      "android": {
+        "bytes": 165861092,
+        "datasets": {
+          "basemap": {
+            "path": "maps/basemap.mbtiles",
+            "sha256": "7f821124f144b0f218f38c539c61a2009e03e54d8a7abd31cae9f236cf5f8da1"
+          },
+          "coast": {
+            "derivedFrom": "ed1e0d9fa49fd336dee5908126e416e39e7cfb5063246b76aaf48918016645fd",
+            "path": "maps/coast.mbtiles",
+            "sha256": "47bd1bff328b89064af43304ee70f59ef5fdde6fc7641667347d72f770bdf9c1"
+          },
+          "grid": {
+            "path": "maps/grid.mbtiles",
+            "sha256": "f7d362488d5dd086f393b17b32561297aac36cae38f788d3c0f99fed15064b74"
+          },
+          "hillshade": {
+            "path": "maps/hillshade.mbtiles",
+            "sha256": "a79320b7ec94eeefaac109445f7fcaed6c5c267f4ea2718b488fdbfeb20db939"
+          },
+          "topography": {
+            "path": "maps/topography.mbtiles",
+            "sha256": "ed1e0d9fa49fd336dee5908126e416e39e7cfb5063246b76aaf48918016645fd"
+          }
+        },
+        "instructionsSHA256": "fa028ac30fb93b5fb83bb7c4fe6b29dc431536696193b28e052a964cc2780b59",
+        "instructionsURL": "https://downloads.appsbyonzy.dev/OpenBareMap/canary-islands/2.0.0/app-bundles-v1/android/instructions.txt",
+        "localPath": "releases/canary-islands/2.0.0/app-bundles-v1/android/OpenBareMap-Canary-Islands-Android-Bundle.zip",
+        "mapManifestSHA256": "83df838cc15b466d628304853967b2ffc14cbd018da5230b4799279a83ba1534",
+        "r2Key": "OpenBareMap/canary-islands/2.0.0/app-bundles-v1/android/OpenBareMap-Canary-Islands-Android-Bundle.zip",
+        "sha256": "47890aa03759189bbf01752161f43eab3397eabab37aacbb159a48fb415d62ce",
+        "url": "https://downloads.appsbyonzy.dev/OpenBareMap/canary-islands/2.0.0/app-bundles-v1/android/OpenBareMap-Canary-Islands-Android-Bundle.zip"
+      },
+      "ios": {
+        "bytes": 165861829,
+        "datasets": {
+          "basemap": {
+            "path": "maps/basemap.mbtiles",
+            "sha256": "7f821124f144b0f218f38c539c61a2009e03e54d8a7abd31cae9f236cf5f8da1"
+          },
+          "coast": {
+            "derived_from": "ed1e0d9fa49fd336dee5908126e416e39e7cfb5063246b76aaf48918016645fd",
+            "maxzoom": 12,
+            "operation": "Preserve land-layer MVT bytes only through zoom 12; omit other layers.",
+            "path": "maps/coast.mbtiles",
+            "sha256": "47bd1bff328b89064af43304ee70f59ef5fdde6fc7641667347d72f770bdf9c1"
+          },
+          "grid": {
+            "path": "maps/grid.mbtiles",
+            "sha256": "f7d362488d5dd086f393b17b32561297aac36cae38f788d3c0f99fed15064b74"
+          },
+          "hillshade": {
+            "path": "maps/hillshade.mbtiles",
+            "sha256": "a79320b7ec94eeefaac109445f7fcaed6c5c267f4ea2718b488fdbfeb20db939"
+          },
+          "topography": {
+            "path": "maps/topography.mbtiles",
+            "sha256": "ed1e0d9fa49fd336dee5908126e416e39e7cfb5063246b76aaf48918016645fd"
+          }
+        },
+        "instructionsSHA256": "ac773eeac7e75f464a7bcdf1dba617dd43044633882ea160c9aa8a8fefeef4f9",
+        "instructionsURL": "https://downloads.appsbyonzy.dev/OpenBareMap/canary-islands/2.0.0/app-bundles-v1/ios/instructions.txt",
+        "localPath": "releases/canary-islands/2.0.0/app-bundles-v1/ios/OpenBareMap-Canary-Islands-iOS-Bundle.zip",
+        "mapManifestSHA256": "e9f031466332e78b5eaae01890d08f0c6956f1f35dfdc55edcd89d367ee5e73e",
+        "r2Key": "OpenBareMap/canary-islands/2.0.0/app-bundles-v1/ios/OpenBareMap-Canary-Islands-iOS-Bundle.zip",
+        "sha256": "a7b87f76b4a5bfaa35ee8d3298ba168e61ec11c5f15441320a2476b4834dab2d",
+        "url": "https://downloads.appsbyonzy.dev/OpenBareMap/canary-islands/2.0.0/app-bundles-v1/ios/OpenBareMap-Canary-Islands-iOS-Bundle.zip"
       }
     },
     "corsica": {
@@ -578,6 +650,76 @@
         "r2Key": "OpenBareMap/ireland/2.0.0/app-bundles-v1/ios/OpenBareMap-Ireland-iOS-Bundle.zip",
         "sha256": "cc03cee98aafa76a32a9f9a847790ec9c1a6e594461212ef9575a97c134623b7",
         "url": "https://downloads.appsbyonzy.dev/OpenBareMap/ireland/2.0.0/app-bundles-v1/ios/OpenBareMap-Ireland-iOS-Bundle.zip"
+      }
+    },
+    "madeira": {
+      "android": {
+        "bytes": 39879964,
+        "datasets": {
+          "basemap": {
+            "path": "maps/basemap.mbtiles",
+            "sha256": "3c9876d5c73226f41d5343699a9b250afbf63bdabf679918c62159d5b8f9ae9b"
+          },
+          "coast": {
+            "derivedFrom": "460e5e9f552b4000ffecf49b6f7b2150fea922e1438bc2cba3802fa6014f3370",
+            "path": "maps/coast.mbtiles",
+            "sha256": "d5fc5bcf7a3404ffe539b7eef7e8c788c3868f4b007c3fc9f8025f78d0f29d8f"
+          },
+          "grid": {
+            "path": "maps/grid.mbtiles",
+            "sha256": "1db56f1cafc3039f640f174365c95067266658d43543b514575adcd5363d91c5"
+          },
+          "hillshade": {
+            "path": "maps/hillshade.mbtiles",
+            "sha256": "778cb7d772f8949e70d8c29192dd0b05c2e6e7e4c110f40afea370924afe4ab7"
+          },
+          "topography": {
+            "path": "maps/topography.mbtiles",
+            "sha256": "460e5e9f552b4000ffecf49b6f7b2150fea922e1438bc2cba3802fa6014f3370"
+          }
+        },
+        "instructionsSHA256": "9f141f75eea198cf9dac34cb5383e4463fc46060fe01d49c4ff665b90f4af337",
+        "instructionsURL": "https://downloads.appsbyonzy.dev/OpenBareMap/madeira/2.0.0/app-bundles-v1/android/instructions.txt",
+        "localPath": "releases/madeira/2.0.0/app-bundles-v1/android/OpenBareMap-Madeira-Android-Bundle.zip",
+        "mapManifestSHA256": "ec39b45d1b488f3e107ce0701a76eac1d1724bb78eb8b26dc212d5d8f808144e",
+        "r2Key": "OpenBareMap/madeira/2.0.0/app-bundles-v1/android/OpenBareMap-Madeira-Android-Bundle.zip",
+        "sha256": "d25e56f368a2dc5ee65335fc9074310270b39f18f69442dda0d2e40e460b5d78",
+        "url": "https://downloads.appsbyonzy.dev/OpenBareMap/madeira/2.0.0/app-bundles-v1/android/OpenBareMap-Madeira-Android-Bundle.zip"
+      },
+      "ios": {
+        "bytes": 39880687,
+        "datasets": {
+          "basemap": {
+            "path": "maps/basemap.mbtiles",
+            "sha256": "3c9876d5c73226f41d5343699a9b250afbf63bdabf679918c62159d5b8f9ae9b"
+          },
+          "coast": {
+            "derived_from": "460e5e9f552b4000ffecf49b6f7b2150fea922e1438bc2cba3802fa6014f3370",
+            "maxzoom": 12,
+            "operation": "Preserve land-layer MVT bytes only through zoom 12; omit other layers.",
+            "path": "maps/coast.mbtiles",
+            "sha256": "d5fc5bcf7a3404ffe539b7eef7e8c788c3868f4b007c3fc9f8025f78d0f29d8f"
+          },
+          "grid": {
+            "path": "maps/grid.mbtiles",
+            "sha256": "1db56f1cafc3039f640f174365c95067266658d43543b514575adcd5363d91c5"
+          },
+          "hillshade": {
+            "path": "maps/hillshade.mbtiles",
+            "sha256": "778cb7d772f8949e70d8c29192dd0b05c2e6e7e4c110f40afea370924afe4ab7"
+          },
+          "topography": {
+            "path": "maps/topography.mbtiles",
+            "sha256": "460e5e9f552b4000ffecf49b6f7b2150fea922e1438bc2cba3802fa6014f3370"
+          }
+        },
+        "instructionsSHA256": "44cdada0d66a451ac6ba30fc529db6f6d996ca6435170612252a1b68be4ceeeb",
+        "instructionsURL": "https://downloads.appsbyonzy.dev/OpenBareMap/madeira/2.0.0/app-bundles-v1/ios/instructions.txt",
+        "localPath": "releases/madeira/2.0.0/app-bundles-v1/ios/OpenBareMap-Madeira-iOS-Bundle.zip",
+        "mapManifestSHA256": "ebbc846a52e3a7e4433d2006d30c7d6ea51745e96a79eba070534ee71d085c38",
+        "r2Key": "OpenBareMap/madeira/2.0.0/app-bundles-v1/ios/OpenBareMap-Madeira-iOS-Bundle.zip",
+        "sha256": "4a734609f48c96b5a80db2f8c336084c9acee526add777cd7c38456864401193",
+        "url": "https://downloads.appsbyonzy.dev/OpenBareMap/madeira/2.0.0/app-bundles-v1/ios/OpenBareMap-Madeira-iOS-Bundle.zip"
       }
     },
     "malta": {
@@ -1211,5 +1353,5 @@
       }
     }
   },
-  "sourceCommit": "3a6d591e5630070fde7c24cc94f110da85a9e08f"
+  "sourceCommit": "2f563769069996b383e632ce102c961cabd7dbdc"
 }

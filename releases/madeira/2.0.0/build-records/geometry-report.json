@@ -1,0 +1,34 @@
+{
+  "builderSHA256": "a2d345bb6682c31f1688a00fd483998eb467b93f3e591ffea94eac8fcaf26354",
+  "contoursSourceSHA256": "96cad64fdfb278c62fc3d17fc2c0a7902f569ed6ee2e4dfafeab5a697df7fc77",
+  "counts": {
+    "contours": 3097,
+    "grid": {
+      "grid_10km": 56,
+      "grid_1km": 542
+    },
+    "landcover": {
+      "empty_source_areas": [],
+      "features": 4009,
+      "retained": 359,
+      "smoothed": 3650
+    }
+  },
+  "osm": {
+    "bytes": 19008817,
+    "operation": "Complete-feature bbox extraction with nested relation references",
+    "path": "data/regions/madeira/portugal-261117.osm.clipped.osm.pbf",
+    "replicationTimestamp": "2026-11-17T21:24:30Z",
+    "sha256": "61de895ac752ed436a7779de210170f27df54538d0e62bd98ffdc33e125e2f73",
+    "snapshot_date": "2026-11-17",
+    "url": "https://download.geofabrik.de/europe/portugal-261117.osm.pbf"
+  },
+  "outputs": {
+    "contours.geojson": "e1935c158b3d1398c2afece911ced20c13fd260287260e7a2268142bb3b2f843",
+    "grid_10km.geojson": "a1e2e203d7b63439b88c2174a351fdf7d551f717cdccc4133fe797e32c5432c4",
+    "grid_1km.geojson": "8734051f1fbf88fb5535e2b0a82d79898175b91bbad5e72b9a3b980e04aaff75",
+    "landcover.geojson": "1b3a8f771903a60646aa712f624db47a5f7d99b93074a2bdeae9a1a14e35a14a"
+  },
+  "region": "madeira",
+  "smootherSHA256": "7581d024dc1c1bec931642c7201db149bf64a64c814c451fa8bf37a0881ea6c9"
+}

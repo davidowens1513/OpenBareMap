@@ -1,0 +1,58 @@
+{
+  "bounds": [
+    -17.3,
+    30.0,
+    -15.72,
+    33.17
+  ],
+  "contextEnvelope": [
+    -17.3,
+    30.0,
+    -15.72,
+    33.17
+  ],
+  "drawPriority": 25,
+  "format": "openbaremap-garmin-render-footprint-v1",
+  "geometry": {
+    "bytes": 850,
+    "path": "regions/madeira/garmin/render-coverage.geojson",
+    "sha256": "05f4fa8d7c842599219faaaf8b8c1d2bbd37897c299cf3577cc5a75572765cb0"
+  },
+  "inputs": [
+    {
+      "bytes": 5999,
+      "path": "data/regions/madeira/portugal.poly",
+      "sha256": "b6eac12ed0d04d87c0371289d2f9b95365cafce0ee94fefd01b5ecc33a52e5bb",
+      "url": "https://download.geofabrik.de/europe/portugal.poly"
+    }
+  ],
+  "knownDestinationsCovered": {
+    "deserta-grande": [
+      -16.5,
+      32.516
+    ],
+    "funchal": [
+      -16.909,
+      32.65
+    ],
+    "pico-ruivo": [
+      -16.942,
+      32.758
+    ],
+    "porto-santo": [
+      -16.338,
+      33.065
+    ],
+    "raba\u00e7al": [
+      -17.126,
+      32.762
+    ],
+    "selvagem-grande": [
+      -15.872,
+      30.144
+    ]
+  },
+  "purpose": "Rectangular Garmin tiles may overlap other countries. Do not fill their padding with sea, land or land-cover polygons.",
+  "region": "madeira",
+  "transparentNativeMap": true
+}

@@ -1,0 +1,327 @@
+{
+  "coverage": "Madeira, Porto Santo, the Desertas Islands and the outlying Selvagens Islands.",
+  "coverageAnchors": {
+    "Funchal": {
+      "coordinate": [
+        -16.909,
+        32.65
+      ],
+      "featuresInNeighbouringDetailedTiles": 45608
+    },
+    "Pico Ruivo": {
+      "coordinate": [
+        -16.942,
+        32.758
+      ],
+      "featuresInNeighbouringDetailedTiles": 1934
+    },
+    "Porto Santo": {
+      "coordinate": [
+        -16.338,
+        33.065
+      ],
+      "featuresInNeighbouringDetailedTiles": 10759
+    },
+    "Raba\u00e7al": {
+      "coordinate": [
+        -17.126,
+        32.762
+      ],
+      "featuresInNeighbouringDetailedTiles": 2271
+    }
+  },
+  "datasets": {
+    "basemap": {
+      "empty_tile_count": 264,
+      "logical_tiles_sha256": "fc2b231ffcebd19416601d9f709b413e9bbf348830812116f34b8227721ceca2",
+      "tile_count": 1292
+    },
+    "grid": {
+      "empty_tile_count": 0,
+      "logical_tiles_sha256": "179b2630f7dc0a9257e147802227dec96f38811b7d3ca7cf89686b88cc10581d",
+      "tile_count": 16664
+    },
+    "hillshade": {
+      "empty_tile_count": 0,
+      "logical_tiles_sha256": "08f155b9cf144badb33ecf0400d83c1221c4ac34f50d98f318220c4f8491f77a",
+      "tile_count": 76
+    },
+    "topography": {
+      "empty_tile_count": 193,
+      "logical_tiles_sha256": "d80c6f193453efa37028debb3f3c90972728ebe81a069e5fe1d986aa399a75f3",
+      "tile_count": 626
+    }
+  },
+  "detail": {
+    "basemap": {
+      "boundaries": 5841,
+      "contours": 0
+    },
+    "topography": {
+      "boundaries": 0,
+      "contours": 24622
+    }
+  },
+  "garmin": {
+    "familyId": 4850,
+    "garminPackageRevision": "2.0.0-r1",
+    "inspection": {
+      "anchorLabels": {
+        "Funchal": "Funchal"
+      },
+      "bounds": [
+        -17.300033569335938,
+        29.999971389770508,
+        -15.719976425170898,
+        33.17004203796387
+      ],
+      "coastPolygonsByLevel": {
+        "0": {
+          "0x32": 19,
+          "0x54": 711
+        },
+        "1": {
+          "0x32": 6,
+          "0x54": 550
+        },
+        "2": {
+          "0x32": 3,
+          "0x54": 327
+        },
+        "3": {
+          "0x32": 3,
+          "0x54": 59
+        },
+        "4": {
+          "0x32": 3,
+          "0x54": 20
+        }
+      },
+      "contoursByLevel": {
+        "0": {
+          "0x20": 5145,
+          "0x22": 958
+        },
+        "1": {
+          "0x20": 4162,
+          "0x22": 722
+        },
+        "2": {
+          "0x22": 665
+        },
+        "3": {
+          "0x10008": 599
+        },
+        "4": {}
+      },
+      "lineInstancesAtHighestDetail": {
+        "0x10001": 993,
+        "0x10002": 222,
+        "0x10003": 1,
+        "0x10004": 15,
+        "0x10005": 2759,
+        "0x10006": 373,
+        "0x1000b": 412,
+        "0x16": 13743,
+        "0x18": 2920,
+        "0x1a": 2,
+        "0x1e": 650,
+        "0x2": 333,
+        "0x20": 5145,
+        "0x22": 958,
+        "0x3": 290,
+        "0x4": 1180,
+        "0x6": 6171,
+        "0x7": 5293,
+        "0xa": 1924
+      },
+      "logicalCombinedSHA256": "052cb4fb266549d0ff8bca29fd44c4ba45e4fbe928db19a8dddc0287e30412ab",
+      "logicalHashNote": "Internal file names, sizes and payloads; only CommonHeader creation-date bytes 14..20 are zeroed for hashing. IMG archive headers are excluded. Output bytes are never modified.",
+      "logicalTileSHA256": {
+        "48500001.img": "770e2aaf6bb4eda9e9c72e1328fa75c4e4b7aa5a4326b035ffc11ee71e440273",
+        "48500002.img": "4c0a5e32db8fb51bdc76245a449b13b589369aac193a10174ed86f3f951f0d71",
+        "48500003.img": "1642caec46713b36adcfa3e2f6133afa734e4d3b811f9f05d9b1ff224d5f5bfb"
+      },
+      "pointInstancesAtHighestDetail": {
+        "0x100": 7,
+        "0x10001": 632,
+        "0x10002": 612,
+        "0x10003": 1127,
+        "0x10006": 5805,
+        "0x2f0b": 2291,
+        "0x600": 9,
+        "0x650c": 506,
+        "0x6603": 42,
+        "0x6615": 4,
+        "0x6616": 177,
+        "0x800": 64,
+        "0xb00": 10,
+        "0xc00": 1685
+      },
+      "polygonInstancesAtHighestDetail": {
+        "0x10101": 601,
+        "0x10102": 1012,
+        "0x10103": 19,
+        "0x10104": 1508,
+        "0x10105": 44,
+        "0x10106": 174,
+        "0x10107": 3,
+        "0x10109": 470,
+        "0x1010a": 17,
+        "0x1010b": 80,
+        "0x13": 112664,
+        "0x32": 19,
+        "0x3c": 544,
+        "0x50": 1276,
+        "0x54": 711
+      },
+      "routing": false,
+      "subfileBytes": {
+        "DEM": 1410309,
+        "LBL": 286250,
+        "MPS": 271,
+        "RGN": 5737802,
+        "SRT": 912,
+        "TRE": 65622,
+        "TYP": 2982
+      },
+      "tiles": 3
+    },
+    "output": {
+      "bytes": 7535616,
+      "path": "regions/madeira/garmin/dist/OpenBareMap-Madeira.img",
+      "sha256": "4cb6a53930f8bd9ab199ab0798e462d64f665613b58ff778782721ab6b0db456"
+    },
+    "routing": false,
+    "status": "compiled and structurally inspected; hardware rendering pending"
+  },
+  "geometryProcessing": {
+    "contours": 3097,
+    "grid": {
+      "grid_10km": 56,
+      "grid_1km": 542
+    },
+    "landcover": {
+      "empty_source_areas": [],
+      "features": 4009,
+      "retained": 359,
+      "smoothed": 3650
+    }
+  },
+  "irelandGarminPackageRevision": "2.0.1-trail-detail-r1",
+  "irelandPreserved": true,
+  "islandLandBackground": {
+    "Deserta Grande": {
+      "coordinate": [
+        -16.5,
+        32.516
+      ],
+      "verifiedZooms": [
+        10,
+        11,
+        12
+      ]
+    },
+    "Funchal": {
+      "coordinate": [
+        -16.909,
+        32.65
+      ],
+      "verifiedZooms": [
+        10,
+        11,
+        12
+      ]
+    },
+    "Pico Ruivo": {
+      "coordinate": [
+        -16.942,
+        32.758
+      ],
+      "verifiedZooms": [
+        10,
+        11,
+        12
+      ]
+    },
+    "Porto Santo": {
+      "coordinate": [
+        -16.338,
+        33.065
+      ],
+      "verifiedZooms": [
+        10,
+        11,
+        12
+      ]
+    },
+    "Raba\u00e7al": {
+      "coordinate": [
+        -17.126,
+        32.762
+      ],
+      "verifiedZooms": [
+        10,
+        11,
+        12
+      ]
+    },
+    "Selvagem Grande": {
+      "coordinate": [
+        -15.872,
+        30.144
+      ],
+      "verifiedZooms": [
+        10,
+        11,
+        12
+      ]
+    }
+  },
+  "labelGlyphs": {
+    "Open Sans Bold": true,
+    "Open Sans Regular": true,
+    "Open Sans Semibold": true
+  },
+  "landBackground": {
+    "Funchal": {
+      "coordinate": [
+        -16.909,
+        32.65
+      ],
+      "verifiedZooms": [
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    }
+  },
+  "packages": {
+    "android": {
+      "checkedFiles": 44,
+      "nativeDeviceRenderingTested": false,
+      "sourceFiles": {
+        "basemap": "maps/basemap.mbtiles",
+        "coast": "maps/coast.mbtiles",
+        "hillshade": "maps/hillshade.mbtiles",
+        "topography": "maps/topography.mbtiles",
+        "utm-grid": "maps/grid.mbtiles"
+      }
+    },
+    "ios": {
+      "checkedFiles": 47,
+      "nativeDeviceRenderingTested": false,
+      "sourceFiles": {
+        "basemap": "maps/basemap.mbtiles",
+        "coast": "maps/coast.mbtiles",
+        "hillshade": "maps/hillshade.mbtiles",
+        "topography": "maps/topography.mbtiles",
+        "utm-grid": "maps/grid.mbtiles"
+      }
+    }
+  },
+  "region": "madeira",
+  "status": "automated checks passed; visual and hardware acceptance pending"
+}

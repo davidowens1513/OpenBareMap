@@ -1,0 +1,181 @@
+{
+  "mapVersion": "2.0.0",
+  "minzoom": 4,
+  "maxzoom": 14,
+  "townlands": false,
+  "contourIntervalMetres": 20,
+  "minorWaterwayMinzoom": 10,
+  "clipBasemap": true,
+  "gridSource": "utm-grid",
+  "terrainProvider": "copernicus-glo30",
+  "terrainAttribution": "Copernicus DEM GLO-30 · European Union / ESA · DLR / Airbus",
+  "ignoreSourceHeaderBounds": true,
+  "requireBogFeatures": false,
+  "id": "madeira",
+  "name": "OpenBareMap Madeira",
+  "label": "Madeira",
+  "coverage": "Madeira, Porto Santo, the Desertas Islands and the outlying Selvagens Islands.",
+  "bounds": [
+    -17.3,
+    30.0,
+    -15.72,
+    33.17
+  ],
+  "terrainBounds": [
+    -18,
+    30,
+    -15,
+    34
+  ],
+  "coastContextBounds": [
+    -19,
+    29,
+    -14,
+    35
+  ],
+  "projectedCRS": "EPSG:5016",
+  "gridCRS": "EPSG:5016",
+  "gridName": "PTRA08 / UTM 28N",
+  "gridExtent": [
+    270000,
+    440000,
+    3310000,
+    3680000
+  ],
+  "sourceDate": "2026-11-17",
+  "sourceSlugs": [
+    "portugal"
+  ],
+  "sourceBaseURL": "https://download.geofabrik.de/europe/",
+  "nativeLanguage": "pt",
+  "clipSource": true,
+  "garminFamilyId": 4850,
+  "garminTileStartId": 48500001,
+  "garminFilename": "OpenBareMap-Madeira.img",
+  "garminPackageRevision": "2.0.0-r1",
+  "styleRevision": "2.0.0-madeira-r1",
+  "garminContextBounds": [
+    -17.3,
+    30.0,
+    -15.72,
+    33.17
+  ],
+  "garminCoverageBounds": [
+    -17.3,
+    30.0,
+    -15.72,
+    33.17
+  ],
+  "inspectionNames": [
+    "Funchal"
+  ],
+  "destinations": {
+    "island": [
+      -16.909,
+      32.65,
+      7
+    ],
+    "funchal": [
+      -16.909,
+      32.65,
+      12
+    ],
+    "pico-ruivo": [
+      -16.942,
+      32.758,
+      12
+    ],
+    "rabaçal": [
+      -17.126,
+      32.762,
+      12
+    ],
+    "porto-santo": [
+      -16.338,
+      33.065,
+      12
+    ],
+    "deserta-grande": [
+      -16.5,
+      32.516,
+      12
+    ],
+    "selvagem-grande": [
+      -15.872,
+      30.144,
+      12
+    ]
+  },
+  "destinationLabels": {
+    "island": "Madeira",
+    "funchal": "Funchal",
+    "pico-ruivo": "Pico Ruivo",
+    "rabaçal": "Rabaçal",
+    "porto-santo": "Porto Santo",
+    "deserta-grande": "Deserta Grande",
+    "selvagem-grande": "Selvagem Grande"
+  },
+  "terrainNotice": "Madeira elevation: Copernicus DEM GLO-30 Public (AWS 2021 release).\n\nproduced using Copernicus WorldDEM-30 © DLR e.V. 2010-2014 and © Airbus Defence and Space GmbH 2014-2018 provided under COPERNICUS by the European Union and ESA; all rights reserved\n\nThe organisations in charge of the Copernicus programme by law or by delegation do not incur any liability for any use of the Copernicus WorldDEM-30.\n\nLicense: https://dataspace.copernicus.eu/sites/default/files/media/files/2025-06/copernicus_contributing_mission_data_access_v2_cop_dem_licenses.pdf\nSource: https://registry.opendata.aws/copernicus-dem/\nVertical datum: EGM2008 orthometric metres. Native approximately 30 m cells are bilinearly resampled to point-aligned Int16 HGT for the shared terrain pipeline. Ocean-only cells absent from the official public inventory are zero.\n",
+  "validationAnchors": {
+    "Funchal": [
+      -16.909,
+      32.65
+    ],
+    "Pico Ruivo": [
+      -16.942,
+      32.758
+    ],
+    "Rabaçal": [
+      -17.126,
+      32.762
+    ],
+    "Porto Santo": [
+      -16.338,
+      33.065
+    ]
+  },
+  "islandValidationAnchors": {
+    "Funchal": [
+      -16.909,
+      32.65
+    ],
+    "Pico Ruivo": [
+      -16.942,
+      32.758
+    ],
+    "Rabaçal": [
+      -17.126,
+      32.762
+    ],
+    "Porto Santo": [
+      -16.338,
+      33.065
+    ],
+    "Deserta Grande": [
+      -16.5,
+      32.516
+    ],
+    "Selvagem Grande": [
+      -15.872,
+      30.144
+    ]
+  },
+  "islandValidationZooms": [
+    10,
+    11,
+    12
+  ],
+  "overviewLandAnchors": {
+    "Funchal": [
+      -16.909,
+      32.65
+    ]
+  },
+  "labelGlyphs": "ÁáÂâÃãÀàÇçÉéÊêÍíÓóÔôÕõÚúÜü",
+  "optionalBasemapLayers": [
+    "station",
+    "railway"
+  ],
+  "optionalBasemapLayerReason": "Madeira has no operating rail network. Any mapped station or railway features are retained.",
+  "garminUseSourceOutline": true
+}

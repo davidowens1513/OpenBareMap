@@ -1,0 +1,52 @@
+{
+  "contourIntervalMetres": 20,
+  "coverage": "Madeira, Porto Santo, the Desertas Islands and the outlying Selvagens Islands.",
+  "datasets": {
+    "basemap": {
+      "bytes": 19243008,
+      "path": "releases/madeira/2.0.0/maps/basemap.mbtiles",
+      "sha256": "3c9876d5c73226f41d5343699a9b250afbf63bdabf679918c62159d5b8f9ae9b",
+      "validation": {
+        "empty_tile_count": 264,
+        "logical_tiles_sha256": "fc2b231ffcebd19416601d9f709b413e9bbf348830812116f34b8227721ceca2",
+        "tile_count": 1292
+      }
+    },
+    "grid": {
+      "bytes": 6344704,
+      "path": "releases/madeira/2.0.0/maps/grid.mbtiles",
+      "sha256": "1db56f1cafc3039f640f174365c95067266658d43543b514575adcd5363d91c5",
+      "validation": {
+        "empty_tile_count": 0,
+        "logical_tiles_sha256": "179b2630f7dc0a9257e147802227dec96f38811b7d3ca7cf89686b88cc10581d",
+        "tile_count": 16664
+      }
+    },
+    "hillshade": {
+      "bytes": 1163264,
+      "path": "releases/madeira/2.0.0/maps/hillshade.mbtiles",
+      "sha256": "778cb7d772f8949e70d8c29192dd0b05c2e6e7e4c110f40afea370924afe4ab7",
+      "validation": {
+        "empty_tile_count": 0,
+        "logical_tiles_sha256": "08f155b9cf144badb33ecf0400d83c1221c4ac34f50d98f318220c4f8491f77a",
+        "tile_count": 76
+      }
+    },
+    "topography": {
+      "bytes": 8871936,
+      "path": "releases/madeira/2.0.0/maps/topography.mbtiles",
+      "sha256": "3a85b549761ea6d25dc10e45ecff7116df1d492287bbaa9c9fcc179c2084a671",
+      "validation": {
+        "empty_tile_count": 193,
+        "logical_tiles_sha256": "d80c6f193453efa37028debb3f3c90972728ebe81a069e5fe1d986aa399a75f3",
+        "tile_count": 626
+      }
+    }
+  },
+  "format": "openbaremap-development-viewer-v1",
+  "localBorders": false,
+  "mapVersion": "2.0.0",
+  "region": "madeira",
+  "storageRevision": "2.0.0-madeira-r1",
+  "styleRevision": "2.0.0-madeira-r1"
+}

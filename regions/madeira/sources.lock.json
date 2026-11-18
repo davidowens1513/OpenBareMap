@@ -1,0 +1,29 @@
+{
+  "accessed_utc": "2026-11-18T13:42:20.866735+00:00",
+  "inputs": [
+    {
+      "bytes": 428764428,
+      "path": "data/regions/madeira/portugal-261117.osm.pbf",
+      "replicationTimestamp": "2026-11-17T21:24:30Z",
+      "sha256": "730001fdcd285df829c389935f6bc81b468d517459501a060fae9b54ad48e31d",
+      "url": "https://download.geofabrik.de/europe/portugal-261117.osm.pbf"
+    }
+  ],
+  "osm": {
+    "bytes": 19008817,
+    "operation": "Complete-feature bbox extraction with nested relation references",
+    "path": "data/regions/madeira/portugal-261117.osm.clipped.osm.pbf",
+    "replicationTimestamp": "2026-11-17T21:24:30Z",
+    "sha256": "61de895ac752ed436a7779de210170f27df54538d0e62bd98ffdc33e125e2f73",
+    "snapshot_date": "2026-11-17",
+    "url": "https://download.geofabrik.de/europe/portugal-261117.osm.pbf"
+  },
+  "polygons": [
+    {
+      "bytes": 5999,
+      "path": "data/regions/madeira/portugal.poly",
+      "sha256": "b6eac12ed0d04d87c0371289d2f9b95365cafce0ee94fefd01b5ecc33a52e5bb",
+      "url": "https://download.geofabrik.de/europe/portugal.poly"
+    }
+  ]
+}

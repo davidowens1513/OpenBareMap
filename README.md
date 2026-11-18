@@ -1,6 +1,6 @@
 # OpenBareMap 2.0
 
-OpenBareMap is an offline topographic map for hiking, available as separate regional versions for **Ireland**, **England & Wales (including the Isle of Man)**, **Scotland**, **Sierra Nevada, Spain**, **the Pyrenees (France, Spain & Andorra)**, **the Dolomites, Italy**, **the Faroe Islands**, **Southern, Central and Northern Norway**, the **Balearic Islands**, **Corsica**, **Sardinia** and **Sicily**. Each edition has **20 m contours**, its own source coverage, map databases and platform packages. Mobile bundles are integration components for apps using MapLibre Native; Garmin downloads are display-only maps.
+OpenBareMap is an offline topographic map for hiking, available as separate regional versions for **Ireland**, **England & Wales (including the Isle of Man)**, **Scotland**, **Sierra Nevada, Spain**, **the Pyrenees (France, Spain & Andorra)**, **the Dolomites, Italy**, **the Faroe Islands**, **Southern, Central and Northern Norway**, the **Balearic Islands**, **Corsica**, **Sardinia**, **Sicily**, **Crete**, **Cyprus**, **Malta**, the **Canary Islands** and **Madeira**. Each edition has **20 m contours**, its own source coverage, map databases and platform packages. Mobile bundles are integration components for apps using MapLibre Native; Garmin downloads are display-only maps.
 
 ## Downloads and incorporation instructions
 
@@ -27,6 +27,8 @@ Each iOS download contains the complete regional resource bundle, Swift loader, 
 | Crete | [Download](https://downloads.appsbyonzy.dev/OpenBareMap/crete/2.0.0/app-bundles-v1/ios/OpenBareMap-Crete-iOS-Bundle.zip) · [Instructions](https://downloads.appsbyonzy.dev/OpenBareMap/crete/2.0.0/app-bundles-v1/ios/instructions.txt) | [Download](https://downloads.appsbyonzy.dev/OpenBareMap/crete/2.0.0/app-bundles-v1/android/OpenBareMap-Crete-Android-Bundle.zip) · [Instructions](https://downloads.appsbyonzy.dev/OpenBareMap/crete/2.0.0/app-bundles-v1/android/instructions.txt) | [Download](https://downloads.appsbyonzy.dev/Garmin/OpenBareMap-Crete.img?v=2.0.0-r1) · [Instructions](https://downloads.appsbyonzy.dev/Garmin/crete-instructions.txt) |
 | Cyprus | [Download](https://downloads.appsbyonzy.dev/OpenBareMap/cyprus/2.0.0/app-bundles-v1/ios/OpenBareMap-Cyprus-iOS-Bundle.zip) · [Instructions](https://downloads.appsbyonzy.dev/OpenBareMap/cyprus/2.0.0/app-bundles-v1/ios/instructions.txt) | [Download](https://downloads.appsbyonzy.dev/OpenBareMap/cyprus/2.0.0/app-bundles-v1/android/OpenBareMap-Cyprus-Android-Bundle.zip) · [Instructions](https://downloads.appsbyonzy.dev/OpenBareMap/cyprus/2.0.0/app-bundles-v1/android/instructions.txt) | [Download](https://downloads.appsbyonzy.dev/Garmin/OpenBareMap-Cyprus.img?v=2.0.0-r1) · [Instructions](https://downloads.appsbyonzy.dev/Garmin/cyprus-instructions.txt) |
 | Malta | [Download](https://downloads.appsbyonzy.dev/OpenBareMap/malta/2.0.0/app-bundles-v1/ios/OpenBareMap-Malta-iOS-Bundle.zip) · [Instructions](https://downloads.appsbyonzy.dev/OpenBareMap/malta/2.0.0/app-bundles-v1/ios/instructions.txt) | [Download](https://downloads.appsbyonzy.dev/OpenBareMap/malta/2.0.0/app-bundles-v1/android/OpenBareMap-Malta-Android-Bundle.zip) · [Instructions](https://downloads.appsbyonzy.dev/OpenBareMap/malta/2.0.0/app-bundles-v1/android/instructions.txt) | [Download](https://downloads.appsbyonzy.dev/Garmin/OpenBareMap-Malta.img?v=2.0.0-r1) · [Instructions](https://downloads.appsbyonzy.dev/Garmin/malta-instructions.txt) |
+| Canary Islands | [Download](https://downloads.appsbyonzy.dev/OpenBareMap/canary-islands/2.0.0/app-bundles-v1/ios/OpenBareMap-Canary-Islands-iOS-Bundle.zip) · [Instructions](https://downloads.appsbyonzy.dev/OpenBareMap/canary-islands/2.0.0/app-bundles-v1/ios/instructions.txt) | [Download](https://downloads.appsbyonzy.dev/OpenBareMap/canary-islands/2.0.0/app-bundles-v1/android/OpenBareMap-Canary-Islands-Android-Bundle.zip) · [Instructions](https://downloads.appsbyonzy.dev/OpenBareMap/canary-islands/2.0.0/app-bundles-v1/android/instructions.txt) | [Download](https://downloads.appsbyonzy.dev/Garmin/OpenBareMap-Canary-Islands.img?v=2.0.0-r1) · [Instructions](https://downloads.appsbyonzy.dev/Garmin/canary-islands-instructions.txt) |
+| Madeira | [Download](https://downloads.appsbyonzy.dev/OpenBareMap/madeira/2.0.0/app-bundles-v1/ios/OpenBareMap-Madeira-iOS-Bundle.zip) · [Instructions](https://downloads.appsbyonzy.dev/OpenBareMap/madeira/2.0.0/app-bundles-v1/ios/instructions.txt) | [Download](https://downloads.appsbyonzy.dev/OpenBareMap/madeira/2.0.0/app-bundles-v1/android/OpenBareMap-Madeira-Android-Bundle.zip) · [Instructions](https://downloads.appsbyonzy.dev/OpenBareMap/madeira/2.0.0/app-bundles-v1/android/instructions.txt) | [Download](https://downloads.appsbyonzy.dev/Garmin/OpenBareMap-Madeira.img?v=2.0.0-r1) · [Instructions](https://downloads.appsbyonzy.dev/Garmin/madeira-instructions.txt) |
 
 The outer Android Bundle ZIP must be extracted first. The included `OpenBareMap-Resources.zip` is the input to the Android loader. The iOS bundle is copied intact into the app target or opened from persistent application storage. Region-specific instructions cover setup, dependency versions, verification, offline use and attribution. Each download's R2 folder contains `SHA256SUMS.txt` and a manifest.
 
@@ -51,6 +53,8 @@ The outer Android Bundle ZIP must be extracted first. The included `OpenBareMap-
 | Crete | Crete, Gavdos, Gavdopoula, Dia, Chrissi, Koufonisi and nearby islands. | 17 November 2026 | ETRS89 / UTM 35N | [Crete](regions/crete/active-map.json) | 4846 |
 | Cyprus | The whole island of Cyprus, including the Troodos mountains, Akamas and the Karpas peninsula. | 17 November 2026 | WGS 84 / UTM 36N | [Cyprus](regions/cyprus/active-map.json) | 4847 |
 | Malta | Malta, Gozo and Comino in one map, including their nearby islets. | 17 November 2026 | ETRS89 / UTM 33N | [Malta](regions/malta/active-map.json) | 4848 |
+| Canary Islands | Tenerife, Gran Canaria, Lanzarote, Fuerteventura, La Palma, La Gomera, El Hierro and La Graciosa, plus Lobos and smaller offshore islets. | 17 November 2026 | REGCAN95 / UTM 28N | [Canary Islands](regions/canary-islands/active-map.json) | 4849 |
+| Madeira | Madeira, Porto Santo, the Desertas Islands and the outlying Selvagens Islands. | 17 November 2026 | PTRA08 / UTM 28N | [Madeira](regions/madeira/active-map.json) | 4850 |
 
 The three Norway editions cover mainland Norway and coastal islands, excluding Svalbard and Jan Mayen. Adjacent editions overlap at full detail by approximately **56 km** around Trondheim and Bodø. All use 20 m contours, Copernicus GLO-30 terrain and a shared UTM 33N grid. Released on 14 November 2026; complete public download checksum checks are recorded in the [publication verification](web-preview/verification/norway-publication.json).
 
@@ -101,6 +105,8 @@ The Faroe Islands iOS and Android integration kits are approximately **42 MB eac
 | Crete | [Open map preview](https://downloads.appsbyonzy.dev/OpenBareMap/mediterranean-east/2.0.0/preview/crete/index.html?ui=20261118-east-v1) | <a href="https://downloads.appsbyonzy.dev/OpenBareMap/mediterranean-east/2.0.0/preview/crete/legend.html"><img src="https://downloads.appsbyonzy.dev/OpenBareMap/mediterranean-east/2.0.0/preview/assets/legends/crete@2x.png" width="160" alt="Crete map key — click to open and zoom"></a> |
 | Cyprus | [Open map preview](https://downloads.appsbyonzy.dev/OpenBareMap/mediterranean-east/2.0.0/preview/cyprus/index.html?ui=20261118-east-v1) | <a href="https://downloads.appsbyonzy.dev/OpenBareMap/mediterranean-east/2.0.0/preview/cyprus/legend.html"><img src="https://downloads.appsbyonzy.dev/OpenBareMap/mediterranean-east/2.0.0/preview/assets/legends/cyprus@2x.png" width="160" alt="Cyprus map key — click to open and zoom"></a> |
 | Malta | [Open map preview](https://downloads.appsbyonzy.dev/OpenBareMap/mediterranean-east/2.0.0/preview/malta/index.html?ui=20261118-east-v1) | <a href="https://downloads.appsbyonzy.dev/OpenBareMap/mediterranean-east/2.0.0/preview/malta/legend.html"><img src="https://downloads.appsbyonzy.dev/OpenBareMap/mediterranean-east/2.0.0/preview/assets/legends/malta@2x.png" width="160" alt="Malta map key — click to open and zoom"></a> |
+| Canary Islands | [Open map preview](https://downloads.appsbyonzy.dev/OpenBareMap/atlantic-islands/2.0.0/preview/canary-islands/index.html?ui=20261118-atlantic-v1) | <a href="https://downloads.appsbyonzy.dev/OpenBareMap/atlantic-islands/2.0.0/preview/canary-islands/legend.html"><img src="https://downloads.appsbyonzy.dev/OpenBareMap/atlantic-islands/2.0.0/preview/assets/legends/canary-islands@2x.png" width="160" alt="Canary Islands map key — click to open and zoom"></a> |
+| Madeira | [Open map preview](https://downloads.appsbyonzy.dev/OpenBareMap/atlantic-islands/2.0.0/preview/madeira/index.html?ui=20261118-atlantic-v1) | <a href="https://downloads.appsbyonzy.dev/OpenBareMap/atlantic-islands/2.0.0/preview/madeira/legend.html"><img src="https://downloads.appsbyonzy.dev/OpenBareMap/atlantic-islands/2.0.0/preview/assets/legends/madeira@2x.png" width="160" alt="Madeira map key — click to open and zoom"></a> |
 
 Click a key to open its full-size legend with zoom controls, fit-to-page and image download. The website previews use these same legend pages. Ireland uses the Irish Grid key; England & Wales and Scotland use British National Grid keys. Sierra Nevada uses an ETRS89 / UTM 30N key with the national park and 25 km coverage lines.
 
@@ -137,7 +143,7 @@ python3 scripts/serve.py --region england-wales --port 8766
 python3 scripts/serve.py --region scotland --port 8767
 ```
 
-Use `ireland`, `england-wales`, `scotland`, `sierra-nevada`, `pyrenees`, `dolomites`, `faroe-islands`, `norway-south`, `norway-central`, `norway-north`, `balearic-islands`, `corsica`, `sardinia`, `sicily`, `crete`, `cyprus` or `malta` for the resource exporters. The three Norway editions are published; phone and Garmin downloads have passed full public checksum verification. Their [coverage plan](config/norway-editions.json) includes full-detail overlaps around Trondheim and Bodø. The versioned integration kits are assembled by `scripts/build_app_distribution.py`; [distribution packaging](distribution/README.md) describes their contents and storage. [Regional build reference](docs/regional-editions.md) covers sources and full map builds. The England/Wales basemap is stored as verified LFS parts and restored automatically when selected; allow space for the parts and reconstructed database.
+Use `ireland`, `england-wales`, `scotland`, `sierra-nevada`, `pyrenees`, `dolomites`, `faroe-islands`, `norway-south`, `norway-central`, `norway-north`, `balearic-islands`, `corsica`, `sardinia`, `sicily`, `crete`, `cyprus`, `malta`, `canary-islands` or `madeira` for the resource exporters. The three Norway editions are published; phone and Garmin downloads have passed full public checksum verification. Their [coverage plan](config/norway-editions.json) includes full-detail overlaps around Trondheim and Bodø. The versioned integration kits are assembled by `scripts/build_app_distribution.py`; [distribution packaging](distribution/README.md) describes their contents and storage. [Regional build reference](docs/regional-editions.md) covers sources and full map builds. The England/Wales basemap is stored as verified LFS parts and restored automatically when selected; allow space for the parts and reconstructed database.
 
 ## Data and attribution
 
@@ -164,6 +170,8 @@ Source completeness, geographic accuracy and readability depend on the input dat
 | Crete source and terrain locks | [OSM](regions/crete/sources.lock.json), [terrain](regions/crete/terrain-sources.lock.json) |
 | Cyprus source and terrain locks | [OSM](regions/cyprus/sources.lock.json), [terrain](regions/cyprus/terrain-sources.lock.json) |
 | Malta source and terrain locks | [OSM](regions/malta/sources.lock.json), [terrain](regions/malta/terrain-sources.lock.json) |
+| Canary Islands source and terrain locks | [OSM](regions/canary-islands/sources.lock.json), [terrain](regions/canary-islands/terrain-sources.lock.json) |
+| Madeira source and terrain locks | [OSM](regions/madeira/sources.lock.json), [terrain](regions/madeira/terrain-sources.lock.json) |
 | Integration bundle catalog | [Catalog](distribution/app-bundles-v1/catalog.json) |
 | Platform references | [Garmin](garmin/README.md), [Android](android/README.md), [iOS](ios/README.md) |
 
@@ -181,7 +189,7 @@ A Git clone contains the code, styles, configuration and release records. Large 
 
 ### Restore finished downloads from Cloudflare
 
-The [R2 asset inventory](distribution/r2-assets.json) records **51 current delivery files, approximately 41.46 GB total**, with their public URLs, original local paths, exact sizes and SHA-256 checksums. The [app catalog](distribution/app-bundles-v1/catalog.json) also records platform instructions and map versions. These are delivery inventories, not a backup of every source or intermediate file.
+The [R2 asset inventory](distribution/r2-assets.json) records **57 current delivery files, approximately 41.91 GB total**, with their public URLs, original local paths, exact sizes and SHA-256 checksums. The [app catalog](distribution/app-bundles-v1/catalog.json) also records platform instructions and map versions. These are delivery inventories, not a backup of every source or intermediate file.
 
 ```sh
 # Inspect available files without downloading anything.
@@ -190,7 +198,7 @@ python3 scripts/restore_r2_assets.py --list
 # Restore just one file to its recorded local path.
 python3 scripts/restore_r2_assets.py --path regions/norway-south/garmin/dist/OpenBareMap-Norway-South.img
 
-# Optional: restore all 51 delivery files (about 41.46 GB).
+# Optional: restore all 57 delivery files (about 41.91 GB).
 python3 scripts/restore_r2_assets.py --all
 ```
 

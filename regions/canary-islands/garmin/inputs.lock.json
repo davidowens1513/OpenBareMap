@@ -1,0 +1,20 @@
+{
+  "inputs": [
+    {
+      "path": "regions/canary-islands/garmin/inputs/contours.geojson.gz",
+      "sha256": "fe060be3f07aa2ddce6373314f2d7244563c4c0f6de7e8393fcfeb46074dfa5e",
+      "uncompressedSHA256": "c286070a464d2072cea3ee9c3a32b1b40d7476f339208859da870f7c246e073c"
+    },
+    {
+      "path": "regions/canary-islands/garmin/inputs/landcover.geojson.gz",
+      "sha256": "c2b1ee1b7566bb2641cfb5ef695d7c47461d43c77ffebd35b67db4ea306db35e",
+      "uncompressedSHA256": "b766b2216898574fb212705fa2b44cae6b58460a0de61f62b78371a562d2c469"
+    },
+    {
+      "path": "regions/canary-islands/garmin/inputs/land.geojson.gz",
+      "sha256": "1b8e8f3ef84e73e8158d195b691824a9ff2eaf72deb9e0e2b23b5460b5edc05a",
+      "uncompressedSHA256": "0661a09fc3d6d491401389aef841c5549e35edade078e051c58e4042d0eee2c9"
+    }
+  ],
+  "region": "canary-islands"
+}

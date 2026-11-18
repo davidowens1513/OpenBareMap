@@ -1,0 +1,32 @@
+{
+  "bundles": {
+    "android": {
+      "bytes": 165861092,
+      "contentType": "application/zip",
+      "fullPublicReadbackVerified": true,
+      "instructionsContentType": "text/plain; charset=utf-8",
+      "instructionsSHA256": "fa028ac30fb93b5fb83bb7c4fe6b29dc431536696193b28e052a964cc2780b59",
+      "instructionsURL": "https://downloads.appsbyonzy.dev/OpenBareMap/canary-islands/2.0.0/app-bundles-v1/android/instructions.txt",
+      "sha256": "47890aa03759189bbf01752161f43eab3397eabab37aacbb159a48fb415d62ce",
+      "url": "https://downloads.appsbyonzy.dev/OpenBareMap/canary-islands/2.0.0/app-bundles-v1/android/OpenBareMap-Canary-Islands-Android-Bundle.zip"
+    },
+    "ios": {
+      "bytes": 165861829,
+      "contentType": "application/zip",
+      "fullPublicReadbackVerified": true,
+      "instructionsContentType": "text/plain; charset=utf-8",
+      "instructionsSHA256": "ac773eeac7e75f464a7bcdf1dba617dd43044633882ea160c9aa8a8fefeef4f9",
+      "instructionsURL": "https://downloads.appsbyonzy.dev/OpenBareMap/canary-islands/2.0.0/app-bundles-v1/ios/instructions.txt",
+      "sha256": "a7b87f76b4a5bfaa35ee8d3298ba168e61ec11c5f15441320a2476b4834dab2d",
+      "url": "https://downloads.appsbyonzy.dev/OpenBareMap/canary-islands/2.0.0/app-bundles-v1/ios/OpenBareMap-Canary-Islands-iOS-Bundle.zip"
+    }
+  },
+  "garminInstructions": {
+    "contentType": "text/plain; charset=utf-8",
+    "sha256": "b089d5179109ee7cedab60ede85cadd3833b812d27c93c545ec44b37c72675c4",
+    "url": "https://downloads.appsbyonzy.dev/Garmin/canary-islands-instructions.txt",
+    "verified": true
+  },
+  "region": "canary-islands",
+  "verifiedUTC": "2026-11-18T13:51:10.966439+00:00"
+}

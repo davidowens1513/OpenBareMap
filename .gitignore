@@ -258,3 +258,21 @@ data/regions/norway-*/copernicus/*
 /regions/malta/garmin/dist/*.img
 /releases/malta/*/maps/
 /releases/malta/*/app-bundles-v1/**/*.zip
+
+# Rebuildable inputs and local delivery files for canary-islands
+/data/regions/canary-islands/
+/regions/canary-islands/exports/
+/regions/canary-islands/garmin/coastal-context/
+/regions/canary-islands/garmin/inputs/*.geojson.gz
+/regions/canary-islands/garmin/dist/*.img
+/releases/canary-islands/*/maps/
+/releases/canary-islands/*/app-bundles-v1/**/*.zip
+
+# Rebuildable inputs and local delivery files for madeira
+/data/regions/madeira/
+/regions/madeira/exports/
+/regions/madeira/garmin/coastal-context/
+/regions/madeira/garmin/inputs/*.geojson.gz
+/regions/madeira/garmin/dist/*.img
+/releases/madeira/*/maps/
+/releases/madeira/*/app-bundles-v1/**/*.zip

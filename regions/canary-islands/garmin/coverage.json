@@ -1,0 +1,37 @@
+{
+  "areaSquareDegrees": 9.268399999999994,
+  "bounds": [
+    -18.25,
+    27.59,
+    -13.32,
+    29.47
+  ],
+  "entireRequestedFootprintCovered": true,
+  "exactFootprint": null,
+  "inputs": [
+    {
+      "bytes": 271,
+      "path": "data/regions/canary-islands/canary-islands.poly",
+      "sha256": "79a0494234c9e6d2eef15fe5830a6ba3a5ba36e731c526f5bc99117ae73c9b99",
+      "url": "https://download.geofabrik.de/africa/canary-islands.poly"
+    }
+  ],
+  "knownDestinationsCovered": [
+    "island",
+    "tenerife",
+    "gran-canaria",
+    "lanzarote",
+    "fuerteventura",
+    "la-palma",
+    "la-gomera",
+    "el-hierro",
+    "la-graciosa",
+    "lobos",
+    "teide",
+    "roque-nublo",
+    "alegranza"
+  ],
+  "operation": "Requested rectangular crop; source outlines cover all destination anchors",
+  "polygons": 1,
+  "sha256": "b9e6500e8a8012e53d425fa9e31a5f6a7e73d7723ab64770a4dac25b5f1b936e"
+}

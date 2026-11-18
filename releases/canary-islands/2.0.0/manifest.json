@@ -1,0 +1,106 @@
+{
+  "acceptance": "Automated checks only; see validation and visual-review records for actual reviewed scope.",
+  "coverage": "Tenerife, Gran Canaria, Lanzarote, Fuerteventura, La Palma, La Gomera, El Hierro and La Graciosa, plus Lobos and smaller offshore islets.",
+  "datasets": {
+    "basemap": {
+      "bytes": 92905472,
+      "path": "releases/canary-islands/2.0.0/maps/basemap.mbtiles",
+      "sha256": "7f821124f144b0f218f38c539c61a2009e03e54d8a7abd31cae9f236cf5f8da1",
+      "validation": {
+        "empty_tile_count": 797,
+        "logical_tiles_sha256": "db96947ed14fdd17377a47cd361d0b439139b208b83c71a4af3a881ae3dfe410",
+        "tile_count": 6787
+      }
+    },
+    "grid": {
+      "bytes": 11448320,
+      "path": "releases/canary-islands/2.0.0/maps/grid.mbtiles",
+      "sha256": "f7d362488d5dd086f393b17b32561297aac36cae38f788d3c0f99fed15064b74",
+      "validation": {
+        "empty_tile_count": 0,
+        "logical_tiles_sha256": "25d817f3d587fb092f888325fb7b54264f918ce7ef49c72cf5ea6d370f76e75c",
+        "tile_count": 29664
+      }
+    },
+    "hillshade": {
+      "bytes": 8007680,
+      "path": "releases/canary-islands/2.0.0/maps/hillshade.mbtiles",
+      "sha256": "a79320b7ec94eeefaac109445f7fcaed6c5c267f4ea2718b488fdbfeb20db939",
+      "validation": {
+        "empty_tile_count": 0,
+        "logical_tiles_sha256": "1d8e81a01bb7d16e257967dbd4375f29971d5110fb8173ead39cbe0bcf5494ad",
+        "tile_count": 328
+      }
+    },
+    "topography": {
+      "bytes": 48717824,
+      "path": "releases/canary-islands/2.0.0/maps/topography-context.mbtiles",
+      "sha256": "ed1e0d9fa49fd336dee5908126e416e39e7cfb5063246b76aaf48918016645fd",
+      "validation": {
+        "empty_tile_count": 13609,
+        "logical_tiles_sha256": "97da371000eba0e871d59ab79637217bc4232f4788c32adff564841c1abbde5b",
+        "tile_count": 17168
+      }
+    }
+  },
+  "garmin": {
+    "bytes": 37158912,
+    "path": "regions/canary-islands/garmin/dist/OpenBareMap-Canary-Islands.img",
+    "sha256": "1f1e9eb166346d9c80d646157371753fa22b04884783af7455ac4419fdffc4e3"
+  },
+  "geometryReport": {
+    "path": "releases/canary-islands/2.0.0/build-records/geometry-report.json",
+    "sha256": "05b8e8f631e10580514c825fe564479633e2e0b1fd993d3911089b33d3e6d4a1"
+  },
+  "hostAppsModified": false,
+  "mapVersion": "2.0.0",
+  "osm": {
+    "bytes": 60559354,
+    "operation": "Complete upstream extract; no merge or spatial filtering",
+    "path": "data/regions/canary-islands/canary-islands-261117.osm.pbf",
+    "replicationTimestamp": "2026-11-17T21:24:30Z",
+    "sha256": "076687d9cba420e9a3d821c74309f6504f828e270257e1548874e07e9b919148",
+    "snapshot_date": "2026-11-17",
+    "url": "https://download.geofabrik.de/africa/canary-islands-261117.osm.pbf"
+  },
+  "packages": {
+    "android": {
+      "archive": {
+        "bytes": 165832643,
+        "path": "regions/canary-islands/android/OpenBareMap-Android.zip",
+        "sha256": "60b7e7349e5b09da32ef6c5083209254fd8545bdc5f1cad0275810391e97ea23"
+      },
+      "checksumsSHA256": "0a1f51a0f97ce6749de01cc3275f1b3625b52be73ffa5540e8b9b3d733917cce",
+      "manifestSHA256": "83df838cc15b466d628304853967b2ffc14cbd018da5230b4799279a83ba1534",
+      "path": "regions/canary-islands/android",
+      "validationSHA256": "c87883a47599ecce5ec7cb5162e12093eb41b6eb638b7070613cd52a08a4f928"
+    },
+    "ios": {
+      "checksumsSHA256": "fc57fe7d3f6a76d44b93022664c4790255ddd7ab74280aa920af10f5bfd1a1e4",
+      "manifestSHA256": "e9f031466332e78b5eaae01890d08f0c6956f1f35dfdc55edcd89d367ee5e73e",
+      "path": "regions/canary-islands/ios",
+      "validationSHA256": "d8f9ddf843fcfa3daf10d41557c8d07a30fa6550e814c7cc264667204fbb9735"
+    }
+  },
+  "pythonRuntime": {
+    "packages": {
+      "Pillow": "12.3.0",
+      "certifi": "2026.10.23",
+      "charset-normalizer": "3.5.2",
+      "idna": "3.20",
+      "numpy": "2.5.4",
+      "osmium": "4.3.2",
+      "pyproj": "3.8.0",
+      "requests": "2.34.2",
+      "shapely": "2.2.0",
+      "urllib3": "2.8.0"
+    },
+    "platform": "macOS-27.2.1-arm64-arm-64bit-Mach-O",
+    "python": "3.14.5 (main, May 10 2026, 10:21:34) [Clang 21.0.0 (clang-2100.0.123.102)]",
+    "requirementsSHA256": "427f12ff8b49bfebac0a7d453c2f65bd15d6695584b18e6ecee1fdfeed20a36c"
+  },
+  "region": "canary-islands",
+  "styleSHA256": "8e42b75a5c7afb3ca4bf40ed24a97920cea1cd9730c13e169ee25c27609162cb",
+  "terrainLockSHA256": "f8fee86d8027f35f4007aee0c2c2eff3479b883a3fe3de4385b2eb54cb2a4f7f",
+  "validation": "validation.json"
+}

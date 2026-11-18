@@ -1,0 +1,52 @@
+{
+  "contourIntervalMetres": 20,
+  "coverage": "Tenerife, Gran Canaria, Lanzarote, Fuerteventura, La Palma, La Gomera, El Hierro and La Graciosa, plus Lobos and smaller offshore islets.",
+  "datasets": {
+    "basemap": {
+      "bytes": 92905472,
+      "path": "releases/canary-islands/2.0.0/maps/basemap.mbtiles",
+      "sha256": "7f821124f144b0f218f38c539c61a2009e03e54d8a7abd31cae9f236cf5f8da1",
+      "validation": {
+        "empty_tile_count": 797,
+        "logical_tiles_sha256": "db96947ed14fdd17377a47cd361d0b439139b208b83c71a4af3a881ae3dfe410",
+        "tile_count": 6787
+      }
+    },
+    "grid": {
+      "bytes": 11448320,
+      "path": "releases/canary-islands/2.0.0/maps/grid.mbtiles",
+      "sha256": "f7d362488d5dd086f393b17b32561297aac36cae38f788d3c0f99fed15064b74",
+      "validation": {
+        "empty_tile_count": 0,
+        "logical_tiles_sha256": "25d817f3d587fb092f888325fb7b54264f918ce7ef49c72cf5ea6d370f76e75c",
+        "tile_count": 29664
+      }
+    },
+    "hillshade": {
+      "bytes": 8007680,
+      "path": "releases/canary-islands/2.0.0/maps/hillshade.mbtiles",
+      "sha256": "a79320b7ec94eeefaac109445f7fcaed6c5c267f4ea2718b488fdbfeb20db939",
+      "validation": {
+        "empty_tile_count": 0,
+        "logical_tiles_sha256": "1d8e81a01bb7d16e257967dbd4375f29971d5110fb8173ead39cbe0bcf5494ad",
+        "tile_count": 328
+      }
+    },
+    "topography": {
+      "bytes": 48754688,
+      "path": "releases/canary-islands/2.0.0/maps/topography.mbtiles",
+      "sha256": "174e7d23fbeec3ad5e48169814603423eb31ead8392659f2f07a4be1b6412bcb",
+      "validation": {
+        "empty_tile_count": 13609,
+        "logical_tiles_sha256": "97da371000eba0e871d59ab79637217bc4232f4788c32adff564841c1abbde5b",
+        "tile_count": 17168
+      }
+    }
+  },
+  "format": "openbaremap-development-viewer-v1",
+  "localBorders": false,
+  "mapVersion": "2.0.0",
+  "region": "canary-islands",
+  "storageRevision": "2.0.0-canary-islands-r1",
+  "styleRevision": "2.0.0-canary-islands-r1"
+}

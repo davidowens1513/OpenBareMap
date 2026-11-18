@@ -1,0 +1,40 @@
+{
+  "builderSHA256": "a2d345bb6682c31f1688a00fd483998eb467b93f3e591ffea94eac8fcaf26354",
+  "contoursSourceSHA256": "1c7e94376c706d1e6fac17c5798e451a855378e570cdc385042b3a904e6d7cc3",
+  "counts": {
+    "contours": 15215,
+    "grid": {
+      "grid_10km": 74,
+      "grid_1km": 722
+    },
+    "landcover": {
+      "empty_source_areas": [
+        {
+          "area_id": 775700314,
+          "outer_ring_sizes": [],
+          "reason": "invalid area (area_id=775700314)"
+        }
+      ],
+      "features": 27188,
+      "retained": 2848,
+      "smoothed": 24340
+    }
+  },
+  "osm": {
+    "bytes": 60559354,
+    "operation": "Complete upstream extract; no merge or spatial filtering",
+    "path": "data/regions/canary-islands/canary-islands-261117.osm.pbf",
+    "replicationTimestamp": "2026-11-17T21:24:30Z",
+    "sha256": "076687d9cba420e9a3d821c74309f6504f828e270257e1548874e07e9b919148",
+    "snapshot_date": "2026-11-17",
+    "url": "https://download.geofabrik.de/africa/canary-islands-261117.osm.pbf"
+  },
+  "outputs": {
+    "contours.geojson": "c286070a464d2072cea3ee9c3a32b1b40d7476f339208859da870f7c246e073c",
+    "grid_10km.geojson": "f174f5d26faa5b225699fbd6f5ca8d274ae991781bb2afedb130b0e2ec4c25b7",
+    "grid_1km.geojson": "2f614889ebacba36fcfc5c38a23e9521c475d43437c04bf515c2b85b19393006",
+    "landcover.geojson": "b766b2216898574fb212705fa2b44cae6b58460a0de61f62b78371a562d2c469"
+  },
+  "region": "canary-islands",
+  "smootherSHA256": "7581d024dc1c1bec931642c7201db149bf64a64c814c451fa8bf37a0881ea6c9"
+}

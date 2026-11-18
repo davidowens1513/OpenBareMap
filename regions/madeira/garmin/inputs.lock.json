@@ -1,0 +1,20 @@
+{
+  "inputs": [
+    {
+      "path": "regions/madeira/garmin/inputs/contours.geojson.gz",
+      "sha256": "11f7485f3f0740eb7a68b02dc18767a62fc019df1261e70a4d59b9c2b25d17b9",
+      "uncompressedSHA256": "e1935c158b3d1398c2afece911ced20c13fd260287260e7a2268142bb3b2f843"
+    },
+    {
+      "path": "regions/madeira/garmin/inputs/landcover.geojson.gz",
+      "sha256": "f3dad21e84e9bace34aa405956faddd48898414ba682037c003da3a12d00fb07",
+      "uncompressedSHA256": "1b3a8f771903a60646aa712f624db47a5f7d99b93074a2bdeae9a1a14e35a14a"
+    },
+    {
+      "path": "regions/madeira/garmin/inputs/land.geojson.gz",
+      "sha256": "835fdfa34233b79e614c2f123349af943b16e02ebfb2097197d4cd5c6e4d0eb3",
+      "uncompressedSHA256": "551f2f76ab819224b16142e9b1a323edd51b6efebe1cb038f4ab9c45d5594ba7"
+    }
+  ],
+  "region": "madeira"
+}

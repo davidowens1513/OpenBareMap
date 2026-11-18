@@ -289,3 +289,18 @@ Greek labels is recorded in the viewer asset lock.
 These editions use the same 20 m contours, Copernicus GLO-30, storage rules,
 app integration kits and regional preview format as the other Mediterranean
 island maps. Garmin family IDs are 4846, 4847 and 4848 respectively.
+
+## Canary Islands and Madeira
+
+The Canaries are a single edition covering all eight islands, plus Lobos and
+smaller islets. Geofabrik supplies a dedicated extract. Madeira is a separate
+edition covering Madeira, Porto Santo, the Desertas and the Selvagens.
+Its OpenStreetMap data comes from the clipped Portugal extract. Both use
+the 17 November 2026 snapshots, Copernicus GLO-30 and 20 m contours.
+The Canaries use REGCAN95 / UTM 28N and Madeira uses PTRA08 / UTM 28N.
+Garmin family IDs are 4849 and 4850 respectively.
+
+The storage and publication workflows follow the existing island editions.
+Git keeps configuration, verification and provenance. Rebuildable inputs
+and working databases stay local. Cloudflare R2 serves the integration kits,
+Garmin images and browser previews.

@@ -1,0 +1,43 @@
+{
+  "features": [
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              -17.3,
+              30.061674977688874
+            ],
+            [
+              -17.3,
+              33.17
+            ],
+            [
+              -15.72,
+              33.17
+            ],
+            [
+              -15.72,
+              30.0
+            ],
+            [
+              -17.151828276299117,
+              30.0
+            ],
+            [
+              -17.3,
+              30.061674977688874
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "properties": {
+        "purpose": "Limit opaque native background and land-cover polygons; retain complete accepted OSM and terrain inputs",
+        "region": "madeira"
+      },
+      "type": "Feature"
+    }
+  ],
+  "type": "FeatureCollection"
+}

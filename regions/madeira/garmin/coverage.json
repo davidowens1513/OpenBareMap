@@ -1,0 +1,31 @@
+{
+  "areaSquareDegrees": 5.008600000000003,
+  "bounds": [
+    -17.3,
+    30.0,
+    -15.72,
+    33.17
+  ],
+  "entireRequestedFootprintCovered": true,
+  "exactFootprint": null,
+  "inputs": [
+    {
+      "bytes": 5999,
+      "path": "data/regions/madeira/portugal.poly",
+      "sha256": "b6eac12ed0d04d87c0371289d2f9b95365cafce0ee94fefd01b5ecc33a52e5bb",
+      "url": "https://download.geofabrik.de/europe/portugal.poly"
+    }
+  ],
+  "knownDestinationsCovered": [
+    "island",
+    "funchal",
+    "pico-ruivo",
+    "raba\u00e7al",
+    "porto-santo",
+    "deserta-grande",
+    "selvagem-grande"
+  ],
+  "operation": "Requested rectangular crop; source outlines cover all destination anchors",
+  "polygons": 1,
+  "sha256": "7e455ba6de715bc030d0cf61a4fd23632f909c79584a4745a157bb4fd6381675"
+}
