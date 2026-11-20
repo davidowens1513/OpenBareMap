@@ -92,15 +92,19 @@ From a Terminal with network access and the existing rclone configuration, run:
 PYTHONPATH=work/python python3 scripts/publish_norway_release.py --publish --website
 ```
 
-The website option requires Wrangler or Node.js/npx and Cloudflare Pages access.
-It checks the existing `appsbyonzy` project's production branch before uploading.
 The publisher uploads map assets, verifies complete public download checksums,
-then publishes preview navigation and the website. Without `--publish`, it only
-prints the prepared plan. Without `--website`, it publishes and verifies the maps
-and navigation; `work/norway-website-20261114.zip` is also ready for a manual upload
-to the existing Pages project after the map checks pass. Publication verification
-is recorded in `web-preview/verification/norway-publication.json`. Git commit and
-push remain separate from publication.
+then publishes preview navigation. Without `--publish`, it only prints the
+prepared plan. Publication verification is recorded in
+`web-preview/verification/norway-publication.json`.
+
+Update the homepage links in [AppsByOnzy-Website](https://github.com/davidowens1513/AppsByOnzy-Website)
+after verifying the public downloads. To stage the committed site alongside
+the Norway release, pass `--website-repo /absolute/path/to/AppsByOnzy-Website`
+to `scripts/prepare_norway_publication.py`. This produces
+`work/norway-website-20261114.zip` for manual upload to the existing
+`appsbyonzy` Pages project. The publisher's optional `--website` flag deploys
+that same archive after the map checks and requires Wrangler or Node.js/npx
+with Cloudflare Pages access.
 
 OpenBareMap uses one repository and shared cartography for Ireland, England/Wales, Scotland and Sierra Nevada. Each edition selects its own source snapshots, coordinate grid, map databases and platform packages. A regional release does not replace another edition's resources or require it to be released at the same time.
 

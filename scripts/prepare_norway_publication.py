@@ -1,9 +1,11 @@
 #!/usr/bin/env python3
 """Stage verified Norway release files and an explicit Cloudflare upload plan."""
+import argparse
 import json
 import os
 from pathlib import Path
 import shutil
+import subprocess
 import zipfile
 from openbaremap import ROOT, digest, write
 from build_distribution_instructions import garmin_instructions
@@ -12,6 +14,24 @@ from regions import profile
 REGIONS = ('norway-south', 'norway-central', 'norway-north')
 
 def main():
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument('--website-repo', type=Path,
+                        help='Package the committed site from the AppsByOnzy-Website checkout')
+    args = parser.parse_args()
+    website = {}
+    if args.website_repo:
+        website_zip = ROOT / 'work/norway-website-20261114.zip'
+        temporary_zip = website_zip.with_suffix('.zip.building')
+        git = ['git', '-C', str(args.website_repo.resolve())]
+        commit = subprocess.check_output([*git, 'rev-parse', 'HEAD'], text=True).strip()
+        subprocess.run([*git, 'archive', '--format=zip', '--output', str(temporary_zip),
+                        commit + ':site'], check=True)
+        with zipfile.ZipFile(temporary_zip) as archive:
+            if archive.testzip() is not None or 'index.html' not in archive.namelist():
+                raise ValueError('Website archive integrity failed')
+        temporary_zip.replace(website_zip)
+        website = {'websiteCommit': commit, 'websiteArchive': str(website_zip.relative_to(ROOT)),
+                   'websiteArchiveSHA256': digest(website_zip), 'cloudflarePagesProject': 'appsbyonzy'}
     catalog_path = ROOT / 'distribution/app-bundles-v1/catalog.json'
     catalog = json.loads(catalog_path.read_text())
     preview = ROOT / 'work/norway-web-2.0.0'
@@ -97,29 +117,11 @@ def main():
         {'source': str(public_garmin), 'remote': 'r2:baregps-production-assets/Garmin'},
         {'source': str(catalog_path), 'remote': 'r2:baregps-production-assets/OpenBareMap/app-bundles-v1/catalog.json', 'singleFile': True},
     ])
-    site = ROOT / 'web-preview/site'
-    website_zip = ROOT / 'work/norway-website-20261114.zip'
-    temporary_zip = website_zip.with_suffix('.zip.building')
-    with zipfile.ZipFile(temporary_zip, 'w', compression=zipfile.ZIP_DEFLATED, allowZip64=True) as archive:
-        for source in sorted(site.rglob('*')):
-            if not source.is_file() or source.name == '.DS_Store':
-                continue
-            if not source.resolve().is_relative_to(site.resolve()):
-                raise ValueError('Website asset escapes the staged source: ' + str(source))
-            archive.write(source, source.relative_to(site))
-    with zipfile.ZipFile(temporary_zip) as archive:
-        if archive.testzip() is not None or archive.read('index.html') != (site / 'index.html').read_bytes():
-            raise ValueError('Website archive integrity failed')
-    temporary_zip.replace(website_zip)
     write(ROOT / 'work/norway-publication-plan.json', {
         'status': 'prepared locally; not published', 'uploads': uploads,
         'previewUIStaging': 'work/norway-preview-ui-staging-20261114',
-        'websiteSource': 'web-preview/site/index.html',
-        'websiteArchive': str(website_zip.relative_to(ROOT)),
-        'websiteArchiveSHA256': digest(website_zip),
-        'websiteSourceSHA256': digest(site / 'index.html'),
-        'cloudflarePagesProject': 'appsbyonzy',
-        'publicationOrder': 'Upload maps and kits, verify public downloads, then publish preview navigation and website',
+        'publicationOrder': 'Upload maps and kits, verify public downloads, then publish preview navigation',
+        **website,
     })
     print('All Norway publication files staged; uploads and public readbacks pending', flush=True)
 

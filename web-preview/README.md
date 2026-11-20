@@ -46,7 +46,7 @@ To embed a map, use the corresponding URL in an iframe:
   style="width:100%;height:650px;border:0"></iframe>
 ```
 
-Change both the title and region path for England/Wales or Scotland, or use Sierra Nevada. The website integration snapshot in `site/` contains the separate regional preview and Garmin buttons. Its other app links are preserved.
+Change both the title and region path for England/Wales or Scotland, or use Sierra Nevada. The regional preview and Garmin buttons on the public homepage are maintained in the [AppsByOnzy-Website repository](https://github.com/davidowens1513/AppsByOnzy-Website).
 
 ## Update the key or preview controls
 

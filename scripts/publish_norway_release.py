@@ -3,11 +3,12 @@
 import argparse
 from datetime import datetime, timezone
 import json
-from pathlib import Path
 import shutil
 import subprocess
 import sys
+import tempfile
 import urllib.request
+import zipfile
 from openbaremap import ROOT, digest, write
 from verify_app_distribution import verify, read_hash
 
@@ -49,8 +50,11 @@ def main():
         raise ValueError('The configured rclone client is required')
     pages = None
     if args.website:
-        if digest(ROOT / plan['websiteSource']) != plan['websiteSourceSHA256'] or digest(ROOT / plan['websiteArchive']) != plan['websiteArchiveSHA256']:
-            raise ValueError('Website changed after staging; prepare publication again')
+        if 'websiteCommit' not in plan:
+            raise ValueError('Prepare publication with --website-repo pointing to AppsByOnzy-Website')
+        website_archive = ROOT / plan['websiteArchive']
+        if digest(website_archive) != plan['websiteArchiveSHA256']:
+            raise ValueError('Website archive changed after staging; prepare publication again')
         print('Checking the existing Cloudflare Pages production project', flush=True)
         pages = pages_target(plan['cloudflarePagesProject'])
     for item in plan['uploads']:
@@ -79,12 +83,15 @@ def main():
     run(sys.executable, 'scripts/publish_preview_ui.py', '--output', staging)
     if pages is not None:
         command, branch = pages
-        run(*command, 'pages', 'deploy', ROOT / 'web-preview/site',
-            '--project-name=' + plan['cloudflarePagesProject'], '--branch=' + branch)
+        with tempfile.TemporaryDirectory(prefix='appsbyonzy-pages-') as site:
+            with zipfile.ZipFile(website_archive) as archive:
+                archive.extractall(site)
+            run(*command, 'pages', 'deploy', site,
+                '--project-name=' + plan['cloudflarePagesProject'], '--branch=' + branch)
         request = urllib.request.Request('https://appsbyonzy.dev/?release=20261114-norway', headers={'Cache-Control': 'no-cache'})
         with urllib.request.urlopen(request, timeout=60) as response:
             html = response.read().decode('utf-8')
-        for label in ('Southern Norway', 'Central Norway', 'Northern Norway', 'BareGPS Tools', 'Figuring out how to steer them'):
+        for label in ('Southern Norway', 'Central Norway', 'Northern Norway'):
             if label not in html:
                 raise ValueError('Production website has not returned the reviewed content: ' + label)
     write(ROOT / 'web-preview/verification/norway-publication.json', {

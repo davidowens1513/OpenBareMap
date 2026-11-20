@@ -4,6 +4,8 @@ OpenBareMap is an offline topographic map for hiking, available as separate regi
 
 ## Downloads and incorporation instructions
 
+The [Apps by Onzy website](https://appsbyonzy.dev/) has its own [website repository](https://github.com/davidowens1513/AppsByOnzy-Website). Make homepage changes and publish the site from that checkout.
+
 **All finished iOS, Android and Garmin downloads are hosted on Cloudflare R2, outside Git.** Use the direct links below; cloning this repository does not download these packages. See [file storage and restoration](#file-storage-and-restoration) for developer resources.
 
 Each iOS download contains the complete regional resource bundle, Swift loader, example view controller, dependency information and instructions. Each Android download contains the complete importable map ZIP, loader AAR and Kotlin source, an example Activity, dependency information and instructions. Both include checksums, legends and attribution. Install the MapLibre renderer through the dependency instructions supplied with the bundle.
