@@ -13,12 +13,14 @@
     "dolomites": "2.0.0",
     "england-wales": "2.0.1",
     "faroe-islands": "2.0.0",
+    "high-tatras": "2.0.0",
     "ireland": "2.0.0",
     "madeira": "2.0.0",
     "malta": "2.0.0",
     "norway-central": "2.0.0",
     "norway-north": "2.0.0",
     "norway-south": "2.0.0",
+    "picos-de-europa": "2.0.0",
     "pyrenees": "2.0.0",
     "sardinia": "2.0.0",
     "scotland": "2.0.0",
@@ -875,6 +877,76 @@
         "url": "https://downloads.appsbyonzy.dev/OpenBareMap/faroe-islands/2.0.0/app-bundles-v1/ios/OpenBareMap-Faroe-Islands-iOS-Bundle.zip"
       }
     },
+    "high-tatras": {
+      "android": {
+        "bytes": 123401429,
+        "datasets": {
+          "basemap": {
+            "path": "maps/basemap.mbtiles",
+            "sha256": "d6f55f9b3f900007353edf877fff8ba79fad256eb67258a8bf3c2772262470c5"
+          },
+          "coast": {
+            "derivedFrom": "4553502a2a179961cc60e6bb7c4a624cd24730525eb696cb97d91f47bbebc4d0",
+            "path": "maps/coast.mbtiles",
+            "sha256": "1a4edd29c4af9e106aafbacea8455eac4eeee8410c448fd44135a4ad0eafda69"
+          },
+          "grid": {
+            "path": "maps/grid.mbtiles",
+            "sha256": "b7294e66dc97cadd2da96bdca3fffd6c74605311d4689efb5719463012eabd1e"
+          },
+          "hillshade": {
+            "path": "maps/hillshade.mbtiles",
+            "sha256": "cd3d8f606e7832e7cfa828288130094d75b6c1216af5b8787cefeb3b6ae73e20"
+          },
+          "topography": {
+            "path": "maps/topography.mbtiles",
+            "sha256": "4553502a2a179961cc60e6bb7c4a624cd24730525eb696cb97d91f47bbebc4d0"
+          }
+        },
+        "instructionsSHA256": "014d6e721de02c404afd87e6e37de97cbf3d7bc4b1ca1b4a737dfad1a8669d07",
+        "instructionsURL": "https://downloads.appsbyonzy.dev/OpenBareMap/high-tatras/2.0.0/app-bundles-v1/android/instructions.txt",
+        "localPath": "releases/high-tatras/2.0.0/app-bundles-v1/android/OpenBareMap-High-Tatras-Android-Bundle.zip",
+        "mapManifestSHA256": "6f5afe62db80093d61dd2bc9b5ac8b0f0135ec8ecb126bc1424b775745fb427a",
+        "r2Key": "OpenBareMap/high-tatras/2.0.0/app-bundles-v1/android/OpenBareMap-High-Tatras-Android-Bundle.zip",
+        "sha256": "7ea7238e4b0cd040f3b023c4fd0d70fcb1e29a931a5a6e7d209c4c8601cac7b5",
+        "url": "https://downloads.appsbyonzy.dev/OpenBareMap/high-tatras/2.0.0/app-bundles-v1/android/OpenBareMap-High-Tatras-Android-Bundle.zip"
+      },
+      "ios": {
+        "bytes": 123401839,
+        "datasets": {
+          "basemap": {
+            "path": "maps/basemap.mbtiles",
+            "sha256": "d6f55f9b3f900007353edf877fff8ba79fad256eb67258a8bf3c2772262470c5"
+          },
+          "coast": {
+            "derived_from": "4553502a2a179961cc60e6bb7c4a624cd24730525eb696cb97d91f47bbebc4d0",
+            "maxzoom": 12,
+            "operation": "Preserve land-layer MVT bytes only through zoom 12; omit other layers.",
+            "path": "maps/coast.mbtiles",
+            "sha256": "1a4edd29c4af9e106aafbacea8455eac4eeee8410c448fd44135a4ad0eafda69"
+          },
+          "grid": {
+            "path": "maps/grid.mbtiles",
+            "sha256": "b7294e66dc97cadd2da96bdca3fffd6c74605311d4689efb5719463012eabd1e"
+          },
+          "hillshade": {
+            "path": "maps/hillshade.mbtiles",
+            "sha256": "cd3d8f606e7832e7cfa828288130094d75b6c1216af5b8787cefeb3b6ae73e20"
+          },
+          "topography": {
+            "path": "maps/topography.mbtiles",
+            "sha256": "4553502a2a179961cc60e6bb7c4a624cd24730525eb696cb97d91f47bbebc4d0"
+          }
+        },
+        "instructionsSHA256": "a2058c6bc35f76e6e5565bea9869ba837fa15c04da2c499daa4292885c759805",
+        "instructionsURL": "https://downloads.appsbyonzy.dev/OpenBareMap/high-tatras/2.0.0/app-bundles-v1/ios/instructions.txt",
+        "localPath": "releases/high-tatras/2.0.0/app-bundles-v1/ios/OpenBareMap-High-Tatras-iOS-Bundle.zip",
+        "mapManifestSHA256": "274a31ef85ce4f9d5ecd173e15aa8967b59176202911567fce3ac80e376625bc",
+        "r2Key": "OpenBareMap/high-tatras/2.0.0/app-bundles-v1/ios/OpenBareMap-High-Tatras-iOS-Bundle.zip",
+        "sha256": "bdb675593a11f53645c118437c5df4a398133fd09df1b6565690b569ed421994",
+        "url": "https://downloads.appsbyonzy.dev/OpenBareMap/high-tatras/2.0.0/app-bundles-v1/ios/OpenBareMap-High-Tatras-iOS-Bundle.zip"
+      }
+    },
     "ireland": {
       "android": {
         "bytes": 1008370658,
@@ -1293,6 +1365,76 @@
         "r2Key": "OpenBareMap/norway-south/2.0.0/app-bundles-v1/ios/OpenBareMap-Norway-South-iOS-Bundle.zip",
         "sha256": "696abbaa55ee6a14e341a99305205d828b91d9ea9525bb9f22169caa2cb1a1fc",
         "url": "https://downloads.appsbyonzy.dev/OpenBareMap/norway-south/2.0.0/app-bundles-v1/ios/OpenBareMap-Norway-South-iOS-Bundle.zip"
+      }
+    },
+    "picos-de-europa": {
+      "android": {
+        "bytes": 129333959,
+        "datasets": {
+          "basemap": {
+            "path": "maps/basemap.mbtiles",
+            "sha256": "82dea73d5fab0d10f6fc6673ef2c35df6c84827de5e17120b2b4f637e96c1e3d"
+          },
+          "coast": {
+            "derivedFrom": "3170452309a6030cf25553d8460ac89a2b5fe0f72dbd8b62b42af985aba0ba37",
+            "path": "maps/coast.mbtiles",
+            "sha256": "dd6d6bee1d4ddab11fabcc7b83c4ae6a40ee8a1772d652a2f54a36c8b4281dc5"
+          },
+          "grid": {
+            "path": "maps/grid.mbtiles",
+            "sha256": "3246c7d12899862eb885dd8822a2d4fc0a35e9fabde2fd23d131807e1eef61de"
+          },
+          "hillshade": {
+            "path": "maps/hillshade.mbtiles",
+            "sha256": "72e184bc55df7ea2b61e7b0120ae5f03e10688efdb8e12a7d2da9551c09814b4"
+          },
+          "topography": {
+            "path": "maps/topography.mbtiles",
+            "sha256": "3170452309a6030cf25553d8460ac89a2b5fe0f72dbd8b62b42af985aba0ba37"
+          }
+        },
+        "instructionsSHA256": "13cbafe8a823736693461ee05b3feeeee11983ec025a25391328005196cb630b",
+        "instructionsURL": "https://downloads.appsbyonzy.dev/OpenBareMap/picos-de-europa/2.0.0/app-bundles-v1/android/instructions.txt",
+        "localPath": "releases/picos-de-europa/2.0.0/app-bundles-v1/android/OpenBareMap-Picos-de-Europa-Android-Bundle.zip",
+        "mapManifestSHA256": "3d754060d0a600ca5580ac0cff4059372cb3cad0896d1c9a89879c2f3bfd1668",
+        "r2Key": "OpenBareMap/picos-de-europa/2.0.0/app-bundles-v1/android/OpenBareMap-Picos-de-Europa-Android-Bundle.zip",
+        "sha256": "4c60235cdd64ff3b759536b3806a0ced9251307aac5eccd8488c9e52b27d73c1",
+        "url": "https://downloads.appsbyonzy.dev/OpenBareMap/picos-de-europa/2.0.0/app-bundles-v1/android/OpenBareMap-Picos-de-Europa-Android-Bundle.zip"
+      },
+      "ios": {
+        "bytes": 129334374,
+        "datasets": {
+          "basemap": {
+            "path": "maps/basemap.mbtiles",
+            "sha256": "82dea73d5fab0d10f6fc6673ef2c35df6c84827de5e17120b2b4f637e96c1e3d"
+          },
+          "coast": {
+            "derived_from": "3170452309a6030cf25553d8460ac89a2b5fe0f72dbd8b62b42af985aba0ba37",
+            "maxzoom": 12,
+            "operation": "Preserve land-layer MVT bytes only through zoom 12; omit other layers.",
+            "path": "maps/coast.mbtiles",
+            "sha256": "dd6d6bee1d4ddab11fabcc7b83c4ae6a40ee8a1772d652a2f54a36c8b4281dc5"
+          },
+          "grid": {
+            "path": "maps/grid.mbtiles",
+            "sha256": "3246c7d12899862eb885dd8822a2d4fc0a35e9fabde2fd23d131807e1eef61de"
+          },
+          "hillshade": {
+            "path": "maps/hillshade.mbtiles",
+            "sha256": "72e184bc55df7ea2b61e7b0120ae5f03e10688efdb8e12a7d2da9551c09814b4"
+          },
+          "topography": {
+            "path": "maps/topography.mbtiles",
+            "sha256": "3170452309a6030cf25553d8460ac89a2b5fe0f72dbd8b62b42af985aba0ba37"
+          }
+        },
+        "instructionsSHA256": "0b65ce95364e672da8849bf4b223ee29d27aaec7bb893f28dbcad8422673c8fe",
+        "instructionsURL": "https://downloads.appsbyonzy.dev/OpenBareMap/picos-de-europa/2.0.0/app-bundles-v1/ios/instructions.txt",
+        "localPath": "releases/picos-de-europa/2.0.0/app-bundles-v1/ios/OpenBareMap-Picos-de-Europa-iOS-Bundle.zip",
+        "mapManifestSHA256": "eac1c6d1e1803d3946cfd9007abdfd77fd5a44968e7c1c09c8f8cd9d22b921a3",
+        "r2Key": "OpenBareMap/picos-de-europa/2.0.0/app-bundles-v1/ios/OpenBareMap-Picos-de-Europa-iOS-Bundle.zip",
+        "sha256": "fe9cc55f69e20600ad7ceb4067c17c784152309ddf0f705774414cedc8fef972",
+        "url": "https://downloads.appsbyonzy.dev/OpenBareMap/picos-de-europa/2.0.0/app-bundles-v1/ios/OpenBareMap-Picos-de-Europa-iOS-Bundle.zip"
       }
     },
     "pyrenees": {

@@ -293,3 +293,19 @@ data/regions/norway-*/copernicus/*
 /regions/us-*/garmin/dist/*.img
 /releases/us-*/*/maps/
 /releases/us-*/*/app-bundles-v1/**/*.zip
+
+# Rebuildable Picos de Europa and High Tatras data and delivery files
+/data/regions/picos-de-europa/
+/data/regions/high-tatras/
+/regions/picos-de-europa/exports/
+/regions/high-tatras/exports/
+/regions/picos-de-europa/garmin/coastal-context/
+/regions/high-tatras/garmin/coastal-context/
+/regions/picos-de-europa/garmin/inputs/*.geojson.gz
+/regions/high-tatras/garmin/inputs/*.geojson.gz
+/regions/picos-de-europa/garmin/dist/*.img
+/regions/high-tatras/garmin/dist/*.img
+/releases/picos-de-europa/*/maps/
+/releases/high-tatras/*/maps/
+/releases/picos-de-europa/*/app-bundles-v1/**/*.zip
+/releases/high-tatras/*/app-bundles-v1/**/*.zip

@@ -1,0 +1,33 @@
+{
+  "bytes": 123401429,
+  "datasets": {
+    "basemap": {
+      "path": "maps/basemap.mbtiles",
+      "sha256": "d6f55f9b3f900007353edf877fff8ba79fad256eb67258a8bf3c2772262470c5"
+    },
+    "coast": {
+      "derivedFrom": "4553502a2a179961cc60e6bb7c4a624cd24730525eb696cb97d91f47bbebc4d0",
+      "path": "maps/coast.mbtiles",
+      "sha256": "1a4edd29c4af9e106aafbacea8455eac4eeee8410c448fd44135a4ad0eafda69"
+    },
+    "grid": {
+      "path": "maps/grid.mbtiles",
+      "sha256": "b7294e66dc97cadd2da96bdca3fffd6c74605311d4689efb5719463012eabd1e"
+    },
+    "hillshade": {
+      "path": "maps/hillshade.mbtiles",
+      "sha256": "cd3d8f606e7832e7cfa828288130094d75b6c1216af5b8787cefeb3b6ae73e20"
+    },
+    "topography": {
+      "path": "maps/topography.mbtiles",
+      "sha256": "4553502a2a179961cc60e6bb7c4a624cd24730525eb696cb97d91f47bbebc4d0"
+    }
+  },
+  "instructionsSHA256": "014d6e721de02c404afd87e6e37de97cbf3d7bc4b1ca1b4a737dfad1a8669d07",
+  "instructionsURL": "https://downloads.appsbyonzy.dev/OpenBareMap/high-tatras/2.0.0/app-bundles-v1/android/instructions.txt",
+  "localPath": "releases/high-tatras/2.0.0/app-bundles-v1/android/OpenBareMap-High-Tatras-Android-Bundle.zip",
+  "mapManifestSHA256": "6f5afe62db80093d61dd2bc9b5ac8b0f0135ec8ecb126bc1424b775745fb427a",
+  "r2Key": "OpenBareMap/high-tatras/2.0.0/app-bundles-v1/android/OpenBareMap-High-Tatras-Android-Bundle.zip",
+  "sha256": "7ea7238e4b0cd040f3b023c4fd0d70fcb1e29a931a5a6e7d209c4c8601cac7b5",
+  "url": "https://downloads.appsbyonzy.dev/OpenBareMap/high-tatras/2.0.0/app-bundles-v1/android/OpenBareMap-High-Tatras-Android-Bundle.zip"
+}

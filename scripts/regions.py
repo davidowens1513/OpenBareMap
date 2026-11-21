@@ -6,7 +6,7 @@ from openbaremap import ROOT
 
 ALPS_REGIONS = ('alps-west', 'alps-central', 'alps-tyrol-bavaria', 'alps-east')
 US_PARK_REGIONS = tuple(json.loads((ROOT/'config/us-national-parks.json').read_text()))
-REGIONS = ('ireland', 'england-wales', 'scotland', 'sierra-nevada', 'pyrenees', 'dolomites', 'faroe-islands','norway-south','norway-central','norway-north', 'balearic-islands', 'corsica', 'sardinia', 'sicily', 'crete', 'cyprus', 'malta', 'canary-islands', 'madeira') + ALPS_REGIONS + US_PARK_REGIONS
+REGIONS = ('ireland', 'england-wales', 'scotland', 'sierra-nevada', 'pyrenees', 'dolomites', 'faroe-islands','norway-south','norway-central','norway-north', 'balearic-islands', 'corsica', 'sardinia', 'sicily', 'crete', 'cyprus', 'malta', 'canary-islands', 'madeira') + ALPS_REGIONS + US_PARK_REGIONS + ('picos-de-europa', 'high-tatras')
 
 def profile(region='ireland'):
     if region not in REGIONS:

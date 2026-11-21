@@ -1,0 +1,33 @@
+{
+  "bytes": 129333959,
+  "datasets": {
+    "basemap": {
+      "path": "maps/basemap.mbtiles",
+      "sha256": "82dea73d5fab0d10f6fc6673ef2c35df6c84827de5e17120b2b4f637e96c1e3d"
+    },
+    "coast": {
+      "derivedFrom": "3170452309a6030cf25553d8460ac89a2b5fe0f72dbd8b62b42af985aba0ba37",
+      "path": "maps/coast.mbtiles",
+      "sha256": "dd6d6bee1d4ddab11fabcc7b83c4ae6a40ee8a1772d652a2f54a36c8b4281dc5"
+    },
+    "grid": {
+      "path": "maps/grid.mbtiles",
+      "sha256": "3246c7d12899862eb885dd8822a2d4fc0a35e9fabde2fd23d131807e1eef61de"
+    },
+    "hillshade": {
+      "path": "maps/hillshade.mbtiles",
+      "sha256": "72e184bc55df7ea2b61e7b0120ae5f03e10688efdb8e12a7d2da9551c09814b4"
+    },
+    "topography": {
+      "path": "maps/topography.mbtiles",
+      "sha256": "3170452309a6030cf25553d8460ac89a2b5fe0f72dbd8b62b42af985aba0ba37"
+    }
+  },
+  "instructionsSHA256": "13cbafe8a823736693461ee05b3feeeee11983ec025a25391328005196cb630b",
+  "instructionsURL": "https://downloads.appsbyonzy.dev/OpenBareMap/picos-de-europa/2.0.0/app-bundles-v1/android/instructions.txt",
+  "localPath": "releases/picos-de-europa/2.0.0/app-bundles-v1/android/OpenBareMap-Picos-de-Europa-Android-Bundle.zip",
+  "mapManifestSHA256": "3d754060d0a600ca5580ac0cff4059372cb3cad0896d1c9a89879c2f3bfd1668",
+  "r2Key": "OpenBareMap/picos-de-europa/2.0.0/app-bundles-v1/android/OpenBareMap-Picos-de-Europa-Android-Bundle.zip",
+  "sha256": "4c60235cdd64ff3b759536b3806a0ced9251307aac5eccd8488c9e52b27d73c1",
+  "url": "https://downloads.appsbyonzy.dev/OpenBareMap/picos-de-europa/2.0.0/app-bundles-v1/android/OpenBareMap-Picos-de-Europa-Android-Bundle.zip"
+}

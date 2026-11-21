@@ -1,0 +1,144 @@
+{
+  "familyId": 4864,
+  "garminPackageRevision": "2.0.1-trail-detail-r1",
+  "inspection": {
+    "anchorLabels": {
+      "Bulnes": "Bulnes",
+      "Potes": "Potes",
+      "Ria\u00f1o": "Ria\u00f1o"
+    },
+    "bounds": [
+      -5.3400421142578125,
+      42.85998344421387,
+      -4.329986572265625,
+      43.480024337768555
+    ],
+    "coastPolygonsByLevel": {
+      "0": {
+        "0x32": 9,
+        "0x54": 259
+      },
+      "1": {
+        "0x32": 9,
+        "0x54": 156
+      },
+      "2": {
+        "0x32": 9,
+        "0x54": 110
+      },
+      "3": {
+        "0x32": 9,
+        "0x54": 42
+      },
+      "4": {
+        "0x32": 9,
+        "0x54": 17
+      }
+    },
+    "contoursByLevel": {
+      "0": {
+        "0x20": 23547,
+        "0x22": 5720
+      },
+      "1": {
+        "0x20": 18668,
+        "0x22": 4505
+      },
+      "2": {
+        "0x22": 4240
+      },
+      "3": {
+        "0x10008": 3874
+      },
+      "4": {}
+    },
+    "lineInstancesAtHighestDetail": {
+      "0x1": 247,
+      "0x10001": 1375,
+      "0x10002": 383,
+      "0x10004": 10,
+      "0x10005": 337,
+      "0x10006": 1446,
+      "0x1000b": 1107,
+      "0x14": 123,
+      "0x16": 6703,
+      "0x18": 3268,
+      "0x1c": 306,
+      "0x1e": 405,
+      "0x1f": 347,
+      "0x2": 391,
+      "0x20": 23547,
+      "0x22": 5720,
+      "0x3": 235,
+      "0x4": 204,
+      "0x6": 8353,
+      "0x7": 2764,
+      "0xa": 7447
+    },
+    "logicalCombinedSHA256": "304f65c16f805c40465d9ad6da545c8c235fd4c29a278551e5bd255e63a11937",
+    "logicalHashNote": "Internal file names, sizes and payloads; only CommonHeader creation-date bytes 14..20 are zeroed for hashing. IMG archive headers are excluded. Output bytes are never modified.",
+    "logicalTileSHA256": {
+      "48640001.img": "0d8c5cb85bb717a6faa5c2d5c3c7788cb0d7b18a496b78e7ecb00b99a5e386a7",
+      "48640002.img": "c3d2bbb7e8d0dec033183aadc593ff06f0b9f0d6c4926c50dc4c4ff63d5775c6",
+      "48640003.img": "e3c89b3ae51793fb2603fde2da796861d78d5155d89246c989966182da9d7264",
+      "48640004.img": "643e561526f2af88240eb001d76b2d72939a0a2fa3afa2e8ee251ba2c9b2eaf0",
+      "48640005.img": "8fd2bc8109ded353db6a9fe307c4e8ddf24d159be6017847c7862d495a346f07",
+      "48640006.img": "0b59b6db9f0f40bc23dfc6a8136f7ce5d438c9af6ee247ae1ed261b0ed3f6a3f",
+      "48640007.img": "975b0bce77d13bce3998b048e33376fc14fd80c477fc0b0bcbe95399b2f9b0d3",
+      "48640008.img": "eb1bf05afd9b8c1b8a30bf4f3c31cdfc9b1a35276b73e929718290eedd932983",
+      "48640009.img": "4f2b0d4eaf07ce452ff507d010faf3390da590848936e8d0df43abfe3e0d3dc0"
+    },
+    "pointInstancesAtHighestDetail": {
+      "0x10001": 291,
+      "0x10002": 301,
+      "0x10003": 840,
+      "0x10004": 34,
+      "0x10006": 3908,
+      "0x2f0b": 888,
+      "0x600": 6,
+      "0x650c": 136,
+      "0x6603": 107,
+      "0x6615": 1957,
+      "0x6616": 4538,
+      "0x800": 45,
+      "0xb00": 843,
+      "0xc00": 10521
+    },
+    "polygonInstancesAtHighestDetail": {
+      "0x10101": 2544,
+      "0x10102": 9585,
+      "0x10103": 3950,
+      "0x10104": 6979,
+      "0x10105": 88,
+      "0x10106": 7,
+      "0x10107": 2,
+      "0x10109": 1723,
+      "0x1010a": 2910,
+      "0x1010b": 76,
+      "0x13": 38161,
+      "0x32": 9,
+      "0x3c": 525,
+      "0x50": 6171,
+      "0x51": 190,
+      "0x54": 259
+    },
+    "routing": false,
+    "subfileBytes": {
+      "DEM": 6854588,
+      "LBL": 419076,
+      "MPS": 807,
+      "RGN": 17206266,
+      "SRT": 912,
+      "TRE": 212285,
+      "TYP": 2982
+    },
+    "tiles": 9
+  },
+  "output": {
+    "bytes": 24780800,
+    "path": "regions/picos-de-europa/garmin/dist/OpenBareMap-Picos-de-Europa.img",
+    "sha256": "3501850d6ece60a1ae0bd8442c254f1d99010a44ff6f852ba1a827ab6892bdab"
+  },
+  "routing": false,
+  "status": "compiled and structurally inspected; hardware rendering pending"
+}

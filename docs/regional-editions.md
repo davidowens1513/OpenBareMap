@@ -1,5 +1,52 @@
 # Maintaining regional editions
 
+## Picos de Europa and High Tatras
+
+Picos de Europa covers the three massifs and the approaches from Asturias,
+Cantabria and León. The High Tatras edition joins the Polish and Slovak
+trail networks in one map. Each edition clips the 20 November 2026 Geofabrik
+snapshot to its own coverage envelope and uses Copernicus GLO-30 for
+20 m contours, hillshade and Garmin elevation.
+
+| Edition | OSM extracts | Grid | Garmin family |
+| --- | --- | --- | --- |
+| Picos de Europa | Asturias, Cantabria, Castilla y León | ETRS89 / UTM 30N | 4864 |
+| High Tatras | Małopolskie, Slovakia | ETRS89 / UTM 34N | 4865 |
+
+Build and validate either edition using the regional pipeline.
+
+```sh
+PYTHONPATH=work/python python3 scripts/run_full_region.py --region picos-de-europa
+PYTHONPATH=work/python python3 scripts/run_full_region.py --region high-tatras
+```
+
+Each `regions/<edition>/region.json` records its coverage, source URLs and
+validation anchors. The build records source checksums in that directory
+and publishes local validation reports under `releases/<edition>/2.0.0/`.
+The extracts, terrain tiles, working databases and device binaries can be
+recreated with the build commands.
+
+After both builds pass, stage each edition's mobile kits and PMTiles preview.
+
+```sh
+export PYTHONPATH=work/python
+for edition in picos-de-europa high-tatras; do
+  output="work/$edition-release"
+  python3 scripts/build_app_distribution.py --regions "$edition" \
+    --output "$output/kits" --catalog "$output/catalog.json"
+  python3 scripts/build_web_previews.py --regions "$edition" --output "$output/preview" \
+    --origin "https://downloads.appsbyonzy.dev/OpenBareMap/$edition/2.0.0/preview"
+done
+python3 scripts/stage_mountain_editions.py
+python3 scripts/stage_mountain_editions.py --publish-assets
+```
+
+The last command verifies Cloudflare readbacks before updating the public
+catalogues and site package. The production Pages archive is
+`work/picos-tatras-publication/appsbyonzy-picos-de-europa-and-high-tatras.zip`.
+Picos de Europa appears under France & Spain and the High Tatras under
+Eastern Europe.
+
 ## US National Parks
 
 The series covers ten parks in nine maps. Each edition uses the National Park

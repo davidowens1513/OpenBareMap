@@ -1,0 +1,41 @@
+{
+  "areaSquareDegrees": 0.41000000000000014,
+  "bounds": [
+    19.68,
+    48.94,
+    20.5,
+    49.44
+  ],
+  "entireRequestedFootprintCovered": true,
+  "exactFootprint": null,
+  "inputs": [
+    {
+      "bytes": 4454,
+      "path": "data/regions/high-tatras/malopolskie.poly",
+      "sha256": "07ddd608cb8b42993860621eab7d225a37dc0da6369094755a45d94063bc7fa7",
+      "url": "https://download.geofabrik.de/europe/poland/malopolskie/malopolskie.poly"
+    },
+    {
+      "bytes": 11578,
+      "path": "data/regions/high-tatras/slovakia.poly",
+      "sha256": "527054d374076434ac0dba8da500bd06ebb34b740e7fafcf59e5fc5993b3a7c7",
+      "url": "https://download.geofabrik.de/europe/slovakia/slovakia.poly"
+    }
+  ],
+  "knownDestinationsCovered": [
+    "island",
+    "zakopane",
+    "kuznice",
+    "morskie-oko",
+    "rysy",
+    "strbske-pleso",
+    "stary-smokovec",
+    "tatranska-lomnica",
+    "zdiar",
+    "poprad",
+    "chocholowska"
+  ],
+  "operation": "Requested rectangular crop; source outlines cover all destination anchors",
+  "polygons": 1,
+  "sha256": "82b8eb06e9090d841b67b958ba6f07c4945ab1bf6ee3428f13c753167c091565"
+}

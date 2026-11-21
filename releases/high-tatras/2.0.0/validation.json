@@ -1,0 +1,430 @@
+{
+  "coverage": "The High Tatras on both sides of the Polish\u2013Slovak border, including Zakopane, Morskie Oko, \u0160trbsk\u00e9 Pleso, Tatransk\u00e1 Lomnica and the approaches from Poprad.",
+  "coverageAnchors": {
+    "chocholowska": {
+      "coordinate": [
+        19.789,
+        49.236
+      ],
+      "featuresInNeighbouringDetailedTiles": 661
+    },
+    "kuznice": {
+      "coordinate": [
+        19.981,
+        49.267
+      ],
+      "featuresInNeighbouringDetailedTiles": 3544
+    },
+    "morskie-oko": {
+      "coordinate": [
+        20.07075,
+        49.20145
+      ],
+      "featuresInNeighbouringDetailedTiles": 2190
+    },
+    "poprad": {
+      "coordinate": [
+        20.302,
+        49.059
+      ],
+      "featuresInNeighbouringDetailedTiles": 21144
+    },
+    "rysy": {
+      "coordinate": [
+        20.08808,
+        49.17946
+      ],
+      "featuresInNeighbouringDetailedTiles": 1029
+    },
+    "stary-smokovec": {
+      "coordinate": [
+        20.222,
+        49.141
+      ],
+      "featuresInNeighbouringDetailedTiles": 2950
+    },
+    "strbske-pleso": {
+      "coordinate": [
+        20.06358,
+        49.11828
+      ],
+      "featuresInNeighbouringDetailedTiles": 1821
+    },
+    "tatranska-lomnica": {
+      "coordinate": [
+        20.278,
+        49.166
+      ],
+      "featuresInNeighbouringDetailedTiles": 3999
+    },
+    "zakopane": {
+      "coordinate": [
+        19.949,
+        49.299
+      ],
+      "featuresInNeighbouringDetailedTiles": 13560
+    },
+    "zdiar": {
+      "coordinate": [
+        20.263,
+        49.271
+      ],
+      "featuresInNeighbouringDetailedTiles": 2072
+    }
+  },
+  "datasets": {
+    "basemap": {
+      "empty_tile_count": 0,
+      "logical_tiles_sha256": "d2a035d7bdee1cba28153778d966a35a35cd6e87f6f4ff845264d5ce326cbc6a",
+      "tile_count": 1913
+    },
+    "grid": {
+      "empty_tile_count": 0,
+      "logical_tiles_sha256": "6ab02baaa1ed1bd420637a7ab3b94625a2db32fd903507b3e02b8555ec0ee7cf",
+      "tile_count": 1895
+    },
+    "hillshade": {
+      "empty_tile_count": 0,
+      "logical_tiles_sha256": "1dd373cc9493048f21d1f9179ddfa8173d1e9ed2efc1e3452e634cc2746fc2fa",
+      "tile_count": 1102
+    },
+    "topography": {
+      "empty_tile_count": 47914,
+      "logical_tiles_sha256": "ab14f40ceb7968f6c504dc3ce7f50036c40f2aa73645bf95ba86d74da78e7101",
+      "tile_count": 54145
+    }
+  },
+  "detail": {
+    "basemap": {
+      "boundaries": 11925,
+      "contours": 0
+    },
+    "topography": {
+      "boundaries": 0,
+      "contours": 56216
+    }
+  },
+  "garmin": {
+    "familyId": 4865,
+    "garminPackageRevision": "2.0.1-trail-detail-r1",
+    "inspection": {
+      "anchorLabels": {
+        "Poprad": "Poprad",
+        "Rysy": "Rysy",
+        "Zakopane": "Zakopane"
+      },
+      "bounds": [
+        19.679946899414062,
+        48.939971923828125,
+        20.500059127807617,
+        49.44002151489258
+      ],
+      "coastPolygonsByLevel": {
+        "0": {
+          "0x32": 8,
+          "0x54": 16
+        },
+        "1": {
+          "0x32": 8,
+          "0x54": 16
+        },
+        "2": {
+          "0x32": 8,
+          "0x54": 16
+        },
+        "3": {
+          "0x32": 8,
+          "0x54": 16
+        },
+        "4": {
+          "0x32": 8,
+          "0x54": 16
+        }
+      },
+      "contoursByLevel": {
+        "0": {
+          "0x20": 10116,
+          "0x22": 2560
+        },
+        "1": {
+          "0x20": 8121,
+          "0x22": 2058
+        },
+        "2": {
+          "0x22": 1955
+        },
+        "3": {
+          "0x10008": 1821
+        },
+        "4": {}
+      },
+      "lineInstancesAtHighestDetail": {
+        "0x1": 164,
+        "0x10001": 1557,
+        "0x10002": 1868,
+        "0x10003": 5,
+        "0x10004": 163,
+        "0x10005": 880,
+        "0x10006": 2792,
+        "0x1000b": 849,
+        "0x14": 634,
+        "0x16": 14575,
+        "0x18": 10148,
+        "0x1a": 4,
+        "0x1c": 378,
+        "0x1e": 324,
+        "0x1f": 200,
+        "0x2": 2,
+        "0x20": 10116,
+        "0x22": 2560,
+        "0x3": 317,
+        "0x4": 319,
+        "0x6": 5454,
+        "0x7": 13791,
+        "0xa": 12308
+      },
+      "logicalCombinedSHA256": "8c23abac775766498ccb508986713581f7ded6753b7085a252737907040cbf4a",
+      "logicalHashNote": "Internal file names, sizes and payloads; only CommonHeader creation-date bytes 14..20 are zeroed for hashing. IMG archive headers are excluded. Output bytes are never modified.",
+      "logicalTileSHA256": {
+        "48650001.img": "dbcede9fd8bb42d5b96c4d1e65b104010c414494ceeae42295eda07cb6a6e65a",
+        "48650002.img": "7c1c9e7b76d19813dd9c941103a4d96fa38e597a4a00b16ee58c308d669a91ef",
+        "48650003.img": "e5ad5fb1110f727efdb314bb3dfabfd4da0abb8b0ad05631afe1c0a9fe801959",
+        "48650004.img": "cc52a6b483574fbb2b6345afaf635e840e53627b8c2eaafc192477aed40bd374",
+        "48650005.img": "5c96de0639a95e4afd04847a0474bd7fdfb337b36d6c32c2057c8af52052f7aa",
+        "48650006.img": "2094e64a9fa45a0bdbb8974966031e3b6479468ff6a2b95dba53f49f85260ad3",
+        "48650007.img": "d02e914b990cc66647c62179d3e8a3454341545d120c8fb89c85c604e2fdab54",
+        "48650008.img": "60994c9474ea5e82a1680832e5949eef6f5666ba8970a900b85e5eea1057e291"
+      },
+      "pointInstancesAtHighestDetail": {
+        "0x10001": 680,
+        "0x10002": 410,
+        "0x10003": 1244,
+        "0x10004": 65,
+        "0x10006": 7226,
+        "0x2f0b": 3019,
+        "0x600": 9,
+        "0x650c": 24,
+        "0x6603": 259,
+        "0x6615": 635,
+        "0x6616": 1507,
+        "0x800": 144,
+        "0xb00": 535,
+        "0xc00": 3563
+      },
+      "polygonInstancesAtHighestDetail": {
+        "0x10101": 734,
+        "0x10102": 6187,
+        "0x10103": 424,
+        "0x10104": 18533,
+        "0x10105": 4,
+        "0x10106": 140,
+        "0x10107": 32,
+        "0x10109": 5092,
+        "0x1010a": 4895,
+        "0x1010b": 67,
+        "0x13": 127826,
+        "0x32": 8,
+        "0x3c": 1221,
+        "0x50": 8799,
+        "0x51": 480,
+        "0x54": 16
+      },
+      "routing": false,
+      "subfileBytes": {
+        "DEM": 4074754,
+        "LBL": 299244,
+        "MPS": 687,
+        "RGN": 13517066,
+        "SRT": 912,
+        "TRE": 168564,
+        "TYP": 2982
+      },
+      "tiles": 8
+    },
+    "output": {
+      "bytes": 18132992,
+      "path": "regions/high-tatras/garmin/dist/OpenBareMap-High-Tatras.img",
+      "sha256": "4e1ec3bd938ef0b122030ff2ad7dbbed4a3fda71e54060b9c22c1b917913f7e6"
+    },
+    "routing": false,
+    "status": "compiled and structurally inspected; hardware rendering pending"
+  },
+  "geometryProcessing": {
+    "contours": 67240,
+    "grid": {
+      "grid_10km": 15,
+      "grid_1km": 132
+    },
+    "landcover": {
+      "empty_source_areas": [],
+      "features": 32520,
+      "retained": 9041,
+      "smoothed": 23479
+    }
+  },
+  "irelandGarminPackageRevision": "2.0.1-trail-detail-r1",
+  "irelandPreserved": true,
+  "labelGlyphs": {
+    "Open Sans Bold": true,
+    "Open Sans Regular": true,
+    "Open Sans Semibold": true
+  },
+  "landBackground": {
+    "chocholowska": {
+      "coordinate": [
+        19.789,
+        49.236
+      ],
+      "verifiedZooms": [
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    },
+    "kuznice": {
+      "coordinate": [
+        19.981,
+        49.267
+      ],
+      "verifiedZooms": [
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    },
+    "morskie-oko": {
+      "coordinate": [
+        20.07075,
+        49.20145
+      ],
+      "verifiedZooms": [
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    },
+    "poprad": {
+      "coordinate": [
+        20.302,
+        49.059
+      ],
+      "verifiedZooms": [
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    },
+    "rysy": {
+      "coordinate": [
+        20.08808,
+        49.17946
+      ],
+      "verifiedZooms": [
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    },
+    "stary-smokovec": {
+      "coordinate": [
+        20.222,
+        49.141
+      ],
+      "verifiedZooms": [
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    },
+    "strbske-pleso": {
+      "coordinate": [
+        20.06358,
+        49.11828
+      ],
+      "verifiedZooms": [
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    },
+    "tatranska-lomnica": {
+      "coordinate": [
+        20.278,
+        49.166
+      ],
+      "verifiedZooms": [
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    },
+    "zakopane": {
+      "coordinate": [
+        19.949,
+        49.299
+      ],
+      "verifiedZooms": [
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    },
+    "zdiar": {
+      "coordinate": [
+        20.263,
+        49.271
+      ],
+      "verifiedZooms": [
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    }
+  },
+  "packages": {
+    "android": {
+      "checkedFiles": 43,
+      "nativeDeviceRenderingTested": false,
+      "sourceFiles": {
+        "basemap": "maps/basemap.mbtiles",
+        "coast": "maps/coast.mbtiles",
+        "hillshade": "maps/hillshade.mbtiles",
+        "topography": "maps/topography.mbtiles",
+        "utm-grid": "maps/grid.mbtiles"
+      }
+    },
+    "ios": {
+      "checkedFiles": 46,
+      "nativeDeviceRenderingTested": false,
+      "sourceFiles": {
+        "basemap": "maps/basemap.mbtiles",
+        "coast": "maps/coast.mbtiles",
+        "hillshade": "maps/hillshade.mbtiles",
+        "topography": "maps/topography.mbtiles",
+        "utm-grid": "maps/grid.mbtiles"
+      }
+    }
+  },
+  "region": "high-tatras",
+  "status": "automated checks passed; visual and hardware acceptance pending"
+}

@@ -234,7 +234,9 @@ def stage(output, website, worldwide):
     print(f'Prepared nine maps and all-platform downloads under {output.relative_to(ROOT)}.', flush=True)
 
 
-def publish(output, website):
+def publish(output, website, *, regions=US_PARK_REGIONS, render_homepage=stage_homepage, preview_manifests=None):
+    if preview_manifests is None:
+        preview_manifests = {'preview/manifest.json': 'us-national-parks-manifest.json'}
     plan = json.loads((output / 'release-plan.json').read_text())
     receipts = output / 'public-verification.json'
     verified = json.loads(receipts.read_text()) if receipts.exists() else {}
@@ -302,11 +304,11 @@ def publish(output, website):
             live = json.load(response)
         if isinstance(staged['regions'], list):
             entries = {entry['id']: entry for entry in live['regions']}
-            entries.update({entry['id']: entry for entry in staged['regions'] if entry['id'] in US_PARK_REGIONS})
+            entries.update({entry['id']: entry for entry in staged['regions'] if entry['id'] in regions})
             live['regions'] = list(entries.values())
         else:
-            live['regions'].update({region: staged['regions'][region] for region in US_PARK_REGIONS})
-            live['mapVersions'].update({region: staged['mapVersions'][region] for region in US_PARK_REGIONS})
+            live['regions'].update({region: staged['regions'][region] for region in regions})
+            live['mapVersions'].update({region: staged['mapVersions'][region] for region in regions})
         if isinstance(live['regions'], list):
             data = json.dumps(live, separators=(',', ':'), ensure_ascii=False) + '\n'
             if len(data.encode()) > 5_000_000:
@@ -318,7 +320,8 @@ def publish(output, website):
                                   'bytes': path.stat().st_size, 'sha256': digest(path)}))
 
     shutil.copyfile(output / 'app-bundles-catalog.json', ROOT / 'distribution/app-bundles-v1/catalog.json')
-    shutil.copyfile(output / 'preview/manifest.json', ROOT / 'web-preview/us-national-parks-manifest.json')
+    for manifest, filename in preview_manifests.items():
+        shutil.copyfile(output / manifest, ROOT / 'web-preview' / filename)
     inventory_path = ROOT / 'distribution/r2-assets.json'
     inventory = json.loads(inventory_path.read_text())
     delivery = {item['path']: item for item in inventory['assets']}
@@ -329,7 +332,7 @@ def publish(output, website):
     inventory['assets'] = sorted(delivery.values(), key=lambda item: item['path'])
     write(inventory_path, inventory)
 
-    for region in US_PARK_REGIONS:
+    for region in regions:
         target = ROOT / 'distribution/app-bundles-v1/garmin' / region / 'manifest.json'
         target.parent.mkdir(parents=True, exist_ok=True)
         shutil.copyfile(output / 'garmin-manifests' / region / 'manifest.json', target)
@@ -338,8 +341,8 @@ def publish(output, website):
     # Refresh existing preview menus after all new destinations are reachable.
     navigation = output / ('navigation-' + datetime.now(timezone.utc).strftime('%Y%m%d%H%M%S'))
     run(sys.executable, 'scripts/publish_preview_ui.py', '--output', navigation)
-    website.write_text(stage_homepage(website, plan['regions'], plan['downloads'], len(live['regions'])))
-    stage_website_archive(website, website, output / 'appsbyonzy-us-national-parks.zip')
+    website.write_text(render_homepage(website, plan['regions'], plan['downloads'], len(live['regions'])))
+    stage_website_archive(website, website, output / plan.get('websiteArchive', 'appsbyonzy-us-national-parks.zip'))
     print('Public downloads and preview ranges verified. The website checkout is ready for deployment.', flush=True)
 
 

@@ -1,0 +1,80 @@
+{
+  "bounds": [
+    19.68,
+    48.94,
+    20.5,
+    49.44
+  ],
+  "contextEnvelope": [
+    19.68,
+    48.94,
+    20.5,
+    49.44
+  ],
+  "drawPriority": 25,
+  "format": "openbaremap-garmin-render-footprint-v1",
+  "geometry": {
+    "bytes": 742,
+    "path": "regions/high-tatras/garmin/render-coverage.geojson",
+    "sha256": "f52f6ca13419d8447b2debdc597516e63a46ce69ba36170e95a2dd8d3a22f083"
+  },
+  "inputs": [
+    {
+      "bytes": 4454,
+      "path": "data/regions/high-tatras/malopolskie.poly",
+      "sha256": "07ddd608cb8b42993860621eab7d225a37dc0da6369094755a45d94063bc7fa7",
+      "url": "https://download.geofabrik.de/europe/poland/malopolskie/malopolskie.poly"
+    },
+    {
+      "bytes": 11578,
+      "path": "data/regions/high-tatras/slovakia.poly",
+      "sha256": "527054d374076434ac0dba8da500bd06ebb34b740e7fafcf59e5fc5993b3a7c7",
+      "url": "https://download.geofabrik.de/europe/slovakia/slovakia.poly"
+    }
+  ],
+  "knownDestinationsCovered": {
+    "chocholowska": [
+      19.789,
+      49.236
+    ],
+    "kuznice": [
+      19.981,
+      49.267
+    ],
+    "morskie-oko": [
+      20.07075,
+      49.20145
+    ],
+    "poprad": [
+      20.302,
+      49.059
+    ],
+    "rysy": [
+      20.08808,
+      49.17946
+    ],
+    "stary-smokovec": [
+      20.222,
+      49.141
+    ],
+    "strbske-pleso": [
+      20.06358,
+      49.11828
+    ],
+    "tatranska-lomnica": [
+      20.278,
+      49.166
+    ],
+    "zakopane": [
+      19.949,
+      49.299
+    ],
+    "zdiar": [
+      20.263,
+      49.271
+    ]
+  },
+  "purpose": "Rectangular Garmin tiles may overlap other countries. Do not fill their padding with sea, land or land-cover polygons.",
+  "region": "high-tatras",
+  "transparentNativeMap": true
+}

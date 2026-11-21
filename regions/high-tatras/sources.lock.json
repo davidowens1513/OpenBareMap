@@ -1,0 +1,42 @@
+{
+  "accessed_utc": "2026-11-21T18:14:42.997635+00:00",
+  "inputs": [
+    {
+      "bytes": 203900197,
+      "path": "data/regions/high-tatras/malopolskie-261120.osm.pbf",
+      "replicationTimestamp": "2026-11-20T21:21:21Z",
+      "sha256": "aa8656f5412feb2bd8420e542f6339bb5d752c3227802f1aa175d80c73fadfa4",
+      "url": "https://download.geofabrik.de/europe/poland/malopolskie/malopolskie-261120.osm.pbf"
+    },
+    {
+      "bytes": 348843576,
+      "path": "data/regions/high-tatras/slovakia-261120.osm.pbf",
+      "replicationTimestamp": "2026-11-20T21:21:21Z",
+      "sha256": "aec190ac3a6d62d2edad56dbd18f0063228783b80700d0def8b46d748ecc7a29",
+      "url": "https://download.geofabrik.de/europe/slovakia/slovakia-261120.osm.pbf"
+    }
+  ],
+  "osm": {
+    "bytes": 43464576,
+    "operation": "Complete-feature bbox extraction with nested relation references, then libosmium sorted merge; duplicate OSM objects resolved by version",
+    "path": "data/regions/high-tatras/high-tatras-261120.osm.pbf",
+    "replicationTimestamp": "2026-11-20T21:21:21Z",
+    "sha256": "a511779c1d9138a238f021758982c3475581ea99f55f48ddd572391690038048",
+    "snapshot_date": "2026-11-20",
+    "url": null
+  },
+  "polygons": [
+    {
+      "bytes": 4454,
+      "path": "data/regions/high-tatras/malopolskie.poly",
+      "sha256": "07ddd608cb8b42993860621eab7d225a37dc0da6369094755a45d94063bc7fa7",
+      "url": "https://download.geofabrik.de/europe/poland/malopolskie/malopolskie.poly"
+    },
+    {
+      "bytes": 11578,
+      "path": "data/regions/high-tatras/slovakia.poly",
+      "sha256": "527054d374076434ac0dba8da500bd06ebb34b740e7fafcf59e5fc5993b3a7c7",
+      "url": "https://download.geofabrik.de/europe/slovakia/slovakia.poly"
+    }
+  ]
+}

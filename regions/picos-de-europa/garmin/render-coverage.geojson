@@ -1,0 +1,39 @@
+{
+  "features": [
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              -5.34,
+              42.86
+            ],
+            [
+              -5.34,
+              43.48
+            ],
+            [
+              -4.33,
+              43.48
+            ],
+            [
+              -4.33,
+              42.86
+            ],
+            [
+              -5.34,
+              42.86
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "properties": {
+        "purpose": "Limit opaque native background and land-cover polygons; retain complete accepted OSM and terrain inputs",
+        "region": "picos-de-europa"
+      },
+      "type": "Feature"
+    }
+  ],
+  "type": "FeatureCollection"
+}

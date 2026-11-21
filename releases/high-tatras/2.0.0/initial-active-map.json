@@ -1,0 +1,52 @@
+{
+  "contourIntervalMetres": 20,
+  "coverage": "The High Tatras on both sides of the Polish\u2013Slovak border, including Zakopane, Morskie Oko, \u0160trbsk\u00e9 Pleso, Tatransk\u00e1 Lomnica and the approaches from Poprad.",
+  "datasets": {
+    "basemap": {
+      "bytes": 47263744,
+      "path": "releases/high-tatras/2.0.0/maps/basemap.mbtiles",
+      "sha256": "d6f55f9b3f900007353edf877fff8ba79fad256eb67258a8bf3c2772262470c5",
+      "validation": {
+        "empty_tile_count": 0,
+        "logical_tiles_sha256": "d2a035d7bdee1cba28153778d966a35a35cd6e87f6f4ff845264d5ce326cbc6a",
+        "tile_count": 1913
+      }
+    },
+    "grid": {
+      "bytes": 614400,
+      "path": "releases/high-tatras/2.0.0/maps/grid.mbtiles",
+      "sha256": "b7294e66dc97cadd2da96bdca3fffd6c74605311d4689efb5719463012eabd1e",
+      "validation": {
+        "empty_tile_count": 0,
+        "logical_tiles_sha256": "6ab02baaa1ed1bd420637a7ab3b94625a2db32fd903507b3e02b8555ec0ee7cf",
+        "tile_count": 1895
+      }
+    },
+    "hillshade": {
+      "bytes": 47177728,
+      "path": "releases/high-tatras/2.0.0/maps/hillshade.mbtiles",
+      "sha256": "cd3d8f606e7832e7cfa828288130094d75b6c1216af5b8787cefeb3b6ae73e20",
+      "validation": {
+        "empty_tile_count": 0,
+        "logical_tiles_sha256": "1dd373cc9493048f21d1f9179ddfa8173d1e9ed2efc1e3452e634cc2746fc2fa",
+        "tile_count": 1102
+      }
+    },
+    "topography": {
+      "bytes": 24399872,
+      "path": "releases/high-tatras/2.0.0/maps/topography.mbtiles",
+      "sha256": "e873c544cf4e9e90430ee759d97122b83253056b200620f97e18e58af5903b4c",
+      "validation": {
+        "empty_tile_count": 47914,
+        "logical_tiles_sha256": "ab14f40ceb7968f6c504dc3ce7f50036c40f2aa73645bf95ba86d74da78e7101",
+        "tile_count": 54145
+      }
+    }
+  },
+  "format": "openbaremap-development-viewer-v1",
+  "localBorders": false,
+  "mapVersion": "2.0.0",
+  "region": "high-tatras",
+  "storageRevision": "2.0.0-high-tatras-r1",
+  "styleRevision": "2.0.0-high-tatras-r1"
+}

@@ -1,0 +1,35 @@
+{
+  "bytes": 129334374,
+  "datasets": {
+    "basemap": {
+      "path": "maps/basemap.mbtiles",
+      "sha256": "82dea73d5fab0d10f6fc6673ef2c35df6c84827de5e17120b2b4f637e96c1e3d"
+    },
+    "coast": {
+      "derived_from": "3170452309a6030cf25553d8460ac89a2b5fe0f72dbd8b62b42af985aba0ba37",
+      "maxzoom": 12,
+      "operation": "Preserve land-layer MVT bytes only through zoom 12; omit other layers.",
+      "path": "maps/coast.mbtiles",
+      "sha256": "dd6d6bee1d4ddab11fabcc7b83c4ae6a40ee8a1772d652a2f54a36c8b4281dc5"
+    },
+    "grid": {
+      "path": "maps/grid.mbtiles",
+      "sha256": "3246c7d12899862eb885dd8822a2d4fc0a35e9fabde2fd23d131807e1eef61de"
+    },
+    "hillshade": {
+      "path": "maps/hillshade.mbtiles",
+      "sha256": "72e184bc55df7ea2b61e7b0120ae5f03e10688efdb8e12a7d2da9551c09814b4"
+    },
+    "topography": {
+      "path": "maps/topography.mbtiles",
+      "sha256": "3170452309a6030cf25553d8460ac89a2b5fe0f72dbd8b62b42af985aba0ba37"
+    }
+  },
+  "instructionsSHA256": "0b65ce95364e672da8849bf4b223ee29d27aaec7bb893f28dbcad8422673c8fe",
+  "instructionsURL": "https://downloads.appsbyonzy.dev/OpenBareMap/picos-de-europa/2.0.0/app-bundles-v1/ios/instructions.txt",
+  "localPath": "releases/picos-de-europa/2.0.0/app-bundles-v1/ios/OpenBareMap-Picos-de-Europa-iOS-Bundle.zip",
+  "mapManifestSHA256": "eac1c6d1e1803d3946cfd9007abdfd77fd5a44968e7c1c09c8f8cd9d22b921a3",
+  "r2Key": "OpenBareMap/picos-de-europa/2.0.0/app-bundles-v1/ios/OpenBareMap-Picos-de-Europa-iOS-Bundle.zip",
+  "sha256": "fe9cc55f69e20600ad7ceb4067c17c784152309ddf0f705774414cedc8fef972",
+  "url": "https://downloads.appsbyonzy.dev/OpenBareMap/picos-de-europa/2.0.0/app-bundles-v1/ios/OpenBareMap-Picos-de-Europa-iOS-Bundle.zip"
+}

@@ -1,0 +1,52 @@
+{
+  "contourIntervalMetres": 20,
+  "coverage": "Picos de Europa and its approaches across Asturias, Cantabria and Le\u00f3n, including the Cares Gorge, Covadonga lakes, Fuente D\u00e9, Potes and Ria\u00f1o.",
+  "datasets": {
+    "basemap": {
+      "bytes": 41091072,
+      "path": "releases/picos-de-europa/2.0.0/maps/basemap.mbtiles",
+      "sha256": "82dea73d5fab0d10f6fc6673ef2c35df6c84827de5e17120b2b4f637e96c1e3d",
+      "validation": {
+        "empty_tile_count": 0,
+        "logical_tiles_sha256": "23af38deff70f7978ba607f08f799b6a33e04ba94c02a7b0429d38777e3feda9",
+        "tile_count": 2366
+      }
+    },
+    "grid": {
+      "bytes": 880640,
+      "path": "releases/picos-de-europa/2.0.0/maps/grid.mbtiles",
+      "sha256": "3246c7d12899862eb885dd8822a2d4fc0a35e9fabde2fd23d131807e1eef61de",
+      "validation": {
+        "empty_tile_count": 0,
+        "logical_tiles_sha256": "9d004afdde8f0bd6f4b34dd52f491ef0e6243e5a8d61e0ce0a5a8cc635d4ce6f",
+        "tile_count": 2498
+      }
+    },
+    "hillshade": {
+      "bytes": 31395840,
+      "path": "releases/picos-de-europa/2.0.0/maps/hillshade.mbtiles",
+      "sha256": "72e184bc55df7ea2b61e7b0120ae5f03e10688efdb8e12a7d2da9551c09814b4",
+      "validation": {
+        "empty_tile_count": 0,
+        "logical_tiles_sha256": "8c1e0550618d218f05ebdce73df0ed019d818b1038afb7477ebd5a1045057a10",
+        "tile_count": 829
+      }
+    },
+    "topography": {
+      "bytes": 51847168,
+      "path": "releases/picos-de-europa/2.0.0/maps/topography-context.mbtiles",
+      "sha256": "3170452309a6030cf25553d8460ac89a2b5fe0f72dbd8b62b42af985aba0ba37",
+      "validation": {
+        "empty_tile_count": 25679,
+        "logical_tiles_sha256": "b19df490f3a43b8b3be439d1bc26b8796effc73470064fa6d36dac605ae157cf",
+        "tile_count": 30292
+      }
+    }
+  },
+  "format": "openbaremap-development-viewer-v1",
+  "localBorders": false,
+  "mapVersion": "2.0.0",
+  "region": "picos-de-europa",
+  "storageRevision": "2.0.0-picos-de-europa-r3",
+  "styleRevision": "2.0.0-picos-de-europa-r1"
+}

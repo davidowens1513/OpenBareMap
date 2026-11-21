@@ -1,0 +1,55 @@
+{
+  "accessed_utc": "2026-11-21T18:14:14.551105+00:00",
+  "inputs": [
+    {
+      "bytes": 36788874,
+      "path": "data/regions/picos-de-europa/asturias-261120.osm.pbf",
+      "replicationTimestamp": "2026-11-20T21:21:21Z",
+      "sha256": "8bc435fcd2ad096c99b10a37cd15276d8c1be8c410e38ac477135102a109143f",
+      "url": "https://download.geofabrik.de/europe/spain/asturias/asturias-261120.osm.pbf"
+    },
+    {
+      "bytes": 35776802,
+      "path": "data/regions/picos-de-europa/cantabria-261120.osm.pbf",
+      "replicationTimestamp": "2026-11-20T21:21:21Z",
+      "sha256": "47569d5cc60bbec473abdad0b715cd3e9e542da578054b25e6525e49cd25721e",
+      "url": "https://download.geofabrik.de/europe/spain/cantabria/cantabria-261120.osm.pbf"
+    },
+    {
+      "bytes": 179351684,
+      "path": "data/regions/picos-de-europa/castilla-y-leon-261120.osm.pbf",
+      "replicationTimestamp": "2026-11-20T21:21:21Z",
+      "sha256": "2a7544107af4fe2646d8d0adcb49ae095fe5bd572efcd92f3b16f06a8fb83ca2",
+      "url": "https://download.geofabrik.de/europe/spain/castilla-y-leon/castilla-y-leon-261120.osm.pbf"
+    }
+  ],
+  "osm": {
+    "bytes": 20501316,
+    "operation": "Complete-feature bbox extraction with nested relation references, then libosmium sorted merge; duplicate OSM objects resolved by version",
+    "path": "data/regions/picos-de-europa/picos-de-europa-261120.osm.pbf",
+    "replicationTimestamp": "2026-11-20T21:21:21Z",
+    "sha256": "00f3017d7fba6593a2c0e9d72cb7c1c4d045f748ca4683aaf8ac2dd2b31be282",
+    "snapshot_date": "2026-11-20",
+    "url": null
+  },
+  "polygons": [
+    {
+      "bytes": 4175,
+      "path": "data/regions/picos-de-europa/asturias.poly",
+      "sha256": "1620ede2b4257f299bb7f424c7e87c6cbfb728a617b98ed366bda36453bd9271",
+      "url": "https://download.geofabrik.de/europe/spain/asturias/asturias.poly"
+    },
+    {
+      "bytes": 2863,
+      "path": "data/regions/picos-de-europa/cantabria.poly",
+      "sha256": "64cc9cb3ad43b301eae6d347150de6e529b1a7b9f0af54e7a5dbdcf82f213a5b",
+      "url": "https://download.geofabrik.de/europe/spain/cantabria/cantabria.poly"
+    },
+    {
+      "bytes": 17109,
+      "path": "data/regions/picos-de-europa/castilla-y-leon.poly",
+      "sha256": "fc9642d54860e2297da663d24ec0c4330a2dcb7b4013b6c9ae90a22fac75a76a",
+      "url": "https://download.geofabrik.de/europe/spain/castilla-y-leon/castilla-y-leon.poly"
+    }
+  ]
+}

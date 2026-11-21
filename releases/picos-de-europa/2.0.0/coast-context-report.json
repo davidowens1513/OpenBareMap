@@ -1,0 +1,52 @@
+{
+  "builderSHA256": "df45d47a59e968508a89136d44d799aaf2bba52547b211e0dff68a5b0e0f6cfc",
+  "contextBounds": [
+    -7,
+    41,
+    -3,
+    45
+  ],
+  "note": "Contour payloads preserved exactly while extending land background outside edition coverage.",
+  "oldTopography": {
+    "bytes": 51912704,
+    "path": "releases/picos-de-europa/2.0.0/maps/topography.mbtiles",
+    "sha256": "adf938389dd39e806fee04a154756c2ab90e0b1207788454890b728269e60697",
+    "validation": {
+      "empty_tile_count": 25679,
+      "logical_tiles_sha256": "b19df490f3a43b8b3be439d1bc26b8796effc73470064fa6d36dac605ae157cf",
+      "tile_count": 30292
+    }
+  },
+  "output": {
+    "bytes": 51847168,
+    "path": "releases/picos-de-europa/2.0.0/maps/topography-context.mbtiles",
+    "sha256": "3170452309a6030cf25553d8460ac89a2b5fe0f72dbd8b62b42af985aba0ba37",
+    "validation": {
+      "empty_tile_count": 25679,
+      "logical_tiles_sha256": "b19df490f3a43b8b3be439d1bc26b8796effc73470064fa6d36dac605ae157cf",
+      "tile_count": 30292
+    }
+  },
+  "replacement": {
+    "changed_tiles": 2436,
+    "path": "build/picos-de-europa-coast-context/combined.mbtiles",
+    "replacement_feature_instances": 4892,
+    "sha256": "1a201bf31e4ebadb70774983ceb06ea4e3ab1b6be716cf1ac9d4a44c1681cf02",
+    "unchanged_other_layers_sha256": "daae7b7a4e0efc3630c642845638faec005efe3998562973cb06aa74d66a6395",
+    "validation": {
+      "empty_tile_count": 25679,
+      "logical_tiles_sha256": "b19df490f3a43b8b3be439d1bc26b8796effc73470064fa6d36dac605ae157cf",
+      "tile_count": 30292
+    }
+  },
+  "source": {
+    "accessed_utc": "2026-10-25T12:59:16.751893+00:00",
+    "bytes": 928538219,
+    "http_headers_path": "data/land-polygons.headers",
+    "license": "ODbL 1.0; OpenStreetMap contributors",
+    "path": "data/land-polygons-split-4326.zip",
+    "sha256": "5911e273096f9585425a17c30a8a98785cc33ed2718ff88987768933b8a327f7",
+    "source_snapshot": "HTTP Last-Modified 2026-10-25T03:43:12Z; this is file publication, not a guaranteed OSM snapshot timestamp",
+    "url": "https://osmdata.openstreetmap.de/download/land-polygons-split-4326.zip"
+  }
+}

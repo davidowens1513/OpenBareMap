@@ -1,0 +1,20 @@
+{
+  "inputs": [
+    {
+      "path": "regions/picos-de-europa/garmin/inputs/contours.geojson.gz",
+      "sha256": "fedd29c8af04f65116c53f6c259e0e23394ed59b1adc086caa4305e6dfe2524a",
+      "uncompressedSHA256": "bb06ce1e62e55a54afd8cb81364422d9fc686d01d5bfdcfc20eb819744b30cd5"
+    },
+    {
+      "path": "regions/picos-de-europa/garmin/inputs/landcover.geojson.gz",
+      "sha256": "3ab69099857e16f1e24f354cefff2ff4812464f0f432d891af569622398303bd",
+      "uncompressedSHA256": "c7d6b43fbef39e1c92a2be1f9754c3d1d2b0e52918656bc2eab66fb43c75ca31"
+    },
+    {
+      "path": "regions/picos-de-europa/garmin/inputs/land.geojson.gz",
+      "sha256": "7fd7b4d19b39599f367ff9c64deffa440f6f93fd36e1341dc8fe9dc6c0637c11",
+      "uncompressedSHA256": "e07eb9e05aca83d6e960f912e6e6f1d3bd454003dc98d7f4787b5f6c9ee64df0"
+    }
+  ],
+  "region": "picos-de-europa"
+}

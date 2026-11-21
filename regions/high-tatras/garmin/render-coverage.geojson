@@ -1,0 +1,39 @@
+{
+  "features": [
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              19.68,
+              48.94
+            ],
+            [
+              19.68,
+              49.44
+            ],
+            [
+              20.5,
+              49.44
+            ],
+            [
+              20.5,
+              48.94
+            ],
+            [
+              19.68,
+              48.94
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "properties": {
+        "purpose": "Limit opaque native background and land-cover polygons; retain complete accepted OSM and terrain inputs",
+        "region": "high-tatras"
+      },
+      "type": "Feature"
+    }
+  ],
+  "type": "FeatureCollection"
+}

@@ -1,0 +1,106 @@
+{
+  "acceptance": "Automated checks only; see validation and visual-review records for actual reviewed scope.",
+  "coverage": "Picos de Europa and its approaches across Asturias, Cantabria and Le\u00f3n, including the Cares Gorge, Covadonga lakes, Fuente D\u00e9, Potes and Ria\u00f1o.",
+  "datasets": {
+    "basemap": {
+      "bytes": 41091072,
+      "path": "releases/picos-de-europa/2.0.0/maps/basemap.mbtiles",
+      "sha256": "82dea73d5fab0d10f6fc6673ef2c35df6c84827de5e17120b2b4f637e96c1e3d",
+      "validation": {
+        "empty_tile_count": 0,
+        "logical_tiles_sha256": "23af38deff70f7978ba607f08f799b6a33e04ba94c02a7b0429d38777e3feda9",
+        "tile_count": 2366
+      }
+    },
+    "grid": {
+      "bytes": 880640,
+      "path": "releases/picos-de-europa/2.0.0/maps/grid.mbtiles",
+      "sha256": "3246c7d12899862eb885dd8822a2d4fc0a35e9fabde2fd23d131807e1eef61de",
+      "validation": {
+        "empty_tile_count": 0,
+        "logical_tiles_sha256": "9d004afdde8f0bd6f4b34dd52f491ef0e6243e5a8d61e0ce0a5a8cc635d4ce6f",
+        "tile_count": 2498
+      }
+    },
+    "hillshade": {
+      "bytes": 31395840,
+      "path": "releases/picos-de-europa/2.0.0/maps/hillshade.mbtiles",
+      "sha256": "72e184bc55df7ea2b61e7b0120ae5f03e10688efdb8e12a7d2da9551c09814b4",
+      "validation": {
+        "empty_tile_count": 0,
+        "logical_tiles_sha256": "8c1e0550618d218f05ebdce73df0ed019d818b1038afb7477ebd5a1045057a10",
+        "tile_count": 829
+      }
+    },
+    "topography": {
+      "bytes": 51847168,
+      "path": "releases/picos-de-europa/2.0.0/maps/topography-context.mbtiles",
+      "sha256": "3170452309a6030cf25553d8460ac89a2b5fe0f72dbd8b62b42af985aba0ba37",
+      "validation": {
+        "empty_tile_count": 25679,
+        "logical_tiles_sha256": "b19df490f3a43b8b3be439d1bc26b8796effc73470064fa6d36dac605ae157cf",
+        "tile_count": 30292
+      }
+    }
+  },
+  "garmin": {
+    "bytes": 24780800,
+    "path": "regions/picos-de-europa/garmin/dist/OpenBareMap-Picos-de-Europa.img",
+    "sha256": "3501850d6ece60a1ae0bd8442c254f1d99010a44ff6f852ba1a827ab6892bdab"
+  },
+  "geometryReport": {
+    "path": "build/picos-de-europa-geometry/geometry-report.json",
+    "sha256": "81caac9e515aea32d38a4c8e2ab6853756733e5ae37ef78e2d6b840c7ee43898"
+  },
+  "hostAppsModified": false,
+  "mapVersion": "2.0.0",
+  "osm": {
+    "bytes": 20501316,
+    "operation": "Complete-feature bbox extraction with nested relation references, then libosmium sorted merge; duplicate OSM objects resolved by version",
+    "path": "data/regions/picos-de-europa/picos-de-europa-261120.osm.pbf",
+    "replicationTimestamp": "2026-11-20T21:21:21Z",
+    "sha256": "00f3017d7fba6593a2c0e9d72cb7c1c4d045f748ca4683aaf8ac2dd2b31be282",
+    "snapshot_date": "2026-11-20",
+    "url": null
+  },
+  "packages": {
+    "android": {
+      "archive": {
+        "bytes": 129305507,
+        "path": "regions/picos-de-europa/android/OpenBareMap-Android.zip",
+        "sha256": "56e0f3d75e33e50d78111c01b1e2a6cf8e8875ac42de3fd42c9b8be00eee741a"
+      },
+      "checksumsSHA256": "7c5fa5b8df83cb70f77c922c58d6cb4e1092554de287f56cfd2faaeacb2bf014",
+      "manifestSHA256": "3d754060d0a600ca5580ac0cff4059372cb3cad0896d1c9a89879c2f3bfd1668",
+      "path": "regions/picos-de-europa/android",
+      "validationSHA256": "c5c2bdf73a3c517e29fd9e66e6b7b50add3d3b1144aff860b0d614410644bcbd"
+    },
+    "ios": {
+      "checksumsSHA256": "09a8bbf730cf1e0f91125f459fcadc3007f31b3976ed82147a0c34695328302e",
+      "manifestSHA256": "eac1c6d1e1803d3946cfd9007abdfd77fd5a44968e7c1c09c8f8cd9d22b921a3",
+      "path": "regions/picos-de-europa/ios",
+      "validationSHA256": "ad5a5be4690e8dfb33308b7446d7dcfda51ad1d9013203c9ca07b484ef92f7e9"
+    }
+  },
+  "pythonRuntime": {
+    "packages": {
+      "Pillow": "12.3.0",
+      "certifi": "2026.10.23",
+      "charset-normalizer": "3.5.2",
+      "idna": "3.20",
+      "numpy": "2.5.4",
+      "osmium": "4.3.2",
+      "pyproj": "3.8.0",
+      "requests": "2.34.2",
+      "shapely": "2.2.0",
+      "urllib3": "2.8.0"
+    },
+    "platform": "macOS-27.2.1-arm64-arm-64bit-Mach-O",
+    "python": "3.14.5 (main, May 10 2026, 10:21:34) [Clang 21.0.0 (clang-2100.0.123.102)]",
+    "requirementsSHA256": "427f12ff8b49bfebac0a7d453c2f65bd15d6695584b18e6ecee1fdfeed20a36c"
+  },
+  "region": "picos-de-europa",
+  "styleSHA256": "cc5e46184a19c7d79b0d01624b9aeeaef04f6ee9f2d31dabb55d304bfbbc5ea1",
+  "terrainLockSHA256": "db964089dbddaceb38661f0ef3186ca62d2e28106d33c488fbfb21b5d486efc4",
+  "validation": "validation.json"
+}

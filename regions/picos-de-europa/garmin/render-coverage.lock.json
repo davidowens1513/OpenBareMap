@@ -1,0 +1,86 @@
+{
+  "bounds": [
+    -5.34,
+    42.86,
+    -4.33,
+    43.48
+  ],
+  "contextEnvelope": [
+    -5.34,
+    42.86,
+    -4.33,
+    43.48
+  ],
+  "drawPriority": 25,
+  "format": "openbaremap-garmin-render-footprint-v1",
+  "geometry": {
+    "bytes": 748,
+    "path": "regions/picos-de-europa/garmin/render-coverage.geojson",
+    "sha256": "012b77306d39ff0ac12c8590e3cd5865462c49629de69a9fb06f4f9cfc08ca86"
+  },
+  "inputs": [
+    {
+      "bytes": 4175,
+      "path": "data/regions/picos-de-europa/asturias.poly",
+      "sha256": "1620ede2b4257f299bb7f424c7e87c6cbfb728a617b98ed366bda36453bd9271",
+      "url": "https://download.geofabrik.de/europe/spain/asturias/asturias.poly"
+    },
+    {
+      "bytes": 2863,
+      "path": "data/regions/picos-de-europa/cantabria.poly",
+      "sha256": "64cc9cb3ad43b301eae6d347150de6e529b1a7b9f0af54e7a5dbdcf82f213a5b",
+      "url": "https://download.geofabrik.de/europe/spain/cantabria/cantabria.poly"
+    },
+    {
+      "bytes": 17109,
+      "path": "data/regions/picos-de-europa/castilla-y-leon.poly",
+      "sha256": "fc9642d54860e2297da663d24ec0c4330a2dcb7b4013b6c9ae90a22fac75a76a",
+      "url": "https://download.geofabrik.de/europe/spain/castilla-y-leon/castilla-y-leon.poly"
+    }
+  ],
+  "knownDestinationsCovered": {
+    "bulnes": [
+      -4.819,
+      43.234
+    ],
+    "cangas-de-onis": [
+      -5.128,
+      43.351
+    ],
+    "cares-gorge": [
+      -4.90524,
+      43.21337
+    ],
+    "covadonga-lakes": [
+      -4.978,
+      43.271
+    ],
+    "fuente-de": [
+      -4.811,
+      43.144
+    ],
+    "poncebos": [
+      -4.8314,
+      43.26178
+    ],
+    "posada-de-valdeon": [
+      -4.921,
+      43.152
+    ],
+    "potes": [
+      -4.623,
+      43.154
+    ],
+    "riano": [
+      -5.009,
+      42.974
+    ],
+    "urriellu": [
+      -4.8177,
+      43.20083
+    ]
+  },
+  "purpose": "Rectangular Garmin tiles may overlap other countries. Do not fill their padding with sea, land or land-cover polygons.",
+  "region": "picos-de-europa",
+  "transparentNativeMap": true
+}

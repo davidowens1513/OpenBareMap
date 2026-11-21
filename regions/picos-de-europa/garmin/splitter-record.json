@@ -1,0 +1,21 @@
+{
+  "combinedSHA256": "b2f48e002528d7ee43e195c6289ff957e897e7e4c31a01ffe46cf72a301ab037",
+  "command": [
+    "/opt/homebrew/opt/openjdk@21/libexec/openjdk.jdk/Contents/Home/bin/java",
+    "-Xmx6g",
+    "-jar",
+    "/Volumes/Extreme SSD/Projects/OpenBareMap/garmin/tools/splitter-r654/splitter.jar",
+    "--mapid=48640001",
+    "--description=OpenBareMap Picos de Europa",
+    "--max-nodes=1000000",
+    "--max-threads=2",
+    "--keep-complete=true",
+    "--output=pbf",
+    "--polygon-file=/Volumes/Extreme SSD/Projects/OpenBareMap/regions/picos-de-europa/garmin/coverage.poly",
+    "--output-dir=/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/906ead9d53a7/picos-de-europa/garmin/split",
+    "--ignore-osm-bounds=true",
+    "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/906ead9d53a7/picos-de-europa/garmin/combined.osm.pbf"
+  ],
+  "coverageSHA256": "29ae0c4a057671c2feaf9368de8765d499cdc99162d69c7ffcf5b2689c7dadb0",
+  "ignoreSourceHeaderBounds": true
+}

@@ -1,0 +1,41 @@
+{
+  "regions": {
+    "picos-de-europa": {
+      "basemap": {
+        "sourceSHA256": "82dea73d5fab0d10f6fc6673ef2c35df6c84827de5e17120b2b4f637e96c1e3d",
+        "bytes": 39295258,
+        "sha256": "63634f24b560df08e5777cc1533db4718f76d748b44d8931a14c99674e5cd660",
+        "tiles": 2366
+      },
+      "grid": {
+        "sourceSHA256": "3246c7d12899862eb885dd8822a2d4fc0a35e9fabde2fd23d131807e1eef61de",
+        "bytes": 745012,
+        "sha256": "318f4534a06e7314a2f76ea7bc16d3505298469ff19372eb96ef2cd01234a854",
+        "tiles": 2498
+      },
+      "hillshade": {
+        "sourceSHA256": "72e184bc55df7ea2b61e7b0120ae5f03e10688efdb8e12a7d2da9551c09814b4",
+        "bytes": 30691585,
+        "sha256": "f60bf3b849ab186e7fb157e771c6c7dc44e3ab6e4d027dc3eedd5da44b557ea8",
+        "tiles": 829
+      },
+      "topography": {
+        "sourceSHA256": "3170452309a6030cf25553d8460ac89a2b5fe0f72dbd8b62b42af985aba0ba37",
+        "bytes": 48401734,
+        "sha256": "1e9575cc2e04c7a544f775eb64121709d7122bb77a565f23280bbccddcac1bbd",
+        "tiles": 30292
+      },
+      "coast": {
+        "sourceSHA256": "dd6d6bee1d4ddab11fabcc7b83c4ae6a40ee8a1772d652a2f54a36c8b4281dc5",
+        "bytes": 217763,
+        "sha256": "89f7ce14ec57fa706063ef8efd82b8485eafe0f20534418a5948a38808c5a5b6",
+        "tiles": 2503
+      }
+    }
+  },
+  "pmtilesPython": "3.8.1",
+  "pmtilesJS": "4.5.0",
+  "librarySHA256": "caf981bc46f6327ee7e65d5dc964d89d38a69f60edca2bd4c5c890c21b554c6c",
+  "dataOrigin": "https://downloads.appsbyonzy.dev/OpenBareMap/picos-de-europa/2.0.0/preview",
+  "scope": "Complete selected map tiles; no regional or zoom sampling."
+}

@@ -1,0 +1,20 @@
+{
+  "inputs": [
+    {
+      "path": "regions/high-tatras/garmin/inputs/contours.geojson.gz",
+      "sha256": "7c2b433ebd0e5e5aebb289656852565b38b4548a430d7517ce1d051de1f90b2d",
+      "uncompressedSHA256": "128a9a6688230a618a5ba7b312714fdbbd4c581fb6ecc140bcfd925ea96c36d4"
+    },
+    {
+      "path": "regions/high-tatras/garmin/inputs/landcover.geojson.gz",
+      "sha256": "ff37f61388fd44d74dd6245d2561585ba14506c0c7fb36531c6f887abaabd2bd",
+      "uncompressedSHA256": "83277f3389c4fd898445734dc41275e2baf9edb3f25491e1c202ee95c11eae32"
+    },
+    {
+      "path": "regions/high-tatras/garmin/inputs/land.geojson.gz",
+      "sha256": "5231fddc78ef06863d06bb83982dad0ec7760f762605829a79bb0b79dcc33b32",
+      "uncompressedSHA256": "00f3449a3a61b21f501b6ea353289753e89b36ae281e6959342ab5965546c9f7"
+    }
+  ],
+  "region": "high-tatras"
+}
