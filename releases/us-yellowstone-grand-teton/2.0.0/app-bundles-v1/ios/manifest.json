@@ -1,0 +1,35 @@
+{
+  "bytes": 384306949,
+  "datasets": {
+    "basemap": {
+      "path": "maps/basemap.mbtiles",
+      "sha256": "69bd3010e3d95be803065576e17198a43b463e29a1ec6abc281af262fcca8f30"
+    },
+    "coast": {
+      "derived_from": "52139ac2ccedbfa356598a9b7ecda5697e7d20215813cfcc3d88d97717793c5a",
+      "maxzoom": 12,
+      "operation": "Preserve land-layer MVT bytes only through zoom 12; omit other layers.",
+      "path": "maps/coast.mbtiles",
+      "sha256": "0f6ba70fb1857c04e87adf29c9543f42c871e7e484ed6a3ca64fb2939db06b93"
+    },
+    "grid": {
+      "path": "maps/grid.mbtiles",
+      "sha256": "559128df29402b90df47b6f5e64ed7c18cb6dca80fc4722b62483569503393c2"
+    },
+    "hillshade": {
+      "path": "maps/hillshade.mbtiles",
+      "sha256": "b44068bb5bf694392a1765b5336d84ae7a039dc1280ea4c3dbf42af49673199b"
+    },
+    "topography": {
+      "path": "maps/topography.mbtiles",
+      "sha256": "52139ac2ccedbfa356598a9b7ecda5697e7d20215813cfcc3d88d97717793c5a"
+    }
+  },
+  "instructionsSHA256": "97711fc7b9a056070430fc91b0f4ad41a954152d1640b0a2c56aac76aff5ef63",
+  "instructionsURL": "https://downloads.appsbyonzy.dev/OpenBareMap/us-yellowstone-grand-teton/2.0.0/app-bundles-v1/ios/instructions.txt",
+  "localPath": "releases/us-yellowstone-grand-teton/2.0.0/app-bundles-v1/ios/OpenBareMap-Yellowstone-Grand-Teton-iOS-Bundle.zip",
+  "mapManifestSHA256": "542666c99602b87a2391141df244dd29333af8baaa8efee98c076d8d461f3dd3",
+  "r2Key": "OpenBareMap/us-yellowstone-grand-teton/2.0.0/app-bundles-v1/ios/OpenBareMap-Yellowstone-Grand-Teton-iOS-Bundle.zip",
+  "sha256": "fcd11167456526ac5109869aae676f12e040c39c92a4e93fd84363e600a5d642",
+  "url": "https://downloads.appsbyonzy.dev/OpenBareMap/us-yellowstone-grand-teton/2.0.0/app-bundles-v1/ios/OpenBareMap-Yellowstone-Grand-Teton-iOS-Bundle.zip"
+}

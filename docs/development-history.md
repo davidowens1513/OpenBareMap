@@ -2,6 +2,19 @@
 
 This document records the development of OpenBareMap and the structure of its build pipeline. The [main README](../README.md) describes the available map and platform packages.
 
+## US National Parks
+
+Nine editions cover ten parks. Each combines a dated Geofabrik OSM extract,
+the National Park Service boundary and a buffer for trailheads and road
+approaches. Copernicus GLO-30 elevation supplies 20 m contours, hillshade and
+Garmin DEM data. The park boundary and offline coverage boundary appear as
+separate overlays. The preview and BareGPS Worldwide catalogue use each
+edition's actual coverage polygon.
+
+The [US National Parks release workflow](regional-editions.md#us-national-parks)
+records the source date, reserved Garmin identities and steps to stage and
+verify the downloads, previews and catalogues.
+
 ## Alps editions
 
 Four new editions extend the range from the Maritime Alps and Mont Blanc to

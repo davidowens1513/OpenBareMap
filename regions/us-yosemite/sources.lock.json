@@ -1,0 +1,29 @@
+{
+  "accessed_utc": "2026-11-21T11:31:24.824628+00:00",
+  "inputs": [
+    {
+      "bytes": 1337233784,
+      "path": "data/regions/us-national-parks/california-261120.osm.pbf",
+      "replicationTimestamp": "2026-11-20T21:21:21Z",
+      "sha256": "c3a8ccf0388189836cbfd7a4118145b5c7cefd49caf8a8e975c27550356a56ea",
+      "url": "https://download.geofabrik.de/north-america/us/california/california-261120.osm.pbf"
+    }
+  ],
+  "osm": {
+    "bytes": 18403376,
+    "operation": "Complete-feature bbox extraction with nested relation references",
+    "path": "data/regions/us-yosemite/california-261120.osm.clipped.osm.pbf",
+    "replicationTimestamp": "2026-11-20T21:21:21Z",
+    "sha256": "77e86308f72054083b662532c46f95d6e3e208e7e20b86d99cdb9e1e33dc69b1",
+    "snapshot_date": "2026-11-20",
+    "url": "https://download.geofabrik.de/north-america/us/california/california-261120.osm.pbf"
+  },
+  "polygons": [
+    {
+      "bytes": 2767,
+      "path": "data/regions/us-yosemite/california.poly",
+      "sha256": "5c1531044f1559a584f1435035d7bc7a81c0a72a33677f422e9fb64b2c91fcbf",
+      "url": "https://download.geofabrik.de/north-america/us/california/california.poly"
+    }
+  ]
+}

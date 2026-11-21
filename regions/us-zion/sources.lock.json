@@ -1,0 +1,29 @@
+{
+  "accessed_utc": "2026-11-21T12:04:33.933343+00:00",
+  "inputs": [
+    {
+      "bytes": 172154159,
+      "path": "data/regions/us-national-parks/utah-261120.osm.pbf",
+      "replicationTimestamp": "2026-11-20T21:21:21Z",
+      "sha256": "0b29c5a5b688241150bf02c88885f805d218ab957f0975be2800883512d8c63c",
+      "url": "https://download.geofabrik.de/north-america/us/utah/utah-261120.osm.pbf"
+    }
+  ],
+  "osm": {
+    "bytes": 4451692,
+    "operation": "Complete-feature bbox extraction with nested relation references",
+    "path": "data/regions/us-zion/utah-261120.osm.clipped.osm.pbf",
+    "replicationTimestamp": "2026-11-20T21:21:21Z",
+    "sha256": "3f5168835e2e73066a57395f210a09ce0f3814e25911b9824220d097be7c58dd",
+    "snapshot_date": "2026-11-20",
+    "url": "https://download.geofabrik.de/north-america/us/utah/utah-261120.osm.pbf"
+  },
+  "polygons": [
+    {
+      "bytes": 943,
+      "path": "data/regions/us-zion/utah.poly",
+      "sha256": "186ff0b720f65a9032df6a8afe472b4b556ae6964f486fe7cae09d2d7e0d7975",
+      "url": "https://download.geofabrik.de/north-america/us/utah/utah.poly"
+    }
+  ]
+}

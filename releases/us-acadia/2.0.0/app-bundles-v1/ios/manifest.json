@@ -1,0 +1,35 @@
+{
+  "bytes": 30501345,
+  "datasets": {
+    "basemap": {
+      "path": "maps/basemap.mbtiles",
+      "sha256": "18a8d081ec4a40b3f657712f83444350eabe6b00906259f83aa0c40c53b31d84"
+    },
+    "coast": {
+      "derived_from": "eca1eebb7707f383e3795e327b936d12cb2cbe960e26b59f303186bbee7c50bd",
+      "maxzoom": 12,
+      "operation": "Preserve land-layer MVT bytes only through zoom 12; omit other layers.",
+      "path": "maps/coast.mbtiles",
+      "sha256": "08125bf49bae02910921eecbc2d9e83873a3038da554573d1122d91d0264d1a1"
+    },
+    "grid": {
+      "path": "maps/grid.mbtiles",
+      "sha256": "c67a1e9b3f725933dafdf47e6da59a3514d09e02eb30810499b5ffc21f83d1b2"
+    },
+    "hillshade": {
+      "path": "maps/hillshade.mbtiles",
+      "sha256": "1977dd3938dc868a071c4f72d89834390820754942040eef8805b728ff494d16"
+    },
+    "topography": {
+      "path": "maps/topography.mbtiles",
+      "sha256": "eca1eebb7707f383e3795e327b936d12cb2cbe960e26b59f303186bbee7c50bd"
+    }
+  },
+  "instructionsSHA256": "62358cc793f7b736aeb603155287c9d0232039f4aa8e1abd3fc785089caa78f5",
+  "instructionsURL": "https://downloads.appsbyonzy.dev/OpenBareMap/us-acadia/2.0.0/app-bundles-v1/ios/instructions.txt",
+  "localPath": "releases/us-acadia/2.0.0/app-bundles-v1/ios/OpenBareMap-Acadia-iOS-Bundle.zip",
+  "mapManifestSHA256": "78ddb025c06016d3394c9a9f4840bdcc427879f927431bf7bb8ab2f56046fe08",
+  "r2Key": "OpenBareMap/us-acadia/2.0.0/app-bundles-v1/ios/OpenBareMap-Acadia-iOS-Bundle.zip",
+  "sha256": "b4e6fa4a8ab7252d04271cefd8d8d67a4b1af1883865c3a2005cc5cd9c59c8ad",
+  "url": "https://downloads.appsbyonzy.dev/OpenBareMap/us-acadia/2.0.0/app-bundles-v1/ios/OpenBareMap-Acadia-iOS-Bundle.zip"
+}

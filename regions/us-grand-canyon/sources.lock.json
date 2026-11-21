@@ -1,0 +1,55 @@
+{
+  "accessed_utc": "2026-11-21T12:02:28.723401+00:00",
+  "inputs": [
+    {
+      "bytes": 305879234,
+      "path": "data/regions/us-national-parks/arizona-261120.osm.pbf",
+      "replicationTimestamp": "2026-11-20T21:21:21Z",
+      "sha256": "38f4dac7a0761289445b6046c4fde88aa1a4a753d27e6eee3ba3da7d172c183d",
+      "url": "https://download.geofabrik.de/north-america/us/arizona/arizona-261120.osm.pbf"
+    },
+    {
+      "bytes": 172154159,
+      "path": "data/regions/us-national-parks/utah-261120.osm.pbf",
+      "replicationTimestamp": "2026-11-20T21:21:21Z",
+      "sha256": "0b29c5a5b688241150bf02c88885f805d218ab957f0975be2800883512d8c63c",
+      "url": "https://download.geofabrik.de/north-america/us/utah/utah-261120.osm.pbf"
+    },
+    {
+      "bytes": 124270243,
+      "path": "data/regions/us-national-parks/nevada-261120.osm.pbf",
+      "replicationTimestamp": "2026-11-20T21:21:21Z",
+      "sha256": "255731fb7341d4d8ca8e0bd64330ebcded934690c799f1efddb263aa7c24aeb3",
+      "url": "https://download.geofabrik.de/north-america/us/nevada/nevada-261120.osm.pbf"
+    }
+  ],
+  "osm": {
+    "bytes": 24068008,
+    "operation": "Complete-feature bbox extraction with nested relation references, then libosmium sorted merge; duplicate OSM objects resolved by version",
+    "path": "data/regions/us-grand-canyon/us-grand-canyon-261120.osm.pbf",
+    "replicationTimestamp": "2026-11-20T21:21:21Z",
+    "sha256": "7a63995784d0f4f56e7764bed17e680a7c0ba18280f0b0a348fa43642b25db84",
+    "snapshot_date": "2026-11-20",
+    "url": null
+  },
+  "polygons": [
+    {
+      "bytes": 8527,
+      "path": "data/regions/us-grand-canyon/arizona.poly",
+      "sha256": "6b51b0ad2601cf92480063a9f334066a951baa223c1daa0b137ce64f004177a1",
+      "url": "https://download.geofabrik.de/north-america/us/arizona/arizona.poly"
+    },
+    {
+      "bytes": 943,
+      "path": "data/regions/us-grand-canyon/utah.poly",
+      "sha256": "186ff0b720f65a9032df6a8afe472b4b556ae6964f486fe7cae09d2d7e0d7975",
+      "url": "https://download.geofabrik.de/north-america/us/utah/utah.poly"
+    },
+    {
+      "bytes": 4367,
+      "path": "data/regions/us-grand-canyon/nevada.poly",
+      "sha256": "e9285bcee0de758c7211ca7431ac96b0d0b53b42a6bf33be4c23668120ba358b",
+      "url": "https://download.geofabrik.de/north-america/us/nevada/nevada.poly"
+    }
+  ]
+}

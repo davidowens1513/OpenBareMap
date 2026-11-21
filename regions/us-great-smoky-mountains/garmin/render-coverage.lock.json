@@ -1,0 +1,53 @@
+{
+  "bounds": [
+    -84.16821700148407,
+    35.30279173610813,
+    -82.84364186512006,
+    35.967431866368976
+  ],
+  "contextEnvelope": [
+    -84.16821700148407,
+    35.30279173610813,
+    -82.84364186512006,
+    35.967431866368976
+  ],
+  "drawPriority": 25,
+  "format": "openbaremap-garmin-render-footprint-v1",
+  "geometry": {
+    "bytes": 24739,
+    "path": "regions/us-great-smoky-mountains/garmin/render-coverage.geojson",
+    "sha256": "9eebf0ccdf05a4d99cfe64efc2566a629a4bbf451881e37582de47601aed6897"
+  },
+  "inputs": [
+    {
+      "path": "regions/us-great-smoky-mountains/coverage.geojson",
+      "purpose": "Exact official park plus 25 km footprint; not its rectangular tile envelope",
+      "sha256": "d5a9c9bd9dabbfc8fdbda4582c6c3fc2aeffc39d3a66c1747072246848fc2483"
+    }
+  ],
+  "knownDestinationsCovered": {
+    "cades-cove": [
+      -83.842,
+      35.596
+    ],
+    "cherokee": [
+      -83.32,
+      35.478
+    ],
+    "gatlinburg": [
+      -83.51,
+      35.714
+    ],
+    "newfound-gap": [
+      -83.424,
+      35.612
+    ],
+    "townsend": [
+      -83.755,
+      35.676
+    ]
+  },
+  "purpose": "Rectangular Garmin tiles may overlap other countries. Do not fill their padding with sea, land or land-cover polygons.",
+  "region": "us-great-smoky-mountains",
+  "transparentNativeMap": true
+}

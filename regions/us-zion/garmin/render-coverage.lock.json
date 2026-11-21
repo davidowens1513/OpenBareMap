@@ -1,0 +1,49 @@
+{
+  "bounds": [
+    -113.38648267382872,
+    37.0152023869262,
+    -112.70546114659571,
+    37.63042227584585
+  ],
+  "contextEnvelope": [
+    -113.38648267382872,
+    37.0152023869262,
+    -112.70546114659571,
+    37.63042227584585
+  ],
+  "drawPriority": 25,
+  "format": "openbaremap-garmin-render-footprint-v1",
+  "geometry": {
+    "bytes": 15100,
+    "path": "regions/us-zion/garmin/render-coverage.geojson",
+    "sha256": "8c69f26bc8336b5c29dc33e84efaf29bfb06048d8003d375ad3325f76e0667bd"
+  },
+  "inputs": [
+    {
+      "path": "regions/us-zion/coverage.geojson",
+      "purpose": "Exact official park plus 25 km footprint; not its rectangular tile envelope",
+      "sha256": "291777a2c44f95425d2532efe335bd89a0340507fe223c3e8ca5fab7567fc594"
+    }
+  ],
+  "knownDestinationsCovered": {
+    "east-entrance": [
+      -112.879,
+      37.234
+    ],
+    "kolob-canyons": [
+      -113.189,
+      37.452
+    ],
+    "springdale": [
+      -112.998,
+      37.189
+    ],
+    "zion-canyon": [
+      -112.998,
+      37.25
+    ]
+  },
+  "purpose": "Rectangular Garmin tiles may overlap other countries. Do not fill their padding with sea, land or land-cover polygons.",
+  "region": "us-zion",
+  "transparentNativeMap": true
+}

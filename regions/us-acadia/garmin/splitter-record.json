@@ -1,0 +1,21 @@
+{
+  "combinedSHA256": "0b258d01f9e558a9b36911ca654d437305bcff164f99f77c4ce53c0f75332d2a",
+  "command": [
+    "/opt/homebrew/opt/openjdk@21/libexec/openjdk.jdk/Contents/Home/bin/java",
+    "-Xmx6g",
+    "-jar",
+    "/Volumes/Extreme SSD/Projects/OpenBareMap/garmin/tools/splitter-r654/splitter.jar",
+    "--mapid=48610001",
+    "--description=OpenBareMap Acadia",
+    "--max-nodes=1000000",
+    "--max-threads=2",
+    "--keep-complete=true",
+    "--output=pbf",
+    "--polygon-file=/Volumes/Extreme SSD/Projects/OpenBareMap/regions/us-acadia/garmin/coverage.poly",
+    "--output-dir=/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/906ead9d53a7/us-acadia/garmin/split",
+    "--ignore-osm-bounds=true",
+    "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/906ead9d53a7/us-acadia/garmin/combined.osm.pbf"
+  ],
+  "coverageSHA256": "46122496c35f8caba39c292199adf300425202d6f993213e915986789a480388",
+  "ignoreSourceHeaderBounds": true
+}

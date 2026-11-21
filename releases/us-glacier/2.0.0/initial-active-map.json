@@ -1,0 +1,52 @@
+{
+  "contourIntervalMetres": 20,
+  "coverage": "Glacier National Park in Montana, Going-to-the-Sun Road and the east and west gateway towns.",
+  "datasets": {
+    "basemap": {
+      "bytes": 22200320,
+      "path": "releases/us-glacier/2.0.0/maps/basemap.mbtiles",
+      "sha256": "feb35ce17f884dc0d3770feb98b571724f59d0aebac9375808a331417708d495",
+      "validation": {
+        "empty_tile_count": 40,
+        "logical_tiles_sha256": "8b1f29e75dc4004a6f74a86476d345a0665821ca38714d7a9918c4670783b6fe",
+        "tile_count": 6469
+      }
+    },
+    "grid": {
+      "bytes": 2179072,
+      "path": "releases/us-glacier/2.0.0/maps/grid.mbtiles",
+      "sha256": "7b6f7a769bd7761febccd16d71c43690c6e5304ce4fac9e7f793eb46f8c58b59",
+      "validation": {
+        "empty_tile_count": 0,
+        "logical_tiles_sha256": "fdf322cc293ba926578ad3401f5ff23ffb71220e842acf89e3b4113dc053b477",
+        "tile_count": 6357
+      }
+    },
+    "hillshade": {
+      "bytes": 45858816,
+      "path": "releases/us-glacier/2.0.0/maps/hillshade.mbtiles",
+      "sha256": "ce4cc534a008ba42659ef44b835040ebf684b9452dbb225e7c220f5f1dfd987e",
+      "validation": {
+        "empty_tile_count": 0,
+        "logical_tiles_sha256": "956bac7e3c9b23f61c6817b7d9617b32d87789b70084f3d5108443420c6a8c2b",
+        "tile_count": 1167
+      }
+    },
+    "topography": {
+      "bytes": 87584768,
+      "path": "releases/us-glacier/2.0.0/maps/topography.mbtiles",
+      "sha256": "92dd53903b143da170b770c48446f251062f2bb21a322d525b53f4c6e2b02077",
+      "validation": {
+        "empty_tile_count": 48099,
+        "logical_tiles_sha256": "0f0032df15c506630f4db7d32db9de498a27b540bbadf8007713778a21a76fca",
+        "tile_count": 58468
+      }
+    }
+  },
+  "format": "openbaremap-development-viewer-v1",
+  "localBorders": false,
+  "mapVersion": "2.0.0",
+  "region": "us-glacier",
+  "storageRevision": "2.0.0-us-glacier-r1",
+  "styleRevision": "2.0.0-us-glacier-r1"
+}

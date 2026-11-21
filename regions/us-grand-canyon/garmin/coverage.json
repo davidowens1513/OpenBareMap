@@ -1,0 +1,42 @@
+{
+  "areaSquareDegrees": 2.243481297586594,
+  "bounds": [
+    -114.13527634550448,
+    35.62393484654474,
+    -111.42998838774946,
+    36.99182469575425
+  ],
+  "entireRequestedFootprintCovered": true,
+  "exactFootprint": "regions/us-grand-canyon/coverage.geojson",
+  "inputs": [
+    {
+      "bytes": 8527,
+      "path": "data/regions/us-grand-canyon/arizona.poly",
+      "sha256": "6b51b0ad2601cf92480063a9f334066a951baa223c1daa0b137ce64f004177a1",
+      "url": "https://download.geofabrik.de/north-america/us/arizona/arizona.poly"
+    },
+    {
+      "bytes": 943,
+      "path": "data/regions/us-grand-canyon/utah.poly",
+      "sha256": "186ff0b720f65a9032df6a8afe472b4b556ae6964f486fe7cae09d2d7e0d7975",
+      "url": "https://download.geofabrik.de/north-america/us/utah/utah.poly"
+    },
+    {
+      "bytes": 4367,
+      "path": "data/regions/us-grand-canyon/nevada.poly",
+      "sha256": "e9285bcee0de758c7211ca7431ac96b0d0b53b42a6bf33be4c23668120ba358b",
+      "url": "https://download.geofabrik.de/north-america/us/nevada/nevada.poly"
+    }
+  ],
+  "knownDestinationsCovered": [
+    "desert-view",
+    "island",
+    "jacob-lake",
+    "north-rim",
+    "south-rim",
+    "tusayan"
+  ],
+  "operation": "Requested rectangular crop; source outlines cover all destination anchors",
+  "polygons": 1,
+  "sha256": "84ba7295042622572895bdca9a7b3b69482ba16ca61391d41b409f2054d80769"
+}

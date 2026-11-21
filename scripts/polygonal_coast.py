@@ -16,13 +16,24 @@ def polygon_parts(geometry):
         return []
     raise ValueError('Unexpected coastal geometry type: ' + kind)
 
-def polygonal_coast(path):
+def polygonal_coast(path, *, repair_invalid=False):
+    if repair_invalid:
+        from shapely import make_valid
+        from shapely.geometry import mapping, shape
+
     original_sha = digest(path)
     data = json.loads(path.read_text())
-    output = []; removed = 0; collections = 0
+    output = []; removed = 0; collections = 0; repaired = 0
     for feature in data['features']:
         geometry = feature.get('geometry')
         parts = polygon_parts(geometry)
+        if parts and repair_invalid:
+            polygon = shape({'type': 'MultiPolygon', 'coordinates': parts})
+            if not polygon.is_valid:
+                parts = polygon_parts(mapping(make_valid(polygon)))
+                geometry = {'type': 'MultiPolygon', 'coordinates': parts}
+                feature = {**feature, 'geometry': geometry}
+                repaired += 1
         if not parts:
             removed += 1
             continue
@@ -32,7 +43,7 @@ def polygonal_coast(path):
         output.append(feature)
     if not output:
         raise ValueError('Coastline crop contains no polygon areas')
-    if removed or collections:
+    if removed or collections or repaired:
         backup = path.with_name('land-unfiltered.geojson')
         if backup.exists():
             raise FileExistsError(backup)
@@ -48,4 +59,7 @@ def polygonal_coast(path):
             stream.write('\n]}\n')
     return {'sourceSHA256': original_sha, 'outputSHA256': digest(path),
             'removedZeroAreaFeatures': removed, 'extractedPolygonCollections': collections,
-            'retainedPolygonFeatures': len(output), 'operation': 'Retain every polygon ring; discard only point/line clipping remnants'}
+            'retainedPolygonFeatures': len(output),
+            **({'repairedInvalidFeatures': repaired} if repair_invalid else {}),
+            'operation': 'Repair invalid clipped polygons and retain their polygon parts' if repair_invalid
+            else 'Retain every polygon ring; discard only point/line clipping remnants'}

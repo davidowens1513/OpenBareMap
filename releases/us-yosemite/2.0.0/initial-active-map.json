@@ -1,0 +1,52 @@
+{
+  "contourIntervalMetres": 20,
+  "coverage": "Yosemite National Park, including Yosemite Valley, Tuolumne Meadows and the main approaches.",
+  "datasets": {
+    "basemap": {
+      "bytes": 33996800,
+      "path": "releases/us-yosemite/2.0.0/maps/basemap.mbtiles",
+      "sha256": "b5f9cc664efdb155836f9b7d1737461a75d30c05b9ade9aa41123ae6fdef59e9",
+      "validation": {
+        "empty_tile_count": 4,
+        "logical_tiles_sha256": "f32b01656e8f923930b54b849860a68bc2eb319ddf4c4eed51fe61de78075d95",
+        "tile_count": 4160
+      }
+    },
+    "grid": {
+      "bytes": 1552384,
+      "path": "releases/us-yosemite/2.0.0/maps/grid.mbtiles",
+      "sha256": "1367af0fa0999e1ecc42d70199f36b2cf5fa237c573c1a37a228118d21642007",
+      "validation": {
+        "empty_tile_count": 0,
+        "logical_tiles_sha256": "e3c599a8a7e93a313d29c0a5ae31720e2330069af210dba7935d84c6c48dac5e",
+        "tile_count": 4174
+      }
+    },
+    "hillshade": {
+      "bytes": 62996480,
+      "path": "releases/us-yosemite/2.0.0/maps/hillshade.mbtiles",
+      "sha256": "b4fd0c6bc6c223ede7705fa657be8c8ccd2110885c5024f9d204cdfc491cbd7f",
+      "validation": {
+        "empty_tile_count": 0,
+        "logical_tiles_sha256": "15f4051bea3c461cb63fc220c47dc6b1357b1af44b916caccd6be2337f413cf6",
+        "tile_count": 1468
+      }
+    },
+    "topography": {
+      "bytes": 77086720,
+      "path": "releases/us-yosemite/2.0.0/maps/topography.mbtiles",
+      "sha256": "1d2035c6ed032ee0156f5b24451a8e58946cc607376d1ed6c1d60efc7742a664",
+      "validation": {
+        "empty_tile_count": 47340,
+        "logical_tiles_sha256": "f459785fb656ba211c21874f59ea5c732800270a7ddbde0ed4fca08cd9a76270",
+        "tile_count": 55812
+      }
+    }
+  },
+  "format": "openbaremap-development-viewer-v1",
+  "localBorders": false,
+  "mapVersion": "2.0.0",
+  "region": "us-yosemite",
+  "storageRevision": "2.0.0-us-yosemite-r1",
+  "styleRevision": "2.0.0-us-yosemite-r1"
+}

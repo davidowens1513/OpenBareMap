@@ -1,0 +1,52 @@
+{
+  "contourIntervalMetres": 20,
+  "coverage": "Grand Canyon National Park, including both rims and their main access routes via Tusayan, Desert View and Jacob Lake.",
+  "datasets": {
+    "basemap": {
+      "bytes": 71983104,
+      "path": "releases/us-grand-canyon/2.0.0/maps/basemap.mbtiles",
+      "sha256": "229e2620a4000f8a519767327cd3a240a43877596d8744d2aaab915297f32e19",
+      "validation": {
+        "empty_tile_count": 46,
+        "logical_tiles_sha256": "09bcb5ce8e7419fc1f6980001f75b955a6bef7627e584530b25fb2872570f9dd",
+        "tile_count": 12992
+      }
+    },
+    "grid": {
+      "bytes": 4861952,
+      "path": "releases/us-grand-canyon/2.0.0/maps/grid.mbtiles",
+      "sha256": "1eaa23780156169a09501c47b45f0ddaef7ab7633581622cf72c677ad3a32a72",
+      "validation": {
+        "empty_tile_count": 0,
+        "logical_tiles_sha256": "9efe5ff10b9b8bf2dc74c720307b2b2247bd75b95b7e1584436197ddbadd2126",
+        "tile_count": 13056
+      }
+    },
+    "hillshade": {
+      "bytes": 76238848,
+      "path": "releases/us-grand-canyon/2.0.0/maps/hillshade.mbtiles",
+      "sha256": "c14fa9c2bc6bc36fd6c2c0b251dffaf15ce774651a914b3b43290fb2ed793efc",
+      "validation": {
+        "empty_tile_count": 0,
+        "logical_tiles_sha256": "5fd738751e39184c10c74248da544f502586ece4201dc3385b632247c627eb76",
+        "tile_count": 1875
+      }
+    },
+    "topography": {
+      "bytes": 171102208,
+      "path": "releases/us-grand-canyon/2.0.0/maps/topography-context.mbtiles",
+      "sha256": "5303b59b9f0d67c94eaf7f839bf46b17e483680ddc61e6992d21252b18abc70d",
+      "validation": {
+        "empty_tile_count": 51733,
+        "logical_tiles_sha256": "b2e0bec5663a598abad60e46f3169ffca444c3fd9ab0263e180ca90904f79eb8",
+        "tile_count": 69349
+      }
+    }
+  },
+  "format": "openbaremap-development-viewer-v1",
+  "localBorders": false,
+  "mapVersion": "2.0.0",
+  "region": "us-grand-canyon",
+  "storageRevision": "2.0.0-us-grand-canyon-r3",
+  "styleRevision": "2.0.0-us-grand-canyon-r1"
+}

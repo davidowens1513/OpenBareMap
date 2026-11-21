@@ -1,0 +1,33 @@
+{
+  "bytes": 62530942,
+  "datasets": {
+    "basemap": {
+      "path": "maps/basemap.mbtiles",
+      "sha256": "ab9d2fa4bccf09762672c0eb917bd5e6b219184e3dd6866f4da0d056fd3ac734"
+    },
+    "coast": {
+      "derivedFrom": "bbd7001efc4117d5cf72c6469e60b967c477de8bd54b99b3a584cc4ed544eeab",
+      "path": "maps/coast.mbtiles",
+      "sha256": "da80f832a0f7fe6dca486984b187fb7137cbbec566d4c61a97ed724d7a0b610e"
+    },
+    "grid": {
+      "path": "maps/grid.mbtiles",
+      "sha256": "627a81f0d0ddd4f3d0e8625cffe1037bb8143040c9ebbcc0e2106ec6c8424412"
+    },
+    "hillshade": {
+      "path": "maps/hillshade.mbtiles",
+      "sha256": "b81ad847c6eb895e042172274f80747250b49f6e44736cb8700c7ae67a69fb98"
+    },
+    "topography": {
+      "path": "maps/topography.mbtiles",
+      "sha256": "bbd7001efc4117d5cf72c6469e60b967c477de8bd54b99b3a584cc4ed544eeab"
+    }
+  },
+  "instructionsSHA256": "a7ec1af9357f2f8bc6fd25f7e2896bdc70592b1a79b3559a50a0644713065696",
+  "instructionsURL": "https://downloads.appsbyonzy.dev/OpenBareMap/us-zion/2.0.0/app-bundles-v1/android/instructions.txt",
+  "localPath": "releases/us-zion/2.0.0/app-bundles-v1/android/OpenBareMap-Zion-Android-Bundle.zip",
+  "mapManifestSHA256": "98ac9835591cda01f949bde34ffff603816d9b301883e8659448c29158756fa6",
+  "r2Key": "OpenBareMap/us-zion/2.0.0/app-bundles-v1/android/OpenBareMap-Zion-Android-Bundle.zip",
+  "sha256": "f696e786a729a3a91abce95e38f8f350ec8478f009fc9c51aa8ade5b1cb22416",
+  "url": "https://downloads.appsbyonzy.dev/OpenBareMap/us-zion/2.0.0/app-bundles-v1/android/OpenBareMap-Zion-Android-Bundle.zip"
+}

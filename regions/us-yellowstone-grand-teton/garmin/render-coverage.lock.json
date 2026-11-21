@@ -1,0 +1,69 @@
+{
+  "bounds": [
+    -111.37181900066592,
+    43.384877052725514,
+    -109.6096159658248,
+    45.261932040875955
+  ],
+  "contextEnvelope": [
+    -111.37181900066592,
+    43.384877052725514,
+    -109.6096159658248,
+    45.261932040875955
+  ],
+  "drawPriority": 25,
+  "format": "openbaremap-garmin-render-footprint-v1",
+  "geometry": {
+    "bytes": 31151,
+    "path": "regions/us-yellowstone-grand-teton/garmin/render-coverage.geojson",
+    "sha256": "07ad98f773f0fc15f12664c46336ed7f75ef291006c63b7aac0041cd6bf3aa3f"
+  },
+  "inputs": [
+    {
+      "path": "regions/us-yellowstone-grand-teton/coverage.geojson",
+      "purpose": "Exact official park plus 25 km footprint; not its rectangular tile envelope",
+      "sha256": "95dda07d36f7c7ad1ef3a1e64538136d3aff9c573769ad653c3afb4c2a3370dd"
+    }
+  ],
+  "knownDestinationsCovered": {
+    "cooke-city": [
+      -109.933,
+      45.02
+    ],
+    "flagg-ranch": [
+      -110.668,
+      44.106
+    ],
+    "gardiner": [
+      -110.706,
+      45.032
+    ],
+    "grant-village": [
+      -110.555,
+      44.391
+    ],
+    "jackson": [
+      -110.762,
+      43.48
+    ],
+    "jenny-lake-trailhead": [
+      -110.722,
+      43.752
+    ],
+    "mammoth-hot-springs": [
+      -110.705,
+      44.977
+    ],
+    "old-faithful": [
+      -110.828,
+      44.461
+    ],
+    "west-yellowstone": [
+      -111.104,
+      44.662
+    ]
+  },
+  "purpose": "Rectangular Garmin tiles may overlap other countries. Do not fill their padding with sea, land or land-cover polygons.",
+  "region": "us-yellowstone-grand-teton",
+  "transparentNativeMap": true
+}

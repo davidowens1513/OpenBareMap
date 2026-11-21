@@ -6,6 +6,8 @@ OpenBareMap is an offline topographic map for hiking, available as separate regi
 
 The [Apps by Onzy website](https://appsbyonzy.dev/) has its own [website repository](https://github.com/davidowens1513/AppsByOnzy-Website). Make homepage changes and publish the site from that checkout.
 
+The [US National Parks build and release guide](docs/regional-editions.md#us-national-parks) covers nine editions, with Yellowstone and Grand Teton in a shared map.
+
 **All finished iOS, Android and Garmin downloads are hosted on Cloudflare R2, outside Git.** Use the direct links below; cloning this repository does not download these packages. See [file storage and restoration](#file-storage-and-restoration) for developer resources.
 
 Each iOS download contains the complete regional resource bundle, Swift loader, example view controller, dependency information and instructions. Each Android download contains the complete importable map ZIP, loader AAR and Kotlin source, an example Activity, dependency information and instructions. Both include checksums, legends and attribution. Install the MapLibre renderer through the dependency instructions supplied with the bundle.
@@ -212,12 +214,13 @@ A Git clone contains the code, styles, configuration and release records. Large 
 | Finished iOS / Android kits and Garmin images | **Cloudflare R2; outside Git** | Use the download table above, or the verified restore commands below. |
 | Most earlier source datasets and selected working databases | **Git LFS** | Run `git lfs pull` for the files required by your edition. England/Wales basemaps use tracked LFS parts, reassembled when selected. |
 | Alps, Norway and Mediterranean/Atlantic island source extracts, elevation pixels, working databases and database parts | **Rebuildable local files; deliberately outside Git, LFS and Cloudflare backups** | Recreate when needed using the [regional build workflows](docs/regional-editions.md). Git retains configuration and provenance; Cloudflare retains finished downloads and previews. The restore command does not install working databases. |
+| US National Parks OSM extracts, elevation tiles, working databases and generated Garmin geometry | **Rebuildable local files** | Use the [US National Parks workflow](docs/regional-editions.md#us-national-parks). Git records park coverage, source references and checksums. |
 | Dolomites and Faroe Islands selected contour databases | **Git LFS**, alongside their other selected databases | Fetch `releases/<region>/2.0.0/maps/topography-context.mbtiles` with `git lfs pull`. Unselected contour intermediates remain excluded. |
 | Source locks, checksums, release manifests and Norway `.parts.json` records | **Ordinary Git** | Included in a clone. A checksum or parts manifest records a file; it does not contain its bytes. |
 
 ### Restore finished downloads from Cloudflare
 
-The [R2 asset inventory](distribution/r2-assets.json) records **69 current delivery files, approximately 57.49 GB total**, with their public URLs, original local paths, exact sizes and SHA-256 checksums. The [app catalog](distribution/app-bundles-v1/catalog.json) also records platform instructions and map versions. These are delivery inventories, not a backup of every source or intermediate file.
+The [R2 asset inventory](distribution/r2-assets.json) records current delivery files with their public URLs, original local paths, exact sizes and SHA-256 checksums. The [app catalog](distribution/app-bundles-v1/catalog.json) also records platform instructions and map versions. The regional build workflows describe how to recreate source and intermediate files.
 
 ```sh
 # Inspect available files without downloading anything.
@@ -226,7 +229,7 @@ python3 scripts/restore_r2_assets.py --list
 # Restore just one file to its recorded local path.
 python3 scripts/restore_r2_assets.py --path regions/norway-south/garmin/dist/OpenBareMap-Norway-South.img
 
-# Optional: restore all 69 delivery files (about 57.49 GB).
+# Optional: restore all delivery files.
 python3 scripts/restore_r2_assets.py --all
 ```
 

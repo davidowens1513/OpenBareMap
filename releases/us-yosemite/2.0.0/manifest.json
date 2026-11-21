@@ -1,0 +1,106 @@
+{
+  "acceptance": "Automated checks only; see validation and visual-review records for actual reviewed scope.",
+  "coverage": "Yosemite National Park, including Yosemite Valley, Tuolumne Meadows and the main approaches.",
+  "datasets": {
+    "basemap": {
+      "bytes": 33996800,
+      "path": "releases/us-yosemite/2.0.0/maps/basemap.mbtiles",
+      "sha256": "b5f9cc664efdb155836f9b7d1737461a75d30c05b9ade9aa41123ae6fdef59e9",
+      "validation": {
+        "empty_tile_count": 4,
+        "logical_tiles_sha256": "f32b01656e8f923930b54b849860a68bc2eb319ddf4c4eed51fe61de78075d95",
+        "tile_count": 4160
+      }
+    },
+    "grid": {
+      "bytes": 1552384,
+      "path": "releases/us-yosemite/2.0.0/maps/grid.mbtiles",
+      "sha256": "1367af0fa0999e1ecc42d70199f36b2cf5fa237c573c1a37a228118d21642007",
+      "validation": {
+        "empty_tile_count": 0,
+        "logical_tiles_sha256": "e3c599a8a7e93a313d29c0a5ae31720e2330069af210dba7935d84c6c48dac5e",
+        "tile_count": 4174
+      }
+    },
+    "hillshade": {
+      "bytes": 62996480,
+      "path": "releases/us-yosemite/2.0.0/maps/hillshade.mbtiles",
+      "sha256": "b4fd0c6bc6c223ede7705fa657be8c8ccd2110885c5024f9d204cdfc491cbd7f",
+      "validation": {
+        "empty_tile_count": 0,
+        "logical_tiles_sha256": "15f4051bea3c461cb63fc220c47dc6b1357b1af44b916caccd6be2337f413cf6",
+        "tile_count": 1468
+      }
+    },
+    "topography": {
+      "bytes": 76955648,
+      "path": "releases/us-yosemite/2.0.0/maps/topography-context.mbtiles",
+      "sha256": "66cb6aef7dd63d28401bc8b3b4aa713aa4f3531ee50f2d9ee7d309b060674bf7",
+      "validation": {
+        "empty_tile_count": 47340,
+        "logical_tiles_sha256": "f459785fb656ba211c21874f59ea5c732800270a7ddbde0ed4fca08cd9a76270",
+        "tile_count": 55812
+      }
+    }
+  },
+  "garmin": {
+    "bytes": 29372416,
+    "path": "regions/us-yosemite/garmin/dist/OpenBareMap-US-Yosemite.img",
+    "sha256": "08d5b5fe2cac0e3a90ec95f1ec421c3aa7ce36229436ba246a9b97ac9ab8bf69"
+  },
+  "geometryReport": {
+    "path": "build/us-yosemite-geometry/geometry-report.json",
+    "sha256": "832cd958a39daaa5d9b24ec9086e8ccd585e9ae88461947b0beb2e57a21b025b"
+  },
+  "hostAppsModified": false,
+  "mapVersion": "2.0.0",
+  "osm": {
+    "bytes": 18403376,
+    "operation": "Complete-feature bbox extraction with nested relation references",
+    "path": "data/regions/us-yosemite/california-261120.osm.clipped.osm.pbf",
+    "replicationTimestamp": "2026-11-20T21:21:21Z",
+    "sha256": "77e86308f72054083b662532c46f95d6e3e208e7e20b86d99cdb9e1e33dc69b1",
+    "snapshot_date": "2026-11-20",
+    "url": "https://download.geofabrik.de/north-america/us/california/california-261120.osm.pbf"
+  },
+  "packages": {
+    "android": {
+      "archive": {
+        "bytes": 180308366,
+        "path": "regions/us-yosemite/android/OpenBareMap-Android.zip",
+        "sha256": "a814675d21a7f4f3729e07e299e6c9286225a991a72a639f2cd65f5c42f5b9e4"
+      },
+      "checksumsSHA256": "8ebcfcae69d228ddf91fdf50cd8e54fba0415d8ffef145d8fe85bad2365ed087",
+      "manifestSHA256": "15597cdbfc56d3f5a8a0c786466d948a6d5d5e128ca7492961abac8046323750",
+      "path": "regions/us-yosemite/android",
+      "validationSHA256": "e67144db053aa97b2f4bb515f976c515068b7603a214a5be25aabbee8a602f87"
+    },
+    "ios": {
+      "checksumsSHA256": "40403d1d2c94128356aeba3c3720c573aba624950398561c46ffde6dc56ffafb",
+      "manifestSHA256": "89a1bd45e940740763c126d5fb9c0e30be93c7f6a3c34463e6c92175eb3a16b3",
+      "path": "regions/us-yosemite/ios",
+      "validationSHA256": "4bdd8f28976d25698d75bbfcddcdb2c24cdd752de0d89518eed45906cfb88f5d"
+    }
+  },
+  "pythonRuntime": {
+    "packages": {
+      "Pillow": "12.3.0",
+      "certifi": "2026.10.23",
+      "charset-normalizer": "3.5.2",
+      "idna": "3.20",
+      "numpy": "2.5.4",
+      "osmium": "4.3.2",
+      "pyproj": "3.8.0",
+      "requests": "2.34.2",
+      "shapely": "2.2.0",
+      "urllib3": "2.8.0"
+    },
+    "platform": "macOS-27.2.1-arm64-arm-64bit-Mach-O",
+    "python": "3.14.5 (main, May 10 2026, 10:21:34) [Clang 21.0.0 (clang-2100.0.123.102)]",
+    "requirementsSHA256": "427f12ff8b49bfebac0a7d453c2f65bd15d6695584b18e6ecee1fdfeed20a36c"
+  },
+  "region": "us-yosemite",
+  "styleSHA256": "ee7ad4b8c22424b93fe87f3074eb0e733d87aec31fe41f5c725b037892becc5c",
+  "terrainLockSHA256": "a271c54ecfa6c3ba07f3b9562ab3a238bdae1581f28f81101cf73e03ef7bbe94",
+  "validation": "validation.json"
+}

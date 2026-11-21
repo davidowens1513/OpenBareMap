@@ -1,0 +1,106 @@
+{
+  "acceptance": "Automated checks only; see validation and visual-review records for actual reviewed scope.",
+  "coverage": "Acadia National Park, including Mount Desert Island, Schoodic Peninsula, Isle au Haut and nearby gateways.",
+  "datasets": {
+    "basemap": {
+      "bytes": 5484544,
+      "path": "releases/us-acadia/2.0.0/maps/basemap.mbtiles",
+      "sha256": "18a8d081ec4a40b3f657712f83444350eabe6b00906259f83aa0c40c53b31d84",
+      "validation": {
+        "empty_tile_count": 44,
+        "logical_tiles_sha256": "1daf40af62b94fd3fedd85c2d61961f3f086c02411c088b5846c16fb6caed6db",
+        "tile_count": 1325
+      }
+    },
+    "grid": {
+      "bytes": 618496,
+      "path": "releases/us-acadia/2.0.0/maps/grid.mbtiles",
+      "sha256": "c67a1e9b3f725933dafdf47e6da59a3514d09e02eb30810499b5ffc21f83d1b2",
+      "validation": {
+        "empty_tile_count": 0,
+        "logical_tiles_sha256": "13469eb164205faae4438348cfef118f78657edda59282442f69a1e564580683",
+        "tile_count": 1817
+      }
+    },
+    "hillshade": {
+      "bytes": 11591680,
+      "path": "releases/us-acadia/2.0.0/maps/hillshade.mbtiles",
+      "sha256": "1977dd3938dc868a071c4f72d89834390820754942040eef8805b728ff494d16",
+      "validation": {
+        "empty_tile_count": 0,
+        "logical_tiles_sha256": "f10700467e56f5487cd2199f7a58728f2ac7fc21846a38606c3ae782035ee32f",
+        "tile_count": 424
+      }
+    },
+    "topography": {
+      "bytes": 6168576,
+      "path": "releases/us-acadia/2.0.0/maps/topography-context.mbtiles",
+      "sha256": "eca1eebb7707f383e3795e327b936d12cb2cbe960e26b59f303186bbee7c50bd",
+      "validation": {
+        "empty_tile_count": 21399,
+        "logical_tiles_sha256": "ba9772a67639791e60f92ea0242d838374cdfe93b3a3d56ebcb088db9ee92172",
+        "tile_count": 24104
+      }
+    }
+  },
+  "garmin": {
+    "bytes": 2806784,
+    "path": "regions/us-acadia/garmin/dist/OpenBareMap-US-Acadia.img",
+    "sha256": "f0b367e5cb826990d1190e392ad73b5d9fd89d1f2deac9efd9cab35a27874c5c"
+  },
+  "geometryReport": {
+    "path": "build/us-acadia-geometry/geometry-report.json",
+    "sha256": "9cdea4472318332d31b17f3280cb041ba78d9c516907dbf8c84cfe4975fd6844"
+  },
+  "hostAppsModified": false,
+  "mapVersion": "2.0.0",
+  "osm": {
+    "bytes": 5824919,
+    "operation": "Complete-feature bbox extraction with nested relation references",
+    "path": "data/regions/us-acadia/maine-261120.osm.clipped.osm.pbf",
+    "replicationTimestamp": "2026-11-20T21:21:21Z",
+    "sha256": "b41c4622d70761a9b98899b016aefa161fa44d2b06a3c111b4b5764327176814",
+    "snapshot_date": "2026-11-20",
+    "url": "https://download.geofabrik.de/north-america/us/maine/maine-261120.osm.pbf"
+  },
+  "packages": {
+    "android": {
+      "archive": {
+        "bytes": 30471164,
+        "path": "regions/us-acadia/android/OpenBareMap-Android.zip",
+        "sha256": "be47542ad531883e078b5d5109ff9739f8215aaab3f9be25bd1e28f238405e5f"
+      },
+      "checksumsSHA256": "e8728c315141356dd0482e1d146c41e5dd95abf9dc30736dfa83b8aa968069ef",
+      "manifestSHA256": "3da439e7ae59a94119c1916dfaaf028cca8781ca4b5d1e8bc0ccdee369d53664",
+      "path": "regions/us-acadia/android",
+      "validationSHA256": "202a78cd59b4f01af9861793451065ae675b3dbecfa6707d9eaf0fbcfb2f557c"
+    },
+    "ios": {
+      "checksumsSHA256": "2c58c3b80d8ad1f7c7c8528d36575afe24d1867ea9301c7496078bf2bf4b9b31",
+      "manifestSHA256": "78ddb025c06016d3394c9a9f4840bdcc427879f927431bf7bb8ab2f56046fe08",
+      "path": "regions/us-acadia/ios",
+      "validationSHA256": "4e0ef8ab8cc03e318bd1c1a4a3d41c6730531627ebdcf9b99688302bfb9836fd"
+    }
+  },
+  "pythonRuntime": {
+    "packages": {
+      "Pillow": "12.3.0",
+      "certifi": "2026.10.23",
+      "charset-normalizer": "3.5.2",
+      "idna": "3.20",
+      "numpy": "2.5.4",
+      "osmium": "4.3.2",
+      "pyproj": "3.8.0",
+      "requests": "2.34.2",
+      "shapely": "2.2.0",
+      "urllib3": "2.8.0"
+    },
+    "platform": "macOS-27.2.1-arm64-arm-64bit-Mach-O",
+    "python": "3.14.5 (main, May 10 2026, 10:21:34) [Clang 21.0.0 (clang-2100.0.123.102)]",
+    "requirementsSHA256": "427f12ff8b49bfebac0a7d453c2f65bd15d6695584b18e6ecee1fdfeed20a36c"
+  },
+  "region": "us-acadia",
+  "styleSHA256": "eda8fac9914d6dbdb7aa38a1d29fc75089cebcdcc3e882781f04e49d311ba472",
+  "terrainLockSHA256": "92bc90f7dd265575b591500a5ab0d093b570e6c1a1ce09cf9cf3eb43167726b7",
+  "validation": "validation.json"
+}

@@ -1,0 +1,52 @@
+{
+  "contourIntervalMetres": 20,
+  "coverage": "Great Smoky Mountains National Park and the Gatlinburg, Townsend and Cherokee approaches.",
+  "datasets": {
+    "basemap": {
+      "bytes": 45580288,
+      "path": "releases/us-great-smoky-mountains/2.0.0/maps/basemap.mbtiles",
+      "sha256": "92d5f46df61c845c29ca12b9748237ed28b42533b1c97714432339e3b6ce3805",
+      "validation": {
+        "empty_tile_count": 0,
+        "logical_tiles_sha256": "dd65544a921f86fc8e26dab17fa43b6d20a9c43b513d76f6f97e9427fddb1c91",
+        "tile_count": 3191
+      }
+    },
+    "grid": {
+      "bytes": 1196032,
+      "path": "releases/us-great-smoky-mountains/2.0.0/maps/grid.mbtiles",
+      "sha256": "37767a27165e6e108f2d58ae82ab0a0d715d5ec944cb0e23d88f802d108afb4d",
+      "validation": {
+        "empty_tile_count": 0,
+        "logical_tiles_sha256": "ad86a5478104ddcff70e99cf2f5595e5df70b13ea8c4e6e72e6c381debbd90cc",
+        "tile_count": 3177
+      }
+    },
+    "hillshade": {
+      "bytes": 36151296,
+      "path": "releases/us-great-smoky-mountains/2.0.0/maps/hillshade.mbtiles",
+      "sha256": "06b58c5218c5cda1aa03b8db806c23782fcc69a21b1ad2f6b91a3f915381c19c",
+      "validation": {
+        "empty_tile_count": 0,
+        "logical_tiles_sha256": "f36562340e91122ba60d70eb163882288bcf9b580c81789649cb719c21c5b07f",
+        "tile_count": 740
+      }
+    },
+    "topography": {
+      "bytes": 67764224,
+      "path": "releases/us-great-smoky-mountains/2.0.0/maps/topography-context.mbtiles",
+      "sha256": "3fe5f82c7ada611e9f9773606f61cc8848440ae2790f1d29e4b4c30514d91b13",
+      "validation": {
+        "empty_tile_count": 38098,
+        "logical_tiles_sha256": "61f8726a7738c44837c5d495da443b7af41ca8005dcde54c26f751b35e8d14b4",
+        "tile_count": 44453
+      }
+    }
+  },
+  "format": "openbaremap-development-viewer-v1",
+  "localBorders": false,
+  "mapVersion": "2.0.0",
+  "region": "us-great-smoky-mountains",
+  "storageRevision": "2.0.0-us-great-smoky-mountains-r3",
+  "styleRevision": "2.0.0-us-great-smoky-mountains-r1"
+}

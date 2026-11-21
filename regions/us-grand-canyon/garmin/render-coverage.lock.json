@@ -1,0 +1,53 @@
+{
+  "bounds": [
+    -114.13527634550448,
+    35.62393484654474,
+    -111.42998838774946,
+    36.99182469575425
+  ],
+  "contextEnvelope": [
+    -114.13527634550448,
+    35.62393484654474,
+    -111.42998838774946,
+    36.99182469575425
+  ],
+  "drawPriority": 25,
+  "format": "openbaremap-garmin-render-footprint-v1",
+  "geometry": {
+    "bytes": 58218,
+    "path": "regions/us-grand-canyon/garmin/render-coverage.geojson",
+    "sha256": "c2aa70eacc6ac1bc2ca596495dc71a527950fa03ee8c9da6f23b60d1d1f194a6"
+  },
+  "inputs": [
+    {
+      "path": "regions/us-grand-canyon/coverage.geojson",
+      "purpose": "Exact official park plus 25 km footprint; not its rectangular tile envelope",
+      "sha256": "04115d50fefea73bb9996e2f62892d0b42bd8dc75ccedb45e45d7ba8188bccf8"
+    }
+  ],
+  "knownDestinationsCovered": {
+    "desert-view": [
+      -111.827,
+      36.041
+    ],
+    "jacob-lake": [
+      -112.216,
+      36.713
+    ],
+    "north-rim": [
+      -112.052,
+      36.198
+    ],
+    "south-rim": [
+      -112.14,
+      36.055
+    ],
+    "tusayan": [
+      -112.125,
+      35.974
+    ]
+  },
+  "purpose": "Rectangular Garmin tiles may overlap other countries. Do not fill their padding with sea, land or land-cover polygons.",
+  "region": "us-grand-canyon",
+  "transparentNativeMap": true
+}

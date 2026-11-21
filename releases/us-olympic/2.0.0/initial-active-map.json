@@ -1,0 +1,52 @@
+{
+  "contourIntervalMetres": 20,
+  "coverage": "Olympic National Park, including the mountain interior, rainforest valleys, coastal sections and principal trailhead approaches.",
+  "datasets": {
+    "basemap": {
+      "bytes": 37916672,
+      "path": "releases/us-olympic/2.0.0/maps/basemap.mbtiles",
+      "sha256": "92ab78c832f5b9425fd4c2b7c7914c1a551de35152762cb468ce896f07754c5d",
+      "validation": {
+        "empty_tile_count": 233,
+        "logical_tiles_sha256": "dd50292d05e97eb4a2224e2b83ff7d67e7d56c1ff9b666f0b52de39d9b57c187",
+        "tile_count": 6829
+      }
+    },
+    "grid": {
+      "bytes": 3231744,
+      "path": "releases/us-olympic/2.0.0/maps/grid.mbtiles",
+      "sha256": "be1f2c67797fe89bc8586c02001cef720acea8eedd0b1ce858775f218e6a3730",
+      "validation": {
+        "empty_tile_count": 0,
+        "logical_tiles_sha256": "0dcc357505b70487055b085f1420cc2802f1791691217acae9a306ef290f17e9",
+        "tile_count": 9801
+      }
+    },
+    "hillshade": {
+      "bytes": 50835456,
+      "path": "releases/us-olympic/2.0.0/maps/hillshade.mbtiles",
+      "sha256": "1ddd0d13641446a3163415a773a3c3c285873285bb71bba3b0691f1a9bdc01d2",
+      "validation": {
+        "empty_tile_count": 0,
+        "logical_tiles_sha256": "fa3d9dd117cdcc95679af9a5a33a4edc0e2c4727209117e3b70ed1ae04e0ac0a",
+        "tile_count": 1379
+      }
+    },
+    "topography": {
+      "bytes": 108277760,
+      "path": "releases/us-olympic/2.0.0/maps/topography.mbtiles",
+      "sha256": "811473028c1134661f77cab9a0347e1eb8ff2333639ed1b704b0e89bd453a984",
+      "validation": {
+        "empty_tile_count": 43545,
+        "logical_tiles_sha256": "200e4f4df78f6c0860fd4769f7cb16066d07fff209599e88e386547a73560bd9",
+        "tile_count": 53477
+      }
+    }
+  },
+  "format": "openbaremap-development-viewer-v1",
+  "localBorders": false,
+  "mapVersion": "2.0.0",
+  "region": "us-olympic",
+  "storageRevision": "2.0.0-us-olympic-r1",
+  "styleRevision": "2.0.0-us-olympic-r1"
+}

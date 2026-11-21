@@ -1,0 +1,151 @@
+{
+  "familyId": 4855,
+  "garminPackageRevision": "2.0.1-trail-detail-r1",
+  "inspection": {
+    "anchorLabels": {
+      "Half Dome": "Half Dome",
+      "Wawona": "Wawona"
+    },
+    "bounds": [
+      -120.10262489318848,
+      37.3095703125,
+      -118.9599609375,
+      38.36434364318848
+    ],
+    "coastPolygonsByLevel": {
+      "0": {
+        "0x32": 10,
+        "0x54": 18
+      },
+      "1": {
+        "0x32": 10,
+        "0x54": 18
+      },
+      "2": {
+        "0x32": 10,
+        "0x54": 18
+      },
+      "3": {
+        "0x32": 10,
+        "0x54": 18
+      },
+      "4": {
+        "0x32": 10,
+        "0x54": 18
+      }
+    },
+    "contoursByLevel": {
+      "0": {
+        "0x10009": 28,
+        "0x20": 35275,
+        "0x22": 8813
+      },
+      "1": {
+        "0x10009": 28,
+        "0x20": 27568,
+        "0x22": 6865
+      },
+      "2": {
+        "0x10009": 25,
+        "0x22": 6381
+      },
+      "3": {
+        "0x10008": 5749,
+        "0x10009": 22
+      },
+      "4": {
+        "0x10009": 18
+      }
+    },
+    "lineInstancesAtHighestDetail": {
+      "0x10001": 576,
+      "0x10002": 96,
+      "0x10003": 8,
+      "0x10004": 136,
+      "0x10005": 48,
+      "0x10006": 132,
+      "0x10009": 28,
+      "0x1000a": 15,
+      "0x1000b": 17,
+      "0x14": 5,
+      "0x16": 2503,
+      "0x18": 23236,
+      "0x1a": 1,
+      "0x1c": 223,
+      "0x1e": 2,
+      "0x1f": 219,
+      "0x2": 58,
+      "0x20": 35275,
+      "0x22": 8813,
+      "0x3": 94,
+      "0x4": 161,
+      "0x6": 2573,
+      "0x7": 4446,
+      "0xa": 3937
+    },
+    "logicalCombinedSHA256": "ef8ed4981c57868b406728fcfd0e0de60a78387b6d48d19bf0c605dbdfbc5e86",
+    "logicalHashNote": "Internal file names, sizes and payloads; only CommonHeader creation-date bytes 14..20 are zeroed for hashing. IMG archive headers are excluded. Output bytes are never modified.",
+    "logicalTileSHA256": {
+      "48550001.img": "cffc91a84a5237bec67d6d921bd51a81d55a0301d308b517b01dfeca0efd1051",
+      "48550002.img": "ca28d2e85fd0d7e435dcb147fde5b185c51b4e8e126674cc2d473ad6710ab429",
+      "48550003.img": "76a9ea63f1df06a313979db5993e35bdd3edd03f1472a5f7e5b4b7ab66e747d9",
+      "48550004.img": "0478c315a96fcd20f4246d8a500516be3e1e2af067c5e4bbc0ae7b2695535257",
+      "48550005.img": "fdacf8d14739fa055e0261ce02392e34d602e579ca6c985d78e764e7aec4711f",
+      "48550006.img": "b9e3d9c9dd7e79f47deaaaeb86839ba43381a00ffbc1ca04043aa61966257f93",
+      "48550007.img": "bfda4eddc317cebbfc7deb59ba0b5d177c25225e25fd7d13769c29076de861fd",
+      "48550008.img": "40abb1f66ab39d5627da307cb4f4a2e8aaf737b3d588593e820424d2b15b82d1",
+      "48550009.img": "0721151af43b2ccf47d8d31688120c1b4f9c6d86ae0c1b1c31052530b8cc801f",
+      "48550010.img": "a8b6cda4c6cf86c51d6848c21ce5afc3829d1495413db18ed6950a9dd57976b4"
+    },
+    "pointInstancesAtHighestDetail": {
+      "0x10001": 147,
+      "0x10002": 876,
+      "0x10003": 586,
+      "0x10006": 838,
+      "0x2f0b": 678,
+      "0x600": 2,
+      "0x650c": 24,
+      "0x6603": 540,
+      "0x6615": 128,
+      "0x6616": 546,
+      "0x800": 7,
+      "0xb00": 47,
+      "0xc00": 69
+    },
+    "polygonInstancesAtHighestDetail": {
+      "0x10101": 2,
+      "0x10102": 1401,
+      "0x10103": 159,
+      "0x10104": 1625,
+      "0x10105": 35,
+      "0x10106": 25,
+      "0x10107": 1,
+      "0x10109": 3883,
+      "0x1010a": 514,
+      "0x13": 13903,
+      "0x32": 10,
+      "0x3c": 4895,
+      "0x50": 5941,
+      "0x51": 735,
+      "0x54": 18
+    },
+    "routing": false,
+    "subfileBytes": {
+      "DEM": 9667804,
+      "LBL": 128246,
+      "MPS": 814,
+      "RGN": 19240284,
+      "SRT": 912,
+      "TRE": 243781,
+      "TYP": 3058
+    },
+    "tiles": 10
+  },
+  "output": {
+    "bytes": 29372416,
+    "path": "regions/us-yosemite/garmin/dist/OpenBareMap-US-Yosemite.img",
+    "sha256": "08d5b5fe2cac0e3a90ec95f1ec421c3aa7ce36229436ba246a9b97ac9ab8bf69"
+  },
+  "routing": false,
+  "status": "compiled and structurally inspected; hardware rendering pending"
+}

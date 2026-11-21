@@ -1,0 +1,33 @@
+{
+  "bytes": 333477683,
+  "datasets": {
+    "basemap": {
+      "path": "maps/basemap.mbtiles",
+      "sha256": "229e2620a4000f8a519767327cd3a240a43877596d8744d2aaab915297f32e19"
+    },
+    "coast": {
+      "derivedFrom": "5303b59b9f0d67c94eaf7f839bf46b17e483680ddc61e6992d21252b18abc70d",
+      "path": "maps/coast.mbtiles",
+      "sha256": "455c2ca3755e68f93c1aebeb8383580b60ad9db1f46c8ce9effebeafc1be0d7b"
+    },
+    "grid": {
+      "path": "maps/grid.mbtiles",
+      "sha256": "1eaa23780156169a09501c47b45f0ddaef7ab7633581622cf72c677ad3a32a72"
+    },
+    "hillshade": {
+      "path": "maps/hillshade.mbtiles",
+      "sha256": "c14fa9c2bc6bc36fd6c2c0b251dffaf15ce774651a914b3b43290fb2ed793efc"
+    },
+    "topography": {
+      "path": "maps/topography.mbtiles",
+      "sha256": "5303b59b9f0d67c94eaf7f839bf46b17e483680ddc61e6992d21252b18abc70d"
+    }
+  },
+  "instructionsSHA256": "13365608d5b4a24c4de26494ba45874015a8d15e985a501306f4931a8241e330",
+  "instructionsURL": "https://downloads.appsbyonzy.dev/OpenBareMap/us-grand-canyon/2.0.0/app-bundles-v1/android/instructions.txt",
+  "localPath": "releases/us-grand-canyon/2.0.0/app-bundles-v1/android/OpenBareMap-Grand-Canyon-Android-Bundle.zip",
+  "mapManifestSHA256": "944c87d3daf4967485d64a65a4455fdf227ad3c6f795d15adae72e595ba022f6",
+  "r2Key": "OpenBareMap/us-grand-canyon/2.0.0/app-bundles-v1/android/OpenBareMap-Grand-Canyon-Android-Bundle.zip",
+  "sha256": "18b3eae7565caf6191b816b1c0493a5c662b77ad3cf5bf5ae161a4313da7c332",
+  "url": "https://downloads.appsbyonzy.dev/OpenBareMap/us-grand-canyon/2.0.0/app-bundles-v1/android/OpenBareMap-Grand-Canyon-Android-Bundle.zip"
+}

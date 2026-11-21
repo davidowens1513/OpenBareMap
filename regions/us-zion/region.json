@@ -1,0 +1,138 @@
+{
+  "boundaryAttribution": "U.S. National Park Service, Land Resources Division",
+  "bounds": [
+    -113.38648267382872,
+    37.0152023869262,
+    -112.70546114659571,
+    37.63042227584585
+  ],
+  "clipBasemap": true,
+  "clipSource": true,
+  "coastContextBounds": [
+    -115,
+    36,
+    -111,
+    39
+  ],
+  "contourIntervalMetres": 20,
+  "coverage": "Zion National Park, including Zion Canyon, Kolob Canyons, Springdale and the eastern approach.",
+  "coverageBoundary": true,
+  "coverageBoundaryLabel": "Map coverage limit",
+  "destinationLabels": {
+    "east-entrance": "East Entrance",
+    "island": "Zion",
+    "kolob-canyons": "Kolob Canyons",
+    "springdale": "Springdale",
+    "zion-canyon": "Zion Canyon"
+  },
+  "destinations": {
+    "east-entrance": [
+      -112.879,
+      37.234,
+      12
+    ],
+    "island": [
+      -113.03777527754579,
+      37.323917974091785,
+      9
+    ],
+    "kolob-canyons": [
+      -113.189,
+      37.452,
+      12
+    ],
+    "springdale": [
+      -112.998,
+      37.189,
+      12
+    ],
+    "zion-canyon": [
+      -112.998,
+      37.25,
+      12
+    ]
+  },
+  "garminContextBounds": [
+    -113.38648267382872,
+    37.0152023869262,
+    -112.70546114659571,
+    37.63042227584585
+  ],
+  "garminFamilyId": 4857,
+  "garminFilename": "OpenBareMap-US-Zion.img",
+  "garminPackageRevision": "2.0.1-trail-detail-r1",
+  "garminTileStartId": 48570001,
+  "garminUseSourceOutline": true,
+  "gridCRS": "EPSG:32612",
+  "gridExtent": [
+    280000,
+    350000,
+    4090000,
+    4170000
+  ],
+  "gridName": "WGS 84 / UTM 12N",
+  "gridSource": "utm-grid",
+  "id": "us-zion",
+  "ignoreSourceHeaderBounds": true,
+  "inspectionNames": [
+    "Springdale"
+  ],
+  "label": "Zion",
+  "labelGlyphs": "ABCDEFGHIJKLMNOPQRSTUVWXYZ",
+  "mapVersion": "2.0.0",
+  "maxzoom": 14,
+  "minorWaterwayMinzoom": 10,
+  "minzoom": 4,
+  "name": "OpenBareMap Zion",
+  "nativeLanguage": "en",
+  "optionalBasemapLayers": [
+    "station",
+    "railway",
+    "ferry",
+    "cycling_route",
+    "island_name",
+    "boundary",
+    "hiking_route"
+  ],
+  "projectedCRS": "EPSG:32612",
+  "requireBogFeatures": false,
+  "sourceBaseOverrides": {
+    "utah": "https://download.geofabrik.de/north-america/us/utah/"
+  },
+  "sourceBaseURL": "https://download.geofabrik.de/north-america/us/",
+  "sourceCacheRegion": "us-national-parks",
+  "sourceDate": "2026-11-20",
+  "sourceSlugs": [
+    "utah"
+  ],
+  "styleRevision": "2.0.0-us-zion-r1",
+  "terrainAttribution": "Copernicus DEM GLO-30 \u00b7 European Union / ESA \u00b7 DLR / Airbus",
+  "terrainBounds": [
+    -114,
+    37,
+    -112,
+    38
+  ],
+  "terrainCacheRegion": "us-national-parks",
+  "terrainNotice": "Elevation: Copernicus DEM GLO-30 Public (AWS 2021 release).\n\nproduced using Copernicus WorldDEM-30 \u00a9 DLR e.V. 2010-2014 and \u00a9 Airbus Defence and Space GmbH 2014-2018 provided under COPERNICUS by the European Union and ESA; all rights reserved\n\nThe organisations in charge of the Copernicus programme by law or by delegation do not incur any liability for any use of the Copernicus WorldDEM-30.\n\nLicense: https://dataspace.copernicus.eu/sites/default/files/media/files/2025-06/copernicus_contributing_mission_data_access_v2_cop_dem_licenses.pdf\nSource: https://registry.opendata.aws/copernicus-dem/\nVertical datum: EGM2008 orthometric metres. Native approximately 30 m cells are bilinearly resampled to point-aligned Int16 HGT for the shared terrain pipeline. Ocean-only cells absent from the official public inventory are zero.\n",
+  "terrainProvider": "copernicus-glo30",
+  "townlands": false,
+  "validationAnchors": {
+    "east-entrance": [
+      -112.879,
+      37.234
+    ],
+    "kolob-canyons": [
+      -113.189,
+      37.452
+    ],
+    "springdale": [
+      -112.998,
+      37.189
+    ],
+    "zion-canyon": [
+      -112.998,
+      37.25
+    ]
+  }
+}

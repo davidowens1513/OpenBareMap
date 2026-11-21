@@ -1,0 +1,33 @@
+{
+  "bytes": 384305204,
+  "datasets": {
+    "basemap": {
+      "path": "maps/basemap.mbtiles",
+      "sha256": "69bd3010e3d95be803065576e17198a43b463e29a1ec6abc281af262fcca8f30"
+    },
+    "coast": {
+      "derivedFrom": "52139ac2ccedbfa356598a9b7ecda5697e7d20215813cfcc3d88d97717793c5a",
+      "path": "maps/coast.mbtiles",
+      "sha256": "0f6ba70fb1857c04e87adf29c9543f42c871e7e484ed6a3ca64fb2939db06b93"
+    },
+    "grid": {
+      "path": "maps/grid.mbtiles",
+      "sha256": "559128df29402b90df47b6f5e64ed7c18cb6dca80fc4722b62483569503393c2"
+    },
+    "hillshade": {
+      "path": "maps/hillshade.mbtiles",
+      "sha256": "b44068bb5bf694392a1765b5336d84ae7a039dc1280ea4c3dbf42af49673199b"
+    },
+    "topography": {
+      "path": "maps/topography.mbtiles",
+      "sha256": "52139ac2ccedbfa356598a9b7ecda5697e7d20215813cfcc3d88d97717793c5a"
+    }
+  },
+  "instructionsSHA256": "598241175265321863fc307d98895540d75ad0e258351c9e06b5e090c1322125",
+  "instructionsURL": "https://downloads.appsbyonzy.dev/OpenBareMap/us-yellowstone-grand-teton/2.0.0/app-bundles-v1/android/instructions.txt",
+  "localPath": "releases/us-yellowstone-grand-teton/2.0.0/app-bundles-v1/android/OpenBareMap-Yellowstone-Grand-Teton-Android-Bundle.zip",
+  "mapManifestSHA256": "9a4f64f26e81a61ff7a62a1571894ae3ab4190e6afe7ffb6a9c24b25a65720b1",
+  "r2Key": "OpenBareMap/us-yellowstone-grand-teton/2.0.0/app-bundles-v1/android/OpenBareMap-Yellowstone-Grand-Teton-Android-Bundle.zip",
+  "sha256": "dd4e75fe9c21aeb47f0851315226fad8c089f259074e3b837ff790519cf9f92c",
+  "url": "https://downloads.appsbyonzy.dev/OpenBareMap/us-yellowstone-grand-teton/2.0.0/app-bundles-v1/android/OpenBareMap-Yellowstone-Grand-Teton-Android-Bundle.zip"
+}

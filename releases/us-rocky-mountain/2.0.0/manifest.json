@@ -1,0 +1,106 @@
+{
+  "acceptance": "Automated checks only; see validation and visual-review records for actual reviewed scope.",
+  "coverage": "Rocky Mountain National Park, Trail Ridge Road, Estes Park and Grand Lake.",
+  "datasets": {
+    "basemap": {
+      "bytes": 16171008,
+      "path": "releases/us-rocky-mountain/2.0.0/maps/basemap.mbtiles",
+      "sha256": "e6947762d77ed9a436e30464febc1dd4a60acac93ce5b8bfd3a68f9a23319044",
+      "validation": {
+        "empty_tile_count": 3,
+        "logical_tiles_sha256": "4b620f7b16f5c8ed14ebe143c3dc2ea4ad84d952e1fe7b173d47a7df32f4d87a",
+        "tile_count": 2112
+      }
+    },
+    "grid": {
+      "bytes": 745472,
+      "path": "releases/us-rocky-mountain/2.0.0/maps/grid.mbtiles",
+      "sha256": "612923e176b450045b03f200d170fbabdc8995e8eff0dd7ebc430abd40b45e66",
+      "validation": {
+        "empty_tile_count": 0,
+        "logical_tiles_sha256": "7afd8a2f71eb306147556bb2fda73b02f6c185d5de385014f0e21c7c7e773610",
+        "tile_count": 2102
+      }
+    },
+    "hillshade": {
+      "bytes": 21549056,
+      "path": "releases/us-rocky-mountain/2.0.0/maps/hillshade.mbtiles",
+      "sha256": "6aa11fa47979f4ac836f887ddcf5901230d781a03dbf8d0f5c03d3433239bbc9",
+      "validation": {
+        "empty_tile_count": 0,
+        "logical_tiles_sha256": "90054ad83d0da8770524b9e04bb9360b796ad2809c684e1bd01a72b26c3e739b",
+        "tile_count": 549
+      }
+    },
+    "topography": {
+      "bytes": 35098624,
+      "path": "releases/us-rocky-mountain/2.0.0/maps/topography-context.mbtiles",
+      "sha256": "8a5e79c943aa0329f42c26a5f1c457959476a538fb941d21e03c1c1634ee5e70",
+      "validation": {
+        "empty_tile_count": 34186,
+        "logical_tiles_sha256": "f253729ab6a9f9da07fdfe2e6fc1965405d07feffab6f5ccf95e8504bcb69e9a",
+        "tile_count": 39029
+      }
+    }
+  },
+  "garmin": {
+    "bytes": 13330432,
+    "path": "regions/us-rocky-mountain/garmin/dist/OpenBareMap-US-Rocky-Mountain.img",
+    "sha256": "6b5482c3cb13b14bf923ff346a29a8f982b914679c00a99594e910fc0004d8df"
+  },
+  "geometryReport": {
+    "path": "build/us-rocky-mountain-geometry/geometry-report.json",
+    "sha256": "b583b80e046f488bf9ed25eec914efd2f206d9f1f4c19235310a8d6a5c27c14f"
+  },
+  "hostAppsModified": false,
+  "mapVersion": "2.0.0",
+  "osm": {
+    "bytes": 10537735,
+    "operation": "Complete-feature bbox extraction with nested relation references",
+    "path": "data/regions/us-rocky-mountain/colorado-261120.osm.clipped.osm.pbf",
+    "replicationTimestamp": "2026-11-20T21:21:21Z",
+    "sha256": "fb888f65d9c2996ffd08fdde4a8e28948fee3cb9ac16bdcf50fa8654e89bb087",
+    "snapshot_date": "2026-11-20",
+    "url": "https://download.geofabrik.de/north-america/us/colorado/colorado-261120.osm.pbf"
+  },
+  "packages": {
+    "android": {
+      "archive": {
+        "bytes": 77874977,
+        "path": "regions/us-rocky-mountain/android/OpenBareMap-Android.zip",
+        "sha256": "2b11c4fb0b4cf2259992889f6bc45f3b29c665b71a12252619879d9ccf25ee99"
+      },
+      "checksumsSHA256": "9fc18cfa17ddad6294e654227611c0e6b4db2273c46bcc21a2ff00c1d27cbc6a",
+      "manifestSHA256": "0d916484cdc9dec0abdd4afb259167f7e46c2fefeabd539932a7a3b180ed207f",
+      "path": "regions/us-rocky-mountain/android",
+      "validationSHA256": "af9108baca7679a32d1d0f7d72bbc7f245063e29519fd9da9f0c236387441401"
+    },
+    "ios": {
+      "checksumsSHA256": "d53db5da90c9733e3684216fe7470c6e327a57fcfd4e12606d7121c4269c3440",
+      "manifestSHA256": "a57f4a7cbdff0723b868750b9970d5991344a51d149e5fa04eec2c86f218a314",
+      "path": "regions/us-rocky-mountain/ios",
+      "validationSHA256": "ad585e98fec7b16c07f9cdc280c0a267103977f740b1069caa57be6a1697d671"
+    }
+  },
+  "pythonRuntime": {
+    "packages": {
+      "Pillow": "12.3.0",
+      "certifi": "2026.10.23",
+      "charset-normalizer": "3.5.2",
+      "idna": "3.20",
+      "numpy": "2.5.4",
+      "osmium": "4.3.2",
+      "pyproj": "3.8.0",
+      "requests": "2.34.2",
+      "shapely": "2.2.0",
+      "urllib3": "2.8.0"
+    },
+    "platform": "macOS-27.2.1-arm64-arm-64bit-Mach-O",
+    "python": "3.14.5 (main, May 10 2026, 10:21:34) [Clang 21.0.0 (clang-2100.0.123.102)]",
+    "requirementsSHA256": "427f12ff8b49bfebac0a7d453c2f65bd15d6695584b18e6ecee1fdfeed20a36c"
+  },
+  "region": "us-rocky-mountain",
+  "styleSHA256": "6dbb76c4a723f1a0fb73a1458711fae0487cbfe0136953e8811df32f0f5b74e3",
+  "terrainLockSHA256": "c4337de8dd07d2b42490c30fdfb95c3be77a579471f6769cd820717515cf8137",
+  "validation": "validation.json"
+}

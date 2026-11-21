@@ -78,7 +78,8 @@ def prepare(region='ireland'):
    for f in data['features']:
     g=f['geometry'];polys=[g['coordinates']] if g['type']=='Polygon' else g['coordinates']
     for rings in polys:
-     for ring in rings:line(ring,{tag:'yes','name':'Sierra Nevada National Park' if name=='park-boundary' else '25 km coverage limit'},closed=True)
+     label=f['properties'].get('name','Sierra Nevada National Park') if name=='park-boundary' else p.get('coverageBoundaryLabel','25 km coverage limit')
+     for ring in rings:line(ring,{tag:'yes','name':label},closed=True)
  west,south,east,north=counts['coverage']
  polygon([[[west,south],[east,south],[east,north],[west,north],[west,south]]],{'obm:sea':'yes'})
  if p['townlands']:

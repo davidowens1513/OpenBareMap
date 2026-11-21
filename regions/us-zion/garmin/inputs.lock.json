@@ -1,0 +1,20 @@
+{
+  "inputs": [
+    {
+      "path": "regions/us-zion/garmin/inputs/contours.geojson.gz",
+      "sha256": "ad8033f83f27249f7973d3c8fa98a7f9ba168bb2ceac9bf1c10f7a67f8dc895a",
+      "uncompressedSHA256": "91b697c9dbe2cf9913de76ebfb8ddd268c0e74c2fa6a93303983851ea3e27471"
+    },
+    {
+      "path": "regions/us-zion/garmin/inputs/landcover.geojson.gz",
+      "sha256": "79be548ee2520d097a4181bca211ea27d93a0ca362302a101648eebcc48e0d52",
+      "uncompressedSHA256": "7da2e30e1e8d5db01267dc553a5fddd0b14dc4c470deeae51b636801338b7ef4"
+    },
+    {
+      "path": "regions/us-zion/garmin/inputs/land.geojson.gz",
+      "sha256": "481b0f585d8af407baa03a63ee8818a63838cf45f4c002e9bf9c307f093aea09",
+      "uncompressedSHA256": "d91044d3f32bf85ac438c80836cc4ade9083be172bccd08143178e14acb1a30c"
+    }
+  ],
+  "region": "us-zion"
+}

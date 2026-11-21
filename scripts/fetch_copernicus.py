@@ -34,14 +34,15 @@ def fetch(region,padding=False):
  lock=region_path(region,'garmin/dem-padding.lock.json' if padding else 'terrain-sources.lock.json')
  if lock.exists():
   record=json.loads(lock.read_text());verify(record['assets']+record.get('sourceAssets',[]));return
- index=download(BASE+'tileList.txt',folder/'copernicus/tileList.txt');available=set((ROOT/index['path']).read_text().splitlines())
+ cache=ROOT/'data/regions'/p.get('terrainCacheRegion',region)/'copernicus'
+ index=download(BASE+'tileList.txt',cache/'tileList.txt');available=set((ROOT/index['path']).read_text().splitlines())
  west,south,east,north=p['terrainBounds'];cells=[(la,lo) for la in range(south,north) for lo in range(west,east)]
  if padding:cells=[(la,lo) for la in range(south-1,north+1) for lo in range(west-1,east+1) if (la,lo) not in cells]
  sources=[];cogs={}
  for la,lo in cells:
   stem=f'Copernicus_DSM_COG_10_N{la:02d}_00_{"W" if lo<0 else "E"}{abs(lo):03d}_00_DEM'
   if stem in available or stem+'/' in available:
-   item=download(BASE+stem+'/'+stem+'.tif',folder/'copernicus'/(stem+'.tif'));sources.append(item);cogs[(la,lo)]=ROOT/item['path']
+   item=download(BASE+stem+'/'+stem+'.tif',cache/(stem+'.tif'));sources.append(item);cogs[(la,lo)]=ROOT/item['path']
  toolchain=json.loads((ROOT/'topography-toolchain.lock.json').read_text());tools={n:toolchain[n]['path'] for n in ['gdalwarp','gdal_translate','gdalbuildvrt']}
  for n,path in tools.items():
   if digest(path)!=toolchain[n]['sha256']:raise ValueError('DEM conversion tool changed: '+n)

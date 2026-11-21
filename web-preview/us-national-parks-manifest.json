@@ -1,0 +1,297 @@
+{
+  "regions": {
+    "us-yosemite": {
+      "basemap": {
+        "sourceSHA256": "b5f9cc664efdb155836f9b7d1737461a75d30c05b9ade9aa41123ae6fdef59e9",
+        "bytes": 31520269,
+        "sha256": "fe1045a89ee07575808dc172155770ab36d88b28546081df64f23d2252418995",
+        "tiles": 4160
+      },
+      "grid": {
+        "sourceSHA256": "1367af0fa0999e1ecc42d70199f36b2cf5fa237c573c1a37a228118d21642007",
+        "bytes": 1317404,
+        "sha256": "a5a782873f84c4b2edfaf3ba801a857c72e5d9351b67704d4a2c03e150bf54c5",
+        "tiles": 4174
+      },
+      "hillshade": {
+        "sourceSHA256": "b4fd0c6bc6c223ede7705fa657be8c8ccd2110885c5024f9d204cdfc491cbd7f",
+        "bytes": 61807154,
+        "sha256": "71bdbeb6c235572d6909efb1b95308be78565e817a673f917ddb05a4414787e5",
+        "tiles": 1468
+      },
+      "topography": {
+        "sourceSHA256": "66cb6aef7dd63d28401bc8b3b4aa713aa4f3531ee50f2d9ee7d309b060674bf7",
+        "bytes": 70785952,
+        "sha256": "e988492b99aa861d8028d6d3f9c8bbc185306de9d5db7a03d96018678dac3327",
+        "tiles": 55812
+      },
+      "coast": {
+        "sourceSHA256": "31baeabd7327d27c93061756691c746cd45f42a6f0925cd3a5ed23045e5802b3",
+        "bytes": 148691,
+        "sha256": "cdcf5be28d7c701ee4c3835eb3e2b0f75f78bfd71a27f1d4731451c3ee0bb4a1",
+        "tiles": 4685
+      }
+    },
+    "us-great-smoky-mountains": {
+      "basemap": {
+        "sourceSHA256": "92d5f46df61c845c29ca12b9748237ed28b42533b1c97714432339e3b6ce3805",
+        "bytes": 43181950,
+        "sha256": "393f4152c4d988e0646ae9a6bb8c6472bef585a1a3c10ec698593c98597eaef1",
+        "tiles": 3191
+      },
+      "grid": {
+        "sourceSHA256": "37767a27165e6e108f2d58ae82ab0a0d715d5ec944cb0e23d88f802d108afb4d",
+        "bytes": 1015952,
+        "sha256": "590db323919746910a771f01ea635f8afac0a7352a70f406873215d10edafe47",
+        "tiles": 3177
+      },
+      "hillshade": {
+        "sourceSHA256": "06b58c5218c5cda1aa03b8db806c23782fcc69a21b1ad2f6b91a3f915381c19c",
+        "bytes": 35535165,
+        "sha256": "c16a5504d88558dc4fc6cbdc558983a22c0b29c8ac4d9280711edd578ab63727",
+        "tiles": 740
+      },
+      "topography": {
+        "sourceSHA256": "3fe5f82c7ada611e9f9773606f61cc8848440ae2790f1d29e4b4c30514d91b13",
+        "bytes": 62997545,
+        "sha256": "27db0905393feb3032e1c63f39a0210190ef9baa3722bf7149cfffe5412da247",
+        "tiles": 44453
+      },
+      "coast": {
+        "sourceSHA256": "1cc687f138f9c037ddeb7f58113a84f196f74519c631171053002a4c89db5f69",
+        "bytes": 23748,
+        "sha256": "35cf0b2b0bf6fc201341b2351f9ee959cb88cb2f19686036298039fce0647775",
+        "tiles": 3417
+      }
+    },
+    "us-zion": {
+      "basemap": {
+        "sourceSHA256": "ab9d2fa4bccf09762672c0eb917bd5e6b219184e3dd6866f4da0d056fd3ac734",
+        "bytes": 9203492,
+        "sha256": "8e8e1f488f0d507e3c9f9d4c9098c2f72a028c02de0e1ad9d3766f4933d5b97a",
+        "tiles": 1600
+      },
+      "grid": {
+        "sourceSHA256": "627a81f0d0ddd4f3d0e8625cffe1037bb8143040c9ebbcc0e2106ec6c8424412",
+        "bytes": 494823,
+        "sha256": "6ded3ba05f3e3caafb88c2d63379dda4c3b8055b5da59249e59264c20a56f1c1",
+        "tiles": 1603
+      },
+      "hillshade": {
+        "sourceSHA256": "b81ad847c6eb895e042172274f80747250b49f6e44736cb8700c7ae67a69fb98",
+        "bytes": 20376210,
+        "sha256": "eb69a3d4214c86ab3a2e4589b29a86c7517b0dd581e8c81e8eb0ed88175cf9c7",
+        "tiles": 547
+      },
+      "topography": {
+        "sourceSHA256": "bbd7001efc4117d5cf72c6469e60b967c477de8bd54b99b3a584cc4ed544eeab",
+        "bytes": 23752424,
+        "sha256": "ec63084c052237441c47572369058e4f72e515242afdf4c436a8d924b72a8934",
+        "tiles": 37387
+      },
+      "coast": {
+        "sourceSHA256": "da80f832a0f7fe6dca486984b187fb7137cbbec566d4c61a97ed724d7a0b610e",
+        "bytes": 23108,
+        "sha256": "4a4b9dd898199b32d3b3e62c0cd9883fb4c625401710c2a13b019588a1bc264d",
+        "tiles": 2855
+      }
+    },
+    "us-yellowstone-grand-teton": {
+      "basemap": {
+        "sourceSHA256": "69bd3010e3d95be803065576e17198a43b463e29a1ec6abc281af262fcca8f30",
+        "bytes": 81111302,
+        "sha256": "5dc8fd8c3828a7cd4889fee6b896be11e9368253ba1561428c645d6d5fe1dcbd",
+        "tiles": 12883
+      },
+      "grid": {
+        "sourceSHA256": "559128df29402b90df47b6f5e64ed7c18cb6dca80fc4722b62483569503393c2",
+        "bytes": 3804500,
+        "sha256": "da321f5ffc00541e287d9e67a9b6ac63921882133beca55b48e997d6eb919921",
+        "tiles": 13177
+      },
+      "hillshade": {
+        "sourceSHA256": "b44068bb5bf694392a1765b5336d84ae7a039dc1280ea4c3dbf42af49673199b",
+        "bytes": 99464517,
+        "sha256": "09643f6aa27d428abb0a5094ebc73c0f77d2791ceb92941c272e6653fc7099fd",
+        "tiles": 2337
+      },
+      "topography": {
+        "sourceSHA256": "52139ac2ccedbfa356598a9b7ecda5697e7d20215813cfcc3d88d97717793c5a",
+        "bytes": 172153129,
+        "sha256": "f9c265e3710912739d2a1a8fe187ca801d8a2bfe8fd9a61c1867fb5462240a50",
+        "tiles": 77283
+      },
+      "coast": {
+        "sourceSHA256": "0f6ba70fb1857c04e87adf29c9543f42c871e7e484ed6a3ca64fb2939db06b93",
+        "bytes": 36755,
+        "sha256": "907088afb4133ce91709bd2ee48e075a01cfddce080f9bd358eb1fce0caf20d3",
+        "tiles": 6337
+      }
+    },
+    "us-grand-canyon": {
+      "basemap": {
+        "sourceSHA256": "229e2620a4000f8a519767327cd3a240a43877596d8744d2aaab915297f32e19",
+        "bytes": 65183913,
+        "sha256": "08e260dc5f1c097a93ebb0607c77da0b859090cdcbb1a9f845e5c8d48a2ae1dc",
+        "tiles": 12992
+      },
+      "grid": {
+        "sourceSHA256": "1eaa23780156169a09501c47b45f0ddaef7ab7633581622cf72c677ad3a32a72",
+        "bytes": 4161528,
+        "sha256": "711c68012e3921d9721739cf950ae7be6ab0f507b2e3ede437549a66a387b312",
+        "tiles": 13056
+      },
+      "hillshade": {
+        "sourceSHA256": "c14fa9c2bc6bc36fd6c2c0b251dffaf15ce774651a914b3b43290fb2ed793efc",
+        "bytes": 74634327,
+        "sha256": "6b640bb45e9d5784a28476f3adc7b89c75eba43d26d2ce5de599294f812a2543",
+        "tiles": 1875
+      },
+      "topography": {
+        "sourceSHA256": "5303b59b9f0d67c94eaf7f839bf46b17e483680ddc61e6992d21252b18abc70d",
+        "bytes": 158676921,
+        "sha256": "7696b2b7894a4a164bbfb575e39bcb98a55dc595912a5e7ff2fcf8cbe96fac8c",
+        "tiles": 69349
+      },
+      "coast": {
+        "sourceSHA256": "455c2ca3755e68f93c1aebeb8383580b60ad9db1f46c8ce9effebeafc1be0d7b",
+        "bytes": 36850,
+        "sha256": "cd4d8fdb3891f7e6331c4503433914b65946874a5f8a1e5adb3bd928eea9a277",
+        "tiles": 5454
+      }
+    },
+    "us-rocky-mountain": {
+      "basemap": {
+        "sourceSHA256": "e6947762d77ed9a436e30464febc1dd4a60acac93ce5b8bfd3a68f9a23319044",
+        "bytes": 14838492,
+        "sha256": "f3ceb7301683c63dbdaa0962f6c9e2ae5225139aedbabbc21cd077d1c0d7c95a",
+        "tiles": 2112
+      },
+      "grid": {
+        "sourceSHA256": "612923e176b450045b03f200d170fbabdc8995e8eff0dd7ebc430abd40b45e66",
+        "bytes": 628642,
+        "sha256": "7c3bab3bb7e55a1283317f716925ba3f73d657ac9bf4810c7c5c4f105c3b20ef",
+        "tiles": 2102
+      },
+      "hillshade": {
+        "sourceSHA256": "6aa11fa47979f4ac836f887ddcf5901230d781a03dbf8d0f5c03d3433239bbc9",
+        "bytes": 21130314,
+        "sha256": "c77e4f4e7695cbfeba75c4b77c3ff9b9d9ced4f2c78f1a768d2ec4dd2c75a196",
+        "tiles": 549
+      },
+      "topography": {
+        "sourceSHA256": "8a5e79c943aa0329f42c26a5f1c457959476a538fb941d21e03c1c1634ee5e70",
+        "bytes": 31382366,
+        "sha256": "c94032d3b41723ac4fd295f7032134a4a1010cb1f647374a3cf52be65c581dd6",
+        "tiles": 39029
+      },
+      "coast": {
+        "sourceSHA256": "55dc5a49422ae37bc869b015b8c8e10db624798a736517f8267fab0a7b49ab7b",
+        "bytes": 19166,
+        "sha256": "9fcbdec25b2cb7e8ac9a2cc04f44f0833a24d627f746e9580403c332cfd6249a",
+        "tiles": 2892
+      }
+    },
+    "us-acadia": {
+      "basemap": {
+        "sourceSHA256": "18a8d081ec4a40b3f657712f83444350eabe6b00906259f83aa0c40c53b31d84",
+        "bytes": 4949914,
+        "sha256": "b591867af13c9f4c482cd7cb5a50b5ed1f3bf2edfa0ebf2cdd8d2c6df5df63b0",
+        "tiles": 1325
+      },
+      "grid": {
+        "sourceSHA256": "c67a1e9b3f725933dafdf47e6da59a3514d09e02eb30810499b5ffc21f83d1b2",
+        "bytes": 518368,
+        "sha256": "4d3eb0ef77670512e43ff07c27c56a61af1dbf71cf43ab7519c4a12f5e3d0d83",
+        "tiles": 1817
+      },
+      "hillshade": {
+        "sourceSHA256": "1977dd3938dc868a071c4f72d89834390820754942040eef8805b728ff494d16",
+        "bytes": 11261946,
+        "sha256": "b494a6543c5534a91fa36a4ff945cd500e3e7629f53da22f8c600a35ae4c48c2",
+        "tiles": 424
+      },
+      "topography": {
+        "sourceSHA256": "eca1eebb7707f383e3795e327b936d12cb2cbe960e26b59f303186bbee7c50bd",
+        "bytes": 4196605,
+        "sha256": "beedc89ba693606784acaf75eb9084cfb7170adc043b7ae0eea38a9559ae2b87",
+        "tiles": 24104
+      },
+      "coast": {
+        "sourceSHA256": "08125bf49bae02910921eecbc2d9e83873a3038da554573d1122d91d0264d1a1",
+        "bytes": 1594829,
+        "sha256": "05567359115641af74feff447d624a348a2d2747864d05057fd6e6119a3f20fe",
+        "tiles": 1964
+      }
+    },
+    "us-olympic": {
+      "basemap": {
+        "sourceSHA256": "92ab78c832f5b9425fd4c2b7c7914c1a551de35152762cb468ce896f07754c5d",
+        "bytes": 34136629,
+        "sha256": "9fe4417664aef1b1cdfc7abd6edae1b47ab5036548aa62ac68ecc646846ae7c5",
+        "tiles": 6829
+      },
+      "grid": {
+        "sourceSHA256": "be1f2c67797fe89bc8586c02001cef720acea8eedd0b1ce858775f218e6a3730",
+        "bytes": 2748271,
+        "sha256": "0152ecb85942ca68b74f6a3ce20d554f98717022b76602ced9ba3747a97adab0",
+        "tiles": 9801
+      },
+      "hillshade": {
+        "sourceSHA256": "1ddd0d13641446a3163415a773a3c3c285873285bb71bba3b0691f1a9bdc01d2",
+        "bytes": 49759215,
+        "sha256": "fc084b59e34d37fd46b51e2cf641032df6da3ea1d265db13a1c6fa49eef0f1f4",
+        "tiles": 1379
+      },
+      "topography": {
+        "sourceSHA256": "85110ca132377ed9eca0400720291c41d63cd475db235f31dd15bfd050e3ca36",
+        "bytes": 100351761,
+        "sha256": "31896e8fea9e7cb7b27b6cf00a54be0ee90a3419d5f607cadf655ef03e6e1a57",
+        "tiles": 53477
+      },
+      "coast": {
+        "sourceSHA256": "0804d64331ff23906edec52ae785e24c5b18ef823b82be3082926053a5d35005",
+        "bytes": 2256076,
+        "sha256": "85bcf3665442fab9097bc01e2d85f68868e0434511bf0dd3cddc78d4b9c89fd1",
+        "tiles": 4280
+      }
+    },
+    "us-glacier": {
+      "basemap": {
+        "sourceSHA256": "feb35ce17f884dc0d3770feb98b571724f59d0aebac9375808a331417708d495",
+        "bytes": 19735274,
+        "sha256": "1379ee6a3b7d689dddb6d1153f672100b875d769ee69679789e3da1622596941",
+        "tiles": 6469
+      },
+      "grid": {
+        "sourceSHA256": "7b6f7a769bd7761febccd16d71c43690c6e5304ce4fac9e7f793eb46f8c58b59",
+        "bytes": 1864770,
+        "sha256": "04f22ebc6fb5c05ee9b6c626f8f07d4288847f04c2d5c17b64c8445eda0430f2",
+        "tiles": 6357
+      },
+      "hillshade": {
+        "sourceSHA256": "ce4cc534a008ba42659ef44b835040ebf684b9452dbb225e7c220f5f1dfd987e",
+        "bytes": 44874724,
+        "sha256": "4c372c890b2734e476da47b15a14c204f7f1fdabdb576ff3e1ce6b3c6a5d5d96",
+        "tiles": 1167
+      },
+      "topography": {
+        "sourceSHA256": "493ecacc6f8ff2e3a2932aadcc1932221bdfce9cee9655a18e44413e363688b2",
+        "bytes": 79600074,
+        "sha256": "d9c128059c65e9d387a80ca6bd1068a5feef90a62a3a6d45df3e13fb1d00b3e9",
+        "tiles": 58468
+      },
+      "coast": {
+        "sourceSHA256": "a030d774020ee56ca525e32cdf4ce326fa7a7956b9c1a9350119201e3028fce0",
+        "bytes": 26490,
+        "sha256": "0ee83ece4ee702bdfbac51b9ed12dbadf00b88d2227d841c7963fcc9698ef99f",
+        "tiles": 4382
+      }
+    }
+  },
+  "pmtilesPython": "3.8.1",
+  "pmtilesJS": "4.5.0",
+  "librarySHA256": "caf981bc46f6327ee7e65d5dc964d89d38a69f60edca2bd4c5c890c21b554c6c",
+  "dataOrigin": "https://downloads.appsbyonzy.dev/OpenBareMap/us-national-parks/2.0.0/preview",
+  "scope": "Complete selected map tiles; no regional or zoom sampling."
+}

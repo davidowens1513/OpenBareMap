@@ -1,5 +1,62 @@
 # Maintaining regional editions
 
+## US National Parks
+
+The series covers ten parks in nine maps. Each edition uses the National Park
+Service boundary and a park-specific buffer that includes nearby trailheads,
+gateway towns and principal approaches. Yellowstone and Grand Teton share an
+edition linked by the John D. Rockefeller Jr. Memorial Parkway. The maps use
+OpenStreetMap from Geofabrik's 20 November 2026 state extracts, Copernicus
+GLO-30 elevation, 20 m contours, hillshade and a local WGS 84 / UTM grid.
+
+| Edition | Garmin family |
+| --- | --- |
+| Yosemite | 4855 |
+| Great Smoky Mountains | 4856 |
+| Zion | 4857 |
+| Yellowstone & Grand Teton | 4858 |
+| Grand Canyon | 4859 |
+| Rocky Mountain | 4860 |
+| Acadia | 4861 |
+| Olympic | 4862 |
+| Glacier | 4863 |
+
+Build using the installed regional Python dependencies. Pass `--regions` to
+build selected editions or `--prepare-only` to verify the park boundaries.
+
+```sh
+PYTHONPATH=work/python python3 scripts/build_us_national_parks.py --source-date 2026-11-20
+```
+
+Once all nine editions pass validation, stage iOS, Android and Garmin
+downloads, the three collection ZIPs, the website, the browser previews and
+the BareGPS Worldwide catalogue.
+
+```sh
+PYTHONPATH=work/python python3 scripts/stage_us_national_parks.py
+```
+
+The output is in `work/us-national-parks-release/`. The collection downloads
+are about 1.60 GB for iOS, 1.60 GB for Android and 286 MB for Garmin.
+
+Publish from a network-enabled terminal with the production R2 remote
+configured in rclone. The command checks public download hashes and preview
+byte ranges, merges the nine releases into the live catalogues and refreshes
+regional preview navigation. Successful readbacks are recorded in
+`public-verification.json` so an interrupted upload can resume.
+
+```sh
+PYTHONPATH=work/python python3 scripts/stage_us_national_parks.py --publish-assets
+```
+
+After the upload command succeeds, deploy
+`work/us-national-parks-release/appsbyonzy-us-national-parks.zip` to the
+production Cloudflare Pages project. Verify the homepage and the US National
+Parks links on the live site. Commit the updated homepage in the
+[website repository](https://github.com/davidowens1513/AppsByOnzy-Website),
+the release files in OpenBareMap, and the verified `worldwide-catalog-v1.json`
+in the `Distribution/` directory of BareGPS Worldwide.
+
 ## Alps editions
 
 The Alpine series uses five display names. **Alps - Dolomites** reuses the

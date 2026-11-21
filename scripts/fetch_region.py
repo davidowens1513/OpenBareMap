@@ -69,7 +69,9 @@ def fetch_osm(region):
         if not path.exists():
             from download_ranges import fetch
             fetch(url,path,workers=4 if p.get('clipSource') else 8)
-        with urllib.request.urlopen(url+'.md5',timeout=60) as response:expected=response.read().decode().split()[0]
+        checksum=path.with_name(path.name+'.md5')
+        download(url+'.md5',checksum)
+        expected=checksum.read_text().split()[0]
         with path.open('rb') as stream:actual=hashlib.file_digest(stream,'md5').hexdigest()
         if actual!=expected:raise ValueError('Source MD5 does not match upstream: '+name)
         item=download(url,path)

@@ -1,0 +1,29 @@
+{
+  "accessed_utc": "2026-11-21T12:07:20.441266+00:00",
+  "inputs": [
+    {
+      "bytes": 388989511,
+      "path": "data/regions/us-national-parks/colorado-261120.osm.pbf",
+      "replicationTimestamp": "2026-11-20T21:21:21Z",
+      "sha256": "2094fcbab36b6d1f4550027507e810600f7659ff7a362bda1796912e5d01911a",
+      "url": "https://download.geofabrik.de/north-america/us/colorado/colorado-261120.osm.pbf"
+    }
+  ],
+  "osm": {
+    "bytes": 10537735,
+    "operation": "Complete-feature bbox extraction with nested relation references",
+    "path": "data/regions/us-rocky-mountain/colorado-261120.osm.clipped.osm.pbf",
+    "replicationTimestamp": "2026-11-20T21:21:21Z",
+    "sha256": "fb888f65d9c2996ffd08fdde4a8e28948fee3cb9ac16bdcf50fa8654e89bb087",
+    "snapshot_date": "2026-11-20",
+    "url": "https://download.geofabrik.de/north-america/us/colorado/colorado-261120.osm.pbf"
+  },
+  "polygons": [
+    {
+      "bytes": 495,
+      "path": "data/regions/us-rocky-mountain/colorado.poly",
+      "sha256": "c4c84e42a59d2322b4f711a6da3426c0763f918543e53520cd8ae85f3d032f76",
+      "url": "https://download.geofabrik.de/north-america/us/colorado/colorado.poly"
+    }
+  ]
+}

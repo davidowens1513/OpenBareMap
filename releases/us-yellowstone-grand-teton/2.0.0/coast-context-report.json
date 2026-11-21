@@ -1,0 +1,52 @@
+{
+  "builderSHA256": "df45d47a59e968508a89136d44d799aaf2bba52547b211e0dff68a5b0e0f6cfc",
+  "contextBounds": [
+    -113,
+    42,
+    -108,
+    47
+  ],
+  "note": "Contour payloads preserved exactly while extending land background outside edition coverage.",
+  "oldTopography": {
+    "bytes": 185958400,
+    "path": "releases/us-yellowstone-grand-teton/2.0.0/maps/topography.mbtiles",
+    "sha256": "6cdc781e16c6b2a0f4ccd9de2d369178cfb62851b12a130025dffa1f1a1606ce",
+    "validation": {
+      "empty_tile_count": 58749,
+      "logical_tiles_sha256": "22621aad8a7921ec3ecf62bf92813cf11984ed0c1c223e19b681abf59662f362",
+      "tile_count": 77283
+    }
+  },
+  "output": {
+    "bytes": 185790464,
+    "path": "releases/us-yellowstone-grand-teton/2.0.0/maps/topography-context.mbtiles",
+    "sha256": "52139ac2ccedbfa356598a9b7ecda5697e7d20215813cfcc3d88d97717793c5a",
+    "validation": {
+      "empty_tile_count": 58749,
+      "logical_tiles_sha256": "22621aad8a7921ec3ecf62bf92813cf11984ed0c1c223e19b681abf59662f362",
+      "tile_count": 77283
+    }
+  },
+  "replacement": {
+    "changed_tiles": 6337,
+    "path": "build/us-yellowstone-grand-teton-coast-context/combined.mbtiles",
+    "replacement_feature_instances": 8371,
+    "sha256": "2852686d0f1e83b5041f67d5fedbb5acdf2e5fd613994327f2df68f3227aaa0a",
+    "unchanged_other_layers_sha256": "e8a2a0ffcf015d71aa8b970abfe7755170338e088cbc60a2636d8fb0a1b4f94c",
+    "validation": {
+      "empty_tile_count": 58749,
+      "logical_tiles_sha256": "22621aad8a7921ec3ecf62bf92813cf11984ed0c1c223e19b681abf59662f362",
+      "tile_count": 77283
+    }
+  },
+  "source": {
+    "accessed_utc": "2026-10-25T12:59:16.751893+00:00",
+    "bytes": 928538219,
+    "http_headers_path": "data/land-polygons.headers",
+    "license": "ODbL 1.0; OpenStreetMap contributors",
+    "path": "data/land-polygons-split-4326.zip",
+    "sha256": "5911e273096f9585425a17c30a8a98785cc33ed2718ff88987768933b8a327f7",
+    "source_snapshot": "HTTP Last-Modified 2026-10-25T03:43:12Z; this is file publication, not a guaranteed OSM snapshot timestamp",
+    "url": "https://osmdata.openstreetmap.de/download/land-polygons-split-4326.zip"
+  }
+}

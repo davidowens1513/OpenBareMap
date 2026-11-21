@@ -1,0 +1,20 @@
+{
+  "inputs": [
+    {
+      "path": "regions/us-olympic/garmin/inputs/contours.geojson.gz",
+      "sha256": "41ce7e205a3106070733ab50ce1d58a82ad0c4e11e82596323379370483a05e8",
+      "uncompressedSHA256": "4f41ef5a2390b04ea336acb3805a084fec79150be4df659077c84759a74ad879"
+    },
+    {
+      "path": "regions/us-olympic/garmin/inputs/landcover.geojson.gz",
+      "sha256": "5fe5d6ea9eb5fa7e0da6226dc6af1ad6eb051c3885f8a47fe06494099ee53648",
+      "uncompressedSHA256": "6bd9c5e3832d6f5fa6915b82b7ab21383770dbb56f38efed4a322bdd4dd4897f"
+    },
+    {
+      "path": "regions/us-olympic/garmin/inputs/land.geojson.gz",
+      "sha256": "3c2276450819ae459d92d9e863c379a21f1026ae382b7d4e7a3bacc2fbffb274",
+      "uncompressedSHA256": "58bf834c1d2e5d31dc635ec6603f8c904cf34cc63f7f99f4a8cd46bc97c57401"
+    }
+  ],
+  "region": "us-olympic"
+}

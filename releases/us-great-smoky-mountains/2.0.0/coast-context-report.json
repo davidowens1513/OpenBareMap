@@ -1,0 +1,52 @@
+{
+  "builderSHA256": "fd5c3bd222cfc433bfbba98aeb1fd41da6f62a65db49a05abe26931b009940cb",
+  "contextBounds": [
+    -86,
+    34,
+    -81,
+    37
+  ],
+  "note": "Contour payloads preserved exactly while extending land background outside edition coverage.",
+  "oldTopography": {
+    "bytes": 67858432,
+    "path": "releases/us-great-smoky-mountains/2.0.0/maps/topography.mbtiles",
+    "sha256": "736f7dab681213fe4e8b7bae22c976214577b8f8eede940fac99f494535601c2",
+    "validation": {
+      "empty_tile_count": 38098,
+      "logical_tiles_sha256": "61f8726a7738c44837c5d495da443b7af41ca8005dcde54c26f751b35e8d14b4",
+      "tile_count": 44453
+    }
+  },
+  "output": {
+    "bytes": 67764224,
+    "path": "releases/us-great-smoky-mountains/2.0.0/maps/topography-context.mbtiles",
+    "sha256": "3fe5f82c7ada611e9f9773606f61cc8848440ae2790f1d29e4b4c30514d91b13",
+    "validation": {
+      "empty_tile_count": 38098,
+      "logical_tiles_sha256": "61f8726a7738c44837c5d495da443b7af41ca8005dcde54c26f751b35e8d14b4",
+      "tile_count": 44453
+    }
+  },
+  "replacement": {
+    "changed_tiles": 3417,
+    "path": "build/us-great-smoky-mountains-coast-context/combined.mbtiles",
+    "replacement_feature_instances": 4641,
+    "sha256": "8bdf53c690e0a3675a7c2cf3a45416a2fec4300a7142ab3b8ad3e8ceb3f8a5c6",
+    "unchanged_other_layers_sha256": "96b408614748a9c2fb4a7d53791046dd9d768c1147e14f12a15671c9c30d75aa",
+    "validation": {
+      "empty_tile_count": 38098,
+      "logical_tiles_sha256": "61f8726a7738c44837c5d495da443b7af41ca8005dcde54c26f751b35e8d14b4",
+      "tile_count": 44453
+    }
+  },
+  "source": {
+    "accessed_utc": "2026-10-25T12:59:16.751893+00:00",
+    "bytes": 928538219,
+    "http_headers_path": "data/land-polygons.headers",
+    "license": "ODbL 1.0; OpenStreetMap contributors",
+    "path": "data/land-polygons-split-4326.zip",
+    "sha256": "5911e273096f9585425a17c30a8a98785cc33ed2718ff88987768933b8a327f7",
+    "source_snapshot": "HTTP Last-Modified 2026-10-25T03:43:12Z; this is file publication, not a guaranteed OSM snapshot timestamp",
+    "url": "https://osmdata.openstreetmap.de/download/land-polygons-split-4326.zip"
+  }
+}

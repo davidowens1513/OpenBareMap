@@ -1,0 +1,29 @@
+{
+  "accessed_utc": "2026-11-21T11:58:14.911026+00:00",
+  "inputs": [
+    {
+      "bytes": 101768585,
+      "path": "data/regions/us-national-parks/montana-261120.osm.pbf",
+      "replicationTimestamp": "2026-11-20T21:21:21Z",
+      "sha256": "10ed39745c41c0b724d0a2dfae30d9ea71ffff8170f14701a41a6ec9c0c55f01",
+      "url": "https://download.geofabrik.de/north-america/us/montana/montana-261120.osm.pbf"
+    }
+  ],
+  "osm": {
+    "bytes": 12061983,
+    "operation": "Complete-feature bbox extraction with nested relation references",
+    "path": "data/regions/us-glacier/montana-261120.osm.clipped.osm.pbf",
+    "replicationTimestamp": "2026-11-20T21:21:21Z",
+    "sha256": "8a6c48e816351baa170eae29e2a87363a0eef48dc405a529f25efe6d518378df",
+    "snapshot_date": "2026-11-20",
+    "url": "https://download.geofabrik.de/north-america/us/montana/montana-261120.osm.pbf"
+  },
+  "polygons": [
+    {
+      "bytes": 9199,
+      "path": "data/regions/us-glacier/montana.poly",
+      "sha256": "4ef43cd229801d7bb629fe1c30b2957b7931fd705a4b68737f770c788c046cee",
+      "url": "https://download.geofabrik.de/north-america/us/montana/montana.poly"
+    }
+  ]
+}

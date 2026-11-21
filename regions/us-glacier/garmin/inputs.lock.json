@@ -1,0 +1,20 @@
+{
+  "inputs": [
+    {
+      "path": "regions/us-glacier/garmin/inputs/contours.geojson.gz",
+      "sha256": "0e537db7ac864d76a1ea74b42f6c43239ab8cc8b8b6600253919e5922aca05ec",
+      "uncompressedSHA256": "8b37e38c1c37fae6aa310202b755c3e00caf0cc2ab8f173b6068c68f272ca204"
+    },
+    {
+      "path": "regions/us-glacier/garmin/inputs/landcover.geojson.gz",
+      "sha256": "2d3cce00416f104f4901442a6bae2248e61567c2031f13d2319889b21f77e81b",
+      "uncompressedSHA256": "eb059f715a278b446b4371548c004772199118063729c1453f9aef4dd1e63656"
+    },
+    {
+      "path": "regions/us-glacier/garmin/inputs/land.geojson.gz",
+      "sha256": "b89a4e754f2be82b8856e0873eafbc8b395c51d031596fd4c2eb2196c26dda7a",
+      "uncompressedSHA256": "9fff4c6c8cf4823e8cff57643c2db31a7bb415d0cf435008a91b4e71d08fc395"
+    }
+  ],
+  "region": "us-glacier"
+}

@@ -1,0 +1,52 @@
+{
+  "contourIntervalMetres": 20,
+  "coverage": "Zion National Park, including Zion Canyon, Kolob Canyons, Springdale and the eastern approach.",
+  "datasets": {
+    "basemap": {
+      "bytes": 10125312,
+      "path": "releases/us-zion/2.0.0/maps/basemap.mbtiles",
+      "sha256": "ab9d2fa4bccf09762672c0eb917bd5e6b219184e3dd6866f4da0d056fd3ac734",
+      "validation": {
+        "empty_tile_count": 1,
+        "logical_tiles_sha256": "bf4348e53a0c8f18232dabeb0d421021c4b94f74875bf07813d79ea87639fa42",
+        "tile_count": 1600
+      }
+    },
+    "grid": {
+      "bytes": 589824,
+      "path": "releases/us-zion/2.0.0/maps/grid.mbtiles",
+      "sha256": "627a81f0d0ddd4f3d0e8625cffe1037bb8143040c9ebbcc0e2106ec6c8424412",
+      "validation": {
+        "empty_tile_count": 0,
+        "logical_tiles_sha256": "1de05617e770309f643d9ff341172fc5cf2959a3a2fa77b26ca40f9a626cb3d2",
+        "tile_count": 1603
+      }
+    },
+    "hillshade": {
+      "bytes": 20832256,
+      "path": "releases/us-zion/2.0.0/maps/hillshade.mbtiles",
+      "sha256": "b81ad847c6eb895e042172274f80747250b49f6e44736cb8700c7ae67a69fb98",
+      "validation": {
+        "empty_tile_count": 0,
+        "logical_tiles_sha256": "0d8a2d6e3ee1899f819dc63ea8779a096b81af75d5202f412d0f5f2f204065a7",
+        "tile_count": 547
+      }
+    },
+    "topography": {
+      "bytes": 26980352,
+      "path": "releases/us-zion/2.0.0/maps/topography-context.mbtiles",
+      "sha256": "bbd7001efc4117d5cf72c6469e60b967c477de8bd54b99b3a584cc4ed544eeab",
+      "validation": {
+        "empty_tile_count": 33057,
+        "logical_tiles_sha256": "7d53e2280cd931a2f70f5040241672339067c3f8de8cfe5a28dbcf93be10a6d5",
+        "tile_count": 37387
+      }
+    }
+  },
+  "format": "openbaremap-development-viewer-v1",
+  "localBorders": false,
+  "mapVersion": "2.0.0",
+  "region": "us-zion",
+  "storageRevision": "2.0.0-us-zion-r3",
+  "styleRevision": "2.0.0-us-zion-r1"
+}

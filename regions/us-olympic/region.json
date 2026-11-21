@@ -1,0 +1,170 @@
+{
+  "boundaryAttribution": "U.S. National Park Service, Land Resources Division",
+  "bounds": [
+    -124.94632432967465,
+    47.35282240798743,
+    -122.94687343041906,
+    48.49975874549836
+  ],
+  "clipBasemap": true,
+  "clipSource": true,
+  "coastContextBounds": [
+    -126,
+    46,
+    -121,
+    50
+  ],
+  "contourIntervalMetres": 20,
+  "coverage": "Olympic National Park, including the mountain interior, rainforest valleys, coastal sections and principal trailhead approaches.",
+  "coverageBoundary": true,
+  "coverageBoundaryLabel": "Map coverage limit",
+  "destinationLabels": {
+    "forks": "Forks",
+    "hoh-rain-forest": "Hoh Rain Forest",
+    "hurricane-ridge": "Hurricane Ridge",
+    "island": "Olympic",
+    "lake-crescent": "Lake Crescent",
+    "port-angeles": "Port Angeles",
+    "quinault": "Quinault",
+    "rialto-beach": "Rialto Beach"
+  },
+  "destinations": {
+    "forks": [
+      -124.385,
+      47.951,
+      12
+    ],
+    "hoh-rain-forest": [
+      -123.934,
+      47.86,
+      12
+    ],
+    "hurricane-ridge": [
+      -123.498,
+      47.969,
+      12
+    ],
+    "island": [
+      -123.9352880982287,
+      47.92736451768317,
+      9
+    ],
+    "lake-crescent": [
+      -123.857,
+      48.058,
+      12
+    ],
+    "port-angeles": [
+      -123.43,
+      48.118,
+      12
+    ],
+    "quinault": [
+      -123.845,
+      47.466,
+      12
+    ],
+    "rialto-beach": [
+      -124.633,
+      47.919,
+      12
+    ]
+  },
+  "garminContextBounds": [
+    -124.94632432967465,
+    47.35282240798743,
+    -122.94687343041906,
+    48.49975874549836
+  ],
+  "garminFamilyId": 4862,
+  "garminFilename": "OpenBareMap-US-Olympic.img",
+  "garminPackageRevision": "2.0.1-trail-detail-r1",
+  "garminTileStartId": 48620001,
+  "garminUseSourceOutline": true,
+  "gridCRS": "EPSG:32610",
+  "gridExtent": [
+    350000,
+    510000,
+    5240000,
+    5380000
+  ],
+  "gridName": "WGS 84 / UTM 10N",
+  "gridSource": "utm-grid",
+  "id": "us-olympic",
+  "ignoreSourceHeaderBounds": true,
+  "inspectionNames": [
+    "Port Angeles",
+    "Mount Olympus"
+  ],
+  "label": "Olympic",
+  "labelGlyphs": "ABCDEFGHIJKLMNOPQRSTUVWXYZ",
+  "mapVersion": "2.0.0",
+  "maxzoom": 14,
+  "minorWaterwayMinzoom": 10,
+  "minzoom": 4,
+  "name": "OpenBareMap Olympic",
+  "nativeLanguage": "en",
+  "optionalBasemapLayers": [
+    "station",
+    "railway",
+    "ferry",
+    "cycling_route",
+    "island_name",
+    "boundary",
+    "hiking_route"
+  ],
+  "projectedCRS": "EPSG:32610",
+  "repairClippedCoastline": true,
+  "requireBogFeatures": false,
+  "sourceBaseOverrides": {
+    "washington": "https://download.geofabrik.de/north-america/us/washington/"
+  },
+  "sourceBaseURL": "https://download.geofabrik.de/north-america/us/",
+  "sourceCacheRegion": "us-national-parks",
+  "sourceDate": "2026-11-20",
+  "sourceSlugs": [
+    "washington"
+  ],
+  "styleRevision": "2.0.0-us-olympic-r1",
+  "terrainAttribution": "Copernicus DEM GLO-30 \u00b7 European Union / ESA \u00b7 DLR / Airbus",
+  "terrainBounds": [
+    -125,
+    47,
+    -122,
+    49
+  ],
+  "terrainCacheRegion": "us-national-parks",
+  "terrainNotice": "Elevation: Copernicus DEM GLO-30 Public (AWS 2021 release).\n\nproduced using Copernicus WorldDEM-30 \u00a9 DLR e.V. 2010-2014 and \u00a9 Airbus Defence and Space GmbH 2014-2018 provided under COPERNICUS by the European Union and ESA; all rights reserved\n\nThe organisations in charge of the Copernicus programme by law or by delegation do not incur any liability for any use of the Copernicus WorldDEM-30.\n\nLicense: https://dataspace.copernicus.eu/sites/default/files/media/files/2025-06/copernicus_contributing_mission_data_access_v2_cop_dem_licenses.pdf\nSource: https://registry.opendata.aws/copernicus-dem/\nVertical datum: EGM2008 orthometric metres. Native approximately 30 m cells are bilinearly resampled to point-aligned Int16 HGT for the shared terrain pipeline. Ocean-only cells absent from the official public inventory are zero.\n",
+  "terrainProvider": "copernicus-glo30",
+  "townlands": false,
+  "validationAnchors": {
+    "forks": [
+      -124.385,
+      47.951
+    ],
+    "hoh-rain-forest": [
+      -123.934,
+      47.86
+    ],
+    "hurricane-ridge": [
+      -123.498,
+      47.969
+    ],
+    "lake-crescent": [
+      -123.857,
+      48.058
+    ],
+    "port-angeles": [
+      -123.43,
+      48.118
+    ],
+    "quinault": [
+      -123.845,
+      47.466
+    ],
+    "rialto-beach": [
+      -124.633,
+      47.919
+    ]
+  }
+}

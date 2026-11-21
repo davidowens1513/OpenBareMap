@@ -1,0 +1,33 @@
+{
+  "bytes": 162176026,
+  "datasets": {
+    "basemap": {
+      "path": "maps/basemap.mbtiles",
+      "sha256": "feb35ce17f884dc0d3770feb98b571724f59d0aebac9375808a331417708d495"
+    },
+    "coast": {
+      "derivedFrom": "493ecacc6f8ff2e3a2932aadcc1932221bdfce9cee9655a18e44413e363688b2",
+      "path": "maps/coast.mbtiles",
+      "sha256": "a030d774020ee56ca525e32cdf4ce326fa7a7956b9c1a9350119201e3028fce0"
+    },
+    "grid": {
+      "path": "maps/grid.mbtiles",
+      "sha256": "7b6f7a769bd7761febccd16d71c43690c6e5304ce4fac9e7f793eb46f8c58b59"
+    },
+    "hillshade": {
+      "path": "maps/hillshade.mbtiles",
+      "sha256": "ce4cc534a008ba42659ef44b835040ebf684b9452dbb225e7c220f5f1dfd987e"
+    },
+    "topography": {
+      "path": "maps/topography.mbtiles",
+      "sha256": "493ecacc6f8ff2e3a2932aadcc1932221bdfce9cee9655a18e44413e363688b2"
+    }
+  },
+  "instructionsSHA256": "f75d2c5685b1703ad6b725fd3d9bd084e1a58e78a8098656bdbc6f8dd17f2f41",
+  "instructionsURL": "https://downloads.appsbyonzy.dev/OpenBareMap/us-glacier/2.0.0/app-bundles-v1/android/instructions.txt",
+  "localPath": "releases/us-glacier/2.0.0/app-bundles-v1/android/OpenBareMap-Glacier-Android-Bundle.zip",
+  "mapManifestSHA256": "5ad7cb8988b77b64e86dfbe0a3118e8dd952572a43a15db93324e8aaaf01597a",
+  "r2Key": "OpenBareMap/us-glacier/2.0.0/app-bundles-v1/android/OpenBareMap-Glacier-Android-Bundle.zip",
+  "sha256": "834d2728ca8acbfb4bf10549921b59897383f67a5a05a3595f7c7bcd17c57d6f",
+  "url": "https://downloads.appsbyonzy.dev/OpenBareMap/us-glacier/2.0.0/app-bundles-v1/android/OpenBareMap-Glacier-Android-Bundle.zip"
+}

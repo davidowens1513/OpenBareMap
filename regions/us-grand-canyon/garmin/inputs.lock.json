@@ -1,0 +1,20 @@
+{
+  "inputs": [
+    {
+      "path": "regions/us-grand-canyon/garmin/inputs/contours.geojson.gz",
+      "sha256": "a7fa31a8c59cefd7112bdaff118526101aa6154e17d7d24a9483cd9ecaa06653",
+      "uncompressedSHA256": "5e43042924a2d0b34eef9d2f8c52dbac8fbc83fe68d50e7e608e0fcb905e0aef"
+    },
+    {
+      "path": "regions/us-grand-canyon/garmin/inputs/landcover.geojson.gz",
+      "sha256": "69a5bd648a7d44c2806ef14953d7e7e0251158f43b14512c570954429abcb3a3",
+      "uncompressedSHA256": "6d66aa54ea78d003ba7ccba5f5feedc4f92826612f3e01757fabce2c9b876589"
+    },
+    {
+      "path": "regions/us-grand-canyon/garmin/inputs/land.geojson.gz",
+      "sha256": "e6eb5c6798ea5c07e3103f62e24dc6b503fe15c976064cd601e92b0aa2a619f8",
+      "uncompressedSHA256": "92d71c41325c0f9bb4f814e96161b53042c407cbeb21f2d2208b9c6b8b976d33"
+    }
+  ],
+  "region": "us-grand-canyon"
+}

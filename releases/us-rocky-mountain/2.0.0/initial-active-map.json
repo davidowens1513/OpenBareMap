@@ -1,0 +1,52 @@
+{
+  "contourIntervalMetres": 20,
+  "coverage": "Rocky Mountain National Park, Trail Ridge Road, Estes Park and Grand Lake.",
+  "datasets": {
+    "basemap": {
+      "bytes": 16171008,
+      "path": "releases/us-rocky-mountain/2.0.0/maps/basemap.mbtiles",
+      "sha256": "e6947762d77ed9a436e30464febc1dd4a60acac93ce5b8bfd3a68f9a23319044",
+      "validation": {
+        "empty_tile_count": 3,
+        "logical_tiles_sha256": "4b620f7b16f5c8ed14ebe143c3dc2ea4ad84d952e1fe7b173d47a7df32f4d87a",
+        "tile_count": 2112
+      }
+    },
+    "grid": {
+      "bytes": 745472,
+      "path": "releases/us-rocky-mountain/2.0.0/maps/grid.mbtiles",
+      "sha256": "612923e176b450045b03f200d170fbabdc8995e8eff0dd7ebc430abd40b45e66",
+      "validation": {
+        "empty_tile_count": 0,
+        "logical_tiles_sha256": "7afd8a2f71eb306147556bb2fda73b02f6c185d5de385014f0e21c7c7e773610",
+        "tile_count": 2102
+      }
+    },
+    "hillshade": {
+      "bytes": 21549056,
+      "path": "releases/us-rocky-mountain/2.0.0/maps/hillshade.mbtiles",
+      "sha256": "6aa11fa47979f4ac836f887ddcf5901230d781a03dbf8d0f5c03d3433239bbc9",
+      "validation": {
+        "empty_tile_count": 0,
+        "logical_tiles_sha256": "90054ad83d0da8770524b9e04bb9360b796ad2809c684e1bd01a72b26c3e739b",
+        "tile_count": 549
+      }
+    },
+    "topography": {
+      "bytes": 35180544,
+      "path": "releases/us-rocky-mountain/2.0.0/maps/topography.mbtiles",
+      "sha256": "53d09598604b078acb067871c0ea43cff2b2c81ef1b8e4ca69b90b2c82230487",
+      "validation": {
+        "empty_tile_count": 34186,
+        "logical_tiles_sha256": "f253729ab6a9f9da07fdfe2e6fc1965405d07feffab6f5ccf95e8504bcb69e9a",
+        "tile_count": 39029
+      }
+    }
+  },
+  "format": "openbaremap-development-viewer-v1",
+  "localBorders": false,
+  "mapVersion": "2.0.0",
+  "region": "us-rocky-mountain",
+  "storageRevision": "2.0.0-us-rocky-mountain-r1",
+  "styleRevision": "2.0.0-us-rocky-mountain-r1"
+}

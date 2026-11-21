@@ -1,0 +1,29 @@
+{
+  "accessed_utc": "2026-11-21T11:58:09.048635+00:00",
+  "inputs": [
+    {
+      "bytes": 91308298,
+      "path": "data/regions/us-national-parks/maine-261120.osm.pbf",
+      "replicationTimestamp": "2026-11-20T21:21:21Z",
+      "sha256": "0f67e2f5067108fcfc4941a93ddfb68bcbf1ed4952045bf1a7749dbdd8e9d0db",
+      "url": "https://download.geofabrik.de/north-america/us/maine/maine-261120.osm.pbf"
+    }
+  ],
+  "osm": {
+    "bytes": 5824919,
+    "operation": "Complete-feature bbox extraction with nested relation references",
+    "path": "data/regions/us-acadia/maine-261120.osm.clipped.osm.pbf",
+    "replicationTimestamp": "2026-11-20T21:21:21Z",
+    "sha256": "b41c4622d70761a9b98899b016aefa161fa44d2b06a3c111b4b5764327176814",
+    "snapshot_date": "2026-11-20",
+    "url": "https://download.geofabrik.de/north-america/us/maine/maine-261120.osm.pbf"
+  },
+  "polygons": [
+    {
+      "bytes": 4303,
+      "path": "data/regions/us-acadia/maine.poly",
+      "sha256": "d350920858567f28fa8b69a78c089695ee711ddc3d42f38c85e02831fbc174d0",
+      "url": "https://download.geofabrik.de/north-america/us/maine/maine.poly"
+    }
+  ]
+}

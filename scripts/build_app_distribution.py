@@ -3,7 +3,7 @@
 import argparse,json,shutil,sys,zipfile,hashlib
 from pathlib import Path
 from concurrent.futures import ThreadPoolExecutor
-from regions import ROOT,profile,active_map,REGIONS
+from regions import ROOT,profile,active_map,region_path,REGIONS
 from openbaremap import digest,write
 from package_resources import copy_map_file
 
@@ -99,7 +99,7 @@ def build_one(region,output,platforms=('ios','android')):
     return region,records
 
 if __name__=='__main__':
-    parser=argparse.ArgumentParser();parser.add_argument('--output',type=Path,default=ROOT/'work'/VERSION);parser.add_argument('--platforms',nargs='+',choices=['ios','android'],default=['ios','android']);parser.add_argument('--regions',nargs='+',choices=REGIONS,default=list(REGIONS));parser.add_argument('--catalog',type=Path,default=ROOT/'distribution'/VERSION/'catalog.json');args=parser.parse_args();args.output=args.output.resolve();args.output.mkdir(parents=True,exist_ok=True)
+    parser=argparse.ArgumentParser();parser.add_argument('--output',type=Path,default=ROOT/'work'/VERSION);parser.add_argument('--platforms',nargs='+',choices=['ios','android'],default=['ios','android']);parser.add_argument('--regions',nargs='+',choices=REGIONS,default=[r for r in REGIONS if region_path(r,'active-map.json').is_file()]);parser.add_argument('--catalog',type=Path,default=ROOT/'distribution'/VERSION/'catalog.json');args=parser.parse_args();args.output=args.output.resolve();args.output.mkdir(parents=True,exist_ok=True)
     with ThreadPoolExecutor(max_workers=2) as pool:records=dict(pool.map(lambda r:build_one(r,args.output,args.platforms),args.regions))
     records={region:json.loads((args.output/region/'manifest.json').read_text()) for region in REGIONS if (args.output/region/'manifest.json').exists()}
     args.catalog.parent.mkdir(parents=True,exist_ok=True)

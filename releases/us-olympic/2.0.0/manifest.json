@@ -1,0 +1,106 @@
+{
+  "acceptance": "Automated checks only; see validation and visual-review records for actual reviewed scope.",
+  "coverage": "Olympic National Park, including the mountain interior, rainforest valleys, coastal sections and principal trailhead approaches.",
+  "datasets": {
+    "basemap": {
+      "bytes": 37916672,
+      "path": "releases/us-olympic/2.0.0/maps/basemap.mbtiles",
+      "sha256": "92ab78c832f5b9425fd4c2b7c7914c1a551de35152762cb468ce896f07754c5d",
+      "validation": {
+        "empty_tile_count": 233,
+        "logical_tiles_sha256": "dd50292d05e97eb4a2224e2b83ff7d67e7d56c1ff9b666f0b52de39d9b57c187",
+        "tile_count": 6829
+      }
+    },
+    "grid": {
+      "bytes": 3231744,
+      "path": "releases/us-olympic/2.0.0/maps/grid.mbtiles",
+      "sha256": "be1f2c67797fe89bc8586c02001cef720acea8eedd0b1ce858775f218e6a3730",
+      "validation": {
+        "empty_tile_count": 0,
+        "logical_tiles_sha256": "0dcc357505b70487055b085f1420cc2802f1791691217acae9a306ef290f17e9",
+        "tile_count": 9801
+      }
+    },
+    "hillshade": {
+      "bytes": 50835456,
+      "path": "releases/us-olympic/2.0.0/maps/hillshade.mbtiles",
+      "sha256": "1ddd0d13641446a3163415a773a3c3c285873285bb71bba3b0691f1a9bdc01d2",
+      "validation": {
+        "empty_tile_count": 0,
+        "logical_tiles_sha256": "fa3d9dd117cdcc95679af9a5a33a4edc0e2c4727209117e3b70ed1ae04e0ac0a",
+        "tile_count": 1379
+      }
+    },
+    "topography": {
+      "bytes": 108158976,
+      "path": "releases/us-olympic/2.0.0/maps/topography-context.mbtiles",
+      "sha256": "85110ca132377ed9eca0400720291c41d63cd475db235f31dd15bfd050e3ca36",
+      "validation": {
+        "empty_tile_count": 43545,
+        "logical_tiles_sha256": "200e4f4df78f6c0860fd4769f7cb16066d07fff209599e88e386547a73560bd9",
+        "tile_count": 53477
+      }
+    }
+  },
+  "garmin": {
+    "bytes": 39321600,
+    "path": "regions/us-olympic/garmin/dist/OpenBareMap-US-Olympic.img",
+    "sha256": "eed2a81948f4f35fc52d81e1fb6b7427042086e8b6984ff0c5e3ef95521c8122"
+  },
+  "geometryReport": {
+    "path": "build/us-olympic-geometry/geometry-report.json",
+    "sha256": "db53e786f2b37f61106fb1fad8183f0e6225c0717334ecc2b8960507af2d9f17"
+  },
+  "hostAppsModified": false,
+  "mapVersion": "2.0.0",
+  "osm": {
+    "bytes": 15811333,
+    "operation": "Complete-feature bbox extraction with nested relation references",
+    "path": "data/regions/us-olympic/washington-261120.osm.clipped.osm.pbf",
+    "replicationTimestamp": "2026-11-20T21:21:21Z",
+    "sha256": "c06ddc6ee3f7ebea0c97c863dbfecc6f01a85a26c1d6097bfc0ab78d016fb2d2",
+    "snapshot_date": "2026-11-20",
+    "url": "https://download.geofabrik.de/north-america/us/washington/washington-261120.osm.pbf"
+  },
+  "packages": {
+    "android": {
+      "archive": {
+        "bytes": 208469996,
+        "path": "regions/us-olympic/android/OpenBareMap-Android.zip",
+        "sha256": "e4fa9eec9faf3a02ccc8b3e275b9a78441ffac6a6a776e670610663b7cacc845"
+      },
+      "checksumsSHA256": "e53fb811ebe9efd77c38384d763c1fbc7522b096f6fd3f3c411e38030332650d",
+      "manifestSHA256": "6734c4c33842c2e5b9ed844ff3870062813ce0ec77e649ccc3e8e648664c266d",
+      "path": "regions/us-olympic/android",
+      "validationSHA256": "496f60ed092513c947c592053e2c0bde6d19cc787ec947cc27dbe4e606e7e9bc"
+    },
+    "ios": {
+      "checksumsSHA256": "9ef75935958808144122e3cd1a8d4da414c675b02afeb1f0afed0f7435d6b90f",
+      "manifestSHA256": "1ba518ef2dbd1f0d96c3aa266d97cd8ca49f689e1ddff5c5f3162fbace6575d9",
+      "path": "regions/us-olympic/ios",
+      "validationSHA256": "7d361d1bd09ecf8b6ca1ff8b8db9aa540d97440b851428123c5a198ad3ae8dce"
+    }
+  },
+  "pythonRuntime": {
+    "packages": {
+      "Pillow": "12.3.0",
+      "certifi": "2026.10.23",
+      "charset-normalizer": "3.5.2",
+      "idna": "3.20",
+      "numpy": "2.5.4",
+      "osmium": "4.3.2",
+      "pyproj": "3.8.0",
+      "requests": "2.34.2",
+      "shapely": "2.2.0",
+      "urllib3": "2.8.0"
+    },
+    "platform": "macOS-27.2.1-arm64-arm-64bit-Mach-O",
+    "python": "3.14.5 (main, May 10 2026, 10:21:34) [Clang 21.0.0 (clang-2100.0.123.102)]",
+    "requirementsSHA256": "427f12ff8b49bfebac0a7d453c2f65bd15d6695584b18e6ecee1fdfeed20a36c"
+  },
+  "region": "us-olympic",
+  "styleSHA256": "4143e7cb6c5746f37e93b2da5b2da7834d5363bf0f93407ad5e72ede078a46db",
+  "terrainLockSHA256": "58a1485c341d6ec681c54310c3955ee8d28536c0fe79f1af7e9309556a0917d4",
+  "validation": "validation.json"
+}

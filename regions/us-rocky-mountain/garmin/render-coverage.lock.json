@@ -1,0 +1,49 @@
+{
+  "bounds": [
+    -106.10196192839878,
+    40.0140095900306,
+    -105.3049963775214,
+    40.697835621591324
+  ],
+  "contextEnvelope": [
+    -106.10196192839878,
+    40.0140095900306,
+    -105.3049963775214,
+    40.697835621591324
+  ],
+  "drawPriority": 25,
+  "format": "openbaremap-garmin-render-footprint-v1",
+  "geometry": {
+    "bytes": 16611,
+    "path": "regions/us-rocky-mountain/garmin/render-coverage.geojson",
+    "sha256": "91aa60e6a6463e87e5055059563c60c79a12b8646689f030089bb30d0394b3e6"
+  },
+  "inputs": [
+    {
+      "path": "regions/us-rocky-mountain/coverage.geojson",
+      "purpose": "Exact official park plus 25 km footprint; not its rectangular tile envelope",
+      "sha256": "7ccc478530b316407b94efde5b7419131df425ba1418e806746d781de6ed8713"
+    }
+  ],
+  "knownDestinationsCovered": {
+    "bear-lake-trailhead": [
+      -105.646,
+      40.312
+    ],
+    "estes-park": [
+      -105.523,
+      40.377
+    ],
+    "grand-lake": [
+      -105.82,
+      40.253
+    ],
+    "trail-ridge-road": [
+      -105.754,
+      40.442
+    ]
+  },
+  "purpose": "Rectangular Garmin tiles may overlap other countries. Do not fill their padding with sea, land or land-cover polygons.",
+  "region": "us-rocky-mountain",
+  "transparentNativeMap": true
+}

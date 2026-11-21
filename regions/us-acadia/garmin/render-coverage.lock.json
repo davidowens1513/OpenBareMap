@@ -1,0 +1,57 @@
+{
+  "bounds": [
+    -68.74778756102806,
+    43.94041871185589,
+    -67.94229018718079,
+    44.49279220357111
+  ],
+  "contextEnvelope": [
+    -68.74778756102806,
+    43.94041871185589,
+    -67.94229018718079,
+    44.49279220357111
+  ],
+  "drawPriority": 25,
+  "format": "openbaremap-garmin-render-footprint-v1",
+  "geometry": {
+    "bytes": 37578,
+    "path": "regions/us-acadia/garmin/render-coverage.geojson",
+    "sha256": "450c183831e7a5ac324c74a286626161006b7e2a6beeb7b586932dbb1ebedf73"
+  },
+  "inputs": [
+    {
+      "path": "regions/us-acadia/coverage.geojson",
+      "purpose": "Exact official park plus 25 km footprint; not its rectangular tile envelope",
+      "sha256": "1daf4721b74b4f4a4956ed2dcb6a924ef96e2dec5f85b4f101ddc2c7137096ab"
+    }
+  ],
+  "knownDestinationsCovered": {
+    "bar-harbor": [
+      -68.203,
+      44.388
+    ],
+    "cadillac-mountain": [
+      -68.225,
+      44.352
+    ],
+    "isle-au-haut": [
+      -68.624,
+      44.049
+    ],
+    "schoodic-point": [
+      -68.061,
+      44.332
+    ],
+    "stonington": [
+      -68.666,
+      44.156
+    ],
+    "winter-harbor": [
+      -68.085,
+      44.393
+    ]
+  },
+  "purpose": "Rectangular Garmin tiles may overlap other countries. Do not fill their padding with sea, land or land-cover polygons.",
+  "region": "us-acadia",
+  "transparentNativeMap": true
+}

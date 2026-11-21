@@ -40,3 +40,18 @@ class PolygonalCoastTests(unittest.TestCase):
             result = polygonal_coast(path)
             self.assertEqual(path.read_text(), original)
             self.assertEqual(result['sourceSHA256'], result['outputSHA256'])
+
+    def test_invalid_clipped_ring_can_be_repaired(self):
+        from shapely.geometry import shape
+
+        ring = [[0, 0], [2, 2], [0, 2], [2, 0], [0, 0]]
+        source = {'type': 'FeatureCollection', 'features': [{'type': 'Feature', 'properties': {},
+                  'geometry': {'type': 'Polygon', 'coordinates': [ring]}}]}
+        with tempfile.TemporaryDirectory() as temp:
+            path = Path(temp) / 'land.geojson'
+            path.write_text(json.dumps(source))
+            result = polygonal_coast(path, repair_invalid=True)
+            repaired = shape(json.loads(path.read_text())['features'][0]['geometry'])
+            self.assertTrue(repaired.is_valid)
+            self.assertEqual(repaired.area, 2)
+            self.assertEqual(result['repairedInvalidFeatures'], 1)

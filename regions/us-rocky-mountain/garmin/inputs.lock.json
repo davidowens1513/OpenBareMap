@@ -1,0 +1,20 @@
+{
+  "inputs": [
+    {
+      "path": "regions/us-rocky-mountain/garmin/inputs/contours.geojson.gz",
+      "sha256": "700f9d38b187bfe43d4a0163767717461308e030aef566c42f3bbd1efe4dafa3",
+      "uncompressedSHA256": "22b38e38dbf65a143ffe02f48c568e010e8751a6bbd0b11ee03dd7538dc391a2"
+    },
+    {
+      "path": "regions/us-rocky-mountain/garmin/inputs/landcover.geojson.gz",
+      "sha256": "bfc25f1518b2467ed8295dc8705ead5100b6ad35b5b00abad2548e69f07687e4",
+      "uncompressedSHA256": "036b866a707c3953229f256f5497c86bb02335da769d76a4dfb42dc037bbf8da"
+    },
+    {
+      "path": "regions/us-rocky-mountain/garmin/inputs/land.geojson.gz",
+      "sha256": "8455d61d8d6005733d0227f73bc18b7f89ecf4ac007c08000aa76c78e260dbfb",
+      "uncompressedSHA256": "7989a2a28cddf8aed7a3ae789a98c23a3ce628eaa29b3c6af8db696d38611b6a"
+    }
+  ],
+  "region": "us-rocky-mountain"
+}

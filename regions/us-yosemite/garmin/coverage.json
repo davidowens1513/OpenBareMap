@@ -1,0 +1,30 @@
+{
+  "areaSquareDegrees": 0.8433221303188151,
+  "bounds": [
+    -120.09093211222425,
+    37.33018919596062,
+    -118.99509101664772,
+    38.34852300241779
+  ],
+  "entireRequestedFootprintCovered": true,
+  "exactFootprint": "regions/us-yosemite/coverage.geojson",
+  "inputs": [
+    {
+      "bytes": 2767,
+      "path": "data/regions/us-yosemite/california.poly",
+      "sha256": "5c1531044f1559a584f1435035d7bc7a81c0a72a33677f422e9fb64b2c91fcbf",
+      "url": "https://download.geofabrik.de/north-america/us/california/california.poly"
+    }
+  ],
+  "knownDestinationsCovered": [
+    "el-portal",
+    "island",
+    "lee-vining",
+    "tuolumne-meadows",
+    "wawona",
+    "yosemite-valley"
+  ],
+  "operation": "Requested rectangular crop; source outlines cover all destination anchors",
+  "polygons": 1,
+  "sha256": "13f4b553c547da5629924a4d96f2961fda3dfa485048d28c389f40aee7616656"
+}

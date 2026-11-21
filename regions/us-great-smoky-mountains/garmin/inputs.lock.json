@@ -1,0 +1,20 @@
+{
+  "inputs": [
+    {
+      "path": "regions/us-great-smoky-mountains/garmin/inputs/contours.geojson.gz",
+      "sha256": "800491712acf08d2e41be9d544de9e1cb06a81294ef843e5b360677d7ad13154",
+      "uncompressedSHA256": "dbd4ff9a0d68f682ce8c17812b03ee62afc17ce913d0acb7446daf3cc3b2168a"
+    },
+    {
+      "path": "regions/us-great-smoky-mountains/garmin/inputs/landcover.geojson.gz",
+      "sha256": "2ba44f9c4c331031208d29ad1a0b2392ae3defbe83d1705f52574be756fec69f",
+      "uncompressedSHA256": "ec24a8ee307f513d47c51d8b8a82c7dd0b5b9695d1dbd4fb28aa4786a986c50a"
+    },
+    {
+      "path": "regions/us-great-smoky-mountains/garmin/inputs/land.geojson.gz",
+      "sha256": "5173b566ba630b12fb5623b1285c15295e836d655fa36b3a3a1681b746166f87",
+      "uncompressedSHA256": "130873dce43c19871cb151114c95a29532ceec32971b8120f054146bbe13cdd0"
+    }
+  ],
+  "region": "us-great-smoky-mountains"
+}

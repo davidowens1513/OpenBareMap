@@ -58,7 +58,8 @@ def build(args):
         zip_path='/vsizip/'+str((ROOT/coast['path']).resolve())+'/land-polygons-split-4326/land_polygons.shp'
         run('ogr2ogr','-f','GeoJSON',coastfile,zip_path,'-spat',*config['coast_context_bounds'],'-clipsrc',*config['coast_context_bounds'],'-lco','COORDINATE_PRECISION=7')
         from polygonal_coast import polygonal_coast
-        record['coastlineFiltering']=polygonal_coast(coastfile)
+        repair_coastline = region_id != 'ireland' and p.get('repairClippedCoastline', False)
+        record['coastlineFiltering']=polygonal_coast(coastfile, repair_invalid=repair_coastline)
         record['coastlineFilterSHA256']=digest(Path(__file__).with_name('polygonal_coast.py'))
         write(dest/'build.json',record)
         elevation=dest/'elevation';elevation.mkdir()

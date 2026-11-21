@@ -1,0 +1,159 @@
+{
+  "boundaryAttribution": "U.S. National Park Service, Land Resources Division",
+  "bounds": [
+    -114.67987124009169,
+    48.09881065209954,
+    -113.03936383180921,
+    49.002103
+  ],
+  "clipBasemap": true,
+  "clipSource": true,
+  "coastContextBounds": [
+    -116,
+    47,
+    -112,
+    51
+  ],
+  "contourIntervalMetres": 20,
+  "coverage": "Glacier National Park in Montana, Going-to-the-Sun Road and the east and west gateway towns.",
+  "coverageBoundary": true,
+  "coverageBoundaryLabel": "Map coverage limit",
+  "destinationLabels": {
+    "east-glacier-park": "East Glacier Park",
+    "island": "Glacier",
+    "logan-pass": "Logan Pass",
+    "many-glacier": "Many Glacier",
+    "st-mary": "St Mary",
+    "two-medicine": "Two Medicine",
+    "west-glacier": "West Glacier"
+  },
+  "destinations": {
+    "east-glacier-park": [
+      -113.218,
+      48.444,
+      12
+    ],
+    "island": [
+      -113.7329913540373,
+      48.54611682838606,
+      9
+    ],
+    "logan-pass": [
+      -113.718,
+      48.696,
+      12
+    ],
+    "many-glacier": [
+      -113.656,
+      48.797,
+      12
+    ],
+    "st-mary": [
+      -113.437,
+      48.744,
+      12
+    ],
+    "two-medicine": [
+      -113.368,
+      48.488,
+      12
+    ],
+    "west-glacier": [
+      -113.98,
+      48.495,
+      12
+    ]
+  },
+  "garminContextBounds": [
+    -114.67987124009169,
+    48.09881065209954,
+    -113.03936383180921,
+    49.002103
+  ],
+  "garminFamilyId": 4863,
+  "garminFilename": "OpenBareMap-US-Glacier.img",
+  "garminPackageRevision": "2.0.1-trail-detail-r1",
+  "garminTileStartId": 48630001,
+  "garminUseSourceOutline": true,
+  "gridCRS": "EPSG:32612",
+  "gridExtent": [
+    230000,
+    350000,
+    5330000,
+    5440000
+  ],
+  "gridName": "WGS 84 / UTM 12N",
+  "gridSource": "utm-grid",
+  "id": "us-glacier",
+  "ignoreSourceHeaderBounds": true,
+  "inspectionNames": [
+    "West Glacier",
+    "Mount Cleveland"
+  ],
+  "label": "Glacier",
+  "labelGlyphs": "ABCDEFGHIJKLMNOPQRSTUVWXYZ",
+  "mapVersion": "2.0.0",
+  "maxzoom": 14,
+  "minorWaterwayMinzoom": 10,
+  "minzoom": 4,
+  "name": "OpenBareMap Glacier",
+  "nativeLanguage": "en",
+  "optionalBasemapLayers": [
+    "station",
+    "railway",
+    "ferry",
+    "cycling_route",
+    "island_name",
+    "boundary",
+    "hiking_route"
+  ],
+  "projectedCRS": "EPSG:32612",
+  "requireBogFeatures": false,
+  "sourceBaseOverrides": {
+    "montana": "https://download.geofabrik.de/north-america/us/montana/"
+  },
+  "sourceBaseURL": "https://download.geofabrik.de/north-america/us/",
+  "sourceCacheRegion": "us-national-parks",
+  "sourceDate": "2026-11-20",
+  "sourceSlugs": [
+    "montana"
+  ],
+  "styleRevision": "2.0.0-us-glacier-r1",
+  "terrainAttribution": "Copernicus DEM GLO-30 \u00b7 European Union / ESA \u00b7 DLR / Airbus",
+  "terrainBounds": [
+    -115,
+    48,
+    -113,
+    50
+  ],
+  "terrainCacheRegion": "us-national-parks",
+  "terrainNotice": "Elevation: Copernicus DEM GLO-30 Public (AWS 2021 release).\n\nproduced using Copernicus WorldDEM-30 \u00a9 DLR e.V. 2010-2014 and \u00a9 Airbus Defence and Space GmbH 2014-2018 provided under COPERNICUS by the European Union and ESA; all rights reserved\n\nThe organisations in charge of the Copernicus programme by law or by delegation do not incur any liability for any use of the Copernicus WorldDEM-30.\n\nLicense: https://dataspace.copernicus.eu/sites/default/files/media/files/2025-06/copernicus_contributing_mission_data_access_v2_cop_dem_licenses.pdf\nSource: https://registry.opendata.aws/copernicus-dem/\nVertical datum: EGM2008 orthometric metres. Native approximately 30 m cells are bilinearly resampled to point-aligned Int16 HGT for the shared terrain pipeline. Ocean-only cells absent from the official public inventory are zero.\n",
+  "terrainProvider": "copernicus-glo30",
+  "townlands": false,
+  "validationAnchors": {
+    "east-glacier-park": [
+      -113.218,
+      48.444
+    ],
+    "logan-pass": [
+      -113.718,
+      48.696
+    ],
+    "many-glacier": [
+      -113.656,
+      48.797
+    ],
+    "st-mary": [
+      -113.437,
+      48.744
+    ],
+    "two-medicine": [
+      -113.368,
+      48.488
+    ],
+    "west-glacier": [
+      -113.98,
+      48.495
+    ]
+  }
+}

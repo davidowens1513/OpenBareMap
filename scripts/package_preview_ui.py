@@ -9,7 +9,7 @@ def package_ui(output,regions=None):
  catalog=json.loads((ROOT/'config/preview-regions.json').read_text())
  selected=regions or [item['id'] for item in catalog]
  published={item['id'] for item in catalog}
- catalog += [{'id':region,'label':profile(region)['label'],'url':'../'+region+'/'}
+ catalog += [{'id':region,'label':profile(region)['label'],'url':'../'+region+'/index.html'}
              for region in selected if region not in published]
  for name in ['preview.js','preview.css','legend.js','legend.css']:shutil.copyfile(ROOT/'web-preview'/name,assets/name)
  for region in selected:

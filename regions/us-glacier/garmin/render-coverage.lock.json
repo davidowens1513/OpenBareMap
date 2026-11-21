@@ -1,0 +1,57 @@
+{
+  "bounds": [
+    -114.67987124009169,
+    48.09881065209954,
+    -113.03936383180921,
+    49.002103
+  ],
+  "contextEnvelope": [
+    -114.67987124009169,
+    48.09881065209954,
+    -113.03936383180921,
+    49.002103
+  ],
+  "drawPriority": 25,
+  "format": "openbaremap-garmin-render-footprint-v1",
+  "geometry": {
+    "bytes": 18152,
+    "path": "regions/us-glacier/garmin/render-coverage.geojson",
+    "sha256": "ffee9470d5a8ce8a1da234c67993de67bb09537a8a54ef797d5b7a6b641d403b"
+  },
+  "inputs": [
+    {
+      "path": "regions/us-glacier/coverage.geojson",
+      "purpose": "Exact official park plus 25 km footprint; not its rectangular tile envelope",
+      "sha256": "9f346c745062b3aac9e48adf103e0d1d7d27587dcd4d41975b950cea9a46bd3a"
+    }
+  ],
+  "knownDestinationsCovered": {
+    "east-glacier-park": [
+      -113.218,
+      48.444
+    ],
+    "logan-pass": [
+      -113.718,
+      48.696
+    ],
+    "many-glacier": [
+      -113.656,
+      48.797
+    ],
+    "st-mary": [
+      -113.437,
+      48.744
+    ],
+    "two-medicine": [
+      -113.368,
+      48.488
+    ],
+    "west-glacier": [
+      -113.98,
+      48.495
+    ]
+  },
+  "purpose": "Rectangular Garmin tiles may overlap other countries. Do not fill their padding with sea, land or land-cover polygons.",
+  "region": "us-glacier",
+  "transparentNativeMap": true
+}

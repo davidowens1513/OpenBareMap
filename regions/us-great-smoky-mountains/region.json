@@ -1,0 +1,151 @@
+{
+  "boundaryAttribution": "U.S. National Park Service, Land Resources Division",
+  "bounds": [
+    -84.16821700148407,
+    35.30279173610813,
+    -82.84364186512006,
+    35.967431866368976
+  ],
+  "clipBasemap": true,
+  "clipSource": true,
+  "coastContextBounds": [
+    -86,
+    34,
+    -81,
+    37
+  ],
+  "contourIntervalMetres": 20,
+  "coverage": "Great Smoky Mountains National Park and the Gatlinburg, Townsend and Cherokee approaches.",
+  "coverageBoundary": true,
+  "coverageBoundaryLabel": "Map coverage limit",
+  "destinationLabels": {
+    "cades-cove": "Cades Cove",
+    "cherokee": "Cherokee",
+    "gatlinburg": "Gatlinburg",
+    "island": "Great Smoky Mountains",
+    "newfound-gap": "Newfound Gap",
+    "townsend": "Townsend"
+  },
+  "destinations": {
+    "cades-cove": [
+      -83.842,
+      35.596,
+      12
+    ],
+    "cherokee": [
+      -83.32,
+      35.478,
+      12
+    ],
+    "gatlinburg": [
+      -83.51,
+      35.714,
+      12
+    ],
+    "island": [
+      -83.49443359672523,
+      35.63331392872869,
+      9
+    ],
+    "newfound-gap": [
+      -83.424,
+      35.612,
+      12
+    ],
+    "townsend": [
+      -83.755,
+      35.676,
+      12
+    ]
+  },
+  "garminContextBounds": [
+    -84.16821700148407,
+    35.30279173610813,
+    -82.84364186512006,
+    35.967431866368976
+  ],
+  "garminFamilyId": 4856,
+  "garminFilename": "OpenBareMap-US-Great-Smoky-Mountains.img",
+  "garminPackageRevision": "2.0.1-trail-detail-r1",
+  "garminTileStartId": 48560001,
+  "garminUseSourceOutline": true,
+  "gridCRS": "EPSG:32617",
+  "gridExtent": [
+    210000,
+    340000,
+    3900000,
+    3990000
+  ],
+  "gridName": "WGS 84 / UTM 17N",
+  "gridSource": "utm-grid",
+  "id": "us-great-smoky-mountains",
+  "ignoreSourceHeaderBounds": true,
+  "inspectionNames": [
+    "Gatlinburg",
+    "Kuwohi"
+  ],
+  "label": "Great Smoky Mountains",
+  "labelGlyphs": "ABCDEFGHIJKLMNOPQRSTUVWXYZ",
+  "mapVersion": "2.0.0",
+  "maxzoom": 14,
+  "minorWaterwayMinzoom": 10,
+  "minzoom": 4,
+  "name": "OpenBareMap Great Smoky Mountains",
+  "nativeLanguage": "en",
+  "optionalBasemapLayers": [
+    "station",
+    "railway",
+    "ferry",
+    "cycling_route",
+    "island_name",
+    "boundary",
+    "hiking_route"
+  ],
+  "projectedCRS": "EPSG:32617",
+  "requireBogFeatures": false,
+  "sourceBaseOverrides": {
+    "north-carolina": "https://download.geofabrik.de/north-america/us/north-carolina/",
+    "tennessee": "https://download.geofabrik.de/north-america/us/tennessee/"
+  },
+  "sourceBaseURL": "https://download.geofabrik.de/north-america/us/",
+  "sourceCacheRegion": "us-national-parks",
+  "sourceDate": "2026-11-20",
+  "sourceSlugs": [
+    "tennessee",
+    "north-carolina"
+  ],
+  "styleRevision": "2.0.0-us-great-smoky-mountains-r1",
+  "terrainAttribution": "Copernicus DEM GLO-30 \u00b7 European Union / ESA \u00b7 DLR / Airbus",
+  "terrainBounds": [
+    -85,
+    35,
+    -82,
+    36
+  ],
+  "terrainCacheRegion": "us-national-parks",
+  "terrainNotice": "Elevation: Copernicus DEM GLO-30 Public (AWS 2021 release).\n\nproduced using Copernicus WorldDEM-30 \u00a9 DLR e.V. 2010-2014 and \u00a9 Airbus Defence and Space GmbH 2014-2018 provided under COPERNICUS by the European Union and ESA; all rights reserved\n\nThe organisations in charge of the Copernicus programme by law or by delegation do not incur any liability for any use of the Copernicus WorldDEM-30.\n\nLicense: https://dataspace.copernicus.eu/sites/default/files/media/files/2025-06/copernicus_contributing_mission_data_access_v2_cop_dem_licenses.pdf\nSource: https://registry.opendata.aws/copernicus-dem/\nVertical datum: EGM2008 orthometric metres. Native approximately 30 m cells are bilinearly resampled to point-aligned Int16 HGT for the shared terrain pipeline. Ocean-only cells absent from the official public inventory are zero.\n",
+  "terrainProvider": "copernicus-glo30",
+  "townlands": false,
+  "validationAnchors": {
+    "cades-cove": [
+      -83.842,
+      35.596
+    ],
+    "cherokee": [
+      -83.32,
+      35.478
+    ],
+    "gatlinburg": [
+      -83.51,
+      35.714
+    ],
+    "newfound-gap": [
+      -83.424,
+      35.612
+    ],
+    "townsend": [
+      -83.755,
+      35.676
+    ]
+  }
+}

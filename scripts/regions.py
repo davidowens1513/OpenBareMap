@@ -5,7 +5,8 @@ from pathlib import Path
 from openbaremap import ROOT
 
 ALPS_REGIONS = ('alps-west', 'alps-central', 'alps-tyrol-bavaria', 'alps-east')
-REGIONS = ('ireland', 'england-wales', 'scotland', 'sierra-nevada', 'pyrenees', 'dolomites', 'faroe-islands','norway-south','norway-central','norway-north', 'balearic-islands', 'corsica', 'sardinia', 'sicily', 'crete', 'cyprus', 'malta', 'canary-islands', 'madeira') + ALPS_REGIONS
+US_PARK_REGIONS = tuple(json.loads((ROOT/'config/us-national-parks.json').read_text()))
+REGIONS = ('ireland', 'england-wales', 'scotland', 'sierra-nevada', 'pyrenees', 'dolomites', 'faroe-islands','norway-south','norway-central','norway-north', 'balearic-islands', 'corsica', 'sardinia', 'sicily', 'crete', 'cyprus', 'malta', 'canary-islands', 'madeira') + ALPS_REGIONS + US_PARK_REGIONS
 
 def profile(region='ireland'):
     if region not in REGIONS:
@@ -13,7 +14,8 @@ def profile(region='ireland'):
     return json.loads((ROOT/'regions'/region/'region.json').read_text())
 
 def region_path(region, name):
-    profile(region)
+    if region not in REGIONS:
+        raise ValueError('Unknown region: ' + region)
     return ROOT/name if region == 'ireland' else ROOT/'regions'/region/name
 
 def active_map(region='ireland'):
@@ -61,7 +63,7 @@ def region_style(region='ireland'):
         style['layers'].insert(index+1,minor)
     if p.get('coverageBoundary') or p.get('boundaryPreview'):
         for name in ('park-boundary','coverage','coverage-mask'):
-            style['sources'][name]={'type':'geojson','data':json.loads(region_path(region,name+'.geojson').read_text()),'attribution':'Fuente: Organismo Autónomo Parques Nacionales · CC BY 4.0'}
+            style['sources'][name]={'type':'geojson','data':json.loads(region_path(region,name+'.geojson').read_text()),'attribution':p.get('boundaryAttribution','Fuente: Organismo Autónomo Parques Nacionales · CC BY 4.0')}
         # Hide rectangular tile padding so the preview follows the actual buffer.
         style['layers'] += [
             {'id':'coverage-mask','type':'fill','source':'coverage-mask','paint':{'fill-color':'#f5f3ec','fill-antialias':False}},
@@ -124,6 +126,8 @@ def terrain_file(region,name):
     if override.exists():return override
     if region in ALPS_REGIONS:
         return ROOT/'regions/alps'/name
+    if region in US_PARK_REGIONS:
+        return ROOT/'regions/us-national-parks'/name
     return ROOT/('viewer' if name.endswith('.html') else 'data')/name
 
 def apply_terrain_notice(directory,region):

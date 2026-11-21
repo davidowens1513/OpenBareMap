@@ -1,0 +1,151 @@
+{
+  "familyId": 4857,
+  "garminPackageRevision": "2.0.1-trail-detail-r1",
+  "inspection": {
+    "anchorLabels": {
+      "Springdale": "Springdale"
+    },
+    "bounds": [
+      -113.42293739318848,
+      37.001953125,
+      -112.67578125,
+      37.66121864318848
+    ],
+    "coastPolygonsByLevel": {
+      "0": {
+        "0x32": 12,
+        "0x54": 13
+      },
+      "1": {
+        "0x32": 12,
+        "0x54": 13
+      },
+      "2": {
+        "0x32": 12,
+        "0x54": 13
+      },
+      "3": {
+        "0x32": 12,
+        "0x54": 13
+      },
+      "4": {
+        "0x32": 12,
+        "0x54": 13
+      }
+    },
+    "contoursByLevel": {
+      "0": {
+        "0x10009": 12,
+        "0x20": 12800,
+        "0x22": 3237
+      },
+      "1": {
+        "0x10009": 12,
+        "0x20": 10531,
+        "0x22": 2661
+      },
+      "2": {
+        "0x10009": 12,
+        "0x22": 2470
+      },
+      "3": {
+        "0x10008": 2301,
+        "0x10009": 12
+      },
+      "4": {
+        "0x10009": 8
+      }
+    },
+    "lineInstancesAtHighestDetail": {
+      "0x1": 57,
+      "0x10001": 110,
+      "0x10002": 2,
+      "0x10003": 1,
+      "0x10004": 129,
+      "0x10005": 26,
+      "0x10006": 1192,
+      "0x10009": 12,
+      "0x1000a": 27,
+      "0x1000b": 3,
+      "0x14": 2,
+      "0x16": 1423,
+      "0x18": 1866,
+      "0x1c": 72,
+      "0x1f": 37,
+      "0x2": 19,
+      "0x20": 12800,
+      "0x22": 3237,
+      "0x3": 53,
+      "0x4": 63,
+      "0x6": 1324,
+      "0x7": 2305,
+      "0xa": 2775
+    },
+    "logicalCombinedSHA256": "bd0f4bcefd557b8a398076c2b415d230efb1094e39c6fa00f624c1a027744736",
+    "logicalHashNote": "Internal file names, sizes and payloads; only CommonHeader creation-date bytes 14..20 are zeroed for hashing. IMG archive headers are excluded. Output bytes are never modified.",
+    "logicalTileSHA256": {
+      "48570001.img": "e9468512a8f4043174bda328b45c541e99084a38e601f2f8bf8987d8af292f80",
+      "48570002.img": "d8e1d6c70c7d7e4e9c7883a1c04a21eff731df9dbfecc857a98384ba6ee775e0",
+      "48570003.img": "4698b39388471f04fa4fb6f4955f6db0d46ed71f9071b933ed4f577e19b490de",
+      "48570004.img": "922667fe5d96d7f53999c7fdb1ba8401e8106d86a43a789b98c2f2b560346d3b",
+      "48570005.img": "0c31b49842bb64e3fe370b53509966f641cb151e1b717cbc2f51c35a7457b9ea",
+      "48570006.img": "e6536b182888806f33b19be8ad37dcc1716c1f8f0ecd42ef225c715053bb9267",
+      "48570007.img": "5cb4232637e4c611885f238d4df7012ca81aad8f8ba60d5e75cb5ebabd1d5968",
+      "48570008.img": "b3fa7669f777f83fffb98c3686a2681b6d12b17e0da8486220cc786a477d34ec",
+      "48570009.img": "cc760c970070f9a048bc74be5cf6b60a5254275c0587df186e9bfe4fb38a21d8",
+      "48570010.img": "16fac6d947601b08806442c59b598c56841d65690e1f482acc6d3c43d49b232f",
+      "48570011.img": "1df99af45bab74ad9d3ab1a44593cdaddfd040364373bcce0e27ce68b01030f4",
+      "48570012.img": "f083b7b9f047bee694c162919c649dd097f1be32d472c6f0a7cdd7dd8c089d7b"
+    },
+    "pointInstancesAtHighestDetail": {
+      "0x100": 1,
+      "0x10001": 161,
+      "0x10002": 711,
+      "0x10003": 91,
+      "0x10006": 275,
+      "0x2f0b": 407,
+      "0x600": 1,
+      "0x6603": 16,
+      "0x6615": 4,
+      "0x6616": 228,
+      "0x800": 8,
+      "0xb00": 4,
+      "0xc00": 15
+    },
+    "polygonInstancesAtHighestDetail": {
+      "0x10101": 102,
+      "0x10102": 72,
+      "0x10103": 25,
+      "0x10104": 524,
+      "0x10105": 1,
+      "0x10106": 51,
+      "0x10109": 735,
+      "0x1010a": 17,
+      "0x1010b": 13,
+      "0x13": 10178,
+      "0x32": 12,
+      "0x3c": 776,
+      "0x50": 466,
+      "0x51": 8,
+      "0x54": 13
+    },
+    "routing": false,
+    "subfileBytes": {
+      "DEM": 3569008,
+      "LBL": 68551,
+      "MPS": 916,
+      "RGN": 5705323,
+      "SRT": 912,
+      "TRE": 74556,
+      "TYP": 3058
+    },
+    "tiles": 12
+  },
+  "output": {
+    "bytes": 9489408,
+    "path": "regions/us-zion/garmin/dist/OpenBareMap-US-Zion.img",
+    "sha256": "e1893f88453f8e5ffcc7631b02424833b7beb0fadc8620caa8c1d7732f6bd306"
+  },
+  "routing": false,
+  "status": "compiled and structurally inspected; hardware rendering pending"
+}

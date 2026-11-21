@@ -37,6 +37,15 @@ public class CheckRegionalBackgrounds {
    case "alps-central" -> new double[][]{{10.60,45.22},{8.95,47.60},{11.404,47.266}};
    case "alps-tyrol-bavaria" -> new double[][]{{9.90,47.86},{13.60,48.14},{11.1211,46.0679}};
    case "alps-east" -> new double[][]{{14.50,45.70},{16.61,48.10},{12.30,46.619}};
+   case "us-yosemite" -> new double[][]{{-120.482,37.302},{-118.972,38.113}};
+   case "us-great-smoky-mountains" -> new double[][]{{-83.921,35.961},{-83.204,35.318}};
+   case "us-zion" -> new double[][]{{-113.584,37.097},{-112.526,37.048}};
+   case "us-yellowstone-grand-teton" -> new double[][]{{-111.797,44.076},{-109.476,44.524}};
+   case "us-grand-canyon" -> new double[][]{{-111.658,35.198},{-112.527,36.814}};
+   case "us-rocky-mountain" -> new double[][]{{-105.084,40.585},{-105.508,39.938}};
+   case "us-acadia" -> new double[][]{{-68.772,44.802},{-67.704,44.537}};
+   case "us-olympic" -> new double[][]{{-122.444,47.251},{-123.001,47.956}};
+   case "us-glacier" -> new double[][]{{-114.312,48.195},{-113.905,49.108}};
    default -> throw new IllegalArgumentException(args[0]);
   };
   int tiles=0,polygons=0;Set<Integer> resolutions=new TreeSet<>();

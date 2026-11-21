@@ -1,0 +1,35 @@
+{
+  "bytes": 155968621,
+  "datasets": {
+    "basemap": {
+      "path": "maps/basemap.mbtiles",
+      "sha256": "92d5f46df61c845c29ca12b9748237ed28b42533b1c97714432339e3b6ce3805"
+    },
+    "coast": {
+      "derived_from": "3fe5f82c7ada611e9f9773606f61cc8848440ae2790f1d29e4b4c30514d91b13",
+      "maxzoom": 12,
+      "operation": "Preserve land-layer MVT bytes only through zoom 12; omit other layers.",
+      "path": "maps/coast.mbtiles",
+      "sha256": "1cc687f138f9c037ddeb7f58113a84f196f74519c631171053002a4c89db5f69"
+    },
+    "grid": {
+      "path": "maps/grid.mbtiles",
+      "sha256": "37767a27165e6e108f2d58ae82ab0a0d715d5ec944cb0e23d88f802d108afb4d"
+    },
+    "hillshade": {
+      "path": "maps/hillshade.mbtiles",
+      "sha256": "06b58c5218c5cda1aa03b8db806c23782fcc69a21b1ad2f6b91a3f915381c19c"
+    },
+    "topography": {
+      "path": "maps/topography.mbtiles",
+      "sha256": "3fe5f82c7ada611e9f9773606f61cc8848440ae2790f1d29e4b4c30514d91b13"
+    }
+  },
+  "instructionsSHA256": "bca865329cb992ce36d867feab7f17af51bd19335b31403b8ea252df51b125bb",
+  "instructionsURL": "https://downloads.appsbyonzy.dev/OpenBareMap/us-great-smoky-mountains/2.0.0/app-bundles-v1/ios/instructions.txt",
+  "localPath": "releases/us-great-smoky-mountains/2.0.0/app-bundles-v1/ios/OpenBareMap-Great-Smoky-Mountains-iOS-Bundle.zip",
+  "mapManifestSHA256": "cf4153334a18234e5c1d61abf1d3530da99a9d788873dba5275d74a51c0d4312",
+  "r2Key": "OpenBareMap/us-great-smoky-mountains/2.0.0/app-bundles-v1/ios/OpenBareMap-Great-Smoky-Mountains-iOS-Bundle.zip",
+  "sha256": "57c8bc06cd297beafe6e4e13ac05b84d177235444f59ae9c695056900876794f",
+  "url": "https://downloads.appsbyonzy.dev/OpenBareMap/us-great-smoky-mountains/2.0.0/app-bundles-v1/ios/OpenBareMap-Great-Smoky-Mountains-iOS-Bundle.zip"
+}

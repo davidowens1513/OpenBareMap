@@ -1,0 +1,35 @@
+{
+  "bytes": 77905205,
+  "datasets": {
+    "basemap": {
+      "path": "maps/basemap.mbtiles",
+      "sha256": "e6947762d77ed9a436e30464febc1dd4a60acac93ce5b8bfd3a68f9a23319044"
+    },
+    "coast": {
+      "derived_from": "8a5e79c943aa0329f42c26a5f1c457959476a538fb941d21e03c1c1634ee5e70",
+      "maxzoom": 12,
+      "operation": "Preserve land-layer MVT bytes only through zoom 12; omit other layers.",
+      "path": "maps/coast.mbtiles",
+      "sha256": "55dc5a49422ae37bc869b015b8c8e10db624798a736517f8267fab0a7b49ab7b"
+    },
+    "grid": {
+      "path": "maps/grid.mbtiles",
+      "sha256": "612923e176b450045b03f200d170fbabdc8995e8eff0dd7ebc430abd40b45e66"
+    },
+    "hillshade": {
+      "path": "maps/hillshade.mbtiles",
+      "sha256": "6aa11fa47979f4ac836f887ddcf5901230d781a03dbf8d0f5c03d3433239bbc9"
+    },
+    "topography": {
+      "path": "maps/topography.mbtiles",
+      "sha256": "8a5e79c943aa0329f42c26a5f1c457959476a538fb941d21e03c1c1634ee5e70"
+    }
+  },
+  "instructionsSHA256": "db3a5e24a5f7afbd3ceee7f9fc5a1c92fa46228113d352e5485bf192edb6a71b",
+  "instructionsURL": "https://downloads.appsbyonzy.dev/OpenBareMap/us-rocky-mountain/2.0.0/app-bundles-v1/ios/instructions.txt",
+  "localPath": "releases/us-rocky-mountain/2.0.0/app-bundles-v1/ios/OpenBareMap-Rocky-Mountain-iOS-Bundle.zip",
+  "mapManifestSHA256": "a57f4a7cbdff0723b868750b9970d5991344a51d149e5fa04eec2c86f218a314",
+  "r2Key": "OpenBareMap/us-rocky-mountain/2.0.0/app-bundles-v1/ios/OpenBareMap-Rocky-Mountain-iOS-Bundle.zip",
+  "sha256": "c7049525f48e79019a6e86c660a7dc5b52de4a192e08e813cbf07fd2434a1ed4",
+  "url": "https://downloads.appsbyonzy.dev/OpenBareMap/us-rocky-mountain/2.0.0/app-bundles-v1/ios/OpenBareMap-Rocky-Mountain-iOS-Bundle.zip"
+}

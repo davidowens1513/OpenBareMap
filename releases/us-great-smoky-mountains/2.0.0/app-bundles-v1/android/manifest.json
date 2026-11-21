@@ -1,0 +1,33 @@
+{
+  "bytes": 155966886,
+  "datasets": {
+    "basemap": {
+      "path": "maps/basemap.mbtiles",
+      "sha256": "92d5f46df61c845c29ca12b9748237ed28b42533b1c97714432339e3b6ce3805"
+    },
+    "coast": {
+      "derivedFrom": "3fe5f82c7ada611e9f9773606f61cc8848440ae2790f1d29e4b4c30514d91b13",
+      "path": "maps/coast.mbtiles",
+      "sha256": "1cc687f138f9c037ddeb7f58113a84f196f74519c631171053002a4c89db5f69"
+    },
+    "grid": {
+      "path": "maps/grid.mbtiles",
+      "sha256": "37767a27165e6e108f2d58ae82ab0a0d715d5ec944cb0e23d88f802d108afb4d"
+    },
+    "hillshade": {
+      "path": "maps/hillshade.mbtiles",
+      "sha256": "06b58c5218c5cda1aa03b8db806c23782fcc69a21b1ad2f6b91a3f915381c19c"
+    },
+    "topography": {
+      "path": "maps/topography.mbtiles",
+      "sha256": "3fe5f82c7ada611e9f9773606f61cc8848440ae2790f1d29e4b4c30514d91b13"
+    }
+  },
+  "instructionsSHA256": "d84805f03ccbf19ff4d9bb637ef6e5dc8b1fef15090d5eed1aa671f8414a63d3",
+  "instructionsURL": "https://downloads.appsbyonzy.dev/OpenBareMap/us-great-smoky-mountains/2.0.0/app-bundles-v1/android/instructions.txt",
+  "localPath": "releases/us-great-smoky-mountains/2.0.0/app-bundles-v1/android/OpenBareMap-Great-Smoky-Mountains-Android-Bundle.zip",
+  "mapManifestSHA256": "a192609f0c231db159b5df0de29eb830178e0afa9b32c0db28bb51bc0dd112b8",
+  "r2Key": "OpenBareMap/us-great-smoky-mountains/2.0.0/app-bundles-v1/android/OpenBareMap-Great-Smoky-Mountains-Android-Bundle.zip",
+  "sha256": "8f166c6d6712dd357040dafb9dcaeb7952317c9e657be52b1680dc6cedf224ce",
+  "url": "https://downloads.appsbyonzy.dev/OpenBareMap/us-great-smoky-mountains/2.0.0/app-bundles-v1/android/OpenBareMap-Great-Smoky-Mountains-Android-Bundle.zip"
+}

@@ -1,0 +1,33 @@
+{
+  "bytes": 30499643,
+  "datasets": {
+    "basemap": {
+      "path": "maps/basemap.mbtiles",
+      "sha256": "18a8d081ec4a40b3f657712f83444350eabe6b00906259f83aa0c40c53b31d84"
+    },
+    "coast": {
+      "derivedFrom": "eca1eebb7707f383e3795e327b936d12cb2cbe960e26b59f303186bbee7c50bd",
+      "path": "maps/coast.mbtiles",
+      "sha256": "08125bf49bae02910921eecbc2d9e83873a3038da554573d1122d91d0264d1a1"
+    },
+    "grid": {
+      "path": "maps/grid.mbtiles",
+      "sha256": "c67a1e9b3f725933dafdf47e6da59a3514d09e02eb30810499b5ffc21f83d1b2"
+    },
+    "hillshade": {
+      "path": "maps/hillshade.mbtiles",
+      "sha256": "1977dd3938dc868a071c4f72d89834390820754942040eef8805b728ff494d16"
+    },
+    "topography": {
+      "path": "maps/topography.mbtiles",
+      "sha256": "eca1eebb7707f383e3795e327b936d12cb2cbe960e26b59f303186bbee7c50bd"
+    }
+  },
+  "instructionsSHA256": "338f0aa7dcf683534c9f51066bde6a3ae315d730640e913e66f305247e81ebd4",
+  "instructionsURL": "https://downloads.appsbyonzy.dev/OpenBareMap/us-acadia/2.0.0/app-bundles-v1/android/instructions.txt",
+  "localPath": "releases/us-acadia/2.0.0/app-bundles-v1/android/OpenBareMap-Acadia-Android-Bundle.zip",
+  "mapManifestSHA256": "3da439e7ae59a94119c1916dfaaf028cca8781ca4b5d1e8bc0ccdee369d53664",
+  "r2Key": "OpenBareMap/us-acadia/2.0.0/app-bundles-v1/android/OpenBareMap-Acadia-Android-Bundle.zip",
+  "sha256": "7df3c8750b7ca1bda1a758063bb66441370a14dab1be8d14258f8a8afdd05a25",
+  "url": "https://downloads.appsbyonzy.dev/OpenBareMap/us-acadia/2.0.0/app-bundles-v1/android/OpenBareMap-Acadia-Android-Bundle.zip"
+}

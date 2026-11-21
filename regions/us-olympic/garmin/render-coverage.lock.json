@@ -1,0 +1,61 @@
+{
+  "bounds": [
+    -124.94632432967465,
+    47.35282240798743,
+    -122.94687343041906,
+    48.49975874549836
+  ],
+  "contextEnvelope": [
+    -124.94632432967465,
+    47.35282240798743,
+    -122.94687343041906,
+    48.49975874549836
+  ],
+  "drawPriority": 25,
+  "format": "openbaremap-garmin-render-footprint-v1",
+  "geometry": {
+    "bytes": 43485,
+    "path": "regions/us-olympic/garmin/render-coverage.geojson",
+    "sha256": "d3bf805a90ca6a8b429f7569a7668f676a1141e60607b6794b905d7fc558cd0d"
+  },
+  "inputs": [
+    {
+      "path": "regions/us-olympic/coverage.geojson",
+      "purpose": "Exact official park plus 25 km footprint; not its rectangular tile envelope",
+      "sha256": "a0a14a7509c2b612444368adfcd86d206c1ab8a84f865ec46fa0108461dafd0d"
+    }
+  ],
+  "knownDestinationsCovered": {
+    "forks": [
+      -124.385,
+      47.951
+    ],
+    "hoh-rain-forest": [
+      -123.934,
+      47.86
+    ],
+    "hurricane-ridge": [
+      -123.498,
+      47.969
+    ],
+    "lake-crescent": [
+      -123.857,
+      48.058
+    ],
+    "port-angeles": [
+      -123.43,
+      48.118
+    ],
+    "quinault": [
+      -123.845,
+      47.466
+    ],
+    "rialto-beach": [
+      -124.633,
+      47.919
+    ]
+  },
+  "purpose": "Rectangular Garmin tiles may overlap other countries. Do not fill their padding with sea, land or land-cover polygons.",
+  "region": "us-olympic",
+  "transparentNativeMap": true
+}

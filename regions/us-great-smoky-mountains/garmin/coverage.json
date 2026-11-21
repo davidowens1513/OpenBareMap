@@ -1,0 +1,36 @@
+{
+  "areaSquareDegrees": 0.6436680289355085,
+  "bounds": [
+    -84.16821700148407,
+    35.30279173610813,
+    -82.84364186512006,
+    35.967431866368976
+  ],
+  "entireRequestedFootprintCovered": true,
+  "exactFootprint": "regions/us-great-smoky-mountains/coverage.geojson",
+  "inputs": [
+    {
+      "bytes": 7951,
+      "path": "data/regions/us-great-smoky-mountains/tennessee.poly",
+      "sha256": "3bed5783e82f694393bd14e8813b72d044fd81f8dd44bcb0b28d3a7e9fbd90e3",
+      "url": "https://download.geofabrik.de/north-america/us/tennessee/tennessee.poly"
+    },
+    {
+      "bytes": 8495,
+      "path": "data/regions/us-great-smoky-mountains/north-carolina.poly",
+      "sha256": "eea171b7dc2eae6eb35fdbf1585439371ae899f32868698a2a717478160587f4",
+      "url": "https://download.geofabrik.de/north-america/us/north-carolina/north-carolina.poly"
+    }
+  ],
+  "knownDestinationsCovered": [
+    "cades-cove",
+    "cherokee",
+    "gatlinburg",
+    "island",
+    "newfound-gap",
+    "townsend"
+  ],
+  "operation": "Requested rectangular crop; source outlines cover all destination anchors",
+  "polygons": 1,
+  "sha256": "26ef7baa03c974e8ddcf7701506456880d1cc509a42bac8ab9d62a28127421cb"
+}

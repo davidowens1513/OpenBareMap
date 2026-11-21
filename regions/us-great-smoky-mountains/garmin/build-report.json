@@ -1,0 +1,151 @@
+{
+  "familyId": 4856,
+  "garminPackageRevision": "2.0.1-trail-detail-r1",
+  "inspection": {
+    "anchorLabels": {
+      "Gatlinburg": "Gatlinburg",
+      "Kuwohi": "Kuwohi"
+    },
+    "bounds": [
+      -84.19930458068848,
+      35.2880859375,
+      -82.8369140625,
+      35.99129676818848
+    ],
+    "coastPolygonsByLevel": {
+      "0": {
+        "0x32": 8,
+        "0x54": 12
+      },
+      "1": {
+        "0x32": 8,
+        "0x54": 12
+      },
+      "2": {
+        "0x32": 8,
+        "0x54": 12
+      },
+      "3": {
+        "0x32": 8,
+        "0x54": 12
+      },
+      "4": {
+        "0x32": 8,
+        "0x54": 12
+      }
+    },
+    "contoursByLevel": {
+      "0": {
+        "0x10009": 59,
+        "0x20": 36601,
+        "0x22": 9665
+      },
+      "1": {
+        "0x10009": 58,
+        "0x20": 30164,
+        "0x22": 7982
+      },
+      "2": {
+        "0x10009": 54,
+        "0x22": 7501
+      },
+      "3": {
+        "0x10008": 6654,
+        "0x10009": 48
+      },
+      "4": {
+        "0x10009": 43
+      }
+    },
+    "lineInstancesAtHighestDetail": {
+      "0x1": 290,
+      "0x10001": 346,
+      "0x10002": 188,
+      "0x10003": 207,
+      "0x10004": 159,
+      "0x10005": 118,
+      "0x10006": 5,
+      "0x10009": 59,
+      "0x1000a": 15,
+      "0x1000b": 60,
+      "0x14": 234,
+      "0x16": 2782,
+      "0x18": 14076,
+      "0x1a": 1,
+      "0x1c": 255,
+      "0x1e": 81,
+      "0x1f": 410,
+      "0x2": 565,
+      "0x20": 36601,
+      "0x22": 9665,
+      "0x3": 329,
+      "0x4": 394,
+      "0x6": 19871,
+      "0x7": 28317,
+      "0xa": 1134
+    },
+    "logicalCombinedSHA256": "9332150bc080f5adc4ec0fd7e728271af82c8b00d961f83a3dd94f31aff5edc8",
+    "logicalHashNote": "Internal file names, sizes and payloads; only CommonHeader creation-date bytes 14..20 are zeroed for hashing. IMG archive headers are excluded. Output bytes are never modified.",
+    "logicalTileSHA256": {
+      "48560001.img": "1b1d7a1da1226fb89c37878c227209606e9355832ccfe036698fc2a360326236",
+      "48560002.img": "bf03552a8a321589f8a4a022bedc8bdb56f6d16bcf75899e279249aa251500ff",
+      "48560003.img": "cff5c000f91bbf4885edc8cc063b0aa90c6d6f5241e43ec5d7945504ea36c1e1",
+      "48560004.img": "72b82c8bde2f52d1752fa44f5b3460dfc47bc1b3e3b47dbad70201d1c473bdad",
+      "48560005.img": "f52addaa4b9912ad10c7ebd1992c611dc708fdc628514ce92e713879d7ebae18",
+      "48560006.img": "21d7e8fcf3258a677353d9fabc639889452ad6cfc2150c79a3de1a8414f7e429",
+      "48560007.img": "6d9becf2b7ec6aa1e663c5146d0240b80242e0525243265ee4e944f9e333647f",
+      "48560008.img": "c6c3ab0b9706c80042a96042f968ad3fa5b1e98e8261aa08fc8b79eabffeb2ac"
+    },
+    "pointInstancesAtHighestDetail": {
+      "0x100": 11,
+      "0x10001": 250,
+      "0x10002": 467,
+      "0x10003": 220,
+      "0x10004": 4,
+      "0x10006": 4480,
+      "0x2f0b": 1511,
+      "0x600": 14,
+      "0x650c": 32,
+      "0x6603": 37,
+      "0x6615": 227,
+      "0x6616": 675,
+      "0x800": 17,
+      "0xb00": 343,
+      "0xc00": 62
+    },
+    "polygonInstancesAtHighestDetail": {
+      "0x10101": 96,
+      "0x10102": 766,
+      "0x10103": 38,
+      "0x10104": 93,
+      "0x10105": 2,
+      "0x10106": 183,
+      "0x10109": 1,
+      "0x1010a": 1,
+      "0x13": 18557,
+      "0x32": 8,
+      "0x3c": 2673,
+      "0x50": 1681,
+      "0x51": 98,
+      "0x54": 12
+    },
+    "routing": false,
+    "subfileBytes": {
+      "DEM": 7938810,
+      "LBL": 467516,
+      "MPS": 777,
+      "RGN": 17485414,
+      "SRT": 912,
+      "TRE": 206292,
+      "TYP": 3058
+    },
+    "tiles": 8
+  },
+  "output": {
+    "bytes": 26185728,
+    "path": "regions/us-great-smoky-mountains/garmin/dist/OpenBareMap-US-Great-Smoky-Mountains.img",
+    "sha256": "f0523be2749d771489a82ba9e285e2102d631f812f6aa99085c3825bd1ef0e70"
+  },
+  "routing": false,
+  "status": "compiled and structurally inspected; hardware rendering pending"
+}

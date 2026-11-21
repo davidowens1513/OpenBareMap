@@ -23,7 +23,16 @@
     "sardinia": "2.0.0",
     "scotland": "2.0.0",
     "sicily": "2.0.0",
-    "sierra-nevada": "2.0.0"
+    "sierra-nevada": "2.0.0",
+    "us-acadia": "2.0.0",
+    "us-glacier": "2.0.0",
+    "us-grand-canyon": "2.0.0",
+    "us-great-smoky-mountains": "2.0.0",
+    "us-olympic": "2.0.0",
+    "us-rocky-mountain": "2.0.0",
+    "us-yellowstone-grand-teton": "2.0.0",
+    "us-yosemite": "2.0.0",
+    "us-zion": "2.0.0"
   },
   "regions": {
     "alps-central": {
@@ -1634,6 +1643,636 @@
         "r2Key": "OpenBareMap/sierra-nevada/2.0.0/app-bundles-v1/ios/OpenBareMap-Sierra-Nevada-iOS-Bundle.zip",
         "sha256": "19da55ab5393e48904b348c5397fe9ed47ff2d0b75899ef8997bb6ba794fb245",
         "url": "https://downloads.appsbyonzy.dev/OpenBareMap/sierra-nevada/2.0.0/app-bundles-v1/ios/OpenBareMap-Sierra-Nevada-iOS-Bundle.zip"
+      }
+    },
+    "us-acadia": {
+      "android": {
+        "bytes": 30499643,
+        "datasets": {
+          "basemap": {
+            "path": "maps/basemap.mbtiles",
+            "sha256": "18a8d081ec4a40b3f657712f83444350eabe6b00906259f83aa0c40c53b31d84"
+          },
+          "coast": {
+            "derivedFrom": "eca1eebb7707f383e3795e327b936d12cb2cbe960e26b59f303186bbee7c50bd",
+            "path": "maps/coast.mbtiles",
+            "sha256": "08125bf49bae02910921eecbc2d9e83873a3038da554573d1122d91d0264d1a1"
+          },
+          "grid": {
+            "path": "maps/grid.mbtiles",
+            "sha256": "c67a1e9b3f725933dafdf47e6da59a3514d09e02eb30810499b5ffc21f83d1b2"
+          },
+          "hillshade": {
+            "path": "maps/hillshade.mbtiles",
+            "sha256": "1977dd3938dc868a071c4f72d89834390820754942040eef8805b728ff494d16"
+          },
+          "topography": {
+            "path": "maps/topography.mbtiles",
+            "sha256": "eca1eebb7707f383e3795e327b936d12cb2cbe960e26b59f303186bbee7c50bd"
+          }
+        },
+        "instructionsSHA256": "338f0aa7dcf683534c9f51066bde6a3ae315d730640e913e66f305247e81ebd4",
+        "instructionsURL": "https://downloads.appsbyonzy.dev/OpenBareMap/us-acadia/2.0.0/app-bundles-v1/android/instructions.txt",
+        "localPath": "releases/us-acadia/2.0.0/app-bundles-v1/android/OpenBareMap-Acadia-Android-Bundle.zip",
+        "mapManifestSHA256": "3da439e7ae59a94119c1916dfaaf028cca8781ca4b5d1e8bc0ccdee369d53664",
+        "r2Key": "OpenBareMap/us-acadia/2.0.0/app-bundles-v1/android/OpenBareMap-Acadia-Android-Bundle.zip",
+        "sha256": "7df3c8750b7ca1bda1a758063bb66441370a14dab1be8d14258f8a8afdd05a25",
+        "url": "https://downloads.appsbyonzy.dev/OpenBareMap/us-acadia/2.0.0/app-bundles-v1/android/OpenBareMap-Acadia-Android-Bundle.zip"
+      },
+      "ios": {
+        "bytes": 30501345,
+        "datasets": {
+          "basemap": {
+            "path": "maps/basemap.mbtiles",
+            "sha256": "18a8d081ec4a40b3f657712f83444350eabe6b00906259f83aa0c40c53b31d84"
+          },
+          "coast": {
+            "derived_from": "eca1eebb7707f383e3795e327b936d12cb2cbe960e26b59f303186bbee7c50bd",
+            "maxzoom": 12,
+            "operation": "Preserve land-layer MVT bytes only through zoom 12; omit other layers.",
+            "path": "maps/coast.mbtiles",
+            "sha256": "08125bf49bae02910921eecbc2d9e83873a3038da554573d1122d91d0264d1a1"
+          },
+          "grid": {
+            "path": "maps/grid.mbtiles",
+            "sha256": "c67a1e9b3f725933dafdf47e6da59a3514d09e02eb30810499b5ffc21f83d1b2"
+          },
+          "hillshade": {
+            "path": "maps/hillshade.mbtiles",
+            "sha256": "1977dd3938dc868a071c4f72d89834390820754942040eef8805b728ff494d16"
+          },
+          "topography": {
+            "path": "maps/topography.mbtiles",
+            "sha256": "eca1eebb7707f383e3795e327b936d12cb2cbe960e26b59f303186bbee7c50bd"
+          }
+        },
+        "instructionsSHA256": "62358cc793f7b736aeb603155287c9d0232039f4aa8e1abd3fc785089caa78f5",
+        "instructionsURL": "https://downloads.appsbyonzy.dev/OpenBareMap/us-acadia/2.0.0/app-bundles-v1/ios/instructions.txt",
+        "localPath": "releases/us-acadia/2.0.0/app-bundles-v1/ios/OpenBareMap-Acadia-iOS-Bundle.zip",
+        "mapManifestSHA256": "78ddb025c06016d3394c9a9f4840bdcc427879f927431bf7bb8ab2f56046fe08",
+        "r2Key": "OpenBareMap/us-acadia/2.0.0/app-bundles-v1/ios/OpenBareMap-Acadia-iOS-Bundle.zip",
+        "sha256": "b4e6fa4a8ab7252d04271cefd8d8d67a4b1af1883865c3a2005cc5cd9c59c8ad",
+        "url": "https://downloads.appsbyonzy.dev/OpenBareMap/us-acadia/2.0.0/app-bundles-v1/ios/OpenBareMap-Acadia-iOS-Bundle.zip"
+      }
+    },
+    "us-glacier": {
+      "android": {
+        "bytes": 162176026,
+        "datasets": {
+          "basemap": {
+            "path": "maps/basemap.mbtiles",
+            "sha256": "feb35ce17f884dc0d3770feb98b571724f59d0aebac9375808a331417708d495"
+          },
+          "coast": {
+            "derivedFrom": "493ecacc6f8ff2e3a2932aadcc1932221bdfce9cee9655a18e44413e363688b2",
+            "path": "maps/coast.mbtiles",
+            "sha256": "a030d774020ee56ca525e32cdf4ce326fa7a7956b9c1a9350119201e3028fce0"
+          },
+          "grid": {
+            "path": "maps/grid.mbtiles",
+            "sha256": "7b6f7a769bd7761febccd16d71c43690c6e5304ce4fac9e7f793eb46f8c58b59"
+          },
+          "hillshade": {
+            "path": "maps/hillshade.mbtiles",
+            "sha256": "ce4cc534a008ba42659ef44b835040ebf684b9452dbb225e7c220f5f1dfd987e"
+          },
+          "topography": {
+            "path": "maps/topography.mbtiles",
+            "sha256": "493ecacc6f8ff2e3a2932aadcc1932221bdfce9cee9655a18e44413e363688b2"
+          }
+        },
+        "instructionsSHA256": "f75d2c5685b1703ad6b725fd3d9bd084e1a58e78a8098656bdbc6f8dd17f2f41",
+        "instructionsURL": "https://downloads.appsbyonzy.dev/OpenBareMap/us-glacier/2.0.0/app-bundles-v1/android/instructions.txt",
+        "localPath": "releases/us-glacier/2.0.0/app-bundles-v1/android/OpenBareMap-Glacier-Android-Bundle.zip",
+        "mapManifestSHA256": "5ad7cb8988b77b64e86dfbe0a3118e8dd952572a43a15db93324e8aaaf01597a",
+        "r2Key": "OpenBareMap/us-glacier/2.0.0/app-bundles-v1/android/OpenBareMap-Glacier-Android-Bundle.zip",
+        "sha256": "834d2728ca8acbfb4bf10549921b59897383f67a5a05a3595f7c7bcd17c57d6f",
+        "url": "https://downloads.appsbyonzy.dev/OpenBareMap/us-glacier/2.0.0/app-bundles-v1/android/OpenBareMap-Glacier-Android-Bundle.zip"
+      },
+      "ios": {
+        "bytes": 162177733,
+        "datasets": {
+          "basemap": {
+            "path": "maps/basemap.mbtiles",
+            "sha256": "feb35ce17f884dc0d3770feb98b571724f59d0aebac9375808a331417708d495"
+          },
+          "coast": {
+            "derived_from": "493ecacc6f8ff2e3a2932aadcc1932221bdfce9cee9655a18e44413e363688b2",
+            "maxzoom": 12,
+            "operation": "Preserve land-layer MVT bytes only through zoom 12; omit other layers.",
+            "path": "maps/coast.mbtiles",
+            "sha256": "a030d774020ee56ca525e32cdf4ce326fa7a7956b9c1a9350119201e3028fce0"
+          },
+          "grid": {
+            "path": "maps/grid.mbtiles",
+            "sha256": "7b6f7a769bd7761febccd16d71c43690c6e5304ce4fac9e7f793eb46f8c58b59"
+          },
+          "hillshade": {
+            "path": "maps/hillshade.mbtiles",
+            "sha256": "ce4cc534a008ba42659ef44b835040ebf684b9452dbb225e7c220f5f1dfd987e"
+          },
+          "topography": {
+            "path": "maps/topography.mbtiles",
+            "sha256": "493ecacc6f8ff2e3a2932aadcc1932221bdfce9cee9655a18e44413e363688b2"
+          }
+        },
+        "instructionsSHA256": "a8c69068ee02d85efc7c9621340bf128a7405db2bcfe4ecacdb0dcebf4825781",
+        "instructionsURL": "https://downloads.appsbyonzy.dev/OpenBareMap/us-glacier/2.0.0/app-bundles-v1/ios/instructions.txt",
+        "localPath": "releases/us-glacier/2.0.0/app-bundles-v1/ios/OpenBareMap-Glacier-iOS-Bundle.zip",
+        "mapManifestSHA256": "e1b507e348e8f1ca1298a4609f918fc08793c027c7e2eb0fcfbb4822d651780f",
+        "r2Key": "OpenBareMap/us-glacier/2.0.0/app-bundles-v1/ios/OpenBareMap-Glacier-iOS-Bundle.zip",
+        "sha256": "32b38d627a322f5937b9459a13522aaafeb3159476c09e50033c05031c1b0e1a",
+        "url": "https://downloads.appsbyonzy.dev/OpenBareMap/us-glacier/2.0.0/app-bundles-v1/ios/OpenBareMap-Glacier-iOS-Bundle.zip"
+      }
+    },
+    "us-grand-canyon": {
+      "android": {
+        "bytes": 333477683,
+        "datasets": {
+          "basemap": {
+            "path": "maps/basemap.mbtiles",
+            "sha256": "229e2620a4000f8a519767327cd3a240a43877596d8744d2aaab915297f32e19"
+          },
+          "coast": {
+            "derivedFrom": "5303b59b9f0d67c94eaf7f839bf46b17e483680ddc61e6992d21252b18abc70d",
+            "path": "maps/coast.mbtiles",
+            "sha256": "455c2ca3755e68f93c1aebeb8383580b60ad9db1f46c8ce9effebeafc1be0d7b"
+          },
+          "grid": {
+            "path": "maps/grid.mbtiles",
+            "sha256": "1eaa23780156169a09501c47b45f0ddaef7ab7633581622cf72c677ad3a32a72"
+          },
+          "hillshade": {
+            "path": "maps/hillshade.mbtiles",
+            "sha256": "c14fa9c2bc6bc36fd6c2c0b251dffaf15ce774651a914b3b43290fb2ed793efc"
+          },
+          "topography": {
+            "path": "maps/topography.mbtiles",
+            "sha256": "5303b59b9f0d67c94eaf7f839bf46b17e483680ddc61e6992d21252b18abc70d"
+          }
+        },
+        "instructionsSHA256": "13365608d5b4a24c4de26494ba45874015a8d15e985a501306f4931a8241e330",
+        "instructionsURL": "https://downloads.appsbyonzy.dev/OpenBareMap/us-grand-canyon/2.0.0/app-bundles-v1/android/instructions.txt",
+        "localPath": "releases/us-grand-canyon/2.0.0/app-bundles-v1/android/OpenBareMap-Grand-Canyon-Android-Bundle.zip",
+        "mapManifestSHA256": "944c87d3daf4967485d64a65a4455fdf227ad3c6f795d15adae72e595ba022f6",
+        "r2Key": "OpenBareMap/us-grand-canyon/2.0.0/app-bundles-v1/android/OpenBareMap-Grand-Canyon-Android-Bundle.zip",
+        "sha256": "18b3eae7565caf6191b816b1c0493a5c662b77ad3cf5bf5ae161a4313da7c332",
+        "url": "https://downloads.appsbyonzy.dev/OpenBareMap/us-grand-canyon/2.0.0/app-bundles-v1/android/OpenBareMap-Grand-Canyon-Android-Bundle.zip"
+      },
+      "ios": {
+        "bytes": 333479405,
+        "datasets": {
+          "basemap": {
+            "path": "maps/basemap.mbtiles",
+            "sha256": "229e2620a4000f8a519767327cd3a240a43877596d8744d2aaab915297f32e19"
+          },
+          "coast": {
+            "derived_from": "5303b59b9f0d67c94eaf7f839bf46b17e483680ddc61e6992d21252b18abc70d",
+            "maxzoom": 12,
+            "operation": "Preserve land-layer MVT bytes only through zoom 12; omit other layers.",
+            "path": "maps/coast.mbtiles",
+            "sha256": "455c2ca3755e68f93c1aebeb8383580b60ad9db1f46c8ce9effebeafc1be0d7b"
+          },
+          "grid": {
+            "path": "maps/grid.mbtiles",
+            "sha256": "1eaa23780156169a09501c47b45f0ddaef7ab7633581622cf72c677ad3a32a72"
+          },
+          "hillshade": {
+            "path": "maps/hillshade.mbtiles",
+            "sha256": "c14fa9c2bc6bc36fd6c2c0b251dffaf15ce774651a914b3b43290fb2ed793efc"
+          },
+          "topography": {
+            "path": "maps/topography.mbtiles",
+            "sha256": "5303b59b9f0d67c94eaf7f839bf46b17e483680ddc61e6992d21252b18abc70d"
+          }
+        },
+        "instructionsSHA256": "31d59fb87afe03318fe29b329444d70b5ede4d27c937cb7f579a0cf20ff2a921",
+        "instructionsURL": "https://downloads.appsbyonzy.dev/OpenBareMap/us-grand-canyon/2.0.0/app-bundles-v1/ios/instructions.txt",
+        "localPath": "releases/us-grand-canyon/2.0.0/app-bundles-v1/ios/OpenBareMap-Grand-Canyon-iOS-Bundle.zip",
+        "mapManifestSHA256": "58e9498214139601cac2da84957bb8ee200ef924cc06d6d363c467c9104590c9",
+        "r2Key": "OpenBareMap/us-grand-canyon/2.0.0/app-bundles-v1/ios/OpenBareMap-Grand-Canyon-iOS-Bundle.zip",
+        "sha256": "fb44cf1ecdad664ad45f0943021c789b3da125f7a8c2652daffb36810f5caa93",
+        "url": "https://downloads.appsbyonzy.dev/OpenBareMap/us-grand-canyon/2.0.0/app-bundles-v1/ios/OpenBareMap-Grand-Canyon-iOS-Bundle.zip"
+      }
+    },
+    "us-great-smoky-mountains": {
+      "android": {
+        "bytes": 155966886,
+        "datasets": {
+          "basemap": {
+            "path": "maps/basemap.mbtiles",
+            "sha256": "92d5f46df61c845c29ca12b9748237ed28b42533b1c97714432339e3b6ce3805"
+          },
+          "coast": {
+            "derivedFrom": "3fe5f82c7ada611e9f9773606f61cc8848440ae2790f1d29e4b4c30514d91b13",
+            "path": "maps/coast.mbtiles",
+            "sha256": "1cc687f138f9c037ddeb7f58113a84f196f74519c631171053002a4c89db5f69"
+          },
+          "grid": {
+            "path": "maps/grid.mbtiles",
+            "sha256": "37767a27165e6e108f2d58ae82ab0a0d715d5ec944cb0e23d88f802d108afb4d"
+          },
+          "hillshade": {
+            "path": "maps/hillshade.mbtiles",
+            "sha256": "06b58c5218c5cda1aa03b8db806c23782fcc69a21b1ad2f6b91a3f915381c19c"
+          },
+          "topography": {
+            "path": "maps/topography.mbtiles",
+            "sha256": "3fe5f82c7ada611e9f9773606f61cc8848440ae2790f1d29e4b4c30514d91b13"
+          }
+        },
+        "instructionsSHA256": "d84805f03ccbf19ff4d9bb637ef6e5dc8b1fef15090d5eed1aa671f8414a63d3",
+        "instructionsURL": "https://downloads.appsbyonzy.dev/OpenBareMap/us-great-smoky-mountains/2.0.0/app-bundles-v1/android/instructions.txt",
+        "localPath": "releases/us-great-smoky-mountains/2.0.0/app-bundles-v1/android/OpenBareMap-Great-Smoky-Mountains-Android-Bundle.zip",
+        "mapManifestSHA256": "a192609f0c231db159b5df0de29eb830178e0afa9b32c0db28bb51bc0dd112b8",
+        "r2Key": "OpenBareMap/us-great-smoky-mountains/2.0.0/app-bundles-v1/android/OpenBareMap-Great-Smoky-Mountains-Android-Bundle.zip",
+        "sha256": "8f166c6d6712dd357040dafb9dcaeb7952317c9e657be52b1680dc6cedf224ce",
+        "url": "https://downloads.appsbyonzy.dev/OpenBareMap/us-great-smoky-mountains/2.0.0/app-bundles-v1/android/OpenBareMap-Great-Smoky-Mountains-Android-Bundle.zip"
+      },
+      "ios": {
+        "bytes": 155968621,
+        "datasets": {
+          "basemap": {
+            "path": "maps/basemap.mbtiles",
+            "sha256": "92d5f46df61c845c29ca12b9748237ed28b42533b1c97714432339e3b6ce3805"
+          },
+          "coast": {
+            "derived_from": "3fe5f82c7ada611e9f9773606f61cc8848440ae2790f1d29e4b4c30514d91b13",
+            "maxzoom": 12,
+            "operation": "Preserve land-layer MVT bytes only through zoom 12; omit other layers.",
+            "path": "maps/coast.mbtiles",
+            "sha256": "1cc687f138f9c037ddeb7f58113a84f196f74519c631171053002a4c89db5f69"
+          },
+          "grid": {
+            "path": "maps/grid.mbtiles",
+            "sha256": "37767a27165e6e108f2d58ae82ab0a0d715d5ec944cb0e23d88f802d108afb4d"
+          },
+          "hillshade": {
+            "path": "maps/hillshade.mbtiles",
+            "sha256": "06b58c5218c5cda1aa03b8db806c23782fcc69a21b1ad2f6b91a3f915381c19c"
+          },
+          "topography": {
+            "path": "maps/topography.mbtiles",
+            "sha256": "3fe5f82c7ada611e9f9773606f61cc8848440ae2790f1d29e4b4c30514d91b13"
+          }
+        },
+        "instructionsSHA256": "bca865329cb992ce36d867feab7f17af51bd19335b31403b8ea252df51b125bb",
+        "instructionsURL": "https://downloads.appsbyonzy.dev/OpenBareMap/us-great-smoky-mountains/2.0.0/app-bundles-v1/ios/instructions.txt",
+        "localPath": "releases/us-great-smoky-mountains/2.0.0/app-bundles-v1/ios/OpenBareMap-Great-Smoky-Mountains-iOS-Bundle.zip",
+        "mapManifestSHA256": "cf4153334a18234e5c1d61abf1d3530da99a9d788873dba5275d74a51c0d4312",
+        "r2Key": "OpenBareMap/us-great-smoky-mountains/2.0.0/app-bundles-v1/ios/OpenBareMap-Great-Smoky-Mountains-iOS-Bundle.zip",
+        "sha256": "57c8bc06cd297beafe6e4e13ac05b84d177235444f59ae9c695056900876794f",
+        "url": "https://downloads.appsbyonzy.dev/OpenBareMap/us-great-smoky-mountains/2.0.0/app-bundles-v1/ios/OpenBareMap-Great-Smoky-Mountains-iOS-Bundle.zip"
+      }
+    },
+    "us-olympic": {
+      "android": {
+        "bytes": 208498480,
+        "datasets": {
+          "basemap": {
+            "path": "maps/basemap.mbtiles",
+            "sha256": "92ab78c832f5b9425fd4c2b7c7914c1a551de35152762cb468ce896f07754c5d"
+          },
+          "coast": {
+            "derivedFrom": "85110ca132377ed9eca0400720291c41d63cd475db235f31dd15bfd050e3ca36",
+            "path": "maps/coast.mbtiles",
+            "sha256": "0804d64331ff23906edec52ae785e24c5b18ef823b82be3082926053a5d35005"
+          },
+          "grid": {
+            "path": "maps/grid.mbtiles",
+            "sha256": "be1f2c67797fe89bc8586c02001cef720acea8eedd0b1ce858775f218e6a3730"
+          },
+          "hillshade": {
+            "path": "maps/hillshade.mbtiles",
+            "sha256": "1ddd0d13641446a3163415a773a3c3c285873285bb71bba3b0691f1a9bdc01d2"
+          },
+          "topography": {
+            "path": "maps/topography.mbtiles",
+            "sha256": "85110ca132377ed9eca0400720291c41d63cd475db235f31dd15bfd050e3ca36"
+          }
+        },
+        "instructionsSHA256": "48a392074248390746315c437d1a36abac5ce143642b9b9c7c036ee5eca5c6f4",
+        "instructionsURL": "https://downloads.appsbyonzy.dev/OpenBareMap/us-olympic/2.0.0/app-bundles-v1/android/instructions.txt",
+        "localPath": "releases/us-olympic/2.0.0/app-bundles-v1/android/OpenBareMap-Olympic-Android-Bundle.zip",
+        "mapManifestSHA256": "6734c4c33842c2e5b9ed844ff3870062813ce0ec77e649ccc3e8e648664c266d",
+        "r2Key": "OpenBareMap/us-olympic/2.0.0/app-bundles-v1/android/OpenBareMap-Olympic-Android-Bundle.zip",
+        "sha256": "561107f62088524b66b42a0439dcb8f211026f9ef5984e432df868a621df8857",
+        "url": "https://downloads.appsbyonzy.dev/OpenBareMap/us-olympic/2.0.0/app-bundles-v1/android/OpenBareMap-Olympic-Android-Bundle.zip"
+      },
+      "ios": {
+        "bytes": 208500190,
+        "datasets": {
+          "basemap": {
+            "path": "maps/basemap.mbtiles",
+            "sha256": "92ab78c832f5b9425fd4c2b7c7914c1a551de35152762cb468ce896f07754c5d"
+          },
+          "coast": {
+            "derived_from": "85110ca132377ed9eca0400720291c41d63cd475db235f31dd15bfd050e3ca36",
+            "maxzoom": 12,
+            "operation": "Preserve land-layer MVT bytes only through zoom 12; omit other layers.",
+            "path": "maps/coast.mbtiles",
+            "sha256": "0804d64331ff23906edec52ae785e24c5b18ef823b82be3082926053a5d35005"
+          },
+          "grid": {
+            "path": "maps/grid.mbtiles",
+            "sha256": "be1f2c67797fe89bc8586c02001cef720acea8eedd0b1ce858775f218e6a3730"
+          },
+          "hillshade": {
+            "path": "maps/hillshade.mbtiles",
+            "sha256": "1ddd0d13641446a3163415a773a3c3c285873285bb71bba3b0691f1a9bdc01d2"
+          },
+          "topography": {
+            "path": "maps/topography.mbtiles",
+            "sha256": "85110ca132377ed9eca0400720291c41d63cd475db235f31dd15bfd050e3ca36"
+          }
+        },
+        "instructionsSHA256": "bcd937a8b2592c3e2e8f5979683e33453e0542f200ef3fccd989382c4d28b22c",
+        "instructionsURL": "https://downloads.appsbyonzy.dev/OpenBareMap/us-olympic/2.0.0/app-bundles-v1/ios/instructions.txt",
+        "localPath": "releases/us-olympic/2.0.0/app-bundles-v1/ios/OpenBareMap-Olympic-iOS-Bundle.zip",
+        "mapManifestSHA256": "1ba518ef2dbd1f0d96c3aa266d97cd8ca49f689e1ddff5c5f3162fbace6575d9",
+        "r2Key": "OpenBareMap/us-olympic/2.0.0/app-bundles-v1/ios/OpenBareMap-Olympic-iOS-Bundle.zip",
+        "sha256": "d0f52c31f47498c64d8cc940faf19edd6397fd890283ba39794336b3e677517c",
+        "url": "https://downloads.appsbyonzy.dev/OpenBareMap/us-olympic/2.0.0/app-bundles-v1/ios/OpenBareMap-Olympic-iOS-Bundle.zip"
+      }
+    },
+    "us-rocky-mountain": {
+      "android": {
+        "bytes": 77903484,
+        "datasets": {
+          "basemap": {
+            "path": "maps/basemap.mbtiles",
+            "sha256": "e6947762d77ed9a436e30464febc1dd4a60acac93ce5b8bfd3a68f9a23319044"
+          },
+          "coast": {
+            "derivedFrom": "8a5e79c943aa0329f42c26a5f1c457959476a538fb941d21e03c1c1634ee5e70",
+            "path": "maps/coast.mbtiles",
+            "sha256": "55dc5a49422ae37bc869b015b8c8e10db624798a736517f8267fab0a7b49ab7b"
+          },
+          "grid": {
+            "path": "maps/grid.mbtiles",
+            "sha256": "612923e176b450045b03f200d170fbabdc8995e8eff0dd7ebc430abd40b45e66"
+          },
+          "hillshade": {
+            "path": "maps/hillshade.mbtiles",
+            "sha256": "6aa11fa47979f4ac836f887ddcf5901230d781a03dbf8d0f5c03d3433239bbc9"
+          },
+          "topography": {
+            "path": "maps/topography.mbtiles",
+            "sha256": "8a5e79c943aa0329f42c26a5f1c457959476a538fb941d21e03c1c1634ee5e70"
+          }
+        },
+        "instructionsSHA256": "e6d1781bf9686e23657446c0137d7558e776eff47b0bc406a6ce676b1667eeff",
+        "instructionsURL": "https://downloads.appsbyonzy.dev/OpenBareMap/us-rocky-mountain/2.0.0/app-bundles-v1/android/instructions.txt",
+        "localPath": "releases/us-rocky-mountain/2.0.0/app-bundles-v1/android/OpenBareMap-Rocky-Mountain-Android-Bundle.zip",
+        "mapManifestSHA256": "0d916484cdc9dec0abdd4afb259167f7e46c2fefeabd539932a7a3b180ed207f",
+        "r2Key": "OpenBareMap/us-rocky-mountain/2.0.0/app-bundles-v1/android/OpenBareMap-Rocky-Mountain-Android-Bundle.zip",
+        "sha256": "2f674caf44deaf02c676ab02167604a21effe10904c0a7109c835810257beba7",
+        "url": "https://downloads.appsbyonzy.dev/OpenBareMap/us-rocky-mountain/2.0.0/app-bundles-v1/android/OpenBareMap-Rocky-Mountain-Android-Bundle.zip"
+      },
+      "ios": {
+        "bytes": 77905205,
+        "datasets": {
+          "basemap": {
+            "path": "maps/basemap.mbtiles",
+            "sha256": "e6947762d77ed9a436e30464febc1dd4a60acac93ce5b8bfd3a68f9a23319044"
+          },
+          "coast": {
+            "derived_from": "8a5e79c943aa0329f42c26a5f1c457959476a538fb941d21e03c1c1634ee5e70",
+            "maxzoom": 12,
+            "operation": "Preserve land-layer MVT bytes only through zoom 12; omit other layers.",
+            "path": "maps/coast.mbtiles",
+            "sha256": "55dc5a49422ae37bc869b015b8c8e10db624798a736517f8267fab0a7b49ab7b"
+          },
+          "grid": {
+            "path": "maps/grid.mbtiles",
+            "sha256": "612923e176b450045b03f200d170fbabdc8995e8eff0dd7ebc430abd40b45e66"
+          },
+          "hillshade": {
+            "path": "maps/hillshade.mbtiles",
+            "sha256": "6aa11fa47979f4ac836f887ddcf5901230d781a03dbf8d0f5c03d3433239bbc9"
+          },
+          "topography": {
+            "path": "maps/topography.mbtiles",
+            "sha256": "8a5e79c943aa0329f42c26a5f1c457959476a538fb941d21e03c1c1634ee5e70"
+          }
+        },
+        "instructionsSHA256": "db3a5e24a5f7afbd3ceee7f9fc5a1c92fa46228113d352e5485bf192edb6a71b",
+        "instructionsURL": "https://downloads.appsbyonzy.dev/OpenBareMap/us-rocky-mountain/2.0.0/app-bundles-v1/ios/instructions.txt",
+        "localPath": "releases/us-rocky-mountain/2.0.0/app-bundles-v1/ios/OpenBareMap-Rocky-Mountain-iOS-Bundle.zip",
+        "mapManifestSHA256": "a57f4a7cbdff0723b868750b9970d5991344a51d149e5fa04eec2c86f218a314",
+        "r2Key": "OpenBareMap/us-rocky-mountain/2.0.0/app-bundles-v1/ios/OpenBareMap-Rocky-Mountain-iOS-Bundle.zip",
+        "sha256": "c7049525f48e79019a6e86c660a7dc5b52de4a192e08e813cbf07fd2434a1ed4",
+        "url": "https://downloads.appsbyonzy.dev/OpenBareMap/us-rocky-mountain/2.0.0/app-bundles-v1/ios/OpenBareMap-Rocky-Mountain-iOS-Bundle.zip"
+      }
+    },
+    "us-yellowstone-grand-teton": {
+      "android": {
+        "bytes": 384305204,
+        "datasets": {
+          "basemap": {
+            "path": "maps/basemap.mbtiles",
+            "sha256": "69bd3010e3d95be803065576e17198a43b463e29a1ec6abc281af262fcca8f30"
+          },
+          "coast": {
+            "derivedFrom": "52139ac2ccedbfa356598a9b7ecda5697e7d20215813cfcc3d88d97717793c5a",
+            "path": "maps/coast.mbtiles",
+            "sha256": "0f6ba70fb1857c04e87adf29c9543f42c871e7e484ed6a3ca64fb2939db06b93"
+          },
+          "grid": {
+            "path": "maps/grid.mbtiles",
+            "sha256": "559128df29402b90df47b6f5e64ed7c18cb6dca80fc4722b62483569503393c2"
+          },
+          "hillshade": {
+            "path": "maps/hillshade.mbtiles",
+            "sha256": "b44068bb5bf694392a1765b5336d84ae7a039dc1280ea4c3dbf42af49673199b"
+          },
+          "topography": {
+            "path": "maps/topography.mbtiles",
+            "sha256": "52139ac2ccedbfa356598a9b7ecda5697e7d20215813cfcc3d88d97717793c5a"
+          }
+        },
+        "instructionsSHA256": "598241175265321863fc307d98895540d75ad0e258351c9e06b5e090c1322125",
+        "instructionsURL": "https://downloads.appsbyonzy.dev/OpenBareMap/us-yellowstone-grand-teton/2.0.0/app-bundles-v1/android/instructions.txt",
+        "localPath": "releases/us-yellowstone-grand-teton/2.0.0/app-bundles-v1/android/OpenBareMap-Yellowstone-Grand-Teton-Android-Bundle.zip",
+        "mapManifestSHA256": "9a4f64f26e81a61ff7a62a1571894ae3ab4190e6afe7ffb6a9c24b25a65720b1",
+        "r2Key": "OpenBareMap/us-yellowstone-grand-teton/2.0.0/app-bundles-v1/android/OpenBareMap-Yellowstone-Grand-Teton-Android-Bundle.zip",
+        "sha256": "dd4e75fe9c21aeb47f0851315226fad8c089f259074e3b837ff790519cf9f92c",
+        "url": "https://downloads.appsbyonzy.dev/OpenBareMap/us-yellowstone-grand-teton/2.0.0/app-bundles-v1/android/OpenBareMap-Yellowstone-Grand-Teton-Android-Bundle.zip"
+      },
+      "ios": {
+        "bytes": 384306949,
+        "datasets": {
+          "basemap": {
+            "path": "maps/basemap.mbtiles",
+            "sha256": "69bd3010e3d95be803065576e17198a43b463e29a1ec6abc281af262fcca8f30"
+          },
+          "coast": {
+            "derived_from": "52139ac2ccedbfa356598a9b7ecda5697e7d20215813cfcc3d88d97717793c5a",
+            "maxzoom": 12,
+            "operation": "Preserve land-layer MVT bytes only through zoom 12; omit other layers.",
+            "path": "maps/coast.mbtiles",
+            "sha256": "0f6ba70fb1857c04e87adf29c9543f42c871e7e484ed6a3ca64fb2939db06b93"
+          },
+          "grid": {
+            "path": "maps/grid.mbtiles",
+            "sha256": "559128df29402b90df47b6f5e64ed7c18cb6dca80fc4722b62483569503393c2"
+          },
+          "hillshade": {
+            "path": "maps/hillshade.mbtiles",
+            "sha256": "b44068bb5bf694392a1765b5336d84ae7a039dc1280ea4c3dbf42af49673199b"
+          },
+          "topography": {
+            "path": "maps/topography.mbtiles",
+            "sha256": "52139ac2ccedbfa356598a9b7ecda5697e7d20215813cfcc3d88d97717793c5a"
+          }
+        },
+        "instructionsSHA256": "97711fc7b9a056070430fc91b0f4ad41a954152d1640b0a2c56aac76aff5ef63",
+        "instructionsURL": "https://downloads.appsbyonzy.dev/OpenBareMap/us-yellowstone-grand-teton/2.0.0/app-bundles-v1/ios/instructions.txt",
+        "localPath": "releases/us-yellowstone-grand-teton/2.0.0/app-bundles-v1/ios/OpenBareMap-Yellowstone-Grand-Teton-iOS-Bundle.zip",
+        "mapManifestSHA256": "542666c99602b87a2391141df244dd29333af8baaa8efee98c076d8d461f3dd3",
+        "r2Key": "OpenBareMap/us-yellowstone-grand-teton/2.0.0/app-bundles-v1/ios/OpenBareMap-Yellowstone-Grand-Teton-iOS-Bundle.zip",
+        "sha256": "fcd11167456526ac5109869aae676f12e040c39c92a4e93fd84363e600a5d642",
+        "url": "https://downloads.appsbyonzy.dev/OpenBareMap/us-yellowstone-grand-teton/2.0.0/app-bundles-v1/ios/OpenBareMap-Yellowstone-Grand-Teton-iOS-Bundle.zip"
+      }
+    },
+    "us-yosemite": {
+      "android": {
+        "bytes": 180336855,
+        "datasets": {
+          "basemap": {
+            "path": "maps/basemap.mbtiles",
+            "sha256": "b5f9cc664efdb155836f9b7d1737461a75d30c05b9ade9aa41123ae6fdef59e9"
+          },
+          "coast": {
+            "derivedFrom": "66cb6aef7dd63d28401bc8b3b4aa713aa4f3531ee50f2d9ee7d309b060674bf7",
+            "path": "maps/coast.mbtiles",
+            "sha256": "31baeabd7327d27c93061756691c746cd45f42a6f0925cd3a5ed23045e5802b3"
+          },
+          "grid": {
+            "path": "maps/grid.mbtiles",
+            "sha256": "1367af0fa0999e1ecc42d70199f36b2cf5fa237c573c1a37a228118d21642007"
+          },
+          "hillshade": {
+            "path": "maps/hillshade.mbtiles",
+            "sha256": "b4fd0c6bc6c223ede7705fa657be8c8ccd2110885c5024f9d204cdfc491cbd7f"
+          },
+          "topography": {
+            "path": "maps/topography.mbtiles",
+            "sha256": "66cb6aef7dd63d28401bc8b3b4aa713aa4f3531ee50f2d9ee7d309b060674bf7"
+          }
+        },
+        "instructionsSHA256": "9efb559e8457d2e2e389c148e3704a9402805abecd3ca2e7977bf0f9cdb6fec5",
+        "instructionsURL": "https://downloads.appsbyonzy.dev/OpenBareMap/us-yosemite/2.0.0/app-bundles-v1/android/instructions.txt",
+        "localPath": "releases/us-yosemite/2.0.0/app-bundles-v1/android/OpenBareMap-Yosemite-Android-Bundle.zip",
+        "mapManifestSHA256": "15597cdbfc56d3f5a8a0c786466d948a6d5d5e128ca7492961abac8046323750",
+        "r2Key": "OpenBareMap/us-yosemite/2.0.0/app-bundles-v1/android/OpenBareMap-Yosemite-Android-Bundle.zip",
+        "sha256": "a2610aca1ff628998be06b4cbbe5a8bde0ad6cfe37c29d7c270c95815964b509",
+        "url": "https://downloads.appsbyonzy.dev/OpenBareMap/us-yosemite/2.0.0/app-bundles-v1/android/OpenBareMap-Yosemite-Android-Bundle.zip"
+      },
+      "ios": {
+        "bytes": 180338566,
+        "datasets": {
+          "basemap": {
+            "path": "maps/basemap.mbtiles",
+            "sha256": "b5f9cc664efdb155836f9b7d1737461a75d30c05b9ade9aa41123ae6fdef59e9"
+          },
+          "coast": {
+            "derived_from": "66cb6aef7dd63d28401bc8b3b4aa713aa4f3531ee50f2d9ee7d309b060674bf7",
+            "maxzoom": 12,
+            "operation": "Preserve land-layer MVT bytes only through zoom 12; omit other layers.",
+            "path": "maps/coast.mbtiles",
+            "sha256": "31baeabd7327d27c93061756691c746cd45f42a6f0925cd3a5ed23045e5802b3"
+          },
+          "grid": {
+            "path": "maps/grid.mbtiles",
+            "sha256": "1367af0fa0999e1ecc42d70199f36b2cf5fa237c573c1a37a228118d21642007"
+          },
+          "hillshade": {
+            "path": "maps/hillshade.mbtiles",
+            "sha256": "b4fd0c6bc6c223ede7705fa657be8c8ccd2110885c5024f9d204cdfc491cbd7f"
+          },
+          "topography": {
+            "path": "maps/topography.mbtiles",
+            "sha256": "66cb6aef7dd63d28401bc8b3b4aa713aa4f3531ee50f2d9ee7d309b060674bf7"
+          }
+        },
+        "instructionsSHA256": "6079deff66c9909c7b96bf777947c98c8017598061020196d1e0a93e7641d6c3",
+        "instructionsURL": "https://downloads.appsbyonzy.dev/OpenBareMap/us-yosemite/2.0.0/app-bundles-v1/ios/instructions.txt",
+        "localPath": "releases/us-yosemite/2.0.0/app-bundles-v1/ios/OpenBareMap-Yosemite-iOS-Bundle.zip",
+        "mapManifestSHA256": "89a1bd45e940740763c126d5fb9c0e30be93c7f6a3c34463e6c92175eb3a16b3",
+        "r2Key": "OpenBareMap/us-yosemite/2.0.0/app-bundles-v1/ios/OpenBareMap-Yosemite-iOS-Bundle.zip",
+        "sha256": "cb58e937681d181803728fddbcc018decc05b466537aa06289ccd604362b6c75",
+        "url": "https://downloads.appsbyonzy.dev/OpenBareMap/us-yosemite/2.0.0/app-bundles-v1/ios/OpenBareMap-Yosemite-iOS-Bundle.zip"
+      }
+    },
+    "us-zion": {
+      "android": {
+        "bytes": 62530942,
+        "datasets": {
+          "basemap": {
+            "path": "maps/basemap.mbtiles",
+            "sha256": "ab9d2fa4bccf09762672c0eb917bd5e6b219184e3dd6866f4da0d056fd3ac734"
+          },
+          "coast": {
+            "derivedFrom": "bbd7001efc4117d5cf72c6469e60b967c477de8bd54b99b3a584cc4ed544eeab",
+            "path": "maps/coast.mbtiles",
+            "sha256": "da80f832a0f7fe6dca486984b187fb7137cbbec566d4c61a97ed724d7a0b610e"
+          },
+          "grid": {
+            "path": "maps/grid.mbtiles",
+            "sha256": "627a81f0d0ddd4f3d0e8625cffe1037bb8143040c9ebbcc0e2106ec6c8424412"
+          },
+          "hillshade": {
+            "path": "maps/hillshade.mbtiles",
+            "sha256": "b81ad847c6eb895e042172274f80747250b49f6e44736cb8700c7ae67a69fb98"
+          },
+          "topography": {
+            "path": "maps/topography.mbtiles",
+            "sha256": "bbd7001efc4117d5cf72c6469e60b967c477de8bd54b99b3a584cc4ed544eeab"
+          }
+        },
+        "instructionsSHA256": "a7ec1af9357f2f8bc6fd25f7e2896bdc70592b1a79b3559a50a0644713065696",
+        "instructionsURL": "https://downloads.appsbyonzy.dev/OpenBareMap/us-zion/2.0.0/app-bundles-v1/android/instructions.txt",
+        "localPath": "releases/us-zion/2.0.0/app-bundles-v1/android/OpenBareMap-Zion-Android-Bundle.zip",
+        "mapManifestSHA256": "98ac9835591cda01f949bde34ffff603816d9b301883e8659448c29158756fa6",
+        "r2Key": "OpenBareMap/us-zion/2.0.0/app-bundles-v1/android/OpenBareMap-Zion-Android-Bundle.zip",
+        "sha256": "f696e786a729a3a91abce95e38f8f350ec8478f009fc9c51aa8ade5b1cb22416",
+        "url": "https://downloads.appsbyonzy.dev/OpenBareMap/us-zion/2.0.0/app-bundles-v1/android/OpenBareMap-Zion-Android-Bundle.zip"
+      },
+      "ios": {
+        "bytes": 62532643,
+        "datasets": {
+          "basemap": {
+            "path": "maps/basemap.mbtiles",
+            "sha256": "ab9d2fa4bccf09762672c0eb917bd5e6b219184e3dd6866f4da0d056fd3ac734"
+          },
+          "coast": {
+            "derived_from": "bbd7001efc4117d5cf72c6469e60b967c477de8bd54b99b3a584cc4ed544eeab",
+            "maxzoom": 12,
+            "operation": "Preserve land-layer MVT bytes only through zoom 12; omit other layers.",
+            "path": "maps/coast.mbtiles",
+            "sha256": "da80f832a0f7fe6dca486984b187fb7137cbbec566d4c61a97ed724d7a0b610e"
+          },
+          "grid": {
+            "path": "maps/grid.mbtiles",
+            "sha256": "627a81f0d0ddd4f3d0e8625cffe1037bb8143040c9ebbcc0e2106ec6c8424412"
+          },
+          "hillshade": {
+            "path": "maps/hillshade.mbtiles",
+            "sha256": "b81ad847c6eb895e042172274f80747250b49f6e44736cb8700c7ae67a69fb98"
+          },
+          "topography": {
+            "path": "maps/topography.mbtiles",
+            "sha256": "bbd7001efc4117d5cf72c6469e60b967c477de8bd54b99b3a584cc4ed544eeab"
+          }
+        },
+        "instructionsSHA256": "a8d203e3b38f3f5d354bd72c7dd04fb284ad9f719eb48a4953423e2829251d04",
+        "instructionsURL": "https://downloads.appsbyonzy.dev/OpenBareMap/us-zion/2.0.0/app-bundles-v1/ios/instructions.txt",
+        "localPath": "releases/us-zion/2.0.0/app-bundles-v1/ios/OpenBareMap-Zion-iOS-Bundle.zip",
+        "mapManifestSHA256": "2efe1490de30d95aae2e887cc8ca82cf8a535ae47fed55a1d8fc177b630adc30",
+        "r2Key": "OpenBareMap/us-zion/2.0.0/app-bundles-v1/ios/OpenBareMap-Zion-iOS-Bundle.zip",
+        "sha256": "a86bd69f0289a4a63e6f965d91e384708d7cc51c998a6c661e59812142f7fb6a",
+        "url": "https://downloads.appsbyonzy.dev/OpenBareMap/us-zion/2.0.0/app-bundles-v1/ios/OpenBareMap-Zion-iOS-Bundle.zip"
       }
     }
   },

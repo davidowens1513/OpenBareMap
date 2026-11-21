@@ -1,0 +1,338 @@
+{
+  "accessed_utc": "2026-11-21T11:51:04.856460+00:00",
+  "assets": [
+    {
+      "bytes": 8295399,
+      "operation": "Bilinear resampling of Copernicus GLO-30 to point-aligned Int16 HGT, EGM2008 heights",
+      "path": "data/regions/us-yosemite/elevation/N37W121.hgt.gz",
+      "sha256": "f351028c96bb4e8c0fb6b221cb5fc6c50e8a145da02d0197db642c322b23246d",
+      "url": null
+    },
+    {
+      "bytes": 16037120,
+      "operation": "Bilinear resampling of Copernicus GLO-30 to point-aligned Int16 HGT, EGM2008 heights",
+      "path": "data/regions/us-yosemite/elevation/N37W120.hgt.gz",
+      "sha256": "b0126dfa48c1e8bc155076dd20f1969ba8e5d6bc218ade1e0d300506c2a0dca5",
+      "url": null
+    },
+    {
+      "bytes": 14529008,
+      "operation": "Bilinear resampling of Copernicus GLO-30 to point-aligned Int16 HGT, EGM2008 heights",
+      "path": "data/regions/us-yosemite/elevation/N37W119.hgt.gz",
+      "sha256": "af3e14120464293d8caf759d7c79789442a852e7bcc0c527e586208bcdc38d82",
+      "url": null
+    },
+    {
+      "bytes": 15167833,
+      "operation": "Bilinear resampling of Copernicus GLO-30 to point-aligned Int16 HGT, EGM2008 heights",
+      "path": "data/regions/us-yosemite/elevation/N38W121.hgt.gz",
+      "sha256": "1e8e2aebf73f803609eeee8e7015630a283253160db0ee38fccea34dd22506c7",
+      "url": null
+    },
+    {
+      "bytes": 14070104,
+      "operation": "Bilinear resampling of Copernicus GLO-30 to point-aligned Int16 HGT, EGM2008 heights",
+      "path": "data/regions/us-yosemite/elevation/N38W120.hgt.gz",
+      "sha256": "54c9ffb87f45e8e2b61dda554e6f32a63760b8af5cbab7877b5769b1f232d4d7",
+      "url": null
+    },
+    {
+      "bytes": 11434929,
+      "operation": "Bilinear resampling of Copernicus GLO-30 to point-aligned Int16 HGT, EGM2008 heights",
+      "path": "data/regions/us-yosemite/elevation/N38W119.hgt.gz",
+      "sha256": "46acc65c07e192bfc9adc30d0315b2165e5bdbac5683947adcf1e1ed6e7ed6fb",
+      "url": null
+    }
+  ],
+  "commands": [
+    [
+      "/Applications/QGIS.app/Contents/MacOS/gdalbuildvrt",
+      "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-Copernicus-05e38qs4/source.vrt",
+      "/Volumes/Extreme SSD/Projects/OpenBareMap/data/regions/us-national-parks/copernicus/Copernicus_DSM_COG_10_N37_00_W121_00_DEM.tif",
+      "/Volumes/Extreme SSD/Projects/OpenBareMap/data/regions/us-national-parks/copernicus/Copernicus_DSM_COG_10_N37_00_W120_00_DEM.tif",
+      "/Volumes/Extreme SSD/Projects/OpenBareMap/data/regions/us-national-parks/copernicus/Copernicus_DSM_COG_10_N37_00_W119_00_DEM.tif",
+      "/Volumes/Extreme SSD/Projects/OpenBareMap/data/regions/us-national-parks/copernicus/Copernicus_DSM_COG_10_N38_00_W121_00_DEM.tif",
+      "/Volumes/Extreme SSD/Projects/OpenBareMap/data/regions/us-national-parks/copernicus/Copernicus_DSM_COG_10_N38_00_W120_00_DEM.tif",
+      "/Volumes/Extreme SSD/Projects/OpenBareMap/data/regions/us-national-parks/copernicus/Copernicus_DSM_COG_10_N38_00_W119_00_DEM.tif"
+    ],
+    [
+      "/Applications/QGIS.app/Contents/MacOS/gdalwarp",
+      "-q",
+      "-overwrite",
+      "-of",
+      "GTiff",
+      "-ot",
+      "Int16",
+      "-t_srs",
+      "EPSG:4326",
+      "-te",
+      "-121.00013888888888",
+      "36.99986111111111",
+      "-119.99986111111112",
+      "38.00013888888889",
+      "-ts",
+      "3601",
+      "3601",
+      "-r",
+      "bilinear",
+      "-dstnodata",
+      "0",
+      "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-Copernicus-05e38qs4/source.vrt",
+      "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-Copernicus-05e38qs4/N37W121.hgt.tif"
+    ],
+    [
+      "/Applications/QGIS.app/Contents/MacOS/gdal_translate",
+      "-q",
+      "-of",
+      "SRTMHGT",
+      "-a_nodata",
+      "-32768",
+      "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-Copernicus-05e38qs4/N37W121.hgt.tif",
+      "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-Copernicus-05e38qs4/N37W121.hgt"
+    ],
+    [
+      "/Applications/QGIS.app/Contents/MacOS/gdalwarp",
+      "-q",
+      "-overwrite",
+      "-of",
+      "GTiff",
+      "-ot",
+      "Int16",
+      "-t_srs",
+      "EPSG:4326",
+      "-te",
+      "-120.00013888888888",
+      "36.99986111111111",
+      "-118.99986111111112",
+      "38.00013888888889",
+      "-ts",
+      "3601",
+      "3601",
+      "-r",
+      "bilinear",
+      "-dstnodata",
+      "0",
+      "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-Copernicus-05e38qs4/source.vrt",
+      "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-Copernicus-05e38qs4/N37W120.hgt.tif"
+    ],
+    [
+      "/Applications/QGIS.app/Contents/MacOS/gdal_translate",
+      "-q",
+      "-of",
+      "SRTMHGT",
+      "-a_nodata",
+      "-32768",
+      "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-Copernicus-05e38qs4/N37W120.hgt.tif",
+      "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-Copernicus-05e38qs4/N37W120.hgt"
+    ],
+    [
+      "/Applications/QGIS.app/Contents/MacOS/gdalwarp",
+      "-q",
+      "-overwrite",
+      "-of",
+      "GTiff",
+      "-ot",
+      "Int16",
+      "-t_srs",
+      "EPSG:4326",
+      "-te",
+      "-119.00013888888888",
+      "36.99986111111111",
+      "-117.99986111111112",
+      "38.00013888888889",
+      "-ts",
+      "3601",
+      "3601",
+      "-r",
+      "bilinear",
+      "-dstnodata",
+      "0",
+      "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-Copernicus-05e38qs4/source.vrt",
+      "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-Copernicus-05e38qs4/N37W119.hgt.tif"
+    ],
+    [
+      "/Applications/QGIS.app/Contents/MacOS/gdal_translate",
+      "-q",
+      "-of",
+      "SRTMHGT",
+      "-a_nodata",
+      "-32768",
+      "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-Copernicus-05e38qs4/N37W119.hgt.tif",
+      "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-Copernicus-05e38qs4/N37W119.hgt"
+    ],
+    [
+      "/Applications/QGIS.app/Contents/MacOS/gdalwarp",
+      "-q",
+      "-overwrite",
+      "-of",
+      "GTiff",
+      "-ot",
+      "Int16",
+      "-t_srs",
+      "EPSG:4326",
+      "-te",
+      "-121.00013888888888",
+      "37.99986111111111",
+      "-119.99986111111112",
+      "39.00013888888889",
+      "-ts",
+      "3601",
+      "3601",
+      "-r",
+      "bilinear",
+      "-dstnodata",
+      "0",
+      "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-Copernicus-05e38qs4/source.vrt",
+      "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-Copernicus-05e38qs4/N38W121.hgt.tif"
+    ],
+    [
+      "/Applications/QGIS.app/Contents/MacOS/gdal_translate",
+      "-q",
+      "-of",
+      "SRTMHGT",
+      "-a_nodata",
+      "-32768",
+      "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-Copernicus-05e38qs4/N38W121.hgt.tif",
+      "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-Copernicus-05e38qs4/N38W121.hgt"
+    ],
+    [
+      "/Applications/QGIS.app/Contents/MacOS/gdalwarp",
+      "-q",
+      "-overwrite",
+      "-of",
+      "GTiff",
+      "-ot",
+      "Int16",
+      "-t_srs",
+      "EPSG:4326",
+      "-te",
+      "-120.00013888888888",
+      "37.99986111111111",
+      "-118.99986111111112",
+      "39.00013888888889",
+      "-ts",
+      "3601",
+      "3601",
+      "-r",
+      "bilinear",
+      "-dstnodata",
+      "0",
+      "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-Copernicus-05e38qs4/source.vrt",
+      "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-Copernicus-05e38qs4/N38W120.hgt.tif"
+    ],
+    [
+      "/Applications/QGIS.app/Contents/MacOS/gdal_translate",
+      "-q",
+      "-of",
+      "SRTMHGT",
+      "-a_nodata",
+      "-32768",
+      "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-Copernicus-05e38qs4/N38W120.hgt.tif",
+      "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-Copernicus-05e38qs4/N38W120.hgt"
+    ],
+    [
+      "/Applications/QGIS.app/Contents/MacOS/gdalwarp",
+      "-q",
+      "-overwrite",
+      "-of",
+      "GTiff",
+      "-ot",
+      "Int16",
+      "-t_srs",
+      "EPSG:4326",
+      "-te",
+      "-119.00013888888888",
+      "37.99986111111111",
+      "-117.99986111111112",
+      "39.00013888888889",
+      "-ts",
+      "3601",
+      "3601",
+      "-r",
+      "bilinear",
+      "-dstnodata",
+      "0",
+      "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-Copernicus-05e38qs4/source.vrt",
+      "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-Copernicus-05e38qs4/N38W119.hgt.tif"
+    ],
+    [
+      "/Applications/QGIS.app/Contents/MacOS/gdal_translate",
+      "-q",
+      "-of",
+      "SRTMHGT",
+      "-a_nodata",
+      "-32768",
+      "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-Copernicus-05e38qs4/N38W119.hgt.tif",
+      "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-Copernicus-05e38qs4/N38W119.hgt"
+    ]
+  ],
+  "coverage": [
+    -121,
+    37,
+    -118,
+    39
+  ],
+  "dataset": "Copernicus DEM GLO-30 Public, AWS 2021 release",
+  "grid": "3601 by 3601 signed 16-bit point-aligned HGT cells; ocean cells zero",
+  "oceanCellReview": [],
+  "sourceAssets": [
+    {
+      "bytes": 1110900,
+      "path": "data/regions/us-national-parks/copernicus/tileList.txt",
+      "sha256": "10604e3052c98a09e9216f1a8f0a555a04148419757575f783d4937fd44316dc",
+      "url": "https://copernicus-dem-30m.s3.amazonaws.com/tileList.txt"
+    },
+    {
+      "bytes": 45213310,
+      "path": "data/regions/us-national-parks/copernicus/Copernicus_DSM_COG_10_N37_00_W121_00_DEM.tif",
+      "sha256": "d67405f192557ff5c22a4fac634177eb6d111729d5e058eeeae456b517af8136",
+      "url": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N37_00_W121_00_DEM/Copernicus_DSM_COG_10_N37_00_W121_00_DEM.tif"
+    },
+    {
+      "bytes": 41541372,
+      "path": "data/regions/us-national-parks/copernicus/Copernicus_DSM_COG_10_N37_00_W120_00_DEM.tif",
+      "sha256": "0ef5f2cd935b20dac2bbe96e0402e1e9fc67a631b2efb9c82493e42c133fab84",
+      "url": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N37_00_W120_00_DEM/Copernicus_DSM_COG_10_N37_00_W120_00_DEM.tif"
+    },
+    {
+      "bytes": 39450870,
+      "path": "data/regions/us-national-parks/copernicus/Copernicus_DSM_COG_10_N37_00_W119_00_DEM.tif",
+      "sha256": "313efc7d00c909aabde446da70cd6d74d788df71a02b29cc441c476c995b195a",
+      "url": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N37_00_W119_00_DEM/Copernicus_DSM_COG_10_N37_00_W119_00_DEM.tif"
+    },
+    {
+      "bytes": 42882578,
+      "path": "data/regions/us-national-parks/copernicus/Copernicus_DSM_COG_10_N38_00_W121_00_DEM.tif",
+      "sha256": "432e8b47d1a70f533b214b56e88687939e5da7ea3c233cbc7e5af791851c58ce",
+      "url": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N38_00_W121_00_DEM/Copernicus_DSM_COG_10_N38_00_W121_00_DEM.tif"
+    },
+    {
+      "bytes": 39506663,
+      "path": "data/regions/us-national-parks/copernicus/Copernicus_DSM_COG_10_N38_00_W120_00_DEM.tif",
+      "sha256": "da22eb13205dd65cc8575af91cb53ed9e3dcfd72494645e55c98a75f42bad68d",
+      "url": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N38_00_W120_00_DEM/Copernicus_DSM_COG_10_N38_00_W120_00_DEM.tif"
+    },
+    {
+      "bytes": 38553765,
+      "path": "data/regions/us-national-parks/copernicus/Copernicus_DSM_COG_10_N38_00_W119_00_DEM.tif",
+      "sha256": "09672148b81bc3ba622ed70ed6da3165e1cb29ecb6419a742709f5262d3bbd8a",
+      "url": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N38_00_W119_00_DEM/Copernicus_DSM_COG_10_N38_00_W119_00_DEM.tif"
+    }
+  ],
+  "sourceDocumentation": "https://registry.opendata.aws/copernicus-dem/",
+  "toolchain": {
+    "gdal_translate": {
+      "path": "/Applications/QGIS.app/Contents/MacOS/gdal_translate",
+      "sha256": "20bee1aad39868f3aa506312cad8415bbe12fa004cbf75b27114f527178b632a"
+    },
+    "gdalbuildvrt": {
+      "path": "/Applications/QGIS.app/Contents/MacOS/gdalbuildvrt",
+      "sha256": "5694fb873506db8342bedbf18635fe6d3dbf97971dc25f2ea7f94ff4f6f77b30"
+    },
+    "gdalwarp": {
+      "path": "/Applications/QGIS.app/Contents/MacOS/gdalwarp",
+      "sha256": "da68256b5787bd76d876a409fd452cc8290be13c6f28aece569242682a003057"
+    }
+  },
+  "verticalDatum": "EGM2008 orthometric metres"
+}

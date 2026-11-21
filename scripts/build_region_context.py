@@ -20,7 +20,7 @@ def build(region,revision=3):
     source='/vsizip/'+str(ROOT/coast['path'])+'/land-polygons-split-4326/land_polygons.shp'
     subprocess.run([ogr,'-f','GeoJSON',str(dest/'land.geojson'),source,'-spat',*map(str,bounds),'-clipsrc',*map(str,bounds),'-lco','COORDINATE_PRECISION=7'],env=env,check=True)
     from polygonal_coast import polygonal_coast
-    coastline_filtering=polygonal_coast(dest/'land.geojson')
+    coastline_filtering=polygonal_coast(dest/'land.geojson', repair_invalid=p.get('repairClippedCoastline',False))
     write(dest/'coastline-filtering.json',coastline_filtering)
     config={'layers':{'land':{'minzoom':4,'maxzoom':12,'source':str(dest/'land.geojson'),'simplify_below':12,'simplify_level':.00003,'simplify_ratio':2}},'settings':{'minzoom':4,'maxzoom':14,'basezoom':14,'bounding_box':bounds,'include_ids':False,'compress':'gzip','name':p['name']+' coastal context','description':'Coastal background beyond edition coverage; source OSM land polygons','version':p['mapVersion']}}
     write(dest/'tilemaker.json',config);(dest/'process.lua').write_text('node_keys={}\nway_keys={}\nfunction node_function() end\nfunction way_function() end\n')

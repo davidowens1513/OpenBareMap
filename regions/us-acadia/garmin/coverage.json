@@ -1,0 +1,31 @@
+{
+  "areaSquareDegrees": 0.2548383611737415,
+  "bounds": [
+    -68.74778756102806,
+    43.94041871185589,
+    -67.94229018718079,
+    44.49279220357111
+  ],
+  "entireRequestedFootprintCovered": true,
+  "exactFootprint": "regions/us-acadia/coverage.geojson",
+  "inputs": [
+    {
+      "bytes": 4303,
+      "path": "data/regions/us-acadia/maine.poly",
+      "sha256": "d350920858567f28fa8b69a78c089695ee711ddc3d42f38c85e02831fbc174d0",
+      "url": "https://download.geofabrik.de/north-america/us/maine/maine.poly"
+    }
+  ],
+  "knownDestinationsCovered": [
+    "bar-harbor",
+    "cadillac-mountain",
+    "island",
+    "isle-au-haut",
+    "schoodic-point",
+    "stonington",
+    "winter-harbor"
+  ],
+  "operation": "Requested rectangular crop; source outlines cover all destination anchors",
+  "polygons": 1,
+  "sha256": "46122496c35f8caba39c292199adf300425202d6f993213e915986789a480388"
+}

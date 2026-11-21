@@ -1,0 +1,20 @@
+{
+  "inputs": [
+    {
+      "path": "regions/us-yellowstone-grand-teton/garmin/inputs/contours.geojson.gz",
+      "sha256": "d753f2926a0ece08f0384c8642a0281a2dfbafe9e27de626588ad16d1ef2bae0",
+      "uncompressedSHA256": "b885c0f177a4b4607b03c076ff0095b31a100c1d8d3f9cf639c69d41c623a41a"
+    },
+    {
+      "path": "regions/us-yellowstone-grand-teton/garmin/inputs/landcover.geojson.gz",
+      "sha256": "42fbfc39b5d41f3f4185db7aa284b15d3cf2393f5638d1f302d0783080377a2d",
+      "uncompressedSHA256": "3c9bc4d30bf0a138a2d96fe41db967bede8ea2761bbaf5c20e73b724e8960b56"
+    },
+    {
+      "path": "regions/us-yellowstone-grand-teton/garmin/inputs/land.geojson.gz",
+      "sha256": "62e63d03423b5f526609654926231e1d84622c4c3691ebf21f919cdccecf3590",
+      "uncompressedSHA256": "c70cf5b8c2280fb78a5cf15259c518294687b615de82d90b65a53e6bb1267008"
+    }
+  ],
+  "region": "us-yellowstone-grand-teton"
+}

@@ -1,0 +1,52 @@
+{
+  "contourIntervalMetres": 20,
+  "coverage": "Acadia National Park, including Mount Desert Island, Schoodic Peninsula, Isle au Haut and nearby gateways.",
+  "datasets": {
+    "basemap": {
+      "bytes": 5484544,
+      "path": "releases/us-acadia/2.0.0/maps/basemap.mbtiles",
+      "sha256": "18a8d081ec4a40b3f657712f83444350eabe6b00906259f83aa0c40c53b31d84",
+      "validation": {
+        "empty_tile_count": 44,
+        "logical_tiles_sha256": "1daf40af62b94fd3fedd85c2d61961f3f086c02411c088b5846c16fb6caed6db",
+        "tile_count": 1325
+      }
+    },
+    "grid": {
+      "bytes": 618496,
+      "path": "releases/us-acadia/2.0.0/maps/grid.mbtiles",
+      "sha256": "c67a1e9b3f725933dafdf47e6da59a3514d09e02eb30810499b5ffc21f83d1b2",
+      "validation": {
+        "empty_tile_count": 0,
+        "logical_tiles_sha256": "13469eb164205faae4438348cfef118f78657edda59282442f69a1e564580683",
+        "tile_count": 1817
+      }
+    },
+    "hillshade": {
+      "bytes": 11591680,
+      "path": "releases/us-acadia/2.0.0/maps/hillshade.mbtiles",
+      "sha256": "1977dd3938dc868a071c4f72d89834390820754942040eef8805b728ff494d16",
+      "validation": {
+        "empty_tile_count": 0,
+        "logical_tiles_sha256": "f10700467e56f5487cd2199f7a58728f2ac7fc21846a38606c3ae782035ee32f",
+        "tile_count": 424
+      }
+    },
+    "topography": {
+      "bytes": 6168576,
+      "path": "releases/us-acadia/2.0.0/maps/topography-context.mbtiles",
+      "sha256": "eca1eebb7707f383e3795e327b936d12cb2cbe960e26b59f303186bbee7c50bd",
+      "validation": {
+        "empty_tile_count": 21399,
+        "logical_tiles_sha256": "ba9772a67639791e60f92ea0242d838374cdfe93b3a3d56ebcb088db9ee92172",
+        "tile_count": 24104
+      }
+    }
+  },
+  "format": "openbaremap-development-viewer-v1",
+  "localBorders": false,
+  "mapVersion": "2.0.0",
+  "region": "us-acadia",
+  "storageRevision": "2.0.0-us-acadia-r3",
+  "styleRevision": "2.0.0-us-acadia-r1"
+}

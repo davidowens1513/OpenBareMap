@@ -1,0 +1,29 @@
+{
+  "areaSquareDegrees": 0.44479468731208627,
+  "bounds": [
+    -106.10196192839878,
+    40.0140095900306,
+    -105.3049963775214,
+    40.697835621591324
+  ],
+  "entireRequestedFootprintCovered": true,
+  "exactFootprint": "regions/us-rocky-mountain/coverage.geojson",
+  "inputs": [
+    {
+      "bytes": 495,
+      "path": "data/regions/us-rocky-mountain/colorado.poly",
+      "sha256": "c4c84e42a59d2322b4f711a6da3426c0763f918543e53520cd8ae85f3d032f76",
+      "url": "https://download.geofabrik.de/north-america/us/colorado/colorado.poly"
+    }
+  ],
+  "knownDestinationsCovered": [
+    "bear-lake-trailhead",
+    "estes-park",
+    "grand-lake",
+    "island",
+    "trail-ridge-road"
+  ],
+  "operation": "Requested rectangular crop; source outlines cover all destination anchors",
+  "polygons": 1,
+  "sha256": "0d698cebe7b8f48cd04743765bc5273b2cf9fa0739ad0db75e335ba5ba6a3302"
+}

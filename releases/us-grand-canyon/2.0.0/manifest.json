@@ -1,0 +1,106 @@
+{
+  "acceptance": "Automated checks only; see validation and visual-review records for actual reviewed scope.",
+  "coverage": "Grand Canyon National Park, including both rims and their main access routes via Tusayan, Desert View and Jacob Lake.",
+  "datasets": {
+    "basemap": {
+      "bytes": 71983104,
+      "path": "releases/us-grand-canyon/2.0.0/maps/basemap.mbtiles",
+      "sha256": "229e2620a4000f8a519767327cd3a240a43877596d8744d2aaab915297f32e19",
+      "validation": {
+        "empty_tile_count": 46,
+        "logical_tiles_sha256": "09bcb5ce8e7419fc1f6980001f75b955a6bef7627e584530b25fb2872570f9dd",
+        "tile_count": 12992
+      }
+    },
+    "grid": {
+      "bytes": 4861952,
+      "path": "releases/us-grand-canyon/2.0.0/maps/grid.mbtiles",
+      "sha256": "1eaa23780156169a09501c47b45f0ddaef7ab7633581622cf72c677ad3a32a72",
+      "validation": {
+        "empty_tile_count": 0,
+        "logical_tiles_sha256": "9efe5ff10b9b8bf2dc74c720307b2b2247bd75b95b7e1584436197ddbadd2126",
+        "tile_count": 13056
+      }
+    },
+    "hillshade": {
+      "bytes": 76238848,
+      "path": "releases/us-grand-canyon/2.0.0/maps/hillshade.mbtiles",
+      "sha256": "c14fa9c2bc6bc36fd6c2c0b251dffaf15ce774651a914b3b43290fb2ed793efc",
+      "validation": {
+        "empty_tile_count": 0,
+        "logical_tiles_sha256": "5fd738751e39184c10c74248da544f502586ece4201dc3385b632247c627eb76",
+        "tile_count": 1875
+      }
+    },
+    "topography": {
+      "bytes": 171102208,
+      "path": "releases/us-grand-canyon/2.0.0/maps/topography-context.mbtiles",
+      "sha256": "5303b59b9f0d67c94eaf7f839bf46b17e483680ddc61e6992d21252b18abc70d",
+      "validation": {
+        "empty_tile_count": 51733,
+        "logical_tiles_sha256": "b2e0bec5663a598abad60e46f3169ffca444c3fd9ab0263e180ca90904f79eb8",
+        "tile_count": 69349
+      }
+    }
+  },
+  "garmin": {
+    "bytes": 60723200,
+    "path": "regions/us-grand-canyon/garmin/dist/OpenBareMap-US-Grand-Canyon.img",
+    "sha256": "5d577ce106628befb8326fa4e58c3fd06e7185a3de572b2d527ea534fce3b018"
+  },
+  "geometryReport": {
+    "path": "build/us-grand-canyon-geometry/geometry-report.json",
+    "sha256": "da861e9e348bc302b9ec845b55c2e9ec1555b064055f9ddf42ec88b510ad308d"
+  },
+  "hostAppsModified": false,
+  "mapVersion": "2.0.0",
+  "osm": {
+    "bytes": 24068008,
+    "operation": "Complete-feature bbox extraction with nested relation references, then libosmium sorted merge; duplicate OSM objects resolved by version",
+    "path": "data/regions/us-grand-canyon/us-grand-canyon-261120.osm.pbf",
+    "replicationTimestamp": "2026-11-20T21:21:21Z",
+    "sha256": "7a63995784d0f4f56e7764bed17e680a7c0ba18280f0b0a348fa43642b25db84",
+    "snapshot_date": "2026-11-20",
+    "url": null
+  },
+  "packages": {
+    "android": {
+      "archive": {
+        "bytes": 333449180,
+        "path": "regions/us-grand-canyon/android/OpenBareMap-Android.zip",
+        "sha256": "17d388b71c89cdd0b15ecb7ed40bc2f865c938c8e0549aa869d9510e2175f7bf"
+      },
+      "checksumsSHA256": "b6e94acee1470caed61a72e138464f205c92164db3b63737f96c549fd8378b76",
+      "manifestSHA256": "944c87d3daf4967485d64a65a4455fdf227ad3c6f795d15adae72e595ba022f6",
+      "path": "regions/us-grand-canyon/android",
+      "validationSHA256": "da94db48bf45d32e784b258d52cbed2ac39224bb58a9a04692513e10d3a83d05"
+    },
+    "ios": {
+      "checksumsSHA256": "f540f7e2098cb0dadb003c1ad9dfbe0dd5fb7c9d0d960b28062dd9b1f541311b",
+      "manifestSHA256": "58e9498214139601cac2da84957bb8ee200ef924cc06d6d363c467c9104590c9",
+      "path": "regions/us-grand-canyon/ios",
+      "validationSHA256": "03af240ea4dc48fe0947096b12ba4ccf80fa7d44eb3ff4732fa42bd740c66f56"
+    }
+  },
+  "pythonRuntime": {
+    "packages": {
+      "Pillow": "12.3.0",
+      "certifi": "2026.10.23",
+      "charset-normalizer": "3.5.2",
+      "idna": "3.20",
+      "numpy": "2.5.4",
+      "osmium": "4.3.2",
+      "pyproj": "3.8.0",
+      "requests": "2.34.2",
+      "shapely": "2.2.0",
+      "urllib3": "2.8.0"
+    },
+    "platform": "macOS-27.2.1-arm64-arm-64bit-Mach-O",
+    "python": "3.14.5 (main, May 10 2026, 10:21:34) [Clang 21.0.0 (clang-2100.0.123.102)]",
+    "requirementsSHA256": "427f12ff8b49bfebac0a7d453c2f65bd15d6695584b18e6ecee1fdfeed20a36c"
+  },
+  "region": "us-grand-canyon",
+  "styleSHA256": "f77e15c6aeff08f48f64febae92e48b2b231ce5587f68d6a11bb59d74eecdb71",
+  "terrainLockSHA256": "a101c20188690e3171fd0feb02d513910b3dcd710c987fdb00187ab0bc2f6642",
+  "validation": "validation.json"
+}

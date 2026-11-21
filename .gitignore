@@ -284,3 +284,12 @@ data/regions/norway-*/copernicus/*
 /regions/alps-*/garmin/dist/*.img
 /releases/alps-*/*/maps/
 /releases/alps-*/*/app-bundles-v1/**/*.zip
+
+# Rebuildable US National Parks inputs and offline release binaries
+/data/regions/us-*/
+/regions/us-*/exports/
+/regions/us-*/garmin/coastal-context/
+/regions/us-*/garmin/inputs/*.geojson.gz
+/regions/us-*/garmin/dist/*.img
+/releases/us-*/*/maps/
+/releases/us-*/*/app-bundles-v1/**/*.zip

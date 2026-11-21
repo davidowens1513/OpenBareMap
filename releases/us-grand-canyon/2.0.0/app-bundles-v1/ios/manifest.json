@@ -1,0 +1,35 @@
+{
+  "bytes": 333479405,
+  "datasets": {
+    "basemap": {
+      "path": "maps/basemap.mbtiles",
+      "sha256": "229e2620a4000f8a519767327cd3a240a43877596d8744d2aaab915297f32e19"
+    },
+    "coast": {
+      "derived_from": "5303b59b9f0d67c94eaf7f839bf46b17e483680ddc61e6992d21252b18abc70d",
+      "maxzoom": 12,
+      "operation": "Preserve land-layer MVT bytes only through zoom 12; omit other layers.",
+      "path": "maps/coast.mbtiles",
+      "sha256": "455c2ca3755e68f93c1aebeb8383580b60ad9db1f46c8ce9effebeafc1be0d7b"
+    },
+    "grid": {
+      "path": "maps/grid.mbtiles",
+      "sha256": "1eaa23780156169a09501c47b45f0ddaef7ab7633581622cf72c677ad3a32a72"
+    },
+    "hillshade": {
+      "path": "maps/hillshade.mbtiles",
+      "sha256": "c14fa9c2bc6bc36fd6c2c0b251dffaf15ce774651a914b3b43290fb2ed793efc"
+    },
+    "topography": {
+      "path": "maps/topography.mbtiles",
+      "sha256": "5303b59b9f0d67c94eaf7f839bf46b17e483680ddc61e6992d21252b18abc70d"
+    }
+  },
+  "instructionsSHA256": "31d59fb87afe03318fe29b329444d70b5ede4d27c937cb7f579a0cf20ff2a921",
+  "instructionsURL": "https://downloads.appsbyonzy.dev/OpenBareMap/us-grand-canyon/2.0.0/app-bundles-v1/ios/instructions.txt",
+  "localPath": "releases/us-grand-canyon/2.0.0/app-bundles-v1/ios/OpenBareMap-Grand-Canyon-iOS-Bundle.zip",
+  "mapManifestSHA256": "58e9498214139601cac2da84957bb8ee200ef924cc06d6d363c467c9104590c9",
+  "r2Key": "OpenBareMap/us-grand-canyon/2.0.0/app-bundles-v1/ios/OpenBareMap-Grand-Canyon-iOS-Bundle.zip",
+  "sha256": "fb44cf1ecdad664ad45f0943021c789b3da125f7a8c2652daffb36810f5caa93",
+  "url": "https://downloads.appsbyonzy.dev/OpenBareMap/us-grand-canyon/2.0.0/app-bundles-v1/ios/OpenBareMap-Grand-Canyon-iOS-Bundle.zip"
+}

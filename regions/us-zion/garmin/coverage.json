@@ -1,0 +1,29 @@
+{
+  "areaSquareDegrees": 0.3124376721007662,
+  "bounds": [
+    -113.38648267382872,
+    37.0152023869262,
+    -112.70546114659571,
+    37.63042227584585
+  ],
+  "entireRequestedFootprintCovered": true,
+  "exactFootprint": "regions/us-zion/coverage.geojson",
+  "inputs": [
+    {
+      "bytes": 943,
+      "path": "data/regions/us-zion/utah.poly",
+      "sha256": "186ff0b720f65a9032df6a8afe472b4b556ae6964f486fe7cae09d2d7e0d7975",
+      "url": "https://download.geofabrik.de/north-america/us/utah/utah.poly"
+    }
+  ],
+  "knownDestinationsCovered": [
+    "east-entrance",
+    "island",
+    "kolob-canyons",
+    "springdale",
+    "zion-canyon"
+  ],
+  "operation": "Requested rectangular crop; source outlines cover all destination anchors",
+  "polygons": 1,
+  "sha256": "c82c46b763a49a738b99845356c38a59db237258307d3af7b26ded3fd849498f"
+}

@@ -1,0 +1,21 @@
+{
+  "combinedSHA256": "76fbc478b66e676abfd1559079f43cb3fb164308bc0917049372e42e13fd4f53",
+  "command": [
+    "/opt/homebrew/opt/openjdk@21/libexec/openjdk.jdk/Contents/Home/bin/java",
+    "-Xmx6g",
+    "-jar",
+    "/Volumes/Extreme SSD/Projects/OpenBareMap/garmin/tools/splitter-r654/splitter.jar",
+    "--mapid=48590001",
+    "--description=OpenBareMap Grand Canyon",
+    "--max-nodes=1000000",
+    "--max-threads=2",
+    "--keep-complete=true",
+    "--output=pbf",
+    "--polygon-file=/Volumes/Extreme SSD/Projects/OpenBareMap/regions/us-grand-canyon/garmin/coverage.poly",
+    "--output-dir=/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/906ead9d53a7/us-grand-canyon/garmin/split",
+    "--ignore-osm-bounds=true",
+    "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/906ead9d53a7/us-grand-canyon/garmin/combined.osm.pbf"
+  ],
+  "coverageSHA256": "84ba7295042622572895bdca9a7b3b69482ba16ca61391d41b409f2054d80769",
+  "ignoreSourceHeaderBounds": true
+}

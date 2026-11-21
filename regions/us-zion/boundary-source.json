@@ -1,0 +1,21 @@
+{
+  "approachUnitCodes": [],
+  "areaKm2": 2994.6,
+  "attribution": "U.S. National Park Service, Land Resources Division",
+  "bufferCRS": "EPSG:32612",
+  "bufferMetres": 14000,
+  "outputs": {
+    "coverage-mask.geojson": "92c90ab0cfbb488d1449bb228a159749e300a8eeb51e5f2bd3d2cd80eaeb2fa7",
+    "coverage.geojson": "291777a2c44f95425d2532efe335bd89a0340507fe223c3e8ca5fab7567fc594",
+    "park-boundary.geojson": "6e5e176bb69aff771a6507902abc76196528ae4a3fb299f8f154e4e271e334af"
+  },
+  "parkUnitCodes": [
+    "ZION"
+  ],
+  "source": {
+    "bytes": 1306470,
+    "path": "regions/us-national-parks/nps-boundaries.geojson",
+    "sha256": "2b8108bca8b219c25f2d7faa5f1e7e1d33df29b8faef218167f8ae2281a2177e",
+    "url": "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/NPS_Land_Resources_Division_Boundary_and_Tract_Data_Service/FeatureServer/2/query?where=UNIT_CODE+IN+%28%27YOSE%27%2C%27GRSM%27%2C%27ZION%27%2C%27YELL%27%2C%27GRTE%27%2C%27JODR%27%2C%27GRCA%27%2C%27ROMO%27%2C%27ACAD%27%2C%27OLYM%27%2C%27GLAC%27%29&outFields=UNIT_CODE%2CUNIT_NAME&outSR=4326&geometryPrecision=6&maxAllowableOffset=0.00005&f=geojson"
+  }
+}

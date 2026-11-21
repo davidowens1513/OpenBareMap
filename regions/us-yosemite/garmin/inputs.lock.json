@@ -1,0 +1,20 @@
+{
+  "inputs": [
+    {
+      "path": "regions/us-yosemite/garmin/inputs/contours.geojson.gz",
+      "sha256": "96134e8818985f3955694f1985d4c7a16878b576a565ba035b57281a2d37badd",
+      "uncompressedSHA256": "74acfe004c06cc73a163556cc8c9a7c630d8675ee026165efc5feabda6d57a14"
+    },
+    {
+      "path": "regions/us-yosemite/garmin/inputs/landcover.geojson.gz",
+      "sha256": "e2bd41b7da296135240cf4001162be442da664397cc1619678fb167fdd37a730",
+      "uncompressedSHA256": "8b564fbb3803b13065ff52956d571edac63becb0bb6976e9c536d7333bb81d85"
+    },
+    {
+      "path": "regions/us-yosemite/garmin/inputs/land.geojson.gz",
+      "sha256": "9f964297490de4c45499d76b8eff94e7c09211f78dfe2098cb06e9bc6d08ddfc",
+      "uncompressedSHA256": "4c2a72ebf1d4d94d135b78a2df099ba25732c531bf967e3487a4d9757b27c6b5"
+    }
+  ],
+  "region": "us-yosemite"
+}

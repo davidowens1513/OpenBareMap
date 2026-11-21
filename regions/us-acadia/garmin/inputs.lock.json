@@ -1,0 +1,20 @@
+{
+  "inputs": [
+    {
+      "path": "regions/us-acadia/garmin/inputs/contours.geojson.gz",
+      "sha256": "665ff80f5bc9cfd428f1ef7dfc8a7f8eef2d270609a812c09532c2e374ca9bca",
+      "uncompressedSHA256": "56f73f5b29139100fea8dc5875f386d1ca77215485ac0e984e1e8e824310311c"
+    },
+    {
+      "path": "regions/us-acadia/garmin/inputs/landcover.geojson.gz",
+      "sha256": "a39fe9d4d8f3ff1c62aa7cc918b271c498afbb681402404e21e9d42132ea8993",
+      "uncompressedSHA256": "4ff695675752602270b1bff37f521f1ac294bff7e5beedc77fc05e98ada3d810"
+    },
+    {
+      "path": "regions/us-acadia/garmin/inputs/land.geojson.gz",
+      "sha256": "2df1179a2bb5f256e490849602b688b9119a8b5d87b5e84e8298de72834ee63c",
+      "uncompressedSHA256": "ba10ebd634faf0e255d47199a92f2c369569280801b17843c38ef49d910825fb"
+    }
+  ],
+  "region": "us-acadia"
+}

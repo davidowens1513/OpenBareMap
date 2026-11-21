@@ -1,0 +1,105 @@
+{
+  "us-yosemite": {
+    "label": "Yosemite",
+    "parks": ["YOSE"],
+    "states": ["california"],
+    "zone": 11,
+    "bufferKm": 18,
+    "coverage": "Yosemite National Park, including Yosemite Valley, Tuolumne Meadows and the main approaches.",
+    "inspectionNames": ["Half Dome", "Wawona"],
+    "destinations": {"yosemite-valley": [-119.591, 37.744, 12], "tuolumne-meadows": [-119.355, 37.874, 12], "wawona": [-119.654, 37.536, 12], "el-portal": [-119.783, 37.674, 12], "lee-vining": [-119.119, 37.957, 12]},
+    "approaches": [["el-portal"], ["lee-vining", [-119.214, 37.938]]]
+  },
+  "us-great-smoky-mountains": {
+    "label": "Great Smoky Mountains",
+    "parks": ["GRSM"],
+    "states": ["tennessee", "north-carolina"],
+    "zone": 17,
+    "bufferKm": 14,
+    "coverage": "Great Smoky Mountains National Park and the Gatlinburg, Townsend and Cherokee approaches.",
+    "inspectionNames": ["Gatlinburg", "Kuwohi"],
+    "destinations": {"gatlinburg": [-83.510, 35.714, 12], "townsend": [-83.755, 35.676, 12], "cherokee": [-83.320, 35.478, 12], "cades-cove": [-83.842, 35.596, 12], "newfound-gap": [-83.424, 35.612, 12]},
+    "approaches": [["gatlinburg"], ["townsend"], ["cherokee"]]
+  },
+  "us-zion": {
+    "label": "Zion",
+    "parks": ["ZION"],
+    "states": ["utah"],
+    "zone": 12,
+    "bufferKm": 14,
+    "coverage": "Zion National Park, including Zion Canyon, Kolob Canyons, Springdale and the eastern approach.",
+    "inspectionNames": ["Springdale"],
+    "destinations": {"zion-canyon": [-112.998, 37.250, 12], "kolob-canyons": [-113.189, 37.452, 12], "springdale": [-112.998, 37.189, 12], "east-entrance": [-112.879, 37.234, 12]},
+    "approaches": [["springdale"], ["east-entrance"]]
+  },
+  "us-yellowstone-grand-teton": {
+    "label": "Yellowstone & Grand Teton",
+    "parks": ["YELL", "GRTE"],
+    "connectorParks": ["JODR"],
+    "states": ["wyoming", "montana", "idaho"],
+    "zone": 12,
+    "bufferKm": 17,
+    "coverage": "Yellowstone and Grand Teton national parks, the John D. Rockefeller Jr. Memorial Parkway and their gateway approaches.",
+    "inspectionNames": ["West Yellowstone", "Grand Teton"],
+    "destinations": {"old-faithful": [-110.828, 44.461, 12], "mammoth-hot-springs": [-110.705, 44.977, 12], "west-yellowstone": [-111.104, 44.662, 12], "gardiner": [-110.706, 45.032, 12], "cooke-city": [-109.933, 45.020, 12], "grant-village": [-110.555, 44.391, 12], "flagg-ranch": [-110.668, 44.106, 12], "jenny-lake-trailhead": [-110.722, 43.752, 12], "jackson": [-110.762, 43.480, 12]},
+    "approaches": [["west-yellowstone"], ["gardiner"], ["cooke-city"], ["jackson", [-110.746, 43.550], [-110.731, 43.652]]]
+  },
+  "us-grand-canyon": {
+    "label": "Grand Canyon",
+    "parks": ["GRCA"],
+    "states": ["arizona", "utah", "nevada"],
+    "zone": 12,
+    "bufferKm": 14,
+    "coverage": "Grand Canyon National Park, including both rims and their main access routes via Tusayan, Desert View and Jacob Lake.",
+    "inspectionNames": ["Tusayan", "Grand Canyon Village"],
+    "destinations": {"south-rim": [-112.140, 36.055, 12], "north-rim": [-112.052, 36.198, 12], "desert-view": [-111.827, 36.041, 12], "tusayan": [-112.125, 35.974, 12], "jacob-lake": [-112.216, 36.713, 12]},
+    "approaches": [["tusayan"], ["jacob-lake", [-112.145, 36.635], [-112.192, 36.548], [-112.110, 36.422], [-112.137, 36.352], [-112.102, 36.291]]]
+  },
+  "us-rocky-mountain": {
+    "label": "Rocky Mountain",
+    "parks": ["ROMO"],
+    "states": ["colorado"],
+    "zone": 13,
+    "bufferKm": 16,
+    "coverage": "Rocky Mountain National Park, Trail Ridge Road, Estes Park and Grand Lake.",
+    "inspectionNames": ["Estes Park", "Longs Peak"],
+    "destinations": {"estes-park": [-105.523, 40.377, 12], "grand-lake": [-105.820, 40.253, 12], "trail-ridge-road": [-105.754, 40.442, 12], "bear-lake-trailhead": [-105.646, 40.312, 12]},
+    "approaches": [["estes-park"], ["grand-lake"]]
+  },
+  "us-acadia": {
+    "label": "Acadia",
+    "parks": ["ACAD"],
+    "states": ["maine"],
+    "zone": 19,
+    "bufferKm": 7,
+    "coverage": "Acadia National Park, including Mount Desert Island, Schoodic Peninsula, Isle au Haut and nearby gateways.",
+    "inspectionNames": ["Bar Harbor", "Cadillac Mountain"],
+    "overviewLandAnchorOverrides": {"schoodic-point": [-68.061, 44.334]},
+    "destinations": {"bar-harbor": [-68.203, 44.388, 12], "cadillac-mountain": [-68.225, 44.352, 12], "schoodic-point": [-68.061, 44.332, 12], "isle-au-haut": [-68.624, 44.049, 12], "stonington": [-68.666, 44.156, 12], "winter-harbor": [-68.085, 44.393, 12]},
+    "approaches": [["bar-harbor"], ["stonington"], ["winter-harbor"]]
+  },
+  "us-olympic": {
+    "label": "Olympic",
+    "parks": ["OLYM"],
+    "states": ["washington"],
+    "zone": 10,
+    "bufferKm": 13,
+    "coverage": "Olympic National Park, including the mountain interior, rainforest valleys, coastal sections and principal trailhead approaches.",
+    "repairClippedCoastline": true,
+    "inspectionNames": ["Port Angeles", "Mount Olympus"],
+    "destinations": {"hurricane-ridge": [-123.498, 47.969, 12], "hoh-rain-forest": [-123.934, 47.860, 12], "lake-crescent": [-123.857, 48.058, 12], "rialto-beach": [-124.633, 47.919, 12], "port-angeles": [-123.430, 48.118, 12], "forks": [-124.385, 47.951, 12], "quinault": [-123.845, 47.466, 12]},
+    "approaches": [["port-angeles"], ["forks"], ["quinault"]]
+  },
+  "us-glacier": {
+    "label": "Glacier",
+    "parks": ["GLAC"],
+    "states": ["montana"],
+    "zone": 12,
+    "bufferKm": 15,
+    "limitContextAtParkNorth": true,
+    "coverage": "Glacier National Park in Montana, Going-to-the-Sun Road and the east and west gateway towns.",
+    "inspectionNames": ["West Glacier", "Mount Cleveland"],
+    "destinations": {"logan-pass": [-113.718, 48.696, 12], "west-glacier": [-113.980, 48.495, 12], "st-mary": [-113.437, 48.744, 12], "many-glacier": [-113.656, 48.797, 12], "two-medicine": [-113.368, 48.488, 12], "east-glacier-park": [-113.218, 48.444, 12]},
+    "approaches": [["west-glacier"], ["st-mary"], ["east-glacier-park"]]
+  }
+}

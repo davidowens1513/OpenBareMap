@@ -1,0 +1,148 @@
+{
+  "familyId": 4863,
+  "garminPackageRevision": "2.0.1-trail-detail-r1",
+  "inspection": {
+    "anchorLabels": {
+      "Mount Cleveland": "Mount Cleveland",
+      "West Glacier": "West Glacier"
+    },
+    "bounds": [
+      -114.69735145568848,
+      48.076171875,
+      -113.02734375,
+      49.04305458068848
+    ],
+    "coastPolygonsByLevel": {
+      "0": {
+        "0x32": 11,
+        "0x54": 16
+      },
+      "1": {
+        "0x32": 8,
+        "0x54": 14
+      },
+      "2": {
+        "0x32": 8,
+        "0x54": 14
+      },
+      "3": {
+        "0x32": 8,
+        "0x54": 14
+      },
+      "4": {
+        "0x32": 8,
+        "0x54": 14
+      }
+    },
+    "contoursByLevel": {
+      "0": {
+        "0x10009": 20,
+        "0x20": 33524,
+        "0x22": 8056
+      },
+      "1": {
+        "0x10009": 18,
+        "0x20": 25722,
+        "0x22": 6101
+      },
+      "2": {
+        "0x10009": 17,
+        "0x22": 5662
+      },
+      "3": {
+        "0x10008": 5178,
+        "0x10009": 17
+      },
+      "4": {
+        "0x10009": 10
+      }
+    },
+    "lineInstancesAtHighestDetail": {
+      "0x10001": 196,
+      "0x10002": 17,
+      "0x10003": 16,
+      "0x10004": 67,
+      "0x10005": 17,
+      "0x10006": 15,
+      "0x10009": 20,
+      "0x1000a": 17,
+      "0x1000b": 39,
+      "0x14": 214,
+      "0x16": 1599,
+      "0x18": 7318,
+      "0x1a": 7,
+      "0x1c": 102,
+      "0x1e": 37,
+      "0x1f": 1850,
+      "0x2": 64,
+      "0x20": 33524,
+      "0x22": 8056,
+      "0x3": 32,
+      "0x4": 89,
+      "0x6": 2703,
+      "0x7": 3470,
+      "0xa": 1327
+    },
+    "logicalCombinedSHA256": "7db964b6a46e4c283748db8fc0719c69db33d5efeb1d3e3686fbaeeda078c299",
+    "logicalHashNote": "Internal file names, sizes and payloads; only CommonHeader creation-date bytes 14..20 are zeroed for hashing. IMG archive headers are excluded. Output bytes are never modified.",
+    "logicalTileSHA256": {
+      "48630001.img": "42ca802633f1c48431dd5de712ba1d28a7042faf3950817dc977589c4afe5844",
+      "48630002.img": "1b7079db99e7d6dea8d701eeeaa5f5f1aac7a7f38aa7f17d81ea974454e12968",
+      "48630003.img": "61f1b834552a459873b9152ff4c31e9c3bfe4ce7f6724374d69d503e99aa33e2",
+      "48630004.img": "6d8e0f1c8e3ebc917c36999620408ca99a51cbd506cc10638444ca75f8e357c2",
+      "48630005.img": "0c8b1b02338881902eb4cc452c6badbbf52a5dd98e9a39d9366e4822e0889d33",
+      "48630006.img": "ebb6845ed2a87388a915f6c66e1f9b57f54e61fab28a14ee622350f2126a7965",
+      "48630007.img": "9e6a074e903f85d8d9e6d165e6c3d321de68d9e6b533ac58ca5d44fb8ab974c6"
+    },
+    "pointInstancesAtHighestDetail": {
+      "0x100": 1,
+      "0x10001": 83,
+      "0x10002": 226,
+      "0x10003": 171,
+      "0x10004": 4,
+      "0x10006": 548,
+      "0x2f0b": 458,
+      "0x600": 3,
+      "0x650c": 24,
+      "0x6603": 250,
+      "0x6615": 36,
+      "0x6616": 351,
+      "0x800": 3,
+      "0xb00": 33,
+      "0xc00": 25
+    },
+    "polygonInstancesAtHighestDetail": {
+      "0x10101": 3,
+      "0x10102": 8,
+      "0x10104": 4,
+      "0x10105": 7,
+      "0x10106": 13,
+      "0x10109": 7,
+      "0x1010b": 5,
+      "0x13": 7862,
+      "0x32": 11,
+      "0x3c": 3678,
+      "0x50": 291,
+      "0x51": 325,
+      "0x54": 16
+    },
+    "routing": false,
+    "subfileBytes": {
+      "DEM": 10623653,
+      "LBL": 86509,
+      "MPS": 575,
+      "RGN": 15874933,
+      "SRT": 912,
+      "TRE": 185860,
+      "TYP": 3058
+    },
+    "tiles": 7
+  },
+  "output": {
+    "bytes": 26851328,
+    "path": "regions/us-glacier/garmin/dist/OpenBareMap-US-Glacier.img",
+    "sha256": "ce2cd954261ad37825397e95b2d5ba0f22ffab831d45fb3278e50cd2cbc77793"
+  },
+  "routing": false,
+  "status": "compiled and structurally inspected; hardware rendering pending"
+}

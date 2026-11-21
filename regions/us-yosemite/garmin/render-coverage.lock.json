@@ -1,0 +1,53 @@
+{
+  "bounds": [
+    -120.09093211222425,
+    37.33018919596062,
+    -118.99509101664772,
+    38.34852300241779
+  ],
+  "contextEnvelope": [
+    -120.09093211222425,
+    37.33018919596062,
+    -118.99509101664772,
+    38.34852300241779
+  ],
+  "drawPriority": 25,
+  "format": "openbaremap-garmin-render-footprint-v1",
+  "geometry": {
+    "bytes": 21821,
+    "path": "regions/us-yosemite/garmin/render-coverage.geojson",
+    "sha256": "ba6c6e2569aebdf43a47a29aaa8763a19ad32b728a3ea0460036e24453c8ae73"
+  },
+  "inputs": [
+    {
+      "path": "regions/us-yosemite/coverage.geojson",
+      "purpose": "Exact official park plus 25 km footprint; not its rectangular tile envelope",
+      "sha256": "001653ac9f837dc4151474b247356e6438fd16367cd82193561d8b3b420652d9"
+    }
+  ],
+  "knownDestinationsCovered": {
+    "el-portal": [
+      -119.783,
+      37.674
+    ],
+    "lee-vining": [
+      -119.119,
+      37.957
+    ],
+    "tuolumne-meadows": [
+      -119.355,
+      37.874
+    ],
+    "wawona": [
+      -119.654,
+      37.536
+    ],
+    "yosemite-valley": [
+      -119.591,
+      37.744
+    ]
+  },
+  "purpose": "Rectangular Garmin tiles may overlap other countries. Do not fill their padding with sea, land or land-cover polygons.",
+  "region": "us-yosemite",
+  "transparentNativeMap": true
+}

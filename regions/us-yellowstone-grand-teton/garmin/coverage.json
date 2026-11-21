@@ -1,0 +1,46 @@
+{
+  "areaSquareDegrees": 2.5489529847648376,
+  "bounds": [
+    -111.37181900066592,
+    43.384877052725514,
+    -109.6096159658248,
+    45.261932040875955
+  ],
+  "entireRequestedFootprintCovered": true,
+  "exactFootprint": "regions/us-yellowstone-grand-teton/coverage.geojson",
+  "inputs": [
+    {
+      "bytes": 1679,
+      "path": "data/regions/us-yellowstone-grand-teton/wyoming.poly",
+      "sha256": "e9663f51a96e4cf70ed2175abdc23f01d54b9db4e9c9e94c39c811224d6b6495",
+      "url": "https://download.geofabrik.de/north-america/us/wyoming/wyoming.poly"
+    },
+    {
+      "bytes": 9199,
+      "path": "data/regions/us-yellowstone-grand-teton/montana.poly",
+      "sha256": "4ef43cd229801d7bb629fe1c30b2957b7931fd705a4b68737f770c788c046cee",
+      "url": "https://download.geofabrik.de/north-america/us/montana/montana.poly"
+    },
+    {
+      "bytes": 10319,
+      "path": "data/regions/us-yellowstone-grand-teton/idaho.poly",
+      "sha256": "0f11b22300271079bbf5c181da408b88fb6a569827adf740e2ba24c92ceb2482",
+      "url": "https://download.geofabrik.de/north-america/us/idaho/idaho.poly"
+    }
+  ],
+  "knownDestinationsCovered": [
+    "cooke-city",
+    "flagg-ranch",
+    "gardiner",
+    "grant-village",
+    "island",
+    "jackson",
+    "jenny-lake-trailhead",
+    "mammoth-hot-springs",
+    "old-faithful",
+    "west-yellowstone"
+  ],
+  "operation": "Requested rectangular crop; source outlines cover all destination anchors",
+  "polygons": 1,
+  "sha256": "819aa9c408505b11b3ddca5d335aeda1e4d10ba713b02048019030b697427441"
+}

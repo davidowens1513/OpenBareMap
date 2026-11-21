@@ -1,0 +1,21 @@
+{
+  "combinedSHA256": "cb223f53a01313da936ef6ef7a930713b6c27b723204fef3e450acb210e977c7",
+  "command": [
+    "/opt/homebrew/opt/openjdk@21/libexec/openjdk.jdk/Contents/Home/bin/java",
+    "-Xmx6g",
+    "-jar",
+    "/Volumes/Extreme SSD/Projects/OpenBareMap/garmin/tools/splitter-r654/splitter.jar",
+    "--mapid=48560001",
+    "--description=OpenBareMap Great Smoky Mountains",
+    "--max-nodes=1000000",
+    "--max-threads=2",
+    "--keep-complete=true",
+    "--output=pbf",
+    "--polygon-file=/Volumes/Extreme SSD/Projects/OpenBareMap/regions/us-great-smoky-mountains/garmin/coverage.poly",
+    "--output-dir=/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/906ead9d53a7/us-great-smoky-mountains/garmin/split",
+    "--ignore-osm-bounds=true",
+    "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/906ead9d53a7/us-great-smoky-mountains/garmin/combined.osm.pbf"
+  ],
+  "coverageSHA256": "26ef7baa03c974e8ddcf7701506456880d1cc509a42bac8ab9d62a28127421cb",
+  "ignoreSourceHeaderBounds": true
+}

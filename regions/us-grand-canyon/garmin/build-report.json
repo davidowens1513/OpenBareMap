@@ -1,0 +1,159 @@
+{
+  "familyId": 4859,
+  "garminPackageRevision": "2.0.1-trail-detail-r1",
+  "inspection": {
+    "anchorLabels": {
+      "Grand Canyon Village": "Grand Canyon Village",
+      "Tusayan": "Tusayan"
+    },
+    "bounds": [
+      -114.17000770568848,
+      35.595703125,
+      -111.4013671875,
+      37.00203895568848
+    ],
+    "coastPolygonsByLevel": {
+      "0": {
+        "0x32": 19,
+        "0x54": 33
+      },
+      "1": {
+        "0x32": 19,
+        "0x54": 33
+      },
+      "2": {
+        "0x32": 19,
+        "0x54": 33
+      },
+      "3": {
+        "0x32": 19,
+        "0x54": 33
+      },
+      "4": {
+        "0x32": 19,
+        "0x54": 33
+      }
+    },
+    "contoursByLevel": {
+      "0": {
+        "0x10009": 194,
+        "0x20": 61052,
+        "0x22": 15062
+      },
+      "1": {
+        "0x10009": 185,
+        "0x20": 45655,
+        "0x22": 11279
+      },
+      "2": {
+        "0x10009": 156,
+        "0x22": 10339
+      },
+      "3": {
+        "0x10008": 8895,
+        "0x10009": 122
+      },
+      "4": {
+        "0x10009": 99
+      }
+    },
+    "lineInstancesAtHighestDetail": {
+      "0x10001": 504,
+      "0x10002": 14,
+      "0x10003": 2,
+      "0x10004": 19,
+      "0x10005": 21,
+      "0x10006": 1195,
+      "0x10009": 194,
+      "0x1000a": 35,
+      "0x1000b": 133,
+      "0x14": 26,
+      "0x16": 992,
+      "0x18": 17826,
+      "0x1c": 86,
+      "0x1e": 27,
+      "0x1f": 108,
+      "0x2": 35,
+      "0x20": 61052,
+      "0x22": 15062,
+      "0x3": 55,
+      "0x4": 42,
+      "0x6": 1744,
+      "0x7": 1515,
+      "0xa": 7122
+    },
+    "logicalCombinedSHA256": "83224f186fd8dae70cd7c4a6e601bb6f1898d7cea2b8d2ba740d23c6f375f315",
+    "logicalHashNote": "Internal file names, sizes and payloads; only CommonHeader creation-date bytes 14..20 are zeroed for hashing. IMG archive headers are excluded. Output bytes are never modified.",
+    "logicalTileSHA256": {
+      "48590001.img": "8a97b8581255dc7132296ad6e899b43a3445a88f1f2b1702a608b5c38c66d33b",
+      "48590002.img": "0ed58a551afdff7ff59bc2e1da80c68c5ee51767a1b2caed0d04797cb0616da4",
+      "48590003.img": "221b2870b63dcb41fea59b1dfeabe54ca15a684d696f17f2b67b1a5dcbeac6cf",
+      "48590004.img": "bb7a4af17f94ecefae3747691de316f1a2d05dfe61cb93903a5cc50424375c38",
+      "48590005.img": "a9d560c048cccba4c2a3ebae5c506d3943134d012baaf56fd25b6b2a372fda37",
+      "48590006.img": "ece79ffeeb73b04f1f4b63c4187e08b39784754b5027b00794188984bffb5338",
+      "48590007.img": "035591c3ff34249fdfe6f719739bea6a20f15270560dba6a1aeff2f4bbe1d1f3",
+      "48590008.img": "1416e1f7ff2417d3b1d1fbb161abe017192cdf71ba0dacf65877ce5d0f128603",
+      "48590009.img": "4253bd19a46f238af6564ae650eb7ca7597aae271cb8f87a3c8a27cef6139caa",
+      "48590010.img": "2efac22b27ed87463b25daca83b0ce136323d165f6bb4a8e7283a1003d3cd50b",
+      "48590011.img": "c6e362229978a2e1756a695e83c4f9f89358012696e950763686c4b5cf7c2433",
+      "48590012.img": "414d17190e5439e8d873d77ceea0bb034422da99d711aa135afeb74956bbbeed",
+      "48590013.img": "fa19ac38d1d90eafa93678cccb62273bcd2b73cff798467a749dc79f04535294",
+      "48590014.img": "2bff0d44f8b6879fe89c2384f6bd51929982bfb34cf228d765cb2505e3750b3f",
+      "48590015.img": "715183bb8ee5dca8c3b7c97b3287f9c92fe71564fa16f3844ab288dd6b617d0f",
+      "48590016.img": "3695dd04717638713c8a52a3bfb89d31b3b8fa3a43b32e4d30c60b34b382142c",
+      "48590017.img": "d1cbbe0f1f4da11cb84d0f8fe86d919aab3119fd3611e3b287c73a1fed9d8f7e",
+      "48590018.img": "836a34ffdbb0e703aed7fe97fca11df1d6a02da05ea7e1fd82748859daf0322d",
+      "48590019.img": "731d45e858856dd877731e8165ac180fb07ded657b69e52654114172d0e312d3"
+    },
+    "pointInstancesAtHighestDetail": {
+      "0x100": 1,
+      "0x10001": 71,
+      "0x10002": 472,
+      "0x10003": 211,
+      "0x10004": 1,
+      "0x10006": 423,
+      "0x2f0b": 275,
+      "0x650c": 4,
+      "0x6603": 656,
+      "0x6615": 4,
+      "0x6616": 525,
+      "0x800": 7,
+      "0xb00": 11,
+      "0xc00": 64
+    },
+    "polygonInstancesAtHighestDetail": {
+      "0x10101": 3,
+      "0x10102": 1627,
+      "0x10103": 96,
+      "0x10104": 3450,
+      "0x10105": 16,
+      "0x10106": 117,
+      "0x10109": 60147,
+      "0x1010a": 94,
+      "0x13": 5735,
+      "0x32": 19,
+      "0x3c": 1661,
+      "0x50": 40258,
+      "0x51": 5,
+      "0x54": 33
+    },
+    "routing": false,
+    "subfileBytes": {
+      "DEM": 22939866,
+      "LBL": 109932,
+      "MPS": 1587,
+      "RGN": 37019299,
+      "SRT": 912,
+      "TRE": 463704,
+      "TYP": 3058
+    },
+    "tiles": 19
+  },
+  "output": {
+    "bytes": 60723200,
+    "path": "regions/us-grand-canyon/garmin/dist/OpenBareMap-US-Grand-Canyon.img",
+    "sha256": "5d577ce106628befb8326fa4e58c3fd06e7185a3de572b2d527ea534fce3b018"
+  },
+  "routing": false,
+  "status": "compiled and structurally inspected; hardware rendering pending"
+}
