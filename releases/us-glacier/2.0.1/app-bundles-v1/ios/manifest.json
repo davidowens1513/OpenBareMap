@@ -1,0 +1,35 @@
+{
+  "bytes": 162674763,
+  "datasets": {
+    "basemap": {
+      "path": "maps/basemap.mbtiles",
+      "sha256": "7ac40f57e453282c923b26c2596ee761ae6e29c3b3b03dc213756dfca821c538"
+    },
+    "coast": {
+      "derived_from": "493ecacc6f8ff2e3a2932aadcc1932221bdfce9cee9655a18e44413e363688b2",
+      "maxzoom": 12,
+      "operation": "Preserve land-layer MVT bytes only through zoom 12; omit other layers.",
+      "path": "maps/coast.mbtiles",
+      "sha256": "a030d774020ee56ca525e32cdf4ce326fa7a7956b9c1a9350119201e3028fce0"
+    },
+    "grid": {
+      "path": "maps/grid.mbtiles",
+      "sha256": "7b6f7a769bd7761febccd16d71c43690c6e5304ce4fac9e7f793eb46f8c58b59"
+    },
+    "hillshade": {
+      "path": "maps/hillshade.mbtiles",
+      "sha256": "ce4cc534a008ba42659ef44b835040ebf684b9452dbb225e7c220f5f1dfd987e"
+    },
+    "topography": {
+      "path": "maps/topography.mbtiles",
+      "sha256": "493ecacc6f8ff2e3a2932aadcc1932221bdfce9cee9655a18e44413e363688b2"
+    }
+  },
+  "instructionsSHA256": "072399a678a9f62701b388032535f5ba00924eca5ce1912cb59057270f9c5de7",
+  "instructionsURL": "https://downloads.appsbyonzy.dev/OpenBareMap/us-glacier/2.0.1/app-bundles-v1/ios/instructions.txt",
+  "localPath": "releases/us-glacier/2.0.1/app-bundles-v1/ios/OpenBareMap-Glacier-iOS-Bundle.zip",
+  "mapManifestSHA256": "3fd937833572ed0042cf9545b0f1777a5ecf8cd220863da7fb9e77561b84a0b1",
+  "r2Key": "OpenBareMap/us-glacier/2.0.1/app-bundles-v1/ios/OpenBareMap-Glacier-iOS-Bundle.zip",
+  "sha256": "654ca56e46a60f4b59ce1e6b28aeafe9eb702183a65d2a568e3a3d4555911ef8",
+  "url": "https://downloads.appsbyonzy.dev/OpenBareMap/us-glacier/2.0.1/app-bundles-v1/ios/OpenBareMap-Glacier-iOS-Bundle.zip"
+}

@@ -3,12 +3,12 @@
   "coverage": "Swiss, Liechtenstein and adjoining Italian Alps, with overlap from the Mont Blanc approaches to the Arlberg and the western Dolomites.",
   "datasets": {
     "basemap": {
-      "bytes": 1161093120,
-      "path": "releases/alps-central/2.0.0/maps/basemap.mbtiles",
-      "sha256": "8bc7d763e033077e3a2b13bbbcbfd561221cf71c2d375785ab51a795811df6d0",
+      "bytes": 1164234752,
+      "path": "releases/alps-central/2.0.1/maps/basemap.mbtiles",
+      "sha256": "f286726fa134558963f2b1763f1e280a73953680dd8512e6d18843a7f82f995a",
       "validation": {
-        "empty_tile_count": 1821,
-        "logical_tiles_sha256": "3ca21166e4755cb6ac7ffd02e3495ae52f3f53a588d82d5a51c26cf42ed2fd56",
+        "empty_tile_count": 1820,
+        "logical_tiles_sha256": "572941ccd9b54c65a224195dd8d669870fe2f566dbf78ae41690b63413b673f3",
         "tile_count": 35881
       }
     },
@@ -45,8 +45,8 @@
   },
   "format": "openbaremap-development-viewer-v1",
   "localBorders": false,
-  "mapVersion": "2.0.0",
+  "mapVersion": "2.0.1",
   "region": "alps-central",
-  "storageRevision": "2.0.0-alps-central-r3",
-  "styleRevision": "2.0.0-alps-central-r1"
+  "storageRevision": "2.0.1-glacier-r1",
+  "styleRevision": "2.0.1-glacier-r1"
 }

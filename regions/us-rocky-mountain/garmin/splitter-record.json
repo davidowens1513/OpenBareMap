@@ -1,5 +1,5 @@
 {
-  "combinedSHA256": "ecef948541d052e6db4d9cc05789ffd0475562c76c52d8b5097076b8eea6d9ac",
+  "combinedSHA256": "72d583044eb73712263fa5229784f656771e5120d4c547a1b68a08cddec6589f",
   "command": [
     "/opt/homebrew/opt/openjdk@21/libexec/openjdk.jdk/Contents/Home/bin/java",
     "-Xmx6g",
@@ -12,9 +12,9 @@
     "--keep-complete=true",
     "--output=pbf",
     "--polygon-file=/Volumes/Extreme SSD/Projects/OpenBareMap/regions/us-rocky-mountain/garmin/coverage.poly",
-    "--output-dir=/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/906ead9d53a7/us-rocky-mountain/garmin/split",
+    "--output-dir=/Volumes/Extreme SSD/Projects/OpenBareMap/work/glacier-updates/native/OpenBareMap-builds/906ead9d53a7/us-rocky-mountain/garmin/split",
     "--ignore-osm-bounds=true",
-    "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/906ead9d53a7/us-rocky-mountain/garmin/combined.osm.pbf"
+    "/Volumes/Extreme SSD/Projects/OpenBareMap/work/glacier-updates/native/OpenBareMap-builds/906ead9d53a7/us-rocky-mountain/garmin/combined.osm.pbf"
   ],
   "coverageSHA256": "0d698cebe7b8f48cd04743765bc5273b2cf9fa0739ad0db75e335ba5ba6a3302",
   "ignoreSourceHeaderBounds": true

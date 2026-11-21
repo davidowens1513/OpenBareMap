@@ -3,13 +3,13 @@
   "coverage": "Southern coast through Trondheim; includes Oslo, Stavanger, Bergen, Hardangervidda, Jotunheimen and the southern fjords. Mainland Norway and coastal islands only; excludes Svalbard and Jan Mayen. Adjacent editions overlap by 0.5 degrees latitude (approximately 56 km).",
   "datasets": {
     "basemap": {
-      "bytes": 1989734400,
-      "path": "releases/norway-south/2.0.0/maps/basemap.mbtiles",
-      "sha256": "9854dddb055031c780862a836b6230f00e927e3fd76106a9e7ff9c444b9bf6ec",
+      "bytes": 1995472896,
+      "path": "releases/norway-south/2.0.1/maps/basemap.mbtiles",
+      "sha256": "37091eec6623b81b1c29dd33f1a28a27be7dd7782d50fd0fb1a7ec5ea7a07cf5",
       "validation": {
-        "empty_tile_count": 5005,
-        "logical_tiles_sha256": "c058a6a30d78664c73860ab2f26328c394f23c1cd9c6c56c8765b132e2ee8f34",
-        "tile_count": 208338
+        "empty_tile_count": 4895,
+        "logical_tiles_sha256": "92516328cbc3e453e47a21e659ac99bdee9de7a5720eac34f072185811c50f6e",
+        "tile_count": 208805
       }
     },
     "grid": {
@@ -45,8 +45,8 @@
   },
   "format": "openbaremap-development-viewer-v1",
   "localBorders": false,
-  "mapVersion": "2.0.0",
+  "mapVersion": "2.0.1",
   "region": "norway-south",
-  "storageRevision": "2.0.0-norway-south-r3",
-  "styleRevision": "2.0.0-norway-south-r1"
+  "storageRevision": "2.0.1-glacier-r1",
+  "styleRevision": "2.0.1-glacier-r1"
 }

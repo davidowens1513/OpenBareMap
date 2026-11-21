@@ -1,0 +1,25 @@
+{
+  "counts": {
+    "permanentIce": {
+      "glacier": 2052,
+      "permanent_snow": 25
+    }
+  },
+  "osm": {
+    "bytes": 714183335,
+    "operation": "Complete-feature bbox extraction with nested relation references",
+    "path": "data/regions/alps-central/alps-261116.osm.clipped.osm.pbf",
+    "replicationTimestamp": "2026-11-16T21:22:36Z",
+    "sha256": "5bcdffa2803f4d7d22b1b44f9af9f3748402b7942e837bedd1cdcaf0c90e0b4b",
+    "snapshot_date": "2026-11-16",
+    "url": "https://download.geofabrik.de/europe/alps-261116.osm.pbf"
+  },
+  "outputs": {
+    "ice.geojson": "cb01ee2b9d256860145d2569e90394674c0ab33e1613f13c8fe21db09f1c82c7"
+  },
+  "permanentIce": {
+    "glacier": 2052,
+    "permanent_snow": 25
+  },
+  "region": "alps-central"
+}

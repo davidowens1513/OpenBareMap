@@ -1,0 +1,25 @@
+{
+  "counts": {
+    "permanentIce": {
+      "glacier": 37,
+      "permanent_snow": 0
+    }
+  },
+  "osm": {
+    "bytes": 18403376,
+    "operation": "Complete-feature bbox extraction with nested relation references",
+    "path": "data/regions/us-yosemite/california-261120.osm.clipped.osm.pbf",
+    "replicationTimestamp": "2026-11-20T21:21:21Z",
+    "sha256": "77e86308f72054083b662532c46f95d6e3e208e7e20b86d99cdb9e1e33dc69b1",
+    "snapshot_date": "2026-11-20",
+    "url": "https://download.geofabrik.de/north-america/us/california/california-261120.osm.pbf"
+  },
+  "outputs": {
+    "ice.geojson": "9e598c9d3927eefae187f1363eadbf42eacb4261f348f110ace78df6b01a6723"
+  },
+  "permanentIce": {
+    "glacier": 37,
+    "permanent_snow": 0
+  },
+  "region": "us-yosemite"
+}

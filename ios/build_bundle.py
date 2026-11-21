@@ -6,7 +6,7 @@ ROOT=Path(__file__).resolve().parents[1]
 import sys
 sys.path.insert(0,str(ROOT/"scripts"))
 from package_resources import build_capped_coast, copy_map_file
-from regions import REGIONS,terrain_file,apply_terrain_notice,profile, active_map, region_style, provenance_files, region_path
+from regions import REGIONS,terrain_file,apply_terrain_notice,profile, active_map, region_style, provenance_files, region_path, basemap_attribution
 def sha(path):
     with path.open('rb') as f:return hashlib.file_digest(f,'sha256').hexdigest()
 def write(path,obj):path.write_text(json.dumps(obj,indent=2,ensure_ascii=False)+'\n')
@@ -41,7 +41,7 @@ def assemble(destination, region='ireland'):
     for name,path in source_files.items():
         source=style['sources'][name];source.pop('tiles',None);source['url']='mbtiles://{bundle}/'+path
     if edition['townlands']:style['sources']['townlands']['data']='{bundle}/townlands.geojson'
-    style['sources']['basemap']['attribution']='© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap contributors</a>'
+    style['sources']['basemap']['attribution']=basemap_attribution(edition)
     style['sources']['hillshade']['attribution']=edition.get('terrainAttribution','Terrain Tiles / Mapzen · Copernicus EU-DEM · USGS · NOAA')
     style['glyphs']='{bundle}/fonts/{fontstack}/{range}.pbf';style['sprite']='{bundle}/sprites/outdoors'
     write(bundle/'style.json',style)

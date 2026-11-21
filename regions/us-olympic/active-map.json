@@ -3,13 +3,13 @@
   "coverage": "Olympic National Park, including the mountain interior, rainforest valleys, coastal sections and principal trailhead approaches.",
   "datasets": {
     "basemap": {
-      "bytes": 37916672,
-      "path": "releases/us-olympic/2.0.0/maps/basemap.mbtiles",
-      "sha256": "92ab78c832f5b9425fd4c2b7c7914c1a551de35152762cb468ce896f07754c5d",
+      "bytes": 38023168,
+      "path": "releases/us-olympic/2.0.1/maps/basemap.mbtiles",
+      "sha256": "237f05a6a06a86d1e65d5c9b4f82b879396b8cda4d3c57c0dfceac2d5331ce8b",
       "validation": {
         "empty_tile_count": 233,
-        "logical_tiles_sha256": "dd50292d05e97eb4a2224e2b83ff7d67e7d56c1ff9b666f0b52de39d9b57c187",
-        "tile_count": 6829
+        "logical_tiles_sha256": "e846bbe452879f365b33265b1855a66f03631f36498a49212a1cbc41ba5e45ae",
+        "tile_count": 6832
       }
     },
     "grid": {
@@ -45,8 +45,8 @@
   },
   "format": "openbaremap-development-viewer-v1",
   "localBorders": false,
-  "mapVersion": "2.0.0",
+  "mapVersion": "2.0.1",
   "region": "us-olympic",
-  "storageRevision": "2.0.0-us-olympic-r3",
-  "styleRevision": "2.0.0-us-olympic-r1"
+  "storageRevision": "2.0.1-glacier-r1",
+  "styleRevision": "2.0.1-glacier-r1"
 }

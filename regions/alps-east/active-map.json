@@ -3,12 +3,12 @@
   "coverage": "Eastern Austrian Alps, Julian Alps and Karawanks, joining the existing Dolomites around East Tyrol and Friuli.",
   "datasets": {
     "basemap": {
-      "bytes": 1107087360,
-      "path": "releases/alps-east/2.0.0/maps/basemap.mbtiles",
-      "sha256": "0ef3c9d57905c396f98f30c423f33cd4ed3c1c093a5936f8b919f7f79b679ae9",
+      "bytes": 1107292160,
+      "path": "releases/alps-east/2.0.1/maps/basemap.mbtiles",
+      "sha256": "0cd96d5c39da921f1b03715452f4cbfc4d5b6551af9bc3479f5fe3878260e2c2",
       "validation": {
         "empty_tile_count": 425,
-        "logical_tiles_sha256": "9a4507df8c520ca72a1829093931c7486859d2368d05dfb58f2d253857a2b687",
+        "logical_tiles_sha256": "ebaf23022f81474a0794d5197e3a6dad50754ec95d72bef66d8229c60f7bcfbe",
         "tile_count": 32418
       }
     },
@@ -45,8 +45,8 @@
   },
   "format": "openbaremap-development-viewer-v1",
   "localBorders": false,
-  "mapVersion": "2.0.0",
+  "mapVersion": "2.0.1",
   "region": "alps-east",
-  "storageRevision": "2.0.0-alps-east-r3",
-  "styleRevision": "2.0.0-alps-east-r1"
+  "storageRevision": "2.0.1-glacier-r1",
+  "styleRevision": "2.0.1-glacier-r1"
 }

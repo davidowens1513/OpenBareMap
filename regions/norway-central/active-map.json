@@ -3,13 +3,13 @@
   "coverage": "Trondheim, Trondelag and the Helgeland coast through Bodo. Mainland Norway and coastal islands only; excludes Svalbard and Jan Mayen. Adjacent editions overlap by 0.5 degrees latitude (approximately 56 km).",
   "datasets": {
     "basemap": {
-      "bytes": 736968704,
-      "path": "releases/norway-central/2.0.0/maps/basemap.mbtiles",
-      "sha256": "296a88fbf030a86bebc326086d447af0c97f9cced2daea13df616822f0ba40f2",
+      "bytes": 740040704,
+      "path": "releases/norway-central/2.0.1/maps/basemap.mbtiles",
+      "sha256": "42d14121de08b8bdd4b97a639bf6aa3d6f2bb82475bef08a538ec6b275f12489",
       "validation": {
-        "empty_tile_count": 4067,
-        "logical_tiles_sha256": "efdee1cefcf277bc40b7b6eb52e738b0c60ff80fd0bf6e91a509bf34e22e1eb1",
-        "tile_count": 107563
+        "empty_tile_count": 3932,
+        "logical_tiles_sha256": "3f7433636ef379351c18099ab52edced88d26f706360b752270da1c75cb32777",
+        "tile_count": 108030
       }
     },
     "grid": {
@@ -45,8 +45,8 @@
   },
   "format": "openbaremap-development-viewer-v1",
   "localBorders": false,
-  "mapVersion": "2.0.0",
+  "mapVersion": "2.0.1",
   "region": "norway-central",
-  "storageRevision": "2.0.0-norway-central-r3",
-  "styleRevision": "2.0.0-norway-central-r1"
+  "storageRevision": "2.0.1-glacier-r1",
+  "styleRevision": "2.0.1-glacier-r1"
 }

@@ -1,0 +1,46 @@
+{
+  "iceExtraction": {
+    "geometrySHA256": "3fb664a41156b79f35ae6e2fabb9dce1e355580f433b12a89d0cf6424bef7327",
+    "permanentIce": {
+      "glacier": 873,
+      "permanent_snow": 0
+    },
+    "region": "norway-north",
+    "sourceSHA256": "149cc5091b723ab2c349b47321fdd84c0f45f2653221e81cfc5a2c7b4f06777b"
+  },
+  "mapVersion": "2.0.1",
+  "preservedBasemapLayersSHA256": "d94d09e679e65651ad80c21062114c3e3bc33805822ea4d49152573e1b3da8a7",
+  "preservedTerrain": {
+    "grid": {
+      "bytes": 194441216,
+      "path": "releases/norway-north/2.0.0/maps/grid.mbtiles",
+      "sha256": "136e9506681b4ac2aa5c57705f2664a4855b1d79e115359019fea05adfd853b7",
+      "validation": {
+        "empty_tile_count": 0,
+        "logical_tiles_sha256": "492a7ad4e286379840ac8046645d5dc25bc98b1445e48a8b2022484137c4771b",
+        "tile_count": 737693
+      }
+    },
+    "hillshade": {
+      "bytes": 637526016,
+      "path": "releases/norway-north/2.0.0/maps/hillshade.mbtiles",
+      "sha256": "c9dbd22c65fba6f1b3bef7c0254d89421d0cedca7cec4407af3ff75bb0c3693b",
+      "validation": {
+        "empty_tile_count": 0,
+        "logical_tiles_sha256": "10ea37216fa2eb39d4956358561b574ec7913f3027ac32570641e7ee161eb107",
+        "tile_count": 28145
+      }
+    },
+    "topography": {
+      "bytes": 939577344,
+      "path": "releases/norway-north/2.0.0/maps/topography-context.mbtiles",
+      "sha256": "cce406cc6b417072024b05dd91f7cb1bebcdbe6a594e6b5c227d3bea46cc1566",
+      "validation": {
+        "empty_tile_count": 355432,
+        "logical_tiles_sha256": "f12eb0ae2b7496e4e06f0bab9d84769c9a2ca3c2d192b51fef79328daacc380e",
+        "tile_count": 777479
+      }
+    }
+  },
+  "previousMapVersion": "2.0.0"
+}

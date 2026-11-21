@@ -1,0 +1,41 @@
+{
+  "regions": {
+    "pyrenees": {
+      "basemap": {
+        "sourceSHA256": "f17a44abb01778d8ac9d684cea201e81c1a3fc49bcfb6a51b8d489e350fec980",
+        "bytes": 1005521463,
+        "sha256": "ae9a06e69af35ba92e8e70e8b0bac7bb43cafe92a00a4f2a0cf204b8d92950bd",
+        "tiles": 40490
+      },
+      "grid": {
+        "sourceSHA256": "2403c0d15c957a8043452ca705cec54f0c22421e09a5332d6d30bd116215dfbc",
+        "bytes": 13336723,
+        "sha256": "4747f69cb851f92315d62b8c6005dac88a8b8fc4a7eca7c6db7be9532a0657ce",
+        "tiles": 43368
+      },
+      "hillshade": {
+        "sourceSHA256": "22881414cea150df4bd80e0a276bf5a4fe9b66202fdbd01a659790304689e8bc",
+        "bytes": 167585710,
+        "sha256": "d9f6d7460521e8369842dc00c98b489587558443f4dc87860e8717271647ad28",
+        "tiles": 3851
+      },
+      "topography": {
+        "sourceSHA256": "4fc742fb3061ff00428c82037d904804397581617e1778eaebfb3b96623691bd",
+        "bytes": 474713869,
+        "sha256": "ddde9efda825e87634b905a96705972898fbf905c046169c41b7111a6e33762e",
+        "tiles": 66995
+      },
+      "coast": {
+        "sourceSHA256": "a86790a00f9900908f5e42b3f6b81e1bba5d9b4d62e23ab2dd13db167e902f4f",
+        "bytes": 1396369,
+        "sha256": "f4a6442060c5038344e176529a604af5170595ce728002656630054a662f6b35",
+        "tiles": 14702
+      }
+    }
+  },
+  "pmtilesPython": "3.8.1",
+  "pmtilesJS": "4.5.0",
+  "librarySHA256": "caf981bc46f6327ee7e65d5dc964d89d38a69f60edca2bd4c5c890c21b554c6c",
+  "dataOrigin": "https://downloads.appsbyonzy.dev/OpenBareMap/pyrenees/2.0.1/preview",
+  "scope": "Complete selected map tiles; no regional or zoom sampling."
+}

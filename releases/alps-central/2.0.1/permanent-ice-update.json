@@ -1,0 +1,46 @@
+{
+  "iceExtraction": {
+    "geometrySHA256": "cb01ee2b9d256860145d2569e90394674c0ab33e1613f13c8fe21db09f1c82c7",
+    "permanentIce": {
+      "glacier": 2052,
+      "permanent_snow": 25
+    },
+    "region": "alps-central",
+    "sourceSHA256": "5bcdffa2803f4d7d22b1b44f9af9f3748402b7942e837bedd1cdcaf0c90e0b4b"
+  },
+  "mapVersion": "2.0.1",
+  "preservedBasemapLayersSHA256": "78c97fde8b9155b5e09a25d5fe44d36d9239bf088679223de087add613a8876f",
+  "preservedTerrain": {
+    "grid": {
+      "bytes": 14745600,
+      "path": "releases/alps-central/2.0.0/maps/grid.mbtiles",
+      "sha256": "d606809c23af755432def37afa8be509b895af5fc9a333b89dabfd58c82bf87d",
+      "validation": {
+        "empty_tile_count": 0,
+        "logical_tiles_sha256": "e66c2f9bc2ed59e060fb0188396fdb170e240113112481af00a7f8e281dc211e",
+        "tile_count": 43611
+      }
+    },
+    "hillshade": {
+      "bytes": 206884864,
+      "path": "releases/alps-central/2.0.0/maps/hillshade.mbtiles",
+      "sha256": "cd88666130a7141c7edbedf11855eedacff0e6aa69ebbb5923edb57a4028adfc",
+      "validation": {
+        "empty_tile_count": 0,
+        "logical_tiles_sha256": "3161a38cbd5d7cc0245c8a0880f74544d52d4d5b3b36f040f1cae447a22b38d1",
+        "tile_count": 4799
+      }
+    },
+    "topography": {
+      "bytes": 716709888,
+      "path": "releases/alps-central/2.0.0/maps/topography-context.mbtiles",
+      "sha256": "0a8611682f92b208944f1e819d774495c815eb9d0e79053d4ebe27de344cd34e",
+      "validation": {
+        "empty_tile_count": 85157,
+        "logical_tiles_sha256": "e25b68468aaf86a960e6932c7aade374d9e55139ae60ad56c87353fb5451514f",
+        "tile_count": 134455
+      }
+    }
+  },
+  "previousMapVersion": "2.0.0"
+}

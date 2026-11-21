@@ -1,0 +1,33 @@
+{
+  "bytes": 180416107,
+  "datasets": {
+    "basemap": {
+      "path": "maps/basemap.mbtiles",
+      "sha256": "b1c5ec72af6996a8c69d1bd7b2d52c5972777189ee800350de1e5faffccad4a4"
+    },
+    "coast": {
+      "derivedFrom": "66cb6aef7dd63d28401bc8b3b4aa713aa4f3531ee50f2d9ee7d309b060674bf7",
+      "path": "maps/coast.mbtiles",
+      "sha256": "31baeabd7327d27c93061756691c746cd45f42a6f0925cd3a5ed23045e5802b3"
+    },
+    "grid": {
+      "path": "maps/grid.mbtiles",
+      "sha256": "1367af0fa0999e1ecc42d70199f36b2cf5fa237c573c1a37a228118d21642007"
+    },
+    "hillshade": {
+      "path": "maps/hillshade.mbtiles",
+      "sha256": "b4fd0c6bc6c223ede7705fa657be8c8ccd2110885c5024f9d204cdfc491cbd7f"
+    },
+    "topography": {
+      "path": "maps/topography.mbtiles",
+      "sha256": "66cb6aef7dd63d28401bc8b3b4aa713aa4f3531ee50f2d9ee7d309b060674bf7"
+    }
+  },
+  "instructionsSHA256": "3ee04e2ad9b3bff7e216b3bd086bb1cadd0b025571c5c35c6f54d7b8710d7f66",
+  "instructionsURL": "https://downloads.appsbyonzy.dev/OpenBareMap/us-yosemite/2.0.1/app-bundles-v1/android/instructions.txt",
+  "localPath": "releases/us-yosemite/2.0.1/app-bundles-v1/android/OpenBareMap-Yosemite-Android-Bundle.zip",
+  "mapManifestSHA256": "4fcc5ea2a2fa36545aee34b9ac21f2b036087d32970ab2ee6a02c25d28ff8372",
+  "r2Key": "OpenBareMap/us-yosemite/2.0.1/app-bundles-v1/android/OpenBareMap-Yosemite-Android-Bundle.zip",
+  "sha256": "6d0c2fb49dc59863032bb87b61b0bf52a5a43deff2bd9e75bc5c338d17fc67a6",
+  "url": "https://downloads.appsbyonzy.dev/OpenBareMap/us-yosemite/2.0.1/app-bundles-v1/android/OpenBareMap-Yosemite-Android-Bundle.zip"
+}

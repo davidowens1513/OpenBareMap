@@ -1,0 +1,46 @@
+{
+  "iceExtraction": {
+    "geometrySHA256": "4b8bbb55388a42d9b1a2498aaf7a6773c8affc7c8dfa8f3fc5d5a19a0fa9f887",
+    "permanentIce": {
+      "glacier": 45,
+      "permanent_snow": 0
+    },
+    "region": "us-rocky-mountain",
+    "sourceSHA256": "fb888f65d9c2996ffd08fdde4a8e28948fee3cb9ac16bdcf50fa8654e89bb087"
+  },
+  "mapVersion": "2.0.1",
+  "preservedBasemapLayersSHA256": "266dfde9656e10903f786a206b32d1b956a1d2ff6c3fad4a73c5d371f85720a4",
+  "preservedTerrain": {
+    "grid": {
+      "bytes": 745472,
+      "path": "releases/us-rocky-mountain/2.0.0/maps/grid.mbtiles",
+      "sha256": "612923e176b450045b03f200d170fbabdc8995e8eff0dd7ebc430abd40b45e66",
+      "validation": {
+        "empty_tile_count": 0,
+        "logical_tiles_sha256": "7afd8a2f71eb306147556bb2fda73b02f6c185d5de385014f0e21c7c7e773610",
+        "tile_count": 2102
+      }
+    },
+    "hillshade": {
+      "bytes": 21549056,
+      "path": "releases/us-rocky-mountain/2.0.0/maps/hillshade.mbtiles",
+      "sha256": "6aa11fa47979f4ac836f887ddcf5901230d781a03dbf8d0f5c03d3433239bbc9",
+      "validation": {
+        "empty_tile_count": 0,
+        "logical_tiles_sha256": "90054ad83d0da8770524b9e04bb9360b796ad2809c684e1bd01a72b26c3e739b",
+        "tile_count": 549
+      }
+    },
+    "topography": {
+      "bytes": 35098624,
+      "path": "releases/us-rocky-mountain/2.0.0/maps/topography-context.mbtiles",
+      "sha256": "8a5e79c943aa0329f42c26a5f1c457959476a538fb941d21e03c1c1634ee5e70",
+      "validation": {
+        "empty_tile_count": 34186,
+        "logical_tiles_sha256": "f253729ab6a9f9da07fdfe2e6fc1965405d07feffab6f5ccf95e8504bcb69e9a",
+        "tile_count": 39029
+      }
+    }
+  },
+  "previousMapVersion": "2.0.0"
+}

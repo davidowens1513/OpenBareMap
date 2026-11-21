@@ -1,0 +1,46 @@
+{
+  "iceExtraction": {
+    "geometrySHA256": "21d2b55d22ddd5e22293246c7d919cdd522384d7debfbbc6294e92be9123a697",
+    "permanentIce": {
+      "glacier": 57,
+      "permanent_snow": 0
+    },
+    "region": "us-yellowstone-grand-teton",
+    "sourceSHA256": "88a655734b4a35477aa5c45610f3e372e57b51df01c7248dd579259fd7de1cf5"
+  },
+  "mapVersion": "2.0.1",
+  "preservedBasemapLayersSHA256": "a97a52e41047540e843f19675c656f60a1c90ddec7031f4b3515aad6dccc7617",
+  "preservedTerrain": {
+    "grid": {
+      "bytes": 4456448,
+      "path": "releases/us-yellowstone-grand-teton/2.0.0/maps/grid.mbtiles",
+      "sha256": "559128df29402b90df47b6f5e64ed7c18cb6dca80fc4722b62483569503393c2",
+      "validation": {
+        "empty_tile_count": 0,
+        "logical_tiles_sha256": "7037cb1dfb9d82573bf6541f7be8297f7c50eb3b61266e80bcf2847f9adfa624",
+        "tile_count": 13177
+      }
+    },
+    "hillshade": {
+      "bytes": 101359616,
+      "path": "releases/us-yellowstone-grand-teton/2.0.0/maps/hillshade.mbtiles",
+      "sha256": "b44068bb5bf694392a1765b5336d84ae7a039dc1280ea4c3dbf42af49673199b",
+      "validation": {
+        "empty_tile_count": 0,
+        "logical_tiles_sha256": "b5b206eaf16a9ebb0e4953dd0400166b8fe2687334765efe50ba34e38941a012",
+        "tile_count": 2337
+      }
+    },
+    "topography": {
+      "bytes": 185790464,
+      "path": "releases/us-yellowstone-grand-teton/2.0.0/maps/topography-context.mbtiles",
+      "sha256": "52139ac2ccedbfa356598a9b7ecda5697e7d20215813cfcc3d88d97717793c5a",
+      "validation": {
+        "empty_tile_count": 58749,
+        "logical_tiles_sha256": "22621aad8a7921ec3ecf62bf92813cf11984ed0c1c223e19b681abf59662f362",
+        "tile_count": 77283
+      }
+    }
+  },
+  "previousMapVersion": "2.0.0"
+}

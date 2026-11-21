@@ -1,10 +1,10 @@
 {
   "format": "openbaremap-app-bundle-catalog-v1",
   "mapVersions": {
-    "alps-central": "2.0.0",
-    "alps-east": "2.0.0",
-    "alps-tyrol-bavaria": "2.0.0",
-    "alps-west": "2.0.0",
+    "alps-central": "2.0.1",
+    "alps-east": "2.0.1",
+    "alps-tyrol-bavaria": "2.0.1",
+    "alps-west": "2.0.1",
     "balearic-islands": "2.0.0",
     "canadian-rockies-banff": "2.0.0",
     "canadian-rockies-jasper": "2.0.0",
@@ -13,40 +13,40 @@
     "corsica": "2.0.0",
     "crete": "2.0.0",
     "cyprus": "2.0.0",
-    "dolomites": "2.0.0",
+    "dolomites": "2.0.1",
     "england-wales": "2.0.1",
     "faroe-islands": "2.0.0",
     "high-tatras": "2.0.0",
     "ireland": "2.0.0",
     "madeira": "2.0.0",
     "malta": "2.0.0",
-    "norway-central": "2.0.0",
-    "norway-north": "2.0.0",
-    "norway-south": "2.0.0",
+    "norway-central": "2.0.1",
+    "norway-north": "2.0.1",
+    "norway-south": "2.0.1",
     "picos-de-europa": "2.0.0",
-    "pyrenees": "2.0.0",
+    "pyrenees": "2.0.1",
     "sardinia": "2.0.0",
     "scotland": "2.0.0",
     "sicily": "2.0.0",
     "sierra-nevada": "2.0.0",
     "us-acadia": "2.0.0",
-    "us-glacier": "2.0.0",
+    "us-glacier": "2.0.1",
     "us-grand-canyon": "2.0.0",
     "us-great-smoky-mountains": "2.0.0",
-    "us-olympic": "2.0.0",
-    "us-rocky-mountain": "2.0.0",
-    "us-yellowstone-grand-teton": "2.0.0",
-    "us-yosemite": "2.0.0",
+    "us-olympic": "2.0.1",
+    "us-rocky-mountain": "2.0.1",
+    "us-yellowstone-grand-teton": "2.0.1",
+    "us-yosemite": "2.0.1",
     "us-zion": "2.0.0"
   },
   "regions": {
     "alps-central": {
       "android": {
-        "bytes": 2104197612,
+        "bytes": 2107357245,
         "datasets": {
           "basemap": {
             "path": "maps/basemap.mbtiles",
-            "sha256": "8bc7d763e033077e3a2b13bbbcbfd561221cf71c2d375785ab51a795811df6d0"
+            "sha256": "f286726fa134558963f2b1763f1e280a73953680dd8512e6d18843a7f82f995a"
           },
           "coast": {
             "derivedFrom": "0a8611682f92b208944f1e819d774495c815eb9d0e79053d4ebe27de344cd34e",
@@ -66,20 +66,20 @@
             "sha256": "0a8611682f92b208944f1e819d774495c815eb9d0e79053d4ebe27de344cd34e"
           }
         },
-        "instructionsSHA256": "f98e1af57c5a711c6484d1b578f3b332665185a8205e8acee3a3283ec94a196a",
-        "instructionsURL": "https://downloads.appsbyonzy.dev/OpenBareMap/alps-central/2.0.0/app-bundles-v1/android/instructions.txt",
-        "localPath": "releases/alps-central/2.0.0/app-bundles-v1/android/OpenBareMap-Alps-Central-Android-Bundle.zip",
-        "mapManifestSHA256": "021c0a0b67f285e4cc91e25af3c87d85403edf79eae4b3e76c9bbb43573ee6ed",
-        "r2Key": "OpenBareMap/alps-central/2.0.0/app-bundles-v1/android/OpenBareMap-Alps-Central-Android-Bundle.zip",
-        "sha256": "c965de23e5071a9d8b243357cd4822433990ce06a9c5f8c941232b59b2fd5276",
-        "url": "https://downloads.appsbyonzy.dev/OpenBareMap/alps-central/2.0.0/app-bundles-v1/android/OpenBareMap-Alps-Central-Android-Bundle.zip"
+        "instructionsSHA256": "2b7fc31291a8923cdf968f4ef8645c6c96a1b29cea98f3457bf90cbb720941ec",
+        "instructionsURL": "https://downloads.appsbyonzy.dev/OpenBareMap/alps-central/2.0.1/app-bundles-v1/android/instructions.txt",
+        "localPath": "releases/alps-central/2.0.1/app-bundles-v1/android/OpenBareMap-Alps-Central-Android-Bundle.zip",
+        "mapManifestSHA256": "9610d77257927769c64bb7b10a53ae55ce0fbece8e89015a9a2118eb1e176d7c",
+        "r2Key": "OpenBareMap/alps-central/2.0.1/app-bundles-v1/android/OpenBareMap-Alps-Central-Android-Bundle.zip",
+        "sha256": "8808c9ab0e535da92d7c80207d4f543b28ea18f91965d086e07acf70b1c3257e",
+        "url": "https://downloads.appsbyonzy.dev/OpenBareMap/alps-central/2.0.1/app-bundles-v1/android/OpenBareMap-Alps-Central-Android-Bundle.zip"
       },
       "ios": {
-        "bytes": 2104198027,
+        "bytes": 2107357660,
         "datasets": {
           "basemap": {
             "path": "maps/basemap.mbtiles",
-            "sha256": "8bc7d763e033077e3a2b13bbbcbfd561221cf71c2d375785ab51a795811df6d0"
+            "sha256": "f286726fa134558963f2b1763f1e280a73953680dd8512e6d18843a7f82f995a"
           },
           "coast": {
             "derived_from": "0a8611682f92b208944f1e819d774495c815eb9d0e79053d4ebe27de344cd34e",
@@ -101,22 +101,22 @@
             "sha256": "0a8611682f92b208944f1e819d774495c815eb9d0e79053d4ebe27de344cd34e"
           }
         },
-        "instructionsSHA256": "6a636a070a60c10b749f46d20ada2d6883020cc5e0fadf04e29c0d44ff62430a",
-        "instructionsURL": "https://downloads.appsbyonzy.dev/OpenBareMap/alps-central/2.0.0/app-bundles-v1/ios/instructions.txt",
-        "localPath": "releases/alps-central/2.0.0/app-bundles-v1/ios/OpenBareMap-Alps-Central-iOS-Bundle.zip",
-        "mapManifestSHA256": "de838101feb349a89c3bec766c882d8dd68ce76d2884bdba55050aa562cbd30d",
-        "r2Key": "OpenBareMap/alps-central/2.0.0/app-bundles-v1/ios/OpenBareMap-Alps-Central-iOS-Bundle.zip",
-        "sha256": "ffec657b6716745e21645669efbbc14d8c06cb5d62cbdd78feb6d79d72c6965e",
-        "url": "https://downloads.appsbyonzy.dev/OpenBareMap/alps-central/2.0.0/app-bundles-v1/ios/OpenBareMap-Alps-Central-iOS-Bundle.zip"
+        "instructionsSHA256": "03f86366b2fb68f6796c77d01addd60603e9327a976de0df82ea5c557fb9bd23",
+        "instructionsURL": "https://downloads.appsbyonzy.dev/OpenBareMap/alps-central/2.0.1/app-bundles-v1/ios/instructions.txt",
+        "localPath": "releases/alps-central/2.0.1/app-bundles-v1/ios/OpenBareMap-Alps-Central-iOS-Bundle.zip",
+        "mapManifestSHA256": "52b12407e784a3bd9ccf60657b6efbc12c6f5df4002313a1555b883891e45956",
+        "r2Key": "OpenBareMap/alps-central/2.0.1/app-bundles-v1/ios/OpenBareMap-Alps-Central-iOS-Bundle.zip",
+        "sha256": "e9c3668e3baf55a4a4502433e4a7369bbc806d11766397c5a578ef465f24f416",
+        "url": "https://downloads.appsbyonzy.dev/OpenBareMap/alps-central/2.0.1/app-bundles-v1/ios/OpenBareMap-Alps-Central-iOS-Bundle.zip"
       }
     },
     "alps-east": {
       "android": {
-        "bytes": 1943620767,
+        "bytes": 1943843672,
         "datasets": {
           "basemap": {
             "path": "maps/basemap.mbtiles",
-            "sha256": "0ef3c9d57905c396f98f30c423f33cd4ed3c1c093a5936f8b919f7f79b679ae9"
+            "sha256": "0cd96d5c39da921f1b03715452f4cbfc4d5b6551af9bc3479f5fe3878260e2c2"
           },
           "coast": {
             "derivedFrom": "0477fb2c593d1c748789f90d66c02e3fbc01f2abc5cd27d57f6fda9342273113",
@@ -136,20 +136,20 @@
             "sha256": "0477fb2c593d1c748789f90d66c02e3fbc01f2abc5cd27d57f6fda9342273113"
           }
         },
-        "instructionsSHA256": "afd84073db7ea773125206a11e1277333e06c73c1e40f154a6cf7effcb18a2e0",
-        "instructionsURL": "https://downloads.appsbyonzy.dev/OpenBareMap/alps-east/2.0.0/app-bundles-v1/android/instructions.txt",
-        "localPath": "releases/alps-east/2.0.0/app-bundles-v1/android/OpenBareMap-Alps-East-Android-Bundle.zip",
-        "mapManifestSHA256": "6c8d46c9bf04e7846838ec13c245a1bedcfee00e152db896d600918323241441",
-        "r2Key": "OpenBareMap/alps-east/2.0.0/app-bundles-v1/android/OpenBareMap-Alps-East-Android-Bundle.zip",
-        "sha256": "61f00bfcf2e3752cfbdac38531cab6d9ee159ccab9938cbdcf1ebf1bb377116f",
-        "url": "https://downloads.appsbyonzy.dev/OpenBareMap/alps-east/2.0.0/app-bundles-v1/android/OpenBareMap-Alps-East-Android-Bundle.zip"
+        "instructionsSHA256": "5b4293386df79f3dc2c3ee8d54a8def7b5a31ae1bcf9dd66df71e92b9e0ebdb2",
+        "instructionsURL": "https://downloads.appsbyonzy.dev/OpenBareMap/alps-east/2.0.1/app-bundles-v1/android/instructions.txt",
+        "localPath": "releases/alps-east/2.0.1/app-bundles-v1/android/OpenBareMap-Alps-East-Android-Bundle.zip",
+        "mapManifestSHA256": "400d9bdb4cff0123155d93cd60a89df692f35a3d747381628f265e93357a3e07",
+        "r2Key": "OpenBareMap/alps-east/2.0.1/app-bundles-v1/android/OpenBareMap-Alps-East-Android-Bundle.zip",
+        "sha256": "45f93dcff32fc203d17c532b7d9b97c7347c38d2e3f599da4e8a9bb301f54195",
+        "url": "https://downloads.appsbyonzy.dev/OpenBareMap/alps-east/2.0.1/app-bundles-v1/android/OpenBareMap-Alps-East-Android-Bundle.zip"
       },
       "ios": {
-        "bytes": 1943621176,
+        "bytes": 1943844081,
         "datasets": {
           "basemap": {
             "path": "maps/basemap.mbtiles",
-            "sha256": "0ef3c9d57905c396f98f30c423f33cd4ed3c1c093a5936f8b919f7f79b679ae9"
+            "sha256": "0cd96d5c39da921f1b03715452f4cbfc4d5b6551af9bc3479f5fe3878260e2c2"
           },
           "coast": {
             "derived_from": "0477fb2c593d1c748789f90d66c02e3fbc01f2abc5cd27d57f6fda9342273113",
@@ -171,22 +171,22 @@
             "sha256": "0477fb2c593d1c748789f90d66c02e3fbc01f2abc5cd27d57f6fda9342273113"
           }
         },
-        "instructionsSHA256": "17b2f1436b6abbbc5f7df114fd434d04ce33234241c0fe5e590df9b175ca89ee",
-        "instructionsURL": "https://downloads.appsbyonzy.dev/OpenBareMap/alps-east/2.0.0/app-bundles-v1/ios/instructions.txt",
-        "localPath": "releases/alps-east/2.0.0/app-bundles-v1/ios/OpenBareMap-Alps-East-iOS-Bundle.zip",
-        "mapManifestSHA256": "598bd1fdf60e72859f9476feada1d9467095aceb8bc4807032e1772448f476f7",
-        "r2Key": "OpenBareMap/alps-east/2.0.0/app-bundles-v1/ios/OpenBareMap-Alps-East-iOS-Bundle.zip",
-        "sha256": "89e49f9be7dd5b018a4a112e50d60dd6fa6cfe45034fd64b4f7e68054039cad5",
-        "url": "https://downloads.appsbyonzy.dev/OpenBareMap/alps-east/2.0.0/app-bundles-v1/ios/OpenBareMap-Alps-East-iOS-Bundle.zip"
+        "instructionsSHA256": "97a8d55d3c5e4fe882b07c28e8cbaaab73f4172911fec154acde36b027decca2",
+        "instructionsURL": "https://downloads.appsbyonzy.dev/OpenBareMap/alps-east/2.0.1/app-bundles-v1/ios/instructions.txt",
+        "localPath": "releases/alps-east/2.0.1/app-bundles-v1/ios/OpenBareMap-Alps-East-iOS-Bundle.zip",
+        "mapManifestSHA256": "260763134f73143027ce776a671863f4e7a539a344f269b86c59a69658460a81",
+        "r2Key": "OpenBareMap/alps-east/2.0.1/app-bundles-v1/ios/OpenBareMap-Alps-East-iOS-Bundle.zip",
+        "sha256": "97e45df924455c0d80640511755f8d9211462fd9f29e71f57fc557f58fb406c3",
+        "url": "https://downloads.appsbyonzy.dev/OpenBareMap/alps-east/2.0.1/app-bundles-v1/ios/OpenBareMap-Alps-East-iOS-Bundle.zip"
       }
     },
     "alps-tyrol-bavaria": {
       "android": {
-        "bytes": 1278048181,
+        "bytes": 1279458786,
         "datasets": {
           "basemap": {
             "path": "maps/basemap.mbtiles",
-            "sha256": "0f44f488b355509a8afdd913948c953ef22f61bc84077fa6a15fb219d1cd6787"
+            "sha256": "cea0a77fa29ab44bd88aa59b973922e3bb46dfd8a9266f78a7608f7a3f38d331"
           },
           "coast": {
             "derivedFrom": "21384cf932491f1dbff27b2f9d5307606a6a275bb8cfae6f4c4380621334075a",
@@ -206,20 +206,20 @@
             "sha256": "21384cf932491f1dbff27b2f9d5307606a6a275bb8cfae6f4c4380621334075a"
           }
         },
-        "instructionsSHA256": "ca2fdd089c32506f8e4c1a573fca36fe4b039f21a33636896817aae19c9ee1f2",
-        "instructionsURL": "https://downloads.appsbyonzy.dev/OpenBareMap/alps-tyrol-bavaria/2.0.0/app-bundles-v1/android/instructions.txt",
-        "localPath": "releases/alps-tyrol-bavaria/2.0.0/app-bundles-v1/android/OpenBareMap-Alps-Tyrol-Bavaria-Android-Bundle.zip",
-        "mapManifestSHA256": "ab4f04d4741f39ee5844c51e3af58370e79deafef1c0be9a73919362556cf635",
-        "r2Key": "OpenBareMap/alps-tyrol-bavaria/2.0.0/app-bundles-v1/android/OpenBareMap-Alps-Tyrol-Bavaria-Android-Bundle.zip",
-        "sha256": "45887081f95c4690685c47767c0dcba27aac43868f534f42180787f118fd6bb2",
-        "url": "https://downloads.appsbyonzy.dev/OpenBareMap/alps-tyrol-bavaria/2.0.0/app-bundles-v1/android/OpenBareMap-Alps-Tyrol-Bavaria-Android-Bundle.zip"
+        "instructionsSHA256": "683cb098235420ca69741724905374786c99111d839a00dfba6841cd31699fff",
+        "instructionsURL": "https://downloads.appsbyonzy.dev/OpenBareMap/alps-tyrol-bavaria/2.0.1/app-bundles-v1/android/instructions.txt",
+        "localPath": "releases/alps-tyrol-bavaria/2.0.1/app-bundles-v1/android/OpenBareMap-Alps-Tyrol-Bavaria-Android-Bundle.zip",
+        "mapManifestSHA256": "39a8ba78a38ddaf54aca2a9349eccb5443be8962beb21839b0b19be057f1a762",
+        "r2Key": "OpenBareMap/alps-tyrol-bavaria/2.0.1/app-bundles-v1/android/OpenBareMap-Alps-Tyrol-Bavaria-Android-Bundle.zip",
+        "sha256": "bf3a8d29f6228fb077e45708a3361733920a4ea0517ac1063684a30e77760979",
+        "url": "https://downloads.appsbyonzy.dev/OpenBareMap/alps-tyrol-bavaria/2.0.1/app-bundles-v1/android/OpenBareMap-Alps-Tyrol-Bavaria-Android-Bundle.zip"
       },
       "ios": {
-        "bytes": 1278048608,
+        "bytes": 1279459213,
         "datasets": {
           "basemap": {
             "path": "maps/basemap.mbtiles",
-            "sha256": "0f44f488b355509a8afdd913948c953ef22f61bc84077fa6a15fb219d1cd6787"
+            "sha256": "cea0a77fa29ab44bd88aa59b973922e3bb46dfd8a9266f78a7608f7a3f38d331"
           },
           "coast": {
             "derived_from": "21384cf932491f1dbff27b2f9d5307606a6a275bb8cfae6f4c4380621334075a",
@@ -241,22 +241,22 @@
             "sha256": "21384cf932491f1dbff27b2f9d5307606a6a275bb8cfae6f4c4380621334075a"
           }
         },
-        "instructionsSHA256": "99032b739cabfbc03b0a1b161f49f54a4e50cdac60f61e3382d0c99cef7571fc",
-        "instructionsURL": "https://downloads.appsbyonzy.dev/OpenBareMap/alps-tyrol-bavaria/2.0.0/app-bundles-v1/ios/instructions.txt",
-        "localPath": "releases/alps-tyrol-bavaria/2.0.0/app-bundles-v1/ios/OpenBareMap-Alps-Tyrol-Bavaria-iOS-Bundle.zip",
-        "mapManifestSHA256": "221111cfd12c61b5ab98d0346122de95264c99c9a6b58500b2d8e3e22f61629f",
-        "r2Key": "OpenBareMap/alps-tyrol-bavaria/2.0.0/app-bundles-v1/ios/OpenBareMap-Alps-Tyrol-Bavaria-iOS-Bundle.zip",
-        "sha256": "e8fb2432e06804017b188981c533615b5539b46485906cae92a35b76e6ede08d",
-        "url": "https://downloads.appsbyonzy.dev/OpenBareMap/alps-tyrol-bavaria/2.0.0/app-bundles-v1/ios/OpenBareMap-Alps-Tyrol-Bavaria-iOS-Bundle.zip"
+        "instructionsSHA256": "8e889aef8185338fec83a1b3264501af1dceda93bdb75e4400c8949991a420ac",
+        "instructionsURL": "https://downloads.appsbyonzy.dev/OpenBareMap/alps-tyrol-bavaria/2.0.1/app-bundles-v1/ios/instructions.txt",
+        "localPath": "releases/alps-tyrol-bavaria/2.0.1/app-bundles-v1/ios/OpenBareMap-Alps-Tyrol-Bavaria-iOS-Bundle.zip",
+        "mapManifestSHA256": "670d5662fd0be89d2b45e9003c34013e2c6a35cd6f55164651ab259baf8f7a4c",
+        "r2Key": "OpenBareMap/alps-tyrol-bavaria/2.0.1/app-bundles-v1/ios/OpenBareMap-Alps-Tyrol-Bavaria-iOS-Bundle.zip",
+        "sha256": "816b4ea2ab8ca5a989d481b8821328b8e21f3a9fb992e27fcd31a20dedc9923a",
+        "url": "https://downloads.appsbyonzy.dev/OpenBareMap/alps-tyrol-bavaria/2.0.1/app-bundles-v1/ios/OpenBareMap-Alps-Tyrol-Bavaria-iOS-Bundle.zip"
       }
     },
     "alps-west": {
       "android": {
-        "bytes": 1652409114,
+        "bytes": 1653979525,
         "datasets": {
           "basemap": {
             "path": "maps/basemap.mbtiles",
-            "sha256": "32c03371e280df0203e4ef79cced41a8402435b66502f86c81b01f2426975729"
+            "sha256": "33b4a39b9befd5727e3aa3d25f66eec79079f55ebc34cd67e4c20c9fbdf25f84"
           },
           "coast": {
             "derivedFrom": "ecc5187246330b516e2de371d2b39a4b6ee9d434d5c4fbdaa48a838cfd840a4d",
@@ -276,20 +276,20 @@
             "sha256": "ecc5187246330b516e2de371d2b39a4b6ee9d434d5c4fbdaa48a838cfd840a4d"
           }
         },
-        "instructionsSHA256": "43beb85eff1cef31cd5d967453be17ac46089ea9337f727a1a9dbdf8e2984e8e",
-        "instructionsURL": "https://downloads.appsbyonzy.dev/OpenBareMap/alps-west/2.0.0/app-bundles-v1/android/instructions.txt",
-        "localPath": "releases/alps-west/2.0.0/app-bundles-v1/android/OpenBareMap-Alps-West-Android-Bundle.zip",
-        "mapManifestSHA256": "095fafbffe10b9d7dc220062367aff03462ccbaa81ac1ee60f8df3f280acd342",
-        "r2Key": "OpenBareMap/alps-west/2.0.0/app-bundles-v1/android/OpenBareMap-Alps-West-Android-Bundle.zip",
-        "sha256": "1c88236093b3a896350ed17ab39e17457b669a426cf70d42fc941311982acb8d",
-        "url": "https://downloads.appsbyonzy.dev/OpenBareMap/alps-west/2.0.0/app-bundles-v1/android/OpenBareMap-Alps-West-Android-Bundle.zip"
+        "instructionsSHA256": "e13f1178c3e6a643d7c9a2624d37f17b842092a02314c061488d44fc59ff4a97",
+        "instructionsURL": "https://downloads.appsbyonzy.dev/OpenBareMap/alps-west/2.0.1/app-bundles-v1/android/instructions.txt",
+        "localPath": "releases/alps-west/2.0.1/app-bundles-v1/android/OpenBareMap-Alps-West-Android-Bundle.zip",
+        "mapManifestSHA256": "689b11182668e37b9da9c162faf32bef5a2500eb4150da8a6f650ddbb820c16c",
+        "r2Key": "OpenBareMap/alps-west/2.0.1/app-bundles-v1/android/OpenBareMap-Alps-West-Android-Bundle.zip",
+        "sha256": "b52677dd6a69abfbbcd1481bfa0a35d22899563714581a7aa63a5a460b719f97",
+        "url": "https://downloads.appsbyonzy.dev/OpenBareMap/alps-west/2.0.1/app-bundles-v1/android/OpenBareMap-Alps-West-Android-Bundle.zip"
       },
       "ios": {
-        "bytes": 1652409520,
+        "bytes": 1653979931,
         "datasets": {
           "basemap": {
             "path": "maps/basemap.mbtiles",
-            "sha256": "32c03371e280df0203e4ef79cced41a8402435b66502f86c81b01f2426975729"
+            "sha256": "33b4a39b9befd5727e3aa3d25f66eec79079f55ebc34cd67e4c20c9fbdf25f84"
           },
           "coast": {
             "derived_from": "ecc5187246330b516e2de371d2b39a4b6ee9d434d5c4fbdaa48a838cfd840a4d",
@@ -311,13 +311,13 @@
             "sha256": "ecc5187246330b516e2de371d2b39a4b6ee9d434d5c4fbdaa48a838cfd840a4d"
           }
         },
-        "instructionsSHA256": "200cc2c1cb13a37e37919b4da3922d8ea18bd09115e59c29d6912c5a2eab8d42",
-        "instructionsURL": "https://downloads.appsbyonzy.dev/OpenBareMap/alps-west/2.0.0/app-bundles-v1/ios/instructions.txt",
-        "localPath": "releases/alps-west/2.0.0/app-bundles-v1/ios/OpenBareMap-Alps-West-iOS-Bundle.zip",
-        "mapManifestSHA256": "addfa92948a0a928e660a992f0e158745e3bf507ccd03e6207c1d1abc93199d9",
-        "r2Key": "OpenBareMap/alps-west/2.0.0/app-bundles-v1/ios/OpenBareMap-Alps-West-iOS-Bundle.zip",
-        "sha256": "c720efedd9cc965505baacde86d7632a58bfc6b9cf013de84e724e20313d01a4",
-        "url": "https://downloads.appsbyonzy.dev/OpenBareMap/alps-west/2.0.0/app-bundles-v1/ios/OpenBareMap-Alps-West-iOS-Bundle.zip"
+        "instructionsSHA256": "01c2b5b9b7827ee69c99a3f33f97ee4f866ef311a51f1f8bea05e9995aaae06b",
+        "instructionsURL": "https://downloads.appsbyonzy.dev/OpenBareMap/alps-west/2.0.1/app-bundles-v1/ios/instructions.txt",
+        "localPath": "releases/alps-west/2.0.1/app-bundles-v1/ios/OpenBareMap-Alps-West-iOS-Bundle.zip",
+        "mapManifestSHA256": "41f794d78e4f401157ef1650861cdcde51e7cb4426d83bee3efbe50a0c49001a",
+        "r2Key": "OpenBareMap/alps-west/2.0.1/app-bundles-v1/ios/OpenBareMap-Alps-West-iOS-Bundle.zip",
+        "sha256": "7bde33e445fa983476b571b4fc2c3ba18b2bb30e2b3a60e6bde19c89b3afc728",
+        "url": "https://downloads.appsbyonzy.dev/OpenBareMap/alps-west/2.0.1/app-bundles-v1/ios/OpenBareMap-Alps-West-iOS-Bundle.zip"
       }
     },
     "balearic-islands": {
@@ -882,11 +882,11 @@
     },
     "dolomites": {
       "android": {
-        "bytes": 855063423,
+        "bytes": 855896658,
         "datasets": {
           "basemap": {
             "path": "maps/basemap.mbtiles",
-            "sha256": "fdbf05ef3cf7a9128d317fee351b3bb4fd5bbdb2d7673d36fd5cf97b68e1174c"
+            "sha256": "dd3d881f4fa0d2cf9a962a00034dd60bd5007ebce778ed634b40cdbf7fd1bd68"
           },
           "coast": {
             "derivedFrom": "68a552d522566b2489f8cb692b6835dbf8b0d8696be4858387d0fc55d31fed4b",
@@ -906,20 +906,20 @@
             "sha256": "68a552d522566b2489f8cb692b6835dbf8b0d8696be4858387d0fc55d31fed4b"
           }
         },
-        "instructionsSHA256": "1841138f8ee1649c73905ec54b1d403f5365ce2aeef8f3c10c1c5e0642f44699",
-        "instructionsURL": "https://downloads.appsbyonzy.dev/OpenBareMap/dolomites/2.0.0/app-bundles-v1/android/instructions.txt",
-        "localPath": "releases/dolomites/2.0.0/app-bundles-v1/android/OpenBareMap-Dolomites-Android-Bundle.zip",
-        "mapManifestSHA256": "f3247931f45a1f8c0271c82db1bdd2f20d9004074a5029ba9e20eaa743ad6995",
-        "r2Key": "OpenBareMap/dolomites/2.0.0/app-bundles-v1/android/OpenBareMap-Dolomites-Android-Bundle.zip",
-        "sha256": "d1945d53ad3bad251132d3d6d6d660c1c28e6e965b6eab3804652e66db506b67",
-        "url": "https://downloads.appsbyonzy.dev/OpenBareMap/dolomites/2.0.0/app-bundles-v1/android/OpenBareMap-Dolomites-Android-Bundle.zip"
+        "instructionsSHA256": "6e9fd11022b4bab239439251148cb928a469e13852367d58a158e0e09f22bbba",
+        "instructionsURL": "https://downloads.appsbyonzy.dev/OpenBareMap/dolomites/2.0.1/app-bundles-v1/android/instructions.txt",
+        "localPath": "releases/dolomites/2.0.1/app-bundles-v1/android/OpenBareMap-Dolomites-Android-Bundle.zip",
+        "mapManifestSHA256": "2f1e29a4687d4ddba91c18daef1bb165fac43ed1cb27666cb612c229ed7c42fc",
+        "r2Key": "OpenBareMap/dolomites/2.0.1/app-bundles-v1/android/OpenBareMap-Dolomites-Android-Bundle.zip",
+        "sha256": "1ccaf09a1aeb3bda85d5a635a50a44b96170962ca0016b9f8d8cf306a2191ca3",
+        "url": "https://downloads.appsbyonzy.dev/OpenBareMap/dolomites/2.0.1/app-bundles-v1/android/OpenBareMap-Dolomites-Android-Bundle.zip"
       },
       "ios": {
-        "bytes": 855062884,
+        "bytes": 855897111,
         "datasets": {
           "basemap": {
             "path": "maps/basemap.mbtiles",
-            "sha256": "fdbf05ef3cf7a9128d317fee351b3bb4fd5bbdb2d7673d36fd5cf97b68e1174c"
+            "sha256": "dd3d881f4fa0d2cf9a962a00034dd60bd5007ebce778ed634b40cdbf7fd1bd68"
           },
           "coast": {
             "derived_from": "68a552d522566b2489f8cb692b6835dbf8b0d8696be4858387d0fc55d31fed4b",
@@ -941,13 +941,13 @@
             "sha256": "68a552d522566b2489f8cb692b6835dbf8b0d8696be4858387d0fc55d31fed4b"
           }
         },
-        "instructionsSHA256": "967dd599ac78b036e5484df8111453e5b7c27572be2b071ff4fc59bce31a844b",
-        "instructionsURL": "https://downloads.appsbyonzy.dev/OpenBareMap/dolomites/2.0.0/app-bundles-v1/ios/instructions.txt",
-        "localPath": "releases/dolomites/2.0.0/app-bundles-v1/ios/OpenBareMap-Dolomites-iOS-Bundle.zip",
-        "mapManifestSHA256": "35de5a331260ecf7a6f08622a17e7b5b7e2e3559a4834deadb6720d5ebd169bf",
-        "r2Key": "OpenBareMap/dolomites/2.0.0/app-bundles-v1/ios/OpenBareMap-Dolomites-iOS-Bundle.zip",
-        "sha256": "343ffaf2fd9d3ef98a540abd8f2014621d0bb04e32af3d1c84b64cabd704a662",
-        "url": "https://downloads.appsbyonzy.dev/OpenBareMap/dolomites/2.0.0/app-bundles-v1/ios/OpenBareMap-Dolomites-iOS-Bundle.zip"
+        "instructionsSHA256": "b5c167e6981a720fd4f18def9fbac25d7239d5647731bc509d73618cdd7190d1",
+        "instructionsURL": "https://downloads.appsbyonzy.dev/OpenBareMap/dolomites/2.0.1/app-bundles-v1/ios/instructions.txt",
+        "localPath": "releases/dolomites/2.0.1/app-bundles-v1/ios/OpenBareMap-Dolomites-iOS-Bundle.zip",
+        "mapManifestSHA256": "3a3a33c91e2fe687bfc6e9c4716be0b2595801b91999ace7cbfe30ba14d78d6a",
+        "r2Key": "OpenBareMap/dolomites/2.0.1/app-bundles-v1/ios/OpenBareMap-Dolomites-iOS-Bundle.zip",
+        "sha256": "f144e5522d52d2f60091950ffa7093fa8e778c9e428dfec4cfd495e1f4c54fcf",
+        "url": "https://downloads.appsbyonzy.dev/OpenBareMap/dolomites/2.0.1/app-bundles-v1/ios/OpenBareMap-Dolomites-iOS-Bundle.zip"
       }
     },
     "england-wales": {
@@ -1372,11 +1372,11 @@
     },
     "norway-central": {
       "android": {
-        "bytes": 1987872026,
+        "bytes": 1991068699,
         "datasets": {
           "basemap": {
             "path": "maps/basemap.mbtiles",
-            "sha256": "296a88fbf030a86bebc326086d447af0c97f9cced2daea13df616822f0ba40f2"
+            "sha256": "42d14121de08b8bdd4b97a639bf6aa3d6f2bb82475bef08a538ec6b275f12489"
           },
           "coast": {
             "derivedFrom": "0fa7d7486c22091de3e0401dc6d7562d9a7c16f26bfab259b5d5df029f7656c1",
@@ -1396,20 +1396,20 @@
             "sha256": "0fa7d7486c22091de3e0401dc6d7562d9a7c16f26bfab259b5d5df029f7656c1"
           }
         },
-        "instructionsSHA256": "3ed7029e09f4fdac320c25239b6352080e4a80cca06ca7cc6d820d4b23bc7d72",
-        "instructionsURL": "https://downloads.appsbyonzy.dev/OpenBareMap/norway-central/2.0.0/app-bundles-v1/android/instructions.txt",
-        "localPath": "releases/norway-central/2.0.0/app-bundles-v1/android/OpenBareMap-Norway-Central-Android-Bundle.zip",
-        "mapManifestSHA256": "a0dea9e69a3990a345920431fbf9dca1477509ffbe56547fd8056bcaf06cdecd",
-        "r2Key": "OpenBareMap/norway-central/2.0.0/app-bundles-v1/android/OpenBareMap-Norway-Central-Android-Bundle.zip",
-        "sha256": "e9cb4a0d0286346105438dc4ae9e842d84e74df86b48e3c12771262df08932d3",
-        "url": "https://downloads.appsbyonzy.dev/OpenBareMap/norway-central/2.0.0/app-bundles-v1/android/OpenBareMap-Norway-Central-Android-Bundle.zip"
+        "instructionsSHA256": "589e42136935ed04539d42480cc3d22d36e8ac346538f0cbf93f92ace48294b7",
+        "instructionsURL": "https://downloads.appsbyonzy.dev/OpenBareMap/norway-central/2.0.1/app-bundles-v1/android/instructions.txt",
+        "localPath": "releases/norway-central/2.0.1/app-bundles-v1/android/OpenBareMap-Norway-Central-Android-Bundle.zip",
+        "mapManifestSHA256": "8230739bef77a2320f0716804dd76d0096b306ee5e371c4dbfee22b7474ed2dd",
+        "r2Key": "OpenBareMap/norway-central/2.0.1/app-bundles-v1/android/OpenBareMap-Norway-Central-Android-Bundle.zip",
+        "sha256": "8b0f33098af70d62c0ed6850cb2b86200ee3be3e021975b1b610ec524aecbe84",
+        "url": "https://downloads.appsbyonzy.dev/OpenBareMap/norway-central/2.0.1/app-bundles-v1/android/OpenBareMap-Norway-Central-Android-Bundle.zip"
       },
       "ios": {
-        "bytes": 1987871773,
+        "bytes": 1991069438,
         "datasets": {
           "basemap": {
             "path": "maps/basemap.mbtiles",
-            "sha256": "296a88fbf030a86bebc326086d447af0c97f9cced2daea13df616822f0ba40f2"
+            "sha256": "42d14121de08b8bdd4b97a639bf6aa3d6f2bb82475bef08a538ec6b275f12489"
           },
           "coast": {
             "derived_from": "0fa7d7486c22091de3e0401dc6d7562d9a7c16f26bfab259b5d5df029f7656c1",
@@ -1431,22 +1431,22 @@
             "sha256": "0fa7d7486c22091de3e0401dc6d7562d9a7c16f26bfab259b5d5df029f7656c1"
           }
         },
-        "instructionsSHA256": "fac2b44bff0593134343cb565489cde8fdb3529b5d05a504743d747b6b3b170b",
-        "instructionsURL": "https://downloads.appsbyonzy.dev/OpenBareMap/norway-central/2.0.0/app-bundles-v1/ios/instructions.txt",
-        "localPath": "releases/norway-central/2.0.0/app-bundles-v1/ios/OpenBareMap-Norway-Central-iOS-Bundle.zip",
-        "mapManifestSHA256": "dd4f871bc4f333bd4362b021bf34308bc2faa46d4e4c2a91d8a2b612986b9928",
-        "r2Key": "OpenBareMap/norway-central/2.0.0/app-bundles-v1/ios/OpenBareMap-Norway-Central-iOS-Bundle.zip",
-        "sha256": "1f44d514ccc18ebd4ac6a6e8a46a7bb3ee13b6c18901cfd632d2803d397440a8",
-        "url": "https://downloads.appsbyonzy.dev/OpenBareMap/norway-central/2.0.0/app-bundles-v1/ios/OpenBareMap-Norway-Central-iOS-Bundle.zip"
+        "instructionsSHA256": "7463b85134adc84f12b40a5a243f714aaa9ff5a3e43da0246ef56f7a4b92f40e",
+        "instructionsURL": "https://downloads.appsbyonzy.dev/OpenBareMap/norway-central/2.0.1/app-bundles-v1/ios/instructions.txt",
+        "localPath": "releases/norway-central/2.0.1/app-bundles-v1/ios/OpenBareMap-Norway-Central-iOS-Bundle.zip",
+        "mapManifestSHA256": "deb35dcee36265d495cb6df3674b3120d3039cdb5632d788ba36e42a87ce6086",
+        "r2Key": "OpenBareMap/norway-central/2.0.1/app-bundles-v1/ios/OpenBareMap-Norway-Central-iOS-Bundle.zip",
+        "sha256": "eca5f1e69ea27e16fe7cac97b9612cf3c08507e1069f6f1a8b01ac4c7f1fcc27",
+        "url": "https://downloads.appsbyonzy.dev/OpenBareMap/norway-central/2.0.1/app-bundles-v1/ios/OpenBareMap-Norway-Central-iOS-Bundle.zip"
       }
     },
     "norway-north": {
       "android": {
-        "bytes": 2603150735,
+        "bytes": 2606736556,
         "datasets": {
           "basemap": {
             "path": "maps/basemap.mbtiles",
-            "sha256": "4b58b5354e3857a6dd6895a8a97fe3ed17c5440b0789497ba95f9db223f6e013"
+            "sha256": "5f1095b3f7fad8c8ae5b77a40bd621f9163d331ca86503d3185688677a40f472"
           },
           "coast": {
             "derivedFrom": "cce406cc6b417072024b05dd91f7cb1bebcdbe6a594e6b5c227d3bea46cc1566",
@@ -1466,20 +1466,20 @@
             "sha256": "cce406cc6b417072024b05dd91f7cb1bebcdbe6a594e6b5c227d3bea46cc1566"
           }
         },
-        "instructionsSHA256": "e92041b11a138bae745df3f90e42bebd173360bfc2d13450a9a54f8b97297bb5",
-        "instructionsURL": "https://downloads.appsbyonzy.dev/OpenBareMap/norway-north/2.0.0/app-bundles-v1/android/instructions.txt",
-        "localPath": "releases/norway-north/2.0.0/app-bundles-v1/android/OpenBareMap-Norway-North-Android-Bundle.zip",
-        "mapManifestSHA256": "6aaaa360af4bf2194d1756c9dbe39ba5b3bfc144fb8e2853925619a39362fe75",
-        "r2Key": "OpenBareMap/norway-north/2.0.0/app-bundles-v1/android/OpenBareMap-Norway-North-Android-Bundle.zip",
-        "sha256": "877fe66f5e1664c50d2b6f6f2fb7c1905abf29a7bfa26887b0aa21691d76f596",
-        "url": "https://downloads.appsbyonzy.dev/OpenBareMap/norway-north/2.0.0/app-bundles-v1/android/OpenBareMap-Norway-North-Android-Bundle.zip"
+        "instructionsSHA256": "a7515e8dcf60e01f273fec3a5b56e0325a64e7b2a678c939a46e6fdf3171c6bb",
+        "instructionsURL": "https://downloads.appsbyonzy.dev/OpenBareMap/norway-north/2.0.1/app-bundles-v1/android/instructions.txt",
+        "localPath": "releases/norway-north/2.0.1/app-bundles-v1/android/OpenBareMap-Norway-North-Android-Bundle.zip",
+        "mapManifestSHA256": "3ed5c058858e049ab696642245f683cc767838079996504cb588d490f63e5dd3",
+        "r2Key": "OpenBareMap/norway-north/2.0.1/app-bundles-v1/android/OpenBareMap-Norway-North-Android-Bundle.zip",
+        "sha256": "212dbdb6a2aa5f51fc43048de81256555deaf1210cdbce2d699b0a1d93b75379",
+        "url": "https://downloads.appsbyonzy.dev/OpenBareMap/norway-north/2.0.1/app-bundles-v1/android/OpenBareMap-Norway-North-Android-Bundle.zip"
       },
       "ios": {
-        "bytes": 2603150354,
+        "bytes": 2606737167,
         "datasets": {
           "basemap": {
             "path": "maps/basemap.mbtiles",
-            "sha256": "4b58b5354e3857a6dd6895a8a97fe3ed17c5440b0789497ba95f9db223f6e013"
+            "sha256": "5f1095b3f7fad8c8ae5b77a40bd621f9163d331ca86503d3185688677a40f472"
           },
           "coast": {
             "derived_from": "cce406cc6b417072024b05dd91f7cb1bebcdbe6a594e6b5c227d3bea46cc1566",
@@ -1501,22 +1501,22 @@
             "sha256": "cce406cc6b417072024b05dd91f7cb1bebcdbe6a594e6b5c227d3bea46cc1566"
           }
         },
-        "instructionsSHA256": "83615b9f8fa151fb4fefe287313bbcad3db3f847fdcb81c87723bf1dad03b807",
-        "instructionsURL": "https://downloads.appsbyonzy.dev/OpenBareMap/norway-north/2.0.0/app-bundles-v1/ios/instructions.txt",
-        "localPath": "releases/norway-north/2.0.0/app-bundles-v1/ios/OpenBareMap-Norway-North-iOS-Bundle.zip",
-        "mapManifestSHA256": "991c0804df8e4214a879c919435da0b3591d90f8bd9c4592354263820a5bc425",
-        "r2Key": "OpenBareMap/norway-north/2.0.0/app-bundles-v1/ios/OpenBareMap-Norway-North-iOS-Bundle.zip",
-        "sha256": "fc7c05d7d9816a101c3f18ac5c535c76c5f3d7e23b462c1698e5a82f0eb98fa5",
-        "url": "https://downloads.appsbyonzy.dev/OpenBareMap/norway-north/2.0.0/app-bundles-v1/ios/OpenBareMap-Norway-North-iOS-Bundle.zip"
+        "instructionsSHA256": "8fa9319ece3d3ec28095bec50c9e218a42c23798c71f38a94999425d3fbed170",
+        "instructionsURL": "https://downloads.appsbyonzy.dev/OpenBareMap/norway-north/2.0.1/app-bundles-v1/ios/instructions.txt",
+        "localPath": "releases/norway-north/2.0.1/app-bundles-v1/ios/OpenBareMap-Norway-North-iOS-Bundle.zip",
+        "mapManifestSHA256": "8d165ee5b636d0a1f3641fa77da795abc3a123e2a2102773460fb12c1c7246b6",
+        "r2Key": "OpenBareMap/norway-north/2.0.1/app-bundles-v1/ios/OpenBareMap-Norway-North-iOS-Bundle.zip",
+        "sha256": "962c4090abd81ed966a390a3df757611b844a8680a5e37c95efa2bcb36b8f3b8",
+        "url": "https://downloads.appsbyonzy.dev/OpenBareMap/norway-north/2.0.1/app-bundles-v1/ios/OpenBareMap-Norway-North-iOS-Bundle.zip"
       }
     },
     "norway-south": {
       "android": {
-        "bytes": 3942754272,
+        "bytes": 3948617441,
         "datasets": {
           "basemap": {
             "path": "maps/basemap.mbtiles",
-            "sha256": "9854dddb055031c780862a836b6230f00e927e3fd76106a9e7ff9c444b9bf6ec"
+            "sha256": "37091eec6623b81b1c29dd33f1a28a27be7dd7782d50fd0fb1a7ec5ea7a07cf5"
           },
           "coast": {
             "derivedFrom": "65d1e55fa72ce99033889d095699d39c3b7c78c62b990235c2d4b4720c0d20f6",
@@ -1536,20 +1536,20 @@
             "sha256": "65d1e55fa72ce99033889d095699d39c3b7c78c62b990235c2d4b4720c0d20f6"
           }
         },
-        "instructionsSHA256": "a2a1b52d57e151441a9ad5ab8d8825a0737d31881d9985bbce37e95f3c159582",
-        "instructionsURL": "https://downloads.appsbyonzy.dev/OpenBareMap/norway-south/2.0.0/app-bundles-v1/android/instructions.txt",
-        "localPath": "releases/norway-south/2.0.0/app-bundles-v1/android/OpenBareMap-Norway-South-Android-Bundle.zip",
-        "mapManifestSHA256": "e0e652ad1b79da4a33cf6316f2582965231efa3535f2a5ef430d51c8b1c88beb",
-        "r2Key": "OpenBareMap/norway-south/2.0.0/app-bundles-v1/android/OpenBareMap-Norway-South-Android-Bundle.zip",
-        "sha256": "25f5227f88969e79758f504a9c92b4b0147c7324e4a26149533185ac06242ae0",
-        "url": "https://downloads.appsbyonzy.dev/OpenBareMap/norway-south/2.0.0/app-bundles-v1/android/OpenBareMap-Norway-South-Android-Bundle.zip"
+        "instructionsSHA256": "26240286dded06692f0e5c3ae684aa5f2344aaf45950a85b0e67580a827bdf4e",
+        "instructionsURL": "https://downloads.appsbyonzy.dev/OpenBareMap/norway-south/2.0.1/app-bundles-v1/android/instructions.txt",
+        "localPath": "releases/norway-south/2.0.1/app-bundles-v1/android/OpenBareMap-Norway-South-Android-Bundle.zip",
+        "mapManifestSHA256": "db2bd7076ed8dd4a1336b779cd94b839d47e9a7d5bb31916dd344361c4ed4263",
+        "r2Key": "OpenBareMap/norway-south/2.0.1/app-bundles-v1/android/OpenBareMap-Norway-South-Android-Bundle.zip",
+        "sha256": "fc53ec6db6782cdb8e81c892f24ddf71f3699cfd96a32fad40133964eebdcee4",
+        "url": "https://downloads.appsbyonzy.dev/OpenBareMap/norway-south/2.0.1/app-bundles-v1/android/OpenBareMap-Norway-South-Android-Bundle.zip"
       },
       "ios": {
-        "bytes": 3942753891,
+        "bytes": 3948618052,
         "datasets": {
           "basemap": {
             "path": "maps/basemap.mbtiles",
-            "sha256": "9854dddb055031c780862a836b6230f00e927e3fd76106a9e7ff9c444b9bf6ec"
+            "sha256": "37091eec6623b81b1c29dd33f1a28a27be7dd7782d50fd0fb1a7ec5ea7a07cf5"
           },
           "coast": {
             "derived_from": "65d1e55fa72ce99033889d095699d39c3b7c78c62b990235c2d4b4720c0d20f6",
@@ -1571,13 +1571,13 @@
             "sha256": "65d1e55fa72ce99033889d095699d39c3b7c78c62b990235c2d4b4720c0d20f6"
           }
         },
-        "instructionsSHA256": "f74537bd2c8960e74bbafa842f33cad387eb04885d5a10fc11d480f39d5b71a1",
-        "instructionsURL": "https://downloads.appsbyonzy.dev/OpenBareMap/norway-south/2.0.0/app-bundles-v1/ios/instructions.txt",
-        "localPath": "releases/norway-south/2.0.0/app-bundles-v1/ios/OpenBareMap-Norway-South-iOS-Bundle.zip",
-        "mapManifestSHA256": "852485f5f9cf8a6e19e610221161945636f23710ae2a21b12c9c5c67573722eb",
-        "r2Key": "OpenBareMap/norway-south/2.0.0/app-bundles-v1/ios/OpenBareMap-Norway-South-iOS-Bundle.zip",
-        "sha256": "696abbaa55ee6a14e341a99305205d828b91d9ea9525bb9f22169caa2cb1a1fc",
-        "url": "https://downloads.appsbyonzy.dev/OpenBareMap/norway-south/2.0.0/app-bundles-v1/ios/OpenBareMap-Norway-South-iOS-Bundle.zip"
+        "instructionsSHA256": "051b91de5ceefa80352cc1cc7b4e486c39da5c6d8e3b50eee70965d49c66225d",
+        "instructionsURL": "https://downloads.appsbyonzy.dev/OpenBareMap/norway-south/2.0.1/app-bundles-v1/ios/instructions.txt",
+        "localPath": "releases/norway-south/2.0.1/app-bundles-v1/ios/OpenBareMap-Norway-South-iOS-Bundle.zip",
+        "mapManifestSHA256": "fa4d0afaf070812b082242449d7c06633a627a151b4d4a2ccccfef395b25dee2",
+        "r2Key": "OpenBareMap/norway-south/2.0.1/app-bundles-v1/ios/OpenBareMap-Norway-South-iOS-Bundle.zip",
+        "sha256": "7b9dd80505160fef4c72f3b1d5f79ad5d45a775a77bb2e8bec718fbcb5264e40",
+        "url": "https://downloads.appsbyonzy.dev/OpenBareMap/norway-south/2.0.1/app-bundles-v1/ios/OpenBareMap-Norway-South-iOS-Bundle.zip"
       }
     },
     "picos-de-europa": {
@@ -1652,11 +1652,11 @@
     },
     "pyrenees": {
       "android": {
-        "bytes": 1736453122,
+        "bytes": 1736680516,
         "datasets": {
           "basemap": {
             "path": "maps/basemap.mbtiles",
-            "sha256": "d30cf7a1046b0260731d088b984f650ae2d217a1b46cbce0c69bd0297399dfb6"
+            "sha256": "f17a44abb01778d8ac9d684cea201e81c1a3fc49bcfb6a51b8d489e350fec980"
           },
           "coast": {
             "derivedFrom": "4fc742fb3061ff00428c82037d904804397581617e1778eaebfb3b96623691bd",
@@ -1676,20 +1676,20 @@
             "sha256": "4fc742fb3061ff00428c82037d904804397581617e1778eaebfb3b96623691bd"
           }
         },
-        "instructionsSHA256": "329a5f9cc02ff233e3c3551a4c976db29720f3fdc1ce8c46d89a8e3a242d2305",
-        "instructionsURL": "https://downloads.appsbyonzy.dev/OpenBareMap/pyrenees/2.0.0/app-bundles-v1/android/instructions.txt",
-        "localPath": "releases/pyrenees/2.0.0/app-bundles-v1/android/OpenBareMap-Pyrenees-Android-Bundle.zip",
-        "mapManifestSHA256": "7601efd3d533c1a550c282a5283cba7a646a71a3b95c0d4c71d2dc7cceacfe19",
-        "r2Key": "OpenBareMap/pyrenees/2.0.0/app-bundles-v1/android/OpenBareMap-Pyrenees-Android-Bundle.zip",
-        "sha256": "bfb286e39bb543f3daa9dc2dc0d2325aed2667a91187cb6e035ea4f2771e1c62",
-        "url": "https://downloads.appsbyonzy.dev/OpenBareMap/pyrenees/2.0.0/app-bundles-v1/android/OpenBareMap-Pyrenees-Android-Bundle.zip"
+        "instructionsSHA256": "e164a0ea5c66364680c03d349cc490822d4ce1a458eabfd4a3b53c4b500eca8c",
+        "instructionsURL": "https://downloads.appsbyonzy.dev/OpenBareMap/pyrenees/2.0.1/app-bundles-v1/android/instructions.txt",
+        "localPath": "releases/pyrenees/2.0.1/app-bundles-v1/android/OpenBareMap-Pyrenees-Android-Bundle.zip",
+        "mapManifestSHA256": "03edc5452bc9b5d9e0879a42047522d433a6e27b27b40acaa05a0393be59389c",
+        "r2Key": "OpenBareMap/pyrenees/2.0.1/app-bundles-v1/android/OpenBareMap-Pyrenees-Android-Bundle.zip",
+        "sha256": "6dabc9a0029c7e4f50ace5ab681f036158619798578b39742b59a931a23b704a",
+        "url": "https://downloads.appsbyonzy.dev/OpenBareMap/pyrenees/2.0.1/app-bundles-v1/android/OpenBareMap-Pyrenees-Android-Bundle.zip"
       },
       "ios": {
-        "bytes": 1736452579,
+        "bytes": 1736680965,
         "datasets": {
           "basemap": {
             "path": "maps/basemap.mbtiles",
-            "sha256": "d30cf7a1046b0260731d088b984f650ae2d217a1b46cbce0c69bd0297399dfb6"
+            "sha256": "f17a44abb01778d8ac9d684cea201e81c1a3fc49bcfb6a51b8d489e350fec980"
           },
           "coast": {
             "derived_from": "4fc742fb3061ff00428c82037d904804397581617e1778eaebfb3b96623691bd",
@@ -1711,13 +1711,13 @@
             "sha256": "4fc742fb3061ff00428c82037d904804397581617e1778eaebfb3b96623691bd"
           }
         },
-        "instructionsSHA256": "dfaad1be4e68e170f66bed65604da870626d0ce527228fd27d650092563f7ddf",
-        "instructionsURL": "https://downloads.appsbyonzy.dev/OpenBareMap/pyrenees/2.0.0/app-bundles-v1/ios/instructions.txt",
-        "localPath": "releases/pyrenees/2.0.0/app-bundles-v1/ios/OpenBareMap-Pyrenees-iOS-Bundle.zip",
-        "mapManifestSHA256": "9b4eb9ed8b908ed6ec39cf7f4101077b5cb861104a7d84b51b4aa173bf47c4f8",
-        "r2Key": "OpenBareMap/pyrenees/2.0.0/app-bundles-v1/ios/OpenBareMap-Pyrenees-iOS-Bundle.zip",
-        "sha256": "58d8d6a12604a133b361479405b113eeaac26e9e8bcdade848c70ce9537ad999",
-        "url": "https://downloads.appsbyonzy.dev/OpenBareMap/pyrenees/2.0.0/app-bundles-v1/ios/OpenBareMap-Pyrenees-iOS-Bundle.zip"
+        "instructionsSHA256": "90839e94ba23b58bb48d117b7b440b096112e19fbcedc6e020684d1319bd96d8",
+        "instructionsURL": "https://downloads.appsbyonzy.dev/OpenBareMap/pyrenees/2.0.1/app-bundles-v1/ios/instructions.txt",
+        "localPath": "releases/pyrenees/2.0.1/app-bundles-v1/ios/OpenBareMap-Pyrenees-iOS-Bundle.zip",
+        "mapManifestSHA256": "944a387223277cd253afdb80defb8fd1c0eab9efcf360d36810d62d41cee6527",
+        "r2Key": "OpenBareMap/pyrenees/2.0.1/app-bundles-v1/ios/OpenBareMap-Pyrenees-iOS-Bundle.zip",
+        "sha256": "96e349f01e706df0dc416a49b452dfb3b050baf19df8b4b536e800f32b7d1b43",
+        "url": "https://downloads.appsbyonzy.dev/OpenBareMap/pyrenees/2.0.1/app-bundles-v1/ios/OpenBareMap-Pyrenees-iOS-Bundle.zip"
       }
     },
     "sardinia": {
@@ -2072,11 +2072,11 @@
     },
     "us-glacier": {
       "android": {
-        "bytes": 162176026,
+        "bytes": 162673056,
         "datasets": {
           "basemap": {
             "path": "maps/basemap.mbtiles",
-            "sha256": "feb35ce17f884dc0d3770feb98b571724f59d0aebac9375808a331417708d495"
+            "sha256": "7ac40f57e453282c923b26c2596ee761ae6e29c3b3b03dc213756dfca821c538"
           },
           "coast": {
             "derivedFrom": "493ecacc6f8ff2e3a2932aadcc1932221bdfce9cee9655a18e44413e363688b2",
@@ -2096,20 +2096,20 @@
             "sha256": "493ecacc6f8ff2e3a2932aadcc1932221bdfce9cee9655a18e44413e363688b2"
           }
         },
-        "instructionsSHA256": "f75d2c5685b1703ad6b725fd3d9bd084e1a58e78a8098656bdbc6f8dd17f2f41",
-        "instructionsURL": "https://downloads.appsbyonzy.dev/OpenBareMap/us-glacier/2.0.0/app-bundles-v1/android/instructions.txt",
-        "localPath": "releases/us-glacier/2.0.0/app-bundles-v1/android/OpenBareMap-Glacier-Android-Bundle.zip",
-        "mapManifestSHA256": "5ad7cb8988b77b64e86dfbe0a3118e8dd952572a43a15db93324e8aaaf01597a",
-        "r2Key": "OpenBareMap/us-glacier/2.0.0/app-bundles-v1/android/OpenBareMap-Glacier-Android-Bundle.zip",
-        "sha256": "834d2728ca8acbfb4bf10549921b59897383f67a5a05a3595f7c7bcd17c57d6f",
-        "url": "https://downloads.appsbyonzy.dev/OpenBareMap/us-glacier/2.0.0/app-bundles-v1/android/OpenBareMap-Glacier-Android-Bundle.zip"
+        "instructionsSHA256": "d2053ecf6811e5cc16c03a5dfdb7512e36729ca5f930d87911264a39a6542319",
+        "instructionsURL": "https://downloads.appsbyonzy.dev/OpenBareMap/us-glacier/2.0.1/app-bundles-v1/android/instructions.txt",
+        "localPath": "releases/us-glacier/2.0.1/app-bundles-v1/android/OpenBareMap-Glacier-Android-Bundle.zip",
+        "mapManifestSHA256": "799eddf4238172e6d08dcb8a1482ededd608969ccbe7c95332cb0139c40eeb88",
+        "r2Key": "OpenBareMap/us-glacier/2.0.1/app-bundles-v1/android/OpenBareMap-Glacier-Android-Bundle.zip",
+        "sha256": "c4c9e5d739794c6657aaa4fc2a2a3acc0229ac4c2ee78e9f98386169f521df2c",
+        "url": "https://downloads.appsbyonzy.dev/OpenBareMap/us-glacier/2.0.1/app-bundles-v1/android/OpenBareMap-Glacier-Android-Bundle.zip"
       },
       "ios": {
-        "bytes": 162177733,
+        "bytes": 162674763,
         "datasets": {
           "basemap": {
             "path": "maps/basemap.mbtiles",
-            "sha256": "feb35ce17f884dc0d3770feb98b571724f59d0aebac9375808a331417708d495"
+            "sha256": "7ac40f57e453282c923b26c2596ee761ae6e29c3b3b03dc213756dfca821c538"
           },
           "coast": {
             "derived_from": "493ecacc6f8ff2e3a2932aadcc1932221bdfce9cee9655a18e44413e363688b2",
@@ -2131,13 +2131,13 @@
             "sha256": "493ecacc6f8ff2e3a2932aadcc1932221bdfce9cee9655a18e44413e363688b2"
           }
         },
-        "instructionsSHA256": "a8c69068ee02d85efc7c9621340bf128a7405db2bcfe4ecacdb0dcebf4825781",
-        "instructionsURL": "https://downloads.appsbyonzy.dev/OpenBareMap/us-glacier/2.0.0/app-bundles-v1/ios/instructions.txt",
-        "localPath": "releases/us-glacier/2.0.0/app-bundles-v1/ios/OpenBareMap-Glacier-iOS-Bundle.zip",
-        "mapManifestSHA256": "e1b507e348e8f1ca1298a4609f918fc08793c027c7e2eb0fcfbb4822d651780f",
-        "r2Key": "OpenBareMap/us-glacier/2.0.0/app-bundles-v1/ios/OpenBareMap-Glacier-iOS-Bundle.zip",
-        "sha256": "32b38d627a322f5937b9459a13522aaafeb3159476c09e50033c05031c1b0e1a",
-        "url": "https://downloads.appsbyonzy.dev/OpenBareMap/us-glacier/2.0.0/app-bundles-v1/ios/OpenBareMap-Glacier-iOS-Bundle.zip"
+        "instructionsSHA256": "072399a678a9f62701b388032535f5ba00924eca5ce1912cb59057270f9c5de7",
+        "instructionsURL": "https://downloads.appsbyonzy.dev/OpenBareMap/us-glacier/2.0.1/app-bundles-v1/ios/instructions.txt",
+        "localPath": "releases/us-glacier/2.0.1/app-bundles-v1/ios/OpenBareMap-Glacier-iOS-Bundle.zip",
+        "mapManifestSHA256": "3fd937833572ed0042cf9545b0f1777a5ecf8cd220863da7fb9e77561b84a0b1",
+        "r2Key": "OpenBareMap/us-glacier/2.0.1/app-bundles-v1/ios/OpenBareMap-Glacier-iOS-Bundle.zip",
+        "sha256": "654ca56e46a60f4b59ce1e6b28aeafe9eb702183a65d2a568e3a3d4555911ef8",
+        "url": "https://downloads.appsbyonzy.dev/OpenBareMap/us-glacier/2.0.1/app-bundles-v1/ios/OpenBareMap-Glacier-iOS-Bundle.zip"
       }
     },
     "us-grand-canyon": {
@@ -2282,11 +2282,11 @@
     },
     "us-olympic": {
       "android": {
-        "bytes": 208498480,
+        "bytes": 208622786,
         "datasets": {
           "basemap": {
             "path": "maps/basemap.mbtiles",
-            "sha256": "92ab78c832f5b9425fd4c2b7c7914c1a551de35152762cb468ce896f07754c5d"
+            "sha256": "237f05a6a06a86d1e65d5c9b4f82b879396b8cda4d3c57c0dfceac2d5331ce8b"
           },
           "coast": {
             "derivedFrom": "85110ca132377ed9eca0400720291c41d63cd475db235f31dd15bfd050e3ca36",
@@ -2306,20 +2306,20 @@
             "sha256": "85110ca132377ed9eca0400720291c41d63cd475db235f31dd15bfd050e3ca36"
           }
         },
-        "instructionsSHA256": "48a392074248390746315c437d1a36abac5ce143642b9b9c7c036ee5eca5c6f4",
-        "instructionsURL": "https://downloads.appsbyonzy.dev/OpenBareMap/us-olympic/2.0.0/app-bundles-v1/android/instructions.txt",
-        "localPath": "releases/us-olympic/2.0.0/app-bundles-v1/android/OpenBareMap-Olympic-Android-Bundle.zip",
-        "mapManifestSHA256": "6734c4c33842c2e5b9ed844ff3870062813ce0ec77e649ccc3e8e648664c266d",
-        "r2Key": "OpenBareMap/us-olympic/2.0.0/app-bundles-v1/android/OpenBareMap-Olympic-Android-Bundle.zip",
-        "sha256": "561107f62088524b66b42a0439dcb8f211026f9ef5984e432df868a621df8857",
-        "url": "https://downloads.appsbyonzy.dev/OpenBareMap/us-olympic/2.0.0/app-bundles-v1/android/OpenBareMap-Olympic-Android-Bundle.zip"
+        "instructionsSHA256": "4dccbea25d2576c76b8db3619eb9979c47d3224eacf50dc37b2ce68a136dde0f",
+        "instructionsURL": "https://downloads.appsbyonzy.dev/OpenBareMap/us-olympic/2.0.1/app-bundles-v1/android/instructions.txt",
+        "localPath": "releases/us-olympic/2.0.1/app-bundles-v1/android/OpenBareMap-Olympic-Android-Bundle.zip",
+        "mapManifestSHA256": "a9ceec9e39f33bc64cfcbfed73f4e07d3d8c281332866cb9665578714a0198c9",
+        "r2Key": "OpenBareMap/us-olympic/2.0.1/app-bundles-v1/android/OpenBareMap-Olympic-Android-Bundle.zip",
+        "sha256": "cd56267d71c68b86bb5b66ad06b34921d3ced0c6bca060b1367f3e1b958db082",
+        "url": "https://downloads.appsbyonzy.dev/OpenBareMap/us-olympic/2.0.1/app-bundles-v1/android/OpenBareMap-Olympic-Android-Bundle.zip"
       },
       "ios": {
-        "bytes": 208500190,
+        "bytes": 208624496,
         "datasets": {
           "basemap": {
             "path": "maps/basemap.mbtiles",
-            "sha256": "92ab78c832f5b9425fd4c2b7c7914c1a551de35152762cb468ce896f07754c5d"
+            "sha256": "237f05a6a06a86d1e65d5c9b4f82b879396b8cda4d3c57c0dfceac2d5331ce8b"
           },
           "coast": {
             "derived_from": "85110ca132377ed9eca0400720291c41d63cd475db235f31dd15bfd050e3ca36",
@@ -2341,22 +2341,22 @@
             "sha256": "85110ca132377ed9eca0400720291c41d63cd475db235f31dd15bfd050e3ca36"
           }
         },
-        "instructionsSHA256": "bcd937a8b2592c3e2e8f5979683e33453e0542f200ef3fccd989382c4d28b22c",
-        "instructionsURL": "https://downloads.appsbyonzy.dev/OpenBareMap/us-olympic/2.0.0/app-bundles-v1/ios/instructions.txt",
-        "localPath": "releases/us-olympic/2.0.0/app-bundles-v1/ios/OpenBareMap-Olympic-iOS-Bundle.zip",
-        "mapManifestSHA256": "1ba518ef2dbd1f0d96c3aa266d97cd8ca49f689e1ddff5c5f3162fbace6575d9",
-        "r2Key": "OpenBareMap/us-olympic/2.0.0/app-bundles-v1/ios/OpenBareMap-Olympic-iOS-Bundle.zip",
-        "sha256": "d0f52c31f47498c64d8cc940faf19edd6397fd890283ba39794336b3e677517c",
-        "url": "https://downloads.appsbyonzy.dev/OpenBareMap/us-olympic/2.0.0/app-bundles-v1/ios/OpenBareMap-Olympic-iOS-Bundle.zip"
+        "instructionsSHA256": "c81e1c571d1f34e9f7b16a1cb46d18cb139209452347f6579e114be3ee7237e8",
+        "instructionsURL": "https://downloads.appsbyonzy.dev/OpenBareMap/us-olympic/2.0.1/app-bundles-v1/ios/instructions.txt",
+        "localPath": "releases/us-olympic/2.0.1/app-bundles-v1/ios/OpenBareMap-Olympic-iOS-Bundle.zip",
+        "mapManifestSHA256": "4966114aa8b9a1e723f03b30c2fad1e022a53199652c099d5cf3c37efb165a6d",
+        "r2Key": "OpenBareMap/us-olympic/2.0.1/app-bundles-v1/ios/OpenBareMap-Olympic-iOS-Bundle.zip",
+        "sha256": "77516fa0561a9bb4ee1572bca12799833602ee876d9550f3c8458a9cdde180e6",
+        "url": "https://downloads.appsbyonzy.dev/OpenBareMap/us-olympic/2.0.1/app-bundles-v1/ios/OpenBareMap-Olympic-iOS-Bundle.zip"
       }
     },
     "us-rocky-mountain": {
       "android": {
-        "bytes": 77903484,
+        "bytes": 77999068,
         "datasets": {
           "basemap": {
             "path": "maps/basemap.mbtiles",
-            "sha256": "e6947762d77ed9a436e30464febc1dd4a60acac93ce5b8bfd3a68f9a23319044"
+            "sha256": "0019ea063155529d0b4926708b4aae947c7e2ee22814aafa1349d743b3e06fb8"
           },
           "coast": {
             "derivedFrom": "8a5e79c943aa0329f42c26a5f1c457959476a538fb941d21e03c1c1634ee5e70",
@@ -2376,20 +2376,20 @@
             "sha256": "8a5e79c943aa0329f42c26a5f1c457959476a538fb941d21e03c1c1634ee5e70"
           }
         },
-        "instructionsSHA256": "e6d1781bf9686e23657446c0137d7558e776eff47b0bc406a6ce676b1667eeff",
-        "instructionsURL": "https://downloads.appsbyonzy.dev/OpenBareMap/us-rocky-mountain/2.0.0/app-bundles-v1/android/instructions.txt",
-        "localPath": "releases/us-rocky-mountain/2.0.0/app-bundles-v1/android/OpenBareMap-Rocky-Mountain-Android-Bundle.zip",
-        "mapManifestSHA256": "0d916484cdc9dec0abdd4afb259167f7e46c2fefeabd539932a7a3b180ed207f",
-        "r2Key": "OpenBareMap/us-rocky-mountain/2.0.0/app-bundles-v1/android/OpenBareMap-Rocky-Mountain-Android-Bundle.zip",
-        "sha256": "2f674caf44deaf02c676ab02167604a21effe10904c0a7109c835810257beba7",
-        "url": "https://downloads.appsbyonzy.dev/OpenBareMap/us-rocky-mountain/2.0.0/app-bundles-v1/android/OpenBareMap-Rocky-Mountain-Android-Bundle.zip"
+        "instructionsSHA256": "ee74fe8a5eca2af0ad2aabbc864d88e5557e7784c15bd030d59d3f5334d3df7b",
+        "instructionsURL": "https://downloads.appsbyonzy.dev/OpenBareMap/us-rocky-mountain/2.0.1/app-bundles-v1/android/instructions.txt",
+        "localPath": "releases/us-rocky-mountain/2.0.1/app-bundles-v1/android/OpenBareMap-Rocky-Mountain-Android-Bundle.zip",
+        "mapManifestSHA256": "47f7bf7785da8bd24899e79e349aa2e074e2bbeca8807296107901441ede57db",
+        "r2Key": "OpenBareMap/us-rocky-mountain/2.0.1/app-bundles-v1/android/OpenBareMap-Rocky-Mountain-Android-Bundle.zip",
+        "sha256": "ef653a357bd1199606bd8005ea873d98326ca1df038062381eb6b5052cece1da",
+        "url": "https://downloads.appsbyonzy.dev/OpenBareMap/us-rocky-mountain/2.0.1/app-bundles-v1/android/OpenBareMap-Rocky-Mountain-Android-Bundle.zip"
       },
       "ios": {
-        "bytes": 77905205,
+        "bytes": 78000789,
         "datasets": {
           "basemap": {
             "path": "maps/basemap.mbtiles",
-            "sha256": "e6947762d77ed9a436e30464febc1dd4a60acac93ce5b8bfd3a68f9a23319044"
+            "sha256": "0019ea063155529d0b4926708b4aae947c7e2ee22814aafa1349d743b3e06fb8"
           },
           "coast": {
             "derived_from": "8a5e79c943aa0329f42c26a5f1c457959476a538fb941d21e03c1c1634ee5e70",
@@ -2411,22 +2411,22 @@
             "sha256": "8a5e79c943aa0329f42c26a5f1c457959476a538fb941d21e03c1c1634ee5e70"
           }
         },
-        "instructionsSHA256": "db3a5e24a5f7afbd3ceee7f9fc5a1c92fa46228113d352e5485bf192edb6a71b",
-        "instructionsURL": "https://downloads.appsbyonzy.dev/OpenBareMap/us-rocky-mountain/2.0.0/app-bundles-v1/ios/instructions.txt",
-        "localPath": "releases/us-rocky-mountain/2.0.0/app-bundles-v1/ios/OpenBareMap-Rocky-Mountain-iOS-Bundle.zip",
-        "mapManifestSHA256": "a57f4a7cbdff0723b868750b9970d5991344a51d149e5fa04eec2c86f218a314",
-        "r2Key": "OpenBareMap/us-rocky-mountain/2.0.0/app-bundles-v1/ios/OpenBareMap-Rocky-Mountain-iOS-Bundle.zip",
-        "sha256": "c7049525f48e79019a6e86c660a7dc5b52de4a192e08e813cbf07fd2434a1ed4",
-        "url": "https://downloads.appsbyonzy.dev/OpenBareMap/us-rocky-mountain/2.0.0/app-bundles-v1/ios/OpenBareMap-Rocky-Mountain-iOS-Bundle.zip"
+        "instructionsSHA256": "1e1d47d0989f7675ea5c6259b642d8d4a82d6aea2c590b0ccc1d3aa37805ccb3",
+        "instructionsURL": "https://downloads.appsbyonzy.dev/OpenBareMap/us-rocky-mountain/2.0.1/app-bundles-v1/ios/instructions.txt",
+        "localPath": "releases/us-rocky-mountain/2.0.1/app-bundles-v1/ios/OpenBareMap-Rocky-Mountain-iOS-Bundle.zip",
+        "mapManifestSHA256": "5d45c88340159294eb75b770af8c6e54adf1bd161181d68f8b4cf7ad24a9882b",
+        "r2Key": "OpenBareMap/us-rocky-mountain/2.0.1/app-bundles-v1/ios/OpenBareMap-Rocky-Mountain-iOS-Bundle.zip",
+        "sha256": "d456cdddb3ed102528f12a37604799d6871e5f776095060994304cee3f03d472",
+        "url": "https://downloads.appsbyonzy.dev/OpenBareMap/us-rocky-mountain/2.0.1/app-bundles-v1/ios/OpenBareMap-Rocky-Mountain-iOS-Bundle.zip"
       }
     },
     "us-yellowstone-grand-teton": {
       "android": {
-        "bytes": 384305204,
+        "bytes": 384372058,
         "datasets": {
           "basemap": {
             "path": "maps/basemap.mbtiles",
-            "sha256": "69bd3010e3d95be803065576e17198a43b463e29a1ec6abc281af262fcca8f30"
+            "sha256": "88e6233cb10877d972581f36503112d7caa1a14f13b6285c4ce724401676993c"
           },
           "coast": {
             "derivedFrom": "52139ac2ccedbfa356598a9b7ecda5697e7d20215813cfcc3d88d97717793c5a",
@@ -2446,20 +2446,20 @@
             "sha256": "52139ac2ccedbfa356598a9b7ecda5697e7d20215813cfcc3d88d97717793c5a"
           }
         },
-        "instructionsSHA256": "598241175265321863fc307d98895540d75ad0e258351c9e06b5e090c1322125",
-        "instructionsURL": "https://downloads.appsbyonzy.dev/OpenBareMap/us-yellowstone-grand-teton/2.0.0/app-bundles-v1/android/instructions.txt",
-        "localPath": "releases/us-yellowstone-grand-teton/2.0.0/app-bundles-v1/android/OpenBareMap-Yellowstone-Grand-Teton-Android-Bundle.zip",
-        "mapManifestSHA256": "9a4f64f26e81a61ff7a62a1571894ae3ab4190e6afe7ffb6a9c24b25a65720b1",
-        "r2Key": "OpenBareMap/us-yellowstone-grand-teton/2.0.0/app-bundles-v1/android/OpenBareMap-Yellowstone-Grand-Teton-Android-Bundle.zip",
-        "sha256": "dd4e75fe9c21aeb47f0851315226fad8c089f259074e3b837ff790519cf9f92c",
-        "url": "https://downloads.appsbyonzy.dev/OpenBareMap/us-yellowstone-grand-teton/2.0.0/app-bundles-v1/android/OpenBareMap-Yellowstone-Grand-Teton-Android-Bundle.zip"
+        "instructionsSHA256": "f8c1d3f67185a19974de452f02511cb27974c711ac420b2458099d3486398d34",
+        "instructionsURL": "https://downloads.appsbyonzy.dev/OpenBareMap/us-yellowstone-grand-teton/2.0.1/app-bundles-v1/android/instructions.txt",
+        "localPath": "releases/us-yellowstone-grand-teton/2.0.1/app-bundles-v1/android/OpenBareMap-Yellowstone-Grand-Teton-Android-Bundle.zip",
+        "mapManifestSHA256": "c9f39afd065beff9fafb13cbb7519406256554af124c9901c05f35c0e36b40d9",
+        "r2Key": "OpenBareMap/us-yellowstone-grand-teton/2.0.1/app-bundles-v1/android/OpenBareMap-Yellowstone-Grand-Teton-Android-Bundle.zip",
+        "sha256": "c242d30fa24f32c0aeab9e78c4c980e36d1396beb95302f88b4e623804f97867",
+        "url": "https://downloads.appsbyonzy.dev/OpenBareMap/us-yellowstone-grand-teton/2.0.1/app-bundles-v1/android/OpenBareMap-Yellowstone-Grand-Teton-Android-Bundle.zip"
       },
       "ios": {
-        "bytes": 384306949,
+        "bytes": 384373803,
         "datasets": {
           "basemap": {
             "path": "maps/basemap.mbtiles",
-            "sha256": "69bd3010e3d95be803065576e17198a43b463e29a1ec6abc281af262fcca8f30"
+            "sha256": "88e6233cb10877d972581f36503112d7caa1a14f13b6285c4ce724401676993c"
           },
           "coast": {
             "derived_from": "52139ac2ccedbfa356598a9b7ecda5697e7d20215813cfcc3d88d97717793c5a",
@@ -2481,22 +2481,22 @@
             "sha256": "52139ac2ccedbfa356598a9b7ecda5697e7d20215813cfcc3d88d97717793c5a"
           }
         },
-        "instructionsSHA256": "97711fc7b9a056070430fc91b0f4ad41a954152d1640b0a2c56aac76aff5ef63",
-        "instructionsURL": "https://downloads.appsbyonzy.dev/OpenBareMap/us-yellowstone-grand-teton/2.0.0/app-bundles-v1/ios/instructions.txt",
-        "localPath": "releases/us-yellowstone-grand-teton/2.0.0/app-bundles-v1/ios/OpenBareMap-Yellowstone-Grand-Teton-iOS-Bundle.zip",
-        "mapManifestSHA256": "542666c99602b87a2391141df244dd29333af8baaa8efee98c076d8d461f3dd3",
-        "r2Key": "OpenBareMap/us-yellowstone-grand-teton/2.0.0/app-bundles-v1/ios/OpenBareMap-Yellowstone-Grand-Teton-iOS-Bundle.zip",
-        "sha256": "fcd11167456526ac5109869aae676f12e040c39c92a4e93fd84363e600a5d642",
-        "url": "https://downloads.appsbyonzy.dev/OpenBareMap/us-yellowstone-grand-teton/2.0.0/app-bundles-v1/ios/OpenBareMap-Yellowstone-Grand-Teton-iOS-Bundle.zip"
+        "instructionsSHA256": "29927cad1731500d4aea7eedb2bfca8ff50626a583f198638977287791733404",
+        "instructionsURL": "https://downloads.appsbyonzy.dev/OpenBareMap/us-yellowstone-grand-teton/2.0.1/app-bundles-v1/ios/instructions.txt",
+        "localPath": "releases/us-yellowstone-grand-teton/2.0.1/app-bundles-v1/ios/OpenBareMap-Yellowstone-Grand-Teton-iOS-Bundle.zip",
+        "mapManifestSHA256": "671fe0b5751ed744052337ca2b0160a88f049b3249a1088eca79f76d31f21bed",
+        "r2Key": "OpenBareMap/us-yellowstone-grand-teton/2.0.1/app-bundles-v1/ios/OpenBareMap-Yellowstone-Grand-Teton-iOS-Bundle.zip",
+        "sha256": "d89e28365ecbc74950783abf68c5547614d4a657a5430f47d47bb5f91bfe66ad",
+        "url": "https://downloads.appsbyonzy.dev/OpenBareMap/us-yellowstone-grand-teton/2.0.1/app-bundles-v1/ios/OpenBareMap-Yellowstone-Grand-Teton-iOS-Bundle.zip"
       }
     },
     "us-yosemite": {
       "android": {
-        "bytes": 180336855,
+        "bytes": 180416107,
         "datasets": {
           "basemap": {
             "path": "maps/basemap.mbtiles",
-            "sha256": "b5f9cc664efdb155836f9b7d1737461a75d30c05b9ade9aa41123ae6fdef59e9"
+            "sha256": "b1c5ec72af6996a8c69d1bd7b2d52c5972777189ee800350de1e5faffccad4a4"
           },
           "coast": {
             "derivedFrom": "66cb6aef7dd63d28401bc8b3b4aa713aa4f3531ee50f2d9ee7d309b060674bf7",
@@ -2516,20 +2516,20 @@
             "sha256": "66cb6aef7dd63d28401bc8b3b4aa713aa4f3531ee50f2d9ee7d309b060674bf7"
           }
         },
-        "instructionsSHA256": "9efb559e8457d2e2e389c148e3704a9402805abecd3ca2e7977bf0f9cdb6fec5",
-        "instructionsURL": "https://downloads.appsbyonzy.dev/OpenBareMap/us-yosemite/2.0.0/app-bundles-v1/android/instructions.txt",
-        "localPath": "releases/us-yosemite/2.0.0/app-bundles-v1/android/OpenBareMap-Yosemite-Android-Bundle.zip",
-        "mapManifestSHA256": "15597cdbfc56d3f5a8a0c786466d948a6d5d5e128ca7492961abac8046323750",
-        "r2Key": "OpenBareMap/us-yosemite/2.0.0/app-bundles-v1/android/OpenBareMap-Yosemite-Android-Bundle.zip",
-        "sha256": "a2610aca1ff628998be06b4cbbe5a8bde0ad6cfe37c29d7c270c95815964b509",
-        "url": "https://downloads.appsbyonzy.dev/OpenBareMap/us-yosemite/2.0.0/app-bundles-v1/android/OpenBareMap-Yosemite-Android-Bundle.zip"
+        "instructionsSHA256": "3ee04e2ad9b3bff7e216b3bd086bb1cadd0b025571c5c35c6f54d7b8710d7f66",
+        "instructionsURL": "https://downloads.appsbyonzy.dev/OpenBareMap/us-yosemite/2.0.1/app-bundles-v1/android/instructions.txt",
+        "localPath": "releases/us-yosemite/2.0.1/app-bundles-v1/android/OpenBareMap-Yosemite-Android-Bundle.zip",
+        "mapManifestSHA256": "4fcc5ea2a2fa36545aee34b9ac21f2b036087d32970ab2ee6a02c25d28ff8372",
+        "r2Key": "OpenBareMap/us-yosemite/2.0.1/app-bundles-v1/android/OpenBareMap-Yosemite-Android-Bundle.zip",
+        "sha256": "6d0c2fb49dc59863032bb87b61b0bf52a5a43deff2bd9e75bc5c338d17fc67a6",
+        "url": "https://downloads.appsbyonzy.dev/OpenBareMap/us-yosemite/2.0.1/app-bundles-v1/android/OpenBareMap-Yosemite-Android-Bundle.zip"
       },
       "ios": {
-        "bytes": 180338566,
+        "bytes": 180417818,
         "datasets": {
           "basemap": {
             "path": "maps/basemap.mbtiles",
-            "sha256": "b5f9cc664efdb155836f9b7d1737461a75d30c05b9ade9aa41123ae6fdef59e9"
+            "sha256": "b1c5ec72af6996a8c69d1bd7b2d52c5972777189ee800350de1e5faffccad4a4"
           },
           "coast": {
             "derived_from": "66cb6aef7dd63d28401bc8b3b4aa713aa4f3531ee50f2d9ee7d309b060674bf7",
@@ -2551,13 +2551,13 @@
             "sha256": "66cb6aef7dd63d28401bc8b3b4aa713aa4f3531ee50f2d9ee7d309b060674bf7"
           }
         },
-        "instructionsSHA256": "6079deff66c9909c7b96bf777947c98c8017598061020196d1e0a93e7641d6c3",
-        "instructionsURL": "https://downloads.appsbyonzy.dev/OpenBareMap/us-yosemite/2.0.0/app-bundles-v1/ios/instructions.txt",
-        "localPath": "releases/us-yosemite/2.0.0/app-bundles-v1/ios/OpenBareMap-Yosemite-iOS-Bundle.zip",
-        "mapManifestSHA256": "89a1bd45e940740763c126d5fb9c0e30be93c7f6a3c34463e6c92175eb3a16b3",
-        "r2Key": "OpenBareMap/us-yosemite/2.0.0/app-bundles-v1/ios/OpenBareMap-Yosemite-iOS-Bundle.zip",
-        "sha256": "cb58e937681d181803728fddbcc018decc05b466537aa06289ccd604362b6c75",
-        "url": "https://downloads.appsbyonzy.dev/OpenBareMap/us-yosemite/2.0.0/app-bundles-v1/ios/OpenBareMap-Yosemite-iOS-Bundle.zip"
+        "instructionsSHA256": "1c69d8dfd0e4d2245c96d9ea96671f18a297db9d4083e10b1846495a2ca15805",
+        "instructionsURL": "https://downloads.appsbyonzy.dev/OpenBareMap/us-yosemite/2.0.1/app-bundles-v1/ios/instructions.txt",
+        "localPath": "releases/us-yosemite/2.0.1/app-bundles-v1/ios/OpenBareMap-Yosemite-iOS-Bundle.zip",
+        "mapManifestSHA256": "123f74cc74633ceaec059b17f2d235cebafd81c0d357a09748479f3c773e076b",
+        "r2Key": "OpenBareMap/us-yosemite/2.0.1/app-bundles-v1/ios/OpenBareMap-Yosemite-iOS-Bundle.zip",
+        "sha256": "f15aefb99df060fef614584b5d7590c99eb913af7d2f3abbf8b5e66b083f0186",
+        "url": "https://downloads.appsbyonzy.dev/OpenBareMap/us-yosemite/2.0.1/app-bundles-v1/ios/OpenBareMap-Yosemite-iOS-Bundle.zip"
       }
     },
     "us-zion": {

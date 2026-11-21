@@ -1,5 +1,5 @@
 {
-  "combinedSHA256": "5cab983f88767508e9afdb705127b064baf58ed2c3a7ad2acbe34d4b7ffc3f9b",
+  "combinedSHA256": "3992f842ef90fc8d90e3d8ad115f5f80b87bb89d97d10e58aaa208093a4f2173",
   "command": [
     "/opt/homebrew/opt/openjdk@21/libexec/openjdk.jdk/Contents/Home/bin/java",
     "-Xmx6g",
@@ -12,9 +12,9 @@
     "--keep-complete=true",
     "--output=pbf",
     "--polygon-file=/Volumes/Extreme SSD/Projects/OpenBareMap/regions/pyrenees/garmin/coverage.poly",
-    "--output-dir=/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/906ead9d53a7/pyrenees/garmin/split",
+    "--output-dir=/Volumes/Extreme SSD/Projects/OpenBareMap/work/glacier-updates/native/OpenBareMap-builds/906ead9d53a7/pyrenees/garmin/split",
     "--ignore-osm-bounds=true",
-    "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/906ead9d53a7/pyrenees/garmin/combined.osm.pbf"
+    "/Volumes/Extreme SSD/Projects/OpenBareMap/work/glacier-updates/native/OpenBareMap-builds/906ead9d53a7/pyrenees/garmin/combined.osm.pbf"
   ],
   "coverageSHA256": "97b6cb7b920314c42e80c36bbd2999d18512fddd1c077b3d626cd081ad77ff30",
   "ignoreSourceHeaderBounds": true

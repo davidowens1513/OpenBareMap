@@ -1,109 +1,39 @@
 {
-  "id": "dolomites",
-  "name": "OpenBareMap Dolomites",
-  "label": "Alps - Dolomites",
-  "mapVersion": "2.0.0",
-  "minzoom": 4,
-  "maxzoom": 14,
-  "coverage": "Dolomites regional edition; approved rectangular coverage 10.65–13.10°E, 45.70–47.00°N. Complete OSM features retained at the edge.",
   "bounds": [
     10.65,
     45.7,
     13.1,
     47.0
   ],
-  "terrainBounds": [
-    10,
-    45,
-    14,
-    48
-  ],
+  "clipBasemap": true,
+  "clipSource": true,
   "coastContextBounds": [
     7,
     42,
     17,
     50
   ],
-  "projectedCRS": "EPSG:25832",
-  "gridCRS": "EPSG:25832",
-  "gridName": "ETRS89 / UTM 32N",
-  "gridSource": "utm-grid",
-  "gridExtent": [
-    620000,
-    820000,
-    5060000,
-    5220000
-  ],
-  "townlands": false,
   "contourIntervalMetres": 20,
-  "sourceDate": "2026-11-04",
-  "sourceSlugs": [
-    "nord-est",
-    "nord-ovest",
-    "austria"
-  ],
-  "sourceBaseURL": "https://download.geofabrik.de/europe/italy/",
-  "sourceBaseOverrides": {
-    "austria": "https://download.geofabrik.de/europe/"
+  "coverage": "Dolomites regional edition; approved rectangular coverage 10.65\u201313.10\u00b0E, 45.70\u201347.00\u00b0N. Complete OSM features retained at the edge.",
+  "destinationLabels": {
+    "belluno": "Belluno",
+    "bolzano": "Bolzano / Bozen",
+    "brenta": "Brenta",
+    "bressanone": "Bressanone / Brixen",
+    "cortina": "Cortina d\u2019Ampezzo",
+    "friulian-dolomites": "Friulian Dolomites",
+    "island": "All Dolomites",
+    "lienz": "Lienz",
+    "marmolada": "Marmolada",
+    "pale-di-san-martino": "Pale di San Martino",
+    "tre-cime": "Tre Cime di Lavaredo",
+    "trento": "Trento",
+    "val-gardena": "Val Gardena / Gr\u00f6den"
   },
-  "nativeLanguage": "it",
-  "minorWaterwayMinzoom": 10,
-  "clipBasemap": true,
-  "clipSource": true,
-  "garminFamilyId": 4837,
-  "garminTileStartId": 48370001,
-  "garminFilename": "OpenBareMap-Dolomites.img",
-  "garminPackageRevision": "2.0.1-trail-detail-r1",
-  "styleRevision": "2.0.0-dolomites-r1",
-  "garminContextBounds": [
-    10.65,
-    45.7,
-    13.1,
-    47.0
-  ],
-  "inspectionNames": [
-    "Trento",
-    "Bolzano - Bozen"
-  ],
   "destinations": {
-    "island": [
-      11.875,
-      46.35,
-      8
-    ],
-    "cortina": [
-      12.1357,
-      46.5405,
-      12
-    ],
-    "brenta": [
-      10.89,
-      46.17,
-      12
-    ],
-    "marmolada": [
-      11.862,
-      46.435,
-      13
-    ],
-    "tre-cime": [
-      12.3,
-      46.619,
-      13
-    ],
-    "val-gardena": [
-      11.756,
-      46.557,
-      12
-    ],
-    "pale-di-san-martino": [
-      11.85,
-      46.28,
-      12
-    ],
-    "friulian-dolomites": [
-      12.58,
-      46.32,
+    "belluno": [
+      12.2176,
+      46.1391,
       12
     ],
     "bolzano": [
@@ -111,14 +41,9 @@
       46.4983,
       12
     ],
-    "trento": [
-      11.1211,
-      46.0679,
-      12
-    ],
-    "belluno": [
-      12.2176,
-      46.1391,
+    "brenta": [
+      10.89,
+      46.17,
       12
     ],
     "bressanone": [
@@ -126,43 +51,120 @@
       46.7167,
       12
     ],
+    "cortina": [
+      12.1357,
+      46.5405,
+      12
+    ],
+    "friulian-dolomites": [
+      12.58,
+      46.32,
+      12
+    ],
+    "island": [
+      11.875,
+      46.35,
+      8
+    ],
     "lienz": [
       12.769,
       46.828,
       12
+    ],
+    "marmolada": [
+      11.862,
+      46.435,
+      13
+    ],
+    "pale-di-san-martino": [
+      11.85,
+      46.28,
+      12
+    ],
+    "tre-cime": [
+      12.3,
+      46.619,
+      13
+    ],
+    "trento": [
+      11.1211,
+      46.0679,
+      12
+    ],
+    "val-gardena": [
+      11.756,
+      46.557,
+      12
     ]
   },
-  "destinationLabels": {
-    "island": "All Dolomites",
-    "cortina": "Cortina d’Ampezzo",
-    "brenta": "Brenta",
-    "marmolada": "Marmolada",
-    "tre-cime": "Tre Cime di Lavaredo",
-    "val-gardena": "Val Gardena / Gröden",
-    "pale-di-san-martino": "Pale di San Martino",
-    "friulian-dolomites": "Friulian Dolomites",
-    "bolzano": "Bolzano / Bozen",
-    "trento": "Trento",
-    "belluno": "Belluno",
-    "bressanone": "Bressanone / Brixen",
-    "lienz": "Lienz"
+  "garminContextBounds": [
+    10.65,
+    45.7,
+    13.1,
+    47.0
+  ],
+  "garminFamilyId": 4837,
+  "garminFilename": "OpenBareMap-Dolomites-Glaciers.img",
+  "garminPackageRevision": "2.0.1-glacier-r1",
+  "garminTileStartId": 48370001,
+  "gridCRS": "EPSG:25832",
+  "gridExtent": [
+    620000,
+    820000,
+    5060000,
+    5220000
+  ],
+  "gridName": "ETRS89 / UTM 32N",
+  "gridSource": "utm-grid",
+  "id": "dolomites",
+  "inspectionNames": [
+    "Trento",
+    "Bolzano - Bozen"
+  ],
+  "label": "Alps - Dolomites",
+  "mapVersion": "2.0.1",
+  "maxzoom": 14,
+  "minorWaterwayMinzoom": 10,
+  "minzoom": 4,
+  "name": "OpenBareMap Dolomites",
+  "nativeLanguage": "it",
+  "permanentIce": true,
+  "permanentIceLayer": "permanent_ice",
+  "projectedCRS": "EPSG:25832",
+  "sourceBaseOverrides": {
+    "austria": "https://download.geofabrik.de/europe/"
   },
+  "sourceBaseURL": "https://download.geofabrik.de/europe/italy/",
+  "sourceDate": "2026-11-04",
+  "sourceSlugs": [
+    "nord-est",
+    "nord-ovest",
+    "austria"
+  ],
+  "styleRevision": "2.0.1-glacier-r1",
+  "terrainBounds": [
+    10,
+    45,
+    14,
+    48
+  ],
+  "townlands": false,
   "validationAnchors": {
-    "southwest-edge": [
-      10.66,
-      45.72
+    "northeast-edge": [
+      13.09,
+      46.99
     ],
     "northwest-edge": [
       10.66,
       46.99
     ],
-    "northeast-edge": [
-      13.09,
-      46.99
-    ],
     "southeast-edge": [
       13.09,
       45.71
+    ],
+    "southwest-edge": [
+      10.66,
+      45.72
     ]
   }
 }

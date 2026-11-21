@@ -1,0 +1,106 @@
+{
+  "acceptance": "Automated checks only; see validation and visual-review records for actual reviewed scope.",
+  "coverage": "Southern coast through Trondheim; includes Oslo, Stavanger, Bergen, Hardangervidda, Jotunheimen and the southern fjords. Mainland Norway and coastal islands only; excludes Svalbard and Jan Mayen. Adjacent editions overlap by 0.5 degrees latitude (approximately 56 km).",
+  "datasets": {
+    "basemap": {
+      "bytes": 1995472896,
+      "path": "releases/norway-south/2.0.1/maps/basemap.mbtiles",
+      "sha256": "37091eec6623b81b1c29dd33f1a28a27be7dd7782d50fd0fb1a7ec5ea7a07cf5",
+      "validation": {
+        "empty_tile_count": 4895,
+        "logical_tiles_sha256": "92516328cbc3e453e47a21e659ac99bdee9de7a5720eac34f072185811c50f6e",
+        "tile_count": 208805
+      }
+    },
+    "grid": {
+      "bytes": 96272384,
+      "path": "releases/norway-south/2.0.0/maps/grid.mbtiles",
+      "sha256": "7c3af0634f7e98d5c1f517e6c99688d6b9cac081dc9e0601244a5fa8a13da370",
+      "validation": {
+        "empty_tile_count": 0,
+        "logical_tiles_sha256": "1b461410d407c4362ac03a4dd12e4187c2140aa65dba6d4da781f1c885429baf",
+        "tile_count": 307205
+      }
+    },
+    "hillshade": {
+      "bytes": 574705664,
+      "path": "releases/norway-south/2.0.0/maps/hillshade.mbtiles",
+      "sha256": "c3d176ec559db476ff8bfc53f0ff5ab6844e08560aaea6bee2021f0313843191",
+      "validation": {
+        "empty_tile_count": 0,
+        "logical_tiles_sha256": "fb32a31aa4ed92da2a904655ed4421198af5bf2d76c792df11d9a59596c66704",
+        "tile_count": 18316
+      }
+    },
+    "topography": {
+      "bytes": 1246662656,
+      "path": "releases/norway-south/2.0.0/maps/topography-context.mbtiles",
+      "sha256": "65d1e55fa72ce99033889d095699d39c3b7c78c62b990235c2d4b4720c0d20f6",
+      "validation": {
+        "empty_tile_count": 214623,
+        "logical_tiles_sha256": "26bd01acf1883149a63acd522f498ca5b3dafbf45c5a88d57169dbf184f4865c",
+        "tile_count": 458942
+      }
+    }
+  },
+  "garmin": {
+    "bytes": 1002717184,
+    "path": "regions/norway-south/garmin/dist/OpenBareMap-Norway-South-Glaciers.img",
+    "sha256": "b4264d61315d5920d83839eb3a2982afbb21af2c17f89eaf1fececb0ff462d3a"
+  },
+  "geometryReport": {
+    "path": "releases/norway-south/2.0.1/build-records/norway-south-geometry/geometry-report.json",
+    "sha256": "eacbb9c1e06491f58d81258345e8707921a22b0a78ffa83ea1b8b922527a766e"
+  },
+  "hostAppsModified": false,
+  "mapVersion": "2.0.1",
+  "osm": {
+    "bytes": 856359431,
+    "operation": "Complete-feature bbox extraction with nested relation references",
+    "path": "data/regions/norway-south/norway-261113.osm.clipped.osm.pbf",
+    "replicationTimestamp": "2026-11-13T21:22:20Z",
+    "sha256": "d7ba66a94bba227d2bdbeb54a257c4e0ccba11d78b37c57429a787ecb2ae48e8",
+    "snapshot_date": "2026-11-13",
+    "url": "https://download.geofabrik.de/europe/norway-261113.osm.pbf"
+  },
+  "packages": {
+    "android": {
+      "archive": {
+        "bytes": 3948588832,
+        "path": "regions/norway-south/android/OpenBareMap-Android.zip",
+        "sha256": "402f4545f716c791b889a164c673144feb26e01a1f9c1bb5927cb0d6b6b571b2"
+      },
+      "checksumsSHA256": "c81db6ec1023dbd8c775329da84a2df23f32a3397cee33d373c3e4000a4bf849",
+      "manifestSHA256": "db2bd7076ed8dd4a1336b779cd94b839d47e9a7d5bb31916dd344361c4ed4263",
+      "path": "regions/norway-south/android",
+      "validationSHA256": "bd399ebb88dc0ca81a876eeb62fea664922044f181f8b3ac2265e3e27371dacc"
+    },
+    "ios": {
+      "checksumsSHA256": "0615a63ce0f504a8855c01f5eef0e9ba8510ec6a182abda40a10ab894da76f06",
+      "manifestSHA256": "fa4d0afaf070812b082242449d7c06633a627a151b4d4a2ccccfef395b25dee2",
+      "path": "regions/norway-south/ios",
+      "validationSHA256": "43271a8fc6ad50fbc81f40d1f76be95c020a984c1caed7752e258cce4d51060f"
+    }
+  },
+  "pythonRuntime": {
+    "packages": {
+      "Pillow": "12.3.0",
+      "certifi": "2026.10.23",
+      "charset-normalizer": "3.5.2",
+      "idna": "3.20",
+      "numpy": "2.5.4",
+      "osmium": "4.3.2",
+      "pyproj": "3.8.0",
+      "requests": "2.34.2",
+      "shapely": "2.2.0",
+      "urllib3": "2.8.0"
+    },
+    "platform": "macOS-27.2.1-arm64-arm-64bit-Mach-O",
+    "python": "3.14.5 (main, May 10 2026, 10:21:34) [Clang 21.0.0 (clang-2100.0.123.102)]",
+    "requirementsSHA256": "427f12ff8b49bfebac0a7d453c2f65bd15d6695584b18e6ecee1fdfeed20a36c"
+  },
+  "region": "norway-south",
+  "styleSHA256": "f969aa483f279b74085c5b4c0c38c3c40228837360c662d309e6a97c761c22c9",
+  "terrainLockSHA256": "acb56a43040079a470d456fd19c9ce1c9c070ec5dd470fcc722ad7e31194b680",
+  "validation": "validation.json"
+}

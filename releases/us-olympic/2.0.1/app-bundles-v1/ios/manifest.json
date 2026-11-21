@@ -1,0 +1,35 @@
+{
+  "bytes": 208624496,
+  "datasets": {
+    "basemap": {
+      "path": "maps/basemap.mbtiles",
+      "sha256": "237f05a6a06a86d1e65d5c9b4f82b879396b8cda4d3c57c0dfceac2d5331ce8b"
+    },
+    "coast": {
+      "derived_from": "85110ca132377ed9eca0400720291c41d63cd475db235f31dd15bfd050e3ca36",
+      "maxzoom": 12,
+      "operation": "Preserve land-layer MVT bytes only through zoom 12; omit other layers.",
+      "path": "maps/coast.mbtiles",
+      "sha256": "0804d64331ff23906edec52ae785e24c5b18ef823b82be3082926053a5d35005"
+    },
+    "grid": {
+      "path": "maps/grid.mbtiles",
+      "sha256": "be1f2c67797fe89bc8586c02001cef720acea8eedd0b1ce858775f218e6a3730"
+    },
+    "hillshade": {
+      "path": "maps/hillshade.mbtiles",
+      "sha256": "1ddd0d13641446a3163415a773a3c3c285873285bb71bba3b0691f1a9bdc01d2"
+    },
+    "topography": {
+      "path": "maps/topography.mbtiles",
+      "sha256": "85110ca132377ed9eca0400720291c41d63cd475db235f31dd15bfd050e3ca36"
+    }
+  },
+  "instructionsSHA256": "c81e1c571d1f34e9f7b16a1cb46d18cb139209452347f6579e114be3ee7237e8",
+  "instructionsURL": "https://downloads.appsbyonzy.dev/OpenBareMap/us-olympic/2.0.1/app-bundles-v1/ios/instructions.txt",
+  "localPath": "releases/us-olympic/2.0.1/app-bundles-v1/ios/OpenBareMap-Olympic-iOS-Bundle.zip",
+  "mapManifestSHA256": "4966114aa8b9a1e723f03b30c2fad1e022a53199652c099d5cf3c37efb165a6d",
+  "r2Key": "OpenBareMap/us-olympic/2.0.1/app-bundles-v1/ios/OpenBareMap-Olympic-iOS-Bundle.zip",
+  "sha256": "77516fa0561a9bb4ee1572bca12799833602ee876d9550f3c8458a9cdde180e6",
+  "url": "https://downloads.appsbyonzy.dev/OpenBareMap/us-olympic/2.0.1/app-bundles-v1/ios/OpenBareMap-Olympic-iOS-Bundle.zip"
+}

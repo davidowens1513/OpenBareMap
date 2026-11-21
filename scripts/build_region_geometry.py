@@ -48,7 +48,7 @@ def permanent_ice_class(tags):
             return 'glacier'
     return None
 
-def landcover(source,destination,bounds=None,*,permanent_ice=False,ice_footprint=None):
+def landcover(source,destination,bounds=None,*,permanent_ice=False,ice_footprint=None,ice_only=False):
     import osmium
     from shapely.geometry import shape,box
     extent=box(*bounds) if bounds else None
@@ -58,6 +58,8 @@ def landcover(source,destination,bounds=None,*,permanent_ice=False,ice_footprint
     ice_counts = dict.fromkeys(PERMANENT_ICE, 0)
     class Handler(osmium.SimpleHandler):
         def area(self,a):
+            if ice_only and a.tags.get('natural') not in ('glacier', 'snowfield'):
+                return
             tags=dict(a.tags);land=tags.get('landuse','');natural=tags.get('natural','');wetland=tags.get('wetland','')
             cl=classes.get(land) or classes.get(natural)
             if land=='peat_cutting':cl='peat_cutting'
@@ -65,7 +67,7 @@ def landcover(source,destination,bounds=None,*,permanent_ice=False,ice_footprint
             if natural=='bog' or natural=='wetland' and wetland in ('bog','string_bog'):cl='bog'
             if permanent_ice:
                 cl = permanent_ice_class(tags) or cl
-            if not cl:return
+            if not cl or (ice_only and cl not in ice_counts):return
             try:
                 original=json.loads(factory.create_multipolygon(a))
             except osmium.InvalidLocationError:

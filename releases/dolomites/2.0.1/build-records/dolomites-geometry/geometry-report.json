@@ -1,0 +1,25 @@
+{
+  "counts": {
+    "permanentIce": {
+      "glacier": 543,
+      "permanent_snow": 3
+    }
+  },
+  "osm": {
+    "bytes": 283475522,
+    "operation": "Complete-feature bbox extraction with nested relation references, then libosmium sorted merge; duplicate OSM objects resolved by version",
+    "path": "data/regions/dolomites/dolomites-261104.osm.pbf",
+    "replicationTimestamp": "2026-11-04T21:21:03Z",
+    "sha256": "a835d74e63c7c4520870d2890de805b4ae628898588f6e1e1ad5cdeef1d9af63",
+    "snapshot_date": "2026-11-04",
+    "url": null
+  },
+  "outputs": {
+    "ice.geojson": "a140117005a1fe9d20b319514ab3d596b48b12727c017ffaec0968777f4cf82f"
+  },
+  "permanentIce": {
+    "glacier": 543,
+    "permanent_snow": 3
+  },
+  "region": "dolomites"
+}

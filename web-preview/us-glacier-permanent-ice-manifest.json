@@ -1,0 +1,41 @@
+{
+  "regions": {
+    "us-glacier": {
+      "basemap": {
+        "sourceSHA256": "7ac40f57e453282c923b26c2596ee761ae6e29c3b3b03dc213756dfca821c538",
+        "bytes": 20016271,
+        "sha256": "3efef1f3f7bdc7d403f70413b965fb2f5d4d3b2eae601ce4ab0fd9da782cf499",
+        "tiles": 6469
+      },
+      "grid": {
+        "sourceSHA256": "7b6f7a769bd7761febccd16d71c43690c6e5304ce4fac9e7f793eb46f8c58b59",
+        "bytes": 1864770,
+        "sha256": "04f22ebc6fb5c05ee9b6c626f8f07d4288847f04c2d5c17b64c8445eda0430f2",
+        "tiles": 6357
+      },
+      "hillshade": {
+        "sourceSHA256": "ce4cc534a008ba42659ef44b835040ebf684b9452dbb225e7c220f5f1dfd987e",
+        "bytes": 44874724,
+        "sha256": "4c372c890b2734e476da47b15a14c204f7f1fdabdb576ff3e1ce6b3c6a5d5d96",
+        "tiles": 1167
+      },
+      "topography": {
+        "sourceSHA256": "493ecacc6f8ff2e3a2932aadcc1932221bdfce9cee9655a18e44413e363688b2",
+        "bytes": 79600074,
+        "sha256": "d9c128059c65e9d387a80ca6bd1068a5feef90a62a3a6d45df3e13fb1d00b3e9",
+        "tiles": 58468
+      },
+      "coast": {
+        "sourceSHA256": "a030d774020ee56ca525e32cdf4ce326fa7a7956b9c1a9350119201e3028fce0",
+        "bytes": 26490,
+        "sha256": "0ee83ece4ee702bdfbac51b9ed12dbadf00b88d2227d841c7963fcc9698ef99f",
+        "tiles": 4382
+      }
+    }
+  },
+  "pmtilesPython": "3.8.1",
+  "pmtilesJS": "4.5.0",
+  "librarySHA256": "caf981bc46f6327ee7e65d5dc964d89d38a69f60edca2bd4c5c890c21b554c6c",
+  "dataOrigin": "https://downloads.appsbyonzy.dev/OpenBareMap/us-glacier/2.0.1/preview",
+  "scope": "Complete selected map tiles; no regional or zoom sampling."
+}

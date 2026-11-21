@@ -1,0 +1,106 @@
+{
+  "acceptance": "Automated checks only; see validation and visual-review records for actual reviewed scope.",
+  "coverage": "Yellowstone and Grand Teton national parks, the John D. Rockefeller Jr. Memorial Parkway and their gateway approaches.",
+  "datasets": {
+    "basemap": {
+      "bytes": 87732224,
+      "path": "releases/us-yellowstone-grand-teton/2.0.1/maps/basemap.mbtiles",
+      "sha256": "88e6233cb10877d972581f36503112d7caa1a14f13b6285c4ce724401676993c",
+      "validation": {
+        "empty_tile_count": 52,
+        "logical_tiles_sha256": "3003534d65249cbde5f1950387248b3a25bb06667f4e195e6c16416e3f2f8796",
+        "tile_count": 12884
+      }
+    },
+    "grid": {
+      "bytes": 4456448,
+      "path": "releases/us-yellowstone-grand-teton/2.0.0/maps/grid.mbtiles",
+      "sha256": "559128df29402b90df47b6f5e64ed7c18cb6dca80fc4722b62483569503393c2",
+      "validation": {
+        "empty_tile_count": 0,
+        "logical_tiles_sha256": "7037cb1dfb9d82573bf6541f7be8297f7c50eb3b61266e80bcf2847f9adfa624",
+        "tile_count": 13177
+      }
+    },
+    "hillshade": {
+      "bytes": 101359616,
+      "path": "releases/us-yellowstone-grand-teton/2.0.0/maps/hillshade.mbtiles",
+      "sha256": "b44068bb5bf694392a1765b5336d84ae7a039dc1280ea4c3dbf42af49673199b",
+      "validation": {
+        "empty_tile_count": 0,
+        "logical_tiles_sha256": "b5b206eaf16a9ebb0e4953dd0400166b8fe2687334765efe50ba34e38941a012",
+        "tile_count": 2337
+      }
+    },
+    "topography": {
+      "bytes": 185790464,
+      "path": "releases/us-yellowstone-grand-teton/2.0.0/maps/topography-context.mbtiles",
+      "sha256": "52139ac2ccedbfa356598a9b7ecda5697e7d20215813cfcc3d88d97717793c5a",
+      "validation": {
+        "empty_tile_count": 58749,
+        "logical_tiles_sha256": "22621aad8a7921ec3ecf62bf92813cf11984ed0c1c223e19b681abf59662f362",
+        "tile_count": 77283
+      }
+    }
+  },
+  "garmin": {
+    "bytes": 78090240,
+    "path": "regions/us-yellowstone-grand-teton/garmin/dist/OpenBareMap-US-Yellowstone-Grand-Teton-Glaciers.img",
+    "sha256": "6b7e447461c34f5f9886a7904c47753f37dfc47ba5e6e3885f9ba8d314a9eb85"
+  },
+  "geometryReport": {
+    "path": "releases/us-yellowstone-grand-teton/2.0.1/build-records/us-yellowstone-grand-teton-geometry/geometry-report.json",
+    "sha256": "ae7622324b04b887a7643b55deeb8bdfe116e149a16e86740ae2217dd240f9cf"
+  },
+  "hostAppsModified": false,
+  "mapVersion": "2.0.1",
+  "osm": {
+    "bytes": 31807238,
+    "operation": "Complete-feature bbox extraction with nested relation references, then libosmium sorted merge; duplicate OSM objects resolved by version",
+    "path": "data/regions/us-yellowstone-grand-teton/us-yellowstone-grand-teton-261120.osm.pbf",
+    "replicationTimestamp": "2026-11-20T21:21:21Z",
+    "sha256": "88a655734b4a35477aa5c45610f3e372e57b51df01c7248dd579259fd7de1cf5",
+    "snapshot_date": "2026-11-20",
+    "url": null
+  },
+  "packages": {
+    "android": {
+      "archive": {
+        "bytes": 384343541,
+        "path": "regions/us-yellowstone-grand-teton/android/OpenBareMap-Android.zip",
+        "sha256": "75de5475f9db9a4ce1672a96cab9a9029adf40a58f529277b53416f97c70fa5c"
+      },
+      "checksumsSHA256": "98c6caae1f4ebe33808d27dbd0beb42770eb7fe326160de1f979a79161d3389d",
+      "manifestSHA256": "c9f39afd065beff9fafb13cbb7519406256554af124c9901c05f35c0e36b40d9",
+      "path": "regions/us-yellowstone-grand-teton/android",
+      "validationSHA256": "94f629a6cdab8865998fe6cfb3f013ac6bc4ec826f390ef683efc1697f1a852e"
+    },
+    "ios": {
+      "checksumsSHA256": "7087d9cfd8d3af6e14b140085cfda08b26d3fe3c8c45424d4fe19f5a83bfe5f5",
+      "manifestSHA256": "671fe0b5751ed744052337ca2b0160a88f049b3249a1088eca79f76d31f21bed",
+      "path": "regions/us-yellowstone-grand-teton/ios",
+      "validationSHA256": "bd3e47f0cdcd02fa3bd7e50eddeabf1d487976d6dfb8bb32282e18fd30e9a308"
+    }
+  },
+  "pythonRuntime": {
+    "packages": {
+      "Pillow": "12.3.0",
+      "certifi": "2026.10.23",
+      "charset-normalizer": "3.5.2",
+      "idna": "3.20",
+      "numpy": "2.5.4",
+      "osmium": "4.3.2",
+      "pyproj": "3.8.0",
+      "requests": "2.34.2",
+      "shapely": "2.2.0",
+      "urllib3": "2.8.0"
+    },
+    "platform": "macOS-27.2.1-arm64-arm-64bit-Mach-O",
+    "python": "3.14.5 (main, May 10 2026, 10:21:34) [Clang 21.0.0 (clang-2100.0.123.102)]",
+    "requirementsSHA256": "427f12ff8b49bfebac0a7d453c2f65bd15d6695584b18e6ecee1fdfeed20a36c"
+  },
+  "region": "us-yellowstone-grand-teton",
+  "styleSHA256": "31d47bc8da1802cf967354c883bd613dd31a4f82edd17ae392703c0fbbad1d25",
+  "terrainLockSHA256": "e2a045eb4ffdab041d879c40b93edd3b14d1dba238edcee3b2feb5d1dcf6084e",
+  "validation": "validation.json"
+}

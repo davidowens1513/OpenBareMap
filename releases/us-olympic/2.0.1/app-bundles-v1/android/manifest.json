@@ -1,0 +1,33 @@
+{
+  "bytes": 208622786,
+  "datasets": {
+    "basemap": {
+      "path": "maps/basemap.mbtiles",
+      "sha256": "237f05a6a06a86d1e65d5c9b4f82b879396b8cda4d3c57c0dfceac2d5331ce8b"
+    },
+    "coast": {
+      "derivedFrom": "85110ca132377ed9eca0400720291c41d63cd475db235f31dd15bfd050e3ca36",
+      "path": "maps/coast.mbtiles",
+      "sha256": "0804d64331ff23906edec52ae785e24c5b18ef823b82be3082926053a5d35005"
+    },
+    "grid": {
+      "path": "maps/grid.mbtiles",
+      "sha256": "be1f2c67797fe89bc8586c02001cef720acea8eedd0b1ce858775f218e6a3730"
+    },
+    "hillshade": {
+      "path": "maps/hillshade.mbtiles",
+      "sha256": "1ddd0d13641446a3163415a773a3c3c285873285bb71bba3b0691f1a9bdc01d2"
+    },
+    "topography": {
+      "path": "maps/topography.mbtiles",
+      "sha256": "85110ca132377ed9eca0400720291c41d63cd475db235f31dd15bfd050e3ca36"
+    }
+  },
+  "instructionsSHA256": "4dccbea25d2576c76b8db3619eb9979c47d3224eacf50dc37b2ce68a136dde0f",
+  "instructionsURL": "https://downloads.appsbyonzy.dev/OpenBareMap/us-olympic/2.0.1/app-bundles-v1/android/instructions.txt",
+  "localPath": "releases/us-olympic/2.0.1/app-bundles-v1/android/OpenBareMap-Olympic-Android-Bundle.zip",
+  "mapManifestSHA256": "a9ceec9e39f33bc64cfcbfed73f4e07d3d8c281332866cb9665578714a0198c9",
+  "r2Key": "OpenBareMap/us-olympic/2.0.1/app-bundles-v1/android/OpenBareMap-Olympic-Android-Bundle.zip",
+  "sha256": "cd56267d71c68b86bb5b66ad06b34921d3ced0c6bca060b1367f3e1b958db082",
+  "url": "https://downloads.appsbyonzy.dev/OpenBareMap/us-olympic/2.0.1/app-bundles-v1/android/OpenBareMap-Olympic-Android-Bundle.zip"
+}

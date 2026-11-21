@@ -1,5 +1,5 @@
 {
-  "combinedSHA256": "396164ea544aafa18c71e7929bfafb33c227732b1f92b5ed54e6cada37b91bdd",
+  "combinedSHA256": "8c7450b68f2543504ffce0286fe97042c29209ffde12524cbbc4ace8b92d37e7",
   "command": [
     "/opt/homebrew/opt/openjdk@21/libexec/openjdk.jdk/Contents/Home/bin/java",
     "-Xmx6g",
@@ -12,9 +12,9 @@
     "--keep-complete=true",
     "--output=pbf",
     "--polygon-file=/Volumes/Extreme SSD/Projects/OpenBareMap/regions/dolomites/garmin/coverage.poly",
-    "--output-dir=/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/906ead9d53a7/dolomites/garmin/split",
+    "--output-dir=/Volumes/Extreme SSD/Projects/OpenBareMap/work/glacier-updates/native/OpenBareMap-builds/906ead9d53a7/dolomites/garmin/split",
     "--ignore-osm-bounds=true",
-    "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/906ead9d53a7/dolomites/garmin/combined.osm.pbf"
+    "/Volumes/Extreme SSD/Projects/OpenBareMap/work/glacier-updates/native/OpenBareMap-builds/906ead9d53a7/dolomites/garmin/combined.osm.pbf"
   ],
   "coverageSHA256": "1eb2df1685d84df27b2c751af286a9254045d9016fa0187452ddb035b55735fb",
   "ignoreSourceHeaderBounds": true

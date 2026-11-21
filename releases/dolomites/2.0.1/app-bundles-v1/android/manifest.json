@@ -1,0 +1,33 @@
+{
+  "bytes": 855896658,
+  "datasets": {
+    "basemap": {
+      "path": "maps/basemap.mbtiles",
+      "sha256": "dd3d881f4fa0d2cf9a962a00034dd60bd5007ebce778ed634b40cdbf7fd1bd68"
+    },
+    "coast": {
+      "derivedFrom": "68a552d522566b2489f8cb692b6835dbf8b0d8696be4858387d0fc55d31fed4b",
+      "path": "maps/coast.mbtiles",
+      "sha256": "07006ed7386c9e29e9d142ef69f5f2fdead0fcca5d91736ef7cdd607a67d1411"
+    },
+    "grid": {
+      "path": "maps/grid.mbtiles",
+      "sha256": "c50ff7859253da33995da17d9c0bc2daff8b0c9660b83fdcfb261aa0d19ffbfb"
+    },
+    "hillshade": {
+      "path": "maps/hillshade.mbtiles",
+      "sha256": "6633dc950536cef2a123259756f90fa39ef102ff315cbdde70616e7e474c8213"
+    },
+    "topography": {
+      "path": "maps/topography.mbtiles",
+      "sha256": "68a552d522566b2489f8cb692b6835dbf8b0d8696be4858387d0fc55d31fed4b"
+    }
+  },
+  "instructionsSHA256": "6e9fd11022b4bab239439251148cb928a469e13852367d58a158e0e09f22bbba",
+  "instructionsURL": "https://downloads.appsbyonzy.dev/OpenBareMap/dolomites/2.0.1/app-bundles-v1/android/instructions.txt",
+  "localPath": "releases/dolomites/2.0.1/app-bundles-v1/android/OpenBareMap-Dolomites-Android-Bundle.zip",
+  "mapManifestSHA256": "2f1e29a4687d4ddba91c18daef1bb165fac43ed1cb27666cb612c229ed7c42fc",
+  "r2Key": "OpenBareMap/dolomites/2.0.1/app-bundles-v1/android/OpenBareMap-Dolomites-Android-Bundle.zip",
+  "sha256": "1ccaf09a1aeb3bda85d5a635a50a44b96170962ca0016b9f8d8cf306a2191ca3",
+  "url": "https://downloads.appsbyonzy.dev/OpenBareMap/dolomites/2.0.1/app-bundles-v1/android/OpenBareMap-Dolomites-Android-Bundle.zip"
+}

@@ -1,0 +1,33 @@
+{
+  "bytes": 1653979525,
+  "datasets": {
+    "basemap": {
+      "path": "maps/basemap.mbtiles",
+      "sha256": "33b4a39b9befd5727e3aa3d25f66eec79079f55ebc34cd67e4c20c9fbdf25f84"
+    },
+    "coast": {
+      "derivedFrom": "ecc5187246330b516e2de371d2b39a4b6ee9d434d5c4fbdaa48a838cfd840a4d",
+      "path": "maps/coast.mbtiles",
+      "sha256": "65a89af44fd908165e0adafd051446acc7a7691d4822c084c40ea46c6634f500"
+    },
+    "grid": {
+      "path": "maps/grid.mbtiles",
+      "sha256": "a11ae12452b22c6dafef5df669d7d5cc99257c628e90af7714900f9ce642dea1"
+    },
+    "hillshade": {
+      "path": "maps/hillshade.mbtiles",
+      "sha256": "e1a7b0fb53253873e47bb3f77db4e8b9ee68ee06a1d70e2c09974633cde00671"
+    },
+    "topography": {
+      "path": "maps/topography.mbtiles",
+      "sha256": "ecc5187246330b516e2de371d2b39a4b6ee9d434d5c4fbdaa48a838cfd840a4d"
+    }
+  },
+  "instructionsSHA256": "e13f1178c3e6a643d7c9a2624d37f17b842092a02314c061488d44fc59ff4a97",
+  "instructionsURL": "https://downloads.appsbyonzy.dev/OpenBareMap/alps-west/2.0.1/app-bundles-v1/android/instructions.txt",
+  "localPath": "releases/alps-west/2.0.1/app-bundles-v1/android/OpenBareMap-Alps-West-Android-Bundle.zip",
+  "mapManifestSHA256": "689b11182668e37b9da9c162faf32bef5a2500eb4150da8a6f650ddbb820c16c",
+  "r2Key": "OpenBareMap/alps-west/2.0.1/app-bundles-v1/android/OpenBareMap-Alps-West-Android-Bundle.zip",
+  "sha256": "b52677dd6a69abfbbcd1481bfa0a35d22899563714581a7aa63a5a460b719f97",
+  "url": "https://downloads.appsbyonzy.dev/OpenBareMap/alps-west/2.0.1/app-bundles-v1/android/OpenBareMap-Alps-West-Android-Bundle.zip"
+}

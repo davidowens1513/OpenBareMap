@@ -1,82 +1,53 @@
 {
-  "id": "alps-east",
-  "name": "OpenBareMap Alps - East",
-  "label": "Alps - East",
-  "mapVersion": "2.0.0",
-  "minzoom": 4,
-  "maxzoom": 14,
-  "coverage": "Eastern Austrian Alps, Julian Alps and Karawanks, joining the existing Dolomites around East Tyrol and Friuli.",
+  "alignedTerrainPixels": true,
   "bounds": [
     12.69,
     45.63,
     16.65,
     48.3
   ],
-  "terrainBounds": [
-    12,
-    45,
-    17,
-    49
-  ],
+  "clipBasemap": true,
+  "clipSource": true,
   "coastContextBounds": [
     11,
     44,
     18,
     50
   ],
-  "projectedCRS": "EPSG:25832",
-  "gridCRS": "EPSG:25833",
-  "gridName": "ETRS89 / UTM 33N",
-  "gridSource": "utm-grid",
-  "gridExtent": [
-    310000,
-    630000,
-    5050000,
-    5360000
-  ],
-  "townlands": false,
   "contourIntervalMetres": 20,
-  "sourceDate": "2026-11-16",
-  "sourceSlugs": [
-    "alps"
-  ],
-  "sourceBaseURL": "https://download.geofabrik.de/europe/",
-  "sourceCacheRegion": "alps",
-  "nativeLanguage": "de",
-  "minorWaterwayMinzoom": 10,
-  "clipBasemap": true,
-  "clipSource": true,
-  "ignoreSourceHeaderBounds": true,
-  "garminUseSourceOutline": true,
-  "alignedTerrainPixels": true,
-  "garminFamilyId": 4854,
-  "garminTileStartId": 48540001,
-  "garminFilename": "OpenBareMap-Alps-East.img",
-  "garminPackageRevision": "2.0.1-trail-detail-r1",
-  "styleRevision": "2.0.0-alps-east-r1",
-  "garminContextBounds": [
-    12.69,
-    45.63,
-    16.65,
-    48.3
-  ],
-  "requireBogFeatures": false,
-  "terrainProvider": "copernicus-glo30",
-  "terrainAttribution": "Copernicus DEM GLO-30 · European Union / ESA · DLR / Airbus",
-  "terrainNotice": "Alps - East elevation: Copernicus DEM GLO-30 Public (AWS 2021 release).\n\nproduced using Copernicus WorldDEM-30 © DLR e.V. 2010-2014 and © Airbus Defence and Space GmbH 2014-2018 provided under COPERNICUS by the European Union and ESA; all rights reserved\n\nThe organisations in charge of the Copernicus programme by law or by delegation do not incur any liability for any use of the Copernicus WorldDEM-30.\n\nLicense: https://dataspace.copernicus.eu/sites/default/files/media/files/2025-06/copernicus_contributing_mission_data_access_v2_cop_dem_licenses.pdf\nSource: https://registry.opendata.aws/copernicus-dem/\nVertical datum: EGM2008 orthometric metres. Native approximately 30 m cells are bilinearly resampled to point-aligned Int16 HGT for the shared terrain pipeline. Ocean-only cells absent from the official public inventory are zero.\n",
-  "inspectionNames": [
-    "Schladming",
-    "Kranjska Gora"
-  ],
+  "coverage": "Eastern Austrian Alps, Julian Alps and Karawanks, joining the existing Dolomites around East Tyrol and Friuli.",
+  "destinationLabels": {
+    "bled": "Bled",
+    "dachstein": "Hoher Dachstein",
+    "island": "Alps - East",
+    "karawanks": "Stol",
+    "katschberg": "Katschberg",
+    "kranjska-gora": "Kranjska Gora",
+    "lienz": "Lienz",
+    "schladming": "Schladming",
+    "schneeberg": "Schneeberg",
+    "tarvisio": "Tarvisio",
+    "triglav": "Triglav"
+  },
   "destinations": {
+    "bled": [
+      14.1136,
+      46.369,
+      12
+    ],
+    "dachstein": [
+      13.605,
+      47.475,
+      12
+    ],
     "island": [
       14.67,
       46.965,
       7
     ],
-    "schladming": [
-      13.6862,
-      47.3941,
+    "karawanks": [
+      14.173,
+      46.433,
       12
     ],
     "katschberg": [
@@ -84,9 +55,24 @@
       47.056,
       12
     ],
+    "kranjska-gora": [
+      13.784,
+      46.4845,
+      12
+    ],
     "lienz": [
       12.769,
       46.828,
+      12
+    ],
+    "schladming": [
+      13.6862,
+      47.3941,
+      12
+    ],
+    "schneeberg": [
+      15.805,
+      47.767,
       12
     ],
     "tarvisio": [
@@ -98,58 +84,94 @@
       13.8369,
       46.3783,
       12
-    ],
-    "kranjska-gora": [
-      13.784,
-      46.4845,
-      12
-    ],
-    "karawanks": [
-      14.173,
-      46.433,
-      12
+    ]
+  },
+  "garminContextBounds": [
+    12.69,
+    45.63,
+    16.65,
+    48.3
+  ],
+  "garminFamilyId": 4854,
+  "garminFilename": "OpenBareMap-Alps-East-Glaciers.img",
+  "garminPackageRevision": "2.0.1-glacier-r1",
+  "garminTileStartId": 48540001,
+  "garminUseSourceOutline": true,
+  "gridCRS": "EPSG:25833",
+  "gridExtent": [
+    310000,
+    630000,
+    5050000,
+    5360000
+  ],
+  "gridName": "ETRS89 / UTM 33N",
+  "gridSource": "utm-grid",
+  "id": "alps-east",
+  "ignoreSourceHeaderBounds": true,
+  "inspectionNames": [
+    "Schladming",
+    "Kranjska Gora"
+  ],
+  "label": "Alps - East",
+  "mapVersion": "2.0.1",
+  "maxzoom": 14,
+  "minorWaterwayMinzoom": 10,
+  "minzoom": 4,
+  "name": "OpenBareMap Alps - East",
+  "nativeLanguage": "de",
+  "permanentIce": true,
+  "permanentIceLayer": "permanent_ice",
+  "projectedCRS": "EPSG:25832",
+  "requireBogFeatures": false,
+  "sourceBaseURL": "https://download.geofabrik.de/europe/",
+  "sourceCacheRegion": "alps",
+  "sourceDate": "2026-11-16",
+  "sourceSlugs": [
+    "alps"
+  ],
+  "styleRevision": "2.0.1-glacier-r1",
+  "terrainAttribution": "Copernicus DEM GLO-30 \u00b7 European Union / ESA \u00b7 DLR / Airbus",
+  "terrainBounds": [
+    12,
+    45,
+    17,
+    49
+  ],
+  "terrainNotice": "Alps - East elevation: Copernicus DEM GLO-30 Public (AWS 2021 release).\n\nproduced using Copernicus WorldDEM-30 \u00a9 DLR e.V. 2010-2014 and \u00a9 Airbus Defence and Space GmbH 2014-2018 provided under COPERNICUS by the European Union and ESA; all rights reserved\n\nThe organisations in charge of the Copernicus programme by law or by delegation do not incur any liability for any use of the Copernicus WorldDEM-30.\n\nLicense: https://dataspace.copernicus.eu/sites/default/files/media/files/2025-06/copernicus_contributing_mission_data_access_v2_cop_dem_licenses.pdf\nSource: https://registry.opendata.aws/copernicus-dem/\nVertical datum: EGM2008 orthometric metres. Native approximately 30 m cells are bilinearly resampled to point-aligned Int16 HGT for the shared terrain pipeline. Ocean-only cells absent from the official public inventory are zero.\n",
+  "terrainProvider": "copernicus-glo30",
+  "townlands": false,
+  "validationAnchors": {
+    "bled": [
+      14.1136,
+      46.369
     ],
     "dachstein": [
       13.605,
-      47.475,
-      12
+      47.475
     ],
-    "schneeberg": [
-      15.805,
-      47.767,
-      12
-    ],
-    "bled": [
-      14.1136,
-      46.369,
-      12
-    ]
-  },
-  "destinationLabels": {
-    "island": "Alps - East",
-    "schladming": "Schladming",
-    "katschberg": "Katschberg",
-    "lienz": "Lienz",
-    "tarvisio": "Tarvisio",
-    "triglav": "Triglav",
-    "kranjska-gora": "Kranjska Gora",
-    "karawanks": "Stol",
-    "dachstein": "Hoher Dachstein",
-    "schneeberg": "Schneeberg",
-    "bled": "Bled"
-  },
-  "validationAnchors": {
-    "schladming": [
-      13.6862,
-      47.3941
+    "karawanks": [
+      14.173,
+      46.433
     ],
     "katschberg": [
       13.6159,
       47.056
     ],
+    "kranjska-gora": [
+      13.784,
+      46.4845
+    ],
     "lienz": [
       12.769,
       46.828
+    ],
+    "schladming": [
+      13.6862,
+      47.3941
+    ],
+    "schneeberg": [
+      15.805,
+      47.767
     ],
     "tarvisio": [
       13.575,
@@ -158,26 +180,6 @@
     "triglav": [
       13.8369,
       46.3783
-    ],
-    "kranjska-gora": [
-      13.784,
-      46.4845
-    ],
-    "karawanks": [
-      14.173,
-      46.433
-    ],
-    "dachstein": [
-      13.605,
-      47.475
-    ],
-    "schneeberg": [
-      15.805,
-      47.767
-    ],
-    "bled": [
-      14.1136,
-      46.369
     ]
   }
 }

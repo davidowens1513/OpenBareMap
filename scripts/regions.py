@@ -23,6 +23,11 @@ def region_path(region, name):
         raise ValueError('Unknown region: ' + region)
     return ROOT/name if region == 'ireland' else ROOT/'regions'/region/name
 
+def basemap_attribution(edition):
+    text = '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap contributors</a>'
+    note = edition.get('permanentIceSourceNote')
+    return text + (' · ' + note if note else '')
+
 def active_map(region='ireland'):
     selected=json.loads(region_path(region, 'active-map.json').read_text())
     for item in selected['datasets'].values():
@@ -67,11 +72,13 @@ def region_style(region='ireland'):
         minor.update(id='waterway-minor',minzoom=p['minorWaterwayMinzoom'],filter=['!',major['filter']])
         style['layers'].insert(index+1,minor)
     if p.get('permanentIce'):
+        if p.get('permanentIceSourceNote'):
+            style['sources']['basemap']['attribution'] = basemap_attribution(p)
         landcover = next(layer for layer in style['layers'] if layer['id'] == 'landcover')
         landcover['filter'][1][2][1].extend(PERMANENT_ICE)
         index = next(i for i, layer in enumerate(style['layers']) if layer['id'] == 'cliffs-base')
         style['layers'][index:index] = [
-            {'id': kind, 'type': 'fill', 'source': 'basemap', 'source-layer': 'landcover',
+            {'id': kind, 'type': 'fill', 'source': 'basemap', 'source-layer': p.get('permanentIceLayer', 'landcover'),
              'filter': ['==', ['get', 'class'], kind],
              'paint': {'fill-color': color, 'fill-outline-color': outline, 'fill-opacity': 0.82}}
             for kind, (_, color, outline, _) in PERMANENT_ICE.items()

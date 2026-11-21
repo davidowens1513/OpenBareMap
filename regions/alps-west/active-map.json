@@ -3,12 +3,12 @@
   "coverage": "French and Italian Western Alps from the Mediterranean to Mont Blanc, including the full Tour du Mont Blanc and its Swiss approaches.",
   "datasets": {
     "basemap": {
-      "bytes": 924540928,
-      "path": "releases/alps-west/2.0.0/maps/basemap.mbtiles",
-      "sha256": "32c03371e280df0203e4ef79cced41a8402435b66502f86c81b01f2426975729",
+      "bytes": 926093312,
+      "path": "releases/alps-west/2.0.1/maps/basemap.mbtiles",
+      "sha256": "33b4a39b9befd5727e3aa3d25f66eec79079f55ebc34cd67e4c20c9fbdf25f84",
       "validation": {
-        "empty_tile_count": 369,
-        "logical_tiles_sha256": "4d6598c91041ff928e267df4e0d7c2b7d572185ec49adf6d547fca4a6d620a4a",
+        "empty_tile_count": 368,
+        "logical_tiles_sha256": "009ed752f411938fb1a6dbc125962448561a8715267d2fccbe640bb8d71cecca",
         "tile_count": 28781
       }
     },
@@ -45,8 +45,8 @@
   },
   "format": "openbaremap-development-viewer-v1",
   "localBorders": false,
-  "mapVersion": "2.0.0",
+  "mapVersion": "2.0.1",
   "region": "alps-west",
-  "storageRevision": "2.0.0-alps-west-r3",
-  "styleRevision": "2.0.0-alps-west-r1"
+  "storageRevision": "2.0.1-glacier-r1",
+  "styleRevision": "2.0.1-glacier-r1"
 }

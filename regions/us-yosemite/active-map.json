@@ -3,12 +3,12 @@
   "coverage": "Yosemite National Park, including Yosemite Valley, Tuolumne Meadows and the main approaches.",
   "datasets": {
     "basemap": {
-      "bytes": 33996800,
-      "path": "releases/us-yosemite/2.0.0/maps/basemap.mbtiles",
-      "sha256": "b5f9cc664efdb155836f9b7d1737461a75d30c05b9ade9aa41123ae6fdef59e9",
+      "bytes": 34058240,
+      "path": "releases/us-yosemite/2.0.1/maps/basemap.mbtiles",
+      "sha256": "b1c5ec72af6996a8c69d1bd7b2d52c5972777189ee800350de1e5faffccad4a4",
       "validation": {
         "empty_tile_count": 4,
-        "logical_tiles_sha256": "f32b01656e8f923930b54b849860a68bc2eb319ddf4c4eed51fe61de78075d95",
+        "logical_tiles_sha256": "7aa1f1f2577ea7f4cf1ea1747b5def03253051ad31a811fab6d39de6567c2fa1",
         "tile_count": 4160
       }
     },
@@ -45,8 +45,8 @@
   },
   "format": "openbaremap-development-viewer-v1",
   "localBorders": false,
-  "mapVersion": "2.0.0",
+  "mapVersion": "2.0.1",
   "region": "us-yosemite",
-  "storageRevision": "2.0.0-us-yosemite-r3",
-  "styleRevision": "2.0.0-us-yosemite-r1"
+  "storageRevision": "2.0.1-glacier-r1",
+  "styleRevision": "2.0.1-glacier-r1"
 }

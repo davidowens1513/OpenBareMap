@@ -1,0 +1,375 @@
+{
+  "coverage": "Olympic National Park, including the mountain interior, rainforest valleys, coastal sections and principal trailhead approaches.",
+  "coverageAnchors": {
+    "forks": {
+      "coordinate": [
+        -124.385,
+        47.951
+      ],
+      "featuresInNeighbouringDetailedTiles": 4102
+    },
+    "hoh-rain-forest": {
+      "coordinate": [
+        -123.934,
+        47.86
+      ],
+      "featuresInNeighbouringDetailedTiles": 298
+    },
+    "hurricane-ridge": {
+      "coordinate": [
+        -123.498,
+        47.969
+      ],
+      "featuresInNeighbouringDetailedTiles": 169
+    },
+    "lake-crescent": {
+      "coordinate": [
+        -123.857,
+        48.058
+      ],
+      "featuresInNeighbouringDetailedTiles": 255
+    },
+    "port-angeles": {
+      "coordinate": [
+        -123.43,
+        48.118
+      ],
+      "featuresInNeighbouringDetailedTiles": 12670
+    },
+    "quinault": {
+      "coordinate": [
+        -123.845,
+        47.466
+      ],
+      "featuresInNeighbouringDetailedTiles": 590
+    },
+    "rialto-beach": {
+      "coordinate": [
+        -124.633,
+        47.919
+      ],
+      "featuresInNeighbouringDetailedTiles": 593
+    }
+  },
+  "datasets": {
+    "basemap": {
+      "empty_tile_count": 233,
+      "logical_tiles_sha256": "e846bbe452879f365b33265b1855a66f03631f36498a49212a1cbc41ba5e45ae",
+      "tile_count": 6832
+    },
+    "grid": {
+      "empty_tile_count": 0,
+      "logical_tiles_sha256": "0dcc357505b70487055b085f1420cc2802f1791691217acae9a306ef290f17e9",
+      "tile_count": 9801
+    },
+    "hillshade": {
+      "empty_tile_count": 0,
+      "logical_tiles_sha256": "fa3d9dd117cdcc95679af9a5a33a4edc0e2c4727209117e3b70ed1ae04e0ac0a",
+      "tile_count": 1379
+    },
+    "topography": {
+      "empty_tile_count": 43545,
+      "logical_tiles_sha256": "200e4f4df78f6c0860fd4769f7cb16066d07fff209599e88e386547a73560bd9",
+      "tile_count": 53477
+    }
+  },
+  "detail": {
+    "basemap": {
+      "boundaries": 2233,
+      "contours": 0,
+      "permanentIce": {
+        "glacier": 366,
+        "permanent_snow": 23
+      }
+    },
+    "topography": {
+      "boundaries": 0,
+      "contours": 334163
+    }
+  },
+  "garmin": {
+    "familyId": 4862,
+    "garminPackageRevision": "2.0.1-glacier-r1",
+    "inspection": {
+      "anchorLabels": {
+        "Mount Olympus": "Mount Olympus",
+        "Port Angeles": "Port Angeles"
+      },
+      "bounds": [
+        -124.98055458068848,
+        47.3291015625,
+        -122.9150390625,
+        48.51571083068848
+      ],
+      "coastPolygonsByLevel": {
+        "0": {
+          "0x32": 14,
+          "0x54": 595
+        },
+        "1": {
+          "0x32": 12,
+          "0x54": 468
+        },
+        "2": {
+          "0x32": 12,
+          "0x54": 365
+        },
+        "3": {
+          "0x32": 12,
+          "0x54": 126
+        },
+        "4": {
+          "0x32": 12,
+          "0x54": 32
+        }
+      },
+      "contoursByLevel": {
+        "0": {
+          "0x10009": 343,
+          "0x20": 55936,
+          "0x22": 12897
+        },
+        "1": {
+          "0x10009": 341,
+          "0x20": 45668,
+          "0x22": 10359
+        },
+        "2": {
+          "0x10009": 333,
+          "0x22": 9861
+        },
+        "3": {
+          "0x10008": 8981,
+          "0x10009": 287
+        },
+        "4": {
+          "0x10009": 180
+        }
+      },
+      "lineInstancesAtHighestDetail": {
+        "0x10001": 495,
+        "0x10002": 157,
+        "0x10003": 1,
+        "0x10004": 69,
+        "0x10005": 44,
+        "0x10006": 25,
+        "0x10009": 343,
+        "0x1000a": 21,
+        "0x1000b": 117,
+        "0x14": 2,
+        "0x16": 2221,
+        "0x18": 48155,
+        "0x1a": 1,
+        "0x1c": 168,
+        "0x1e": 65,
+        "0x1f": 400,
+        "0x2": 206,
+        "0x20": 55936,
+        "0x22": 12897,
+        "0x4": 151,
+        "0x6": 4728,
+        "0x7": 8476,
+        "0xa": 6443
+      },
+      "logicalCombinedSHA256": "9ca44f813efa5ab9e74f03986b05a4771928e22c19be4348a44eb2755f6a58a6",
+      "logicalHashNote": "Internal file names, sizes and payloads; only CommonHeader creation-date bytes 14..20 are zeroed for hashing. IMG archive headers are excluded. Output bytes are never modified.",
+      "logicalTileSHA256": {
+        "48620001.img": "6382b8a0790415edbd9bceab2dfc24276f20f77a7f1c80a1f3f4d9ca61f8a94b",
+        "48620002.img": "9ef43c6154bfb52622413d0db318b6cf519c9b141d01758057ee4a7484402991",
+        "48620003.img": "9f4a43e444b88fbd50c2c67a931e3bb5cc458fdca96cd1f79f17a1158402efad",
+        "48620004.img": "de270f34e57976dad1775e9fd85a1bf5063352069ff512c082fd80efeee3080d",
+        "48620005.img": "99d74c503be4307bfbe59fc80040b33052602ef6f6878e77b1cb1bf81538a816",
+        "48620006.img": "1fd2e3f6d8f69650f301dcece7d18ef10e83907a62af517c62ac27a2f792d226",
+        "48620007.img": "d62f4bc49c91874645cca8767a6784aa231e3acf83e8dea7e3f6b6972f17f2a1",
+        "48620008.img": "e6da85fe9d364cb9d6b196268875b3611497bfb1c092a676d9c74dd6def2dd12",
+        "48620009.img": "04572db08e2198715f4584054d2b5a7d2a5a5682fdb6d1dc9e3ce6cef9d577fd",
+        "48620010.img": "15b5ef576fa87e99b1ce749af2a0b9b1929fb29de3b92de9100a1ec466e08b47",
+        "48620011.img": "7a0029b786fd8e65cf32af7f527f03b70770df4e4b21c6bd965f2760ab6e14e0"
+      },
+      "pointInstancesAtHighestDetail": {
+        "0x100": 3,
+        "0x10001": 158,
+        "0x10002": 751,
+        "0x10003": 311,
+        "0x10006": 1434,
+        "0x2f0b": 774,
+        "0x600": 4,
+        "0x650c": 476,
+        "0x6603": 167,
+        "0x6615": 32,
+        "0x6616": 375,
+        "0x800": 6,
+        "0xb00": 61,
+        "0xc00": 24
+      },
+      "polygonInstancesAtHighestDetail": {
+        "0x10101": 38,
+        "0x10102": 260,
+        "0x10104": 282,
+        "0x10105": 90,
+        "0x10107": 4,
+        "0x10109": 470,
+        "0x1010a": 94,
+        "0x1010b": 47,
+        "0x1010c": 61,
+        "0x1010d": 3,
+        "0x13": 56422,
+        "0x32": 14,
+        "0x3c": 1875,
+        "0x50": 2477,
+        "0x51": 148,
+        "0x54": 595
+      },
+      "routing": false,
+      "subfileBytes": {
+        "DEM": 14271543,
+        "LBL": 166743,
+        "MPS": 879,
+        "RGN": 24503449,
+        "SRT": 912,
+        "TRE": 279942,
+        "TYP": 3113
+      },
+      "tiles": 11
+    },
+    "output": {
+      "bytes": 39337984,
+      "path": "regions/us-olympic/garmin/dist/OpenBareMap-US-Olympic-Glaciers.img",
+      "sha256": "165f915d1e9f2b1cae5804000d9a0e34abde977f35c2cb3a7018e20b7b36b938"
+    },
+    "routing": false,
+    "status": "compiled and structurally inspected; hardware rendering pending"
+  },
+  "geometryProcessing": {
+    "permanentIce": {
+      "glacier": 28,
+      "permanent_snow": 3
+    }
+  },
+  "irelandGarminPackageRevision": "2.0.1-trail-detail-r1",
+  "irelandPreserved": true,
+  "labelGlyphs": {
+    "Open Sans Bold": true,
+    "Open Sans Regular": true,
+    "Open Sans Semibold": true
+  },
+  "landBackground": {
+    "forks": {
+      "coordinate": [
+        -124.385,
+        47.951
+      ],
+      "verifiedZooms": [
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    },
+    "hoh-rain-forest": {
+      "coordinate": [
+        -123.934,
+        47.86
+      ],
+      "verifiedZooms": [
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    },
+    "hurricane-ridge": {
+      "coordinate": [
+        -123.498,
+        47.969
+      ],
+      "verifiedZooms": [
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    },
+    "lake-crescent": {
+      "coordinate": [
+        -123.857,
+        48.058
+      ],
+      "verifiedZooms": [
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    },
+    "port-angeles": {
+      "coordinate": [
+        -123.43,
+        48.118
+      ],
+      "verifiedZooms": [
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    },
+    "quinault": {
+      "coordinate": [
+        -123.845,
+        47.466
+      ],
+      "verifiedZooms": [
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    },
+    "rialto-beach": {
+      "coordinate": [
+        -124.633,
+        47.919
+      ],
+      "verifiedZooms": [
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    }
+  },
+  "packages": {
+    "android": {
+      "checkedFiles": 47,
+      "nativeDeviceRenderingTested": false,
+      "sourceFiles": {
+        "basemap": "maps/basemap.mbtiles",
+        "coast": "maps/coast.mbtiles",
+        "hillshade": "maps/hillshade.mbtiles",
+        "topography": "maps/topography.mbtiles",
+        "utm-grid": "maps/grid.mbtiles"
+      }
+    },
+    "ios": {
+      "checkedFiles": 50,
+      "nativeDeviceRenderingTested": false,
+      "sourceFiles": {
+        "basemap": "maps/basemap.mbtiles",
+        "coast": "maps/coast.mbtiles",
+        "hillshade": "maps/hillshade.mbtiles",
+        "topography": "maps/topography.mbtiles",
+        "utm-grid": "maps/grid.mbtiles"
+      }
+    }
+  },
+  "region": "us-olympic",
+  "status": "automated checks passed; visual and hardware acceptance pending"
+}

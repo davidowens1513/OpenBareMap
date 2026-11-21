@@ -1,5 +1,28 @@
 # Maintaining regional editions
 
+## Permanent ice updates
+
+OpenBareMap 2.0.1 adds mapped glaciers and permanent snowfields to five US
+National Parks editions, all five Alpine editions, the three Norway editions
+and the Pyrenees. The map key distinguishes the two features. This release
+preserves the accepted contours, hillshade, grids and non-ice basemap layers.
+Permanent ice outlines come from the existing locked OpenStreetMap snapshots.
+For the Pyrenees, the map attribution notes that the 2025 survey measured a
+smaller active Aneto glacier than the mapped OpenStreetMap outline.
+
+Run `PYTHONPATH=work/python python3 scripts/upgrade_permanent_ice.py <region>`
+for an accepted 2.0.0 region. The script verifies the prior checksums, saves
+the previous regional resources in `work/glacier-updates/previous/`, and stages
+the new Garmin image, mobile bundles, previews and map key. The old map
+versions remain available under their existing public URLs.
+
+Upload and verify completed releases with
+`scripts/stage_permanent_ice_updates.py --upload-wave <1–5>`. Once all waves
+have built, run the same script without options to stage the website and
+the updated nine-map US collection, then run it with `--publish-assets`
+to verify the collections, check preview byte ranges and update the online
+catalogues. Deploy the final website archive to the production Pages project.
+
 ## Canadian Rockies
 
 Three editions use park footprints and buffered approaches. Banff and Jasper

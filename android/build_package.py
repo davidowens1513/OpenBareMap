@@ -5,7 +5,7 @@ import argparse,hashlib,json,shutil,sqlite3,sys,zipfile,subprocess
 ROOT=Path(__file__).resolve().parents[1]
 sys.path.insert(0,str(ROOT/'scripts'))
 from package_resources import build_capped_coast, copy_map_file
-from regions import REGIONS,terrain_file,apply_terrain_notice,profile, active_map, region_style, provenance_files, region_path
+from regions import REGIONS,terrain_file,apply_terrain_notice,profile, active_map, region_style, provenance_files, region_path, basemap_attribution
 
 def sha(p):
     with p.open('rb') as f:return hashlib.file_digest(f,'sha256').hexdigest()
@@ -36,7 +36,7 @@ def assemble(output, region='ireland'):
         source=style['sources'][name];source.pop('tiles',None);source['url']='mbtiles://{package}/'+path
     if edition['townlands']:style['sources']['townlands']['data']='{package}/townlands.geojson'
     style['glyphs']='{package}/fonts/{fontstack}/{range}.pbf';style['sprite']='{package}/sprites/outdoors'
-    style['sources']['basemap']['attribution']='© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap contributors</a>'
+    style['sources']['basemap']['attribution']=basemap_attribution(edition)
     style['sources']['hillshade']['attribution']=edition.get('terrainAttribution','Terrain Tiles / Mapzen · Copernicus EU-DEM · USGS · NOAA')
     write(package/'style.json',style)
     write(package/'manifest.json',{'packageFormat':'openbaremap-android-resources-v1','mapVersion':active.get('mapVersion','2.0.0'),'region':region,'displayName':edition['label'],'bounds':edition['bounds'],'coverage':edition.get('coverage',edition['label']),'storageRevision':active.get('storageRevision','original'),'styleRevision':active.get('styleRevision','shared'),'regionStyleSHA256':sha(region_path(region,'style.json')) if region!='ireland' else sha(ROOT/'style/openbaremap.json'),'sourceCommit':subprocess.check_output(['git','rev-parse','HEAD'],cwd=ROOT,text=True).strip(),'sourceStyleSHA256':sha(ROOT/'style/openbaremap.json'),'renderer':'MapLibre Native Android','sourceFiles':files,'databases':databases,'contourIntervalMetres':active.get('contourIntervalMetres',10),'osmSnapshot':json.loads(region_path(region,'sources.lock.json').read_text())['osm']['snapshot_date'],'inheritedAssets':('Pinned OpenBareMap 1.1 townland points, fixed grid, glyphs and original patterns.' if edition['townlands'] else f"Pinned font glyphs and original patterns; generated {edition['gridName']} ({edition['gridCRS']})."),'requiresRuntimePathResolution':True})

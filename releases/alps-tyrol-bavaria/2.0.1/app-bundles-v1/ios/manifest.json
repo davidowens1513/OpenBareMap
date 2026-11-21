@@ -1,0 +1,35 @@
+{
+  "bytes": 1279459213,
+  "datasets": {
+    "basemap": {
+      "path": "maps/basemap.mbtiles",
+      "sha256": "cea0a77fa29ab44bd88aa59b973922e3bb46dfd8a9266f78a7608f7a3f38d331"
+    },
+    "coast": {
+      "derived_from": "21384cf932491f1dbff27b2f9d5307606a6a275bb8cfae6f4c4380621334075a",
+      "maxzoom": 12,
+      "operation": "Preserve land-layer MVT bytes only through zoom 12; omit other layers.",
+      "path": "maps/coast.mbtiles",
+      "sha256": "ac1f72c71364c3f842d8f6f3350f35aff3a37f3f589d7e46d481feaaee767b47"
+    },
+    "grid": {
+      "path": "maps/grid.mbtiles",
+      "sha256": "f4e8d483c0f79e4c060e397468ddd793c0b7f29fb51743bc55faeae27d5479af"
+    },
+    "hillshade": {
+      "path": "maps/hillshade.mbtiles",
+      "sha256": "5a5851c642a0cbab63ff7eba32a66865125d40446a67add0097336155863a1c9"
+    },
+    "topography": {
+      "path": "maps/topography.mbtiles",
+      "sha256": "21384cf932491f1dbff27b2f9d5307606a6a275bb8cfae6f4c4380621334075a"
+    }
+  },
+  "instructionsSHA256": "8e889aef8185338fec83a1b3264501af1dceda93bdb75e4400c8949991a420ac",
+  "instructionsURL": "https://downloads.appsbyonzy.dev/OpenBareMap/alps-tyrol-bavaria/2.0.1/app-bundles-v1/ios/instructions.txt",
+  "localPath": "releases/alps-tyrol-bavaria/2.0.1/app-bundles-v1/ios/OpenBareMap-Alps-Tyrol-Bavaria-iOS-Bundle.zip",
+  "mapManifestSHA256": "670d5662fd0be89d2b45e9003c34013e2c6a35cd6f55164651ab259baf8f7a4c",
+  "r2Key": "OpenBareMap/alps-tyrol-bavaria/2.0.1/app-bundles-v1/ios/OpenBareMap-Alps-Tyrol-Bavaria-iOS-Bundle.zip",
+  "sha256": "816b4ea2ab8ca5a989d481b8821328b8e21f3a9fb992e27fcd31a20dedc9923a",
+  "url": "https://downloads.appsbyonzy.dev/OpenBareMap/alps-tyrol-bavaria/2.0.1/app-bundles-v1/ios/OpenBareMap-Alps-Tyrol-Bavaria-iOS-Bundle.zip"
+}

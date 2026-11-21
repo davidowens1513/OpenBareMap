@@ -3,7 +3,7 @@
 import argparse,hashlib,json,shutil,sqlite3,sys,tarfile,urllib.request
 from pathlib import Path
 from concurrent.futures import ThreadPoolExecutor
-from regions import terrain_html,ROOT,active_map,profile,region_style,REGIONS
+from regions import terrain_html,ROOT,active_map,profile,region_style,basemap_attribution,REGIONS
 from pmtiles.convert import mbtiles_to_pmtiles
 from pmtiles.reader import Reader,MmapSource
 from package_resources import build_capped_coast
@@ -54,7 +54,7 @@ def build(output,origin,regions=None,cached_preview=None):
     name='grid' if source_name==p['gridSource'] else source_name
     source.pop('tiles',None);source['url']='pmtiles://'+origin.rstrip('/')+'/data/'+region+'/'+name+'.pmtiles'
    elif source_name=='townlands':source['data']=origin.rstrip('/')+'/assets/townlands.geojson'
-  style['sources']['basemap']['attribution']='© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap contributors</a>'
+  style['sources']['basemap']['attribution']=basemap_attribution(p)
   style['sources']['hillshade']['attribution']=p.get('terrainAttribution','Terrain Tiles / Mapzen · Copernicus EU-DEM · USGS · NOAA')+' · <a href="'+origin.rstrip('/')+'/assets/terrain-attribution.html">Terrain attribution</a>'
   style['sources'][p['gridSource']]['attribution']=p['gridName']+' ('+p['gridCRS']+')'
   style['glyphs']=origin.rstrip('/')+'/assets/fonts/{fontstack}/{range}.pbf';style['sprite']=origin.rstrip('/')+'/assets/sprites/outdoors'

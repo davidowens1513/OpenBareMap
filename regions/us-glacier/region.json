@@ -71,8 +71,8 @@
     49.002103
   ],
   "garminFamilyId": 4863,
-  "garminFilename": "OpenBareMap-US-Glacier.img",
-  "garminPackageRevision": "2.0.1-trail-detail-r1",
+  "garminFilename": "OpenBareMap-US-Glacier-Glaciers.img",
+  "garminPackageRevision": "2.0.1-glacier-r1",
   "garminTileStartId": 48630001,
   "garminUseSourceOutline": true,
   "gridCRS": "EPSG:32612",
@@ -92,7 +92,7 @@
   ],
   "label": "Glacier",
   "labelGlyphs": "ABCDEFGHIJKLMNOPQRSTUVWXYZ",
-  "mapVersion": "2.0.0",
+  "mapVersion": "2.0.1",
   "maxzoom": 14,
   "minorWaterwayMinzoom": 10,
   "minzoom": 4,
@@ -107,6 +107,8 @@
     "boundary",
     "hiking_route"
   ],
+  "permanentIce": true,
+  "permanentIceLayer": "permanent_ice",
   "projectedCRS": "EPSG:32612",
   "requireBogFeatures": false,
   "sourceBaseOverrides": {
@@ -118,7 +120,7 @@
   "sourceSlugs": [
     "montana"
   ],
-  "styleRevision": "2.0.0-us-glacier-r1",
+  "styleRevision": "2.0.1-glacier-r1",
   "terrainAttribution": "Copernicus DEM GLO-30 \u00b7 European Union / ESA \u00b7 DLR / Airbus",
   "terrainBounds": [
     -115,

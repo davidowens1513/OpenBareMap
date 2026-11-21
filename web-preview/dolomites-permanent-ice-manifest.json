@@ -1,0 +1,41 @@
+{
+  "regions": {
+    "dolomites": {
+      "basemap": {
+        "sourceSHA256": "dd3d881f4fa0d2cf9a962a00034dd60bd5007ebce778ed634b40cdbf7fd1bd68",
+        "bytes": 416683432,
+        "sha256": "21598273100fb20f3d37f45b6d22c99e0a2faa2b651142f3f93b0fc8185c4b8f",
+        "tiles": 13259
+      },
+      "grid": {
+        "sourceSHA256": "c50ff7859253da33995da17d9c0bc2daff8b0c9660b83fdcfb261aa0d19ffbfb",
+        "bytes": 3979690,
+        "sha256": "e47e3a34ab6d675a99ff7d1d944ce36185112839d2a9fcdc0f9977e37d63f484",
+        "tiles": 13232
+      },
+      "hillshade": {
+        "sourceSHA256": "6633dc950536cef2a123259756f90fa39ef102ff315cbdde70616e7e474c8213",
+        "bytes": 136364835,
+        "sha256": "639dcf12828207623914bf57e3f8fcacc57df6f3a6ee1ebef283db8622c76657",
+        "tiles": 3109
+      },
+      "topography": {
+        "sourceSHA256": "68a552d522566b2489f8cb692b6835dbf8b0d8696be4858387d0fc55d31fed4b",
+        "bytes": 253954178,
+        "sha256": "948fdece81067c2ea90d7637c0400f635ec8567d2031658744e4708e8ba79cca",
+        "tiles": 250107
+      },
+      "coast": {
+        "sourceSHA256": "07006ed7386c9e29e9d142ef69f5f2fdead0fcca5d91736ef7cdd607a67d1411",
+        "bytes": 1993961,
+        "sha256": "dcaa15c175c2d4317352bbff737279de730a40627f7e1288d564dffe465da254",
+        "tiles": 18009
+      }
+    }
+  },
+  "pmtilesPython": "3.8.1",
+  "pmtilesJS": "4.5.0",
+  "librarySHA256": "caf981bc46f6327ee7e65d5dc964d89d38a69f60edca2bd4c5c890c21b554c6c",
+  "dataOrigin": "https://downloads.appsbyonzy.dev/OpenBareMap/dolomites/2.0.1/preview",
+  "scope": "Complete selected map tiles; no regional or zoom sampling."
+}

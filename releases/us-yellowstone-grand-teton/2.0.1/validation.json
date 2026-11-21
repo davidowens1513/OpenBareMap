@@ -1,0 +1,433 @@
+{
+  "coverage": "Yellowstone and Grand Teton national parks, the John D. Rockefeller Jr. Memorial Parkway and their gateway approaches.",
+  "coverageAnchors": {
+    "cooke-city": {
+      "coordinate": [
+        -109.933,
+        45.02
+      ],
+      "featuresInNeighbouringDetailedTiles": 598
+    },
+    "flagg-ranch": {
+      "coordinate": [
+        -110.668,
+        44.106
+      ],
+      "featuresInNeighbouringDetailedTiles": 585
+    },
+    "gardiner": {
+      "coordinate": [
+        -110.706,
+        45.032
+      ],
+      "featuresInNeighbouringDetailedTiles": 1128
+    },
+    "grant-village": {
+      "coordinate": [
+        -110.555,
+        44.391
+      ],
+      "featuresInNeighbouringDetailedTiles": 488
+    },
+    "jackson": {
+      "coordinate": [
+        -110.762,
+        43.48
+      ],
+      "featuresInNeighbouringDetailedTiles": 4968
+    },
+    "jenny-lake-trailhead": {
+      "coordinate": [
+        -110.722,
+        43.752
+      ],
+      "featuresInNeighbouringDetailedTiles": 667
+    },
+    "mammoth-hot-springs": {
+      "coordinate": [
+        -110.705,
+        44.977
+      ],
+      "featuresInNeighbouringDetailedTiles": 1089
+    },
+    "old-faithful": {
+      "coordinate": [
+        -110.828,
+        44.461
+      ],
+      "featuresInNeighbouringDetailedTiles": 1426
+    },
+    "west-yellowstone": {
+      "coordinate": [
+        -111.104,
+        44.662
+      ],
+      "featuresInNeighbouringDetailedTiles": 2148
+    }
+  },
+  "datasets": {
+    "basemap": {
+      "empty_tile_count": 52,
+      "logical_tiles_sha256": "3003534d65249cbde5f1950387248b3a25bb06667f4e195e6c16416e3f2f8796",
+      "tile_count": 12884
+    },
+    "grid": {
+      "empty_tile_count": 0,
+      "logical_tiles_sha256": "7037cb1dfb9d82573bf6541f7be8297f7c50eb3b61266e80bcf2847f9adfa624",
+      "tile_count": 13177
+    },
+    "hillshade": {
+      "empty_tile_count": 0,
+      "logical_tiles_sha256": "b5b206eaf16a9ebb0e4953dd0400166b8fe2687334765efe50ba34e38941a012",
+      "tile_count": 2337
+    },
+    "topography": {
+      "empty_tile_count": 58749,
+      "logical_tiles_sha256": "22621aad8a7921ec3ecf62bf92813cf11984ed0c1c223e19b681abf59662f362",
+      "tile_count": 77283
+    }
+  },
+  "detail": {
+    "basemap": {
+      "boundaries": 3412,
+      "contours": 0,
+      "permanentIce": {
+        "glacier": 586,
+        "permanent_snow": 0
+      }
+    },
+    "topography": {
+      "boundaries": 0,
+      "contours": 481808
+    }
+  },
+  "garmin": {
+    "familyId": 4858,
+    "garminPackageRevision": "2.0.1-glacier-r1",
+    "inspection": {
+      "anchorLabels": {
+        "Grand Teton": "Grand Teton",
+        "West Yellowstone": "West Yellowstone"
+      },
+      "bounds": [
+        -111.40145301818848,
+        43.3740234375,
+        -109.599609375,
+        45.26375770568848
+      ],
+      "coastPolygonsByLevel": {
+        "0": {
+          "0x32": 29,
+          "0x54": 59
+        },
+        "1": {
+          "0x32": 28,
+          "0x54": 59
+        },
+        "2": {
+          "0x32": 28,
+          "0x54": 59
+        },
+        "3": {
+          "0x32": 28,
+          "0x54": 59
+        },
+        "4": {
+          "0x32": 28,
+          "0x54": 59
+        }
+      },
+      "contoursByLevel": {
+        "0": {
+          "0x10009": 51,
+          "0x20": 72664,
+          "0x22": 18308
+        },
+        "1": {
+          "0x10009": 49,
+          "0x20": 56659,
+          "0x22": 14307
+        },
+        "2": {
+          "0x10009": 49,
+          "0x22": 13419
+        },
+        "3": {
+          "0x10008": 12172,
+          "0x10009": 48
+        },
+        "4": {
+          "0x10009": 48
+        }
+      },
+      "lineInstancesAtHighestDetail": {
+        "0x10001": 276,
+        "0x10002": 282,
+        "0x10003": 27,
+        "0x10004": 272,
+        "0x10005": 39,
+        "0x10006": 143,
+        "0x10009": 51,
+        "0x1000a": 28,
+        "0x1000b": 11,
+        "0x14": 3,
+        "0x16": 6000,
+        "0x18": 5845,
+        "0x1a": 2,
+        "0x1c": 281,
+        "0x1e": 94,
+        "0x1f": 540,
+        "0x2": 83,
+        "0x20": 72664,
+        "0x22": 18308,
+        "0x3": 109,
+        "0x4": 285,
+        "0x6": 4505,
+        "0x7": 9303,
+        "0xa": 2750
+      },
+      "logicalCombinedSHA256": "59ecb60bd7271e0b4ec4079e44685b8e524c5f23677d8ea2ef1017a0f4a29665",
+      "logicalHashNote": "Internal file names, sizes and payloads; only CommonHeader creation-date bytes 14..20 are zeroed for hashing. IMG archive headers are excluded. Output bytes are never modified.",
+      "logicalTileSHA256": {
+        "48580001.img": "b03223feacba96409beab222809dcc25ef8fe0d70e8a108be923ead567d6caf3",
+        "48580002.img": "1228bf112d8950bbc043b79eb24a774861ed7bee0e6bd9e81da0bcd8ade48f56",
+        "48580003.img": "4e9b5d8a8a9567f2338acd9874050fdd92dca9a6709898da8d7d8c8a47ddd259",
+        "48580004.img": "1422161121096cb35707c0401c51db144e2ca97627d56f56315fb4ab44107eae",
+        "48580005.img": "7af1f6a0092bc1e374c0e5c2caab60ece6c120068edcaadad0e9be3756fb7d5b",
+        "48580006.img": "0d1003bca5bf7d38bcbf338024028bdb0719b23b4b5a681940454d3ad3621985",
+        "48580007.img": "b8571d5a10f3218a4fdce3e25214a5ef0bd409e98622e3c47bfdbf3b4cfa6160",
+        "48580008.img": "f88e0c8de4c765b22bdcce202b744fcff92306a4ab477097d507735f04c49463",
+        "48580009.img": "e21cee6d91301f7dab5b33d6c50e7e270036f4c6f78a8bdeb358d69a0bc3173c",
+        "48580010.img": "ab48b977ffe842febb60e5bacfb3b28e34eb80ca387af667211940fd122fbd14",
+        "48580011.img": "4742c349bc557a40b2aabf6fe77052747ce3aa7efa784b6daa8c925373852b27",
+        "48580012.img": "d719b26c324b2a2b2d386177df4c59666e6d8a43782dbf3ee82010e4d6b5c674",
+        "48580013.img": "b49364859404d6274e5b755d020566bf77e2bb68dbc380bed5fbde76b1f4ce52",
+        "48580014.img": "2bb384f965220a15796bcdb5dfc1f997a99bbc0a9b86027ea00f648a55799485",
+        "48580015.img": "dc468365aeafee9fb58209e8de8f95d7ca9975ecb20163964709751e38cc82b3",
+        "48580016.img": "f16b1072b8d20fa7c2260aaae23630ff417411b0392eafcf5848b9a3aa0d207e",
+        "48580017.img": "7e4408bcdfeaab8c3293e84a74c5663da376d9af26cd6ae6977e67767f53cbd6",
+        "48580018.img": "50bf5b31b990e3699d564040ab25e5fb8e5a9081b25b8a6069232d935770e7ee",
+        "48580019.img": "5092a5b337abd275fed99d337fa8342aee36cc7e85fbef2ce7f5e460bac596ff",
+        "48580020.img": "93969267a3af364855c870fb42e3328110b6bb70ece67f4d4105eb7db8fc3815",
+        "48580021.img": "5c81e5b8d67afc7deb6c618802410c1b66b705d30fbf43d7667842f140be7040",
+        "48580022.img": "a9771cd64136023363d03726452565f2d41de3fd8bcc6539b0c34a1655774247",
+        "48580023.img": "25515c442db0f32840941b5b3bf465d775c7d22704379607c1a6f93e17d90a94",
+        "48580024.img": "84e014d64098cacf240b50a125d0b1f1ce1d55e031b739f17e62fde96da3699b",
+        "48580025.img": "2a58f26019f0891e239430f9b88a2a97f05f3894701be49b02ced37dbbe17cd8",
+        "48580026.img": "dafdcb2d8d472094b559e17173a5a888c4127e4b83ed84a3859d5dba12d9d62f",
+        "48580027.img": "22c59e0249f4532172c7896272e721b6a1d166b1d8c10a48dfdfccc14c52a9b5",
+        "48580028.img": "8f8b5a05635e9a1be61ad5e617d0983c5f710d32858dd8511194a9879ac59a5f"
+      },
+      "pointInstancesAtHighestDetail": {
+        "0x100": 6,
+        "0x10001": 164,
+        "0x10002": 1006,
+        "0x10003": 432,
+        "0x10006": 1343,
+        "0x2f0b": 1372,
+        "0x600": 6,
+        "0x650c": 83,
+        "0x6603": 508,
+        "0x6615": 65,
+        "0x6616": 664,
+        "0x800": 8,
+        "0xb00": 42,
+        "0xc00": 46
+      },
+      "polygonInstancesAtHighestDetail": {
+        "0x10101": 26,
+        "0x10102": 1234,
+        "0x10103": 361,
+        "0x10104": 3302,
+        "0x10105": 42,
+        "0x10106": 331,
+        "0x10109": 5644,
+        "0x1010a": 1352,
+        "0x1010b": 190,
+        "0x1010c": 63,
+        "0x13": 24195,
+        "0x32": 29,
+        "0x3c": 4921,
+        "0x50": 126299,
+        "0x51": 1690,
+        "0x54": 59
+      },
+      "routing": false,
+      "subfileBytes": {
+        "DEM": 25665438,
+        "LBL": 219241,
+        "MPS": 2693,
+        "RGN": 51236239,
+        "SRT": 912,
+        "TRE": 710384,
+        "TYP": 3113
+      },
+      "tiles": 28
+    },
+    "output": {
+      "bytes": 78090240,
+      "path": "regions/us-yellowstone-grand-teton/garmin/dist/OpenBareMap-US-Yellowstone-Grand-Teton-Glaciers.img",
+      "sha256": "6b7e447461c34f5f9886a7904c47753f37dfc47ba5e6e3885f9ba8d314a9eb85"
+    },
+    "routing": false,
+    "status": "compiled and structurally inspected; hardware rendering pending"
+  },
+  "geometryProcessing": {
+    "permanentIce": {
+      "glacier": 57,
+      "permanent_snow": 0
+    }
+  },
+  "irelandGarminPackageRevision": "2.0.1-trail-detail-r1",
+  "irelandPreserved": true,
+  "labelGlyphs": {
+    "Open Sans Bold": true,
+    "Open Sans Regular": true,
+    "Open Sans Semibold": true
+  },
+  "landBackground": {
+    "cooke-city": {
+      "coordinate": [
+        -109.933,
+        45.02
+      ],
+      "verifiedZooms": [
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    },
+    "flagg-ranch": {
+      "coordinate": [
+        -110.668,
+        44.106
+      ],
+      "verifiedZooms": [
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    },
+    "gardiner": {
+      "coordinate": [
+        -110.706,
+        45.032
+      ],
+      "verifiedZooms": [
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    },
+    "grant-village": {
+      "coordinate": [
+        -110.555,
+        44.391
+      ],
+      "verifiedZooms": [
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    },
+    "jackson": {
+      "coordinate": [
+        -110.762,
+        43.48
+      ],
+      "verifiedZooms": [
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    },
+    "jenny-lake-trailhead": {
+      "coordinate": [
+        -110.722,
+        43.752
+      ],
+      "verifiedZooms": [
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    },
+    "mammoth-hot-springs": {
+      "coordinate": [
+        -110.705,
+        44.977
+      ],
+      "verifiedZooms": [
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    },
+    "old-faithful": {
+      "coordinate": [
+        -110.828,
+        44.461
+      ],
+      "verifiedZooms": [
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    },
+    "west-yellowstone": {
+      "coordinate": [
+        -111.104,
+        44.662
+      ],
+      "verifiedZooms": [
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    }
+  },
+  "packages": {
+    "android": {
+      "checkedFiles": 47,
+      "nativeDeviceRenderingTested": false,
+      "sourceFiles": {
+        "basemap": "maps/basemap.mbtiles",
+        "coast": "maps/coast.mbtiles",
+        "hillshade": "maps/hillshade.mbtiles",
+        "topography": "maps/topography.mbtiles",
+        "utm-grid": "maps/grid.mbtiles"
+      }
+    },
+    "ios": {
+      "checkedFiles": 50,
+      "nativeDeviceRenderingTested": false,
+      "sourceFiles": {
+        "basemap": "maps/basemap.mbtiles",
+        "coast": "maps/coast.mbtiles",
+        "hillshade": "maps/hillshade.mbtiles",
+        "topography": "maps/topography.mbtiles",
+        "utm-grid": "maps/grid.mbtiles"
+      }
+    }
+  },
+  "region": "us-yellowstone-grand-teton",
+  "status": "automated checks passed; visual and hardware acceptance pending"
+}

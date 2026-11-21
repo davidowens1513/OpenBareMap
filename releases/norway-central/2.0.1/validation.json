@@ -1,0 +1,511 @@
+{
+  "coverage": "Trondheim, Trondelag and the Helgeland coast through Bodo. Mainland Norway and coastal islands only; excludes Svalbard and Jan Mayen. Adjacent editions overlap by 0.5 degrees latitude (approximately 56 km).",
+  "coverageAnchors": {
+    "bodo": {
+      "coordinate": [
+        14.4049,
+        67.2804
+      ],
+      "featuresInNeighbouringDetailedTiles": 9632
+    },
+    "bronnoysund": {
+      "coordinate": [
+        12.199,
+        65.474
+      ],
+      "featuresInNeighbouringDetailedTiles": 3537
+    },
+    "mo-i-rana": {
+      "coordinate": [
+        14.1428,
+        66.3128
+      ],
+      "featuresInNeighbouringDetailedTiles": 5124
+    },
+    "namsos": {
+      "coordinate": [
+        11.4957,
+        64.4662
+      ],
+      "featuresInNeighbouringDetailedTiles": 5111
+    },
+    "trondheim": {
+      "coordinate": [
+        10.3951,
+        63.4305
+      ],
+      "featuresInNeighbouringDetailedTiles": 23046
+    }
+  },
+  "datasets": {
+    "basemap": {
+      "empty_tile_count": 3932,
+      "logical_tiles_sha256": "3f7433636ef379351c18099ab52edced88d26f706360b752270da1c75cb32777",
+      "tile_count": 108030
+    },
+    "grid": {
+      "empty_tile_count": 0,
+      "logical_tiles_sha256": "3914aecf4092a8a6f4b6d441c28cb89a9688167a41909c066a47059ed5e999e2",
+      "tile_count": 358310
+    },
+    "hillshade": {
+      "empty_tile_count": 0,
+      "logical_tiles_sha256": "b2ee80bd2b708b3d340182aa395c8529621fab12ed8b476d4b240c555ef45617",
+      "tile_count": 16242
+    },
+    "topography": {
+      "empty_tile_count": 289363,
+      "logical_tiles_sha256": "38c7e1ac84ac5b00b7248effe983426883ac5b632b70ecf72c751a52ff07e38e",
+      "tile_count": 526772
+    }
+  },
+  "detail": {
+    "basemap": {
+      "boundaries": 5890,
+      "contours": 0,
+      "permanentIce": {
+        "glacier": 8439,
+        "permanent_snow": 8
+      }
+    },
+    "topography": {
+      "boundaries": 0,
+      "contours": 3026049
+    }
+  },
+  "garmin": {
+    "familyId": 4840,
+    "garminPackageRevision": "2.0.1-glacier-r1",
+    "inspection": {
+      "anchorLabels": {
+        "Bod\u00f8": "Bod\u00f8",
+        "Trondheim": "Trondheim"
+      },
+      "bounds": [
+        6.999921798706055,
+        62.999982833862305,
+        18.999996185302734,
+        67.50008583068848
+      ],
+      "coastPolygonsByLevel": {
+        "0": {
+          "0x32": 297,
+          "0x54": 69611
+        },
+        "1": {
+          "0x32": 171,
+          "0x54": 58214
+        },
+        "2": {
+          "0x32": 155,
+          "0x54": 50588
+        },
+        "3": {
+          "0x32": 153,
+          "0x54": 19534
+        },
+        "4": {
+          "0x32": 153,
+          "0x54": 3993
+        }
+      },
+      "contoursByLevel": {
+        "0": {
+          "0x20": 308198,
+          "0x22": 71143
+        },
+        "1": {
+          "0x20": 262790,
+          "0x22": 60150
+        },
+        "2": {
+          "0x22": 57607
+        },
+        "3": {
+          "0x10008": 54570
+        },
+        "4": {}
+      },
+      "lineInstancesAtHighestDetail": {
+        "0x1": 132,
+        "0x10001": 1636,
+        "0x10002": 2122,
+        "0x10003": 94,
+        "0x10004": 5791,
+        "0x10005": 1753,
+        "0x10006": 623,
+        "0x1000b": 1291,
+        "0x14": 1318,
+        "0x16": 41855,
+        "0x18": 170892,
+        "0x1a": 596,
+        "0x1c": 12,
+        "0x1e": 407,
+        "0x1f": 13558,
+        "0x2": 1928,
+        "0x20": 308198,
+        "0x22": 71143,
+        "0x3": 3221,
+        "0x4": 4556,
+        "0x6": 23916,
+        "0x7": 111209,
+        "0xa": 15263
+      },
+      "logicalCombinedSHA256": "b4dd37843dfcc5aaf451412bb679b710e2c540c8fd1e1647a1e14b8025a283c6",
+      "logicalHashNote": "Internal file names, sizes and payloads; only CommonHeader creation-date bytes 14..20 are zeroed for hashing. IMG archive headers are excluded. Output bytes are never modified.",
+      "logicalTileSHA256": {
+        "48400001.img": "85c32b5b64b2de8406970f0f1891852bb8a75470d053e7673f996a28e55db465",
+        "48400002.img": "767394ea2fbe47a893f5ea0f3695ea7617d3c1d539648af8dd344dd831ae6ef9",
+        "48400003.img": "be32821559d47d7ca685e78a56be608d3f46ce4824bcd70c89b241c503a2e8ca",
+        "48400004.img": "7b1e7c3b1287fccebf79f98e0541dd55f06dbec4fd1e7f37bdbb147c8f7d8d1f",
+        "48400005.img": "512056bb997b7668d539d00acd42768944166f7af1b1ab9a4859386f2dc81348",
+        "48400006.img": "4fc0c72d3ec66502970167a2aab94867f4283f9f8ea67b9a945daa619fedf808",
+        "48400007.img": "68bdea2dddb93d6247be8f3ba8ee79df6620c1a49b8c6a6c79fa5f826cc23910",
+        "48400008.img": "0de598393520c3b6d2997c7d8bb7c19a47726e5042711e9e85c5aecffda33ba9",
+        "48400009.img": "456a15cb5fcf3f4adcf36a089e811abfae045c36dbb724fec3754281753c72d2",
+        "48400010.img": "feb44023ff6ca6f96cce11481443b64e2d382748c8f4cce668cee842e47271d5",
+        "48400011.img": "ea9cd59a1c33883c2255fb5ba7a5defa876d36dac12bae0429dcb244a363819f",
+        "48400012.img": "93352d9951914ecd1f78a071c027741bd17a6e64ff32ee8245283a1fce7ff5f3",
+        "48400013.img": "e83ecdaab041e05a97fcd6a63cc16b0af3a45d10bb14ecf87db2f33fb9422e1a",
+        "48400014.img": "98b6e1c5b96ae0bd5efcaa34ccc6435d6419bca22f4ca2588b53c7f1bfa6f111",
+        "48400015.img": "77ab2455a6ab1b2dcc31f30c7c8afa8f425f048dc184cbd73126c2b761e1dbe0",
+        "48400016.img": "8b0748d9450beb0315161db70e084c1e06a28db913148df75630c6981f37762c",
+        "48400017.img": "5be0ebcc3d96eb2519655d75d8356028e4b33d2b3092f202eefc1dd55bfdcb79",
+        "48400018.img": "52ca2ad1aed1c9abcc182ed24fef97bf57f9c43e3c8942ca2d2827c6eeccd630",
+        "48400019.img": "dc313d7fdc3bb9d50709ca80661a98619ad9f333bf7e0b99d464941a0f6dc003",
+        "48400020.img": "290e5198f92d5fd63f409b4ef4091ebe04277e31c5e870f88772551cf4f79935",
+        "48400021.img": "ff42f26f2f59a2d753e8f8ed2d34a66dde5b7b96c2469927cb8cb616727eff78",
+        "48400022.img": "a2754a63af210a58244582efcd076696884c30c4aec3936d334fa86e41ae9b91",
+        "48400023.img": "df175aee82d1cacbd98b46ef3d1feae0667ddd135977058a606ebc984ed4161b",
+        "48400024.img": "0c75031a9b1e65f2a37ac910c9b5d5e798c0e0a83096c2e2d09de26fcb01e34d",
+        "48400025.img": "6265b297cb0283e7ca9534f868ba569a9bbd1a85c289586f0dfb0fa660a8bfd2",
+        "48400026.img": "1bbf6b444c64207a4ead28eacff0068e8f1ba732847f62984f646830648b572b",
+        "48400027.img": "a2a8825e5b36106c62639859076e6425ed7bd1a7b7b976c23289de846433db20",
+        "48400028.img": "c3a10edd3cc6b2c75f1070b2628bcad82aff88bc6347099e4a8a22aa5588ea3d",
+        "48400029.img": "4a8e1cf218865a762da5aa2409d59bbca1ae4298836726595f0c355960edc5c2",
+        "48400030.img": "1720b9054dd29af8391fa943d8bc2fe3f387f1ad5a8d356e93bfb1572e99618b",
+        "48400031.img": "33579a4eb66b6eb532c34000e8ca7ee3e911036566b16a4107ed322cb8565f33",
+        "48400032.img": "5335b2dc7b002587d6be043c6b8c0ae1764b40e579023c00d556e93582b6b214",
+        "48400033.img": "e6fb0dd5406317e89affd2cd51338d9b1799d3ec98dbbaab9b354247ffe67b66",
+        "48400034.img": "ea99fd4bf7538c841926f80c34af009c783418ba537690bcfa336852285ace2b",
+        "48400035.img": "679a064dc2e91eca443c7bb7d9bafeee11688961d98c1f9cc8e8cc1990d69574",
+        "48400036.img": "56f5cd870e1c2992f95f7a1935b3be5bbc04ccc9672f1fee1da500ef072e93ea",
+        "48400037.img": "7132a8dfa2a1e286a65f74c7b8194a679fe568b0b15e85184eece5c98afb6337",
+        "48400038.img": "3f3b87c39ed913592e30bdd4df485088ac93d6a059e5b96a106b1df1bdc5c5ca",
+        "48400039.img": "b006c1e8d90594a52bf6359c31a25a0d8c40f8eb571aa047bb1c9dd3f421f697",
+        "48400040.img": "097f55c79bb175aeb69db681ed5e63fbff1d0ab77712f2d55dd9a64ee20fee18",
+        "48400041.img": "a04ebf20d3bfa089d729cca74bb2ddab44706d863f106bd97736bf3ac1c54c16",
+        "48400042.img": "89ff1a581ca0fbd90f4968a0f409c0fad47d1d07fa28c2dc57c02b54fd39fecf",
+        "48400043.img": "c54a4797c80f73cbd76ca0c25967ed2a80704b3c28eaa70ed0a2c4b7f257bbd6",
+        "48400044.img": "4fddee425bf0786acb7a6b12794485ae7b7132b5d318ef5525ed8b55228a827d",
+        "48400045.img": "d0cd7d2f54986dc349897f0e1180bcf4e8c03e624373cafc34a3c253f57f1694",
+        "48400046.img": "f9230cda234913258f0bbe9f5a0053818cd8c8b497a9277c91b6a26b609271b6",
+        "48400047.img": "3a600bb3642eefac83244e721cc15003e7e8aad45df7118d4cc60f9b55604207",
+        "48400048.img": "9d3b16738c52e0beac298c21560cb9bedc6c22e2ce15509aa82f1e4765be8fc6",
+        "48400049.img": "bfbd9c53c1202ad0b08a10998f354c2e6cc63b8a66ae36b8896c7078625533b1",
+        "48400050.img": "7d5160a0896e05612403466a57d0cc1d0561f5db90cc8087f5cbbb46dea23a53",
+        "48400051.img": "36586b200ebe9240c5045dcea23ae16c056fec9069ffb53b5fe10707aef2aa6a",
+        "48400052.img": "06f79d6ed9ea9a3ed1921d8fdd63cde74e40badbd20d672032981a9f60a56cda",
+        "48400053.img": "7c21466302dbd3983a858a27567a822b7bd0d2ad3d3f15ecea70251bb17f9b05",
+        "48400054.img": "e7f2c4d598de69cfee39264413bfa4a6d62fe8857961bba9efe4d459a6c1f352",
+        "48400055.img": "6768460d0c0f7e7de907dde76c571334d960112cbd129aa2f94e236928fefe60",
+        "48400056.img": "cd2c74cfb620a923837f55ad751dde58770525b89219344a06c188f2f4040931",
+        "48400057.img": "1c84bf4df794c4ef39d3396184bf8b49c80a79ee6e9ec1176d58473d304ff41f",
+        "48400058.img": "143a16aa89d57daf9b03dbc6424b211b0452ce12d736b8eee6683e23ea40e39c",
+        "48400059.img": "782f88eee54dacdec4b32bc31250b6ed6ae1471b44e05a0337c05b5a3b3ec4ae",
+        "48400060.img": "3fb8a2dfe771c3a6be15ab75fa6fa9a8959c9bfa068807651fc51f48ac1ada13",
+        "48400061.img": "253e3c71691234f997d8a7b75eefa3d8b58a26a8b54f8d30eeb2c638f1ec48e6",
+        "48400062.img": "d92e0aadc89e3e87a89089d8644789d07046480dbef3fe503fd275a1f075fd58",
+        "48400063.img": "00d5a3e451e5d038a7aadd71aa810290523a42c4f5ed95ac0bbdcb467249aefc",
+        "48400064.img": "1f90c095beaf77ec763af1662905082b18c7b8fd11be41de4be89e0de2c5a467",
+        "48400065.img": "8bab36be7320dae8b7edbd243c730fc8f409f8e32cab152d995ed28c23680485",
+        "48400066.img": "f206779ea9f83c0a456f36db0afef6cbacac1ce9fe7ce3bf571a6116d5037488",
+        "48400067.img": "90284d680b95c24d6d5baea6743cab3571618b667f1c6b4db26e54afdf912122",
+        "48400068.img": "53812170064cd75882b1fbd9fb8c0641533abfd8fbda4ca2ded1932efd69af54",
+        "48400069.img": "72fc28a3428ffd48be3b906d7cc38263721d9a5c7f6c8a6e22a62ff2dbe3e3fd",
+        "48400070.img": "a4e7632706ae6b398ff70d87f5847354c964382eea21bc02cce4ca01f68fb375",
+        "48400071.img": "046ca09eb9261225f4ce79824a345b3fedafeec40e50d37e9c35ff79cdba653e",
+        "48400072.img": "1012b91412bfee05a8a0bc430c6afb647ae546319e6f518a989a1dc4495722e7",
+        "48400073.img": "a5c628833144987b93887169cbc3ad2fcaee40459568ec3c8ff5c4e1313d4782",
+        "48400074.img": "f79cd227efc3f43fb704c791489d4b58d730f1f9745a0c74214b25787395b5c8",
+        "48400075.img": "c8d682c4fd721087a3d0673ad8fc9cda784f917c8bcfd47fe3d3ba367fb955e3",
+        "48400076.img": "0beae61634940d41b7f38adb1036f72740993b453fa648193ac23bc9d8d2f57b",
+        "48400077.img": "e1433cf842e12bcc17e1a50f6dbbd0a1df9e622038dcf4218360892389cf3295",
+        "48400078.img": "1fe8abc631292ff588314f7501f0901bfd50720833a2bbfa4f703e7f7e1dc0a8",
+        "48400079.img": "14739332ecfbbbd20bef9c637f88bc332d2a3ace165f47904eb311aea9610869",
+        "48400080.img": "0c8d9aa2ba950c5ed0184ca5be9a33fb7447592aee9f1c2496dc0dd64398e4d8",
+        "48400081.img": "d831301376ae827f957268d11339becd197549a14b32415afbbecdb46bf2f9a1",
+        "48400082.img": "97818a09aa6c76bb554f1a50fef5ea6d234ad98d803d0e0502858588ce40adc9",
+        "48400083.img": "dadc49ca0794391b6734ca390cec31b39f6b967fa27a639beba72f216e429483",
+        "48400084.img": "bae69289e495610769931c47325b341e084140ff79213202b4876179bc410976",
+        "48400085.img": "67b0005ac8ea6b15bfc34a01d5cd4a289af393d5c30ea864e98357ae2a380c63",
+        "48400086.img": "38a64bc31fde142632b5da675e7d8380114f490af5ce6b81c445e63928224be8",
+        "48400087.img": "67e4c05d50abf27db46b7458c20fefafb07d4998e4811ae954f22205393c561d",
+        "48400088.img": "7ad0c1df533739e1e8caef21c41361bc349d1a9a5cfc05218379cf8fcc6c3e6b",
+        "48400089.img": "53c6bce170b6db0056c0d496c1bc655e5b56d0884f970c2055a04421f1d0507d",
+        "48400090.img": "6dd62f360caa8ac63eb7a57760185401d9ef0c7a3d11416c853fa6309a556abb",
+        "48400091.img": "e630490ab30c18f403a0a85922f37083c98147a62806ac0deec07fc640a128fe",
+        "48400092.img": "caa59f9df7ccb0e0f06a1fcfbe01f95f70d5ef083974d81b4c457790b9bf39f1",
+        "48400093.img": "2dda67a7de54442704bdc7a25303c943f79c57f57c653bd340f7e39b06000ffd",
+        "48400094.img": "06d02aba8ab4c288a0bb3e8d5efc89ae9cebe7f326441c7aace0ea097df8726a",
+        "48400095.img": "e33e91d04976f7c75081d3defc1fa3303f8843eb127c6ab0521aba2358f4c733",
+        "48400096.img": "8266b1c79cd2a876a005328129471b2f4f89caa5b433eb66f9a1bc708111b91b",
+        "48400097.img": "c0616184aae05b739633c8b438f6ceb28ec8d63a0d504db7fd7ec9dfc7cb4518",
+        "48400098.img": "893fd995fff9520ce552441d4816357a1d0c4bb9fde833f3ceb378bce4cf92a9",
+        "48400099.img": "2ad8db88317878a47f17a4c5ca0c4694463544776a48fc3df57ace7aa8003193",
+        "48400100.img": "f6021556431851e00ae735b5fd3d3fedb75bbc904832453eedf08fd54ec80af5",
+        "48400101.img": "c211882fefdb3501352f9c95c404bcf13d67f8724beacf737f710496ef30b593",
+        "48400102.img": "28d0f36633a8fab18dd7adf096f085bbb84ad4a2ab740592522b395a647adb9f",
+        "48400103.img": "cfdfc626fb8f85035ad8caf477f96ae830f65e66fe7e7736ab83b1270f360880",
+        "48400104.img": "3ae922c4b7cdd79ecbdeb4eeb9c7a05de80fb80ec129e1977e9442a6b588957a",
+        "48400105.img": "891ce933e0241abe5c30b2dec8f46ec0c1c9c3a9c53542c0e18d012509ec293e",
+        "48400106.img": "bbbe0fd955806b27c7745a0dd4a00093a7c56fc7ffe3e6a3502f588e3add5423",
+        "48400107.img": "407f8782aaa6442c85f09387ad1d01df428b9e53702c80a46213f95eb64d213f",
+        "48400108.img": "f9f5fa5055af948854850f3f21921c0629278786e298eb174340e355c9f78f00",
+        "48400109.img": "5f7af459102477da055c1aa43991e64e93c052609397a71000fecbdcf8dbb159",
+        "48400110.img": "5a1a8e56cf14c326f1f4bd944cad954be5f4f7c6ab022f7f62edb023a62b994c",
+        "48400111.img": "03a812619eaed6ab39239b35706c22dcd20aa3fc97903ea74dcaf1b85bfd0098",
+        "48400112.img": "1b070c2d2b754232e5cc47c620023a820b62f6f7d014d77d63133226ad8e7022",
+        "48400113.img": "8ffc7d665e14663b4f4073ae4f29a1efac876bd764f958d71b8e7b23b9b34045",
+        "48400114.img": "57a9e46062b7ee386be67242f78d337683013a6be32650b866bb64f54773194c",
+        "48400115.img": "cdb3851f6387e47e2129c007ad9952d030311625f1da66bbc73190d8df0e1c98",
+        "48400116.img": "c332389e4b79f2bec16d48a7dd08346f0ee148cfb9cc16239c499d920528130b",
+        "48400117.img": "dd6ebd4ebe0bc96df3c27dc43b1c502e030cf9bfe1ded83435e57e3d0bd84f6c",
+        "48400118.img": "c5f797b0be5ae4413754c82180f9368e9d1c2ebf2b228d611f65ef2092476bed",
+        "48400119.img": "21370e2c55f5ebddccde3dab668a928e0df8d9ae89271a086456b1bb64b5cee4",
+        "48400120.img": "1fff9ba3223ba56d05571e9ab8d9fa2b3248de5e683641ba0f62158fb473dc7f",
+        "48400121.img": "e82bd9bcf4990cc907a4fe5dbbe0f56c5774cb23ecdb2481a3dde18aacbec95e",
+        "48400122.img": "75120ec7cdc0727c017e23c48c17328024b2e8e939eb38a327a2345197f9a3f2",
+        "48400123.img": "44bd22791264616d867fff3dad7db4a665d55c8ff78bed797a19fde174890e1e",
+        "48400124.img": "6f79403081558fc9f384dcd0011c47e25611a6dd53985208ba08d7c5536064dd",
+        "48400125.img": "ee1a4ca32540b5d46caaaa79a9c54f74894f2f3740071ac92855bc5ca80b2805",
+        "48400126.img": "2d67f4f35ec1de128fc4995466797d8b5c1b84ebe77ebd4edd86c7abcaa9b359",
+        "48400127.img": "43c18b0bdfcb6b1ddd180341dcce8601018fa985bcdf80cc356335d8c71b86e7",
+        "48400128.img": "fb2851f0800dcd33994adc4fdb1ee8eeb85b6bbf0085e94e7d8d8aa24d044da2",
+        "48400129.img": "e3c7d0bbb128cc55ae2c91e3640e6979a15b48a6d2c5d0d8f2c64c203921d42e",
+        "48400130.img": "8593afac8933d514add8829706b0ee108da783563db88aaecf8c56dd05beecda",
+        "48400131.img": "b7851b44d9496b4f80106db84d68548f577dbaa0a971d8dce57e0eabcf7b0d7d",
+        "48400132.img": "5892a1fda9be41c98eccaca1419c80a11a3e4fb08ec401d1df5d2ee50e3eccc2",
+        "48400133.img": "23e0bf3c5f82afd20c7ee56e35eed47d080cc3ec7e1e2348e95cb3644e275d6c",
+        "48400134.img": "2b1a5b7b24d5e8cab0dfbecfcf9693e639097379f058509a9ecabf1284da7b83",
+        "48400135.img": "fce608327285622992985e080cea8fe2095a09377bba850a9b3559dbe9f312d7",
+        "48400136.img": "fa5c6d083ad6fd26636f339cc45e554c6baeae90902cd8151c128e0ca893f840",
+        "48400137.img": "2fd4df746b524e110aef513482b0b66f3ec05283d8d911d8b63cc28d235bf6bf",
+        "48400138.img": "1d617e55c6ce951975e537bf072c7114fb3e41da3fd876d9b105ebfd8b25760c",
+        "48400139.img": "4b4d3ea27870b019b2a94952379c46c5b532e10c69fa495c126646718a19820e",
+        "48400140.img": "de5573d35886837e36dabcf1b9b591d40a7534d9daca14bae79be15bca495216",
+        "48400141.img": "32b9e7471ec12a8fd1113e5b7ab5bb0f701ac01d51728c93f6c6fda6ae63bb25",
+        "48400142.img": "c9be88369520b38b751116dc50cc34de6820263b070913165c1e34aa8966c7e9",
+        "48400143.img": "7a585fac643bb3a3a5ca835fb4f05dd355c8a6eae65ee07413cbe492208a4bdd",
+        "48400144.img": "a35a94ff7f6d88cb2388cf8a5e1b5177f8f5ac03d38c9cd81ce9a0fd3fde01e9",
+        "48400145.img": "d0eacbab712939ddda6e259350a925c62cb565f55951ebbcc31e7ba571328f12",
+        "48400146.img": "3f354f889c18c0959e4df0f378e7e91bdd1350ef187152843e1428454fc156bd",
+        "48400147.img": "856c39adf5895803529f0190cda40df87b29b2911132bbf8abca529627ec4baf",
+        "48400148.img": "db340f387765a074d700f1b07874023386b1ef56d0b8c81511d83f5618b99977",
+        "48400149.img": "0d33960f4efb258eb7b01d114b9e6873162ed6473813b7b9a54dc130231255f2",
+        "48400150.img": "205fdc8855d2b622452096a9b2669a7f69f80010505b1b8793b4957ecd048bff",
+        "48400151.img": "c411bba8fa1951173a912eb8914fe7b2ab55f9e3258ddc550f846c2adad43ccb",
+        "48400152.img": "d97fb8442132da10350df81f6890dcc390b0779707202419ea9d3b1ace64433c",
+        "48400153.img": "5afdb5a4fa15614660a83bfd3a1ecc4cd40c1af8d72184a989b4929c1021cbb6"
+      },
+      "pointInstancesAtHighestDetail": {
+        "0x100": 2,
+        "0x10001": 1122,
+        "0x10002": 647,
+        "0x10003": 1295,
+        "0x10004": 69,
+        "0x10006": 12263,
+        "0x2f0b": 7129,
+        "0x600": 19,
+        "0x650c": 55832,
+        "0x6603": 12579,
+        "0x6615": 21,
+        "0x6616": 2494,
+        "0x800": 279,
+        "0xb00": 3841,
+        "0xc00": 5429
+      },
+      "polygonInstancesAtHighestDetail": {
+        "0x10101": 42146,
+        "0x10102": 9244,
+        "0x10103": 16374,
+        "0x10104": 1797,
+        "0x10105": 365,
+        "0x10106": 536,
+        "0x10107": 313046,
+        "0x10109": 17876,
+        "0x1010a": 3567,
+        "0x1010b": 599,
+        "0x1010c": 2180,
+        "0x1010d": 1,
+        "0x13": 518699,
+        "0x32": 297,
+        "0x3c": 297817,
+        "0x50": 304043,
+        "0x51": 5139,
+        "0x54": 69611
+      },
+      "routing": false,
+      "subfileBytes": {
+        "DEM": 225321947,
+        "LBL": 1539660,
+        "MPS": 12749,
+        "RGN": 284881775,
+        "SRT": 912,
+        "TRE": 4373310,
+        "TYP": 3037
+      },
+      "tiles": 153
+    },
+    "output": {
+      "bytes": 519094272,
+      "path": "regions/norway-central/garmin/dist/OpenBareMap-Norway-Central-Glaciers.img",
+      "sha256": "8b11bed38783ac99af43a09d1b82cf99005b525aaddd5224f32bd70e4353dca6"
+    },
+    "routing": false,
+    "status": "compiled and structurally inspected; hardware rendering pending"
+  },
+  "geometryProcessing": {
+    "permanentIce": {
+      "glacier": 518,
+      "permanent_snow": 1
+    }
+  },
+  "irelandGarminPackageRevision": "2.0.1-trail-detail-r1",
+  "irelandPreserved": true,
+  "islandLandBackground": {
+    "bronnoysund-detailed-town-centre": {
+      "coordinate": [
+        12.199,
+        65.474
+      ],
+      "verifiedZooms": [
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    }
+  },
+  "labelGlyphs": {
+    "Open Sans Bold": true,
+    "Open Sans Regular": true,
+    "Open Sans Semibold": true
+  },
+  "landBackground": {
+    "bodo": {
+      "coordinate": [
+        14.4049,
+        67.2804
+      ],
+      "verifiedZooms": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    },
+    "bronnoysund": {
+      "coordinate": [
+        12.215,
+        65.475
+      ],
+      "verifiedZooms": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    },
+    "mo-i-rana": {
+      "coordinate": [
+        14.1428,
+        66.3128
+      ],
+      "verifiedZooms": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    },
+    "namsos": {
+      "coordinate": [
+        11.4957,
+        64.4662
+      ],
+      "verifiedZooms": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    },
+    "trondheim": {
+      "coordinate": [
+        10.3951,
+        63.4305
+      ],
+      "verifiedZooms": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    }
+  },
+  "packages": {
+    "android": {
+      "checkedFiles": 44,
+      "nativeDeviceRenderingTested": false,
+      "sourceFiles": {
+        "basemap": "maps/basemap.mbtiles",
+        "coast": "maps/coast.mbtiles",
+        "hillshade": "maps/hillshade.mbtiles",
+        "topography": "maps/topography.mbtiles",
+        "utm-grid": "maps/grid.mbtiles"
+      }
+    },
+    "ios": {
+      "checkedFiles": 47,
+      "nativeDeviceRenderingTested": false,
+      "sourceFiles": {
+        "basemap": "maps/basemap.mbtiles",
+        "coast": "maps/coast.mbtiles",
+        "hillshade": "maps/hillshade.mbtiles",
+        "topography": "maps/topography.mbtiles",
+        "utm-grid": "maps/grid.mbtiles"
+      }
+    }
+  },
+  "region": "norway-central",
+  "status": "automated checks passed; visual and hardware acceptance pending"
+}

@@ -63,7 +63,8 @@ def render_homepage(website, entries, _downloads, count):
     return page
 
 
-def stage(output, website, *, regions=REGIONS, render=render_homepage, archive=ARCHIVE):
+def stage(output, website, *, regions=REGIONS, render=render_homepage, archive=ARCHIVE,
+          products_for=None, version_garmin=False, collections_for=None):
     entries, assets, worldwide = {}, {}, []
     app_catalog = json.loads((ROOT / 'distribution/app-bundles-v1/catalog.json').read_text())
     previews = json.loads((ROOT / 'config/preview-regions.json').read_text())
@@ -78,7 +79,7 @@ def stage(output, website, *, regions=REGIONS, render=render_homepage, archive=A
         p = profile(region)
         release = ROOT / 'releases' / region / p['mapVersion']
         garmin = ROOT / 'regions' / region / 'garmin'
-        products = ROOT / 'work' / (region + '-release')
+        products = products_for(region) if products_for else ROOT / 'work' / (region + '-release')
         validation = json.loads((release / 'validation.json').read_text())
         if validation['region'] != region or not validation['irelandPreserved']:
             raise ValueError(f'Missing completed validation for {region}')
@@ -114,14 +115,15 @@ def stage(output, website, *, regions=REGIONS, render=render_homepage, archive=A
 
         report = json.loads((garmin / 'build-report.json').read_text())['output']
         image = checked(ROOT / report['path'], report['sha256'])
-        image_key = 'Garmin/' + image.name
-        guide_key = f'Garmin/{region}-instructions.txt'
+        native_prefix = f'Garmin/{region}/{p["garminPackageRevision"]}' if version_garmin else f'Garmin/{region}'
+        image_key = native_prefix + '/' + image.name if version_garmin else 'Garmin/' + image.name
+        guide_key = native_prefix + '/instructions.txt' if version_garmin else f'Garmin/{region}-instructions.txt'
         image_asset = asset(image, image_key)
         guide = asset(garmin / 'dist/INSTALL.txt', guide_key)
         for name in ('ATTRIBUTION.txt', 'terrain-attribution.md', 'terrain-data-sources.md', 'boundary-source.json'):
             if name == 'boundary-source.json' and not p.get('coverageBoundary'):
                 continue
-            asset(garmin / 'dist' / name, f'Garmin/{region}/{name}')
+            asset(garmin / 'dist' / name, native_prefix + '/' + name)
         native = {'region': region, 'url': PUBLIC + image_key, 'downloadURL': PUBLIC + image_key,
                   'instructionsURL': PUBLIC + guide_key, 'instructionsSHA256': guide['sha256'],
                   'bytes': image_asset['bytes'], 'imageSHA256': image_asset['sha256'],
@@ -129,7 +131,11 @@ def stage(output, website, *, regions=REGIONS, render=render_homepage, archive=A
         manifest_path = output / 'garmin-manifests' / region / 'manifest.json'
         manifest_path.parent.mkdir(parents=True, exist_ok=True)
         write(manifest_path, native)
-        asset(manifest_path, f'Garmin/{region}/manifest.json')
+        asset(manifest_path, native_prefix + '/manifest.json')
+        if version_garmin:
+            checksums = manifest_path.with_name('SHA256SUMS.txt')
+            checksums.write_text(f'{image_asset["sha256"]}  {image.name}\n')
+            asset(checksums, native_prefix + '/SHA256SUMS.txt')
         entries[region] = {**mobile, 'garmin': native}
 
         footprint = json.loads((garmin / 'render-coverage.geojson').read_text())['features'][0]['geometry']
@@ -143,11 +149,13 @@ def stage(output, website, *, regions=REGIONS, render=render_homepage, archive=A
     write(output / 'app-bundles-catalog.json', app_catalog)
     write(output / 'worldwide-catalog-v1.json', {'regions': worldwide})
     write(output / 'preview-regions.json', list(preview_entries.values()))
-    write(output / 'release-plan.json', {'regions': entries, 'downloads': {}, 'assets': list(assets.values()),
+    collections = collections_for(entries, asset) if collections_for else {}
+    write(output / 'release-plan.json', {'regions': entries, 'downloads': collections, 'assets': list(assets.values()),
                                         'websiteArchive': archive})
-    homepage = output / 'index.html'
-    homepage.write_text(render(website, entries, {}, len(app_catalog['regions'])))
-    stage_website_archive(website, homepage, output / archive)
+    if render is not None:
+        homepage = output / 'index.html'
+        homepage.write_text(render(website, entries, collections, len(app_catalog['regions'])))
+        stage_website_archive(website, homepage, output / archive)
 
 
 def main():

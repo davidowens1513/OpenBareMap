@@ -77,8 +77,8 @@
     48.49975874549836
   ],
   "garminFamilyId": 4862,
-  "garminFilename": "OpenBareMap-US-Olympic.img",
-  "garminPackageRevision": "2.0.1-trail-detail-r1",
+  "garminFilename": "OpenBareMap-US-Olympic-Glaciers.img",
+  "garminPackageRevision": "2.0.1-glacier-r1",
   "garminTileStartId": 48620001,
   "garminUseSourceOutline": true,
   "gridCRS": "EPSG:32610",
@@ -98,7 +98,7 @@
   ],
   "label": "Olympic",
   "labelGlyphs": "ABCDEFGHIJKLMNOPQRSTUVWXYZ",
-  "mapVersion": "2.0.0",
+  "mapVersion": "2.0.1",
   "maxzoom": 14,
   "minorWaterwayMinzoom": 10,
   "minzoom": 4,
@@ -113,6 +113,8 @@
     "boundary",
     "hiking_route"
   ],
+  "permanentIce": true,
+  "permanentIceLayer": "permanent_ice",
   "projectedCRS": "EPSG:32610",
   "repairClippedCoastline": true,
   "requireBogFeatures": false,
@@ -125,7 +127,7 @@
   "sourceSlugs": [
     "washington"
   ],
-  "styleRevision": "2.0.0-us-olympic-r1",
+  "styleRevision": "2.0.1-glacier-r1",
   "terrainAttribution": "Copernicus DEM GLO-30 \u00b7 European Union / ESA \u00b7 DLR / Airbus",
   "terrainBounds": [
     -125,

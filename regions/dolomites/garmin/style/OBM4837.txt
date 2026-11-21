@@ -22,6 +22,8 @@ Type=0x10108,5
 Type=0x10109,6
 Type=0x1010a,6
 Type=0x1010b,6
+Type=0x1010c,7
+Type=0x1010d,7
 Type=0x3c,7
 Type=0x13,8
 [end]
@@ -946,4 +948,20 @@ DayXpm="12 12 3 1"
 "bbbwwbbbbbbb"
 "bbbbbbbbbbbb"
 "bbbbbbbbbbbb"
+[end]
+
+[_polygon]
+Type=0x1010c
+String=Glacier
+FontStyle=NoLabel
+Xpm="0 0 1 0"
+"a c #badde9"
+[end]
+
+[_polygon]
+Type=0x1010d
+String=Permanent snowfield
+FontStyle=NoLabel
+Xpm="0 0 1 0"
+"a c #f0f8fc"
 [end]

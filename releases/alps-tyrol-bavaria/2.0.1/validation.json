@@ -1,0 +1,511 @@
+{
+  "coverage": "Bavarian Alps, Austrian Tyrol and Hohe Tauern with links to the existing Dolomites around Brenner and East Tyrol.",
+  "coverageAnchors": {
+    "arlberg": {
+      "coordinate": [
+        10.269,
+        47.13
+      ],
+      "featuresInNeighbouringDetailedTiles": 4118
+    },
+    "brenner": {
+      "coordinate": [
+        11.506,
+        47.003
+      ],
+      "featuresInNeighbouringDetailedTiles": 2143
+    },
+    "garmisch": {
+      "coordinate": [
+        11.095,
+        47.493
+      ],
+      "featuresInNeighbouringDetailedTiles": 16840
+    },
+    "grossglockner": {
+      "coordinate": [
+        12.694,
+        47.0745
+      ],
+      "featuresInNeighbouringDetailedTiles": 261
+    },
+    "innsbruck": {
+      "coordinate": [
+        11.404,
+        47.266
+      ],
+      "featuresInNeighbouringDetailedTiles": 38696
+    },
+    "katschberg": {
+      "coordinate": [
+        13.6159,
+        47.056
+      ],
+      "featuresInNeighbouringDetailedTiles": 1014
+    },
+    "lienz": {
+      "coordinate": [
+        12.769,
+        46.828
+      ],
+      "featuresInNeighbouringDetailedTiles": 12142
+    },
+    "otztal": {
+      "coordinate": [
+        10.914,
+        46.861
+      ],
+      "featuresInNeighbouringDetailedTiles": 775
+    },
+    "zugspitze": {
+      "coordinate": [
+        10.985,
+        47.421
+      ],
+      "featuresInNeighbouringDetailedTiles": 839
+    }
+  },
+  "datasets": {
+    "basemap": {
+      "empty_tile_count": 20,
+      "logical_tiles_sha256": "423adadd48aad3cf57cf5ba44f1233916605d93d5da81cf9a361f893376c823a",
+      "tile_count": 22909
+    },
+    "grid": {
+      "empty_tile_count": 0,
+      "logical_tiles_sha256": "d6cd031452a59992a8ccca5780f1bad6bd1407119f9eddbc04b41c66e80976d7",
+      "tile_count": 23480
+    },
+    "hillshade": {
+      "empty_tile_count": 0,
+      "logical_tiles_sha256": "0f5ed764f49ac834610ef73795549481acfeda698703dca5ebd43f6062b330af",
+      "tile_count": 2772
+    },
+    "topography": {
+      "empty_tile_count": 68804,
+      "logical_tiles_sha256": "32f24b963b135e2c2d82e3487a04fb2fae635e24ea96a8a2b73a534398baf5a5",
+      "tile_count": 97888
+    }
+  },
+  "detail": {
+    "basemap": {
+      "boundaries": 28778,
+      "contours": 0,
+      "permanentIce": {
+        "glacier": 12824,
+        "permanent_snow": 92
+      }
+    },
+    "topography": {
+      "boundaries": 0,
+      "contours": 1271205
+    }
+  },
+  "garmin": {
+    "familyId": 4853,
+    "garminPackageRevision": "2.0.1-glacier-r1",
+    "inspection": {
+      "anchorLabels": {
+        "Garmisch-Partenkirchen": "Garmisch-Partenkirchen",
+        "Innsbruck": "Innsbruck"
+      },
+      "bounds": [
+        9.799976348876953,
+        46.549930572509766,
+        13.709993362426758,
+        48.00004005432129
+      ],
+      "coastPolygonsByLevel": {
+        "0": {
+          "0x32": 110,
+          "0x54": 166
+        },
+        "1": {
+          "0x32": 110,
+          "0x54": 166
+        },
+        "2": {
+          "0x32": 110,
+          "0x54": 166
+        },
+        "3": {
+          "0x32": 110,
+          "0x54": 166
+        },
+        "4": {
+          "0x32": 110,
+          "0x54": 166
+        }
+      },
+      "contoursByLevel": {
+        "0": {
+          "0x20": 194534,
+          "0x22": 48736
+        },
+        "1": {
+          "0x20": 154283,
+          "0x22": 38754
+        },
+        "2": {
+          "0x22": 36942
+        },
+        "3": {
+          "0x10008": 35058
+        },
+        "4": {}
+      },
+      "lineInstancesAtHighestDetail": {
+        "0x1": 2991,
+        "0x10001": 54208,
+        "0x10002": 22232,
+        "0x10003": 146,
+        "0x10004": 3769,
+        "0x10005": 11161,
+        "0x10006": 16185,
+        "0x1000b": 28279,
+        "0x14": 8357,
+        "0x16": 161448,
+        "0x18": 83423,
+        "0x1a": 137,
+        "0x1c": 3376,
+        "0x1e": 2532,
+        "0x1f": 2415,
+        "0x2": 899,
+        "0x20": 194534,
+        "0x22": 48736,
+        "0x3": 8601,
+        "0x4": 7387,
+        "0x6": 102924,
+        "0x7": 254229,
+        "0xa": 196618
+      },
+      "logicalCombinedSHA256": "689df6328c89ef971d56ca93d3b2d6c3cb483343f8e5999807b4944ad3c8682f",
+      "logicalHashNote": "Internal file names, sizes and payloads; only CommonHeader creation-date bytes 14..20 are zeroed for hashing. IMG archive headers are excluded. Output bytes are never modified.",
+      "logicalTileSHA256": {
+        "48530001.img": "dd8dc1731df48c5653bdde59140b5ed893244dbc1cd96092e98a772254a35289",
+        "48530002.img": "244aea01b8cf8ab1ae5e79d4178a36478c9d6deb784ea300640adc23066041fd",
+        "48530003.img": "b0b13220aedf11fa50604819446254148c8e4461883fa319df88c588eba93c8c",
+        "48530004.img": "3c046031d5aca0f9103d60661a9b59ce50bcdec6e8bbec567f8a2a805c6124ac",
+        "48530005.img": "abfdf5583248f2d5e86c325d02e91e276b96338f5814d5cf417a29d2af243c17",
+        "48530006.img": "1f8d855359aa78cf2ed3dcc694a11ef219bea5afcfb504fc60f7d177f2684ce5",
+        "48530007.img": "d899e1a278a660e8d39f65d1e7cb6e2ea44b605911e89a403602ff45d4d1b593",
+        "48530008.img": "d26a05bd5aa224402785385b4bb5b26966d87894e0be32b0691f266c3937c99f",
+        "48530009.img": "b1feb648dd6c17434f24800eae6185d9770523b992d6cc558edf5b5b0234e49b",
+        "48530010.img": "e26e3d8184c72be900601a5e51dafc35ce51907cc870e1d5e509fbb226c7cdb1",
+        "48530011.img": "cb19bbdd983f80c53fc14ec8924fe085ca797e3c33a9f7087e88ceb6b0abb4fc",
+        "48530012.img": "841cb2b10fa1bfdd1b264f1d00b8fe65a84045abe1c8fa78db28c62cf8109a22",
+        "48530013.img": "218f2f8ff679cfde4623dfd9ea9358561879335aa01c7995047e0d133cd73407",
+        "48530014.img": "9d2f2b0eab059b2dea693f37a2134113a3cf49d35bf4aa91a1ce4a1798492029",
+        "48530015.img": "f4d8ee02c1020a3d2f6c46f6b29b95a6bd2fc7064d13c28f8d0f6fb01fc7ff05",
+        "48530016.img": "3a8c96bd23ea7c18d18e4a10f2eee9add9b7e982fa948298c311f4fcb6715be7",
+        "48530017.img": "01070723a328bdf5e52ff41b992b8950f38a725dec9e263706dfa8ac826dea5c",
+        "48530018.img": "80cf4cefe4b76d1e90c93f887361dc62f8a402f19482cecfaa49aa5ae7b6ef92",
+        "48530019.img": "68bd0403a2158db7d337e1ae18ba9644c5cc8902d65e05d28ff679ef55afc9a7",
+        "48530020.img": "5ab2f4265472bea01f41af03bc855515aaf8facfe1a75dd59310e46da047ebc5",
+        "48530021.img": "45d7df687dcffdf41b46a8ff48d3e11dcdd08cfff891ac4bc6fe2ed2a3b8cd60",
+        "48530022.img": "2de733ddf50f875a8061337643eb0af5da7a23179842ab0257c890c24c4f8a9d",
+        "48530023.img": "2b18b75efa044401e2c6fe57686071cfddaae5441715abe8873493adf4feaf18",
+        "48530024.img": "ad7c2e51884c8d7b208a180a667579a11fae9d0f5bbfb311022144d3c721113e",
+        "48530025.img": "543167b02bd8cb58a77463d5d0ff468ee4cf603f1a8ce26d3cc38a8a2c52092b",
+        "48530026.img": "a7051e58addff109efa9d96c541207e8deb4ae4c18352a58553790550efc60ed",
+        "48530027.img": "7035ee3585c748baf3e5b6ddc52c9a0c1d7ffa1d06a81cf071c2d68283cc52dd",
+        "48530028.img": "05fdcfcb71fc83d98dcd6c130f728c899cee4b0f099705001b2d09321b84d446",
+        "48530029.img": "6eb703d6fade8ae24555dad0cf39b6de2f0dd387cccc884b21875dab5ccf3c05",
+        "48530030.img": "6c1f3808639e9f232e135ad8566d585f9f0aba7dfd2116ccf822dae689a7dec3",
+        "48530031.img": "7cbaa0495f590c08e56eb676bd7a77e9576b394ebca36f351e5f946f462b3f87",
+        "48530032.img": "f2d4e65ab10bd8ece496c13cec4486dada7eff8b0b60448963c09c30f6055460",
+        "48530033.img": "c6fdbd547f8374b12f6da2d68c34223f394386f415a0546446beddad0f4227c9",
+        "48530034.img": "371bb1a50337bca0d4dbc6fbc4696dd604e6a6f240974ef720935258bf273bea",
+        "48530035.img": "d566d27042a32ef8af903caadafbeeb58c8a88b88019fbeb7cb90580b147bb99",
+        "48530036.img": "b49c25fbb00ebe70495450c46f1a1a23d754b234c0c1dfecd7bd995f54d0006a",
+        "48530037.img": "c0290253f91279e38ea253b7be397c1967046faf0af5778830e40983ed57c632",
+        "48530038.img": "f3647c3aaffc2726eff6506496ff279462b8e79341ce6e75e9136eaf4bc44f83",
+        "48530039.img": "d0b03ffd59d0cf2872f11bdf5966d610e74a905984f4f1c5a32021f0297d9e68",
+        "48530040.img": "e2a9e0a7e5e665db87f6a99589656535ac6b7535f25beca3e8a88b1fb4c23b59",
+        "48530041.img": "992b912f0e94853dc5ed8a87a04b2073e1657d297db988a98daa66a0f55d8493",
+        "48530042.img": "55721e08b6b8c3d3e10d87c7cb19bb5e29eb88225870f57cae3340928b2d571c",
+        "48530043.img": "4d500005dd4dcffe3b58023f595e5c08c9f3431b6f74c73c097ff56c3ae91f8d",
+        "48530044.img": "20a085d16a7d8b1e446917d7d425d1d5dd72f9b9bf7971a87f18eb85b92b0a1b",
+        "48530045.img": "99a911e3d8e03518e40785a6051c0394ddabba72618c698237b8199abf3c63ec",
+        "48530046.img": "d83ab88abaec1f4730601b90264d199195a7022837181e8ffdcde1cdad2a6869",
+        "48530047.img": "f5c0ddd89b5154449f498c35eccd3e80efb826ad0cfab64da801e4f891272a16",
+        "48530048.img": "1843a3fdfdbe216a0ef24bbee4dbf85c9661e709eb0a81eb33e25d85b1ed806a",
+        "48530049.img": "99da561335f09cd48a723e68053d60c715326cf0000e557eeac2ccf6d752d50a",
+        "48530050.img": "34be951fd4ba992ba2c759cf2cfdd4376d12f6073dc7fd743290a0bbfc367053",
+        "48530051.img": "bb7b99f98c9d86baa0a2221e8b9f8a7fc7641c87b3aaded1525c342dff9cad14",
+        "48530052.img": "42e0aa251d4b2937ce3ae3ff50f3185349753a92c8dc0d2f2a92a831fc9624d2",
+        "48530053.img": "fbd25c279f20e57d82a7d1a7229507b59cb936aafc0efc27be7139505afb41bc",
+        "48530054.img": "5c6d17c0abdbed20955c5c897a094d4fb0d98faf88cd7f32982dba8bd05f68e9",
+        "48530055.img": "84150bdfdae5d2d8f25fe546b7983518128d2c07b0e7f4a3382abf26aec00e7a",
+        "48530056.img": "602fb51f32d2a18f847d67938fae15b72fbb74648cc57c74150d1b0024e42817",
+        "48530057.img": "6dcb97fcfdca3c0d5ef7aaa9e968229d5537a49f1661cd3379467eac1b6de448",
+        "48530058.img": "6a09447ddd38dd3dd039481c1d12916efbe417804192a01319dacba21d889202",
+        "48530059.img": "b39ec3c472ea1e5d8ae67f43dc359c566d1ff1a86f7759dacf9ce4dff978819f",
+        "48530060.img": "12c76e0c9a3ca617b05a1e1ed7177bc83f5c855e4b9e47e6e9fd8a634825c94c",
+        "48530061.img": "7079e995f8c5e45218edb314f3f40b155461cf68d959bfe0b83864d6d7072fb0",
+        "48530062.img": "ef2a1502f3adf9dbd28130bf3e2a7538e632688f5f2a1140e998897481ccc294",
+        "48530063.img": "f5b00ffca122f21e4ca81e57a806096f76328b80ccc7828ef6e9a50dbb17150f",
+        "48530064.img": "cd52ada83f06dc507be1664b7df556c9ea0d7e301e0f2ad819f95a1e3f628725",
+        "48530065.img": "15e4e026bceac561ac485fbef7e24c9c065447c2255004df52aae11eb23a2a35",
+        "48530066.img": "99686ea403512d4b2cdb3bd014de0ba99eba3e9fa1beeb2894e4e73f862f694b",
+        "48530067.img": "fc600f5e46346faca82a3529a54cbcc3e0604b992af621a8ed21e721c965b0ea",
+        "48530068.img": "d0fc5e791727d39a97326bca401931a250788f84f99f1e78f17467fe35e138b7",
+        "48530069.img": "4b8f3e1911ce1baf25993c10d00e4e8ca4cf2d2db3d36f0fbc5807c6907dc963",
+        "48530070.img": "2cf5f0c2d8a75f8eff1263496e9270f921a2b9f77af844cd9a8f3883f431762c",
+        "48530071.img": "e2c099c0a987f3cf48bf04abcd3c0fdcbafef0c4c0698c5deac46e2bd704953f",
+        "48530072.img": "65338b3a34f65b34d37ce09230c01bc2973fd13712895c84e4863a5072187836",
+        "48530073.img": "1b8e0d1ccffa8212532fd618e7c918a9a1a21453ba8cb880a0f4ef3e27e0e203",
+        "48530074.img": "f91427fb37f39c33ec5e11fee6de29bc26c604c76330406ec48e97d75da00e6c",
+        "48530075.img": "fedc6b8dd3f4285921e5d2c36aeb8316dffa1891fbf6a77e22e004787ecb4dd1",
+        "48530076.img": "34626aa432af6407a3a968e4aebe1b5160a3e61bf00d2e992dbdb33575758196",
+        "48530077.img": "d606303c26dcb4f699b9c6ddb6e20017ba55ab410b0bc3696839423fe806b9ea",
+        "48530078.img": "41a37f1be77f5072e4770c30faca3fce5f901171b8a9f0657aa466501b24bd67",
+        "48530079.img": "40f3a574d5c39b2d076c33e6120a91c08256c005b8ef8fdc19823ebc99bfcf94",
+        "48530080.img": "e6b52d4fd7ec332e9a8c357c5bb0a7dabb2e870ee43081d104ab32bda142fa93",
+        "48530081.img": "3221d60178705067c587f6d7749f09f5d160b39320601830c6004a6dd825be9a",
+        "48530082.img": "abb99a8f3f7a3ef90f294c6bb425b328bf01d1959a7eb01b117599f16d2aa394",
+        "48530083.img": "56b078849e2bff1c0ce08d61e0720d73f8fc0002bbaa6e65181da2ccb90a2c91",
+        "48530084.img": "8c3d6b664adc51a272c525501d9ccfd839d8beb04e832f427e561c12c6571ff0",
+        "48530085.img": "c1d70cc5a0f6a3d2cb28ca46f7003ab48bb91dd8ba4dd9b81741196fe68f5a0b",
+        "48530086.img": "1b250dbdca85ead65568498c8a858c4c4dda47768192fa720af9ec7f006bb0cc",
+        "48530087.img": "71b658081c6e3f4df0dff279defbb66d09f9f10a838c5e1847859174e4771aba",
+        "48530088.img": "874df2f349dc2eae170943fd06a546357f97fc16c4b473d8055056c340a0514e",
+        "48530089.img": "e234c1de18083320ba29ba020570f85d71667014cf1498c89175e67ac336d25a",
+        "48530090.img": "9482481b582d8c5873711181d08e08d5d95fc5c4fff4d15827f79830c0ac6a1e",
+        "48530091.img": "87a82c97a9069498e95a60913e7836fb601ff545ee4d596f63300fb5d88871e4",
+        "48530092.img": "f85ab1c75602cc207e4c49c34bd32d7ee3e498effac2430b53027e0cf65650f3",
+        "48530093.img": "ccd56eb4ca8deaa5d5b7df490b6a2b3003f290f290e5e10839005c1ad85eb8e3",
+        "48530094.img": "094b7bae449481510f4f59e59aa21a5b47605baba39e039c4f5b1b61d1d7eb7f",
+        "48530095.img": "5dbdfe26f4dff163506020ff63b6270fbc169a4359baeb4bd98531063bd2293c",
+        "48530096.img": "9a0ede169bd0a17b68b6894fda90bbca38d0b2db13dc3a2dafdf5bf228c96c6f",
+        "48530097.img": "ddf742645c09053eb389830f82af802fed248c783fc76133faa9170c4b686c0f",
+        "48530098.img": "5505ff75c330f6649129ea554f760e3b40bd0b6adc845617253e7266e35a2c6e",
+        "48530099.img": "92c0a40c890664df0a70fdc5c91c3fd947f5f657b4ac8dd37f30c2f5063d0c6e",
+        "48530100.img": "c84335c056ca967ef8c6c51403f2854ebda8d417eb401295f18205a2940b3dc3",
+        "48530101.img": "d8811f8d392d48874aac8dfef95580c8f1def37f458ace7459597ea0836c5e43",
+        "48530102.img": "cf73343fab291da7cf5c739c3cfb41cb14a0fcc9c3273f87a029922a0472e694",
+        "48530103.img": "6df9aced56b8149614a8c2e417109fa116c766f446471c679adcec8dff56f21b",
+        "48530104.img": "0d75a82e5494102eb6cdf63f1f7e3aa2b1a3242bbfff6731051ae70c221a3e0a",
+        "48530105.img": "54ca45eca9920a40d249a2d93518f3b7733e3a076ba4f6d584cfdb4f62d47a57",
+        "48530106.img": "1e20acf9aa1331f7c5d45e00f6b784395d013f606c691039dffcae18a07e647d",
+        "48530107.img": "5c7b8cb9e02f19cd9d69ea74c1bd28c52e5299c97797a2a1141c252e2697d7fe",
+        "48530108.img": "68588c766e2b5ae5b3cfb1836b6620b3b75ff2e371a503607e6f97f8c2a8ecf3",
+        "48530109.img": "381e3beba518ef9a168ecfe6a4e4660fdd0dbac159e1c73fe3e910ef1b4864aa",
+        "48530110.img": "4be3ddd8d05cb2a3faf0825b34317c0092609ac5fb149a8c55dd1eefc0e6bc8d"
+      },
+      "pointInstancesAtHighestDetail": {
+        "0x100": 2,
+        "0x10001": 6922,
+        "0x10002": 5438,
+        "0x10003": 60937,
+        "0x10004": 645,
+        "0x10006": 110624,
+        "0x2f0b": 40775,
+        "0x600": 109,
+        "0x650c": 176,
+        "0x6603": 3013,
+        "0x6615": 5306,
+        "0x6616": 14755,
+        "0x800": 2348,
+        "0xb00": 9341,
+        "0xc00": 10890
+      },
+      "polygonInstancesAtHighestDetail": {
+        "0x10101": 15352,
+        "0x10102": 193720,
+        "0x10103": 7811,
+        "0x10104": 76472,
+        "0x10105": 344,
+        "0x10106": 721,
+        "0x10107": 1100,
+        "0x10109": 29527,
+        "0x1010a": 32096,
+        "0x1010b": 3122,
+        "0x1010c": 1741,
+        "0x1010d": 13,
+        "0x13": 1372600,
+        "0x32": 110,
+        "0x3c": 26026,
+        "0x50": 163735,
+        "0x51": 7316,
+        "0x54": 166
+      },
+      "routing": false,
+      "subfileBytes": {
+        "DEM": 60529333,
+        "LBL": 4287263,
+        "MPS": 10068,
+        "RGN": 219948149,
+        "SRT": 912,
+        "TRE": 2674653,
+        "TYP": 3037
+      },
+      "tiles": 110
+    },
+    "output": {
+      "bytes": 289554432,
+      "path": "regions/alps-tyrol-bavaria/garmin/dist/OpenBareMap-Alps-Tyrol-Bavaria-Glaciers.img",
+      "sha256": "89f76f577815b38ac1b2b95c648f6cc950c16346f0a99819d792a8dedc0c8788"
+    },
+    "routing": false,
+    "status": "compiled and structurally inspected; hardware rendering pending"
+  },
+  "geometryProcessing": {
+    "permanentIce": {
+      "glacier": 1218,
+      "permanent_snow": 12
+    }
+  },
+  "irelandGarminPackageRevision": "2.0.1-trail-detail-r1",
+  "irelandPreserved": true,
+  "labelGlyphs": {
+    "Open Sans Bold": true,
+    "Open Sans Regular": true,
+    "Open Sans Semibold": true
+  },
+  "landBackground": {
+    "arlberg": {
+      "coordinate": [
+        10.269,
+        47.13
+      ],
+      "verifiedZooms": [
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    },
+    "brenner": {
+      "coordinate": [
+        11.506,
+        47.003
+      ],
+      "verifiedZooms": [
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    },
+    "garmisch": {
+      "coordinate": [
+        11.095,
+        47.493
+      ],
+      "verifiedZooms": [
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    },
+    "grossglockner": {
+      "coordinate": [
+        12.694,
+        47.0745
+      ],
+      "verifiedZooms": [
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    },
+    "innsbruck": {
+      "coordinate": [
+        11.404,
+        47.266
+      ],
+      "verifiedZooms": [
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    },
+    "katschberg": {
+      "coordinate": [
+        13.6159,
+        47.056
+      ],
+      "verifiedZooms": [
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    },
+    "lienz": {
+      "coordinate": [
+        12.769,
+        46.828
+      ],
+      "verifiedZooms": [
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    },
+    "otztal": {
+      "coordinate": [
+        10.914,
+        46.861
+      ],
+      "verifiedZooms": [
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    },
+    "zugspitze": {
+      "coordinate": [
+        10.985,
+        47.421
+      ],
+      "verifiedZooms": [
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    }
+  },
+  "packages": {
+    "android": {
+      "checkedFiles": 43,
+      "nativeDeviceRenderingTested": false,
+      "sourceFiles": {
+        "basemap": "maps/basemap.mbtiles",
+        "coast": "maps/coast.mbtiles",
+        "hillshade": "maps/hillshade.mbtiles",
+        "topography": "maps/topography.mbtiles",
+        "utm-grid": "maps/grid.mbtiles"
+      }
+    },
+    "ios": {
+      "checkedFiles": 46,
+      "nativeDeviceRenderingTested": false,
+      "sourceFiles": {
+        "basemap": "maps/basemap.mbtiles",
+        "coast": "maps/coast.mbtiles",
+        "hillshade": "maps/hillshade.mbtiles",
+        "topography": "maps/topography.mbtiles",
+        "utm-grid": "maps/grid.mbtiles"
+      }
+    }
+  },
+  "region": "alps-tyrol-bavaria",
+  "status": "automated checks passed; visual and hardware acceptance pending"
+}

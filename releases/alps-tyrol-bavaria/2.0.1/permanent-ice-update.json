@@ -1,0 +1,46 @@
+{
+  "iceExtraction": {
+    "geometrySHA256": "0c0091cbe53418a4e908ce21e775255f8da1497a460ecea703f2b340033fddfc",
+    "permanentIce": {
+      "glacier": 1218,
+      "permanent_snow": 12
+    },
+    "region": "alps-tyrol-bavaria",
+    "sourceSHA256": "19f7941605235521c5f5f0399c0dace0b826e167ea516e1d4be05621a7e37252"
+  },
+  "mapVersion": "2.0.1",
+  "preservedBasemapLayersSHA256": "84f9adf01402bcc546eebd1d9f6bd870383c6a50810fa427c69de27566543130",
+  "preservedTerrain": {
+    "grid": {
+      "bytes": 8187904,
+      "path": "releases/alps-tyrol-bavaria/2.0.0/maps/grid.mbtiles",
+      "sha256": "f4e8d483c0f79e4c060e397468ddd793c0b7f29fb51743bc55faeae27d5479af",
+      "validation": {
+        "empty_tile_count": 0,
+        "logical_tiles_sha256": "d6cd031452a59992a8ccca5780f1bad6bd1407119f9eddbc04b41c66e80976d7",
+        "tile_count": 23480
+      }
+    },
+    "hillshade": {
+      "bytes": 129212416,
+      "path": "releases/alps-tyrol-bavaria/2.0.0/maps/hillshade.mbtiles",
+      "sha256": "5a5851c642a0cbab63ff7eba32a66865125d40446a67add0097336155863a1c9",
+      "validation": {
+        "empty_tile_count": 0,
+        "logical_tiles_sha256": "0f5ed764f49ac834610ef73795549481acfeda698703dca5ebd43f6062b330af",
+        "tile_count": 2772
+      }
+    },
+    "topography": {
+      "bytes": 440393728,
+      "path": "releases/alps-tyrol-bavaria/2.0.0/maps/topography-context.mbtiles",
+      "sha256": "21384cf932491f1dbff27b2f9d5307606a6a275bb8cfae6f4c4380621334075a",
+      "validation": {
+        "empty_tile_count": 68804,
+        "logical_tiles_sha256": "32f24b963b135e2c2d82e3487a04fb2fae635e24ea96a8a2b73a534398baf5a5",
+        "tile_count": 97888
+      }
+    }
+  },
+  "previousMapVersion": "2.0.0"
+}

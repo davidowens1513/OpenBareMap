@@ -69,9 +69,14 @@ def prepare(region='ireland'):
  for f in features(ROOT/'garmin/inputs/land-ireland.geojson.gz' if region=='ireland' else ROOT/'regions'/region/'garmin/inputs/land.geojson.gz'):
   g=f['geometry'];polys=[g['coordinates']] if g['type']=='Polygon' else g['coordinates']
   for rings in polys:polygon(rings,{'natural':'land'});counts['land_polygons']+=1
- for f in features(ROOT/'garmin/inputs/landcover-smoothed.geojson.gz' if region=='ireland' else ROOT/'regions'/region/'garmin/inputs/landcover.geojson.gz'):
-  g=f['geometry'];polys=[g['coordinates']] if g['type']=='Polygon' else g['coordinates']
-  for rings in polys:polygon(rings,{'obm:landcover':f['properties']['class']});counts['landcover_polygons']+=1
+ landcover_inputs = [ROOT/'garmin/inputs/landcover-smoothed.geojson.gz'] if region=='ireland' else [
+  ROOT/item['path'] for item in lock['inputs']
+  if Path(item['path']).name in ('landcover.geojson.gz','permanent-ice.geojson.gz')
+ ]
+ for source in landcover_inputs:
+  for f in features(source):
+   g=f['geometry'];polys=[g['coordinates']] if g['type']=='Polygon' else g['coordinates']
+   for rings in polys:polygon(rings,{'obm:landcover':f['properties']['class']});counts['landcover_polygons']+=1
  if p.get('coverageBoundary'):
   for name,tag in [('park-boundary','obm:park_boundary'),('coverage','obm:coverage_boundary')]:
    data=json.loads(region_path(region,name+'.geojson').read_text())

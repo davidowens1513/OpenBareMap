@@ -1,0 +1,33 @@
+{
+  "bytes": 2606736556,
+  "datasets": {
+    "basemap": {
+      "path": "maps/basemap.mbtiles",
+      "sha256": "5f1095b3f7fad8c8ae5b77a40bd621f9163d331ca86503d3185688677a40f472"
+    },
+    "coast": {
+      "derivedFrom": "cce406cc6b417072024b05dd91f7cb1bebcdbe6a594e6b5c227d3bea46cc1566",
+      "path": "maps/coast.mbtiles",
+      "sha256": "be0b78758f245c0ca1c2b02d4d2249e26d436dafc1d406d6cb3eabdaa6b3e370"
+    },
+    "grid": {
+      "path": "maps/grid.mbtiles",
+      "sha256": "136e9506681b4ac2aa5c57705f2664a4855b1d79e115359019fea05adfd853b7"
+    },
+    "hillshade": {
+      "path": "maps/hillshade.mbtiles",
+      "sha256": "c9dbd22c65fba6f1b3bef7c0254d89421d0cedca7cec4407af3ff75bb0c3693b"
+    },
+    "topography": {
+      "path": "maps/topography.mbtiles",
+      "sha256": "cce406cc6b417072024b05dd91f7cb1bebcdbe6a594e6b5c227d3bea46cc1566"
+    }
+  },
+  "instructionsSHA256": "a7515e8dcf60e01f273fec3a5b56e0325a64e7b2a678c939a46e6fdf3171c6bb",
+  "instructionsURL": "https://downloads.appsbyonzy.dev/OpenBareMap/norway-north/2.0.1/app-bundles-v1/android/instructions.txt",
+  "localPath": "releases/norway-north/2.0.1/app-bundles-v1/android/OpenBareMap-Norway-North-Android-Bundle.zip",
+  "mapManifestSHA256": "3ed5c058858e049ab696642245f683cc767838079996504cb588d490f63e5dd3",
+  "r2Key": "OpenBareMap/norway-north/2.0.1/app-bundles-v1/android/OpenBareMap-Norway-North-Android-Bundle.zip",
+  "sha256": "212dbdb6a2aa5f51fc43048de81256555deaf1210cdbce2d699b0a1d93b75379",
+  "url": "https://downloads.appsbyonzy.dev/OpenBareMap/norway-north/2.0.1/app-bundles-v1/android/OpenBareMap-Norway-North-Android-Bundle.zip"
+}

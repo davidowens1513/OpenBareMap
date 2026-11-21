@@ -318,3 +318,11 @@ data/regions/norway-*/copernicus/*
 /regions/canadian-rockies-*/garmin/dist/*.img
 /releases/canadian-rockies-*/*/maps/
 /releases/canadian-rockies-*/*/app-bundles-v1/**/*.zip
+
+# Glacier revisions are distributed from R2 under new URLs.
+/regions/*/garmin/dist/*-Glaciers.img
+/regions/*/garmin/inputs/permanent-ice.geojson.gz
+/releases/dolomites/2.0.1/maps/
+/releases/pyrenees/2.0.1/maps/
+/releases/norway-*/2.0.1/maps/
+/releases/*/2.0.1/app-bundles-v1/**/*.zip

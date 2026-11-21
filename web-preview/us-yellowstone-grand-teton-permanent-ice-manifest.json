@@ -1,0 +1,41 @@
+{
+  "regions": {
+    "us-yellowstone-grand-teton": {
+      "basemap": {
+        "sourceSHA256": "88e6233cb10877d972581f36503112d7caa1a14f13b6285c4ce724401676993c",
+        "bytes": 81140793,
+        "sha256": "16f1ca4993ea93de67487361666b3e3a442cd2a009c04debb221f3e33bfd4c1d",
+        "tiles": 12884
+      },
+      "grid": {
+        "sourceSHA256": "559128df29402b90df47b6f5e64ed7c18cb6dca80fc4722b62483569503393c2",
+        "bytes": 3804500,
+        "sha256": "da321f5ffc00541e287d9e67a9b6ac63921882133beca55b48e997d6eb919921",
+        "tiles": 13177
+      },
+      "hillshade": {
+        "sourceSHA256": "b44068bb5bf694392a1765b5336d84ae7a039dc1280ea4c3dbf42af49673199b",
+        "bytes": 99464517,
+        "sha256": "09643f6aa27d428abb0a5094ebc73c0f77d2791ceb92941c272e6653fc7099fd",
+        "tiles": 2337
+      },
+      "topography": {
+        "sourceSHA256": "52139ac2ccedbfa356598a9b7ecda5697e7d20215813cfcc3d88d97717793c5a",
+        "bytes": 172153129,
+        "sha256": "f9c265e3710912739d2a1a8fe187ca801d8a2bfe8fd9a61c1867fb5462240a50",
+        "tiles": 77283
+      },
+      "coast": {
+        "sourceSHA256": "0f6ba70fb1857c04e87adf29c9543f42c871e7e484ed6a3ca64fb2939db06b93",
+        "bytes": 36755,
+        "sha256": "907088afb4133ce91709bd2ee48e075a01cfddce080f9bd358eb1fce0caf20d3",
+        "tiles": 6337
+      }
+    }
+  },
+  "pmtilesPython": "3.8.1",
+  "pmtilesJS": "4.5.0",
+  "librarySHA256": "caf981bc46f6327ee7e65d5dc964d89d38a69f60edca2bd4c5c890c21b554c6c",
+  "dataOrigin": "https://downloads.appsbyonzy.dev/OpenBareMap/us-yellowstone-grand-teton/2.0.1/preview",
+  "scope": "Complete selected map tiles; no regional or zoom sampling."
+}

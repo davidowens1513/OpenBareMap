@@ -1,0 +1,106 @@
+{
+  "acceptance": "Automated checks only; see validation and visual-review records for actual reviewed scope.",
+  "coverage": "Eastern Austrian Alps, Julian Alps and Karawanks, joining the existing Dolomites around East Tyrol and Friuli.",
+  "datasets": {
+    "basemap": {
+      "bytes": 1107292160,
+      "path": "releases/alps-east/2.0.1/maps/basemap.mbtiles",
+      "sha256": "0cd96d5c39da921f1b03715452f4cbfc4d5b6551af9bc3479f5fe3878260e2c2",
+      "validation": {
+        "empty_tile_count": 425,
+        "logical_tiles_sha256": "ebaf23022f81474a0794d5197e3a6dad50754ec95d72bef66d8229c60f7bcfbe",
+        "tile_count": 32418
+      }
+    },
+    "grid": {
+      "bytes": 14581760,
+      "path": "releases/alps-east/2.0.0/maps/grid.mbtiles",
+      "sha256": "cf1575b8d07ea3c876e2794537be33938c21a100ec5ee427e8e30ef5ef5f2452",
+      "validation": {
+        "empty_tile_count": 0,
+        "logical_tiles_sha256": "9e168d39f5b20dbfdeeb192ac89e8b03eb294b6733b2bfe48356b4b11100d0b3",
+        "tile_count": 43378
+      }
+    },
+    "hillshade": {
+      "bytes": 226734080,
+      "path": "releases/alps-east/2.0.0/maps/hillshade.mbtiles",
+      "sha256": "bc02653c2b030f4414979346d499625ff433309cbd7d6993fb0d14f2d3b1dc82",
+      "validation": {
+        "empty_tile_count": 0,
+        "logical_tiles_sha256": "4b2c333cfb2a237abc399db99d59bd64d1c2adfc079d391c5f10298b0f70cb0e",
+        "tile_count": 5171
+      }
+    },
+    "topography": {
+      "bytes": 589701120,
+      "path": "releases/alps-east/2.0.0/maps/topography-context.mbtiles",
+      "sha256": "0477fb2c593d1c748789f90d66c02e3fbc01f2abc5cd27d57f6fda9342273113",
+      "validation": {
+        "empty_tile_count": 83830,
+        "logical_tiles_sha256": "1a02242264fd1c0e485e418dc0e1cb3064020a865cb5856b29d63e0fa29d7c13",
+        "tile_count": 133641
+      }
+    }
+  },
+  "garmin": {
+    "bytes": 466698240,
+    "path": "regions/alps-east/garmin/dist/OpenBareMap-Alps-East-Glaciers.img",
+    "sha256": "97d5dd7a791584e5519f014a6be3ad6e66355773e27de2e924b384812eeee0b9"
+  },
+  "geometryReport": {
+    "path": "releases/alps-east/2.0.1/build-records/alps-east-geometry/geometry-report.json",
+    "sha256": "fbe36814c8ab5e48c94d06b0b388b7f94ea8ecc9e86ceab422c9b53eac5ec448"
+  },
+  "hostAppsModified": false,
+  "mapVersion": "2.0.1",
+  "osm": {
+    "bytes": 661562489,
+    "operation": "Complete-feature bbox extraction with nested relation references",
+    "path": "data/regions/alps-east/alps-261116.osm.clipped.osm.pbf",
+    "replicationTimestamp": "2026-11-16T21:22:36Z",
+    "sha256": "3424a5db5c59196308baccf721cff90a2cfbb31520930e13551f63e810b23d05",
+    "snapshot_date": "2026-11-16",
+    "url": "https://download.geofabrik.de/europe/alps-261116.osm.pbf"
+  },
+  "packages": {
+    "android": {
+      "archive": {
+        "bytes": 1943815236,
+        "path": "regions/alps-east/android/OpenBareMap-Android.zip",
+        "sha256": "4e6596760944b22cbdd7333e3d35d8b795c37a9e1725d2876b2d17384e6371cf"
+      },
+      "checksumsSHA256": "fc8bdd57a115aa125c0236539eb20294e0325346dccb080fecf5d754ef2e304d",
+      "manifestSHA256": "400d9bdb4cff0123155d93cd60a89df692f35a3d747381628f265e93357a3e07",
+      "path": "regions/alps-east/android",
+      "validationSHA256": "3c1dd1be576cd3ced9b994fdbfe9c15958967fc9026739feeeb5d121ca13d8a9"
+    },
+    "ios": {
+      "checksumsSHA256": "934eab016ce797cff81e2baa4a70eefef9929caa383a575787dcb88fdcda64c4",
+      "manifestSHA256": "260763134f73143027ce776a671863f4e7a539a344f269b86c59a69658460a81",
+      "path": "regions/alps-east/ios",
+      "validationSHA256": "a2fe3abf1e530d6d59d8082eaad1ff61ef0153c694c61fa715e449f737572e86"
+    }
+  },
+  "pythonRuntime": {
+    "packages": {
+      "Pillow": "12.3.0",
+      "certifi": "2026.10.23",
+      "charset-normalizer": "3.5.2",
+      "idna": "3.20",
+      "numpy": "2.5.4",
+      "osmium": "4.3.2",
+      "pyproj": "3.8.0",
+      "requests": "2.34.2",
+      "shapely": "2.2.0",
+      "urllib3": "2.8.0"
+    },
+    "platform": "macOS-27.2.1-arm64-arm-64bit-Mach-O",
+    "python": "3.14.5 (main, May 10 2026, 10:21:34) [Clang 21.0.0 (clang-2100.0.123.102)]",
+    "requirementsSHA256": "427f12ff8b49bfebac0a7d453c2f65bd15d6695584b18e6ecee1fdfeed20a36c"
+  },
+  "region": "alps-east",
+  "styleSHA256": "9eb0a194876df5a74c481839db1df2ab376b3c3cfa8c31bf0b592ea5bb06b651",
+  "terrainLockSHA256": "59e209e6c1adba497aad6d7a6e03801227e84ab65ed465b1f57f2e5a54c508d5",
+  "validation": "validation.json"
+}

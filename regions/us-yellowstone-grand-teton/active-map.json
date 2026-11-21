@@ -3,13 +3,13 @@
   "coverage": "Yellowstone and Grand Teton national parks, the John D. Rockefeller Jr. Memorial Parkway and their gateway approaches.",
   "datasets": {
     "basemap": {
-      "bytes": 87683072,
-      "path": "releases/us-yellowstone-grand-teton/2.0.0/maps/basemap.mbtiles",
-      "sha256": "69bd3010e3d95be803065576e17198a43b463e29a1ec6abc281af262fcca8f30",
+      "bytes": 87732224,
+      "path": "releases/us-yellowstone-grand-teton/2.0.1/maps/basemap.mbtiles",
+      "sha256": "88e6233cb10877d972581f36503112d7caa1a14f13b6285c4ce724401676993c",
       "validation": {
         "empty_tile_count": 52,
-        "logical_tiles_sha256": "005cdc9de241eca5f0d2bdde14ca71a60d6b1cdb8738ff1adb98480b9f0ebf85",
-        "tile_count": 12883
+        "logical_tiles_sha256": "3003534d65249cbde5f1950387248b3a25bb06667f4e195e6c16416e3f2f8796",
+        "tile_count": 12884
       }
     },
     "grid": {
@@ -45,8 +45,8 @@
   },
   "format": "openbaremap-development-viewer-v1",
   "localBorders": false,
-  "mapVersion": "2.0.0",
+  "mapVersion": "2.0.1",
   "region": "us-yellowstone-grand-teton",
-  "storageRevision": "2.0.0-us-yellowstone-grand-teton-r3",
-  "styleRevision": "2.0.0-us-yellowstone-grand-teton-r1"
+  "storageRevision": "2.0.1-glacier-r1",
+  "styleRevision": "2.0.1-glacier-r1"
 }

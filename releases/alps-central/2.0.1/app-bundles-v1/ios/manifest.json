@@ -1,0 +1,35 @@
+{
+  "bytes": 2107357660,
+  "datasets": {
+    "basemap": {
+      "path": "maps/basemap.mbtiles",
+      "sha256": "f286726fa134558963f2b1763f1e280a73953680dd8512e6d18843a7f82f995a"
+    },
+    "coast": {
+      "derived_from": "0a8611682f92b208944f1e819d774495c815eb9d0e79053d4ebe27de344cd34e",
+      "maxzoom": 12,
+      "operation": "Preserve land-layer MVT bytes only through zoom 12; omit other layers.",
+      "path": "maps/coast.mbtiles",
+      "sha256": "8a7dc840d39bf7b0858b9fd41c218611dec54962c8eb647c9bd73cf05e948ba5"
+    },
+    "grid": {
+      "path": "maps/grid.mbtiles",
+      "sha256": "d606809c23af755432def37afa8be509b895af5fc9a333b89dabfd58c82bf87d"
+    },
+    "hillshade": {
+      "path": "maps/hillshade.mbtiles",
+      "sha256": "cd88666130a7141c7edbedf11855eedacff0e6aa69ebbb5923edb57a4028adfc"
+    },
+    "topography": {
+      "path": "maps/topography.mbtiles",
+      "sha256": "0a8611682f92b208944f1e819d774495c815eb9d0e79053d4ebe27de344cd34e"
+    }
+  },
+  "instructionsSHA256": "03f86366b2fb68f6796c77d01addd60603e9327a976de0df82ea5c557fb9bd23",
+  "instructionsURL": "https://downloads.appsbyonzy.dev/OpenBareMap/alps-central/2.0.1/app-bundles-v1/ios/instructions.txt",
+  "localPath": "releases/alps-central/2.0.1/app-bundles-v1/ios/OpenBareMap-Alps-Central-iOS-Bundle.zip",
+  "mapManifestSHA256": "52b12407e784a3bd9ccf60657b6efbc12c6f5df4002313a1555b883891e45956",
+  "r2Key": "OpenBareMap/alps-central/2.0.1/app-bundles-v1/ios/OpenBareMap-Alps-Central-iOS-Bundle.zip",
+  "sha256": "e9c3668e3baf55a4a4502433e4a7369bbc806d11766397c5a578ef465f24f416",
+  "url": "https://downloads.appsbyonzy.dev/OpenBareMap/alps-central/2.0.1/app-bundles-v1/ios/OpenBareMap-Alps-Central-iOS-Bundle.zip"
+}

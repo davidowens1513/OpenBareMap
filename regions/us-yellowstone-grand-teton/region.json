@@ -89,8 +89,8 @@
     45.261932040875955
   ],
   "garminFamilyId": 4858,
-  "garminFilename": "OpenBareMap-US-Yellowstone-Grand-Teton.img",
-  "garminPackageRevision": "2.0.1-trail-detail-r1",
+  "garminFilename": "OpenBareMap-US-Yellowstone-Grand-Teton-Glaciers.img",
+  "garminPackageRevision": "2.0.1-glacier-r1",
   "garminTileStartId": 48580001,
   "garminUseSourceOutline": true,
   "gridCRS": "EPSG:32612",
@@ -110,7 +110,7 @@
   ],
   "label": "Yellowstone & Grand Teton",
   "labelGlyphs": "ABCDEFGHIJKLMNOPQRSTUVWXYZ",
-  "mapVersion": "2.0.0",
+  "mapVersion": "2.0.1",
   "maxzoom": 14,
   "minorWaterwayMinzoom": 10,
   "minzoom": 4,
@@ -125,6 +125,8 @@
     "boundary",
     "hiking_route"
   ],
+  "permanentIce": true,
+  "permanentIceLayer": "permanent_ice",
   "projectedCRS": "EPSG:32612",
   "requireBogFeatures": false,
   "sourceBaseOverrides": {
@@ -140,7 +142,7 @@
     "montana",
     "idaho"
   ],
-  "styleRevision": "2.0.0-us-yellowstone-grand-teton-r1",
+  "styleRevision": "2.0.1-glacier-r1",
   "terrainAttribution": "Copernicus DEM GLO-30 \u00b7 European Union / ESA \u00b7 DLR / Airbus",
   "terrainBounds": [
     -112,

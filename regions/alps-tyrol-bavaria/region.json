@@ -1,87 +1,72 @@
 {
-  "id": "alps-tyrol-bavaria",
-  "name": "OpenBareMap Alps - Tyrol & Bavaria",
-  "label": "Alps - Tyrol & Bavaria",
-  "mapVersion": "2.0.0",
-  "minzoom": 4,
-  "maxzoom": 14,
-  "coverage": "Bavarian Alps, Austrian Tyrol and Hohe Tauern with links to the existing Dolomites around Brenner and East Tyrol.",
+  "alignedTerrainPixels": true,
   "bounds": [
     9.8,
     46.55,
     13.71,
     48.0
   ],
-  "terrainBounds": [
-    9,
-    46,
-    14,
-    48
-  ],
+  "clipBasemap": true,
+  "clipSource": true,
   "coastContextBounds": [
     8,
     45,
     15,
     49
   ],
-  "projectedCRS": "EPSG:25832",
-  "gridCRS": "EPSG:25832",
-  "gridName": "ETRS89 / UTM 32N",
-  "gridSource": "utm-grid",
-  "gridExtent": [
-    550000,
-    870000,
-    5150000,
-    5330000
-  ],
-  "townlands": false,
   "contourIntervalMetres": 20,
-  "sourceDate": "2026-11-16",
-  "sourceSlugs": [
-    "alps"
-  ],
-  "sourceBaseURL": "https://download.geofabrik.de/europe/",
-  "sourceCacheRegion": "alps",
-  "nativeLanguage": "de",
-  "minorWaterwayMinzoom": 10,
-  "clipBasemap": true,
-  "clipSource": true,
-  "ignoreSourceHeaderBounds": true,
-  "garminUseSourceOutline": true,
-  "alignedTerrainPixels": true,
-  "garminFamilyId": 4853,
-  "garminTileStartId": 48530001,
-  "garminFilename": "OpenBareMap-Alps-Tyrol-Bavaria.img",
-  "garminPackageRevision": "2.0.1-trail-detail-r1",
-  "styleRevision": "2.0.0-alps-tyrol-bavaria-r1",
-  "garminContextBounds": [
-    9.8,
-    46.55,
-    13.71,
-    48.0
-  ],
-  "requireBogFeatures": false,
-  "terrainProvider": "copernicus-glo30",
-  "terrainAttribution": "Copernicus DEM GLO-30 · European Union / ESA · DLR / Airbus",
-  "terrainNotice": "Alps - Tyrol & Bavaria elevation: Copernicus DEM GLO-30 Public (AWS 2021 release).\n\nproduced using Copernicus WorldDEM-30 © DLR e.V. 2010-2014 and © Airbus Defence and Space GmbH 2014-2018 provided under COPERNICUS by the European Union and ESA; all rights reserved\n\nThe organisations in charge of the Copernicus programme by law or by delegation do not incur any liability for any use of the Copernicus WorldDEM-30.\n\nLicense: https://dataspace.copernicus.eu/sites/default/files/media/files/2025-06/copernicus_contributing_mission_data_access_v2_cop_dem_licenses.pdf\nSource: https://registry.opendata.aws/copernicus-dem/\nVertical datum: EGM2008 orthometric metres. Native approximately 30 m cells are bilinearly resampled to point-aligned Int16 HGT for the shared terrain pipeline. Ocean-only cells absent from the official public inventory are zero.\n",
-  "inspectionNames": [
-    "Innsbruck",
-    "Garmisch-Partenkirchen"
-  ],
+  "coverage": "Bavarian Alps, Austrian Tyrol and Hohe Tauern with links to the existing Dolomites around Brenner and East Tyrol.",
+  "destinationLabels": {
+    "arlberg": "St. Anton am Arlberg",
+    "brenner": "Brenner Pass",
+    "garmisch": "Garmisch-Partenkirchen",
+    "grossglockner": "Grossglockner",
+    "innsbruck": "Innsbruck",
+    "island": "Alps - Tyrol & Bavaria",
+    "katschberg": "Katschberg",
+    "lienz": "Lienz",
+    "otztal": "Vent",
+    "zugspitze": "Zugspitze"
+  },
   "destinations": {
-    "island": [
-      11.755,
-      47.275,
-      7
-    ],
     "arlberg": [
       10.269,
       47.13,
       12
     ],
+    "brenner": [
+      11.506,
+      47.003,
+      12
+    ],
+    "garmisch": [
+      11.095,
+      47.493,
+      12
+    ],
+    "grossglockner": [
+      12.694,
+      47.0745,
+      12
+    ],
     "innsbruck": [
       11.404,
       47.266,
+      12
+    ],
+    "island": [
+      11.755,
+      47.275,
+      7
+    ],
+    "katschberg": [
+      13.6159,
+      47.056,
+      12
+    ],
+    "lienz": [
+      12.769,
+      46.828,
       12
     ],
     "otztal": [
@@ -93,53 +78,90 @@
       10.985,
       47.421,
       12
-    ],
-    "garmisch": [
-      11.095,
-      47.493,
-      12
-    ],
-    "brenner": [
-      11.506,
-      47.003,
-      12
-    ],
-    "grossglockner": [
-      12.694,
-      47.0745,
-      12
-    ],
-    "lienz": [
-      12.769,
-      46.828,
-      12
-    ],
-    "katschberg": [
-      13.6159,
-      47.056,
-      12
     ]
   },
-  "destinationLabels": {
-    "island": "Alps - Tyrol & Bavaria",
-    "arlberg": "St. Anton am Arlberg",
-    "innsbruck": "Innsbruck",
-    "otztal": "Vent",
-    "zugspitze": "Zugspitze",
-    "garmisch": "Garmisch-Partenkirchen",
-    "brenner": "Brenner Pass",
-    "grossglockner": "Grossglockner",
-    "lienz": "Lienz",
-    "katschberg": "Katschberg"
-  },
+  "garminContextBounds": [
+    9.8,
+    46.55,
+    13.71,
+    48.0
+  ],
+  "garminFamilyId": 4853,
+  "garminFilename": "OpenBareMap-Alps-Tyrol-Bavaria-Glaciers.img",
+  "garminPackageRevision": "2.0.1-glacier-r1",
+  "garminTileStartId": 48530001,
+  "garminUseSourceOutline": true,
+  "gridCRS": "EPSG:25832",
+  "gridExtent": [
+    550000,
+    870000,
+    5150000,
+    5330000
+  ],
+  "gridName": "ETRS89 / UTM 32N",
+  "gridSource": "utm-grid",
+  "id": "alps-tyrol-bavaria",
+  "ignoreSourceHeaderBounds": true,
+  "inspectionNames": [
+    "Innsbruck",
+    "Garmisch-Partenkirchen"
+  ],
+  "label": "Alps - Tyrol & Bavaria",
+  "mapVersion": "2.0.1",
+  "maxzoom": 14,
+  "minorWaterwayMinzoom": 10,
+  "minzoom": 4,
+  "name": "OpenBareMap Alps - Tyrol & Bavaria",
+  "nativeLanguage": "de",
+  "permanentIce": true,
+  "permanentIceLayer": "permanent_ice",
+  "projectedCRS": "EPSG:25832",
+  "requireBogFeatures": false,
+  "sourceBaseURL": "https://download.geofabrik.de/europe/",
+  "sourceCacheRegion": "alps",
+  "sourceDate": "2026-11-16",
+  "sourceSlugs": [
+    "alps"
+  ],
+  "styleRevision": "2.0.1-glacier-r1",
+  "terrainAttribution": "Copernicus DEM GLO-30 \u00b7 European Union / ESA \u00b7 DLR / Airbus",
+  "terrainBounds": [
+    9,
+    46,
+    14,
+    48
+  ],
+  "terrainNotice": "Alps - Tyrol & Bavaria elevation: Copernicus DEM GLO-30 Public (AWS 2021 release).\n\nproduced using Copernicus WorldDEM-30 \u00a9 DLR e.V. 2010-2014 and \u00a9 Airbus Defence and Space GmbH 2014-2018 provided under COPERNICUS by the European Union and ESA; all rights reserved\n\nThe organisations in charge of the Copernicus programme by law or by delegation do not incur any liability for any use of the Copernicus WorldDEM-30.\n\nLicense: https://dataspace.copernicus.eu/sites/default/files/media/files/2025-06/copernicus_contributing_mission_data_access_v2_cop_dem_licenses.pdf\nSource: https://registry.opendata.aws/copernicus-dem/\nVertical datum: EGM2008 orthometric metres. Native approximately 30 m cells are bilinearly resampled to point-aligned Int16 HGT for the shared terrain pipeline. Ocean-only cells absent from the official public inventory are zero.\n",
+  "terrainProvider": "copernicus-glo30",
+  "townlands": false,
   "validationAnchors": {
     "arlberg": [
       10.269,
       47.13
     ],
+    "brenner": [
+      11.506,
+      47.003
+    ],
+    "garmisch": [
+      11.095,
+      47.493
+    ],
+    "grossglockner": [
+      12.694,
+      47.0745
+    ],
     "innsbruck": [
       11.404,
       47.266
+    ],
+    "katschberg": [
+      13.6159,
+      47.056
+    ],
+    "lienz": [
+      12.769,
+      46.828
     ],
     "otztal": [
       10.914,
@@ -148,26 +170,6 @@
     "zugspitze": [
       10.985,
       47.421
-    ],
-    "garmisch": [
-      11.095,
-      47.493
-    ],
-    "brenner": [
-      11.506,
-      47.003
-    ],
-    "grossglockner": [
-      12.694,
-      47.0745
-    ],
-    "lienz": [
-      12.769,
-      46.828
-    ],
-    "katschberg": [
-      13.6159,
-      47.056
     ]
   }
 }

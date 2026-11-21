@@ -1,0 +1,41 @@
+{
+  "regions": {
+    "norway-north": {
+      "basemap": {
+        "sourceSHA256": "5f1095b3f7fad8c8ae5b77a40bd621f9163d331ca86503d3185688677a40f472",
+        "bytes": 713055267,
+        "sha256": "51a91fa81a51aec8bb809476fe8c1088a9db20b795efbca7749c1f1d13a3736b",
+        "tiles": 224383
+      },
+      "grid": {
+        "sourceSHA256": "136e9506681b4ac2aa5c57705f2664a4855b1d79e115359019fea05adfd853b7",
+        "bytes": 161728953,
+        "sha256": "27a79655770d3f4a0fce9ffe9300fd5228a4e933310c715faf2d244307bc33c7",
+        "tiles": 737693
+      },
+      "hillshade": {
+        "sourceSHA256": "c9dbd22c65fba6f1b3bef7c0254d89421d0cedca7cec4407af3ff75bb0c3693b",
+        "bytes": 616014997,
+        "sha256": "90e3f2b444954d0293f7e6a4d37cf939ef758aa24539f22803cc3f96c537da69",
+        "tiles": 28145
+      },
+      "topography": {
+        "sourceSHA256": "cce406cc6b417072024b05dd91f7cb1bebcdbe6a594e6b5c227d3bea46cc1566",
+        "bytes": 783045067,
+        "sha256": "25690aa8e1b92f12c9e0080c09b2af47f3d962a13dbd129a59a329cdca343fcc",
+        "tiles": 777479
+      },
+      "coast": {
+        "sourceSHA256": "be0b78758f245c0ca1c2b02d4d2249e26d436dafc1d406d6cb3eabdaa6b3e370",
+        "bytes": 17594386,
+        "sha256": "aef3c07713ec2f0d52370dbf0cc6b03ff5d3f706be4807e9d749d7923717b0f9",
+        "tiles": 49943
+      }
+    }
+  },
+  "pmtilesPython": "3.8.1",
+  "pmtilesJS": "4.5.0",
+  "librarySHA256": "caf981bc46f6327ee7e65d5dc964d89d38a69f60edca2bd4c5c890c21b554c6c",
+  "dataOrigin": "https://downloads.appsbyonzy.dev/OpenBareMap/norway-north/2.0.1/preview",
+  "scope": "Complete selected map tiles; no regional or zoom sampling."
+}

@@ -1,0 +1,25 @@
+{
+  "counts": {
+    "permanentIce": {
+      "glacier": 569,
+      "permanent_snow": 0
+    }
+  },
+  "osm": {
+    "bytes": 12061983,
+    "operation": "Complete-feature bbox extraction with nested relation references",
+    "path": "data/regions/us-glacier/montana-261120.osm.clipped.osm.pbf",
+    "replicationTimestamp": "2026-11-20T21:21:21Z",
+    "sha256": "8a6c48e816351baa170eae29e2a87363a0eef48dc405a529f25efe6d518378df",
+    "snapshot_date": "2026-11-20",
+    "url": "https://download.geofabrik.de/north-america/us/montana/montana-261120.osm.pbf"
+  },
+  "outputs": {
+    "ice.geojson": "a0ea832cc5d97d23eb3c36ab23c562108a6f7cecb262bb0ec1be9f74f0f2517c"
+  },
+  "permanentIce": {
+    "glacier": 569,
+    "permanent_snow": 0
+  },
+  "region": "us-glacier"
+}

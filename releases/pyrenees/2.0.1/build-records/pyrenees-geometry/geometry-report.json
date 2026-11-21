@@ -1,0 +1,25 @@
+{
+  "counts": {
+    "permanentIce": {
+      "glacier": 149,
+      "permanent_snow": 0
+    }
+  },
+  "osm": {
+    "bytes": 643558307,
+    "operation": "Complete-feature bbox extraction with nested relation references, then libosmium sorted merge; duplicate OSM objects resolved by version",
+    "path": "data/regions/pyrenees/pyrenees-261031.osm.pbf",
+    "replicationTimestamp": "2026-10-31T21:23:06Z",
+    "sha256": "4143a1bae031da426b5e80a73561d9ce5941dbb67b439263e71c11c06558c0db",
+    "snapshot_date": "2026-10-31",
+    "url": null
+  },
+  "outputs": {
+    "ice.geojson": "7f9041de62be310df21eb1014772604ad69305872138b159ce17b5fff659d371"
+  },
+  "permanentIce": {
+    "glacier": 149,
+    "permanent_snow": 0
+  },
+  "region": "pyrenees"
+}

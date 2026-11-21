@@ -1,0 +1,25 @@
+{
+  "counts": {
+    "permanentIce": {
+      "glacier": 1218,
+      "permanent_snow": 12
+    }
+  },
+  "osm": {
+    "bytes": 430753885,
+    "operation": "Complete-feature bbox extraction with nested relation references",
+    "path": "data/regions/alps-tyrol-bavaria/alps-261116.osm.clipped.osm.pbf",
+    "replicationTimestamp": "2026-11-16T21:22:36Z",
+    "sha256": "19f7941605235521c5f5f0399c0dace0b826e167ea516e1d4be05621a7e37252",
+    "snapshot_date": "2026-11-16",
+    "url": "https://download.geofabrik.de/europe/alps-261116.osm.pbf"
+  },
+  "outputs": {
+    "ice.geojson": "0c0091cbe53418a4e908ce21e775255f8da1497a460ecea703f2b340033fddfc"
+  },
+  "permanentIce": {
+    "glacier": 1218,
+    "permanent_snow": 12
+  },
+  "region": "alps-tyrol-bavaria"
+}

@@ -1,0 +1,33 @@
+{
+  "bytes": 77999068,
+  "datasets": {
+    "basemap": {
+      "path": "maps/basemap.mbtiles",
+      "sha256": "0019ea063155529d0b4926708b4aae947c7e2ee22814aafa1349d743b3e06fb8"
+    },
+    "coast": {
+      "derivedFrom": "8a5e79c943aa0329f42c26a5f1c457959476a538fb941d21e03c1c1634ee5e70",
+      "path": "maps/coast.mbtiles",
+      "sha256": "55dc5a49422ae37bc869b015b8c8e10db624798a736517f8267fab0a7b49ab7b"
+    },
+    "grid": {
+      "path": "maps/grid.mbtiles",
+      "sha256": "612923e176b450045b03f200d170fbabdc8995e8eff0dd7ebc430abd40b45e66"
+    },
+    "hillshade": {
+      "path": "maps/hillshade.mbtiles",
+      "sha256": "6aa11fa47979f4ac836f887ddcf5901230d781a03dbf8d0f5c03d3433239bbc9"
+    },
+    "topography": {
+      "path": "maps/topography.mbtiles",
+      "sha256": "8a5e79c943aa0329f42c26a5f1c457959476a538fb941d21e03c1c1634ee5e70"
+    }
+  },
+  "instructionsSHA256": "ee74fe8a5eca2af0ad2aabbc864d88e5557e7784c15bd030d59d3f5334d3df7b",
+  "instructionsURL": "https://downloads.appsbyonzy.dev/OpenBareMap/us-rocky-mountain/2.0.1/app-bundles-v1/android/instructions.txt",
+  "localPath": "releases/us-rocky-mountain/2.0.1/app-bundles-v1/android/OpenBareMap-Rocky-Mountain-Android-Bundle.zip",
+  "mapManifestSHA256": "47f7bf7785da8bd24899e79e349aa2e074e2bbeca8807296107901441ede57db",
+  "r2Key": "OpenBareMap/us-rocky-mountain/2.0.1/app-bundles-v1/android/OpenBareMap-Rocky-Mountain-Android-Bundle.zip",
+  "sha256": "ef653a357bd1199606bd8005ea873d98326ca1df038062381eb6b5052cece1da",
+  "url": "https://downloads.appsbyonzy.dev/OpenBareMap/us-rocky-mountain/2.0.1/app-bundles-v1/android/OpenBareMap-Rocky-Mountain-Android-Bundle.zip"
+}

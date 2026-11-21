@@ -1,0 +1,25 @@
+{
+  "counts": {
+    "permanentIce": {
+      "glacier": 1347,
+      "permanent_snow": 0
+    }
+  },
+  "osm": {
+    "bytes": 856359431,
+    "operation": "Complete-feature bbox extraction with nested relation references",
+    "path": "data/regions/norway-south/norway-261113.osm.clipped.osm.pbf",
+    "replicationTimestamp": "2026-11-13T21:22:20Z",
+    "sha256": "d7ba66a94bba227d2bdbeb54a257c4e0ccba11d78b37c57429a787ecb2ae48e8",
+    "snapshot_date": "2026-11-13",
+    "url": "https://download.geofabrik.de/europe/norway-261113.osm.pbf"
+  },
+  "outputs": {
+    "ice.geojson": "1d36d985da21758677d58f5d73187446d9d29461cfd28c056266426939fca897"
+  },
+  "permanentIce": {
+    "glacier": 1347,
+    "permanent_snow": 0
+  },
+  "region": "norway-south"
+}

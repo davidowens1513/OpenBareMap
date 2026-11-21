@@ -34,14 +34,14 @@ def add_permanent_ice_style(style, family_id):
     polygons.write_text(rules)
     typ.write_text(text)
 
-def main(region):
+def main(region, geometry=None):
     from fetch_region import fetch_dem_padding
     fetch_dem_padding(region)
     p=profile(region);dest=ROOT/'regions'/region/'garmin';dest.mkdir(parents=True,exist_ok=True)
     work=garmin_work(region);work.mkdir(parents=True,exist_ok=True)
     inputs=dest/'inputs';inputs.mkdir(exist_ok=True)
     lock=dest/'inputs.lock.json'
-    geometry=ROOT/'build'/(region+'-geometry')
+    geometry=geometry if geometry is not None else ROOT/'build'/(region+'-geometry')
     geometry_report=json.loads((geometry/'geometry-report.json').read_text())
     ice_counts = geometry_report.get('permanentIce', {})
     if p.get('permanentIce') and set(ice_counts) != set(PERMANENT_ICE):
@@ -66,7 +66,7 @@ def main(region):
         if digest(land_source)!=json.loads((context/'source.json').read_text())['sha256']:raise ValueError('Garmin coastal context changed')
     if not lock.exists():
         records=[]
-        for name,path in [('contours',ROOT/'build'/(region+'-geometry')/'contours.geojson'),('landcover',ROOT/'build'/(region+'-geometry')/'landcover.geojson'),('land',land_source)]:records.append(compress(path,inputs/(name+'.geojson.gz')))
+        for name,path in [('contours',geometry/'contours.geojson'),('landcover',geometry/'landcover.geojson'),('land',land_source)]:records.append(compress(path,inputs/(name+'.geojson.gz')))
         write(lock,{'region':region,'inputs':records})
     for item in json.loads(lock.read_text())['inputs']:
         if digest(ROOT/item['path'])!=item['sha256']:raise ValueError('Garmin input changed')
@@ -95,7 +95,8 @@ def main(region):
     polygon=dest/'coverage.poly'
     if not polygon.exists():polygon_union(region,polygon)
     copyright_file=dest/'copyright.txt'
-    copyright_file.write_text((ROOT/'garmin/copyright.txt').read_text().replace('Ireland',p['label']).replace('Townlands','Inherited font and pattern assets'))
+    copyright_text = (ROOT/'garmin/copyright.txt').read_text().replace('Ireland',p['label']).replace('Townlands','Inherited font and pattern assets')
+    copyright_file.write_text(copyright_text.rstrip() + '\n')
     if p.get('terrainNotice'):copyright_file.write_text(copyright_file.read_text().replace('Terrain Tiles / Mapzen composite elevation; see distributed attribution',p['terrainNotice']))
     options=['--max-jobs=2','--style-file='+str(style),'--family-id='+str(p['garminFamilyId']),'--product-id=1','--family-name='+p['name'],'--series-name=OpenBareMap Garmin 2.0','--description='+p['name']+' 2.0','--code-page=1252','--lower-case','--name-tag-list=name:en,name,name:'+p.get('nativeLanguage','cy'),'--levels=0:24,1:23,2:22,3:20,4:18,5:16','--gmapsupp','--transparent','--draw-priority=25','--add-pois-to-areas','--dem='+str(work/'hgt'),'--dem-poly='+str(polygon),'--dem-dists=3312,3312,13248,26512,53024,106048','--dem-interpolation=bilinear','--copyright-file='+str(copyright_file)]
     if p.get('coverageBoundary'):
@@ -174,4 +175,4 @@ def main(region):
     write(dest/'build-report.json',{'status':'compiled and structurally inspected; hardware rendering pending','familyId':p['garminFamilyId'],'garminPackageRevision':config['garminPackageRevision'],'routing':False,'output':{'path':str(output.relative_to(ROOT)),'bytes':output.stat().st_size,'sha256':digest(output)},'inspection':inspection})
 
 if __name__=='__main__':
-    parser=argparse.ArgumentParser();parser.add_argument('--region',choices=REGIONS[1:],required=True);args=parser.parse_args();main(args.region)
+    parser=argparse.ArgumentParser();parser.add_argument('--region',choices=REGIONS[1:],required=True);parser.add_argument('--geometry',type=Path);args=parser.parse_args();main(args.region,args.geometry)

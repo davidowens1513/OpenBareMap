@@ -27,7 +27,7 @@
     "--transparent",
     "--draw-priority=25",
     "--add-pois-to-areas",
-    "--dem=/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/906ead9d53a7/norway-central/garmin/hgt",
+    "--dem=/Volumes/Extreme SSD/Projects/OpenBareMap/work/glacier-updates/native/OpenBareMap-builds/906ead9d53a7/norway-central/garmin/hgt",
     "--dem-poly=/Volumes/Extreme SSD/Projects/OpenBareMap/regions/norway-central/garmin/coverage.poly",
     "--dem-dists=3312,3312,13248,26512,53024,106048",
     "--dem-interpolation=bilinear",
@@ -38,7 +38,7 @@
   "drawPriority": 25,
   "familyId": 4840,
   "fineContourResolution": 23,
-  "garminPackageRevision": "2.0.1-trail-detail-r1",
+  "garminPackageRevision": "2.0.1-glacier-r1",
   "hikingLineResolution": 24,
   "hikingLineWidthPixels": 4,
   "nativeLevels": [

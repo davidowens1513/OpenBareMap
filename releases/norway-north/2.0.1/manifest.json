@@ -1,0 +1,106 @@
+{
+  "acceptance": "Automated checks only; see validation and visual-review records for actual reviewed scope.",
+  "coverage": "Bodo, Lofoten, Vesteralen, Tromso and Finnmark through North Cape and Kirkenes. Mainland Norway and coastal islands only; excludes Svalbard and Jan Mayen. Adjacent editions overlap by 0.5 degrees latitude (approximately 56 km).",
+  "datasets": {
+    "basemap": {
+      "bytes": 806887424,
+      "path": "releases/norway-north/2.0.1/maps/basemap.mbtiles",
+      "sha256": "5f1095b3f7fad8c8ae5b77a40bd621f9163d331ca86503d3185688677a40f472",
+      "validation": {
+        "empty_tile_count": 21860,
+        "logical_tiles_sha256": "c61aac5c889f9aaf2e66cd4559dd12c18b5a9c48588faaacc91ea45c0dbe1bee",
+        "tile_count": 224383
+      }
+    },
+    "grid": {
+      "bytes": 194441216,
+      "path": "releases/norway-north/2.0.0/maps/grid.mbtiles",
+      "sha256": "136e9506681b4ac2aa5c57705f2664a4855b1d79e115359019fea05adfd853b7",
+      "validation": {
+        "empty_tile_count": 0,
+        "logical_tiles_sha256": "492a7ad4e286379840ac8046645d5dc25bc98b1445e48a8b2022484137c4771b",
+        "tile_count": 737693
+      }
+    },
+    "hillshade": {
+      "bytes": 637526016,
+      "path": "releases/norway-north/2.0.0/maps/hillshade.mbtiles",
+      "sha256": "c9dbd22c65fba6f1b3bef7c0254d89421d0cedca7cec4407af3ff75bb0c3693b",
+      "validation": {
+        "empty_tile_count": 0,
+        "logical_tiles_sha256": "10ea37216fa2eb39d4956358561b574ec7913f3027ac32570641e7ee161eb107",
+        "tile_count": 28145
+      }
+    },
+    "topography": {
+      "bytes": 939577344,
+      "path": "releases/norway-north/2.0.0/maps/topography-context.mbtiles",
+      "sha256": "cce406cc6b417072024b05dd91f7cb1bebcdbe6a594e6b5c227d3bea46cc1566",
+      "validation": {
+        "empty_tile_count": 355432,
+        "logical_tiles_sha256": "f12eb0ae2b7496e4e06f0bab9d84769c9a2ca3c2d192b51fef79328daacc380e",
+        "tile_count": 777479
+      }
+    }
+  },
+  "garmin": {
+    "bytes": 633143296,
+    "path": "regions/norway-north/garmin/dist/OpenBareMap-Norway-North-Glaciers.img",
+    "sha256": "2774ea6a20eb4f6607ff04d678348bd71ab13446acbff5ecc2e7a417a82d6823"
+  },
+  "geometryReport": {
+    "path": "releases/norway-north/2.0.1/build-records/norway-north-geometry/geometry-report.json",
+    "sha256": "229502c08ac0bb346a138e9e06eab754e1a88c4d9ec27953c88cb7375630651e"
+  },
+  "hostAppsModified": false,
+  "mapVersion": "2.0.1",
+  "osm": {
+    "bytes": 310054822,
+    "operation": "Complete-feature bbox extraction with nested relation references",
+    "path": "data/regions/norway-north/norway-261113.osm.clipped.osm.pbf",
+    "replicationTimestamp": "2026-11-13T21:22:20Z",
+    "sha256": "149cc5091b723ab2c349b47321fdd84c0f45f2653221e81cfc5a2c7b4f06777b",
+    "snapshot_date": "2026-11-13",
+    "url": "https://download.geofabrik.de/europe/norway-261113.osm.pbf"
+  },
+  "packages": {
+    "android": {
+      "archive": {
+        "bytes": 2606707945,
+        "path": "regions/norway-north/android/OpenBareMap-Android.zip",
+        "sha256": "2568cb266a6d641306fa6a59ff236ba6ad534c70f8f04955a2ed3c84cb6750fd"
+      },
+      "checksumsSHA256": "918e37329b7abcf89c2f63ecd899b41ed6a7eefccb6767851ad93ac2857424c8",
+      "manifestSHA256": "3ed5c058858e049ab696642245f683cc767838079996504cb588d490f63e5dd3",
+      "path": "regions/norway-north/android",
+      "validationSHA256": "5933f7a22f925ac532d9ea2bf5f353959f54d4d7b94dda5ffa9a253fdd0cc5ad"
+    },
+    "ios": {
+      "checksumsSHA256": "773dc9e93b42d8b6a586b6e40232bca9272f39202ce2e6304d94ad35887fefb1",
+      "manifestSHA256": "8d165ee5b636d0a1f3641fa77da795abc3a123e2a2102773460fb12c1c7246b6",
+      "path": "regions/norway-north/ios",
+      "validationSHA256": "14e0c6c3bc9e41c2ea36fe1279b010cf28cf58d8dd9049cdf649406f8b41025b"
+    }
+  },
+  "pythonRuntime": {
+    "packages": {
+      "Pillow": "12.3.0",
+      "certifi": "2026.10.23",
+      "charset-normalizer": "3.5.2",
+      "idna": "3.20",
+      "numpy": "2.5.4",
+      "osmium": "4.3.2",
+      "pyproj": "3.8.0",
+      "requests": "2.34.2",
+      "shapely": "2.2.0",
+      "urllib3": "2.8.0"
+    },
+    "platform": "macOS-27.2.1-arm64-arm-64bit-Mach-O",
+    "python": "3.14.5 (main, May 10 2026, 10:21:34) [Clang 21.0.0 (clang-2100.0.123.102)]",
+    "requirementsSHA256": "427f12ff8b49bfebac0a7d453c2f65bd15d6695584b18e6ecee1fdfeed20a36c"
+  },
+  "region": "norway-north",
+  "styleSHA256": "cefc4878efcbfb88314855049bf2f3da989a07be73c6b43f8723671b282f485d",
+  "terrainLockSHA256": "239f03be1ef11352494a3a29329323abfa923b795e09ea28248ddcd44f26f4a8",
+  "validation": "validation.json"
+}

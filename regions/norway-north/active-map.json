@@ -3,13 +3,13 @@
   "coverage": "Bodo, Lofoten, Vesteralen, Tromso and Finnmark through North Cape and Kirkenes. Mainland Norway and coastal islands only; excludes Svalbard and Jan Mayen. Adjacent editions overlap by 0.5 degrees latitude (approximately 56 km).",
   "datasets": {
     "basemap": {
-      "bytes": 803426304,
-      "path": "releases/norway-north/2.0.0/maps/basemap.mbtiles",
-      "sha256": "4b58b5354e3857a6dd6895a8a97fe3ed17c5440b0789497ba95f9db223f6e013",
+      "bytes": 806887424,
+      "path": "releases/norway-north/2.0.1/maps/basemap.mbtiles",
+      "sha256": "5f1095b3f7fad8c8ae5b77a40bd621f9163d331ca86503d3185688677a40f472",
       "validation": {
-        "empty_tile_count": 22011,
-        "logical_tiles_sha256": "53e906b8824b4845447739c237cb03791d9911d41fcef5989ab99a56209acbdb",
-        "tile_count": 223921
+        "empty_tile_count": 21860,
+        "logical_tiles_sha256": "c61aac5c889f9aaf2e66cd4559dd12c18b5a9c48588faaacc91ea45c0dbe1bee",
+        "tile_count": 224383
       }
     },
     "grid": {
@@ -45,8 +45,8 @@
   },
   "format": "openbaremap-development-viewer-v1",
   "localBorders": false,
-  "mapVersion": "2.0.0",
+  "mapVersion": "2.0.1",
   "region": "norway-north",
-  "storageRevision": "2.0.0-norway-north-r3",
-  "styleRevision": "2.0.0-norway-north-r1"
+  "storageRevision": "2.0.1-glacier-r1",
+  "styleRevision": "2.0.1-glacier-r1"
 }

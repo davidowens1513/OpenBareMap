@@ -1,0 +1,41 @@
+{
+  "regions": {
+    "us-yosemite": {
+      "basemap": {
+        "sourceSHA256": "b1c5ec72af6996a8c69d1bd7b2d52c5972777189ee800350de1e5faffccad4a4",
+        "bytes": 31538081,
+        "sha256": "78018b1aa179fea0088085c0c0354b1dcad98edca16dc6df90fca50dd1430ed8",
+        "tiles": 4160
+      },
+      "grid": {
+        "sourceSHA256": "1367af0fa0999e1ecc42d70199f36b2cf5fa237c573c1a37a228118d21642007",
+        "bytes": 1317404,
+        "sha256": "a5a782873f84c4b2edfaf3ba801a857c72e5d9351b67704d4a2c03e150bf54c5",
+        "tiles": 4174
+      },
+      "hillshade": {
+        "sourceSHA256": "b4fd0c6bc6c223ede7705fa657be8c8ccd2110885c5024f9d204cdfc491cbd7f",
+        "bytes": 61807154,
+        "sha256": "71bdbeb6c235572d6909efb1b95308be78565e817a673f917ddb05a4414787e5",
+        "tiles": 1468
+      },
+      "topography": {
+        "sourceSHA256": "66cb6aef7dd63d28401bc8b3b4aa713aa4f3531ee50f2d9ee7d309b060674bf7",
+        "bytes": 70785952,
+        "sha256": "e988492b99aa861d8028d6d3f9c8bbc185306de9d5db7a03d96018678dac3327",
+        "tiles": 55812
+      },
+      "coast": {
+        "sourceSHA256": "31baeabd7327d27c93061756691c746cd45f42a6f0925cd3a5ed23045e5802b3",
+        "bytes": 148691,
+        "sha256": "cdcf5be28d7c701ee4c3835eb3e2b0f75f78bfd71a27f1d4731451c3ee0bb4a1",
+        "tiles": 4685
+      }
+    }
+  },
+  "pmtilesPython": "3.8.1",
+  "pmtilesJS": "4.5.0",
+  "librarySHA256": "caf981bc46f6327ee7e65d5dc964d89d38a69f60edca2bd4c5c890c21b554c6c",
+  "dataOrigin": "https://downloads.appsbyonzy.dev/OpenBareMap/us-yosemite/2.0.1/preview",
+  "scope": "Complete selected map tiles; no regional or zoom sampling."
+}

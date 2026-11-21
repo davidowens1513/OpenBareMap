@@ -1,0 +1,41 @@
+{
+  "regions": {
+    "alps-central": {
+      "basemap": {
+        "sourceSHA256": "f286726fa134558963f2b1763f1e280a73953680dd8512e6d18843a7f82f995a",
+        "bytes": 1137563214,
+        "sha256": "c0f90b4fb3c4dbe7627d370fb666cff98e63a0fee299762213d7b1bbc4db6962",
+        "tiles": 35881
+      },
+      "grid": {
+        "sourceSHA256": "d606809c23af755432def37afa8be509b895af5fc9a333b89dabfd58c82bf87d",
+        "bytes": 12600113,
+        "sha256": "5ecda08b42368d6b6841044ede65f856b3befcde099c81e204ae5a523678b7a5",
+        "tiles": 43611
+      },
+      "hillshade": {
+        "sourceSHA256": "cd88666130a7141c7edbedf11855eedacff0e6aa69ebbb5923edb57a4028adfc",
+        "bytes": 202999864,
+        "sha256": "2bc0c08b87df06ae6e590bbbd95794933b908638e2e89d8a02f0664f388957db",
+        "tiles": 4799
+      },
+      "topography": {
+        "sourceSHA256": "0a8611682f92b208944f1e819d774495c815eb9d0e79053d4ebe27de344cd34e",
+        "bytes": 680953646,
+        "sha256": "5d57c24c84deec1019c63c1247676c0e9654da89397001ce16fb6e52c7b96fe3",
+        "tiles": 134455
+      },
+      "coast": {
+        "sourceSHA256": "8a7dc840d39bf7b0858b9fd41c218611dec54962c8eb647c9bd73cf05e948ba5",
+        "bytes": 219709,
+        "sha256": "cbe4b13547500f75a1f8dfe400162efef90ee9fd16baabb2339c5adbef74cad2",
+        "tiles": 10324
+      }
+    }
+  },
+  "pmtilesPython": "3.8.1",
+  "pmtilesJS": "4.5.0",
+  "librarySHA256": "caf981bc46f6327ee7e65d5dc964d89d38a69f60edca2bd4c5c890c21b554c6c",
+  "dataOrigin": "https://downloads.appsbyonzy.dev/OpenBareMap/alps-central/2.0.1/preview",
+  "scope": "Complete selected map tiles; no regional or zoom sampling."
+}

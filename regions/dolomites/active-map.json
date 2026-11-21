@@ -3,12 +3,12 @@
   "coverage": "Dolomites regional edition; approved rectangular coverage 10.65\u201313.10\u00b0E, 45.70\u201347.00\u00b0N. Complete OSM features retained at the edge.",
   "datasets": {
     "basemap": {
-      "bytes": 426749952,
-      "path": "releases/dolomites/2.0.0/maps/basemap.mbtiles",
-      "sha256": "fdbf05ef3cf7a9128d317fee351b3bb4fd5bbdb2d7673d36fd5cf97b68e1174c",
+      "bytes": 427458560,
+      "path": "releases/dolomites/2.0.1/maps/basemap.mbtiles",
+      "sha256": "dd3d881f4fa0d2cf9a962a00034dd60bd5007ebce778ed634b40cdbf7fd1bd68",
       "validation": {
         "empty_tile_count": 1,
-        "logical_tiles_sha256": "ad56ce0f318783514d9fe7616ab721f67ea7fe8cc84f073c4a76b9b92457477a",
+        "logical_tiles_sha256": "398d183c90576e8c5030a86007628adf26e08be4507dfaef37096a2a0d1edc77",
         "tile_count": 13259
       }
     },
@@ -45,8 +45,8 @@
   },
   "format": "openbaremap-development-viewer-v1",
   "localBorders": false,
-  "mapVersion": "2.0.0",
+  "mapVersion": "2.0.1",
   "region": "dolomites",
-  "storageRevision": "2.0.0-dolomites-r3",
-  "styleRevision": "2.0.0-dolomites-r1"
+  "storageRevision": "2.0.1-glacier-r1",
+  "styleRevision": "2.0.1-glacier-r1"
 }

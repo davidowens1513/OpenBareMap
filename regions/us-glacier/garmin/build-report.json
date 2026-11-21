@@ -1,6 +1,6 @@
 {
   "familyId": 4863,
-  "garminPackageRevision": "2.0.1-trail-detail-r1",
+  "garminPackageRevision": "2.0.1-glacier-r1",
   "inspection": {
     "anchorLabels": {
       "Mount Cleveland": "Mount Cleveland",
@@ -47,10 +47,10 @@
       },
       "2": {
         "0x10009": 17,
-        "0x22": 5662
+        "0x22": 5663
       },
       "3": {
-        "0x10008": 5178,
+        "0x10008": 5179,
         "0x10009": 17
       },
       "4": {
@@ -72,7 +72,7 @@
       "0x18": 7318,
       "0x1a": 7,
       "0x1c": 102,
-      "0x1e": 37,
+      "0x1e": 36,
       "0x1f": 1850,
       "0x2": 64,
       "0x20": 33524,
@@ -83,16 +83,16 @@
       "0x7": 3470,
       "0xa": 1327
     },
-    "logicalCombinedSHA256": "7db964b6a46e4c283748db8fc0719c69db33d5efeb1d3e3686fbaeeda078c299",
+    "logicalCombinedSHA256": "e78bbb65ac0e41251933ad5ee23ab2d862d8a5872edea6f516084ef890d1dff0",
     "logicalHashNote": "Internal file names, sizes and payloads; only CommonHeader creation-date bytes 14..20 are zeroed for hashing. IMG archive headers are excluded. Output bytes are never modified.",
     "logicalTileSHA256": {
-      "48630001.img": "42ca802633f1c48431dd5de712ba1d28a7042faf3950817dc977589c4afe5844",
-      "48630002.img": "1b7079db99e7d6dea8d701eeeaa5f5f1aac7a7f38aa7f17d81ea974454e12968",
-      "48630003.img": "61f1b834552a459873b9152ff4c31e9c3bfe4ce7f6724374d69d503e99aa33e2",
-      "48630004.img": "6d8e0f1c8e3ebc917c36999620408ca99a51cbd506cc10638444ca75f8e357c2",
-      "48630005.img": "0c8b1b02338881902eb4cc452c6badbbf52a5dd98e9a39d9366e4822e0889d33",
-      "48630006.img": "ebb6845ed2a87388a915f6c66e1f9b57f54e61fab28a14ee622350f2126a7965",
-      "48630007.img": "9e6a074e903f85d8d9e6d165e6c3d321de68d9e6b533ac58ca5d44fb8ab974c6"
+      "48630001.img": "41bf884572533fde3888a68d91e4dc2417ed565f669975ecb1bb7220e74e83e3",
+      "48630002.img": "9c5bbb74e374f0f2aee91dc5e743a810adf4ced3fc9ded516d1dc2b31da56aa0",
+      "48630003.img": "b5d56fc821f1a6be4826689d0550acb956b055856b11e127762311bb1cb51794",
+      "48630004.img": "9ce3e6dd7cec6e9bb4a05ace242a305d797ea8a3cb4b6624da5e7e2bbc96013c",
+      "48630005.img": "1d78fdfdb361e08331ccf43402428268b9139c5b42e08766d11ecf6f9cdec363",
+      "48630006.img": "57a954d7074b32ea213c56856a28c71bf6c7b9131a9350e2fba60bfd4cc2a720",
+      "48630007.img": "453446a6b8388b2c768dcec733306c8556260a202b191b9059e16c37cca41d33"
     },
     "pointInstancesAtHighestDetail": {
       "0x100": 1,
@@ -119,6 +119,7 @@
       "0x10106": 13,
       "0x10109": 7,
       "0x1010b": 5,
+      "0x1010c": 632,
       "0x13": 7862,
       "0x32": 11,
       "0x3c": 3678,
@@ -129,19 +130,19 @@
     "routing": false,
     "subfileBytes": {
       "DEM": 10623653,
-      "LBL": 86509,
+      "LBL": 86495,
       "MPS": 575,
-      "RGN": 15874933,
+      "RGN": 15955573,
       "SRT": 912,
-      "TRE": 185860,
-      "TYP": 3058
+      "TRE": 186742,
+      "TYP": 3113
     },
     "tiles": 7
   },
   "output": {
-    "bytes": 26851328,
-    "path": "regions/us-glacier/garmin/dist/OpenBareMap-US-Glacier.img",
-    "sha256": "ce2cd954261ad37825397e95b2d5ba0f22ffab831d45fb3278e50cd2cbc77793"
+    "bytes": 26929152,
+    "path": "regions/us-glacier/garmin/dist/OpenBareMap-US-Glacier-Glaciers.img",
+    "sha256": "073202b2f1f880d07284dcfe0876d1bad8524a3af97a7f25e10f81f8caa3cc2a"
   },
   "routing": false,
   "status": "compiled and structurally inspected; hardware rendering pending"

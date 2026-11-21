@@ -3,12 +3,12 @@
   "coverage": "Glacier National Park in Montana, Going-to-the-Sun Road and the east and west gateway towns.",
   "datasets": {
     "basemap": {
-      "bytes": 22200320,
-      "path": "releases/us-glacier/2.0.0/maps/basemap.mbtiles",
-      "sha256": "feb35ce17f884dc0d3770feb98b571724f59d0aebac9375808a331417708d495",
+      "bytes": 22679552,
+      "path": "releases/us-glacier/2.0.1/maps/basemap.mbtiles",
+      "sha256": "7ac40f57e453282c923b26c2596ee761ae6e29c3b3b03dc213756dfca821c538",
       "validation": {
-        "empty_tile_count": 40,
-        "logical_tiles_sha256": "8b1f29e75dc4004a6f74a86476d345a0665821ca38714d7a9918c4670783b6fe",
+        "empty_tile_count": 36,
+        "logical_tiles_sha256": "e815a4e3339a0c385a4a05fc5c565bfd75b560fadef6bd5012e586b5c7518c34",
         "tile_count": 6469
       }
     },
@@ -45,8 +45,8 @@
   },
   "format": "openbaremap-development-viewer-v1",
   "localBorders": false,
-  "mapVersion": "2.0.0",
+  "mapVersion": "2.0.1",
   "region": "us-glacier",
-  "storageRevision": "2.0.0-us-glacier-r3",
-  "styleRevision": "2.0.0-us-glacier-r1"
+  "storageRevision": "2.0.1-glacier-r1",
+  "styleRevision": "2.0.1-glacier-r1"
 }

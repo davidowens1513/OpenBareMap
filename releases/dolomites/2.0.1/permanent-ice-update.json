@@ -1,0 +1,46 @@
+{
+  "iceExtraction": {
+    "geometrySHA256": "a140117005a1fe9d20b319514ab3d596b48b12727c017ffaec0968777f4cf82f",
+    "permanentIce": {
+      "glacier": 543,
+      "permanent_snow": 3
+    },
+    "region": "dolomites",
+    "sourceSHA256": "a835d74e63c7c4520870d2890de805b4ae628898588f6e1e1ad5cdeef1d9af63"
+  },
+  "mapVersion": "2.0.1",
+  "preservedBasemapLayersSHA256": "cdafff8d8b7b18215646494afbbb0c074a031076c0aa40078d69d9a82d372b53",
+  "preservedTerrain": {
+    "grid": {
+      "bytes": 4628480,
+      "path": "releases/dolomites/2.0.0/maps/grid.mbtiles",
+      "sha256": "c50ff7859253da33995da17d9c0bc2daff8b0c9660b83fdcfb261aa0d19ffbfb",
+      "validation": {
+        "empty_tile_count": 0,
+        "logical_tiles_sha256": "5ed597d196c9f2a12ccf6a1c9f91621bd734e9c4f4ea47149bc1aff424e89fb0",
+        "tile_count": 13232
+      }
+    },
+    "hillshade": {
+      "bytes": 138899456,
+      "path": "releases/dolomites/2.0.0/maps/hillshade.mbtiles",
+      "sha256": "6633dc950536cef2a123259756f90fa39ef102ff315cbdde70616e7e474c8213",
+      "validation": {
+        "empty_tile_count": 0,
+        "logical_tiles_sha256": "53357e8955e597ff5e10d51de64c724d4a9cb259e61f0467fa5858c5cd8544d6",
+        "tile_count": 3109
+      }
+    },
+    "topography": {
+      "bytes": 277413888,
+      "path": "releases/dolomites/2.0.0/maps/topography-context.mbtiles",
+      "sha256": "68a552d522566b2489f8cb692b6835dbf8b0d8696be4858387d0fc55d31fed4b",
+      "validation": {
+        "empty_tile_count": 221034,
+        "logical_tiles_sha256": "cdf2868851f42c96ed8e2dbf9d95fa06def318e2a49325ea261d65dcf3f3c98b",
+        "tile_count": 250107
+      }
+    }
+  },
+  "previousMapVersion": "2.0.0"
+}

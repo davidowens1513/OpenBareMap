@@ -1,0 +1,616 @@
+{
+  "coverage": "Eastern Austrian Alps, Julian Alps and Karawanks, joining the existing Dolomites around East Tyrol and Friuli.",
+  "coverageAnchors": {
+    "bled": {
+      "coordinate": [
+        14.1136,
+        46.369
+      ],
+      "featuresInNeighbouringDetailedTiles": 9860
+    },
+    "dachstein": {
+      "coordinate": [
+        13.605,
+        47.475
+      ],
+      "featuresInNeighbouringDetailedTiles": 604
+    },
+    "karawanks": {
+      "coordinate": [
+        14.173,
+        46.433
+      ],
+      "featuresInNeighbouringDetailedTiles": 1335
+    },
+    "katschberg": {
+      "coordinate": [
+        13.6159,
+        47.056
+      ],
+      "featuresInNeighbouringDetailedTiles": 1014
+    },
+    "kranjska-gora": {
+      "coordinate": [
+        13.784,
+        46.4845
+      ],
+      "featuresInNeighbouringDetailedTiles": 3903
+    },
+    "lienz": {
+      "coordinate": [
+        12.769,
+        46.828
+      ],
+      "featuresInNeighbouringDetailedTiles": 12142
+    },
+    "schladming": {
+      "coordinate": [
+        13.6862,
+        47.3941
+      ],
+      "featuresInNeighbouringDetailedTiles": 7830
+    },
+    "schneeberg": {
+      "coordinate": [
+        15.805,
+        47.767
+      ],
+      "featuresInNeighbouringDetailedTiles": 3765
+    },
+    "tarvisio": {
+      "coordinate": [
+        13.575,
+        46.5055
+      ],
+      "featuresInNeighbouringDetailedTiles": 4164
+    },
+    "triglav": {
+      "coordinate": [
+        13.8369,
+        46.3783
+      ],
+      "featuresInNeighbouringDetailedTiles": 1048
+    }
+  },
+  "datasets": {
+    "basemap": {
+      "empty_tile_count": 425,
+      "logical_tiles_sha256": "ebaf23022f81474a0794d5197e3a6dad50754ec95d72bef66d8229c60f7bcfbe",
+      "tile_count": 32418
+    },
+    "grid": {
+      "empty_tile_count": 0,
+      "logical_tiles_sha256": "9e168d39f5b20dbfdeeb192ac89e8b03eb294b6733b2bfe48356b4b11100d0b3",
+      "tile_count": 43378
+    },
+    "hillshade": {
+      "empty_tile_count": 0,
+      "logical_tiles_sha256": "4b2c333cfb2a237abc399db99d59bd64d1c2adfc079d391c5f10298b0f70cb0e",
+      "tile_count": 5171
+    },
+    "topography": {
+      "empty_tile_count": 83830,
+      "logical_tiles_sha256": "1a02242264fd1c0e485e418dc0e1cb3064020a865cb5856b29d63e0fa29d7c13",
+      "tile_count": 133641
+    }
+  },
+  "detail": {
+    "basemap": {
+      "boundaries": 40114,
+      "contours": 0,
+      "permanentIce": {
+        "glacier": 2081,
+        "permanent_snow": 89
+      }
+    },
+    "topography": {
+      "boundaries": 0,
+      "contours": 1763327
+    }
+  },
+  "garmin": {
+    "familyId": 4854,
+    "garminPackageRevision": "2.0.1-glacier-r1",
+    "inspection": {
+      "anchorLabels": {
+        "Kranjska Gora": "Kranjska Gora",
+        "Schladming": "Schladming"
+      },
+      "bounds": [
+        12.689981460571289,
+        45.62999725341797,
+        16.65003776550293,
+        48.300018310546875
+      ],
+      "coastPolygonsByLevel": {
+        "0": {
+          "0x32": 191,
+          "0x54": 323
+        },
+        "1": {
+          "0x32": 191,
+          "0x54": 288
+        },
+        "2": {
+          "0x32": 191,
+          "0x54": 283
+        },
+        "3": {
+          "0x32": 191,
+          "0x54": 279
+        },
+        "4": {
+          "0x32": 191,
+          "0x54": 279
+        }
+      },
+      "contoursByLevel": {
+        "0": {
+          "0x20": 302927,
+          "0x22": 75383
+        },
+        "1": {
+          "0x20": 249523,
+          "0x22": 62044
+        },
+        "2": {
+          "0x22": 59204
+        },
+        "3": {
+          "0x10008": 55719
+        },
+        "4": {}
+      },
+      "lineInstancesAtHighestDetail": {
+        "0x1": 7311,
+        "0x10001": 61638,
+        "0x10002": 35950,
+        "0x10003": 241,
+        "0x10004": 14432,
+        "0x10005": 19918,
+        "0x10006": 35287,
+        "0x1000b": 46997,
+        "0x14": 22298,
+        "0x16": 281756,
+        "0x18": 120055,
+        "0x1a": 131,
+        "0x1c": 5833,
+        "0x1e": 2713,
+        "0x1f": 3053,
+        "0x2": 1056,
+        "0x20": 302927,
+        "0x22": 75383,
+        "0x3": 14973,
+        "0x4": 15945,
+        "0x6": 205603,
+        "0x7": 420712,
+        "0xa": 350367
+      },
+      "logicalCombinedSHA256": "f279dc47c32dec9da1fbdf2b9063020d59343e78ea92f8a142d3b88018e91292",
+      "logicalHashNote": "Internal file names, sizes and payloads; only CommonHeader creation-date bytes 14..20 are zeroed for hashing. IMG archive headers are excluded. Output bytes are never modified.",
+      "logicalTileSHA256": {
+        "48540001.img": "cdec174b1a2bd056ffc0af074d9428d46b2edcabf5f468e317104ff10edb5d18",
+        "48540002.img": "4476247e32c8970572fef8889d02c2a408b1b4263336c275ab5fefa74a1d5368",
+        "48540003.img": "1e72377b85c2e8c64c8a4a9b7282a235d3a7f6c8b5ee75e04233c80ea6e01dc7",
+        "48540004.img": "95d73fbfd40221fffddc4f5a7bdcfc84d67b70d62c91011acf15d0365d0a7c02",
+        "48540005.img": "49811e5aa3e64682ab35840f11345e3e8634d141a77424a815f876804fd735ff",
+        "48540006.img": "d02d08bd61b7e0a55e32a4dc3fbd4881c45e8a8d8fe01efda3add240083f8f17",
+        "48540007.img": "363ea408abbc6dcfebb14b94db6004a5ce384bad73da9eb3c054cf3382ff9eea",
+        "48540008.img": "55758abe6567d2561276982176dee167b5a7116dff78fb3164d4e8f9f2594926",
+        "48540009.img": "0909f1eed186a70d9f49113c8cc610ab8b66ea6802a2fe4abf232d1ae49bdd71",
+        "48540010.img": "0408da453cfc9dcdeb883b387f6bf6c41387fc802625f604e722dc55d08602fb",
+        "48540011.img": "85a46d5eb8363eb07d234f81ef2201993587fba885fc99b8acc236616dea574e",
+        "48540012.img": "2cb5f23d399b39c580adf0a8a4f187f04839f8b7c754c7d2f470bf68695b04d8",
+        "48540013.img": "4f9199fe2aa8ebc9d6a9aa9400a23c355b6e6b9ce0cbf0fe92edeb75483b6a42",
+        "48540014.img": "9b582be17695fcbb9b0641f92d06a1ed62a79ffad47ee56ca5e38da3afd5b21e",
+        "48540015.img": "59ca923f6c08da56a88f8ac1b0ee135677d2caf6c19baf2414d0b1fc696e4ae1",
+        "48540016.img": "9aa4676c195fbad9addd1da3088199b061613959e066066c75c05122ddc0e691",
+        "48540017.img": "0555acc4273bccac1a55c5f0889d46dff878733f36f2b324dbcdbcdd27d8c390",
+        "48540018.img": "601c15aa43825b4e2e78a9c14c1f291c0fd8742ffb70f4b6f54fcf087aeba950",
+        "48540019.img": "117436818807b4809c021ed493593367f6a5b7ffa154316d8c0a773b94dd676e",
+        "48540020.img": "5fd3cb255f88f80e4f2072630aef2df8e3e9ac92d62b7bcfe7cb6ff949c1abc2",
+        "48540021.img": "5bb9b667e1831b6993126698487ebcaeaefe3e57abaefd06f15c757f762549bc",
+        "48540022.img": "09b4f3f42b940723b14331d039224c3b83035134fb61beea91f9f0ad322232b3",
+        "48540023.img": "05445cb674ecf68f191252e499c3bd2baa09e24f622b753a98db599de51c5b92",
+        "48540024.img": "b6fd158f5c7f96204244c833761a014efae3464424f2df1db17bf745915f201f",
+        "48540025.img": "98692ce6ee5ff97c5b1038db533ba5eb043e4d69649d795555454a2b18ecd49b",
+        "48540026.img": "d6e1620b9b7e7908d2d3b033e0c1c795c11b96c845d21b1611dc69e8a542214d",
+        "48540027.img": "6b989dda7be2c1c3eac35ab455bb5f504e5709a036c055ff4d20d05bb00c1bd7",
+        "48540028.img": "78bae8c955f414442cd4f450e6e73fd39b7c58d1f93ccb0af63173617c9a9930",
+        "48540029.img": "eee613a6a197f1beb13c86c7f4e331d2a45c655bea8edb7290fcf8be62b46993",
+        "48540030.img": "46e766dc411095a173286410b886e589b99f1908dbe766f9b83fb29aa083819e",
+        "48540031.img": "7df87b32988830fcbd9652dee403dbc11762bae5aa68a0d0e8713df9b211b021",
+        "48540032.img": "210aad00f87713de1a243d4c0354c09e0b975310275aa31800024ef7f6759fd1",
+        "48540033.img": "bbed3f494ab949dabc4c59e30a4bde4dedc12350169004c4cf640f746ab22825",
+        "48540034.img": "8d42544f9eacdb65b49ba3856cf009d06bef35f0097ca340711531ce81b4203a",
+        "48540035.img": "5856d5f4c7953134dd97f13e699fd87e99219ee928c228886a2fb9719ec84e7a",
+        "48540036.img": "498fd46cf069f7590cc8f59e49cd1c869a6b7862b1c3e1f55a78a41a23d4d109",
+        "48540037.img": "8fd517528b8cf5117fb4b4d2be50a40e8d1fe10b57b9be4c8347adc8503fde1f",
+        "48540038.img": "a1c7ed5c8636450ea6e1727eaff1222554f0ba809dd89155895c8a8f3d37d92b",
+        "48540039.img": "ad64336862c2d7b6b0e53e621775181dd872a0e7f3497567af45e70457a39167",
+        "48540040.img": "9287c4bbcb3f3b036fd2314fba390d5b61c44c162f3622bcb8109e6435d9aa6e",
+        "48540041.img": "593fca4be931859b366f345cdcd84a354ed5b554fd18f192c66c31be8d75e786",
+        "48540042.img": "82198c070cfa21a7a9745401fe316000878eb62d773948fd5ff5bb4bdd8cd0f0",
+        "48540043.img": "a6756066509b45dc292339b7a982a29355ccc5b6db4c7e7e298bc2bedc7aa2c9",
+        "48540044.img": "a21ab46a117f709bd39c784071818ad4fd3db9f087e08fa4b4de9383532218ef",
+        "48540045.img": "33c303d2ce860cc897b3a341ee9fbeb277214fc5f8f1dd7ebc0a1b67f187a1b7",
+        "48540046.img": "fd1c55504d0f77cb5965e11f1e998a84626714e2b1c0d7d31c189d540c2fb04f",
+        "48540047.img": "10aa5f642e45c4a14e475ac083d15d78653765c5dfb2838bfad89fb9fe8410f3",
+        "48540048.img": "e4ad35e1055526bf0f4f28fa743edac498e30e0b14ebe222674711eb9b2513e1",
+        "48540049.img": "ff5d0379e06b101ec91aa593c82a5672b2c43431bbc3c25d92f6158c6c9102aa",
+        "48540050.img": "87e55d083c633c20edca39a42667adcf26e2bf70ccc3b735de56a01f32114b47",
+        "48540051.img": "f79bcef631030141bf0bdb0e239f9ff1b30e2743ca00e5d1d4f05f1196275aa3",
+        "48540052.img": "a844ec65b52eaabe6440da1394d87047ad3d132702d19c996ec5f8d66255bbc6",
+        "48540053.img": "0a639e248d475e8bd91233ac68817bb2b9b7fda99864344561abfaff6ca3fd1a",
+        "48540054.img": "f33ad5ba513c62714f63649acd8f2fb6c5485efceca51222d2a50d4065361cb7",
+        "48540055.img": "d23babdd9be63ffd128ca41965b25e76a7b192cdadf93d7137ee263aa0b9ab29",
+        "48540056.img": "7fd8e4c4dd96c4a87e179b7a76cc7fc385e0f14ed3046aa4427bc82c12967c3f",
+        "48540057.img": "59f3e3b416790f1278f3c29829e131a01d045a6eef251046bc18c786b93b06a4",
+        "48540058.img": "aacbc6311748ac5d4afa85ff4fb0025c60ca337b36fe15a481139476214f3e82",
+        "48540059.img": "b4a774368ac269a2285b4df4307373be13cabda0ffec62f66de5dd38fd88ecca",
+        "48540060.img": "f0e387808c6eca2a53d57f85016e9bdef677375ef61aa455a12402633100ed03",
+        "48540061.img": "b818b5069e87188043dd60d17fae6b6675a1b232e7c517dabea794e596484a3b",
+        "48540062.img": "e59d6e32e1723995323735431ed642288934de39bc3ab6ba8d17989ec1684003",
+        "48540063.img": "03479fe33e68ab5c94415e9da14db397750ebe668afff5c1199faf5bc82d6260",
+        "48540064.img": "dfab293fbf9e45587bead9ef0900d4c9eede54e0d4e7824b8199fffbcc6206f1",
+        "48540065.img": "c0dab2e1de409fdee458df068208eaeb4b6584a07d1efe5763de5727b896f73b",
+        "48540066.img": "ed4da57fe9c90b9a7787425a8073017ce93427e30a8b7e637c7b234e84aab83a",
+        "48540067.img": "b978bf79ae96c9c0d3d10c979521ea34eb1ddf512b9a33b9fa01c1fb5195fcdf",
+        "48540068.img": "4841e4d558a4e1b32ef6e2442e9397ba087a40e86102f6697a1d36bdb69cc036",
+        "48540069.img": "ec01340ef759f10986e4d2ab1bb919a06ae6765095cbb96ae04817d0e06c07e8",
+        "48540070.img": "4781575e7bffdcb11b83506e94a4fd7bb4cd0463a387164a6f482b96958d3142",
+        "48540071.img": "3b3dcc56ecce4c66bf0784bc783d44042452ff1cb1ed9eadb4e6d63442cf8c36",
+        "48540072.img": "8667760b363d1533290cb09f6422459d2e842535e63b175cc9f7a61da7e0a141",
+        "48540073.img": "d29b01e08a142b3246f113bd74bfe4a8458951afeea57ddd4c995450780444d6",
+        "48540074.img": "6b0cd3c6ac82f6f305597c1d1047c1174d763185660f5400c120b41fc49d0996",
+        "48540075.img": "c9a6d60905e45584657dde11881585a39465465f55c249bcf073a1c78e1d2240",
+        "48540076.img": "9d0ec7c75e9cf6cbe318ee010e04ce2ae4a95f3375481e80e2edb31cab7dba1f",
+        "48540077.img": "a9a064021a501d3cb364f2ac04591c28f5e78acb9c4ef0164f8027864d6ace95",
+        "48540078.img": "a9bce566cfe415b517e634bfd9c18ec8e35b76fa5e1065f35b5fa3671f026ef8",
+        "48540079.img": "2a286feeabf93a98fc428c5836c9f47761259f10b18a53ffc8fdc30d35657943",
+        "48540080.img": "2784cb4b3955676447c99dc23eb9d0aee74091eeb1dab133e874a9b1f5d0a621",
+        "48540081.img": "4e05faa69e69f2e8bdab92c83dfc51784a03b551b6085d326a9de2a1a7ba9c79",
+        "48540082.img": "154dd5006c25b5c2627a2642f5f595807a2ff9564b5b64c00ae962097d029c8e",
+        "48540083.img": "10c15c09228f0fb12e86b8b67c41ded35c32564def0798ebc156023abbf33c81",
+        "48540084.img": "756d575d0251ea025bae38cf6befcce96b34314f7c082e690bd71a5b43249922",
+        "48540085.img": "af25655ffcff6a403c62d1af30bccb6b6cf1183af986fcbd8fd38c9fc9bed6e9",
+        "48540086.img": "a40b1c48b913708368ab2c26e1ac92e27031641cbbd50e3e54137f84e78426e2",
+        "48540087.img": "746e86121b0b6fae0d379a0c3e5a748601c050ee994bb544a33d471d3ac60c7b",
+        "48540088.img": "2f3915e42ddbdf521281b73f34e0e04082619146e3bcf0af2d467ebc8bbee791",
+        "48540089.img": "17c7a274833c771bd743a633262fda5d3f306ba85c9ff38e36af3c94b6616467",
+        "48540090.img": "6aec391b81bb2f7f5e1bba07e0a4e4b26490c41a542a7702e9eac9cf0236290d",
+        "48540091.img": "8b2705d082008454559aa1eb88ae01dacc9b211412f990f6089f80f5ed91c1d0",
+        "48540092.img": "58f6128bcc3c8db0cbbbcc89a093d11c257255ffc8517881847c88524e730896",
+        "48540093.img": "76a92302edab724038d029a9d589323242ac83f57ffb3602f8b7dfd78f218a55",
+        "48540094.img": "375400602a3bff6eb910d000775f97bfa008d03058511535292be7de5dd80fe1",
+        "48540095.img": "f954faea0d05a9169dce201671eb4bb0ae49c8fa00ef581eec2e41ba9d035f26",
+        "48540096.img": "88d200930d9385dec0bac9163d0db1550d3cde8be8bbfa1c28558a1831d83885",
+        "48540097.img": "18544fefd7a75151075835d2c10ec776b1c48351ad67810f27684c24b372234d",
+        "48540098.img": "e6d176c5d7df5d148fa50701f7e8d55e4e7812785a84c0520865a70abf971fcb",
+        "48540099.img": "43471ba45f07507ba5368f3d9ec04da3e64fbda257f48447f1852011f28ea9c9",
+        "48540100.img": "4567b309a26a6d7825019ac998a70845c7c9982c668aab29bf95130f4daf4032",
+        "48540101.img": "5a19110041521040f4494e371fa9b1e15d159dec982536724600962bc6a3b6c0",
+        "48540102.img": "5dae21f3a6f79c977f4aedd95fe815b603933903272a27ff4b5e961236084a61",
+        "48540103.img": "f12b47d1ed579cbce58313311d3899f9cb692056c98d4b7661e8621b1cdf57d1",
+        "48540104.img": "7dad47a32dfdf39f866ee3814d1fe7ae370450ab32c5c8de47b0e1aeaaaa7fc8",
+        "48540105.img": "97b5ebf367adb2e4d3cc8076e1db0fa4495544094f42ff45f8cc6cee65e2e1f0",
+        "48540106.img": "332c22135296882660c5a6454a649f79f01e591fa5b4396f49385ff1afdd300c",
+        "48540107.img": "2432bfb44e18ee1be7a148ccb1391a4b27b268164e1a9805e68bb77212a654d4",
+        "48540108.img": "9f9f36334d36fe603d7893205eb6c03e732d2a1c4bc2157d80890d3dc87a8a02",
+        "48540109.img": "8796b2ca8d85d2e8c57087750c26daa8d641809daf727426fb289f59107b44fd",
+        "48540110.img": "67c039bda35a791987b7b07c66ddcac7825d664d18a6deb14a850eaeb7e35d2b",
+        "48540111.img": "1c331e59b3ce67ce208b743f85807fb2f52bb7f9a68dac0c6986da587a243a7b",
+        "48540112.img": "59b7b89af78bca9d72f535d394aee117b90d08eff0dc5d4c86f0d3d9aa979f10",
+        "48540113.img": "585c4a56e58284c84ce2fc685fdc39f89add4f090937e52922cb4e835374eda4",
+        "48540114.img": "5f0207452cc2bbfe5a97e9ac154c92e97cb999304fa68c356e096fc02a15674c",
+        "48540115.img": "c13dd0fa723471c27f5ec029faa706b36435b945919b4c95d589e968982eca67",
+        "48540116.img": "053d3f7d27209c1091b218e029ebfa1580913ff61a4b1eeb706c9cc40e1de584",
+        "48540117.img": "74cb2b23fd0a7521326c54c362e7c39d8bb7ee9f9f52bccd2d3f2c0defc671e6",
+        "48540118.img": "71895555179fb1d94c9436eb31c600608a830670530cf9c5f4488c8ee2f0c5f1",
+        "48540119.img": "5ef6878d25a2bcc9f65d9385a582966f5e16675fb1f25a3c95899da5101d83a0",
+        "48540120.img": "d2e7bc0847a3b0d41671b6e67e417cb31626c8f62c9d5fcfa4d14dc8eb5a32d5",
+        "48540121.img": "d5ecb074b94a7f8874772447d597187744b510df5f702a3563ca9220d8d3853d",
+        "48540122.img": "aee12d4e77e21d373c551acd5cd1dad171fe26c3dfebcaba17bfb7c6df857c5a",
+        "48540123.img": "6f56f3222685653d9a553cbf3aca71da57476a5c8198d5d3c98322a8184b8eee",
+        "48540124.img": "23f1e76e8d7a6d9996564c815497d3c7e9998580b57304c1e1428ccb15f24bcb",
+        "48540125.img": "a6caf9b9d278eebc5ad874c9e703520b37a7b35d3c088cdb6235cea79e9f4941",
+        "48540126.img": "3a395ed51ade9430198c9e892eb229a68649382002caffd37739ff2061b34b3a",
+        "48540127.img": "8260edf9f67fd33019b54e0bdd38fa67871b63d35eb8eaa4799c6ecc223951a2",
+        "48540128.img": "4ee10a2ffc095c589fa59c8bd42248e1504a4c8cb53fac3e1e9bf1d505b64ac0",
+        "48540129.img": "5731656e5b312a1d84b30aca4b5364de5b137e06f40bfc0673d03a8de699d292",
+        "48540130.img": "ed5abcf013c6567e5430794bd1a1f3181b55a42c4a4c6acd45b5ddfd80687d41",
+        "48540131.img": "1a783aa676d1b7a11c9be90d3d6366cda35cc6446b840a71dbf97da2d5d82c36",
+        "48540132.img": "5718a5e628d1256a26c3ccc0180f01974b759a4c34ae80c52d235d094bbd54d7",
+        "48540133.img": "5b4b1cf7ad10ba94674d1e2254142db5d011b7defc081a858602aac5f277778c",
+        "48540134.img": "96a8057f160295142bf0e3928b76495057f6245ea4f72bb835e604b0697f56f1",
+        "48540135.img": "190234530defd0334ad6f8a0eaa3d850540560558b208e19037a046303eb40cb",
+        "48540136.img": "17178b984d017c1ece6404edcb10bdee5131b19ff6473ba9e423231957f29733",
+        "48540137.img": "8b5320e5d7e93871beb0b90c6f21cd477fc63df4ee326b27efa4f1197dac3279",
+        "48540138.img": "4a73c63dd097882a498e45365640d275a7246220a29585b1f49b6613065fc4df",
+        "48540139.img": "a9d66e8ec81d92013c726679c14ddd780aea4016c92db667bc23a159a8027daa",
+        "48540140.img": "247c18f2c9f0df2604936ed156de7594ffdda28ca4001119d85458add6f07fa2",
+        "48540141.img": "bc4c219e381eeccb5eaa37a6411fbc0f44da9cc32c75504b7b269b10899dd7c6",
+        "48540142.img": "47c18439d1ad8ba8d8a39c6963ec3fca833fbf0c1bebaf8837b0dcf62a552c74",
+        "48540143.img": "2ad45e0a8c982552ca6c57c0cfbe651029851059d33ca13c3828e1ee7cb0abf6",
+        "48540144.img": "ebdfa0900c4fb3a77eeb2166630ba986b5a640ee0002f0543a0c3287b4e0367d",
+        "48540145.img": "2f2f7d51fb969d6302265b2587f9944c51427e3c28bf86bfe6998c8ec8e52c8d",
+        "48540146.img": "669a80cf9ffc674510d9b199db3082f8cd9e448af5d5a430bc3b74c8128e03b9",
+        "48540147.img": "4e7878d414ad5413b9c324c1bf8d9ef8ce7050d8e25c405b738ab85ce424edea",
+        "48540148.img": "8e8d7bd993d680bf8b715035b3742e42036d802d7312936e507f37b8b88bda72",
+        "48540149.img": "ab795493d48fb59a8e9d3bee8c173f5e4b2189a7562c39dc8db69cee9a3a7a23",
+        "48540150.img": "15ae2c8ef7dbd6501e03080e0a97302321c922de6f46e6de0fe783cd9a23d1ef",
+        "48540151.img": "ac7996e9fe6b2e59c13e96ddb05dd9dde3573fadb8621cecfa989145a333359b",
+        "48540152.img": "77bd8258f0b093c8811b85f2eca48d356fe12de0d799adab4b8daf6b34544058",
+        "48540153.img": "d9ff722ee62a10428d5fa005a482bc5827455de637a69e377218ad57f287bdb5",
+        "48540154.img": "3ea3618b919d5f68312f8f4c7d96cf43a43b5dcd355e90b70a449bb91ba049da",
+        "48540155.img": "bfe7a35b6f88b5c47c1c6c21a560a52bcdf28a702d1e26dad9419bfd64ea6f41",
+        "48540156.img": "97d696a0e9d0549fbb388f5eb49a7c57dffff5185e206bee6d01f178115851b7",
+        "48540157.img": "6a82a4061fef01b40a7134c60b85493826696df61b9cd6eb4d0825d3050bf352",
+        "48540158.img": "66b75e585d3f8f493b70ad84a10c48b775487aa2a29d501d40f3e94e4d941d0f",
+        "48540159.img": "eb14c3d4ab8a0f91c2f4a324fbe3c651203661e6a6405989b185092c94cc2ecd",
+        "48540160.img": "6232d92df49daac050df7ae22d0b4baa052e43d9ae638802dfcd5affefbeb7ba",
+        "48540161.img": "9505937d9b6a45c1ebd6796c7a0b9d566dfae17fdd261e6b8c4fbec508824eaf",
+        "48540162.img": "b7312635dce8bf165bb7cccab63f0d4faf55ff6c3fc0a7289485d4ddec9ce672",
+        "48540163.img": "aaef48d773f87996458e91157778921412fb05e0fe5446632ffcc38177e37ae3",
+        "48540164.img": "9a355c128ba94277b286826ab8415befef343dff84b54643eb9162518527529d",
+        "48540165.img": "7a7d1768dccf2b1407b603c9291c5aa4ffb710e1b4fc59eab52504b535cc8224",
+        "48540166.img": "35bd266364613aad6ab851640f44508cb97091e0b07921855294e6566ad1a99d",
+        "48540167.img": "e596c0ded4792fb506ef0b7ef99e3c105811a1edc40d257075e548ea7e315166",
+        "48540168.img": "f475dc8a47b6b55cd6ec43889e139bf8adb43481268665876449f51f4654e40a",
+        "48540169.img": "f4f6d1b590815e0834c856007d5df6703ad9f90922348de35e2681b82de76f36",
+        "48540170.img": "06d2298bfcdcd7dc7bf246396b931ef72b1c363fcda264bab0d67d7b4195ca66",
+        "48540171.img": "a6ce9df0080c42bac3e84a780a4155c65a84b9791fdfda1e56a391b64f260ef9",
+        "48540172.img": "dcc87be2fee9ffa0d6ee468914925279e3b06410899eafd966ce67a16cfe82ec",
+        "48540173.img": "79ff7ca71e3a8d888026a03a902f53cb2b9b31324d5b15c16620a63a0ee4ac4f",
+        "48540174.img": "b97dff87318859c3546d7845f997b53ea7f1e7f8c0ce34c069813f0490ca9eb3",
+        "48540175.img": "bcbb94a0b70bf4fcd65c1cc340299dfbb6fd7d1223cd382d72c4e9fc49a81571",
+        "48540176.img": "995dace45fd1efe165e51eea29dad5e323929afb3e20d7d7af09a3fde9bf91fb",
+        "48540177.img": "385d139921bde6aa29a9197cf2348c9596178fac3547b8c90ea3ec80259f7081",
+        "48540178.img": "4044c7b6f15fc5c622b98f5d6c516403f32931156df39db483d718ee5d327d2d",
+        "48540179.img": "a46500ae19d69f99c6aea8a9a90a8385c341d5e5ca634fdca36f952f9e77baa6",
+        "48540180.img": "f15df17d8507e87583fc047809073bf52b5c7b1740d69637fb636dfc24c54e32",
+        "48540181.img": "ff2c43c47af4f78aacfee6152cf5e4c20a7c1ff8891b41c4d20c330c1a9a1786",
+        "48540182.img": "d2e5cf0a242e38816ff1be03e175d0dac495f638600627eaec177621145a4bea",
+        "48540183.img": "15ef7148defc14f52cde24dd70b4b1fcb0e853538963b5b3a772fc072798d1f1",
+        "48540184.img": "cb5a7bac241663561d07ad3866c45dbde68d1e598f6efc5c4bb011c4c2ccf79c",
+        "48540185.img": "62e5b6cf921dfa375f091806aea50cbb8f11e2c59eee13d82ac84beb39ac0b14",
+        "48540186.img": "5e357b839e2dd471fa27e3d647649cac2cdcbe377cdb2a67a28b1587f4952912",
+        "48540187.img": "2eb959fc13494abf2d7fbdbf144b16c75ce89b36502aacdea975598d4229a807",
+        "48540188.img": "1c534e673bb75f63dbb03cb45027102dde85e65f30e8e25a2317975b8f5f3bb9",
+        "48540189.img": "a553e30f4f218fe1aabbb254049dd74cdfb96d0c28b1c67e3c89cdc3e2d4a5f0",
+        "48540190.img": "953abb578b06708261b7fd915013ccd7f3b2b583de213ba0d144a6295f4834f4",
+        "48540191.img": "ec729f95e27fd69b4635b40df8dc023e22e8c1040f9cddc1282670d405e72dac",
+        "48540192.img": "60936a511c47404ae382f8f1511fdc91d9b42975ff6229d8259746e22efdca0a",
+        "48540193.img": "c1e1bd804f7f306973b7d403a77fbfc8175032694c3aab393c399ff2ca81875f",
+        "48540194.img": "d8b98a75aa4adcce4e5e41c6008d6b0d738be6879fdcfff0a7246adc969effc5",
+        "48540195.img": "49c7e4c534f1257eec9fcd0147ab704ddb1ff30d8a84ba213f04cf89a53dd467"
+      },
+      "pointInstancesAtHighestDetail": {
+        "0x100": 8,
+        "0x10001": 9952,
+        "0x10002": 5007,
+        "0x10003": 50145,
+        "0x10004": 1222,
+        "0x10006": 148552,
+        "0x2f0b": 66421,
+        "0x600": 171,
+        "0x650c": 269,
+        "0x6603": 2843,
+        "0x6615": 2382,
+        "0x6616": 18119,
+        "0x800": 5089,
+        "0xb00": 11367,
+        "0xc00": 13633
+      },
+      "polygonInstancesAtHighestDetail": {
+        "0x10101": 170078,
+        "0x10102": 406065,
+        "0x10103": 6421,
+        "0x10104": 152908,
+        "0x10105": 427,
+        "0x10106": 1647,
+        "0x10107": 248,
+        "0x10109": 17022,
+        "0x1010a": 18022,
+        "0x1010b": 1711,
+        "0x1010c": 252,
+        "0x1010d": 12,
+        "0x13": 2750500,
+        "0x32": 191,
+        "0x3c": 40970,
+        "0x50": 319320,
+        "0x51": 2702,
+        "0x54": 323
+      },
+      "routing": false,
+      "subfileBytes": {
+        "DEM": 101351293,
+        "LBL": 6014992,
+        "MPS": 15647,
+        "RGN": 351269520,
+        "SRT": 912,
+        "TRE": 4431787,
+        "TYP": 3037
+      },
+      "tiles": 195
+    },
+    "output": {
+      "bytes": 466698240,
+      "path": "regions/alps-east/garmin/dist/OpenBareMap-Alps-East-Glaciers.img",
+      "sha256": "97d5dd7a791584e5519f014a6be3ad6e66355773e27de2e924b384812eeee0b9"
+    },
+    "routing": false,
+    "status": "compiled and structurally inspected; hardware rendering pending"
+  },
+  "geometryProcessing": {
+    "permanentIce": {
+      "glacier": 210,
+      "permanent_snow": 12
+    }
+  },
+  "irelandGarminPackageRevision": "2.0.1-trail-detail-r1",
+  "irelandPreserved": true,
+  "labelGlyphs": {
+    "Open Sans Bold": true,
+    "Open Sans Regular": true,
+    "Open Sans Semibold": true
+  },
+  "landBackground": {
+    "bled": {
+      "coordinate": [
+        14.1136,
+        46.369
+      ],
+      "verifiedZooms": [
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    },
+    "dachstein": {
+      "coordinate": [
+        13.605,
+        47.475
+      ],
+      "verifiedZooms": [
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    },
+    "karawanks": {
+      "coordinate": [
+        14.173,
+        46.433
+      ],
+      "verifiedZooms": [
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    },
+    "katschberg": {
+      "coordinate": [
+        13.6159,
+        47.056
+      ],
+      "verifiedZooms": [
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    },
+    "kranjska-gora": {
+      "coordinate": [
+        13.784,
+        46.4845
+      ],
+      "verifiedZooms": [
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    },
+    "lienz": {
+      "coordinate": [
+        12.769,
+        46.828
+      ],
+      "verifiedZooms": [
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    },
+    "schladming": {
+      "coordinate": [
+        13.6862,
+        47.3941
+      ],
+      "verifiedZooms": [
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    },
+    "schneeberg": {
+      "coordinate": [
+        15.805,
+        47.767
+      ],
+      "verifiedZooms": [
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    },
+    "tarvisio": {
+      "coordinate": [
+        13.575,
+        46.5055
+      ],
+      "verifiedZooms": [
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    },
+    "triglav": {
+      "coordinate": [
+        13.8369,
+        46.3783
+      ],
+      "verifiedZooms": [
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    }
+  },
+  "packages": {
+    "android": {
+      "checkedFiles": 43,
+      "nativeDeviceRenderingTested": false,
+      "sourceFiles": {
+        "basemap": "maps/basemap.mbtiles",
+        "coast": "maps/coast.mbtiles",
+        "hillshade": "maps/hillshade.mbtiles",
+        "topography": "maps/topography.mbtiles",
+        "utm-grid": "maps/grid.mbtiles"
+      }
+    },
+    "ios": {
+      "checkedFiles": 46,
+      "nativeDeviceRenderingTested": false,
+      "sourceFiles": {
+        "basemap": "maps/basemap.mbtiles",
+        "coast": "maps/coast.mbtiles",
+        "hillshade": "maps/hillshade.mbtiles",
+        "topography": "maps/topography.mbtiles",
+        "utm-grid": "maps/grid.mbtiles"
+      }
+    }
+  },
+  "region": "alps-east",
+  "status": "automated checks passed; visual and hardware acceptance pending"
+}

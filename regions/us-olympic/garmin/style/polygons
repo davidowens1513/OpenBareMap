@@ -1,3 +1,5 @@
+obm:landcover=permanent_snow [0x1010d resolution 20]
+obm:landcover=glacier [0x1010c resolution 20]
 obm:sea=yes { set mkgmap:skipSizeFilter=true } [0x32 resolution 16]
 natural=land { set mkgmap:skipSizeFilter=true } [0x54 resolution 16]
 natural=water [0x3c resolution 18]

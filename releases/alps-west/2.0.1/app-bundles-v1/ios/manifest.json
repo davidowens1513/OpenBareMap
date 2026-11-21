@@ -1,0 +1,35 @@
+{
+  "bytes": 1653979931,
+  "datasets": {
+    "basemap": {
+      "path": "maps/basemap.mbtiles",
+      "sha256": "33b4a39b9befd5727e3aa3d25f66eec79079f55ebc34cd67e4c20c9fbdf25f84"
+    },
+    "coast": {
+      "derived_from": "ecc5187246330b516e2de371d2b39a4b6ee9d434d5c4fbdaa48a838cfd840a4d",
+      "maxzoom": 12,
+      "operation": "Preserve land-layer MVT bytes only through zoom 12; omit other layers.",
+      "path": "maps/coast.mbtiles",
+      "sha256": "65a89af44fd908165e0adafd051446acc7a7691d4822c084c40ea46c6634f500"
+    },
+    "grid": {
+      "path": "maps/grid.mbtiles",
+      "sha256": "a11ae12452b22c6dafef5df669d7d5cc99257c628e90af7714900f9ce642dea1"
+    },
+    "hillshade": {
+      "path": "maps/hillshade.mbtiles",
+      "sha256": "e1a7b0fb53253873e47bb3f77db4e8b9ee68ee06a1d70e2c09974633cde00671"
+    },
+    "topography": {
+      "path": "maps/topography.mbtiles",
+      "sha256": "ecc5187246330b516e2de371d2b39a4b6ee9d434d5c4fbdaa48a838cfd840a4d"
+    }
+  },
+  "instructionsSHA256": "01c2b5b9b7827ee69c99a3f33f97ee4f866ef311a51f1f8bea05e9995aaae06b",
+  "instructionsURL": "https://downloads.appsbyonzy.dev/OpenBareMap/alps-west/2.0.1/app-bundles-v1/ios/instructions.txt",
+  "localPath": "releases/alps-west/2.0.1/app-bundles-v1/ios/OpenBareMap-Alps-West-iOS-Bundle.zip",
+  "mapManifestSHA256": "41f794d78e4f401157ef1650861cdcde51e7cb4426d83bee3efbe50a0c49001a",
+  "r2Key": "OpenBareMap/alps-west/2.0.1/app-bundles-v1/ios/OpenBareMap-Alps-West-iOS-Bundle.zip",
+  "sha256": "7bde33e445fa983476b571b4fc2c3ba18b2bb30e2b3a60e6bde19c89b3afc728",
+  "url": "https://downloads.appsbyonzy.dev/OpenBareMap/alps-west/2.0.1/app-bundles-v1/ios/OpenBareMap-Alps-West-iOS-Bundle.zip"
+}

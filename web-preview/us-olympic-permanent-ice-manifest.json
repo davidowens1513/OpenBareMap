@@ -1,0 +1,41 @@
+{
+  "regions": {
+    "us-olympic": {
+      "basemap": {
+        "sourceSHA256": "237f05a6a06a86d1e65d5c9b4f82b879396b8cda4d3c57c0dfceac2d5331ce8b",
+        "bytes": 34193914,
+        "sha256": "664255bd7218be69ad8b1d82dc5b3eba91c9e5b03572ebf61a709ba369dac940",
+        "tiles": 6832
+      },
+      "grid": {
+        "sourceSHA256": "be1f2c67797fe89bc8586c02001cef720acea8eedd0b1ce858775f218e6a3730",
+        "bytes": 2748271,
+        "sha256": "0152ecb85942ca68b74f6a3ce20d554f98717022b76602ced9ba3747a97adab0",
+        "tiles": 9801
+      },
+      "hillshade": {
+        "sourceSHA256": "1ddd0d13641446a3163415a773a3c3c285873285bb71bba3b0691f1a9bdc01d2",
+        "bytes": 49759215,
+        "sha256": "fc084b59e34d37fd46b51e2cf641032df6da3ea1d265db13a1c6fa49eef0f1f4",
+        "tiles": 1379
+      },
+      "topography": {
+        "sourceSHA256": "85110ca132377ed9eca0400720291c41d63cd475db235f31dd15bfd050e3ca36",
+        "bytes": 100351761,
+        "sha256": "31896e8fea9e7cb7b27b6cf00a54be0ee90a3419d5f607cadf655ef03e6e1a57",
+        "tiles": 53477
+      },
+      "coast": {
+        "sourceSHA256": "0804d64331ff23906edec52ae785e24c5b18ef823b82be3082926053a5d35005",
+        "bytes": 2256076,
+        "sha256": "85bcf3665442fab9097bc01e2d85f68868e0434511bf0dd3cddc78d4b9c89fd1",
+        "tiles": 4280
+      }
+    }
+  },
+  "pmtilesPython": "3.8.1",
+  "pmtilesJS": "4.5.0",
+  "librarySHA256": "caf981bc46f6327ee7e65d5dc964d89d38a69f60edca2bd4c5c890c21b554c6c",
+  "dataOrigin": "https://downloads.appsbyonzy.dev/OpenBareMap/us-olympic/2.0.1/preview",
+  "scope": "Complete selected map tiles; no regional or zoom sampling."
+}

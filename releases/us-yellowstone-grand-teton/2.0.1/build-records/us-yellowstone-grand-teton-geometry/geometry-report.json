@@ -1,0 +1,25 @@
+{
+  "counts": {
+    "permanentIce": {
+      "glacier": 57,
+      "permanent_snow": 0
+    }
+  },
+  "osm": {
+    "bytes": 31807238,
+    "operation": "Complete-feature bbox extraction with nested relation references, then libosmium sorted merge; duplicate OSM objects resolved by version",
+    "path": "data/regions/us-yellowstone-grand-teton/us-yellowstone-grand-teton-261120.osm.pbf",
+    "replicationTimestamp": "2026-11-20T21:21:21Z",
+    "sha256": "88a655734b4a35477aa5c45610f3e372e57b51df01c7248dd579259fd7de1cf5",
+    "snapshot_date": "2026-11-20",
+    "url": null
+  },
+  "outputs": {
+    "ice.geojson": "21d2b55d22ddd5e22293246c7d919cdd522384d7debfbbc6294e92be9123a697"
+  },
+  "permanentIce": {
+    "glacier": 57,
+    "permanent_snow": 0
+  },
+  "region": "us-yellowstone-grand-teton"
+}

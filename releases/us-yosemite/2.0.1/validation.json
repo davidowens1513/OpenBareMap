@@ -1,0 +1,334 @@
+{
+  "coverage": "Yosemite National Park, including Yosemite Valley, Tuolumne Meadows and the main approaches.",
+  "coverageAnchors": {
+    "el-portal": {
+      "coordinate": [
+        -119.783,
+        37.674
+      ],
+      "featuresInNeighbouringDetailedTiles": 707
+    },
+    "lee-vining": {
+      "coordinate": [
+        -119.119,
+        37.957
+      ],
+      "featuresInNeighbouringDetailedTiles": 881
+    },
+    "tuolumne-meadows": {
+      "coordinate": [
+        -119.355,
+        37.874
+      ],
+      "featuresInNeighbouringDetailedTiles": 760
+    },
+    "wawona": {
+      "coordinate": [
+        -119.654,
+        37.536
+      ],
+      "featuresInNeighbouringDetailedTiles": 797
+    },
+    "yosemite-valley": {
+      "coordinate": [
+        -119.591,
+        37.744
+      ],
+      "featuresInNeighbouringDetailedTiles": 3109
+    }
+  },
+  "datasets": {
+    "basemap": {
+      "empty_tile_count": 4,
+      "logical_tiles_sha256": "7aa1f1f2577ea7f4cf1ea1747b5def03253051ad31a811fab6d39de6567c2fa1",
+      "tile_count": 4160
+    },
+    "grid": {
+      "empty_tile_count": 0,
+      "logical_tiles_sha256": "e3c599a8a7e93a313d29c0a5ae31720e2330069af210dba7935d84c6c48dac5e",
+      "tile_count": 4174
+    },
+    "hillshade": {
+      "empty_tile_count": 0,
+      "logical_tiles_sha256": "15f4051bea3c461cb63fc220c47dc6b1357b1af44b916caccd6be2337f413cf6",
+      "tile_count": 1468
+    },
+    "topography": {
+      "empty_tile_count": 47340,
+      "logical_tiles_sha256": "f459785fb656ba211c21874f59ea5c732800270a7ddbde0ed4fca08cd9a76270",
+      "tile_count": 55812
+    }
+  },
+  "detail": {
+    "basemap": {
+      "boundaries": 2411,
+      "contours": 0,
+      "permanentIce": {
+        "glacier": 346,
+        "permanent_snow": 0
+      }
+    },
+    "topography": {
+      "boundaries": 0,
+      "contours": 204503
+    }
+  },
+  "garmin": {
+    "familyId": 4855,
+    "garminPackageRevision": "2.0.1-glacier-r1",
+    "inspection": {
+      "anchorLabels": {
+        "Half Dome": "Half Dome",
+        "Wawona": "Wawona"
+      },
+      "bounds": [
+        -120.10262489318848,
+        37.3095703125,
+        -118.9599609375,
+        38.36434364318848
+      ],
+      "coastPolygonsByLevel": {
+        "0": {
+          "0x32": 10,
+          "0x54": 18
+        },
+        "1": {
+          "0x32": 10,
+          "0x54": 18
+        },
+        "2": {
+          "0x32": 10,
+          "0x54": 18
+        },
+        "3": {
+          "0x32": 10,
+          "0x54": 18
+        },
+        "4": {
+          "0x32": 10,
+          "0x54": 18
+        }
+      },
+      "contoursByLevel": {
+        "0": {
+          "0x10009": 28,
+          "0x20": 35275,
+          "0x22": 8813
+        },
+        "1": {
+          "0x10009": 28,
+          "0x20": 27568,
+          "0x22": 6865
+        },
+        "2": {
+          "0x10009": 25,
+          "0x22": 6381
+        },
+        "3": {
+          "0x10008": 5749,
+          "0x10009": 22
+        },
+        "4": {
+          "0x10009": 18
+        }
+      },
+      "lineInstancesAtHighestDetail": {
+        "0x10001": 576,
+        "0x10002": 96,
+        "0x10003": 8,
+        "0x10004": 136,
+        "0x10005": 48,
+        "0x10006": 132,
+        "0x10009": 28,
+        "0x1000a": 15,
+        "0x1000b": 17,
+        "0x14": 5,
+        "0x16": 2503,
+        "0x18": 23236,
+        "0x1a": 1,
+        "0x1c": 223,
+        "0x1e": 2,
+        "0x1f": 219,
+        "0x2": 58,
+        "0x20": 35275,
+        "0x22": 8813,
+        "0x3": 94,
+        "0x4": 161,
+        "0x6": 2573,
+        "0x7": 4446,
+        "0xa": 3937
+      },
+      "logicalCombinedSHA256": "011f22629e42e1b7a483d57a65fb634e5f8297cf2fb2d7cc3559c9d42c2862ac",
+      "logicalHashNote": "Internal file names, sizes and payloads; only CommonHeader creation-date bytes 14..20 are zeroed for hashing. IMG archive headers are excluded. Output bytes are never modified.",
+      "logicalTileSHA256": {
+        "48550001.img": "eeed53ecb10ac49f30a9f50391b0b1c126659c174ddd62a4c8a6c63eae854669",
+        "48550002.img": "c4ffe86cc775710d62a7ed66e3be6402f6c8c13510704886d63fcc7318cc91f9",
+        "48550003.img": "7afc9bf7723114fc99bb795e1053efb9b774d31174600dc094ceebbe613951f0",
+        "48550004.img": "2f518124746fdeedaf009c08e5b7aa8ca4001ad5221e900326b3e9559771346a",
+        "48550005.img": "4bb51344a359d6a97e9c556506219b3c14044b62875911b6123a8acfbed822e1",
+        "48550006.img": "dc4d551e4e53afbb3d59e657f79b6e3a616ad9785ef6c9c4d3949a61d553ce5b",
+        "48550007.img": "b43e68977848f4941f0ab7fb28e6d2a961f5d084baef89d8c8d748cf6a668927",
+        "48550008.img": "9077ed203058c0951c84bf923533e693e5ceca863c2ac7b4184e7d92cf9bd62a",
+        "48550009.img": "526dd6297cb83d74083473e9a2d0863751b211f2880b964c08bbb9e980cf7d32",
+        "48550010.img": "6e016c643746f4034c0ac113363f18d346a71ad8d5f0df238e48d8d560498aa4"
+      },
+      "pointInstancesAtHighestDetail": {
+        "0x10001": 147,
+        "0x10002": 876,
+        "0x10003": 586,
+        "0x10006": 838,
+        "0x2f0b": 678,
+        "0x600": 2,
+        "0x650c": 24,
+        "0x6603": 540,
+        "0x6615": 128,
+        "0x6616": 546,
+        "0x800": 7,
+        "0xb00": 47,
+        "0xc00": 69
+      },
+      "polygonInstancesAtHighestDetail": {
+        "0x10101": 2,
+        "0x10102": 1401,
+        "0x10103": 159,
+        "0x10104": 1625,
+        "0x10105": 35,
+        "0x10106": 25,
+        "0x10107": 1,
+        "0x10109": 3883,
+        "0x1010a": 514,
+        "0x1010c": 37,
+        "0x13": 13903,
+        "0x32": 10,
+        "0x3c": 4895,
+        "0x50": 5941,
+        "0x51": 735,
+        "0x54": 18
+      },
+      "routing": false,
+      "subfileBytes": {
+        "DEM": 9667804,
+        "LBL": 128246,
+        "MPS": 814,
+        "RGN": 19244885,
+        "SRT": 912,
+        "TRE": 243801,
+        "TYP": 3113
+      },
+      "tiles": 10
+    },
+    "output": {
+      "bytes": 29380608,
+      "path": "regions/us-yosemite/garmin/dist/OpenBareMap-US-Yosemite-Glaciers.img",
+      "sha256": "12fba795d0083b324eb74cda131ef4199876f2cde5cb7b9600bbf0c0b205e5b2"
+    },
+    "routing": false,
+    "status": "compiled and structurally inspected; hardware rendering pending"
+  },
+  "geometryProcessing": {
+    "permanentIce": {
+      "glacier": 37,
+      "permanent_snow": 0
+    }
+  },
+  "irelandGarminPackageRevision": "2.0.1-trail-detail-r1",
+  "irelandPreserved": true,
+  "labelGlyphs": {
+    "Open Sans Bold": true,
+    "Open Sans Regular": true,
+    "Open Sans Semibold": true
+  },
+  "landBackground": {
+    "el-portal": {
+      "coordinate": [
+        -119.783,
+        37.674
+      ],
+      "verifiedZooms": [
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    },
+    "lee-vining": {
+      "coordinate": [
+        -119.119,
+        37.957
+      ],
+      "verifiedZooms": [
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    },
+    "tuolumne-meadows": {
+      "coordinate": [
+        -119.355,
+        37.874
+      ],
+      "verifiedZooms": [
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    },
+    "wawona": {
+      "coordinate": [
+        -119.654,
+        37.536
+      ],
+      "verifiedZooms": [
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    },
+    "yosemite-valley": {
+      "coordinate": [
+        -119.591,
+        37.744
+      ],
+      "verifiedZooms": [
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    }
+  },
+  "packages": {
+    "android": {
+      "checkedFiles": 47,
+      "nativeDeviceRenderingTested": false,
+      "sourceFiles": {
+        "basemap": "maps/basemap.mbtiles",
+        "coast": "maps/coast.mbtiles",
+        "hillshade": "maps/hillshade.mbtiles",
+        "topography": "maps/topography.mbtiles",
+        "utm-grid": "maps/grid.mbtiles"
+      }
+    },
+    "ios": {
+      "checkedFiles": 50,
+      "nativeDeviceRenderingTested": false,
+      "sourceFiles": {
+        "basemap": "maps/basemap.mbtiles",
+        "coast": "maps/coast.mbtiles",
+        "hillshade": "maps/hillshade.mbtiles",
+        "topography": "maps/topography.mbtiles",
+        "utm-grid": "maps/grid.mbtiles"
+      }
+    }
+  },
+  "region": "us-yosemite",
+  "status": "automated checks passed; visual and hardware acceptance pending"
+}

@@ -234,41 +234,42 @@ def stage(output, website, worldwide):
     print(f'Prepared nine maps and all-platform downloads under {output.relative_to(ROOT)}.', flush=True)
 
 
-def publish(output, website, *, regions=US_PARK_REGIONS, render_homepage=stage_homepage, preview_manifests=None):
-    if preview_manifests is None:
-        preview_manifests = {'preview/manifest.json': 'us-national-parks-manifest.json'}
+def transfer_asset(item, verified):
+    key = item['key']
+    path = checked(ROOT / item['path'], item['sha256'])
+    catalogue = key in (APP_CATALOGUE, WORLDWIDE_CATALOGUE)
+    if not catalogue and verified.get(key, {}).get('sha256') == item['sha256']:
+        return key, verified[key]
+    print(f'Publishing {key}', flush=True)
+    options = ['--checksum']
+    if catalogue:
+        options = ['--ignore-times', '--metadata', '--metadata-set', 'content-type=application/json',
+                   '--metadata-set', 'cache-control=' + CATALOGUE_CACHE_POLICY, '--s3-no-system-metadata=false']
+    run('rclone', 'copyto', path, REMOTE + key, *options, '--s3-no-check-bucket')
+    public_url = PUBLIC + quote(key) + ('?sha256=' + item['sha256'] if catalogue else '')
+    size, sha, _ = read_hash(public_url)
+    if (size, sha) != (item['bytes'], item['sha256']):
+        raise ValueError(f'Public readback differs: {key}')
+    return key, {'bytes': size, 'sha256': sha, 'verifiedUTC': datetime.now(timezone.utc).isoformat()}
+
+
+def record_receipt(verified, receipts, key, receipt):
+    verified[key] = receipt
+    temporary = receipts.with_suffix('.json.part')
+    write(temporary, verified)
+    temporary.replace(receipts)
+
+
+
+def upload_release_assets(output, upload_workers=4):
     plan = json.loads((output / 'release-plan.json').read_text())
     receipts = output / 'public-verification.json'
     verified = json.loads(receipts.read_text()) if receipts.exists() else {}
     verified_assets = sum(verified.get(item['key'], {}).get('sha256') == item['sha256'] for item in plan['assets'])
     print(f'Starting publication with {verified_assets}/{len(plan["assets"])} assets already verified.', flush=True)
-    def transfer(item):
-        key = item['key']
-        path = checked(ROOT / item['path'], item['sha256'])
-        catalogue = key in (APP_CATALOGUE, WORLDWIDE_CATALOGUE)
-        if not catalogue and verified.get(key, {}).get('sha256') == item['sha256']:
-            return key, verified[key]
-        print(f'Publishing {key}', flush=True)
-        options = ['--checksum']
-        if catalogue:
-            options = ['--ignore-times', '--metadata', '--metadata-set', 'content-type=application/json',
-                       '--metadata-set', 'cache-control=' + CATALOGUE_CACHE_POLICY, '--s3-no-system-metadata=false']
-        run('rclone', 'copyto', path, REMOTE + key, *options, '--s3-no-check-bucket')
-        public_url = PUBLIC + quote(key) + ('?sha256=' + item['sha256'] if catalogue else '')
-        size, sha, _ = read_hash(public_url)
-        if (size, sha) != (item['bytes'], item['sha256']):
-            raise ValueError(f'Public readback differs: {key}')
-        return key, {'bytes': size, 'sha256': sha, 'verifiedUTC': datetime.now(timezone.utc).isoformat()}
-
-    def record_receipt(key, receipt):
-        verified[key] = receipt
-        temporary = receipts.with_suffix('.json.part')
-        write(temporary, verified)
-        temporary.replace(receipts)
-
-    with ThreadPoolExecutor(max_workers=4) as pool:
+    with ThreadPoolExecutor(max_workers=upload_workers) as pool:
         failures = []
-        transfers = {pool.submit(transfer, item): item['key'] for item in plan['assets']}
+        transfers = {pool.submit(transfer_asset, item, verified): item['key'] for item in plan['assets']}
         for pending in as_completed(transfers):
             try:
                 result = pending.result()
@@ -276,13 +277,23 @@ def publish(output, website, *, regions=US_PARK_REGIONS, render_homepage=stage_h
                 print(f'Publication failed for {transfers[pending]}: {error}', file=sys.stderr, flush=True)
                 failures.append(error)
             else:
-                record_receipt(*result)
+                record_receipt(verified, receipts, *result)
         if failures:
             raise RuntimeError(f'{len(failures)} map assets failed publication or readback') from failures[0]
 
+    return plan, verified
+
+
+def publish(output, website, *, regions=US_PARK_REGIONS, render_homepage=stage_homepage, preview_manifests=None,
+            upload_workers=4):
+    if preview_manifests is None:
+        preview_manifests = {'preview/manifest.json': 'us-national-parks-manifest.json'}
+    plan, verified = upload_release_assets(output, upload_workers)
+    receipts = output / 'public-verification.json'
     preview_tiles = [item for item in plan['assets'] if item['key'].endswith('.pmtiles')]
     print(f'Checking byte-range responses for {len(preview_tiles)} preview archives.', flush=True)
-    for item in preview_tiles:
+
+    def verify_range(item):
         key = item['key']
         request = Request(PUBLIC + quote(key), headers={'Range': 'bytes=0-126', 'User-Agent': 'Mozilla/5.0'})
         try:
@@ -294,6 +305,9 @@ def publish(output, website, *, regions=US_PARK_REGIONS, render_homepage=stage_h
                     raise ValueError(f'Public preview does not serve valid PMTiles byte ranges: {key}')
         except HTTPError as error:
             raise RuntimeError(f'Cloudflare returned HTTP {error.code} for the preview byte-range check: {key}') from error
+
+    with ThreadPoolExecutor(max_workers=min(6, upload_workers)) as pool:
+        list(pool.map(verify_range, preview_tiles))
 
     for filename, key in [('app-bundles-catalog.json', APP_CATALOGUE),
                           ('worldwide-catalog-v1.json', WORLDWIDE_CATALOGUE)]:
@@ -316,8 +330,8 @@ def publish(output, website, *, regions=US_PARK_REGIONS, render_homepage=stage_h
             path.write_text(data)
         else:
             write(path, live)
-        record_receipt(*transfer({'key': key, 'path': str(path.relative_to(ROOT)),
-                                  'bytes': path.stat().st_size, 'sha256': digest(path)}))
+        record_receipt(verified, receipts, *transfer_asset({'key': key, 'path': str(path.relative_to(ROOT)),
+                                                          'bytes': path.stat().st_size, 'sha256': digest(path)}, verified))
 
     shutil.copyfile(output / 'app-bundles-catalog.json', ROOT / 'distribution/app-bundles-v1/catalog.json')
     for manifest, filename in preview_manifests.items():

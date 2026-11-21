@@ -36,7 +36,9 @@
             [
               "bare_rock",
               "scree",
-              "shingle"
+              "shingle",
+              "glacier",
+              "permanent_snow"
             ]
           ]
         ]
@@ -286,6 +288,44 @@
       },
       "source": "basemap",
       "source-layer": "landcover",
+      "type": "fill"
+    },
+    {
+      "filter": [
+        "==",
+        [
+          "get",
+          "class"
+        ],
+        "glacier"
+      ],
+      "id": "glacier",
+      "paint": {
+        "fill-color": "#badde9",
+        "fill-opacity": 0.82,
+        "fill-outline-color": "#709bab"
+      },
+      "source": "basemap",
+      "source-layer": "permanent_ice",
+      "type": "fill"
+    },
+    {
+      "filter": [
+        "==",
+        [
+          "get",
+          "class"
+        ],
+        "permanent_snow"
+      ],
+      "id": "permanent_snow",
+      "paint": {
+        "fill-color": "#f0f8fc",
+        "fill-opacity": 0.82,
+        "fill-outline-color": "#93b3c3"
+      },
+      "source": "basemap",
+      "source-layer": "permanent_ice",
       "type": "fill"
     },
     {
@@ -115984,7 +116024,7 @@
     "openbaremap:version": "2.0.0",
     "version": "0.4.0"
   },
-  "name": "OpenBareMap Alps - West 2.0.0",
+  "name": "OpenBareMap Alps - West 2.0.1",
   "sources": {
     "basemap": {
       "type": "vector",

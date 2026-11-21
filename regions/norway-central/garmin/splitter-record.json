@@ -1,5 +1,5 @@
 {
-  "combinedSHA256": "16c861d92f0b45e8a907d8d965940f723f5f5e1b9d3bd1585a352af295cb6a84",
+  "combinedSHA256": "6673caecf74b68553b5e4735406aca51791c37334b916b0ef66f526f4e6aaee0",
   "command": [
     "/opt/homebrew/opt/openjdk@21/libexec/openjdk.jdk/Contents/Home/bin/java",
     "-Xmx6g",
@@ -12,9 +12,9 @@
     "--keep-complete=true",
     "--output=pbf",
     "--polygon-file=/Volumes/Extreme SSD/Projects/OpenBareMap/regions/norway-central/garmin/coverage.poly",
-    "--output-dir=/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/906ead9d53a7/norway-central/garmin/split",
+    "--output-dir=/Volumes/Extreme SSD/Projects/OpenBareMap/work/glacier-updates/native/OpenBareMap-builds/906ead9d53a7/norway-central/garmin/split",
     "--ignore-osm-bounds=true",
-    "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/906ead9d53a7/norway-central/garmin/combined.osm.pbf"
+    "/Volumes/Extreme SSD/Projects/OpenBareMap/work/glacier-updates/native/OpenBareMap-builds/906ead9d53a7/norway-central/garmin/combined.osm.pbf"
   ],
   "coverageSHA256": "5cd401817a88394d54c3f21cf9649463306dbbd351ae6858ada2e6414738c606",
   "ignoreSourceHeaderBounds": true

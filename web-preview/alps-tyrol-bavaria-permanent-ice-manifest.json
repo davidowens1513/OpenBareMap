@@ -1,0 +1,41 @@
+{
+  "regions": {
+    "alps-tyrol-bavaria": {
+      "basemap": {
+        "sourceSHA256": "cea0a77fa29ab44bd88aa59b973922e3bb46dfd8a9266f78a7608f7a3f38d331",
+        "bytes": 678920632,
+        "sha256": "c37e73ca98bdb779974634e04f288032ad6ba0d797f219400da8c8a674ead289",
+        "tiles": 22909
+      },
+      "grid": {
+        "sourceSHA256": "f4e8d483c0f79e4c060e397468ddd793c0b7f29fb51743bc55faeae27d5479af",
+        "bytes": 7039016,
+        "sha256": "0e77680c725567e36e1b53835cb5c504c0fc636e798477917199819163c3e7c4",
+        "tiles": 23480
+      },
+      "hillshade": {
+        "sourceSHA256": "5a5851c642a0cbab63ff7eba32a66865125d40446a67add0097336155863a1c9",
+        "bytes": 126997822,
+        "sha256": "8a9f9a66fa6dd2a571d6426316414ef39c478ff047616347cbefbe823118b8c4",
+        "tiles": 2772
+      },
+      "topography": {
+        "sourceSHA256": "21384cf932491f1dbff27b2f9d5307606a6a275bb8cfae6f4c4380621334075a",
+        "bytes": 417598317,
+        "sha256": "9f4e30b74979d5e1c1c1dcb8230e7cd7568eb39e5981ec4d38ada7d030fc6b5a",
+        "tiles": 97888
+      },
+      "coast": {
+        "sourceSHA256": "ac1f72c71364c3f842d8f6f3350f35aff3a37f3f589d7e46d481feaaee767b47",
+        "bytes": 267458,
+        "sha256": "4709743705393728289ef2483c5b714bed18ff41fe100240dfd6ed3a7d505697",
+        "tiles": 7385
+      }
+    }
+  },
+  "pmtilesPython": "3.8.1",
+  "pmtilesJS": "4.5.0",
+  "librarySHA256": "caf981bc46f6327ee7e65d5dc964d89d38a69f60edca2bd4c5c890c21b554c6c",
+  "dataOrigin": "https://downloads.appsbyonzy.dev/OpenBareMap/alps-tyrol-bavaria/2.0.1/preview",
+  "scope": "Complete selected map tiles; no regional or zoom sampling."
+}

@@ -1,0 +1,106 @@
+{
+  "acceptance": "Automated checks only; see validation and visual-review records for actual reviewed scope.",
+  "coverage": "French and Italian Western Alps from the Mediterranean to Mont Blanc, including the full Tour du Mont Blanc and its Swiss approaches.",
+  "datasets": {
+    "basemap": {
+      "bytes": 926093312,
+      "path": "releases/alps-west/2.0.1/maps/basemap.mbtiles",
+      "sha256": "33b4a39b9befd5727e3aa3d25f66eec79079f55ebc34cd67e4c20c9fbdf25f84",
+      "validation": {
+        "empty_tile_count": 368,
+        "logical_tiles_sha256": "009ed752f411938fb1a6dbc125962448561a8715267d2fccbe640bb8d71cecca",
+        "tile_count": 28781
+      }
+    },
+    "grid": {
+      "bytes": 12075008,
+      "path": "releases/alps-west/2.0.0/maps/grid.mbtiles",
+      "sha256": "a11ae12452b22c6dafef5df669d7d5cc99257c628e90af7714900f9ce642dea1",
+      "validation": {
+        "empty_tile_count": 0,
+        "logical_tiles_sha256": "3ab75118e5adc7c2d7e49b5d935ef1d35c8e83530554dd15657e07b966b3559a",
+        "tile_count": 34045
+      }
+    },
+    "hillshade": {
+      "bytes": 166555648,
+      "path": "releases/alps-west/2.0.0/maps/hillshade.mbtiles",
+      "sha256": "e1a7b0fb53253873e47bb3f77db4e8b9ee68ee06a1d70e2c09974633cde00671",
+      "validation": {
+        "empty_tile_count": 0,
+        "logical_tiles_sha256": "90b513bc6741f3cb414589c2fca306da0d812cd7e6da2b9c136cc9694277e086",
+        "tile_count": 3802
+      }
+    },
+    "topography": {
+      "bytes": 544161792,
+      "path": "releases/alps-west/2.0.0/maps/topography-context.mbtiles",
+      "sha256": "ecc5187246330b516e2de371d2b39a4b6ee9d434d5c4fbdaa48a838cfd840a4d",
+      "validation": {
+        "empty_tile_count": 55414,
+        "logical_tiles_sha256": "2a24d8520634ef9570087ad9dbb421fe9ae29ce6f74955f896a14bfc1b05ca85",
+        "tile_count": 93869
+      }
+    }
+  },
+  "garmin": {
+    "bytes": 381812736,
+    "path": "regions/alps-west/garmin/dist/OpenBareMap-Alps-West-Glaciers.img",
+    "sha256": "d9321f046ada6c323127a1ae4082ec4591eef70cd475da798ab16f7cfb02b648"
+  },
+  "geometryReport": {
+    "path": "releases/alps-west/2.0.1/build-records/alps-west-geometry/geometry-report.json",
+    "sha256": "bfb2434ebf200d66b01936dc8595c779ab363a874c37b3a1b70b2ff6915a8fee"
+  },
+  "hostAppsModified": false,
+  "mapVersion": "2.0.1",
+  "osm": {
+    "bytes": 599503522,
+    "operation": "Complete-feature bbox extraction with nested relation references",
+    "path": "data/regions/alps-west/alps-261116.osm.clipped.osm.pbf",
+    "replicationTimestamp": "2026-11-16T21:22:36Z",
+    "sha256": "9dd9fb6336b7f2f8e75168b42373e1741367a27bcba0341ee6e702fa8818c89c",
+    "snapshot_date": "2026-11-16",
+    "url": "https://download.geofabrik.de/europe/alps-261116.osm.pbf"
+  },
+  "packages": {
+    "android": {
+      "archive": {
+        "bytes": 1653951093,
+        "path": "regions/alps-west/android/OpenBareMap-Android.zip",
+        "sha256": "be48d772effc03ae870b59dc2863371e5e5d8e89876cae1cd016dfee4454b874"
+      },
+      "checksumsSHA256": "28fb3bf5469af0364303a6a5f89fcbc938aaa0f674df776741e9696cef6f02f3",
+      "manifestSHA256": "689b11182668e37b9da9c162faf32bef5a2500eb4150da8a6f650ddbb820c16c",
+      "path": "regions/alps-west/android",
+      "validationSHA256": "0dfcb7a6d61ea74fe7af1305749714e23111c7b3a032a166372718930625e028"
+    },
+    "ios": {
+      "checksumsSHA256": "c9062d4735d52c0c35cc57c5f98b5a2270706436a75b7d1f6eab212f21360aef",
+      "manifestSHA256": "41f794d78e4f401157ef1650861cdcde51e7cb4426d83bee3efbe50a0c49001a",
+      "path": "regions/alps-west/ios",
+      "validationSHA256": "66db1d6a9334754a0f98a2f08c882d5bacc826bb2c29d4a4a81ed8afa2c69d73"
+    }
+  },
+  "pythonRuntime": {
+    "packages": {
+      "Pillow": "12.3.0",
+      "certifi": "2026.10.23",
+      "charset-normalizer": "3.5.2",
+      "idna": "3.20",
+      "numpy": "2.5.4",
+      "osmium": "4.3.2",
+      "pyproj": "3.8.0",
+      "requests": "2.34.2",
+      "shapely": "2.2.0",
+      "urllib3": "2.8.0"
+    },
+    "platform": "macOS-27.2.1-arm64-arm-64bit-Mach-O",
+    "python": "3.14.5 (main, May 10 2026, 10:21:34) [Clang 21.0.0 (clang-2100.0.123.102)]",
+    "requirementsSHA256": "427f12ff8b49bfebac0a7d453c2f65bd15d6695584b18e6ecee1fdfeed20a36c"
+  },
+  "region": "alps-west",
+  "styleSHA256": "8c58d64e472ee658bb3bb97fa8d74b0b79a9ebb223c7f3de5077310d7817eeb7",
+  "terrainLockSHA256": "a683f37e2ce746dee7a9df5bdc78d2c4744f2bb1b8155e0d8d6edfe770f50dc8",
+  "validation": "validation.json"
+}

@@ -3,12 +3,12 @@
   "coverage": "Bavarian Alps, Austrian Tyrol and Hohe Tauern with links to the existing Dolomites around Brenner and East Tyrol.",
   "datasets": {
     "basemap": {
-      "bytes": 695676928,
-      "path": "releases/alps-tyrol-bavaria/2.0.0/maps/basemap.mbtiles",
-      "sha256": "0f44f488b355509a8afdd913948c953ef22f61bc84077fa6a15fb219d1cd6787",
+      "bytes": 697069568,
+      "path": "releases/alps-tyrol-bavaria/2.0.1/maps/basemap.mbtiles",
+      "sha256": "cea0a77fa29ab44bd88aa59b973922e3bb46dfd8a9266f78a7608f7a3f38d331",
       "validation": {
         "empty_tile_count": 20,
-        "logical_tiles_sha256": "3020a6e3735bc1f48e85bf1f493011e44fdbe62ad4f3112322ca8ccaab9761e4",
+        "logical_tiles_sha256": "423adadd48aad3cf57cf5ba44f1233916605d93d5da81cf9a361f893376c823a",
         "tile_count": 22909
       }
     },
@@ -45,8 +45,8 @@
   },
   "format": "openbaremap-development-viewer-v1",
   "localBorders": false,
-  "mapVersion": "2.0.0",
+  "mapVersion": "2.0.1",
   "region": "alps-tyrol-bavaria",
-  "storageRevision": "2.0.0-alps-tyrol-bavaria-r3",
-  "styleRevision": "2.0.0-alps-tyrol-bavaria-r1"
+  "storageRevision": "2.0.1-glacier-r1",
+  "styleRevision": "2.0.1-glacier-r1"
 }

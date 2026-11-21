@@ -88,11 +88,11 @@ def coverage(path,anchors=None):
             result[name]={'coordinate':[lon,lat],'featuresInNeighbouringDetailedTiles':count}
     return result
 
-def detail(path, permanent_ice=False):
+def detail(path, permanent_ice=False, ice_layer='landcover'):
     counts={'contours':0,'boundaries':0}
     wanted = {'contour', 'boundary'}
     if permanent_ice:
-        wanted.add('landcover')
+        wanted.add(ice_layer)
         counts['permanentIce'] = dict.fromkeys(PERMANENT_ICE, 0)
     with closing(sqlite3.connect(path.as_uri()+'?mode=ro',uri=True)) as db:
         for payload, in db.execute('SELECT tile_data FROM tiles'):
@@ -124,6 +124,9 @@ def package(root,platform,region="england-wales"):
     if manifest['regionStyleSHA256']!=digest(region_path(manifest['region'],'style.json')):raise ValueError('Stale regional package style')
     if 'townlands' in style['sources'] or 'irish-grid' in style['sources']:raise ValueError('Ireland-specific source leaked')
     if profile(region)['gridSource'] not in style['sources']:raise ValueError('Missing regional projected grid')
+    if note := profile(region).get('permanentIceSourceNote'):
+        if note not in style['sources']['basemap']['attribution']:
+            raise ValueError('Missing permanent ice source note')
     if profile(region).get('coverageBoundary'):
         for name in ('park-boundary','coverage','coverage-mask'):
             source=style['sources'].get(name,{})
@@ -173,7 +176,7 @@ def validate(region):
         output['islandLandBackground']=land_coverage(ROOT/active['datasets']['topography']['path'],p['islandValidationAnchors'],zoom_levels=p['islandValidationZooms'])
     if region=='scotland':
         output['smallIslandLandBackground']=land_coverage(ROOT/active['datasets']['topography']['path'],{'rockall':p['destinations']['rockall'][:2]},zoom_levels=[11,12])
-    output['detail']={name:detail(ROOT/active['datasets'][name]['path'], p.get('permanentIce',False) and name=='basemap') for name in ('basemap','topography')}
+    output['detail']={name:detail(ROOT/active['datasets'][name]['path'], p.get('permanentIce',False) and name=='basemap', p.get('permanentIceLayer','landcover')) for name in ('basemap','topography')}
     output['packages']={platform:package(ROOT/'regions'/region/platform/folder,platform,region) for platform,folder in [('ios','OpenBareMap.bundle'),('android','OpenBareMap')]}
     from regions import accepted_ireland_baseline
     baseline=accepted_ireland_baseline()

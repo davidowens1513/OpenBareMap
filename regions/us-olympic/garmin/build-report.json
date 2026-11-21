@@ -1,6 +1,6 @@
 {
   "familyId": 4862,
-  "garminPackageRevision": "2.0.1-trail-detail-r1",
+  "garminPackageRevision": "2.0.1-glacier-r1",
   "inspection": {
     "anchorLabels": {
       "Mount Olympus": "Mount Olympus",
@@ -47,7 +47,7 @@
       },
       "2": {
         "0x10009": 333,
-        "0x22": 9858
+        "0x22": 9861
       },
       "3": {
         "0x10008": 8981,
@@ -82,20 +82,20 @@
       "0x7": 8476,
       "0xa": 6443
     },
-    "logicalCombinedSHA256": "e683b404d1ac3827f9eab31ecbb8a38c37a58bb08701ebaf47f2d6767d8ecb7b",
+    "logicalCombinedSHA256": "9ca44f813efa5ab9e74f03986b05a4771928e22c19be4348a44eb2755f6a58a6",
     "logicalHashNote": "Internal file names, sizes and payloads; only CommonHeader creation-date bytes 14..20 are zeroed for hashing. IMG archive headers are excluded. Output bytes are never modified.",
     "logicalTileSHA256": {
-      "48620001.img": "3798249743b07ba18b880375a22a62001a050d5e6a431345d9199695524ae781",
-      "48620002.img": "e4a4be775674d8ac4d607a3226050c335dfaaad50099aea24de4cf992098d01c",
-      "48620003.img": "9af13be54aed7ecbb9daaeeb572a4875426286e6a79b0e6be28010f730a2eb17",
-      "48620004.img": "bfbc8fe280cbd3a21ea17469830573ee3761db034a360d54e9555f096e625390",
-      "48620005.img": "8d9458835baa8a1f720fd79454c55dd77aa63a9575b8bd7a3f457f7e620df5e1",
-      "48620006.img": "14966b6fac6b8b010ee5136879f2a548d027c06c38eeb49538a2380b7525cf57",
-      "48620007.img": "b7bea0c22fa80fd314cf72ff2ea5b5f634820ffebc9219a1c4826b201490158e",
-      "48620008.img": "21dcb3a86791331547e345a2e52c068d536684774c7cdecb7021a0fb2f575894",
-      "48620009.img": "5f5cf5c2962671f9fbab0eaa44abcc21159c225c98587e3b10d97bdd4f7f211d",
-      "48620010.img": "98db1b4ac73d9e2de5ab4a93a8fc3f62898f5edf81ab9d8b3b5236910b8ca66d",
-      "48620011.img": "b94b88a4ea2116000b8b037c0121a0ce8ec85a47dce374ace3f3d6dda9425185"
+      "48620001.img": "6382b8a0790415edbd9bceab2dfc24276f20f77a7f1c80a1f3f4d9ca61f8a94b",
+      "48620002.img": "9ef43c6154bfb52622413d0db318b6cf519c9b141d01758057ee4a7484402991",
+      "48620003.img": "9f4a43e444b88fbd50c2c67a931e3bb5cc458fdca96cd1f79f17a1158402efad",
+      "48620004.img": "de270f34e57976dad1775e9fd85a1bf5063352069ff512c082fd80efeee3080d",
+      "48620005.img": "99d74c503be4307bfbe59fc80040b33052602ef6f6878e77b1cb1bf81538a816",
+      "48620006.img": "1fd2e3f6d8f69650f301dcece7d18ef10e83907a62af517c62ac27a2f792d226",
+      "48620007.img": "d62f4bc49c91874645cca8767a6784aa231e3acf83e8dea7e3f6b6972f17f2a1",
+      "48620008.img": "e6da85fe9d364cb9d6b196268875b3611497bfb1c092a676d9c74dd6def2dd12",
+      "48620009.img": "04572db08e2198715f4584054d2b5a7d2a5a5682fdb6d1dc9e3ce6cef9d577fd",
+      "48620010.img": "15b5ef576fa87e99b1ce749af2a0b9b1929fb29de3b92de9100a1ec466e08b47",
+      "48620011.img": "7a0029b786fd8e65cf32af7f527f03b70770df4e4b21c6bd965f2760ab6e14e0"
     },
     "pointInstancesAtHighestDetail": {
       "0x100": 3,
@@ -122,6 +122,8 @@
       "0x10109": 470,
       "0x1010a": 94,
       "0x1010b": 47,
+      "0x1010c": 61,
+      "0x1010d": 3,
       "0x13": 56422,
       "0x32": 14,
       "0x3c": 1875,
@@ -134,17 +136,17 @@
       "DEM": 14271543,
       "LBL": 166743,
       "MPS": 879,
-      "RGN": 24486951,
+      "RGN": 24503449,
       "SRT": 912,
-      "TRE": 279802,
-      "TYP": 3058
+      "TRE": 279942,
+      "TYP": 3113
     },
     "tiles": 11
   },
   "output": {
-    "bytes": 39321600,
-    "path": "regions/us-olympic/garmin/dist/OpenBareMap-US-Olympic.img",
-    "sha256": "eed2a81948f4f35fc52d81e1fb6b7427042086e8b6984ff0c5e3ef95521c8122"
+    "bytes": 39337984,
+    "path": "regions/us-olympic/garmin/dist/OpenBareMap-US-Olympic-Glaciers.img",
+    "sha256": "165f915d1e9f2b1cae5804000d9a0e34abde977f35c2cb3a7018e20b7b36b938"
   },
   "routing": false,
   "status": "compiled and structurally inspected; hardware rendering pending"

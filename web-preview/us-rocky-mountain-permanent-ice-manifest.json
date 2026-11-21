@@ -1,0 +1,41 @@
+{
+  "regions": {
+    "us-rocky-mountain": {
+      "basemap": {
+        "sourceSHA256": "0019ea063155529d0b4926708b4aae947c7e2ee22814aafa1349d743b3e06fb8",
+        "bytes": 14869434,
+        "sha256": "57301e3ae140a70c5a24816a4bfd12cb6c57c78266becc55e621b1289494869e",
+        "tiles": 2112
+      },
+      "grid": {
+        "sourceSHA256": "612923e176b450045b03f200d170fbabdc8995e8eff0dd7ebc430abd40b45e66",
+        "bytes": 628642,
+        "sha256": "7c3bab3bb7e55a1283317f716925ba3f73d657ac9bf4810c7c5c4f105c3b20ef",
+        "tiles": 2102
+      },
+      "hillshade": {
+        "sourceSHA256": "6aa11fa47979f4ac836f887ddcf5901230d781a03dbf8d0f5c03d3433239bbc9",
+        "bytes": 21130314,
+        "sha256": "c77e4f4e7695cbfeba75c4b77c3ff9b9d9ced4f2c78f1a768d2ec4dd2c75a196",
+        "tiles": 549
+      },
+      "topography": {
+        "sourceSHA256": "8a5e79c943aa0329f42c26a5f1c457959476a538fb941d21e03c1c1634ee5e70",
+        "bytes": 31382366,
+        "sha256": "c94032d3b41723ac4fd295f7032134a4a1010cb1f647374a3cf52be65c581dd6",
+        "tiles": 39029
+      },
+      "coast": {
+        "sourceSHA256": "55dc5a49422ae37bc869b015b8c8e10db624798a736517f8267fab0a7b49ab7b",
+        "bytes": 19166,
+        "sha256": "9fcbdec25b2cb7e8ac9a2cc04f44f0833a24d627f746e9580403c332cfd6249a",
+        "tiles": 2892
+      }
+    }
+  },
+  "pmtilesPython": "3.8.1",
+  "pmtilesJS": "4.5.0",
+  "librarySHA256": "caf981bc46f6327ee7e65d5dc964d89d38a69f60edca2bd4c5c890c21b554c6c",
+  "dataOrigin": "https://downloads.appsbyonzy.dev/OpenBareMap/us-rocky-mountain/2.0.1/preview",
+  "scope": "Complete selected map tiles; no regional or zoom sampling."
+}

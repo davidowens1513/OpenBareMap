@@ -1,0 +1,33 @@
+{
+  "bytes": 1279458786,
+  "datasets": {
+    "basemap": {
+      "path": "maps/basemap.mbtiles",
+      "sha256": "cea0a77fa29ab44bd88aa59b973922e3bb46dfd8a9266f78a7608f7a3f38d331"
+    },
+    "coast": {
+      "derivedFrom": "21384cf932491f1dbff27b2f9d5307606a6a275bb8cfae6f4c4380621334075a",
+      "path": "maps/coast.mbtiles",
+      "sha256": "ac1f72c71364c3f842d8f6f3350f35aff3a37f3f589d7e46d481feaaee767b47"
+    },
+    "grid": {
+      "path": "maps/grid.mbtiles",
+      "sha256": "f4e8d483c0f79e4c060e397468ddd793c0b7f29fb51743bc55faeae27d5479af"
+    },
+    "hillshade": {
+      "path": "maps/hillshade.mbtiles",
+      "sha256": "5a5851c642a0cbab63ff7eba32a66865125d40446a67add0097336155863a1c9"
+    },
+    "topography": {
+      "path": "maps/topography.mbtiles",
+      "sha256": "21384cf932491f1dbff27b2f9d5307606a6a275bb8cfae6f4c4380621334075a"
+    }
+  },
+  "instructionsSHA256": "683cb098235420ca69741724905374786c99111d839a00dfba6841cd31699fff",
+  "instructionsURL": "https://downloads.appsbyonzy.dev/OpenBareMap/alps-tyrol-bavaria/2.0.1/app-bundles-v1/android/instructions.txt",
+  "localPath": "releases/alps-tyrol-bavaria/2.0.1/app-bundles-v1/android/OpenBareMap-Alps-Tyrol-Bavaria-Android-Bundle.zip",
+  "mapManifestSHA256": "39a8ba78a38ddaf54aca2a9349eccb5443be8962beb21839b0b19be057f1a762",
+  "r2Key": "OpenBareMap/alps-tyrol-bavaria/2.0.1/app-bundles-v1/android/OpenBareMap-Alps-Tyrol-Bavaria-Android-Bundle.zip",
+  "sha256": "bf3a8d29f6228fb077e45708a3361733920a4ea0517ac1063684a30e77760979",
+  "url": "https://downloads.appsbyonzy.dev/OpenBareMap/alps-tyrol-bavaria/2.0.1/app-bundles-v1/android/OpenBareMap-Alps-Tyrol-Bavaria-Android-Bundle.zip"
+}

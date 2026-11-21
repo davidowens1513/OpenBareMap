@@ -1,0 +1,3853 @@
+{
+  "mapVersion": "2.0.1",
+  "previewArchivesWithVerifiedByteRanges": 70,
+  "publicAssetsAndCatalogues": {
+    "Garmin/alps-central/2.0.1-glacier-r1/ATTRIBUTION.txt": {
+      "bytes": 919,
+      "sha256": "997fd7012a1c555430a83b13dcb51ff75a434bd677ef14ac92334b23fb719443",
+      "verifiedUTC": "2026-11-21T20:22:19.070853+00:00"
+    },
+    "Garmin/alps-central/2.0.1-glacier-r1/OpenBareMap-Alps-Central-Glaciers.img": {
+      "bytes": 484016128,
+      "sha256": "129b7f2593e4bf8bd4b3c20e516745ac13e7d1b459cd98ef9912c42fa747e0c8",
+      "verifiedUTC": "2026-11-21T20:26:44.261275+00:00"
+    },
+    "Garmin/alps-central/2.0.1-glacier-r1/SHA256SUMS.txt": {
+      "bytes": 104,
+      "sha256": "9c336517cbdaf27fae7955c99bfe39e652e15bb3cd8651bd4b487b78b3d14ecf",
+      "verifiedUTC": "2026-11-21T20:22:36.835863+00:00"
+    },
+    "Garmin/alps-central/2.0.1-glacier-r1/instructions.txt": {
+      "bytes": 3449,
+      "sha256": "e5fd45b0446f4ac55093466837d68016e6665545d6dc4dcce807bba8626f719d",
+      "verifiedUTC": "2026-11-21T20:22:19.024810+00:00"
+    },
+    "Garmin/alps-central/2.0.1-glacier-r1/manifest.json": {
+      "bytes": 636,
+      "sha256": "d4a96b3daf4f4c5d0c8895a6c59c2189fb64afaf80b4d28cb81296b2cd193815",
+      "verifiedUTC": "2026-11-21T20:22:36.784418+00:00"
+    },
+    "Garmin/alps-central/2.0.1-glacier-r1/terrain-attribution.md": {
+      "bytes": 835,
+      "sha256": "c61f61930e8f6ca908605e36a74d9d880d5d3385bf24f4049c40a4c2e2de823d",
+      "verifiedUTC": "2026-11-21T20:22:25.842010+00:00"
+    },
+    "Garmin/alps-central/2.0.1-glacier-r1/terrain-data-sources.md": {
+      "bytes": 958,
+      "sha256": "3e5a759a888bf6490dd5469824898bef913634ed272bb837a07f8c44b821b2e9",
+      "verifiedUTC": "2026-11-21T20:22:25.826430+00:00"
+    },
+    "Garmin/alps-east/2.0.1-glacier-r1/ATTRIBUTION.txt": {
+      "bytes": 914,
+      "sha256": "507b17256cbd882388bdf16381a66825f59c4af361f7c379cac78cb0aeb0cc9a",
+      "verifiedUTC": "2026-11-21T20:52:16.975225+00:00"
+    },
+    "Garmin/alps-east/2.0.1-glacier-r1/OpenBareMap-Alps-East-Glaciers.img": {
+      "bytes": 466698240,
+      "sha256": "97d5dd7a791584e5519f014a6be3ad6e66355773e27de2e924b384812eeee0b9",
+      "verifiedUTC": "2026-11-21T20:56:21.406433+00:00"
+    },
+    "Garmin/alps-east/2.0.1-glacier-r1/SHA256SUMS.txt": {
+      "bytes": 101,
+      "sha256": "41657134ae15456e29f95601a196755b7aa9473e70fcd12934e9c30ded650c35",
+      "verifiedUTC": "2026-11-21T20:52:36.268115+00:00"
+    },
+    "Garmin/alps-east/2.0.1-glacier-r1/instructions.txt": {
+      "bytes": 3425,
+      "sha256": "cf56ff36151de250ce011ba851e5480340a763d0573028bf7bab8179e48a659b",
+      "verifiedUTC": "2026-11-21T20:52:17.047891+00:00"
+    },
+    "Garmin/alps-east/2.0.1-glacier-r1/manifest.json": {
+      "bytes": 618,
+      "sha256": "d36ff8d52360822deb2960943fad061b88e3b749e675200321c745c52980c2f8",
+      "verifiedUTC": "2026-11-21T20:52:36.286886+00:00"
+    },
+    "Garmin/alps-east/2.0.1-glacier-r1/terrain-attribution.md": {
+      "bytes": 835,
+      "sha256": "c61f61930e8f6ca908605e36a74d9d880d5d3385bf24f4049c40a4c2e2de823d",
+      "verifiedUTC": "2026-11-21T20:52:25.720733+00:00"
+    },
+    "Garmin/alps-east/2.0.1-glacier-r1/terrain-data-sources.md": {
+      "bytes": 958,
+      "sha256": "3e5a759a888bf6490dd5469824898bef913634ed272bb837a07f8c44b821b2e9",
+      "verifiedUTC": "2026-11-21T20:52:25.683786+00:00"
+    },
+    "Garmin/alps-tyrol-bavaria/2.0.1-glacier-r1/ATTRIBUTION.txt": {
+      "bytes": 936,
+      "sha256": "5b82f8fae72ddabe057907201091af1a6f91bafd4d19d50967fae10b772ae37e",
+      "verifiedUTC": "2026-11-21T20:37:57.714187+00:00"
+    },
+    "Garmin/alps-tyrol-bavaria/2.0.1-glacier-r1/OpenBareMap-Alps-Tyrol-Bavaria-Glaciers.img": {
+      "bytes": 289554432,
+      "sha256": "89f76f577815b38ac1b2b95c648f6cc950c16346f0a99819d792a8dedc0c8788",
+      "verifiedUTC": "2026-11-21T20:40:49.706391+00:00"
+    },
+    "Garmin/alps-tyrol-bavaria/2.0.1-glacier-r1/SHA256SUMS.txt": {
+      "bytes": 110,
+      "sha256": "8628a05eef4247c67d7e5ebc5addeb4970c9f3cd130f2e409c106a7988b88906",
+      "verifiedUTC": "2026-11-21T20:38:13.467476+00:00"
+    },
+    "Garmin/alps-tyrol-bavaria/2.0.1-glacier-r1/instructions.txt": {
+      "bytes": 3501,
+      "sha256": "ed660219fdf9f5f2476a84541a77c9eb9c59c550ea3488a4b6b829ef33502dac",
+      "verifiedUTC": "2026-11-21T20:37:57.705164+00:00"
+    },
+    "Garmin/alps-tyrol-bavaria/2.0.1-glacier-r1/manifest.json": {
+      "bytes": 672,
+      "sha256": "f14953284ad7df683c0873831529ee7cd54b6e6ba37702eb7a5c6677fde214ad",
+      "verifiedUTC": "2026-11-21T20:38:13.481506+00:00"
+    },
+    "Garmin/alps-tyrol-bavaria/2.0.1-glacier-r1/terrain-attribution.md": {
+      "bytes": 835,
+      "sha256": "c61f61930e8f6ca908605e36a74d9d880d5d3385bf24f4049c40a4c2e2de823d",
+      "verifiedUTC": "2026-11-21T20:38:04.344758+00:00"
+    },
+    "Garmin/alps-tyrol-bavaria/2.0.1-glacier-r1/terrain-data-sources.md": {
+      "bytes": 958,
+      "sha256": "3e5a759a888bf6490dd5469824898bef913634ed272bb837a07f8c44b821b2e9",
+      "verifiedUTC": "2026-11-21T20:38:04.392420+00:00"
+    },
+    "Garmin/alps-west/2.0.1-glacier-r1/ATTRIBUTION.txt": {
+      "bytes": 913,
+      "sha256": "6b118c0e5571a2881646b9849425f70e5daa82b213d1ac28f1bfeb4d8c893a7e",
+      "verifiedUTC": "2026-11-21T20:15:25.706174+00:00"
+    },
+    "Garmin/alps-west/2.0.1-glacier-r1/OpenBareMap-Alps-West-Glaciers.img": {
+      "bytes": 381812736,
+      "sha256": "d9321f046ada6c323127a1ae4082ec4591eef70cd475da798ab16f7cfb02b648",
+      "verifiedUTC": "2026-11-21T20:18:33.116487+00:00"
+    },
+    "Garmin/alps-west/2.0.1-glacier-r1/SHA256SUMS.txt": {
+      "bytes": 101,
+      "sha256": "ce0cb691954f6aa719d2a49e77908f581f6659991efd1f1fbb23137dda167440",
+      "verifiedUTC": "2026-11-21T20:15:42.769664+00:00"
+    },
+    "Garmin/alps-west/2.0.1-glacier-r1/instructions.txt": {
+      "bytes": 3425,
+      "sha256": "f9b306394b94adacf8f5c2157bd2e60c061261646911a90aa5d1249ef03f6fdf",
+      "verifiedUTC": "2026-11-21T20:15:25.710599+00:00"
+    },
+    "Garmin/alps-west/2.0.1-glacier-r1/manifest.json": {
+      "bytes": 618,
+      "sha256": "c8348be8f79ef56dcdf37e6194387f9238205d65738cba38b61964d873fe4483",
+      "verifiedUTC": "2026-11-21T20:15:43.034775+00:00"
+    },
+    "Garmin/alps-west/2.0.1-glacier-r1/terrain-attribution.md": {
+      "bytes": 835,
+      "sha256": "c61f61930e8f6ca908605e36a74d9d880d5d3385bf24f4049c40a4c2e2de823d",
+      "verifiedUTC": "2026-11-21T20:15:33.916558+00:00"
+    },
+    "Garmin/alps-west/2.0.1-glacier-r1/terrain-data-sources.md": {
+      "bytes": 958,
+      "sha256": "3e5a759a888bf6490dd5469824898bef913634ed272bb837a07f8c44b821b2e9",
+      "verifiedUTC": "2026-11-21T20:15:33.972640+00:00"
+    },
+    "Garmin/dolomites/2.0.1-glacier-r1/ATTRIBUTION.txt": {
+      "bytes": 148,
+      "sha256": "8f810839e84d47cf4d349d7e71a11617fc0bc376951e84dc04376392dfe68aa6",
+      "verifiedUTC": "2026-11-21T20:59:25.387875+00:00"
+    },
+    "Garmin/dolomites/2.0.1-glacier-r1/OpenBareMap-Dolomites-Glaciers.img": {
+      "bytes": 176685056,
+      "sha256": "3dba550ab51e1de63c50598969ac48745c7c868a689c71d7abba7b3603fda8a7",
+      "verifiedUTC": "2026-11-21T21:03:38.022776+00:00"
+    },
+    "Garmin/dolomites/2.0.1-glacier-r1/SHA256SUMS.txt": {
+      "bytes": 101,
+      "sha256": "4fe1de14ce9be0f1b0f8cc47e25b7911be5b83c5d1410ff546e7eceb45445308",
+      "verifiedUTC": "2026-11-21T20:59:49.709904+00:00"
+    },
+    "Garmin/dolomites/2.0.1-glacier-r1/instructions.txt": {
+      "bytes": 3435,
+      "sha256": "81b20715250286176497742b71cc5336f444bc575b0ef989f07d9b28ad1a87c1",
+      "verifiedUTC": "2026-11-21T20:59:16.561219+00:00"
+    },
+    "Garmin/dolomites/2.0.1-glacier-r1/manifest.json": {
+      "bytes": 618,
+      "sha256": "d15b4290e4651cf849aaf9a7c4d5727aa8ad00d8d6c3bb8a6704c7cc698bef73",
+      "verifiedUTC": "2026-11-21T20:59:41.862835+00:00"
+    },
+    "Garmin/dolomites/2.0.1-glacier-r1/terrain-attribution.md": {
+      "bytes": 12300,
+      "sha256": "2ce4d3414b4592d17ad56a5af57feb480686ddcfb0a3e4ea0b566d28cde13567",
+      "verifiedUTC": "2026-11-21T20:59:33.187206+00:00"
+    },
+    "Garmin/dolomites/2.0.1-glacier-r1/terrain-data-sources.md": {
+      "bytes": 12162,
+      "sha256": "dcf07b156bc25930dfe3e1a55d8efd4a2e3b5376393d23bf24d1fc1dd02c5948",
+      "verifiedUTC": "2026-11-21T20:59:42.355452+00:00"
+    },
+    "Garmin/norway-central/2.0.1-glacier-r1/ATTRIBUTION.txt": {
+      "bytes": 920,
+      "sha256": "aa0306ba0f7bbc538839f4b7c6790cd9ed3d8eb20de53362c9b8e72d3db8ea26",
+      "verifiedUTC": "2026-11-21T21:12:20.443143+00:00"
+    },
+    "Garmin/norway-central/2.0.1-glacier-r1/OpenBareMap-Norway-Central-Glaciers.img": {
+      "bytes": 519094272,
+      "sha256": "8b11bed38783ac99af43a09d1b82cf99005b525aaddd5224f32bd70e4353dca6",
+      "verifiedUTC": "2026-11-21T21:17:43.869536+00:00"
+    },
+    "Garmin/norway-central/2.0.1-glacier-r1/SHA256SUMS.txt": {
+      "bytes": 106,
+      "sha256": "b0ccdc2c7b135b7f219eaf4764e87acc3cb0995062a6c7f549caa0620b0dd49b",
+      "verifiedUTC": "2026-11-21T21:12:54.445705+00:00"
+    },
+    "Garmin/norway-central/2.0.1-glacier-r1/instructions.txt": {
+      "bytes": 3461,
+      "sha256": "922538b9b0a8ff54c0db871cf60fe3a51c5a19e88a44b4db806eb96ca136c223",
+      "verifiedUTC": "2026-11-21T21:12:12.710337+00:00"
+    },
+    "Garmin/norway-central/2.0.1-glacier-r1/manifest.json": {
+      "bytes": 648,
+      "sha256": "2bb7bbeb1d0647685add33c306b0fd26a2f69d1f9cc00601a3698db4f45cb636",
+      "verifiedUTC": "2026-11-21T21:12:45.842948+00:00"
+    },
+    "Garmin/norway-central/2.0.1-glacier-r1/terrain-attribution.md": {
+      "bytes": 845,
+      "sha256": "b8636d5245b8dae6dce6b7812434bf7da5f913c35187ceeb0eccfaddab236458",
+      "verifiedUTC": "2026-11-21T21:12:29.270661+00:00"
+    },
+    "Garmin/norway-central/2.0.1-glacier-r1/terrain-data-sources.md": {
+      "bytes": 1154,
+      "sha256": "d0f100af154771b97b919b25096d72acbe980fd173dc22eae1475ac3025443b5",
+      "verifiedUTC": "2026-11-21T21:12:37.488885+00:00"
+    },
+    "Garmin/norway-north/2.0.1-glacier-r1/ATTRIBUTION.txt": {
+      "bytes": 922,
+      "sha256": "1c470db5cbe3e3c90f650106142ca84217043fb589d8d6f6735c21414c0b56ba",
+      "verifiedUTC": "2026-11-21T21:50:55.171718+00:00"
+    },
+    "Garmin/norway-north/2.0.1-glacier-r1/OpenBareMap-Norway-North-Glaciers.img": {
+      "bytes": 633143296,
+      "sha256": "2774ea6a20eb4f6607ff04d678348bd71ab13446acbff5ecc2e7a417a82d6823",
+      "verifiedUTC": "2026-11-21T21:57:56.500520+00:00"
+    },
+    "Garmin/norway-north/2.0.1-glacier-r1/SHA256SUMS.txt": {
+      "bytes": 104,
+      "sha256": "91d9c0825dcbdd8aecfb1c1eece959a03d3b847bc0fc2d103d2e2afe37fb5414",
+      "verifiedUTC": "2026-11-21T21:51:33.284303+00:00"
+    },
+    "Garmin/norway-north/2.0.1-glacier-r1/instructions.txt": {
+      "bytes": 3451,
+      "sha256": "9c5f1821beb6c1fcbaad261129445e5c75c4e00cde8411fa631a828838467ba5",
+      "verifiedUTC": "2026-11-21T21:50:46.661865+00:00"
+    },
+    "Garmin/norway-north/2.0.1-glacier-r1/manifest.json": {
+      "bytes": 636,
+      "sha256": "ecfeebdd00377a1ad6919b15f8769b2ade32c0ec7aa0b0a148e86166dc6d0c82",
+      "verifiedUTC": "2026-11-21T21:51:24.564657+00:00"
+    },
+    "Garmin/norway-north/2.0.1-glacier-r1/terrain-attribution.md": {
+      "bytes": 846,
+      "sha256": "41b5761eb903440b87b6c78cc3fd0ff5843d0d1bcd3481d0e56093e91d5a6ce2",
+      "verifiedUTC": "2026-11-21T21:51:03.746757+00:00"
+    },
+    "Garmin/norway-north/2.0.1-glacier-r1/terrain-data-sources.md": {
+      "bytes": 1155,
+      "sha256": "171eeb303e2e8126bee21a60631cb6d1410695beb77783a3f24c885f86878052",
+      "verifiedUTC": "2026-11-21T21:51:12.514605+00:00"
+    },
+    "Garmin/norway-south/2.0.1-glacier-r1/ATTRIBUTION.txt": {
+      "bytes": 922,
+      "sha256": "28b4394f1d9ba0361a1fdaf131aaee97951d6c09f3b98065380f74fc4d5bc8a2",
+      "verifiedUTC": "2026-11-21T21:38:09.864820+00:00"
+    },
+    "Garmin/norway-south/2.0.1-glacier-r1/OpenBareMap-Norway-South-Glaciers.img": {
+      "bytes": 1002717184,
+      "sha256": "b4264d61315d5920d83839eb3a2982afbb21af2c17f89eaf1fececb0ff462d3a",
+      "verifiedUTC": "2026-11-21T21:49:16.183702+00:00"
+    },
+    "Garmin/norway-south/2.0.1-glacier-r1/SHA256SUMS.txt": {
+      "bytes": 104,
+      "sha256": "ec46802a684bd31b333e54252a1356f1d38fc870909a5a2510c0d794cd093cfc",
+      "verifiedUTC": "2026-11-21T21:38:25.304336+00:00"
+    },
+    "Garmin/norway-south/2.0.1-glacier-r1/instructions.txt": {
+      "bytes": 3451,
+      "sha256": "5bc137ce40ec4a619110cde722ac633ab671d4df5fab966179559e10af5f884d",
+      "verifiedUTC": "2026-11-21T21:38:09.860202+00:00"
+    },
+    "Garmin/norway-south/2.0.1-glacier-r1/manifest.json": {
+      "bytes": 637,
+      "sha256": "4ee5add025c2431f51820eab1b808d348de512e808b20408da6b286689ad993b",
+      "verifiedUTC": "2026-11-21T21:38:25.315069+00:00"
+    },
+    "Garmin/norway-south/2.0.1-glacier-r1/terrain-attribution.md": {
+      "bytes": 846,
+      "sha256": "9607a28d15742b10fa197f93cb2647d014d27bbed6f049a0dcd1bca03d7edc8c",
+      "verifiedUTC": "2026-11-21T21:38:16.967026+00:00"
+    },
+    "Garmin/norway-south/2.0.1-glacier-r1/terrain-data-sources.md": {
+      "bytes": 1155,
+      "sha256": "2f8dc1d70d7b435cff12bbd2a6f14814e790e2194c8036518496909621274b46",
+      "verifiedUTC": "2026-11-21T21:38:16.962767+00:00"
+    },
+    "Garmin/pyrenees/2.0.1-glacier-r1/ATTRIBUTION.txt": {
+      "bytes": 167,
+      "sha256": "8fb21a2ba0374d23c10945a83be3d962139b10b624c0089cae7bed9bfe9911f9",
+      "verifiedUTC": "2026-11-21T21:56:17.679596+00:00"
+    },
+    "Garmin/pyrenees/2.0.1-glacier-r1/OpenBareMap-Pyrenees-Glaciers.img": {
+      "bytes": 422281216,
+      "sha256": "e181305549d3525f3f5ada67a5de00e9666516f32a1ff525bd7e83b8d28f38f1",
+      "verifiedUTC": "2026-11-21T22:02:27.627984+00:00"
+    },
+    "Garmin/pyrenees/2.0.1-glacier-r1/SHA256SUMS.txt": {
+      "bytes": 100,
+      "sha256": "88fee00c0853ff3a597ed3d0ec128a5ec40e370bcbf2e963ed10f8c149d96699",
+      "verifiedUTC": "2026-11-21T21:56:31.940145+00:00"
+    },
+    "Garmin/pyrenees/2.0.1-glacier-r1/instructions.txt": {
+      "bytes": 3564,
+      "sha256": "7d56257998df88e312c58ddeebf6d6616445be00b0c214ee0d7b7c38a242412a",
+      "verifiedUTC": "2026-11-21T21:56:17.741127+00:00"
+    },
+    "Garmin/pyrenees/2.0.1-glacier-r1/manifest.json": {
+      "bytes": 612,
+      "sha256": "2b1ea05568ff07e719b442ce52488448d522d6653e2018900156381e6abe5872",
+      "verifiedUTC": "2026-11-21T21:56:31.906170+00:00"
+    },
+    "Garmin/pyrenees/2.0.1-glacier-r1/terrain-attribution.md": {
+      "bytes": 12300,
+      "sha256": "2ce4d3414b4592d17ad56a5af57feb480686ddcfb0a3e4ea0b566d28cde13567",
+      "verifiedUTC": "2026-11-21T21:56:23.106504+00:00"
+    },
+    "Garmin/pyrenees/2.0.1-glacier-r1/terrain-data-sources.md": {
+      "bytes": 12162,
+      "sha256": "dcf07b156bc25930dfe3e1a55d8efd4a2e3b5376393d23bf24d1fc1dd02c5948",
+      "verifiedUTC": "2026-11-21T21:56:23.163218+00:00"
+    },
+    "Garmin/us-glacier/2.0.1-glacier-r1/ATTRIBUTION.txt": {
+      "bytes": 1002,
+      "sha256": "16813d24775640062d50abd8c773e46ca91c823547d8e16a84d988df22789318",
+      "verifiedUTC": "2026-11-21T19:51:34.015851+00:00"
+    },
+    "Garmin/us-glacier/2.0.1-glacier-r1/OpenBareMap-US-Glacier-Glaciers.img": {
+      "bytes": 26929152,
+      "sha256": "073202b2f1f880d07284dcfe0876d1bad8524a3af97a7f25e10f81f8caa3cc2a",
+      "verifiedUTC": "2026-11-21T19:51:40.977900+00:00"
+    },
+    "Garmin/us-glacier/2.0.1-glacier-r1/SHA256SUMS.txt": {
+      "bytes": 102,
+      "sha256": "7d39432abe93cc8bea8a2937b48fb3110d2368eff38af4c4376f1386000be8f9",
+      "verifiedUTC": "2026-11-21T19:51:49.437857+00:00"
+    },
+    "Garmin/us-glacier/2.0.1-glacier-r1/boundary-source.json": {
+      "bytes": 1135,
+      "sha256": "6940de267e452db93276a0683f50a50b383cff068a5131d6a68850530b450658",
+      "verifiedUTC": "2026-11-21T19:51:49.579817+00:00"
+    },
+    "Garmin/us-glacier/2.0.1-glacier-r1/instructions.txt": {
+      "bytes": 3423,
+      "sha256": "3cf63e98ef21eb62617fcc2958c2b4ac840bef6264e19822e9480346214e3551",
+      "verifiedUTC": "2026-11-21T19:51:34.039667+00:00"
+    },
+    "Garmin/us-glacier/2.0.1-glacier-r1/manifest.json": {
+      "bytes": 623,
+      "sha256": "fcf89d6ee322cecaa8ee61c61f65da1d123fb3f02a2b40a2df8bb2eab8ed3f49",
+      "verifiedUTC": "2026-11-21T19:51:49.479229+00:00"
+    },
+    "Garmin/us-glacier/2.0.1-glacier-r1/terrain-attribution.md": {
+      "bytes": 848,
+      "sha256": "793fc75c74eb404f6919775c8d729b734a707beb000bf563706c019d6cd5ed54",
+      "verifiedUTC": "2026-11-21T19:51:49.521864+00:00"
+    },
+    "Garmin/us-glacier/2.0.1-glacier-r1/terrain-data-sources.md": {
+      "bytes": 971,
+      "sha256": "04b4fa96012979550d839ac57bbed974d74850263a113b0edfda4cdbec89f142",
+      "verifiedUTC": "2026-11-21T19:51:49.526747+00:00"
+    },
+    "Garmin/us-olympic/2.0.1-glacier-r1/ATTRIBUTION.txt": {
+      "bytes": 1002,
+      "sha256": "24d04e78530db2042d166cc8e552f08363a199a67ebbd20d04ac31810b18e14a",
+      "verifiedUTC": "2026-11-21T19:52:51.799763+00:00"
+    },
+    "Garmin/us-olympic/2.0.1-glacier-r1/OpenBareMap-US-Olympic-Glaciers.img": {
+      "bytes": 39337984,
+      "sha256": "165f915d1e9f2b1cae5804000d9a0e34abde977f35c2cb3a7018e20b7b36b938",
+      "verifiedUTC": "2026-11-21T19:52:48.370689+00:00"
+    },
+    "Garmin/us-olympic/2.0.1-glacier-r1/SHA256SUMS.txt": {
+      "bytes": 102,
+      "sha256": "dac2a2e70bd06267c5b5bd26c42f823f69257e8f462c1607ebca71d199291eee",
+      "verifiedUTC": "2026-11-21T19:53:02.364485+00:00"
+    },
+    "Garmin/us-olympic/2.0.1-glacier-r1/boundary-source.json": {
+      "bytes": 1136,
+      "sha256": "19e7fe61f2656809ffb3323b07a035618829d7ee8dde3a16e482cc4732c4c564",
+      "verifiedUTC": "2026-11-21T19:52:51.822437+00:00"
+    },
+    "Garmin/us-olympic/2.0.1-glacier-r1/instructions.txt": {
+      "bytes": 3423,
+      "sha256": "cd847e1a17534ee967948b7a72a531491d17d309651ab10d6dcf7a2557c73bcb",
+      "verifiedUTC": "2026-11-21T19:52:51.822802+00:00"
+    },
+    "Garmin/us-olympic/2.0.1-glacier-r1/manifest.json": {
+      "bytes": 623,
+      "sha256": "daa9ef70124a07962ae55385a62e3ef2dd64e8f2a7f0cbcad681f1cdd35320d2",
+      "verifiedUTC": "2026-11-21T19:53:02.356180+00:00"
+    },
+    "Garmin/us-olympic/2.0.1-glacier-r1/terrain-attribution.md": {
+      "bytes": 848,
+      "sha256": "793fc75c74eb404f6919775c8d729b734a707beb000bf563706c019d6cd5ed54",
+      "verifiedUTC": "2026-11-21T19:52:51.809955+00:00"
+    },
+    "Garmin/us-olympic/2.0.1-glacier-r1/terrain-data-sources.md": {
+      "bytes": 971,
+      "sha256": "04b4fa96012979550d839ac57bbed974d74850263a113b0edfda4cdbec89f142",
+      "verifiedUTC": "2026-11-21T19:52:51.810718+00:00"
+    },
+    "Garmin/us-rocky-mountain/2.0.1-glacier-r1/ATTRIBUTION.txt": {
+      "bytes": 1009,
+      "sha256": "22fcbafe25b9195af7616610d1600c8567a688dc5d2a05e69b2bccdba500c444",
+      "verifiedUTC": "2026-11-21T19:58:42.038963+00:00"
+    },
+    "Garmin/us-rocky-mountain/2.0.1-glacier-r1/OpenBareMap-US-Rocky-Mountain-Glaciers.img": {
+      "bytes": 13339648,
+      "sha256": "d9e091ec67b81ba2cd2bcd1f5db1081d547844f81b205c56feacce9451a1afb3",
+      "verifiedUTC": "2026-11-21T19:58:40.334855+00:00"
+    },
+    "Garmin/us-rocky-mountain/2.0.1-glacier-r1/SHA256SUMS.txt": {
+      "bytes": 109,
+      "sha256": "9b130872a058fc78ccd956183bd8281e93b48e85bf2b1437ca8f081364ff70ec",
+      "verifiedUTC": "2026-11-21T19:58:54.301663+00:00"
+    },
+    "Garmin/us-rocky-mountain/2.0.1-glacier-r1/boundary-source.json": {
+      "bytes": 1135,
+      "sha256": "c5f643d0e1b120112fc0e8a7c9e305f119ec8224e53bebc6d5772acb8de0ad29",
+      "verifiedUTC": "2026-11-21T19:58:48.018158+00:00"
+    },
+    "Garmin/us-rocky-mountain/2.0.1-glacier-r1/instructions.txt": {
+      "bytes": 3479,
+      "sha256": "2d492d6265cec77c587be1ec92e05ad561639f18b9b954f61f759b6693f6613b",
+      "verifiedUTC": "2026-11-21T19:58:32.324988+00:00"
+    },
+    "Garmin/us-rocky-mountain/2.0.1-glacier-r1/manifest.json": {
+      "bytes": 665,
+      "sha256": "fd3510e7e5cbf74d3bb81b0c9adeaf8f1c12b986f08a3836b21175c33c619198",
+      "verifiedUTC": "2026-11-21T19:58:54.351926+00:00"
+    },
+    "Garmin/us-rocky-mountain/2.0.1-glacier-r1/terrain-attribution.md": {
+      "bytes": 848,
+      "sha256": "793fc75c74eb404f6919775c8d729b734a707beb000bf563706c019d6cd5ed54",
+      "verifiedUTC": "2026-11-21T19:58:48.012603+00:00"
+    },
+    "Garmin/us-rocky-mountain/2.0.1-glacier-r1/terrain-data-sources.md": {
+      "bytes": 971,
+      "sha256": "04b4fa96012979550d839ac57bbed974d74850263a113b0edfda4cdbec89f142",
+      "verifiedUTC": "2026-11-21T19:58:48.025037+00:00"
+    },
+    "Garmin/us-yellowstone-grand-teton/2.0.1-glacier-r1/ATTRIBUTION.txt": {
+      "bytes": 1020,
+      "sha256": "bef661f0366a16ccf716a7adc4d97b970516779b3bb6615d011c6f20fa43dc67",
+      "verifiedUTC": "2026-11-21T19:56:24.672253+00:00"
+    },
+    "Garmin/us-yellowstone-grand-teton/2.0.1-glacier-r1/OpenBareMap-US-Yellowstone-Grand-Teton-Glaciers.img": {
+      "bytes": 78090240,
+      "sha256": "6b7e447461c34f5f9886a7904c47753f37dfc47ba5e6e3885f9ba8d314a9eb85",
+      "verifiedUTC": "2026-11-21T19:56:53.431331+00:00"
+    },
+    "Garmin/us-yellowstone-grand-teton/2.0.1-glacier-r1/SHA256SUMS.txt": {
+      "bytes": 118,
+      "sha256": "601951b4257b3d7802e1ebe5d70d3e96586c1c9cc89427e918f93b0303228fee",
+      "verifiedUTC": "2026-11-21T19:56:34.397127+00:00"
+    },
+    "Garmin/us-yellowstone-grand-teton/2.0.1-glacier-r1/boundary-source.json": {
+      "bytes": 1161,
+      "sha256": "4d4ad9c08ca502d05749e83364ae006bd0e6d4801a3ae81bf9ac9a94c7a4e1e2",
+      "verifiedUTC": "2026-11-21T19:56:34.262280+00:00"
+    },
+    "Garmin/us-yellowstone-grand-teton/2.0.1-glacier-r1/instructions.txt": {
+      "bytes": 3555,
+      "sha256": "52e325c9a1461ad502af5f44625c5945b7a62367231336e7de6703ed3f419d52",
+      "verifiedUTC": "2026-11-21T19:56:16.625816+00:00"
+    },
+    "Garmin/us-yellowstone-grand-teton/2.0.1-glacier-r1/manifest.json": {
+      "bytes": 719,
+      "sha256": "bffb69baec15dc798b6607f42a577cc36821793689369a0855d9dfd55b5e124a",
+      "verifiedUTC": "2026-11-21T19:56:34.268530+00:00"
+    },
+    "Garmin/us-yellowstone-grand-teton/2.0.1-glacier-r1/terrain-attribution.md": {
+      "bytes": 848,
+      "sha256": "793fc75c74eb404f6919775c8d729b734a707beb000bf563706c019d6cd5ed54",
+      "verifiedUTC": "2026-11-21T19:56:24.672915+00:00"
+    },
+    "Garmin/us-yellowstone-grand-teton/2.0.1-glacier-r1/terrain-data-sources.md": {
+      "bytes": 971,
+      "sha256": "04b4fa96012979550d839ac57bbed974d74850263a113b0edfda4cdbec89f142",
+      "verifiedUTC": "2026-11-21T19:56:24.667090+00:00"
+    },
+    "Garmin/us-yosemite/2.0.1-glacier-r1/ATTRIBUTION.txt": {
+      "bytes": 1003,
+      "sha256": "18f4277ead4e585297788d5c43a6e8640e39153f72bc7e511e09f776c278eb93",
+      "verifiedUTC": "2026-11-21T19:55:16.463611+00:00"
+    },
+    "Garmin/us-yosemite/2.0.1-glacier-r1/OpenBareMap-US-Yosemite-Glaciers.img": {
+      "bytes": 29380608,
+      "sha256": "12fba795d0083b324eb74cda131ef4199876f2cde5cb7b9600bbf0c0b205e5b2",
+      "verifiedUTC": "2026-11-21T19:55:17.873177+00:00"
+    },
+    "Garmin/us-yosemite/2.0.1-glacier-r1/SHA256SUMS.txt": {
+      "bytes": 103,
+      "sha256": "6d2a424a94984a816c1a65a2f818595a26fc5dabed70cc8ae8466c3afcf171e6",
+      "verifiedUTC": "2026-11-21T19:55:24.085106+00:00"
+    },
+    "Garmin/us-yosemite/2.0.1-glacier-r1/boundary-source.json": {
+      "bytes": 1135,
+      "sha256": "8d478e87db02ec413235a4333f79c2b9390886290cae5c8c22ee37b1e8fc9b51",
+      "verifiedUTC": "2026-11-21T19:55:16.453829+00:00"
+    },
+    "Garmin/us-yosemite/2.0.1-glacier-r1/instructions.txt": {
+      "bytes": 3431,
+      "sha256": "9b623ee730dbc9352f62da4cbf5bad374cea1d6b4d0538d6b2e4149d7328be80",
+      "verifiedUTC": "2026-11-21T19:55:11.729556+00:00"
+    },
+    "Garmin/us-yosemite/2.0.1-glacier-r1/manifest.json": {
+      "bytes": 629,
+      "sha256": "9d771d62c93c38f1ea20f98aeadd9a319b31be2212ed6c32798b8944a60e4294",
+      "verifiedUTC": "2026-11-21T19:55:20.124758+00:00"
+    },
+    "Garmin/us-yosemite/2.0.1-glacier-r1/terrain-attribution.md": {
+      "bytes": 848,
+      "sha256": "793fc75c74eb404f6919775c8d729b734a707beb000bf563706c019d6cd5ed54",
+      "verifiedUTC": "2026-11-21T19:55:16.431862+00:00"
+    },
+    "Garmin/us-yosemite/2.0.1-glacier-r1/terrain-data-sources.md": {
+      "bytes": 971,
+      "sha256": "04b4fa96012979550d839ac57bbed974d74850263a113b0edfda4cdbec89f142",
+      "verifiedUTC": "2026-11-21T19:55:16.426521+00:00"
+    },
+    "OpenBareMap/alps-central/2.0.1/app-bundles-v1/android/OpenBareMap-Alps-Central-Android-Bundle.zip": {
+      "bytes": 2107357245,
+      "sha256": "8808c9ab0e535da92d7c80207d4f543b28ea18f91965d086e07acf70b1c3257e",
+      "verifiedUTC": "2026-11-21T20:32:44.116755+00:00"
+    },
+    "OpenBareMap/alps-central/2.0.1/app-bundles-v1/android/SHA256SUMS.txt": {
+      "bytes": 193,
+      "sha256": "9981ebbcd39e0787afc7c27732b44c8fe829995890a5cd2d1ee25a12657c55b9",
+      "verifiedUTC": "2026-11-21T20:21:56.544747+00:00"
+    },
+    "OpenBareMap/alps-central/2.0.1/app-bundles-v1/android/instructions.txt": {
+      "bytes": 4218,
+      "sha256": "2b7fc31291a8923cdf968f4ef8645c6c96a1b29cea98f3457bf90cbb720941ec",
+      "verifiedUTC": "2026-11-21T20:21:53.623968+00:00"
+    },
+    "OpenBareMap/alps-central/2.0.1/app-bundles-v1/android/manifest.json": {
+      "bytes": 1619,
+      "sha256": "824217ee6fc27b9a44814040a73160c2a6d5521d15bb7271499d4dcf9ba64e61",
+      "verifiedUTC": "2026-11-21T20:22:01.443084+00:00"
+    },
+    "OpenBareMap/alps-central/2.0.1/app-bundles-v1/ios/OpenBareMap-Alps-Central-iOS-Bundle.zip": {
+      "bytes": 2107357660,
+      "sha256": "e9c3668e3baf55a4a4502433e4a7369bbc806d11766397c5a578ef465f24f416",
+      "verifiedUTC": "2026-11-21T20:32:23.850142+00:00"
+    },
+    "OpenBareMap/alps-central/2.0.1/app-bundles-v1/ios/SHA256SUMS.txt": {
+      "bytes": 189,
+      "sha256": "61abeae9ddb7741e37ff8e7ee90894026db568c9b0f3396aab3e1ab99b435a6c",
+      "verifiedUTC": "2026-11-21T20:22:10.530802+00:00"
+    },
+    "OpenBareMap/alps-central/2.0.1/app-bundles-v1/ios/instructions.txt": {
+      "bytes": 3646,
+      "sha256": "03f86366b2fb68f6796c77d01addd60603e9327a976de0df82ea5c557fb9bd23",
+      "verifiedUTC": "2026-11-21T20:22:06.629325+00:00"
+    },
+    "OpenBareMap/alps-central/2.0.1/app-bundles-v1/ios/manifest.json": {
+      "bytes": 1706,
+      "sha256": "51c9c7cdccb5ee59c81675588ddec8f31b3a558dbe9f27d7b89d9e5933647e22",
+      "verifiedUTC": "2026-11-21T20:22:10.969756+00:00"
+    },
+    "OpenBareMap/alps-central/2.0.1/preview/alps-central/index.html": {
+      "bytes": 7299,
+      "sha256": "20167e0c01db8994228bbc3805264a380e51ab6f0135f6e68d5ff277ceb421b4",
+      "verifiedUTC": "2026-11-21T20:21:10.047905+00:00"
+    },
+    "OpenBareMap/alps-central/2.0.1/preview/alps-central/legend.html": {
+      "bytes": 1481,
+      "sha256": "ba015bcd121adfaa924cab3cbee7654e73cbc59487bb4325f616374a7657005b",
+      "verifiedUTC": "2026-11-21T20:21:09.977400+00:00"
+    },
+    "OpenBareMap/alps-central/2.0.1/preview/alps-central/region.json": {
+      "bytes": 4092,
+      "sha256": "dd8aece15600a0414ff6f1c406635db4be992efd9dfcb41d3d9a987731241dfe",
+      "verifiedUTC": "2026-11-21T20:21:09.917702+00:00"
+    },
+    "OpenBareMap/alps-central/2.0.1/preview/alps-central/style.json": {
+      "bytes": 2485730,
+      "sha256": "e35bceec60375fbc869e1d278092a4c2ffff46fcb71e26c571e15c5d92c443ae",
+      "verifiedUTC": "2026-11-21T20:21:10.642330+00:00"
+    },
+    "OpenBareMap/alps-central/2.0.1/preview/assets/LICENSE.txt": {
+      "bytes": 5984,
+      "sha256": "ee5fc05a0677eaf69601d2c7db0d9ecd6cc27c3abc1d0733bc9ed34707cf8ef2",
+      "verifiedUTC": "2026-11-21T20:21:09.992163+00:00"
+    },
+    "OpenBareMap/alps-central/2.0.1/preview/assets/PMTiles-LICENSE.txt": {
+      "bytes": 1713,
+      "sha256": "0371c38f338835f7fc13ed71176f3d92144e22c8b736a31cced57adbbeb647b3",
+      "verifiedUTC": "2026-11-21T20:21:09.980733+00:00"
+    },
+    "OpenBareMap/alps-central/2.0.1/preview/assets/fonts/LICENSE-APACHE-2.0.txt": {
+      "bytes": 11358,
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "verifiedUTC": "2026-11-21T20:21:09.965407+00:00"
+    },
+    "OpenBareMap/alps-central/2.0.1/preview/assets/fonts/Open Sans Bold/0-255.pbf": {
+      "bytes": 80025,
+      "sha256": "b3a5c066b416d69012009e3446ddd9544607ceb7355734922635521b6834c4d8",
+      "verifiedUTC": "2026-11-21T20:21:10.094187+00:00"
+    },
+    "OpenBareMap/alps-central/2.0.1/preview/assets/fonts/Open Sans Bold/256-511.pbf": {
+      "bytes": 70900,
+      "sha256": "910a9d831040b8accfc9d70cf235dd4822e59a24e0d5e1736cee5d501c3d17a7",
+      "verifiedUTC": "2026-11-21T20:21:19.781316+00:00"
+    },
+    "OpenBareMap/alps-central/2.0.1/preview/assets/fonts/Open Sans Bold/768-1023.pbf": {
+      "bytes": 36235,
+      "sha256": "bd7b11497f8cee930c1843e8fe546ce59214b7cfb5e53809d7eca2899ff509bc",
+      "verifiedUTC": "2026-11-21T20:21:19.737484+00:00"
+    },
+    "OpenBareMap/alps-central/2.0.1/preview/assets/fonts/Open Sans Bold/8192-8447.pbf": {
+      "bytes": 10494,
+      "sha256": "18c7dbc4a21e80172e15cdd0c3f53de9f48663f5f8193fe153bb763ac1d731d8",
+      "verifiedUTC": "2026-11-21T20:21:19.704419+00:00"
+    },
+    "OpenBareMap/alps-central/2.0.1/preview/assets/fonts/Open Sans Regular/0-255.pbf": {
+      "bytes": 74696,
+      "sha256": "0c8bdb284f2ad6f69bbb434a0208393f3a517bc8bf7ed1eccc4ac4791ebbcbfe",
+      "verifiedUTC": "2026-11-21T20:21:19.861200+00:00"
+    },
+    "OpenBareMap/alps-central/2.0.1/preview/assets/fonts/Open Sans Regular/256-511.pbf": {
+      "bytes": 66481,
+      "sha256": "9962ad38d064edbeb226a6c7dcf1d58e7678508a805f980d2fe81bb3178ba68a",
+      "verifiedUTC": "2026-11-21T20:21:19.744030+00:00"
+    },
+    "OpenBareMap/alps-central/2.0.1/preview/assets/fonts/Open Sans Regular/768-1023.pbf": {
+      "bytes": 33767,
+      "sha256": "fea6a1c8e1be55d9725520627b108d425723b2dc189b7dddfe56abd7d8238ea9",
+      "verifiedUTC": "2026-11-21T20:21:19.724541+00:00"
+    },
+    "OpenBareMap/alps-central/2.0.1/preview/assets/fonts/Open Sans Regular/8192-8447.pbf": {
+      "bytes": 9663,
+      "sha256": "a57611157f0597b267ef36eb07ce5a41dddcc3b2f3b5b85779108b7bb48b1cde",
+      "verifiedUTC": "2026-11-21T20:21:19.699597+00:00"
+    },
+    "OpenBareMap/alps-central/2.0.1/preview/assets/fonts/Open Sans Semibold/0-255.pbf": {
+      "bytes": 77571,
+      "sha256": "64da7011e07531351a249a3d26aad76e2f22e4e321e50833f742697b453e8365",
+      "verifiedUTC": "2026-11-21T20:21:20.003887+00:00"
+    },
+    "OpenBareMap/alps-central/2.0.1/preview/assets/fonts/Open Sans Semibold/256-511.pbf": {
+      "bytes": 68869,
+      "sha256": "78298bbd8198c117ccdffe66bf9bbf646fdc1210b7e1bf222f5a9b29b366d7a5",
+      "verifiedUTC": "2026-11-21T20:21:29.912640+00:00"
+    },
+    "OpenBareMap/alps-central/2.0.1/preview/assets/fonts/Open Sans Semibold/768-1023.pbf": {
+      "bytes": 35063,
+      "sha256": "35f7d1f9c9dfbc978635b7eb21bffb1113879182b2d518a7fbee6b825dd08274",
+      "verifiedUTC": "2026-11-21T20:21:29.898025+00:00"
+    },
+    "OpenBareMap/alps-central/2.0.1/preview/assets/fonts/Open Sans Semibold/8192-8447.pbf": {
+      "bytes": 10092,
+      "sha256": "ee80ee7ef05e77bea017bcb387d970d61823fc37fdb0a51c446ae322c5974990",
+      "verifiedUTC": "2026-11-21T20:21:29.907416+00:00"
+    },
+    "OpenBareMap/alps-central/2.0.1/preview/assets/legend.css": {
+      "bytes": 1513,
+      "sha256": "581de29c8d2e0511ce0f71abea5803fbd03cd42108ff5de4a9962bde2b258ad8",
+      "verifiedUTC": "2026-11-21T20:21:29.917978+00:00"
+    },
+    "OpenBareMap/alps-central/2.0.1/preview/assets/legend.js": {
+      "bytes": 2813,
+      "sha256": "9701a94a97d492fb7a13455c2f5ded61fc1f723b28f5939eaccdd39c86f167ff",
+      "verifiedUTC": "2026-11-21T20:21:29.976717+00:00"
+    },
+    "OpenBareMap/alps-central/2.0.1/preview/assets/legends/alps-central@2x.png": {
+      "bytes": 221838,
+      "sha256": "a0b3553a632dcd36653444a8b7ce747ba8ad8f225f02e53b5baa4407756c53e6",
+      "verifiedUTC": "2026-11-21T20:21:30.183496+00:00"
+    },
+    "OpenBareMap/alps-central/2.0.1/preview/assets/maplibre-gl.css": {
+      "bytes": 69422,
+      "sha256": "792ac997dcf6ae6f643eb4e2dee4630c85e7056526bd8fb85ffe83c67d6c41b4",
+      "verifiedUTC": "2026-11-21T20:21:29.951960+00:00"
+    },
+    "OpenBareMap/alps-central/2.0.1/preview/assets/maplibre-gl.js": {
+      "bytes": 939308,
+      "sha256": "b5a34e6930ff937dbbb9eec8892cffb80ba473cce88ae5ca8c4654432f5f0ebc",
+      "verifiedUTC": "2026-11-21T20:21:30.358551+00:00"
+    },
+    "OpenBareMap/alps-central/2.0.1/preview/assets/pmtiles.js": {
+      "bytes": 20229,
+      "sha256": "caf981bc46f6327ee7e65d5dc964d89d38a69f60edca2bd4c5c890c21b554c6c",
+      "verifiedUTC": "2026-11-21T20:21:39.328549+00:00"
+    },
+    "OpenBareMap/alps-central/2.0.1/preview/assets/preview.css": {
+      "bytes": 1912,
+      "sha256": "4a2bb515c9d6e871ff92a5a15cd189a0f49005fc43cac1831b3445626d95884c",
+      "verifiedUTC": "2026-11-21T20:21:39.314113+00:00"
+    },
+    "OpenBareMap/alps-central/2.0.1/preview/assets/preview.js": {
+      "bytes": 3363,
+      "sha256": "79ce19a0520ed6bd076b4a5a4330fdd9b00d8fca8001bf442cc78b2f0069682a",
+      "verifiedUTC": "2026-11-21T20:21:39.335453+00:00"
+    },
+    "OpenBareMap/alps-central/2.0.1/preview/assets/sprites/outdoors.json": {
+      "bytes": 760,
+      "sha256": "e777903184842b2b08726fcfa5c6ca654f5761ff8c796f0a04c1e66f5551038e",
+      "verifiedUTC": "2026-11-21T20:21:39.271035+00:00"
+    },
+    "OpenBareMap/alps-central/2.0.1/preview/assets/sprites/outdoors.png": {
+      "bytes": 3722,
+      "sha256": "32de87bc645686f95ef45737ba1331504079ba0de01f6d3d30a81bf41ed6133a",
+      "verifiedUTC": "2026-11-21T20:21:39.327004+00:00"
+    },
+    "OpenBareMap/alps-central/2.0.1/preview/assets/sprites/outdoors@2x.json": {
+      "bytes": 771,
+      "sha256": "ca6052d8d86d5f3693247ca9179fedbfbfc950370506a9a5ffc485d69d8c458c",
+      "verifiedUTC": "2026-11-21T20:21:39.292334+00:00"
+    },
+    "OpenBareMap/alps-central/2.0.1/preview/assets/sprites/outdoors@2x.png": {
+      "bytes": 7453,
+      "sha256": "c2230eae423ca94a4fe910a999bee38986231cf8bed2109c280657a30fec86cc",
+      "verifiedUTC": "2026-11-21T20:21:39.325823+00:00"
+    },
+    "OpenBareMap/alps-central/2.0.1/preview/assets/terrain-attribution.html": {
+      "bytes": 1374,
+      "sha256": "f21618c4efd4543d4a41b78a2636fda1b0fb6b9c3334534576ef440507362323",
+      "verifiedUTC": "2026-11-21T20:21:39.277966+00:00"
+    },
+    "OpenBareMap/alps-central/2.0.1/preview/assets/townlands.geojson": {
+      "bytes": 9403579,
+      "sha256": "ab3d1d254517904918fed1e93f614c2c0f2d6940b948844e39c63cdee31a1d62",
+      "verifiedUTC": "2026-11-21T20:21:57.543583+00:00"
+    },
+    "OpenBareMap/alps-central/2.0.1/preview/data/alps-central/basemap.pmtiles": {
+      "bytes": 1137563214,
+      "sha256": "c0f90b4fb3c4dbe7627d370fb666cff98e63a0fee299762213d7b1bbc4db6962",
+      "verifiedUTC": "2026-11-21T20:29:52.112299+00:00"
+    },
+    "OpenBareMap/alps-central/2.0.1/preview/data/alps-central/coast.pmtiles": {
+      "bytes": 219709,
+      "sha256": "cbe4b13547500f75a1f8dfe400162efef90ee9fd16baabb2339c5adbef74cad2",
+      "verifiedUTC": "2026-11-21T20:21:47.994918+00:00"
+    },
+    "OpenBareMap/alps-central/2.0.1/preview/data/alps-central/grid.pmtiles": {
+      "bytes": 12600113,
+      "sha256": "5ecda08b42368d6b6841044ede65f856b3befcde099c81e204ae5a523678b7a5",
+      "verifiedUTC": "2026-11-21T20:22:02.348863+00:00"
+    },
+    "OpenBareMap/alps-central/2.0.1/preview/data/alps-central/hillshade.pmtiles": {
+      "bytes": 202999864,
+      "sha256": "2bc0c08b87df06ae6e590bbbd95794933b908638e2e89d8a02f0664f388957db",
+      "verifiedUTC": "2026-11-21T20:26:04.805419+00:00"
+    },
+    "OpenBareMap/alps-central/2.0.1/preview/data/alps-central/topography.pmtiles": {
+      "bytes": 680953646,
+      "sha256": "5d57c24c84deec1019c63c1247676c0e9654da89397001ce16fb6e52c7b96fe3",
+      "verifiedUTC": "2026-11-21T20:27:36.937837+00:00"
+    },
+    "OpenBareMap/alps-central/2.0.1/preview/manifest.json": {
+      "bytes": 1635,
+      "sha256": "90466997d0414567c09b1e717dddf1fe6822ea9ec0487e701eeadcbc37d56562",
+      "verifiedUTC": "2026-11-21T20:21:47.589958+00:00"
+    },
+    "OpenBareMap/alps-east/2.0.1/app-bundles-v1/android/OpenBareMap-Alps-East-Android-Bundle.zip": {
+      "bytes": 1943843672,
+      "sha256": "45f93dcff32fc203d17c532b7d9b97c7347c38d2e3f599da4e8a9bb301f54195",
+      "verifiedUTC": "2026-11-21T21:05:41.398724+00:00"
+    },
+    "OpenBareMap/alps-east/2.0.1/app-bundles-v1/android/SHA256SUMS.txt": {
+      "bytes": 190,
+      "sha256": "28f7a758649a51f08a5e94a990f79ba357c7a7767ae7bd24b34930c07f682b28",
+      "verifiedUTC": "2026-11-21T20:51:59.974718+00:00"
+    },
+    "OpenBareMap/alps-east/2.0.1/app-bundles-v1/android/instructions.txt": {
+      "bytes": 4215,
+      "sha256": "5b4293386df79f3dc2c3ee8d54a8def7b5a31ae1bcf9dd66df71e92b9e0ebdb2",
+      "verifiedUTC": "2026-11-21T20:52:00.008578+00:00"
+    },
+    "OpenBareMap/alps-east/2.0.1/app-bundles-v1/android/manifest.json": {
+      "bytes": 1598,
+      "sha256": "4f79986f4d6c1b92f32268689b409a96c9a2e2573a0a765eb9e518b784a4ab0c",
+      "verifiedUTC": "2026-11-21T20:51:59.996024+00:00"
+    },
+    "OpenBareMap/alps-east/2.0.1/app-bundles-v1/ios/OpenBareMap-Alps-East-iOS-Bundle.zip": {
+      "bytes": 1943844081,
+      "sha256": "97e45df924455c0d80640511755f8d9211462fd9f29e71f57fc557f58fb406c3",
+      "verifiedUTC": "2026-11-21T21:05:33.206631+00:00"
+    },
+    "OpenBareMap/alps-east/2.0.1/app-bundles-v1/ios/SHA256SUMS.txt": {
+      "bytes": 186,
+      "sha256": "c5dec687c7db3aed2fff74c0d62024f7e311103966acac465bd21d0fb95264e8",
+      "verifiedUTC": "2026-11-21T20:52:09.621414+00:00"
+    },
+    "OpenBareMap/alps-east/2.0.1/app-bundles-v1/ios/instructions.txt": {
+      "bytes": 3643,
+      "sha256": "97a8d55d3c5e4fe882b07c28e8cbaaab73f4172911fec154acde36b027decca2",
+      "verifiedUTC": "2026-11-21T20:52:09.661164+00:00"
+    },
+    "OpenBareMap/alps-east/2.0.1/app-bundles-v1/ios/manifest.json": {
+      "bytes": 1685,
+      "sha256": "62bb4932087b0ca18981d32b31e53b7e9cff450d13204870eb25a9449b29576b",
+      "verifiedUTC": "2026-11-21T20:52:09.607975+00:00"
+    },
+    "OpenBareMap/alps-east/2.0.1/preview/alps-east/index.html": {
+      "bytes": 7275,
+      "sha256": "48afa59c8f029158d22f15dd5a99fbfb532c5ae6571b6397bb072f7bce3b7f81",
+      "verifiedUTC": "2026-11-21T20:51:21.570565+00:00"
+    },
+    "OpenBareMap/alps-east/2.0.1/preview/alps-east/legend.html": {
+      "bytes": 1460,
+      "sha256": "ce6e5c26f7fa5791cfaa913c8d520f13debd1a5235a87bec1d77bf50f58f8afa",
+      "verifiedUTC": "2026-11-21T20:51:21.556357+00:00"
+    },
+    "OpenBareMap/alps-east/2.0.1/preview/alps-east/region.json": {
+      "bytes": 4142,
+      "sha256": "3eb1f87fd9816a70664a6f39bd55a0512a76b6171d2be57d31627232b67f6b7c",
+      "verifiedUTC": "2026-11-21T20:51:21.624602+00:00"
+    },
+    "OpenBareMap/alps-east/2.0.1/preview/alps-east/style.json": {
+      "bytes": 2485689,
+      "sha256": "f491b46d3c737596991ec92f8bf8432fd6de52a8dfb6cc610b851bdcfbb0ed53",
+      "verifiedUTC": "2026-11-21T20:51:21.757467+00:00"
+    },
+    "OpenBareMap/alps-east/2.0.1/preview/assets/LICENSE.txt": {
+      "bytes": 5984,
+      "sha256": "ee5fc05a0677eaf69601d2c7db0d9ecd6cc27c3abc1d0733bc9ed34707cf8ef2",
+      "verifiedUTC": "2026-11-21T20:51:26.052312+00:00"
+    },
+    "OpenBareMap/alps-east/2.0.1/preview/assets/PMTiles-LICENSE.txt": {
+      "bytes": 1713,
+      "sha256": "0371c38f338835f7fc13ed71176f3d92144e22c8b736a31cced57adbbeb647b3",
+      "verifiedUTC": "2026-11-21T20:51:25.985619+00:00"
+    },
+    "OpenBareMap/alps-east/2.0.1/preview/assets/fonts/LICENSE-APACHE-2.0.txt": {
+      "bytes": 11358,
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "verifiedUTC": "2026-11-21T20:51:26.023554+00:00"
+    },
+    "OpenBareMap/alps-east/2.0.1/preview/assets/fonts/Open Sans Bold/0-255.pbf": {
+      "bytes": 80025,
+      "sha256": "b3a5c066b416d69012009e3446ddd9544607ceb7355734922635521b6834c4d8",
+      "verifiedUTC": "2026-11-21T20:51:26.041144+00:00"
+    },
+    "OpenBareMap/alps-east/2.0.1/preview/assets/fonts/Open Sans Bold/256-511.pbf": {
+      "bytes": 70900,
+      "sha256": "910a9d831040b8accfc9d70cf235dd4822e59a24e0d5e1736cee5d501c3d17a7",
+      "verifiedUTC": "2026-11-21T20:51:26.061637+00:00"
+    },
+    "OpenBareMap/alps-east/2.0.1/preview/assets/fonts/Open Sans Bold/768-1023.pbf": {
+      "bytes": 36235,
+      "sha256": "bd7b11497f8cee930c1843e8fe546ce59214b7cfb5e53809d7eca2899ff509bc",
+      "verifiedUTC": "2026-11-21T20:51:25.997925+00:00"
+    },
+    "OpenBareMap/alps-east/2.0.1/preview/assets/fonts/Open Sans Bold/8192-8447.pbf": {
+      "bytes": 10494,
+      "sha256": "18c7dbc4a21e80172e15cdd0c3f53de9f48663f5f8193fe153bb763ac1d731d8",
+      "verifiedUTC": "2026-11-21T20:51:26.040750+00:00"
+    },
+    "OpenBareMap/alps-east/2.0.1/preview/assets/fonts/Open Sans Regular/0-255.pbf": {
+      "bytes": 74696,
+      "sha256": "0c8bdb284f2ad6f69bbb434a0208393f3a517bc8bf7ed1eccc4ac4791ebbcbfe",
+      "verifiedUTC": "2026-11-21T20:51:26.074991+00:00"
+    },
+    "OpenBareMap/alps-east/2.0.1/preview/assets/fonts/Open Sans Regular/256-511.pbf": {
+      "bytes": 66481,
+      "sha256": "9962ad38d064edbeb226a6c7dcf1d58e7678508a805f980d2fe81bb3178ba68a",
+      "verifiedUTC": "2026-11-21T20:51:33.242738+00:00"
+    },
+    "OpenBareMap/alps-east/2.0.1/preview/assets/fonts/Open Sans Regular/768-1023.pbf": {
+      "bytes": 33767,
+      "sha256": "fea6a1c8e1be55d9725520627b108d425723b2dc189b7dddfe56abd7d8238ea9",
+      "verifiedUTC": "2026-11-21T20:51:33.282236+00:00"
+    },
+    "OpenBareMap/alps-east/2.0.1/preview/assets/fonts/Open Sans Regular/8192-8447.pbf": {
+      "bytes": 9663,
+      "sha256": "a57611157f0597b267ef36eb07ce5a41dddcc3b2f3b5b85779108b7bb48b1cde",
+      "verifiedUTC": "2026-11-21T20:51:33.213273+00:00"
+    },
+    "OpenBareMap/alps-east/2.0.1/preview/assets/fonts/Open Sans Semibold/0-255.pbf": {
+      "bytes": 77571,
+      "sha256": "64da7011e07531351a249a3d26aad76e2f22e4e321e50833f742697b453e8365",
+      "verifiedUTC": "2026-11-21T20:51:33.334516+00:00"
+    },
+    "OpenBareMap/alps-east/2.0.1/preview/assets/fonts/Open Sans Semibold/256-511.pbf": {
+      "bytes": 68869,
+      "sha256": "78298bbd8198c117ccdffe66bf9bbf646fdc1210b7e1bf222f5a9b29b366d7a5",
+      "verifiedUTC": "2026-11-21T20:51:33.292355+00:00"
+    },
+    "OpenBareMap/alps-east/2.0.1/preview/assets/fonts/Open Sans Semibold/768-1023.pbf": {
+      "bytes": 35063,
+      "sha256": "35f7d1f9c9dfbc978635b7eb21bffb1113879182b2d518a7fbee6b825dd08274",
+      "verifiedUTC": "2026-11-21T20:51:33.292996+00:00"
+    },
+    "OpenBareMap/alps-east/2.0.1/preview/assets/fonts/Open Sans Semibold/8192-8447.pbf": {
+      "bytes": 10092,
+      "sha256": "ee80ee7ef05e77bea017bcb387d970d61823fc37fdb0a51c446ae322c5974990",
+      "verifiedUTC": "2026-11-21T20:51:33.226263+00:00"
+    },
+    "OpenBareMap/alps-east/2.0.1/preview/assets/legend.css": {
+      "bytes": 1513,
+      "sha256": "581de29c8d2e0511ce0f71abea5803fbd03cd42108ff5de4a9962bde2b258ad8",
+      "verifiedUTC": "2026-11-21T20:51:33.276345+00:00"
+    },
+    "OpenBareMap/alps-east/2.0.1/preview/assets/legend.js": {
+      "bytes": 2813,
+      "sha256": "9701a94a97d492fb7a13455c2f5ded61fc1f723b28f5939eaccdd39c86f167ff",
+      "verifiedUTC": "2026-11-21T20:51:40.915098+00:00"
+    },
+    "OpenBareMap/alps-east/2.0.1/preview/assets/legends/alps-east@2x.png": {
+      "bytes": 221020,
+      "sha256": "76f2cb83d8534d6ed6131d128bf0a48d3aacf6c9e28da2e14fddd6c20a78604d",
+      "verifiedUTC": "2026-11-21T20:51:40.982694+00:00"
+    },
+    "OpenBareMap/alps-east/2.0.1/preview/assets/maplibre-gl.css": {
+      "bytes": 69422,
+      "sha256": "792ac997dcf6ae6f643eb4e2dee4630c85e7056526bd8fb85ffe83c67d6c41b4",
+      "verifiedUTC": "2026-11-21T20:51:40.883739+00:00"
+    },
+    "OpenBareMap/alps-east/2.0.1/preview/assets/maplibre-gl.js": {
+      "bytes": 939308,
+      "sha256": "b5a34e6930ff937dbbb9eec8892cffb80ba473cce88ae5ca8c4654432f5f0ebc",
+      "verifiedUTC": "2026-11-21T20:51:41.026611+00:00"
+    },
+    "OpenBareMap/alps-east/2.0.1/preview/assets/pmtiles.js": {
+      "bytes": 20229,
+      "sha256": "caf981bc46f6327ee7e65d5dc964d89d38a69f60edca2bd4c5c890c21b554c6c",
+      "verifiedUTC": "2026-11-21T20:51:40.889984+00:00"
+    },
+    "OpenBareMap/alps-east/2.0.1/preview/assets/preview.css": {
+      "bytes": 1912,
+      "sha256": "4a2bb515c9d6e871ff92a5a15cd189a0f49005fc43cac1831b3445626d95884c",
+      "verifiedUTC": "2026-11-21T20:51:40.867000+00:00"
+    },
+    "OpenBareMap/alps-east/2.0.1/preview/assets/preview.js": {
+      "bytes": 3363,
+      "sha256": "79ce19a0520ed6bd076b4a5a4330fdd9b00d8fca8001bf442cc78b2f0069682a",
+      "verifiedUTC": "2026-11-21T20:51:40.936829+00:00"
+    },
+    "OpenBareMap/alps-east/2.0.1/preview/assets/sprites/outdoors.json": {
+      "bytes": 760,
+      "sha256": "e777903184842b2b08726fcfa5c6ca654f5761ff8c796f0a04c1e66f5551038e",
+      "verifiedUTC": "2026-11-21T20:51:40.854979+00:00"
+    },
+    "OpenBareMap/alps-east/2.0.1/preview/assets/sprites/outdoors.png": {
+      "bytes": 3722,
+      "sha256": "32de87bc645686f95ef45737ba1331504079ba0de01f6d3d30a81bf41ed6133a",
+      "verifiedUTC": "2026-11-21T20:51:50.375780+00:00"
+    },
+    "OpenBareMap/alps-east/2.0.1/preview/assets/sprites/outdoors@2x.json": {
+      "bytes": 771,
+      "sha256": "ca6052d8d86d5f3693247ca9179fedbfbfc950370506a9a5ffc485d69d8c458c",
+      "verifiedUTC": "2026-11-21T20:51:50.306666+00:00"
+    },
+    "OpenBareMap/alps-east/2.0.1/preview/assets/sprites/outdoors@2x.png": {
+      "bytes": 7453,
+      "sha256": "c2230eae423ca94a4fe910a999bee38986231cf8bed2109c280657a30fec86cc",
+      "verifiedUTC": "2026-11-21T20:51:50.321424+00:00"
+    },
+    "OpenBareMap/alps-east/2.0.1/preview/assets/terrain-attribution.html": {
+      "bytes": 1374,
+      "sha256": "f21618c4efd4543d4a41b78a2636fda1b0fb6b9c3334534576ef440507362323",
+      "verifiedUTC": "2026-11-21T20:51:50.305869+00:00"
+    },
+    "OpenBareMap/alps-east/2.0.1/preview/assets/townlands.geojson": {
+      "bytes": 9403579,
+      "sha256": "ab3d1d254517904918fed1e93f614c2c0f2d6940b948844e39c63cdee31a1d62",
+      "verifiedUTC": "2026-11-21T20:51:51.617741+00:00"
+    },
+    "OpenBareMap/alps-east/2.0.1/preview/data/alps-east/basemap.pmtiles": {
+      "bytes": 1082422800,
+      "sha256": "266c74b89664966b91d938bfd6843956aa54661f37ef0acb99711ede0f0fc85c",
+      "verifiedUTC": "2026-11-21T21:00:16.354588+00:00"
+    },
+    "OpenBareMap/alps-east/2.0.1/preview/data/alps-east/coast.pmtiles": {
+      "bytes": 829563,
+      "sha256": "24097edaef634e14196d73563a4fa1fbadd44113e1b7268a8e31a97be91975f5",
+      "verifiedUTC": "2026-11-21T20:51:50.707449+00:00"
+    },
+    "OpenBareMap/alps-east/2.0.1/preview/data/alps-east/grid.pmtiles": {
+      "bytes": 12450405,
+      "sha256": "44b8762692946541c549d3778a90648e17e7d234a9c005100a7f335f3a882d7c",
+      "verifiedUTC": "2026-11-21T20:51:51.577843+00:00"
+    },
+    "OpenBareMap/alps-east/2.0.1/preview/data/alps-east/hillshade.pmtiles": {
+      "bytes": 222624604,
+      "sha256": "3b7eeed160d9f77c379e987ae602f13b40aeb775179c2d58d3db937ba4eaa4fd",
+      "verifiedUTC": "2026-11-21T20:55:10.053808+00:00"
+    },
+    "OpenBareMap/alps-east/2.0.1/preview/data/alps-east/topography.pmtiles": {
+      "bytes": 553674774,
+      "sha256": "740fad122ba235145b65afb725b182043ff2d041696fd5b297549d4cd40b565a",
+      "verifiedUTC": "2026-11-21T20:57:50.338644+00:00"
+    },
+    "OpenBareMap/alps-east/2.0.1/preview/manifest.json": {
+      "bytes": 1629,
+      "sha256": "40a24f3f0c93a18d219cb32e245a736045813e9a22ecd2e6005834400592057c",
+      "verifiedUTC": "2026-11-21T20:51:59.978000+00:00"
+    },
+    "OpenBareMap/alps-tyrol-bavaria/2.0.1/app-bundles-v1/android/OpenBareMap-Alps-Tyrol-Bavaria-Android-Bundle.zip": {
+      "bytes": 1279458786,
+      "sha256": "bf3a8d29f6228fb077e45708a3361733920a4ea0517ac1063684a30e77760979",
+      "verifiedUTC": "2026-11-21T20:43:58.364378+00:00"
+    },
+    "OpenBareMap/alps-tyrol-bavaria/2.0.1/app-bundles-v1/android/SHA256SUMS.txt": {
+      "bytes": 199,
+      "sha256": "27e9f78c25e6e4ebc5306c2e0c3d4edad3e0a48d6270d76108fc009e511681da",
+      "verifiedUTC": "2026-11-21T20:37:41.400127+00:00"
+    },
+    "OpenBareMap/alps-tyrol-bavaria/2.0.1/app-bundles-v1/android/instructions.txt": {
+      "bytes": 4227,
+      "sha256": "683cb098235420ca69741724905374786c99111d839a00dfba6841cd31699fff",
+      "verifiedUTC": "2026-11-21T20:37:41.423153+00:00"
+    },
+    "OpenBareMap/alps-tyrol-bavaria/2.0.1/app-bundles-v1/android/manifest.json": {
+      "bytes": 1661,
+      "sha256": "72c5874d19c253fe74b1c0a73ac8cf9b86fdcd07605fdbd27e79e80c9cb7cfae",
+      "verifiedUTC": "2026-11-21T20:37:41.385097+00:00"
+    },
+    "OpenBareMap/alps-tyrol-bavaria/2.0.1/app-bundles-v1/ios/OpenBareMap-Alps-Tyrol-Bavaria-iOS-Bundle.zip": {
+      "bytes": 1279459213,
+      "sha256": "816b4ea2ab8ca5a989d481b8821328b8e21f3a9fb992e27fcd31a20dedc9923a",
+      "verifiedUTC": "2026-11-21T20:43:40.253306+00:00"
+    },
+    "OpenBareMap/alps-tyrol-bavaria/2.0.1/app-bundles-v1/ios/SHA256SUMS.txt": {
+      "bytes": 195,
+      "sha256": "85585bac2fbaf7af879488709f1903186b9493026d93e0a2db2f622bfea8215f",
+      "verifiedUTC": "2026-11-21T20:37:49.643999+00:00"
+    },
+    "OpenBareMap/alps-tyrol-bavaria/2.0.1/app-bundles-v1/ios/instructions.txt": {
+      "bytes": 3655,
+      "sha256": "8e889aef8185338fec83a1b3264501af1dceda93bdb75e4400c8949991a420ac",
+      "verifiedUTC": "2026-11-21T20:37:49.616746+00:00"
+    },
+    "OpenBareMap/alps-tyrol-bavaria/2.0.1/app-bundles-v1/ios/manifest.json": {
+      "bytes": 1748,
+      "sha256": "ce817f750841c290fe351ac2a96677d5be5a3740dc0d97a4a070077dcd2d8aa1",
+      "verifiedUTC": "2026-11-21T20:37:49.634339+00:00"
+    },
+    "OpenBareMap/alps-tyrol-bavaria/2.0.1/preview/alps-tyrol-bavaria/index.html": {
+      "bytes": 7389,
+      "sha256": "045e5848fe558fdf52380b609feaf6672fc89ddf48bf1e8de48ac63a671e2f64",
+      "verifiedUTC": "2026-11-21T20:36:55.541399+00:00"
+    },
+    "OpenBareMap/alps-tyrol-bavaria/2.0.1/preview/alps-tyrol-bavaria/legend.html": {
+      "bytes": 1547,
+      "sha256": "9b19820f1c9748b7be091458e1fba5943f86826185f0bd42e303507daf26f69e",
+      "verifiedUTC": "2026-11-21T20:36:55.574216+00:00"
+    },
+    "OpenBareMap/alps-tyrol-bavaria/2.0.1/preview/alps-tyrol-bavaria/region.json": {
+      "bytes": 4071,
+      "sha256": "73970d7d2eda6c9796d749f4120e25ced6c700178f54caa95cdde504acc021cb",
+      "verifiedUTC": "2026-11-21T20:36:55.681767+00:00"
+    },
+    "OpenBareMap/alps-tyrol-bavaria/2.0.1/preview/alps-tyrol-bavaria/style.json": {
+      "bytes": 2485817,
+      "sha256": "c6ef2f5badc253068fd1bf2a9bacce81ec3f5bafecfe09f69c9f4ba317c27bb6",
+      "verifiedUTC": "2026-11-21T20:36:55.667746+00:00"
+    },
+    "OpenBareMap/alps-tyrol-bavaria/2.0.1/preview/assets/LICENSE.txt": {
+      "bytes": 5984,
+      "sha256": "ee5fc05a0677eaf69601d2c7db0d9ecd6cc27c3abc1d0733bc9ed34707cf8ef2",
+      "verifiedUTC": "2026-11-21T20:36:55.578002+00:00"
+    },
+    "OpenBareMap/alps-tyrol-bavaria/2.0.1/preview/assets/PMTiles-LICENSE.txt": {
+      "bytes": 1713,
+      "sha256": "0371c38f338835f7fc13ed71176f3d92144e22c8b736a31cced57adbbeb647b3",
+      "verifiedUTC": "2026-11-21T20:36:55.596255+00:00"
+    },
+    "OpenBareMap/alps-tyrol-bavaria/2.0.1/preview/assets/fonts/LICENSE-APACHE-2.0.txt": {
+      "bytes": 11358,
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "verifiedUTC": "2026-11-21T20:36:55.594385+00:00"
+    },
+    "OpenBareMap/alps-tyrol-bavaria/2.0.1/preview/assets/fonts/Open Sans Bold/0-255.pbf": {
+      "bytes": 80025,
+      "sha256": "b3a5c066b416d69012009e3446ddd9544607ceb7355734922635521b6834c4d8",
+      "verifiedUTC": "2026-11-21T20:36:55.603900+00:00"
+    },
+    "OpenBareMap/alps-tyrol-bavaria/2.0.1/preview/assets/fonts/Open Sans Bold/256-511.pbf": {
+      "bytes": 70900,
+      "sha256": "910a9d831040b8accfc9d70cf235dd4822e59a24e0d5e1736cee5d501c3d17a7",
+      "verifiedUTC": "2026-11-21T20:37:02.703327+00:00"
+    },
+    "OpenBareMap/alps-tyrol-bavaria/2.0.1/preview/assets/fonts/Open Sans Bold/768-1023.pbf": {
+      "bytes": 36235,
+      "sha256": "bd7b11497f8cee930c1843e8fe546ce59214b7cfb5e53809d7eca2899ff509bc",
+      "verifiedUTC": "2026-11-21T20:37:02.673739+00:00"
+    },
+    "OpenBareMap/alps-tyrol-bavaria/2.0.1/preview/assets/fonts/Open Sans Bold/8192-8447.pbf": {
+      "bytes": 10494,
+      "sha256": "18c7dbc4a21e80172e15cdd0c3f53de9f48663f5f8193fe153bb763ac1d731d8",
+      "verifiedUTC": "2026-11-21T20:37:02.679000+00:00"
+    },
+    "OpenBareMap/alps-tyrol-bavaria/2.0.1/preview/assets/fonts/Open Sans Regular/0-255.pbf": {
+      "bytes": 74696,
+      "sha256": "0c8bdb284f2ad6f69bbb434a0208393f3a517bc8bf7ed1eccc4ac4791ebbcbfe",
+      "verifiedUTC": "2026-11-21T20:37:02.699707+00:00"
+    },
+    "OpenBareMap/alps-tyrol-bavaria/2.0.1/preview/assets/fonts/Open Sans Regular/256-511.pbf": {
+      "bytes": 66481,
+      "sha256": "9962ad38d064edbeb226a6c7dcf1d58e7678508a805f980d2fe81bb3178ba68a",
+      "verifiedUTC": "2026-11-21T20:37:02.670639+00:00"
+    },
+    "OpenBareMap/alps-tyrol-bavaria/2.0.1/preview/assets/fonts/Open Sans Regular/768-1023.pbf": {
+      "bytes": 33767,
+      "sha256": "fea6a1c8e1be55d9725520627b108d425723b2dc189b7dddfe56abd7d8238ea9",
+      "verifiedUTC": "2026-11-21T20:37:02.666672+00:00"
+    },
+    "OpenBareMap/alps-tyrol-bavaria/2.0.1/preview/assets/fonts/Open Sans Regular/8192-8447.pbf": {
+      "bytes": 9663,
+      "sha256": "a57611157f0597b267ef36eb07ce5a41dddcc3b2f3b5b85779108b7bb48b1cde",
+      "verifiedUTC": "2026-11-21T20:37:02.693362+00:00"
+    },
+    "OpenBareMap/alps-tyrol-bavaria/2.0.1/preview/assets/fonts/Open Sans Semibold/0-255.pbf": {
+      "bytes": 77571,
+      "sha256": "64da7011e07531351a249a3d26aad76e2f22e4e321e50833f742697b453e8365",
+      "verifiedUTC": "2026-11-21T20:37:02.681763+00:00"
+    },
+    "OpenBareMap/alps-tyrol-bavaria/2.0.1/preview/assets/fonts/Open Sans Semibold/256-511.pbf": {
+      "bytes": 68869,
+      "sha256": "78298bbd8198c117ccdffe66bf9bbf646fdc1210b7e1bf222f5a9b29b366d7a5",
+      "verifiedUTC": "2026-11-21T20:37:10.712728+00:00"
+    },
+    "OpenBareMap/alps-tyrol-bavaria/2.0.1/preview/assets/fonts/Open Sans Semibold/768-1023.pbf": {
+      "bytes": 35063,
+      "sha256": "35f7d1f9c9dfbc978635b7eb21bffb1113879182b2d518a7fbee6b825dd08274",
+      "verifiedUTC": "2026-11-21T20:37:10.759793+00:00"
+    },
+    "OpenBareMap/alps-tyrol-bavaria/2.0.1/preview/assets/fonts/Open Sans Semibold/8192-8447.pbf": {
+      "bytes": 10092,
+      "sha256": "ee80ee7ef05e77bea017bcb387d970d61823fc37fdb0a51c446ae322c5974990",
+      "verifiedUTC": "2026-11-21T20:37:10.749852+00:00"
+    },
+    "OpenBareMap/alps-tyrol-bavaria/2.0.1/preview/assets/legend.css": {
+      "bytes": 1513,
+      "sha256": "581de29c8d2e0511ce0f71abea5803fbd03cd42108ff5de4a9962bde2b258ad8",
+      "verifiedUTC": "2026-11-21T20:37:10.778783+00:00"
+    },
+    "OpenBareMap/alps-tyrol-bavaria/2.0.1/preview/assets/legend.js": {
+      "bytes": 2813,
+      "sha256": "9701a94a97d492fb7a13455c2f5ded61fc1f723b28f5939eaccdd39c86f167ff",
+      "verifiedUTC": "2026-11-21T20:37:10.800966+00:00"
+    },
+    "OpenBareMap/alps-tyrol-bavaria/2.0.1/preview/assets/legends/alps-tyrol-bavaria@2x.png": {
+      "bytes": 221838,
+      "sha256": "a0b3553a632dcd36653444a8b7ce747ba8ad8f225f02e53b5baa4407756c53e6",
+      "verifiedUTC": "2026-11-21T20:37:11.158366+00:00"
+    },
+    "OpenBareMap/alps-tyrol-bavaria/2.0.1/preview/assets/maplibre-gl.css": {
+      "bytes": 69422,
+      "sha256": "792ac997dcf6ae6f643eb4e2dee4630c85e7056526bd8fb85ffe83c67d6c41b4",
+      "verifiedUTC": "2026-11-21T20:37:10.832934+00:00"
+    },
+    "OpenBareMap/alps-tyrol-bavaria/2.0.1/preview/assets/maplibre-gl.js": {
+      "bytes": 939308,
+      "sha256": "b5a34e6930ff937dbbb9eec8892cffb80ba473cce88ae5ca8c4654432f5f0ebc",
+      "verifiedUTC": "2026-11-21T20:37:10.916994+00:00"
+    },
+    "OpenBareMap/alps-tyrol-bavaria/2.0.1/preview/assets/pmtiles.js": {
+      "bytes": 20229,
+      "sha256": "caf981bc46f6327ee7e65d5dc964d89d38a69f60edca2bd4c5c890c21b554c6c",
+      "verifiedUTC": "2026-11-21T20:37:18.035841+00:00"
+    },
+    "OpenBareMap/alps-tyrol-bavaria/2.0.1/preview/assets/preview.css": {
+      "bytes": 1912,
+      "sha256": "4a2bb515c9d6e871ff92a5a15cd189a0f49005fc43cac1831b3445626d95884c",
+      "verifiedUTC": "2026-11-21T20:37:18.080279+00:00"
+    },
+    "OpenBareMap/alps-tyrol-bavaria/2.0.1/preview/assets/preview.js": {
+      "bytes": 3363,
+      "sha256": "79ce19a0520ed6bd076b4a5a4330fdd9b00d8fca8001bf442cc78b2f0069682a",
+      "verifiedUTC": "2026-11-21T20:37:18.033921+00:00"
+    },
+    "OpenBareMap/alps-tyrol-bavaria/2.0.1/preview/assets/sprites/outdoors.json": {
+      "bytes": 760,
+      "sha256": "e777903184842b2b08726fcfa5c6ca654f5761ff8c796f0a04c1e66f5551038e",
+      "verifiedUTC": "2026-11-21T20:37:18.047012+00:00"
+    },
+    "OpenBareMap/alps-tyrol-bavaria/2.0.1/preview/assets/sprites/outdoors.png": {
+      "bytes": 3722,
+      "sha256": "32de87bc645686f95ef45737ba1331504079ba0de01f6d3d30a81bf41ed6133a",
+      "verifiedUTC": "2026-11-21T20:37:18.030949+00:00"
+    },
+    "OpenBareMap/alps-tyrol-bavaria/2.0.1/preview/assets/sprites/outdoors@2x.json": {
+      "bytes": 771,
+      "sha256": "ca6052d8d86d5f3693247ca9179fedbfbfc950370506a9a5ffc485d69d8c458c",
+      "verifiedUTC": "2026-11-21T20:37:18.059974+00:00"
+    },
+    "OpenBareMap/alps-tyrol-bavaria/2.0.1/preview/assets/sprites/outdoors@2x.png": {
+      "bytes": 7453,
+      "sha256": "c2230eae423ca94a4fe910a999bee38986231cf8bed2109c280657a30fec86cc",
+      "verifiedUTC": "2026-11-21T20:37:18.049331+00:00"
+    },
+    "OpenBareMap/alps-tyrol-bavaria/2.0.1/preview/assets/terrain-attribution.html": {
+      "bytes": 1374,
+      "sha256": "f21618c4efd4543d4a41b78a2636fda1b0fb6b9c3334534576ef440507362323",
+      "verifiedUTC": "2026-11-21T20:37:18.064233+00:00"
+    },
+    "OpenBareMap/alps-tyrol-bavaria/2.0.1/preview/assets/townlands.geojson": {
+      "bytes": 9403579,
+      "sha256": "ab3d1d254517904918fed1e93f614c2c0f2d6940b948844e39c63cdee31a1d62",
+      "verifiedUTC": "2026-11-21T20:37:32.736591+00:00"
+    },
+    "OpenBareMap/alps-tyrol-bavaria/2.0.1/preview/data/alps-tyrol-bavaria/basemap.pmtiles": {
+      "bytes": 678920632,
+      "sha256": "c37e73ca98bdb779974634e04f288032ad6ba0d797f219400da8c8a674ead289",
+      "verifiedUTC": "2026-11-21T20:41:55.887141+00:00"
+    },
+    "OpenBareMap/alps-tyrol-bavaria/2.0.1/preview/data/alps-tyrol-bavaria/coast.pmtiles": {
+      "bytes": 267458,
+      "sha256": "4709743705393728289ef2483c5b714bed18ff41fe100240dfd6ed3a7d505697",
+      "verifiedUTC": "2026-11-21T20:37:32.329350+00:00"
+    },
+    "OpenBareMap/alps-tyrol-bavaria/2.0.1/preview/data/alps-tyrol-bavaria/grid.pmtiles": {
+      "bytes": 7039016,
+      "sha256": "0e77680c725567e36e1b53835cb5c504c0fc636e798477917199819163c3e7c4",
+      "verifiedUTC": "2026-11-21T20:37:32.749902+00:00"
+    },
+    "OpenBareMap/alps-tyrol-bavaria/2.0.1/preview/data/alps-tyrol-bavaria/hillshade.pmtiles": {
+      "bytes": 126997822,
+      "sha256": "8a9f9a66fa6dd2a571d6426316414ef39c478ff047616347cbefbe823118b8c4",
+      "verifiedUTC": "2026-11-21T20:40:13.141939+00:00"
+    },
+    "OpenBareMap/alps-tyrol-bavaria/2.0.1/preview/data/alps-tyrol-bavaria/topography.pmtiles": {
+      "bytes": 417598317,
+      "sha256": "9f4e30b74979d5e1c1c1dcb8230e7cd7568eb39e5981ec4d38ada7d030fc6b5a",
+      "verifiedUTC": "2026-11-21T20:40:38.602670+00:00"
+    },
+    "OpenBareMap/alps-tyrol-bavaria/2.0.1/preview/manifest.json": {
+      "bytes": 1643,
+      "sha256": "43c9d06d40e023281f9e6ba8ed23fa62e1a03db7a7bd50c8a3d9b0d66f3510fa",
+      "verifiedUTC": "2026-11-21T20:37:31.752154+00:00"
+    },
+    "OpenBareMap/alps-west/2.0.1/app-bundles-v1/android/OpenBareMap-Alps-West-Android-Bundle.zip": {
+      "bytes": 1653979525,
+      "sha256": "b52677dd6a69abfbbcd1481bfa0a35d22899563714581a7aa63a5a460b719f97",
+      "verifiedUTC": "2026-11-21T20:24:57.154495+00:00"
+    },
+    "OpenBareMap/alps-west/2.0.1/app-bundles-v1/android/SHA256SUMS.txt": {
+      "bytes": 190,
+      "sha256": "e7b9bc0403cc6ad446f96271c690f1aea661b2505eabefef929ef1e7d6fb6359",
+      "verifiedUTC": "2026-11-21T20:15:07.436625+00:00"
+    },
+    "OpenBareMap/alps-west/2.0.1/app-bundles-v1/android/instructions.txt": {
+      "bytes": 4213,
+      "sha256": "e13f1178c3e6a643d7c9a2624d37f17b842092a02314c061488d44fc59ff4a97",
+      "verifiedUTC": "2026-11-21T20:15:07.437283+00:00"
+    },
+    "OpenBareMap/alps-west/2.0.1/app-bundles-v1/android/manifest.json": {
+      "bytes": 1598,
+      "sha256": "f11303d1a803cc05969033da54753af37774cbd2df45f183edda20d14c857f3b",
+      "verifiedUTC": "2026-11-21T20:15:07.444022+00:00"
+    },
+    "OpenBareMap/alps-west/2.0.1/app-bundles-v1/ios/OpenBareMap-Alps-West-iOS-Bundle.zip": {
+      "bytes": 1653979931,
+      "sha256": "7bde33e445fa983476b571b4fc2c3ba18b2bb30e2b3a60e6bde19c89b3afc728",
+      "verifiedUTC": "2026-11-21T20:24:01.603554+00:00"
+    },
+    "OpenBareMap/alps-west/2.0.1/app-bundles-v1/ios/SHA256SUMS.txt": {
+      "bytes": 186,
+      "sha256": "9ae85d7c07c7a6334ca3e78283581fa3d96be3c033d1afbb16b0c2acc28d1236",
+      "verifiedUTC": "2026-11-21T20:15:17.014297+00:00"
+    },
+    "OpenBareMap/alps-west/2.0.1/app-bundles-v1/ios/instructions.txt": {
+      "bytes": 3641,
+      "sha256": "01c2b5b9b7827ee69c99a3f33f97ee4f866ef311a51f1f8bea05e9995aaae06b",
+      "verifiedUTC": "2026-11-21T20:15:16.960620+00:00"
+    },
+    "OpenBareMap/alps-west/2.0.1/app-bundles-v1/ios/manifest.json": {
+      "bytes": 1685,
+      "sha256": "dd46c012e485e803ad5613c502324c09bda5afe413984554bebfc498d93dd300",
+      "verifiedUTC": "2026-11-21T20:15:17.003617+00:00"
+    },
+    "OpenBareMap/alps-west/2.0.1/preview/alps-west/index.html": {
+      "bytes": 7275,
+      "sha256": "9f2de8039f8d80e39cfbb2f109c86d8f4e72bd64823a39e39189f4621de6e20e",
+      "verifiedUTC": "2026-11-21T20:14:24.728795+00:00"
+    },
+    "OpenBareMap/alps-west/2.0.1/preview/alps-west/legend.html": {
+      "bytes": 1460,
+      "sha256": "6a07740ee1063881127448f5c57731714414ce636efe84998408aa6ddfc9f162",
+      "verifiedUTC": "2026-11-21T20:14:24.761130+00:00"
+    },
+    "OpenBareMap/alps-west/2.0.1/preview/alps-west/region.json": {
+      "bytes": 4166,
+      "sha256": "e85c59985e30b09f97d20c72339f9ecebec178047a92d7b6845c376c2e9688bf",
+      "verifiedUTC": "2026-11-21T20:14:24.732359+00:00"
+    },
+    "OpenBareMap/alps-west/2.0.1/preview/alps-west/style.json": {
+      "bytes": 2485685,
+      "sha256": "7338e4bc251648f248d78b94f43e826f2cf0ea6a1e8e548d3338ff49c92a4cf2",
+      "verifiedUTC": "2026-11-21T20:14:24.843714+00:00"
+    },
+    "OpenBareMap/alps-west/2.0.1/preview/assets/LICENSE.txt": {
+      "bytes": 5984,
+      "sha256": "ee5fc05a0677eaf69601d2c7db0d9ecd6cc27c3abc1d0733bc9ed34707cf8ef2",
+      "verifiedUTC": "2026-11-21T20:14:24.769471+00:00"
+    },
+    "OpenBareMap/alps-west/2.0.1/preview/assets/PMTiles-LICENSE.txt": {
+      "bytes": 1713,
+      "sha256": "0371c38f338835f7fc13ed71176f3d92144e22c8b736a31cced57adbbeb647b3",
+      "verifiedUTC": "2026-11-21T20:14:24.724648+00:00"
+    },
+    "OpenBareMap/alps-west/2.0.1/preview/assets/fonts/LICENSE-APACHE-2.0.txt": {
+      "bytes": 11358,
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "verifiedUTC": "2026-11-21T20:14:24.748100+00:00"
+    },
+    "OpenBareMap/alps-west/2.0.1/preview/assets/fonts/Open Sans Bold/0-255.pbf": {
+      "bytes": 80025,
+      "sha256": "b3a5c066b416d69012009e3446ddd9544607ceb7355734922635521b6834c4d8",
+      "verifiedUTC": "2026-11-21T20:14:24.751132+00:00"
+    },
+    "OpenBareMap/alps-west/2.0.1/preview/assets/fonts/Open Sans Bold/256-511.pbf": {
+      "bytes": 70900,
+      "sha256": "910a9d831040b8accfc9d70cf235dd4822e59a24e0d5e1736cee5d501c3d17a7",
+      "verifiedUTC": "2026-11-21T20:14:33.536643+00:00"
+    },
+    "OpenBareMap/alps-west/2.0.1/preview/assets/fonts/Open Sans Bold/768-1023.pbf": {
+      "bytes": 36235,
+      "sha256": "bd7b11497f8cee930c1843e8fe546ce59214b7cfb5e53809d7eca2899ff509bc",
+      "verifiedUTC": "2026-11-21T20:14:33.488921+00:00"
+    },
+    "OpenBareMap/alps-west/2.0.1/preview/assets/fonts/Open Sans Bold/8192-8447.pbf": {
+      "bytes": 10494,
+      "sha256": "18c7dbc4a21e80172e15cdd0c3f53de9f48663f5f8193fe153bb763ac1d731d8",
+      "verifiedUTC": "2026-11-21T20:14:33.553679+00:00"
+    },
+    "OpenBareMap/alps-west/2.0.1/preview/assets/fonts/Open Sans Regular/0-255.pbf": {
+      "bytes": 74696,
+      "sha256": "0c8bdb284f2ad6f69bbb434a0208393f3a517bc8bf7ed1eccc4ac4791ebbcbfe",
+      "verifiedUTC": "2026-11-21T20:14:33.506925+00:00"
+    },
+    "OpenBareMap/alps-west/2.0.1/preview/assets/fonts/Open Sans Regular/256-511.pbf": {
+      "bytes": 66481,
+      "sha256": "9962ad38d064edbeb226a6c7dcf1d58e7678508a805f980d2fe81bb3178ba68a",
+      "verifiedUTC": "2026-11-21T20:14:33.518874+00:00"
+    },
+    "OpenBareMap/alps-west/2.0.1/preview/assets/fonts/Open Sans Regular/768-1023.pbf": {
+      "bytes": 33767,
+      "sha256": "fea6a1c8e1be55d9725520627b108d425723b2dc189b7dddfe56abd7d8238ea9",
+      "verifiedUTC": "2026-11-21T20:14:33.591617+00:00"
+    },
+    "OpenBareMap/alps-west/2.0.1/preview/assets/fonts/Open Sans Regular/8192-8447.pbf": {
+      "bytes": 9663,
+      "sha256": "a57611157f0597b267ef36eb07ce5a41dddcc3b2f3b5b85779108b7bb48b1cde",
+      "verifiedUTC": "2026-11-21T20:14:33.568813+00:00"
+    },
+    "OpenBareMap/alps-west/2.0.1/preview/assets/fonts/Open Sans Semibold/0-255.pbf": {
+      "bytes": 77571,
+      "sha256": "64da7011e07531351a249a3d26aad76e2f22e4e321e50833f742697b453e8365",
+      "verifiedUTC": "2026-11-21T20:14:33.551234+00:00"
+    },
+    "OpenBareMap/alps-west/2.0.1/preview/assets/fonts/Open Sans Semibold/256-511.pbf": {
+      "bytes": 68869,
+      "sha256": "78298bbd8198c117ccdffe66bf9bbf646fdc1210b7e1bf222f5a9b29b366d7a5",
+      "verifiedUTC": "2026-11-21T20:14:40.985717+00:00"
+    },
+    "OpenBareMap/alps-west/2.0.1/preview/assets/fonts/Open Sans Semibold/768-1023.pbf": {
+      "bytes": 35063,
+      "sha256": "35f7d1f9c9dfbc978635b7eb21bffb1113879182b2d518a7fbee6b825dd08274",
+      "verifiedUTC": "2026-11-21T20:14:41.014987+00:00"
+    },
+    "OpenBareMap/alps-west/2.0.1/preview/assets/fonts/Open Sans Semibold/8192-8447.pbf": {
+      "bytes": 10092,
+      "sha256": "ee80ee7ef05e77bea017bcb387d970d61823fc37fdb0a51c446ae322c5974990",
+      "verifiedUTC": "2026-11-21T20:14:41.023379+00:00"
+    },
+    "OpenBareMap/alps-west/2.0.1/preview/assets/legend.css": {
+      "bytes": 1513,
+      "sha256": "581de29c8d2e0511ce0f71abea5803fbd03cd42108ff5de4a9962bde2b258ad8",
+      "verifiedUTC": "2026-11-21T20:14:41.128104+00:00"
+    },
+    "OpenBareMap/alps-west/2.0.1/preview/assets/legend.js": {
+      "bytes": 2813,
+      "sha256": "9701a94a97d492fb7a13455c2f5ded61fc1f723b28f5939eaccdd39c86f167ff",
+      "verifiedUTC": "2026-11-21T20:14:41.057573+00:00"
+    },
+    "OpenBareMap/alps-west/2.0.1/preview/assets/legends/alps-west@2x.png": {
+      "bytes": 221838,
+      "sha256": "a0b3553a632dcd36653444a8b7ce747ba8ad8f225f02e53b5baa4407756c53e6",
+      "verifiedUTC": "2026-11-21T20:14:41.181075+00:00"
+    },
+    "OpenBareMap/alps-west/2.0.1/preview/assets/maplibre-gl.css": {
+      "bytes": 69422,
+      "sha256": "792ac997dcf6ae6f643eb4e2dee4630c85e7056526bd8fb85ffe83c67d6c41b4",
+      "verifiedUTC": "2026-11-21T20:14:41.123217+00:00"
+    },
+    "OpenBareMap/alps-west/2.0.1/preview/assets/maplibre-gl.js": {
+      "bytes": 939308,
+      "sha256": "b5a34e6930ff937dbbb9eec8892cffb80ba473cce88ae5ca8c4654432f5f0ebc",
+      "verifiedUTC": "2026-11-21T20:14:41.145562+00:00"
+    },
+    "OpenBareMap/alps-west/2.0.1/preview/assets/pmtiles.js": {
+      "bytes": 20229,
+      "sha256": "caf981bc46f6327ee7e65d5dc964d89d38a69f60edca2bd4c5c890c21b554c6c",
+      "verifiedUTC": "2026-11-21T20:14:48.987445+00:00"
+    },
+    "OpenBareMap/alps-west/2.0.1/preview/assets/preview.css": {
+      "bytes": 1912,
+      "sha256": "4a2bb515c9d6e871ff92a5a15cd189a0f49005fc43cac1831b3445626d95884c",
+      "verifiedUTC": "2026-11-21T20:14:48.888269+00:00"
+    },
+    "OpenBareMap/alps-west/2.0.1/preview/assets/preview.js": {
+      "bytes": 3363,
+      "sha256": "79ce19a0520ed6bd076b4a5a4330fdd9b00d8fca8001bf442cc78b2f0069682a",
+      "verifiedUTC": "2026-11-21T20:14:48.902052+00:00"
+    },
+    "OpenBareMap/alps-west/2.0.1/preview/assets/sprites/outdoors.json": {
+      "bytes": 760,
+      "sha256": "e777903184842b2b08726fcfa5c6ca654f5761ff8c796f0a04c1e66f5551038e",
+      "verifiedUTC": "2026-11-21T20:14:48.880459+00:00"
+    },
+    "OpenBareMap/alps-west/2.0.1/preview/assets/sprites/outdoors.png": {
+      "bytes": 3722,
+      "sha256": "32de87bc645686f95ef45737ba1331504079ba0de01f6d3d30a81bf41ed6133a",
+      "verifiedUTC": "2026-11-21T20:14:48.910833+00:00"
+    },
+    "OpenBareMap/alps-west/2.0.1/preview/assets/sprites/outdoors@2x.json": {
+      "bytes": 771,
+      "sha256": "ca6052d8d86d5f3693247ca9179fedbfbfc950370506a9a5ffc485d69d8c458c",
+      "verifiedUTC": "2026-11-21T20:14:48.838650+00:00"
+    },
+    "OpenBareMap/alps-west/2.0.1/preview/assets/sprites/outdoors@2x.png": {
+      "bytes": 7453,
+      "sha256": "c2230eae423ca94a4fe910a999bee38986231cf8bed2109c280657a30fec86cc",
+      "verifiedUTC": "2026-11-21T20:14:48.906067+00:00"
+    },
+    "OpenBareMap/alps-west/2.0.1/preview/assets/terrain-attribution.html": {
+      "bytes": 1374,
+      "sha256": "f21618c4efd4543d4a41b78a2636fda1b0fb6b9c3334534576ef440507362323",
+      "verifiedUTC": "2026-11-21T20:14:48.835135+00:00"
+    },
+    "OpenBareMap/alps-west/2.0.1/preview/assets/townlands.geojson": {
+      "bytes": 9403579,
+      "sha256": "ab3d1d254517904918fed1e93f614c2c0f2d6940b948844e39c63cdee31a1d62",
+      "verifiedUTC": "2026-11-21T20:14:58.430510+00:00"
+    },
+    "OpenBareMap/alps-west/2.0.1/preview/data/alps-west/basemap.pmtiles": {
+      "bytes": 903822457,
+      "sha256": "8462a69341e7481d2461c0358a175938b4ac5c9e779a3ceeaf32bc30a0ce6a34",
+      "verifiedUTC": "2026-11-21T20:20:57.002102+00:00"
+    },
+    "OpenBareMap/alps-west/2.0.1/preview/data/alps-west/coast.pmtiles": {
+      "bytes": 688604,
+      "sha256": "d27dee605c823f4072a0b18230939d695ae53f81375826df697d24f5e27c4f62",
+      "verifiedUTC": "2026-11-21T20:14:57.537254+00:00"
+    },
+    "OpenBareMap/alps-west/2.0.1/preview/data/alps-west/grid.pmtiles": {
+      "bytes": 10369093,
+      "sha256": "97bcf585bbd26dd05de70fd3645bf121cea37169acd0034ce9aa4ff9e1c6481f",
+      "verifiedUTC": "2026-11-21T20:14:58.437899+00:00"
+    },
+    "OpenBareMap/alps-west/2.0.1/preview/data/alps-west/hillshade.pmtiles": {
+      "bytes": 163552918,
+      "sha256": "dd4d45ebb84d58e057d336c18dc7d0038e0d8637d67dd93a3418519bf5044610",
+      "verifiedUTC": "2026-11-21T20:19:03.419978+00:00"
+    },
+    "OpenBareMap/alps-west/2.0.1/preview/data/alps-west/topography.pmtiles": {
+      "bytes": 516078686,
+      "sha256": "b0009a2b7cc80191e5247b0d26b0b7df1dd43d5975b00f938c0b7d592d7bdbe1",
+      "verifiedUTC": "2026-11-21T20:18:57.107369+00:00"
+    },
+    "OpenBareMap/alps-west/2.0.1/preview/manifest.json": {
+      "bytes": 1626,
+      "sha256": "7ddb9958470a52c2c645b313c310f839dc4631dde86609438c2aff791eef46f8",
+      "verifiedUTC": "2026-11-21T20:14:57.099667+00:00"
+    },
+    "OpenBareMap/app-bundles-v1/catalog.json": {
+      "bytes": 141054,
+      "sha256": "fd0130aa0ac0d466ba174975d472cdb0d422aedf9a33362b38c3e3e7c20e8308",
+      "verifiedUTC": "2026-11-21T22:24:35.425691+00:00"
+    },
+    "OpenBareMap/dolomites/2.0.1/app-bundles-v1/android/OpenBareMap-Dolomites-Android-Bundle.zip": {
+      "bytes": 855896658,
+      "sha256": "1ccaf09a1aeb3bda85d5a635a50a44b96170962ca0016b9f8d8cf306a2191ca3",
+      "verifiedUTC": "2026-11-21T21:03:50.265945+00:00"
+    },
+    "OpenBareMap/dolomites/2.0.1/app-bundles-v1/android/SHA256SUMS.txt": {
+      "bytes": 190,
+      "sha256": "3907388a21d46fd2b7f9d01ccbf4b1c8debce4bc3c8b71ed4f9b39e03937f0a1",
+      "verifiedUTC": "2026-11-21T20:58:05.676140+00:00"
+    },
+    "OpenBareMap/dolomites/2.0.1/app-bundles-v1/android/instructions.txt": {
+      "bytes": 4220,
+      "sha256": "6e9fd11022b4bab239439251148cb928a469e13852367d58a158e0e09f22bbba",
+      "verifiedUTC": "2026-11-21T20:57:58.107059+00:00"
+    },
+    "OpenBareMap/dolomites/2.0.1/app-bundles-v1/android/manifest.json": {
+      "bytes": 1597,
+      "sha256": "10113ca0b31bcc03095b4c5ed5f51271604f947389719d5b413bba33b6ae67a8",
+      "verifiedUTC": "2026-11-21T20:58:13.152341+00:00"
+    },
+    "OpenBareMap/dolomites/2.0.1/app-bundles-v1/ios/OpenBareMap-Dolomites-iOS-Bundle.zip": {
+      "bytes": 855897111,
+      "sha256": "f144e5522d52d2f60091950ffa7093fa8e778c9e428dfec4cfd495e1f4c54fcf",
+      "verifiedUTC": "2026-11-21T21:05:20.370681+00:00"
+    },
+    "OpenBareMap/dolomites/2.0.1/app-bundles-v1/ios/SHA256SUMS.txt": {
+      "bytes": 186,
+      "sha256": "dc47db2e5806756e44518c8dc3318bab0b0199097d315e36efaf7f1a2490d4f5",
+      "verifiedUTC": "2026-11-21T20:58:46.613055+00:00"
+    },
+    "OpenBareMap/dolomites/2.0.1/app-bundles-v1/ios/instructions.txt": {
+      "bytes": 3648,
+      "sha256": "b5c167e6981a720fd4f18def9fbac25d7239d5647731bc509d73618cdd7190d1",
+      "verifiedUTC": "2026-11-21T20:58:38.461877+00:00"
+    },
+    "OpenBareMap/dolomites/2.0.1/app-bundles-v1/ios/manifest.json": {
+      "bytes": 1684,
+      "sha256": "90e181f4216de26feecf10eac89fcca311515ffeb3578b213ff3c88ad45eb610",
+      "verifiedUTC": "2026-11-21T20:58:54.475862+00:00"
+    },
+    "OpenBareMap/dolomites/2.0.1/preview/assets/LICENSE.txt": {
+      "bytes": 5984,
+      "sha256": "ee5fc05a0677eaf69601d2c7db0d9ecd6cc27c3abc1d0733bc9ed34707cf8ef2",
+      "verifiedUTC": "2026-11-21T20:52:46.770439+00:00"
+    },
+    "OpenBareMap/dolomites/2.0.1/preview/assets/PMTiles-LICENSE.txt": {
+      "bytes": 1713,
+      "sha256": "0371c38f338835f7fc13ed71176f3d92144e22c8b736a31cced57adbbeb647b3",
+      "verifiedUTC": "2026-11-21T20:52:46.788658+00:00"
+    },
+    "OpenBareMap/dolomites/2.0.1/preview/assets/fonts/LICENSE-APACHE-2.0.txt": {
+      "bytes": 11358,
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "verifiedUTC": "2026-11-21T20:52:56.199571+00:00"
+    },
+    "OpenBareMap/dolomites/2.0.1/preview/assets/fonts/Open Sans Bold/0-255.pbf": {
+      "bytes": 80025,
+      "sha256": "b3a5c066b416d69012009e3446ddd9544607ceb7355734922635521b6834c4d8",
+      "verifiedUTC": "2026-11-21T20:52:56.324157+00:00"
+    },
+    "OpenBareMap/dolomites/2.0.1/preview/assets/fonts/Open Sans Bold/256-511.pbf": {
+      "bytes": 70900,
+      "sha256": "910a9d831040b8accfc9d70cf235dd4822e59a24e0d5e1736cee5d501c3d17a7",
+      "verifiedUTC": "2026-11-21T20:53:05.976412+00:00"
+    },
+    "OpenBareMap/dolomites/2.0.1/preview/assets/fonts/Open Sans Bold/768-1023.pbf": {
+      "bytes": 36235,
+      "sha256": "bd7b11497f8cee930c1843e8fe546ce59214b7cfb5e53809d7eca2899ff509bc",
+      "verifiedUTC": "2026-11-21T20:53:05.896106+00:00"
+    },
+    "OpenBareMap/dolomites/2.0.1/preview/assets/fonts/Open Sans Bold/8192-8447.pbf": {
+      "bytes": 10494,
+      "sha256": "18c7dbc4a21e80172e15cdd0c3f53de9f48663f5f8193fe153bb763ac1d731d8",
+      "verifiedUTC": "2026-11-21T20:53:16.395973+00:00"
+    },
+    "OpenBareMap/dolomites/2.0.1/preview/assets/fonts/Open Sans Regular/0-255.pbf": {
+      "bytes": 74696,
+      "sha256": "0c8bdb284f2ad6f69bbb434a0208393f3a517bc8bf7ed1eccc4ac4791ebbcbfe",
+      "verifiedUTC": "2026-11-21T20:53:16.488364+00:00"
+    },
+    "OpenBareMap/dolomites/2.0.1/preview/assets/fonts/Open Sans Regular/256-511.pbf": {
+      "bytes": 66481,
+      "sha256": "9962ad38d064edbeb226a6c7dcf1d58e7678508a805f980d2fe81bb3178ba68a",
+      "verifiedUTC": "2026-11-21T20:53:25.371026+00:00"
+    },
+    "OpenBareMap/dolomites/2.0.1/preview/assets/fonts/Open Sans Regular/768-1023.pbf": {
+      "bytes": 33767,
+      "sha256": "fea6a1c8e1be55d9725520627b108d425723b2dc189b7dddfe56abd7d8238ea9",
+      "verifiedUTC": "2026-11-21T20:53:25.321754+00:00"
+    },
+    "OpenBareMap/dolomites/2.0.1/preview/assets/fonts/Open Sans Regular/8192-8447.pbf": {
+      "bytes": 9663,
+      "sha256": "a57611157f0597b267ef36eb07ce5a41dddcc3b2f3b5b85779108b7bb48b1cde",
+      "verifiedUTC": "2026-11-21T20:53:34.407313+00:00"
+    },
+    "OpenBareMap/dolomites/2.0.1/preview/assets/fonts/Open Sans Semibold/0-255.pbf": {
+      "bytes": 77571,
+      "sha256": "64da7011e07531351a249a3d26aad76e2f22e4e321e50833f742697b453e8365",
+      "verifiedUTC": "2026-11-21T20:53:34.546660+00:00"
+    },
+    "OpenBareMap/dolomites/2.0.1/preview/assets/fonts/Open Sans Semibold/256-511.pbf": {
+      "bytes": 68869,
+      "sha256": "78298bbd8198c117ccdffe66bf9bbf646fdc1210b7e1bf222f5a9b29b366d7a5",
+      "verifiedUTC": "2026-11-21T20:53:43.857255+00:00"
+    },
+    "OpenBareMap/dolomites/2.0.1/preview/assets/fonts/Open Sans Semibold/768-1023.pbf": {
+      "bytes": 35063,
+      "sha256": "35f7d1f9c9dfbc978635b7eb21bffb1113879182b2d518a7fbee6b825dd08274",
+      "verifiedUTC": "2026-11-21T20:53:43.733652+00:00"
+    },
+    "OpenBareMap/dolomites/2.0.1/preview/assets/fonts/Open Sans Semibold/8192-8447.pbf": {
+      "bytes": 10092,
+      "sha256": "ee80ee7ef05e77bea017bcb387d970d61823fc37fdb0a51c446ae322c5974990",
+      "verifiedUTC": "2026-11-21T20:53:53.533500+00:00"
+    },
+    "OpenBareMap/dolomites/2.0.1/preview/assets/legend.css": {
+      "bytes": 1513,
+      "sha256": "581de29c8d2e0511ce0f71abea5803fbd03cd42108ff5de4a9962bde2b258ad8",
+      "verifiedUTC": "2026-11-21T20:53:53.286710+00:00"
+    },
+    "OpenBareMap/dolomites/2.0.1/preview/assets/legend.js": {
+      "bytes": 2813,
+      "sha256": "9701a94a97d492fb7a13455c2f5ded61fc1f723b28f5939eaccdd39c86f167ff",
+      "verifiedUTC": "2026-11-21T20:54:01.982687+00:00"
+    },
+    "OpenBareMap/dolomites/2.0.1/preview/assets/legends/dolomites@2x.png": {
+      "bytes": 221838,
+      "sha256": "a0b3553a632dcd36653444a8b7ce747ba8ad8f225f02e53b5baa4407756c53e6",
+      "verifiedUTC": "2026-11-21T20:54:02.205537+00:00"
+    },
+    "OpenBareMap/dolomites/2.0.1/preview/assets/maplibre-gl.css": {
+      "bytes": 69422,
+      "sha256": "792ac997dcf6ae6f643eb4e2dee4630c85e7056526bd8fb85ffe83c67d6c41b4",
+      "verifiedUTC": "2026-11-21T20:54:11.080430+00:00"
+    },
+    "OpenBareMap/dolomites/2.0.1/preview/assets/maplibre-gl.js": {
+      "bytes": 939308,
+      "sha256": "b5a34e6930ff937dbbb9eec8892cffb80ba473cce88ae5ca8c4654432f5f0ebc",
+      "verifiedUTC": "2026-11-21T20:54:11.533228+00:00"
+    },
+    "OpenBareMap/dolomites/2.0.1/preview/assets/pmtiles.js": {
+      "bytes": 20229,
+      "sha256": "caf981bc46f6327ee7e65d5dc964d89d38a69f60edca2bd4c5c890c21b554c6c",
+      "verifiedUTC": "2026-11-21T20:54:20.436199+00:00"
+    },
+    "OpenBareMap/dolomites/2.0.1/preview/assets/preview.css": {
+      "bytes": 1912,
+      "sha256": "4a2bb515c9d6e871ff92a5a15cd189a0f49005fc43cac1831b3445626d95884c",
+      "verifiedUTC": "2026-11-21T20:54:20.425180+00:00"
+    },
+    "OpenBareMap/dolomites/2.0.1/preview/assets/preview.js": {
+      "bytes": 3363,
+      "sha256": "79ce19a0520ed6bd076b4a5a4330fdd9b00d8fca8001bf442cc78b2f0069682a",
+      "verifiedUTC": "2026-11-21T20:54:31.308858+00:00"
+    },
+    "OpenBareMap/dolomites/2.0.1/preview/assets/sprites/outdoors.json": {
+      "bytes": 760,
+      "sha256": "e777903184842b2b08726fcfa5c6ca654f5761ff8c796f0a04c1e66f5551038e",
+      "verifiedUTC": "2026-11-21T20:54:31.273309+00:00"
+    },
+    "OpenBareMap/dolomites/2.0.1/preview/assets/sprites/outdoors.png": {
+      "bytes": 3722,
+      "sha256": "32de87bc645686f95ef45737ba1331504079ba0de01f6d3d30a81bf41ed6133a",
+      "verifiedUTC": "2026-11-21T20:54:39.666753+00:00"
+    },
+    "OpenBareMap/dolomites/2.0.1/preview/assets/sprites/outdoors@2x.json": {
+      "bytes": 771,
+      "sha256": "ca6052d8d86d5f3693247ca9179fedbfbfc950370506a9a5ffc485d69d8c458c",
+      "verifiedUTC": "2026-11-21T20:54:39.630732+00:00"
+    },
+    "OpenBareMap/dolomites/2.0.1/preview/assets/sprites/outdoors@2x.png": {
+      "bytes": 7453,
+      "sha256": "c2230eae423ca94a4fe910a999bee38986231cf8bed2109c280657a30fec86cc",
+      "verifiedUTC": "2026-11-21T20:54:48.582602+00:00"
+    },
+    "OpenBareMap/dolomites/2.0.1/preview/assets/terrain-attribution.html": {
+      "bytes": 13815,
+      "sha256": "b3863a283cb2c9f55ae3186b4ca01611f049212a02ae12c0d3dbf6c6833459c5",
+      "verifiedUTC": "2026-11-21T20:54:48.508452+00:00"
+    },
+    "OpenBareMap/dolomites/2.0.1/preview/assets/townlands.geojson": {
+      "bytes": 9403579,
+      "sha256": "ab3d1d254517904918fed1e93f614c2c0f2d6940b948844e39c63cdee31a1d62",
+      "verifiedUTC": "2026-11-21T20:55:10.304777+00:00"
+    },
+    "OpenBareMap/dolomites/2.0.1/preview/data/dolomites/basemap.pmtiles": {
+      "bytes": 416683432,
+      "sha256": "21598273100fb20f3d37f45b6d22c99e0a2faa2b651142f3f93b0fc8185c4b8f",
+      "verifiedUTC": "2026-11-21T20:58:31.255459+00:00"
+    },
+    "OpenBareMap/dolomites/2.0.1/preview/data/dolomites/coast.pmtiles": {
+      "bytes": 1993961,
+      "sha256": "dcaa15c175c2d4317352bbff737279de730a40627f7e1288d564dffe465da254",
+      "verifiedUTC": "2026-11-21T20:55:21.028585+00:00"
+    },
+    "OpenBareMap/dolomites/2.0.1/preview/data/dolomites/grid.pmtiles": {
+      "bytes": 3979690,
+      "sha256": "e47e3a34ab6d675a99ff7d1d944ce36185112839d2a9fcdc0f9977e37d63f484",
+      "verifiedUTC": "2026-11-21T20:55:29.655532+00:00"
+    },
+    "OpenBareMap/dolomites/2.0.1/preview/data/dolomites/hillshade.pmtiles": {
+      "bytes": 136364835,
+      "sha256": "639dcf12828207623914bf57e3f8fcacc57df6f3a6ee1ebef283db8622c76657",
+      "verifiedUTC": "2026-11-21T20:59:28.065575+00:00"
+    },
+    "OpenBareMap/dolomites/2.0.1/preview/data/dolomites/topography.pmtiles": {
+      "bytes": 253954178,
+      "sha256": "948fdece81067c2ea90d7637c0400f635ec8567d2031658744e4708e8ba79cca",
+      "verifiedUTC": "2026-11-21T20:59:08.384758+00:00"
+    },
+    "OpenBareMap/dolomites/2.0.1/preview/dolomites/index.html": {
+      "bytes": 7310,
+      "sha256": "608608553891a900e2af10c4eff7c1489c6286e49da4aedb8ccd78c5582ecbcc",
+      "verifiedUTC": "2026-11-21T20:56:30.860572+00:00"
+    },
+    "OpenBareMap/dolomites/2.0.1/preview/dolomites/legend.html": {
+      "bytes": 1480,
+      "sha256": "b831b94adcd834c243cd0174b65e277e4fc675b3db447a45681c246b68c53c26",
+      "verifiedUTC": "2026-11-21T20:56:41.214183+00:00"
+    },
+    "OpenBareMap/dolomites/2.0.1/preview/dolomites/region.json": {
+      "bytes": 3084,
+      "sha256": "99e1f32df996a13ec07d8250693061476032f1d5e06cc0db0bfc74b4d8ad24e2",
+      "verifiedUTC": "2026-11-21T20:56:50.496042+00:00"
+    },
+    "OpenBareMap/dolomites/2.0.1/preview/dolomites/style.json": {
+      "bytes": 2485684,
+      "sha256": "1903d72be2d62a77c132ad0fdf771eeff22e6165183e46e40a37d7837f9db611",
+      "verifiedUTC": "2026-11-21T20:57:02.814308+00:00"
+    },
+    "OpenBareMap/dolomites/2.0.1/preview/manifest.json": {
+      "bytes": 1628,
+      "sha256": "e06009cdfda7a40bbe0369e2ee3e002e71e20e203321a011d54f6aeb73f48e9e",
+      "verifiedUTC": "2026-11-21T20:57:15.803232+00:00"
+    },
+    "OpenBareMap/norway-central/2.0.1/app-bundles-v1/android/OpenBareMap-Norway-Central-Android-Bundle.zip": {
+      "bytes": 1991068699,
+      "sha256": "8b0f33098af70d62c0ed6850cb2b86200ee3be3e021975b1b610ec524aecbe84",
+      "verifiedUTC": "2026-11-21T21:21:24.147570+00:00"
+    },
+    "OpenBareMap/norway-central/2.0.1/app-bundles-v1/android/SHA256SUMS.txt": {
+      "bytes": 195,
+      "sha256": "437fc548a299a066dd95ffc23bfd6f0c7de34d6b9989f0627b3e8cc82e06377d",
+      "verifiedUTC": "2026-11-21T21:11:49.025128+00:00"
+    },
+    "OpenBareMap/norway-central/2.0.1/app-bundles-v1/android/instructions.txt": {
+      "bytes": 4213,
+      "sha256": "589e42136935ed04539d42480cc3d22d36e8ac346538f0cbf93f92ace48294b7",
+      "verifiedUTC": "2026-11-21T21:11:45.361035+00:00"
+    },
+    "OpenBareMap/norway-central/2.0.1/app-bundles-v1/android/manifest.json": {
+      "bytes": 1633,
+      "sha256": "cc99626d55058806474cdd039bfd3b73dca7345f4abdcdfeea9acd395c9b9136",
+      "verifiedUTC": "2026-11-21T21:11:53.538792+00:00"
+    },
+    "OpenBareMap/norway-central/2.0.1/app-bundles-v1/ios/OpenBareMap-Norway-Central-iOS-Bundle.zip": {
+      "bytes": 1991069438,
+      "sha256": "eca5f1e69ea27e16fe7cac97b9612cf3c08507e1069f6f1a8b01ac4c7f1fcc27",
+      "verifiedUTC": "2026-11-21T21:21:15.208876+00:00"
+    },
+    "OpenBareMap/norway-central/2.0.1/app-bundles-v1/ios/SHA256SUMS.txt": {
+      "bytes": 191,
+      "sha256": "aa52ee3e7f8d15ac98f68f1c58abe4daa268735704927b0a82fcc7f440c06145",
+      "verifiedUTC": "2026-11-21T21:11:59.241636+00:00"
+    },
+    "OpenBareMap/norway-central/2.0.1/app-bundles-v1/ios/instructions.txt": {
+      "bytes": 3641,
+      "sha256": "7463b85134adc84f12b40a5a243f714aaa9ff5a3e43da0246ef56f7a4b92f40e",
+      "verifiedUTC": "2026-11-21T21:11:59.185269+00:00"
+    },
+    "OpenBareMap/norway-central/2.0.1/app-bundles-v1/ios/manifest.json": {
+      "bytes": 1720,
+      "sha256": "ba5e9efe8baf16035d55c5e569303f8cfd9f85e236942a79c41ff95209a491cf",
+      "verifiedUTC": "2026-11-21T21:12:07.566025+00:00"
+    },
+    "OpenBareMap/norway-central/2.0.1/preview/assets/LICENSE.txt": {
+      "bytes": 5984,
+      "sha256": "ee5fc05a0677eaf69601d2c7db0d9ecd6cc27c3abc1d0733bc9ed34707cf8ef2",
+      "verifiedUTC": "2026-11-21T21:11:05.452395+00:00"
+    },
+    "OpenBareMap/norway-central/2.0.1/preview/assets/PMTiles-LICENSE.txt": {
+      "bytes": 1713,
+      "sha256": "0371c38f338835f7fc13ed71176f3d92144e22c8b736a31cced57adbbeb647b3",
+      "verifiedUTC": "2026-11-21T21:11:05.470439+00:00"
+    },
+    "OpenBareMap/norway-central/2.0.1/preview/assets/fonts/LICENSE-APACHE-2.0.txt": {
+      "bytes": 11358,
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "verifiedUTC": "2026-11-21T21:11:05.460946+00:00"
+    },
+    "OpenBareMap/norway-central/2.0.1/preview/assets/fonts/Open Sans Bold/0-255.pbf": {
+      "bytes": 80025,
+      "sha256": "b3a5c066b416d69012009e3446ddd9544607ceb7355734922635521b6834c4d8",
+      "verifiedUTC": "2026-11-21T21:11:05.471947+00:00"
+    },
+    "OpenBareMap/norway-central/2.0.1/preview/assets/fonts/Open Sans Bold/256-511.pbf": {
+      "bytes": 70900,
+      "sha256": "910a9d831040b8accfc9d70cf235dd4822e59a24e0d5e1736cee5d501c3d17a7",
+      "verifiedUTC": "2026-11-21T21:11:05.485673+00:00"
+    },
+    "OpenBareMap/norway-central/2.0.1/preview/assets/fonts/Open Sans Bold/768-1023.pbf": {
+      "bytes": 36235,
+      "sha256": "bd7b11497f8cee930c1843e8fe546ce59214b7cfb5e53809d7eca2899ff509bc",
+      "verifiedUTC": "2026-11-21T21:11:05.470657+00:00"
+    },
+    "OpenBareMap/norway-central/2.0.1/preview/assets/fonts/Open Sans Bold/8192-8447.pbf": {
+      "bytes": 10494,
+      "sha256": "18c7dbc4a21e80172e15cdd0c3f53de9f48663f5f8193fe153bb763ac1d731d8",
+      "verifiedUTC": "2026-11-21T21:11:05.475697+00:00"
+    },
+    "OpenBareMap/norway-central/2.0.1/preview/assets/fonts/Open Sans Regular/0-255.pbf": {
+      "bytes": 74696,
+      "sha256": "0c8bdb284f2ad6f69bbb434a0208393f3a517bc8bf7ed1eccc4ac4791ebbcbfe",
+      "verifiedUTC": "2026-11-21T21:11:05.484877+00:00"
+    },
+    "OpenBareMap/norway-central/2.0.1/preview/assets/fonts/Open Sans Regular/256-511.pbf": {
+      "bytes": 66481,
+      "sha256": "9962ad38d064edbeb226a6c7dcf1d58e7678508a805f980d2fe81bb3178ba68a",
+      "verifiedUTC": "2026-11-21T21:11:12.547748+00:00"
+    },
+    "OpenBareMap/norway-central/2.0.1/preview/assets/fonts/Open Sans Regular/768-1023.pbf": {
+      "bytes": 33767,
+      "sha256": "fea6a1c8e1be55d9725520627b108d425723b2dc189b7dddfe56abd7d8238ea9",
+      "verifiedUTC": "2026-11-21T21:11:12.557330+00:00"
+    },
+    "OpenBareMap/norway-central/2.0.1/preview/assets/fonts/Open Sans Regular/8192-8447.pbf": {
+      "bytes": 9663,
+      "sha256": "a57611157f0597b267ef36eb07ce5a41dddcc3b2f3b5b85779108b7bb48b1cde",
+      "verifiedUTC": "2026-11-21T21:11:12.548198+00:00"
+    },
+    "OpenBareMap/norway-central/2.0.1/preview/assets/fonts/Open Sans Semibold/0-255.pbf": {
+      "bytes": 77571,
+      "sha256": "64da7011e07531351a249a3d26aad76e2f22e4e321e50833f742697b453e8365",
+      "verifiedUTC": "2026-11-21T21:11:12.540352+00:00"
+    },
+    "OpenBareMap/norway-central/2.0.1/preview/assets/fonts/Open Sans Semibold/256-511.pbf": {
+      "bytes": 68869,
+      "sha256": "78298bbd8198c117ccdffe66bf9bbf646fdc1210b7e1bf222f5a9b29b366d7a5",
+      "verifiedUTC": "2026-11-21T21:11:12.558383+00:00"
+    },
+    "OpenBareMap/norway-central/2.0.1/preview/assets/fonts/Open Sans Semibold/768-1023.pbf": {
+      "bytes": 35063,
+      "sha256": "35f7d1f9c9dfbc978635b7eb21bffb1113879182b2d518a7fbee6b825dd08274",
+      "verifiedUTC": "2026-11-21T21:11:12.584157+00:00"
+    },
+    "OpenBareMap/norway-central/2.0.1/preview/assets/fonts/Open Sans Semibold/8192-8447.pbf": {
+      "bytes": 10092,
+      "sha256": "ee80ee7ef05e77bea017bcb387d970d61823fc37fdb0a51c446ae322c5974990",
+      "verifiedUTC": "2026-11-21T21:11:12.549550+00:00"
+    },
+    "OpenBareMap/norway-central/2.0.1/preview/assets/legend.css": {
+      "bytes": 1513,
+      "sha256": "581de29c8d2e0511ce0f71abea5803fbd03cd42108ff5de4a9962bde2b258ad8",
+      "verifiedUTC": "2026-11-21T21:11:12.571200+00:00"
+    },
+    "OpenBareMap/norway-central/2.0.1/preview/assets/legend.js": {
+      "bytes": 2813,
+      "sha256": "9701a94a97d492fb7a13455c2f5ded61fc1f723b28f5939eaccdd39c86f167ff",
+      "verifiedUTC": "2026-11-21T21:11:20.028912+00:00"
+    },
+    "OpenBareMap/norway-central/2.0.1/preview/assets/legends/norway-central@2x.png": {
+      "bytes": 221020,
+      "sha256": "76f2cb83d8534d6ed6131d128bf0a48d3aacf6c9e28da2e14fddd6c20a78604d",
+      "verifiedUTC": "2026-11-21T21:11:19.998149+00:00"
+    },
+    "OpenBareMap/norway-central/2.0.1/preview/assets/maplibre-gl.css": {
+      "bytes": 69422,
+      "sha256": "792ac997dcf6ae6f643eb4e2dee4630c85e7056526bd8fb85ffe83c67d6c41b4",
+      "verifiedUTC": "2026-11-21T21:11:19.977085+00:00"
+    },
+    "OpenBareMap/norway-central/2.0.1/preview/assets/maplibre-gl.js": {
+      "bytes": 939308,
+      "sha256": "b5a34e6930ff937dbbb9eec8892cffb80ba473cce88ae5ca8c4654432f5f0ebc",
+      "verifiedUTC": "2026-11-21T21:11:20.067150+00:00"
+    },
+    "OpenBareMap/norway-central/2.0.1/preview/assets/pmtiles.js": {
+      "bytes": 20229,
+      "sha256": "caf981bc46f6327ee7e65d5dc964d89d38a69f60edca2bd4c5c890c21b554c6c",
+      "verifiedUTC": "2026-11-21T21:11:19.948335+00:00"
+    },
+    "OpenBareMap/norway-central/2.0.1/preview/assets/preview.css": {
+      "bytes": 1912,
+      "sha256": "4a2bb515c9d6e871ff92a5a15cd189a0f49005fc43cac1831b3445626d95884c",
+      "verifiedUTC": "2026-11-21T21:11:19.949104+00:00"
+    },
+    "OpenBareMap/norway-central/2.0.1/preview/assets/preview.js": {
+      "bytes": 3363,
+      "sha256": "79ce19a0520ed6bd076b4a5a4330fdd9b00d8fca8001bf442cc78b2f0069682a",
+      "verifiedUTC": "2026-11-21T21:11:19.949025+00:00"
+    },
+    "OpenBareMap/norway-central/2.0.1/preview/assets/sprites/outdoors.json": {
+      "bytes": 760,
+      "sha256": "e777903184842b2b08726fcfa5c6ca654f5761ff8c796f0a04c1e66f5551038e",
+      "verifiedUTC": "2026-11-21T21:11:19.954088+00:00"
+    },
+    "OpenBareMap/norway-central/2.0.1/preview/assets/sprites/outdoors.png": {
+      "bytes": 3722,
+      "sha256": "32de87bc645686f95ef45737ba1331504079ba0de01f6d3d30a81bf41ed6133a",
+      "verifiedUTC": "2026-11-21T21:11:28.041746+00:00"
+    },
+    "OpenBareMap/norway-central/2.0.1/preview/assets/sprites/outdoors@2x.json": {
+      "bytes": 771,
+      "sha256": "ca6052d8d86d5f3693247ca9179fedbfbfc950370506a9a5ffc485d69d8c458c",
+      "verifiedUTC": "2026-11-21T21:11:28.019238+00:00"
+    },
+    "OpenBareMap/norway-central/2.0.1/preview/assets/sprites/outdoors@2x.png": {
+      "bytes": 7453,
+      "sha256": "c2230eae423ca94a4fe910a999bee38986231cf8bed2109c280657a30fec86cc",
+      "verifiedUTC": "2026-11-21T21:11:28.055315+00:00"
+    },
+    "OpenBareMap/norway-central/2.0.1/preview/assets/terrain-attribution.html": {
+      "bytes": 1404,
+      "sha256": "bd4f13b32b9ce15e6d655e11322b3f488a88b7d4af454d43b4699826ff3f5780",
+      "verifiedUTC": "2026-11-21T21:11:28.012552+00:00"
+    },
+    "OpenBareMap/norway-central/2.0.1/preview/assets/townlands.geojson": {
+      "bytes": 9403579,
+      "sha256": "ab3d1d254517904918fed1e93f614c2c0f2d6940b948844e39c63cdee31a1d62",
+      "verifiedUTC": "2026-11-21T21:11:28.839610+00:00"
+    },
+    "OpenBareMap/norway-central/2.0.1/preview/data/norway-central/basemap.pmtiles": {
+      "bytes": 681186055,
+      "sha256": "f048b9f4c1acaa63f07185c619f80dd8fb1e6453de096b39a16b788e1588e086",
+      "verifiedUTC": "2026-11-21T21:17:19.326835+00:00"
+    },
+    "OpenBareMap/norway-central/2.0.1/preview/data/norway-central/coast.pmtiles": {
+      "bytes": 23184552,
+      "sha256": "cb947de1769303c953bf142221974dca244e86d7827002fe7d30211530d6f113",
+      "verifiedUTC": "2026-11-21T21:11:32.363260+00:00"
+    },
+    "OpenBareMap/norway-central/2.0.1/preview/data/norway-central/grid.pmtiles": {
+      "bytes": 82000095,
+      "sha256": "ead048f7dffebe3211b0771e52e6bee840c279f4d0a6b384f785493191762748",
+      "verifiedUTC": "2026-11-21T21:14:16.648590+00:00"
+    },
+    "OpenBareMap/norway-central/2.0.1/preview/data/norway-central/hillshade.pmtiles": {
+      "bytes": 361161653,
+      "sha256": "3d2cc7af0bf301ee35b43ff4bb4cfc420a93a830609bd1540738ecb06c69217e",
+      "verifiedUTC": "2026-11-21T21:15:13.788950+00:00"
+    },
+    "OpenBareMap/norway-central/2.0.1/preview/data/norway-central/topography.pmtiles": {
+      "bytes": 620112495,
+      "sha256": "2fbe8b481c3281be394f82a546ed444aeda9308ea8b56f0a92013c4f12263bd4",
+      "verifiedUTC": "2026-11-21T21:17:22.902848+00:00"
+    },
+    "OpenBareMap/norway-central/2.0.1/preview/manifest.json": {
+      "bytes": 1643,
+      "sha256": "f7ecfa1283777bfb16bd374613ee9cbaeee9e6b20e3c9be536dbb469e7507d7a",
+      "verifiedUTC": "2026-11-21T21:11:36.960480+00:00"
+    },
+    "OpenBareMap/norway-central/2.0.1/preview/norway-central/index.html": {
+      "bytes": 7301,
+      "sha256": "63387f7a2bb200d39a20f6df52d0db7c607e88733ff48c3bc5748d4e7e0e76b4",
+      "verifiedUTC": "2026-11-21T21:11:36.968944+00:00"
+    },
+    "OpenBareMap/norway-central/2.0.1/preview/norway-central/legend.html": {
+      "bytes": 1487,
+      "sha256": "074298f74146ff62d42481a887fbda33b54ba8082746f57849033ced00691508",
+      "verifiedUTC": "2026-11-21T21:11:37.049280+00:00"
+    },
+    "OpenBareMap/norway-central/2.0.1/preview/norway-central/region.json": {
+      "bytes": 3982,
+      "sha256": "9c3bb6071a37d3b24ddd276022eb31d5dde96ec7518e16e244c24d21571c0c2d",
+      "verifiedUTC": "2026-11-21T21:11:40.550867+00:00"
+    },
+    "OpenBareMap/norway-central/2.0.1/preview/norway-central/style.json": {
+      "bytes": 2485751,
+      "sha256": "811c34c0a5928766828dd42c05bf7115cba26ccaed75e2fd1a7d4628cf0f5bdd",
+      "verifiedUTC": "2026-11-21T21:11:46.142348+00:00"
+    },
+    "OpenBareMap/norway-north/2.0.1/app-bundles-v1/android/OpenBareMap-Norway-North-Android-Bundle.zip": {
+      "bytes": 2606736556,
+      "sha256": "212dbdb6a2aa5f51fc43048de81256555deaf1210cdbce2d699b0a1d93b75379",
+      "verifiedUTC": "2026-11-21T22:16:41.784061+00:00"
+    },
+    "OpenBareMap/norway-north/2.0.1/app-bundles-v1/android/SHA256SUMS.txt": {
+      "bytes": 193,
+      "sha256": "eaee5f6ddecb6226e00dcbc0cdbf2f3c2222c66201de0d514543fadc0415bfd2",
+      "verifiedUTC": "2026-11-21T21:49:35.690153+00:00"
+    },
+    "OpenBareMap/norway-north/2.0.1/app-bundles-v1/android/instructions.txt": {
+      "bytes": 4214,
+      "sha256": "a7515e8dcf60e01f273fec3a5b56e0325a64e7b2a678c939a46e6fdf3171c6bb",
+      "verifiedUTC": "2026-11-21T21:49:26.262302+00:00"
+    },
+    "OpenBareMap/norway-north/2.0.1/app-bundles-v1/android/manifest.json": {
+      "bytes": 1619,
+      "sha256": "7f91e5c26b9a0a702d583714ceb02df0aac603e10a92f01f6e8b0fad040c8b88",
+      "verifiedUTC": "2026-11-21T21:49:44.149045+00:00"
+    },
+    "OpenBareMap/norway-north/2.0.1/app-bundles-v1/ios/OpenBareMap-Norway-North-iOS-Bundle.zip": {
+      "bytes": 2606737167,
+      "sha256": "962c4090abd81ed966a390a3df757611b844a8680a5e37c95efa2bcb36b8f3b8",
+      "verifiedUTC": "2026-11-21T22:18:22.455998+00:00"
+    },
+    "OpenBareMap/norway-north/2.0.1/app-bundles-v1/ios/SHA256SUMS.txt": {
+      "bytes": 189,
+      "sha256": "91c56dcf2ddc73908fe6c8c6d1b8ef376bf52a668e74718740094ff76968c539",
+      "verifiedUTC": "2026-11-21T21:50:22.148834+00:00"
+    },
+    "OpenBareMap/norway-north/2.0.1/app-bundles-v1/ios/instructions.txt": {
+      "bytes": 3642,
+      "sha256": "8fa9319ece3d3ec28095bec50c9e218a42c23798c71f38a94999425d3fbed170",
+      "verifiedUTC": "2026-11-21T21:50:13.966570+00:00"
+    },
+    "OpenBareMap/norway-north/2.0.1/app-bundles-v1/ios/manifest.json": {
+      "bytes": 1706,
+      "sha256": "fdf44afe8f9da00f6d81c650f94b9bc4f971da0705766ea1904f29400ab62a2b",
+      "verifiedUTC": "2026-11-21T21:50:30.457759+00:00"
+    },
+    "OpenBareMap/norway-north/2.0.1/preview/assets/LICENSE.txt": {
+      "bytes": 5984,
+      "sha256": "ee5fc05a0677eaf69601d2c7db0d9ecd6cc27c3abc1d0733bc9ed34707cf8ef2",
+      "verifiedUTC": "2026-11-21T21:38:42.682040+00:00"
+    },
+    "OpenBareMap/norway-north/2.0.1/preview/assets/PMTiles-LICENSE.txt": {
+      "bytes": 1713,
+      "sha256": "0371c38f338835f7fc13ed71176f3d92144e22c8b736a31cced57adbbeb647b3",
+      "verifiedUTC": "2026-11-21T21:38:42.695560+00:00"
+    },
+    "OpenBareMap/norway-north/2.0.1/preview/assets/fonts/LICENSE-APACHE-2.0.txt": {
+      "bytes": 11358,
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "verifiedUTC": "2026-11-21T21:38:56.643943+00:00"
+    },
+    "OpenBareMap/norway-north/2.0.1/preview/assets/fonts/Open Sans Bold/0-255.pbf": {
+      "bytes": 80025,
+      "sha256": "b3a5c066b416d69012009e3446ddd9544607ceb7355734922635521b6834c4d8",
+      "verifiedUTC": "2026-11-21T21:38:56.751903+00:00"
+    },
+    "OpenBareMap/norway-north/2.0.1/preview/assets/fonts/Open Sans Bold/256-511.pbf": {
+      "bytes": 70900,
+      "sha256": "910a9d831040b8accfc9d70cf235dd4822e59a24e0d5e1736cee5d501c3d17a7",
+      "verifiedUTC": "2026-11-21T21:39:04.899937+00:00"
+    },
+    "OpenBareMap/norway-north/2.0.1/preview/assets/fonts/Open Sans Bold/768-1023.pbf": {
+      "bytes": 36235,
+      "sha256": "bd7b11497f8cee930c1843e8fe546ce59214b7cfb5e53809d7eca2899ff509bc",
+      "verifiedUTC": "2026-11-21T21:39:04.883937+00:00"
+    },
+    "OpenBareMap/norway-north/2.0.1/preview/assets/fonts/Open Sans Bold/8192-8447.pbf": {
+      "bytes": 10494,
+      "sha256": "18c7dbc4a21e80172e15cdd0c3f53de9f48663f5f8193fe153bb763ac1d731d8",
+      "verifiedUTC": "2026-11-21T21:39:12.780431+00:00"
+    },
+    "OpenBareMap/norway-north/2.0.1/preview/assets/fonts/Open Sans Regular/0-255.pbf": {
+      "bytes": 74696,
+      "sha256": "0c8bdb284f2ad6f69bbb434a0208393f3a517bc8bf7ed1eccc4ac4791ebbcbfe",
+      "verifiedUTC": "2026-11-21T21:39:12.895405+00:00"
+    },
+    "OpenBareMap/norway-north/2.0.1/preview/assets/fonts/Open Sans Regular/256-511.pbf": {
+      "bytes": 66481,
+      "sha256": "9962ad38d064edbeb226a6c7dcf1d58e7678508a805f980d2fe81bb3178ba68a",
+      "verifiedUTC": "2026-11-21T21:39:21.964837+00:00"
+    },
+    "OpenBareMap/norway-north/2.0.1/preview/assets/fonts/Open Sans Regular/768-1023.pbf": {
+      "bytes": 33767,
+      "sha256": "fea6a1c8e1be55d9725520627b108d425723b2dc189b7dddfe56abd7d8238ea9",
+      "verifiedUTC": "2026-11-21T21:39:21.928746+00:00"
+    },
+    "OpenBareMap/norway-north/2.0.1/preview/assets/fonts/Open Sans Regular/8192-8447.pbf": {
+      "bytes": 9663,
+      "sha256": "a57611157f0597b267ef36eb07ce5a41dddcc3b2f3b5b85779108b7bb48b1cde",
+      "verifiedUTC": "2026-11-21T21:39:30.381980+00:00"
+    },
+    "OpenBareMap/norway-north/2.0.1/preview/assets/fonts/Open Sans Semibold/0-255.pbf": {
+      "bytes": 77571,
+      "sha256": "64da7011e07531351a249a3d26aad76e2f22e4e321e50833f742697b453e8365",
+      "verifiedUTC": "2026-11-21T21:39:30.505743+00:00"
+    },
+    "OpenBareMap/norway-north/2.0.1/preview/assets/fonts/Open Sans Semibold/256-511.pbf": {
+      "bytes": 68869,
+      "sha256": "78298bbd8198c117ccdffe66bf9bbf646fdc1210b7e1bf222f5a9b29b366d7a5",
+      "verifiedUTC": "2026-11-21T21:39:38.643256+00:00"
+    },
+    "OpenBareMap/norway-north/2.0.1/preview/assets/fonts/Open Sans Semibold/768-1023.pbf": {
+      "bytes": 35063,
+      "sha256": "35f7d1f9c9dfbc978635b7eb21bffb1113879182b2d518a7fbee6b825dd08274",
+      "verifiedUTC": "2026-11-21T21:39:38.518219+00:00"
+    },
+    "OpenBareMap/norway-north/2.0.1/preview/assets/fonts/Open Sans Semibold/8192-8447.pbf": {
+      "bytes": 10092,
+      "sha256": "ee80ee7ef05e77bea017bcb387d970d61823fc37fdb0a51c446ae322c5974990",
+      "verifiedUTC": "2026-11-21T21:39:47.031860+00:00"
+    },
+    "OpenBareMap/norway-north/2.0.1/preview/assets/legend.css": {
+      "bytes": 1513,
+      "sha256": "581de29c8d2e0511ce0f71abea5803fbd03cd42108ff5de4a9962bde2b258ad8",
+      "verifiedUTC": "2026-11-21T21:39:47.033026+00:00"
+    },
+    "OpenBareMap/norway-north/2.0.1/preview/assets/legend.js": {
+      "bytes": 2813,
+      "sha256": "9701a94a97d492fb7a13455c2f5ded61fc1f723b28f5939eaccdd39c86f167ff",
+      "verifiedUTC": "2026-11-21T21:39:56.118814+00:00"
+    },
+    "OpenBareMap/norway-north/2.0.1/preview/assets/legends/norway-north@2x.png": {
+      "bytes": 221020,
+      "sha256": "76f2cb83d8534d6ed6131d128bf0a48d3aacf6c9e28da2e14fddd6c20a78604d",
+      "verifiedUTC": "2026-11-21T21:39:55.572818+00:00"
+    },
+    "OpenBareMap/norway-north/2.0.1/preview/assets/maplibre-gl.css": {
+      "bytes": 69422,
+      "sha256": "792ac997dcf6ae6f643eb4e2dee4630c85e7056526bd8fb85ffe83c67d6c41b4",
+      "verifiedUTC": "2026-11-21T21:40:04.203686+00:00"
+    },
+    "OpenBareMap/norway-north/2.0.1/preview/assets/maplibre-gl.js": {
+      "bytes": 939308,
+      "sha256": "b5a34e6930ff937dbbb9eec8892cffb80ba473cce88ae5ca8c4654432f5f0ebc",
+      "verifiedUTC": "2026-11-21T21:40:04.588959+00:00"
+    },
+    "OpenBareMap/norway-north/2.0.1/preview/assets/pmtiles.js": {
+      "bytes": 20229,
+      "sha256": "caf981bc46f6327ee7e65d5dc964d89d38a69f60edca2bd4c5c890c21b554c6c",
+      "verifiedUTC": "2026-11-21T21:40:13.134662+00:00"
+    },
+    "OpenBareMap/norway-north/2.0.1/preview/assets/preview.css": {
+      "bytes": 1912,
+      "sha256": "4a2bb515c9d6e871ff92a5a15cd189a0f49005fc43cac1831b3445626d95884c",
+      "verifiedUTC": "2026-11-21T21:40:12.982080+00:00"
+    },
+    "OpenBareMap/norway-north/2.0.1/preview/assets/preview.js": {
+      "bytes": 3363,
+      "sha256": "79ce19a0520ed6bd076b4a5a4330fdd9b00d8fca8001bf442cc78b2f0069682a",
+      "verifiedUTC": "2026-11-21T21:40:21.792463+00:00"
+    },
+    "OpenBareMap/norway-north/2.0.1/preview/assets/sprites/outdoors.json": {
+      "bytes": 760,
+      "sha256": "e777903184842b2b08726fcfa5c6ca654f5761ff8c796f0a04c1e66f5551038e",
+      "verifiedUTC": "2026-11-21T21:40:21.736009+00:00"
+    },
+    "OpenBareMap/norway-north/2.0.1/preview/assets/sprites/outdoors.png": {
+      "bytes": 3722,
+      "sha256": "32de87bc645686f95ef45737ba1331504079ba0de01f6d3d30a81bf41ed6133a",
+      "verifiedUTC": "2026-11-21T21:40:32.098267+00:00"
+    },
+    "OpenBareMap/norway-north/2.0.1/preview/assets/sprites/outdoors@2x.json": {
+      "bytes": 771,
+      "sha256": "ca6052d8d86d5f3693247ca9179fedbfbfc950370506a9a5ffc485d69d8c458c",
+      "verifiedUTC": "2026-11-21T21:40:32.089113+00:00"
+    },
+    "OpenBareMap/norway-north/2.0.1/preview/assets/sprites/outdoors@2x.png": {
+      "bytes": 7453,
+      "sha256": "c2230eae423ca94a4fe910a999bee38986231cf8bed2109c280657a30fec86cc",
+      "verifiedUTC": "2026-11-21T21:40:40.733635+00:00"
+    },
+    "OpenBareMap/norway-north/2.0.1/preview/assets/terrain-attribution.html": {
+      "bytes": 1407,
+      "sha256": "6014687ced8e9f37541d6f96a6a7eb845c18b9075eb2bda14bfae1bf98a319c0",
+      "verifiedUTC": "2026-11-21T21:40:40.631684+00:00"
+    },
+    "OpenBareMap/norway-north/2.0.1/preview/assets/townlands.geojson": {
+      "bytes": 9403579,
+      "sha256": "ab3d1d254517904918fed1e93f614c2c0f2d6940b948844e39c63cdee31a1d62",
+      "verifiedUTC": "2026-11-21T21:41:09.288130+00:00"
+    },
+    "OpenBareMap/norway-north/2.0.1/preview/data/norway-north/basemap.pmtiles": {
+      "bytes": 713055267,
+      "sha256": "51a91fa81a51aec8bb809476fe8c1088a9db20b795efbca7749c1f1d13a3736b",
+      "verifiedUTC": "2026-11-21T21:48:25.690799+00:00"
+    },
+    "OpenBareMap/norway-north/2.0.1/preview/data/norway-north/coast.pmtiles": {
+      "bytes": 17594386,
+      "sha256": "aef3c07713ec2f0d52370dbf0cc6b03ff5d3f706be4807e9d749d7923717b0f9",
+      "verifiedUTC": "2026-11-21T21:41:45.274878+00:00"
+    },
+    "OpenBareMap/norway-north/2.0.1/preview/data/norway-north/grid.pmtiles": {
+      "bytes": 161728953,
+      "sha256": "27a79655770d3f4a0fce9ffe9300fd5228a4e933310c715faf2d244307bc33c7",
+      "verifiedUTC": "2026-11-21T21:48:01.906067+00:00"
+    },
+    "OpenBareMap/norway-north/2.0.1/preview/data/norway-north/hillshade.pmtiles": {
+      "bytes": 616014997,
+      "sha256": "90e3f2b444954d0293f7e6a4d37cf939ef758aa24539f22803cc3f96c537da69",
+      "verifiedUTC": "2026-11-21T21:50:38.706479+00:00"
+    },
+    "OpenBareMap/norway-north/2.0.1/preview/data/norway-north/topography.pmtiles": {
+      "bytes": 783045067,
+      "sha256": "25690aa8e1b92f12c9e0080c09b2af47f3d962a13dbd129a59a329cdca343fcc",
+      "verifiedUTC": "2026-11-21T21:55:42.873721+00:00"
+    },
+    "OpenBareMap/norway-north/2.0.1/preview/manifest.json": {
+      "bytes": 1640,
+      "sha256": "29502c6d20994f828b0b85992be574c236759bb1190745ecba5226d6ae70c5b7",
+      "verifiedUTC": "2026-11-21T21:48:35.527137+00:00"
+    },
+    "OpenBareMap/norway-north/2.0.1/preview/norway-north/index.html": {
+      "bytes": 7306,
+      "sha256": "0b750dd2895fbc9344dac241f8b583ff3f0d466fe6c3a14640d9e6c457000718",
+      "verifiedUTC": "2026-11-21T21:48:45.261616+00:00"
+    },
+    "OpenBareMap/norway-north/2.0.1/preview/norway-north/legend.html": {
+      "bytes": 1485,
+      "sha256": "3a70671c396010cdd50424e47d7e0bb3e914ec3c5425bc0a8f435e9bb6477d03",
+      "verifiedUTC": "2026-11-21T21:48:55.521465+00:00"
+    },
+    "OpenBareMap/norway-north/2.0.1/preview/norway-north/region.json": {
+      "bytes": 4342,
+      "sha256": "e35a2f90b80f36e196771fc3ea06517929e0760fcfa5f9fd59c54b41ff4b9b94",
+      "verifiedUTC": "2026-11-21T21:49:04.493827+00:00"
+    },
+    "OpenBareMap/norway-north/2.0.1/preview/norway-north/style.json": {
+      "bytes": 2485726,
+      "sha256": "c8363055b5c3de2a208283ba8e632d0f576b4d00766e480b65d6b1b7e4a75b2a",
+      "verifiedUTC": "2026-11-21T21:49:16.014186+00:00"
+    },
+    "OpenBareMap/norway-south/2.0.1/app-bundles-v1/android/OpenBareMap-Norway-South-Android-Bundle.zip": {
+      "bytes": 3948617441,
+      "sha256": "fc53ec6db6782cdb8e81c892f24ddf71f3699cfd96a32fad40133964eebdcee4",
+      "verifiedUTC": "2026-11-21T22:18:26.589710+00:00"
+    },
+    "OpenBareMap/norway-south/2.0.1/app-bundles-v1/android/SHA256SUMS.txt": {
+      "bytes": 193,
+      "sha256": "dd6c917c03659c7c7ff63a8fa55bbb6a5239c20fa1cd8acd08503a16fb2e81a6",
+      "verifiedUTC": "2026-11-21T21:37:47.885658+00:00"
+    },
+    "OpenBareMap/norway-south/2.0.1/app-bundles-v1/android/instructions.txt": {
+      "bytes": 4213,
+      "sha256": "26240286dded06692f0e5c3ae684aa5f2344aaf45950a85b0e67580a827bdf4e",
+      "verifiedUTC": "2026-11-21T21:37:47.878532+00:00"
+    },
+    "OpenBareMap/norway-south/2.0.1/app-bundles-v1/android/manifest.json": {
+      "bytes": 1619,
+      "sha256": "71a7c3daeda4912d72d5f9c13d01171aa9433622c74f0c9bd883b8403fa896b8",
+      "verifiedUTC": "2026-11-21T21:37:55.746087+00:00"
+    },
+    "OpenBareMap/norway-south/2.0.1/app-bundles-v1/ios/OpenBareMap-Norway-South-iOS-Bundle.zip": {
+      "bytes": 3948618052,
+      "sha256": "7b9dd80505160fef4c72f3b1d5f79ad5d45a775a77bb2e8bec718fbcb5264e40",
+      "verifiedUTC": "2026-11-21T22:19:35.854708+00:00"
+    },
+    "OpenBareMap/norway-south/2.0.1/app-bundles-v1/ios/SHA256SUMS.txt": {
+      "bytes": 189,
+      "sha256": "b66469021787658d18b947c1bf1410da73bcb93ad1ab8db81e4cde953adbb388",
+      "verifiedUTC": "2026-11-21T21:38:04.029818+00:00"
+    },
+    "OpenBareMap/norway-south/2.0.1/app-bundles-v1/ios/instructions.txt": {
+      "bytes": 3641,
+      "sha256": "051b91de5ceefa80352cc1cc7b4e486c39da5c6d8e3b50eee70965d49c66225d",
+      "verifiedUTC": "2026-11-21T21:38:00.919292+00:00"
+    },
+    "OpenBareMap/norway-south/2.0.1/app-bundles-v1/ios/manifest.json": {
+      "bytes": 1706,
+      "sha256": "e334db4e8ab9930445422d41a484465bf23cfc9aeb9a2a26c5e6d7824018b7fd",
+      "verifiedUTC": "2026-11-21T21:38:03.996828+00:00"
+    },
+    "OpenBareMap/norway-south/2.0.1/preview/assets/LICENSE.txt": {
+      "bytes": 5984,
+      "sha256": "ee5fc05a0677eaf69601d2c7db0d9ecd6cc27c3abc1d0733bc9ed34707cf8ef2",
+      "verifiedUTC": "2026-11-21T21:37:11.666200+00:00"
+    },
+    "OpenBareMap/norway-south/2.0.1/preview/assets/PMTiles-LICENSE.txt": {
+      "bytes": 1713,
+      "sha256": "0371c38f338835f7fc13ed71176f3d92144e22c8b736a31cced57adbbeb647b3",
+      "verifiedUTC": "2026-11-21T21:37:11.779144+00:00"
+    },
+    "OpenBareMap/norway-south/2.0.1/preview/assets/fonts/LICENSE-APACHE-2.0.txt": {
+      "bytes": 11358,
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "verifiedUTC": "2026-11-21T21:37:11.662152+00:00"
+    },
+    "OpenBareMap/norway-south/2.0.1/preview/assets/fonts/Open Sans Bold/0-255.pbf": {
+      "bytes": 80025,
+      "sha256": "b3a5c066b416d69012009e3446ddd9544607ceb7355734922635521b6834c4d8",
+      "verifiedUTC": "2026-11-21T21:37:11.681819+00:00"
+    },
+    "OpenBareMap/norway-south/2.0.1/preview/assets/fonts/Open Sans Bold/256-511.pbf": {
+      "bytes": 70900,
+      "sha256": "910a9d831040b8accfc9d70cf235dd4822e59a24e0d5e1736cee5d501c3d17a7",
+      "verifiedUTC": "2026-11-21T21:37:11.691713+00:00"
+    },
+    "OpenBareMap/norway-south/2.0.1/preview/assets/fonts/Open Sans Bold/768-1023.pbf": {
+      "bytes": 36235,
+      "sha256": "bd7b11497f8cee930c1843e8fe546ce59214b7cfb5e53809d7eca2899ff509bc",
+      "verifiedUTC": "2026-11-21T21:37:11.656009+00:00"
+    },
+    "OpenBareMap/norway-south/2.0.1/preview/assets/fonts/Open Sans Bold/8192-8447.pbf": {
+      "bytes": 10494,
+      "sha256": "18c7dbc4a21e80172e15cdd0c3f53de9f48663f5f8193fe153bb763ac1d731d8",
+      "verifiedUTC": "2026-11-21T21:37:11.649796+00:00"
+    },
+    "OpenBareMap/norway-south/2.0.1/preview/assets/fonts/Open Sans Regular/0-255.pbf": {
+      "bytes": 74696,
+      "sha256": "0c8bdb284f2ad6f69bbb434a0208393f3a517bc8bf7ed1eccc4ac4791ebbcbfe",
+      "verifiedUTC": "2026-11-21T21:37:11.705686+00:00"
+    },
+    "OpenBareMap/norway-south/2.0.1/preview/assets/fonts/Open Sans Regular/256-511.pbf": {
+      "bytes": 66481,
+      "sha256": "9962ad38d064edbeb226a6c7dcf1d58e7678508a805f980d2fe81bb3178ba68a",
+      "verifiedUTC": "2026-11-21T21:37:18.475517+00:00"
+    },
+    "OpenBareMap/norway-south/2.0.1/preview/assets/fonts/Open Sans Regular/768-1023.pbf": {
+      "bytes": 33767,
+      "sha256": "fea6a1c8e1be55d9725520627b108d425723b2dc189b7dddfe56abd7d8238ea9",
+      "verifiedUTC": "2026-11-21T21:37:18.491301+00:00"
+    },
+    "OpenBareMap/norway-south/2.0.1/preview/assets/fonts/Open Sans Regular/8192-8447.pbf": {
+      "bytes": 9663,
+      "sha256": "a57611157f0597b267ef36eb07ce5a41dddcc3b2f3b5b85779108b7bb48b1cde",
+      "verifiedUTC": "2026-11-21T21:37:18.474772+00:00"
+    },
+    "OpenBareMap/norway-south/2.0.1/preview/assets/fonts/Open Sans Semibold/0-255.pbf": {
+      "bytes": 77571,
+      "sha256": "64da7011e07531351a249a3d26aad76e2f22e4e321e50833f742697b453e8365",
+      "verifiedUTC": "2026-11-21T21:37:18.482126+00:00"
+    },
+    "OpenBareMap/norway-south/2.0.1/preview/assets/fonts/Open Sans Semibold/256-511.pbf": {
+      "bytes": 68869,
+      "sha256": "78298bbd8198c117ccdffe66bf9bbf646fdc1210b7e1bf222f5a9b29b366d7a5",
+      "verifiedUTC": "2026-11-21T21:37:18.499059+00:00"
+    },
+    "OpenBareMap/norway-south/2.0.1/preview/assets/fonts/Open Sans Semibold/768-1023.pbf": {
+      "bytes": 35063,
+      "sha256": "35f7d1f9c9dfbc978635b7eb21bffb1113879182b2d518a7fbee6b825dd08274",
+      "verifiedUTC": "2026-11-21T21:37:18.464839+00:00"
+    },
+    "OpenBareMap/norway-south/2.0.1/preview/assets/fonts/Open Sans Semibold/8192-8447.pbf": {
+      "bytes": 10092,
+      "sha256": "ee80ee7ef05e77bea017bcb387d970d61823fc37fdb0a51c446ae322c5974990",
+      "verifiedUTC": "2026-11-21T21:37:18.459638+00:00"
+    },
+    "OpenBareMap/norway-south/2.0.1/preview/assets/legend.css": {
+      "bytes": 1513,
+      "sha256": "581de29c8d2e0511ce0f71abea5803fbd03cd42108ff5de4a9962bde2b258ad8",
+      "verifiedUTC": "2026-11-21T21:37:18.478151+00:00"
+    },
+    "OpenBareMap/norway-south/2.0.1/preview/assets/legend.js": {
+      "bytes": 2813,
+      "sha256": "9701a94a97d492fb7a13455c2f5ded61fc1f723b28f5939eaccdd39c86f167ff",
+      "verifiedUTC": "2026-11-21T21:37:25.671215+00:00"
+    },
+    "OpenBareMap/norway-south/2.0.1/preview/assets/legends/norway-south@2x.png": {
+      "bytes": 221020,
+      "sha256": "76f2cb83d8534d6ed6131d128bf0a48d3aacf6c9e28da2e14fddd6c20a78604d",
+      "verifiedUTC": "2026-11-21T21:37:25.715775+00:00"
+    },
+    "OpenBareMap/norway-south/2.0.1/preview/assets/maplibre-gl.css": {
+      "bytes": 69422,
+      "sha256": "792ac997dcf6ae6f643eb4e2dee4630c85e7056526bd8fb85ffe83c67d6c41b4",
+      "verifiedUTC": "2026-11-21T21:37:25.694875+00:00"
+    },
+    "OpenBareMap/norway-south/2.0.1/preview/assets/maplibre-gl.js": {
+      "bytes": 939308,
+      "sha256": "b5a34e6930ff937dbbb9eec8892cffb80ba473cce88ae5ca8c4654432f5f0ebc",
+      "verifiedUTC": "2026-11-21T21:37:25.749909+00:00"
+    },
+    "OpenBareMap/norway-south/2.0.1/preview/assets/pmtiles.js": {
+      "bytes": 20229,
+      "sha256": "caf981bc46f6327ee7e65d5dc964d89d38a69f60edca2bd4c5c890c21b554c6c",
+      "verifiedUTC": "2026-11-21T21:37:25.668459+00:00"
+    },
+    "OpenBareMap/norway-south/2.0.1/preview/assets/preview.css": {
+      "bytes": 1912,
+      "sha256": "4a2bb515c9d6e871ff92a5a15cd189a0f49005fc43cac1831b3445626d95884c",
+      "verifiedUTC": "2026-11-21T21:37:25.660904+00:00"
+    },
+    "OpenBareMap/norway-south/2.0.1/preview/assets/preview.js": {
+      "bytes": 3363,
+      "sha256": "79ce19a0520ed6bd076b4a5a4330fdd9b00d8fca8001bf442cc78b2f0069682a",
+      "verifiedUTC": "2026-11-21T21:37:25.690396+00:00"
+    },
+    "OpenBareMap/norway-south/2.0.1/preview/assets/sprites/outdoors.json": {
+      "bytes": 760,
+      "sha256": "e777903184842b2b08726fcfa5c6ca654f5761ff8c796f0a04c1e66f5551038e",
+      "verifiedUTC": "2026-11-21T21:37:25.584390+00:00"
+    },
+    "OpenBareMap/norway-south/2.0.1/preview/assets/sprites/outdoors.png": {
+      "bytes": 3722,
+      "sha256": "32de87bc645686f95ef45737ba1331504079ba0de01f6d3d30a81bf41ed6133a",
+      "verifiedUTC": "2026-11-21T21:37:32.979730+00:00"
+    },
+    "OpenBareMap/norway-south/2.0.1/preview/assets/sprites/outdoors@2x.json": {
+      "bytes": 771,
+      "sha256": "ca6052d8d86d5f3693247ca9179fedbfbfc950370506a9a5ffc485d69d8c458c",
+      "verifiedUTC": "2026-11-21T21:37:32.935012+00:00"
+    },
+    "OpenBareMap/norway-south/2.0.1/preview/assets/sprites/outdoors@2x.png": {
+      "bytes": 7453,
+      "sha256": "c2230eae423ca94a4fe910a999bee38986231cf8bed2109c280657a30fec86cc",
+      "verifiedUTC": "2026-11-21T21:37:33.063383+00:00"
+    },
+    "OpenBareMap/norway-south/2.0.1/preview/assets/terrain-attribution.html": {
+      "bytes": 1407,
+      "sha256": "9b89f5d01f989f2dce7cceaecfc76c8de7555194b6d48250851e3d206774a8f1",
+      "verifiedUTC": "2026-11-21T21:37:32.864860+00:00"
+    },
+    "OpenBareMap/norway-south/2.0.1/preview/assets/townlands.geojson": {
+      "bytes": 9403579,
+      "sha256": "ab3d1d254517904918fed1e93f614c2c0f2d6940b948844e39c63cdee31a1d62",
+      "verifiedUTC": "2026-11-21T21:37:33.360516+00:00"
+    },
+    "OpenBareMap/norway-south/2.0.1/preview/data/norway-south/basemap.pmtiles": {
+      "bytes": 1863837008,
+      "sha256": "93c9b3b4c53da15f7f218591cd10ad35d8ef47037a4fbcf158d1bd4417e37616",
+      "verifiedUTC": "2026-11-21T21:55:45.583486+00:00"
+    },
+    "OpenBareMap/norway-south/2.0.1/preview/data/norway-south/coast.pmtiles": {
+      "bytes": 26236576,
+      "sha256": "3cb88ca3c3074228465d54387ba046a710f2aff413e69a799e091a3986592d3a",
+      "verifiedUTC": "2026-11-21T21:37:34.902463+00:00"
+    },
+    "OpenBareMap/norway-south/2.0.1/preview/data/norway-south/grid.pmtiles": {
+      "bytes": 81468948,
+      "sha256": "7e1ad441738d72eed346fc6777eab59e7243482a1b4cf81d26ab2b7febd6680d",
+      "verifiedUTC": "2026-11-21T21:37:52.157261+00:00"
+    },
+    "OpenBareMap/norway-south/2.0.1/preview/data/norway-south/hillshade.pmtiles": {
+      "bytes": 560593482,
+      "sha256": "063c19024cd8bb230f083b8f90d09920cc72be3826318decc5d8ed70780341a7",
+      "verifiedUTC": "2026-11-21T21:43:26.622238+00:00"
+    },
+    "OpenBareMap/norway-south/2.0.1/preview/data/norway-south/topography.pmtiles": {
+      "bytes": 1078633310,
+      "sha256": "0edd96d91798d8112340c44951dc11123e5c24ee2c5597662c775d4b1ed5f85f",
+      "verifiedUTC": "2026-11-21T21:50:04.956707+00:00"
+    },
+    "OpenBareMap/norway-south/2.0.1/preview/manifest.json": {
+      "bytes": 1641,
+      "sha256": "d16d708657f5568cc06f3c38d07ab2ef29554bfa51f045ad258eba4465e8eb0d",
+      "verifiedUTC": "2026-11-21T21:37:40.456115+00:00"
+    },
+    "OpenBareMap/norway-south/2.0.1/preview/norway-south/index.html": {
+      "bytes": 7306,
+      "sha256": "76d63ec2d3a0dbab9482f5489bb050c3bab7c1b0e92618d2266775ffaa2424a9",
+      "verifiedUTC": "2026-11-21T21:37:40.500584+00:00"
+    },
+    "OpenBareMap/norway-south/2.0.1/preview/norway-south/legend.html": {
+      "bytes": 1485,
+      "sha256": "b954eb6e5062c2af29f068377d53717ee8ce4d727cd9249da6524b8be21b3762",
+      "verifiedUTC": "2026-11-21T21:37:40.487156+00:00"
+    },
+    "OpenBareMap/norway-south/2.0.1/preview/norway-south/region.json": {
+      "bytes": 3423,
+      "sha256": "36bd3dd52b5851767d0fe5c3a72db5d7eb621e41aec965025a700f3f3314267d",
+      "verifiedUTC": "2026-11-21T21:37:40.487001+00:00"
+    },
+    "OpenBareMap/norway-south/2.0.1/preview/norway-south/style.json": {
+      "bytes": 2485725,
+      "sha256": "b777bff501cbfad9abaa0782d648af1957415a5afd8220a1daca36229710cd2f",
+      "verifiedUTC": "2026-11-21T21:37:56.332018+00:00"
+    },
+    "OpenBareMap/pyrenees/2.0.1/app-bundles-v1/android/OpenBareMap-Pyrenees-Android-Bundle.zip": {
+      "bytes": 1736680516,
+      "sha256": "6dabc9a0029c7e4f50ace5ab681f036158619798578b39742b59a931a23b704a",
+      "verifiedUTC": "2026-11-21T22:18:26.143179+00:00"
+    },
+    "OpenBareMap/pyrenees/2.0.1/app-bundles-v1/android/SHA256SUMS.txt": {
+      "bytes": 189,
+      "sha256": "02be3fc393e0fd1dcead8192b4b1fd038712b56ff0709f58b19ddebd0cda2429",
+      "verifiedUTC": "2026-11-21T21:56:03.543981+00:00"
+    },
+    "OpenBareMap/pyrenees/2.0.1/app-bundles-v1/android/instructions.txt": {
+      "bytes": 4235,
+      "sha256": "e164a0ea5c66364680c03d349cc490822d4ce1a458eabfd4a3b53c4b500eca8c",
+      "verifiedUTC": "2026-11-21T21:55:55.691423+00:00"
+    },
+    "OpenBareMap/pyrenees/2.0.1/app-bundles-v1/android/manifest.json": {
+      "bytes": 1591,
+      "sha256": "905b041fec5eaf6d50c78b67b01a3ff41d5ae73715cf78256a048e7c89966af0",
+      "verifiedUTC": "2026-11-21T21:56:03.556403+00:00"
+    },
+    "OpenBareMap/pyrenees/2.0.1/app-bundles-v1/ios/OpenBareMap-Pyrenees-iOS-Bundle.zip": {
+      "bytes": 1736680965,
+      "sha256": "96e349f01e706df0dc416a49b452dfb3b050baf19df8b4b536e800f32b7d1b43",
+      "verifiedUTC": "2026-11-21T22:17:59.149753+00:00"
+    },
+    "OpenBareMap/pyrenees/2.0.1/app-bundles-v1/ios/SHA256SUMS.txt": {
+      "bytes": 185,
+      "sha256": "2ce05275dcd65220c52c5cbb77db700ac0a18b88e3487a3a9eb37ecd43013fcc",
+      "verifiedUTC": "2026-11-21T21:56:11.184963+00:00"
+    },
+    "OpenBareMap/pyrenees/2.0.1/app-bundles-v1/ios/instructions.txt": {
+      "bytes": 3663,
+      "sha256": "90839e94ba23b58bb48d117b7b440b096112e19fbcedc6e020684d1319bd96d8",
+      "verifiedUTC": "2026-11-21T21:56:10.396908+00:00"
+    },
+    "OpenBareMap/pyrenees/2.0.1/app-bundles-v1/ios/manifest.json": {
+      "bytes": 1678,
+      "sha256": "51da7d7d6f084af70d8cd26ad213159a24a5f7b6c75756c696a97631dc1aeb99",
+      "verifiedUTC": "2026-11-21T21:56:10.395595+00:00"
+    },
+    "OpenBareMap/pyrenees/2.0.1/preview/assets/LICENSE.txt": {
+      "bytes": 5984,
+      "sha256": "ee5fc05a0677eaf69601d2c7db0d9ecd6cc27c3abc1d0733bc9ed34707cf8ef2",
+      "verifiedUTC": "2026-11-21T21:55:14.719545+00:00"
+    },
+    "OpenBareMap/pyrenees/2.0.1/preview/assets/PMTiles-LICENSE.txt": {
+      "bytes": 1713,
+      "sha256": "0371c38f338835f7fc13ed71176f3d92144e22c8b736a31cced57adbbeb647b3",
+      "verifiedUTC": "2026-11-21T21:55:14.546399+00:00"
+    },
+    "OpenBareMap/pyrenees/2.0.1/preview/assets/fonts/LICENSE-APACHE-2.0.txt": {
+      "bytes": 11358,
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "verifiedUTC": "2026-11-21T21:55:15.168932+00:00"
+    },
+    "OpenBareMap/pyrenees/2.0.1/preview/assets/fonts/Open Sans Bold/0-255.pbf": {
+      "bytes": 80025,
+      "sha256": "b3a5c066b416d69012009e3446ddd9544607ceb7355734922635521b6834c4d8",
+      "verifiedUTC": "2026-11-21T21:55:16.529378+00:00"
+    },
+    "OpenBareMap/pyrenees/2.0.1/preview/assets/fonts/Open Sans Bold/256-511.pbf": {
+      "bytes": 70900,
+      "sha256": "910a9d831040b8accfc9d70cf235dd4822e59a24e0d5e1736cee5d501c3d17a7",
+      "verifiedUTC": "2026-11-21T21:55:14.234285+00:00"
+    },
+    "OpenBareMap/pyrenees/2.0.1/preview/assets/fonts/Open Sans Bold/768-1023.pbf": {
+      "bytes": 36235,
+      "sha256": "bd7b11497f8cee930c1843e8fe546ce59214b7cfb5e53809d7eca2899ff509bc",
+      "verifiedUTC": "2026-11-21T21:55:14.110501+00:00"
+    },
+    "OpenBareMap/pyrenees/2.0.1/preview/assets/fonts/Open Sans Bold/8192-8447.pbf": {
+      "bytes": 10494,
+      "sha256": "18c7dbc4a21e80172e15cdd0c3f53de9f48663f5f8193fe153bb763ac1d731d8",
+      "verifiedUTC": "2026-11-21T21:55:14.108487+00:00"
+    },
+    "OpenBareMap/pyrenees/2.0.1/preview/assets/fonts/Open Sans Regular/0-255.pbf": {
+      "bytes": 74696,
+      "sha256": "0c8bdb284f2ad6f69bbb434a0208393f3a517bc8bf7ed1eccc4ac4791ebbcbfe",
+      "verifiedUTC": "2026-11-21T21:55:14.700826+00:00"
+    },
+    "OpenBareMap/pyrenees/2.0.1/preview/assets/fonts/Open Sans Regular/256-511.pbf": {
+      "bytes": 66481,
+      "sha256": "9962ad38d064edbeb226a6c7dcf1d58e7678508a805f980d2fe81bb3178ba68a",
+      "verifiedUTC": "2026-11-21T21:55:23.460215+00:00"
+    },
+    "OpenBareMap/pyrenees/2.0.1/preview/assets/fonts/Open Sans Regular/768-1023.pbf": {
+      "bytes": 33767,
+      "sha256": "fea6a1c8e1be55d9725520627b108d425723b2dc189b7dddfe56abd7d8238ea9",
+      "verifiedUTC": "2026-11-21T21:55:23.460644+00:00"
+    },
+    "OpenBareMap/pyrenees/2.0.1/preview/assets/fonts/Open Sans Regular/8192-8447.pbf": {
+      "bytes": 9663,
+      "sha256": "a57611157f0597b267ef36eb07ce5a41dddcc3b2f3b5b85779108b7bb48b1cde",
+      "verifiedUTC": "2026-11-21T21:55:23.354548+00:00"
+    },
+    "OpenBareMap/pyrenees/2.0.1/preview/assets/fonts/Open Sans Semibold/0-255.pbf": {
+      "bytes": 77571,
+      "sha256": "64da7011e07531351a249a3d26aad76e2f22e4e321e50833f742697b453e8365",
+      "verifiedUTC": "2026-11-21T21:55:23.406016+00:00"
+    },
+    "OpenBareMap/pyrenees/2.0.1/preview/assets/fonts/Open Sans Semibold/256-511.pbf": {
+      "bytes": 68869,
+      "sha256": "78298bbd8198c117ccdffe66bf9bbf646fdc1210b7e1bf222f5a9b29b366d7a5",
+      "verifiedUTC": "2026-11-21T21:55:23.460848+00:00"
+    },
+    "OpenBareMap/pyrenees/2.0.1/preview/assets/fonts/Open Sans Semibold/768-1023.pbf": {
+      "bytes": 35063,
+      "sha256": "35f7d1f9c9dfbc978635b7eb21bffb1113879182b2d518a7fbee6b825dd08274",
+      "verifiedUTC": "2026-11-21T21:55:23.460515+00:00"
+    },
+    "OpenBareMap/pyrenees/2.0.1/preview/assets/fonts/Open Sans Semibold/8192-8447.pbf": {
+      "bytes": 10092,
+      "sha256": "ee80ee7ef05e77bea017bcb387d970d61823fc37fdb0a51c446ae322c5974990",
+      "verifiedUTC": "2026-11-21T21:55:23.555679+00:00"
+    },
+    "OpenBareMap/pyrenees/2.0.1/preview/assets/legend.css": {
+      "bytes": 1513,
+      "sha256": "581de29c8d2e0511ce0f71abea5803fbd03cd42108ff5de4a9962bde2b258ad8",
+      "verifiedUTC": "2026-11-21T21:55:23.187511+00:00"
+    },
+    "OpenBareMap/pyrenees/2.0.1/preview/assets/legend.js": {
+      "bytes": 2813,
+      "sha256": "9701a94a97d492fb7a13455c2f5ded61fc1f723b28f5939eaccdd39c86f167ff",
+      "verifiedUTC": "2026-11-21T21:55:33.058225+00:00"
+    },
+    "OpenBareMap/pyrenees/2.0.1/preview/assets/legends/pyrenees@2x.png": {
+      "bytes": 220948,
+      "sha256": "ec28e58a84fc63b8bfbe91f2122f66f1ac9937fcdd9cdeb525e88fa95fa5d179",
+      "verifiedUTC": "2026-11-21T21:55:32.892603+00:00"
+    },
+    "OpenBareMap/pyrenees/2.0.1/preview/assets/maplibre-gl.css": {
+      "bytes": 69422,
+      "sha256": "792ac997dcf6ae6f643eb4e2dee4630c85e7056526bd8fb85ffe83c67d6c41b4",
+      "verifiedUTC": "2026-11-21T21:55:32.147563+00:00"
+    },
+    "OpenBareMap/pyrenees/2.0.1/preview/assets/maplibre-gl.js": {
+      "bytes": 939308,
+      "sha256": "b5a34e6930ff937dbbb9eec8892cffb80ba473cce88ae5ca8c4654432f5f0ebc",
+      "verifiedUTC": "2026-11-21T21:55:32.936633+00:00"
+    },
+    "OpenBareMap/pyrenees/2.0.1/preview/assets/pmtiles.js": {
+      "bytes": 20229,
+      "sha256": "caf981bc46f6327ee7e65d5dc964d89d38a69f60edca2bd4c5c890c21b554c6c",
+      "verifiedUTC": "2026-11-21T21:55:32.108699+00:00"
+    },
+    "OpenBareMap/pyrenees/2.0.1/preview/assets/preview.css": {
+      "bytes": 1912,
+      "sha256": "4a2bb515c9d6e871ff92a5a15cd189a0f49005fc43cac1831b3445626d95884c",
+      "verifiedUTC": "2026-11-21T21:55:32.116198+00:00"
+    },
+    "OpenBareMap/pyrenees/2.0.1/preview/assets/preview.js": {
+      "bytes": 3363,
+      "sha256": "79ce19a0520ed6bd076b4a5a4330fdd9b00d8fca8001bf442cc78b2f0069682a",
+      "verifiedUTC": "2026-11-21T21:55:32.101807+00:00"
+    },
+    "OpenBareMap/pyrenees/2.0.1/preview/assets/sprites/outdoors.json": {
+      "bytes": 760,
+      "sha256": "e777903184842b2b08726fcfa5c6ca654f5761ff8c796f0a04c1e66f5551038e",
+      "verifiedUTC": "2026-11-21T21:55:32.061729+00:00"
+    },
+    "OpenBareMap/pyrenees/2.0.1/preview/assets/sprites/outdoors.png": {
+      "bytes": 3722,
+      "sha256": "32de87bc645686f95ef45737ba1331504079ba0de01f6d3d30a81bf41ed6133a",
+      "verifiedUTC": "2026-11-21T21:55:41.727132+00:00"
+    },
+    "OpenBareMap/pyrenees/2.0.1/preview/assets/sprites/outdoors@2x.json": {
+      "bytes": 771,
+      "sha256": "ca6052d8d86d5f3693247ca9179fedbfbfc950370506a9a5ffc485d69d8c458c",
+      "verifiedUTC": "2026-11-21T21:55:41.718715+00:00"
+    },
+    "OpenBareMap/pyrenees/2.0.1/preview/assets/sprites/outdoors@2x.png": {
+      "bytes": 7453,
+      "sha256": "c2230eae423ca94a4fe910a999bee38986231cf8bed2109c280657a30fec86cc",
+      "verifiedUTC": "2026-11-21T21:55:41.732161+00:00"
+    },
+    "OpenBareMap/pyrenees/2.0.1/preview/assets/terrain-attribution.html": {
+      "bytes": 13815,
+      "sha256": "b3863a283cb2c9f55ae3186b4ca01611f049212a02ae12c0d3dbf6c6833459c5",
+      "verifiedUTC": "2026-11-21T21:55:41.689129+00:00"
+    },
+    "OpenBareMap/pyrenees/2.0.1/preview/assets/townlands.geojson": {
+      "bytes": 9403579,
+      "sha256": "ab3d1d254517904918fed1e93f614c2c0f2d6940b948844e39c63cdee31a1d62",
+      "verifiedUTC": "2026-11-21T21:55:47.867242+00:00"
+    },
+    "OpenBareMap/pyrenees/2.0.1/preview/data/pyrenees/basemap.pmtiles": {
+      "bytes": 1005521463,
+      "sha256": "ae9a06e69af35ba92e8e70e8b0bac7bb43cafe92a00a4f2a0cf204b8d92950bd",
+      "verifiedUTC": "2026-11-21T22:09:34.545699+00:00"
+    },
+    "OpenBareMap/pyrenees/2.0.1/preview/data/pyrenees/coast.pmtiles": {
+      "bytes": 1396369,
+      "sha256": "f4a6442060c5038344e176529a604af5170595ce728002656630054a662f6b35",
+      "verifiedUTC": "2026-11-21T21:55:42.245840+00:00"
+    },
+    "OpenBareMap/pyrenees/2.0.1/preview/data/pyrenees/grid.pmtiles": {
+      "bytes": 13336723,
+      "sha256": "4747f69cb851f92315d62b8c6005dac88a8b8fc4a7eca7c6db7be9532a0657ce",
+      "verifiedUTC": "2026-11-21T21:55:56.968982+00:00"
+    },
+    "OpenBareMap/pyrenees/2.0.1/preview/data/pyrenees/hillshade.pmtiles": {
+      "bytes": 167585710,
+      "sha256": "d9f6d7460521e8369842dc00c98b489587558443f4dc87860e8717271647ad28",
+      "verifiedUTC": "2026-11-21T22:03:49.327680+00:00"
+    },
+    "OpenBareMap/pyrenees/2.0.1/preview/data/pyrenees/topography.pmtiles": {
+      "bytes": 474713869,
+      "sha256": "ddde9efda825e87634b905a96705972898fbf905c046169c41b7111a6e33762e",
+      "verifiedUTC": "2026-11-21T22:03:41.425305+00:00"
+    },
+    "OpenBareMap/pyrenees/2.0.1/preview/manifest.json": {
+      "bytes": 1627,
+      "sha256": "f939c301cbf630be80ba30aa274fa1364ed8729c8d66df5bf6d0ea1a521381b0",
+      "verifiedUTC": "2026-11-21T21:55:46.960977+00:00"
+    },
+    "OpenBareMap/pyrenees/2.0.1/preview/pyrenees/index.html": {
+      "bytes": 7470,
+      "sha256": "c79235ceee4e5a7a7b381f6e366debac4c45dd07e657f42a2d883f89282cf2c8",
+      "verifiedUTC": "2026-11-21T21:55:46.988673+00:00"
+    },
+    "OpenBareMap/pyrenees/2.0.1/preview/pyrenees/legend.html": {
+      "bytes": 1569,
+      "sha256": "9c73fd4ed1d9c969398a40d51983c5388732b676d16ceb7c08ee98a840d41694",
+      "verifiedUTC": "2026-11-21T21:55:46.974080+00:00"
+    },
+    "OpenBareMap/pyrenees/2.0.1/preview/pyrenees/region.json": {
+      "bytes": 3349,
+      "sha256": "bf9aa49bad87162f4c82a6645c0e50d8c4bdafdb41a54e273a916b27714612f5",
+      "verifiedUTC": "2026-11-21T21:55:55.705153+00:00"
+    },
+    "OpenBareMap/pyrenees/2.0.1/preview/pyrenees/style.json": {
+      "bytes": 2485767,
+      "sha256": "42123d335ed4e828061a4b1a05189882ff21deb79c300a7c79d9ad41d770f0b4",
+      "verifiedUTC": "2026-11-21T21:56:00.330072+00:00"
+    },
+    "OpenBareMap/us-glacier/2.0.1/app-bundles-v1/android/OpenBareMap-Glacier-Android-Bundle.zip": {
+      "bytes": 162673056,
+      "sha256": "c4c9e5d739794c6657aaa4fc2a2a3acc0229ac4c2ee78e9f98386169f521df2c",
+      "verifiedUTC": "2026-11-21T19:52:02.013633+00:00"
+    },
+    "OpenBareMap/us-glacier/2.0.1/app-bundles-v1/android/SHA256SUMS.txt": {
+      "bytes": 188,
+      "sha256": "bc26b15553455bb0917ff32c5630473702a42cfda94b824cf70bfb88a8b8312d",
+      "verifiedUTC": "2026-11-21T19:51:26.279495+00:00"
+    },
+    "OpenBareMap/us-glacier/2.0.1/app-bundles-v1/android/instructions.txt": {
+      "bytes": 4235,
+      "sha256": "d2053ecf6811e5cc16c03a5dfdb7512e36729ca5f930d87911264a39a6542319",
+      "verifiedUTC": "2026-11-21T19:51:26.409589+00:00"
+    },
+    "OpenBareMap/us-glacier/2.0.1/app-bundles-v1/android/manifest.json": {
+      "bytes": 1595,
+      "sha256": "9ca070808eb2e49e8b76335d28c4bbbcde70569682492699f4759cd4950ccfc6",
+      "verifiedUTC": "2026-11-21T19:51:26.164300+00:00"
+    },
+    "OpenBareMap/us-glacier/2.0.1/app-bundles-v1/ios/OpenBareMap-Glacier-iOS-Bundle.zip": {
+      "bytes": 162674763,
+      "sha256": "654ca56e46a60f4b59ce1e6b28aeafe9eb702183a65d2a568e3a3d4555911ef8",
+      "verifiedUTC": "2026-11-21T19:51:57.186072+00:00"
+    },
+    "OpenBareMap/us-glacier/2.0.1/app-bundles-v1/ios/SHA256SUMS.txt": {
+      "bytes": 184,
+      "sha256": "a669d2c89e3622573d564d6ed504ca32393d2f042eab11401838de6c158ad30e",
+      "verifiedUTC": "2026-11-21T19:51:33.998848+00:00"
+    },
+    "OpenBareMap/us-glacier/2.0.1/app-bundles-v1/ios/instructions.txt": {
+      "bytes": 3663,
+      "sha256": "072399a678a9f62701b388032535f5ba00924eca5ce1912cb59057270f9c5de7",
+      "verifiedUTC": "2026-11-21T19:51:26.278223+00:00"
+    },
+    "OpenBareMap/us-glacier/2.0.1/app-bundles-v1/ios/manifest.json": {
+      "bytes": 1682,
+      "sha256": "425179d79aff0b3459fbbe1a3b46969b8f67e73618c0cced20dbb6536f24a37d",
+      "verifiedUTC": "2026-11-21T19:51:33.965300+00:00"
+    },
+    "OpenBareMap/us-glacier/2.0.1/preview/assets/LICENSE.txt": {
+      "bytes": 5984,
+      "sha256": "ee5fc05a0677eaf69601d2c7db0d9ecd6cc27c3abc1d0733bc9ed34707cf8ef2",
+      "verifiedUTC": "2026-11-21T19:50:45.567804+00:00"
+    },
+    "OpenBareMap/us-glacier/2.0.1/preview/assets/PMTiles-LICENSE.txt": {
+      "bytes": 1713,
+      "sha256": "0371c38f338835f7fc13ed71176f3d92144e22c8b736a31cced57adbbeb647b3",
+      "verifiedUTC": "2026-11-21T19:50:45.578195+00:00"
+    },
+    "OpenBareMap/us-glacier/2.0.1/preview/assets/fonts/LICENSE-APACHE-2.0.txt": {
+      "bytes": 11358,
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "verifiedUTC": "2026-11-21T19:50:45.583707+00:00"
+    },
+    "OpenBareMap/us-glacier/2.0.1/preview/assets/fonts/Open Sans Bold/0-255.pbf": {
+      "bytes": 80025,
+      "sha256": "b3a5c066b416d69012009e3446ddd9544607ceb7355734922635521b6834c4d8",
+      "verifiedUTC": "2026-11-21T19:50:45.592781+00:00"
+    },
+    "OpenBareMap/us-glacier/2.0.1/preview/assets/fonts/Open Sans Bold/256-511.pbf": {
+      "bytes": 70900,
+      "sha256": "910a9d831040b8accfc9d70cf235dd4822e59a24e0d5e1736cee5d501c3d17a7",
+      "verifiedUTC": "2026-11-21T19:50:45.554927+00:00"
+    },
+    "OpenBareMap/us-glacier/2.0.1/preview/assets/fonts/Open Sans Bold/768-1023.pbf": {
+      "bytes": 36235,
+      "sha256": "bd7b11497f8cee930c1843e8fe546ce59214b7cfb5e53809d7eca2899ff509bc",
+      "verifiedUTC": "2026-11-21T19:50:45.571599+00:00"
+    },
+    "OpenBareMap/us-glacier/2.0.1/preview/assets/fonts/Open Sans Bold/8192-8447.pbf": {
+      "bytes": 10494,
+      "sha256": "18c7dbc4a21e80172e15cdd0c3f53de9f48663f5f8193fe153bb763ac1d731d8",
+      "verifiedUTC": "2026-11-21T19:50:45.684972+00:00"
+    },
+    "OpenBareMap/us-glacier/2.0.1/preview/assets/fonts/Open Sans Regular/0-255.pbf": {
+      "bytes": 74696,
+      "sha256": "0c8bdb284f2ad6f69bbb434a0208393f3a517bc8bf7ed1eccc4ac4791ebbcbfe",
+      "verifiedUTC": "2026-11-21T19:50:45.584550+00:00"
+    },
+    "OpenBareMap/us-glacier/2.0.1/preview/assets/fonts/Open Sans Regular/256-511.pbf": {
+      "bytes": 66481,
+      "sha256": "9962ad38d064edbeb226a6c7dcf1d58e7678508a805f980d2fe81bb3178ba68a",
+      "verifiedUTC": "2026-11-21T19:50:53.295580+00:00"
+    },
+    "OpenBareMap/us-glacier/2.0.1/preview/assets/fonts/Open Sans Regular/768-1023.pbf": {
+      "bytes": 33767,
+      "sha256": "fea6a1c8e1be55d9725520627b108d425723b2dc189b7dddfe56abd7d8238ea9",
+      "verifiedUTC": "2026-11-21T19:50:53.274131+00:00"
+    },
+    "OpenBareMap/us-glacier/2.0.1/preview/assets/fonts/Open Sans Regular/8192-8447.pbf": {
+      "bytes": 9663,
+      "sha256": "a57611157f0597b267ef36eb07ce5a41dddcc3b2f3b5b85779108b7bb48b1cde",
+      "verifiedUTC": "2026-11-21T19:50:53.274927+00:00"
+    },
+    "OpenBareMap/us-glacier/2.0.1/preview/assets/fonts/Open Sans Semibold/0-255.pbf": {
+      "bytes": 77571,
+      "sha256": "64da7011e07531351a249a3d26aad76e2f22e4e321e50833f742697b453e8365",
+      "verifiedUTC": "2026-11-21T19:50:53.333678+00:00"
+    },
+    "OpenBareMap/us-glacier/2.0.1/preview/assets/fonts/Open Sans Semibold/256-511.pbf": {
+      "bytes": 68869,
+      "sha256": "78298bbd8198c117ccdffe66bf9bbf646fdc1210b7e1bf222f5a9b29b366d7a5",
+      "verifiedUTC": "2026-11-21T19:50:53.280368+00:00"
+    },
+    "OpenBareMap/us-glacier/2.0.1/preview/assets/fonts/Open Sans Semibold/768-1023.pbf": {
+      "bytes": 35063,
+      "sha256": "35f7d1f9c9dfbc978635b7eb21bffb1113879182b2d518a7fbee6b825dd08274",
+      "verifiedUTC": "2026-11-21T19:50:53.287365+00:00"
+    },
+    "OpenBareMap/us-glacier/2.0.1/preview/assets/fonts/Open Sans Semibold/8192-8447.pbf": {
+      "bytes": 10092,
+      "sha256": "ee80ee7ef05e77bea017bcb387d970d61823fc37fdb0a51c446ae322c5974990",
+      "verifiedUTC": "2026-11-21T19:50:53.224329+00:00"
+    },
+    "OpenBareMap/us-glacier/2.0.1/preview/assets/legend.css": {
+      "bytes": 1513,
+      "sha256": "581de29c8d2e0511ce0f71abea5803fbd03cd42108ff5de4a9962bde2b258ad8",
+      "verifiedUTC": "2026-11-21T19:50:53.315501+00:00"
+    },
+    "OpenBareMap/us-glacier/2.0.1/preview/assets/legend.js": {
+      "bytes": 2813,
+      "sha256": "9701a94a97d492fb7a13455c2f5ded61fc1f723b28f5939eaccdd39c86f167ff",
+      "verifiedUTC": "2026-11-21T19:51:01.982174+00:00"
+    },
+    "OpenBareMap/us-glacier/2.0.1/preview/assets/legends/us-glacier@2x.png": {
+      "bytes": 230183,
+      "sha256": "16b103a95bf1627b44adf0808e33ca0e1f534d6fea89b5d70c4253d8008f400c",
+      "verifiedUTC": "2026-11-21T19:51:01.962918+00:00"
+    },
+    "OpenBareMap/us-glacier/2.0.1/preview/assets/maplibre-gl.css": {
+      "bytes": 69422,
+      "sha256": "792ac997dcf6ae6f643eb4e2dee4630c85e7056526bd8fb85ffe83c67d6c41b4",
+      "verifiedUTC": "2026-11-21T19:51:02.007571+00:00"
+    },
+    "OpenBareMap/us-glacier/2.0.1/preview/assets/maplibre-gl.js": {
+      "bytes": 939308,
+      "sha256": "b5a34e6930ff937dbbb9eec8892cffb80ba473cce88ae5ca8c4654432f5f0ebc",
+      "verifiedUTC": "2026-11-21T19:51:02.055444+00:00"
+    },
+    "OpenBareMap/us-glacier/2.0.1/preview/assets/pmtiles.js": {
+      "bytes": 20229,
+      "sha256": "caf981bc46f6327ee7e65d5dc964d89d38a69f60edca2bd4c5c890c21b554c6c",
+      "verifiedUTC": "2026-11-21T19:51:01.972568+00:00"
+    },
+    "OpenBareMap/us-glacier/2.0.1/preview/assets/preview.css": {
+      "bytes": 1912,
+      "sha256": "4a2bb515c9d6e871ff92a5a15cd189a0f49005fc43cac1831b3445626d95884c",
+      "verifiedUTC": "2026-11-21T19:51:02.042077+00:00"
+    },
+    "OpenBareMap/us-glacier/2.0.1/preview/assets/preview.js": {
+      "bytes": 3363,
+      "sha256": "79ce19a0520ed6bd076b4a5a4330fdd9b00d8fca8001bf442cc78b2f0069682a",
+      "verifiedUTC": "2026-11-21T19:51:01.976714+00:00"
+    },
+    "OpenBareMap/us-glacier/2.0.1/preview/assets/sprites/outdoors.json": {
+      "bytes": 760,
+      "sha256": "e777903184842b2b08726fcfa5c6ca654f5761ff8c796f0a04c1e66f5551038e",
+      "verifiedUTC": "2026-11-21T19:51:01.933591+00:00"
+    },
+    "OpenBareMap/us-glacier/2.0.1/preview/assets/sprites/outdoors.png": {
+      "bytes": 3722,
+      "sha256": "32de87bc645686f95ef45737ba1331504079ba0de01f6d3d30a81bf41ed6133a",
+      "verifiedUTC": "2026-11-21T19:51:09.577624+00:00"
+    },
+    "OpenBareMap/us-glacier/2.0.1/preview/assets/sprites/outdoors@2x.json": {
+      "bytes": 771,
+      "sha256": "ca6052d8d86d5f3693247ca9179fedbfbfc950370506a9a5ffc485d69d8c458c",
+      "verifiedUTC": "2026-11-21T19:51:09.520810+00:00"
+    },
+    "OpenBareMap/us-glacier/2.0.1/preview/assets/sprites/outdoors@2x.png": {
+      "bytes": 7453,
+      "sha256": "c2230eae423ca94a4fe910a999bee38986231cf8bed2109c280657a30fec86cc",
+      "verifiedUTC": "2026-11-21T19:51:09.614258+00:00"
+    },
+    "OpenBareMap/us-glacier/2.0.1/preview/assets/terrain-attribution.html": {
+      "bytes": 1413,
+      "sha256": "b4ed33f22436e2ee81acc3853c1331c1968f50297d5b38ac0da2a31f6d2fb16d",
+      "verifiedUTC": "2026-11-21T19:51:09.504150+00:00"
+    },
+    "OpenBareMap/us-glacier/2.0.1/preview/assets/townlands.geojson": {
+      "bytes": 9403579,
+      "sha256": "ab3d1d254517904918fed1e93f614c2c0f2d6940b948844e39c63cdee31a1d62",
+      "verifiedUTC": "2026-11-21T19:51:09.982118+00:00"
+    },
+    "OpenBareMap/us-glacier/2.0.1/preview/data/us-glacier/basemap.pmtiles": {
+      "bytes": 20016271,
+      "sha256": "3efef1f3f7bdc7d403f70413b965fb2f5d4d3b2eae601ce4ab0fd9da782cf499",
+      "verifiedUTC": "2026-11-21T19:51:10.161214+00:00"
+    },
+    "OpenBareMap/us-glacier/2.0.1/preview/data/us-glacier/coast.pmtiles": {
+      "bytes": 26490,
+      "sha256": "0ee83ece4ee702bdfbac51b9ed12dbadf00b88d2227d841c7963fcc9698ef99f",
+      "verifiedUTC": "2026-11-21T19:51:09.535856+00:00"
+    },
+    "OpenBareMap/us-glacier/2.0.1/preview/data/us-glacier/grid.pmtiles": {
+      "bytes": 1864770,
+      "sha256": "04f22ebc6fb5c05ee9b6c626f8f07d4288847f04c2d5c17b64c8445eda0430f2",
+      "verifiedUTC": "2026-11-21T19:51:09.643009+00:00"
+    },
+    "OpenBareMap/us-glacier/2.0.1/preview/data/us-glacier/hillshade.pmtiles": {
+      "bytes": 44874724,
+      "sha256": "4c372c890b2734e476da47b15a14c204f7f1fdabdb576ff3e1ce6b3c6a5d5d96",
+      "verifiedUTC": "2026-11-21T19:51:25.255161+00:00"
+    },
+    "OpenBareMap/us-glacier/2.0.1/preview/data/us-glacier/topography.pmtiles": {
+      "bytes": 79600074,
+      "sha256": "d9c128059c65e9d387a80ca6bd1068a5feef90a62a3a6d45df3e13fb1d00b3e9",
+      "verifiedUTC": "2026-11-21T19:51:43.691569+00:00"
+    },
+    "OpenBareMap/us-glacier/2.0.1/preview/manifest.json": {
+      "bytes": 1621,
+      "sha256": "5443e93a58e2462ff646c51ba95755c2f19da4451258e724a43cb9bf089066f9",
+      "verifiedUTC": "2026-11-21T19:51:17.885774+00:00"
+    },
+    "OpenBareMap/us-glacier/2.0.1/preview/us-glacier/index.html": {
+      "bytes": 7248,
+      "sha256": "46d09860910fb3fe3727cc2995006859a447a6b6ee020406c9e7a0cc9f21f4d2",
+      "verifiedUTC": "2026-11-21T19:51:17.892503+00:00"
+    },
+    "OpenBareMap/us-glacier/2.0.1/preview/us-glacier/legend.html": {
+      "bytes": 1447,
+      "sha256": "0e672622385abd961cae52f5c1cc74722ce6836ae6553b46d537469fb67e4009",
+      "verifiedUTC": "2026-11-21T19:51:17.890991+00:00"
+    },
+    "OpenBareMap/us-glacier/2.0.1/preview/us-glacier/region.json": {
+      "bytes": 4233,
+      "sha256": "638caaa9bc6ac9e62885c1c2e4529d760ae40cbd504235df0f415f4ee739b2ae",
+      "verifiedUTC": "2026-11-21T19:51:17.891596+00:00"
+    },
+    "OpenBareMap/us-glacier/2.0.1/preview/us-glacier/style.json": {
+      "bytes": 2732030,
+      "sha256": "8237eacfc9278d3b6646a7f9e6609c38f75e6363f7f0261afbe79ee6e59dcc25",
+      "verifiedUTC": "2026-11-21T19:51:18.485013+00:00"
+    },
+    "OpenBareMap/us-national-parks/2.0.1/OpenBareMap-US-National-Parks-Android.zip": {
+      "bytes": 1596559697,
+      "sha256": "9adde3611533637cc0c4adcbe7926df30457dcc84a1af478e1a8ae8c6471c0ef",
+      "verifiedUTC": "2026-11-21T20:03:42.156928+00:00"
+    },
+    "OpenBareMap/us-national-parks/2.0.1/OpenBareMap-US-National-Parks-Garmin.zip": {
+      "bytes": 286316141,
+      "sha256": "462d8b97c057dd574ccc16291efe77c08351d8c59eace3242cae2ab7cc931bc2",
+      "verifiedUTC": "2026-11-21T19:59:52.023193+00:00"
+    },
+    "OpenBareMap/us-national-parks/2.0.1/OpenBareMap-US-National-Parks-iOS.zip": {
+      "bytes": 1596575079,
+      "sha256": "7b3dc97d1ce15dcf8fd1f94a9861d27b5d4dd9b7d3fdd2667f1e610373353492",
+      "verifiedUTC": "2026-11-21T20:03:40.247390+00:00"
+    },
+    "OpenBareMap/us-olympic/2.0.1/app-bundles-v1/android/OpenBareMap-Olympic-Android-Bundle.zip": {
+      "bytes": 208622786,
+      "sha256": "cd56267d71c68b86bb5b66ad06b34921d3ced0c6bca060b1367f3e1b958db082",
+      "verifiedUTC": "2026-11-21T19:53:36.544999+00:00"
+    },
+    "OpenBareMap/us-olympic/2.0.1/app-bundles-v1/android/SHA256SUMS.txt": {
+      "bytes": 188,
+      "sha256": "9f5dd9a4b6d9347371ed68b08cd40a7799e94d7454be0ea549e61b472f024a87",
+      "verifiedUTC": "2026-11-21T19:52:34.671486+00:00"
+    },
+    "OpenBareMap/us-olympic/2.0.1/app-bundles-v1/android/instructions.txt": {
+      "bytes": 4235,
+      "sha256": "4dccbea25d2576c76b8db3619eb9979c47d3224eacf50dc37b2ce68a136dde0f",
+      "verifiedUTC": "2026-11-21T19:52:34.667543+00:00"
+    },
+    "OpenBareMap/us-olympic/2.0.1/app-bundles-v1/android/manifest.json": {
+      "bytes": 1595,
+      "sha256": "685cac738208a9558531190ae46f8b16a20a156474039c585bfb041b2d132506",
+      "verifiedUTC": "2026-11-21T19:52:42.483164+00:00"
+    },
+    "OpenBareMap/us-olympic/2.0.1/app-bundles-v1/ios/OpenBareMap-Olympic-iOS-Bundle.zip": {
+      "bytes": 208624496,
+      "sha256": "77516fa0561a9bb4ee1572bca12799833602ee876d9550f3c8458a9cdde180e6",
+      "verifiedUTC": "2026-11-21T19:53:33.300325+00:00"
+    },
+    "OpenBareMap/us-olympic/2.0.1/app-bundles-v1/ios/SHA256SUMS.txt": {
+      "bytes": 184,
+      "sha256": "49b7fb6a39065861b9322233e51051d7713ca48036bf2a221ff965ed7600075c",
+      "verifiedUTC": "2026-11-21T19:52:42.483262+00:00"
+    },
+    "OpenBareMap/us-olympic/2.0.1/app-bundles-v1/ios/instructions.txt": {
+      "bytes": 3663,
+      "sha256": "c81e1c571d1f34e9f7b16a1cb46d18cb139209452347f6579e114be3ee7237e8",
+      "verifiedUTC": "2026-11-21T19:52:42.482983+00:00"
+    },
+    "OpenBareMap/us-olympic/2.0.1/app-bundles-v1/ios/manifest.json": {
+      "bytes": 1682,
+      "sha256": "0f7355093388dd48aeede543c645284ed41688af979ac108e3f065ce0211d460",
+      "verifiedUTC": "2026-11-21T19:52:42.477363+00:00"
+    },
+    "OpenBareMap/us-olympic/2.0.1/preview/assets/LICENSE.txt": {
+      "bytes": 5984,
+      "sha256": "ee5fc05a0677eaf69601d2c7db0d9ecd6cc27c3abc1d0733bc9ed34707cf8ef2",
+      "verifiedUTC": "2026-11-21T19:51:49.489596+00:00"
+    },
+    "OpenBareMap/us-olympic/2.0.1/preview/assets/PMTiles-LICENSE.txt": {
+      "bytes": 1713,
+      "sha256": "0371c38f338835f7fc13ed71176f3d92144e22c8b736a31cced57adbbeb647b3",
+      "verifiedUTC": "2026-11-21T19:51:57.784146+00:00"
+    },
+    "OpenBareMap/us-olympic/2.0.1/preview/assets/fonts/LICENSE-APACHE-2.0.txt": {
+      "bytes": 11358,
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "verifiedUTC": "2026-11-21T19:51:57.785615+00:00"
+    },
+    "OpenBareMap/us-olympic/2.0.1/preview/assets/fonts/Open Sans Bold/0-255.pbf": {
+      "bytes": 80025,
+      "sha256": "b3a5c066b416d69012009e3446ddd9544607ceb7355734922635521b6834c4d8",
+      "verifiedUTC": "2026-11-21T19:51:57.758131+00:00"
+    },
+    "OpenBareMap/us-olympic/2.0.1/preview/assets/fonts/Open Sans Bold/256-511.pbf": {
+      "bytes": 70900,
+      "sha256": "910a9d831040b8accfc9d70cf235dd4822e59a24e0d5e1736cee5d501c3d17a7",
+      "verifiedUTC": "2026-11-21T19:51:57.804697+00:00"
+    },
+    "OpenBareMap/us-olympic/2.0.1/preview/assets/fonts/Open Sans Bold/768-1023.pbf": {
+      "bytes": 36235,
+      "sha256": "bd7b11497f8cee930c1843e8fe546ce59214b7cfb5e53809d7eca2899ff509bc",
+      "verifiedUTC": "2026-11-21T19:51:57.786895+00:00"
+    },
+    "OpenBareMap/us-olympic/2.0.1/preview/assets/fonts/Open Sans Bold/8192-8447.pbf": {
+      "bytes": 10494,
+      "sha256": "18c7dbc4a21e80172e15cdd0c3f53de9f48663f5f8193fe153bb763ac1d731d8",
+      "verifiedUTC": "2026-11-21T19:51:57.785983+00:00"
+    },
+    "OpenBareMap/us-olympic/2.0.1/preview/assets/fonts/Open Sans Regular/0-255.pbf": {
+      "bytes": 74696,
+      "sha256": "0c8bdb284f2ad6f69bbb434a0208393f3a517bc8bf7ed1eccc4ac4791ebbcbfe",
+      "verifiedUTC": "2026-11-21T19:52:05.149821+00:00"
+    },
+    "OpenBareMap/us-olympic/2.0.1/preview/assets/fonts/Open Sans Regular/256-511.pbf": {
+      "bytes": 66481,
+      "sha256": "9962ad38d064edbeb226a6c7dcf1d58e7678508a805f980d2fe81bb3178ba68a",
+      "verifiedUTC": "2026-11-21T19:52:05.136748+00:00"
+    },
+    "OpenBareMap/us-olympic/2.0.1/preview/assets/fonts/Open Sans Regular/768-1023.pbf": {
+      "bytes": 33767,
+      "sha256": "fea6a1c8e1be55d9725520627b108d425723b2dc189b7dddfe56abd7d8238ea9",
+      "verifiedUTC": "2026-11-21T19:52:05.124926+00:00"
+    },
+    "OpenBareMap/us-olympic/2.0.1/preview/assets/fonts/Open Sans Regular/8192-8447.pbf": {
+      "bytes": 9663,
+      "sha256": "a57611157f0597b267ef36eb07ce5a41dddcc3b2f3b5b85779108b7bb48b1cde",
+      "verifiedUTC": "2026-11-21T19:52:05.114325+00:00"
+    },
+    "OpenBareMap/us-olympic/2.0.1/preview/assets/fonts/Open Sans Semibold/0-255.pbf": {
+      "bytes": 77571,
+      "sha256": "64da7011e07531351a249a3d26aad76e2f22e4e321e50833f742697b453e8365",
+      "verifiedUTC": "2026-11-21T19:52:05.139890+00:00"
+    },
+    "OpenBareMap/us-olympic/2.0.1/preview/assets/fonts/Open Sans Semibold/256-511.pbf": {
+      "bytes": 68869,
+      "sha256": "78298bbd8198c117ccdffe66bf9bbf646fdc1210b7e1bf222f5a9b29b366d7a5",
+      "verifiedUTC": "2026-11-21T19:52:05.118415+00:00"
+    },
+    "OpenBareMap/us-olympic/2.0.1/preview/assets/fonts/Open Sans Semibold/768-1023.pbf": {
+      "bytes": 35063,
+      "sha256": "35f7d1f9c9dfbc978635b7eb21bffb1113879182b2d518a7fbee6b825dd08274",
+      "verifiedUTC": "2026-11-21T19:52:05.091290+00:00"
+    },
+    "OpenBareMap/us-olympic/2.0.1/preview/assets/fonts/Open Sans Semibold/8192-8447.pbf": {
+      "bytes": 10092,
+      "sha256": "ee80ee7ef05e77bea017bcb387d970d61823fc37fdb0a51c446ae322c5974990",
+      "verifiedUTC": "2026-11-21T19:52:09.112247+00:00"
+    },
+    "OpenBareMap/us-olympic/2.0.1/preview/assets/legend.css": {
+      "bytes": 1513,
+      "sha256": "581de29c8d2e0511ce0f71abea5803fbd03cd42108ff5de4a9962bde2b258ad8",
+      "verifiedUTC": "2026-11-21T19:52:12.860539+00:00"
+    },
+    "OpenBareMap/us-olympic/2.0.1/preview/assets/legend.js": {
+      "bytes": 2813,
+      "sha256": "9701a94a97d492fb7a13455c2f5ded61fc1f723b28f5939eaccdd39c86f167ff",
+      "verifiedUTC": "2026-11-21T19:52:12.834267+00:00"
+    },
+    "OpenBareMap/us-olympic/2.0.1/preview/assets/legends/us-olympic@2x.png": {
+      "bytes": 229831,
+      "sha256": "61cbcf32ed92605db820ddc4be9718cdad65869dfa177b8ff13a6c4d094bd2f7",
+      "verifiedUTC": "2026-11-21T19:52:12.910624+00:00"
+    },
+    "OpenBareMap/us-olympic/2.0.1/preview/assets/maplibre-gl.css": {
+      "bytes": 69422,
+      "sha256": "792ac997dcf6ae6f643eb4e2dee4630c85e7056526bd8fb85ffe83c67d6c41b4",
+      "verifiedUTC": "2026-11-21T19:52:12.879936+00:00"
+    },
+    "OpenBareMap/us-olympic/2.0.1/preview/assets/maplibre-gl.js": {
+      "bytes": 939308,
+      "sha256": "b5a34e6930ff937dbbb9eec8892cffb80ba473cce88ae5ca8c4654432f5f0ebc",
+      "verifiedUTC": "2026-11-21T19:52:12.918416+00:00"
+    },
+    "OpenBareMap/us-olympic/2.0.1/preview/assets/pmtiles.js": {
+      "bytes": 20229,
+      "sha256": "caf981bc46f6327ee7e65d5dc964d89d38a69f60edca2bd4c5c890c21b554c6c",
+      "verifiedUTC": "2026-11-21T19:52:12.859883+00:00"
+    },
+    "OpenBareMap/us-olympic/2.0.1/preview/assets/preview.css": {
+      "bytes": 1912,
+      "sha256": "4a2bb515c9d6e871ff92a5a15cd189a0f49005fc43cac1831b3445626d95884c",
+      "verifiedUTC": "2026-11-21T19:52:12.839427+00:00"
+    },
+    "OpenBareMap/us-olympic/2.0.1/preview/assets/preview.js": {
+      "bytes": 3363,
+      "sha256": "79ce19a0520ed6bd076b4a5a4330fdd9b00d8fca8001bf442cc78b2f0069682a",
+      "verifiedUTC": "2026-11-21T19:52:17.800970+00:00"
+    },
+    "OpenBareMap/us-olympic/2.0.1/preview/assets/sprites/outdoors.json": {
+      "bytes": 760,
+      "sha256": "e777903184842b2b08726fcfa5c6ca654f5761ff8c796f0a04c1e66f5551038e",
+      "verifiedUTC": "2026-11-21T19:52:17.802216+00:00"
+    },
+    "OpenBareMap/us-olympic/2.0.1/preview/assets/sprites/outdoors.png": {
+      "bytes": 3722,
+      "sha256": "32de87bc645686f95ef45737ba1331504079ba0de01f6d3d30a81bf41ed6133a",
+      "verifiedUTC": "2026-11-21T19:52:17.899857+00:00"
+    },
+    "OpenBareMap/us-olympic/2.0.1/preview/assets/sprites/outdoors@2x.json": {
+      "bytes": 771,
+      "sha256": "ca6052d8d86d5f3693247ca9179fedbfbfc950370506a9a5ffc485d69d8c458c",
+      "verifiedUTC": "2026-11-21T19:52:17.805726+00:00"
+    },
+    "OpenBareMap/us-olympic/2.0.1/preview/assets/sprites/outdoors@2x.png": {
+      "bytes": 7453,
+      "sha256": "c2230eae423ca94a4fe910a999bee38986231cf8bed2109c280657a30fec86cc",
+      "verifiedUTC": "2026-11-21T19:52:17.864830+00:00"
+    },
+    "OpenBareMap/us-olympic/2.0.1/preview/assets/terrain-attribution.html": {
+      "bytes": 1413,
+      "sha256": "b4ed33f22436e2ee81acc3853c1331c1968f50297d5b38ac0da2a31f6d2fb16d",
+      "verifiedUTC": "2026-11-21T19:52:17.820662+00:00"
+    },
+    "OpenBareMap/us-olympic/2.0.1/preview/assets/townlands.geojson": {
+      "bytes": 9403579,
+      "sha256": "ab3d1d254517904918fed1e93f614c2c0f2d6940b948844e39c63cdee31a1d62",
+      "verifiedUTC": "2026-11-21T19:52:18.061401+00:00"
+    },
+    "OpenBareMap/us-olympic/2.0.1/preview/data/us-olympic/basemap.pmtiles": {
+      "bytes": 34193914,
+      "sha256": "664255bd7218be69ad8b1d82dc5b3eba91c9e5b03572ebf61a709ba369dac940",
+      "verifiedUTC": "2026-11-21T19:52:24.749646+00:00"
+    },
+    "OpenBareMap/us-olympic/2.0.1/preview/data/us-olympic/coast.pmtiles": {
+      "bytes": 2256076,
+      "sha256": "85bcf3665442fab9097bc01e2d85f68868e0434511bf0dd3cddc78d4b9c89fd1",
+      "verifiedUTC": "2026-11-21T19:52:28.136005+00:00"
+    },
+    "OpenBareMap/us-olympic/2.0.1/preview/data/us-olympic/grid.pmtiles": {
+      "bytes": 2748271,
+      "sha256": "0152ecb85942ca68b74f6a3ce20d554f98717022b76602ced9ba3747a97adab0",
+      "verifiedUTC": "2026-11-21T19:52:35.432525+00:00"
+    },
+    "OpenBareMap/us-olympic/2.0.1/preview/data/us-olympic/hillshade.pmtiles": {
+      "bytes": 49759215,
+      "sha256": "fc084b59e34d37fd46b51e2cf641032df6da3ea1d265db13a1c6fa49eef0f1f4",
+      "verifiedUTC": "2026-11-21T19:52:37.137396+00:00"
+    },
+    "OpenBareMap/us-olympic/2.0.1/preview/data/us-olympic/topography.pmtiles": {
+      "bytes": 100351761,
+      "sha256": "31896e8fea9e7cb7b27b6cf00a54be0ee90a3419d5f607cadf655ef03e6e1a57",
+      "verifiedUTC": "2026-11-21T19:52:46.452460+00:00"
+    },
+    "OpenBareMap/us-olympic/2.0.1/preview/manifest.json": {
+      "bytes": 1624,
+      "sha256": "6d83165377495e2e61daa0646222550684aa509a8bb7c5867e67d297f6173d75",
+      "verifiedUTC": "2026-11-21T19:52:27.522518+00:00"
+    },
+    "OpenBareMap/us-olympic/2.0.1/preview/us-olympic/index.html": {
+      "bytes": 7248,
+      "sha256": "d751010fd892c39463adb54f2676c5e6efff47513a9aa84cb12e3df96989008e",
+      "verifiedUTC": "2026-11-21T19:52:27.731206+00:00"
+    },
+    "OpenBareMap/us-olympic/2.0.1/preview/us-olympic/legend.html": {
+      "bytes": 1447,
+      "sha256": "79332b7868d110166467b58407b75053076fa56eb5eb8d6d885e57048802140e",
+      "verifiedUTC": "2026-11-21T19:52:27.419230+00:00"
+    },
+    "OpenBareMap/us-olympic/2.0.1/preview/us-olympic/region.json": {
+      "bytes": 4478,
+      "sha256": "374577c5267081a4655a4657367b71634fa9d84c465142c9584ba11fc11ac9ec",
+      "verifiedUTC": "2026-11-21T19:52:34.693045+00:00"
+    },
+    "OpenBareMap/us-olympic/2.0.1/preview/us-olympic/style.json": {
+      "bytes": 3486191,
+      "sha256": "35e904aa44bd336e6c6f69e25c179a4054b10f59ca229c34f6b51163a485317f",
+      "verifiedUTC": "2026-11-21T19:52:35.356700+00:00"
+    },
+    "OpenBareMap/us-rocky-mountain/2.0.1/app-bundles-v1/android/OpenBareMap-Rocky-Mountain-Android-Bundle.zip": {
+      "bytes": 77999068,
+      "sha256": "ef653a357bd1199606bd8005ea873d98326ca1df038062381eb6b5052cece1da",
+      "verifiedUTC": "2026-11-21T19:59:37.061424+00:00"
+    },
+    "OpenBareMap/us-rocky-mountain/2.0.1/app-bundles-v1/android/SHA256SUMS.txt": {
+      "bytes": 195,
+      "sha256": "deaa7b94d89c827f828fb6fca2b29af450e73d2617daae4ef61cb3819236e0c2",
+      "verifiedUTC": "2026-11-21T19:58:09.228051+00:00"
+    },
+    "OpenBareMap/us-rocky-mountain/2.0.1/app-bundles-v1/android/instructions.txt": {
+      "bytes": 4243,
+      "sha256": "ee74fe8a5eca2af0ad2aabbc864d88e5557e7784c15bd030d59d3f5334d3df7b",
+      "verifiedUTC": "2026-11-21T19:58:09.236127+00:00"
+    },
+    "OpenBareMap/us-rocky-mountain/2.0.1/app-bundles-v1/android/manifest.json": {
+      "bytes": 1643,
+      "sha256": "621d014a48f378f6c14b4aad9c074352a58901ae0bf180d2f3e1131b16ad9d21",
+      "verifiedUTC": "2026-11-21T19:58:15.795329+00:00"
+    },
+    "OpenBareMap/us-rocky-mountain/2.0.1/app-bundles-v1/ios/OpenBareMap-Rocky-Mountain-iOS-Bundle.zip": {
+      "bytes": 78000789,
+      "sha256": "d456cdddb3ed102528f12a37604799d6871e5f776095060994304cee3f03d472",
+      "verifiedUTC": "2026-11-21T19:59:51.030924+00:00"
+    },
+    "OpenBareMap/us-rocky-mountain/2.0.1/app-bundles-v1/ios/SHA256SUMS.txt": {
+      "bytes": 191,
+      "sha256": "fe952a6554856b0812b35b95082ab7599d6369a9c3a26b3154441a2744ca8621",
+      "verifiedUTC": "2026-11-21T19:58:22.751791+00:00"
+    },
+    "OpenBareMap/us-rocky-mountain/2.0.1/app-bundles-v1/ios/instructions.txt": {
+      "bytes": 3671,
+      "sha256": "1e1d47d0989f7675ea5c6259b642d8d4a82d6aea2c590b0ccc1d3aa37805ccb3",
+      "verifiedUTC": "2026-11-21T19:58:15.795913+00:00"
+    },
+    "OpenBareMap/us-rocky-mountain/2.0.1/app-bundles-v1/ios/manifest.json": {
+      "bytes": 1730,
+      "sha256": "48f11c542819be384bfaca800e9942ca824102fb2c0652a2273f29f4161cc093",
+      "verifiedUTC": "2026-11-21T19:58:22.723021+00:00"
+    },
+    "OpenBareMap/us-rocky-mountain/2.0.1/preview/assets/LICENSE.txt": {
+      "bytes": 5984,
+      "sha256": "ee5fc05a0677eaf69601d2c7db0d9ecd6cc27c3abc1d0733bc9ed34707cf8ef2",
+      "verifiedUTC": "2026-11-21T19:56:42.103909+00:00"
+    },
+    "OpenBareMap/us-rocky-mountain/2.0.1/preview/assets/PMTiles-LICENSE.txt": {
+      "bytes": 1713,
+      "sha256": "0371c38f338835f7fc13ed71176f3d92144e22c8b736a31cced57adbbeb647b3",
+      "verifiedUTC": "2026-11-21T19:56:42.110285+00:00"
+    },
+    "OpenBareMap/us-rocky-mountain/2.0.1/preview/assets/fonts/LICENSE-APACHE-2.0.txt": {
+      "bytes": 11358,
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "verifiedUTC": "2026-11-21T19:56:42.427491+00:00"
+    },
+    "OpenBareMap/us-rocky-mountain/2.0.1/preview/assets/fonts/Open Sans Bold/0-255.pbf": {
+      "bytes": 80025,
+      "sha256": "b3a5c066b416d69012009e3446ddd9544607ceb7355734922635521b6834c4d8",
+      "verifiedUTC": "2026-11-21T19:56:50.185048+00:00"
+    },
+    "OpenBareMap/us-rocky-mountain/2.0.1/preview/assets/fonts/Open Sans Bold/256-511.pbf": {
+      "bytes": 70900,
+      "sha256": "910a9d831040b8accfc9d70cf235dd4822e59a24e0d5e1736cee5d501c3d17a7",
+      "verifiedUTC": "2026-11-21T19:56:50.109868+00:00"
+    },
+    "OpenBareMap/us-rocky-mountain/2.0.1/preview/assets/fonts/Open Sans Bold/768-1023.pbf": {
+      "bytes": 36235,
+      "sha256": "bd7b11497f8cee930c1843e8fe546ce59214b7cfb5e53809d7eca2899ff509bc",
+      "verifiedUTC": "2026-11-21T19:56:50.094804+00:00"
+    },
+    "OpenBareMap/us-rocky-mountain/2.0.1/preview/assets/fonts/Open Sans Bold/8192-8447.pbf": {
+      "bytes": 10494,
+      "sha256": "18c7dbc4a21e80172e15cdd0c3f53de9f48663f5f8193fe153bb763ac1d731d8",
+      "verifiedUTC": "2026-11-21T19:56:58.986585+00:00"
+    },
+    "OpenBareMap/us-rocky-mountain/2.0.1/preview/assets/fonts/Open Sans Regular/0-255.pbf": {
+      "bytes": 74696,
+      "sha256": "0c8bdb284f2ad6f69bbb434a0208393f3a517bc8bf7ed1eccc4ac4791ebbcbfe",
+      "verifiedUTC": "2026-11-21T19:56:59.152965+00:00"
+    },
+    "OpenBareMap/us-rocky-mountain/2.0.1/preview/assets/fonts/Open Sans Regular/256-511.pbf": {
+      "bytes": 66481,
+      "sha256": "9962ad38d064edbeb226a6c7dcf1d58e7678508a805f980d2fe81bb3178ba68a",
+      "verifiedUTC": "2026-11-21T19:56:59.036039+00:00"
+    },
+    "OpenBareMap/us-rocky-mountain/2.0.1/preview/assets/fonts/Open Sans Regular/768-1023.pbf": {
+      "bytes": 33767,
+      "sha256": "fea6a1c8e1be55d9725520627b108d425723b2dc189b7dddfe56abd7d8238ea9",
+      "verifiedUTC": "2026-11-21T19:56:59.538222+00:00"
+    },
+    "OpenBareMap/us-rocky-mountain/2.0.1/preview/assets/fonts/Open Sans Regular/8192-8447.pbf": {
+      "bytes": 9663,
+      "sha256": "a57611157f0597b267ef36eb07ce5a41dddcc3b2f3b5b85779108b7bb48b1cde",
+      "verifiedUTC": "2026-11-21T19:57:06.628367+00:00"
+    },
+    "OpenBareMap/us-rocky-mountain/2.0.1/preview/assets/fonts/Open Sans Semibold/0-255.pbf": {
+      "bytes": 77571,
+      "sha256": "64da7011e07531351a249a3d26aad76e2f22e4e321e50833f742697b453e8365",
+      "verifiedUTC": "2026-11-21T19:57:06.735868+00:00"
+    },
+    "OpenBareMap/us-rocky-mountain/2.0.1/preview/assets/fonts/Open Sans Semibold/256-511.pbf": {
+      "bytes": 68869,
+      "sha256": "78298bbd8198c117ccdffe66bf9bbf646fdc1210b7e1bf222f5a9b29b366d7a5",
+      "verifiedUTC": "2026-11-21T19:57:06.721009+00:00"
+    },
+    "OpenBareMap/us-rocky-mountain/2.0.1/preview/assets/fonts/Open Sans Semibold/768-1023.pbf": {
+      "bytes": 35063,
+      "sha256": "35f7d1f9c9dfbc978635b7eb21bffb1113879182b2d518a7fbee6b825dd08274",
+      "verifiedUTC": "2026-11-21T19:57:06.659777+00:00"
+    },
+    "OpenBareMap/us-rocky-mountain/2.0.1/preview/assets/fonts/Open Sans Semibold/8192-8447.pbf": {
+      "bytes": 10092,
+      "sha256": "ee80ee7ef05e77bea017bcb387d970d61823fc37fdb0a51c446ae322c5974990",
+      "verifiedUTC": "2026-11-21T19:57:06.632388+00:00"
+    },
+    "OpenBareMap/us-rocky-mountain/2.0.1/preview/assets/legend.css": {
+      "bytes": 1513,
+      "sha256": "581de29c8d2e0511ce0f71abea5803fbd03cd42108ff5de4a9962bde2b258ad8",
+      "verifiedUTC": "2026-11-21T19:57:15.123341+00:00"
+    },
+    "OpenBareMap/us-rocky-mountain/2.0.1/preview/assets/legend.js": {
+      "bytes": 2813,
+      "sha256": "9701a94a97d492fb7a13455c2f5ded61fc1f723b28f5939eaccdd39c86f167ff",
+      "verifiedUTC": "2026-11-21T19:57:15.196249+00:00"
+    },
+    "OpenBareMap/us-rocky-mountain/2.0.1/preview/assets/legends/us-rocky-mountain@2x.png": {
+      "bytes": 230424,
+      "sha256": "6eea5b1fcd9493db50b8ca50625c2043d12f9e4aaf92d0ecc649050b40b0359a",
+      "verifiedUTC": "2026-11-21T19:57:15.482314+00:00"
+    },
+    "OpenBareMap/us-rocky-mountain/2.0.1/preview/assets/maplibre-gl.css": {
+      "bytes": 69422,
+      "sha256": "792ac997dcf6ae6f643eb4e2dee4630c85e7056526bd8fb85ffe83c67d6c41b4",
+      "verifiedUTC": "2026-11-21T19:57:15.265289+00:00"
+    },
+    "OpenBareMap/us-rocky-mountain/2.0.1/preview/assets/maplibre-gl.js": {
+      "bytes": 939308,
+      "sha256": "b5a34e6930ff937dbbb9eec8892cffb80ba473cce88ae5ca8c4654432f5f0ebc",
+      "verifiedUTC": "2026-11-21T19:57:15.572846+00:00"
+    },
+    "OpenBareMap/us-rocky-mountain/2.0.1/preview/assets/pmtiles.js": {
+      "bytes": 20229,
+      "sha256": "caf981bc46f6327ee7e65d5dc964d89d38a69f60edca2bd4c5c890c21b554c6c",
+      "verifiedUTC": "2026-11-21T19:57:23.888090+00:00"
+    },
+    "OpenBareMap/us-rocky-mountain/2.0.1/preview/assets/preview.css": {
+      "bytes": 1912,
+      "sha256": "4a2bb515c9d6e871ff92a5a15cd189a0f49005fc43cac1831b3445626d95884c",
+      "verifiedUTC": "2026-11-21T19:57:23.877326+00:00"
+    },
+    "OpenBareMap/us-rocky-mountain/2.0.1/preview/assets/preview.js": {
+      "bytes": 3363,
+      "sha256": "79ce19a0520ed6bd076b4a5a4330fdd9b00d8fca8001bf442cc78b2f0069682a",
+      "verifiedUTC": "2026-11-21T19:57:23.900901+00:00"
+    },
+    "OpenBareMap/us-rocky-mountain/2.0.1/preview/assets/sprites/outdoors.json": {
+      "bytes": 760,
+      "sha256": "e777903184842b2b08726fcfa5c6ca654f5761ff8c796f0a04c1e66f5551038e",
+      "verifiedUTC": "2026-11-21T19:57:23.892949+00:00"
+    },
+    "OpenBareMap/us-rocky-mountain/2.0.1/preview/assets/sprites/outdoors.png": {
+      "bytes": 3722,
+      "sha256": "32de87bc645686f95ef45737ba1331504079ba0de01f6d3d30a81bf41ed6133a",
+      "verifiedUTC": "2026-11-21T19:57:23.982215+00:00"
+    },
+    "OpenBareMap/us-rocky-mountain/2.0.1/preview/assets/sprites/outdoors@2x.json": {
+      "bytes": 771,
+      "sha256": "ca6052d8d86d5f3693247ca9179fedbfbfc950370506a9a5ffc485d69d8c458c",
+      "verifiedUTC": "2026-11-21T19:57:32.476161+00:00"
+    },
+    "OpenBareMap/us-rocky-mountain/2.0.1/preview/assets/sprites/outdoors@2x.png": {
+      "bytes": 7453,
+      "sha256": "c2230eae423ca94a4fe910a999bee38986231cf8bed2109c280657a30fec86cc",
+      "verifiedUTC": "2026-11-21T19:57:32.504975+00:00"
+    },
+    "OpenBareMap/us-rocky-mountain/2.0.1/preview/assets/terrain-attribution.html": {
+      "bytes": 1413,
+      "sha256": "b4ed33f22436e2ee81acc3853c1331c1968f50297d5b38ac0da2a31f6d2fb16d",
+      "verifiedUTC": "2026-11-21T19:57:32.532498+00:00"
+    },
+    "OpenBareMap/us-rocky-mountain/2.0.1/preview/assets/townlands.geojson": {
+      "bytes": 9403579,
+      "sha256": "ab3d1d254517904918fed1e93f614c2c0f2d6940b948844e39c63cdee31a1d62",
+      "verifiedUTC": "2026-11-21T19:57:38.998093+00:00"
+    },
+    "OpenBareMap/us-rocky-mountain/2.0.1/preview/data/us-rocky-mountain/basemap.pmtiles": {
+      "bytes": 14869434,
+      "sha256": "57301e3ae140a70c5a24816a4bfd12cb6c57c78266becc55e621b1289494869e",
+      "verifiedUTC": "2026-11-21T19:57:53.349057+00:00"
+    },
+    "OpenBareMap/us-rocky-mountain/2.0.1/preview/data/us-rocky-mountain/coast.pmtiles": {
+      "bytes": 19166,
+      "sha256": "9fcbdec25b2cb7e8ac9a2cc04f44f0833a24d627f746e9580403c332cfd6249a",
+      "verifiedUTC": "2026-11-21T19:57:38.009559+00:00"
+    },
+    "OpenBareMap/us-rocky-mountain/2.0.1/preview/data/us-rocky-mountain/grid.pmtiles": {
+      "bytes": 628642,
+      "sha256": "7c3bab3bb7e55a1283317f716925ba3f73d657ac9bf4810c7c5c4f105c3b20ef",
+      "verifiedUTC": "2026-11-21T19:57:44.524983+00:00"
+    },
+    "OpenBareMap/us-rocky-mountain/2.0.1/preview/data/us-rocky-mountain/hillshade.pmtiles": {
+      "bytes": 21130314,
+      "sha256": "c77e4f4e7695cbfeba75c4b77c3ff9b9d9ced4f2c78f1a768d2ec4dd2c75a196",
+      "verifiedUTC": "2026-11-21T19:58:01.771735+00:00"
+    },
+    "OpenBareMap/us-rocky-mountain/2.0.1/preview/data/us-rocky-mountain/topography.pmtiles": {
+      "bytes": 31382366,
+      "sha256": "c94032d3b41723ac4fd295f7032134a4a1010cb1f647374a3cf52be65c581dd6",
+      "verifiedUTC": "2026-11-21T19:58:37.950487+00:00"
+    },
+    "OpenBareMap/us-rocky-mountain/2.0.1/preview/manifest.json": {
+      "bytes": 1633,
+      "sha256": "0bbf9907eb59323a6e9d5c5c928a1c18de6df5cce01ca15e57e887c8f02a3041",
+      "verifiedUTC": "2026-11-21T19:57:43.725446+00:00"
+    },
+    "OpenBareMap/us-rocky-mountain/2.0.1/preview/us-rocky-mountain/index.html": {
+      "bytes": 7304,
+      "sha256": "593f0545f5912eb8d8ce7b12e9d05ec3a0bcd2fb0b2e57fe1a8662ba9ea09ccf",
+      "verifiedUTC": "2026-11-21T19:57:52.506304+00:00"
+    },
+    "OpenBareMap/us-rocky-mountain/2.0.1/preview/us-rocky-mountain/legend.html": {
+      "bytes": 1496,
+      "sha256": "8ad15c7e7820177ac001427f355338cc157fc01866d7feaca554c1e7ced241d5",
+      "verifiedUTC": "2026-11-21T19:57:52.215038+00:00"
+    },
+    "OpenBareMap/us-rocky-mountain/2.0.1/preview/us-rocky-mountain/region.json": {
+      "bytes": 3973,
+      "sha256": "b73c603f1469649e5b1796fb4827154a2c046467d3131dd675a626043beae794",
+      "verifiedUTC": "2026-11-21T19:58:00.460239+00:00"
+    },
+    "OpenBareMap/us-rocky-mountain/2.0.1/preview/us-rocky-mountain/style.json": {
+      "bytes": 2731454,
+      "sha256": "a976b707144ede760213e3f8b339a1b68154a48b35b7f75e306e60dd08eaf4c9",
+      "verifiedUTC": "2026-11-21T19:58:05.840196+00:00"
+    },
+    "OpenBareMap/us-yellowstone-grand-teton/2.0.1/app-bundles-v1/android/OpenBareMap-Yellowstone-Grand-Teton-Android-Bundle.zip": {
+      "bytes": 384372058,
+      "sha256": "c242d30fa24f32c0aeab9e78c4c980e36d1396beb95302f88b4e623804f97867",
+      "verifiedUTC": "2026-11-21T19:58:54.759639+00:00"
+    },
+    "OpenBareMap/us-yellowstone-grand-teton/2.0.1/app-bundles-v1/android/SHA256SUMS.txt": {
+      "bytes": 204,
+      "sha256": "bba94476753a2a9229b7f3eb798705116c9be1bdd96339bb21a38cfe78e75ac4",
+      "verifiedUTC": "2026-11-21T19:56:07.763996+00:00"
+    },
+    "OpenBareMap/us-yellowstone-grand-teton/2.0.1/app-bundles-v1/android/instructions.txt": {
+      "bytes": 4254,
+      "sha256": "f8c1d3f67185a19974de452f02511cb27974c711ac420b2458099d3486398d34",
+      "verifiedUTC": "2026-11-21T19:56:07.884624+00:00"
+    },
+    "OpenBareMap/us-yellowstone-grand-teton/2.0.1/app-bundles-v1/android/manifest.json": {
+      "bytes": 1707,
+      "sha256": "bd57171b72f641adc09a6f2d9b769d03f61fd4c7566a2a4f736550c356cef9e5",
+      "verifiedUTC": "2026-11-21T19:56:07.783572+00:00"
+    },
+    "OpenBareMap/us-yellowstone-grand-teton/2.0.1/app-bundles-v1/ios/OpenBareMap-Yellowstone-Grand-Teton-iOS-Bundle.zip": {
+      "bytes": 384373803,
+      "sha256": "d89e28365ecbc74950783abf68c5547614d4a657a5430f47d47bb5f91bfe66ad",
+      "verifiedUTC": "2026-11-21T19:58:45.376397+00:00"
+    },
+    "OpenBareMap/us-yellowstone-grand-teton/2.0.1/app-bundles-v1/ios/SHA256SUMS.txt": {
+      "bytes": 200,
+      "sha256": "e02550684a64cd6c8b2c7438df89f19cf96487f667d7655349e9813f5f4418d5",
+      "verifiedUTC": "2026-11-21T19:56:16.615251+00:00"
+    },
+    "OpenBareMap/us-yellowstone-grand-teton/2.0.1/app-bundles-v1/ios/instructions.txt": {
+      "bytes": 3682,
+      "sha256": "29927cad1731500d4aea7eedb2bfca8ff50626a583f198638977287791733404",
+      "verifiedUTC": "2026-11-21T19:56:10.894984+00:00"
+    },
+    "OpenBareMap/us-yellowstone-grand-teton/2.0.1/app-bundles-v1/ios/manifest.json": {
+      "bytes": 1794,
+      "sha256": "c8b5ed32aa1020d0d8e00e58aebbac4e9c7df34beb7bb5fd815a73f27ac3df4d",
+      "verifiedUTC": "2026-11-21T19:56:16.633734+00:00"
+    },
+    "OpenBareMap/us-yellowstone-grand-teton/2.0.1/preview/assets/LICENSE.txt": {
+      "bytes": 5984,
+      "sha256": "ee5fc05a0677eaf69601d2c7db0d9ecd6cc27c3abc1d0733bc9ed34707cf8ef2",
+      "verifiedUTC": "2026-11-21T19:55:23.817189+00:00"
+    },
+    "OpenBareMap/us-yellowstone-grand-teton/2.0.1/preview/assets/PMTiles-LICENSE.txt": {
+      "bytes": 1713,
+      "sha256": "0371c38f338835f7fc13ed71176f3d92144e22c8b736a31cced57adbbeb647b3",
+      "verifiedUTC": "2026-11-21T19:55:23.776707+00:00"
+    },
+    "OpenBareMap/us-yellowstone-grand-teton/2.0.1/preview/assets/fonts/LICENSE-APACHE-2.0.txt": {
+      "bytes": 11358,
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "verifiedUTC": "2026-11-21T19:55:23.778650+00:00"
+    },
+    "OpenBareMap/us-yellowstone-grand-teton/2.0.1/preview/assets/fonts/Open Sans Bold/0-255.pbf": {
+      "bytes": 80025,
+      "sha256": "b3a5c066b416d69012009e3446ddd9544607ceb7355734922635521b6834c4d8",
+      "verifiedUTC": "2026-11-21T19:55:23.854357+00:00"
+    },
+    "OpenBareMap/us-yellowstone-grand-teton/2.0.1/preview/assets/fonts/Open Sans Bold/256-511.pbf": {
+      "bytes": 70900,
+      "sha256": "910a9d831040b8accfc9d70cf235dd4822e59a24e0d5e1736cee5d501c3d17a7",
+      "verifiedUTC": "2026-11-21T19:55:27.769684+00:00"
+    },
+    "OpenBareMap/us-yellowstone-grand-teton/2.0.1/preview/assets/fonts/Open Sans Bold/768-1023.pbf": {
+      "bytes": 36235,
+      "sha256": "bd7b11497f8cee930c1843e8fe546ce59214b7cfb5e53809d7eca2899ff509bc",
+      "verifiedUTC": "2026-11-21T19:55:31.538509+00:00"
+    },
+    "OpenBareMap/us-yellowstone-grand-teton/2.0.1/preview/assets/fonts/Open Sans Bold/8192-8447.pbf": {
+      "bytes": 10494,
+      "sha256": "18c7dbc4a21e80172e15cdd0c3f53de9f48663f5f8193fe153bb763ac1d731d8",
+      "verifiedUTC": "2026-11-21T19:55:31.541309+00:00"
+    },
+    "OpenBareMap/us-yellowstone-grand-teton/2.0.1/preview/assets/fonts/Open Sans Regular/0-255.pbf": {
+      "bytes": 74696,
+      "sha256": "0c8bdb284f2ad6f69bbb434a0208393f3a517bc8bf7ed1eccc4ac4791ebbcbfe",
+      "verifiedUTC": "2026-11-21T19:55:31.601489+00:00"
+    },
+    "OpenBareMap/us-yellowstone-grand-teton/2.0.1/preview/assets/fonts/Open Sans Regular/256-511.pbf": {
+      "bytes": 66481,
+      "sha256": "9962ad38d064edbeb226a6c7dcf1d58e7678508a805f980d2fe81bb3178ba68a",
+      "verifiedUTC": "2026-11-21T19:55:31.638536+00:00"
+    },
+    "OpenBareMap/us-yellowstone-grand-teton/2.0.1/preview/assets/fonts/Open Sans Regular/768-1023.pbf": {
+      "bytes": 33767,
+      "sha256": "fea6a1c8e1be55d9725520627b108d425723b2dc189b7dddfe56abd7d8238ea9",
+      "verifiedUTC": "2026-11-21T19:55:31.539145+00:00"
+    },
+    "OpenBareMap/us-yellowstone-grand-teton/2.0.1/preview/assets/fonts/Open Sans Regular/8192-8447.pbf": {
+      "bytes": 9663,
+      "sha256": "a57611157f0597b267ef36eb07ce5a41dddcc3b2f3b5b85779108b7bb48b1cde",
+      "verifiedUTC": "2026-11-21T19:55:34.956875+00:00"
+    },
+    "OpenBareMap/us-yellowstone-grand-teton/2.0.1/preview/assets/fonts/Open Sans Semibold/0-255.pbf": {
+      "bytes": 77571,
+      "sha256": "64da7011e07531351a249a3d26aad76e2f22e4e321e50833f742697b453e8365",
+      "verifiedUTC": "2026-11-21T19:55:38.023734+00:00"
+    },
+    "OpenBareMap/us-yellowstone-grand-teton/2.0.1/preview/assets/fonts/Open Sans Semibold/256-511.pbf": {
+      "bytes": 68869,
+      "sha256": "78298bbd8198c117ccdffe66bf9bbf646fdc1210b7e1bf222f5a9b29b366d7a5",
+      "verifiedUTC": "2026-11-21T19:55:38.028825+00:00"
+    },
+    "OpenBareMap/us-yellowstone-grand-teton/2.0.1/preview/assets/fonts/Open Sans Semibold/768-1023.pbf": {
+      "bytes": 35063,
+      "sha256": "35f7d1f9c9dfbc978635b7eb21bffb1113879182b2d518a7fbee6b825dd08274",
+      "verifiedUTC": "2026-11-21T19:55:38.024545+00:00"
+    },
+    "OpenBareMap/us-yellowstone-grand-teton/2.0.1/preview/assets/fonts/Open Sans Semibold/8192-8447.pbf": {
+      "bytes": 10092,
+      "sha256": "ee80ee7ef05e77bea017bcb387d970d61823fc37fdb0a51c446ae322c5974990",
+      "verifiedUTC": "2026-11-21T19:55:37.980023+00:00"
+    },
+    "OpenBareMap/us-yellowstone-grand-teton/2.0.1/preview/assets/legend.css": {
+      "bytes": 1513,
+      "sha256": "581de29c8d2e0511ce0f71abea5803fbd03cd42108ff5de4a9962bde2b258ad8",
+      "verifiedUTC": "2026-11-21T19:55:38.040915+00:00"
+    },
+    "OpenBareMap/us-yellowstone-grand-teton/2.0.1/preview/assets/legend.js": {
+      "bytes": 2813,
+      "sha256": "9701a94a97d492fb7a13455c2f5ded61fc1f723b28f5939eaccdd39c86f167ff",
+      "verifiedUTC": "2026-11-21T19:55:41.148375+00:00"
+    },
+    "OpenBareMap/us-yellowstone-grand-teton/2.0.1/preview/assets/legends/us-yellowstone-grand-teton@2x.png": {
+      "bytes": 230183,
+      "sha256": "16b103a95bf1627b44adf0808e33ca0e1f534d6fea89b5d70c4253d8008f400c",
+      "verifiedUTC": "2026-11-21T19:55:45.487763+00:00"
+    },
+    "OpenBareMap/us-yellowstone-grand-teton/2.0.1/preview/assets/maplibre-gl.css": {
+      "bytes": 69422,
+      "sha256": "792ac997dcf6ae6f643eb4e2dee4630c85e7056526bd8fb85ffe83c67d6c41b4",
+      "verifiedUTC": "2026-11-21T19:55:45.414550+00:00"
+    },
+    "OpenBareMap/us-yellowstone-grand-teton/2.0.1/preview/assets/maplibre-gl.js": {
+      "bytes": 939308,
+      "sha256": "b5a34e6930ff937dbbb9eec8892cffb80ba473cce88ae5ca8c4654432f5f0ebc",
+      "verifiedUTC": "2026-11-21T19:55:45.508288+00:00"
+    },
+    "OpenBareMap/us-yellowstone-grand-teton/2.0.1/preview/assets/pmtiles.js": {
+      "bytes": 20229,
+      "sha256": "caf981bc46f6327ee7e65d5dc964d89d38a69f60edca2bd4c5c890c21b554c6c",
+      "verifiedUTC": "2026-11-21T19:55:45.430956+00:00"
+    },
+    "OpenBareMap/us-yellowstone-grand-teton/2.0.1/preview/assets/preview.css": {
+      "bytes": 1912,
+      "sha256": "4a2bb515c9d6e871ff92a5a15cd189a0f49005fc43cac1831b3445626d95884c",
+      "verifiedUTC": "2026-11-21T19:55:45.360421+00:00"
+    },
+    "OpenBareMap/us-yellowstone-grand-teton/2.0.1/preview/assets/preview.js": {
+      "bytes": 3363,
+      "sha256": "79ce19a0520ed6bd076b4a5a4330fdd9b00d8fca8001bf442cc78b2f0069682a",
+      "verifiedUTC": "2026-11-21T19:55:45.420320+00:00"
+    },
+    "OpenBareMap/us-yellowstone-grand-teton/2.0.1/preview/assets/sprites/outdoors.json": {
+      "bytes": 760,
+      "sha256": "e777903184842b2b08726fcfa5c6ca654f5761ff8c796f0a04c1e66f5551038e",
+      "verifiedUTC": "2026-11-21T19:55:45.391044+00:00"
+    },
+    "OpenBareMap/us-yellowstone-grand-teton/2.0.1/preview/assets/sprites/outdoors.png": {
+      "bytes": 3722,
+      "sha256": "32de87bc645686f95ef45737ba1331504079ba0de01f6d3d30a81bf41ed6133a",
+      "verifiedUTC": "2026-11-21T19:55:53.567901+00:00"
+    },
+    "OpenBareMap/us-yellowstone-grand-teton/2.0.1/preview/assets/sprites/outdoors@2x.json": {
+      "bytes": 771,
+      "sha256": "ca6052d8d86d5f3693247ca9179fedbfbfc950370506a9a5ffc485d69d8c458c",
+      "verifiedUTC": "2026-11-21T19:55:53.520983+00:00"
+    },
+    "OpenBareMap/us-yellowstone-grand-teton/2.0.1/preview/assets/sprites/outdoors@2x.png": {
+      "bytes": 7453,
+      "sha256": "c2230eae423ca94a4fe910a999bee38986231cf8bed2109c280657a30fec86cc",
+      "verifiedUTC": "2026-11-21T19:55:53.573165+00:00"
+    },
+    "OpenBareMap/us-yellowstone-grand-teton/2.0.1/preview/assets/terrain-attribution.html": {
+      "bytes": 1413,
+      "sha256": "b4ed33f22436e2ee81acc3853c1331c1968f50297d5b38ac0da2a31f6d2fb16d",
+      "verifiedUTC": "2026-11-21T19:55:53.534299+00:00"
+    },
+    "OpenBareMap/us-yellowstone-grand-teton/2.0.1/preview/assets/townlands.geojson": {
+      "bytes": 9403579,
+      "sha256": "ab3d1d254517904918fed1e93f614c2c0f2d6940b948844e39c63cdee31a1d62",
+      "verifiedUTC": "2026-11-21T19:55:53.939678+00:00"
+    },
+    "OpenBareMap/us-yellowstone-grand-teton/2.0.1/preview/data/us-yellowstone-grand-teton/basemap.pmtiles": {
+      "bytes": 81140793,
+      "sha256": "16f1ca4993ea93de67487361666b3e3a442cd2a009c04debb221f3e33bfd4c1d",
+      "verifiedUTC": "2026-11-21T19:56:03.397916+00:00"
+    },
+    "OpenBareMap/us-yellowstone-grand-teton/2.0.1/preview/data/us-yellowstone-grand-teton/coast.pmtiles": {
+      "bytes": 36755,
+      "sha256": "907088afb4133ce91709bd2ee48e075a01cfddce080f9bd358eb1fce0caf20d3",
+      "verifiedUTC": "2026-11-21T19:55:53.487073+00:00"
+    },
+    "OpenBareMap/us-yellowstone-grand-teton/2.0.1/preview/data/us-yellowstone-grand-teton/grid.pmtiles": {
+      "bytes": 3804500,
+      "sha256": "da321f5ffc00541e287d9e67a9b6ac63921882133beca55b48e997d6eb919921",
+      "verifiedUTC": "2026-11-21T19:55:53.758447+00:00"
+    },
+    "OpenBareMap/us-yellowstone-grand-teton/2.0.1/preview/data/us-yellowstone-grand-teton/hillshade.pmtiles": {
+      "bytes": 99464517,
+      "sha256": "09643f6aa27d428abb0a5094ebc73c0f77d2791ceb92941c272e6653fc7099fd",
+      "verifiedUTC": "2026-11-21T19:57:00.426166+00:00"
+    },
+    "OpenBareMap/us-yellowstone-grand-teton/2.0.1/preview/data/us-yellowstone-grand-teton/topography.pmtiles": {
+      "bytes": 172153129,
+      "sha256": "f9c265e3710912739d2a1a8fe187ca801d8a2bfe8fd9a61c1867fb5462240a50",
+      "verifiedUTC": "2026-11-21T19:59:48.717774+00:00"
+    },
+    "OpenBareMap/us-yellowstone-grand-teton/2.0.1/preview/manifest.json": {
+      "bytes": 1656,
+      "sha256": "38ea0a59b0d932fe9382e85ba207ce9eb6f722be02f9c81926dddbce0a00ff95",
+      "verifiedUTC": "2026-11-21T19:56:00.432643+00:00"
+    },
+    "OpenBareMap/us-yellowstone-grand-teton/2.0.1/preview/us-yellowstone-grand-teton/index.html": {
+      "bytes": 7418,
+      "sha256": "e27e544090e9e97597103c2dfc2be614a5f0568853bb9f6c847a47437ea39b3a",
+      "verifiedUTC": "2026-11-21T19:56:00.539225+00:00"
+    },
+    "OpenBareMap/us-yellowstone-grand-teton/2.0.1/preview/us-yellowstone-grand-teton/legend.html": {
+      "bytes": 1583,
+      "sha256": "7989340e0d7ec0add67c74789383f557394ce3ecbcf913616fbf3bfa4db3ce2e",
+      "verifiedUTC": "2026-11-21T19:56:00.487656+00:00"
+    },
+    "OpenBareMap/us-yellowstone-grand-teton/2.0.1/preview/us-yellowstone-grand-teton/region.json": {
+      "bytes": 5060,
+      "sha256": "ba484a4be689eed9594c78465ffc5bf7f51d187233dbea7e56c1bb538801ec69",
+      "verifiedUTC": "2026-11-21T19:56:00.526728+00:00"
+    },
+    "OpenBareMap/us-yellowstone-grand-teton/2.0.1/preview/us-yellowstone-grand-teton/style.json": {
+      "bytes": 2928349,
+      "sha256": "42bb8a1b6fb3e6592978a054da5062e73ca1fb2e5bb9a270c67105ebcd6e0db8",
+      "verifiedUTC": "2026-11-21T19:56:00.902154+00:00"
+    },
+    "OpenBareMap/us-yosemite/2.0.1/app-bundles-v1/android/OpenBareMap-Yosemite-Android-Bundle.zip": {
+      "bytes": 180416107,
+      "sha256": "6d0c2fb49dc59863032bb87b61b0bf52a5a43deff2bd9e75bc5c338d17fc67a6",
+      "verifiedUTC": "2026-11-21T19:55:44.508396+00:00"
+    },
+    "OpenBareMap/us-yosemite/2.0.1/app-bundles-v1/android/SHA256SUMS.txt": {
+      "bytes": 189,
+      "sha256": "828be887518b0a527fee5a47e1fa73e86c88c47a5cccc489f5d5dc07b4eb9e8f",
+      "verifiedUTC": "2026-11-21T19:55:02.847211+00:00"
+    },
+    "OpenBareMap/us-yosemite/2.0.1/app-bundles-v1/android/instructions.txt": {
+      "bytes": 4237,
+      "sha256": "3ee04e2ad9b3bff7e216b3bd086bb1cadd0b025571c5c35c6f54d7b8710d7f66",
+      "verifiedUTC": "2026-11-21T19:55:02.817457+00:00"
+    },
+    "OpenBareMap/us-yosemite/2.0.1/app-bundles-v1/android/manifest.json": {
+      "bytes": 1602,
+      "sha256": "b06dd6ccae740aa856ac4a7b43c0eccb9b752820bd4929b97ef189cfd49f8bcd",
+      "verifiedUTC": "2026-11-21T19:55:02.843196+00:00"
+    },
+    "OpenBareMap/us-yosemite/2.0.1/app-bundles-v1/ios/OpenBareMap-Yosemite-iOS-Bundle.zip": {
+      "bytes": 180417818,
+      "sha256": "f15aefb99df060fef614584b5d7590c99eb913af7d2f3abbf8b5e66b083f0186",
+      "verifiedUTC": "2026-11-21T19:55:42.254299+00:00"
+    },
+    "OpenBareMap/us-yosemite/2.0.1/app-bundles-v1/ios/SHA256SUMS.txt": {
+      "bytes": 185,
+      "sha256": "5332514ebec936e8b46837f24c9b555dd8b5f226cee0bfbdf997f207b1d97537",
+      "verifiedUTC": "2026-11-21T19:55:12.080826+00:00"
+    },
+    "OpenBareMap/us-yosemite/2.0.1/app-bundles-v1/ios/instructions.txt": {
+      "bytes": 3665,
+      "sha256": "1c69d8dfd0e4d2245c96d9ea96671f18a297db9d4083e10b1846495a2ca15805",
+      "verifiedUTC": "2026-11-21T19:55:11.742709+00:00"
+    },
+    "OpenBareMap/us-yosemite/2.0.1/app-bundles-v1/ios/manifest.json": {
+      "bytes": 1689,
+      "sha256": "21b409a7f402e42f69d924bc6bd22c7aca7a68a51ff0ed36fa9ac1b09a3791cf",
+      "verifiedUTC": "2026-11-21T19:55:11.748624+00:00"
+    },
+    "OpenBareMap/us-yosemite/2.0.1/preview/assets/LICENSE.txt": {
+      "bytes": 5984,
+      "sha256": "ee5fc05a0677eaf69601d2c7db0d9ecd6cc27c3abc1d0733bc9ed34707cf8ef2",
+      "verifiedUTC": "2026-11-21T19:54:25.464193+00:00"
+    },
+    "OpenBareMap/us-yosemite/2.0.1/preview/assets/PMTiles-LICENSE.txt": {
+      "bytes": 1713,
+      "sha256": "0371c38f338835f7fc13ed71176f3d92144e22c8b736a31cced57adbbeb647b3",
+      "verifiedUTC": "2026-11-21T19:54:25.507349+00:00"
+    },
+    "OpenBareMap/us-yosemite/2.0.1/preview/assets/fonts/LICENSE-APACHE-2.0.txt": {
+      "bytes": 11358,
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "verifiedUTC": "2026-11-21T19:54:25.501447+00:00"
+    },
+    "OpenBareMap/us-yosemite/2.0.1/preview/assets/fonts/Open Sans Bold/0-255.pbf": {
+      "bytes": 80025,
+      "sha256": "b3a5c066b416d69012009e3446ddd9544607ceb7355734922635521b6834c4d8",
+      "verifiedUTC": "2026-11-21T19:54:25.510729+00:00"
+    },
+    "OpenBareMap/us-yosemite/2.0.1/preview/assets/fonts/Open Sans Bold/256-511.pbf": {
+      "bytes": 70900,
+      "sha256": "910a9d831040b8accfc9d70cf235dd4822e59a24e0d5e1736cee5d501c3d17a7",
+      "verifiedUTC": "2026-11-21T19:54:25.496249+00:00"
+    },
+    "OpenBareMap/us-yosemite/2.0.1/preview/assets/fonts/Open Sans Bold/768-1023.pbf": {
+      "bytes": 36235,
+      "sha256": "bd7b11497f8cee930c1843e8fe546ce59214b7cfb5e53809d7eca2899ff509bc",
+      "verifiedUTC": "2026-11-21T19:54:25.521691+00:00"
+    },
+    "OpenBareMap/us-yosemite/2.0.1/preview/assets/fonts/Open Sans Bold/8192-8447.pbf": {
+      "bytes": 10494,
+      "sha256": "18c7dbc4a21e80172e15cdd0c3f53de9f48663f5f8193fe153bb763ac1d731d8",
+      "verifiedUTC": "2026-11-21T19:54:25.467736+00:00"
+    },
+    "OpenBareMap/us-yosemite/2.0.1/preview/assets/fonts/Open Sans Regular/0-255.pbf": {
+      "bytes": 74696,
+      "sha256": "0c8bdb284f2ad6f69bbb434a0208393f3a517bc8bf7ed1eccc4ac4791ebbcbfe",
+      "verifiedUTC": "2026-11-21T19:54:25.518343+00:00"
+    },
+    "OpenBareMap/us-yosemite/2.0.1/preview/assets/fonts/Open Sans Regular/256-511.pbf": {
+      "bytes": 66481,
+      "sha256": "9962ad38d064edbeb226a6c7dcf1d58e7678508a805f980d2fe81bb3178ba68a",
+      "verifiedUTC": "2026-11-21T19:54:32.135315+00:00"
+    },
+    "OpenBareMap/us-yosemite/2.0.1/preview/assets/fonts/Open Sans Regular/768-1023.pbf": {
+      "bytes": 33767,
+      "sha256": "fea6a1c8e1be55d9725520627b108d425723b2dc189b7dddfe56abd7d8238ea9",
+      "verifiedUTC": "2026-11-21T19:54:32.177467+00:00"
+    },
+    "OpenBareMap/us-yosemite/2.0.1/preview/assets/fonts/Open Sans Regular/8192-8447.pbf": {
+      "bytes": 9663,
+      "sha256": "a57611157f0597b267ef36eb07ce5a41dddcc3b2f3b5b85779108b7bb48b1cde",
+      "verifiedUTC": "2026-11-21T19:54:32.180892+00:00"
+    },
+    "OpenBareMap/us-yosemite/2.0.1/preview/assets/fonts/Open Sans Semibold/0-255.pbf": {
+      "bytes": 77571,
+      "sha256": "64da7011e07531351a249a3d26aad76e2f22e4e321e50833f742697b453e8365",
+      "verifiedUTC": "2026-11-21T19:54:32.159165+00:00"
+    },
+    "OpenBareMap/us-yosemite/2.0.1/preview/assets/fonts/Open Sans Semibold/256-511.pbf": {
+      "bytes": 68869,
+      "sha256": "78298bbd8198c117ccdffe66bf9bbf646fdc1210b7e1bf222f5a9b29b366d7a5",
+      "verifiedUTC": "2026-11-21T19:54:32.155485+00:00"
+    },
+    "OpenBareMap/us-yosemite/2.0.1/preview/assets/fonts/Open Sans Semibold/768-1023.pbf": {
+      "bytes": 35063,
+      "sha256": "35f7d1f9c9dfbc978635b7eb21bffb1113879182b2d518a7fbee6b825dd08274",
+      "verifiedUTC": "2026-11-21T19:54:32.186644+00:00"
+    },
+    "OpenBareMap/us-yosemite/2.0.1/preview/assets/fonts/Open Sans Semibold/8192-8447.pbf": {
+      "bytes": 10092,
+      "sha256": "ee80ee7ef05e77bea017bcb387d970d61823fc37fdb0a51c446ae322c5974990",
+      "verifiedUTC": "2026-11-21T19:54:32.159795+00:00"
+    },
+    "OpenBareMap/us-yosemite/2.0.1/preview/assets/legend.css": {
+      "bytes": 1513,
+      "sha256": "581de29c8d2e0511ce0f71abea5803fbd03cd42108ff5de4a9962bde2b258ad8",
+      "verifiedUTC": "2026-11-21T19:54:32.185978+00:00"
+    },
+    "OpenBareMap/us-yosemite/2.0.1/preview/assets/legend.js": {
+      "bytes": 2813,
+      "sha256": "9701a94a97d492fb7a13455c2f5ded61fc1f723b28f5939eaccdd39c86f167ff",
+      "verifiedUTC": "2026-11-21T19:54:39.162275+00:00"
+    },
+    "OpenBareMap/us-yosemite/2.0.1/preview/assets/legends/us-yosemite@2x.png": {
+      "bytes": 229249,
+      "sha256": "9111ab2462c772fea13471ee378c132d5483e1dde1dcc9cd7e1cab478e2457fa",
+      "verifiedUTC": "2026-11-21T19:54:39.295270+00:00"
+    },
+    "OpenBareMap/us-yosemite/2.0.1/preview/assets/maplibre-gl.css": {
+      "bytes": 69422,
+      "sha256": "792ac997dcf6ae6f643eb4e2dee4630c85e7056526bd8fb85ffe83c67d6c41b4",
+      "verifiedUTC": "2026-11-21T19:54:39.190825+00:00"
+    },
+    "OpenBareMap/us-yosemite/2.0.1/preview/assets/maplibre-gl.js": {
+      "bytes": 939308,
+      "sha256": "b5a34e6930ff937dbbb9eec8892cffb80ba473cce88ae5ca8c4654432f5f0ebc",
+      "verifiedUTC": "2026-11-21T19:54:39.206224+00:00"
+    },
+    "OpenBareMap/us-yosemite/2.0.1/preview/assets/pmtiles.js": {
+      "bytes": 20229,
+      "sha256": "caf981bc46f6327ee7e65d5dc964d89d38a69f60edca2bd4c5c890c21b554c6c",
+      "verifiedUTC": "2026-11-21T19:54:39.130332+00:00"
+    },
+    "OpenBareMap/us-yosemite/2.0.1/preview/assets/preview.css": {
+      "bytes": 1912,
+      "sha256": "4a2bb515c9d6e871ff92a5a15cd189a0f49005fc43cac1831b3445626d95884c",
+      "verifiedUTC": "2026-11-21T19:54:39.118091+00:00"
+    },
+    "OpenBareMap/us-yosemite/2.0.1/preview/assets/preview.js": {
+      "bytes": 3363,
+      "sha256": "79ce19a0520ed6bd076b4a5a4330fdd9b00d8fca8001bf442cc78b2f0069682a",
+      "verifiedUTC": "2026-11-21T19:54:39.178404+00:00"
+    },
+    "OpenBareMap/us-yosemite/2.0.1/preview/assets/sprites/outdoors.json": {
+      "bytes": 760,
+      "sha256": "e777903184842b2b08726fcfa5c6ca654f5761ff8c796f0a04c1e66f5551038e",
+      "verifiedUTC": "2026-11-21T19:54:39.074737+00:00"
+    },
+    "OpenBareMap/us-yosemite/2.0.1/preview/assets/sprites/outdoors.png": {
+      "bytes": 3722,
+      "sha256": "32de87bc645686f95ef45737ba1331504079ba0de01f6d3d30a81bf41ed6133a",
+      "verifiedUTC": "2026-11-21T19:54:47.001423+00:00"
+    },
+    "OpenBareMap/us-yosemite/2.0.1/preview/assets/sprites/outdoors@2x.json": {
+      "bytes": 771,
+      "sha256": "ca6052d8d86d5f3693247ca9179fedbfbfc950370506a9a5ffc485d69d8c458c",
+      "verifiedUTC": "2026-11-21T19:54:46.954528+00:00"
+    },
+    "OpenBareMap/us-yosemite/2.0.1/preview/assets/sprites/outdoors@2x.png": {
+      "bytes": 7453,
+      "sha256": "c2230eae423ca94a4fe910a999bee38986231cf8bed2109c280657a30fec86cc",
+      "verifiedUTC": "2026-11-21T19:54:47.058872+00:00"
+    },
+    "OpenBareMap/us-yosemite/2.0.1/preview/assets/terrain-attribution.html": {
+      "bytes": 1413,
+      "sha256": "b4ed33f22436e2ee81acc3853c1331c1968f50297d5b38ac0da2a31f6d2fb16d",
+      "verifiedUTC": "2026-11-21T19:54:46.981759+00:00"
+    },
+    "OpenBareMap/us-yosemite/2.0.1/preview/assets/townlands.geojson": {
+      "bytes": 9403579,
+      "sha256": "ab3d1d254517904918fed1e93f614c2c0f2d6940b948844e39c63cdee31a1d62",
+      "verifiedUTC": "2026-11-21T19:54:47.322159+00:00"
+    },
+    "OpenBareMap/us-yosemite/2.0.1/preview/data/us-yosemite/basemap.pmtiles": {
+      "bytes": 31538081,
+      "sha256": "78018b1aa179fea0088085c0c0354b1dcad98edca16dc6df90fca50dd1430ed8",
+      "verifiedUTC": "2026-11-21T19:55:09.216937+00:00"
+    },
+    "OpenBareMap/us-yosemite/2.0.1/preview/data/us-yosemite/coast.pmtiles": {
+      "bytes": 148691,
+      "sha256": "cdcf5be28d7c701ee4c3835eb3e2b0f75f78bfd71a27f1d4731451c3ee0bb4a1",
+      "verifiedUTC": "2026-11-21T19:54:46.981666+00:00"
+    },
+    "OpenBareMap/us-yosemite/2.0.1/preview/data/us-yosemite/grid.pmtiles": {
+      "bytes": 1317404,
+      "sha256": "a5a782873f84c4b2edfaf3ba801a857c72e5d9351b67704d4a2c03e150bf54c5",
+      "verifiedUTC": "2026-11-21T19:54:47.139045+00:00"
+    },
+    "OpenBareMap/us-yosemite/2.0.1/preview/data/us-yosemite/hillshade.pmtiles": {
+      "bytes": 61807154,
+      "sha256": "71bdbeb6c235572d6909efb1b95308be78565e817a673f917ddb05a4414787e5",
+      "verifiedUTC": "2026-11-21T19:55:06.198037+00:00"
+    },
+    "OpenBareMap/us-yosemite/2.0.1/preview/data/us-yosemite/topography.pmtiles": {
+      "bytes": 70785952,
+      "sha256": "e988492b99aa861d8028d6d3f9c8bbc185306de9d5db7a03d96018678dac3327",
+      "verifiedUTC": "2026-11-21T19:55:08.819869+00:00"
+    },
+    "OpenBareMap/us-yosemite/2.0.1/preview/manifest.json": {
+      "bytes": 1624,
+      "sha256": "0386a8296ac95386486b784ddd31faf86c0c28b780d561049064b88571ffb8af",
+      "verifiedUTC": "2026-11-21T19:54:53.871848+00:00"
+    },
+    "OpenBareMap/us-yosemite/2.0.1/preview/us-yosemite/index.html": {
+      "bytes": 7256,
+      "sha256": "e82d138c8d6263c5eb3cc40df2bbb1a31b61e23587196cb7bfc54f5da66921bc",
+      "verifiedUTC": "2026-11-21T19:54:53.909833+00:00"
+    },
+    "OpenBareMap/us-yosemite/2.0.1/preview/us-yosemite/legend.html": {
+      "bytes": 1454,
+      "sha256": "00b334b118ccfcb49db44a9807596bf01abf151139f10e1f33d9852796dfdece",
+      "verifiedUTC": "2026-11-21T19:54:53.884584+00:00"
+    },
+    "OpenBareMap/us-yosemite/2.0.1/preview/us-yosemite/region.json": {
+      "bytes": 4084,
+      "sha256": "046013c4659bfb23a2036893748e55c6a20cf388ba38e9e254dcc505f086b8c9",
+      "verifiedUTC": "2026-11-21T19:54:53.893286+00:00"
+    },
+    "OpenBareMap/us-yosemite/2.0.1/preview/us-yosemite/style.json": {
+      "bytes": 2836723,
+      "sha256": "e757c00b42ae13092f1a39a7591c8a05b7cb1cb39f2e6db8e8f022cbb78471e3",
+      "verifiedUTC": "2026-11-21T19:54:54.365707+00:00"
+    },
+    "OpenBareMap/worldwide-catalog-v1.json": {
+      "bytes": 957426,
+      "sha256": "24974eb9c85c4e8ee7f54b4b04c46360ec4e47ef194feee1c2347eb8fd3a2a77",
+      "verifiedUTC": "2026-11-21T22:24:46.913389+00:00"
+    }
+  },
+  "regionIds": [
+    "alps-central",
+    "alps-east",
+    "alps-tyrol-bavaria",
+    "alps-west",
+    "dolomites",
+    "norway-central",
+    "norway-north",
+    "norway-south",
+    "pyrenees",
+    "us-glacier",
+    "us-olympic",
+    "us-rocky-mountain",
+    "us-yellowstone-grand-teton",
+    "us-yosemite"
+  ],
+  "verifiedPublicAssets": 764
+}

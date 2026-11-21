@@ -1,6 +1,6 @@
 {
   "familyId": 4855,
-  "garminPackageRevision": "2.0.1-trail-detail-r1",
+  "garminPackageRevision": "2.0.1-glacier-r1",
   "inspection": {
     "anchorLabels": {
       "Half Dome": "Half Dome",
@@ -83,19 +83,19 @@
       "0x7": 4446,
       "0xa": 3937
     },
-    "logicalCombinedSHA256": "ef8ed4981c57868b406728fcfd0e0de60a78387b6d48d19bf0c605dbdfbc5e86",
+    "logicalCombinedSHA256": "011f22629e42e1b7a483d57a65fb634e5f8297cf2fb2d7cc3559c9d42c2862ac",
     "logicalHashNote": "Internal file names, sizes and payloads; only CommonHeader creation-date bytes 14..20 are zeroed for hashing. IMG archive headers are excluded. Output bytes are never modified.",
     "logicalTileSHA256": {
-      "48550001.img": "cffc91a84a5237bec67d6d921bd51a81d55a0301d308b517b01dfeca0efd1051",
-      "48550002.img": "ca28d2e85fd0d7e435dcb147fde5b185c51b4e8e126674cc2d473ad6710ab429",
-      "48550003.img": "76a9ea63f1df06a313979db5993e35bdd3edd03f1472a5f7e5b4b7ab66e747d9",
-      "48550004.img": "0478c315a96fcd20f4246d8a500516be3e1e2af067c5e4bbc0ae7b2695535257",
-      "48550005.img": "fdacf8d14739fa055e0261ce02392e34d602e579ca6c985d78e764e7aec4711f",
-      "48550006.img": "b9e3d9c9dd7e79f47deaaaeb86839ba43381a00ffbc1ca04043aa61966257f93",
-      "48550007.img": "bfda4eddc317cebbfc7deb59ba0b5d177c25225e25fd7d13769c29076de861fd",
-      "48550008.img": "40abb1f66ab39d5627da307cb4f4a2e8aaf737b3d588593e820424d2b15b82d1",
-      "48550009.img": "0721151af43b2ccf47d8d31688120c1b4f9c6d86ae0c1b1c31052530b8cc801f",
-      "48550010.img": "a8b6cda4c6cf86c51d6848c21ce5afc3829d1495413db18ed6950a9dd57976b4"
+      "48550001.img": "eeed53ecb10ac49f30a9f50391b0b1c126659c174ddd62a4c8a6c63eae854669",
+      "48550002.img": "c4ffe86cc775710d62a7ed66e3be6402f6c8c13510704886d63fcc7318cc91f9",
+      "48550003.img": "7afc9bf7723114fc99bb795e1053efb9b774d31174600dc094ceebbe613951f0",
+      "48550004.img": "2f518124746fdeedaf009c08e5b7aa8ca4001ad5221e900326b3e9559771346a",
+      "48550005.img": "4bb51344a359d6a97e9c556506219b3c14044b62875911b6123a8acfbed822e1",
+      "48550006.img": "dc4d551e4e53afbb3d59e657f79b6e3a616ad9785ef6c9c4d3949a61d553ce5b",
+      "48550007.img": "b43e68977848f4941f0ab7fb28e6d2a961f5d084baef89d8c8d748cf6a668927",
+      "48550008.img": "9077ed203058c0951c84bf923533e693e5ceca863c2ac7b4184e7d92cf9bd62a",
+      "48550009.img": "526dd6297cb83d74083473e9a2d0863751b211f2880b964c08bbb9e980cf7d32",
+      "48550010.img": "6e016c643746f4034c0ac113363f18d346a71ad8d5f0df238e48d8d560498aa4"
     },
     "pointInstancesAtHighestDetail": {
       "0x10001": 147,
@@ -122,6 +122,7 @@
       "0x10107": 1,
       "0x10109": 3883,
       "0x1010a": 514,
+      "0x1010c": 37,
       "0x13": 13903,
       "0x32": 10,
       "0x3c": 4895,
@@ -134,17 +135,17 @@
       "DEM": 9667804,
       "LBL": 128246,
       "MPS": 814,
-      "RGN": 19240284,
+      "RGN": 19244885,
       "SRT": 912,
-      "TRE": 243781,
-      "TYP": 3058
+      "TRE": 243801,
+      "TYP": 3113
     },
     "tiles": 10
   },
   "output": {
-    "bytes": 29372416,
-    "path": "regions/us-yosemite/garmin/dist/OpenBareMap-US-Yosemite.img",
-    "sha256": "08d5b5fe2cac0e3a90ec95f1ec421c3aa7ce36229436ba246a9b97ac9ab8bf69"
+    "bytes": 29380608,
+    "path": "regions/us-yosemite/garmin/dist/OpenBareMap-US-Yosemite-Glaciers.img",
+    "sha256": "12fba795d0083b324eb74cda131ef4199876f2cde5cb7b9600bbf0c0b205e5b2"
   },
   "routing": false,
   "status": "compiled and structurally inspected; hardware rendering pending"

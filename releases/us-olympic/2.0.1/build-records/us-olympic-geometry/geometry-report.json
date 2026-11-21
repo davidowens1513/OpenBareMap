@@ -1,0 +1,25 @@
+{
+  "counts": {
+    "permanentIce": {
+      "glacier": 28,
+      "permanent_snow": 3
+    }
+  },
+  "osm": {
+    "bytes": 15811333,
+    "operation": "Complete-feature bbox extraction with nested relation references",
+    "path": "data/regions/us-olympic/washington-261120.osm.clipped.osm.pbf",
+    "replicationTimestamp": "2026-11-20T21:21:21Z",
+    "sha256": "c06ddc6ee3f7ebea0c97c863dbfecc6f01a85a26c1d6097bfc0ab78d016fb2d2",
+    "snapshot_date": "2026-11-20",
+    "url": "https://download.geofabrik.de/north-america/us/washington/washington-261120.osm.pbf"
+  },
+  "outputs": {
+    "ice.geojson": "f52ab75977bae4b76a3ee47b701155c0b7b6a46ca69954b15a95398d8e4a51a1"
+  },
+  "permanentIce": {
+    "glacier": 28,
+    "permanent_snow": 3
+  },
+  "region": "us-olympic"
+}

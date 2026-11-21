@@ -1,5 +1,5 @@
 {
-  "combinedSHA256": "dbf21a858ae4549adabaeaba6800c8dd9ae233143d060f3974ba8a710ac262f7",
+  "combinedSHA256": "9f96c900d5fe69bbaca8dd8a318eec41ac1337c393bdb820699192902ab2d373",
   "command": [
     "/opt/homebrew/opt/openjdk@21/libexec/openjdk.jdk/Contents/Home/bin/java",
     "-Xmx6g",
@@ -12,9 +12,9 @@
     "--keep-complete=true",
     "--output=pbf",
     "--polygon-file=/Volumes/Extreme SSD/Projects/OpenBareMap/regions/alps-west/garmin/coverage.poly",
-    "--output-dir=/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/906ead9d53a7/alps-west/garmin/split",
+    "--output-dir=/Volumes/Extreme SSD/Projects/OpenBareMap/work/glacier-updates/native/OpenBareMap-builds/906ead9d53a7/alps-west/garmin/split",
     "--ignore-osm-bounds=true",
-    "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/906ead9d53a7/alps-west/garmin/combined.osm.pbf"
+    "/Volumes/Extreme SSD/Projects/OpenBareMap/work/glacier-updates/native/OpenBareMap-builds/906ead9d53a7/alps-west/garmin/combined.osm.pbf"
   ],
   "coverageSHA256": "a3c653401abfb959112ed38e92a71ca3abdc8df3baa1e114ff56d1e1bf534579",
   "ignoreSourceHeaderBounds": true
