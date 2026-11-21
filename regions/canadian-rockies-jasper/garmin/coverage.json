@@ -1,0 +1,40 @@
+{
+  "areaSquareDegrees": 3.315528999619036,
+  "bounds": [
+    -119.69583923235167,
+    51.8906378267999,
+    -116.60968752207472,
+    53.571278563203386
+  ],
+  "entireRequestedFootprintCovered": true,
+  "exactFootprint": "regions/canadian-rockies-jasper/coverage.geojson",
+  "inputs": [
+    {
+      "bytes": 14543,
+      "path": "data/regions/canadian-rockies-jasper/alberta.poly",
+      "sha256": "73107224d9615f29b0c80b7b932c17a17fe18f523bba2014729f46a648024308",
+      "url": "https://download.geofabrik.de/north-america/canada/alberta/alberta.poly"
+    },
+    {
+      "bytes": 2671,
+      "path": "data/regions/canadian-rockies-jasper/british-columbia.poly",
+      "sha256": "fce9475100adfe7030b6cad9a58759ff8c09473a78b339fe3452e240e976b408",
+      "url": "https://download.geofabrik.de/north-america/canada/british-columbia/british-columbia.poly"
+    }
+  ],
+  "knownDestinationsCovered": [
+    "berg-lake",
+    "columbia-icefield",
+    "hinton",
+    "island",
+    "jasper",
+    "maligne-lake",
+    "miette-hot-springs",
+    "mount-robson",
+    "saskatchewan-river-crossing",
+    "valemount"
+  ],
+  "operation": "Requested rectangular crop; source outlines cover all destination anchors",
+  "polygons": 1,
+  "sha256": "d89224a76410b67af0d38aefbc31b3964f182bb0382ff9db10a76809c45bbdff"
+}

@@ -309,3 +309,12 @@ data/regions/norway-*/copernicus/*
 /releases/high-tatras/*/maps/
 /releases/picos-de-europa/*/app-bundles-v1/**/*.zip
 /releases/high-tatras/*/app-bundles-v1/**/*.zip
+
+# Rebuildable Canadian Rockies sources, work files and release binaries
+/data/regions/canadian-rockies*/
+/regions/canadian-rockies-*/exports/
+/regions/canadian-rockies-*/garmin/coastal-context/
+/regions/canadian-rockies-*/garmin/inputs/*.geojson.gz
+/regions/canadian-rockies-*/garmin/dist/*.img
+/releases/canadian-rockies-*/*/maps/
+/releases/canadian-rockies-*/*/app-bundles-v1/**/*.zip

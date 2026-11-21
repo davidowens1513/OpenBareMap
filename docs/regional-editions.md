@@ -1,5 +1,52 @@
 # Maintaining regional editions
 
+## Canadian Rockies
+
+Three editions use park footprints and buffered approaches. Banff and Jasper
+overlap on the Icefields Parkway between Saskatchewan River Crossing and the
+Columbia Icefield. The southern edition overlaps Banff around Canmore and Spray
+Valley and reaches the US Glacier edition at the 49th parallel.
+
+| Edition | iOS bundle | Android bundle | Garmin image | Garmin family |
+| --- | ---: | ---: | ---: | ---: |
+| Banff, Yoho & Kootenay | 522 MB | 522 MB | 92 MB | 4866 |
+| Jasper & Mount Robson | 536 MB | 536 MB | 100 MB | 4867 |
+| Kananaskis & Waterton | 461 MB | 461 MB | 59 MB | 4868 |
+
+Build inputs are the 20 November 2026 Geofabrik snapshots of Alberta and
+British Columbia, Copernicus GLO-30 and park outlines from [Parks Canada],
+[Alberta Parks] and [British Columbia]. The map displays generalized park
+boundaries, 20 m contours and a WGS 84 / UTM 11N grid. Keep source and terrain
+locks. The raw data, intermediate databases and device binaries are rebuildable.
+
+The map key has separate entries for glaciers and permanent snowfields.
+The November 2026 OpenStreetMap snapshot includes glacier polygons in all three
+editions. It has no separately tagged permanent snowfields within their coverage.
+
+```sh
+export PYTHONPATH=work/python
+python3 scripts/prepare_canadian_rockies.py
+for edition in canadian-rockies-banff canadian-rockies-jasper canadian-rockies-kananaskis-waterton; do
+  python3 scripts/run_full_region.py --region "$edition"
+  output="work/$edition-release"
+  python3 scripts/build_app_distribution.py --regions "$edition" \
+    --output "$output/kits" --catalog "$output/catalog.json"
+  python3 scripts/build_web_previews.py --regions "$edition" --output "$output/preview" \
+    --origin "https://downloads.appsbyonzy.dev/OpenBareMap/$edition/2.0.0/preview"
+done
+python3 scripts/stage_canadian_rockies.py
+python3 scripts/stage_canadian_rockies.py --publish-assets
+```
+
+After the downloads, previews and catalogues verify, deploy
+`work/canadian-rockies-publication/appsbyonzy-canadian-rockies.zip` to Pages.
+Copy the merged `worldwide-catalog-v1.json` from the same publication folder
+to `Distribution/worldwide-catalog-v1.json` in BareGPS Worldwide.
+
+[Parks Canada]: https://open.canada.ca/data/en/dataset/e1f0c975-f40c-4313-9be2-beb951e35f4e
+[Alberta Parks]: https://open.canada.ca/data/en/dataset/936b1a57-c7de-4f42-b032-5d97bc541fe6
+[British Columbia]: https://open.canada.ca/data/en/dataset/1130248f-f1a3-4956-8b2e-38d29d3e4af7
+
 ## Picos de Europa and High Tatras
 
 Picos de Europa covers the three massifs and the approaches from Asturias,

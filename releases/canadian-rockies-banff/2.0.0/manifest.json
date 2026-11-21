@@ -1,0 +1,106 @@
+{
+  "acceptance": "Automated checks only; see validation and visual-review records for actual reviewed scope.",
+  "coverage": "Banff, Yoho and Kootenay national parks, Mount Assiniboine, Canmore, Golden and Radium Hot Springs, with Icefields Parkway coverage north to the Columbia Icefield.",
+  "datasets": {
+    "basemap": {
+      "bytes": 107393024,
+      "path": "releases/canadian-rockies-banff/2.0.0/maps/basemap.mbtiles",
+      "sha256": "637c195dfc1c330d2dbf1d5179c303bb158809abb383803e723b4f887208e60f",
+      "validation": {
+        "empty_tile_count": 97,
+        "logical_tiles_sha256": "2a46f34fb3cb6319ca6e1dbf72fb1a94c39a76f0e8c9446bb0204b965936bac9",
+        "tile_count": 20577
+      }
+    },
+    "grid": {
+      "bytes": 6533120,
+      "path": "releases/canadian-rockies-banff/2.0.0/maps/grid.mbtiles",
+      "sha256": "a090103872694f1b95f725f61d55b22c9eab1dfb549085895763991d0b4d5cd7",
+      "validation": {
+        "empty_tile_count": 0,
+        "logical_tiles_sha256": "3c4914efd97e4f8d24c23956b0b6a549e7001f6f4e493705d50c3324e15dccc8",
+        "tile_count": 20573
+      }
+    },
+    "hillshade": {
+      "bytes": 58474496,
+      "path": "releases/canadian-rockies-banff/2.0.0/maps/hillshade.mbtiles",
+      "sha256": "b63542b0b1d3be5d39725c2b5dd88fbb045cef005f0c30d30a08399c474024a3",
+      "validation": {
+        "empty_tile_count": 0,
+        "logical_tiles_sha256": "4ba3de3c22c131d49dbae2d5e7da99691ab62417255aa8a9c20d32969915786c",
+        "tile_count": 1404
+      }
+    },
+    "topography": {
+      "bytes": 343138304,
+      "path": "releases/canadian-rockies-banff/2.0.0/maps/topography-context.mbtiles",
+      "sha256": "2f09f19bca6e3d06b098fd66ddf4ce6e27197dc32689cf4dc4470a9ea4c37799",
+      "validation": {
+        "empty_tile_count": 85447,
+        "logical_tiles_sha256": "1b9d5dff7c5b759fbd536508815bf275eb11813a9abeed30351a89bf28dc3414",
+        "tile_count": 111754
+      }
+    }
+  },
+  "garmin": {
+    "bytes": 92368896,
+    "path": "regions/canadian-rockies-banff/garmin/dist/OpenBareMap-Canadian-Rockies-Banff.img",
+    "sha256": "f7d4d295b3d5ec37a63db1b63379a7c860af3b3c35a9dbb0bb86ddd5576e8afd"
+  },
+  "geometryReport": {
+    "path": "releases/canadian-rockies-banff/2.0.0/build-records/canadian-rockies-banff-geometry/geometry-report.json",
+    "sha256": "14f4bd73f12a23e75100baa6790318e3a1dadc7587a068e1664dfcb90738e1f2"
+  },
+  "hostAppsModified": false,
+  "mapVersion": "2.0.0",
+  "osm": {
+    "bytes": 41615017,
+    "operation": "Complete-feature bbox extraction with nested relation references, then libosmium sorted merge; duplicate OSM objects resolved by version",
+    "path": "data/regions/canadian-rockies-banff/canadian-rockies-banff-261120.osm.pbf",
+    "replicationTimestamp": "2026-11-20T21:21:21Z",
+    "sha256": "44d2121b362bd60eea144acefb5ff8fe69d9f4d9341271d36abad8e1480de1ce",
+    "snapshot_date": "2026-11-20",
+    "url": null
+  },
+  "packages": {
+    "android": {
+      "archive": {
+        "bytes": 521529584,
+        "path": "regions/canadian-rockies-banff/android/OpenBareMap-Android.zip",
+        "sha256": "b862ac2c60ba6b242c71eac4fe506afe898871e88d5ee6b0fb8f3b797886cc25"
+      },
+      "checksumsSHA256": "24a787e397958395fc40196761cecc370511c1ccbc3aa22c1a58a0caf18b4c61",
+      "manifestSHA256": "669c1c2ceee13ecc7bf147556f5619c91f8ed2fb61f084bfd988d6db6800b29d",
+      "path": "regions/canadian-rockies-banff/android",
+      "validationSHA256": "436de4eb7b29e204928af173f43d77a2d5022d272bb8d880c11dc2e5497574a7"
+    },
+    "ios": {
+      "checksumsSHA256": "5d4b6c91d6c487ce9ab679715b037b7be22c2464779cc7d45cef68b365863bb3",
+      "manifestSHA256": "35e749f3b6d1e64611afc3d67e475eff816bdaf5d1dec0243192cb9d13746334",
+      "path": "regions/canadian-rockies-banff/ios",
+      "validationSHA256": "9ca8337e676b70014c3e1411815b29f37bcaf00866f42dd75a86a1dc6dd80079"
+    }
+  },
+  "pythonRuntime": {
+    "packages": {
+      "Pillow": "12.3.0",
+      "certifi": "2026.10.23",
+      "charset-normalizer": "3.5.2",
+      "idna": "3.20",
+      "numpy": "2.5.4",
+      "osmium": "4.3.2",
+      "pyproj": "3.8.0",
+      "requests": "2.34.2",
+      "shapely": "2.2.0",
+      "urllib3": "2.8.0"
+    },
+    "platform": "macOS-27.2.1-arm64-arm-64bit-Mach-O",
+    "python": "3.14.5 (main, May 10 2026, 10:21:34) [Clang 21.0.0 (clang-2100.0.123.102)]",
+    "requirementsSHA256": "427f12ff8b49bfebac0a7d453c2f65bd15d6695584b18e6ecee1fdfeed20a36c"
+  },
+  "region": "canadian-rockies-banff",
+  "styleSHA256": "afb6e727fe1acbdeba76565b69b4995f45226812d3e720f0661d811b21ca826e",
+  "terrainLockSHA256": "4cf4c5f2beb0b00b6c55092079c045c2e08c41ea95ed1ef8c75257a14da5e5b0",
+  "validation": "validation.json"
+}

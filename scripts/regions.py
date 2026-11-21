@@ -6,7 +6,12 @@ from openbaremap import ROOT
 
 ALPS_REGIONS = ('alps-west', 'alps-central', 'alps-tyrol-bavaria', 'alps-east')
 US_PARK_REGIONS = tuple(json.loads((ROOT/'config/us-national-parks.json').read_text()))
-REGIONS = ('ireland', 'england-wales', 'scotland', 'sierra-nevada', 'pyrenees', 'dolomites', 'faroe-islands','norway-south','norway-central','norway-north', 'balearic-islands', 'corsica', 'sardinia', 'sicily', 'crete', 'cyprus', 'malta', 'canary-islands', 'madeira') + ALPS_REGIONS + US_PARK_REGIONS + ('picos-de-europa', 'high-tatras')
+CANADIAN_ROCKIES_REGIONS = tuple(json.loads((ROOT/'config/canadian-rockies.json').read_text()))
+PERMANENT_ICE = {
+    'glacier': ('Glacier', '#badde9', '#709bab', '0x1010c'),
+    'permanent_snow': ('Permanent snowfield', '#f0f8fc', '#93b3c3', '0x1010d'),
+}
+REGIONS = ('ireland', 'england-wales', 'scotland', 'sierra-nevada', 'pyrenees', 'dolomites', 'faroe-islands','norway-south','norway-central','norway-north', 'balearic-islands', 'corsica', 'sardinia', 'sicily', 'crete', 'cyprus', 'malta', 'canary-islands', 'madeira') + ALPS_REGIONS + US_PARK_REGIONS + ('picos-de-europa', 'high-tatras') + CANADIAN_ROCKIES_REGIONS
 
 def profile(region='ireland'):
     if region not in REGIONS:
@@ -61,6 +66,16 @@ def region_style(region='ireland'):
         major['filter']=['in',['get','class'],['literal',['river','canal']]]
         minor.update(id='waterway-minor',minzoom=p['minorWaterwayMinzoom'],filter=['!',major['filter']])
         style['layers'].insert(index+1,minor)
+    if p.get('permanentIce'):
+        landcover = next(layer for layer in style['layers'] if layer['id'] == 'landcover')
+        landcover['filter'][1][2][1].extend(PERMANENT_ICE)
+        index = next(i for i, layer in enumerate(style['layers']) if layer['id'] == 'cliffs-base')
+        style['layers'][index:index] = [
+            {'id': kind, 'type': 'fill', 'source': 'basemap', 'source-layer': 'landcover',
+             'filter': ['==', ['get', 'class'], kind],
+             'paint': {'fill-color': color, 'fill-outline-color': outline, 'fill-opacity': 0.82}}
+            for kind, (_, color, outline, _) in PERMANENT_ICE.items()
+        ]
     if p.get('coverageBoundary') or p.get('boundaryPreview'):
         for name in ('park-boundary','coverage','coverage-mask'):
             style['sources'][name]={'type':'geojson','data':json.loads(region_path(region,name+'.geojson').read_text()),'attribution':p.get('boundaryAttribution','Fuente: Organismo Autónomo Parques Nacionales · CC BY 4.0')}
@@ -128,6 +143,8 @@ def terrain_file(region,name):
         return ROOT/'regions/alps'/name
     if region in US_PARK_REGIONS:
         return ROOT/'regions/us-national-parks'/name
+    if region in CANADIAN_ROCKIES_REGIONS:
+        return ROOT/'regions/canadian-rockies'/name
     return ROOT/('viewer' if name.endswith('.html') else 'data')/name
 
 def apply_terrain_notice(directory,region):

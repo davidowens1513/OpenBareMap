@@ -1,0 +1,77 @@
+{
+  "bounds": [
+    -117.4633373639814,
+    50.487959655622966,
+    -115.02170891700634,
+    52.36021652189479
+  ],
+  "contextEnvelope": [
+    -117.4633373639814,
+    50.487959655622966,
+    -115.02170891700634,
+    52.36021652189479
+  ],
+  "drawPriority": 25,
+  "format": "openbaremap-garmin-render-footprint-v1",
+  "geometry": {
+    "bytes": 67911,
+    "path": "regions/canadian-rockies-banff/garmin/render-coverage.geojson",
+    "sha256": "bf5364273ce96dd7b5d2394655ad98a3b3e10d971a4a7d4bcab7240c7b78aa49"
+  },
+  "inputs": [
+    {
+      "path": "regions/canadian-rockies-banff/coverage.geojson",
+      "purpose": "Exact official park plus 25 km footprint; not its rectangular tile envelope",
+      "sha256": "8b7be043db703f51a9a51a4e75f1d463a1c30b3a59db865730500c861bafe8b0"
+    }
+  ],
+  "knownDestinationsCovered": {
+    "banff": [
+      -115.5708,
+      51.1784
+    ],
+    "canmore": [
+      -115.3479,
+      51.089
+    ],
+    "columbia-icefield": [
+      -117.2217,
+      52.2212
+    ],
+    "field": [
+      -116.4936,
+      51.3965
+    ],
+    "golden": [
+      -116.9631,
+      51.2974
+    ],
+    "lake-louise": [
+      -116.1812,
+      51.4254
+    ],
+    "moraine-lake": [
+      -116.186,
+      51.327
+    ],
+    "mount-assiniboine": [
+      -115.6518,
+      50.8692
+    ],
+    "radium-hot-springs": [
+      -116.0727,
+      50.62
+    ],
+    "saskatchewan-river-crossing": [
+      -116.7479,
+      51.976
+    ],
+    "spray-lakes-reservoir": [
+      -115.2944,
+      50.9906
+    ]
+  },
+  "purpose": "Rectangular Garmin tiles may overlap other countries. Do not fill their padding with sea, land or land-cover polygons.",
+  "region": "canadian-rockies-banff",
+  "transparentNativeMap": true
+}

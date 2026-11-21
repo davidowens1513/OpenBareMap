@@ -1,0 +1,69 @@
+{
+  "bounds": [
+    -119.69583923235167,
+    51.8906378267999,
+    -116.60968752207472,
+    53.571278563203386
+  ],
+  "contextEnvelope": [
+    -119.69583923235167,
+    51.8906378267999,
+    -116.60968752207472,
+    53.571278563203386
+  ],
+  "drawPriority": 25,
+  "format": "openbaremap-garmin-render-footprint-v1",
+  "geometry": {
+    "bytes": 65153,
+    "path": "regions/canadian-rockies-jasper/garmin/render-coverage.geojson",
+    "sha256": "05ed89d503fa2bc83709c4d53884677660fca22c08996e0fd40e9d903ea20fc0"
+  },
+  "inputs": [
+    {
+      "path": "regions/canadian-rockies-jasper/coverage.geojson",
+      "purpose": "Exact official park plus 25 km footprint; not its rectangular tile envelope",
+      "sha256": "4cd2a2bb028f1816c4072218f186e9e79c1496105c6613995fd90f42e350e3e3"
+    }
+  ],
+  "knownDestinationsCovered": {
+    "berg-lake": [
+      -119.1635,
+      53.1431
+    ],
+    "columbia-icefield": [
+      -117.2217,
+      52.2212
+    ],
+    "hinton": [
+      -117.5739,
+      53.4122
+    ],
+    "jasper": [
+      -118.0814,
+      52.8734
+    ],
+    "maligne-lake": [
+      -117.6445,
+      52.729
+    ],
+    "miette-hot-springs": [
+      -117.766,
+      53.1287
+    ],
+    "mount-robson": [
+      -119.1565,
+      53.111
+    ],
+    "saskatchewan-river-crossing": [
+      -116.7479,
+      51.976
+    ],
+    "valemount": [
+      -119.264,
+      52.831
+    ]
+  },
+  "purpose": "Rectangular Garmin tiles may overlap other countries. Do not fill their padding with sea, land or land-cover polygons.",
+  "region": "canadian-rockies-jasper",
+  "transparentNativeMap": true
+}

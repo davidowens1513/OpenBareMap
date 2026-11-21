@@ -1,0 +1,204 @@
+{
+  "boundaryAttribution": "Parks Canada \u00b7 Government of Alberta \u00b7 Province of British Columbia",
+  "bounds": [
+    -115.62176199095644,
+    49.0,
+    -113.54400263742835,
+    51.53943922801145
+  ],
+  "clipBasemap": true,
+  "clipSource": true,
+  "clipTerrainToBounds": true,
+  "coastContextBounds": [
+    -117,
+    48,
+    -112,
+    53
+  ],
+  "contourIntervalMetres": 20,
+  "coverage": "The southern Canadian Rockies from Canmore and Spray Valley through Kananaskis, Elk Lakes, Crowsnest Pass and the Castle parks to Waterton Lakes and Akamina-Kishinena at the US Glacier border.",
+  "coverageBoundary": true,
+  "coverageBoundaryLabel": "Map coverage limit",
+  "destinationLabels": {
+    "akamina-pass": "Akamina Pass",
+    "cameron-lake": "Cameron Lake",
+    "canmore": "Canmore",
+    "castle-mountain-resort": "Castle Mountain Resort",
+    "crowsnest-pass": "Crowsnest Pass",
+    "elk-lakes": "Elk Lakes",
+    "island": "Kananaskis & Waterton",
+    "pincher-creek": "Pincher Creek",
+    "spray-lakes-reservoir": "Spray Lakes Reservoir",
+    "upper-kananaskis-lake": "Upper Kananaskis Lake",
+    "waterton-park": "Waterton Park"
+  },
+  "destinations": {
+    "akamina-pass": [
+      -114.0749,
+      49.0351,
+      12
+    ],
+    "cameron-lake": [
+      -114.0463,
+      49.0219,
+      12
+    ],
+    "canmore": [
+      -115.3479,
+      51.089,
+      12
+    ],
+    "castle-mountain-resort": [
+      -114.4127,
+      49.3198,
+      12
+    ],
+    "crowsnest-pass": [
+      -114.563,
+      49.6085,
+      12
+    ],
+    "elk-lakes": [
+      -115.0565,
+      50.5474,
+      12
+    ],
+    "island": [
+      -114.6930718514194,
+      50.2706331818673,
+      8
+    ],
+    "pincher-creek": [
+      -113.9483,
+      49.4846,
+      12
+    ],
+    "spray-lakes-reservoir": [
+      -115.2944,
+      50.9906,
+      12
+    ],
+    "upper-kananaskis-lake": [
+      -115.172,
+      50.611,
+      12
+    ],
+    "waterton-park": [
+      -113.9044,
+      49.0515,
+      12
+    ]
+  },
+  "garminContextBounds": [
+    -115.62176199095644,
+    49.0,
+    -113.54400263742835,
+    51.53943922801145
+  ],
+  "garminFamilyId": 4868,
+  "garminFilename": "OpenBareMap-Canadian-Rockies-Kananaskis-Waterton.img",
+  "garminPackageRevision": "2.0.1-trail-detail-r1",
+  "garminTileStartId": 48680001,
+  "garminUseSourceOutline": true,
+  "gridCRS": "EPSG:32611",
+  "gridExtent": [
+    590000,
+    760000,
+    5430000,
+    5720000
+  ],
+  "gridName": "WGS 84 / UTM 11N",
+  "gridSource": "utm-grid",
+  "id": "canadian-rockies-kananaskis-waterton",
+  "ignoreSourceHeaderBounds": true,
+  "inspectionNames": [
+    "Canmore",
+    "Pincher Creek",
+    "Blairmore"
+  ],
+  "label": "Kananaskis & Waterton",
+  "labelGlyphs": "ABCDEFGHIJKLMNOPQRSTUVWXYZ",
+  "mapVersion": "2.0.0",
+  "maxzoom": 14,
+  "minorWaterwayMinzoom": 10,
+  "minzoom": 4,
+  "name": "OpenBareMap Kananaskis & Waterton",
+  "nativeLanguage": "en",
+  "optionalBasemapLayers": [
+    "ferry",
+    "island_name",
+    "cycling_route",
+    "railway",
+    "station",
+    "hiking_route",
+    "boundary"
+  ],
+  "permanentIce": true,
+  "projectedCRS": "EPSG:32611",
+  "requireBogFeatures": false,
+  "sourceBaseOverrides": {
+    "alberta": "https://download.geofabrik.de/north-america/canada/alberta/",
+    "british-columbia": "https://download.geofabrik.de/north-america/canada/british-columbia/"
+  },
+  "sourceBaseURL": "https://download.geofabrik.de/north-america/canada/",
+  "sourceCacheRegion": "canadian-rockies",
+  "sourceDate": "2026-11-20",
+  "sourceSlugs": [
+    "alberta",
+    "british-columbia"
+  ],
+  "styleRevision": "2.0.0-canadian-rockies-kananaskis-waterton-r1",
+  "terrainAttribution": "Copernicus DEM GLO-30 \u00b7 European Union / ESA \u00b7 DLR / Airbus",
+  "terrainBounds": [
+    -116,
+    49,
+    -113,
+    52
+  ],
+  "terrainCacheRegion": "canadian-rockies",
+  "terrainNotice": "Kananaskis & Waterton elevation: Copernicus DEM GLO-30 Public (AWS 2021 release).\n\nproduced using Copernicus WorldDEM-30 \u00a9 DLR e.V. 2010-2014 and \u00a9 Airbus Defence and Space GmbH 2014-2018 provided under COPERNICUS by the European Union and ESA; all rights reserved\n\nThe organisations in charge of the Copernicus programme by law or by delegation do not incur any liability for any use of the Copernicus WorldDEM-30.\n\nLicense: https://dataspace.copernicus.eu/sites/default/files/media/files/2025-06/copernicus_contributing_mission_data_access_v2_cop_dem_licenses.pdf\nSource: https://registry.opendata.aws/copernicus-dem/\nVertical datum: EGM2008 orthometric metres. Native approximately 30 m cells are bilinearly resampled to point-aligned Int16 HGT for the shared terrain pipeline. Ocean-only cells absent from the official public inventory are zero.\n",
+  "terrainProvider": "copernicus-glo30",
+  "townlands": false,
+  "validationAnchors": {
+    "akamina-pass": [
+      -114.0749,
+      49.0351
+    ],
+    "cameron-lake": [
+      -114.0463,
+      49.0219
+    ],
+    "canmore": [
+      -115.3479,
+      51.089
+    ],
+    "castle-mountain-resort": [
+      -114.4127,
+      49.3198
+    ],
+    "crowsnest-pass": [
+      -114.563,
+      49.6085
+    ],
+    "elk-lakes": [
+      -115.0565,
+      50.5474
+    ],
+    "pincher-creek": [
+      -113.9483,
+      49.4846
+    ],
+    "spray-lakes-reservoir": [
+      -115.2944,
+      50.9906
+    ],
+    "upper-kananaskis-lake": [
+      -115.172,
+      50.611
+    ],
+    "waterton-park": [
+      -113.9044,
+      49.0515
+    ]
+  }
+}

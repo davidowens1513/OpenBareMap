@@ -1,0 +1,52 @@
+{
+  "contourIntervalMetres": 20,
+  "coverage": "The southern Canadian Rockies from Canmore and Spray Valley through Kananaskis, Elk Lakes, Crowsnest Pass and the Castle parks to Waterton Lakes and Akamina-Kishinena at the US Glacier border.",
+  "datasets": {
+    "basemap": {
+      "bytes": 120115200,
+      "path": "releases/canadian-rockies-kananaskis-waterton/2.0.0/maps/basemap.mbtiles",
+      "sha256": "3c0812cea431b21929ccf773f3fd575b123041d374bd37f54fc1bb778e224a2e",
+      "validation": {
+        "empty_tile_count": 119,
+        "logical_tiles_sha256": "5103f1cc24413d7df8cb6e1d4818db4b28499e5cfbdebfaee31a795e77eb43e8",
+        "tile_count": 22863
+      }
+    },
+    "grid": {
+      "bytes": 7860224,
+      "path": "releases/canadian-rockies-kananaskis-waterton/2.0.0/maps/grid.mbtiles",
+      "sha256": "3cffe31f2d25574e21a3bb1a6ff86bb000d952bcf85d2da8b683c87c79320fae",
+      "validation": {
+        "empty_tile_count": 0,
+        "logical_tiles_sha256": "6661a718e3fa12cfd6e1619714bc5f37e44a593cd386fca3f5dcb4e70a85b454",
+        "tile_count": 23493
+      }
+    },
+    "hillshade": {
+      "bytes": 59994112,
+      "path": "releases/canadian-rockies-kananaskis-waterton/2.0.0/maps/hillshade.mbtiles",
+      "sha256": "0614cace71d0d1a1a2ba029ff6495fd2060782af95237efd7976448619aba1a0",
+      "validation": {
+        "empty_tile_count": 0,
+        "logical_tiles_sha256": "e5566b24c4ef0e1c52d29a08322fd8cff700742bc5c08bb717db9b876f6474e3",
+        "tile_count": 1584
+      }
+    },
+    "topography": {
+      "bytes": 266424320,
+      "path": "releases/canadian-rockies-kananaskis-waterton/2.0.0/maps/topography-context.mbtiles",
+      "sha256": "c99acf7d04014184e51c06c1724c23aee5d80d5efc125cbdbd2da8b031c2f15e",
+      "validation": {
+        "empty_tile_count": 81042,
+        "logical_tiles_sha256": "a054df7e1060c7048b63ed367b3a3b796b5610a414dc61d12b18f881a99e8220",
+        "tile_count": 109569
+      }
+    }
+  },
+  "format": "openbaremap-development-viewer-v1",
+  "localBorders": false,
+  "mapVersion": "2.0.0",
+  "region": "canadian-rockies-kananaskis-waterton",
+  "storageRevision": "2.0.0-canadian-rockies-kananaskis-waterton-r3",
+  "styleRevision": "2.0.0-canadian-rockies-kananaskis-waterton-r1"
+}

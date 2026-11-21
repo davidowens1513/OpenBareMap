@@ -2,7 +2,7 @@
 """Export the active map legend to scalable SVG and 2x PNG (Pillow required)."""
 from pathlib import Path
 import argparse,base64,hashlib,html,io,json,math
-from regions import REGIONS, profile,region_style
+from regions import PERMANENT_ICE, REGIONS, profile, region_style
 from PIL import Image,ImageDraw,ImageFont,ImageEnhance
 ROOT=Path(__file__).resolve().parents[1]
 parser=argparse.ArgumentParser();parser.add_argument('--region',choices=REGIONS,default='ireland');args=parser.parse_args();edition=profile(args.region)
@@ -84,12 +84,16 @@ rows=[('Major road','roads-major','primary','roads-casing-major'),('Minor road',
 for i,(label,layer,cl,casing) in enumerate(rows):linerow(528,204+i*36,label,layer,cl,casing)
 heading(48,786,'Terrain')
 linerow(48,830,'100 m index contour','contours');linerow(48,869,'20 m intermediate contour','contour-intermediate-lines')
-cliff=texture('cliff-teeth',96,6);opacity=value(LAYERS['cliffs-and-crags']['paint']['line-opacity']);cliff.putalpha(cliff.getchannel('A').point(lambda a:round(a*max(0.9,opacity))));image(cliff,48,951,96,value(LAYERS['cliffs-and-crags']['paint']['line-width'])*1.3);text(162,945,'Cliff / crag')
+cliff_y, shade_y = (905, 937) if edition.get('permanentIce') else (945, 977)
+cliff=texture('cliff-teeth',96,6);opacity=value(LAYERS['cliffs-and-crags']['paint']['line-opacity']);cliff.putalpha(cliff.getchannel('A').point(lambda a:round(a*max(0.9,opacity))));image(cliff,48,cliff_y+6,96,value(LAYERS['cliffs-and-crags']['paint']['line-width'])*1.3);text(162,cliff_y,'Cliff / crag')
 # Illustrative relief swatch, clearly distinct from mapped feature patterns.
 shade=Image.new('RGBA',(96*S,24*S))
 for x in range(shade.width):
  c=round(238-70*(math.sin(x/shade.width*math.pi)**2));ImageDraw.Draw(shade).line((x,0,x,shade.height),fill=(c,c,c,255))
-image(shade,48,977,96,24);text(162,980,'Hillshade')
+image(shade,48,shade_y,96,24);text(162,shade_y+3,'Hillshade')
+if edition.get('permanentIce'):
+ for i,(kind,(label,_,_,_)) in enumerate(PERMANENT_ICE.items()):
+  fillrow(48,973+i*36,label,kind)
 heading(528,786,'Boundaries & grid')
 for i,(label,layer) in enumerate([('National boundary','administrative-boundaries'),('Province boundary' if edition.get('nativeLanguage')=='es' else 'County boundary','county-boundaries'),(edition['gridName']+' · 10 km',edition['gridSource']+'-10km'),(edition['gridName']+' · 1 km',edition['gridSource']+'-1km')]):linerow(528,837+i*36,label,layer)
 if edition.get('coverageBoundary'):

@@ -1,0 +1,20 @@
+{
+  "inputs": [
+    {
+      "path": "regions/canadian-rockies-banff/garmin/inputs/contours.geojson.gz",
+      "sha256": "11b995388380c021b8cf3b54ee511ae57d35d792371b9ee46625e4f63bc7093a",
+      "uncompressedSHA256": "645cc1700c6d07f580771ee733a1e3c047a75d8b50f799b527771850c44227a6"
+    },
+    {
+      "path": "regions/canadian-rockies-banff/garmin/inputs/landcover.geojson.gz",
+      "sha256": "4a64071b1e47a30dce75b6f956e8819f6e10929d972a33c45159ef643e0de59d",
+      "uncompressedSHA256": "6a76df5bb8746bd0c2822e68b35bac3e1b63192cd1345e1757e38aaacfbe6428"
+    },
+    {
+      "path": "regions/canadian-rockies-banff/garmin/inputs/land.geojson.gz",
+      "sha256": "311f37149b571e56721648fd53da4a0d245170e6783e43c907962ea409a831c2",
+      "uncompressedSHA256": "9ceeac4bd6d3d758486330c0b7e749621a73af2169218fc16c98b2749f5b83f1"
+    }
+  ],
+  "region": "canadian-rockies-banff"
+}

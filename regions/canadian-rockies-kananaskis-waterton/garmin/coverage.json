@@ -1,0 +1,41 @@
+{
+  "areaSquareDegrees": 2.1981276221371435,
+  "bounds": [
+    -115.62176199095644,
+    49.0,
+    -113.54400263742835,
+    51.53943922801145
+  ],
+  "entireRequestedFootprintCovered": true,
+  "exactFootprint": "regions/canadian-rockies-kananaskis-waterton/coverage.geojson",
+  "inputs": [
+    {
+      "bytes": 14543,
+      "path": "data/regions/canadian-rockies-kananaskis-waterton/alberta.poly",
+      "sha256": "73107224d9615f29b0c80b7b932c17a17fe18f523bba2014729f46a648024308",
+      "url": "https://download.geofabrik.de/north-america/canada/alberta/alberta.poly"
+    },
+    {
+      "bytes": 2671,
+      "path": "data/regions/canadian-rockies-kananaskis-waterton/british-columbia.poly",
+      "sha256": "fce9475100adfe7030b6cad9a58759ff8c09473a78b339fe3452e240e976b408",
+      "url": "https://download.geofabrik.de/north-america/canada/british-columbia/british-columbia.poly"
+    }
+  ],
+  "knownDestinationsCovered": [
+    "akamina-pass",
+    "cameron-lake",
+    "canmore",
+    "castle-mountain-resort",
+    "crowsnest-pass",
+    "elk-lakes",
+    "island",
+    "pincher-creek",
+    "spray-lakes-reservoir",
+    "upper-kananaskis-lake",
+    "waterton-park"
+  ],
+  "operation": "Requested rectangular crop; source outlines cover all destination anchors",
+  "polygons": 1,
+  "sha256": "0ae45a6c4a109edd7e708f9708b49b9a86fe420f8466e18cc13a82897d624f17"
+}

@@ -1,0 +1,20 @@
+{
+  "inputs": [
+    {
+      "path": "regions/canadian-rockies-jasper/garmin/inputs/contours.geojson.gz",
+      "sha256": "8b73ea97ef0092ed640bcb1ff9a7a35765db19cf3359fdf13b9d44935fb12577",
+      "uncompressedSHA256": "9b103b783d4db7355a3a7f5686ff050c59bf8f80d8984f6a6720cda80c0ff370"
+    },
+    {
+      "path": "regions/canadian-rockies-jasper/garmin/inputs/landcover.geojson.gz",
+      "sha256": "a9ed9804ee1de6f694d058dbab4718b94a71d3e1bf8480ee5a2fafe689be6b5c",
+      "uncompressedSHA256": "8dd80d7ece2b5b5c56c04463d98c1f4ce3e7630c52be4f4f328c20fbe3d8bab6"
+    },
+    {
+      "path": "regions/canadian-rockies-jasper/garmin/inputs/land.geojson.gz",
+      "sha256": "2426344be701fe9604d9acf796fdf9326aa4556fc022cf44dc272cdcde82332f",
+      "uncompressedSHA256": "daeaa78aedf01d89885e02b3ed00c98e9ff25e8ccbf7a80368cb72e10f5810d1"
+    }
+  ],
+  "region": "canadian-rockies-jasper"
+}

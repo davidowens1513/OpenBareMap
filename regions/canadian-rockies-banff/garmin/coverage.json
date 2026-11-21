@@ -1,0 +1,42 @@
+{
+  "areaSquareDegrees": 2.769159693424355,
+  "bounds": [
+    -117.4633373639814,
+    50.487959655622966,
+    -115.02170891700634,
+    52.36021652189479
+  ],
+  "entireRequestedFootprintCovered": true,
+  "exactFootprint": "regions/canadian-rockies-banff/coverage.geojson",
+  "inputs": [
+    {
+      "bytes": 14543,
+      "path": "data/regions/canadian-rockies-banff/alberta.poly",
+      "sha256": "73107224d9615f29b0c80b7b932c17a17fe18f523bba2014729f46a648024308",
+      "url": "https://download.geofabrik.de/north-america/canada/alberta/alberta.poly"
+    },
+    {
+      "bytes": 2671,
+      "path": "data/regions/canadian-rockies-banff/british-columbia.poly",
+      "sha256": "fce9475100adfe7030b6cad9a58759ff8c09473a78b339fe3452e240e976b408",
+      "url": "https://download.geofabrik.de/north-america/canada/british-columbia/british-columbia.poly"
+    }
+  ],
+  "knownDestinationsCovered": [
+    "banff",
+    "canmore",
+    "columbia-icefield",
+    "field",
+    "golden",
+    "island",
+    "lake-louise",
+    "moraine-lake",
+    "mount-assiniboine",
+    "radium-hot-springs",
+    "saskatchewan-river-crossing",
+    "spray-lakes-reservoir"
+  ],
+  "operation": "Requested rectangular crop; source outlines cover all destination anchors",
+  "polygons": 1,
+  "sha256": "b380915c818a3e8fc92b5bb0cb9f096d1dbd898b61dd4196fdeb330ebf88e32c"
+}

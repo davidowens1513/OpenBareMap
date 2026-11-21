@@ -1,0 +1,214 @@
+{
+  "boundaryAttribution": "Parks Canada \u00b7 Government of Alberta \u00b7 Province of British Columbia",
+  "bounds": [
+    -117.4633373639814,
+    50.487959655622966,
+    -115.02170891700634,
+    52.36021652189479
+  ],
+  "clipBasemap": true,
+  "clipSource": true,
+  "clipTerrainToBounds": true,
+  "coastContextBounds": [
+    -119,
+    49,
+    -114,
+    54
+  ],
+  "contourIntervalMetres": 20,
+  "coverage": "Banff, Yoho and Kootenay national parks, Mount Assiniboine, Canmore, Golden and Radium Hot Springs, with Icefields Parkway coverage north to the Columbia Icefield.",
+  "coverageBoundary": true,
+  "coverageBoundaryLabel": "Map coverage limit",
+  "destinationLabels": {
+    "banff": "Banff",
+    "canmore": "Canmore",
+    "columbia-icefield": "Columbia Icefield",
+    "field": "Field",
+    "golden": "Golden",
+    "island": "Banff, Yoho & Kootenay",
+    "lake-louise": "Lake Louise",
+    "moraine-lake": "Moraine Lake",
+    "mount-assiniboine": "Mount Assiniboine",
+    "radium-hot-springs": "Radium Hot Springs",
+    "saskatchewan-river-crossing": "Saskatchewan River Crossing",
+    "spray-lakes-reservoir": "Spray Lakes Reservoir"
+  },
+  "destinations": {
+    "banff": [
+      -115.5708,
+      51.1784,
+      12
+    ],
+    "canmore": [
+      -115.3479,
+      51.089,
+      12
+    ],
+    "columbia-icefield": [
+      -117.2217,
+      52.2212,
+      12
+    ],
+    "field": [
+      -116.4936,
+      51.3965,
+      12
+    ],
+    "golden": [
+      -116.9631,
+      51.2974,
+      12
+    ],
+    "island": [
+      -116.13215515401444,
+      51.42247255404422,
+      8
+    ],
+    "lake-louise": [
+      -116.1812,
+      51.4254,
+      12
+    ],
+    "moraine-lake": [
+      -116.186,
+      51.327,
+      12
+    ],
+    "mount-assiniboine": [
+      -115.6518,
+      50.8692,
+      12
+    ],
+    "radium-hot-springs": [
+      -116.0727,
+      50.62,
+      12
+    ],
+    "saskatchewan-river-crossing": [
+      -116.7479,
+      51.976,
+      12
+    ],
+    "spray-lakes-reservoir": [
+      -115.2944,
+      50.9906,
+      12
+    ]
+  },
+  "garminContextBounds": [
+    -117.4633373639814,
+    50.487959655622966,
+    -115.02170891700634,
+    52.36021652189479
+  ],
+  "garminFamilyId": 4866,
+  "garminFilename": "OpenBareMap-Canadian-Rockies-Banff.img",
+  "garminPackageRevision": "2.0.1-trail-detail-r1",
+  "garminTileStartId": 48660001,
+  "garminUseSourceOutline": true,
+  "gridCRS": "EPSG:32611",
+  "gridExtent": [
+    460000,
+    640000,
+    5590000,
+    5810000
+  ],
+  "gridName": "WGS 84 / UTM 11N",
+  "gridSource": "utm-grid",
+  "id": "canadian-rockies-banff",
+  "ignoreSourceHeaderBounds": true,
+  "inspectionNames": [
+    "Banff",
+    "Canmore",
+    "Golden"
+  ],
+  "label": "Banff, Yoho & Kootenay",
+  "labelGlyphs": "ABCDEFGHIJKLMNOPQRSTUVWXYZ",
+  "mapVersion": "2.0.0",
+  "maxzoom": 14,
+  "minorWaterwayMinzoom": 10,
+  "minzoom": 4,
+  "name": "OpenBareMap Banff, Yoho & Kootenay",
+  "nativeLanguage": "en",
+  "optionalBasemapLayers": [
+    "ferry",
+    "island_name",
+    "cycling_route",
+    "railway",
+    "station",
+    "hiking_route",
+    "boundary"
+  ],
+  "permanentIce": true,
+  "projectedCRS": "EPSG:32611",
+  "requireBogFeatures": false,
+  "sourceBaseOverrides": {
+    "alberta": "https://download.geofabrik.de/north-america/canada/alberta/",
+    "british-columbia": "https://download.geofabrik.de/north-america/canada/british-columbia/"
+  },
+  "sourceBaseURL": "https://download.geofabrik.de/north-america/canada/",
+  "sourceCacheRegion": "canadian-rockies",
+  "sourceDate": "2026-11-20",
+  "sourceSlugs": [
+    "alberta",
+    "british-columbia"
+  ],
+  "styleRevision": "2.0.0-canadian-rockies-banff-r1",
+  "terrainAttribution": "Copernicus DEM GLO-30 \u00b7 European Union / ESA \u00b7 DLR / Airbus",
+  "terrainBounds": [
+    -118,
+    50,
+    -115,
+    53
+  ],
+  "terrainCacheRegion": "canadian-rockies",
+  "terrainNotice": "Banff, Yoho & Kootenay elevation: Copernicus DEM GLO-30 Public (AWS 2021 release).\n\nproduced using Copernicus WorldDEM-30 \u00a9 DLR e.V. 2010-2014 and \u00a9 Airbus Defence and Space GmbH 2014-2018 provided under COPERNICUS by the European Union and ESA; all rights reserved\n\nThe organisations in charge of the Copernicus programme by law or by delegation do not incur any liability for any use of the Copernicus WorldDEM-30.\n\nLicense: https://dataspace.copernicus.eu/sites/default/files/media/files/2025-06/copernicus_contributing_mission_data_access_v2_cop_dem_licenses.pdf\nSource: https://registry.opendata.aws/copernicus-dem/\nVertical datum: EGM2008 orthometric metres. Native approximately 30 m cells are bilinearly resampled to point-aligned Int16 HGT for the shared terrain pipeline. Ocean-only cells absent from the official public inventory are zero.\n",
+  "terrainProvider": "copernicus-glo30",
+  "townlands": false,
+  "validationAnchors": {
+    "banff": [
+      -115.5708,
+      51.1784
+    ],
+    "canmore": [
+      -115.3479,
+      51.089
+    ],
+    "columbia-icefield": [
+      -117.2217,
+      52.2212
+    ],
+    "field": [
+      -116.4936,
+      51.3965
+    ],
+    "golden": [
+      -116.9631,
+      51.2974
+    ],
+    "lake-louise": [
+      -116.1812,
+      51.4254
+    ],
+    "moraine-lake": [
+      -116.186,
+      51.327
+    ],
+    "mount-assiniboine": [
+      -115.6518,
+      50.8692
+    ],
+    "radium-hot-springs": [
+      -116.0727,
+      50.62
+    ],
+    "saskatchewan-river-crossing": [
+      -116.7479,
+      51.976
+    ],
+    "spray-lakes-reservoir": [
+      -115.2944,
+      50.9906
+    ]
+  }
+}

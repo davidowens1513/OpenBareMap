@@ -63,7 +63,7 @@ def render_homepage(website, entries, _downloads, count):
     return page
 
 
-def stage(output, website):
+def stage(output, website, *, regions=REGIONS, render=render_homepage, archive=ARCHIVE):
     entries, assets, worldwide = {}, {}, []
     app_catalog = json.loads((ROOT / 'distribution/app-bundles-v1/catalog.json').read_text())
     previews = json.loads((ROOT / 'config/preview-regions.json').read_text())
@@ -74,7 +74,7 @@ def stage(output, website):
                        'bytes': path.stat().st_size, 'sha256': digest(path)}
         return assets[key]
 
-    for region in REGIONS:
+    for region in regions:
         p = profile(region)
         release = ROOT / 'releases' / region / p['mapVersion']
         garmin = ROOT / 'regions' / region / 'garmin'
@@ -118,7 +118,9 @@ def stage(output, website):
         guide_key = f'Garmin/{region}-instructions.txt'
         image_asset = asset(image, image_key)
         guide = asset(garmin / 'dist/INSTALL.txt', guide_key)
-        for name in ('ATTRIBUTION.txt', 'terrain-attribution.md', 'terrain-data-sources.md'):
+        for name in ('ATTRIBUTION.txt', 'terrain-attribution.md', 'terrain-data-sources.md', 'boundary-source.json'):
+            if name == 'boundary-source.json' and not p.get('coverageBoundary'):
+                continue
             asset(garmin / 'dist' / name, f'Garmin/{region}/{name}')
         native = {'region': region, 'url': PUBLIC + image_key, 'downloadURL': PUBLIC + image_key,
                   'instructionsURL': PUBLIC + guide_key, 'instructionsSHA256': guide['sha256'],
@@ -142,10 +144,10 @@ def stage(output, website):
     write(output / 'worldwide-catalog-v1.json', {'regions': worldwide})
     write(output / 'preview-regions.json', list(preview_entries.values()))
     write(output / 'release-plan.json', {'regions': entries, 'downloads': {}, 'assets': list(assets.values()),
-                                        'websiteArchive': ARCHIVE})
+                                        'websiteArchive': archive})
     homepage = output / 'index.html'
-    homepage.write_text(render_homepage(website, entries, {}, len(app_catalog['regions'])))
-    stage_website_archive(website, homepage, output / ARCHIVE)
+    homepage.write_text(render(website, entries, {}, len(app_catalog['regions'])))
+    stage_website_archive(website, homepage, output / archive)
 
 
 def main():

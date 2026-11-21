@@ -1,0 +1,456 @@
+{
+  "coverage": "The southern Canadian Rockies from Canmore and Spray Valley through Kananaskis, Elk Lakes, Crowsnest Pass and the Castle parks to Waterton Lakes and Akamina-Kishinena at the US Glacier border.",
+  "coverageAnchors": {
+    "akamina-pass": {
+      "coordinate": [
+        -114.0749,
+        49.0351
+      ],
+      "featuresInNeighbouringDetailedTiles": 219
+    },
+    "cameron-lake": {
+      "coordinate": [
+        -114.0463,
+        49.0219
+      ],
+      "featuresInNeighbouringDetailedTiles": 185
+    },
+    "canmore": {
+      "coordinate": [
+        -115.3479,
+        51.089
+      ],
+      "featuresInNeighbouringDetailedTiles": 10784
+    },
+    "castle-mountain-resort": {
+      "coordinate": [
+        -114.4127,
+        49.3198
+      ],
+      "featuresInNeighbouringDetailedTiles": 120
+    },
+    "crowsnest-pass": {
+      "coordinate": [
+        -114.563,
+        49.6085
+      ],
+      "featuresInNeighbouringDetailedTiles": 83
+    },
+    "elk-lakes": {
+      "coordinate": [
+        -115.0565,
+        50.5474
+      ],
+      "featuresInNeighbouringDetailedTiles": 226
+    },
+    "pincher-creek": {
+      "coordinate": [
+        -113.9483,
+        49.4846
+      ],
+      "featuresInNeighbouringDetailedTiles": 3630
+    },
+    "spray-lakes-reservoir": {
+      "coordinate": [
+        -115.2944,
+        50.9906
+      ],
+      "featuresInNeighbouringDetailedTiles": 110
+    },
+    "upper-kananaskis-lake": {
+      "coordinate": [
+        -115.172,
+        50.611
+      ],
+      "featuresInNeighbouringDetailedTiles": 142
+    },
+    "waterton-park": {
+      "coordinate": [
+        -113.9044,
+        49.0515
+      ],
+      "featuresInNeighbouringDetailedTiles": 844
+    }
+  },
+  "datasets": {
+    "basemap": {
+      "empty_tile_count": 119,
+      "logical_tiles_sha256": "5103f1cc24413d7df8cb6e1d4818db4b28499e5cfbdebfaee31a795e77eb43e8",
+      "tile_count": 22863
+    },
+    "grid": {
+      "empty_tile_count": 0,
+      "logical_tiles_sha256": "6661a718e3fa12cfd6e1619714bc5f37e44a593cd386fca3f5dcb4e70a85b454",
+      "tile_count": 23493
+    },
+    "hillshade": {
+      "empty_tile_count": 0,
+      "logical_tiles_sha256": "e5566b24c4ef0e1c52d29a08322fd8cff700742bc5c08bb717db9b876f6474e3",
+      "tile_count": 1584
+    },
+    "topography": {
+      "empty_tile_count": 81042,
+      "logical_tiles_sha256": "a054df7e1060c7048b63ed367b3a3b796b5610a414dc61d12b18f881a99e8220",
+      "tile_count": 109569
+    }
+  },
+  "detail": {
+    "basemap": {
+      "boundaries": 7138,
+      "contours": 0,
+      "permanentIce": {
+        "glacier": 592,
+        "permanent_snow": 0
+      }
+    },
+    "topography": {
+      "boundaries": 0,
+      "contours": 755650
+    }
+  },
+  "garmin": {
+    "familyId": 4868,
+    "garminPackageRevision": "2.0.1-trail-detail-r1",
+    "inspection": {
+      "anchorLabels": {
+        "Blairmore": "Blairmore",
+        "Canmore": "Canmore",
+        "Pincher Creek": "Pincher Creek"
+      },
+      "bounds": [
+        -115.66414833068848,
+        48.9990234375,
+        -113.5107421875,
+        51.54793739318848
+      ],
+      "coastPolygonsByLevel": {
+        "0": {
+          "0x32": 18,
+          "0x54": 34
+        },
+        "1": {
+          "0x32": 17,
+          "0x54": 34
+        },
+        "2": {
+          "0x32": 17,
+          "0x54": 34
+        },
+        "3": {
+          "0x32": 17,
+          "0x54": 34
+        },
+        "4": {
+          "0x32": 17,
+          "0x54": 30
+        }
+      },
+      "contoursByLevel": {
+        "0": {
+          "0x10009": 118,
+          "0x20": 71785,
+          "0x22": 18049
+        },
+        "1": {
+          "0x10009": 118,
+          "0x20": 54402,
+          "0x22": 13661
+        },
+        "2": {
+          "0x10009": 118,
+          "0x22": 12789
+        },
+        "3": {
+          "0x10008": 11701,
+          "0x10009": 116
+        },
+        "4": {
+          "0x10009": 101
+        }
+      },
+      "lineInstancesAtHighestDetail": {
+        "0x1": 161,
+        "0x10001": 293,
+        "0x10002": 370,
+        "0x10003": 6,
+        "0x10004": 299,
+        "0x10005": 220,
+        "0x10006": 104,
+        "0x10009": 118,
+        "0x1000a": 41,
+        "0x1000b": 49,
+        "0x14": 167,
+        "0x16": 7010,
+        "0x18": 12401,
+        "0x1a": 4,
+        "0x1c": 453,
+        "0x1e": 179,
+        "0x1f": 576,
+        "0x2": 61,
+        "0x20": 71785,
+        "0x22": 18049,
+        "0x3": 164,
+        "0x4": 231,
+        "0x6": 4971,
+        "0x7": 5814,
+        "0xa": 2822
+      },
+      "logicalCombinedSHA256": "e845af7eac0e0d6ad909eebbe6b3b69e101f40f18d2bae406a03779949974c6e",
+      "logicalHashNote": "Internal file names, sizes and payloads; only CommonHeader creation-date bytes 14..20 are zeroed for hashing. IMG archive headers are excluded. Output bytes are never modified.",
+      "logicalTileSHA256": {
+        "48680001.img": "a079faf37adfdabc8dd7a131be7839bd9e0840b09862522744c0c2bf278d51e8",
+        "48680002.img": "b3af937c9ad1cdd656d6479f303a792b5d14d0f88f9e1dc41d4ea453a97e51fc",
+        "48680003.img": "8aba1be90786ef7fb36dfca8e6dee62a71dfb6eef4b57ae9a78541e7f86d1d76",
+        "48680004.img": "ddd23795c8a7447bed4f5f572fd0725c4a6521f0a88bc98d07bb568486b7655a",
+        "48680005.img": "bd2cf1bd2b043e1cbad02391c592c0256240829eaac36dfc0752d07b2f954c30",
+        "48680006.img": "63496cbe7c5e3c91f777e34589bb2fbf9209269af7f4f36664c5a352551e5d32",
+        "48680007.img": "3d53e88f6528a85432bab3ca254013318c5f51037363acae7ce50a26ccb34567",
+        "48680008.img": "9f8ffadfb3dd5b82f9b45346622f04cf4022991d54c8c87f4c7c8b547c37ee0f",
+        "48680009.img": "af0ad6bc1701c0681d5fd7b0fa01a74585bff5806c59b065c2c675fbb20be261",
+        "48680010.img": "3b8d02e13655064e1b1f25de273016fe6ffe9236c5c86e759fd49879ead5dbbd",
+        "48680011.img": "6f5f3eb823d07980779b23cc9136639396ddd4fa405240a1f381c343c8bddbd2",
+        "48680012.img": "44eade0e70def97557f73391fc950212ea2c989b741fd6b84defae8708ddd207",
+        "48680013.img": "e956f84983747dd367ed1fdda1e991331796bea8acaf611916e9d884949e9684",
+        "48680014.img": "dd5b6ad1eb700cd64963faa91e9adfb7a1b1460a509c7bdb4650b1ea019d72e2",
+        "48680015.img": "79b14636d921e475f0408da2594849189f2a9d6da512793c46a362984cd00cc8",
+        "48680016.img": "323a29006e177b5c9966997551f1e76e575402acf40209285f7a59a38665ba96",
+        "48680017.img": "959bb8f3d68f81cad59cab6940c58e7ecbb9b2bb80bb27536d0ec71e4e158375"
+      },
+      "pointInstancesAtHighestDetail": {
+        "0x10001": 163,
+        "0x10002": 2469,
+        "0x10003": 440,
+        "0x10004": 1,
+        "0x10006": 1526,
+        "0x2f0b": 884,
+        "0x600": 7,
+        "0x650c": 30,
+        "0x6603": 294,
+        "0x6615": 38,
+        "0x6616": 1194,
+        "0x800": 11,
+        "0xb00": 23,
+        "0xc00": 116
+      },
+      "polygonInstancesAtHighestDetail": {
+        "0x10101": 43,
+        "0x10102": 176,
+        "0x10103": 1,
+        "0x10104": 75,
+        "0x10105": 34,
+        "0x10106": 61,
+        "0x10107": 10,
+        "0x10109": 43,
+        "0x1010a": 23,
+        "0x1010b": 55,
+        "0x1010c": 52,
+        "0x13": 16819,
+        "0x32": 18,
+        "0x3c": 3017,
+        "0x50": 10508,
+        "0x51": 438,
+        "0x54": 34
+      },
+      "routing": false,
+      "subfileBytes": {
+        "DEM": 22198861,
+        "LBL": 187744,
+        "MPS": 1587,
+        "RGN": 36316540,
+        "SRT": 912,
+        "TRE": 435795,
+        "TYP": 3113
+      },
+      "tiles": 17
+    },
+    "output": {
+      "bytes": 59308032,
+      "path": "regions/canadian-rockies-kananaskis-waterton/garmin/dist/OpenBareMap-Canadian-Rockies-Kananaskis-Waterton.img",
+      "sha256": "a8a938e08711ed86c76404a8cdf8d3500c9921c3906ced0fb9095fe8efe45cbf"
+    },
+    "routing": false,
+    "status": "compiled and structurally inspected; hardware rendering pending"
+  },
+  "geometryProcessing": {
+    "contours": 71093,
+    "grid": {
+      "grid_10km": 48,
+      "grid_1km": 462
+    },
+    "landcover": {
+      "empty_source_areas": [],
+      "features": 25699,
+      "permanentIce": {
+        "glacier": 45,
+        "permanent_snow": 0
+      },
+      "retained": 1488,
+      "smoothed": 24211
+    }
+  },
+  "irelandGarminPackageRevision": "2.0.1-trail-detail-r1",
+  "irelandPreserved": true,
+  "labelGlyphs": {
+    "Open Sans Bold": true,
+    "Open Sans Regular": true,
+    "Open Sans Semibold": true
+  },
+  "landBackground": {
+    "akamina-pass": {
+      "coordinate": [
+        -114.0749,
+        49.0351
+      ],
+      "verifiedZooms": [
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    },
+    "cameron-lake": {
+      "coordinate": [
+        -114.0463,
+        49.0219
+      ],
+      "verifiedZooms": [
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    },
+    "canmore": {
+      "coordinate": [
+        -115.3479,
+        51.089
+      ],
+      "verifiedZooms": [
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    },
+    "castle-mountain-resort": {
+      "coordinate": [
+        -114.4127,
+        49.3198
+      ],
+      "verifiedZooms": [
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    },
+    "crowsnest-pass": {
+      "coordinate": [
+        -114.563,
+        49.6085
+      ],
+      "verifiedZooms": [
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    },
+    "elk-lakes": {
+      "coordinate": [
+        -115.0565,
+        50.5474
+      ],
+      "verifiedZooms": [
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    },
+    "pincher-creek": {
+      "coordinate": [
+        -113.9483,
+        49.4846
+      ],
+      "verifiedZooms": [
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    },
+    "spray-lakes-reservoir": {
+      "coordinate": [
+        -115.2944,
+        50.9906
+      ],
+      "verifiedZooms": [
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    },
+    "upper-kananaskis-lake": {
+      "coordinate": [
+        -115.172,
+        50.611
+      ],
+      "verifiedZooms": [
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    },
+    "waterton-park": {
+      "coordinate": [
+        -113.9044,
+        49.0515
+      ],
+      "verifiedZooms": [
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    }
+  },
+  "packages": {
+    "android": {
+      "checkedFiles": 47,
+      "nativeDeviceRenderingTested": false,
+      "sourceFiles": {
+        "basemap": "maps/basemap.mbtiles",
+        "coast": "maps/coast.mbtiles",
+        "hillshade": "maps/hillshade.mbtiles",
+        "topography": "maps/topography.mbtiles",
+        "utm-grid": "maps/grid.mbtiles"
+      }
+    },
+    "ios": {
+      "checkedFiles": 50,
+      "nativeDeviceRenderingTested": false,
+      "sourceFiles": {
+        "basemap": "maps/basemap.mbtiles",
+        "coast": "maps/coast.mbtiles",
+        "hillshade": "maps/hillshade.mbtiles",
+        "topography": "maps/topography.mbtiles",
+        "utm-grid": "maps/grid.mbtiles"
+      }
+    }
+  },
+  "region": "canadian-rockies-kananaskis-waterton",
+  "status": "automated checks passed; visual and hardware acceptance pending"
+}

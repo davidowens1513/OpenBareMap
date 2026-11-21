@@ -1,0 +1,21 @@
+{
+  "combinedSHA256": "d56699dbcb6e5f8ada31b5c12dc7cf3e076f47ea53617113b9bbe8235d438579",
+  "command": [
+    "/opt/homebrew/opt/openjdk@21/libexec/openjdk.jdk/Contents/Home/bin/java",
+    "-Xmx6g",
+    "-jar",
+    "/Volumes/Extreme SSD/Projects/OpenBareMap/garmin/tools/splitter-r654/splitter.jar",
+    "--mapid=48680001",
+    "--description=OpenBareMap Kananaskis & Waterton",
+    "--max-nodes=1000000",
+    "--max-threads=2",
+    "--keep-complete=true",
+    "--output=pbf",
+    "--polygon-file=/Volumes/Extreme SSD/Projects/OpenBareMap/regions/canadian-rockies-kananaskis-waterton/garmin/coverage.poly",
+    "--output-dir=/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/906ead9d53a7/canadian-rockies-kananaskis-waterton/garmin/split",
+    "--ignore-osm-bounds=true",
+    "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/906ead9d53a7/canadian-rockies-kananaskis-waterton/garmin/combined.osm.pbf"
+  ],
+  "coverageSHA256": "0ae45a6c4a109edd7e708f9708b49b9a86fe420f8466e18cc13a82897d624f17",
+  "ignoreSourceHeaderBounds": true
+}

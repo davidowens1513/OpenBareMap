@@ -1,0 +1,42 @@
+{
+  "builderSHA256": "a48ad9a24103de9fa6d30131c92523a644e60aefa7cda15ed55af44ce34491b6",
+  "contoursSourceSHA256": "469e1f847a13efa5fd410284cbe318b1551b9bdb0900386f590a340e8f5d4923",
+  "counts": {
+    "contours": 71093,
+    "grid": {
+      "grid_10km": 48,
+      "grid_1km": 462
+    },
+    "landcover": {
+      "empty_source_areas": [],
+      "features": 25699,
+      "permanentIce": {
+        "glacier": 45,
+        "permanent_snow": 0
+      },
+      "retained": 1488,
+      "smoothed": 24211
+    }
+  },
+  "osm": {
+    "bytes": 75694189,
+    "operation": "Complete-feature bbox extraction with nested relation references, then libosmium sorted merge; duplicate OSM objects resolved by version",
+    "path": "data/regions/canadian-rockies-kananaskis-waterton/canadian-rockies-kananaskis-waterton-261120.osm.pbf",
+    "replicationTimestamp": "2026-11-20T21:21:21Z",
+    "sha256": "c786064f845d5c1ac586c765d3796845c0ca1043ddb55cf6a42ca9cb301d2518",
+    "snapshot_date": "2026-11-20",
+    "url": null
+  },
+  "outputs": {
+    "contours.geojson": "28b377c89618546b803432638005f2116b9ced66df153862a3d67ca44e3d6f51",
+    "grid_10km.geojson": "f9d25cf601c9b669d84452f64c3876e61740abb304a1b66f87cd0dbd658eacc7",
+    "grid_1km.geojson": "7c3d34ee9b29dd1f8dafdffac477a209b9a2b33fa2a0ba7eda5f236452bcba17",
+    "landcover.geojson": "63282ea2d37e37c1d6e4b89b717ec20e821badcde3d3c302e8b4b6be5bd18c1e"
+  },
+  "permanentIce": {
+    "glacier": 45,
+    "permanent_snow": 0
+  },
+  "region": "canadian-rockies-kananaskis-waterton",
+  "smootherSHA256": "7581d024dc1c1bec931642c7201db149bf64a64c814c451fa8bf37a0881ea6c9"
+}

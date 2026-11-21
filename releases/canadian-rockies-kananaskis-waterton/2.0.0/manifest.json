@@ -1,0 +1,106 @@
+{
+  "acceptance": "Automated checks only; see validation and visual-review records for actual reviewed scope.",
+  "coverage": "The southern Canadian Rockies from Canmore and Spray Valley through Kananaskis, Elk Lakes, Crowsnest Pass and the Castle parks to Waterton Lakes and Akamina-Kishinena at the US Glacier border.",
+  "datasets": {
+    "basemap": {
+      "bytes": 120115200,
+      "path": "releases/canadian-rockies-kananaskis-waterton/2.0.0/maps/basemap.mbtiles",
+      "sha256": "3c0812cea431b21929ccf773f3fd575b123041d374bd37f54fc1bb778e224a2e",
+      "validation": {
+        "empty_tile_count": 119,
+        "logical_tiles_sha256": "5103f1cc24413d7df8cb6e1d4818db4b28499e5cfbdebfaee31a795e77eb43e8",
+        "tile_count": 22863
+      }
+    },
+    "grid": {
+      "bytes": 7860224,
+      "path": "releases/canadian-rockies-kananaskis-waterton/2.0.0/maps/grid.mbtiles",
+      "sha256": "3cffe31f2d25574e21a3bb1a6ff86bb000d952bcf85d2da8b683c87c79320fae",
+      "validation": {
+        "empty_tile_count": 0,
+        "logical_tiles_sha256": "6661a718e3fa12cfd6e1619714bc5f37e44a593cd386fca3f5dcb4e70a85b454",
+        "tile_count": 23493
+      }
+    },
+    "hillshade": {
+      "bytes": 59994112,
+      "path": "releases/canadian-rockies-kananaskis-waterton/2.0.0/maps/hillshade.mbtiles",
+      "sha256": "0614cace71d0d1a1a2ba029ff6495fd2060782af95237efd7976448619aba1a0",
+      "validation": {
+        "empty_tile_count": 0,
+        "logical_tiles_sha256": "e5566b24c4ef0e1c52d29a08322fd8cff700742bc5c08bb717db9b876f6474e3",
+        "tile_count": 1584
+      }
+    },
+    "topography": {
+      "bytes": 266424320,
+      "path": "releases/canadian-rockies-kananaskis-waterton/2.0.0/maps/topography-context.mbtiles",
+      "sha256": "c99acf7d04014184e51c06c1724c23aee5d80d5efc125cbdbd2da8b031c2f15e",
+      "validation": {
+        "empty_tile_count": 81042,
+        "logical_tiles_sha256": "a054df7e1060c7048b63ed367b3a3b796b5610a414dc61d12b18f881a99e8220",
+        "tile_count": 109569
+      }
+    }
+  },
+  "garmin": {
+    "bytes": 59308032,
+    "path": "regions/canadian-rockies-kananaskis-waterton/garmin/dist/OpenBareMap-Canadian-Rockies-Kananaskis-Waterton.img",
+    "sha256": "a8a938e08711ed86c76404a8cdf8d3500c9921c3906ced0fb9095fe8efe45cbf"
+  },
+  "geometryReport": {
+    "path": "releases/canadian-rockies-kananaskis-waterton/2.0.0/build-records/canadian-rockies-kananaskis-waterton-geometry/geometry-report.json",
+    "sha256": "e505e87b0694026c82b7375a5c2c7e1808feb1c2d1c3c2561ee0c877c4f0e306"
+  },
+  "hostAppsModified": false,
+  "mapVersion": "2.0.0",
+  "osm": {
+    "bytes": 75694189,
+    "operation": "Complete-feature bbox extraction with nested relation references, then libosmium sorted merge; duplicate OSM objects resolved by version",
+    "path": "data/regions/canadian-rockies-kananaskis-waterton/canadian-rockies-kananaskis-waterton-261120.osm.pbf",
+    "replicationTimestamp": "2026-11-20T21:21:21Z",
+    "sha256": "c786064f845d5c1ac586c765d3796845c0ca1043ddb55cf6a42ca9cb301d2518",
+    "snapshot_date": "2026-11-20",
+    "url": null
+  },
+  "packages": {
+    "android": {
+      "archive": {
+        "bytes": 460700634,
+        "path": "regions/canadian-rockies-kananaskis-waterton/android/OpenBareMap-Android.zip",
+        "sha256": "b5791d69bfc7980e5edbf0459fa61163f121d9fb9e26e76def0f80e01fd487a5"
+      },
+      "checksumsSHA256": "e3e550dc8fc6fea365e26fbe26acf32e94fb99f07510f46465079059b04a2d23",
+      "manifestSHA256": "8e9621bc9762ac53a40b50d7f961c69a8651d3e440a15087d86957eec0f279b3",
+      "path": "regions/canadian-rockies-kananaskis-waterton/android",
+      "validationSHA256": "27648cd0598436db763a73615adb6d68e09fac7a995b79830aadc76170c17de4"
+    },
+    "ios": {
+      "checksumsSHA256": "2aae2e5d18ab830dabb31ced6cf107e2d6def9c30017719223d85211d5200f6f",
+      "manifestSHA256": "6f5e234d8b2d14c632313fadfb780e0c591e74976f54dab6a089f4f749310b6b",
+      "path": "regions/canadian-rockies-kananaskis-waterton/ios",
+      "validationSHA256": "166da9acc4f9d23e88585b7bcb3d40ebe8dba0f20a42abb585b24db5b980b811"
+    }
+  },
+  "pythonRuntime": {
+    "packages": {
+      "Pillow": "12.3.0",
+      "certifi": "2026.10.23",
+      "charset-normalizer": "3.5.2",
+      "idna": "3.20",
+      "numpy": "2.5.4",
+      "osmium": "4.3.2",
+      "pyproj": "3.8.0",
+      "requests": "2.34.2",
+      "shapely": "2.2.0",
+      "urllib3": "2.8.0"
+    },
+    "platform": "macOS-27.2.1-arm64-arm-64bit-Mach-O",
+    "python": "3.14.5 (main, May 10 2026, 10:21:34) [Clang 21.0.0 (clang-2100.0.123.102)]",
+    "requirementsSHA256": "427f12ff8b49bfebac0a7d453c2f65bd15d6695584b18e6ecee1fdfeed20a36c"
+  },
+  "region": "canadian-rockies-kananaskis-waterton",
+  "styleSHA256": "84f51bfa91368a9f25a315fe1a6bb7c14cc2b1602fbaaed513b30269e7e2bd1d",
+  "terrainLockSHA256": "e7cce273554a4f8e3e66d92eb22486dace00728bcce6c238833c645eb5ace32a",
+  "validation": "validation.json"
+}

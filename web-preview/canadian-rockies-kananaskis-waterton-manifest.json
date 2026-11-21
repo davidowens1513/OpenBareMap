@@ -1,0 +1,41 @@
+{
+  "regions": {
+    "canadian-rockies-kananaskis-waterton": {
+      "basemap": {
+        "sourceSHA256": "3c0812cea431b21929ccf773f3fd575b123041d374bd37f54fc1bb778e224a2e",
+        "bytes": 111433202,
+        "sha256": "161a13bfb91aa8bfc96b204d6b3b66cff44eb80b7362dde7ad827617aaf92cb7",
+        "tiles": 22863
+      },
+      "grid": {
+        "sourceSHA256": "3cffe31f2d25574e21a3bb1a6ff86bb000d952bcf85d2da8b683c87c79320fae",
+        "bytes": 6714616,
+        "sha256": "1665102de5d718739d98107ccde4e46d479c9b52e2b250eb2abd891098756357",
+        "tiles": 23493
+      },
+      "hillshade": {
+        "sourceSHA256": "0614cace71d0d1a1a2ba029ff6495fd2060782af95237efd7976448619aba1a0",
+        "bytes": 58728848,
+        "sha256": "c99a9f3d8d0b099366f7d29e28c9ef1a6ae6068e0137eac9a35d322f5c8770c1",
+        "tiles": 1584
+      },
+      "topography": {
+        "sourceSHA256": "c99acf7d04014184e51c06c1724c23aee5d80d5efc125cbdbd2da8b031c2f15e",
+        "bytes": 246171262,
+        "sha256": "7db1d30349d748ab6e65b47db6137616b395799c6965a7854911e5eb22738eab",
+        "tiles": 109569
+      },
+      "coast": {
+        "sourceSHA256": "2d0e61a5aab06513ab16b8f2b71b349fdbe26227596a186b679954391bdb921e",
+        "bytes": 37394,
+        "sha256": "ef3dc44b20ccaf1b8264b2a928d1b614e4a811e8685903abef81ef99aa20055d",
+        "tiles": 7020
+      }
+    }
+  },
+  "pmtilesPython": "3.8.1",
+  "pmtilesJS": "4.5.0",
+  "librarySHA256": "caf981bc46f6327ee7e65d5dc964d89d38a69f60edca2bd4c5c890c21b554c6c",
+  "dataOrigin": "https://downloads.appsbyonzy.dev/OpenBareMap/canadian-rockies-kananaskis-waterton/2.0.0/preview",
+  "scope": "Complete selected map tiles; no regional or zoom sampling."
+}

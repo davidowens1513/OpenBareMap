@@ -1,0 +1,831 @@
+{
+  "regionIds": [
+    "canadian-rockies-banff",
+    "canadian-rockies-jasper",
+    "canadian-rockies-kananaskis-waterton"
+  ],
+  "publicAssetsVerified": 162,
+  "previewArchivesWithVerifiedByteRanges": 15,
+  "publicAssetsAndCatalogues": {
+    "Garmin/OpenBareMap-Canadian-Rockies-Banff.img": {
+      "bytes": 92368896,
+      "sha256": "f7d4d295b3d5ec37a63db1b63379a7c860af3b3c35a9dbb0bb86ddd5576e8afd",
+      "verifiedUTC": "2026-11-21T19:20:56.521115+00:00"
+    },
+    "Garmin/OpenBareMap-Canadian-Rockies-Jasper.img": {
+      "bytes": 100057088,
+      "sha256": "0568cc2e3247a3165cb924e477ddad00fcb54a9eedefa99e89d0f63ae8409fd0",
+      "verifiedUTC": "2026-11-21T19:24:45.033007+00:00"
+    },
+    "Garmin/OpenBareMap-Canadian-Rockies-Kananaskis-Waterton.img": {
+      "bytes": 59308032,
+      "sha256": "a8a938e08711ed86c76404a8cdf8d3500c9921c3906ced0fb9095fe8efe45cbf",
+      "verifiedUTC": "2026-11-21T19:27:54.950147+00:00"
+    },
+    "Garmin/canadian-rockies-banff-instructions.txt": {
+      "bytes": 3444,
+      "sha256": "deaff0255e9d4eb1fe460f0b67439dcb8f79dd34174ae2314a9d21e2670532d1",
+      "verifiedUTC": "2026-11-21T19:20:57.565232+00:00"
+    },
+    "Garmin/canadian-rockies-banff/ATTRIBUTION.txt": {
+      "bytes": 1058,
+      "sha256": "72113c30c1df941a4c13cf1e29e55512e1a83b2ac1c8681433cd68a5c194d6b8",
+      "verifiedUTC": "2026-11-21T19:21:03.560270+00:00"
+    },
+    "Garmin/canadian-rockies-banff/boundary-source.json": {
+      "bytes": 2334,
+      "sha256": "2f5a301d3a59fa7218d9445017d7fef30557583d855431c272f4e1d76ba901b7",
+      "verifiedUTC": "2026-11-21T19:21:14.422284+00:00"
+    },
+    "Garmin/canadian-rockies-banff/manifest.json": {
+      "bytes": 585,
+      "sha256": "6b7772c9a110fd20be8ef0acdfe30baf0f8c58ad0a4ff4034614257f933d14af",
+      "verifiedUTC": "2026-11-21T19:21:21.579888+00:00"
+    },
+    "Garmin/canadian-rockies-banff/terrain-attribution.md": {
+      "bytes": 847,
+      "sha256": "617420b7a72c42543d4cd235f898872687e4d2fc64039751d8164d31823c928d",
+      "verifiedUTC": "2026-11-21T19:21:03.587938+00:00"
+    },
+    "Garmin/canadian-rockies-banff/terrain-data-sources.md": {
+      "bytes": 970,
+      "sha256": "4bb0af96e15bc4b1f9940874143f1339877e9eca4e7465446b4d501ed5227a34",
+      "verifiedUTC": "2026-11-21T19:21:14.415143+00:00"
+    },
+    "Garmin/canadian-rockies-jasper-instructions.txt": {
+      "bytes": 3448,
+      "sha256": "92a782416be945ee2321ac3867e7a3c1d92daf6bf782b403a7dec7165041704d",
+      "verifiedUTC": "2026-11-21T19:24:41.754446+00:00"
+    },
+    "Garmin/canadian-rockies-jasper/ATTRIBUTION.txt": {
+      "bytes": 1056,
+      "sha256": "8c369c6868d51b0ad03c753e0f03594a851181b83a1edecaf24f5af5e76c17fe",
+      "verifiedUTC": "2026-11-21T19:24:49.495598+00:00"
+    },
+    "Garmin/canadian-rockies-jasper/boundary-source.json": {
+      "bytes": 2316,
+      "sha256": "66ebe9bb2a19bcae2b7864f2cc407868f82e1774fa22e207f1ec54e44e642db2",
+      "verifiedUTC": "2026-11-21T19:24:56.602847+00:00"
+    },
+    "Garmin/canadian-rockies-jasper/manifest.json": {
+      "bytes": 590,
+      "sha256": "5b385c46823a94cfd00db98155cad50fde851b0b30541585035235752fb2bbe5",
+      "verifiedUTC": "2026-11-21T19:25:04.581593+00:00"
+    },
+    "Garmin/canadian-rockies-jasper/terrain-attribution.md": {
+      "bytes": 847,
+      "sha256": "617420b7a72c42543d4cd235f898872687e4d2fc64039751d8164d31823c928d",
+      "verifiedUTC": "2026-11-21T19:24:49.574203+00:00"
+    },
+    "Garmin/canadian-rockies-jasper/terrain-data-sources.md": {
+      "bytes": 970,
+      "sha256": "4bb0af96e15bc4b1f9940874143f1339877e9eca4e7465446b4d501ed5227a34",
+      "verifiedUTC": "2026-11-21T19:24:56.616545+00:00"
+    },
+    "Garmin/canadian-rockies-kananaskis-waterton-instructions.txt": {
+      "bytes": 3526,
+      "sha256": "c779c8536c49299009b27ad03bc104da269e02460aca0a352a1b0651785af2d7",
+      "verifiedUTC": "2026-11-21T19:27:36.999807+00:00"
+    },
+    "Garmin/canadian-rockies-kananaskis-waterton/ATTRIBUTION.txt": {
+      "bytes": 1056,
+      "sha256": "eaa3329ca172980d0165fedba3305af425d7965abdfa06eae316dc00e688ed67",
+      "verifiedUTC": "2026-11-21T19:27:45.219102+00:00"
+    },
+    "Garmin/canadian-rockies-kananaskis-waterton/boundary-source.json": {
+      "bytes": 2464,
+      "sha256": "9ef6575df58e2a490dc07495f7fc00cafd3dcc8735df7e5a6cfd66c34a1cca8f",
+      "verifiedUTC": "2026-11-21T19:28:04.527530+00:00"
+    },
+    "Garmin/canadian-rockies-kananaskis-waterton/manifest.json": {
+      "bytes": 641,
+      "sha256": "3d25a013ea571b8336fd4d6d4a9913451b0e8be7914573a9472d2cc98b315037",
+      "verifiedUTC": "2026-11-21T19:28:04.558951+00:00"
+    },
+    "Garmin/canadian-rockies-kananaskis-waterton/terrain-attribution.md": {
+      "bytes": 847,
+      "sha256": "617420b7a72c42543d4cd235f898872687e4d2fc64039751d8164d31823c928d",
+      "verifiedUTC": "2026-11-21T19:27:50.552043+00:00"
+    },
+    "Garmin/canadian-rockies-kananaskis-waterton/terrain-data-sources.md": {
+      "bytes": 970,
+      "sha256": "4bb0af96e15bc4b1f9940874143f1339877e9eca4e7465446b4d501ed5227a34",
+      "verifiedUTC": "2026-11-21T19:27:58.745313+00:00"
+    },
+    "OpenBareMap/app-bundles-v1/catalog.json": {
+      "bytes": 141054,
+      "sha256": "b2ab804d8e13c0e3071e52003c179105150e9481d65bd6fd6fd2faf5c93a5844",
+      "verifiedUTC": "2026-11-21T19:29:26.768811+00:00"
+    },
+    "OpenBareMap/canadian-rockies-banff/2.0.0/app-bundles-v1/android/OpenBareMap-Banff,-Yoho-Kootenay-Android-Bundle.zip": {
+      "bytes": 521558109,
+      "sha256": "85131eb6997448b37f2b743206846857bf8029db7d2826b5f8a4b7cacd6ab079",
+      "verifiedUTC": "2026-11-21T19:21:13.729962+00:00"
+    },
+    "OpenBareMap/canadian-rockies-banff/2.0.0/app-bundles-v1/android/SHA256SUMS.txt": {
+      "bytes": 201,
+      "sha256": "83ce2b5b9ea59535a364ec5dec0b680728374ccdd774edb9a0a2a1aec763317e",
+      "verifiedUTC": "2026-11-21T19:19:15.045321+00:00"
+    },
+    "OpenBareMap/canadian-rockies-banff/2.0.0/app-bundles-v1/android/instructions.txt": {
+      "bytes": 4251,
+      "sha256": "a8688643e4ac78fa900bda81413e8c2e2c60ae30a2403d67adaa6b4b91e0d523",
+      "verifiedUTC": "2026-11-21T19:19:09.550728+00:00"
+    },
+    "OpenBareMap/canadian-rockies-banff/2.0.0/app-bundles-v1/android/manifest.json": {
+      "bytes": 1682,
+      "sha256": "52ad7c1463047ab32a87a6de5727d158e7c27d0cb3eabe783b5fe3322a2bdf01",
+      "verifiedUTC": "2026-11-21T19:19:15.051632+00:00"
+    },
+    "OpenBareMap/canadian-rockies-banff/2.0.0/app-bundles-v1/ios/OpenBareMap-Banff,-Yoho-Kootenay-iOS-Bundle.zip": {
+      "bytes": 521559847,
+      "sha256": "b4ca0eeb425b9645d29c2fc426a9829247463c2d728421596ea3002cf99beebe",
+      "verifiedUTC": "2026-11-21T19:21:19.869683+00:00"
+    },
+    "OpenBareMap/canadian-rockies-banff/2.0.0/app-bundles-v1/ios/SHA256SUMS.txt": {
+      "bytes": 197,
+      "sha256": "bc2366009289797f87656c9ea2f277aefa44614f08443d1af4789fb038c07e14",
+      "verifiedUTC": "2026-11-21T19:19:27.847872+00:00"
+    },
+    "OpenBareMap/canadian-rockies-banff/2.0.0/app-bundles-v1/ios/instructions.txt": {
+      "bytes": 3679,
+      "sha256": "a8ebc7c00286f6ae741165cf51742dfcda18e28436526a532bc5faccbfa99f4f",
+      "verifiedUTC": "2026-11-21T19:19:22.417790+00:00"
+    },
+    "OpenBareMap/canadian-rockies-banff/2.0.0/app-bundles-v1/ios/manifest.json": {
+      "bytes": 1769,
+      "sha256": "d5f363c905ef18d3ce972f18210917a1381ba5b51ba7065f6065fde0aefb944a",
+      "verifiedUTC": "2026-11-21T19:19:35.263731+00:00"
+    },
+    "OpenBareMap/canadian-rockies-banff/2.0.0/preview/assets/LICENSE.txt": {
+      "bytes": 5984,
+      "sha256": "ee5fc05a0677eaf69601d2c7db0d9ecd6cc27c3abc1d0733bc9ed34707cf8ef2",
+      "verifiedUTC": "2026-11-21T19:17:50.498512+00:00"
+    },
+    "OpenBareMap/canadian-rockies-banff/2.0.0/preview/assets/PMTiles-LICENSE.txt": {
+      "bytes": 1713,
+      "sha256": "0371c38f338835f7fc13ed71176f3d92144e22c8b736a31cced57adbbeb647b3",
+      "verifiedUTC": "2026-11-21T19:17:50.542303+00:00"
+    },
+    "OpenBareMap/canadian-rockies-banff/2.0.0/preview/assets/fonts/LICENSE-APACHE-2.0.txt": {
+      "bytes": 11358,
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "verifiedUTC": "2026-11-21T19:17:50.508110+00:00"
+    },
+    "OpenBareMap/canadian-rockies-banff/2.0.0/preview/assets/fonts/Open Sans Bold/0-255.pbf": {
+      "bytes": 80025,
+      "sha256": "b3a5c066b416d69012009e3446ddd9544607ceb7355734922635521b6834c4d8",
+      "verifiedUTC": "2026-11-21T19:17:50.520133+00:00"
+    },
+    "OpenBareMap/canadian-rockies-banff/2.0.0/preview/assets/fonts/Open Sans Bold/256-511.pbf": {
+      "bytes": 70900,
+      "sha256": "910a9d831040b8accfc9d70cf235dd4822e59a24e0d5e1736cee5d501c3d17a7",
+      "verifiedUTC": "2026-11-21T19:17:57.399473+00:00"
+    },
+    "OpenBareMap/canadian-rockies-banff/2.0.0/preview/assets/fonts/Open Sans Bold/768-1023.pbf": {
+      "bytes": 36235,
+      "sha256": "bd7b11497f8cee930c1843e8fe546ce59214b7cfb5e53809d7eca2899ff509bc",
+      "verifiedUTC": "2026-11-21T19:17:57.409572+00:00"
+    },
+    "OpenBareMap/canadian-rockies-banff/2.0.0/preview/assets/fonts/Open Sans Bold/8192-8447.pbf": {
+      "bytes": 10494,
+      "sha256": "18c7dbc4a21e80172e15cdd0c3f53de9f48663f5f8193fe153bb763ac1d731d8",
+      "verifiedUTC": "2026-11-21T19:17:57.464775+00:00"
+    },
+    "OpenBareMap/canadian-rockies-banff/2.0.0/preview/assets/fonts/Open Sans Regular/0-255.pbf": {
+      "bytes": 74696,
+      "sha256": "0c8bdb284f2ad6f69bbb434a0208393f3a517bc8bf7ed1eccc4ac4791ebbcbfe",
+      "verifiedUTC": "2026-11-21T19:17:57.411152+00:00"
+    },
+    "OpenBareMap/canadian-rockies-banff/2.0.0/preview/assets/fonts/Open Sans Regular/256-511.pbf": {
+      "bytes": 66481,
+      "sha256": "9962ad38d064edbeb226a6c7dcf1d58e7678508a805f980d2fe81bb3178ba68a",
+      "verifiedUTC": "2026-11-21T19:18:03.942323+00:00"
+    },
+    "OpenBareMap/canadian-rockies-banff/2.0.0/preview/assets/fonts/Open Sans Regular/768-1023.pbf": {
+      "bytes": 33767,
+      "sha256": "fea6a1c8e1be55d9725520627b108d425723b2dc189b7dddfe56abd7d8238ea9",
+      "verifiedUTC": "2026-11-21T19:18:03.969531+00:00"
+    },
+    "OpenBareMap/canadian-rockies-banff/2.0.0/preview/assets/fonts/Open Sans Regular/8192-8447.pbf": {
+      "bytes": 9663,
+      "sha256": "a57611157f0597b267ef36eb07ce5a41dddcc3b2f3b5b85779108b7bb48b1cde",
+      "verifiedUTC": "2026-11-21T19:18:03.921165+00:00"
+    },
+    "OpenBareMap/canadian-rockies-banff/2.0.0/preview/assets/fonts/Open Sans Semibold/0-255.pbf": {
+      "bytes": 77571,
+      "sha256": "64da7011e07531351a249a3d26aad76e2f22e4e321e50833f742697b453e8365",
+      "verifiedUTC": "2026-11-21T19:18:03.991761+00:00"
+    },
+    "OpenBareMap/canadian-rockies-banff/2.0.0/preview/assets/fonts/Open Sans Semibold/256-511.pbf": {
+      "bytes": 68869,
+      "sha256": "78298bbd8198c117ccdffe66bf9bbf646fdc1210b7e1bf222f5a9b29b366d7a5",
+      "verifiedUTC": "2026-11-21T19:18:11.216105+00:00"
+    },
+    "OpenBareMap/canadian-rockies-banff/2.0.0/preview/assets/fonts/Open Sans Semibold/768-1023.pbf": {
+      "bytes": 35063,
+      "sha256": "35f7d1f9c9dfbc978635b7eb21bffb1113879182b2d518a7fbee6b825dd08274",
+      "verifiedUTC": "2026-11-21T19:18:11.188800+00:00"
+    },
+    "OpenBareMap/canadian-rockies-banff/2.0.0/preview/assets/fonts/Open Sans Semibold/8192-8447.pbf": {
+      "bytes": 10092,
+      "sha256": "ee80ee7ef05e77bea017bcb387d970d61823fc37fdb0a51c446ae322c5974990",
+      "verifiedUTC": "2026-11-21T19:18:11.217121+00:00"
+    },
+    "OpenBareMap/canadian-rockies-banff/2.0.0/preview/assets/legend.css": {
+      "bytes": 1513,
+      "sha256": "581de29c8d2e0511ce0f71abea5803fbd03cd42108ff5de4a9962bde2b258ad8",
+      "verifiedUTC": "2026-11-21T19:18:11.290713+00:00"
+    },
+    "OpenBareMap/canadian-rockies-banff/2.0.0/preview/assets/legend.js": {
+      "bytes": 2813,
+      "sha256": "9701a94a97d492fb7a13455c2f5ded61fc1f723b28f5939eaccdd39c86f167ff",
+      "verifiedUTC": "2026-11-21T19:18:17.835437+00:00"
+    },
+    "OpenBareMap/canadian-rockies-banff/2.0.0/preview/assets/legends/canadian-rockies-banff@2x.png": {
+      "bytes": 229249,
+      "sha256": "9111ab2462c772fea13471ee378c132d5483e1dde1dcc9cd7e1cab478e2457fa",
+      "verifiedUTC": "2026-11-21T19:18:17.852680+00:00"
+    },
+    "OpenBareMap/canadian-rockies-banff/2.0.0/preview/assets/maplibre-gl.css": {
+      "bytes": 69422,
+      "sha256": "792ac997dcf6ae6f643eb4e2dee4630c85e7056526bd8fb85ffe83c67d6c41b4",
+      "verifiedUTC": "2026-11-21T19:18:17.814937+00:00"
+    },
+    "OpenBareMap/canadian-rockies-banff/2.0.0/preview/assets/maplibre-gl.js": {
+      "bytes": 939308,
+      "sha256": "b5a34e6930ff937dbbb9eec8892cffb80ba473cce88ae5ca8c4654432f5f0ebc",
+      "verifiedUTC": "2026-11-21T19:18:17.912846+00:00"
+    },
+    "OpenBareMap/canadian-rockies-banff/2.0.0/preview/assets/pmtiles.js": {
+      "bytes": 20229,
+      "sha256": "caf981bc46f6327ee7e65d5dc964d89d38a69f60edca2bd4c5c890c21b554c6c",
+      "verifiedUTC": "2026-11-21T19:18:24.915361+00:00"
+    },
+    "OpenBareMap/canadian-rockies-banff/2.0.0/preview/assets/preview.css": {
+      "bytes": 1912,
+      "sha256": "4a2bb515c9d6e871ff92a5a15cd189a0f49005fc43cac1831b3445626d95884c",
+      "verifiedUTC": "2026-11-21T19:18:24.945850+00:00"
+    },
+    "OpenBareMap/canadian-rockies-banff/2.0.0/preview/assets/preview.js": {
+      "bytes": 3363,
+      "sha256": "79ce19a0520ed6bd076b4a5a4330fdd9b00d8fca8001bf442cc78b2f0069682a",
+      "verifiedUTC": "2026-11-21T19:18:24.964838+00:00"
+    },
+    "OpenBareMap/canadian-rockies-banff/2.0.0/preview/assets/sprites/outdoors.json": {
+      "bytes": 760,
+      "sha256": "e777903184842b2b08726fcfa5c6ca654f5761ff8c796f0a04c1e66f5551038e",
+      "verifiedUTC": "2026-11-21T19:18:24.865476+00:00"
+    },
+    "OpenBareMap/canadian-rockies-banff/2.0.0/preview/assets/sprites/outdoors.png": {
+      "bytes": 3722,
+      "sha256": "32de87bc645686f95ef45737ba1331504079ba0de01f6d3d30a81bf41ed6133a",
+      "verifiedUTC": "2026-11-21T19:18:31.226354+00:00"
+    },
+    "OpenBareMap/canadian-rockies-banff/2.0.0/preview/assets/sprites/outdoors@2x.json": {
+      "bytes": 771,
+      "sha256": "ca6052d8d86d5f3693247ca9179fedbfbfc950370506a9a5ffc485d69d8c458c",
+      "verifiedUTC": "2026-11-21T19:18:31.199802+00:00"
+    },
+    "OpenBareMap/canadian-rockies-banff/2.0.0/preview/assets/sprites/outdoors@2x.png": {
+      "bytes": 7453,
+      "sha256": "c2230eae423ca94a4fe910a999bee38986231cf8bed2109c280657a30fec86cc",
+      "verifiedUTC": "2026-11-21T19:18:31.227514+00:00"
+    },
+    "OpenBareMap/canadian-rockies-banff/2.0.0/preview/assets/terrain-attribution.html": {
+      "bytes": 1410,
+      "sha256": "a14205a3af8d0ee85d10805cf22a4bff522440948602f3f5586c4ec2502aaf30",
+      "verifiedUTC": "2026-11-21T19:18:31.151223+00:00"
+    },
+    "OpenBareMap/canadian-rockies-banff/2.0.0/preview/assets/townlands.geojson": {
+      "bytes": 9403579,
+      "sha256": "ab3d1d254517904918fed1e93f614c2c0f2d6940b948844e39c63cdee31a1d62",
+      "verifiedUTC": "2026-11-21T19:18:37.927733+00:00"
+    },
+    "OpenBareMap/canadian-rockies-banff/2.0.0/preview/canadian-rockies-banff/index.html": {
+      "bytes": 6952,
+      "sha256": "827aed536925bb505d71ee618f248735795b2248ab245a19f918d72d1908c046",
+      "verifiedUTC": "2026-11-21T19:18:37.476229+00:00"
+    },
+    "OpenBareMap/canadian-rockies-banff/2.0.0/preview/canadian-rockies-banff/legend.html": {
+      "bytes": 1559,
+      "sha256": "e292e646f96694dce15a81c0efc6260667281c5dfe388120d3d54bbcd815a9f1",
+      "verifiedUTC": "2026-11-21T19:18:37.552778+00:00"
+    },
+    "OpenBareMap/canadian-rockies-banff/2.0.0/preview/canadian-rockies-banff/region.json": {
+      "bytes": 5474,
+      "sha256": "6e16bbc313c08384b1429439571b8ef15f164fbfc8c957d0e1abab0032bf7249",
+      "verifiedUTC": "2026-11-21T19:18:37.540415+00:00"
+    },
+    "OpenBareMap/canadian-rockies-banff/2.0.0/preview/canadian-rockies-banff/style.json": {
+      "bytes": 3429333,
+      "sha256": "0c3853a8d773f7d5d6603ef3ea5231ee07100e713207fc435bba1daf4b008af2",
+      "verifiedUTC": "2026-11-21T19:18:44.637638+00:00"
+    },
+    "OpenBareMap/canadian-rockies-banff/2.0.0/preview/data/canadian-rockies-banff/basemap.pmtiles": {
+      "bytes": 97765475,
+      "sha256": "33e1c0ea2fa27c803e79e11dd5ef5eab28c4dd26078d099fbef1f8383295f1b8",
+      "verifiedUTC": "2026-11-21T19:19:07.131344+00:00"
+    },
+    "OpenBareMap/canadian-rockies-banff/2.0.0/preview/data/canadian-rockies-banff/coast.pmtiles": {
+      "bytes": 38917,
+      "sha256": "a514d9225d0691d5481e05eddcbe747fba39823393b16d7269cae38e7df43963",
+      "verifiedUTC": "2026-11-21T19:18:43.773554+00:00"
+    },
+    "OpenBareMap/canadian-rockies-banff/2.0.0/preview/data/canadian-rockies-banff/grid.pmtiles": {
+      "bytes": 5561520,
+      "sha256": "6b36e75b9447b45b7ca3699459d43b2c9a176c720094a98a8e0ce9db39d5afc7",
+      "verifiedUTC": "2026-11-21T19:18:44.204538+00:00"
+    },
+    "OpenBareMap/canadian-rockies-banff/2.0.0/preview/data/canadian-rockies-banff/hillshade.pmtiles": {
+      "bytes": 57343099,
+      "sha256": "ff9948b8879cef5d1e6d2b7d8f9acac31c627388889cfac82a0515e024d18d43",
+      "verifiedUTC": "2026-11-21T19:19:02.047860+00:00"
+    },
+    "OpenBareMap/canadian-rockies-banff/2.0.0/preview/data/canadian-rockies-banff/topography.pmtiles": {
+      "bytes": 321920151,
+      "sha256": "751f567216cc9ca7e883c0e16d9ad9fabf744086a5f2a716515bdb9fd904ec3f",
+      "verifiedUTC": "2026-11-21T19:20:50.917890+00:00"
+    },
+    "OpenBareMap/canadian-rockies-banff/2.0.0/preview/manifest.json": {
+      "bytes": 1649,
+      "sha256": "e194cfa1d7526c496637a238719149c0ced96c2f5c9f2a694eec2b23b22914ba",
+      "verifiedUTC": "2026-11-21T19:18:51.389517+00:00"
+    },
+    "OpenBareMap/canadian-rockies-jasper/2.0.0/app-bundles-v1/android/OpenBareMap-Jasper-Mount-Robson-Android-Bundle.zip": {
+      "bytes": 535630522,
+      "sha256": "290d59a49acca5264acf85342d278a97618f32ccf02f5de5030c5a14f056fbf0",
+      "verifiedUTC": "2026-11-21T19:25:05.488743+00:00"
+    },
+    "OpenBareMap/canadian-rockies-jasper/2.0.0/app-bundles-v1/android/SHA256SUMS.txt": {
+      "bytes": 200,
+      "sha256": "afadd9172f65392652db395d4446f16b005cb476d3fcfa63ba1a802953a45d82",
+      "verifiedUTC": "2026-11-21T19:22:39.398738+00:00"
+    },
+    "OpenBareMap/canadian-rockies-jasper/2.0.0/app-bundles-v1/android/instructions.txt": {
+      "bytes": 4249,
+      "sha256": "9de6f55cce23330d1906fcacca62b03add2f450418b450fd0c33fdaec46aef97",
+      "verifiedUTC": "2026-11-21T19:22:33.677988+00:00"
+    },
+    "OpenBareMap/canadian-rockies-jasper/2.0.0/app-bundles-v1/android/manifest.json": {
+      "bytes": 1683,
+      "sha256": "79110247ec88315989381841f180840e95b8e3d587f10b2b76ae3527acc6d1f6",
+      "verifiedUTC": "2026-11-21T19:22:39.312226+00:00"
+    },
+    "OpenBareMap/canadian-rockies-jasper/2.0.0/app-bundles-v1/ios/OpenBareMap-Jasper-Mount-Robson-iOS-Bundle.zip": {
+      "bytes": 535632258,
+      "sha256": "49cace52655d6bd4e657fdd9a3ce021c4884a97057ee7d6728fe6e1f8fff047d",
+      "verifiedUTC": "2026-11-21T19:25:14.973705+00:00"
+    },
+    "OpenBareMap/canadian-rockies-jasper/2.0.0/app-bundles-v1/ios/SHA256SUMS.txt": {
+      "bytes": 196,
+      "sha256": "e5117aa5a0e37bc82765cd2d1a4755873eb6df7ad6a0f01eba59cf81f8854483",
+      "verifiedUTC": "2026-11-21T19:22:54.410107+00:00"
+    },
+    "OpenBareMap/canadian-rockies-jasper/2.0.0/app-bundles-v1/ios/instructions.txt": {
+      "bytes": 3677,
+      "sha256": "ff49301a577cfbdc4a0e11bb91c01077b67c10c4f96cdfcc76c9267df4071bd6",
+      "verifiedUTC": "2026-11-21T19:22:47.711441+00:00"
+    },
+    "OpenBareMap/canadian-rockies-jasper/2.0.0/app-bundles-v1/ios/manifest.json": {
+      "bytes": 1770,
+      "sha256": "070bb7b0c986cf4e3b54c7a1ff698dbcfe369111086ea6f01ef462c09d1c7919",
+      "verifiedUTC": "2026-11-21T19:23:02.564536+00:00"
+    },
+    "OpenBareMap/canadian-rockies-jasper/2.0.0/preview/assets/LICENSE.txt": {
+      "bytes": 5984,
+      "sha256": "ee5fc05a0677eaf69601d2c7db0d9ecd6cc27c3abc1d0733bc9ed34707cf8ef2",
+      "verifiedUTC": "2026-11-21T19:21:21.593520+00:00"
+    },
+    "OpenBareMap/canadian-rockies-jasper/2.0.0/preview/assets/PMTiles-LICENSE.txt": {
+      "bytes": 1713,
+      "sha256": "0371c38f338835f7fc13ed71176f3d92144e22c8b736a31cced57adbbeb647b3",
+      "verifiedUTC": "2026-11-21T19:21:21.588316+00:00"
+    },
+    "OpenBareMap/canadian-rockies-jasper/2.0.0/preview/assets/fonts/LICENSE-APACHE-2.0.txt": {
+      "bytes": 11358,
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "verifiedUTC": "2026-11-21T19:21:26.275042+00:00"
+    },
+    "OpenBareMap/canadian-rockies-jasper/2.0.0/preview/assets/fonts/Open Sans Bold/0-255.pbf": {
+      "bytes": 80025,
+      "sha256": "b3a5c066b416d69012009e3446ddd9544607ceb7355734922635521b6834c4d8",
+      "verifiedUTC": "2026-11-21T19:21:26.322112+00:00"
+    },
+    "OpenBareMap/canadian-rockies-jasper/2.0.0/preview/assets/fonts/Open Sans Bold/256-511.pbf": {
+      "bytes": 70900,
+      "sha256": "910a9d831040b8accfc9d70cf235dd4822e59a24e0d5e1736cee5d501c3d17a7",
+      "verifiedUTC": "2026-11-21T19:21:26.318515+00:00"
+    },
+    "OpenBareMap/canadian-rockies-jasper/2.0.0/preview/assets/fonts/Open Sans Bold/768-1023.pbf": {
+      "bytes": 36235,
+      "sha256": "bd7b11497f8cee930c1843e8fe546ce59214b7cfb5e53809d7eca2899ff509bc",
+      "verifiedUTC": "2026-11-21T19:21:26.365555+00:00"
+    },
+    "OpenBareMap/canadian-rockies-jasper/2.0.0/preview/assets/fonts/Open Sans Bold/8192-8447.pbf": {
+      "bytes": 10494,
+      "sha256": "18c7dbc4a21e80172e15cdd0c3f53de9f48663f5f8193fe153bb763ac1d731d8",
+      "verifiedUTC": "2026-11-21T19:21:33.050409+00:00"
+    },
+    "OpenBareMap/canadian-rockies-jasper/2.0.0/preview/assets/fonts/Open Sans Regular/0-255.pbf": {
+      "bytes": 74696,
+      "sha256": "0c8bdb284f2ad6f69bbb434a0208393f3a517bc8bf7ed1eccc4ac4791ebbcbfe",
+      "verifiedUTC": "2026-11-21T19:21:33.069802+00:00"
+    },
+    "OpenBareMap/canadian-rockies-jasper/2.0.0/preview/assets/fonts/Open Sans Regular/256-511.pbf": {
+      "bytes": 66481,
+      "sha256": "9962ad38d064edbeb226a6c7dcf1d58e7678508a805f980d2fe81bb3178ba68a",
+      "verifiedUTC": "2026-11-21T19:21:33.007548+00:00"
+    },
+    "OpenBareMap/canadian-rockies-jasper/2.0.0/preview/assets/fonts/Open Sans Regular/768-1023.pbf": {
+      "bytes": 33767,
+      "sha256": "fea6a1c8e1be55d9725520627b108d425723b2dc189b7dddfe56abd7d8238ea9",
+      "verifiedUTC": "2026-11-21T19:21:33.055357+00:00"
+    },
+    "OpenBareMap/canadian-rockies-jasper/2.0.0/preview/assets/fonts/Open Sans Regular/8192-8447.pbf": {
+      "bytes": 9663,
+      "sha256": "a57611157f0597b267ef36eb07ce5a41dddcc3b2f3b5b85779108b7bb48b1cde",
+      "verifiedUTC": "2026-11-21T19:21:39.776763+00:00"
+    },
+    "OpenBareMap/canadian-rockies-jasper/2.0.0/preview/assets/fonts/Open Sans Semibold/0-255.pbf": {
+      "bytes": 77571,
+      "sha256": "64da7011e07531351a249a3d26aad76e2f22e4e321e50833f742697b453e8365",
+      "verifiedUTC": "2026-11-21T19:21:39.809819+00:00"
+    },
+    "OpenBareMap/canadian-rockies-jasper/2.0.0/preview/assets/fonts/Open Sans Semibold/256-511.pbf": {
+      "bytes": 68869,
+      "sha256": "78298bbd8198c117ccdffe66bf9bbf646fdc1210b7e1bf222f5a9b29b366d7a5",
+      "verifiedUTC": "2026-11-21T19:21:39.850520+00:00"
+    },
+    "OpenBareMap/canadian-rockies-jasper/2.0.0/preview/assets/fonts/Open Sans Semibold/768-1023.pbf": {
+      "bytes": 35063,
+      "sha256": "35f7d1f9c9dfbc978635b7eb21bffb1113879182b2d518a7fbee6b825dd08274",
+      "verifiedUTC": "2026-11-21T19:21:39.814557+00:00"
+    },
+    "OpenBareMap/canadian-rockies-jasper/2.0.0/preview/assets/fonts/Open Sans Semibold/8192-8447.pbf": {
+      "bytes": 10092,
+      "sha256": "ee80ee7ef05e77bea017bcb387d970d61823fc37fdb0a51c446ae322c5974990",
+      "verifiedUTC": "2026-11-21T19:21:46.061912+00:00"
+    },
+    "OpenBareMap/canadian-rockies-jasper/2.0.0/preview/assets/legend.css": {
+      "bytes": 1513,
+      "sha256": "581de29c8d2e0511ce0f71abea5803fbd03cd42108ff5de4a9962bde2b258ad8",
+      "verifiedUTC": "2026-11-21T19:21:46.087983+00:00"
+    },
+    "OpenBareMap/canadian-rockies-jasper/2.0.0/preview/assets/legend.js": {
+      "bytes": 2813,
+      "sha256": "9701a94a97d492fb7a13455c2f5ded61fc1f723b28f5939eaccdd39c86f167ff",
+      "verifiedUTC": "2026-11-21T19:21:46.115357+00:00"
+    },
+    "OpenBareMap/canadian-rockies-jasper/2.0.0/preview/assets/legends/canadian-rockies-jasper@2x.png": {
+      "bytes": 229249,
+      "sha256": "9111ab2462c772fea13471ee378c132d5483e1dde1dcc9cd7e1cab478e2457fa",
+      "verifiedUTC": "2026-11-21T19:21:46.189719+00:00"
+    },
+    "OpenBareMap/canadian-rockies-jasper/2.0.0/preview/assets/maplibre-gl.css": {
+      "bytes": 69422,
+      "sha256": "792ac997dcf6ae6f643eb4e2dee4630c85e7056526bd8fb85ffe83c67d6c41b4",
+      "verifiedUTC": "2026-11-21T19:21:52.350651+00:00"
+    },
+    "OpenBareMap/canadian-rockies-jasper/2.0.0/preview/assets/maplibre-gl.js": {
+      "bytes": 939308,
+      "sha256": "b5a34e6930ff937dbbb9eec8892cffb80ba473cce88ae5ca8c4654432f5f0ebc",
+      "verifiedUTC": "2026-11-21T19:21:52.394167+00:00"
+    },
+    "OpenBareMap/canadian-rockies-jasper/2.0.0/preview/assets/pmtiles.js": {
+      "bytes": 20229,
+      "sha256": "caf981bc46f6327ee7e65d5dc964d89d38a69f60edca2bd4c5c890c21b554c6c",
+      "verifiedUTC": "2026-11-21T19:21:52.296010+00:00"
+    },
+    "OpenBareMap/canadian-rockies-jasper/2.0.0/preview/assets/preview.css": {
+      "bytes": 1912,
+      "sha256": "4a2bb515c9d6e871ff92a5a15cd189a0f49005fc43cac1831b3445626d95884c",
+      "verifiedUTC": "2026-11-21T19:21:52.339608+00:00"
+    },
+    "OpenBareMap/canadian-rockies-jasper/2.0.0/preview/assets/preview.js": {
+      "bytes": 3363,
+      "sha256": "79ce19a0520ed6bd076b4a5a4330fdd9b00d8fca8001bf442cc78b2f0069682a",
+      "verifiedUTC": "2026-11-21T19:21:59.420637+00:00"
+    },
+    "OpenBareMap/canadian-rockies-jasper/2.0.0/preview/assets/sprites/outdoors.json": {
+      "bytes": 760,
+      "sha256": "e777903184842b2b08726fcfa5c6ca654f5761ff8c796f0a04c1e66f5551038e",
+      "verifiedUTC": "2026-11-21T19:21:59.373212+00:00"
+    },
+    "OpenBareMap/canadian-rockies-jasper/2.0.0/preview/assets/sprites/outdoors.png": {
+      "bytes": 3722,
+      "sha256": "32de87bc645686f95ef45737ba1331504079ba0de01f6d3d30a81bf41ed6133a",
+      "verifiedUTC": "2026-11-21T19:21:59.401744+00:00"
+    },
+    "OpenBareMap/canadian-rockies-jasper/2.0.0/preview/assets/sprites/outdoors@2x.json": {
+      "bytes": 771,
+      "sha256": "ca6052d8d86d5f3693247ca9179fedbfbfc950370506a9a5ffc485d69d8c458c",
+      "verifiedUTC": "2026-11-21T19:21:59.359608+00:00"
+    },
+    "OpenBareMap/canadian-rockies-jasper/2.0.0/preview/assets/sprites/outdoors@2x.png": {
+      "bytes": 7453,
+      "sha256": "c2230eae423ca94a4fe910a999bee38986231cf8bed2109c280657a30fec86cc",
+      "verifiedUTC": "2026-11-21T19:22:06.194698+00:00"
+    },
+    "OpenBareMap/canadian-rockies-jasper/2.0.0/preview/assets/terrain-attribution.html": {
+      "bytes": 1410,
+      "sha256": "a14205a3af8d0ee85d10805cf22a4bff522440948602f3f5586c4ec2502aaf30",
+      "verifiedUTC": "2026-11-21T19:22:06.146421+00:00"
+    },
+    "OpenBareMap/canadian-rockies-jasper/2.0.0/preview/assets/townlands.geojson": {
+      "bytes": 9403579,
+      "sha256": "ab3d1d254517904918fed1e93f614c2c0f2d6940b948844e39c63cdee31a1d62",
+      "verifiedUTC": "2026-11-21T19:22:06.516489+00:00"
+    },
+    "OpenBareMap/canadian-rockies-jasper/2.0.0/preview/canadian-rockies-jasper/index.html": {
+      "bytes": 6946,
+      "sha256": "86395c18b616dbb44e8f65074b2e3589238ead6d181a1a8e5e8e76d89f9cdca5",
+      "verifiedUTC": "2026-11-21T19:22:06.285213+00:00"
+    },
+    "OpenBareMap/canadian-rockies-jasper/2.0.0/preview/canadian-rockies-jasper/legend.html": {
+      "bytes": 1558,
+      "sha256": "9563ef5f0529000c67de22c8fc8ec54e1ae1be92b082b884284f8dbd6de3a10c",
+      "verifiedUTC": "2026-11-21T19:22:13.666913+00:00"
+    },
+    "OpenBareMap/canadian-rockies-jasper/2.0.0/preview/canadian-rockies-jasper/region.json": {
+      "bytes": 5135,
+      "sha256": "4fb0c0125662b7c32d39d94a2d32639de6451072fde95b1dd51602793e3adc71",
+      "verifiedUTC": "2026-11-21T19:22:13.620349+00:00"
+    },
+    "OpenBareMap/canadian-rockies-jasper/2.0.0/preview/canadian-rockies-jasper/style.json": {
+      "bytes": 3493755,
+      "sha256": "9e495a027d246f7c236b20ea5b6424f13c84481677003f8ea12e37d1903a855d",
+      "verifiedUTC": "2026-11-21T19:22:14.456367+00:00"
+    },
+    "OpenBareMap/canadian-rockies-jasper/2.0.0/preview/data/canadian-rockies-jasper/basemap.pmtiles": {
+      "bytes": 90758159,
+      "sha256": "8b9b692aa768158834535f1c7bd06c11f74d8da08158cc4dc165e6ea6b59b8ed",
+      "verifiedUTC": "2026-11-21T19:22:24.004827+00:00"
+    },
+    "OpenBareMap/canadian-rockies-jasper/2.0.0/preview/data/canadian-rockies-jasper/coast.pmtiles": {
+      "bytes": 46399,
+      "sha256": "a555a445f54f6afaf4c1de25111f4ebc03d05fb16dae943376c280ca2d8212ca",
+      "verifiedUTC": "2026-11-21T19:22:20.639295+00:00"
+    },
+    "OpenBareMap/canadian-rockies-jasper/2.0.0/preview/data/canadian-rockies-jasper/grid.pmtiles": {
+      "bytes": 6388618,
+      "sha256": "c1547890600897082e7566222a01d06161db24af773c33df19697ac74edae64f",
+      "verifiedUTC": "2026-11-21T19:22:21.263066+00:00"
+    },
+    "OpenBareMap/canadian-rockies-jasper/2.0.0/preview/data/canadian-rockies-jasper/hillshade.pmtiles": {
+      "bytes": 64178100,
+      "sha256": "369ed9385d3e0836e3ec7a0a89c40e21e9a589cc99cb755ac32b4d62f5cf6a59",
+      "verifiedUTC": "2026-11-21T19:22:30.669237+00:00"
+    },
+    "OpenBareMap/canadian-rockies-jasper/2.0.0/preview/data/canadian-rockies-jasper/topography.pmtiles": {
+      "bytes": 332943173,
+      "sha256": "3309d642a24bf84e1b7aa329df0a6918c45db64eb1aee571e3d774ac0edb10be",
+      "verifiedUTC": "2026-11-21T19:24:32.632763+00:00"
+    },
+    "OpenBareMap/canadian-rockies-jasper/2.0.0/preview/manifest.json": {
+      "bytes": 1651,
+      "sha256": "038c7ed76f18faa033260b50efa4c5dabbc3ba40b0f052bfcc36127bc5826288",
+      "verifiedUTC": "2026-11-21T19:22:27.601971+00:00"
+    },
+    "OpenBareMap/canadian-rockies-kananaskis-waterton/2.0.0/app-bundles-v1/android/OpenBareMap-Kananaskis-Waterton-Android-Bundle.zip": {
+      "bytes": 460729182,
+      "sha256": "a69d75c58242ad4a3219efa646effc1a24541a4cfb5b3674b61a7a79ec177027",
+      "verifiedUTC": "2026-11-21T19:28:07.471569+00:00"
+    },
+    "OpenBareMap/canadian-rockies-kananaskis-waterton/2.0.0/app-bundles-v1/android/SHA256SUMS.txt": {
+      "bytes": 200,
+      "sha256": "0ea8be7d2c7bff7eb92d12d07822339044e3256aa5a7f53419996994f4f090bb",
+      "verifiedUTC": "2026-11-21T19:26:43.920719+00:00"
+    },
+    "OpenBareMap/canadian-rockies-kananaskis-waterton/2.0.0/app-bundles-v1/android/instructions.txt": {
+      "bytes": 4248,
+      "sha256": "f30c46f43822a01b3855a5a134ebf2d2679454cc1e42fe1093de21023d4fd748",
+      "verifiedUTC": "2026-11-21T19:26:35.030100+00:00"
+    },
+    "OpenBareMap/canadian-rockies-kananaskis-waterton/2.0.0/app-bundles-v1/android/manifest.json": {
+      "bytes": 1735,
+      "sha256": "36f60f4581bb78f19710fae2722bbd4453a00b75c65dc8ee957f3d4a76c22355",
+      "verifiedUTC": "2026-11-21T19:26:52.850767+00:00"
+    },
+    "OpenBareMap/canadian-rockies-kananaskis-waterton/2.0.0/app-bundles-v1/ios/OpenBareMap-Kananaskis-Waterton-iOS-Bundle.zip": {
+      "bytes": 460730931,
+      "sha256": "0a8cab3c2fde9375ed6cbbe576055b24d9181eb6d3c312fa2589e5aacfa62fb5",
+      "verifiedUTC": "2026-11-21T19:28:18.512015+00:00"
+    },
+    "OpenBareMap/canadian-rockies-kananaskis-waterton/2.0.0/app-bundles-v1/ios/SHA256SUMS.txt": {
+      "bytes": 196,
+      "sha256": "0c479a7912f727f24ae55d8882edda83b03bb4491bc2f34a812773382d8fbb37",
+      "verifiedUTC": "2026-11-21T19:27:11.176016+00:00"
+    },
+    "OpenBareMap/canadian-rockies-kananaskis-waterton/2.0.0/app-bundles-v1/ios/instructions.txt": {
+      "bytes": 3676,
+      "sha256": "b0b7e1b712854e5e3a14fb94ab082b46afbc70e74abe3bdcbac20b06620946f8",
+      "verifiedUTC": "2026-11-21T19:27:02.277088+00:00"
+    },
+    "OpenBareMap/canadian-rockies-kananaskis-waterton/2.0.0/app-bundles-v1/ios/manifest.json": {
+      "bytes": 1822,
+      "sha256": "474026643d984133bc356c0bf1b22a69747d5cc1079bc40bbb50aae7c302805e",
+      "verifiedUTC": "2026-11-21T19:27:18.440447+00:00"
+    },
+    "OpenBareMap/canadian-rockies-kananaskis-waterton/2.0.0/preview/assets/LICENSE.txt": {
+      "bytes": 5984,
+      "sha256": "ee5fc05a0677eaf69601d2c7db0d9ecd6cc27c3abc1d0733bc9ed34707cf8ef2",
+      "verifiedUTC": "2026-11-21T19:25:04.593570+00:00"
+    },
+    "OpenBareMap/canadian-rockies-kananaskis-waterton/2.0.0/preview/assets/PMTiles-LICENSE.txt": {
+      "bytes": 1713,
+      "sha256": "0371c38f338835f7fc13ed71176f3d92144e22c8b736a31cced57adbbeb647b3",
+      "verifiedUTC": "2026-11-21T19:25:12.193448+00:00"
+    },
+    "OpenBareMap/canadian-rockies-kananaskis-waterton/2.0.0/preview/assets/fonts/LICENSE-APACHE-2.0.txt": {
+      "bytes": 11358,
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "verifiedUTC": "2026-11-21T19:25:12.339740+00:00"
+    },
+    "OpenBareMap/canadian-rockies-kananaskis-waterton/2.0.0/preview/assets/fonts/Open Sans Bold/0-255.pbf": {
+      "bytes": 80025,
+      "sha256": "b3a5c066b416d69012009e3446ddd9544607ceb7355734922635521b6834c4d8",
+      "verifiedUTC": "2026-11-21T19:25:12.488401+00:00"
+    },
+    "OpenBareMap/canadian-rockies-kananaskis-waterton/2.0.0/preview/assets/fonts/Open Sans Bold/256-511.pbf": {
+      "bytes": 70900,
+      "sha256": "910a9d831040b8accfc9d70cf235dd4822e59a24e0d5e1736cee5d501c3d17a7",
+      "verifiedUTC": "2026-11-21T19:25:19.459752+00:00"
+    },
+    "OpenBareMap/canadian-rockies-kananaskis-waterton/2.0.0/preview/assets/fonts/Open Sans Bold/768-1023.pbf": {
+      "bytes": 36235,
+      "sha256": "bd7b11497f8cee930c1843e8fe546ce59214b7cfb5e53809d7eca2899ff509bc",
+      "verifiedUTC": "2026-11-21T19:25:19.461930+00:00"
+    },
+    "OpenBareMap/canadian-rockies-kananaskis-waterton/2.0.0/preview/assets/fonts/Open Sans Bold/8192-8447.pbf": {
+      "bytes": 10494,
+      "sha256": "18c7dbc4a21e80172e15cdd0c3f53de9f48663f5f8193fe153bb763ac1d731d8",
+      "verifiedUTC": "2026-11-21T19:25:19.461465+00:00"
+    },
+    "OpenBareMap/canadian-rockies-kananaskis-waterton/2.0.0/preview/assets/fonts/Open Sans Regular/0-255.pbf": {
+      "bytes": 74696,
+      "sha256": "0c8bdb284f2ad6f69bbb434a0208393f3a517bc8bf7ed1eccc4ac4791ebbcbfe",
+      "verifiedUTC": "2026-11-21T19:25:24.286490+00:00"
+    },
+    "OpenBareMap/canadian-rockies-kananaskis-waterton/2.0.0/preview/assets/fonts/Open Sans Regular/256-511.pbf": {
+      "bytes": 66481,
+      "sha256": "9962ad38d064edbeb226a6c7dcf1d58e7678508a805f980d2fe81bb3178ba68a",
+      "verifiedUTC": "2026-11-21T19:25:24.258960+00:00"
+    },
+    "OpenBareMap/canadian-rockies-kananaskis-waterton/2.0.0/preview/assets/fonts/Open Sans Regular/768-1023.pbf": {
+      "bytes": 33767,
+      "sha256": "fea6a1c8e1be55d9725520627b108d425723b2dc189b7dddfe56abd7d8238ea9",
+      "verifiedUTC": "2026-11-21T19:25:24.266435+00:00"
+    },
+    "OpenBareMap/canadian-rockies-kananaskis-waterton/2.0.0/preview/assets/fonts/Open Sans Regular/8192-8447.pbf": {
+      "bytes": 9663,
+      "sha256": "a57611157f0597b267ef36eb07ce5a41dddcc3b2f3b5b85779108b7bb48b1cde",
+      "verifiedUTC": "2026-11-21T19:25:24.235605+00:00"
+    },
+    "OpenBareMap/canadian-rockies-kananaskis-waterton/2.0.0/preview/assets/fonts/Open Sans Semibold/0-255.pbf": {
+      "bytes": 77571,
+      "sha256": "64da7011e07531351a249a3d26aad76e2f22e4e321e50833f742697b453e8365",
+      "verifiedUTC": "2026-11-21T19:25:30.810785+00:00"
+    },
+    "OpenBareMap/canadian-rockies-kananaskis-waterton/2.0.0/preview/assets/fonts/Open Sans Semibold/256-511.pbf": {
+      "bytes": 68869,
+      "sha256": "78298bbd8198c117ccdffe66bf9bbf646fdc1210b7e1bf222f5a9b29b366d7a5",
+      "verifiedUTC": "2026-11-21T19:25:30.796713+00:00"
+    },
+    "OpenBareMap/canadian-rockies-kananaskis-waterton/2.0.0/preview/assets/fonts/Open Sans Semibold/768-1023.pbf": {
+      "bytes": 35063,
+      "sha256": "35f7d1f9c9dfbc978635b7eb21bffb1113879182b2d518a7fbee6b825dd08274",
+      "verifiedUTC": "2026-11-21T19:25:30.740078+00:00"
+    },
+    "OpenBareMap/canadian-rockies-kananaskis-waterton/2.0.0/preview/assets/fonts/Open Sans Semibold/8192-8447.pbf": {
+      "bytes": 10092,
+      "sha256": "ee80ee7ef05e77bea017bcb387d970d61823fc37fdb0a51c446ae322c5974990",
+      "verifiedUTC": "2026-11-21T19:25:30.778499+00:00"
+    },
+    "OpenBareMap/canadian-rockies-kananaskis-waterton/2.0.0/preview/assets/legend.css": {
+      "bytes": 1513,
+      "sha256": "581de29c8d2e0511ce0f71abea5803fbd03cd42108ff5de4a9962bde2b258ad8",
+      "verifiedUTC": "2026-11-21T19:25:37.450226+00:00"
+    },
+    "OpenBareMap/canadian-rockies-kananaskis-waterton/2.0.0/preview/assets/legend.js": {
+      "bytes": 2813,
+      "sha256": "9701a94a97d492fb7a13455c2f5ded61fc1f723b28f5939eaccdd39c86f167ff",
+      "verifiedUTC": "2026-11-21T19:25:37.468435+00:00"
+    },
+    "OpenBareMap/canadian-rockies-kananaskis-waterton/2.0.0/preview/assets/legends/canadian-rockies-kananaskis-waterton@2x.png": {
+      "bytes": 229249,
+      "sha256": "9111ab2462c772fea13471ee378c132d5483e1dde1dcc9cd7e1cab478e2457fa",
+      "verifiedUTC": "2026-11-21T19:25:37.523848+00:00"
+    },
+    "OpenBareMap/canadian-rockies-kananaskis-waterton/2.0.0/preview/assets/maplibre-gl.css": {
+      "bytes": 69422,
+      "sha256": "792ac997dcf6ae6f643eb4e2dee4630c85e7056526bd8fb85ffe83c67d6c41b4",
+      "verifiedUTC": "2026-11-21T19:25:37.493986+00:00"
+    },
+    "OpenBareMap/canadian-rockies-kananaskis-waterton/2.0.0/preview/assets/maplibre-gl.js": {
+      "bytes": 939308,
+      "sha256": "b5a34e6930ff937dbbb9eec8892cffb80ba473cce88ae5ca8c4654432f5f0ebc",
+      "verifiedUTC": "2026-11-21T19:25:44.461266+00:00"
+    },
+    "OpenBareMap/canadian-rockies-kananaskis-waterton/2.0.0/preview/assets/pmtiles.js": {
+      "bytes": 20229,
+      "sha256": "caf981bc46f6327ee7e65d5dc964d89d38a69f60edca2bd4c5c890c21b554c6c",
+      "verifiedUTC": "2026-11-21T19:25:44.378386+00:00"
+    },
+    "OpenBareMap/canadian-rockies-kananaskis-waterton/2.0.0/preview/assets/preview.css": {
+      "bytes": 1912,
+      "sha256": "4a2bb515c9d6e871ff92a5a15cd189a0f49005fc43cac1831b3445626d95884c",
+      "verifiedUTC": "2026-11-21T19:25:44.366281+00:00"
+    },
+    "OpenBareMap/canadian-rockies-kananaskis-waterton/2.0.0/preview/assets/preview.js": {
+      "bytes": 3363,
+      "sha256": "79ce19a0520ed6bd076b4a5a4330fdd9b00d8fca8001bf442cc78b2f0069682a",
+      "verifiedUTC": "2026-11-21T19:25:44.380328+00:00"
+    },
+    "OpenBareMap/canadian-rockies-kananaskis-waterton/2.0.0/preview/assets/sprites/outdoors.json": {
+      "bytes": 760,
+      "sha256": "e777903184842b2b08726fcfa5c6ca654f5761ff8c796f0a04c1e66f5551038e",
+      "verifiedUTC": "2026-11-21T19:25:51.622945+00:00"
+    },
+    "OpenBareMap/canadian-rockies-kananaskis-waterton/2.0.0/preview/assets/sprites/outdoors.png": {
+      "bytes": 3722,
+      "sha256": "32de87bc645686f95ef45737ba1331504079ba0de01f6d3d30a81bf41ed6133a",
+      "verifiedUTC": "2026-11-21T19:25:51.736693+00:00"
+    },
+    "OpenBareMap/canadian-rockies-kananaskis-waterton/2.0.0/preview/assets/sprites/outdoors@2x.json": {
+      "bytes": 771,
+      "sha256": "ca6052d8d86d5f3693247ca9179fedbfbfc950370506a9a5ffc485d69d8c458c",
+      "verifiedUTC": "2026-11-21T19:25:51.673861+00:00"
+    },
+    "OpenBareMap/canadian-rockies-kananaskis-waterton/2.0.0/preview/assets/sprites/outdoors@2x.png": {
+      "bytes": 7453,
+      "sha256": "c2230eae423ca94a4fe910a999bee38986231cf8bed2109c280657a30fec86cc",
+      "verifiedUTC": "2026-11-21T19:25:51.715946+00:00"
+    },
+    "OpenBareMap/canadian-rockies-kananaskis-waterton/2.0.0/preview/assets/terrain-attribution.html": {
+      "bytes": 1410,
+      "sha256": "a14205a3af8d0ee85d10805cf22a4bff522440948602f3f5586c4ec2502aaf30",
+      "verifiedUTC": "2026-11-21T19:25:59.141150+00:00"
+    },
+    "OpenBareMap/canadian-rockies-kananaskis-waterton/2.0.0/preview/assets/townlands.geojson": {
+      "bytes": 9403579,
+      "sha256": "ab3d1d254517904918fed1e93f614c2c0f2d6940b948844e39c63cdee31a1d62",
+      "verifiedUTC": "2026-11-21T19:25:59.432305+00:00"
+    },
+    "OpenBareMap/canadian-rockies-kananaskis-waterton/2.0.0/preview/canadian-rockies-kananaskis-waterton/index.html": {
+      "bytes": 6972,
+      "sha256": "2ffd466d0489ff4556be7075adc99094c424ffb09643d6c4a028e9ecf1c5ed86",
+      "verifiedUTC": "2026-11-21T19:25:59.125952+00:00"
+    },
+    "OpenBareMap/canadian-rockies-kananaskis-waterton/2.0.0/preview/canadian-rockies-kananaskis-waterton/legend.html": {
+      "bytes": 1597,
+      "sha256": "8ce1201eb2ebdc469dc754364411380ad4570acc52c643d519ae55dcca05c091",
+      "verifiedUTC": "2026-11-21T19:25:59.130275+00:00"
+    },
+    "OpenBareMap/canadian-rockies-kananaskis-waterton/2.0.0/preview/canadian-rockies-kananaskis-waterton/region.json": {
+      "bytes": 5402,
+      "sha256": "2fccb11f74338740eef8da249595bc5acca20ab6e63646b4204679205cb0aa22",
+      "verifiedUTC": "2026-11-21T19:26:07.129145+00:00"
+    },
+    "OpenBareMap/canadian-rockies-kananaskis-waterton/2.0.0/preview/canadian-rockies-kananaskis-waterton/style.json": {
+      "bytes": 3610877,
+      "sha256": "c03a75ebc5022f6ad68eeb9b69612141d5e19316f3d4c308526383730f5c924d",
+      "verifiedUTC": "2026-11-21T19:26:07.828043+00:00"
+    },
+    "OpenBareMap/canadian-rockies-kananaskis-waterton/2.0.0/preview/data/canadian-rockies-kananaskis-waterton/basemap.pmtiles": {
+      "bytes": 111433202,
+      "sha256": "161a13bfb91aa8bfc96b204d6b3b66cff44eb80b7362dde7ad827617aaf92cb7",
+      "verifiedUTC": "2026-11-21T19:26:23.354020+00:00"
+    },
+    "OpenBareMap/canadian-rockies-kananaskis-waterton/2.0.0/preview/data/canadian-rockies-kananaskis-waterton/coast.pmtiles": {
+      "bytes": 37394,
+      "sha256": "ef3dc44b20ccaf1b8264b2a928d1b614e4a811e8685903abef81ef99aa20055d",
+      "verifiedUTC": "2026-11-21T19:26:07.097968+00:00"
+    },
+    "OpenBareMap/canadian-rockies-kananaskis-waterton/2.0.0/preview/data/canadian-rockies-kananaskis-waterton/grid.pmtiles": {
+      "bytes": 6714616,
+      "sha256": "1665102de5d718739d98107ccde4e46d479c9b52e2b250eb2abd891098756357",
+      "verifiedUTC": "2026-11-21T19:26:19.810209+00:00"
+    },
+    "OpenBareMap/canadian-rockies-kananaskis-waterton/2.0.0/preview/data/canadian-rockies-kananaskis-waterton/hillshade.pmtiles": {
+      "bytes": 58728848,
+      "sha256": "c99a9f3d8d0b099366f7d29e28c9ef1a6ae6068e0137eac9a35d322f5c8770c1",
+      "verifiedUTC": "2026-11-21T19:26:53.864776+00:00"
+    },
+    "OpenBareMap/canadian-rockies-kananaskis-waterton/2.0.0/preview/data/canadian-rockies-kananaskis-waterton/topography.pmtiles": {
+      "bytes": 246171262,
+      "sha256": "7db1d30349d748ab6e65b47db6137616b395799c6965a7854911e5eb22738eab",
+      "verifiedUTC": "2026-11-21T19:27:28.884193+00:00"
+    },
+    "OpenBareMap/canadian-rockies-kananaskis-waterton/2.0.0/preview/manifest.json": {
+      "bytes": 1678,
+      "sha256": "e68625047ce05a1d66afa245e9ffe46edb0be4a4aceb4c291126033b57f825c7",
+      "verifiedUTC": "2026-11-21T19:26:29.180906+00:00"
+    },
+    "OpenBareMap/worldwide-catalog-v1.json": {
+      "bytes": 957426,
+      "sha256": "d93ef46496eb5cfd3ddc8fbcec17b3cb8d9119aab1e5bd38ff2e285c9282fd91",
+      "verifiedUTC": "2026-11-21T19:29:44.059221+00:00"
+    }
+  }
+}

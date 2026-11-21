@@ -1,0 +1,35 @@
+{
+  "bytes": 460730931,
+  "datasets": {
+    "basemap": {
+      "path": "maps/basemap.mbtiles",
+      "sha256": "3c0812cea431b21929ccf773f3fd575b123041d374bd37f54fc1bb778e224a2e"
+    },
+    "coast": {
+      "derived_from": "c99acf7d04014184e51c06c1724c23aee5d80d5efc125cbdbd2da8b031c2f15e",
+      "maxzoom": 12,
+      "operation": "Preserve land-layer MVT bytes only through zoom 12; omit other layers.",
+      "path": "maps/coast.mbtiles",
+      "sha256": "2d0e61a5aab06513ab16b8f2b71b349fdbe26227596a186b679954391bdb921e"
+    },
+    "grid": {
+      "path": "maps/grid.mbtiles",
+      "sha256": "3cffe31f2d25574e21a3bb1a6ff86bb000d952bcf85d2da8b683c87c79320fae"
+    },
+    "hillshade": {
+      "path": "maps/hillshade.mbtiles",
+      "sha256": "0614cace71d0d1a1a2ba029ff6495fd2060782af95237efd7976448619aba1a0"
+    },
+    "topography": {
+      "path": "maps/topography.mbtiles",
+      "sha256": "c99acf7d04014184e51c06c1724c23aee5d80d5efc125cbdbd2da8b031c2f15e"
+    }
+  },
+  "instructionsSHA256": "b0b7e1b712854e5e3a14fb94ab082b46afbc70e74abe3bdcbac20b06620946f8",
+  "instructionsURL": "https://downloads.appsbyonzy.dev/OpenBareMap/canadian-rockies-kananaskis-waterton/2.0.0/app-bundles-v1/ios/instructions.txt",
+  "localPath": "releases/canadian-rockies-kananaskis-waterton/2.0.0/app-bundles-v1/ios/OpenBareMap-Kananaskis-Waterton-iOS-Bundle.zip",
+  "mapManifestSHA256": "6f5e234d8b2d14c632313fadfb780e0c591e74976f54dab6a089f4f749310b6b",
+  "r2Key": "OpenBareMap/canadian-rockies-kananaskis-waterton/2.0.0/app-bundles-v1/ios/OpenBareMap-Kananaskis-Waterton-iOS-Bundle.zip",
+  "sha256": "0a8cab3c2fde9375ed6cbbe576055b24d9181eb6d3c312fa2589e5aacfa62fb5",
+  "url": "https://downloads.appsbyonzy.dev/OpenBareMap/canadian-rockies-kananaskis-waterton/2.0.0/app-bundles-v1/ios/OpenBareMap-Kananaskis-Waterton-iOS-Bundle.zip"
+}

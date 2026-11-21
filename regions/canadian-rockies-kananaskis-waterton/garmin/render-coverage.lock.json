@@ -1,0 +1,73 @@
+{
+  "bounds": [
+    -115.62176199095644,
+    49.0,
+    -113.54400263742835,
+    51.53943922801145
+  ],
+  "contextEnvelope": [
+    -115.62176199095644,
+    49.0,
+    -113.54400263742835,
+    51.53943922801145
+  ],
+  "drawPriority": 25,
+  "format": "openbaremap-garmin-render-footprint-v1",
+  "geometry": {
+    "bytes": 77732,
+    "path": "regions/canadian-rockies-kananaskis-waterton/garmin/render-coverage.geojson",
+    "sha256": "220c1cbc7b84c7f01f3b4d33cf11106bea3b82b696227ebac24b59b6ade86a90"
+  },
+  "inputs": [
+    {
+      "path": "regions/canadian-rockies-kananaskis-waterton/coverage.geojson",
+      "purpose": "Exact official park plus 25 km footprint; not its rectangular tile envelope",
+      "sha256": "a49d2fce47b44a313f906242b76acc32b9fd831fcfac52d67a37c1653ae70c2f"
+    }
+  ],
+  "knownDestinationsCovered": {
+    "akamina-pass": [
+      -114.0749,
+      49.0351
+    ],
+    "cameron-lake": [
+      -114.0463,
+      49.0219
+    ],
+    "canmore": [
+      -115.3479,
+      51.089
+    ],
+    "castle-mountain-resort": [
+      -114.4127,
+      49.3198
+    ],
+    "crowsnest-pass": [
+      -114.563,
+      49.6085
+    ],
+    "elk-lakes": [
+      -115.0565,
+      50.5474
+    ],
+    "pincher-creek": [
+      -113.9483,
+      49.4846
+    ],
+    "spray-lakes-reservoir": [
+      -115.2944,
+      50.9906
+    ],
+    "upper-kananaskis-lake": [
+      -115.172,
+      50.611
+    ],
+    "waterton-park": [
+      -113.9044,
+      49.0515
+    ]
+  },
+  "purpose": "Rectangular Garmin tiles may overlap other countries. Do not fill their padding with sea, land or land-cover polygons.",
+  "region": "canadian-rockies-kananaskis-waterton",
+  "transparentNativeMap": true
+}

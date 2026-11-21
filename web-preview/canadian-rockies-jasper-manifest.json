@@ -1,0 +1,41 @@
+{
+  "regions": {
+    "canadian-rockies-jasper": {
+      "basemap": {
+        "sourceSHA256": "4bea1917f031a56921cab09ca62cd055422a45e666475e390bdc1c50e55f5ee5",
+        "bytes": 90758159,
+        "sha256": "8b9b692aa768158834535f1c7bd06c11f74d8da08158cc4dc165e6ea6b59b8ed",
+        "tiles": 24000
+      },
+      "grid": {
+        "sourceSHA256": "c37112940c0d52aa5036e21632fc141014bd8c6039a9b76814be5671fc34145f",
+        "bytes": 6388618,
+        "sha256": "c1547890600897082e7566222a01d06161db24af773c33df19697ac74edae64f",
+        "tiles": 23792
+      },
+      "hillshade": {
+        "sourceSHA256": "983ccf3c7fdb091a988ccfd253d4248ffe8ef23c212069bf7d0d14665a27e208",
+        "bytes": 64178100,
+        "sha256": "369ed9385d3e0836e3ec7a0a89c40e21e9a589cc99cb755ac32b4d62f5cf6a59",
+        "tiles": 1598
+      },
+      "topography": {
+        "sourceSHA256": "11b160ded32df7a05200b7fe051c3a06d105c270f9862668416cf115ab233a2b",
+        "bytes": 332943173,
+        "sha256": "3309d642a24bf84e1b7aa329df0a6918c45db64eb1aee571e3d774ac0edb10be",
+        "tiles": 137573
+      },
+      "coast": {
+        "sourceSHA256": "3a9a27e3cbefdeb6dcb817c9e359665d985c8b5810e835cac20c26ae45335871",
+        "bytes": 46399,
+        "sha256": "a555a445f54f6afaf4c1de25111f4ebc03d05fb16dae943376c280ca2d8212ca",
+        "tiles": 8879
+      }
+    }
+  },
+  "pmtilesPython": "3.8.1",
+  "pmtilesJS": "4.5.0",
+  "librarySHA256": "caf981bc46f6327ee7e65d5dc964d89d38a69f60edca2bd4c5c890c21b554c6c",
+  "dataOrigin": "https://downloads.appsbyonzy.dev/OpenBareMap/canadian-rockies-jasper/2.0.0/preview",
+  "scope": "Complete selected map tiles; no regional or zoom sampling."
+}

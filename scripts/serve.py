@@ -102,17 +102,27 @@ class Handler(BaseHTTPRequestHandler):
             return
         body=target.read_bytes()
         if name == 'index.html' and self.server.region != 'ireland':
-            from regions import profile
+            from regions import PERMANENT_ICE, profile
             p=profile(self.server.region);label=p['label']
             body=body.decode().replace('IRELAND & NORTHERN IRELAND',html.escape(label.upper())).replace('Ireland',html.escape(label)).replace('Irish Grid', html.escape(p['gridName'])).replace('irish-grid-', p['gridSource']+'-').encode()
+            if p.get('permanentIce'):
+                swatches = ''.join(
+                    f'<span><canvas width="64" height="24" data-map-fill="{kind}" aria-hidden="true"></canvas>{html.escape(label)}</span>'
+                    for kind, (label, _, _, _) in PERMANENT_ICE.items()
+                )
+                water = b'<span><canvas width="64" height="24" data-map-fill="water"'
+                body = body.replace(water, swatches.encode() + water, 1)
         if name == 'index.html':
             from regions import profile
-            if profile(self.server.region).get('coverageBoundary') or profile(self.server.region).get('boundaryPreview'):
+            p = profile(self.server.region)
+            if p.get('coverageBoundary') or p.get('boundaryPreview'):
                 body=body.replace(b'County border',b'Province border')
                 body=body.replace(b'<div class="legend">',b'<details class="preview-key"><summary>Map key</summary><div class="legend">').replace(b'</div>\n<p class="note">',b'</div></details>\n<p class="note">')
                 body=body.replace(b'</head>',b'<style>.preview-key{margin-top:14px}.preview-key summary{cursor:pointer;font-size:12px}@media(max-width:600px){aside{width:calc(100% - 70px);max-height:300px}.badge{margin-bottom:4px}aside p{margin:8px 0}.preview-key{margin-top:10px}}</style></head>')
                 body=body.replace('Version 2.0 · 20 m contours'.encode(),'Local preview · 20 m contours'.encode())
-                body=body.replace(b'<label for="location">',b'<p style="font-size:12px"><span style="color:#8c278b">&#9473;</span> National park &nbsp; &#9476; 25 km boundary</p><label for="location">')
+                boundary = html.escape(p.get('coverageBoundaryLabel', '25 km boundary'))
+                note = f'<p style="font-size:12px"><span style="color:#8c278b">&#9473;</span> National park &nbsp; &#9476; {boundary}</p>'
+                body=body.replace(b'<label for="location">',note.encode()+b'<label for="location">')
         self.reply(200,body, mimetypes.guess_type(target)[0] or 'application/octet-stream')
 
 class MapServer(ThreadingHTTPServer):

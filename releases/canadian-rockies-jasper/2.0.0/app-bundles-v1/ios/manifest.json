@@ -1,0 +1,35 @@
+{
+  "bytes": 535632258,
+  "datasets": {
+    "basemap": {
+      "path": "maps/basemap.mbtiles",
+      "sha256": "4bea1917f031a56921cab09ca62cd055422a45e666475e390bdc1c50e55f5ee5"
+    },
+    "coast": {
+      "derived_from": "11b160ded32df7a05200b7fe051c3a06d105c270f9862668416cf115ab233a2b",
+      "maxzoom": 12,
+      "operation": "Preserve land-layer MVT bytes only through zoom 12; omit other layers.",
+      "path": "maps/coast.mbtiles",
+      "sha256": "3a9a27e3cbefdeb6dcb817c9e359665d985c8b5810e835cac20c26ae45335871"
+    },
+    "grid": {
+      "path": "maps/grid.mbtiles",
+      "sha256": "c37112940c0d52aa5036e21632fc141014bd8c6039a9b76814be5671fc34145f"
+    },
+    "hillshade": {
+      "path": "maps/hillshade.mbtiles",
+      "sha256": "983ccf3c7fdb091a988ccfd253d4248ffe8ef23c212069bf7d0d14665a27e208"
+    },
+    "topography": {
+      "path": "maps/topography.mbtiles",
+      "sha256": "11b160ded32df7a05200b7fe051c3a06d105c270f9862668416cf115ab233a2b"
+    }
+  },
+  "instructionsSHA256": "ff49301a577cfbdc4a0e11bb91c01077b67c10c4f96cdfcc76c9267df4071bd6",
+  "instructionsURL": "https://downloads.appsbyonzy.dev/OpenBareMap/canadian-rockies-jasper/2.0.0/app-bundles-v1/ios/instructions.txt",
+  "localPath": "releases/canadian-rockies-jasper/2.0.0/app-bundles-v1/ios/OpenBareMap-Jasper-Mount-Robson-iOS-Bundle.zip",
+  "mapManifestSHA256": "9ed1719c1bd54da46b1c1a535f9ec0725bdc6954d0524b4902eaf936f472e2b0",
+  "r2Key": "OpenBareMap/canadian-rockies-jasper/2.0.0/app-bundles-v1/ios/OpenBareMap-Jasper-Mount-Robson-iOS-Bundle.zip",
+  "sha256": "49cace52655d6bd4e657fdd9a3ce021c4884a97057ee7d6728fe6e1f8fff047d",
+  "url": "https://downloads.appsbyonzy.dev/OpenBareMap/canadian-rockies-jasper/2.0.0/app-bundles-v1/ios/OpenBareMap-Jasper-Mount-Robson-iOS-Bundle.zip"
+}

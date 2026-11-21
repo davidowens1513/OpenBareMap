@@ -10,13 +10,29 @@ import subprocess
 import sys
 sys.path.insert(0,str(Path(__file__).resolve().parents[1]/'garmin'))
 from openbaremap import ROOT,digest,write
-from regions import terrain_file,profile,region_path,garmin_work,REGIONS
+from regions import PERMANENT_ICE, terrain_file,profile,region_path,garmin_work,REGIONS
 from build import java_path,tools,run
 from identities import validate_config,write_tile_args
 
 def compress(source,target):
     with source.open('rb') as src,target.open('wb') as raw,gzip.GzipFile(filename='',mode='wb',fileobj=raw,mtime=0,compresslevel=4) as dst:shutil.copyfileobj(src,dst)
     return {'path':str(target.relative_to(ROOT)),'sha256':digest(target),'uncompressedSHA256':digest(source)}
+
+def add_permanent_ice_style(style, family_id):
+    polygons = style / 'polygons'
+    rules = polygons.read_text()
+    typ = style / f'OBM{family_id}.txt'
+    text = typ.read_text()
+    for kind, (label, color, _, code) in PERMANENT_ICE.items():
+        rule = f'obm:landcover={kind} [{code} resolution 20]\n'
+        if rule not in rules:
+            rules = rule + rules
+        if f'Type={code}\n' not in text:
+            text = text.replace('Type=0x3c,7\n', f'Type={code},7\nType=0x3c,7\n')
+            text += (f'\n[_polygon]\nType={code}\nString={label}\nFontStyle=NoLabel\n'
+                     f'Xpm="0 0 1 0"\n"a c {color}"\n[end]\n')
+    polygons.write_text(rules)
+    typ.write_text(text)
 
 def main(region):
     from fetch_region import fetch_dem_padding
@@ -27,6 +43,9 @@ def main(region):
     lock=dest/'inputs.lock.json'
     geometry=ROOT/'build'/(region+'-geometry')
     geometry_report=json.loads((geometry/'geometry-report.json').read_text())
+    ice_counts = geometry_report.get('permanentIce', {})
+    if p.get('permanentIce') and set(ice_counts) != set(PERMANENT_ICE):
+        raise ValueError('Rebuild geometry with permanent ice enabled')
     for name,expected in geometry_report['outputs'].items():
         if digest(geometry/name)!=expected:raise ValueError('Geometry checkpoint changed: '+name)
     land_source=ROOT/'build'/(region+'-topography')/'land.geojson'
@@ -69,6 +88,8 @@ def main(region):
     polygons=style/'polygons'
     rules=polygons.read_text().replace('obm:sea=yes [','obm:sea=yes { set mkgmap:skipSizeFilter=true } [').replace('natural=land [','natural=land { set mkgmap:skipSizeFilter=true } [')
     polygons.write_text(rules)
+    if p.get('permanentIce'):
+        add_permanent_ice_style(style, p['garminFamilyId'])
     # Dissolve overlapping source buffers into valid outer rings for Java readers.
     from region_coverage import polygon_union
     polygon=dest/'coverage.poly'
@@ -130,6 +151,12 @@ def main(region):
     with (dest/'background-validation.txt').open('w') as out:subprocess.run([str(java),'-Xmx2g','-cp',str(work)+':'+str(jar),'CheckRegionalBackgrounds',region,str(image)],stdout=out,check=True)
     command=[str(java),*(['-Dopenbaremap.requireBog=false'] if not p.get('requireBogFeatures',True) else []),'-Xmx2g','-cp',str(work)+':'+str(jar),'InspectMap',str(compile_dir),*p.get('inspectionNames',['London','Cardiff','Newcastle upon Tyne','Plymouth','Carlisle'])]
     with (dest/'inspection.json').open('w') as out:subprocess.run(command,stdout=out,check=True)
+    inspection = json.loads((dest/'inspection.json').read_text())
+    if p.get('permanentIce'):
+        polygons_by_type = inspection['polygonInstancesAtHighestDetail']
+        for kind, count in ice_counts.items():
+            if count and not polygons_by_type.get(PERMANENT_ICE[kind][3]):
+                raise ValueError(f'No Garmin {kind} polygons survived compilation')
     # Inspect the prospective binary together with the other installed products.
     subprocess.run([str(javac),'-cp',str(jar),'-d',str(work),str(ROOT/'garmin/ValidateMapSet.java')],check=True)
     companions=[region_path(r,'garmin/dist')/profile(r).get('garminFilename','OpenBareMap-'+'-'.join(part.title() for part in r.split('-'))+'.img') for r in REGIONS if r!=region and region_path(r,'garmin/dist').is_dir()]
@@ -144,7 +171,7 @@ def main(region):
     shutil.copyfile(copyright_file,dist/'ATTRIBUTION.txt')
     if p.get('coverageBoundary'):shutil.copyfile(region_path(region,'boundary-source.json'),dist/'boundary-source.json')
     for name in ('terrain-attribution.md','terrain-data-sources.md'):shutil.copyfile(terrain_file(region,name),dist/name)
-    write(dest/'build-report.json',{'status':'compiled and structurally inspected; hardware rendering pending','familyId':p['garminFamilyId'],'garminPackageRevision':config['garminPackageRevision'],'routing':False,'output':{'path':str(output.relative_to(ROOT)),'bytes':output.stat().st_size,'sha256':digest(output)},'inspection':json.loads((dest/'inspection.json').read_text())})
+    write(dest/'build-report.json',{'status':'compiled and structurally inspected; hardware rendering pending','familyId':p['garminFamilyId'],'garminPackageRevision':config['garminPackageRevision'],'routing':False,'output':{'path':str(output.relative_to(ROOT)),'bytes':output.stat().st_size,'sha256':digest(output)},'inspection':inspection})
 
 if __name__=='__main__':
     parser=argparse.ArgumentParser();parser.add_argument('--region',choices=REGIONS[1:],required=True);args=parser.parse_args();main(args.region)

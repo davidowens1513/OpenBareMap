@@ -1,0 +1,32 @@
+{
+  "canadian-rockies-banff": {
+    "label": "Banff, Yoho & Kootenay",
+    "coverage": "Banff, Yoho and Kootenay national parks, Mount Assiniboine, Canmore, Golden and Radium Hot Springs, with Icefields Parkway coverage north to the Columbia Icefield.",
+    "parks": ["Banff", "Yoho", "Kootenay", "Mount Assiniboine"],
+    "bufferKm": 10,
+    "anchors": {"Banff": [-115.5708, 51.1784], "Canmore": [-115.3479, 51.0890], "Lake Louise": [-116.1812, 51.4254], "Moraine Lake": [-116.1860, 51.3270], "Field": [-116.4936, 51.3965], "Golden": [-116.9631, 51.2974], "Radium Hot Springs": [-116.0727, 50.6200], "Mount Assiniboine": [-115.6518, 50.8692], "Saskatchewan River Crossing": [-116.7479, 51.9760], "Columbia Icefield": [-117.2217, 52.2212], "Spray Lakes Reservoir": [-115.2944, 50.9906]},
+    "inspectionNames": ["Banff", "Canmore", "Golden"],
+    "approaches": [["Golden", "Field"], ["Radium Hot Springs", [-116.047, 50.642]], ["Canmore", "Spray Lakes Reservoir"]],
+    "sharedParkway": true
+  },
+  "canadian-rockies-jasper": {
+    "label": "Jasper & Mount Robson",
+    "coverage": "Jasper National Park, Mount Robson and Hamber, including Maligne Lake, Berg Lake and the Hinton approach. The shared Icefields Parkway stretch reaches Saskatchewan River Crossing.",
+    "parks": ["Jasper", "Mount Robson", "Hamber"],
+    "bufferKm": 10,
+    "anchors": {"Jasper": [-118.0814, 52.8734], "Mount Robson": [-119.1565, 53.1110], "Berg Lake": [-119.1635, 53.1431], "Maligne Lake": [-117.6445, 52.7290], "Miette Hot Springs": [-117.7660, 53.1287], "Hinton": [-117.5739, 53.4122], "Valemount": [-119.2640, 52.8310], "Saskatchewan River Crossing": [-116.7479, 51.9760], "Columbia Icefield": [-117.2217, 52.2212]},
+    "inspectionNames": ["Jasper", "Hinton", "Valemount"],
+    "approaches": [["Hinton", [-117.79, 53.315], "Jasper"], ["Valemount", [-119.374, 52.986], [-119.27, 53.03], [-119.23, 53.036]]],
+    "sharedParkway": true
+  },
+  "canadian-rockies-kananaskis-waterton": {
+    "label": "Kananaskis & Waterton",
+    "coverage": "The southern Canadian Rockies from Canmore and Spray Valley through Kananaskis, Elk Lakes, Crowsnest Pass and the Castle parks to Waterton Lakes and Akamina-Kishinena at the US Glacier border.",
+    "parks": ["Waterton Lakes", "Spray Valley", "Peter Lougheed", "Elbow-Sheep Wildland", "Don Getty Wildland", "Castle", "Castle Wildland", "Elk Lakes", "Akamina-Kishinena"],
+    "bufferKm": 8,
+    "anchors": {"Canmore": [-115.3479, 51.0890], "Spray Lakes Reservoir": [-115.2944, 50.9906], "Upper Kananaskis Lake": [-115.172, 50.611], "Elk Lakes": [-115.0565, 50.5474], "Crowsnest Pass": [-114.5630, 49.6085], "Castle Mountain Resort": [-114.4127, 49.3198], "Pincher Creek": [-113.9483, 49.4846], "Waterton Park": [-113.9044, 49.0515], "Cameron Lake": [-114.0463, 49.0219], "Akamina Pass": [-114.0749, 49.0351]},
+    "inspectionNames": ["Canmore", "Pincher Creek", "Blairmore"],
+    "approaches": [["Canmore", "Spray Lakes Reservoir", "Upper Kananaskis Lake"], ["Elk Lakes", [-114.878, 50.195], [-114.933, 50.018], [-114.82, 49.84], "Crowsnest Pass", "Castle Mountain Resort"], ["Crowsnest Pass", "Pincher Creek", [-113.937, 49.327], [-113.914, 49.136], "Waterton Park"]],
+    "southLimit": 49.0
+  }
+}

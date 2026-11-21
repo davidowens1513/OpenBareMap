@@ -1,0 +1,33 @@
+{
+  "bytes": 521558109,
+  "datasets": {
+    "basemap": {
+      "path": "maps/basemap.mbtiles",
+      "sha256": "637c195dfc1c330d2dbf1d5179c303bb158809abb383803e723b4f887208e60f"
+    },
+    "coast": {
+      "derivedFrom": "2f09f19bca6e3d06b098fd66ddf4ce6e27197dc32689cf4dc4470a9ea4c37799",
+      "path": "maps/coast.mbtiles",
+      "sha256": "f853afd4677ff2c658aea6cfdc2f749490b2f996712433d3fb84dc0b939834a6"
+    },
+    "grid": {
+      "path": "maps/grid.mbtiles",
+      "sha256": "a090103872694f1b95f725f61d55b22c9eab1dfb549085895763991d0b4d5cd7"
+    },
+    "hillshade": {
+      "path": "maps/hillshade.mbtiles",
+      "sha256": "b63542b0b1d3be5d39725c2b5dd88fbb045cef005f0c30d30a08399c474024a3"
+    },
+    "topography": {
+      "path": "maps/topography.mbtiles",
+      "sha256": "2f09f19bca6e3d06b098fd66ddf4ce6e27197dc32689cf4dc4470a9ea4c37799"
+    }
+  },
+  "instructionsSHA256": "a8688643e4ac78fa900bda81413e8c2e2c60ae30a2403d67adaa6b4b91e0d523",
+  "instructionsURL": "https://downloads.appsbyonzy.dev/OpenBareMap/canadian-rockies-banff/2.0.0/app-bundles-v1/android/instructions.txt",
+  "localPath": "releases/canadian-rockies-banff/2.0.0/app-bundles-v1/android/OpenBareMap-Banff,-Yoho-Kootenay-Android-Bundle.zip",
+  "mapManifestSHA256": "669c1c2ceee13ecc7bf147556f5619c91f8ed2fb61f084bfd988d6db6800b29d",
+  "r2Key": "OpenBareMap/canadian-rockies-banff/2.0.0/app-bundles-v1/android/OpenBareMap-Banff,-Yoho-Kootenay-Android-Bundle.zip",
+  "sha256": "85131eb6997448b37f2b743206846857bf8029db7d2826b5f8a4b7cacd6ab079",
+  "url": "https://downloads.appsbyonzy.dev/OpenBareMap/canadian-rockies-banff/2.0.0/app-bundles-v1/android/OpenBareMap-Banff,-Yoho-Kootenay-Android-Bundle.zip"
+}

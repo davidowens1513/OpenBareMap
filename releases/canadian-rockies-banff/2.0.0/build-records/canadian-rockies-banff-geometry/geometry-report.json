@@ -1,0 +1,42 @@
+{
+  "builderSHA256": "0a713ec20f98659177ad2a3d51abcf3ca3f42111606ec76266be9ff772db504a",
+  "contoursSourceSHA256": "a2e090cfdd073834e897ff049f567bbc329b2d0ffa71748e8f4146103416e0b2",
+  "counts": {
+    "contours": 73750,
+    "grid": {
+      "grid_10km": 42,
+      "grid_1km": 402
+    },
+    "landcover": {
+      "empty_source_areas": [],
+      "features": 41533,
+      "permanentIce": {
+        "glacier": 803,
+        "permanent_snow": 0
+      },
+      "retained": 4091,
+      "smoothed": 37442
+    }
+  },
+  "osm": {
+    "bytes": 41615017,
+    "operation": "Complete-feature bbox extraction with nested relation references, then libosmium sorted merge; duplicate OSM objects resolved by version",
+    "path": "data/regions/canadian-rockies-banff/canadian-rockies-banff-261120.osm.pbf",
+    "replicationTimestamp": "2026-11-20T21:21:21Z",
+    "sha256": "44d2121b362bd60eea144acefb5ff8fe69d9f4d9341271d36abad8e1480de1ce",
+    "snapshot_date": "2026-11-20",
+    "url": null
+  },
+  "outputs": {
+    "contours.geojson": "645cc1700c6d07f580771ee733a1e3c047a75d8b50f799b527771850c44227a6",
+    "grid_10km.geojson": "964efe470079a6da1087977e4f47e43270a406f3a1d083b214df65e02f14387d",
+    "grid_1km.geojson": "7c5394dbe212bdc63ea601dc1bf143e29cb5460393b958e2ad403a2cf0aff51f",
+    "landcover.geojson": "6a76df5bb8746bd0c2822e68b35bac3e1b63192cd1345e1757e38aaacfbe6428"
+  },
+  "permanentIce": {
+    "glacier": 803,
+    "permanent_snow": 0
+  },
+  "region": "canadian-rockies-banff",
+  "smootherSHA256": "7581d024dc1c1bec931642c7201db149bf64a64c814c451fa8bf37a0881ea6c9"
+}

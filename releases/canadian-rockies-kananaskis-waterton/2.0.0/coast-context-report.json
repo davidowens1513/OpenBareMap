@@ -1,0 +1,52 @@
+{
+  "builderSHA256": "df45d47a59e968508a89136d44d799aaf2bba52547b211e0dff68a5b0e0f6cfc",
+  "contextBounds": [
+    -117,
+    48,
+    -112,
+    53
+  ],
+  "note": "Contour payloads preserved exactly while extending land background outside edition coverage.",
+  "oldTopography": {
+    "bytes": 266661888,
+    "path": "releases/canadian-rockies-kananaskis-waterton/2.0.0/maps/topography.mbtiles",
+    "sha256": "ff345d1d656c56cd3a04ab065bc390c24e07d01b0070efa4c0675e654e490860",
+    "validation": {
+      "empty_tile_count": 81042,
+      "logical_tiles_sha256": "a054df7e1060c7048b63ed367b3a3b796b5610a414dc61d12b18f881a99e8220",
+      "tile_count": 109569
+    }
+  },
+  "output": {
+    "bytes": 266424320,
+    "path": "releases/canadian-rockies-kananaskis-waterton/2.0.0/maps/topography-context.mbtiles",
+    "sha256": "c99acf7d04014184e51c06c1724c23aee5d80d5efc125cbdbd2da8b031c2f15e",
+    "validation": {
+      "empty_tile_count": 81042,
+      "logical_tiles_sha256": "a054df7e1060c7048b63ed367b3a3b796b5610a414dc61d12b18f881a99e8220",
+      "tile_count": 109569
+    }
+  },
+  "replacement": {
+    "changed_tiles": 7020,
+    "path": "build/canadian-rockies-kananaskis-waterton-coast-context/combined.mbtiles",
+    "replacement_feature_instances": 9159,
+    "sha256": "a78fc7cd07c90040f7ae9dbe198c0b40f12002d4d580c148a2881c765697a233",
+    "unchanged_other_layers_sha256": "d05cf7c9f0df3904f96e4c43b6c796e0989c209fb36be80b4bf7fd3b8cb9c952",
+    "validation": {
+      "empty_tile_count": 81042,
+      "logical_tiles_sha256": "a054df7e1060c7048b63ed367b3a3b796b5610a414dc61d12b18f881a99e8220",
+      "tile_count": 109569
+    }
+  },
+  "source": {
+    "accessed_utc": "2026-10-25T12:59:16.751893+00:00",
+    "bytes": 928538219,
+    "http_headers_path": "data/land-polygons.headers",
+    "license": "ODbL 1.0; OpenStreetMap contributors",
+    "path": "data/land-polygons-split-4326.zip",
+    "sha256": "5911e273096f9585425a17c30a8a98785cc33ed2718ff88987768933b8a327f7",
+    "source_snapshot": "HTTP Last-Modified 2026-10-25T03:43:12Z; this is file publication, not a guaranteed OSM snapshot timestamp",
+    "url": "https://osmdata.openstreetmap.de/download/land-polygons-split-4326.zip"
+  }
+}

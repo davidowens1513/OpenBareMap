@@ -1,0 +1,41 @@
+{
+  "regions": {
+    "canadian-rockies-banff": {
+      "basemap": {
+        "sourceSHA256": "637c195dfc1c330d2dbf1d5179c303bb158809abb383803e723b4f887208e60f",
+        "bytes": 97765475,
+        "sha256": "33e1c0ea2fa27c803e79e11dd5ef5eab28c4dd26078d099fbef1f8383295f1b8",
+        "tiles": 20577
+      },
+      "grid": {
+        "sourceSHA256": "a090103872694f1b95f725f61d55b22c9eab1dfb549085895763991d0b4d5cd7",
+        "bytes": 5561520,
+        "sha256": "6b36e75b9447b45b7ca3699459d43b2c9a176c720094a98a8e0ce9db39d5afc7",
+        "tiles": 20573
+      },
+      "hillshade": {
+        "sourceSHA256": "b63542b0b1d3be5d39725c2b5dd88fbb045cef005f0c30d30a08399c474024a3",
+        "bytes": 57343099,
+        "sha256": "ff9948b8879cef5d1e6d2b7d8f9acac31c627388889cfac82a0515e024d18d43",
+        "tiles": 1404
+      },
+      "topography": {
+        "sourceSHA256": "2f09f19bca6e3d06b098fd66ddf4ce6e27197dc32689cf4dc4470a9ea4c37799",
+        "bytes": 321920151,
+        "sha256": "751f567216cc9ca7e883c0e16d9ad9fabf744086a5f2a716515bdb9fd904ec3f",
+        "tiles": 111754
+      },
+      "coast": {
+        "sourceSHA256": "f853afd4677ff2c658aea6cfdc2f749490b2f996712433d3fb84dc0b939834a6",
+        "bytes": 38917,
+        "sha256": "a514d9225d0691d5481e05eddcbe747fba39823393b16d7269cae38e7df43963",
+        "tiles": 7102
+      }
+    }
+  },
+  "pmtilesPython": "3.8.1",
+  "pmtilesJS": "4.5.0",
+  "librarySHA256": "caf981bc46f6327ee7e65d5dc964d89d38a69f60edca2bd4c5c890c21b554c6c",
+  "dataOrigin": "https://downloads.appsbyonzy.dev/OpenBareMap/canadian-rockies-banff/2.0.0/preview",
+  "scope": "Complete selected map tiles; no regional or zoom sampling."
+}

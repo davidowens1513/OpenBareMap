@@ -1,0 +1,33 @@
+{
+  "bytes": 460729182,
+  "datasets": {
+    "basemap": {
+      "path": "maps/basemap.mbtiles",
+      "sha256": "3c0812cea431b21929ccf773f3fd575b123041d374bd37f54fc1bb778e224a2e"
+    },
+    "coast": {
+      "derivedFrom": "c99acf7d04014184e51c06c1724c23aee5d80d5efc125cbdbd2da8b031c2f15e",
+      "path": "maps/coast.mbtiles",
+      "sha256": "2d0e61a5aab06513ab16b8f2b71b349fdbe26227596a186b679954391bdb921e"
+    },
+    "grid": {
+      "path": "maps/grid.mbtiles",
+      "sha256": "3cffe31f2d25574e21a3bb1a6ff86bb000d952bcf85d2da8b683c87c79320fae"
+    },
+    "hillshade": {
+      "path": "maps/hillshade.mbtiles",
+      "sha256": "0614cace71d0d1a1a2ba029ff6495fd2060782af95237efd7976448619aba1a0"
+    },
+    "topography": {
+      "path": "maps/topography.mbtiles",
+      "sha256": "c99acf7d04014184e51c06c1724c23aee5d80d5efc125cbdbd2da8b031c2f15e"
+    }
+  },
+  "instructionsSHA256": "f30c46f43822a01b3855a5a134ebf2d2679454cc1e42fe1093de21023d4fd748",
+  "instructionsURL": "https://downloads.appsbyonzy.dev/OpenBareMap/canadian-rockies-kananaskis-waterton/2.0.0/app-bundles-v1/android/instructions.txt",
+  "localPath": "releases/canadian-rockies-kananaskis-waterton/2.0.0/app-bundles-v1/android/OpenBareMap-Kananaskis-Waterton-Android-Bundle.zip",
+  "mapManifestSHA256": "8e9621bc9762ac53a40b50d7f961c69a8651d3e440a15087d86957eec0f279b3",
+  "r2Key": "OpenBareMap/canadian-rockies-kananaskis-waterton/2.0.0/app-bundles-v1/android/OpenBareMap-Kananaskis-Waterton-Android-Bundle.zip",
+  "sha256": "a69d75c58242ad4a3219efa646effc1a24541a4cfb5b3674b61a7a79ec177027",
+  "url": "https://downloads.appsbyonzy.dev/OpenBareMap/canadian-rockies-kananaskis-waterton/2.0.0/app-bundles-v1/android/OpenBareMap-Kananaskis-Waterton-Android-Bundle.zip"
+}

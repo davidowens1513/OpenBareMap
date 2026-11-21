@@ -1,0 +1,52 @@
+{
+  "contourIntervalMetres": 20,
+  "coverage": "Jasper National Park, Mount Robson and Hamber, including Maligne Lake, Berg Lake and the Hinton approach. The shared Icefields Parkway stretch reaches Saskatchewan River Crossing.",
+  "datasets": {
+    "basemap": {
+      "bytes": 98312192,
+      "path": "releases/canadian-rockies-jasper/2.0.0/maps/basemap.mbtiles",
+      "sha256": "4bea1917f031a56921cab09ca62cd055422a45e666475e390bdc1c50e55f5ee5",
+      "validation": {
+        "empty_tile_count": 477,
+        "logical_tiles_sha256": "5655ddb112a5cc32a1bdd69da176a8ccc5d86e0db01d2d73d4454b6c55bbd740",
+        "tile_count": 24000
+      }
+    },
+    "grid": {
+      "bytes": 7516160,
+      "path": "releases/canadian-rockies-jasper/2.0.0/maps/grid.mbtiles",
+      "sha256": "c37112940c0d52aa5036e21632fc141014bd8c6039a9b76814be5671fc34145f",
+      "validation": {
+        "empty_tile_count": 0,
+        "logical_tiles_sha256": "510f5646b23df7326aed1a674db9df8befe7c0cde1c0af107cf051778dca8010",
+        "tile_count": 23792
+      }
+    },
+    "hillshade": {
+      "bytes": 65470464,
+      "path": "releases/canadian-rockies-jasper/2.0.0/maps/hillshade.mbtiles",
+      "sha256": "983ccf3c7fdb091a988ccfd253d4248ffe8ef23c212069bf7d0d14665a27e208",
+      "validation": {
+        "empty_tile_count": 0,
+        "logical_tiles_sha256": "8af321bc47cc26d8e812f4d6205c202a474af144a77f5e698d7ab24f5c4e996b",
+        "tile_count": 1598
+      }
+    },
+    "topography": {
+      "bytes": 358334464,
+      "path": "releases/canadian-rockies-jasper/2.0.0/maps/topography.mbtiles",
+      "sha256": "0abde93a7355472870ed3b04312853ac4fcc45f5bdb105d96f96f40164f2b529",
+      "validation": {
+        "empty_tile_count": 106269,
+        "logical_tiles_sha256": "89f23f818c099ba591d89ccb9e369076fb5176c708c6b3d4b6d8f11143899098",
+        "tile_count": 137573
+      }
+    }
+  },
+  "format": "openbaremap-development-viewer-v1",
+  "localBorders": false,
+  "mapVersion": "2.0.0",
+  "region": "canadian-rockies-jasper",
+  "storageRevision": "2.0.0-canadian-rockies-jasper-r1",
+  "styleRevision": "2.0.0-canadian-rockies-jasper-r1"
+}

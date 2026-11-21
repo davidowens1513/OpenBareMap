@@ -80,9 +80,27 @@ def finish(region, reuse_geometry=False):
         write(final/'geometry-validation.json',{'sha256':digest(final/'geometry.mbtiles'),'configSHA256':digest(final/'tilemaker.json'),'validation':inspect_tiles(final/'geometry.mbtiles'),'audit':audit(final/'geometry.mbtiles',{'landcover','contour','grid_1km','grid_10km'})})
     replacements={}
     replacements['basemap']=rebuild(base/'basemap.mbtiles',final/'basemap-smoothed.mbtiles',final/'geometry.mbtiles','landcover')
-    replacements['topography']=rebuild(top/'topography.mbtiles',final/'topography-smoothed.mbtiles',final/'geometry.mbtiles','contour')
-    for name in ('basemap','topography'):
-        select_detail(final/(name+'-smoothed.mbtiles'),final/(name+'.mbtiles'),p['mapVersion']+'-'+region+'-r1')
+    storage_revision = p['mapVersion']+'-'+region+'-r1'
+    select_detail(final/'basemap-smoothed.mbtiles',final/'basemap.mbtiles',storage_revision)
+    # A land-cover-only rebuild can reuse the previous validated contour output.
+    terrain_checkpoint = ROOT/'build'/(region+'-terrain-checkpoint.json')
+    if terrain_checkpoint.is_file():
+        checkpoint = json.loads(terrain_checkpoint.read_text())
+        prior_dir = ROOT/checkpoint['path']
+        prior = json.loads((prior_dir/'build.json').read_text())
+        source = prior_dir/'topography.mbtiles'
+        if (prior['region'] != region
+                or not prior['status'].startswith('built and structurally validated')
+                or prior['geometryReport']['outputs']['contours.geojson'] != report['outputs']['contours.geojson']
+                or not prior['geometryReport']['contoursSourceSHA256'] == report['contoursSourceSHA256']
+                or json.loads((prior_dir/'tilemaker.json').read_text()) != config
+                or digest(source) != prior['outputs']['topography']['sha256']):
+            raise ValueError('Earlier contour checkpoint does not match this build')
+        shutil.copyfile(source,final/'topography.mbtiles')
+        replacements['topography'] = prior['replacements']['topography']
+    else:
+        replacements['topography']=rebuild(top/'topography.mbtiles',final/'topography-smoothed.mbtiles',final/'geometry.mbtiles','contour')
+        select_detail(final/'topography-smoothed.mbtiles',final/'topography.mbtiles',storage_revision)
     # Extract only grid layers; unrelated contour and landcover do not enter this DB.
     with closing(sqlite3.connect((final/'geometry.mbtiles').as_uri()+'?mode=ro',uri=True)) as src,closing(sqlite3.connect(final/'grid.mbtiles')) as dst:
         dst.execute('CREATE TABLE metadata(name TEXT,value TEXT)');dst.execute('CREATE TABLE tiles(zoom_level INTEGER,tile_column INTEGER,tile_row INTEGER,tile_data BLOB,PRIMARY KEY(zoom_level,tile_column,tile_row))')
@@ -129,6 +147,10 @@ def main():
             for item in json.loads(region_path(region,'active-map.json').read_text())['datasets'].values():
                 if digest(ROOT/item['path'])!=item['sha256']:raise ValueError('Selected output changed')
     if args.stage in ('packages','all'):
+        if profile(region).get('permanentIce'):
+            report = ROOT/'build'/(region+'-release')/'build.json'
+            if not json.loads(report.read_text())['geometryReport'].get('permanentIce'):
+                raise ValueError('Rebuild the regional maps with permanent ice before packaging')
         if not (ROOT/'regions'/region/'legend/legend-manifest.json').exists():run(sys.executable,'scripts/build_app_legend.py','--region',region)
         for platform,builder in [('ios','ios/build_bundle.py'),('android','android/build_package.py')]:
             output=ROOT/'regions'/region/platform

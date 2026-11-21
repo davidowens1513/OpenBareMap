@@ -1,0 +1,36 @@
+{
+  "areaKm2": 21139.0,
+  "attribution": "Parks Canada \u00b7 Government of Alberta \u00b7 Province of British Columbia",
+  "bufferCRS": "EPSG:32611",
+  "bufferMetres": 10000,
+  "outputs": {
+    "coverage-mask.geojson": "8a2993e4d888541f60954ea5a9b7a94186de9fad834605fd39e9fea98ced0fb0",
+    "coverage.geojson": "4cd2a2bb028f1816c4072218f186e9e79c1496105c6613995fd90f42e350e3e3",
+    "park-boundary.geojson": "cd138497248b2214f3f3829f6ac33409f3e24c75ca446bdd1c984d37dc99db48"
+  },
+  "parks": [
+    "Jasper",
+    "Mount Robson",
+    "Hamber"
+  ],
+  "sources": [
+    {
+      "bytes": 1186623,
+      "path": "data/regions/canadian-rockies/parks-canada-boundaries.geojson",
+      "sha256": "1f879194d5f61df3c050d6ec42fe601ccb3121dbbbe6a58d0e9f91b929aecb53",
+      "url": "https://services2.arcgis.com/wCOMu5IS7YdSyPNx/arcgis/rest/services/vw_Places_Public_lieux_public_APCA/FeatureServer/0/query?where=DESC_EN+IN+%28%27Banff+National+Park+of+Canada%27%2C%27Jasper+National+Park+of+Canada%27%2C%27Yoho+National+Park+of+Canada%27%2C%27Kootenay+National+Park+of+Canada%27%2C%27Waterton+Lakes+National+Park+of+Canada%27%29&outFields=DESC_EN&outSR=4326&f=geojson"
+    },
+    {
+      "bytes": 1965770,
+      "path": "data/regions/canadian-rockies/alberta-parks-boundaries.geojson",
+      "sha256": "d46d7b10682210c4603a1776336b42aae7da95a2b88cc55911fdb31c7d4972a7",
+      "url": "https://geospatial.alberta.ca/titan/rest/services/boundary/parks_protected_areas_alberta/FeatureServer/0/query?where=NAME+IN+%28%27Spray+Valley%27%2C%27Peter+Lougheed%27%2C%27Elbow-Sheep+Wildland%27%2C%27Don+Getty+Wildland%27%2C%27Castle%27%2C%27Castle+Wildland%27%29+AND+STATUS+%3D+%27OC%27&outFields=NAME&outSR=4326&f=geojson"
+    },
+    {
+      "bytes": 1423830,
+      "path": "data/regions/canadian-rockies/bc-parks-boundaries.geojson",
+      "sha256": "7a066f8e68e98b769f7435cd4bb32d8d12c0487ee633cfd70be4f12e59715113",
+      "url": "https://openmaps.gov.bc.ca/geo/pub/WHSE_TANTALIS.TA_PARK_ECORES_PA_SVW/ows?service=WFS&version=2.0.0&request=GetFeature&typeNames=pub%3AWHSE_TANTALIS.TA_PARK_ECORES_PA_SVW&outputFormat=application%2Fjson&srsName=EPSG%3A4326&CQL_FILTER=PROTECTED_LANDS_NAME+IN+%28%27MOUNT+ROBSON+PARK%27%2C%27MOUNT+ASSINIBOINE+PARK%27%2C%27HAMBER+PARK%27%2C%27ELK+LAKES+PARK%27%2C%27AKAMINA-KISHINENA+PARK%27%29"
+    }
+  ]
+}

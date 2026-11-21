@@ -6,6 +6,9 @@
     "alps-tyrol-bavaria": "2.0.0",
     "alps-west": "2.0.0",
     "balearic-islands": "2.0.0",
+    "canadian-rockies-banff": "2.0.0",
+    "canadian-rockies-jasper": "2.0.0",
+    "canadian-rockies-kananaskis-waterton": "2.0.0",
     "canary-islands": "2.0.0",
     "corsica": "2.0.0",
     "crete": "2.0.0",
@@ -385,6 +388,216 @@
         "r2Key": "OpenBareMap/balearic-islands/2.0.0/app-bundles-v1/ios/OpenBareMap-Balearic-Islands-iOS-Bundle.zip",
         "sha256": "807f5d6bb00b0ab528cf702fabafa33761173d66b26e0be56a940dcebe7b4d18",
         "url": "https://downloads.appsbyonzy.dev/OpenBareMap/balearic-islands/2.0.0/app-bundles-v1/ios/OpenBareMap-Balearic-Islands-iOS-Bundle.zip"
+      }
+    },
+    "canadian-rockies-banff": {
+      "android": {
+        "bytes": 521558109,
+        "datasets": {
+          "basemap": {
+            "path": "maps/basemap.mbtiles",
+            "sha256": "637c195dfc1c330d2dbf1d5179c303bb158809abb383803e723b4f887208e60f"
+          },
+          "coast": {
+            "derivedFrom": "2f09f19bca6e3d06b098fd66ddf4ce6e27197dc32689cf4dc4470a9ea4c37799",
+            "path": "maps/coast.mbtiles",
+            "sha256": "f853afd4677ff2c658aea6cfdc2f749490b2f996712433d3fb84dc0b939834a6"
+          },
+          "grid": {
+            "path": "maps/grid.mbtiles",
+            "sha256": "a090103872694f1b95f725f61d55b22c9eab1dfb549085895763991d0b4d5cd7"
+          },
+          "hillshade": {
+            "path": "maps/hillshade.mbtiles",
+            "sha256": "b63542b0b1d3be5d39725c2b5dd88fbb045cef005f0c30d30a08399c474024a3"
+          },
+          "topography": {
+            "path": "maps/topography.mbtiles",
+            "sha256": "2f09f19bca6e3d06b098fd66ddf4ce6e27197dc32689cf4dc4470a9ea4c37799"
+          }
+        },
+        "instructionsSHA256": "a8688643e4ac78fa900bda81413e8c2e2c60ae30a2403d67adaa6b4b91e0d523",
+        "instructionsURL": "https://downloads.appsbyonzy.dev/OpenBareMap/canadian-rockies-banff/2.0.0/app-bundles-v1/android/instructions.txt",
+        "localPath": "releases/canadian-rockies-banff/2.0.0/app-bundles-v1/android/OpenBareMap-Banff,-Yoho-Kootenay-Android-Bundle.zip",
+        "mapManifestSHA256": "669c1c2ceee13ecc7bf147556f5619c91f8ed2fb61f084bfd988d6db6800b29d",
+        "r2Key": "OpenBareMap/canadian-rockies-banff/2.0.0/app-bundles-v1/android/OpenBareMap-Banff,-Yoho-Kootenay-Android-Bundle.zip",
+        "sha256": "85131eb6997448b37f2b743206846857bf8029db7d2826b5f8a4b7cacd6ab079",
+        "url": "https://downloads.appsbyonzy.dev/OpenBareMap/canadian-rockies-banff/2.0.0/app-bundles-v1/android/OpenBareMap-Banff,-Yoho-Kootenay-Android-Bundle.zip"
+      },
+      "ios": {
+        "bytes": 521559847,
+        "datasets": {
+          "basemap": {
+            "path": "maps/basemap.mbtiles",
+            "sha256": "637c195dfc1c330d2dbf1d5179c303bb158809abb383803e723b4f887208e60f"
+          },
+          "coast": {
+            "derived_from": "2f09f19bca6e3d06b098fd66ddf4ce6e27197dc32689cf4dc4470a9ea4c37799",
+            "maxzoom": 12,
+            "operation": "Preserve land-layer MVT bytes only through zoom 12; omit other layers.",
+            "path": "maps/coast.mbtiles",
+            "sha256": "f853afd4677ff2c658aea6cfdc2f749490b2f996712433d3fb84dc0b939834a6"
+          },
+          "grid": {
+            "path": "maps/grid.mbtiles",
+            "sha256": "a090103872694f1b95f725f61d55b22c9eab1dfb549085895763991d0b4d5cd7"
+          },
+          "hillshade": {
+            "path": "maps/hillshade.mbtiles",
+            "sha256": "b63542b0b1d3be5d39725c2b5dd88fbb045cef005f0c30d30a08399c474024a3"
+          },
+          "topography": {
+            "path": "maps/topography.mbtiles",
+            "sha256": "2f09f19bca6e3d06b098fd66ddf4ce6e27197dc32689cf4dc4470a9ea4c37799"
+          }
+        },
+        "instructionsSHA256": "a8ebc7c00286f6ae741165cf51742dfcda18e28436526a532bc5faccbfa99f4f",
+        "instructionsURL": "https://downloads.appsbyonzy.dev/OpenBareMap/canadian-rockies-banff/2.0.0/app-bundles-v1/ios/instructions.txt",
+        "localPath": "releases/canadian-rockies-banff/2.0.0/app-bundles-v1/ios/OpenBareMap-Banff,-Yoho-Kootenay-iOS-Bundle.zip",
+        "mapManifestSHA256": "35e749f3b6d1e64611afc3d67e475eff816bdaf5d1dec0243192cb9d13746334",
+        "r2Key": "OpenBareMap/canadian-rockies-banff/2.0.0/app-bundles-v1/ios/OpenBareMap-Banff,-Yoho-Kootenay-iOS-Bundle.zip",
+        "sha256": "b4ca0eeb425b9645d29c2fc426a9829247463c2d728421596ea3002cf99beebe",
+        "url": "https://downloads.appsbyonzy.dev/OpenBareMap/canadian-rockies-banff/2.0.0/app-bundles-v1/ios/OpenBareMap-Banff,-Yoho-Kootenay-iOS-Bundle.zip"
+      }
+    },
+    "canadian-rockies-jasper": {
+      "android": {
+        "bytes": 535630522,
+        "datasets": {
+          "basemap": {
+            "path": "maps/basemap.mbtiles",
+            "sha256": "4bea1917f031a56921cab09ca62cd055422a45e666475e390bdc1c50e55f5ee5"
+          },
+          "coast": {
+            "derivedFrom": "11b160ded32df7a05200b7fe051c3a06d105c270f9862668416cf115ab233a2b",
+            "path": "maps/coast.mbtiles",
+            "sha256": "3a9a27e3cbefdeb6dcb817c9e359665d985c8b5810e835cac20c26ae45335871"
+          },
+          "grid": {
+            "path": "maps/grid.mbtiles",
+            "sha256": "c37112940c0d52aa5036e21632fc141014bd8c6039a9b76814be5671fc34145f"
+          },
+          "hillshade": {
+            "path": "maps/hillshade.mbtiles",
+            "sha256": "983ccf3c7fdb091a988ccfd253d4248ffe8ef23c212069bf7d0d14665a27e208"
+          },
+          "topography": {
+            "path": "maps/topography.mbtiles",
+            "sha256": "11b160ded32df7a05200b7fe051c3a06d105c270f9862668416cf115ab233a2b"
+          }
+        },
+        "instructionsSHA256": "9de6f55cce23330d1906fcacca62b03add2f450418b450fd0c33fdaec46aef97",
+        "instructionsURL": "https://downloads.appsbyonzy.dev/OpenBareMap/canadian-rockies-jasper/2.0.0/app-bundles-v1/android/instructions.txt",
+        "localPath": "releases/canadian-rockies-jasper/2.0.0/app-bundles-v1/android/OpenBareMap-Jasper-Mount-Robson-Android-Bundle.zip",
+        "mapManifestSHA256": "372529b7d68cf48cec535ad9aaa9218688b43652db0ad247c2a58d8de92f8da0",
+        "r2Key": "OpenBareMap/canadian-rockies-jasper/2.0.0/app-bundles-v1/android/OpenBareMap-Jasper-Mount-Robson-Android-Bundle.zip",
+        "sha256": "290d59a49acca5264acf85342d278a97618f32ccf02f5de5030c5a14f056fbf0",
+        "url": "https://downloads.appsbyonzy.dev/OpenBareMap/canadian-rockies-jasper/2.0.0/app-bundles-v1/android/OpenBareMap-Jasper-Mount-Robson-Android-Bundle.zip"
+      },
+      "ios": {
+        "bytes": 535632258,
+        "datasets": {
+          "basemap": {
+            "path": "maps/basemap.mbtiles",
+            "sha256": "4bea1917f031a56921cab09ca62cd055422a45e666475e390bdc1c50e55f5ee5"
+          },
+          "coast": {
+            "derived_from": "11b160ded32df7a05200b7fe051c3a06d105c270f9862668416cf115ab233a2b",
+            "maxzoom": 12,
+            "operation": "Preserve land-layer MVT bytes only through zoom 12; omit other layers.",
+            "path": "maps/coast.mbtiles",
+            "sha256": "3a9a27e3cbefdeb6dcb817c9e359665d985c8b5810e835cac20c26ae45335871"
+          },
+          "grid": {
+            "path": "maps/grid.mbtiles",
+            "sha256": "c37112940c0d52aa5036e21632fc141014bd8c6039a9b76814be5671fc34145f"
+          },
+          "hillshade": {
+            "path": "maps/hillshade.mbtiles",
+            "sha256": "983ccf3c7fdb091a988ccfd253d4248ffe8ef23c212069bf7d0d14665a27e208"
+          },
+          "topography": {
+            "path": "maps/topography.mbtiles",
+            "sha256": "11b160ded32df7a05200b7fe051c3a06d105c270f9862668416cf115ab233a2b"
+          }
+        },
+        "instructionsSHA256": "ff49301a577cfbdc4a0e11bb91c01077b67c10c4f96cdfcc76c9267df4071bd6",
+        "instructionsURL": "https://downloads.appsbyonzy.dev/OpenBareMap/canadian-rockies-jasper/2.0.0/app-bundles-v1/ios/instructions.txt",
+        "localPath": "releases/canadian-rockies-jasper/2.0.0/app-bundles-v1/ios/OpenBareMap-Jasper-Mount-Robson-iOS-Bundle.zip",
+        "mapManifestSHA256": "9ed1719c1bd54da46b1c1a535f9ec0725bdc6954d0524b4902eaf936f472e2b0",
+        "r2Key": "OpenBareMap/canadian-rockies-jasper/2.0.0/app-bundles-v1/ios/OpenBareMap-Jasper-Mount-Robson-iOS-Bundle.zip",
+        "sha256": "49cace52655d6bd4e657fdd9a3ce021c4884a97057ee7d6728fe6e1f8fff047d",
+        "url": "https://downloads.appsbyonzy.dev/OpenBareMap/canadian-rockies-jasper/2.0.0/app-bundles-v1/ios/OpenBareMap-Jasper-Mount-Robson-iOS-Bundle.zip"
+      }
+    },
+    "canadian-rockies-kananaskis-waterton": {
+      "android": {
+        "bytes": 460729182,
+        "datasets": {
+          "basemap": {
+            "path": "maps/basemap.mbtiles",
+            "sha256": "3c0812cea431b21929ccf773f3fd575b123041d374bd37f54fc1bb778e224a2e"
+          },
+          "coast": {
+            "derivedFrom": "c99acf7d04014184e51c06c1724c23aee5d80d5efc125cbdbd2da8b031c2f15e",
+            "path": "maps/coast.mbtiles",
+            "sha256": "2d0e61a5aab06513ab16b8f2b71b349fdbe26227596a186b679954391bdb921e"
+          },
+          "grid": {
+            "path": "maps/grid.mbtiles",
+            "sha256": "3cffe31f2d25574e21a3bb1a6ff86bb000d952bcf85d2da8b683c87c79320fae"
+          },
+          "hillshade": {
+            "path": "maps/hillshade.mbtiles",
+            "sha256": "0614cace71d0d1a1a2ba029ff6495fd2060782af95237efd7976448619aba1a0"
+          },
+          "topography": {
+            "path": "maps/topography.mbtiles",
+            "sha256": "c99acf7d04014184e51c06c1724c23aee5d80d5efc125cbdbd2da8b031c2f15e"
+          }
+        },
+        "instructionsSHA256": "f30c46f43822a01b3855a5a134ebf2d2679454cc1e42fe1093de21023d4fd748",
+        "instructionsURL": "https://downloads.appsbyonzy.dev/OpenBareMap/canadian-rockies-kananaskis-waterton/2.0.0/app-bundles-v1/android/instructions.txt",
+        "localPath": "releases/canadian-rockies-kananaskis-waterton/2.0.0/app-bundles-v1/android/OpenBareMap-Kananaskis-Waterton-Android-Bundle.zip",
+        "mapManifestSHA256": "8e9621bc9762ac53a40b50d7f961c69a8651d3e440a15087d86957eec0f279b3",
+        "r2Key": "OpenBareMap/canadian-rockies-kananaskis-waterton/2.0.0/app-bundles-v1/android/OpenBareMap-Kananaskis-Waterton-Android-Bundle.zip",
+        "sha256": "a69d75c58242ad4a3219efa646effc1a24541a4cfb5b3674b61a7a79ec177027",
+        "url": "https://downloads.appsbyonzy.dev/OpenBareMap/canadian-rockies-kananaskis-waterton/2.0.0/app-bundles-v1/android/OpenBareMap-Kananaskis-Waterton-Android-Bundle.zip"
+      },
+      "ios": {
+        "bytes": 460730931,
+        "datasets": {
+          "basemap": {
+            "path": "maps/basemap.mbtiles",
+            "sha256": "3c0812cea431b21929ccf773f3fd575b123041d374bd37f54fc1bb778e224a2e"
+          },
+          "coast": {
+            "derived_from": "c99acf7d04014184e51c06c1724c23aee5d80d5efc125cbdbd2da8b031c2f15e",
+            "maxzoom": 12,
+            "operation": "Preserve land-layer MVT bytes only through zoom 12; omit other layers.",
+            "path": "maps/coast.mbtiles",
+            "sha256": "2d0e61a5aab06513ab16b8f2b71b349fdbe26227596a186b679954391bdb921e"
+          },
+          "grid": {
+            "path": "maps/grid.mbtiles",
+            "sha256": "3cffe31f2d25574e21a3bb1a6ff86bb000d952bcf85d2da8b683c87c79320fae"
+          },
+          "hillshade": {
+            "path": "maps/hillshade.mbtiles",
+            "sha256": "0614cace71d0d1a1a2ba029ff6495fd2060782af95237efd7976448619aba1a0"
+          },
+          "topography": {
+            "path": "maps/topography.mbtiles",
+            "sha256": "c99acf7d04014184e51c06c1724c23aee5d80d5efc125cbdbd2da8b031c2f15e"
+          }
+        },
+        "instructionsSHA256": "b0b7e1b712854e5e3a14fb94ab082b46afbc70e74abe3bdcbac20b06620946f8",
+        "instructionsURL": "https://downloads.appsbyonzy.dev/OpenBareMap/canadian-rockies-kananaskis-waterton/2.0.0/app-bundles-v1/ios/instructions.txt",
+        "localPath": "releases/canadian-rockies-kananaskis-waterton/2.0.0/app-bundles-v1/ios/OpenBareMap-Kananaskis-Waterton-iOS-Bundle.zip",
+        "mapManifestSHA256": "6f5e234d8b2d14c632313fadfb780e0c591e74976f54dab6a089f4f749310b6b",
+        "r2Key": "OpenBareMap/canadian-rockies-kananaskis-waterton/2.0.0/app-bundles-v1/ios/OpenBareMap-Kananaskis-Waterton-iOS-Bundle.zip",
+        "sha256": "0a8cab3c2fde9375ed6cbbe576055b24d9181eb6d3c312fa2589e5aacfa62fb5",
+        "url": "https://downloads.appsbyonzy.dev/OpenBareMap/canadian-rockies-kananaskis-waterton/2.0.0/app-bundles-v1/ios/OpenBareMap-Kananaskis-Waterton-iOS-Bundle.zip"
       }
     },
     "canary-islands": {

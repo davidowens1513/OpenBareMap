@@ -7,7 +7,7 @@ import math
 from pathlib import Path
 import sqlite3
 from openbaremap import ROOT,digest,inspect_tiles,write
-from regions import REGIONS, active_map,profile,region_path,region_style
+from regions import PERMANENT_ICE, REGIONS, active_map,profile,region_path,region_style
 from build_cartography_2 import layers
 from audit import fields
 from optimize_storage import packed,value
@@ -88,12 +88,16 @@ def coverage(path,anchors=None):
             result[name]={'coordinate':[lon,lat],'featuresInNeighbouringDetailedTiles':count}
     return result
 
-def detail(path):
+def detail(path, permanent_ice=False):
     counts={'contours':0,'boundaries':0}
+    wanted = {'contour', 'boundary'}
+    if permanent_ice:
+        wanted.add('landcover')
+        counts['permanentIce'] = dict.fromkeys(PERMANENT_ICE, 0)
     with closing(sqlite3.connect(path.as_uri()+'?mode=ro',uri=True)) as db:
         for payload, in db.execute('SELECT tile_data FROM tiles'):
             for name,raw in layers(payload):
-                if name not in ('contour','boundary'):continue
+                if name not in wanted:continue
                 fs=list(fields(raw));keys=[v.decode() for n,w,v in fs if n==3 and w==2];values=[value(v) for n,w,v in fs if n==4 and w==2]
                 for n,w,feature in fs:
                     if n!=2 or w!=2:continue
@@ -102,9 +106,11 @@ def detail(path):
                     if name=='contour':
                         if float(props['elevation'])%20:raise ValueError('Unexpected contour interval')
                         counts['contours']+=1
-                    else:
+                    elif name=='boundary':
                         if str(props.get('admin_level','')) not in ('2','4','5','6'):raise ValueError('Unexpected local boundary')
                         counts['boundaries']+=1
+                    elif props.get('class') in PERMANENT_ICE:
+                        counts['permanentIce'][props['class']] += 1
     return counts
 
 def package(root,platform,region="england-wales"):
@@ -167,7 +173,7 @@ def validate(region):
         output['islandLandBackground']=land_coverage(ROOT/active['datasets']['topography']['path'],p['islandValidationAnchors'],zoom_levels=p['islandValidationZooms'])
     if region=='scotland':
         output['smallIslandLandBackground']=land_coverage(ROOT/active['datasets']['topography']['path'],{'rockall':p['destinations']['rockall'][:2]},zoom_levels=[11,12])
-    output['detail']={name:detail(ROOT/active['datasets'][name]['path']) for name in ('basemap','topography')}
+    output['detail']={name:detail(ROOT/active['datasets'][name]['path'], p.get('permanentIce',False) and name=='basemap') for name in ('basemap','topography')}
     output['packages']={platform:package(ROOT/'regions'/region/platform/folder,platform,region) for platform,folder in [('ios','OpenBareMap.bundle'),('android','OpenBareMap')]}
     from regions import accepted_ireland_baseline
     baseline=accepted_ireland_baseline()
@@ -181,6 +187,12 @@ def validate(region):
     geometry=json.loads(geometry_path.read_text())
     if geometry['osm']['sha256']!=json.loads(region_path(region,'sources.lock.json').read_text())['osm']['sha256']:raise ValueError('Wrong geometry source record')
     output['geometryProcessing']=geometry['counts']
+    if p.get('permanentIce'):
+        if set(geometry.get('permanentIce', {})) != set(PERMANENT_ICE):
+            raise ValueError('Missing permanent ice geometry record')
+        for kind, count in geometry['permanentIce'].items():
+            if count and not output['detail']['basemap']['permanentIce'][kind]:
+                raise ValueError(f'No {kind} polygons survived vector tiling')
     garmin=json.loads((ROOT/'regions'/region/'garmin/build-report.json').read_text())
     if garmin['familyId']!=p['garminFamilyId'] or garmin['routing']:raise ValueError('Wrong Garmin identity or routing')
     if digest(ROOT/garmin['output']['path'])!=garmin['output']['sha256']:raise ValueError('Garmin checksum changed')

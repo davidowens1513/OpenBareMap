@@ -1,0 +1,42 @@
+{
+  "builderSHA256": "a48ad9a24103de9fa6d30131c92523a644e60aefa7cda15ed55af44ce34491b6",
+  "contoursSourceSHA256": "451c8ac48620043e78eae3ca91ac3886d651bef1dd058b96e832c44af9eb743d",
+  "counts": {
+    "contours": 78504,
+    "grid": {
+      "grid_10km": 43,
+      "grid_1km": 412
+    },
+    "landcover": {
+      "empty_source_areas": [],
+      "features": 68493,
+      "permanentIce": {
+        "glacier": 1010,
+        "permanent_snow": 0
+      },
+      "retained": 7640,
+      "smoothed": 60853
+    }
+  },
+  "osm": {
+    "bytes": 32017634,
+    "operation": "Complete-feature bbox extraction with nested relation references, then libosmium sorted merge; duplicate OSM objects resolved by version",
+    "path": "data/regions/canadian-rockies-jasper/canadian-rockies-jasper-261120.osm.pbf",
+    "replicationTimestamp": "2026-11-20T21:21:21Z",
+    "sha256": "4e5e0e99507de3e1858b2cba17c38910713cfa43f5f7b5461aeeee134fdbd479",
+    "snapshot_date": "2026-11-20",
+    "url": null
+  },
+  "outputs": {
+    "contours.geojson": "9b103b783d4db7355a3a7f5686ff050c59bf8f80d8984f6a6720cda80c0ff370",
+    "grid_10km.geojson": "f2c3b955b84889728d90eb98a9b726799bd3d89b6533f70b6fcd55575ca80730",
+    "grid_1km.geojson": "79d445d6647755675b23e7f7e095c2014dcb71bc0e4fcaa8d5fe13467cde5eb3",
+    "landcover.geojson": "8dd80d7ece2b5b5c56c04463d98c1f4ce3e7630c52be4f4f328c20fbe3d8bab6"
+  },
+  "permanentIce": {
+    "glacier": 1010,
+    "permanent_snow": 0
+  },
+  "region": "canadian-rockies-jasper",
+  "smootherSHA256": "7581d024dc1c1bec931642c7201db149bf64a64c814c451fa8bf37a0881ea6c9"
+}

@@ -1,0 +1,194 @@
+{
+  "boundaryAttribution": "Parks Canada \u00b7 Government of Alberta \u00b7 Province of British Columbia",
+  "bounds": [
+    -119.69583923235167,
+    51.8906378267999,
+    -116.60968752207472,
+    53.571278563203386
+  ],
+  "clipBasemap": true,
+  "clipSource": true,
+  "clipTerrainToBounds": true,
+  "coastContextBounds": [
+    -121,
+    50,
+    -115,
+    55
+  ],
+  "contourIntervalMetres": 20,
+  "coverage": "Jasper National Park, Mount Robson and Hamber, including Maligne Lake, Berg Lake and the Hinton approach. The shared Icefields Parkway stretch reaches Saskatchewan River Crossing.",
+  "coverageBoundary": true,
+  "coverageBoundaryLabel": "Map coverage limit",
+  "destinationLabels": {
+    "berg-lake": "Berg Lake",
+    "columbia-icefield": "Columbia Icefield",
+    "hinton": "Hinton",
+    "island": "Jasper & Mount Robson",
+    "jasper": "Jasper",
+    "maligne-lake": "Maligne Lake",
+    "miette-hot-springs": "Miette Hot Springs",
+    "mount-robson": "Mount Robson",
+    "saskatchewan-river-crossing": "Saskatchewan River Crossing",
+    "valemount": "Valemount"
+  },
+  "destinations": {
+    "berg-lake": [
+      -119.1635,
+      53.1431,
+      12
+    ],
+    "columbia-icefield": [
+      -117.2217,
+      52.2212,
+      12
+    ],
+    "hinton": [
+      -117.5739,
+      53.4122,
+      12
+    ],
+    "island": [
+      -117.82196310292242,
+      52.7324172862087,
+      8
+    ],
+    "jasper": [
+      -118.0814,
+      52.8734,
+      12
+    ],
+    "maligne-lake": [
+      -117.6445,
+      52.729,
+      12
+    ],
+    "miette-hot-springs": [
+      -117.766,
+      53.1287,
+      12
+    ],
+    "mount-robson": [
+      -119.1565,
+      53.111,
+      12
+    ],
+    "saskatchewan-river-crossing": [
+      -116.7479,
+      51.976,
+      12
+    ],
+    "valemount": [
+      -119.264,
+      52.831,
+      12
+    ]
+  },
+  "garminContextBounds": [
+    -119.69583923235167,
+    51.8906378267999,
+    -116.60968752207472,
+    53.571278563203386
+  ],
+  "garminFamilyId": 4867,
+  "garminFilename": "OpenBareMap-Canadian-Rockies-Jasper.img",
+  "garminPackageRevision": "2.0.1-trail-detail-r1",
+  "garminTileStartId": 48670001,
+  "garminUseSourceOutline": true,
+  "gridCRS": "EPSG:32611",
+  "gridExtent": [
+    320000,
+    530000,
+    5740000,
+    5940000
+  ],
+  "gridName": "WGS 84 / UTM 11N",
+  "gridSource": "utm-grid",
+  "id": "canadian-rockies-jasper",
+  "ignoreSourceHeaderBounds": true,
+  "inspectionNames": [
+    "Jasper",
+    "Hinton",
+    "Valemount"
+  ],
+  "label": "Jasper & Mount Robson",
+  "labelGlyphs": "ABCDEFGHIJKLMNOPQRSTUVWXYZ",
+  "mapVersion": "2.0.0",
+  "maxzoom": 14,
+  "minorWaterwayMinzoom": 10,
+  "minzoom": 4,
+  "name": "OpenBareMap Jasper & Mount Robson",
+  "nativeLanguage": "en",
+  "optionalBasemapLayers": [
+    "ferry",
+    "island_name",
+    "cycling_route",
+    "railway",
+    "station",
+    "hiking_route",
+    "boundary"
+  ],
+  "permanentIce": true,
+  "projectedCRS": "EPSG:32611",
+  "requireBogFeatures": false,
+  "sourceBaseOverrides": {
+    "alberta": "https://download.geofabrik.de/north-america/canada/alberta/",
+    "british-columbia": "https://download.geofabrik.de/north-america/canada/british-columbia/"
+  },
+  "sourceBaseURL": "https://download.geofabrik.de/north-america/canada/",
+  "sourceCacheRegion": "canadian-rockies",
+  "sourceDate": "2026-11-20",
+  "sourceSlugs": [
+    "alberta",
+    "british-columbia"
+  ],
+  "styleRevision": "2.0.0-canadian-rockies-jasper-r1",
+  "terrainAttribution": "Copernicus DEM GLO-30 \u00b7 European Union / ESA \u00b7 DLR / Airbus",
+  "terrainBounds": [
+    -120,
+    51,
+    -116,
+    54
+  ],
+  "terrainCacheRegion": "canadian-rockies",
+  "terrainNotice": "Jasper & Mount Robson elevation: Copernicus DEM GLO-30 Public (AWS 2021 release).\n\nproduced using Copernicus WorldDEM-30 \u00a9 DLR e.V. 2010-2014 and \u00a9 Airbus Defence and Space GmbH 2014-2018 provided under COPERNICUS by the European Union and ESA; all rights reserved\n\nThe organisations in charge of the Copernicus programme by law or by delegation do not incur any liability for any use of the Copernicus WorldDEM-30.\n\nLicense: https://dataspace.copernicus.eu/sites/default/files/media/files/2025-06/copernicus_contributing_mission_data_access_v2_cop_dem_licenses.pdf\nSource: https://registry.opendata.aws/copernicus-dem/\nVertical datum: EGM2008 orthometric metres. Native approximately 30 m cells are bilinearly resampled to point-aligned Int16 HGT for the shared terrain pipeline. Ocean-only cells absent from the official public inventory are zero.\n",
+  "terrainProvider": "copernicus-glo30",
+  "townlands": false,
+  "validationAnchors": {
+    "berg-lake": [
+      -119.1635,
+      53.1431
+    ],
+    "columbia-icefield": [
+      -117.2217,
+      52.2212
+    ],
+    "hinton": [
+      -117.5739,
+      53.4122
+    ],
+    "jasper": [
+      -118.0814,
+      52.8734
+    ],
+    "maligne-lake": [
+      -117.6445,
+      52.729
+    ],
+    "miette-hot-springs": [
+      -117.766,
+      53.1287
+    ],
+    "mount-robson": [
+      -119.1565,
+      53.111
+    ],
+    "saskatchewan-river-crossing": [
+      -116.7479,
+      51.976
+    ],
+    "valemount": [
+      -119.264,
+      52.831
+    ]
+  }
+}

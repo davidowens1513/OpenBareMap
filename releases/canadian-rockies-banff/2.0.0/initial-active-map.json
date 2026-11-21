@@ -1,0 +1,52 @@
+{
+  "contourIntervalMetres": 20,
+  "coverage": "Banff, Yoho and Kootenay national parks, Mount Assiniboine, Canmore, Golden and Radium Hot Springs, with Icefields Parkway coverage north to the Columbia Icefield.",
+  "datasets": {
+    "basemap": {
+      "bytes": 107393024,
+      "path": "releases/canadian-rockies-banff/2.0.0/maps/basemap.mbtiles",
+      "sha256": "637c195dfc1c330d2dbf1d5179c303bb158809abb383803e723b4f887208e60f",
+      "validation": {
+        "empty_tile_count": 97,
+        "logical_tiles_sha256": "2a46f34fb3cb6319ca6e1dbf72fb1a94c39a76f0e8c9446bb0204b965936bac9",
+        "tile_count": 20577
+      }
+    },
+    "grid": {
+      "bytes": 6533120,
+      "path": "releases/canadian-rockies-banff/2.0.0/maps/grid.mbtiles",
+      "sha256": "a090103872694f1b95f725f61d55b22c9eab1dfb549085895763991d0b4d5cd7",
+      "validation": {
+        "empty_tile_count": 0,
+        "logical_tiles_sha256": "3c4914efd97e4f8d24c23956b0b6a549e7001f6f4e493705d50c3324e15dccc8",
+        "tile_count": 20573
+      }
+    },
+    "hillshade": {
+      "bytes": 58474496,
+      "path": "releases/canadian-rockies-banff/2.0.0/maps/hillshade.mbtiles",
+      "sha256": "b63542b0b1d3be5d39725c2b5dd88fbb045cef005f0c30d30a08399c474024a3",
+      "validation": {
+        "empty_tile_count": 0,
+        "logical_tiles_sha256": "4ba3de3c22c131d49dbae2d5e7da99691ab62417255aa8a9c20d32969915786c",
+        "tile_count": 1404
+      }
+    },
+    "topography": {
+      "bytes": 343379968,
+      "path": "releases/canadian-rockies-banff/2.0.0/maps/topography.mbtiles",
+      "sha256": "07a81b7a250a6f3a4090210ad5c16b948953c99fc46ef0b3f5bb8b73e79adc40",
+      "validation": {
+        "empty_tile_count": 85447,
+        "logical_tiles_sha256": "1b9d5dff7c5b759fbd536508815bf275eb11813a9abeed30351a89bf28dc3414",
+        "tile_count": 111754
+      }
+    }
+  },
+  "format": "openbaremap-development-viewer-v1",
+  "localBorders": false,
+  "mapVersion": "2.0.0",
+  "region": "canadian-rockies-banff",
+  "storageRevision": "2.0.0-canadian-rockies-banff-r1",
+  "styleRevision": "2.0.0-canadian-rockies-banff-r1"
+}

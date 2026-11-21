@@ -1,0 +1,35 @@
+{
+  "bytes": 521559847,
+  "datasets": {
+    "basemap": {
+      "path": "maps/basemap.mbtiles",
+      "sha256": "637c195dfc1c330d2dbf1d5179c303bb158809abb383803e723b4f887208e60f"
+    },
+    "coast": {
+      "derived_from": "2f09f19bca6e3d06b098fd66ddf4ce6e27197dc32689cf4dc4470a9ea4c37799",
+      "maxzoom": 12,
+      "operation": "Preserve land-layer MVT bytes only through zoom 12; omit other layers.",
+      "path": "maps/coast.mbtiles",
+      "sha256": "f853afd4677ff2c658aea6cfdc2f749490b2f996712433d3fb84dc0b939834a6"
+    },
+    "grid": {
+      "path": "maps/grid.mbtiles",
+      "sha256": "a090103872694f1b95f725f61d55b22c9eab1dfb549085895763991d0b4d5cd7"
+    },
+    "hillshade": {
+      "path": "maps/hillshade.mbtiles",
+      "sha256": "b63542b0b1d3be5d39725c2b5dd88fbb045cef005f0c30d30a08399c474024a3"
+    },
+    "topography": {
+      "path": "maps/topography.mbtiles",
+      "sha256": "2f09f19bca6e3d06b098fd66ddf4ce6e27197dc32689cf4dc4470a9ea4c37799"
+    }
+  },
+  "instructionsSHA256": "a8ebc7c00286f6ae741165cf51742dfcda18e28436526a532bc5faccbfa99f4f",
+  "instructionsURL": "https://downloads.appsbyonzy.dev/OpenBareMap/canadian-rockies-banff/2.0.0/app-bundles-v1/ios/instructions.txt",
+  "localPath": "releases/canadian-rockies-banff/2.0.0/app-bundles-v1/ios/OpenBareMap-Banff,-Yoho-Kootenay-iOS-Bundle.zip",
+  "mapManifestSHA256": "35e749f3b6d1e64611afc3d67e475eff816bdaf5d1dec0243192cb9d13746334",
+  "r2Key": "OpenBareMap/canadian-rockies-banff/2.0.0/app-bundles-v1/ios/OpenBareMap-Banff,-Yoho-Kootenay-iOS-Bundle.zip",
+  "sha256": "b4ca0eeb425b9645d29c2fc426a9829247463c2d728421596ea3002cf99beebe",
+  "url": "https://downloads.appsbyonzy.dev/OpenBareMap/canadian-rockies-banff/2.0.0/app-bundles-v1/ios/OpenBareMap-Banff,-Yoho-Kootenay-iOS-Bundle.zip"
+}

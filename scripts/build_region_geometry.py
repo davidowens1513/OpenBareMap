@@ -5,7 +5,7 @@ import json
 from pathlib import Path
 import sys
 from openbaremap import ROOT, digest, write
-from regions import REGIONS, profile
+from regions import PERMANENT_ICE, REGIONS, profile, region_path
 from smooth_geometry import smooth_line, smooth_polygon_geometry
 sys.path.insert(0,str(ROOT/'work/python'))
 
@@ -34,13 +34,28 @@ def contours(source,destination):
     if not out.count:raise ValueError('No contours')
     return out.count
 
-def landcover(source,destination,bounds=None):
+def permanent_ice_class(tags):
+    if tags.get('seasonal') == 'yes' or tags.get('intermittent') == 'yes':
+        return None
+    natural = tags.get('natural')
+    if natural == 'snowfield':
+        return 'permanent_snow'
+    if natural == 'glacier':
+        glacier_type = tags.get('glacier:type')
+        if glacier_type == 'snowfield':
+            return 'permanent_snow'
+        if glacier_type != 'rock':
+            return 'glacier'
+    return None
+
+def landcover(source,destination,bounds=None,*,permanent_ice=False,ice_footprint=None):
     import osmium
     from shapely.geometry import shape,box
     extent=box(*bounds) if bounds else None
     out=Collection(destination);factory=osmium.geom.GeoJSONFactory()
     classes={'wood':'wood','forest':'wood','farm':'farmland','village_green':'grass','recreation_ground':'grass','heath':'heath','scrub':'scrub','grassland':'grass','meadow':'grass','grass':'grass','farmland':'farmland','wetland':'wetland','beach':'beach','sand':'sand','shingle':'shingle'}
     counts={'smoothed':0,'retained':0,'empty_source_areas':[]}
+    ice_counts = dict.fromkeys(PERMANENT_ICE, 0)
     class Handler(osmium.SimpleHandler):
         def area(self,a):
             tags=dict(a.tags);land=tags.get('landuse','');natural=tags.get('natural','');wetland=tags.get('wetland','')
@@ -48,6 +63,8 @@ def landcover(source,destination,bounds=None):
             if land=='peat_cutting':cl='peat_cutting'
             if natural in ('bare_rock','scree','shingle'):cl=natural
             if natural=='bog' or natural=='wetland' and wetland in ('bog','string_bog'):cl='bog'
+            if permanent_ice:
+                cl = permanent_ice_class(tags) or cl
             if not cl:return
             try:
                 original=json.loads(factory.create_multipolygon(a))
@@ -62,15 +79,23 @@ def landcover(source,destination,bounds=None):
                 return
             old=shape(original)
             if extent is not None and not extent.intersects(old):return
-            candidate=smooth_polygon_geometry(original,6)
-            new=shape(candidate)
-            if old.is_valid and new.is_valid and old.area and abs(new.area-old.area)/old.area<=.02:
-                geometry=candidate;counts['smoothed']+=1
-            else:geometry=original;counts['retained']+=1
+            geometry = original
+            if cl in ice_counts:
+                if ice_footprint is not None and not ice_footprint.intersects(old):
+                    return
+                ice_counts[cl] += 1
+            else:
+                candidate=smooth_polygon_geometry(original,6)
+                new=shape(candidate)
+                if old.is_valid and new.is_valid and old.area and abs(new.area-old.area)/old.area<=.02:
+                    geometry=candidate
+            counts['smoothed' if geometry is not original else 'retained'] += 1
             props={k.replace(':','_'):v for k,v in tags.items() if k in ('wetland','natural','landuse','name','name:en','name:cy','name:gd','name:es','name:fr','name:it','name:de','name:fo','name:no','name:nb','name:nn','name:se','official_name','short_name')};props['class']=cl
             out.add(geometry,props)
     Handler().apply_file(str(source),locations=True,idx='flex_mem');out.close()
     if not out.count:raise ValueError('No landcover')
+    if permanent_ice:
+        counts['permanentIce'] = ice_counts
     return {'features':out.count,**counts}
 
 def grid(region,destination):
@@ -93,11 +118,20 @@ def grid(region,destination):
 
 def build(region,topography):
     p=profile(region);dest=ROOT/'build'/(region+'-geometry');dest.mkdir(exist_ok=False)
-    from regions import region_path
     source=json.loads(region_path(region,'sources.lock.json').read_text())['osm'];osm=ROOT/source['path']
     if digest(osm)!=source['sha256']:raise ValueError('OSM source changed')
-    counts={'contours':contours(topography/'contours.geojson',dest/'contours.geojson'),'landcover':landcover(osm,dest/'landcover.geojson',p['bounds'] if p.get('clipBasemap') else None),'grid':grid(region,dest)}
-    write(dest/'geometry-report.json',{'region':region,'counts':counts,'osm':source,'contoursSourceSHA256':digest(topography/'contours.geojson'),'outputs':{f.name:digest(f) for f in dest.glob('*.geojson')},'builderSHA256':digest(Path(__file__)),'smootherSHA256':digest(Path(__file__).with_name('smooth_geometry.py'))})
+    ice_footprint = None
+    if p.get('permanentIce') and p.get('coverageBoundary'):
+        from shapely.geometry import shape
+        from shapely.ops import unary_union
+        from shapely.prepared import prep
+        coverage = json.loads(region_path(region,'coverage.geojson').read_text())
+        ice_footprint = prep(unary_union([shape(feature['geometry']) for feature in coverage['features']]))
+    counts={'contours':contours(topography/'contours.geojson',dest/'contours.geojson'),'landcover':landcover(osm,dest/'landcover.geojson',p['bounds'] if p.get('clipBasemap') else None,permanent_ice=p.get('permanentIce',False),ice_footprint=ice_footprint),'grid':grid(region,dest)}
+    report = {'region':region,'counts':counts,'osm':source,'contoursSourceSHA256':digest(topography/'contours.geojson'),'outputs':{f.name:digest(f) for f in dest.glob('*.geojson')},'builderSHA256':digest(Path(__file__)),'smootherSHA256':digest(Path(__file__).with_name('smooth_geometry.py'))}
+    if p.get('permanentIce'):
+        report['permanentIce'] = counts['landcover']['permanentIce']
+    write(dest/'geometry-report.json',report)
     print(json.dumps(counts),flush=True)
 
 if __name__=='__main__':

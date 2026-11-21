@@ -1,0 +1,20 @@
+{
+  "inputs": [
+    {
+      "path": "regions/canadian-rockies-kananaskis-waterton/garmin/inputs/contours.geojson.gz",
+      "sha256": "edaa5b9b207651d1bcc4fc5603de0bce140f1cce7de4fafcfd125e6f12d7d2cc",
+      "uncompressedSHA256": "28b377c89618546b803432638005f2116b9ced66df153862a3d67ca44e3d6f51"
+    },
+    {
+      "path": "regions/canadian-rockies-kananaskis-waterton/garmin/inputs/landcover.geojson.gz",
+      "sha256": "61d0e0afc16fa75000c988e7da13569c975a48e5ef7e25dc23891e147e345cf8",
+      "uncompressedSHA256": "63282ea2d37e37c1d6e4b89b717ec20e821badcde3d3c302e8b4b6be5bd18c1e"
+    },
+    {
+      "path": "regions/canadian-rockies-kananaskis-waterton/garmin/inputs/land.geojson.gz",
+      "sha256": "695757b30629a30b3858753f3a900866df90107960167bd8b7c19472429732f5",
+      "uncompressedSHA256": "07dbe33497bba5964933ad0f28b49dc5d54ba137103246bd35fe2ea6d95aca76"
+    }
+  ],
+  "region": "canadian-rockies-kananaskis-waterton"
+}

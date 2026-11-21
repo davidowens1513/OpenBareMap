@@ -10,6 +10,8 @@ The [US National Parks build and release guide](docs/regional-editions.md#us-nat
 
 The [Picos de Europa and High Tatras build and release guide](docs/regional-editions.md#picos-de-europa-and-high-tatras) covers the two separate mountain editions.
 
+The [Canadian Rockies build and release guide](docs/regional-editions.md#canadian-rockies) covers the Banff, Jasper and Kananaskis–Waterton editions.
+
 **All finished iOS, Android and Garmin downloads are hosted on Cloudflare R2, outside Git.** Use the direct links below; cloning this repository does not download these packages. See [file storage and restoration](#file-storage-and-restoration) for developer resources.
 
 Each iOS download contains the complete regional resource bundle, Swift loader, example view controller, dependency information and instructions. Each Android download contains the complete importable map ZIP, loader AAR and Kotlin source, an example Activity, dependency information and instructions. Both include checksums, legends and attribution. Install the MapLibre renderer through the dependency instructions supplied with the bundle.

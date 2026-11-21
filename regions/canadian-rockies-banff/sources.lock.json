@@ -1,0 +1,42 @@
+{
+  "accessed_utc": "2026-11-21T18:45:05.795668+00:00",
+  "inputs": [
+    {
+      "bytes": 352573632,
+      "path": "data/regions/canadian-rockies/alberta-261120.osm.pbf",
+      "replicationTimestamp": "2026-11-20T21:21:21Z",
+      "sha256": "68fabd849a1e5520b2f9c67aa9f2ffa38958b85899dc4b3a59da60e6a27b7e50",
+      "url": "https://download.geofabrik.de/north-america/canada/alberta/alberta-261120.osm.pbf"
+    },
+    {
+      "bytes": 1249592139,
+      "path": "data/regions/canadian-rockies/british-columbia-261120.osm.pbf",
+      "replicationTimestamp": "2026-11-20T21:21:21Z",
+      "sha256": "aef7151390073b8a944562f4b15bbdd8de73945428457644efc5f3113803bac8",
+      "url": "https://download.geofabrik.de/north-america/canada/british-columbia/british-columbia-261120.osm.pbf"
+    }
+  ],
+  "osm": {
+    "bytes": 41615017,
+    "operation": "Complete-feature bbox extraction with nested relation references, then libosmium sorted merge; duplicate OSM objects resolved by version",
+    "path": "data/regions/canadian-rockies-banff/canadian-rockies-banff-261120.osm.pbf",
+    "replicationTimestamp": "2026-11-20T21:21:21Z",
+    "sha256": "44d2121b362bd60eea144acefb5ff8fe69d9f4d9341271d36abad8e1480de1ce",
+    "snapshot_date": "2026-11-20",
+    "url": null
+  },
+  "polygons": [
+    {
+      "bytes": 14543,
+      "path": "data/regions/canadian-rockies-banff/alberta.poly",
+      "sha256": "73107224d9615f29b0c80b7b932c17a17fe18f523bba2014729f46a648024308",
+      "url": "https://download.geofabrik.de/north-america/canada/alberta/alberta.poly"
+    },
+    {
+      "bytes": 2671,
+      "path": "data/regions/canadian-rockies-banff/british-columbia.poly",
+      "sha256": "fce9475100adfe7030b6cad9a58759ff8c09473a78b339fe3452e240e976b408",
+      "url": "https://download.geofabrik.de/north-america/canada/british-columbia/british-columbia.poly"
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "builderSHA256": "df45d47a59e968508a89136d44d799aaf2bba52547b211e0dff68a5b0e0f6cfc",
+  "contextBounds": [
+    -119,
+    49,
+    -114,
+    54
+  ],
+  "note": "Contour payloads preserved exactly while extending land background outside edition coverage.",
+  "oldTopography": {
+    "bytes": 343379968,
+    "path": "releases/canadian-rockies-banff/2.0.0/maps/topography.mbtiles",
+    "sha256": "07a81b7a250a6f3a4090210ad5c16b948953c99fc46ef0b3f5bb8b73e79adc40",
+    "validation": {
+      "empty_tile_count": 85447,
+      "logical_tiles_sha256": "1b9d5dff7c5b759fbd536508815bf275eb11813a9abeed30351a89bf28dc3414",
+      "tile_count": 111754
+    }
+  },
+  "output": {
+    "bytes": 343138304,
+    "path": "releases/canadian-rockies-banff/2.0.0/maps/topography-context.mbtiles",
+    "sha256": "2f09f19bca6e3d06b098fd66ddf4ce6e27197dc32689cf4dc4470a9ea4c37799",
+    "validation": {
+      "empty_tile_count": 85447,
+      "logical_tiles_sha256": "1b9d5dff7c5b759fbd536508815bf275eb11813a9abeed30351a89bf28dc3414",
+      "tile_count": 111754
+    }
+  },
+  "replacement": {
+    "changed_tiles": 7102,
+    "path": "build/canadian-rockies-banff-coast-context/combined.mbtiles",
+    "replacement_feature_instances": 9228,
+    "sha256": "858dca23408ae23a5da4e802f17ff9fc7a1ccc368c046dce1b90171f4de9307b",
+    "unchanged_other_layers_sha256": "6462afecb449961410d2c3fa9c0e49b09ba043e2bf8481b1eea7e25b7ffa2a1f",
+    "validation": {
+      "empty_tile_count": 85447,
+      "logical_tiles_sha256": "1b9d5dff7c5b759fbd536508815bf275eb11813a9abeed30351a89bf28dc3414",
+      "tile_count": 111754
+    }
+  },
+  "source": {
+    "accessed_utc": "2026-10-25T12:59:16.751893+00:00",
+    "bytes": 928538219,
+    "http_headers_path": "data/land-polygons.headers",
+    "license": "ODbL 1.0; OpenStreetMap contributors",
+    "path": "data/land-polygons-split-4326.zip",
+    "sha256": "5911e273096f9585425a17c30a8a98785cc33ed2718ff88987768933b8a327f7",
+    "source_snapshot": "HTTP Last-Modified 2026-10-25T03:43:12Z; this is file publication, not a guaranteed OSM snapshot timestamp",
+    "url": "https://osmdata.openstreetmap.de/download/land-polygons-split-4326.zip"
+  }
+}

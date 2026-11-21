@@ -1,0 +1,174 @@
+{
+  "familyId": 4866,
+  "garminPackageRevision": "2.0.1-trail-detail-r1",
+  "inspection": {
+    "anchorLabels": {
+      "Banff": "Banff",
+      "Canmore": "Canmore",
+      "Golden": "Golden"
+    },
+    "bounds": [
+      -117.46590614318848,
+      50.44921875,
+      -115.0048828125,
+      52.38289833068848
+    ],
+    "coastPolygonsByLevel": {
+      "0": {
+        "0x32": 31,
+        "0x54": 49
+      },
+      "1": {
+        "0x32": 30,
+        "0x54": 49
+      },
+      "2": {
+        "0x32": 30,
+        "0x54": 49
+      },
+      "3": {
+        "0x32": 30,
+        "0x54": 49
+      },
+      "4": {
+        "0x32": 30,
+        "0x54": 49
+      }
+    },
+    "contoursByLevel": {
+      "0": {
+        "0x10009": 92,
+        "0x20": 98677,
+        "0x22": 24814
+      },
+      "1": {
+        "0x10009": 92,
+        "0x20": 75439,
+        "0x22": 19037
+      },
+      "2": {
+        "0x10009": 92,
+        "0x22": 17864
+      },
+      "3": {
+        "0x10008": 16630,
+        "0x10009": 91
+      },
+      "4": {
+        "0x10009": 82
+      }
+    },
+    "lineInstancesAtHighestDetail": {
+      "0x1": 143,
+      "0x10001": 268,
+      "0x10002": 186,
+      "0x10003": 23,
+      "0x10004": 287,
+      "0x10005": 237,
+      "0x10006": 324,
+      "0x10009": 92,
+      "0x1000a": 39,
+      "0x1000b": 22,
+      "0x14": 310,
+      "0x16": 6677,
+      "0x18": 32993,
+      "0x1c": 387,
+      "0x1e": 110,
+      "0x1f": 1097,
+      "0x2": 179,
+      "0x20": 98677,
+      "0x22": 24814,
+      "0x3": 189,
+      "0x4": 151,
+      "0x6": 2555,
+      "0x7": 3640,
+      "0xa": 2570
+    },
+    "logicalCombinedSHA256": "b55876fc368b047dc05a8f57701ddb60de487e6e03fc161c6af6b523d7a3cd46",
+    "logicalHashNote": "Internal file names, sizes and payloads; only CommonHeader creation-date bytes 14..20 are zeroed for hashing. IMG archive headers are excluded. Output bytes are never modified.",
+    "logicalTileSHA256": {
+      "48660001.img": "fa2c02bae99d0eda4929e54cd6759468714cd020aeada04e65bc930f8941e8d6",
+      "48660002.img": "19621dad74e8d6c7346e173b21340ec3694ccbecf2cf57bd5e11e633c50a355b",
+      "48660003.img": "aa8d991cba822e851885e5edf62cb3417a57f84fef556d990f0c2a4206ed3c1e",
+      "48660004.img": "634001c0b7c9aa8bedf59bb9fa087399ec458c246506109f9694472a6c32aeb6",
+      "48660005.img": "a83af11632f1b888b12efdcacf29328eb9ce6781fe3ababae3ff2276e4ffae91",
+      "48660006.img": "24d9bb9b9a71f1d1c9ab055a2ffc2770fea37dde0d45185b84da8c5234bee73c",
+      "48660007.img": "c3db38168102c91e4f991860d4f477e47e6546d3960623879ad63bb12d9ab01c",
+      "48660008.img": "d2efdd583b6d40484fc6c265a07356e26a37f9bc1a5404d21fd46923d3fed179",
+      "48660009.img": "b07bfd851f597df02aab0e0f47356ad351948880e46ada948831a1e27ea54f76",
+      "48660010.img": "7618ed4a13a80280fea37b480db8cf1851d4736a86db52a40746f3cc4c16e6a3",
+      "48660011.img": "cb2ff7228826b78d005d64f8ccc7599ba640b1e325d991f671bdde2657429a35",
+      "48660012.img": "5908288d5eb7bf67705ecfc6c93e2a27166ef601078f737f6f5a7cdad18f4069",
+      "48660013.img": "a2b016d40272ffd498b6909b0d0348f84d4de3a3197b1a619dbaada958c468f8",
+      "48660014.img": "7b14f9435bf01138fafec2be1a36967746fc889e9d04c71afdc7444c1a5e54dc",
+      "48660015.img": "5d0eef69cc9e6d98b0e6c5ba90719883ab0037a50f127265db4fed404ac3454e",
+      "48660016.img": "568ba42b50491e09d6e032bde2540f9d6dfe16742bec63d29e7f552869c55740",
+      "48660017.img": "3c5e539e42f0d69e94b411786bc009106ba363ced9959a81f75729c4dc146946",
+      "48660018.img": "6118db5f6244fee61b8cac684414de747cd798740def03df882469dd8671f77f",
+      "48660019.img": "7b688ac008a04ce28b895dcb75af635fb536fc0a2df1f8a774abd068b7ff3e24",
+      "48660020.img": "12107f366ee98bc50beef56d234a180ffd449e76a86f542dc8eef55d1d25f16b",
+      "48660021.img": "44b1b52075bae0aeaed9ac48844ce350e359663b66d7fd81781e66c1c5b1df93",
+      "48660022.img": "d5e88b02f98c0b960e07e2d36179e8adacc94e1ad0a9e3a0814bf5886b113823",
+      "48660023.img": "ae931011f5e254fc8b8e8c68fd98e8849a75ef23e28c4258dfe4be895f5eade4",
+      "48660024.img": "db4d15e0adddf7ce0f53b68bdaf025dc9c95b311d41a1e8c3ce733a614005d17",
+      "48660025.img": "51430bb2f06d4f8aff865d00aa516b2ddd43101df72c9139cbabbc53902265e8",
+      "48660026.img": "af634b5b2f26fa0454a4c5aafd9f28f768edffc26164a1932a2234200f5e3059",
+      "48660027.img": "f8b0f8135fa43dab5139542b3a6bcadda6914fb62a496e1b30c9b580f49a4449",
+      "48660028.img": "6de571bebc46a44bc4a39c33179c0ef717634b7256027218ea0167b94dbdbf9f",
+      "48660029.img": "51cb75f0cf900af89cdde5d8f8855d710e0aaaf1c08f85f6581bf0f06453c5fd"
+    },
+    "pointInstancesAtHighestDetail": {
+      "0x10001": 195,
+      "0x10002": 3292,
+      "0x10003": 588,
+      "0x10004": 2,
+      "0x10006": 1621,
+      "0x2f0b": 848,
+      "0x600": 4,
+      "0x650c": 9,
+      "0x6603": 578,
+      "0x6615": 106,
+      "0x6616": 1468,
+      "0x800": 11,
+      "0xb00": 8,
+      "0xc00": 112
+    },
+    "polygonInstancesAtHighestDetail": {
+      "0x10101": 7,
+      "0x10102": 411,
+      "0x10103": 15161,
+      "0x10104": 13839,
+      "0x10105": 11,
+      "0x10106": 259,
+      "0x10107": 36,
+      "0x10109": 14153,
+      "0x1010a": 8019,
+      "0x1010b": 899,
+      "0x1010c": 1263,
+      "0x13": 13562,
+      "0x32": 31,
+      "0x3c": 6820,
+      "0x50": 22754,
+      "0x51": 2215,
+      "0x54": 49
+    },
+    "routing": false,
+    "subfileBytes": {
+      "DEM": 30114413,
+      "LBL": 210525,
+      "MPS": 2697,
+      "RGN": 60983815,
+      "SRT": 912,
+      "TRE": 798267,
+      "TYP": 3113
+    },
+    "tiles": 29
+  },
+  "output": {
+    "bytes": 92368896,
+    "path": "regions/canadian-rockies-banff/garmin/dist/OpenBareMap-Canadian-Rockies-Banff.img",
+    "sha256": "f7d4d295b3d5ec37a63db1b63379a7c860af3b3c35a9dbb0bb86ddd5576e8afd"
+  },
+  "routing": false,
+  "status": "compiled and structurally inspected; hardware rendering pending"
+}
