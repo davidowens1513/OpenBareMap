@@ -4,7 +4,13 @@ const region=await fetch('./region.json').then(r=>r.json());
 const protocol=new pmtiles.Protocol();maplibregl.addProtocol('pmtiles',protocol.tile);
 const bounds=[[region.bounds[0],region.bounds[1]],[region.bounds[2],region.bounds[3]]];
 const status=document.getElementById('status');
-if(region.coverageBoundary){const note=document.createElement('span');note.className='coverage-note';note.textContent='Purple: national park · Dashed: 25 km coverage';document.querySelector('header').append(note);}
+if(region.coverageBoundary){
+  const note=document.createElement('span');
+  const coverageLabel=region.coverageBoundaryLabel||'25 km coverage limit';
+  note.className='coverage-note';
+  note.textContent=`Purple: national park · Dashed: ${coverageLabel}`;
+  document.querySelector('header').append(note);
+}
 const mapPadding=()=>({top:Math.max(155,document.querySelector('header').getBoundingClientRect().bottom+20),left:30,right:30,bottom:40});
 const map=new maplibregl.Map({container:'map',style:'./style.json',bounds,fitBoundsOptions:{padding:mapPadding()},hash:true,pitch:0,minPitch:0,maxPitch:0,pitchWithRotate:false,touchPitch:false,minZoom:4,maxZoom:18,renderWorldCopies:false,attributionControl:false});
 map.addControl(new maplibregl.NavigationControl(),'top-right');map.addControl(new maplibregl.ScaleControl({unit:'metric'}),'bottom-left');map.addControl(new maplibregl.AttributionControl({compact:false}),'bottom-right');
