@@ -2,6 +2,14 @@
 
 This document records the development of OpenBareMap and the structure of its build pipeline. The [main README](../README.md) describes the available map and platform packages.
 
+## 22 November 2026 · Glacier and snowfield review
+
+Glacier and permanent snowfield screening covered all 37 published editions.
+Pyrenees 2.0.2 was verified on R2 for iOS, Android and Garmin. High Tatras
+2.0.1 shows 14 mapped perennial snow and ice patches using the permanent
+snowfield symbol. Picos de Europa stayed on 2.0.0 after a review of the
+El Neverón outline. See the [regional release guide](regional-editions.md#permanent-ice-updates).
+
 ## US National Parks
 
 Nine editions cover ten parks. Each combines a dated Geofabrik OSM extract,

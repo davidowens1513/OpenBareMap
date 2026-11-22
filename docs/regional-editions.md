@@ -2,6 +2,16 @@
 
 ## Permanent ice updates
 
+As of 22 November 2026, all 37 published editions have been screened for
+glaciers and permanent snowfields. The locked OpenStreetMap extracts for 18
+editions contained no polygons with those tags. Sixteen editions show ice
+using OpenStreetMap outlines and classifications, including five Alpine,
+three Norwegian, three Canadian Rockies and five US national park editions.
+The other three received research-based follow-up reviews. The
+[Pyrenees](#pyrenees-ice-review) moved to 2.0.2, the
+[High Tatras](#snow-and-ice-review) moved to 2.0.1, and Picos de Europa
+stayed on 2.0.0.
+
 OpenBareMap 2.0.1 adds mapped glaciers and permanent snowfields to five US
 National Parks editions, all five Alpine editions, the three Norway editions
 and the Pyrenees. The map key distinguishes the two features. This release
@@ -24,6 +34,12 @@ to verify the collections, check preview byte ranges and update the online
 catalogues. Deploy the final website archive to the production Pages project.
 
 ### Pyrenees ice review
+
+The 2.0.2 iOS, Android and Garmin downloads are published and verified on
+Cloudflare R2. BareGPS Worldwide selects 2.0.2. The public preview keeps its
+2.0.1 address and uses the reviewed ice overlay. See the
+[mobile verification](../web-preview/verification/pyrenees-2.0.2-mobile-publication.json)
+and [Garmin verification](../web-preview/verification/pyrenees-2.0.2-garmin-r2.json).
 
 The 2.0.2 build uses 16 selected OpenStreetMap glacier polygons and 10
 perennial ice-patch polygons. Some glaciers have multiple polygons. The
