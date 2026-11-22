@@ -24,7 +24,7 @@
     "norway-north": "2.0.1",
     "norway-south": "2.0.1",
     "picos-de-europa": "2.0.0",
-    "pyrenees": "2.0.1",
+    "pyrenees": "2.0.2",
     "sardinia": "2.0.0",
     "scotland": "2.0.0",
     "sicily": "2.0.0",
@@ -1652,11 +1652,11 @@
     },
     "pyrenees": {
       "android": {
-        "bytes": 1736680516,
+        "bytes": 1736684857,
         "datasets": {
           "basemap": {
             "path": "maps/basemap.mbtiles",
-            "sha256": "f17a44abb01778d8ac9d684cea201e81c1a3fc49bcfb6a51b8d489e350fec980"
+            "sha256": "4ea9e2f503c515bf0babfafd87df2c652786628d02864d887ded2a4446006586"
           },
           "coast": {
             "derivedFrom": "4fc742fb3061ff00428c82037d904804397581617e1778eaebfb3b96623691bd",
@@ -1676,20 +1676,20 @@
             "sha256": "4fc742fb3061ff00428c82037d904804397581617e1778eaebfb3b96623691bd"
           }
         },
-        "instructionsSHA256": "e164a0ea5c66364680c03d349cc490822d4ce1a458eabfd4a3b53c4b500eca8c",
-        "instructionsURL": "https://downloads.appsbyonzy.dev/OpenBareMap/pyrenees/2.0.1/app-bundles-v1/android/instructions.txt",
-        "localPath": "releases/pyrenees/2.0.1/app-bundles-v1/android/OpenBareMap-Pyrenees-Android-Bundle.zip",
-        "mapManifestSHA256": "03edc5452bc9b5d9e0879a42047522d433a6e27b27b40acaa05a0393be59389c",
-        "r2Key": "OpenBareMap/pyrenees/2.0.1/app-bundles-v1/android/OpenBareMap-Pyrenees-Android-Bundle.zip",
-        "sha256": "6dabc9a0029c7e4f50ace5ab681f036158619798578b39742b59a931a23b704a",
-        "url": "https://downloads.appsbyonzy.dev/OpenBareMap/pyrenees/2.0.1/app-bundles-v1/android/OpenBareMap-Pyrenees-Android-Bundle.zip"
+        "instructionsSHA256": "2b19f9ad8746f6c96b68a314471ef8b53a78e7c6d2740721be865fe2ba971683",
+        "instructionsURL": "https://downloads.appsbyonzy.dev/OpenBareMap/pyrenees/2.0.2/app-bundles-v1/android/instructions.txt",
+        "localPath": "releases/pyrenees/2.0.2/app-bundles-v1/android/OpenBareMap-Pyrenees-Android-Bundle.zip",
+        "mapManifestSHA256": "3f4c608cb8ad6bb80b9b2b28390a16e718f932a1479bc568108e366aaa45c16f",
+        "r2Key": "OpenBareMap/pyrenees/2.0.2/app-bundles-v1/android/OpenBareMap-Pyrenees-Android-Bundle.zip",
+        "sha256": "e817354952dd15aff52981cdfda5bae809b53f789544c0a221f97fc2fbc53d0c",
+        "url": "https://downloads.appsbyonzy.dev/OpenBareMap/pyrenees/2.0.2/app-bundles-v1/android/OpenBareMap-Pyrenees-Android-Bundle.zip"
       },
       "ios": {
-        "bytes": 1736680965,
+        "bytes": 1736685306,
         "datasets": {
           "basemap": {
             "path": "maps/basemap.mbtiles",
-            "sha256": "f17a44abb01778d8ac9d684cea201e81c1a3fc49bcfb6a51b8d489e350fec980"
+            "sha256": "4ea9e2f503c515bf0babfafd87df2c652786628d02864d887ded2a4446006586"
           },
           "coast": {
             "derived_from": "4fc742fb3061ff00428c82037d904804397581617e1778eaebfb3b96623691bd",
@@ -1711,13 +1711,13 @@
             "sha256": "4fc742fb3061ff00428c82037d904804397581617e1778eaebfb3b96623691bd"
           }
         },
-        "instructionsSHA256": "90839e94ba23b58bb48d117b7b440b096112e19fbcedc6e020684d1319bd96d8",
-        "instructionsURL": "https://downloads.appsbyonzy.dev/OpenBareMap/pyrenees/2.0.1/app-bundles-v1/ios/instructions.txt",
-        "localPath": "releases/pyrenees/2.0.1/app-bundles-v1/ios/OpenBareMap-Pyrenees-iOS-Bundle.zip",
-        "mapManifestSHA256": "944a387223277cd253afdb80defb8fd1c0eab9efcf360d36810d62d41cee6527",
-        "r2Key": "OpenBareMap/pyrenees/2.0.1/app-bundles-v1/ios/OpenBareMap-Pyrenees-iOS-Bundle.zip",
-        "sha256": "96e349f01e706df0dc416a49b452dfb3b050baf19df8b4b536e800f32b7d1b43",
-        "url": "https://downloads.appsbyonzy.dev/OpenBareMap/pyrenees/2.0.1/app-bundles-v1/ios/OpenBareMap-Pyrenees-iOS-Bundle.zip"
+        "instructionsSHA256": "226ccd547752695e27e2ab4ecca84e09e45a5964a5aa6325fa779987d3fbbe14",
+        "instructionsURL": "https://downloads.appsbyonzy.dev/OpenBareMap/pyrenees/2.0.2/app-bundles-v1/ios/instructions.txt",
+        "localPath": "releases/pyrenees/2.0.2/app-bundles-v1/ios/OpenBareMap-Pyrenees-iOS-Bundle.zip",
+        "mapManifestSHA256": "0b212de19145dfb76faee17f6760ccc65ff21dfd66733bdc27b5e8c0fbc11e4b",
+        "r2Key": "OpenBareMap/pyrenees/2.0.2/app-bundles-v1/ios/OpenBareMap-Pyrenees-iOS-Bundle.zip",
+        "sha256": "7718c611a10e5ffa6f678c26ba55260054381d49a2a5d6dc970864734dd95229",
+        "url": "https://downloads.appsbyonzy.dev/OpenBareMap/pyrenees/2.0.2/app-bundles-v1/ios/OpenBareMap-Pyrenees-iOS-Bundle.zip"
       }
     },
     "sardinia": {
