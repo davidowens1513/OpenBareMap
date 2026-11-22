@@ -23,6 +23,31 @@ the updated nine-map US collection, then run it with `--publish-assets`
 to verify the collections, check preview byte ranges and update the online
 catalogues. Deploy the final website archive to the production Pages project.
 
+### Pyrenees ice review
+
+The 2.0.2 build uses 16 selected OpenStreetMap glacier polygons and 10
+perennial ice-patch polygons. Some glaciers have multiple polygons. The
+selection uses the 2023 survey and the 2024 OPCC inventory. It omits extinct
+or unverified features and uses the permanent snowfield symbol for identified
+ice patches such as La Paúl. The retained outlines are approximate. The 2026
+Aneto field survey reported four separate ice bodies.
+See the [2023 survey](https://doi.org/10.1007/s10113-024-02333-1),
+[OPCC inventory](https://criosfera.opcc-ctp.org/en/origin-of-the-data/), and
+[2026 Aneto field report](https://cadenaser.com/aragon/2026/11/04/el-glaciar-del-aneto-se-ha-fragmentado-en-cuatro-y-el-de-la-llardana-afronta-su-ultimo-ano-como-glaciar-radio-jaca-ser-pirineos/).
+
+Build the release from the accepted 2.0.1 Pyrenees edition. The pipeline
+preserves the original contours, hillshade, grid and non-ice basemap layers.
+
+```sh
+export PYTHONPATH=work/python
+python3 scripts/upgrade_permanent_ice.py --review-pyrenees pyrenees
+python3 scripts/stage_mountain_editions.py --pyrenees-ice-review
+python3 scripts/stage_mountain_editions.py --pyrenees-ice-review --publish-assets
+```
+
+Deploy `work/pyrenees-ice-review/publication/appsbyonzy-pyrenees-ice-review.zip`
+to the production Pages project after the public checks pass.
+
 ## Canadian Rockies
 
 Three editions use park footprints and buffered approaches. Banff and Jasper

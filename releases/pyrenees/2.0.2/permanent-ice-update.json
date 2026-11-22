@@ -1,0 +1,48 @@
+{
+  "iceExtraction": {
+    "geometrySHA256": "dab3960a286540547e4bdd41476cfa651de576d70cc0ce97d7be089225ffbc54",
+    "permanentIce": {
+      "glacier": 16,
+      "permanent_snow": 10
+    },
+    "region": "pyrenees",
+    "sourceGeometrySHA256": "7f9041de62be310df21eb1014772604ad69305872138b159ce17b5fff659d371",
+    "sourcePolygons": 149,
+    "sourceSHA256": "4143a1bae031da426b5e80a73561d9ce5941dbb67b439263e71c11c06558c0db"
+  },
+  "mapVersion": "2.0.2",
+  "preservedBasemapLayersSHA256": "c0f3218e20f3139128bd3588ddcc7e0de9b33849cd1d823da610b3f9972afd3a",
+  "preservedTerrain": {
+    "grid": {
+      "bytes": 15597568,
+      "path": "releases/pyrenees/2.0.0/maps/grid.mbtiles",
+      "sha256": "2403c0d15c957a8043452ca705cec54f0c22421e09a5332d6d30bd116215dfbc",
+      "validation": {
+        "empty_tile_count": 0,
+        "logical_tiles_sha256": "365fc567965cb8b75fc669042ad92c3292c457b5d5755d0d0b30dd3fc9d10500",
+        "tile_count": 43368
+      }
+    },
+    "hillshade": {
+      "bytes": 170639360,
+      "path": "releases/pyrenees/2.0.0/maps/hillshade.mbtiles",
+      "sha256": "22881414cea150df4bd80e0a276bf5a4fe9b66202fdbd01a659790304689e8bc",
+      "validation": {
+        "empty_tile_count": 0,
+        "logical_tiles_sha256": "506d2a20eb2ab4f09caaa73cd19ecc6aecdabe502a17a23369f572f1e59c236f",
+        "tile_count": 3851
+      }
+    },
+    "topography": {
+      "bytes": 506888192,
+      "path": "releases/pyrenees/2.0.0/maps/topography-context-r4.mbtiles",
+      "sha256": "4fc742fb3061ff00428c82037d904804397581617e1778eaebfb3b96623691bd",
+      "validation": {
+        "empty_tile_count": 15098,
+        "logical_tiles_sha256": "6008e6d3f5c9ef200df8bbfce9265ce75cedb8100877573a80fca4b7254b5b4f",
+        "tile_count": 66995
+      }
+    }
+  },
+  "previousMapVersion": "2.0.1"
+}

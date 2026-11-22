@@ -116024,10 +116024,10 @@
     "openbaremap:version": "2.0.0",
     "version": "0.4.0"
   },
-  "name": "OpenBareMap Pyrenees 2.0.1",
+  "name": "OpenBareMap Pyrenees 2.0.2",
   "sources": {
     "basemap": {
-      "attribution": "Glacier outlines are from OpenStreetMap. The 2025 Aneto survey mapped a smaller active glacier.",
+      "attribution": "\u00a9 <a href=\"https://www.openstreetmap.org/copyright\">OpenStreetMap contributors</a> \u00b7 Selected OpenStreetMap ice outlines are approximate and can overstate current extent. Classification uses the 2023 survey and OPCC 2024 inventory. In 2026 the Aneto survey reported four separate ice bodies.",
       "type": "vector",
       "url": "../tiles.json"
     },

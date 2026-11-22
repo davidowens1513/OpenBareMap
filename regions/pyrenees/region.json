@@ -104,8 +104,8 @@
     43.9
   ],
   "garminFamilyId": 4836,
-  "garminFilename": "OpenBareMap-Pyrenees-Glaciers.img",
-  "garminPackageRevision": "2.0.1-glacier-r1",
+  "garminFilename": "OpenBareMap-Pyrenees-Ice-Review.img",
+  "garminPackageRevision": "2.0.2-ice-review-r1",
   "garminTileStartId": 48360001,
   "gridCRS": "EPSG:25831",
   "gridExtent": [
@@ -124,7 +124,7 @@
     "Andorra la Vella"
   ],
   "label": "Pyrenees \u00b7 France, Spain & Andorra",
-  "mapVersion": "2.0.1",
+  "mapVersion": "2.0.2",
   "maxzoom": 14,
   "minorWaterwayMinzoom": 10,
   "minzoom": 4,
@@ -132,7 +132,7 @@
   "nativeLanguage": "fr",
   "permanentIce": true,
   "permanentIceLayer": "permanent_ice",
-  "permanentIceSourceNote": "Glacier outlines are from OpenStreetMap. The 2025 Aneto survey mapped a smaller active glacier.",
+  "permanentIceSourceNote": "Selected OpenStreetMap ice outlines are approximate and can overstate current extent. Classification uses the 2023 survey and OPCC 2024 inventory. In 2026 the Aneto survey reported four separate ice bodies.",
   "projectedCRS": "EPSG:25831",
   "sourceBaseOverrides": {
     "andorra": "https://download.geofabrik.de/europe/",
@@ -153,7 +153,7 @@
     "pais-vasco",
     "andorra"
   ],
-  "styleRevision": "2.0.1-glacier-r1",
+  "styleRevision": "2.0.2-ice-review-r1",
   "terrainBounds": [
     -3,
     41,

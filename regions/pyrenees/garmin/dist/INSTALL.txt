@@ -1,8 +1,8 @@
-OpenBareMap Pyrenees · France, Spain & Andorra 2.0.1 — Garmin Map (2.0.1-glacier-r1)
+OpenBareMap Pyrenees · France, Spain & Andorra 2.0.2 — Garmin Map (2.0.2-ice-review-r1)
 For compatible Garmin mapping products
 
 1. Contents
-OpenBareMap-Pyrenees-Glaciers.img contains the regional display-only topographic map,
+OpenBareMap-Pyrenees-Ice-Review.img contains the regional display-only topographic map,
 20-metre contours, native elevation data, land-cover styling and place names.
 Paths, tracks (including farm/forest access tracks) and walking routes share a
 4-pixel dashed stroke and the same close-detail visibility threshold. Green
@@ -16,7 +16,7 @@ OpenBareMap regions. Its regional background is confined to the published
 coverage footprint, so neighbouring regions can remain enabled together.
 It provides no turn-by-turn routing.
 
-Glacier outlines are from OpenStreetMap. The 2025 Aneto survey mapped a smaller active glacier.
+Selected OpenStreetMap ice outlines are approximate and can overstate current extent. Classification uses the 2023 survey and OPCC 2024 inventory. In 2026 the Aneto survey reported four separate ice bodies.
 
 2. Requirements
 Use a Garmin mapping product that accepts custom .img maps. Check its manual
@@ -25,8 +25,8 @@ there is enough free storage for the complete download. Keep its original map
 files and your personal data intact.
 
 3. Installation
-Download OpenBareMap-Pyrenees-Glaciers.img and verify its SHA-256 against:
-https://downloads.appsbyonzy.dev/Garmin/pyrenees/2.0.1-glacier-r1/SHA256SUMS.txt
+Download OpenBareMap-Pyrenees-Ice-Review.img and verify its SHA-256 against:
+https://downloads.appsbyonzy.dev/Garmin/pyrenees/2.0.2-ice-review-r1/SHA256SUMS.txt
 Place the complete .img file in the Garmin map folder on supported internal
 storage or removable media, following your product's manual. Retain the supplied
 filename. Remove only superseded copies of this same OpenBareMap region; do not
@@ -46,9 +46,9 @@ only the conflicting imagery layer and retain a backup. Rendering and available 
 5. Attribution and distribution
 OpenStreetMap-derived data is distributed under ODbL 1.0. Preserve the map and
 terrain notices when redistributing it:
-https://downloads.appsbyonzy.dev/Garmin/pyrenees/2.0.1-glacier-r1/ATTRIBUTION.txt
-https://downloads.appsbyonzy.dev/Garmin/pyrenees/2.0.1-glacier-r1/terrain-attribution.md
-https://downloads.appsbyonzy.dev/Garmin/pyrenees/2.0.1-glacier-r1/terrain-data-sources.md
+https://downloads.appsbyonzy.dev/Garmin/pyrenees/2.0.2-ice-review-r1/ATTRIBUTION.txt
+https://downloads.appsbyonzy.dev/Garmin/pyrenees/2.0.2-ice-review-r1/terrain-attribution.md
+https://downloads.appsbyonzy.dev/Garmin/pyrenees/2.0.2-ice-review-r1/terrain-data-sources.md
 
 6. Compatibility and support
 The Garmin rendering uses native fonts, symbols and detail levels. Its appearance

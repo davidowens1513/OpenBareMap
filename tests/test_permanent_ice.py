@@ -1,4 +1,7 @@
+import gzip
+import json
 import sys
+import tempfile
 import unittest
 from pathlib import Path
 
@@ -6,10 +9,23 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / 'scripts'))
 
 from build_region_geometry import permanent_ice_class
+from garmin.prepare_inputs import features as garmin_features
 from regions import CANADIAN_ROCKIES_REGIONS, PERMANENT_ICE, region_style
 
 
 class PermanentIceTests(unittest.TestCase):
+    def test_garmin_reads_formatted_permanent_ice_geojson(self):
+        polygons = [{
+            'type': 'Feature',
+            'geometry': {'type': 'Polygon', 'coordinates': [[[0, 0], [1, 0], [0, 1], [0, 0]]]},
+            'properties': {'class': kind},
+        } for kind in PERMANENT_ICE]
+        with tempfile.TemporaryDirectory() as directory:
+            path = Path(directory) / 'permanent-ice.geojson.gz'
+            with gzip.open(path, 'wt') as stream:
+                json.dump({'type': 'FeatureCollection', 'features': polygons}, stream, indent=2, sort_keys=True)
+            self.assertEqual(list(garmin_features(path)), polygons)
+
     def test_maps_only_permanent_glaciers_and_snowfields(self):
         for tags, expected in [
             ({'natural': 'glacier'}, 'glacier'),

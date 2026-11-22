@@ -69,13 +69,13 @@ def extract(region):
                        'geometrySHA256': digest(result), 'permanentIce': counts['permanentIce']})
 
 
-def add_ice_layer(ice, bounds, original, target, directory):
+def add_ice_layer(ice, bounds, original, target, directory, version=VERSION):
     config = {'layers': {LAYER: {'minzoom': 4, 'maxzoom': 14, 'source': str(ice),
                                   'source_columns': ['class', 'name', 'name_en'],
                                   'simplify_below': 14, 'simplify_level': 0.000008, 'simplify_ratio': 2}},
               'settings': {'minzoom': 4, 'maxzoom': 14, 'basezoom': 14, 'bounding_box': bounds,
                            'include_ids': False, 'compress': 'gzip', 'name': 'OpenBareMap permanent ice',
-                           'description': 'Mapped glacier and permanent snowfield polygons', 'version': VERSION}}
+                           'description': 'Mapped glacier and permanent snowfield polygons', 'version': version}}
     config_file = directory / 'tilemaker.json'
     write(config_file, config)
     process = directory / 'process.lua'
@@ -94,11 +94,10 @@ def add_ice_layer(ice, bounds, original, target, directory):
     with closing(sqlite3.connect(tiles)) as source, closing(sqlite3.connect(target)) as output:
         added = json.loads(source.execute("SELECT value FROM metadata WHERE name='json'").fetchone()[0])
         schema = json.loads(output.execute("SELECT value FROM metadata WHERE name='json'").fetchone()[0])
-        if any(layer['id'] == LAYER for layer in schema['vector_layers']):
-            raise ValueError('Original basemap already advertises a permanent ice overlay')
+        schema['vector_layers'] = [layer for layer in schema['vector_layers'] if layer['id'] != LAYER]
         schema['vector_layers'].extend(added['vector_layers'])
         output.execute("UPDATE metadata SET value=? WHERE name='json'", (json.dumps(schema),))
-        output.execute("UPDATE metadata SET value=? WHERE name='version'", (VERSION,))
+        output.execute("UPDATE metadata SET value=? WHERE name='version'", (version,))
         output.commit()
     return report['unchanged_other_layers_sha256']
 
@@ -120,7 +119,10 @@ def preserve_inputs(region, prior, geometry):
         for item in inputs['inputs']:
             if digest(ROOT / item['path']) != item['sha256']:
                 raise ValueError('Prior Garmin input differs from locked build')
-        inputs['inputs'].append(compress(geometry / 'ice.geojson', garmin / 'inputs/permanent-ice.geojson.gz'))
+        ice_input = garmin / 'inputs/permanent-ice.geojson.gz'
+        inputs['inputs'] = [item for item in inputs['inputs'] if ROOT / item['path'] != ice_input]
+        ice_input.unlink(missing_ok=True)  # Leave the archived edition's hard link untouched.
+        inputs['inputs'].append(compress(geometry / 'ice.geojson', ice_input))
         write(lock, inputs)
     dist = garmin / 'dist'
     dist.mkdir(exist_ok=True)
@@ -130,12 +132,12 @@ def preserve_inputs(region, prior, geometry):
             os.link(old_image, target)
 
 
-def prepare(region):
+def prepare(region, *, version=VERSION, reviewed_pyrenees=False):
     edition = region_path(region, '')
     pending = WORK / 'geometry' / region
     backup = WORK / 'previous' / region
     backup.mkdir(parents=True, exist_ok=True)
-    release = ROOT / 'releases' / region / VERSION
+    release = ROOT / 'releases' / region / version
     report_path = release / 'permanent-ice-update.json'
     if report_path.is_file():
         return
@@ -147,8 +149,9 @@ def prepare(region):
             shutil.copy2(source, saved)
     old = json.loads((backup / 'active-map.json').read_text())
     settings = json.loads((backup / 'region.json').read_text())
-    if old['mapVersion'] != '2.0.0' or settings['mapVersion'] != old['mapVersion']:
-        raise ValueError('Expected the accepted 2.0.0 inputs')
+    prior_version = VERSION if reviewed_pyrenees else '2.0.0'
+    if old['mapVersion'] != prior_version or settings['mapVersion'] != old['mapVersion']:
+        raise ValueError(f'Expected the accepted {prior_version} inputs')
     locked = json.loads((edition / 'sources.lock.json').read_text())['osm']
     extract(region)
     ice = json.loads((pending / 'ice.json').read_text())
@@ -169,7 +172,7 @@ def prepare(region):
     if not dataset_record.exists():
         new = pending / 'basemap-building.mbtiles'
         old_base = ROOT / old['datasets']['basemap']['path']
-        checksum = add_ice_layer(pending / 'ice.geojson', settings['bounds'], old_base, new, pending)
+        checksum = add_ice_layer(pending / 'ice.geojson', settings['bounds'], old_base, new, pending, version)
         new.replace(target)
         write(dataset_record, {'basemap': record_output(target), 'unchangedBaseLayersSHA256': checksum})
     record = json.loads(dataset_record.read_text())
@@ -186,28 +189,34 @@ def prepare(region):
             original.rename(prior)
     preserve_inputs(region, backup / 'garmin', geometry)
     old_name = Path(json.loads((backup / 'garmin/build-report.json').read_text())['output']['path']).stem
-    settings.update(mapVersion=VERSION, permanentIce=True, permanentIceLayer=LAYER, styleRevision=REVISION,
+    settings.update(mapVersion=version, permanentIce=True, permanentIceLayer=LAYER, styleRevision=REVISION,
                     garminPackageRevision=REVISION, garminFilename=old_name + '-Glaciers.img')
     if region == 'pyrenees':
         settings['permanentIceSourceNote'] = PYRENEES_SOURCE_NOTE
+    if reviewed_pyrenees:
+        from review_pyrenees_ice import ATTRIBUTION
+
+        revision = version + '-ice-review-r1'
+        settings.update(permanentIceSourceNote=ATTRIBUTION, styleRevision=revision, garminPackageRevision=revision,
+                        garminFilename=old_name.removesuffix('-Glaciers') + '-Ice-Review.img')
     if region == 'high-tatras':
         settings.update(permanentIceSourceNote=TATRAS_SOURCE_NOTE, glaciersAsSnowfields=True, styleRevision=VERSION + '-snowfields-r1',
                         garminFilename=old_name + '-Snowfields.img',
                         garminPackageRevision=VERSION + '-snowfields-r1')
     write(profile_path, settings)
-    selected = dict(old, mapVersion=VERSION, storageRevision=settings['styleRevision'], styleRevision=settings['styleRevision'],
+    selected = dict(old, mapVersion=version, storageRevision=settings['styleRevision'], styleRevision=settings['styleRevision'],
                     datasets=dict(old['datasets'], basemap=record['basemap']))
     write(active_path, selected)
     write(edition / 'style.json', region_style(region))
-    write(report_path, {'previousMapVersion': old['mapVersion'], 'mapVersion': VERSION,
+    write(report_path, {'previousMapVersion': old['mapVersion'], 'mapVersion': version,
                         'preservedTerrain': {name: old['datasets'][name] for name in ('topography', 'hillshade', 'grid')},
                         'preservedBasemapLayersSHA256': record['unchangedBaseLayersSHA256'], 'iceExtraction': ice})
 
 
-def build(region):
-    prepare(region)
+def build(region, *, version=VERSION, reviewed_pyrenees=False):
+    prepare(region, version=version, reviewed_pyrenees=reviewed_pyrenees)
     edition = region_path(region, '')
-    release = ROOT / 'releases' / region / VERSION
+    release = ROOT / 'releases' / region / version
     if not (edition / 'legend/legend-manifest.json').exists():
         run('scripts/build_app_legend.py', '--region', region)
     for platform, script in [('ios', 'ios/build_bundle.py'), ('android', 'android/build_package.py')]:
@@ -225,7 +234,7 @@ def build(region):
         run('scripts/build_app_distribution.py', '--regions', region, '--output', products / 'kits',
             '--catalog', products / 'catalog.json')
     if not (products / 'preview/manifest.json').exists():
-        origin = f'https://downloads.appsbyonzy.dev/OpenBareMap/{region}/{VERSION}/preview'
+        origin = f'https://downloads.appsbyonzy.dev/OpenBareMap/{region}/{version}/preview'
         run('scripts/build_web_previews.py', '--regions', region, '--output', products / 'preview', '--origin', origin,
             '--cached-preview', 'work/canadian-rockies-banff-release/preview')
     print(region, 'versioned permanent ice release ready for staging', flush=True)
@@ -234,7 +243,25 @@ def build(region):
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--extract-only', action='store_true')
+    parser.add_argument('--review-pyrenees', action='store_true')
     parser.add_argument('regions', nargs='+', choices=BUILD_REGIONS)
     arguments = parser.parse_args()
+    if arguments.review_pyrenees:
+        from review_pyrenees_ice import review
+
+        if arguments.regions != ['pyrenees'] or arguments.extract_only:
+            parser.error('--review-pyrenees requires pyrenees and a full build')
+        extract('pyrenees')
+        original = WORK / 'geometry/pyrenees'
+        locked = json.loads((original / 'ice.json').read_text())
+        if digest(original / 'ice.geojson') != locked['geometrySHA256']:
+            raise ValueError('Original Pyrenees ice geometry does not match the checkpoint')
+        WORK = ROOT / 'work/pyrenees-ice-review'
+        reviewed = WORK / 'geometry/pyrenees'
+        reviewed.mkdir(parents=True, exist_ok=True)
+        if not (reviewed / 'ice.json').exists():
+            write(reviewed / 'ice.json', {**locked, **review(original / 'ice.geojson', reviewed / 'ice.geojson')})
+        build('pyrenees', version='2.0.2', reviewed_pyrenees=True)
+        sys.exit()
     for region in arguments.regions:
         (extract if arguments.extract_only else build)(region)

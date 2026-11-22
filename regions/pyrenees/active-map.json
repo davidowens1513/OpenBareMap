@@ -3,12 +3,12 @@
   "coverage": "Full Pyrenees from Atlantic to Mediterranean, including Bayonne, French and Spanish slopes and Andorra; bounds 2.2\u00b0W\u20133.4\u00b0E, 41.9\u00b0N\u201343.9\u00b0N. Complete OSM features retained at the edge.",
   "datasets": {
     "basemap": {
-      "bytes": 1036976128,
-      "path": "releases/pyrenees/2.0.1/maps/basemap.mbtiles",
-      "sha256": "f17a44abb01778d8ac9d684cea201e81c1a3fc49bcfb6a51b8d489e350fec980",
+      "bytes": 1036980224,
+      "path": "releases/pyrenees/2.0.2/maps/basemap.mbtiles",
+      "sha256": "4ea9e2f503c515bf0babfafd87df2c652786628d02864d887ded2a4446006586",
       "validation": {
         "empty_tile_count": 31,
-        "logical_tiles_sha256": "6a5393fd74a4d30c007defeb347c947077550e75c071768edda470864447d6c6",
+        "logical_tiles_sha256": "809361a47e2bfaa190e64ca4e5e3a32ee3426a407dd47db9a63abc1f6f1e7541",
         "tile_count": 40490
       }
     },
@@ -45,8 +45,8 @@
   },
   "format": "openbaremap-development-viewer-v1",
   "localBorders": false,
-  "mapVersion": "2.0.1",
+  "mapVersion": "2.0.2",
   "region": "pyrenees",
-  "storageRevision": "2.0.1-glacier-r1",
-  "styleRevision": "2.0.1-glacier-r1"
+  "storageRevision": "2.0.2-ice-review-r1",
+  "styleRevision": "2.0.2-ice-review-r1"
 }

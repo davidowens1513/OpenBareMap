@@ -51,6 +51,32 @@ def render_snowfields_homepage(website, entries, _downloads, _count):
     return page
 
 
+def render_pyrenees_ice_review(website, entries, _downloads, _count):
+    region = 'pyrenees'
+    page = website.read_text()
+    previous_preview = f'{PUBLIC}OpenBareMap/{region}/2.0.1/preview/{region}/index.html'
+    links = [(previous_preview, preview_url(region))]
+    for platform, latest in entries[region].items():
+        target, guide = latest['url'], latest['instructionsURL']
+        if platform == 'garmin':
+            old_prefix = f'{PUBLIC}Garmin/{region}/2.0.1-glacier-r1/'
+            old_target, old_guide = old_prefix + 'OpenBareMap-Pyrenees-Glaciers.img', old_prefix + 'instructions.txt'
+        else:
+            old_target, old_guide = (item.replace('/2.0.2/', '/2.0.1/', 1) for item in (target, guide))
+        links.extend(((old_target, target), (old_guide, guide)))
+    for old, new in links:
+        before, after = (f'href="{escape(url, quote=True)}"' for url in (old, new))
+        if '/Garmin/' in old and before not in page:
+            filename = Path(new).name
+            before = ('href="https://github.com/davidowens1513/OpenBareMap/releases/download/'
+                      f'pyrenees-garmin-2.0.2/{filename}"')
+        if page.count(before) == 1:
+            page = page.replace(before, after, 1)
+        elif page.count(after) != 1:
+            raise ValueError(f'Missing or duplicate Pyrenees website link: {old}')
+    return page
+
+
 def render_homepage(website, entries, _downloads, count):
 
     page = website.read_text()
@@ -174,25 +200,38 @@ def stage(output, website, *, regions=REGIONS, render=render_homepage, archive=A
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--publish-assets', action='store_true')
-    parser.add_argument('--tatras-snowfields', action='store_true')
+    edition = parser.add_mutually_exclusive_group()
+    edition.add_argument('--tatras-snowfields', action='store_true')
+    edition.add_argument('--pyrenees-ice-review', action='store_true')
     args = parser.parse_args()
     output = ROOT / 'work/picos-tatras-publication'
     website = ROOT / 'work/AppsByOnzy-Website/site/index.html'
-    if args.tatras_snowfields:
-        from upgrade_permanent_ice import WORK
+    if args.tatras_snowfields or args.pyrenees_ice_review:
+        if args.pyrenees_ice_review:
+            region = 'pyrenees'
+            work = ROOT / 'work/pyrenees-ice-review'
+            output = work / 'publication'
+            render = render_pyrenees_ice_review
+            release = 'pyrenees-ice-review'
+        else:
+            from upgrade_permanent_ice import WORK
 
-        region = 'high-tatras'
+            region = 'high-tatras'
+            work = WORK
+            output = work / 'high-tatras-publication'
+            render = render_snowfields_homepage
+            release = 'high-tatras-snowfields'
         regions = (region,)
-        output = WORK / 'high-tatras-publication'
         if args.publish_assets:
-            publish(output, website, regions=regions, render_homepage=render_snowfields_homepage,
-                    preview_manifests={'../high-tatras/preview/manifest.json': 'high-tatras-snowfields-manifest.json'})
+            publish(output, website, regions=regions, render_homepage=render,
+                    preview_manifests={f'../{region}/preview/manifest.json': f'{release}-manifest.json'},
+                    upload_workers=6)
         else:
             output.mkdir(parents=True, exist_ok=True)
             image = profile(region)['garminFilename']
             region_path(region, 'garmin/dist/INSTALL.txt').write_text(garmin_instructions(region, image))
-            stage(output, website, regions=regions, render=render_snowfields_homepage,
-                  archive='appsbyonzy-high-tatras-snowfields.zip', products_for=lambda edition: WORK / edition,
+            stage(output, website, regions=regions, render=render,
+                  archive=f'appsbyonzy-{release}.zip', products_for=lambda edition: work / edition,
                   version_garmin=True)
     elif args.publish_assets:
         manifests = {f'../{region}-release/preview/manifest.json': f'{region}-manifest.json' for region in REGIONS}

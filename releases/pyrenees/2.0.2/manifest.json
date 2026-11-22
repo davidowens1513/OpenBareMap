@@ -1,0 +1,105 @@
+{
+  "acceptance": "Automated checks only; see validation and visual-review records for actual reviewed scope.",
+  "coverage": "Full Pyrenees from Atlantic to Mediterranean, including Bayonne, French and Spanish slopes and Andorra; bounds 2.2\u00b0W\u20133.4\u00b0E, 41.9\u00b0N\u201343.9\u00b0N. Complete OSM features retained at the edge.",
+  "datasets": {
+    "basemap": {
+      "bytes": 1036980224,
+      "path": "releases/pyrenees/2.0.2/maps/basemap.mbtiles",
+      "sha256": "4ea9e2f503c515bf0babfafd87df2c652786628d02864d887ded2a4446006586",
+      "validation": {
+        "empty_tile_count": 31,
+        "logical_tiles_sha256": "809361a47e2bfaa190e64ca4e5e3a32ee3426a407dd47db9a63abc1f6f1e7541",
+        "tile_count": 40490
+      }
+    },
+    "grid": {
+      "bytes": 15597568,
+      "path": "releases/pyrenees/2.0.0/maps/grid.mbtiles",
+      "sha256": "2403c0d15c957a8043452ca705cec54f0c22421e09a5332d6d30bd116215dfbc",
+      "validation": {
+        "empty_tile_count": 0,
+        "logical_tiles_sha256": "365fc567965cb8b75fc669042ad92c3292c457b5d5755d0d0b30dd3fc9d10500",
+        "tile_count": 43368
+      }
+    },
+    "hillshade": {
+      "bytes": 170639360,
+      "path": "releases/pyrenees/2.0.0/maps/hillshade.mbtiles",
+      "sha256": "22881414cea150df4bd80e0a276bf5a4fe9b66202fdbd01a659790304689e8bc",
+      "validation": {
+        "empty_tile_count": 0,
+        "logical_tiles_sha256": "506d2a20eb2ab4f09caaa73cd19ecc6aecdabe502a17a23369f572f1e59c236f",
+        "tile_count": 3851
+      }
+    },
+    "topography": {
+      "bytes": 506888192,
+      "path": "releases/pyrenees/2.0.0/maps/topography-context-r4.mbtiles",
+      "sha256": "4fc742fb3061ff00428c82037d904804397581617e1778eaebfb3b96623691bd",
+      "validation": {
+        "empty_tile_count": 15098,
+        "logical_tiles_sha256": "6008e6d3f5c9ef200df8bbfce9265ce75cedb8100877573a80fca4b7254b5b4f",
+        "tile_count": 66995
+      }
+    }
+  },
+  "garmin": {
+    "bytes": 422281216,
+    "path": "regions/pyrenees/garmin/dist/OpenBareMap-Pyrenees-Ice-Review.img",
+    "sha256": "fd3729a25fb4dc081db9d06f08617ad69e71e291eef33f69741c0c4dd82359a8"
+  },
+  "geometryReport": {
+    "path": "releases/pyrenees/2.0.2/build-records/pyrenees-geometry/geometry-report.json",
+    "sha256": "a18a2ea8195b74b386102b1a87a3c42e5b11ce104e9a87c9ed60a4776e36b53b"
+  },
+  "hostAppsModified": false,
+  "mapVersion": "2.0.2",
+  "osm": {
+    "bytes": 643558307,
+    "operation": "Complete-feature bbox extraction with nested relation references, then libosmium sorted merge; duplicate OSM objects resolved by version",
+    "path": "data/regions/pyrenees/pyrenees-261031.osm.pbf",
+    "replicationTimestamp": "2026-10-31T21:23:06Z",
+    "sha256": "4143a1bae031da426b5e80a73561d9ce5941dbb67b439263e71c11c06558c0db",
+    "snapshot_date": "2026-10-31",
+    "url": null
+  },
+  "packages": {
+    "android": {
+      "archive": {
+        "bytes": 1736656403,
+        "path": "regions/pyrenees/android/OpenBareMap-Android.zip",
+        "sha256": "194798fceda6c1c75a19b97e4405727ba5d71e393c20f53cede8f14cfeaac9f2"
+      },
+      "checksumsSHA256": "913be45b7aa152e8333825762bd31517510fc5e553478f3a867d95b406c32a42",
+      "manifestSHA256": "3f4c608cb8ad6bb80b9b2b28390a16e718f932a1479bc568108e366aaa45c16f",
+      "path": "regions/pyrenees/android",
+      "validationSHA256": "5ebf5f04ee906f59761a26ae029d88f71868511e8b732072509edfb2978249c9"
+    },
+    "ios": {
+      "checksumsSHA256": "a5d542955a397486f9e21489822907670e9f3023ee298af8fd26252b9badca8e",
+      "manifestSHA256": "0b212de19145dfb76faee17f6760ccc65ff21dfd66733bdc27b5e8c0fbc11e4b",
+      "path": "regions/pyrenees/ios",
+      "validationSHA256": "14d8601d7d13ff6a2411de4c45d50911611358998d2bc498020b9f05c9995409"
+    }
+  },
+  "pythonRuntime": {
+    "packages": {
+      "Pillow": "12.3.0",
+      "certifi": "2026.10.23",
+      "charset-normalizer": "3.5.2",
+      "idna": "3.20",
+      "numpy": "2.5.4",
+      "osmium": "4.3.2",
+      "pyproj": "3.8.0",
+      "requests": "2.34.2",
+      "shapely": "2.2.0",
+      "urllib3": "2.8.0"
+    },
+    "platform": "macOS-27.0.1-arm64-arm-64bit-Mach-O",
+    "python": "3.14.5 (main, May 10 2026, 10:21:34) [Clang 21.0.0 (clang-2100.0.123.102)]"
+  },
+  "region": "pyrenees",
+  "styleSHA256": "6a53c17f4c128dc87dbc3bdc410be3c53247f40817890eade01317ebcd79d8dc",
+  "terrainLockSHA256": "124aa5c579d6c15331eec8e2fec81083bbe67a30e63524b0a72daf9a98084551",
+  "validation": "validation.json"
+}

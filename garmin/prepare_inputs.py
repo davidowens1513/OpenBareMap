@@ -3,7 +3,7 @@
 from pathlib import Path
 import argparse,gzip,hashlib,json,shutil,sys
 sys.path.insert(0,str(Path(__file__).resolve().parents[1]/"scripts"))
-from regions import REGIONS, profile,region_path,garmin_work
+from regions import PERMANENT_ICE, REGIONS, profile,region_path,garmin_work
 from xml.sax.saxutils import escape,quoteattr
 ROOT=Path(__file__).resolve().parents[1]
 WORK=ROOT/'garmin/work'
@@ -11,6 +11,13 @@ def digest(path):
  with path.open('rb') as f:return hashlib.file_digest(f,'sha256').hexdigest()
 def features(path):
  with gzip.open(path,'rt') as f:
+  if path.name == 'permanent-ice.geojson.gz':
+   # Ice overlays are small and may use formatted GeoJSON.
+   ice=json.load(f)['features']
+   if not ice or any(feature['properties']['class'] not in PERMANENT_ICE for feature in ice):
+    raise ValueError('Invalid permanent ice overlay')
+   yield from ice
+   return
   for line in f:
    if line.lstrip().startswith('{ "type": "Feature",') or line.lstrip().startswith('{"type":"Feature",'):
     yield json.loads(line.strip().rstrip(','))
