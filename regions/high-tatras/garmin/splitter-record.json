@@ -1,5 +1,5 @@
 {
-  "combinedSHA256": "2b1b860549422d1fafe32294012d5cd7fee68e935747691517f688113d3579f3",
+  "combinedSHA256": "0659d4448948789abf2c1e2bc9937f19b03713f35e34fc61b10439b1cebc1db0",
   "command": [
     "/opt/homebrew/opt/openjdk@21/libexec/openjdk.jdk/Contents/Home/bin/java",
     "-Xmx6g",
@@ -12,9 +12,9 @@
     "--keep-complete=true",
     "--output=pbf",
     "--polygon-file=/Volumes/Extreme SSD/Projects/OpenBareMap/regions/high-tatras/garmin/coverage.poly",
-    "--output-dir=/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/906ead9d53a7/high-tatras/garmin/split",
+    "--output-dir=/Volumes/Extreme SSD/Projects/OpenBareMap/work/glacier-updates/native/OpenBareMap-builds/906ead9d53a7/high-tatras/garmin/split",
     "--ignore-osm-bounds=true",
-    "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/906ead9d53a7/high-tatras/garmin/combined.osm.pbf"
+    "/Volumes/Extreme SSD/Projects/OpenBareMap/work/glacier-updates/native/OpenBareMap-builds/906ead9d53a7/high-tatras/garmin/combined.osm.pbf"
   ],
   "coverageSHA256": "82b8eb06e9090d841b67b958ba6f07c4945ab1bf6ee3428f13c753167c091565",
   "ignoreSourceHeaderBounds": true

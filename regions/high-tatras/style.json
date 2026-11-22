@@ -36,7 +36,9 @@
             [
               "bare_rock",
               "scree",
-              "shingle"
+              "shingle",
+              "glacier",
+              "permanent_snow"
             ]
           ]
         ]
@@ -286,6 +288,25 @@
       },
       "source": "basemap",
       "source-layer": "landcover",
+      "type": "fill"
+    },
+    {
+      "filter": [
+        "==",
+        [
+          "get",
+          "class"
+        ],
+        "permanent_snow"
+      ],
+      "id": "permanent_snow",
+      "paint": {
+        "fill-color": "#f0f8fc",
+        "fill-opacity": 0.82,
+        "fill-outline-color": "#93b3c3"
+      },
+      "source": "basemap",
+      "source-layer": "permanent_ice",
       "type": "fill"
     },
     {
@@ -115984,9 +116005,10 @@
     "openbaremap:version": "2.0.0",
     "version": "0.4.0"
   },
-  "name": "OpenBareMap High Tatras 2.0.0",
+  "name": "OpenBareMap High Tatras 2.0.1",
   "sources": {
     "basemap": {
+      "attribution": "\u00a9 <a href=\"https://www.openstreetmap.org/copyright\">OpenStreetMap contributors</a> \u00b7 OpenStreetMap outlines show mapped perennial snow and firn ice patches. Their extent and persistence can vary.",
       "type": "vector",
       "url": "../tiles.json"
     },

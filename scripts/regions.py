@@ -82,6 +82,7 @@ def region_style(region='ireland'):
              'filter': ['==', ['get', 'class'], kind],
              'paint': {'fill-color': color, 'fill-outline-color': outline, 'fill-opacity': 0.82}}
             for kind, (_, color, outline, _) in PERMANENT_ICE.items()
+            if kind != 'glacier' or not p.get('glaciersAsSnowfields')
         ]
     if p.get('coverageBoundary') or p.get('boundaryPreview'):
         for name in ('park-boundary','coverage','coverage-mask'):

@@ -1,0 +1,106 @@
+{
+  "acceptance": "Automated checks only; see validation and visual-review records for actual reviewed scope.",
+  "coverage": "The High Tatras on both sides of the Polish\u2013Slovak border, including Zakopane, Morskie Oko, \u0160trbsk\u00e9 Pleso, Tatransk\u00e1 Lomnica and the approaches from Poprad.",
+  "datasets": {
+    "basemap": {
+      "bytes": 47280128,
+      "path": "releases/high-tatras/2.0.1/maps/basemap.mbtiles",
+      "sha256": "6bed358d970f10bee59d19e05a854f1d7f022c737b47f353417b81ddae88cfd4",
+      "validation": {
+        "empty_tile_count": 0,
+        "logical_tiles_sha256": "51f5d27a3aa632fb8d688745ed09c01e73c33d5306358ab989cf58bddf0bf35c",
+        "tile_count": 1913
+      }
+    },
+    "grid": {
+      "bytes": 614400,
+      "path": "releases/high-tatras/2.0.0/maps/grid.mbtiles",
+      "sha256": "b7294e66dc97cadd2da96bdca3fffd6c74605311d4689efb5719463012eabd1e",
+      "validation": {
+        "empty_tile_count": 0,
+        "logical_tiles_sha256": "6ab02baaa1ed1bd420637a7ab3b94625a2db32fd903507b3e02b8555ec0ee7cf",
+        "tile_count": 1895
+      }
+    },
+    "hillshade": {
+      "bytes": 47177728,
+      "path": "releases/high-tatras/2.0.0/maps/hillshade.mbtiles",
+      "sha256": "cd3d8f606e7832e7cfa828288130094d75b6c1216af5b8787cefeb3b6ae73e20",
+      "validation": {
+        "empty_tile_count": 0,
+        "logical_tiles_sha256": "1dd373cc9493048f21d1f9179ddfa8173d1e9ed2efc1e3452e634cc2746fc2fa",
+        "tile_count": 1102
+      }
+    },
+    "topography": {
+      "bytes": 24276992,
+      "path": "releases/high-tatras/2.0.0/maps/topography-context.mbtiles",
+      "sha256": "4553502a2a179961cc60e6bb7c4a624cd24730525eb696cb97d91f47bbebc4d0",
+      "validation": {
+        "empty_tile_count": 47914,
+        "logical_tiles_sha256": "ab14f40ceb7968f6c504dc3ce7f50036c40f2aa73645bf95ba86d74da78e7101",
+        "tile_count": 54145
+      }
+    }
+  },
+  "garmin": {
+    "bytes": 18134016,
+    "path": "regions/high-tatras/garmin/dist/OpenBareMap-High-Tatras-Snowfields.img",
+    "sha256": "da088df5a154fb87ca492e2c1ba7d8dd3fd98415d698e182a756511e4e1dc549"
+  },
+  "geometryReport": {
+    "path": "releases/high-tatras/2.0.1/build-records/high-tatras-geometry/geometry-report.json",
+    "sha256": "ba95aa250a19a6bccc9bbb257e15c29ec9e505179a7465bab06df8fb0d1edc67"
+  },
+  "hostAppsModified": false,
+  "mapVersion": "2.0.1",
+  "osm": {
+    "bytes": 43464576,
+    "operation": "Complete-feature bbox extraction with nested relation references, then libosmium sorted merge; duplicate OSM objects resolved by version",
+    "path": "data/regions/high-tatras/high-tatras-261120.osm.pbf",
+    "replicationTimestamp": "2026-11-20T21:21:21Z",
+    "sha256": "a511779c1d9138a238f021758982c3475581ea99f55f48ddd572391690038048",
+    "snapshot_date": "2026-11-20",
+    "url": null
+  },
+  "packages": {
+    "android": {
+      "archive": {
+        "bytes": 123401798,
+        "path": "regions/high-tatras/android/OpenBareMap-Android.zip",
+        "sha256": "2fd7de605afe24fff10535f6de00000bde6a7d0129db93fc285277a632dcf3ad"
+      },
+      "checksumsSHA256": "d01e874f6c605ed70ead63235269dc1165032064adfbd193db631d6951cbbaf7",
+      "manifestSHA256": "1bfca1314b4140d4963503cc774335d82c72309fbb839ee4e6b9cdf1488727b6",
+      "path": "regions/high-tatras/android",
+      "validationSHA256": "7156151e1fb53b9009743d8b43bbc1ab957310c1a5ef67d182510e752efe749b"
+    },
+    "ios": {
+      "checksumsSHA256": "6d4546af65b3455d414411e2162c1b8129bb289f52a1326d88a8cdb135799414",
+      "manifestSHA256": "27325a914a4288b849cb90fae0a5ab29675d279cc6b0d6851eef9a585a35a48e",
+      "path": "regions/high-tatras/ios",
+      "validationSHA256": "c828a49b6c82b79c18c4df34c45211edc637c143bcdb19ed176a35dd2b529c05"
+    }
+  },
+  "pythonRuntime": {
+    "packages": {
+      "Pillow": "12.3.0",
+      "certifi": "2026.10.23",
+      "charset-normalizer": "3.5.2",
+      "idna": "3.20",
+      "numpy": "2.5.4",
+      "osmium": "4.3.2",
+      "pyproj": "3.8.0",
+      "requests": "2.34.2",
+      "shapely": "2.2.0",
+      "urllib3": "2.8.0"
+    },
+    "platform": "macOS-27.2.1-arm64-arm-64bit-Mach-O",
+    "python": "3.14.5 (main, May 10 2026, 10:21:34) [Clang 21.0.0 (clang-2100.0.123.102)]",
+    "requirementsSHA256": "427f12ff8b49bfebac0a7d453c2f65bd15d6695584b18e6ecee1fdfeed20a36c"
+  },
+  "region": "high-tatras",
+  "styleSHA256": "90181b73c42c334554205808b34921e546f0232f26626aab6361c278142e2e2c",
+  "terrainLockSHA256": "77d43566ed08faa4301352d08d992509b3188f810846bac20ffdf688a14e4554",
+  "validation": "validation.json"
+}

@@ -9,8 +9,9 @@ import re
 
 from shapely.geometry import mapping, shape
 
+from build_distribution_instructions import garmin_instructions
 from openbaremap import ROOT, digest, write
-from regions import profile
+from regions import profile, region_path
 from stage_us_national_parks import (
     PLATFORMS, PUBLIC, add_to_archive, checked, download_row, publish, stage_website_archive,
 )
@@ -30,15 +31,27 @@ def preview_url(region):
     return f'{PUBLIC}{preview_prefix(region)}/{region}/index.html'
 
 
+def card(region, downloads):
+    p = profile(region)
+    description = p['coverage']
+    if p.get('glaciersAsSnowfields'):
+        description += ' Includes mapped perennial snow and firn ice patches.'
+    rows = ''.join(download_row(label, downloads[platform]['url'], downloads[platform]['instructionsURL'])
+                   for platform, label in PLATFORMS.items())
+    return (f'<article id="map-{region}"><h3>{escape(p["label"])}</h3><p>{escape(description)}</p>'
+            f'<div class="region-actions"><div class="preview-action"><a href="{preview_url(region)}">'
+            f'Preview <span aria-hidden="true">↗</span></a></div>{rows}</div></article>')
+
+
+def render_snowfields_homepage(website, entries, _downloads, _count):
+    page, changes = re.subn(r'<article id="map-high-tatras">.*?</article>',
+                           lambda _: card('high-tatras', entries['high-tatras']), website.read_text(), flags=re.S)
+    if changes != 1:
+        raise ValueError('Expected one High Tatras card on the homepage')
+    return page
+
+
 def render_homepage(website, entries, _downloads, count):
-    def card(region):
-        p = profile(region)
-        rows = ''.join(download_row(label, entries[region][platform]['url'],
-                                    entries[region][platform]['instructionsURL'])
-                       for platform, label in PLATFORMS.items())
-        return (f'<article id="map-{region}"><h3>{escape(p["label"])}</h3><p>{escape(p["coverage"])}</p>'
-                f'<div class="region-actions"><div class="preview-action"><a href="{preview_url(region)}">'
-                f'Preview <span aria-hidden="true">↗</span></a></div>{rows}</div></article>')
 
     page = website.read_text()
     page = re.sub(r'<article id="map-picos-de-europa">.*?</article>', '', page, flags=re.S)
@@ -51,11 +64,11 @@ def render_homepage(website, entries, _downloads, count):
     start = page.index('<div id="france-spain"')
     end = page.index('<div id="alps"', start)
     grid_end = page.rindex('</div></div>', start, end)
-    page = page[:grid_end] + card('picos-de-europa') + page[grid_end:]
+    page = page[:grid_end] + card('picos-de-europa', entries['picos-de-europa']) + page[grid_end:]
     position = page.index('<div id="mediterranean-islands"')
     eastern = ('<!-- Eastern Europe -->\n<div id="eastern-europe" style="margin-top:2rem">'
                '<h3>Eastern Europe</h3>\n' + REPO_LINK + '\n<div class="map-regions">'
-               + card('high-tatras') + '</div></div>\n<!-- End Eastern Europe -->\n')
+               + card('high-tatras', entries['high-tatras']) + '</div></div>\n<!-- End Eastern Europe -->\n')
     page = page[:position] + eastern + page[position:]
     page, changes = re.subn(r'Currently there are \d+ maps available', f'Currently there are {count} maps available', page, count=1)
     if changes != 1:
@@ -161,10 +174,27 @@ def stage(output, website, *, regions=REGIONS, render=render_homepage, archive=A
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--publish-assets', action='store_true')
+    parser.add_argument('--tatras-snowfields', action='store_true')
     args = parser.parse_args()
     output = ROOT / 'work/picos-tatras-publication'
     website = ROOT / 'work/AppsByOnzy-Website/site/index.html'
-    if args.publish_assets:
+    if args.tatras_snowfields:
+        from upgrade_permanent_ice import WORK
+
+        region = 'high-tatras'
+        regions = (region,)
+        output = WORK / 'high-tatras-publication'
+        if args.publish_assets:
+            publish(output, website, regions=regions, render_homepage=render_snowfields_homepage,
+                    preview_manifests={'../high-tatras/preview/manifest.json': 'high-tatras-snowfields-manifest.json'})
+        else:
+            output.mkdir(parents=True, exist_ok=True)
+            image = profile(region)['garminFilename']
+            region_path(region, 'garmin/dist/INSTALL.txt').write_text(garmin_instructions(region, image))
+            stage(output, website, regions=regions, render=render_snowfields_homepage,
+                  archive='appsbyonzy-high-tatras-snowfields.zip', products_for=lambda edition: WORK / edition,
+                  version_garmin=True)
+    elif args.publish_assets:
         manifests = {f'../{region}-release/preview/manifest.json': f'{region}-manifest.json' for region in REGIONS}
         publish(output, website, regions=REGIONS, render_homepage=render_homepage, preview_manifests=manifests)
     else:

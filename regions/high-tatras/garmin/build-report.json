@@ -1,6 +1,6 @@
 {
   "familyId": 4865,
-  "garminPackageRevision": "2.0.1-trail-detail-r1",
+  "garminPackageRevision": "2.0.1-snowfields-r1",
   "inspection": {
     "anchorLabels": {
       "Poprad": "Poprad",
@@ -77,17 +77,17 @@
       "0x7": 13791,
       "0xa": 12308
     },
-    "logicalCombinedSHA256": "8c23abac775766498ccb508986713581f7ded6753b7085a252737907040cbf4a",
+    "logicalCombinedSHA256": "fa8f90f9e0a2cd495045678d1d7df5bc0eaa3befe7d8d3bd9758d764f3042252",
     "logicalHashNote": "Internal file names, sizes and payloads; only CommonHeader creation-date bytes 14..20 are zeroed for hashing. IMG archive headers are excluded. Output bytes are never modified.",
     "logicalTileSHA256": {
-      "48650001.img": "dbcede9fd8bb42d5b96c4d1e65b104010c414494ceeae42295eda07cb6a6e65a",
-      "48650002.img": "7c1c9e7b76d19813dd9c941103a4d96fa38e597a4a00b16ee58c308d669a91ef",
-      "48650003.img": "e5ad5fb1110f727efdb314bb3dfabfd4da0abb8b0ad05631afe1c0a9fe801959",
-      "48650004.img": "cc52a6b483574fbb2b6345afaf635e840e53627b8c2eaafc192477aed40bd374",
-      "48650005.img": "5c96de0639a95e4afd04847a0474bd7fdfb337b36d6c32c2057c8af52052f7aa",
-      "48650006.img": "2094e64a9fa45a0bdbb8974966031e3b6479468ff6a2b95dba53f49f85260ad3",
-      "48650007.img": "d02e914b990cc66647c62179d3e8a3454341545d120c8fb89c85c604e2fdab54",
-      "48650008.img": "60994c9474ea5e82a1680832e5949eef6f5666ba8970a900b85e5eea1057e291"
+      "48650001.img": "e93d848a8b9efd294793b5bb2bdf14fa676b30ff9cf4a356ee2ba6afda57e687",
+      "48650002.img": "c3de76e839a622525ad41ae5ebca0916b4712000e9f989a75d3bdf852daadeab",
+      "48650003.img": "209dd2dd514f5bab6412dc8701734f175c41176a6717ae3172bdc67ba0409ab7",
+      "48650004.img": "9bd78c6aeadfb5bd2409c69d557d5858799567983e6df1dae2fcfb003dfb99c4",
+      "48650005.img": "b3363996e8adfd6a3d5094d4f7f7af2f0156441cafffe993748f879944582acc",
+      "48650006.img": "42a97e415b4fef77ecc28f7b79194e57f8db98b9b1cce494588c702816e4b3dd",
+      "48650007.img": "92b9230fe2aa5762d2a29a374ad3eccd36f1560d4272ccdb5916a451bf56d21e",
+      "48650008.img": "564a5c6433350bf24532a3ee21c4e1256e75c1934ba56e6c55cf4192c87cdfb6"
     },
     "pointInstancesAtHighestDetail": {
       "0x10001": 680,
@@ -116,6 +116,7 @@
       "0x10109": 5092,
       "0x1010a": 4895,
       "0x1010b": 67,
+      "0x1010d": 14,
       "0x13": 127826,
       "0x32": 8,
       "0x3c": 1221,
@@ -128,17 +129,17 @@
       "DEM": 4074754,
       "LBL": 299244,
       "MPS": 687,
-      "RGN": 13517066,
+      "RGN": 13517730,
       "SRT": 912,
-      "TRE": 168564,
-      "TYP": 2982
+      "TRE": 168568,
+      "TYP": 3037
     },
     "tiles": 8
   },
   "output": {
-    "bytes": 18132992,
-    "path": "regions/high-tatras/garmin/dist/OpenBareMap-High-Tatras.img",
-    "sha256": "4e1ec3bd938ef0b122030ff2ad7dbbed4a3fda71e54060b9c22c1b917913f7e6"
+    "bytes": 18134016,
+    "path": "regions/high-tatras/garmin/dist/OpenBareMap-High-Tatras-Snowfields.img",
+    "sha256": "da088df5a154fb87ca492e2c1ba7d8dd3fd98415d698e182a756511e4e1dc549"
   },
   "routing": false,
   "status": "compiled and structurally inspected; hardware rendering pending"

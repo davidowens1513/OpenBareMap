@@ -36,5 +36,16 @@ class PermanentIceTests(unittest.TestCase):
                     self.assertEqual(layer['filter'], ['==', ['get', 'class'], kind])
                     self.assertEqual(layer['paint']['fill-color'], color)
                     self.assertEqual(layer['paint']['fill-outline-color'], outline)
-        for region in ('ireland', 'high-tatras'):
+        for region in ('ireland', 'picos-de-europa'):
             self.assertFalse(set(PERMANENT_ICE) & {layer['id'] for layer in region_style(region)['layers']})
+
+    def test_high_tatras_shows_snowfields_and_excludes_glaciers(self):
+        self.assertEqual(permanent_ice_class({'natural': 'glacier'}, glaciers_as_snowfields=True),
+                         'permanent_snow')
+        self.assertIsNone(permanent_ice_class({'natural': 'glacier', 'glacier:type': 'rock'},
+                                             glaciers_as_snowfields=True))
+        self.assertIsNone(permanent_ice_class({'natural': 'glacier', 'seasonal': 'yes'},
+                                             glaciers_as_snowfields=True))
+        layers = {layer['id']: layer for layer in region_style('high-tatras')['layers']}
+        self.assertNotIn('glacier', layers)
+        self.assertEqual(layers['permanent_snow']['source-layer'], 'permanent_ice')

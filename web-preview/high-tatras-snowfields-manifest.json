@@ -1,0 +1,41 @@
+{
+  "regions": {
+    "high-tatras": {
+      "basemap": {
+        "sourceSHA256": "6bed358d970f10bee59d19e05a854f1d7f022c737b47f353417b81ddae88cfd4",
+        "bytes": 45801176,
+        "sha256": "e7558a25a816535f70216557f303a81bdeea462cdd3cccb92731c60bffb856ad",
+        "tiles": 1913
+      },
+      "grid": {
+        "sourceSHA256": "b7294e66dc97cadd2da96bdca3fffd6c74605311d4689efb5719463012eabd1e",
+        "bytes": 511112,
+        "sha256": "bb3d6867e20d61187c6822b55cb7c1e159ef3af8ed788ed9868376d9005aec61",
+        "tiles": 1895
+      },
+      "hillshade": {
+        "sourceSHA256": "cd3d8f606e7832e7cfa828288130094d75b6c1216af5b8787cefeb3b6ae73e20",
+        "bytes": 46245400,
+        "sha256": "e5a39c3a79f1c5beacf4e19712525dfaac420e86244e86e3dd20732a7f188588",
+        "tiles": 1102
+      },
+      "topography": {
+        "sourceSHA256": "4553502a2a179961cc60e6bb7c4a624cd24730525eb696cb97d91f47bbebc4d0",
+        "bytes": 19960947,
+        "sha256": "aede52a280ad0f1b32a5b42d515e00af0bb88cd28d016f0fe7fa6e204ccd2c2d",
+        "tiles": 54145
+      },
+      "coast": {
+        "sourceSHA256": "1a4edd29c4af9e106aafbacea8455eac4eeee8410c448fd44135a4ad0eafda69",
+        "bytes": 26658,
+        "sha256": "5aa080d43f6c67f10116759883b47a7419d0bff1e8b5b434cfaeac7980de4065",
+        "tiles": 4489
+      }
+    }
+  },
+  "pmtilesPython": "3.8.1",
+  "pmtilesJS": "4.5.0",
+  "librarySHA256": "caf981bc46f6327ee7e65d5dc964d89d38a69f60edca2bd4c5c890c21b554c6c",
+  "dataOrigin": "https://downloads.appsbyonzy.dev/OpenBareMap/high-tatras/2.0.1/preview",
+  "scope": "Complete selected map tiles; no regional or zoom sampling."
+}

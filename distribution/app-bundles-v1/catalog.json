@@ -16,7 +16,7 @@
     "dolomites": "2.0.1",
     "england-wales": "2.0.1",
     "faroe-islands": "2.0.0",
-    "high-tatras": "2.0.0",
+    "high-tatras": "2.0.1",
     "ireland": "2.0.0",
     "madeira": "2.0.0",
     "malta": "2.0.0",
@@ -1092,11 +1092,11 @@
     },
     "high-tatras": {
       "android": {
-        "bytes": 123401429,
+        "bytes": 123430243,
         "datasets": {
           "basemap": {
             "path": "maps/basemap.mbtiles",
-            "sha256": "d6f55f9b3f900007353edf877fff8ba79fad256eb67258a8bf3c2772262470c5"
+            "sha256": "6bed358d970f10bee59d19e05a854f1d7f022c737b47f353417b81ddae88cfd4"
           },
           "coast": {
             "derivedFrom": "4553502a2a179961cc60e6bb7c4a624cd24730525eb696cb97d91f47bbebc4d0",
@@ -1116,20 +1116,20 @@
             "sha256": "4553502a2a179961cc60e6bb7c4a624cd24730525eb696cb97d91f47bbebc4d0"
           }
         },
-        "instructionsSHA256": "014d6e721de02c404afd87e6e37de97cbf3d7bc4b1ca1b4a737dfad1a8669d07",
-        "instructionsURL": "https://downloads.appsbyonzy.dev/OpenBareMap/high-tatras/2.0.0/app-bundles-v1/android/instructions.txt",
-        "localPath": "releases/high-tatras/2.0.0/app-bundles-v1/android/OpenBareMap-High-Tatras-Android-Bundle.zip",
-        "mapManifestSHA256": "6f5afe62db80093d61dd2bc9b5ac8b0f0135ec8ecb126bc1424b775745fb427a",
-        "r2Key": "OpenBareMap/high-tatras/2.0.0/app-bundles-v1/android/OpenBareMap-High-Tatras-Android-Bundle.zip",
-        "sha256": "7ea7238e4b0cd040f3b023c4fd0d70fcb1e29a931a5a6e7d209c4c8601cac7b5",
-        "url": "https://downloads.appsbyonzy.dev/OpenBareMap/high-tatras/2.0.0/app-bundles-v1/android/OpenBareMap-High-Tatras-Android-Bundle.zip"
+        "instructionsSHA256": "e31477d8df28886640ef86a26a8f9667bccaa7d718baebaa4b5b869bec42e3fa",
+        "instructionsURL": "https://downloads.appsbyonzy.dev/OpenBareMap/high-tatras/2.0.1/app-bundles-v1/android/instructions.txt",
+        "localPath": "releases/high-tatras/2.0.1/app-bundles-v1/android/OpenBareMap-High-Tatras-Android-Bundle.zip",
+        "mapManifestSHA256": "1bfca1314b4140d4963503cc774335d82c72309fbb839ee4e6b9cdf1488727b6",
+        "r2Key": "OpenBareMap/high-tatras/2.0.1/app-bundles-v1/android/OpenBareMap-High-Tatras-Android-Bundle.zip",
+        "sha256": "1a350a6f68a12ea7f8d12268794182adf38e789df615f4a8682c06d00a50c603",
+        "url": "https://downloads.appsbyonzy.dev/OpenBareMap/high-tatras/2.0.1/app-bundles-v1/android/OpenBareMap-High-Tatras-Android-Bundle.zip"
       },
       "ios": {
-        "bytes": 123401839,
+        "bytes": 123430653,
         "datasets": {
           "basemap": {
             "path": "maps/basemap.mbtiles",
-            "sha256": "d6f55f9b3f900007353edf877fff8ba79fad256eb67258a8bf3c2772262470c5"
+            "sha256": "6bed358d970f10bee59d19e05a854f1d7f022c737b47f353417b81ddae88cfd4"
           },
           "coast": {
             "derived_from": "4553502a2a179961cc60e6bb7c4a624cd24730525eb696cb97d91f47bbebc4d0",
@@ -1151,13 +1151,13 @@
             "sha256": "4553502a2a179961cc60e6bb7c4a624cd24730525eb696cb97d91f47bbebc4d0"
           }
         },
-        "instructionsSHA256": "a2058c6bc35f76e6e5565bea9869ba837fa15c04da2c499daa4292885c759805",
-        "instructionsURL": "https://downloads.appsbyonzy.dev/OpenBareMap/high-tatras/2.0.0/app-bundles-v1/ios/instructions.txt",
-        "localPath": "releases/high-tatras/2.0.0/app-bundles-v1/ios/OpenBareMap-High-Tatras-iOS-Bundle.zip",
-        "mapManifestSHA256": "274a31ef85ce4f9d5ecd173e15aa8967b59176202911567fce3ac80e376625bc",
-        "r2Key": "OpenBareMap/high-tatras/2.0.0/app-bundles-v1/ios/OpenBareMap-High-Tatras-iOS-Bundle.zip",
-        "sha256": "bdb675593a11f53645c118437c5df4a398133fd09df1b6565690b569ed421994",
-        "url": "https://downloads.appsbyonzy.dev/OpenBareMap/high-tatras/2.0.0/app-bundles-v1/ios/OpenBareMap-High-Tatras-iOS-Bundle.zip"
+        "instructionsSHA256": "b5ab96053a8b09a2bb974d586af9a053dbb1be44734549bdd8730aa701143edc",
+        "instructionsURL": "https://downloads.appsbyonzy.dev/OpenBareMap/high-tatras/2.0.1/app-bundles-v1/ios/instructions.txt",
+        "localPath": "releases/high-tatras/2.0.1/app-bundles-v1/ios/OpenBareMap-High-Tatras-iOS-Bundle.zip",
+        "mapManifestSHA256": "27325a914a4288b849cb90fae0a5ab29675d279cc6b0d6851eef9a585a35a48e",
+        "r2Key": "OpenBareMap/high-tatras/2.0.1/app-bundles-v1/ios/OpenBareMap-High-Tatras-iOS-Bundle.zip",
+        "sha256": "d5c13d4fd3dc3f442607763f82b8c8eababf2fbb6b731b22f129f41d56afe8ac",
+        "url": "https://downloads.appsbyonzy.dev/OpenBareMap/high-tatras/2.0.1/app-bundles-v1/ios/OpenBareMap-High-Tatras-iOS-Bundle.zip"
       }
     },
     "ireland": {

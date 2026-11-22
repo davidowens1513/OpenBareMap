@@ -22,6 +22,8 @@ VERSION = '2.0.1'
 REVISION = VERSION + '-glacier-r1'
 LAYER = 'permanent_ice'
 PYRENEES_SOURCE_NOTE = ('Glacier outlines are from OpenStreetMap. The 2025 Aneto survey mapped a smaller active glacier.')
+TATRAS_SOURCE_NOTE = ('OpenStreetMap outlines show mapped perennial snow and firn ice patches. '
+                      'Their extent and persistence can vary.')
 WORK = ROOT / 'work/glacier-updates'
 WAVES = (
     ('us-glacier', 'us-olympic'),
@@ -31,6 +33,7 @@ WAVES = (
     ('pyrenees',),
 )
 REGIONS = tuple(region for wave in WAVES for region in wave)
+BUILD_REGIONS = (*REGIONS, 'high-tatras')
 
 
 def run(*args, env=None):
@@ -58,7 +61,8 @@ def extract(region):
         coverage = json.loads(region_path(region, 'coverage.geojson').read_text())
         footprint = prep(unary_union([shape(feature['geometry']) for feature in coverage['features']]))
     pending = output / 'ice.geojson.part'
-    counts = landcover(source, pending, settings['bounds'], permanent_ice=True, ice_footprint=footprint, ice_only=True)
+    counts = landcover(source, pending, settings['bounds'], permanent_ice=True, ice_footprint=footprint,
+                       ice_only=True, glaciers_as_snowfields=region == 'high-tatras')
     result = output / 'ice.geojson'
     pending.replace(result)
     write(checkpoint, {'region': region, 'sourceSHA256': locked['sha256'],
@@ -148,8 +152,11 @@ def prepare(region):
     locked = json.loads((edition / 'sources.lock.json').read_text())['osm']
     extract(region)
     ice = json.loads((pending / 'ice.json').read_text())
-    if ice['sourceSHA256'] != locked['sha256'] or not ice['permanentIce']['glacier']:
-        raise ValueError('Expected glacier geometry from the accepted source')
+    expected_class = 'permanent_snow' if region == 'high-tatras' else 'glacier'
+    if ice['sourceSHA256'] != locked['sha256'] or not ice['permanentIce'][expected_class]:
+        raise ValueError(f'Expected {expected_class} geometry from the accepted source')
+    if region == 'high-tatras' and ice['permanentIce']['glacier']:
+        raise ValueError('High Tatras must have zero active glacier outlines')
     if digest(pending / 'ice.geojson') != ice['geometrySHA256']:
         raise ValueError('Ice geometry differs from its extraction checkpoint')
     for dataset in old['datasets'].values():
@@ -183,8 +190,12 @@ def prepare(region):
                     garminPackageRevision=REVISION, garminFilename=old_name + '-Glaciers.img')
     if region == 'pyrenees':
         settings['permanentIceSourceNote'] = PYRENEES_SOURCE_NOTE
+    if region == 'high-tatras':
+        settings.update(permanentIceSourceNote=TATRAS_SOURCE_NOTE, glaciersAsSnowfields=True, styleRevision=VERSION + '-snowfields-r1',
+                        garminFilename=old_name + '-Snowfields.img',
+                        garminPackageRevision=VERSION + '-snowfields-r1')
     write(profile_path, settings)
-    selected = dict(old, mapVersion=VERSION, storageRevision=REVISION, styleRevision=REVISION,
+    selected = dict(old, mapVersion=VERSION, storageRevision=settings['styleRevision'], styleRevision=settings['styleRevision'],
                     datasets=dict(old['datasets'], basemap=record['basemap']))
     write(active_path, selected)
     write(edition / 'style.json', region_style(region))
@@ -217,13 +228,13 @@ def build(region):
         origin = f'https://downloads.appsbyonzy.dev/OpenBareMap/{region}/{VERSION}/preview'
         run('scripts/build_web_previews.py', '--regions', region, '--output', products / 'preview', '--origin', origin,
             '--cached-preview', 'work/canadian-rockies-banff-release/preview')
-    print(region, 'versioned glacier release ready for staging', flush=True)
+    print(region, 'versioned permanent ice release ready for staging', flush=True)
 
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--extract-only', action='store_true')
-    parser.add_argument('regions', nargs='+', choices=REGIONS)
+    parser.add_argument('regions', nargs='+', choices=BUILD_REGIONS)
     arguments = parser.parse_args()
     for region in arguments.regions:
         (extract if arguments.extract_only else build)(region)

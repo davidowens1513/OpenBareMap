@@ -1,0 +1,46 @@
+{
+  "iceExtraction": {
+    "geometrySHA256": "96da0044ad92d2e40afa15fba44060d881accecc2a081b8c5bcb071db8fee179",
+    "permanentIce": {
+      "glacier": 0,
+      "permanent_snow": 14
+    },
+    "region": "high-tatras",
+    "sourceSHA256": "a511779c1d9138a238f021758982c3475581ea99f55f48ddd572391690038048"
+  },
+  "mapVersion": "2.0.1",
+  "preservedBasemapLayersSHA256": "037a9d12d8007363693202a1d385393024c3e0880ea81247f4e4c34da453da94",
+  "preservedTerrain": {
+    "grid": {
+      "bytes": 614400,
+      "path": "releases/high-tatras/2.0.0/maps/grid.mbtiles",
+      "sha256": "b7294e66dc97cadd2da96bdca3fffd6c74605311d4689efb5719463012eabd1e",
+      "validation": {
+        "empty_tile_count": 0,
+        "logical_tiles_sha256": "6ab02baaa1ed1bd420637a7ab3b94625a2db32fd903507b3e02b8555ec0ee7cf",
+        "tile_count": 1895
+      }
+    },
+    "hillshade": {
+      "bytes": 47177728,
+      "path": "releases/high-tatras/2.0.0/maps/hillshade.mbtiles",
+      "sha256": "cd3d8f606e7832e7cfa828288130094d75b6c1216af5b8787cefeb3b6ae73e20",
+      "validation": {
+        "empty_tile_count": 0,
+        "logical_tiles_sha256": "1dd373cc9493048f21d1f9179ddfa8173d1e9ed2efc1e3452e634cc2746fc2fa",
+        "tile_count": 1102
+      }
+    },
+    "topography": {
+      "bytes": 24276992,
+      "path": "releases/high-tatras/2.0.0/maps/topography-context.mbtiles",
+      "sha256": "4553502a2a179961cc60e6bb7c4a624cd24730525eb696cb97d91f47bbebc4d0",
+      "validation": {
+        "empty_tile_count": 47914,
+        "logical_tiles_sha256": "ab14f40ceb7968f6c504dc3ce7f50036c40f2aa73645bf95ba86d74da78e7101",
+        "tile_count": 54145
+      }
+    }
+  },
+  "previousMapVersion": "2.0.0"
+}

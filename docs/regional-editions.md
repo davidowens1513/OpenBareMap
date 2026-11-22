@@ -117,6 +117,33 @@ catalogues and site package. The production Pages archive is
 Picos de Europa appears under France & Spain and the High Tatras under
 Eastern Europe.
 
+### Snow and ice review
+
+The locked Picos de Europa extract contains one glacier-tagged polygon named
+El Neverón. The [Picos de Europa National Park research proceedings](https://parquenacionalpicoseuropa.es/wp-content/uploads/2025/02/texto-completo-libro-actas-i-joernadas-investigacion-pnpe-2023.pdf)
+describe remnant ice patches with no current glacier movement, and the
+[IGME geological guide](https://web.igme.es/LibrosE/GuiasGeo/picosdeeuropa_sp/75/)
+discusses the Neverón de Urriellu as a possible Little Ice Age glacier. The
+review found no recent surveyed outline that confirmed the mapped polygon as
+perennial. The Picos edition stays on 2.0.0.
+
+The [High Tatras research](https://web.natur.cuni.cz/kfggsekr/rggg/pdf/dlabackova_ea_23.pdf)
+describes surviving perennial snowfields and firn ice patches. The High
+Tatras 2.0.1 build shows the 14 outlines from the locked OpenStreetMap extract
+with the permanent snowfield symbol and identifies them in the attribution as
+mapped patches with variable extent and persistence. The map key includes the
+snowfield symbol. The build retains the 2.0.0 contours, hillshade and grid.
+
+```sh
+export PYTHONPATH=work/python
+python3 scripts/upgrade_permanent_ice.py high-tatras
+python3 scripts/stage_mountain_editions.py --tatras-snowfields
+python3 scripts/stage_mountain_editions.py --tatras-snowfields --publish-assets
+```
+
+The staged website archive is
+`work/glacier-updates/high-tatras-publication/appsbyonzy-high-tatras-snowfields.zip`.
+
 ## US National Parks
 
 The series covers ten parks in nine maps. Each edition uses the National Park

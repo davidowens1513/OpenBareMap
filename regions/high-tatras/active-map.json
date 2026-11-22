@@ -3,12 +3,12 @@
   "coverage": "The High Tatras on both sides of the Polish\u2013Slovak border, including Zakopane, Morskie Oko, \u0160trbsk\u00e9 Pleso, Tatransk\u00e1 Lomnica and the approaches from Poprad.",
   "datasets": {
     "basemap": {
-      "bytes": 47263744,
-      "path": "releases/high-tatras/2.0.0/maps/basemap.mbtiles",
-      "sha256": "d6f55f9b3f900007353edf877fff8ba79fad256eb67258a8bf3c2772262470c5",
+      "bytes": 47280128,
+      "path": "releases/high-tatras/2.0.1/maps/basemap.mbtiles",
+      "sha256": "6bed358d970f10bee59d19e05a854f1d7f022c737b47f353417b81ddae88cfd4",
       "validation": {
         "empty_tile_count": 0,
-        "logical_tiles_sha256": "d2a035d7bdee1cba28153778d966a35a35cd6e87f6f4ff845264d5ce326cbc6a",
+        "logical_tiles_sha256": "51f5d27a3aa632fb8d688745ed09c01e73c33d5306358ab989cf58bddf0bf35c",
         "tile_count": 1913
       }
     },
@@ -45,8 +45,8 @@
   },
   "format": "openbaremap-development-viewer-v1",
   "localBorders": false,
-  "mapVersion": "2.0.0",
+  "mapVersion": "2.0.1",
   "region": "high-tatras",
-  "storageRevision": "2.0.0-high-tatras-r3",
-  "styleRevision": "2.0.0-high-tatras-r1"
+  "storageRevision": "2.0.1-snowfields-r1",
+  "styleRevision": "2.0.1-snowfields-r1"
 }

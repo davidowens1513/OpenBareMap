@@ -1,0 +1,25 @@
+{
+  "counts": {
+    "permanentIce": {
+      "glacier": 0,
+      "permanent_snow": 14
+    }
+  },
+  "osm": {
+    "bytes": 43464576,
+    "operation": "Complete-feature bbox extraction with nested relation references, then libosmium sorted merge; duplicate OSM objects resolved by version",
+    "path": "data/regions/high-tatras/high-tatras-261120.osm.pbf",
+    "replicationTimestamp": "2026-11-20T21:21:21Z",
+    "sha256": "a511779c1d9138a238f021758982c3475581ea99f55f48ddd572391690038048",
+    "snapshot_date": "2026-11-20",
+    "url": null
+  },
+  "outputs": {
+    "ice.geojson": "96da0044ad92d2e40afa15fba44060d881accecc2a081b8c5bcb071db8fee179"
+  },
+  "permanentIce": {
+    "glacier": 0,
+    "permanent_snow": 14
+  },
+  "region": "high-tatras"
+}

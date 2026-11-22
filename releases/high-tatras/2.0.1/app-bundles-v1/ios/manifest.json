@@ -1,0 +1,35 @@
+{
+  "bytes": 123430653,
+  "datasets": {
+    "basemap": {
+      "path": "maps/basemap.mbtiles",
+      "sha256": "6bed358d970f10bee59d19e05a854f1d7f022c737b47f353417b81ddae88cfd4"
+    },
+    "coast": {
+      "derived_from": "4553502a2a179961cc60e6bb7c4a624cd24730525eb696cb97d91f47bbebc4d0",
+      "maxzoom": 12,
+      "operation": "Preserve land-layer MVT bytes only through zoom 12; omit other layers.",
+      "path": "maps/coast.mbtiles",
+      "sha256": "1a4edd29c4af9e106aafbacea8455eac4eeee8410c448fd44135a4ad0eafda69"
+    },
+    "grid": {
+      "path": "maps/grid.mbtiles",
+      "sha256": "b7294e66dc97cadd2da96bdca3fffd6c74605311d4689efb5719463012eabd1e"
+    },
+    "hillshade": {
+      "path": "maps/hillshade.mbtiles",
+      "sha256": "cd3d8f606e7832e7cfa828288130094d75b6c1216af5b8787cefeb3b6ae73e20"
+    },
+    "topography": {
+      "path": "maps/topography.mbtiles",
+      "sha256": "4553502a2a179961cc60e6bb7c4a624cd24730525eb696cb97d91f47bbebc4d0"
+    }
+  },
+  "instructionsSHA256": "b5ab96053a8b09a2bb974d586af9a053dbb1be44734549bdd8730aa701143edc",
+  "instructionsURL": "https://downloads.appsbyonzy.dev/OpenBareMap/high-tatras/2.0.1/app-bundles-v1/ios/instructions.txt",
+  "localPath": "releases/high-tatras/2.0.1/app-bundles-v1/ios/OpenBareMap-High-Tatras-iOS-Bundle.zip",
+  "mapManifestSHA256": "27325a914a4288b849cb90fae0a5ab29675d279cc6b0d6851eef9a585a35a48e",
+  "r2Key": "OpenBareMap/high-tatras/2.0.1/app-bundles-v1/ios/OpenBareMap-High-Tatras-iOS-Bundle.zip",
+  "sha256": "d5c13d4fd3dc3f442607763f82b8c8eababf2fbb6b731b22f129f41d56afe8ac",
+  "url": "https://downloads.appsbyonzy.dev/OpenBareMap/high-tatras/2.0.1/app-bundles-v1/ios/OpenBareMap-High-Tatras-iOS-Bundle.zip"
+}

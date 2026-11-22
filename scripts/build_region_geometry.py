@@ -34,7 +34,7 @@ def contours(source,destination):
     if not out.count:raise ValueError('No contours')
     return out.count
 
-def permanent_ice_class(tags):
+def permanent_ice_class(tags, *, glaciers_as_snowfields=False):
     if tags.get('seasonal') == 'yes' or tags.get('intermittent') == 'yes':
         return None
     natural = tags.get('natural')
@@ -45,10 +45,10 @@ def permanent_ice_class(tags):
         if glacier_type == 'snowfield':
             return 'permanent_snow'
         if glacier_type != 'rock':
-            return 'glacier'
+            return 'permanent_snow' if glaciers_as_snowfields else 'glacier'
     return None
 
-def landcover(source,destination,bounds=None,*,permanent_ice=False,ice_footprint=None,ice_only=False):
+def landcover(source,destination,bounds=None,*,permanent_ice=False,ice_footprint=None,ice_only=False,glaciers_as_snowfields=False):
     import osmium
     from shapely.geometry import shape,box
     extent=box(*bounds) if bounds else None
@@ -66,7 +66,7 @@ def landcover(source,destination,bounds=None,*,permanent_ice=False,ice_footprint
             if natural in ('bare_rock','scree','shingle'):cl=natural
             if natural=='bog' or natural=='wetland' and wetland in ('bog','string_bog'):cl='bog'
             if permanent_ice:
-                cl = permanent_ice_class(tags) or cl
+                cl = permanent_ice_class(tags, glaciers_as_snowfields=glaciers_as_snowfields) or cl
             if not cl or (ice_only and cl not in ice_counts):return
             try:
                 original=json.loads(factory.create_multipolygon(a))
@@ -129,7 +129,7 @@ def build(region,topography):
         from shapely.prepared import prep
         coverage = json.loads(region_path(region,'coverage.geojson').read_text())
         ice_footprint = prep(unary_union([shape(feature['geometry']) for feature in coverage['features']]))
-    counts={'contours':contours(topography/'contours.geojson',dest/'contours.geojson'),'landcover':landcover(osm,dest/'landcover.geojson',p['bounds'] if p.get('clipBasemap') else None,permanent_ice=p.get('permanentIce',False),ice_footprint=ice_footprint),'grid':grid(region,dest)}
+    counts={'contours':contours(topography/'contours.geojson',dest/'contours.geojson'),'landcover':landcover(osm,dest/'landcover.geojson',p['bounds'] if p.get('clipBasemap') else None,permanent_ice=p.get('permanentIce',False),ice_footprint=ice_footprint,glaciers_as_snowfields=p.get('glaciersAsSnowfields',False)),'grid':grid(region,dest)}
     report = {'region':region,'counts':counts,'osm':source,'contoursSourceSHA256':digest(topography/'contours.geojson'),'outputs':{f.name:digest(f) for f in dest.glob('*.geojson')},'builderSHA256':digest(Path(__file__)),'smootherSHA256':digest(Path(__file__).with_name('smooth_geometry.py'))}
     if p.get('permanentIce'):
         report['permanentIce'] = counts['landcover']['permanentIce']

@@ -1,97 +1,43 @@
 {
-  "id": "high-tatras",
-  "name": "OpenBareMap High Tatras",
-  "label": "High Tatras",
-  "mapVersion": "2.0.0",
-  "minzoom": 4,
-  "maxzoom": 14,
-  "coverage": "The High Tatras on both sides of the Polish–Slovak border, including Zakopane, Morskie Oko, Štrbské Pleso, Tatranská Lomnica and the approaches from Poprad.",
   "bounds": [
     19.68,
     48.94,
     20.5,
     49.44
   ],
-  "terrainBounds": [
-    19,
-    48,
-    21,
-    50
-  ],
+  "clipBasemap": true,
+  "clipSource": true,
   "coastContextBounds": [
     18,
     47,
     22,
     51
   ],
-  "projectedCRS": "EPSG:25834",
-  "gridCRS": "EPSG:25834",
-  "gridName": "ETRS89 / UTM 34N",
-  "gridSource": "utm-grid",
-  "gridExtent": [
-    400000,
-    470000,
-    5420000,
-    5480000
-  ],
-  "townlands": false,
   "contourIntervalMetres": 20,
-  "minorWaterwayMinzoom": 10,
-  "sourceDate": "2026-11-20",
-  "sourceSlugs": [
-    "malopolskie",
-    "slovakia"
-  ],
-  "sourceBaseURL": "https://download.geofabrik.de/europe/",
-  "sourceBaseOverrides": {
-    "malopolskie": "https://download.geofabrik.de/europe/poland/malopolskie/",
-    "slovakia": "https://download.geofabrik.de/europe/slovakia/"
+  "coverage": "The High Tatras on both sides of the Polish\u2013Slovak border, including Zakopane, Morskie Oko, \u0160trbsk\u00e9 Pleso, Tatransk\u00e1 Lomnica and the approaches from Poprad.",
+  "destinationLabels": {
+    "chocholowska": "Dolina Chocho\u0142owska",
+    "island": "High Tatras",
+    "kuznice": "Ku\u017anice",
+    "morskie-oko": "Morskie Oko",
+    "poprad": "Poprad",
+    "rysy": "Rysy",
+    "stary-smokovec": "Star\u00fd Smokovec",
+    "strbske-pleso": "\u0160trbsk\u00e9 Pleso",
+    "tatranska-lomnica": "Tatransk\u00e1 Lomnica",
+    "zakopane": "Zakopane",
+    "zdiar": "\u017ddiar"
   },
-  "nativeLanguage": "sk",
-  "clipSource": true,
-  "clipBasemap": true,
-  "ignoreSourceHeaderBounds": true,
-  "garminUseSourceOutline": true,
-  "garminContextBounds": [
-    19.68,
-    48.94,
-    20.5,
-    49.44
-  ],
-  "garminFamilyId": 4865,
-  "garminTileStartId": 48650001,
-  "garminFilename": "OpenBareMap-High-Tatras.img",
-  "garminPackageRevision": "2.0.1-trail-detail-r1",
-  "styleRevision": "2.0.0-high-tatras-r1",
-  "requireBogFeatures": false,
-  "inspectionNames": [
-    "Zakopane",
-    "Poprad",
-    "Rysy"
-  ],
-  "optionalBasemapLayers": [
-    "ferry",
-    "island_name",
-    "cycling_route",
-    "railway",
-    "station",
-    "hiking_route",
-    "boundary"
-  ],
-  "terrainProvider": "copernicus-glo30",
-  "terrainAttribution": "Copernicus DEM GLO-30 · European Union / ESA · DLR / Airbus",
-  "terrainNotice": "High Tatras elevation: Copernicus DEM GLO-30 Public (AWS 2021 release).\n\nproduced using Copernicus WorldDEM-30 © DLR e.V. 2010-2014 and © Airbus Defence and Space GmbH 2014-2018 provided under COPERNICUS by the European Union and ESA; all rights reserved\n\nThe organisations in charge of the Copernicus programme by law or by delegation do not incur any liability for any use of the Copernicus WorldDEM-30.\n\nLicense: https://dataspace.copernicus.eu/sites/default/files/media/files/2025-06/copernicus_contributing_mission_data_access_v2_cop_dem_licenses.pdf\nSource: https://registry.opendata.aws/copernicus-dem/\nVertical datum: EGM2008 orthometric metres. Native approximately 30 m cells are bilinearly resampled to point-aligned Int16 HGT for the shared terrain pipeline. Ocean-only cells absent from the official public inventory are zero.\n",
-  "labelGlyphs": "ABCDEFGHIJKLMNOPQRSTUVWXYZĄąÁáÄäĆćČčĎďĘęÉéÍíĹĺĽľŁłŃńÓóÔôŔŕŚśŠšŤťÚúÝýŹźŻżŽž",
   "destinations": {
+    "chocholowska": [
+      19.789,
+      49.236,
+      12
+    ],
     "island": [
       20.055,
       49.192,
       10
-    ],
-    "zakopane": [
-      19.949,
-      49.299,
-      12
     ],
     "kuznice": [
       19.981,
@@ -103,14 +49,14 @@
       49.20145,
       13
     ],
+    "poprad": [
+      20.302,
+      49.059,
+      12
+    ],
     "rysy": [
       20.08808,
       49.17946,
-      13
-    ],
-    "strbske-pleso": [
-      20.06358,
-      49.11828,
       13
     ],
     "stary-smokovec": [
@@ -118,44 +64,102 @@
       49.141,
       13
     ],
+    "strbske-pleso": [
+      20.06358,
+      49.11828,
+      13
+    ],
     "tatranska-lomnica": [
       20.278,
       49.166,
       13
     ],
+    "zakopane": [
+      19.949,
+      49.299,
+      12
+    ],
     "zdiar": [
       20.263,
       49.271,
       12
-    ],
-    "poprad": [
-      20.302,
-      49.059,
-      12
-    ],
-    "chocholowska": [
-      19.789,
-      49.236,
-      12
     ]
   },
-  "destinationLabels": {
-    "island": "High Tatras",
-    "zakopane": "Zakopane",
-    "kuznice": "Kuźnice",
-    "morskie-oko": "Morskie Oko",
-    "rysy": "Rysy",
-    "strbske-pleso": "Štrbské Pleso",
-    "stary-smokovec": "Starý Smokovec",
-    "tatranska-lomnica": "Tatranská Lomnica",
-    "zdiar": "Ždiar",
-    "poprad": "Poprad",
-    "chocholowska": "Dolina Chochołowska"
+  "garminContextBounds": [
+    19.68,
+    48.94,
+    20.5,
+    49.44
+  ],
+  "garminFamilyId": 4865,
+  "garminFilename": "OpenBareMap-High-Tatras-Snowfields.img",
+  "garminPackageRevision": "2.0.1-snowfields-r1",
+  "garminTileStartId": 48650001,
+  "garminUseSourceOutline": true,
+  "glaciersAsSnowfields": true,
+  "gridCRS": "EPSG:25834",
+  "gridExtent": [
+    400000,
+    470000,
+    5420000,
+    5480000
+  ],
+  "gridName": "ETRS89 / UTM 34N",
+  "gridSource": "utm-grid",
+  "id": "high-tatras",
+  "ignoreSourceHeaderBounds": true,
+  "inspectionNames": [
+    "Zakopane",
+    "Poprad",
+    "Rysy"
+  ],
+  "label": "High Tatras",
+  "labelGlyphs": "ABCDEFGHIJKLMNOPQRSTUVWXYZ\u0104\u0105\u00c1\u00e1\u00c4\u00e4\u0106\u0107\u010c\u010d\u010e\u010f\u0118\u0119\u00c9\u00e9\u00cd\u00ed\u0139\u013a\u013d\u013e\u0141\u0142\u0143\u0144\u00d3\u00f3\u00d4\u00f4\u0154\u0155\u015a\u015b\u0160\u0161\u0164\u0165\u00da\u00fa\u00dd\u00fd\u0179\u017a\u017b\u017c\u017d\u017e",
+  "mapVersion": "2.0.1",
+  "maxzoom": 14,
+  "minorWaterwayMinzoom": 10,
+  "minzoom": 4,
+  "name": "OpenBareMap High Tatras",
+  "nativeLanguage": "sk",
+  "optionalBasemapLayers": [
+    "ferry",
+    "island_name",
+    "cycling_route",
+    "railway",
+    "station",
+    "hiking_route",
+    "boundary"
+  ],
+  "permanentIce": true,
+  "permanentIceLayer": "permanent_ice",
+  "permanentIceSourceNote": "OpenStreetMap outlines show mapped perennial snow and firn ice patches. Their extent and persistence can vary.",
+  "projectedCRS": "EPSG:25834",
+  "requireBogFeatures": false,
+  "sourceBaseOverrides": {
+    "malopolskie": "https://download.geofabrik.de/europe/poland/malopolskie/",
+    "slovakia": "https://download.geofabrik.de/europe/slovakia/"
   },
+  "sourceBaseURL": "https://download.geofabrik.de/europe/",
+  "sourceDate": "2026-11-20",
+  "sourceSlugs": [
+    "malopolskie",
+    "slovakia"
+  ],
+  "styleRevision": "2.0.1-snowfields-r1",
+  "terrainAttribution": "Copernicus DEM GLO-30 \u00b7 European Union / ESA \u00b7 DLR / Airbus",
+  "terrainBounds": [
+    19,
+    48,
+    21,
+    50
+  ],
+  "terrainNotice": "High Tatras elevation: Copernicus DEM GLO-30 Public (AWS 2021 release).\n\nproduced using Copernicus WorldDEM-30 \u00a9 DLR e.V. 2010-2014 and \u00a9 Airbus Defence and Space GmbH 2014-2018 provided under COPERNICUS by the European Union and ESA; all rights reserved\n\nThe organisations in charge of the Copernicus programme by law or by delegation do not incur any liability for any use of the Copernicus WorldDEM-30.\n\nLicense: https://dataspace.copernicus.eu/sites/default/files/media/files/2025-06/copernicus_contributing_mission_data_access_v2_cop_dem_licenses.pdf\nSource: https://registry.opendata.aws/copernicus-dem/\nVertical datum: EGM2008 orthometric metres. Native approximately 30 m cells are bilinearly resampled to point-aligned Int16 HGT for the shared terrain pipeline. Ocean-only cells absent from the official public inventory are zero.\n",
+  "terrainProvider": "copernicus-glo30",
+  "townlands": false,
   "validationAnchors": {
-    "zakopane": [
-      19.949,
-      49.299
+    "chocholowska": [
+      19.789,
+      49.236
     ],
     "kuznice": [
       19.981,
@@ -165,33 +169,33 @@
       20.07075,
       49.20145
     ],
+    "poprad": [
+      20.302,
+      49.059
+    ],
     "rysy": [
       20.08808,
       49.17946
-    ],
-    "strbske-pleso": [
-      20.06358,
-      49.11828
     ],
     "stary-smokovec": [
       20.222,
       49.141
     ],
+    "strbske-pleso": [
+      20.06358,
+      49.11828
+    ],
     "tatranska-lomnica": [
       20.278,
       49.166
     ],
+    "zakopane": [
+      19.949,
+      49.299
+    ],
     "zdiar": [
       20.263,
       49.271
-    ],
-    "poprad": [
-      20.302,
-      49.059
-    ],
-    "chocholowska": [
-      19.789,
-      49.236
     ]
   }
 }
