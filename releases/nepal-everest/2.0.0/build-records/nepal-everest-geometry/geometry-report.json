@@ -1,0 +1,42 @@
+{
+  "builderSHA256": "f5e94cbef223bb0e9403950eab9d79021a1429ee132959b9cf627eb677ab8606",
+  "contoursSourceSHA256": "9fc4830a0e95a7bcba96cd97ba872c1212646ed1fb909b05a99e00afa66e1582",
+  "counts": {
+    "contours": 11056,
+    "grid": {
+      "grid_10km": 17,
+      "grid_1km": 152
+    },
+    "landcover": {
+      "empty_source_areas": [],
+      "features": 1235,
+      "permanentIce": {
+        "glacier": 388,
+        "permanent_snow": 1
+      },
+      "retained": 394,
+      "smoothed": 841
+    }
+  },
+  "osm": {
+    "bytes": 7405595,
+    "operation": "Complete-feature regional extract with Latin cartographic names",
+    "path": "data/regions/nepal-everest/nepal-261122.osm.clipped.latin.osm.pbf",
+    "replicationTimestamp": "2026-11-22T21:20:48Z",
+    "sha256": "fd59026c24503c35fff251a6c54fc1e84291f99845917e29effe25401d0a2c81",
+    "snapshot_date": "2026-11-22",
+    "url": "https://download.geofabrik.de/asia/nepal/nepal-261122.osm.pbf"
+  },
+  "outputs": {
+    "contours.geojson": "064b90f40e30294facb8d1c3484a06dedf9f49514c4be51ffe8bfe8454d85ab7",
+    "grid_10km.geojson": "d6a898da064a9fbb0c8e7d2b3d20eee605a88ad830359168e9ce4e80ea47fd03",
+    "grid_1km.geojson": "216199a1f022197f6fa246580e5b0c356736c75517cb12e47033548f526cfb60",
+    "landcover.geojson": "ef9ed8330d9c4bd20ee6fe0b157206cf642c73618108c60e585cdfcd7bb9fc5a"
+  },
+  "permanentIce": {
+    "glacier": 388,
+    "permanent_snow": 1
+  },
+  "region": "nepal-everest",
+  "smootherSHA256": "7581d024dc1c1bec931642c7201db149bf64a64c814c451fa8bf37a0881ea6c9"
+}

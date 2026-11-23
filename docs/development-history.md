@@ -2,6 +2,15 @@
 
 This document records the development of OpenBareMap and the structure of its build pipeline. The [main README](../README.md) describes the available map and platform packages.
 
+## 23 November 2026 · Nepal trekking maps
+
+Everest & Khumbu adds the Lukla approaches, Everest Base Camp, Gokyo and the
+Three Passes circuit. Annapurna adds the Circuit and Base Camp as a separate
+edition. Both use 20 m contours, hillshade, mapped glaciers and permanent
+snowfields. The Nepal build preserves original OSM place names in the
+source extract and prepares Latin-script cartographic labels for the
+Garmin, app and web outputs. See the [Nepal trekking guide](regional-editions.md#nepal-trekking).
+
 ## 23 November 2026 · Iceland and Patagonia
 
 Built and structurally validated Southern Highlands, Torres del Paine and El

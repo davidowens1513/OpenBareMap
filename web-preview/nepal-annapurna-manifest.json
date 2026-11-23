@@ -1,0 +1,41 @@
+{
+  "regions": {
+    "nepal-annapurna": {
+      "basemap": {
+        "sourceSHA256": "71155c900ab3eea53ea24316a089cf939eb28e2a7c36cb82fa901c14ee54e739",
+        "bytes": 36430440,
+        "sha256": "9d10828e0ff65c62108302b7c2e9dac7c592da3d8de58d21e7a6ea02c5c58843",
+        "tiles": 3231
+      },
+      "grid": {
+        "sourceSHA256": "3a9cb5bfb5a80bd127dcc88f6245012ed0ec461a42e9de362d248e2469e3fd96",
+        "bytes": 1117513,
+        "sha256": "7af9be13320ee7c0078ecc73451e22546b28a8a3560e29fd92e6422c1d257b80",
+        "tiles": 3325
+      },
+      "hillshade": {
+        "sourceSHA256": "7e00c45a03b45c1a2ec991383100fd54ce6cb7507fb382c7f3ff848ef90c03c2",
+        "bytes": 12182915,
+        "sha256": "5fe32fb3e0bcca5392ab9dbb518c688aa8cc8359cd82f20754bde684fd08d312",
+        "tiles": 255
+      },
+      "topography": {
+        "sourceSHA256": "18fa2df20f36ccbef5daa3b19f1f9a10af22b97cfecdc7b470d0913d05979078",
+        "bytes": 125146118,
+        "sha256": "4ad1d81ec0d9c3677f051c08cb86ef4ef7c6f836d97b7986cb68a9040f2eac44",
+        "tiles": 38585
+      },
+      "coast": {
+        "sourceSHA256": "8806a2e707489525ea01299ab3d408922f9b3142a16cf79f97e53558d968a291",
+        "bytes": 20581,
+        "sha256": "342364c523e1e4d00e737ebc6cc849c0fe7b7e7a4367f91e369674b70a43ac6d",
+        "tiles": 2586
+      }
+    }
+  },
+  "pmtilesPython": "3.8.1",
+  "pmtilesJS": "4.5.0",
+  "librarySHA256": "caf981bc46f6327ee7e65d5dc964d89d38a69f60edca2bd4c5c890c21b554c6c",
+  "dataOrigin": "https://downloads.appsbyonzy.dev/OpenBareMap/nepal-annapurna/2.0.0/preview",
+  "scope": "Complete selected map tiles; no regional or zoom sampling."
+}

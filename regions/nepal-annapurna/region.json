@@ -1,0 +1,193 @@
+{
+  "appBundleName": "Nepal-Annapurna",
+  "bounds": [
+    83.42,
+    28.1,
+    84.57,
+    28.97
+  ],
+  "clipBasemap": true,
+  "clipSource": true,
+  "clipTerrainToBounds": true,
+  "coastContextBounds": [
+    82,
+    27,
+    86,
+    30
+  ],
+  "contourIntervalMetres": 20,
+  "coverage": "The Annapurna Circuit and Annapurna Base Camp, covering Besisahar, Manang, Thorong La, Muktinath, Jomsom, Tatopani, Ghorepani and the Pokhara approaches.",
+  "destinationLabels": {
+    "annapurna-base-camp": "Annapurna Base Camp",
+    "besisahar": "Besisahar",
+    "ghorepani": "Ghorepani",
+    "island": "Annapurna",
+    "jomsom": "Jomsom",
+    "manang": "Manang",
+    "muktinath": "Muktinath",
+    "pokhara": "Pokhara",
+    "tatopani": "Tatopani",
+    "thorong-la": "Thorong La"
+  },
+  "destinations": {
+    "annapurna-base-camp": [
+      83.8797849,
+      28.5310167,
+      13
+    ],
+    "besisahar": [
+      84.377,
+      28.234,
+      13
+    ],
+    "ghorepani": [
+      83.697,
+      28.401,
+      13
+    ],
+    "island": [
+      83.98,
+      28.57,
+      9
+    ],
+    "jomsom": [
+      83.7304953,
+      28.7838097,
+      13
+    ],
+    "manang": [
+      84.02,
+      28.666,
+      13
+    ],
+    "muktinath": [
+      83.872,
+      28.818,
+      13
+    ],
+    "pokhara": [
+      83.991402,
+      28.209538,
+      12
+    ],
+    "tatopani": [
+      83.653,
+      28.491,
+      13
+    ],
+    "thorong-la": [
+      83.9387583,
+      28.7935291,
+      13
+    ]
+  },
+  "garminContextBounds": [
+    83.42,
+    28.1,
+    84.57,
+    28.97
+  ],
+  "garminFamilyId": 4873,
+  "garminFilename": "OpenBareMap-Nepal-Annapurna.img",
+  "garminPackageRevision": "2.0.1-glacier-r1",
+  "garminTileStartId": 48730001,
+  "garminUseSourceOutline": true,
+  "gridCRS": "EPSG:32644",
+  "gridExtent": [
+    730000,
+    860000,
+    3110000,
+    3220000
+  ],
+  "gridName": "WGS 84 / UTM 44N",
+  "gridSource": "utm-grid",
+  "id": "nepal-annapurna",
+  "ignoreSourceHeaderBounds": true,
+  "inspectionNames": [
+    "Pokhara",
+    "Jomsom"
+  ],
+  "label": "Annapurna",
+  "labelGlyphs": "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz",
+  "mapVersion": "2.0.0",
+  "maxzoom": 14,
+  "minorWaterwayMinzoom": 10,
+  "minzoom": 4,
+  "name": "OpenBareMap Annapurna",
+  "nativeLanguage": "ne",
+  "optionalBasemapLayers": [
+    "ferry",
+    "island_name",
+    "cycling_route",
+    "railway",
+    "station",
+    "hiking_route",
+    "boundary"
+  ],
+  "permanentIce": true,
+  "projectedCRS": "EPSG:32644",
+  "repairClippedCoastline": true,
+  "requireBogFeatures": false,
+  "requiredPermanentIce": [
+    "glacier"
+  ],
+  "sourceBaseOverrides": {
+    "nepal": "https://download.geofabrik.de/asia/nepal/"
+  },
+  "sourceBaseURL": "https://download.geofabrik.de/asia/",
+  "sourceCacheRegion": "nepal",
+  "sourceDate": "2026-11-22",
+  "sourceSlugs": [
+    "nepal"
+  ],
+  "styleRevision": "2.0.0-nepal-annapurna-r1",
+  "terrainAttribution": "Copernicus DEM GLO-30 \u00b7 European Union / ESA \u00b7 DLR / Airbus",
+  "terrainBounds": [
+    83,
+    28,
+    85,
+    29
+  ],
+  "terrainCacheRegion": "nepal",
+  "terrainNotice": "Annapurna elevation: Copernicus DEM GLO-30 Public (AWS 2021 release).\n\nproduced using Copernicus WorldDEM-30 \u00a9 DLR e.V. 2010-2014 and \u00a9 Airbus Defence and Space GmbH 2014-2018 provided under COPERNICUS by the European Union and ESA; all rights reserved\n\nThe organisations in charge of the Copernicus programme by law or by delegation do not incur any liability for any use of the Copernicus WorldDEM-30.\n\nLicense: https://dataspace.copernicus.eu/sites/default/files/media/files/2025-06/copernicus_contributing_mission_data_access_v2_cop_dem_licenses.pdf\nSource: https://registry.opendata.aws/copernicus-dem/\nVertical datum: EGM2008 orthometric metres. Native approximately 30 m cells are bilinearly resampled to point-aligned Int16 HGT for the shared terrain pipeline. Ocean-only cells absent from the official public inventory are zero.\n",
+  "terrainProvider": "copernicus-glo30",
+  "townlands": false,
+  "validationAnchors": {
+    "annapurna-base-camp": [
+      83.8797849,
+      28.5310167
+    ],
+    "besisahar": [
+      84.377,
+      28.234
+    ],
+    "ghorepani": [
+      83.697,
+      28.401
+    ],
+    "jomsom": [
+      83.7304953,
+      28.7838097
+    ],
+    "manang": [
+      84.02,
+      28.666
+    ],
+    "muktinath": [
+      83.872,
+      28.818
+    ],
+    "pokhara": [
+      83.991402,
+      28.209538
+    ],
+    "tatopani": [
+      83.653,
+      28.491
+    ],
+    "thorong-la": [
+      83.9387583,
+      28.7935291
+    ]
+  }
+}

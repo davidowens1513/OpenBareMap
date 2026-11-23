@@ -335,6 +335,15 @@ data/regions/norway-*/copernicus/*
 /releases/iceland-southern-highlands/*/app-bundles-v1/**/*.zip
 /releases/patagonia-*/*/app-bundles-v1/**/*.zip
 
+# Rebuildable Nepal source data, intermediates and delivery binaries
+/data/regions/nepal*/
+/regions/nepal-*/exports/
+/regions/nepal-*/garmin/coastal-context/
+/regions/nepal-*/garmin/inputs/*.geojson.gz
+/regions/nepal-*/garmin/dist/*.img
+/releases/nepal-*/*/maps/
+/releases/nepal-*/*/app-bundles-v1/**/*.zip
+
 # Glacier revisions are distributed from R2 under new URLs.
 /regions/*/garmin/dist/*-Glaciers.img
 /regions/*/garmin/inputs/permanent-ice.geojson.gz

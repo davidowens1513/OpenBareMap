@@ -1,0 +1,49 @@
+{
+  "accessed_utc": "2026-11-23T09:42:37.603921+00:00",
+  "clippedOSM": {
+    "bytes": 29851916,
+    "operation": "Complete-feature bbox extraction with nested relation references",
+    "path": "data/regions/nepal-annapurna/nepal-261122.osm.clipped.osm.pbf",
+    "replicationTimestamp": "2026-11-22T21:20:48Z",
+    "sha256": "0bb7da2d731ee91b9d7cc4a23e8e9a437cffa9f7f945bdf577c29918b041a732",
+    "snapshot_date": "2026-11-22",
+    "url": "https://download.geofabrik.de/asia/nepal/nepal-261122.osm.pbf"
+  },
+  "inputs": [
+    {
+      "bytes": 415145746,
+      "path": "data/regions/nepal/nepal-261122.osm.pbf",
+      "replicationTimestamp": "2026-11-22T21:20:48Z",
+      "sha256": "7811378d87eab636184745c061a4060449e616fcc5c35a7ea3f41eb267d9c35c",
+      "url": "https://download.geofabrik.de/asia/nepal/nepal-261122.osm.pbf"
+    }
+  ],
+  "labelPreparation": {
+    "nameFields": [
+      "name",
+      "official_name",
+      "short_name"
+    ],
+    "rule": "Devanagari-Latin; Latin-ASCII; strip combining marks",
+    "transliterator": "uconv v2.1  ICU 78.3",
+    "uniqueDevanagariLabels": 1580,
+    "updatedObjects": 1762
+  },
+  "osm": {
+    "bytes": 29856536,
+    "operation": "Complete-feature regional extract with Latin cartographic names",
+    "path": "data/regions/nepal-annapurna/nepal-261122.osm.clipped.latin.osm.pbf",
+    "replicationTimestamp": "2026-11-22T21:20:48Z",
+    "sha256": "94c1a3ab830522683bf23b7b5154a7ecd246ef93cd5e2eb040478d3f2cc806dd",
+    "snapshot_date": "2026-11-22",
+    "url": "https://download.geofabrik.de/asia/nepal/nepal-261122.osm.pbf"
+  },
+  "polygons": [
+    {
+      "bytes": 7424,
+      "path": "data/regions/nepal-annapurna/nepal.poly",
+      "sha256": "d29728943b701d54a01735b44a5203d430e24501d49c2cd1095d928076b0bda4",
+      "url": "https://download.geofabrik.de/asia/nepal/nepal.poly"
+    }
+  ]
+}

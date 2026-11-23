@@ -1,0 +1,52 @@
+{
+  "contourIntervalMetres": 20,
+  "coverage": "Everest Base Camp from Lukla via Namche Bazaar, Tengboche and Gorak Shep, plus Gokyo and the Three Passes circuit on the Nepal side.",
+  "datasets": {
+    "basemap": {
+      "bytes": 5189632,
+      "path": "releases/nepal-everest/2.0.0/maps/basemap.mbtiles",
+      "sha256": "a5a3c6e78848a7931c74322051dded4a2e8426ad972c937f54a0fbe878c0886c",
+      "validation": {
+        "empty_tile_count": 1,
+        "logical_tiles_sha256": "8ba18815a432eb4c60581d3af18a13ff811e85c2327ba907058278eaabbe1291",
+        "tile_count": 1155
+      }
+    },
+    "grid": {
+      "bytes": 446464,
+      "path": "releases/nepal-everest/2.0.0/maps/grid.mbtiles",
+      "sha256": "d85c9e258e1fcb3f4e7e4158f28e5f7cea426650eb065802967c0293cb0b0de0",
+      "validation": {
+        "empty_tile_count": 0,
+        "logical_tiles_sha256": "92d98609ceb7f6406b1db16a105af6e4b50c1c618a03bc13647adac3bfb5ab29",
+        "tile_count": 1183
+      }
+    },
+    "hillshade": {
+      "bytes": 4304896,
+      "path": "releases/nepal-everest/2.0.0/maps/hillshade.mbtiles",
+      "sha256": "b7f93a6c9d0e79d8b90cd79b7e307009a5e9d5c5c1dd60d3c5f0cb0d02c0cbd6",
+      "validation": {
+        "empty_tile_count": 0,
+        "logical_tiles_sha256": "64bcdf547d14e053ca69faf251297f7a76031f5c3ea786a2654967307121b3c6",
+        "tile_count": 98
+      }
+    },
+    "topography": {
+      "bytes": 46837760,
+      "path": "releases/nepal-everest/2.0.0/maps/topography-context.mbtiles",
+      "sha256": "91e50a607ebbcf0af23422df324c1827ea0b35beefa558f6d07f9009f81d0c5c",
+      "validation": {
+        "empty_tile_count": 34443,
+        "logical_tiles_sha256": "dce6173ad5ce45e9ffa3a70cd8f04875bb7cf1ca857e9811b05d15da8efc474c",
+        "tile_count": 38080
+      }
+    }
+  },
+  "format": "openbaremap-development-viewer-v1",
+  "localBorders": false,
+  "mapVersion": "2.0.0",
+  "region": "nepal-everest",
+  "storageRevision": "2.0.0-nepal-everest-r3",
+  "styleRevision": "2.0.0-nepal-everest-r1"
+}

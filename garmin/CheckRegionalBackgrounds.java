@@ -54,6 +54,8 @@ public class CheckRegionalBackgrounds {
    case "iceland-southern-highlands" -> new double[][]{{-21.94,64.15},{-17.96,64.06},{-19.49,63.27}};
    case "patagonia-torres-del-paine" -> new double[][]{{-72.89,-49.33},{-72.26,-50.34},{-73.03,-51.91}};
    case "patagonia-el-chalten" -> new double[][]{{-72.51,-51.73},{-73.09,-51.07},{-72.77,-48.75}};
+   case "nepal-everest" -> new double[][]{{86.72,27.48},{87.06,27.84},{86.72,28.20}};
+   case "nepal-annapurna" -> new double[][]{{83.36,28.65},{84.61,28.45},{83.94,29.02}};
    default -> throw new IllegalArgumentException(args[0]);
   };
   int tiles=0,polygons=0;Set<Integer> resolutions=new TreeSet<>();

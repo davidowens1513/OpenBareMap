@@ -1,0 +1,55 @@
+{
+  "features": [
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              84.26041,
+              28.93062
+            ],
+            [
+              84.42173,
+              28.8794
+            ],
+            [
+              84.48635,
+              28.78162
+            ],
+            [
+              84.57,
+              28.7700769636863
+            ],
+            [
+              84.57,
+              28.1
+            ],
+            [
+              83.42,
+              28.1
+            ],
+            [
+              83.42,
+              28.97
+            ],
+            [
+              84.2672617923675,
+              28.97
+            ],
+            [
+              84.26041,
+              28.93062
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "properties": {
+        "purpose": "Limit opaque native background and land-cover polygons; retain complete accepted OSM and terrain inputs",
+        "region": "nepal-annapurna"
+      },
+      "type": "Feature"
+    }
+  ],
+  "type": "FeatureCollection"
+}

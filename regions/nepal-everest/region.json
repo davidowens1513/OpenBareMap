@@ -1,0 +1,203 @@
+{
+  "appBundleName": "Nepal-Everest",
+  "bounds": [
+    86.4,
+    27.52,
+    86.999,
+    28.1
+  ],
+  "clipBasemap": true,
+  "clipSource": true,
+  "clipTerrainToBounds": true,
+  "coastContextBounds": [
+    85,
+    26,
+    88,
+    30
+  ],
+  "contourIntervalMetres": 20,
+  "coverage": "Everest Base Camp from Lukla via Namche Bazaar, Tengboche and Gorak Shep, plus Gokyo and the Three Passes circuit on the Nepal side.",
+  "destinationLabels": {
+    "cho-la": "Cho La",
+    "dingboche": "Dingboche",
+    "everest-base-camp": "Everest Base Camp",
+    "gokyo": "Gokyo",
+    "gorak-shep": "Gorak Shep",
+    "island": "Everest & Khumbu",
+    "kongma-la": "Kongma La",
+    "lukla": "Lukla",
+    "namche": "Namche Bazaar",
+    "renjo-la": "Renjo La",
+    "tengboche": "Tengboche"
+  },
+  "destinations": {
+    "cho-la": [
+      86.7516374,
+      27.9617246,
+      13
+    ],
+    "dingboche": [
+      86.829,
+      27.894,
+      13
+    ],
+    "everest-base-camp": [
+      86.8487946,
+      27.9996646,
+      13
+    ],
+    "gokyo": [
+      86.694588,
+      27.954088,
+      13
+    ],
+    "gorak-shep": [
+      86.828,
+      27.977,
+      13
+    ],
+    "island": [
+      86.73,
+      27.82,
+      9
+    ],
+    "kongma-la": [
+      86.8362191,
+      27.9297049,
+      13
+    ],
+    "lukla": [
+      86.7306718,
+      27.6889719,
+      13
+    ],
+    "namche": [
+      86.7097956,
+      27.8041662,
+      13
+    ],
+    "renjo-la": [
+      86.6584966,
+      27.9473697,
+      13
+    ],
+    "tengboche": [
+      86.763,
+      27.836,
+      13
+    ]
+  },
+  "garminContextBounds": [
+    86.4,
+    27.52,
+    86.999,
+    28.1
+  ],
+  "garminFamilyId": 4872,
+  "garminFilename": "OpenBareMap-Nepal-Everest.img",
+  "garminPackageRevision": "2.0.1-glacier-r1",
+  "garminTileStartId": 48720001,
+  "garminUseSourceOutline": true,
+  "gridCRS": "EPSG:32645",
+  "gridExtent": [
+    440000,
+    510000,
+    3040000,
+    3120000
+  ],
+  "gridName": "WGS 84 / UTM 45N",
+  "gridSource": "utm-grid",
+  "id": "nepal-everest",
+  "ignoreSourceHeaderBounds": true,
+  "inspectionNames": [
+    "Lukla",
+    "Namche Bazaar"
+  ],
+  "label": "Everest & Khumbu",
+  "labelGlyphs": "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz",
+  "mapVersion": "2.0.0",
+  "maxzoom": 14,
+  "minorWaterwayMinzoom": 10,
+  "minzoom": 4,
+  "name": "OpenBareMap Everest & Khumbu",
+  "nativeLanguage": "ne",
+  "optionalBasemapLayers": [
+    "ferry",
+    "island_name",
+    "cycling_route",
+    "railway",
+    "station",
+    "hiking_route",
+    "boundary"
+  ],
+  "permanentIce": true,
+  "projectedCRS": "EPSG:32645",
+  "repairClippedCoastline": true,
+  "requireBogFeatures": false,
+  "requiredPermanentIce": [
+    "glacier"
+  ],
+  "sourceBaseOverrides": {
+    "nepal": "https://download.geofabrik.de/asia/nepal/"
+  },
+  "sourceBaseURL": "https://download.geofabrik.de/asia/",
+  "sourceCacheRegion": "nepal",
+  "sourceDate": "2026-11-22",
+  "sourceSlugs": [
+    "nepal"
+  ],
+  "styleRevision": "2.0.0-nepal-everest-r1",
+  "terrainAttribution": "Copernicus DEM GLO-30 \u00b7 European Union / ESA \u00b7 DLR / Airbus",
+  "terrainBounds": [
+    86,
+    27,
+    87,
+    29
+  ],
+  "terrainCacheRegion": "nepal",
+  "terrainNotice": "Everest & Khumbu elevation: Copernicus DEM GLO-30 Public (AWS 2021 release).\n\nproduced using Copernicus WorldDEM-30 \u00a9 DLR e.V. 2010-2014 and \u00a9 Airbus Defence and Space GmbH 2014-2018 provided under COPERNICUS by the European Union and ESA; all rights reserved\n\nThe organisations in charge of the Copernicus programme by law or by delegation do not incur any liability for any use of the Copernicus WorldDEM-30.\n\nLicense: https://dataspace.copernicus.eu/sites/default/files/media/files/2025-06/copernicus_contributing_mission_data_access_v2_cop_dem_licenses.pdf\nSource: https://registry.opendata.aws/copernicus-dem/\nVertical datum: EGM2008 orthometric metres. Native approximately 30 m cells are bilinearly resampled to point-aligned Int16 HGT for the shared terrain pipeline. Ocean-only cells absent from the official public inventory are zero.\n",
+  "terrainProvider": "copernicus-glo30",
+  "townlands": false,
+  "validationAnchors": {
+    "cho-la": [
+      86.7516374,
+      27.9617246
+    ],
+    "dingboche": [
+      86.829,
+      27.894
+    ],
+    "everest-base-camp": [
+      86.8487946,
+      27.9996646
+    ],
+    "gokyo": [
+      86.694588,
+      27.954088
+    ],
+    "gorak-shep": [
+      86.828,
+      27.977
+    ],
+    "kongma-la": [
+      86.8362191,
+      27.9297049
+    ],
+    "lukla": [
+      86.7306718,
+      27.6889719
+    ],
+    "namche": [
+      86.7097956,
+      27.8041662
+    ],
+    "renjo-la": [
+      86.6584966,
+      27.9473697
+    ],
+    "tengboche": [
+      86.763,
+      27.836
+    ]
+  }
+}

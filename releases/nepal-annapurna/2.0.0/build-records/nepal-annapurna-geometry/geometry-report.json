@@ -1,0 +1,42 @@
+{
+  "builderSHA256": "f5e94cbef223bb0e9403950eab9d79021a1429ee132959b9cf627eb677ab8606",
+  "contoursSourceSHA256": "d6479efd2bf5757dc1fc981f631cb00859f199496fcadecf8eed63bc700fd1b3",
+  "counts": {
+    "contours": 19657,
+    "grid": {
+      "grid_10km": 26,
+      "grid_1km": 242
+    },
+    "landcover": {
+      "empty_source_areas": [],
+      "features": 12613,
+      "permanentIce": {
+        "glacier": 1080,
+        "permanent_snow": 2
+      },
+      "retained": 1395,
+      "smoothed": 11218
+    }
+  },
+  "osm": {
+    "bytes": 29856536,
+    "operation": "Complete-feature regional extract with Latin cartographic names",
+    "path": "data/regions/nepal-annapurna/nepal-261122.osm.clipped.latin.osm.pbf",
+    "replicationTimestamp": "2026-11-22T21:20:48Z",
+    "sha256": "94c1a3ab830522683bf23b7b5154a7ecd246ef93cd5e2eb040478d3f2cc806dd",
+    "snapshot_date": "2026-11-22",
+    "url": "https://download.geofabrik.de/asia/nepal/nepal-261122.osm.pbf"
+  },
+  "outputs": {
+    "contours.geojson": "bbe2df66af0f3dc6f0bc7d39fd5922df090971620b73f519569ea0c3486948c9",
+    "grid_10km.geojson": "7524e0e0fdab4014521ef6bdaf25d11eeedd2335fdfebdc71bc2a8f908236a96",
+    "grid_1km.geojson": "7d68b761d0a11b0deca3f8f72706a0cd31a216ed773d93981ab7e98f6fda60e9",
+    "landcover.geojson": "5404aaadd768fe27f321c7c9ee31fa94ed59f2f087af578a5d7b60d0aec802d9"
+  },
+  "permanentIce": {
+    "glacier": 1080,
+    "permanent_snow": 2
+  },
+  "region": "nepal-annapurna",
+  "smootherSHA256": "7581d024dc1c1bec931642c7201db149bf64a64c814c451fa8bf37a0881ea6c9"
+}

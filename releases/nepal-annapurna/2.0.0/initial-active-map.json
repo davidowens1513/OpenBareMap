@@ -1,0 +1,52 @@
+{
+  "contourIntervalMetres": 20,
+  "coverage": "The Annapurna Circuit and Annapurna Base Camp, covering Besisahar, Manang, Thorong La, Muktinath, Jomsom, Tatopani, Ghorepani and the Pokhara approaches.",
+  "datasets": {
+    "basemap": {
+      "bytes": 38158336,
+      "path": "releases/nepal-annapurna/2.0.0/maps/basemap.mbtiles",
+      "sha256": "71155c900ab3eea53ea24316a089cf939eb28e2a7c36cb82fa901c14ee54e739",
+      "validation": {
+        "empty_tile_count": 5,
+        "logical_tiles_sha256": "e79e6f6716caaef30513c56aefe1af42b3b7a5d1b6e7585c9fc2abbe7ac4c943",
+        "tile_count": 3231
+      }
+    },
+    "grid": {
+      "bytes": 1306624,
+      "path": "releases/nepal-annapurna/2.0.0/maps/grid.mbtiles",
+      "sha256": "3a9cb5bfb5a80bd127dcc88f6245012ed0ec461a42e9de362d248e2469e3fd96",
+      "validation": {
+        "empty_tile_count": 0,
+        "logical_tiles_sha256": "1ec6aa9eace131ad474099f8577ac169606c55f3203bb6b76c5745694214783b",
+        "tile_count": 3325
+      }
+    },
+    "hillshade": {
+      "bytes": 12394496,
+      "path": "releases/nepal-annapurna/2.0.0/maps/hillshade.mbtiles",
+      "sha256": "7e00c45a03b45c1a2ec991383100fd54ce6cb7507fb382c7f3ff848ef90c03c2",
+      "validation": {
+        "empty_tile_count": 0,
+        "logical_tiles_sha256": "18f49c3c48f9585a15b5de6b624fca384fb2059dd975d3e195457913a999010d",
+        "tile_count": 255
+      }
+    },
+    "topography": {
+      "bytes": 129855488,
+      "path": "releases/nepal-annapurna/2.0.0/maps/topography.mbtiles",
+      "sha256": "75678948c9cc22d6a547f66e89ed732967892571c8d1869ba3418871107adea0",
+      "validation": {
+        "empty_tile_count": 32913,
+        "logical_tiles_sha256": "8e78715394763341fa2ce0cf82922449e814201454cd6f0662ed6a4e0c805024",
+        "tile_count": 38585
+      }
+    }
+  },
+  "format": "openbaremap-development-viewer-v1",
+  "localBorders": false,
+  "mapVersion": "2.0.0",
+  "region": "nepal-annapurna",
+  "storageRevision": "2.0.0-nepal-annapurna-r1",
+  "styleRevision": "2.0.0-nepal-annapurna-r1"
+}

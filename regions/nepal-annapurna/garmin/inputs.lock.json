@@ -1,0 +1,20 @@
+{
+  "inputs": [
+    {
+      "path": "regions/nepal-annapurna/garmin/inputs/contours.geojson.gz",
+      "sha256": "9066e3134e450cba3f1a392b6b88b89621034a225fe7799420c0ffa14353f0da",
+      "uncompressedSHA256": "bbe2df66af0f3dc6f0bc7d39fd5922df090971620b73f519569ea0c3486948c9"
+    },
+    {
+      "path": "regions/nepal-annapurna/garmin/inputs/landcover.geojson.gz",
+      "sha256": "4f95a8f39d1cb27de161ca4d54164bcf6a23d60cb99340c4476dfc0403b32712",
+      "uncompressedSHA256": "5404aaadd768fe27f321c7c9ee31fa94ed59f2f087af578a5d7b60d0aec802d9"
+    },
+    {
+      "path": "regions/nepal-annapurna/garmin/inputs/land.geojson.gz",
+      "sha256": "e2d3429e3d344930c61756c30a9351b1255ff5cfab48f597c8045aa5695cc418",
+      "uncompressedSHA256": "6a48b610025f470394fb2625499701d0b9b0ccddddf145cf5c3e2e62caf95a89"
+    }
+  ],
+  "region": "nepal-annapurna"
+}

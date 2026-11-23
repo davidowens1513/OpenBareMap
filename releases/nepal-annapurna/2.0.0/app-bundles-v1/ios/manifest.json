@@ -1,0 +1,35 @@
+{
+  "bytes": 185543767,
+  "datasets": {
+    "basemap": {
+      "path": "maps/basemap.mbtiles",
+      "sha256": "71155c900ab3eea53ea24316a089cf939eb28e2a7c36cb82fa901c14ee54e739"
+    },
+    "coast": {
+      "derived_from": "18fa2df20f36ccbef5daa3b19f1f9a10af22b97cfecdc7b470d0913d05979078",
+      "maxzoom": 12,
+      "operation": "Preserve land-layer MVT bytes only through zoom 12; omit other layers.",
+      "path": "maps/coast.mbtiles",
+      "sha256": "8806a2e707489525ea01299ab3d408922f9b3142a16cf79f97e53558d968a291"
+    },
+    "grid": {
+      "path": "maps/grid.mbtiles",
+      "sha256": "3a9cb5bfb5a80bd127dcc88f6245012ed0ec461a42e9de362d248e2469e3fd96"
+    },
+    "hillshade": {
+      "path": "maps/hillshade.mbtiles",
+      "sha256": "7e00c45a03b45c1a2ec991383100fd54ce6cb7507fb382c7f3ff848ef90c03c2"
+    },
+    "topography": {
+      "path": "maps/topography.mbtiles",
+      "sha256": "18fa2df20f36ccbef5daa3b19f1f9a10af22b97cfecdc7b470d0913d05979078"
+    }
+  },
+  "instructionsSHA256": "b423d4e5efa128be2a049135346e8143e5dc95613e747bbd642589f6858e955b",
+  "instructionsURL": "https://downloads.appsbyonzy.dev/OpenBareMap/nepal-annapurna/2.0.0/app-bundles-v1/ios/instructions.txt",
+  "localPath": "releases/nepal-annapurna/2.0.0/app-bundles-v1/ios/OpenBareMap-Nepal-Annapurna-iOS-Bundle.zip",
+  "mapManifestSHA256": "e883d91e78c03186197bb699397a371dd4b2a9716a5ed7e25546e38e767adb68",
+  "r2Key": "OpenBareMap/nepal-annapurna/2.0.0/app-bundles-v1/ios/OpenBareMap-Nepal-Annapurna-iOS-Bundle.zip",
+  "sha256": "cd40754926e3bc6cbd2ef8b0e360cef2006febf2e9d3d69533b3b03fe392ef5a",
+  "url": "https://downloads.appsbyonzy.dev/OpenBareMap/nepal-annapurna/2.0.0/app-bundles-v1/ios/OpenBareMap-Nepal-Annapurna-iOS-Bundle.zip"
+}

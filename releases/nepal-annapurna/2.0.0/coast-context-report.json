@@ -1,0 +1,52 @@
+{
+  "builderSHA256": "df45d47a59e968508a89136d44d799aaf2bba52547b211e0dff68a5b0e0f6cfc",
+  "contextBounds": [
+    82,
+    27,
+    86,
+    30
+  ],
+  "note": "Contour payloads preserved exactly while extending land background outside edition coverage.",
+  "oldTopography": {
+    "bytes": 129855488,
+    "path": "releases/nepal-annapurna/2.0.0/maps/topography.mbtiles",
+    "sha256": "75678948c9cc22d6a547f66e89ed732967892571c8d1869ba3418871107adea0",
+    "validation": {
+      "empty_tile_count": 32913,
+      "logical_tiles_sha256": "8e78715394763341fa2ce0cf82922449e814201454cd6f0662ed6a4e0c805024",
+      "tile_count": 38585
+    }
+  },
+  "output": {
+    "bytes": 129773568,
+    "path": "releases/nepal-annapurna/2.0.0/maps/topography-context.mbtiles",
+    "sha256": "18fa2df20f36ccbef5daa3b19f1f9a10af22b97cfecdc7b470d0913d05979078",
+    "validation": {
+      "empty_tile_count": 32913,
+      "logical_tiles_sha256": "8e78715394763341fa2ce0cf82922449e814201454cd6f0662ed6a4e0c805024",
+      "tile_count": 38585
+    }
+  },
+  "replacement": {
+    "changed_tiles": 2586,
+    "path": "build/nepal-annapurna-coast-context/combined.mbtiles",
+    "replacement_feature_instances": 3565,
+    "sha256": "b8c667153b5f93e234d096a872075524a9b2d09e816cd6e33bbbe4ff602223fe",
+    "unchanged_other_layers_sha256": "23a76a271cbe34c91a31cdebdcbd460c75bcbbd09df4ffe0f885eeaad9da036d",
+    "validation": {
+      "empty_tile_count": 32913,
+      "logical_tiles_sha256": "8e78715394763341fa2ce0cf82922449e814201454cd6f0662ed6a4e0c805024",
+      "tile_count": 38585
+    }
+  },
+  "source": {
+    "accessed_utc": "2026-10-25T12:59:16.751893+00:00",
+    "bytes": 928538219,
+    "http_headers_path": "data/land-polygons.headers",
+    "license": "ODbL 1.0; OpenStreetMap contributors",
+    "path": "data/land-polygons-split-4326.zip",
+    "sha256": "5911e273096f9585425a17c30a8a98785cc33ed2718ff88987768933b8a327f7",
+    "source_snapshot": "HTTP Last-Modified 2026-10-25T03:43:12Z; this is file publication, not a guaranteed OSM snapshot timestamp",
+    "url": "https://osmdata.openstreetmap.de/download/land-polygons-split-4326.zip"
+  }
+}

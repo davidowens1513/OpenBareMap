@@ -1,0 +1,70 @@
+{
+  "bounds": [
+    83.42,
+    28.1,
+    84.57,
+    28.97
+  ],
+  "contextEnvelope": [
+    83.42,
+    28.1,
+    84.57,
+    28.97
+  ],
+  "drawPriority": 25,
+  "format": "openbaremap-garmin-render-footprint-v1",
+  "geometry": {
+    "bytes": 1071,
+    "path": "regions/nepal-annapurna/garmin/render-coverage.geojson",
+    "sha256": "36e9577b9cd565b1256d0a974f96eb338e28cd83b96e80da12f91c92e34a360b"
+  },
+  "inputs": [
+    {
+      "bytes": 7424,
+      "path": "data/regions/nepal-annapurna/nepal.poly",
+      "sha256": "d29728943b701d54a01735b44a5203d430e24501d49c2cd1095d928076b0bda4",
+      "url": "https://download.geofabrik.de/asia/nepal/nepal.poly"
+    }
+  ],
+  "knownDestinationsCovered": {
+    "annapurna-base-camp": [
+      83.8797849,
+      28.5310167
+    ],
+    "besisahar": [
+      84.377,
+      28.234
+    ],
+    "ghorepani": [
+      83.697,
+      28.401
+    ],
+    "jomsom": [
+      83.7304953,
+      28.7838097
+    ],
+    "manang": [
+      84.02,
+      28.666
+    ],
+    "muktinath": [
+      83.872,
+      28.818
+    ],
+    "pokhara": [
+      83.991402,
+      28.209538
+    ],
+    "tatopani": [
+      83.653,
+      28.491
+    ],
+    "thorong-la": [
+      83.9387583,
+      28.7935291
+    ]
+  },
+  "purpose": "Rectangular Garmin tiles may overlap other countries. Do not fill their padding with sea, land or land-cover polygons.",
+  "region": "nepal-annapurna",
+  "transparentNativeMap": true
+}

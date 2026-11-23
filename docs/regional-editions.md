@@ -1,5 +1,45 @@
 # Maintaining regional editions
 
+## Nepal trekking
+
+The Nepal maps use a shared 22 November 2026 Geofabrik OpenStreetMap extract,
+clipped with complete feature references. Its MD5 matched Geofabrik's
+published checksum. Copernicus GLO-30 supplies terrain for 20 m contours,
+hillshade and Garmin elevation. The ice layers use the source's glacier and
+permanent snow classifications.
+
+| Edition | Main walking coverage | Grid | Garmin family |
+| --- | --- | --- | --- |
+| Everest & Khumbu | Lukla, Namche Bazaar, Everest Base Camp, Gokyo and the Three Passes circuit | WGS 84 / UTM 45N | 4872 |
+| Annapurna | Annapurna Circuit, Annapurna Base Camp, the Pokhara approaches and the Kali Gandaki valley | WGS 84 / UTM 44N | 4873 |
+
+The build uses mapped Latin names when available and ICU transliteration for
+Devanagari names otherwise. The source lock records the original clipped
+extract and the Latin-label derivative. Keep the checked-in Open Sans glyph
+sets and both ice symbols in the web and mobile packages.
+
+The clipped OpenStreetMap source yielded 388 glacier polygons and one
+permanent snowfield for Everest & Khumbu. Annapurna yielded 1,080 glacier
+polygons and two permanent snowfields. These are source polygon counts.
+
+```sh
+export PYTHONPATH=work/python
+for edition in nepal-everest nepal-annapurna; do
+  output="work/$edition-release"
+  python3 scripts/run_full_region.py --region "$edition" || exit
+  python3 scripts/build_app_distribution.py --regions "$edition" \
+    --output "$output/kits" --catalog "$output/catalog.json" || exit
+  python3 scripts/build_web_previews.py --regions "$edition" --output "$output/preview" \
+    --origin "https://downloads.appsbyonzy.dev/OpenBareMap/$edition/2.0.0/preview" || exit
+done
+python3 scripts/stage_nepal_trekking.py --website /path/to/AppsByOnzy-Website/site/index.html
+```
+
+Use the same command with `--publish-assets` from a release checkout with
+R2 and network access. The publisher verifies the release objects and previews
+before updating the online catalogues. The production Pages archive is
+`work/nepal-publication/appsbyonzy-nepal-trekking.zip`.
+
 ## Iceland and Patagonia
 
 The three editions use complete-feature Geofabrik OpenStreetMap extracts,

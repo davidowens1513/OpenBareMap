@@ -1,0 +1,55 @@
+{
+  "features": [
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              86.42651,
+              27.94691
+            ],
+            [
+              86.54535915839315,
+              28.1
+            ],
+            [
+              86.77276789992851,
+              28.1
+            ],
+            [
+              86.79718,
+              28.06069
+            ],
+            [
+              86.999,
+              27.995038574359786
+            ],
+            [
+              86.999,
+              27.52
+            ],
+            [
+              86.4,
+              27.52
+            ],
+            [
+              86.4,
+              27.957083636790784
+            ],
+            [
+              86.42651,
+              27.94691
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "properties": {
+        "purpose": "Limit opaque native background and land-cover polygons; retain complete accepted OSM and terrain inputs",
+        "region": "nepal-everest"
+      },
+      "type": "Feature"
+    }
+  ],
+  "type": "FeatureCollection"
+}

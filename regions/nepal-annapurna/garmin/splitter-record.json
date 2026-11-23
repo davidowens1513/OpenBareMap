@@ -1,0 +1,21 @@
+{
+  "combinedSHA256": "4266c57591b9cd82cfa0da23dd767f1cf29906cbef6f71a214a0af1cb4609e8f",
+  "command": [
+    "/opt/homebrew/opt/openjdk@21/libexec/openjdk.jdk/Contents/Home/bin/java",
+    "-Xmx6g",
+    "-jar",
+    "/Volumes/Extreme SSD/Projects/OpenBareMap/garmin/tools/splitter-r654/splitter.jar",
+    "--mapid=48730001",
+    "--description=OpenBareMap Annapurna",
+    "--max-nodes=1000000",
+    "--max-threads=2",
+    "--keep-complete=true",
+    "--output=pbf",
+    "--polygon-file=/Volumes/Extreme SSD/Projects/OpenBareMap/regions/nepal-annapurna/garmin/coverage.poly",
+    "--output-dir=/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/906ead9d53a7/nepal-annapurna/garmin/split",
+    "--ignore-osm-bounds=true",
+    "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/906ead9d53a7/nepal-annapurna/garmin/combined.osm.pbf"
+  ],
+  "coverageSHA256": "5fe6f9a2a77d34349b2193d905e2751e664c3cec0a5af9688ecc5238e7090719",
+  "ignoreSourceHeaderBounds": true
+}

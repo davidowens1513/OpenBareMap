@@ -1,0 +1,106 @@
+{
+  "acceptance": "Automated checks only; see validation and visual-review records for actual reviewed scope.",
+  "coverage": "The Annapurna Circuit and Annapurna Base Camp, covering Besisahar, Manang, Thorong La, Muktinath, Jomsom, Tatopani, Ghorepani and the Pokhara approaches.",
+  "datasets": {
+    "basemap": {
+      "bytes": 38158336,
+      "path": "releases/nepal-annapurna/2.0.0/maps/basemap.mbtiles",
+      "sha256": "71155c900ab3eea53ea24316a089cf939eb28e2a7c36cb82fa901c14ee54e739",
+      "validation": {
+        "empty_tile_count": 5,
+        "logical_tiles_sha256": "e79e6f6716caaef30513c56aefe1af42b3b7a5d1b6e7585c9fc2abbe7ac4c943",
+        "tile_count": 3231
+      }
+    },
+    "grid": {
+      "bytes": 1306624,
+      "path": "releases/nepal-annapurna/2.0.0/maps/grid.mbtiles",
+      "sha256": "3a9cb5bfb5a80bd127dcc88f6245012ed0ec461a42e9de362d248e2469e3fd96",
+      "validation": {
+        "empty_tile_count": 0,
+        "logical_tiles_sha256": "1ec6aa9eace131ad474099f8577ac169606c55f3203bb6b76c5745694214783b",
+        "tile_count": 3325
+      }
+    },
+    "hillshade": {
+      "bytes": 12394496,
+      "path": "releases/nepal-annapurna/2.0.0/maps/hillshade.mbtiles",
+      "sha256": "7e00c45a03b45c1a2ec991383100fd54ce6cb7507fb382c7f3ff848ef90c03c2",
+      "validation": {
+        "empty_tile_count": 0,
+        "logical_tiles_sha256": "18f49c3c48f9585a15b5de6b624fca384fb2059dd975d3e195457913a999010d",
+        "tile_count": 255
+      }
+    },
+    "topography": {
+      "bytes": 129773568,
+      "path": "releases/nepal-annapurna/2.0.0/maps/topography-context.mbtiles",
+      "sha256": "18fa2df20f36ccbef5daa3b19f1f9a10af22b97cfecdc7b470d0913d05979078",
+      "validation": {
+        "empty_tile_count": 32913,
+        "logical_tiles_sha256": "8e78715394763341fa2ce0cf82922449e814201454cd6f0662ed6a4e0c805024",
+        "tile_count": 38585
+      }
+    }
+  },
+  "garmin": {
+    "bytes": 48783360,
+    "path": "regions/nepal-annapurna/garmin/dist/OpenBareMap-Nepal-Annapurna.img",
+    "sha256": "40cee865ead6708b3154587dd08c96a2d3702d7ae5e07c51ba45e26ad797e685"
+  },
+  "geometryReport": {
+    "path": "releases/nepal-annapurna/2.0.0/build-records/nepal-annapurna-geometry/geometry-report.json",
+    "sha256": "1f48170dea28874c7da41bd39accaa42193efffaf8d94671892d139533fb2c49"
+  },
+  "hostAppsModified": false,
+  "mapVersion": "2.0.0",
+  "osm": {
+    "bytes": 29856536,
+    "operation": "Complete-feature regional extract with Latin cartographic names",
+    "path": "data/regions/nepal-annapurna/nepal-261122.osm.clipped.latin.osm.pbf",
+    "replicationTimestamp": "2026-11-22T21:20:48Z",
+    "sha256": "94c1a3ab830522683bf23b7b5154a7ecd246ef93cd5e2eb040478d3f2cc806dd",
+    "snapshot_date": "2026-11-22",
+    "url": "https://download.geofabrik.de/asia/nepal/nepal-261122.osm.pbf"
+  },
+  "packages": {
+    "android": {
+      "archive": {
+        "bytes": 185514910,
+        "path": "regions/nepal-annapurna/android/OpenBareMap-Android.zip",
+        "sha256": "0fdb59a8dc5936427d397ac6d235161d0c46a8d29a6ee0869d19f3cd3130ac65"
+      },
+      "checksumsSHA256": "fca51126274ea4eb7a9a74d55dba24f1afd202511d658c0c05d706cf9205f909",
+      "manifestSHA256": "276b5b26bf366df8f0f4dd71272ca067961304c8268702bd94aa44f7b28ffd6a",
+      "path": "regions/nepal-annapurna/android",
+      "validationSHA256": "9364fb785ef953f3a4fd57939c58d8c1972f45984ce9fce4b599b30a3d7bbaf1"
+    },
+    "ios": {
+      "checksumsSHA256": "48300b738bc2fcecf126135b34b1e4d2a3ceabad872f89445ed0571d359e4885",
+      "manifestSHA256": "e883d91e78c03186197bb699397a371dd4b2a9716a5ed7e25546e38e767adb68",
+      "path": "regions/nepal-annapurna/ios",
+      "validationSHA256": "00cbce82c49a4f41ba6834304331a4b7754984990df73dd82f2e0eb7d09ea8ac"
+    }
+  },
+  "pythonRuntime": {
+    "packages": {
+      "Pillow": "12.3.0",
+      "certifi": "2026.10.23",
+      "charset-normalizer": "3.5.2",
+      "idna": "3.20",
+      "numpy": "2.5.4",
+      "osmium": "4.3.2",
+      "pyproj": "3.8.0",
+      "requests": "2.34.2",
+      "shapely": "2.2.0",
+      "urllib3": "2.8.0"
+    },
+    "platform": "macOS-27.2.1-arm64-arm-64bit-Mach-O",
+    "python": "3.14.5 (main, May 10 2026, 10:21:34) [Clang 21.0.0 (clang-2100.0.123.102)]",
+    "requirementsSHA256": "427f12ff8b49bfebac0a7d453c2f65bd15d6695584b18e6ecee1fdfeed20a36c"
+  },
+  "region": "nepal-annapurna",
+  "styleSHA256": "0388eb7330fb4f770e21020714c3f4628bb586c9fbca8aeb951a1655b9612e55",
+  "terrainLockSHA256": "6c1ff63fa1540e42081c957d9face404a09b61dffbc78f288f112f5b2b1f7644",
+  "validation": "validation.json"
+}

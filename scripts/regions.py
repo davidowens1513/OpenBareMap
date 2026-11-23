@@ -8,11 +8,12 @@ ALPS_REGIONS = ('alps-west', 'alps-central', 'alps-tyrol-bavaria', 'alps-east')
 US_PARK_REGIONS = tuple(json.loads((ROOT/'config/us-national-parks.json').read_text()))
 CANADIAN_ROCKIES_REGIONS = tuple(json.loads((ROOT/'config/canadian-rockies.json').read_text()))
 ICELAND_PATAGONIA_REGIONS = ('iceland-southern-highlands', 'patagonia-torres-del-paine', 'patagonia-el-chalten')
+NEPAL_REGIONS = ('nepal-everest', 'nepal-annapurna')
 PERMANENT_ICE = {
     'glacier': ('Glacier', '#badde9', '#709bab', '0x1010c'),
     'permanent_snow': ('Permanent snowfield', '#f0f8fc', '#93b3c3', '0x1010d'),
 }
-REGIONS = ('ireland', 'england-wales', 'scotland', 'sierra-nevada', 'pyrenees', 'dolomites', 'faroe-islands','norway-south','norway-central','norway-north', 'balearic-islands', 'corsica', 'sardinia', 'sicily', 'crete', 'cyprus', 'malta', 'canary-islands', 'madeira') + ALPS_REGIONS + US_PARK_REGIONS + ('picos-de-europa', 'high-tatras') + CANADIAN_ROCKIES_REGIONS + ICELAND_PATAGONIA_REGIONS
+REGIONS = ('ireland', 'england-wales', 'scotland', 'sierra-nevada', 'pyrenees', 'dolomites', 'faroe-islands','norway-south','norway-central','norway-north', 'balearic-islands', 'corsica', 'sardinia', 'sicily', 'crete', 'cyprus', 'malta', 'canary-islands', 'madeira') + ALPS_REGIONS + US_PARK_REGIONS + ('picos-de-europa', 'high-tatras') + CANADIAN_ROCKIES_REGIONS + ICELAND_PATAGONIA_REGIONS + NEPAL_REGIONS
 
 def profile(region='ireland'):
     if region not in REGIONS:

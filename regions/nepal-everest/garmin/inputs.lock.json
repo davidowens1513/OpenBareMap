@@ -1,0 +1,20 @@
+{
+  "inputs": [
+    {
+      "path": "regions/nepal-everest/garmin/inputs/contours.geojson.gz",
+      "sha256": "1cd3b00ecae647976736163329098b9f94bd6296a520fa5aae5e670ab13b9ba2",
+      "uncompressedSHA256": "064b90f40e30294facb8d1c3484a06dedf9f49514c4be51ffe8bfe8454d85ab7"
+    },
+    {
+      "path": "regions/nepal-everest/garmin/inputs/landcover.geojson.gz",
+      "sha256": "4ea4d6aae1ff44773791f87435a98e24b7628b04402b3888fc84b03b0e74fa2c",
+      "uncompressedSHA256": "ef9ed8330d9c4bd20ee6fe0b157206cf642c73618108c60e585cdfcd7bb9fc5a"
+    },
+    {
+      "path": "regions/nepal-everest/garmin/inputs/land.geojson.gz",
+      "sha256": "b067059f72dfdb9ad05a99af4e91901948a5386fd714464ba2ce77357e9dc341",
+      "uncompressedSHA256": "cb6df4a81135533f0dc6c5f9e502d432c29de1200cc83daea879670d3fcd710d"
+    }
+  ],
+  "region": "nepal-everest"
+}

@@ -1,0 +1,427 @@
+{
+  "coverage": "Everest Base Camp from Lukla via Namche Bazaar, Tengboche and Gorak Shep, plus Gokyo and the Three Passes circuit on the Nepal side.",
+  "coverageAnchors": {
+    "cho-la": {
+      "coordinate": [
+        86.7516374,
+        27.9617246
+      ],
+      "featuresInNeighbouringDetailedTiles": 130
+    },
+    "dingboche": {
+      "coordinate": [
+        86.829,
+        27.894
+      ],
+      "featuresInNeighbouringDetailedTiles": 746
+    },
+    "everest-base-camp": {
+      "coordinate": [
+        86.8487946,
+        27.9996646
+      ],
+      "featuresInNeighbouringDetailedTiles": 193
+    },
+    "gokyo": {
+      "coordinate": [
+        86.694588,
+        27.954088
+      ],
+      "featuresInNeighbouringDetailedTiles": 265
+    },
+    "gorak-shep": {
+      "coordinate": [
+        86.828,
+        27.977
+      ],
+      "featuresInNeighbouringDetailedTiles": 199
+    },
+    "kongma-la": {
+      "coordinate": [
+        86.8362191,
+        27.9297049
+      ],
+      "featuresInNeighbouringDetailedTiles": 238
+    },
+    "lukla": {
+      "coordinate": [
+        86.7306718,
+        27.6889719
+      ],
+      "featuresInNeighbouringDetailedTiles": 1489
+    },
+    "namche": {
+      "coordinate": [
+        86.7097956,
+        27.8041662
+      ],
+      "featuresInNeighbouringDetailedTiles": 1671
+    },
+    "renjo-la": {
+      "coordinate": [
+        86.6584966,
+        27.9473697
+      ],
+      "featuresInNeighbouringDetailedTiles": 119
+    },
+    "tengboche": {
+      "coordinate": [
+        86.763,
+        27.836
+      ],
+      "featuresInNeighbouringDetailedTiles": 949
+    }
+  },
+  "datasets": {
+    "basemap": {
+      "empty_tile_count": 1,
+      "logical_tiles_sha256": "8ba18815a432eb4c60581d3af18a13ff811e85c2327ba907058278eaabbe1291",
+      "tile_count": 1155
+    },
+    "grid": {
+      "empty_tile_count": 0,
+      "logical_tiles_sha256": "92d98609ceb7f6406b1db16a105af6e4b50c1c618a03bc13647adac3bfb5ab29",
+      "tile_count": 1183
+    },
+    "hillshade": {
+      "empty_tile_count": 0,
+      "logical_tiles_sha256": "64bcdf547d14e053ca69faf251297f7a76031f5c3ea786a2654967307121b3c6",
+      "tile_count": 98
+    },
+    "topography": {
+      "empty_tile_count": 34443,
+      "logical_tiles_sha256": "dce6173ad5ce45e9ffa3a70cd8f04875bb7cf1ca857e9811b05d15da8efc474c",
+      "tile_count": 38080
+    }
+  },
+  "detail": {
+    "basemap": {
+      "boundaries": 5558,
+      "contours": 0,
+      "permanentIce": {
+        "glacier": 5237,
+        "permanent_snow": 9
+      }
+    },
+    "topography": {
+      "boundaries": 0,
+      "contours": 122900
+    }
+  },
+  "garmin": {
+    "familyId": 4872,
+    "garminPackageRevision": "2.0.1-glacier-r1",
+    "inspection": {
+      "anchorLabels": {
+        "Lukla": "Lukla",
+        "Namche Bazaar": "Namche Bazaar"
+      },
+      "bounds": [
+        86.39991760253906,
+        27.51997947692871,
+        86.99901580810547,
+        28.10002326965332
+      ],
+      "coastPolygonsByLevel": {
+        "0": {
+          "0x32": 5,
+          "0x54": 7
+        },
+        "1": {
+          "0x32": 5,
+          "0x54": 7
+        },
+        "2": {
+          "0x32": 5,
+          "0x54": 7
+        },
+        "3": {
+          "0x32": 5,
+          "0x54": 7
+        },
+        "4": {
+          "0x32": 5,
+          "0x54": 7
+        }
+      },
+      "contoursByLevel": {
+        "0": {
+          "0x20": 19913,
+          "0x22": 4957
+        },
+        "1": {
+          "0x20": 15020,
+          "0x22": 3742
+        },
+        "2": {
+          "0x22": 3496
+        },
+        "3": {
+          "0x10008": 3217
+        },
+        "4": {}
+      },
+      "lineInstancesAtHighestDetail": {
+        "0x10001": 246,
+        "0x10005": 36,
+        "0x10006": 24,
+        "0x1000b": 51,
+        "0x16": 1741,
+        "0x18": 882,
+        "0x1c": 111,
+        "0x1e": 84,
+        "0x1f": 42,
+        "0x20": 19913,
+        "0x22": 4957,
+        "0x3": 1,
+        "0x6": 161,
+        "0x7": 12,
+        "0xa": 38
+      },
+      "logicalCombinedSHA256": "769fbce6e0a91a1010f8eedccddf6ea0dd52f31793530a31612d1fc2f0b29610",
+      "logicalHashNote": "Internal file names, sizes and payloads; only CommonHeader creation-date bytes 14..20 are zeroed for hashing. IMG archive headers are excluded. Output bytes are never modified.",
+      "logicalTileSHA256": {
+        "48720001.img": "0de1d627b672c8a5d075f0a40e7d3e3109f877cf1d91e121ae74b5f1ca446100",
+        "48720002.img": "20ff89758e4d645f45ba4f65d84ce405592d012fa3ba1e79dea35700f71fd661",
+        "48720003.img": "2e3d54af0d51a46177ffa29f13c14855a48483b804239468db54a1d7c98aeefd",
+        "48720004.img": "2f056c04ab934e7cf5a38860ec953391f299e4cb059f0eb7bbfc5c47488a9fc7",
+        "48720005.img": "73557b6dffac0dc283aa5d5bad37302f5da86b8b702e3de55e183e59bc6856f1"
+      },
+      "pointInstancesAtHighestDetail": {
+        "0x10001": 30,
+        "0x10002": 130,
+        "0x10003": 101,
+        "0x10006": 943,
+        "0x2f0b": 1,
+        "0x600": 1,
+        "0x6603": 28,
+        "0x6615": 97,
+        "0x6616": 336,
+        "0x800": 55,
+        "0xb00": 111,
+        "0xc00": 20
+      },
+      "polygonInstancesAtHighestDetail": {
+        "0x10101": 298,
+        "0x10102": 38,
+        "0x10104": 178,
+        "0x10105": 1,
+        "0x10106": 1,
+        "0x10109": 18,
+        "0x1010a": 124,
+        "0x1010b": 65,
+        "0x1010c": 469,
+        "0x1010d": 1,
+        "0x13": 14727,
+        "0x32": 5,
+        "0x3c": 350,
+        "0x50": 760,
+        "0x54": 7
+      },
+      "routing": false,
+      "subfileBytes": {
+        "DEM": 4752116,
+        "LBL": 41566,
+        "MPS": 477,
+        "RGN": 9294647,
+        "SRT": 912,
+        "TRE": 116441,
+        "TYP": 3037
+      },
+      "tiles": 5
+    },
+    "output": {
+      "bytes": 14260224,
+      "path": "regions/nepal-everest/garmin/dist/OpenBareMap-Nepal-Everest.img",
+      "sha256": "dd3aec97dc8a202c3d3f7a5f8ca6440fb59548fb9e3fad1dc9d99e320f7339c6"
+    },
+    "routing": false,
+    "status": "compiled and structurally inspected; hardware rendering pending"
+  },
+  "geometryProcessing": {
+    "contours": 11056,
+    "grid": {
+      "grid_10km": 17,
+      "grid_1km": 152
+    },
+    "landcover": {
+      "empty_source_areas": [],
+      "features": 1235,
+      "permanentIce": {
+        "glacier": 388,
+        "permanent_snow": 1
+      },
+      "retained": 394,
+      "smoothed": 841
+    }
+  },
+  "irelandGarminPackageRevision": "2.0.1-trail-detail-r1",
+  "irelandPreserved": true,
+  "labelGlyphs": {
+    "Open Sans Bold": true,
+    "Open Sans Regular": true,
+    "Open Sans Semibold": true
+  },
+  "landBackground": {
+    "cho-la": {
+      "coordinate": [
+        86.7516374,
+        27.9617246
+      ],
+      "verifiedZooms": [
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    },
+    "dingboche": {
+      "coordinate": [
+        86.829,
+        27.894
+      ],
+      "verifiedZooms": [
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    },
+    "everest-base-camp": {
+      "coordinate": [
+        86.8487946,
+        27.9996646
+      ],
+      "verifiedZooms": [
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    },
+    "gokyo": {
+      "coordinate": [
+        86.694588,
+        27.954088
+      ],
+      "verifiedZooms": [
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    },
+    "gorak-shep": {
+      "coordinate": [
+        86.828,
+        27.977
+      ],
+      "verifiedZooms": [
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    },
+    "kongma-la": {
+      "coordinate": [
+        86.8362191,
+        27.9297049
+      ],
+      "verifiedZooms": [
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    },
+    "lukla": {
+      "coordinate": [
+        86.7306718,
+        27.6889719
+      ],
+      "verifiedZooms": [
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    },
+    "namche": {
+      "coordinate": [
+        86.7097956,
+        27.8041662
+      ],
+      "verifiedZooms": [
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    },
+    "renjo-la": {
+      "coordinate": [
+        86.6584966,
+        27.9473697
+      ],
+      "verifiedZooms": [
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    },
+    "tengboche": {
+      "coordinate": [
+        86.763,
+        27.836
+      ],
+      "verifiedZooms": [
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    }
+  },
+  "packages": {
+    "android": {
+      "checkedFiles": 43,
+      "nativeDeviceRenderingTested": false,
+      "sourceFiles": {
+        "basemap": "maps/basemap.mbtiles",
+        "coast": "maps/coast.mbtiles",
+        "hillshade": "maps/hillshade.mbtiles",
+        "topography": "maps/topography.mbtiles",
+        "utm-grid": "maps/grid.mbtiles"
+      }
+    },
+    "ios": {
+      "checkedFiles": 46,
+      "nativeDeviceRenderingTested": false,
+      "sourceFiles": {
+        "basemap": "maps/basemap.mbtiles",
+        "coast": "maps/coast.mbtiles",
+        "hillshade": "maps/hillshade.mbtiles",
+        "topography": "maps/topography.mbtiles",
+        "utm-grid": "maps/grid.mbtiles"
+      }
+    }
+  },
+  "permanentIceSourceCounts": {
+    "glacier": 388,
+    "permanent_snow": 1
+  },
+  "region": "nepal-everest",
+  "status": "automated checks passed; visual and hardware acceptance pending"
+}

@@ -1,0 +1,35 @@
+{
+  "areaSquareDegrees": 0.34741999999999507,
+  "bounds": [
+    86.4,
+    27.52,
+    86.999,
+    28.1
+  ],
+  "entireRequestedFootprintCovered": true,
+  "exactFootprint": null,
+  "inputs": [
+    {
+      "bytes": 7424,
+      "path": "data/regions/nepal-everest/nepal.poly",
+      "sha256": "d29728943b701d54a01735b44a5203d430e24501d49c2cd1095d928076b0bda4",
+      "url": "https://download.geofabrik.de/asia/nepal/nepal.poly"
+    }
+  ],
+  "knownDestinationsCovered": [
+    "cho-la",
+    "dingboche",
+    "everest-base-camp",
+    "gokyo",
+    "gorak-shep",
+    "island",
+    "kongma-la",
+    "lukla",
+    "namche",
+    "renjo-la",
+    "tengboche"
+  ],
+  "operation": "Requested rectangular crop; source outlines cover all destination anchors",
+  "polygons": 1,
+  "sha256": "555274aa752ec797d627fa6b0ccdb75630fe19d12da3c9047b199bbecf61e23c"
+}

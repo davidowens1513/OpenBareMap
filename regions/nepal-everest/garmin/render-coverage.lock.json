@@ -1,0 +1,74 @@
+{
+  "bounds": [
+    86.4,
+    27.52,
+    86.999,
+    28.1
+  ],
+  "contextEnvelope": [
+    86.4,
+    27.52,
+    86.999,
+    28.1
+  ],
+  "drawPriority": 25,
+  "format": "openbaremap-garmin-render-footprint-v1",
+  "geometry": {
+    "bytes": 1092,
+    "path": "regions/nepal-everest/garmin/render-coverage.geojson",
+    "sha256": "b226e32e35743f2d3a7777f2d58018596b4cf7d42e99e4abac9d38612e399b5a"
+  },
+  "inputs": [
+    {
+      "bytes": 7424,
+      "path": "data/regions/nepal-everest/nepal.poly",
+      "sha256": "d29728943b701d54a01735b44a5203d430e24501d49c2cd1095d928076b0bda4",
+      "url": "https://download.geofabrik.de/asia/nepal/nepal.poly"
+    }
+  ],
+  "knownDestinationsCovered": {
+    "cho-la": [
+      86.7516374,
+      27.9617246
+    ],
+    "dingboche": [
+      86.829,
+      27.894
+    ],
+    "everest-base-camp": [
+      86.8487946,
+      27.9996646
+    ],
+    "gokyo": [
+      86.694588,
+      27.954088
+    ],
+    "gorak-shep": [
+      86.828,
+      27.977
+    ],
+    "kongma-la": [
+      86.8362191,
+      27.9297049
+    ],
+    "lukla": [
+      86.7306718,
+      27.6889719
+    ],
+    "namche": [
+      86.7097956,
+      27.8041662
+    ],
+    "renjo-la": [
+      86.6584966,
+      27.9473697
+    ],
+    "tengboche": [
+      86.763,
+      27.836
+    ]
+  },
+  "purpose": "Rectangular Garmin tiles may overlap other countries. Do not fill their padding with sea, land or land-cover polygons.",
+  "region": "nepal-everest",
+  "transparentNativeMap": true
+}

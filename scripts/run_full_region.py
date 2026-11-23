@@ -5,7 +5,7 @@ import json
 import subprocess
 import sys
 from openbaremap import ROOT,digest
-from regions import REGIONS, region_path
+from regions import NEPAL_REGIONS, REGIONS, region_path
 
 def run(*args):subprocess.run([sys.executable,*map(str,args)],cwd=ROOT,check=True)
 
@@ -19,6 +19,8 @@ def main(region):
     if not selection.exists() or not native_report.exists():
         run('scripts/fetch_region.py','--region',region)
     if not selection.exists():
+        if region in NEPAL_REGIONS:
+            run('scripts/prepare_nepal_labels.py','--region',region)
         top=ROOT/'build'/(region+'-topography')
         if not top.exists():run('scripts/build_topography.py',region+'-topography','--region',region)
         elif not json.loads((top/'build.json').read_text())['status'].startswith('built and structurally validated'):

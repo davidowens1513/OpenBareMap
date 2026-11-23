@@ -1,0 +1,152 @@
+{
+  "familyId": 4873,
+  "garminPackageRevision": "2.0.1-glacier-r1",
+  "inspection": {
+    "anchorLabels": {
+      "Jomsom": "Jomsom",
+      "Pokhara": "Pokhara"
+    },
+    "bounds": [
+      83.41996192932129,
+      28.099937438964844,
+      84.57000732421875,
+      28.970088958740234
+    ],
+    "coastPolygonsByLevel": {
+      "0": {
+        "0x32": 18,
+        "0x54": 23
+      },
+      "1": {
+        "0x32": 18,
+        "0x54": 23
+      },
+      "2": {
+        "0x32": 18,
+        "0x54": 23
+      },
+      "3": {
+        "0x32": 18,
+        "0x54": 23
+      },
+      "4": {
+        "0x32": 18,
+        "0x54": 23
+      }
+    },
+    "contoursByLevel": {
+      "0": {
+        "0x20": 51479,
+        "0x22": 12847
+      },
+      "1": {
+        "0x20": 37235,
+        "0x22": 9311
+      },
+      "2": {
+        "0x22": 8579
+      },
+      "3": {
+        "0x10008": 7835
+      },
+      "4": {}
+    },
+    "lineInstancesAtHighestDetail": {
+      "0x10001": 433,
+      "0x10003": 8,
+      "0x10004": 10,
+      "0x10005": 341,
+      "0x10006": 150,
+      "0x1000b": 139,
+      "0x16": 10210,
+      "0x18": 2134,
+      "0x1a": 7,
+      "0x1c": 514,
+      "0x1e": 58,
+      "0x1f": 330,
+      "0x2": 119,
+      "0x20": 51479,
+      "0x22": 12847,
+      "0x3": 222,
+      "0x4": 339,
+      "0x6": 8024,
+      "0x7": 779,
+      "0xa": 3264
+    },
+    "logicalCombinedSHA256": "fdd8c477c0b34ced8a12eb80bac07234d0bc91c2b7d95b93ef5a87666e825cd2",
+    "logicalHashNote": "Internal file names, sizes and payloads; only CommonHeader creation-date bytes 14..20 are zeroed for hashing. IMG archive headers are excluded. Output bytes are never modified.",
+    "logicalTileSHA256": {
+      "48730001.img": "afc1572c5224b2bdabc5ab5877e4b2243b2b1b410630e353ffbc10d843ee780e",
+      "48730002.img": "bed4fce4056c43f79cd4a500da1f1957c1829c807033d3e7083560daba4480f8",
+      "48730003.img": "e19aca33c7863ee75eb7de397d17f7b735086c6679ebc6cdae15ba22aca678d3",
+      "48730004.img": "59062de2e69f80203296c1bb89d4867286d63e8f33414072ab7fb6f042b4ed02",
+      "48730005.img": "34e563efc3c0f54eecf0930f940ac86f11ce62630c4ff43ce1a29b78fded7feb",
+      "48730006.img": "b8054d321547be69fe696cc5dd17787503d902d23ee091b8e5066dbeaf0c89e5",
+      "48730007.img": "5eda5dfa7e82e71a076bc57b5e6ece5af6acd2a2c15402ad94651100bc8f83f3",
+      "48730008.img": "d31f864e8d09f1e5173ff85e8fa994739dc5557376f5372bc75fb284615d4b37",
+      "48730009.img": "a21a588596864668f605578968d1471a37ffcefdcb8a7a86c380c7948590513e",
+      "48730010.img": "aa2e997588f44da96836a79a12ba4fc3db4d5d0608582c37f372a0228fe6271a",
+      "48730011.img": "f6b4286a852005597422c56783d498b29714f9e39d439c1a9fc2b8fe517c20e4",
+      "48730012.img": "ff4d21a783e4401457a165f23fb3bd7f0381460f43460a85cf00a64ce2f9143e",
+      "48730013.img": "5c0d7f87e60aa672a0a61ed41350e85d1c3f0b88349fb2949766942589173a3c",
+      "48730014.img": "d52392f4bfee485ea3cc37e17d8b2022f374e1395d19562b002cdd24f3a8815f",
+      "48730015.img": "bcaa63e12f95919edf95cab03bc9d3705c58c9f5df2e173f7a42f575d3a8d472",
+      "48730016.img": "201cf0b5fefea2309bbba798b29be67715bc69cee1feaa70a9c7143bcbee21da",
+      "48730017.img": "d3c37ff169ff31e1d565b435d287bb37974e43cdb203b3241a061c043850022f",
+      "48730018.img": "7bc782f2abc8c081400b88624611dfbd23f58000453b8e453c6bfadb0f13e2b5"
+    },
+    "pointInstancesAtHighestDetail": {
+      "0x100": 1,
+      "0x10001": 326,
+      "0x10002": 910,
+      "0x10003": 951,
+      "0x10006": 13711,
+      "0x2f0b": 54,
+      "0x600": 9,
+      "0x650c": 1,
+      "0x6603": 102,
+      "0x6615": 190,
+      "0x6616": 525,
+      "0x800": 283,
+      "0xb00": 536,
+      "0xc00": 451
+    },
+    "polygonInstancesAtHighestDetail": {
+      "0x10101": 7241,
+      "0x10102": 1025,
+      "0x10103": 43,
+      "0x10104": 1201,
+      "0x10105": 2,
+      "0x10106": 158,
+      "0x10109": 66,
+      "0x1010a": 240,
+      "0x1010b": 976,
+      "0x1010c": 1854,
+      "0x1010d": 2,
+      "0x13": 365707,
+      "0x32": 18,
+      "0x3c": 1115,
+      "0x50": 9835,
+      "0x51": 15,
+      "0x54": 23
+    },
+    "routing": false,
+    "subfileBytes": {
+      "DEM": 13518312,
+      "LBL": 404225,
+      "MPS": 1449,
+      "RGN": 34275235,
+      "SRT": 912,
+      "TRE": 420351,
+      "TYP": 3037
+    },
+    "tiles": 18
+  },
+  "output": {
+    "bytes": 48783360,
+    "path": "regions/nepal-annapurna/garmin/dist/OpenBareMap-Nepal-Annapurna.img",
+    "sha256": "40cee865ead6708b3154587dd08c96a2d3702d7ae5e07c51ba45e26ad797e685"
+  },
+  "routing": false,
+  "status": "compiled and structurally inspected; hardware rendering pending"
+}

@@ -21,6 +21,8 @@
     "ireland": "2.0.0",
     "madeira": "2.0.0",
     "malta": "2.0.0",
+    "nepal-annapurna": "2.0.0",
+    "nepal-everest": "2.0.0",
     "norway-central": "2.0.1",
     "norway-north": "2.0.1",
     "norway-south": "2.0.1",
@@ -1441,6 +1443,146 @@
         "r2Key": "OpenBareMap/malta/2.0.0/app-bundles-v1/ios/OpenBareMap-Malta-iOS-Bundle.zip",
         "sha256": "f37b5b2f77f3ce9f026d3a3afe3ab113a532648e7220af19a2f8d15e81794300",
         "url": "https://downloads.appsbyonzy.dev/OpenBareMap/malta/2.0.0/app-bundles-v1/ios/OpenBareMap-Malta-iOS-Bundle.zip"
+      }
+    },
+    "nepal-annapurna": {
+      "android": {
+        "bytes": 185543356,
+        "datasets": {
+          "basemap": {
+            "path": "maps/basemap.mbtiles",
+            "sha256": "71155c900ab3eea53ea24316a089cf939eb28e2a7c36cb82fa901c14ee54e739"
+          },
+          "coast": {
+            "derivedFrom": "18fa2df20f36ccbef5daa3b19f1f9a10af22b97cfecdc7b470d0913d05979078",
+            "path": "maps/coast.mbtiles",
+            "sha256": "8806a2e707489525ea01299ab3d408922f9b3142a16cf79f97e53558d968a291"
+          },
+          "grid": {
+            "path": "maps/grid.mbtiles",
+            "sha256": "3a9cb5bfb5a80bd127dcc88f6245012ed0ec461a42e9de362d248e2469e3fd96"
+          },
+          "hillshade": {
+            "path": "maps/hillshade.mbtiles",
+            "sha256": "7e00c45a03b45c1a2ec991383100fd54ce6cb7507fb382c7f3ff848ef90c03c2"
+          },
+          "topography": {
+            "path": "maps/topography.mbtiles",
+            "sha256": "18fa2df20f36ccbef5daa3b19f1f9a10af22b97cfecdc7b470d0913d05979078"
+          }
+        },
+        "instructionsSHA256": "92e3b3b1731c9cf4ee11f05398bc5a1291f47f10ae0cadfd71b9ec2926f412b7",
+        "instructionsURL": "https://downloads.appsbyonzy.dev/OpenBareMap/nepal-annapurna/2.0.0/app-bundles-v1/android/instructions.txt",
+        "localPath": "releases/nepal-annapurna/2.0.0/app-bundles-v1/android/OpenBareMap-Nepal-Annapurna-Android-Bundle.zip",
+        "mapManifestSHA256": "276b5b26bf366df8f0f4dd71272ca067961304c8268702bd94aa44f7b28ffd6a",
+        "r2Key": "OpenBareMap/nepal-annapurna/2.0.0/app-bundles-v1/android/OpenBareMap-Nepal-Annapurna-Android-Bundle.zip",
+        "sha256": "f4a0d829700741cdc147e5f2a6cbb401c85f787ea51a23e12d1d0f0183ea5594",
+        "url": "https://downloads.appsbyonzy.dev/OpenBareMap/nepal-annapurna/2.0.0/app-bundles-v1/android/OpenBareMap-Nepal-Annapurna-Android-Bundle.zip"
+      },
+      "ios": {
+        "bytes": 185543767,
+        "datasets": {
+          "basemap": {
+            "path": "maps/basemap.mbtiles",
+            "sha256": "71155c900ab3eea53ea24316a089cf939eb28e2a7c36cb82fa901c14ee54e739"
+          },
+          "coast": {
+            "derived_from": "18fa2df20f36ccbef5daa3b19f1f9a10af22b97cfecdc7b470d0913d05979078",
+            "maxzoom": 12,
+            "operation": "Preserve land-layer MVT bytes only through zoom 12; omit other layers.",
+            "path": "maps/coast.mbtiles",
+            "sha256": "8806a2e707489525ea01299ab3d408922f9b3142a16cf79f97e53558d968a291"
+          },
+          "grid": {
+            "path": "maps/grid.mbtiles",
+            "sha256": "3a9cb5bfb5a80bd127dcc88f6245012ed0ec461a42e9de362d248e2469e3fd96"
+          },
+          "hillshade": {
+            "path": "maps/hillshade.mbtiles",
+            "sha256": "7e00c45a03b45c1a2ec991383100fd54ce6cb7507fb382c7f3ff848ef90c03c2"
+          },
+          "topography": {
+            "path": "maps/topography.mbtiles",
+            "sha256": "18fa2df20f36ccbef5daa3b19f1f9a10af22b97cfecdc7b470d0913d05979078"
+          }
+        },
+        "instructionsSHA256": "b423d4e5efa128be2a049135346e8143e5dc95613e747bbd642589f6858e955b",
+        "instructionsURL": "https://downloads.appsbyonzy.dev/OpenBareMap/nepal-annapurna/2.0.0/app-bundles-v1/ios/instructions.txt",
+        "localPath": "releases/nepal-annapurna/2.0.0/app-bundles-v1/ios/OpenBareMap-Nepal-Annapurna-iOS-Bundle.zip",
+        "mapManifestSHA256": "e883d91e78c03186197bb699397a371dd4b2a9716a5ed7e25546e38e767adb68",
+        "r2Key": "OpenBareMap/nepal-annapurna/2.0.0/app-bundles-v1/ios/OpenBareMap-Nepal-Annapurna-iOS-Bundle.zip",
+        "sha256": "cd40754926e3bc6cbd2ef8b0e360cef2006febf2e9d3d69533b3b03fe392ef5a",
+        "url": "https://downloads.appsbyonzy.dev/OpenBareMap/nepal-annapurna/2.0.0/app-bundles-v1/ios/OpenBareMap-Nepal-Annapurna-iOS-Bundle.zip"
+      }
+    },
+    "nepal-everest": {
+      "android": {
+        "bytes": 60686662,
+        "datasets": {
+          "basemap": {
+            "path": "maps/basemap.mbtiles",
+            "sha256": "a5a3c6e78848a7931c74322051dded4a2e8426ad972c937f54a0fbe878c0886c"
+          },
+          "coast": {
+            "derivedFrom": "91e50a607ebbcf0af23422df324c1827ea0b35beefa558f6d07f9009f81d0c5c",
+            "path": "maps/coast.mbtiles",
+            "sha256": "c1a0acd93daa795712b692fd005c4b9ae589032ce084df81eac23044e16cf12e"
+          },
+          "grid": {
+            "path": "maps/grid.mbtiles",
+            "sha256": "d85c9e258e1fcb3f4e7e4158f28e5f7cea426650eb065802967c0293cb0b0de0"
+          },
+          "hillshade": {
+            "path": "maps/hillshade.mbtiles",
+            "sha256": "b7f93a6c9d0e79d8b90cd79b7e307009a5e9d5c5c1dd60d3c5f0cb0d02c0cbd6"
+          },
+          "topography": {
+            "path": "maps/topography.mbtiles",
+            "sha256": "91e50a607ebbcf0af23422df324c1827ea0b35beefa558f6d07f9009f81d0c5c"
+          }
+        },
+        "instructionsSHA256": "619d52bffaedc26b8c508737bd75640f42f1dade455c8e9d7f2d0960e6ba8d40",
+        "instructionsURL": "https://downloads.appsbyonzy.dev/OpenBareMap/nepal-everest/2.0.0/app-bundles-v1/android/instructions.txt",
+        "localPath": "releases/nepal-everest/2.0.0/app-bundles-v1/android/OpenBareMap-Nepal-Everest-Android-Bundle.zip",
+        "mapManifestSHA256": "93a72027d9bf191d549e50425d2ad64fe632b0ea45ce6253e848a68f033875ac",
+        "r2Key": "OpenBareMap/nepal-everest/2.0.0/app-bundles-v1/android/OpenBareMap-Nepal-Everest-Android-Bundle.zip",
+        "sha256": "80ec529a4a0787ebac317d40193d51e1baa6efa397368206cade3897cb35e9c6",
+        "url": "https://downloads.appsbyonzy.dev/OpenBareMap/nepal-everest/2.0.0/app-bundles-v1/android/OpenBareMap-Nepal-Everest-Android-Bundle.zip"
+      },
+      "ios": {
+        "bytes": 60687074,
+        "datasets": {
+          "basemap": {
+            "path": "maps/basemap.mbtiles",
+            "sha256": "a5a3c6e78848a7931c74322051dded4a2e8426ad972c937f54a0fbe878c0886c"
+          },
+          "coast": {
+            "derived_from": "91e50a607ebbcf0af23422df324c1827ea0b35beefa558f6d07f9009f81d0c5c",
+            "maxzoom": 12,
+            "operation": "Preserve land-layer MVT bytes only through zoom 12; omit other layers.",
+            "path": "maps/coast.mbtiles",
+            "sha256": "c1a0acd93daa795712b692fd005c4b9ae589032ce084df81eac23044e16cf12e"
+          },
+          "grid": {
+            "path": "maps/grid.mbtiles",
+            "sha256": "d85c9e258e1fcb3f4e7e4158f28e5f7cea426650eb065802967c0293cb0b0de0"
+          },
+          "hillshade": {
+            "path": "maps/hillshade.mbtiles",
+            "sha256": "b7f93a6c9d0e79d8b90cd79b7e307009a5e9d5c5c1dd60d3c5f0cb0d02c0cbd6"
+          },
+          "topography": {
+            "path": "maps/topography.mbtiles",
+            "sha256": "91e50a607ebbcf0af23422df324c1827ea0b35beefa558f6d07f9009f81d0c5c"
+          }
+        },
+        "instructionsSHA256": "78416fa613ef985c52021eea5798b00afb4509be25bbccdc6cbd875ca9a90e6b",
+        "instructionsURL": "https://downloads.appsbyonzy.dev/OpenBareMap/nepal-everest/2.0.0/app-bundles-v1/ios/instructions.txt",
+        "localPath": "releases/nepal-everest/2.0.0/app-bundles-v1/ios/OpenBareMap-Nepal-Everest-iOS-Bundle.zip",
+        "mapManifestSHA256": "7b39e6ce1dd3c3e46a3e181fd541d7f612534c3c8b937c0e7655664c4ad9ec35",
+        "r2Key": "OpenBareMap/nepal-everest/2.0.0/app-bundles-v1/ios/OpenBareMap-Nepal-Everest-iOS-Bundle.zip",
+        "sha256": "86a936d3d4c424399db182cb2ee21d53a00b12a54dc9117c1edb623aa69bcc8e",
+        "url": "https://downloads.appsbyonzy.dev/OpenBareMap/nepal-everest/2.0.0/app-bundles-v1/ios/OpenBareMap-Nepal-Everest-iOS-Bundle.zip"
       }
     },
     "norway-central": {
