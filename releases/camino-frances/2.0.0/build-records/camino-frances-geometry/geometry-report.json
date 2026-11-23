@@ -1,0 +1,35 @@
+{
+  "builderSHA256": "9039f8d039efd698c5994f5506a47e7758221d81e897d7bcef3a8329b9e1be2a",
+  "contoursSourceSHA256": "408156dfe1ac903ae5ff183eda9a92ccf0f1f743e06ff08a1c1f5822c8d53761",
+  "counts": {
+    "contours": 27069,
+    "grid": {
+      "grid_10km": 75,
+      "grid_1km": 737
+    },
+    "landcover": {
+      "empty_source_areas": [],
+      "features": 31521,
+      "retained": 2454,
+      "smoothed": 29067
+    }
+  },
+  "osm": {
+    "bytes": 88510359,
+    "footprintSHA256": "d0952e4f41c6072a4e31929c7f62d07ed6c1a69ae509109815bef43621dddb97",
+    "operation": "Complete-feature corridor extraction followed by libosmium merge",
+    "path": "data/regions/camino-frances/camino-frances-261122.osm.pbf",
+    "replicationTimestamp": "2026-11-22T21:20:48Z",
+    "sha256": "e335e38f7ada97f0a5b8724b9effdd074aae37b1f73edfbf584abea01c21b957",
+    "snapshot_date": "2026-11-22",
+    "url": null
+  },
+  "outputs": {
+    "contours.geojson": "5626bf00c4462b5cb9aa1f4747b116fe850be2a9bd08281dc8af53c5cadc685d",
+    "grid_10km.geojson": "88ec23e2f97054aab128c5db564f727352a0930f5286f288ecdd97ce8efa65b1",
+    "grid_1km.geojson": "71106918ddcbfc516dfe33500654ccf35ff6f47e791a7e7c43eed1e4893b93ab",
+    "landcover.geojson": "6c36ef83c8efa9aa1562d5931c928eaa3c44aed8ad5636adf2ca5c511fd07e19"
+  },
+  "region": "camino-frances",
+  "smootherSHA256": "7581d024dc1c1bec931642c7201db149bf64a64c814c451fa8bf37a0881ea6c9"
+}

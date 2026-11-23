@@ -344,6 +344,22 @@ data/regions/norway-*/copernicus/*
 /releases/nepal-*/*/maps/
 /releases/nepal-*/*/app-bundles-v1/**/*.zip
 
+# Rebuildable Camino Francés and Cinque Terre inputs and delivery binaries
+/data/regions/camino-frances/
+/data/regions/cinque-terre/
+/regions/camino-frances/exports/
+/regions/cinque-terre/exports/
+/regions/camino-frances/garmin/coastal-context/
+/regions/cinque-terre/garmin/coastal-context/
+/regions/camino-frances/garmin/inputs/*.geojson.gz
+/regions/cinque-terre/garmin/inputs/*.geojson.gz
+/regions/camino-frances/garmin/dist/*.img
+/regions/cinque-terre/garmin/dist/*.img
+/releases/camino-frances/*/maps/
+/releases/cinque-terre/*/maps/
+/releases/camino-frances/*/app-bundles-v1/**/*.zip
+/releases/cinque-terre/*/app-bundles-v1/**/*.zip
+
 # Glacier revisions are distributed from R2 under new URLs.
 /regions/*/garmin/dist/*-Glaciers.img
 /regions/*/garmin/inputs/permanent-ice.geojson.gz

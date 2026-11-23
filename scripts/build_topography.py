@@ -70,11 +70,16 @@ def build(args):
             grids.append(path)
         run('gdalbuildvrt',dest/'elevation.vrt',*grids)
         cutline=coastfile
-        if region_id!='ireland' and p.get('clipTerrainToBounds'):
+        crop=[]
+        if region_id!='ireland' and p.get('routeCorridor'):
+            cutline=region_path(region_id,'coverage.geojson')
+            record['terrainCutlineSHA256']=digest(cutline)
+            crop=['-crop_to_cutline']
+        elif region_id!='ireland' and p.get('clipTerrainToBounds'):
             cutline=dest/'terrain-land.geojson'
             run('ogr2ogr','-f','GeoJSON',cutline,coastfile,'-clipsrc',*p['bounds'])
         alignment=['-tap'] if region_id!='ireland' and p.get('alignedTerrainPixels') else []
-        run('gdalwarp','-t_srs',config['projected_crs'],'-tr',config['ground_resolution_m'],config['ground_resolution_m'],*alignment,'-r','bilinear','-dstnodata','-32768','-cutline',cutline,'-co','COMPRESS=DEFLATE','-co','TILED=YES',dest/'elevation.vrt',dest/'elevation-itm.tif')
+        run('gdalwarp','-t_srs',config['projected_crs'],'-tr',config['ground_resolution_m'],config['ground_resolution_m'],*alignment,'-r','bilinear','-dstnodata','-32768','-cutline',cutline,*crop,'-co','COMPRESS=DEFLATE','-co','TILED=YES',dest/'elevation.vrt',dest/'elevation-itm.tif')
         run('gdal_contour','-i',config['contour_interval_m'],'-a','elevation','-snodata','-32768','-f','GPKG',dest/'elevation-itm.tif',dest/'contours.gpkg')
         run('ogr2ogr','-f','GeoJSON','-t_srs','EPSG:4326','-where','elevation > 0','-simplify',config['contour_simplification_m'],'-lco','COORDINATE_PRECISION=7',dest/'contours.geojson',dest/'contours.gpkg')
         from build_hillshade import raster_stage

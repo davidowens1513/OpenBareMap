@@ -1,0 +1,41 @@
+{
+  "regions": {
+    "cinque-terre": {
+      "basemap": {
+        "sourceSHA256": "ba5b3824ac3a14d468e96ead71fd9467b933d5bf069d8a27254e7e10e5d1d908",
+        "bytes": 36003657,
+        "sha256": "008d172dc23257d2f5804c122018ebf7807f470541377f9813544d79049be1d6",
+        "tiles": 1132
+      },
+      "grid": {
+        "sourceSHA256": "270fb678b5fde97d30ca6bf3570953b51eeacd09d81301cc3a6a55ea6fb7c589",
+        "bytes": 509444,
+        "sha256": "dcab1cc3f4303ef2c28bcac8223e1d41be489675c7a0a11aa07c279f2d70509b",
+        "tiles": 1789
+      },
+      "hillshade": {
+        "sourceSHA256": "b354709130ad106ec444af8dedfe4f0ded2888ab3821d4b5d566995cf05c1611",
+        "bytes": 3602905,
+        "sha256": "960f8a9cbbf0ff728e57d0f61231c4906c6d26a56e1377a0ad33f79a80d61ceb",
+        "tiles": 106
+      },
+      "topography": {
+        "sourceSHA256": "939f79c66f175d1c3457d1c884a10700dddd955b50c983ef237ecf2b594697ff",
+        "bytes": 22241889,
+        "sha256": "01351dbf4b35c66c83c7b3518dc72f00f82948fe0ca295386eb97999bd2b0921",
+        "tiles": 77720
+      },
+      "coast": {
+        "sourceSHA256": "730da03d900e4ea1c4dc58b03cf768add225b858c6974179fd17d10fe01ff529",
+        "bytes": 605317,
+        "sha256": "4f5405b52ece1b07e5c669d71428c00384a6556770a7c70e9bb9e8eb2847abbb",
+        "tiles": 5172
+      }
+    }
+  },
+  "pmtilesPython": "3.8.1",
+  "pmtilesJS": "4.5.0",
+  "librarySHA256": "caf981bc46f6327ee7e65d5dc964d89d38a69f60edca2bd4c5c890c21b554c6c",
+  "dataOrigin": "https://downloads.appsbyonzy.dev/OpenBareMap/cinque-terre/2.0.0/preview",
+  "scope": "Complete selected map tiles; no regional or zoom sampling."
+}

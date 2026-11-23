@@ -103,6 +103,9 @@ def landcover(source,destination,bounds=None,*,permanent_ice=False,ice_footprint
 def grid(region,destination):
     from pyproj import Transformer, __version__ as pyproj_version
     p=profile(region);transform=Transformer.from_crs(p['gridCRS'],'EPSG:4326',always_xy=True)
+    if p.get('routeCorridor'):
+        from shapely.geometry import LineString, mapping, shape
+        footprint=shape(json.loads(region_path(region,'coverage.geojson').read_text())['features'][0]['geometry'])
     counts={}
     for step,layer in [(1000,'grid_1km'),(10000,'grid_10km')]:
         out=Collection(destination/(layer+'.geojson'))
@@ -111,7 +114,19 @@ def grid(region,destination):
         for axis,minimum,maximum,crossmin,crossmax in [('E',west,east,south,north),('N',south,north,west,east)]:
             for fixed in range(minimum,maximum+1,step):
                 coords=[list(transform.transform(fixed,v) if axis=='E' else transform.transform(v,fixed)) for v in range(crossmin,crossmax+1,1000)]
-                out.add({'type':'LineString','coordinates':coords},{'label':f'{fixed//1000} km {axis}','metres':fixed,'axis':axis})
+                geometry={'type':'LineString','coordinates':coords}
+                if p.get('routeCorridor'):
+                    clipped=LineString(coords).intersection(footprint)
+                    if clipped.is_empty:
+                        continue
+                    if clipped.geom_type not in ('LineString','MultiLineString'):
+                        from shapely.geometry import MultiLineString
+                        parts=[part for part in getattr(clipped,'geoms',[]) if part.geom_type=='LineString']
+                        if not parts:
+                            continue
+                        clipped=MultiLineString(parts)
+                    geometry=mapping(clipped)
+                out.add(geometry,{'label':f'{fixed//1000} km {axis}','metres':fixed,'axis':axis})
         out.close();counts[layer]=out.count
     transform.transform((west+east)/2,(south+north)/2)
     operation=transform.get_last_used_operation()

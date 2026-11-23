@@ -1,0 +1,29 @@
+{
+  "accessed_utc": "2026-11-23T10:08:39.766278+00:00",
+  "inputs": [
+    {
+      "bytes": 594760218,
+      "path": "data/regions/dolomites/nord-ovest-261104.osm.pbf",
+      "replicationTimestamp": "2026-11-04T21:21:03Z",
+      "sha256": "e1e7aed156af639b56f4cc1d4dbed522e4e44116844e45d18a37321e59b2ee47",
+      "url": "https://download.geofabrik.de/europe/italy/nord-ovest/nord-ovest-261104.osm.pbf"
+    }
+  ],
+  "osm": {
+    "bytes": 31442482,
+    "operation": "Complete-feature bbox extraction with nested relation references",
+    "path": "data/regions/cinque-terre/nord-ovest-261104.osm.clipped.osm.pbf",
+    "replicationTimestamp": "2026-11-04T21:21:03Z",
+    "sha256": "bfadf7fdc3bebd7651813f4e020b9ed00cd6fb47f1d049c3b7b3f05746da3712",
+    "snapshot_date": "2026-11-04",
+    "url": "https://download.geofabrik.de/europe/italy/nord-ovest/nord-ovest-261104.osm.pbf"
+  },
+  "polygons": [
+    {
+      "bytes": 15515,
+      "path": "data/regions/cinque-terre/nord-ovest.poly",
+      "sha256": "4d6962b497cca39705476917d3c1749f7bab138b9ec97306d8847ccceb836395",
+      "url": "https://download.geofabrik.de/europe/italy/nord-ovest/nord-ovest.poly"
+    }
+  ]
+}

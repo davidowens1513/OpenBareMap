@@ -1,0 +1,20 @@
+{
+  "inputs": [
+    {
+      "path": "regions/camino-frances/garmin/inputs/contours.geojson.gz",
+      "sha256": "79873193061219f1b08a865e9963d13786ea16c4551a7ba0fe18b0672077c3cc",
+      "uncompressedSHA256": "5626bf00c4462b5cb9aa1f4747b116fe850be2a9bd08281dc8af53c5cadc685d"
+    },
+    {
+      "path": "regions/camino-frances/garmin/inputs/landcover.geojson.gz",
+      "sha256": "e2f948806e34d0d645a43454d7fc2efbf507674a46901b2b4be23a8e6d6d2bb6",
+      "uncompressedSHA256": "6c36ef83c8efa9aa1562d5931c928eaa3c44aed8ad5636adf2ca5c511fd07e19"
+    },
+    {
+      "path": "regions/camino-frances/garmin/inputs/land.geojson.gz",
+      "sha256": "06f532606ca4e20418ab042631bb42598ea324841c6f312d07bb5cc0dfc4ac96",
+      "uncompressedSHA256": "c5a3f05f81df5d08b2b239c6c6dba68e66a44457ed06af2128ee8a63f0af3917"
+    }
+  ],
+  "region": "camino-frances"
+}

@@ -1,0 +1,35 @@
+{
+  "bytes": 193880157,
+  "datasets": {
+    "basemap": {
+      "path": "maps/basemap.mbtiles",
+      "sha256": "5db63ddf8e417a760865c9e80b48ff703551cb651b92369790f1118571c3ae54"
+    },
+    "coast": {
+      "derived_from": "eddf7ac353dbc254686f5b5af59614521a4c089556404c90ccf506a36f195b48",
+      "maxzoom": 12,
+      "operation": "Preserve land-layer MVT bytes only through zoom 12; omit other layers.",
+      "path": "maps/coast.mbtiles",
+      "sha256": "6cc8efff9998791be058cbd24d6e513ab138b47f5593faf0bce9cfb969a74ef0"
+    },
+    "grid": {
+      "path": "maps/grid.mbtiles",
+      "sha256": "42823ca9dcda50df1b23e3ab589904b6110e67b5462c61eac9e972ede7725e4c"
+    },
+    "hillshade": {
+      "path": "maps/hillshade.mbtiles",
+      "sha256": "5061fef433dc55beeda545de6624f0066d9203b3814a1b3ac96c1a4e5347fcae"
+    },
+    "topography": {
+      "path": "maps/topography.mbtiles",
+      "sha256": "eddf7ac353dbc254686f5b5af59614521a4c089556404c90ccf506a36f195b48"
+    }
+  },
+  "instructionsSHA256": "857c8dcd4aba4790fc3fbcde795f0db38b81daad34c8d8266b89d684d7a402e7",
+  "instructionsURL": "https://downloads.appsbyonzy.dev/OpenBareMap/camino-frances/2.0.0/app-bundles-v1/ios/instructions.txt",
+  "localPath": "releases/camino-frances/2.0.0/app-bundles-v1/ios/OpenBareMap-Camino-Frances-iOS-Bundle.zip",
+  "mapManifestSHA256": "7196ec4d2766a8bab33e28aae2bc3401351f52d9ed1e2f2ba7ed2f81ed0f4f22",
+  "r2Key": "OpenBareMap/camino-frances/2.0.0/app-bundles-v1/ios/OpenBareMap-Camino-Frances-iOS-Bundle.zip",
+  "sha256": "a3d182ee67de0e5d0224efd82daea64cb802460add5097bbbd86695c0943dcbc",
+  "url": "https://downloads.appsbyonzy.dev/OpenBareMap/camino-frances/2.0.0/app-bundles-v1/ios/OpenBareMap-Camino-Frances-iOS-Bundle.zip"
+}

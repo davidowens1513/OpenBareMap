@@ -84,6 +84,9 @@ def main(region, geometry=None):
             if p.get('coverageBoundaryLabel'):
                 typ.write_text(typ.read_text().replace('25 km coverage limit',p['coverageBoundaryLabel']))
             lines=style/'lines';lines.write_text('obm:park_boundary=yes [0x10009 resolution 16]\nobm:coverage_boundary=yes [0x1000a resolution 16]\n'+lines.read_text())
+        if p.get('routeCorridor') and 'Type=0x1000d' not in typ.read_text():
+            typ.write_text(typ.read_text()+'\n[_line]\nType=0x1000d\nString=Camino Francés\nUseOrientation=N\nXpm="32 2 1 1"\n"a c #743b83"\n"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"\n"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"\n[end]\n')
+            lines=style/'lines';lines.write_text('obm:camino_route=yes [0x1000d resolution 18]\n'+lines.read_text())
     # Coast/background geometry must survive low-detail polygon size filtering.
     polygons=style/'polygons'
     rules=polygons.read_text().replace('obm:sea=yes [','obm:sea=yes { set mkgmap:skipSizeFilter=true } [').replace('natural=land [','natural=land { set mkgmap:skipSizeFilter=true } [')
@@ -101,7 +104,8 @@ def main(region, geometry=None):
     options=['--max-jobs=2','--style-file='+str(style),'--family-id='+str(p['garminFamilyId']),'--product-id=1','--family-name='+p['name'],'--series-name=OpenBareMap Garmin 2.0','--description='+p['name']+' 2.0','--code-page=1252','--lower-case','--name-tag-list=name:en,name,name:'+p.get('nativeLanguage','cy'),'--levels=0:24,1:23,2:22,3:20,4:18,5:16','--gmapsupp','--transparent','--draw-priority=25','--add-pois-to-areas','--dem='+str(work/'hgt'),'--dem-poly='+str(polygon),'--dem-dists=3312,3312,13248,26512,53024,106048','--dem-interpolation=bilinear','--copyright-file='+str(copyright_file)]
     if p.get('coverageBoundary'):
         credit=p.get('boundaryAttribution','Fuente: Organismo Autónomo Parques Nacionales (MITECO/OAPN), CC BY 4.0')
-        copyright_file.write_text(copyright_file.read_text()+f'\nNational park boundary: {credit}. See boundary-source.json.\n')
+        topic='Camino route and coverage' if p.get('routeCorridor') else 'National park boundary'
+        copyright_file.write_text(copyright_file.read_text()+f'\n{topic}: {credit}. See boundary-source.json.\n')
     from garmin_render_coverage import generate as generate_render_coverage
     generate_render_coverage(region)
     config={'routing':False,'transparent':True,'drawPriority':25,'nativeLevels':[24,23,22,20,18,16],'hikingLineResolution':24,'hikingLineWidthPixels':4,'buildingResolution':24,'fineContourResolution':23,'closeDetailLineTypes':['path','track','farm-track','forest-track','walking-route','cycling-route','bridleway','cycleway','steps'],'regionalRenderMask':'render-coverage.lock.json','coverage':p['coverage'],'contourIntervalMetres':20,'familyId':p['garminFamilyId'],'tileStartId':p['garminTileStartId'],'compilerOptions':options,'garminPackageRevision':p.get('garminPackageRevision',p['mapVersion'])}

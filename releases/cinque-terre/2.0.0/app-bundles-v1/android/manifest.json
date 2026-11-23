@@ -1,0 +1,33 @@
+{
+  "bytes": 73463671,
+  "datasets": {
+    "basemap": {
+      "path": "maps/basemap.mbtiles",
+      "sha256": "ba5b3824ac3a14d468e96ead71fd9467b933d5bf069d8a27254e7e10e5d1d908"
+    },
+    "coast": {
+      "derivedFrom": "939f79c66f175d1c3457d1c884a10700dddd955b50c983ef237ecf2b594697ff",
+      "path": "maps/coast.mbtiles",
+      "sha256": "730da03d900e4ea1c4dc58b03cf768add225b858c6974179fd17d10fe01ff529"
+    },
+    "grid": {
+      "path": "maps/grid.mbtiles",
+      "sha256": "270fb678b5fde97d30ca6bf3570953b51eeacd09d81301cc3a6a55ea6fb7c589"
+    },
+    "hillshade": {
+      "path": "maps/hillshade.mbtiles",
+      "sha256": "b354709130ad106ec444af8dedfe4f0ded2888ab3821d4b5d566995cf05c1611"
+    },
+    "topography": {
+      "path": "maps/topography.mbtiles",
+      "sha256": "939f79c66f175d1c3457d1c884a10700dddd955b50c983ef237ecf2b594697ff"
+    }
+  },
+  "instructionsSHA256": "87b5e5c614ad61b8afcfa4c48ba7fb44f2cf73676cbe75e0b6e5f080a8bc9639",
+  "instructionsURL": "https://downloads.appsbyonzy.dev/OpenBareMap/cinque-terre/2.0.0/app-bundles-v1/android/instructions.txt",
+  "localPath": "releases/cinque-terre/2.0.0/app-bundles-v1/android/OpenBareMap-Cinque-Terre-Portofino-Android-Bundle.zip",
+  "mapManifestSHA256": "ca6a7a79e53fcc31b006d93eab254fdce1b2da7c92361d49a8acd51903607a8b",
+  "r2Key": "OpenBareMap/cinque-terre/2.0.0/app-bundles-v1/android/OpenBareMap-Cinque-Terre-Portofino-Android-Bundle.zip",
+  "sha256": "5618a908c9908912e0bf07a5f7f06ec75f15e81c659c0d86ac0283aef2bc8218",
+  "url": "https://downloads.appsbyonzy.dev/OpenBareMap/cinque-terre/2.0.0/app-bundles-v1/android/OpenBareMap-Cinque-Terre-Portofino-Android-Bundle.zip"
+}

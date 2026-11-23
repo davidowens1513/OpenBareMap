@@ -1,0 +1,225 @@
+{
+  "appBundleName": "Camino-Frances",
+  "boundaryAttribution": "Federaci\u00f3n Espa\u00f1ola de Asociaciones de Amigos del Camino de Santiago (FEAACS), CC BY 4.0 \u00b7 OpenStreetMap contributors, ODbL",
+  "bounds": [
+    -8.666592909976318,
+    42.16819245473459,
+    -1.114287162100501,
+    43.25234447467475
+  ],
+  "clipBasemap": true,
+  "clipSource": true,
+  "clipTerrainToBounds": true,
+  "coastContextBounds": [
+    -10,
+    41,
+    0,
+    45
+  ],
+  "contourIntervalMetres": 20,
+  "coverage": "The French Way from Saint-Jean-Pied-de-Port to Santiago de Compostela, in a corridor extending 10 km to either side of the main route.",
+  "coverageBoundary": true,
+  "coverageBoundaryLabel": "10 km map coverage limit",
+  "destinationLabels": {
+    "astorga": "Astorga",
+    "burgos": "Burgos",
+    "carrion": "Carri\u00f3n de los Condes",
+    "island": "Camino Franc\u00e9s",
+    "leon": "Le\u00f3n",
+    "logrono": "Logro\u00f1o",
+    "pamplona": "Pamplona",
+    "ponferrada": "Ponferrada",
+    "puente-la-reina": "Puente la Reina",
+    "roncesvalles": "Roncesvalles",
+    "saint-jean": "Saint-Jean-Pied-de-Port",
+    "santiago": "Santiago de Compostela",
+    "sarria": "Sarria"
+  },
+  "destinations": {
+    "astorga": [
+      -6.0548,
+      42.4576,
+      12
+    ],
+    "burgos": [
+      -3.7047,
+      42.3408,
+      12
+    ],
+    "carrion": [
+      -4.6019,
+      42.337,
+      12
+    ],
+    "island": [
+      -4.802685152806574,
+      42.3291347106556,
+      7
+    ],
+    "leon": [
+      -5.5666,
+      42.5996,
+      12
+    ],
+    "logrono": [
+      -2.4474,
+      42.4665,
+      12
+    ],
+    "pamplona": [
+      -1.6412,
+      42.8185,
+      12
+    ],
+    "ponferrada": [
+      -6.5915,
+      42.5449,
+      12
+    ],
+    "puente-la-reina": [
+      -1.81797,
+      42.67148,
+      12
+    ],
+    "roncesvalles": [
+      -1.3192,
+      43.0098,
+      12
+    ],
+    "saint-jean": [
+      -1.23723,
+      43.16234,
+      12
+    ],
+    "santiago": [
+      -8.5445,
+      42.8809,
+      12
+    ],
+    "sarria": [
+      -7.4166,
+      42.776,
+      12
+    ]
+  },
+  "garminContextBounds": [
+    -8.666592909976318,
+    42.16819245473459,
+    -1.114287162100501,
+    43.25234447467475
+  ],
+  "garminFamilyId": 4874,
+  "garminFilename": "OpenBareMap-Camino-Frances.img",
+  "garminPackageRevision": "2.0.1-trail-detail-r1",
+  "garminTileStartId": 48740001,
+  "garminUseSourceOutline": true,
+  "gridCRS": "EPSG:25830",
+  "gridExtent": [
+    30000,
+    660000,
+    4660000,
+    4800000
+  ],
+  "gridName": "ETRS89 / UTM 30N",
+  "gridSource": "utm-grid",
+  "id": "camino-frances",
+  "ignoreSourceHeaderBounds": true,
+  "inspectionNames": [
+    "Pamplona",
+    "Burgos",
+    "Santiago de Compostela"
+  ],
+  "label": "Camino Franc\u00e9s",
+  "labelGlyphs": "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz\u00c0\u00c1\u00c8\u00c9\u00cd\u00d1\u00d3\u00da\u00dc\u00e0\u00e1\u00e8\u00e9\u00ed\u00f1\u00f3\u00fa\u00fc\u00e7",
+  "mapVersion": "2.0.0",
+  "maxzoom": 14,
+  "minorWaterwayMinzoom": 10,
+  "minzoom": 4,
+  "name": "OpenBareMap Camino Franc\u00e9s",
+  "nativeLanguage": "es",
+  "optionalBasemapLayers": [
+    "ferry",
+    "island_name",
+    "cycling_route",
+    "railway",
+    "station",
+    "hiking_route",
+    "boundary"
+  ],
+  "projectedCRS": "EPSG:25830",
+  "repairClippedCoastline": true,
+  "requireBogFeatures": false,
+  "routeCorridor": true,
+  "sourceBaseOverrides": {
+    "aquitaine": "https://download.geofabrik.de/europe/france/aquitaine/",
+    "spain": "https://download.geofabrik.de/europe/spain/"
+  },
+  "sourceBaseURL": "https://download.geofabrik.de/europe/",
+  "sourceCacheRegion": "camino-frances",
+  "sourceDate": "2026-11-22",
+  "sourceSlugs": [
+    "spain",
+    "aquitaine"
+  ],
+  "styleRevision": "2.0.0-camino-frances-r1",
+  "terrainAttribution": "Copernicus DEM GLO-30 \u00b7 European Union / ESA \u00b7 DLR / Airbus",
+  "terrainBounds": [
+    -9,
+    42,
+    -1,
+    44
+  ],
+  "terrainNotice": "Camino Franc\u00e9s elevation: Copernicus DEM GLO-30 Public (AWS 2021 release).\n\nproduced using Copernicus WorldDEM-30 \u00a9 DLR e.V. 2010-2014 and \u00a9 Airbus Defence and Space GmbH 2014-2018 provided under COPERNICUS by the European Union and ESA; all rights reserved\n\nThe organisations in charge of the Copernicus programme by law or by delegation do not incur any liability for any use of the Copernicus WorldDEM-30.\n\nLicense: https://dataspace.copernicus.eu/sites/default/files/media/files/2025-06/copernicus_contributing_mission_data_access_v2_cop_dem_licenses.pdf\nSource: https://registry.opendata.aws/copernicus-dem/\nVertical datum: EGM2008 orthometric metres. Native approximately 30 m cells are bilinearly resampled to point-aligned Int16 HGT for the shared terrain pipeline. Ocean-only cells absent from the official public inventory are zero.\n",
+  "terrainProvider": "copernicus-glo30",
+  "townlands": false,
+  "validationAnchors": {
+    "astorga": [
+      -6.0548,
+      42.4576
+    ],
+    "burgos": [
+      -3.7047,
+      42.3408
+    ],
+    "carrion": [
+      -4.6019,
+      42.337
+    ],
+    "leon": [
+      -5.5666,
+      42.5996
+    ],
+    "logrono": [
+      -2.4474,
+      42.4665
+    ],
+    "pamplona": [
+      -1.6412,
+      42.8185
+    ],
+    "ponferrada": [
+      -6.5915,
+      42.5449
+    ],
+    "puente-la-reina": [
+      -1.81797,
+      42.67148
+    ],
+    "roncesvalles": [
+      -1.3192,
+      43.0098
+    ],
+    "saint-jean": [
+      -1.23723,
+      43.16234
+    ],
+    "santiago": [
+      -8.5445,
+      42.8809
+    ],
+    "sarria": [
+      -7.4166,
+      42.776
+    ]
+  }
+}

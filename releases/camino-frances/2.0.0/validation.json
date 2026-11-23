@@ -1,0 +1,485 @@
+{
+  "coverage": "The French Way from Saint-Jean-Pied-de-Port to Santiago de Compostela, in a corridor extending 10 km to either side of the main route.",
+  "coverageAnchors": {
+    "astorga": {
+      "coordinate": [
+        -6.0548,
+        42.4576
+      ],
+      "featuresInNeighbouringDetailedTiles": 4424
+    },
+    "burgos": {
+      "coordinate": [
+        -3.7047,
+        42.3408
+      ],
+      "featuresInNeighbouringDetailedTiles": 33524
+    },
+    "carrion": {
+      "coordinate": [
+        -4.6019,
+        42.337
+      ],
+      "featuresInNeighbouringDetailedTiles": 2231
+    },
+    "leon": {
+      "coordinate": [
+        -5.5666,
+        42.5996
+      ],
+      "featuresInNeighbouringDetailedTiles": 26785
+    },
+    "logrono": {
+      "coordinate": [
+        -2.4474,
+        42.4665
+      ],
+      "featuresInNeighbouringDetailedTiles": 15994
+    },
+    "pamplona": {
+      "coordinate": [
+        -1.6412,
+        42.8185
+      ],
+      "featuresInNeighbouringDetailedTiles": 31310
+    },
+    "ponferrada": {
+      "coordinate": [
+        -6.5915,
+        42.5449
+      ],
+      "featuresInNeighbouringDetailedTiles": 12092
+    },
+    "puente-la-reina": {
+      "coordinate": [
+        -1.81797,
+        42.67148
+      ],
+      "featuresInNeighbouringDetailedTiles": 4091
+    },
+    "roncesvalles": {
+      "coordinate": [
+        -1.3192,
+        43.0098
+      ],
+      "featuresInNeighbouringDetailedTiles": 1287
+    },
+    "saint-jean": {
+      "coordinate": [
+        -1.23723,
+        43.16234
+      ],
+      "featuresInNeighbouringDetailedTiles": 8426
+    },
+    "santiago": {
+      "coordinate": [
+        -8.5445,
+        42.8809
+      ],
+      "featuresInNeighbouringDetailedTiles": 34117
+    },
+    "sarria": {
+      "coordinate": [
+        -7.4166,
+        42.776
+      ],
+      "featuresInNeighbouringDetailedTiles": 2765
+    }
+  },
+  "datasets": {
+    "basemap": {
+      "empty_tile_count": 0,
+      "logical_tiles_sha256": "b24fe96f702340aed6d44f38d894a4e5879416ad653e27502833d453cd447993",
+      "tile_count": 6755
+    },
+    "grid": {
+      "empty_tile_count": 0,
+      "logical_tiles_sha256": "47213fee6cbf4f50cae78dff4224a64f86d7af8376b1c727b0908b2a80cca80f",
+      "tile_count": 6629
+    },
+    "hillshade": {
+      "empty_tile_count": 0,
+      "logical_tiles_sha256": "2476d5079f3c7bd036fa72fafbccf9370b75dc6898b49ff31a7a37e60a27a778",
+      "tile_count": 605
+    },
+    "topography": {
+      "empty_tile_count": 85012,
+      "logical_tiles_sha256": "701ae13fff728298ed3cda1a96ca9f08585ad9b7ce961a5cc0e96b8a59e5ca3a",
+      "tile_count": 96940
+    }
+  },
+  "detail": {
+    "basemap": {
+      "boundaries": 20699,
+      "contours": 0
+    },
+    "topography": {
+      "boundaries": 0,
+      "contours": 173508
+    }
+  },
+  "garmin": {
+    "familyId": 4874,
+    "garminPackageRevision": "2.0.1-trail-detail-r1",
+    "inspection": {
+      "anchorLabels": {
+        "Burgos": "Burgos",
+        "Pamplona": "Pamplona",
+        "Santiago de Compostela": "Santiago de Compostela"
+      },
+      "bounds": [
+        -8.701257705688477,
+        42.1435546875,
+        -1.0986328125,
+        43.28621864318848
+      ],
+      "coastPolygonsByLevel": {
+        "0": {
+          "0x32": 21,
+          "0x54": 30
+        },
+        "1": {
+          "0x32": 16,
+          "0x54": 27
+        },
+        "2": {
+          "0x32": 16,
+          "0x54": 27
+        },
+        "3": {
+          "0x32": 15,
+          "0x54": 27
+        },
+        "4": {
+          "0x32": 15,
+          "0x54": 27
+        }
+      },
+      "contoursByLevel": {
+        "0": {
+          "0x20": 28678,
+          "0x22": 7294
+        },
+        "1": {
+          "0x20": 23439,
+          "0x22": 5987
+        },
+        "2": {
+          "0x22": 5673
+        },
+        "3": {
+          "0x10008": 5096
+        },
+        "4": {}
+      },
+      "lineInstancesAtHighestDetail": {
+        "0x1": 2801,
+        "0x10001": 6099,
+        "0x10002": 3622,
+        "0x10003": 5,
+        "0x10004": 1404,
+        "0x10005": 2964,
+        "0x10006": 217,
+        "0x1000a": 62,
+        "0x1000b": 6748,
+        "0x1000d": 48,
+        "0x14": 1474,
+        "0x16": 49160,
+        "0x18": 6437,
+        "0x1a": 1,
+        "0x1c": 779,
+        "0x1e": 460,
+        "0x1f": 988,
+        "0x2": 3114,
+        "0x20": 28678,
+        "0x22": 7294,
+        "0x3": 2359,
+        "0x4": 2898,
+        "0x6": 55415,
+        "0x7": 18868,
+        "0xa": 48392
+      },
+      "logicalCombinedSHA256": "57b53d3b6aaafb12e181b02a02e5da083555eeefe40b76369d68efa01d426504",
+      "logicalHashNote": "Internal file names, sizes and payloads; only CommonHeader creation-date bytes 14..20 are zeroed for hashing. IMG archive headers are excluded. Output bytes are never modified.",
+      "logicalTileSHA256": {
+        "48740001.img": "198c57c6f123f7c3b1100937420f922f126255165c10d4cdfc75ddd1a0222515",
+        "48740002.img": "193089b54a27c7d246d9bb6e13e2f2937d95979ba3c56f0fdde2d36700d4ae01",
+        "48740003.img": "3056a82cb04c7aa6cb187be20ff9f8c08da1365f6065120f6e4fa44a44433195",
+        "48740004.img": "8715a6c4360076c9e7f287d36ef70566eaf0f56e6c44dd42833628cf4aa538f3",
+        "48740005.img": "8f4425f7b4990a1e8addd682d1673d3e0206173fc12204e38d5f8ff1661787aa",
+        "48740006.img": "723496ff65e4852ced454f0359c402664f26cf0901fa0aa8f17649ec97a5bbd9",
+        "48740007.img": "d758265c58c0d40c23259f677edbf207b1f1531aeca70e26aa6b9b5e5f729d10",
+        "48740008.img": "09ada3cffef6add2c84568552ebce26f9d9aad970973c34b0934f1218079a0b0",
+        "48740009.img": "181854d05f887685863472cba9b18db083912cf4e6c4be6d1e0ffcf6bc1f9d41",
+        "48740010.img": "8013a257fbcd0234f62efd0ab3b655a52869bb81376d9af94c823b108995bca4",
+        "48740011.img": "6f5740f276f43dace4631fac57413a298eccc9674e79ef5edf257a186dc6e21d",
+        "48740012.img": "d081bc44343229e605b5fe6410ba9e1e34e8205b66f3243cc1b8111751493717",
+        "48740013.img": "70dca7845b672ea2070253ae18d7e307408c95898e884fa130ba8da6d9479dd1",
+        "48740014.img": "a591809759a4319bc38ee4b5862ba65a7941ae34caf2ed98e46bfba806b349fd"
+      },
+      "pointInstancesAtHighestDetail": {
+        "0x100": 9,
+        "0x10001": 491,
+        "0x10002": 465,
+        "0x10003": 4349,
+        "0x10004": 51,
+        "0x10006": 27855,
+        "0x2f0b": 4360,
+        "0x600": 69,
+        "0x650c": 41,
+        "0x6603": 314,
+        "0x6615": 482,
+        "0x6616": 1801,
+        "0x800": 926,
+        "0xb00": 4903,
+        "0xc00": 27179
+      },
+      "polygonInstancesAtHighestDetail": {
+        "0x10101": 10294,
+        "0x10102": 12093,
+        "0x10103": 542,
+        "0x10104": 4020,
+        "0x10105": 17,
+        "0x10106": 143,
+        "0x10107": 2,
+        "0x10109": 213,
+        "0x1010a": 26,
+        "0x1010b": 10,
+        "0x13": 129939,
+        "0x32": 21,
+        "0x3c": 1880,
+        "0x50": 12494,
+        "0x51": 59,
+        "0x54": 30
+      },
+      "routing": false,
+      "subfileBytes": {
+        "DEM": 49930751,
+        "LBL": 1644153,
+        "MPS": 1212,
+        "RGN": 28863491,
+        "SRT": 912,
+        "TRE": 352750,
+        "TYP": 3098
+      },
+      "tiles": 14
+    },
+    "output": {
+      "bytes": 80969728,
+      "path": "regions/camino-frances/garmin/dist/OpenBareMap-Camino-Frances.img",
+      "sha256": "b46b5780fff5c35ad0fadce409cf99b626e8d42d3f8f1483df61b7d3c8024256"
+    },
+    "routing": false,
+    "status": "compiled and structurally inspected; hardware rendering pending"
+  },
+  "geometryProcessing": {
+    "contours": 27069,
+    "grid": {
+      "grid_10km": 75,
+      "grid_1km": 737
+    },
+    "landcover": {
+      "empty_source_areas": [],
+      "features": 31521,
+      "retained": 2454,
+      "smoothed": 29067
+    }
+  },
+  "irelandGarminPackageRevision": "2.0.1-trail-detail-r1",
+  "irelandPreserved": true,
+  "labelGlyphs": {
+    "Open Sans Bold": true,
+    "Open Sans Regular": true,
+    "Open Sans Semibold": true
+  },
+  "landBackground": {
+    "astorga": {
+      "coordinate": [
+        -6.0548,
+        42.4576
+      ],
+      "verifiedZooms": [
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    },
+    "burgos": {
+      "coordinate": [
+        -3.7047,
+        42.3408
+      ],
+      "verifiedZooms": [
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    },
+    "carrion": {
+      "coordinate": [
+        -4.6019,
+        42.337
+      ],
+      "verifiedZooms": [
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    },
+    "leon": {
+      "coordinate": [
+        -5.5666,
+        42.5996
+      ],
+      "verifiedZooms": [
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    },
+    "logrono": {
+      "coordinate": [
+        -2.4474,
+        42.4665
+      ],
+      "verifiedZooms": [
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    },
+    "pamplona": {
+      "coordinate": [
+        -1.6412,
+        42.8185
+      ],
+      "verifiedZooms": [
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    },
+    "ponferrada": {
+      "coordinate": [
+        -6.5915,
+        42.5449
+      ],
+      "verifiedZooms": [
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    },
+    "puente-la-reina": {
+      "coordinate": [
+        -1.81797,
+        42.67148
+      ],
+      "verifiedZooms": [
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    },
+    "roncesvalles": {
+      "coordinate": [
+        -1.3192,
+        43.0098
+      ],
+      "verifiedZooms": [
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    },
+    "saint-jean": {
+      "coordinate": [
+        -1.23723,
+        43.16234
+      ],
+      "verifiedZooms": [
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    },
+    "santiago": {
+      "coordinate": [
+        -8.5445,
+        42.8809
+      ],
+      "verifiedZooms": [
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    },
+    "sarria": {
+      "coordinate": [
+        -7.4166,
+        42.776
+      ],
+      "verifiedZooms": [
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    }
+  },
+  "packages": {
+    "android": {
+      "checkedFiles": 48,
+      "nativeDeviceRenderingTested": false,
+      "sourceFiles": {
+        "basemap": "maps/basemap.mbtiles",
+        "coast": "maps/coast.mbtiles",
+        "hillshade": "maps/hillshade.mbtiles",
+        "topography": "maps/topography.mbtiles",
+        "utm-grid": "maps/grid.mbtiles"
+      }
+    },
+    "ios": {
+      "checkedFiles": 51,
+      "nativeDeviceRenderingTested": false,
+      "sourceFiles": {
+        "basemap": "maps/basemap.mbtiles",
+        "coast": "maps/coast.mbtiles",
+        "hillshade": "maps/hillshade.mbtiles",
+        "topography": "maps/topography.mbtiles",
+        "utm-grid": "maps/grid.mbtiles"
+      }
+    }
+  },
+  "region": "camino-frances",
+  "routeCorridor": {
+    "bufferCRS": "EPSG:25830",
+    "bufferMetres": 10000,
+    "coverageSquareKilometres": 14068.0,
+    "routeLengthKilometres": 764.56
+  },
+  "status": "automated checks passed; visual and hardware acceptance pending"
+}

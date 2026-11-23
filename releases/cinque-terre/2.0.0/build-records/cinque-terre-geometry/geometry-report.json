@@ -1,0 +1,34 @@
+{
+  "builderSHA256": "f5e94cbef223bb0e9403950eab9d79021a1429ee132959b9cf627eb677ab8606",
+  "contoursSourceSHA256": "0002ac9c6e86d2192dbd9e13a6fbffdce6344884eaa029e1d71d7c35640518ac",
+  "counts": {
+    "contours": 5864,
+    "grid": {
+      "grid_10km": 17,
+      "grid_1km": 152
+    },
+    "landcover": {
+      "empty_source_areas": [],
+      "features": 5679,
+      "retained": 253,
+      "smoothed": 5426
+    }
+  },
+  "osm": {
+    "bytes": 31442482,
+    "operation": "Complete-feature bbox extraction with nested relation references",
+    "path": "data/regions/cinque-terre/nord-ovest-261104.osm.clipped.osm.pbf",
+    "replicationTimestamp": "2026-11-04T21:21:03Z",
+    "sha256": "bfadf7fdc3bebd7651813f4e020b9ed00cd6fb47f1d049c3b7b3f05746da3712",
+    "snapshot_date": "2026-11-04",
+    "url": "https://download.geofabrik.de/europe/italy/nord-ovest/nord-ovest-261104.osm.pbf"
+  },
+  "outputs": {
+    "contours.geojson": "0bc5abcfc23fc276446e35375b21002c6561f4e19785bf7ba7a618c660407073",
+    "grid_10km.geojson": "a039881274f0e832315991764b69299d160a7d5f27e33f6e81ddb9bd4e92be7c",
+    "grid_1km.geojson": "7b5e1374a3f9f19dcda10980f72ad4611570f81554db9200d62adbe13a594ce5",
+    "landcover.geojson": "d271700d5edd554af90d83eeb5d003eb739110f6cfbb575e2a3bfbee46939e63"
+  },
+  "region": "cinque-terre",
+  "smootherSHA256": "7581d024dc1c1bec931642c7201db149bf64a64c814c451fa8bf37a0881ea6c9"
+}

@@ -36,10 +36,10 @@ def polygon_union(region,destination):
     if p.get('coverageBoundary'):
         from shapely.geometry import shape
         footprint=shape(json.loads(region_path(region,'coverage.geojson').read_text())['features'][0]['geometry'])
-        if not geometry.covers(footprint):raise ValueError('Upstream source does not cover the full buffered park')
+        if not geometry.covers(footprint):raise ValueError('Upstream source does not cover the full regional footprint')
         # Native Garmin tiles are rectangular. A conservative convex selection
         # envelope avoids Java Area failures on near-tangent concave buffer arcs,
-        # includes the entire 25 km footprint, and keeps the exact outline as an overlay.
+        # includes the entire footprint, and keeps the exact outline as an overlay.
         geometry=footprint.convex_hull
         if not geometry.covers(footprint):raise ValueError('Garmin envelope excludes requested coverage')
     if not geometry.is_valid or geometry.is_empty:raise ValueError('Invalid combined coverage')
@@ -51,4 +51,10 @@ def polygon_union(region,destination):
         for label,ring in [(str(index),poly.exterior)]+[(f'!{index}-{i}',ring) for i,ring in enumerate(poly.interiors,1)]:
             output.append(label);output.extend(f'  {x:.8f}  {y:.8f}' for x,y in ring.coords);output.append('END')
     output.append('END');destination.write_text('\n'.join(output)+'\n')
-    write(destination.with_suffix('.json'),{'operation':'Requested rectangular crop; source outlines cover all destination anchors' if p.get('clipSource') or p.get('garminCoverageBounds') else 'Conservative convex tile-selection envelope covering official park plus 25 km; exact boundaries retained in map overlays' if p.get('coverageBoundary') else 'Geometric union of complete upstream region outlines; overlapping buffers dissolved','inputs':lock['polygons'],'bounds':list(geometry.bounds),'areaSquareDegrees':geometry.area,'polygons':len(polygons),'sha256':digest(destination),'exactFootprint':'regions/'+region+'/coverage.geojson' if p.get('coverageBoundary') else None,'entireRequestedFootprintCovered':True,'knownDestinationsCovered':list(p['destinations'])})
+    if p.get('coverageBoundary'):
+        operation = 'Convex tile-selection envelope around the full regional footprint; the exact outline is retained as a map overlay'
+    elif p.get('clipSource') or p.get('garminCoverageBounds'):
+        operation = 'Requested rectangular crop; source outlines cover all destination anchors'
+    else:
+        operation = 'Geometric union of complete upstream region outlines; overlapping buffers dissolved'
+    write(destination.with_suffix('.json'),{'operation':operation,'inputs':lock['polygons'],'bounds':list(geometry.bounds),'areaSquareDegrees':geometry.area,'polygons':len(polygons),'sha256':digest(destination),'exactFootprint':'regions/'+region+'/coverage.geojson' if p.get('coverageBoundary') else None,'entireRequestedFootprintCovered':True,'knownDestinationsCovered':list(p['destinations'])})

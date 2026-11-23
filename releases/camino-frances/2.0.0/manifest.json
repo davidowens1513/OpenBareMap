@@ -1,0 +1,107 @@
+{
+  "acceptance": "Automated checks only; see validation and visual-review records for actual reviewed scope.",
+  "coverage": "The French Way from Saint-Jean-Pied-de-Port to Santiago de Compostela, in a corridor extending 10 km to either side of the main route.",
+  "datasets": {
+    "basemap": {
+      "bytes": 108843008,
+      "path": "releases/camino-frances/2.0.0/maps/basemap.mbtiles",
+      "sha256": "5db63ddf8e417a760865c9e80b48ff703551cb651b92369790f1118571c3ae54",
+      "validation": {
+        "empty_tile_count": 0,
+        "logical_tiles_sha256": "b24fe96f702340aed6d44f38d894a4e5879416ad653e27502833d453cd447993",
+        "tile_count": 6755
+      }
+    },
+    "grid": {
+      "bytes": 2326528,
+      "path": "releases/camino-frances/2.0.0/maps/grid.mbtiles",
+      "sha256": "42823ca9dcda50df1b23e3ab589904b6110e67b5462c61eac9e972ede7725e4c",
+      "validation": {
+        "empty_tile_count": 0,
+        "logical_tiles_sha256": "47213fee6cbf4f50cae78dff4224a64f86d7af8376b1c727b0908b2a80cca80f",
+        "tile_count": 6629
+      }
+    },
+    "hillshade": {
+      "bytes": 16695296,
+      "path": "releases/camino-frances/2.0.0/maps/hillshade.mbtiles",
+      "sha256": "5061fef433dc55beeda545de6624f0066d9203b3814a1b3ac96c1a4e5347fcae",
+      "validation": {
+        "empty_tile_count": 0,
+        "logical_tiles_sha256": "2476d5079f3c7bd036fa72fafbccf9370b75dc6898b49ff31a7a37e60a27a778",
+        "tile_count": 605
+      }
+    },
+    "topography": {
+      "bytes": 58073088,
+      "path": "releases/camino-frances/2.0.0/maps/topography-context.mbtiles",
+      "sha256": "eddf7ac353dbc254686f5b5af59614521a4c089556404c90ccf506a36f195b48",
+      "validation": {
+        "empty_tile_count": 85012,
+        "logical_tiles_sha256": "701ae13fff728298ed3cda1a96ca9f08585ad9b7ce961a5cc0e96b8a59e5ca3a",
+        "tile_count": 96940
+      }
+    }
+  },
+  "garmin": {
+    "bytes": 80969728,
+    "path": "regions/camino-frances/garmin/dist/OpenBareMap-Camino-Frances.img",
+    "sha256": "b46b5780fff5c35ad0fadce409cf99b626e8d42d3f8f1483df61b7d3c8024256"
+  },
+  "geometryReport": {
+    "path": "releases/camino-frances/2.0.0/build-records/camino-frances-geometry/geometry-report.json",
+    "sha256": "9b128a531b396c4baf463a6ef7f032c7eb873b99aeef869e7f805bc25fff4559"
+  },
+  "hostAppsModified": false,
+  "mapVersion": "2.0.0",
+  "osm": {
+    "bytes": 88510359,
+    "footprintSHA256": "d0952e4f41c6072a4e31929c7f62d07ed6c1a69ae509109815bef43621dddb97",
+    "operation": "Complete-feature corridor extraction followed by libosmium merge",
+    "path": "data/regions/camino-frances/camino-frances-261122.osm.pbf",
+    "replicationTimestamp": "2026-11-22T21:20:48Z",
+    "sha256": "e335e38f7ada97f0a5b8724b9effdd074aae37b1f73edfbf584abea01c21b957",
+    "snapshot_date": "2026-11-22",
+    "url": null
+  },
+  "packages": {
+    "android": {
+      "archive": {
+        "bytes": 193849612,
+        "path": "regions/camino-frances/android/OpenBareMap-Android.zip",
+        "sha256": "b13c312fd2552be927ab701d5659864768319f92e79c3dcebd212b52a893d654"
+      },
+      "checksumsSHA256": "3635320f5b88c7e8db81e38eef43528796b396be3c89c0a9358b51e62a0dc686",
+      "manifestSHA256": "0bfafc33ee663b3e027b47b8599836a38f27fd5e10fe869c7e1b1bf1ec2b1edf",
+      "path": "regions/camino-frances/android",
+      "validationSHA256": "9905b71d096c418c4ee55dc8a06cfa35dfcdda85bb5a1786901e5d405dcf3a0e"
+    },
+    "ios": {
+      "checksumsSHA256": "4d467f2a3a684a097ea138d465741878921d43cd76c856a95165916dca5537da",
+      "manifestSHA256": "7196ec4d2766a8bab33e28aae2bc3401351f52d9ed1e2f2ba7ed2f81ed0f4f22",
+      "path": "regions/camino-frances/ios",
+      "validationSHA256": "52f62ddb78cc3ae185c1948d5a1efc4e2de4b43907eb73b12eda8ed2643b85f0"
+    }
+  },
+  "pythonRuntime": {
+    "packages": {
+      "Pillow": "12.3.0",
+      "certifi": "2026.10.23",
+      "charset-normalizer": "3.5.2",
+      "idna": "3.20",
+      "numpy": "2.5.4",
+      "osmium": "4.3.2",
+      "pyproj": "3.8.0",
+      "requests": "2.34.2",
+      "shapely": "2.2.0",
+      "urllib3": "2.8.0"
+    },
+    "platform": "macOS-27.2.1-arm64-arm-64bit-Mach-O",
+    "python": "3.14.5 (main, May 10 2026, 10:21:34) [Clang 21.0.0 (clang-2100.0.123.102)]",
+    "requirementsSHA256": "427f12ff8b49bfebac0a7d453c2f65bd15d6695584b18e6ecee1fdfeed20a36c"
+  },
+  "region": "camino-frances",
+  "styleSHA256": "ba3addbbb91afb0866b834fa767276d57b1018c94da25bf4222b1ec1caa55628",
+  "terrainLockSHA256": "ff22b48a564ac00d8e7a231a3975d4ac33cacbc2f6d3c51a17fb77a870c4ec7b",
+  "validation": "validation.json"
+}

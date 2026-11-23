@@ -6,10 +6,12 @@
     "alps-tyrol-bavaria": "2.0.1",
     "alps-west": "2.0.1",
     "balearic-islands": "2.0.0",
+    "camino-frances": "2.0.0",
     "canadian-rockies-banff": "2.0.0",
     "canadian-rockies-jasper": "2.0.0",
     "canadian-rockies-kananaskis-waterton": "2.0.0",
     "canary-islands": "2.0.0",
+    "cinque-terre": "2.0.0",
     "corsica": "2.0.0",
     "crete": "2.0.0",
     "cyprus": "2.0.0",
@@ -395,6 +397,76 @@
         "url": "https://downloads.appsbyonzy.dev/OpenBareMap/balearic-islands/2.0.0/app-bundles-v1/ios/OpenBareMap-Balearic-Islands-iOS-Bundle.zip"
       }
     },
+    "camino-frances": {
+      "android": {
+        "bytes": 193878110,
+        "datasets": {
+          "basemap": {
+            "path": "maps/basemap.mbtiles",
+            "sha256": "5db63ddf8e417a760865c9e80b48ff703551cb651b92369790f1118571c3ae54"
+          },
+          "coast": {
+            "derivedFrom": "eddf7ac353dbc254686f5b5af59614521a4c089556404c90ccf506a36f195b48",
+            "path": "maps/coast.mbtiles",
+            "sha256": "6cc8efff9998791be058cbd24d6e513ab138b47f5593faf0bce9cfb969a74ef0"
+          },
+          "grid": {
+            "path": "maps/grid.mbtiles",
+            "sha256": "42823ca9dcda50df1b23e3ab589904b6110e67b5462c61eac9e972ede7725e4c"
+          },
+          "hillshade": {
+            "path": "maps/hillshade.mbtiles",
+            "sha256": "5061fef433dc55beeda545de6624f0066d9203b3814a1b3ac96c1a4e5347fcae"
+          },
+          "topography": {
+            "path": "maps/topography.mbtiles",
+            "sha256": "eddf7ac353dbc254686f5b5af59614521a4c089556404c90ccf506a36f195b48"
+          }
+        },
+        "instructionsSHA256": "a6b62af315b6e19fe2472e66eaf3947cce35b797736786b750be411f7b1dcceb",
+        "instructionsURL": "https://downloads.appsbyonzy.dev/OpenBareMap/camino-frances/2.0.0/app-bundles-v1/android/instructions.txt",
+        "localPath": "releases/camino-frances/2.0.0/app-bundles-v1/android/OpenBareMap-Camino-Frances-Android-Bundle.zip",
+        "mapManifestSHA256": "0bfafc33ee663b3e027b47b8599836a38f27fd5e10fe869c7e1b1bf1ec2b1edf",
+        "r2Key": "OpenBareMap/camino-frances/2.0.0/app-bundles-v1/android/OpenBareMap-Camino-Frances-Android-Bundle.zip",
+        "sha256": "f6de666b03d35afffbc5abfc4edc9bfeb72c1a8adebe5c6d7d414a85257ed2f7",
+        "url": "https://downloads.appsbyonzy.dev/OpenBareMap/camino-frances/2.0.0/app-bundles-v1/android/OpenBareMap-Camino-Frances-Android-Bundle.zip"
+      },
+      "ios": {
+        "bytes": 193880157,
+        "datasets": {
+          "basemap": {
+            "path": "maps/basemap.mbtiles",
+            "sha256": "5db63ddf8e417a760865c9e80b48ff703551cb651b92369790f1118571c3ae54"
+          },
+          "coast": {
+            "derived_from": "eddf7ac353dbc254686f5b5af59614521a4c089556404c90ccf506a36f195b48",
+            "maxzoom": 12,
+            "operation": "Preserve land-layer MVT bytes only through zoom 12; omit other layers.",
+            "path": "maps/coast.mbtiles",
+            "sha256": "6cc8efff9998791be058cbd24d6e513ab138b47f5593faf0bce9cfb969a74ef0"
+          },
+          "grid": {
+            "path": "maps/grid.mbtiles",
+            "sha256": "42823ca9dcda50df1b23e3ab589904b6110e67b5462c61eac9e972ede7725e4c"
+          },
+          "hillshade": {
+            "path": "maps/hillshade.mbtiles",
+            "sha256": "5061fef433dc55beeda545de6624f0066d9203b3814a1b3ac96c1a4e5347fcae"
+          },
+          "topography": {
+            "path": "maps/topography.mbtiles",
+            "sha256": "eddf7ac353dbc254686f5b5af59614521a4c089556404c90ccf506a36f195b48"
+          }
+        },
+        "instructionsSHA256": "857c8dcd4aba4790fc3fbcde795f0db38b81daad34c8d8266b89d684d7a402e7",
+        "instructionsURL": "https://downloads.appsbyonzy.dev/OpenBareMap/camino-frances/2.0.0/app-bundles-v1/ios/instructions.txt",
+        "localPath": "releases/camino-frances/2.0.0/app-bundles-v1/ios/OpenBareMap-Camino-Frances-iOS-Bundle.zip",
+        "mapManifestSHA256": "7196ec4d2766a8bab33e28aae2bc3401351f52d9ed1e2f2ba7ed2f81ed0f4f22",
+        "r2Key": "OpenBareMap/camino-frances/2.0.0/app-bundles-v1/ios/OpenBareMap-Camino-Frances-iOS-Bundle.zip",
+        "sha256": "a3d182ee67de0e5d0224efd82daea64cb802460add5097bbbd86695c0943dcbc",
+        "url": "https://downloads.appsbyonzy.dev/OpenBareMap/camino-frances/2.0.0/app-bundles-v1/ios/OpenBareMap-Camino-Frances-iOS-Bundle.zip"
+      }
+    },
     "canadian-rockies-banff": {
       "android": {
         "bytes": 521558109,
@@ -673,6 +745,76 @@
         "r2Key": "OpenBareMap/canary-islands/2.0.0/app-bundles-v1/ios/OpenBareMap-Canary-Islands-iOS-Bundle.zip",
         "sha256": "a7b87f76b4a5bfaa35ee8d3298ba168e61ec11c5f15441320a2476b4834dab2d",
         "url": "https://downloads.appsbyonzy.dev/OpenBareMap/canary-islands/2.0.0/app-bundles-v1/ios/OpenBareMap-Canary-Islands-iOS-Bundle.zip"
+      }
+    },
+    "cinque-terre": {
+      "android": {
+        "bytes": 73463671,
+        "datasets": {
+          "basemap": {
+            "path": "maps/basemap.mbtiles",
+            "sha256": "ba5b3824ac3a14d468e96ead71fd9467b933d5bf069d8a27254e7e10e5d1d908"
+          },
+          "coast": {
+            "derivedFrom": "939f79c66f175d1c3457d1c884a10700dddd955b50c983ef237ecf2b594697ff",
+            "path": "maps/coast.mbtiles",
+            "sha256": "730da03d900e4ea1c4dc58b03cf768add225b858c6974179fd17d10fe01ff529"
+          },
+          "grid": {
+            "path": "maps/grid.mbtiles",
+            "sha256": "270fb678b5fde97d30ca6bf3570953b51eeacd09d81301cc3a6a55ea6fb7c589"
+          },
+          "hillshade": {
+            "path": "maps/hillshade.mbtiles",
+            "sha256": "b354709130ad106ec444af8dedfe4f0ded2888ab3821d4b5d566995cf05c1611"
+          },
+          "topography": {
+            "path": "maps/topography.mbtiles",
+            "sha256": "939f79c66f175d1c3457d1c884a10700dddd955b50c983ef237ecf2b594697ff"
+          }
+        },
+        "instructionsSHA256": "87b5e5c614ad61b8afcfa4c48ba7fb44f2cf73676cbe75e0b6e5f080a8bc9639",
+        "instructionsURL": "https://downloads.appsbyonzy.dev/OpenBareMap/cinque-terre/2.0.0/app-bundles-v1/android/instructions.txt",
+        "localPath": "releases/cinque-terre/2.0.0/app-bundles-v1/android/OpenBareMap-Cinque-Terre-Portofino-Android-Bundle.zip",
+        "mapManifestSHA256": "ca6a7a79e53fcc31b006d93eab254fdce1b2da7c92361d49a8acd51903607a8b",
+        "r2Key": "OpenBareMap/cinque-terre/2.0.0/app-bundles-v1/android/OpenBareMap-Cinque-Terre-Portofino-Android-Bundle.zip",
+        "sha256": "5618a908c9908912e0bf07a5f7f06ec75f15e81c659c0d86ac0283aef2bc8218",
+        "url": "https://downloads.appsbyonzy.dev/OpenBareMap/cinque-terre/2.0.0/app-bundles-v1/android/OpenBareMap-Cinque-Terre-Portofino-Android-Bundle.zip"
+      },
+      "ios": {
+        "bytes": 73464092,
+        "datasets": {
+          "basemap": {
+            "path": "maps/basemap.mbtiles",
+            "sha256": "ba5b3824ac3a14d468e96ead71fd9467b933d5bf069d8a27254e7e10e5d1d908"
+          },
+          "coast": {
+            "derived_from": "939f79c66f175d1c3457d1c884a10700dddd955b50c983ef237ecf2b594697ff",
+            "maxzoom": 12,
+            "operation": "Preserve land-layer MVT bytes only through zoom 12; omit other layers.",
+            "path": "maps/coast.mbtiles",
+            "sha256": "730da03d900e4ea1c4dc58b03cf768add225b858c6974179fd17d10fe01ff529"
+          },
+          "grid": {
+            "path": "maps/grid.mbtiles",
+            "sha256": "270fb678b5fde97d30ca6bf3570953b51eeacd09d81301cc3a6a55ea6fb7c589"
+          },
+          "hillshade": {
+            "path": "maps/hillshade.mbtiles",
+            "sha256": "b354709130ad106ec444af8dedfe4f0ded2888ab3821d4b5d566995cf05c1611"
+          },
+          "topography": {
+            "path": "maps/topography.mbtiles",
+            "sha256": "939f79c66f175d1c3457d1c884a10700dddd955b50c983ef237ecf2b594697ff"
+          }
+        },
+        "instructionsSHA256": "e1992d1f37dd7f97ad11f5a143d0a56956b73473a6a72b4bf23647589c3a1c00",
+        "instructionsURL": "https://downloads.appsbyonzy.dev/OpenBareMap/cinque-terre/2.0.0/app-bundles-v1/ios/instructions.txt",
+        "localPath": "releases/cinque-terre/2.0.0/app-bundles-v1/ios/OpenBareMap-Cinque-Terre-Portofino-iOS-Bundle.zip",
+        "mapManifestSHA256": "3806a54cc5b0367ac05c17d0da12cf1ea904678bb472b8bdd5d7bee4ff8236a8",
+        "r2Key": "OpenBareMap/cinque-terre/2.0.0/app-bundles-v1/ios/OpenBareMap-Cinque-Terre-Portofino-iOS-Bundle.zip",
+        "sha256": "0a20c94b6ca2f3aeb231e2f32fbe13c1bd741114e08933efd737240b9df3ac9c",
+        "url": "https://downloads.appsbyonzy.dev/OpenBareMap/cinque-terre/2.0.0/app-bundles-v1/ios/OpenBareMap-Cinque-Terre-Portofino-iOS-Bundle.zip"
       }
     },
     "corsica": {

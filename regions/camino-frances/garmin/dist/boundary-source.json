@@ -1,0 +1,21 @@
+{
+  "bufferCRS": "EPSG:25830",
+  "bufferMetres": 10000,
+  "changes": "Main route stages joined and source retraces removed. A projected circular buffer was computed around the resulting route.",
+  "coverageSHA256": "d0952e4f41c6072a4e31929c7f62d07ed6c1a69ae509109815bef43621dddb97",
+  "coverageSquareKilometres": 14068.0,
+  "routeLengthKilometres": 764.56,
+  "routeSHA256": "162e663fd9b7e7385f269738f3942c4f3f58484b4305b326d2ff483694c188af",
+  "sources": [
+    {
+      "attribution": "Rutas de Caminos de Santiago 2020\u20132026 CC BY 4.0 FEAACS",
+      "sha256": "b616e8c744867eee5b335052a3fb3a66dddd559cebbaa7bba0ceacfd2bcb2849",
+      "url": "https://nco.ign.es/server/rest/services/nco/CaminoSantiago/MapServer/1/query?where=sde.datos_nco.CST.id_camino%3D%27ES01c%27&outFields=sde.datos_nco.CST.id_etapa%2Csde.datos_nco.CST.nombre%2Csde.datos_nco.CST.longitud&outSR=4326&returnZ=false&returnM=false&f=geojson"
+    },
+    {
+      "attribution": "OpenStreetMap contributors, ODbL, via Open Pilgrimages 1.13.0",
+      "sha256": "6a066713a11d863ff5035ee661bd1421c22a02507bbb47f6db481314be17f04e",
+      "url": "https://cdn.jsdelivr.net/gh/walktalkmeditate/open-pilgrimages@v1.13.0/routes/camino-frances/route.geojson"
+    }
+  ]
+}

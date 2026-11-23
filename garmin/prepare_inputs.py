@@ -92,6 +92,10 @@ def prepare(region='ireland'):
     for rings in polys:
      label=f['properties'].get('name','Sierra Nevada National Park') if name=='park-boundary' else p.get('coverageBoundaryLabel','25 km coverage limit')
      for ring in rings:line(ring,{tag:'yes','name':label},closed=True)
+ if p.get('routeCorridor'):
+  route=json.loads(region_path(region,'camino-route.geojson').read_text())
+  for feature in route['features']:
+   line(feature['geometry']['coordinates'],{'obm:camino_route':'yes','name':'Camino Francés'})
  west,south,east,north=counts['coverage']
  polygon([[[west,south],[east,south],[east,north],[west,north],[west,south]]],{'obm:sea':'yes'})
  if p['townlands']:

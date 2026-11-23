@@ -1,5 +1,43 @@
 # Maintaining regional editions
 
+## European walking editions
+
+| Edition | Walking coverage | Geofabrik snapshot | Garmin family |
+| --- | --- | --- | --- |
+| Camino Francés | Saint-Jean-Pied-de-Port to Santiago de Compostela, with a 10 km buffer on each side of the main route | 22 November 2026 | 4874 |
+| Cinque Terre & Portofino | Camogli, Portofino, Sestri Levante, Levanto, the five Cinque Terre villages, La Spezia and Portovenere | 4 November 2026 | 4875 |
+
+The Camino footprint uses the FEAACS stages published by Spain's IGN from
+Puente la Reina to Santiago and the OpenStreetMap-derived Open Pilgrimages
+alignment from Saint-Jean-Pied-de-Port to Puente la Reina. The source lock
+records the source URLs, attribution, hashes and processing. The verified
+main alignment is approximately 765 km. Its ETRS89 / UTM 30N buffer is
+10,000 metres and covers about 14,100 km². The build clips the elevation,
+grid and basemap selection to the corridor and includes an offline map mask
+and a line identifying the main Camino. Garmin's rectangular tiles may
+include padding at the boundary.
+
+The two editions use Copernicus GLO-30 for 20 m contours and hillshade.
+The Ligurian edition reuses the pinned full Nord-Ovest extract and retains
+the coastal and inland path network.
+
+```sh
+export PYTHONPATH=work/python
+python3 scripts/prepare_camino_frances.py
+for edition in camino-frances cinque-terre; do
+  output="work/$edition-release"
+  python3 scripts/run_full_region.py --region "$edition" || exit
+  python3 scripts/build_app_distribution.py --regions "$edition" \
+    --output "$output/kits" --catalog "$output/catalog.json" || exit
+  python3 scripts/build_web_previews.py --regions "$edition" --output "$output/preview" \
+    --origin "https://downloads.appsbyonzy.dev/OpenBareMap/$edition/2.0.0/preview" || exit
+done
+python3 scripts/stage_european_walks.py --website /path/to/AppsByOnzy-Website/site/index.html
+```
+
+Publish the R2 assets and verify byte-range access before deploying the Pages
+archive or promoting the app and preview catalogues.
+
 ## Nepal trekking
 
 The Nepal maps use a shared 22 November 2026 Geofabrik OpenStreetMap extract,

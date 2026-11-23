@@ -1,0 +1,20 @@
+{
+  "inputs": [
+    {
+      "path": "regions/cinque-terre/garmin/inputs/contours.geojson.gz",
+      "sha256": "f269a4d4d708c3bfd05322bf26a15ca3527f375d4aeed70589f3603806115558",
+      "uncompressedSHA256": "0bc5abcfc23fc276446e35375b21002c6561f4e19785bf7ba7a618c660407073"
+    },
+    {
+      "path": "regions/cinque-terre/garmin/inputs/landcover.geojson.gz",
+      "sha256": "225c7ffb2a81f8e9ea43da10d2dc3e21a7f11c1d3e9be8b3887d0d3344e2de70",
+      "uncompressedSHA256": "d271700d5edd554af90d83eeb5d003eb739110f6cfbb575e2a3bfbee46939e63"
+    },
+    {
+      "path": "regions/cinque-terre/garmin/inputs/land.geojson.gz",
+      "sha256": "c5aa5e5edbe3cbd719e1bfa43b6f7a08e35df01656a2e25b465606f4cf2d8581",
+      "uncompressedSHA256": "be180adea0429cbe65b161ca8034e402c0f0be8c271da7724206efb522193e98"
+    }
+  ],
+  "region": "cinque-terre"
+}

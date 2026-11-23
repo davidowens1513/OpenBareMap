@@ -29,11 +29,17 @@ def verify(lock):
         if digest(ROOT/item['path']) != item['sha256']:
             raise ValueError('Locked source changed: '+item['path'])
 
-def extract_complete(source, target, bounds):
+def extract_complete(source, target, bounds, footprint=None):
     """Select in-bounds nodes, parent ways/relations and their complete references."""
     import osmium
     checkpoint=target.with_suffix('.extract.json')
     identity={'sourceSHA256':digest(source),'bounds':bounds,'relationDepth':10}
+    if footprint is not None:
+        from shapely import intersects_xy, prepare
+        from shapely.geometry import shape
+        identity['footprintSHA256'] = digest(footprint)
+        coverage = shape(json.loads(footprint.read_text())['features'][0]['geometry'])
+        prepare(coverage)
     if checkpoint.exists():
         record=json.loads(checkpoint.read_text())
         if any(record.get(k)!=v for k,v in identity.items()) or digest(target)!=record['sha256']:
@@ -42,10 +48,32 @@ def extract_complete(source, target, bounds):
     if target.exists():raise FileExistsError('Unregistered extraction: '+str(target))
     west,south,east,north=bounds;ids=osmium.IdTracker()
     class Nodes(osmium.SimpleHandler):
+        def __init__(self):
+            super().__init__()
+            self.batch = []
+
+        def flush(self):
+            if self.batch:
+                identifiers, lons, lats = zip(*self.batch)
+                for identifier, inside in zip(identifiers, intersects_xy(coverage, lons, lats)):
+                    if inside:
+                        ids.add_node(identifier)
+                self.batch.clear()
+
         def node(self,n):
-            if n.location.valid() and west<=n.location.lon<=east and south<=n.location.lat<=north:
-                ids.add_node(n.id)
-    Nodes().apply_file(str(source))
+            if not n.location.valid():
+                return
+            lon, lat = n.location.lon, n.location.lat
+            if west <= lon <= east and south <= lat <= north:
+                if footprint is None:
+                    ids.add_node(n.id)
+                else:
+                    self.batch.append((n.id, lon, lat))
+                    if len(self.batch) == 8192:
+                        self.flush()
+    nodes = Nodes()
+    nodes.apply_file(str(source))
+    nodes.flush()
     ids.complete_forward_references(str(source),relation_depth=10)
     ids.complete_backward_references(str(source),relation_depth=10)
     with osmium.io.Reader(str(source)) as reader:header=reader.header()
@@ -87,9 +115,10 @@ def fetch_osm(region):
     merge_inputs=inputs
     if p.get('clipSource'):
         merge_inputs=[]
+        footprint=region_path(region,'coverage.geojson') if p.get('routeCorridor') else None
         for item in inputs:
             clipped=directory/(Path(item['path']).stem+'.clipped.osm.pbf')
-            extract_complete(ROOT/item['path'],clipped,p['bounds'])
+            extract_complete(ROOT/item['path'],clipped,p['bounds'],footprint)
             merge_inputs.append({**item,'path':str(clipped.relative_to(ROOT))})
     if len(inputs)==1:
         merged={**merge_inputs[0],'snapshot_date':p['sourceDate'],'operation':'Complete-feature bbox extraction with nested relation references' if p.get('clipSource') else 'Complete upstream extract; no merge or spatial filtering'}
@@ -106,6 +135,9 @@ def fetch_osm(region):
             try:merger.apply_to_reader(reader,writer)
             finally:writer.close()
         merged={'path':str(output.relative_to(ROOT)),'sha256':digest(output),'bytes':output.stat().st_size,'snapshot_date':p['sourceDate'],'replicationTimestamp':next(iter(timestamps)),'operation':('Complete-feature bbox extraction with nested relation references, then libosmium sorted merge; duplicate OSM objects resolved by version' if p.get('clipSource') else 'libosmium sorted merge; duplicate OSM objects resolved by version'),'url':None}
+    if p.get('routeCorridor'):
+        merged['operation']='Complete-feature corridor extraction followed by libosmium merge'
+        merged['footprintSHA256']=digest(footprint)
     write(lockpath,{'osm':merged,'inputs':inputs,'polygons':polygons,'accessed_utc':datetime.now(timezone.utc).isoformat()})
     print('Full '+p['label']+' OSM source locked.',flush=True)
 

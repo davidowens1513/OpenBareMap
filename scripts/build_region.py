@@ -23,7 +23,7 @@ def run(*args):
 def record_output(path):
     return {'path':str(path.relative_to(ROOT)),'sha256':digest(path),'bytes':path.stat().st_size,'validation':inspect_tiles(path)}
 
-def select_detail(source,target,revision="2.0.0-england-wales-r1"):
+def select_detail(source,target,revision="2.0.0-england-wales-r1",footprint=None):
     """Shared visibility rules, with constituent-country borders and bounded padding."""
     if target.exists():raise FileExistsError(target)
     from audit import audit
@@ -43,6 +43,8 @@ def select_detail(source,target,revision="2.0.0-england-wales-r1"):
         opt.visible=visible
         try:
             for z,x,y,payload in src.execute('SELECT zoom_level,tile_column,tile_row,tile_data FROM tiles ORDER BY zoom_level,tile_column,tile_row'):
+                if footprint is not None and not footprint(z,x,y):
+                    continue
                 result=[];changed=False
                 for name,raw in layers(payload):
                     filtered,removed=opt.filter_layer(raw,z)
@@ -81,7 +83,18 @@ def finish(region, reuse_geometry=False):
     replacements={}
     replacements['basemap']=rebuild(base/'basemap.mbtiles',final/'basemap-smoothed.mbtiles',final/'geometry.mbtiles','landcover')
     storage_revision = p['mapVersion']+'-'+region+'-r1'
-    select_detail(final/'basemap-smoothed.mbtiles',final/'basemap.mbtiles',storage_revision)
+    corridor_filter=None
+    if p.get('routeCorridor'):
+        from math import atan, degrees, pi, sinh
+        from shapely.geometry import box, shape
+        from shapely.prepared import prep
+        footprint=prep(shape(json.loads(region_path(region,'coverage.geojson').read_text())['features'][0]['geometry']))
+        def corridor_filter(zoom,x,y):
+            size=2**zoom
+            def lat(row):
+                return degrees(atan(sinh(pi*(2*row/size-1))))
+            return footprint.intersects(box(x/size*360-180,lat(y),(x+1)/size*360-180,lat(y+1)))
+    select_detail(final/'basemap-smoothed.mbtiles',final/'basemap.mbtiles',storage_revision,corridor_filter)
     # A land-cover-only rebuild can reuse the previous validated contour output.
     terrain_checkpoint = ROOT/'build'/(region+'-terrain-checkpoint.json')
     if terrain_checkpoint.is_file():

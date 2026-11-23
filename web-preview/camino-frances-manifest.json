@@ -1,0 +1,41 @@
+{
+  "regions": {
+    "camino-frances": {
+      "basemap": {
+        "sourceSHA256": "5db63ddf8e417a760865c9e80b48ff703551cb651b92369790f1118571c3ae54",
+        "bytes": 103918677,
+        "sha256": "fac89cdf91f61345a19ff508282e821655538199eb43783212fdd946d176533e",
+        "tiles": 6755
+      },
+      "grid": {
+        "sourceSHA256": "42823ca9dcda50df1b23e3ab589904b6110e67b5462c61eac9e972ede7725e4c",
+        "bytes": 1978241,
+        "sha256": "6a2e8f4e0f25738ed34a219a19fabddde29486cb580ae6bd1fe64d9e17a471b9",
+        "tiles": 6629
+      },
+      "hillshade": {
+        "sourceSHA256": "5061fef433dc55beeda545de6624f0066d9203b3814a1b3ac96c1a4e5347fcae",
+        "bytes": 16185447,
+        "sha256": "57e5b8180656e529756e19ed36eb684dc335928e97634d45e823837b2185e693",
+        "tiles": 605
+      },
+      "topography": {
+        "sourceSHA256": "eddf7ac353dbc254686f5b5af59614521a4c089556404c90ccf506a36f195b48",
+        "bytes": 48242395,
+        "sha256": "db9df36374b6c554e22a7d48b60dd1c5aa260d0dbf5841b059819c18a8ed5a15",
+        "tiles": 96940
+      },
+      "coast": {
+        "sourceSHA256": "6cc8efff9998791be058cbd24d6e513ab138b47f5593faf0bce9cfb969a74ef0",
+        "bytes": 851001,
+        "sha256": "978faeaef6b4d4f24c195ebb80ddf246ce8dca423ae766407b1d064a747fbced",
+        "tiles": 6244
+      }
+    }
+  },
+  "pmtilesPython": "3.8.1",
+  "pmtilesJS": "4.5.0",
+  "librarySHA256": "caf981bc46f6327ee7e65d5dc964d89d38a69f60edca2bd4c5c890c21b554c6c",
+  "dataOrigin": "https://downloads.appsbyonzy.dev/OpenBareMap/camino-frances/2.0.0/preview",
+  "scope": "Complete selected map tiles; no regional or zoom sampling."
+}

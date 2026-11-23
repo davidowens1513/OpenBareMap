@@ -35,7 +35,7 @@ def generate(region):
     if region=='ireland':
         records=[json.loads((base/'render-coverage-sources/ireland-source.json').read_text())]
     elif p.get('coverageBoundary'):
-        source=region_path(region,'coverage.geojson');records=[{'path':str(source.relative_to(ROOT)),'sha256':digest(source),'purpose':'Exact official park plus 25 km footprint; not its rectangular tile envelope'}]
+        source=region_path(region,'coverage.geojson');records=[{'path':str(source.relative_to(ROOT)),'sha256':digest(source),'purpose':'Exact regional footprint for drawing the native map background'}]
     else:records=json.loads(region_path(region,'sources.lock.json').read_text())['polygons']
     for item in records:
         if digest(ROOT/item['path'])!=item['sha256']:raise ValueError('Regional outline changed: '+item['path'])

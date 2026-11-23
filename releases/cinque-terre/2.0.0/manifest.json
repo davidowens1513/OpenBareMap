@@ -1,0 +1,106 @@
+{
+  "acceptance": "Automated checks only; see validation and visual-review records for actual reviewed scope.",
+  "coverage": "The Ligurian coast from Camogli and Portofino through Sestri Levante and Levanto to the five Cinque Terre villages, La Spezia and Portovenere, including the coastal and inland ridge paths.",
+  "datasets": {
+    "basemap": {
+      "bytes": 36782080,
+      "path": "releases/cinque-terre/2.0.0/maps/basemap.mbtiles",
+      "sha256": "ba5b3824ac3a14d468e96ead71fd9467b933d5bf069d8a27254e7e10e5d1d908",
+      "validation": {
+        "empty_tile_count": 38,
+        "logical_tiles_sha256": "1ff8340258bbb6ea13b7d30de7a36fb7f2beea0964616f0650467e6ec543d382",
+        "tile_count": 1132
+      }
+    },
+    "grid": {
+      "bytes": 610304,
+      "path": "releases/cinque-terre/2.0.0/maps/grid.mbtiles",
+      "sha256": "270fb678b5fde97d30ca6bf3570953b51eeacd09d81301cc3a6a55ea6fb7c589",
+      "validation": {
+        "empty_tile_count": 0,
+        "logical_tiles_sha256": "1897bfda8821bcdf5a554cbaabe02ca38bdfad6e66205aa36e128a1618c4a3e4",
+        "tile_count": 1789
+      }
+    },
+    "hillshade": {
+      "bytes": 3698688,
+      "path": "releases/cinque-terre/2.0.0/maps/hillshade.mbtiles",
+      "sha256": "b354709130ad106ec444af8dedfe4f0ded2888ab3821d4b5d566995cf05c1611",
+      "validation": {
+        "empty_tile_count": 0,
+        "logical_tiles_sha256": "17ed630f5b2af2f2b8faa4863d3ff9fe0ad171c80afd79129ffdb10cae44ef53",
+        "tile_count": 106
+      }
+    },
+    "topography": {
+      "bytes": 27582464,
+      "path": "releases/cinque-terre/2.0.0/maps/topography-context.mbtiles",
+      "sha256": "939f79c66f175d1c3457d1c884a10700dddd955b50c983ef237ecf2b594697ff",
+      "validation": {
+        "empty_tile_count": 71836,
+        "logical_tiles_sha256": "297052a4d6ef019a6a342bfe61892385829dcd29a3c95e084c3d0551cbcbad17",
+        "tile_count": 77720
+      }
+    }
+  },
+  "garmin": {
+    "bytes": 14832640,
+    "path": "regions/cinque-terre/garmin/dist/OpenBareMap-Cinque-Terre-Portofino.img",
+    "sha256": "aab2c362cf5fb8f273bf1023ef2a38438f78a1b3d51b5387afde9fbbc2ec5466"
+  },
+  "geometryReport": {
+    "path": "build/cinque-terre-geometry/geometry-report.json",
+    "sha256": "450c5666fb9fde1bec679bb48579d13a2c9075f598fc1e010708ece69f54f03c"
+  },
+  "hostAppsModified": false,
+  "mapVersion": "2.0.0",
+  "osm": {
+    "bytes": 31442482,
+    "operation": "Complete-feature bbox extraction with nested relation references",
+    "path": "data/regions/cinque-terre/nord-ovest-261104.osm.clipped.osm.pbf",
+    "replicationTimestamp": "2026-11-04T21:21:03Z",
+    "sha256": "bfadf7fdc3bebd7651813f4e020b9ed00cd6fb47f1d049c3b7b3f05746da3712",
+    "snapshot_date": "2026-11-04",
+    "url": "https://download.geofabrik.de/europe/italy/nord-ovest/nord-ovest-261104.osm.pbf"
+  },
+  "packages": {
+    "android": {
+      "archive": {
+        "bytes": 73435216,
+        "path": "regions/cinque-terre/android/OpenBareMap-Android.zip",
+        "sha256": "981846bf8df039e8b77f861896c1e6296c488540d86434acdcb0da8bd5fc094d"
+      },
+      "checksumsSHA256": "8481046c2e0a6122a6d9d8dab11a29e0acd30d166159b2a92a698c62ecdbe247",
+      "manifestSHA256": "ca6a7a79e53fcc31b006d93eab254fdce1b2da7c92361d49a8acd51903607a8b",
+      "path": "regions/cinque-terre/android",
+      "validationSHA256": "3579d12f2043bf017e0214c2c502a57d14a25dff6b45bc060891a88178d9683e"
+    },
+    "ios": {
+      "checksumsSHA256": "f7637533103d3a657b414908699cbbdfbe6bd9b57bbd693b79e776042b791afa",
+      "manifestSHA256": "3806a54cc5b0367ac05c17d0da12cf1ea904678bb472b8bdd5d7bee4ff8236a8",
+      "path": "regions/cinque-terre/ios",
+      "validationSHA256": "7c50bd66d5160b582ee45086273d8ea35392df97729bb9d0b46129f51410c8b4"
+    }
+  },
+  "pythonRuntime": {
+    "packages": {
+      "Pillow": "12.3.0",
+      "certifi": "2026.10.23",
+      "charset-normalizer": "3.5.2",
+      "idna": "3.20",
+      "numpy": "2.5.4",
+      "osmium": "4.3.2",
+      "pyproj": "3.8.0",
+      "requests": "2.34.2",
+      "shapely": "2.2.0",
+      "urllib3": "2.8.0"
+    },
+    "platform": "macOS-27.2.1-arm64-arm-64bit-Mach-O",
+    "python": "3.14.5 (main, May 10 2026, 10:21:34) [Clang 21.0.0 (clang-2100.0.123.102)]",
+    "requirementsSHA256": "427f12ff8b49bfebac0a7d453c2f65bd15d6695584b18e6ecee1fdfeed20a36c"
+  },
+  "region": "cinque-terre",
+  "styleSHA256": "81717e19321b1825353d182bf2c7f392b1d69ba995564ee3bd698bec36eed808",
+  "terrainLockSHA256": "be060f704a54040ce10b4c201aee148d2869df2ac3c023d0cceed1e659f51e1b",
+  "validation": "validation.json"
+}

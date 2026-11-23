@@ -1,0 +1,33 @@
+{
+  "bytes": 193878110,
+  "datasets": {
+    "basemap": {
+      "path": "maps/basemap.mbtiles",
+      "sha256": "5db63ddf8e417a760865c9e80b48ff703551cb651b92369790f1118571c3ae54"
+    },
+    "coast": {
+      "derivedFrom": "eddf7ac353dbc254686f5b5af59614521a4c089556404c90ccf506a36f195b48",
+      "path": "maps/coast.mbtiles",
+      "sha256": "6cc8efff9998791be058cbd24d6e513ab138b47f5593faf0bce9cfb969a74ef0"
+    },
+    "grid": {
+      "path": "maps/grid.mbtiles",
+      "sha256": "42823ca9dcda50df1b23e3ab589904b6110e67b5462c61eac9e972ede7725e4c"
+    },
+    "hillshade": {
+      "path": "maps/hillshade.mbtiles",
+      "sha256": "5061fef433dc55beeda545de6624f0066d9203b3814a1b3ac96c1a4e5347fcae"
+    },
+    "topography": {
+      "path": "maps/topography.mbtiles",
+      "sha256": "eddf7ac353dbc254686f5b5af59614521a4c089556404c90ccf506a36f195b48"
+    }
+  },
+  "instructionsSHA256": "a6b62af315b6e19fe2472e66eaf3947cce35b797736786b750be411f7b1dcceb",
+  "instructionsURL": "https://downloads.appsbyonzy.dev/OpenBareMap/camino-frances/2.0.0/app-bundles-v1/android/instructions.txt",
+  "localPath": "releases/camino-frances/2.0.0/app-bundles-v1/android/OpenBareMap-Camino-Frances-Android-Bundle.zip",
+  "mapManifestSHA256": "0bfafc33ee663b3e027b47b8599836a38f27fd5e10fe869c7e1b1bf1ec2b1edf",
+  "r2Key": "OpenBareMap/camino-frances/2.0.0/app-bundles-v1/android/OpenBareMap-Camino-Frances-Android-Bundle.zip",
+  "sha256": "f6de666b03d35afffbc5abfc4edc9bfeb72c1a8adebe5c6d7d414a85257ed2f7",
+  "url": "https://downloads.appsbyonzy.dev/OpenBareMap/camino-frances/2.0.0/app-bundles-v1/android/OpenBareMap-Camino-Frances-Android-Bundle.zip"
+}

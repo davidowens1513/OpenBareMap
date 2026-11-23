@@ -1,0 +1,81 @@
+{
+  "bounds": [
+    -8.666592909976318,
+    42.16819245473459,
+    -1.114287162100501,
+    43.25234447467475
+  ],
+  "contextEnvelope": [
+    -8.666592909976318,
+    42.16819245473459,
+    -1.114287162100501,
+    43.25234447467475
+  ],
+  "drawPriority": 25,
+  "format": "openbaremap-garmin-render-footprint-v1",
+  "geometry": {
+    "bytes": 323352,
+    "path": "regions/camino-frances/garmin/render-coverage.geojson",
+    "sha256": "0c2242dc7e0883845ae3aa750d0ea511a7b293e143d69e25ab8ee7d83ed9b6e3"
+  },
+  "inputs": [
+    {
+      "path": "regions/camino-frances/coverage.geojson",
+      "purpose": "Exact regional footprint for drawing the native map background",
+      "sha256": "d0952e4f41c6072a4e31929c7f62d07ed6c1a69ae509109815bef43621dddb97"
+    }
+  ],
+  "knownDestinationsCovered": {
+    "astorga": [
+      -6.0548,
+      42.4576
+    ],
+    "burgos": [
+      -3.7047,
+      42.3408
+    ],
+    "carrion": [
+      -4.6019,
+      42.337
+    ],
+    "leon": [
+      -5.5666,
+      42.5996
+    ],
+    "logrono": [
+      -2.4474,
+      42.4665
+    ],
+    "pamplona": [
+      -1.6412,
+      42.8185
+    ],
+    "ponferrada": [
+      -6.5915,
+      42.5449
+    ],
+    "puente-la-reina": [
+      -1.81797,
+      42.67148
+    ],
+    "roncesvalles": [
+      -1.3192,
+      43.0098
+    ],
+    "saint-jean": [
+      -1.23723,
+      43.16234
+    ],
+    "santiago": [
+      -8.5445,
+      42.8809
+    ],
+    "sarria": [
+      -7.4166,
+      42.776
+    ]
+  },
+  "purpose": "Rectangular Garmin tiles may overlap other countries. Do not fill their padding with sea, land or land-cover polygons.",
+  "region": "camino-frances",
+  "transparentNativeMap": true
+}

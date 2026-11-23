@@ -9,11 +9,12 @@ US_PARK_REGIONS = tuple(json.loads((ROOT/'config/us-national-parks.json').read_t
 CANADIAN_ROCKIES_REGIONS = tuple(json.loads((ROOT/'config/canadian-rockies.json').read_text()))
 ICELAND_PATAGONIA_REGIONS = ('iceland-southern-highlands', 'patagonia-torres-del-paine', 'patagonia-el-chalten')
 NEPAL_REGIONS = ('nepal-everest', 'nepal-annapurna')
+EUROPEAN_WALKING_REGIONS = ('camino-frances', 'cinque-terre')
 PERMANENT_ICE = {
     'glacier': ('Glacier', '#badde9', '#709bab', '0x1010c'),
     'permanent_snow': ('Permanent snowfield', '#f0f8fc', '#93b3c3', '0x1010d'),
 }
-REGIONS = ('ireland', 'england-wales', 'scotland', 'sierra-nevada', 'pyrenees', 'dolomites', 'faroe-islands','norway-south','norway-central','norway-north', 'balearic-islands', 'corsica', 'sardinia', 'sicily', 'crete', 'cyprus', 'malta', 'canary-islands', 'madeira') + ALPS_REGIONS + US_PARK_REGIONS + ('picos-de-europa', 'high-tatras') + CANADIAN_ROCKIES_REGIONS + ICELAND_PATAGONIA_REGIONS + NEPAL_REGIONS
+REGIONS = ('ireland', 'england-wales', 'scotland', 'sierra-nevada', 'pyrenees', 'dolomites', 'faroe-islands','norway-south','norway-central','norway-north', 'balearic-islands', 'corsica', 'sardinia', 'sicily', 'crete', 'cyprus', 'malta', 'canary-islands', 'madeira') + ALPS_REGIONS + US_PARK_REGIONS + ('picos-de-europa', 'high-tatras') + CANADIAN_ROCKIES_REGIONS + ICELAND_PATAGONIA_REGIONS + NEPAL_REGIONS + EUROPEAN_WALKING_REGIONS
 
 def profile(region='ireland'):
     if region not in REGIONS:
@@ -90,14 +91,18 @@ def region_style(region='ireland'):
         for name in ('park-boundary','coverage','coverage-mask'):
             style['sources'][name]={'type':'geojson','data':json.loads(region_path(region,name+'.geojson').read_text()),'attribution':p.get('boundaryAttribution','Fuente: Organismo Autónomo Parques Nacionales · CC BY 4.0')}
         # Hide rectangular tile padding so the preview follows the actual buffer.
-        style['layers'] += [
-            {'id':'coverage-mask','type':'fill','source':'coverage-mask','paint':{'fill-color':'#f5f3ec','fill-antialias':False}},
-            {'id':'park-boundary','type':'line','source':'park-boundary','paint':{'line-color':'#8c278b','line-width':2.5,'line-opacity':0.95}},
-            {'id':'coverage-boundary','type':'line','source':'coverage','paint':{'line-color':'#444444','line-width':2,'line-dasharray':[4,3]}}]
+        style['layers'].append({'id':'coverage-mask','type':'fill','source':'coverage-mask','paint':{'fill-color':'#f5f3ec','fill-antialias':False}})
+        if p.get('routeCorridor'):
+            style['sources']['camino-route']={'type':'geojson','data':json.loads(region_path(region,'camino-route.geojson').read_text()),'attribution':p['boundaryAttribution']}
+            style['layers'].append({'id':'camino-route','type':'line','source':'camino-route','paint':{'line-color':'#743b83','line-width':['interpolate',['linear'],['zoom'],6,1.2,14,3.3],'line-opacity':0.88}})
+        else:
+            style['layers'].append({'id':'park-boundary','type':'line','source':'park-boundary','paint':{'line-color':'#8c278b','line-width':2.5,'line-opacity':0.95}})
+        style['layers'].append({'id':'coverage-boundary','type':'line','source':'coverage','paint':{'line-color':'#444444','line-width':2,'line-dasharray':[4,3]}})
     return style
 
 def provenance_files(region='ireland'):
-    return ([region_path(region,'copernicus-license.pdf')] if region_path(region,'copernicus-license.pdf').exists() else []) + [region_path(region, name) for name in ('active-map.json','sources.lock.json','terrain-sources.lock.json')] + [ROOT/name for name in ('coast-sources.lock.json','legacy-assets.lock.json','viewer-assets.lock.json','assets/sprites.lock.json','config/transport-style.json')] + ([region_path(region,name) for name in ('boundary-source.json','park-boundary.geojson','coverage.geojson','coverage-mask.geojson')] if profile(region).get('coverageBoundary') else []) + ([region_path(region,'grid-provenance.json'),region_path(region,'python-runtime.json')] if region!='ireland' else [])
+    route = [region_path(region,'camino-route.geojson')] if profile(region).get('routeCorridor') else []
+    return ([region_path(region,'copernicus-license.pdf')] if region_path(region,'copernicus-license.pdf').exists() else []) + [region_path(region, name) for name in ('active-map.json','sources.lock.json','terrain-sources.lock.json')] + [ROOT/name for name in ('coast-sources.lock.json','legacy-assets.lock.json','viewer-assets.lock.json','assets/sprites.lock.json','config/transport-style.json')] + ([region_path(region,name) for name in ('boundary-source.json','park-boundary.geojson','coverage.geojson','coverage-mask.geojson')] if profile(region).get('coverageBoundary') else []) + route + ([region_path(region,'grid-provenance.json'),region_path(region,'python-runtime.json')] if region!='ireland' else [])
 
 
 def process_script(region='ireland'):

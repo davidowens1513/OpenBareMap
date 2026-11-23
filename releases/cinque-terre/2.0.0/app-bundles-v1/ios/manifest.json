@@ -1,0 +1,35 @@
+{
+  "bytes": 73464092,
+  "datasets": {
+    "basemap": {
+      "path": "maps/basemap.mbtiles",
+      "sha256": "ba5b3824ac3a14d468e96ead71fd9467b933d5bf069d8a27254e7e10e5d1d908"
+    },
+    "coast": {
+      "derived_from": "939f79c66f175d1c3457d1c884a10700dddd955b50c983ef237ecf2b594697ff",
+      "maxzoom": 12,
+      "operation": "Preserve land-layer MVT bytes only through zoom 12; omit other layers.",
+      "path": "maps/coast.mbtiles",
+      "sha256": "730da03d900e4ea1c4dc58b03cf768add225b858c6974179fd17d10fe01ff529"
+    },
+    "grid": {
+      "path": "maps/grid.mbtiles",
+      "sha256": "270fb678b5fde97d30ca6bf3570953b51eeacd09d81301cc3a6a55ea6fb7c589"
+    },
+    "hillshade": {
+      "path": "maps/hillshade.mbtiles",
+      "sha256": "b354709130ad106ec444af8dedfe4f0ded2888ab3821d4b5d566995cf05c1611"
+    },
+    "topography": {
+      "path": "maps/topography.mbtiles",
+      "sha256": "939f79c66f175d1c3457d1c884a10700dddd955b50c983ef237ecf2b594697ff"
+    }
+  },
+  "instructionsSHA256": "e1992d1f37dd7f97ad11f5a143d0a56956b73473a6a72b4bf23647589c3a1c00",
+  "instructionsURL": "https://downloads.appsbyonzy.dev/OpenBareMap/cinque-terre/2.0.0/app-bundles-v1/ios/instructions.txt",
+  "localPath": "releases/cinque-terre/2.0.0/app-bundles-v1/ios/OpenBareMap-Cinque-Terre-Portofino-iOS-Bundle.zip",
+  "mapManifestSHA256": "3806a54cc5b0367ac05c17d0da12cf1ea904678bb472b8bdd5d7bee4ff8236a8",
+  "r2Key": "OpenBareMap/cinque-terre/2.0.0/app-bundles-v1/ios/OpenBareMap-Cinque-Terre-Portofino-iOS-Bundle.zip",
+  "sha256": "0a20c94b6ca2f3aeb231e2f32fbe13c1bd741114e08933efd737240b9df3ac9c",
+  "url": "https://downloads.appsbyonzy.dev/OpenBareMap/cinque-terre/2.0.0/app-bundles-v1/ios/OpenBareMap-Cinque-Terre-Portofino-iOS-Bundle.zip"
+}

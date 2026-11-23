@@ -1,0 +1,38 @@
+{
+  "areaSquareDegrees": 0.43610000000000204,
+  "bounds": [
+    9.1,
+    44.0,
+    9.99,
+    44.49
+  ],
+  "entireRequestedFootprintCovered": true,
+  "exactFootprint": null,
+  "inputs": [
+    {
+      "bytes": 15515,
+      "path": "data/regions/cinque-terre/nord-ovest.poly",
+      "sha256": "4d6962b497cca39705476917d3c1749f7bab138b9ec97306d8847ccceb836395",
+      "url": "https://download.geofabrik.de/europe/italy/nord-ovest/nord-ovest.poly"
+    }
+  ],
+  "knownDestinationsCovered": [
+    "island",
+    "portofino",
+    "san-fruttuoso",
+    "camogli",
+    "sestri-levante",
+    "punta-mesco",
+    "levanto",
+    "monterosso",
+    "vernazza",
+    "corniglia",
+    "manarola",
+    "riomaggiore",
+    "portovenere",
+    "la-spezia"
+  ],
+  "operation": "Requested rectangular crop; source outlines cover all destination anchors",
+  "polygons": 1,
+  "sha256": "876641389153b468fd851371b1280e61532a9e2c1f39644b11a20561a618334c"
+}

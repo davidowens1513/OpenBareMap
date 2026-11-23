@@ -1,0 +1,52 @@
+{
+  "contourIntervalMetres": 20,
+  "coverage": "The French Way from Saint-Jean-Pied-de-Port to Santiago de Compostela, in a corridor extending 10 km to either side of the main route.",
+  "datasets": {
+    "basemap": {
+      "bytes": 108843008,
+      "path": "releases/camino-frances/2.0.0/maps/basemap.mbtiles",
+      "sha256": "5db63ddf8e417a760865c9e80b48ff703551cb651b92369790f1118571c3ae54",
+      "validation": {
+        "empty_tile_count": 0,
+        "logical_tiles_sha256": "b24fe96f702340aed6d44f38d894a4e5879416ad653e27502833d453cd447993",
+        "tile_count": 6755
+      }
+    },
+    "grid": {
+      "bytes": 2326528,
+      "path": "releases/camino-frances/2.0.0/maps/grid.mbtiles",
+      "sha256": "42823ca9dcda50df1b23e3ab589904b6110e67b5462c61eac9e972ede7725e4c",
+      "validation": {
+        "empty_tile_count": 0,
+        "logical_tiles_sha256": "47213fee6cbf4f50cae78dff4224a64f86d7af8376b1c727b0908b2a80cca80f",
+        "tile_count": 6629
+      }
+    },
+    "hillshade": {
+      "bytes": 16695296,
+      "path": "releases/camino-frances/2.0.0/maps/hillshade.mbtiles",
+      "sha256": "5061fef433dc55beeda545de6624f0066d9203b3814a1b3ac96c1a4e5347fcae",
+      "validation": {
+        "empty_tile_count": 0,
+        "logical_tiles_sha256": "2476d5079f3c7bd036fa72fafbccf9370b75dc6898b49ff31a7a37e60a27a778",
+        "tile_count": 605
+      }
+    },
+    "topography": {
+      "bytes": 58073088,
+      "path": "releases/camino-frances/2.0.0/maps/topography-context.mbtiles",
+      "sha256": "eddf7ac353dbc254686f5b5af59614521a4c089556404c90ccf506a36f195b48",
+      "validation": {
+        "empty_tile_count": 85012,
+        "logical_tiles_sha256": "701ae13fff728298ed3cda1a96ca9f08585ad9b7ce961a5cc0e96b8a59e5ca3a",
+        "tile_count": 96940
+      }
+    }
+  },
+  "format": "openbaremap-development-viewer-v1",
+  "localBorders": false,
+  "mapVersion": "2.0.0",
+  "region": "camino-frances",
+  "storageRevision": "2.0.0-camino-frances-r3",
+  "styleRevision": "2.0.0-camino-frances-r1"
+}

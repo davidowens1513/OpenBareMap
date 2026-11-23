@@ -99,7 +99,11 @@ if edition.get('permanentIce'):
 heading(528,786,'Boundaries & grid')
 for i,(label,layer) in enumerate([('National boundary','administrative-boundaries'),('Province boundary' if edition.get('nativeLanguage')=='es' else 'County boundary','county-boundaries'),(edition['gridName']+' · 10 km',edition['gridSource']+'-10km'),(edition['gridName']+' · 1 km',edition['gridSource']+'-1km')]):linerow(528,837+i*36,label,layer)
 if edition.get('coverageBoundary'):
- linerow(528,981,'National park','park-boundary');linerow(528,1017,edition.get('coverageBoundaryLabel','25 km coverage limit'),'coverage-boundary')
+ if edition.get('routeCorridor'):
+  linerow(528,981,'Camino Francés','camino-route')
+ else:
+  linerow(528,981,'National park','park-boundary')
+ linerow(528,1017,edition.get('coverageBoundaryLabel','25 km coverage limit'),'coverage-boundary')
 heading(48,1065,'Points')
 # Use actual summit paint and actual parking atlas artwork.
 p=LAYERS['summit-dots-natural-labels']['paint'];cx,cy=96,1128;rad=max(3,p['circle-radius']*2.2)

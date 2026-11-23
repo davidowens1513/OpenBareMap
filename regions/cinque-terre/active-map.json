@@ -1,0 +1,52 @@
+{
+  "contourIntervalMetres": 20,
+  "coverage": "The Ligurian coast from Camogli and Portofino through Sestri Levante and Levanto to the five Cinque Terre villages, La Spezia and Portovenere, including the coastal and inland ridge paths.",
+  "datasets": {
+    "basemap": {
+      "bytes": 36782080,
+      "path": "releases/cinque-terre/2.0.0/maps/basemap.mbtiles",
+      "sha256": "ba5b3824ac3a14d468e96ead71fd9467b933d5bf069d8a27254e7e10e5d1d908",
+      "validation": {
+        "empty_tile_count": 38,
+        "logical_tiles_sha256": "1ff8340258bbb6ea13b7d30de7a36fb7f2beea0964616f0650467e6ec543d382",
+        "tile_count": 1132
+      }
+    },
+    "grid": {
+      "bytes": 610304,
+      "path": "releases/cinque-terre/2.0.0/maps/grid.mbtiles",
+      "sha256": "270fb678b5fde97d30ca6bf3570953b51eeacd09d81301cc3a6a55ea6fb7c589",
+      "validation": {
+        "empty_tile_count": 0,
+        "logical_tiles_sha256": "1897bfda8821bcdf5a554cbaabe02ca38bdfad6e66205aa36e128a1618c4a3e4",
+        "tile_count": 1789
+      }
+    },
+    "hillshade": {
+      "bytes": 3698688,
+      "path": "releases/cinque-terre/2.0.0/maps/hillshade.mbtiles",
+      "sha256": "b354709130ad106ec444af8dedfe4f0ded2888ab3821d4b5d566995cf05c1611",
+      "validation": {
+        "empty_tile_count": 0,
+        "logical_tiles_sha256": "17ed630f5b2af2f2b8faa4863d3ff9fe0ad171c80afd79129ffdb10cae44ef53",
+        "tile_count": 106
+      }
+    },
+    "topography": {
+      "bytes": 27582464,
+      "path": "releases/cinque-terre/2.0.0/maps/topography-context.mbtiles",
+      "sha256": "939f79c66f175d1c3457d1c884a10700dddd955b50c983ef237ecf2b594697ff",
+      "validation": {
+        "empty_tile_count": 71836,
+        "logical_tiles_sha256": "297052a4d6ef019a6a342bfe61892385829dcd29a3c95e084c3d0551cbcbad17",
+        "tile_count": 77720
+      }
+    }
+  },
+  "format": "openbaremap-development-viewer-v1",
+  "localBorders": false,
+  "mapVersion": "2.0.0",
+  "region": "cinque-terre",
+  "storageRevision": "2.0.0-cinque-terre-r3",
+  "styleRevision": "2.0.0-cinque-terre-r1"
+}

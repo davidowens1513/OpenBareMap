@@ -1,0 +1,86 @@
+{
+  "bounds": [
+    9.1,
+    44.0,
+    9.99,
+    44.49
+  ],
+  "contextEnvelope": [
+    9.1,
+    44.0,
+    9.99,
+    44.49
+  ],
+  "drawPriority": 25,
+  "format": "openbaremap-garmin-render-footprint-v1",
+  "geometry": {
+    "bytes": 4243,
+    "path": "regions/cinque-terre/garmin/render-coverage.geojson",
+    "sha256": "9368a4e16c7624d5bd6248960c91ce99d741ac5f7bd47a47dd3edd25d38cf5d8"
+  },
+  "inputs": [
+    {
+      "bytes": 15515,
+      "path": "data/regions/cinque-terre/nord-ovest.poly",
+      "sha256": "4d6962b497cca39705476917d3c1749f7bab138b9ec97306d8847ccceb836395",
+      "url": "https://download.geofabrik.de/europe/italy/nord-ovest/nord-ovest.poly"
+    }
+  ],
+  "knownDestinationsCovered": {
+    "camogli": [
+      9.154,
+      44.349
+    ],
+    "corniglia": [
+      9.709,
+      44.12
+    ],
+    "la-spezia": [
+      9.824,
+      44.11
+    ],
+    "levanto": [
+      9.611,
+      44.17
+    ],
+    "manarola": [
+      9.729,
+      44.107
+    ],
+    "monterosso": [
+      9.654,
+      44.147
+    ],
+    "portofino": [
+      9.21,
+      44.303
+    ],
+    "portovenere": [
+      9.833,
+      44.051
+    ],
+    "punta-mesco": [
+      9.633,
+      44.14
+    ],
+    "riomaggiore": [
+      9.738,
+      44.1
+    ],
+    "san-fruttuoso": [
+      9.175,
+      44.316
+    ],
+    "sestri-levante": [
+      9.396,
+      44.269
+    ],
+    "vernazza": [
+      9.683,
+      44.135
+    ]
+  },
+  "purpose": "Rectangular Garmin tiles may overlap other countries. Do not fill their padding with sea, land or land-cover polygons.",
+  "region": "cinque-terre",
+  "transparentNativeMap": true
+}

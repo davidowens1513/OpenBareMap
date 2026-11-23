@@ -1,0 +1,142 @@
+{
+  "familyId": 4875,
+  "garminPackageRevision": "2.0.1-trail-detail-r1",
+  "inspection": {
+    "anchorLabels": {
+      "Portofino": "Portofino",
+      "Riomaggiore": "Riomaggiore",
+      "Vernazza": "Vernazza"
+    },
+    "bounds": [
+      9.09994125366211,
+      43.99998664855957,
+      9.990005493164062,
+      44.49007987976074
+    ],
+    "coastPolygonsByLevel": {
+      "0": {
+        "0x32": 7,
+        "0x54": 245
+      },
+      "1": {
+        "0x32": 7,
+        "0x54": 114
+      },
+      "2": {
+        "0x32": 7,
+        "0x54": 72
+      },
+      "3": {
+        "0x32": 7,
+        "0x54": 19
+      },
+      "4": {
+        "0x32": 7,
+        "0x54": 9
+      }
+    },
+    "contoursByLevel": {
+      "0": {
+        "0x20": 10278,
+        "0x22": 2335
+      },
+      "1": {
+        "0x20": 7953,
+        "0x22": 1760
+      },
+      "2": {
+        "0x22": 1595
+      },
+      "3": {
+        "0x10008": 1420
+      },
+      "4": {}
+    },
+    "lineInstancesAtHighestDetail": {
+      "0x1": 565,
+      "0x10001": 3517,
+      "0x10002": 737,
+      "0x10004": 186,
+      "0x10005": 2333,
+      "0x10006": 64,
+      "0x1000b": 2612,
+      "0x14": 696,
+      "0x16": 8317,
+      "0x18": 25351,
+      "0x1a": 23,
+      "0x1c": 211,
+      "0x1e": 212,
+      "0x1f": 28,
+      "0x2": 35,
+      "0x20": 10278,
+      "0x22": 2335,
+      "0x3": 537,
+      "0x4": 640,
+      "0x6": 8299,
+      "0x7": 7375,
+      "0xa": 2849
+    },
+    "logicalCombinedSHA256": "fb002e96afcd877a8d9b6dd9a1afd1f5f2ae43f6be4c21b6e39a5aff85d6cbe6",
+    "logicalHashNote": "Internal file names, sizes and payloads; only CommonHeader creation-date bytes 14..20 are zeroed for hashing. IMG archive headers are excluded. Output bytes are never modified.",
+    "logicalTileSHA256": {
+      "48750001.img": "4a20ba58ff1d7350ee35d779e6e0705ef7aacd79bf0c04cbb0985b8aa42b5e49",
+      "48750002.img": "8942795b6db2857fc492ec687187d36415f589e66c42a77d883c6a8e32e62113",
+      "48750003.img": "cdfea63d9c1aeb7f8486471c2c2c18f764fb35ff82e528dd2c576a35ca985eeb",
+      "48750004.img": "79bf9a6b7e4ac3be67d5fceb61e5de8efa94e76e013e9d0885a2b8a9822a1a67",
+      "48750005.img": "f45cd83e4cd2e023d7f513247f595c45b9618ff25c8a25801d27f18033a7c293",
+      "48750006.img": "63cbdad02e116195ab7cf63871de2bdc6daa668673468650cfca116becdb2d1d"
+    },
+    "pointInstancesAtHighestDetail": {
+      "0x100": 1,
+      "0x10001": 113,
+      "0x10002": 362,
+      "0x10003": 1708,
+      "0x10004": 29,
+      "0x10006": 6500,
+      "0x2f0b": 2154,
+      "0x600": 11,
+      "0x650c": 42,
+      "0x6603": 33,
+      "0x6615": 114,
+      "0x6616": 469,
+      "0x800": 127,
+      "0xb00": 801,
+      "0xc00": 613
+    },
+    "polygonInstancesAtHighestDetail": {
+      "0x10101": 1519,
+      "0x10102": 1412,
+      "0x10103": 597,
+      "0x10104": 734,
+      "0x10105": 158,
+      "0x10106": 63,
+      "0x10109": 220,
+      "0x1010a": 190,
+      "0x1010b": 13,
+      "0x13": 111132,
+      "0x32": 7,
+      "0x3c": 177,
+      "0x50": 6299,
+      "0x51": 8,
+      "0x54": 245
+    },
+    "routing": false,
+    "subfileBytes": {
+      "DEM": 3181886,
+      "LBL": 434366,
+      "MPS": 618,
+      "RGN": 11018876,
+      "SRT": 912,
+      "TRE": 137666,
+      "TYP": 2982
+    },
+    "tiles": 6
+  },
+  "output": {
+    "bytes": 14832640,
+    "path": "regions/cinque-terre/garmin/dist/OpenBareMap-Cinque-Terre-Portofino.img",
+    "sha256": "aab2c362cf5fb8f273bf1023ef2a38438f78a1b3d51b5387afde9fbbc2ec5466"
+  },
+  "routing": false,
+  "status": "compiled and structurally inspected; hardware rendering pending"
+}
