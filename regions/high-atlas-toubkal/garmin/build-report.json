@@ -1,0 +1,129 @@
+{
+  "familyId": 4881,
+  "garminPackageRevision": "2.0.1-trail-detail-r1",
+  "inspection": {
+    "anchorLabels": {
+      "Asni": "Asni",
+      "Imlil": "Imlil"
+    },
+    "bounds": [
+      -8.270044326782227,
+      30.95998764038086,
+      -7.539968490600586,
+      31.400041580200195
+    ],
+    "coastPolygonsByLevel": {
+      "0": {
+        "0x32": 4,
+        "0x54": 10
+      },
+      "1": {
+        "0x32": 4,
+        "0x54": 10
+      },
+      "2": {
+        "0x32": 4,
+        "0x54": 10
+      },
+      "3": {
+        "0x32": 4,
+        "0x54": 10
+      },
+      "4": {
+        "0x32": 4,
+        "0x54": 10
+      }
+    },
+    "contoursByLevel": {
+      "0": {
+        "0x20": 12026,
+        "0x22": 3067
+      },
+      "1": {
+        "0x20": 8492,
+        "0x22": 2171
+      },
+      "2": {
+        "0x22": 1946
+      },
+      "3": {
+        "0x10008": 1674
+      },
+      "4": {}
+    },
+    "lineInstancesAtHighestDetail": {
+      "0x10001": 6,
+      "0x10005": 24,
+      "0x10006": 81,
+      "0x14": 1,
+      "0x16": 2207,
+      "0x18": 1488,
+      "0x1c": 164,
+      "0x1e": 22,
+      "0x1f": 91,
+      "0x20": 12026,
+      "0x22": 3067,
+      "0x3": 53,
+      "0x4": 63,
+      "0x6": 2659,
+      "0x7": 353,
+      "0xa": 2090
+    },
+    "logicalCombinedSHA256": "ff71dc3c5f7eadbfbfcdca4f9b03b140f4afbf44b100a5b829530755d19cc180",
+    "logicalHashNote": "Internal file names, sizes and payloads; only CommonHeader creation-date bytes 14..20 are zeroed for hashing. IMG archive headers are excluded. Output bytes are never modified.",
+    "logicalTileSHA256": {
+      "48810001.img": "6e133f5173c35a07526f4785799dd99ac6c10571d27a5bcb85a9a2d61bc185f0",
+      "48810002.img": "202d0c3f1490fe9c28f6193f952a00e87be701378df8360026826e3b94baf038",
+      "48810003.img": "c16956fa56fedf06dd462d2292fa1b28a31d56cddb51654b83b264d83e7ed813",
+      "48810004.img": "81dc2de6358d0ef40b90a17fa051bf1dcd110e08fd3f0ee6d396a27321d6e15b"
+    },
+    "pointInstancesAtHighestDetail": {
+      "0x10001": 16,
+      "0x10002": 59,
+      "0x10003": 23,
+      "0x10006": 397,
+      "0x2f0b": 55,
+      "0x600": 9,
+      "0x650c": 4,
+      "0x6603": 5,
+      "0x6615": 38,
+      "0x6616": 84,
+      "0x800": 205,
+      "0xb00": 302,
+      "0xc00": 21
+    },
+    "polygonInstancesAtHighestDetail": {
+      "0x10101": 832,
+      "0x10102": 73,
+      "0x10103": 1,
+      "0x10104": 12,
+      "0x10109": 13,
+      "0x1010a": 61,
+      "0x1010b": 11,
+      "0x13": 78462,
+      "0x32": 4,
+      "0x3c": 326,
+      "0x50": 720,
+      "0x51": 1,
+      "0x54": 10
+    },
+    "routing": false,
+    "subfileBytes": {
+      "DEM": 3821807,
+      "LBL": 25979,
+      "MPS": 412,
+      "RGN": 7557322,
+      "SRT": 912,
+      "TRE": 89078,
+      "TYP": 2982
+    },
+    "tiles": 4
+  },
+  "output": {
+    "bytes": 11540480,
+    "path": "regions/high-atlas-toubkal/garmin/dist/OpenBareMap-High-Atlas-Toubkal.img",
+    "sha256": "a1b03502a578d594cb1c17916edd249ed72697b860236c66ebd55d403ee10f18"
+  },
+  "routing": false,
+  "status": "compiled and structurally inspected; hardware rendering pending"
+}

@@ -1,0 +1,30 @@
+{
+  "accessed_utc": "2026-11-23T17:59:43.958668+00:00",
+  "inputs": [
+    {
+      "bytes": 654523828,
+      "path": "data/regions/lycian-way/turkey-261122.osm.pbf",
+      "replicationTimestamp": "2026-11-22T21:20:48Z",
+      "sha256": "1aa8f54ef194857f1dd0fd3c4be0b7869998c99a9656e4f29e50072883019696",
+      "url": "https://download.geofabrik.de/europe/turkey/turkey-261122.osm.pbf"
+    }
+  ],
+  "osm": {
+    "bytes": 23747085,
+    "footprintSHA256": "968a0b7b213fc5b312b6217c237b869ab58b01eb09df3c3233edb76618940296",
+    "operation": "Complete-feature corridor extraction followed by libosmium merge",
+    "path": "data/regions/lycian-way/turkey-261122.osm.clipped.osm.pbf",
+    "replicationTimestamp": "2026-11-22T21:20:48Z",
+    "sha256": "35176a0040ac486f43965740f41a46df0342a18f830c745067322a23b11273bb",
+    "snapshot_date": "2026-11-22",
+    "url": "https://download.geofabrik.de/europe/turkey/turkey-261122.osm.pbf"
+  },
+  "polygons": [
+    {
+      "bytes": 6091,
+      "path": "data/regions/lycian-way/turkey.poly",
+      "sha256": "6c41ac3f661ce4764e3c7ba30a7e2f35e1bcbaa1b1f8b91f6d78a9c0e3344ea9",
+      "url": "https://download.geofabrik.de/europe/turkey/turkey.poly"
+    }
+  ]
+}

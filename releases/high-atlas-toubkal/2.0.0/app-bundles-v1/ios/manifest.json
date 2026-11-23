@@ -1,0 +1,35 @@
+{
+  "bytes": 49743329,
+  "datasets": {
+    "basemap": {
+      "path": "maps/basemap.mbtiles",
+      "sha256": "7694ab0106bf53102f0651f0f0376f97c8e7073d87a5fa1bd0b8cdd04cc0eca3"
+    },
+    "coast": {
+      "derived_from": "d95e5bda1d89f0762f88b61abaa279334767b7eaf0afbe530530d0fe0aac5f98",
+      "maxzoom": 12,
+      "operation": "Preserve land-layer MVT bytes only through zoom 12; omit other layers.",
+      "path": "maps/coast.mbtiles",
+      "sha256": "6b6158341bcb8fa6d29ea296eb6ec149631663f5ab8e31864b1bd12304ad5b26"
+    },
+    "grid": {
+      "path": "maps/grid.mbtiles",
+      "sha256": "82e6b6cd9bd150b5157a47921ce93348447fd4497206d1ed8dc943d549bb35dc"
+    },
+    "hillshade": {
+      "path": "maps/hillshade.mbtiles",
+      "sha256": "6ba75fc05d4b9d847887bd6c19fe5ad341dffed5d8cbe66e0f4aa90b777d4689"
+    },
+    "topography": {
+      "path": "maps/topography.mbtiles",
+      "sha256": "d95e5bda1d89f0762f88b61abaa279334767b7eaf0afbe530530d0fe0aac5f98"
+    }
+  },
+  "instructionsSHA256": "d14b9f0850f225c014247e727114e0098f54f80904f465247949f993d218cefb",
+  "instructionsURL": "https://downloads.appsbyonzy.dev/OpenBareMap/high-atlas-toubkal/2.0.0/app-bundles-v1/ios/instructions.txt",
+  "localPath": "releases/high-atlas-toubkal/2.0.0/app-bundles-v1/ios/OpenBareMap-High-Atlas-Toubkal-iOS-Bundle.zip",
+  "mapManifestSHA256": "53e0ac79bbd81246d1a4c7ce63bc0eed2c75096a5efbff78c3ec804b8563bb60",
+  "r2Key": "OpenBareMap/high-atlas-toubkal/2.0.0/app-bundles-v1/ios/OpenBareMap-High-Atlas-Toubkal-iOS-Bundle.zip",
+  "sha256": "a820c06cb16516b8fb029b0c2291f35f61448216e3beddf7b5e16639cb350f3e",
+  "url": "https://downloads.appsbyonzy.dev/OpenBareMap/high-atlas-toubkal/2.0.0/app-bundles-v1/ios/OpenBareMap-High-Atlas-Toubkal-iOS-Bundle.zip"
+}

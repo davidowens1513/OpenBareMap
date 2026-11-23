@@ -7,7 +7,7 @@ import math
 from pathlib import Path
 import sqlite3
 from openbaremap import ROOT,digest,inspect_tiles,write
-from regions import PERMANENT_ICE, REGIONS, active_map,profile,region_path,region_style
+from regions import PERMANENT_ICE, REGIONS, active_map,profile,region_path,region_style,route_overlay_id
 from build_cartography_2 import layers
 from audit import fields
 from optimize_storage import packed,value
@@ -128,7 +128,8 @@ def package(root,platform,region="england-wales"):
         if note not in style['sources']['basemap']['attribution']:
             raise ValueError('Missing permanent ice source note')
     if profile(region).get('coverageBoundary'):
-        primary = 'camino-route' if profile(region).get('routeCorridor') else 'park-boundary'
+        edition = profile(region)
+        primary = route_overlay_id(edition) if edition.get('routeCorridor') else 'park-boundary'
         for name in (primary,'coverage','coverage-mask'):
             source=style['sources'].get(name,{})
             if not isinstance(source.get('data'),dict) or not source['data'].get('features'):raise ValueError('Missing offline boundary geometry: '+name)
@@ -174,14 +175,14 @@ def validate(region):
     if p.get('routeCorridor'):
         from shapely.geometry import Point, shape
         boundary=region_path(region,'coverage.geojson')
-        centerline=region_path(region,'camino-route.geojson')
+        centerline=region_path(region,route_overlay_id(p)+'.geojson')
         record=json.loads(region_path(region,'boundary-source.json').read_text())
-        if record.get('bufferMetres')!=10_000 or digest(boundary)!=record['coverageSHA256'] or digest(centerline)!=record['routeSHA256']:
-            raise ValueError('Camino corridor geometry has changed')
+        if record.get('bufferMetres')!=p.get('routeBufferMetres',10_000) or digest(boundary)!=record['coverageSHA256'] or digest(centerline)!=record['routeSHA256']:
+            raise ValueError('Route corridor geometry has changed')
         footprint=shape(json.loads(boundary.read_text())['features'][0]['geometry'])
-        route=shape(json.loads(centerline.read_text())['features'][0]['geometry'])
-        if not footprint.covers(route) or not all(footprint.covers(Point(*point)) for point in anchors.values()):
-            raise ValueError('Camino corridor excludes the route or a destination')
+        routes=[shape(feature['geometry']) for feature in json.loads(centerline.read_text())['features']]
+        if not routes or not all(footprint.covers(route) for route in routes) or not all(footprint.covers(Point(*point)) for point in anchors.values()):
+            raise ValueError('The corridor excludes a route segment or a destination')
         output['routeCorridor']={key:record[key] for key in ('bufferMetres','bufferCRS','routeLengthKilometres','coverageSquareKilometres')}
     output['coverageAnchors']=coverage(ROOT/active['datasets']['basemap']['path'],anchors)
     output['landBackground']=land_coverage(ROOT/active['datasets']['topography']['path'],p.get('overviewLandAnchors') or ({name:xy for name,xy in anchors.items() if name!='rockall'} if anchors else None),zoom_levels=range(4,13) if region in ('scotland','sierra-nevada','pyrenees','dolomites','faroe-islands','norway-south','norway-central','norway-north') else range(8,13))
@@ -219,7 +220,7 @@ def validate(region):
     if p.get('routeCorridor'):
         lines = garmin['inspection']['lineInstancesAtHighestDetail']
         if not lines.get('0x1000d') or not lines.get('0x1000a'):
-            raise ValueError('The Garmin map is missing the Camino route or coverage outline')
+            raise ValueError('The Garmin map is missing the route or coverage outline')
     output['garmin']=garmin
     release=ROOT/'releases'/region/p['mapVersion'];release.mkdir(parents=True,exist_ok=True)
     write(release/'validation.json',output)

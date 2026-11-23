@@ -1,0 +1,85 @@
+{
+  "bounds": [
+    29.010233172586318,
+    36.0583581933441,
+    30.707206506168,
+    37.02387597844651
+  ],
+  "contextEnvelope": [
+    29.010233172586318,
+    36.0583581933441,
+    30.707206506168,
+    37.02387597844651
+  ],
+  "drawPriority": 25,
+  "format": "openbaremap-garmin-render-footprint-v1",
+  "geometry": {
+    "bytes": 92979,
+    "path": "regions/lycian-way/garmin/render-coverage.geojson",
+    "sha256": "b5455f073251626b26ad2e1289eee5c58a7aa0c1d54307f50ce12798d8a3eec7"
+  },
+  "inputs": [
+    {
+      "path": "regions/lycian-way/coverage.geojson",
+      "purpose": "Exact regional footprint for drawing the native map background",
+      "sha256": "968a0b7b213fc5b312b6217c237b869ab58b01eb09df3c3233edb76618940296"
+    }
+  ],
+  "knownDestinationsCovered": {
+    "adrasan": [
+      30.469,
+      36.325
+    ],
+    "cirali": [
+      30.475,
+      36.412
+    ],
+    "demre": [
+      29.985,
+      36.241
+    ],
+    "faralya": [
+      29.13,
+      36.492
+    ],
+    "fethiye": [
+      29.117,
+      36.624
+    ],
+    "finike": [
+      30.147,
+      36.302
+    ],
+    "geyikbayiri": [
+      30.484,
+      36.871
+    ],
+    "goynuk": [
+      30.555,
+      36.668
+    ],
+    "kalkan": [
+      29.413,
+      36.268
+    ],
+    "kas": [
+      29.64,
+      36.201
+    ],
+    "ovacik": [
+      29.144,
+      36.58
+    ],
+    "patara": [
+      29.324,
+      36.266
+    ],
+    "tekirova": [
+      30.526,
+      36.502
+    ]
+  },
+  "purpose": "Rectangular Garmin tiles may overlap other countries. Do not fill their padding with sea, land or land-cover polygons.",
+  "region": "lycian-way",
+  "transparentNativeMap": true
+}

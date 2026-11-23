@@ -1,0 +1,49 @@
+{
+  "accessed_utc": "2026-11-23T17:36:54.119656+00:00",
+  "clippedOSM": {
+    "bytes": 7513224,
+    "operation": "Complete-feature bbox extraction with nested relation references",
+    "path": "data/regions/high-atlas-toubkal/morocco-261122.osm.clipped.osm.pbf",
+    "replicationTimestamp": "2026-11-22T21:20:48Z",
+    "sha256": "6735104535fe860f71b8b427e54f45d82db0c227927ddcbd13a5a32a9da8c164",
+    "snapshot_date": "2026-11-22",
+    "url": "https://download.geofabrik.de/africa/morocco/morocco-261122.osm.pbf"
+  },
+  "inputs": [
+    {
+      "bytes": 244744276,
+      "path": "data/regions/high-atlas-toubkal/morocco-261122.osm.pbf",
+      "replicationTimestamp": "2026-11-22T21:20:48Z",
+      "sha256": "b51aad73c5a829efc8901e78a4441e885036e20249d4a61e3484bbb851c4676b",
+      "url": "https://download.geofabrik.de/africa/morocco/morocco-261122.osm.pbf"
+    }
+  ],
+  "labelPreparation": {
+    "nameFields": [
+      "name",
+      "official_name",
+      "short_name"
+    ],
+    "rule": "Arabic-Latin; Latin-ASCII; retain ASCII",
+    "transliterator": "uconv v2.1  ICU 78.3",
+    "uniqueArabicLabels": 1119,
+    "updatedObjects": 1622
+  },
+  "osm": {
+    "bytes": 7501683,
+    "operation": "Complete-feature regional extract with Latin cartographic names",
+    "path": "data/regions/high-atlas-toubkal/morocco-261122.osm.clipped.latin.osm.pbf",
+    "replicationTimestamp": "2026-11-22T21:20:48Z",
+    "sha256": "0d6123cdaaeb9a69846091968aa600765f7dd7551792db651b6273fcc5ddd819",
+    "snapshot_date": "2026-11-22",
+    "url": "https://download.geofabrik.de/africa/morocco/morocco-261122.osm.pbf"
+  },
+  "polygons": [
+    {
+      "bytes": 2383,
+      "path": "data/regions/high-atlas-toubkal/morocco.poly",
+      "sha256": "ebdb411139e60929150dfcfff1e12674fb0f6675bb5e6c615e77cd6c5ed6d53e",
+      "url": "https://download.geofabrik.de/africa/morocco/morocco.poly"
+    }
+  ]
+}

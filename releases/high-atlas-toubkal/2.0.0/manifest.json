@@ -1,0 +1,106 @@
+{
+  "acceptance": "Automated checks only; see validation and visual-review records for actual reviewed scope.",
+  "coverage": "Morocco\u2019s High Atlas around Imlil and Jbel Toubkal, with Asni, Ouirgane, Aroumd, Tacheddirt, Ouka\u00efmeden, and the upper Ourika valley.",
+  "datasets": {
+    "basemap": {
+      "bytes": 8589312,
+      "path": "releases/high-atlas-toubkal/2.0.0/maps/basemap.mbtiles",
+      "sha256": "7694ab0106bf53102f0651f0f0376f97c8e7073d87a5fa1bd0b8cdd04cc0eca3",
+      "validation": {
+        "empty_tile_count": 0,
+        "logical_tiles_sha256": "c0f49dde558aa990c52a77ac083dae9fd5d6973d93a073861d21aa5f18ea10ae",
+        "tile_count": 1156
+      }
+    },
+    "grid": {
+      "bytes": 442368,
+      "path": "releases/high-atlas-toubkal/2.0.0/maps/grid.mbtiles",
+      "sha256": "82e6b6cd9bd150b5157a47921ce93348447fd4497206d1ed8dc943d549bb35dc",
+      "validation": {
+        "empty_tile_count": 0,
+        "logical_tiles_sha256": "5e4d4d0a8550e8d640528fc94c8849b89a10fd83f94e37e779ec974b82de3671",
+        "tile_count": 1153
+      }
+    },
+    "hillshade": {
+      "bytes": 3809280,
+      "path": "releases/high-atlas-toubkal/2.0.0/maps/hillshade.mbtiles",
+      "sha256": "6ba75fc05d4b9d847887bd6c19fe5ad341dffed5d8cbe66e0f4aa90b777d4689",
+      "validation": {
+        "empty_tile_count": 0,
+        "logical_tiles_sha256": "34d55277c197beed29082f98197416cd1e0d14a130a6481a614d82be3ee048c1",
+        "tile_count": 109
+      }
+    },
+    "topography": {
+      "bytes": 32923648,
+      "path": "releases/high-atlas-toubkal/2.0.0/maps/topography-context.mbtiles",
+      "sha256": "d95e5bda1d89f0762f88b61abaa279334767b7eaf0afbe530530d0fe0aac5f98",
+      "validation": {
+        "empty_tile_count": 44853,
+        "logical_tiles_sha256": "4d524e519b9ae75082491fe235d61211522ed150a0fe75262aa859b74e92d825",
+        "tile_count": 48990
+      }
+    }
+  },
+  "garmin": {
+    "bytes": 11540480,
+    "path": "regions/high-atlas-toubkal/garmin/dist/OpenBareMap-High-Atlas-Toubkal.img",
+    "sha256": "a1b03502a578d594cb1c17916edd249ed72697b860236c66ebd55d403ee10f18"
+  },
+  "geometryReport": {
+    "path": "build/high-atlas-toubkal-geometry/geometry-report.json",
+    "sha256": "5e8be77424c0e735338e25cfc256a08123865f71b4d3362d9cfb5be581313f93"
+  },
+  "hostAppsModified": false,
+  "mapVersion": "2.0.0",
+  "osm": {
+    "bytes": 7501683,
+    "operation": "Complete-feature regional extract with Latin cartographic names",
+    "path": "data/regions/high-atlas-toubkal/morocco-261122.osm.clipped.latin.osm.pbf",
+    "replicationTimestamp": "2026-11-22T21:20:48Z",
+    "sha256": "0d6123cdaaeb9a69846091968aa600765f7dd7551792db651b6273fcc5ddd819",
+    "snapshot_date": "2026-11-22",
+    "url": "https://download.geofabrik.de/africa/morocco/morocco-261122.osm.pbf"
+  },
+  "packages": {
+    "android": {
+      "archive": {
+        "bytes": 49714408,
+        "path": "regions/high-atlas-toubkal/android/OpenBareMap-Android.zip",
+        "sha256": "cfa38126c7445956be8965c9078a08b0cb8b81ff77da3566784090036a43df44"
+      },
+      "checksumsSHA256": "82696e2877cb65e413f8b4898317f1b1ce2e6120b1f02b592deb9909b72c4ccf",
+      "manifestSHA256": "50e21879bc273cf2955f21271c3d24bed7653cd9e98a5034d1545ce64aa3a7a6",
+      "path": "regions/high-atlas-toubkal/android",
+      "validationSHA256": "4a0207f24eff19dc457d2b1b9ff457566a20b7fe2fc785bc1e967d023b2b5241"
+    },
+    "ios": {
+      "checksumsSHA256": "0e1dea67883e1026946fa330ba661d67bed28731aa468cab53ec9b49ad30253a",
+      "manifestSHA256": "53e0ac79bbd81246d1a4c7ce63bc0eed2c75096a5efbff78c3ec804b8563bb60",
+      "path": "regions/high-atlas-toubkal/ios",
+      "validationSHA256": "25c1d7dfb2779b3f4adbbb72068b3f44a794c51df120536f8218c0eb36195d0c"
+    }
+  },
+  "pythonRuntime": {
+    "packages": {
+      "Pillow": "12.3.0",
+      "certifi": "2026.10.23",
+      "charset-normalizer": "3.5.2",
+      "idna": "3.20",
+      "numpy": "2.5.4",
+      "osmium": "4.3.2",
+      "pyproj": "3.8.0",
+      "requests": "2.34.2",
+      "shapely": "2.2.0",
+      "urllib3": "2.8.0"
+    },
+    "platform": "macOS-27.2.1-arm64-arm-64bit-Mach-O",
+    "python": "3.14.5 (main, May 10 2026, 10:21:34) [Clang 21.0.0 (clang-2100.0.123.102)]",
+    "requirementsSHA256": "427f12ff8b49bfebac0a7d453c2f65bd15d6695584b18e6ecee1fdfeed20a36c"
+  },
+  "region": "high-atlas-toubkal",
+  "styleSHA256": "dbdad0f193090de03c18a92d2db6e5198445107250e5851ad7a4cc8e4b5be5a2",
+  "terrainLockSHA256": "cd064bbbffbc8e4ac3a1efea46362175bc32f0bbf1195e580230387c3cdacfa7",
+  "validation": "validation.json"
+}

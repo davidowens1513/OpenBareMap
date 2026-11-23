@@ -1,0 +1,20 @@
+{
+  "inputs": [
+    {
+      "path": "regions/rota-vicentina/garmin/inputs/contours.geojson.gz",
+      "sha256": "80b50cfd6b7d9c520b77cd3a86bf04ae49cbf75a3ab3b7cdbbc7327a12796540",
+      "uncompressedSHA256": "091dde3cc692050e2f01d2763491e373245daa94cf868a3eaf2a881d92f3a449"
+    },
+    {
+      "path": "regions/rota-vicentina/garmin/inputs/landcover.geojson.gz",
+      "sha256": "b059cec623da4f88f3596c5d68d22041c8519c73cf22cb9a9465029ba4f0d882",
+      "uncompressedSHA256": "d244d85ee4b4f28b2c21175319cff863ae674236b15fd4c3792faded38e40bb7"
+    },
+    {
+      "path": "regions/rota-vicentina/garmin/inputs/land.geojson.gz",
+      "sha256": "a31b099e3e52c6635b5049d8e6ebce122eab98de2fc146a55970e98984cb100a",
+      "uncompressedSHA256": "454859b06056354de6be57871d689fc33fadaca7a830722911e6122556df924c"
+    }
+  ],
+  "region": "rota-vicentina"
+}

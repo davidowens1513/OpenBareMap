@@ -1,0 +1,55 @@
+{
+  "bufferCRS": "EPSG:32629",
+  "bufferMetres": 10000,
+  "changes": "Nested OSM walking relations expanded, overlapping ways dissolved, and a projected buffer clipped to the source coverage. Display paths simplified to 5 m.",
+  "coverageSHA256": "9667879882d0974b8829f13d1d007d90447a3f3fb5cb7fd26fe3a112fab41525",
+  "coverageSquareKilometres": 4498.6,
+  "routeLengthKilometres": 485.6,
+  "routeSHA256": "d43ca5775e3ab69b64e0b3ecc35f4085ba042167dc510e908e6b09ee150cb991",
+  "routes": [
+    {
+      "lengthKilometres": 221.47,
+      "name": "Fishermen\u2019s Trail",
+      "relation": "https://www.openstreetmap.org/relation/20810829",
+      "relationVersions": {
+        "20810592": 6,
+        "20810593": 5,
+        "20810594": 5,
+        "20810595": 5,
+        "20810596": 4,
+        "20810597": 4,
+        "20810598": 6,
+        "20810599": 3,
+        "20810600": 4,
+        "20810601": 5,
+        "20810602": 8,
+        "20810603": 6,
+        "20810605": 6,
+        "20810829": 3
+      }
+    },
+    {
+      "lengthKilometres": 264.13,
+      "name": "Historical Way",
+      "relation": "https://www.openstreetmap.org/relation/7592697",
+      "relationVersions": {
+        "13309458": 4,
+        "14766530": 2,
+        "3353528": 152,
+        "7592697": 14,
+        "8492495": 15
+      }
+    }
+  ],
+  "sources": [
+    {
+      "attribution": "\u00a9 OpenStreetMap contributors \u00b7 ODbL \u00b7 Geofabrik source outline",
+      "sha256": "c0ee7e9a613417b3fcdeafd4e8d76f7a1295a8721a3edacb2dbe020fc5b5102f",
+      "url": "https://download.geofabrik.de/europe/portugal/portugal-261122.osm.pbf"
+    },
+    {
+      "sha256": "b6eac12ed0d04d87c0371289d2f9b95365cafce0ee94fefd01b5ecc33a52e5bb",
+      "url": "https://download.geofabrik.de/europe/portugal/portugal.poly"
+    }
+  ]
+}

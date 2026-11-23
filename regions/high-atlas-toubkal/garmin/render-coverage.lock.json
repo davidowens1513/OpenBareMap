@@ -1,0 +1,70 @@
+{
+  "bounds": [
+    -8.27,
+    30.96,
+    -7.54,
+    31.4
+  ],
+  "contextEnvelope": [
+    -8.27,
+    30.96,
+    -7.54,
+    31.4
+  ],
+  "drawPriority": 25,
+  "format": "openbaremap-garmin-render-footprint-v1",
+  "geometry": {
+    "bytes": 749,
+    "path": "regions/high-atlas-toubkal/garmin/render-coverage.geojson",
+    "sha256": "83c1ef3a8526a049c375a4bf263b6d4e4f785ebafb084b90471d55f2090750e5"
+  },
+  "inputs": [
+    {
+      "bytes": 2383,
+      "path": "data/regions/high-atlas-toubkal/morocco.poly",
+      "sha256": "ebdb411139e60929150dfcfff1e12674fb0f6675bb5e6c615e77cd6c5ed6d53e",
+      "url": "https://download.geofabrik.de/africa/morocco/morocco.poly"
+    }
+  ],
+  "knownDestinationsCovered": {
+    "aroumd": [
+      -7.923,
+      31.121
+    ],
+    "asni": [
+      -7.981,
+      31.249
+    ],
+    "imlil": [
+      -7.918,
+      31.136
+    ],
+    "ouirgane": [
+      -8.074,
+      31.173
+    ],
+    "oukaimeden": [
+      -7.857,
+      31.212
+    ],
+    "setti-fatma": [
+      -7.675,
+      31.225
+    ],
+    "tacheddirt": [
+      -7.835,
+      31.156
+    ],
+    "toubkal": [
+      -7.915,
+      31.061
+    ],
+    "toubkal-refuges": [
+      -7.938,
+      31.064
+    ]
+  },
+  "purpose": "Rectangular Garmin tiles may overlap other countries. Do not fill their padding with sea, land or land-cover polygons.",
+  "region": "high-atlas-toubkal",
+  "transparentNativeMap": true
+}

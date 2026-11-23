@@ -23,6 +23,46 @@ python3 scripts/build_web_previews.py --regions "$edition" --output "$output/pre
 python3 scripts/stage_amalfi.py --website /path/to/AppsByOnzy-Website/site/index.html
 ```
 
+## Rota Vicentina, High Atlas and Lycian Way
+
+| Edition | Walking coverage | Garmin family |
+| --- | --- | --- |
+| Rota Vicentina | Fishermen’s Trail from São Torpes to Lagos, and the Historical Way from Santiago do Cacém to Cabo de São Vicente | 4880 |
+| High Atlas & Toubkal | Imlil, Jbel Toubkal and its refuges, Asni, Ouirgane, Oukaïmeden, Tacheddirt and the upper Ourika valley | 4881 |
+| Lycian Way | Ovacık to Geyikbayırı, with mapped variants and the approaches around Fethiye | 4882 |
+
+The editions use the 22 November 2026 Geofabrik snapshots. Copernicus GLO-30
+supplies terrain for 20 m contours and hillshade. For Morocco, the build uses
+Latin names from OpenStreetMap when present and ICU transliteration for
+Arabic names where a Latin counterpart is unavailable.
+
+The Portugal and Türkiye editions use a 10 km buffer around the mapped
+walking routes, clipped to the Geofabrik source outline where necessary.
+The route source lock records the OSM relations, their versions, coverage
+area and hashes. The Lycian variant network is longer than the main through
+route. See [Rota Vicentina](https://rotavicentina.com/en/fishermens-trail/)
+and the [Culture Routes Society](https://cultureroutesinturkey.com/the-lycian-way/books-maps-apps/)
+for the operators’ current route information.
+
+```sh
+export PYTHONPATH=work/python
+for edition in rota-vicentina lycian-way; do
+  python3 scripts/prepare_trekking_corridors.py --region "$edition" || exit
+done
+for edition in rota-vicentina high-atlas-toubkal lycian-way; do
+  output="work/$edition-release"
+  python3 scripts/run_full_region.py --region "$edition" || exit
+  python3 scripts/build_app_distribution.py --regions "$edition" \
+    --output "$output/kits" --catalog "$output/catalog.json" || exit
+  python3 scripts/build_web_previews.py --regions "$edition" --output "$output/preview" \
+    --origin "https://downloads.appsbyonzy.dev/OpenBareMap/$edition/2.0.0/preview" || exit
+done
+python3 scripts/stage_coast_and_atlas.py --website /path/to/AppsByOnzy-Website/site/index.html
+```
+
+Pass `--publish-assets` from the release checkout to verify R2 object hashes,
+PMTiles byte ranges and the live catalogue before deploying the website.
+
 ## Cusco, Kilimanjaro and Fiordland
 
 | Edition | Walking coverage | Grid | Garmin family |

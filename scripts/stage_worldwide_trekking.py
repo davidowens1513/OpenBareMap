@@ -19,10 +19,10 @@ GROUPS = (
 )
 
 
-def render_homepage(website, entries, _downloads, count):
+def render_homepage(website, entries, _downloads, count, *, groups=GROUPS):
     page = website.read_text()
     options, sections = [], []
-    for group, label, region in GROUPS:
+    for group, label, region in groups:
         option = f'  <option value="{group}">{label}</option>\n'
         page = page.replace(option, '')
         page = re.sub(rf'<!-- {label} -->.*?<!-- End {label} -->\n', '', page, flags=re.S)
@@ -46,12 +46,12 @@ def render_homepage(website, entries, _downloads, count):
     return page
 
 
-def merge_worldwide_catalogue(staged, baseline):
+def merge_worldwide_catalogue(staged, baseline, *, regions=WORLDWIDE_TREKKING_REGIONS):
     catalogue = json.loads(baseline.read_text())
     entries = {entry['id']: entry for entry in catalogue['regions']}
     incoming = json.loads(staged.read_text())['regions']
-    if {entry['id'] for entry in incoming} != set(WORLDWIDE_TREKKING_REGIONS):
-        raise ValueError('The staged Worldwide catalogue must contain the three trekking editions')
+    if {entry['id'] for entry in incoming} != set(regions):
+        raise ValueError('The staged Worldwide catalogue differs from the requested editions')
     entries.update((entry['id'], entry) for entry in incoming)
     catalogue['regions'] = list(entries.values())
     data = json.dumps(catalogue, separators=(',', ':'), ensure_ascii=False) + '\n'

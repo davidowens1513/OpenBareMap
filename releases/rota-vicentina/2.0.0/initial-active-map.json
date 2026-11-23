@@ -1,0 +1,52 @@
+{
+  "contourIntervalMetres": 20,
+  "coverage": "Southwest Portugal from S\u00e3o Torpes and Santiago do Cac\u00e9m to Lagos and Cabo de S\u00e3o Vicente, with the Fishermen\u2019s Trail, the Historical Way and the Sab\u00f3ia\u2013Odemira link.",
+  "datasets": {
+    "basemap": {
+      "bytes": 19554304,
+      "path": "releases/rota-vicentina/2.0.0/maps/basemap.mbtiles",
+      "sha256": "2c091e93d30882436442111d733503387b0694ed5c981b7261d411b1dab7bdac",
+      "validation": {
+        "empty_tile_count": 0,
+        "logical_tiles_sha256": "80d2935ed9e1495abdf7e0cb566f4c724bf8cfb5a5a35e170c6674de1135d3e0",
+        "tile_count": 1285
+      }
+    },
+    "grid": {
+      "bytes": 651264,
+      "path": "releases/rota-vicentina/2.0.0/maps/grid.mbtiles",
+      "sha256": "ea6560425317fb23bed0d037b26a6cd5c9fe3bca492d572ae68fd380295f87dc",
+      "validation": {
+        "empty_tile_count": 0,
+        "logical_tiles_sha256": "753ba6300293ddf98347028ffe3113bc130d7c7d14fef8b5bef90fa8379c383b",
+        "tile_count": 1804
+      }
+    },
+    "hillshade": {
+      "bytes": 3526656,
+      "path": "releases/rota-vicentina/2.0.0/maps/hillshade.mbtiles",
+      "sha256": "ae763f273d52f27c3c6960a20a5c1cf945105308c8fe7734b47a363879cea491",
+      "validation": {
+        "empty_tile_count": 0,
+        "logical_tiles_sha256": "3576f150dde4301cf5a5aa064dbda28c1c705b074743260dbc0f772506dab1e4",
+        "tile_count": 163
+      }
+    },
+    "topography": {
+      "bytes": 13234176,
+      "path": "releases/rota-vicentina/2.0.0/maps/topography.mbtiles",
+      "sha256": "076167a5c73221ec00c09e6aa64e34a7bc7e74de2ced7bf92fb8697a3fb63a12",
+      "validation": {
+        "empty_tile_count": 21309,
+        "logical_tiles_sha256": "d90db0124051a1e5bc2c5c92bfc59a15e1ac6daa2d855ace1a791490d2926adb",
+        "tile_count": 23955
+      }
+    }
+  },
+  "format": "openbaremap-development-viewer-v1",
+  "localBorders": false,
+  "mapVersion": "2.0.0",
+  "region": "rota-vicentina",
+  "storageRevision": "2.0.0-rota-vicentina-r1",
+  "styleRevision": "2.0.0-rota-vicentina-r1"
+}

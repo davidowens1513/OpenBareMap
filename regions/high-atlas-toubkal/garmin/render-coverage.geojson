@@ -1,0 +1,39 @@
+{
+  "features": [
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              -8.27,
+              30.96
+            ],
+            [
+              -8.27,
+              31.4
+            ],
+            [
+              -7.54,
+              31.4
+            ],
+            [
+              -7.54,
+              30.96
+            ],
+            [
+              -8.27,
+              30.96
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "properties": {
+        "purpose": "Limit opaque native background and land-cover polygons; retain complete accepted OSM and terrain inputs",
+        "region": "high-atlas-toubkal"
+      },
+      "type": "Feature"
+    }
+  ],
+  "type": "FeatureCollection"
+}

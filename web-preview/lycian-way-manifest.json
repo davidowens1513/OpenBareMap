@@ -1,0 +1,41 @@
+{
+  "regions": {
+    "lycian-way": {
+      "basemap": {
+        "sourceSHA256": "3afe2dfa8f9eb9b715b899dcdb595fd3a7e977af78bad40defe562d1e83f4005",
+        "bytes": 17774237,
+        "sha256": "df307ea97210e97e0f375ed3c6c3ce44c5256cf5facd7bfae531eeb075283be7",
+        "tiles": 1961
+      },
+      "grid": {
+        "sourceSHA256": "dee75db319bc9a0a9a2589bf47705d59f2fac28fd186b9a3eae76f4bb8cf215f",
+        "bytes": 774079,
+        "sha256": "34c0ce8152a96db04afd65d0287764384f1fc1fb8978132c39a76bf8a9c5acf4",
+        "tiles": 2435
+      },
+      "hillshade": {
+        "sourceSHA256": "970e0fabc06cc70719aa272f59189d7d320b720ac244eb0cb4bbcd9568fb5356",
+        "bytes": 5135844,
+        "sha256": "79dcaf46886996bca1d147ef93360cd9ce31821ddb883ce88c9bb7e6d139e95f",
+        "tiles": 210
+      },
+      "topography": {
+        "sourceSHA256": "2d838b60f7e1a152e0f49f0789cbf669e167422ad74cf35f37e341cbd5d89f66",
+        "bytes": 28157583,
+        "sha256": "5c830c7e34ff5ec24e13b2420b78bc777dcbf9135c600f0eda030c6f08d0b465",
+        "tiles": 47297
+      },
+      "coast": {
+        "sourceSHA256": "a64a60388815be8bee22c749a151513970d702ca4e23301e0f23ee66845bec33",
+        "bytes": 797750,
+        "sha256": "77d2a34278446494cca931e9ebc38576949ffec843b15eaeffc515d0a78c8653",
+        "tiles": 3209
+      }
+    }
+  },
+  "pmtilesPython": "3.8.1",
+  "pmtilesJS": "4.5.0",
+  "librarySHA256": "caf981bc46f6327ee7e65d5dc964d89d38a69f60edca2bd4c5c890c21b554c6c",
+  "dataOrigin": "https://downloads.appsbyonzy.dev/OpenBareMap/lycian-way/2.0.0/preview",
+  "scope": "Complete selected map tiles; no regional or zoom sampling."
+}

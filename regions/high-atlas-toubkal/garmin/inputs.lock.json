@@ -1,0 +1,20 @@
+{
+  "inputs": [
+    {
+      "path": "regions/high-atlas-toubkal/garmin/inputs/contours.geojson.gz",
+      "sha256": "b6442eb033d4463e15c7c0011e14ab640b1d8aaf8598c38aa63d64420766a67c",
+      "uncompressedSHA256": "bafb0afd2d6b904642e07b9b5df81eb009f36bfa3d5f890162a547e214d30708"
+    },
+    {
+      "path": "regions/high-atlas-toubkal/garmin/inputs/landcover.geojson.gz",
+      "sha256": "f9a88bc830561676f6709459c083ded3665b3c1056da58234cb18af9e31fbb98",
+      "uncompressedSHA256": "771b28bc6dc64812ba4a2f1acc72226544b33f40c129b9ce7f06b66199ef6209"
+    },
+    {
+      "path": "regions/high-atlas-toubkal/garmin/inputs/land.geojson.gz",
+      "sha256": "acf70181c6ff84bbf43f579697848cc1840afb9a8ad52527e8388699fab1ff7f",
+      "uncompressedSHA256": "2c3b904b46ef115faeded5e99ead71ff07ef918c42cd3da0e0f3f77b5efab3fb"
+    }
+  ],
+  "region": "high-atlas-toubkal"
+}

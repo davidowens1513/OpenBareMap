@@ -11,11 +11,12 @@ ICELAND_PATAGONIA_REGIONS = ('iceland-southern-highlands', 'patagonia-torres-del
 NEPAL_REGIONS = ('nepal-everest', 'nepal-annapurna')
 EUROPEAN_WALKING_REGIONS = ('camino-frances', 'cinque-terre')
 WORLDWIDE_TREKKING_REGIONS = ('cusco-inca-trail', 'kilimanjaro', 'fiordland')
+COAST_AND_ATLAS_REGIONS = ('rota-vicentina', 'high-atlas-toubkal', 'lycian-way')
 PERMANENT_ICE = {
     'glacier': ('Glacier', '#badde9', '#709bab', '0x1010c'),
     'permanent_snow': ('Permanent snowfield', '#f0f8fc', '#93b3c3', '0x1010d'),
 }
-REGIONS = ('ireland', 'england-wales', 'scotland', 'sierra-nevada', 'pyrenees', 'dolomites', 'faroe-islands','norway-south','norway-central','norway-north', 'balearic-islands', 'corsica', 'sardinia', 'sicily', 'crete', 'cyprus', 'malta', 'canary-islands', 'madeira') + ALPS_REGIONS + US_PARK_REGIONS + ('picos-de-europa', 'high-tatras') + CANADIAN_ROCKIES_REGIONS + ICELAND_PATAGONIA_REGIONS + NEPAL_REGIONS + EUROPEAN_WALKING_REGIONS + ('amalfi-bay-of-naples',) + WORLDWIDE_TREKKING_REGIONS
+REGIONS = ('ireland', 'england-wales', 'scotland', 'sierra-nevada', 'pyrenees', 'dolomites', 'faroe-islands','norway-south','norway-central','norway-north', 'balearic-islands', 'corsica', 'sardinia', 'sicily', 'crete', 'cyprus', 'malta', 'canary-islands', 'madeira') + ALPS_REGIONS + US_PARK_REGIONS + ('picos-de-europa', 'high-tatras') + CANADIAN_ROCKIES_REGIONS + ICELAND_PATAGONIA_REGIONS + NEPAL_REGIONS + EUROPEAN_WALKING_REGIONS + ('amalfi-bay-of-naples',) + WORLDWIDE_TREKKING_REGIONS + COAST_AND_ATLAS_REGIONS
 
 def profile(region='ireland'):
     if region not in REGIONS:
@@ -26,6 +27,9 @@ def region_path(region, name):
     if region not in REGIONS:
         raise ValueError('Unknown region: ' + region)
     return ROOT/name if region == 'ireland' else ROOT/'regions'/region/name
+
+def route_overlay_id(edition):
+    return edition.get('routeOverlayId', 'camino-route')
 
 def basemap_attribution(edition):
     text = '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap contributors</a>'
@@ -94,15 +98,17 @@ def region_style(region='ireland'):
         # Hide rectangular tile padding so the preview follows the actual buffer.
         style['layers'].append({'id':'coverage-mask','type':'fill','source':'coverage-mask','paint':{'fill-color':'#f5f3ec','fill-antialias':False}})
         if p.get('routeCorridor'):
-            style['sources']['camino-route']={'type':'geojson','data':json.loads(region_path(region,'camino-route.geojson').read_text()),'attribution':p['boundaryAttribution']}
-            style['layers'].append({'id':'camino-route','type':'line','source':'camino-route','paint':{'line-color':'#743b83','line-width':['interpolate',['linear'],['zoom'],6,1.2,14,3.3],'line-opacity':0.88}})
+            overlay = route_overlay_id(p)
+            style['sources'][overlay]={'type':'geojson','data':json.loads(region_path(region,overlay+'.geojson').read_text()),'attribution':p['boundaryAttribution']}
+            style['layers'].append({'id':overlay,'type':'line','source':overlay,'paint':{'line-color':'#743b83','line-width':['interpolate',['linear'],['zoom'],6,1.2,14,3.3],'line-opacity':0.88}})
         else:
             style['layers'].append({'id':'park-boundary','type':'line','source':'park-boundary','paint':{'line-color':'#8c278b','line-width':2.5,'line-opacity':0.95}})
         style['layers'].append({'id':'coverage-boundary','type':'line','source':'coverage','paint':{'line-color':'#444444','line-width':2,'line-dasharray':[4,3]}})
     return style
 
 def provenance_files(region='ireland'):
-    route = [region_path(region,'camino-route.geojson')] if profile(region).get('routeCorridor') else []
+    edition = profile(region)
+    route = [region_path(region,route_overlay_id(edition)+'.geojson')] if edition.get('routeCorridor') else []
     return ([region_path(region,'copernicus-license.pdf')] if region_path(region,'copernicus-license.pdf').exists() else []) + [region_path(region, name) for name in ('active-map.json','sources.lock.json','terrain-sources.lock.json')] + [ROOT/name for name in ('coast-sources.lock.json','legacy-assets.lock.json','viewer-assets.lock.json','assets/sprites.lock.json','config/transport-style.json')] + ([region_path(region,name) for name in ('boundary-source.json','park-boundary.geojson','coverage.geojson','coverage-mask.geojson')] if profile(region).get('coverageBoundary') else []) + route + ([region_path(region,'grid-provenance.json'),region_path(region,'python-runtime.json')] if region!='ireland' else [])
 
 
@@ -161,7 +167,7 @@ def terrain_file(region,name):
         return ROOT/'regions/us-national-parks'/name
     if region in CANADIAN_ROCKIES_REGIONS:
         return ROOT/'regions/canadian-rockies'/name
-    if region in WORLDWIDE_TREKKING_REGIONS:
+    if region in WORLDWIDE_TREKKING_REGIONS + COAST_AND_ATLAS_REGIONS:
         return ROOT/'regions/worldwide-trekking'/name
     return ROOT/('viewer' if name.endswith('.html') else 'data')/name
 

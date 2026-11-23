@@ -1,0 +1,33 @@
+{
+  "bytes": 49742899,
+  "datasets": {
+    "basemap": {
+      "path": "maps/basemap.mbtiles",
+      "sha256": "7694ab0106bf53102f0651f0f0376f97c8e7073d87a5fa1bd0b8cdd04cc0eca3"
+    },
+    "coast": {
+      "derivedFrom": "d95e5bda1d89f0762f88b61abaa279334767b7eaf0afbe530530d0fe0aac5f98",
+      "path": "maps/coast.mbtiles",
+      "sha256": "6b6158341bcb8fa6d29ea296eb6ec149631663f5ab8e31864b1bd12304ad5b26"
+    },
+    "grid": {
+      "path": "maps/grid.mbtiles",
+      "sha256": "82e6b6cd9bd150b5157a47921ce93348447fd4497206d1ed8dc943d549bb35dc"
+    },
+    "hillshade": {
+      "path": "maps/hillshade.mbtiles",
+      "sha256": "6ba75fc05d4b9d847887bd6c19fe5ad341dffed5d8cbe66e0f4aa90b777d4689"
+    },
+    "topography": {
+      "path": "maps/topography.mbtiles",
+      "sha256": "d95e5bda1d89f0762f88b61abaa279334767b7eaf0afbe530530d0fe0aac5f98"
+    }
+  },
+  "instructionsSHA256": "656d84b73d793bab7fbbc9590f80fcdc1fdfc735d7297203185bf59cbb1b3fd1",
+  "instructionsURL": "https://downloads.appsbyonzy.dev/OpenBareMap/high-atlas-toubkal/2.0.0/app-bundles-v1/android/instructions.txt",
+  "localPath": "releases/high-atlas-toubkal/2.0.0/app-bundles-v1/android/OpenBareMap-High-Atlas-Toubkal-Android-Bundle.zip",
+  "mapManifestSHA256": "50e21879bc273cf2955f21271c3d24bed7653cd9e98a5034d1545ce64aa3a7a6",
+  "r2Key": "OpenBareMap/high-atlas-toubkal/2.0.0/app-bundles-v1/android/OpenBareMap-High-Atlas-Toubkal-Android-Bundle.zip",
+  "sha256": "aff10befb20fa87a61e2de90fbca1199588bf886978db13d262a1229fa347ac4",
+  "url": "https://downloads.appsbyonzy.dev/OpenBareMap/high-atlas-toubkal/2.0.0/app-bundles-v1/android/OpenBareMap-High-Atlas-Toubkal-Android-Bundle.zip"
+}

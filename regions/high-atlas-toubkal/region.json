@@ -1,0 +1,185 @@
+{
+  "id": "high-atlas-toubkal",
+  "name": "OpenBareMap High Atlas & Toubkal",
+  "label": "High Atlas & Toubkal",
+  "mapVersion": "2.0.0",
+  "minzoom": 4,
+  "maxzoom": 14,
+  "coverage": "Morocco’s High Atlas around Imlil and Jbel Toubkal, with Asni, Ouirgane, Aroumd, Tacheddirt, Oukaïmeden, and the upper Ourika valley.",
+  "bounds": [
+    -8.27,
+    30.96,
+    -7.54,
+    31.4
+  ],
+  "terrainBounds": [
+    -9,
+    30,
+    -7,
+    32
+  ],
+  "coastContextBounds": [
+    -10,
+    29,
+    -6,
+    33
+  ],
+  "projectedCRS": "EPSG:32629",
+  "gridCRS": "EPSG:32629",
+  "gridName": "WGS 84 / UTM 29N",
+  "gridSource": "utm-grid",
+  "gridExtent": [
+    560000,
+    640000,
+    3420000,
+    3480000
+  ],
+  "townlands": false,
+  "contourIntervalMetres": 20,
+  "minorWaterwayMinzoom": 10,
+  "sourceDate": "2026-11-22",
+  "sourceSlugs": [
+    "morocco"
+  ],
+  "sourceBaseURL": "https://download.geofabrik.de/africa/morocco/",
+  "nativeLanguage": "ar",
+  "clipSource": true,
+  "clipBasemap": true,
+  "ignoreSourceHeaderBounds": true,
+  "garminUseSourceOutline": true,
+  "garminContextBounds": [
+    -8.27,
+    30.96,
+    -7.54,
+    31.4
+  ],
+  "garminFamilyId": 4881,
+  "garminTileStartId": 48810001,
+  "garminFilename": "OpenBareMap-High-Atlas-Toubkal.img",
+  "garminPackageRevision": "2.0.1-trail-detail-r1",
+  "styleRevision": "2.0.0-high-atlas-toubkal-r1",
+  "requireBogFeatures": false,
+  "inspectionNames": [
+    "Asni",
+    "Imlil"
+  ],
+  "optionalBasemapLayers": [
+    "ferry",
+    "island_name",
+    "cycling_route",
+    "railway",
+    "station",
+    "hiking_route",
+    "boundary"
+  ],
+  "terrainProvider": "copernicus-glo30",
+  "terrainAttribution": "Copernicus DEM GLO-30 · European Union / ESA · DLR / Airbus",
+  "terrainNotice": "High Atlas & Toubkal elevation: Copernicus DEM GLO-30 Public (AWS 2021 release).\n\nproduced using Copernicus WorldDEM-30 © DLR e.V. 2010-2014 and © Airbus Defence and Space GmbH 2014-2018 provided under COPERNICUS by the European Union and ESA; all rights reserved\n\nThe organisations in charge of the Copernicus programme by law or by delegation do not incur any liability for any use of the Copernicus WorldDEM-30.\n\nLicense: https://dataspace.copernicus.eu/sites/default/files/media/files/2025-06/copernicus_contributing_mission_data_access_v2_cop_dem_licenses.pdf\nSource: https://registry.opendata.aws/copernicus-dem/\nVertical datum: EGM2008 orthometric metres. Native approximately 30 m cells are bilinearly resampled to point-aligned Int16 HGT for the shared terrain pipeline. Ocean-only cells absent from the official public inventory are zero.\n",
+  "labelGlyphs": "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyzÀÂÇÉÈÊËÎÏÔÙÛÜàâçéèêëîïôùûü",
+  "destinations": {
+    "island": [
+      -7.904999999999999,
+      31.18,
+      10
+    ],
+    "asni": [
+      -7.981,
+      31.249,
+      12
+    ],
+    "imlil": [
+      -7.918,
+      31.136,
+      12
+    ],
+    "aroumd": [
+      -7.923,
+      31.121,
+      12
+    ],
+    "toubkal": [
+      -7.915,
+      31.061,
+      12
+    ],
+    "toubkal-refuges": [
+      -7.938,
+      31.064,
+      12
+    ],
+    "tacheddirt": [
+      -7.835,
+      31.156,
+      12
+    ],
+    "ouirgane": [
+      -8.074,
+      31.173,
+      12
+    ],
+    "oukaimeden": [
+      -7.857,
+      31.212,
+      12
+    ],
+    "setti-fatma": [
+      -7.675,
+      31.225,
+      12
+    ]
+  },
+  "destinationLabels": {
+    "island": "High Atlas & Toubkal",
+    "asni": "Asni",
+    "imlil": "Imlil",
+    "aroumd": "Aroumd",
+    "toubkal": "Jbel Toubkal",
+    "toubkal-refuges": "Toubkal refuges",
+    "tacheddirt": "Tacheddirt",
+    "ouirgane": "Ouirgane",
+    "oukaimeden": "Oukaïmeden",
+    "setti-fatma": "Setti Fatma"
+  },
+  "validationAnchors": {
+    "asni": [
+      -7.981,
+      31.249
+    ],
+    "imlil": [
+      -7.918,
+      31.136
+    ],
+    "aroumd": [
+      -7.923,
+      31.121
+    ],
+    "toubkal": [
+      -7.915,
+      31.061
+    ],
+    "toubkal-refuges": [
+      -7.938,
+      31.064
+    ],
+    "tacheddirt": [
+      -7.835,
+      31.156
+    ],
+    "ouirgane": [
+      -8.074,
+      31.173
+    ],
+    "oukaimeden": [
+      -7.857,
+      31.212
+    ],
+    "setti-fatma": [
+      -7.675,
+      31.225
+    ]
+  },
+  "appBundleName": "High-Atlas-Toubkal",
+  "clipTerrainToBounds": true,
+  "repairClippedCoastline": true,
+  "latinArabicLabels": true
+}

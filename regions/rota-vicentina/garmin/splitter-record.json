@@ -1,0 +1,21 @@
+{
+  "combinedSHA256": "a8c5b8cbda2fe5e79453a8703b714096fb393ce076b995be28791d9766a15a73",
+  "command": [
+    "/opt/homebrew/opt/openjdk@21/libexec/openjdk.jdk/Contents/Home/bin/java",
+    "-Xmx6g",
+    "-jar",
+    "/Volumes/Extreme SSD/Projects/OpenBareMap/garmin/tools/splitter-r654/splitter.jar",
+    "--mapid=48800001",
+    "--description=OpenBareMap Rota Vicentina",
+    "--max-nodes=1000000",
+    "--max-threads=2",
+    "--keep-complete=true",
+    "--output=pbf",
+    "--polygon-file=/Volumes/Extreme SSD/Projects/OpenBareMap/regions/rota-vicentina/garmin/coverage.poly",
+    "--output-dir=/Volumes/Extreme SSD/Projects/OpenBareMap/work/coast-and-atlas/revised-garmin/OpenBareMap-builds/906ead9d53a7/rota-vicentina/garmin/split",
+    "--ignore-osm-bounds=true",
+    "/Volumes/Extreme SSD/Projects/OpenBareMap/work/coast-and-atlas/revised-garmin/OpenBareMap-builds/906ead9d53a7/rota-vicentina/garmin/combined.osm.pbf"
+  ],
+  "coverageSHA256": "fe295cce0cfa0d5f9891af613ff4773ad8836d7157e0e3070484b2899c93dfe2",
+  "ignoreSourceHeaderBounds": true
+}

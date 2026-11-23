@@ -1,0 +1,35 @@
+{
+  "bytes": 64507035,
+  "datasets": {
+    "basemap": {
+      "path": "maps/basemap.mbtiles",
+      "sha256": "3afe2dfa8f9eb9b715b899dcdb595fd3a7e977af78bad40defe562d1e83f4005"
+    },
+    "coast": {
+      "derived_from": "2d838b60f7e1a152e0f49f0789cbf669e167422ad74cf35f37e341cbd5d89f66",
+      "maxzoom": 12,
+      "operation": "Preserve land-layer MVT bytes only through zoom 12; omit other layers.",
+      "path": "maps/coast.mbtiles",
+      "sha256": "a64a60388815be8bee22c749a151513970d702ca4e23301e0f23ee66845bec33"
+    },
+    "grid": {
+      "path": "maps/grid.mbtiles",
+      "sha256": "dee75db319bc9a0a9a2589bf47705d59f2fac28fd186b9a3eae76f4bb8cf215f"
+    },
+    "hillshade": {
+      "path": "maps/hillshade.mbtiles",
+      "sha256": "970e0fabc06cc70719aa272f59189d7d320b720ac244eb0cb4bbcd9568fb5356"
+    },
+    "topography": {
+      "path": "maps/topography.mbtiles",
+      "sha256": "2d838b60f7e1a152e0f49f0789cbf669e167422ad74cf35f37e341cbd5d89f66"
+    }
+  },
+  "instructionsSHA256": "7e715b4a089343ea58c48fefa813d04632d2637b6ede55f84eea2b068ae42803",
+  "instructionsURL": "https://downloads.appsbyonzy.dev/OpenBareMap/lycian-way/2.0.0/app-bundles-v1/ios/instructions.txt",
+  "localPath": "releases/lycian-way/2.0.0/app-bundles-v1/ios/OpenBareMap-Lycian-Way-iOS-Bundle.zip",
+  "mapManifestSHA256": "22e1fdac260e5bdb4bc7f25240b338a2711b520136c96255e00949bb17bc5f4b",
+  "r2Key": "OpenBareMap/lycian-way/2.0.0/app-bundles-v1/ios/OpenBareMap-Lycian-Way-iOS-Bundle.zip",
+  "sha256": "5ba1d21640f1dc01e8b9710c271471462375b3f501a27b2a68eb56c195909e49",
+  "url": "https://downloads.appsbyonzy.dev/OpenBareMap/lycian-way/2.0.0/app-bundles-v1/ios/OpenBareMap-Lycian-Way-iOS-Bundle.zip"
+}

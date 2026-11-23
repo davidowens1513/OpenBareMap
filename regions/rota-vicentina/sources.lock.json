@@ -1,0 +1,30 @@
+{
+  "accessed_utc": "2026-11-23T17:46:01.857785+00:00",
+  "inputs": [
+    {
+      "bytes": 429183752,
+      "path": "data/regions/rota-vicentina/portugal-261122.osm.pbf",
+      "replicationTimestamp": "2026-11-22T21:20:48Z",
+      "sha256": "c0ee7e9a613417b3fcdeafd4e8d76f7a1295a8721a3edacb2dbe020fc5b5102f",
+      "url": "https://download.geofabrik.de/europe/portugal/portugal-261122.osm.pbf"
+    }
+  ],
+  "osm": {
+    "bytes": 18112978,
+    "footprintSHA256": "9667879882d0974b8829f13d1d007d90447a3f3fb5cb7fd26fe3a112fab41525",
+    "operation": "Complete-feature corridor extraction followed by libosmium merge",
+    "path": "data/regions/rota-vicentina/portugal-261122.osm.clipped.osm.pbf",
+    "replicationTimestamp": "2026-11-22T21:20:48Z",
+    "sha256": "e7b73b244fd15268977c818b6e755a996812c30575113b63f3f06c02832ff13d",
+    "snapshot_date": "2026-11-22",
+    "url": "https://download.geofabrik.de/europe/portugal/portugal-261122.osm.pbf"
+  },
+  "polygons": [
+    {
+      "bytes": 5999,
+      "path": "data/regions/rota-vicentina/portugal.poly",
+      "sha256": "b6eac12ed0d04d87c0371289d2f9b95365cafce0ee94fefd01b5ecc33a52e5bb",
+      "url": "https://download.geofabrik.de/europe/portugal/portugal.poly"
+    }
+  ]
+}

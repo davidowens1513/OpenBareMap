@@ -1,0 +1,35 @@
+{
+  "bytes": 42478436,
+  "datasets": {
+    "basemap": {
+      "path": "maps/basemap.mbtiles",
+      "sha256": "2c091e93d30882436442111d733503387b0694ed5c981b7261d411b1dab7bdac"
+    },
+    "coast": {
+      "derived_from": "154d33b01359e55d0279387d7e1a2962702a3dc447e2fb1f63127763ed3668ff",
+      "maxzoom": 12,
+      "operation": "Preserve land-layer MVT bytes only through zoom 12; omit other layers.",
+      "path": "maps/coast.mbtiles",
+      "sha256": "3d5ba9038d968b9cf491ced45a6c907902355611bdf3ed8a8789b79a671ae5f4"
+    },
+    "grid": {
+      "path": "maps/grid.mbtiles",
+      "sha256": "ea6560425317fb23bed0d037b26a6cd5c9fe3bca492d572ae68fd380295f87dc"
+    },
+    "hillshade": {
+      "path": "maps/hillshade.mbtiles",
+      "sha256": "ae763f273d52f27c3c6960a20a5c1cf945105308c8fe7734b47a363879cea491"
+    },
+    "topography": {
+      "path": "maps/topography.mbtiles",
+      "sha256": "154d33b01359e55d0279387d7e1a2962702a3dc447e2fb1f63127763ed3668ff"
+    }
+  },
+  "instructionsSHA256": "563b710e77f32f60abf8330930c80577df0ae22ed48fac062241b9beee5b1299",
+  "instructionsURL": "https://downloads.appsbyonzy.dev/OpenBareMap/rota-vicentina/2.0.0/app-bundles-v1/ios/instructions.txt",
+  "localPath": "releases/rota-vicentina/2.0.0/app-bundles-v1/ios/OpenBareMap-Rota-Vicentina-iOS-Bundle.zip",
+  "mapManifestSHA256": "9e7d41a95c38a2f2372fd56fc90301ec46b13b7525554ea4cab48608a12e66a7",
+  "r2Key": "OpenBareMap/rota-vicentina/2.0.0/app-bundles-v1/ios/OpenBareMap-Rota-Vicentina-iOS-Bundle.zip",
+  "sha256": "fdde51c4a29cefe24911a810fe4aa7fe32d6a9fa9cef75e48afc380951340aa8",
+  "url": "https://downloads.appsbyonzy.dev/OpenBareMap/rota-vicentina/2.0.0/app-bundles-v1/ios/OpenBareMap-Rota-Vicentina-iOS-Bundle.zip"
+}

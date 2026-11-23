@@ -1,0 +1,38 @@
+{
+  "areaSquareDegrees": 1.1569010742570058,
+  "bounds": [
+    29.010233172586318,
+    36.0583581933441,
+    30.707206506168,
+    37.02387597844651
+  ],
+  "entireRequestedFootprintCovered": true,
+  "exactFootprint": "regions/lycian-way/coverage.geojson",
+  "inputs": [
+    {
+      "bytes": 6091,
+      "path": "data/regions/lycian-way/turkey.poly",
+      "sha256": "6c41ac3f661ce4764e3c7ba30a7e2f35e1bcbaa1b1f8b91f6d78a9c0e3344ea9",
+      "url": "https://download.geofabrik.de/europe/turkey/turkey.poly"
+    }
+  ],
+  "knownDestinationsCovered": [
+    "adrasan",
+    "cirali",
+    "demre",
+    "faralya",
+    "fethiye",
+    "finike",
+    "geyikbayiri",
+    "goynuk",
+    "island",
+    "kalkan",
+    "kas",
+    "ovacik",
+    "patara",
+    "tekirova"
+  ],
+  "operation": "Convex tile-selection envelope around the full regional footprint; the exact outline is retained as a map overlay",
+  "polygons": 1,
+  "sha256": "4b1895588bb86062a8c306fce3bbc886c6b1cadabd63bee48db5c0ada5d1fe32"
+}

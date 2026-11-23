@@ -1,0 +1,31 @@
+{
+  "bufferCRS": "EPSG:32635",
+  "bufferMetres": 10000,
+  "changes": "Nested OSM walking relations expanded, overlapping ways dissolved, and a projected buffer clipped to the source coverage. Display paths simplified to 5 m.",
+  "coverageSHA256": "968a0b7b213fc5b312b6217c237b869ab58b01eb09df3c3233edb76618940296",
+  "coverageSquareKilometres": 6198.4,
+  "routeLengthKilometres": 629.4,
+  "routeSHA256": "2209ab070a0cd1f8d3530b2cd01834fa41353e2e4a37d3d43c1b478e50f3765d",
+  "routes": [
+    {
+      "lengthKilometres": 629.4,
+      "name": "Lycian Way",
+      "relation": "https://www.openstreetmap.org/relation/51855",
+      "relationVersions": {
+        "16113469": 3,
+        "51855": 645
+      }
+    }
+  ],
+  "sources": [
+    {
+      "attribution": "\u00a9 OpenStreetMap contributors \u00b7 ODbL \u00b7 Geofabrik source outline",
+      "sha256": "1aa8f54ef194857f1dd0fd3c4be0b7869998c99a9656e4f29e50072883019696",
+      "url": "https://download.geofabrik.de/europe/turkey/turkey-261122.osm.pbf"
+    },
+    {
+      "sha256": "6c41ac3f661ce4764e3c7ba30a7e2f35e1bcbaa1b1f8b91f6d78a9c0e3344ea9",
+      "url": "https://download.geofabrik.de/europe/turkey/turkey.poly"
+    }
+  ]
+}

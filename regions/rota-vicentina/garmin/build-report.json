@@ -1,0 +1,140 @@
+{
+  "familyId": 4880,
+  "garminPackageRevision": "2.0.1-trail-detail-r1",
+  "inspection": {
+    "anchorLabels": {
+      "Aljezur": "Aljezur",
+      "Lagos": "Lagos",
+      "Porto Covo": "Porto Covo"
+    },
+    "bounds": [
+      -9.140710830688477,
+      36.9140625,
+      -8.349609375,
+      38.14461708068848
+    ],
+    "coastPolygonsByLevel": {
+      "0": {
+        "0x32": 3,
+        "0x54": 214
+      },
+      "1": {
+        "0x32": 3,
+        "0x54": 118
+      },
+      "2": {
+        "0x32": 3,
+        "0x54": 81
+      },
+      "3": {
+        "0x32": 3,
+        "0x54": 30
+      },
+      "4": {
+        "0x32": 3,
+        "0x54": 7
+      }
+    },
+    "contoursByLevel": {
+      "0": {
+        "0x20": 8761,
+        "0x22": 1860
+      },
+      "1": {
+        "0x20": 7455,
+        "0x22": 1564
+      },
+      "2": {
+        "0x22": 1485
+      },
+      "3": {
+        "0x10008": 1334
+      },
+      "4": {}
+    },
+    "lineInstancesAtHighestDetail": {
+      "0x1": 92,
+      "0x10001": 806,
+      "0x10002": 546,
+      "0x10004": 84,
+      "0x10005": 634,
+      "0x10006": 332,
+      "0x1000a": 13,
+      "0x1000b": 741,
+      "0x1000d": 58,
+      "0x14": 120,
+      "0x16": 6475,
+      "0x18": 1570,
+      "0x1a": 3,
+      "0x1c": 245,
+      "0x1f": 15,
+      "0x2": 56,
+      "0x20": 8761,
+      "0x22": 1860,
+      "0x3": 553,
+      "0x4": 314,
+      "0x6": 7381,
+      "0x7": 4748,
+      "0xa": 12090
+    },
+    "logicalCombinedSHA256": "f8174c8555ce2038c6702d63c13669ec8854aeb813b01651e36553e4cdf24acc",
+    "logicalHashNote": "Internal file names, sizes and payloads; only CommonHeader creation-date bytes 14..20 are zeroed for hashing. IMG archive headers are excluded. Output bytes are never modified.",
+    "logicalTileSHA256": {
+      "48800001.img": "3cc9287bedf4a65e400bac18e50c75650ffd0e215a35878ed2fb1cbf7a293447",
+      "48800002.img": "48bf0ceadb7f8a99999bb2e9805cca7c39c028929d366d4450523ec5cfc215ee",
+      "48800003.img": "b38a53e8e59cad03cb58077f1fc68e00e44e8fe966b032462ad46c98c2b1f502"
+    },
+    "pointInstancesAtHighestDetail": {
+      "0x100": 7,
+      "0x10001": 54,
+      "0x10002": 211,
+      "0x10003": 580,
+      "0x10004": 4,
+      "0x10006": 3459,
+      "0x2f0b": 1964,
+      "0x600": 17,
+      "0x650c": 231,
+      "0x6603": 36,
+      "0x6615": 1,
+      "0x6616": 219,
+      "0x800": 35,
+      "0xb00": 160,
+      "0xc00": 360
+    },
+    "polygonInstancesAtHighestDetail": {
+      "0x10101": 1876,
+      "0x10102": 1807,
+      "0x10103": 335,
+      "0x10104": 1875,
+      "0x10105": 209,
+      "0x10106": 114,
+      "0x10109": 450,
+      "0x1010a": 87,
+      "0x1010b": 24,
+      "0x13": 48547,
+      "0x32": 3,
+      "0x3c": 2609,
+      "0x50": 3192,
+      "0x51": 430,
+      "0x54": 214
+    },
+    "routing": false,
+    "subfileBytes": {
+      "DEM": 3952180,
+      "LBL": 149566,
+      "MPS": 299,
+      "RGN": 6226997,
+      "SRT": 912,
+      "TRE": 74868,
+      "TYP": 3098
+    },
+    "tiles": 3
+  },
+  "output": {
+    "bytes": 10443776,
+    "path": "regions/rota-vicentina/garmin/dist/OpenBareMap-Rota-Vicentina.img",
+    "sha256": "c25714a2265f862de74c9f42ab07662850a9106f6a72a94145c570d08897b500"
+  },
+  "routing": false,
+  "status": "compiled and structurally inspected; hardware rendering pending"
+}

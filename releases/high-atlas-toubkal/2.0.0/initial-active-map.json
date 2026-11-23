@@ -1,0 +1,52 @@
+{
+  "contourIntervalMetres": 20,
+  "coverage": "Morocco\u2019s High Atlas around Imlil and Jbel Toubkal, with Asni, Ouirgane, Aroumd, Tacheddirt, Ouka\u00efmeden, and the upper Ourika valley.",
+  "datasets": {
+    "basemap": {
+      "bytes": 8589312,
+      "path": "releases/high-atlas-toubkal/2.0.0/maps/basemap.mbtiles",
+      "sha256": "7694ab0106bf53102f0651f0f0376f97c8e7073d87a5fa1bd0b8cdd04cc0eca3",
+      "validation": {
+        "empty_tile_count": 0,
+        "logical_tiles_sha256": "c0f49dde558aa990c52a77ac083dae9fd5d6973d93a073861d21aa5f18ea10ae",
+        "tile_count": 1156
+      }
+    },
+    "grid": {
+      "bytes": 442368,
+      "path": "releases/high-atlas-toubkal/2.0.0/maps/grid.mbtiles",
+      "sha256": "82e6b6cd9bd150b5157a47921ce93348447fd4497206d1ed8dc943d549bb35dc",
+      "validation": {
+        "empty_tile_count": 0,
+        "logical_tiles_sha256": "5e4d4d0a8550e8d640528fc94c8849b89a10fd83f94e37e779ec974b82de3671",
+        "tile_count": 1153
+      }
+    },
+    "hillshade": {
+      "bytes": 3809280,
+      "path": "releases/high-atlas-toubkal/2.0.0/maps/hillshade.mbtiles",
+      "sha256": "6ba75fc05d4b9d847887bd6c19fe5ad341dffed5d8cbe66e0f4aa90b777d4689",
+      "validation": {
+        "empty_tile_count": 0,
+        "logical_tiles_sha256": "34d55277c197beed29082f98197416cd1e0d14a130a6481a614d82be3ee048c1",
+        "tile_count": 109
+      }
+    },
+    "topography": {
+      "bytes": 33026048,
+      "path": "releases/high-atlas-toubkal/2.0.0/maps/topography.mbtiles",
+      "sha256": "c744a863b2613f313ef465222c6ae3b9d5e42384da4e82ca531485e6dec5d615",
+      "validation": {
+        "empty_tile_count": 44853,
+        "logical_tiles_sha256": "4d524e519b9ae75082491fe235d61211522ed150a0fe75262aa859b74e92d825",
+        "tile_count": 48990
+      }
+    }
+  },
+  "format": "openbaremap-development-viewer-v1",
+  "localBorders": false,
+  "mapVersion": "2.0.0",
+  "region": "high-atlas-toubkal",
+  "storageRevision": "2.0.0-high-atlas-toubkal-r1",
+  "styleRevision": "2.0.0-high-atlas-toubkal-r1"
+}

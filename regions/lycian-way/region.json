@@ -1,0 +1,285 @@
+{
+  "appBundleName": "Lycian-Way",
+  "boundaryAttribution": "\u00a9 OpenStreetMap contributors \u00b7 ODbL \u00b7 Geofabrik source outline",
+  "bounds": [
+    29.010233172586318,
+    36.0583581933441,
+    30.707206506168,
+    37.02387597844651
+  ],
+  "clipBasemap": true,
+  "clipSource": true,
+  "clipTerrainToBounds": true,
+  "coastContextBounds": [
+    27,
+    34,
+    32,
+    39
+  ],
+  "contourIntervalMetres": 20,
+  "coverage": "The Lycian Way from the Fethiye approaches through Ovac\u0131k, Patara, Kalkan, Ka\u015f, Demre, Finike, Adrasan, and \u00c7\u0131ral\u0131 to the eastern trailheads near Antalya.",
+  "coverageBoundary": true,
+  "coverageBoundaryLabel": "10 km map coverage limit",
+  "destinationLabels": {
+    "adrasan": "Adrasan",
+    "cirali": "\u00c7\u0131ral\u0131",
+    "demre": "Demre",
+    "faralya": "Faralya",
+    "fethiye": "Fethiye",
+    "finike": "Finike",
+    "geyikbayiri": "Geyikbay\u0131r\u0131",
+    "goynuk": "G\u00f6yn\u00fck",
+    "island": "Lycian Way",
+    "kalkan": "Kalkan",
+    "kas": "Ka\u015f",
+    "ovacik": "Ovac\u0131k",
+    "patara": "Patara",
+    "tekirova": "Tekirova"
+  },
+  "destinations": {
+    "adrasan": [
+      30.469,
+      36.325,
+      12
+    ],
+    "cirali": [
+      30.475,
+      36.412,
+      12
+    ],
+    "demre": [
+      29.985,
+      36.241,
+      12
+    ],
+    "faralya": [
+      29.13,
+      36.492,
+      12
+    ],
+    "fethiye": [
+      29.117,
+      36.624,
+      12
+    ],
+    "finike": [
+      30.147,
+      36.302,
+      12
+    ],
+    "geyikbayiri": [
+      30.484,
+      36.871,
+      12
+    ],
+    "goynuk": [
+      30.555,
+      36.668,
+      12
+    ],
+    "island": [
+      29.901903600000004,
+      36.28685449999999,
+      8
+    ],
+    "kalkan": [
+      29.413,
+      36.268,
+      12
+    ],
+    "kas": [
+      29.64,
+      36.201,
+      12
+    ],
+    "ovacik": [
+      29.144,
+      36.58,
+      12
+    ],
+    "patara": [
+      29.324,
+      36.266,
+      12
+    ],
+    "tekirova": [
+      30.526,
+      36.502,
+      12
+    ]
+  },
+  "garminContextBounds": [
+    29.010233172586318,
+    36.0583581933441,
+    30.707206506168,
+    37.02387597844651
+  ],
+  "garminFamilyId": 4882,
+  "garminFilename": "OpenBareMap-Lycian-Way.img",
+  "garminPackageRevision": "2.0.1-trail-detail-r1",
+  "garminTileStartId": 48820001,
+  "garminUseSourceOutline": true,
+  "gridCRS": "EPSG:32635",
+  "gridExtent": [
+    680000,
+    840000,
+    3990000,
+    4110000
+  ],
+  "gridName": "WGS 84 / UTM 35N",
+  "gridSource": "utm-grid",
+  "id": "lycian-way",
+  "ignoreSourceHeaderBounds": true,
+  "inspectionNames": [
+    "Fethiye",
+    "Kalkan",
+    "Finike"
+  ],
+  "label": "Lycian Way",
+  "labelGlyphs": "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz\u00c7\u011e\u0130\u00d6\u015e\u00dc\u00e7\u011f\u0131\u00f6\u015f\u00fc",
+  "mapVersion": "2.0.0",
+  "maxzoom": 14,
+  "minorWaterwayMinzoom": 10,
+  "minzoom": 4,
+  "name": "OpenBareMap Lycian Way",
+  "nativeLanguage": "tr",
+  "optionalBasemapLayers": [
+    "ferry",
+    "island_name",
+    "cycling_route",
+    "railway",
+    "station",
+    "boundary"
+  ],
+  "overviewLandAnchors": {
+    "adrasan": [
+      30.469,
+      36.325
+    ],
+    "cirali": [
+      30.475,
+      36.412
+    ],
+    "demre": [
+      29.985,
+      36.241
+    ],
+    "faralya": [
+      29.13,
+      36.492
+    ],
+    "fethiye": [
+      29.117,
+      36.624
+    ],
+    "finike": [
+      30.147,
+      36.302
+    ],
+    "geyikbayiri": [
+      30.484,
+      36.871
+    ],
+    "goynuk": [
+      30.555,
+      36.668
+    ],
+    "kalkan": [
+      29.413,
+      36.268
+    ],
+    "kas": [
+      29.64,
+      36.201
+    ],
+    "ovacik": [
+      29.144,
+      36.58
+    ],
+    "patara": [
+      29.324,
+      36.266
+    ],
+    "tekirova": [
+      30.526,
+      36.502
+    ]
+  },
+  "projectedCRS": "EPSG:32635",
+  "repairClippedCoastline": true,
+  "requireBogFeatures": false,
+  "routeBufferMetres": 10000,
+  "routeCorridor": true,
+  "routeOverlayId": "trekking-route",
+  "routeOverlayLabel": "Lycian Way",
+  "sourceBaseURL": "https://download.geofabrik.de/europe/turkey/",
+  "sourceDate": "2026-11-22",
+  "sourceSlugs": [
+    "turkey"
+  ],
+  "styleRevision": "2.0.0-lycian-way-r1",
+  "terrainAttribution": "Copernicus DEM GLO-30 \u00b7 European Union / ESA \u00b7 DLR / Airbus",
+  "terrainBounds": [
+    28,
+    35,
+    31,
+    38
+  ],
+  "terrainNotice": "Lycian Way elevation: Copernicus DEM GLO-30 Public (AWS 2021 release).\n\nproduced using Copernicus WorldDEM-30 \u00a9 DLR e.V. 2010-2014 and \u00a9 Airbus Defence and Space GmbH 2014-2018 provided under COPERNICUS by the European Union and ESA; all rights reserved\n\nThe organisations in charge of the Copernicus programme by law or by delegation do not incur any liability for any use of the Copernicus WorldDEM-30.\n\nLicense: https://dataspace.copernicus.eu/sites/default/files/media/files/2025-06/copernicus_contributing_mission_data_access_v2_cop_dem_licenses.pdf\nSource: https://registry.opendata.aws/copernicus-dem/\nVertical datum: EGM2008 orthometric metres. Native approximately 30 m cells are bilinearly resampled to point-aligned Int16 HGT for the shared terrain pipeline. Ocean-only cells absent from the official public inventory are zero.\n",
+  "terrainProvider": "copernicus-glo30",
+  "townlands": false,
+  "validationAnchors": {
+    "adrasan": [
+      30.469,
+      36.325
+    ],
+    "cirali": [
+      30.475,
+      36.412
+    ],
+    "demre": [
+      29.985,
+      36.241
+    ],
+    "faralya": [
+      29.13,
+      36.492
+    ],
+    "fethiye": [
+      29.117,
+      36.624
+    ],
+    "finike": [
+      30.147,
+      36.302
+    ],
+    "geyikbayiri": [
+      30.484,
+      36.871
+    ],
+    "goynuk": [
+      30.555,
+      36.668
+    ],
+    "kalkan": [
+      29.413,
+      36.268
+    ],
+    "kas": [
+      29.64,
+      36.201
+    ],
+    "ovacik": [
+      29.144,
+      36.58
+    ],
+    "patara": [
+      29.324,
+      36.266
+    ],
+    "tekirova": [
+      30.526,
+      36.502
+    ]
+  }
+}

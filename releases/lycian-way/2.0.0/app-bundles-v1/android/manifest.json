@@ -1,0 +1,33 @@
+{
+  "bytes": 64505002,
+  "datasets": {
+    "basemap": {
+      "path": "maps/basemap.mbtiles",
+      "sha256": "3afe2dfa8f9eb9b715b899dcdb595fd3a7e977af78bad40defe562d1e83f4005"
+    },
+    "coast": {
+      "derivedFrom": "2d838b60f7e1a152e0f49f0789cbf669e167422ad74cf35f37e341cbd5d89f66",
+      "path": "maps/coast.mbtiles",
+      "sha256": "a64a60388815be8bee22c749a151513970d702ca4e23301e0f23ee66845bec33"
+    },
+    "grid": {
+      "path": "maps/grid.mbtiles",
+      "sha256": "dee75db319bc9a0a9a2589bf47705d59f2fac28fd186b9a3eae76f4bb8cf215f"
+    },
+    "hillshade": {
+      "path": "maps/hillshade.mbtiles",
+      "sha256": "970e0fabc06cc70719aa272f59189d7d320b720ac244eb0cb4bbcd9568fb5356"
+    },
+    "topography": {
+      "path": "maps/topography.mbtiles",
+      "sha256": "2d838b60f7e1a152e0f49f0789cbf669e167422ad74cf35f37e341cbd5d89f66"
+    }
+  },
+  "instructionsSHA256": "07a17b483f0d8feb89f5b6e5887623a111eb6847436bc85b01175b207c461e33",
+  "instructionsURL": "https://downloads.appsbyonzy.dev/OpenBareMap/lycian-way/2.0.0/app-bundles-v1/android/instructions.txt",
+  "localPath": "releases/lycian-way/2.0.0/app-bundles-v1/android/OpenBareMap-Lycian-Way-Android-Bundle.zip",
+  "mapManifestSHA256": "5de83efcecac91af1bc0d195dde3dadd4c47d26487b8118a2d385f47251544d3",
+  "r2Key": "OpenBareMap/lycian-way/2.0.0/app-bundles-v1/android/OpenBareMap-Lycian-Way-Android-Bundle.zip",
+  "sha256": "660db9f27fb359e97a3e18e042a0001c9199e36ccd37aa800ac77490a1e12da7",
+  "url": "https://downloads.appsbyonzy.dev/OpenBareMap/lycian-way/2.0.0/app-bundles-v1/android/OpenBareMap-Lycian-Way-Android-Bundle.zip"
+}

@@ -1,0 +1,38 @@
+{
+  "areaSquareDegrees": 0.5891336859035936,
+  "bounds": [
+    -9.108296309533461,
+    36.91704763770172,
+    -8.368644489362184,
+    38.10440948243227
+  ],
+  "entireRequestedFootprintCovered": true,
+  "exactFootprint": "regions/rota-vicentina/coverage.geojson",
+  "inputs": [
+    {
+      "bytes": 5999,
+      "path": "data/regions/rota-vicentina/portugal.poly",
+      "sha256": "b6eac12ed0d04d87c0371289d2f9b95365cafce0ee94fefd01b5ecc33a52e5bb",
+      "url": "https://download.geofabrik.de/europe/portugal/portugal.poly"
+    }
+  ],
+  "knownDestinationsCovered": [
+    "aljezur",
+    "cabo-de-sao-vicente",
+    "carrapateira",
+    "island",
+    "lagos",
+    "odeceixe",
+    "porto-covo",
+    "saboia",
+    "sagres",
+    "santiago-do-cacem",
+    "sao-torpes",
+    "vila-do-bispo",
+    "vila-nova-de-milfontes",
+    "zambujeira-do-mar"
+  ],
+  "operation": "Convex tile-selection envelope around the full regional footprint; the exact outline is retained as a map overlay",
+  "polygons": 1,
+  "sha256": "fe295cce0cfa0d5f9891af613ff4773ad8836d7157e0e3070484b2899c93dfe2"
+}

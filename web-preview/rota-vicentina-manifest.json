@@ -1,0 +1,41 @@
+{
+  "regions": {
+    "rota-vicentina": {
+      "basemap": {
+        "sourceSHA256": "2c091e93d30882436442111d733503387b0694ed5c981b7261d411b1dab7bdac",
+        "bytes": 18544007,
+        "sha256": "682e32a4fc16832434e7e2b41f7e1e226e7b1ae093953d5b5ab51b9f9889b379",
+        "tiles": 1285
+      },
+      "grid": {
+        "sourceSHA256": "ea6560425317fb23bed0d037b26a6cd5c9fe3bca492d572ae68fd380295f87dc",
+        "bytes": 540604,
+        "sha256": "0024e58a9c5012d2cba030ce7efa71f3a721178b2eaffd93ee6bf4b4500993aa",
+        "tiles": 1804
+      },
+      "hillshade": {
+        "sourceSHA256": "ae763f273d52f27c3c6960a20a5c1cf945105308c8fe7734b47a363879cea491",
+        "bytes": 3410335,
+        "sha256": "5b6aa43d9596ad5e61662f83d095d6b0556dd1c99be7e06b770ade39f5822bf5",
+        "tiles": 163
+      },
+      "topography": {
+        "sourceSHA256": "154d33b01359e55d0279387d7e1a2962702a3dc447e2fb1f63127763ed3668ff",
+        "bytes": 10950344,
+        "sha256": "f6f4a705445c5758e6c75af08eabd4866bf477382bd21c018d2c920510dcd8ed",
+        "tiles": 23955
+      },
+      "coast": {
+        "sourceSHA256": "3d5ba9038d968b9cf491ced45a6c907902355611bdf3ed8a8789b79a671ae5f4",
+        "bytes": 324390,
+        "sha256": "f8c8678813a3a92dea27677be8e812c6f4cfde4bce2146bec78d8b5bc55e3bb4",
+        "tiles": 1659
+      }
+    }
+  },
+  "pmtilesPython": "3.8.1",
+  "pmtilesJS": "4.5.0",
+  "librarySHA256": "caf981bc46f6327ee7e65d5dc964d89d38a69f60edca2bd4c5c890c21b554c6c",
+  "dataOrigin": "https://downloads.appsbyonzy.dev/OpenBareMap/rota-vicentina/2.0.0/preview",
+  "scope": "Complete selected map tiles; no regional or zoom sampling."
+}

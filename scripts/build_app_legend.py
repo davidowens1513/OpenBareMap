@@ -2,7 +2,7 @@
 """Export the active map legend to scalable SVG and 2x PNG (Pillow required)."""
 from pathlib import Path
 import argparse,base64,hashlib,html,io,json,math
-from regions import PERMANENT_ICE, REGIONS, profile, region_style
+from regions import PERMANENT_ICE, REGIONS, profile, region_style, route_overlay_id
 from PIL import Image,ImageDraw,ImageFont,ImageEnhance
 ROOT=Path(__file__).resolve().parents[1]
 parser=argparse.ArgumentParser();parser.add_argument('--region',choices=REGIONS,default='ireland');args=parser.parse_args();edition=profile(args.region)
@@ -100,7 +100,7 @@ heading(528,786,'Boundaries & grid')
 for i,(label,layer) in enumerate([('National boundary','administrative-boundaries'),('Province boundary' if edition.get('nativeLanguage')=='es' else 'County boundary','county-boundaries'),(edition['gridName']+' · 10 km',edition['gridSource']+'-10km'),(edition['gridName']+' · 1 km',edition['gridSource']+'-1km')]):linerow(528,837+i*36,label,layer)
 if edition.get('coverageBoundary'):
  if edition.get('routeCorridor'):
-  linerow(528,981,'Camino Francés','camino-route')
+  linerow(528,981,edition.get('routeOverlayLabel','Camino Francés'),route_overlay_id(edition))
  else:
   linerow(528,981,'National park','park-boundary')
  linerow(528,1017,edition.get('coverageBoundaryLabel','25 km coverage limit'),'coverage-boundary')

@@ -3,7 +3,7 @@
 from pathlib import Path
 import argparse,gzip,hashlib,json,shutil,sys
 sys.path.insert(0,str(Path(__file__).resolve().parents[1]/"scripts"))
-from regions import PERMANENT_ICE, REGIONS, profile,region_path,garmin_work
+from regions import PERMANENT_ICE, REGIONS, profile,region_path,garmin_work,route_overlay_id
 from xml.sax.saxutils import escape,quoteattr
 ROOT=Path(__file__).resolve().parents[1]
 WORK=ROOT/'garmin/work'
@@ -93,9 +93,10 @@ def prepare(region='ireland'):
      label=f['properties'].get('name','Sierra Nevada National Park') if name=='park-boundary' else p.get('coverageBoundaryLabel','25 km coverage limit')
      for ring in rings:line(ring,{tag:'yes','name':label},closed=True)
  if p.get('routeCorridor'):
-  route=json.loads(region_path(region,'camino-route.geojson').read_text())
+  route=json.loads(region_path(region,route_overlay_id(p)+'.geojson').read_text())
   for feature in route['features']:
-   line(feature['geometry']['coordinates'],{'obm:camino_route':'yes','name':'Camino Francés'})
+   label=feature['properties'].get('name',p.get('routeOverlayLabel','Camino Francés'))
+   line(feature['geometry']['coordinates'],{'obm:camino_route':'yes','name':label})
  west,south,east,north=counts['coverage']
  polygon([[[west,south],[east,south],[east,north],[west,north],[west,south]]],{'obm:sea':'yes'})
  if p['townlands']:

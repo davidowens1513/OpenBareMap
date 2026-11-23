@@ -1,0 +1,52 @@
+{
+  "contourIntervalMetres": 20,
+  "coverage": "The Lycian Way from the Fethiye approaches through Ovac\u0131k, Patara, Kalkan, Ka\u015f, Demre, Finike, Adrasan, and \u00c7\u0131ral\u0131 to the eastern trailheads near Antalya.",
+  "datasets": {
+    "basemap": {
+      "bytes": 18952192,
+      "path": "releases/lycian-way/2.0.0/maps/basemap.mbtiles",
+      "sha256": "3afe2dfa8f9eb9b715b899dcdb595fd3a7e977af78bad40defe562d1e83f4005",
+      "validation": {
+        "empty_tile_count": 41,
+        "logical_tiles_sha256": "6e7a95cd3dbd34c6b092ce4aec67fdf2ad73a638fc3463cc69e751dc20e8d22e",
+        "tile_count": 1961
+      }
+    },
+    "grid": {
+      "bytes": 913408,
+      "path": "releases/lycian-way/2.0.0/maps/grid.mbtiles",
+      "sha256": "dee75db319bc9a0a9a2589bf47705d59f2fac28fd186b9a3eae76f4bb8cf215f",
+      "validation": {
+        "empty_tile_count": 0,
+        "logical_tiles_sha256": "b8137de1c13357c52220972e588b6fef255f2902dabd86ea0192830fe7c8e383",
+        "tile_count": 2435
+      }
+    },
+    "hillshade": {
+      "bytes": 5304320,
+      "path": "releases/lycian-way/2.0.0/maps/hillshade.mbtiles",
+      "sha256": "970e0fabc06cc70719aa272f59189d7d320b720ac244eb0cb4bbcd9568fb5356",
+      "validation": {
+        "empty_tile_count": 0,
+        "logical_tiles_sha256": "6546bb0b0e44df9228ed444a5c0f1b27a7dbd0fa66c57d759e681fe86bb91248",
+        "tile_count": 210
+      }
+    },
+    "topography": {
+      "bytes": 32047104,
+      "path": "releases/lycian-way/2.0.0/maps/topography-context.mbtiles",
+      "sha256": "2d838b60f7e1a152e0f49f0789cbf669e167422ad74cf35f37e341cbd5d89f66",
+      "validation": {
+        "empty_tile_count": 42722,
+        "logical_tiles_sha256": "d0ade511806ccb1c134e6354b101780b87b9cfb1d2640a5c2a0a312ba4faac70",
+        "tile_count": 47297
+      }
+    }
+  },
+  "format": "openbaremap-development-viewer-v1",
+  "localBorders": false,
+  "mapVersion": "2.0.0",
+  "region": "lycian-way",
+  "storageRevision": "2.0.0-lycian-way-r3",
+  "styleRevision": "2.0.0-lycian-way-r1"
+}

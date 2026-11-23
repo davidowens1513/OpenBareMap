@@ -121,7 +121,7 @@ class Handler(BaseHTTPRequestHandler):
                 body=body.replace(b'</head>',b'<style>.preview-key{margin-top:14px}.preview-key summary{cursor:pointer;font-size:12px}@media(max-width:600px){aside{width:calc(100% - 70px);max-height:300px}.badge{margin-bottom:4px}aside p{margin:8px 0}.preview-key{margin-top:10px}}</style></head>')
                 body=body.replace('Version 2.0 · 20 m contours'.encode(),'Local preview · 20 m contours'.encode())
                 boundary = html.escape(p.get('coverageBoundaryLabel', '25 km boundary'))
-                primary = 'Camino Francés' if p.get('routeCorridor') else 'National park'
+                primary = html.escape(p.get('routeOverlayLabel','Camino Francés')) if p.get('routeCorridor') else 'National park'
                 note = f'<p style="font-size:12px"><span style="color:#8c278b">&#9473;</span> {primary} &nbsp; &#9476; {boundary}</p>'
                 body=body.replace(b'<label for="location">',note.encode()+b'<label for="location">')
         self.reply(200,body, mimetypes.guess_type(target)[0] or 'application/octet-stream')

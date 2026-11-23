@@ -5,7 +5,7 @@ import json
 import subprocess
 import sys
 from openbaremap import ROOT,digest
-from regions import NEPAL_REGIONS, REGIONS, region_path
+from regions import NEPAL_REGIONS, REGIONS, profile, region_path
 
 def run(*args):subprocess.run([sys.executable,*map(str,args)],cwd=ROOT,check=True)
 
@@ -19,13 +19,16 @@ def main(region):
     if not selection.exists() or not native_report.exists():
         run('scripts/fetch_region.py','--region',region)
     if not selection.exists():
-        if region in NEPAL_REGIONS:
+        if region in NEPAL_REGIONS or profile(region).get('latinArabicLabels'):
             run('scripts/prepare_nepal_labels.py','--region',region)
         top=ROOT/'build'/(region+'-topography')
         if not top.exists():run('scripts/build_topography.py',region+'-topography','--region',region)
-        elif not json.loads((top/'build.json').read_text())['status'].startswith('built and structurally validated'):
+        topography = json.loads((top/'build.json').read_text())
+        if not topography['status'].startswith('built and structurally validated'):
             raise ValueError('Topography stage is incomplete; inspect its build record before resuming')
-        for name,item in json.loads((top/'build.json').read_text())['outputs'].items():
+        if profile(region).get('routeCorridor') and topography.get('terrainCutlineSHA256') != digest(region_path(region,'coverage.geojson')):
+            raise ValueError('Topography was built for a different walking corridor')
+        for name,item in topography['outputs'].items():
             if digest(top/name)!=item['sha256']:raise ValueError('Topography checkpoint changed: '+name)
         for stage in ('basemap','geometry','finish'):run('scripts/build_region.py','--region',region,'--stage',stage)
     # Accepted datasets remain usable after redundant intermediates are cleaned.

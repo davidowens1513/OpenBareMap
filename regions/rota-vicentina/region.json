@@ -1,0 +1,285 @@
+{
+  "appBundleName": "Rota-Vicentina",
+  "boundaryAttribution": "© OpenStreetMap contributors · ODbL · Geofabrik source outline",
+  "bounds": [
+    -9.108296309533461,
+    36.91704763770172,
+    -8.368644489362184,
+    38.10440948243227
+  ],
+  "clipBasemap": true,
+  "clipSource": true,
+  "clipTerrainToBounds": true,
+  "coastContextBounds": [
+    -11,
+    35,
+    -7,
+    40
+  ],
+  "contourIntervalMetres": 20,
+  "coverage": "Southwest Portugal from São Torpes and Santiago do Cacém to Lagos and Cabo de São Vicente, with the Fishermen’s Trail, the Historical Way and the Sabóia–Odemira link.",
+  "coverageBoundary": true,
+  "coverageBoundaryLabel": "10 km map coverage limit",
+  "destinationLabels": {
+    "aljezur": "Aljezur",
+    "cabo-de-sao-vicente": "Cabo de São Vicente",
+    "carrapateira": "Carrapateira",
+    "island": "Rota Vicentina",
+    "lagos": "Lagos",
+    "odeceixe": "Odeceixe",
+    "porto-covo": "Porto Covo",
+    "saboia": "Sabóia",
+    "sagres": "Sagres",
+    "santiago-do-cacem": "Santiago do Cacém",
+    "sao-torpes": "São Torpes",
+    "vila-do-bispo": "Vila do Bispo",
+    "vila-nova-de-milfontes": "Vila Nova de Milfontes",
+    "zambujeira-do-mar": "Zambujeira do Mar"
+  },
+  "destinations": {
+    "aljezur": [
+      -8.804,
+      37.318,
+      12
+    ],
+    "cabo-de-sao-vicente": [
+      -8.994,
+      37.022,
+      12
+    ],
+    "carrapateira": [
+      -8.896,
+      37.185,
+      12
+    ],
+    "island": [
+      -8.785,
+      37.51,
+      8
+    ],
+    "lagos": [
+      -8.674,
+      37.102,
+      12
+    ],
+    "odeceixe": [
+      -8.77,
+      37.434,
+      12
+    ],
+    "porto-covo": [
+      -8.792,
+      37.854,
+      12
+    ],
+    "saboia": [
+      -8.498,
+      37.494,
+      12
+    ],
+    "sagres": [
+      -8.943,
+      37.009,
+      12
+    ],
+    "santiago-do-cacem": [
+      -8.697,
+      38.017,
+      12
+    ],
+    "sao-torpes": [
+      -8.809,
+      37.922,
+      12
+    ],
+    "vila-do-bispo": [
+      -8.91,
+      37.083,
+      12
+    ],
+    "vila-nova-de-milfontes": [
+      -8.781,
+      37.724,
+      12
+    ],
+    "zambujeira-do-mar": [
+      -8.785,
+      37.525,
+      12
+    ]
+  },
+  "garminContextBounds": [
+    -9.108296309533461,
+    36.91704763770172,
+    -8.368644489362184,
+    38.10440948243227
+  ],
+  "garminFamilyId": 4880,
+  "garminFilename": "OpenBareMap-Rota-Vicentina.img",
+  "garminPackageRevision": "2.0.1-trail-detail-r1",
+  "garminTileStartId": 48800001,
+  "garminUseSourceOutline": true,
+  "gridCRS": "EPSG:32629",
+  "gridExtent": [
+    490000,
+    560000,
+    4080000,
+    4220000
+  ],
+  "gridName": "WGS 84 / UTM 29N",
+  "gridSource": "utm-grid",
+  "id": "rota-vicentina",
+  "ignoreSourceHeaderBounds": true,
+  "inspectionNames": [
+    "Porto Covo",
+    "Aljezur",
+    "Lagos"
+  ],
+  "label": "Rota Vicentina",
+  "labelGlyphs": "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyzÁÂÃÀÇÉÊÍÓÔÕÚáâãàçéêíóôõú",
+  "mapVersion": "2.0.0",
+  "maxzoom": 14,
+  "minorWaterwayMinzoom": 10,
+  "minzoom": 4,
+  "name": "OpenBareMap Rota Vicentina",
+  "nativeLanguage": "pt",
+  "optionalBasemapLayers": [
+    "ferry",
+    "island_name",
+    "cycling_route",
+    "railway",
+    "station",
+    "boundary"
+  ],
+  "overviewLandAnchors": {
+    "aljezur": [
+      -8.804,
+      37.318
+    ],
+    "cabo-de-sao-vicente-headland": [
+      -8.973,
+      37.033
+    ],
+    "carrapateira": [
+      -8.896,
+      37.185
+    ],
+    "lagos": [
+      -8.674,
+      37.102
+    ],
+    "odeceixe": [
+      -8.77,
+      37.434
+    ],
+    "porto-covo": [
+      -8.792,
+      37.854
+    ],
+    "saboia": [
+      -8.498,
+      37.494
+    ],
+    "sagres": [
+      -8.943,
+      37.009
+    ],
+    "santiago-do-cacem": [
+      -8.697,
+      38.017
+    ],
+    "sao-torpes": [
+      -8.805,
+      37.922
+    ],
+    "vila-do-bispo": [
+      -8.91,
+      37.083
+    ],
+    "vila-nova-de-milfontes": [
+      -8.781,
+      37.724
+    ],
+    "zambujeira-do-mar": [
+      -8.785,
+      37.525
+    ]
+  },
+  "projectedCRS": "EPSG:32629",
+  "repairClippedCoastline": true,
+  "requireBogFeatures": false,
+  "routeBufferMetres": 10000,
+  "routeCorridor": true,
+  "routeOverlayId": "trekking-route",
+  "routeOverlayLabel": "Rota Vicentina",
+  "sourceBaseURL": "https://download.geofabrik.de/europe/portugal/",
+  "sourceDate": "2026-11-22",
+  "sourceSlugs": [
+    "portugal"
+  ],
+  "styleRevision": "2.0.0-rota-vicentina-r1",
+  "terrainAttribution": "Copernicus DEM GLO-30 · European Union / ESA · DLR / Airbus",
+  "terrainBounds": [
+    -10,
+    36,
+    -8,
+    39
+  ],
+  "terrainNotice": "Rota Vicentina elevation: Copernicus DEM GLO-30 Public (AWS 2021 release).\n\nproduced using Copernicus WorldDEM-30 © DLR e.V. 2010-2014 and © Airbus Defence and Space GmbH 2014-2018 provided under COPERNICUS by the European Union and ESA; all rights reserved\n\nThe organisations in charge of the Copernicus programme by law or by delegation do not incur any liability for any use of the Copernicus WorldDEM-30.\n\nLicense: https://dataspace.copernicus.eu/sites/default/files/media/files/2025-06/copernicus_contributing_mission_data_access_v2_cop_dem_licenses.pdf\nSource: https://registry.opendata.aws/copernicus-dem/\nVertical datum: EGM2008 orthometric metres. Native approximately 30 m cells are bilinearly resampled to point-aligned Int16 HGT for the shared terrain pipeline. Ocean-only cells absent from the official public inventory are zero.\n",
+  "terrainProvider": "copernicus-glo30",
+  "townlands": false,
+  "validationAnchors": {
+    "aljezur": [
+      -8.804,
+      37.318
+    ],
+    "cabo-de-sao-vicente": [
+      -8.994,
+      37.022
+    ],
+    "carrapateira": [
+      -8.896,
+      37.185
+    ],
+    "lagos": [
+      -8.674,
+      37.102
+    ],
+    "odeceixe": [
+      -8.77,
+      37.434
+    ],
+    "porto-covo": [
+      -8.792,
+      37.854
+    ],
+    "saboia": [
+      -8.498,
+      37.494
+    ],
+    "sagres": [
+      -8.943,
+      37.009
+    ],
+    "santiago-do-cacem": [
+      -8.697,
+      38.017
+    ],
+    "sao-torpes": [
+      -8.809,
+      37.922
+    ],
+    "vila-do-bispo": [
+      -8.91,
+      37.083
+    ],
+    "vila-nova-de-milfontes": [
+      -8.781,
+      37.724
+    ],
+    "zambujeira-do-mar": [
+      -8.785,
+      37.525
+    ]
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "regions": {
+    "high-atlas-toubkal": {
+      "basemap": {
+        "sourceSHA256": "7694ab0106bf53102f0651f0f0376f97c8e7073d87a5fa1bd0b8cdd04cc0eca3",
+        "bytes": 7869466,
+        "sha256": "2edd482d7bfd91043040a0f1946c4b0bef19f573c838be8eeb5a7185c948abb7",
+        "tiles": 1156
+      },
+      "grid": {
+        "sourceSHA256": "82e6b6cd9bd150b5157a47921ce93348447fd4497206d1ed8dc943d549bb35dc",
+        "bytes": 365796,
+        "sha256": "175ebe52c87401806b19df07000d7efbaab77b5cba2d1347b0270fb477fbcf5e",
+        "tiles": 1153
+      },
+      "hillshade": {
+        "sourceSHA256": "6ba75fc05d4b9d847887bd6c19fe5ad341dffed5d8cbe66e0f4aa90b777d4689",
+        "bytes": 3706829,
+        "sha256": "1e8d5ac24fe722128013f8776f008fde46bbe5d9d2b3a558894bede0982f8c15",
+        "tiles": 109
+      },
+      "topography": {
+        "sourceSHA256": "d95e5bda1d89f0762f88b61abaa279334767b7eaf0afbe530530d0fe0aac5f98",
+        "bytes": 29311010,
+        "sha256": "3b02e1831a316f4abee40e92dca26496fef03a533d1d11015af0f7e92e0dfc1d",
+        "tiles": 48990
+      },
+      "coast": {
+        "sourceSHA256": "6b6158341bcb8fa6d29ea296eb6ec149631663f5ab8e31864b1bd12304ad5b26",
+        "bytes": 88723,
+        "sha256": "4f47e84bc66895a9b218ac11fad39769a974af806fed49000d89a43320730547",
+        "tiles": 3176
+      }
+    }
+  },
+  "pmtilesPython": "3.8.1",
+  "pmtilesJS": "4.5.0",
+  "librarySHA256": "caf981bc46f6327ee7e65d5dc964d89d38a69f60edca2bd4c5c890c21b554c6c",
+  "dataOrigin": "https://downloads.appsbyonzy.dev/OpenBareMap/high-atlas-toubkal/2.0.0/preview",
+  "scope": "Complete selected map tiles; no regional or zoom sampling."
+}

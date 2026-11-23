@@ -1,0 +1,20 @@
+{
+  "inputs": [
+    {
+      "path": "regions/lycian-way/garmin/inputs/contours.geojson.gz",
+      "sha256": "681ee959cb2365642674478d3f774cc760d4c5ba6444b7ebc68dab4127aa60ac",
+      "uncompressedSHA256": "ea73a103fc59a67b4324d6bee6f1e6344238dcff1c0b71a941fc9afa725c713e"
+    },
+    {
+      "path": "regions/lycian-way/garmin/inputs/landcover.geojson.gz",
+      "sha256": "d8d3e1b610e4c5ba588498ee094969e21c81358247b235670dae31f62a70095f",
+      "uncompressedSHA256": "e8ccc877e93e0173e001d290f3d048d5e45cfd07ad9ae08b079424c5de4892b8"
+    },
+    {
+      "path": "regions/lycian-way/garmin/inputs/land.geojson.gz",
+      "sha256": "075d974d4260642664d5381f1ff1b206520c192404388641de2b62565ce577d0",
+      "uncompressedSHA256": "cfb5758872ddba598b660c9a26bf81e14fa5a1ece21780df6c703512d0396d32"
+    }
+  ],
+  "region": "lycian-way"
+}

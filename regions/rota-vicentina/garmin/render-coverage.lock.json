@@ -1,0 +1,85 @@
+{
+  "bounds": [
+    -9.108296309533461,
+    36.91704763770172,
+    -8.368644489362184,
+    38.10440948243227
+  ],
+  "contextEnvelope": [
+    -9.108296309533461,
+    36.91704763770172,
+    -8.368644489362184,
+    38.10440948243227
+  ],
+  "drawPriority": 25,
+  "format": "openbaremap-garmin-render-footprint-v1",
+  "geometry": {
+    "bytes": 61574,
+    "path": "regions/rota-vicentina/garmin/render-coverage.geojson",
+    "sha256": "bcdfa0b3f69ef9dfd20d0f978e88353e855a7f59b710389e118ef7b8b32c2c73"
+  },
+  "inputs": [
+    {
+      "path": "regions/rota-vicentina/coverage.geojson",
+      "purpose": "Exact regional footprint for drawing the native map background",
+      "sha256": "9667879882d0974b8829f13d1d007d90447a3f3fb5cb7fd26fe3a112fab41525"
+    }
+  ],
+  "knownDestinationsCovered": {
+    "aljezur": [
+      -8.804,
+      37.318
+    ],
+    "cabo-de-sao-vicente": [
+      -8.994,
+      37.022
+    ],
+    "carrapateira": [
+      -8.896,
+      37.185
+    ],
+    "lagos": [
+      -8.674,
+      37.102
+    ],
+    "odeceixe": [
+      -8.77,
+      37.434
+    ],
+    "porto-covo": [
+      -8.792,
+      37.854
+    ],
+    "saboia": [
+      -8.498,
+      37.494
+    ],
+    "sagres": [
+      -8.943,
+      37.009
+    ],
+    "santiago-do-cacem": [
+      -8.697,
+      38.017
+    ],
+    "sao-torpes": [
+      -8.809,
+      37.922
+    ],
+    "vila-do-bispo": [
+      -8.91,
+      37.083
+    ],
+    "vila-nova-de-milfontes": [
+      -8.781,
+      37.724
+    ],
+    "zambujeira-do-mar": [
+      -8.785,
+      37.525
+    ]
+  },
+  "purpose": "Rectangular Garmin tiles may overlap other countries. Do not fill their padding with sea, land or land-cover polygons.",
+  "region": "rota-vicentina",
+  "transparentNativeMap": true
+}
