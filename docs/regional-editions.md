@@ -1,5 +1,28 @@
 # Maintaining regional editions
 
+## Sorrento, Amalfi & Bay of Naples
+
+This Italian edition covers the Sorrento Peninsula and Amalfi Coast through Salerno,
+the Monti Lattari ridge, Capri, Ischia, Procida and Vivara. It also includes the
+Naples and Pozzuoli ferry gateways, Pompeii and Vesuvius. The geographic bounds
+are 13.82°–14.86° E and 40.49°–40.90° N.
+
+The build uses the 22 November 2026 Geofabrik southern Italy extract and Copernicus
+GLO-30 elevation. The edition has 20 m contours, hillshade, a WGS 84 / UTM 33N
+grid, and mapped ferry lines. Its Garmin family ID is 4876.
+
+```sh
+export PYTHONPATH=work/python
+edition=amalfi-bay-of-naples
+output="work/$edition-release"
+python3 scripts/run_full_region.py --region "$edition"
+python3 scripts/build_app_distribution.py --regions "$edition" \
+  --output "$output/kits" --catalog "$output/catalog.json"
+python3 scripts/build_web_previews.py --regions "$edition" --output "$output/preview" \
+  --origin "https://downloads.appsbyonzy.dev/OpenBareMap/$edition/2.0.0/preview"
+python3 scripts/stage_amalfi.py --website /path/to/AppsByOnzy-Website/site/index.html
+```
+
 ## European walking editions
 
 | Edition | Walking coverage | Geofabrik snapshot | Garmin family |

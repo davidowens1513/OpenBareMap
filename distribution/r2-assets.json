@@ -55,14 +55,20 @@
       "url": "https://downloads.appsbyonzy.dev/Garmin/OpenBareMap-Alps-West.img"
     },
     {
+      "path": "regions/amalfi-bay-of-naples/garmin/dist/OpenBareMap-Amalfi-Bay-of-Naples.img",
+      "bytes": 13868032,
+      "sha256": "c1d6081ef72f4c8c4b99245930b2785235df9b84e2d607928d7217cd223e4635",
+      "url": "https://downloads.appsbyonzy.dev/Garmin/amalfi-bay-of-naples/2.0.1-trail-detail-r1/OpenBareMap-Amalfi-Bay-of-Naples.img"
+    },
+    {
       "bytes": 23934976,
       "path": "regions/balearic-islands/garmin/dist/OpenBareMap-Balearic-Islands.img",
       "sha256": "3022969fca63b99153e242a419fde7968652b647ba5a06de2959f91b52294f51",
       "url": "https://downloads.appsbyonzy.dev/Garmin/OpenBareMap-Balearic-Islands.img"
     },
     {
-      "path": "regions/camino-frances/garmin/dist/OpenBareMap-Camino-Frances.img",
       "bytes": 80969728,
+      "path": "regions/camino-frances/garmin/dist/OpenBareMap-Camino-Frances.img",
       "sha256": "b46b5780fff5c35ad0fadce409cf99b626e8d42d3f8f1483df61b7d3c8024256",
       "url": "https://downloads.appsbyonzy.dev/Garmin/camino-frances/2.0.1-trail-detail-r1/OpenBareMap-Camino-Frances.img"
     },
@@ -91,8 +97,8 @@
       "url": "https://downloads.appsbyonzy.dev/Garmin/OpenBareMap-Canary-Islands.img"
     },
     {
-      "path": "regions/cinque-terre/garmin/dist/OpenBareMap-Cinque-Terre-Portofino.img",
       "bytes": 14832640,
+      "path": "regions/cinque-terre/garmin/dist/OpenBareMap-Cinque-Terre-Portofino.img",
       "sha256": "aab2c362cf5fb8f273bf1023ef2a38438f78a1b3d51b5387afde9fbbc2ec5466",
       "url": "https://downloads.appsbyonzy.dev/Garmin/cinque-terre/2.0.1-trail-detail-r1/OpenBareMap-Cinque-Terre-Portofino.img"
     },
@@ -457,6 +463,18 @@
       "url": "https://downloads.appsbyonzy.dev/OpenBareMap/alps-west/2.0.1/app-bundles-v1/ios/OpenBareMap-Alps-West-iOS-Bundle.zip"
     },
     {
+      "path": "releases/amalfi-bay-of-naples/2.0.0/app-bundles-v1/android/OpenBareMap-Amalfi-Bay-of-Naples-Android-Bundle.zip",
+      "bytes": 58995643,
+      "sha256": "db2d9f3afef1352091cc9c78f986f3b4481b011660fc6142dc1fbd665fe1a560",
+      "url": "https://downloads.appsbyonzy.dev/OpenBareMap/amalfi-bay-of-naples/2.0.0/app-bundles-v1/android/OpenBareMap-Amalfi-Bay-of-Naples-Android-Bundle.zip"
+    },
+    {
+      "path": "releases/amalfi-bay-of-naples/2.0.0/app-bundles-v1/ios/OpenBareMap-Amalfi-Bay-of-Naples-iOS-Bundle.zip",
+      "bytes": 58996079,
+      "sha256": "6920d68e2070e7b66dc4193a059f3adf2115539ef3e67e7417d1c1207fb4053b",
+      "url": "https://downloads.appsbyonzy.dev/OpenBareMap/amalfi-bay-of-naples/2.0.0/app-bundles-v1/ios/OpenBareMap-Amalfi-Bay-of-Naples-iOS-Bundle.zip"
+    },
+    {
       "bytes": 101855589,
       "path": "releases/balearic-islands/2.0.0/app-bundles-v1/android/OpenBareMap-Balearic-Islands-Android-Bundle.zip",
       "sha256": "4e126f59e9c705eeb1cc1025cd0f3fa72b84eb78f79fe8ec950cb6f9cd81d13e",
@@ -469,14 +487,14 @@
       "url": "https://downloads.appsbyonzy.dev/OpenBareMap/balearic-islands/2.0.0/app-bundles-v1/ios/OpenBareMap-Balearic-Islands-iOS-Bundle.zip"
     },
     {
-      "path": "releases/camino-frances/2.0.0/app-bundles-v1/android/OpenBareMap-Camino-Frances-Android-Bundle.zip",
       "bytes": 193878110,
+      "path": "releases/camino-frances/2.0.0/app-bundles-v1/android/OpenBareMap-Camino-Frances-Android-Bundle.zip",
       "sha256": "f6de666b03d35afffbc5abfc4edc9bfeb72c1a8adebe5c6d7d414a85257ed2f7",
       "url": "https://downloads.appsbyonzy.dev/OpenBareMap/camino-frances/2.0.0/app-bundles-v1/android/OpenBareMap-Camino-Frances-Android-Bundle.zip"
     },
     {
-      "path": "releases/camino-frances/2.0.0/app-bundles-v1/ios/OpenBareMap-Camino-Frances-iOS-Bundle.zip",
       "bytes": 193880157,
+      "path": "releases/camino-frances/2.0.0/app-bundles-v1/ios/OpenBareMap-Camino-Frances-iOS-Bundle.zip",
       "sha256": "a3d182ee67de0e5d0224efd82daea64cb802460add5097bbbd86695c0943dcbc",
       "url": "https://downloads.appsbyonzy.dev/OpenBareMap/camino-frances/2.0.0/app-bundles-v1/ios/OpenBareMap-Camino-Frances-iOS-Bundle.zip"
     },
@@ -529,14 +547,14 @@
       "url": "https://downloads.appsbyonzy.dev/OpenBareMap/canary-islands/2.0.0/app-bundles-v1/ios/OpenBareMap-Canary-Islands-iOS-Bundle.zip"
     },
     {
-      "path": "releases/cinque-terre/2.0.0/app-bundles-v1/android/OpenBareMap-Cinque-Terre-Portofino-Android-Bundle.zip",
       "bytes": 73463671,
+      "path": "releases/cinque-terre/2.0.0/app-bundles-v1/android/OpenBareMap-Cinque-Terre-Portofino-Android-Bundle.zip",
       "sha256": "5618a908c9908912e0bf07a5f7f06ec75f15e81c659c0d86ac0283aef2bc8218",
       "url": "https://downloads.appsbyonzy.dev/OpenBareMap/cinque-terre/2.0.0/app-bundles-v1/android/OpenBareMap-Cinque-Terre-Portofino-Android-Bundle.zip"
     },
     {
-      "path": "releases/cinque-terre/2.0.0/app-bundles-v1/ios/OpenBareMap-Cinque-Terre-Portofino-iOS-Bundle.zip",
       "bytes": 73464092,
+      "path": "releases/cinque-terre/2.0.0/app-bundles-v1/ios/OpenBareMap-Cinque-Terre-Portofino-iOS-Bundle.zip",
       "sha256": "0a20c94b6ca2f3aeb231e2f32fbe13c1bd741114e08933efd737240b9df3ac9c",
       "url": "https://downloads.appsbyonzy.dev/OpenBareMap/cinque-terre/2.0.0/app-bundles-v1/ios/OpenBareMap-Cinque-Terre-Portofino-iOS-Bundle.zip"
     },

@@ -5,6 +5,7 @@
     "alps-east": "2.0.1",
     "alps-tyrol-bavaria": "2.0.1",
     "alps-west": "2.0.1",
+    "amalfi-bay-of-naples": "2.0.0",
     "balearic-islands": "2.0.0",
     "camino-frances": "2.0.0",
     "canadian-rockies-banff": "2.0.0",
@@ -325,6 +326,76 @@
         "r2Key": "OpenBareMap/alps-west/2.0.1/app-bundles-v1/ios/OpenBareMap-Alps-West-iOS-Bundle.zip",
         "sha256": "7bde33e445fa983476b571b4fc2c3ba18b2bb30e2b3a60e6bde19c89b3afc728",
         "url": "https://downloads.appsbyonzy.dev/OpenBareMap/alps-west/2.0.1/app-bundles-v1/ios/OpenBareMap-Alps-West-iOS-Bundle.zip"
+      }
+    },
+    "amalfi-bay-of-naples": {
+      "android": {
+        "bytes": 58995643,
+        "datasets": {
+          "basemap": {
+            "path": "maps/basemap.mbtiles",
+            "sha256": "89e20fd9b76228c4a56c3b272889caa426a532f457cc8b3062dc5b2b2f1dbd7a"
+          },
+          "coast": {
+            "derivedFrom": "22aec46171b1dfe251faec877c477487b56b5b200ed2bbce9ec1b3b1b0c41848",
+            "path": "maps/coast.mbtiles",
+            "sha256": "c7fb00554150625786e3b70b9688e292132f64d30c30617bec3b7d5afeea9c30"
+          },
+          "grid": {
+            "path": "maps/grid.mbtiles",
+            "sha256": "ea130f7e1b3fbd7f62ef2d8f5272a776d5441053eed6c5c7f4e8b2e737aeadda"
+          },
+          "hillshade": {
+            "path": "maps/hillshade.mbtiles",
+            "sha256": "8ad2443ed2dbce48063b747c29e491bdd6c8a1a72099850223bda671f74c0068"
+          },
+          "topography": {
+            "path": "maps/topography.mbtiles",
+            "sha256": "22aec46171b1dfe251faec877c477487b56b5b200ed2bbce9ec1b3b1b0c41848"
+          }
+        },
+        "instructionsSHA256": "445ef326b357e89282aa97c9cdeefa44624522cce668bf6ca578b2a1744e7d93",
+        "instructionsURL": "https://downloads.appsbyonzy.dev/OpenBareMap/amalfi-bay-of-naples/2.0.0/app-bundles-v1/android/instructions.txt",
+        "localPath": "releases/amalfi-bay-of-naples/2.0.0/app-bundles-v1/android/OpenBareMap-Amalfi-Bay-of-Naples-Android-Bundle.zip",
+        "mapManifestSHA256": "5622e95626e1c5fa6dfb4f3477656bff8e9a30c154125e3adf4c489129b37e0d",
+        "r2Key": "OpenBareMap/amalfi-bay-of-naples/2.0.0/app-bundles-v1/android/OpenBareMap-Amalfi-Bay-of-Naples-Android-Bundle.zip",
+        "sha256": "db2d9f3afef1352091cc9c78f986f3b4481b011660fc6142dc1fbd665fe1a560",
+        "url": "https://downloads.appsbyonzy.dev/OpenBareMap/amalfi-bay-of-naples/2.0.0/app-bundles-v1/android/OpenBareMap-Amalfi-Bay-of-Naples-Android-Bundle.zip"
+      },
+      "ios": {
+        "bytes": 58996079,
+        "datasets": {
+          "basemap": {
+            "path": "maps/basemap.mbtiles",
+            "sha256": "89e20fd9b76228c4a56c3b272889caa426a532f457cc8b3062dc5b2b2f1dbd7a"
+          },
+          "coast": {
+            "derived_from": "22aec46171b1dfe251faec877c477487b56b5b200ed2bbce9ec1b3b1b0c41848",
+            "maxzoom": 12,
+            "operation": "Preserve land-layer MVT bytes only through zoom 12; omit other layers.",
+            "path": "maps/coast.mbtiles",
+            "sha256": "c7fb00554150625786e3b70b9688e292132f64d30c30617bec3b7d5afeea9c30"
+          },
+          "grid": {
+            "path": "maps/grid.mbtiles",
+            "sha256": "ea130f7e1b3fbd7f62ef2d8f5272a776d5441053eed6c5c7f4e8b2e737aeadda"
+          },
+          "hillshade": {
+            "path": "maps/hillshade.mbtiles",
+            "sha256": "8ad2443ed2dbce48063b747c29e491bdd6c8a1a72099850223bda671f74c0068"
+          },
+          "topography": {
+            "path": "maps/topography.mbtiles",
+            "sha256": "22aec46171b1dfe251faec877c477487b56b5b200ed2bbce9ec1b3b1b0c41848"
+          }
+        },
+        "instructionsSHA256": "ccbe0217c085b95ebd779cfa9aaa8f310e2a9f44093b95696c1c04575f01436d",
+        "instructionsURL": "https://downloads.appsbyonzy.dev/OpenBareMap/amalfi-bay-of-naples/2.0.0/app-bundles-v1/ios/instructions.txt",
+        "localPath": "releases/amalfi-bay-of-naples/2.0.0/app-bundles-v1/ios/OpenBareMap-Amalfi-Bay-of-Naples-iOS-Bundle.zip",
+        "mapManifestSHA256": "541c9b68eff298bec507de04834b19f4d26ed09657926833384130cc7387f698",
+        "r2Key": "OpenBareMap/amalfi-bay-of-naples/2.0.0/app-bundles-v1/ios/OpenBareMap-Amalfi-Bay-of-Naples-iOS-Bundle.zip",
+        "sha256": "6920d68e2070e7b66dc4193a059f3adf2115539ef3e67e7417d1c1207fb4053b",
+        "url": "https://downloads.appsbyonzy.dev/OpenBareMap/amalfi-bay-of-naples/2.0.0/app-bundles-v1/ios/OpenBareMap-Amalfi-Bay-of-Naples-iOS-Bundle.zip"
       }
     },
     "balearic-islands": {

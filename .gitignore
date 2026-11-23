@@ -360,6 +360,14 @@ data/regions/norway-*/copernicus/*
 /releases/camino-frances/*/app-bundles-v1/**/*.zip
 /releases/cinque-terre/*/app-bundles-v1/**/*.zip
 
+/data/regions/amalfi-bay-of-naples/
+/regions/amalfi-bay-of-naples/exports/
+/regions/amalfi-bay-of-naples/garmin/coastal-context/
+/regions/amalfi-bay-of-naples/garmin/inputs/*.geojson.gz
+/regions/amalfi-bay-of-naples/garmin/dist/*.img
+/releases/amalfi-bay-of-naples/*/maps/
+/releases/amalfi-bay-of-naples/*/app-bundles-v1/**/*.zip
+
 # Glacier revisions are distributed from R2 under new URLs.
 /regions/*/garmin/dist/*-Glaciers.img
 /regions/*/garmin/inputs/permanent-ice.geojson.gz

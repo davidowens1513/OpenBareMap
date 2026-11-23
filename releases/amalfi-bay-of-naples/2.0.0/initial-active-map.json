@@ -1,0 +1,52 @@
+{
+  "contourIntervalMetres": 20,
+  "coverage": "The Sorrento Peninsula and Amalfi Coast through Salerno, including the Monti Lattari ridge, Monte Faito, the Path of the Gods and Valle delle Ferriere. Covers Capri, Ischia, Procida and Vivara, the Naples and Pozzuoli ferry gateways, Pompeii and Vesuvius.",
+  "datasets": {
+    "basemap": {
+      "bytes": 41357312,
+      "path": "releases/amalfi-bay-of-naples/2.0.0/maps/basemap.mbtiles",
+      "sha256": "89e20fd9b76228c4a56c3b272889caa426a532f457cc8b3062dc5b2b2f1dbd7a",
+      "validation": {
+        "empty_tile_count": 36,
+        "logical_tiles_sha256": "cb1bcc094271ebba1f7e68971c129160ac7eba442f443aca67c76949563ffdcb",
+        "tile_count": 1150
+      }
+    },
+    "grid": {
+      "bytes": 598016,
+      "path": "releases/amalfi-bay-of-naples/2.0.0/maps/grid.mbtiles",
+      "sha256": "ea130f7e1b3fbd7f62ef2d8f5272a776d5441053eed6c5c7f4e8b2e737aeadda",
+      "validation": {
+        "empty_tile_count": 0,
+        "logical_tiles_sha256": "74845184e6b4a2bf9ff891ab3764fa43d4bab19eebac698cf83a0d2ef2e18698",
+        "tile_count": 1724
+      }
+    },
+    "hillshade": {
+      "bytes": 1990656,
+      "path": "releases/amalfi-bay-of-naples/2.0.0/maps/hillshade.mbtiles",
+      "sha256": "8ad2443ed2dbce48063b747c29e491bdd6c8a1a72099850223bda671f74c0068",
+      "validation": {
+        "empty_tile_count": 0,
+        "logical_tiles_sha256": "2c8f5eb318a07b12cb3904c64bdf5de79d85e81cb926d189596d6427fd9ec4c7",
+        "tile_count": 91
+      }
+    },
+    "topography": {
+      "bytes": 10969088,
+      "path": "releases/amalfi-bay-of-naples/2.0.0/maps/topography.mbtiles",
+      "sha256": "79030328a02828f00bc17305a51d56f9c23e0634a20e518a533eba92176f03ac",
+      "validation": {
+        "empty_tile_count": 28661,
+        "logical_tiles_sha256": "eef44ba60ce7e532c4dab0e4f0419b469ff973f880b827896ce224b7ba4ea4d2",
+        "tile_count": 31183
+      }
+    }
+  },
+  "format": "openbaremap-development-viewer-v1",
+  "localBorders": false,
+  "mapVersion": "2.0.0",
+  "region": "amalfi-bay-of-naples",
+  "storageRevision": "2.0.0-amalfi-bay-of-naples-r1",
+  "styleRevision": "2.0.0-amalfi-bay-of-naples-r1"
+}

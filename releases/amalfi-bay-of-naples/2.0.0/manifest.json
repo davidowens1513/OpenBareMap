@@ -1,0 +1,106 @@
+{
+  "acceptance": "Automated checks only; see validation and visual-review records for actual reviewed scope.",
+  "coverage": "The Sorrento Peninsula and Amalfi Coast through Salerno, including the Monti Lattari ridge, Monte Faito, the Path of the Gods and Valle delle Ferriere. Covers Capri, Ischia, Procida and Vivara, the Naples and Pozzuoli ferry gateways, Pompeii and Vesuvius.",
+  "datasets": {
+    "basemap": {
+      "bytes": 41357312,
+      "path": "releases/amalfi-bay-of-naples/2.0.0/maps/basemap.mbtiles",
+      "sha256": "89e20fd9b76228c4a56c3b272889caa426a532f457cc8b3062dc5b2b2f1dbd7a",
+      "validation": {
+        "empty_tile_count": 36,
+        "logical_tiles_sha256": "cb1bcc094271ebba1f7e68971c129160ac7eba442f443aca67c76949563ffdcb",
+        "tile_count": 1150
+      }
+    },
+    "grid": {
+      "bytes": 598016,
+      "path": "releases/amalfi-bay-of-naples/2.0.0/maps/grid.mbtiles",
+      "sha256": "ea130f7e1b3fbd7f62ef2d8f5272a776d5441053eed6c5c7f4e8b2e737aeadda",
+      "validation": {
+        "empty_tile_count": 0,
+        "logical_tiles_sha256": "74845184e6b4a2bf9ff891ab3764fa43d4bab19eebac698cf83a0d2ef2e18698",
+        "tile_count": 1724
+      }
+    },
+    "hillshade": {
+      "bytes": 1990656,
+      "path": "releases/amalfi-bay-of-naples/2.0.0/maps/hillshade.mbtiles",
+      "sha256": "8ad2443ed2dbce48063b747c29e491bdd6c8a1a72099850223bda671f74c0068",
+      "validation": {
+        "empty_tile_count": 0,
+        "logical_tiles_sha256": "2c8f5eb318a07b12cb3904c64bdf5de79d85e81cb926d189596d6427fd9ec4c7",
+        "tile_count": 91
+      }
+    },
+    "topography": {
+      "bytes": 10903552,
+      "path": "releases/amalfi-bay-of-naples/2.0.0/maps/topography-context.mbtiles",
+      "sha256": "22aec46171b1dfe251faec877c477487b56b5b200ed2bbce9ec1b3b1b0c41848",
+      "validation": {
+        "empty_tile_count": 28661,
+        "logical_tiles_sha256": "eef44ba60ce7e532c4dab0e4f0419b469ff973f880b827896ce224b7ba4ea4d2",
+        "tile_count": 31183
+      }
+    }
+  },
+  "garmin": {
+    "bytes": 13868032,
+    "path": "regions/amalfi-bay-of-naples/garmin/dist/OpenBareMap-Amalfi-Bay-of-Naples.img",
+    "sha256": "c1d6081ef72f4c8c4b99245930b2785235df9b84e2d607928d7217cd223e4635"
+  },
+  "geometryReport": {
+    "path": "releases/amalfi-bay-of-naples/2.0.0/build-records/amalfi-bay-of-naples-geometry/geometry-report.json",
+    "sha256": "dbb96b3ee8cd3da7e9a6895b609aa641b75a82c39dedd154625e5b4d653753b5"
+  },
+  "hostAppsModified": false,
+  "mapVersion": "2.0.0",
+  "osm": {
+    "bytes": 33979266,
+    "operation": "Complete-feature bbox extraction with nested relation references",
+    "path": "data/regions/amalfi-bay-of-naples/sud-261122.osm.clipped.osm.pbf",
+    "replicationTimestamp": "2026-11-22T21:20:48Z",
+    "sha256": "c521b7cef17572814f24e64fbc471709795ceee6745700fca1267e34f14883b7",
+    "snapshot_date": "2026-11-22",
+    "url": "https://download.geofabrik.de/europe/italy/sud/sud-261122.osm.pbf"
+  },
+  "packages": {
+    "android": {
+      "archive": {
+        "bytes": 58967164,
+        "path": "regions/amalfi-bay-of-naples/android/OpenBareMap-Android.zip",
+        "sha256": "be32bd0cbb245c893f7853f29f1516a3bb6a26da3d4042ff00230ae0061df155"
+      },
+      "checksumsSHA256": "de2ab3190beffac7417a00c372866f39684ca5a735acb574b9818fbd7cf8a7c3",
+      "manifestSHA256": "5622e95626e1c5fa6dfb4f3477656bff8e9a30c154125e3adf4c489129b37e0d",
+      "path": "regions/amalfi-bay-of-naples/android",
+      "validationSHA256": "491e86cbbdf41db79699bb5e935208956714a029f0531fcff7180bb9ac1a5b08"
+    },
+    "ios": {
+      "checksumsSHA256": "0fe5e8cbcb82fc2b889f3a0da7437f42d6d014d827d74355225edcf06849a94a",
+      "manifestSHA256": "541c9b68eff298bec507de04834b19f4d26ed09657926833384130cc7387f698",
+      "path": "regions/amalfi-bay-of-naples/ios",
+      "validationSHA256": "aafe997d7e6f9fa5e23c97f211b45a3e42c3f080c695ff5e6a10fde097260334"
+    }
+  },
+  "pythonRuntime": {
+    "packages": {
+      "Pillow": "12.3.0",
+      "certifi": "2026.10.23",
+      "charset-normalizer": "3.5.2",
+      "idna": "3.20",
+      "numpy": "2.5.4",
+      "osmium": "4.3.2",
+      "pyproj": "3.8.0",
+      "requests": "2.34.2",
+      "shapely": "2.2.0",
+      "urllib3": "2.8.0"
+    },
+    "platform": "macOS-27.2.1-arm64-arm-64bit-Mach-O",
+    "python": "3.14.5 (main, May 10 2026, 10:21:34) [Clang 21.0.0 (clang-2100.0.123.102)]",
+    "requirementsSHA256": "427f12ff8b49bfebac0a7d453c2f65bd15d6695584b18e6ecee1fdfeed20a36c"
+  },
+  "region": "amalfi-bay-of-naples",
+  "styleSHA256": "cc18c66c1892b1fcd56e7d72e3993e272585461138827dd61612541f5937e31b",
+  "terrainLockSHA256": "f17191332f8f93755d764adb09fc98360adbb2608feab1a3ee1c3d9ee8d240f4",
+  "validation": "validation.json"
+}

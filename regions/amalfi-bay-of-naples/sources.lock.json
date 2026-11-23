@@ -1,0 +1,29 @@
+{
+  "accessed_utc": "2026-11-23T14:12:45.078432+00:00",
+  "inputs": [
+    {
+      "bytes": 424108342,
+      "path": "data/regions/amalfi-bay-of-naples/sud-261122.osm.pbf",
+      "replicationTimestamp": "2026-11-22T21:20:48Z",
+      "sha256": "11b9f26df41652e2dbe021e40ff2e50f55fc2c97d29dfa42b8420f3e7f7366d6",
+      "url": "https://download.geofabrik.de/europe/italy/sud/sud-261122.osm.pbf"
+    }
+  ],
+  "osm": {
+    "bytes": 33979266,
+    "operation": "Complete-feature bbox extraction with nested relation references",
+    "path": "data/regions/amalfi-bay-of-naples/sud-261122.osm.clipped.osm.pbf",
+    "replicationTimestamp": "2026-11-22T21:20:48Z",
+    "sha256": "c521b7cef17572814f24e64fbc471709795ceee6745700fca1267e34f14883b7",
+    "snapshot_date": "2026-11-22",
+    "url": "https://download.geofabrik.de/europe/italy/sud/sud-261122.osm.pbf"
+  },
+  "polygons": [
+    {
+      "bytes": 1410,
+      "path": "data/regions/amalfi-bay-of-naples/sud.poly",
+      "sha256": "0aa952089c59dd862774fa53c8576c4e081fd196f8efe0e4c97ab87267850711",
+      "url": "https://download.geofabrik.de/europe/italy/sud/sud.poly"
+    }
+  ]
+}

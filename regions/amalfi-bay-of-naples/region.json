@@ -1,0 +1,349 @@
+{
+  "id": "amalfi-bay-of-naples",
+  "name": "OpenBareMap Sorrento, Amalfi & Bay of Naples",
+  "label": "Sorrento, Amalfi & Bay of Naples",
+  "mapVersion": "2.0.0",
+  "minzoom": 4,
+  "maxzoom": 14,
+  "coverage": "The Sorrento Peninsula and Amalfi Coast through Salerno, including the Monti Lattari ridge, Monte Faito, the Path of the Gods and Valle delle Ferriere. Covers Capri, Ischia, Procida and Vivara, the Naples and Pozzuoli ferry gateways, Pompeii and Vesuvius.",
+  "bounds": [
+    13.82,
+    40.49,
+    14.86,
+    40.9
+  ],
+  "terrainBounds": [
+    13,
+    40,
+    15,
+    41
+  ],
+  "coastContextBounds": [
+    12,
+    39,
+    16,
+    43
+  ],
+  "projectedCRS": "EPSG:32633",
+  "gridCRS": "EPSG:32633",
+  "gridName": "WGS 84 / UTM 33N",
+  "gridSource": "utm-grid",
+  "gridExtent": [
+    390000,
+    490000,
+    4480000,
+    4530000
+  ],
+  "townlands": false,
+  "contourIntervalMetres": 20,
+  "minorWaterwayMinzoom": 10,
+  "sourceDate": "2026-11-22",
+  "sourceSlugs": [
+    "sud"
+  ],
+  "sourceBaseURL": "https://download.geofabrik.de/europe/italy/sud/",
+  "sourceBaseOverrides": {},
+  "nativeLanguage": "it",
+  "clipSource": true,
+  "clipBasemap": true,
+  "ignoreSourceHeaderBounds": true,
+  "garminUseSourceOutline": true,
+  "garminContextBounds": [
+    13.82,
+    40.49,
+    14.86,
+    40.9
+  ],
+  "garminFamilyId": 4876,
+  "garminTileStartId": 48760001,
+  "garminFilename": "OpenBareMap-Amalfi-Bay-of-Naples.img",
+  "garminPackageRevision": "2.0.1-trail-detail-r1",
+  "styleRevision": "2.0.0-amalfi-bay-of-naples-r1",
+  "requireBogFeatures": false,
+  "inspectionNames": [
+    "Sorrento",
+    "Amalfi",
+    "Ischia"
+  ],
+  "optionalBasemapLayers": [
+    "island_name",
+    "cycling_route",
+    "railway",
+    "station",
+    "hiking_route",
+    "boundary"
+  ],
+  "terrainProvider": "copernicus-glo30",
+  "terrainAttribution": "Copernicus DEM GLO-30 · European Union / ESA · DLR / Airbus",
+  "terrainNotice": "Sorrento, Amalfi and Bay of Naples elevation: Copernicus DEM GLO-30 Public (AWS 2021 release).\n\nproduced using Copernicus WorldDEM-30 © DLR e.V. 2010-2014 and © Airbus Defence and Space GmbH 2014-2018 provided under COPERNICUS by the European Union and ESA; all rights reserved\n\nThe organisations in charge of the Copernicus programme by law or by delegation do not incur any liability for any use of the Copernicus WorldDEM-30.\n\nLicense: https://dataspace.copernicus.eu/sites/default/files/media/files/2025-06/copernicus_contributing_mission_data_access_v2_cop_dem_licenses.pdf\nSource: https://registry.opendata.aws/copernicus-dem/\nVertical datum: EGM2008 orthometric metres. Native approximately 30 m cells are bilinearly resampled to point-aligned Int16 HGT for the shared terrain pipeline. Ocean-only cells absent from the official public inventory are zero.\n",
+  "labelGlyphs": "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyzÀÈÉÌÒÙàèéìòù",
+  "destinations": {
+    "island": [
+      14.33,
+      40.7,
+      10
+    ],
+    "naples": [
+      14.2583,
+      40.8413,
+      13
+    ],
+    "pozzuoli": [
+      14.0892,
+      40.8244,
+      13
+    ],
+    "ischia": [
+      13.9453,
+      40.7409,
+      13
+    ],
+    "monte-epomeo": [
+      13.903,
+      40.731,
+      13
+    ],
+    "procida": [
+      14.0243,
+      40.7608,
+      13
+    ],
+    "vivara": [
+      13.993248,
+      40.743422,
+      13
+    ],
+    "capri": [
+      14.2429,
+      40.5505,
+      13
+    ],
+    "anacapri": [
+      14.2207,
+      40.555,
+      13
+    ],
+    "sorrento": [
+      14.3758,
+      40.6265,
+      13
+    ],
+    "punta-campanella": [
+      14.3253,
+      40.5689,
+      13
+    ],
+    "positano": [
+      14.486,
+      40.6307,
+      13
+    ],
+    "path-of-the-gods": [
+      14.5245,
+      40.6295,
+      13
+    ],
+    "agerola": [
+      14.5394,
+      40.6421,
+      13
+    ],
+    "amalfi": [
+      14.6027,
+      40.6345,
+      13
+    ],
+    "valle-delle-ferriere": [
+      14.5935,
+      40.6503,
+      13
+    ],
+    "ravello": [
+      14.6115,
+      40.6492,
+      13
+    ],
+    "monte-faito": [
+      14.4879,
+      40.6614,
+      13
+    ],
+    "vietri-sul-mare": [
+      14.7277,
+      40.6711,
+      13
+    ],
+    "salerno": [
+      14.7665,
+      40.6742,
+      13
+    ],
+    "pompeii": [
+      14.4849,
+      40.7507,
+      13
+    ],
+    "vesuvius": [
+      14.4289,
+      40.8214,
+      13
+    ]
+  },
+  "destinationLabels": {
+    "island": "Sorrento, Amalfi & Bay of Naples",
+    "naples": "Naples",
+    "pozzuoli": "Pozzuoli",
+    "ischia": "Ischia",
+    "monte-epomeo": "Monte Epomeo",
+    "procida": "Procida",
+    "vivara": "Vivara",
+    "capri": "Capri",
+    "anacapri": "Anacapri",
+    "sorrento": "Sorrento",
+    "punta-campanella": "Punta Campanella",
+    "positano": "Positano",
+    "path-of-the-gods": "Path of the Gods",
+    "agerola": "Agerola",
+    "amalfi": "Amalfi",
+    "valle-delle-ferriere": "Valle delle Ferriere",
+    "ravello": "Ravello",
+    "monte-faito": "Monte Faito",
+    "vietri-sul-mare": "Vietri sul Mare",
+    "salerno": "Salerno",
+    "pompeii": "Pompeii",
+    "vesuvius": "Vesuvius"
+  },
+  "validationAnchors": {
+    "naples": [
+      14.2583,
+      40.8413
+    ],
+    "pozzuoli": [
+      14.0892,
+      40.8244
+    ],
+    "ischia": [
+      13.9453,
+      40.7409
+    ],
+    "monte-epomeo": [
+      13.903,
+      40.731
+    ],
+    "procida": [
+      14.0243,
+      40.7608
+    ],
+    "vivara": [
+      13.993248,
+      40.743422
+    ],
+    "capri": [
+      14.2429,
+      40.5505
+    ],
+    "anacapri": [
+      14.2207,
+      40.555
+    ],
+    "sorrento": [
+      14.3758,
+      40.6265
+    ],
+    "punta-campanella": [
+      14.3253,
+      40.5689
+    ],
+    "positano": [
+      14.486,
+      40.6307
+    ],
+    "path-of-the-gods": [
+      14.5245,
+      40.6295
+    ],
+    "agerola": [
+      14.5394,
+      40.6421
+    ],
+    "amalfi": [
+      14.6027,
+      40.6345
+    ],
+    "valle-delle-ferriere": [
+      14.5935,
+      40.6503
+    ],
+    "ravello": [
+      14.6115,
+      40.6492
+    ],
+    "monte-faito": [
+      14.4879,
+      40.6614
+    ],
+    "vietri-sul-mare": [
+      14.7277,
+      40.6711
+    ],
+    "salerno": [
+      14.7665,
+      40.6742
+    ],
+    "pompeii": [
+      14.4849,
+      40.7507
+    ],
+    "vesuvius": [
+      14.4289,
+      40.8214
+    ]
+  },
+  "appBundleName": "Amalfi-Bay-of-Naples",
+  "sourceCacheRegion": "amalfi-bay-of-naples",
+  "clipTerrainToBounds": true,
+  "repairClippedCoastline": true,
+  "overviewLandAnchors": {
+    "Ischia hills": [
+      13.903,
+      40.731
+    ],
+    "Naples inland": [
+      14.242,
+      40.858
+    ],
+    "Sorrento ridge": [
+      14.4,
+      40.609
+    ],
+    "Lattari ridge": [
+      14.524,
+      40.654
+    ],
+    "Vesuvius": [
+      14.4289,
+      40.8214
+    ],
+    "Salerno hills": [
+      14.778,
+      40.701
+    ]
+  },
+  "islandValidationAnchors": {
+    "Capri upland": [
+      14.2218,
+      40.5463
+    ],
+    "Procida upland": [
+      14.015958,
+      40.761584
+    ],
+    "Vivara": [
+      13.993248,
+      40.743422
+    ]
+  },
+  "islandValidationZooms": [
+    12
+  ]
+}

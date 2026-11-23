@@ -1,0 +1,143 @@
+{
+  "familyId": 4876,
+  "garminPackageRevision": "2.0.1-trail-detail-r1",
+  "inspection": {
+    "anchorLabels": {
+      "Amalfi": "Amalfi",
+      "Ischia": "Ischia",
+      "Sorrento": "Sorrento"
+    },
+    "bounds": [
+      13.819942474365234,
+      40.48994064331055,
+      14.860038757324219,
+      40.90003967285156
+    ],
+    "coastPolygonsByLevel": {
+      "0": {
+        "0x32": 6,
+        "0x54": 366
+      },
+      "1": {
+        "0x32": 6,
+        "0x54": 180
+      },
+      "2": {
+        "0x32": 6,
+        "0x54": 108
+      },
+      "3": {
+        "0x32": 6,
+        "0x54": 31
+      },
+      "4": {
+        "0x32": 6,
+        "0x54": 15
+      }
+    },
+    "contoursByLevel": {
+      "0": {
+        "0x20": 5617,
+        "0x22": 1008
+      },
+      "1": {
+        "0x20": 4671,
+        "0x22": 787
+      },
+      "2": {
+        "0x22": 732
+      },
+      "3": {
+        "0x10008": 667
+      },
+      "4": {}
+    },
+    "lineInstancesAtHighestDetail": {
+      "0x1": 778,
+      "0x10001": 919,
+      "0x10003": 27,
+      "0x10004": 86,
+      "0x10005": 4073,
+      "0x10006": 577,
+      "0x1000b": 901,
+      "0x14": 1823,
+      "0x16": 18545,
+      "0x18": 865,
+      "0x1a": 92,
+      "0x1c": 400,
+      "0x1e": 438,
+      "0x1f": 45,
+      "0x2": 628,
+      "0x20": 5617,
+      "0x22": 1008,
+      "0x3": 756,
+      "0x4": 1724,
+      "0x6": 25102,
+      "0x7": 21627,
+      "0xa": 2716
+    },
+    "logicalCombinedSHA256": "a5632b6c87a0f20677cd434183cfde37691cd165c8d979cac422f8fbcc5bf0e4",
+    "logicalHashNote": "Internal file names, sizes and payloads; only CommonHeader creation-date bytes 14..20 are zeroed for hashing. IMG archive headers are excluded. Output bytes are never modified.",
+    "logicalTileSHA256": {
+      "48760001.img": "bcd9d16a2fc24dc7b58b5979c04f836ad2ccf7c2fe81cb5d996cd30564da08b4",
+      "48760002.img": "65115d96819caa53856ccfe866c81c5eab3e4898cd939be2a550c617b4b0d62f",
+      "48760003.img": "e08ece6609be715e3a577b8e1b2cee9ae9d38387c53665a6c7b876a9ed0bb0c7",
+      "48760004.img": "94b96da68cb57d342edadfd8604ccee8d4ec8d67c2f560b7cebd474d7b5e9693",
+      "48760005.img": "76405817a4fb5fb6e50c33bd6a374b14aa8a95571a27c6841e8d219117dcdc71",
+      "48760006.img": "372c514b91437628b08d7c71c2217b3293ed837b6dba00e1513be7f0ca78ed3a"
+    },
+    "pointInstancesAtHighestDetail": {
+      "0x100": 2,
+      "0x10001": 220,
+      "0x10002": 536,
+      "0x10003": 1193,
+      "0x10004": 208,
+      "0x10006": 18939,
+      "0x2f0b": 3849,
+      "0x600": 55,
+      "0x650c": 137,
+      "0x6603": 36,
+      "0x6615": 24,
+      "0x6616": 214,
+      "0x800": 146,
+      "0xb00": 301,
+      "0xc00": 568
+    },
+    "polygonInstancesAtHighestDetail": {
+      "0x10101": 5446,
+      "0x10102": 3650,
+      "0x10103": 680,
+      "0x10104": 1454,
+      "0x10105": 287,
+      "0x10106": 8,
+      "0x10107": 1,
+      "0x10109": 525,
+      "0x1010a": 84,
+      "0x1010b": 4,
+      "0x13": 263409,
+      "0x32": 6,
+      "0x3c": 350,
+      "0x50": 2004,
+      "0x51": 4,
+      "0x54": 366
+    },
+    "routing": false,
+    "subfileBytes": {
+      "DEM": 1667129,
+      "LBL": 631013,
+      "MPS": 674,
+      "RGN": 11390951,
+      "SRT": 912,
+      "TRE": 122144,
+      "TYP": 2982
+    },
+    "tiles": 6
+  },
+  "output": {
+    "bytes": 13868032,
+    "path": "regions/amalfi-bay-of-naples/garmin/dist/OpenBareMap-Amalfi-Bay-of-Naples.img",
+    "sha256": "c1d6081ef72f4c8c4b99245930b2785235df9b84e2d607928d7217cd223e4635"
+  },
+  "routing": false,
+  "status": "compiled and structurally inspected; hardware rendering pending"
+}

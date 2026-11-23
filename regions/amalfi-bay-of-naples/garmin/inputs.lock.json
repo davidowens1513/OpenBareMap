@@ -1,0 +1,20 @@
+{
+  "inputs": [
+    {
+      "path": "regions/amalfi-bay-of-naples/garmin/inputs/contours.geojson.gz",
+      "sha256": "9b3977eb94e5c3ee79a8622ead9ce61634cf4b38b65813fc1a53a3d3a8982b60",
+      "uncompressedSHA256": "698ff2c0ebdc810c18a214286c7ad06ed31c43114af129ffa2591e7dd70f886a"
+    },
+    {
+      "path": "regions/amalfi-bay-of-naples/garmin/inputs/landcover.geojson.gz",
+      "sha256": "45d14ae379d6f11227e6b69b58312539c1fcdd86d30559cfda312a2dc7f188eb",
+      "uncompressedSHA256": "7f31a143229a623a42690a41e9f01d773d551f6fd31d598ec26d9d0c953a801d"
+    },
+    {
+      "path": "regions/amalfi-bay-of-naples/garmin/inputs/land.geojson.gz",
+      "sha256": "c2d26e27e465ee1d30eac866f179899fbc25b1aad5620e0dacac3db223399e3f",
+      "uncompressedSHA256": "d976abbeabca617ffddcf6e2458f87a4e15978d33b503cccb8a69e56e579cbb6"
+    }
+  ],
+  "region": "amalfi-bay-of-naples"
+}

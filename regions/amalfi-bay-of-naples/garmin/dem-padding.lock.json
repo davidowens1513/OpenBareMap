@@ -1,0 +1,424 @@
+{
+  "accessed_utc": "2026-11-23T14:01:20.259280+00:00",
+  "assets": [
+    {
+      "bytes": 25239,
+      "operation": "Zero ocean cell: no tile in the pinned official GLO-30 public inventory",
+      "path": "data/regions/amalfi-bay-of-naples/elevation/N39E012.hgt.gz",
+      "sha256": "ef878716b82ba575fc448ca49fae2f720981192a09f3cb94ba95a759e62e0767",
+      "url": null
+    },
+    {
+      "bytes": 25239,
+      "operation": "Zero ocean cell: no tile in the pinned official GLO-30 public inventory",
+      "path": "data/regions/amalfi-bay-of-naples/elevation/N39E013.hgt.gz",
+      "sha256": "ef878716b82ba575fc448ca49fae2f720981192a09f3cb94ba95a759e62e0767",
+      "url": null
+    },
+    {
+      "bytes": 25239,
+      "operation": "Zero ocean cell: no tile in the pinned official GLO-30 public inventory",
+      "path": "data/regions/amalfi-bay-of-naples/elevation/N39E014.hgt.gz",
+      "sha256": "ef878716b82ba575fc448ca49fae2f720981192a09f3cb94ba95a759e62e0767",
+      "url": null
+    },
+    {
+      "bytes": 1760697,
+      "operation": "Bilinear resampling of Copernicus GLO-30 to point-aligned Int16 HGT, EGM2008 heights",
+      "path": "data/regions/amalfi-bay-of-naples/elevation/N39E015.hgt.gz",
+      "sha256": "818b2a0dddb3d0f9d886ef40eac53128e26d03fdcbac550d22f2b97de4922890",
+      "url": null
+    },
+    {
+      "bytes": 43178,
+      "operation": "Bilinear resampling of Copernicus GLO-30 to point-aligned Int16 HGT, EGM2008 heights",
+      "path": "data/regions/amalfi-bay-of-naples/elevation/N40E012.hgt.gz",
+      "sha256": "c17bfb9e2d5786bf10cabc10fe7c021c24db0d551370e6595edc1476de0b9546",
+      "url": null
+    },
+    {
+      "bytes": 13523988,
+      "operation": "Bilinear resampling of Copernicus GLO-30 to point-aligned Int16 HGT, EGM2008 heights",
+      "path": "data/regions/amalfi-bay-of-naples/elevation/N40E015.hgt.gz",
+      "sha256": "99bde2b03fa11a77eb06cec9e497507bf99dbe03addc4b3736640df1bd8b6751",
+      "url": null
+    },
+    {
+      "bytes": 3917893,
+      "operation": "Bilinear resampling of Copernicus GLO-30 to point-aligned Int16 HGT, EGM2008 heights",
+      "path": "data/regions/amalfi-bay-of-naples/elevation/N41E012.hgt.gz",
+      "sha256": "e27a0a014e94897d882458380f155046b9fcb06d625285b1e56083a9cc7025e5",
+      "url": null
+    },
+    {
+      "bytes": 10780520,
+      "operation": "Bilinear resampling of Copernicus GLO-30 to point-aligned Int16 HGT, EGM2008 heights",
+      "path": "data/regions/amalfi-bay-of-naples/elevation/N41E013.hgt.gz",
+      "sha256": "ae3eabfb49cc7af9642f97f4b15d072ffecb9ad4fa92c74415b8be2d85923868",
+      "url": null
+    },
+    {
+      "bytes": 13227796,
+      "operation": "Bilinear resampling of Copernicus GLO-30 to point-aligned Int16 HGT, EGM2008 heights",
+      "path": "data/regions/amalfi-bay-of-naples/elevation/N41E014.hgt.gz",
+      "sha256": "7902e8e36a667d4fb4605e04abf4a8718622bbc9638cbe237454f958bb553577",
+      "url": null
+    },
+    {
+      "bytes": 8138971,
+      "operation": "Bilinear resampling of Copernicus GLO-30 to point-aligned Int16 HGT, EGM2008 heights",
+      "path": "data/regions/amalfi-bay-of-naples/elevation/N41E015.hgt.gz",
+      "sha256": "234e0c33ef5b1593782c53c35d6a0d632aad1de96e806cd034fa58782e08033a",
+      "url": null
+    }
+  ],
+  "commands": [
+    [
+      "/Applications/QGIS.app/Contents/MacOS/gdalbuildvrt",
+      "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-Copernicus-a4wpgkfb/source.vrt",
+      "/Volumes/Extreme SSD/Projects/OpenBareMap/data/regions/amalfi-bay-of-naples/copernicus/Copernicus_DSM_COG_10_N39_00_E015_00_DEM.tif",
+      "/Volumes/Extreme SSD/Projects/OpenBareMap/data/regions/amalfi-bay-of-naples/copernicus/Copernicus_DSM_COG_10_N40_00_E012_00_DEM.tif",
+      "/Volumes/Extreme SSD/Projects/OpenBareMap/data/regions/amalfi-bay-of-naples/copernicus/Copernicus_DSM_COG_10_N40_00_E015_00_DEM.tif",
+      "/Volumes/Extreme SSD/Projects/OpenBareMap/data/regions/amalfi-bay-of-naples/copernicus/Copernicus_DSM_COG_10_N41_00_E012_00_DEM.tif",
+      "/Volumes/Extreme SSD/Projects/OpenBareMap/data/regions/amalfi-bay-of-naples/copernicus/Copernicus_DSM_COG_10_N41_00_E013_00_DEM.tif",
+      "/Volumes/Extreme SSD/Projects/OpenBareMap/data/regions/amalfi-bay-of-naples/copernicus/Copernicus_DSM_COG_10_N41_00_E014_00_DEM.tif",
+      "/Volumes/Extreme SSD/Projects/OpenBareMap/data/regions/amalfi-bay-of-naples/copernicus/Copernicus_DSM_COG_10_N41_00_E015_00_DEM.tif"
+    ],
+    [
+      "/Applications/QGIS.app/Contents/MacOS/gdalwarp",
+      "-q",
+      "-overwrite",
+      "-of",
+      "GTiff",
+      "-ot",
+      "Int16",
+      "-t_srs",
+      "EPSG:4326",
+      "-te",
+      "14.99986111111111",
+      "38.99986111111111",
+      "16.000138888888888",
+      "40.00013888888889",
+      "-ts",
+      "3601",
+      "3601",
+      "-r",
+      "bilinear",
+      "-dstnodata",
+      "0",
+      "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-Copernicus-a4wpgkfb/source.vrt",
+      "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-Copernicus-a4wpgkfb/N39E015.hgt.tif"
+    ],
+    [
+      "/Applications/QGIS.app/Contents/MacOS/gdal_translate",
+      "-q",
+      "-of",
+      "SRTMHGT",
+      "-a_nodata",
+      "-32768",
+      "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-Copernicus-a4wpgkfb/N39E015.hgt.tif",
+      "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-Copernicus-a4wpgkfb/N39E015.hgt"
+    ],
+    [
+      "/Applications/QGIS.app/Contents/MacOS/gdalwarp",
+      "-q",
+      "-overwrite",
+      "-of",
+      "GTiff",
+      "-ot",
+      "Int16",
+      "-t_srs",
+      "EPSG:4326",
+      "-te",
+      "11.99986111111111",
+      "39.99986111111111",
+      "13.00013888888889",
+      "41.00013888888889",
+      "-ts",
+      "3601",
+      "3601",
+      "-r",
+      "bilinear",
+      "-dstnodata",
+      "0",
+      "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-Copernicus-a4wpgkfb/source.vrt",
+      "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-Copernicus-a4wpgkfb/N40E012.hgt.tif"
+    ],
+    [
+      "/Applications/QGIS.app/Contents/MacOS/gdal_translate",
+      "-q",
+      "-of",
+      "SRTMHGT",
+      "-a_nodata",
+      "-32768",
+      "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-Copernicus-a4wpgkfb/N40E012.hgt.tif",
+      "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-Copernicus-a4wpgkfb/N40E012.hgt"
+    ],
+    [
+      "/Applications/QGIS.app/Contents/MacOS/gdalwarp",
+      "-q",
+      "-overwrite",
+      "-of",
+      "GTiff",
+      "-ot",
+      "Int16",
+      "-t_srs",
+      "EPSG:4326",
+      "-te",
+      "14.99986111111111",
+      "39.99986111111111",
+      "16.000138888888888",
+      "41.00013888888889",
+      "-ts",
+      "3601",
+      "3601",
+      "-r",
+      "bilinear",
+      "-dstnodata",
+      "0",
+      "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-Copernicus-a4wpgkfb/source.vrt",
+      "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-Copernicus-a4wpgkfb/N40E015.hgt.tif"
+    ],
+    [
+      "/Applications/QGIS.app/Contents/MacOS/gdal_translate",
+      "-q",
+      "-of",
+      "SRTMHGT",
+      "-a_nodata",
+      "-32768",
+      "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-Copernicus-a4wpgkfb/N40E015.hgt.tif",
+      "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-Copernicus-a4wpgkfb/N40E015.hgt"
+    ],
+    [
+      "/Applications/QGIS.app/Contents/MacOS/gdalwarp",
+      "-q",
+      "-overwrite",
+      "-of",
+      "GTiff",
+      "-ot",
+      "Int16",
+      "-t_srs",
+      "EPSG:4326",
+      "-te",
+      "11.99986111111111",
+      "40.99986111111111",
+      "13.00013888888889",
+      "42.00013888888889",
+      "-ts",
+      "3601",
+      "3601",
+      "-r",
+      "bilinear",
+      "-dstnodata",
+      "0",
+      "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-Copernicus-a4wpgkfb/source.vrt",
+      "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-Copernicus-a4wpgkfb/N41E012.hgt.tif"
+    ],
+    [
+      "/Applications/QGIS.app/Contents/MacOS/gdal_translate",
+      "-q",
+      "-of",
+      "SRTMHGT",
+      "-a_nodata",
+      "-32768",
+      "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-Copernicus-a4wpgkfb/N41E012.hgt.tif",
+      "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-Copernicus-a4wpgkfb/N41E012.hgt"
+    ],
+    [
+      "/Applications/QGIS.app/Contents/MacOS/gdalwarp",
+      "-q",
+      "-overwrite",
+      "-of",
+      "GTiff",
+      "-ot",
+      "Int16",
+      "-t_srs",
+      "EPSG:4326",
+      "-te",
+      "12.99986111111111",
+      "40.99986111111111",
+      "14.00013888888889",
+      "42.00013888888889",
+      "-ts",
+      "3601",
+      "3601",
+      "-r",
+      "bilinear",
+      "-dstnodata",
+      "0",
+      "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-Copernicus-a4wpgkfb/source.vrt",
+      "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-Copernicus-a4wpgkfb/N41E013.hgt.tif"
+    ],
+    [
+      "/Applications/QGIS.app/Contents/MacOS/gdal_translate",
+      "-q",
+      "-of",
+      "SRTMHGT",
+      "-a_nodata",
+      "-32768",
+      "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-Copernicus-a4wpgkfb/N41E013.hgt.tif",
+      "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-Copernicus-a4wpgkfb/N41E013.hgt"
+    ],
+    [
+      "/Applications/QGIS.app/Contents/MacOS/gdalwarp",
+      "-q",
+      "-overwrite",
+      "-of",
+      "GTiff",
+      "-ot",
+      "Int16",
+      "-t_srs",
+      "EPSG:4326",
+      "-te",
+      "13.99986111111111",
+      "40.99986111111111",
+      "15.00013888888889",
+      "42.00013888888889",
+      "-ts",
+      "3601",
+      "3601",
+      "-r",
+      "bilinear",
+      "-dstnodata",
+      "0",
+      "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-Copernicus-a4wpgkfb/source.vrt",
+      "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-Copernicus-a4wpgkfb/N41E014.hgt.tif"
+    ],
+    [
+      "/Applications/QGIS.app/Contents/MacOS/gdal_translate",
+      "-q",
+      "-of",
+      "SRTMHGT",
+      "-a_nodata",
+      "-32768",
+      "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-Copernicus-a4wpgkfb/N41E014.hgt.tif",
+      "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-Copernicus-a4wpgkfb/N41E014.hgt"
+    ],
+    [
+      "/Applications/QGIS.app/Contents/MacOS/gdalwarp",
+      "-q",
+      "-overwrite",
+      "-of",
+      "GTiff",
+      "-ot",
+      "Int16",
+      "-t_srs",
+      "EPSG:4326",
+      "-te",
+      "14.99986111111111",
+      "40.99986111111111",
+      "16.000138888888888",
+      "42.00013888888889",
+      "-ts",
+      "3601",
+      "3601",
+      "-r",
+      "bilinear",
+      "-dstnodata",
+      "0",
+      "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-Copernicus-a4wpgkfb/source.vrt",
+      "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-Copernicus-a4wpgkfb/N41E015.hgt.tif"
+    ],
+    [
+      "/Applications/QGIS.app/Contents/MacOS/gdal_translate",
+      "-q",
+      "-of",
+      "SRTMHGT",
+      "-a_nodata",
+      "-32768",
+      "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-Copernicus-a4wpgkfb/N41E015.hgt.tif",
+      "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-Copernicus-a4wpgkfb/N41E015.hgt"
+    ]
+  ],
+  "coverage": [
+    12,
+    39,
+    16,
+    42
+  ],
+  "dataset": "Copernicus DEM GLO-30 Public, AWS 2021 release",
+  "grid": "3601 by 3601 signed 16-bit point-aligned HGT cells; ocean cells zero",
+  "oceanCellReview": [
+    {
+      "cell": "N39E012.hgt",
+      "coastalLandSHA256": "883116ee5eb2d0447e8c4ddec308dee332be9b10c9fcd5e3e498a25f71c06ed9",
+      "landIntersectionSquareDegrees": 0
+    },
+    {
+      "cell": "N39E013.hgt",
+      "coastalLandSHA256": "883116ee5eb2d0447e8c4ddec308dee332be9b10c9fcd5e3e498a25f71c06ed9",
+      "landIntersectionSquareDegrees": 0
+    },
+    {
+      "cell": "N39E014.hgt",
+      "coastalLandSHA256": "883116ee5eb2d0447e8c4ddec308dee332be9b10c9fcd5e3e498a25f71c06ed9",
+      "landIntersectionSquareDegrees": 0
+    }
+  ],
+  "sourceAssets": [
+    {
+      "bytes": 1110900,
+      "path": "data/regions/amalfi-bay-of-naples/copernicus/tileList.txt",
+      "sha256": "10604e3052c98a09e9216f1a8f0a555a04148419757575f783d4937fd44316dc",
+      "url": "https://copernicus-dem-30m.s3.amazonaws.com/tileList.txt"
+    },
+    {
+      "bytes": 4853196,
+      "path": "data/regions/amalfi-bay-of-naples/copernicus/Copernicus_DSM_COG_10_N39_00_E015_00_DEM.tif",
+      "sha256": "408f43f816fe83c9140ed73b969d9702c3fa5ea9e6c5f390fec46f264d291de4",
+      "url": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N39_00_E015_00_DEM/Copernicus_DSM_COG_10_N39_00_E015_00_DEM.tif"
+    },
+    {
+      "bytes": 165864,
+      "path": "data/regions/amalfi-bay-of-naples/copernicus/Copernicus_DSM_COG_10_N40_00_E012_00_DEM.tif",
+      "sha256": "8c8bee12141d879cbe4e75e2263645799ffe2eb883d6fe2b6b32cf00a446827f",
+      "url": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N40_00_E012_00_DEM/Copernicus_DSM_COG_10_N40_00_E012_00_DEM.tif"
+    },
+    {
+      "bytes": 41874558,
+      "path": "data/regions/amalfi-bay-of-naples/copernicus/Copernicus_DSM_COG_10_N40_00_E015_00_DEM.tif",
+      "sha256": "f613992bb8450c296715142c534c522b2d5fac965b389b1ae9dc4208d0f8730b",
+      "url": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N40_00_E015_00_DEM/Copernicus_DSM_COG_10_N40_00_E015_00_DEM.tif"
+    },
+    {
+      "bytes": 19111660,
+      "path": "data/regions/amalfi-bay-of-naples/copernicus/Copernicus_DSM_COG_10_N41_00_E012_00_DEM.tif",
+      "sha256": "6bb6f0bf79085f0daab26318341959f239856c1f82d55e49f651c2c9d355eb6e",
+      "url": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N41_00_E012_00_DEM/Copernicus_DSM_COG_10_N41_00_E012_00_DEM.tif"
+    },
+    {
+      "bytes": 36000875,
+      "path": "data/regions/amalfi-bay-of-naples/copernicus/Copernicus_DSM_COG_10_N41_00_E013_00_DEM.tif",
+      "sha256": "54e7c72ff95cd1fc355d7d4db457d4ce0ac056bfc2d32da9ee333ba3f83201ce",
+      "url": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N41_00_E013_00_DEM/Copernicus_DSM_COG_10_N41_00_E013_00_DEM.tif"
+    },
+    {
+      "bytes": 44782496,
+      "path": "data/regions/amalfi-bay-of-naples/copernicus/Copernicus_DSM_COG_10_N41_00_E014_00_DEM.tif",
+      "sha256": "9b55c7b93765400bcfd90212f2a61e3e0deb830bef85bb871d00de91a0968025",
+      "url": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N41_00_E014_00_DEM/Copernicus_DSM_COG_10_N41_00_E014_00_DEM.tif"
+    },
+    {
+      "bytes": 40030502,
+      "path": "data/regions/amalfi-bay-of-naples/copernicus/Copernicus_DSM_COG_10_N41_00_E015_00_DEM.tif",
+      "sha256": "6f9552702f1fb8d87d4f77ad632e25d7ed075694fa2ad4bafb0f10d47117b810",
+      "url": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N41_00_E015_00_DEM/Copernicus_DSM_COG_10_N41_00_E015_00_DEM.tif"
+    }
+  ],
+  "sourceDocumentation": "https://registry.opendata.aws/copernicus-dem/",
+  "toolchain": {
+    "gdal_translate": {
+      "path": "/Applications/QGIS.app/Contents/MacOS/gdal_translate",
+      "sha256": "20bee1aad39868f3aa506312cad8415bbe12fa004cbf75b27114f527178b632a"
+    },
+    "gdalbuildvrt": {
+      "path": "/Applications/QGIS.app/Contents/MacOS/gdalbuildvrt",
+      "sha256": "5694fb873506db8342bedbf18635fe6d3dbf97971dc25f2ea7f94ff4f6f77b30"
+    },
+    "gdalwarp": {
+      "path": "/Applications/QGIS.app/Contents/MacOS/gdalwarp",
+      "sha256": "da68256b5787bd76d876a409fd452cc8290be13c6f28aece569242682a003057"
+    }
+  },
+  "verticalDatum": "EGM2008 orthometric metres"
+}

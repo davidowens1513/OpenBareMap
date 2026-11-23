@@ -1,0 +1,46 @@
+{
+  "areaSquareDegrees": 0.4263999999999961,
+  "bounds": [
+    13.82,
+    40.49,
+    14.86,
+    40.9
+  ],
+  "entireRequestedFootprintCovered": true,
+  "exactFootprint": null,
+  "inputs": [
+    {
+      "bytes": 1410,
+      "path": "data/regions/amalfi-bay-of-naples/sud.poly",
+      "sha256": "0aa952089c59dd862774fa53c8576c4e081fd196f8efe0e4c97ab87267850711",
+      "url": "https://download.geofabrik.de/europe/italy/sud/sud.poly"
+    }
+  ],
+  "knownDestinationsCovered": [
+    "island",
+    "naples",
+    "pozzuoli",
+    "ischia",
+    "monte-epomeo",
+    "procida",
+    "vivara",
+    "capri",
+    "anacapri",
+    "sorrento",
+    "punta-campanella",
+    "positano",
+    "path-of-the-gods",
+    "agerola",
+    "amalfi",
+    "valle-delle-ferriere",
+    "ravello",
+    "monte-faito",
+    "vietri-sul-mare",
+    "salerno",
+    "pompeii",
+    "vesuvius"
+  ],
+  "operation": "Requested rectangular crop; source outlines cover all destination anchors",
+  "polygons": 1,
+  "sha256": "7f2d8f57893e0f47c2f652e6a523a7107c59cd77794dd8db9a85273be4e482fd"
+}

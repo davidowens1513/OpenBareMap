@@ -1,0 +1,43 @@
+{
+  "features": [
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              13.82,
+              40.58734905777778
+            ],
+            [
+              13.82,
+              40.9
+            ],
+            [
+              14.86,
+              40.9
+            ],
+            [
+              14.86,
+              40.49
+            ],
+            [
+              13.957412409033873,
+              40.49
+            ],
+            [
+              13.82,
+              40.58734905777778
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "properties": {
+        "purpose": "Limit opaque native background and land-cover polygons; retain complete accepted OSM and terrain inputs",
+        "region": "amalfi-bay-of-naples"
+      },
+      "type": "Feature"
+    }
+  ],
+  "type": "FeatureCollection"
+}

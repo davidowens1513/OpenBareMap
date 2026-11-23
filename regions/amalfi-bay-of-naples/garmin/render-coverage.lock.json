@@ -1,0 +1,118 @@
+{
+  "bounds": [
+    13.82,
+    40.49,
+    14.86,
+    40.9
+  ],
+  "contextEnvelope": [
+    13.82,
+    40.49,
+    14.86,
+    40.9
+  ],
+  "drawPriority": 25,
+  "format": "openbaremap-garmin-render-footprint-v1",
+  "geometry": {
+    "bytes": 858,
+    "path": "regions/amalfi-bay-of-naples/garmin/render-coverage.geojson",
+    "sha256": "7fa600a07279dddd1fa3d2a85cb85dd2a83e269be2b5f5db6fa2a20e50407a42"
+  },
+  "inputs": [
+    {
+      "bytes": 1410,
+      "path": "data/regions/amalfi-bay-of-naples/sud.poly",
+      "sha256": "0aa952089c59dd862774fa53c8576c4e081fd196f8efe0e4c97ab87267850711",
+      "url": "https://download.geofabrik.de/europe/italy/sud/sud.poly"
+    }
+  ],
+  "knownDestinationsCovered": {
+    "agerola": [
+      14.5394,
+      40.6421
+    ],
+    "amalfi": [
+      14.6027,
+      40.6345
+    ],
+    "anacapri": [
+      14.2207,
+      40.555
+    ],
+    "capri": [
+      14.2429,
+      40.5505
+    ],
+    "ischia": [
+      13.9453,
+      40.7409
+    ],
+    "monte-epomeo": [
+      13.903,
+      40.731
+    ],
+    "monte-faito": [
+      14.4879,
+      40.6614
+    ],
+    "naples": [
+      14.2583,
+      40.8413
+    ],
+    "path-of-the-gods": [
+      14.5245,
+      40.6295
+    ],
+    "pompeii": [
+      14.4849,
+      40.7507
+    ],
+    "positano": [
+      14.486,
+      40.6307
+    ],
+    "pozzuoli": [
+      14.0892,
+      40.8244
+    ],
+    "procida": [
+      14.0243,
+      40.7608
+    ],
+    "punta-campanella": [
+      14.3253,
+      40.5689
+    ],
+    "ravello": [
+      14.6115,
+      40.6492
+    ],
+    "salerno": [
+      14.7665,
+      40.6742
+    ],
+    "sorrento": [
+      14.3758,
+      40.6265
+    ],
+    "valle-delle-ferriere": [
+      14.5935,
+      40.6503
+    ],
+    "vesuvius": [
+      14.4289,
+      40.8214
+    ],
+    "vietri-sul-mare": [
+      14.7277,
+      40.6711
+    ],
+    "vivara": [
+      13.993248,
+      40.743422
+    ]
+  },
+  "purpose": "Rectangular Garmin tiles may overlap other countries. Do not fill their padding with sea, land or land-cover polygons.",
+  "region": "amalfi-bay-of-naples",
+  "transparentNativeMap": true
+}

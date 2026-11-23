@@ -1,0 +1,41 @@
+{
+  "regions": {
+    "amalfi-bay-of-naples": {
+      "basemap": {
+        "sourceSHA256": "89e20fd9b76228c4a56c3b272889caa426a532f457cc8b3062dc5b2b2f1dbd7a",
+        "bytes": 40648192,
+        "sha256": "f683d6bb6710cb97aa63683cb8bd30d3092392000fe3f73a0bbb5397adb01818",
+        "tiles": 1150
+      },
+      "grid": {
+        "sourceSHA256": "ea130f7e1b3fbd7f62ef2d8f5272a776d5441053eed6c5c7f4e8b2e737aeadda",
+        "bytes": 500146,
+        "sha256": "e13c87f20136bb093788ec3a6d8ff4adc866180aea3275a026be2675b8fa30e7",
+        "tiles": 1724
+      },
+      "hillshade": {
+        "sourceSHA256": "8ad2443ed2dbce48063b747c29e491bdd6c8a1a72099850223bda671f74c0068",
+        "bytes": 1906446,
+        "sha256": "dd41b4b8f3d0bb70d5b5e32879d477c72a0586b100c9c853d382101a30985325",
+        "tiles": 91
+      },
+      "topography": {
+        "sourceSHA256": "22aec46171b1dfe251faec877c477487b56b5b200ed2bbce9ec1b3b1b0c41848",
+        "bytes": 8669701,
+        "sha256": "a6b06aa189c1a7f9f779a16c4b92f024f3ecccacb1538a6b1c9d640c36709301",
+        "tiles": 31183
+      },
+      "coast": {
+        "sourceSHA256": "c7fb00554150625786e3b70b9688e292132f64d30c30617bec3b7d5afeea9c30",
+        "bytes": 293415,
+        "sha256": "e105a497057d28b72c3931a615df5aa27ea2554f419781556db882898890577f",
+        "tiles": 2128
+      }
+    }
+  },
+  "pmtilesPython": "3.8.1",
+  "pmtilesJS": "4.5.0",
+  "librarySHA256": "caf981bc46f6327ee7e65d5dc964d89d38a69f60edca2bd4c5c890c21b554c6c",
+  "dataOrigin": "https://downloads.appsbyonzy.dev/OpenBareMap/amalfi-bay-of-naples/2.0.0/preview",
+  "scope": "Complete selected map tiles; no regional or zoom sampling."
+}

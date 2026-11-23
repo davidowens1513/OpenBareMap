@@ -1,0 +1,34 @@
+{
+  "builderSHA256": "9039f8d039efd698c5994f5506a47e7758221d81e897d7bcef3a8329b9e1be2a",
+  "contoursSourceSHA256": "2b1b10d7159c029159649781d87a53f2c86942630a607f9c9769c1b94c6d8423",
+  "counts": {
+    "contours": 4849,
+    "grid": {
+      "grid_10km": 17,
+      "grid_1km": 152
+    },
+    "landcover": {
+      "empty_source_areas": [],
+      "features": 12639,
+      "retained": 1965,
+      "smoothed": 10674
+    }
+  },
+  "osm": {
+    "bytes": 33979266,
+    "operation": "Complete-feature bbox extraction with nested relation references",
+    "path": "data/regions/amalfi-bay-of-naples/sud-261122.osm.clipped.osm.pbf",
+    "replicationTimestamp": "2026-11-22T21:20:48Z",
+    "sha256": "c521b7cef17572814f24e64fbc471709795ceee6745700fca1267e34f14883b7",
+    "snapshot_date": "2026-11-22",
+    "url": "https://download.geofabrik.de/europe/italy/sud/sud-261122.osm.pbf"
+  },
+  "outputs": {
+    "contours.geojson": "698ff2c0ebdc810c18a214286c7ad06ed31c43114af129ffa2591e7dd70f886a",
+    "grid_10km.geojson": "29471b6f0de31f12fd730b4fe0b81f04634ad53a27c2dd4eeab3426d3039f9c0",
+    "grid_1km.geojson": "52d9e4b212aede9a4a7fdfd7571737d8deda32deae3a0c53bfe5c85578338f65",
+    "landcover.geojson": "7f31a143229a623a42690a41e9f01d773d551f6fd31d598ec26d9d0c953a801d"
+  },
+  "region": "amalfi-bay-of-naples",
+  "smootherSHA256": "7581d024dc1c1bec931642c7201db149bf64a64c814c451fa8bf37a0881ea6c9"
+}
