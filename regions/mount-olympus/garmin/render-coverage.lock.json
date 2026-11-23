@@ -1,0 +1,54 @@
+{
+  "bounds": [
+    22.22,
+    39.92,
+    22.69,
+    40.2
+  ],
+  "contextEnvelope": [
+    22.22,
+    39.92,
+    22.69,
+    40.2
+  ],
+  "drawPriority": 25,
+  "format": "openbaremap-garmin-render-footprint-v1",
+  "geometry": {
+    "bytes": 744,
+    "path": "regions/mount-olympus/garmin/render-coverage.geojson",
+    "sha256": "84935c7a3883d7919faf20d776edbcc5c7d51e0f261ab6a6035a17cd85ff42dd"
+  },
+  "inputs": [
+    {
+      "bytes": 12694,
+      "path": "data/regions/mount-olympus/greece.poly",
+      "sha256": "037f2c4c8babbe9d34998ab9022f68d751151a8bb079709cd97cf5cbaaadde0f",
+      "url": "https://download.geofabrik.de/europe/greece/greece.poly"
+    }
+  ],
+  "knownDestinationsCovered": {
+    "dion": [
+      22.486,
+      40.172
+    ],
+    "litochoro": [
+      22.503,
+      40.103
+    ],
+    "muses-plateau": [
+      22.37,
+      40.095
+    ],
+    "mytikas": [
+      22.358,
+      40.086
+    ],
+    "prionia": [
+      22.406,
+      40.084
+    ]
+  },
+  "purpose": "Rectangular Garmin tiles may overlap other countries. Do not fill their padding with sea, land or land-cover polygons.",
+  "region": "mount-olympus",
+  "transparentNativeMap": true
+}

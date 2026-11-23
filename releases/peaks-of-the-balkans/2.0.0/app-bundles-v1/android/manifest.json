@@ -1,0 +1,33 @@
+{
+  "bytes": 88918198,
+  "datasets": {
+    "basemap": {
+      "path": "maps/basemap.mbtiles",
+      "sha256": "8ea365a1e4157ed84bb23dcc94aa6fb3e0aac9cb3f5673202a304956c9af9b83"
+    },
+    "coast": {
+      "derivedFrom": "7eaee48f5c137d63d7ae54f8ed859d1a17645c431d8207895d5ee4f7acc57317",
+      "path": "maps/coast.mbtiles",
+      "sha256": "7e43cec51066ff482df45ce44236596655e43d1d6cd01a4b31cd9866738e3148"
+    },
+    "grid": {
+      "path": "maps/grid.mbtiles",
+      "sha256": "fd336b882347cebe90181b4fce5b71ef0a7a28bd49ee4ed314930e4e06db2bee"
+    },
+    "hillshade": {
+      "path": "maps/hillshade.mbtiles",
+      "sha256": "0574306b0eeec448c05a92cc66b5a6e647c323545664d263e2725aa82778a1bb"
+    },
+    "topography": {
+      "path": "maps/topography.mbtiles",
+      "sha256": "7eaee48f5c137d63d7ae54f8ed859d1a17645c431d8207895d5ee4f7acc57317"
+    }
+  },
+  "instructionsSHA256": "01dc8ebf68a72757417ac79b311cf62544abf4297384e5758341274c866c6ee7",
+  "instructionsURL": "https://downloads.appsbyonzy.dev/OpenBareMap/peaks-of-the-balkans/2.0.0/app-bundles-v1/android/instructions.txt",
+  "localPath": "releases/peaks-of-the-balkans/2.0.0/app-bundles-v1/android/OpenBareMap-Peaks-of-the-Balkans-Android-Bundle.zip",
+  "mapManifestSHA256": "79f186c9e2f86876f88367948a82dbfe9f925cf2aac643d2449c4401eec42710",
+  "r2Key": "OpenBareMap/peaks-of-the-balkans/2.0.0/app-bundles-v1/android/OpenBareMap-Peaks-of-the-Balkans-Android-Bundle.zip",
+  "sha256": "633ad2e21cdfeba494e21554c02b82af3dfcb8e0d5a4bbe5fabd589712107565",
+  "url": "https://downloads.appsbyonzy.dev/OpenBareMap/peaks-of-the-balkans/2.0.0/app-bundles-v1/android/OpenBareMap-Peaks-of-the-Balkans-Android-Bundle.zip"
+}

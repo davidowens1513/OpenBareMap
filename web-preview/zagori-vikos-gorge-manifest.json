@@ -1,0 +1,41 @@
+{
+  "regions": {
+    "zagori-vikos-gorge": {
+      "basemap": {
+        "sourceSHA256": "bcef3b749f9f5c6bff51708b97f90e6efc3387895d1f2492bb6340491ff351a8",
+        "bytes": 6973944,
+        "sha256": "9dc2adad953fbecc429085efa1985bb8a06f7a449ad8d58baf8f34987c737980",
+        "tiles": 706
+      },
+      "grid": {
+        "sourceSHA256": "8ffe6c5c5e3e0b0025bdbe5f1ad4bc173fd375f886ab44b16d8ccc46936e5fc6",
+        "bytes": 196484,
+        "sha256": "b6c0e3662fbed7b7909116899235905643b37ca3f41af7e0b1cc3fe0045ea0be",
+        "tiles": 693
+      },
+      "hillshade": {
+        "sourceSHA256": "4c99e814168e0af0cb783f7bb20d732a8adeedaa0541f7422230561417b3a0e1",
+        "bytes": 2227285,
+        "sha256": "93f6cded9bd0f8e0c5bc1ae6f679e9401d65839da872abc5e0b3ecfbbae1461c",
+        "tiles": 73
+      },
+      "topography": {
+        "sourceSHA256": "c3636973c0b79e066e3344fb65086364613cf0dad7726b17277189f064888106",
+        "bytes": 15003844,
+        "sha256": "ea699040d1011580730c7be66efb34b01bf1ea761702064930954b668386cc36",
+        "tiles": 47883
+      },
+      "coast": {
+        "sourceSHA256": "64f06c5fc7e07c6883040af61d0e5de26cbdb6b6e6c0097a8ed59eba5d3d88f8",
+        "bytes": 769746,
+        "sha256": "ce3ede74fb0371a33f315b78f889900a88c0252cf7f7798cda7bc2ef2962303e",
+        "tiles": 3167
+      }
+    }
+  },
+  "pmtilesPython": "3.8.1",
+  "pmtilesJS": "4.5.0",
+  "librarySHA256": "caf981bc46f6327ee7e65d5dc964d89d38a69f60edca2bd4c5c890c21b554c6c",
+  "dataOrigin": "https://downloads.appsbyonzy.dev/OpenBareMap/zagori-vikos-gorge/2.0.0/preview",
+  "scope": "Complete selected map tiles; no regional or zoom sampling."
+}

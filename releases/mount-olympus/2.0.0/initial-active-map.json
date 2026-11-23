@@ -1,0 +1,52 @@
+{
+  "contourIntervalMetres": 20,
+  "coverage": "Mount Olympus and its trailhead approaches, including Litochoro, Enipeas Gorge, Prionia, Mytikas and the Muses Plateau.",
+  "datasets": {
+    "basemap": {
+      "bytes": 4546560,
+      "path": "releases/mount-olympus/2.0.0/maps/basemap.mbtiles",
+      "sha256": "90120660266b748b4bebe8316a55f5dbdac75c01979781c66f5244b7ec8c2f04",
+      "validation": {
+        "empty_tile_count": 6,
+        "logical_tiles_sha256": "410040b837f0718aba054e95b5e6bee5dd55924a73976c8e83fa4bdf4930c458",
+        "tile_count": 517
+      }
+    },
+    "grid": {
+      "bytes": 212992,
+      "path": "releases/mount-olympus/2.0.0/maps/grid.mbtiles",
+      "sha256": "070dd8e1f63659a1b5f460673dd3ee32a720c44d681742ca2c4d34db89b49c37",
+      "validation": {
+        "empty_tile_count": 0,
+        "logical_tiles_sha256": "2f5cec079d39b3a5c90c8b4bae6c24f5884a7ef5fbec76ce59b32a10eae61176",
+        "tile_count": 555
+      }
+    },
+    "hillshade": {
+      "bytes": 1343488,
+      "path": "releases/mount-olympus/2.0.0/maps/hillshade.mbtiles",
+      "sha256": "1c3f461838204de464127376631bd3ff5269a79b32595146a4a921fab2ec8988",
+      "validation": {
+        "empty_tile_count": 0,
+        "logical_tiles_sha256": "b94b649e4dc28acc8ff2308acc06db467eb0281408a073d52ac54a22c8d55114",
+        "tile_count": 48
+      }
+    },
+    "topography": {
+      "bytes": 10690560,
+      "path": "releases/mount-olympus/2.0.0/maps/topography.mbtiles",
+      "sha256": "2843917f6e84129d3e3c40500033d0bae601329b856c4ea8b0b996d0308da944",
+      "validation": {
+        "empty_tile_count": 38357,
+        "logical_tiles_sha256": "dce23a1123eb5dc06977baf778e295515d082aa35fba4902df679a1a07e55968",
+        "tile_count": 41390
+      }
+    }
+  },
+  "format": "openbaremap-development-viewer-v1",
+  "localBorders": false,
+  "mapVersion": "2.0.0",
+  "region": "mount-olympus",
+  "storageRevision": "2.0.0-mount-olympus-r1",
+  "styleRevision": "2.0.0-mount-olympus-r1"
+}

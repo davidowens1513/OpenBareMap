@@ -177,6 +177,36 @@ done
 python3 scripts/stage_iberian_caminos_azores.py --website /path/to/AppsByOnzy-Website/site/index.html
 ```
 
+## Balkans walking editions
+
+| Edition | Coverage | OSM snapshot | Garmin family |
+| --- | --- | --- | --- |
+| Peaks of the Balkans | Albania, Montenegro and Kosovo around the full cross-border circuit | 22 November 2026 | 4886 |
+| Durmitor | Žabljak, Black Lake, Bobotov Kuk, Sedlo and the Tara Canyon bridge | 22 November 2026 | 4887 |
+| Zagori & Vikos Gorge | Zagori villages, Vikos Gorge, Tymfi and the upper Aoos valley | 17 November 2026 | 4888 |
+| Mount Olympus | Litochoro, Enipeas Gorge, Prionia, Mytikas and refuge approaches | 17 November 2026 | 4889 |
+| Menalon Trail | The eight mapped stages from Stemnitsa to Lagkadia and the Lousios Gorge | 17 November 2026 | 4890 |
+
+All five editions use ETRS89 / UTM 34N, Copernicus GLO-30 and
+20 m contours. They share cached OSM and terrain sources and have
+separate iOS, Android, Garmin and web preview packages. Peaks of
+the Balkans merges all three extracts with complete feature references.
+The website groups the five editions with the existing Lycian Way.
+
+```sh
+export PYTHONPATH=work/python
+python3 scripts/prepare_balkans_editions.py
+for edition in peaks-of-the-balkans durmitor zagori-vikos-gorge mount-olympus menalon-trail; do
+  output="work/$edition-release"
+  python3 scripts/run_full_region.py --region "$edition" || exit
+  python3 scripts/build_app_distribution.py --regions "$edition" \
+    --output "$output/kits" --catalog "$output/catalog.json" || exit
+  python3 scripts/build_web_previews.py --regions "$edition" --output "$output/preview" \
+    --origin "https://downloads.appsbyonzy.dev/OpenBareMap/$edition/2.0.0/preview" || exit
+done
+python3 scripts/stage_balkans_editions.py --website /path/to/AppsByOnzy-Website/site/index.html
+```
+
 ## Nepal trekking
 
 The Nepal maps use a shared 22 November 2026 Geofabrik OpenStreetMap extract,

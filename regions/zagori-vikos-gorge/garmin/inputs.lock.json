@@ -1,0 +1,20 @@
+{
+  "inputs": [
+    {
+      "path": "regions/zagori-vikos-gorge/garmin/inputs/contours.geojson.gz",
+      "sha256": "35a14995e9cd54cb5a800597b93ef53e300ebb6005b459ed654e75400163f42b",
+      "uncompressedSHA256": "ee1c121f04497b91c1b9829f8c7c7e4db133081547ff7b4bc569f018c3157a74"
+    },
+    {
+      "path": "regions/zagori-vikos-gorge/garmin/inputs/landcover.geojson.gz",
+      "sha256": "0a4a397f7eac70ede169e4ac1708cff44d4e5f27b2a893e69bb3c3dcaa9dbe10",
+      "uncompressedSHA256": "91408a5842afe5c725d5198f6966a632f481522880a6d4684eec8159979c63dc"
+    },
+    {
+      "path": "regions/zagori-vikos-gorge/garmin/inputs/land.geojson.gz",
+      "sha256": "d4cd2110e5c2277706ad14984178e5fb26e41ed37583fd20b66a92d4a8c088d2",
+      "uncompressedSHA256": "41f6eddbea9e4fda7e9c5af87eb778d6e402f8ca150f49e8fa99d20225ca64a5"
+    }
+  ],
+  "region": "zagori-vikos-gorge"
+}

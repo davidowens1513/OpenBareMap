@@ -1,0 +1,78 @@
+{
+  "bounds": [
+    19.52,
+    42.25,
+    20.39,
+    42.81
+  ],
+  "contextEnvelope": [
+    19.52,
+    42.25,
+    20.39,
+    42.81
+  ],
+  "drawPriority": 25,
+  "format": "openbaremap-garmin-render-footprint-v1",
+  "geometry": {
+    "bytes": 1036,
+    "path": "regions/peaks-of-the-balkans/garmin/render-coverage.geojson",
+    "sha256": "c44cab7a1cc97228a55c53fcbb28de03fb283b6fef62de089dcbd87073ceb455"
+  },
+  "inputs": [
+    {
+      "bytes": 9780,
+      "path": "data/regions/peaks-of-the-balkans/albania.poly",
+      "sha256": "2902604dc74bdfcd918a915223ef35541c11f62e54830e3190126be1dade0162",
+      "url": "https://download.geofabrik.de/europe/albania/albania.poly"
+    },
+    {
+      "bytes": 5099,
+      "path": "data/regions/peaks-of-the-balkans/montenegro.poly",
+      "sha256": "5b8871aa68125e4918b9e9676e5f1d7578b88e6c0aa26971c1fbf162fabad92e",
+      "url": "https://download.geofabrik.de/europe/montenegro/montenegro.poly"
+    },
+    {
+      "bytes": 4727,
+      "path": "data/regions/peaks-of-the-balkans/kosovo.poly",
+      "sha256": "b4c60ac384cb1c4fd9925feeb88718a5c95aa0b9c1cd25138cfb0c7f4a034170",
+      "url": "https://download.geofabrik.de/europe/kosovo/kosovo.poly"
+    }
+  ],
+  "knownDestinationsCovered": {
+    "cerem": [
+      19.985,
+      42.489
+    ],
+    "doberdol": [
+      20.06,
+      42.549
+    ],
+    "gusinje": [
+      19.833,
+      42.562
+    ],
+    "peje": [
+      20.289,
+      42.659
+    ],
+    "plav": [
+      19.945,
+      42.596
+    ],
+    "reka-e-allages": [
+      20.178,
+      42.695
+    ],
+    "theth": [
+      19.769,
+      42.395
+    ],
+    "valbona": [
+      19.889,
+      42.452
+    ]
+  },
+  "purpose": "Rectangular Garmin tiles may overlap other countries. Do not fill their padding with sea, land or land-cover polygons.",
+  "region": "peaks-of-the-balkans",
+  "transparentNativeMap": true
+}

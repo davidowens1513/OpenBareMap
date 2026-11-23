@@ -1,0 +1,51 @@
+{
+  "features": [
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              20.266013947754498,
+              42.8086331170681
+            ],
+            [
+              20.26631671009772,
+              42.81
+            ],
+            [
+              20.39,
+              42.81
+            ],
+            [
+              20.39,
+              42.25
+            ],
+            [
+              19.52,
+              42.25
+            ],
+            [
+              19.52,
+              42.81
+            ],
+            [
+              20.265893721244925,
+              42.81
+            ],
+            [
+              20.266013947754498,
+              42.8086331170681
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "properties": {
+        "purpose": "Limit opaque native background and land-cover polygons; retain complete accepted OSM and terrain inputs",
+        "region": "peaks-of-the-balkans"
+      },
+      "type": "Feature"
+    }
+  ],
+  "type": "FeatureCollection"
+}

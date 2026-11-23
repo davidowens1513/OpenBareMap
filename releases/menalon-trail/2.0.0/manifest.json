@@ -1,0 +1,106 @@
+{
+  "acceptance": "Automated checks only; see validation and visual-review records for actual reviewed scope.",
+  "coverage": "The eight stages of the Menalon Trail from Stemnitsa to Lagkadia, with the Lousios Gorge and the surrounding Arcadian village paths.",
+  "datasets": {
+    "basemap": {
+      "bytes": 4313088,
+      "path": "releases/menalon-trail/2.0.0/maps/basemap.mbtiles",
+      "sha256": "b89caa8cb5ed7059f61f30ba50c33a629080257cd25e5077adedcadf15385bed",
+      "validation": {
+        "empty_tile_count": 0,
+        "logical_tiles_sha256": "c536e6ba15a888e1da05118d70af71d5729188a5a3c1b375f12b76e5d099ef45",
+        "tile_count": 539
+      }
+    },
+    "grid": {
+      "bytes": 200704,
+      "path": "releases/menalon-trail/2.0.0/maps/grid.mbtiles",
+      "sha256": "463900288824bf6f52d9f7b860536edf18f7b70259a9e8df60cd571f2d65f6f3",
+      "validation": {
+        "empty_tile_count": 0,
+        "logical_tiles_sha256": "511d98b8cd4527931f9dd463df5b8f0b739bf03bc402919032227aef5c66fb5a",
+        "tile_count": 531
+      }
+    },
+    "hillshade": {
+      "bytes": 1720320,
+      "path": "releases/menalon-trail/2.0.0/maps/hillshade.mbtiles",
+      "sha256": "f61117883c5728985726b73f069f3f2d08efb537093d04cf64868293ab1fdc0d",
+      "validation": {
+        "empty_tile_count": 0,
+        "logical_tiles_sha256": "b7cd32eba90a493cd191fd9fac7dd69b8a74ba8cbe514c89fb544151e6253a21",
+        "tile_count": 48
+      }
+    },
+    "topography": {
+      "bytes": 11935744,
+      "path": "releases/menalon-trail/2.0.0/maps/topography-context.mbtiles",
+      "sha256": "62e47b2b489fb0e2386ca1f324c6c79bcb2a8461a8a1167c0188af5ba92ffcc6",
+      "validation": {
+        "empty_tile_count": 22259,
+        "logical_tiles_sha256": "d58ca69689506680e5b61e1b4e4ae9eb8b71dc09b602b744cb9ce87f0c5bff96",
+        "tile_count": 24217
+      }
+    }
+  },
+  "garmin": {
+    "bytes": 4028416,
+    "path": "regions/menalon-trail/garmin/dist/OpenBareMap-Menalon-Trail.img",
+    "sha256": "44e20c2cba7c0046a510cf4b8b8b81c5451c8bec076b2dc46878b0f621a54d30"
+  },
+  "geometryReport": {
+    "path": "build/menalon-trail-geometry/geometry-report.json",
+    "sha256": "ed58a54ca2daf4120ec48689b1509de07aeb87e38236666bf128ab7265debc28"
+  },
+  "hostAppsModified": false,
+  "mapVersion": "2.0.0",
+  "osm": {
+    "bytes": 12228278,
+    "operation": "Complete-feature bbox extraction with nested relation references",
+    "path": "data/regions/menalon-trail/greece-261117.osm.clipped.osm.pbf",
+    "replicationTimestamp": "2026-11-17T21:24:30Z",
+    "sha256": "b99b4223931382aacf40579ca1b4003090cd555341deef74d49bf2000d64ff35",
+    "snapshot_date": "2026-11-17",
+    "url": "https://download.geofabrik.de/europe/greece/greece-261117.osm.pbf"
+  },
+  "packages": {
+    "android": {
+      "archive": {
+        "bytes": 23262503,
+        "path": "regions/menalon-trail/android/OpenBareMap-Android.zip",
+        "sha256": "dce29b5de1ede47375615c89cec68a857fe5d7bbaf2c7aa32e506769a3fbb38f"
+      },
+      "checksumsSHA256": "d3ada6ba08bbd740491ac6c553aca47f1d7781b0d6693b146305f5b0339c2db7",
+      "manifestSHA256": "2a2e27901a591e2edeebb08169b0ca27c83fa2f80407dae8ebd01da1fdbfb951",
+      "path": "regions/menalon-trail/android",
+      "validationSHA256": "cdc42863f7123a4e940753597762abbc12474594b91b655ab5101fcea9a0d204"
+    },
+    "ios": {
+      "checksumsSHA256": "eaea85b57fd48ad116b7648f9870c2c999680c0dbb8d47623a378d424db35a26",
+      "manifestSHA256": "0457df6e48bed7bffe33e2ec4109ca5eb138df7c6933c89a1785e30d22fad3b5",
+      "path": "regions/menalon-trail/ios",
+      "validationSHA256": "19f0ea90efe94672d130a832b0048fc06f0da695fa3a8d90d14f53d54360717e"
+    }
+  },
+  "pythonRuntime": {
+    "packages": {
+      "Pillow": "12.3.0",
+      "certifi": "2026.10.23",
+      "charset-normalizer": "3.5.2",
+      "idna": "3.20",
+      "numpy": "2.5.4",
+      "osmium": "4.3.2",
+      "pyproj": "3.8.0",
+      "requests": "2.34.2",
+      "shapely": "2.2.0",
+      "urllib3": "2.8.0"
+    },
+    "platform": "macOS-27.2.1-arm64-arm-64bit-Mach-O",
+    "python": "3.14.5 (main, May 10 2026, 10:21:34) [Clang 21.0.0 (clang-2100.0.123.102)]",
+    "requirementsSHA256": "427f12ff8b49bfebac0a7d453c2f65bd15d6695584b18e6ecee1fdfeed20a36c"
+  },
+  "region": "menalon-trail",
+  "styleSHA256": "882ab11477338ff9eb185433c402dfc20c6e51cf2d252c46704f7126d726d2ea",
+  "terrainLockSHA256": "6d986a9404b2072212de7af59498b756bab29af4b3aec5d5d5190b38f748510c",
+  "validation": "validation.json"
+}

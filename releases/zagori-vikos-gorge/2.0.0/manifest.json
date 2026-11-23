@@ -1,0 +1,106 @@
+{
+  "acceptance": "Automated checks only; see validation and visual-review records for actual reviewed scope.",
+  "coverage": "Zagori\u2019s villages and stone bridges, Vikos Gorge, the upper Aoos valley, and the Tymfi massif.",
+  "datasets": {
+    "basemap": {
+      "bytes": 7581696,
+      "path": "releases/zagori-vikos-gorge/2.0.0/maps/basemap.mbtiles",
+      "sha256": "bcef3b749f9f5c6bff51708b97f90e6efc3387895d1f2492bb6340491ff351a8",
+      "validation": {
+        "empty_tile_count": 0,
+        "logical_tiles_sha256": "d3681022820bf28d382e578a49c4c1e4f2ceeef6ad5c173f6333e6cf6e85b2fc",
+        "tile_count": 706
+      }
+    },
+    "grid": {
+      "bytes": 245760,
+      "path": "releases/zagori-vikos-gorge/2.0.0/maps/grid.mbtiles",
+      "sha256": "8ffe6c5c5e3e0b0025bdbe5f1ad4bc173fd375f886ab44b16d8ccc46936e5fc6",
+      "validation": {
+        "empty_tile_count": 0,
+        "logical_tiles_sha256": "057b582b03ae8439cb98134f21a8b94de200f882537d1c42cbaa5d3777a814a2",
+        "tile_count": 693
+      }
+    },
+    "hillshade": {
+      "bytes": 2310144,
+      "path": "releases/zagori-vikos-gorge/2.0.0/maps/hillshade.mbtiles",
+      "sha256": "4c99e814168e0af0cb783f7bb20d732a8adeedaa0541f7422230561417b3a0e1",
+      "validation": {
+        "empty_tile_count": 0,
+        "logical_tiles_sha256": "d2c0e3740770e53975ddee1c2431e9ac44c932441ae1d6a63f2eff3bb80dc3b3",
+        "tile_count": 73
+      }
+    },
+    "topography": {
+      "bytes": 18345984,
+      "path": "releases/zagori-vikos-gorge/2.0.0/maps/topography-context.mbtiles",
+      "sha256": "c3636973c0b79e066e3344fb65086364613cf0dad7726b17277189f064888106",
+      "validation": {
+        "empty_tile_count": 44317,
+        "logical_tiles_sha256": "df1b8449ba51671a078bb402f119bd45d6f98c09463f1109eaad4e24b70ab3cb",
+        "tile_count": 47883
+      }
+    }
+  },
+  "garmin": {
+    "bytes": 5813248,
+    "path": "regions/zagori-vikos-gorge/garmin/dist/OpenBareMap-Zagori-Vikos-Gorge.img",
+    "sha256": "4d3cc426fd3792679f09335da94323c46d097e56c1ea701fbbe8c5d0d59628f0"
+  },
+  "geometryReport": {
+    "path": "build/zagori-vikos-gorge-geometry/geometry-report.json",
+    "sha256": "8dbc838fef3d3a1d5ffe9162f257d6f95a463d2fef8e625c3d2062620ce7b9ca"
+  },
+  "hostAppsModified": false,
+  "mapVersion": "2.0.0",
+  "osm": {
+    "bytes": 14767355,
+    "operation": "Complete-feature bbox extraction with nested relation references",
+    "path": "data/regions/zagori-vikos-gorge/greece-261117.osm.clipped.osm.pbf",
+    "replicationTimestamp": "2026-11-17T21:24:30Z",
+    "sha256": "c45f9616dbbc75d45b4108a4dd89a7638190514430335c23e8a7517d763dcfa3",
+    "snapshot_date": "2026-11-17",
+    "url": "https://download.geofabrik.de/europe/greece/greece-261117.osm.pbf"
+  },
+  "packages": {
+    "android": {
+      "archive": {
+        "bytes": 33272403,
+        "path": "regions/zagori-vikos-gorge/android/OpenBareMap-Android.zip",
+        "sha256": "41a70c14b5aecb5a5ca9a27ace5ff4678f95afd07d6c2daa39d92b17c78f7e62"
+      },
+      "checksumsSHA256": "3950fb8c92c5cf0c88eafa48d7e9ca34ae392ae8ad3ab401fca63f0bc5625a47",
+      "manifestSHA256": "a5fb5e0c8c92769ec8906f78f6b0ab4b7ccf9718c55e34b4359f8a9cd3477775",
+      "path": "regions/zagori-vikos-gorge/android",
+      "validationSHA256": "c345e2a4e113921f3b0b33f1c2c07ddcfc34f8c62db036fd05c56a092004298d"
+    },
+    "ios": {
+      "checksumsSHA256": "a1b519189a5d4c4be60921b37a681850838cbd4875ce2cbad9df97f8f133715f",
+      "manifestSHA256": "70a4e5607eddf4110746fec678eb9e72cd235c56680533a302acac6ea892b847",
+      "path": "regions/zagori-vikos-gorge/ios",
+      "validationSHA256": "4d590e1c0c573fdb852f5f5f5877c244059f525984527fc78508d2e24802957f"
+    }
+  },
+  "pythonRuntime": {
+    "packages": {
+      "Pillow": "12.3.0",
+      "certifi": "2026.10.23",
+      "charset-normalizer": "3.5.2",
+      "idna": "3.20",
+      "numpy": "2.5.4",
+      "osmium": "4.3.2",
+      "pyproj": "3.8.0",
+      "requests": "2.34.2",
+      "shapely": "2.2.0",
+      "urllib3": "2.8.0"
+    },
+    "platform": "macOS-27.2.1-arm64-arm-64bit-Mach-O",
+    "python": "3.14.5 (main, May 10 2026, 10:21:34) [Clang 21.0.0 (clang-2100.0.123.102)]",
+    "requirementsSHA256": "427f12ff8b49bfebac0a7d453c2f65bd15d6695584b18e6ecee1fdfeed20a36c"
+  },
+  "region": "zagori-vikos-gorge",
+  "styleSHA256": "ad6d88f2c4fe6f53a58f009633dde937b43478abdaa67e91e8965aa0cf8ec3a1",
+  "terrainLockSHA256": "d2276af957f26a703758c3654f3ff328fc392463a3ffddde2b8784ee80adec1e",
+  "validation": "validation.json"
+}

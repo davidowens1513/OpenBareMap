@@ -1,0 +1,66 @@
+{
+  "bounds": [
+    21.91,
+    37.47,
+    22.29,
+    37.82
+  ],
+  "contextEnvelope": [
+    21.91,
+    37.47,
+    22.29,
+    37.82
+  ],
+  "drawPriority": 25,
+  "format": "openbaremap-garmin-render-footprint-v1",
+  "geometry": {
+    "bytes": 746,
+    "path": "regions/menalon-trail/garmin/render-coverage.geojson",
+    "sha256": "eb9f1bed44ee1fca5f1095ced55f779bf9692e3cabc9484472c700195d91bfc0"
+  },
+  "inputs": [
+    {
+      "bytes": 12694,
+      "path": "data/regions/menalon-trail/greece.poly",
+      "sha256": "037f2c4c8babbe9d34998ab9022f68d751151a8bb079709cd97cf5cbaaadde0f",
+      "url": "https://download.geofabrik.de/europe/greece/greece.poly"
+    }
+  ],
+  "knownDestinationsCovered": {
+    "dimitsana": [
+      22.041,
+      37.596
+    ],
+    "elati": [
+      22.1491,
+      37.6268
+    ],
+    "lagkadia": [
+      22.0317,
+      37.6827
+    ],
+    "lousios-gorge": [
+      22.065,
+      37.544
+    ],
+    "magouliana": [
+      22.1268,
+      37.6779
+    ],
+    "stemnitsa": [
+      22.0831,
+      37.5561
+    ],
+    "valtetsiniko": [
+      22.0974,
+      37.7047
+    ],
+    "vytina": [
+      22.182,
+      37.669
+    ]
+  },
+  "purpose": "Rectangular Garmin tiles may overlap other countries. Do not fill their padding with sea, land or land-cover polygons.",
+  "region": "menalon-trail",
+  "transparentNativeMap": true
+}

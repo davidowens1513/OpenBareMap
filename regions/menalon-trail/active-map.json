@@ -1,0 +1,52 @@
+{
+  "contourIntervalMetres": 20,
+  "coverage": "The eight stages of the Menalon Trail from Stemnitsa to Lagkadia, with the Lousios Gorge and the surrounding Arcadian village paths.",
+  "datasets": {
+    "basemap": {
+      "bytes": 4313088,
+      "path": "releases/menalon-trail/2.0.0/maps/basemap.mbtiles",
+      "sha256": "b89caa8cb5ed7059f61f30ba50c33a629080257cd25e5077adedcadf15385bed",
+      "validation": {
+        "empty_tile_count": 0,
+        "logical_tiles_sha256": "c536e6ba15a888e1da05118d70af71d5729188a5a3c1b375f12b76e5d099ef45",
+        "tile_count": 539
+      }
+    },
+    "grid": {
+      "bytes": 200704,
+      "path": "releases/menalon-trail/2.0.0/maps/grid.mbtiles",
+      "sha256": "463900288824bf6f52d9f7b860536edf18f7b70259a9e8df60cd571f2d65f6f3",
+      "validation": {
+        "empty_tile_count": 0,
+        "logical_tiles_sha256": "511d98b8cd4527931f9dd463df5b8f0b739bf03bc402919032227aef5c66fb5a",
+        "tile_count": 531
+      }
+    },
+    "hillshade": {
+      "bytes": 1720320,
+      "path": "releases/menalon-trail/2.0.0/maps/hillshade.mbtiles",
+      "sha256": "f61117883c5728985726b73f069f3f2d08efb537093d04cf64868293ab1fdc0d",
+      "validation": {
+        "empty_tile_count": 0,
+        "logical_tiles_sha256": "b7cd32eba90a493cd191fd9fac7dd69b8a74ba8cbe514c89fb544151e6253a21",
+        "tile_count": 48
+      }
+    },
+    "topography": {
+      "bytes": 11935744,
+      "path": "releases/menalon-trail/2.0.0/maps/topography-context.mbtiles",
+      "sha256": "62e47b2b489fb0e2386ca1f324c6c79bcb2a8461a8a1167c0188af5ba92ffcc6",
+      "validation": {
+        "empty_tile_count": 22259,
+        "logical_tiles_sha256": "d58ca69689506680e5b61e1b4e4ae9eb8b71dc09b602b744cb9ce87f0c5bff96",
+        "tile_count": 24217
+      }
+    }
+  },
+  "format": "openbaremap-development-viewer-v1",
+  "localBorders": false,
+  "mapVersion": "2.0.0",
+  "region": "menalon-trail",
+  "storageRevision": "2.0.0-menalon-trail-r3",
+  "styleRevision": "2.0.0-menalon-trail-r1"
+}

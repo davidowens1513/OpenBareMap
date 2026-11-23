@@ -1,0 +1,41 @@
+{
+  "regions": {
+    "peaks-of-the-balkans": {
+      "basemap": {
+        "sourceSHA256": "8ea365a1e4157ed84bb23dcc94aa6fb3e0aac9cb3f5673202a304956c9af9b83",
+        "bytes": 31497518,
+        "sha256": "31cebb74c80f6cfd6b3c6540732a039abe53e5f3e78b6389298d8d811dd838a4",
+        "tiles": 1895
+      },
+      "grid": {
+        "sourceSHA256": "fd336b882347cebe90181b4fce5b71ef0a7a28bd49ee4ed314930e4e06db2bee",
+        "bytes": 560107,
+        "sha256": "703f45f021dc2c4b3ef023955bf37bb7c458bfa44ad0cf171d58e1c8ee143d27",
+        "tiles": 1884
+      },
+      "hillshade": {
+        "sourceSHA256": "0574306b0eeec448c05a92cc66b5a6e647c323545664d263e2725aa82778a1bb",
+        "bytes": 6322577,
+        "sha256": "fd133bac3688723315992fa3d318858173474600d93f018fd659155a28209cb8",
+        "tiles": 132
+      },
+      "topography": {
+        "sourceSHA256": "7eaee48f5c137d63d7ae54f8ed859d1a17645c431d8207895d5ee4f7acc57317",
+        "bytes": 41132381,
+        "sha256": "aec6141da4afffc157c56e3381208df89828046d5e0b794fe4fc23af6fa864da",
+        "tiles": 40927
+      },
+      "coast": {
+        "sourceSHA256": "7e43cec51066ff482df45ce44236596655e43d1d6cd01a4b31cd9866738e3148",
+        "bytes": 148290,
+        "sha256": "3878f5324c7c24a6169a10dc333b91c6bf73f4ca14e558a8d204304055282d64",
+        "tiles": 2706
+      }
+    }
+  },
+  "pmtilesPython": "3.8.1",
+  "pmtilesJS": "4.5.0",
+  "librarySHA256": "caf981bc46f6327ee7e65d5dc964d89d38a69f60edca2bd4c5c890c21b554c6c",
+  "dataOrigin": "https://downloads.appsbyonzy.dev/OpenBareMap/peaks-of-the-balkans/2.0.0/preview",
+  "scope": "Complete selected map tiles; no regional or zoom sampling."
+}

@@ -1,0 +1,315 @@
+{
+  "coverage": "Durmitor National Park and approaches, including \u017dabljak, Black Lake, Bobotov Kuk, the Sedlo trailhead and the Tara Canyon bridge.",
+  "coverageAnchors": {
+    "black-lake": {
+      "coordinate": [
+        19.088,
+        43.144
+      ],
+      "featuresInNeighbouringDetailedTiles": 1930
+    },
+    "bobotov-kuk": {
+      "coordinate": [
+        19.034,
+        43.127
+      ],
+      "featuresInNeighbouringDetailedTiles": 829
+    },
+    "sedlo": {
+      "coordinate": [
+        19.054,
+        43.1
+      ],
+      "featuresInNeighbouringDetailedTiles": 415
+    },
+    "tara-bridge": {
+      "coordinate": [
+        19.294,
+        43.15
+      ],
+      "featuresInNeighbouringDetailedTiles": 728
+    },
+    "zabljak": {
+      "coordinate": [
+        19.121,
+        43.155
+      ],
+      "featuresInNeighbouringDetailedTiles": 3647
+    }
+  },
+  "datasets": {
+    "basemap": {
+      "empty_tile_count": 0,
+      "logical_tiles_sha256": "b4d026c8f8e4f2953d93aea3634376e29bc7d8aec497406a27489e65e4d07125",
+      "tile_count": 647
+    },
+    "grid": {
+      "empty_tile_count": 0,
+      "logical_tiles_sha256": "a2091b1174e562261fe6e119828caf512770bec8b775a6a0e8df6f122a315fd9",
+      "tile_count": 632
+    },
+    "hillshade": {
+      "empty_tile_count": 0,
+      "logical_tiles_sha256": "95ae13a07e017c7d7edac2d36202079da68a560365f24455e2bff439858b63b9",
+      "tile_count": 68
+    },
+    "topography": {
+      "empty_tile_count": 40038,
+      "logical_tiles_sha256": "6c496c124012e56af42a1b8b87931b88b26d22e0d17f8c589c66a2b2a5f674d3",
+      "tile_count": 43352
+    }
+  },
+  "detail": {
+    "basemap": {
+      "boundaries": 2431,
+      "contours": 0
+    },
+    "topography": {
+      "boundaries": 0,
+      "contours": 41063
+    }
+  },
+  "garmin": {
+    "familyId": 4887,
+    "garminPackageRevision": "2.0.0-r1",
+    "inspection": {
+      "anchorLabels": {
+        "Bobotov Kuk": "Bobotov Kuk"
+      },
+      "bounds": [
+        18.869962692260742,
+        42.99997329711914,
+        19.360055923461914,
+        43.29008102416992
+      ],
+      "coastPolygonsByLevel": {
+        "0": {
+          "0x32": 2,
+          "0x54": 6
+        },
+        "1": {
+          "0x32": 2,
+          "0x54": 6
+        },
+        "2": {
+          "0x32": 2,
+          "0x54": 6
+        },
+        "3": {
+          "0x32": 2,
+          "0x54": 6
+        },
+        "4": {
+          "0x32": 2,
+          "0x54": 3
+        }
+      },
+      "contoursByLevel": {
+        "0": {
+          "0x20": 5987,
+          "0x22": 1496
+        },
+        "1": {
+          "0x20": 5088,
+          "0x22": 1271
+        },
+        "2": {
+          "0x22": 1223
+        },
+        "3": {
+          "0x10008": 1138
+        },
+        "4": {}
+      },
+      "lineInstancesAtHighestDetail": {
+        "0x10001": 77,
+        "0x10002": 195,
+        "0x10003": 3,
+        "0x10005": 22,
+        "0x10006": 21,
+        "0x1000b": 40,
+        "0x16": 624,
+        "0x18": 254,
+        "0x1c": 44,
+        "0x1e": 16,
+        "0x1f": 11,
+        "0x20": 5987,
+        "0x22": 1496,
+        "0x3": 50,
+        "0x4": 31,
+        "0x6": 792,
+        "0x7": 517,
+        "0xa": 653
+      },
+      "logicalCombinedSHA256": "7d2395f4990ab912478224f8b2891e358766766b5c06e23b9e7e595cc31d066e",
+      "logicalHashNote": "Internal file names, sizes and payloads; only CommonHeader creation-date bytes 14..20 are zeroed for hashing. IMG archive headers are excluded. Output bytes are never modified.",
+      "logicalTileSHA256": {
+        "48870001.img": "4c605a15195981ee5de76d85e1f1c42258506ed3e462cb5d00a2572afe1f5e87",
+        "48870002.img": "6d36aa71fc0c1e28860d38ff848fca53fbb4fe3f08d7cef2e1f496cdc4a3806c"
+      },
+      "pointInstancesAtHighestDetail": {
+        "0x100": 1,
+        "0x10001": 21,
+        "0x10002": 117,
+        "0x10003": 96,
+        "0x10006": 274,
+        "0x2f0b": 54,
+        "0x600": 1,
+        "0x6603": 30,
+        "0x6615": 10,
+        "0x6616": 1155,
+        "0x800": 75,
+        "0xb00": 275,
+        "0xc00": 411
+      },
+      "polygonInstancesAtHighestDetail": {
+        "0x10101": 11,
+        "0x10102": 1814,
+        "0x10103": 82,
+        "0x10104": 106,
+        "0x10105": 5,
+        "0x10106": 7,
+        "0x10109": 536,
+        "0x1010a": 61,
+        "0x1010b": 1,
+        "0x13": 7539,
+        "0x32": 2,
+        "0x3c": 147,
+        "0x50": 2933,
+        "0x51": 6,
+        "0x54": 6
+      },
+      "routing": false,
+      "subfileBytes": {
+        "DEM": 1611664,
+        "LBL": 30236,
+        "MPS": 198,
+        "RGN": 3275885,
+        "SRT": 912,
+        "TRE": 40336,
+        "TYP": 2982
+      },
+      "tiles": 2
+    },
+    "output": {
+      "bytes": 4983808,
+      "path": "regions/durmitor/garmin/dist/OpenBareMap-Durmitor.img",
+      "sha256": "89c9da6bb996cec662a332653bc229ccc69b8a90a3a0ad4eb3c094364e5436f3"
+    },
+    "routing": false,
+    "status": "compiled and structurally inspected; hardware rendering pending"
+  },
+  "geometryProcessing": {
+    "contours": 5684,
+    "grid": {
+      "grid_10km": 11,
+      "grid_1km": 92
+    },
+    "landcover": {
+      "empty_source_areas": [],
+      "features": 4088,
+      "retained": 177,
+      "smoothed": 3911
+    }
+  },
+  "irelandGarminPackageRevision": "2.0.1-trail-detail-r1",
+  "irelandPreserved": true,
+  "labelGlyphs": {
+    "Open Sans Bold": true,
+    "Open Sans Regular": true,
+    "Open Sans Semibold": true
+  },
+  "landBackground": {
+    "black-lake": {
+      "coordinate": [
+        19.088,
+        43.144
+      ],
+      "verifiedZooms": [
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    },
+    "bobotov-kuk": {
+      "coordinate": [
+        19.034,
+        43.127
+      ],
+      "verifiedZooms": [
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    },
+    "sedlo": {
+      "coordinate": [
+        19.054,
+        43.1
+      ],
+      "verifiedZooms": [
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    },
+    "tara-bridge": {
+      "coordinate": [
+        19.294,
+        43.15
+      ],
+      "verifiedZooms": [
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    },
+    "zabljak": {
+      "coordinate": [
+        19.121,
+        43.155
+      ],
+      "verifiedZooms": [
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    }
+  },
+  "packages": {
+    "android": {
+      "checkedFiles": 43,
+      "nativeDeviceRenderingTested": false,
+      "sourceFiles": {
+        "basemap": "maps/basemap.mbtiles",
+        "coast": "maps/coast.mbtiles",
+        "hillshade": "maps/hillshade.mbtiles",
+        "topography": "maps/topography.mbtiles",
+        "utm-grid": "maps/grid.mbtiles"
+      }
+    },
+    "ios": {
+      "checkedFiles": 46,
+      "nativeDeviceRenderingTested": false,
+      "sourceFiles": {
+        "basemap": "maps/basemap.mbtiles",
+        "coast": "maps/coast.mbtiles",
+        "hillshade": "maps/hillshade.mbtiles",
+        "topography": "maps/topography.mbtiles",
+        "utm-grid": "maps/grid.mbtiles"
+      }
+    }
+  },
+  "region": "durmitor",
+  "status": "automated checks passed; visual and hardware acceptance pending"
+}

@@ -1,0 +1,52 @@
+{
+  "contourIntervalMetres": 20,
+  "coverage": "Zagori\u2019s villages and stone bridges, Vikos Gorge, the upper Aoos valley, and the Tymfi massif.",
+  "datasets": {
+    "basemap": {
+      "bytes": 7581696,
+      "path": "releases/zagori-vikos-gorge/2.0.0/maps/basemap.mbtiles",
+      "sha256": "bcef3b749f9f5c6bff51708b97f90e6efc3387895d1f2492bb6340491ff351a8",
+      "validation": {
+        "empty_tile_count": 0,
+        "logical_tiles_sha256": "d3681022820bf28d382e578a49c4c1e4f2ceeef6ad5c173f6333e6cf6e85b2fc",
+        "tile_count": 706
+      }
+    },
+    "grid": {
+      "bytes": 245760,
+      "path": "releases/zagori-vikos-gorge/2.0.0/maps/grid.mbtiles",
+      "sha256": "8ffe6c5c5e3e0b0025bdbe5f1ad4bc173fd375f886ab44b16d8ccc46936e5fc6",
+      "validation": {
+        "empty_tile_count": 0,
+        "logical_tiles_sha256": "057b582b03ae8439cb98134f21a8b94de200f882537d1c42cbaa5d3777a814a2",
+        "tile_count": 693
+      }
+    },
+    "hillshade": {
+      "bytes": 2310144,
+      "path": "releases/zagori-vikos-gorge/2.0.0/maps/hillshade.mbtiles",
+      "sha256": "4c99e814168e0af0cb783f7bb20d732a8adeedaa0541f7422230561417b3a0e1",
+      "validation": {
+        "empty_tile_count": 0,
+        "logical_tiles_sha256": "d2c0e3740770e53975ddee1c2431e9ac44c932441ae1d6a63f2eff3bb80dc3b3",
+        "tile_count": 73
+      }
+    },
+    "topography": {
+      "bytes": 18440192,
+      "path": "releases/zagori-vikos-gorge/2.0.0/maps/topography.mbtiles",
+      "sha256": "6819110206ca3a41abe4179647a4ccba4dc966cbb2acec39c75a1714436f4766",
+      "validation": {
+        "empty_tile_count": 44317,
+        "logical_tiles_sha256": "df1b8449ba51671a078bb402f119bd45d6f98c09463f1109eaad4e24b70ab3cb",
+        "tile_count": 47883
+      }
+    }
+  },
+  "format": "openbaremap-development-viewer-v1",
+  "localBorders": false,
+  "mapVersion": "2.0.0",
+  "region": "zagori-vikos-gorge",
+  "storageRevision": "2.0.0-zagori-vikos-gorge-r1",
+  "styleRevision": "2.0.0-zagori-vikos-gorge-r1"
+}

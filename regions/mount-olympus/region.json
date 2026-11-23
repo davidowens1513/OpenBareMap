@@ -1,0 +1,150 @@
+{
+  "appBundleName": "Mount-Olympus",
+  "bounds": [
+    22.22,
+    39.92,
+    22.69,
+    40.2
+  ],
+  "clipBasemap": true,
+  "clipSource": true,
+  "clipTerrainToBounds": true,
+  "coastContextBounds": [
+    21,
+    38,
+    24,
+    42
+  ],
+  "contourIntervalMetres": 20,
+  "coverage": "Mount Olympus and its trailhead approaches, including Litochoro, Enipeas Gorge, Prionia, Mytikas and the Muses Plateau.",
+  "destinationLabels": {
+    "dion": "Dion",
+    "island": "Mount Olympus",
+    "litochoro": "Litochoro",
+    "muses-plateau": "Muses Plateau",
+    "mytikas": "Mytikas",
+    "prionia": "Prionia"
+  },
+  "destinations": {
+    "dion": [
+      22.486,
+      40.172,
+      12
+    ],
+    "island": [
+      22.455,
+      40.06,
+      11
+    ],
+    "litochoro": [
+      22.503,
+      40.103,
+      12
+    ],
+    "muses-plateau": [
+      22.37,
+      40.095,
+      12
+    ],
+    "mytikas": [
+      22.358,
+      40.086,
+      12
+    ],
+    "prionia": [
+      22.406,
+      40.084,
+      12
+    ]
+  },
+  "garminContextBounds": [
+    22.22,
+    39.92,
+    22.69,
+    40.2
+  ],
+  "garminFamilyId": 4889,
+  "garminFilename": "OpenBareMap-Mount-Olympus.img",
+  "garminPackageRevision": "2.0.0-r1",
+  "garminTileStartId": 48890001,
+  "garminUseSourceOutline": true,
+  "garminVersionedDelivery": true,
+  "gridCRS": "EPSG:25834",
+  "gridExtent": [
+    600000,
+    650000,
+    4410000,
+    4460000
+  ],
+  "gridName": "ETRS89 / UTM 34N",
+  "gridSource": "utm-grid",
+  "id": "mount-olympus",
+  "ignoreSourceHeaderBounds": true,
+  "inspectionNames": [
+    "Litochoro",
+    "Mytikas"
+  ],
+  "label": "Mount Olympus",
+  "labelGlyphs": "\u0391\u0392\u0393\u0394\u0395\u0396\u0397\u0398\u0399\u039a\u039b\u039c\u039d\u039e\u039f\u03a0\u03a1\u03a3\u03a4\u03a5\u03a6\u03a7\u03a8\u03a9\u0386\u0388\u0389\u038a\u038c\u038e\u038f\u03b1\u03b2\u03b3\u03b4\u03b5\u03b6\u03b7\u03b8\u03b9\u03ba\u03bb\u03bc\u03bd\u03be\u03bf\u03c0\u03c1\u03c3\u03c2\u03c4\u03c5\u03c6\u03c7\u03c8\u03c9\u03ac\u03ad\u03ae\u03af\u03cc\u03cd\u03ce\u03ca\u0390\u03cb\u03b0",
+  "mapVersion": "2.0.0",
+  "maxzoom": 14,
+  "minorWaterwayMinzoom": 10,
+  "minzoom": 4,
+  "name": "OpenBareMap Mount Olympus",
+  "nativeLanguage": "el",
+  "optionalBasemapLayers": [
+    "ferry",
+    "island_name",
+    "cycling_route",
+    "railway",
+    "station",
+    "hiking_route",
+    "boundary"
+  ],
+  "projectedCRS": "EPSG:25834",
+  "repairClippedCoastline": true,
+  "requireBogFeatures": false,
+  "sourceBaseOverrides": {
+    "greece": "https://download.geofabrik.de/europe/greece/"
+  },
+  "sourceBaseURL": "https://download.geofabrik.de/europe/",
+  "sourceCacheRegion": "balkans",
+  "sourceDate": "2026-11-17",
+  "sourceSlugs": [
+    "greece"
+  ],
+  "styleRevision": "2.0.0-mount-olympus-r1",
+  "terrainAttribution": "Copernicus DEM GLO-30 \u00b7 European Union / ESA \u00b7 DLR / Airbus",
+  "terrainBounds": [
+    22,
+    39,
+    23,
+    41
+  ],
+  "terrainCacheRegion": "balkans",
+  "terrainNotice": "Mount Olympus elevation: Copernicus DEM GLO-30 Public (AWS 2021 release).\n\nproduced using Copernicus WorldDEM-30 \u00a9 DLR e.V. 2010-2014 and \u00a9 Airbus Defence and Space GmbH 2014-2018 provided under COPERNICUS by the European Union and ESA; all rights reserved\n\nThe organisations in charge of the Copernicus programme by law or by delegation do not incur any liability for any use of the Copernicus WorldDEM-30.\n\nLicense: https://dataspace.copernicus.eu/sites/default/files/media/files/2025-06/copernicus_contributing_mission_data_access_v2_cop_dem_licenses.pdf\nSource: https://registry.opendata.aws/copernicus-dem/\nVertical datum: EGM2008 orthometric metres. Native approximately 30 m cells are bilinearly resampled to point-aligned Int16 HGT for the shared terrain pipeline. Ocean-only cells absent from the official public inventory are zero.\n",
+  "terrainProvider": "copernicus-glo30",
+  "townlands": false,
+  "validationAnchors": {
+    "dion": [
+      22.486,
+      40.172
+    ],
+    "litochoro": [
+      22.503,
+      40.103
+    ],
+    "muses-plateau": [
+      22.37,
+      40.095
+    ],
+    "mytikas": [
+      22.358,
+      40.086
+    ],
+    "prionia": [
+      22.406,
+      40.084
+    ]
+  }
+}

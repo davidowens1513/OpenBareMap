@@ -1,0 +1,33 @@
+{
+  "areaSquareDegrees": 0.1330000000000002,
+  "bounds": [
+    21.91,
+    37.47,
+    22.29,
+    37.82
+  ],
+  "entireRequestedFootprintCovered": true,
+  "exactFootprint": null,
+  "inputs": [
+    {
+      "bytes": 12694,
+      "path": "data/regions/menalon-trail/greece.poly",
+      "sha256": "037f2c4c8babbe9d34998ab9022f68d751151a8bb079709cd97cf5cbaaadde0f",
+      "url": "https://download.geofabrik.de/europe/greece/greece.poly"
+    }
+  ],
+  "knownDestinationsCovered": [
+    "dimitsana",
+    "elati",
+    "island",
+    "lagkadia",
+    "lousios-gorge",
+    "magouliana",
+    "stemnitsa",
+    "valtetsiniko",
+    "vytina"
+  ],
+  "operation": "Requested rectangular crop; source outlines cover all destination anchors",
+  "polygons": 1,
+  "sha256": "ceb994bacdc2f6bc787ed80e3af1ec48cf97a7ee3dc1c50a20965a247f2972a1"
+}

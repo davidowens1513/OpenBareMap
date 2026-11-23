@@ -1,0 +1,313 @@
+{
+  "coverage": "Mount Olympus and its trailhead approaches, including Litochoro, Enipeas Gorge, Prionia, Mytikas and the Muses Plateau.",
+  "coverageAnchors": {
+    "dion": {
+      "coordinate": [
+        22.486,
+        40.172
+      ],
+      "featuresInNeighbouringDetailedTiles": 605
+    },
+    "litochoro": {
+      "coordinate": [
+        22.503,
+        40.103
+      ],
+      "featuresInNeighbouringDetailedTiles": 1839
+    },
+    "muses-plateau": {
+      "coordinate": [
+        22.37,
+        40.095
+      ],
+      "featuresInNeighbouringDetailedTiles": 496
+    },
+    "mytikas": {
+      "coordinate": [
+        22.358,
+        40.086
+      ],
+      "featuresInNeighbouringDetailedTiles": 450
+    },
+    "prionia": {
+      "coordinate": [
+        22.406,
+        40.084
+      ],
+      "featuresInNeighbouringDetailedTiles": 473
+    }
+  },
+  "datasets": {
+    "basemap": {
+      "empty_tile_count": 6,
+      "logical_tiles_sha256": "410040b837f0718aba054e95b5e6bee5dd55924a73976c8e83fa4bdf4930c458",
+      "tile_count": 517
+    },
+    "grid": {
+      "empty_tile_count": 0,
+      "logical_tiles_sha256": "2f5cec079d39b3a5c90c8b4bae6c24f5884a7ef5fbec76ce59b32a10eae61176",
+      "tile_count": 555
+    },
+    "hillshade": {
+      "empty_tile_count": 0,
+      "logical_tiles_sha256": "b94b649e4dc28acc8ff2308acc06db467eb0281408a073d52ac54a22c8d55114",
+      "tile_count": 48
+    },
+    "topography": {
+      "empty_tile_count": 38357,
+      "logical_tiles_sha256": "dce23a1123eb5dc06977baf778e295515d082aa35fba4902df679a1a07e55968",
+      "tile_count": 41390
+    }
+  },
+  "detail": {
+    "basemap": {
+      "boundaries": 2650,
+      "contours": 0
+    },
+    "topography": {
+      "boundaries": 0,
+      "contours": 19170
+    }
+  },
+  "garmin": {
+    "familyId": 4889,
+    "garminPackageRevision": "2.0.0-r1",
+    "inspection": {
+      "anchorLabels": {
+        "Litochoro": "Litochoro",
+        "Mytikas": "Mytikas"
+      },
+      "bounds": [
+        22.219934463500977,
+        39.919939041137695,
+        22.69002914428711,
+        40.200090408325195
+      ],
+      "coastPolygonsByLevel": {
+        "0": {
+          "0x32": 1,
+          "0x54": 11
+        },
+        "1": {
+          "0x32": 1,
+          "0x54": 2
+        },
+        "2": {
+          "0x32": 1,
+          "0x54": 2
+        },
+        "3": {
+          "0x32": 1,
+          "0x54": 2
+        },
+        "4": {
+          "0x32": 1,
+          "0x54": 2
+        }
+      },
+      "contoursByLevel": {
+        "0": {
+          "0x20": 2858,
+          "0x22": 708
+        },
+        "1": {
+          "0x20": 1955,
+          "0x22": 479
+        },
+        "2": {
+          "0x22": 424
+        },
+        "3": {
+          "0x10008": 355
+        },
+        "4": {}
+      },
+      "lineInstancesAtHighestDetail": {
+        "0x1": 83,
+        "0x10001": 107,
+        "0x10002": 41,
+        "0x10005": 42,
+        "0x10006": 7,
+        "0x1000b": 26,
+        "0x14": 43,
+        "0x16": 607,
+        "0x18": 408,
+        "0x1c": 58,
+        "0x1e": 24,
+        "0x1f": 43,
+        "0x20": 2858,
+        "0x22": 708,
+        "0x3": 42,
+        "0x4": 144,
+        "0x6": 2230,
+        "0x7": 594,
+        "0xa": 1210
+      },
+      "logicalCombinedSHA256": "9f9c80279e2c51320535f184dd6d1bdfa92ccb37a222db2f9b631b6d851be16b",
+      "logicalHashNote": "Internal file names, sizes and payloads; only CommonHeader creation-date bytes 14..20 are zeroed for hashing. IMG archive headers are excluded. Output bytes are never modified.",
+      "logicalTileSHA256": {
+        "48890001.img": "e0dc2cc8d1145a517b1946978c17dc3e25ffc393f5e64b4a4c21432767165fbd"
+      },
+      "pointInstancesAtHighestDetail": {
+        "0x10001": 41,
+        "0x10002": 56,
+        "0x10003": 90,
+        "0x10004": 6,
+        "0x10006": 447,
+        "0x2f0b": 68,
+        "0x600": 5,
+        "0x6603": 7,
+        "0x6615": 2,
+        "0x6616": 98,
+        "0x800": 27,
+        "0xb00": 9,
+        "0xc00": 255
+      },
+      "polygonInstancesAtHighestDetail": {
+        "0x10101": 54,
+        "0x10102": 75,
+        "0x10103": 153,
+        "0x10104": 111,
+        "0x10105": 16,
+        "0x10109": 17,
+        "0x13": 2173,
+        "0x32": 1,
+        "0x3c": 56,
+        "0x50": 512,
+        "0x51": 5,
+        "0x54": 11
+      },
+      "routing": false,
+      "subfileBytes": {
+        "DEM": 1160334,
+        "LBL": 20304,
+        "MPS": 131,
+        "RGN": 1990134,
+        "SRT": 912,
+        "TRE": 25741,
+        "TYP": 2982
+      },
+      "tiles": 1
+    },
+    "output": {
+      "bytes": 3215360,
+      "path": "regions/mount-olympus/garmin/dist/OpenBareMap-Mount-Olympus.img",
+      "sha256": "d6a701f5a972c78d846152bb761081fda8cde829074f74e5971cdac737f6daa9"
+    },
+    "routing": false,
+    "status": "compiled and structurally inspected; hardware rendering pending"
+  },
+  "geometryProcessing": {
+    "contours": 1587,
+    "grid": {
+      "grid_10km": 12,
+      "grid_1km": 102
+    },
+    "landcover": {
+      "empty_source_areas": [],
+      "features": 648,
+      "retained": 34,
+      "smoothed": 614
+    }
+  },
+  "irelandGarminPackageRevision": "2.0.1-trail-detail-r1",
+  "irelandPreserved": true,
+  "labelGlyphs": {
+    "Open Sans Bold": true,
+    "Open Sans Regular": true,
+    "Open Sans Semibold": true
+  },
+  "landBackground": {
+    "dion": {
+      "coordinate": [
+        22.486,
+        40.172
+      ],
+      "verifiedZooms": [
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    },
+    "litochoro": {
+      "coordinate": [
+        22.503,
+        40.103
+      ],
+      "verifiedZooms": [
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    },
+    "muses-plateau": {
+      "coordinate": [
+        22.37,
+        40.095
+      ],
+      "verifiedZooms": [
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    },
+    "mytikas": {
+      "coordinate": [
+        22.358,
+        40.086
+      ],
+      "verifiedZooms": [
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    },
+    "prionia": {
+      "coordinate": [
+        22.406,
+        40.084
+      ],
+      "verifiedZooms": [
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    }
+  },
+  "packages": {
+    "android": {
+      "checkedFiles": 43,
+      "nativeDeviceRenderingTested": false,
+      "sourceFiles": {
+        "basemap": "maps/basemap.mbtiles",
+        "coast": "maps/coast.mbtiles",
+        "hillshade": "maps/hillshade.mbtiles",
+        "topography": "maps/topography.mbtiles",
+        "utm-grid": "maps/grid.mbtiles"
+      }
+    },
+    "ios": {
+      "checkedFiles": 46,
+      "nativeDeviceRenderingTested": false,
+      "sourceFiles": {
+        "basemap": "maps/basemap.mbtiles",
+        "coast": "maps/coast.mbtiles",
+        "hillshade": "maps/hillshade.mbtiles",
+        "topography": "maps/topography.mbtiles",
+        "utm-grid": "maps/grid.mbtiles"
+      }
+    }
+  },
+  "region": "mount-olympus",
+  "status": "automated checks passed; visual and hardware acceptance pending"
+}

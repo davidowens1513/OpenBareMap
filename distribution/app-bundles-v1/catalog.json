@@ -21,6 +21,7 @@
     "cusco-inca-trail": "2.0.0",
     "cyprus": "2.0.0",
     "dolomites": "2.0.1",
+    "durmitor": "2.0.0",
     "england-wales": "2.0.1",
     "faroe-islands": "2.0.0",
     "fiordland": "2.0.0",
@@ -32,6 +33,8 @@
     "lycian-way": "2.0.0",
     "madeira": "2.0.0",
     "malta": "2.0.0",
+    "menalon-trail": "2.0.0",
+    "mount-olympus": "2.0.0",
     "nepal-annapurna": "2.0.0",
     "nepal-everest": "2.0.0",
     "norway-central": "2.0.1",
@@ -39,6 +42,7 @@
     "norway-south": "2.0.1",
     "patagonia-el-chalten": "2.0.0",
     "patagonia-torres-del-paine": "2.0.0",
+    "peaks-of-the-balkans": "2.0.0",
     "picos-de-europa": "2.0.0",
     "pyrenees": "2.0.2",
     "rota-vicentina": "2.0.0",
@@ -54,7 +58,8 @@
     "us-rocky-mountain": "2.0.1",
     "us-yellowstone-grand-teton": "2.0.1",
     "us-yosemite": "2.0.1",
-    "us-zion": "2.0.0"
+    "us-zion": "2.0.0",
+    "zagori-vikos-gorge": "2.0.0"
   },
   "regions": {
     "alps-central": {
@@ -1457,6 +1462,76 @@
         "url": "https://downloads.appsbyonzy.dev/OpenBareMap/dolomites/2.0.1/app-bundles-v1/ios/OpenBareMap-Dolomites-iOS-Bundle.zip"
       }
     },
+    "durmitor": {
+      "android": {
+        "bytes": 26927408,
+        "datasets": {
+          "basemap": {
+            "path": "maps/basemap.mbtiles",
+            "sha256": "4ebeeb5806266aba06b44d06aacdfd2d8298a3c34526258ae4f37fab9c95d0fa"
+          },
+          "coast": {
+            "derivedFrom": "1a4e61160dcc87a234a9affeb363510d1b39de5060ec6f5f879f2fdea68da554",
+            "path": "maps/coast.mbtiles",
+            "sha256": "c1d0d26fa045956db407705f57b9bb2e2200264b82aad471871c75813ba0dab2"
+          },
+          "grid": {
+            "path": "maps/grid.mbtiles",
+            "sha256": "535b6bfd07e42d8827eafd2925f5cd1b7abf9776335cfea9cea38d5e78a85b9b"
+          },
+          "hillshade": {
+            "path": "maps/hillshade.mbtiles",
+            "sha256": "19fbd89f5d8022d14d3e19a40a152459042829445e253bcc3562926eef092aec"
+          },
+          "topography": {
+            "path": "maps/topography.mbtiles",
+            "sha256": "1a4e61160dcc87a234a9affeb363510d1b39de5060ec6f5f879f2fdea68da554"
+          }
+        },
+        "instructionsSHA256": "ff417dcf1fd5ab3958f4ac044d325bc6d9d0b59bbb8b685cc488ae0d0df4fea9",
+        "instructionsURL": "https://downloads.appsbyonzy.dev/OpenBareMap/durmitor/2.0.0/app-bundles-v1/android/instructions.txt",
+        "localPath": "releases/durmitor/2.0.0/app-bundles-v1/android/OpenBareMap-Durmitor-Android-Bundle.zip",
+        "mapManifestSHA256": "15e1c0603a26d95a4354b824d950c700a58861ee5ce69635dae871b0810d75cc",
+        "r2Key": "OpenBareMap/durmitor/2.0.0/app-bundles-v1/android/OpenBareMap-Durmitor-Android-Bundle.zip",
+        "sha256": "d4941283b678b829b568c13b4529e7f6cb6e8eb7be84e13626aa03a8419d7114",
+        "url": "https://downloads.appsbyonzy.dev/OpenBareMap/durmitor/2.0.0/app-bundles-v1/android/OpenBareMap-Durmitor-Android-Bundle.zip"
+      },
+      "ios": {
+        "bytes": 26927834,
+        "datasets": {
+          "basemap": {
+            "path": "maps/basemap.mbtiles",
+            "sha256": "4ebeeb5806266aba06b44d06aacdfd2d8298a3c34526258ae4f37fab9c95d0fa"
+          },
+          "coast": {
+            "derived_from": "1a4e61160dcc87a234a9affeb363510d1b39de5060ec6f5f879f2fdea68da554",
+            "maxzoom": 12,
+            "operation": "Preserve land-layer MVT bytes only through zoom 12; omit other layers.",
+            "path": "maps/coast.mbtiles",
+            "sha256": "c1d0d26fa045956db407705f57b9bb2e2200264b82aad471871c75813ba0dab2"
+          },
+          "grid": {
+            "path": "maps/grid.mbtiles",
+            "sha256": "535b6bfd07e42d8827eafd2925f5cd1b7abf9776335cfea9cea38d5e78a85b9b"
+          },
+          "hillshade": {
+            "path": "maps/hillshade.mbtiles",
+            "sha256": "19fbd89f5d8022d14d3e19a40a152459042829445e253bcc3562926eef092aec"
+          },
+          "topography": {
+            "path": "maps/topography.mbtiles",
+            "sha256": "1a4e61160dcc87a234a9affeb363510d1b39de5060ec6f5f879f2fdea68da554"
+          }
+        },
+        "instructionsSHA256": "4febba0adb357b695ec3187b0ba200ffd55b9dfa521dcedbd0e98c0d48d87415",
+        "instructionsURL": "https://downloads.appsbyonzy.dev/OpenBareMap/durmitor/2.0.0/app-bundles-v1/ios/instructions.txt",
+        "localPath": "releases/durmitor/2.0.0/app-bundles-v1/ios/OpenBareMap-Durmitor-iOS-Bundle.zip",
+        "mapManifestSHA256": "cdb2a7870add2dcf39a9767d15565ca88cea81f2f7635190b310d699bf4ed2c1",
+        "r2Key": "OpenBareMap/durmitor/2.0.0/app-bundles-v1/ios/OpenBareMap-Durmitor-iOS-Bundle.zip",
+        "sha256": "a72b7d04ad323394a3b8111c19d19f694c6bbcfa53f4d57ecdfd4622d2fb4f13",
+        "url": "https://downloads.appsbyonzy.dev/OpenBareMap/durmitor/2.0.0/app-bundles-v1/ios/OpenBareMap-Durmitor-iOS-Bundle.zip"
+      }
+    },
     "england-wales": {
       "android": {
         "bytes": 3483104475,
@@ -2227,6 +2302,146 @@
         "url": "https://downloads.appsbyonzy.dev/OpenBareMap/malta/2.0.0/app-bundles-v1/ios/OpenBareMap-Malta-iOS-Bundle.zip"
       }
     },
+    "menalon-trail": {
+      "android": {
+        "bytes": 23290975,
+        "datasets": {
+          "basemap": {
+            "path": "maps/basemap.mbtiles",
+            "sha256": "b89caa8cb5ed7059f61f30ba50c33a629080257cd25e5077adedcadf15385bed"
+          },
+          "coast": {
+            "derivedFrom": "62e47b2b489fb0e2386ca1f324c6c79bcb2a8461a8a1167c0188af5ba92ffcc6",
+            "path": "maps/coast.mbtiles",
+            "sha256": "5673c66ecc1e3aee2e1d2967d4f595c8ae229892cec2f833cc0905a1047a7d48"
+          },
+          "grid": {
+            "path": "maps/grid.mbtiles",
+            "sha256": "463900288824bf6f52d9f7b860536edf18f7b70259a9e8df60cd571f2d65f6f3"
+          },
+          "hillshade": {
+            "path": "maps/hillshade.mbtiles",
+            "sha256": "f61117883c5728985726b73f069f3f2d08efb537093d04cf64868293ab1fdc0d"
+          },
+          "topography": {
+            "path": "maps/topography.mbtiles",
+            "sha256": "62e47b2b489fb0e2386ca1f324c6c79bcb2a8461a8a1167c0188af5ba92ffcc6"
+          }
+        },
+        "instructionsSHA256": "cd419ef2d368e3bf708eb3610fb7157acfced24d9b6cdec0c5ff93c05c25f0a9",
+        "instructionsURL": "https://downloads.appsbyonzy.dev/OpenBareMap/menalon-trail/2.0.0/app-bundles-v1/android/instructions.txt",
+        "localPath": "releases/menalon-trail/2.0.0/app-bundles-v1/android/OpenBareMap-Menalon-Trail-Android-Bundle.zip",
+        "mapManifestSHA256": "2a2e27901a591e2edeebb08169b0ca27c83fa2f80407dae8ebd01da1fdbfb951",
+        "r2Key": "OpenBareMap/menalon-trail/2.0.0/app-bundles-v1/android/OpenBareMap-Menalon-Trail-Android-Bundle.zip",
+        "sha256": "d8c3a0fd92487a6713e13e22f1367d23c3ab1eb6ab33fdeb74af6e552bf481e6",
+        "url": "https://downloads.appsbyonzy.dev/OpenBareMap/menalon-trail/2.0.0/app-bundles-v1/android/OpenBareMap-Menalon-Trail-Android-Bundle.zip"
+      },
+      "ios": {
+        "bytes": 23291398,
+        "datasets": {
+          "basemap": {
+            "path": "maps/basemap.mbtiles",
+            "sha256": "b89caa8cb5ed7059f61f30ba50c33a629080257cd25e5077adedcadf15385bed"
+          },
+          "coast": {
+            "derived_from": "62e47b2b489fb0e2386ca1f324c6c79bcb2a8461a8a1167c0188af5ba92ffcc6",
+            "maxzoom": 12,
+            "operation": "Preserve land-layer MVT bytes only through zoom 12; omit other layers.",
+            "path": "maps/coast.mbtiles",
+            "sha256": "5673c66ecc1e3aee2e1d2967d4f595c8ae229892cec2f833cc0905a1047a7d48"
+          },
+          "grid": {
+            "path": "maps/grid.mbtiles",
+            "sha256": "463900288824bf6f52d9f7b860536edf18f7b70259a9e8df60cd571f2d65f6f3"
+          },
+          "hillshade": {
+            "path": "maps/hillshade.mbtiles",
+            "sha256": "f61117883c5728985726b73f069f3f2d08efb537093d04cf64868293ab1fdc0d"
+          },
+          "topography": {
+            "path": "maps/topography.mbtiles",
+            "sha256": "62e47b2b489fb0e2386ca1f324c6c79bcb2a8461a8a1167c0188af5ba92ffcc6"
+          }
+        },
+        "instructionsSHA256": "fd2d2737ee7bd69b6b10052ff3ca1d199de5b3553eb62c1d132b2dc42023215e",
+        "instructionsURL": "https://downloads.appsbyonzy.dev/OpenBareMap/menalon-trail/2.0.0/app-bundles-v1/ios/instructions.txt",
+        "localPath": "releases/menalon-trail/2.0.0/app-bundles-v1/ios/OpenBareMap-Menalon-Trail-iOS-Bundle.zip",
+        "mapManifestSHA256": "0457df6e48bed7bffe33e2ec4109ca5eb138df7c6933c89a1785e30d22fad3b5",
+        "r2Key": "OpenBareMap/menalon-trail/2.0.0/app-bundles-v1/ios/OpenBareMap-Menalon-Trail-iOS-Bundle.zip",
+        "sha256": "093954ae5be9044e4e28297669d2e6d79b7c1a108c536f2e63f30042e2c631b6",
+        "url": "https://downloads.appsbyonzy.dev/OpenBareMap/menalon-trail/2.0.0/app-bundles-v1/ios/OpenBareMap-Menalon-Trail-iOS-Bundle.zip"
+      }
+    },
+    "mount-olympus": {
+      "android": {
+        "bytes": 21414438,
+        "datasets": {
+          "basemap": {
+            "path": "maps/basemap.mbtiles",
+            "sha256": "90120660266b748b4bebe8316a55f5dbdac75c01979781c66f5244b7ec8c2f04"
+          },
+          "coast": {
+            "derivedFrom": "002ddd4918cf4aae5eb70fcedaca7868b2cee01a88c8920d6fca67cea0028fd4",
+            "path": "maps/coast.mbtiles",
+            "sha256": "866e092618db4c0e57571c2a59ec740d2c933d039b135598c4306c4f904f5be0"
+          },
+          "grid": {
+            "path": "maps/grid.mbtiles",
+            "sha256": "070dd8e1f63659a1b5f460673dd3ee32a720c44d681742ca2c4d34db89b49c37"
+          },
+          "hillshade": {
+            "path": "maps/hillshade.mbtiles",
+            "sha256": "1c3f461838204de464127376631bd3ff5269a79b32595146a4a921fab2ec8988"
+          },
+          "topography": {
+            "path": "maps/topography.mbtiles",
+            "sha256": "002ddd4918cf4aae5eb70fcedaca7868b2cee01a88c8920d6fca67cea0028fd4"
+          }
+        },
+        "instructionsSHA256": "6233f8e2217b4fa330f5c717211b85c2047baff3988eefbab8d7b4837dac7d70",
+        "instructionsURL": "https://downloads.appsbyonzy.dev/OpenBareMap/mount-olympus/2.0.0/app-bundles-v1/android/instructions.txt",
+        "localPath": "releases/mount-olympus/2.0.0/app-bundles-v1/android/OpenBareMap-Mount-Olympus-Android-Bundle.zip",
+        "mapManifestSHA256": "6fb253c9a2462eec484856ecf92bdb6e0ef2c0123f8cc770534e395685fb455b",
+        "r2Key": "OpenBareMap/mount-olympus/2.0.0/app-bundles-v1/android/OpenBareMap-Mount-Olympus-Android-Bundle.zip",
+        "sha256": "1cf608ca65be114dd98fcba5450a06c644867e278c6cde1954f297a6ae86d613",
+        "url": "https://downloads.appsbyonzy.dev/OpenBareMap/mount-olympus/2.0.0/app-bundles-v1/android/OpenBareMap-Mount-Olympus-Android-Bundle.zip"
+      },
+      "ios": {
+        "bytes": 21414850,
+        "datasets": {
+          "basemap": {
+            "path": "maps/basemap.mbtiles",
+            "sha256": "90120660266b748b4bebe8316a55f5dbdac75c01979781c66f5244b7ec8c2f04"
+          },
+          "coast": {
+            "derived_from": "002ddd4918cf4aae5eb70fcedaca7868b2cee01a88c8920d6fca67cea0028fd4",
+            "maxzoom": 12,
+            "operation": "Preserve land-layer MVT bytes only through zoom 12; omit other layers.",
+            "path": "maps/coast.mbtiles",
+            "sha256": "866e092618db4c0e57571c2a59ec740d2c933d039b135598c4306c4f904f5be0"
+          },
+          "grid": {
+            "path": "maps/grid.mbtiles",
+            "sha256": "070dd8e1f63659a1b5f460673dd3ee32a720c44d681742ca2c4d34db89b49c37"
+          },
+          "hillshade": {
+            "path": "maps/hillshade.mbtiles",
+            "sha256": "1c3f461838204de464127376631bd3ff5269a79b32595146a4a921fab2ec8988"
+          },
+          "topography": {
+            "path": "maps/topography.mbtiles",
+            "sha256": "002ddd4918cf4aae5eb70fcedaca7868b2cee01a88c8920d6fca67cea0028fd4"
+          }
+        },
+        "instructionsSHA256": "7e4ae5f3dd1aeb76cbddb1b146a32e290480d8923efeeaa97668476d34c3b3ab",
+        "instructionsURL": "https://downloads.appsbyonzy.dev/OpenBareMap/mount-olympus/2.0.0/app-bundles-v1/ios/instructions.txt",
+        "localPath": "releases/mount-olympus/2.0.0/app-bundles-v1/ios/OpenBareMap-Mount-Olympus-iOS-Bundle.zip",
+        "mapManifestSHA256": "a58e930b0358c9278278d84dba000710fd53784928e07b782f56f553f64f14db",
+        "r2Key": "OpenBareMap/mount-olympus/2.0.0/app-bundles-v1/ios/OpenBareMap-Mount-Olympus-iOS-Bundle.zip",
+        "sha256": "1e4b875a6aea8cce845ed9386f827f9f6161d81589f6183959f7dc5a016813a7",
+        "url": "https://downloads.appsbyonzy.dev/OpenBareMap/mount-olympus/2.0.0/app-bundles-v1/ios/OpenBareMap-Mount-Olympus-iOS-Bundle.zip"
+      }
+    },
     "nepal-annapurna": {
       "android": {
         "bytes": 185543356,
@@ -2715,6 +2930,76 @@
         "r2Key": "OpenBareMap/patagonia-torres-del-paine/2.0.0/app-bundles-v1/ios/OpenBareMap-Patagonia-Torres-del-Paine-iOS-Bundle.zip",
         "sha256": "02e8d260c45889cd29669cfa81c956707c531b4ac6bf3be31c6b77ba11fcbdb8",
         "url": "https://downloads.appsbyonzy.dev/OpenBareMap/patagonia-torres-del-paine/2.0.0/app-bundles-v1/ios/OpenBareMap-Patagonia-Torres-del-Paine-iOS-Bundle.zip"
+      }
+    },
+    "peaks-of-the-balkans": {
+      "android": {
+        "bytes": 88918198,
+        "datasets": {
+          "basemap": {
+            "path": "maps/basemap.mbtiles",
+            "sha256": "8ea365a1e4157ed84bb23dcc94aa6fb3e0aac9cb3f5673202a304956c9af9b83"
+          },
+          "coast": {
+            "derivedFrom": "7eaee48f5c137d63d7ae54f8ed859d1a17645c431d8207895d5ee4f7acc57317",
+            "path": "maps/coast.mbtiles",
+            "sha256": "7e43cec51066ff482df45ce44236596655e43d1d6cd01a4b31cd9866738e3148"
+          },
+          "grid": {
+            "path": "maps/grid.mbtiles",
+            "sha256": "fd336b882347cebe90181b4fce5b71ef0a7a28bd49ee4ed314930e4e06db2bee"
+          },
+          "hillshade": {
+            "path": "maps/hillshade.mbtiles",
+            "sha256": "0574306b0eeec448c05a92cc66b5a6e647c323545664d263e2725aa82778a1bb"
+          },
+          "topography": {
+            "path": "maps/topography.mbtiles",
+            "sha256": "7eaee48f5c137d63d7ae54f8ed859d1a17645c431d8207895d5ee4f7acc57317"
+          }
+        },
+        "instructionsSHA256": "01dc8ebf68a72757417ac79b311cf62544abf4297384e5758341274c866c6ee7",
+        "instructionsURL": "https://downloads.appsbyonzy.dev/OpenBareMap/peaks-of-the-balkans/2.0.0/app-bundles-v1/android/instructions.txt",
+        "localPath": "releases/peaks-of-the-balkans/2.0.0/app-bundles-v1/android/OpenBareMap-Peaks-of-the-Balkans-Android-Bundle.zip",
+        "mapManifestSHA256": "79f186c9e2f86876f88367948a82dbfe9f925cf2aac643d2449c4401eec42710",
+        "r2Key": "OpenBareMap/peaks-of-the-balkans/2.0.0/app-bundles-v1/android/OpenBareMap-Peaks-of-the-Balkans-Android-Bundle.zip",
+        "sha256": "633ad2e21cdfeba494e21554c02b82af3dfcb8e0d5a4bbe5fabd589712107565",
+        "url": "https://downloads.appsbyonzy.dev/OpenBareMap/peaks-of-the-balkans/2.0.0/app-bundles-v1/android/OpenBareMap-Peaks-of-the-Balkans-Android-Bundle.zip"
+      },
+      "ios": {
+        "bytes": 88918624,
+        "datasets": {
+          "basemap": {
+            "path": "maps/basemap.mbtiles",
+            "sha256": "8ea365a1e4157ed84bb23dcc94aa6fb3e0aac9cb3f5673202a304956c9af9b83"
+          },
+          "coast": {
+            "derived_from": "7eaee48f5c137d63d7ae54f8ed859d1a17645c431d8207895d5ee4f7acc57317",
+            "maxzoom": 12,
+            "operation": "Preserve land-layer MVT bytes only through zoom 12; omit other layers.",
+            "path": "maps/coast.mbtiles",
+            "sha256": "7e43cec51066ff482df45ce44236596655e43d1d6cd01a4b31cd9866738e3148"
+          },
+          "grid": {
+            "path": "maps/grid.mbtiles",
+            "sha256": "fd336b882347cebe90181b4fce5b71ef0a7a28bd49ee4ed314930e4e06db2bee"
+          },
+          "hillshade": {
+            "path": "maps/hillshade.mbtiles",
+            "sha256": "0574306b0eeec448c05a92cc66b5a6e647c323545664d263e2725aa82778a1bb"
+          },
+          "topography": {
+            "path": "maps/topography.mbtiles",
+            "sha256": "7eaee48f5c137d63d7ae54f8ed859d1a17645c431d8207895d5ee4f7acc57317"
+          }
+        },
+        "instructionsSHA256": "5979945610f493f6aea18016273e77a63a7612c578d63013ca21034946d24151",
+        "instructionsURL": "https://downloads.appsbyonzy.dev/OpenBareMap/peaks-of-the-balkans/2.0.0/app-bundles-v1/ios/instructions.txt",
+        "localPath": "releases/peaks-of-the-balkans/2.0.0/app-bundles-v1/ios/OpenBareMap-Peaks-of-the-Balkans-iOS-Bundle.zip",
+        "mapManifestSHA256": "33b75987bc70dda4e65350fa7f13e0de1d3465ffa8fd239600c6f3ae63eb54c0",
+        "r2Key": "OpenBareMap/peaks-of-the-balkans/2.0.0/app-bundles-v1/ios/OpenBareMap-Peaks-of-the-Balkans-iOS-Bundle.zip",
+        "sha256": "5dcdeffc2a23fa8b710014b5c45f9d6a4c39b69018ea517ffe007dea7be78764",
+        "url": "https://downloads.appsbyonzy.dev/OpenBareMap/peaks-of-the-balkans/2.0.0/app-bundles-v1/ios/OpenBareMap-Peaks-of-the-Balkans-iOS-Bundle.zip"
       }
     },
     "picos-de-europa": {
@@ -3835,6 +4120,76 @@
         "r2Key": "OpenBareMap/us-zion/2.0.0/app-bundles-v1/ios/OpenBareMap-Zion-iOS-Bundle.zip",
         "sha256": "a86bd69f0289a4a63e6f965d91e384708d7cc51c998a6c661e59812142f7fb6a",
         "url": "https://downloads.appsbyonzy.dev/OpenBareMap/us-zion/2.0.0/app-bundles-v1/ios/OpenBareMap-Zion-iOS-Bundle.zip"
+      }
+    },
+    "zagori-vikos-gorge": {
+      "android": {
+        "bytes": 33300872,
+        "datasets": {
+          "basemap": {
+            "path": "maps/basemap.mbtiles",
+            "sha256": "bcef3b749f9f5c6bff51708b97f90e6efc3387895d1f2492bb6340491ff351a8"
+          },
+          "coast": {
+            "derivedFrom": "c3636973c0b79e066e3344fb65086364613cf0dad7726b17277189f064888106",
+            "path": "maps/coast.mbtiles",
+            "sha256": "64f06c5fc7e07c6883040af61d0e5de26cbdb6b6e6c0097a8ed59eba5d3d88f8"
+          },
+          "grid": {
+            "path": "maps/grid.mbtiles",
+            "sha256": "8ffe6c5c5e3e0b0025bdbe5f1ad4bc173fd375f886ab44b16d8ccc46936e5fc6"
+          },
+          "hillshade": {
+            "path": "maps/hillshade.mbtiles",
+            "sha256": "4c99e814168e0af0cb783f7bb20d732a8adeedaa0541f7422230561417b3a0e1"
+          },
+          "topography": {
+            "path": "maps/topography.mbtiles",
+            "sha256": "c3636973c0b79e066e3344fb65086364613cf0dad7726b17277189f064888106"
+          }
+        },
+        "instructionsSHA256": "42f2e009a8bc28e023cc3c8867b8753de4749cd537953fcf2c9d1cd58efbdc6e",
+        "instructionsURL": "https://downloads.appsbyonzy.dev/OpenBareMap/zagori-vikos-gorge/2.0.0/app-bundles-v1/android/instructions.txt",
+        "localPath": "releases/zagori-vikos-gorge/2.0.0/app-bundles-v1/android/OpenBareMap-Zagori-Vikos-Gorge-Android-Bundle.zip",
+        "mapManifestSHA256": "a5fb5e0c8c92769ec8906f78f6b0ab4b7ccf9718c55e34b4359f8a9cd3477775",
+        "r2Key": "OpenBareMap/zagori-vikos-gorge/2.0.0/app-bundles-v1/android/OpenBareMap-Zagori-Vikos-Gorge-Android-Bundle.zip",
+        "sha256": "c362cc0f8d52588a26339110c4ee8dad09cce05533dcf536da0fa47d9cc020bd",
+        "url": "https://downloads.appsbyonzy.dev/OpenBareMap/zagori-vikos-gorge/2.0.0/app-bundles-v1/android/OpenBareMap-Zagori-Vikos-Gorge-Android-Bundle.zip"
+      },
+      "ios": {
+        "bytes": 33301297,
+        "datasets": {
+          "basemap": {
+            "path": "maps/basemap.mbtiles",
+            "sha256": "bcef3b749f9f5c6bff51708b97f90e6efc3387895d1f2492bb6340491ff351a8"
+          },
+          "coast": {
+            "derived_from": "c3636973c0b79e066e3344fb65086364613cf0dad7726b17277189f064888106",
+            "maxzoom": 12,
+            "operation": "Preserve land-layer MVT bytes only through zoom 12; omit other layers.",
+            "path": "maps/coast.mbtiles",
+            "sha256": "64f06c5fc7e07c6883040af61d0e5de26cbdb6b6e6c0097a8ed59eba5d3d88f8"
+          },
+          "grid": {
+            "path": "maps/grid.mbtiles",
+            "sha256": "8ffe6c5c5e3e0b0025bdbe5f1ad4bc173fd375f886ab44b16d8ccc46936e5fc6"
+          },
+          "hillshade": {
+            "path": "maps/hillshade.mbtiles",
+            "sha256": "4c99e814168e0af0cb783f7bb20d732a8adeedaa0541f7422230561417b3a0e1"
+          },
+          "topography": {
+            "path": "maps/topography.mbtiles",
+            "sha256": "c3636973c0b79e066e3344fb65086364613cf0dad7726b17277189f064888106"
+          }
+        },
+        "instructionsSHA256": "44a8e77a0dc0716169696909295985aadb3c9fd65cfea4bf398ae7c479d12375",
+        "instructionsURL": "https://downloads.appsbyonzy.dev/OpenBareMap/zagori-vikos-gorge/2.0.0/app-bundles-v1/ios/instructions.txt",
+        "localPath": "releases/zagori-vikos-gorge/2.0.0/app-bundles-v1/ios/OpenBareMap-Zagori-Vikos-Gorge-iOS-Bundle.zip",
+        "mapManifestSHA256": "70a4e5607eddf4110746fec678eb9e72cd235c56680533a302acac6ea892b847",
+        "r2Key": "OpenBareMap/zagori-vikos-gorge/2.0.0/app-bundles-v1/ios/OpenBareMap-Zagori-Vikos-Gorge-iOS-Bundle.zip",
+        "sha256": "389a46b55885b5eff485ca9f44e12defb1e4f73c4dff7d9b7848019383cefb52",
+        "url": "https://downloads.appsbyonzy.dev/OpenBareMap/zagori-vikos-gorge/2.0.0/app-bundles-v1/ios/OpenBareMap-Zagori-Vikos-Gorge-iOS-Bundle.zip"
       }
     }
   },

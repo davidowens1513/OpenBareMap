@@ -1,0 +1,106 @@
+{
+  "acceptance": "Automated checks only; see validation and visual-review records for actual reviewed scope.",
+  "coverage": "Mount Olympus and its trailhead approaches, including Litochoro, Enipeas Gorge, Prionia, Mytikas and the Muses Plateau.",
+  "datasets": {
+    "basemap": {
+      "bytes": 4546560,
+      "path": "releases/mount-olympus/2.0.0/maps/basemap.mbtiles",
+      "sha256": "90120660266b748b4bebe8316a55f5dbdac75c01979781c66f5244b7ec8c2f04",
+      "validation": {
+        "empty_tile_count": 6,
+        "logical_tiles_sha256": "410040b837f0718aba054e95b5e6bee5dd55924a73976c8e83fa4bdf4930c458",
+        "tile_count": 517
+      }
+    },
+    "grid": {
+      "bytes": 212992,
+      "path": "releases/mount-olympus/2.0.0/maps/grid.mbtiles",
+      "sha256": "070dd8e1f63659a1b5f460673dd3ee32a720c44d681742ca2c4d34db89b49c37",
+      "validation": {
+        "empty_tile_count": 0,
+        "logical_tiles_sha256": "2f5cec079d39b3a5c90c8b4bae6c24f5884a7ef5fbec76ce59b32a10eae61176",
+        "tile_count": 555
+      }
+    },
+    "hillshade": {
+      "bytes": 1343488,
+      "path": "releases/mount-olympus/2.0.0/maps/hillshade.mbtiles",
+      "sha256": "1c3f461838204de464127376631bd3ff5269a79b32595146a4a921fab2ec8988",
+      "validation": {
+        "empty_tile_count": 0,
+        "logical_tiles_sha256": "b94b649e4dc28acc8ff2308acc06db467eb0281408a073d52ac54a22c8d55114",
+        "tile_count": 48
+      }
+    },
+    "topography": {
+      "bytes": 10612736,
+      "path": "releases/mount-olympus/2.0.0/maps/topography-context.mbtiles",
+      "sha256": "002ddd4918cf4aae5eb70fcedaca7868b2cee01a88c8920d6fca67cea0028fd4",
+      "validation": {
+        "empty_tile_count": 38357,
+        "logical_tiles_sha256": "dce23a1123eb5dc06977baf778e295515d082aa35fba4902df679a1a07e55968",
+        "tile_count": 41390
+      }
+    }
+  },
+  "garmin": {
+    "bytes": 3215360,
+    "path": "regions/mount-olympus/garmin/dist/OpenBareMap-Mount-Olympus.img",
+    "sha256": "d6a701f5a972c78d846152bb761081fda8cde829074f74e5971cdac737f6daa9"
+  },
+  "geometryReport": {
+    "path": "build/mount-olympus-geometry/geometry-report.json",
+    "sha256": "d1bb614c06c04e8dc3f06e06cbca3955c148da3cfce60bdb8256169d1436ce17"
+  },
+  "hostAppsModified": false,
+  "mapVersion": "2.0.0",
+  "osm": {
+    "bytes": 16230131,
+    "operation": "Complete-feature bbox extraction with nested relation references",
+    "path": "data/regions/mount-olympus/greece-261117.osm.clipped.osm.pbf",
+    "replicationTimestamp": "2026-11-17T21:24:30Z",
+    "sha256": "8349c8236040fe73aa83c78914e0516e7c880d870ff34e11df36ce30f4963ce2",
+    "snapshot_date": "2026-11-17",
+    "url": "https://download.geofabrik.de/europe/greece/greece-261117.osm.pbf"
+  },
+  "packages": {
+    "android": {
+      "archive": {
+        "bytes": 21385988,
+        "path": "regions/mount-olympus/android/OpenBareMap-Android.zip",
+        "sha256": "b1aab4a00e23926dd3f95be63be43c42be0726c9c4559e71ae53081d9f4722cf"
+      },
+      "checksumsSHA256": "2ddddbffa36bd91e5b12c5842114666ed4b69dcd3534135027bc49914d9a2cbf",
+      "manifestSHA256": "6fb253c9a2462eec484856ecf92bdb6e0ef2c0123f8cc770534e395685fb455b",
+      "path": "regions/mount-olympus/android",
+      "validationSHA256": "11d7b038a1c69e699883f1dbb712b1ecc92152ad9c15ec048735fe45e18218a1"
+    },
+    "ios": {
+      "checksumsSHA256": "e4936a979b9546fd89ef6d3b4961db2e7350400a5f1cb15300ea70de2ecfa78b",
+      "manifestSHA256": "a58e930b0358c9278278d84dba000710fd53784928e07b782f56f553f64f14db",
+      "path": "regions/mount-olympus/ios",
+      "validationSHA256": "2212bef01b177600111354d27fd528916cb8413eaa6bdf5e8c15230efb1729a0"
+    }
+  },
+  "pythonRuntime": {
+    "packages": {
+      "Pillow": "12.3.0",
+      "certifi": "2026.10.23",
+      "charset-normalizer": "3.5.2",
+      "idna": "3.20",
+      "numpy": "2.5.4",
+      "osmium": "4.3.2",
+      "pyproj": "3.8.0",
+      "requests": "2.34.2",
+      "shapely": "2.2.0",
+      "urllib3": "2.8.0"
+    },
+    "platform": "macOS-27.2.1-arm64-arm-64bit-Mach-O",
+    "python": "3.14.5 (main, May 10 2026, 10:21:34) [Clang 21.0.0 (clang-2100.0.123.102)]",
+    "requirementsSHA256": "427f12ff8b49bfebac0a7d453c2f65bd15d6695584b18e6ecee1fdfeed20a36c"
+  },
+  "region": "mount-olympus",
+  "styleSHA256": "5d0828417566f9694859e0ad5152a57b39fe6f58f8f1d648e4e151b0faaaa3bb",
+  "terrainLockSHA256": "86d88ff527e2d81445c03d46f40a4d59642913ff7b8fd799912cd1452936be40",
+  "validation": "validation.json"
+}

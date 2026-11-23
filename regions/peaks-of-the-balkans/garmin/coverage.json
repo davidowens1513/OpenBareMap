@@ -1,0 +1,45 @@
+{
+  "areaSquareDegrees": 0.4872000000000025,
+  "bounds": [
+    19.52,
+    42.25,
+    20.39,
+    42.81
+  ],
+  "entireRequestedFootprintCovered": true,
+  "exactFootprint": null,
+  "inputs": [
+    {
+      "bytes": 9780,
+      "path": "data/regions/peaks-of-the-balkans/albania.poly",
+      "sha256": "2902604dc74bdfcd918a915223ef35541c11f62e54830e3190126be1dade0162",
+      "url": "https://download.geofabrik.de/europe/albania/albania.poly"
+    },
+    {
+      "bytes": 5099,
+      "path": "data/regions/peaks-of-the-balkans/montenegro.poly",
+      "sha256": "5b8871aa68125e4918b9e9676e5f1d7578b88e6c0aa26971c1fbf162fabad92e",
+      "url": "https://download.geofabrik.de/europe/montenegro/montenegro.poly"
+    },
+    {
+      "bytes": 4727,
+      "path": "data/regions/peaks-of-the-balkans/kosovo.poly",
+      "sha256": "b4c60ac384cb1c4fd9925feeb88718a5c95aa0b9c1cd25138cfb0c7f4a034170",
+      "url": "https://download.geofabrik.de/europe/kosovo/kosovo.poly"
+    }
+  ],
+  "knownDestinationsCovered": [
+    "cerem",
+    "doberdol",
+    "gusinje",
+    "island",
+    "peje",
+    "plav",
+    "reka-e-allages",
+    "theth",
+    "valbona"
+  ],
+  "operation": "Requested rectangular crop; source outlines cover all destination anchors",
+  "polygons": 1,
+  "sha256": "89194256bbddc102c086ca3b0e3b6db5c41b2455da6ba7e51bac95a7aeddace2"
+}

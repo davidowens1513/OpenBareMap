@@ -1,0 +1,33 @@
+{
+  "bytes": 23290975,
+  "datasets": {
+    "basemap": {
+      "path": "maps/basemap.mbtiles",
+      "sha256": "b89caa8cb5ed7059f61f30ba50c33a629080257cd25e5077adedcadf15385bed"
+    },
+    "coast": {
+      "derivedFrom": "62e47b2b489fb0e2386ca1f324c6c79bcb2a8461a8a1167c0188af5ba92ffcc6",
+      "path": "maps/coast.mbtiles",
+      "sha256": "5673c66ecc1e3aee2e1d2967d4f595c8ae229892cec2f833cc0905a1047a7d48"
+    },
+    "grid": {
+      "path": "maps/grid.mbtiles",
+      "sha256": "463900288824bf6f52d9f7b860536edf18f7b70259a9e8df60cd571f2d65f6f3"
+    },
+    "hillshade": {
+      "path": "maps/hillshade.mbtiles",
+      "sha256": "f61117883c5728985726b73f069f3f2d08efb537093d04cf64868293ab1fdc0d"
+    },
+    "topography": {
+      "path": "maps/topography.mbtiles",
+      "sha256": "62e47b2b489fb0e2386ca1f324c6c79bcb2a8461a8a1167c0188af5ba92ffcc6"
+    }
+  },
+  "instructionsSHA256": "cd419ef2d368e3bf708eb3610fb7157acfced24d9b6cdec0c5ff93c05c25f0a9",
+  "instructionsURL": "https://downloads.appsbyonzy.dev/OpenBareMap/menalon-trail/2.0.0/app-bundles-v1/android/instructions.txt",
+  "localPath": "releases/menalon-trail/2.0.0/app-bundles-v1/android/OpenBareMap-Menalon-Trail-Android-Bundle.zip",
+  "mapManifestSHA256": "2a2e27901a591e2edeebb08169b0ca27c83fa2f80407dae8ebd01da1fdbfb951",
+  "r2Key": "OpenBareMap/menalon-trail/2.0.0/app-bundles-v1/android/OpenBareMap-Menalon-Trail-Android-Bundle.zip",
+  "sha256": "d8c3a0fd92487a6713e13e22f1367d23c3ab1eb6ab33fdeb74af6e552bf481e6",
+  "url": "https://downloads.appsbyonzy.dev/OpenBareMap/menalon-trail/2.0.0/app-bundles-v1/android/OpenBareMap-Menalon-Trail-Android-Bundle.zip"
+}

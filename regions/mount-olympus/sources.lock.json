@@ -1,0 +1,29 @@
+{
+  "accessed_utc": "2026-11-23T19:42:58.676976+00:00",
+  "inputs": [
+    {
+      "bytes": 343286408,
+      "path": "data/regions/balkans/greece-261117.osm.pbf",
+      "replicationTimestamp": "2026-11-17T21:24:30Z",
+      "sha256": "7de66f82954a04a2d27adc625b307c8737fae17b49eec904674b53459bdb4d0e",
+      "url": "https://download.geofabrik.de/europe/greece/greece-261117.osm.pbf"
+    }
+  ],
+  "osm": {
+    "bytes": 16230131,
+    "operation": "Complete-feature bbox extraction with nested relation references",
+    "path": "data/regions/mount-olympus/greece-261117.osm.clipped.osm.pbf",
+    "replicationTimestamp": "2026-11-17T21:24:30Z",
+    "sha256": "8349c8236040fe73aa83c78914e0516e7c880d870ff34e11df36ce30f4963ce2",
+    "snapshot_date": "2026-11-17",
+    "url": "https://download.geofabrik.de/europe/greece/greece-261117.osm.pbf"
+  },
+  "polygons": [
+    {
+      "bytes": 12694,
+      "path": "data/regions/mount-olympus/greece.poly",
+      "sha256": "037f2c4c8babbe9d34998ab9022f68d751151a8bb079709cd97cf5cbaaadde0f",
+      "url": "https://download.geofabrik.de/europe/greece/greece.poly"
+    }
+  ]
+}

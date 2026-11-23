@@ -1,0 +1,32 @@
+{
+  "areaSquareDegrees": 0.16900000000000134,
+  "bounds": [
+    20.63,
+    39.75,
+    21.15,
+    40.075
+  ],
+  "entireRequestedFootprintCovered": true,
+  "exactFootprint": null,
+  "inputs": [
+    {
+      "bytes": 12694,
+      "path": "data/regions/zagori-vikos-gorge/greece.poly",
+      "sha256": "037f2c4c8babbe9d34998ab9022f68d751151a8bb079709cd97cf5cbaaadde0f",
+      "url": "https://download.geofabrik.de/europe/greece/greece.poly"
+    }
+  ],
+  "knownDestinationsCovered": [
+    "dragon-lake",
+    "island",
+    "kipoi",
+    "konitsa",
+    "monodendri",
+    "papingo",
+    "tymfi",
+    "vikos"
+  ],
+  "operation": "Requested rectangular crop; source outlines cover all destination anchors",
+  "polygons": 1,
+  "sha256": "f5a0e0c8273aee3ba86a388a85f5c49de06f4bff548d55b45a24d4138a2ece91"
+}

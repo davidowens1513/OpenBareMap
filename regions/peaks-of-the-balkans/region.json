@@ -1,0 +1,184 @@
+{
+  "appBundleName": "Peaks-of-the-Balkans",
+  "bounds": [
+    19.52,
+    42.25,
+    20.39,
+    42.81
+  ],
+  "clipBasemap": true,
+  "clipSource": true,
+  "clipTerrainToBounds": true,
+  "coastContextBounds": [
+    18,
+    41,
+    22,
+    44
+  ],
+  "contourIntervalMetres": 20,
+  "coverage": "The Peaks of the Balkans circuit through Albania, Montenegro and Kosovo, including Theth, Valbona, Plav, the Rugova valley and Pej\u00eb.",
+  "destinationLabels": {
+    "cerem": "\u00c7erem",
+    "doberdol": "Dob\u00ebrdol",
+    "gusinje": "Gusinje",
+    "island": "Peaks of the Balkans",
+    "peje": "Pej\u00eb",
+    "plav": "Plav",
+    "reka-e-allages": "Reka e Allag\u00ebs",
+    "theth": "Theth",
+    "valbona": "Valbona"
+  },
+  "destinations": {
+    "cerem": [
+      19.985,
+      42.489,
+      12
+    ],
+    "doberdol": [
+      20.06,
+      42.549,
+      12
+    ],
+    "gusinje": [
+      19.833,
+      42.562,
+      12
+    ],
+    "island": [
+      19.955,
+      42.53,
+      10
+    ],
+    "peje": [
+      20.289,
+      42.659,
+      12
+    ],
+    "plav": [
+      19.945,
+      42.596,
+      12
+    ],
+    "reka-e-allages": [
+      20.178,
+      42.695,
+      12
+    ],
+    "theth": [
+      19.769,
+      42.395,
+      12
+    ],
+    "valbona": [
+      19.889,
+      42.452,
+      12
+    ]
+  },
+  "garminContextBounds": [
+    19.52,
+    42.25,
+    20.39,
+    42.81
+  ],
+  "garminFamilyId": 4886,
+  "garminFilename": "OpenBareMap-Peaks-of-the-Balkans.img",
+  "garminPackageRevision": "2.0.0-r1",
+  "garminTileStartId": 48860001,
+  "garminUseSourceOutline": true,
+  "garminVersionedDelivery": true,
+  "gridCRS": "EPSG:25834",
+  "gridExtent": [
+    370000,
+    460000,
+    4670000,
+    4750000
+  ],
+  "gridName": "ETRS89 / UTM 34N",
+  "gridSource": "utm-grid",
+  "id": "peaks-of-the-balkans",
+  "ignoreSourceHeaderBounds": true,
+  "inspectionNames": [
+    "Theth",
+    "Plav"
+  ],
+  "label": "Peaks of the Balkans",
+  "labelGlyphs": "\u00c7\u00e7\u00cb\u00eb\u0106\u0107\u010c\u010d\u0110\u0111\u0160\u0161\u017d\u017e",
+  "mapVersion": "2.0.0",
+  "maxzoom": 14,
+  "minorWaterwayMinzoom": 10,
+  "minzoom": 4,
+  "name": "OpenBareMap Peaks of the Balkans",
+  "nativeLanguage": "sq",
+  "optionalBasemapLayers": [
+    "ferry",
+    "island_name",
+    "cycling_route",
+    "railway",
+    "station",
+    "hiking_route",
+    "boundary"
+  ],
+  "projectedCRS": "EPSG:25834",
+  "repairClippedCoastline": true,
+  "requireBogFeatures": false,
+  "sourceBaseOverrides": {
+    "albania": "https://download.geofabrik.de/europe/albania/",
+    "kosovo": "https://download.geofabrik.de/europe/kosovo/",
+    "montenegro": "https://download.geofabrik.de/europe/montenegro/"
+  },
+  "sourceBaseURL": "https://download.geofabrik.de/europe/",
+  "sourceCacheRegion": "balkans",
+  "sourceDate": "2026-11-22",
+  "sourceSlugs": [
+    "albania",
+    "montenegro",
+    "kosovo"
+  ],
+  "styleRevision": "2.0.0-peaks-of-the-balkans-r1",
+  "terrainAttribution": "Copernicus DEM GLO-30 \u00b7 European Union / ESA \u00b7 DLR / Airbus",
+  "terrainBounds": [
+    19,
+    42,
+    21,
+    43
+  ],
+  "terrainCacheRegion": "balkans",
+  "terrainNotice": "Peaks of the Balkans elevation: Copernicus DEM GLO-30 Public (AWS 2021 release).\n\nproduced using Copernicus WorldDEM-30 \u00a9 DLR e.V. 2010-2014 and \u00a9 Airbus Defence and Space GmbH 2014-2018 provided under COPERNICUS by the European Union and ESA; all rights reserved\n\nThe organisations in charge of the Copernicus programme by law or by delegation do not incur any liability for any use of the Copernicus WorldDEM-30.\n\nLicense: https://dataspace.copernicus.eu/sites/default/files/media/files/2025-06/copernicus_contributing_mission_data_access_v2_cop_dem_licenses.pdf\nSource: https://registry.opendata.aws/copernicus-dem/\nVertical datum: EGM2008 orthometric metres. Native approximately 30 m cells are bilinearly resampled to point-aligned Int16 HGT for the shared terrain pipeline. Ocean-only cells absent from the official public inventory are zero.\n",
+  "terrainProvider": "copernicus-glo30",
+  "townlands": false,
+  "validationAnchors": {
+    "cerem": [
+      19.985,
+      42.489
+    ],
+    "doberdol": [
+      20.06,
+      42.549
+    ],
+    "gusinje": [
+      19.833,
+      42.562
+    ],
+    "peje": [
+      20.289,
+      42.659
+    ],
+    "plav": [
+      19.945,
+      42.596
+    ],
+    "reka-e-allages": [
+      20.178,
+      42.695
+    ],
+    "theth": [
+      19.769,
+      42.395
+    ],
+    "valbona": [
+      19.889,
+      42.452
+    ]
+  }
+}

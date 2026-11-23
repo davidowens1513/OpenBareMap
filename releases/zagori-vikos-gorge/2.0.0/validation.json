@@ -1,0 +1,351 @@
+{
+  "coverage": "Zagori\u2019s villages and stone bridges, Vikos Gorge, the upper Aoos valley, and the Tymfi massif.",
+  "coverageAnchors": {
+    "dragon-lake": {
+      "coordinate": [
+        20.785,
+        39.985
+      ],
+      "featuresInNeighbouringDetailedTiles": 230
+    },
+    "kipoi": {
+      "coordinate": [
+        20.791,
+        39.863
+      ],
+      "featuresInNeighbouringDetailedTiles": 1003
+    },
+    "konitsa": {
+      "coordinate": [
+        20.7433,
+        40.0443
+      ],
+      "featuresInNeighbouringDetailedTiles": 2675
+    },
+    "monodendri": {
+      "coordinate": [
+        20.747,
+        39.882
+      ],
+      "featuresInNeighbouringDetailedTiles": 1193
+    },
+    "papingo": {
+      "coordinate": [
+        20.717,
+        39.969
+      ],
+      "featuresInNeighbouringDetailedTiles": 742
+    },
+    "tymfi": {
+      "coordinate": [
+        20.827,
+        39.976
+      ],
+      "featuresInNeighbouringDetailedTiles": 127
+    },
+    "vikos": {
+      "coordinate": [
+        20.691,
+        39.951
+      ],
+      "featuresInNeighbouringDetailedTiles": 1102
+    }
+  },
+  "datasets": {
+    "basemap": {
+      "empty_tile_count": 0,
+      "logical_tiles_sha256": "d3681022820bf28d382e578a49c4c1e4f2ceeef6ad5c173f6333e6cf6e85b2fc",
+      "tile_count": 706
+    },
+    "grid": {
+      "empty_tile_count": 0,
+      "logical_tiles_sha256": "057b582b03ae8439cb98134f21a8b94de200f882537d1c42cbaa5d3777a814a2",
+      "tile_count": 693
+    },
+    "hillshade": {
+      "empty_tile_count": 0,
+      "logical_tiles_sha256": "d2c0e3740770e53975ddee1c2431e9ac44c932441ae1d6a63f2eff3bb80dc3b3",
+      "tile_count": 73
+    },
+    "topography": {
+      "empty_tile_count": 44317,
+      "logical_tiles_sha256": "df1b8449ba51671a078bb402f119bd45d6f98c09463f1109eaad4e24b70ab3cb",
+      "tile_count": 47883
+    }
+  },
+  "detail": {
+    "basemap": {
+      "boundaries": 1831,
+      "contours": 0
+    },
+    "topography": {
+      "boundaries": 0,
+      "contours": 40652
+    }
+  },
+  "garmin": {
+    "familyId": 4888,
+    "garminPackageRevision": "2.0.0-r1",
+    "inspection": {
+      "anchorLabels": {
+        "Konitsa": "Konitsa"
+      },
+      "bounds": [
+        20.629920959472656,
+        39.7499942779541,
+        21.150054931640625,
+        40.075035095214844
+      ],
+      "coastPolygonsByLevel": {
+        "0": {
+          "0x32": 2,
+          "0x54": 6
+        },
+        "1": {
+          "0x32": 2,
+          "0x54": 6
+        },
+        "2": {
+          "0x32": 2,
+          "0x54": 6
+        },
+        "3": {
+          "0x32": 2,
+          "0x54": 6
+        },
+        "4": {
+          "0x32": 2,
+          "0x54": 6
+        }
+      },
+      "contoursByLevel": {
+        "0": {
+          "0x20": 6639,
+          "0x22": 1640
+        },
+        "1": {
+          "0x20": 4966,
+          "0x22": 1225
+        },
+        "2": {
+          "0x22": 1110
+        },
+        "3": {
+          "0x10008": 973
+        },
+        "4": {}
+      },
+      "lineInstancesAtHighestDetail": {
+        "0x1": 23,
+        "0x10001": 302,
+        "0x10005": 42,
+        "0x10006": 74,
+        "0x1000b": 93,
+        "0x16": 722,
+        "0x18": 701,
+        "0x1c": 20,
+        "0x1f": 62,
+        "0x2": 23,
+        "0x20": 6639,
+        "0x22": 1640,
+        "0x3": 40,
+        "0x4": 146,
+        "0x6": 1469,
+        "0x7": 1290,
+        "0xa": 2077
+      },
+      "logicalCombinedSHA256": "cbad1490521b72189c9078063b748cbdc7f252108f3290db2c5c93ccedfb50b1",
+      "logicalHashNote": "Internal file names, sizes and payloads; only CommonHeader creation-date bytes 14..20 are zeroed for hashing. IMG archive headers are excluded. Output bytes are never modified.",
+      "logicalTileSHA256": {
+        "48880001.img": "1ac8d2930ccef2d36ced3df3420448957f72ec5ed7612dff0e2a40c86bf9e16b",
+        "48880002.img": "a8359f65c5c19bde8b37c0b64978f97858468b2db8564e7b4922e146595de2b0"
+      },
+      "pointInstancesAtHighestDetail": {
+        "0x10001": 111,
+        "0x10002": 81,
+        "0x10003": 187,
+        "0x10006": 538,
+        "0x2f0b": 74,
+        "0x600": 1,
+        "0x6603": 22,
+        "0x6615": 7,
+        "0x6616": 200,
+        "0x800": 70,
+        "0xb00": 15,
+        "0xc00": 71
+      },
+      "polygonInstancesAtHighestDetail": {
+        "0x10101": 67,
+        "0x10102": 60,
+        "0x10103": 44,
+        "0x10104": 51,
+        "0x10109": 26,
+        "0x1010a": 14,
+        "0x1010b": 18,
+        "0x13": 9656,
+        "0x32": 2,
+        "0x3c": 200,
+        "0x50": 925,
+        "0x51": 10,
+        "0x54": 6
+      },
+      "routing": false,
+      "subfileBytes": {
+        "DEM": 2054882,
+        "LBL": 22718,
+        "MPS": 234,
+        "RGN": 3660846,
+        "SRT": 912,
+        "TRE": 48271,
+        "TYP": 2982
+      },
+      "tiles": 2
+    },
+    "output": {
+      "bytes": 5813248,
+      "path": "regions/zagori-vikos-gorge/garmin/dist/OpenBareMap-Zagori-Vikos-Gorge.img",
+      "sha256": "4d3cc426fd3792679f09335da94323c46d097e56c1ea701fbbe8c5d0d59628f0"
+    },
+    "routing": false,
+    "status": "compiled and structurally inspected; hardware rendering pending"
+  },
+  "geometryProcessing": {
+    "contours": 4603,
+    "grid": {
+      "grid_10km": 12,
+      "grid_1km": 102
+    },
+    "landcover": {
+      "empty_source_areas": [],
+      "features": 554,
+      "retained": 10,
+      "smoothed": 544
+    }
+  },
+  "irelandGarminPackageRevision": "2.0.1-trail-detail-r1",
+  "irelandPreserved": true,
+  "labelGlyphs": {
+    "Open Sans Bold": true,
+    "Open Sans Regular": true,
+    "Open Sans Semibold": true
+  },
+  "landBackground": {
+    "dragon-lake": {
+      "coordinate": [
+        20.785,
+        39.985
+      ],
+      "verifiedZooms": [
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    },
+    "kipoi": {
+      "coordinate": [
+        20.791,
+        39.863
+      ],
+      "verifiedZooms": [
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    },
+    "konitsa": {
+      "coordinate": [
+        20.7433,
+        40.0443
+      ],
+      "verifiedZooms": [
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    },
+    "monodendri": {
+      "coordinate": [
+        20.747,
+        39.882
+      ],
+      "verifiedZooms": [
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    },
+    "papingo": {
+      "coordinate": [
+        20.717,
+        39.969
+      ],
+      "verifiedZooms": [
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    },
+    "tymfi": {
+      "coordinate": [
+        20.827,
+        39.976
+      ],
+      "verifiedZooms": [
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    },
+    "vikos": {
+      "coordinate": [
+        20.691,
+        39.951
+      ],
+      "verifiedZooms": [
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    }
+  },
+  "packages": {
+    "android": {
+      "checkedFiles": 43,
+      "nativeDeviceRenderingTested": false,
+      "sourceFiles": {
+        "basemap": "maps/basemap.mbtiles",
+        "coast": "maps/coast.mbtiles",
+        "hillshade": "maps/hillshade.mbtiles",
+        "topography": "maps/topography.mbtiles",
+        "utm-grid": "maps/grid.mbtiles"
+      }
+    },
+    "ios": {
+      "checkedFiles": 46,
+      "nativeDeviceRenderingTested": false,
+      "sourceFiles": {
+        "basemap": "maps/basemap.mbtiles",
+        "coast": "maps/coast.mbtiles",
+        "hillshade": "maps/hillshade.mbtiles",
+        "topography": "maps/topography.mbtiles",
+        "utm-grid": "maps/grid.mbtiles"
+      }
+    }
+  },
+  "region": "zagori-vikos-gorge",
+  "status": "automated checks passed; visual and hardware acceptance pending"
+}

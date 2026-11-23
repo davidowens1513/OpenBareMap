@@ -1,0 +1,41 @@
+{
+  "regions": {
+    "durmitor": {
+      "basemap": {
+        "sourceSHA256": "4ebeeb5806266aba06b44d06aacdfd2d8298a3c34526258ae4f37fab9c95d0fa",
+        "bytes": 7919573,
+        "sha256": "958ca3f2af3e06965c05aaacfa991d4735795fea6306634bfc80e521256c4979",
+        "tiles": 647
+      },
+      "grid": {
+        "sourceSHA256": "535b6bfd07e42d8827eafd2925f5cd1b7abf9776335cfea9cea38d5e78a85b9b",
+        "bytes": 180601,
+        "sha256": "3922562f11a88cb9add677383bdee42d205e1c79fc954e9806a2cd56dc57bfe9",
+        "tiles": 632
+      },
+      "hillshade": {
+        "sourceSHA256": "19fbd89f5d8022d14d3e19a40a152459042829445e253bcc3562926eef092aec",
+        "bytes": 1882578,
+        "sha256": "811531cd6fa8cb90d7ae346fbae049683cc2b8995829fb77555c502a0d2732eb",
+        "tiles": 68
+      },
+      "topography": {
+        "sourceSHA256": "1a4e61160dcc87a234a9affeb363510d1b39de5060ec6f5f879f2fdea68da554",
+        "bytes": 9232265,
+        "sha256": "3c15cd796765562b251364b459bad3e5a6308f7f8b66a7f342e47f900f05fabf",
+        "tiles": 43352
+      },
+      "coast": {
+        "sourceSHA256": "c1d0d26fa045956db407705f57b9bb2e2200264b82aad471871c75813ba0dab2",
+        "bytes": 264822,
+        "sha256": "6747f14fca4f5f4c79e2812e12b225b9ebfdc3b46946ea7995ad582c6ffe51e0",
+        "tiles": 2821
+      }
+    }
+  },
+  "pmtilesPython": "3.8.1",
+  "pmtilesJS": "4.5.0",
+  "librarySHA256": "caf981bc46f6327ee7e65d5dc964d89d38a69f60edca2bd4c5c890c21b554c6c",
+  "dataOrigin": "https://downloads.appsbyonzy.dev/OpenBareMap/durmitor/2.0.0/preview",
+  "scope": "Complete selected map tiles; no regional or zoom sampling."
+}

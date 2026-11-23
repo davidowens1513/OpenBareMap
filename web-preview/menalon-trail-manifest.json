@@ -1,0 +1,41 @@
+{
+  "regions": {
+    "menalon-trail": {
+      "basemap": {
+        "sourceSHA256": "b89caa8cb5ed7059f61f30ba50c33a629080257cd25e5077adedcadf15385bed",
+        "bytes": 3919539,
+        "sha256": "083c51073bc7224d98f4f26aa78e8057b7b736d6fbac4632351a5cace44e78df",
+        "tiles": 539
+      },
+      "grid": {
+        "sourceSHA256": "463900288824bf6f52d9f7b860536edf18f7b70259a9e8df60cd571f2d65f6f3",
+        "bytes": 158836,
+        "sha256": "9a798130c1b751773a8489e48a595c13e0cc3c7be5476874fc832d98643ffceb",
+        "tiles": 531
+      },
+      "hillshade": {
+        "sourceSHA256": "f61117883c5728985726b73f069f3f2d08efb537093d04cf64868293ab1fdc0d",
+        "bytes": 1651588,
+        "sha256": "0a9b0e3913d00ba175784c54dee7370994e3cc8071747b5a8f8f87e5587c142a",
+        "tiles": 48
+      },
+      "topography": {
+        "sourceSHA256": "62e47b2b489fb0e2386ca1f324c6c79bcb2a8461a8a1167c0188af5ba92ffcc6",
+        "bytes": 9993245,
+        "sha256": "0960e45e07196bc3de03a5d0d2b1bbc7671727407ec0a5c6817e5e60d536d8d9",
+        "tiles": 24217
+      },
+      "coast": {
+        "sourceSHA256": "5673c66ecc1e3aee2e1d2967d4f595c8ae229892cec2f833cc0905a1047a7d48",
+        "bytes": 1125958,
+        "sha256": "825ebc4c4de39d34668605c306c804bfe13f117d5e2dd8a9d21c44793491a0d7",
+        "tiles": 1708
+      }
+    }
+  },
+  "pmtilesPython": "3.8.1",
+  "pmtilesJS": "4.5.0",
+  "librarySHA256": "caf981bc46f6327ee7e65d5dc964d89d38a69f60edca2bd4c5c890c21b554c6c",
+  "dataOrigin": "https://downloads.appsbyonzy.dev/OpenBareMap/menalon-trail/2.0.0/preview",
+  "scope": "Complete selected map tiles; no regional or zoom sampling."
+}

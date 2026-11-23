@@ -1,0 +1,30 @@
+{
+  "areaSquareDegrees": 0.14209999999999912,
+  "bounds": [
+    18.87,
+    43.0,
+    19.36,
+    43.29
+  ],
+  "entireRequestedFootprintCovered": true,
+  "exactFootprint": null,
+  "inputs": [
+    {
+      "bytes": 5099,
+      "path": "data/regions/durmitor/montenegro.poly",
+      "sha256": "5b8871aa68125e4918b9e9676e5f1d7578b88e6c0aa26971c1fbf162fabad92e",
+      "url": "https://download.geofabrik.de/europe/montenegro/montenegro.poly"
+    }
+  ],
+  "knownDestinationsCovered": [
+    "black-lake",
+    "bobotov-kuk",
+    "island",
+    "sedlo",
+    "tara-bridge",
+    "zabljak"
+  ],
+  "operation": "Requested rectangular crop; source outlines cover all destination anchors",
+  "polygons": 1,
+  "sha256": "9a6dc6ffd1d08ede0dd2a9afaf9e4f35f88aa03239bcb409b222324cf02be25d"
+}

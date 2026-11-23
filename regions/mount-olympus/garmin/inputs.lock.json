@@ -1,0 +1,20 @@
+{
+  "inputs": [
+    {
+      "path": "regions/mount-olympus/garmin/inputs/contours.geojson.gz",
+      "sha256": "03dfd4927597ead368092cc8b6efbeb265016b9838f8da9444350b19cf06ab7b",
+      "uncompressedSHA256": "cb34690b772e7c286356c2584b2541dfee2ec89053097360918698443386b1ed"
+    },
+    {
+      "path": "regions/mount-olympus/garmin/inputs/landcover.geojson.gz",
+      "sha256": "707eda9813e668b0a27a26961cbfe134bfc15e92106e4ba31a9152e974a6b8e9",
+      "uncompressedSHA256": "bdbc45a94857c2a73a9c1274ae47e0366002045793303d89847ff0860e2406f4"
+    },
+    {
+      "path": "regions/mount-olympus/garmin/inputs/land.geojson.gz",
+      "sha256": "7cf32ea2948639d6060500c837e3261b062f4b3907176565780fb4e4ebdcb42a",
+      "uncompressedSHA256": "fb7ace77e775ecf7899926c09e1f569ccff6c6aaa810b53386b3e7e689b51d88"
+    }
+  ],
+  "region": "mount-olympus"
+}

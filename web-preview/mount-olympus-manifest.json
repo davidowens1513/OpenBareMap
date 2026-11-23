@@ -1,0 +1,41 @@
+{
+  "regions": {
+    "mount-olympus": {
+      "basemap": {
+        "sourceSHA256": "90120660266b748b4bebe8316a55f5dbdac75c01979781c66f5244b7ec8c2f04",
+        "bytes": 4151645,
+        "sha256": "b44f555e2b0a67313f092c04da3c4ed021f7854397d6073a54f70df5e2e58c3b",
+        "tiles": 517
+      },
+      "grid": {
+        "sourceSHA256": "070dd8e1f63659a1b5f460673dd3ee32a720c44d681742ca2c4d34db89b49c37",
+        "bytes": 163993,
+        "sha256": "a3531ec82e5c48664f0a2fc67c2f33c006c8f95fd2d23c6277288b9ff5432cd8",
+        "tiles": 555
+      },
+      "hillshade": {
+        "sourceSHA256": "1c3f461838204de464127376631bd3ff5269a79b32595146a4a921fab2ec8988",
+        "bytes": 1292704,
+        "sha256": "cb6d671f302135dd62920cef00be3384958dc80bd7315459bc7c7b977c866c79",
+        "tiles": 48
+      },
+      "topography": {
+        "sourceSHA256": "002ddd4918cf4aae5eb70fcedaca7868b2cee01a88c8920d6fca67cea0028fd4",
+        "bytes": 7844629,
+        "sha256": "bc6476709ec4e66a2a8883612eece8348d439a378a1722c38186f379ffcf19d3",
+        "tiles": 41390
+      },
+      "coast": {
+        "sourceSHA256": "866e092618db4c0e57571c2a59ec740d2c933d039b135598c4306c4f904f5be0",
+        "bytes": 713594,
+        "sha256": "3bbef7286acffba2635741bb4c312d90134afd99dbab06947345818aaddc1735",
+        "tiles": 2789
+      }
+    }
+  },
+  "pmtilesPython": "3.8.1",
+  "pmtilesJS": "4.5.0",
+  "librarySHA256": "caf981bc46f6327ee7e65d5dc964d89d38a69f60edca2bd4c5c890c21b554c6c",
+  "dataOrigin": "https://downloads.appsbyonzy.dev/OpenBareMap/mount-olympus/2.0.0/preview",
+  "scope": "Complete selected map tiles; no regional or zoom sampling."
+}

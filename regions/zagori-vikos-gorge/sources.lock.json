@@ -1,0 +1,29 @@
+{
+  "accessed_utc": "2026-11-23T19:42:59.787727+00:00",
+  "inputs": [
+    {
+      "bytes": 343286408,
+      "path": "data/regions/balkans/greece-261117.osm.pbf",
+      "replicationTimestamp": "2026-11-17T21:24:30Z",
+      "sha256": "7de66f82954a04a2d27adc625b307c8737fae17b49eec904674b53459bdb4d0e",
+      "url": "https://download.geofabrik.de/europe/greece/greece-261117.osm.pbf"
+    }
+  ],
+  "osm": {
+    "bytes": 14767355,
+    "operation": "Complete-feature bbox extraction with nested relation references",
+    "path": "data/regions/zagori-vikos-gorge/greece-261117.osm.clipped.osm.pbf",
+    "replicationTimestamp": "2026-11-17T21:24:30Z",
+    "sha256": "c45f9616dbbc75d45b4108a4dd89a7638190514430335c23e8a7517d763dcfa3",
+    "snapshot_date": "2026-11-17",
+    "url": "https://download.geofabrik.de/europe/greece/greece-261117.osm.pbf"
+  },
+  "polygons": [
+    {
+      "bytes": 12694,
+      "path": "data/regions/zagori-vikos-gorge/greece.poly",
+      "sha256": "037f2c4c8babbe9d34998ab9022f68d751151a8bb079709cd97cf5cbaaadde0f",
+      "url": "https://download.geofabrik.de/europe/greece/greece.poly"
+    }
+  ]
+}

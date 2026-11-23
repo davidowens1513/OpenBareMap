@@ -1,0 +1,3 @@
+type=route & (route=hiking | route=foot | route=walking) & state!=proposed { apply { set obm:walking=yes } }
+type=route & route=bicycle & state!=proposed { apply { set obm:cycling=yes } }
+type=boundary & boundary=administrative { apply { add boundary=administrative; add admin_level='${admin_level}' } }

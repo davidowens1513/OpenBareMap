@@ -1,0 +1,35 @@
+{
+  "bytes": 23291398,
+  "datasets": {
+    "basemap": {
+      "path": "maps/basemap.mbtiles",
+      "sha256": "b89caa8cb5ed7059f61f30ba50c33a629080257cd25e5077adedcadf15385bed"
+    },
+    "coast": {
+      "derived_from": "62e47b2b489fb0e2386ca1f324c6c79bcb2a8461a8a1167c0188af5ba92ffcc6",
+      "maxzoom": 12,
+      "operation": "Preserve land-layer MVT bytes only through zoom 12; omit other layers.",
+      "path": "maps/coast.mbtiles",
+      "sha256": "5673c66ecc1e3aee2e1d2967d4f595c8ae229892cec2f833cc0905a1047a7d48"
+    },
+    "grid": {
+      "path": "maps/grid.mbtiles",
+      "sha256": "463900288824bf6f52d9f7b860536edf18f7b70259a9e8df60cd571f2d65f6f3"
+    },
+    "hillshade": {
+      "path": "maps/hillshade.mbtiles",
+      "sha256": "f61117883c5728985726b73f069f3f2d08efb537093d04cf64868293ab1fdc0d"
+    },
+    "topography": {
+      "path": "maps/topography.mbtiles",
+      "sha256": "62e47b2b489fb0e2386ca1f324c6c79bcb2a8461a8a1167c0188af5ba92ffcc6"
+    }
+  },
+  "instructionsSHA256": "fd2d2737ee7bd69b6b10052ff3ca1d199de5b3553eb62c1d132b2dc42023215e",
+  "instructionsURL": "https://downloads.appsbyonzy.dev/OpenBareMap/menalon-trail/2.0.0/app-bundles-v1/ios/instructions.txt",
+  "localPath": "releases/menalon-trail/2.0.0/app-bundles-v1/ios/OpenBareMap-Menalon-Trail-iOS-Bundle.zip",
+  "mapManifestSHA256": "0457df6e48bed7bffe33e2ec4109ca5eb138df7c6933c89a1785e30d22fad3b5",
+  "r2Key": "OpenBareMap/menalon-trail/2.0.0/app-bundles-v1/ios/OpenBareMap-Menalon-Trail-iOS-Bundle.zip",
+  "sha256": "093954ae5be9044e4e28297669d2e6d79b7c1a108c536f2e63f30042e2c631b6",
+  "url": "https://downloads.appsbyonzy.dev/OpenBareMap/menalon-trail/2.0.0/app-bundles-v1/ios/OpenBareMap-Menalon-Trail-iOS-Bundle.zip"
+}

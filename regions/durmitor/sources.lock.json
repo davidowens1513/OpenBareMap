@@ -1,0 +1,29 @@
+{
+  "accessed_utc": "2026-11-23T19:39:15.569524+00:00",
+  "inputs": [
+    {
+      "bytes": 34792739,
+      "path": "data/regions/balkans/montenegro-261122.osm.pbf",
+      "replicationTimestamp": "2026-11-22T21:20:48Z",
+      "sha256": "fdea1ef6ba7e0a352f2f29b9db34b94a4fec8c529c519a572cb8cf1d329a4ecf",
+      "url": "https://download.geofabrik.de/europe/montenegro/montenegro-261122.osm.pbf"
+    }
+  ],
+  "osm": {
+    "bytes": 3946680,
+    "operation": "Complete-feature bbox extraction with nested relation references",
+    "path": "data/regions/durmitor/montenegro-261122.osm.clipped.osm.pbf",
+    "replicationTimestamp": "2026-11-22T21:20:48Z",
+    "sha256": "a875e2d2072cce8701d43ca5362782cd66b60ff8f346a26fd9a27fb8f511decc",
+    "snapshot_date": "2026-11-22",
+    "url": "https://download.geofabrik.de/europe/montenegro/montenegro-261122.osm.pbf"
+  },
+  "polygons": [
+    {
+      "bytes": 5099,
+      "path": "data/regions/durmitor/montenegro.poly",
+      "sha256": "5b8871aa68125e4918b9e9676e5f1d7578b88e6c0aa26971c1fbf162fabad92e",
+      "url": "https://download.geofabrik.de/europe/montenegro/montenegro.poly"
+    }
+  ]
+}

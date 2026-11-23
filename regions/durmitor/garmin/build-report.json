@@ -1,0 +1,130 @@
+{
+  "familyId": 4887,
+  "garminPackageRevision": "2.0.0-r1",
+  "inspection": {
+    "anchorLabels": {
+      "Bobotov Kuk": "Bobotov Kuk"
+    },
+    "bounds": [
+      18.869962692260742,
+      42.99997329711914,
+      19.360055923461914,
+      43.29008102416992
+    ],
+    "coastPolygonsByLevel": {
+      "0": {
+        "0x32": 2,
+        "0x54": 6
+      },
+      "1": {
+        "0x32": 2,
+        "0x54": 6
+      },
+      "2": {
+        "0x32": 2,
+        "0x54": 6
+      },
+      "3": {
+        "0x32": 2,
+        "0x54": 6
+      },
+      "4": {
+        "0x32": 2,
+        "0x54": 3
+      }
+    },
+    "contoursByLevel": {
+      "0": {
+        "0x20": 5987,
+        "0x22": 1496
+      },
+      "1": {
+        "0x20": 5088,
+        "0x22": 1271
+      },
+      "2": {
+        "0x22": 1223
+      },
+      "3": {
+        "0x10008": 1138
+      },
+      "4": {}
+    },
+    "lineInstancesAtHighestDetail": {
+      "0x10001": 77,
+      "0x10002": 195,
+      "0x10003": 3,
+      "0x10005": 22,
+      "0x10006": 21,
+      "0x1000b": 40,
+      "0x16": 624,
+      "0x18": 254,
+      "0x1c": 44,
+      "0x1e": 16,
+      "0x1f": 11,
+      "0x20": 5987,
+      "0x22": 1496,
+      "0x3": 50,
+      "0x4": 31,
+      "0x6": 792,
+      "0x7": 517,
+      "0xa": 653
+    },
+    "logicalCombinedSHA256": "7d2395f4990ab912478224f8b2891e358766766b5c06e23b9e7e595cc31d066e",
+    "logicalHashNote": "Internal file names, sizes and payloads; only CommonHeader creation-date bytes 14..20 are zeroed for hashing. IMG archive headers are excluded. Output bytes are never modified.",
+    "logicalTileSHA256": {
+      "48870001.img": "4c605a15195981ee5de76d85e1f1c42258506ed3e462cb5d00a2572afe1f5e87",
+      "48870002.img": "6d36aa71fc0c1e28860d38ff848fca53fbb4fe3f08d7cef2e1f496cdc4a3806c"
+    },
+    "pointInstancesAtHighestDetail": {
+      "0x100": 1,
+      "0x10001": 21,
+      "0x10002": 117,
+      "0x10003": 96,
+      "0x10006": 274,
+      "0x2f0b": 54,
+      "0x600": 1,
+      "0x6603": 30,
+      "0x6615": 10,
+      "0x6616": 1155,
+      "0x800": 75,
+      "0xb00": 275,
+      "0xc00": 411
+    },
+    "polygonInstancesAtHighestDetail": {
+      "0x10101": 11,
+      "0x10102": 1814,
+      "0x10103": 82,
+      "0x10104": 106,
+      "0x10105": 5,
+      "0x10106": 7,
+      "0x10109": 536,
+      "0x1010a": 61,
+      "0x1010b": 1,
+      "0x13": 7539,
+      "0x32": 2,
+      "0x3c": 147,
+      "0x50": 2933,
+      "0x51": 6,
+      "0x54": 6
+    },
+    "routing": false,
+    "subfileBytes": {
+      "DEM": 1611664,
+      "LBL": 30236,
+      "MPS": 198,
+      "RGN": 3275885,
+      "SRT": 912,
+      "TRE": 40336,
+      "TYP": 2982
+    },
+    "tiles": 2
+  },
+  "output": {
+    "bytes": 4983808,
+    "path": "regions/durmitor/garmin/dist/OpenBareMap-Durmitor.img",
+    "sha256": "89c9da6bb996cec662a332653bc229ccc69b8a90a3a0ad4eb3c094364e5436f3"
+  },
+  "routing": false,
+  "status": "compiled and structurally inspected; hardware rendering pending"
+}

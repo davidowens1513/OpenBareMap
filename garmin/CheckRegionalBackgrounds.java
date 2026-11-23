@@ -68,6 +68,11 @@ public class CheckRegionalBackgrounds {
    case "camino-portugues" -> new double[][]{{-8.41,41.55},{-8.43,42.23},{-8.89,42.67}};
    case "camino-del-norte" -> new double[][]{{-5.67,43.36},{-4.84,42.69},{-7.65,42.86}};
    case "azores" -> new double[][]{{-27.216,38.65},{-28.052,39.05},{-25.083,36.97}};
+   case "peaks-of-the-balkans" -> new double[][]{{19.51,42.40},{20.30,42.82},{20.40,42.60}};
+   case "durmitor" -> new double[][]{{18.86,43.15},{19.10,43.30},{19.37,43.15}};
+   case "zagori-vikos-gorge" -> new double[][]{{20.62,39.95},{20.90,39.74},{21.16,39.90}};
+   case "mount-olympus" -> new double[][]{{22.21,40.06},{22.50,40.21},{22.64,39.91}};
+   case "menalon-trail" -> new double[][]{{21.90,37.65},{22.10,37.83},{22.30,37.65}};
    default -> throw new IllegalArgumentException(args[0]);
   };
   int tiles=0,polygons=0;Set<Integer> resolutions=new TreeSet<>();

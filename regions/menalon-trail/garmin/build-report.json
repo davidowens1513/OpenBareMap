@@ -1,0 +1,121 @@
+{
+  "familyId": 4890,
+  "garminPackageRevision": "2.0.0-r1",
+  "inspection": {
+    "anchorLabels": {
+      "Dimitsana": "Dimitsana",
+      "Stemnitsa": "Stemnitsa"
+    },
+    "bounds": [
+      21.909914016723633,
+      37.469987869262695,
+      22.290058135986328,
+      37.820091247558594
+    ],
+    "coastPolygonsByLevel": {
+      "0": {
+        "0x32": 2,
+        "0x54": 4
+      },
+      "1": {
+        "0x32": 2,
+        "0x54": 4
+      },
+      "2": {
+        "0x32": 2,
+        "0x54": 4
+      },
+      "3": {
+        "0x32": 2,
+        "0x54": 4
+      },
+      "4": {
+        "0x32": 2,
+        "0x54": 4
+      }
+    },
+    "contoursByLevel": {
+      "0": {
+        "0x20": 5196,
+        "0x22": 1250
+      },
+      "1": {
+        "0x20": 4242,
+        "0x22": 1013
+      },
+      "2": {
+        "0x22": 950
+      },
+      "3": {
+        "0x10008": 869
+      },
+      "4": {}
+    },
+    "lineInstancesAtHighestDetail": {
+      "0x10001": 165,
+      "0x10005": 42,
+      "0x10006": 8,
+      "0x1000b": 106,
+      "0x16": 245,
+      "0x18": 118,
+      "0x1a": 1,
+      "0x1c": 77,
+      "0x1f": 35,
+      "0x20": 5196,
+      "0x22": 1250,
+      "0x3": 70,
+      "0x4": 117,
+      "0x6": 1669,
+      "0x7": 1052,
+      "0xa": 1286
+    },
+    "logicalCombinedSHA256": "6144a9e410b0394d58ceebded9ff371a1ece38f583228a843e703d0495843711",
+    "logicalHashNote": "Internal file names, sizes and payloads; only CommonHeader creation-date bytes 14..20 are zeroed for hashing. IMG archive headers are excluded. Output bytes are never modified.",
+    "logicalTileSHA256": {
+      "48900001.img": "f5a9827ea8c90efac3f1db534f678aa786e70541e98453632e7edf1ca1f6de0a",
+      "48900002.img": "d3e641395cdb53a8d496fc04e658d4732eefae20dbd5d4f90a5a97677c8174c0"
+    },
+    "pointInstancesAtHighestDetail": {
+      "0x10001": 11,
+      "0x10002": 18,
+      "0x10003": 56,
+      "0x10006": 492,
+      "0x2f0b": 27,
+      "0x6603": 3,
+      "0x6616": 18,
+      "0x800": 83,
+      "0xb00": 35,
+      "0xc00": 26
+    },
+    "polygonInstancesAtHighestDetail": {
+      "0x10101": 32,
+      "0x10102": 20,
+      "0x10103": 71,
+      "0x10104": 66,
+      "0x10109": 3,
+      "0x13": 2250,
+      "0x32": 2,
+      "0x3c": 16,
+      "0x50": 1132,
+      "0x54": 4
+    },
+    "routing": false,
+    "subfileBytes": {
+      "DEM": 1493457,
+      "LBL": 15850,
+      "MPS": 213,
+      "RGN": 2464275,
+      "SRT": 912,
+      "TRE": 31719,
+      "TYP": 2982
+    },
+    "tiles": 2
+  },
+  "output": {
+    "bytes": 4028416,
+    "path": "regions/menalon-trail/garmin/dist/OpenBareMap-Menalon-Trail.img",
+    "sha256": "44e20c2cba7c0046a510cf4b8b8b81c5451c8bec076b2dc46878b0f621a54d30"
+  },
+  "routing": false,
+  "status": "compiled and structurally inspected; hardware rendering pending"
+}

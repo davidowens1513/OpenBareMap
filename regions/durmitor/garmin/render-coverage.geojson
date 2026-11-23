@@ -1,0 +1,59 @@
+{
+  "features": [
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              18.98915,
+              43.28052
+            ],
+            [
+              18.99108,
+              43.26246
+            ],
+            [
+              19.00804,
+              43.25309
+            ],
+            [
+              19.033923220035778,
+              43.29
+            ],
+            [
+              19.36,
+              43.29
+            ],
+            [
+              19.36,
+              43.0
+            ],
+            [
+              18.87,
+              43.0
+            ],
+            [
+              18.87,
+              43.29
+            ],
+            [
+              18.966159411764714,
+              43.29
+            ],
+            [
+              18.98915,
+              43.28052
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "properties": {
+        "purpose": "Limit opaque native background and land-cover polygons; retain complete accepted OSM and terrain inputs",
+        "region": "durmitor"
+      },
+      "type": "Feature"
+    }
+  ],
+  "type": "FeatureCollection"
+}

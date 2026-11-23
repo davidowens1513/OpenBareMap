@@ -1,0 +1,20 @@
+{
+  "inputs": [
+    {
+      "path": "regions/menalon-trail/garmin/inputs/contours.geojson.gz",
+      "sha256": "0b4bd8bb54acaeb214ac0bf83aa2c8e86f26c7dfdcd39a813d78ef4bdd622238",
+      "uncompressedSHA256": "008c7b6da0263d8790174cf158e2b9bc7271e3d501253f031a2c668f9200865e"
+    },
+    {
+      "path": "regions/menalon-trail/garmin/inputs/landcover.geojson.gz",
+      "sha256": "b3f582450be3aaaf4ce19a5db186b55ca27914d4206b7f61af48ac9faf53cfd9",
+      "uncompressedSHA256": "79446fea29ff3e19f18e62a67075e5e0bbb576620ce33fb992008c84d9d9d14c"
+    },
+    {
+      "path": "regions/menalon-trail/garmin/inputs/land.geojson.gz",
+      "sha256": "91400cbbd296d5ffb0be9652d1a324405dad1292bb52fe3bd9c5855c7e4779cf",
+      "uncompressedSHA256": "a39065feb9d0044a80ffe469b7ca31ffd33fdbf922bbd3f236738946ea64a1c3"
+    }
+  ],
+  "region": "menalon-trail"
+}

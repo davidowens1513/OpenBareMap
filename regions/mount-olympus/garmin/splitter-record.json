@@ -1,0 +1,21 @@
+{
+  "combinedSHA256": "9070748b0a0120d8ecd9ed4ed886e7d8b5012c2edd794b82a031d51072787378",
+  "command": [
+    "/opt/homebrew/opt/openjdk@21/libexec/openjdk.jdk/Contents/Home/bin/java",
+    "-Xmx6g",
+    "-jar",
+    "/Volumes/Extreme SSD/Projects/OpenBareMap/garmin/tools/splitter-r654/splitter.jar",
+    "--mapid=48890001",
+    "--description=OpenBareMap Mount Olympus",
+    "--max-nodes=1000000",
+    "--max-threads=2",
+    "--keep-complete=true",
+    "--output=pbf",
+    "--polygon-file=/Volumes/Extreme SSD/Projects/OpenBareMap/regions/mount-olympus/garmin/coverage.poly",
+    "--output-dir=/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/906ead9d53a7/mount-olympus/garmin/split",
+    "--ignore-osm-bounds=true",
+    "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/906ead9d53a7/mount-olympus/garmin/combined.osm.pbf"
+  ],
+  "coverageSHA256": "e2954ba866bcf09e807acc84c0be5fd1ad543218ae651a536b313d001a1f73d2",
+  "ignoreSourceHeaderBounds": true
+}

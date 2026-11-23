@@ -1,0 +1,54 @@
+{
+  "bounds": [
+    18.87,
+    43.0,
+    19.36,
+    43.29
+  ],
+  "contextEnvelope": [
+    18.87,
+    43.0,
+    19.36,
+    43.29
+  ],
+  "drawPriority": 25,
+  "format": "openbaremap-garmin-render-footprint-v1",
+  "geometry": {
+    "bytes": 1139,
+    "path": "regions/durmitor/garmin/render-coverage.geojson",
+    "sha256": "715f72c9e2f30dd64cbfcd21ba92e5154b549a1f97655b44d052cf2141ff5fd1"
+  },
+  "inputs": [
+    {
+      "bytes": 5099,
+      "path": "data/regions/durmitor/montenegro.poly",
+      "sha256": "5b8871aa68125e4918b9e9676e5f1d7578b88e6c0aa26971c1fbf162fabad92e",
+      "url": "https://download.geofabrik.de/europe/montenegro/montenegro.poly"
+    }
+  ],
+  "knownDestinationsCovered": {
+    "black-lake": [
+      19.088,
+      43.144
+    ],
+    "bobotov-kuk": [
+      19.034,
+      43.127
+    ],
+    "sedlo": [
+      19.054,
+      43.1
+    ],
+    "tara-bridge": [
+      19.294,
+      43.15
+    ],
+    "zabljak": [
+      19.121,
+      43.155
+    ]
+  },
+  "purpose": "Rectangular Garmin tiles may overlap other countries. Do not fill their padding with sea, land or land-cover polygons.",
+  "region": "durmitor",
+  "transparentNativeMap": true
+}

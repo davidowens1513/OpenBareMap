@@ -1,0 +1,20 @@
+{
+  "inputs": [
+    {
+      "path": "regions/durmitor/garmin/inputs/contours.geojson.gz",
+      "sha256": "97269c2a098ce8efb899700783c3dfd192b0f2be12a4cdcf5c969556d4830e10",
+      "uncompressedSHA256": "e26add7bff197df71f76c1ae56c0299613521eec07bd5f211bf374e2ea653b1b"
+    },
+    {
+      "path": "regions/durmitor/garmin/inputs/landcover.geojson.gz",
+      "sha256": "89a0060a59bcb72026ec2bcd32bb43841ca529ee695249e5b6ee0c3935a35927",
+      "uncompressedSHA256": "20f47fb9493360b726fb9c85364ad0fd99c9910f96767b3fa6b7c38fc6270d3b"
+    },
+    {
+      "path": "regions/durmitor/garmin/inputs/land.geojson.gz",
+      "sha256": "ecb978237837a59734662d5f8a840add6c6e3fa84fc8bb09b5bb2737b840978d",
+      "uncompressedSHA256": "36d48305fbd15130f04e39441004babdbe82c2fa50dd3a958688646d7d9664f0"
+    }
+  ],
+  "region": "durmitor"
+}

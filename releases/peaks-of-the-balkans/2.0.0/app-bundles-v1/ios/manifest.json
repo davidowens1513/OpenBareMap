@@ -1,0 +1,35 @@
+{
+  "bytes": 88918624,
+  "datasets": {
+    "basemap": {
+      "path": "maps/basemap.mbtiles",
+      "sha256": "8ea365a1e4157ed84bb23dcc94aa6fb3e0aac9cb3f5673202a304956c9af9b83"
+    },
+    "coast": {
+      "derived_from": "7eaee48f5c137d63d7ae54f8ed859d1a17645c431d8207895d5ee4f7acc57317",
+      "maxzoom": 12,
+      "operation": "Preserve land-layer MVT bytes only through zoom 12; omit other layers.",
+      "path": "maps/coast.mbtiles",
+      "sha256": "7e43cec51066ff482df45ce44236596655e43d1d6cd01a4b31cd9866738e3148"
+    },
+    "grid": {
+      "path": "maps/grid.mbtiles",
+      "sha256": "fd336b882347cebe90181b4fce5b71ef0a7a28bd49ee4ed314930e4e06db2bee"
+    },
+    "hillshade": {
+      "path": "maps/hillshade.mbtiles",
+      "sha256": "0574306b0eeec448c05a92cc66b5a6e647c323545664d263e2725aa82778a1bb"
+    },
+    "topography": {
+      "path": "maps/topography.mbtiles",
+      "sha256": "7eaee48f5c137d63d7ae54f8ed859d1a17645c431d8207895d5ee4f7acc57317"
+    }
+  },
+  "instructionsSHA256": "5979945610f493f6aea18016273e77a63a7612c578d63013ca21034946d24151",
+  "instructionsURL": "https://downloads.appsbyonzy.dev/OpenBareMap/peaks-of-the-balkans/2.0.0/app-bundles-v1/ios/instructions.txt",
+  "localPath": "releases/peaks-of-the-balkans/2.0.0/app-bundles-v1/ios/OpenBareMap-Peaks-of-the-Balkans-iOS-Bundle.zip",
+  "mapManifestSHA256": "33b75987bc70dda4e65350fa7f13e0de1d3465ffa8fd239600c6f3ae63eb54c0",
+  "r2Key": "OpenBareMap/peaks-of-the-balkans/2.0.0/app-bundles-v1/ios/OpenBareMap-Peaks-of-the-Balkans-iOS-Bundle.zip",
+  "sha256": "5dcdeffc2a23fa8b710014b5c45f9d6a4c39b69018ea517ffe007dea7be78764",
+  "url": "https://downloads.appsbyonzy.dev/OpenBareMap/peaks-of-the-balkans/2.0.0/app-bundles-v1/ios/OpenBareMap-Peaks-of-the-Balkans-iOS-Bundle.zip"
+}

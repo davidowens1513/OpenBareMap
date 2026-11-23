@@ -1,0 +1,62 @@
+{
+  "bounds": [
+    20.63,
+    39.75,
+    21.15,
+    40.075
+  ],
+  "contextEnvelope": [
+    20.63,
+    39.75,
+    21.15,
+    40.075
+  ],
+  "drawPriority": 25,
+  "format": "openbaremap-garmin-render-footprint-v1",
+  "geometry": {
+    "bytes": 753,
+    "path": "regions/zagori-vikos-gorge/garmin/render-coverage.geojson",
+    "sha256": "48e7645509db623f5f73ae4e3914663c6dd4a668a693037d8bb0971d2e8801fe"
+  },
+  "inputs": [
+    {
+      "bytes": 12694,
+      "path": "data/regions/zagori-vikos-gorge/greece.poly",
+      "sha256": "037f2c4c8babbe9d34998ab9022f68d751151a8bb079709cd97cf5cbaaadde0f",
+      "url": "https://download.geofabrik.de/europe/greece/greece.poly"
+    }
+  ],
+  "knownDestinationsCovered": {
+    "dragon-lake": [
+      20.785,
+      39.985
+    ],
+    "kipoi": [
+      20.791,
+      39.863
+    ],
+    "konitsa": [
+      20.7433,
+      40.0443
+    ],
+    "monodendri": [
+      20.747,
+      39.882
+    ],
+    "papingo": [
+      20.717,
+      39.969
+    ],
+    "tymfi": [
+      20.827,
+      39.976
+    ],
+    "vikos": [
+      20.691,
+      39.951
+    ]
+  },
+  "purpose": "Rectangular Garmin tiles may overlap other countries. Do not fill their padding with sea, land or land-cover polygons.",
+  "region": "zagori-vikos-gorge",
+  "transparentNativeMap": true
+}

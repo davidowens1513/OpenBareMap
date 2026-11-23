@@ -1,0 +1,39 @@
+{
+  "features": [
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              20.63,
+              39.75
+            ],
+            [
+              20.63,
+              40.075
+            ],
+            [
+              21.15,
+              40.075
+            ],
+            [
+              21.15,
+              39.75
+            ],
+            [
+              20.63,
+              39.75
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "properties": {
+        "purpose": "Limit opaque native background and land-cover polygons; retain complete accepted OSM and terrain inputs",
+        "region": "zagori-vikos-gorge"
+      },
+      "type": "Feature"
+    }
+  ],
+  "type": "FeatureCollection"
+}

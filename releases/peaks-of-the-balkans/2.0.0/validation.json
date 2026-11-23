@@ -1,0 +1,387 @@
+{
+  "coverage": "The Peaks of the Balkans circuit through Albania, Montenegro and Kosovo, including Theth, Valbona, Plav, the Rugova valley and Pej\u00eb.",
+  "coverageAnchors": {
+    "cerem": {
+      "coordinate": [
+        19.985,
+        42.489
+      ],
+      "featuresInNeighbouringDetailedTiles": 856
+    },
+    "doberdol": {
+      "coordinate": [
+        20.06,
+        42.549
+      ],
+      "featuresInNeighbouringDetailedTiles": 858
+    },
+    "gusinje": {
+      "coordinate": [
+        19.833,
+        42.562
+      ],
+      "featuresInNeighbouringDetailedTiles": 2413
+    },
+    "peje": {
+      "coordinate": [
+        20.289,
+        42.659
+      ],
+      "featuresInNeighbouringDetailedTiles": 16786
+    },
+    "plav": {
+      "coordinate": [
+        19.945,
+        42.596
+      ],
+      "featuresInNeighbouringDetailedTiles": 2292
+    },
+    "reka-e-allages": {
+      "coordinate": [
+        20.178,
+        42.695
+      ],
+      "featuresInNeighbouringDetailedTiles": 788
+    },
+    "theth": {
+      "coordinate": [
+        19.769,
+        42.395
+      ],
+      "featuresInNeighbouringDetailedTiles": 1861
+    },
+    "valbona": {
+      "coordinate": [
+        19.889,
+        42.452
+      ],
+      "featuresInNeighbouringDetailedTiles": 983
+    }
+  },
+  "datasets": {
+    "basemap": {
+      "empty_tile_count": 0,
+      "logical_tiles_sha256": "d7744e13a45eceda4a591f7272f8b6f76fc067ae849eb829395c80c4c7d03288",
+      "tile_count": 1895
+    },
+    "grid": {
+      "empty_tile_count": 0,
+      "logical_tiles_sha256": "32f162b4d482f83a676f6bf3f08005a291a9d87e018628e6c03bb94de68f1f4a",
+      "tile_count": 1884
+    },
+    "hillshade": {
+      "empty_tile_count": 0,
+      "logical_tiles_sha256": "8fd2ee750ab0bd74c22d3ccffb928aec4b6bc90c241df36c95b7472aede21692",
+      "tile_count": 132
+    },
+    "topography": {
+      "empty_tile_count": 36604,
+      "logical_tiles_sha256": "578f96cfc933c9739f943d59a5f211e9d27b42c1022df7b7339bf740cf92819d",
+      "tile_count": 40927
+    }
+  },
+  "detail": {
+    "basemap": {
+      "boundaries": 5331,
+      "contours": 0
+    },
+    "topography": {
+      "boundaries": 0,
+      "contours": 114047
+    }
+  },
+  "garmin": {
+    "familyId": 4886,
+    "garminPackageRevision": "2.0.0-r1",
+    "inspection": {
+      "anchorLabels": {
+        "Plav": "Plav",
+        "Theth": "Theth"
+      },
+      "bounds": [
+        19.51995849609375,
+        42.24998474121094,
+        20.390024185180664,
+        42.81002998352051
+      ],
+      "coastPolygonsByLevel": {
+        "0": {
+          "0x32": 8,
+          "0x54": 12
+        },
+        "1": {
+          "0x32": 8,
+          "0x54": 12
+        },
+        "2": {
+          "0x32": 8,
+          "0x54": 12
+        },
+        "3": {
+          "0x32": 8,
+          "0x54": 12
+        },
+        "4": {
+          "0x32": 8,
+          "0x54": 12
+        }
+      },
+      "contoursByLevel": {
+        "0": {
+          "0x20": 18962,
+          "0x22": 4788
+        },
+        "1": {
+          "0x20": 14338,
+          "0x22": 3638
+        },
+        "2": {
+          "0x22": 3437
+        },
+        "3": {
+          "0x10008": 3163
+        },
+        "4": {}
+      },
+      "lineInstancesAtHighestDetail": {
+        "0x1": 11,
+        "0x10001": 802,
+        "0x10002": 570,
+        "0x10003": 3,
+        "0x10005": 49,
+        "0x10006": 1140,
+        "0x1000b": 434,
+        "0x14": 23,
+        "0x16": 3312,
+        "0x18": 3190,
+        "0x1a": 6,
+        "0x1c": 252,
+        "0x1e": 123,
+        "0x1f": 169,
+        "0x20": 18962,
+        "0x22": 4788,
+        "0x3": 129,
+        "0x4": 331,
+        "0x6": 7788,
+        "0x7": 2953,
+        "0xa": 3679
+      },
+      "logicalCombinedSHA256": "6955a226902456034c6a95b57123298a244b2706aaca05ed928b83bdedb80389",
+      "logicalHashNote": "Internal file names, sizes and payloads; only CommonHeader creation-date bytes 14..20 are zeroed for hashing. IMG archive headers are excluded. Output bytes are never modified.",
+      "logicalTileSHA256": {
+        "48860001.img": "86b6c5800993867a41f204d272d52d03cae297b02b6e6786a807b2f91d119367",
+        "48860002.img": "518907ca419d624b66764295303d89e5b1eb4cca16d238d34134c4bf84919601",
+        "48860003.img": "c4bad0c8e64d480fbdf81aca7de6785e6887807c75e6c7816a9c50949509d45c",
+        "48860004.img": "8a9044c4be6112a5f30b43a6300ef22d848144bc84b905b88db21e76e5744f80",
+        "48860005.img": "a3b7c4aca6024403266677450597b6138f827b110a35e5833c41fe352b5d779b",
+        "48860006.img": "ee1050759a67e8559bd057d309e3c02d7ce4b7423ccaa1368b21762e818ee6dc",
+        "48860007.img": "dc225d131b6be999c84eaa511b2380521163b075fed04c2b4e178b14be6e2608",
+        "48860008.img": "b33aae2f9ec04a1b3e4753d9df26da0f8e58cc1943021d3065e91fda382ff95f"
+      },
+      "pointInstancesAtHighestDetail": {
+        "0x100": 1,
+        "0x10001": 99,
+        "0x10002": 292,
+        "0x10003": 1299,
+        "0x10004": 4,
+        "0x10006": 2157,
+        "0x2f0b": 194,
+        "0x600": 6,
+        "0x650c": 1,
+        "0x6603": 57,
+        "0x6615": 150,
+        "0x6616": 2195,
+        "0x800": 319,
+        "0xb00": 739,
+        "0xc00": 433
+      },
+      "polygonInstancesAtHighestDetail": {
+        "0x10101": 885,
+        "0x10102": 9786,
+        "0x10103": 52,
+        "0x10104": 3672,
+        "0x10105": 21,
+        "0x10106": 30,
+        "0x10109": 2568,
+        "0x1010a": 2284,
+        "0x1010b": 219,
+        "0x13": 60649,
+        "0x32": 8,
+        "0x3c": 416,
+        "0x50": 10784,
+        "0x51": 14,
+        "0x54": 12
+      },
+      "routing": false,
+      "subfileBytes": {
+        "DEM": 5854643,
+        "LBL": 139039,
+        "MPS": 768,
+        "RGN": 15331391,
+        "SRT": 912,
+        "TRE": 192060,
+        "TYP": 2982
+      },
+      "tiles": 8
+    },
+    "output": {
+      "bytes": 21596160,
+      "path": "regions/peaks-of-the-balkans/garmin/dist/OpenBareMap-Peaks-of-the-Balkans.img",
+      "sha256": "faac6d240deac89d1cb9f5ec3484764fc614c554212db7f598e5a818aed6c422"
+    },
+    "routing": false,
+    "status": "compiled and structurally inspected; hardware rendering pending"
+  },
+  "geometryProcessing": {
+    "contours": 10880,
+    "grid": {
+      "grid_10km": 19,
+      "grid_1km": 172
+    },
+    "landcover": {
+      "empty_source_areas": [],
+      "features": 22795,
+      "retained": 832,
+      "smoothed": 21963
+    }
+  },
+  "irelandGarminPackageRevision": "2.0.1-trail-detail-r1",
+  "irelandPreserved": true,
+  "labelGlyphs": {
+    "Open Sans Bold": true,
+    "Open Sans Regular": true,
+    "Open Sans Semibold": true
+  },
+  "landBackground": {
+    "cerem": {
+      "coordinate": [
+        19.985,
+        42.489
+      ],
+      "verifiedZooms": [
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    },
+    "doberdol": {
+      "coordinate": [
+        20.06,
+        42.549
+      ],
+      "verifiedZooms": [
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    },
+    "gusinje": {
+      "coordinate": [
+        19.833,
+        42.562
+      ],
+      "verifiedZooms": [
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    },
+    "peje": {
+      "coordinate": [
+        20.289,
+        42.659
+      ],
+      "verifiedZooms": [
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    },
+    "plav": {
+      "coordinate": [
+        19.945,
+        42.596
+      ],
+      "verifiedZooms": [
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    },
+    "reka-e-allages": {
+      "coordinate": [
+        20.178,
+        42.695
+      ],
+      "verifiedZooms": [
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    },
+    "theth": {
+      "coordinate": [
+        19.769,
+        42.395
+      ],
+      "verifiedZooms": [
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    },
+    "valbona": {
+      "coordinate": [
+        19.889,
+        42.452
+      ],
+      "verifiedZooms": [
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    }
+  },
+  "packages": {
+    "android": {
+      "checkedFiles": 43,
+      "nativeDeviceRenderingTested": false,
+      "sourceFiles": {
+        "basemap": "maps/basemap.mbtiles",
+        "coast": "maps/coast.mbtiles",
+        "hillshade": "maps/hillshade.mbtiles",
+        "topography": "maps/topography.mbtiles",
+        "utm-grid": "maps/grid.mbtiles"
+      }
+    },
+    "ios": {
+      "checkedFiles": 46,
+      "nativeDeviceRenderingTested": false,
+      "sourceFiles": {
+        "basemap": "maps/basemap.mbtiles",
+        "coast": "maps/coast.mbtiles",
+        "hillshade": "maps/hillshade.mbtiles",
+        "topography": "maps/topography.mbtiles",
+        "utm-grid": "maps/grid.mbtiles"
+      }
+    }
+  },
+  "region": "peaks-of-the-balkans",
+  "status": "automated checks passed; visual and hardware acceptance pending"
+}

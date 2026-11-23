@@ -1,0 +1,20 @@
+{
+  "inputs": [
+    {
+      "path": "regions/peaks-of-the-balkans/garmin/inputs/contours.geojson.gz",
+      "sha256": "41b3a6d2bae10395bf39d2a5758aa53c239d81f2f92ed1197094f5e4960963d9",
+      "uncompressedSHA256": "19acac2b7d607f3f43ae99abffd9da3826bfc465844476bc089361a74115b93a"
+    },
+    {
+      "path": "regions/peaks-of-the-balkans/garmin/inputs/landcover.geojson.gz",
+      "sha256": "9cecbf0a16551e2d11e3b3848dd6b4d525d1a7b2aeeb7684fbe4ebce83c5b782",
+      "uncompressedSHA256": "430ee62e1ca6180c8d36c63bd369f74fe375ce1b675fdeaa14f123656db1cadc"
+    },
+    {
+      "path": "regions/peaks-of-the-balkans/garmin/inputs/land.geojson.gz",
+      "sha256": "60e87893a414f43432754bd62447cf84dcf02764fec4bc32a2ce5467e6e14a7d",
+      "uncompressedSHA256": "7ec48e9e56df754ad35815e22a044f2bf3023374488b20aba6876bd7c6f3a7ce"
+    }
+  ],
+  "region": "peaks-of-the-balkans"
+}

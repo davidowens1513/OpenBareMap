@@ -1,0 +1,39 @@
+{
+  "features": [
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              21.91,
+              37.47
+            ],
+            [
+              21.91,
+              37.82
+            ],
+            [
+              22.29,
+              37.82
+            ],
+            [
+              22.29,
+              37.47
+            ],
+            [
+              21.91,
+              37.47
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "properties": {
+        "purpose": "Limit opaque native background and land-cover polygons; retain complete accepted OSM and terrain inputs",
+        "region": "menalon-trail"
+      },
+      "type": "Feature"
+    }
+  ],
+  "type": "FeatureCollection"
+}

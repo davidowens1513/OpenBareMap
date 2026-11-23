@@ -1,0 +1,30 @@
+{
+  "areaSquareDegrees": 0.13160000000000122,
+  "bounds": [
+    22.22,
+    39.92,
+    22.69,
+    40.2
+  ],
+  "entireRequestedFootprintCovered": true,
+  "exactFootprint": null,
+  "inputs": [
+    {
+      "bytes": 12694,
+      "path": "data/regions/mount-olympus/greece.poly",
+      "sha256": "037f2c4c8babbe9d34998ab9022f68d751151a8bb079709cd97cf5cbaaadde0f",
+      "url": "https://download.geofabrik.de/europe/greece/greece.poly"
+    }
+  ],
+  "knownDestinationsCovered": [
+    "dion",
+    "island",
+    "litochoro",
+    "muses-plateau",
+    "mytikas",
+    "prionia"
+  ],
+  "operation": "Requested rectangular crop; source outlines cover all destination anchors",
+  "polygons": 1,
+  "sha256": "e2954ba866bcf09e807acc84c0be5fd1ad543218ae651a536b313d001a1f73d2"
+}

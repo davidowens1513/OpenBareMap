@@ -1,0 +1,52 @@
+{
+  "contourIntervalMetres": 20,
+  "coverage": "Durmitor National Park and approaches, including \u017dabljak, Black Lake, Bobotov Kuk, the Sedlo trailhead and the Tara Canyon bridge.",
+  "datasets": {
+    "basemap": {
+      "bytes": 8404992,
+      "path": "releases/durmitor/2.0.0/maps/basemap.mbtiles",
+      "sha256": "4ebeeb5806266aba06b44d06aacdfd2d8298a3c34526258ae4f37fab9c95d0fa",
+      "validation": {
+        "empty_tile_count": 0,
+        "logical_tiles_sha256": "b4d026c8f8e4f2953d93aea3634376e29bc7d8aec497406a27489e65e4d07125",
+        "tile_count": 647
+      }
+    },
+    "grid": {
+      "bytes": 229376,
+      "path": "releases/durmitor/2.0.0/maps/grid.mbtiles",
+      "sha256": "535b6bfd07e42d8827eafd2925f5cd1b7abf9776335cfea9cea38d5e78a85b9b",
+      "validation": {
+        "empty_tile_count": 0,
+        "logical_tiles_sha256": "a2091b1174e562261fe6e119828caf512770bec8b775a6a0e8df6f122a315fd9",
+        "tile_count": 632
+      }
+    },
+    "hillshade": {
+      "bytes": 1945600,
+      "path": "releases/durmitor/2.0.0/maps/hillshade.mbtiles",
+      "sha256": "19fbd89f5d8022d14d3e19a40a152459042829445e253bcc3562926eef092aec",
+      "validation": {
+        "empty_tile_count": 0,
+        "logical_tiles_sha256": "95ae13a07e017c7d7edac2d36202079da68a560365f24455e2bff439858b63b9",
+        "tile_count": 68
+      }
+    },
+    "topography": {
+      "bytes": 12161024,
+      "path": "releases/durmitor/2.0.0/maps/topography-context.mbtiles",
+      "sha256": "1a4e61160dcc87a234a9affeb363510d1b39de5060ec6f5f879f2fdea68da554",
+      "validation": {
+        "empty_tile_count": 40038,
+        "logical_tiles_sha256": "6c496c124012e56af42a1b8b87931b88b26d22e0d17f8c589c66a2b2a5f674d3",
+        "tile_count": 43352
+      }
+    }
+  },
+  "format": "openbaremap-development-viewer-v1",
+  "localBorders": false,
+  "mapVersion": "2.0.0",
+  "region": "durmitor",
+  "storageRevision": "2.0.0-durmitor-r3",
+  "styleRevision": "2.0.0-durmitor-r1"
+}

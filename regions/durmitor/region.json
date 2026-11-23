@@ -1,0 +1,149 @@
+{
+  "appBundleName": "Durmitor",
+  "bounds": [
+    18.87,
+    43.0,
+    19.36,
+    43.29
+  ],
+  "clipBasemap": true,
+  "clipSource": true,
+  "clipTerrainToBounds": true,
+  "coastContextBounds": [
+    17,
+    42,
+    21,
+    45
+  ],
+  "contourIntervalMetres": 20,
+  "coverage": "Durmitor National Park and approaches, including \u017dabljak, Black Lake, Bobotov Kuk, the Sedlo trailhead and the Tara Canyon bridge.",
+  "destinationLabels": {
+    "black-lake": "Black Lake",
+    "bobotov-kuk": "Bobotov Kuk",
+    "island": "Durmitor",
+    "sedlo": "Sedlo trailhead",
+    "tara-bridge": "Tara Canyon bridge",
+    "zabljak": "\u017dabljak"
+  },
+  "destinations": {
+    "black-lake": [
+      19.088,
+      43.144,
+      12
+    ],
+    "bobotov-kuk": [
+      19.034,
+      43.127,
+      12
+    ],
+    "island": [
+      19.115000000000002,
+      43.144999999999996,
+      11
+    ],
+    "sedlo": [
+      19.054,
+      43.1,
+      12
+    ],
+    "tara-bridge": [
+      19.294,
+      43.15,
+      12
+    ],
+    "zabljak": [
+      19.121,
+      43.155,
+      12
+    ]
+  },
+  "garminContextBounds": [
+    18.87,
+    43.0,
+    19.36,
+    43.29
+  ],
+  "garminFamilyId": 4887,
+  "garminFilename": "OpenBareMap-Durmitor.img",
+  "garminPackageRevision": "2.0.0-r1",
+  "garminTileStartId": 48870001,
+  "garminUseSourceOutline": true,
+  "garminVersionedDelivery": true,
+  "gridCRS": "EPSG:25834",
+  "gridExtent": [
+    320000,
+    370000,
+    4760000,
+    4800000
+  ],
+  "gridName": "ETRS89 / UTM 34N",
+  "gridSource": "utm-grid",
+  "id": "durmitor",
+  "ignoreSourceHeaderBounds": true,
+  "inspectionNames": [
+    "Bobotov Kuk"
+  ],
+  "label": "Durmitor",
+  "labelGlyphs": "\u00c7\u00e7\u00cb\u00eb\u0106\u0107\u010c\u010d\u0110\u0111\u0160\u0161\u017d\u017e",
+  "mapVersion": "2.0.0",
+  "maxzoom": 14,
+  "minorWaterwayMinzoom": 10,
+  "minzoom": 4,
+  "name": "OpenBareMap Durmitor",
+  "nativeLanguage": "sr",
+  "optionalBasemapLayers": [
+    "ferry",
+    "island_name",
+    "cycling_route",
+    "railway",
+    "station",
+    "hiking_route",
+    "boundary"
+  ],
+  "projectedCRS": "EPSG:25834",
+  "repairClippedCoastline": true,
+  "requireBogFeatures": false,
+  "sourceBaseOverrides": {
+    "montenegro": "https://download.geofabrik.de/europe/montenegro/"
+  },
+  "sourceBaseURL": "https://download.geofabrik.de/europe/",
+  "sourceCacheRegion": "balkans",
+  "sourceDate": "2026-11-22",
+  "sourceSlugs": [
+    "montenegro"
+  ],
+  "styleRevision": "2.0.0-durmitor-r1",
+  "terrainAttribution": "Copernicus DEM GLO-30 \u00b7 European Union / ESA \u00b7 DLR / Airbus",
+  "terrainBounds": [
+    18,
+    43,
+    20,
+    44
+  ],
+  "terrainCacheRegion": "balkans",
+  "terrainNotice": "Durmitor elevation: Copernicus DEM GLO-30 Public (AWS 2021 release).\n\nproduced using Copernicus WorldDEM-30 \u00a9 DLR e.V. 2010-2014 and \u00a9 Airbus Defence and Space GmbH 2014-2018 provided under COPERNICUS by the European Union and ESA; all rights reserved\n\nThe organisations in charge of the Copernicus programme by law or by delegation do not incur any liability for any use of the Copernicus WorldDEM-30.\n\nLicense: https://dataspace.copernicus.eu/sites/default/files/media/files/2025-06/copernicus_contributing_mission_data_access_v2_cop_dem_licenses.pdf\nSource: https://registry.opendata.aws/copernicus-dem/\nVertical datum: EGM2008 orthometric metres. Native approximately 30 m cells are bilinearly resampled to point-aligned Int16 HGT for the shared terrain pipeline. Ocean-only cells absent from the official public inventory are zero.\n",
+  "terrainProvider": "copernicus-glo30",
+  "townlands": false,
+  "validationAnchors": {
+    "black-lake": [
+      19.088,
+      43.144
+    ],
+    "bobotov-kuk": [
+      19.034,
+      43.127
+    ],
+    "sedlo": [
+      19.054,
+      43.1
+    ],
+    "tara-bridge": [
+      19.294,
+      43.15
+    ],
+    "zabljak": [
+      19.121,
+      43.155
+    ]
+  }
+}

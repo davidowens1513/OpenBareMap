@@ -1,0 +1,21 @@
+{
+  "combinedSHA256": "8ce474cf368950e6807dd1c5c8a243004d2097a1bf6dda6ca08a310f91caaaab",
+  "command": [
+    "/opt/homebrew/opt/openjdk@21/libexec/openjdk.jdk/Contents/Home/bin/java",
+    "-Xmx6g",
+    "-jar",
+    "/Volumes/Extreme SSD/Projects/OpenBareMap/garmin/tools/splitter-r654/splitter.jar",
+    "--mapid=48880001",
+    "--description=OpenBareMap Zagori & Vikos Gorge",
+    "--max-nodes=1000000",
+    "--max-threads=2",
+    "--keep-complete=true",
+    "--output=pbf",
+    "--polygon-file=/Volumes/Extreme SSD/Projects/OpenBareMap/regions/zagori-vikos-gorge/garmin/coverage.poly",
+    "--output-dir=/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/906ead9d53a7/zagori-vikos-gorge/garmin/split",
+    "--ignore-osm-bounds=true",
+    "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/906ead9d53a7/zagori-vikos-gorge/garmin/combined.osm.pbf"
+  ],
+  "coverageSHA256": "f5a0e0c8273aee3ba86a388a85f5c49de06f4bff548d55b45a24d4138a2ece91",
+  "ignoreSourceHeaderBounds": true
+}

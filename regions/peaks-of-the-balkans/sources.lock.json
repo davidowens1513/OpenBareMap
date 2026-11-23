@@ -1,0 +1,55 @@
+{
+  "accessed_utc": "2026-11-23T19:39:32.363810+00:00",
+  "inputs": [
+    {
+      "bytes": 54600420,
+      "path": "data/regions/balkans/albania-261122.osm.pbf",
+      "replicationTimestamp": "2026-11-22T21:20:48Z",
+      "sha256": "11655e57f5bf3650949b32312baed4f47367c9bc3072f92ea9c24bffb6864c95",
+      "url": "https://download.geofabrik.de/europe/albania/albania-261122.osm.pbf"
+    },
+    {
+      "bytes": 34792739,
+      "path": "data/regions/balkans/montenegro-261122.osm.pbf",
+      "replicationTimestamp": "2026-11-22T21:20:48Z",
+      "sha256": "fdea1ef6ba7e0a352f2f29b9db34b94a4fec8c529c519a572cb8cf1d329a4ecf",
+      "url": "https://download.geofabrik.de/europe/montenegro/montenegro-261122.osm.pbf"
+    },
+    {
+      "bytes": 30891394,
+      "path": "data/regions/balkans/kosovo-261122.osm.pbf",
+      "replicationTimestamp": "2026-11-22T21:20:48Z",
+      "sha256": "6a15ae42b4a8fdf9cc2d58fcd2a745d207bc8fd344fe3427553ea0bb393568de",
+      "url": "https://download.geofabrik.de/europe/kosovo/kosovo-261122.osm.pbf"
+    }
+  ],
+  "osm": {
+    "bytes": 14942443,
+    "operation": "Complete-feature bbox extraction with nested relation references, then libosmium sorted merge; duplicate OSM objects resolved by version",
+    "path": "data/regions/peaks-of-the-balkans/peaks-of-the-balkans-261122.osm.pbf",
+    "replicationTimestamp": "2026-11-22T21:20:48Z",
+    "sha256": "ede22e9aa318e5c3e4d6540329646783accc444d764d3f0aa04b5edccf15f7cb",
+    "snapshot_date": "2026-11-22",
+    "url": null
+  },
+  "polygons": [
+    {
+      "bytes": 9780,
+      "path": "data/regions/peaks-of-the-balkans/albania.poly",
+      "sha256": "2902604dc74bdfcd918a915223ef35541c11f62e54830e3190126be1dade0162",
+      "url": "https://download.geofabrik.de/europe/albania/albania.poly"
+    },
+    {
+      "bytes": 5099,
+      "path": "data/regions/peaks-of-the-balkans/montenegro.poly",
+      "sha256": "5b8871aa68125e4918b9e9676e5f1d7578b88e6c0aa26971c1fbf162fabad92e",
+      "url": "https://download.geofabrik.de/europe/montenegro/montenegro.poly"
+    },
+    {
+      "bytes": 4727,
+      "path": "data/regions/peaks-of-the-balkans/kosovo.poly",
+      "sha256": "b4c60ac384cb1c4fd9925feeb88718a5c95aa0b9c1cd25138cfb0c7f4a034170",
+      "url": "https://download.geofabrik.de/europe/kosovo/kosovo.poly"
+    }
+  ]
+}

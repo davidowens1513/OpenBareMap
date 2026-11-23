@@ -1,0 +1,39 @@
+{
+  "features": [
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              22.22,
+              39.92
+            ],
+            [
+              22.22,
+              40.2
+            ],
+            [
+              22.69,
+              40.2
+            ],
+            [
+              22.69,
+              39.92
+            ],
+            [
+              22.22,
+              39.92
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "properties": {
+        "purpose": "Limit opaque native background and land-cover polygons; retain complete accepted OSM and terrain inputs",
+        "region": "mount-olympus"
+      },
+      "type": "Feature"
+    }
+  ],
+  "type": "FeatureCollection"
+}

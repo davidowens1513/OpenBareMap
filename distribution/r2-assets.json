@@ -61,8 +61,8 @@
       "url": "https://downloads.appsbyonzy.dev/Garmin/amalfi-bay-of-naples/2.0.1-trail-detail-r1/OpenBareMap-Amalfi-Bay-of-Naples.img"
     },
     {
-      "path": "regions/azores/garmin/dist/OpenBareMap-Azores.img",
       "bytes": 8940544,
+      "path": "regions/azores/garmin/dist/OpenBareMap-Azores.img",
       "sha256": "d631b0894ca53b9b91566040e632eadd1102b92a236946145c25c8b008647fed",
       "url": "https://downloads.appsbyonzy.dev/Garmin/azores/2.0.0-r1/OpenBareMap-Azores.img"
     },
@@ -73,8 +73,8 @@
       "url": "https://downloads.appsbyonzy.dev/Garmin/OpenBareMap-Balearic-Islands.img"
     },
     {
-      "path": "regions/camino-del-norte/garmin/dist/OpenBareMap-Camino-del-Norte.img",
       "bytes": 72669184,
+      "path": "regions/camino-del-norte/garmin/dist/OpenBareMap-Camino-del-Norte.img",
       "sha256": "8ce0cf7692fab3c6276d3a3c15eddbd4846fd64e5bdcb64a02efc32c0fc8a107",
       "url": "https://downloads.appsbyonzy.dev/Garmin/camino-del-norte/2.0.0-r1/OpenBareMap-Camino-del-Norte.img"
     },
@@ -85,8 +85,8 @@
       "url": "https://downloads.appsbyonzy.dev/Garmin/camino-frances/2.0.1-trail-detail-r1/OpenBareMap-Camino-Frances.img"
     },
     {
-      "path": "regions/camino-portugues/garmin/dist/OpenBareMap-Camino-Portugues.img",
       "bytes": 32069632,
+      "path": "regions/camino-portugues/garmin/dist/OpenBareMap-Camino-Portugues.img",
       "sha256": "b1a5844f872a931ecebabf96be39ab738742cd88aa0b96d590a98948bd9b58d2",
       "url": "https://downloads.appsbyonzy.dev/Garmin/camino-portugues/2.0.0-r1/OpenBareMap-Camino-Portugues.img"
     },
@@ -157,6 +157,12 @@
       "url": "https://downloads.appsbyonzy.dev/Garmin/OpenBareMap-Dolomites.img?v=2.0.1-trail-detail-r1"
     },
     {
+      "path": "regions/durmitor/garmin/dist/OpenBareMap-Durmitor.img",
+      "bytes": 4983808,
+      "sha256": "89c9da6bb996cec662a332653bc229ccc69b8a90a3a0ad4eb3c094364e5436f3",
+      "url": "https://downloads.appsbyonzy.dev/Garmin/durmitor/2.0.0-r1/OpenBareMap-Durmitor.img"
+    },
+    {
       "bytes": 911212544,
       "path": "regions/england-wales/garmin/dist/OpenBareMap-England-Wales.img",
       "sha256": "477d275202aa4d8031199c98c375c93d970c9e0992fb86aabdd2f214d6ced264",
@@ -223,6 +229,18 @@
       "url": "https://downloads.appsbyonzy.dev/Garmin/OpenBareMap-Malta.img"
     },
     {
+      "path": "regions/menalon-trail/garmin/dist/OpenBareMap-Menalon-Trail.img",
+      "bytes": 4028416,
+      "sha256": "44e20c2cba7c0046a510cf4b8b8b81c5451c8bec076b2dc46878b0f621a54d30",
+      "url": "https://downloads.appsbyonzy.dev/Garmin/menalon-trail/2.0.0-r1/OpenBareMap-Menalon-Trail.img"
+    },
+    {
+      "path": "regions/mount-olympus/garmin/dist/OpenBareMap-Mount-Olympus.img",
+      "bytes": 3215360,
+      "sha256": "d6a701f5a972c78d846152bb761081fda8cde829074f74e5971cdac737f6daa9",
+      "url": "https://downloads.appsbyonzy.dev/Garmin/mount-olympus/2.0.0-r1/OpenBareMap-Mount-Olympus.img"
+    },
+    {
       "bytes": 48783360,
       "path": "regions/nepal-annapurna/garmin/dist/OpenBareMap-Nepal-Annapurna.img",
       "sha256": "40cee865ead6708b3154587dd08c96a2d3702d7ae5e07c51ba45e26ad797e685",
@@ -281,6 +299,12 @@
       "path": "regions/patagonia-torres-del-paine/garmin/dist/OpenBareMap-Patagonia-Torres-del-Paine.img",
       "sha256": "6c4bab1b3e3e48d5839edaa4180799a2e883ec698a1e4f1ebc3af22d7b48d036",
       "url": "https://downloads.appsbyonzy.dev/Garmin/patagonia-torres-del-paine/2.0.1-glacier-r1/OpenBareMap-Patagonia-Torres-del-Paine.img"
+    },
+    {
+      "path": "regions/peaks-of-the-balkans/garmin/dist/OpenBareMap-Peaks-of-the-Balkans.img",
+      "bytes": 21596160,
+      "sha256": "faac6d240deac89d1cb9f5ec3484764fc614c554212db7f598e5a818aed6c422",
+      "url": "https://downloads.appsbyonzy.dev/Garmin/peaks-of-the-balkans/2.0.0-r1/OpenBareMap-Peaks-of-the-Balkans.img"
     },
     {
       "bytes": 24780800,
@@ -421,6 +445,12 @@
       "url": "https://downloads.appsbyonzy.dev/Garmin/OpenBareMap-US-Zion.img"
     },
     {
+      "path": "regions/zagori-vikos-gorge/garmin/dist/OpenBareMap-Zagori-Vikos-Gorge.img",
+      "bytes": 5813248,
+      "sha256": "4d3cc426fd3792679f09335da94323c46d097e56c1ea701fbbe8c5d0d59628f0",
+      "url": "https://downloads.appsbyonzy.dev/Garmin/zagori-vikos-gorge/2.0.0-r1/OpenBareMap-Zagori-Vikos-Gorge.img"
+    },
+    {
       "bytes": 2104197612,
       "path": "releases/alps-central/2.0.0/app-bundles-v1/android/OpenBareMap-Alps-Central-Android-Bundle.zip",
       "sha256": "c965de23e5071a9d8b243357cd4822433990ce06a9c5f8c941232b59b2fd5276",
@@ -529,14 +559,14 @@
       "url": "https://downloads.appsbyonzy.dev/OpenBareMap/amalfi-bay-of-naples/2.0.0/app-bundles-v1/ios/OpenBareMap-Amalfi-Bay-of-Naples-iOS-Bundle.zip"
     },
     {
-      "path": "releases/azores/2.0.0/app-bundles-v1/android/OpenBareMap-Azores-Android-Bundle.zip",
       "bytes": 42329181,
+      "path": "releases/azores/2.0.0/app-bundles-v1/android/OpenBareMap-Azores-Android-Bundle.zip",
       "sha256": "63b51ac29d67f5e1815bd26ced6cd8dcd542e8c4aba04e62c1f82acd4a7d70e9",
       "url": "https://downloads.appsbyonzy.dev/OpenBareMap/azores/2.0.0/app-bundles-v1/android/OpenBareMap-Azores-Android-Bundle.zip"
     },
     {
-      "path": "releases/azores/2.0.0/app-bundles-v1/ios/OpenBareMap-Azores-iOS-Bundle.zip",
       "bytes": 42330854,
+      "path": "releases/azores/2.0.0/app-bundles-v1/ios/OpenBareMap-Azores-iOS-Bundle.zip",
       "sha256": "af3e8789fc6a334ea008698f0d30b2459704307e1ca06fafa3a8033d83836b55",
       "url": "https://downloads.appsbyonzy.dev/OpenBareMap/azores/2.0.0/app-bundles-v1/ios/OpenBareMap-Azores-iOS-Bundle.zip"
     },
@@ -553,14 +583,14 @@
       "url": "https://downloads.appsbyonzy.dev/OpenBareMap/balearic-islands/2.0.0/app-bundles-v1/ios/OpenBareMap-Balearic-Islands-iOS-Bundle.zip"
     },
     {
-      "path": "releases/camino-del-norte/2.0.0/app-bundles-v1/android/OpenBareMap-Camino-del-Norte-Android-Bundle.zip",
       "bytes": 222801704,
+      "path": "releases/camino-del-norte/2.0.0/app-bundles-v1/android/OpenBareMap-Camino-del-Norte-Android-Bundle.zip",
       "sha256": "f092e7fb4324c5dcf48771c1b995ce635fdc02998a313bf7eff1827ecf768663",
       "url": "https://downloads.appsbyonzy.dev/OpenBareMap/camino-del-norte/2.0.0/app-bundles-v1/android/OpenBareMap-Camino-del-Norte-Android-Bundle.zip"
     },
     {
-      "path": "releases/camino-del-norte/2.0.0/app-bundles-v1/ios/OpenBareMap-Camino-del-Norte-iOS-Bundle.zip",
       "bytes": 222803755,
+      "path": "releases/camino-del-norte/2.0.0/app-bundles-v1/ios/OpenBareMap-Camino-del-Norte-iOS-Bundle.zip",
       "sha256": "f5950c0d0fe22faaa7a81964620514ddf91690408502b8b37205aca785698725",
       "url": "https://downloads.appsbyonzy.dev/OpenBareMap/camino-del-norte/2.0.0/app-bundles-v1/ios/OpenBareMap-Camino-del-Norte-iOS-Bundle.zip"
     },
@@ -577,14 +607,14 @@
       "url": "https://downloads.appsbyonzy.dev/OpenBareMap/camino-frances/2.0.0/app-bundles-v1/ios/OpenBareMap-Camino-Frances-iOS-Bundle.zip"
     },
     {
-      "path": "releases/camino-portugues/2.0.0/app-bundles-v1/android/OpenBareMap-Camino-Portugues-Android-Bundle.zip",
       "bytes": 132965971,
+      "path": "releases/camino-portugues/2.0.0/app-bundles-v1/android/OpenBareMap-Camino-Portugues-Android-Bundle.zip",
       "sha256": "34633bdf2838938befdb9a67e72ede72e146483bf498f325e62ccf8fe4ee773a",
       "url": "https://downloads.appsbyonzy.dev/OpenBareMap/camino-portugues/2.0.0/app-bundles-v1/android/OpenBareMap-Camino-Portugues-Android-Bundle.zip"
     },
     {
-      "path": "releases/camino-portugues/2.0.0/app-bundles-v1/ios/OpenBareMap-Camino-Portugues-iOS-Bundle.zip",
       "bytes": 132968018,
+      "path": "releases/camino-portugues/2.0.0/app-bundles-v1/ios/OpenBareMap-Camino-Portugues-iOS-Bundle.zip",
       "sha256": "acea28217d532db3cef22921898239934484834a0fe5be3ccd1a72d2756c0e0d",
       "url": "https://downloads.appsbyonzy.dev/OpenBareMap/camino-portugues/2.0.0/app-bundles-v1/ios/OpenBareMap-Camino-Portugues-iOS-Bundle.zip"
     },
@@ -721,6 +751,18 @@
       "url": "https://downloads.appsbyonzy.dev/OpenBareMap/dolomites/2.0.1/app-bundles-v1/ios/OpenBareMap-Dolomites-iOS-Bundle.zip"
     },
     {
+      "path": "releases/durmitor/2.0.0/app-bundles-v1/android/OpenBareMap-Durmitor-Android-Bundle.zip",
+      "bytes": 26927408,
+      "sha256": "d4941283b678b829b568c13b4529e7f6cb6e8eb7be84e13626aa03a8419d7114",
+      "url": "https://downloads.appsbyonzy.dev/OpenBareMap/durmitor/2.0.0/app-bundles-v1/android/OpenBareMap-Durmitor-Android-Bundle.zip"
+    },
+    {
+      "path": "releases/durmitor/2.0.0/app-bundles-v1/ios/OpenBareMap-Durmitor-iOS-Bundle.zip",
+      "bytes": 26927834,
+      "sha256": "a72b7d04ad323394a3b8111c19d19f694c6bbcfa53f4d57ecdfd4622d2fb4f13",
+      "url": "https://downloads.appsbyonzy.dev/OpenBareMap/durmitor/2.0.0/app-bundles-v1/ios/OpenBareMap-Durmitor-iOS-Bundle.zip"
+    },
+    {
       "bytes": 41568961,
       "path": "releases/faroe-islands/2.0.0/app-bundles-v1/android/OpenBareMap-Faroe-Islands-Android-Bundle.zip",
       "sha256": "3e8e2cf650aa29494ccdad954bb9dc3eeff419443fd277e36a47a3630a637ae6",
@@ -841,6 +883,30 @@
       "url": "https://downloads.appsbyonzy.dev/OpenBareMap/malta/2.0.0/app-bundles-v1/ios/OpenBareMap-Malta-iOS-Bundle.zip"
     },
     {
+      "path": "releases/menalon-trail/2.0.0/app-bundles-v1/android/OpenBareMap-Menalon-Trail-Android-Bundle.zip",
+      "bytes": 23290975,
+      "sha256": "d8c3a0fd92487a6713e13e22f1367d23c3ab1eb6ab33fdeb74af6e552bf481e6",
+      "url": "https://downloads.appsbyonzy.dev/OpenBareMap/menalon-trail/2.0.0/app-bundles-v1/android/OpenBareMap-Menalon-Trail-Android-Bundle.zip"
+    },
+    {
+      "path": "releases/menalon-trail/2.0.0/app-bundles-v1/ios/OpenBareMap-Menalon-Trail-iOS-Bundle.zip",
+      "bytes": 23291398,
+      "sha256": "093954ae5be9044e4e28297669d2e6d79b7c1a108c536f2e63f30042e2c631b6",
+      "url": "https://downloads.appsbyonzy.dev/OpenBareMap/menalon-trail/2.0.0/app-bundles-v1/ios/OpenBareMap-Menalon-Trail-iOS-Bundle.zip"
+    },
+    {
+      "path": "releases/mount-olympus/2.0.0/app-bundles-v1/android/OpenBareMap-Mount-Olympus-Android-Bundle.zip",
+      "bytes": 21414438,
+      "sha256": "1cf608ca65be114dd98fcba5450a06c644867e278c6cde1954f297a6ae86d613",
+      "url": "https://downloads.appsbyonzy.dev/OpenBareMap/mount-olympus/2.0.0/app-bundles-v1/android/OpenBareMap-Mount-Olympus-Android-Bundle.zip"
+    },
+    {
+      "path": "releases/mount-olympus/2.0.0/app-bundles-v1/ios/OpenBareMap-Mount-Olympus-iOS-Bundle.zip",
+      "bytes": 21414850,
+      "sha256": "1e4b875a6aea8cce845ed9386f827f9f6161d81589f6183959f7dc5a016813a7",
+      "url": "https://downloads.appsbyonzy.dev/OpenBareMap/mount-olympus/2.0.0/app-bundles-v1/ios/OpenBareMap-Mount-Olympus-iOS-Bundle.zip"
+    },
+    {
       "bytes": 185543356,
       "path": "releases/nepal-annapurna/2.0.0/app-bundles-v1/android/OpenBareMap-Nepal-Annapurna-Android-Bundle.zip",
       "sha256": "f4a0d829700741cdc147e5f2a6cbb401c85f787ea51a23e12d1d0f0183ea5594",
@@ -959,6 +1025,18 @@
       "path": "releases/patagonia-torres-del-paine/2.0.0/app-bundles-v1/ios/OpenBareMap-Patagonia-Torres-del-Paine-iOS-Bundle.zip",
       "sha256": "02e8d260c45889cd29669cfa81c956707c531b4ac6bf3be31c6b77ba11fcbdb8",
       "url": "https://downloads.appsbyonzy.dev/OpenBareMap/patagonia-torres-del-paine/2.0.0/app-bundles-v1/ios/OpenBareMap-Patagonia-Torres-del-Paine-iOS-Bundle.zip"
+    },
+    {
+      "path": "releases/peaks-of-the-balkans/2.0.0/app-bundles-v1/android/OpenBareMap-Peaks-of-the-Balkans-Android-Bundle.zip",
+      "bytes": 88918198,
+      "sha256": "633ad2e21cdfeba494e21554c02b82af3dfcb8e0d5a4bbe5fabd589712107565",
+      "url": "https://downloads.appsbyonzy.dev/OpenBareMap/peaks-of-the-balkans/2.0.0/app-bundles-v1/android/OpenBareMap-Peaks-of-the-Balkans-Android-Bundle.zip"
+    },
+    {
+      "path": "releases/peaks-of-the-balkans/2.0.0/app-bundles-v1/ios/OpenBareMap-Peaks-of-the-Balkans-iOS-Bundle.zip",
+      "bytes": 88918624,
+      "sha256": "5dcdeffc2a23fa8b710014b5c45f9d6a4c39b69018ea517ffe007dea7be78764",
+      "url": "https://downloads.appsbyonzy.dev/OpenBareMap/peaks-of-the-balkans/2.0.0/app-bundles-v1/ios/OpenBareMap-Peaks-of-the-Balkans-iOS-Bundle.zip"
     },
     {
       "bytes": 129333959,
@@ -1211,6 +1289,18 @@
       "path": "releases/us-zion/2.0.0/app-bundles-v1/ios/OpenBareMap-Zion-iOS-Bundle.zip",
       "sha256": "a86bd69f0289a4a63e6f965d91e384708d7cc51c998a6c661e59812142f7fb6a",
       "url": "https://downloads.appsbyonzy.dev/OpenBareMap/us-zion/2.0.0/app-bundles-v1/ios/OpenBareMap-Zion-iOS-Bundle.zip"
+    },
+    {
+      "path": "releases/zagori-vikos-gorge/2.0.0/app-bundles-v1/android/OpenBareMap-Zagori-Vikos-Gorge-Android-Bundle.zip",
+      "bytes": 33300872,
+      "sha256": "c362cc0f8d52588a26339110c4ee8dad09cce05533dcf536da0fa47d9cc020bd",
+      "url": "https://downloads.appsbyonzy.dev/OpenBareMap/zagori-vikos-gorge/2.0.0/app-bundles-v1/android/OpenBareMap-Zagori-Vikos-Gorge-Android-Bundle.zip"
+    },
+    {
+      "path": "releases/zagori-vikos-gorge/2.0.0/app-bundles-v1/ios/OpenBareMap-Zagori-Vikos-Gorge-iOS-Bundle.zip",
+      "bytes": 33301297,
+      "sha256": "389a46b55885b5eff485ca9f44e12defb1e4f73c4dff7d9b7848019383cefb52",
+      "url": "https://downloads.appsbyonzy.dev/OpenBareMap/zagori-vikos-gorge/2.0.0/app-bundles-v1/ios/OpenBareMap-Zagori-Vikos-Gorge-iOS-Bundle.zip"
     },
     {
       "bytes": 1008370658,

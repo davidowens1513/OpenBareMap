@@ -1,0 +1,106 @@
+{
+  "acceptance": "Automated checks only; see validation and visual-review records for actual reviewed scope.",
+  "coverage": "The Peaks of the Balkans circuit through Albania, Montenegro and Kosovo, including Theth, Valbona, Plav, the Rugova valley and Pej\u00eb.",
+  "datasets": {
+    "basemap": {
+      "bytes": 32940032,
+      "path": "releases/peaks-of-the-balkans/2.0.0/maps/basemap.mbtiles",
+      "sha256": "8ea365a1e4157ed84bb23dcc94aa6fb3e0aac9cb3f5673202a304956c9af9b83",
+      "validation": {
+        "empty_tile_count": 0,
+        "logical_tiles_sha256": "d7744e13a45eceda4a591f7272f8b6f76fc067ae849eb829395c80c4c7d03288",
+        "tile_count": 1895
+      }
+    },
+    "grid": {
+      "bytes": 663552,
+      "path": "releases/peaks-of-the-balkans/2.0.0/maps/grid.mbtiles",
+      "sha256": "fd336b882347cebe90181b4fce5b71ef0a7a28bd49ee4ed314930e4e06db2bee",
+      "validation": {
+        "empty_tile_count": 0,
+        "logical_tiles_sha256": "32f162b4d482f83a676f6bf3f08005a291a9d87e018628e6c03bb94de68f1f4a",
+        "tile_count": 1884
+      }
+    },
+    "hillshade": {
+      "bytes": 6426624,
+      "path": "releases/peaks-of-the-balkans/2.0.0/maps/hillshade.mbtiles",
+      "sha256": "0574306b0eeec448c05a92cc66b5a6e647c323545664d263e2725aa82778a1bb",
+      "validation": {
+        "empty_tile_count": 0,
+        "logical_tiles_sha256": "8fd2ee750ab0bd74c22d3ccffb928aec4b6bc90c241df36c95b7472aede21692",
+        "tile_count": 132
+      }
+    },
+    "topography": {
+      "bytes": 44847104,
+      "path": "releases/peaks-of-the-balkans/2.0.0/maps/topography-context.mbtiles",
+      "sha256": "7eaee48f5c137d63d7ae54f8ed859d1a17645c431d8207895d5ee4f7acc57317",
+      "validation": {
+        "empty_tile_count": 36604,
+        "logical_tiles_sha256": "578f96cfc933c9739f943d59a5f211e9d27b42c1022df7b7339bf740cf92819d",
+        "tile_count": 40927
+      }
+    }
+  },
+  "garmin": {
+    "bytes": 21596160,
+    "path": "regions/peaks-of-the-balkans/garmin/dist/OpenBareMap-Peaks-of-the-Balkans.img",
+    "sha256": "faac6d240deac89d1cb9f5ec3484764fc614c554212db7f598e5a818aed6c422"
+  },
+  "geometryReport": {
+    "path": "build/peaks-of-the-balkans-geometry/geometry-report.json",
+    "sha256": "7e4f9529743f4bce99343cf5e105ae4c32855ae09d5f7dec2edfc6175494a57e"
+  },
+  "hostAppsModified": false,
+  "mapVersion": "2.0.0",
+  "osm": {
+    "bytes": 14942443,
+    "operation": "Complete-feature bbox extraction with nested relation references, then libosmium sorted merge; duplicate OSM objects resolved by version",
+    "path": "data/regions/peaks-of-the-balkans/peaks-of-the-balkans-261122.osm.pbf",
+    "replicationTimestamp": "2026-11-22T21:20:48Z",
+    "sha256": "ede22e9aa318e5c3e4d6540329646783accc444d764d3f0aa04b5edccf15f7cb",
+    "snapshot_date": "2026-11-22",
+    "url": null
+  },
+  "packages": {
+    "android": {
+      "archive": {
+        "bytes": 88889727,
+        "path": "regions/peaks-of-the-balkans/android/OpenBareMap-Android.zip",
+        "sha256": "7614d694898156d8b33fc2960b13226cb113c461e78686d20cb09715a48c0bb4"
+      },
+      "checksumsSHA256": "7df14eb25f50fdd8a014195c120133e493cedc1607f095b9566b4943299131a5",
+      "manifestSHA256": "79f186c9e2f86876f88367948a82dbfe9f925cf2aac643d2449c4401eec42710",
+      "path": "regions/peaks-of-the-balkans/android",
+      "validationSHA256": "a454c3830bc45bf28fa78e25a951f0b9bfda4538b856673c67053d363515fdfe"
+    },
+    "ios": {
+      "checksumsSHA256": "524e543f6c11264daab24306dfac7d1ae3f18ad88369a1ed906eae29c39b1047",
+      "manifestSHA256": "33b75987bc70dda4e65350fa7f13e0de1d3465ffa8fd239600c6f3ae63eb54c0",
+      "path": "regions/peaks-of-the-balkans/ios",
+      "validationSHA256": "edb93da8e434d08b7d2f9a9af252753fdac15fb4dad2a39b9fbef514d7382bd5"
+    }
+  },
+  "pythonRuntime": {
+    "packages": {
+      "Pillow": "12.3.0",
+      "certifi": "2026.10.23",
+      "charset-normalizer": "3.5.2",
+      "idna": "3.20",
+      "numpy": "2.5.4",
+      "osmium": "4.3.2",
+      "pyproj": "3.8.0",
+      "requests": "2.34.2",
+      "shapely": "2.2.0",
+      "urllib3": "2.8.0"
+    },
+    "platform": "macOS-27.2.1-arm64-arm-64bit-Mach-O",
+    "python": "3.14.5 (main, May 10 2026, 10:21:34) [Clang 21.0.0 (clang-2100.0.123.102)]",
+    "requirementsSHA256": "427f12ff8b49bfebac0a7d453c2f65bd15d6695584b18e6ecee1fdfeed20a36c"
+  },
+  "region": "peaks-of-the-balkans",
+  "styleSHA256": "5b89947b0da9cb5dd7be69c5861aa948e7d10afd1f2e26c47c08fdd02b212bf1",
+  "terrainLockSHA256": "4b50d342f27d530b58dcf5b98526c86c592dd664e07642ecd17affa165cfccf8",
+  "validation": "validation.json"
+}

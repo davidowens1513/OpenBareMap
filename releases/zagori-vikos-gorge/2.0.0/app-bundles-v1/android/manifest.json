@@ -1,0 +1,33 @@
+{
+  "bytes": 33300872,
+  "datasets": {
+    "basemap": {
+      "path": "maps/basemap.mbtiles",
+      "sha256": "bcef3b749f9f5c6bff51708b97f90e6efc3387895d1f2492bb6340491ff351a8"
+    },
+    "coast": {
+      "derivedFrom": "c3636973c0b79e066e3344fb65086364613cf0dad7726b17277189f064888106",
+      "path": "maps/coast.mbtiles",
+      "sha256": "64f06c5fc7e07c6883040af61d0e5de26cbdb6b6e6c0097a8ed59eba5d3d88f8"
+    },
+    "grid": {
+      "path": "maps/grid.mbtiles",
+      "sha256": "8ffe6c5c5e3e0b0025bdbe5f1ad4bc173fd375f886ab44b16d8ccc46936e5fc6"
+    },
+    "hillshade": {
+      "path": "maps/hillshade.mbtiles",
+      "sha256": "4c99e814168e0af0cb783f7bb20d732a8adeedaa0541f7422230561417b3a0e1"
+    },
+    "topography": {
+      "path": "maps/topography.mbtiles",
+      "sha256": "c3636973c0b79e066e3344fb65086364613cf0dad7726b17277189f064888106"
+    }
+  },
+  "instructionsSHA256": "42f2e009a8bc28e023cc3c8867b8753de4749cd537953fcf2c9d1cd58efbdc6e",
+  "instructionsURL": "https://downloads.appsbyonzy.dev/OpenBareMap/zagori-vikos-gorge/2.0.0/app-bundles-v1/android/instructions.txt",
+  "localPath": "releases/zagori-vikos-gorge/2.0.0/app-bundles-v1/android/OpenBareMap-Zagori-Vikos-Gorge-Android-Bundle.zip",
+  "mapManifestSHA256": "a5fb5e0c8c92769ec8906f78f6b0ab4b7ccf9718c55e34b4359f8a9cd3477775",
+  "r2Key": "OpenBareMap/zagori-vikos-gorge/2.0.0/app-bundles-v1/android/OpenBareMap-Zagori-Vikos-Gorge-Android-Bundle.zip",
+  "sha256": "c362cc0f8d52588a26339110c4ee8dad09cce05533dcf536da0fa47d9cc020bd",
+  "url": "https://downloads.appsbyonzy.dev/OpenBareMap/zagori-vikos-gorge/2.0.0/app-bundles-v1/android/OpenBareMap-Zagori-Vikos-Gorge-Android-Bundle.zip"
+}

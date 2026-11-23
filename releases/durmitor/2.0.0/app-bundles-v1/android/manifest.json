@@ -1,0 +1,33 @@
+{
+  "bytes": 26927408,
+  "datasets": {
+    "basemap": {
+      "path": "maps/basemap.mbtiles",
+      "sha256": "4ebeeb5806266aba06b44d06aacdfd2d8298a3c34526258ae4f37fab9c95d0fa"
+    },
+    "coast": {
+      "derivedFrom": "1a4e61160dcc87a234a9affeb363510d1b39de5060ec6f5f879f2fdea68da554",
+      "path": "maps/coast.mbtiles",
+      "sha256": "c1d0d26fa045956db407705f57b9bb2e2200264b82aad471871c75813ba0dab2"
+    },
+    "grid": {
+      "path": "maps/grid.mbtiles",
+      "sha256": "535b6bfd07e42d8827eafd2925f5cd1b7abf9776335cfea9cea38d5e78a85b9b"
+    },
+    "hillshade": {
+      "path": "maps/hillshade.mbtiles",
+      "sha256": "19fbd89f5d8022d14d3e19a40a152459042829445e253bcc3562926eef092aec"
+    },
+    "topography": {
+      "path": "maps/topography.mbtiles",
+      "sha256": "1a4e61160dcc87a234a9affeb363510d1b39de5060ec6f5f879f2fdea68da554"
+    }
+  },
+  "instructionsSHA256": "ff417dcf1fd5ab3958f4ac044d325bc6d9d0b59bbb8b685cc488ae0d0df4fea9",
+  "instructionsURL": "https://downloads.appsbyonzy.dev/OpenBareMap/durmitor/2.0.0/app-bundles-v1/android/instructions.txt",
+  "localPath": "releases/durmitor/2.0.0/app-bundles-v1/android/OpenBareMap-Durmitor-Android-Bundle.zip",
+  "mapManifestSHA256": "15e1c0603a26d95a4354b824d950c700a58861ee5ce69635dae871b0810d75cc",
+  "r2Key": "OpenBareMap/durmitor/2.0.0/app-bundles-v1/android/OpenBareMap-Durmitor-Android-Bundle.zip",
+  "sha256": "d4941283b678b829b568c13b4529e7f6cb6e8eb7be84e13626aa03a8419d7114",
+  "url": "https://downloads.appsbyonzy.dev/OpenBareMap/durmitor/2.0.0/app-bundles-v1/android/OpenBareMap-Durmitor-Android-Bundle.zip"
+}

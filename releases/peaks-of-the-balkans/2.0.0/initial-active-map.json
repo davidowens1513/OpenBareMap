@@ -1,0 +1,52 @@
+{
+  "contourIntervalMetres": 20,
+  "coverage": "The Peaks of the Balkans circuit through Albania, Montenegro and Kosovo, including Theth, Valbona, Plav, the Rugova valley and Pej\u00eb.",
+  "datasets": {
+    "basemap": {
+      "bytes": 32940032,
+      "path": "releases/peaks-of-the-balkans/2.0.0/maps/basemap.mbtiles",
+      "sha256": "8ea365a1e4157ed84bb23dcc94aa6fb3e0aac9cb3f5673202a304956c9af9b83",
+      "validation": {
+        "empty_tile_count": 0,
+        "logical_tiles_sha256": "d7744e13a45eceda4a591f7272f8b6f76fc067ae849eb829395c80c4c7d03288",
+        "tile_count": 1895
+      }
+    },
+    "grid": {
+      "bytes": 663552,
+      "path": "releases/peaks-of-the-balkans/2.0.0/maps/grid.mbtiles",
+      "sha256": "fd336b882347cebe90181b4fce5b71ef0a7a28bd49ee4ed314930e4e06db2bee",
+      "validation": {
+        "empty_tile_count": 0,
+        "logical_tiles_sha256": "32f162b4d482f83a676f6bf3f08005a291a9d87e018628e6c03bb94de68f1f4a",
+        "tile_count": 1884
+      }
+    },
+    "hillshade": {
+      "bytes": 6426624,
+      "path": "releases/peaks-of-the-balkans/2.0.0/maps/hillshade.mbtiles",
+      "sha256": "0574306b0eeec448c05a92cc66b5a6e647c323545664d263e2725aa82778a1bb",
+      "validation": {
+        "empty_tile_count": 0,
+        "logical_tiles_sha256": "8fd2ee750ab0bd74c22d3ccffb928aec4b6bc90c241df36c95b7472aede21692",
+        "tile_count": 132
+      }
+    },
+    "topography": {
+      "bytes": 44933120,
+      "path": "releases/peaks-of-the-balkans/2.0.0/maps/topography.mbtiles",
+      "sha256": "72ceb095f6d92fb5e133fb2f017f7ab1f6d3df773abdbc778d0eb8d7b88eef98",
+      "validation": {
+        "empty_tile_count": 36604,
+        "logical_tiles_sha256": "578f96cfc933c9739f943d59a5f211e9d27b42c1022df7b7339bf740cf92819d",
+        "tile_count": 40927
+      }
+    }
+  },
+  "format": "openbaremap-development-viewer-v1",
+  "localBorders": false,
+  "mapVersion": "2.0.0",
+  "region": "peaks-of-the-balkans",
+  "storageRevision": "2.0.0-peaks-of-the-balkans-r1",
+  "styleRevision": "2.0.0-peaks-of-the-balkans-r1"
+}

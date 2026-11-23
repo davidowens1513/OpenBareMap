@@ -1,0 +1,35 @@
+{
+  "bytes": 33301297,
+  "datasets": {
+    "basemap": {
+      "path": "maps/basemap.mbtiles",
+      "sha256": "bcef3b749f9f5c6bff51708b97f90e6efc3387895d1f2492bb6340491ff351a8"
+    },
+    "coast": {
+      "derived_from": "c3636973c0b79e066e3344fb65086364613cf0dad7726b17277189f064888106",
+      "maxzoom": 12,
+      "operation": "Preserve land-layer MVT bytes only through zoom 12; omit other layers.",
+      "path": "maps/coast.mbtiles",
+      "sha256": "64f06c5fc7e07c6883040af61d0e5de26cbdb6b6e6c0097a8ed59eba5d3d88f8"
+    },
+    "grid": {
+      "path": "maps/grid.mbtiles",
+      "sha256": "8ffe6c5c5e3e0b0025bdbe5f1ad4bc173fd375f886ab44b16d8ccc46936e5fc6"
+    },
+    "hillshade": {
+      "path": "maps/hillshade.mbtiles",
+      "sha256": "4c99e814168e0af0cb783f7bb20d732a8adeedaa0541f7422230561417b3a0e1"
+    },
+    "topography": {
+      "path": "maps/topography.mbtiles",
+      "sha256": "c3636973c0b79e066e3344fb65086364613cf0dad7726b17277189f064888106"
+    }
+  },
+  "instructionsSHA256": "44a8e77a0dc0716169696909295985aadb3c9fd65cfea4bf398ae7c479d12375",
+  "instructionsURL": "https://downloads.appsbyonzy.dev/OpenBareMap/zagori-vikos-gorge/2.0.0/app-bundles-v1/ios/instructions.txt",
+  "localPath": "releases/zagori-vikos-gorge/2.0.0/app-bundles-v1/ios/OpenBareMap-Zagori-Vikos-Gorge-iOS-Bundle.zip",
+  "mapManifestSHA256": "70a4e5607eddf4110746fec678eb9e72cd235c56680533a302acac6ea892b847",
+  "r2Key": "OpenBareMap/zagori-vikos-gorge/2.0.0/app-bundles-v1/ios/OpenBareMap-Zagori-Vikos-Gorge-iOS-Bundle.zip",
+  "sha256": "389a46b55885b5eff485ca9f44e12defb1e4f73c4dff7d9b7848019383cefb52",
+  "url": "https://downloads.appsbyonzy.dev/OpenBareMap/zagori-vikos-gorge/2.0.0/app-bundles-v1/ios/OpenBareMap-Zagori-Vikos-Gorge-iOS-Bundle.zip"
+}

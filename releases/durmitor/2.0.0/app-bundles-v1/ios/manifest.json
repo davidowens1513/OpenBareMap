@@ -1,0 +1,35 @@
+{
+  "bytes": 26927834,
+  "datasets": {
+    "basemap": {
+      "path": "maps/basemap.mbtiles",
+      "sha256": "4ebeeb5806266aba06b44d06aacdfd2d8298a3c34526258ae4f37fab9c95d0fa"
+    },
+    "coast": {
+      "derived_from": "1a4e61160dcc87a234a9affeb363510d1b39de5060ec6f5f879f2fdea68da554",
+      "maxzoom": 12,
+      "operation": "Preserve land-layer MVT bytes only through zoom 12; omit other layers.",
+      "path": "maps/coast.mbtiles",
+      "sha256": "c1d0d26fa045956db407705f57b9bb2e2200264b82aad471871c75813ba0dab2"
+    },
+    "grid": {
+      "path": "maps/grid.mbtiles",
+      "sha256": "535b6bfd07e42d8827eafd2925f5cd1b7abf9776335cfea9cea38d5e78a85b9b"
+    },
+    "hillshade": {
+      "path": "maps/hillshade.mbtiles",
+      "sha256": "19fbd89f5d8022d14d3e19a40a152459042829445e253bcc3562926eef092aec"
+    },
+    "topography": {
+      "path": "maps/topography.mbtiles",
+      "sha256": "1a4e61160dcc87a234a9affeb363510d1b39de5060ec6f5f879f2fdea68da554"
+    }
+  },
+  "instructionsSHA256": "4febba0adb357b695ec3187b0ba200ffd55b9dfa521dcedbd0e98c0d48d87415",
+  "instructionsURL": "https://downloads.appsbyonzy.dev/OpenBareMap/durmitor/2.0.0/app-bundles-v1/ios/instructions.txt",
+  "localPath": "releases/durmitor/2.0.0/app-bundles-v1/ios/OpenBareMap-Durmitor-iOS-Bundle.zip",
+  "mapManifestSHA256": "cdb2a7870add2dcf39a9767d15565ca88cea81f2f7635190b310d699bf4ed2c1",
+  "r2Key": "OpenBareMap/durmitor/2.0.0/app-bundles-v1/ios/OpenBareMap-Durmitor-iOS-Bundle.zip",
+  "sha256": "a72b7d04ad323394a3b8111c19d19f694c6bbcfa53f4d57ecdfd4622d2fb4f13",
+  "url": "https://downloads.appsbyonzy.dev/OpenBareMap/durmitor/2.0.0/app-bundles-v1/ios/OpenBareMap-Durmitor-iOS-Bundle.zip"
+}

@@ -1,0 +1,366 @@
+{
+  "coverage": "The eight stages of the Menalon Trail from Stemnitsa to Lagkadia, with the Lousios Gorge and the surrounding Arcadian village paths.",
+  "coverageAnchors": {
+    "dimitsana": {
+      "coordinate": [
+        22.041,
+        37.596
+      ],
+      "featuresInNeighbouringDetailedTiles": 609
+    },
+    "elati": {
+      "coordinate": [
+        22.1491,
+        37.6268
+      ],
+      "featuresInNeighbouringDetailedTiles": 366
+    },
+    "lagkadia": {
+      "coordinate": [
+        22.0317,
+        37.6827
+      ],
+      "featuresInNeighbouringDetailedTiles": 332
+    },
+    "lousios-gorge": {
+      "coordinate": [
+        22.065,
+        37.544
+      ],
+      "featuresInNeighbouringDetailedTiles": 481
+    },
+    "magouliana": {
+      "coordinate": [
+        22.1268,
+        37.6779
+      ],
+      "featuresInNeighbouringDetailedTiles": 330
+    },
+    "stemnitsa": {
+      "coordinate": [
+        22.0831,
+        37.5561
+      ],
+      "featuresInNeighbouringDetailedTiles": 212
+    },
+    "valtetsiniko": {
+      "coordinate": [
+        22.0974,
+        37.7047
+      ],
+      "featuresInNeighbouringDetailedTiles": 269
+    },
+    "vytina": {
+      "coordinate": [
+        22.182,
+        37.669
+      ],
+      "featuresInNeighbouringDetailedTiles": 1233
+    }
+  },
+  "datasets": {
+    "basemap": {
+      "empty_tile_count": 0,
+      "logical_tiles_sha256": "c536e6ba15a888e1da05118d70af71d5729188a5a3c1b375f12b76e5d099ef45",
+      "tile_count": 539
+    },
+    "grid": {
+      "empty_tile_count": 0,
+      "logical_tiles_sha256": "511d98b8cd4527931f9dd463df5b8f0b739bf03bc402919032227aef5c66fb5a",
+      "tile_count": 531
+    },
+    "hillshade": {
+      "empty_tile_count": 0,
+      "logical_tiles_sha256": "b7cd32eba90a493cd191fd9fac7dd69b8a74ba8cbe514c89fb544151e6253a21",
+      "tile_count": 48
+    },
+    "topography": {
+      "empty_tile_count": 22259,
+      "logical_tiles_sha256": "d58ca69689506680e5b61e1b4e4ae9eb8b71dc09b602b744cb9ce87f0c5bff96",
+      "tile_count": 24217
+    }
+  },
+  "detail": {
+    "basemap": {
+      "boundaries": 1909,
+      "contours": 0
+    },
+    "topography": {
+      "boundaries": 0,
+      "contours": 31726
+    }
+  },
+  "garmin": {
+    "familyId": 4890,
+    "garminPackageRevision": "2.0.0-r1",
+    "inspection": {
+      "anchorLabels": {
+        "Dimitsana": "Dimitsana",
+        "Stemnitsa": "Stemnitsa"
+      },
+      "bounds": [
+        21.909914016723633,
+        37.469987869262695,
+        22.290058135986328,
+        37.820091247558594
+      ],
+      "coastPolygonsByLevel": {
+        "0": {
+          "0x32": 2,
+          "0x54": 4
+        },
+        "1": {
+          "0x32": 2,
+          "0x54": 4
+        },
+        "2": {
+          "0x32": 2,
+          "0x54": 4
+        },
+        "3": {
+          "0x32": 2,
+          "0x54": 4
+        },
+        "4": {
+          "0x32": 2,
+          "0x54": 4
+        }
+      },
+      "contoursByLevel": {
+        "0": {
+          "0x20": 5196,
+          "0x22": 1250
+        },
+        "1": {
+          "0x20": 4242,
+          "0x22": 1013
+        },
+        "2": {
+          "0x22": 950
+        },
+        "3": {
+          "0x10008": 869
+        },
+        "4": {}
+      },
+      "lineInstancesAtHighestDetail": {
+        "0x10001": 165,
+        "0x10005": 42,
+        "0x10006": 8,
+        "0x1000b": 106,
+        "0x16": 245,
+        "0x18": 118,
+        "0x1a": 1,
+        "0x1c": 77,
+        "0x1f": 35,
+        "0x20": 5196,
+        "0x22": 1250,
+        "0x3": 70,
+        "0x4": 117,
+        "0x6": 1669,
+        "0x7": 1052,
+        "0xa": 1286
+      },
+      "logicalCombinedSHA256": "6144a9e410b0394d58ceebded9ff371a1ece38f583228a843e703d0495843711",
+      "logicalHashNote": "Internal file names, sizes and payloads; only CommonHeader creation-date bytes 14..20 are zeroed for hashing. IMG archive headers are excluded. Output bytes are never modified.",
+      "logicalTileSHA256": {
+        "48900001.img": "f5a9827ea8c90efac3f1db534f678aa786e70541e98453632e7edf1ca1f6de0a",
+        "48900002.img": "d3e641395cdb53a8d496fc04e658d4732eefae20dbd5d4f90a5a97677c8174c0"
+      },
+      "pointInstancesAtHighestDetail": {
+        "0x10001": 11,
+        "0x10002": 18,
+        "0x10003": 56,
+        "0x10006": 492,
+        "0x2f0b": 27,
+        "0x6603": 3,
+        "0x6616": 18,
+        "0x800": 83,
+        "0xb00": 35,
+        "0xc00": 26
+      },
+      "polygonInstancesAtHighestDetail": {
+        "0x10101": 32,
+        "0x10102": 20,
+        "0x10103": 71,
+        "0x10104": 66,
+        "0x10109": 3,
+        "0x13": 2250,
+        "0x32": 2,
+        "0x3c": 16,
+        "0x50": 1132,
+        "0x54": 4
+      },
+      "routing": false,
+      "subfileBytes": {
+        "DEM": 1493457,
+        "LBL": 15850,
+        "MPS": 213,
+        "RGN": 2464275,
+        "SRT": 912,
+        "TRE": 31719,
+        "TYP": 2982
+      },
+      "tiles": 2
+    },
+    "output": {
+      "bytes": 4028416,
+      "path": "regions/menalon-trail/garmin/dist/OpenBareMap-Menalon-Trail.img",
+      "sha256": "44e20c2cba7c0046a510cf4b8b8b81c5451c8bec076b2dc46878b0f621a54d30"
+    },
+    "routing": false,
+    "status": "compiled and structurally inspected; hardware rendering pending"
+  },
+  "geometryProcessing": {
+    "contours": 4324,
+    "grid": {
+      "grid_10km": 11,
+      "grid_1km": 92
+    },
+    "landcover": {
+      "empty_source_areas": [],
+      "features": 654,
+      "retained": 17,
+      "smoothed": 637
+    }
+  },
+  "irelandGarminPackageRevision": "2.0.1-trail-detail-r1",
+  "irelandPreserved": true,
+  "labelGlyphs": {
+    "Open Sans Bold": true,
+    "Open Sans Regular": true,
+    "Open Sans Semibold": true
+  },
+  "landBackground": {
+    "dimitsana": {
+      "coordinate": [
+        22.041,
+        37.596
+      ],
+      "verifiedZooms": [
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    },
+    "elati": {
+      "coordinate": [
+        22.1491,
+        37.6268
+      ],
+      "verifiedZooms": [
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    },
+    "lagkadia": {
+      "coordinate": [
+        22.0317,
+        37.6827
+      ],
+      "verifiedZooms": [
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    },
+    "lousios-gorge": {
+      "coordinate": [
+        22.065,
+        37.544
+      ],
+      "verifiedZooms": [
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    },
+    "magouliana": {
+      "coordinate": [
+        22.1268,
+        37.6779
+      ],
+      "verifiedZooms": [
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    },
+    "stemnitsa": {
+      "coordinate": [
+        22.0831,
+        37.5561
+      ],
+      "verifiedZooms": [
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    },
+    "valtetsiniko": {
+      "coordinate": [
+        22.0974,
+        37.7047
+      ],
+      "verifiedZooms": [
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    },
+    "vytina": {
+      "coordinate": [
+        22.182,
+        37.669
+      ],
+      "verifiedZooms": [
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    }
+  },
+  "packages": {
+    "android": {
+      "checkedFiles": 43,
+      "nativeDeviceRenderingTested": false,
+      "sourceFiles": {
+        "basemap": "maps/basemap.mbtiles",
+        "coast": "maps/coast.mbtiles",
+        "hillshade": "maps/hillshade.mbtiles",
+        "topography": "maps/topography.mbtiles",
+        "utm-grid": "maps/grid.mbtiles"
+      }
+    },
+    "ios": {
+      "checkedFiles": 46,
+      "nativeDeviceRenderingTested": false,
+      "sourceFiles": {
+        "basemap": "maps/basemap.mbtiles",
+        "coast": "maps/coast.mbtiles",
+        "hillshade": "maps/hillshade.mbtiles",
+        "topography": "maps/topography.mbtiles",
+        "utm-grid": "maps/grid.mbtiles"
+      }
+    }
+  },
+  "region": "menalon-trail",
+  "status": "automated checks passed; visual and hardware acceptance pending"
+}
