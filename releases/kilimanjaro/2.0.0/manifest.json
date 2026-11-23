@@ -1,0 +1,106 @@
+{
+  "acceptance": "Automated checks only; see validation and visual-review records for actual reviewed scope.",
+  "coverage": "Kilimanjaro from Moshi through the main park approaches, with routes through Marangu, Machame, Lemosho, Rongai, Umbwe and the northern circuit, the Mweka descent, Uhuru Peak and Mawenzi.",
+  "datasets": {
+    "basemap": {
+      "bytes": 29921280,
+      "path": "releases/kilimanjaro/2.0.0/maps/basemap.mbtiles",
+      "sha256": "30dda5f1560706d34a45eee63459ddff575b9beb6224795f7f00ff43c25a0261",
+      "validation": {
+        "empty_tile_count": 37,
+        "logical_tiles_sha256": "3e89969b9617bf055ad0f38f0dc12e61f870117baccf9c762e8d96d99e62da5e",
+        "tile_count": 1710
+      }
+    },
+    "grid": {
+      "bytes": 749568,
+      "path": "releases/kilimanjaro/2.0.0/maps/grid.mbtiles",
+      "sha256": "46f8036d82917aa6f7bef4e2cf36117064f32714d89075630074ed51140e45d5",
+      "validation": {
+        "empty_tile_count": 0,
+        "logical_tiles_sha256": "949b301599b04c2b3f856efc4031a0d94e5676d1778755292374587170df9af4",
+        "tile_count": 1934
+      }
+    },
+    "hillshade": {
+      "bytes": 4833280,
+      "path": "releases/kilimanjaro/2.0.0/maps/hillshade.mbtiles",
+      "sha256": "574059b944962310ad72f8000bb545de5e737488850bc4350ae42508a99f727f",
+      "validation": {
+        "empty_tile_count": 0,
+        "logical_tiles_sha256": "7b615385efba3cd4309ca6e8b6c564edeadaa2b45c49d0fad746211110affcdf",
+        "tile_count": 149
+      }
+    },
+    "topography": {
+      "bytes": 21020672,
+      "path": "releases/kilimanjaro/2.0.0/maps/topography-context.mbtiles",
+      "sha256": "a32f559ea004ad2cf8897fd5d88179a346caf42ec3c8f355dfbe3251593e3249",
+      "validation": {
+        "empty_tile_count": 40222,
+        "logical_tiles_sha256": "7fe8fb8bdc402c3a57c183797ede78dc6defc6741228125f0c9b586b9b9007d6",
+        "tile_count": 44849
+      }
+    }
+  },
+  "garmin": {
+    "bytes": 21170176,
+    "path": "regions/kilimanjaro/garmin/dist/OpenBareMap-Kilimanjaro.img",
+    "sha256": "41035efefa7e90e868cd8ddf4524c254f8fbf3d9b72b01a78b6f355e8deac840"
+  },
+  "geometryReport": {
+    "path": "build/kilimanjaro-geometry/geometry-report.json",
+    "sha256": "b63ae3b0dc9e6a8a6e0a7d5c29f2d4cd5a2cf304c872618c7c7ae1311e70d15e"
+  },
+  "hostAppsModified": false,
+  "mapVersion": "2.0.0",
+  "osm": {
+    "bytes": 26484995,
+    "operation": "Complete-feature bbox extraction with nested relation references",
+    "path": "data/regions/kilimanjaro/tanzania-261119.osm.clipped.osm.pbf",
+    "replicationTimestamp": "2026-11-19T21:22:20Z",
+    "sha256": "2f1b58ddbe89528cf8566fe8e6e0f5f84602a611d992ec0e882b201a78b0c78f",
+    "snapshot_date": "2026-11-19",
+    "url": "https://download.geofabrik.de/africa/tanzania/tanzania-261119.osm.pbf"
+  },
+  "packages": {
+    "android": {
+      "archive": {
+        "bytes": 60404690,
+        "path": "regions/kilimanjaro/android/OpenBareMap-Android.zip",
+        "sha256": "899f2966cd4e22736e698d8f819a82872c437770a575e2b96c533d3fb75e59fb"
+      },
+      "checksumsSHA256": "5feb6fa6ddc82090279f4f1688e5d4857a295a04d2f5e33ca83d6638257835dd",
+      "manifestSHA256": "1890904585439eb9f38591f66c469e68316a5ac8fcea193662fbf26ea45d0d0a",
+      "path": "regions/kilimanjaro/android",
+      "validationSHA256": "69fd36e7b4fdf31b8668d02ba30640c4c7459c631e7bf9107daa42ab26ac3cdf"
+    },
+    "ios": {
+      "checksumsSHA256": "043da567b8e8febb18c9d93fd98828296347a35fc5156e0ac252da8ab0ef5919",
+      "manifestSHA256": "21e13421ae87deb77186008d9fedd385d61cf9c85d01156593a7912d676f4ed5",
+      "path": "regions/kilimanjaro/ios",
+      "validationSHA256": "d4e184231397f109e9b0a0cfeae4b8fdd846bc30fa76980f3ff9ad088988f9d9"
+    }
+  },
+  "pythonRuntime": {
+    "packages": {
+      "Pillow": "12.3.0",
+      "certifi": "2026.10.23",
+      "charset-normalizer": "3.5.2",
+      "idna": "3.20",
+      "numpy": "2.5.4",
+      "osmium": "4.3.2",
+      "pyproj": "3.8.0",
+      "requests": "2.34.2",
+      "shapely": "2.2.0",
+      "urllib3": "2.8.0"
+    },
+    "platform": "macOS-27.2.1-arm64-arm-64bit-Mach-O",
+    "python": "3.14.5 (main, May 10 2026, 10:21:34) [Clang 21.0.0 (clang-2100.0.123.102)]",
+    "requirementsSHA256": "427f12ff8b49bfebac0a7d453c2f65bd15d6695584b18e6ecee1fdfeed20a36c"
+  },
+  "region": "kilimanjaro",
+  "styleSHA256": "8f3e27f0ef9f0f2126ad3e5a648c74ee2d4603f84186950e78ff146f1645da54",
+  "terrainLockSHA256": "2d4a00156d36de996ba6f4402b44f63ffb6aafaef5a766a05ae00f8337eb4fb7",
+  "validation": "validation.json"
+}

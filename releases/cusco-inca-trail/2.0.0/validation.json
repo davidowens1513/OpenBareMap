@@ -1,0 +1,442 @@
+{
+  "coverage": "Cusco and the Sacred Valley via Pisac, Urubamba and Ollantaytambo. Includes the classic Inca Trail from Piscacucho (Km 82) to Machu Picchu, Machu Picchu Pueblo and the Salkantay area.",
+  "coverageAnchors": {
+    "cusco": {
+      "coordinate": [
+        -71.978,
+        -13.516
+      ],
+      "featuresInNeighbouringDetailedTiles": 24765
+    },
+    "machu-picchu": {
+      "coordinate": [
+        -72.545,
+        -13.164
+      ],
+      "featuresInNeighbouringDetailedTiles": 2086
+    },
+    "machu-picchu-pueblo": {
+      "coordinate": [
+        -72.525,
+        -13.154
+      ],
+      "featuresInNeighbouringDetailedTiles": 1643
+    },
+    "ollantaytambo": {
+      "coordinate": [
+        -72.264,
+        -13.258
+      ],
+      "featuresInNeighbouringDetailedTiles": 2665
+    },
+    "pisac": {
+      "coordinate": [
+        -71.849,
+        -13.421
+      ],
+      "featuresInNeighbouringDetailedTiles": 4923
+    },
+    "piscacucho": {
+      "coordinate": [
+        -72.3825097,
+        -13.2149329
+      ],
+      "featuresInNeighbouringDetailedTiles": 839
+    },
+    "salkantay": {
+      "coordinate": [
+        -72.544,
+        -13.333
+      ],
+      "featuresInNeighbouringDetailedTiles": 137
+    },
+    "urubamba": {
+      "coordinate": [
+        -72.116,
+        -13.305
+      ],
+      "featuresInNeighbouringDetailedTiles": 16703
+    },
+    "warmiwanusca": {
+      "coordinate": [
+        -72.4840294,
+        -13.2429982
+      ],
+      "featuresInNeighbouringDetailedTiles": 435
+    },
+    "winay-wayna": {
+      "coordinate": [
+        -72.5368007,
+        -13.1901036
+      ],
+      "featuresInNeighbouringDetailedTiles": 1763
+    }
+  },
+  "datasets": {
+    "basemap": {
+      "empty_tile_count": 1,
+      "logical_tiles_sha256": "46588cb92e78a2d0e8942fc972bea77b97fb8beb23250bca190dd3cdbc089b33",
+      "tile_count": 1826
+    },
+    "grid": {
+      "empty_tile_count": 0,
+      "logical_tiles_sha256": "d8d9b6d54181c49b00a642a36efd46497ab0cb8cc50a343e043ad9dec8faf48e",
+      "tile_count": 1863
+    },
+    "hillshade": {
+      "empty_tile_count": 0,
+      "logical_tiles_sha256": "7d35549f74c6006e5605627fa134fbcde8564437d9516879b0eb37fe0684ac04",
+      "tile_count": 153
+    },
+    "topography": {
+      "empty_tile_count": 30619,
+      "logical_tiles_sha256": "7f2717289971a5ea1a2e6c351451238b7319465c50df2d1d697c763eba5593ab",
+      "tile_count": 34605
+    }
+  },
+  "detail": {
+    "basemap": {
+      "boundaries": 3874,
+      "contours": 0,
+      "permanentIce": {
+        "glacier": 848,
+        "permanent_snow": 0
+      }
+    },
+    "topography": {
+      "boundaries": 0,
+      "contours": 158562
+    }
+  },
+  "garmin": {
+    "familyId": 4877,
+    "garminPackageRevision": "2.0.1-glacier-r1",
+    "inspection": {
+      "anchorLabels": {
+        "Abra Warmiwa\u00f1usca": "Abra Warmiwa\u00f1usca",
+        "Cuzco": "Cuzco",
+        "Machu Picchu": "Machu Picchu",
+        "Ollantaytambo": "Ollantaytambo"
+      },
+      "bounds": [
+        -72.72005081176758,
+        -13.689994812011719,
+        -71.76999092102051,
+        -13.049955368041992
+      ],
+      "coastPolygonsByLevel": {
+        "0": {
+          "0x32": 10,
+          "0x54": 14
+        },
+        "1": {
+          "0x32": 10,
+          "0x54": 14
+        },
+        "2": {
+          "0x32": 10,
+          "0x54": 14
+        },
+        "3": {
+          "0x32": 10,
+          "0x54": 14
+        },
+        "4": {
+          "0x32": 10,
+          "0x54": 14
+        }
+      },
+      "contoursByLevel": {
+        "0": {
+          "0x20": 31622,
+          "0x22": 7951
+        },
+        "1": {
+          "0x20": 23019,
+          "0x22": 5789
+        },
+        "2": {
+          "0x22": 5331
+        },
+        "3": {
+          "0x10008": 4738
+        },
+        "4": {}
+      },
+      "lineInstancesAtHighestDetail": {
+        "0x10001": 74,
+        "0x10004": 30,
+        "0x10005": 818,
+        "0x10006": 163,
+        "0x1000b": 24,
+        "0x14": 181,
+        "0x16": 9501,
+        "0x18": 3159,
+        "0x1c": 199,
+        "0x1e": 22,
+        "0x1f": 169,
+        "0x2": 435,
+        "0x20": 31622,
+        "0x22": 7951,
+        "0x3": 344,
+        "0x4": 355,
+        "0x6": 11571,
+        "0x7": 1599,
+        "0xa": 3376
+      },
+      "logicalCombinedSHA256": "f0069577893f3080a9a131201d6b826a57d4d27d03ddd0dad0dc33d45fa092a4",
+      "logicalHashNote": "Internal file names, sizes and payloads; only CommonHeader creation-date bytes 14..20 are zeroed for hashing. IMG archive headers are excluded. Output bytes are never modified.",
+      "logicalTileSHA256": {
+        "48770001.img": "efe07f2a77d8abb70afde69006920a25a35b556ba3b4d9ce157f9fc8dad02dfe",
+        "48770002.img": "e70832747c7b12074f077cbe88ea62f41d651015ef120259d0d9f7d99f895cc9",
+        "48770003.img": "6a724e9c538e3645cd8aad2117a49dc65e5c073b06ea1dd8dc1a406f5dac0da0",
+        "48770004.img": "192619faec892581362eef8e8c6d0b3894101f063082c467a1932490dd756371",
+        "48770005.img": "87d23cc08ce587d0ff5fa7384e7cfb69d8191a8680875d731cea4c23c16ff0d1",
+        "48770006.img": "e8009763968adfaa261fc4bb8034647d5231b6928849a5be9aef8cdf90da3606",
+        "48770007.img": "1f802f74104799254c358d88c7a4b69e29460fd059e6185ad37994081fe01c17",
+        "48770008.img": "d0b7349231eb82a511647755d4ac6759b898a1dd56fce0f34de1ccd496dcdecd",
+        "48770009.img": "90c04f70f28c38c43463dc692534a4d2c91e010cbc938c567a554a4f68470372",
+        "48770010.img": "33b1f6382d1b8fe7b30ec456614b165bda5c37bbdd3e723f698d0bd02fc552a3"
+      },
+      "pointInstancesAtHighestDetail": {
+        "0x100": 1,
+        "0x10001": 174,
+        "0x10002": 261,
+        "0x10003": 231,
+        "0x10004": 25,
+        "0x10006": 6607,
+        "0x2f0b": 247,
+        "0x600": 9,
+        "0x650c": 12,
+        "0x6603": 39,
+        "0x6615": 33,
+        "0x6616": 118,
+        "0x800": 244,
+        "0xb00": 350,
+        "0xc00": 126
+      },
+      "polygonInstancesAtHighestDetail": {
+        "0x10101": 2645,
+        "0x10102": 1452,
+        "0x10103": 34,
+        "0x10104": 276,
+        "0x10105": 1,
+        "0x10106": 1,
+        "0x10109": 459,
+        "0x1010a": 106,
+        "0x1010b": 6,
+        "0x1010c": 98,
+        "0x13": 239146,
+        "0x32": 10,
+        "0x3c": 1316,
+        "0x50": 1138,
+        "0x51": 285,
+        "0x54": 14
+      },
+      "routing": false,
+      "subfileBytes": {
+        "DEM": 8022835,
+        "LBL": 213312,
+        "MPS": 968,
+        "RGN": 19529621,
+        "SRT": 912,
+        "TRE": 223381,
+        "TYP": 3037
+      },
+      "tiles": 10
+    },
+    "output": {
+      "bytes": 28088320,
+      "path": "regions/cusco-inca-trail/garmin/dist/OpenBareMap-Cusco-Inca-Trail.img",
+      "sha256": "786a6da1edb8774bba34a257cf2c7b0f547692dd3711e7932753ebf99731d42b"
+    },
+    "routing": false,
+    "status": "compiled and structurally inspected; hardware rendering pending"
+  },
+  "geometryProcessing": {
+    "contours": 14707,
+    "grid": {
+      "grid_10km": 22,
+      "grid_1km": 202
+    },
+    "landcover": {
+      "empty_source_areas": [],
+      "features": 6160,
+      "permanentIce": {
+        "glacier": 75,
+        "permanent_snow": 0
+      },
+      "retained": 1307,
+      "smoothed": 4853
+    }
+  },
+  "irelandGarminPackageRevision": "2.0.1-trail-detail-r1",
+  "irelandPreserved": true,
+  "labelGlyphs": {
+    "Open Sans Bold": true,
+    "Open Sans Regular": true,
+    "Open Sans Semibold": true
+  },
+  "landBackground": {
+    "cusco": {
+      "coordinate": [
+        -71.978,
+        -13.516
+      ],
+      "verifiedZooms": [
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    },
+    "machu-picchu": {
+      "coordinate": [
+        -72.545,
+        -13.164
+      ],
+      "verifiedZooms": [
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    },
+    "machu-picchu-pueblo": {
+      "coordinate": [
+        -72.525,
+        -13.154
+      ],
+      "verifiedZooms": [
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    },
+    "ollantaytambo": {
+      "coordinate": [
+        -72.264,
+        -13.258
+      ],
+      "verifiedZooms": [
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    },
+    "pisac": {
+      "coordinate": [
+        -71.849,
+        -13.421
+      ],
+      "verifiedZooms": [
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    },
+    "piscacucho": {
+      "coordinate": [
+        -72.3825097,
+        -13.2149329
+      ],
+      "verifiedZooms": [
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    },
+    "salkantay": {
+      "coordinate": [
+        -72.544,
+        -13.333
+      ],
+      "verifiedZooms": [
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    },
+    "urubamba": {
+      "coordinate": [
+        -72.116,
+        -13.305
+      ],
+      "verifiedZooms": [
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    },
+    "warmiwanusca": {
+      "coordinate": [
+        -72.4840294,
+        -13.2429982
+      ],
+      "verifiedZooms": [
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    },
+    "winay-wayna": {
+      "coordinate": [
+        -72.5368007,
+        -13.1901036
+      ],
+      "verifiedZooms": [
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    }
+  },
+  "packages": {
+    "android": {
+      "checkedFiles": 43,
+      "nativeDeviceRenderingTested": false,
+      "sourceFiles": {
+        "basemap": "maps/basemap.mbtiles",
+        "coast": "maps/coast.mbtiles",
+        "hillshade": "maps/hillshade.mbtiles",
+        "topography": "maps/topography.mbtiles",
+        "utm-grid": "maps/grid.mbtiles"
+      }
+    },
+    "ios": {
+      "checkedFiles": 46,
+      "nativeDeviceRenderingTested": false,
+      "sourceFiles": {
+        "basemap": "maps/basemap.mbtiles",
+        "coast": "maps/coast.mbtiles",
+        "hillshade": "maps/hillshade.mbtiles",
+        "topography": "maps/topography.mbtiles",
+        "utm-grid": "maps/grid.mbtiles"
+      }
+    }
+  },
+  "permanentIceSourceCounts": {
+    "glacier": 75,
+    "permanent_snow": 0
+  },
+  "region": "cusco-inca-trail",
+  "status": "automated checks passed; visual and hardware acceptance pending"
+}

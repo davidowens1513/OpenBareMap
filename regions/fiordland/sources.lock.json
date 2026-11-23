@@ -1,0 +1,29 @@
+{
+  "accessed_utc": "2026-11-23T15:16:15.674915+00:00",
+  "inputs": [
+    {
+      "bytes": 406370902,
+      "path": "data/regions/fiordland/new-zealand-261119.osm.pbf",
+      "replicationTimestamp": "2026-11-19T21:22:20Z",
+      "sha256": "10434498377f26f8dcd0b5203f867f1fce55b0dd07d2e0b35c68511c7f8f8f72",
+      "url": "https://download.geofabrik.de/australia-oceania/new-zealand/new-zealand-261119.osm.pbf"
+    }
+  ],
+  "osm": {
+    "bytes": 14734217,
+    "operation": "Complete-feature bbox extraction with nested relation references",
+    "path": "data/regions/fiordland/new-zealand-261119.osm.clipped.osm.pbf",
+    "replicationTimestamp": "2026-11-19T21:22:20Z",
+    "sha256": "7230c75ac229c0cda0af70483d29ea7495aee34cba45aaf2bd2c746ddf6fea8b",
+    "snapshot_date": "2026-11-19",
+    "url": "https://download.geofabrik.de/australia-oceania/new-zealand/new-zealand-261119.osm.pbf"
+  },
+  "polygons": [
+    {
+      "bytes": 379,
+      "path": "data/regions/fiordland/new-zealand.poly",
+      "sha256": "5d483934d8f56574d642d57d36e9157d9de089de5012485cba5aa3c77b046b9b",
+      "url": "https://download.geofabrik.de/australia-oceania/new-zealand/new-zealand.poly"
+    }
+  ]
+}

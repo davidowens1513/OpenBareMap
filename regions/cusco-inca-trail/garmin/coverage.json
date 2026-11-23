@@ -1,0 +1,35 @@
+{
+  "areaSquareDegrees": 0.6080000000000007,
+  "bounds": [
+    -72.72,
+    -13.69,
+    -71.77,
+    -13.05
+  ],
+  "entireRequestedFootprintCovered": true,
+  "exactFootprint": null,
+  "inputs": [
+    {
+      "bytes": 4172,
+      "path": "data/regions/cusco-inca-trail/peru.poly",
+      "sha256": "179baab6f016cdddfcc38f14990c5e0a015de4cb15421f740a93eb37cf455ada",
+      "url": "https://download.geofabrik.de/south-america/peru/peru.poly"
+    }
+  ],
+  "knownDestinationsCovered": [
+    "island",
+    "cusco",
+    "pisac",
+    "urubamba",
+    "ollantaytambo",
+    "piscacucho",
+    "warmiwanusca",
+    "winay-wayna",
+    "machu-picchu",
+    "machu-picchu-pueblo",
+    "salkantay"
+  ],
+  "operation": "Requested rectangular crop; source outlines cover all destination anchors",
+  "polygons": 1,
+  "sha256": "891ffa6ffbe7eefe0ea5e3f1e840dc755d8e9ceb9a33400b482195ebd0852fe5"
+}

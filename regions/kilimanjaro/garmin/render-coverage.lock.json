@@ -1,0 +1,78 @@
+{
+  "bounds": [
+    36.87,
+    -3.48,
+    37.72568,
+    -2.78
+  ],
+  "contextEnvelope": [
+    36.87,
+    -3.48,
+    37.79,
+    -2.78
+  ],
+  "drawPriority": 25,
+  "format": "openbaremap-garmin-render-footprint-v1",
+  "geometry": {
+    "bytes": 1078,
+    "path": "regions/kilimanjaro/garmin/render-coverage.geojson",
+    "sha256": "8403afa3fd3ab968c1856132feaa73561168bf2d5a0f0c0708cd3dcdfdf2335a"
+  },
+  "inputs": [
+    {
+      "bytes": 3599,
+      "path": "data/regions/kilimanjaro/tanzania.poly",
+      "sha256": "e885f9f6680cfb9c6a230d2d4f56bdc96503ec7b22a71fcf21238deff0bf4e17",
+      "url": "https://download.geofabrik.de/africa/tanzania/tanzania.poly"
+    }
+  ],
+  "knownDestinationsCovered": {
+    "barranco": [
+      37.3291542,
+      -3.0938108
+    ],
+    "lemosho": [
+      37.1468992,
+      -3.0029446
+    ],
+    "londorosi-gate": [
+      37.1351376,
+      -2.9618818
+    ],
+    "machame-gate": [
+      37.2392243,
+      -3.1734709
+    ],
+    "marangu-gate": [
+      37.5176549,
+      -3.2436469
+    ],
+    "mawenzi": [
+      37.456359,
+      -3.0933462
+    ],
+    "moshi": [
+      37.3435249,
+      -3.3486456
+    ],
+    "mweka": [
+      37.3414862,
+      -3.2195002
+    ],
+    "rongai": [
+      37.4669429,
+      -2.9703457
+    ],
+    "uhuru-peak": [
+      37.3539987,
+      -3.0764084
+    ],
+    "umbwe-gate": [
+      37.2795699,
+      -3.1898265
+    ]
+  },
+  "purpose": "Rectangular Garmin tiles may overlap other countries. Do not fill their padding with sea, land or land-cover polygons.",
+  "region": "kilimanjaro",
+  "transparentNativeMap": true
+}

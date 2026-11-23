@@ -1,0 +1,21 @@
+{
+  "combinedSHA256": "fed7e2f6d3307aaa2f8c39f0cddcb7195af050c1636009d87f0584ded84d011b",
+  "command": [
+    "/opt/homebrew/opt/openjdk@21/libexec/openjdk.jdk/Contents/Home/bin/java",
+    "-Xmx6g",
+    "-jar",
+    "/Volumes/Extreme SSD/Projects/OpenBareMap/garmin/tools/splitter-r654/splitter.jar",
+    "--mapid=48770001",
+    "--description=OpenBareMap Cusco & the Inca Trail",
+    "--max-nodes=1000000",
+    "--max-threads=2",
+    "--keep-complete=true",
+    "--output=pbf",
+    "--polygon-file=/Volumes/Extreme SSD/Projects/OpenBareMap/regions/cusco-inca-trail/garmin/coverage.poly",
+    "--output-dir=/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/906ead9d53a7/cusco-inca-trail/garmin/split",
+    "--ignore-osm-bounds=true",
+    "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/906ead9d53a7/cusco-inca-trail/garmin/combined.osm.pbf"
+  ],
+  "coverageSHA256": "891ffa6ffbe7eefe0ea5e3f1e840dc755d8e9ceb9a33400b482195ebd0852fe5",
+  "ignoreSourceHeaderBounds": true
+}

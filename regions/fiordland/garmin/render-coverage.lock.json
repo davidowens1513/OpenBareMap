@@ -1,0 +1,82 @@
+{
+  "bounds": [
+    167.52,
+    -45.65,
+    168.82,
+    -44.51
+  ],
+  "contextEnvelope": [
+    167.52,
+    -45.65,
+    168.82,
+    -44.51
+  ],
+  "drawPriority": 25,
+  "format": "openbaremap-garmin-render-footprint-v1",
+  "geometry": {
+    "bytes": 752,
+    "path": "regions/fiordland/garmin/render-coverage.geojson",
+    "sha256": "6d1830a03a96b98cef0bb287eee1f5e9d126aef90bf75bbcc31f0ab8fbd8649d"
+  },
+  "inputs": [
+    {
+      "bytes": 379,
+      "path": "data/regions/fiordland/new-zealand.poly",
+      "sha256": "5d483934d8f56574d642d57d36e9157d9de089de5012485cba5aa3c77b046b9b",
+      "url": "https://download.geofabrik.de/australia-oceania/new-zealand/new-zealand.poly"
+    }
+  ],
+  "knownDestinationsCovered": {
+    "glade-wharf": [
+      167.9303073,
+      -44.9321528
+    ],
+    "glenorchy": [
+      168.391,
+      -44.85
+    ],
+    "kepler-trailhead": [
+      167.688953,
+      -45.4423027
+    ],
+    "luxmore-hut": [
+      167.6190388,
+      -45.3851686
+    ],
+    "manapouri": [
+      167.608,
+      -45.566
+    ],
+    "mckinnon-pass": [
+      167.7657824,
+      -44.8024908
+    ],
+    "milford-sound": [
+      167.929,
+      -44.671
+    ],
+    "queenstown": [
+      168.662,
+      -45.031
+    ],
+    "routeburn-shelter": [
+      168.2785194,
+      -44.7188648
+    ],
+    "sandfly-point": [
+      167.9025346,
+      -44.68356
+    ],
+    "te-anau": [
+      167.717489,
+      -45.41449
+    ],
+    "the-divide": [
+      168.117285,
+      -44.8249173
+    ]
+  },
+  "purpose": "Rectangular Garmin tiles may overlap other countries. Do not fill their padding with sea, land or land-cover polygons.",
+  "region": "fiordland",
+  "transparentNativeMap": true
+}

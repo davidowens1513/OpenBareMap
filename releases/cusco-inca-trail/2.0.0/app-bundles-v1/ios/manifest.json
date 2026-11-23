@@ -1,0 +1,35 @@
+{
+  "bytes": 106639725,
+  "datasets": {
+    "basemap": {
+      "path": "maps/basemap.mbtiles",
+      "sha256": "632b3af0b13915cc927cb333baf0f6d8dbf5491b42382dca7849cb5268b160cd"
+    },
+    "coast": {
+      "derived_from": "ddcfa4bcf464bb2eaaab07d94c7257204c74a861794bf5a262eee4820d9cf4db",
+      "maxzoom": 12,
+      "operation": "Preserve land-layer MVT bytes only through zoom 12; omit other layers.",
+      "path": "maps/coast.mbtiles",
+      "sha256": "274f5b8288ff016e0fda06b107392ffbee7c6bb43ca082352c8f64930dadc800"
+    },
+    "grid": {
+      "path": "maps/grid.mbtiles",
+      "sha256": "7efa46d2bbb8121aa960b8dfd2297dc77b36d1a01223b5c015648d89c23543e2"
+    },
+    "hillshade": {
+      "path": "maps/hillshade.mbtiles",
+      "sha256": "598ab6c5f28e90899c2ade99ed1ecbf2a0149bd459a376c9a67b0f373cbe8f08"
+    },
+    "topography": {
+      "path": "maps/topography.mbtiles",
+      "sha256": "ddcfa4bcf464bb2eaaab07d94c7257204c74a861794bf5a262eee4820d9cf4db"
+    }
+  },
+  "instructionsSHA256": "097272f3fd77e02fa4ee4b39e5636c1757f3898ffb93201656936feaa5e0bae2",
+  "instructionsURL": "https://downloads.appsbyonzy.dev/OpenBareMap/cusco-inca-trail/2.0.0/app-bundles-v1/ios/instructions.txt",
+  "localPath": "releases/cusco-inca-trail/2.0.0/app-bundles-v1/ios/OpenBareMap-Cusco-Inca-Trail-iOS-Bundle.zip",
+  "mapManifestSHA256": "f3ecafd52a07d9e5884809c48d58ffd78056cd94cc2e373c2a24310ea092ad50",
+  "r2Key": "OpenBareMap/cusco-inca-trail/2.0.0/app-bundles-v1/ios/OpenBareMap-Cusco-Inca-Trail-iOS-Bundle.zip",
+  "sha256": "9ec2fb0eb5ecae1a554edeeb8617329a41846dafa21e5ae82480999d651b6b38",
+  "url": "https://downloads.appsbyonzy.dev/OpenBareMap/cusco-inca-trail/2.0.0/app-bundles-v1/ios/OpenBareMap-Cusco-Inca-Trail-iOS-Bundle.zip"
+}

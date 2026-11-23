@@ -1,0 +1,29 @@
+{
+  "accessed_utc": "2026-11-23T15:23:04.070468+00:00",
+  "inputs": [
+    {
+      "bytes": 706879235,
+      "path": "data/regions/kilimanjaro/tanzania-261119.osm.pbf",
+      "replicationTimestamp": "2026-11-19T21:22:20Z",
+      "sha256": "58faf325d133cd2fdf81c9e70da880466803b88b70e9e41f48e9a5d23f868aae",
+      "url": "https://download.geofabrik.de/africa/tanzania/tanzania-261119.osm.pbf"
+    }
+  ],
+  "osm": {
+    "bytes": 26484995,
+    "operation": "Complete-feature bbox extraction with nested relation references",
+    "path": "data/regions/kilimanjaro/tanzania-261119.osm.clipped.osm.pbf",
+    "replicationTimestamp": "2026-11-19T21:22:20Z",
+    "sha256": "2f1b58ddbe89528cf8566fe8e6e0f5f84602a611d992ec0e882b201a78b0c78f",
+    "snapshot_date": "2026-11-19",
+    "url": "https://download.geofabrik.de/africa/tanzania/tanzania-261119.osm.pbf"
+  },
+  "polygons": [
+    {
+      "bytes": 3599,
+      "path": "data/regions/kilimanjaro/tanzania.poly",
+      "sha256": "e885f9f6680cfb9c6a230d2d4f56bdc96503ec7b22a71fcf21238deff0bf4e17",
+      "url": "https://download.geofabrik.de/africa/tanzania/tanzania.poly"
+    }
+  ]
+}

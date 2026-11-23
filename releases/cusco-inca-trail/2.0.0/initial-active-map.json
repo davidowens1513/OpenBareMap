@@ -1,0 +1,52 @@
+{
+  "contourIntervalMetres": 20,
+  "coverage": "Cusco and the Sacred Valley via Pisac, Urubamba and Ollantaytambo. Includes the classic Inca Trail from Piscacucho (Km 82) to Machu Picchu, Machu Picchu Pueblo and the Salkantay area.",
+  "datasets": {
+    "basemap": {
+      "bytes": 20922368,
+      "path": "releases/cusco-inca-trail/2.0.0/maps/basemap.mbtiles",
+      "sha256": "632b3af0b13915cc927cb333baf0f6d8dbf5491b42382dca7849cb5268b160cd",
+      "validation": {
+        "empty_tile_count": 1,
+        "logical_tiles_sha256": "46588cb92e78a2d0e8942fc972bea77b97fb8beb23250bca190dd3cdbc089b33",
+        "tile_count": 1826
+      }
+    },
+    "grid": {
+      "bytes": 749568,
+      "path": "releases/cusco-inca-trail/2.0.0/maps/grid.mbtiles",
+      "sha256": "7efa46d2bbb8121aa960b8dfd2297dc77b36d1a01223b5c015648d89c23543e2",
+      "validation": {
+        "empty_tile_count": 0,
+        "logical_tiles_sha256": "d8d9b6d54181c49b00a642a36efd46497ab0cb8cc50a343e043ad9dec8faf48e",
+        "tile_count": 1863
+      }
+    },
+    "hillshade": {
+      "bytes": 6803456,
+      "path": "releases/cusco-inca-trail/2.0.0/maps/hillshade.mbtiles",
+      "sha256": "598ab6c5f28e90899c2ade99ed1ecbf2a0149bd459a376c9a67b0f373cbe8f08",
+      "validation": {
+        "empty_tile_count": 0,
+        "logical_tiles_sha256": "7d35549f74c6006e5605627fa134fbcde8564437d9516879b0eb37fe0684ac04",
+        "tile_count": 153
+      }
+    },
+    "topography": {
+      "bytes": 74387456,
+      "path": "releases/cusco-inca-trail/2.0.0/maps/topography.mbtiles",
+      "sha256": "69f1e5d6b9dd22135d7afcc27e3ead702b3756257da5d75777d8af70a76e4812",
+      "validation": {
+        "empty_tile_count": 30619,
+        "logical_tiles_sha256": "7f2717289971a5ea1a2e6c351451238b7319465c50df2d1d697c763eba5593ab",
+        "tile_count": 34605
+      }
+    }
+  },
+  "format": "openbaremap-development-viewer-v1",
+  "localBorders": false,
+  "mapVersion": "2.0.0",
+  "region": "cusco-inca-trail",
+  "storageRevision": "2.0.0-cusco-inca-trail-r1",
+  "styleRevision": "2.0.0-cusco-inca-trail-r1"
+}

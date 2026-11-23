@@ -15,13 +15,16 @@
     "cinque-terre": "2.0.0",
     "corsica": "2.0.0",
     "crete": "2.0.0",
+    "cusco-inca-trail": "2.0.0",
     "cyprus": "2.0.0",
     "dolomites": "2.0.1",
     "england-wales": "2.0.1",
     "faroe-islands": "2.0.0",
+    "fiordland": "2.0.0",
     "high-tatras": "2.0.1",
     "iceland-southern-highlands": "2.0.0",
     "ireland": "2.0.0",
+    "kilimanjaro": "2.0.0",
     "madeira": "2.0.0",
     "malta": "2.0.0",
     "nepal-annapurna": "2.0.0",
@@ -1028,6 +1031,76 @@
         "url": "https://downloads.appsbyonzy.dev/OpenBareMap/crete/2.0.0/app-bundles-v1/ios/OpenBareMap-Crete-iOS-Bundle.zip"
       }
     },
+    "cusco-inca-trail": {
+      "android": {
+        "bytes": 106639305,
+        "datasets": {
+          "basemap": {
+            "path": "maps/basemap.mbtiles",
+            "sha256": "632b3af0b13915cc927cb333baf0f6d8dbf5491b42382dca7849cb5268b160cd"
+          },
+          "coast": {
+            "derivedFrom": "ddcfa4bcf464bb2eaaab07d94c7257204c74a861794bf5a262eee4820d9cf4db",
+            "path": "maps/coast.mbtiles",
+            "sha256": "274f5b8288ff016e0fda06b107392ffbee7c6bb43ca082352c8f64930dadc800"
+          },
+          "grid": {
+            "path": "maps/grid.mbtiles",
+            "sha256": "7efa46d2bbb8121aa960b8dfd2297dc77b36d1a01223b5c015648d89c23543e2"
+          },
+          "hillshade": {
+            "path": "maps/hillshade.mbtiles",
+            "sha256": "598ab6c5f28e90899c2ade99ed1ecbf2a0149bd459a376c9a67b0f373cbe8f08"
+          },
+          "topography": {
+            "path": "maps/topography.mbtiles",
+            "sha256": "ddcfa4bcf464bb2eaaab07d94c7257204c74a861794bf5a262eee4820d9cf4db"
+          }
+        },
+        "instructionsSHA256": "9249fa91fe654c507263a2ca9e624a89ee1db96edc49b5ebbacd881fa17297e4",
+        "instructionsURL": "https://downloads.appsbyonzy.dev/OpenBareMap/cusco-inca-trail/2.0.0/app-bundles-v1/android/instructions.txt",
+        "localPath": "releases/cusco-inca-trail/2.0.0/app-bundles-v1/android/OpenBareMap-Cusco-Inca-Trail-Android-Bundle.zip",
+        "mapManifestSHA256": "85502e40657d23ed1d91dcc9b53c9c859dce4312b10ca61cb3d43aec1bc86a68",
+        "r2Key": "OpenBareMap/cusco-inca-trail/2.0.0/app-bundles-v1/android/OpenBareMap-Cusco-Inca-Trail-Android-Bundle.zip",
+        "sha256": "fc675f629192d903e08afe17d5810b838590c6a859603be617f7113774137e94",
+        "url": "https://downloads.appsbyonzy.dev/OpenBareMap/cusco-inca-trail/2.0.0/app-bundles-v1/android/OpenBareMap-Cusco-Inca-Trail-Android-Bundle.zip"
+      },
+      "ios": {
+        "bytes": 106639725,
+        "datasets": {
+          "basemap": {
+            "path": "maps/basemap.mbtiles",
+            "sha256": "632b3af0b13915cc927cb333baf0f6d8dbf5491b42382dca7849cb5268b160cd"
+          },
+          "coast": {
+            "derived_from": "ddcfa4bcf464bb2eaaab07d94c7257204c74a861794bf5a262eee4820d9cf4db",
+            "maxzoom": 12,
+            "operation": "Preserve land-layer MVT bytes only through zoom 12; omit other layers.",
+            "path": "maps/coast.mbtiles",
+            "sha256": "274f5b8288ff016e0fda06b107392ffbee7c6bb43ca082352c8f64930dadc800"
+          },
+          "grid": {
+            "path": "maps/grid.mbtiles",
+            "sha256": "7efa46d2bbb8121aa960b8dfd2297dc77b36d1a01223b5c015648d89c23543e2"
+          },
+          "hillshade": {
+            "path": "maps/hillshade.mbtiles",
+            "sha256": "598ab6c5f28e90899c2ade99ed1ecbf2a0149bd459a376c9a67b0f373cbe8f08"
+          },
+          "topography": {
+            "path": "maps/topography.mbtiles",
+            "sha256": "ddcfa4bcf464bb2eaaab07d94c7257204c74a861794bf5a262eee4820d9cf4db"
+          }
+        },
+        "instructionsSHA256": "097272f3fd77e02fa4ee4b39e5636c1757f3898ffb93201656936feaa5e0bae2",
+        "instructionsURL": "https://downloads.appsbyonzy.dev/OpenBareMap/cusco-inca-trail/2.0.0/app-bundles-v1/ios/instructions.txt",
+        "localPath": "releases/cusco-inca-trail/2.0.0/app-bundles-v1/ios/OpenBareMap-Cusco-Inca-Trail-iOS-Bundle.zip",
+        "mapManifestSHA256": "f3ecafd52a07d9e5884809c48d58ffd78056cd94cc2e373c2a24310ea092ad50",
+        "r2Key": "OpenBareMap/cusco-inca-trail/2.0.0/app-bundles-v1/ios/OpenBareMap-Cusco-Inca-Trail-iOS-Bundle.zip",
+        "sha256": "9ec2fb0eb5ecae1a554edeeb8617329a41846dafa21e5ae82480999d651b6b38",
+        "url": "https://downloads.appsbyonzy.dev/OpenBareMap/cusco-inca-trail/2.0.0/app-bundles-v1/ios/OpenBareMap-Cusco-Inca-Trail-iOS-Bundle.zip"
+      }
+    },
     "cyprus": {
       "android": {
         "bytes": 134066223,
@@ -1308,6 +1381,76 @@
         "url": "https://downloads.appsbyonzy.dev/OpenBareMap/faroe-islands/2.0.0/app-bundles-v1/ios/OpenBareMap-Faroe-Islands-iOS-Bundle.zip"
       }
     },
+    "fiordland": {
+      "android": {
+        "bytes": 179640736,
+        "datasets": {
+          "basemap": {
+            "path": "maps/basemap.mbtiles",
+            "sha256": "c857d5cb276c8c1faf97dd081f4a7df15c211f423f7783670785f5dc90b886f4"
+          },
+          "coast": {
+            "derivedFrom": "8a922b723c9581c1ad842b2a66ff54a453b803aff438859c4323f28db7babef1",
+            "path": "maps/coast.mbtiles",
+            "sha256": "9595d21166a824232c911c4af3532579519be20771bd4cdd3e55317469c6c70d"
+          },
+          "grid": {
+            "path": "maps/grid.mbtiles",
+            "sha256": "935e3509b1d91362925579f789d0ea8806a956214edae8874e2319d9b08f68c8"
+          },
+          "hillshade": {
+            "path": "maps/hillshade.mbtiles",
+            "sha256": "5c682362ec347664bd6321274ce12a0e6d6ccef134082f436527715baced5c24"
+          },
+          "topography": {
+            "path": "maps/topography.mbtiles",
+            "sha256": "8a922b723c9581c1ad842b2a66ff54a453b803aff438859c4323f28db7babef1"
+          }
+        },
+        "instructionsSHA256": "89ddb2965127efca010b04cebd135d23f3e5ca34dbac6598ab1d8680dc2401f7",
+        "instructionsURL": "https://downloads.appsbyonzy.dev/OpenBareMap/fiordland/2.0.0/app-bundles-v1/android/instructions.txt",
+        "localPath": "releases/fiordland/2.0.0/app-bundles-v1/android/OpenBareMap-Fiordland-Android-Bundle.zip",
+        "mapManifestSHA256": "f88f0e4fb376e62723b872a8ba34829a58304ee75bdf34ce07ec99131641ec3d",
+        "r2Key": "OpenBareMap/fiordland/2.0.0/app-bundles-v1/android/OpenBareMap-Fiordland-Android-Bundle.zip",
+        "sha256": "247bba34d2963febdc98f4a786e1b1df52da620d82f14f3ed37cada755b81809",
+        "url": "https://downloads.appsbyonzy.dev/OpenBareMap/fiordland/2.0.0/app-bundles-v1/android/OpenBareMap-Fiordland-Android-Bundle.zip"
+      },
+      "ios": {
+        "bytes": 179641150,
+        "datasets": {
+          "basemap": {
+            "path": "maps/basemap.mbtiles",
+            "sha256": "c857d5cb276c8c1faf97dd081f4a7df15c211f423f7783670785f5dc90b886f4"
+          },
+          "coast": {
+            "derived_from": "8a922b723c9581c1ad842b2a66ff54a453b803aff438859c4323f28db7babef1",
+            "maxzoom": 12,
+            "operation": "Preserve land-layer MVT bytes only through zoom 12; omit other layers.",
+            "path": "maps/coast.mbtiles",
+            "sha256": "9595d21166a824232c911c4af3532579519be20771bd4cdd3e55317469c6c70d"
+          },
+          "grid": {
+            "path": "maps/grid.mbtiles",
+            "sha256": "935e3509b1d91362925579f789d0ea8806a956214edae8874e2319d9b08f68c8"
+          },
+          "hillshade": {
+            "path": "maps/hillshade.mbtiles",
+            "sha256": "5c682362ec347664bd6321274ce12a0e6d6ccef134082f436527715baced5c24"
+          },
+          "topography": {
+            "path": "maps/topography.mbtiles",
+            "sha256": "8a922b723c9581c1ad842b2a66ff54a453b803aff438859c4323f28db7babef1"
+          }
+        },
+        "instructionsSHA256": "00ce84da31ae3015eec8293c0a49514ea972c493ba4720f98041c661d39d02dc",
+        "instructionsURL": "https://downloads.appsbyonzy.dev/OpenBareMap/fiordland/2.0.0/app-bundles-v1/ios/instructions.txt",
+        "localPath": "releases/fiordland/2.0.0/app-bundles-v1/ios/OpenBareMap-Fiordland-iOS-Bundle.zip",
+        "mapManifestSHA256": "c0f62892e0d70812803ab91c01ae2ce7c15ea78a73b14a6645e320f8c557be99",
+        "r2Key": "OpenBareMap/fiordland/2.0.0/app-bundles-v1/ios/OpenBareMap-Fiordland-iOS-Bundle.zip",
+        "sha256": "2e8c61bfdcd488e5c0e8eff62c33584ef78b7f4ebf56593a35ada3787b5fcbfc",
+        "url": "https://downloads.appsbyonzy.dev/OpenBareMap/fiordland/2.0.0/app-bundles-v1/ios/OpenBareMap-Fiordland-iOS-Bundle.zip"
+      }
+    },
     "high-tatras": {
       "android": {
         "bytes": 123430243,
@@ -1516,6 +1659,76 @@
         "r2Key": "OpenBareMap/ireland/2.0.0/app-bundles-v1/ios/OpenBareMap-Ireland-iOS-Bundle.zip",
         "sha256": "cc03cee98aafa76a32a9f9a847790ec9c1a6e594461212ef9575a97c134623b7",
         "url": "https://downloads.appsbyonzy.dev/OpenBareMap/ireland/2.0.0/app-bundles-v1/ios/OpenBareMap-Ireland-iOS-Bundle.zip"
+      }
+    },
+    "kilimanjaro": {
+      "android": {
+        "bytes": 60433132,
+        "datasets": {
+          "basemap": {
+            "path": "maps/basemap.mbtiles",
+            "sha256": "30dda5f1560706d34a45eee63459ddff575b9beb6224795f7f00ff43c25a0261"
+          },
+          "coast": {
+            "derivedFrom": "a32f559ea004ad2cf8897fd5d88179a346caf42ec3c8f355dfbe3251593e3249",
+            "path": "maps/coast.mbtiles",
+            "sha256": "73b0d0e27e15436aed7d9f1bff171a5ef5f78a7485cdddf13811cca79617358d"
+          },
+          "grid": {
+            "path": "maps/grid.mbtiles",
+            "sha256": "46f8036d82917aa6f7bef4e2cf36117064f32714d89075630074ed51140e45d5"
+          },
+          "hillshade": {
+            "path": "maps/hillshade.mbtiles",
+            "sha256": "574059b944962310ad72f8000bb545de5e737488850bc4350ae42508a99f727f"
+          },
+          "topography": {
+            "path": "maps/topography.mbtiles",
+            "sha256": "a32f559ea004ad2cf8897fd5d88179a346caf42ec3c8f355dfbe3251593e3249"
+          }
+        },
+        "instructionsSHA256": "0994f6360de1dafb5c09b5e1d8ab888275d84d27870665545cb951b4a99fa95e",
+        "instructionsURL": "https://downloads.appsbyonzy.dev/OpenBareMap/kilimanjaro/2.0.0/app-bundles-v1/android/instructions.txt",
+        "localPath": "releases/kilimanjaro/2.0.0/app-bundles-v1/android/OpenBareMap-Kilimanjaro-Android-Bundle.zip",
+        "mapManifestSHA256": "1890904585439eb9f38591f66c469e68316a5ac8fcea193662fbf26ea45d0d0a",
+        "r2Key": "OpenBareMap/kilimanjaro/2.0.0/app-bundles-v1/android/OpenBareMap-Kilimanjaro-Android-Bundle.zip",
+        "sha256": "9ff5a57864580a5ead5a679c2a6d5c89a20bd5915709cdc73881716f68195257",
+        "url": "https://downloads.appsbyonzy.dev/OpenBareMap/kilimanjaro/2.0.0/app-bundles-v1/android/OpenBareMap-Kilimanjaro-Android-Bundle.zip"
+      },
+      "ios": {
+        "bytes": 60433534,
+        "datasets": {
+          "basemap": {
+            "path": "maps/basemap.mbtiles",
+            "sha256": "30dda5f1560706d34a45eee63459ddff575b9beb6224795f7f00ff43c25a0261"
+          },
+          "coast": {
+            "derived_from": "a32f559ea004ad2cf8897fd5d88179a346caf42ec3c8f355dfbe3251593e3249",
+            "maxzoom": 12,
+            "operation": "Preserve land-layer MVT bytes only through zoom 12; omit other layers.",
+            "path": "maps/coast.mbtiles",
+            "sha256": "73b0d0e27e15436aed7d9f1bff171a5ef5f78a7485cdddf13811cca79617358d"
+          },
+          "grid": {
+            "path": "maps/grid.mbtiles",
+            "sha256": "46f8036d82917aa6f7bef4e2cf36117064f32714d89075630074ed51140e45d5"
+          },
+          "hillshade": {
+            "path": "maps/hillshade.mbtiles",
+            "sha256": "574059b944962310ad72f8000bb545de5e737488850bc4350ae42508a99f727f"
+          },
+          "topography": {
+            "path": "maps/topography.mbtiles",
+            "sha256": "a32f559ea004ad2cf8897fd5d88179a346caf42ec3c8f355dfbe3251593e3249"
+          }
+        },
+        "instructionsSHA256": "5b0d6b33efb16779637aca33dc49cf554aafda6c3638ea2394fead6b353a6296",
+        "instructionsURL": "https://downloads.appsbyonzy.dev/OpenBareMap/kilimanjaro/2.0.0/app-bundles-v1/ios/instructions.txt",
+        "localPath": "releases/kilimanjaro/2.0.0/app-bundles-v1/ios/OpenBareMap-Kilimanjaro-iOS-Bundle.zip",
+        "mapManifestSHA256": "21e13421ae87deb77186008d9fedd385d61cf9c85d01156593a7912d676f4ed5",
+        "r2Key": "OpenBareMap/kilimanjaro/2.0.0/app-bundles-v1/ios/OpenBareMap-Kilimanjaro-iOS-Bundle.zip",
+        "sha256": "3a89e4911524f6cee0e9c00b8a211ab3e12d6bf1202eb5c105acdfe5b14bb128",
+        "url": "https://downloads.appsbyonzy.dev/OpenBareMap/kilimanjaro/2.0.0/app-bundles-v1/ios/OpenBareMap-Kilimanjaro-iOS-Bundle.zip"
       }
     },
     "madeira": {

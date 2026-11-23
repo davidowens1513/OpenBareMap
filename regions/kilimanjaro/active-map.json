@@ -1,0 +1,52 @@
+{
+  "contourIntervalMetres": 20,
+  "coverage": "Kilimanjaro from Moshi through the main park approaches, with routes through Marangu, Machame, Lemosho, Rongai, Umbwe and the northern circuit, the Mweka descent, Uhuru Peak and Mawenzi.",
+  "datasets": {
+    "basemap": {
+      "bytes": 29921280,
+      "path": "releases/kilimanjaro/2.0.0/maps/basemap.mbtiles",
+      "sha256": "30dda5f1560706d34a45eee63459ddff575b9beb6224795f7f00ff43c25a0261",
+      "validation": {
+        "empty_tile_count": 37,
+        "logical_tiles_sha256": "3e89969b9617bf055ad0f38f0dc12e61f870117baccf9c762e8d96d99e62da5e",
+        "tile_count": 1710
+      }
+    },
+    "grid": {
+      "bytes": 749568,
+      "path": "releases/kilimanjaro/2.0.0/maps/grid.mbtiles",
+      "sha256": "46f8036d82917aa6f7bef4e2cf36117064f32714d89075630074ed51140e45d5",
+      "validation": {
+        "empty_tile_count": 0,
+        "logical_tiles_sha256": "949b301599b04c2b3f856efc4031a0d94e5676d1778755292374587170df9af4",
+        "tile_count": 1934
+      }
+    },
+    "hillshade": {
+      "bytes": 4833280,
+      "path": "releases/kilimanjaro/2.0.0/maps/hillshade.mbtiles",
+      "sha256": "574059b944962310ad72f8000bb545de5e737488850bc4350ae42508a99f727f",
+      "validation": {
+        "empty_tile_count": 0,
+        "logical_tiles_sha256": "7b615385efba3cd4309ca6e8b6c564edeadaa2b45c49d0fad746211110affcdf",
+        "tile_count": 149
+      }
+    },
+    "topography": {
+      "bytes": 21020672,
+      "path": "releases/kilimanjaro/2.0.0/maps/topography-context.mbtiles",
+      "sha256": "a32f559ea004ad2cf8897fd5d88179a346caf42ec3c8f355dfbe3251593e3249",
+      "validation": {
+        "empty_tile_count": 40222,
+        "logical_tiles_sha256": "7fe8fb8bdc402c3a57c183797ede78dc6defc6741228125f0c9b586b9b9007d6",
+        "tile_count": 44849
+      }
+    }
+  },
+  "format": "openbaremap-development-viewer-v1",
+  "localBorders": false,
+  "mapVersion": "2.0.0",
+  "region": "kilimanjaro",
+  "storageRevision": "2.0.0-kilimanjaro-r3",
+  "styleRevision": "2.0.0-kilimanjaro-r1"
+}

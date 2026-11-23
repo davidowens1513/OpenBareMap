@@ -1,0 +1,20 @@
+{
+  "inputs": [
+    {
+      "path": "regions/cusco-inca-trail/garmin/inputs/contours.geojson.gz",
+      "sha256": "fffa538b9ab74bbc9943a42f3454da443c68ca195e2c8229e135f76249797efa",
+      "uncompressedSHA256": "dcd7497dc0279303b615a7980386fe68e23cfc9e7d11dc73bbab6c6dd396b9f9"
+    },
+    {
+      "path": "regions/cusco-inca-trail/garmin/inputs/landcover.geojson.gz",
+      "sha256": "aa0d754aaf330a2e766f6e6a3cbe127986f453729b19c7f1e22e30ec1b0041a0",
+      "uncompressedSHA256": "a9373e17804481034db7acb1213ac71083f7109415b6fd59193c3426ca30c80d"
+    },
+    {
+      "path": "regions/cusco-inca-trail/garmin/inputs/land.geojson.gz",
+      "sha256": "4c03032298a10f4d310cf8b206067b83ebaf0d4aba34ac5caa1399109cee0958",
+      "uncompressedSHA256": "90f493afa5993691ff55d158889d078e5b13a0af59f75c907ae3f3bfac822c9d"
+    }
+  ],
+  "region": "cusco-inca-trail"
+}

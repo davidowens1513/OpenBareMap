@@ -1,0 +1,210 @@
+{
+  "id": "kilimanjaro",
+  "name": "OpenBareMap Kilimanjaro",
+  "label": "Kilimanjaro",
+  "mapVersion": "2.0.0",
+  "minzoom": 4,
+  "maxzoom": 14,
+  "coverage": "Kilimanjaro from Moshi through the main park approaches, with routes through Marangu, Machame, Lemosho, Rongai, Umbwe and the northern circuit, the Mweka descent, Uhuru Peak and Mawenzi.",
+  "bounds": [
+    36.87,
+    -3.48,
+    37.79,
+    -2.78
+  ],
+  "terrainBounds": [
+    36,
+    -4,
+    38,
+    -2
+  ],
+  "coastContextBounds": [
+    35,
+    -5,
+    39,
+    -1
+  ],
+  "projectedCRS": "EPSG:32737",
+  "gridCRS": "EPSG:32737",
+  "gridName": "WGS 84 / UTM 37S",
+  "gridSource": "utm-grid",
+  "gridExtent": [
+    260000,
+    370000,
+    9610000,
+    9700000
+  ],
+  "townlands": false,
+  "contourIntervalMetres": 20,
+  "minorWaterwayMinzoom": 10,
+  "sourceDate": "2026-11-19",
+  "sourceSlugs": [
+    "tanzania"
+  ],
+  "sourceBaseURL": "https://download.geofabrik.de/africa/tanzania/",
+  "nativeLanguage": "sw",
+  "clipSource": true,
+  "clipBasemap": true,
+  "ignoreSourceHeaderBounds": true,
+  "garminUseSourceOutline": true,
+  "garminContextBounds": [
+    36.87,
+    -3.48,
+    37.79,
+    -2.78
+  ],
+  "garminFamilyId": 4878,
+  "garminTileStartId": 48780001,
+  "garminFilename": "OpenBareMap-Kilimanjaro.img",
+  "garminPackageRevision": "2.0.1-glacier-r1",
+  "styleRevision": "2.0.0-kilimanjaro-r1",
+  "requireBogFeatures": false,
+  "inspectionNames": [
+    "Moshi",
+    "Uhuru Peak",
+    "Machame Gate",
+    "Marangu Gate"
+  ],
+  "optionalBasemapLayers": [
+    "ferry",
+    "island_name",
+    "cycling_route",
+    "railway",
+    "station",
+    "hiking_route",
+    "boundary"
+  ],
+  "terrainProvider": "copernicus-glo30",
+  "terrainAttribution": "Copernicus DEM GLO-30 · European Union / ESA · DLR / Airbus",
+  "terrainNotice": "Kilimanjaro elevation: Copernicus DEM GLO-30 Public (AWS 2021 release).\n\nproduced using Copernicus WorldDEM-30 © DLR e.V. 2010-2014 and © Airbus Defence and Space GmbH 2014-2018 provided under COPERNICUS by the European Union and ESA; all rights reserved\n\nThe organisations in charge of the Copernicus programme by law or by delegation do not incur any liability for any use of the Copernicus WorldDEM-30.\n\nLicense: https://dataspace.copernicus.eu/sites/default/files/media/files/2025-06/copernicus_contributing_mission_data_access_v2_cop_dem_licenses.pdf\nSource: https://registry.opendata.aws/copernicus-dem/\nVertical datum: EGM2008 orthometric metres. Native approximately 30 m cells are bilinearly resampled to point-aligned Int16 HGT for the shared terrain pipeline. Ocean-only cells absent from the official public inventory are zero.\n",
+  "labelGlyphs": "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz",
+  "destinations": {
+    "island": [
+      37.34,
+      -3.16,
+      10
+    ],
+    "moshi": [
+      37.3435249,
+      -3.3486456,
+      13
+    ],
+    "uhuru-peak": [
+      37.3539987,
+      -3.0764084,
+      14
+    ],
+    "mawenzi": [
+      37.456359,
+      -3.0933462,
+      13
+    ],
+    "marangu-gate": [
+      37.5176549,
+      -3.2436469,
+      13
+    ],
+    "machame-gate": [
+      37.2392243,
+      -3.1734709,
+      13
+    ],
+    "lemosho": [
+      37.1468992,
+      -3.0029446,
+      13
+    ],
+    "rongai": [
+      37.4669429,
+      -2.9703457,
+      13
+    ],
+    "mweka": [
+      37.3414862,
+      -3.2195002,
+      13
+    ],
+    "barranco": [
+      37.3291542,
+      -3.0938108,
+      13
+    ],
+    "umbwe-gate": [
+      37.2795699,
+      -3.1898265,
+      13
+    ],
+    "londorosi-gate": [
+      37.1351376,
+      -2.9618818,
+      13
+    ]
+  },
+  "destinationLabels": {
+    "island": "Kilimanjaro",
+    "moshi": "Moshi",
+    "uhuru-peak": "Uhuru Peak",
+    "mawenzi": "Mawenzi",
+    "marangu-gate": "Marangu Gate",
+    "machame-gate": "Machame Gate",
+    "lemosho": "Lemosho Gate",
+    "rongai": "Rongai Gate",
+    "mweka": "Mweka Gate",
+    "barranco": "Barranco Camp",
+    "umbwe-gate": "Umbwe Gate",
+    "londorosi-gate": "Londorosi Gate"
+  },
+  "validationAnchors": {
+    "moshi": [
+      37.3435249,
+      -3.3486456
+    ],
+    "uhuru-peak": [
+      37.3539987,
+      -3.0764084
+    ],
+    "mawenzi": [
+      37.456359,
+      -3.0933462
+    ],
+    "marangu-gate": [
+      37.5176549,
+      -3.2436469
+    ],
+    "machame-gate": [
+      37.2392243,
+      -3.1734709
+    ],
+    "lemosho": [
+      37.1468992,
+      -3.0029446
+    ],
+    "rongai": [
+      37.4669429,
+      -2.9703457
+    ],
+    "mweka": [
+      37.3414862,
+      -3.2195002
+    ],
+    "barranco": [
+      37.3291542,
+      -3.0938108
+    ],
+    "umbwe-gate": [
+      37.2795699,
+      -3.1898265
+    ],
+    "londorosi-gate": [
+      37.1351376,
+      -2.9618818
+    ]
+  },
+  "appBundleName": "Kilimanjaro",
+  "clipTerrainToBounds": true,
+  "repairClippedCoastline": true,
+  "permanentIce": true,
+  "requiredPermanentIce": [
+    "glacier"
+  ]
+}

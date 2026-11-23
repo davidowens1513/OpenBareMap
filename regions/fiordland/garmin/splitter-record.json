@@ -1,0 +1,21 @@
+{
+  "combinedSHA256": "4a2fca902c4a7bd5097e5eb905346014146a2d66882ef53910549c1615922ea3",
+  "command": [
+    "/opt/homebrew/opt/openjdk@21/libexec/openjdk.jdk/Contents/Home/bin/java",
+    "-Xmx6g",
+    "-jar",
+    "/Volumes/Extreme SSD/Projects/OpenBareMap/garmin/tools/splitter-r654/splitter.jar",
+    "--mapid=48790001",
+    "--description=OpenBareMap Fiordland Great Walks",
+    "--max-nodes=1000000",
+    "--max-threads=2",
+    "--keep-complete=true",
+    "--output=pbf",
+    "--polygon-file=/Volumes/Extreme SSD/Projects/OpenBareMap/regions/fiordland/garmin/coverage.poly",
+    "--output-dir=/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/906ead9d53a7/fiordland/garmin/split",
+    "--ignore-osm-bounds=true",
+    "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/906ead9d53a7/fiordland/garmin/combined.osm.pbf"
+  ],
+  "coverageSHA256": "0f7ef1ce05b5630d914a4eb428eff316995ba9d4f212e46516852f43c41906a9",
+  "ignoreSourceHeaderBounds": true
+}

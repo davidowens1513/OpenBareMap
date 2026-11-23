@@ -55,8 +55,8 @@
       "url": "https://downloads.appsbyonzy.dev/Garmin/OpenBareMap-Alps-West.img"
     },
     {
-      "path": "regions/amalfi-bay-of-naples/garmin/dist/OpenBareMap-Amalfi-Bay-of-Naples.img",
       "bytes": 13868032,
+      "path": "regions/amalfi-bay-of-naples/garmin/dist/OpenBareMap-Amalfi-Bay-of-Naples.img",
       "sha256": "c1d6081ef72f4c8c4b99245930b2785235df9b84e2d607928d7217cd223e4635",
       "url": "https://downloads.appsbyonzy.dev/Garmin/amalfi-bay-of-naples/2.0.1-trail-detail-r1/OpenBareMap-Amalfi-Bay-of-Naples.img"
     },
@@ -115,6 +115,12 @@
       "url": "https://downloads.appsbyonzy.dev/Garmin/OpenBareMap-Crete.img"
     },
     {
+      "path": "regions/cusco-inca-trail/garmin/dist/OpenBareMap-Cusco-Inca-Trail.img",
+      "bytes": 28088320,
+      "sha256": "786a6da1edb8774bba34a257cf2c7b0f547692dd3711e7932753ebf99731d42b",
+      "url": "https://downloads.appsbyonzy.dev/Garmin/cusco-inca-trail/2.0.1-glacier-r1/OpenBareMap-Cusco-Inca-Trail.img"
+    },
+    {
       "bytes": 34803712,
       "path": "regions/cyprus/garmin/dist/OpenBareMap-Cyprus.img",
       "sha256": "4f2bdef379fa9edc8619cb4e8047246daf0b3e3c7822f2c9a0eba9ea5ca0d455",
@@ -145,6 +151,12 @@
       "url": "https://downloads.appsbyonzy.dev/Garmin/OpenBareMap-Faroe-Islands.img?v=2.0.1-trail-detail-r1"
     },
     {
+      "path": "regions/fiordland/garmin/dist/OpenBareMap-Fiordland.img",
+      "bytes": 44578816,
+      "sha256": "2a987be0b73aa256d448bbebdb30758dbe0ebd6a2a1c9efc52cd9a8a5b49bdd3",
+      "url": "https://downloads.appsbyonzy.dev/Garmin/fiordland/2.0.1-glacier-r1/OpenBareMap-Fiordland.img"
+    },
+    {
       "bytes": 18134016,
       "path": "regions/high-tatras/garmin/dist/OpenBareMap-High-Tatras-Snowfields.img",
       "sha256": "da088df5a154fb87ca492e2c1ba7d8dd3fd98415d698e182a756511e4e1dc549",
@@ -161,6 +173,12 @@
       "path": "regions/iceland-southern-highlands/garmin/dist/OpenBareMap-Iceland-Southern-Highlands.img",
       "sha256": "8d7231890cbd6b98a68edf2759e9e098e78f1cde7febf34e28f62060c4329e1a",
       "url": "https://downloads.appsbyonzy.dev/Garmin/iceland-southern-highlands/2.0.1-glacier-r1/OpenBareMap-Iceland-Southern-Highlands.img"
+    },
+    {
+      "path": "regions/kilimanjaro/garmin/dist/OpenBareMap-Kilimanjaro.img",
+      "bytes": 21170176,
+      "sha256": "41035efefa7e90e868cd8ddf4524c254f8fbf3d9b72b01a78b6f355e8deac840",
+      "url": "https://downloads.appsbyonzy.dev/Garmin/kilimanjaro/2.0.1-glacier-r1/OpenBareMap-Kilimanjaro.img"
     },
     {
       "bytes": 7535616,
@@ -463,14 +481,14 @@
       "url": "https://downloads.appsbyonzy.dev/OpenBareMap/alps-west/2.0.1/app-bundles-v1/ios/OpenBareMap-Alps-West-iOS-Bundle.zip"
     },
     {
-      "path": "releases/amalfi-bay-of-naples/2.0.0/app-bundles-v1/android/OpenBareMap-Amalfi-Bay-of-Naples-Android-Bundle.zip",
       "bytes": 58995643,
+      "path": "releases/amalfi-bay-of-naples/2.0.0/app-bundles-v1/android/OpenBareMap-Amalfi-Bay-of-Naples-Android-Bundle.zip",
       "sha256": "db2d9f3afef1352091cc9c78f986f3b4481b011660fc6142dc1fbd665fe1a560",
       "url": "https://downloads.appsbyonzy.dev/OpenBareMap/amalfi-bay-of-naples/2.0.0/app-bundles-v1/android/OpenBareMap-Amalfi-Bay-of-Naples-Android-Bundle.zip"
     },
     {
-      "path": "releases/amalfi-bay-of-naples/2.0.0/app-bundles-v1/ios/OpenBareMap-Amalfi-Bay-of-Naples-iOS-Bundle.zip",
       "bytes": 58996079,
+      "path": "releases/amalfi-bay-of-naples/2.0.0/app-bundles-v1/ios/OpenBareMap-Amalfi-Bay-of-Naples-iOS-Bundle.zip",
       "sha256": "6920d68e2070e7b66dc4193a059f3adf2115539ef3e67e7417d1c1207fb4053b",
       "url": "https://downloads.appsbyonzy.dev/OpenBareMap/amalfi-bay-of-naples/2.0.0/app-bundles-v1/ios/OpenBareMap-Amalfi-Bay-of-Naples-iOS-Bundle.zip"
     },
@@ -583,6 +601,18 @@
       "url": "https://downloads.appsbyonzy.dev/OpenBareMap/crete/2.0.0/app-bundles-v1/ios/OpenBareMap-Crete-iOS-Bundle.zip"
     },
     {
+      "path": "releases/cusco-inca-trail/2.0.0/app-bundles-v1/android/OpenBareMap-Cusco-Inca-Trail-Android-Bundle.zip",
+      "bytes": 106639305,
+      "sha256": "fc675f629192d903e08afe17d5810b838590c6a859603be617f7113774137e94",
+      "url": "https://downloads.appsbyonzy.dev/OpenBareMap/cusco-inca-trail/2.0.0/app-bundles-v1/android/OpenBareMap-Cusco-Inca-Trail-Android-Bundle.zip"
+    },
+    {
+      "path": "releases/cusco-inca-trail/2.0.0/app-bundles-v1/ios/OpenBareMap-Cusco-Inca-Trail-iOS-Bundle.zip",
+      "bytes": 106639725,
+      "sha256": "9ec2fb0eb5ecae1a554edeeb8617329a41846dafa21e5ae82480999d651b6b38",
+      "url": "https://downloads.appsbyonzy.dev/OpenBareMap/cusco-inca-trail/2.0.0/app-bundles-v1/ios/OpenBareMap-Cusco-Inca-Trail-iOS-Bundle.zip"
+    },
+    {
       "bytes": 134066223,
       "path": "releases/cyprus/2.0.0/app-bundles-v1/android/OpenBareMap-Cyprus-Android-Bundle.zip",
       "sha256": "5b7373cf4206e0db87c8944bdfeefab6d61d871c37eaa839d907dfd5e332c912",
@@ -631,6 +661,18 @@
       "url": "https://downloads.appsbyonzy.dev/OpenBareMap/faroe-islands/2.0.0/app-bundles-v1/ios/OpenBareMap-Faroe-Islands-iOS-Bundle.zip"
     },
     {
+      "path": "releases/fiordland/2.0.0/app-bundles-v1/android/OpenBareMap-Fiordland-Android-Bundle.zip",
+      "bytes": 179640736,
+      "sha256": "247bba34d2963febdc98f4a786e1b1df52da620d82f14f3ed37cada755b81809",
+      "url": "https://downloads.appsbyonzy.dev/OpenBareMap/fiordland/2.0.0/app-bundles-v1/android/OpenBareMap-Fiordland-Android-Bundle.zip"
+    },
+    {
+      "path": "releases/fiordland/2.0.0/app-bundles-v1/ios/OpenBareMap-Fiordland-iOS-Bundle.zip",
+      "bytes": 179641150,
+      "sha256": "2e8c61bfdcd488e5c0e8eff62c33584ef78b7f4ebf56593a35ada3787b5fcbfc",
+      "url": "https://downloads.appsbyonzy.dev/OpenBareMap/fiordland/2.0.0/app-bundles-v1/ios/OpenBareMap-Fiordland-iOS-Bundle.zip"
+    },
+    {
       "bytes": 123401429,
       "path": "releases/high-tatras/2.0.0/app-bundles-v1/android/OpenBareMap-High-Tatras-Android-Bundle.zip",
       "sha256": "7ea7238e4b0cd040f3b023c4fd0d70fcb1e29a931a5a6e7d209c4c8601cac7b5",
@@ -665,6 +707,18 @@
       "path": "releases/iceland-southern-highlands/2.0.0/app-bundles-v1/ios/OpenBareMap-Iceland-Southern-Highlands-iOS-Bundle.zip",
       "sha256": "9d2ebfdad644929aaaca024d4a7ae1fb8498da53d4b7919272a5868b944a4986",
       "url": "https://downloads.appsbyonzy.dev/OpenBareMap/iceland-southern-highlands/2.0.0/app-bundles-v1/ios/OpenBareMap-Iceland-Southern-Highlands-iOS-Bundle.zip"
+    },
+    {
+      "path": "releases/kilimanjaro/2.0.0/app-bundles-v1/android/OpenBareMap-Kilimanjaro-Android-Bundle.zip",
+      "bytes": 60433132,
+      "sha256": "9ff5a57864580a5ead5a679c2a6d5c89a20bd5915709cdc73881716f68195257",
+      "url": "https://downloads.appsbyonzy.dev/OpenBareMap/kilimanjaro/2.0.0/app-bundles-v1/android/OpenBareMap-Kilimanjaro-Android-Bundle.zip"
+    },
+    {
+      "path": "releases/kilimanjaro/2.0.0/app-bundles-v1/ios/OpenBareMap-Kilimanjaro-iOS-Bundle.zip",
+      "bytes": 60433534,
+      "sha256": "3a89e4911524f6cee0e9c00b8a211ab3e12d6bf1202eb5c105acdfe5b14bb128",
+      "url": "https://downloads.appsbyonzy.dev/OpenBareMap/kilimanjaro/2.0.0/app-bundles-v1/ios/OpenBareMap-Kilimanjaro-iOS-Bundle.zip"
     },
     {
       "bytes": 39879964,

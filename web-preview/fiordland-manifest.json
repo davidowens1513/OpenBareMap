@@ -1,0 +1,41 @@
+{
+  "regions": {
+    "fiordland": {
+      "basemap": {
+        "sourceSHA256": "c857d5cb276c8c1faf97dd081f4a7df15c211f423f7783670785f5dc90b886f4",
+        "bytes": 26854377,
+        "sha256": "1703e60d442bc49cfd3cb3578c11221cbae57b0558672d7e11987c669e56e684",
+        "tiles": 6075
+      },
+      "grid": {
+        "sourceSHA256": "935e3509b1d91362925579f789d0ea8806a956214edae8874e2319d9b08f68c8",
+        "bytes": 1904879,
+        "sha256": "8c6b8ff03a7b33f51ff07d5dc80662222c311f752d2c8bc87ede57c3f48d1c2a",
+        "tiles": 6049
+      },
+      "hillshade": {
+        "sourceSHA256": "5c682362ec347664bd6321274ce12a0e6d6ccef134082f436527715baced5c24",
+        "bytes": 18226482,
+        "sha256": "ddbe7fe0f21e45abfaf9ec8fb9ef7b9e63be6153e2e9c544e32b8861704f7fe2",
+        "tiles": 426
+      },
+      "topography": {
+        "sourceSHA256": "8a922b723c9581c1ad842b2a66ff54a453b803aff438859c4323f28db7babef1",
+        "bytes": 118520270,
+        "sha256": "1fa463c4b405b3ee20eef92db6300f14b3e5b50ee87916fc017eac643b8353e4",
+        "tiles": 34795
+      },
+      "coast": {
+        "sourceSHA256": "9595d21166a824232c911c4af3532579519be20771bd4cdd3e55317469c6c70d",
+        "bytes": 684238,
+        "sha256": "1bf5bda230a96df244bf16238f70d6f30471d8e40294b49aa159c2beba417fa7",
+        "tiles": 2363
+      }
+    }
+  },
+  "pmtilesPython": "3.8.1",
+  "pmtilesJS": "4.5.0",
+  "librarySHA256": "caf981bc46f6327ee7e65d5dc964d89d38a69f60edca2bd4c5c890c21b554c6c",
+  "dataOrigin": "https://downloads.appsbyonzy.dev/OpenBareMap/fiordland/2.0.0/preview",
+  "scope": "Complete selected map tiles; no regional or zoom sampling."
+}

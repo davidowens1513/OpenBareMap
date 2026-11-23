@@ -1,0 +1,200 @@
+{
+  "id": "cusco-inca-trail",
+  "name": "OpenBareMap Cusco & the Inca Trail",
+  "label": "Cusco & the Inca Trail",
+  "mapVersion": "2.0.0",
+  "minzoom": 4,
+  "maxzoom": 14,
+  "coverage": "Cusco and the Sacred Valley via Pisac, Urubamba and Ollantaytambo. Includes the classic Inca Trail from Piscacucho (Km 82) to Machu Picchu, Machu Picchu Pueblo and the Salkantay area.",
+  "bounds": [
+    -72.72,
+    -13.69,
+    -71.77,
+    -13.05
+  ],
+  "terrainBounds": [
+    -73,
+    -14,
+    -71,
+    -13
+  ],
+  "coastContextBounds": [
+    -74,
+    -15,
+    -70,
+    -12
+  ],
+  "projectedCRS": "EPSG:32718",
+  "gridCRS": "EPSG:32718",
+  "gridName": "WGS 84 / UTM 18S",
+  "gridSource": "utm-grid",
+  "gridExtent": [
+    740000,
+    860000,
+    8480000,
+    8560000
+  ],
+  "townlands": false,
+  "contourIntervalMetres": 20,
+  "minorWaterwayMinzoom": 10,
+  "sourceDate": "2026-11-19",
+  "sourceSlugs": [
+    "peru"
+  ],
+  "sourceBaseURL": "https://download.geofabrik.de/south-america/peru/",
+  "nativeLanguage": "es",
+  "clipSource": true,
+  "clipBasemap": true,
+  "ignoreSourceHeaderBounds": true,
+  "garminUseSourceOutline": true,
+  "garminContextBounds": [
+    -72.72,
+    -13.69,
+    -71.77,
+    -13.05
+  ],
+  "garminFamilyId": 4877,
+  "garminTileStartId": 48770001,
+  "garminFilename": "OpenBareMap-Cusco-Inca-Trail.img",
+  "garminPackageRevision": "2.0.1-glacier-r1",
+  "styleRevision": "2.0.0-cusco-inca-trail-r1",
+  "requireBogFeatures": false,
+  "inspectionNames": [
+    "Cuzco",
+    "Ollantaytambo",
+    "Abra Warmiwañusca",
+    "Machu Picchu"
+  ],
+  "optionalBasemapLayers": [
+    "ferry",
+    "island_name",
+    "cycling_route",
+    "railway",
+    "station",
+    "hiking_route",
+    "boundary"
+  ],
+  "terrainProvider": "copernicus-glo30",
+  "terrainAttribution": "Copernicus DEM GLO-30 · European Union / ESA · DLR / Airbus",
+  "terrainNotice": "Cusco & the Inca Trail elevation: Copernicus DEM GLO-30 Public (AWS 2021 release).\n\nproduced using Copernicus WorldDEM-30 © DLR e.V. 2010-2014 and © Airbus Defence and Space GmbH 2014-2018 provided under COPERNICUS by the European Union and ESA; all rights reserved\n\nThe organisations in charge of the Copernicus programme by law or by delegation do not incur any liability for any use of the Copernicus WorldDEM-30.\n\nLicense: https://dataspace.copernicus.eu/sites/default/files/media/files/2025-06/copernicus_contributing_mission_data_access_v2_cop_dem_licenses.pdf\nSource: https://registry.opendata.aws/copernicus-dem/\nVertical datum: EGM2008 orthometric metres. Native approximately 30 m cells are bilinearly resampled to point-aligned Int16 HGT for the shared terrain pipeline. Ocean-only cells absent from the official public inventory are zero.\n",
+  "labelGlyphs": "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyzÁÉÍÑÓÚÜáéíñóúü",
+  "destinations": {
+    "island": [
+      -72.23,
+      -13.38,
+      10
+    ],
+    "cusco": [
+      -71.978,
+      -13.516,
+      13
+    ],
+    "pisac": [
+      -71.849,
+      -13.421,
+      13
+    ],
+    "urubamba": [
+      -72.116,
+      -13.305,
+      13
+    ],
+    "ollantaytambo": [
+      -72.264,
+      -13.258,
+      13
+    ],
+    "piscacucho": [
+      -72.3825097,
+      -13.2149329,
+      13
+    ],
+    "warmiwanusca": [
+      -72.4840294,
+      -13.2429982,
+      13
+    ],
+    "winay-wayna": [
+      -72.5368007,
+      -13.1901036,
+      13
+    ],
+    "machu-picchu": [
+      -72.545,
+      -13.164,
+      14
+    ],
+    "machu-picchu-pueblo": [
+      -72.525,
+      -13.154,
+      13
+    ],
+    "salkantay": [
+      -72.544,
+      -13.333,
+      13
+    ]
+  },
+  "destinationLabels": {
+    "island": "Cusco & the Inca Trail",
+    "cusco": "Cusco",
+    "pisac": "Pisac",
+    "urubamba": "Urubamba",
+    "ollantaytambo": "Ollantaytambo",
+    "piscacucho": "Piscacucho (Km 82)",
+    "warmiwanusca": "Abra Warmiwañusca",
+    "winay-wayna": "Wiñay Wayna",
+    "machu-picchu": "Machu Picchu",
+    "machu-picchu-pueblo": "Machu Picchu Pueblo",
+    "salkantay": "Salkantay"
+  },
+  "validationAnchors": {
+    "cusco": [
+      -71.978,
+      -13.516
+    ],
+    "pisac": [
+      -71.849,
+      -13.421
+    ],
+    "urubamba": [
+      -72.116,
+      -13.305
+    ],
+    "ollantaytambo": [
+      -72.264,
+      -13.258
+    ],
+    "piscacucho": [
+      -72.3825097,
+      -13.2149329
+    ],
+    "warmiwanusca": [
+      -72.4840294,
+      -13.2429982
+    ],
+    "winay-wayna": [
+      -72.5368007,
+      -13.1901036
+    ],
+    "machu-picchu": [
+      -72.545,
+      -13.164
+    ],
+    "machu-picchu-pueblo": [
+      -72.525,
+      -13.154
+    ],
+    "salkantay": [
+      -72.544,
+      -13.333
+    ]
+  },
+  "appBundleName": "Cusco-Inca-Trail",
+  "clipTerrainToBounds": true,
+  "repairClippedCoastline": true,
+  "permanentIce": true,
+  "requiredPermanentIce": [
+    "glacier"
+  ]
+}

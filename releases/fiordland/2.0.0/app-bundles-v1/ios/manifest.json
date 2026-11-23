@@ -1,0 +1,35 @@
+{
+  "bytes": 179641150,
+  "datasets": {
+    "basemap": {
+      "path": "maps/basemap.mbtiles",
+      "sha256": "c857d5cb276c8c1faf97dd081f4a7df15c211f423f7783670785f5dc90b886f4"
+    },
+    "coast": {
+      "derived_from": "8a922b723c9581c1ad842b2a66ff54a453b803aff438859c4323f28db7babef1",
+      "maxzoom": 12,
+      "operation": "Preserve land-layer MVT bytes only through zoom 12; omit other layers.",
+      "path": "maps/coast.mbtiles",
+      "sha256": "9595d21166a824232c911c4af3532579519be20771bd4cdd3e55317469c6c70d"
+    },
+    "grid": {
+      "path": "maps/grid.mbtiles",
+      "sha256": "935e3509b1d91362925579f789d0ea8806a956214edae8874e2319d9b08f68c8"
+    },
+    "hillshade": {
+      "path": "maps/hillshade.mbtiles",
+      "sha256": "5c682362ec347664bd6321274ce12a0e6d6ccef134082f436527715baced5c24"
+    },
+    "topography": {
+      "path": "maps/topography.mbtiles",
+      "sha256": "8a922b723c9581c1ad842b2a66ff54a453b803aff438859c4323f28db7babef1"
+    }
+  },
+  "instructionsSHA256": "00ce84da31ae3015eec8293c0a49514ea972c493ba4720f98041c661d39d02dc",
+  "instructionsURL": "https://downloads.appsbyonzy.dev/OpenBareMap/fiordland/2.0.0/app-bundles-v1/ios/instructions.txt",
+  "localPath": "releases/fiordland/2.0.0/app-bundles-v1/ios/OpenBareMap-Fiordland-iOS-Bundle.zip",
+  "mapManifestSHA256": "c0f62892e0d70812803ab91c01ae2ce7c15ea78a73b14a6645e320f8c557be99",
+  "r2Key": "OpenBareMap/fiordland/2.0.0/app-bundles-v1/ios/OpenBareMap-Fiordland-iOS-Bundle.zip",
+  "sha256": "2e8c61bfdcd488e5c0e8eff62c33584ef78b7f4ebf56593a35ada3787b5fcbfc",
+  "url": "https://downloads.appsbyonzy.dev/OpenBareMap/fiordland/2.0.0/app-bundles-v1/ios/OpenBareMap-Fiordland-iOS-Bundle.zip"
+}

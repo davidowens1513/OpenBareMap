@@ -1,0 +1,33 @@
+{
+  "bytes": 60433132,
+  "datasets": {
+    "basemap": {
+      "path": "maps/basemap.mbtiles",
+      "sha256": "30dda5f1560706d34a45eee63459ddff575b9beb6224795f7f00ff43c25a0261"
+    },
+    "coast": {
+      "derivedFrom": "a32f559ea004ad2cf8897fd5d88179a346caf42ec3c8f355dfbe3251593e3249",
+      "path": "maps/coast.mbtiles",
+      "sha256": "73b0d0e27e15436aed7d9f1bff171a5ef5f78a7485cdddf13811cca79617358d"
+    },
+    "grid": {
+      "path": "maps/grid.mbtiles",
+      "sha256": "46f8036d82917aa6f7bef4e2cf36117064f32714d89075630074ed51140e45d5"
+    },
+    "hillshade": {
+      "path": "maps/hillshade.mbtiles",
+      "sha256": "574059b944962310ad72f8000bb545de5e737488850bc4350ae42508a99f727f"
+    },
+    "topography": {
+      "path": "maps/topography.mbtiles",
+      "sha256": "a32f559ea004ad2cf8897fd5d88179a346caf42ec3c8f355dfbe3251593e3249"
+    }
+  },
+  "instructionsSHA256": "0994f6360de1dafb5c09b5e1d8ab888275d84d27870665545cb951b4a99fa95e",
+  "instructionsURL": "https://downloads.appsbyonzy.dev/OpenBareMap/kilimanjaro/2.0.0/app-bundles-v1/android/instructions.txt",
+  "localPath": "releases/kilimanjaro/2.0.0/app-bundles-v1/android/OpenBareMap-Kilimanjaro-Android-Bundle.zip",
+  "mapManifestSHA256": "1890904585439eb9f38591f66c469e68316a5ac8fcea193662fbf26ea45d0d0a",
+  "r2Key": "OpenBareMap/kilimanjaro/2.0.0/app-bundles-v1/android/OpenBareMap-Kilimanjaro-Android-Bundle.zip",
+  "sha256": "9ff5a57864580a5ead5a679c2a6d5c89a20bd5915709cdc73881716f68195257",
+  "url": "https://downloads.appsbyonzy.dev/OpenBareMap/kilimanjaro/2.0.0/app-bundles-v1/android/OpenBareMap-Kilimanjaro-Android-Bundle.zip"
+}

@@ -1,0 +1,29 @@
+{
+  "accessed_utc": "2026-11-23T15:13:22.302966+00:00",
+  "inputs": [
+    {
+      "bytes": 258152503,
+      "path": "data/regions/cusco-inca-trail/peru-261119.osm.pbf",
+      "replicationTimestamp": "2026-11-19T21:22:20Z",
+      "sha256": "2d276a1e319271d1a69f84d4983ad82b3db2d5a95bc324732566bfad136206be",
+      "url": "https://download.geofabrik.de/south-america/peru/peru-261119.osm.pbf"
+    }
+  ],
+  "osm": {
+    "bytes": 16172164,
+    "operation": "Complete-feature bbox extraction with nested relation references",
+    "path": "data/regions/cusco-inca-trail/peru-261119.osm.clipped.osm.pbf",
+    "replicationTimestamp": "2026-11-19T21:22:20Z",
+    "sha256": "ee51bf4b7201c7547a6e03b4e877acb2c9bbeee1014aeb8c4a6d6811f9c99b80",
+    "snapshot_date": "2026-11-19",
+    "url": "https://download.geofabrik.de/south-america/peru/peru-261119.osm.pbf"
+  },
+  "polygons": [
+    {
+      "bytes": 4172,
+      "path": "data/regions/cusco-inca-trail/peru.poly",
+      "sha256": "179baab6f016cdddfcc38f14990c5e0a015de4cb15421f740a93eb37cf455ada",
+      "url": "https://download.geofabrik.de/south-america/peru/peru.poly"
+    }
+  ]
+}

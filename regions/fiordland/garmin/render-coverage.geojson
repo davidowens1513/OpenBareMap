@@ -1,0 +1,39 @@
+{
+  "features": [
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              167.52,
+              -45.65
+            ],
+            [
+              167.52,
+              -44.51
+            ],
+            [
+              168.82,
+              -44.51
+            ],
+            [
+              168.82,
+              -45.65
+            ],
+            [
+              167.52,
+              -45.65
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "properties": {
+        "purpose": "Limit opaque native background and land-cover polygons; retain complete accepted OSM and terrain inputs",
+        "region": "fiordland"
+      },
+      "type": "Feature"
+    }
+  ],
+  "type": "FeatureCollection"
+}

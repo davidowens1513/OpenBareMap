@@ -1,0 +1,20 @@
+{
+  "inputs": [
+    {
+      "path": "regions/kilimanjaro/garmin/inputs/contours.geojson.gz",
+      "sha256": "2ec35f9a197cae118572b8cd1982e8442753cdc47bf8acb4383f0dbc7bbb8756",
+      "uncompressedSHA256": "fc9fea18415daf857a3caf79e887c5f67b0d284c46a11b825a70e6ccb87c3c9d"
+    },
+    {
+      "path": "regions/kilimanjaro/garmin/inputs/landcover.geojson.gz",
+      "sha256": "cec646c67fdcbeb78c094f946bd6a167ccd8bae4b81024318c2e14f4439d8ad9",
+      "uncompressedSHA256": "13a5c02d3f1859c5f760d6f9a3b753ce7367eb96fbdc08702cc04dd3fad14e75"
+    },
+    {
+      "path": "regions/kilimanjaro/garmin/inputs/land.geojson.gz",
+      "sha256": "8a19add4db8364dcdbfaa3fa3b61eae57bebbb19d66e4ddbe945f8c55044df86",
+      "uncompressedSHA256": "258e403da2b418d16ec7a1b0f52ea55065e482d3541ccd99658ae7fd563cbc00"
+    }
+  ],
+  "region": "kilimanjaro"
+}

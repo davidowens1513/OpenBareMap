@@ -1,0 +1,252 @@
+{
+  "id": "fiordland",
+  "name": "OpenBareMap Fiordland Great Walks",
+  "label": "Fiordland Great Walks",
+  "mapVersion": "2.0.0",
+  "minzoom": 4,
+  "maxzoom": 14,
+  "coverage": "The Milford, Routeburn and Kepler Great Walks, with Te Anau, Manapouri, Milford Sound / Piopiotahi, The Divide and the approach via Glenorchy and Queenstown.",
+  "bounds": [
+    167.52,
+    -45.65,
+    168.82,
+    -44.51
+  ],
+  "terrainBounds": [
+    167,
+    -46,
+    169,
+    -44
+  ],
+  "coastContextBounds": [
+    166,
+    -47,
+    170,
+    -43
+  ],
+  "projectedCRS": "EPSG:2193",
+  "gridCRS": "EPSG:2193",
+  "gridName": "NZGD2000 / New Zealand Transverse Mercator 2000",
+  "gridSource": "utm-grid",
+  "gridExtent": [
+    1160000,
+    1280000,
+    4930000,
+    5070000
+  ],
+  "townlands": false,
+  "contourIntervalMetres": 20,
+  "minorWaterwayMinzoom": 10,
+  "sourceDate": "2026-11-19",
+  "sourceSlugs": [
+    "new-zealand"
+  ],
+  "sourceBaseURL": "https://download.geofabrik.de/australia-oceania/new-zealand/",
+  "nativeLanguage": "mi",
+  "clipSource": true,
+  "clipBasemap": true,
+  "ignoreSourceHeaderBounds": true,
+  "garminUseSourceOutline": true,
+  "garminContextBounds": [
+    167.52,
+    -45.65,
+    168.82,
+    -44.51
+  ],
+  "garminFamilyId": 4879,
+  "garminTileStartId": 48790001,
+  "garminFilename": "OpenBareMap-Fiordland.img",
+  "garminPackageRevision": "2.0.1-glacier-r1",
+  "styleRevision": "2.0.0-fiordland-r1",
+  "requireBogFeatures": false,
+  "inspectionNames": [
+    "Te Anau",
+    "Queenstown"
+  ],
+  "optionalBasemapLayers": [
+    "ferry",
+    "island_name",
+    "cycling_route",
+    "railway",
+    "station",
+    "hiking_route",
+    "boundary"
+  ],
+  "terrainProvider": "copernicus-glo30",
+  "terrainAttribution": "Copernicus DEM GLO-30 · European Union / ESA · DLR / Airbus",
+  "terrainNotice": "Fiordland Great Walks elevation: Copernicus DEM GLO-30 Public (AWS 2021 release).\n\nproduced using Copernicus WorldDEM-30 © DLR e.V. 2010-2014 and © Airbus Defence and Space GmbH 2014-2018 provided under COPERNICUS by the European Union and ESA; all rights reserved\n\nThe organisations in charge of the Copernicus programme by law or by delegation do not incur any liability for any use of the Copernicus WorldDEM-30.\n\nLicense: https://dataspace.copernicus.eu/sites/default/files/media/files/2025-06/copernicus_contributing_mission_data_access_v2_cop_dem_licenses.pdf\nSource: https://registry.opendata.aws/copernicus-dem/\nVertical datum: EGM2008 orthometric metres. Native approximately 30 m cells are bilinearly resampled to point-aligned Int16 HGT for the shared terrain pipeline. Ocean-only cells absent from the official public inventory are zero.\n",
+  "labelGlyphs": "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyzĀĒĪŌŪāēīōū",
+  "destinations": {
+    "island": [
+      168.11,
+      -45.01,
+      9
+    ],
+    "te-anau": [
+      167.717489,
+      -45.41449,
+      13
+    ],
+    "manapouri": [
+      167.608,
+      -45.566,
+      13
+    ],
+    "glade-wharf": [
+      167.9303073,
+      -44.9321528,
+      13
+    ],
+    "milford-sound": [
+      167.929,
+      -44.671,
+      13
+    ],
+    "the-divide": [
+      168.117285,
+      -44.8249173,
+      13
+    ],
+    "routeburn-shelter": [
+      168.2785194,
+      -44.7188648,
+      13
+    ],
+    "luxmore-hut": [
+      167.6190388,
+      -45.3851686,
+      13
+    ],
+    "glenorchy": [
+      168.391,
+      -44.85,
+      13
+    ],
+    "queenstown": [
+      168.662,
+      -45.031,
+      13
+    ],
+    "mckinnon-pass": [
+      167.7657824,
+      -44.8024908,
+      13
+    ],
+    "sandfly-point": [
+      167.9025346,
+      -44.68356,
+      13
+    ],
+    "kepler-trailhead": [
+      167.688953,
+      -45.4423027,
+      13
+    ]
+  },
+  "destinationLabels": {
+    "island": "Fiordland Great Walks",
+    "te-anau": "Te Anau",
+    "manapouri": "Manapouri",
+    "glade-wharf": "Glade Wharf",
+    "milford-sound": "Milford Sound / Piopiotahi",
+    "the-divide": "The Divide",
+    "routeburn-shelter": "Routeburn Shelter",
+    "luxmore-hut": "Luxmore Hut",
+    "glenorchy": "Glenorchy",
+    "queenstown": "Queenstown",
+    "mckinnon-pass": "Omanui / McKinnon Pass",
+    "sandfly-point": "Sandfly Point",
+    "kepler-trailhead": "Kepler Track trailhead"
+  },
+  "validationAnchors": {
+    "te-anau": [
+      167.717489,
+      -45.41449
+    ],
+    "manapouri": [
+      167.608,
+      -45.566
+    ],
+    "glade-wharf": [
+      167.9303073,
+      -44.9321528
+    ],
+    "milford-sound": [
+      167.929,
+      -44.671
+    ],
+    "the-divide": [
+      168.117285,
+      -44.8249173
+    ],
+    "routeburn-shelter": [
+      168.2785194,
+      -44.7188648
+    ],
+    "luxmore-hut": [
+      167.6190388,
+      -45.3851686
+    ],
+    "glenorchy": [
+      168.391,
+      -44.85
+    ],
+    "queenstown": [
+      168.662,
+      -45.031
+    ],
+    "mckinnon-pass": [
+      167.7657824,
+      -44.8024908
+    ],
+    "sandfly-point": [
+      167.9025346,
+      -44.68356
+    ],
+    "kepler-trailhead": [
+      167.688953,
+      -45.4423027
+    ]
+  },
+  "appBundleName": "Fiordland",
+  "clipTerrainToBounds": true,
+  "repairClippedCoastline": true,
+  "permanentIce": true,
+  "overviewLandAnchors": {
+    "te-anau": [
+      167.717489,
+      -45.41449
+    ],
+    "the-divide": [
+      168.117285,
+      -44.8249173
+    ],
+    "routeburn-shelter": [
+      168.2785194,
+      -44.7188648
+    ],
+    "luxmore-hut": [
+      167.6190388,
+      -45.3851686
+    ],
+    "glenorchy": [
+      168.391,
+      -44.85
+    ],
+    "queenstown": [
+      168.662,
+      -45.031
+    ],
+    "mckinnon-pass": [
+      167.7657824,
+      -44.8024908
+    ],
+    "kepler-trailhead": [
+      167.688953,
+      -45.4423027
+    ]
+  },
+  "requiredPermanentIce": [
+    "glacier"
+  ]
+}

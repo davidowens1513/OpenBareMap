@@ -1,0 +1,33 @@
+{
+  "bytes": 106639305,
+  "datasets": {
+    "basemap": {
+      "path": "maps/basemap.mbtiles",
+      "sha256": "632b3af0b13915cc927cb333baf0f6d8dbf5491b42382dca7849cb5268b160cd"
+    },
+    "coast": {
+      "derivedFrom": "ddcfa4bcf464bb2eaaab07d94c7257204c74a861794bf5a262eee4820d9cf4db",
+      "path": "maps/coast.mbtiles",
+      "sha256": "274f5b8288ff016e0fda06b107392ffbee7c6bb43ca082352c8f64930dadc800"
+    },
+    "grid": {
+      "path": "maps/grid.mbtiles",
+      "sha256": "7efa46d2bbb8121aa960b8dfd2297dc77b36d1a01223b5c015648d89c23543e2"
+    },
+    "hillshade": {
+      "path": "maps/hillshade.mbtiles",
+      "sha256": "598ab6c5f28e90899c2ade99ed1ecbf2a0149bd459a376c9a67b0f373cbe8f08"
+    },
+    "topography": {
+      "path": "maps/topography.mbtiles",
+      "sha256": "ddcfa4bcf464bb2eaaab07d94c7257204c74a861794bf5a262eee4820d9cf4db"
+    }
+  },
+  "instructionsSHA256": "9249fa91fe654c507263a2ca9e624a89ee1db96edc49b5ebbacd881fa17297e4",
+  "instructionsURL": "https://downloads.appsbyonzy.dev/OpenBareMap/cusco-inca-trail/2.0.0/app-bundles-v1/android/instructions.txt",
+  "localPath": "releases/cusco-inca-trail/2.0.0/app-bundles-v1/android/OpenBareMap-Cusco-Inca-Trail-Android-Bundle.zip",
+  "mapManifestSHA256": "85502e40657d23ed1d91dcc9b53c9c859dce4312b10ca61cb3d43aec1bc86a68",
+  "r2Key": "OpenBareMap/cusco-inca-trail/2.0.0/app-bundles-v1/android/OpenBareMap-Cusco-Inca-Trail-Android-Bundle.zip",
+  "sha256": "fc675f629192d903e08afe17d5810b838590c6a859603be617f7113774137e94",
+  "url": "https://downloads.appsbyonzy.dev/OpenBareMap/cusco-inca-trail/2.0.0/app-bundles-v1/android/OpenBareMap-Cusco-Inca-Trail-Android-Bundle.zip"
+}

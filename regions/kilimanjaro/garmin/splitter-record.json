@@ -1,0 +1,21 @@
+{
+  "combinedSHA256": "6f77b54275a4d8ac88b11fb8c6f9242bbe0724defe212f17c1c8b5a53ffa6671",
+  "command": [
+    "/opt/homebrew/opt/openjdk@21/libexec/openjdk.jdk/Contents/Home/bin/java",
+    "-Xmx6g",
+    "-jar",
+    "/Volumes/Extreme SSD/Projects/OpenBareMap/garmin/tools/splitter-r654/splitter.jar",
+    "--mapid=48780001",
+    "--description=OpenBareMap Kilimanjaro",
+    "--max-nodes=1000000",
+    "--max-threads=2",
+    "--keep-complete=true",
+    "--output=pbf",
+    "--polygon-file=/Volumes/Extreme SSD/Projects/OpenBareMap/regions/kilimanjaro/garmin/coverage.poly",
+    "--output-dir=/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/906ead9d53a7/kilimanjaro/garmin/split",
+    "--ignore-osm-bounds=true",
+    "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/906ead9d53a7/kilimanjaro/garmin/combined.osm.pbf"
+  ],
+  "coverageSHA256": "0b495be3aa632c685f22fd75b926745a419dc01f7f3e5f7cd0cc0790bf5c6750",
+  "ignoreSourceHeaderBounds": true
+}

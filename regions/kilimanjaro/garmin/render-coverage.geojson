@@ -1,0 +1,55 @@
+{
+  "features": [
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              37.519,
+              -2.951269
+            ],
+            [
+              37.6783,
+              -3.05481
+            ],
+            [
+              37.72568,
+              -3.305049
+            ],
+            [
+              37.62405,
+              -3.446252
+            ],
+            [
+              37.681634102225054,
+              -3.48
+            ],
+            [
+              36.87,
+              -3.48
+            ],
+            [
+              36.87,
+              -2.78
+            ],
+            [
+              37.21389895236162,
+              -2.78
+            ],
+            [
+              37.519,
+              -2.951269
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "properties": {
+        "purpose": "Limit opaque native background and land-cover polygons; retain complete accepted OSM and terrain inputs",
+        "region": "kilimanjaro"
+      },
+      "type": "Feature"
+    }
+  ],
+  "type": "FeatureCollection"
+}

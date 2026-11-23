@@ -1,0 +1,33 @@
+{
+  "bytes": 179640736,
+  "datasets": {
+    "basemap": {
+      "path": "maps/basemap.mbtiles",
+      "sha256": "c857d5cb276c8c1faf97dd081f4a7df15c211f423f7783670785f5dc90b886f4"
+    },
+    "coast": {
+      "derivedFrom": "8a922b723c9581c1ad842b2a66ff54a453b803aff438859c4323f28db7babef1",
+      "path": "maps/coast.mbtiles",
+      "sha256": "9595d21166a824232c911c4af3532579519be20771bd4cdd3e55317469c6c70d"
+    },
+    "grid": {
+      "path": "maps/grid.mbtiles",
+      "sha256": "935e3509b1d91362925579f789d0ea8806a956214edae8874e2319d9b08f68c8"
+    },
+    "hillshade": {
+      "path": "maps/hillshade.mbtiles",
+      "sha256": "5c682362ec347664bd6321274ce12a0e6d6ccef134082f436527715baced5c24"
+    },
+    "topography": {
+      "path": "maps/topography.mbtiles",
+      "sha256": "8a922b723c9581c1ad842b2a66ff54a453b803aff438859c4323f28db7babef1"
+    }
+  },
+  "instructionsSHA256": "89ddb2965127efca010b04cebd135d23f3e5ca34dbac6598ab1d8680dc2401f7",
+  "instructionsURL": "https://downloads.appsbyonzy.dev/OpenBareMap/fiordland/2.0.0/app-bundles-v1/android/instructions.txt",
+  "localPath": "releases/fiordland/2.0.0/app-bundles-v1/android/OpenBareMap-Fiordland-Android-Bundle.zip",
+  "mapManifestSHA256": "f88f0e4fb376e62723b872a8ba34829a58304ee75bdf34ce07ec99131641ec3d",
+  "r2Key": "OpenBareMap/fiordland/2.0.0/app-bundles-v1/android/OpenBareMap-Fiordland-Android-Bundle.zip",
+  "sha256": "247bba34d2963febdc98f4a786e1b1df52da620d82f14f3ed37cada755b81809",
+  "url": "https://downloads.appsbyonzy.dev/OpenBareMap/fiordland/2.0.0/app-bundles-v1/android/OpenBareMap-Fiordland-Android-Bundle.zip"
+}

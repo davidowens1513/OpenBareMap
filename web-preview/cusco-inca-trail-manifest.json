@@ -1,0 +1,41 @@
+{
+  "regions": {
+    "cusco-inca-trail": {
+      "basemap": {
+        "sourceSHA256": "632b3af0b13915cc927cb333baf0f6d8dbf5491b42382dca7849cb5268b160cd",
+        "bytes": 19780189,
+        "sha256": "920bd8170fc009c6e5889861f64c85609faf9f364181e37ccf4cc5ce41cbcbe3",
+        "tiles": 1826
+      },
+      "grid": {
+        "sourceSHA256": "7efa46d2bbb8121aa960b8dfd2297dc77b36d1a01223b5c015648d89c23543e2",
+        "bytes": 634417,
+        "sha256": "b7412012c536517c49f49f4c85d69e7c7eecd194d7f7f96027658d25d013cc9d",
+        "tiles": 1863
+      },
+      "hillshade": {
+        "sourceSHA256": "598ab6c5f28e90899c2ade99ed1ecbf2a0149bd459a376c9a67b0f373cbe8f08",
+        "bytes": 6663132,
+        "sha256": "ea96e9cef3b741cacf1a074202a5d4617b1b1f83d53556cb99bd535e1d900326",
+        "tiles": 153
+      },
+      "topography": {
+        "sourceSHA256": "ddcfa4bcf464bb2eaaab07d94c7257204c74a861794bf5a262eee4820d9cf4db",
+        "bytes": 70946843,
+        "sha256": "6d4a31b634d16d161d99b66fee98486175ebf1967b747077dfed62ccf99c9e12",
+        "tiles": 34605
+      },
+      "coast": {
+        "sourceSHA256": "274f5b8288ff016e0fda06b107392ffbee7c6bb43ca082352c8f64930dadc800",
+        "bytes": 20272,
+        "sha256": "c3c6f6218c2578736ab0c7e4358559ce55dfefdc8149eb2a59c5007a804cda03",
+        "tiles": 2270
+      }
+    }
+  },
+  "pmtilesPython": "3.8.1",
+  "pmtilesJS": "4.5.0",
+  "librarySHA256": "caf981bc46f6327ee7e65d5dc964d89d38a69f60edca2bd4c5c890c21b554c6c",
+  "dataOrigin": "https://downloads.appsbyonzy.dev/OpenBareMap/cusco-inca-trail/2.0.0/preview",
+  "scope": "Complete selected map tiles; no regional or zoom sampling."
+}

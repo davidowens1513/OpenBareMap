@@ -1,0 +1,39 @@
+{
+  "features": [
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              -72.72,
+              -13.69
+            ],
+            [
+              -72.72,
+              -13.05
+            ],
+            [
+              -71.77,
+              -13.05
+            ],
+            [
+              -71.77,
+              -13.69
+            ],
+            [
+              -72.72,
+              -13.69
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "properties": {
+        "purpose": "Limit opaque native background and land-cover polygons; retain complete accepted OSM and terrain inputs",
+        "region": "cusco-inca-trail"
+      },
+      "type": "Feature"
+    }
+  ],
+  "type": "FeatureCollection"
+}

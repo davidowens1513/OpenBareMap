@@ -1,0 +1,20 @@
+{
+  "inputs": [
+    {
+      "path": "regions/fiordland/garmin/inputs/contours.geojson.gz",
+      "sha256": "23ab7dea165bb63347d49354047552e08c1cba93bf96b14539be88d20affa543",
+      "uncompressedSHA256": "b135c31228558198fc8a0f70827c8d4316835d932b73233473d37810f8afa3fc"
+    },
+    {
+      "path": "regions/fiordland/garmin/inputs/landcover.geojson.gz",
+      "sha256": "2d1467bdf519feb08d5873818544cab33799567d6a4761fde43b7307d07bf058",
+      "uncompressedSHA256": "35a13619dd29bfd618867e0badef0de01afdacb05f11c89593e7cdbe40bf6be5"
+    },
+    {
+      "path": "regions/fiordland/garmin/inputs/land.geojson.gz",
+      "sha256": "2139fe3f98a00a65d4a7755e328ac3b0d2ca2e98f11daaed7c475b2cd0e8848b",
+      "uncompressedSHA256": "9870fee13c0b80eff0c77a9cb174e5c2142b9f91819d4a9b5eae56f81326b043"
+    }
+  ],
+  "region": "fiordland"
+}

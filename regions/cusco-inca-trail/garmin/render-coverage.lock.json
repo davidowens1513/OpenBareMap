@@ -1,0 +1,74 @@
+{
+  "bounds": [
+    -72.72,
+    -13.69,
+    -71.77,
+    -13.05
+  ],
+  "contextEnvelope": [
+    -72.72,
+    -13.69,
+    -71.77,
+    -13.05
+  ],
+  "drawPriority": 25,
+  "format": "openbaremap-garmin-render-footprint-v1",
+  "geometry": {
+    "bytes": 759,
+    "path": "regions/cusco-inca-trail/garmin/render-coverage.geojson",
+    "sha256": "a6c5bc6108f2d4d65e3373c8285f940a1f8b827deac8486464a23d4d74a00757"
+  },
+  "inputs": [
+    {
+      "bytes": 4172,
+      "path": "data/regions/cusco-inca-trail/peru.poly",
+      "sha256": "179baab6f016cdddfcc38f14990c5e0a015de4cb15421f740a93eb37cf455ada",
+      "url": "https://download.geofabrik.de/south-america/peru/peru.poly"
+    }
+  ],
+  "knownDestinationsCovered": {
+    "cusco": [
+      -71.978,
+      -13.516
+    ],
+    "machu-picchu": [
+      -72.545,
+      -13.164
+    ],
+    "machu-picchu-pueblo": [
+      -72.525,
+      -13.154
+    ],
+    "ollantaytambo": [
+      -72.264,
+      -13.258
+    ],
+    "pisac": [
+      -71.849,
+      -13.421
+    ],
+    "piscacucho": [
+      -72.3825097,
+      -13.2149329
+    ],
+    "salkantay": [
+      -72.544,
+      -13.333
+    ],
+    "urubamba": [
+      -72.116,
+      -13.305
+    ],
+    "warmiwanusca": [
+      -72.4840294,
+      -13.2429982
+    ],
+    "winay-wayna": [
+      -72.5368007,
+      -13.1901036
+    ]
+  },
+  "purpose": "Rectangular Garmin tiles may overlap other countries. Do not fill their padding with sea, land or land-cover polygons.",
+  "region": "cusco-inca-trail",
+  "transparentNativeMap": true
+}

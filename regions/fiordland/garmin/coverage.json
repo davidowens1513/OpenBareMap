@@ -1,0 +1,37 @@
+{
+  "areaSquareDegrees": 1.4819999999999813,
+  "bounds": [
+    167.52,
+    -45.65,
+    168.82,
+    -44.51
+  ],
+  "entireRequestedFootprintCovered": true,
+  "exactFootprint": null,
+  "inputs": [
+    {
+      "bytes": 379,
+      "path": "data/regions/fiordland/new-zealand.poly",
+      "sha256": "5d483934d8f56574d642d57d36e9157d9de089de5012485cba5aa3c77b046b9b",
+      "url": "https://download.geofabrik.de/australia-oceania/new-zealand/new-zealand.poly"
+    }
+  ],
+  "knownDestinationsCovered": [
+    "island",
+    "te-anau",
+    "manapouri",
+    "glade-wharf",
+    "milford-sound",
+    "the-divide",
+    "routeburn-shelter",
+    "luxmore-hut",
+    "glenorchy",
+    "queenstown",
+    "mckinnon-pass",
+    "sandfly-point",
+    "kepler-trailhead"
+  ],
+  "operation": "Requested rectangular crop; source outlines cover all destination anchors",
+  "polygons": 1,
+  "sha256": "0f7ef1ce05b5630d914a4eb428eff316995ba9d4f212e46516852f43c41906a9"
+}

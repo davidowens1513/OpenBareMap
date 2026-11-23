@@ -1,0 +1,36 @@
+{
+  "areaSquareDegrees": 0.6440000000000013,
+  "bounds": [
+    36.87,
+    -3.48,
+    37.79,
+    -2.78
+  ],
+  "entireRequestedFootprintCovered": true,
+  "exactFootprint": null,
+  "inputs": [
+    {
+      "bytes": 3599,
+      "path": "data/regions/kilimanjaro/tanzania.poly",
+      "sha256": "e885f9f6680cfb9c6a230d2d4f56bdc96503ec7b22a71fcf21238deff0bf4e17",
+      "url": "https://download.geofabrik.de/africa/tanzania/tanzania.poly"
+    }
+  ],
+  "knownDestinationsCovered": [
+    "island",
+    "moshi",
+    "uhuru-peak",
+    "mawenzi",
+    "marangu-gate",
+    "machame-gate",
+    "lemosho",
+    "rongai",
+    "mweka",
+    "barranco",
+    "umbwe-gate",
+    "londorosi-gate"
+  ],
+  "operation": "Requested rectangular crop; source outlines cover all destination anchors",
+  "polygons": 1,
+  "sha256": "0b495be3aa632c685f22fd75b926745a419dc01f7f3e5f7cd0cc0790bf5c6750"
+}

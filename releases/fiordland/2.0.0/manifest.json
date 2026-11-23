@@ -1,0 +1,106 @@
+{
+  "acceptance": "Automated checks only; see validation and visual-review records for actual reviewed scope.",
+  "coverage": "The Milford, Routeburn and Kepler Great Walks, with Te Anau, Manapouri, Milford Sound / Piopiotahi, The Divide and the approach via Glenorchy and Queenstown.",
+  "datasets": {
+    "basemap": {
+      "bytes": 29622272,
+      "path": "releases/fiordland/2.0.0/maps/basemap.mbtiles",
+      "sha256": "c857d5cb276c8c1faf97dd081f4a7df15c211f423f7783670785f5dc90b886f4",
+      "validation": {
+        "empty_tile_count": 155,
+        "logical_tiles_sha256": "6fdc40c33f8e54089ee032c9866bf124bc6f282a12c02ec6e6bce8c494db60e6",
+        "tile_count": 6075
+      }
+    },
+    "grid": {
+      "bytes": 2240512,
+      "path": "releases/fiordland/2.0.0/maps/grid.mbtiles",
+      "sha256": "935e3509b1d91362925579f789d0ea8806a956214edae8874e2319d9b08f68c8",
+      "validation": {
+        "empty_tile_count": 0,
+        "logical_tiles_sha256": "4be9436f12e95241f7f7b858c18e80829482ce0b5068937bb462099901a85ff4",
+        "tile_count": 6049
+      }
+    },
+    "hillshade": {
+      "bytes": 18575360,
+      "path": "releases/fiordland/2.0.0/maps/hillshade.mbtiles",
+      "sha256": "5c682362ec347664bd6321274ce12a0e6d6ccef134082f436527715baced5c24",
+      "validation": {
+        "empty_tile_count": 0,
+        "logical_tiles_sha256": "a3017fb59ba336468bb2f59e4641fc6a125e043d1d0a64669398a4b0d3911a53",
+        "tile_count": 426
+      }
+    },
+    "topography": {
+      "bytes": 124600320,
+      "path": "releases/fiordland/2.0.0/maps/topography-context.mbtiles",
+      "sha256": "8a922b723c9581c1ad842b2a66ff54a453b803aff438859c4323f28db7babef1",
+      "validation": {
+        "empty_tile_count": 27262,
+        "logical_tiles_sha256": "dd3f0c274e3220f0bb00845c152ed2080682cc578b58f23c3d33a8a8ab9d9a11",
+        "tile_count": 34795
+      }
+    }
+  },
+  "garmin": {
+    "bytes": 44578816,
+    "path": "regions/fiordland/garmin/dist/OpenBareMap-Fiordland.img",
+    "sha256": "2a987be0b73aa256d448bbebdb30758dbe0ebd6a2a1c9efc52cd9a8a5b49bdd3"
+  },
+  "geometryReport": {
+    "path": "build/fiordland-geometry/geometry-report.json",
+    "sha256": "e83d7f675fb9fad3e42bed53d56bd76b5cd7e51c2a121cca3e0cd034c679a6f7"
+  },
+  "hostAppsModified": false,
+  "mapVersion": "2.0.0",
+  "osm": {
+    "bytes": 14734217,
+    "operation": "Complete-feature bbox extraction with nested relation references",
+    "path": "data/regions/fiordland/new-zealand-261119.osm.clipped.osm.pbf",
+    "replicationTimestamp": "2026-11-19T21:22:20Z",
+    "sha256": "7230c75ac229c0cda0af70483d29ea7495aee34cba45aaf2bd2c746ddf6fea8b",
+    "snapshot_date": "2026-11-19",
+    "url": "https://download.geofabrik.de/australia-oceania/new-zealand/new-zealand-261119.osm.pbf"
+  },
+  "packages": {
+    "android": {
+      "archive": {
+        "bytes": 179612286,
+        "path": "regions/fiordland/android/OpenBareMap-Android.zip",
+        "sha256": "22af0f5a5f67da91d4f28769f5626ae97f286b98dbd025a26c20f044302dfa4b"
+      },
+      "checksumsSHA256": "7c69cc839ab675de0a6c2165a77832ecc16b435daeb442717e7e66138001c12f",
+      "manifestSHA256": "f88f0e4fb376e62723b872a8ba34829a58304ee75bdf34ce07ec99131641ec3d",
+      "path": "regions/fiordland/android",
+      "validationSHA256": "5efc779bbdc8d46ea8b031660f97df329fc818cb017d85fbc0f5c3deeaba8a99"
+    },
+    "ios": {
+      "checksumsSHA256": "f0f12529a5877bb36dda0ff0addb141a4002396251bf66d16a155e226a7e46dc",
+      "manifestSHA256": "c0f62892e0d70812803ab91c01ae2ce7c15ea78a73b14a6645e320f8c557be99",
+      "path": "regions/fiordland/ios",
+      "validationSHA256": "1d519af0e5d1e9fb135bdd77f4a8369ef3f001b0279134afd4a3750d32c07fa0"
+    }
+  },
+  "pythonRuntime": {
+    "packages": {
+      "Pillow": "12.3.0",
+      "certifi": "2026.10.23",
+      "charset-normalizer": "3.5.2",
+      "idna": "3.20",
+      "numpy": "2.5.4",
+      "osmium": "4.3.2",
+      "pyproj": "3.8.0",
+      "requests": "2.34.2",
+      "shapely": "2.2.0",
+      "urllib3": "2.8.0"
+    },
+    "platform": "macOS-27.2.1-arm64-arm-64bit-Mach-O",
+    "python": "3.14.5 (main, May 10 2026, 10:21:34) [Clang 21.0.0 (clang-2100.0.123.102)]",
+    "requirementsSHA256": "427f12ff8b49bfebac0a7d453c2f65bd15d6695584b18e6ecee1fdfeed20a36c"
+  },
+  "region": "fiordland",
+  "styleSHA256": "685f95474e88235f06d5b4873d222bd9686082666039a4410dbe5fafbcc75f0e",
+  "terrainLockSHA256": "2d63be867b70b1c3ccf228621ce7841def7c5ba265b9fc9e3985b86fd396fcc4",
+  "validation": "validation.json"
+}

@@ -1,0 +1,35 @@
+{
+  "bytes": 60433534,
+  "datasets": {
+    "basemap": {
+      "path": "maps/basemap.mbtiles",
+      "sha256": "30dda5f1560706d34a45eee63459ddff575b9beb6224795f7f00ff43c25a0261"
+    },
+    "coast": {
+      "derived_from": "a32f559ea004ad2cf8897fd5d88179a346caf42ec3c8f355dfbe3251593e3249",
+      "maxzoom": 12,
+      "operation": "Preserve land-layer MVT bytes only through zoom 12; omit other layers.",
+      "path": "maps/coast.mbtiles",
+      "sha256": "73b0d0e27e15436aed7d9f1bff171a5ef5f78a7485cdddf13811cca79617358d"
+    },
+    "grid": {
+      "path": "maps/grid.mbtiles",
+      "sha256": "46f8036d82917aa6f7bef4e2cf36117064f32714d89075630074ed51140e45d5"
+    },
+    "hillshade": {
+      "path": "maps/hillshade.mbtiles",
+      "sha256": "574059b944962310ad72f8000bb545de5e737488850bc4350ae42508a99f727f"
+    },
+    "topography": {
+      "path": "maps/topography.mbtiles",
+      "sha256": "a32f559ea004ad2cf8897fd5d88179a346caf42ec3c8f355dfbe3251593e3249"
+    }
+  },
+  "instructionsSHA256": "5b0d6b33efb16779637aca33dc49cf554aafda6c3638ea2394fead6b353a6296",
+  "instructionsURL": "https://downloads.appsbyonzy.dev/OpenBareMap/kilimanjaro/2.0.0/app-bundles-v1/ios/instructions.txt",
+  "localPath": "releases/kilimanjaro/2.0.0/app-bundles-v1/ios/OpenBareMap-Kilimanjaro-iOS-Bundle.zip",
+  "mapManifestSHA256": "21e13421ae87deb77186008d9fedd385d61cf9c85d01156593a7912d676f4ed5",
+  "r2Key": "OpenBareMap/kilimanjaro/2.0.0/app-bundles-v1/ios/OpenBareMap-Kilimanjaro-iOS-Bundle.zip",
+  "sha256": "3a89e4911524f6cee0e9c00b8a211ab3e12d6bf1202eb5c105acdfe5b14bb128",
+  "url": "https://downloads.appsbyonzy.dev/OpenBareMap/kilimanjaro/2.0.0/app-bundles-v1/ios/OpenBareMap-Kilimanjaro-iOS-Bundle.zip"
+}

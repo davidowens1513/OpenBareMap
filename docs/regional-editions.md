@@ -23,6 +23,47 @@ python3 scripts/build_web_previews.py --regions "$edition" --output "$output/pre
 python3 scripts/stage_amalfi.py --website /path/to/AppsByOnzy-Website/site/index.html
 ```
 
+## Cusco, Kilimanjaro and Fiordland
+
+| Edition | Walking coverage | Grid | Garmin family |
+| --- | --- | --- | --- |
+| Cusco & the Inca Trail | Cusco, the Sacred Valley, the classic Inca Trail from Piscacucho (Km 82) to Machu Picchu and the Salkantay area | WGS 84 / UTM 18S | 4877 |
+| Kilimanjaro | Moshi, main trekking routes and park gates, Uhuru Peak and Mawenzi | WGS 84 / UTM 37S | 4878 |
+| Fiordland Great Walks | Milford, Routeburn and Kepler Tracks, Te Anau, Manapouri, Milford Sound / Piopiotahi, Glenorchy and Queenstown | NZGD2000 / New Zealand Transverse Mercator 2000 | 4879 |
+
+The profiles use the 19 November 2026 Geofabrik OpenStreetMap snapshots for
+Peru, Tanzania and New Zealand. Copernicus GLO-30 supplies elevation for 20 m
+contours, hillshade and native Garmin DEM. Both permanent ice symbols are
+enabled for mapped glaciers and permanent snowfields.
+
+Use the [Peruvian protected areas authority’s Inca Trail description](https://visitaareasnaturales.sernanp.gob.pe/en/anps/historic-sanctuary-of-machupicchu/),
+the [Kilimanjaro National Park guide](https://www.tanzaniaparks.go.tz/uploads/publications/en-1633175047-KI-ENG.pdf)
+and the New Zealand Department of Conservation’s [Milford](https://www.doc.govt.nz/milfordtrack),
+[Routeburn](https://www.doc.govt.nz/routeburntrack) and [Kepler](https://www.doc.govt.nz/keplertrack)
+track guides to check the walking coverage.
+
+```sh
+export PYTHONPATH=work/python
+for edition in cusco-inca-trail kilimanjaro fiordland; do
+  output="work/$edition-release"
+  python3 scripts/run_full_region.py --region "$edition" || exit
+  python3 scripts/build_app_distribution.py --regions "$edition" \
+    --output "$output/kits" --catalog "$output/catalog.json" || exit
+  python3 scripts/build_web_previews.py --regions "$edition" --output "$output/preview" \
+    --origin "https://downloads.appsbyonzy.dev/OpenBareMap/$edition/2.0.0/preview" || exit
+done
+python3 scripts/stage_worldwide_trekking.py --website /path/to/AppsByOnzy-Website/site/index.html
+```
+
+Use `--cached-preview` with a verified earlier preview directory when the
+PMTiles library download is unavailable. Pass `--worldwide-baseline` with a
+complete Worldwide catalogue to stage a merged app catalogue for review.
+
+From a network-enabled checkout, pass `--publish-assets` to verify the R2
+downloads, PMTiles byte ranges and online catalogues. Deploy
+`work/worldwide-trekking-publication/appsbyonzy-worldwide-trekking.zip` to
+Cloudflare Pages after the checks pass.
+
 ## European walking editions
 
 | Edition | Walking coverage | Geofabrik snapshot | Garmin family |

@@ -1,0 +1,455 @@
+{
+  "coverage": "Kilimanjaro from Moshi through the main park approaches, with routes through Marangu, Machame, Lemosho, Rongai, Umbwe and the northern circuit, the Mweka descent, Uhuru Peak and Mawenzi.",
+  "coverageAnchors": {
+    "barranco": {
+      "coordinate": [
+        37.3291542,
+        -3.0938108
+      ],
+      "featuresInNeighbouringDetailedTiles": 273
+    },
+    "lemosho": {
+      "coordinate": [
+        37.1468992,
+        -3.0029446
+      ],
+      "featuresInNeighbouringDetailedTiles": 111
+    },
+    "londorosi-gate": {
+      "coordinate": [
+        37.1351376,
+        -2.9618818
+      ],
+      "featuresInNeighbouringDetailedTiles": 99
+    },
+    "machame-gate": {
+      "coordinate": [
+        37.2392243,
+        -3.1734709
+      ],
+      "featuresInNeighbouringDetailedTiles": 9239
+    },
+    "marangu-gate": {
+      "coordinate": [
+        37.5176549,
+        -3.2436469
+      ],
+      "featuresInNeighbouringDetailedTiles": 16312
+    },
+    "mawenzi": {
+      "coordinate": [
+        37.456359,
+        -3.0933462
+      ],
+      "featuresInNeighbouringDetailedTiles": 107
+    },
+    "moshi": {
+      "coordinate": [
+        37.3435249,
+        -3.3486456
+      ],
+      "featuresInNeighbouringDetailedTiles": 50571
+    },
+    "mweka": {
+      "coordinate": [
+        37.3414862,
+        -3.2195002
+      ],
+      "featuresInNeighbouringDetailedTiles": 10382
+    },
+    "rongai": {
+      "coordinate": [
+        37.4669429,
+        -2.9703457
+      ],
+      "featuresInNeighbouringDetailedTiles": 642
+    },
+    "uhuru-peak": {
+      "coordinate": [
+        37.3539987,
+        -3.0764084
+      ],
+      "featuresInNeighbouringDetailedTiles": 318
+    },
+    "umbwe-gate": {
+      "coordinate": [
+        37.2795699,
+        -3.1898265
+      ],
+      "featuresInNeighbouringDetailedTiles": 15638
+    }
+  },
+  "datasets": {
+    "basemap": {
+      "empty_tile_count": 37,
+      "logical_tiles_sha256": "3e89969b9617bf055ad0f38f0dc12e61f870117baccf9c762e8d96d99e62da5e",
+      "tile_count": 1710
+    },
+    "grid": {
+      "empty_tile_count": 0,
+      "logical_tiles_sha256": "949b301599b04c2b3f856efc4031a0d94e5676d1778755292374587170df9af4",
+      "tile_count": 1934
+    },
+    "hillshade": {
+      "empty_tile_count": 0,
+      "logical_tiles_sha256": "7b615385efba3cd4309ca6e8b6c564edeadaa2b45c49d0fad746211110affcdf",
+      "tile_count": 149
+    },
+    "topography": {
+      "empty_tile_count": 40222,
+      "logical_tiles_sha256": "7fe8fb8bdc402c3a57c183797ede78dc6defc6741228125f0c9b586b9b9007d6",
+      "tile_count": 44849
+    }
+  },
+  "detail": {
+    "basemap": {
+      "boundaries": 1995,
+      "contours": 0,
+      "permanentIce": {
+        "glacier": 113,
+        "permanent_snow": 0
+      }
+    },
+    "topography": {
+      "boundaries": 0,
+      "contours": 63492
+    }
+  },
+  "garmin": {
+    "familyId": 4878,
+    "garminPackageRevision": "2.0.1-glacier-r1",
+    "inspection": {
+      "anchorLabels": {
+        "Machame Gate": "Machame Gate",
+        "Marangu Gate": "Marangu Gate",
+        "Moshi": "Moshi",
+        "Uhuru Peak": "Uhuru Peak"
+      },
+      "bounds": [
+        36.86994552612305,
+        -3.4800052642822266,
+        37.7900505065918,
+        -2.779970169067383
+      ],
+      "coastPolygonsByLevel": {
+        "0": {
+          "0x32": 7,
+          "0x54": 12
+        },
+        "1": {
+          "0x32": 7,
+          "0x54": 12
+        },
+        "2": {
+          "0x32": 7,
+          "0x54": 12
+        },
+        "3": {
+          "0x32": 7,
+          "0x54": 12
+        },
+        "4": {
+          "0x32": 7,
+          "0x54": 12
+        }
+      },
+      "contoursByLevel": {
+        "0": {
+          "0x20": 12025,
+          "0x22": 2876
+        },
+        "1": {
+          "0x20": 9607,
+          "0x22": 2291
+        },
+        "2": {
+          "0x22": 2118
+        },
+        "3": {
+          "0x10008": 1824
+        },
+        "4": {}
+      },
+      "lineInstancesAtHighestDetail": {
+        "0x10001": 66,
+        "0x10005": 8,
+        "0x10006": 62,
+        "0x1000b": 3,
+        "0x14": 42,
+        "0x16": 14438,
+        "0x18": 482,
+        "0x1c": 132,
+        "0x1e": 83,
+        "0x1f": 133,
+        "0x2": 77,
+        "0x20": 12025,
+        "0x22": 2876,
+        "0x3": 23,
+        "0x4": 72,
+        "0x6": 26002,
+        "0x7": 1811,
+        "0xa": 2948
+      },
+      "logicalCombinedSHA256": "aa27149c7b28a15c255531a136c918206da680d9e32ed2eb61526ba2e0f067ef",
+      "logicalHashNote": "Internal file names, sizes and payloads; only CommonHeader creation-date bytes 14..20 are zeroed for hashing. IMG archive headers are excluded. Output bytes are never modified.",
+      "logicalTileSHA256": {
+        "48780001.img": "6ea06de5c655da61e5a334d393bdec91de24fdd71e9ce4706be6067e7f62e284",
+        "48780002.img": "a61a90f646866a207458455b21fbc1cb78f1703d1fed7d3aaaa18744944a0912",
+        "48780003.img": "0e9148d67e4ef390820fdfc9a7a719d0a37c6f6feaed646a0e34a561f4399d4a",
+        "48780004.img": "bc1ceb700631cf7addec7a1036515f3834e81e6a5c6a5a913b9955689cdfa644",
+        "48780005.img": "addbcb2f2b423e91d5fb486f1cc67c2f7a2c403cfbbe5b846a19cf5104110e49",
+        "48780006.img": "4422a61d7977e3245e0892eed3b1f3be61aebc7efdb812ff353e2b2bd1c05f66",
+        "48780007.img": "1be574520b9f48ee246a90644ea73eb9f88bfdae501a3cbc2e588314ba274e47"
+      },
+      "pointInstancesAtHighestDetail": {
+        "0x100": 1,
+        "0x10001": 7,
+        "0x10002": 52,
+        "0x10003": 104,
+        "0x10004": 2,
+        "0x10006": 1627,
+        "0x2f0b": 36,
+        "0x600": 6,
+        "0x650c": 1,
+        "0x6603": 9,
+        "0x6616": 26,
+        "0x800": 319,
+        "0xb00": 31,
+        "0xc00": 109
+      },
+      "polygonInstancesAtHighestDetail": {
+        "0x10101": 530,
+        "0x10102": 102,
+        "0x10103": 58,
+        "0x10104": 18,
+        "0x10106": 19,
+        "0x10109": 13,
+        "0x1010a": 3,
+        "0x1010c": 11,
+        "0x13": 693989,
+        "0x32": 7,
+        "0x3c": 141,
+        "0x50": 348,
+        "0x51": 20,
+        "0x54": 12
+      },
+      "routing": false,
+      "subfileBytes": {
+        "DEM": 5347185,
+        "LBL": 72965,
+        "MPS": 607,
+        "RGN": 15538793,
+        "SRT": 912,
+        "TRE": 134490,
+        "TYP": 3037
+      },
+      "tiles": 7
+    },
+    "output": {
+      "bytes": 21170176,
+      "path": "regions/kilimanjaro/garmin/dist/OpenBareMap-Kilimanjaro.img",
+      "sha256": "41035efefa7e90e868cd8ddf4524c254f8fbf3d9b72b01a78b6f355e8deac840"
+    },
+    "routing": false,
+    "status": "compiled and structurally inspected; hardware rendering pending"
+  },
+  "geometryProcessing": {
+    "contours": 10245,
+    "grid": {
+      "grid_10km": 22,
+      "grid_1km": 202
+    },
+    "landcover": {
+      "empty_source_areas": [],
+      "features": 956,
+      "permanentIce": {
+        "glacier": 11,
+        "permanent_snow": 0
+      },
+      "retained": 257,
+      "smoothed": 699
+    }
+  },
+  "irelandGarminPackageRevision": "2.0.1-trail-detail-r1",
+  "irelandPreserved": true,
+  "labelGlyphs": {
+    "Open Sans Bold": true,
+    "Open Sans Regular": true,
+    "Open Sans Semibold": true
+  },
+  "landBackground": {
+    "barranco": {
+      "coordinate": [
+        37.3291542,
+        -3.0938108
+      ],
+      "verifiedZooms": [
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    },
+    "lemosho": {
+      "coordinate": [
+        37.1468992,
+        -3.0029446
+      ],
+      "verifiedZooms": [
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    },
+    "londorosi-gate": {
+      "coordinate": [
+        37.1351376,
+        -2.9618818
+      ],
+      "verifiedZooms": [
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    },
+    "machame-gate": {
+      "coordinate": [
+        37.2392243,
+        -3.1734709
+      ],
+      "verifiedZooms": [
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    },
+    "marangu-gate": {
+      "coordinate": [
+        37.5176549,
+        -3.2436469
+      ],
+      "verifiedZooms": [
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    },
+    "mawenzi": {
+      "coordinate": [
+        37.456359,
+        -3.0933462
+      ],
+      "verifiedZooms": [
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    },
+    "moshi": {
+      "coordinate": [
+        37.3435249,
+        -3.3486456
+      ],
+      "verifiedZooms": [
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    },
+    "mweka": {
+      "coordinate": [
+        37.3414862,
+        -3.2195002
+      ],
+      "verifiedZooms": [
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    },
+    "rongai": {
+      "coordinate": [
+        37.4669429,
+        -2.9703457
+      ],
+      "verifiedZooms": [
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    },
+    "uhuru-peak": {
+      "coordinate": [
+        37.3539987,
+        -3.0764084
+      ],
+      "verifiedZooms": [
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    },
+    "umbwe-gate": {
+      "coordinate": [
+        37.2795699,
+        -3.1898265
+      ],
+      "verifiedZooms": [
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    }
+  },
+  "packages": {
+    "android": {
+      "checkedFiles": 43,
+      "nativeDeviceRenderingTested": false,
+      "sourceFiles": {
+        "basemap": "maps/basemap.mbtiles",
+        "coast": "maps/coast.mbtiles",
+        "hillshade": "maps/hillshade.mbtiles",
+        "topography": "maps/topography.mbtiles",
+        "utm-grid": "maps/grid.mbtiles"
+      }
+    },
+    "ios": {
+      "checkedFiles": 46,
+      "nativeDeviceRenderingTested": false,
+      "sourceFiles": {
+        "basemap": "maps/basemap.mbtiles",
+        "coast": "maps/coast.mbtiles",
+        "hillshade": "maps/hillshade.mbtiles",
+        "topography": "maps/topography.mbtiles",
+        "utm-grid": "maps/grid.mbtiles"
+      }
+    }
+  },
+  "permanentIceSourceCounts": {
+    "glacier": 11,
+    "permanent_snow": 0
+  },
+  "region": "kilimanjaro",
+  "status": "automated checks passed; visual and hardware acceptance pending"
+}

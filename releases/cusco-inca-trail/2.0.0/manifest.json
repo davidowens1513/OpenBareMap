@@ -1,0 +1,106 @@
+{
+  "acceptance": "Automated checks only; see validation and visual-review records for actual reviewed scope.",
+  "coverage": "Cusco and the Sacred Valley via Pisac, Urubamba and Ollantaytambo. Includes the classic Inca Trail from Piscacucho (Km 82) to Machu Picchu, Machu Picchu Pueblo and the Salkantay area.",
+  "datasets": {
+    "basemap": {
+      "bytes": 20922368,
+      "path": "releases/cusco-inca-trail/2.0.0/maps/basemap.mbtiles",
+      "sha256": "632b3af0b13915cc927cb333baf0f6d8dbf5491b42382dca7849cb5268b160cd",
+      "validation": {
+        "empty_tile_count": 1,
+        "logical_tiles_sha256": "46588cb92e78a2d0e8942fc972bea77b97fb8beb23250bca190dd3cdbc089b33",
+        "tile_count": 1826
+      }
+    },
+    "grid": {
+      "bytes": 749568,
+      "path": "releases/cusco-inca-trail/2.0.0/maps/grid.mbtiles",
+      "sha256": "7efa46d2bbb8121aa960b8dfd2297dc77b36d1a01223b5c015648d89c23543e2",
+      "validation": {
+        "empty_tile_count": 0,
+        "logical_tiles_sha256": "d8d9b6d54181c49b00a642a36efd46497ab0cb8cc50a343e043ad9dec8faf48e",
+        "tile_count": 1863
+      }
+    },
+    "hillshade": {
+      "bytes": 6803456,
+      "path": "releases/cusco-inca-trail/2.0.0/maps/hillshade.mbtiles",
+      "sha256": "598ab6c5f28e90899c2ade99ed1ecbf2a0149bd459a376c9a67b0f373cbe8f08",
+      "validation": {
+        "empty_tile_count": 0,
+        "logical_tiles_sha256": "7d35549f74c6006e5605627fa134fbcde8564437d9516879b0eb37fe0684ac04",
+        "tile_count": 153
+      }
+    },
+    "topography": {
+      "bytes": 74317824,
+      "path": "releases/cusco-inca-trail/2.0.0/maps/topography-context.mbtiles",
+      "sha256": "ddcfa4bcf464bb2eaaab07d94c7257204c74a861794bf5a262eee4820d9cf4db",
+      "validation": {
+        "empty_tile_count": 30619,
+        "logical_tiles_sha256": "7f2717289971a5ea1a2e6c351451238b7319465c50df2d1d697c763eba5593ab",
+        "tile_count": 34605
+      }
+    }
+  },
+  "garmin": {
+    "bytes": 28088320,
+    "path": "regions/cusco-inca-trail/garmin/dist/OpenBareMap-Cusco-Inca-Trail.img",
+    "sha256": "786a6da1edb8774bba34a257cf2c7b0f547692dd3711e7932753ebf99731d42b"
+  },
+  "geometryReport": {
+    "path": "build/cusco-inca-trail-geometry/geometry-report.json",
+    "sha256": "cc2c52645833a9326aa6eb4ec2a726bc516dde0ccc3c7d3288295b92a71d20e5"
+  },
+  "hostAppsModified": false,
+  "mapVersion": "2.0.0",
+  "osm": {
+    "bytes": 16172164,
+    "operation": "Complete-feature bbox extraction with nested relation references",
+    "path": "data/regions/cusco-inca-trail/peru-261119.osm.clipped.osm.pbf",
+    "replicationTimestamp": "2026-11-19T21:22:20Z",
+    "sha256": "ee51bf4b7201c7547a6e03b4e877acb2c9bbeee1014aeb8c4a6d6811f9c99b80",
+    "snapshot_date": "2026-11-19",
+    "url": "https://download.geofabrik.de/south-america/peru/peru-261119.osm.pbf"
+  },
+  "packages": {
+    "android": {
+      "archive": {
+        "bytes": 106610838,
+        "path": "regions/cusco-inca-trail/android/OpenBareMap-Android.zip",
+        "sha256": "469912520d6b9329c465936e112bb50ec6d73cea409c9365b9de62c567a53146"
+      },
+      "checksumsSHA256": "bb16a402c5173e6c4a6d3e1156545fb1403bebe05efb995cd6bb33a0def2f900",
+      "manifestSHA256": "85502e40657d23ed1d91dcc9b53c9c859dce4312b10ca61cb3d43aec1bc86a68",
+      "path": "regions/cusco-inca-trail/android",
+      "validationSHA256": "a9af10a072b29ebe494d8b00e7214327057cf1039cac2cd54c81e93baafde97c"
+    },
+    "ios": {
+      "checksumsSHA256": "0bfc0fbc352d2c893bbaede3fcdab878904852a6aa0d467a93a69e21d50f8b9e",
+      "manifestSHA256": "f3ecafd52a07d9e5884809c48d58ffd78056cd94cc2e373c2a24310ea092ad50",
+      "path": "regions/cusco-inca-trail/ios",
+      "validationSHA256": "6b952dece971d10c99050ec3fe0782c18aea2830ecffc183e9d45d45f19dbc91"
+    }
+  },
+  "pythonRuntime": {
+    "packages": {
+      "Pillow": "12.3.0",
+      "certifi": "2026.10.23",
+      "charset-normalizer": "3.5.2",
+      "idna": "3.20",
+      "numpy": "2.5.4",
+      "osmium": "4.3.2",
+      "pyproj": "3.8.0",
+      "requests": "2.34.2",
+      "shapely": "2.2.0",
+      "urllib3": "2.8.0"
+    },
+    "platform": "macOS-27.2.1-arm64-arm-64bit-Mach-O",
+    "python": "3.14.5 (main, May 10 2026, 10:21:34) [Clang 21.0.0 (clang-2100.0.123.102)]",
+    "requirementsSHA256": "427f12ff8b49bfebac0a7d453c2f65bd15d6695584b18e6ecee1fdfeed20a36c"
+  },
+  "region": "cusco-inca-trail",
+  "styleSHA256": "a686bc4ac9806eb18ed025b7c9b312758fb9355eca0b504411a2389430658c8f",
+  "terrainLockSHA256": "d1304569b489377f2fbe3c499ba3a6180615f4db9f13613ecc3a0e4c5aaf61c3",
+  "validation": "validation.json"
+}

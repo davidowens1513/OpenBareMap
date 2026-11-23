@@ -1,0 +1,148 @@
+{
+  "familyId": 4879,
+  "garminPackageRevision": "2.0.1-glacier-r1",
+  "inspection": {
+    "anchorLabels": {
+      "Queenstown": "Queenstown",
+      "Te Anau": "Te Anau"
+    },
+    "bounds": [
+      167.51996040344238,
+      -45.64999580383301,
+      168.82003784179688,
+      -44.50990676879883
+    ],
+    "coastPolygonsByLevel": {
+      "0": {
+        "0x32": 13,
+        "0x54": 66
+      },
+      "1": {
+        "0x32": 13,
+        "0x54": 50
+      },
+      "2": {
+        "0x32": 13,
+        "0x54": 45
+      },
+      "3": {
+        "0x32": 13,
+        "0x54": 30
+      },
+      "4": {
+        "0x32": 13,
+        "0x54": 25
+      }
+    },
+    "contoursByLevel": {
+      "0": {
+        "0x20": 49786,
+        "0x22": 12123
+      },
+      "1": {
+        "0x20": 37517,
+        "0x22": 9079
+      },
+      "2": {
+        "0x22": 8408
+      },
+      "3": {
+        "0x10008": 7770
+      },
+      "4": {}
+    },
+    "lineInstancesAtHighestDetail": {
+      "0x10001": 257,
+      "0x10002": 344,
+      "0x10004": 344,
+      "0x10005": 95,
+      "0x10006": 1818,
+      "0x1000b": 107,
+      "0x14": 15,
+      "0x16": 2559,
+      "0x18": 5222,
+      "0x1a": 12,
+      "0x1c": 123,
+      "0x1e": 48,
+      "0x1f": 451,
+      "0x2": 158,
+      "0x20": 49786,
+      "0x22": 12123,
+      "0x3": 13,
+      "0x4": 49,
+      "0x6": 1620,
+      "0x7": 2187,
+      "0xa": 2601
+    },
+    "logicalCombinedSHA256": "cd071cce6180bc073d160b343de7499ff44456ff9295d42e34293b9097a779fe",
+    "logicalHashNote": "Internal file names, sizes and payloads; only CommonHeader creation-date bytes 14..20 are zeroed for hashing. IMG archive headers are excluded. Output bytes are never modified.",
+    "logicalTileSHA256": {
+      "48790001.img": "dad6c27a2ff58df5513ba19b57509a37701f535ab33139c758e6616684cfba3d",
+      "48790002.img": "f44eb9f13267c60b19b83adfbd77febdc49485627c08d5224db7221acf3d854b",
+      "48790003.img": "27ca5e00f55e425fba222641a176e81c9fbe264368367e2f521f37935049a69b",
+      "48790004.img": "97743141d737c3d34dee51f761cb7a1947f7925292508d4b275ebc466c117114",
+      "48790005.img": "ed547080648105d379e02d4b7e749df276e96b49d162f34f61220addee455cfa",
+      "48790006.img": "9870809ffc4cb001c32af2ac0bb2c5dbc095800c4200a2844ce40c624cbed09d",
+      "48790007.img": "887954275175178029fa3bf19ac195060089d3f3f7ca045dc467446227a48ad5",
+      "48790008.img": "646e7624e6e665a7182fcea89374854e442cb011ef15811f71e8babf9b15f4ca",
+      "48790009.img": "a4b9656fd40710ecf99c11fe8290728a3ac82b358be99fdbf62228c58b9bfc98",
+      "48790010.img": "17e799b7ba0267ce41b104065b90b3cf3613ba4acf37cdf99ed9bb877c540df0",
+      "48790011.img": "94c3f36e030617563bf94cbf883cba18a5115a06cfcde8a507854511042df444",
+      "48790012.img": "8a3dd24d3cfc80465792f6e4385d2e1f99b7d7bedd02114a0b7da46235a2433d",
+      "48790013.img": "458803369a6745bc161fc275711ac1dcf590497dc4cf05d49e4a0aebbc18afaa"
+    },
+    "pointInstancesAtHighestDetail": {
+      "0x10001": 235,
+      "0x10002": 175,
+      "0x10003": 200,
+      "0x10004": 2,
+      "0x10006": 990,
+      "0x2f0b": 431,
+      "0x600": 2,
+      "0x650c": 39,
+      "0x6603": 107,
+      "0x6615": 86,
+      "0x6616": 580,
+      "0x800": 6,
+      "0xb00": 10,
+      "0xc00": 114
+    },
+    "polygonInstancesAtHighestDetail": {
+      "0x10101": 9787,
+      "0x10102": 955,
+      "0x10103": 6018,
+      "0x10104": 8461,
+      "0x10105": 24,
+      "0x10106": 244,
+      "0x10107": 26,
+      "0x10109": 158,
+      "0x1010a": 299,
+      "0x1010b": 325,
+      "0x1010c": 707,
+      "0x13": 19147,
+      "0x32": 13,
+      "0x3c": 1572,
+      "0x50": 9201,
+      "0x51": 1185,
+      "0x54": 66
+    },
+    "routing": false,
+    "subfileBytes": {
+      "DEM": 16010557,
+      "LBL": 87837,
+      "MPS": 1227,
+      "RGN": 28001791,
+      "SRT": 912,
+      "TRE": 349171,
+      "TYP": 3037
+    },
+    "tiles": 13
+  },
+  "output": {
+    "bytes": 44578816,
+    "path": "regions/fiordland/garmin/dist/OpenBareMap-Fiordland.img",
+    "sha256": "2a987be0b73aa256d448bbebdb30758dbe0ebd6a2a1c9efc52cd9a8a5b49bdd3"
+  },
+  "routing": false,
+  "status": "compiled and structurally inspected; hardware rendering pending"
+}
