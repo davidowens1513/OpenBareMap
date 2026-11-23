@@ -11,7 +11,7 @@ import shutil
 import sys
 import urllib.request
 from openbaremap import ROOT, digest, write
-from regions import REGIONS, profile, region_path
+from regions import REGIONS, profile, region_path, clips_to_coverage
 
 sys.path.insert(0, str(ROOT/'work/python'))
 
@@ -115,7 +115,7 @@ def fetch_osm(region):
     merge_inputs=inputs
     if p.get('clipSource'):
         merge_inputs=[]
-        footprint=region_path(region,'coverage.geojson') if p.get('routeCorridor') else None
+        footprint=region_path(region,'coverage.geojson') if clips_to_coverage(p) else None
         for item in inputs:
             clipped=directory/(Path(item['path']).stem+'.clipped.osm.pbf')
             extract_complete(ROOT/item['path'],clipped,p['bounds'],footprint)
@@ -135,8 +135,8 @@ def fetch_osm(region):
             try:merger.apply_to_reader(reader,writer)
             finally:writer.close()
         merged={'path':str(output.relative_to(ROOT)),'sha256':digest(output),'bytes':output.stat().st_size,'snapshot_date':p['sourceDate'],'replicationTimestamp':next(iter(timestamps)),'operation':('Complete-feature bbox extraction with nested relation references, then libosmium sorted merge; duplicate OSM objects resolved by version' if p.get('clipSource') else 'libosmium sorted merge; duplicate OSM objects resolved by version'),'url':None}
-    if p.get('routeCorridor'):
-        merged['operation']='Complete-feature corridor extraction followed by libosmium merge'
+    if p.get('clipSource') and clips_to_coverage(p):
+        merged['operation']='Complete-feature footprint extraction' + (' followed by libosmium merge' if len(inputs) > 1 else '')
         merged['footprintSHA256']=digest(footprint)
     write(lockpath,{'osm':merged,'inputs':inputs,'polygons':polygons,'accessed_utc':datetime.now(timezone.utc).isoformat()})
     print('Full '+p['label']+' OSM source locked.',flush=True)

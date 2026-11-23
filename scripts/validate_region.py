@@ -129,8 +129,12 @@ def package(root,platform,region="england-wales"):
             raise ValueError('Missing permanent ice source note')
     if profile(region).get('coverageBoundary'):
         edition = profile(region)
-        primary = route_overlay_id(edition) if edition.get('routeCorridor') else 'park-boundary'
-        for name in (primary,'coverage','coverage-mask'):
+        boundary_sources = ['coverage', 'coverage-mask']
+        if edition.get('routeCorridor'):
+            boundary_sources.append(route_overlay_id(edition))
+        elif not edition.get('clipToCoverage'):
+            boundary_sources.append('park-boundary')
+        for name in boundary_sources:
             source=style['sources'].get(name,{})
             if not isinstance(source.get('data'),dict) or not source['data'].get('features'):raise ValueError('Missing offline boundary geometry: '+name)
     checked=0

@@ -10,7 +10,7 @@ def garmin_instructions(region,filename=None):
     p=profile(region);identity=json.loads((ROOT/'garmin/map-identities.json').read_text())[region]
     text=(ROOT/'distribution/templates/garmin-instructions.txt').read_text()
     for key,value in {'LABEL':p['label'],'VERSION':p['mapVersion'],'REVISION':json.loads((ROOT/('garmin/config.json' if region=='ireland' else 'regions/'+region+'/garmin/config.json')).read_text())['garminPackageRevision'],'FILENAME':filename or 'OpenBareMap-'+TITLES[region]+'.img','FAMILY':identity['familyId'],'SLUG':region}.items():text=text.replace('{{'+key+'}}',str(value))
-    if p.get('permanentIceLayer') == 'permanent_ice':
+    if p.get('permanentIceLayer') == 'permanent_ice' or p.get('garminVersionedDelivery'):
         prefix = f'https://downloads.appsbyonzy.dev/Garmin/{region}/{p["garminPackageRevision"]}'
         text = text.replace(f'https://downloads.appsbyonzy.dev/Garmin/{region}-SHA256SUMS.txt', prefix + '/SHA256SUMS.txt')
         for credit in ('ATTRIBUTION.txt', 'terrain-attribution.md', 'terrain-data-sources.md'):

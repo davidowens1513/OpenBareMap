@@ -11,7 +11,7 @@ import sqlite3
 import subprocess
 import sys
 from openbaremap import ROOT, digest, inspect_tiles, write, build_name
-from regions import REGIONS, region_path, profile
+from regions import REGIONS, region_path, profile, clips_to_coverage
 
 GDAL=Path('/Applications/QGIS.app/Contents/MacOS')
 TOOLS=['ogr2ogr','gdalbuildvrt','gdalwarp','gdaldem','gdal_contour','gdal_translate','gdaladdo','gdalinfo']
@@ -71,7 +71,7 @@ def build(args):
         run('gdalbuildvrt',dest/'elevation.vrt',*grids)
         cutline=coastfile
         crop=[]
-        if region_id!='ireland' and p.get('routeCorridor'):
+        if region_id!='ireland' and clips_to_coverage(p):
             cutline=region_path(region_id,'coverage.geojson')
             record['terrainCutlineSHA256']=digest(cutline)
             crop=['-crop_to_cutline']

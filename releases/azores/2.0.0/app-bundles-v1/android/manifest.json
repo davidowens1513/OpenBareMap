@@ -1,0 +1,33 @@
+{
+  "bytes": 42329181,
+  "datasets": {
+    "basemap": {
+      "path": "maps/basemap.mbtiles",
+      "sha256": "1f64120e94fa76a40484e0967ed9068bea2639fdc3f7591baab3187e94021f8e"
+    },
+    "coast": {
+      "derivedFrom": "bef7a2fc03ea782977528d4b70391a9ead9bca90b2c6fe07b12c423fd0c443cd",
+      "path": "maps/coast.mbtiles",
+      "sha256": "2d47183d09f2f1f93bf0f87b5af6e53198b86121bbae8e2491c1ff5bfaa6c435"
+    },
+    "grid": {
+      "path": "maps/grid.mbtiles",
+      "sha256": "f469b7e43d683bcc2f10d360a74f363c968d52213d727efc84efef85df53fe41"
+    },
+    "hillshade": {
+      "path": "maps/hillshade.mbtiles",
+      "sha256": "03b655337302b404e9a0d1122206fbf821b853029eae2146831fac709960470f"
+    },
+    "topography": {
+      "path": "maps/topography.mbtiles",
+      "sha256": "bef7a2fc03ea782977528d4b70391a9ead9bca90b2c6fe07b12c423fd0c443cd"
+    }
+  },
+  "instructionsSHA256": "fec6ad67a804c7a2053a98a9a03cb642ff6bb45a855e0fef7db80c33aef5c69b",
+  "instructionsURL": "https://downloads.appsbyonzy.dev/OpenBareMap/azores/2.0.0/app-bundles-v1/android/instructions.txt",
+  "localPath": "releases/azores/2.0.0/app-bundles-v1/android/OpenBareMap-Azores-Android-Bundle.zip",
+  "mapManifestSHA256": "598603aa45e706a3c1611d2d2c2029ba50c1246411def59aa0ff8fce6174b2f6",
+  "r2Key": "OpenBareMap/azores/2.0.0/app-bundles-v1/android/OpenBareMap-Azores-Android-Bundle.zip",
+  "sha256": "63b51ac29d67f5e1815bd26ced6cd8dcd542e8c4aba04e62c1f82acd4a7d70e9",
+  "url": "https://downloads.appsbyonzy.dev/OpenBareMap/azores/2.0.0/app-bundles-v1/android/OpenBareMap-Azores-Android-Bundle.zip"
+}

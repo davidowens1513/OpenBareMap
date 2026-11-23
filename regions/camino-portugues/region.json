@@ -1,0 +1,217 @@
+{
+  "appBundleName": "Camino-Portugues",
+  "boundaryAttribution": "OpenStreetMap contributors, ODbL, via Open Pilgrimages 1.13.0 \u00b7 Rutas de Caminos de Santiago, FEAACS / IGN, CC BY 4.0",
+  "bounds": [
+    -9.015507591666147,
+    41.050552917403905,
+    -8.422740323111684,
+    42.970481955037606
+  ],
+  "clipBasemap": true,
+  "clipSource": true,
+  "clipTerrainToBounds": true,
+  "coastContextBounds": [
+    -11,
+    40,
+    -7,
+    44
+  ],
+  "contourIntervalMetres": 20,
+  "coverage": "Porto to Santiago de Compostela on both the Central and Coastal routes with 10 km of coverage on either side.",
+  "coverageBoundary": true,
+  "coverageBoundaryLabel": "10 km map coverage limit",
+  "destinationLabels": {
+    "a-guarda": "A Guarda",
+    "caminha": "Caminha",
+    "island": "Camino Portugu\u00e9s",
+    "padron": "Padr\u00f3n",
+    "ponte-de-lima": "Ponte de Lima",
+    "pontevedra": "Pontevedra",
+    "porto": "Porto",
+    "redondela": "Redondela",
+    "santiago": "Santiago de Compostela",
+    "tui": "Tui",
+    "viana-do-castelo": "Viana do Castelo",
+    "vigo": "Vigo"
+  },
+  "destinations": {
+    "a-guarda": [
+      -8.874,
+      41.902,
+      12
+    ],
+    "caminha": [
+      -8.837,
+      41.877,
+      12
+    ],
+    "island": [
+      -8.760385785244578,
+      42.01114800980021,
+      8
+    ],
+    "padron": [
+      -8.66,
+      42.739,
+      12
+    ],
+    "ponte-de-lima": [
+      -8.583,
+      41.768,
+      12
+    ],
+    "pontevedra": [
+      -8.645,
+      42.432,
+      12
+    ],
+    "porto": [
+      -8.611,
+      41.142,
+      12
+    ],
+    "redondela": [
+      -8.609,
+      42.282,
+      12
+    ],
+    "santiago": [
+      -8.5445,
+      42.8809,
+      12
+    ],
+    "tui": [
+      -8.645,
+      42.046,
+      12
+    ],
+    "viana-do-castelo": [
+      -8.832,
+      41.693,
+      12
+    ],
+    "vigo": [
+      -8.723,
+      42.237,
+      12
+    ]
+  },
+  "garminContextBounds": [
+    -9.015507591666147,
+    41.050552917403905,
+    -8.422740323111684,
+    42.970481955037606
+  ],
+  "garminFamilyId": 4883,
+  "garminFilename": "OpenBareMap-Camino-Portugues.img",
+  "garminPackageRevision": "2.0.0-r1",
+  "garminTileStartId": 48830001,
+  "garminUseSourceOutline": true,
+  "garminVersionedDelivery": true,
+  "gridCRS": "EPSG:25829",
+  "gridExtent": [
+    490000,
+    550000,
+    4540000,
+    4760000
+  ],
+  "gridName": "ETRS89 / UTM 29N",
+  "gridSource": "utm-grid",
+  "id": "camino-portugues",
+  "ignoreSourceHeaderBounds": true,
+  "inspectionNames": [
+    "Porto",
+    "Tui",
+    "Santiago de Compostela"
+  ],
+  "label": "Camino Portugu\u00e9s",
+  "labelGlyphs": "\u00c1\u00c0\u00c2\u00c3\u00c7\u00c8\u00c9\u00ca\u00cd\u00d1\u00d3\u00d4\u00d5\u00da\u00dc\u00e1\u00e0\u00e2\u00e3\u00e7\u00e8\u00e9\u00ea\u00ed\u00f1\u00f3\u00f4\u00f5\u00fa\u00fc",
+  "mapVersion": "2.0.0",
+  "maxzoom": 14,
+  "minorWaterwayMinzoom": 10,
+  "minzoom": 4,
+  "name": "OpenBareMap Camino Portugu\u00e9s",
+  "nativeLanguage": "pt",
+  "optionalBasemapLayers": [
+    "ferry",
+    "island_name",
+    "cycling_route",
+    "railway",
+    "station",
+    "hiking_route",
+    "boundary"
+  ],
+  "projectedCRS": "EPSG:25829",
+  "repairClippedCoastline": true,
+  "requireBogFeatures": false,
+  "routeCorridor": true,
+  "routeOverlayLabel": "Camino Portugu\u00e9s",
+  "sourceBaseOverrides": {
+    "aquitaine": "https://download.geofabrik.de/europe/france/aquitaine/",
+    "portugal": "https://download.geofabrik.de/europe/portugal/",
+    "spain": "https://download.geofabrik.de/europe/spain/"
+  },
+  "sourceBaseURL": "https://download.geofabrik.de/europe/",
+  "sourceDate": "2026-11-22",
+  "sourceSlugs": [
+    "spain",
+    "portugal"
+  ],
+  "styleRevision": "2.0.0-camino-portugues-r1",
+  "terrainAttribution": "Copernicus DEM GLO-30 \u00b7 European Union / ESA \u00b7 DLR / Airbus",
+  "terrainBounds": [
+    -10,
+    41,
+    -8,
+    43
+  ],
+  "terrainNotice": "Camino Portugu\u00e9s elevation: Copernicus DEM GLO-30 Public (AWS 2021 release).\n\nproduced using Copernicus WorldDEM-30 \u00a9 DLR e.V. 2010-2014 and \u00a9 Airbus Defence and Space GmbH 2014-2018 provided under COPERNICUS by the European Union and ESA; all rights reserved\n\nThe organisations in charge of the Copernicus programme by law or by delegation do not incur any liability for any use of the Copernicus WorldDEM-30.\n\nLicense: https://dataspace.copernicus.eu/sites/default/files/media/files/2025-06/copernicus_contributing_mission_data_access_v2_cop_dem_licenses.pdf\nSource: https://registry.opendata.aws/copernicus-dem/\nVertical datum: EGM2008 orthometric metres. Native approximately 30 m cells are bilinearly resampled to point-aligned Int16 HGT for the shared terrain pipeline. Ocean-only cells absent from the official public inventory are zero.\n",
+  "terrainProvider": "copernicus-glo30",
+  "townlands": false,
+  "validationAnchors": {
+    "a-guarda": [
+      -8.874,
+      41.902
+    ],
+    "caminha": [
+      -8.837,
+      41.877
+    ],
+    "padron": [
+      -8.66,
+      42.739
+    ],
+    "ponte-de-lima": [
+      -8.583,
+      41.768
+    ],
+    "pontevedra": [
+      -8.645,
+      42.432
+    ],
+    "porto": [
+      -8.611,
+      41.142
+    ],
+    "redondela": [
+      -8.609,
+      42.282
+    ],
+    "santiago": [
+      -8.5445,
+      42.8809
+    ],
+    "tui": [
+      -8.645,
+      42.046
+    ],
+    "viana-do-castelo": [
+      -8.832,
+      41.693
+    ],
+    "vigo": [
+      -8.723,
+      42.237
+    ]
+  }
+}

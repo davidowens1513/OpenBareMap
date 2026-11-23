@@ -1,0 +1,52 @@
+{
+  "contourIntervalMetres": 20,
+  "coverage": "S\u00e3o Miguel, Pico, S\u00e3o Jorge and Faial in a single offline map.",
+  "datasets": {
+    "basemap": {
+      "bytes": 20361216,
+      "path": "releases/azores/2.0.0/maps/basemap.mbtiles",
+      "sha256": "1f64120e94fa76a40484e0967ed9068bea2639fdc3f7591baab3187e94021f8e",
+      "validation": {
+        "empty_tile_count": 694,
+        "logical_tiles_sha256": "f31f513d553d7f926d9c175d637a10fd311d0b2bf778308a1173b487bebfb679",
+        "tile_count": 1928
+      }
+    },
+    "grid": {
+      "bytes": 6303744,
+      "path": "releases/azores/2.0.0/maps/grid.mbtiles",
+      "sha256": "f469b7e43d683bcc2f10d360a74f363c968d52213d727efc84efef85df53fe41",
+      "validation": {
+        "empty_tile_count": 0,
+        "logical_tiles_sha256": "6c8d039a288d5ec30618a2004fd5a457e63e256b8a482700368ada0b3d09aebb",
+        "tile_count": 17553
+      }
+    },
+    "hillshade": {
+      "bytes": 2539520,
+      "path": "releases/azores/2.0.0/maps/hillshade.mbtiles",
+      "sha256": "03b655337302b404e9a0d1122206fbf821b853029eae2146831fac709960470f",
+      "validation": {
+        "empty_tile_count": 0,
+        "logical_tiles_sha256": "22d08c76067d4b7a7c6a2e6ac8f0d5ae4f0b3255daf09a5e785d0418f0b5a61f",
+        "tile_count": 437
+      }
+    },
+    "topography": {
+      "bytes": 9175040,
+      "path": "releases/azores/2.0.0/maps/topography-context.mbtiles",
+      "sha256": "bef7a2fc03ea782977528d4b70391a9ead9bca90b2c6fe07b12c423fd0c443cd",
+      "validation": {
+        "empty_tile_count": 996,
+        "logical_tiles_sha256": "77b269d12b86d2998d6ece36458ab7191184d5171a4a8d8686f6223d085dcf3c",
+        "tile_count": 1961
+      }
+    }
+  },
+  "format": "openbaremap-development-viewer-v1",
+  "localBorders": false,
+  "mapVersion": "2.0.0",
+  "region": "azores",
+  "storageRevision": "2.0.0-azores-r3",
+  "styleRevision": "2.0.0-azores-r1"
+}

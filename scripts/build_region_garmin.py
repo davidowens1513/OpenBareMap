@@ -105,7 +105,9 @@ def main(region, geometry=None):
     options=['--max-jobs=2','--style-file='+str(style),'--family-id='+str(p['garminFamilyId']),'--product-id=1','--family-name='+p['name'],'--series-name=OpenBareMap Garmin 2.0','--description='+p['name']+' 2.0','--code-page=1252','--lower-case','--name-tag-list=name:en,name,name:'+p.get('nativeLanguage','cy'),'--levels=0:24,1:23,2:22,3:20,4:18,5:16','--gmapsupp','--transparent','--draw-priority=25','--add-pois-to-areas','--dem='+str(work/'hgt'),'--dem-poly='+str(polygon),'--dem-dists=3312,3312,13248,26512,53024,106048','--dem-interpolation=bilinear','--copyright-file='+str(copyright_file)]
     if p.get('coverageBoundary'):
         credit=p.get('boundaryAttribution','Fuente: Organismo Autónomo Parques Nacionales (MITECO/OAPN), CC BY 4.0')
-        topic=p.get('routeOverlayLabel','Camino')+' route and coverage' if p.get('routeCorridor') else 'National park boundary'
+        topic = 'Map coverage' if p.get('clipToCoverage') else 'National park boundary'
+        if p.get('routeCorridor'):
+            topic = p.get('routeOverlayLabel','Camino')+' route and coverage'
         copyright_file.write_text(copyright_file.read_text()+f'\n{topic}: {credit}. See boundary-source.json.\n')
     from garmin_render_coverage import generate as generate_render_coverage
     generate_render_coverage(region)

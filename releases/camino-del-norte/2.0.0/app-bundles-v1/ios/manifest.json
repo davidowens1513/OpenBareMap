@@ -1,0 +1,35 @@
+{
+  "bytes": 222803755,
+  "datasets": {
+    "basemap": {
+      "path": "maps/basemap.mbtiles",
+      "sha256": "749a6923b4e7e83fe9cdb6b806693b989ef6b3ce01c1599a5dd6261bbbb961ba"
+    },
+    "coast": {
+      "derived_from": "c952c93e7639357b19187dd89f1b73417ed57024e615f092f661bfa8903f2b11",
+      "maxzoom": 12,
+      "operation": "Preserve land-layer MVT bytes only through zoom 12; omit other layers.",
+      "path": "maps/coast.mbtiles",
+      "sha256": "7b16c13805865f182f18649ee5b2d37dfe479215e3edb0dc8d8d4bca9213dea8"
+    },
+    "grid": {
+      "path": "maps/grid.mbtiles",
+      "sha256": "67f556ee68e7b7a74d1fda936e67bcc838f9389004ef043060b349ed1b26be47"
+    },
+    "hillshade": {
+      "path": "maps/hillshade.mbtiles",
+      "sha256": "0f949f6c0ae652854ec3eeb6f46e3a6bd3fa13e06413f8ede827bcb3c3cc8dc1"
+    },
+    "topography": {
+      "path": "maps/topography.mbtiles",
+      "sha256": "c952c93e7639357b19187dd89f1b73417ed57024e615f092f661bfa8903f2b11"
+    }
+  },
+  "instructionsSHA256": "75f1ac366f1b7038e8591a925147bf182d7fe62df0ba5caaf10ed399c88d5eaf",
+  "instructionsURL": "https://downloads.appsbyonzy.dev/OpenBareMap/camino-del-norte/2.0.0/app-bundles-v1/ios/instructions.txt",
+  "localPath": "releases/camino-del-norte/2.0.0/app-bundles-v1/ios/OpenBareMap-Camino-del-Norte-iOS-Bundle.zip",
+  "mapManifestSHA256": "e01f2668d977d4f5b68e1dd6e1c02e08d7414e2fc7727c9c9a50b1800b530a03",
+  "r2Key": "OpenBareMap/camino-del-norte/2.0.0/app-bundles-v1/ios/OpenBareMap-Camino-del-Norte-iOS-Bundle.zip",
+  "sha256": "f5950c0d0fe22faaa7a81964620514ddf91690408502b8b37205aca785698725",
+  "url": "https://downloads.appsbyonzy.dev/OpenBareMap/camino-del-norte/2.0.0/app-bundles-v1/ios/OpenBareMap-Camino-del-Norte-iOS-Bundle.zip"
+}

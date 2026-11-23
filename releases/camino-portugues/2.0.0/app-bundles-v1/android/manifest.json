@@ -1,0 +1,33 @@
+{
+  "bytes": 132965971,
+  "datasets": {
+    "basemap": {
+      "path": "maps/basemap.mbtiles",
+      "sha256": "218462057b8e2da8f076d6a7e9427d9805451f08359a449529ee49e4d1a9ff71"
+    },
+    "coast": {
+      "derivedFrom": "cfd6f0e7ab700a1ee28bb10a26e0c67d8c0de3647c88a5c23be1d0ad053bec8d",
+      "path": "maps/coast.mbtiles",
+      "sha256": "87a909df82c54f0649bde70eac36955ac8ebf4384b838506ec7dc5db762fbf52"
+    },
+    "grid": {
+      "path": "maps/grid.mbtiles",
+      "sha256": "8e854eae704c2b15adc8114a605b1f797ccf854ef852e4614e3241da3930abb3"
+    },
+    "hillshade": {
+      "path": "maps/hillshade.mbtiles",
+      "sha256": "49dc02a72588d4948e1b0e9a0783b8d0cb6cf34551d51256b63b45d37ac4c94f"
+    },
+    "topography": {
+      "path": "maps/topography.mbtiles",
+      "sha256": "cfd6f0e7ab700a1ee28bb10a26e0c67d8c0de3647c88a5c23be1d0ad053bec8d"
+    }
+  },
+  "instructionsSHA256": "6b23917167916cb76eb94d3e56e8e0b96aafc4288e1d597074eb3138ad7a011f",
+  "instructionsURL": "https://downloads.appsbyonzy.dev/OpenBareMap/camino-portugues/2.0.0/app-bundles-v1/android/instructions.txt",
+  "localPath": "releases/camino-portugues/2.0.0/app-bundles-v1/android/OpenBareMap-Camino-Portugues-Android-Bundle.zip",
+  "mapManifestSHA256": "a2271989a1e6d5e58ccb570ca15d38c151390cfd3c98b9cacc9cbb9bcf656ddd",
+  "r2Key": "OpenBareMap/camino-portugues/2.0.0/app-bundles-v1/android/OpenBareMap-Camino-Portugues-Android-Bundle.zip",
+  "sha256": "34633bdf2838938befdb9a67e72ede72e146483bf498f325e62ccf8fe4ee773a",
+  "url": "https://downloads.appsbyonzy.dev/OpenBareMap/camino-portugues/2.0.0/app-bundles-v1/android/OpenBareMap-Camino-Portugues-Android-Bundle.zip"
+}

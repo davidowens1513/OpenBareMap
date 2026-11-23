@@ -1,0 +1,263 @@
+{
+  "appBundleName": "Camino-del-Norte",
+  "boundaryAttribution": "OpenStreetMap contributors, ODbL, via Open Pilgrimages 1.13.0 \u00b7 OpenBareMap Camino Franc\u00e9s, FEAACS / IGN (CC BY 4.0) and OpenStreetMap (ODbL)",
+  "bounds": [
+    -8.66653703222943,
+    42.79114659178511,
+    -1.6659971991497442,
+    43.665647902586656
+  ],
+  "clipBasemap": true,
+  "clipSource": true,
+  "clipTerrainToBounds": true,
+  "coastContextBounds": [
+    -10,
+    41,
+    0,
+    45
+  ],
+  "contourIntervalMetres": 20,
+  "coverage": "Ir\u00fan to Santiago de Compostela via the northern coast and Arz\u00faa with 10 km of coverage on either side.",
+  "coverageBoundary": true,
+  "coverageBoundaryLabel": "10 km map coverage limit",
+  "destinationLabels": {
+    "arzua": "Arz\u00faa",
+    "aviles": "Avil\u00e9s",
+    "bilbao": "Bilbao",
+    "gijon": "Gij\u00f3n",
+    "irun": "Ir\u00fan",
+    "island": "Camino del Norte",
+    "llanes": "Llanes",
+    "ribadeo": "Ribadeo",
+    "san-sebastian": "San Sebasti\u00e1n",
+    "santander": "Santander",
+    "santiago": "Santiago de Compostela",
+    "villalba": "Vilalba"
+  },
+  "destinations": {
+    "arzua": [
+      -8.1605,
+      42.9273,
+      12
+    ],
+    "aviles": [
+      -5.922,
+      43.556,
+      12
+    ],
+    "bilbao": [
+      -2.923,
+      43.257,
+      12
+    ],
+    "gijon": [
+      -5.662,
+      43.542,
+      12
+    ],
+    "irun": [
+      -1.789,
+      43.339,
+      12
+    ],
+    "island": [
+      -2.527532576850848,
+      43.22824937899358,
+      7
+    ],
+    "llanes": [
+      -4.754,
+      43.42,
+      12
+    ],
+    "ribadeo": [
+      -7.042,
+      43.536,
+      12
+    ],
+    "san-sebastian": [
+      -1.984,
+      43.321,
+      12
+    ],
+    "santander": [
+      -3.807,
+      43.461,
+      12
+    ],
+    "santiago": [
+      -8.5445,
+      42.8809,
+      12
+    ],
+    "villalba": [
+      -7.681,
+      43.299,
+      12
+    ]
+  },
+  "garminContextBounds": [
+    -8.66653703222943,
+    42.79114659178511,
+    -1.6659971991497442,
+    43.665647902586656
+  ],
+  "garminFamilyId": 4884,
+  "garminFilename": "OpenBareMap-Camino-del-Norte.img",
+  "garminPackageRevision": "2.0.0-r1",
+  "garminTileStartId": 48840001,
+  "garminUseSourceOutline": true,
+  "garminVersionedDelivery": true,
+  "gridCRS": "EPSG:25830",
+  "gridExtent": [
+    30000,
+    610000,
+    4750000,
+    4850000
+  ],
+  "gridName": "ETRS89 / UTM 30N",
+  "gridSource": "utm-grid",
+  "id": "camino-del-norte",
+  "ignoreSourceHeaderBounds": true,
+  "inspectionNames": [
+    "Bilbao",
+    "Santander",
+    "Santiago de Compostela"
+  ],
+  "label": "Camino del Norte",
+  "labelGlyphs": "\u00c1\u00c0\u00c2\u00c3\u00c7\u00c8\u00c9\u00ca\u00cd\u00d1\u00d3\u00d4\u00d5\u00da\u00dc\u00e1\u00e0\u00e2\u00e3\u00e7\u00e8\u00e9\u00ea\u00ed\u00f1\u00f3\u00f4\u00f5\u00fa\u00fc",
+  "mapVersion": "2.0.0",
+  "maxzoom": 14,
+  "minorWaterwayMinzoom": 10,
+  "minzoom": 4,
+  "name": "OpenBareMap Camino del Norte",
+  "nativeLanguage": "es",
+  "optionalBasemapLayers": [
+    "ferry",
+    "island_name",
+    "cycling_route",
+    "railway",
+    "station",
+    "hiking_route",
+    "boundary"
+  ],
+  "overviewLandAnchors": {
+    "arzua": [
+      -8.1605,
+      42.9273
+    ],
+    "aviles": [
+      -5.922,
+      43.556
+    ],
+    "bilbao": [
+      -2.923,
+      43.257
+    ],
+    "gijon": [
+      -5.662,
+      43.542
+    ],
+    "irun": [
+      -1.789,
+      43.339
+    ],
+    "llanes": [
+      -4.758,
+      43.418
+    ],
+    "ribadeo": [
+      -7.042,
+      43.536
+    ],
+    "san-sebastian": [
+      -1.984,
+      43.321
+    ],
+    "santander": [
+      -3.807,
+      43.461
+    ],
+    "santiago": [
+      -8.5445,
+      42.8809
+    ],
+    "villalba": [
+      -7.681,
+      43.299
+    ]
+  },
+  "projectedCRS": "EPSG:25830",
+  "repairClippedCoastline": true,
+  "requireBogFeatures": false,
+  "routeCorridor": true,
+  "routeOverlayLabel": "Camino del Norte",
+  "sourceBaseOverrides": {
+    "aquitaine": "https://download.geofabrik.de/europe/france/aquitaine/",
+    "portugal": "https://download.geofabrik.de/europe/portugal/",
+    "spain": "https://download.geofabrik.de/europe/spain/"
+  },
+  "sourceBaseURL": "https://download.geofabrik.de/europe/",
+  "sourceDate": "2026-11-22",
+  "sourceSlugs": [
+    "spain",
+    "aquitaine"
+  ],
+  "styleRevision": "2.0.0-camino-del-norte-r1",
+  "terrainAttribution": "Copernicus DEM GLO-30 \u00b7 European Union / ESA \u00b7 DLR / Airbus",
+  "terrainBounds": [
+    -9,
+    42,
+    -1,
+    44
+  ],
+  "terrainNotice": "Camino del Norte elevation: Copernicus DEM GLO-30 Public (AWS 2021 release).\n\nproduced using Copernicus WorldDEM-30 \u00a9 DLR e.V. 2010-2014 and \u00a9 Airbus Defence and Space GmbH 2014-2018 provided under COPERNICUS by the European Union and ESA; all rights reserved\n\nThe organisations in charge of the Copernicus programme by law or by delegation do not incur any liability for any use of the Copernicus WorldDEM-30.\n\nLicense: https://dataspace.copernicus.eu/sites/default/files/media/files/2025-06/copernicus_contributing_mission_data_access_v2_cop_dem_licenses.pdf\nSource: https://registry.opendata.aws/copernicus-dem/\nVertical datum: EGM2008 orthometric metres. Native approximately 30 m cells are bilinearly resampled to point-aligned Int16 HGT for the shared terrain pipeline. Ocean-only cells absent from the official public inventory are zero.\n",
+  "terrainProvider": "copernicus-glo30",
+  "townlands": false,
+  "validationAnchors": {
+    "arzua": [
+      -8.1605,
+      42.9273
+    ],
+    "aviles": [
+      -5.922,
+      43.556
+    ],
+    "bilbao": [
+      -2.923,
+      43.257
+    ],
+    "gijon": [
+      -5.662,
+      43.542
+    ],
+    "irun": [
+      -1.789,
+      43.339
+    ],
+    "llanes": [
+      -4.754,
+      43.42
+    ],
+    "ribadeo": [
+      -7.042,
+      43.536
+    ],
+    "san-sebastian": [
+      -1.984,
+      43.321
+    ],
+    "santander": [
+      -3.807,
+      43.461
+    ],
+    "santiago": [
+      -8.5445,
+      42.8809
+    ],
+    "villalba": [
+      -7.681,
+      43.299
+    ]
+  }
+}

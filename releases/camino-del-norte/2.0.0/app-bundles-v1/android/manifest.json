@@ -1,0 +1,33 @@
+{
+  "bytes": 222801704,
+  "datasets": {
+    "basemap": {
+      "path": "maps/basemap.mbtiles",
+      "sha256": "749a6923b4e7e83fe9cdb6b806693b989ef6b3ce01c1599a5dd6261bbbb961ba"
+    },
+    "coast": {
+      "derivedFrom": "c952c93e7639357b19187dd89f1b73417ed57024e615f092f661bfa8903f2b11",
+      "path": "maps/coast.mbtiles",
+      "sha256": "7b16c13805865f182f18649ee5b2d37dfe479215e3edb0dc8d8d4bca9213dea8"
+    },
+    "grid": {
+      "path": "maps/grid.mbtiles",
+      "sha256": "67f556ee68e7b7a74d1fda936e67bcc838f9389004ef043060b349ed1b26be47"
+    },
+    "hillshade": {
+      "path": "maps/hillshade.mbtiles",
+      "sha256": "0f949f6c0ae652854ec3eeb6f46e3a6bd3fa13e06413f8ede827bcb3c3cc8dc1"
+    },
+    "topography": {
+      "path": "maps/topography.mbtiles",
+      "sha256": "c952c93e7639357b19187dd89f1b73417ed57024e615f092f661bfa8903f2b11"
+    }
+  },
+  "instructionsSHA256": "e2657e39157e25f15736b448881b3c201b79b72a8c3718111d1caeb222640f9b",
+  "instructionsURL": "https://downloads.appsbyonzy.dev/OpenBareMap/camino-del-norte/2.0.0/app-bundles-v1/android/instructions.txt",
+  "localPath": "releases/camino-del-norte/2.0.0/app-bundles-v1/android/OpenBareMap-Camino-del-Norte-Android-Bundle.zip",
+  "mapManifestSHA256": "130d18d3f03badcbcb17e2f987f46677820bbb03f1276f789ea22a4924dd8edf",
+  "r2Key": "OpenBareMap/camino-del-norte/2.0.0/app-bundles-v1/android/OpenBareMap-Camino-del-Norte-Android-Bundle.zip",
+  "sha256": "f092e7fb4324c5dcf48771c1b995ce635fdc02998a313bf7eff1827ecf768663",
+  "url": "https://downloads.appsbyonzy.dev/OpenBareMap/camino-del-norte/2.0.0/app-bundles-v1/android/OpenBareMap-Camino-del-Norte-Android-Bundle.zip"
+}

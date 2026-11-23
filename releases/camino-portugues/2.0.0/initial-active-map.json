@@ -1,0 +1,52 @@
+{
+  "contourIntervalMetres": 20,
+  "coverage": "Porto to Santiago de Compostela on both the Central and Coastal routes with 10 km of coverage on either side.",
+  "datasets": {
+    "basemap": {
+      "bytes": 96874496,
+      "path": "releases/camino-portugues/2.0.0/maps/basemap.mbtiles",
+      "sha256": "218462057b8e2da8f076d6a7e9427d9805451f08359a449529ee49e4d1a9ff71",
+      "validation": {
+        "empty_tile_count": 1,
+        "logical_tiles_sha256": "344f00f9ae7a435e9505a6bc12eabf24042cf51635d7f536e76d42844c5d0e3c",
+        "tile_count": 2399
+      }
+    },
+    "grid": {
+      "bytes": 962560,
+      "path": "releases/camino-portugues/2.0.0/maps/grid.mbtiles",
+      "sha256": "8e854eae704c2b15adc8114a605b1f797ccf854ef852e4614e3241da3930abb3",
+      "validation": {
+        "empty_tile_count": 0,
+        "logical_tiles_sha256": "58641712a879a190d7406e1d030ae6acb9775cd6a96cc9d45bb26d8a554c3a00",
+        "tile_count": 2792
+      }
+    },
+    "hillshade": {
+      "bytes": 6369280,
+      "path": "releases/camino-portugues/2.0.0/maps/hillshade.mbtiles",
+      "sha256": "49dc02a72588d4948e1b0e9a0783b8d0cb6cf34551d51256b63b45d37ac4c94f",
+      "validation": {
+        "empty_tile_count": 0,
+        "logical_tiles_sha256": "70f826003f2ed69afc5212af3033459651678c8494dd508ac67ceec8bb1b3160",
+        "tile_count": 235
+      }
+    },
+    "topography": {
+      "bytes": 22962176,
+      "path": "releases/camino-portugues/2.0.0/maps/topography.mbtiles",
+      "sha256": "391eec3757a14a37ac37861c21a8b24b53d178cca8a5a207dd97ee3ada06affc",
+      "validation": {
+        "empty_tile_count": 24591,
+        "logical_tiles_sha256": "f77dc9558d992a95919c44906b59cb5351b131d4c8371bf166bf049e50d3fdc6",
+        "tile_count": 28482
+      }
+    }
+  },
+  "format": "openbaremap-development-viewer-v1",
+  "localBorders": false,
+  "mapVersion": "2.0.0",
+  "region": "camino-portugues",
+  "storageRevision": "2.0.0-camino-portugues-r1",
+  "styleRevision": "2.0.0-camino-portugues-r1"
+}

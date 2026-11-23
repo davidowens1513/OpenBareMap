@@ -1,0 +1,52 @@
+{
+  "contourIntervalMetres": 20,
+  "coverage": "Ir\u00fan to Santiago de Compostela via the northern coast and Arz\u00faa with 10 km of coverage on either side.",
+  "datasets": {
+    "basemap": {
+      "bytes": 136704000,
+      "path": "releases/camino-del-norte/2.0.0/maps/basemap.mbtiles",
+      "sha256": "749a6923b4e7e83fe9cdb6b806693b989ef6b3ce01c1599a5dd6261bbbb961ba",
+      "validation": {
+        "empty_tile_count": 3,
+        "logical_tiles_sha256": "f02c86b6098cc999e8095761d03224bafa44344d551f3b7c518e0b3f71a7189f",
+        "tile_count": 5110
+      }
+    },
+    "grid": {
+      "bytes": 2195456,
+      "path": "releases/camino-del-norte/2.0.0/maps/grid.mbtiles",
+      "sha256": "67f556ee68e7b7a74d1fda936e67bcc838f9389004ef043060b349ed1b26be47",
+      "validation": {
+        "empty_tile_count": 0,
+        "logical_tiles_sha256": "745b28dac57eb6f450d930705938bd31ee3988b463bdfa9eb203f8714648cf80",
+        "tile_count": 6318
+      }
+    },
+    "hillshade": {
+      "bytes": 14286848,
+      "path": "releases/camino-del-norte/2.0.0/maps/hillshade.mbtiles",
+      "sha256": "0f949f6c0ae652854ec3eeb6f46e3a6bd3fa13e06413f8ede827bcb3c3cc8dc1",
+      "validation": {
+        "empty_tile_count": 0,
+        "logical_tiles_sha256": "fae3b284a78c8a849fd3d3b2bbe950418aad92490a1ed304a1e4c63aa6d8cfb6",
+        "tile_count": 570
+      }
+    },
+    "topography": {
+      "bytes": 62091264,
+      "path": "releases/camino-del-norte/2.0.0/maps/topography-context.mbtiles",
+      "sha256": "c952c93e7639357b19187dd89f1b73417ed57024e615f092f661bfa8903f2b11",
+      "validation": {
+        "empty_tile_count": 86511,
+        "logical_tiles_sha256": "2a756651694371021dcd583c91b4a405bd6bc20b4b33764597c90dac9a185bed",
+        "tile_count": 96940
+      }
+    }
+  },
+  "format": "openbaremap-development-viewer-v1",
+  "localBorders": false,
+  "mapVersion": "2.0.0",
+  "region": "camino-del-norte",
+  "storageRevision": "2.0.0-camino-del-norte-r3",
+  "styleRevision": "2.0.0-camino-del-norte-r1"
+}

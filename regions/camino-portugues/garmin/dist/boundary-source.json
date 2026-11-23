@@ -1,0 +1,37 @@
+{
+  "alignmentLengthsKilometres": {
+    "Camino Portugu\u00e9s Central": 237.4,
+    "Coastal Way \u2013 Galicia to Santiago": 161.93,
+    "Coastal Way \u2013 Portugal": 105.4
+  },
+  "bufferCRS": "EPSG:25829",
+  "bufferMetres": 10000,
+  "changes": "Exact retraces removed. The Spanish coastal stages are joined at Castrelos and the Central Way near Redondela. The Minho crossing at Caminha separates the walking lines.",
+  "coverageSHA256": "ac322adc5292eea6b34c488740aa711c07bfd516892b8d0d9058a3bee3eb572b",
+  "coverageSquareKilometres": 6221.1,
+  "routeLengthKilometres": 237.4,
+  "routeSHA256": "9c2f212b00ee54ecc19e4dc77fde54a78950d545933aa905dd29c7ffcf56fbd0",
+  "sources": [
+    {
+      "attribution": "OpenStreetMap contributors, ODbL, via Open Pilgrimages 1.13.0",
+      "bytes": 985368,
+      "path": "data/regions/camino-portugues/route.geojson",
+      "sha256": "3791868b643ef405af819fa29308c589d8a49f31dc6d8864e667c9557e67b97c",
+      "url": "https://cdn.jsdelivr.net/gh/walktalkmeditate/open-pilgrimages@v1.13.0/routes/camino-portugues/route.geojson"
+    },
+    {
+      "attribution": "OpenStreetMap contributors, ODbL, via Open Pilgrimages 1.13.0",
+      "bytes": 398541,
+      "path": "data/regions/camino-portugues/coastal-portugal.geojson",
+      "sha256": "97e90af49fd69f8807b5bbb894c29257b75938237d5eaa73d062daf716e42c04",
+      "url": "https://cdn.jsdelivr.net/gh/walktalkmeditate/open-pilgrimages@v1.13.0/routes/camino-portugues/variants/coastal/route.geojson"
+    },
+    {
+      "attribution": "Rutas de Caminos de Santiago, FEAACS / IGN, CC BY 4.0",
+      "bytes": 162368,
+      "path": "data/regions/camino-portugues/coastal-spain.geojson",
+      "sha256": "80def653cb39151b7070416119e67ab50be8ce0f90bda2d6cb894d9df102f248",
+      "url": "https://nco.ign.es/server/rest/services/nco/CaminoSantiago/MapServer/1/query?where=sde.datos_nco.CST.id_camino%3D%27ES18a%27&outFields=sde.datos_nco.CST.id_etapa%2Csde.datos_nco.CST.nombre%2Csde.datos_nco.CST.longitud&outSR=4326&returnZ=false&returnM=false&f=geojson"
+    }
+  ]
+}

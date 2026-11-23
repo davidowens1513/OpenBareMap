@@ -1,0 +1,77 @@
+{
+  "bounds": [
+    -9.015507591666147,
+    41.050552917403905,
+    -8.422740323111684,
+    42.970481955037606
+  ],
+  "contextEnvelope": [
+    -9.015507591666147,
+    41.050552917403905,
+    -8.422740323111684,
+    42.970481955037606
+  ],
+  "drawPriority": 25,
+  "format": "openbaremap-garmin-render-footprint-v1",
+  "geometry": {
+    "bytes": 105740,
+    "path": "regions/camino-portugues/garmin/render-coverage.geojson",
+    "sha256": "241ebc88aa498775735e3cb4a46cf71bc86b1107bf7f2cdb99db92c6fb3c2692"
+  },
+  "inputs": [
+    {
+      "path": "regions/camino-portugues/coverage.geojson",
+      "purpose": "Exact regional footprint for drawing the native map background",
+      "sha256": "ac322adc5292eea6b34c488740aa711c07bfd516892b8d0d9058a3bee3eb572b"
+    }
+  ],
+  "knownDestinationsCovered": {
+    "a-guarda": [
+      -8.874,
+      41.902
+    ],
+    "caminha": [
+      -8.837,
+      41.877
+    ],
+    "padron": [
+      -8.66,
+      42.739
+    ],
+    "ponte-de-lima": [
+      -8.583,
+      41.768
+    ],
+    "pontevedra": [
+      -8.645,
+      42.432
+    ],
+    "porto": [
+      -8.611,
+      41.142
+    ],
+    "redondela": [
+      -8.609,
+      42.282
+    ],
+    "santiago": [
+      -8.5445,
+      42.8809
+    ],
+    "tui": [
+      -8.645,
+      42.046
+    ],
+    "viana-do-castelo": [
+      -8.832,
+      41.693
+    ],
+    "vigo": [
+      -8.723,
+      42.237
+    ]
+  },
+  "purpose": "Rectangular Garmin tiles may overlap other countries. Do not fill their padding with sea, land or land-cover polygons.",
+  "region": "camino-portugues",
+  "transparentNativeMap": true
+}

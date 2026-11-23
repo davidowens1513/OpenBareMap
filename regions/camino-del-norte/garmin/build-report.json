@@ -1,0 +1,159 @@
+{
+  "familyId": 4884,
+  "garminPackageRevision": "2.0.0-r1",
+  "inspection": {
+    "anchorLabels": {
+      "Bilbao": "Bilbao",
+      "Santander": "Santander",
+      "Santiago de Compostela": "Santiago de Compostela"
+    },
+    "bounds": [
+      -8.701257705688477,
+      42.7587890625,
+      -1.6259765625,
+      43.68172645568848
+    ],
+    "coastPolygonsByLevel": {
+      "0": {
+        "0x32": 24,
+        "0x54": 979
+      },
+      "1": {
+        "0x32": 21,
+        "0x54": 615
+      },
+      "2": {
+        "0x32": 21,
+        "0x54": 475
+      },
+      "3": {
+        "0x32": 21,
+        "0x54": 165
+      },
+      "4": {
+        "0x32": 21,
+        "0x54": 56
+      }
+    },
+    "contoursByLevel": {
+      "0": {
+        "0x20": 35285,
+        "0x22": 7732
+      },
+      "1": {
+        "0x20": 29721,
+        "0x22": 6469
+      },
+      "2": {
+        "0x22": 6153
+      },
+      "3": {
+        "0x10008": 5608
+      },
+      "4": {}
+    },
+    "lineInstancesAtHighestDetail": {
+      "0x1": 4022,
+      "0x10001": 5627,
+      "0x10002": 2531,
+      "0x10003": 13,
+      "0x10004": 2060,
+      "0x10005": 9874,
+      "0x10006": 875,
+      "0x1000a": 60,
+      "0x1000b": 7803,
+      "0x1000d": 62,
+      "0x14": 3705,
+      "0x16": 68745,
+      "0x18": 6865,
+      "0x1a": 22,
+      "0x1c": 1233,
+      "0x1e": 1202,
+      "0x1f": 1163,
+      "0x2": 3264,
+      "0x20": 35285,
+      "0x22": 7732,
+      "0x3": 3186,
+      "0x4": 3124,
+      "0x6": 69813,
+      "0x7": 48242,
+      "0xa": 37794
+    },
+    "logicalCombinedSHA256": "54b7608e948fd4457facaad31fafa79b90c66d7d57e4a019afe569e7d8512098",
+    "logicalHashNote": "Internal file names, sizes and payloads; only CommonHeader creation-date bytes 14..20 are zeroed for hashing. IMG archive headers are excluded. Output bytes are never modified.",
+    "logicalTileSHA256": {
+      "48840001.img": "70aa3b2982969b87f724cf65963d9a816b9d7459cd319b979f1b5a4e96a84d3b",
+      "48840002.img": "92d183c06a85aad02d93d5af940ce6f0b8517611da02b744c6f5994e3a17b0cb",
+      "48840003.img": "dbc3093fe20564fcb909e3c06f14ff3b8228fa422419a90fac1cdec868bb1dd9",
+      "48840004.img": "5ead11ed71b985e1ba93f4e3f64ad4c7b2a7d4e1f54dfe38df193fb71cd3556a",
+      "48840005.img": "3d86d3445da0c15c6166d6a875e51ddc0797d461f8868a8f9ac28e40847f5770",
+      "48840006.img": "4f61b62b73f5c05913de626c3c5f678e0efd8f76b119baa877fda6d1ff27e055",
+      "48840007.img": "0a1a98f3d001615d4c3414a31524e38f98db16e9874e102ff1bf0787c8c51530",
+      "48840008.img": "aa5668c5c57ff1340e7db94649c70cfd464244d25da53fe1445d1b17b739cd0f",
+      "48840009.img": "e8d8ed24fef7b03be27f66e3624c9bfba9e7000877a33f96afa831f80a1a8f8a",
+      "48840010.img": "cb7084ad9f07a0f8eee5d10a70c43bdb37cc1690ed01af68da1602b1f16e20d1",
+      "48840011.img": "f814d33b9bff539858720953c00beef7d47c47b6fa74b609f05bcee8f95ac01f",
+      "48840012.img": "9493251a0ad447975c9b2fa0d340321b704380f1fc0308a21116040a9d911e28",
+      "48840013.img": "4a56fb5f80d02e5b4ff30b91908cec23c5890eca4588ae5de7b60f9efdac5fa9",
+      "48840014.img": "58a8ea78dacfbf6b680c50d579612bd35862cf0743370f7cddba46a0de2c379d",
+      "48840015.img": "9d0407e6a552b5c9c854ae6e959d1e0b5cc1ca6b7f6addbcc7b0728d5de07f00",
+      "48840016.img": "6bf46f8169cd75001815a949c6afb2b685348e2e6c00b40d26018e27fc06cf9d",
+      "48840017.img": "0048745a44ce4e7c28c9e480a7e8748863fdcab8b7492faf3765d240f770d4f6",
+      "48840018.img": "f1b7fd9ddfd366da2219df5d8829fd3f0d3b6972bb5ff976113ba856ea0d8a49",
+      "48840019.img": "342c97cfbe61e503346e36806406977e0c98df226a35cf79b318021fad16c559"
+    },
+    "pointInstancesAtHighestDetail": {
+      "0x100": 9,
+      "0x10001": 497,
+      "0x10002": 1019,
+      "0x10003": 6595,
+      "0x10004": 400,
+      "0x10006": 50148,
+      "0x2f0b": 8806,
+      "0x600": 94,
+      "0x650c": 552,
+      "0x6603": 296,
+      "0x6615": 656,
+      "0x6616": 2553,
+      "0x800": 363,
+      "0xb00": 8099,
+      "0xc00": 17590
+    },
+    "polygonInstancesAtHighestDetail": {
+      "0x10101": 3195,
+      "0x10102": 28927,
+      "0x10103": 841,
+      "0x10104": 5026,
+      "0x10105": 598,
+      "0x10106": 79,
+      "0x10107": 11,
+      "0x10109": 1541,
+      "0x1010a": 150,
+      "0x1010b": 14,
+      "0x13": 234997,
+      "0x32": 24,
+      "0x3c": 2001,
+      "0x50": 23893,
+      "0x51": 777,
+      "0x54": 979
+    },
+    "routing": false,
+    "subfileBytes": {
+      "DEM": 33283644,
+      "LBL": 1811128,
+      "MPS": 1667,
+      "RGN": 36924681,
+      "SRT": 912,
+      "TRE": 449488,
+      "TYP": 3100
+    },
+    "tiles": 19
+  },
+  "output": {
+    "bytes": 72669184,
+    "path": "regions/camino-del-norte/garmin/dist/OpenBareMap-Camino-del-Norte.img",
+    "sha256": "8ce0cf7692fab3c6276d3a3c15eddbd4846fd64e5bdcb64a02efc32c0fc8a107"
+  },
+  "routing": false,
+  "status": "compiled and structurally inspected; hardware rendering pending"
+}

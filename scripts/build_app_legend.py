@@ -101,7 +101,7 @@ for i,(label,layer) in enumerate([('National boundary','administrative-boundarie
 if edition.get('coverageBoundary'):
  if edition.get('routeCorridor'):
   linerow(528,981,edition.get('routeOverlayLabel','Camino Francés'),route_overlay_id(edition))
- else:
+ elif 'park-boundary' in LAYERS:
   linerow(528,981,'National park','park-boundary')
  linerow(528,1017,edition.get('coverageBoundaryLabel','25 km coverage limit'),'coverage-boundary')
 heading(48,1065,'Points')

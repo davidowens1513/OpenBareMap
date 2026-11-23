@@ -1,0 +1,325 @@
+{
+  "coverage": "S\u00e3o Miguel, Pico, S\u00e3o Jorge and Faial in a single offline map.",
+  "coverageAnchors": {
+    "faial": {
+      "coordinate": [
+        -28.713,
+        38.582
+      ],
+      "featuresInNeighbouringDetailedTiles": 4164
+    },
+    "horta": {
+      "coordinate": [
+        -28.6264,
+        38.5347
+      ],
+      "featuresInNeighbouringDetailedTiles": 14602
+    },
+    "pico": {
+      "coordinate": [
+        -28.399,
+        38.469
+      ],
+      "featuresInNeighbouringDetailedTiles": 347
+    },
+    "ponta-delgada": {
+      "coordinate": [
+        -25.6687,
+        37.7401
+      ],
+      "featuresInNeighbouringDetailedTiles": 16909
+    },
+    "sao-jorge": {
+      "coordinate": [
+        -28.027,
+        38.645
+      ],
+      "featuresInNeighbouringDetailedTiles": 789
+    },
+    "sao-miguel": {
+      "coordinate": [
+        -25.493,
+        37.782
+      ],
+      "featuresInNeighbouringDetailedTiles": 855
+    }
+  },
+  "datasets": {
+    "basemap": {
+      "empty_tile_count": 694,
+      "logical_tiles_sha256": "f31f513d553d7f926d9c175d637a10fd311d0b2bf778308a1173b487bebfb679",
+      "tile_count": 1928
+    },
+    "grid": {
+      "empty_tile_count": 0,
+      "logical_tiles_sha256": "6c8d039a288d5ec30618a2004fd5a457e63e256b8a482700368ada0b3d09aebb",
+      "tile_count": 17553
+    },
+    "hillshade": {
+      "empty_tile_count": 0,
+      "logical_tiles_sha256": "22d08c76067d4b7a7c6a2e6ac8f0d5ae4f0b3255daf09a5e785d0418f0b5a61f",
+      "tile_count": 437
+    },
+    "topography": {
+      "empty_tile_count": 996,
+      "logical_tiles_sha256": "77b269d12b86d2998d6ece36458ab7191184d5171a4a8d8686f6223d085dcf3c",
+      "tile_count": 1961
+    }
+  },
+  "detail": {
+    "basemap": {
+      "boundaries": 7570,
+      "contours": 0
+    },
+    "topography": {
+      "boundaries": 0,
+      "contours": 27621
+    }
+  },
+  "garmin": {
+    "familyId": 4885,
+    "garminPackageRevision": "2.0.0-r1",
+    "inspection": {
+      "anchorLabels": {
+        "Horta": "Horta",
+        "Ponta Delgada": "Ponta Delgada"
+      },
+      "bounds": [
+        -29.003992080688477,
+        37.5732421875,
+        -25.048828125,
+        38.84774208068848
+      ],
+      "coastPolygonsByLevel": {
+        "0": {
+          "0x32": 10,
+          "0x54": 510
+        },
+        "1": {
+          "0x32": 6,
+          "0x54": 282
+        },
+        "2": {
+          "0x32": 5,
+          "0x54": 167
+        },
+        "3": {
+          "0x32": 5,
+          "0x54": 33
+        },
+        "4": {
+          "0x32": 5,
+          "0x54": 13
+        }
+      },
+      "contoursByLevel": {
+        "0": {
+          "0x20": 4088,
+          "0x22": 959
+        },
+        "1": {
+          "0x20": 3094,
+          "0x22": 717
+        },
+        "2": {
+          "0x22": 648
+        },
+        "3": {
+          "0x10008": 574
+        },
+        "4": {}
+      },
+      "lineInstancesAtHighestDetail": {
+        "0x10001": 535,
+        "0x10002": 164,
+        "0x10003": 1,
+        "0x10004": 29,
+        "0x10005": 508,
+        "0x10006": 284,
+        "0x1000a": 20,
+        "0x1000b": 539,
+        "0x16": 2979,
+        "0x18": 2324,
+        "0x1a": 17,
+        "0x1e": 454,
+        "0x1f": 2,
+        "0x2": 336,
+        "0x20": 4088,
+        "0x22": 959,
+        "0x3": 591,
+        "0x4": 501,
+        "0x6": 6324,
+        "0x7": 6041,
+        "0xa": 5634
+      },
+      "logicalCombinedSHA256": "b594bf5d387b0b3809c1b445b51942d59820bfb2670dd04b693018c8fb9b2dc3",
+      "logicalHashNote": "Internal file names, sizes and payloads; only CommonHeader creation-date bytes 14..20 are zeroed for hashing. IMG archive headers are excluded. Output bytes are never modified.",
+      "logicalTileSHA256": {
+        "48850001.img": "120dcb9d98c65943eb18648de53f5c1792f637751072c4578a9bd512b352c3f3",
+        "48850002.img": "3ef4c54ec34ad6c083cb964ed95dbd20814c526686d9840df0cd6a927654d53d",
+        "48850003.img": "cc241411c57692b4cdf6a2a88b45e3db7ce56b49a5896c45c36948dd5b35fa92",
+        "48850004.img": "8b91a7a0e184eb0995f6119409e842f6098abb958ecf3836f728b986927ee9e4",
+        "48850005.img": "2e9c78e9cc699f891cc19c2ca6bcb1fbf610b7d84316c50916859d989c30d2b8"
+      },
+      "pointInstancesAtHighestDetail": {
+        "0x100": 6,
+        "0x10001": 224,
+        "0x10002": 391,
+        "0x10003": 681,
+        "0x10006": 4119,
+        "0x2f0b": 1480,
+        "0x600": 16,
+        "0x650c": 210,
+        "0x6603": 57,
+        "0x6615": 2,
+        "0x6616": 176,
+        "0x800": 116,
+        "0xb00": 191,
+        "0xc00": 40
+      },
+      "polygonInstancesAtHighestDetail": {
+        "0x10101": 1454,
+        "0x10102": 5447,
+        "0x10103": 2206,
+        "0x10104": 6491,
+        "0x10105": 59,
+        "0x10106": 108,
+        "0x10107": 46,
+        "0x10109": 820,
+        "0x1010a": 78,
+        "0x1010b": 175,
+        "0x13": 68935,
+        "0x32": 10,
+        "0x3c": 1056,
+        "0x50": 6794,
+        "0x51": 391,
+        "0x54": 510
+      },
+      "routing": false,
+      "subfileBytes": {
+        "DEM": 2163649,
+        "LBL": 191987,
+        "MPS": 417,
+        "RGN": 6438466,
+        "SRT": 912,
+        "TRE": 101445,
+        "TYP": 3065
+      },
+      "tiles": 5
+    },
+    "output": {
+      "bytes": 8940544,
+      "path": "regions/azores/garmin/dist/OpenBareMap-Azores.img",
+      "sha256": "d631b0894ca53b9b91566040e632eadd1102b92a236946145c25c8b008647fed"
+    },
+    "routing": false,
+    "status": "compiled and structurally inspected; hardware rendering pending"
+  },
+  "geometryProcessing": {
+    "contours": 2709,
+    "grid": {
+      "grid_10km": 74,
+      "grid_1km": 722
+    },
+    "landcover": {
+      "empty_source_areas": [],
+      "features": 18613,
+      "retained": 1490,
+      "smoothed": 17123
+    }
+  },
+  "irelandGarminPackageRevision": "2.0.1-trail-detail-r1",
+  "irelandPreserved": true,
+  "islandLandBackground": {
+    "faial": {
+      "coordinate": [
+        -28.713,
+        38.582
+      ],
+      "verifiedZooms": [
+        10,
+        11,
+        12
+      ]
+    },
+    "pico": {
+      "coordinate": [
+        -28.399,
+        38.469
+      ],
+      "verifiedZooms": [
+        10,
+        11,
+        12
+      ]
+    },
+    "sao-jorge": {
+      "coordinate": [
+        -28.027,
+        38.645
+      ],
+      "verifiedZooms": [
+        10,
+        11,
+        12
+      ]
+    },
+    "sao-miguel": {
+      "coordinate": [
+        -25.493,
+        37.782
+      ],
+      "verifiedZooms": [
+        10,
+        11,
+        12
+      ]
+    }
+  },
+  "labelGlyphs": {
+    "Open Sans Bold": true,
+    "Open Sans Regular": true,
+    "Open Sans Semibold": true
+  },
+  "landBackground": {
+    "Pico": {
+      "coordinate": [
+        -28.399,
+        38.469
+      ],
+      "verifiedZooms": [
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    }
+  },
+  "packages": {
+    "android": {
+      "checkedFiles": 47,
+      "nativeDeviceRenderingTested": false,
+      "sourceFiles": {
+        "basemap": "maps/basemap.mbtiles",
+        "coast": "maps/coast.mbtiles",
+        "hillshade": "maps/hillshade.mbtiles",
+        "topography": "maps/topography.mbtiles",
+        "utm-grid": "maps/grid.mbtiles"
+      }
+    },
+    "ios": {
+      "checkedFiles": 50,
+      "nativeDeviceRenderingTested": false,
+      "sourceFiles": {
+        "basemap": "maps/basemap.mbtiles",
+        "coast": "maps/coast.mbtiles",
+        "hillshade": "maps/hillshade.mbtiles",
+        "topography": "maps/topography.mbtiles",
+        "utm-grid": "maps/grid.mbtiles"
+      }
+    }
+  },
+  "region": "azores",
+  "status": "automated checks passed; visual and hardware acceptance pending"
+}

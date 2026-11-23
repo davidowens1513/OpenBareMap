@@ -1,0 +1,41 @@
+{
+  "regions": {
+    "camino-del-norte": {
+      "basemap": {
+        "sourceSHA256": "749a6923b4e7e83fe9cdb6b806693b989ef6b3ce01c1599a5dd6261bbbb961ba",
+        "bytes": 132646636,
+        "sha256": "25a4b606b0e27b4514469f1b5c29cfb56b799a7a579062b02619afca78e35112",
+        "tiles": 5110
+      },
+      "grid": {
+        "sourceSHA256": "67f556ee68e7b7a74d1fda936e67bcc838f9389004ef043060b349ed1b26be47",
+        "bytes": 1873443,
+        "sha256": "d0c84f2821ede6ba3e2443c646b330b3fd51e601520f7451cf41753a4da888fe",
+        "tiles": 6318
+      },
+      "hillshade": {
+        "sourceSHA256": "0f949f6c0ae652854ec3eeb6f46e3a6bd3fa13e06413f8ede827bcb3c3cc8dc1",
+        "bytes": 13860178,
+        "sha256": "96abce9f6e3757c2aa698d606dce76b90c6bf05c4e6825944fb153f436672a2c",
+        "tiles": 570
+      },
+      "topography": {
+        "sourceSHA256": "c952c93e7639357b19187dd89f1b73417ed57024e615f092f661bfa8903f2b11",
+        "bytes": 52986824,
+        "sha256": "9fb45da394f7246976919c1b5d4bf2c318154a81f0f2884036841f06bea4b73f",
+        "tiles": 96940
+      },
+      "coast": {
+        "sourceSHA256": "7b16c13805865f182f18649ee5b2d37dfe479215e3edb0dc8d8d4bca9213dea8",
+        "bytes": 851002,
+        "sha256": "9658494d62eaea5b47a8cab76f515b86fc4acbab3fd4a001943c856516d4c6e3",
+        "tiles": 6244
+      }
+    }
+  },
+  "pmtilesPython": "3.8.1",
+  "pmtilesJS": "4.5.0",
+  "librarySHA256": "caf981bc46f6327ee7e65d5dc964d89d38a69f60edca2bd4c5c890c21b554c6c",
+  "dataOrigin": "https://downloads.appsbyonzy.dev/OpenBareMap/camino-del-norte/2.0.0/preview",
+  "scope": "Complete selected map tiles; no regional or zoom sampling."
+}

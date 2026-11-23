@@ -142,6 +142,41 @@ python3 scripts/stage_european_walks.py --website /path/to/AppsByOnzy-Website/si
 Publish the R2 assets and verify byte-range access before deploying the Pages
 archive or promoting the app and preview catalogues.
 
+### Camino Portugués, Camino del Norte and Azores
+
+| Edition | Coverage | Garmin family |
+| --- | --- | --- |
+| Camino Portugués | Porto to Santiago de Compostela on the Central and Coastal routes, with 10 km on either side of both alignments | 4883 |
+| Camino del Norte | Irún to Arzúa, then the shared Camino Francés approach to Santiago, with 10 km on either side | 4884 |
+| Azores | São Miguel, Pico, São Jorge and Faial in one download | 4885 |
+
+The two Caminos use Open Pilgrimages 1.13.0 alignments. The Portuguese
+Coastal route uses IGN and FEAACS stages in Galicia and joins the Central
+route near Redondela. The walking overlay breaks at the Minho crossing
+near Caminha while the map coverage is continuous. The Northern route
+uses the accepted Camino Francés geometry between Arzúa and Santiago.
+Each edition records its route and footprint checksums in
+`boundary-source.json`.
+
+The Azores uses the dedicated Geofabrik extract and PTRA08 / UTM 26N.
+The coverage footprint keeps the surrounding seas between the four islands
+and limits detailed mapping to the chosen group. The three editions use
+22 November 2026 OSM snapshots, Copernicus GLO-30 and 20 m contours.
+
+```sh
+export PYTHONPATH=work/python
+python3 scripts/prepare_iberian_caminos.py
+for edition in camino-portugues camino-del-norte azores; do
+  output="work/$edition-release"
+  python3 scripts/run_full_region.py --region "$edition" || exit
+  python3 scripts/build_app_distribution.py --regions "$edition" \
+    --output "$output/kits" --catalog "$output/catalog.json" || exit
+  python3 scripts/build_web_previews.py --regions "$edition" --output "$output/preview" \
+    --origin "https://downloads.appsbyonzy.dev/OpenBareMap/$edition/2.0.0/preview" || exit
+done
+python3 scripts/stage_iberian_caminos_azores.py --website /path/to/AppsByOnzy-Website/site/index.html
+```
+
 ## Nepal trekking
 
 The Nepal maps use a shared 22 November 2026 Geofabrik OpenStreetMap extract,

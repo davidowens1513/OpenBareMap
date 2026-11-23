@@ -1,0 +1,43 @@
+{
+  "accessed_utc": "2026-11-23T19:09:54.935070+00:00",
+  "inputs": [
+    {
+      "bytes": 1505159448,
+      "path": "data/regions/camino-del-norte/spain-261122.osm.pbf",
+      "replicationTimestamp": "2026-11-22T21:20:48Z",
+      "sha256": "bdc7c29cc5d68aece6813089292837ad4b07f4911b4f547e012991b9197130eb",
+      "url": "https://download.geofabrik.de/europe/spain/spain-261122.osm.pbf"
+    },
+    {
+      "bytes": 297294550,
+      "path": "data/regions/camino-del-norte/aquitaine-261122.osm.pbf",
+      "replicationTimestamp": "2026-11-22T21:20:48Z",
+      "sha256": "49123c4ba1bf1a73becb7b150ec165d423e1022eae7ff4e7683f3414aaf6093f",
+      "url": "https://download.geofabrik.de/europe/france/aquitaine/aquitaine-261122.osm.pbf"
+    }
+  ],
+  "osm": {
+    "bytes": 108583378,
+    "footprintSHA256": "aeaf0678a83a9d211f562fc2d70664087177a2aff5c14d3b964625c88a858528",
+    "operation": "Complete-feature footprint extraction followed by libosmium merge",
+    "path": "data/regions/camino-del-norte/camino-del-norte-261122.osm.pbf",
+    "replicationTimestamp": "2026-11-22T21:20:48Z",
+    "sha256": "3881234e78b09504ab0855a331fcd6c1bff9c78d2a9ae9f91317cc5f407c3037",
+    "snapshot_date": "2026-11-22",
+    "url": null
+  },
+  "polygons": [
+    {
+      "bytes": 23458,
+      "path": "data/regions/camino-del-norte/spain.poly",
+      "sha256": "c7040aa69901fadcfb8edd65d9e23649063e408927fa46d78c39b3f0e306a58e",
+      "url": "https://download.geofabrik.de/europe/spain/spain.poly"
+    },
+    {
+      "bytes": 22820,
+      "path": "data/regions/camino-del-norte/aquitaine.poly",
+      "sha256": "57095926b499121231a20a2355a30b7a607be011251b882f94b435c36b790285",
+      "url": "https://download.geofabrik.de/europe/france/aquitaine/aquitaine.poly"
+    }
+  ]
+}

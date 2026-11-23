@@ -1,0 +1,20 @@
+{
+  "inputs": [
+    {
+      "path": "regions/azores/garmin/inputs/contours.geojson.gz",
+      "sha256": "09074350ef179c2746055745a4fe1b7abb48d9f0d71a08816661ce43d9a55375",
+      "uncompressedSHA256": "36703583a716aded1f21180fe75383d622482f6addd9c2805922cefd916e6574"
+    },
+    {
+      "path": "regions/azores/garmin/inputs/landcover.geojson.gz",
+      "sha256": "2439c380cd9c0ca41df207ada87a1c25dfe829d271d5eecb43511a40d6e4d316",
+      "uncompressedSHA256": "88fd0c275a42c9f03e1ec3935159296336f7fceecb56c5193f795863632ab47a"
+    },
+    {
+      "path": "regions/azores/garmin/inputs/land.geojson.gz",
+      "sha256": "74990442a223ac55d729da7b322996e4e9a4a81cf2f576ed14278856bec51052",
+      "uncompressedSHA256": "cedb75ab6fed57f89ec1eab15083ad644c49ca60e19adba0157381bdca92c552"
+    }
+  ],
+  "region": "azores"
+}

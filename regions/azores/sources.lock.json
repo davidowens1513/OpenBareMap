@@ -1,0 +1,30 @@
+{
+  "accessed_utc": "2026-11-23T19:02:30.544607+00:00",
+  "inputs": [
+    {
+      "bytes": 17981750,
+      "path": "data/regions/azores/azores-261122.osm.pbf",
+      "replicationTimestamp": "2026-11-22T21:20:48Z",
+      "sha256": "59b593f680cc7cc783449cecdf1945a00cb417cbe70c5fb9d67f30af451a78b0",
+      "url": "https://download.geofabrik.de/europe/azores/azores-261122.osm.pbf"
+    }
+  ],
+  "osm": {
+    "bytes": 12601962,
+    "footprintSHA256": "1c05ea50649fe32a16c47e0f55a3dc7ccb7a462d7ef1128e474ae95f37a8f5c2",
+    "operation": "Complete-feature footprint extraction",
+    "path": "data/regions/azores/azores-261122.osm.clipped.osm.pbf",
+    "replicationTimestamp": "2026-11-22T21:20:48Z",
+    "sha256": "f566faa7ccec9a5c93be2a838ca70c627e954dbafe9d44583f830429abc46167",
+    "snapshot_date": "2026-11-22",
+    "url": "https://download.geofabrik.de/europe/azores/azores-261122.osm.pbf"
+  },
+  "polygons": [
+    {
+      "bytes": 175,
+      "path": "data/regions/azores/azores.poly",
+      "sha256": "a0c91dea4656d5ce8c0561aac9c2a16a3f4f32d831b92c8b83b66cf71b98a16a",
+      "url": "https://download.geofabrik.de/europe/azores/azores.poly"
+    }
+  ]
+}

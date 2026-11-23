@@ -1,0 +1,31 @@
+{
+  "areaSquareDegrees": 2.650200000000008,
+  "bounds": [
+    -28.97,
+    37.61,
+    -25.06,
+    38.84
+  ],
+  "entireRequestedFootprintCovered": true,
+  "exactFootprint": "regions/azores/coverage.geojson",
+  "inputs": [
+    {
+      "bytes": 175,
+      "path": "data/regions/azores/azores.poly",
+      "sha256": "a0c91dea4656d5ce8c0561aac9c2a16a3f4f32d831b92c8b83b66cf71b98a16a",
+      "url": "https://download.geofabrik.de/europe/azores/azores.poly"
+    }
+  ],
+  "knownDestinationsCovered": [
+    "faial",
+    "horta",
+    "island",
+    "pico",
+    "ponta-delgada",
+    "sao-jorge",
+    "sao-miguel"
+  ],
+  "operation": "Convex tile-selection envelope around the full regional footprint; the exact outline is retained as a map overlay",
+  "polygons": 1,
+  "sha256": "185b0e791167e8490d3542e441066d025f31a9c64b477ae73177eb00d83eef0e"
+}

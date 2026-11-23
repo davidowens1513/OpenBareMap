@@ -1,0 +1,35 @@
+{
+  "bytes": 132968018,
+  "datasets": {
+    "basemap": {
+      "path": "maps/basemap.mbtiles",
+      "sha256": "218462057b8e2da8f076d6a7e9427d9805451f08359a449529ee49e4d1a9ff71"
+    },
+    "coast": {
+      "derived_from": "cfd6f0e7ab700a1ee28bb10a26e0c67d8c0de3647c88a5c23be1d0ad053bec8d",
+      "maxzoom": 12,
+      "operation": "Preserve land-layer MVT bytes only through zoom 12; omit other layers.",
+      "path": "maps/coast.mbtiles",
+      "sha256": "87a909df82c54f0649bde70eac36955ac8ebf4384b838506ec7dc5db762fbf52"
+    },
+    "grid": {
+      "path": "maps/grid.mbtiles",
+      "sha256": "8e854eae704c2b15adc8114a605b1f797ccf854ef852e4614e3241da3930abb3"
+    },
+    "hillshade": {
+      "path": "maps/hillshade.mbtiles",
+      "sha256": "49dc02a72588d4948e1b0e9a0783b8d0cb6cf34551d51256b63b45d37ac4c94f"
+    },
+    "topography": {
+      "path": "maps/topography.mbtiles",
+      "sha256": "cfd6f0e7ab700a1ee28bb10a26e0c67d8c0de3647c88a5c23be1d0ad053bec8d"
+    }
+  },
+  "instructionsSHA256": "d2a59ac5f270fc59e41fecb169fa0aaa69c3f988f9f3a5533eba7e7d07120eac",
+  "instructionsURL": "https://downloads.appsbyonzy.dev/OpenBareMap/camino-portugues/2.0.0/app-bundles-v1/ios/instructions.txt",
+  "localPath": "releases/camino-portugues/2.0.0/app-bundles-v1/ios/OpenBareMap-Camino-Portugues-iOS-Bundle.zip",
+  "mapManifestSHA256": "3ff7c2d70578721d63c58ab1ef4564fd007b4fcbb8d0672955ad35cafa687b79",
+  "r2Key": "OpenBareMap/camino-portugues/2.0.0/app-bundles-v1/ios/OpenBareMap-Camino-Portugues-iOS-Bundle.zip",
+  "sha256": "acea28217d532db3cef22921898239934484834a0fe5be3ccd1a72d2756c0e0d",
+  "url": "https://downloads.appsbyonzy.dev/OpenBareMap/camino-portugues/2.0.0/app-bundles-v1/ios/OpenBareMap-Camino-Portugues-iOS-Bundle.zip"
+}

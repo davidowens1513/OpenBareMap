@@ -5,7 +5,7 @@ import json
 import subprocess
 import sys
 from openbaremap import ROOT,digest
-from regions import NEPAL_REGIONS, REGIONS, profile, region_path
+from regions import NEPAL_REGIONS, REGIONS, profile, region_path, clips_to_coverage
 
 def run(*args):subprocess.run([sys.executable,*map(str,args)],cwd=ROOT,check=True)
 
@@ -26,8 +26,8 @@ def main(region):
         topography = json.loads((top/'build.json').read_text())
         if not topography['status'].startswith('built and structurally validated'):
             raise ValueError('Topography stage is incomplete; inspect its build record before resuming')
-        if profile(region).get('routeCorridor') and topography.get('terrainCutlineSHA256') != digest(region_path(region,'coverage.geojson')):
-            raise ValueError('Topography was built for a different walking corridor')
+        if clips_to_coverage(profile(region)) and topography.get('terrainCutlineSHA256') != digest(region_path(region,'coverage.geojson')):
+            raise ValueError('Topography was built for a different coverage footprint')
         for name,item in topography['outputs'].items():
             if digest(top/name)!=item['sha256']:raise ValueError('Topography checkpoint changed: '+name)
         for stage in ('basemap','geometry','finish'):run('scripts/build_region.py','--region',region,'--stage',stage)

@@ -1,0 +1,77 @@
+{
+  "bounds": [
+    -8.66653703222943,
+    42.79114659178511,
+    -1.6659971991497442,
+    43.665647902586656
+  ],
+  "contextEnvelope": [
+    -8.66653703222943,
+    42.79114659178511,
+    -1.6659971991497442,
+    43.665647902586656
+  ],
+  "drawPriority": 25,
+  "format": "openbaremap-garmin-render-footprint-v1",
+  "geometry": {
+    "bytes": 220051,
+    "path": "regions/camino-del-norte/garmin/render-coverage.geojson",
+    "sha256": "0baba2e3e7f525ea337d83e80add438c44a52bdc7cb45bb4131ff96094b202df"
+  },
+  "inputs": [
+    {
+      "path": "regions/camino-del-norte/coverage.geojson",
+      "purpose": "Exact regional footprint for drawing the native map background",
+      "sha256": "aeaf0678a83a9d211f562fc2d70664087177a2aff5c14d3b964625c88a858528"
+    }
+  ],
+  "knownDestinationsCovered": {
+    "arzua": [
+      -8.1605,
+      42.9273
+    ],
+    "aviles": [
+      -5.922,
+      43.556
+    ],
+    "bilbao": [
+      -2.923,
+      43.257
+    ],
+    "gijon": [
+      -5.662,
+      43.542
+    ],
+    "irun": [
+      -1.789,
+      43.339
+    ],
+    "llanes": [
+      -4.754,
+      43.42
+    ],
+    "ribadeo": [
+      -7.042,
+      43.536
+    ],
+    "san-sebastian": [
+      -1.984,
+      43.321
+    ],
+    "santander": [
+      -3.807,
+      43.461
+    ],
+    "santiago": [
+      -8.5445,
+      42.8809
+    ],
+    "villalba": [
+      -7.681,
+      43.299
+    ]
+  },
+  "purpose": "Rectangular Garmin tiles may overlap other countries. Do not fill their padding with sea, land or land-cover polygons.",
+  "region": "camino-del-norte",
+  "transparentNativeMap": true
+}

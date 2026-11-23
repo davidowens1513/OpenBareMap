@@ -9,7 +9,7 @@ import sqlite3
 import subprocess
 import sys
 from openbaremap import ROOT, digest, inspect_tiles, write
-from regions import REGIONS, profile, region_path, region_style, expected_basemap_layers
+from regions import REGIONS, profile, region_path, region_style, expected_basemap_layers, clips_to_coverage
 from build_cartography_2 import rebuild, layers, encode
 from build_region_geometry import build as geometry_build
 import optimize_storage as opt
@@ -84,7 +84,7 @@ def finish(region, reuse_geometry=False):
     replacements['basemap']=rebuild(base/'basemap.mbtiles',final/'basemap-smoothed.mbtiles',final/'geometry.mbtiles','landcover')
     storage_revision = p['mapVersion']+'-'+region+'-r1'
     corridor_filter=None
-    if p.get('routeCorridor'):
+    if clips_to_coverage(p):
         from math import atan, degrees, pi, sinh
         from shapely.geometry import box, shape
         from shapely.prepared import prep

@@ -61,16 +61,34 @@
       "url": "https://downloads.appsbyonzy.dev/Garmin/amalfi-bay-of-naples/2.0.1-trail-detail-r1/OpenBareMap-Amalfi-Bay-of-Naples.img"
     },
     {
+      "path": "regions/azores/garmin/dist/OpenBareMap-Azores.img",
+      "bytes": 8940544,
+      "sha256": "d631b0894ca53b9b91566040e632eadd1102b92a236946145c25c8b008647fed",
+      "url": "https://downloads.appsbyonzy.dev/Garmin/azores/2.0.0-r1/OpenBareMap-Azores.img"
+    },
+    {
       "bytes": 23934976,
       "path": "regions/balearic-islands/garmin/dist/OpenBareMap-Balearic-Islands.img",
       "sha256": "3022969fca63b99153e242a419fde7968652b647ba5a06de2959f91b52294f51",
       "url": "https://downloads.appsbyonzy.dev/Garmin/OpenBareMap-Balearic-Islands.img"
     },
     {
+      "path": "regions/camino-del-norte/garmin/dist/OpenBareMap-Camino-del-Norte.img",
+      "bytes": 72669184,
+      "sha256": "8ce0cf7692fab3c6276d3a3c15eddbd4846fd64e5bdcb64a02efc32c0fc8a107",
+      "url": "https://downloads.appsbyonzy.dev/Garmin/camino-del-norte/2.0.0-r1/OpenBareMap-Camino-del-Norte.img"
+    },
+    {
       "bytes": 80969728,
       "path": "regions/camino-frances/garmin/dist/OpenBareMap-Camino-Frances.img",
       "sha256": "b46b5780fff5c35ad0fadce409cf99b626e8d42d3f8f1483df61b7d3c8024256",
       "url": "https://downloads.appsbyonzy.dev/Garmin/camino-frances/2.0.1-trail-detail-r1/OpenBareMap-Camino-Frances.img"
+    },
+    {
+      "path": "regions/camino-portugues/garmin/dist/OpenBareMap-Camino-Portugues.img",
+      "bytes": 32069632,
+      "sha256": "b1a5844f872a931ecebabf96be39ab738742cd88aa0b96d590a98948bd9b58d2",
+      "url": "https://downloads.appsbyonzy.dev/Garmin/camino-portugues/2.0.0-r1/OpenBareMap-Camino-Portugues.img"
     },
     {
       "bytes": 92368896,
@@ -157,8 +175,8 @@
       "url": "https://downloads.appsbyonzy.dev/Garmin/fiordland/2.0.1-glacier-r1/OpenBareMap-Fiordland.img"
     },
     {
-      "path": "regions/high-atlas-toubkal/garmin/dist/OpenBareMap-High-Atlas-Toubkal.img",
       "bytes": 11540480,
+      "path": "regions/high-atlas-toubkal/garmin/dist/OpenBareMap-High-Atlas-Toubkal.img",
       "sha256": "a1b03502a578d594cb1c17916edd249ed72697b860236c66ebd55d403ee10f18",
       "url": "https://downloads.appsbyonzy.dev/Garmin/high-atlas-toubkal/2.0.1-trail-detail-r1/OpenBareMap-High-Atlas-Toubkal.img"
     },
@@ -187,8 +205,8 @@
       "url": "https://downloads.appsbyonzy.dev/Garmin/kilimanjaro/2.0.1-glacier-r1/OpenBareMap-Kilimanjaro.img"
     },
     {
-      "path": "regions/lycian-way/garmin/dist/OpenBareMap-Lycian-Way.img",
       "bytes": 19767296,
+      "path": "regions/lycian-way/garmin/dist/OpenBareMap-Lycian-Way.img",
       "sha256": "0072e234913be4d0f7894d4835e95ffeb6504915245766bb88ac0e0a6dbbce1e",
       "url": "https://downloads.appsbyonzy.dev/Garmin/lycian-way/2.0.1-trail-detail-r1/OpenBareMap-Lycian-Way.img"
     },
@@ -289,8 +307,8 @@
       "url": "https://downloads.appsbyonzy.dev/Garmin/OpenBareMap-Pyrenees.img?v=2.0.1-trail-detail-r1"
     },
     {
-      "path": "regions/rota-vicentina/garmin/dist/OpenBareMap-Rota-Vicentina.img",
       "bytes": 10443776,
+      "path": "regions/rota-vicentina/garmin/dist/OpenBareMap-Rota-Vicentina.img",
       "sha256": "c25714a2265f862de74c9f42ab07662850a9106f6a72a94145c570d08897b500",
       "url": "https://downloads.appsbyonzy.dev/Garmin/rota-vicentina/2.0.1-trail-detail-r1/OpenBareMap-Rota-Vicentina.img"
     },
@@ -511,6 +529,18 @@
       "url": "https://downloads.appsbyonzy.dev/OpenBareMap/amalfi-bay-of-naples/2.0.0/app-bundles-v1/ios/OpenBareMap-Amalfi-Bay-of-Naples-iOS-Bundle.zip"
     },
     {
+      "path": "releases/azores/2.0.0/app-bundles-v1/android/OpenBareMap-Azores-Android-Bundle.zip",
+      "bytes": 42329181,
+      "sha256": "63b51ac29d67f5e1815bd26ced6cd8dcd542e8c4aba04e62c1f82acd4a7d70e9",
+      "url": "https://downloads.appsbyonzy.dev/OpenBareMap/azores/2.0.0/app-bundles-v1/android/OpenBareMap-Azores-Android-Bundle.zip"
+    },
+    {
+      "path": "releases/azores/2.0.0/app-bundles-v1/ios/OpenBareMap-Azores-iOS-Bundle.zip",
+      "bytes": 42330854,
+      "sha256": "af3e8789fc6a334ea008698f0d30b2459704307e1ca06fafa3a8033d83836b55",
+      "url": "https://downloads.appsbyonzy.dev/OpenBareMap/azores/2.0.0/app-bundles-v1/ios/OpenBareMap-Azores-iOS-Bundle.zip"
+    },
+    {
       "bytes": 101855589,
       "path": "releases/balearic-islands/2.0.0/app-bundles-v1/android/OpenBareMap-Balearic-Islands-Android-Bundle.zip",
       "sha256": "4e126f59e9c705eeb1cc1025cd0f3fa72b84eb78f79fe8ec950cb6f9cd81d13e",
@@ -523,6 +553,18 @@
       "url": "https://downloads.appsbyonzy.dev/OpenBareMap/balearic-islands/2.0.0/app-bundles-v1/ios/OpenBareMap-Balearic-Islands-iOS-Bundle.zip"
     },
     {
+      "path": "releases/camino-del-norte/2.0.0/app-bundles-v1/android/OpenBareMap-Camino-del-Norte-Android-Bundle.zip",
+      "bytes": 222801704,
+      "sha256": "f092e7fb4324c5dcf48771c1b995ce635fdc02998a313bf7eff1827ecf768663",
+      "url": "https://downloads.appsbyonzy.dev/OpenBareMap/camino-del-norte/2.0.0/app-bundles-v1/android/OpenBareMap-Camino-del-Norte-Android-Bundle.zip"
+    },
+    {
+      "path": "releases/camino-del-norte/2.0.0/app-bundles-v1/ios/OpenBareMap-Camino-del-Norte-iOS-Bundle.zip",
+      "bytes": 222803755,
+      "sha256": "f5950c0d0fe22faaa7a81964620514ddf91690408502b8b37205aca785698725",
+      "url": "https://downloads.appsbyonzy.dev/OpenBareMap/camino-del-norte/2.0.0/app-bundles-v1/ios/OpenBareMap-Camino-del-Norte-iOS-Bundle.zip"
+    },
+    {
       "bytes": 193878110,
       "path": "releases/camino-frances/2.0.0/app-bundles-v1/android/OpenBareMap-Camino-Frances-Android-Bundle.zip",
       "sha256": "f6de666b03d35afffbc5abfc4edc9bfeb72c1a8adebe5c6d7d414a85257ed2f7",
@@ -533,6 +575,18 @@
       "path": "releases/camino-frances/2.0.0/app-bundles-v1/ios/OpenBareMap-Camino-Frances-iOS-Bundle.zip",
       "sha256": "a3d182ee67de0e5d0224efd82daea64cb802460add5097bbbd86695c0943dcbc",
       "url": "https://downloads.appsbyonzy.dev/OpenBareMap/camino-frances/2.0.0/app-bundles-v1/ios/OpenBareMap-Camino-Frances-iOS-Bundle.zip"
+    },
+    {
+      "path": "releases/camino-portugues/2.0.0/app-bundles-v1/android/OpenBareMap-Camino-Portugues-Android-Bundle.zip",
+      "bytes": 132965971,
+      "sha256": "34633bdf2838938befdb9a67e72ede72e146483bf498f325e62ccf8fe4ee773a",
+      "url": "https://downloads.appsbyonzy.dev/OpenBareMap/camino-portugues/2.0.0/app-bundles-v1/android/OpenBareMap-Camino-Portugues-Android-Bundle.zip"
+    },
+    {
+      "path": "releases/camino-portugues/2.0.0/app-bundles-v1/ios/OpenBareMap-Camino-Portugues-iOS-Bundle.zip",
+      "bytes": 132968018,
+      "sha256": "acea28217d532db3cef22921898239934484834a0fe5be3ccd1a72d2756c0e0d",
+      "url": "https://downloads.appsbyonzy.dev/OpenBareMap/camino-portugues/2.0.0/app-bundles-v1/ios/OpenBareMap-Camino-Portugues-iOS-Bundle.zip"
     },
     {
       "bytes": 521558109,
@@ -691,14 +745,14 @@
       "url": "https://downloads.appsbyonzy.dev/OpenBareMap/fiordland/2.0.0/app-bundles-v1/ios/OpenBareMap-Fiordland-iOS-Bundle.zip"
     },
     {
-      "path": "releases/high-atlas-toubkal/2.0.0/app-bundles-v1/android/OpenBareMap-High-Atlas-Toubkal-Android-Bundle.zip",
       "bytes": 49742899,
+      "path": "releases/high-atlas-toubkal/2.0.0/app-bundles-v1/android/OpenBareMap-High-Atlas-Toubkal-Android-Bundle.zip",
       "sha256": "aff10befb20fa87a61e2de90fbca1199588bf886978db13d262a1229fa347ac4",
       "url": "https://downloads.appsbyonzy.dev/OpenBareMap/high-atlas-toubkal/2.0.0/app-bundles-v1/android/OpenBareMap-High-Atlas-Toubkal-Android-Bundle.zip"
     },
     {
-      "path": "releases/high-atlas-toubkal/2.0.0/app-bundles-v1/ios/OpenBareMap-High-Atlas-Toubkal-iOS-Bundle.zip",
       "bytes": 49743329,
+      "path": "releases/high-atlas-toubkal/2.0.0/app-bundles-v1/ios/OpenBareMap-High-Atlas-Toubkal-iOS-Bundle.zip",
       "sha256": "a820c06cb16516b8fb029b0c2291f35f61448216e3beddf7b5e16639cb350f3e",
       "url": "https://downloads.appsbyonzy.dev/OpenBareMap/high-atlas-toubkal/2.0.0/app-bundles-v1/ios/OpenBareMap-High-Atlas-Toubkal-iOS-Bundle.zip"
     },
@@ -751,14 +805,14 @@
       "url": "https://downloads.appsbyonzy.dev/OpenBareMap/kilimanjaro/2.0.0/app-bundles-v1/ios/OpenBareMap-Kilimanjaro-iOS-Bundle.zip"
     },
     {
-      "path": "releases/lycian-way/2.0.0/app-bundles-v1/android/OpenBareMap-Lycian-Way-Android-Bundle.zip",
       "bytes": 64505002,
+      "path": "releases/lycian-way/2.0.0/app-bundles-v1/android/OpenBareMap-Lycian-Way-Android-Bundle.zip",
       "sha256": "660db9f27fb359e97a3e18e042a0001c9199e36ccd37aa800ac77490a1e12da7",
       "url": "https://downloads.appsbyonzy.dev/OpenBareMap/lycian-way/2.0.0/app-bundles-v1/android/OpenBareMap-Lycian-Way-Android-Bundle.zip"
     },
     {
-      "path": "releases/lycian-way/2.0.0/app-bundles-v1/ios/OpenBareMap-Lycian-Way-iOS-Bundle.zip",
       "bytes": 64507035,
+      "path": "releases/lycian-way/2.0.0/app-bundles-v1/ios/OpenBareMap-Lycian-Way-iOS-Bundle.zip",
       "sha256": "5ba1d21640f1dc01e8b9710c271471462375b3f501a27b2a68eb56c195909e49",
       "url": "https://downloads.appsbyonzy.dev/OpenBareMap/lycian-way/2.0.0/app-bundles-v1/ios/OpenBareMap-Lycian-Way-iOS-Bundle.zip"
     },
@@ -955,14 +1009,14 @@
       "url": "https://downloads.appsbyonzy.dev/OpenBareMap/pyrenees/2.0.2/app-bundles-v1/ios/OpenBareMap-Pyrenees-iOS-Bundle.zip"
     },
     {
-      "path": "releases/rota-vicentina/2.0.0/app-bundles-v1/android/OpenBareMap-Rota-Vicentina-Android-Bundle.zip",
       "bytes": 42476421,
+      "path": "releases/rota-vicentina/2.0.0/app-bundles-v1/android/OpenBareMap-Rota-Vicentina-Android-Bundle.zip",
       "sha256": "59d2d5e82f1d6d51acd50f228461d11d25d24ea21720823041a6b9b7c7a2cbbc",
       "url": "https://downloads.appsbyonzy.dev/OpenBareMap/rota-vicentina/2.0.0/app-bundles-v1/android/OpenBareMap-Rota-Vicentina-Android-Bundle.zip"
     },
     {
-      "path": "releases/rota-vicentina/2.0.0/app-bundles-v1/ios/OpenBareMap-Rota-Vicentina-iOS-Bundle.zip",
       "bytes": 42478436,
+      "path": "releases/rota-vicentina/2.0.0/app-bundles-v1/ios/OpenBareMap-Rota-Vicentina-iOS-Bundle.zip",
       "sha256": "fdde51c4a29cefe24911a810fe4aa7fe32d6a9fa9cef75e48afc380951340aa8",
       "url": "https://downloads.appsbyonzy.dev/OpenBareMap/rota-vicentina/2.0.0/app-bundles-v1/ios/OpenBareMap-Rota-Vicentina-iOS-Bundle.zip"
     },

@@ -1,0 +1,204 @@
+{
+  "accessed_utc": "2026-11-23T19:04:07.358659+00:00",
+  "assets": [
+    {
+      "bytes": 25239,
+      "operation": "Zero ocean cell: no tile in the pinned official GLO-30 public inventory",
+      "path": "data/regions/camino-portugues/elevation/N41W010.hgt.gz",
+      "sha256": "ef878716b82ba575fc448ca49fae2f720981192a09f3cb94ba95a759e62e0767",
+      "url": null
+    },
+    {
+      "bytes": 10663484,
+      "operation": "Bilinear resampling of Copernicus GLO-30 to point-aligned Int16 HGT, EGM2008 heights",
+      "path": "data/regions/camino-portugues/elevation/N41W009.hgt.gz",
+      "sha256": "2f89a7c31ab3b127af6e39edaaf82a75132bd5774fd269898664d296ce39e90f",
+      "url": null
+    },
+    {
+      "bytes": 753851,
+      "operation": "Bilinear resampling of Copernicus GLO-30 to point-aligned Int16 HGT, EGM2008 heights",
+      "path": "data/regions/camino-portugues/elevation/N42W010.hgt.gz",
+      "sha256": "07cf55874a6b787bbad4080c5cc34f4302f72aa552f65f92b239a6a562ee32a6",
+      "url": null
+    },
+    {
+      "bytes": 11716535,
+      "operation": "Bilinear resampling of Copernicus GLO-30 to point-aligned Int16 HGT, EGM2008 heights",
+      "path": "data/regions/camino-portugues/elevation/N42W009.hgt.gz",
+      "sha256": "3435702ed287b37b4544091ed359191a10d629227385f64d28b9d53a820ea14e",
+      "url": null
+    }
+  ],
+  "commands": [
+    [
+      "/Applications/QGIS.app/Contents/MacOS/gdalbuildvrt",
+      "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-Copernicus-kt2ww846/source.vrt",
+      "/Volumes/Extreme SSD/Projects/OpenBareMap/data/regions/camino-portugues/copernicus/Copernicus_DSM_COG_10_N41_00_W009_00_DEM.tif",
+      "/Volumes/Extreme SSD/Projects/OpenBareMap/data/regions/camino-portugues/copernicus/Copernicus_DSM_COG_10_N42_00_W010_00_DEM.tif",
+      "/Volumes/Extreme SSD/Projects/OpenBareMap/data/regions/camino-portugues/copernicus/Copernicus_DSM_COG_10_N42_00_W009_00_DEM.tif"
+    ],
+    [
+      "/Applications/QGIS.app/Contents/MacOS/gdalwarp",
+      "-q",
+      "-overwrite",
+      "-of",
+      "GTiff",
+      "-ot",
+      "Int16",
+      "-t_srs",
+      "EPSG:4326",
+      "-te",
+      "-9.00013888888889",
+      "40.99986111111111",
+      "-7.9998611111111115",
+      "42.00013888888889",
+      "-ts",
+      "3601",
+      "3601",
+      "-r",
+      "bilinear",
+      "-dstnodata",
+      "0",
+      "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-Copernicus-kt2ww846/source.vrt",
+      "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-Copernicus-kt2ww846/N41W009.hgt.tif"
+    ],
+    [
+      "/Applications/QGIS.app/Contents/MacOS/gdal_translate",
+      "-q",
+      "-of",
+      "SRTMHGT",
+      "-a_nodata",
+      "-32768",
+      "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-Copernicus-kt2ww846/N41W009.hgt.tif",
+      "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-Copernicus-kt2ww846/N41W009.hgt"
+    ],
+    [
+      "/Applications/QGIS.app/Contents/MacOS/gdalwarp",
+      "-q",
+      "-overwrite",
+      "-of",
+      "GTiff",
+      "-ot",
+      "Int16",
+      "-t_srs",
+      "EPSG:4326",
+      "-te",
+      "-10.00013888888889",
+      "41.99986111111111",
+      "-8.99986111111111",
+      "43.00013888888889",
+      "-ts",
+      "3601",
+      "3601",
+      "-r",
+      "bilinear",
+      "-dstnodata",
+      "0",
+      "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-Copernicus-kt2ww846/source.vrt",
+      "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-Copernicus-kt2ww846/N42W010.hgt.tif"
+    ],
+    [
+      "/Applications/QGIS.app/Contents/MacOS/gdal_translate",
+      "-q",
+      "-of",
+      "SRTMHGT",
+      "-a_nodata",
+      "-32768",
+      "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-Copernicus-kt2ww846/N42W010.hgt.tif",
+      "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-Copernicus-kt2ww846/N42W010.hgt"
+    ],
+    [
+      "/Applications/QGIS.app/Contents/MacOS/gdalwarp",
+      "-q",
+      "-overwrite",
+      "-of",
+      "GTiff",
+      "-ot",
+      "Int16",
+      "-t_srs",
+      "EPSG:4326",
+      "-te",
+      "-9.00013888888889",
+      "41.99986111111111",
+      "-7.9998611111111115",
+      "43.00013888888889",
+      "-ts",
+      "3601",
+      "3601",
+      "-r",
+      "bilinear",
+      "-dstnodata",
+      "0",
+      "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-Copernicus-kt2ww846/source.vrt",
+      "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-Copernicus-kt2ww846/N42W009.hgt.tif"
+    ],
+    [
+      "/Applications/QGIS.app/Contents/MacOS/gdal_translate",
+      "-q",
+      "-of",
+      "SRTMHGT",
+      "-a_nodata",
+      "-32768",
+      "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-Copernicus-kt2ww846/N42W009.hgt.tif",
+      "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-Copernicus-kt2ww846/N42W009.hgt"
+    ]
+  ],
+  "coverage": [
+    -10,
+    41,
+    -8,
+    43
+  ],
+  "dataset": "Copernicus DEM GLO-30 Public, AWS 2021 release",
+  "grid": "3601 by 3601 signed 16-bit point-aligned HGT cells; ocean cells zero",
+  "oceanCellReview": [
+    {
+      "cell": "N41W010.hgt",
+      "coastalLandSHA256": "64ea93ada7726eb4183d0c3b5c8df5d7191ab6ac6ac80d032f4468dbf04052eb",
+      "landIntersectionSquareDegrees": 0
+    }
+  ],
+  "sourceAssets": [
+    {
+      "bytes": 1110900,
+      "path": "data/regions/camino-portugues/copernicus/tileList.txt",
+      "sha256": "10604e3052c98a09e9216f1a8f0a555a04148419757575f783d4937fd44316dc",
+      "url": "https://copernicus-dem-30m.s3.amazonaws.com/tileList.txt"
+    },
+    {
+      "bytes": 37449439,
+      "path": "data/regions/camino-portugues/copernicus/Copernicus_DSM_COG_10_N41_00_W009_00_DEM.tif",
+      "sha256": "122e7f63f33715394bc44f792bef58075cf8d6adf7115d7a49605d427ce3bd24",
+      "url": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N41_00_W009_00_DEM/Copernicus_DSM_COG_10_N41_00_W009_00_DEM.tif"
+    },
+    {
+      "bytes": 2676918,
+      "path": "data/regions/camino-portugues/copernicus/Copernicus_DSM_COG_10_N42_00_W010_00_DEM.tif",
+      "sha256": "e597b322e5e61989c01952bfa7946d7a0d3f162ecad9f3a9106d5bbc0bb86a4e",
+      "url": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N42_00_W010_00_DEM/Copernicus_DSM_COG_10_N42_00_W010_00_DEM.tif"
+    },
+    {
+      "bytes": 41697541,
+      "path": "data/regions/camino-portugues/copernicus/Copernicus_DSM_COG_10_N42_00_W009_00_DEM.tif",
+      "sha256": "0ef055ae8c70ee79dbd642cb21a07ec5f7591a5390c69227b7b8e56805982658",
+      "url": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N42_00_W009_00_DEM/Copernicus_DSM_COG_10_N42_00_W009_00_DEM.tif"
+    }
+  ],
+  "sourceDocumentation": "https://registry.opendata.aws/copernicus-dem/",
+  "toolchain": {
+    "gdal_translate": {
+      "path": "/Applications/QGIS.app/Contents/MacOS/gdal_translate",
+      "sha256": "20bee1aad39868f3aa506312cad8415bbe12fa004cbf75b27114f527178b632a"
+    },
+    "gdalbuildvrt": {
+      "path": "/Applications/QGIS.app/Contents/MacOS/gdalbuildvrt",
+      "sha256": "5694fb873506db8342bedbf18635fe6d3dbf97971dc25f2ea7f94ff4f6f77b30"
+    },
+    "gdalwarp": {
+      "path": "/Applications/QGIS.app/Contents/MacOS/gdalwarp",
+      "sha256": "da68256b5787bd76d876a409fd452cc8290be13c6f28aece569242682a003057"
+    }
+  },
+  "verticalDatum": "EGM2008 orthometric metres"
+}

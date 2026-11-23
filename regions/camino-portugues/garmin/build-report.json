@@ -1,0 +1,150 @@
+{
+  "familyId": 4883,
+  "garminPackageRevision": "2.0.0-r1",
+  "inspection": {
+    "anchorLabels": {
+      "Porto": "Porto",
+      "Santiago de Compostela": "Santiago de Compostela",
+      "Tui": "Tui"
+    },
+    "bounds": [
+      -9.052820205688477,
+      41.044921875,
+      -8.3935546875,
+      42.97860145568848
+    ],
+    "coastPolygonsByLevel": {
+      "0": {
+        "0x32": 13,
+        "0x54": 254
+      },
+      "1": {
+        "0x32": 13,
+        "0x54": 179
+      },
+      "2": {
+        "0x32": 13,
+        "0x54": 121
+      },
+      "3": {
+        "0x32": 13,
+        "0x54": 60
+      },
+      "4": {
+        "0x32": 13,
+        "0x54": 30
+      }
+    },
+    "contoursByLevel": {
+      "0": {
+        "0x20": 14230,
+        "0x22": 2900
+      },
+      "1": {
+        "0x20": 11966,
+        "0x22": 2410
+      },
+      "2": {
+        "0x22": 2298
+      },
+      "3": {
+        "0x10008": 2095
+      },
+      "4": {}
+    },
+    "lineInstancesAtHighestDetail": {
+      "0x1": 2723,
+      "0x10001": 3266,
+      "0x10002": 3867,
+      "0x10003": 4,
+      "0x10004": 829,
+      "0x10005": 5661,
+      "0x10006": 114,
+      "0x1000a": 28,
+      "0x1000b": 5000,
+      "0x1000d": 42,
+      "0x14": 1713,
+      "0x16": 50982,
+      "0x18": 2548,
+      "0x1a": 11,
+      "0x1c": 658,
+      "0x1e": 438,
+      "0x1f": 633,
+      "0x2": 1428,
+      "0x20": 14230,
+      "0x22": 2900,
+      "0x3": 4017,
+      "0x4": 4346,
+      "0x6": 74930,
+      "0x7": 35850,
+      "0xa": 30938
+    },
+    "logicalCombinedSHA256": "6b96732dfc5e7024fdc4dcda25e3b8ef43fc5f7a88f521d71028745d2dd5abfe",
+    "logicalHashNote": "Internal file names, sizes and payloads; only CommonHeader creation-date bytes 14..20 are zeroed for hashing. IMG archive headers are excluded. Output bytes are never modified.",
+    "logicalTileSHA256": {
+      "48830001.img": "06065c0f67843048795ac98fe72363784234a56ad33249e66628ead996bbe1dc",
+      "48830002.img": "83d011e7fb4b62a06b2d872517cf0560a13121bbf9d455832c3ff7e3328b5d1f",
+      "48830003.img": "c3926b06e54962dd1827244c5144351acc17d30b0d7753956fff611b7a56e571",
+      "48830004.img": "4707457ada457be16b11048e8b149a767c13bc3f2df413c96d7a1237e5ad214d",
+      "48830005.img": "83762cf6d70d128c23d550f3e27c2ccb71a629f163c934eda6ee6c6e8c09dc58",
+      "48830006.img": "c45932f3031e0b4f72431967fd307107593ba2889e729df735163b509fe68bf2",
+      "48830007.img": "084a62c69be5b576d5cd92fa9a675815591c35e4f888dba3550952faab933f05",
+      "48830008.img": "51cd28ef77be51347440c37eed33712025fec09969c8946936c0e1e6b636745a",
+      "48830009.img": "f6185efbc24c7ca7f6748e7cfcacbb337d3e3b96b49a8a465c248364ae3277ca",
+      "48830010.img": "a81a7a2732b36ef186a040f90bd14074b8ae2400ffba922eb52d8fbc44405dbe",
+      "48830011.img": "2437f5e4269e4838066607cb09a6c9483dbdb126dba725f5a1e005c80f0edc48"
+    },
+    "pointInstancesAtHighestDetail": {
+      "0x100": 23,
+      "0x10001": 572,
+      "0x10002": 503,
+      "0x10003": 2730,
+      "0x10004": 193,
+      "0x10006": 37742,
+      "0x2f0b": 10889,
+      "0x600": 77,
+      "0x650c": 363,
+      "0x6603": 172,
+      "0x6615": 89,
+      "0x6616": 1125,
+      "0x800": 466,
+      "0xb00": 4658,
+      "0xc00": 10102
+    },
+    "polygonInstancesAtHighestDetail": {
+      "0x10101": 13465,
+      "0x10102": 17198,
+      "0x10103": 828,
+      "0x10104": 4684,
+      "0x10105": 422,
+      "0x10106": 200,
+      "0x10109": 1341,
+      "0x1010a": 31,
+      "0x1010b": 13,
+      "0x13": 225869,
+      "0x32": 13,
+      "0x3c": 2347,
+      "0x50": 11895,
+      "0x51": 185,
+      "0x54": 254
+    },
+    "routing": false,
+    "subfileBytes": {
+      "DEM": 6661451,
+      "LBL": 1637507,
+      "MPS": 987,
+      "RGN": 23397997,
+      "SRT": 912,
+      "TRE": 263640,
+      "TYP": 3100
+    },
+    "tiles": 11
+  },
+  "output": {
+    "bytes": 32069632,
+    "path": "regions/camino-portugues/garmin/dist/OpenBareMap-Camino-Portugues.img",
+    "sha256": "b1a5844f872a931ecebabf96be39ab738742cd88aa0b96d590a98948bd9b58d2"
+  },
+  "routing": false,
+  "status": "compiled and structurally inspected; hardware rendering pending"
+}

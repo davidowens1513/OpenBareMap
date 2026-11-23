@@ -1,0 +1,20 @@
+{
+  "inputs": [
+    {
+      "path": "regions/camino-del-norte/garmin/inputs/contours.geojson.gz",
+      "sha256": "03c4872009ce3940857b0644af2f4bd38fb03d07772f1b55d8f6077c9a95ed24",
+      "uncompressedSHA256": "afc770b157745006f22e0913d13dc4ac17b127015745aa135342da046eabf7fb"
+    },
+    {
+      "path": "regions/camino-del-norte/garmin/inputs/landcover.geojson.gz",
+      "sha256": "f72f51e51c100251b94812fd9ff1340fc6e7e7692617ad7d6eaaf1c89963d674",
+      "uncompressedSHA256": "05c27c9bd61fb8864b146d28a4ad753c35788a05ce1476605339bc6713843620"
+    },
+    {
+      "path": "regions/camino-del-norte/garmin/inputs/land.geojson.gz",
+      "sha256": "aaf3bb55997c3a0079ec9e5e8faf8a7ec39b6a8484e53f6ebcdc8fc72fda2182",
+      "uncompressedSHA256": "2339f7b8b9193d043270a142f46f41a7420cb95f674b5cd187613145e0fa01ba"
+    }
+  ],
+  "region": "camino-del-norte"
+}

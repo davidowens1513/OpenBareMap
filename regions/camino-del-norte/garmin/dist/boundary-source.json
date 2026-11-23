@@ -1,0 +1,26 @@
+{
+  "alignmentLengthsKilometres": {
+    "Camino del Norte": 807.11
+  },
+  "bufferCRS": "EPSG:25830",
+  "bufferMetres": 10000,
+  "changes": "Exact retraces removed. The Camino Franc\u00e9s alignment from Arz\u00faa supplies the shared final approach to Santiago.",
+  "coverageSHA256": "aeaf0678a83a9d211f562fc2d70664087177a2aff5c14d3b964625c88a858528",
+  "coverageSquareKilometres": 13115.3,
+  "routeLengthKilometres": 807.11,
+  "routeSHA256": "5e380819bfd6470def18ab522be08ad12c4dd00a26e4117f1b2e5293f5486d3b",
+  "sources": [
+    {
+      "attribution": "OpenStreetMap contributors, ODbL, via Open Pilgrimages 1.13.0",
+      "bytes": 2773643,
+      "path": "data/regions/camino-del-norte/route.geojson",
+      "sha256": "dcc09d35b6b98a626d5aa4656b4dce6cc865bfd3193436adb7dcdbda70265b44",
+      "url": "https://cdn.jsdelivr.net/gh/walktalkmeditate/open-pilgrimages@v1.13.0/routes/camino-norte/route.geojson"
+    },
+    {
+      "attribution": "OpenBareMap Camino Franc\u00e9s, FEAACS / IGN (CC BY 4.0) and OpenStreetMap (ODbL)",
+      "path": "regions/camino-frances/camino-route.geojson",
+      "sha256": "162e663fd9b7e7385f269738f3942c4f3f58484b4305b326d2ff483694c188af"
+    }
+  ]
+}

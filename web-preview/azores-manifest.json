@@ -1,0 +1,41 @@
+{
+  "regions": {
+    "azores": {
+      "basemap": {
+        "sourceSHA256": "1f64120e94fa76a40484e0967ed9068bea2639fdc3f7591baab3187e94021f8e",
+        "bytes": 19584831,
+        "sha256": "641c6880077749c14954b72cdecbea4ea3f510d7cee1745ddca973c2cc617482",
+        "tiles": 1928
+      },
+      "grid": {
+        "sourceSHA256": "f469b7e43d683bcc2f10d360a74f363c968d52213d727efc84efef85df53fe41",
+        "bytes": 5404228,
+        "sha256": "e692df498ee50b84be20a7ed35fbce80a18a5608cda3eb12cdc3e3d9fe47a883",
+        "tiles": 17553
+      },
+      "hillshade": {
+        "sourceSHA256": "03b655337302b404e9a0d1122206fbf821b853029eae2146831fac709960470f",
+        "bytes": 2278258,
+        "sha256": "7113ee0a3ebc6e92f7217a4ceb422acb6b4f59fffdb80bba23d2659babd900b1",
+        "tiles": 437
+      },
+      "topography": {
+        "sourceSHA256": "bef7a2fc03ea782977528d4b70391a9ead9bca90b2c6fe07b12c423fd0c443cd",
+        "bytes": 8492731,
+        "sha256": "30917156310a050cca87374d9a36348aba9b8f80d2735817474d0be4ba92d3c3",
+        "tiles": 1961
+      },
+      "coast": {
+        "sourceSHA256": "2d47183d09f2f1f93bf0f87b5af6e53198b86121bbae8e2491c1ff5bfaa6c435",
+        "bytes": 214121,
+        "sha256": "f26106e363073cbac928c01a8da7694c5488aa569723530f5218223568ad2900",
+        "tiles": 237
+      }
+    }
+  },
+  "pmtilesPython": "3.8.1",
+  "pmtilesJS": "4.5.0",
+  "librarySHA256": "caf981bc46f6327ee7e65d5dc964d89d38a69f60edca2bd4c5c890c21b554c6c",
+  "dataOrigin": "https://downloads.appsbyonzy.dev/OpenBareMap/azores/2.0.0/preview",
+  "scope": "Complete selected map tiles; no regional or zoom sampling."
+}

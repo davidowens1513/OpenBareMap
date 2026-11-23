@@ -1,0 +1,190 @@
+{
+  "boundaryAttribution": "OpenBareMap edition footprint",
+  "bounds": [
+    -28.97,
+    37.61,
+    -25.06,
+    38.84
+  ],
+  "clipBasemap": true,
+  "clipSource": true,
+  "clipTerrainToBounds": true,
+  "clipToCoverage": true,
+  "coastContextBounds": [
+    -31,
+    36,
+    -23,
+    41
+  ],
+  "contourIntervalMetres": 20,
+  "coverage": "S\u00e3o Miguel, Pico, S\u00e3o Jorge and Faial in a single offline map.",
+  "coverageBoundary": true,
+  "coverageBoundaryLabel": "Azores map coverage limit",
+  "destinationLabels": {
+    "faial": "Faial",
+    "horta": "Horta",
+    "island": "Azores",
+    "pico": "Pico",
+    "ponta-delgada": "Ponta Delgada",
+    "sao-jorge": "S\u00e3o Jorge",
+    "sao-miguel": "S\u00e3o Miguel"
+  },
+  "destinations": {
+    "faial": [
+      -28.713,
+      38.582,
+      11
+    ],
+    "horta": [
+      -28.6264,
+      38.5347,
+      11
+    ],
+    "island": [
+      -26.94,
+      38.16,
+      7
+    ],
+    "pico": [
+      -28.399,
+      38.469,
+      11
+    ],
+    "ponta-delgada": [
+      -25.6687,
+      37.7401,
+      11
+    ],
+    "sao-jorge": [
+      -28.027,
+      38.645,
+      11
+    ],
+    "sao-miguel": [
+      -25.493,
+      37.782,
+      11
+    ]
+  },
+  "garminContextBounds": [
+    -28.97,
+    37.61,
+    -25.06,
+    38.84
+  ],
+  "garminCoverageBounds": [
+    -28.97,
+    37.61,
+    -25.06,
+    38.84
+  ],
+  "garminFamilyId": 4885,
+  "garminFilename": "OpenBareMap-Azores.img",
+  "garminPackageRevision": "2.0.0-r1",
+  "garminTileStartId": 48850001,
+  "garminUseSourceOutline": true,
+  "garminVersionedDelivery": true,
+  "gridCRS": "EPSG:5015",
+  "gridExtent": [
+    320000,
+    860000,
+    4140000,
+    4320000
+  ],
+  "gridName": "PTRA08 / UTM 26N",
+  "gridSource": "utm-grid",
+  "id": "azores",
+  "ignoreSourceHeaderBounds": true,
+  "inspectionNames": [
+    "Ponta Delgada",
+    "Horta"
+  ],
+  "islandValidationAnchors": {
+    "faial": [
+      -28.713,
+      38.582
+    ],
+    "pico": [
+      -28.399,
+      38.469
+    ],
+    "sao-jorge": [
+      -28.027,
+      38.645
+    ],
+    "sao-miguel": [
+      -25.493,
+      37.782
+    ]
+  },
+  "islandValidationZooms": [
+    10,
+    11,
+    12
+  ],
+  "label": "Azores",
+  "labelGlyphs": "\u00c1\u00c0\u00c2\u00c3\u00c7\u00c9\u00ca\u00cd\u00d3\u00d4\u00d5\u00da\u00e1\u00e0\u00e2\u00e3\u00e7\u00e9\u00ea\u00ed\u00f3\u00f4\u00f5\u00fa",
+  "mapVersion": "2.0.0",
+  "maxzoom": 14,
+  "minorWaterwayMinzoom": 10,
+  "minzoom": 4,
+  "name": "OpenBareMap Azores",
+  "nativeLanguage": "pt",
+  "optionalBasemapLayers": [
+    "cycling_route",
+    "railway",
+    "station",
+    "boundary"
+  ],
+  "overviewLandAnchors": {
+    "Pico": [
+      -28.399,
+      38.469
+    ]
+  },
+  "projectedCRS": "EPSG:5015",
+  "repairClippedCoastline": true,
+  "requireBogFeatures": false,
+  "sourceBaseURL": "https://download.geofabrik.de/europe/azores/",
+  "sourceDate": "2026-11-22",
+  "sourceSlugs": [
+    "azores"
+  ],
+  "styleRevision": "2.0.0-azores-r1",
+  "terrainAttribution": "Copernicus DEM GLO-30 \u00b7 European Union / ESA \u00b7 DLR / Airbus",
+  "terrainBounds": [
+    -29,
+    37,
+    -25,
+    39
+  ],
+  "terrainNotice": "Azores elevation: Copernicus DEM GLO-30 Public (AWS 2021 release).\n\nproduced using Copernicus WorldDEM-30 \u00a9 DLR e.V. 2010-2014 and \u00a9 Airbus Defence and Space GmbH 2014-2018 provided under COPERNICUS by the European Union and ESA; all rights reserved\n\nThe organisations in charge of the Copernicus programme by law or by delegation do not incur any liability for any use of the Copernicus WorldDEM-30.\n\nLicense: https://dataspace.copernicus.eu/sites/default/files/media/files/2025-06/copernicus_contributing_mission_data_access_v2_cop_dem_licenses.pdf\nSource: https://registry.opendata.aws/copernicus-dem/\nVertical datum: EGM2008 orthometric metres. Native approximately 30 m cells are bilinearly resampled to point-aligned Int16 HGT for the shared terrain pipeline. Ocean-only cells absent from the official public inventory are zero.\n",
+  "terrainProvider": "copernicus-glo30",
+  "townlands": false,
+  "validationAnchors": {
+    "faial": [
+      -28.713,
+      38.582
+    ],
+    "horta": [
+      -28.6264,
+      38.5347
+    ],
+    "pico": [
+      -28.399,
+      38.469
+    ],
+    "ponta-delgada": [
+      -25.6687,
+      37.7401
+    ],
+    "sao-jorge": [
+      -28.027,
+      38.645
+    ],
+    "sao-miguel": [
+      -25.493,
+      37.782
+    ]
+  }
+}

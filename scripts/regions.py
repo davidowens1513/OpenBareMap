@@ -16,7 +16,11 @@ PERMANENT_ICE = {
     'glacier': ('Glacier', '#badde9', '#709bab', '0x1010c'),
     'permanent_snow': ('Permanent snowfield', '#f0f8fc', '#93b3c3', '0x1010d'),
 }
-REGIONS = ('ireland', 'england-wales', 'scotland', 'sierra-nevada', 'pyrenees', 'dolomites', 'faroe-islands','norway-south','norway-central','norway-north', 'balearic-islands', 'corsica', 'sardinia', 'sicily', 'crete', 'cyprus', 'malta', 'canary-islands', 'madeira') + ALPS_REGIONS + US_PARK_REGIONS + ('picos-de-europa', 'high-tatras') + CANADIAN_ROCKIES_REGIONS + ICELAND_PATAGONIA_REGIONS + NEPAL_REGIONS + EUROPEAN_WALKING_REGIONS + ('amalfi-bay-of-naples',) + WORLDWIDE_TREKKING_REGIONS + COAST_AND_ATLAS_REGIONS
+REGIONS = ('ireland', 'england-wales', 'scotland', 'sierra-nevada', 'pyrenees', 'dolomites', 'faroe-islands','norway-south','norway-central','norway-north', 'balearic-islands', 'corsica', 'sardinia', 'sicily', 'crete', 'cyprus', 'malta', 'canary-islands', 'madeira') + ALPS_REGIONS + US_PARK_REGIONS + ('picos-de-europa', 'high-tatras') + CANADIAN_ROCKIES_REGIONS + ICELAND_PATAGONIA_REGIONS + NEPAL_REGIONS + EUROPEAN_WALKING_REGIONS + ('amalfi-bay-of-naples',) + WORLDWIDE_TREKKING_REGIONS + COAST_AND_ATLAS_REGIONS + ('camino-portugues', 'camino-del-norte', 'azores')
+
+
+def clips_to_coverage(edition):
+    return edition.get('routeCorridor') or edition.get('clipToCoverage')
 
 def profile(region='ireland'):
     if region not in REGIONS:
@@ -30,6 +34,15 @@ def region_path(region, name):
 
 def route_overlay_id(edition):
     return edition.get('routeOverlayId', 'camino-route')
+
+
+def coverage_notice(edition):
+    if edition.get('routeCorridor'):
+        credit = edition['boundaryAttribution']
+        return f"Route alignment: {credit}. Route source and coverage buffer: see provenance/boundary-source.json."
+    if edition.get('clipToCoverage'):
+        return 'Map coverage outline: OpenBareMap. See provenance/boundary-source.json.'
+    return 'National park boundary: Fuente: Organismo Autónomo Parques Nacionales (MITECO/OAPN), CC BY 4.0. Boundary source and calculated 25 km buffer: see provenance/boundary-source.json.'
 
 def basemap_attribution(edition):
     text = '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap contributors</a>'
@@ -101,7 +114,7 @@ def region_style(region='ireland'):
             overlay = route_overlay_id(p)
             style['sources'][overlay]={'type':'geojson','data':json.loads(region_path(region,overlay+'.geojson').read_text()),'attribution':p['boundaryAttribution']}
             style['layers'].append({'id':overlay,'type':'line','source':overlay,'paint':{'line-color':'#743b83','line-width':['interpolate',['linear'],['zoom'],6,1.2,14,3.3],'line-opacity':0.88}})
-        else:
+        elif not p.get('clipToCoverage'):
             style['layers'].append({'id':'park-boundary','type':'line','source':'park-boundary','paint':{'line-color':'#8c278b','line-width':2.5,'line-opacity':0.95}})
         style['layers'].append({'id':'coverage-boundary','type':'line','source':'coverage','paint':{'line-color':'#444444','line-width':2,'line-dasharray':[4,3]}})
     return style

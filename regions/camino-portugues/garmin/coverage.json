@@ -1,0 +1,42 @@
+{
+  "areaSquareDegrees": 0.8264147389424888,
+  "bounds": [
+    -9.015507591666147,
+    41.050552917403905,
+    -8.422740323111684,
+    42.970481955037606
+  ],
+  "entireRequestedFootprintCovered": true,
+  "exactFootprint": "regions/camino-portugues/coverage.geojson",
+  "inputs": [
+    {
+      "bytes": 23458,
+      "path": "data/regions/camino-portugues/spain.poly",
+      "sha256": "c7040aa69901fadcfb8edd65d9e23649063e408927fa46d78c39b3f0e306a58e",
+      "url": "https://download.geofabrik.de/europe/spain/spain.poly"
+    },
+    {
+      "bytes": 5999,
+      "path": "data/regions/camino-portugues/portugal.poly",
+      "sha256": "b6eac12ed0d04d87c0371289d2f9b95365cafce0ee94fefd01b5ecc33a52e5bb",
+      "url": "https://download.geofabrik.de/europe/portugal/portugal.poly"
+    }
+  ],
+  "knownDestinationsCovered": [
+    "a-guarda",
+    "caminha",
+    "island",
+    "padron",
+    "ponte-de-lima",
+    "pontevedra",
+    "porto",
+    "redondela",
+    "santiago",
+    "tui",
+    "viana-do-castelo",
+    "vigo"
+  ],
+  "operation": "Convex tile-selection envelope around the full regional footprint; the exact outline is retained as a map overlay",
+  "polygons": 1,
+  "sha256": "f0df471094071ed7abbce1cb2c020cb99c28c557866e3dcf6542a06c56ec4e1f"
+}

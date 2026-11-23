@@ -1,0 +1,35 @@
+{
+  "bytes": 42330854,
+  "datasets": {
+    "basemap": {
+      "path": "maps/basemap.mbtiles",
+      "sha256": "1f64120e94fa76a40484e0967ed9068bea2639fdc3f7591baab3187e94021f8e"
+    },
+    "coast": {
+      "derived_from": "bef7a2fc03ea782977528d4b70391a9ead9bca90b2c6fe07b12c423fd0c443cd",
+      "maxzoom": 12,
+      "operation": "Preserve land-layer MVT bytes only through zoom 12; omit other layers.",
+      "path": "maps/coast.mbtiles",
+      "sha256": "2d47183d09f2f1f93bf0f87b5af6e53198b86121bbae8e2491c1ff5bfaa6c435"
+    },
+    "grid": {
+      "path": "maps/grid.mbtiles",
+      "sha256": "f469b7e43d683bcc2f10d360a74f363c968d52213d727efc84efef85df53fe41"
+    },
+    "hillshade": {
+      "path": "maps/hillshade.mbtiles",
+      "sha256": "03b655337302b404e9a0d1122206fbf821b853029eae2146831fac709960470f"
+    },
+    "topography": {
+      "path": "maps/topography.mbtiles",
+      "sha256": "bef7a2fc03ea782977528d4b70391a9ead9bca90b2c6fe07b12c423fd0c443cd"
+    }
+  },
+  "instructionsSHA256": "60edcd083da0fae49837e3a800f6f6f65961e14458f13acb8efbddc17db4b3fd",
+  "instructionsURL": "https://downloads.appsbyonzy.dev/OpenBareMap/azores/2.0.0/app-bundles-v1/ios/instructions.txt",
+  "localPath": "releases/azores/2.0.0/app-bundles-v1/ios/OpenBareMap-Azores-iOS-Bundle.zip",
+  "mapManifestSHA256": "7255a42d3fe6d42ccca982c12a157c8aa0564c6af94d8148061c36e9dc1d0332",
+  "r2Key": "OpenBareMap/azores/2.0.0/app-bundles-v1/ios/OpenBareMap-Azores-iOS-Bundle.zip",
+  "sha256": "af3e8789fc6a334ea008698f0d30b2459704307e1ca06fafa3a8033d83836b55",
+  "url": "https://downloads.appsbyonzy.dev/OpenBareMap/azores/2.0.0/app-bundles-v1/ios/OpenBareMap-Azores-iOS-Bundle.zip"
+}

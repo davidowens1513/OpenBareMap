@@ -1,0 +1,20 @@
+{
+  "inputs": [
+    {
+      "path": "regions/camino-portugues/garmin/inputs/contours.geojson.gz",
+      "sha256": "bf683b7fb596ee0eb722c74a19fc5ede3c91bf1d3e161d72af471e961238ba99",
+      "uncompressedSHA256": "49a82d7b7169ed059beed4d2aee2c0fb8bbcfcf912f837da39e4c01d90058ebd"
+    },
+    {
+      "path": "regions/camino-portugues/garmin/inputs/landcover.geojson.gz",
+      "sha256": "ddff714618d17ab28bf8f855322cda5fc92a61595321ba7f14c3019b493620d4",
+      "uncompressedSHA256": "213932cd8330861e7f6e692ab21c533998cbbb8ca8babace14b7a8c62b38d7fa"
+    },
+    {
+      "path": "regions/camino-portugues/garmin/inputs/land.geojson.gz",
+      "sha256": "2f5a5ddb26424c7214cc63f82cb8e2941978614d763f484bc9915b8845d7b31f",
+      "uncompressedSHA256": "2e78fa64f204581517eddcc958ea879370214eacec69fbb48c10695b73badd9a"
+    }
+  ],
+  "region": "camino-portugues"
+}

@@ -6,8 +6,11 @@
     "alps-tyrol-bavaria": "2.0.1",
     "alps-west": "2.0.1",
     "amalfi-bay-of-naples": "2.0.0",
+    "azores": "2.0.0",
     "balearic-islands": "2.0.0",
+    "camino-del-norte": "2.0.0",
     "camino-frances": "2.0.0",
+    "camino-portugues": "2.0.0",
     "canadian-rockies-banff": "2.0.0",
     "canadian-rockies-jasper": "2.0.0",
     "canadian-rockies-kananaskis-waterton": "2.0.0",
@@ -404,6 +407,76 @@
         "url": "https://downloads.appsbyonzy.dev/OpenBareMap/amalfi-bay-of-naples/2.0.0/app-bundles-v1/ios/OpenBareMap-Amalfi-Bay-of-Naples-iOS-Bundle.zip"
       }
     },
+    "azores": {
+      "android": {
+        "bytes": 42329181,
+        "datasets": {
+          "basemap": {
+            "path": "maps/basemap.mbtiles",
+            "sha256": "1f64120e94fa76a40484e0967ed9068bea2639fdc3f7591baab3187e94021f8e"
+          },
+          "coast": {
+            "derivedFrom": "bef7a2fc03ea782977528d4b70391a9ead9bca90b2c6fe07b12c423fd0c443cd",
+            "path": "maps/coast.mbtiles",
+            "sha256": "2d47183d09f2f1f93bf0f87b5af6e53198b86121bbae8e2491c1ff5bfaa6c435"
+          },
+          "grid": {
+            "path": "maps/grid.mbtiles",
+            "sha256": "f469b7e43d683bcc2f10d360a74f363c968d52213d727efc84efef85df53fe41"
+          },
+          "hillshade": {
+            "path": "maps/hillshade.mbtiles",
+            "sha256": "03b655337302b404e9a0d1122206fbf821b853029eae2146831fac709960470f"
+          },
+          "topography": {
+            "path": "maps/topography.mbtiles",
+            "sha256": "bef7a2fc03ea782977528d4b70391a9ead9bca90b2c6fe07b12c423fd0c443cd"
+          }
+        },
+        "instructionsSHA256": "fec6ad67a804c7a2053a98a9a03cb642ff6bb45a855e0fef7db80c33aef5c69b",
+        "instructionsURL": "https://downloads.appsbyonzy.dev/OpenBareMap/azores/2.0.0/app-bundles-v1/android/instructions.txt",
+        "localPath": "releases/azores/2.0.0/app-bundles-v1/android/OpenBareMap-Azores-Android-Bundle.zip",
+        "mapManifestSHA256": "598603aa45e706a3c1611d2d2c2029ba50c1246411def59aa0ff8fce6174b2f6",
+        "r2Key": "OpenBareMap/azores/2.0.0/app-bundles-v1/android/OpenBareMap-Azores-Android-Bundle.zip",
+        "sha256": "63b51ac29d67f5e1815bd26ced6cd8dcd542e8c4aba04e62c1f82acd4a7d70e9",
+        "url": "https://downloads.appsbyonzy.dev/OpenBareMap/azores/2.0.0/app-bundles-v1/android/OpenBareMap-Azores-Android-Bundle.zip"
+      },
+      "ios": {
+        "bytes": 42330854,
+        "datasets": {
+          "basemap": {
+            "path": "maps/basemap.mbtiles",
+            "sha256": "1f64120e94fa76a40484e0967ed9068bea2639fdc3f7591baab3187e94021f8e"
+          },
+          "coast": {
+            "derived_from": "bef7a2fc03ea782977528d4b70391a9ead9bca90b2c6fe07b12c423fd0c443cd",
+            "maxzoom": 12,
+            "operation": "Preserve land-layer MVT bytes only through zoom 12; omit other layers.",
+            "path": "maps/coast.mbtiles",
+            "sha256": "2d47183d09f2f1f93bf0f87b5af6e53198b86121bbae8e2491c1ff5bfaa6c435"
+          },
+          "grid": {
+            "path": "maps/grid.mbtiles",
+            "sha256": "f469b7e43d683bcc2f10d360a74f363c968d52213d727efc84efef85df53fe41"
+          },
+          "hillshade": {
+            "path": "maps/hillshade.mbtiles",
+            "sha256": "03b655337302b404e9a0d1122206fbf821b853029eae2146831fac709960470f"
+          },
+          "topography": {
+            "path": "maps/topography.mbtiles",
+            "sha256": "bef7a2fc03ea782977528d4b70391a9ead9bca90b2c6fe07b12c423fd0c443cd"
+          }
+        },
+        "instructionsSHA256": "60edcd083da0fae49837e3a800f6f6f65961e14458f13acb8efbddc17db4b3fd",
+        "instructionsURL": "https://downloads.appsbyonzy.dev/OpenBareMap/azores/2.0.0/app-bundles-v1/ios/instructions.txt",
+        "localPath": "releases/azores/2.0.0/app-bundles-v1/ios/OpenBareMap-Azores-iOS-Bundle.zip",
+        "mapManifestSHA256": "7255a42d3fe6d42ccca982c12a157c8aa0564c6af94d8148061c36e9dc1d0332",
+        "r2Key": "OpenBareMap/azores/2.0.0/app-bundles-v1/ios/OpenBareMap-Azores-iOS-Bundle.zip",
+        "sha256": "af3e8789fc6a334ea008698f0d30b2459704307e1ca06fafa3a8033d83836b55",
+        "url": "https://downloads.appsbyonzy.dev/OpenBareMap/azores/2.0.0/app-bundles-v1/ios/OpenBareMap-Azores-iOS-Bundle.zip"
+      }
+    },
     "balearic-islands": {
       "android": {
         "bytes": 101855589,
@@ -474,6 +547,76 @@
         "url": "https://downloads.appsbyonzy.dev/OpenBareMap/balearic-islands/2.0.0/app-bundles-v1/ios/OpenBareMap-Balearic-Islands-iOS-Bundle.zip"
       }
     },
+    "camino-del-norte": {
+      "android": {
+        "bytes": 222801704,
+        "datasets": {
+          "basemap": {
+            "path": "maps/basemap.mbtiles",
+            "sha256": "749a6923b4e7e83fe9cdb6b806693b989ef6b3ce01c1599a5dd6261bbbb961ba"
+          },
+          "coast": {
+            "derivedFrom": "c952c93e7639357b19187dd89f1b73417ed57024e615f092f661bfa8903f2b11",
+            "path": "maps/coast.mbtiles",
+            "sha256": "7b16c13805865f182f18649ee5b2d37dfe479215e3edb0dc8d8d4bca9213dea8"
+          },
+          "grid": {
+            "path": "maps/grid.mbtiles",
+            "sha256": "67f556ee68e7b7a74d1fda936e67bcc838f9389004ef043060b349ed1b26be47"
+          },
+          "hillshade": {
+            "path": "maps/hillshade.mbtiles",
+            "sha256": "0f949f6c0ae652854ec3eeb6f46e3a6bd3fa13e06413f8ede827bcb3c3cc8dc1"
+          },
+          "topography": {
+            "path": "maps/topography.mbtiles",
+            "sha256": "c952c93e7639357b19187dd89f1b73417ed57024e615f092f661bfa8903f2b11"
+          }
+        },
+        "instructionsSHA256": "e2657e39157e25f15736b448881b3c201b79b72a8c3718111d1caeb222640f9b",
+        "instructionsURL": "https://downloads.appsbyonzy.dev/OpenBareMap/camino-del-norte/2.0.0/app-bundles-v1/android/instructions.txt",
+        "localPath": "releases/camino-del-norte/2.0.0/app-bundles-v1/android/OpenBareMap-Camino-del-Norte-Android-Bundle.zip",
+        "mapManifestSHA256": "130d18d3f03badcbcb17e2f987f46677820bbb03f1276f789ea22a4924dd8edf",
+        "r2Key": "OpenBareMap/camino-del-norte/2.0.0/app-bundles-v1/android/OpenBareMap-Camino-del-Norte-Android-Bundle.zip",
+        "sha256": "f092e7fb4324c5dcf48771c1b995ce635fdc02998a313bf7eff1827ecf768663",
+        "url": "https://downloads.appsbyonzy.dev/OpenBareMap/camino-del-norte/2.0.0/app-bundles-v1/android/OpenBareMap-Camino-del-Norte-Android-Bundle.zip"
+      },
+      "ios": {
+        "bytes": 222803755,
+        "datasets": {
+          "basemap": {
+            "path": "maps/basemap.mbtiles",
+            "sha256": "749a6923b4e7e83fe9cdb6b806693b989ef6b3ce01c1599a5dd6261bbbb961ba"
+          },
+          "coast": {
+            "derived_from": "c952c93e7639357b19187dd89f1b73417ed57024e615f092f661bfa8903f2b11",
+            "maxzoom": 12,
+            "operation": "Preserve land-layer MVT bytes only through zoom 12; omit other layers.",
+            "path": "maps/coast.mbtiles",
+            "sha256": "7b16c13805865f182f18649ee5b2d37dfe479215e3edb0dc8d8d4bca9213dea8"
+          },
+          "grid": {
+            "path": "maps/grid.mbtiles",
+            "sha256": "67f556ee68e7b7a74d1fda936e67bcc838f9389004ef043060b349ed1b26be47"
+          },
+          "hillshade": {
+            "path": "maps/hillshade.mbtiles",
+            "sha256": "0f949f6c0ae652854ec3eeb6f46e3a6bd3fa13e06413f8ede827bcb3c3cc8dc1"
+          },
+          "topography": {
+            "path": "maps/topography.mbtiles",
+            "sha256": "c952c93e7639357b19187dd89f1b73417ed57024e615f092f661bfa8903f2b11"
+          }
+        },
+        "instructionsSHA256": "75f1ac366f1b7038e8591a925147bf182d7fe62df0ba5caaf10ed399c88d5eaf",
+        "instructionsURL": "https://downloads.appsbyonzy.dev/OpenBareMap/camino-del-norte/2.0.0/app-bundles-v1/ios/instructions.txt",
+        "localPath": "releases/camino-del-norte/2.0.0/app-bundles-v1/ios/OpenBareMap-Camino-del-Norte-iOS-Bundle.zip",
+        "mapManifestSHA256": "e01f2668d977d4f5b68e1dd6e1c02e08d7414e2fc7727c9c9a50b1800b530a03",
+        "r2Key": "OpenBareMap/camino-del-norte/2.0.0/app-bundles-v1/ios/OpenBareMap-Camino-del-Norte-iOS-Bundle.zip",
+        "sha256": "f5950c0d0fe22faaa7a81964620514ddf91690408502b8b37205aca785698725",
+        "url": "https://downloads.appsbyonzy.dev/OpenBareMap/camino-del-norte/2.0.0/app-bundles-v1/ios/OpenBareMap-Camino-del-Norte-iOS-Bundle.zip"
+      }
+    },
     "camino-frances": {
       "android": {
         "bytes": 193878110,
@@ -542,6 +685,76 @@
         "r2Key": "OpenBareMap/camino-frances/2.0.0/app-bundles-v1/ios/OpenBareMap-Camino-Frances-iOS-Bundle.zip",
         "sha256": "a3d182ee67de0e5d0224efd82daea64cb802460add5097bbbd86695c0943dcbc",
         "url": "https://downloads.appsbyonzy.dev/OpenBareMap/camino-frances/2.0.0/app-bundles-v1/ios/OpenBareMap-Camino-Frances-iOS-Bundle.zip"
+      }
+    },
+    "camino-portugues": {
+      "android": {
+        "bytes": 132965971,
+        "datasets": {
+          "basemap": {
+            "path": "maps/basemap.mbtiles",
+            "sha256": "218462057b8e2da8f076d6a7e9427d9805451f08359a449529ee49e4d1a9ff71"
+          },
+          "coast": {
+            "derivedFrom": "cfd6f0e7ab700a1ee28bb10a26e0c67d8c0de3647c88a5c23be1d0ad053bec8d",
+            "path": "maps/coast.mbtiles",
+            "sha256": "87a909df82c54f0649bde70eac36955ac8ebf4384b838506ec7dc5db762fbf52"
+          },
+          "grid": {
+            "path": "maps/grid.mbtiles",
+            "sha256": "8e854eae704c2b15adc8114a605b1f797ccf854ef852e4614e3241da3930abb3"
+          },
+          "hillshade": {
+            "path": "maps/hillshade.mbtiles",
+            "sha256": "49dc02a72588d4948e1b0e9a0783b8d0cb6cf34551d51256b63b45d37ac4c94f"
+          },
+          "topography": {
+            "path": "maps/topography.mbtiles",
+            "sha256": "cfd6f0e7ab700a1ee28bb10a26e0c67d8c0de3647c88a5c23be1d0ad053bec8d"
+          }
+        },
+        "instructionsSHA256": "6b23917167916cb76eb94d3e56e8e0b96aafc4288e1d597074eb3138ad7a011f",
+        "instructionsURL": "https://downloads.appsbyonzy.dev/OpenBareMap/camino-portugues/2.0.0/app-bundles-v1/android/instructions.txt",
+        "localPath": "releases/camino-portugues/2.0.0/app-bundles-v1/android/OpenBareMap-Camino-Portugues-Android-Bundle.zip",
+        "mapManifestSHA256": "a2271989a1e6d5e58ccb570ca15d38c151390cfd3c98b9cacc9cbb9bcf656ddd",
+        "r2Key": "OpenBareMap/camino-portugues/2.0.0/app-bundles-v1/android/OpenBareMap-Camino-Portugues-Android-Bundle.zip",
+        "sha256": "34633bdf2838938befdb9a67e72ede72e146483bf498f325e62ccf8fe4ee773a",
+        "url": "https://downloads.appsbyonzy.dev/OpenBareMap/camino-portugues/2.0.0/app-bundles-v1/android/OpenBareMap-Camino-Portugues-Android-Bundle.zip"
+      },
+      "ios": {
+        "bytes": 132968018,
+        "datasets": {
+          "basemap": {
+            "path": "maps/basemap.mbtiles",
+            "sha256": "218462057b8e2da8f076d6a7e9427d9805451f08359a449529ee49e4d1a9ff71"
+          },
+          "coast": {
+            "derived_from": "cfd6f0e7ab700a1ee28bb10a26e0c67d8c0de3647c88a5c23be1d0ad053bec8d",
+            "maxzoom": 12,
+            "operation": "Preserve land-layer MVT bytes only through zoom 12; omit other layers.",
+            "path": "maps/coast.mbtiles",
+            "sha256": "87a909df82c54f0649bde70eac36955ac8ebf4384b838506ec7dc5db762fbf52"
+          },
+          "grid": {
+            "path": "maps/grid.mbtiles",
+            "sha256": "8e854eae704c2b15adc8114a605b1f797ccf854ef852e4614e3241da3930abb3"
+          },
+          "hillshade": {
+            "path": "maps/hillshade.mbtiles",
+            "sha256": "49dc02a72588d4948e1b0e9a0783b8d0cb6cf34551d51256b63b45d37ac4c94f"
+          },
+          "topography": {
+            "path": "maps/topography.mbtiles",
+            "sha256": "cfd6f0e7ab700a1ee28bb10a26e0c67d8c0de3647c88a5c23be1d0ad053bec8d"
+          }
+        },
+        "instructionsSHA256": "d2a59ac5f270fc59e41fecb169fa0aaa69c3f988f9f3a5533eba7e7d07120eac",
+        "instructionsURL": "https://downloads.appsbyonzy.dev/OpenBareMap/camino-portugues/2.0.0/app-bundles-v1/ios/instructions.txt",
+        "localPath": "releases/camino-portugues/2.0.0/app-bundles-v1/ios/OpenBareMap-Camino-Portugues-iOS-Bundle.zip",
+        "mapManifestSHA256": "3ff7c2d70578721d63c58ab1ef4564fd007b4fcbb8d0672955ad35cafa687b79",
+        "r2Key": "OpenBareMap/camino-portugues/2.0.0/app-bundles-v1/ios/OpenBareMap-Camino-Portugues-iOS-Bundle.zip",
+        "sha256": "acea28217d532db3cef22921898239934484834a0fe5be3ccd1a72d2756c0e0d",
+        "url": "https://downloads.appsbyonzy.dev/OpenBareMap/camino-portugues/2.0.0/app-bundles-v1/ios/OpenBareMap-Camino-Portugues-iOS-Bundle.zip"
       }
     },
     "canadian-rockies-banff": {

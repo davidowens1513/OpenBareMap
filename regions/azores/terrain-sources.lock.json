@@ -1,0 +1,252 @@
+{
+  "accessed_utc": "2026-11-23T19:04:07.006298+00:00",
+  "assets": [
+    {
+      "bytes": 25239,
+      "operation": "Zero ocean cell: no tile in the pinned official GLO-30 public inventory",
+      "path": "data/regions/azores/elevation/N37W029.hgt.gz",
+      "sha256": "ef878716b82ba575fc448ca49fae2f720981192a09f3cb94ba95a759e62e0767",
+      "url": null
+    },
+    {
+      "bytes": 25239,
+      "operation": "Zero ocean cell: no tile in the pinned official GLO-30 public inventory",
+      "path": "data/regions/azores/elevation/N37W028.hgt.gz",
+      "sha256": "ef878716b82ba575fc448ca49fae2f720981192a09f3cb94ba95a759e62e0767",
+      "url": null
+    },
+    {
+      "bytes": 25239,
+      "operation": "Zero ocean cell: no tile in the pinned official GLO-30 public inventory",
+      "path": "data/regions/azores/elevation/N37W027.hgt.gz",
+      "sha256": "ef878716b82ba575fc448ca49fae2f720981192a09f3cb94ba95a759e62e0767",
+      "url": null
+    },
+    {
+      "bytes": 1156836,
+      "operation": "Bilinear resampling of Copernicus GLO-30 to point-aligned Int16 HGT, EGM2008 heights",
+      "path": "data/regions/azores/elevation/N37W026.hgt.gz",
+      "sha256": "c19e71aa5fa970a4c0d160d0fc98002b91fdd2039d91a44d289c8b9308ef788d",
+      "url": null
+    },
+    {
+      "bytes": 1243744,
+      "operation": "Bilinear resampling of Copernicus GLO-30 to point-aligned Int16 HGT, EGM2008 heights",
+      "path": "data/regions/azores/elevation/N38W029.hgt.gz",
+      "sha256": "7cbd94b0a935436d01b19714a9287c19f7f6ec12260ea4e85f52d6526b7555c0",
+      "url": null
+    },
+    {
+      "bytes": 765002,
+      "operation": "Bilinear resampling of Copernicus GLO-30 to point-aligned Int16 HGT, EGM2008 heights",
+      "path": "data/regions/azores/elevation/N38W028.hgt.gz",
+      "sha256": "3054d1ab87c2624663902f2d059a9ae391b11131a46a30c7852ff2558782c184",
+      "url": null
+    },
+    {
+      "bytes": 25239,
+      "operation": "Zero ocean cell: no tile in the pinned official GLO-30 public inventory",
+      "path": "data/regions/azores/elevation/N38W027.hgt.gz",
+      "sha256": "ef878716b82ba575fc448ca49fae2f720981192a09f3cb94ba95a759e62e0767",
+      "url": null
+    },
+    {
+      "bytes": 25239,
+      "operation": "Zero ocean cell: no tile in the pinned official GLO-30 public inventory",
+      "path": "data/regions/azores/elevation/N38W026.hgt.gz",
+      "sha256": "ef878716b82ba575fc448ca49fae2f720981192a09f3cb94ba95a759e62e0767",
+      "url": null
+    }
+  ],
+  "commands": [
+    [
+      "/Applications/QGIS.app/Contents/MacOS/gdalbuildvrt",
+      "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-Copernicus-t1wpo0d5/source.vrt",
+      "/Volumes/Extreme SSD/Projects/OpenBareMap/data/regions/azores/copernicus/Copernicus_DSM_COG_10_N37_00_W026_00_DEM.tif",
+      "/Volumes/Extreme SSD/Projects/OpenBareMap/data/regions/azores/copernicus/Copernicus_DSM_COG_10_N38_00_W029_00_DEM.tif",
+      "/Volumes/Extreme SSD/Projects/OpenBareMap/data/regions/azores/copernicus/Copernicus_DSM_COG_10_N38_00_W028_00_DEM.tif"
+    ],
+    [
+      "/Applications/QGIS.app/Contents/MacOS/gdalwarp",
+      "-q",
+      "-overwrite",
+      "-of",
+      "GTiff",
+      "-ot",
+      "Int16",
+      "-t_srs",
+      "EPSG:4326",
+      "-te",
+      "-26.000138888888888",
+      "36.99986111111111",
+      "-24.999861111111112",
+      "38.00013888888889",
+      "-ts",
+      "3601",
+      "3601",
+      "-r",
+      "bilinear",
+      "-dstnodata",
+      "0",
+      "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-Copernicus-t1wpo0d5/source.vrt",
+      "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-Copernicus-t1wpo0d5/N37W026.hgt.tif"
+    ],
+    [
+      "/Applications/QGIS.app/Contents/MacOS/gdal_translate",
+      "-q",
+      "-of",
+      "SRTMHGT",
+      "-a_nodata",
+      "-32768",
+      "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-Copernicus-t1wpo0d5/N37W026.hgt.tif",
+      "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-Copernicus-t1wpo0d5/N37W026.hgt"
+    ],
+    [
+      "/Applications/QGIS.app/Contents/MacOS/gdalwarp",
+      "-q",
+      "-overwrite",
+      "-of",
+      "GTiff",
+      "-ot",
+      "Int16",
+      "-t_srs",
+      "EPSG:4326",
+      "-te",
+      "-29.000138888888888",
+      "37.99986111111111",
+      "-27.999861111111112",
+      "39.00013888888889",
+      "-ts",
+      "3601",
+      "3601",
+      "-r",
+      "bilinear",
+      "-dstnodata",
+      "0",
+      "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-Copernicus-t1wpo0d5/source.vrt",
+      "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-Copernicus-t1wpo0d5/N38W029.hgt.tif"
+    ],
+    [
+      "/Applications/QGIS.app/Contents/MacOS/gdal_translate",
+      "-q",
+      "-of",
+      "SRTMHGT",
+      "-a_nodata",
+      "-32768",
+      "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-Copernicus-t1wpo0d5/N38W029.hgt.tif",
+      "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-Copernicus-t1wpo0d5/N38W029.hgt"
+    ],
+    [
+      "/Applications/QGIS.app/Contents/MacOS/gdalwarp",
+      "-q",
+      "-overwrite",
+      "-of",
+      "GTiff",
+      "-ot",
+      "Int16",
+      "-t_srs",
+      "EPSG:4326",
+      "-te",
+      "-28.000138888888888",
+      "37.99986111111111",
+      "-26.999861111111112",
+      "39.00013888888889",
+      "-ts",
+      "3601",
+      "3601",
+      "-r",
+      "bilinear",
+      "-dstnodata",
+      "0",
+      "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-Copernicus-t1wpo0d5/source.vrt",
+      "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-Copernicus-t1wpo0d5/N38W028.hgt.tif"
+    ],
+    [
+      "/Applications/QGIS.app/Contents/MacOS/gdal_translate",
+      "-q",
+      "-of",
+      "SRTMHGT",
+      "-a_nodata",
+      "-32768",
+      "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-Copernicus-t1wpo0d5/N38W028.hgt.tif",
+      "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-Copernicus-t1wpo0d5/N38W028.hgt"
+    ]
+  ],
+  "coverage": [
+    -29,
+    37,
+    -25,
+    39
+  ],
+  "dataset": "Copernicus DEM GLO-30 Public, AWS 2021 release",
+  "grid": "3601 by 3601 signed 16-bit point-aligned HGT cells; ocean cells zero",
+  "oceanCellReview": [
+    {
+      "cell": "N37W029.hgt",
+      "coastalLandSHA256": "6a3ec89b75c6528a0b5cc440c3b94b849e361834ba4019222cac60f495bc4c91",
+      "landIntersectionSquareDegrees": 0
+    },
+    {
+      "cell": "N37W028.hgt",
+      "coastalLandSHA256": "6a3ec89b75c6528a0b5cc440c3b94b849e361834ba4019222cac60f495bc4c91",
+      "landIntersectionSquareDegrees": 0
+    },
+    {
+      "cell": "N37W027.hgt",
+      "coastalLandSHA256": "6a3ec89b75c6528a0b5cc440c3b94b849e361834ba4019222cac60f495bc4c91",
+      "landIntersectionSquareDegrees": 0
+    },
+    {
+      "cell": "N38W027.hgt",
+      "coastalLandSHA256": "6a3ec89b75c6528a0b5cc440c3b94b849e361834ba4019222cac60f495bc4c91",
+      "landIntersectionSquareDegrees": 0
+    },
+    {
+      "cell": "N38W026.hgt",
+      "coastalLandSHA256": "6a3ec89b75c6528a0b5cc440c3b94b849e361834ba4019222cac60f495bc4c91",
+      "landIntersectionSquareDegrees": 0
+    }
+  ],
+  "sourceAssets": [
+    {
+      "bytes": 1110900,
+      "path": "data/regions/azores/copernicus/tileList.txt",
+      "sha256": "10604e3052c98a09e9216f1a8f0a555a04148419757575f783d4937fd44316dc",
+      "url": "https://copernicus-dem-30m.s3.amazonaws.com/tileList.txt"
+    },
+    {
+      "bytes": 3862065,
+      "path": "data/regions/azores/copernicus/Copernicus_DSM_COG_10_N37_00_W026_00_DEM.tif",
+      "sha256": "546d2ea685e6fc7a0118d451d9f801ddb7026cbc5136d661e3ae7c3329b1c50d",
+      "url": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N37_00_W026_00_DEM/Copernicus_DSM_COG_10_N37_00_W026_00_DEM.tif"
+    },
+    {
+      "bytes": 3913079,
+      "path": "data/regions/azores/copernicus/Copernicus_DSM_COG_10_N38_00_W029_00_DEM.tif",
+      "sha256": "857b5fdde2312234eb9ed7da51041505f1e1a133ec4fde325da53cfc13907678",
+      "url": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N38_00_W029_00_DEM/Copernicus_DSM_COG_10_N38_00_W029_00_DEM.tif"
+    },
+    {
+      "bytes": 2642270,
+      "path": "data/regions/azores/copernicus/Copernicus_DSM_COG_10_N38_00_W028_00_DEM.tif",
+      "sha256": "af26c63eaac0ee56e04ecd60a50c446775125ceb7a734ae565956808fdfea74b",
+      "url": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N38_00_W028_00_DEM/Copernicus_DSM_COG_10_N38_00_W028_00_DEM.tif"
+    }
+  ],
+  "sourceDocumentation": "https://registry.opendata.aws/copernicus-dem/",
+  "toolchain": {
+    "gdal_translate": {
+      "path": "/Applications/QGIS.app/Contents/MacOS/gdal_translate",
+      "sha256": "20bee1aad39868f3aa506312cad8415bbe12fa004cbf75b27114f527178b632a"
+    },
+    "gdalbuildvrt": {
+      "path": "/Applications/QGIS.app/Contents/MacOS/gdalbuildvrt",
+      "sha256": "5694fb873506db8342bedbf18635fe6d3dbf97971dc25f2ea7f94ff4f6f77b30"
+    },
+    "gdalwarp": {
+      "path": "/Applications/QGIS.app/Contents/MacOS/gdalwarp",
+      "sha256": "da68256b5787bd76d876a409fd452cc8290be13c6f28aece569242682a003057"
+    }
+  },
+  "verticalDatum": "EGM2008 orthometric metres"
+}

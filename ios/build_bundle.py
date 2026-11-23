@@ -6,7 +6,7 @@ ROOT=Path(__file__).resolve().parents[1]
 import sys
 sys.path.insert(0,str(ROOT/"scripts"))
 from package_resources import build_capped_coast, copy_map_file
-from regions import REGIONS,terrain_file,apply_terrain_notice,profile, active_map, region_style, provenance_files, region_path, basemap_attribution
+from regions import REGIONS,terrain_file,apply_terrain_notice,profile, active_map, region_style, provenance_files, region_path, basemap_attribution, coverage_notice
 def sha(path):
     with path.open('rb') as f:return hashlib.file_digest(f,'sha256').hexdigest()
 def write(path,obj):path.write_text(json.dumps(obj,indent=2,ensure_ascii=False)+'\n')
@@ -55,7 +55,7 @@ def assemble(destination, region='ireland'):
         notice.write_text(notice.read_text().replace('Townland label points and fixed Irish Grid are inherited from OpenBareMap 1.1; source dates/generation recipes are not newly asserted.', f"{edition['gridName']} generated using {edition['gridCRS']}; font glyphs and original patterns inherited from OpenBareMap 1.1.").replace('Townlands and Irish Grid inherited from OpenBareMap 1.1; see provenance.', f"{edition['gridName']} generated using {edition['gridCRS']}; see provenance."))
     if edition.get('coverageBoundary'):
         notice=bundle/'ATTRIBUTION.txt'
-        notice.write_text(notice.read_text()+'\nNational park boundary: Fuente: Organismo Autónomo Parques Nacionales (MITECO/OAPN), CC BY 4.0. Boundary source and calculated 25 km buffer: see provenance/boundary-source.json.\n')
+        notice.write_text(notice.read_text()+'\n'+coverage_notice(edition)+'\n')
     shutil.copyfile(ROOT/'ios/OpenBareMapResources.swift',destination/'OpenBareMapResources.swift')
     shutil.copyfile(ROOT/'ios/INTEGRATION.txt',destination/'INTEGRATION.txt');shutil.copyfile(ROOT/'ios/INTEGRATION.txt',bundle/'INTEGRATION.txt')
     if region != 'ireland':

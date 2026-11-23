@@ -1,0 +1,43 @@
+{
+  "accessed_utc": "2026-11-23T19:09:51.374716+00:00",
+  "inputs": [
+    {
+      "bytes": 1505159448,
+      "path": "data/regions/camino-portugues/spain-261122.osm.pbf",
+      "replicationTimestamp": "2026-11-22T21:20:48Z",
+      "sha256": "bdc7c29cc5d68aece6813089292837ad4b07f4911b4f547e012991b9197130eb",
+      "url": "https://download.geofabrik.de/europe/spain/spain-261122.osm.pbf"
+    },
+    {
+      "bytes": 429183752,
+      "path": "data/regions/camino-portugues/portugal-261122.osm.pbf",
+      "replicationTimestamp": "2026-11-22T21:20:48Z",
+      "sha256": "c0ee7e9a613417b3fcdeafd4e8d76f7a1295a8721a3edacb2dbe020fc5b5102f",
+      "url": "https://download.geofabrik.de/europe/portugal/portugal-261122.osm.pbf"
+    }
+  ],
+  "osm": {
+    "bytes": 87380565,
+    "footprintSHA256": "ac322adc5292eea6b34c488740aa711c07bfd516892b8d0d9058a3bee3eb572b",
+    "operation": "Complete-feature footprint extraction followed by libosmium merge",
+    "path": "data/regions/camino-portugues/camino-portugues-261122.osm.pbf",
+    "replicationTimestamp": "2026-11-22T21:20:48Z",
+    "sha256": "d41c9f83f27abcaf9d1836f59c3a8ff24d28a495bef7fb3802e672b6fd965314",
+    "snapshot_date": "2026-11-22",
+    "url": null
+  },
+  "polygons": [
+    {
+      "bytes": 23458,
+      "path": "data/regions/camino-portugues/spain.poly",
+      "sha256": "c7040aa69901fadcfb8edd65d9e23649063e408927fa46d78c39b3f0e306a58e",
+      "url": "https://download.geofabrik.de/europe/spain/spain.poly"
+    },
+    {
+      "bytes": 5999,
+      "path": "data/regions/camino-portugues/portugal.poly",
+      "sha256": "b6eac12ed0d04d87c0371289d2f9b95365cafce0ee94fefd01b5ecc33a52e5bb",
+      "url": "https://download.geofabrik.de/europe/portugal/portugal.poly"
+    }
+  ]
+}

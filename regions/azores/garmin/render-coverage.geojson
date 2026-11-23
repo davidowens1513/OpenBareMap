@@ -1,0 +1,59 @@
+{
+  "features": [
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              -27.67,
+              38.33
+            ],
+            [
+              -28.97,
+              38.33
+            ],
+            [
+              -28.97,
+              38.84
+            ],
+            [
+              -27.67,
+              38.84
+            ],
+            [
+              -27.67,
+              38.36
+            ],
+            [
+              -26.09,
+              37.98
+            ],
+            [
+              -25.06,
+              37.98
+            ],
+            [
+              -25.06,
+              37.61
+            ],
+            [
+              -26.09,
+              37.61
+            ],
+            [
+              -27.67,
+              38.33
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "properties": {
+        "purpose": "Limit opaque native background and land-cover polygons; retain complete accepted OSM and terrain inputs",
+        "region": "azores"
+      },
+      "type": "Feature"
+    }
+  ],
+  "type": "FeatureCollection"
+}

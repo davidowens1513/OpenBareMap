@@ -5,7 +5,7 @@ import argparse,hashlib,json,shutil,sqlite3,sys,zipfile,subprocess
 ROOT=Path(__file__).resolve().parents[1]
 sys.path.insert(0,str(ROOT/'scripts'))
 from package_resources import build_capped_coast, copy_map_file
-from regions import REGIONS,terrain_file,apply_terrain_notice,profile, active_map, region_style, provenance_files, region_path, basemap_attribution
+from regions import REGIONS,terrain_file,apply_terrain_notice,profile, active_map, region_style, provenance_files, region_path, basemap_attribution, coverage_notice
 
 def sha(p):
     with p.open('rb') as f:return hashlib.file_digest(f,'sha256').hexdigest()
@@ -46,7 +46,7 @@ def assemble(output, region='ireland'):
         notice.write_text(notice.read_text().replace('Townland label points and fixed Irish Grid are inherited from OpenBareMap 1.1; source dates/generation recipes are not newly asserted.', f"{edition['gridName']} generated using {edition['gridCRS']}; font glyphs and original patterns inherited from OpenBareMap 1.1.").replace('Townlands and Irish Grid inherited from OpenBareMap 1.1; see provenance.', f"{edition['gridName']} generated using {edition['gridCRS']}; see provenance."))
     if edition.get('coverageBoundary'):
         notice=package/'ATTRIBUTION.txt'
-        notice.write_text(notice.read_text()+'\nNational park boundary: Fuente: Organismo Autónomo Parques Nacionales (MITECO/OAPN), CC BY 4.0. Boundary source and calculated 25 km buffer: see provenance/boundary-source.json.\n')
+        notice.write_text(notice.read_text()+'\n'+coverage_notice(edition)+'\n')
     apply_terrain_notice(package,region)
     resources=sorted(p for p in package.rglob('*') if p.is_file())
     (package/'SHA256SUMS.txt').write_text(''.join(sha(p)+'  '+p.relative_to(package).as_posix()+'\n' for p in resources))

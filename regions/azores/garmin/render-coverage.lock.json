@@ -1,0 +1,57 @@
+{
+  "bounds": [
+    -28.97,
+    37.61,
+    -25.06,
+    38.84
+  ],
+  "contextEnvelope": [
+    -28.97,
+    37.61,
+    -25.06,
+    38.84
+  ],
+  "drawPriority": 25,
+  "format": "openbaremap-garmin-render-footprint-v1",
+  "geometry": {
+    "bytes": 1099,
+    "path": "regions/azores/garmin/render-coverage.geojson",
+    "sha256": "e8b92a152d78d725dda7a552c1822bcb520661e11d49708c77a5de3ec90b4d75"
+  },
+  "inputs": [
+    {
+      "path": "regions/azores/coverage.geojson",
+      "purpose": "Exact regional footprint for drawing the native map background",
+      "sha256": "1c05ea50649fe32a16c47e0f55a3dc7ccb7a462d7ef1128e474ae95f37a8f5c2"
+    }
+  ],
+  "knownDestinationsCovered": {
+    "faial": [
+      -28.713,
+      38.582
+    ],
+    "horta": [
+      -28.6264,
+      38.5347
+    ],
+    "pico": [
+      -28.399,
+      38.469
+    ],
+    "ponta-delgada": [
+      -25.6687,
+      37.7401
+    ],
+    "sao-jorge": [
+      -28.027,
+      38.645
+    ],
+    "sao-miguel": [
+      -25.493,
+      37.782
+    ]
+  },
+  "purpose": "Rectangular Garmin tiles may overlap other countries. Do not fill their padding with sea, land or land-cover polygons.",
+  "region": "azores",
+  "transparentNativeMap": true
+}

@@ -1,0 +1,41 @@
+{
+  "regions": {
+    "camino-portugues": {
+      "basemap": {
+        "sourceSHA256": "218462057b8e2da8f076d6a7e9427d9805451f08359a449529ee49e4d1a9ff71",
+        "bytes": 94937557,
+        "sha256": "6a8779286a64d89ada4ef391e08b75a80974c6abeab25d0f51c589caffe96e3e",
+        "tiles": 2399
+      },
+      "grid": {
+        "sourceSHA256": "8e854eae704c2b15adc8114a605b1f797ccf854ef852e4614e3241da3930abb3",
+        "bytes": 813674,
+        "sha256": "fefdad5084695bfe3a893f48556d1a19e22aa5359c3c74f8128ebedec54d2788",
+        "tiles": 2792
+      },
+      "hillshade": {
+        "sourceSHA256": "49dc02a72588d4948e1b0e9a0783b8d0cb6cf34551d51256b63b45d37ac4c94f",
+        "bytes": 6186672,
+        "sha256": "a95dbbf66010047fe8ddb16afe9c039c950269632750d285a6a08c3f7a35d1a8",
+        "tiles": 235
+      },
+      "topography": {
+        "sourceSHA256": "cfd6f0e7ab700a1ee28bb10a26e0c67d8c0de3647c88a5c23be1d0ad053bec8d",
+        "bytes": 19620467,
+        "sha256": "c2304504aead6d0d80742c62659309ee51fe1d4f4187a757cdf2781e7b6dd270",
+        "tiles": 28482
+      },
+      "coast": {
+        "sourceSHA256": "87a909df82c54f0649bde70eac36955ac8ebf4384b838506ec7dc5db762fbf52",
+        "bytes": 534072,
+        "sha256": "06191886721235d2f313d719864df9c52312c8a7b0530284ed9d8e6b558461f0",
+        "tiles": 1951
+      }
+    }
+  },
+  "pmtilesPython": "3.8.1",
+  "pmtilesJS": "4.5.0",
+  "librarySHA256": "caf981bc46f6327ee7e65d5dc964d89d38a69f60edca2bd4c5c890c21b554c6c",
+  "dataOrigin": "https://downloads.appsbyonzy.dev/OpenBareMap/camino-portugues/2.0.0/preview",
+  "scope": "Complete selected map tiles; no regional or zoom sampling."
+}
