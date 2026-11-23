@@ -6,6 +6,12 @@ from regions import profile,region_path
 
 BASE='https://copernicus-dem-30m.s3.amazonaws.com/'
 
+def cell_name(lat, lon, *, copernicus=False):
+ ns, ew = ('N' if lat >= 0 else 'S'), ('E' if lon >= 0 else 'W')
+ if copernicus:
+  return f'Copernicus_DSM_COG_10_{ns}{abs(lat):02d}_00_{ew}{abs(lon):03d}_00_DEM'
+ return f'{ns}{abs(lat):02d}{ew}{abs(lon):03d}.hgt'
+
 def ocean_check_land(region):
  """Prepare independently pinned coastline before the terrain build exists."""
  p=profile(region);folder=ROOT/'data/regions'/region/'copernicus'
@@ -40,7 +46,7 @@ def fetch(region,padding=False):
  if padding:cells=[(la,lo) for la in range(south-1,north+1) for lo in range(west-1,east+1) if (la,lo) not in cells]
  sources=[];cogs={}
  for la,lo in cells:
-  stem=f'Copernicus_DSM_COG_10_N{la:02d}_00_{"W" if lo<0 else "E"}{abs(lo):03d}_00_DEM'
+  stem=cell_name(la,lo,copernicus=True)
   if stem in available or stem+'/' in available:
    item=download(BASE+stem+'/'+stem+'.tif',cache/(stem+'.tif'));sources.append(item);cogs[(la,lo)]=ROOT/item['path']
  toolchain=json.loads((ROOT/'topography-toolchain.lock.json').read_text());tools={n:toolchain[n]['path'] for n in ['gdalwarp','gdal_translate','gdalbuildvrt']}
@@ -53,7 +59,7 @@ def fetch(region,padding=False):
   if cogs:
    command=[tools['gdalbuildvrt'],str(vrt),*map(str,cogs.values())];subprocess.run(command,env=env,check=True,stdout=subprocess.DEVNULL);commands.append(command)
   for la,lo in cells:
-   name=f'N{la:02d}{"W" if lo<0 else "E"}{abs(lo):03d}.hgt';raw=temp/name;target=out/(name+'.gz')
+   name=cell_name(la,lo);raw=temp/name;target=out/(name+'.gz')
    if target.exists():raise FileExistsError('Unregistered Copernicus cell: '+str(target))
    if (la,lo) in cogs:
     tif=temp/(name+'.tif');half=1/7200

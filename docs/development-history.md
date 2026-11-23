@@ -2,6 +2,16 @@
 
 This document records the development of OpenBareMap and the structure of its build pipeline. The [main README](../README.md) describes the available map and platform packages.
 
+## 23 November 2026 · Iceland and Patagonia
+
+Built and structurally validated Southern Highlands, Torres del Paine and El
+Chaltén & Los Glaciares for iOS, Android, Garmin and PMTiles previews. All
+three have 20 m contours, hillshade, local glyphs and separate map-key
+symbols for glaciers and permanent snowfields. The locked OSM extracts yielded
+28, 94 and 204 glacier polygons respectively, and no separately tagged
+permanent snowfield polygons. The website and 40-edition catalogues were staged
+for publication. See the [regional release guide](regional-editions.md#iceland-and-patagonia).
+
 ## 22 November 2026 · Glacier and snowfield review
 
 Glacier and permanent snowfield screening covered all 37 published editions.

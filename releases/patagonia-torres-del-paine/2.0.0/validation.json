@@ -1,0 +1,417 @@
+{
+  "coverage": "Torres del Paine National Park and the complete W and O circuits, including Grey Glacier, the French Valley and the road approaches from Puerto Natales.",
+  "coverageAnchors": {
+    "base-torres": {
+      "coordinate": [
+        -72.949,
+        -50.969
+      ],
+      "featuresInNeighbouringDetailedTiles": 103
+    },
+    "dickson": {
+      "coordinate": [
+        -73.082,
+        -50.845
+      ],
+      "featuresInNeighbouringDetailedTiles": 30
+    },
+    "french-valley": {
+      "coordinate": [
+        -73.041,
+        -51.014
+      ],
+      "featuresInNeighbouringDetailedTiles": 191
+    },
+    "grey-glacier": {
+      "coordinate": [
+        -73.252,
+        -50.903
+      ],
+      "featuresInNeighbouringDetailedTiles": 19
+    },
+    "john-gardner-pass": {
+      "coordinate": [
+        -73.187,
+        -50.899
+      ],
+      "featuresInNeighbouringDetailedTiles": 25
+    },
+    "laguna-amarga": {
+      "coordinate": [
+        -72.744,
+        -51.025
+      ],
+      "featuresInNeighbouringDetailedTiles": 19
+    },
+    "paine-grande": {
+      "coordinate": [
+        -73.095,
+        -51.071
+      ],
+      "featuresInNeighbouringDetailedTiles": 128
+    },
+    "puerto-natales": {
+      "coordinate": [
+        -72.505,
+        -51.731
+      ],
+      "featuresInNeighbouringDetailedTiles": 3362
+    },
+    "seron": {
+      "coordinate": [
+        -72.851,
+        -50.912
+      ],
+      "featuresInNeighbouringDetailedTiles": 71
+    }
+  },
+  "datasets": {
+    "basemap": {
+      "empty_tile_count": 566,
+      "logical_tiles_sha256": "ba823a9a4c9e42785c9919f73d6ac1dd89d526282faecbc5f2f4f9d5407e0f74",
+      "tile_count": 6403
+    },
+    "grid": {
+      "empty_tile_count": 0,
+      "logical_tiles_sha256": "5f9cdb0acf8d98433316fb2eaedf81a8380fbdbbe79226b636611553fee0f07a",
+      "tile_count": 8835
+    },
+    "hillshade": {
+      "empty_tile_count": 0,
+      "logical_tiles_sha256": "544a7d98c00fab93631cc8ef7fd630915716d0de745b27f93f5cd0714e721031",
+      "tile_count": 640
+    },
+    "topography": {
+      "empty_tile_count": 56189,
+      "logical_tiles_sha256": "499a0973e4a699daf1a26749288a425ad5b12750cc338b791b082b3460e117a1",
+      "tile_count": 68661
+    }
+  },
+  "detail": {
+    "basemap": {
+      "boundaries": 2063,
+      "contours": 0,
+      "permanentIce": {
+        "glacier": 4977,
+        "permanent_snow": 0
+      }
+    },
+    "topography": {
+      "boundaries": 0,
+      "contours": 318981
+    }
+  },
+  "garmin": {
+    "familyId": 4870,
+    "garminPackageRevision": "2.0.1-glacier-r1",
+    "inspection": {
+      "anchorLabels": {
+        "Puerto Natales": "Puerto Natales"
+      },
+      "bounds": [
+        -73.84005546569824,
+        -51.8100643157959,
+        -72.29999542236328,
+        -50.559940338134766
+      ],
+      "coastPolygonsByLevel": {
+        "0": {
+          "0x32": 9,
+          "0x54": 1083
+        },
+        "1": {
+          "0x32": 8,
+          "0x54": 640
+        },
+        "2": {
+          "0x32": 8,
+          "0x54": 484
+        },
+        "3": {
+          "0x32": 8,
+          "0x54": 208
+        },
+        "4": {
+          "0x32": 8,
+          "0x54": 77
+        }
+      },
+      "contoursByLevel": {
+        "0": {
+          "0x20": 36685,
+          "0x22": 8132
+        },
+        "1": {
+          "0x20": 28658,
+          "0x22": 6179
+        },
+        "2": {
+          "0x22": 5706
+        },
+        "3": {
+          "0x10008": 5331
+        },
+        "4": {}
+      },
+      "lineInstancesAtHighestDetail": {
+        "0x10001": 74,
+        "0x10003": 12,
+        "0x10004": 10,
+        "0x10005": 14,
+        "0x10006": 118,
+        "0x1000b": 3,
+        "0x14": 4,
+        "0x16": 751,
+        "0x18": 405,
+        "0x1a": 17,
+        "0x1c": 116,
+        "0x1e": 227,
+        "0x1f": 223,
+        "0x2": 15,
+        "0x20": 36685,
+        "0x22": 8132,
+        "0x3": 36,
+        "0x4": 27,
+        "0x6": 943,
+        "0x7": 420,
+        "0xa": 377
+      },
+      "logicalCombinedSHA256": "73240455c0557640b585e249836973145fef69fbdb6740927c7424d028c95495",
+      "logicalHashNote": "Internal file names, sizes and payloads; only CommonHeader creation-date bytes 14..20 are zeroed for hashing. IMG archive headers are excluded. Output bytes are never modified.",
+      "logicalTileSHA256": {
+        "48700001.img": "3b2035abd6d2400242903fe04a1b79b2c0118d6736a06e44902b3240954bcc4e",
+        "48700002.img": "acb6972a6011139ed272fd8a10154195cd1d4c5b9e6dd7d8d9db017090ae9b4e",
+        "48700003.img": "91ff74c86c1fb20a004f669d944f0928959d54e10d4c3ce611467b2a76116d25",
+        "48700004.img": "f2778d9fa156736097c0837f99ab80b5dd7f59de277128b6b2b3d7122fed18a5",
+        "48700005.img": "c04a33a0f6cf18e7c04ebb23b7dbc46532462587cf1f4854164c6577388c1dc0",
+        "48700006.img": "c2d999e5e4c47c9c6bd51e387d7a3b13eedaf5bd0b68cdaae47f8869581f8841",
+        "48700007.img": "f81fa9091c81c33f0553b1a0be9e5ca6ac5795affa3781447ea83cda1df9436f",
+        "48700008.img": "f4bd495ecb93f8623f7a7c2cb0bf031f9c06db8734c0af58f67f561970a4217b"
+      },
+      "pointInstancesAtHighestDetail": {
+        "0x100": 1,
+        "0x10001": 8,
+        "0x10002": 132,
+        "0x10003": 95,
+        "0x10006": 680,
+        "0x2f0b": 60,
+        "0x600": 1,
+        "0x650c": 146,
+        "0x6603": 66,
+        "0x6615": 16,
+        "0x6616": 286,
+        "0xb00": 17,
+        "0xc00": 46
+      },
+      "polygonInstancesAtHighestDetail": {
+        "0x10101": 94,
+        "0x10102": 216,
+        "0x10104": 85,
+        "0x10105": 2,
+        "0x10106": 24,
+        "0x10107": 6,
+        "0x10109": 83,
+        "0x1010a": 12,
+        "0x1010b": 1,
+        "0x1010c": 500,
+        "0x13": 1467,
+        "0x32": 9,
+        "0x3c": 966,
+        "0x50": 697,
+        "0x51": 53,
+        "0x54": 1083
+      },
+      "routing": false,
+      "subfileBytes": {
+        "DEM": 16122436,
+        "LBL": 46569,
+        "MPS": 732,
+        "RGN": 15891368,
+        "SRT": 912,
+        "TRE": 201306,
+        "TYP": 3037
+      },
+      "tiles": 8
+    },
+    "output": {
+      "bytes": 32346112,
+      "path": "regions/patagonia-torres-del-paine/garmin/dist/OpenBareMap-Patagonia-Torres-del-Paine.img",
+      "sha256": "6c4bab1b3e3e48d5839edaa4180799a2e883ec698a1e4f1ebc3af22d7b48d036"
+    },
+    "routing": false,
+    "status": "compiled and structurally inspected; hardware rendering pending"
+  },
+  "geometryProcessing": {
+    "contours": 25201,
+    "grid": {
+      "grid_10km": 31,
+      "grid_1km": 292
+    },
+    "landcover": {
+      "empty_source_areas": [],
+      "features": 870,
+      "permanentIce": {
+        "glacier": 94,
+        "permanent_snow": 0
+      },
+      "retained": 155,
+      "smoothed": 715
+    }
+  },
+  "irelandGarminPackageRevision": "2.0.1-trail-detail-r1",
+  "irelandPreserved": true,
+  "labelGlyphs": {
+    "Open Sans Bold": true,
+    "Open Sans Regular": true,
+    "Open Sans Semibold": true
+  },
+  "landBackground": {
+    "base-torres": {
+      "coordinate": [
+        -72.949,
+        -50.969
+      ],
+      "verifiedZooms": [
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    },
+    "dickson": {
+      "coordinate": [
+        -73.082,
+        -50.845
+      ],
+      "verifiedZooms": [
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    },
+    "french-valley": {
+      "coordinate": [
+        -73.041,
+        -51.014
+      ],
+      "verifiedZooms": [
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    },
+    "grey-glacier": {
+      "coordinate": [
+        -73.252,
+        -50.903
+      ],
+      "verifiedZooms": [
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    },
+    "john-gardner-pass": {
+      "coordinate": [
+        -73.187,
+        -50.899
+      ],
+      "verifiedZooms": [
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    },
+    "laguna-amarga": {
+      "coordinate": [
+        -72.744,
+        -51.025
+      ],
+      "verifiedZooms": [
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    },
+    "paine-grande": {
+      "coordinate": [
+        -73.095,
+        -51.071
+      ],
+      "verifiedZooms": [
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    },
+    "puerto-natales": {
+      "coordinate": [
+        -72.505,
+        -51.731
+      ],
+      "verifiedZooms": [
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    },
+    "seron": {
+      "coordinate": [
+        -72.851,
+        -50.912
+      ],
+      "verifiedZooms": [
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    }
+  },
+  "packages": {
+    "android": {
+      "checkedFiles": 43,
+      "nativeDeviceRenderingTested": false,
+      "sourceFiles": {
+        "basemap": "maps/basemap.mbtiles",
+        "coast": "maps/coast.mbtiles",
+        "hillshade": "maps/hillshade.mbtiles",
+        "topography": "maps/topography.mbtiles",
+        "utm-grid": "maps/grid.mbtiles"
+      }
+    },
+    "ios": {
+      "checkedFiles": 46,
+      "nativeDeviceRenderingTested": false,
+      "sourceFiles": {
+        "basemap": "maps/basemap.mbtiles",
+        "coast": "maps/coast.mbtiles",
+        "hillshade": "maps/hillshade.mbtiles",
+        "topography": "maps/topography.mbtiles",
+        "utm-grid": "maps/grid.mbtiles"
+      }
+    }
+  },
+  "permanentIceSourceCounts": {
+    "glacier": 94,
+    "permanent_snow": 0
+  },
+  "region": "patagonia-torres-del-paine",
+  "status": "automated checks passed; visual and hardware acceptance pending"
+}

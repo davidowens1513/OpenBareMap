@@ -1,0 +1,106 @@
+{
+  "acceptance": "Automated checks only; see validation and visual-review records for actual reviewed scope.",
+  "coverage": "Landmannalaugar, the Laugavegur and Fimmv\u00f6r\u00f0uh\u00e1ls routes, \u00de\u00f3rsm\u00f6rk, Sk\u00f3gar, Hekla, and the Eyjafjallaj\u00f6kull and M\u00fdrdalsj\u00f6kull ice caps.",
+  "datasets": {
+    "basemap": {
+      "bytes": 26730496,
+      "path": "releases/iceland-southern-highlands/2.0.0/maps/basemap.mbtiles",
+      "sha256": "b44e6dec80a47e3a6a7c669364ace65ef437b351edac0f39de110429e755ee34",
+      "validation": {
+        "empty_tile_count": 1518,
+        "logical_tiles_sha256": "5fe143a62fbeb85a9d014a5765c5352a4a83e61954c132f401e28cf69c71a375",
+        "tile_count": 13319
+      }
+    },
+    "grid": {
+      "bytes": 3670016,
+      "path": "releases/iceland-southern-highlands/2.0.0/maps/grid.mbtiles",
+      "sha256": "ff5b8f2601d70e18a91fbf8cc96c60272e4235bb42fc6e823754c4e579771504",
+      "validation": {
+        "empty_tile_count": 0,
+        "logical_tiles_sha256": "e3934849e2731b1f6702d804cecd94315317acc31e6925f43fd75be44618be46",
+        "tile_count": 13590
+      }
+    },
+    "hillshade": {
+      "bytes": 18251776,
+      "path": "releases/iceland-southern-highlands/2.0.0/maps/hillshade.mbtiles",
+      "sha256": "0d73887e926a7654b71efc3bf87279a0710330353ec97ff9ca502e13496f95d9",
+      "validation": {
+        "empty_tile_count": 0,
+        "logical_tiles_sha256": "f6a28b8e99f207dda0d37970414d6542f286c4657ebc8b046683b7644e0fd4ca",
+        "tile_count": 854
+      }
+    },
+    "topography": {
+      "bytes": 41287680,
+      "path": "releases/iceland-southern-highlands/2.0.0/maps/topography-context.mbtiles",
+      "sha256": "4d3cdc621fb01d2c15c057b029be13fdf56f95fd4793e1c782f058f12dc33fe3",
+      "validation": {
+        "empty_tile_count": 66622,
+        "logical_tiles_sha256": "3a43f7ec90dbb71488d328e176dbb51ab941e4eda3563bd9d5e3c65d2be3ecbb",
+        "tile_count": 81216
+      }
+    }
+  },
+  "garmin": {
+    "bytes": 22202368,
+    "path": "regions/iceland-southern-highlands/garmin/dist/OpenBareMap-Iceland-Southern-Highlands.img",
+    "sha256": "8d7231890cbd6b98a68edf2759e9e098e78f1cde7febf34e28f62060c4329e1a"
+  },
+  "geometryReport": {
+    "path": "releases/iceland-southern-highlands/2.0.0/build-records/iceland-southern-highlands-geometry/geometry-report.json",
+    "sha256": "39870db459f5b916d7d18e8c6191b585811e1b338ee7ac6383881125aa606aa8"
+  },
+  "hostAppsModified": false,
+  "mapVersion": "2.0.0",
+  "osm": {
+    "bytes": 8447902,
+    "operation": "Complete-feature bbox extraction with nested relation references",
+    "path": "data/regions/iceland-southern-highlands/iceland-261121.osm.clipped.osm.pbf",
+    "replicationTimestamp": "2026-11-21T21:20:51Z",
+    "sha256": "32562ba0abe0bf9bb228986c88fd7a2775fea30099c13274f2fd0a256478815a",
+    "snapshot_date": "2026-11-21",
+    "url": "https://download.geofabrik.de/europe/iceland/iceland-261121.osm.pbf"
+  },
+  "packages": {
+    "android": {
+      "archive": {
+        "bytes": 94474107,
+        "path": "regions/iceland-southern-highlands/android/OpenBareMap-Android.zip",
+        "sha256": "7e059413cc2b2e9ccf5e6b33d3a34195ce4a36198303e4f6c055f56ee7f562ad"
+      },
+      "checksumsSHA256": "b7d046200e896f0093ebc01ee6916d6a6ad518c6b45288aae5a420043fbd3bae",
+      "manifestSHA256": "77d3f07b350c8b5328fbd2a2029de76c7a8e374150370b5e5f42dc7823b26e52",
+      "path": "regions/iceland-southern-highlands/android",
+      "validationSHA256": "f1ee96ddf156cca45f31521d1301af73b34658aa8d05b719996f442777d8d333"
+    },
+    "ios": {
+      "checksumsSHA256": "0e2e524af5332713e6e21329639461961962786a7deec6d5b72021ba19d27aea",
+      "manifestSHA256": "1e31c85428620588bb0a6743d748c00e3819b8a47a765a67ae7d0af8a8b1d11a",
+      "path": "regions/iceland-southern-highlands/ios",
+      "validationSHA256": "bdecf43b8ca67f8c13e1fb10d7b9c7cf5ac7236a183805c4d86f4fb9540d00d1"
+    }
+  },
+  "pythonRuntime": {
+    "packages": {
+      "Pillow": "12.3.0",
+      "certifi": "2026.10.23",
+      "charset-normalizer": "3.5.2",
+      "idna": "3.20",
+      "numpy": "2.5.4",
+      "osmium": "4.3.2",
+      "pyproj": "3.8.0",
+      "requests": "2.34.2",
+      "shapely": "2.2.0",
+      "urllib3": "2.8.0"
+    },
+    "platform": "macOS-27.2.1-arm64-arm-64bit-Mach-O",
+    "python": "3.14.5 (main, May 10 2026, 10:21:34) [Clang 21.0.0 (clang-2100.0.123.102)]",
+    "requirementsSHA256": "427f12ff8b49bfebac0a7d453c2f65bd15d6695584b18e6ecee1fdfeed20a36c"
+  },
+  "region": "iceland-southern-highlands",
+  "styleSHA256": "3f2a4c0ba312575c137e89584d776ba702524d3370cd98ecb9ddcde13d69d9fb",
+  "terrainLockSHA256": "3e8a5583cda6a871840b23f7d8b999ac622dc34797e1e6a16bd7562a19fa0ef0",
+  "validation": "validation.json"
+}

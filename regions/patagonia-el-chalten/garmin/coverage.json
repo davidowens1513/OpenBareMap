@@ -1,0 +1,40 @@
+{
+  "areaSquareDegrees": 2.631299999999997,
+  "bounds": [
+    -73.55,
+    -50.69,
+    -72.08,
+    -48.9
+  ],
+  "entireRequestedFootprintCovered": true,
+  "exactFootprint": null,
+  "inputs": [
+    {
+      "bytes": 14403,
+      "path": "data/regions/patagonia-el-chalten/argentina.poly",
+      "sha256": "76f8a0212f268e796ad1a13a22184cd313bcc02700e44ef5be9e71c1b3a628f5",
+      "url": "https://download.geofabrik.de/south-america/argentina/argentina.poly"
+    },
+    {
+      "bytes": 4371,
+      "path": "data/regions/patagonia-el-chalten/chile.poly",
+      "sha256": "a2c053d95312ba82997dda3deeb995a5ccff285d74db545d68b04a95facd26d3",
+      "url": "https://download.geofabrik.de/south-america/chile/chile.poly"
+    }
+  ],
+  "knownDestinationsCovered": [
+    "cerro-torre",
+    "el-calafate",
+    "el-chalten",
+    "fitz-roy",
+    "hielo-sur",
+    "island",
+    "lago-del-desierto",
+    "laguna-de-los-tres",
+    "laguna-torre",
+    "perito-moreno"
+  ],
+  "operation": "Requested rectangular crop; source outlines cover all destination anchors",
+  "polygons": 1,
+  "sha256": "afd76dea77bb9d54f7b9e345f149867ad180367da3d2312f2b51e5eef55b58ff"
+}

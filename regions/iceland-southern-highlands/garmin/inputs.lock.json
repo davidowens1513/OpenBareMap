@@ -1,0 +1,20 @@
+{
+  "inputs": [
+    {
+      "path": "regions/iceland-southern-highlands/garmin/inputs/contours.geojson.gz",
+      "sha256": "fec067468fbb57095cfa3967c03300248edc8fa77332093f285eeea10daa8d69",
+      "uncompressedSHA256": "28fe2f11fd14db30f56b9d56d5212de8c7e973d472487fe4f7301403e3e78d2d"
+    },
+    {
+      "path": "regions/iceland-southern-highlands/garmin/inputs/landcover.geojson.gz",
+      "sha256": "a670e3949706db02c8abe823f0279da2379922f64bdfa94d91e296f7a9cb822f",
+      "uncompressedSHA256": "4273fdbf0d775ca194c7c03306d6a676492d58e8bbf2ed477bbf8a4045ddc433"
+    },
+    {
+      "path": "regions/iceland-southern-highlands/garmin/inputs/land.geojson.gz",
+      "sha256": "c916ebf27784ac11f83faa871a1c1856a8be4aace301cff859f0259a0561d127",
+      "uncompressedSHA256": "8f18691e1e254ae9711e7032737380372cccbd44c77697b27e67ad7f67d4230c"
+    }
+  ],
+  "region": "iceland-southern-highlands"
+}

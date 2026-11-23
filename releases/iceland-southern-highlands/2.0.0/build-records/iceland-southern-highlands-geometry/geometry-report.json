@@ -1,0 +1,42 @@
+{
+  "builderSHA256": "f5e94cbef223bb0e9403950eab9d79021a1429ee132959b9cf627eb677ab8606",
+  "contoursSourceSHA256": "992a508745cc585d3b1adba1552655ec48725a7808d3ea14873712b09a888c56",
+  "counts": {
+    "contours": 15287,
+    "grid": {
+      "grid_10km": 28,
+      "grid_1km": 262
+    },
+    "landcover": {
+      "empty_source_areas": [],
+      "features": 8800,
+      "permanentIce": {
+        "glacier": 28,
+        "permanent_snow": 0
+      },
+      "retained": 223,
+      "smoothed": 8577
+    }
+  },
+  "osm": {
+    "bytes": 8447902,
+    "operation": "Complete-feature bbox extraction with nested relation references",
+    "path": "data/regions/iceland-southern-highlands/iceland-261121.osm.clipped.osm.pbf",
+    "replicationTimestamp": "2026-11-21T21:20:51Z",
+    "sha256": "32562ba0abe0bf9bb228986c88fd7a2775fea30099c13274f2fd0a256478815a",
+    "snapshot_date": "2026-11-21",
+    "url": "https://download.geofabrik.de/europe/iceland/iceland-261121.osm.pbf"
+  },
+  "outputs": {
+    "contours.geojson": "28fe2f11fd14db30f56b9d56d5212de8c7e973d472487fe4f7301403e3e78d2d",
+    "grid_10km.geojson": "d587b76101032d46993242c2955c041f9358935996f745ba0c2f4740fadd52aa",
+    "grid_1km.geojson": "ecd213952ddde429f27770b60d1d8295e0c31af473d39ffffa97bd6a6afd1dd4",
+    "landcover.geojson": "4273fdbf0d775ca194c7c03306d6a676492d58e8bbf2ed477bbf8a4045ddc433"
+  },
+  "permanentIce": {
+    "glacier": 28,
+    "permanent_snow": 0
+  },
+  "region": "iceland-southern-highlands",
+  "smootherSHA256": "7581d024dc1c1bec931642c7201db149bf64a64c814c451fa8bf37a0881ea6c9"
+}

@@ -193,6 +193,10 @@ def validate(region):
     if p.get('permanentIce'):
         if set(geometry.get('permanentIce', {})) != set(PERMANENT_ICE):
             raise ValueError('Missing permanent ice geometry record')
+        output['permanentIceSourceCounts'] = geometry['permanentIce']
+        for kind in p.get('requiredPermanentIce', []):
+            if not geometry['permanentIce'][kind]:
+                raise ValueError(f'Regional source contains no in-coverage {kind} polygons')
         for kind, count in geometry['permanentIce'].items():
             if count and not output['detail']['basemap']['permanentIce'][kind]:
                 raise ValueError(f'No {kind} polygons survived vector tiling')

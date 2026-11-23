@@ -1,0 +1,21 @@
+{
+  "combinedSHA256": "1871a0c95033054c342faf690fadf32c229c30a2ceb61981b658222c3737b5cf",
+  "command": [
+    "/opt/homebrew/opt/openjdk@21/libexec/openjdk.jdk/Contents/Home/bin/java",
+    "-Xmx6g",
+    "-jar",
+    "/Volumes/Extreme SSD/Projects/OpenBareMap/garmin/tools/splitter-r654/splitter.jar",
+    "--mapid=48690001",
+    "--description=OpenBareMap Iceland \u2013 Southern Highlands",
+    "--max-nodes=1000000",
+    "--max-threads=2",
+    "--keep-complete=true",
+    "--output=pbf",
+    "--polygon-file=/Volumes/Extreme SSD/Projects/OpenBareMap/regions/iceland-southern-highlands/garmin/coverage.poly",
+    "--output-dir=/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/906ead9d53a7/iceland-southern-highlands/garmin/split",
+    "--ignore-osm-bounds=true",
+    "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/906ead9d53a7/iceland-southern-highlands/garmin/combined.osm.pbf"
+  ],
+  "coverageSHA256": "3c8b1b4f64586892b1f30e7dc573c2ef344de5e0adc3d8cec395bd334e2a712c",
+  "ignoreSourceHeaderBounds": true
+}

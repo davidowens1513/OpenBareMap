@@ -1,0 +1,41 @@
+{
+  "regions": {
+    "patagonia-torres-del-paine": {
+      "basemap": {
+        "sourceSHA256": "7f4f8e8b0f9e669a2ab799ea5c7cc15de24bbc29dc06870aacd245ee1091e789",
+        "bytes": 5753428,
+        "sha256": "7dd29913658de1bfe1cb6b937adef60fac516927471859c2e991c5f283544b01",
+        "tiles": 6403
+      },
+      "grid": {
+        "sourceSHA256": "f26a81ca78dd0fced1221e947c4f2fa7d45c578a3310864563fa8a42817fb7e5",
+        "bytes": 2449172,
+        "sha256": "4e01409e0ee8a065d986eb90467afdefa0edaae71c8ff8edfc0b55ae312b729a",
+        "tiles": 8835
+      },
+      "hillshade": {
+        "sourceSHA256": "2143b52ab8c472c7ad7566c138af3bda937ca3565ebcc1db17dd5dfde7c45b1e",
+        "bytes": 20579628,
+        "sha256": "6743cee68bfbe02f04f605ad526b5d19f5352d03a1d024cc08d1303442519d19",
+        "tiles": 640
+      },
+      "topography": {
+        "sourceSHA256": "0186deaf5f93549ed8ab8f31de4c79e755dc3f861f5b3d2ada5ad6a768167f7c",
+        "bytes": 91497356,
+        "sha256": "6dd670573dea7efbde1c3fa64bd3fb40c32ac939be2fd34cbbc6f6ecf184d25d",
+        "tiles": 68661
+      },
+      "coast": {
+        "sourceSHA256": "689fe47e246bda1313d6f854196e8a4dadd04cba86a5e2b66051f3bca2dcca6e",
+        "bytes": 7734057,
+        "sha256": "b9aec4f0a16b48ebbf78d6eb47daf442318a5353053ec28a7ffecaec9fdadbd3",
+        "tiles": 4588
+      }
+    }
+  },
+  "pmtilesPython": "3.8.1",
+  "pmtilesJS": "4.5.0",
+  "librarySHA256": "caf981bc46f6327ee7e65d5dc964d89d38a69f60edca2bd4c5c890c21b554c6c",
+  "dataOrigin": "https://downloads.appsbyonzy.dev/OpenBareMap/patagonia-torres-del-paine/2.0.0/preview",
+  "scope": "Complete selected map tiles; no regional or zoom sampling."
+}

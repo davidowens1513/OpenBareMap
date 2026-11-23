@@ -17,12 +17,15 @@
     "england-wales": "2.0.1",
     "faroe-islands": "2.0.0",
     "high-tatras": "2.0.1",
+    "iceland-southern-highlands": "2.0.0",
     "ireland": "2.0.0",
     "madeira": "2.0.0",
     "malta": "2.0.0",
     "norway-central": "2.0.1",
     "norway-north": "2.0.1",
     "norway-south": "2.0.1",
+    "patagonia-el-chalten": "2.0.0",
+    "patagonia-torres-del-paine": "2.0.0",
     "picos-de-europa": "2.0.0",
     "pyrenees": "2.0.2",
     "sardinia": "2.0.0",
@@ -1160,6 +1163,76 @@
         "url": "https://downloads.appsbyonzy.dev/OpenBareMap/high-tatras/2.0.1/app-bundles-v1/ios/OpenBareMap-High-Tatras-iOS-Bundle.zip"
       }
     },
+    "iceland-southern-highlands": {
+      "android": {
+        "bytes": 94502598,
+        "datasets": {
+          "basemap": {
+            "path": "maps/basemap.mbtiles",
+            "sha256": "b44e6dec80a47e3a6a7c669364ace65ef437b351edac0f39de110429e755ee34"
+          },
+          "coast": {
+            "derivedFrom": "4d3cdc621fb01d2c15c057b029be13fdf56f95fd4793e1c782f058f12dc33fe3",
+            "path": "maps/coast.mbtiles",
+            "sha256": "a60cb628e406105031d8607fa94670ec6a5266ef3146a1f0c1e350950908bf0f"
+          },
+          "grid": {
+            "path": "maps/grid.mbtiles",
+            "sha256": "ff5b8f2601d70e18a91fbf8cc96c60272e4235bb42fc6e823754c4e579771504"
+          },
+          "hillshade": {
+            "path": "maps/hillshade.mbtiles",
+            "sha256": "0d73887e926a7654b71efc3bf87279a0710330353ec97ff9ca502e13496f95d9"
+          },
+          "topography": {
+            "path": "maps/topography.mbtiles",
+            "sha256": "4d3cdc621fb01d2c15c057b029be13fdf56f95fd4793e1c782f058f12dc33fe3"
+          }
+        },
+        "instructionsSHA256": "c9cc16bac0332c77488b8a48959c1bde843221e2af6d35ed253e101e298e5e40",
+        "instructionsURL": "https://downloads.appsbyonzy.dev/OpenBareMap/iceland-southern-highlands/2.0.0/app-bundles-v1/android/instructions.txt",
+        "localPath": "releases/iceland-southern-highlands/2.0.0/app-bundles-v1/android/OpenBareMap-Iceland-Southern-Highlands-Android-Bundle.zip",
+        "mapManifestSHA256": "77d3f07b350c8b5328fbd2a2029de76c7a8e374150370b5e5f42dc7823b26e52",
+        "r2Key": "OpenBareMap/iceland-southern-highlands/2.0.0/app-bundles-v1/android/OpenBareMap-Iceland-Southern-Highlands-Android-Bundle.zip",
+        "sha256": "424ae45b63fdeaf85e56c5dcb2d2fd53181bc52ee8ad72c90817508e76412a4e",
+        "url": "https://downloads.appsbyonzy.dev/OpenBareMap/iceland-southern-highlands/2.0.0/app-bundles-v1/android/OpenBareMap-Iceland-Southern-Highlands-Android-Bundle.zip"
+      },
+      "ios": {
+        "bytes": 94503042,
+        "datasets": {
+          "basemap": {
+            "path": "maps/basemap.mbtiles",
+            "sha256": "b44e6dec80a47e3a6a7c669364ace65ef437b351edac0f39de110429e755ee34"
+          },
+          "coast": {
+            "derived_from": "4d3cdc621fb01d2c15c057b029be13fdf56f95fd4793e1c782f058f12dc33fe3",
+            "maxzoom": 12,
+            "operation": "Preserve land-layer MVT bytes only through zoom 12; omit other layers.",
+            "path": "maps/coast.mbtiles",
+            "sha256": "a60cb628e406105031d8607fa94670ec6a5266ef3146a1f0c1e350950908bf0f"
+          },
+          "grid": {
+            "path": "maps/grid.mbtiles",
+            "sha256": "ff5b8f2601d70e18a91fbf8cc96c60272e4235bb42fc6e823754c4e579771504"
+          },
+          "hillshade": {
+            "path": "maps/hillshade.mbtiles",
+            "sha256": "0d73887e926a7654b71efc3bf87279a0710330353ec97ff9ca502e13496f95d9"
+          },
+          "topography": {
+            "path": "maps/topography.mbtiles",
+            "sha256": "4d3cdc621fb01d2c15c057b029be13fdf56f95fd4793e1c782f058f12dc33fe3"
+          }
+        },
+        "instructionsSHA256": "a5b4a9237282e5b38bde090538190cdf94bed54aaee3e3398df27883047a30d9",
+        "instructionsURL": "https://downloads.appsbyonzy.dev/OpenBareMap/iceland-southern-highlands/2.0.0/app-bundles-v1/ios/instructions.txt",
+        "localPath": "releases/iceland-southern-highlands/2.0.0/app-bundles-v1/ios/OpenBareMap-Iceland-Southern-Highlands-iOS-Bundle.zip",
+        "mapManifestSHA256": "1e31c85428620588bb0a6743d748c00e3819b8a47a765a67ae7d0af8a8b1d11a",
+        "r2Key": "OpenBareMap/iceland-southern-highlands/2.0.0/app-bundles-v1/ios/OpenBareMap-Iceland-Southern-Highlands-iOS-Bundle.zip",
+        "sha256": "9d2ebfdad644929aaaca024d4a7ae1fb8498da53d4b7919272a5868b944a4986",
+        "url": "https://downloads.appsbyonzy.dev/OpenBareMap/iceland-southern-highlands/2.0.0/app-bundles-v1/ios/OpenBareMap-Iceland-Southern-Highlands-iOS-Bundle.zip"
+      }
+    },
     "ireland": {
       "android": {
         "bytes": 1008370658,
@@ -1578,6 +1651,146 @@
         "r2Key": "OpenBareMap/norway-south/2.0.1/app-bundles-v1/ios/OpenBareMap-Norway-South-iOS-Bundle.zip",
         "sha256": "7b9dd80505160fef4c72f3b1d5f79ad5d45a775a77bb2e8bec718fbcb5264e40",
         "url": "https://downloads.appsbyonzy.dev/OpenBareMap/norway-south/2.0.1/app-bundles-v1/ios/OpenBareMap-Norway-South-iOS-Bundle.zip"
+      }
+    },
+    "patagonia-el-chalten": {
+      "android": {
+        "bytes": 181680272,
+        "datasets": {
+          "basemap": {
+            "path": "maps/basemap.mbtiles",
+            "sha256": "ae4ee89264de6cdd94b15c283693aaa03ebef06254ad4827c891e44f896992d9"
+          },
+          "coast": {
+            "derivedFrom": "2de6711bf3af9aa94309b7f9f13d479d9c8e48bc21085192b4964563849c6cef",
+            "path": "maps/coast.mbtiles",
+            "sha256": "90e467ea121484e63cfd867d68eb5cd58510fb019efd893ea9a3e70a34bf1abb"
+          },
+          "grid": {
+            "path": "maps/grid.mbtiles",
+            "sha256": "1ab5ea3779352c6dbeeda35d78617865f29b6c22158a27084da926a381cd0d3c"
+          },
+          "hillshade": {
+            "path": "maps/hillshade.mbtiles",
+            "sha256": "ad7a7b6a6b8abd2bbdb156bc5b83d393cdf64a9cb9cee9111aa70267c7f90ef7"
+          },
+          "topography": {
+            "path": "maps/topography.mbtiles",
+            "sha256": "2de6711bf3af9aa94309b7f9f13d479d9c8e48bc21085192b4964563849c6cef"
+          }
+        },
+        "instructionsSHA256": "b4153b3bb37d434454c38a44513a5847efd7daa1c7ad20c10c14ee7487e45764",
+        "instructionsURL": "https://downloads.appsbyonzy.dev/OpenBareMap/patagonia-el-chalten/2.0.0/app-bundles-v1/android/instructions.txt",
+        "localPath": "releases/patagonia-el-chalten/2.0.0/app-bundles-v1/android/OpenBareMap-Patagonia-El-Chalten-Android-Bundle.zip",
+        "mapManifestSHA256": "9d38b23a1e32363036d0de8a98f1487855384351ef56c1ae6cea2f0da7faf413",
+        "r2Key": "OpenBareMap/patagonia-el-chalten/2.0.0/app-bundles-v1/android/OpenBareMap-Patagonia-El-Chalten-Android-Bundle.zip",
+        "sha256": "a0920a0aad054662e9ee9eb940cb1a0905b0a4719b85bae9246d9e3126555bbe",
+        "url": "https://downloads.appsbyonzy.dev/OpenBareMap/patagonia-el-chalten/2.0.0/app-bundles-v1/android/OpenBareMap-Patagonia-El-Chalten-Android-Bundle.zip"
+      },
+      "ios": {
+        "bytes": 181680710,
+        "datasets": {
+          "basemap": {
+            "path": "maps/basemap.mbtiles",
+            "sha256": "ae4ee89264de6cdd94b15c283693aaa03ebef06254ad4827c891e44f896992d9"
+          },
+          "coast": {
+            "derived_from": "2de6711bf3af9aa94309b7f9f13d479d9c8e48bc21085192b4964563849c6cef",
+            "maxzoom": 12,
+            "operation": "Preserve land-layer MVT bytes only through zoom 12; omit other layers.",
+            "path": "maps/coast.mbtiles",
+            "sha256": "90e467ea121484e63cfd867d68eb5cd58510fb019efd893ea9a3e70a34bf1abb"
+          },
+          "grid": {
+            "path": "maps/grid.mbtiles",
+            "sha256": "1ab5ea3779352c6dbeeda35d78617865f29b6c22158a27084da926a381cd0d3c"
+          },
+          "hillshade": {
+            "path": "maps/hillshade.mbtiles",
+            "sha256": "ad7a7b6a6b8abd2bbdb156bc5b83d393cdf64a9cb9cee9111aa70267c7f90ef7"
+          },
+          "topography": {
+            "path": "maps/topography.mbtiles",
+            "sha256": "2de6711bf3af9aa94309b7f9f13d479d9c8e48bc21085192b4964563849c6cef"
+          }
+        },
+        "instructionsSHA256": "a8e1583312cc2bf9ce53790af3d7863244ac44913e2dcb74d1b9fe6a4897d6b9",
+        "instructionsURL": "https://downloads.appsbyonzy.dev/OpenBareMap/patagonia-el-chalten/2.0.0/app-bundles-v1/ios/instructions.txt",
+        "localPath": "releases/patagonia-el-chalten/2.0.0/app-bundles-v1/ios/OpenBareMap-Patagonia-El-Chalten-iOS-Bundle.zip",
+        "mapManifestSHA256": "ab798a9180ca7214a7fcae8da8ba172e574c207c35dbf64810966f7bc0665f63",
+        "r2Key": "OpenBareMap/patagonia-el-chalten/2.0.0/app-bundles-v1/ios/OpenBareMap-Patagonia-El-Chalten-iOS-Bundle.zip",
+        "sha256": "4851c83882759ae3f07ad22084a6db597d8561b84c078e6b8d3cc5e720be577a",
+        "url": "https://downloads.appsbyonzy.dev/OpenBareMap/patagonia-el-chalten/2.0.0/app-bundles-v1/ios/OpenBareMap-Patagonia-El-Chalten-iOS-Bundle.zip"
+      }
+    },
+    "patagonia-torres-del-paine": {
+      "android": {
+        "bytes": 145398259,
+        "datasets": {
+          "basemap": {
+            "path": "maps/basemap.mbtiles",
+            "sha256": "7f4f8e8b0f9e669a2ab799ea5c7cc15de24bbc29dc06870aacd245ee1091e789"
+          },
+          "coast": {
+            "derivedFrom": "0186deaf5f93549ed8ab8f31de4c79e755dc3f861f5b3d2ada5ad6a768167f7c",
+            "path": "maps/coast.mbtiles",
+            "sha256": "689fe47e246bda1313d6f854196e8a4dadd04cba86a5e2b66051f3bca2dcca6e"
+          },
+          "grid": {
+            "path": "maps/grid.mbtiles",
+            "sha256": "f26a81ca78dd0fced1221e947c4f2fa7d45c578a3310864563fa8a42817fb7e5"
+          },
+          "hillshade": {
+            "path": "maps/hillshade.mbtiles",
+            "sha256": "2143b52ab8c472c7ad7566c138af3bda937ca3565ebcc1db17dd5dfde7c45b1e"
+          },
+          "topography": {
+            "path": "maps/topography.mbtiles",
+            "sha256": "0186deaf5f93549ed8ab8f31de4c79e755dc3f861f5b3d2ada5ad6a768167f7c"
+          }
+        },
+        "instructionsSHA256": "7ac19cbf27837bc6150e8af63b2381d27b76995aec52e3f738603d22d2534ca3",
+        "instructionsURL": "https://downloads.appsbyonzy.dev/OpenBareMap/patagonia-torres-del-paine/2.0.0/app-bundles-v1/android/instructions.txt",
+        "localPath": "releases/patagonia-torres-del-paine/2.0.0/app-bundles-v1/android/OpenBareMap-Patagonia-Torres-del-Paine-Android-Bundle.zip",
+        "mapManifestSHA256": "13f224cd61cc0fc9a19c1361b00c329ae7206887d0eb7ed44b142b06e253eb76",
+        "r2Key": "OpenBareMap/patagonia-torres-del-paine/2.0.0/app-bundles-v1/android/OpenBareMap-Patagonia-Torres-del-Paine-Android-Bundle.zip",
+        "sha256": "3d947cefbe5820ea4604e559eaa29df419a96826eef1c4232ed97325395032fe",
+        "url": "https://downloads.appsbyonzy.dev/OpenBareMap/patagonia-torres-del-paine/2.0.0/app-bundles-v1/android/OpenBareMap-Patagonia-Torres-del-Paine-Android-Bundle.zip"
+      },
+      "ios": {
+        "bytes": 145398689,
+        "datasets": {
+          "basemap": {
+            "path": "maps/basemap.mbtiles",
+            "sha256": "7f4f8e8b0f9e669a2ab799ea5c7cc15de24bbc29dc06870aacd245ee1091e789"
+          },
+          "coast": {
+            "derived_from": "0186deaf5f93549ed8ab8f31de4c79e755dc3f861f5b3d2ada5ad6a768167f7c",
+            "maxzoom": 12,
+            "operation": "Preserve land-layer MVT bytes only through zoom 12; omit other layers.",
+            "path": "maps/coast.mbtiles",
+            "sha256": "689fe47e246bda1313d6f854196e8a4dadd04cba86a5e2b66051f3bca2dcca6e"
+          },
+          "grid": {
+            "path": "maps/grid.mbtiles",
+            "sha256": "f26a81ca78dd0fced1221e947c4f2fa7d45c578a3310864563fa8a42817fb7e5"
+          },
+          "hillshade": {
+            "path": "maps/hillshade.mbtiles",
+            "sha256": "2143b52ab8c472c7ad7566c138af3bda937ca3565ebcc1db17dd5dfde7c45b1e"
+          },
+          "topography": {
+            "path": "maps/topography.mbtiles",
+            "sha256": "0186deaf5f93549ed8ab8f31de4c79e755dc3f861f5b3d2ada5ad6a768167f7c"
+          }
+        },
+        "instructionsSHA256": "45b4d102b546db140058df0610c8726c23007bc14528609926623f89d6038d1a",
+        "instructionsURL": "https://downloads.appsbyonzy.dev/OpenBareMap/patagonia-torres-del-paine/2.0.0/app-bundles-v1/ios/instructions.txt",
+        "localPath": "releases/patagonia-torres-del-paine/2.0.0/app-bundles-v1/ios/OpenBareMap-Patagonia-Torres-del-Paine-iOS-Bundle.zip",
+        "mapManifestSHA256": "62a03b6a911a4a099670e4b8fd5ab24253fe5b87871832117605baa633398b01",
+        "r2Key": "OpenBareMap/patagonia-torres-del-paine/2.0.0/app-bundles-v1/ios/OpenBareMap-Patagonia-Torres-del-Paine-iOS-Bundle.zip",
+        "sha256": "02e8d260c45889cd29669cfa81c956707c531b4ac6bf3be31c6b77ba11fcbdb8",
+        "url": "https://downloads.appsbyonzy.dev/OpenBareMap/patagonia-torres-del-paine/2.0.0/app-bundles-v1/ios/OpenBareMap-Patagonia-Torres-del-Paine-iOS-Bundle.zip"
       }
     },
     "picos-de-europa": {

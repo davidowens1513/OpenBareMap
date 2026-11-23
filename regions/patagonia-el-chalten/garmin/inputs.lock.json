@@ -1,0 +1,20 @@
+{
+  "inputs": [
+    {
+      "path": "regions/patagonia-el-chalten/garmin/inputs/contours.geojson.gz",
+      "sha256": "37ac77bf9e306627441099406a2ad1b0adbb190ed9a582eff0dc3d624e87002c",
+      "uncompressedSHA256": "5dc0c2cc8f4caa914bdde69aafc7aea555e8bab82ed015b952055d9bb3f2188a"
+    },
+    {
+      "path": "regions/patagonia-el-chalten/garmin/inputs/landcover.geojson.gz",
+      "sha256": "874829c0545532585345481f7bd254ac3e07328715e1425800ca54e549410e33",
+      "uncompressedSHA256": "dac1e8408e19f37185d4945ced66dfc07e62db93aff9dc18c6adbc3972b9bb59"
+    },
+    {
+      "path": "regions/patagonia-el-chalten/garmin/inputs/land.geojson.gz",
+      "sha256": "9c979971d8913150f594caeb4bcead6818e49dd59b74e9526b29854c01cc3dce",
+      "uncompressedSHA256": "d024f476e93b427480480b9aee0e757c33f3871ecb25a579770199fc45147eea"
+    }
+  ],
+  "region": "patagonia-el-chalten"
+}

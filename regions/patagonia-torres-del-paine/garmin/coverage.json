@@ -1,0 +1,40 @@
+{
+  "areaSquareDegrees": 1.9250000000000078,
+  "bounds": [
+    -73.84,
+    -51.81,
+    -72.3,
+    -50.56
+  ],
+  "entireRequestedFootprintCovered": true,
+  "exactFootprint": null,
+  "inputs": [
+    {
+      "bytes": 4371,
+      "path": "data/regions/patagonia-torres-del-paine/chile.poly",
+      "sha256": "a2c053d95312ba82997dda3deeb995a5ccff285d74db545d68b04a95facd26d3",
+      "url": "https://download.geofabrik.de/south-america/chile/chile.poly"
+    },
+    {
+      "bytes": 14403,
+      "path": "data/regions/patagonia-torres-del-paine/argentina.poly",
+      "sha256": "76f8a0212f268e796ad1a13a22184cd313bcc02700e44ef5be9e71c1b3a628f5",
+      "url": "https://download.geofabrik.de/south-america/argentina/argentina.poly"
+    }
+  ],
+  "knownDestinationsCovered": [
+    "base-torres",
+    "dickson",
+    "french-valley",
+    "grey-glacier",
+    "island",
+    "john-gardner-pass",
+    "laguna-amarga",
+    "paine-grande",
+    "puerto-natales",
+    "seron"
+  ],
+  "operation": "Requested rectangular crop; source outlines cover all destination anchors",
+  "polygons": 1,
+  "sha256": "ab1b98c1193b9a14de4b172bcb6b5d98b9c02532d0a84348a2d0527c264f8b15"
+}

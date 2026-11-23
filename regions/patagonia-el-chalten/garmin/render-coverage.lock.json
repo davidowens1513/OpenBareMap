@@ -1,0 +1,76 @@
+{
+  "bounds": [
+    -73.55,
+    -50.69,
+    -72.08,
+    -48.9
+  ],
+  "contextEnvelope": [
+    -73.55,
+    -50.69,
+    -72.08,
+    -48.9
+  ],
+  "drawPriority": 25,
+  "format": "openbaremap-garmin-render-footprint-v1",
+  "geometry": {
+    "bytes": 761,
+    "path": "regions/patagonia-el-chalten/garmin/render-coverage.geojson",
+    "sha256": "80bf39c9f1871dc79018ccbd8a776d1b1ba010fddbe9ee82016621699883c495"
+  },
+  "inputs": [
+    {
+      "bytes": 14403,
+      "path": "data/regions/patagonia-el-chalten/argentina.poly",
+      "sha256": "76f8a0212f268e796ad1a13a22184cd313bcc02700e44ef5be9e71c1b3a628f5",
+      "url": "https://download.geofabrik.de/south-america/argentina/argentina.poly"
+    },
+    {
+      "bytes": 4371,
+      "path": "data/regions/patagonia-el-chalten/chile.poly",
+      "sha256": "a2c053d95312ba82997dda3deeb995a5ccff285d74db545d68b04a95facd26d3",
+      "url": "https://download.geofabrik.de/south-america/chile/chile.poly"
+    }
+  ],
+  "knownDestinationsCovered": {
+    "cerro-torre": [
+      -73.097,
+      -49.293
+    ],
+    "el-calafate": [
+      -72.264,
+      -50.338
+    ],
+    "el-chalten": [
+      -72.887,
+      -49.331
+    ],
+    "fitz-roy": [
+      -73.043,
+      -49.271
+    ],
+    "hielo-sur": [
+      -73.35,
+      -49.64
+    ],
+    "lago-del-desierto": [
+      -72.877,
+      -49.072
+    ],
+    "laguna-de-los-tres": [
+      -73.01,
+      -49.283
+    ],
+    "laguna-torre": [
+      -73.036,
+      -49.328
+    ],
+    "perito-moreno": [
+      -73.084,
+      -50.482
+    ]
+  },
+  "purpose": "Rectangular Garmin tiles may overlap other countries. Do not fill their padding with sea, land or land-cover polygons.",
+  "region": "patagonia-el-chalten",
+  "transparentNativeMap": true
+}

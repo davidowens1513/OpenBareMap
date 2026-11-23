@@ -1,0 +1,39 @@
+{
+  "features": [
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              -73.55,
+              -50.69
+            ],
+            [
+              -73.55,
+              -48.9
+            ],
+            [
+              -72.08,
+              -48.9
+            ],
+            [
+              -72.08,
+              -50.69
+            ],
+            [
+              -73.55,
+              -50.69
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "properties": {
+        "purpose": "Limit opaque native background and land-cover polygons; retain complete accepted OSM and terrain inputs",
+        "region": "patagonia-el-chalten"
+      },
+      "type": "Feature"
+    }
+  ],
+  "type": "FeatureCollection"
+}

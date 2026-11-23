@@ -1,0 +1,52 @@
+{
+  "contourIntervalMetres": 20,
+  "coverage": "Torres del Paine National Park and the complete W and O circuits, including Grey Glacier, the French Valley and the road approaches from Puerto Natales.",
+  "datasets": {
+    "basemap": {
+      "bytes": 6848512,
+      "path": "releases/patagonia-torres-del-paine/2.0.0/maps/basemap.mbtiles",
+      "sha256": "7f4f8e8b0f9e669a2ab799ea5c7cc15de24bbc29dc06870aacd245ee1091e789",
+      "validation": {
+        "empty_tile_count": 566,
+        "logical_tiles_sha256": "ba823a9a4c9e42785c9919f73d6ac1dd89d526282faecbc5f2f4f9d5407e0f74",
+        "tile_count": 6403
+      }
+    },
+    "grid": {
+      "bytes": 2891776,
+      "path": "releases/patagonia-torres-del-paine/2.0.0/maps/grid.mbtiles",
+      "sha256": "f26a81ca78dd0fced1221e947c4f2fa7d45c578a3310864563fa8a42817fb7e5",
+      "validation": {
+        "empty_tile_count": 0,
+        "logical_tiles_sha256": "5f9cdb0acf8d98433316fb2eaedf81a8380fbdbbe79226b636611553fee0f07a",
+        "tile_count": 8835
+      }
+    },
+    "hillshade": {
+      "bytes": 21123072,
+      "path": "releases/patagonia-torres-del-paine/2.0.0/maps/hillshade.mbtiles",
+      "sha256": "2143b52ab8c472c7ad7566c138af3bda937ca3565ebcc1db17dd5dfde7c45b1e",
+      "validation": {
+        "empty_tile_count": 0,
+        "logical_tiles_sha256": "544a7d98c00fab93631cc8ef7fd630915716d0de745b27f93f5cd0714e721031",
+        "tile_count": 640
+      }
+    },
+    "topography": {
+      "bytes": 101883904,
+      "path": "releases/patagonia-torres-del-paine/2.0.0/maps/topography-context.mbtiles",
+      "sha256": "0186deaf5f93549ed8ab8f31de4c79e755dc3f861f5b3d2ada5ad6a768167f7c",
+      "validation": {
+        "empty_tile_count": 56189,
+        "logical_tiles_sha256": "499a0973e4a699daf1a26749288a425ad5b12750cc338b791b082b3460e117a1",
+        "tile_count": 68661
+      }
+    }
+  },
+  "format": "openbaremap-development-viewer-v1",
+  "localBorders": false,
+  "mapVersion": "2.0.0",
+  "region": "patagonia-torres-del-paine",
+  "storageRevision": "2.0.0-patagonia-torres-del-paine-r3",
+  "styleRevision": "2.0.0-patagonia-torres-del-paine-r1"
+}

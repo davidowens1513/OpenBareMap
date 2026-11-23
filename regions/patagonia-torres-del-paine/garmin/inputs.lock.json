@@ -1,0 +1,20 @@
+{
+  "inputs": [
+    {
+      "path": "regions/patagonia-torres-del-paine/garmin/inputs/contours.geojson.gz",
+      "sha256": "7acbc982f6df16ba5c067f3363144599ba68baf931b3bdcf5c5c1eefe812257d",
+      "uncompressedSHA256": "ddda2aaf0a9083e5ccb11bd2fc976673b40149a9e003d47e5268ca321e7cedd2"
+    },
+    {
+      "path": "regions/patagonia-torres-del-paine/garmin/inputs/landcover.geojson.gz",
+      "sha256": "00ecb311bad3be50a5fe2a4e2e64bbc08a8f73b35b0e8b25bd1dc7926c8b4c8a",
+      "uncompressedSHA256": "236847c4e59e9ce1b9e38e039a5b25312f60ae8bfe0dbf54030a128c1698030b"
+    },
+    {
+      "path": "regions/patagonia-torres-del-paine/garmin/inputs/land.geojson.gz",
+      "sha256": "cb8258770db5ae392096bc1358316f911d2030fc3ba9add3ee192c1c5ff6a9e3",
+      "uncompressedSHA256": "4d4ea08b589ba4e196103988309322f79bb64366cc39b37d5bf11bb647145494"
+    }
+  ],
+  "region": "patagonia-torres-del-paine"
+}

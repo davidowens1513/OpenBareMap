@@ -1,0 +1,42 @@
+{
+  "builderSHA256": "f5e94cbef223bb0e9403950eab9d79021a1429ee132959b9cf627eb677ab8606",
+  "contoursSourceSHA256": "06ccdaeb0bc3b39e60a1a0b882c04f31d723a02a18bd4d0ac8b60d13a22c5d9a",
+  "counts": {
+    "contours": 25201,
+    "grid": {
+      "grid_10km": 31,
+      "grid_1km": 292
+    },
+    "landcover": {
+      "empty_source_areas": [],
+      "features": 870,
+      "permanentIce": {
+        "glacier": 94,
+        "permanent_snow": 0
+      },
+      "retained": 155,
+      "smoothed": 715
+    }
+  },
+  "osm": {
+    "bytes": 12993408,
+    "operation": "Complete-feature bbox extraction with nested relation references, then libosmium sorted merge; duplicate OSM objects resolved by version",
+    "path": "data/regions/patagonia-torres-del-paine/patagonia-torres-del-paine-261122.osm.pbf",
+    "replicationTimestamp": "2026-11-22T21:20:48Z",
+    "sha256": "12d13ee2c57c23a04ca48d3ae69778491be347a43664e6a3d168d85fe228d376",
+    "snapshot_date": "2026-11-22",
+    "url": null
+  },
+  "outputs": {
+    "contours.geojson": "ddda2aaf0a9083e5ccb11bd2fc976673b40149a9e003d47e5268ca321e7cedd2",
+    "grid_10km.geojson": "0a92b64873e7ab129f58b15dc55b726cd6676fb146033f79d2329724384b3ba3",
+    "grid_1km.geojson": "f2117d515c775d51204f53d5029c4caa7ccb7ea1d4cdf8942acdd6313c5a1f34",
+    "landcover.geojson": "236847c4e59e9ce1b9e38e039a5b25312f60ae8bfe0dbf54030a128c1698030b"
+  },
+  "permanentIce": {
+    "glacier": 94,
+    "permanent_snow": 0
+  },
+  "region": "patagonia-torres-del-paine",
+  "smootherSHA256": "7581d024dc1c1bec931642c7201db149bf64a64c814c451fa8bf37a0881ea6c9"
+}

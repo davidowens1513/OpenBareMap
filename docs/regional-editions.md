@@ -1,5 +1,50 @@
 # Maintaining regional editions
 
+## Iceland and Patagonia
+
+The three editions use complete-feature Geofabrik OpenStreetMap extracts,
+Copernicus GLO-30 elevation, 20 m contours, hillshade and separate symbols for
+mapped glaciers and permanent snowfields. The Patagonia editions share the
+Chile and Argentina raw downloads and source DEM tiles. Their map coverage
+overlaps at the Southern Patagonian Ice Field.
+
+| Edition | Walking coverage | Geofabrik extract date | Grid | Garmin family |
+| --- | --- | --- | --- | --- |
+| Iceland – Southern Highlands | Landmannalaugar, Laugavegur, Þórsmörk, Fimmvörðuháls, Skógar and the two ice caps | 21 November 2026 | WGS 84 / UTM 27N | 4869 |
+| Torres del Paine | W and O circuits, Grey Glacier and road approaches from Puerto Natales | 22 November 2026 | WGS 84 / UTM 18S | 4870 |
+| El Chaltén & Los Glaciares | Fitz Roy, Cerro Torre, Lago del Desierto, Perito Moreno Glacier and El Calafate | 22 November 2026 | WGS 84 / UTM 18S | 4871 |
+
+Build sequentially when the Patagonia source cache is empty. The validation
+report checks destination tiles, local glyphs across all three Open Sans
+styles, ice geometry and release checksums. Check the report's ice counts
+and compare the two classes with the map key during visual review.
+
+The release reports record 28 glacier polygons for Iceland, 94 for Torres
+del Paine and 204 for El Chaltén. None of the three OSM extracts contains
+separately tagged permanent snowfield polygons inside the map coverage.
+The shared permanent snowfield symbol remains in each key.
+
+```sh
+export PYTHONPATH=work/python
+for edition in iceland-southern-highlands patagonia-torres-del-paine patagonia-el-chalten; do
+  output="work/$edition-release"
+  python3 scripts/run_full_region.py --region "$edition" || exit
+  python3 scripts/build_app_distribution.py --regions "$edition" \
+    --output "$output/kits" --catalog "$output/catalog.json" || exit
+  python3 scripts/build_web_previews.py --regions "$edition" --output "$output/preview" \
+    --origin "https://downloads.appsbyonzy.dev/OpenBareMap/$edition/2.0.0/preview" || exit
+done
+python3 scripts/stage_iceland_patagonia.py
+```
+
+Run `python3 scripts/stage_iceland_patagonia.py --publish-assets` from a
+network-enabled release checkout with the configured R2 remote. It verifies
+the uploaded files and PMTiles range responses before updating the app
+catalogues and website checkout. The production Pages archive is
+`work/iceland-patagonia-publication/appsbyonzy-iceland-patagonia.zip`.
+Deploy it to the appsbyonzy Pages project and commit the website checkout,
+the verified Worldwide catalogue and the OpenBareMap release records.
+
 ## Permanent ice updates
 
 As of 22 November 2026, all 37 published editions have been screened for

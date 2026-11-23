@@ -1,0 +1,201 @@
+{
+  "bounds": [
+    -20.63,
+    63.38,
+    -18.2,
+    64.25
+  ],
+  "clipBasemap": true,
+  "clipSource": true,
+  "clipTerrainToBounds": true,
+  "coastContextBounds": [
+    -22,
+    62,
+    -17,
+    66
+  ],
+  "contourIntervalMetres": 20,
+  "coverage": "Landmannalaugar, the Laugavegur and Fimmv\u00f6r\u00f0uh\u00e1ls routes, \u00de\u00f3rsm\u00f6rk, Sk\u00f3gar, Hekla, and the Eyjafjallaj\u00f6kull and M\u00fdrdalsj\u00f6kull ice caps.",
+  "destinationLabels": {
+    "alftavatn": "\u00c1lftavatn hut",
+    "eyjafjallajokull": "Eyjafjallaj\u00f6kull",
+    "fimmvorduhals": "Fimmv\u00f6r\u00f0uh\u00e1ls",
+    "hekla": "Hekla",
+    "hrafntinnusker": "Hrafntinnusker",
+    "island": "Iceland \u2013 Southern Highlands",
+    "landmannalaugar": "Landmannalaugar",
+    "myrdalsjokull": "M\u00fdrdalsj\u00f6kull",
+    "skogar": "Sk\u00f3gar",
+    "thorsmork": "\u00de\u00f3rsm\u00f6rk (Langidalur)",
+    "vik": "V\u00edk \u00ed M\u00fdrdal"
+  },
+  "destinations": {
+    "alftavatn": [
+      -19.2288,
+      63.8595,
+      13
+    ],
+    "eyjafjallajokull": [
+      -19.621,
+      63.631,
+      12
+    ],
+    "fimmvorduhals": [
+      -19.444,
+      63.626,
+      13
+    ],
+    "hekla": [
+      -19.665,
+      63.992,
+      12
+    ],
+    "hrafntinnusker": [
+      -19.166,
+      63.933,
+      13
+    ],
+    "island": [
+      -19.44,
+      63.79,
+      8
+    ],
+    "landmannalaugar": [
+      -19.061,
+      63.991,
+      13
+    ],
+    "myrdalsjokull": [
+      -19.098,
+      63.651,
+      12
+    ],
+    "skogar": [
+      -19.488,
+      63.524,
+      13
+    ],
+    "thorsmork": [
+      -19.512,
+      63.681,
+      13
+    ],
+    "vik": [
+      -19.006,
+      63.419,
+      13
+    ]
+  },
+  "garminContextBounds": [
+    -20.63,
+    63.38,
+    -18.2,
+    64.25
+  ],
+  "garminFamilyId": 4869,
+  "garminFilename": "OpenBareMap-Iceland-Southern-Highlands.img",
+  "garminPackageRevision": "2.0.1-glacier-r1",
+  "garminTileStartId": 48690001,
+  "garminUseSourceOutline": true,
+  "gridCRS": "EPSG:32627",
+  "gridExtent": [
+    510000,
+    650000,
+    7020000,
+    7140000
+  ],
+  "gridName": "WGS 84 / UTM 27N",
+  "gridSource": "utm-grid",
+  "id": "iceland-southern-highlands",
+  "ignoreSourceHeaderBounds": true,
+  "inspectionNames": [
+    "Vik",
+    "Sk\u00f3gar"
+  ],
+  "label": "Iceland \u2013 Southern Highlands",
+  "appBundleName": "Iceland-Southern-Highlands",
+  "labelGlyphs": "\u00c1\u00e1\u00d0\u00f0\u00c9\u00e9\u00cd\u00ed\u00d3\u00f3\u00da\u00fa\u00dd\u00fd\u00de\u00fe\u00c6\u00e6\u00d6\u00f6",
+  "mapVersion": "2.0.0",
+  "maxzoom": 14,
+  "minorWaterwayMinzoom": 10,
+  "minzoom": 4,
+  "name": "OpenBareMap Iceland \u2013 Southern Highlands",
+  "nativeLanguage": "is",
+  "optionalBasemapLayers": [
+    "ferry",
+    "island_name",
+    "cycling_route",
+    "railway",
+    "station",
+    "hiking_route",
+    "boundary"
+  ],
+  "permanentIce": true,
+  "projectedCRS": "EPSG:32627",
+  "repairClippedCoastline": true,
+  "requireBogFeatures": false,
+  "requiredPermanentIce": [
+    "glacier"
+  ],
+  "sourceBaseOverrides": {
+    "iceland": "https://download.geofabrik.de/europe/iceland/"
+  },
+  "sourceBaseURL": "https://download.geofabrik.de/europe/",
+  "sourceDate": "2026-11-21",
+  "sourceSlugs": [
+    "iceland"
+  ],
+  "styleRevision": "2.0.0-iceland-southern-highlands-r1",
+  "terrainAttribution": "Copernicus DEM GLO-30 \u00b7 European Union / ESA \u00b7 DLR / Airbus",
+  "terrainBounds": [
+    -21,
+    63,
+    -18,
+    65
+  ],
+  "terrainNotice": "Iceland \u2013 Southern Highlands elevation: Copernicus DEM GLO-30 Public (AWS 2021 release).\n\nproduced using Copernicus WorldDEM-30 \u00a9 DLR e.V. 2010-2014 and \u00a9 Airbus Defence and Space GmbH 2014-2018 provided under COPERNICUS by the European Union and ESA; all rights reserved\n\nThe organisations in charge of the Copernicus programme by law or by delegation do not incur any liability for any use of the Copernicus WorldDEM-30.\n\nLicense: https://dataspace.copernicus.eu/sites/default/files/media/files/2025-06/copernicus_contributing_mission_data_access_v2_cop_dem_licenses.pdf\nSource: https://registry.opendata.aws/copernicus-dem/\nVertical datum: EGM2008 orthometric metres. Native approximately 30 m cells are bilinearly resampled to point-aligned Int16 HGT for the shared terrain pipeline. Ocean-only cells absent from the official public inventory are zero.\n",
+  "terrainProvider": "copernicus-glo30",
+  "townlands": false,
+  "validationAnchors": {
+    "alftavatn": [
+      -19.2288,
+      63.8595
+    ],
+    "eyjafjallajokull": [
+      -19.621,
+      63.631
+    ],
+    "fimmvorduhals": [
+      -19.444,
+      63.626
+    ],
+    "hekla": [
+      -19.665,
+      63.992
+    ],
+    "hrafntinnusker": [
+      -19.166,
+      63.933
+    ],
+    "landmannalaugar": [
+      -19.061,
+      63.991
+    ],
+    "myrdalsjokull": [
+      -19.098,
+      63.651
+    ],
+    "skogar": [
+      -19.488,
+      63.524
+    ],
+    "thorsmork": [
+      -19.512,
+      63.681
+    ],
+    "vik": [
+      -19.006,
+      63.419
+    ]
+  }
+}

@@ -1,0 +1,195 @@
+{
+  "bounds": [
+    -73.55,
+    -50.69,
+    -72.08,
+    -48.9
+  ],
+  "clipBasemap": true,
+  "clipSource": true,
+  "clipTerrainToBounds": true,
+  "coastContextBounds": [
+    -75,
+    -52,
+    -71,
+    -47
+  ],
+  "contourIntervalMetres": 20,
+  "coverage": "El Chalt\u00e9n and Los Glaciares National Park, with the Fitz Roy and Cerro Torre trails, Lago del Desierto, the eastern Southern Patagonian Ice Field, Perito Moreno Glacier and El Calafate.",
+  "destinationLabels": {
+    "cerro-torre": "Cerro Torre",
+    "el-calafate": "El Calafate",
+    "el-chalten": "El Chalt\u00e9n",
+    "fitz-roy": "Fitz Roy",
+    "hielo-sur": "Southern Patagonian Ice Field",
+    "island": "El Chalt\u00e9n & Los Glaciares",
+    "lago-del-desierto": "Lago del Desierto (southern trailhead)",
+    "laguna-de-los-tres": "Laguna de los Tres",
+    "laguna-torre": "Laguna Torre",
+    "perito-moreno": "Perito Moreno Glacier"
+  },
+  "destinations": {
+    "cerro-torre": [
+      -73.097,
+      -49.293,
+      13
+    ],
+    "el-calafate": [
+      -72.264,
+      -50.338,
+      12
+    ],
+    "el-chalten": [
+      -72.887,
+      -49.331,
+      13
+    ],
+    "fitz-roy": [
+      -73.043,
+      -49.271,
+      13
+    ],
+    "hielo-sur": [
+      -73.35,
+      -49.64,
+      11
+    ],
+    "island": [
+      -72.86,
+      -49.84,
+      8
+    ],
+    "lago-del-desierto": [
+      -72.877,
+      -49.072,
+      13
+    ],
+    "laguna-de-los-tres": [
+      -73.01,
+      -49.283,
+      13
+    ],
+    "laguna-torre": [
+      -73.036,
+      -49.328,
+      13
+    ],
+    "perito-moreno": [
+      -73.084,
+      -50.482,
+      12
+    ]
+  },
+  "garminContextBounds": [
+    -73.55,
+    -50.69,
+    -72.08,
+    -48.9
+  ],
+  "garminFamilyId": 4871,
+  "garminFilename": "OpenBareMap-Patagonia-El-Chalten.img",
+  "garminPackageRevision": "2.0.1-glacier-r1",
+  "garminTileStartId": 48710001,
+  "garminUseSourceOutline": true,
+  "gridCRS": "EPSG:32718",
+  "gridExtent": [
+    600000,
+    720000,
+    4370000,
+    4590000
+  ],
+  "gridName": "WGS 84 / UTM 18S",
+  "gridSource": "utm-grid",
+  "id": "patagonia-el-chalten",
+  "ignoreSourceHeaderBounds": true,
+  "inspectionNames": [
+    "El Chalt\u00e9n",
+    "El Calafate"
+  ],
+  "label": "El Chalt\u00e9n & Los Glaciares",
+  "appBundleName": "Patagonia-El-Chalten",
+  "labelGlyphs": "\u00c1\u00e1\u00c9\u00e9\u00cd\u00ed\u00d3\u00f3\u00da\u00fa\u00dc\u00fc\u00d1\u00f1",
+  "mapVersion": "2.0.0",
+  "maxzoom": 14,
+  "minorWaterwayMinzoom": 10,
+  "minzoom": 4,
+  "name": "OpenBareMap El Chalt\u00e9n & Los Glaciares",
+  "nativeLanguage": "es",
+  "optionalBasemapLayers": [
+    "ferry",
+    "island_name",
+    "cycling_route",
+    "railway",
+    "station",
+    "hiking_route",
+    "boundary"
+  ],
+  "permanentIce": true,
+  "projectedCRS": "EPSG:32718",
+  "repairClippedCoastline": true,
+  "requireBogFeatures": false,
+  "requiredPermanentIce": [
+    "glacier"
+  ],
+  "sourceBaseOverrides": {
+    "argentina": "https://download.geofabrik.de/south-america/argentina/",
+    "chile": "https://download.geofabrik.de/south-america/chile/"
+  },
+  "sourceBaseURL": "https://download.geofabrik.de/south-america/",
+  "sourceCacheRegion": "patagonia",
+  "sourceDate": "2026-11-22",
+  "sourceSlugs": [
+    "argentina",
+    "chile"
+  ],
+  "styleRevision": "2.0.0-patagonia-el-chalten-r1",
+  "terrainAttribution": "Copernicus DEM GLO-30 \u00b7 European Union / ESA \u00b7 DLR / Airbus",
+  "terrainBounds": [
+    -74,
+    -51,
+    -72,
+    -48
+  ],
+  "terrainCacheRegion": "patagonia",
+  "terrainNotice": "El Chalt\u00e9n & Los Glaciares elevation: Copernicus DEM GLO-30 Public (AWS 2021 release).\n\nproduced using Copernicus WorldDEM-30 \u00a9 DLR e.V. 2010-2014 and \u00a9 Airbus Defence and Space GmbH 2014-2018 provided under COPERNICUS by the European Union and ESA; all rights reserved\n\nThe organisations in charge of the Copernicus programme by law or by delegation do not incur any liability for any use of the Copernicus WorldDEM-30.\n\nLicense: https://dataspace.copernicus.eu/sites/default/files/media/files/2025-06/copernicus_contributing_mission_data_access_v2_cop_dem_licenses.pdf\nSource: https://registry.opendata.aws/copernicus-dem/\nVertical datum: EGM2008 orthometric metres. Native approximately 30 m cells are bilinearly resampled to point-aligned Int16 HGT for the shared terrain pipeline. Ocean-only cells absent from the official public inventory are zero.\n",
+  "terrainProvider": "copernicus-glo30",
+  "townlands": false,
+  "validationAnchors": {
+    "cerro-torre": [
+      -73.097,
+      -49.293
+    ],
+    "el-calafate": [
+      -72.264,
+      -50.338
+    ],
+    "el-chalten": [
+      -72.887,
+      -49.331
+    ],
+    "fitz-roy": [
+      -73.043,
+      -49.271
+    ],
+    "hielo-sur": [
+      -73.35,
+      -49.64
+    ],
+    "lago-del-desierto": [
+      -72.877,
+      -49.072
+    ],
+    "laguna-de-los-tres": [
+      -73.01,
+      -49.283
+    ],
+    "laguna-torre": [
+      -73.036,
+      -49.328
+    ],
+    "perito-moreno": [
+      -73.084,
+      -50.482
+    ]
+  }
+}

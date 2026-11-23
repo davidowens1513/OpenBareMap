@@ -1,0 +1,52 @@
+{
+  "builderSHA256": "df45d47a59e968508a89136d44d799aaf2bba52547b211e0dff68a5b0e0f6cfc",
+  "contextBounds": [
+    -22,
+    62,
+    -17,
+    66
+  ],
+  "note": "Contour payloads preserved exactly while extending land background outside edition coverage.",
+  "oldTopography": {
+    "bytes": 41459712,
+    "path": "releases/iceland-southern-highlands/2.0.0/maps/topography.mbtiles",
+    "sha256": "f583fa0953451f71a55621303403a789ad1e02199374e8eb3b02adbe2b486f34",
+    "validation": {
+      "empty_tile_count": 66622,
+      "logical_tiles_sha256": "3a43f7ec90dbb71488d328e176dbb51ab941e4eda3563bd9d5e3c65d2be3ecbb",
+      "tile_count": 81216
+    }
+  },
+  "output": {
+    "bytes": 41287680,
+    "path": "releases/iceland-southern-highlands/2.0.0/maps/topography-context.mbtiles",
+    "sha256": "4d3cdc621fb01d2c15c057b029be13fdf56f95fd4793e1c782f058f12dc33fe3",
+    "validation": {
+      "empty_tile_count": 66622,
+      "logical_tiles_sha256": "3a43f7ec90dbb71488d328e176dbb51ab941e4eda3563bd9d5e3c65d2be3ecbb",
+      "tile_count": 81216
+    }
+  },
+  "replacement": {
+    "changed_tiles": 4946,
+    "path": "build/iceland-southern-highlands-coast-context/combined.mbtiles",
+    "replacement_feature_instances": 8275,
+    "sha256": "af4f7292be7184f3528ae3408c07854fa92d606a1b5017439bbea51f5b9f0099",
+    "unchanged_other_layers_sha256": "e508fdff004e3c6b5ff2b0beab94a3f0c5046ab9417f5894ced93959ca6b29f4",
+    "validation": {
+      "empty_tile_count": 66622,
+      "logical_tiles_sha256": "3a43f7ec90dbb71488d328e176dbb51ab941e4eda3563bd9d5e3c65d2be3ecbb",
+      "tile_count": 81216
+    }
+  },
+  "source": {
+    "accessed_utc": "2026-10-25T12:59:16.751893+00:00",
+    "bytes": 928538219,
+    "http_headers_path": "data/land-polygons.headers",
+    "license": "ODbL 1.0; OpenStreetMap contributors",
+    "path": "data/land-polygons-split-4326.zip",
+    "sha256": "5911e273096f9585425a17c30a8a98785cc33ed2718ff88987768933b8a327f7",
+    "source_snapshot": "HTTP Last-Modified 2026-10-25T03:43:12Z; this is file publication, not a guaranteed OSM snapshot timestamp",
+    "url": "https://osmdata.openstreetmap.de/download/land-polygons-split-4326.zip"
+  }
+}

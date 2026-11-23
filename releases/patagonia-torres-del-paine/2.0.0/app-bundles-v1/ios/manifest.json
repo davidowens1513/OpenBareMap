@@ -1,0 +1,35 @@
+{
+  "bytes": 145398689,
+  "datasets": {
+    "basemap": {
+      "path": "maps/basemap.mbtiles",
+      "sha256": "7f4f8e8b0f9e669a2ab799ea5c7cc15de24bbc29dc06870aacd245ee1091e789"
+    },
+    "coast": {
+      "derived_from": "0186deaf5f93549ed8ab8f31de4c79e755dc3f861f5b3d2ada5ad6a768167f7c",
+      "maxzoom": 12,
+      "operation": "Preserve land-layer MVT bytes only through zoom 12; omit other layers.",
+      "path": "maps/coast.mbtiles",
+      "sha256": "689fe47e246bda1313d6f854196e8a4dadd04cba86a5e2b66051f3bca2dcca6e"
+    },
+    "grid": {
+      "path": "maps/grid.mbtiles",
+      "sha256": "f26a81ca78dd0fced1221e947c4f2fa7d45c578a3310864563fa8a42817fb7e5"
+    },
+    "hillshade": {
+      "path": "maps/hillshade.mbtiles",
+      "sha256": "2143b52ab8c472c7ad7566c138af3bda937ca3565ebcc1db17dd5dfde7c45b1e"
+    },
+    "topography": {
+      "path": "maps/topography.mbtiles",
+      "sha256": "0186deaf5f93549ed8ab8f31de4c79e755dc3f861f5b3d2ada5ad6a768167f7c"
+    }
+  },
+  "instructionsSHA256": "45b4d102b546db140058df0610c8726c23007bc14528609926623f89d6038d1a",
+  "instructionsURL": "https://downloads.appsbyonzy.dev/OpenBareMap/patagonia-torres-del-paine/2.0.0/app-bundles-v1/ios/instructions.txt",
+  "localPath": "releases/patagonia-torres-del-paine/2.0.0/app-bundles-v1/ios/OpenBareMap-Patagonia-Torres-del-Paine-iOS-Bundle.zip",
+  "mapManifestSHA256": "62a03b6a911a4a099670e4b8fd5ab24253fe5b87871832117605baa633398b01",
+  "r2Key": "OpenBareMap/patagonia-torres-del-paine/2.0.0/app-bundles-v1/ios/OpenBareMap-Patagonia-Torres-del-Paine-iOS-Bundle.zip",
+  "sha256": "02e8d260c45889cd29669cfa81c956707c531b4ac6bf3be31c6b77ba11fcbdb8",
+  "url": "https://downloads.appsbyonzy.dev/OpenBareMap/patagonia-torres-del-paine/2.0.0/app-bundles-v1/ios/OpenBareMap-Patagonia-Torres-del-Paine-iOS-Bundle.zip"
+}

@@ -1,0 +1,74 @@
+{
+  "bounds": [
+    -20.63,
+    63.38,
+    -18.2,
+    64.25
+  ],
+  "contextEnvelope": [
+    -20.63,
+    63.38,
+    -18.2,
+    64.25
+  ],
+  "drawPriority": 25,
+  "format": "openbaremap-garmin-render-footprint-v1",
+  "geometry": {
+    "bytes": 762,
+    "path": "regions/iceland-southern-highlands/garmin/render-coverage.geojson",
+    "sha256": "c68c432e90d5278716b3ad18ee7b94c9c0ebbc86be171ecc43037cae47f052fe"
+  },
+  "inputs": [
+    {
+      "bytes": 207,
+      "path": "data/regions/iceland-southern-highlands/iceland.poly",
+      "sha256": "2c19f514be888d1b89802a20fbe43157188183dc9a0b49277ee891e68962bb79",
+      "url": "https://download.geofabrik.de/europe/iceland/iceland.poly"
+    }
+  ],
+  "knownDestinationsCovered": {
+    "alftavatn": [
+      -19.2288,
+      63.8595
+    ],
+    "eyjafjallajokull": [
+      -19.621,
+      63.631
+    ],
+    "fimmvorduhals": [
+      -19.444,
+      63.626
+    ],
+    "hekla": [
+      -19.665,
+      63.992
+    ],
+    "hrafntinnusker": [
+      -19.166,
+      63.933
+    ],
+    "landmannalaugar": [
+      -19.061,
+      63.991
+    ],
+    "myrdalsjokull": [
+      -19.098,
+      63.651
+    ],
+    "skogar": [
+      -19.488,
+      63.524
+    ],
+    "thorsmork": [
+      -19.512,
+      63.681
+    ],
+    "vik": [
+      -19.006,
+      63.419
+    ]
+  },
+  "purpose": "Rectangular Garmin tiles may overlap other countries. Do not fill their padding with sea, land or land-cover polygons.",
+  "region": "iceland-southern-highlands",
+  "transparentNativeMap": true
+}

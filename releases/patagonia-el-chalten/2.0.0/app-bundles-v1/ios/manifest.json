@@ -1,0 +1,35 @@
+{
+  "bytes": 181680710,
+  "datasets": {
+    "basemap": {
+      "path": "maps/basemap.mbtiles",
+      "sha256": "ae4ee89264de6cdd94b15c283693aaa03ebef06254ad4827c891e44f896992d9"
+    },
+    "coast": {
+      "derived_from": "2de6711bf3af9aa94309b7f9f13d479d9c8e48bc21085192b4964563849c6cef",
+      "maxzoom": 12,
+      "operation": "Preserve land-layer MVT bytes only through zoom 12; omit other layers.",
+      "path": "maps/coast.mbtiles",
+      "sha256": "90e467ea121484e63cfd867d68eb5cd58510fb019efd893ea9a3e70a34bf1abb"
+    },
+    "grid": {
+      "path": "maps/grid.mbtiles",
+      "sha256": "1ab5ea3779352c6dbeeda35d78617865f29b6c22158a27084da926a381cd0d3c"
+    },
+    "hillshade": {
+      "path": "maps/hillshade.mbtiles",
+      "sha256": "ad7a7b6a6b8abd2bbdb156bc5b83d393cdf64a9cb9cee9111aa70267c7f90ef7"
+    },
+    "topography": {
+      "path": "maps/topography.mbtiles",
+      "sha256": "2de6711bf3af9aa94309b7f9f13d479d9c8e48bc21085192b4964563849c6cef"
+    }
+  },
+  "instructionsSHA256": "a8e1583312cc2bf9ce53790af3d7863244ac44913e2dcb74d1b9fe6a4897d6b9",
+  "instructionsURL": "https://downloads.appsbyonzy.dev/OpenBareMap/patagonia-el-chalten/2.0.0/app-bundles-v1/ios/instructions.txt",
+  "localPath": "releases/patagonia-el-chalten/2.0.0/app-bundles-v1/ios/OpenBareMap-Patagonia-El-Chalten-iOS-Bundle.zip",
+  "mapManifestSHA256": "ab798a9180ca7214a7fcae8da8ba172e574c207c35dbf64810966f7bc0665f63",
+  "r2Key": "OpenBareMap/patagonia-el-chalten/2.0.0/app-bundles-v1/ios/OpenBareMap-Patagonia-El-Chalten-iOS-Bundle.zip",
+  "sha256": "4851c83882759ae3f07ad22084a6db597d8561b84c078e6b8d3cc5e720be577a",
+  "url": "https://downloads.appsbyonzy.dev/OpenBareMap/patagonia-el-chalten/2.0.0/app-bundles-v1/ios/OpenBareMap-Patagonia-El-Chalten-iOS-Bundle.zip"
+}

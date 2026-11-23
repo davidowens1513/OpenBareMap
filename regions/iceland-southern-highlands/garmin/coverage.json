@@ -1,0 +1,35 @@
+{
+  "areaSquareDegrees": 2.1140999999999934,
+  "bounds": [
+    -20.63,
+    63.38,
+    -18.2,
+    64.25
+  ],
+  "entireRequestedFootprintCovered": true,
+  "exactFootprint": null,
+  "inputs": [
+    {
+      "bytes": 207,
+      "path": "data/regions/iceland-southern-highlands/iceland.poly",
+      "sha256": "2c19f514be888d1b89802a20fbe43157188183dc9a0b49277ee891e68962bb79",
+      "url": "https://download.geofabrik.de/europe/iceland/iceland.poly"
+    }
+  ],
+  "knownDestinationsCovered": [
+    "alftavatn",
+    "eyjafjallajokull",
+    "fimmvorduhals",
+    "hekla",
+    "hrafntinnusker",
+    "island",
+    "landmannalaugar",
+    "myrdalsjokull",
+    "skogar",
+    "thorsmork",
+    "vik"
+  ],
+  "operation": "Requested rectangular crop; source outlines cover all destination anchors",
+  "polygons": 1,
+  "sha256": "3c8b1b4f64586892b1f30e7dc573c2ef344de5e0adc3d8cec395bd334e2a712c"
+}

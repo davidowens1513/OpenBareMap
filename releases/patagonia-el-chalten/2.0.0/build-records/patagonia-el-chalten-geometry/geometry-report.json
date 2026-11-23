@@ -1,0 +1,42 @@
+{
+  "builderSHA256": "f5e94cbef223bb0e9403950eab9d79021a1429ee132959b9cf627eb677ab8606",
+  "contoursSourceSHA256": "bcf8d5b829665cd81e0a65e75e9906de11366d41b517f045688dbbabdd1856dd",
+  "counts": {
+    "contours": 23727,
+    "grid": {
+      "grid_10km": 36,
+      "grid_1km": 342
+    },
+    "landcover": {
+      "empty_source_areas": [],
+      "features": 1862,
+      "permanentIce": {
+        "glacier": 204,
+        "permanent_snow": 0
+      },
+      "retained": 296,
+      "smoothed": 1566
+    }
+  },
+  "osm": {
+    "bytes": 14235181,
+    "operation": "Complete-feature bbox extraction with nested relation references, then libosmium sorted merge; duplicate OSM objects resolved by version",
+    "path": "data/regions/patagonia-el-chalten/patagonia-el-chalten-261122.osm.pbf",
+    "replicationTimestamp": "2026-11-22T21:20:48Z",
+    "sha256": "0d75ec56715a5032393c6449e3600c974d0ef8c0362097881ad5160c9b13ae70",
+    "snapshot_date": "2026-11-22",
+    "url": null
+  },
+  "outputs": {
+    "contours.geojson": "5dc0c2cc8f4caa914bdde69aafc7aea555e8bab82ed015b952055d9bb3f2188a",
+    "grid_10km.geojson": "48cc5c12d2bbdff84af3fc91a02885cfa8b0fde36effa53553585d4662cc7e0b",
+    "grid_1km.geojson": "a18c9b940fc7758aa0d2a718ee22f75c3a69e1918525e63197bf2ab21e042ec1",
+    "landcover.geojson": "dac1e8408e19f37185d4945ced66dfc07e62db93aff9dc18c6adbc3972b9bb59"
+  },
+  "permanentIce": {
+    "glacier": 204,
+    "permanent_snow": 0
+  },
+  "region": "patagonia-el-chalten",
+  "smootherSHA256": "7581d024dc1c1bec931642c7201db149bf64a64c814c451fa8bf37a0881ea6c9"
+}

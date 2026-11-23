@@ -1,0 +1,21 @@
+{
+  "combinedSHA256": "0e52869609c54c365d4362538ce35a07926bb303ca26695eb46473999e0fd251",
+  "command": [
+    "/opt/homebrew/opt/openjdk@21/libexec/openjdk.jdk/Contents/Home/bin/java",
+    "-Xmx6g",
+    "-jar",
+    "/Volumes/Extreme SSD/Projects/OpenBareMap/garmin/tools/splitter-r654/splitter.jar",
+    "--mapid=48710001",
+    "--description=OpenBareMap El Chalt\u00e9n & Los Glaciares",
+    "--max-nodes=1000000",
+    "--max-threads=2",
+    "--keep-complete=true",
+    "--output=pbf",
+    "--polygon-file=/Volumes/Extreme SSD/Projects/OpenBareMap/regions/patagonia-el-chalten/garmin/coverage.poly",
+    "--output-dir=/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/906ead9d53a7/patagonia-el-chalten/garmin/split",
+    "--ignore-osm-bounds=true",
+    "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/906ead9d53a7/patagonia-el-chalten/garmin/combined.osm.pbf"
+  ],
+  "coverageSHA256": "afd76dea77bb9d54f7b9e345f149867ad180367da3d2312f2b51e5eef55b58ff",
+  "ignoreSourceHeaderBounds": true
+}

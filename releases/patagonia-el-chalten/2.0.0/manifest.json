@@ -1,0 +1,106 @@
+{
+  "acceptance": "Automated checks only; see validation and visual-review records for actual reviewed scope.",
+  "coverage": "El Chalt\u00e9n and Los Glaciares National Park, with the Fitz Roy and Cerro Torre trails, Lago del Desierto, the eastern Southern Patagonian Ice Field, Perito Moreno Glacier and El Calafate.",
+  "datasets": {
+    "basemap": {
+      "bytes": 13017088,
+      "path": "releases/patagonia-el-chalten/2.0.0/maps/basemap.mbtiles",
+      "sha256": "ae4ee89264de6cdd94b15c283693aaa03ebef06254ad4827c891e44f896992d9",
+      "validation": {
+        "empty_tile_count": 1248,
+        "logical_tiles_sha256": "2c75899ee87a5dd249b7bc7689383bbcf08280f4d0e2253ba81010312fac1fc7",
+        "tile_count": 11282
+      }
+    },
+    "grid": {
+      "bytes": 3866624,
+      "path": "releases/patagonia-el-chalten/2.0.0/maps/grid.mbtiles",
+      "sha256": "1ab5ea3779352c6dbeeda35d78617865f29b6c22158a27084da926a381cd0d3c",
+      "validation": {
+        "empty_tile_count": 0,
+        "logical_tiles_sha256": "e907f7f9c9d6b9209e5b899685807724914483ff3e18c28b1dd15aa6258d910b",
+        "tile_count": 11571
+      }
+    },
+    "hillshade": {
+      "bytes": 26558464,
+      "path": "releases/patagonia-el-chalten/2.0.0/maps/hillshade.mbtiles",
+      "sha256": "ad7a7b6a6b8abd2bbdb156bc5b83d393cdf64a9cb9cee9111aa70267c7f90ef7",
+      "validation": {
+        "empty_tile_count": 0,
+        "logical_tiles_sha256": "a31c27e876b46038cdd5d7a6673996e88076ebf5ebbc842cbb078b019830ab33",
+        "tile_count": 788
+      }
+    },
+    "topography": {
+      "bytes": 127107072,
+      "path": "releases/patagonia-el-chalten/2.0.0/maps/topography-context.mbtiles",
+      "sha256": "2de6711bf3af9aa94309b7f9f13d479d9c8e48bc21085192b4964563849c6cef",
+      "validation": {
+        "empty_tile_count": 68701,
+        "logical_tiles_sha256": "898eacf747b6973393948fc5f3b6cdfa5be514cac93f95a3d226c23a2afee520",
+        "tile_count": 84146
+      }
+    }
+  },
+  "garmin": {
+    "bytes": 42395648,
+    "path": "regions/patagonia-el-chalten/garmin/dist/OpenBareMap-Patagonia-El-Chalten.img",
+    "sha256": "63e7ea650321e59cef3d4ab87a1ed85a6b51a978c230dbc2ba198fc9c625c171"
+  },
+  "geometryReport": {
+    "path": "releases/patagonia-el-chalten/2.0.0/build-records/patagonia-el-chalten-geometry/geometry-report.json",
+    "sha256": "3febe782f582e1a13a863c9796ce62f9d2f13c0420da61708d8adbc2709727b7"
+  },
+  "hostAppsModified": false,
+  "mapVersion": "2.0.0",
+  "osm": {
+    "bytes": 14235181,
+    "operation": "Complete-feature bbox extraction with nested relation references, then libosmium sorted merge; duplicate OSM objects resolved by version",
+    "path": "data/regions/patagonia-el-chalten/patagonia-el-chalten-261122.osm.pbf",
+    "replicationTimestamp": "2026-11-22T21:20:48Z",
+    "sha256": "0d75ec56715a5032393c6449e3600c974d0ef8c0362097881ad5160c9b13ae70",
+    "snapshot_date": "2026-11-22",
+    "url": null
+  },
+  "packages": {
+    "android": {
+      "archive": {
+        "bytes": 181651794,
+        "path": "regions/patagonia-el-chalten/android/OpenBareMap-Android.zip",
+        "sha256": "51815d6762eba33105ba800e6e633f38c2ffd6d04875f563498cd4beb505e790"
+      },
+      "checksumsSHA256": "b61b129c51b86055c463bb743d83fc3f52e546e5276bd48242a65b41f920e956",
+      "manifestSHA256": "9d38b23a1e32363036d0de8a98f1487855384351ef56c1ae6cea2f0da7faf413",
+      "path": "regions/patagonia-el-chalten/android",
+      "validationSHA256": "e87c5da9830ddd8a7e7ca01ea3150230949d4ba2185a5484c125f4de4dfc8759"
+    },
+    "ios": {
+      "checksumsSHA256": "60cf36d6307900eaab9cf38d3cbe0a126023b240d7c3bde887f122dee56b25e7",
+      "manifestSHA256": "ab798a9180ca7214a7fcae8da8ba172e574c207c35dbf64810966f7bc0665f63",
+      "path": "regions/patagonia-el-chalten/ios",
+      "validationSHA256": "1e4417d6a02b7cd4d2c5ece921fbd3c7c5c838f4fc5288bd20e581ac01d7b863"
+    }
+  },
+  "pythonRuntime": {
+    "packages": {
+      "Pillow": "12.3.0",
+      "certifi": "2026.10.23",
+      "charset-normalizer": "3.5.2",
+      "idna": "3.20",
+      "numpy": "2.5.4",
+      "osmium": "4.3.2",
+      "pyproj": "3.8.0",
+      "requests": "2.34.2",
+      "shapely": "2.2.0",
+      "urllib3": "2.8.0"
+    },
+    "platform": "macOS-27.2.1-arm64-arm-64bit-Mach-O",
+    "python": "3.14.5 (main, May 10 2026, 10:21:34) [Clang 21.0.0 (clang-2100.0.123.102)]",
+    "requirementsSHA256": "427f12ff8b49bfebac0a7d453c2f65bd15d6695584b18e6ecee1fdfeed20a36c"
+  },
+  "region": "patagonia-el-chalten",
+  "styleSHA256": "6311a622b4ba12b150e1531af506707bb4107ab36e33d1b57d913aecb1804f5c",
+  "terrainLockSHA256": "31e479ad23bed1e925bf35e5a66c0c32a81656cbb75ab105a3b1f78eae0e98f9",
+  "validation": "validation.json"
+}

@@ -1,0 +1,52 @@
+{
+  "contourIntervalMetres": 20,
+  "coverage": "El Chalt\u00e9n and Los Glaciares National Park, with the Fitz Roy and Cerro Torre trails, Lago del Desierto, the eastern Southern Patagonian Ice Field, Perito Moreno Glacier and El Calafate.",
+  "datasets": {
+    "basemap": {
+      "bytes": 13017088,
+      "path": "releases/patagonia-el-chalten/2.0.0/maps/basemap.mbtiles",
+      "sha256": "ae4ee89264de6cdd94b15c283693aaa03ebef06254ad4827c891e44f896992d9",
+      "validation": {
+        "empty_tile_count": 1248,
+        "logical_tiles_sha256": "2c75899ee87a5dd249b7bc7689383bbcf08280f4d0e2253ba81010312fac1fc7",
+        "tile_count": 11282
+      }
+    },
+    "grid": {
+      "bytes": 3866624,
+      "path": "releases/patagonia-el-chalten/2.0.0/maps/grid.mbtiles",
+      "sha256": "1ab5ea3779352c6dbeeda35d78617865f29b6c22158a27084da926a381cd0d3c",
+      "validation": {
+        "empty_tile_count": 0,
+        "logical_tiles_sha256": "e907f7f9c9d6b9209e5b899685807724914483ff3e18c28b1dd15aa6258d910b",
+        "tile_count": 11571
+      }
+    },
+    "hillshade": {
+      "bytes": 26558464,
+      "path": "releases/patagonia-el-chalten/2.0.0/maps/hillshade.mbtiles",
+      "sha256": "ad7a7b6a6b8abd2bbdb156bc5b83d393cdf64a9cb9cee9111aa70267c7f90ef7",
+      "validation": {
+        "empty_tile_count": 0,
+        "logical_tiles_sha256": "a31c27e876b46038cdd5d7a6673996e88076ebf5ebbc842cbb078b019830ab33",
+        "tile_count": 788
+      }
+    },
+    "topography": {
+      "bytes": 127107072,
+      "path": "releases/patagonia-el-chalten/2.0.0/maps/topography-context.mbtiles",
+      "sha256": "2de6711bf3af9aa94309b7f9f13d479d9c8e48bc21085192b4964563849c6cef",
+      "validation": {
+        "empty_tile_count": 68701,
+        "logical_tiles_sha256": "898eacf747b6973393948fc5f3b6cdfa5be514cac93f95a3d226c23a2afee520",
+        "tile_count": 84146
+      }
+    }
+  },
+  "format": "openbaremap-development-viewer-v1",
+  "localBorders": false,
+  "mapVersion": "2.0.0",
+  "region": "patagonia-el-chalten",
+  "storageRevision": "2.0.0-patagonia-el-chalten-r3",
+  "styleRevision": "2.0.0-patagonia-el-chalten-r1"
+}

@@ -1,0 +1,33 @@
+{
+  "bytes": 94502598,
+  "datasets": {
+    "basemap": {
+      "path": "maps/basemap.mbtiles",
+      "sha256": "b44e6dec80a47e3a6a7c669364ace65ef437b351edac0f39de110429e755ee34"
+    },
+    "coast": {
+      "derivedFrom": "4d3cdc621fb01d2c15c057b029be13fdf56f95fd4793e1c782f058f12dc33fe3",
+      "path": "maps/coast.mbtiles",
+      "sha256": "a60cb628e406105031d8607fa94670ec6a5266ef3146a1f0c1e350950908bf0f"
+    },
+    "grid": {
+      "path": "maps/grid.mbtiles",
+      "sha256": "ff5b8f2601d70e18a91fbf8cc96c60272e4235bb42fc6e823754c4e579771504"
+    },
+    "hillshade": {
+      "path": "maps/hillshade.mbtiles",
+      "sha256": "0d73887e926a7654b71efc3bf87279a0710330353ec97ff9ca502e13496f95d9"
+    },
+    "topography": {
+      "path": "maps/topography.mbtiles",
+      "sha256": "4d3cdc621fb01d2c15c057b029be13fdf56f95fd4793e1c782f058f12dc33fe3"
+    }
+  },
+  "instructionsSHA256": "c9cc16bac0332c77488b8a48959c1bde843221e2af6d35ed253e101e298e5e40",
+  "instructionsURL": "https://downloads.appsbyonzy.dev/OpenBareMap/iceland-southern-highlands/2.0.0/app-bundles-v1/android/instructions.txt",
+  "localPath": "releases/iceland-southern-highlands/2.0.0/app-bundles-v1/android/OpenBareMap-Iceland-Southern-Highlands-Android-Bundle.zip",
+  "mapManifestSHA256": "77d3f07b350c8b5328fbd2a2029de76c7a8e374150370b5e5f42dc7823b26e52",
+  "r2Key": "OpenBareMap/iceland-southern-highlands/2.0.0/app-bundles-v1/android/OpenBareMap-Iceland-Southern-Highlands-Android-Bundle.zip",
+  "sha256": "424ae45b63fdeaf85e56c5dcb2d2fd53181bc52ee8ad72c90817508e76412a4e",
+  "url": "https://downloads.appsbyonzy.dev/OpenBareMap/iceland-southern-highlands/2.0.0/app-bundles-v1/android/OpenBareMap-Iceland-Southern-Highlands-Android-Bundle.zip"
+}

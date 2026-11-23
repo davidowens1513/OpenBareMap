@@ -1,0 +1,52 @@
+{
+  "builderSHA256": "df45d47a59e968508a89136d44d799aaf2bba52547b211e0dff68a5b0e0f6cfc",
+  "contextBounds": [
+    -75,
+    -52,
+    -71,
+    -47
+  ],
+  "note": "Contour payloads preserved exactly while extending land background outside edition coverage.",
+  "oldTopography": {
+    "bytes": 127283200,
+    "path": "releases/patagonia-el-chalten/2.0.0/maps/topography.mbtiles",
+    "sha256": "95365f1b40091051410b377963d77b8eaa375c65b052cf575838af1dc674e175",
+    "validation": {
+      "empty_tile_count": 68701,
+      "logical_tiles_sha256": "898eacf747b6973393948fc5f3b6cdfa5be514cac93f95a3d226c23a2afee520",
+      "tile_count": 84146
+    }
+  },
+  "output": {
+    "bytes": 127107072,
+    "path": "releases/patagonia-el-chalten/2.0.0/maps/topography-context.mbtiles",
+    "sha256": "2de6711bf3af9aa94309b7f9f13d479d9c8e48bc21085192b4964563849c6cef",
+    "validation": {
+      "empty_tile_count": 68701,
+      "logical_tiles_sha256": "898eacf747b6973393948fc5f3b6cdfa5be514cac93f95a3d226c23a2afee520",
+      "tile_count": 84146
+    }
+  },
+  "replacement": {
+    "changed_tiles": 5586,
+    "path": "build/patagonia-el-chalten-coast-context/combined.mbtiles",
+    "replacement_feature_instances": 82385,
+    "sha256": "f6df34d96bfe7d88883730e550be6d5e9fbe1bdc71c56838207e9c874b12aa7c",
+    "unchanged_other_layers_sha256": "dc4299fa9fab899783f9333e2629bf418c1ebc004e02eae74996f3443aa107f8",
+    "validation": {
+      "empty_tile_count": 68701,
+      "logical_tiles_sha256": "898eacf747b6973393948fc5f3b6cdfa5be514cac93f95a3d226c23a2afee520",
+      "tile_count": 84146
+    }
+  },
+  "source": {
+    "accessed_utc": "2026-10-25T12:59:16.751893+00:00",
+    "bytes": 928538219,
+    "http_headers_path": "data/land-polygons.headers",
+    "license": "ODbL 1.0; OpenStreetMap contributors",
+    "path": "data/land-polygons-split-4326.zip",
+    "sha256": "5911e273096f9585425a17c30a8a98785cc33ed2718ff88987768933b8a327f7",
+    "source_snapshot": "HTTP Last-Modified 2026-10-25T03:43:12Z; this is file publication, not a guaranteed OSM snapshot timestamp",
+    "url": "https://osmdata.openstreetmap.de/download/land-polygons-split-4326.zip"
+  }
+}

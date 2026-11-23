@@ -319,6 +319,22 @@ data/regions/norway-*/copernicus/*
 /releases/canadian-rockies-*/*/maps/
 /releases/canadian-rockies-*/*/app-bundles-v1/**/*.zip
 
+# Rebuildable Iceland and Patagonia sources and delivery binaries
+/data/regions/iceland-southern-highlands/
+/data/regions/patagonia*/
+/regions/iceland-southern-highlands/exports/
+/regions/patagonia-*/exports/
+/regions/iceland-southern-highlands/garmin/coastal-context/
+/regions/patagonia-*/garmin/coastal-context/
+/regions/iceland-southern-highlands/garmin/inputs/*.geojson.gz
+/regions/patagonia-*/garmin/inputs/*.geojson.gz
+/regions/iceland-southern-highlands/garmin/dist/*.img
+/regions/patagonia-*/garmin/dist/*.img
+/releases/iceland-southern-highlands/*/maps/
+/releases/patagonia-*/*/maps/
+/releases/iceland-southern-highlands/*/app-bundles-v1/**/*.zip
+/releases/patagonia-*/*/app-bundles-v1/**/*.zip
+
 # Glacier revisions are distributed from R2 under new URLs.
 /regions/*/garmin/dist/*-Glaciers.img
 /regions/*/garmin/inputs/permanent-ice.geojson.gz

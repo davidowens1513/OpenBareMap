@@ -1,0 +1,139 @@
+{
+  "familyId": 4871,
+  "garminPackageRevision": "2.0.1-glacier-r1",
+  "inspection": {
+    "anchorLabels": {
+      "El Calafate": "El calafate",
+      "El Chalt\u00e9n": "El Chalt\u00e9n"
+    },
+    "bounds": [
+      -73.55003356933594,
+      -50.690059661865234,
+      -72.07992553710938,
+      -48.89997482299805
+    ],
+    "coastPolygonsByLevel": {
+      "0": {
+        "0x32": 18,
+        "0x54": 38
+      },
+      "1": {
+        "0x32": 10,
+        "0x54": 30
+      },
+      "2": {
+        "0x32": 10,
+        "0x54": 30
+      },
+      "3": {
+        "0x32": 10,
+        "0x54": 27
+      },
+      "4": {
+        "0x32": 10,
+        "0x54": 22
+      }
+    },
+    "contoursByLevel": {
+      "0": {
+        "0x20": 41345,
+        "0x22": 10397
+      },
+      "1": {
+        "0x20": 29411,
+        "0x22": 7430
+      },
+      "2": {
+        "0x22": 6888
+      },
+      "3": {
+        "0x10008": 6228
+      },
+      "4": {}
+    },
+    "lineInstancesAtHighestDetail": {
+      "0x10001": 94,
+      "0x10002": 8,
+      "0x10004": 2,
+      "0x10005": 50,
+      "0x10006": 322,
+      "0x1000b": 12,
+      "0x16": 760,
+      "0x18": 1325,
+      "0x1a": 26,
+      "0x1c": 165,
+      "0x1e": 369,
+      "0x1f": 484,
+      "0x20": 41345,
+      "0x22": 10397,
+      "0x3": 49,
+      "0x4": 49,
+      "0x6": 1352,
+      "0x7": 341,
+      "0xa": 534
+    },
+    "logicalCombinedSHA256": "9f233bbfe2923f420afa921ac0b0a178aa09f16c04bfe8eb148dab1c0e868720",
+    "logicalHashNote": "Internal file names, sizes and payloads; only CommonHeader creation-date bytes 14..20 are zeroed for hashing. IMG archive headers are excluded. Output bytes are never modified.",
+    "logicalTileSHA256": {
+      "48710001.img": "5b2be380276d7aedd0fb097d1a709bb44a49a611c0aa6211b4656b2760624fd8",
+      "48710002.img": "79456bfd4444f199e72332598bd69cb8b8a3cb8094e0cc2fcfafe4d59016e5d0",
+      "48710003.img": "6fbf4d70a59b082fc00db3e9dcb2151508c82a8a5b6858fa88b1b9e4ef02a39a",
+      "48710004.img": "849887483a0326f470896c4f2068bfe5676a04ce8f31a840f306b4acf3a4d995",
+      "48710005.img": "534f77f82b520ea2a299b85dd0a5647463cb8e287cb28c715af28f4523844479",
+      "48710006.img": "138f608ceb72a20ade3c5b45b1f721614c4c50b8889229fab883f7639c0dc6a8",
+      "48710007.img": "c432e573678719676b1fde7cf60f51c34bcc577cf3ab6b7e304705755e4353f2",
+      "48710008.img": "b0f13902dcf65e6a849aadaf65a3c50e480496c2b57068db4c7875d24a1f55d3",
+      "48710009.img": "759de0fcd84f4fb05d615601df821db2ebbff61a371636cc2541f6122f80b75c",
+      "48710010.img": "8b2ac9eeb75fd2242f1123b6cf4c951d7c4679465d3ebe3e8490e9d879cfecb8"
+    },
+    "pointInstancesAtHighestDetail": {
+      "0x10001": 25,
+      "0x10002": 190,
+      "0x10003": 77,
+      "0x10006": 908,
+      "0x2f0b": 56,
+      "0x600": 1,
+      "0x650c": 72,
+      "0x6603": 61,
+      "0x6615": 45,
+      "0x6616": 432,
+      "0x800": 2,
+      "0xb00": 7,
+      "0xc00": 36
+    },
+    "polygonInstancesAtHighestDetail": {
+      "0x10101": 11,
+      "0x10102": 36,
+      "0x10104": 422,
+      "0x10105": 6,
+      "0x10109": 364,
+      "0x1010a": 40,
+      "0x1010b": 19,
+      "0x1010c": 1128,
+      "0x13": 11435,
+      "0x32": 18,
+      "0x3c": 4531,
+      "0x50": 2112,
+      "0x51": 165,
+      "0x54": 38
+    },
+    "routing": false,
+    "subfileBytes": {
+      "DEM": 20586092,
+      "LBL": 56473,
+      "MPS": 1012,
+      "RGN": 21365460,
+      "SRT": 912,
+      "TRE": 274843,
+      "TYP": 3037
+    },
+    "tiles": 10
+  },
+  "output": {
+    "bytes": 42395648,
+    "path": "regions/patagonia-el-chalten/garmin/dist/OpenBareMap-Patagonia-El-Chalten.img",
+    "sha256": "63e7ea650321e59cef3d4ab87a1ed85a6b51a978c230dbc2ba198fc9c625c171"
+  },
+  "routing": false,
+  "status": "compiled and structurally inspected; hardware rendering pending"
+}

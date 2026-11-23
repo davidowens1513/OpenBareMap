@@ -139,6 +139,12 @@
       "url": "https://downloads.appsbyonzy.dev/Garmin/OpenBareMap-High-Tatras.img"
     },
     {
+      "path": "regions/iceland-southern-highlands/garmin/dist/OpenBareMap-Iceland-Southern-Highlands.img",
+      "bytes": 22202368,
+      "sha256": "8d7231890cbd6b98a68edf2759e9e098e78f1cde7febf34e28f62060c4329e1a",
+      "url": "https://downloads.appsbyonzy.dev/Garmin/iceland-southern-highlands/2.0.1-glacier-r1/OpenBareMap-Iceland-Southern-Highlands.img"
+    },
+    {
       "bytes": 7535616,
       "path": "regions/madeira/garmin/dist/OpenBareMap-Madeira.img",
       "sha256": "4cb6a53930f8bd9ab199ab0798e462d64f665613b58ff778782721ab6b0db456",
@@ -185,6 +191,18 @@
       "path": "regions/norway-south/garmin/dist/OpenBareMap-Norway-South.img",
       "sha256": "06d7e1ee91a13b2c084bac8068571c609a2cd886ad8633bc856c127612494697",
       "url": "https://downloads.appsbyonzy.dev/Garmin/OpenBareMap-Norway-South.img"
+    },
+    {
+      "path": "regions/patagonia-el-chalten/garmin/dist/OpenBareMap-Patagonia-El-Chalten.img",
+      "bytes": 42395648,
+      "sha256": "63e7ea650321e59cef3d4ab87a1ed85a6b51a978c230dbc2ba198fc9c625c171",
+      "url": "https://downloads.appsbyonzy.dev/Garmin/patagonia-el-chalten/2.0.1-glacier-r1/OpenBareMap-Patagonia-El-Chalten.img"
+    },
+    {
+      "path": "regions/patagonia-torres-del-paine/garmin/dist/OpenBareMap-Patagonia-Torres-del-Paine.img",
+      "bytes": 32346112,
+      "sha256": "6c4bab1b3e3e48d5839edaa4180799a2e883ec698a1e4f1ebc3af22d7b48d036",
+      "url": "https://downloads.appsbyonzy.dev/Garmin/patagonia-torres-del-paine/2.0.1-glacier-r1/OpenBareMap-Patagonia-Torres-del-Paine.img"
     },
     {
       "bytes": 24780800,
@@ -571,6 +589,18 @@
       "url": "https://downloads.appsbyonzy.dev/OpenBareMap/high-tatras/2.0.1/app-bundles-v1/ios/OpenBareMap-High-Tatras-iOS-Bundle.zip"
     },
     {
+      "path": "releases/iceland-southern-highlands/2.0.0/app-bundles-v1/android/OpenBareMap-Iceland-Southern-Highlands-Android-Bundle.zip",
+      "bytes": 94502598,
+      "sha256": "424ae45b63fdeaf85e56c5dcb2d2fd53181bc52ee8ad72c90817508e76412a4e",
+      "url": "https://downloads.appsbyonzy.dev/OpenBareMap/iceland-southern-highlands/2.0.0/app-bundles-v1/android/OpenBareMap-Iceland-Southern-Highlands-Android-Bundle.zip"
+    },
+    {
+      "path": "releases/iceland-southern-highlands/2.0.0/app-bundles-v1/ios/OpenBareMap-Iceland-Southern-Highlands-iOS-Bundle.zip",
+      "bytes": 94503042,
+      "sha256": "9d2ebfdad644929aaaca024d4a7ae1fb8498da53d4b7919272a5868b944a4986",
+      "url": "https://downloads.appsbyonzy.dev/OpenBareMap/iceland-southern-highlands/2.0.0/app-bundles-v1/ios/OpenBareMap-Iceland-Southern-Highlands-iOS-Bundle.zip"
+    },
+    {
       "bytes": 39879964,
       "path": "releases/madeira/2.0.0/app-bundles-v1/android/OpenBareMap-Madeira-Android-Bundle.zip",
       "sha256": "d25e56f368a2dc5ee65335fc9074310270b39f18f69442dda0d2e40e460b5d78",
@@ -665,6 +695,30 @@
       "path": "releases/norway-south/2.0.1/app-bundles-v1/ios/OpenBareMap-Norway-South-iOS-Bundle.zip",
       "sha256": "7b9dd80505160fef4c72f3b1d5f79ad5d45a775a77bb2e8bec718fbcb5264e40",
       "url": "https://downloads.appsbyonzy.dev/OpenBareMap/norway-south/2.0.1/app-bundles-v1/ios/OpenBareMap-Norway-South-iOS-Bundle.zip"
+    },
+    {
+      "path": "releases/patagonia-el-chalten/2.0.0/app-bundles-v1/android/OpenBareMap-Patagonia-El-Chalten-Android-Bundle.zip",
+      "bytes": 181680272,
+      "sha256": "a0920a0aad054662e9ee9eb940cb1a0905b0a4719b85bae9246d9e3126555bbe",
+      "url": "https://downloads.appsbyonzy.dev/OpenBareMap/patagonia-el-chalten/2.0.0/app-bundles-v1/android/OpenBareMap-Patagonia-El-Chalten-Android-Bundle.zip"
+    },
+    {
+      "path": "releases/patagonia-el-chalten/2.0.0/app-bundles-v1/ios/OpenBareMap-Patagonia-El-Chalten-iOS-Bundle.zip",
+      "bytes": 181680710,
+      "sha256": "4851c83882759ae3f07ad22084a6db597d8561b84c078e6b8d3cc5e720be577a",
+      "url": "https://downloads.appsbyonzy.dev/OpenBareMap/patagonia-el-chalten/2.0.0/app-bundles-v1/ios/OpenBareMap-Patagonia-El-Chalten-iOS-Bundle.zip"
+    },
+    {
+      "path": "releases/patagonia-torres-del-paine/2.0.0/app-bundles-v1/android/OpenBareMap-Patagonia-Torres-del-Paine-Android-Bundle.zip",
+      "bytes": 145398259,
+      "sha256": "3d947cefbe5820ea4604e559eaa29df419a96826eef1c4232ed97325395032fe",
+      "url": "https://downloads.appsbyonzy.dev/OpenBareMap/patagonia-torres-del-paine/2.0.0/app-bundles-v1/android/OpenBareMap-Patagonia-Torres-del-Paine-Android-Bundle.zip"
+    },
+    {
+      "path": "releases/patagonia-torres-del-paine/2.0.0/app-bundles-v1/ios/OpenBareMap-Patagonia-Torres-del-Paine-iOS-Bundle.zip",
+      "bytes": 145398689,
+      "sha256": "02e8d260c45889cd29669cfa81c956707c531b4ac6bf3be31c6b77ba11fcbdb8",
+      "url": "https://downloads.appsbyonzy.dev/OpenBareMap/patagonia-torres-del-paine/2.0.0/app-bundles-v1/ios/OpenBareMap-Patagonia-Torres-del-Paine-iOS-Bundle.zip"
     },
     {
       "bytes": 129333959,

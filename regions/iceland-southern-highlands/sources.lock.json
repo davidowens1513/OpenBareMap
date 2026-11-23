@@ -1,0 +1,29 @@
+{
+  "accessed_utc": "2026-11-23T09:07:00.803864+00:00",
+  "inputs": [
+    {
+      "bytes": 64994671,
+      "path": "data/regions/iceland-southern-highlands/iceland-261121.osm.pbf",
+      "replicationTimestamp": "2026-11-21T21:20:51Z",
+      "sha256": "a6a0a8d193d977dc7bf953d121e5543f25f1898a996f7fc5d71f39b7205a5b60",
+      "url": "https://download.geofabrik.de/europe/iceland/iceland-261121.osm.pbf"
+    }
+  ],
+  "osm": {
+    "bytes": 8447902,
+    "operation": "Complete-feature bbox extraction with nested relation references",
+    "path": "data/regions/iceland-southern-highlands/iceland-261121.osm.clipped.osm.pbf",
+    "replicationTimestamp": "2026-11-21T21:20:51Z",
+    "sha256": "32562ba0abe0bf9bb228986c88fd7a2775fea30099c13274f2fd0a256478815a",
+    "snapshot_date": "2026-11-21",
+    "url": "https://download.geofabrik.de/europe/iceland/iceland-261121.osm.pbf"
+  },
+  "polygons": [
+    {
+      "bytes": 207,
+      "path": "data/regions/iceland-southern-highlands/iceland.poly",
+      "sha256": "2c19f514be888d1b89802a20fbe43157188183dc9a0b49277ee891e68962bb79",
+      "url": "https://download.geofabrik.de/europe/iceland/iceland.poly"
+    }
+  ]
+}

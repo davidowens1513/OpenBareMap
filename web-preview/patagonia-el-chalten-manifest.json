@@ -1,0 +1,41 @@
+{
+  "regions": {
+    "patagonia-el-chalten": {
+      "basemap": {
+        "sourceSHA256": "ae4ee89264de6cdd94b15c283693aaa03ebef06254ad4827c891e44f896992d9",
+        "bytes": 10905395,
+        "sha256": "43071d628e103db1137ee73f7c4dece1a0278de38230925d620c4dafe122b09c",
+        "tiles": 11282
+      },
+      "grid": {
+        "sourceSHA256": "1ab5ea3779352c6dbeeda35d78617865f29b6c22158a27084da926a381cd0d3c",
+        "bytes": 3302828,
+        "sha256": "99aab063802e6e2e61bb69eafbfe77edea5dd2d41944d12b5c8a1d3be2cca030",
+        "tiles": 11571
+      },
+      "hillshade": {
+        "sourceSHA256": "ad7a7b6a6b8abd2bbdb156bc5b83d393cdf64a9cb9cee9111aa70267c7f90ef7",
+        "bytes": 25954002,
+        "sha256": "8a624b021d859e233bb17c232a05452488af94eef4e007b24cb47446ae8eeaed",
+        "tiles": 788
+      },
+      "topography": {
+        "sourceSHA256": "2de6711bf3af9aa94309b7f9f13d479d9c8e48bc21085192b4964563849c6cef",
+        "bytes": 114780266,
+        "sha256": "f31892f093ec78699511585c4dea32ea5667c1482824a501ed8792e9f2cbc82b",
+        "tiles": 84146
+      },
+      "coast": {
+        "sourceSHA256": "90e467ea121484e63cfd867d68eb5cd58510fb019efd893ea9a3e70a34bf1abb",
+        "bytes": 6208577,
+        "sha256": "4ac2680313b453c4bce8a144c446a34604cb9f9ac06b8f84080784d96d256fe1",
+        "tiles": 5597
+      }
+    }
+  },
+  "pmtilesPython": "3.8.1",
+  "pmtilesJS": "4.5.0",
+  "librarySHA256": "caf981bc46f6327ee7e65d5dc964d89d38a69f60edca2bd4c5c890c21b554c6c",
+  "dataOrigin": "https://downloads.appsbyonzy.dev/OpenBareMap/patagonia-el-chalten/2.0.0/preview",
+  "scope": "Complete selected map tiles; no regional or zoom sampling."
+}

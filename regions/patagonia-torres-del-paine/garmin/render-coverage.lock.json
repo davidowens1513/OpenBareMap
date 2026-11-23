@@ -1,0 +1,76 @@
+{
+  "bounds": [
+    -73.84,
+    -51.81,
+    -72.3,
+    -50.56
+  ],
+  "contextEnvelope": [
+    -73.84,
+    -51.81,
+    -72.3,
+    -50.56
+  ],
+  "drawPriority": 25,
+  "format": "openbaremap-garmin-render-footprint-v1",
+  "geometry": {
+    "bytes": 767,
+    "path": "regions/patagonia-torres-del-paine/garmin/render-coverage.geojson",
+    "sha256": "ea8a6634a7a47a7c4c17155520f1700c04659643dee804f7252ad14fb7fe1df9"
+  },
+  "inputs": [
+    {
+      "bytes": 4371,
+      "path": "data/regions/patagonia-torres-del-paine/chile.poly",
+      "sha256": "a2c053d95312ba82997dda3deeb995a5ccff285d74db545d68b04a95facd26d3",
+      "url": "https://download.geofabrik.de/south-america/chile/chile.poly"
+    },
+    {
+      "bytes": 14403,
+      "path": "data/regions/patagonia-torres-del-paine/argentina.poly",
+      "sha256": "76f8a0212f268e796ad1a13a22184cd313bcc02700e44ef5be9e71c1b3a628f5",
+      "url": "https://download.geofabrik.de/south-america/argentina/argentina.poly"
+    }
+  ],
+  "knownDestinationsCovered": {
+    "base-torres": [
+      -72.949,
+      -50.969
+    ],
+    "dickson": [
+      -73.082,
+      -50.845
+    ],
+    "french-valley": [
+      -73.041,
+      -51.014
+    ],
+    "grey-glacier": [
+      -73.252,
+      -50.903
+    ],
+    "john-gardner-pass": [
+      -73.187,
+      -50.899
+    ],
+    "laguna-amarga": [
+      -72.744,
+      -51.025
+    ],
+    "paine-grande": [
+      -73.095,
+      -51.071
+    ],
+    "puerto-natales": [
+      -72.505,
+      -51.731
+    ],
+    "seron": [
+      -72.851,
+      -50.912
+    ]
+  },
+  "purpose": "Rectangular Garmin tiles may overlap other countries. Do not fill their padding with sea, land or land-cover polygons.",
+  "region": "patagonia-torres-del-paine",
+  "transparentNativeMap": true
+}

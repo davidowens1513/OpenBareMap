@@ -1,0 +1,35 @@
+{
+  "bytes": 94503042,
+  "datasets": {
+    "basemap": {
+      "path": "maps/basemap.mbtiles",
+      "sha256": "b44e6dec80a47e3a6a7c669364ace65ef437b351edac0f39de110429e755ee34"
+    },
+    "coast": {
+      "derived_from": "4d3cdc621fb01d2c15c057b029be13fdf56f95fd4793e1c782f058f12dc33fe3",
+      "maxzoom": 12,
+      "operation": "Preserve land-layer MVT bytes only through zoom 12; omit other layers.",
+      "path": "maps/coast.mbtiles",
+      "sha256": "a60cb628e406105031d8607fa94670ec6a5266ef3146a1f0c1e350950908bf0f"
+    },
+    "grid": {
+      "path": "maps/grid.mbtiles",
+      "sha256": "ff5b8f2601d70e18a91fbf8cc96c60272e4235bb42fc6e823754c4e579771504"
+    },
+    "hillshade": {
+      "path": "maps/hillshade.mbtiles",
+      "sha256": "0d73887e926a7654b71efc3bf87279a0710330353ec97ff9ca502e13496f95d9"
+    },
+    "topography": {
+      "path": "maps/topography.mbtiles",
+      "sha256": "4d3cdc621fb01d2c15c057b029be13fdf56f95fd4793e1c782f058f12dc33fe3"
+    }
+  },
+  "instructionsSHA256": "a5b4a9237282e5b38bde090538190cdf94bed54aaee3e3398df27883047a30d9",
+  "instructionsURL": "https://downloads.appsbyonzy.dev/OpenBareMap/iceland-southern-highlands/2.0.0/app-bundles-v1/ios/instructions.txt",
+  "localPath": "releases/iceland-southern-highlands/2.0.0/app-bundles-v1/ios/OpenBareMap-Iceland-Southern-Highlands-iOS-Bundle.zip",
+  "mapManifestSHA256": "1e31c85428620588bb0a6743d748c00e3819b8a47a765a67ae7d0af8a8b1d11a",
+  "r2Key": "OpenBareMap/iceland-southern-highlands/2.0.0/app-bundles-v1/ios/OpenBareMap-Iceland-Southern-Highlands-iOS-Bundle.zip",
+  "sha256": "9d2ebfdad644929aaaca024d4a7ae1fb8498da53d4b7919272a5868b944a4986",
+  "url": "https://downloads.appsbyonzy.dev/OpenBareMap/iceland-southern-highlands/2.0.0/app-bundles-v1/ios/OpenBareMap-Iceland-Southern-Highlands-iOS-Bundle.zip"
+}

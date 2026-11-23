@@ -1,0 +1,42 @@
+{
+  "accessed_utc": "2026-11-23T09:09:06.589665+00:00",
+  "inputs": [
+    {
+      "bytes": 352540467,
+      "path": "data/regions/patagonia/chile-261122.osm.pbf",
+      "replicationTimestamp": "2026-11-22T21:20:48Z",
+      "sha256": "2fdfe88365825b0ee1c38d1777af5dcec396adc100882932675625934cdddeae",
+      "url": "https://download.geofabrik.de/south-america/chile/chile-261122.osm.pbf"
+    },
+    {
+      "bytes": 436458588,
+      "path": "data/regions/patagonia/argentina-261122.osm.pbf",
+      "replicationTimestamp": "2026-11-22T21:20:48Z",
+      "sha256": "74687e0ab3e9559183cc635e1a4ac2eeea527094ffb2b0156e03416bb07c184f",
+      "url": "https://download.geofabrik.de/south-america/argentina/argentina-261122.osm.pbf"
+    }
+  ],
+  "osm": {
+    "bytes": 12993408,
+    "operation": "Complete-feature bbox extraction with nested relation references, then libosmium sorted merge; duplicate OSM objects resolved by version",
+    "path": "data/regions/patagonia-torres-del-paine/patagonia-torres-del-paine-261122.osm.pbf",
+    "replicationTimestamp": "2026-11-22T21:20:48Z",
+    "sha256": "12d13ee2c57c23a04ca48d3ae69778491be347a43664e6a3d168d85fe228d376",
+    "snapshot_date": "2026-11-22",
+    "url": null
+  },
+  "polygons": [
+    {
+      "bytes": 4371,
+      "path": "data/regions/patagonia-torres-del-paine/chile.poly",
+      "sha256": "a2c053d95312ba82997dda3deeb995a5ccff285d74db545d68b04a95facd26d3",
+      "url": "https://download.geofabrik.de/south-america/chile/chile.poly"
+    },
+    {
+      "bytes": 14403,
+      "path": "data/regions/patagonia-torres-del-paine/argentina.poly",
+      "sha256": "76f8a0212f268e796ad1a13a22184cd313bcc02700e44ef5be9e71c1b3a628f5",
+      "url": "https://download.geofabrik.de/south-america/argentina/argentina.poly"
+    }
+  ]
+}

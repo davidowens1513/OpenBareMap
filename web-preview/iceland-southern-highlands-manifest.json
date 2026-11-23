@@ -1,0 +1,41 @@
+{
+  "regions": {
+    "iceland-southern-highlands": {
+      "basemap": {
+        "sourceSHA256": "b44e6dec80a47e3a6a7c669364ace65ef437b351edac0f39de110429e755ee34",
+        "bytes": 23116995,
+        "sha256": "9c584e2cde339c18f1c1b34bf9dea36efe363d21ffe107c82d1aa3ed11b366eb",
+        "tiles": 13319
+      },
+      "grid": {
+        "sourceSHA256": "ff5b8f2601d70e18a91fbf8cc96c60272e4235bb42fc6e823754c4e579771504",
+        "bytes": 3072740,
+        "sha256": "959fca81bfb20823234f1a1101b3a3b0f5874056ebe9956d463e03029e865aee",
+        "tiles": 13590
+      },
+      "hillshade": {
+        "sourceSHA256": "0d73887e926a7654b71efc3bf87279a0710330353ec97ff9ca502e13496f95d9",
+        "bytes": 17579720,
+        "sha256": "755c5b36a3cd4b53ab4cc20a7b4dce763b2835203d554b1ee69e1ab896a104a3",
+        "tiles": 854
+      },
+      "topography": {
+        "sourceSHA256": "4d3cdc621fb01d2c15c057b029be13fdf56f95fd4793e1c782f058f12dc33fe3",
+        "bytes": 31920391,
+        "sha256": "e5c608031ec3205d6ede1123582843655b3ab129b77d6552b3566dbc3b6db4bd",
+        "tiles": 81216
+      },
+      "coast": {
+        "sourceSHA256": "a60cb628e406105031d8607fa94670ec6a5266ef3146a1f0c1e350950908bf0f",
+        "bytes": 418003,
+        "sha256": "710f1e4c44273a8d165947c6f7dd4c17af63407e4f88e1839e4f5e02769d46b5",
+        "tiles": 5285
+      }
+    }
+  },
+  "pmtilesPython": "3.8.1",
+  "pmtilesJS": "4.5.0",
+  "librarySHA256": "caf981bc46f6327ee7e65d5dc964d89d38a69f60edca2bd4c5c890c21b554c6c",
+  "dataOrigin": "https://downloads.appsbyonzy.dev/OpenBareMap/iceland-southern-highlands/2.0.0/preview",
+  "scope": "Complete selected map tiles; no regional or zoom sampling."
+}
