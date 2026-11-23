@@ -20,7 +20,7 @@ The [European walking editions build and release guide](docs/regional-editions.m
 
 The [Sorrento, Amalfi & Bay of Naples build and release guide](docs/regional-editions.md#sorrento-amalfi--bay-of-naples) covers the peninsula and the islands.
 
-The [permanent ice release guide](docs/regional-editions.md#permanent-ice-updates) records the glacier and permanent snowfield screening for all 37 editions, including the [Pyrenees 2.0.2 review](docs/regional-editions.md#pyrenees-ice-review). The [development history](docs/development-history.md#22-november-2026--glacier-and-snowfield-review) records the latest review and publication.
+The [permanent ice release guide](docs/regional-editions.md#permanent-ice-updates) records the 22 November 2026 glacier and permanent snowfield audit of the 37 editions published at that time. It includes the [Pyrenees 2.0.2 review](docs/regional-editions.md#pyrenees-ice-review). See the [development history](docs/development-history.md#22-november-2026--glacier-and-snowfield-review) for the audit and release record.
 
 **The map downloads linked below are hosted on Cloudflare R2, outside Git.** Use the direct links below; cloning this repository does not download these packages. See [file storage and restoration](#file-storage-and-restoration) for developer resources.
 

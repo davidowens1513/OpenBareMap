@@ -148,8 +148,8 @@ the verified Worldwide catalogue and the OpenBareMap release records.
 
 ## Permanent ice updates
 
-As of 22 November 2026, all 37 published editions have been screened for
-glaciers and permanent snowfields. The locked OpenStreetMap extracts for 18
+The 22 November 2026 audit screened the 37 editions published at the time
+for glaciers and permanent snowfields. The locked OpenStreetMap extracts for 18
 editions contained no polygons with those tags. Sixteen editions show ice
 using OpenStreetMap outlines and classifications, including five Alpine,
 three Norwegian, three Canadian Rockies and five US national park editions.
