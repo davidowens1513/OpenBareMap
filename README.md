@@ -1,5 +1,7 @@
 # OpenBareMap 2.0
 
+**[Browse all OpenBareMap maps](https://appsbyonzy.dev/maps/)**
+
 OpenBareMap is an offline topographic map for hiking, available in **59 regional editions** across Europe, North and South America, Asia, Africa and New Zealand. Each edition has **20 m contours**, its own source coverage, map databases and platform packages. Mobile bundles are integration components for apps using MapLibre Native. Garmin downloads are display-only maps.
 
 ## Downloads and incorporation instructions
