@@ -1,0 +1,21 @@
+{
+  "combinedSHA256": "ed34f87cf9d68455dd5a971363418a3853dfb6fbd34a9afe006ef4837fbb2bab",
+  "command": [
+    "/opt/homebrew/opt/openjdk@21/libexec/openjdk.jdk/Contents/Home/bin/java",
+    "-Xmx6g",
+    "-jar",
+    "/Volumes/Extreme SSD/Projects/OpenBareMap/work/nine-map-release/git-openbaremap/garmin/tools/splitter-r654/splitter.jar",
+    "--mapid=49010001",
+    "--description=OpenBareMap San Juan Mountains",
+    "--max-nodes=1000000",
+    "--max-threads=2",
+    "--keep-complete=true",
+    "--output=pbf",
+    "--polygon-file=/Volumes/Extreme SSD/Projects/OpenBareMap/work/nine-map-release/git-openbaremap/regions/san-juan-mountains/garmin/coverage.poly",
+    "--output-dir=/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/931e851460d7/san-juan-mountains/garmin/split",
+    "--ignore-osm-bounds=true",
+    "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/931e851460d7/san-juan-mountains/garmin/combined.osm.pbf"
+  ],
+  "coverageSHA256": "716a791bcc644677a84a16326ae709b67e61dfa1074138cca5f461049d4d7c95",
+  "ignoreSourceHeaderBounds": true
+}

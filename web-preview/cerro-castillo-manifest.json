@@ -1,0 +1,41 @@
+{
+  "regions": {
+    "cerro-castillo": {
+      "basemap": {
+        "sourceSHA256": "7b152e7b4af00faea42e5fd7020e8717a9a7fb5ab6a7d5c0cb44769cc70486b0",
+        "bytes": 8838794,
+        "sha256": "b5c5d34e27539a0f448bcdbff7593dac783a6e363e1f5a711e85fc1570ebde59",
+        "tiles": 3249
+      },
+      "grid": {
+        "sourceSHA256": "7c171cbf352cd5672a842852ee39809ee81b1d9b649559237604f25c7b45c52f",
+        "bytes": 1025832,
+        "sha256": "46490758e48eccd9140745252ac4598d7dd9a2673a4c73775d850b4cc1970aad",
+        "tiles": 3420
+      },
+      "hillshade": {
+        "sourceSHA256": "c1499a8bbd6bfc746adba671933ab18132128a6335bfc7ed25b29a3fb3674d86",
+        "bytes": 9858949,
+        "sha256": "566f1228f02a595ba13c271110115f7268acaed6764131d9c3c24177332ac618",
+        "tiles": 265
+      },
+      "topography": {
+        "sourceSHA256": "ab76ca33f8742a60e6d2d97c3dae11052566787de83382ceead360d3afa4fd1d",
+        "bytes": 51299028,
+        "sha256": "2bb0296f53008b52f43e226d93244bff642990759565ca34e475956150b1ed03",
+        "tiles": 63778
+      },
+      "coast": {
+        "sourceSHA256": "fa2b5734367416d3a9e0203e5d852be754ccc8aea55747be24924c93b2e0812e",
+        "bytes": 2612536,
+        "sha256": "53f092aeba6c477cf2f8316cedd2a2d56b306ef7c76672000c3254655c890d31",
+        "tiles": 4179
+      }
+    }
+  },
+  "pmtilesPython": "3.8.1",
+  "pmtilesJS": "4.5.0",
+  "librarySHA256": "caf981bc46f6327ee7e65d5dc964d89d38a69f60edca2bd4c5c890c21b554c6c",
+  "dataOrigin": "https://downloads.appsbyonzy.dev/OpenBareMap/cerro-castillo/2.0.0/preview",
+  "scope": "Complete selected map tiles; no regional or zoom sampling."
+}

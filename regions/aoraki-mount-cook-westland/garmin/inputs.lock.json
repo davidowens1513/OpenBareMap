@@ -1,0 +1,20 @@
+{
+  "inputs": [
+    {
+      "path": "regions/aoraki-mount-cook-westland/garmin/inputs/contours.geojson.gz",
+      "sha256": "201c1dbaa86c9bc9004d1ea34e0ce35d52372facbe31a7812d2dcba82ccbdb0a",
+      "uncompressedSHA256": "cd09330ae62b1178da74d54d5dd165267b38aae72113852c03f6a7804f1c6c07"
+    },
+    {
+      "path": "regions/aoraki-mount-cook-westland/garmin/inputs/landcover.geojson.gz",
+      "sha256": "a4b48cdc5a734b837c7e785a9a2f8a64305a6088883643483a3da391ef01471c",
+      "uncompressedSHA256": "682c7030f2de34786e80ce76345647c0e2fd0c2d693662b04b16805c5fe3f398"
+    },
+    {
+      "path": "regions/aoraki-mount-cook-westland/garmin/inputs/land.geojson.gz",
+      "sha256": "091a7aa33f8fb33cd40dac80a9d4ac2692219f74e38cee11586605d7abdb6666",
+      "uncompressedSHA256": "34215895a3841627a191c97d640da426a690e802f14e19e5a5f3b63b57ec3745"
+    }
+  ],
+  "region": "aoraki-mount-cook-westland"
+}

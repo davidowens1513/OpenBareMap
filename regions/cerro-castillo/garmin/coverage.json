@@ -1,0 +1,31 @@
+{
+  "areaSquareDegrees": 0.8099999999999974,
+  "bounds": [
+    -72.55,
+    -46.45,
+    -71.65,
+    -45.55
+  ],
+  "entireRequestedFootprintCovered": true,
+  "exactFootprint": null,
+  "inputs": [
+    {
+      "bytes": 4371,
+      "path": "data/regions/cerro-castillo/chile.poly",
+      "sha256": "a2c053d95312ba82997dda3deeb995a5ccff285d74db545d68b04a95facd26d3",
+      "url": "https://download.geofabrik.de/south-america/chile/chile.poly"
+    }
+  ],
+  "knownDestinationsCovered": [
+    "cerro-castillo",
+    "estero-parada",
+    "island",
+    "laguna-castillo",
+    "laguna-chiguay",
+    "las-horquetas",
+    "villa-cerro-castillo"
+  ],
+  "operation": "Requested rectangular crop; source outlines cover all destination anchors",
+  "polygons": 1,
+  "sha256": "796478b47423fd87065e875764cc9852b87a20776f1de29b61893cd23c1b8c1d"
+}

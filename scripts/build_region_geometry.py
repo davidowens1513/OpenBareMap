@@ -48,7 +48,7 @@ def permanent_ice_class(tags, *, glaciers_as_snowfields=False):
             return 'permanent_snow' if glaciers_as_snowfields else 'glacier'
     return None
 
-def landcover(source,destination,bounds=None,*,permanent_ice=False,ice_footprint=None,ice_only=False,glaciers_as_snowfields=False):
+def landcover(source,destination,bounds=None,*,permanent_ice=False,ice_footprint=None,ice_only=False,glaciers_as_snowfields=False,official_ice=None):
     import osmium
     from shapely.geometry import shape,box
     extent=box(*bounds) if bounds else None
@@ -68,6 +68,10 @@ def landcover(source,destination,bounds=None,*,permanent_ice=False,ice_footprint
             if permanent_ice:
                 cl = permanent_ice_class(tags, glaciers_as_snowfields=glaciers_as_snowfields) or cl
             if not cl or (ice_only and cl not in ice_counts):return
+            # An authoritative regional inventory replaces only the classes it
+            # supplies. OSM permanent snowfields remain available separately.
+            if official_ice is not None and cl in official_ice['classes']:
+                return
             try:
                 original=json.loads(factory.create_multipolygon(a))
             except osmium.InvalidLocationError:
@@ -94,7 +98,26 @@ def landcover(source,destination,bounds=None,*,permanent_ice=False,ice_footprint
             counts['smoothed' if geometry is not original else 'retained'] += 1
             props={k.replace(':','_'):v for k,v in tags.items() if k in ('wetland','natural','landuse','name','name:en','name:cy','name:gd','name:es','name:fr','name:it','name:de','name:fo','name:no','name:nb','name:nn','name:se','official_name','short_name')};props['class']=cl
             out.add(geometry,props)
-    Handler().apply_file(str(source),locations=True,idx='flex_mem');out.close()
+    Handler().apply_file(str(source),locations=True,idx='flex_mem')
+    if official_ice is not None:
+        collection = json.loads(official_ice['path'].read_text())
+        for feature in collection['features']:
+            cl = feature['properties'].get('class')
+            if cl not in official_ice['classes'] or cl not in ice_counts:
+                raise ValueError('Unexpected official permanent-ice class: '+str(cl))
+            geometry = shape(feature['geometry'])
+            if geometry.is_empty or not geometry.is_valid:
+                raise ValueError('Invalid official permanent-ice geometry')
+            if extent is not None and not extent.intersects(geometry):
+                continue
+            if ice_footprint is not None and not ice_footprint.intersects(geometry):
+                continue
+            properties = {key:value for key,value in feature['properties'].items()
+                          if key in ('class','name','name_es','source','source_id','glacier_type','glacier_unit')}
+            out.add(feature['geometry'],properties)
+            ice_counts[cl] += 1
+            counts['retained'] += 1
+    out.close()
     if not out.count:raise ValueError('No landcover')
     if permanent_ice:
         counts['permanentIce'] = ice_counts
@@ -135,7 +158,7 @@ def grid(region,destination):
 
 def build(region,topography):
     p=profile(region);dest=ROOT/'build'/(region+'-geometry');dest.mkdir(exist_ok=False)
-    source=json.loads(region_path(region,'sources.lock.json').read_text())['osm'];osm=ROOT/source['path']
+    locked=json.loads(region_path(region,'sources.lock.json').read_text());source=locked['osm'];osm=ROOT/source['path']
     if digest(osm)!=source['sha256']:raise ValueError('OSM source changed')
     ice_footprint = None
     if p.get('permanentIce') and p.get('coverageBoundary'):
@@ -144,10 +167,18 @@ def build(region,topography):
         from shapely.prepared import prep
         coverage = json.loads(region_path(region,'coverage.geojson').read_text())
         ice_footprint = prep(unary_union([shape(feature['geometry']) for feature in coverage['features']]))
-    counts={'contours':contours(topography/'contours.geojson',dest/'contours.geojson'),'landcover':landcover(osm,dest/'landcover.geojson',p['bounds'] if p.get('clipBasemap') else None,permanent_ice=p.get('permanentIce',False),ice_footprint=ice_footprint,glaciers_as_snowfields=p.get('glaciersAsSnowfields',False)),'grid':grid(region,dest)}
+    official_ice = None
+    if permanent_ice_source := locked.get('permanentIce'):
+        path = ROOT / permanent_ice_source['path']
+        if digest(path) != permanent_ice_source['sha256']:
+            raise ValueError('Official permanent-ice source changed')
+        official_ice = {'path': path, 'classes': set(permanent_ice_source['classes'])}
+    counts={'contours':contours(topography/'contours.geojson',dest/'contours.geojson'),'landcover':landcover(osm,dest/'landcover.geojson',p['bounds'] if p.get('clipBasemap') else None,permanent_ice=p.get('permanentIce',False),ice_footprint=ice_footprint,glaciers_as_snowfields=p.get('glaciersAsSnowfields',False),official_ice=official_ice),'grid':grid(region,dest)}
     report = {'region':region,'counts':counts,'osm':source,'contoursSourceSHA256':digest(topography/'contours.geojson'),'outputs':{f.name:digest(f) for f in dest.glob('*.geojson')},'builderSHA256':digest(Path(__file__)),'smootherSHA256':digest(Path(__file__).with_name('smooth_geometry.py'))}
     if p.get('permanentIce'):
         report['permanentIce'] = counts['landcover']['permanentIce']
+    if permanent_ice_source:
+        report['permanentIceSource'] = permanent_ice_source
     write(dest/'geometry-report.json',report)
     print(json.dumps(counts),flush=True)
 

@@ -1,0 +1,163 @@
+{
+  "appBundleName": "Cerro-Castillo",
+  "bounds": [
+    -72.55,
+    -46.45,
+    -71.65,
+    -45.55
+  ],
+  "clipBasemap": true,
+  "clipSource": true,
+  "clipTerrainToBounds": true,
+  "coastContextBounds": [
+    -74,
+    -48,
+    -70,
+    -44
+  ],
+  "contourIntervalMetres": 20,
+  "coverage": "Cerro Castillo National Park in Ays\u00e9n, including the Las Horquetas traverse, Laguna Castillo, Estero Parada, Villa Cerro Castillo and Carretera Austral approaches.",
+  "destinationLabels": {
+    "cerro-castillo": "Cerro Castillo",
+    "estero-parada": "Estero Parada",
+    "island": "Cerro Castillo",
+    "laguna-castillo": "Laguna Castillo",
+    "laguna-chiguay": "Laguna Chiguay",
+    "las-horquetas": "Las Horquetas",
+    "villa-cerro-castillo": "Villa Cerro Castillo"
+  },
+  "destinations": {
+    "cerro-castillo": [
+      -72.194,
+      -46.064,
+      13
+    ],
+    "estero-parada": [
+      -72.236,
+      -46.118,
+      13
+    ],
+    "island": [
+      -72.1,
+      -46.0,
+      9
+    ],
+    "laguna-castillo": [
+      -72.168,
+      -46.08,
+      13
+    ],
+    "laguna-chiguay": [
+      -72.067,
+      -45.962,
+      13
+    ],
+    "las-horquetas": [
+      -72.187,
+      -45.907,
+      13
+    ],
+    "villa-cerro-castillo": [
+      -72.07,
+      -46.119,
+      13
+    ]
+  },
+  "garminContextBounds": [
+    -72.55,
+    -46.45,
+    -71.65,
+    -45.55
+  ],
+  "garminFamilyId": 4907,
+  "garminFilename": "OpenBareMap-Cerro-Castillo.img",
+  "garminPackageRevision": "2.0.0-r1",
+  "garminTileStartId": 49070001,
+  "garminUseSourceOutline": true,
+  "garminVersionedDelivery": true,
+  "gridCRS": "EPSG:32719",
+  "gridExtent": [
+    220000,
+    300000,
+    4840000,
+    4960000
+  ],
+  "gridName": "WGS 84 / UTM zone 19S",
+  "gridSource": "utm-grid",
+  "id": "cerro-castillo",
+  "ignoreSourceHeaderBounds": true,
+  "inspectionNames": [
+    "Villa Cerro Castillo"
+  ],
+  "label": "Cerro Castillo",
+  "labelGlyphs": "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz\u00c1\u00c9\u00cd\u00d1\u00d3\u00da\u00dc\u00e1\u00e9\u00ed\u00f1\u00f3\u00fa\u00fc",
+  "mapVersion": "2.0.0",
+  "maxzoom": 14,
+  "minorWaterwayMinzoom": 10,
+  "minzoom": 4,
+  "name": "OpenBareMap Cerro Castillo",
+  "nativeLanguage": "es",
+  "optionalBasemapLayers": [
+    "ferry",
+    "island_name",
+    "cycling_route",
+    "railway",
+    "station",
+    "hiking_route",
+    "boundary"
+  ],
+  "permanentIce": true,
+  "permanentIceSourceNote": "Glacier outlines: Chile Direcci\u00f3n General de Aguas, Inventario P\u00fablico de Glaciares 2022 v2; permanent snowfields, where mapped: OpenStreetMap contributors. Rock glaciers and temporary snow are excluded.",
+  "projectedCRS": "EPSG:32719",
+  "repairClippedCoastline": true,
+  "requireBogFeatures": false,
+  "requiredPermanentIce": [
+    "glacier"
+  ],
+  "sourceBaseOverrides": {
+    "chile": "https://download.geofabrik.de/south-america/chile/"
+  },
+  "sourceBaseURL": "https://download.geofabrik.de/south-america/",
+  "sourceCacheRegion": "patagonia",
+  "sourceDate": "2026-11-22",
+  "sourceSlugs": [
+    "chile"
+  ],
+  "styleRevision": "2.0.0-cerro-castillo-r1",
+  "terrainAttribution": "Copernicus DEM GLO-30 \u00b7 European Union / ESA \u00b7 DLR / Airbus",
+  "terrainBounds": [
+    -73,
+    -47,
+    -71,
+    -45
+  ],
+  "terrainNotice": "Cerro Castillo elevation: Copernicus DEM GLO-30 Public (AWS 2021 release).\n\nproduced using Copernicus WorldDEM-30 \u00a9 DLR e.V. 2010-2014 and \u00a9 Airbus Defence and Space GmbH 2014-2018 provided under COPERNICUS by the European Union and ESA; all rights reserved\n\nThe organisations in charge of the Copernicus programme by law or by delegation do not incur any liability for any use of the Copernicus WorldDEM-30.\n\nLicense: https://dataspace.copernicus.eu/sites/default/files/media/files/2025-06/copernicus_contributing_mission_data_access_v2_cop_dem_licenses.pdf\nSource: https://registry.opendata.aws/copernicus-dem/\nVertical datum: EGM2008 orthometric metres. Native approximately 30 m cells are bilinearly resampled to point-aligned Int16 HGT for the shared terrain pipeline. Ocean-only cells absent from the official public inventory are zero.\n",
+  "terrainProvider": "copernicus-glo30",
+  "townlands": false,
+  "validationAnchors": {
+    "cerro-castillo": [
+      -72.194,
+      -46.064
+    ],
+    "estero-parada": [
+      -72.236,
+      -46.118
+    ],
+    "laguna-castillo": [
+      -72.168,
+      -46.08
+    ],
+    "laguna-chiguay": [
+      -72.067,
+      -45.962
+    ],
+    "las-horquetas": [
+      -72.187,
+      -45.907
+    ],
+    "villa-cerro-castillo": [
+      -72.07,
+      -46.119
+    ]
+  }
+}

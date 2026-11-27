@@ -1,0 +1,391 @@
+{
+  "coverage": "Huaraz and the Cordillera Blanca, including Huascar\u00e1n National Park approaches, the Santa Cruz\u2013Huaripampa trek and principal trailheads and road access.",
+  "coverageAnchors": {
+    "cashapampa": {
+      "coordinate": [
+        -77.721,
+        -8.954
+      ],
+      "featuresInNeighbouringDetailedTiles": 73
+    },
+    "huaraz": {
+      "coordinate": [
+        -77.528,
+        -9.53
+      ],
+      "featuresInNeighbouringDetailedTiles": 5832
+    },
+    "huascaran": {
+      "coordinate": [
+        -77.605,
+        -9.121
+      ],
+      "featuresInNeighbouringDetailedTiles": 73
+    },
+    "llanganuco": {
+      "coordinate": [
+        -77.65,
+        -9.05
+      ],
+      "featuresInNeighbouringDetailedTiles": 175
+    },
+    "punta-union": {
+      "coordinate": [
+        -77.577,
+        -8.993
+      ],
+      "featuresInNeighbouringDetailedTiles": 88
+    },
+    "vaqueria": {
+      "coordinate": [
+        -77.489,
+        -9.008
+      ],
+      "featuresInNeighbouringDetailedTiles": 1353
+    },
+    "yungay": {
+      "coordinate": [
+        -77.744,
+        -9.141
+      ],
+      "featuresInNeighbouringDetailedTiles": 1212
+    }
+  },
+  "datasets": {
+    "basemap": {
+      "empty_tile_count": 4,
+      "logical_tiles_sha256": "c2876ab220d19a5b86343726f6d5a0582ec24307f5347d97181f5db0fd4aeb31",
+      "tile_count": 4522
+    },
+    "grid": {
+      "empty_tile_count": 0,
+      "logical_tiles_sha256": "2f6f551b6a69a8d05b4a25258349d337a7182a7e4994de8c0594b51371b49d22",
+      "tile_count": 4757
+    },
+    "hillshade": {
+      "empty_tile_count": 0,
+      "logical_tiles_sha256": "70211bcbddd08df7f6e48079aa86215c7982f1608754a235a360d85170b77404",
+      "tile_count": 331
+    },
+    "topography": {
+      "empty_tile_count": 29142,
+      "logical_tiles_sha256": "2966b7f84b2e08f90eb42413f7688740f3f3e8d54d81d2ddb66c9264426ff0f1",
+      "tile_count": 35557
+    }
+  },
+  "detail": {
+    "basemap": {
+      "boundaries": 6423,
+      "contours": 0,
+      "permanentIce": {
+        "glacier": 5779,
+        "permanent_snow": 0
+      }
+    },
+    "topography": {
+      "boundaries": 0,
+      "contours": 376923
+    }
+  },
+  "garmin": {
+    "familyId": 4905,
+    "garminPackageRevision": "2.0.0-r1",
+    "inspection": {
+      "anchorLabels": {
+        "Huaraz": "Huaraz",
+        "Yungay": "Yungay"
+      },
+      "bounds": [
+        -77.95005798339844,
+        -10.100040435791016,
+        -77.04995155334473,
+        -8.29991340637207
+      ],
+      "coastPolygonsByLevel": {
+        "0": {
+          "0x32": 20,
+          "0x54": 26
+        },
+        "1": {
+          "0x32": 20,
+          "0x54": 26
+        },
+        "2": {
+          "0x32": 20,
+          "0x54": 26
+        },
+        "3": {
+          "0x32": 20,
+          "0x54": 26
+        },
+        "4": {
+          "0x32": 20,
+          "0x54": 26
+        }
+      },
+      "contoursByLevel": {
+        "0": {
+          "0x20": 75276,
+          "0x22": 18748
+        },
+        "1": {
+          "0x20": 54763,
+          "0x22": 13587
+        },
+        "2": {
+          "0x22": 12475
+        },
+        "3": {
+          "0x10008": 11148
+        },
+        "4": {}
+      },
+      "lineInstancesAtHighestDetail": {
+        "0x10001": 131,
+        "0x10002": 92,
+        "0x10003": 25,
+        "0x10004": 2,
+        "0x10005": 168,
+        "0x10006": 31,
+        "0x1000b": 12,
+        "0x16": 10330,
+        "0x18": 1205,
+        "0x1c": 480,
+        "0x1e": 68,
+        "0x1f": 227,
+        "0x2": 243,
+        "0x20": 75276,
+        "0x22": 18748,
+        "0x3": 396,
+        "0x4": 221,
+        "0x6": 7610,
+        "0x7": 1045,
+        "0xa": 1702
+      },
+      "logicalCombinedSHA256": "d156515c1821fe7fa6176b8bc2bbce35ef2ca55cd72d6271dbcc1c41ac8d4cb8",
+      "logicalHashNote": "Internal file names, sizes and payloads; only CommonHeader creation-date bytes 14..20 are zeroed for hashing. IMG archive headers are excluded. Output bytes are never modified.",
+      "logicalTileSHA256": {
+        "49050001.img": "7bb36d18173f925513be9e05cea3768062f33406d3cd0a3bdcee944c6092c8e4",
+        "49050002.img": "ddcb0a0ab83496e6d5fcdac4db4cba5c9e36de1b72ca96717d1cabaec508f62a",
+        "49050003.img": "1c47f256a530f1b6a393e69f555a888e97739386d160830411bd0604ebce80c0",
+        "49050004.img": "ab27a78b518b199d1152c4a3a7f9ffab3b249f4dfae817542d3c40632116cd13",
+        "49050005.img": "51afa8a7b82825229c68ee0e49615e62ba7e59948f0fed018c9ab23897e8fd6e",
+        "49050006.img": "53c3bd05a7a484d4f5c2ebe1fcd25d39815b01f78ac82f3b30d5a8209a3a8bc0",
+        "49050007.img": "ed2bb4e3a602b39cf1b20741c09efeedd70672e23d14049d683d6c0eb761ccac",
+        "49050008.img": "51b5bd8457e66041011b089d2248e7881cd43d418249eb7a9f150950c458dfde",
+        "49050009.img": "7d17ca5eccae0ca7bc16d3d5101dcd837acf6191dad847e0f72155bcf10e9f60",
+        "49050010.img": "49c485c0a0ed804f4fa62079e902b0d86da074f62b2dedf15f74fcb41b30d292",
+        "49050011.img": "8b33c61100505a6692d89e6c7aba94083cb1c6574e6f3bc556329c02175b3a3a",
+        "49050012.img": "cd942b5f7f484919a028e80b510dc63436fd625ce0e95b8983f3dcf6d88fee98",
+        "49050013.img": "438c7403f1a41197bd4f86d058c74ebefb4db37444e92d99b470c56a9d6f952d",
+        "49050014.img": "7cdc4c39fb987bf210adbc4065b662d894b88178f484199c06f436b8ca9729a5",
+        "49050015.img": "c0de14a70a356ed8533d5471e7935adbaec00b43ea420e34c33e623d3ce38f74",
+        "49050016.img": "95cfea6e70eff57e88002df01552f0dd0f49565bb8eafa31bbf10656af7e9715",
+        "49050017.img": "e02632ff68279e2e3d16f439cc035d4cda48840d58db5ac704ee2799044e22cb",
+        "49050018.img": "111179e9133a8c85d521e7defdaecf8c193129f962559b05ab9d6dde7eb30282",
+        "49050019.img": "68644e075d45bbe9a5bdb9ee12e3891fa19caf27aece479878489cef417a7228",
+        "49050020.img": "2eb7b88f044078cf699c1649d8ca5c0d3e56cadae5fa18b7d5e20a1f0be18b02"
+      },
+      "pointInstancesAtHighestDetail": {
+        "0x100": 1,
+        "0x10001": 53,
+        "0x10002": 230,
+        "0x10003": 91,
+        "0x10004": 1,
+        "0x10006": 6275,
+        "0x2f0b": 172,
+        "0x600": 14,
+        "0x6603": 761,
+        "0x6615": 34,
+        "0x6616": 234,
+        "0x800": 386,
+        "0xb00": 1072,
+        "0xc00": 41
+      },
+      "polygonInstancesAtHighestDetail": {
+        "0x10101": 398,
+        "0x10102": 360,
+        "0x10103": 239,
+        "0x10104": 160,
+        "0x10105": 1,
+        "0x10106": 4,
+        "0x10107": 5,
+        "0x10109": 73,
+        "0x1010a": 71,
+        "0x1010b": 11,
+        "0x1010c": 7587,
+        "0x13": 37645,
+        "0x32": 20,
+        "0x3c": 2451,
+        "0x50": 874,
+        "0x51": 82,
+        "0x54": 26
+      },
+      "routing": false,
+      "subfileBytes": {
+        "DEM": 19984473,
+        "LBL": 294771,
+        "MPS": 1773,
+        "RGN": 37032966,
+        "SRT": 912,
+        "TRE": 456660,
+        "TYP": 3037
+      },
+      "tiles": 20
+    },
+    "output": {
+      "bytes": 57960448,
+      "path": "regions/cordillera-blanca/garmin/dist/OpenBareMap-Cordillera-Blanca.img",
+      "sha256": "4bff2a5b870716dcd008d9a482252ce2b30bfa9fe787f3b1ef67219f4a42fb6a"
+    },
+    "routing": false,
+    "status": "compiled and structurally inspected; hardware rendering pending"
+  },
+  "geometryProcessing": {
+    "contours": 32294,
+    "grid": {
+      "grid_10km": 34,
+      "grid_1km": 322
+    },
+    "landcover": {
+      "empty_source_areas": [],
+      "features": 2444,
+      "permanentIce": {
+        "glacier": 495,
+        "permanent_snow": 0
+      },
+      "retained": 620,
+      "smoothed": 1824
+    }
+  },
+  "irelandGarminPackageRevision": "2.0.1-trail-detail-r1",
+  "irelandPreserved": true,
+  "labelGlyphs": {
+    "Open Sans Bold": true,
+    "Open Sans Regular": true,
+    "Open Sans Semibold": true
+  },
+  "landBackground": {
+    "cashapampa": {
+      "coordinate": [
+        -77.721,
+        -8.954
+      ],
+      "verifiedZooms": [
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    },
+    "huaraz": {
+      "coordinate": [
+        -77.528,
+        -9.53
+      ],
+      "verifiedZooms": [
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    },
+    "huascaran": {
+      "coordinate": [
+        -77.605,
+        -9.121
+      ],
+      "verifiedZooms": [
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    },
+    "llanganuco": {
+      "coordinate": [
+        -77.65,
+        -9.05
+      ],
+      "verifiedZooms": [
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    },
+    "punta-union": {
+      "coordinate": [
+        -77.577,
+        -8.993
+      ],
+      "verifiedZooms": [
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    },
+    "vaqueria": {
+      "coordinate": [
+        -77.489,
+        -9.008
+      ],
+      "verifiedZooms": [
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    },
+    "yungay": {
+      "coordinate": [
+        -77.744,
+        -9.141
+      ],
+      "verifiedZooms": [
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    }
+  },
+  "packages": {
+    "android": {
+      "checkedFiles": 47,
+      "nativeDeviceRenderingTested": false,
+      "sourceFiles": {
+        "basemap": "maps/basemap.mbtiles",
+        "coast": "maps/coast.mbtiles",
+        "hillshade": "maps/hillshade.mbtiles",
+        "topography": "maps/topography.mbtiles",
+        "utm-grid": "maps/grid.mbtiles"
+      }
+    },
+    "ios": {
+      "checkedFiles": 50,
+      "nativeDeviceRenderingTested": false,
+      "sourceFiles": {
+        "basemap": "maps/basemap.mbtiles",
+        "coast": "maps/coast.mbtiles",
+        "hillshade": "maps/hillshade.mbtiles",
+        "topography": "maps/topography.mbtiles",
+        "utm-grid": "maps/grid.mbtiles"
+      }
+    }
+  },
+  "permanentIceSourceCounts": {
+    "glacier": 495,
+    "permanent_snow": 0
+  },
+  "region": "cordillera-blanca",
+  "status": "automated checks passed; visual and hardware acceptance pending"
+}

@@ -1,0 +1,106 @@
+{
+  "acceptance": "Automated checks only; see validation and visual-review records for actual reviewed scope.",
+  "coverage": "North Cascades National Park around Cascade Pass and Sahale Arm, including Marblemount, the Cascade River Road and principal trailhead approaches.",
+  "datasets": {
+    "basemap": {
+      "bytes": 9515008,
+      "path": "releases/north-cascades/2.0.0/maps/basemap.mbtiles",
+      "sha256": "6d8657f4e40be54dac51b6ccb77ca8a61773f987383e00c3ceacbd3b9bbcfa26",
+      "validation": {
+        "empty_tile_count": 5,
+        "logical_tiles_sha256": "a3a69babbee479c8e5b1f239bbe3338c276d8b9f7590a6dc98a70620d9598ef5",
+        "tile_count": 1805
+      }
+    },
+    "grid": {
+      "bytes": 614400,
+      "path": "releases/north-cascades/2.0.0/maps/grid.mbtiles",
+      "sha256": "d1ef6cc1019e3afd742eb63ba91fda9fae326e1f5841d6cfe038cac9759fbfd1",
+      "validation": {
+        "empty_tile_count": 0,
+        "logical_tiles_sha256": "4bb85c1f12cc88dd4e45b251ffc397403e86c0c2b734e36087be93eb590dc342",
+        "tile_count": 1832
+      }
+    },
+    "hillshade": {
+      "bytes": 5672960,
+      "path": "releases/north-cascades/2.0.0/maps/hillshade.mbtiles",
+      "sha256": "4f1910529c6f18cb5b21e091632a4630e1d0ea47b33a3426058fc99218e1dac5",
+      "validation": {
+        "empty_tile_count": 0,
+        "logical_tiles_sha256": "24ce8166bc1a22c7f4595671b965989f51cfbddee8d90878ed18229086ee637a",
+        "tile_count": 147
+      }
+    },
+    "topography": {
+      "bytes": 44609536,
+      "path": "releases/north-cascades/2.0.0/maps/topography-context.mbtiles",
+      "sha256": "23bbf09695f19631e2e45dc56f08f180b4bad748acf4cce5b73fa3403366a089",
+      "validation": {
+        "empty_tile_count": 45397,
+        "logical_tiles_sha256": "c05f241e6719ab54e9c50e9c9420d47e30a66f62e877799c9759c292fdb5b0d2",
+        "tile_count": 50406
+      }
+    }
+  },
+  "garmin": {
+    "bytes": 13840384,
+    "path": "regions/north-cascades/garmin/dist/OpenBareMap-North-Cascades.img",
+    "sha256": "0c2009cdd17b662d7796e14dd5ed46e5f366cb24f3e875aed793f5e1aace8a52"
+  },
+  "geometryReport": {
+    "path": "build/north-cascades-geometry/geometry-report.json",
+    "sha256": "2120d61f8930cdd836157cc8a8a4929c27029f179a9bca659efc4ce3bcda4517"
+  },
+  "hostAppsModified": false,
+  "mapVersion": "2.0.0",
+  "osm": {
+    "bytes": 3781340,
+    "operation": "Complete-feature bbox extraction with nested relation references",
+    "path": "data/regions/north-cascades/washington-261120.osm.clipped.osm.pbf",
+    "replicationTimestamp": "2026-11-20T21:21:21Z",
+    "sha256": "5f253696ecaf8a9478699b48699df37e69f531ca448fbe0447f7ff9bee4a85d8",
+    "snapshot_date": "2026-11-20",
+    "url": "https://download.geofabrik.de/north-america/us/washington/washington-261120.osm.pbf"
+  },
+  "packages": {
+    "android": {
+      "archive": {
+        "bytes": 64978571,
+        "path": "regions/north-cascades/android/OpenBareMap-Android.zip",
+        "sha256": "0469dc3a2b82643cc19cd31bddbbe9ab39565e1d3450121db55df660b7185913"
+      },
+      "checksumsSHA256": "8af079efe51b160595e55c0fee88ca30e215fbc9da5c333988ae9356b897a184",
+      "manifestSHA256": "b1a8649b03a5c980d2a8bfb23106c80cd09f06d7bf56a268fdb1634b46b2dd7d",
+      "path": "regions/north-cascades/android",
+      "validationSHA256": "efb3bcd6841964de5648d7cb05a29d2184208d5e17899ee3ccec34baae3db606"
+    },
+    "ios": {
+      "checksumsSHA256": "a957d7787c47b77ac3e5ed059639b945075861033fae5a828174f216f6e1c06f",
+      "manifestSHA256": "2a0cb8280d7f12cd96aea5da8f4f2fbd1bcf3dbb3cd45418f88b21314d7e5526",
+      "path": "regions/north-cascades/ios",
+      "validationSHA256": "62b530850ea0da4551339af52a05481d264be040617fb6c519f753c932df86c9"
+    }
+  },
+  "pythonRuntime": {
+    "packages": {
+      "Pillow": "12.3.0",
+      "certifi": "2026.10.23",
+      "charset-normalizer": "3.5.2",
+      "idna": "3.20",
+      "numpy": "2.5.4",
+      "osmium": "4.3.2",
+      "pyproj": "3.8.0",
+      "requests": "2.34.2",
+      "shapely": "2.2.0",
+      "urllib3": "2.8.0"
+    },
+    "platform": "macOS-27.2.1-arm64-arm-64bit-Mach-O",
+    "python": "3.14.5 (main, May 10 2026, 10:21:34) [Clang 21.0.0 (clang-2100.0.123.102)]",
+    "requirementsSHA256": "427f12ff8b49bfebac0a7d453c2f65bd15d6695584b18e6ecee1fdfeed20a36c"
+  },
+  "region": "north-cascades",
+  "styleSHA256": "4a2b95480b340a08c0250d9b83c0f2c3127ee7d56295673761fa04a94e3d8a58",
+  "terrainLockSHA256": "8c817897ecf2f2b7312b8b958b4b98cc5d21f57fd732f832023bef3858b3a9af",
+  "validation": "validation.json"
+}

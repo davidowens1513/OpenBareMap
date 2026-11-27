@@ -1,0 +1,39 @@
+{
+  "features": [
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              -77.95,
+              -10.1
+            ],
+            [
+              -77.95,
+              -8.3
+            ],
+            [
+              -77.05,
+              -8.3
+            ],
+            [
+              -77.05,
+              -10.1
+            ],
+            [
+              -77.95,
+              -10.1
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "properties": {
+        "purpose": "Limit opaque native background and land-cover polygons; retain complete accepted OSM and terrain inputs",
+        "region": "cordillera-blanca"
+      },
+      "type": "Feature"
+    }
+  ],
+  "type": "FeatureCollection"
+}

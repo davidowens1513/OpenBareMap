@@ -1,0 +1,57 @@
+{
+  "bounds": [
+    35.106816290106174,
+    29.469852625202567,
+    35.734144405959064,
+    30.787310764674405
+  ],
+  "contextEnvelope": [
+    35.106816290106174,
+    29.469852625202567,
+    35.734144405959064,
+    30.787310764674405
+  ],
+  "drawPriority": 25,
+  "format": "openbaremap-garmin-render-footprint-v1",
+  "geometry": {
+    "bytes": 78661,
+    "path": "regions/jordan-trail-dana-petra-wadi-rum/garmin/render-coverage.geojson",
+    "sha256": "851127a2820b1641529f554becd96bfa8f1ade0b844506fc2752eb942f7becfe"
+  },
+  "inputs": [
+    {
+      "path": "regions/jordan-trail-dana-petra-wadi-rum/coverage.geojson",
+      "purpose": "Exact regional footprint for drawing the native map background",
+      "sha256": "93232109862f7263e55374a2b0590e05217da253596e151d6c824a46a4d33a8b"
+    }
+  ],
+  "knownDestinationsCovered": {
+    "al-humeima": [
+      35.344,
+      29.955
+    ],
+    "dana": [
+      35.611,
+      30.675
+    ],
+    "feynan": [
+      35.50923,
+      30.63956
+    ],
+    "little-petra": [
+      35.45,
+      30.375
+    ],
+    "petra": [
+      35.478,
+      30.322
+    ],
+    "wadi-rum": [
+      35.42,
+      29.576
+    ]
+  },
+  "purpose": "Rectangular Garmin tiles may overlap other countries. Do not fill their padding with sea, land or land-cover polygons.",
+  "region": "jordan-trail-dana-petra-wadi-rum",
+  "transparentNativeMap": true
+}

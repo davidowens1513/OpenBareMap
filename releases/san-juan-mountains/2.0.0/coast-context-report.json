@@ -1,0 +1,52 @@
+{
+  "builderSHA256": "df45d47a59e968508a89136d44d799aaf2bba52547b211e0dff68a5b0e0f6cfc",
+  "contextBounds": [
+    -110,
+    36,
+    -106,
+    40
+  ],
+  "note": "Contour payloads preserved exactly while extending land background outside edition coverage.",
+  "oldTopography": {
+    "bytes": 36167680,
+    "path": "releases/san-juan-mountains/2.0.0/maps/topography.mbtiles",
+    "sha256": "61b3a8ccd9cab7afacc5ca1b0e193940aa79ede54aedea36ee0989170eb03f46",
+    "validation": {
+      "empty_tile_count": 51726,
+      "logical_tiles_sha256": "c89a241c1b72757e6f19d26a8a04142648797038642db3c2907bc204794db8af",
+      "tile_count": 56822
+    }
+  },
+  "output": {
+    "bytes": 36044800,
+    "path": "releases/san-juan-mountains/2.0.0/maps/topography-context.mbtiles",
+    "sha256": "e8292b9c94bbb412900c671677ae065d3f01869b70f108631551d2a32c4ffdf4",
+    "validation": {
+      "empty_tile_count": 51726,
+      "logical_tiles_sha256": "c89a241c1b72757e6f19d26a8a04142648797038642db3c2907bc204794db8af",
+      "tile_count": 56822
+    }
+  },
+  "replacement": {
+    "changed_tiles": 3694,
+    "path": "build/san-juan-mountains-coast-context/combined.mbtiles",
+    "replacement_feature_instances": 4999,
+    "sha256": "9672b9745dd479a2a63f0b4d872a87fcf9ce7556a01a71d9b4f91457b61c60c1",
+    "unchanged_other_layers_sha256": "b5f51951b446037563a95cd644e7bb8c083c39470e675a0a4d39954c96349d09",
+    "validation": {
+      "empty_tile_count": 51726,
+      "logical_tiles_sha256": "c89a241c1b72757e6f19d26a8a04142648797038642db3c2907bc204794db8af",
+      "tile_count": 56822
+    }
+  },
+  "source": {
+    "accessed_utc": "2026-10-25T12:59:16.751893+00:00",
+    "bytes": 928538219,
+    "http_headers_path": "data/land-polygons.headers",
+    "license": "ODbL 1.0; OpenStreetMap contributors",
+    "path": "data/land-polygons-split-4326.zip",
+    "sha256": "5911e273096f9585425a17c30a8a98785cc33ed2718ff88987768933b8a327f7",
+    "source_snapshot": "HTTP Last-Modified 2026-10-25T03:43:12Z; this is file publication, not a guaranteed OSM snapshot timestamp",
+    "url": "https://osmdata.openstreetmap.de/download/land-polygons-split-4326.zip"
+  }
+}

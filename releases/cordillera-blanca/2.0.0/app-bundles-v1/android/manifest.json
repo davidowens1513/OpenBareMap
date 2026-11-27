@@ -1,0 +1,33 @@
+{
+  "bytes": 221794115,
+  "datasets": {
+    "basemap": {
+      "path": "maps/basemap.mbtiles",
+      "sha256": "158e64a3408d84bec574b0218ebefdcbd2409ac6e1a24c3bf2adcc67f49a7922"
+    },
+    "coast": {
+      "derivedFrom": "6b8e6da437d221372e99f733a97974713df1132836c76c823f9006915ca7a11a",
+      "path": "maps/coast.mbtiles",
+      "sha256": "57574364b494a93a7d767f31a5b5cd109e5f7e6cb8043d0fbf365fcade91b2a4"
+    },
+    "grid": {
+      "path": "maps/grid.mbtiles",
+      "sha256": "e777b39b2329ebd4639f5646f57aa75a8fbfff2e04028530f84d39dbab08e4c7"
+    },
+    "hillshade": {
+      "path": "maps/hillshade.mbtiles",
+      "sha256": "5b7e10aa68695d4b36ec587ba5e1100acc59df8f8018490c6a15b4cd409509ae"
+    },
+    "topography": {
+      "path": "maps/topography.mbtiles",
+      "sha256": "6b8e6da437d221372e99f733a97974713df1132836c76c823f9006915ca7a11a"
+    }
+  },
+  "instructionsSHA256": "071a7d2b90ed3952eff2daae23e0bf693a11f53b2ecb4c242b3f833ed3b8e28d",
+  "instructionsURL": "https://downloads.appsbyonzy.dev/OpenBareMap/cordillera-blanca/2.0.0/app-bundles-v1/android/instructions.txt",
+  "localPath": "releases/cordillera-blanca/2.0.0/app-bundles-v1/android/OpenBareMap-Cordillera-Blanca-Android-Bundle.zip",
+  "mapManifestSHA256": "c49faf859ee8c0f8fa46bcd7b4b2d099b5268bbaf22b08eea6bfbc9b4e6ba869",
+  "r2Key": "OpenBareMap/cordillera-blanca/2.0.0/app-bundles-v1/android/OpenBareMap-Cordillera-Blanca-Android-Bundle.zip",
+  "sha256": "50a283b4c2782d002b7de182b31ca4a9a3d8ab1d9c34deff0370d582be744296",
+  "url": "https://downloads.appsbyonzy.dev/OpenBareMap/cordillera-blanca/2.0.0/app-bundles-v1/android/OpenBareMap-Cordillera-Blanca-Android-Bundle.zip"
+}

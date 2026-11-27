@@ -1,0 +1,33 @@
+{
+  "bytes": 86387700,
+  "datasets": {
+    "basemap": {
+      "path": "maps/basemap.mbtiles",
+      "sha256": "7b152e7b4af00faea42e5fd7020e8717a9a7fb5ab6a7d5c0cb44769cc70486b0"
+    },
+    "coast": {
+      "derivedFrom": "ab76ca33f8742a60e6d2d97c3dae11052566787de83382ceead360d3afa4fd1d",
+      "path": "maps/coast.mbtiles",
+      "sha256": "fa2b5734367416d3a9e0203e5d852be754ccc8aea55747be24924c93b2e0812e"
+    },
+    "grid": {
+      "path": "maps/grid.mbtiles",
+      "sha256": "7c171cbf352cd5672a842852ee39809ee81b1d9b649559237604f25c7b45c52f"
+    },
+    "hillshade": {
+      "path": "maps/hillshade.mbtiles",
+      "sha256": "c1499a8bbd6bfc746adba671933ab18132128a6335bfc7ed25b29a3fb3674d86"
+    },
+    "topography": {
+      "path": "maps/topography.mbtiles",
+      "sha256": "ab76ca33f8742a60e6d2d97c3dae11052566787de83382ceead360d3afa4fd1d"
+    }
+  },
+  "instructionsSHA256": "47001ad1d4a3ffeeccdbc309a635f423d42d0d10202f7d0cb9dbc755ccfe2e18",
+  "instructionsURL": "https://downloads.appsbyonzy.dev/OpenBareMap/cerro-castillo/2.0.0/app-bundles-v1/android/instructions.txt",
+  "localPath": "releases/cerro-castillo/2.0.0/app-bundles-v1/android/OpenBareMap-Cerro-Castillo-Android-Bundle.zip",
+  "mapManifestSHA256": "1cef6bfba2711416b01627c65b2ca68b8ef4c4736df1a11a9d7b3981be6b88ae",
+  "r2Key": "OpenBareMap/cerro-castillo/2.0.0/app-bundles-v1/android/OpenBareMap-Cerro-Castillo-Android-Bundle.zip",
+  "sha256": "b7c9bb59092177ce52538bbf4d88fc90ced0a738a9c9be9ffb4994ba8e6cfbc4",
+  "url": "https://downloads.appsbyonzy.dev/OpenBareMap/cerro-castillo/2.0.0/app-bundles-v1/android/OpenBareMap-Cerro-Castillo-Android-Bundle.zip"
+}

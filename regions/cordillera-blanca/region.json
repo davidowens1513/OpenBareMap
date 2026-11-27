@@ -1,0 +1,171 @@
+{
+  "appBundleName": "Cordillera-Blanca",
+  "bounds": [
+    -77.95,
+    -10.1,
+    -77.05,
+    -8.3
+  ],
+  "clipBasemap": true,
+  "clipSource": true,
+  "clipTerrainToBounds": true,
+  "coastContextBounds": [
+    -79,
+    -12,
+    -76,
+    -7
+  ],
+  "contourIntervalMetres": 20,
+  "coverage": "Huaraz and the Cordillera Blanca, including Huascar\u00e1n National Park approaches, the Santa Cruz\u2013Huaripampa trek and principal trailheads and road access.",
+  "destinationLabels": {
+    "cashapampa": "Cashapampa",
+    "huaraz": "Huaraz",
+    "huascaran": "Huascar\u00e1n",
+    "island": "Cordillera Blanca",
+    "llanganuco": "Llanganuco",
+    "punta-union": "Punta Uni\u00f3n",
+    "vaqueria": "Vaquer\u00eda",
+    "yungay": "Yungay"
+  },
+  "destinations": {
+    "cashapampa": [
+      -77.721,
+      -8.954,
+      13
+    ],
+    "huaraz": [
+      -77.528,
+      -9.53,
+      13
+    ],
+    "huascaran": [
+      -77.605,
+      -9.121,
+      13
+    ],
+    "island": [
+      -77.5,
+      -9.2,
+      9
+    ],
+    "llanganuco": [
+      -77.65,
+      -9.05,
+      13
+    ],
+    "punta-union": [
+      -77.577,
+      -8.993,
+      13
+    ],
+    "vaqueria": [
+      -77.489,
+      -9.008,
+      13
+    ],
+    "yungay": [
+      -77.744,
+      -9.141,
+      13
+    ]
+  },
+  "garminContextBounds": [
+    -77.95,
+    -10.1,
+    -77.05,
+    -8.3
+  ],
+  "garminFamilyId": 4905,
+  "garminFilename": "OpenBareMap-Cordillera-Blanca.img",
+  "garminPackageRevision": "2.0.0-r1",
+  "garminTileStartId": 49050001,
+  "garminUseSourceOutline": true,
+  "garminVersionedDelivery": true,
+  "gridCRS": "EPSG:32718",
+  "gridExtent": [
+    170000,
+    280000,
+    8880000,
+    9090000
+  ],
+  "gridName": "WGS 84 / UTM zone 18S",
+  "gridSource": "utm-grid",
+  "id": "cordillera-blanca",
+  "ignoreSourceHeaderBounds": true,
+  "inspectionNames": [
+    "Huaraz",
+    "Yungay"
+  ],
+  "label": "Cordillera Blanca",
+  "labelGlyphs": "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz\u00c1\u00c9\u00cd\u00d1\u00d3\u00da\u00dc\u00e1\u00e9\u00ed\u00f1\u00f3\u00fa\u00fc",
+  "mapVersion": "2.0.0",
+  "maxzoom": 14,
+  "minorWaterwayMinzoom": 10,
+  "minzoom": 4,
+  "name": "OpenBareMap Cordillera Blanca",
+  "nativeLanguage": "es",
+  "optionalBasemapLayers": [
+    "ferry",
+    "island_name",
+    "cycling_route",
+    "railway",
+    "station",
+    "hiking_route",
+    "boundary"
+  ],
+  "permanentIce": true,
+  "permanentIceSourceNote": "Glacier outlines: INAIGEM Inventario Nacional de Glaciares 2026; permanent snowfields, where mapped: OpenStreetMap contributors. Rock glaciers and temporary snow are excluded.",
+  "projectedCRS": "EPSG:32718",
+  "repairClippedCoastline": true,
+  "requireBogFeatures": false,
+  "requiredPermanentIce": [
+    "glacier"
+  ],
+  "sourceBaseURL": "https://download.geofabrik.de/south-america/peru/",
+  "sourceCacheRegion": "cusco-inca-trail",
+  "sourceDate": "2026-11-19",
+  "sourceSlugs": [
+    "peru"
+  ],
+  "styleRevision": "2.0.0-cordillera-blanca-r1",
+  "terrainAttribution": "Copernicus DEM GLO-30 \u00b7 European Union / ESA \u00b7 DLR / Airbus",
+  "terrainBounds": [
+    -78,
+    -11,
+    -77,
+    -8
+  ],
+  "terrainNotice": "Cordillera Blanca elevation: Copernicus DEM GLO-30 Public (AWS 2021 release).\n\nproduced using Copernicus WorldDEM-30 \u00a9 DLR e.V. 2010-2014 and \u00a9 Airbus Defence and Space GmbH 2014-2018 provided under COPERNICUS by the European Union and ESA; all rights reserved\n\nThe organisations in charge of the Copernicus programme by law or by delegation do not incur any liability for any use of the Copernicus WorldDEM-30.\n\nLicense: https://dataspace.copernicus.eu/sites/default/files/media/files/2025-06/copernicus_contributing_mission_data_access_v2_cop_dem_licenses.pdf\nSource: https://registry.opendata.aws/copernicus-dem/\nVertical datum: EGM2008 orthometric metres. Native approximately 30 m cells are bilinearly resampled to point-aligned Int16 HGT for the shared terrain pipeline. Ocean-only cells absent from the official public inventory are zero.\n",
+  "terrainProvider": "copernicus-glo30",
+  "townlands": false,
+  "validationAnchors": {
+    "cashapampa": [
+      -77.721,
+      -8.954
+    ],
+    "huaraz": [
+      -77.528,
+      -9.53
+    ],
+    "huascaran": [
+      -77.605,
+      -9.121
+    ],
+    "llanganuco": [
+      -77.65,
+      -9.05
+    ],
+    "punta-union": [
+      -77.577,
+      -8.993
+    ],
+    "vaqueria": [
+      -77.489,
+      -9.008
+    ],
+    "yungay": [
+      -77.744,
+      -9.141
+    ]
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "builderSHA256": "df45d47a59e968508a89136d44d799aaf2bba52547b211e0dff68a5b0e0f6cfc",
+  "contextBounds": [
+    168,
+    -45,
+    172,
+    -42
+  ],
+  "note": "Contour payloads preserved exactly while extending land background outside edition coverage.",
+  "oldTopography": {
+    "bytes": 35999744,
+    "path": "releases/aoraki-mount-cook-westland/2.0.0/maps/topography.mbtiles",
+    "sha256": "724c5eb996835298a966684a9c6c3574eddeb0dcf8aef565c088aa025e6a9c60",
+    "validation": {
+      "empty_tile_count": 27619,
+      "logical_tiles_sha256": "d464504c122775f5deaeede55c0f3e0881923bedf37f161c9e3a26166f132d3c",
+      "tile_count": 30711
+    }
+  },
+  "output": {
+    "bytes": 35934208,
+    "path": "releases/aoraki-mount-cook-westland/2.0.0/maps/topography-context.mbtiles",
+    "sha256": "cc4588d1c2cac2d85fc180d34dc8ae5f51678bdcb7f9cb3e0655de7897323674",
+    "validation": {
+      "empty_tile_count": 27619,
+      "logical_tiles_sha256": "d464504c122775f5deaeede55c0f3e0881923bedf37f161c9e3a26166f132d3c",
+      "tile_count": 30711
+    }
+  },
+  "replacement": {
+    "changed_tiles": 1740,
+    "path": "build/aoraki-mount-cook-westland-coast-context/combined.mbtiles",
+    "replacement_feature_instances": 2703,
+    "sha256": "16b1f3ac6997353744a30b36d8b44bdb2fbade2e1e4dcae9f3c2e0e4052289d6",
+    "unchanged_other_layers_sha256": "64d3102179388072f283f1afe1e843511b3c081f03a7a504f57153059e0bf834",
+    "validation": {
+      "empty_tile_count": 27619,
+      "logical_tiles_sha256": "d464504c122775f5deaeede55c0f3e0881923bedf37f161c9e3a26166f132d3c",
+      "tile_count": 30711
+    }
+  },
+  "source": {
+    "accessed_utc": "2026-10-25T12:59:16.751893+00:00",
+    "bytes": 928538219,
+    "http_headers_path": "data/land-polygons.headers",
+    "license": "ODbL 1.0; OpenStreetMap contributors",
+    "path": "data/land-polygons-split-4326.zip",
+    "sha256": "5911e273096f9585425a17c30a8a98785cc33ed2718ff88987768933b8a327f7",
+    "source_snapshot": "HTTP Last-Modified 2026-10-25T03:43:12Z; this is file publication, not a guaranteed OSM snapshot timestamp",
+    "url": "https://osmdata.openstreetmap.de/download/land-polygons-split-4326.zip"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "areaSquareDegrees": 0.7599999999999967,
+  "bounds": [
+    -77.35,
+    -10.75,
+    -76.55,
+    -9.8
+  ],
+  "entireRequestedFootprintCovered": true,
+  "exactFootprint": null,
+  "inputs": [
+    {
+      "bytes": 4172,
+      "path": "data/regions/cordillera-huayhuash/peru.poly",
+      "sha256": "179baab6f016cdddfcc38f14990c5e0a015de4cb15421f740a93eb37cf455ada",
+      "url": "https://download.geofabrik.de/south-america/peru/peru.poly"
+    }
+  ],
+  "knownDestinationsCovered": [
+    "cajatambo",
+    "carhuacocha",
+    "chiquian",
+    "cuartelhuain",
+    "huayhuash",
+    "island",
+    "llamac",
+    "viconga"
+  ],
+  "operation": "Requested rectangular crop; source outlines cover all destination anchors",
+  "polygons": 1,
+  "sha256": "9458001567e417864521ac137b9160a1404d8f0f030d2a2df43ea27c9a013416"
+}

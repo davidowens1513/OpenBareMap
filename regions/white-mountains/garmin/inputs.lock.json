@@ -1,0 +1,20 @@
+{
+  "inputs": [
+    {
+      "path": "regions/white-mountains/garmin/inputs/contours.geojson.gz",
+      "sha256": "02dd808945ff1c340289bf28776d0bf01f96b3300da7826b50add44df7a2e2f8",
+      "uncompressedSHA256": "2dcf7342299bafe6d71b6765194d9fb09640fcc528bf7a4329fd6198916e128d"
+    },
+    {
+      "path": "regions/white-mountains/garmin/inputs/landcover.geojson.gz",
+      "sha256": "67e0243d180d8717af1608e9e026e56e89211d7a2b715ed82b53051024f9fe36",
+      "uncompressedSHA256": "3dc65c7133e2d42d180c6812afa768070142ae4ac86781fbc7ba49ee4ef5e2d2"
+    },
+    {
+      "path": "regions/white-mountains/garmin/inputs/land.geojson.gz",
+      "sha256": "a3bf5ef5427d4042f1411ce9fa1dfe6b8f295e53ba1499004602199feee96720",
+      "uncompressedSHA256": "f82afc780e4ad71fc5ac756c92ce0fd3823ccc9ac314fba52d86496b0ca9e93b"
+    }
+  ],
+  "region": "white-mountains"
+}

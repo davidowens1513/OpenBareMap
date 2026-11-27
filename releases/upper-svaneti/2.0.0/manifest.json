@@ -1,0 +1,106 @@
+{
+  "acceptance": "Automated checks only; see validation and visual-review records for actual reviewed scope.",
+  "coverage": "Upper Svaneti from Mestia to Ushguli, including the villages, connecting trails, Chalaadi and Shkhara glacier valleys and principal road approaches.",
+  "datasets": {
+    "basemap": {
+      "bytes": 11051008,
+      "path": "releases/upper-svaneti/2.0.0/maps/basemap.mbtiles",
+      "sha256": "fda49b4a0d9ddd1b77773a65e5578e5d9c7b7c297e04e83ae7a6bad19ba5d6fd",
+      "validation": {
+        "empty_tile_count": 8,
+        "logical_tiles_sha256": "226335dbc10e31af467cd38431730720754c4b44a221c516af8fd0a206c4cb2b",
+        "tile_count": 2460
+      }
+    },
+    "grid": {
+      "bytes": 983040,
+      "path": "releases/upper-svaneti/2.0.0/maps/grid.mbtiles",
+      "sha256": "104be736c1db7d875d8316902b9830a702fd338281638003f03c4e78ba75d364",
+      "validation": {
+        "empty_tile_count": 0,
+        "logical_tiles_sha256": "244732175f2f9c996c15ea3ceafaba7d8c55ff79741a7f7ed9c14c9e3cae472c",
+        "tile_count": 2801
+      }
+    },
+    "hillshade": {
+      "bytes": 9658368,
+      "path": "releases/upper-svaneti/2.0.0/maps/hillshade.mbtiles",
+      "sha256": "699c6b26b43db3d1d5bb73e2c192cec90fa20c08238d4bb840e8872c4614a0da",
+      "validation": {
+        "empty_tile_count": 0,
+        "logical_tiles_sha256": "d6ccbba7c5c53f575a27738a81495492625968b1920306bd41288dbe62996ae1",
+        "tile_count": 203
+      }
+    },
+    "topography": {
+      "bytes": 83329024,
+      "path": "releases/upper-svaneti/2.0.0/maps/topography-context.mbtiles",
+      "sha256": "5ed933314141d46abcf465d86451520b42ac263478bd7abbbc463b1c3981592c",
+      "validation": {
+        "empty_tile_count": 54926,
+        "logical_tiles_sha256": "d323dafc3d09cdbbfa6683bcd05fc9568da0678333f9f3a4a2eea32929b840b2",
+        "tile_count": 61235
+      }
+    }
+  },
+  "garmin": {
+    "bytes": 25229312,
+    "path": "regions/upper-svaneti/garmin/dist/OpenBareMap-Upper-Svaneti.img",
+    "sha256": "9464b1d46e444b2c8521da234f8298c722b3293aed554505b8eae39a50c3d231"
+  },
+  "geometryReport": {
+    "path": "build/upper-svaneti-geometry/geometry-report.json",
+    "sha256": "596b73a9dfff9d41887533156ead85678144ec696e6d5681ab05ab457b7f38b0"
+  },
+  "hostAppsModified": false,
+  "mapVersion": "2.0.0",
+  "osm": {
+    "bytes": 5063342,
+    "operation": "Complete-feature bbox extraction with nested relation references",
+    "path": "data/regions/upper-svaneti/georgia-261126.osm.clipped.osm.pbf",
+    "replicationTimestamp": "2026-11-26T21:21:01Z",
+    "sha256": "33f9f7a13499c681e30b00476e857103437af985b16ac180aa18a1249b72f55c",
+    "snapshot_date": "2026-11-26",
+    "url": "https://download.geofabrik.de/europe/georgia/georgia-261126.osm.pbf"
+  },
+  "packages": {
+    "android": {
+      "archive": {
+        "bytes": 109441961,
+        "path": "regions/upper-svaneti/android/OpenBareMap-Android.zip",
+        "sha256": "243da9fb10b73a0f7b0b5c4bf6ad034a777944cbdb2acfde54d8559585b06adc"
+      },
+      "checksumsSHA256": "e717366a43dd8ba0cfb8d056b1755b2aba9e52828ae42c083ac98ffed4625346",
+      "manifestSHA256": "bbdc63cf439bfa594e5fa8e3023a0ead3e0755646d40e92cf9ddc06247f05685",
+      "path": "regions/upper-svaneti/android",
+      "validationSHA256": "6585e2253d3ce79669b8ec03fa111347ef7bdf2df84c548d48958b91a5bac03e"
+    },
+    "ios": {
+      "checksumsSHA256": "20de9f5fc8fd15c7ddf23948e508f91d93a5a398576560f933021a35bad0b609",
+      "manifestSHA256": "046ba3e6b8e41d34d66bd61395430a74a733a2e899e8d063ba712c8621a892da",
+      "path": "regions/upper-svaneti/ios",
+      "validationSHA256": "2316850fd87c434e52218d60dca94731f914b27856562e6cabbc889d373eb0f8"
+    }
+  },
+  "pythonRuntime": {
+    "packages": {
+      "Pillow": "12.3.0",
+      "certifi": "2026.10.23",
+      "charset-normalizer": "3.5.2",
+      "idna": "3.20",
+      "numpy": "2.5.4",
+      "osmium": "4.3.2",
+      "pyproj": "3.8.0",
+      "requests": "2.34.2",
+      "shapely": "2.2.0",
+      "urllib3": "2.8.0"
+    },
+    "platform": "macOS-27.2.1-arm64-arm-64bit-Mach-O",
+    "python": "3.14.5 (main, May 10 2026, 10:21:34) [Clang 21.0.0 (clang-2100.0.123.102)]",
+    "requirementsSHA256": "427f12ff8b49bfebac0a7d453c2f65bd15d6695584b18e6ecee1fdfeed20a36c"
+  },
+  "region": "upper-svaneti",
+  "styleSHA256": "718fb5410c32758431351f671de30136de41d3fa1b1f86f0ef29a416dc7139a7",
+  "terrainLockSHA256": "751819fe53de903b247335bd069b9e63589c6cccdaffe5c940b53d778e1f605c",
+  "validation": "validation.json"
+}

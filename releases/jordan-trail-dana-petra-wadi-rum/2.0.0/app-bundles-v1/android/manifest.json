@@ -1,0 +1,33 @@
+{
+  "bytes": 38269108,
+  "datasets": {
+    "basemap": {
+      "path": "maps/basemap.mbtiles",
+      "sha256": "8c6619d03f66d4bbf81efe7d11ec402e9102253138a36f95bf7546a57eed3ebb"
+    },
+    "coast": {
+      "derivedFrom": "234a0a32e2bdece1de047c663f25dbd7585b6c5c91fccbd7ff28729a89dfbec5",
+      "path": "maps/coast.mbtiles",
+      "sha256": "3764b1808d532985a967aac779205639c50e3b18434299378f325e026ad9a777"
+    },
+    "grid": {
+      "path": "maps/grid.mbtiles",
+      "sha256": "6f466a90057fe57a509b19be2b157a541dd8f4eeba8bd10dfde5bb0927a080e0"
+    },
+    "hillshade": {
+      "path": "maps/hillshade.mbtiles",
+      "sha256": "00fa0ccb0c13181e7836096dd7b18a8d97f41af58e32a121082bd42850ec6b91"
+    },
+    "topography": {
+      "path": "maps/topography.mbtiles",
+      "sha256": "234a0a32e2bdece1de047c663f25dbd7585b6c5c91fccbd7ff28729a89dfbec5"
+    }
+  },
+  "instructionsSHA256": "4a986c9e52e7833a5644aaa0bc4cb518d291777a87f25af015507fc580c03adf",
+  "instructionsURL": "https://downloads.appsbyonzy.dev/OpenBareMap/jordan-trail-dana-petra-wadi-rum/2.0.0/app-bundles-v1/android/instructions.txt",
+  "localPath": "releases/jordan-trail-dana-petra-wadi-rum/2.0.0/app-bundles-v1/android/OpenBareMap-Jordan-Trail-Dana-Petra-Wadi-Rum-Android-Bundle.zip",
+  "mapManifestSHA256": "f974365aa85d7dd926a5a2b5cd94250bc10195c3c44396cbade174879452a537",
+  "r2Key": "OpenBareMap/jordan-trail-dana-petra-wadi-rum/2.0.0/app-bundles-v1/android/OpenBareMap-Jordan-Trail-Dana-Petra-Wadi-Rum-Android-Bundle.zip",
+  "sha256": "ed1a03e481a8fea6d884b2315565511325b0b5aef6c0ea7c5a7b6b49b50a08b4",
+  "url": "https://downloads.appsbyonzy.dev/OpenBareMap/jordan-trail-dana-petra-wadi-rum/2.0.0/app-bundles-v1/android/OpenBareMap-Jordan-Trail-Dana-Petra-Wadi-Rum-Android-Bundle.zip"
+}

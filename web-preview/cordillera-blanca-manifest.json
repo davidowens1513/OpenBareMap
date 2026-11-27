@@ -1,0 +1,41 @@
+{
+  "regions": {
+    "cordillera-blanca": {
+      "basemap": {
+        "sourceSHA256": "158e64a3408d84bec574b0218ebefdcbd2409ac6e1a24c3bf2adcc67f49a7922",
+        "bytes": 19461330,
+        "sha256": "130de9380b7d1d30b532bde1f066b65b4ddeae8b94c8efde1fdf36d89137deed",
+        "tiles": 4522
+      },
+      "grid": {
+        "sourceSHA256": "e777b39b2329ebd4639f5646f57aa75a8fbfff2e04028530f84d39dbab08e4c7",
+        "bytes": 1620197,
+        "sha256": "dbd6246d6d0f0f68c7ba47aa994041180b4fa212e49309e7ac0700c9e0da9690",
+        "tiles": 4757
+      },
+      "hillshade": {
+        "sourceSHA256": "5b7e10aa68695d4b36ec587ba5e1100acc59df8f8018490c6a15b4cd409509ae",
+        "bytes": 16456423,
+        "sha256": "9114ab2daa990bcc448d2e8e0a743411131ca83b12b9607415a2819a68f41a1c",
+        "tiles": 331
+      },
+      "topography": {
+        "sourceSHA256": "6b8e6da437d221372e99f733a97974713df1132836c76c823f9006915ca7a11a",
+        "bytes": 171832718,
+        "sha256": "4aa3d9c16d5c308e09d165f88f95fe4aa5b86f001838b116f56459fc4400b024",
+        "tiles": 35557
+      },
+      "coast": {
+        "sourceSHA256": "57574364b494a93a7d767f31a5b5cd109e5f7e6cb8043d0fbf365fcade91b2a4",
+        "bytes": 181824,
+        "sha256": "ec7c3223381371c27684d25a337db5caa95372ffc3011f1f9d2c79250f6037d4",
+        "tiles": 2372
+      }
+    }
+  },
+  "pmtilesPython": "3.8.1",
+  "pmtilesJS": "4.5.0",
+  "librarySHA256": "caf981bc46f6327ee7e65d5dc964d89d38a69f60edca2bd4c5c890c21b554c6c",
+  "dataOrigin": "https://downloads.appsbyonzy.dev/OpenBareMap/cordillera-blanca/2.0.0/preview",
+  "scope": "Complete selected map tiles; no regional or zoom sampling."
+}

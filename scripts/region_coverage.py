@@ -46,7 +46,7 @@ def polygon_union(region,destination):
     for name,(lon,lat,zoom) in p['destinations'].items():
         if not geometry.covers(Point(lon,lat)):raise ValueError('Coverage excludes '+name)
     polygons=[geometry] if geometry.geom_type=='Polygon' else list(geometry.geoms)
-    output=[p['label']]
+    output=[p.get('garminName',p['label']).replace('/','-')]
     for index,poly in enumerate(polygons,1):
         for label,ring in [(str(index),poly.exterior)]+[(f'!{index}-{i}',ring) for i,ring in enumerate(poly.interiors,1)]:
             output.append(label);output.extend(f'  {x:.8f}  {y:.8f}' for x,y in ring.coords);output.append('END')

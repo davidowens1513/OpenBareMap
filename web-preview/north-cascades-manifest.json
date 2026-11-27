@@ -1,0 +1,41 @@
+{
+  "regions": {
+    "north-cascades": {
+      "basemap": {
+        "sourceSHA256": "6d8657f4e40be54dac51b6ccb77ca8a61773f987383e00c3ceacbd3b9bbcfa26",
+        "bytes": 8544416,
+        "sha256": "c66cd7c79187c0aca13cecff88a20eadab371acf730dfd5b2a7fc234cba76bec",
+        "tiles": 1805
+      },
+      "grid": {
+        "sourceSHA256": "d1ef6cc1019e3afd742eb63ba91fda9fae326e1f5841d6cfe038cac9759fbfd1",
+        "bytes": 511445,
+        "sha256": "8844e9893b275297ff0e07c362574f8b0c4ad413f098f47db20321a8a45daf29",
+        "tiles": 1832
+      },
+      "hillshade": {
+        "sourceSHA256": "4f1910529c6f18cb5b21e091632a4630e1d0ea47b33a3426058fc99218e1dac5",
+        "bytes": 5553213,
+        "sha256": "07fa65cc598cb1a67a81ba5458a7d6efdb6a46c6f85acd1e639a6b01b24a6bd0",
+        "tiles": 147
+      },
+      "topography": {
+        "sourceSHA256": "23bbf09695f19631e2e45dc56f08f180b4bad748acf4cce5b73fa3403366a089",
+        "bytes": 40314238,
+        "sha256": "53bc9eab945d7882aea2ddd34172fb554f184e2d09c28307c61f077c69ca9e22",
+        "tiles": 50406
+      },
+      "coast": {
+        "sourceSHA256": "3ee291309c26f825a32866db68ad4b62a89e7175e5e4cf3b9348eae150e79d80",
+        "bytes": 556469,
+        "sha256": "e199d877984a348d77251ec96081339fdcd9eb15bcd5d73ddf7555beb75bd379",
+        "tiles": 3322
+      }
+    }
+  },
+  "pmtilesPython": "3.8.1",
+  "pmtilesJS": "4.5.0",
+  "librarySHA256": "caf981bc46f6327ee7e65d5dc964d89d38a69f60edca2bd4c5c890c21b554c6c",
+  "dataOrigin": "https://downloads.appsbyonzy.dev/OpenBareMap/north-cascades/2.0.0/preview",
+  "scope": "Complete selected map tiles; no regional or zoom sampling."
+}

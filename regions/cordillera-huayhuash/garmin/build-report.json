@@ -1,0 +1,131 @@
+{
+  "familyId": 4906,
+  "garminPackageRevision": "2.0.0-r1",
+  "inspection": {
+    "anchorLabels": {
+      "Chiqui\u00e1n": "Chiqui\u00e1n"
+    },
+    "bounds": [
+      -77.35001564025879,
+      -10.750036239624023,
+      -76.54998779296875,
+      -9.799976348876953
+    ],
+    "coastPolygonsByLevel": {
+      "0": {
+        "0x32": 9,
+        "0x54": 17
+      },
+      "1": {
+        "0x32": 9,
+        "0x54": 17
+      },
+      "2": {
+        "0x32": 9,
+        "0x54": 17
+      },
+      "3": {
+        "0x32": 9,
+        "0x54": 17
+      },
+      "4": {
+        "0x32": 9,
+        "0x54": 17
+      }
+    },
+    "contoursByLevel": {
+      "0": {
+        "0x20": 36351,
+        "0x22": 9047
+      },
+      "1": {
+        "0x20": 27266,
+        "0x22": 6766
+      },
+      "2": {
+        "0x22": 6283
+      },
+      "3": {
+        "0x10008": 5709
+      },
+      "4": {}
+    },
+    "lineInstancesAtHighestDetail": {
+      "0x10001": 70,
+      "0x10003": 6,
+      "0x10005": 19,
+      "0x10006": 1,
+      "0x1000b": 4,
+      "0x16": 1375,
+      "0x18": 586,
+      "0x1c": 238,
+      "0x1e": 86,
+      "0x1f": 118,
+      "0x2": 75,
+      "0x20": 36351,
+      "0x22": 9047,
+      "0x3": 149,
+      "0x4": 41,
+      "0x6": 1842,
+      "0x7": 346,
+      "0xa": 388
+    },
+    "logicalCombinedSHA256": "38598bb29eb240c48028be60497727bb2f5ada7ecb01069c72d868dfffc69663",
+    "logicalHashNote": "Internal file names, sizes and payloads; only CommonHeader creation-date bytes 14..20 are zeroed for hashing. IMG archive headers are excluded. Output bytes are never modified.",
+    "logicalTileSHA256": {
+      "49060001.img": "26854a5e527ac77f3c09537bb6c78a3e0cca4cb38462217eb7c1e2a57fd40ef3",
+      "49060002.img": "c5e0729b69cbf468724722550e729522ca8d222b829e3461bf398074db6c035f",
+      "49060003.img": "b97e6aa88c2553c2600c4de13a5aabbbe6c758e7207ae5f54bf9ce11d323ebaf",
+      "49060004.img": "2990e06697aa5ebbea9fc8c4a54e425e0dea7abe561edb6ede016e5d291889b9",
+      "49060005.img": "442cb461fdc14eb3ab6c98c70f45ed5d059e1bc31d7dd4ed56c925a005c3ddb3",
+      "49060006.img": "79dde5b18c7d630eb3e3cd34f062c7df9f19be90e77c743527d2ad5acbb4ea10",
+      "49060007.img": "7f5b2f7b496a1303c24ad088027134c514f7ff8b3960028993dce9e324aac738",
+      "49060008.img": "10ebf60f8c577b040a74c3ab60c353bfbad47c53ccca3dec72d63cef63b627b9",
+      "49060009.img": "b406573526d3aed28f7bf2d6339bf62732704346a6c344e9c652350d46908f7a"
+    },
+    "pointInstancesAtHighestDetail": {
+      "0x10001": 6,
+      "0x10002": 55,
+      "0x10003": 15,
+      "0x10006": 999,
+      "0x2f0b": 9,
+      "0x600": 7,
+      "0x6603": 423,
+      "0x6615": 27,
+      "0x6616": 162,
+      "0x800": 97,
+      "0xb00": 270,
+      "0xc00": 35
+    },
+    "polygonInstancesAtHighestDetail": {
+      "0x10101": 102,
+      "0x10102": 5,
+      "0x10109": 11,
+      "0x1010c": 1482,
+      "0x13": 4591,
+      "0x32": 9,
+      "0x3c": 1071,
+      "0x50": 70,
+      "0x51": 62,
+      "0x54": 17
+    },
+    "routing": false,
+    "subfileBytes": {
+      "DEM": 9574057,
+      "LBL": 76109,
+      "MPS": 857,
+      "RGN": 15957669,
+      "SRT": 912,
+      "TRE": 193217,
+      "TYP": 3037
+    },
+    "tiles": 9
+  },
+  "output": {
+    "bytes": 25886720,
+    "path": "regions/cordillera-huayhuash/garmin/dist/OpenBareMap-Cordillera-Huayhuash.img",
+    "sha256": "585ca3d12cee1f1998b04128095c2f3a13a1b4bd922cebf97c15b2e03a602165"
+  },
+  "routing": false,
+  "status": "compiled and structurally inspected; hardware rendering pending"
+}

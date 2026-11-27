@@ -1,0 +1,39 @@
+{
+  "features": [
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              -121.55,
+              48.25
+            ],
+            [
+              -121.55,
+              48.75
+            ],
+            [
+              -120.75,
+              48.75
+            ],
+            [
+              -120.75,
+              48.25
+            ],
+            [
+              -121.55,
+              48.25
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "properties": {
+        "purpose": "Limit opaque native background and land-cover polygons; retain complete accepted OSM and terrain inputs",
+        "region": "north-cascades"
+      },
+      "type": "Feature"
+    }
+  ],
+  "type": "FeatureCollection"
+}

@@ -1,0 +1,346 @@
+{
+  "coverage": "A cross-divide Southern Alps edition covering Aoraki / Mount Cook and Westland Tai Poutini, including Hooker Valley, Mueller Hut, Tasman Glacier, Fox Glacier and Franz Josef Glacier approaches.",
+  "coverageAnchors": {
+    "aoraki-village": {
+      "coordinate": [
+        170.097,
+        -43.735
+      ],
+      "featuresInNeighbouringDetailedTiles": 921
+    },
+    "fox-glacier": {
+      "coordinate": [
+        170.017,
+        -43.465
+      ],
+      "featuresInNeighbouringDetailedTiles": 677
+    },
+    "franz-josef": {
+      "coordinate": [
+        170.181,
+        -43.387
+      ],
+      "featuresInNeighbouringDetailedTiles": 1129
+    },
+    "hooker-valley": {
+      "coordinate": [
+        170.091,
+        -43.705
+      ],
+      "featuresInNeighbouringDetailedTiles": 472
+    },
+    "mueller-hut": {
+      "coordinate": [
+        170.064,
+        -43.721
+      ],
+      "featuresInNeighbouringDetailedTiles": 255
+    },
+    "tasman-glacier": {
+      "coordinate": [
+        170.177,
+        -43.61
+      ],
+      "featuresInNeighbouringDetailedTiles": 72
+    }
+  },
+  "datasets": {
+    "basemap": {
+      "empty_tile_count": 223,
+      "logical_tiles_sha256": "f5c602e0eceafd40a772fddebc15015b9061b9d0c43d757988eea3f1cb2faabd",
+      "tile_count": 1711
+    },
+    "grid": {
+      "empty_tile_count": 0,
+      "logical_tiles_sha256": "1142a2df3178dd7e856c3bf75920e143a1a89d387ab7389c2ae54a6ad71eb904",
+      "tile_count": 1701
+    },
+    "hillshade": {
+      "empty_tile_count": 0,
+      "logical_tiles_sha256": "98609287d621a73992c7afa91eccbcfd7f05f92b5ee29c1fc7a00bb0dcb54638",
+      "tile_count": 119
+    },
+    "topography": {
+      "empty_tile_count": 27619,
+      "logical_tiles_sha256": "d464504c122775f5deaeede55c0f3e0881923bedf37f161c9e3a26166f132d3c",
+      "tile_count": 30711
+    }
+  },
+  "detail": {
+    "basemap": {
+      "boundaries": 2183,
+      "contours": 0,
+      "permanentIce": {
+        "glacier": 8164,
+        "permanent_snow": 0
+      }
+    },
+    "topography": {
+      "boundaries": 0,
+      "contours": 98137
+    }
+  },
+  "garmin": {
+    "familyId": 4902,
+    "garminPackageRevision": "2.0.0-r1",
+    "inspection": {
+      "anchorLabels": {
+        "Aoraki / Mount Cook": "Aoraki / Mount Cook",
+        "Franz Josef": "Franz Josef"
+      },
+      "bounds": [
+        169.74992752075195,
+        -43.80000114440918,
+        170.45004844665527,
+        -43.19995880126953
+      ],
+      "coastPolygonsByLevel": {
+        "0": {
+          "0x32": 4,
+          "0x54": 9
+        },
+        "1": {
+          "0x32": 4,
+          "0x54": 6
+        },
+        "2": {
+          "0x32": 4,
+          "0x54": 6
+        },
+        "3": {
+          "0x32": 4,
+          "0x54": 6
+        },
+        "4": {
+          "0x32": 4,
+          "0x54": 6
+        }
+      },
+      "contoursByLevel": {
+        "0": {
+          "0x20": 14409,
+          "0x22": 3419
+        },
+        "1": {
+          "0x20": 10693,
+          "0x22": 2499
+        },
+        "2": {
+          "0x22": 2349
+        },
+        "3": {
+          "0x10008": 2149
+        },
+        "4": {}
+      },
+      "lineInstancesAtHighestDetail": {
+        "0x10001": 86,
+        "0x10002": 78,
+        "0x10004": 4,
+        "0x10005": 5,
+        "0x10006": 169,
+        "0x1000b": 5,
+        "0x16": 230,
+        "0x18": 1196,
+        "0x1c": 63,
+        "0x1e": 27,
+        "0x1f": 153,
+        "0x20": 14409,
+        "0x22": 3419,
+        "0x3": 74,
+        "0x6": 106,
+        "0x7": 262,
+        "0xa": 136
+      },
+      "logicalCombinedSHA256": "75b195fb3b26ed92e14bcf443f7e76c04f2b94878779cf0b294751b516471e88",
+      "logicalHashNote": "Internal file names, sizes and payloads; only CommonHeader creation-date bytes 14..20 are zeroed for hashing. IMG archive headers are excluded. Output bytes are never modified.",
+      "logicalTileSHA256": {
+        "49020001.img": "70f1c79306fb2122b66e0a5b5117525affaf9e160406f79dc949846015650c80",
+        "49020002.img": "2cb7b6be422bd20eac5f15fbc761b1558950e25b99af9223d60f431df0331af7",
+        "49020003.img": "b30eaecf611292140d7903b2841b42332c7b5ea78b27504d09369de5e342ac71",
+        "49020004.img": "cd9fb2276b5cc84a112177734d7d701faf7a52d8174638f616bfb3f807556e6a"
+      },
+      "pointInstancesAtHighestDetail": {
+        "0x10001": 68,
+        "0x10002": 78,
+        "0x10003": 44,
+        "0x10006": 163,
+        "0x2f0b": 51,
+        "0x6603": 28,
+        "0x6615": 84,
+        "0x6616": 530,
+        "0x800": 3,
+        "0xb00": 4,
+        "0xc00": 15
+      },
+      "polygonInstancesAtHighestDetail": {
+        "0x10102": 341,
+        "0x10103": 344,
+        "0x10104": 874,
+        "0x10105": 12,
+        "0x10109": 5,
+        "0x1010a": 280,
+        "0x1010b": 254,
+        "0x1010c": 1081,
+        "0x13": 1260,
+        "0x32": 4,
+        "0x3c": 464,
+        "0x50": 1230,
+        "0x51": 242,
+        "0x54": 9
+      },
+      "routing": false,
+      "subfileBytes": {
+        "DEM": 4309604,
+        "LBL": 27146,
+        "MPS": 462,
+        "RGN": 7308936,
+        "SRT": 912,
+        "TRE": 93203,
+        "TYP": 3037
+      },
+      "tiles": 4
+    },
+    "output": {
+      "bytes": 11786240,
+      "path": "regions/aoraki-mount-cook-westland/garmin/dist/OpenBareMap-Aoraki-Mount-Cook-Westland.img",
+      "sha256": "3e1f94951a66d3f65e1080f8c8c2bbc4a05893607431114579ee9c3de693d58c"
+    },
+    "routing": false,
+    "status": "compiled and structurally inspected; hardware rendering pending"
+  },
+  "geometryProcessing": {
+    "contours": 8533,
+    "grid": {
+      "grid_10km": 17,
+      "grid_1km": 152
+    },
+    "landcover": {
+      "empty_source_areas": [],
+      "features": 3183,
+      "permanentIce": {
+        "glacier": 690,
+        "permanent_snow": 0
+      },
+      "retained": 715,
+      "smoothed": 2468
+    }
+  },
+  "irelandGarminPackageRevision": "2.0.1-trail-detail-r1",
+  "irelandPreserved": true,
+  "labelGlyphs": {
+    "Open Sans Bold": true,
+    "Open Sans Regular": true,
+    "Open Sans Semibold": true
+  },
+  "landBackground": {
+    "aoraki-village": {
+      "coordinate": [
+        170.097,
+        -43.735
+      ],
+      "verifiedZooms": [
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    },
+    "fox-glacier": {
+      "coordinate": [
+        170.017,
+        -43.465
+      ],
+      "verifiedZooms": [
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    },
+    "franz-josef": {
+      "coordinate": [
+        170.181,
+        -43.387
+      ],
+      "verifiedZooms": [
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    },
+    "hooker-valley": {
+      "coordinate": [
+        170.091,
+        -43.705
+      ],
+      "verifiedZooms": [
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    },
+    "mueller-hut": {
+      "coordinate": [
+        170.064,
+        -43.721
+      ],
+      "verifiedZooms": [
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    },
+    "tasman-glacier": {
+      "coordinate": [
+        170.177,
+        -43.61
+      ],
+      "verifiedZooms": [
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    }
+  },
+  "packages": {
+    "android": {
+      "checkedFiles": 43,
+      "nativeDeviceRenderingTested": false,
+      "sourceFiles": {
+        "basemap": "maps/basemap.mbtiles",
+        "coast": "maps/coast.mbtiles",
+        "hillshade": "maps/hillshade.mbtiles",
+        "topography": "maps/topography.mbtiles",
+        "utm-grid": "maps/grid.mbtiles"
+      }
+    },
+    "ios": {
+      "checkedFiles": 46,
+      "nativeDeviceRenderingTested": false,
+      "sourceFiles": {
+        "basemap": "maps/basemap.mbtiles",
+        "coast": "maps/coast.mbtiles",
+        "hillshade": "maps/hillshade.mbtiles",
+        "topography": "maps/topography.mbtiles",
+        "utm-grid": "maps/grid.mbtiles"
+      }
+    }
+  },
+  "permanentIceSourceCounts": {
+    "glacier": 690,
+    "permanent_snow": 0
+  },
+  "region": "aoraki-mount-cook-westland",
+  "status": "automated checks passed; visual and hardware acceptance pending"
+}

@@ -1,0 +1,20 @@
+{
+  "inputs": [
+    {
+      "path": "regions/cordillera-huayhuash/garmin/inputs/contours.geojson.gz",
+      "sha256": "33bcdf11e2fc0dd1fe9476587d72ece3d9745a0630c257f150d22a526cad5027",
+      "uncompressedSHA256": "747eebd9b1a7aacfdeb89e1354207f950c86410d6038f30532be119d2eb587ba"
+    },
+    {
+      "path": "regions/cordillera-huayhuash/garmin/inputs/landcover.geojson.gz",
+      "sha256": "98eb3c5c0a7681721bf31aa30a3f921a951f36b20c17bc9ee2768c0920fcffe3",
+      "uncompressedSHA256": "c9f350d3078c00c8e32a34d769f6abb24e032ac7f3e2bf1c45378faa17638e17"
+    },
+    {
+      "path": "regions/cordillera-huayhuash/garmin/inputs/land.geojson.gz",
+      "sha256": "eb2857a33ac0c0733ebd8574701dc8683a7f76a1393b8fe154710a9e26f3c445",
+      "uncompressedSHA256": "0a08318ddea4170d40c3883796ce7d58df7154c521f4cb96c2b0536dfe93e9fe"
+    }
+  ],
+  "region": "cordillera-huayhuash"
+}

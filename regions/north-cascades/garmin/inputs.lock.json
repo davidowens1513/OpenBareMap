@@ -1,0 +1,20 @@
+{
+  "inputs": [
+    {
+      "path": "regions/north-cascades/garmin/inputs/contours.geojson.gz",
+      "sha256": "63cb4363030b8d8e62581d98fcf2b32f81a3dd58b051ced8fa292e8c48111b0f",
+      "uncompressedSHA256": "e1001d6a5dbf19c80a6df50b59a0b2767a71b4ef2a2489604c05176a9a8239d5"
+    },
+    {
+      "path": "regions/north-cascades/garmin/inputs/landcover.geojson.gz",
+      "sha256": "179e405f1d84128fe0592244fe8bc5776e6b7a8f9e281a7a5b8a7bc103153640",
+      "uncompressedSHA256": "671bdad53e143a700c49d04875430bd00030a6224c97ce9ebccd0982047b1cf2"
+    },
+    {
+      "path": "regions/north-cascades/garmin/inputs/land.geojson.gz",
+      "sha256": "daf7b92544aec53385795e2f8f69c4e81133373bb9a69ec97b01cb781ad8e5fb",
+      "uncompressedSHA256": "11b1f590d0971a5967a94ba62a299a8e64245c4c24ed5b6a4a14a5f6c8c8aa0a"
+    }
+  ],
+  "region": "north-cascades"
+}

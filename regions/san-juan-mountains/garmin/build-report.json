@@ -1,0 +1,135 @@
+{
+  "familyId": 4901,
+  "garminPackageRevision": "2.0.0-r1",
+  "inspection": {
+    "anchorLabels": {
+      "Ouray": "Ouray",
+      "Silverton": "Silverton"
+    },
+    "bounds": [
+      -108.15001487731934,
+      37.64997482299805,
+      -107.3499870300293,
+      38.1500244140625
+    ],
+    "coastPolygonsByLevel": {
+      "0": {
+        "0x32": 6,
+        "0x54": 12
+      },
+      "1": {
+        "0x32": 5,
+        "0x54": 12
+      },
+      "2": {
+        "0x32": 5,
+        "0x54": 12
+      },
+      "3": {
+        "0x32": 5,
+        "0x54": 12
+      },
+      "4": {
+        "0x32": 5,
+        "0x54": 12
+      }
+    },
+    "contoursByLevel": {
+      "0": {
+        "0x20": 13968,
+        "0x22": 3434
+      },
+      "1": {
+        "0x20": 10394,
+        "0x22": 2560
+      },
+      "2": {
+        "0x22": 2394
+      },
+      "3": {
+        "0x10008": 2164
+      },
+      "4": {}
+    },
+    "lineInstancesAtHighestDetail": {
+      "0x10001": 159,
+      "0x10002": 8,
+      "0x10004": 24,
+      "0x10005": 12,
+      "0x10006": 98,
+      "0x1000b": 13,
+      "0x14": 25,
+      "0x16": 1118,
+      "0x18": 11915,
+      "0x1c": 87,
+      "0x1f": 380,
+      "0x2": 27,
+      "0x20": 13968,
+      "0x22": 3434,
+      "0x3": 46,
+      "0x4": 9,
+      "0x6": 943,
+      "0x7": 818,
+      "0xa": 895
+    },
+    "logicalCombinedSHA256": "f2096a4f992de8636d9759e9a45050c1a1c023d175d28f51ab48a42c0cb17fd5",
+    "logicalHashNote": "Internal file names, sizes and payloads; only CommonHeader creation-date bytes 14..20 are zeroed for hashing. IMG archive headers are excluded. Output bytes are never modified.",
+    "logicalTileSHA256": {
+      "49010001.img": "1facd19748489a129e797fe59329fcbe5b87c80dff8c117d565910ec86991935",
+      "49010002.img": "6ab1666a91d9802269686f86d88967655fbde9ec14c0c02bf2bcd72e0f056d50",
+      "49010003.img": "c5ebb2e25517a2d3f073ef6d4c27e0e235f6fe5e984e10a258651cad3cce3f33",
+      "49010004.img": "1c43781d01b8daecf108e6f6f8ac18dee6b11bedcf8d4a631fbcece64d6a7595",
+      "49010005.img": "83811577c5a4abcecc724d4666215563811d11d4040a4e57b47aef6ffded5d3d"
+    },
+    "pointInstancesAtHighestDetail": {
+      "0x10001": 60,
+      "0x10002": 149,
+      "0x10003": 85,
+      "0x10004": 1,
+      "0x10006": 350,
+      "0x2f0b": 243,
+      "0x600": 3,
+      "0x650c": 6,
+      "0x6603": 86,
+      "0x6615": 19,
+      "0x6616": 230,
+      "0x800": 7,
+      "0xb00": 17,
+      "0xc00": 30
+    },
+    "polygonInstancesAtHighestDetail": {
+      "0x10102": 240,
+      "0x10103": 10,
+      "0x10104": 307,
+      "0x10106": 55,
+      "0x10109": 179,
+      "0x1010a": 22,
+      "0x1010b": 58,
+      "0x1010c": 4,
+      "0x13": 5980,
+      "0x32": 6,
+      "0x3c": 1310,
+      "0x50": 7056,
+      "0x51": 153,
+      "0x54": 12
+    },
+    "routing": false,
+    "subfileBytes": {
+      "DEM": 4685137,
+      "LBL": 52890,
+      "MPS": 489,
+      "RGN": 8342915,
+      "SRT": 912,
+      "TRE": 110551,
+      "TYP": 3037
+    },
+    "tiles": 5
+  },
+  "output": {
+    "bytes": 13244416,
+    "path": "regions/san-juan-mountains/garmin/dist/OpenBareMap-San-Juan-Mountains.img",
+    "sha256": "2ba552f1aa498f52ee6b8b4166e3ca74b69daa5140d840880597fef3ad62cf8d"
+  },
+  "routing": false,
+  "status": "compiled and structurally inspected; hardware rendering pending"
+}

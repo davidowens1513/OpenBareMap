@@ -1,0 +1,52 @@
+{
+  "builderSHA256": "df45d47a59e968508a89136d44d799aaf2bba52547b211e0dff68a5b0e0f6cfc",
+  "contextBounds": [
+    34,
+    28,
+    37,
+    32
+  ],
+  "note": "Contour payloads preserved exactly while extending land background outside edition coverage.",
+  "oldTopography": {
+    "bytes": 23564288,
+    "path": "releases/jordan-trail-dana-petra-wadi-rum/2.0.0/maps/topography.mbtiles",
+    "sha256": "d002175331f2cc856d31e2c0924a5f5ff96b8c273d9ea54a93f3543f17a8de50",
+    "validation": {
+      "empty_tile_count": 35001,
+      "logical_tiles_sha256": "fe7cb4dca4d6e029735712b11e3acf8a437a40fbb4da5c814b9b3c702099188a",
+      "tile_count": 38755
+    }
+  },
+  "output": {
+    "bytes": 23482368,
+    "path": "releases/jordan-trail-dana-petra-wadi-rum/2.0.0/maps/topography-context.mbtiles",
+    "sha256": "234a0a32e2bdece1de047c663f25dbd7585b6c5c91fccbd7ff28729a89dfbec5",
+    "validation": {
+      "empty_tile_count": 35001,
+      "logical_tiles_sha256": "fe7cb4dca4d6e029735712b11e3acf8a437a40fbb4da5c814b9b3c702099188a",
+      "tile_count": 38755
+    }
+  },
+  "replacement": {
+    "changed_tiles": 2449,
+    "path": "build/jordan-trail-dana-petra-wadi-rum-coast-context/combined.mbtiles",
+    "replacement_feature_instances": 3780,
+    "sha256": "8b352cb75c167443d3296b12ce216e79175fb6f52f68e2bc46d2ceffa60a3d66",
+    "unchanged_other_layers_sha256": "f6b264684758f3e994a2a12d7e193edd161c63cfb2b218eec1e3afa993977137",
+    "validation": {
+      "empty_tile_count": 35001,
+      "logical_tiles_sha256": "fe7cb4dca4d6e029735712b11e3acf8a437a40fbb4da5c814b9b3c702099188a",
+      "tile_count": 38755
+    }
+  },
+  "source": {
+    "accessed_utc": "2026-10-25T12:59:16.751893+00:00",
+    "bytes": 928538219,
+    "http_headers_path": "data/land-polygons.headers",
+    "license": "ODbL 1.0; OpenStreetMap contributors",
+    "path": "data/land-polygons-split-4326.zip",
+    "sha256": "5911e273096f9585425a17c30a8a98785cc33ed2718ff88987768933b8a327f7",
+    "source_snapshot": "HTTP Last-Modified 2026-10-25T03:43:12Z; this is file publication, not a guaranteed OSM snapshot timestamp",
+    "url": "https://osmdata.openstreetmap.de/download/land-polygons-split-4326.zip"
+  }
+}

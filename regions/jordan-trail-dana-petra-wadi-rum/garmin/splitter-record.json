@@ -1,0 +1,21 @@
+{
+  "combinedSHA256": "916c491111614186964d14a5a273bcf66288a74c54f3a878b488bf284cba0476",
+  "command": [
+    "/opt/homebrew/opt/openjdk@21/libexec/openjdk.jdk/Contents/Home/bin/java",
+    "-Xmx6g",
+    "-jar",
+    "/Volumes/Extreme SSD/Projects/OpenBareMap/work/nine-map-release/git-openbaremap/garmin/tools/splitter-r654/splitter.jar",
+    "--mapid=49040001",
+    "--description=OpenBareMap Jordan Trail \u2013 Dana, Petra & Wadi Rum",
+    "--max-nodes=1000000",
+    "--max-threads=2",
+    "--keep-complete=true",
+    "--output=pbf",
+    "--polygon-file=/Volumes/Extreme SSD/Projects/OpenBareMap/work/nine-map-release/git-openbaremap/regions/jordan-trail-dana-petra-wadi-rum/garmin/coverage.poly",
+    "--output-dir=/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/931e851460d7/jordan-trail-dana-petra-wadi-rum/garmin/split",
+    "--ignore-osm-bounds=true",
+    "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/931e851460d7/jordan-trail-dana-petra-wadi-rum/garmin/combined.osm.pbf"
+  ],
+  "coverageSHA256": "854a822df398cae60aab8bfe687b22d90d3cf748983f7457415f67cc609dc96f",
+  "ignoreSourceHeaderBounds": true
+}

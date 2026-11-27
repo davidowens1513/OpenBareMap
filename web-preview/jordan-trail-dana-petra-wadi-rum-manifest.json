@@ -1,0 +1,41 @@
+{
+  "regions": {
+    "jordan-trail-dana-petra-wadi-rum": {
+      "basemap": {
+        "sourceSHA256": "8c6619d03f66d4bbf81efe7d11ec402e9102253138a36f95bf7546a57eed3ebb",
+        "bytes": 4044501,
+        "sha256": "2538cc80c52744c0e5f8658a6d10c520a433016fa7d45b715d10b2830037b5ab",
+        "tiles": 1410
+      },
+      "grid": {
+        "sourceSHA256": "6f466a90057fe57a509b19be2b157a541dd8f4eeba8bd10dfde5bb0927a080e0",
+        "bytes": 462939,
+        "sha256": "f1cc5dc31fac47487ce37bb5fe79864d7c7791aff01bfd136b6c1f578a26da6d",
+        "tiles": 1432
+      },
+      "hillshade": {
+        "sourceSHA256": "00fa0ccb0c13181e7836096dd7b18a8d97f41af58e32a121082bd42850ec6b91",
+        "bytes": 4122600,
+        "sha256": "ec869552af33c62786296d44df2c6339bdd872c45bdeec8e9c7ec346250cce24",
+        "tiles": 143
+      },
+      "topography": {
+        "sourceSHA256": "234a0a32e2bdece1de047c663f25dbd7585b6c5c91fccbd7ff28729a89dfbec5",
+        "bytes": 20341818,
+        "sha256": "f49d9e722982fdcbff289fe51843f161fc1159283a70449f51303dfd2cb06a2c",
+        "tiles": 38755
+      },
+      "coast": {
+        "sourceSHA256": "3764b1808d532985a967aac779205639c50e3b18434299378f325e026ad9a777",
+        "bytes": 132653,
+        "sha256": "70c84bf53a67e10bcf14bdd02a1a560bfea0d23971ba54d586878d48875f1c71",
+        "tiles": 2547
+      }
+    }
+  },
+  "pmtilesPython": "3.8.1",
+  "pmtilesJS": "4.5.0",
+  "librarySHA256": "caf981bc46f6327ee7e65d5dc964d89d38a69f60edca2bd4c5c890c21b554c6c",
+  "dataOrigin": "https://downloads.appsbyonzy.dev/OpenBareMap/jordan-trail-dana-petra-wadi-rum/2.0.0/preview",
+  "scope": "Complete selected map tiles; no regional or zoom sampling."
+}

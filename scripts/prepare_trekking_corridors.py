@@ -26,6 +26,20 @@ ROUTES = {
     'lycian-way': (
         (51855, 'Lycian Way', (405, 690), ('ovacik', 'kas', 'finike', 'geyikbayiri')),
     ),
+    'jordan-trail-dana-petra-wadi-rum': (
+        (19299334, 'Jordan Trail 601: Dana to Wadi Malaga', (18, 25), ('dana', 'feynan')),
+        (19300536, 'Jordan Trail 602: Wadi Malaga to Ras Al-Feid', (10, 17), ()),
+        (19300723, 'Jordan Trail 603: Ras Al-Feid to Little Petra', (18, 27), ('little-petra',)),
+        (19300930, 'Jordan Trail 604: Little Petra to Petra', (9, 16), ('little-petra', 'petra')),
+        (19306125, 'Jordan Trail 701: Petra to Gaa Mriebed', (18, 27), ('petra',)),
+        (19309202, 'Jordan Trail 702: Gaa Mriebed to Wadi Al-Saif', (10, 19), ()),
+        (19309509, 'Jordan Trail 703: Wadi Al-Saif to Wadi Gseib', (10, 19), ()),
+        (19310202, 'Jordan Trail 704: Wadi Gseib to Wadi Aheimar', (11, 20), ()),
+        (19310391, 'Jordan Trail 705: Wadi Aheimar to Al-Humeima', (20, 31), ('al-humeima',)),
+        (19312143, 'Jordan Trail 801: Al-Humeima to Jabal Kharazah', (15, 24), ('al-humeima',)),
+        (19312154, 'Jordan Trail 802: Jabal Kharazah to Al-Shakriya', (12, 20), ()),
+        (19312164, 'Jordan Trail 803: Al-Shakriya to Wadi Rum', (8, 16), ('wadi-rum',)),
+    ),
 }
 
 
@@ -126,6 +140,10 @@ def prepare(region):
             point = transform(Point(edition['validationAnchors'][stop]), project, interleaved=False)
             if point.distance(metric) > 2500:
                 raise ValueError(f'{name} does not reach {stop}')
+        if edition.get('routeContinuityMaxMetres') and projected:
+            gap = projected[-1].distance(metric)
+            if gap > edition['routeContinuityMaxMetres']:
+                raise ValueError(f'{name} is {gap:.1f} m from the preceding route section')
         projected.append(metric)
         for part in part_lines(metric.simplify(5)):
             overlays.append(feature(name, transform(part, unproject, interleaved=False)))

@@ -1,0 +1,21 @@
+{
+  "combinedSHA256": "ec2db36e6311a837aba180114bbe21b64bb76e84a3362712d0ca1b3563512392",
+  "command": [
+    "/opt/homebrew/opt/openjdk@21/libexec/openjdk.jdk/Contents/Home/bin/java",
+    "-Xmx6g",
+    "-jar",
+    "/Volumes/Extreme SSD/Projects/OpenBareMap/work/nine-map-release/git-openbaremap/garmin/tools/splitter-r654/splitter.jar",
+    "--mapid=49030001",
+    "--description=OpenBareMap Upper Svaneti",
+    "--max-nodes=1000000",
+    "--max-threads=2",
+    "--keep-complete=true",
+    "--output=pbf",
+    "--polygon-file=/Volumes/Extreme SSD/Projects/OpenBareMap/work/nine-map-release/git-openbaremap/regions/upper-svaneti/garmin/coverage.poly",
+    "--output-dir=/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/931e851460d7/upper-svaneti/garmin/split",
+    "--ignore-osm-bounds=true",
+    "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/931e851460d7/upper-svaneti/garmin/combined.osm.pbf"
+  ],
+  "coverageSHA256": "82264e504a1a8390317f883c25bbf1dfd12f29e9db3b43957fef220d072d1cbe",
+  "ignoreSourceHeaderBounds": true
+}

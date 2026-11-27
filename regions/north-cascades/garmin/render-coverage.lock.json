@@ -1,0 +1,58 @@
+{
+  "bounds": [
+    -121.55,
+    48.25,
+    -120.75,
+    48.75
+  ],
+  "contextEnvelope": [
+    -121.55,
+    48.25,
+    -120.75,
+    48.75
+  ],
+  "drawPriority": 25,
+  "format": "openbaremap-garmin-render-footprint-v1",
+  "geometry": {
+    "bytes": 757,
+    "path": "regions/north-cascades/garmin/render-coverage.geojson",
+    "sha256": "b683b803630354fee09b165070cf96df53702a047bd7fb1999b8a52784ed7de0"
+  },
+  "inputs": [
+    {
+      "bytes": 3343,
+      "path": "data/regions/north-cascades/washington.poly",
+      "sha256": "9b61b3551b35e747adae77d57a7f299998be331815afbac8ec4dcd44f9dfdd59",
+      "url": "https://download.geofabrik.de/north-america/us/washington/washington.poly"
+    }
+  ],
+  "knownDestinationsCovered": {
+    "cascade-pass": [
+      -121.06,
+      48.468
+    ],
+    "cascade-pass-trailhead": [
+      -121.075,
+      48.475
+    ],
+    "cascade-river-road": [
+      -121.097,
+      48.493
+    ],
+    "marblemount": [
+      -121.244,
+      48.527
+    ],
+    "sahale-arm": [
+      -121.05,
+      48.482
+    ],
+    "sahale-glacier": [
+      -121.039,
+      48.491
+    ]
+  },
+  "purpose": "Rectangular Garmin tiles may overlap other countries. Do not fill their padding with sea, land or land-cover polygons.",
+  "region": "north-cascades",
+  "transparentNativeMap": true
+}

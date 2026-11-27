@@ -1,0 +1,30 @@
+{
+  "accessed_utc": "2026-11-27T14:40:21.782373+00:00",
+  "inputs": [
+    {
+      "bytes": 31877145,
+      "path": "data/regions/jordan-trail-dana-petra-wadi-rum/jordan-261126.osm.pbf",
+      "replicationTimestamp": "2026-11-26T21:21:01Z",
+      "sha256": "873167fd5ff58cc46eca73d67cdcc34b503502834e8791a4032f2a4316d1e72d",
+      "url": "https://download.geofabrik.de/asia/jordan/jordan-261126.osm.pbf"
+    }
+  ],
+  "osm": {
+    "bytes": 2595387,
+    "footprintSHA256": "93232109862f7263e55374a2b0590e05217da253596e151d6c824a46a4d33a8b",
+    "operation": "Complete-feature footprint extraction",
+    "path": "data/regions/jordan-trail-dana-petra-wadi-rum/jordan-261126.osm.clipped.osm.pbf",
+    "replicationTimestamp": "2026-11-26T21:21:01Z",
+    "sha256": "dbe3472cb130bee0cefb087bf9bd8dc56f7e3a8e8164aec64dd234fa19ba4651",
+    "snapshot_date": "2026-11-26",
+    "url": "https://download.geofabrik.de/asia/jordan/jordan-261126.osm.pbf"
+  },
+  "polygons": [
+    {
+      "bytes": 7300,
+      "path": "data/regions/jordan-trail-dana-petra-wadi-rum/jordan.poly",
+      "sha256": "a6a498c64b23d031e32fd47d6b1a7f23f8a2e8e1820754509b11054f40fda9ec",
+      "url": "https://download.geofabrik.de/asia/jordan/jordan.poly"
+    }
+  ]
+}

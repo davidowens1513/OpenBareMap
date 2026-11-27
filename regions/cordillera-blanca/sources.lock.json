@@ -1,0 +1,79 @@
+{
+  "accessed_utc": "2026-11-27T14:59:25.233927+00:00",
+  "inputs": [
+    {
+      "bytes": 258152503,
+      "path": "data/regions/cusco-inca-trail/peru-261119.osm.pbf",
+      "replicationTimestamp": "2026-11-19T21:22:20Z",
+      "sha256": "2d276a1e319271d1a69f84d4983ad82b3db2d5a95bc324732566bfad136206be",
+      "url": "https://download.geofabrik.de/south-america/peru/peru-261119.osm.pbf"
+    }
+  ],
+  "osm": {
+    "bytes": 11920128,
+    "operation": "Complete-feature bbox extraction with nested relation references",
+    "path": "data/regions/cordillera-blanca/peru-261119.osm.clipped.osm.pbf",
+    "replicationTimestamp": "2026-11-19T21:22:20Z",
+    "sha256": "b55f2464120d245730afe2bd5c1dc0ff58812b4188bd4bed6c6c420e6089c999",
+    "snapshot_date": "2026-11-19",
+    "url": "https://download.geofabrik.de/south-america/peru/peru-261119.osm.pbf"
+  },
+  "permanentIce": {
+    "accessedUTC": "2026-11-27T15:01:16.685725+00:00",
+    "attribution": "Glacier outlines: INAIGEM, Inventario Nacional de Glaciares 2026.",
+    "bytes": 65967281,
+    "classes": [
+      "glacier"
+    ],
+    "cordillera": "Blanca",
+    "dataset": "INAIGEM Inventario Nacional de Glaciares 2026",
+    "deliveredDissolvedFeatureCount": 495,
+    "excluded": [
+      "tipo_glac=Rocoso (rock glaciers)",
+      "temporary or seasonal snow"
+    ],
+    "methodNote": "The preceding INGLOG II report documents the public shapefile, 1:25,000 interpretation scale, and INAIGEM attribution requirement.",
+    "methodReference": "https://sinia.minam.gob.pe/sites/default/files/archivos/public/docs/Inventario%20Nacional%20de%20Glaciares%202023.pdf",
+    "officialGlacierIdentifierCount": 495,
+    "path": "data/regions/cordillera-blanca/inaigem-glaciers-2026.geojson",
+    "producer": "Instituto Nacional de Investigaci\u00f3n en Glaciares y Ecosistemas de Monta\u00f1a (INAIGEM), Peru",
+    "query": "cordillera='Blanca' AND tipo_glac IN ('Cubierto','Descubierto')",
+    "serviceCapabilities": "Query",
+    "serviceCreatedEpochMs": 1792425123000,
+    "serviceItemId": "1f263580b58c401bbe5dce56fb9b34e0",
+    "serviceModifiedEpochMs": 1792526379000,
+    "serviceURL": "https://services6.arcgis.com/c9GFTG11debu0wsH/arcgis/rest/services/BD_Inventario_Glaciares_2026/FeatureServer/0",
+    "sha256": "6953947388bd7d82508eb4f326bca5172908895042a4bfc729d471919a17fe84",
+    "sourceAreaKm2": 404.24498249,
+    "sourceFeatureCount": 1819,
+    "sourceImagery": [
+      "S2A_MSIL2A_20240606T152701_N0510_R025_T17LRL_20240606T232252",
+      "S2A_MSIL2A_20240606T152701_N0510_R025_T17LRL_20240606T232252 / Depurado con im\u00e1genes de Google Sat\u00e9lite 05/06/2025",
+      "S2A_MSIL2A_20240606T152701_N0510_R025_T17LRL_20240606T232252 / Depurado con im\u00e1genes de Google Sat\u00e9lite 13/07/2023",
+      "S2A_MSIL2A_20240606T152701_N0510_R025_T18LTQ_20240606T232252 / Depurado con im\u00e1genes de Google Sat\u00e9lite 05/06/2025",
+      "S2A_MSIL2A_20240606T152701_N0510_R025_T18LTQ_20240606T232252 / Depurado con im\u00e1genes de Google Sat\u00e9lite 05/07/2023",
+      "S2A_MSIL2A_20240606T152701_N0510_R025_T18LTQ_20240606T232252 / Depurado con im\u00e1genes de Google Sat\u00e9lite 07/07/2025",
+      "S2A_MSIL2A_20240606T152701_N0510_R025_T18LTQ_20240606T232252 / Depurado con im\u00e1genes de Google Sat\u00e9lite 08/08/2021",
+      "S2A_MSIL2A_20240606T152701_N0510_R025_T18LTQ_20240606T232252 / Depurado con im\u00e1genes de Google Sat\u00e9lite 13/07/2023",
+      "S2A_MSIL2A_20240606T152701_N0510_R025_T18LTQ_20240606T232252 / Depurado con im\u00e1genes de Google Sat\u00e9lite 19/06/2025",
+      "S2A_MSIL2A_20240606T152701_N0510_R025_T18LTQ_20240606T232252 / Depurado con im\u00e1genes de Google Sat\u00e9lite 21/08/2023",
+      "S2A_MSIL2A_20240606T152701_N0510_R025_T18LTQ_20240606T232252 / Depurado con im\u00e1genes de Google Sat\u00e9lite 23/07/2021",
+      "S2A_MSIL2A_20240606T152701_N0510_R025_T18LTQ_20240606T232252 / Depurado con im\u00e1genes de Google Sat\u00e9lite 26/07/2023",
+      "S2A_MSIL2A_20240904T152651_N0511_R025_T17LRL_20240904T231253",
+      "S2A_MSIL2A_20240904T152651_N0511_R025_T17LRL_20240904T231253 / Depurado con im\u00e1genes de Google Sat\u00e9lite 08/07/2023",
+      "S2A_MSIL2A_20240904T152651_N0511_R025_T17LRL_20240904T231253 / Depurado con im\u00e1genes de Google Sat\u00e9lite 13/07/2023",
+      "S2A_MSIL2A_20240904T152651_N0511_R025_T17LRL_20240904T231253 / Depurado con im\u00e1genes de Google Sat\u00e9lite 19/09/2024",
+      "S2A_MSIL2A_20240904T152651_N0511_R025_T17LRL_20240904T231253 / Depurado con im\u00e1genes de Google Sat\u00e9lite 21/09/2023",
+      "S2B_MSIL2A_20240601T152659_N0510_R025_T18LTQ_20240601T191006"
+    ],
+    "useTerms": "INAIGEM makes the cartographic inventory available for public use and requires users to reference INAIGEM; the ArcGIS item has no separate licenseInfo field."
+  },
+  "polygons": [
+    {
+      "bytes": 4172,
+      "path": "data/regions/cordillera-blanca/peru.poly",
+      "sha256": "179baab6f016cdddfcc38f14990c5e0a015de4cb15421f740a93eb37cf455ada",
+      "url": "https://download.geofabrik.de/south-america/peru/peru.poly"
+    }
+  ]
+}

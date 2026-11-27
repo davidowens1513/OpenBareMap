@@ -1,0 +1,35 @@
+{
+  "bytes": 53050541,
+  "datasets": {
+    "basemap": {
+      "path": "maps/basemap.mbtiles",
+      "sha256": "6170e03fcfae12b116072950523a4fba493a113c7ba24555eb9e30f96c2cf48e"
+    },
+    "coast": {
+      "derived_from": "e4d4cfa8ecdbea3b7cc8763bfac3bff167c8030baffe76f5e5c09df5b0a1403d",
+      "maxzoom": 12,
+      "operation": "Preserve land-layer MVT bytes only through zoom 12; omit other layers.",
+      "path": "maps/coast.mbtiles",
+      "sha256": "1d34e85d3cc446682e9e361b7c882ea05195723b6f7d83f18bd4ea0f01bd160d"
+    },
+    "grid": {
+      "path": "maps/grid.mbtiles",
+      "sha256": "832982f2ac8c9025c5499fce68ace12c47b098f51e34c40e28d6b86da716672e"
+    },
+    "hillshade": {
+      "path": "maps/hillshade.mbtiles",
+      "sha256": "7055d0ade0aed93f373ce372fbb83088bf77ea87a5abbd75785e258d7ac047f9"
+    },
+    "topography": {
+      "path": "maps/topography.mbtiles",
+      "sha256": "e4d4cfa8ecdbea3b7cc8763bfac3bff167c8030baffe76f5e5c09df5b0a1403d"
+    }
+  },
+  "instructionsSHA256": "c91f5485ed7d5958be9ceeb41d2256a2e453197c1fdec81d8420bc0066be2e9c",
+  "instructionsURL": "https://downloads.appsbyonzy.dev/OpenBareMap/white-mountains/2.0.0/app-bundles-v1/ios/instructions.txt",
+  "localPath": "releases/white-mountains/2.0.0/app-bundles-v1/ios/OpenBareMap-White-Mountains-iOS-Bundle.zip",
+  "mapManifestSHA256": "3ea1663225d6535fdba5ffd87b113da15b01619ba427679b21b99490a5a76b78",
+  "r2Key": "OpenBareMap/white-mountains/2.0.0/app-bundles-v1/ios/OpenBareMap-White-Mountains-iOS-Bundle.zip",
+  "sha256": "8d29c1086b19623a388c39e0af500410bf236bdb5e8599a4e0f9b5cdcc222ce1",
+  "url": "https://downloads.appsbyonzy.dev/OpenBareMap/white-mountains/2.0.0/app-bundles-v1/ios/OpenBareMap-White-Mountains-iOS-Bundle.zip"
+}

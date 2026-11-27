@@ -1,0 +1,52 @@
+{
+  "contourIntervalMetres": 20,
+  "coverage": "The complete Cordillera Huayhuash trekking circuit, including main passes, camps, trailheads and road approaches from Chiqui\u00e1n and Cajatambo.",
+  "datasets": {
+    "basemap": {
+      "bytes": 6189056,
+      "path": "releases/cordillera-huayhuash/2.0.0/maps/basemap.mbtiles",
+      "sha256": "7369cd9d26e3426393b21fd775d5c2bbb7245044bf4bff92e2ad57f38583f1d9",
+      "validation": {
+        "empty_tile_count": 3,
+        "logical_tiles_sha256": "73f8859506773f8e2bfbcd87ba157359f49508c060af78f6122f2dbebeae7aa7",
+        "tile_count": 2181
+      }
+    },
+    "grid": {
+      "bytes": 925696,
+      "path": "releases/cordillera-huayhuash/2.0.0/maps/grid.mbtiles",
+      "sha256": "43dfc07d522def51a8ee8a16412982d18ade6079aac577c3a7724cd1ec821619",
+      "validation": {
+        "empty_tile_count": 0,
+        "logical_tiles_sha256": "ef3c629ba5585a715ff13fe7a0604f278aa6598d6b3bba46df4158b5604976c2",
+        "tile_count": 2347
+      }
+    },
+    "hillshade": {
+      "bytes": 8146944,
+      "path": "releases/cordillera-huayhuash/2.0.0/maps/hillshade.mbtiles",
+      "sha256": "720c7dae6691889b5c24dd97c473efa39529ec1b5097a00ecef8c7c84605c656",
+      "validation": {
+        "empty_tile_count": 0,
+        "logical_tiles_sha256": "f184e60c67a58b9b6554cfb127385cb35b4f43ba5cb6bb98d2344599ca814426",
+        "tile_count": 189
+      }
+    },
+    "topography": {
+      "bytes": 81448960,
+      "path": "releases/cordillera-huayhuash/2.0.0/maps/topography.mbtiles",
+      "sha256": "808092db9768cc7b749e835168857f543b09abf456ba82ca32640d3a3b9f692f",
+      "validation": {
+        "empty_tile_count": 33727,
+        "logical_tiles_sha256": "0eff494e7c1c24f06e8b0b663f212afd2e78d5ed7666dcbc0f11afb5305d40d5",
+        "tile_count": 38307
+      }
+    }
+  },
+  "format": "openbaremap-development-viewer-v1",
+  "localBorders": false,
+  "mapVersion": "2.0.0",
+  "region": "cordillera-huayhuash",
+  "storageRevision": "2.0.0-cordillera-huayhuash-r1",
+  "styleRevision": "2.0.0-cordillera-huayhuash-r1"
+}

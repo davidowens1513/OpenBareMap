@@ -1,0 +1,62 @@
+{
+  "bounds": [
+    -77.35,
+    -10.75,
+    -76.55,
+    -9.8
+  ],
+  "contextEnvelope": [
+    -77.35,
+    -10.75,
+    -76.55,
+    -9.8
+  ],
+  "drawPriority": 25,
+  "format": "openbaremap-garmin-render-footprint-v1",
+  "geometry": {
+    "bytes": 759,
+    "path": "regions/cordillera-huayhuash/garmin/render-coverage.geojson",
+    "sha256": "b1a7f08e1c1892c7ef297613c09fdba02558d4ebc9520bbb56d138d5faad3a19"
+  },
+  "inputs": [
+    {
+      "bytes": 4172,
+      "path": "data/regions/cordillera-huayhuash/peru.poly",
+      "sha256": "179baab6f016cdddfcc38f14990c5e0a015de4cb15421f740a93eb37cf455ada",
+      "url": "https://download.geofabrik.de/south-america/peru/peru.poly"
+    }
+  ],
+  "knownDestinationsCovered": {
+    "cajatambo": [
+      -76.994,
+      -10.474
+    ],
+    "carhuacocha": [
+      -76.913,
+      -10.267
+    ],
+    "chiquian": [
+      -77.155,
+      -10.151
+    ],
+    "cuartelhuain": [
+      -76.883,
+      -10.084
+    ],
+    "huayhuash": [
+      -76.917,
+      -10.4
+    ],
+    "llamac": [
+      -76.989,
+      -10.138
+    ],
+    "viconga": [
+      -76.905,
+      -10.458
+    ]
+  },
+  "purpose": "Rectangular Garmin tiles may overlap other countries. Do not fill their padding with sea, land or land-cover polygons.",
+  "region": "cordillera-huayhuash",
+  "transparentNativeMap": true
+}

@@ -1,0 +1,35 @@
+{
+  "bytes": 109472168,
+  "datasets": {
+    "basemap": {
+      "path": "maps/basemap.mbtiles",
+      "sha256": "fda49b4a0d9ddd1b77773a65e5578e5d9c7b7c297e04e83ae7a6bad19ba5d6fd"
+    },
+    "coast": {
+      "derived_from": "5ed933314141d46abcf465d86451520b42ac263478bd7abbbc463b1c3981592c",
+      "maxzoom": 12,
+      "operation": "Preserve land-layer MVT bytes only through zoom 12; omit other layers.",
+      "path": "maps/coast.mbtiles",
+      "sha256": "cd85ba8b996181cfa9bf2eceb022d70f32cdcc51180ea920a952e39c3f09d53d"
+    },
+    "grid": {
+      "path": "maps/grid.mbtiles",
+      "sha256": "104be736c1db7d875d8316902b9830a702fd338281638003f03c4e78ba75d364"
+    },
+    "hillshade": {
+      "path": "maps/hillshade.mbtiles",
+      "sha256": "699c6b26b43db3d1d5bb73e2c192cec90fa20c08238d4bb840e8872c4614a0da"
+    },
+    "topography": {
+      "path": "maps/topography.mbtiles",
+      "sha256": "5ed933314141d46abcf465d86451520b42ac263478bd7abbbc463b1c3981592c"
+    }
+  },
+  "instructionsSHA256": "b41051b86f4270eea313b2f92f928b2aafef2030211bd5fad2d58b9b3ec2d8bb",
+  "instructionsURL": "https://downloads.appsbyonzy.dev/OpenBareMap/upper-svaneti/2.0.0/app-bundles-v1/ios/instructions.txt",
+  "localPath": "releases/upper-svaneti/2.0.0/app-bundles-v1/ios/OpenBareMap-Upper-Svaneti-iOS-Bundle.zip",
+  "mapManifestSHA256": "046ba3e6b8e41d34d66bd61395430a74a733a2e899e8d063ba712c8621a892da",
+  "r2Key": "OpenBareMap/upper-svaneti/2.0.0/app-bundles-v1/ios/OpenBareMap-Upper-Svaneti-iOS-Bundle.zip",
+  "sha256": "cd62b13f194b05f1339c367df469055fac1a068dd44b1f09ee16dce0a8ee9faa",
+  "url": "https://downloads.appsbyonzy.dev/OpenBareMap/upper-svaneti/2.0.0/app-bundles-v1/ios/OpenBareMap-Upper-Svaneti-iOS-Bundle.zip"
+}

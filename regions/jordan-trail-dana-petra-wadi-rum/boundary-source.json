@@ -1,0 +1,118 @@
+{
+  "bufferCRS": "EPSG:32636",
+  "bufferMetres": 12000,
+  "changes": "Nested OSM walking relations expanded, overlapping ways dissolved, and a projected buffer clipped to the source coverage. Display paths simplified to 5 m.",
+  "coverageSHA256": "93232109862f7263e55374a2b0590e05217da253596e151d6c824a46a4d33a8b",
+  "coverageSquareKilometres": 4143.7,
+  "routeLengthKilometres": 206.72,
+  "routeSHA256": "8ca31551db129c3c8aa9c009698e0d6465c4c74301af06b726ef42986199ccbc",
+  "routes": [
+    {
+      "lengthKilometres": 21.4,
+      "name": "Jordan Trail 601: Dana to Wadi Malaga",
+      "relation": "https://www.openstreetmap.org/relation/19299334",
+      "relationVersions": {
+        "19299334": 16
+      }
+    },
+    {
+      "lengthKilometres": 13.01,
+      "name": "Jordan Trail 602: Wadi Malaga to Ras Al-Feid",
+      "relation": "https://www.openstreetmap.org/relation/19300536",
+      "relationVersions": {
+        "19300536": 6
+      }
+    },
+    {
+      "lengthKilometres": 22.22,
+      "name": "Jordan Trail 603: Ras Al-Feid to Little Petra",
+      "relation": "https://www.openstreetmap.org/relation/19300723",
+      "relationVersions": {
+        "19300723": 9
+      }
+    },
+    {
+      "lengthKilometres": 12.37,
+      "name": "Jordan Trail 604: Little Petra to Petra",
+      "relation": "https://www.openstreetmap.org/relation/19300930",
+      "relationVersions": {
+        "19300930": 9
+      }
+    },
+    {
+      "lengthKilometres": 21.95,
+      "name": "Jordan Trail 701: Petra to Gaa Mriebed",
+      "relation": "https://www.openstreetmap.org/relation/19306125",
+      "relationVersions": {
+        "19306125": 9
+      }
+    },
+    {
+      "lengthKilometres": 14.11,
+      "name": "Jordan Trail 702: Gaa Mriebed to Wadi Al-Saif",
+      "relation": "https://www.openstreetmap.org/relation/19309202",
+      "relationVersions": {
+        "19309202": 8
+      }
+    },
+    {
+      "lengthKilometres": 14.27,
+      "name": "Jordan Trail 703: Wadi Al-Saif to Wadi Gseib",
+      "relation": "https://www.openstreetmap.org/relation/19309509",
+      "relationVersions": {
+        "19309509": 3
+      }
+    },
+    {
+      "lengthKilometres": 15.34,
+      "name": "Jordan Trail 704: Wadi Gseib to Wadi Aheimar",
+      "relation": "https://www.openstreetmap.org/relation/19310202",
+      "relationVersions": {
+        "19310202": 2
+      }
+    },
+    {
+      "lengthKilometres": 25.37,
+      "name": "Jordan Trail 705: Wadi Aheimar to Al-Humeima",
+      "relation": "https://www.openstreetmap.org/relation/19310391",
+      "relationVersions": {
+        "19310391": 4
+      }
+    },
+    {
+      "lengthKilometres": 19.46,
+      "name": "Jordan Trail 801: Al-Humeima to Jabal Kharazah",
+      "relation": "https://www.openstreetmap.org/relation/19312143",
+      "relationVersions": {
+        "19312143": 4
+      }
+    },
+    {
+      "lengthKilometres": 15.47,
+      "name": "Jordan Trail 802: Jabal Kharazah to Al-Shakriya",
+      "relation": "https://www.openstreetmap.org/relation/19312154",
+      "relationVersions": {
+        "19312154": 3
+      }
+    },
+    {
+      "lengthKilometres": 11.75,
+      "name": "Jordan Trail 803: Al-Shakriya to Wadi Rum",
+      "relation": "https://www.openstreetmap.org/relation/19312164",
+      "relationVersions": {
+        "19312164": 3
+      }
+    }
+  ],
+  "sources": [
+    {
+      "attribution": "Route alignment \u00a9 OpenStreetMap contributors, ODbL; official section names and endpoints checked against the Jordan Trail Association.",
+      "sha256": "873167fd5ff58cc46eca73d67cdcc34b503502834e8791a4032f2a4316d1e72d",
+      "url": "https://download.geofabrik.de/asia/jordan/jordan-261126.osm.pbf"
+    },
+    {
+      "sha256": "a6a498c64b23d031e32fd47d6b1a7f23f8a2e8e1820754509b11054f40fda9ec",
+      "url": "https://download.geofabrik.de/asia/jordan/jordan.poly"
+    }
+  ]
+}

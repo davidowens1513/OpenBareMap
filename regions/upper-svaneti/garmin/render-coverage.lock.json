@@ -1,0 +1,62 @@
+{
+  "bounds": [
+    42.2,
+    42.65,
+    43.35,
+    43.25
+  ],
+  "contextEnvelope": [
+    42.2,
+    42.65,
+    43.35,
+    43.25
+  ],
+  "drawPriority": 25,
+  "format": "openbaremap-garmin-render-footprint-v1",
+  "geometry": {
+    "bytes": 5575,
+    "path": "regions/upper-svaneti/garmin/render-coverage.geojson",
+    "sha256": "63e52fb4b57f36ad64d144ad45e9b2f72ea0a92d32b730bf80efd6c5fcfa16c7"
+  },
+  "inputs": [
+    {
+      "bytes": 17034,
+      "path": "data/regions/upper-svaneti/georgia.poly",
+      "sha256": "7d377c2747d6bca2abbd04d61405337631f280ee509052017161aa83423b70ba",
+      "url": "https://download.geofabrik.de/europe/georgia/georgia.poly"
+    }
+  ],
+  "knownDestinationsCovered": {
+    "adishi": [
+      42.99,
+      42.998
+    ],
+    "chalaadi-glacier": [
+      42.69,
+      43.117
+    ],
+    "ipral\u0131": [
+      43.063,
+      42.938
+    ],
+    "mestia": [
+      42.727,
+      43.045
+    ],
+    "shkhara-glacier": [
+      43.106,
+      42.974
+    ],
+    "ushguli": [
+      43.017,
+      42.916
+    ],
+    "zhabeshi": [
+      42.853,
+      43.039
+    ]
+  },
+  "purpose": "Rectangular Garmin tiles may overlap other countries. Do not fill their padding with sea, land or land-cover polygons.",
+  "region": "upper-svaneti",
+  "transparentNativeMap": true
+}

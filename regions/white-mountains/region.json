@@ -1,0 +1,166 @@
+{
+  "appBundleName": "White-Mountains",
+  "bounds": [
+    -71.95,
+    43.85,
+    -71.05,
+    44.45
+  ],
+  "clipBasemap": true,
+  "clipSource": true,
+  "clipTerrainToBounds": true,
+  "coastContextBounds": [
+    -73,
+    42,
+    -70,
+    46
+  ],
+  "contourIntervalMetres": 20,
+  "coverage": "The White Mountains, including the Presidential Range, Franconia Ridge, Appalachian Mountain Club huts and the connecting trail and road approaches.",
+  "destinationLabels": {
+    "crawford-notch": "Crawford Notch",
+    "franconia-notch": "Franconia Notch",
+    "gorham": "Gorham",
+    "island": "White Mountains",
+    "lafayette": "Mount Lafayette",
+    "lincoln": "Lincoln",
+    "mount-washington": "Mount Washington",
+    "pinkham-notch": "Pinkham Notch"
+  },
+  "destinations": {
+    "crawford-notch": [
+      -71.414,
+      44.219,
+      13
+    ],
+    "franconia-notch": [
+      -71.682,
+      44.171,
+      13
+    ],
+    "gorham": [
+      -71.185,
+      44.388,
+      13
+    ],
+    "island": [
+      -71.5,
+      44.150000000000006,
+      9
+    ],
+    "lafayette": [
+      -71.644,
+      44.16,
+      13
+    ],
+    "lincoln": [
+      -71.671,
+      44.045,
+      13
+    ],
+    "mount-washington": [
+      -71.304,
+      44.271,
+      13
+    ],
+    "pinkham-notch": [
+      -71.253,
+      44.257,
+      13
+    ]
+  },
+  "garminContextBounds": [
+    -71.95,
+    43.85,
+    -71.05,
+    44.45
+  ],
+  "garminFamilyId": 4900,
+  "garminFilename": "OpenBareMap-White-Mountains.img",
+  "garminPackageRevision": "2.0.0-r1",
+  "garminTileStartId": 49000001,
+  "garminUseSourceOutline": true,
+  "garminVersionedDelivery": true,
+  "gridCRS": "EPSG:32619",
+  "gridExtent": [
+    260000,
+    340000,
+    4850000,
+    4930000
+  ],
+  "gridName": "WGS 84 / UTM zone 19N",
+  "gridSource": "utm-grid",
+  "id": "white-mountains",
+  "ignoreSourceHeaderBounds": true,
+  "inspectionNames": [
+    "Mount Washington",
+    "Lincoln"
+  ],
+  "label": "White Mountains",
+  "labelGlyphs": "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz",
+  "mapVersion": "2.0.0",
+  "maxzoom": 14,
+  "minorWaterwayMinzoom": 10,
+  "minzoom": 4,
+  "name": "OpenBareMap White Mountains",
+  "nativeLanguage": "en",
+  "optionalBasemapLayers": [
+    "ferry",
+    "island_name",
+    "cycling_route",
+    "railway",
+    "station",
+    "hiking_route",
+    "boundary"
+  ],
+  "permanentIce": false,
+  "projectedCRS": "EPSG:32619",
+  "repairClippedCoastline": true,
+  "requireBogFeatures": false,
+  "sourceBaseURL": "https://download.geofabrik.de/north-america/us/new-hampshire/",
+  "sourceDate": "2026-11-26",
+  "sourceSlugs": [
+    "new-hampshire"
+  ],
+  "styleRevision": "2.0.0-white-mountains-r1",
+  "terrainAttribution": "Copernicus DEM GLO-30 \u00b7 European Union / ESA \u00b7 DLR / Airbus",
+  "terrainBounds": [
+    -72,
+    43,
+    -71,
+    45
+  ],
+  "terrainNotice": "White Mountains elevation: Copernicus DEM GLO-30 Public (AWS 2021 release).\n\nproduced using Copernicus WorldDEM-30 \u00a9 DLR e.V. 2010-2014 and \u00a9 Airbus Defence and Space GmbH 2014-2018 provided under COPERNICUS by the European Union and ESA; all rights reserved\n\nThe organisations in charge of the Copernicus programme by law or by delegation do not incur any liability for any use of the Copernicus WorldDEM-30.\n\nLicense: https://dataspace.copernicus.eu/sites/default/files/media/files/2025-06/copernicus_contributing_mission_data_access_v2_cop_dem_licenses.pdf\nSource: https://registry.opendata.aws/copernicus-dem/\nVertical datum: EGM2008 orthometric metres. Native approximately 30 m cells are bilinearly resampled to point-aligned Int16 HGT for the shared terrain pipeline. Ocean-only cells absent from the official public inventory are zero.\n",
+  "terrainProvider": "copernicus-glo30",
+  "townlands": false,
+  "validationAnchors": {
+    "crawford-notch": [
+      -71.414,
+      44.219
+    ],
+    "franconia-notch": [
+      -71.682,
+      44.171
+    ],
+    "gorham": [
+      -71.185,
+      44.388
+    ],
+    "lafayette": [
+      -71.644,
+      44.16
+    ],
+    "lincoln": [
+      -71.671,
+      44.045
+    ],
+    "mount-washington": [
+      -71.304,
+      44.271
+    ],
+    "pinkham-notch": [
+      -71.253,
+      44.257
+    ]
+  }
+}

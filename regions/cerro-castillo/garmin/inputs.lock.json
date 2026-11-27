@@ -1,0 +1,20 @@
+{
+  "inputs": [
+    {
+      "path": "regions/cerro-castillo/garmin/inputs/contours.geojson.gz",
+      "sha256": "c72eeb45bdcabe42430f9a5185aaa8b5e970650233bc092d7ac7180ada3a59bb",
+      "uncompressedSHA256": "7e4836d335c3bcfc22636e56267d7e166fcb72c313a1b13f342494f9c56e41f8"
+    },
+    {
+      "path": "regions/cerro-castillo/garmin/inputs/landcover.geojson.gz",
+      "sha256": "6a2f65e7027c5f681a07b901f158962600eb3ff741898d1e7b2113df5dd72be5",
+      "uncompressedSHA256": "77dc98a2b31bf3873da3c58f45e40884deb39ddede84cc11fdd4d9e5ca0f8aaf"
+    },
+    {
+      "path": "regions/cerro-castillo/garmin/inputs/land.geojson.gz",
+      "sha256": "7b1d221059943685da92b6a4df44ef9885bd2301ffca3ae720888e66547909c3",
+      "uncompressedSHA256": "49e3f2610caeeb73258ab50e3f8a14a13e6cb7aa3df1c0685d588aa353f71411"
+    }
+  ],
+  "region": "cerro-castillo"
+}

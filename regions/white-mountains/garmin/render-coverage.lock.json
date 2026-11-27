@@ -1,0 +1,62 @@
+{
+  "bounds": [
+    -71.95,
+    43.85,
+    -71.05,
+    44.45
+  ],
+  "contextEnvelope": [
+    -71.95,
+    43.85,
+    -71.05,
+    44.45
+  ],
+  "drawPriority": 25,
+  "format": "openbaremap-garmin-render-footprint-v1",
+  "geometry": {
+    "bytes": 2775,
+    "path": "regions/white-mountains/garmin/render-coverage.geojson",
+    "sha256": "d7e063202b3722796bbf51ccc18cb1f85d4ed7c7a2e33006f37441180550f3b7"
+  },
+  "inputs": [
+    {
+      "bytes": 13263,
+      "path": "data/regions/white-mountains/new-hampshire.poly",
+      "sha256": "669d3240d1f8aa93ab4d28b8e1be623c4950dcc30d15ef3bc9f6942fce64ef37",
+      "url": "https://download.geofabrik.de/north-america/us/new-hampshire/new-hampshire.poly"
+    }
+  ],
+  "knownDestinationsCovered": {
+    "crawford-notch": [
+      -71.414,
+      44.219
+    ],
+    "franconia-notch": [
+      -71.682,
+      44.171
+    ],
+    "gorham": [
+      -71.185,
+      44.388
+    ],
+    "lafayette": [
+      -71.644,
+      44.16
+    ],
+    "lincoln": [
+      -71.671,
+      44.045
+    ],
+    "mount-washington": [
+      -71.304,
+      44.271
+    ],
+    "pinkham-notch": [
+      -71.253,
+      44.257
+    ]
+  },
+  "purpose": "Rectangular Garmin tiles may overlap other countries. Do not fill their padding with sea, land or land-cover polygons.",
+  "region": "white-mountains",
+  "transparentNativeMap": true
+}

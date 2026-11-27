@@ -1,0 +1,21 @@
+{
+  "combinedSHA256": "2b095e4c301d4011463d85f0a2198bd611976681aac400c6e26793134fd238a6",
+  "command": [
+    "/opt/homebrew/opt/openjdk@21/libexec/openjdk.jdk/Contents/Home/bin/java",
+    "-Xmx6g",
+    "-jar",
+    "/Volumes/Extreme SSD/Projects/OpenBareMap/work/nine-map-release/git-openbaremap/garmin/tools/splitter-r654/splitter.jar",
+    "--mapid=49020001",
+    "--description=OpenBareMap Aoraki - Mount Cook & Westland",
+    "--max-nodes=1000000",
+    "--max-threads=2",
+    "--keep-complete=true",
+    "--output=pbf",
+    "--polygon-file=/Volumes/Extreme SSD/Projects/OpenBareMap/work/nine-map-release/git-openbaremap/regions/aoraki-mount-cook-westland/garmin/coverage.poly",
+    "--output-dir=/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/931e851460d7/aoraki-mount-cook-westland/garmin/split",
+    "--ignore-osm-bounds=true",
+    "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/931e851460d7/aoraki-mount-cook-westland/garmin/combined.osm.pbf"
+  ],
+  "coverageSHA256": "36b38d91e80ca1b9cd5a7127143c31ffae9d5be711e532016f898baa874b223b",
+  "ignoreSourceHeaderBounds": true
+}

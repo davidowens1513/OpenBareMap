@@ -1,0 +1,21 @@
+{
+  "combinedSHA256": "d760260c9e0fad7f3f598fd55ca393d6d896abc33e8c3f0e78ac5be63e428e0e",
+  "command": [
+    "/opt/homebrew/opt/openjdk@21/libexec/openjdk.jdk/Contents/Home/bin/java",
+    "-Xmx6g",
+    "-jar",
+    "/Volumes/Extreme SSD/Projects/OpenBareMap/work/nine-map-release/git-openbaremap/garmin/tools/splitter-r654/splitter.jar",
+    "--mapid=48990001",
+    "--description=OpenBareMap North Cascades",
+    "--max-nodes=1000000",
+    "--max-threads=2",
+    "--keep-complete=true",
+    "--output=pbf",
+    "--polygon-file=/Volumes/Extreme SSD/Projects/OpenBareMap/work/nine-map-release/git-openbaremap/regions/north-cascades/garmin/coverage.poly",
+    "--output-dir=/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/931e851460d7/north-cascades/garmin/split",
+    "--ignore-osm-bounds=true",
+    "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/931e851460d7/north-cascades/garmin/combined.osm.pbf"
+  ],
+  "coverageSHA256": "1b6f581f6e07900aef8cd3f3b6e7039dcfdbda708ef2d50ed5860122e15f7cd0",
+  "ignoreSourceHeaderBounds": true
+}

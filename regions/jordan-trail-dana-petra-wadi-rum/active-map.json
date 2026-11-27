@@ -1,0 +1,52 @@
+{
+  "contourIntervalMetres": 20,
+  "coverage": "The Jordan Trail from Dana through Petra to Wadi Rum, including the complete official sections, stage settlements and walking and vehicle approaches.",
+  "datasets": {
+    "basemap": {
+      "bytes": 4644864,
+      "path": "releases/jordan-trail-dana-petra-wadi-rum/2.0.0/maps/basemap.mbtiles",
+      "sha256": "8c6619d03f66d4bbf81efe7d11ec402e9102253138a36f95bf7546a57eed3ebb",
+      "validation": {
+        "empty_tile_count": 6,
+        "logical_tiles_sha256": "7fa8f3373b021a31bff35f672784752c5b0dc747f64e967a4f960ed14154d538",
+        "tile_count": 1410
+      }
+    },
+    "grid": {
+      "bytes": 552960,
+      "path": "releases/jordan-trail-dana-petra-wadi-rum/2.0.0/maps/grid.mbtiles",
+      "sha256": "6f466a90057fe57a509b19be2b157a541dd8f4eeba8bd10dfde5bb0927a080e0",
+      "validation": {
+        "empty_tile_count": 0,
+        "logical_tiles_sha256": "840e566cfec27b870ec24fd0906e771b7480bc978fe14911a256f20925cc88ba",
+        "tile_count": 1432
+      }
+    },
+    "hillshade": {
+      "bytes": 4243456,
+      "path": "releases/jordan-trail-dana-petra-wadi-rum/2.0.0/maps/hillshade.mbtiles",
+      "sha256": "00fa0ccb0c13181e7836096dd7b18a8d97f41af58e32a121082bd42850ec6b91",
+      "validation": {
+        "empty_tile_count": 0,
+        "logical_tiles_sha256": "5cf872d73ab5e3b95b765d94fb3d596334cb4244d795e761406b562073e6c7e6",
+        "tile_count": 143
+      }
+    },
+    "topography": {
+      "bytes": 23482368,
+      "path": "releases/jordan-trail-dana-petra-wadi-rum/2.0.0/maps/topography-context.mbtiles",
+      "sha256": "234a0a32e2bdece1de047c663f25dbd7585b6c5c91fccbd7ff28729a89dfbec5",
+      "validation": {
+        "empty_tile_count": 35001,
+        "logical_tiles_sha256": "fe7cb4dca4d6e029735712b11e3acf8a437a40fbb4da5c814b9b3c702099188a",
+        "tile_count": 38755
+      }
+    }
+  },
+  "format": "openbaremap-development-viewer-v1",
+  "localBorders": false,
+  "mapVersion": "2.0.0",
+  "region": "jordan-trail-dana-petra-wadi-rum",
+  "storageRevision": "2.0.0-jordan-trail-dana-petra-wadi-rum-r3",
+  "styleRevision": "2.0.0-jordan-trail-dana-petra-wadi-rum-r1"
+}

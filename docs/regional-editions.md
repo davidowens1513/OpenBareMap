@@ -233,6 +233,42 @@ The staging command requires all eight completed `validation.json` records with 
 
 Gran Sasso, Mount Rainier, Garibaldi & Whistler, Cotopaxi & Quilotoa and Aconcagua were checked for permanent ice. Gran Sasso contains two OpenStreetMap glacier polygons and no current permanent-snow polygon; the map nevertheless includes distinct glacier and permanent-snow styling and legend entries. Mount Rainier, Garibaldi & Whistler, Cotopaxi & Quilotoa and Aconcagua contain 34, 181, 2 and 242 glacier polygons respectively. The other three source extracts contain no glacier or permanent-snow polygons.
 
+## Nine-map 27 November 2026 release
+
+This release adds nine independent `2.0.0` editions with Garmin family IDs `4899` through `4907`: North Cascades, White Mountains, San Juan Mountains, Aoraki / Mount Cook & Westland, Upper Svaneti, Jordan Trail – Dana, Petra & Wadi Rum, Cordillera Blanca, Cordillera Huayhuash and Cerro Castillo. All use Copernicus GLO-30 for the published terrain footprint, 20 m contours, mobile storage revision `r3` and Garmin revision `2.0.0-r1`. Upper Svaneti uses Mapzen only for two padding cells outside the published footprint.
+
+Generate the profiles and specialist inputs, then run the normal regional build:
+
+```sh
+PYTHONPATH=work/python python3 scripts/prepare_nine_map_release.py
+PYTHONPATH=work/python python3 scripts/prepare_trekking_corridors.py \
+  --region jordan-trail-dana-petra-wadi-rum
+PYTHONPATH=work/python python3 scripts/fetch_inaigem_glaciers.py \
+  --region cordillera-blanca
+PYTHONPATH=work/python python3 scripts/fetch_inaigem_glaciers.py \
+  --region cordillera-huayhuash
+PYTHONPATH=work/python python3 scripts/prepare_chile_glaciers.py \
+  --region cerro-castillo
+for region in north-cascades white-mountains san-juan-mountains \
+  aoraki-mount-cook-westland upper-svaneti \
+  jordan-trail-dana-petra-wadi-rum cordillera-blanca \
+  cordillera-huayhuash cerro-castillo; do
+  PYTHONPATH=work/python python3 scripts/run_full_region.py --region "$region" || exit
+done
+```
+
+The permanent-ice audit distinguishes glaciers from permanent snowfields and excludes temporary snow. North Cascades, San Juan Mountains, Aoraki / Mount Cook & Westland and Upper Svaneti contain 575, 4, 690 and 269 OSM glacier features respectively. The current INAIGEM 2026 layer supplies Cordillera Blanca with 1,819 source polygons grouped into 495 official glacier identifiers (404.24498249 km²), and Cordillera Huayhuash with 392 source polygons grouped into 83 identifiers (48.12673235 km²); seven Huayhuash rock glaciers are excluded. The historical figure of 722 for Cordillera Blanca is the 1970 Hidrandina inventory, not the current map feature count. Chile DGA’s Inventario Público de Glaciares 2022 v2 supplies 503 Cerro Castillo glacier bodies (98.48910007 km²); 19 rock glaciers are excluded. The source locks record service/archive checksums, selection rules, dates, area totals and attribution.
+
+The Jordan corridor follows 12 pinned OSM relations from Dana to Wadi Rum, checked against the Jordan Trail Association’s official section names and endpoints. Its area-page coverage diagram includes the through-route. Build each edition’s app kits and preview under `work/<region>-release`, then stage the 76-edition catalogues and website:
+
+```sh
+PYTHONPATH=work/python python3 scripts/stage_nine_map_release.py \
+  --website ../AppsByOnzy-Website/site/index.html \
+  --worldwide ../BareGPS-Worldwide/Distribution/worldwide-catalog-v1.json
+```
+
+Add `--publish-assets` only after inspecting the local release plan, generated area pages, coverage SVGs and documentation. The publisher verifies object hashes and PMTiles range responses before updating the public catalogues.
+
 ## Nepal trekking
 
 The Nepal maps use a shared 22 November 2026 Geofabrik OpenStreetMap extract,

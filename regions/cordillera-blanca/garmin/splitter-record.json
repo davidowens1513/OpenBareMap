@@ -1,0 +1,21 @@
+{
+  "combinedSHA256": "037f02004660553b55fc9ce0143a1022f2abfeaa00a8ed29110356cf8b265c39",
+  "command": [
+    "/opt/homebrew/opt/openjdk@21/libexec/openjdk.jdk/Contents/Home/bin/java",
+    "-Xmx6g",
+    "-jar",
+    "/Volumes/Extreme SSD/Projects/OpenBareMap/work/nine-map-release/git-openbaremap/garmin/tools/splitter-r654/splitter.jar",
+    "--mapid=49050001",
+    "--description=OpenBareMap Cordillera Blanca",
+    "--max-nodes=1000000",
+    "--max-threads=2",
+    "--keep-complete=true",
+    "--output=pbf",
+    "--polygon-file=/Volumes/Extreme SSD/Projects/OpenBareMap/work/nine-map-release/git-openbaremap/regions/cordillera-blanca/garmin/coverage.poly",
+    "--output-dir=/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/931e851460d7/cordillera-blanca/garmin/split",
+    "--ignore-osm-bounds=true",
+    "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/931e851460d7/cordillera-blanca/garmin/combined.osm.pbf"
+  ],
+  "coverageSHA256": "6e6b93ab09ea22d0ec2b12a12665493d959b8fe4ad12439be9e59115a3395f2b",
+  "ignoreSourceHeaderBounds": true
+}

@@ -1,0 +1,58 @@
+{
+  "bounds": [
+    169.75,
+    -43.8,
+    170.45,
+    -43.2
+  ],
+  "contextEnvelope": [
+    169.75,
+    -43.8,
+    170.45,
+    -43.2
+  ],
+  "drawPriority": 25,
+  "format": "openbaremap-garmin-render-footprint-v1",
+  "geometry": {
+    "bytes": 764,
+    "path": "regions/aoraki-mount-cook-westland/garmin/render-coverage.geojson",
+    "sha256": "37589f86941e3bd68c89639b212d583ea96508327517590877d27ec54d4c5cfc"
+  },
+  "inputs": [
+    {
+      "bytes": 379,
+      "path": "data/regions/aoraki-mount-cook-westland/new-zealand.poly",
+      "sha256": "5d483934d8f56574d642d57d36e9157d9de089de5012485cba5aa3c77b046b9b",
+      "url": "https://download.geofabrik.de/australia-oceania/new-zealand/new-zealand.poly"
+    }
+  ],
+  "knownDestinationsCovered": {
+    "aoraki-village": [
+      170.097,
+      -43.735
+    ],
+    "fox-glacier": [
+      170.017,
+      -43.465
+    ],
+    "franz-josef": [
+      170.181,
+      -43.387
+    ],
+    "hooker-valley": [
+      170.091,
+      -43.705
+    ],
+    "mueller-hut": [
+      170.064,
+      -43.721
+    ],
+    "tasman-glacier": [
+      170.177,
+      -43.61
+    ]
+  },
+  "purpose": "Rectangular Garmin tiles may overlap other countries. Do not fill their padding with sea, land or land-cover polygons.",
+  "region": "aoraki-mount-cook-westland",
+  "transparentNativeMap": true
+}

@@ -1,0 +1,52 @@
+{
+  "contourIntervalMetres": 20,
+  "coverage": "The San Juan Mountains around Silverton and Ouray, including Ice Lakes Basin, Telluride and the principal walking and road approaches.",
+  "datasets": {
+    "basemap": {
+      "bytes": 13504512,
+      "path": "releases/san-juan-mountains/2.0.0/maps/basemap.mbtiles",
+      "sha256": "cda556bd9556764d7a81efcb59770aacae7a65708d1d08280342dfee9b4d81df",
+      "validation": {
+        "empty_tile_count": 1,
+        "logical_tiles_sha256": "7bea5a6156c40bc0bc96e6f12fb60a59d6217a5e65dd6ae13756d5bdaed9c346",
+        "tile_count": 1531
+      }
+    },
+    "grid": {
+      "bytes": 569344,
+      "path": "releases/san-juan-mountains/2.0.0/maps/grid.mbtiles",
+      "sha256": "59a7af6ff3b6c95ee6cf5e69a2bebb1e622d40b6941d8b21658193ac719a5277",
+      "validation": {
+        "empty_tile_count": 0,
+        "logical_tiles_sha256": "d36f6cfe4a6c07d05137616f205f25c53b9ce19714179933bb9dc132881a4531",
+        "tile_count": 1519
+      }
+    },
+    "hillshade": {
+      "bytes": 5042176,
+      "path": "releases/san-juan-mountains/2.0.0/maps/hillshade.mbtiles",
+      "sha256": "c994d6ab570928c603994db859c0613cf1b998dbe4b5d9983087d718745a6ee7",
+      "validation": {
+        "empty_tile_count": 0,
+        "logical_tiles_sha256": "4cf64b2a19d8836063de772f757ad57f6f5f7539811c4f0a3f666ab8d9f03389",
+        "tile_count": 126
+      }
+    },
+    "topography": {
+      "bytes": 36044800,
+      "path": "releases/san-juan-mountains/2.0.0/maps/topography-context.mbtiles",
+      "sha256": "e8292b9c94bbb412900c671677ae065d3f01869b70f108631551d2a32c4ffdf4",
+      "validation": {
+        "empty_tile_count": 51726,
+        "logical_tiles_sha256": "c89a241c1b72757e6f19d26a8a04142648797038642db3c2907bc204794db8af",
+        "tile_count": 56822
+      }
+    }
+  },
+  "format": "openbaremap-development-viewer-v1",
+  "localBorders": false,
+  "mapVersion": "2.0.0",
+  "region": "san-juan-mountains",
+  "storageRevision": "2.0.0-san-juan-mountains-r3",
+  "styleRevision": "2.0.0-san-juan-mountains-r1"
+}

@@ -1,0 +1,21 @@
+{
+  "combinedSHA256": "8ec247c3c5dacd26686709e3be27185582b38341006007c78c96a78d606f494e",
+  "command": [
+    "/opt/homebrew/opt/openjdk@21/libexec/openjdk.jdk/Contents/Home/bin/java",
+    "-Xmx6g",
+    "-jar",
+    "/Volumes/Extreme SSD/Projects/OpenBareMap/work/nine-map-release/git-openbaremap/garmin/tools/splitter-r654/splitter.jar",
+    "--mapid=49000001",
+    "--description=OpenBareMap White Mountains",
+    "--max-nodes=1000000",
+    "--max-threads=2",
+    "--keep-complete=true",
+    "--output=pbf",
+    "--polygon-file=/Volumes/Extreme SSD/Projects/OpenBareMap/work/nine-map-release/git-openbaremap/regions/white-mountains/garmin/coverage.poly",
+    "--output-dir=/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/931e851460d7/white-mountains/garmin/split",
+    "--ignore-osm-bounds=true",
+    "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/931e851460d7/white-mountains/garmin/combined.osm.pbf"
+  ],
+  "coverageSHA256": "81842b458cdd125cf8bc888da6bd68f823d4b192727373350696465b74637337",
+  "ignoreSourceHeaderBounds": true
+}

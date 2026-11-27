@@ -1,0 +1,35 @@
+{
+  "bytes": 51202525,
+  "datasets": {
+    "basemap": {
+      "path": "maps/basemap.mbtiles",
+      "sha256": "96634db10d99f58b5bdfa48d1aebfa0c5c54e7dc902a79023014be63bedbea02"
+    },
+    "coast": {
+      "derived_from": "cc4588d1c2cac2d85fc180d34dc8ae5f51678bdcb7f9cb3e0655de7897323674",
+      "maxzoom": 12,
+      "operation": "Preserve land-layer MVT bytes only through zoom 12; omit other layers.",
+      "path": "maps/coast.mbtiles",
+      "sha256": "870ae5a79b1c234f7807d96f474775882b437e93c8e8bde90fd1542502782502"
+    },
+    "grid": {
+      "path": "maps/grid.mbtiles",
+      "sha256": "b6065c85b4386a1156bb4f457c26263791a0c4609e619f4af119d9b75be3d2be"
+    },
+    "hillshade": {
+      "path": "maps/hillshade.mbtiles",
+      "sha256": "10a0309d9a835b11f3e932ac2cf8297e3f68e646a9a89c40ce3a9c36417eb349"
+    },
+    "topography": {
+      "path": "maps/topography.mbtiles",
+      "sha256": "cc4588d1c2cac2d85fc180d34dc8ae5f51678bdcb7f9cb3e0655de7897323674"
+    }
+  },
+  "instructionsSHA256": "2e0ffb4a5b9097a45f5622e40a757d4045eaa9d784abaa990424f614243252d2",
+  "instructionsURL": "https://downloads.appsbyonzy.dev/OpenBareMap/aoraki-mount-cook-westland/2.0.0/app-bundles-v1/ios/instructions.txt",
+  "localPath": "releases/aoraki-mount-cook-westland/2.0.0/app-bundles-v1/ios/OpenBareMap-Aoraki-Mount-Cook-Westland-iOS-Bundle.zip",
+  "mapManifestSHA256": "d885c9643e6b6aad63e0d0cfd964d451476d02e3661f869de636ae911f0d071a",
+  "r2Key": "OpenBareMap/aoraki-mount-cook-westland/2.0.0/app-bundles-v1/ios/OpenBareMap-Aoraki-Mount-Cook-Westland-iOS-Bundle.zip",
+  "sha256": "14f01c8cdc5d2b813734828002bb19089a6aff5762bcaadceda17ea45be33d80",
+  "url": "https://downloads.appsbyonzy.dev/OpenBareMap/aoraki-mount-cook-westland/2.0.0/app-bundles-v1/ios/OpenBareMap-Aoraki-Mount-Cook-Westland-iOS-Bundle.zip"
+}

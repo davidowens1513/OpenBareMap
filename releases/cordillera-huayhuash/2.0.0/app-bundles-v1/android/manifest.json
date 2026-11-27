@@ -1,0 +1,33 @@
+{
+  "bytes": 101111786,
+  "datasets": {
+    "basemap": {
+      "path": "maps/basemap.mbtiles",
+      "sha256": "7369cd9d26e3426393b21fd775d5c2bbb7245044bf4bff92e2ad57f38583f1d9"
+    },
+    "coast": {
+      "derivedFrom": "a018c04345c6575666d2ca47760f93f8038eb24738655bc168b79bdb97d328f0",
+      "path": "maps/coast.mbtiles",
+      "sha256": "d38a4fbfe9bf5b81710e88f27a665e612fe3ad5e75a489d574016e418b787a13"
+    },
+    "grid": {
+      "path": "maps/grid.mbtiles",
+      "sha256": "43dfc07d522def51a8ee8a16412982d18ade6079aac577c3a7724cd1ec821619"
+    },
+    "hillshade": {
+      "path": "maps/hillshade.mbtiles",
+      "sha256": "720c7dae6691889b5c24dd97c473efa39529ec1b5097a00ecef8c7c84605c656"
+    },
+    "topography": {
+      "path": "maps/topography.mbtiles",
+      "sha256": "a018c04345c6575666d2ca47760f93f8038eb24738655bc168b79bdb97d328f0"
+    }
+  },
+  "instructionsSHA256": "a61de8493f57f232335a7b8f37ec53047b0427eb2e3befaaeea9840bd0c4bd52",
+  "instructionsURL": "https://downloads.appsbyonzy.dev/OpenBareMap/cordillera-huayhuash/2.0.0/app-bundles-v1/android/instructions.txt",
+  "localPath": "releases/cordillera-huayhuash/2.0.0/app-bundles-v1/android/OpenBareMap-Cordillera-Huayhuash-Android-Bundle.zip",
+  "mapManifestSHA256": "c97bbfda35ea97a8bc4a4c09e8cf34788948ae2ad72596ef7396a5094ebbfdc0",
+  "r2Key": "OpenBareMap/cordillera-huayhuash/2.0.0/app-bundles-v1/android/OpenBareMap-Cordillera-Huayhuash-Android-Bundle.zip",
+  "sha256": "f86500821aa77fdea74eb3dc9086378a339d2513007c2d853ae26f2d084cc44d",
+  "url": "https://downloads.appsbyonzy.dev/OpenBareMap/cordillera-huayhuash/2.0.0/app-bundles-v1/android/OpenBareMap-Cordillera-Huayhuash-Android-Bundle.zip"
+}

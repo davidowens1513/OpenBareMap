@@ -1,0 +1,29 @@
+{
+  "accessed_utc": "2026-11-27T14:23:03.332848+00:00",
+  "inputs": [
+    {
+      "bytes": 406370902,
+      "path": "data/regions/fiordland/new-zealand-261119.osm.pbf",
+      "replicationTimestamp": "2026-11-19T21:22:20Z",
+      "sha256": "10434498377f26f8dcd0b5203f867f1fce55b0dd07d2e0b35c68511c7f8f8f72",
+      "url": "https://download.geofabrik.de/australia-oceania/new-zealand/new-zealand-261119.osm.pbf"
+    }
+  ],
+  "osm": {
+    "bytes": 5840112,
+    "operation": "Complete-feature bbox extraction with nested relation references",
+    "path": "data/regions/aoraki-mount-cook-westland/new-zealand-261119.osm.clipped.osm.pbf",
+    "replicationTimestamp": "2026-11-19T21:22:20Z",
+    "sha256": "41c1cfb022abe82b0ca5d85f00605324918be80b7b3fb78f12a495a903cc918f",
+    "snapshot_date": "2026-11-19",
+    "url": "https://download.geofabrik.de/australia-oceania/new-zealand/new-zealand-261119.osm.pbf"
+  },
+  "polygons": [
+    {
+      "bytes": 379,
+      "path": "data/regions/aoraki-mount-cook-westland/new-zealand.poly",
+      "sha256": "5d483934d8f56574d642d57d36e9157d9de089de5012485cba5aa3c77b046b9b",
+      "url": "https://download.geofabrik.de/australia-oceania/new-zealand/new-zealand.poly"
+    }
+  ]
+}

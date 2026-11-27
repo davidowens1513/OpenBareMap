@@ -1,0 +1,39 @@
+{
+  "features": [
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              -72.55,
+              -46.45
+            ],
+            [
+              -72.55,
+              -45.55
+            ],
+            [
+              -71.65,
+              -45.55
+            ],
+            [
+              -71.65,
+              -46.45
+            ],
+            [
+              -72.55,
+              -46.45
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "properties": {
+        "purpose": "Limit opaque native background and land-cover polygons; retain complete accepted OSM and terrain inputs",
+        "region": "cerro-castillo"
+      },
+      "type": "Feature"
+    }
+  ],
+  "type": "FeatureCollection"
+}

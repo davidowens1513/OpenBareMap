@@ -1,0 +1,35 @@
+{
+  "bytes": 59179137,
+  "datasets": {
+    "basemap": {
+      "path": "maps/basemap.mbtiles",
+      "sha256": "cda556bd9556764d7a81efcb59770aacae7a65708d1d08280342dfee9b4d81df"
+    },
+    "coast": {
+      "derived_from": "e8292b9c94bbb412900c671677ae065d3f01869b70f108631551d2a32c4ffdf4",
+      "maxzoom": 12,
+      "operation": "Preserve land-layer MVT bytes only through zoom 12; omit other layers.",
+      "path": "maps/coast.mbtiles",
+      "sha256": "49153bb8fbaba78179bca7c96c3e9fefee566e4bbb47877ed637090dc5a60841"
+    },
+    "grid": {
+      "path": "maps/grid.mbtiles",
+      "sha256": "59a7af6ff3b6c95ee6cf5e69a2bebb1e622d40b6941d8b21658193ac719a5277"
+    },
+    "hillshade": {
+      "path": "maps/hillshade.mbtiles",
+      "sha256": "c994d6ab570928c603994db859c0613cf1b998dbe4b5d9983087d718745a6ee7"
+    },
+    "topography": {
+      "path": "maps/topography.mbtiles",
+      "sha256": "e8292b9c94bbb412900c671677ae065d3f01869b70f108631551d2a32c4ffdf4"
+    }
+  },
+  "instructionsSHA256": "5b69cc2a043152d7d0c99602877a4566546d69d9bb8be743b211370d34ad56f5",
+  "instructionsURL": "https://downloads.appsbyonzy.dev/OpenBareMap/san-juan-mountains/2.0.0/app-bundles-v1/ios/instructions.txt",
+  "localPath": "releases/san-juan-mountains/2.0.0/app-bundles-v1/ios/OpenBareMap-San-Juan-Mountains-iOS-Bundle.zip",
+  "mapManifestSHA256": "c3bfeaa1ede44cba52c9e837e245bcd19df0578fedb37fd2066b110fb200e39c",
+  "r2Key": "OpenBareMap/san-juan-mountains/2.0.0/app-bundles-v1/ios/OpenBareMap-San-Juan-Mountains-iOS-Bundle.zip",
+  "sha256": "53705aa107f7fd1e6eb082140a4bf8b310f13affa2105cdaab360403c9a77ccf",
+  "url": "https://downloads.appsbyonzy.dev/OpenBareMap/san-juan-mountains/2.0.0/app-bundles-v1/ios/OpenBareMap-San-Juan-Mountains-iOS-Bundle.zip"
+}

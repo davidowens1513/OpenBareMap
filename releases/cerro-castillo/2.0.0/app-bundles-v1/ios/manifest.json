@@ -1,0 +1,35 @@
+{
+  "bytes": 86389427,
+  "datasets": {
+    "basemap": {
+      "path": "maps/basemap.mbtiles",
+      "sha256": "7b152e7b4af00faea42e5fd7020e8717a9a7fb5ab6a7d5c0cb44769cc70486b0"
+    },
+    "coast": {
+      "derived_from": "ab76ca33f8742a60e6d2d97c3dae11052566787de83382ceead360d3afa4fd1d",
+      "maxzoom": 12,
+      "operation": "Preserve land-layer MVT bytes only through zoom 12; omit other layers.",
+      "path": "maps/coast.mbtiles",
+      "sha256": "fa2b5734367416d3a9e0203e5d852be754ccc8aea55747be24924c93b2e0812e"
+    },
+    "grid": {
+      "path": "maps/grid.mbtiles",
+      "sha256": "7c171cbf352cd5672a842852ee39809ee81b1d9b649559237604f25c7b45c52f"
+    },
+    "hillshade": {
+      "path": "maps/hillshade.mbtiles",
+      "sha256": "c1499a8bbd6bfc746adba671933ab18132128a6335bfc7ed25b29a3fb3674d86"
+    },
+    "topography": {
+      "path": "maps/topography.mbtiles",
+      "sha256": "ab76ca33f8742a60e6d2d97c3dae11052566787de83382ceead360d3afa4fd1d"
+    }
+  },
+  "instructionsSHA256": "ebbca7176ea90306885c8682d6bf84439a79592375c396fdb8559209feef1e99",
+  "instructionsURL": "https://downloads.appsbyonzy.dev/OpenBareMap/cerro-castillo/2.0.0/app-bundles-v1/ios/instructions.txt",
+  "localPath": "releases/cerro-castillo/2.0.0/app-bundles-v1/ios/OpenBareMap-Cerro-Castillo-iOS-Bundle.zip",
+  "mapManifestSHA256": "408ed93a2ca73615486a2edbdeae079b7e14d2681550f196db18c43d9aaa60eb",
+  "r2Key": "OpenBareMap/cerro-castillo/2.0.0/app-bundles-v1/ios/OpenBareMap-Cerro-Castillo-iOS-Bundle.zip",
+  "sha256": "fa57a7542ef1821f412eb1f9da9a3d66d78f0eb9e7a2c6120165999903bddd29",
+  "url": "https://downloads.appsbyonzy.dev/OpenBareMap/cerro-castillo/2.0.0/app-bundles-v1/ios/OpenBareMap-Cerro-Castillo-iOS-Bundle.zip"
+}

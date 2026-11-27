@@ -1,0 +1,52 @@
+{
+  "contourIntervalMetres": 20,
+  "coverage": "A cross-divide Southern Alps edition covering Aoraki / Mount Cook and Westland Tai Poutini, including Hooker Valley, Mueller Hut, Tasman Glacier, Fox Glacier and Franz Josef Glacier approaches.",
+  "datasets": {
+    "basemap": {
+      "bytes": 6066176,
+      "path": "releases/aoraki-mount-cook-westland/2.0.0/maps/basemap.mbtiles",
+      "sha256": "96634db10d99f58b5bdfa48d1aebfa0c5c54e7dc902a79023014be63bedbea02",
+      "validation": {
+        "empty_tile_count": 223,
+        "logical_tiles_sha256": "f5c602e0eceafd40a772fddebc15015b9061b9d0c43d757988eea3f1cb2faabd",
+        "tile_count": 1711
+      }
+    },
+    "grid": {
+      "bytes": 593920,
+      "path": "releases/aoraki-mount-cook-westland/2.0.0/maps/grid.mbtiles",
+      "sha256": "b6065c85b4386a1156bb4f457c26263791a0c4609e619f4af119d9b75be3d2be",
+      "validation": {
+        "empty_tile_count": 0,
+        "logical_tiles_sha256": "1142a2df3178dd7e856c3bf75920e143a1a89d387ab7389c2ae54a6ad71eb904",
+        "tile_count": 1701
+      }
+    },
+    "hillshade": {
+      "bytes": 4673536,
+      "path": "releases/aoraki-mount-cook-westland/2.0.0/maps/hillshade.mbtiles",
+      "sha256": "10a0309d9a835b11f3e932ac2cf8297e3f68e646a9a89c40ce3a9c36417eb349",
+      "validation": {
+        "empty_tile_count": 0,
+        "logical_tiles_sha256": "98609287d621a73992c7afa91eccbcfd7f05f92b5ee29c1fc7a00bb0dcb54638",
+        "tile_count": 119
+      }
+    },
+    "topography": {
+      "bytes": 35999744,
+      "path": "releases/aoraki-mount-cook-westland/2.0.0/maps/topography.mbtiles",
+      "sha256": "724c5eb996835298a966684a9c6c3574eddeb0dcf8aef565c088aa025e6a9c60",
+      "validation": {
+        "empty_tile_count": 27619,
+        "logical_tiles_sha256": "d464504c122775f5deaeede55c0f3e0881923bedf37f161c9e3a26166f132d3c",
+        "tile_count": 30711
+      }
+    }
+  },
+  "format": "openbaremap-development-viewer-v1",
+  "localBorders": false,
+  "mapVersion": "2.0.0",
+  "region": "aoraki-mount-cook-westland",
+  "storageRevision": "2.0.0-aoraki-mount-cook-westland-r1",
+  "styleRevision": "2.0.0-aoraki-mount-cook-westland-r1"
+}

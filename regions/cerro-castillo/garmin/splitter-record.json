@@ -1,0 +1,21 @@
+{
+  "combinedSHA256": "38a3155ca222a38d350cd379a922591e2f425587a631523a47557751178fa11a",
+  "command": [
+    "/opt/homebrew/opt/openjdk@21/libexec/openjdk.jdk/Contents/Home/bin/java",
+    "-Xmx6g",
+    "-jar",
+    "/Volumes/Extreme SSD/Projects/OpenBareMap/work/nine-map-release/git-openbaremap/garmin/tools/splitter-r654/splitter.jar",
+    "--mapid=49070001",
+    "--description=OpenBareMap Cerro Castillo",
+    "--max-nodes=1000000",
+    "--max-threads=2",
+    "--keep-complete=true",
+    "--output=pbf",
+    "--polygon-file=/Volumes/Extreme SSD/Projects/OpenBareMap/work/nine-map-release/git-openbaremap/regions/cerro-castillo/garmin/coverage.poly",
+    "--output-dir=/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/931e851460d7/cerro-castillo/garmin/split",
+    "--ignore-osm-bounds=true",
+    "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/931e851460d7/cerro-castillo/garmin/combined.osm.pbf"
+  ],
+  "coverageSHA256": "796478b47423fd87065e875764cc9852b87a20776f1de29b61893cd23c1b8c1d",
+  "ignoreSourceHeaderBounds": true
+}

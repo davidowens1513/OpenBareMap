@@ -1,0 +1,41 @@
+{
+  "regions": {
+    "white-mountains": {
+      "basemap": {
+        "sourceSHA256": "6170e03fcfae12b116072950523a4fba493a113c7ba24555eb9e30f96c2cf48e",
+        "bytes": 14438260,
+        "sha256": "7372be24cfbcfbe9577a850d4e0a91ea8e3e0690af2db25c432256d428be9872",
+        "tiles": 2258
+      },
+      "grid": {
+        "sourceSHA256": "832982f2ac8c9025c5499fce68ace12c47b098f51e34c40e28d6b86da716672e",
+        "bytes": 671491,
+        "sha256": "9195d5e4bed2515b41f50373bef10b86dc869028da1cec18934727d2a34535bc",
+        "tiles": 2268
+      },
+      "hillshade": {
+        "sourceSHA256": "7055d0ade0aed93f373ce372fbb83088bf77ea87a5abbd75785e258d7ac047f9",
+        "bytes": 6170224,
+        "sha256": "12e369f3c9a9222a1a988d3cdb4689751a2c8700a39711d3ede9e7685585971f",
+        "tiles": 159
+      },
+      "topography": {
+        "sourceSHA256": "e4d4cfa8ecdbea3b7cc8763bfac3bff167c8030baffe76f5e5c09df5b0a1403d",
+        "bytes": 21584275,
+        "sha256": "e73831aa4c7a44f65c35a22e955452c7a87b08917138aeddd65e295f6cb17a23",
+        "tiles": 44890
+      },
+      "coast": {
+        "sourceSHA256": "1d34e85d3cc446682e9e361b7c882ea05195723b6f7d83f18bd4ea0f01bd160d",
+        "bytes": 423770,
+        "sha256": "2b8536f943305c1ac309e8b58809918945bdb91c573f5bdcd3a3d708cbe0ee7c",
+        "tiles": 2931
+      }
+    }
+  },
+  "pmtilesPython": "3.8.1",
+  "pmtilesJS": "4.5.0",
+  "librarySHA256": "caf981bc46f6327ee7e65d5dc964d89d38a69f60edca2bd4c5c890c21b554c6c",
+  "dataOrigin": "https://downloads.appsbyonzy.dev/OpenBareMap/white-mountains/2.0.0/preview",
+  "scope": "Complete selected map tiles; no regional or zoom sampling."
+}

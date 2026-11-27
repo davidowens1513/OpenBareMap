@@ -1,0 +1,106 @@
+{
+  "acceptance": "Automated checks only; see validation and visual-review records for actual reviewed scope.",
+  "coverage": "Huaraz and the Cordillera Blanca, including Huascar\u00e1n National Park approaches, the Santa Cruz\u2013Huaripampa trek and principal trailheads and road access.",
+  "datasets": {
+    "basemap": {
+      "bytes": 21561344,
+      "path": "releases/cordillera-blanca/2.0.0/maps/basemap.mbtiles",
+      "sha256": "158e64a3408d84bec574b0218ebefdcbd2409ac6e1a24c3bf2adcc67f49a7922",
+      "validation": {
+        "empty_tile_count": 4,
+        "logical_tiles_sha256": "c2876ab220d19a5b86343726f6d5a0582ec24307f5347d97181f5db0fd4aeb31",
+        "tile_count": 4522
+      }
+    },
+    "grid": {
+      "bytes": 1884160,
+      "path": "releases/cordillera-blanca/2.0.0/maps/grid.mbtiles",
+      "sha256": "e777b39b2329ebd4639f5646f57aa75a8fbfff2e04028530f84d39dbab08e4c7",
+      "validation": {
+        "empty_tile_count": 0,
+        "logical_tiles_sha256": "2f6f551b6a69a8d05b4a25258349d337a7182a7e4994de8c0594b51371b49d22",
+        "tile_count": 4757
+      }
+    },
+    "hillshade": {
+      "bytes": 16769024,
+      "path": "releases/cordillera-blanca/2.0.0/maps/hillshade.mbtiles",
+      "sha256": "5b7e10aa68695d4b36ec587ba5e1100acc59df8f8018490c6a15b4cd409509ae",
+      "validation": {
+        "empty_tile_count": 0,
+        "logical_tiles_sha256": "70211bcbddd08df7f6e48079aa86215c7982f1608754a235a360d85170b77404",
+        "tile_count": 331
+      }
+    },
+    "topography": {
+      "bytes": 177115136,
+      "path": "releases/cordillera-blanca/2.0.0/maps/topography-context.mbtiles",
+      "sha256": "6b8e6da437d221372e99f733a97974713df1132836c76c823f9006915ca7a11a",
+      "validation": {
+        "empty_tile_count": 29142,
+        "logical_tiles_sha256": "2966b7f84b2e08f90eb42413f7688740f3f3e8d54d81d2ddb66c9264426ff0f1",
+        "tile_count": 35557
+      }
+    }
+  },
+  "garmin": {
+    "bytes": 57960448,
+    "path": "regions/cordillera-blanca/garmin/dist/OpenBareMap-Cordillera-Blanca.img",
+    "sha256": "4bff2a5b870716dcd008d9a482252ce2b30bfa9fe787f3b1ef67219f4a42fb6a"
+  },
+  "geometryReport": {
+    "path": "build/cordillera-blanca-geometry/geometry-report.json",
+    "sha256": "29b96e656d3897e4a2c031b7d3fe4417a94b29f424a3aa1a486636876e08af6c"
+  },
+  "hostAppsModified": false,
+  "mapVersion": "2.0.0",
+  "osm": {
+    "bytes": 11920128,
+    "operation": "Complete-feature bbox extraction with nested relation references",
+    "path": "data/regions/cordillera-blanca/peru-261119.osm.clipped.osm.pbf",
+    "replicationTimestamp": "2026-11-19T21:22:20Z",
+    "sha256": "b55f2464120d245730afe2bd5c1dc0ff58812b4188bd4bed6c6c420e6089c999",
+    "snapshot_date": "2026-11-19",
+    "url": "https://download.geofabrik.de/south-america/peru/peru-261119.osm.pbf"
+  },
+  "packages": {
+    "android": {
+      "archive": {
+        "bytes": 221765659,
+        "path": "regions/cordillera-blanca/android/OpenBareMap-Android.zip",
+        "sha256": "4b4a15735fba54428aef45a2a8a5acdc0aa519f6d56d8878d6902a2dedf78cb0"
+      },
+      "checksumsSHA256": "3e7c6f8051580f0d84e74513d0c26ec4f0dca1c22cf2a573a4c447972e05e939",
+      "manifestSHA256": "c49faf859ee8c0f8fa46bcd7b4b2d099b5268bbaf22b08eea6bfbc9b4e6ba869",
+      "path": "regions/cordillera-blanca/android",
+      "validationSHA256": "2666638183a74da6253b234c2dc8c3b8c1e84e8c167bc3c6ca54aef7df7de6e1"
+    },
+    "ios": {
+      "checksumsSHA256": "d36b89592eecd7e5cffb1a91c8bdd8cb3691ad0b3f66c975d0e4140a88b468e2",
+      "manifestSHA256": "a330f295a2eb0f5831c0c5413157fae64dda580f1b0ca5c2317c1b4057891e30",
+      "path": "regions/cordillera-blanca/ios",
+      "validationSHA256": "d9988458399a505142ee56d713e186fc3b8a44c6bba9f3dc68440e6c367d419a"
+    }
+  },
+  "pythonRuntime": {
+    "packages": {
+      "Pillow": "12.3.0",
+      "certifi": "2026.10.23",
+      "charset-normalizer": "3.5.2",
+      "idna": "3.20",
+      "numpy": "2.5.4",
+      "osmium": "4.3.2",
+      "pyproj": "3.8.0",
+      "requests": "2.34.2",
+      "shapely": "2.2.0",
+      "urllib3": "2.8.0"
+    },
+    "platform": "macOS-27.2.1-arm64-arm-64bit-Mach-O",
+    "python": "3.14.5 (main, May 10 2026, 10:21:34) [Clang 21.0.0 (clang-2100.0.123.102)]",
+    "requirementsSHA256": "427f12ff8b49bfebac0a7d453c2f65bd15d6695584b18e6ecee1fdfeed20a36c"
+  },
+  "region": "cordillera-blanca",
+  "styleSHA256": "c9ca26b8c550c0d80c0ee488215d6203af7e307bdc3363e3ed3b8b8c33f70e84",
+  "terrainLockSHA256": "b767097bb315af1144e43c2ed13ab0021bb5f8f1c70fa44b094ca2fd4bd90c55",
+  "validation": "validation.json"
+}

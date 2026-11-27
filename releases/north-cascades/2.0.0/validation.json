@@ -1,0 +1,348 @@
+{
+  "coverage": "North Cascades National Park around Cascade Pass and Sahale Arm, including Marblemount, the Cascade River Road and principal trailhead approaches.",
+  "coverageAnchors": {
+    "cascade-pass": {
+      "coordinate": [
+        -121.06,
+        48.468
+      ],
+      "featuresInNeighbouringDetailedTiles": 273
+    },
+    "cascade-pass-trailhead": {
+      "coordinate": [
+        -121.075,
+        48.475
+      ],
+      "featuresInNeighbouringDetailedTiles": 236
+    },
+    "cascade-river-road": {
+      "coordinate": [
+        -121.097,
+        48.493
+      ],
+      "featuresInNeighbouringDetailedTiles": 145
+    },
+    "marblemount": {
+      "coordinate": [
+        -121.244,
+        48.527
+      ],
+      "featuresInNeighbouringDetailedTiles": 441
+    },
+    "sahale-arm": {
+      "coordinate": [
+        -121.05,
+        48.482
+      ],
+      "featuresInNeighbouringDetailedTiles": 232
+    },
+    "sahale-glacier": {
+      "coordinate": [
+        -121.039,
+        48.491
+      ],
+      "featuresInNeighbouringDetailedTiles": 113
+    }
+  },
+  "datasets": {
+    "basemap": {
+      "empty_tile_count": 5,
+      "logical_tiles_sha256": "a3a69babbee479c8e5b1f239bbe3338c276d8b9f7590a6dc98a70620d9598ef5",
+      "tile_count": 1805
+    },
+    "grid": {
+      "empty_tile_count": 0,
+      "logical_tiles_sha256": "4bb85c1f12cc88dd4e45b251ffc397403e86c0c2b734e36087be93eb590dc342",
+      "tile_count": 1832
+    },
+    "hillshade": {
+      "empty_tile_count": 0,
+      "logical_tiles_sha256": "24ce8166bc1a22c7f4595671b965989f51cfbddee8d90878ed18229086ee637a",
+      "tile_count": 147
+    },
+    "topography": {
+      "empty_tile_count": 45397,
+      "logical_tiles_sha256": "c05f241e6719ab54e9c50e9c9420d47e30a66f62e877799c9759c292fdb5b0d2",
+      "tile_count": 50406
+    }
+  },
+  "detail": {
+    "basemap": {
+      "boundaries": 820,
+      "contours": 0,
+      "permanentIce": {
+        "glacier": 5499,
+        "permanent_snow": 0
+      }
+    },
+    "topography": {
+      "boundaries": 0,
+      "contours": 126414
+    }
+  },
+  "garmin": {
+    "familyId": 4899,
+    "garminPackageRevision": "2.0.0-r1",
+    "inspection": {
+      "anchorLabels": {
+        "Cascade Pass": "Cascade Pass"
+      },
+      "bounds": [
+        -121.55007362365723,
+        48.24997901916504,
+        -120.74995994567871,
+        48.75002861022949
+      ],
+      "coastPolygonsByLevel": {
+        "0": {
+          "0x32": 5,
+          "0x54": 8
+        },
+        "1": {
+          "0x32": 5,
+          "0x54": 8
+        },
+        "2": {
+          "0x32": 5,
+          "0x54": 8
+        },
+        "3": {
+          "0x32": 5,
+          "0x54": 8
+        },
+        "4": {
+          "0x32": 5,
+          "0x54": 8
+        }
+      },
+      "contoursByLevel": {
+        "0": {
+          "0x20": 16243,
+          "0x22": 4172
+        },
+        "1": {
+          "0x20": 12061,
+          "0x22": 3141
+        },
+        "2": {
+          "0x22": 2963
+        },
+        "3": {
+          "0x10008": 2766
+        },
+        "4": {}
+      },
+      "lineInstancesAtHighestDetail": {
+        "0x10001": 146,
+        "0x10002": 37,
+        "0x10005": 4,
+        "0x10006": 1,
+        "0x1000b": 4,
+        "0x14": 1,
+        "0x16": 281,
+        "0x18": 8413,
+        "0x1c": 93,
+        "0x1f": 49,
+        "0x20": 16243,
+        "0x22": 4172,
+        "0x3": 31,
+        "0x4": 4,
+        "0x6": 135,
+        "0x7": 264,
+        "0xa": 208
+      },
+      "logicalCombinedSHA256": "0d8751e7f7689113aa3b1d0736bd3bed11b34b7d508bd9689e66e462dd2b36f4",
+      "logicalHashNote": "Internal file names, sizes and payloads; only CommonHeader creation-date bytes 14..20 are zeroed for hashing. IMG archive headers are excluded. Output bytes are never modified.",
+      "logicalTileSHA256": {
+        "48990001.img": "20656cc807556186d0f46f3b8a5a7a40df077f497e6f572b2f816418593876f5",
+        "48990002.img": "9196423ed4569b48510c114172c005d13bdac8a27de131654d16a20156da22db",
+        "48990003.img": "42ae6f3e6a03dd3d3a32ba4beb3993666c666484571dddb395233fe82d713626",
+        "48990004.img": "e0e9f5612a9b0331f5ccefc3260fafdff742d4f756b2fef7bac1b93c323c7b8e",
+        "48990005.img": "7cf010d5815ec5de28d8a65d5c54b69836dea47357666c041232a8bbab213a52"
+      },
+      "pointInstancesAtHighestDetail": {
+        "0x10001": 31,
+        "0x10002": 177,
+        "0x10003": 105,
+        "0x10006": 85,
+        "0x2f0b": 51,
+        "0x650c": 5,
+        "0x6603": 94,
+        "0x6615": 18,
+        "0x6616": 156,
+        "0xb00": 7,
+        "0xc00": 4
+      },
+      "polygonInstancesAtHighestDetail": {
+        "0x10101": 67,
+        "0x10102": 50,
+        "0x10103": 380,
+        "0x10104": 701,
+        "0x10105": 2,
+        "0x10106": 116,
+        "0x10109": 691,
+        "0x1010a": 844,
+        "0x1010b": 1,
+        "0x1010c": 1406,
+        "0x13": 1462,
+        "0x32": 5,
+        "0x3c": 510,
+        "0x50": 786,
+        "0x51": 57,
+        "0x54": 8
+      },
+      "routing": false,
+      "subfileBytes": {
+        "DEM": 4980704,
+        "LBL": 26825,
+        "MPS": 465,
+        "RGN": 8663896,
+        "SRT": 912,
+        "TRE": 111699,
+        "TYP": 3037
+      },
+      "tiles": 5
+    },
+    "output": {
+      "bytes": 13840384,
+      "path": "regions/north-cascades/garmin/dist/OpenBareMap-North-Cascades.img",
+      "sha256": "0c2009cdd17b662d7796e14dd5ed46e5f366cb24f3e875aed793f5e1aace8a52"
+    },
+    "routing": false,
+    "status": "compiled and structurally inspected; hardware rendering pending"
+  },
+  "geometryProcessing": {
+    "contours": 8926,
+    "grid": {
+      "grid_10km": 16,
+      "grid_1km": 142
+    },
+    "landcover": {
+      "empty_source_areas": [],
+      "features": 2655,
+      "permanentIce": {
+        "glacier": 575,
+        "permanent_snow": 0
+      },
+      "retained": 615,
+      "smoothed": 2040
+    }
+  },
+  "irelandGarminPackageRevision": "2.0.1-trail-detail-r1",
+  "irelandPreserved": true,
+  "labelGlyphs": {
+    "Open Sans Bold": true,
+    "Open Sans Regular": true,
+    "Open Sans Semibold": true
+  },
+  "landBackground": {
+    "cascade-pass": {
+      "coordinate": [
+        -121.06,
+        48.468
+      ],
+      "verifiedZooms": [
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    },
+    "cascade-pass-trailhead": {
+      "coordinate": [
+        -121.075,
+        48.475
+      ],
+      "verifiedZooms": [
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    },
+    "cascade-river-road": {
+      "coordinate": [
+        -121.097,
+        48.493
+      ],
+      "verifiedZooms": [
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    },
+    "marblemount": {
+      "coordinate": [
+        -121.244,
+        48.527
+      ],
+      "verifiedZooms": [
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    },
+    "sahale-arm": {
+      "coordinate": [
+        -121.05,
+        48.482
+      ],
+      "verifiedZooms": [
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    },
+    "sahale-glacier": {
+      "coordinate": [
+        -121.039,
+        48.491
+      ],
+      "verifiedZooms": [
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    }
+  },
+  "packages": {
+    "android": {
+      "checkedFiles": 43,
+      "nativeDeviceRenderingTested": false,
+      "sourceFiles": {
+        "basemap": "maps/basemap.mbtiles",
+        "coast": "maps/coast.mbtiles",
+        "hillshade": "maps/hillshade.mbtiles",
+        "topography": "maps/topography.mbtiles",
+        "utm-grid": "maps/grid.mbtiles"
+      }
+    },
+    "ios": {
+      "checkedFiles": 46,
+      "nativeDeviceRenderingTested": false,
+      "sourceFiles": {
+        "basemap": "maps/basemap.mbtiles",
+        "coast": "maps/coast.mbtiles",
+        "hillshade": "maps/hillshade.mbtiles",
+        "topography": "maps/topography.mbtiles",
+        "utm-grid": "maps/grid.mbtiles"
+      }
+    }
+  },
+  "permanentIceSourceCounts": {
+    "glacier": 575,
+    "permanent_snow": 0
+  },
+  "region": "north-cascades",
+  "status": "automated checks passed; visual and hardware acceptance pending"
+}

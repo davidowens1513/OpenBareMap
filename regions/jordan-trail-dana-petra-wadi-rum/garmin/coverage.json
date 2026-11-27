@@ -1,0 +1,31 @@
+{
+  "areaSquareDegrees": 0.5202981538674128,
+  "bounds": [
+    35.106816290106174,
+    29.469852625202567,
+    35.734144405959064,
+    30.787310764674405
+  ],
+  "entireRequestedFootprintCovered": true,
+  "exactFootprint": "regions/jordan-trail-dana-petra-wadi-rum/coverage.geojson",
+  "inputs": [
+    {
+      "bytes": 7300,
+      "path": "data/regions/jordan-trail-dana-petra-wadi-rum/jordan.poly",
+      "sha256": "a6a498c64b23d031e32fd47d6b1a7f23f8a2e8e1820754509b11054f40fda9ec",
+      "url": "https://download.geofabrik.de/asia/jordan/jordan.poly"
+    }
+  ],
+  "knownDestinationsCovered": [
+    "al-humeima",
+    "dana",
+    "feynan",
+    "island",
+    "little-petra",
+    "petra",
+    "wadi-rum"
+  ],
+  "operation": "Convex tile-selection envelope around the full regional footprint; the exact outline is retained as a map overlay",
+  "polygons": 1,
+  "sha256": "854a822df398cae60aab8bfe687b22d90d3cf748983f7457415f67cc609dc96f"
+}

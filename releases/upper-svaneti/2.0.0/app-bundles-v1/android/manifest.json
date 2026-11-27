@@ -1,0 +1,33 @@
+{
+  "bytes": 109470433,
+  "datasets": {
+    "basemap": {
+      "path": "maps/basemap.mbtiles",
+      "sha256": "fda49b4a0d9ddd1b77773a65e5578e5d9c7b7c297e04e83ae7a6bad19ba5d6fd"
+    },
+    "coast": {
+      "derivedFrom": "5ed933314141d46abcf465d86451520b42ac263478bd7abbbc463b1c3981592c",
+      "path": "maps/coast.mbtiles",
+      "sha256": "cd85ba8b996181cfa9bf2eceb022d70f32cdcc51180ea920a952e39c3f09d53d"
+    },
+    "grid": {
+      "path": "maps/grid.mbtiles",
+      "sha256": "104be736c1db7d875d8316902b9830a702fd338281638003f03c4e78ba75d364"
+    },
+    "hillshade": {
+      "path": "maps/hillshade.mbtiles",
+      "sha256": "699c6b26b43db3d1d5bb73e2c192cec90fa20c08238d4bb840e8872c4614a0da"
+    },
+    "topography": {
+      "path": "maps/topography.mbtiles",
+      "sha256": "5ed933314141d46abcf465d86451520b42ac263478bd7abbbc463b1c3981592c"
+    }
+  },
+  "instructionsSHA256": "7cce5d7e4f8e96eb12c07e434734e2f7ee993b4511b55cbeda9641465cc5eb18",
+  "instructionsURL": "https://downloads.appsbyonzy.dev/OpenBareMap/upper-svaneti/2.0.0/app-bundles-v1/android/instructions.txt",
+  "localPath": "releases/upper-svaneti/2.0.0/app-bundles-v1/android/OpenBareMap-Upper-Svaneti-Android-Bundle.zip",
+  "mapManifestSHA256": "bbdc63cf439bfa594e5fa8e3023a0ead3e0755646d40e92cf9ddc06247f05685",
+  "r2Key": "OpenBareMap/upper-svaneti/2.0.0/app-bundles-v1/android/OpenBareMap-Upper-Svaneti-Android-Bundle.zip",
+  "sha256": "c2c242828147676597b2e76c930613eccdfc27689e64d0959ac28bdad2d78f53",
+  "url": "https://downloads.appsbyonzy.dev/OpenBareMap/upper-svaneti/2.0.0/app-bundles-v1/android/OpenBareMap-Upper-Svaneti-Android-Bundle.zip"
+}

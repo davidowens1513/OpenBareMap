@@ -1,0 +1,35 @@
+{
+  "bytes": 101113536,
+  "datasets": {
+    "basemap": {
+      "path": "maps/basemap.mbtiles",
+      "sha256": "7369cd9d26e3426393b21fd775d5c2bbb7245044bf4bff92e2ad57f38583f1d9"
+    },
+    "coast": {
+      "derived_from": "a018c04345c6575666d2ca47760f93f8038eb24738655bc168b79bdb97d328f0",
+      "maxzoom": 12,
+      "operation": "Preserve land-layer MVT bytes only through zoom 12; omit other layers.",
+      "path": "maps/coast.mbtiles",
+      "sha256": "d38a4fbfe9bf5b81710e88f27a665e612fe3ad5e75a489d574016e418b787a13"
+    },
+    "grid": {
+      "path": "maps/grid.mbtiles",
+      "sha256": "43dfc07d522def51a8ee8a16412982d18ade6079aac577c3a7724cd1ec821619"
+    },
+    "hillshade": {
+      "path": "maps/hillshade.mbtiles",
+      "sha256": "720c7dae6691889b5c24dd97c473efa39529ec1b5097a00ecef8c7c84605c656"
+    },
+    "topography": {
+      "path": "maps/topography.mbtiles",
+      "sha256": "a018c04345c6575666d2ca47760f93f8038eb24738655bc168b79bdb97d328f0"
+    }
+  },
+  "instructionsSHA256": "9a5f825d6ba9ecb2c761e479f24a5fd52dbb1e1fe2a4353db0b3182d6907b92f",
+  "instructionsURL": "https://downloads.appsbyonzy.dev/OpenBareMap/cordillera-huayhuash/2.0.0/app-bundles-v1/ios/instructions.txt",
+  "localPath": "releases/cordillera-huayhuash/2.0.0/app-bundles-v1/ios/OpenBareMap-Cordillera-Huayhuash-iOS-Bundle.zip",
+  "mapManifestSHA256": "6ea5a83a9c1573119e1ce81ee2d3b74605bb672177b1c7f2cda4cf80d14de889",
+  "r2Key": "OpenBareMap/cordillera-huayhuash/2.0.0/app-bundles-v1/ios/OpenBareMap-Cordillera-Huayhuash-iOS-Bundle.zip",
+  "sha256": "63f26c12df9af33b301b898b28cc6b0f136f242b547c99c54c5569321f807798",
+  "url": "https://downloads.appsbyonzy.dev/OpenBareMap/cordillera-huayhuash/2.0.0/app-bundles-v1/ios/OpenBareMap-Cordillera-Huayhuash-iOS-Bundle.zip"
+}

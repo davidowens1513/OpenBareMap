@@ -1,0 +1,29 @@
+{
+  "accessed_utc": "2026-11-27T14:29:03.598802+00:00",
+  "inputs": [
+    {
+      "bytes": 102999509,
+      "path": "data/regions/upper-svaneti/georgia-261126.osm.pbf",
+      "replicationTimestamp": "2026-11-26T21:21:01Z",
+      "sha256": "7e88fc8cbead7ed554546f9a8b8fe00bab5409b71e4504ec64e00c7593a9721e",
+      "url": "https://download.geofabrik.de/europe/georgia/georgia-261126.osm.pbf"
+    }
+  ],
+  "osm": {
+    "bytes": 5063342,
+    "operation": "Complete-feature bbox extraction with nested relation references",
+    "path": "data/regions/upper-svaneti/georgia-261126.osm.clipped.osm.pbf",
+    "replicationTimestamp": "2026-11-26T21:21:01Z",
+    "sha256": "33f9f7a13499c681e30b00476e857103437af985b16ac180aa18a1249b72f55c",
+    "snapshot_date": "2026-11-26",
+    "url": "https://download.geofabrik.de/europe/georgia/georgia-261126.osm.pbf"
+  },
+  "polygons": [
+    {
+      "bytes": 17034,
+      "path": "data/regions/upper-svaneti/georgia.poly",
+      "sha256": "7d377c2747d6bca2abbd04d61405337631f280ee509052017161aa83423b70ba",
+      "url": "https://download.geofabrik.de/europe/georgia/georgia.poly"
+    }
+  ]
+}

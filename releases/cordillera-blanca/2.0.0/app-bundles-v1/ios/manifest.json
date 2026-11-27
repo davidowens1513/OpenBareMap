@@ -1,0 +1,35 @@
+{
+  "bytes": 221795847,
+  "datasets": {
+    "basemap": {
+      "path": "maps/basemap.mbtiles",
+      "sha256": "158e64a3408d84bec574b0218ebefdcbd2409ac6e1a24c3bf2adcc67f49a7922"
+    },
+    "coast": {
+      "derived_from": "6b8e6da437d221372e99f733a97974713df1132836c76c823f9006915ca7a11a",
+      "maxzoom": 12,
+      "operation": "Preserve land-layer MVT bytes only through zoom 12; omit other layers.",
+      "path": "maps/coast.mbtiles",
+      "sha256": "57574364b494a93a7d767f31a5b5cd109e5f7e6cb8043d0fbf365fcade91b2a4"
+    },
+    "grid": {
+      "path": "maps/grid.mbtiles",
+      "sha256": "e777b39b2329ebd4639f5646f57aa75a8fbfff2e04028530f84d39dbab08e4c7"
+    },
+    "hillshade": {
+      "path": "maps/hillshade.mbtiles",
+      "sha256": "5b7e10aa68695d4b36ec587ba5e1100acc59df8f8018490c6a15b4cd409509ae"
+    },
+    "topography": {
+      "path": "maps/topography.mbtiles",
+      "sha256": "6b8e6da437d221372e99f733a97974713df1132836c76c823f9006915ca7a11a"
+    }
+  },
+  "instructionsSHA256": "664018d4003a8f44a37f045c7dad5869f7b4295f08a1c4401a5f5d9872247c64",
+  "instructionsURL": "https://downloads.appsbyonzy.dev/OpenBareMap/cordillera-blanca/2.0.0/app-bundles-v1/ios/instructions.txt",
+  "localPath": "releases/cordillera-blanca/2.0.0/app-bundles-v1/ios/OpenBareMap-Cordillera-Blanca-iOS-Bundle.zip",
+  "mapManifestSHA256": "a330f295a2eb0f5831c0c5413157fae64dda580f1b0ca5c2317c1b4057891e30",
+  "r2Key": "OpenBareMap/cordillera-blanca/2.0.0/app-bundles-v1/ios/OpenBareMap-Cordillera-Blanca-iOS-Bundle.zip",
+  "sha256": "0f4938d167249634d9555186d67749c2985da2b4126aa0aa0684b871e70584f4",
+  "url": "https://downloads.appsbyonzy.dev/OpenBareMap/cordillera-blanca/2.0.0/app-bundles-v1/ios/OpenBareMap-Cordillera-Blanca-iOS-Bundle.zip"
+}

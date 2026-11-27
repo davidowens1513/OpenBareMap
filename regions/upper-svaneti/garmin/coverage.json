@@ -1,0 +1,32 @@
+{
+  "areaSquareDegrees": 0.6900000000000008,
+  "bounds": [
+    42.2,
+    42.65,
+    43.35,
+    43.25
+  ],
+  "entireRequestedFootprintCovered": true,
+  "exactFootprint": null,
+  "inputs": [
+    {
+      "bytes": 17034,
+      "path": "data/regions/upper-svaneti/georgia.poly",
+      "sha256": "7d377c2747d6bca2abbd04d61405337631f280ee509052017161aa83423b70ba",
+      "url": "https://download.geofabrik.de/europe/georgia/georgia.poly"
+    }
+  ],
+  "knownDestinationsCovered": [
+    "adishi",
+    "chalaadi-glacier",
+    "ipral\u0131",
+    "island",
+    "mestia",
+    "shkhara-glacier",
+    "ushguli",
+    "zhabeshi"
+  ],
+  "operation": "Requested rectangular crop; source outlines cover all destination anchors",
+  "polygons": 1,
+  "sha256": "82264e504a1a8390317f883c25bbf1dfd12f29e9db3b43957fef220d072d1cbe"
+}

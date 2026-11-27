@@ -1,54 +1,74 @@
 {
   "assets": [
     {
+      "origin": "OpenBareMap 1.1 reference bundle; Open Sans glyphs attributed there to OpenMapTiles fonts v2.0; generation recipe not yet recovered",
       "path": "viewer/fonts/LICENSE-APACHE-2.0.txt",
-      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
-      "origin": "OpenBareMap 1.1 reference bundle; Open Sans glyphs attributed there to OpenMapTiles fonts v2.0; generation recipe not yet recovered"
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
     },
     {
+      "origin": "OpenBareMap 1.1 reference bundle; Open Sans glyphs attributed there to OpenMapTiles fonts v2.0; generation recipe not yet recovered",
       "path": "viewer/fonts/Open Sans Regular/0-255.pbf",
-      "sha256": "0c8bdb284f2ad6f69bbb434a0208393f3a517bc8bf7ed1eccc4ac4791ebbcbfe",
-      "origin": "OpenBareMap 1.1 reference bundle; Open Sans glyphs attributed there to OpenMapTiles fonts v2.0; generation recipe not yet recovered"
+      "sha256": "0c8bdb284f2ad6f69bbb434a0208393f3a517bc8bf7ed1eccc4ac4791ebbcbfe"
     },
     {
+      "origin": "OpenBareMap 1.1 reference bundle; Open Sans glyphs attributed there to OpenMapTiles fonts v2.0; generation recipe not yet recovered",
       "path": "viewer/fonts/Open Sans Regular/256-511.pbf",
-      "sha256": "9962ad38d064edbeb226a6c7dcf1d58e7678508a805f980d2fe81bb3178ba68a",
-      "origin": "OpenBareMap 1.1 reference bundle; Open Sans glyphs attributed there to OpenMapTiles fonts v2.0; generation recipe not yet recovered"
+      "sha256": "9962ad38d064edbeb226a6c7dcf1d58e7678508a805f980d2fe81bb3178ba68a"
     },
     {
+      "origin": "OpenBareMap 1.1 reference bundle; Open Sans glyphs attributed there to OpenMapTiles fonts v2.0; generation recipe not yet recovered",
       "path": "viewer/fonts/Open Sans Regular/8192-8447.pbf",
-      "sha256": "a57611157f0597b267ef36eb07ce5a41dddcc3b2f3b5b85779108b7bb48b1cde",
-      "origin": "OpenBareMap 1.1 reference bundle; Open Sans glyphs attributed there to OpenMapTiles fonts v2.0; generation recipe not yet recovered"
+      "sha256": "a57611157f0597b267ef36eb07ce5a41dddcc3b2f3b5b85779108b7bb48b1cde"
     },
     {
+      "origin": "https://unpkg.com/maplibre-gl@5.6.1/LICENSE.txt",
       "path": "viewer/vendor/LICENSE.txt",
-      "sha256": "ee5fc05a0677eaf69601d2c7db0d9ecd6cc27c3abc1d0733bc9ed34707cf8ef2",
-      "origin": "https://unpkg.com/maplibre-gl@5.6.1/LICENSE.txt"
+      "sha256": "ee5fc05a0677eaf69601d2c7db0d9ecd6cc27c3abc1d0733bc9ed34707cf8ef2"
     },
     {
+      "origin": "https://unpkg.com/maplibre-gl@5.6.1/dist/maplibre-gl.css",
       "path": "viewer/vendor/maplibre-gl.css",
-      "sha256": "792ac997dcf6ae6f643eb4e2dee4630c85e7056526bd8fb85ffe83c67d6c41b4",
-      "origin": "https://unpkg.com/maplibre-gl@5.6.1/dist/maplibre-gl.css"
+      "sha256": "792ac997dcf6ae6f643eb4e2dee4630c85e7056526bd8fb85ffe83c67d6c41b4"
     },
     {
+      "origin": "https://unpkg.com/maplibre-gl@5.6.1/dist/maplibre-gl.js",
       "path": "viewer/vendor/maplibre-gl.js",
-      "sha256": "b5a34e6930ff937dbbb9eec8892cffb80ba473cce88ae5ca8c4654432f5f0ebc",
-      "origin": "https://unpkg.com/maplibre-gl@5.6.1/dist/maplibre-gl.js"
+      "sha256": "b5a34e6930ff937dbbb9eec8892cffb80ba473cce88ae5ca8c4654432f5f0ebc"
     },
     {
+      "origin": "https://geoserveis.icgc.cat/contextmaps/glyphs/Open%20Sans%20Regular/768-1023.pbf",
       "path": "viewer/fonts/Open Sans Regular/768-1023.pbf",
-      "sha256": "fea6a1c8e1be55d9725520627b108d425723b2dc189b7dddfe56abd7d8238ea9",
-      "origin": "https://geoserveis.icgc.cat/contextmaps/glyphs/Open%20Sans%20Regular/768-1023.pbf"
+      "sha256": "fea6a1c8e1be55d9725520627b108d425723b2dc189b7dddfe56abd7d8238ea9"
     },
     {
+      "origin": "https://geoserveis.icgc.cat/contextmaps/glyphs/Open%20Sans%20Semibold/768-1023.pbf",
       "path": "viewer/fonts/Open Sans Semibold/768-1023.pbf",
-      "sha256": "35f7d1f9c9dfbc978635b7eb21bffb1113879182b2d518a7fbee6b825dd08274",
-      "origin": "https://geoserveis.icgc.cat/contextmaps/glyphs/Open%20Sans%20Semibold/768-1023.pbf"
+      "sha256": "35f7d1f9c9dfbc978635b7eb21bffb1113879182b2d518a7fbee6b825dd08274"
     },
     {
+      "origin": "https://geoserveis.icgc.cat/contextmaps/glyphs/Open%20Sans%20Bold/768-1023.pbf",
       "path": "viewer/fonts/Open Sans Bold/768-1023.pbf",
-      "sha256": "bd7b11497f8cee930c1843e8fe546ce59214b7cfb5e53809d7eca2899ff509bc",
-      "origin": "https://geoserveis.icgc.cat/contextmaps/glyphs/Open%20Sans%20Bold/768-1023.pbf"
+      "sha256": "bd7b11497f8cee930c1843e8fe546ce59214b7cfb5e53809d7eca2899ff509bc"
+    },
+    {
+      "origin": "https://demotiles.maplibre.org/font/Noto%20Sans%20Regular/4096-4351.pbf (Noto Sans Regular Georgian fallback; SIL Open Font License)",
+      "path": "viewer/fonts/Open Sans Regular/4096-4351.pbf",
+      "sha256": "aeb80cf9bd04db8b8efbdf9a106053503ccfb8817c6a4813f1e2a9a9854eae6d"
+    },
+    {
+      "origin": "https://demotiles.maplibre.org/font/Noto%20Sans%20Regular/4096-4351.pbf (Noto Sans Regular Georgian fallback; SIL Open Font License)",
+      "path": "viewer/fonts/Open Sans Semibold/4096-4351.pbf",
+      "sha256": "aeb80cf9bd04db8b8efbdf9a106053503ccfb8817c6a4813f1e2a9a9854eae6d"
+    },
+    {
+      "origin": "https://demotiles.maplibre.org/font/Noto%20Sans%20Bold/4096-4351.pbf (Noto Sans Bold Georgian fallback; SIL Open Font License)",
+      "path": "viewer/fonts/Open Sans Bold/4096-4351.pbf",
+      "sha256": "23a87dfef6047d32102973aaf736fa4203eb66cbc3c4f46871a80d410efe2ef3"
+    },
+    {
+      "origin": "https://raw.githubusercontent.com/google/fonts/main/ofl/notosansgeorgian/OFL.txt",
+      "path": "viewer/fonts/LICENSE-OFL-NOTO.txt",
+      "sha256": "8c02263c5d73d40544f9ed91e30c4e947407057a3cc430d7b786189aeceff6df"
     }
   ]
 }

@@ -1,0 +1,20 @@
+{
+  "inputs": [
+    {
+      "path": "regions/cordillera-blanca/garmin/inputs/contours.geojson.gz",
+      "sha256": "bb9482f6a930e5b93f82f0fdf7db3d2d90d10e7a87ac7ad4ff2b4be0800f8a2b",
+      "uncompressedSHA256": "ccf76001247ab110917bb4c181b5b1c9c84f88ba4ccb69e457fff3556493f4a5"
+    },
+    {
+      "path": "regions/cordillera-blanca/garmin/inputs/landcover.geojson.gz",
+      "sha256": "4189a392ebe63081a55512658417fb9fb9e7a9f83d7e9f7f6464634008668e8e",
+      "uncompressedSHA256": "1327a3e8744d78150bdf0b3e4094df3f52d0741618b5909b732de602987f853e"
+    },
+    {
+      "path": "regions/cordillera-blanca/garmin/inputs/land.geojson.gz",
+      "sha256": "54a0a7f36f85a9e9ee934cc5857adacb3dc9ecd6aa302290fd2d395bb1e254ca",
+      "uncompressedSHA256": "45796f58b0fd4f40d7ef5ee01ed92040a1e14c2aed5e03b58f67a19b717c9f3c"
+    }
+  ],
+  "region": "cordillera-blanca"
+}

@@ -1,0 +1,29 @@
+{
+  "accessed_utc": "2026-11-27T14:01:09.324733+00:00",
+  "inputs": [
+    {
+      "bytes": 366248452,
+      "path": "data/regions/us-national-parks/washington-261120.osm.pbf",
+      "replicationTimestamp": "2026-11-20T21:21:21Z",
+      "sha256": "1c0af3fb9c92ddfdb6c6be20091ef383ce00d59c060b585f94467615ca472b20",
+      "url": "https://download.geofabrik.de/north-america/us/washington/washington-261120.osm.pbf"
+    }
+  ],
+  "osm": {
+    "bytes": 3781340,
+    "operation": "Complete-feature bbox extraction with nested relation references",
+    "path": "data/regions/north-cascades/washington-261120.osm.clipped.osm.pbf",
+    "replicationTimestamp": "2026-11-20T21:21:21Z",
+    "sha256": "5f253696ecaf8a9478699b48699df37e69f531ca448fbe0447f7ff9bee4a85d8",
+    "snapshot_date": "2026-11-20",
+    "url": "https://download.geofabrik.de/north-america/us/washington/washington-261120.osm.pbf"
+  },
+  "polygons": [
+    {
+      "bytes": 3343,
+      "path": "data/regions/north-cascades/washington.poly",
+      "sha256": "9b61b3551b35e747adae77d57a7f299998be331815afbac8ec4dcd44f9dfdd59",
+      "url": "https://download.geofabrik.de/north-america/us/washington/washington.poly"
+    }
+  ]
+}

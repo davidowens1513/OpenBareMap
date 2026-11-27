@@ -1,0 +1,160 @@
+{
+  "appBundleName": "Jordan-Trail-Dana-Petra-Wadi-Rum",
+  "boundaryAttribution": "Route alignment \u00a9 OpenStreetMap contributors, ODbL; official section names and endpoints checked against the Jordan Trail Association.",
+  "bounds": [
+    35.1,
+    29.4,
+    35.85,
+    30.85
+  ],
+  "clipBasemap": true,
+  "clipSource": true,
+  "clipTerrainToBounds": true,
+  "coastContextBounds": [
+    34,
+    28,
+    37,
+    32
+  ],
+  "contourIntervalMetres": 20,
+  "coverage": "The Jordan Trail from Dana through Petra to Wadi Rum, including the complete official sections, stage settlements and walking and vehicle approaches.",
+  "coverageBoundary": true,
+  "coverageBoundaryLabel": "12 km Jordan Trail walking and access corridor",
+  "destinationLabels": {
+    "al-humeima": "Al-Humeima",
+    "dana": "Dana",
+    "feynan": "Feynan Ecolodge",
+    "island": "Jordan Trail \u2013 Dana, Petra & Wadi Rum",
+    "little-petra": "Little Petra",
+    "petra": "Petra / Wadi Musa",
+    "wadi-rum": "Wadi Rum Village"
+  },
+  "destinations": {
+    "al-humeima": [
+      35.344,
+      29.955,
+      13
+    ],
+    "dana": [
+      35.611,
+      30.675,
+      13
+    ],
+    "feynan": [
+      35.50923,
+      30.63956,
+      13
+    ],
+    "island": [
+      35.475,
+      30.125,
+      9
+    ],
+    "little-petra": [
+      35.45,
+      30.375,
+      13
+    ],
+    "petra": [
+      35.478,
+      30.322,
+      13
+    ],
+    "wadi-rum": [
+      35.42,
+      29.576,
+      13
+    ]
+  },
+  "garminContextBounds": [
+    35.1,
+    29.4,
+    35.85,
+    30.85
+  ],
+  "garminFamilyId": 4904,
+  "garminFilename": "OpenBareMap-Jordan-Trail-Dana-Petra-Wadi-Rum.img",
+  "garminPackageRevision": "2.0.0-r1",
+  "garminTileStartId": 49040001,
+  "garminUseSourceOutline": true,
+  "garminVersionedDelivery": true,
+  "gridCRS": "EPSG:32636",
+  "gridExtent": [
+    700000,
+    780000,
+    3250000,
+    3420000
+  ],
+  "gridName": "WGS 84 / UTM zone 36N",
+  "gridSource": "utm-grid",
+  "id": "jordan-trail-dana-petra-wadi-rum",
+  "ignoreSourceHeaderBounds": true,
+  "inspectionNames": [
+    "Dana",
+    "Wadi Musa"
+  ],
+  "label": "Jordan Trail \u2013 Dana, Petra & Wadi Rum",
+  "labelGlyphs": "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz",
+  "mapVersion": "2.0.0",
+  "maxzoom": 14,
+  "minorWaterwayMinzoom": 10,
+  "minzoom": 4,
+  "name": "OpenBareMap Jordan Trail \u2013 Dana, Petra & Wadi Rum",
+  "nativeLanguage": "en",
+  "optionalBasemapLayers": [
+    "water_name",
+    "cycling_route",
+    "ferry",
+    "island_name"
+  ],
+  "permanentIce": false,
+  "projectedCRS": "EPSG:32636",
+  "repairClippedCoastline": true,
+  "requireBogFeatures": false,
+  "routeBufferMetres": 12000,
+  "routeContinuityMaxMetres": 100,
+  "routeCorridor": true,
+  "routeOverlayId": "jordan-trail-route",
+  "sourceBaseURL": "https://download.geofabrik.de/asia/jordan/",
+  "sourceDate": "2026-11-26",
+  "sourceSlugs": [
+    "jordan"
+  ],
+  "styleRevision": "2.0.0-jordan-trail-dana-petra-wadi-rum-r1",
+  "terrainAttribution": "Copernicus DEM GLO-30 \u00b7 European Union / ESA \u00b7 DLR / Airbus",
+  "terrainBounds": [
+    35,
+    29,
+    36,
+    31
+  ],
+  "terrainNotice": "Jordan Trail \u2013 Dana, Petra & Wadi Rum elevation: Copernicus DEM GLO-30 Public (AWS 2021 release).\n\nproduced using Copernicus WorldDEM-30 \u00a9 DLR e.V. 2010-2014 and \u00a9 Airbus Defence and Space GmbH 2014-2018 provided under COPERNICUS by the European Union and ESA; all rights reserved\n\nThe organisations in charge of the Copernicus programme by law or by delegation do not incur any liability for any use of the Copernicus WorldDEM-30.\n\nLicense: https://dataspace.copernicus.eu/sites/default/files/media/files/2025-06/copernicus_contributing_mission_data_access_v2_cop_dem_licenses.pdf\nSource: https://registry.opendata.aws/copernicus-dem/\nVertical datum: EGM2008 orthometric metres. Native approximately 30 m cells are bilinearly resampled to point-aligned Int16 HGT for the shared terrain pipeline. Ocean-only cells absent from the official public inventory are zero.\n",
+  "terrainProvider": "copernicus-glo30",
+  "townlands": false,
+  "validationAnchors": {
+    "al-humeima": [
+      35.344,
+      29.955
+    ],
+    "dana": [
+      35.611,
+      30.675
+    ],
+    "feynan": [
+      35.50923,
+      30.63956
+    ],
+    "little-petra": [
+      35.45,
+      30.375
+    ],
+    "petra": [
+      35.478,
+      30.322
+    ],
+    "wadi-rum": [
+      35.42,
+      29.576
+    ]
+  }
+}

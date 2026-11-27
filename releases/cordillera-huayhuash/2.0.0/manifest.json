@@ -1,0 +1,106 @@
+{
+  "acceptance": "Automated checks only; see validation and visual-review records for actual reviewed scope.",
+  "coverage": "The complete Cordillera Huayhuash trekking circuit, including main passes, camps, trailheads and road approaches from Chiqui\u00e1n and Cajatambo.",
+  "datasets": {
+    "basemap": {
+      "bytes": 6189056,
+      "path": "releases/cordillera-huayhuash/2.0.0/maps/basemap.mbtiles",
+      "sha256": "7369cd9d26e3426393b21fd775d5c2bbb7245044bf4bff92e2ad57f38583f1d9",
+      "validation": {
+        "empty_tile_count": 3,
+        "logical_tiles_sha256": "73f8859506773f8e2bfbcd87ba157359f49508c060af78f6122f2dbebeae7aa7",
+        "tile_count": 2181
+      }
+    },
+    "grid": {
+      "bytes": 925696,
+      "path": "releases/cordillera-huayhuash/2.0.0/maps/grid.mbtiles",
+      "sha256": "43dfc07d522def51a8ee8a16412982d18ade6079aac577c3a7724cd1ec821619",
+      "validation": {
+        "empty_tile_count": 0,
+        "logical_tiles_sha256": "ef3c629ba5585a715ff13fe7a0604f278aa6598d6b3bba46df4158b5604976c2",
+        "tile_count": 2347
+      }
+    },
+    "hillshade": {
+      "bytes": 8146944,
+      "path": "releases/cordillera-huayhuash/2.0.0/maps/hillshade.mbtiles",
+      "sha256": "720c7dae6691889b5c24dd97c473efa39529ec1b5097a00ecef8c7c84605c656",
+      "validation": {
+        "empty_tile_count": 0,
+        "logical_tiles_sha256": "f184e60c67a58b9b6554cfb127385cb35b4f43ba5cb6bb98d2344599ca814426",
+        "tile_count": 189
+      }
+    },
+    "topography": {
+      "bytes": 81367040,
+      "path": "releases/cordillera-huayhuash/2.0.0/maps/topography-context.mbtiles",
+      "sha256": "a018c04345c6575666d2ca47760f93f8038eb24738655bc168b79bdb97d328f0",
+      "validation": {
+        "empty_tile_count": 33727,
+        "logical_tiles_sha256": "0eff494e7c1c24f06e8b0b663f212afd2e78d5ed7666dcbc0f11afb5305d40d5",
+        "tile_count": 38307
+      }
+    }
+  },
+  "garmin": {
+    "bytes": 25886720,
+    "path": "regions/cordillera-huayhuash/garmin/dist/OpenBareMap-Cordillera-Huayhuash.img",
+    "sha256": "585ca3d12cee1f1998b04128095c2f3a13a1b4bd922cebf97c15b2e03a602165"
+  },
+  "geometryReport": {
+    "path": "build/cordillera-huayhuash-geometry/geometry-report.json",
+    "sha256": "210f4d820c195da1e92e5d91839623cc0df3c75193fc3f488096043cc9a64fb3"
+  },
+  "hostAppsModified": false,
+  "mapVersion": "2.0.0",
+  "osm": {
+    "bytes": 4918490,
+    "operation": "Complete-feature bbox extraction with nested relation references",
+    "path": "data/regions/cordillera-huayhuash/peru-261119.osm.clipped.osm.pbf",
+    "replicationTimestamp": "2026-11-19T21:22:20Z",
+    "sha256": "89cd180cfca78627ea7e83b020404523c6d30a2fca124214bcae9e51f2bfece3",
+    "snapshot_date": "2026-11-19",
+    "url": "https://download.geofabrik.de/south-america/peru/peru-261119.osm.pbf"
+  },
+  "packages": {
+    "android": {
+      "archive": {
+        "bytes": 101083289,
+        "path": "regions/cordillera-huayhuash/android/OpenBareMap-Android.zip",
+        "sha256": "a3b0d1ef26feb844d673c5f0332007835d67058a87e698baa1c86fee9ff89a5e"
+      },
+      "checksumsSHA256": "d1441c7a95cd1619f1669adc133fff6f069dbd1b972eb6fbd3ac3b21591fe822",
+      "manifestSHA256": "c97bbfda35ea97a8bc4a4c09e8cf34788948ae2ad72596ef7396a5094ebbfdc0",
+      "path": "regions/cordillera-huayhuash/android",
+      "validationSHA256": "063711b195afd1a6b1bb7635360ea94ec0dd886d0ba9b2f0c349d8e963a65b72"
+    },
+    "ios": {
+      "checksumsSHA256": "5647f557d01d2abe444d736e5ddd4edeaee306ac4d27c49dbd8c5786c427637e",
+      "manifestSHA256": "6ea5a83a9c1573119e1ce81ee2d3b74605bb672177b1c7f2cda4cf80d14de889",
+      "path": "regions/cordillera-huayhuash/ios",
+      "validationSHA256": "55c07b232fb1b32dfd5a8b549527fbfceb3ba3e60e0150506da871b9653f3602"
+    }
+  },
+  "pythonRuntime": {
+    "packages": {
+      "Pillow": "12.3.0",
+      "certifi": "2026.10.23",
+      "charset-normalizer": "3.5.2",
+      "idna": "3.20",
+      "numpy": "2.5.4",
+      "osmium": "4.3.2",
+      "pyproj": "3.8.0",
+      "requests": "2.34.2",
+      "shapely": "2.2.0",
+      "urllib3": "2.8.0"
+    },
+    "platform": "macOS-27.2.1-arm64-arm-64bit-Mach-O",
+    "python": "3.14.5 (main, May 10 2026, 10:21:34) [Clang 21.0.0 (clang-2100.0.123.102)]",
+    "requirementsSHA256": "427f12ff8b49bfebac0a7d453c2f65bd15d6695584b18e6ecee1fdfeed20a36c"
+  },
+  "region": "cordillera-huayhuash",
+  "styleSHA256": "a13130669a2c7d09fa3bf28c97f9ab4c863778db5e1f3d9e226140cd09bede35",
+  "terrainLockSHA256": "2b1f5e1dc7cefcc846ce8b7750f2874a53d6e1b6168cd1859188ff96f78f4551",
+  "validation": "validation.json"
+}

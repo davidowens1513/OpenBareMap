@@ -1,0 +1,52 @@
+{
+  "contourIntervalMetres": 20,
+  "coverage": "The White Mountains, including the Presidential Range, Franconia Ridge, Appalachian Mountain Club huts and the connecting trail and road approaches.",
+  "datasets": {
+    "basemap": {
+      "bytes": 15859712,
+      "path": "releases/white-mountains/2.0.0/maps/basemap.mbtiles",
+      "sha256": "6170e03fcfae12b116072950523a4fba493a113c7ba24555eb9e30f96c2cf48e",
+      "validation": {
+        "empty_tile_count": 9,
+        "logical_tiles_sha256": "fab14008c4bcc20546a3b222efa3a4ec7f9e969fe7a9dc9e266cdd6735766ff6",
+        "tile_count": 2258
+      }
+    },
+    "grid": {
+      "bytes": 798720,
+      "path": "releases/white-mountains/2.0.0/maps/grid.mbtiles",
+      "sha256": "832982f2ac8c9025c5499fce68ace12c47b098f51e34c40e28d6b86da716672e",
+      "validation": {
+        "empty_tile_count": 0,
+        "logical_tiles_sha256": "b252f25239c7f1c96159f7f159595e39e26a4e30b7c64188b7b528384b71588b",
+        "tile_count": 2268
+      }
+    },
+    "hillshade": {
+      "bytes": 6295552,
+      "path": "releases/white-mountains/2.0.0/maps/hillshade.mbtiles",
+      "sha256": "7055d0ade0aed93f373ce372fbb83088bf77ea87a5abbd75785e258d7ac047f9",
+      "validation": {
+        "empty_tile_count": 0,
+        "logical_tiles_sha256": "9c6d67f2596562a182e8078f68d57d39c0e1e92f74208b06bd700c3247444d5c",
+        "tile_count": 159
+      }
+    },
+    "topography": {
+      "bytes": 25796608,
+      "path": "releases/white-mountains/2.0.0/maps/topography.mbtiles",
+      "sha256": "4381098a8bda4e81a0d2d64613861ca058785f151c3444b7124916defa45aa0d",
+      "validation": {
+        "empty_tile_count": 39926,
+        "logical_tiles_sha256": "b00665e0d8a0553c7040d5993fed15bf10a07094380c8cd311c049cbe179d0c6",
+        "tile_count": 44890
+      }
+    }
+  },
+  "format": "openbaremap-development-viewer-v1",
+  "localBorders": false,
+  "mapVersion": "2.0.0",
+  "region": "white-mountains",
+  "storageRevision": "2.0.0-white-mountains-r1",
+  "styleRevision": "2.0.0-white-mountains-r1"
+}

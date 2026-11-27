@@ -1,0 +1,20 @@
+{
+  "inputs": [
+    {
+      "path": "regions/san-juan-mountains/garmin/inputs/contours.geojson.gz",
+      "sha256": "0de052a8b91abfffca4a2078549d4e35f742920274138647e10f2c9b14d0736c",
+      "uncompressedSHA256": "878ded5c091680796402eeda0fc06dabe7d9c0b085bdca91fa0fa51107c29b01"
+    },
+    {
+      "path": "regions/san-juan-mountains/garmin/inputs/landcover.geojson.gz",
+      "sha256": "1eac206f18656fc270d7680e3ab6a73368a69bf6621aea093dc2bfa9948b2762",
+      "uncompressedSHA256": "837e8a24a513272242a243cd76cfd36b8888185eb78529a9b15eb67365e0def9"
+    },
+    {
+      "path": "regions/san-juan-mountains/garmin/inputs/land.geojson.gz",
+      "sha256": "2653b24323471f5c277659d892b4a46ab1073c0664d2135ffb2f1180128cf7c5",
+      "uncompressedSHA256": "4af46f6467dff82781187b107b86538bb42a7f5b76292ac75f0ff0338e5be3b7"
+    }
+  ],
+  "region": "san-juan-mountains"
+}

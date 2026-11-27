@@ -1,0 +1,20 @@
+{
+  "inputs": [
+    {
+      "path": "regions/upper-svaneti/garmin/inputs/contours.geojson.gz",
+      "sha256": "4559577142bea46429571f885be99ccd01d5c4c186189782fb1b11e9e2a5a7c5",
+      "uncompressedSHA256": "c98480cd813272187daea57d1d30c2b6d6bbaf599f39c5f279cee1468b42fb34"
+    },
+    {
+      "path": "regions/upper-svaneti/garmin/inputs/landcover.geojson.gz",
+      "sha256": "21e2402140bb0da04d59f0ad8323392f13f7c534b109136d56fc4ebd870d19a4",
+      "uncompressedSHA256": "7190afd605c3f34c449d029eb9a6b747e74bb1a9d8282071939e9a6bba5a8527"
+    },
+    {
+      "path": "regions/upper-svaneti/garmin/inputs/land.geojson.gz",
+      "sha256": "4412da0bae3b8ecf045d8d7fc6eb45e2e6da95f1efb346f07fb3d63eb1c950d1",
+      "uncompressedSHA256": "f29caaa1dc23001d9fa6f279a4cd0735bb1548d94ddec7fc9847e0bb8fe8ddb1"
+    }
+  ],
+  "region": "upper-svaneti"
+}

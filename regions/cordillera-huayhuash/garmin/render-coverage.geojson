@@ -1,0 +1,39 @@
+{
+  "features": [
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              -77.35,
+              -10.75
+            ],
+            [
+              -77.35,
+              -9.8
+            ],
+            [
+              -76.55,
+              -9.8
+            ],
+            [
+              -76.55,
+              -10.75
+            ],
+            [
+              -77.35,
+              -10.75
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "properties": {
+        "purpose": "Limit opaque native background and land-cover polygons; retain complete accepted OSM and terrain inputs",
+        "region": "cordillera-huayhuash"
+      },
+      "type": "Feature"
+    }
+  ],
+  "type": "FeatureCollection"
+}

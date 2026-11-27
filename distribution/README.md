@@ -14,6 +14,9 @@ each kit's contents; SHA256SUMS.txt beside each public download covers the ZIP
 and linked instructions. SDK renderer binaries are installed by the documented
 Swift Package Manager or Maven dependency, rather than duplicated in each kit.
 
+Hikers do not need these developer bundles. In **BareGPS Worldwide**, use
+**Settings → OpenBareMap Downloads**, choose an edition and download it over Wi-Fi.
+
 Build the loader before assembling the kits:
 
 ```sh
@@ -45,12 +48,12 @@ SDK example checks and browser checks are recorded beside the catalog. Garmin
 instructions use one template across editions; device-specific installation and
 historical build records remain in the platform/release subdirectories.
 
-The catalog records versions per region: England/Wales includes the Isle of Man in 2.0.1; the other editions remain 2.0.0. Use the catalog URL and checksum for the selected region. `--platforms ios` or `--platforms android` packages one platform at a time when disk space is limited.
+Versions and checksums vary by edition. Treat [`app-bundles-v1/catalog.json`](app-bundles-v1/catalog.json) as the authority for current mobile map versions, archive sizes, URLs and SHA-256 values; use each regional Garmin manifest for Garmin revisions. `--platforms ios` or `--platforms android` packages one platform at a time when disk space is limited.
 
 ## Git and Cloudflare storage
 
-All 20 current phone kits and ten Garmin images are hosted on Cloudflare R2 and
-excluded from Git. [The restore inventory](r2-assets.json) records their original
+All current phone kits and Garmin images are hosted on Cloudflare R2 and excluded
+from Git. [The app catalogue](app-bundles-v1/catalog.json) and [restore inventory](r2-assets.json) record their original
 local destinations, public URLs, sizes and SHA-256 checksums. Run
 `python3 scripts/restore_r2_assets.py --list` from the repository root before
 selecting downloads. Downloading a kit does not install development databases.

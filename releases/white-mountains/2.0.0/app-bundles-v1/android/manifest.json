@@ -1,0 +1,33 @@
+{
+  "bytes": 53050114,
+  "datasets": {
+    "basemap": {
+      "path": "maps/basemap.mbtiles",
+      "sha256": "6170e03fcfae12b116072950523a4fba493a113c7ba24555eb9e30f96c2cf48e"
+    },
+    "coast": {
+      "derivedFrom": "e4d4cfa8ecdbea3b7cc8763bfac3bff167c8030baffe76f5e5c09df5b0a1403d",
+      "path": "maps/coast.mbtiles",
+      "sha256": "1d34e85d3cc446682e9e361b7c882ea05195723b6f7d83f18bd4ea0f01bd160d"
+    },
+    "grid": {
+      "path": "maps/grid.mbtiles",
+      "sha256": "832982f2ac8c9025c5499fce68ace12c47b098f51e34c40e28d6b86da716672e"
+    },
+    "hillshade": {
+      "path": "maps/hillshade.mbtiles",
+      "sha256": "7055d0ade0aed93f373ce372fbb83088bf77ea87a5abbd75785e258d7ac047f9"
+    },
+    "topography": {
+      "path": "maps/topography.mbtiles",
+      "sha256": "e4d4cfa8ecdbea3b7cc8763bfac3bff167c8030baffe76f5e5c09df5b0a1403d"
+    }
+  },
+  "instructionsSHA256": "fc663b4bb43e3158825d88985441b486114ed59b9d64a9dca0f989015856a263",
+  "instructionsURL": "https://downloads.appsbyonzy.dev/OpenBareMap/white-mountains/2.0.0/app-bundles-v1/android/instructions.txt",
+  "localPath": "releases/white-mountains/2.0.0/app-bundles-v1/android/OpenBareMap-White-Mountains-Android-Bundle.zip",
+  "mapManifestSHA256": "cd231239de99b1def887cfc82e2109bb9bfaad9cb8b62efaf494f5f6be60c603",
+  "r2Key": "OpenBareMap/white-mountains/2.0.0/app-bundles-v1/android/OpenBareMap-White-Mountains-Android-Bundle.zip",
+  "sha256": "f7d4d99f5bdf28a696c3c357256dc4aa7445b5386d423c432b9e31101f1e616f",
+  "url": "https://downloads.appsbyonzy.dev/OpenBareMap/white-mountains/2.0.0/app-bundles-v1/android/OpenBareMap-White-Mountains-Android-Bundle.zip"
+}

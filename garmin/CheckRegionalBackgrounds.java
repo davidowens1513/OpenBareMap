@@ -81,6 +81,15 @@ public class CheckRegionalBackgrounds {
    case "garibaldi-whistler" -> new double[][]{{-123.35,50.00},{-122.60,50.00},{-123.00,50.30},{-123.00,49.60}};
    case "cotopaxi-quilotoa" -> new double[][]{{-79.20,-0.75},{-78.20,-0.75},{-78.70,-1.15}};
    case "aconcagua" -> new double[][]{{-70.40,-32.80},{-69.20,-32.80},{-70.05,-33.30}};
+   case "north-cascades" -> new double[][]{{-121.65,48.50},{-120.65,48.50},{-121.15,48.85},{-121.15,48.15}};
+   case "white-mountains" -> new double[][]{{-72.05,44.15},{-70.95,44.15},{-71.50,44.55},{-71.50,43.75}};
+   case "san-juan-mountains" -> new double[][]{{-108.25,37.90},{-107.25,37.90},{-107.75,38.25},{-107.75,37.55}};
+   case "aoraki-mount-cook-westland" -> new double[][]{{169.65,-43.50},{170.55,-43.50},{170.10,-43.10},{170.10,-43.90}};
+   case "upper-svaneti" -> new double[][]{{42.10,42.95},{43.45,42.95},{42.75,43.35},{42.75,42.55}};
+   case "jordan-trail-dana-petra-wadi-rum" -> new double[][]{{35.18,30.76},{35.76,30.08},{35.12,29.55},{35.82,29.72}};
+   case "cordillera-blanca" -> new double[][]{{-78.05,-9.25},{-76.95,-9.25},{-77.50,-8.20},{-77.50,-10.20}};
+   case "cordillera-huayhuash" -> new double[][]{{-77.45,-10.25},{-76.45,-10.25},{-76.95,-9.70},{-76.95,-10.85}};
+   case "cerro-castillo" -> new double[][]{{-72.65,-46.00},{-71.55,-46.00},{-72.10,-45.45},{-72.10,-46.55}};
    default -> throw new IllegalArgumentException(args[0]);
   };
   int tiles=0,polygons=0;Set<Integer> resolutions=new TreeSet<>();

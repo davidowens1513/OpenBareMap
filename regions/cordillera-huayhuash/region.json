@@ -1,0 +1,170 @@
+{
+  "appBundleName": "Cordillera-Huayhuash",
+  "bounds": [
+    -77.35,
+    -10.75,
+    -76.55,
+    -9.8
+  ],
+  "clipBasemap": true,
+  "clipSource": true,
+  "clipTerrainToBounds": true,
+  "coastContextBounds": [
+    -79,
+    -12,
+    -75,
+    -8
+  ],
+  "contourIntervalMetres": 20,
+  "coverage": "The complete Cordillera Huayhuash trekking circuit, including main passes, camps, trailheads and road approaches from Chiqui\u00e1n and Cajatambo.",
+  "destinationLabels": {
+    "cajatambo": "Cajatambo",
+    "carhuacocha": "Carhuacocha",
+    "chiquian": "Chiqui\u00e1n",
+    "cuartelhuain": "Cuartelhuain",
+    "huayhuash": "Huayhuash",
+    "island": "Cordillera Huayhuash",
+    "llamac": "Llamac",
+    "viconga": "Viconga"
+  },
+  "destinations": {
+    "cajatambo": [
+      -76.994,
+      -10.474,
+      13
+    ],
+    "carhuacocha": [
+      -76.913,
+      -10.267,
+      13
+    ],
+    "chiquian": [
+      -77.155,
+      -10.151,
+      13
+    ],
+    "cuartelhuain": [
+      -76.883,
+      -10.084,
+      13
+    ],
+    "huayhuash": [
+      -76.917,
+      -10.4,
+      13
+    ],
+    "island": [
+      -76.94999999999999,
+      -10.275,
+      9
+    ],
+    "llamac": [
+      -76.989,
+      -10.138,
+      13
+    ],
+    "viconga": [
+      -76.905,
+      -10.458,
+      13
+    ]
+  },
+  "garminContextBounds": [
+    -77.35,
+    -10.75,
+    -76.55,
+    -9.8
+  ],
+  "garminFamilyId": 4906,
+  "garminFilename": "OpenBareMap-Cordillera-Huayhuash.img",
+  "garminPackageRevision": "2.0.0-r1",
+  "garminTileStartId": 49060001,
+  "garminUseSourceOutline": true,
+  "garminVersionedDelivery": true,
+  "gridCRS": "EPSG:32718",
+  "gridExtent": [
+    240000,
+    340000,
+    8810000,
+    8920000
+  ],
+  "gridName": "WGS 84 / UTM zone 18S",
+  "gridSource": "utm-grid",
+  "id": "cordillera-huayhuash",
+  "ignoreSourceHeaderBounds": true,
+  "inspectionNames": [
+    "Chiqui\u00e1n"
+  ],
+  "label": "Cordillera Huayhuash",
+  "labelGlyphs": "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz\u00c1\u00c9\u00cd\u00d1\u00d3\u00da\u00dc\u00e1\u00e9\u00ed\u00f1\u00f3\u00fa\u00fc",
+  "mapVersion": "2.0.0",
+  "maxzoom": 14,
+  "minorWaterwayMinzoom": 10,
+  "minzoom": 4,
+  "name": "OpenBareMap Cordillera Huayhuash",
+  "nativeLanguage": "es",
+  "optionalBasemapLayers": [
+    "ferry",
+    "island_name",
+    "cycling_route",
+    "railway",
+    "station",
+    "hiking_route",
+    "boundary"
+  ],
+  "permanentIce": true,
+  "permanentIceSourceNote": "Glacier outlines: INAIGEM Inventario Nacional de Glaciares 2026; permanent snowfields, where mapped: OpenStreetMap contributors. Rock glaciers and temporary snow are excluded.",
+  "projectedCRS": "EPSG:32718",
+  "repairClippedCoastline": true,
+  "requireBogFeatures": false,
+  "requiredPermanentIce": [
+    "glacier"
+  ],
+  "sourceBaseURL": "https://download.geofabrik.de/south-america/peru/",
+  "sourceCacheRegion": "cusco-inca-trail",
+  "sourceDate": "2026-11-19",
+  "sourceSlugs": [
+    "peru"
+  ],
+  "styleRevision": "2.0.0-cordillera-huayhuash-r1",
+  "terrainAttribution": "Copernicus DEM GLO-30 \u00b7 European Union / ESA \u00b7 DLR / Airbus",
+  "terrainBounds": [
+    -78,
+    -11,
+    -76,
+    -9
+  ],
+  "terrainNotice": "Cordillera Huayhuash elevation: Copernicus DEM GLO-30 Public (AWS 2021 release).\n\nproduced using Copernicus WorldDEM-30 \u00a9 DLR e.V. 2010-2014 and \u00a9 Airbus Defence and Space GmbH 2014-2018 provided under COPERNICUS by the European Union and ESA; all rights reserved\n\nThe organisations in charge of the Copernicus programme by law or by delegation do not incur any liability for any use of the Copernicus WorldDEM-30.\n\nLicense: https://dataspace.copernicus.eu/sites/default/files/media/files/2025-06/copernicus_contributing_mission_data_access_v2_cop_dem_licenses.pdf\nSource: https://registry.opendata.aws/copernicus-dem/\nVertical datum: EGM2008 orthometric metres. Native approximately 30 m cells are bilinearly resampled to point-aligned Int16 HGT for the shared terrain pipeline. Ocean-only cells absent from the official public inventory are zero.\n",
+  "terrainProvider": "copernicus-glo30",
+  "townlands": false,
+  "validationAnchors": {
+    "cajatambo": [
+      -76.994,
+      -10.474
+    ],
+    "carhuacocha": [
+      -76.913,
+      -10.267
+    ],
+    "chiquian": [
+      -77.155,
+      -10.151
+    ],
+    "cuartelhuain": [
+      -76.883,
+      -10.084
+    ],
+    "huayhuash": [
+      -76.917,
+      -10.4
+    ],
+    "llamac": [
+      -76.989,
+      -10.138
+    ],
+    "viconga": [
+      -76.905,
+      -10.458
+    ]
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "regions": {
+    "upper-svaneti": {
+      "basemap": {
+        "sourceSHA256": "fda49b4a0d9ddd1b77773a65e5578e5d9c7b7c297e04e83ae7a6bad19ba5d6fd",
+        "bytes": 10006695,
+        "sha256": "aec88c07d8e2e81f5cd6a5fa7809d8148eb3d2e6d07c1676964a80f8967a5840",
+        "tiles": 2460
+      },
+      "grid": {
+        "sourceSHA256": "104be736c1db7d875d8316902b9830a702fd338281638003f03c4e78ba75d364",
+        "bytes": 837232,
+        "sha256": "20c214f64420b4114f5dc78bb74fe4e3f31a0ad6b119df3a46691f3e3ce531c4",
+        "tiles": 2801
+      },
+      "hillshade": {
+        "sourceSHA256": "699c6b26b43db3d1d5bb73e2c192cec90fa20c08238d4bb840e8872c4614a0da",
+        "bytes": 9491972,
+        "sha256": "5c856afdd12bb2c37a733f0215dc1380240780d821bfe029c61edf7c7828ebac",
+        "tiles": 203
+      },
+      "topography": {
+        "sourceSHA256": "5ed933314141d46abcf465d86451520b42ac263478bd7abbbc463b1c3981592c",
+        "bytes": 77771462,
+        "sha256": "de5584650bfde9296c75747d8046be7b73a477d79f4af45793494f1b4efcb408",
+        "tiles": 61235
+      },
+      "coast": {
+        "sourceSHA256": "cd85ba8b996181cfa9bf2eceb022d70f32cdcc51180ea920a952e39c3f09d53d",
+        "bytes": 57893,
+        "sha256": "d0cb81af46048516c551c1fdca59576166af763b972533160f514682f62f95c4",
+        "tiles": 3893
+      }
+    }
+  },
+  "pmtilesPython": "3.8.1",
+  "pmtilesJS": "4.5.0",
+  "librarySHA256": "caf981bc46f6327ee7e65d5dc964d89d38a69f60edca2bd4c5c890c21b554c6c",
+  "dataOrigin": "https://downloads.appsbyonzy.dev/OpenBareMap/upper-svaneti/2.0.0/preview",
+  "scope": "Complete selected map tiles; no regional or zoom sampling."
+}

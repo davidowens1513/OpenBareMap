@@ -1,0 +1,58 @@
+{
+  "bounds": [
+    -72.55,
+    -46.45,
+    -71.65,
+    -45.55
+  ],
+  "contextEnvelope": [
+    -72.55,
+    -46.45,
+    -71.65,
+    -45.55
+  ],
+  "drawPriority": 25,
+  "format": "openbaremap-garmin-render-footprint-v1",
+  "geometry": {
+    "bytes": 757,
+    "path": "regions/cerro-castillo/garmin/render-coverage.geojson",
+    "sha256": "ba28e78c9651401692527cdc177b9583d5dbf2bd18f96ab022778cd55ecbacc3"
+  },
+  "inputs": [
+    {
+      "bytes": 4371,
+      "path": "data/regions/cerro-castillo/chile.poly",
+      "sha256": "a2c053d95312ba82997dda3deeb995a5ccff285d74db545d68b04a95facd26d3",
+      "url": "https://download.geofabrik.de/south-america/chile/chile.poly"
+    }
+  ],
+  "knownDestinationsCovered": {
+    "cerro-castillo": [
+      -72.194,
+      -46.064
+    ],
+    "estero-parada": [
+      -72.236,
+      -46.118
+    ],
+    "laguna-castillo": [
+      -72.168,
+      -46.08
+    ],
+    "laguna-chiguay": [
+      -72.067,
+      -45.962
+    ],
+    "las-horquetas": [
+      -72.187,
+      -45.907
+    ],
+    "villa-cerro-castillo": [
+      -72.07,
+      -46.119
+    ]
+  },
+  "purpose": "Rectangular Garmin tiles may overlap other countries. Do not fill their padding with sea, land or land-cover polygons.",
+  "region": "cerro-castillo",
+  "transparentNativeMap": true
+}

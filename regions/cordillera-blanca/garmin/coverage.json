@@ -1,0 +1,32 @@
+{
+  "areaSquareDegrees": 1.6200000000000092,
+  "bounds": [
+    -77.95,
+    -10.1,
+    -77.05,
+    -8.3
+  ],
+  "entireRequestedFootprintCovered": true,
+  "exactFootprint": null,
+  "inputs": [
+    {
+      "bytes": 4172,
+      "path": "data/regions/cordillera-blanca/peru.poly",
+      "sha256": "179baab6f016cdddfcc38f14990c5e0a015de4cb15421f740a93eb37cf455ada",
+      "url": "https://download.geofabrik.de/south-america/peru/peru.poly"
+    }
+  ],
+  "knownDestinationsCovered": [
+    "cashapampa",
+    "huaraz",
+    "huascaran",
+    "island",
+    "llanganuco",
+    "punta-union",
+    "vaqueria",
+    "yungay"
+  ],
+  "operation": "Requested rectangular crop; source outlines cover all destination anchors",
+  "polygons": 1,
+  "sha256": "6e6b93ab09ea22d0ec2b12a12665493d959b8fe4ad12439be9e59115a3395f2b"
+}

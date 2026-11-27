@@ -1,0 +1,31 @@
+{
+  "areaSquareDegrees": 0.4199999999999892,
+  "bounds": [
+    169.75,
+    -43.8,
+    170.45,
+    -43.2
+  ],
+  "entireRequestedFootprintCovered": true,
+  "exactFootprint": null,
+  "inputs": [
+    {
+      "bytes": 379,
+      "path": "data/regions/aoraki-mount-cook-westland/new-zealand.poly",
+      "sha256": "5d483934d8f56574d642d57d36e9157d9de089de5012485cba5aa3c77b046b9b",
+      "url": "https://download.geofabrik.de/australia-oceania/new-zealand/new-zealand.poly"
+    }
+  ],
+  "knownDestinationsCovered": [
+    "aoraki-village",
+    "fox-glacier",
+    "franz-josef",
+    "hooker-valley",
+    "island",
+    "mueller-hut",
+    "tasman-glacier"
+  ],
+  "operation": "Requested rectangular crop; source outlines cover all destination anchors",
+  "polygons": 1,
+  "sha256": "e96acd349d832e748ff1b9d4ab2d2c36d3061b71539948d7bd05f596bb13a8dc"
+}

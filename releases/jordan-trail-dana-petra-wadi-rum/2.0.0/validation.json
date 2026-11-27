@@ -1,0 +1,340 @@
+{
+  "coverage": "The Jordan Trail from Dana through Petra to Wadi Rum, including the complete official sections, stage settlements and walking and vehicle approaches.",
+  "coverageAnchors": {
+    "al-humeima": {
+      "coordinate": [
+        35.344,
+        29.955
+      ],
+      "featuresInNeighbouringDetailedTiles": 271
+    },
+    "dana": {
+      "coordinate": [
+        35.611,
+        30.675
+      ],
+      "featuresInNeighbouringDetailedTiles": 520
+    },
+    "feynan": {
+      "coordinate": [
+        35.50923,
+        30.63956
+      ],
+      "featuresInNeighbouringDetailedTiles": 326
+    },
+    "little-petra": {
+      "coordinate": [
+        35.45,
+        30.375
+      ],
+      "featuresInNeighbouringDetailedTiles": 498
+    },
+    "petra": {
+      "coordinate": [
+        35.478,
+        30.322
+      ],
+      "featuresInNeighbouringDetailedTiles": 2530
+    },
+    "wadi-rum": {
+      "coordinate": [
+        35.42,
+        29.576
+      ],
+      "featuresInNeighbouringDetailedTiles": 505
+    }
+  },
+  "datasets": {
+    "basemap": {
+      "empty_tile_count": 6,
+      "logical_tiles_sha256": "7fa8f3373b021a31bff35f672784752c5b0dc747f64e967a4f960ed14154d538",
+      "tile_count": 1410
+    },
+    "grid": {
+      "empty_tile_count": 0,
+      "logical_tiles_sha256": "840e566cfec27b870ec24fd0906e771b7480bc978fe14911a256f20925cc88ba",
+      "tile_count": 1432
+    },
+    "hillshade": {
+      "empty_tile_count": 0,
+      "logical_tiles_sha256": "5cf872d73ab5e3b95b765d94fb3d596334cb4244d795e761406b562073e6c7e6",
+      "tile_count": 143
+    },
+    "topography": {
+      "empty_tile_count": 35001,
+      "logical_tiles_sha256": "fe7cb4dca4d6e029735712b11e3acf8a437a40fbb4da5c814b9b3c702099188a",
+      "tile_count": 38755
+    }
+  },
+  "detail": {
+    "basemap": {
+      "boundaries": 1354,
+      "contours": 0
+    },
+    "topography": {
+      "boundaries": 0,
+      "contours": 77398
+    }
+  },
+  "garmin": {
+    "familyId": 4904,
+    "garminPackageRevision": "2.0.0-r1",
+    "inspection": {
+      "anchorLabels": {
+        "Dana": "Dana",
+        "Wadi Musa": "Wadi Musa"
+      },
+      "bounds": [
+        35.06827354431152,
+        29.443359375,
+        35.771484375,
+        30.805749893188477
+      ],
+      "coastPolygonsByLevel": {
+        "0": {
+          "0x32": 5,
+          "0x54": 6
+        },
+        "1": {
+          "0x32": 3,
+          "0x54": 4
+        },
+        "2": {
+          "0x32": 3,
+          "0x54": 4
+        },
+        "3": {
+          "0x32": 3,
+          "0x54": 4
+        },
+        "4": {
+          "0x32": 3,
+          "0x54": 4
+        }
+      },
+      "contoursByLevel": {
+        "0": {
+          "0x20": 13674,
+          "0x22": 3506
+        },
+        "1": {
+          "0x20": 11333,
+          "0x22": 2918
+        },
+        "2": {
+          "0x22": 2738
+        },
+        "3": {
+          "0x10008": 2460
+        },
+        "4": {}
+      },
+      "lineInstancesAtHighestDetail": {
+        "0x10001": 173,
+        "0x10003": 1,
+        "0x10004": 1,
+        "0x10005": 37,
+        "0x10006": 165,
+        "0x1000a": 13,
+        "0x1000b": 24,
+        "0x1000d": 20,
+        "0x14": 16,
+        "0x16": 407,
+        "0x18": 1445,
+        "0x1c": 158,
+        "0x1e": 60,
+        "0x1f": 12,
+        "0x2": 45,
+        "0x20": 13674,
+        "0x22": 3506,
+        "0x3": 58,
+        "0x4": 40,
+        "0x6": 2569,
+        "0x7": 256,
+        "0xa": 836
+      },
+      "logicalCombinedSHA256": "a4af13b0019945ad2740f4d2c79ddb6efb19315be0a7663a5d26a13bcbcf26ed",
+      "logicalHashNote": "Internal file names, sizes and payloads; only CommonHeader creation-date bytes 14..20 are zeroed for hashing. IMG archive headers are excluded. Output bytes are never modified.",
+      "logicalTileSHA256": {
+        "49040001.img": "3c961772b82898a7c386cbfcb064f6e934864bb150bc12cdced53aeded570a06",
+        "49040002.img": "d0be5031a637bf4edea6be36914dd96d79aae80477c268e47d40f1c5c391e592",
+        "49040003.img": "3c5a29577651fe34686cbe01c90a62a0e142364586daaae3ae380657047d5489"
+      },
+      "pointInstancesAtHighestDetail": {
+        "0x10001": 6,
+        "0x10002": 252,
+        "0x10003": 39,
+        "0x10004": 4,
+        "0x10006": 487,
+        "0x2f0b": 40,
+        "0x600": 3,
+        "0x6616": 145,
+        "0x800": 54,
+        "0xb00": 2,
+        "0xc00": 116
+      },
+      "polygonInstancesAtHighestDetail": {
+        "0x10101": 65,
+        "0x10104": 59,
+        "0x10106": 1,
+        "0x10109": 872,
+        "0x1010a": 93,
+        "0x13": 2642,
+        "0x32": 5,
+        "0x3c": 58,
+        "0x50": 12,
+        "0x54": 6
+      },
+      "routing": false,
+      "subfileBytes": {
+        "DEM": 5322588,
+        "LBL": 25601,
+        "MPS": 391,
+        "RGN": 4952708,
+        "SRT": 912,
+        "TRE": 64404,
+        "TYP": 3120
+      },
+      "tiles": 3
+    },
+    "output": {
+      "bytes": 10407936,
+      "path": "regions/jordan-trail-dana-petra-wadi-rum/garmin/dist/OpenBareMap-Jordan-Trail-Dana-Petra-Wadi-Rum.img",
+      "sha256": "9bf1fe0f3d398f9a1b21fb866f4147bb3f2b406039c1be3f9fdf02c94f0457d2"
+    },
+    "routing": false,
+    "status": "compiled and structurally inspected; hardware rendering pending"
+  },
+  "geometryProcessing": {
+    "contours": 12548,
+    "grid": {
+      "grid_10km": 20,
+      "grid_1km": 204
+    },
+    "landcover": {
+      "empty_source_areas": [],
+      "features": 818,
+      "retained": 17,
+      "smoothed": 801
+    }
+  },
+  "irelandGarminPackageRevision": "2.0.1-trail-detail-r1",
+  "irelandPreserved": true,
+  "labelGlyphs": {
+    "Open Sans Bold": true,
+    "Open Sans Regular": true,
+    "Open Sans Semibold": true
+  },
+  "landBackground": {
+    "al-humeima": {
+      "coordinate": [
+        35.344,
+        29.955
+      ],
+      "verifiedZooms": [
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    },
+    "dana": {
+      "coordinate": [
+        35.611,
+        30.675
+      ],
+      "verifiedZooms": [
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    },
+    "feynan": {
+      "coordinate": [
+        35.50923,
+        30.63956
+      ],
+      "verifiedZooms": [
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    },
+    "little-petra": {
+      "coordinate": [
+        35.45,
+        30.375
+      ],
+      "verifiedZooms": [
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    },
+    "petra": {
+      "coordinate": [
+        35.478,
+        30.322
+      ],
+      "verifiedZooms": [
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    },
+    "wadi-rum": {
+      "coordinate": [
+        35.42,
+        29.576
+      ],
+      "verifiedZooms": [
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    }
+  },
+  "packages": {
+    "android": {
+      "checkedFiles": 52,
+      "nativeDeviceRenderingTested": false,
+      "sourceFiles": {
+        "basemap": "maps/basemap.mbtiles",
+        "coast": "maps/coast.mbtiles",
+        "hillshade": "maps/hillshade.mbtiles",
+        "topography": "maps/topography.mbtiles",
+        "utm-grid": "maps/grid.mbtiles"
+      }
+    },
+    "ios": {
+      "checkedFiles": 55,
+      "nativeDeviceRenderingTested": false,
+      "sourceFiles": {
+        "basemap": "maps/basemap.mbtiles",
+        "coast": "maps/coast.mbtiles",
+        "hillshade": "maps/hillshade.mbtiles",
+        "topography": "maps/topography.mbtiles",
+        "utm-grid": "maps/grid.mbtiles"
+      }
+    }
+  },
+  "region": "jordan-trail-dana-petra-wadi-rum",
+  "routeCorridor": {
+    "bufferCRS": "EPSG:32636",
+    "bufferMetres": 12000,
+    "coverageSquareKilometres": 4143.7,
+    "routeLengthKilometres": 206.72
+  },
+  "status": "automated checks passed; visual and hardware acceptance pending"
+}

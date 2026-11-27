@@ -1,0 +1,161 @@
+{
+  "appBundleName": "Aoraki-Mount-Cook-Westland",
+  "bounds": [
+    169.75,
+    -43.8,
+    170.45,
+    -43.2
+  ],
+  "clipBasemap": true,
+  "clipSource": true,
+  "clipTerrainToBounds": true,
+  "coastContextBounds": [
+    168,
+    -45,
+    172,
+    -42
+  ],
+  "contourIntervalMetres": 20,
+  "coverage": "A cross-divide Southern Alps edition covering Aoraki / Mount Cook and Westland Tai Poutini, including Hooker Valley, Mueller Hut, Tasman Glacier, Fox Glacier and Franz Josef Glacier approaches.",
+  "destinationLabels": {
+    "aoraki-village": "Aoraki / Mount Cook Village",
+    "fox-glacier": "Fox Glacier",
+    "franz-josef": "Franz Josef / Waiau",
+    "hooker-valley": "Hooker Valley",
+    "island": "Aoraki / Mount Cook & Westland",
+    "mueller-hut": "Mueller Hut",
+    "tasman-glacier": "Tasman Glacier"
+  },
+  "destinations": {
+    "aoraki-village": [
+      170.097,
+      -43.735,
+      13
+    ],
+    "fox-glacier": [
+      170.017,
+      -43.465,
+      13
+    ],
+    "franz-josef": [
+      170.181,
+      -43.387,
+      13
+    ],
+    "hooker-valley": [
+      170.091,
+      -43.705,
+      13
+    ],
+    "island": [
+      170.1,
+      -43.5,
+      9
+    ],
+    "mueller-hut": [
+      170.064,
+      -43.721,
+      13
+    ],
+    "tasman-glacier": [
+      170.177,
+      -43.61,
+      13
+    ]
+  },
+  "garminContextBounds": [
+    169.75,
+    -43.8,
+    170.45,
+    -43.2
+  ],
+  "garminFamilyId": 4902,
+  "garminFilename": "OpenBareMap-Aoraki-Mount-Cook-Westland.img",
+  "garminPackageRevision": "2.0.0-r1",
+  "garminTileStartId": 49020001,
+  "garminUseSourceOutline": true,
+  "garminVersionedDelivery": true,
+  "gridCRS": "EPSG:32759",
+  "gridExtent": [
+    390000,
+    460000,
+    5140000,
+    5220000
+  ],
+  "gridName": "WGS 84 / UTM zone 59S",
+  "gridSource": "utm-grid",
+  "id": "aoraki-mount-cook-westland",
+  "ignoreSourceHeaderBounds": true,
+  "inspectionNames": [
+    "Aoraki / Mount Cook",
+    "Franz Josef"
+  ],
+  "label": "Aoraki / Mount Cook & Westland",
+  "labelGlyphs": "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz",
+  "mapVersion": "2.0.0",
+  "maxzoom": 14,
+  "minorWaterwayMinzoom": 10,
+  "minzoom": 4,
+  "name": "OpenBareMap Aoraki / Mount Cook & Westland",
+  "nativeLanguage": "en",
+  "optionalBasemapLayers": [
+    "ferry",
+    "island_name",
+    "cycling_route",
+    "railway",
+    "station",
+    "hiking_route",
+    "boundary"
+  ],
+  "permanentIce": true,
+  "permanentIceSourceNote": "Mapped glaciers and permanent snowfields: OpenStreetMap contributors; corroborated against New Zealand Department of Conservation park and track information.",
+  "projectedCRS": "EPSG:32759",
+  "repairClippedCoastline": true,
+  "requireBogFeatures": false,
+  "requiredPermanentIce": [
+    "glacier"
+  ],
+  "sourceBaseURL": "https://download.geofabrik.de/australia-oceania/new-zealand/",
+  "sourceCacheRegion": "fiordland",
+  "sourceDate": "2026-11-19",
+  "sourceSlugs": [
+    "new-zealand"
+  ],
+  "styleRevision": "2.0.0-aoraki-mount-cook-westland-r1",
+  "terrainAttribution": "Copernicus DEM GLO-30 \u00b7 European Union / ESA \u00b7 DLR / Airbus",
+  "terrainBounds": [
+    169,
+    -44,
+    171,
+    -43
+  ],
+  "terrainNotice": "Aoraki / Mount Cook & Westland elevation: Copernicus DEM GLO-30 Public (AWS 2021 release).\n\nproduced using Copernicus WorldDEM-30 \u00a9 DLR e.V. 2010-2014 and \u00a9 Airbus Defence and Space GmbH 2014-2018 provided under COPERNICUS by the European Union and ESA; all rights reserved\n\nThe organisations in charge of the Copernicus programme by law or by delegation do not incur any liability for any use of the Copernicus WorldDEM-30.\n\nLicense: https://dataspace.copernicus.eu/sites/default/files/media/files/2025-06/copernicus_contributing_mission_data_access_v2_cop_dem_licenses.pdf\nSource: https://registry.opendata.aws/copernicus-dem/\nVertical datum: EGM2008 orthometric metres. Native approximately 30 m cells are bilinearly resampled to point-aligned Int16 HGT for the shared terrain pipeline. Ocean-only cells absent from the official public inventory are zero.\n",
+  "terrainProvider": "copernicus-glo30",
+  "townlands": false,
+  "validationAnchors": {
+    "aoraki-village": [
+      170.097,
+      -43.735
+    ],
+    "fox-glacier": [
+      170.017,
+      -43.465
+    ],
+    "franz-josef": [
+      170.181,
+      -43.387
+    ],
+    "hooker-valley": [
+      170.091,
+      -43.705
+    ],
+    "mueller-hut": [
+      170.064,
+      -43.721
+    ],
+    "tasman-glacier": [
+      170.177,
+      -43.61
+    ]
+  }
+}

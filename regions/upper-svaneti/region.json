@@ -1,0 +1,171 @@
+{
+  "appBundleName": "Upper-Svaneti",
+  "bounds": [
+    42.2,
+    42.65,
+    43.35,
+    43.25
+  ],
+  "clipBasemap": true,
+  "clipSource": true,
+  "clipTerrainToBounds": true,
+  "coastContextBounds": [
+    41,
+    41,
+    45,
+    45
+  ],
+  "contourIntervalMetres": 20,
+  "copernicusPaddingFallback": "mapzen",
+  "coverage": "Upper Svaneti from Mestia to Ushguli, including the villages, connecting trails, Chalaadi and Shkhara glacier valleys and principal road approaches.",
+  "destinationLabels": {
+    "adishi": "Adishi",
+    "chalaadi-glacier": "Chalaadi Glacier",
+    "ipral\u0131": "Iprali",
+    "island": "Upper Svaneti",
+    "mestia": "Mestia",
+    "shkhara-glacier": "Shkhara Glacier",
+    "ushguli": "Ushguli",
+    "zhabeshi": "Zhabeshi"
+  },
+  "destinations": {
+    "adishi": [
+      42.99,
+      42.998,
+      13
+    ],
+    "chalaadi-glacier": [
+      42.69,
+      43.117,
+      13
+    ],
+    "ipral\u0131": [
+      43.063,
+      42.938,
+      13
+    ],
+    "island": [
+      42.775000000000006,
+      42.95,
+      9
+    ],
+    "mestia": [
+      42.727,
+      43.045,
+      13
+    ],
+    "shkhara-glacier": [
+      43.106,
+      42.974,
+      13
+    ],
+    "ushguli": [
+      43.017,
+      42.916,
+      13
+    ],
+    "zhabeshi": [
+      42.853,
+      43.039,
+      13
+    ]
+  },
+  "garminContextBounds": [
+    42.2,
+    42.65,
+    43.35,
+    43.25
+  ],
+  "garminFamilyId": 4903,
+  "garminFilename": "OpenBareMap-Upper-Svaneti.img",
+  "garminPackageRevision": "2.0.0-r1",
+  "garminTileStartId": 49030001,
+  "garminUseSourceOutline": true,
+  "garminVersionedDelivery": true,
+  "gridCRS": "EPSG:32638",
+  "gridExtent": [
+    270000,
+    370000,
+    4720000,
+    4800000
+  ],
+  "gridName": "WGS 84 / UTM zone 38N",
+  "gridSource": "utm-grid",
+  "id": "upper-svaneti",
+  "ignoreSourceHeaderBounds": true,
+  "inspectionNames": [
+    "Mestia",
+    "Ushguli"
+  ],
+  "label": "Upper Svaneti",
+  "labelGlyphs": "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz\u10d0\u10d1\u10d2\u10d3\u10d4\u10d5\u10d6\u10d7\u10d8\u10d9\u10da\u10db\u10dc\u10dd\u10de\u10df\u10e0\u10e1\u10e2\u10e3\u10e4\u10e5\u10e6\u10e7\u10e8\u10e9\u10ea\u10eb\u10ec\u10ed\u10ee\u10ef\u10f0",
+  "mapVersion": "2.0.0",
+  "maxzoom": 14,
+  "minorWaterwayMinzoom": 10,
+  "minzoom": 4,
+  "name": "OpenBareMap Upper Svaneti",
+  "nativeLanguage": "ka",
+  "optionalBasemapLayers": [
+    "ferry",
+    "island_name",
+    "cycling_route",
+    "railway",
+    "station",
+    "hiking_route",
+    "boundary"
+  ],
+  "permanentIce": true,
+  "permanentIceSourceNote": "Mapped glaciers and permanent snowfields: OpenStreetMap contributors; named valleys corroborated against Georgia Travel hiking information.",
+  "projectedCRS": "EPSG:32638",
+  "repairClippedCoastline": true,
+  "requireBogFeatures": false,
+  "requiredPermanentIce": [
+    "glacier"
+  ],
+  "sourceBaseURL": "https://download.geofabrik.de/europe/georgia/",
+  "sourceDate": "2026-11-26",
+  "sourceSlugs": [
+    "georgia"
+  ],
+  "styleRevision": "2.0.0-upper-svaneti-r1",
+  "terrainAttribution": "Copernicus DEM GLO-30 \u00b7 European Union / ESA \u00b7 DLR / Airbus",
+  "terrainBounds": [
+    42,
+    42,
+    44,
+    44
+  ],
+  "terrainNotice": "Upper Svaneti elevation: Copernicus DEM GLO-30 Public (AWS 2021 release).\n\nproduced using Copernicus WorldDEM-30 \u00a9 DLR e.V. 2010-2014 and \u00a9 Airbus Defence and Space GmbH 2014-2018 provided under COPERNICUS by the European Union and ESA; all rights reserved\n\nThe organisations in charge of the Copernicus programme by law or by delegation do not incur any liability for any use of the Copernicus WorldDEM-30.\n\nLicense: https://dataspace.copernicus.eu/sites/default/files/media/files/2025-06/copernicus_contributing_mission_data_access_v2_cop_dem_licenses.pdf\nSource: https://registry.opendata.aws/copernicus-dem/\nVertical datum: EGM2008 orthometric metres. Native approximately 30 m cells are bilinearly resampled to point-aligned Int16 HGT for the shared terrain pipeline. Ocean-only cells absent from the official public inventory are zero.\n",
+  "terrainProvider": "copernicus-glo30",
+  "townlands": false,
+  "validationAnchors": {
+    "adishi": [
+      42.99,
+      42.998
+    ],
+    "chalaadi-glacier": [
+      42.69,
+      43.117
+    ],
+    "ipral\u0131": [
+      43.063,
+      42.938
+    ],
+    "mestia": [
+      42.727,
+      43.045
+    ],
+    "shkhara-glacier": [
+      43.106,
+      42.974
+    ],
+    "ushguli": [
+      43.017,
+      42.916
+    ],
+    "zhabeshi": [
+      42.853,
+      43.039
+    ]
+  }
+}

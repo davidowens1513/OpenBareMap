@@ -1,0 +1,41 @@
+{
+  "regions": {
+    "san-juan-mountains": {
+      "basemap": {
+        "sourceSHA256": "cda556bd9556764d7a81efcb59770aacae7a65708d1d08280342dfee9b4d81df",
+        "bytes": 12448596,
+        "sha256": "8f00f531fc24bf6214ebba0698bb7dd82f74e4bed6bccb57e5f2cc9ea2f288a3",
+        "tiles": 1531
+      },
+      "grid": {
+        "sourceSHA256": "59a7af6ff3b6c95ee6cf5e69a2bebb1e622d40b6941d8b21658193ac719a5277",
+        "bytes": 476049,
+        "sha256": "2bfe37313cfb7c66445f291cd3d60925b8b930dc1b66bd95a624ba961f0a7fef",
+        "tiles": 1519
+      },
+      "hillshade": {
+        "sourceSHA256": "c994d6ab570928c603994db859c0613cf1b998dbe4b5d9983087d718745a6ee7",
+        "bytes": 4927722,
+        "sha256": "179b41ae869a312704df350464903f1c5d64180a20e38cd6091c57ceb786567c",
+        "tiles": 126
+      },
+      "topography": {
+        "sourceSHA256": "e8292b9c94bbb412900c671677ae065d3f01869b70f108631551d2a32c4ffdf4",
+        "bytes": 31730033,
+        "sha256": "7a7e52599bac394a8bc0963a76300633fcf808924847a48047effbd3151839f1",
+        "tiles": 56822
+      },
+      "coast": {
+        "sourceSHA256": "49153bb8fbaba78179bca7c96c3e9fefee566e4bbb47877ed637090dc5a60841",
+        "bytes": 25095,
+        "sha256": "521ed10138c5ba4c380ea45e45af001562de5893946d3fd9c69fc40770f449d6",
+        "tiles": 3694
+      }
+    }
+  },
+  "pmtilesPython": "3.8.1",
+  "pmtilesJS": "4.5.0",
+  "librarySHA256": "caf981bc46f6327ee7e65d5dc964d89d38a69f60edca2bd4c5c890c21b554c6c",
+  "dataOrigin": "https://downloads.appsbyonzy.dev/OpenBareMap/san-juan-mountains/2.0.0/preview",
+  "scope": "Complete selected map tiles; no regional or zoom sampling."
+}

@@ -1,0 +1,41 @@
+{
+  "regions": {
+    "cordillera-huayhuash": {
+      "basemap": {
+        "sourceSHA256": "7369cd9d26e3426393b21fd775d5c2bbb7245044bf4bff92e2ad57f38583f1d9",
+        "bytes": 5404484,
+        "sha256": "1055cb7a1e548339cb63f5bd4b8bd82c9385d7ca3135c3783745f1926ee6a08f",
+        "tiles": 2181
+      },
+      "grid": {
+        "sourceSHA256": "43dfc07d522def51a8ee8a16412982d18ade6079aac577c3a7724cd1ec821619",
+        "bytes": 783792,
+        "sha256": "1d810c0938b87cd84ed22fcddd0005ac2c5ae2616a2cc208517172d287b9fd76",
+        "tiles": 2347
+      },
+      "hillshade": {
+        "sourceSHA256": "720c7dae6691889b5c24dd97c473efa39529ec1b5097a00ecef8c7c84605c656",
+        "bytes": 7988203,
+        "sha256": "26085afe9553c9ad37a80220907b685fc28aca79a0f64677b6b3e85283465e46",
+        "tiles": 189
+      },
+      "topography": {
+        "sourceSHA256": "a018c04345c6575666d2ca47760f93f8038eb24738655bc168b79bdb97d328f0",
+        "bytes": 77459538,
+        "sha256": "aeda5d917c52981002573270b3a6b7ecffcd0d3906d1366aecfbacc7ddcbd8a4",
+        "tiles": 38307
+      },
+      "coast": {
+        "sourceSHA256": "d38a4fbfe9bf5b81710e88f27a665e612fe3ad5e75a489d574016e418b787a13",
+        "bytes": 183708,
+        "sha256": "66a4ce6c2388576db69cbeab8e4d42e362f389d0fd1b6cb54a057b9b005f0fb6",
+        "tiles": 2525
+      }
+    }
+  },
+  "pmtilesPython": "3.8.1",
+  "pmtilesJS": "4.5.0",
+  "librarySHA256": "caf981bc46f6327ee7e65d5dc964d89d38a69f60edca2bd4c5c890c21b554c6c",
+  "dataOrigin": "https://downloads.appsbyonzy.dev/OpenBareMap/cordillera-huayhuash/2.0.0/preview",
+  "scope": "Complete selected map tiles; no regional or zoom sampling."
+}

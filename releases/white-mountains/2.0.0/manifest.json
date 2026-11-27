@@ -1,0 +1,106 @@
+{
+  "acceptance": "Automated checks only; see validation and visual-review records for actual reviewed scope.",
+  "coverage": "The White Mountains, including the Presidential Range, Franconia Ridge, Appalachian Mountain Club huts and the connecting trail and road approaches.",
+  "datasets": {
+    "basemap": {
+      "bytes": 15859712,
+      "path": "releases/white-mountains/2.0.0/maps/basemap.mbtiles",
+      "sha256": "6170e03fcfae12b116072950523a4fba493a113c7ba24555eb9e30f96c2cf48e",
+      "validation": {
+        "empty_tile_count": 9,
+        "logical_tiles_sha256": "fab14008c4bcc20546a3b222efa3a4ec7f9e969fe7a9dc9e266cdd6735766ff6",
+        "tile_count": 2258
+      }
+    },
+    "grid": {
+      "bytes": 798720,
+      "path": "releases/white-mountains/2.0.0/maps/grid.mbtiles",
+      "sha256": "832982f2ac8c9025c5499fce68ace12c47b098f51e34c40e28d6b86da716672e",
+      "validation": {
+        "empty_tile_count": 0,
+        "logical_tiles_sha256": "b252f25239c7f1c96159f7f159595e39e26a4e30b7c64188b7b528384b71588b",
+        "tile_count": 2268
+      }
+    },
+    "hillshade": {
+      "bytes": 6295552,
+      "path": "releases/white-mountains/2.0.0/maps/hillshade.mbtiles",
+      "sha256": "7055d0ade0aed93f373ce372fbb83088bf77ea87a5abbd75785e258d7ac047f9",
+      "validation": {
+        "empty_tile_count": 0,
+        "logical_tiles_sha256": "9c6d67f2596562a182e8078f68d57d39c0e1e92f74208b06bd700c3247444d5c",
+        "tile_count": 159
+      }
+    },
+    "topography": {
+      "bytes": 25710592,
+      "path": "releases/white-mountains/2.0.0/maps/topography-context.mbtiles",
+      "sha256": "e4d4cfa8ecdbea3b7cc8763bfac3bff167c8030baffe76f5e5c09df5b0a1403d",
+      "validation": {
+        "empty_tile_count": 39926,
+        "logical_tiles_sha256": "b00665e0d8a0553c7040d5993fed15bf10a07094380c8cd311c049cbe179d0c6",
+        "tile_count": 44890
+      }
+    }
+  },
+  "garmin": {
+    "bytes": 12288000,
+    "path": "regions/white-mountains/garmin/dist/OpenBareMap-White-Mountains.img",
+    "sha256": "d326c662ddd7f7ab87d5f35fb4b76cf0e4035d8212749afbccea766f5687f9ab"
+  },
+  "geometryReport": {
+    "path": "build/white-mountains-geometry/geometry-report.json",
+    "sha256": "43975f01baf768da44db575f59d8ff225a5d16847b55dd08643c09fd67542470"
+  },
+  "hostAppsModified": false,
+  "mapVersion": "2.0.0",
+  "osm": {
+    "bytes": 8061705,
+    "operation": "Complete-feature bbox extraction with nested relation references",
+    "path": "data/regions/white-mountains/new-hampshire-261126.osm.clipped.osm.pbf",
+    "replicationTimestamp": "2026-11-26T21:21:01Z",
+    "sha256": "0905327e6d9b6a398f3fe1aab0a58ab73407170ad08d695f1496dd6e156bec60",
+    "snapshot_date": "2026-11-26",
+    "url": "https://download.geofabrik.de/north-america/us/new-hampshire/new-hampshire-261126.osm.pbf"
+  },
+  "packages": {
+    "android": {
+      "archive": {
+        "bytes": 53021636,
+        "path": "regions/white-mountains/android/OpenBareMap-Android.zip",
+        "sha256": "0cd1b4a2f4d29433136e49ddff3322259e8737a9bc8fde89c2a7521b17c0c934"
+      },
+      "checksumsSHA256": "d84dbab6b4474888646fd182c737d945df053bd4baf8e0bb779fec44c420144f",
+      "manifestSHA256": "cd231239de99b1def887cfc82e2109bb9bfaad9cb8b62efaf494f5f6be60c603",
+      "path": "regions/white-mountains/android",
+      "validationSHA256": "80df5c4c6e4d22fa0d292bd39152218c2661ec3f2eb9a5f393d2e1e8d6cfb6bd"
+    },
+    "ios": {
+      "checksumsSHA256": "0d65f44fc9b5ae8315b2b7dfc933862d1b95d1027c0039bf6ead82c3aeeb9ead",
+      "manifestSHA256": "3ea1663225d6535fdba5ffd87b113da15b01619ba427679b21b99490a5a76b78",
+      "path": "regions/white-mountains/ios",
+      "validationSHA256": "62ad7fe7bacf5764e7b4929e419bcbc137e7fe293e73fcb202f9f90ab0abc503"
+    }
+  },
+  "pythonRuntime": {
+    "packages": {
+      "Pillow": "12.3.0",
+      "certifi": "2026.10.23",
+      "charset-normalizer": "3.5.2",
+      "idna": "3.20",
+      "numpy": "2.5.4",
+      "osmium": "4.3.2",
+      "pyproj": "3.8.0",
+      "requests": "2.34.2",
+      "shapely": "2.2.0",
+      "urllib3": "2.8.0"
+    },
+    "platform": "macOS-27.2.1-arm64-arm-64bit-Mach-O",
+    "python": "3.14.5 (main, May 10 2026, 10:21:34) [Clang 21.0.0 (clang-2100.0.123.102)]",
+    "requirementsSHA256": "427f12ff8b49bfebac0a7d453c2f65bd15d6695584b18e6ecee1fdfeed20a36c"
+  },
+  "region": "white-mountains",
+  "styleSHA256": "85d551294debf0626f8378e117e2e67afb9d447a272cff781859801a36a9fec8",
+  "terrainLockSHA256": "a663206ebc3755cf64371c71142d175c3ba64eb9db6f94bf2a12d7d6bc1494ac",
+  "validation": "validation.json"
+}

@@ -1,0 +1,29 @@
+{
+  "accessed_utc": "2026-11-27T14:15:09.350164+00:00",
+  "inputs": [
+    {
+      "bytes": 72858169,
+      "path": "data/regions/white-mountains/new-hampshire-261126.osm.pbf",
+      "replicationTimestamp": "2026-11-26T21:21:01Z",
+      "sha256": "5ef1d990503a08041809f0c2c4986702e8640191409d6e35f2aa43fa5f75e263",
+      "url": "https://download.geofabrik.de/north-america/us/new-hampshire/new-hampshire-261126.osm.pbf"
+    }
+  ],
+  "osm": {
+    "bytes": 8061705,
+    "operation": "Complete-feature bbox extraction with nested relation references",
+    "path": "data/regions/white-mountains/new-hampshire-261126.osm.clipped.osm.pbf",
+    "replicationTimestamp": "2026-11-26T21:21:01Z",
+    "sha256": "0905327e6d9b6a398f3fe1aab0a58ab73407170ad08d695f1496dd6e156bec60",
+    "snapshot_date": "2026-11-26",
+    "url": "https://download.geofabrik.de/north-america/us/new-hampshire/new-hampshire-261126.osm.pbf"
+  },
+  "polygons": [
+    {
+      "bytes": 13263,
+      "path": "data/regions/white-mountains/new-hampshire.poly",
+      "sha256": "669d3240d1f8aa93ab4d28b8e1be623c4950dcc30d15ef3bc9f6942fce64ef37",
+      "url": "https://download.geofabrik.de/north-america/us/new-hampshire/new-hampshire.poly"
+    }
+  ]
+}

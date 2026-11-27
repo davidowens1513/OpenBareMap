@@ -19,7 +19,8 @@ def download(url, path):
     path.parent.mkdir(parents=True, exist_ok=True)
     if not path.exists():
         part = path.with_name(path.name+'.part')
-        with urllib.request.urlopen(url, timeout=120) as src, part.open('wb') as out:
+        request = urllib.request.Request(url, headers={'User-Agent': 'OpenBareMap/2.0 (+https://openbaremap.org)'})
+        with urllib.request.urlopen(request, timeout=120) as src, part.open('wb') as out:
             shutil.copyfileobj(src, out)
         part.rename(path)
     return {'path': str(path.relative_to(ROOT)), 'url': url, 'bytes': path.stat().st_size, 'sha256': digest(path)}

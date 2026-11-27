@@ -1,0 +1,32 @@
+{
+  "areaSquareDegrees": 0.5400000000000047,
+  "bounds": [
+    -71.95,
+    43.85,
+    -71.05,
+    44.45
+  ],
+  "entireRequestedFootprintCovered": true,
+  "exactFootprint": null,
+  "inputs": [
+    {
+      "bytes": 13263,
+      "path": "data/regions/white-mountains/new-hampshire.poly",
+      "sha256": "669d3240d1f8aa93ab4d28b8e1be623c4950dcc30d15ef3bc9f6942fce64ef37",
+      "url": "https://download.geofabrik.de/north-america/us/new-hampshire/new-hampshire.poly"
+    }
+  ],
+  "knownDestinationsCovered": [
+    "crawford-notch",
+    "franconia-notch",
+    "gorham",
+    "island",
+    "lafayette",
+    "lincoln",
+    "mount-washington",
+    "pinkham-notch"
+  ],
+  "operation": "Requested rectangular crop; source outlines cover all destination anchors",
+  "polygons": 1,
+  "sha256": "81842b458cdd125cf8bc888da6bd68f823d4b192727373350696465b74637337"
+}

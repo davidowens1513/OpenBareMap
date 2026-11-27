@@ -1,0 +1,41 @@
+{
+  "regions": {
+    "aoraki-mount-cook-westland": {
+      "basemap": {
+        "sourceSHA256": "96634db10d99f58b5bdfa48d1aebfa0c5c54e7dc902a79023014be63bedbea02",
+        "bytes": 5285172,
+        "sha256": "dfd9172489ae8044641862a69acb35b94d2888e6c5f14787ac1cf7bc0c8b2fca",
+        "tiles": 1711
+      },
+      "grid": {
+        "sourceSHA256": "b6065c85b4386a1156bb4f457c26263791a0c4609e619f4af119d9b75be3d2be",
+        "bytes": 495092,
+        "sha256": "c04519ffe02fdad8c491a198971729c042297b09b99f0b16285a4cc80a4475f3",
+        "tiles": 1701
+      },
+      "hillshade": {
+        "sourceSHA256": "10a0309d9a835b11f3e932ac2cf8297e3f68e646a9a89c40ce3a9c36417eb349",
+        "bytes": 4567993,
+        "sha256": "60326870be864795e270a27eff9823cd9cc82a22a3795537c91b7fa4189b39dc",
+        "tiles": 119
+      },
+      "topography": {
+        "sourceSHA256": "cc4588d1c2cac2d85fc180d34dc8ae5f51678bdcb7f9cb3e0655de7897323674",
+        "bytes": 33221138,
+        "sha256": "cf798c2af6689de732013ff132584a612419c703ed2cf9504057a3003a1f427d",
+        "tiles": 30711
+      },
+      "coast": {
+        "sourceSHA256": "870ae5a79b1c234f7807d96f474775882b437e93c8e8bde90fd1542502782502",
+        "bytes": 94602,
+        "sha256": "4ebb8420042c4e68c1c8731550da1f004f8657f6de979583913660bf8d2760af",
+        "tiles": 2065
+      }
+    }
+  },
+  "pmtilesPython": "3.8.1",
+  "pmtilesJS": "4.5.0",
+  "librarySHA256": "caf981bc46f6327ee7e65d5dc964d89d38a69f60edca2bd4c5c890c21b554c6c",
+  "dataOrigin": "https://downloads.appsbyonzy.dev/OpenBareMap/aoraki-mount-cook-westland/2.0.0/preview",
+  "scope": "Complete selected map tiles; no regional or zoom sampling."
+}

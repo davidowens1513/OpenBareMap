@@ -102,7 +102,10 @@ def main(region, geometry=None):
     copyright_text = (ROOT/'garmin/copyright.txt').read_text().replace('Ireland',p['label']).replace('Townlands','Inherited font and pattern assets')
     copyright_file.write_text(copyright_text.rstrip() + '\n')
     if p.get('terrainNotice'):copyright_file.write_text(copyright_file.read_text().replace('Terrain Tiles / Mapzen composite elevation; see distributed attribution',p['terrainNotice']))
-    options=['--max-jobs=2','--style-file='+str(style),'--family-id='+str(p['garminFamilyId']),'--product-id=1','--family-name='+p['name'],'--series-name=OpenBareMap Garmin 2.0','--description='+p['name']+' 2.0','--code-page=1252','--lower-case','--name-tag-list=name:en,name,name:'+p.get('nativeLanguage','cy'),'--levels=0:24,1:23,2:22,3:20,4:18,5:16','--gmapsupp','--transparent','--draw-priority=25','--add-pois-to-areas','--dem='+str(work/'hgt'),'--dem-poly='+str(polygon),'--dem-dists=3312,3312,13248,26512,53024,106048','--dem-interpolation=bilinear','--copyright-file='+str(copyright_file)]
+    if p.get('permanentIceSourceNote'):
+        copyright_file.write_text(copyright_file.read_text().rstrip()+'\n\n'+p['permanentIceSourceNote']+'\n')
+    native_name=p.get('garminName',p['name'].replace('/','-'))
+    options=['--max-jobs=2','--style-file='+str(style),'--family-id='+str(p['garminFamilyId']),'--product-id=1','--family-name='+native_name,'--series-name=OpenBareMap Garmin 2.0','--description='+native_name+' 2.0','--code-page=1252','--lower-case','--name-tag-list=name:en,name,name:'+p.get('nativeLanguage','cy'),'--levels=0:24,1:23,2:22,3:20,4:18,5:16','--gmapsupp','--transparent','--draw-priority=25','--add-pois-to-areas','--dem='+str(work/'hgt'),'--dem-poly='+str(polygon),'--dem-dists=3312,3312,13248,26512,53024,106048','--dem-interpolation=bilinear','--copyright-file='+str(copyright_file)]
     if p.get('coverageBoundary'):
         credit=p.get('boundaryAttribution','Fuente: Organismo Autónomo Parques Nacionales (MITECO/OAPN), CC BY 4.0')
         topic = 'Map coverage' if p.get('clipToCoverage') else 'National park boundary'
@@ -124,7 +127,7 @@ def main(region, geometry=None):
     split=work/'split'
     if not split.exists():
         split.mkdir()
-        command=[java_path(),'-Xmx6g','-jar',str(ROOT/'garmin/tools/splitter-r654/splitter.jar'),'--mapid='+str(p['garminTileStartId']),'--description='+p['name'],'--max-nodes=1000000','--max-threads=2','--keep-complete=true','--output=pbf','--polygon-file='+str(polygon),'--output-dir='+str(split),*(['--ignore-osm-bounds=true'] if p.get('ignoreSourceHeaderBounds',p.get('clipSource')) else []),str(work/'combined.osm.pbf')]
+        command=[java_path(),'-Xmx6g','-jar',str(ROOT/'garmin/tools/splitter-r654/splitter.jar'),'--mapid='+str(p['garminTileStartId']),'--description='+native_name,'--max-nodes=1000000','--max-threads=2','--keep-complete=true','--output=pbf','--polygon-file='+str(polygon),'--output-dir='+str(split),*(['--ignore-osm-bounds=true'] if p.get('ignoreSourceHeaderBounds',p.get('clipSource')) else []),str(work/'combined.osm.pbf')]
         write(work/'splitter-record.json',{'command':command,'combinedSHA256':merged['combinedSHA256'],'coverageSHA256':digest(polygon),'ignoreSourceHeaderBounds':bool(p.get('ignoreSourceHeaderBounds',p.get('clipSource')))})
         run(command,work/'splitter.log')
     elif not (split/'template.args').exists():raise ValueError('Incomplete split stage')
@@ -138,7 +141,7 @@ def main(region, geometry=None):
     source_tiles=sorted(split.glob('[0-9]*.osm.pbf'))
     if not source_tiles:raise ValueError('No split sources')
     compile_args=work/'compile-tiles.args'
-    expected=write_tile_args(source_tiles,compile_args,region,p['name'])
+    expected=write_tile_args(source_tiles,compile_args,region,native_name)
     compile_dir=work/'compile'
     if not compile_dir.exists():
         compile_dir.mkdir();command=[java_path(),'-Xmx6g','-jar',str(ROOT/'garmin/tools/mkgmap-r4924/mkgmap.jar'),'--output-dir='+str(compile_dir),*options,'-c',str(compile_args),str(style/('OBM'+str(p['garminFamilyId'])+'.txt'))]

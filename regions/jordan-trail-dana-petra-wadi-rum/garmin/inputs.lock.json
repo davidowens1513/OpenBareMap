@@ -1,0 +1,20 @@
+{
+  "inputs": [
+    {
+      "path": "regions/jordan-trail-dana-petra-wadi-rum/garmin/inputs/contours.geojson.gz",
+      "sha256": "00f303facc2c2411c569e67a27f5018340363d41b134988586bba9f763eabc81",
+      "uncompressedSHA256": "1b0bcd1ff57551c4eb61cabef5653dcb0e5b4800bc74bd3cfb10789ff821a3d8"
+    },
+    {
+      "path": "regions/jordan-trail-dana-petra-wadi-rum/garmin/inputs/landcover.geojson.gz",
+      "sha256": "b7045e5c98ca264a938f0885d86f1b7466c7fd7eda6d87fe32f639f9e75ed0cf",
+      "uncompressedSHA256": "df4a89aae0316d530c049016b60f0edafea942e1c3444a34daadd315c0f18169"
+    },
+    {
+      "path": "regions/jordan-trail-dana-petra-wadi-rum/garmin/inputs/land.geojson.gz",
+      "sha256": "4022ab3cb2937b8c8eaaaa7dfd5fa2d8df7b2bf21fe9037b5c1f0dc17dfd5df2",
+      "uncompressedSHA256": "8e7b360c2001a09ab720965b24bb729f1bb0260c904b881c72e5834e56861a08"
+    }
+  ],
+  "region": "jordan-trail-dana-petra-wadi-rum"
+}

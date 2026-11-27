@@ -1,0 +1,106 @@
+{
+  "acceptance": "Automated checks only; see validation and visual-review records for actual reviewed scope.",
+  "coverage": "A cross-divide Southern Alps edition covering Aoraki / Mount Cook and Westland Tai Poutini, including Hooker Valley, Mueller Hut, Tasman Glacier, Fox Glacier and Franz Josef Glacier approaches.",
+  "datasets": {
+    "basemap": {
+      "bytes": 6066176,
+      "path": "releases/aoraki-mount-cook-westland/2.0.0/maps/basemap.mbtiles",
+      "sha256": "96634db10d99f58b5bdfa48d1aebfa0c5c54e7dc902a79023014be63bedbea02",
+      "validation": {
+        "empty_tile_count": 223,
+        "logical_tiles_sha256": "f5c602e0eceafd40a772fddebc15015b9061b9d0c43d757988eea3f1cb2faabd",
+        "tile_count": 1711
+      }
+    },
+    "grid": {
+      "bytes": 593920,
+      "path": "releases/aoraki-mount-cook-westland/2.0.0/maps/grid.mbtiles",
+      "sha256": "b6065c85b4386a1156bb4f457c26263791a0c4609e619f4af119d9b75be3d2be",
+      "validation": {
+        "empty_tile_count": 0,
+        "logical_tiles_sha256": "1142a2df3178dd7e856c3bf75920e143a1a89d387ab7389c2ae54a6ad71eb904",
+        "tile_count": 1701
+      }
+    },
+    "hillshade": {
+      "bytes": 4673536,
+      "path": "releases/aoraki-mount-cook-westland/2.0.0/maps/hillshade.mbtiles",
+      "sha256": "10a0309d9a835b11f3e932ac2cf8297e3f68e646a9a89c40ce3a9c36417eb349",
+      "validation": {
+        "empty_tile_count": 0,
+        "logical_tiles_sha256": "98609287d621a73992c7afa91eccbcfd7f05f92b5ee29c1fc7a00bb0dcb54638",
+        "tile_count": 119
+      }
+    },
+    "topography": {
+      "bytes": 35934208,
+      "path": "releases/aoraki-mount-cook-westland/2.0.0/maps/topography-context.mbtiles",
+      "sha256": "cc4588d1c2cac2d85fc180d34dc8ae5f51678bdcb7f9cb3e0655de7897323674",
+      "validation": {
+        "empty_tile_count": 27619,
+        "logical_tiles_sha256": "d464504c122775f5deaeede55c0f3e0881923bedf37f161c9e3a26166f132d3c",
+        "tile_count": 30711
+      }
+    }
+  },
+  "garmin": {
+    "bytes": 11786240,
+    "path": "regions/aoraki-mount-cook-westland/garmin/dist/OpenBareMap-Aoraki-Mount-Cook-Westland.img",
+    "sha256": "3e1f94951a66d3f65e1080f8c8c2bbc4a05893607431114579ee9c3de693d58c"
+  },
+  "geometryReport": {
+    "path": "build/aoraki-mount-cook-westland-geometry/geometry-report.json",
+    "sha256": "90f7e01b3288ada48fb5b451279511d455bb214ee4b5b65d45fb122e9b39704a"
+  },
+  "hostAppsModified": false,
+  "mapVersion": "2.0.0",
+  "osm": {
+    "bytes": 5840112,
+    "operation": "Complete-feature bbox extraction with nested relation references",
+    "path": "data/regions/aoraki-mount-cook-westland/new-zealand-261119.osm.clipped.osm.pbf",
+    "replicationTimestamp": "2026-11-19T21:22:20Z",
+    "sha256": "41c1cfb022abe82b0ca5d85f00605324918be80b7b3fb78f12a495a903cc918f",
+    "snapshot_date": "2026-11-19",
+    "url": "https://download.geofabrik.de/australia-oceania/new-zealand/new-zealand-261119.osm.pbf"
+  },
+  "packages": {
+    "android": {
+      "archive": {
+        "bytes": 51173597,
+        "path": "regions/aoraki-mount-cook-westland/android/OpenBareMap-Android.zip",
+        "sha256": "2cc387806f0c0d5131c13447bd8b73d6b3c97fa66e65fcc32158c8d0515bac5f"
+      },
+      "checksumsSHA256": "564f17980d625262c56f6bce66cb3180c16c180a98d98dbe810c0194e5190673",
+      "manifestSHA256": "36fe08b497ade5fd0dbb82059daffa40f3220e1817df3b9be911878c3f96a419",
+      "path": "regions/aoraki-mount-cook-westland/android",
+      "validationSHA256": "0385c360dc4af6dfb6ab8d6b9cae7ba3b57b10a2cfa0c4d6c223d553b7a99efb"
+    },
+    "ios": {
+      "checksumsSHA256": "7f86a573b6d7b9e9f3310119a123b3f6a25507e8ab52e8ea5cd2adf66f30bbb8",
+      "manifestSHA256": "d885c9643e6b6aad63e0d0cfd964d451476d02e3661f869de636ae911f0d071a",
+      "path": "regions/aoraki-mount-cook-westland/ios",
+      "validationSHA256": "f63fbd917c45edd8054a81b16b271680211f6bae6da07cef229d76691e714e30"
+    }
+  },
+  "pythonRuntime": {
+    "packages": {
+      "Pillow": "12.3.0",
+      "certifi": "2026.10.23",
+      "charset-normalizer": "3.5.2",
+      "idna": "3.20",
+      "numpy": "2.5.4",
+      "osmium": "4.3.2",
+      "pyproj": "3.8.0",
+      "requests": "2.34.2",
+      "shapely": "2.2.0",
+      "urllib3": "2.8.0"
+    },
+    "platform": "macOS-27.2.1-arm64-arm-64bit-Mach-O",
+    "python": "3.14.5 (main, May 10 2026, 10:21:34) [Clang 21.0.0 (clang-2100.0.123.102)]",
+    "requirementsSHA256": "427f12ff8b49bfebac0a7d453c2f65bd15d6695584b18e6ecee1fdfeed20a36c"
+  },
+  "region": "aoraki-mount-cook-westland",
+  "styleSHA256": "396fe7658f14fdefb18347d3e5ef23fa266621571daf0369c3aa43f2143622f1",
+  "terrainLockSHA256": "25cb9e6ea49011534e4560e5f6078afac466bf7256a8d3feb06e3b31c12b70af",
+  "validation": "validation.json"
+}

@@ -1,0 +1,75 @@
+{
+  "accessed_utc": "2026-11-27T15:24:34.695206+00:00",
+  "inputs": [
+    {
+      "bytes": 352540467,
+      "path": "data/regions/patagonia/chile-261122.osm.pbf",
+      "replicationTimestamp": "2026-11-22T21:20:48Z",
+      "sha256": "2fdfe88365825b0ee1c38d1777af5dcec396adc100882932675625934cdddeae",
+      "url": "https://download.geofabrik.de/south-america/chile/chile-261122.osm.pbf"
+    }
+  ],
+  "osm": {
+    "bytes": 11417726,
+    "operation": "Complete-feature bbox extraction with nested relation references",
+    "path": "data/regions/cerro-castillo/chile-261122.osm.clipped.osm.pbf",
+    "replicationTimestamp": "2026-11-22T21:20:48Z",
+    "sha256": "84d86a7b5cf3dbfeea49c9396da2cdfdaf8133ebcbe5f334635149d43326f673",
+    "snapshot_date": "2026-11-22",
+    "url": "https://download.geofabrik.de/south-america/chile/chile-261122.osm.pbf"
+  },
+  "permanentIce": {
+    "accessedUTC": "2026-11-27T15:24:35.131893+00:00",
+    "archive": {
+      "bytes": 59092163,
+      "path": "data/sources/chile/Inventario-Publico-de-Glaciares-2022-v2.zip",
+      "sha256": "a67b8dcdb2133ef435450d41c3a9565d56dcdbe180aa0e10fb52148f6cde8151"
+    },
+    "attribution": "Glacier outlines: Direcci\u00f3n General de Aguas, Inventario P\u00fablico de Glaciares 2022 v2.",
+    "bytes": 3272532,
+    "classes": [
+      "glacier"
+    ],
+    "dataset": "Inventario P\u00fablico de Glaciares 2022 v2",
+    "deliveredFeatureCount": 503,
+    "downloadURL": "https://dga.mop.gob.cl/uploads/sites/13/2024/07/Inventario-Publico-de-Glaciares-2022-v2.zip",
+    "excluded": [
+      "CLASIFICA=GLACIAR ROCOSO",
+      "temporary or seasonal snow"
+    ],
+    "officialGlacierIdentifierCount": 503,
+    "path": "data/regions/cerro-castillo/dga-glaciers-2022-v2.geojson",
+    "producer": "Direcci\u00f3n General de Aguas (DGA), Ministerio de Obras P\u00fablicas, Chile",
+    "publicAccessBasis": "Official public vector inventory published by DGA; Chilean regulation identifies it as the official glacier register and provides public access to its information.",
+    "publicationURL": "https://dga.mop.gob.cl/inventario-publico-de-glaciares-actualizacion-2022/",
+    "query": "spatial intersection; CLASIFICA <> 'GLACIAR ROCOSO'",
+    "queryBounds": [
+      -72.55,
+      -46.45,
+      -71.65,
+      -45.55
+    ],
+    "sha256": "96ef5e5db40d8acd91e255b9e6cbc4a7c1c2f155e59a7b1176e002a314c0b76f",
+    "sourceAreaKm2": 98.48910007,
+    "sourceClassCounts": {
+      "GLACIAR DE MONTA\u00d1A": 96,
+      "GLACIAR DE VALLE": 5,
+      "GLACIARETE": 402
+    },
+    "sourceDBFLastUpdate": "2024-11-22",
+    "sourceFeatureCount": 503,
+    "sourceImageDateRange": [
+      "2016-03-11",
+      "2019-03-09"
+    ],
+    "sourceLayer": "IPG_2022_v2"
+  },
+  "polygons": [
+    {
+      "bytes": 4371,
+      "path": "data/regions/cerro-castillo/chile.poly",
+      "sha256": "a2c053d95312ba82997dda3deeb995a5ccff285d74db545d68b04a95facd26d3",
+      "url": "https://download.geofabrik.de/south-america/chile/chile.poly"
+    }
+  ]
+}

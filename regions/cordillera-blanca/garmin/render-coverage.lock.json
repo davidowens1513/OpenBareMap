@@ -1,0 +1,62 @@
+{
+  "bounds": [
+    -77.95,
+    -10.1,
+    -77.05,
+    -8.3
+  ],
+  "contextEnvelope": [
+    -77.95,
+    -10.1,
+    -77.05,
+    -8.3
+  ],
+  "drawPriority": 25,
+  "format": "openbaremap-garmin-render-footprint-v1",
+  "geometry": {
+    "bytes": 753,
+    "path": "regions/cordillera-blanca/garmin/render-coverage.geojson",
+    "sha256": "b51234af05e19ad843d13e293d8edaeed0749cde32e07b585a9b7b4277fe7592"
+  },
+  "inputs": [
+    {
+      "bytes": 4172,
+      "path": "data/regions/cordillera-blanca/peru.poly",
+      "sha256": "179baab6f016cdddfcc38f14990c5e0a015de4cb15421f740a93eb37cf455ada",
+      "url": "https://download.geofabrik.de/south-america/peru/peru.poly"
+    }
+  ],
+  "knownDestinationsCovered": {
+    "cashapampa": [
+      -77.721,
+      -8.954
+    ],
+    "huaraz": [
+      -77.528,
+      -9.53
+    ],
+    "huascaran": [
+      -77.605,
+      -9.121
+    ],
+    "llanganuco": [
+      -77.65,
+      -9.05
+    ],
+    "punta-union": [
+      -77.577,
+      -8.993
+    ],
+    "vaqueria": [
+      -77.489,
+      -9.008
+    ],
+    "yungay": [
+      -77.744,
+      -9.141
+    ]
+  },
+  "purpose": "Rectangular Garmin tiles may overlap other countries. Do not fill their padding with sea, land or land-cover polygons.",
+  "region": "cordillera-blanca",
+  "transparentNativeMap": true
+}

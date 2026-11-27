@@ -1,0 +1,52 @@
+{
+  "contourIntervalMetres": 20,
+  "coverage": "Cerro Castillo National Park in Ays\u00e9n, including the Las Horquetas traverse, Laguna Castillo, Estero Parada, Villa Cerro Castillo and Carretera Austral approaches.",
+  "datasets": {
+    "basemap": {
+      "bytes": 10117120,
+      "path": "releases/cerro-castillo/2.0.0/maps/basemap.mbtiles",
+      "sha256": "7b152e7b4af00faea42e5fd7020e8717a9a7fb5ab6a7d5c0cb44769cc70486b0",
+      "validation": {
+        "empty_tile_count": 127,
+        "logical_tiles_sha256": "75c1d5efb0f712e9ab778b9f92d6b1ab595139bef2715620ebffc255cc2c04f4",
+        "tile_count": 3249
+      }
+    },
+    "grid": {
+      "bytes": 1208320,
+      "path": "releases/cerro-castillo/2.0.0/maps/grid.mbtiles",
+      "sha256": "7c171cbf352cd5672a842852ee39809ee81b1d9b649559237604f25c7b45c52f",
+      "validation": {
+        "empty_tile_count": 0,
+        "logical_tiles_sha256": "3cde24b8f82d8ea9a4839158d52c2f0cba91a537295116af44fa59b181a03887",
+        "tile_count": 3420
+      }
+    },
+    "hillshade": {
+      "bytes": 10084352,
+      "path": "releases/cerro-castillo/2.0.0/maps/hillshade.mbtiles",
+      "sha256": "c1499a8bbd6bfc746adba671933ab18132128a6335bfc7ed25b29a3fb3674d86",
+      "validation": {
+        "empty_tile_count": 0,
+        "logical_tiles_sha256": "4d7cca3100d376f9059fd920ab4aad7f275c4060a9ad76a474a2be440e5bdf86",
+        "tile_count": 265
+      }
+    },
+    "topography": {
+      "bytes": 57606144,
+      "path": "releases/cerro-castillo/2.0.0/maps/topography-context.mbtiles",
+      "sha256": "ab76ca33f8742a60e6d2d97c3dae11052566787de83382ceead360d3afa4fd1d",
+      "validation": {
+        "empty_tile_count": 56524,
+        "logical_tiles_sha256": "9a70384164b2c10ede7f5add13b10a0692ab81251a539ebee538ceeede61a6fb",
+        "tile_count": 63778
+      }
+    }
+  },
+  "format": "openbaremap-development-viewer-v1",
+  "localBorders": false,
+  "mapVersion": "2.0.0",
+  "region": "cerro-castillo",
+  "storageRevision": "2.0.0-cerro-castillo-r3",
+  "styleRevision": "2.0.0-cerro-castillo-r1"
+}

@@ -1,0 +1,31 @@
+{
+  "areaSquareDegrees": 0.4000000000000057,
+  "bounds": [
+    -108.15,
+    37.65,
+    -107.35,
+    38.15
+  ],
+  "entireRequestedFootprintCovered": true,
+  "exactFootprint": null,
+  "inputs": [
+    {
+      "bytes": 495,
+      "path": "data/regions/san-juan-mountains/colorado.poly",
+      "sha256": "c4c84e42a59d2322b4f711a6da3426c0763f918543e53520cd8ae85f3d032f76",
+      "url": "https://download.geofabrik.de/north-america/us/colorado/colorado.poly"
+    }
+  ],
+  "knownDestinationsCovered": [
+    "ice-lakes-basin",
+    "ice-lakes-trailhead",
+    "island",
+    "ouray",
+    "red-mountain-pass",
+    "silverton",
+    "telluride"
+  ],
+  "operation": "Requested rectangular crop; source outlines cover all destination anchors",
+  "polygons": 1,
+  "sha256": "716a791bcc644677a84a16326ae709b67e61dfa1074138cca5f461049d4d7c95"
+}

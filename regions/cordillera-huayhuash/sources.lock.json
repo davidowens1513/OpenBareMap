@@ -1,0 +1,66 @@
+{
+  "accessed_utc": "2026-11-27T15:02:40.754843+00:00",
+  "inputs": [
+    {
+      "bytes": 258152503,
+      "path": "data/regions/cusco-inca-trail/peru-261119.osm.pbf",
+      "replicationTimestamp": "2026-11-19T21:22:20Z",
+      "sha256": "2d276a1e319271d1a69f84d4983ad82b3db2d5a95bc324732566bfad136206be",
+      "url": "https://download.geofabrik.de/south-america/peru/peru-261119.osm.pbf"
+    }
+  ],
+  "osm": {
+    "bytes": 4918490,
+    "operation": "Complete-feature bbox extraction with nested relation references",
+    "path": "data/regions/cordillera-huayhuash/peru-261119.osm.clipped.osm.pbf",
+    "replicationTimestamp": "2026-11-19T21:22:20Z",
+    "sha256": "89cd180cfca78627ea7e83b020404523c6d30a2fca124214bcae9e51f2bfece3",
+    "snapshot_date": "2026-11-19",
+    "url": "https://download.geofabrik.de/south-america/peru/peru-261119.osm.pbf"
+  },
+  "permanentIce": {
+    "accessedUTC": "2026-11-27T15:03:16.281414+00:00",
+    "attribution": "Glacier outlines: INAIGEM, Inventario Nacional de Glaciares 2026.",
+    "bytes": 11527976,
+    "classes": [
+      "glacier"
+    ],
+    "cordillera": "Huayhuash",
+    "dataset": "INAIGEM Inventario Nacional de Glaciares 2026",
+    "deliveredDissolvedFeatureCount": 83,
+    "excluded": [
+      "tipo_glac=Rocoso (rock glaciers)",
+      "temporary or seasonal snow"
+    ],
+    "methodNote": "The preceding INGLOG II report documents the public shapefile, 1:25,000 interpretation scale, and INAIGEM attribution requirement.",
+    "methodReference": "https://sinia.minam.gob.pe/sites/default/files/archivos/public/docs/Inventario%20Nacional%20de%20Glaciares%202023.pdf",
+    "officialGlacierIdentifierCount": 83,
+    "path": "data/regions/cordillera-huayhuash/inaigem-glaciers-2026.geojson",
+    "producer": "Instituto Nacional de Investigaci\u00f3n en Glaciares y Ecosistemas de Monta\u00f1a (INAIGEM), Peru",
+    "query": "cordillera='Huayhuash' AND tipo_glac IN ('Cubierto','Descubierto')",
+    "serviceCapabilities": "Query",
+    "serviceCreatedEpochMs": 1792425123000,
+    "serviceItemId": "1f263580b58c401bbe5dce56fb9b34e0",
+    "serviceModifiedEpochMs": 1792526379000,
+    "serviceURL": "https://services6.arcgis.com/c9GFTG11debu0wsH/arcgis/rest/services/BD_Inventario_Glaciares_2026/FeatureServer/0",
+    "sha256": "8341517f2ff06ea83e3c1ff29287b133925f9c83baae36abd877217ce10a2c9f",
+    "sourceAreaKm2": 48.12673235,
+    "sourceFeatureCount": 392,
+    "sourceImagery": [
+      "S2A_MSIL2A_20240815T152651_N0511_R025_T18LTP_20240815T223702",
+      "S2A_MSIL2A_20240815T152651_N0511_R025_T18LTP_20240815T223702 / Revisado con im\u00e1genes Google Earth 05/07/2023",
+      "S2A_MSIL2A_20240815T152651_N0511_R025_T18LTP_20240815T223702 / Revisado con im\u00e1genes Google Earth 10/07/2023",
+      "S2A_MSIL2A_20240815T152651_N0511_R025_T18LTP_20240815T223702 / Revisado con im\u00e1genes Google Earth 10/07/2023 / Nueva numeraci\u00f3n",
+      "S2A_MSIL2A_20240815T152651_N0511_R025_T18LTP_20240815T223702 / Revisado con im\u00e1genes Google Earth 10/07/2023 / Nuevo GCD"
+    ],
+    "useTerms": "INAIGEM makes the cartographic inventory available for public use and requires users to reference INAIGEM; the ArcGIS item has no separate licenseInfo field."
+  },
+  "polygons": [
+    {
+      "bytes": 4172,
+      "path": "data/regions/cordillera-huayhuash/peru.poly",
+      "sha256": "179baab6f016cdddfcc38f14990c5e0a015de4cb15421f740a93eb37cf455ada",
+      "url": "https://download.geofabrik.de/south-america/peru/peru.poly"
+    }
+  ]
+}

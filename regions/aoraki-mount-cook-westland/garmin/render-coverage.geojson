@@ -1,0 +1,39 @@
+{
+  "features": [
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              169.75,
+              -43.8
+            ],
+            [
+              169.75,
+              -43.2
+            ],
+            [
+              170.45,
+              -43.2
+            ],
+            [
+              170.45,
+              -43.8
+            ],
+            [
+              169.75,
+              -43.8
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "properties": {
+        "purpose": "Limit opaque native background and land-cover polygons; retain complete accepted OSM and terrain inputs",
+        "region": "aoraki-mount-cook-westland"
+      },
+      "type": "Feature"
+    }
+  ],
+  "type": "FeatureCollection"
+}

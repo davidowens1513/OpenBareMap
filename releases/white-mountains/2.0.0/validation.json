@@ -1,0 +1,364 @@
+{
+  "coverage": "The White Mountains, including the Presidential Range, Franconia Ridge, Appalachian Mountain Club huts and the connecting trail and road approaches.",
+  "coverageAnchors": {
+    "crawford-notch": {
+      "coordinate": [
+        -71.414,
+        44.219
+      ],
+      "featuresInNeighbouringDetailedTiles": 501
+    },
+    "franconia-notch": {
+      "coordinate": [
+        -71.682,
+        44.171
+      ],
+      "featuresInNeighbouringDetailedTiles": 987
+    },
+    "gorham": {
+      "coordinate": [
+        -71.185,
+        44.388
+      ],
+      "featuresInNeighbouringDetailedTiles": 1503
+    },
+    "lafayette": {
+      "coordinate": [
+        -71.644,
+        44.16
+      ],
+      "featuresInNeighbouringDetailedTiles": 191
+    },
+    "lincoln": {
+      "coordinate": [
+        -71.671,
+        44.045
+      ],
+      "featuresInNeighbouringDetailedTiles": 2509
+    },
+    "mount-washington": {
+      "coordinate": [
+        -71.304,
+        44.271
+      ],
+      "featuresInNeighbouringDetailedTiles": 2398
+    },
+    "pinkham-notch": {
+      "coordinate": [
+        -71.253,
+        44.257
+      ],
+      "featuresInNeighbouringDetailedTiles": 485
+    }
+  },
+  "datasets": {
+    "basemap": {
+      "empty_tile_count": 9,
+      "logical_tiles_sha256": "fab14008c4bcc20546a3b222efa3a4ec7f9e969fe7a9dc9e266cdd6735766ff6",
+      "tile_count": 2258
+    },
+    "grid": {
+      "empty_tile_count": 0,
+      "logical_tiles_sha256": "b252f25239c7f1c96159f7f159595e39e26a4e30b7c64188b7b528384b71588b",
+      "tile_count": 2268
+    },
+    "hillshade": {
+      "empty_tile_count": 0,
+      "logical_tiles_sha256": "9c6d67f2596562a182e8078f68d57d39c0e1e92f74208b06bd700c3247444d5c",
+      "tile_count": 159
+    },
+    "topography": {
+      "empty_tile_count": 39926,
+      "logical_tiles_sha256": "b00665e0d8a0553c7040d5993fed15bf10a07094380c8cd311c049cbe179d0c6",
+      "tile_count": 44890
+    }
+  },
+  "detail": {
+    "basemap": {
+      "boundaries": 1710,
+      "contours": 0
+    },
+    "topography": {
+      "boundaries": 0,
+      "contours": 83179
+    }
+  },
+  "garmin": {
+    "familyId": 4900,
+    "garminPackageRevision": "2.0.0-r1",
+    "inspection": {
+      "anchorLabels": {
+        "Lincoln": "Lincoln",
+        "Mount Washington": "Mount Washington"
+      },
+      "bounds": [
+        -71.95006370544434,
+        43.84995460510254,
+        -71.04995727539062,
+        44.450082778930664
+      ],
+      "coastPolygonsByLevel": {
+        "0": {
+          "0x32": 4,
+          "0x54": 6
+        },
+        "1": {
+          "0x32": 4,
+          "0x54": 6
+        },
+        "2": {
+          "0x32": 4,
+          "0x54": 6
+        },
+        "3": {
+          "0x32": 4,
+          "0x54": 6
+        },
+        "4": {
+          "0x32": 4,
+          "0x54": 6
+        }
+      },
+      "contoursByLevel": {
+        "0": {
+          "0x20": 11987,
+          "0x22": 2870
+        },
+        "1": {
+          "0x20": 9788,
+          "0x22": 2322
+        },
+        "2": {
+          "0x22": 2189
+        },
+        "3": {
+          "0x10008": 1997
+        },
+        "4": {}
+      },
+      "lineInstancesAtHighestDetail": {
+        "0x1": 176,
+        "0x10001": 447,
+        "0x10002": 91,
+        "0x10003": 18,
+        "0x10004": 146,
+        "0x10005": 54,
+        "0x10006": 95,
+        "0x1000b": 42,
+        "0x14": 159,
+        "0x16": 3511,
+        "0x18": 1723,
+        "0x1c": 85,
+        "0x1e": 12,
+        "0x1f": 263,
+        "0x2": 94,
+        "0x20": 11987,
+        "0x22": 2870,
+        "0x3": 134,
+        "0x4": 208,
+        "0x6": 3875,
+        "0x7": 13975,
+        "0xa": 1971
+      },
+      "logicalCombinedSHA256": "f2051204d5c49855c7d17fa518e76bad02c4e289881c2ec809bd2210667f60fb",
+      "logicalHashNote": "Internal file names, sizes and payloads; only CommonHeader creation-date bytes 14..20 are zeroed for hashing. IMG archive headers are excluded. Output bytes are never modified.",
+      "logicalTileSHA256": {
+        "49000001.img": "05809abcdf64562f056ebe1d9770af8017116fbd1d5f54a234662d99dfdf9b84",
+        "49000002.img": "3195065417bccc058cda7cc3fcc89500bfca25a04fbdb88bf83af0e28c46c139",
+        "49000003.img": "15d751f4cfb3e3ac97ca7c6fec2c3cf4e906d4833208526b3ff12b361162ad3c",
+        "49000004.img": "eda56c26db2e28d1ab2bd7884f7335a69a03c31bdcc52cf5cc6806551c3a16e0"
+      },
+      "pointInstancesAtHighestDetail": {
+        "0x10001": 117,
+        "0x10002": 306,
+        "0x10003": 175,
+        "0x10004": 12,
+        "0x10006": 1261,
+        "0x2f0b": 1157,
+        "0x600": 9,
+        "0x650c": 69,
+        "0x6603": 190,
+        "0x6615": 28,
+        "0x6616": 454,
+        "0x800": 17,
+        "0xb00": 82,
+        "0xc00": 7
+      },
+      "polygonInstancesAtHighestDetail": {
+        "0x10101": 100,
+        "0x10102": 838,
+        "0x10103": 677,
+        "0x10104": 153,
+        "0x10105": 69,
+        "0x10106": 141,
+        "0x10107": 3,
+        "0x10109": 335,
+        "0x1010a": 1553,
+        "0x1010b": 8,
+        "0x13": 19696,
+        "0x32": 4,
+        "0x3c": 1368,
+        "0x50": 2058,
+        "0x51": 394,
+        "0x54": 6
+      },
+      "routing": false,
+      "subfileBytes": {
+        "DEM": 5245187,
+        "LBL": 131171,
+        "MPS": 387,
+        "RGN": 6780827,
+        "SRT": 912,
+        "TRE": 83996,
+        "TYP": 2982
+      },
+      "tiles": 4
+    },
+    "output": {
+      "bytes": 12288000,
+      "path": "regions/white-mountains/garmin/dist/OpenBareMap-White-Mountains.img",
+      "sha256": "d326c662ddd7f7ab87d5f35fb4b76cf0e4035d8212749afbccea766f5687f9ab"
+    },
+    "routing": false,
+    "status": "compiled and structurally inspected; hardware rendering pending"
+  },
+  "geometryProcessing": {
+    "contours": 10567,
+    "grid": {
+      "grid_10km": 18,
+      "grid_1km": 162
+    },
+    "landcover": {
+      "empty_source_areas": [],
+      "features": 4909,
+      "retained": 582,
+      "smoothed": 4327
+    }
+  },
+  "irelandGarminPackageRevision": "2.0.1-trail-detail-r1",
+  "irelandPreserved": true,
+  "labelGlyphs": {
+    "Open Sans Bold": true,
+    "Open Sans Regular": true,
+    "Open Sans Semibold": true
+  },
+  "landBackground": {
+    "crawford-notch": {
+      "coordinate": [
+        -71.414,
+        44.219
+      ],
+      "verifiedZooms": [
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    },
+    "franconia-notch": {
+      "coordinate": [
+        -71.682,
+        44.171
+      ],
+      "verifiedZooms": [
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    },
+    "gorham": {
+      "coordinate": [
+        -71.185,
+        44.388
+      ],
+      "verifiedZooms": [
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    },
+    "lafayette": {
+      "coordinate": [
+        -71.644,
+        44.16
+      ],
+      "verifiedZooms": [
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    },
+    "lincoln": {
+      "coordinate": [
+        -71.671,
+        44.045
+      ],
+      "verifiedZooms": [
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    },
+    "mount-washington": {
+      "coordinate": [
+        -71.304,
+        44.271
+      ],
+      "verifiedZooms": [
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    },
+    "pinkham-notch": {
+      "coordinate": [
+        -71.253,
+        44.257
+      ],
+      "verifiedZooms": [
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    }
+  },
+  "packages": {
+    "android": {
+      "checkedFiles": 43,
+      "nativeDeviceRenderingTested": false,
+      "sourceFiles": {
+        "basemap": "maps/basemap.mbtiles",
+        "coast": "maps/coast.mbtiles",
+        "hillshade": "maps/hillshade.mbtiles",
+        "topography": "maps/topography.mbtiles",
+        "utm-grid": "maps/grid.mbtiles"
+      }
+    },
+    "ios": {
+      "checkedFiles": 46,
+      "nativeDeviceRenderingTested": false,
+      "sourceFiles": {
+        "basemap": "maps/basemap.mbtiles",
+        "coast": "maps/coast.mbtiles",
+        "hillshade": "maps/hillshade.mbtiles",
+        "topography": "maps/topography.mbtiles",
+        "utm-grid": "maps/grid.mbtiles"
+      }
+    }
+  },
+  "region": "white-mountains",
+  "status": "automated checks passed; visual and hardware acceptance pending"
+}

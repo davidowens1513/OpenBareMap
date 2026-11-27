@@ -1,0 +1,160 @@
+{
+  "appBundleName": "San-Juan-Mountains",
+  "bounds": [
+    -108.15,
+    37.65,
+    -107.35,
+    38.15
+  ],
+  "clipBasemap": true,
+  "clipSource": true,
+  "clipTerrainToBounds": true,
+  "coastContextBounds": [
+    -110,
+    36,
+    -106,
+    40
+  ],
+  "contourIntervalMetres": 20,
+  "coverage": "The San Juan Mountains around Silverton and Ouray, including Ice Lakes Basin, Telluride and the principal walking and road approaches.",
+  "destinationLabels": {
+    "ice-lakes-basin": "Ice Lakes Basin",
+    "ice-lakes-trailhead": "Ice Lakes Trailhead",
+    "island": "San Juan Mountains",
+    "ouray": "Ouray",
+    "red-mountain-pass": "Red Mountain Pass",
+    "silverton": "Silverton",
+    "telluride": "Telluride"
+  },
+  "destinations": {
+    "ice-lakes-basin": [
+      -107.77,
+      37.816,
+      13
+    ],
+    "ice-lakes-trailhead": [
+      -107.774,
+      37.807,
+      13
+    ],
+    "island": [
+      -107.75,
+      37.9,
+      9
+    ],
+    "ouray": [
+      -107.672,
+      38.023,
+      13
+    ],
+    "red-mountain-pass": [
+      -107.711,
+      37.898,
+      13
+    ],
+    "silverton": [
+      -107.665,
+      37.812,
+      13
+    ],
+    "telluride": [
+      -107.812,
+      37.937,
+      13
+    ]
+  },
+  "garminContextBounds": [
+    -108.15,
+    37.65,
+    -107.35,
+    38.15
+  ],
+  "garminFamilyId": 4901,
+  "garminFilename": "OpenBareMap-San-Juan-Mountains.img",
+  "garminPackageRevision": "2.0.0-r1",
+  "garminTileStartId": 49010001,
+  "garminUseSourceOutline": true,
+  "garminVersionedDelivery": true,
+  "gridCRS": "EPSG:32613",
+  "gridExtent": [
+    220000,
+    300000,
+    4160000,
+    4230000
+  ],
+  "gridName": "WGS 84 / UTM zone 13N",
+  "gridSource": "utm-grid",
+  "id": "san-juan-mountains",
+  "ignoreSourceHeaderBounds": true,
+  "inspectionNames": [
+    "Silverton",
+    "Ouray"
+  ],
+  "label": "San Juan Mountains",
+  "labelGlyphs": "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz",
+  "mapVersion": "2.0.0",
+  "maxzoom": 14,
+  "minorWaterwayMinzoom": 10,
+  "minzoom": 4,
+  "name": "OpenBareMap San Juan Mountains",
+  "nativeLanguage": "en",
+  "optionalBasemapLayers": [
+    "ferry",
+    "island_name",
+    "cycling_route",
+    "railway",
+    "station",
+    "hiking_route",
+    "boundary"
+  ],
+  "permanentIce": true,
+  "projectedCRS": "EPSG:32613",
+  "repairClippedCoastline": true,
+  "requireBogFeatures": false,
+  "sourceBaseOverrides": {
+    "colorado": "https://download.geofabrik.de/north-america/us/colorado/"
+  },
+  "sourceBaseURL": "https://download.geofabrik.de/north-america/us/",
+  "sourceCacheRegion": "us-national-parks",
+  "sourceDate": "2026-11-20",
+  "sourceSlugs": [
+    "colorado"
+  ],
+  "styleRevision": "2.0.0-san-juan-mountains-r1",
+  "terrainAttribution": "Copernicus DEM GLO-30 \u00b7 European Union / ESA \u00b7 DLR / Airbus",
+  "terrainBounds": [
+    -109,
+    37,
+    -107,
+    39
+  ],
+  "terrainNotice": "San Juan Mountains elevation: Copernicus DEM GLO-30 Public (AWS 2021 release).\n\nproduced using Copernicus WorldDEM-30 \u00a9 DLR e.V. 2010-2014 and \u00a9 Airbus Defence and Space GmbH 2014-2018 provided under COPERNICUS by the European Union and ESA; all rights reserved\n\nThe organisations in charge of the Copernicus programme by law or by delegation do not incur any liability for any use of the Copernicus WorldDEM-30.\n\nLicense: https://dataspace.copernicus.eu/sites/default/files/media/files/2025-06/copernicus_contributing_mission_data_access_v2_cop_dem_licenses.pdf\nSource: https://registry.opendata.aws/copernicus-dem/\nVertical datum: EGM2008 orthometric metres. Native approximately 30 m cells are bilinearly resampled to point-aligned Int16 HGT for the shared terrain pipeline. Ocean-only cells absent from the official public inventory are zero.\n",
+  "terrainProvider": "copernicus-glo30",
+  "townlands": false,
+  "validationAnchors": {
+    "ice-lakes-basin": [
+      -107.77,
+      37.816
+    ],
+    "ice-lakes-trailhead": [
+      -107.774,
+      37.807
+    ],
+    "ouray": [
+      -107.672,
+      38.023
+    ],
+    "red-mountain-pass": [
+      -107.711,
+      37.898
+    ],
+    "silverton": [
+      -107.665,
+      37.812
+    ],
+    "telluride": [
+      -107.812,
+      37.937
+    ]
+  }
+}

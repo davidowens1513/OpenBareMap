@@ -1,0 +1,107 @@
+{
+  "acceptance": "Automated checks only; see validation and visual-review records for actual reviewed scope.",
+  "coverage": "The Jordan Trail from Dana through Petra to Wadi Rum, including the complete official sections, stage settlements and walking and vehicle approaches.",
+  "datasets": {
+    "basemap": {
+      "bytes": 4644864,
+      "path": "releases/jordan-trail-dana-petra-wadi-rum/2.0.0/maps/basemap.mbtiles",
+      "sha256": "8c6619d03f66d4bbf81efe7d11ec402e9102253138a36f95bf7546a57eed3ebb",
+      "validation": {
+        "empty_tile_count": 6,
+        "logical_tiles_sha256": "7fa8f3373b021a31bff35f672784752c5b0dc747f64e967a4f960ed14154d538",
+        "tile_count": 1410
+      }
+    },
+    "grid": {
+      "bytes": 552960,
+      "path": "releases/jordan-trail-dana-petra-wadi-rum/2.0.0/maps/grid.mbtiles",
+      "sha256": "6f466a90057fe57a509b19be2b157a541dd8f4eeba8bd10dfde5bb0927a080e0",
+      "validation": {
+        "empty_tile_count": 0,
+        "logical_tiles_sha256": "840e566cfec27b870ec24fd0906e771b7480bc978fe14911a256f20925cc88ba",
+        "tile_count": 1432
+      }
+    },
+    "hillshade": {
+      "bytes": 4243456,
+      "path": "releases/jordan-trail-dana-petra-wadi-rum/2.0.0/maps/hillshade.mbtiles",
+      "sha256": "00fa0ccb0c13181e7836096dd7b18a8d97f41af58e32a121082bd42850ec6b91",
+      "validation": {
+        "empty_tile_count": 0,
+        "logical_tiles_sha256": "5cf872d73ab5e3b95b765d94fb3d596334cb4244d795e761406b562073e6c7e6",
+        "tile_count": 143
+      }
+    },
+    "topography": {
+      "bytes": 23482368,
+      "path": "releases/jordan-trail-dana-petra-wadi-rum/2.0.0/maps/topography-context.mbtiles",
+      "sha256": "234a0a32e2bdece1de047c663f25dbd7585b6c5c91fccbd7ff28729a89dfbec5",
+      "validation": {
+        "empty_tile_count": 35001,
+        "logical_tiles_sha256": "fe7cb4dca4d6e029735712b11e3acf8a437a40fbb4da5c814b9b3c702099188a",
+        "tile_count": 38755
+      }
+    }
+  },
+  "garmin": {
+    "bytes": 10407936,
+    "path": "regions/jordan-trail-dana-petra-wadi-rum/garmin/dist/OpenBareMap-Jordan-Trail-Dana-Petra-Wadi-Rum.img",
+    "sha256": "9bf1fe0f3d398f9a1b21fb866f4147bb3f2b406039c1be3f9fdf02c94f0457d2"
+  },
+  "geometryReport": {
+    "path": "build/jordan-trail-dana-petra-wadi-rum-geometry/geometry-report.json",
+    "sha256": "cd1acced731248373c0d7c97502ce2025d68abc2ec1b13d0d5eada524e05f123"
+  },
+  "hostAppsModified": false,
+  "mapVersion": "2.0.0",
+  "osm": {
+    "bytes": 2595387,
+    "footprintSHA256": "93232109862f7263e55374a2b0590e05217da253596e151d6c824a46a4d33a8b",
+    "operation": "Complete-feature footprint extraction",
+    "path": "data/regions/jordan-trail-dana-petra-wadi-rum/jordan-261126.osm.clipped.osm.pbf",
+    "replicationTimestamp": "2026-11-26T21:21:01Z",
+    "sha256": "dbe3472cb130bee0cefb087bf9bd8dc56f7e3a8e8164aec64dd234fa19ba4651",
+    "snapshot_date": "2026-11-26",
+    "url": "https://download.geofabrik.de/asia/jordan/jordan-261126.osm.pbf"
+  },
+  "packages": {
+    "android": {
+      "archive": {
+        "bytes": 38240594,
+        "path": "regions/jordan-trail-dana-petra-wadi-rum/android/OpenBareMap-Android.zip",
+        "sha256": "50b5880a352ad2c86638905fa9e0772a605e82483fbeef8b61dbfd7558a947fc"
+      },
+      "checksumsSHA256": "41b9ef2cea310c5a5d1c8bf551e777c166f246dd23ea37cca79f270cdd69a022",
+      "manifestSHA256": "f974365aa85d7dd926a5a2b5cd94250bc10195c3c44396cbade174879452a537",
+      "path": "regions/jordan-trail-dana-petra-wadi-rum/android",
+      "validationSHA256": "380886b7f4ded22254a38b0dac6e114aef6e1d5e368d534d5c338c5a92a6f084"
+    },
+    "ios": {
+      "checksumsSHA256": "beaa53f733cb254295f3ff16f44626e862d5d950569c1e18a38f716ade2803de",
+      "manifestSHA256": "7f7da2834549d1711709b076354bd359e937532c0615e15331c30995729fa177",
+      "path": "regions/jordan-trail-dana-petra-wadi-rum/ios",
+      "validationSHA256": "8cacf4d04e210116346aedb71862ea0e10c9f763e29f79f3421f360d7c0d95a5"
+    }
+  },
+  "pythonRuntime": {
+    "packages": {
+      "Pillow": "12.3.0",
+      "certifi": "2026.10.23",
+      "charset-normalizer": "3.5.2",
+      "idna": "3.20",
+      "numpy": "2.5.4",
+      "osmium": "4.3.2",
+      "pyproj": "3.8.0",
+      "requests": "2.34.2",
+      "shapely": "2.2.0",
+      "urllib3": "2.8.0"
+    },
+    "platform": "macOS-27.2.1-arm64-arm-64bit-Mach-O",
+    "python": "3.14.5 (main, May 10 2026, 10:21:34) [Clang 21.0.0 (clang-2100.0.123.102)]",
+    "requirementsSHA256": "427f12ff8b49bfebac0a7d453c2f65bd15d6695584b18e6ecee1fdfeed20a36c"
+  },
+  "region": "jordan-trail-dana-petra-wadi-rum",
+  "styleSHA256": "d91eded15ef71674fcba09afcb4436451afa3ad4a9f87fb77002f52f10c93027",
+  "terrainLockSHA256": "5738efd6aff69be6f2c1da21361aad823f0c04108ffee3cbd6d85ad8ee70fbe1",
+  "validation": "validation.json"
+}

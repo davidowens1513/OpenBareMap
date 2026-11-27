@@ -1,0 +1,21 @@
+{
+  "combinedSHA256": "f81d83001aa0f1d9c7f0a0ce1ee555cf322d5cbf62ac41f25c4eff0ebfed2307",
+  "command": [
+    "/opt/homebrew/opt/openjdk@21/libexec/openjdk.jdk/Contents/Home/bin/java",
+    "-Xmx6g",
+    "-jar",
+    "/Volumes/Extreme SSD/Projects/OpenBareMap/work/nine-map-release/git-openbaremap/garmin/tools/splitter-r654/splitter.jar",
+    "--mapid=49060001",
+    "--description=OpenBareMap Cordillera Huayhuash",
+    "--max-nodes=1000000",
+    "--max-threads=2",
+    "--keep-complete=true",
+    "--output=pbf",
+    "--polygon-file=/Volumes/Extreme SSD/Projects/OpenBareMap/work/nine-map-release/git-openbaremap/regions/cordillera-huayhuash/garmin/coverage.poly",
+    "--output-dir=/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/931e851460d7/cordillera-huayhuash/garmin/split",
+    "--ignore-osm-bounds=true",
+    "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/931e851460d7/cordillera-huayhuash/garmin/combined.osm.pbf"
+  ],
+  "coverageSHA256": "9458001567e417864521ac137b9160a1404d8f0f030d2a2df43ea27c9a013416",
+  "ignoreSourceHeaderBounds": true
+}

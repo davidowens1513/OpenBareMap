@@ -73,11 +73,23 @@ def fetch(region,padding=False):
     cell=box(lo,la,lo+1,la+1)
     if not box(*p['coastContextBounds']).covers(cell):raise ValueError('Ocean cell extends outside checked coastal context')
     land=unary_union([shape(f['geometry']) for f in json.loads(land_path.read_text())['features']])
-    if land.intersection(cell).area>1e-12:raise ValueError('Missing public Copernicus tile contains land: '+name)
-    ocean_review.append({'cell':name,'coastalLandSHA256':digest(land_path),'landIntersectionSquareDegrees':0})
-    raw.write_bytes(bytes(3601*3601*2))
+    land_area=land.intersection(cell).area
+    if land_area>1e-12:
+     if not padding or p.get('copernicusPaddingFallback')!='mapzen':
+      raise ValueError('Missing public Copernicus tile contains land: '+name)
+     ns='N' if la>=0 else 'S';mapzen_name=name+'.gz'
+     fallback=download(f'https://elevation-tiles-prod.s3.amazonaws.com/skadi/{ns}{abs(la):02d}/{mapzen_name}',folder/'mapzen-padding'/mapzen_name)
+     data=gzip.decompress((ROOT/fallback['path']).read_bytes())
+     if len(data)!=3601*3601*2:raise ValueError('Invalid Mapzen padding HGT: '+name)
+     raw.write_bytes(data);sources.append(fallback)
+     ocean_review.append({'cell':name,'coastalLandSHA256':digest(land_path),'landIntersectionSquareDegrees':land_area,'fallback':'Mapzen Terrain Tiles skadi composite elevation'})
+    else:
+     ocean_review.append({'cell':name,'coastalLandSHA256':digest(land_path),'landIntersectionSquareDegrees':0})
+     raw.write_bytes(bytes(3601*3601*2))
    with raw.open('rb') as src,target.open('wb') as stream,gzip.GzipFile(filename='',mode='wb',fileobj=stream,mtime=0) as dst:shutil.copyfileobj(src,dst)
-   assets.append({'path':str(target.relative_to(ROOT)),'sha256':digest(target),'bytes':target.stat().st_size,'url':None,'operation':'Bilinear resampling of Copernicus GLO-30 to point-aligned Int16 HGT, EGM2008 heights' if (la,lo) in cogs else 'Zero ocean cell: no tile in the pinned official GLO-30 public inventory'})
-   print(name,'Copernicus terrain' if (la,lo) in cogs else 'ocean zero cell',flush=True)
- record={'dataset':'Copernicus DEM GLO-30 Public, AWS 2021 release','verticalDatum':'EGM2008 orthometric metres','sourceDocumentation':'https://registry.opendata.aws/copernicus-dem/','grid':'3601 by 3601 signed 16-bit point-aligned HGT cells; ocean cells zero','coverage':[west-1,south-1,east+1,north+1] if padding else p['terrainBounds'],'assets':assets,'sourceAssets':[index,*sources],'commands':commands,'oceanCellReview':ocean_review,'toolchain':{n:toolchain[n] for n in tools},'accessed_utc':datetime.datetime.now(datetime.timezone.utc).isoformat()}
+   fallback_used=(la,lo) not in cogs and land_area>1e-12
+   operation=('Bilinear resampling of Copernicus GLO-30 to point-aligned Int16 HGT, EGM2008 heights' if (la,lo) in cogs else 'Mapzen Terrain Tiles skadi composite elevation fallback for missing Copernicus land padding' if fallback_used else 'Zero ocean cell: no tile in the pinned official GLO-30 public inventory')
+   assets.append({'path':str(target.relative_to(ROOT)),'sha256':digest(target),'bytes':target.stat().st_size,'url':None,'operation':operation})
+   print(name,'Copernicus terrain' if (la,lo) in cogs else 'Mapzen padding fallback' if fallback_used else 'ocean zero cell',flush=True)
+ record={'dataset':'Copernicus DEM GLO-30 Public, AWS 2021 release' + (' with pinned Mapzen padding fallback' if any('fallback' in item for item in ocean_review) else ''),'verticalDatum':'EGM2008 orthometric metres','sourceDocumentation':'https://registry.opendata.aws/copernicus-dem/','fallbackDocumentation':'https://github.com/tilezen/joerd/tree/master/docs' if any('fallback' in item for item in ocean_review) else None,'grid':'3601 by 3601 signed 16-bit point-aligned HGT cells; ocean cells zero','coverage':[west-1,south-1,east+1,north+1] if padding else p['terrainBounds'],'assets':assets,'sourceAssets':[index,*sources],'commands':commands,'oceanCellReview':ocean_review,'toolchain':{n:toolchain[n] for n in tools},'accessed_utc':datetime.datetime.now(datetime.timezone.utc).isoformat()}
  lock.parent.mkdir(parents=True,exist_ok=True);write(lock,record)

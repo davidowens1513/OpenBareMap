@@ -1,0 +1,35 @@
+{
+  "bytes": 38272499,
+  "datasets": {
+    "basemap": {
+      "path": "maps/basemap.mbtiles",
+      "sha256": "8c6619d03f66d4bbf81efe7d11ec402e9102253138a36f95bf7546a57eed3ebb"
+    },
+    "coast": {
+      "derived_from": "234a0a32e2bdece1de047c663f25dbd7585b6c5c91fccbd7ff28729a89dfbec5",
+      "maxzoom": 12,
+      "operation": "Preserve land-layer MVT bytes only through zoom 12; omit other layers.",
+      "path": "maps/coast.mbtiles",
+      "sha256": "3764b1808d532985a967aac779205639c50e3b18434299378f325e026ad9a777"
+    },
+    "grid": {
+      "path": "maps/grid.mbtiles",
+      "sha256": "6f466a90057fe57a509b19be2b157a541dd8f4eeba8bd10dfde5bb0927a080e0"
+    },
+    "hillshade": {
+      "path": "maps/hillshade.mbtiles",
+      "sha256": "00fa0ccb0c13181e7836096dd7b18a8d97f41af58e32a121082bd42850ec6b91"
+    },
+    "topography": {
+      "path": "maps/topography.mbtiles",
+      "sha256": "234a0a32e2bdece1de047c663f25dbd7585b6c5c91fccbd7ff28729a89dfbec5"
+    }
+  },
+  "instructionsSHA256": "b63b29ff66568ceca7c6788435c446b4893a5eaa22f13360bb31c1176bfd2381",
+  "instructionsURL": "https://downloads.appsbyonzy.dev/OpenBareMap/jordan-trail-dana-petra-wadi-rum/2.0.0/app-bundles-v1/ios/instructions.txt",
+  "localPath": "releases/jordan-trail-dana-petra-wadi-rum/2.0.0/app-bundles-v1/ios/OpenBareMap-Jordan-Trail-Dana-Petra-Wadi-Rum-iOS-Bundle.zip",
+  "mapManifestSHA256": "7f7da2834549d1711709b076354bd359e937532c0615e15331c30995729fa177",
+  "r2Key": "OpenBareMap/jordan-trail-dana-petra-wadi-rum/2.0.0/app-bundles-v1/ios/OpenBareMap-Jordan-Trail-Dana-Petra-Wadi-Rum-iOS-Bundle.zip",
+  "sha256": "242a3ae2c6313c53ceebcee841fa50818397c861f0d9d65083e1e9b1034c0a74",
+  "url": "https://downloads.appsbyonzy.dev/OpenBareMap/jordan-trail-dana-petra-wadi-rum/2.0.0/app-bundles-v1/ios/OpenBareMap-Jordan-Trail-Dana-Petra-Wadi-Rum-iOS-Bundle.zip"
+}

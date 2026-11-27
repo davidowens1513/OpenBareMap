@@ -1,0 +1,372 @@
+{
+  "coverage": "Upper Svaneti from Mestia to Ushguli, including the villages, connecting trails, Chalaadi and Shkhara glacier valleys and principal road approaches.",
+  "coverageAnchors": {
+    "adishi": {
+      "coordinate": [
+        42.99,
+        42.998
+      ],
+      "featuresInNeighbouringDetailedTiles": 217
+    },
+    "chalaadi-glacier": {
+      "coordinate": [
+        42.69,
+        43.117
+      ],
+      "featuresInNeighbouringDetailedTiles": 201
+    },
+    "ipral\u0131": {
+      "coordinate": [
+        43.063,
+        42.938
+      ],
+      "featuresInNeighbouringDetailedTiles": 464
+    },
+    "mestia": {
+      "coordinate": [
+        42.727,
+        43.045
+      ],
+      "featuresInNeighbouringDetailedTiles": 3853
+    },
+    "shkhara-glacier": {
+      "coordinate": [
+        43.106,
+        42.974
+      ],
+      "featuresInNeighbouringDetailedTiles": 121
+    },
+    "ushguli": {
+      "coordinate": [
+        43.017,
+        42.916
+      ],
+      "featuresInNeighbouringDetailedTiles": 957
+    },
+    "zhabeshi": {
+      "coordinate": [
+        42.853,
+        43.039
+      ],
+      "featuresInNeighbouringDetailedTiles": 1009
+    }
+  },
+  "datasets": {
+    "basemap": {
+      "empty_tile_count": 8,
+      "logical_tiles_sha256": "226335dbc10e31af467cd38431730720754c4b44a221c516af8fd0a206c4cb2b",
+      "tile_count": 2460
+    },
+    "grid": {
+      "empty_tile_count": 0,
+      "logical_tiles_sha256": "244732175f2f9c996c15ea3ceafaba7d8c55ff79741a7f7ed9c14c9e3cae472c",
+      "tile_count": 2801
+    },
+    "hillshade": {
+      "empty_tile_count": 0,
+      "logical_tiles_sha256": "d6ccbba7c5c53f575a27738a81495492625968b1920306bd41288dbe62996ae1",
+      "tile_count": 203
+    },
+    "topography": {
+      "empty_tile_count": 54926,
+      "logical_tiles_sha256": "d323dafc3d09cdbbfa6683bcd05fc9568da0678333f9f3a4a2eea32929b840b2",
+      "tile_count": 61235
+    }
+  },
+  "detail": {
+    "basemap": {
+      "boundaries": 5546,
+      "contours": 0,
+      "permanentIce": {
+        "glacier": 3813,
+        "permanent_snow": 0
+      }
+    },
+    "topography": {
+      "boundaries": 0,
+      "contours": 187113
+    }
+  },
+  "garmin": {
+    "familyId": 4903,
+    "garminPackageRevision": "2.0.0-r1",
+    "inspection": {
+      "anchorLabels": {
+        "Mestia": "Mestia",
+        "Ushguli": "Ushguli"
+      },
+      "bounds": [
+        42.1999454498291,
+        42.64995574951172,
+        43.34999084472656,
+        43.250083923339844
+      ],
+      "coastPolygonsByLevel": {
+        "0": {
+          "0x32": 8,
+          "0x54": 15
+        },
+        "1": {
+          "0x32": 8,
+          "0x54": 15
+        },
+        "2": {
+          "0x32": 8,
+          "0x54": 15
+        },
+        "3": {
+          "0x32": 8,
+          "0x54": 15
+        },
+        "4": {
+          "0x32": 8,
+          "0x54": 15
+        }
+      },
+      "contoursByLevel": {
+        "0": {
+          "0x20": 28811,
+          "0x22": 7181
+        },
+        "1": {
+          "0x20": 19994,
+          "0x22": 4960
+        },
+        "2": {
+          "0x22": 4570
+        },
+        "3": {
+          "0x10008": 4113
+        },
+        "4": {}
+      },
+      "lineInstancesAtHighestDetail": {
+        "0x10001": 329,
+        "0x10005": 36,
+        "0x10006": 54,
+        "0x1000b": 162,
+        "0x16": 1661,
+        "0x18": 3298,
+        "0x1c": 330,
+        "0x1e": 478,
+        "0x1f": 197,
+        "0x20": 28811,
+        "0x22": 7181,
+        "0x3": 48,
+        "0x4": 78,
+        "0x6": 839,
+        "0x7": 312,
+        "0xa": 884
+      },
+      "logicalCombinedSHA256": "7500a728e035e9be151d209201fca1f9bd4a9a89a75b15de1a2793cf4b8e422f",
+      "logicalHashNote": "Internal file names, sizes and payloads; only CommonHeader creation-date bytes 14..20 are zeroed for hashing. IMG archive headers are excluded. Output bytes are never modified.",
+      "logicalTileSHA256": {
+        "49030001.img": "dfcb0df87acb4853b52f7c107cad9958033d7513ef0463fac26f9009c31edf63",
+        "49030002.img": "47e54d9dfc5e39628729660c50da0dabf79b559ed209a6046b8d7807b0320a80",
+        "49030003.img": "f86a277a87c87a79b9bb7e6be74878d16e1ef2a8fa6202b6a89aefbb19c064ed",
+        "49030004.img": "619b7efd36d459bedd7350476382dcdcebcadc6fc71fd91c2c96f14e59c97f1b",
+        "49030005.img": "9b625ed838e0c594f750351eaa171cd62754bb766c3ae150f4a121d69805051a",
+        "49030006.img": "4ac7224f25ac2d7f940f8b6d07261a5d592b8f2e2bef7b5175a237cff0224645",
+        "49030007.img": "5df3070acd5f95538d22abf3430094a5bd5cd8af5d04d371701807b0a8cbd77d",
+        "49030008.img": "e7bf678c33ce4c995ce9ed32a4f126c9b118ad61746356f7f85238e95e864d20"
+      },
+      "pointInstancesAtHighestDetail": {
+        "0x10001": 40,
+        "0x10002": 333,
+        "0x10003": 291,
+        "0x10006": 770,
+        "0x2f0b": 21,
+        "0x600": 4,
+        "0x650c": 20,
+        "0x6603": 37,
+        "0x6615": 280,
+        "0x6616": 751,
+        "0x800": 91,
+        "0xb00": 122,
+        "0xc00": 19
+      },
+      "polygonInstancesAtHighestDetail": {
+        "0x10101": 216,
+        "0x10102": 651,
+        "0x10103": 249,
+        "0x10104": 469,
+        "0x10107": 1,
+        "0x10109": 133,
+        "0x1010a": 255,
+        "0x1010b": 14,
+        "0x1010c": 421,
+        "0x13": 9536,
+        "0x32": 8,
+        "0x3c": 247,
+        "0x50": 5371,
+        "0x51": 14,
+        "0x54": 15
+      },
+      "routing": false,
+      "subfileBytes": {
+        "DEM": 8875661,
+        "LBL": 53310,
+        "MPS": 705,
+        "RGN": 16016577,
+        "SRT": 912,
+        "TRE": 203121,
+        "TYP": 3037
+      },
+      "tiles": 8
+    },
+    "output": {
+      "bytes": 25229312,
+      "path": "regions/upper-svaneti/garmin/dist/OpenBareMap-Upper-Svaneti.img",
+      "sha256": "9464b1d46e444b2c8521da234f8298c722b3293aed554505b8eae39a50c3d231"
+    },
+    "routing": false,
+    "status": "compiled and structurally inspected; hardware rendering pending"
+  },
+  "geometryProcessing": {
+    "contours": 11217,
+    "grid": {
+      "grid_10km": 20,
+      "grid_1km": 182
+    },
+    "landcover": {
+      "empty_source_areas": [],
+      "features": 4664,
+      "permanentIce": {
+        "glacier": 269,
+        "permanent_snow": 0
+      },
+      "retained": 415,
+      "smoothed": 4249
+    }
+  },
+  "irelandGarminPackageRevision": "2.0.1-trail-detail-r1",
+  "irelandPreserved": true,
+  "labelGlyphs": {
+    "Open Sans Bold": true,
+    "Open Sans Regular": true,
+    "Open Sans Semibold": true
+  },
+  "landBackground": {
+    "adishi": {
+      "coordinate": [
+        42.99,
+        42.998
+      ],
+      "verifiedZooms": [
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    },
+    "chalaadi-glacier": {
+      "coordinate": [
+        42.69,
+        43.117
+      ],
+      "verifiedZooms": [
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    },
+    "ipral\u0131": {
+      "coordinate": [
+        43.063,
+        42.938
+      ],
+      "verifiedZooms": [
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    },
+    "mestia": {
+      "coordinate": [
+        42.727,
+        43.045
+      ],
+      "verifiedZooms": [
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    },
+    "shkhara-glacier": {
+      "coordinate": [
+        43.106,
+        42.974
+      ],
+      "verifiedZooms": [
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    },
+    "ushguli": {
+      "coordinate": [
+        43.017,
+        42.916
+      ],
+      "verifiedZooms": [
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    },
+    "zhabeshi": {
+      "coordinate": [
+        42.853,
+        43.039
+      ],
+      "verifiedZooms": [
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    }
+  },
+  "packages": {
+    "android": {
+      "checkedFiles": 47,
+      "nativeDeviceRenderingTested": false,
+      "sourceFiles": {
+        "basemap": "maps/basemap.mbtiles",
+        "coast": "maps/coast.mbtiles",
+        "hillshade": "maps/hillshade.mbtiles",
+        "topography": "maps/topography.mbtiles",
+        "utm-grid": "maps/grid.mbtiles"
+      }
+    },
+    "ios": {
+      "checkedFiles": 50,
+      "nativeDeviceRenderingTested": false,
+      "sourceFiles": {
+        "basemap": "maps/basemap.mbtiles",
+        "coast": "maps/coast.mbtiles",
+        "hillshade": "maps/hillshade.mbtiles",
+        "topography": "maps/topography.mbtiles",
+        "utm-grid": "maps/grid.mbtiles"
+      }
+    }
+  },
+  "permanentIceSourceCounts": {
+    "glacier": 269,
+    "permanent_snow": 0
+  },
+  "region": "upper-svaneti",
+  "status": "automated checks passed; visual and hardware acceptance pending"
+}

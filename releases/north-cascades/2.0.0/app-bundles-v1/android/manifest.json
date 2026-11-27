@@ -1,0 +1,33 @@
+{
+  "bytes": 65007022,
+  "datasets": {
+    "basemap": {
+      "path": "maps/basemap.mbtiles",
+      "sha256": "6d8657f4e40be54dac51b6ccb77ca8a61773f987383e00c3ceacbd3b9bbcfa26"
+    },
+    "coast": {
+      "derivedFrom": "23bbf09695f19631e2e45dc56f08f180b4bad748acf4cce5b73fa3403366a089",
+      "path": "maps/coast.mbtiles",
+      "sha256": "3ee291309c26f825a32866db68ad4b62a89e7175e5e4cf3b9348eae150e79d80"
+    },
+    "grid": {
+      "path": "maps/grid.mbtiles",
+      "sha256": "d1ef6cc1019e3afd742eb63ba91fda9fae326e1f5841d6cfe038cac9759fbfd1"
+    },
+    "hillshade": {
+      "path": "maps/hillshade.mbtiles",
+      "sha256": "4f1910529c6f18cb5b21e091632a4630e1d0ea47b33a3426058fc99218e1dac5"
+    },
+    "topography": {
+      "path": "maps/topography.mbtiles",
+      "sha256": "23bbf09695f19631e2e45dc56f08f180b4bad748acf4cce5b73fa3403366a089"
+    }
+  },
+  "instructionsSHA256": "9a686fbeb342b748d22737d5ca3f807b7f8f6594adf572dd35f3388987967dff",
+  "instructionsURL": "https://downloads.appsbyonzy.dev/OpenBareMap/north-cascades/2.0.0/app-bundles-v1/android/instructions.txt",
+  "localPath": "releases/north-cascades/2.0.0/app-bundles-v1/android/OpenBareMap-North-Cascades-Android-Bundle.zip",
+  "mapManifestSHA256": "b1a8649b03a5c980d2a8bfb23106c80cd09f06d7bf56a268fdb1634b46b2dd7d",
+  "r2Key": "OpenBareMap/north-cascades/2.0.0/app-bundles-v1/android/OpenBareMap-North-Cascades-Android-Bundle.zip",
+  "sha256": "745926d802102980ce5b5e1eabd248dae47719e939d6d0fff10eb18d589c7aeb",
+  "url": "https://downloads.appsbyonzy.dev/OpenBareMap/north-cascades/2.0.0/app-bundles-v1/android/OpenBareMap-North-Cascades-Android-Bundle.zip"
+}

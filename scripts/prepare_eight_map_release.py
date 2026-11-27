@@ -213,6 +213,10 @@ def prepare(region, edition):
         output['terrainCacheRegion'] = terrain_cache
     else:
         output.pop('terrainCacheRegion', None)
+    if padding_fallback := edition.get('copernicus_padding_fallback'):
+        output['copernicusPaddingFallback'] = padding_fallback
+    else:
+        output.pop('copernicusPaddingFallback', None)
     if len(edition['sources']) > 1:
         output['sourceOutputStem'] = region
     else:

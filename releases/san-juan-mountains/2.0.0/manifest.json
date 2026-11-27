@@ -1,0 +1,106 @@
+{
+  "acceptance": "Automated checks only; see validation and visual-review records for actual reviewed scope.",
+  "coverage": "The San Juan Mountains around Silverton and Ouray, including Ice Lakes Basin, Telluride and the principal walking and road approaches.",
+  "datasets": {
+    "basemap": {
+      "bytes": 13504512,
+      "path": "releases/san-juan-mountains/2.0.0/maps/basemap.mbtiles",
+      "sha256": "cda556bd9556764d7a81efcb59770aacae7a65708d1d08280342dfee9b4d81df",
+      "validation": {
+        "empty_tile_count": 1,
+        "logical_tiles_sha256": "7bea5a6156c40bc0bc96e6f12fb60a59d6217a5e65dd6ae13756d5bdaed9c346",
+        "tile_count": 1531
+      }
+    },
+    "grid": {
+      "bytes": 569344,
+      "path": "releases/san-juan-mountains/2.0.0/maps/grid.mbtiles",
+      "sha256": "59a7af6ff3b6c95ee6cf5e69a2bebb1e622d40b6941d8b21658193ac719a5277",
+      "validation": {
+        "empty_tile_count": 0,
+        "logical_tiles_sha256": "d36f6cfe4a6c07d05137616f205f25c53b9ce19714179933bb9dc132881a4531",
+        "tile_count": 1519
+      }
+    },
+    "hillshade": {
+      "bytes": 5042176,
+      "path": "releases/san-juan-mountains/2.0.0/maps/hillshade.mbtiles",
+      "sha256": "c994d6ab570928c603994db859c0613cf1b998dbe4b5d9983087d718745a6ee7",
+      "validation": {
+        "empty_tile_count": 0,
+        "logical_tiles_sha256": "4cf64b2a19d8836063de772f757ad57f6f5f7539811c4f0a3f666ab8d9f03389",
+        "tile_count": 126
+      }
+    },
+    "topography": {
+      "bytes": 36044800,
+      "path": "releases/san-juan-mountains/2.0.0/maps/topography-context.mbtiles",
+      "sha256": "e8292b9c94bbb412900c671677ae065d3f01869b70f108631551d2a32c4ffdf4",
+      "validation": {
+        "empty_tile_count": 51726,
+        "logical_tiles_sha256": "c89a241c1b72757e6f19d26a8a04142648797038642db3c2907bc204794db8af",
+        "tile_count": 56822
+      }
+    }
+  },
+  "garmin": {
+    "bytes": 13244416,
+    "path": "regions/san-juan-mountains/garmin/dist/OpenBareMap-San-Juan-Mountains.img",
+    "sha256": "2ba552f1aa498f52ee6b8b4166e3ca74b69daa5140d840880597fef3ad62cf8d"
+  },
+  "geometryReport": {
+    "path": "build/san-juan-mountains-geometry/geometry-report.json",
+    "sha256": "8a3af3dff56619c9d5902d45cf193cf8023a4b00a8ea54856f3d4f85c494ea74"
+  },
+  "hostAppsModified": false,
+  "mapVersion": "2.0.0",
+  "osm": {
+    "bytes": 9160950,
+    "operation": "Complete-feature bbox extraction with nested relation references",
+    "path": "data/regions/san-juan-mountains/colorado-261120.osm.clipped.osm.pbf",
+    "replicationTimestamp": "2026-11-20T21:21:21Z",
+    "sha256": "c6b67cea75b5a4ad7bd41be10c9bbba30bcf39c93edb114ea3abba0ad657ad89",
+    "snapshot_date": "2026-11-20",
+    "url": "https://download.geofabrik.de/north-america/us/colorado/colorado-261120.osm.pbf"
+  },
+  "packages": {
+    "android": {
+      "archive": {
+        "bytes": 59150253,
+        "path": "regions/san-juan-mountains/android/OpenBareMap-Android.zip",
+        "sha256": "0ce7f9fd9ff8dff48786a92039abe2fa7b058b495365a0157c9a00f332a4fa01"
+      },
+      "checksumsSHA256": "4c152757a581e3dfbb222f4b3393c238446dade3a860d71b2b4745807d01fcc6",
+      "manifestSHA256": "333d359d63e0ae6276b2e2fc0fc8829e62f2567e0d3a7759bf053d60420a713c",
+      "path": "regions/san-juan-mountains/android",
+      "validationSHA256": "ea4ffa2fd0fc71e197f423ac4e9b1c882e1a44d5d70871e624dd042698bd6cda"
+    },
+    "ios": {
+      "checksumsSHA256": "189b65e19c2c1305e2c74da2cbf6dd09c6fefb09c88911d3901bc77eab05d534",
+      "manifestSHA256": "c3bfeaa1ede44cba52c9e837e245bcd19df0578fedb37fd2066b110fb200e39c",
+      "path": "regions/san-juan-mountains/ios",
+      "validationSHA256": "a7eedb8c52813e9bfcfccfdf9ccec5c8dfa53de09d797f1534ef6351b903e572"
+    }
+  },
+  "pythonRuntime": {
+    "packages": {
+      "Pillow": "12.3.0",
+      "certifi": "2026.10.23",
+      "charset-normalizer": "3.5.2",
+      "idna": "3.20",
+      "numpy": "2.5.4",
+      "osmium": "4.3.2",
+      "pyproj": "3.8.0",
+      "requests": "2.34.2",
+      "shapely": "2.2.0",
+      "urllib3": "2.8.0"
+    },
+    "platform": "macOS-27.2.1-arm64-arm-64bit-Mach-O",
+    "python": "3.14.5 (main, May 10 2026, 10:21:34) [Clang 21.0.0 (clang-2100.0.123.102)]",
+    "requirementsSHA256": "427f12ff8b49bfebac0a7d453c2f65bd15d6695584b18e6ecee1fdfeed20a36c"
+  },
+  "region": "san-juan-mountains",
+  "styleSHA256": "5df86f0fd0f8f6c4884604a983a5b7809f6cc51acf5edc38b3936ffb24de7c36",
+  "terrainLockSHA256": "22e112c33724be71be652f9b3e6413a49b722e10038d66b51f10c9151678654b",
+  "validation": "validation.json"
+}

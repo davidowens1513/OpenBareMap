@@ -1,0 +1,52 @@
+{
+  "contourIntervalMetres": 20,
+  "coverage": "North Cascades National Park around Cascade Pass and Sahale Arm, including Marblemount, the Cascade River Road and principal trailhead approaches.",
+  "datasets": {
+    "basemap": {
+      "bytes": 9515008,
+      "path": "releases/north-cascades/2.0.0/maps/basemap.mbtiles",
+      "sha256": "6d8657f4e40be54dac51b6ccb77ca8a61773f987383e00c3ceacbd3b9bbcfa26",
+      "validation": {
+        "empty_tile_count": 5,
+        "logical_tiles_sha256": "a3a69babbee479c8e5b1f239bbe3338c276d8b9f7590a6dc98a70620d9598ef5",
+        "tile_count": 1805
+      }
+    },
+    "grid": {
+      "bytes": 614400,
+      "path": "releases/north-cascades/2.0.0/maps/grid.mbtiles",
+      "sha256": "d1ef6cc1019e3afd742eb63ba91fda9fae326e1f5841d6cfe038cac9759fbfd1",
+      "validation": {
+        "empty_tile_count": 0,
+        "logical_tiles_sha256": "4bb85c1f12cc88dd4e45b251ffc397403e86c0c2b734e36087be93eb590dc342",
+        "tile_count": 1832
+      }
+    },
+    "hillshade": {
+      "bytes": 5672960,
+      "path": "releases/north-cascades/2.0.0/maps/hillshade.mbtiles",
+      "sha256": "4f1910529c6f18cb5b21e091632a4630e1d0ea47b33a3426058fc99218e1dac5",
+      "validation": {
+        "empty_tile_count": 0,
+        "logical_tiles_sha256": "24ce8166bc1a22c7f4595671b965989f51cfbddee8d90878ed18229086ee637a",
+        "tile_count": 147
+      }
+    },
+    "topography": {
+      "bytes": 44609536,
+      "path": "releases/north-cascades/2.0.0/maps/topography-context.mbtiles",
+      "sha256": "23bbf09695f19631e2e45dc56f08f180b4bad748acf4cce5b73fa3403366a089",
+      "validation": {
+        "empty_tile_count": 45397,
+        "logical_tiles_sha256": "c05f241e6719ab54e9c50e9c9420d47e30a66f62e877799c9759c292fdb5b0d2",
+        "tile_count": 50406
+      }
+    }
+  },
+  "format": "openbaremap-development-viewer-v1",
+  "localBorders": false,
+  "mapVersion": "2.0.0",
+  "region": "north-cascades",
+  "storageRevision": "2.0.0-north-cascades-r3",
+  "styleRevision": "2.0.0-north-cascades-r1"
+}
