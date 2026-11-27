@@ -66,14 +66,26 @@ def card(region, entries):
     )
 
 
+def matching_div_close(page, opening):
+    depth = 0
+    for match in re.finditer(r'</?div\b[^>]*>', page[opening:], flags=re.I):
+        if match.group().startswith('</'):
+            depth -= 1
+            if depth == 0:
+                return opening + match.start()
+        else:
+            depth += 1
+    raise ValueError('Unclosed map region grid')
+
+
 def render_homepage(website, entries, _downloads, count):
     page = website.read_text()
     for region in EIGHT_MAP_RELEASE_REGIONS:
         page = re.sub(rf'<article id="map-{re.escape(region)}">.*?</article>', '', page, flags=re.S)
     for group, (_label, regions) in GROUPS.items():
         start = page.index(f'<div id="{group}"')
-        end = page.index('<div id="', start + 1) if '<div id="' in page[start + 1:] else page.index('</section>', start)
-        grid_end = page.rindex('</div></div>', start, end)
+        grid_start = page.index('<div class="map-regions">', start)
+        grid_end = matching_div_close(page, grid_start)
         cards = ''.join(card(region, entries[region]) for region in regions)
         page = page[:grid_end] + cards + page[grid_end:]
     for phrase in ('OpenBareMap editions from within the app', 'offline hiking maps with'):
