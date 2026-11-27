@@ -1,0 +1,41 @@
+{
+  "regions": {
+    "cape-peninsula": {
+      "basemap": {
+        "sourceSHA256": "987c829be5f6c8e480ea9c0159721222c02bd2b63581632c1ad2ae58cb34bf39",
+        "bytes": 20045165,
+        "sha256": "a49a3f2edf076688af7c398ad5e105126c7ecf614eac3f2054a2a52b3a1ebf94",
+        "tiles": 385
+      },
+      "grid": {
+        "sourceSHA256": "49142639f0a86de70f14fee2cca8238fa513f65061379c5ccae04cdc1b8f6230",
+        "bytes": 225440,
+        "sha256": "a2bf887bfc537e7af029b8b4002cdb2c3913fb7ae7294beba8df8dd167d91d8f",
+        "tiles": 713
+      },
+      "hillshade": {
+        "sourceSHA256": "524f7e706279aca3783b893b365eb7fd5f71721c8f21c6df5af866d46a9b86f5",
+        "bytes": 704118,
+        "sha256": "3e963a077e8599197f5ecdf050fe1876c81292713c8088afd96da5ff34d0b873",
+        "tiles": 44
+      },
+      "topography": {
+        "sourceSHA256": "3f434a7e7d54fa70c0b1046a314625a34729fa6e62a3d2f50ecdb7928e09b62d",
+        "bytes": 2221016,
+        "sha256": "27d69879ccefa9c8a44c6f4e1bf649927998929e999c158b5ed237c1d143e5cf",
+        "tiles": 17607
+      },
+      "coast": {
+        "sourceSHA256": "3d76db731c75230e06a69c25032c12ea4b0adea72d5ccbbf5fd70efd1d9a4b37",
+        "bytes": 216962,
+        "sha256": "d8072a6901c2b33aba9271ce478b13e7f70cde668eda9066bca7861ea9004431",
+        "tiles": 1179
+      }
+    }
+  },
+  "pmtilesPython": "3.8.1",
+  "pmtilesJS": "4.5.0",
+  "librarySHA256": "caf981bc46f6327ee7e65d5dc964d89d38a69f60edca2bd4c5c890c21b554c6c",
+  "dataOrigin": "https://downloads.appsbyonzy.dev/OpenBareMap/cape-peninsula/2.0.0/preview",
+  "scope": "Complete selected map tiles; no regional or zoom sampling."
+}

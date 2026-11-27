@@ -1,0 +1,29 @@
+{
+  "accessed_utc": "2026-11-27T12:02:41.200731+00:00",
+  "inputs": [
+    {
+      "bytes": 424428313,
+      "path": "data/regions/gran-sasso/sud-261126.osm.pbf",
+      "replicationTimestamp": "2026-11-26T21:21:01Z",
+      "sha256": "a1226b4982d93fa090afa2a703e3fcbab62ae95aa6d33b854f4c14106ab4efd3",
+      "url": "https://download.geofabrik.de/europe/italy/sud/sud-261126.osm.pbf"
+    }
+  ],
+  "osm": {
+    "bytes": 35587836,
+    "operation": "Complete-feature bbox extraction with nested relation references",
+    "path": "data/regions/gran-sasso/sud-261126.osm.clipped.osm.pbf",
+    "replicationTimestamp": "2026-11-26T21:21:01Z",
+    "sha256": "a96e61c21f0191c056a905a3f6b90b701f6cbf704b1b8c4f0498a9816adcc817",
+    "snapshot_date": "2026-11-26",
+    "url": "https://download.geofabrik.de/europe/italy/sud/sud-261126.osm.pbf"
+  },
+  "polygons": [
+    {
+      "bytes": 1410,
+      "path": "data/regions/gran-sasso/sud.poly",
+      "sha256": "0aa952089c59dd862774fa53c8576c4e081fd196f8efe0e4c97ab87267850711",
+      "url": "https://download.geofabrik.de/europe/italy/sud/sud.poly"
+    }
+  ]
+}

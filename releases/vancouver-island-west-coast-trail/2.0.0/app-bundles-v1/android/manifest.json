@@ -1,0 +1,33 @@
+{
+  "bytes": 58628124,
+  "datasets": {
+    "basemap": {
+      "path": "maps/basemap.mbtiles",
+      "sha256": "77b2779d0fa6120e3268c1650222bfc29830fd4f4744b3b7e81e04cb5006c368"
+    },
+    "coast": {
+      "derivedFrom": "a5a2d35d726a8569cef277e30cc3e564059e0e06f8ecd3627e16df0c7f8bbcce",
+      "path": "maps/coast.mbtiles",
+      "sha256": "3e00a1a0cf5fe18e8a439eabf8f5888e908ad721298f884fb5d7fd774aa9e55c"
+    },
+    "grid": {
+      "path": "maps/grid.mbtiles",
+      "sha256": "1e410e6e6b3a9424e2ee5f198eb8783e1e44b2c12d9156612f7457790cf0abde"
+    },
+    "hillshade": {
+      "path": "maps/hillshade.mbtiles",
+      "sha256": "6847c2157358eba1473331966a267970563a16a3d3a7aa1c5e4df8ef48ae8a6e"
+    },
+    "topography": {
+      "path": "maps/topography.mbtiles",
+      "sha256": "a5a2d35d726a8569cef277e30cc3e564059e0e06f8ecd3627e16df0c7f8bbcce"
+    }
+  },
+  "instructionsSHA256": "9b3f28a86eb559815a2360ea8380cbe3775c24aa98dade444f08c6d20d31d078",
+  "instructionsURL": "https://downloads.appsbyonzy.dev/OpenBareMap/vancouver-island-west-coast-trail/2.0.0/app-bundles-v1/android/instructions.txt",
+  "localPath": "releases/vancouver-island-west-coast-trail/2.0.0/app-bundles-v1/android/OpenBareMap-Vancouver-Island-West-Coast-Trail-Android-Bundle.zip",
+  "mapManifestSHA256": "5c67e188ac663dd17f00a7f3e215609fe5755832a63fb64e857f9e9b141849c2",
+  "r2Key": "OpenBareMap/vancouver-island-west-coast-trail/2.0.0/app-bundles-v1/android/OpenBareMap-Vancouver-Island-West-Coast-Trail-Android-Bundle.zip",
+  "sha256": "86126122fd966b1a7151383951abf2d5899cbbe359afe95ff64e006646dd345c",
+  "url": "https://downloads.appsbyonzy.dev/OpenBareMap/vancouver-island-west-coast-trail/2.0.0/app-bundles-v1/android/OpenBareMap-Vancouver-Island-West-Coast-Trail-Android-Bundle.zip"
+}

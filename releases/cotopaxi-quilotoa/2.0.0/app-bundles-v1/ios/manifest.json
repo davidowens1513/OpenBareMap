@@ -1,0 +1,35 @@
+{
+  "bytes": 75382633,
+  "datasets": {
+    "basemap": {
+      "path": "maps/basemap.mbtiles",
+      "sha256": "3d9aa7a8e59e20c65877cd30d3118e0d424530476c8f5864e517777135fb1ad9"
+    },
+    "coast": {
+      "derived_from": "89ebf7ea2810f84dfa204a4a466834ff33f9bedb613d14fc54788c26a74f9680",
+      "maxzoom": 12,
+      "operation": "Preserve land-layer MVT bytes only through zoom 12; omit other layers.",
+      "path": "maps/coast.mbtiles",
+      "sha256": "129aa1875a26c5f0a59d111702af9b40904b47c448cf52e1a6dde95326429587"
+    },
+    "grid": {
+      "path": "maps/grid.mbtiles",
+      "sha256": "dea9e533bea0978d027b9cc3dd23a550dcbb03f8a7332b6d349b649ad8629eb0"
+    },
+    "hillshade": {
+      "path": "maps/hillshade.mbtiles",
+      "sha256": "369be9aedbb4d8020299467868703a1659c54ef43f0abb6279084bab4820c96f"
+    },
+    "topography": {
+      "path": "maps/topography.mbtiles",
+      "sha256": "89ebf7ea2810f84dfa204a4a466834ff33f9bedb613d14fc54788c26a74f9680"
+    }
+  },
+  "instructionsSHA256": "321805f236327e51a8980390b9cafd7156647e66da8818e11cf6acbe084a0f4e",
+  "instructionsURL": "https://downloads.appsbyonzy.dev/OpenBareMap/cotopaxi-quilotoa/2.0.0/app-bundles-v1/ios/instructions.txt",
+  "localPath": "releases/cotopaxi-quilotoa/2.0.0/app-bundles-v1/ios/OpenBareMap-Cotopaxi-Quilotoa-iOS-Bundle.zip",
+  "mapManifestSHA256": "ad0bdedbb2f109421f0a8cacbebb67145e68ff74ecdc644add0a029be35a7d00",
+  "r2Key": "OpenBareMap/cotopaxi-quilotoa/2.0.0/app-bundles-v1/ios/OpenBareMap-Cotopaxi-Quilotoa-iOS-Bundle.zip",
+  "sha256": "5660c80651fca679433e99096f4050788c8d8e2e6553634b9beecf426bbdd082",
+  "url": "https://downloads.appsbyonzy.dev/OpenBareMap/cotopaxi-quilotoa/2.0.0/app-bundles-v1/ios/OpenBareMap-Cotopaxi-Quilotoa-iOS-Bundle.zip"
+}

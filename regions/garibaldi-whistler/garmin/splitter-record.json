@@ -1,0 +1,21 @@
+{
+  "combinedSHA256": "abf8ffa256877748f84ceb9eb40d0dc3c5b9134dffe739b26f8910e696a1ab84",
+  "command": [
+    "/opt/homebrew/opt/openjdk@21/libexec/openjdk.jdk/Contents/Home/bin/java",
+    "-Xmx6g",
+    "-jar",
+    "/Volumes/Extreme SSD/Projects/OpenBareMap/work/eight-map-release/git-openbaremap/garmin/tools/splitter-r654/splitter.jar",
+    "--mapid=48960001",
+    "--description=OpenBareMap Garibaldi & Whistler",
+    "--max-nodes=1000000",
+    "--max-threads=2",
+    "--keep-complete=true",
+    "--output=pbf",
+    "--polygon-file=/Volumes/Extreme SSD/Projects/OpenBareMap/work/eight-map-release/git-openbaremap/regions/garibaldi-whistler/garmin/coverage.poly",
+    "--output-dir=/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/5a16016edf00/garibaldi-whistler/garmin/split",
+    "--ignore-osm-bounds=true",
+    "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/5a16016edf00/garibaldi-whistler/garmin/combined.osm.pbf"
+  ],
+  "coverageSHA256": "6161262d2c3b738804ac22d1f819dcaebac3b4145b5d233b73176578919e151b",
+  "ignoreSourceHeaderBounds": true
+}

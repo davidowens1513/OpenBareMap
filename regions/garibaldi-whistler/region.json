@@ -1,0 +1,170 @@
+{
+  "appBundleName": "Garibaldi-Whistler",
+  "bounds": [
+    -123.3,
+    49.65,
+    -122.65,
+    50.25
+  ],
+  "clipBasemap": true,
+  "clipSource": true,
+  "clipTerrainToBounds": true,
+  "coastContextBounds": [
+    -125,
+    48,
+    -121,
+    52
+  ],
+  "contourIntervalMetres": 20,
+  "coverage": "Garibaldi Provincial Park and Whistler, including the Sea to Sky corridor, Garibaldi Lake, Black Tusk, Elfin Lakes, Wedgemount Lake and the Fitzsimmons Range.",
+  "destinationLabels": {
+    "black-tusk": "Black Tusk",
+    "elfin-lakes": "Elfin Lakes",
+    "garibaldi-lake": "Garibaldi Lake",
+    "island": "Garibaldi & Whistler",
+    "panorama-ridge": "Panorama Ridge",
+    "squamish": "Squamish",
+    "wedgemount-lake": "Wedgemount Lake",
+    "whistler": "Whistler"
+  },
+  "destinations": {
+    "black-tusk": [
+      -123.042,
+      49.968,
+      13
+    ],
+    "elfin-lakes": [
+      -122.988,
+      49.761,
+      13
+    ],
+    "garibaldi-lake": [
+      -123.031,
+      49.934,
+      13
+    ],
+    "island": [
+      -122.975,
+      49.95,
+      9
+    ],
+    "panorama-ridge": [
+      -123.027,
+      49.955,
+      13
+    ],
+    "squamish": [
+      -123.156,
+      49.701,
+      13
+    ],
+    "wedgemount-lake": [
+      -122.806,
+      50.171,
+      13
+    ],
+    "whistler": [
+      -122.957,
+      50.116,
+      13
+    ]
+  },
+  "garminContextBounds": [
+    -123.3,
+    49.65,
+    -122.65,
+    50.25
+  ],
+  "garminFamilyId": 4896,
+  "garminFilename": "OpenBareMap-Garibaldi-Whistler.img",
+  "garminPackageRevision": "2.0.0-r1",
+  "garminTileStartId": 48960001,
+  "garminUseSourceOutline": true,
+  "garminVersionedDelivery": true,
+  "gridCRS": "EPSG:32610",
+  "gridExtent": [
+    470000,
+    530000,
+    5490000,
+    5570000
+  ],
+  "gridName": "WGS 84 / UTM zone 10N",
+  "gridSource": "utm-grid",
+  "id": "garibaldi-whistler",
+  "ignoreSourceHeaderBounds": true,
+  "inspectionNames": [
+    "Whistler"
+  ],
+  "label": "Garibaldi & Whistler",
+  "labelGlyphs": "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz",
+  "mapVersion": "2.0.0",
+  "maxzoom": 14,
+  "minorWaterwayMinzoom": 10,
+  "minzoom": 4,
+  "name": "OpenBareMap Garibaldi & Whistler",
+  "nativeLanguage": "en",
+  "optionalBasemapLayers": [
+    "ferry",
+    "island_name",
+    "cycling_route",
+    "railway",
+    "station",
+    "hiking_route",
+    "boundary"
+  ],
+  "permanentIce": true,
+  "projectedCRS": "EPSG:32610",
+  "repairClippedCoastline": true,
+  "requireBogFeatures": false,
+  "sourceBaseOverrides": {
+    "british-columbia": "https://download.geofabrik.de/north-america/canada/british-columbia/"
+  },
+  "sourceBaseURL": "https://download.geofabrik.de/north-america/canada/",
+  "sourceCacheRegion": "canadian-rockies",
+  "sourceDate": "2026-11-20",
+  "sourceSlugs": [
+    "british-columbia"
+  ],
+  "styleRevision": "2.0.0-garibaldi-whistler-r1",
+  "terrainAttribution": "Copernicus DEM GLO-30 \u00b7 European Union / ESA \u00b7 DLR / Airbus",
+  "terrainBounds": [
+    -124,
+    49,
+    -122,
+    51
+  ],
+  "terrainCacheRegion": "canadian-rockies",
+  "terrainNotice": "Garibaldi & Whistler elevation: Copernicus DEM GLO-30 Public (AWS 2021 release).\n\nproduced using Copernicus WorldDEM-30 \u00a9 DLR e.V. 2010-2014 and \u00a9 Airbus Defence and Space GmbH 2014-2018 provided under COPERNICUS by the European Union and ESA; all rights reserved\n\nThe organisations in charge of the Copernicus programme by law or by delegation do not incur any liability for any use of the Copernicus WorldDEM-30.\n\nLicense: https://dataspace.copernicus.eu/sites/default/files/media/files/2025-06/copernicus_contributing_mission_data_access_v2_cop_dem_licenses.pdf\nSource: https://registry.opendata.aws/copernicus-dem/\nVertical datum: EGM2008 orthometric metres. Native approximately 30 m cells are bilinearly resampled to point-aligned Int16 HGT for the shared terrain pipeline. Ocean-only cells absent from the official public inventory are zero.\n",
+  "terrainProvider": "copernicus-glo30",
+  "townlands": false,
+  "validationAnchors": {
+    "black-tusk": [
+      -123.042,
+      49.968
+    ],
+    "elfin-lakes": [
+      -122.988,
+      49.761
+    ],
+    "garibaldi-lake": [
+      -123.031,
+      49.934
+    ],
+    "panorama-ridge": [
+      -123.027,
+      49.955
+    ],
+    "squamish": [
+      -123.156,
+      49.701
+    ],
+    "wedgemount-lake": [
+      -122.806,
+      50.171
+    ],
+    "whistler": [
+      -122.957,
+      50.116
+    ]
+  }
+}

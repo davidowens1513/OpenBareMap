@@ -1,0 +1,39 @@
+{
+  "features": [
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              18.25,
+              -34.38
+            ],
+            [
+              18.25,
+              -33.82
+            ],
+            [
+              18.58,
+              -33.82
+            ],
+            [
+              18.58,
+              -34.38
+            ],
+            [
+              18.25,
+              -34.38
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "properties": {
+        "purpose": "Limit opaque native background and land-cover polygons; retain complete accepted OSM and terrain inputs",
+        "region": "cape-peninsula"
+      },
+      "type": "Feature"
+    }
+  ],
+  "type": "FeatureCollection"
+}

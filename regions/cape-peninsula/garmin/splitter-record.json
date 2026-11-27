@@ -1,0 +1,21 @@
+{
+  "combinedSHA256": "9c0906e3d39bd7525ce3db5db97c5964b3273cd5611374d7a5b50e9312cc5eae",
+  "command": [
+    "/opt/homebrew/opt/openjdk@21/libexec/openjdk.jdk/Contents/Home/bin/java",
+    "-Xmx6g",
+    "-jar",
+    "/Volumes/Extreme SSD/Projects/OpenBareMap/work/eight-map-release/git-openbaremap/garmin/tools/splitter-r654/splitter.jar",
+    "--mapid=48930001",
+    "--description=OpenBareMap Cape Peninsula",
+    "--max-nodes=1000000",
+    "--max-threads=2",
+    "--keep-complete=true",
+    "--output=pbf",
+    "--polygon-file=/Volumes/Extreme SSD/Projects/OpenBareMap/work/eight-map-release/git-openbaremap/regions/cape-peninsula/garmin/coverage.poly",
+    "--output-dir=/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/5a16016edf00/cape-peninsula/garmin/split",
+    "--ignore-osm-bounds=true",
+    "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/5a16016edf00/cape-peninsula/garmin/combined.osm.pbf"
+  ],
+  "coverageSHA256": "694712a07c6cb627c9103837eed911596090a432d91ea22e7fab3c75349b1c77",
+  "ignoreSourceHeaderBounds": true
+}

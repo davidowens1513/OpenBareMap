@@ -1,0 +1,41 @@
+{
+  "regions": {
+    "vancouver-island-west-coast-trail": {
+      "basemap": {
+        "sourceSHA256": "77b2779d0fa6120e3268c1650222bfc29830fd4f4744b3b7e81e04cb5006c368",
+        "bytes": 10180456,
+        "sha256": "7471f061bcea3394608d55b2805b084ff8f738eae6b9441244c64dfb46f60cdb",
+        "tiles": 3058
+      },
+      "grid": {
+        "sourceSHA256": "1e410e6e6b3a9424e2ee5f198eb8783e1e44b2c12d9156612f7457790cf0abde",
+        "bytes": 866296,
+        "sha256": "16b800935c4c035fb8ab07788c19207e49bf9a741df0c5cc3ddabc99a8173a20",
+        "tiles": 3037
+      },
+      "hillshade": {
+        "sourceSHA256": "6847c2157358eba1473331966a267970563a16a3d3a7aa1c5e4df8ef48ae8a6e",
+        "bytes": 5371537,
+        "sha256": "a550cd78075f5304a072e44825f365a672f78d16473b5b52fe6a6943b7537533",
+        "tiles": 165
+      },
+      "topography": {
+        "sourceSHA256": "a5a2d35d726a8569cef277e30cc3e564059e0e06f8ecd3627e16df0c7f8bbcce",
+        "bytes": 28783852,
+        "sha256": "24a970f0033445ce27ec68f0e9df1f2ed73f496b2a1cce7056271644968d4f41",
+        "tiles": 47907
+      },
+      "coast": {
+        "sourceSHA256": "3e00a1a0cf5fe18e8a439eabf8f5888e908ad721298f884fb5d7fd774aa9e55c",
+        "bytes": 2933106,
+        "sha256": "be2474b8987f0cf786d8dac8cbed6b776e3187471f7fdab188307e333941abf4",
+        "tiles": 3233
+      }
+    }
+  },
+  "pmtilesPython": "3.8.1",
+  "pmtilesJS": "4.5.0",
+  "librarySHA256": "caf981bc46f6327ee7e65d5dc964d89d38a69f60edca2bd4c5c890c21b554c6c",
+  "dataOrigin": "https://downloads.appsbyonzy.dev/OpenBareMap/vancouver-island-west-coast-trail/2.0.0/preview",
+  "scope": "Complete selected map tiles; no regional or zoom sampling."
+}

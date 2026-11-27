@@ -1,0 +1,52 @@
+{
+  "builderSHA256": "df45d47a59e968508a89136d44d799aaf2bba52547b211e0dff68a5b0e0f6cfc",
+  "contextBounds": [
+    -127,
+    47,
+    -123,
+    51
+  ],
+  "note": "Contour payloads preserved exactly while extending land background outside edition coverage.",
+  "oldTopography": {
+    "bytes": 33284096,
+    "path": "releases/vancouver-island-west-coast-trail/2.0.0/maps/topography.mbtiles",
+    "sha256": "a41bf765ec224d49d23b0550974b9a28bf059701f1a6fb83eaed488012b6b6f4",
+    "validation": {
+      "empty_tile_count": 43132,
+      "logical_tiles_sha256": "2c55d430309a268e3492885490d432c9025d05a8579a440fdfe343d9e07974c0",
+      "tile_count": 47907
+    }
+  },
+  "output": {
+    "bytes": 33185792,
+    "path": "releases/vancouver-island-west-coast-trail/2.0.0/maps/topography-context.mbtiles",
+    "sha256": "a5a2d35d726a8569cef277e30cc3e564059e0e06f8ecd3627e16df0c7f8bbcce",
+    "validation": {
+      "empty_tile_count": 43132,
+      "logical_tiles_sha256": "2c55d430309a268e3492885490d432c9025d05a8579a440fdfe343d9e07974c0",
+      "tile_count": 47907
+    }
+  },
+  "replacement": {
+    "changed_tiles": 2993,
+    "path": "build/vancouver-island-west-coast-trail-coast-context/combined.mbtiles",
+    "replacement_feature_instances": 45052,
+    "sha256": "806111f24e73ad58d82ef004aca664905bd6cf81bdfa00b01a82761f586c1a9a",
+    "unchanged_other_layers_sha256": "eeb0e5cdc3d345ec260951e7f1100aba058966c77b81c9a5a26433ea112c0a7a",
+    "validation": {
+      "empty_tile_count": 43132,
+      "logical_tiles_sha256": "2c55d430309a268e3492885490d432c9025d05a8579a440fdfe343d9e07974c0",
+      "tile_count": 47907
+    }
+  },
+  "source": {
+    "accessed_utc": "2026-10-25T12:59:16.751893+00:00",
+    "bytes": 928538219,
+    "http_headers_path": "data/land-polygons.headers",
+    "license": "ODbL 1.0; OpenStreetMap contributors",
+    "path": "data/land-polygons-split-4326.zip",
+    "sha256": "5911e273096f9585425a17c30a8a98785cc33ed2718ff88987768933b8a327f7",
+    "source_snapshot": "HTTP Last-Modified 2026-10-25T03:43:12Z; this is file publication, not a guaranteed OSM snapshot timestamp",
+    "url": "https://osmdata.openstreetmap.de/download/land-polygons-split-4326.zip"
+  }
+}

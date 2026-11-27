@@ -1,0 +1,20 @@
+{
+  "inputs": [
+    {
+      "path": "regions/mount-rainier/garmin/inputs/contours.geojson.gz",
+      "sha256": "f132a38e32d0fcc61c7861c97a48050838a030e67c3c5aa50f761ee8ef945984",
+      "uncompressedSHA256": "9c61719affe247cadef033dee2662733d29fbb4cca06b6acbb306f8769ac6fef"
+    },
+    {
+      "path": "regions/mount-rainier/garmin/inputs/landcover.geojson.gz",
+      "sha256": "6c73aa4e35530dc47af64922c2e72e53b3765d5fbbca9eecad43088648c1d312",
+      "uncompressedSHA256": "a6bf9ce25dbe47f316e42f35681247c0d0daf1b53b016af5a4735f03b89adce5"
+    },
+    {
+      "path": "regions/mount-rainier/garmin/inputs/land.geojson.gz",
+      "sha256": "5e9c7bd6c34a041bd79931aaefe509a2c868bbf451c901faf93a8502a82053c0",
+      "uncompressedSHA256": "e8ed9282d29c94c1bba2bf942d0b229df22e04302baec7e331db8af6ed785f7e"
+    }
+  ],
+  "region": "mount-rainier"
+}

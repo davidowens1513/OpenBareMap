@@ -1,0 +1,35 @@
+{
+  "bytes": 64134644,
+  "datasets": {
+    "basemap": {
+      "path": "maps/basemap.mbtiles",
+      "sha256": "3399b99d00fb7b085bd2cea26ec3cc6595f69afe7f35d74c71dede203e178218"
+    },
+    "coast": {
+      "derived_from": "a96712b25c35a6166b124c5416d8e51624ba2062ef27dfcb5f947fe9213e5ed5",
+      "maxzoom": 12,
+      "operation": "Preserve land-layer MVT bytes only through zoom 12; omit other layers.",
+      "path": "maps/coast.mbtiles",
+      "sha256": "e3824396ffaadc1d85efde563f4095139fb16a70813423eced0c50c9272e2ef4"
+    },
+    "grid": {
+      "path": "maps/grid.mbtiles",
+      "sha256": "47d649a6b3072ed153004bc81c6ab920c8a691a9528f8470845b46ff041324e5"
+    },
+    "hillshade": {
+      "path": "maps/hillshade.mbtiles",
+      "sha256": "f508e054aa98ff19f79a9183f2f732b4f50a786935d133bfa5e45e26605b43d4"
+    },
+    "topography": {
+      "path": "maps/topography.mbtiles",
+      "sha256": "a96712b25c35a6166b124c5416d8e51624ba2062ef27dfcb5f947fe9213e5ed5"
+    }
+  },
+  "instructionsSHA256": "0d1a4984e224583c1205e73697a122336eee1cfccfaab6b41f8b8c9320c701d0",
+  "instructionsURL": "https://downloads.appsbyonzy.dev/OpenBareMap/garibaldi-whistler/2.0.0/app-bundles-v1/ios/instructions.txt",
+  "localPath": "releases/garibaldi-whistler/2.0.0/app-bundles-v1/ios/OpenBareMap-Garibaldi-Whistler-iOS-Bundle.zip",
+  "mapManifestSHA256": "d65a8f56a7a5c79495f7c7e42267e0f575f5a44f706deca7cd0b25f558581545",
+  "r2Key": "OpenBareMap/garibaldi-whistler/2.0.0/app-bundles-v1/ios/OpenBareMap-Garibaldi-Whistler-iOS-Bundle.zip",
+  "sha256": "08371bf619c455354072869c3246e7e018f36f874605e9b7174dc53701db7e23",
+  "url": "https://downloads.appsbyonzy.dev/OpenBareMap/garibaldi-whistler/2.0.0/app-bundles-v1/ios/OpenBareMap-Garibaldi-Whistler-iOS-Bundle.zip"
+}

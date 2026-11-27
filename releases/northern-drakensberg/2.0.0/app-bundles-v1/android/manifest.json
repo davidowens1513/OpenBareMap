@@ -1,0 +1,33 @@
+{
+  "bytes": 103813590,
+  "datasets": {
+    "basemap": {
+      "path": "maps/basemap.mbtiles",
+      "sha256": "57af0bd8507c7be5fb5795194fc78c3e374b6faaa8e8d6ee495e11d1d970b3c6"
+    },
+    "coast": {
+      "derivedFrom": "266957c4ae05af84c05ac46363450512134d4f11bb5610b7b2dfe58262c850eb",
+      "path": "maps/coast.mbtiles",
+      "sha256": "e2577f6a0be13e815687203ff1a99b6aaa9713223c88b04ac9910de62bd8272c"
+    },
+    "grid": {
+      "path": "maps/grid.mbtiles",
+      "sha256": "082dcab7c8346845be35fdb77acb93d342ec826a0145b315569582c7c105fc14"
+    },
+    "hillshade": {
+      "path": "maps/hillshade.mbtiles",
+      "sha256": "fdfbf678502baf0df824edb43f3fd8b66ca333dfbe56d8dcd6c567c5dbefd89b"
+    },
+    "topography": {
+      "path": "maps/topography.mbtiles",
+      "sha256": "266957c4ae05af84c05ac46363450512134d4f11bb5610b7b2dfe58262c850eb"
+    }
+  },
+  "instructionsSHA256": "be2f991c795a266c80cf76017021eaee6112b011ba581ec761195d4459b195e6",
+  "instructionsURL": "https://downloads.appsbyonzy.dev/OpenBareMap/northern-drakensberg/2.0.0/app-bundles-v1/android/instructions.txt",
+  "localPath": "releases/northern-drakensberg/2.0.0/app-bundles-v1/android/OpenBareMap-Northern-Drakensberg-Android-Bundle.zip",
+  "mapManifestSHA256": "63e48cb769dcaa65887245729a407c5a6ae6e0e015bce8d3138d1f043f6e6fe1",
+  "r2Key": "OpenBareMap/northern-drakensberg/2.0.0/app-bundles-v1/android/OpenBareMap-Northern-Drakensberg-Android-Bundle.zip",
+  "sha256": "69abcb525e549a20fdb3b16683e6998676b4df9739c19463757e23d10d447f34",
+  "url": "https://downloads.appsbyonzy.dev/OpenBareMap/northern-drakensberg/2.0.0/app-bundles-v1/android/OpenBareMap-Northern-Drakensberg-Android-Bundle.zip"
+}

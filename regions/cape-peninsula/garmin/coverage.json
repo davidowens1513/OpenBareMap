@@ -1,0 +1,33 @@
+{
+  "areaSquareDegrees": 0.1847999999999998,
+  "bounds": [
+    18.25,
+    -34.38,
+    18.58,
+    -33.82
+  ],
+  "entireRequestedFootprintCovered": true,
+  "exactFootprint": null,
+  "inputs": [
+    {
+      "bytes": 22678,
+      "path": "data/regions/cape-peninsula/south-africa.poly",
+      "sha256": "1eeaabc1d26bc118cbe7971a8d3a43c3c984c790872ecbc86cd0963cb84b7209",
+      "url": "https://download.geofabrik.de/africa/south-africa/south-africa.poly"
+    }
+  ],
+  "knownDestinationsCovered": [
+    "cape-point",
+    "cape-town",
+    "chapmans-peak",
+    "constantia-nek",
+    "island",
+    "lions-head",
+    "silvermine",
+    "simons-town",
+    "table-mountain"
+  ],
+  "operation": "Requested rectangular crop; source outlines cover all destination anchors",
+  "polygons": 1,
+  "sha256": "694712a07c6cb627c9103837eed911596090a432d91ea22e7fab3c75349b1c77"
+}

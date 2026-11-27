@@ -1,0 +1,20 @@
+{
+  "inputs": [
+    {
+      "path": "regions/cotopaxi-quilotoa/garmin/inputs/contours.geojson.gz",
+      "sha256": "9f5126c6ffa83cdcaf9dc97e6c404f78e26e1753b5e53b88e6200ba63b584639",
+      "uncompressedSHA256": "85d466d2ef2d7bce7f4568d152003621277829a0033f635477675ad255bdf868"
+    },
+    {
+      "path": "regions/cotopaxi-quilotoa/garmin/inputs/landcover.geojson.gz",
+      "sha256": "f7e7477bd0ef3acee04dccf43f256a91693a7053ded4ef781d32ef4895a5a034",
+      "uncompressedSHA256": "3cf45273b22d12c63b53d62de7471367f4a37588bdc6d677458b69944af2d4e3"
+    },
+    {
+      "path": "regions/cotopaxi-quilotoa/garmin/inputs/land.geojson.gz",
+      "sha256": "88184cd7a4e0a85db9af2b4e4e01f06bd14ee33ce8114fd3eda7876fcaa45d97",
+      "uncompressedSHA256": "990509b4cb53485bc553e1765a41ef6a656841d1d0d98c140f2b492da9ca04d0"
+    }
+  ],
+  "region": "cotopaxi-quilotoa"
+}

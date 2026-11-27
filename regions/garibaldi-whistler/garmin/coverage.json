@@ -1,0 +1,32 @@
+{
+  "areaSquareDegrees": 0.3899999999999958,
+  "bounds": [
+    -123.3,
+    49.65,
+    -122.65,
+    50.25
+  ],
+  "entireRequestedFootprintCovered": true,
+  "exactFootprint": null,
+  "inputs": [
+    {
+      "bytes": 2671,
+      "path": "data/regions/garibaldi-whistler/british-columbia.poly",
+      "sha256": "fce9475100adfe7030b6cad9a58759ff8c09473a78b339fe3452e240e976b408",
+      "url": "https://download.geofabrik.de/north-america/canada/british-columbia/british-columbia.poly"
+    }
+  ],
+  "knownDestinationsCovered": [
+    "black-tusk",
+    "elfin-lakes",
+    "garibaldi-lake",
+    "island",
+    "panorama-ridge",
+    "squamish",
+    "wedgemount-lake",
+    "whistler"
+  ],
+  "operation": "Requested rectangular crop; source outlines cover all destination anchors",
+  "polygons": 1,
+  "sha256": "6161262d2c3b738804ac22d1f819dcaebac3b4145b5d233b73176578919e151b"
+}

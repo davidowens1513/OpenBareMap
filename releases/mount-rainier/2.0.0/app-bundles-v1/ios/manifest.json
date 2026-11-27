@@ -1,0 +1,35 @@
+{
+  "bytes": 41327822,
+  "datasets": {
+    "basemap": {
+      "path": "maps/basemap.mbtiles",
+      "sha256": "e30e330657bde64d9e1d5771b804bc5cb76ed78738c381963fcbd6e8f1e0b3a5"
+    },
+    "coast": {
+      "derived_from": "ea4e0f662416c265a49607d87695b82f284eeeb2bdc0dd6dcd0525ae3ea3f859",
+      "maxzoom": 12,
+      "operation": "Preserve land-layer MVT bytes only through zoom 12; omit other layers.",
+      "path": "maps/coast.mbtiles",
+      "sha256": "e27b4701da55cf1ee13ccb4b63028f04561b65ef8acac6444d585e05b0f48cb4"
+    },
+    "grid": {
+      "path": "maps/grid.mbtiles",
+      "sha256": "dc4be24620139d5afc0702512b84f7fcddc713aeb91226038d0d1224b28ccc2c"
+    },
+    "hillshade": {
+      "path": "maps/hillshade.mbtiles",
+      "sha256": "8d1b7ffff35953f05dab46a42446bccc655bd5ce56757fabc72a1c997d5046cb"
+    },
+    "topography": {
+      "path": "maps/topography.mbtiles",
+      "sha256": "ea4e0f662416c265a49607d87695b82f284eeeb2bdc0dd6dcd0525ae3ea3f859"
+    }
+  },
+  "instructionsSHA256": "9e27bdd75c8de298153c5d7648b71a9497ae3a0413559d6246d75fad71c52499",
+  "instructionsURL": "https://downloads.appsbyonzy.dev/OpenBareMap/mount-rainier/2.0.0/app-bundles-v1/ios/instructions.txt",
+  "localPath": "releases/mount-rainier/2.0.0/app-bundles-v1/ios/OpenBareMap-Mount-Rainier-iOS-Bundle.zip",
+  "mapManifestSHA256": "dc5cefd110fa5ed9e589b167a5fb28c0669c88b44ed1b1aa02a18c953cc6aa54",
+  "r2Key": "OpenBareMap/mount-rainier/2.0.0/app-bundles-v1/ios/OpenBareMap-Mount-Rainier-iOS-Bundle.zip",
+  "sha256": "0d421bec1bcb3f0f8fc9205b46f1e75f6f7ee2a98a113a06b69e36bed0f3069e",
+  "url": "https://downloads.appsbyonzy.dev/OpenBareMap/mount-rainier/2.0.0/app-bundles-v1/ios/OpenBareMap-Mount-Rainier-iOS-Bundle.zip"
+}

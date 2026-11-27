@@ -1,0 +1,39 @@
+{
+  "features": [
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              -70.35,
+              -33.25
+            ],
+            [
+              -70.35,
+              -32.45
+            ],
+            [
+              -69.25,
+              -32.45
+            ],
+            [
+              -69.25,
+              -33.25
+            ],
+            [
+              -70.35,
+              -33.25
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "properties": {
+        "purpose": "Limit opaque native background and land-cover polygons; retain complete accepted OSM and terrain inputs",
+        "region": "aconcagua"
+      },
+      "type": "Feature"
+    }
+  ],
+  "type": "FeatureCollection"
+}

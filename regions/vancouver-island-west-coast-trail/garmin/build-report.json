@@ -1,0 +1,128 @@
+{
+  "familyId": 4895,
+  "garminPackageRevision": "2.0.0-r1",
+  "inspection": {
+    "anchorLabels": {
+      "Bamfield": "Bamfield",
+      "Port Renfrew": "Port Renfrew"
+    },
+    "bounds": [
+      -125.35005569458008,
+      48.42000961303711,
+      -124.20001029968262,
+      49.02005195617676
+    ],
+    "coastPolygonsByLevel": {
+      "0": {
+        "0x32": 4,
+        "0x54": 815
+      },
+      "1": {
+        "0x32": 4,
+        "0x54": 679
+      },
+      "2": {
+        "0x32": 4,
+        "0x54": 641
+      },
+      "3": {
+        "0x32": 4,
+        "0x54": 286
+      },
+      "4": {
+        "0x32": 4,
+        "0x54": 92
+      }
+    },
+    "contoursByLevel": {
+      "0": {
+        "0x20": 17088,
+        "0x22": 3299
+      },
+      "1": {
+        "0x20": 14397,
+        "0x22": 2640
+      },
+      "2": {
+        "0x22": 2526
+      },
+      "3": {
+        "0x10008": 2339
+      },
+      "4": {}
+    },
+    "lineInstancesAtHighestDetail": {
+      "0x10001": 234,
+      "0x10004": 1,
+      "0x10005": 25,
+      "0x10006": 16,
+      "0x1000b": 27,
+      "0x16": 381,
+      "0x18": 8883,
+      "0x1a": 6,
+      "0x1c": 81,
+      "0x1e": 23,
+      "0x1f": 136,
+      "0x20": 17088,
+      "0x22": 3299,
+      "0x3": 17,
+      "0x4": 38,
+      "0x6": 496,
+      "0x7": 193,
+      "0xa": 3924
+    },
+    "logicalCombinedSHA256": "068b474109cbe7c86f5d940c4c15767804c54848fd25f038a5ee8fd3fdf98a7a",
+    "logicalHashNote": "Internal file names, sizes and payloads; only CommonHeader creation-date bytes 14..20 are zeroed for hashing. IMG archive headers are excluded. Output bytes are never modified.",
+    "logicalTileSHA256": {
+      "48950001.img": "7c21603305b3bb539bceb750761342b7c79e2da4a84290612e9c62c6362618dd",
+      "48950002.img": "e09e824593b344899a8ad1156abb2f5fe537805aa90158dfc361adcdb4e33942",
+      "48950003.img": "f2e9db82263db5b8b431c2ab43754ec2a59266357bba3d91ff09bbd9cdc5632e",
+      "48950004.img": "ac961865518781aa5ea56480a2585ca628bdf84d68a3e5b685fb74bb6a039131"
+    },
+    "pointInstancesAtHighestDetail": {
+      "0x10001": 25,
+      "0x10002": 96,
+      "0x10003": 114,
+      "0x10006": 83,
+      "0x2f0b": 24,
+      "0x650c": 187,
+      "0x6603": 109,
+      "0x6616": 253,
+      "0x800": 2,
+      "0xb00": 3,
+      "0xc00": 9
+    },
+    "polygonInstancesAtHighestDetail": {
+      "0x10102": 7,
+      "0x10104": 112,
+      "0x10105": 161,
+      "0x10106": 3,
+      "0x10107": 1,
+      "0x10109": 84,
+      "0x13": 866,
+      "0x32": 4,
+      "0x3c": 728,
+      "0x50": 1525,
+      "0x51": 72,
+      "0x54": 815
+    },
+    "routing": false,
+    "subfileBytes": {
+      "DEM": 4601030,
+      "LBL": 28125,
+      "MPS": 477,
+      "RGN": 6798282,
+      "SRT": 912,
+      "TRE": 90904,
+      "TYP": 2982
+    },
+    "tiles": 4
+  },
+  "output": {
+    "bytes": 11565056,
+    "path": "regions/vancouver-island-west-coast-trail/garmin/dist/OpenBareMap-Vancouver-Island-West-Coast-Trail.img",
+    "sha256": "7ccdceaad243df4d00dff936a9a362704de141749c90a5b4371678de00050192"
+  },
+  "routing": false,
+  "status": "compiled and structurally inspected; hardware rendering pending"
+}

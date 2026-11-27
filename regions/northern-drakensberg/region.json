@@ -1,0 +1,172 @@
+{
+  "appBundleName": "Northern-Drakensberg",
+  "bounds": [
+    28.65,
+    -29.4,
+    29.75,
+    -28.5
+  ],
+  "clipBasemap": true,
+  "clipSource": true,
+  "clipTerrainToBounds": true,
+  "coastContextBounds": [
+    27,
+    -31,
+    31,
+    -27
+  ],
+  "contourIntervalMetres": 20,
+  "coverage": "The Northern Drakensberg escarpment from Royal Natal and the Amphitheatre to Cathedral Peak, Giant\u2019s Castle and the adjoining Lesotho highlands.",
+  "destinationLabels": {
+    "amphitheatre": "Amphitheatre",
+    "cathedral-peak": "Cathedral Peak",
+    "giants-castle": "Giant\u2019s Castle",
+    "island": "Northern Drakensberg",
+    "monks-cowl": "Monk\u2019s Cowl",
+    "royal-natal": "Royal Natal",
+    "sentinel": "Sentinel",
+    "tugela-falls": "Tugela Falls"
+  },
+  "destinations": {
+    "amphitheatre": [
+      28.89,
+      -28.761,
+      13
+    ],
+    "cathedral-peak": [
+      29.063,
+      -28.951,
+      13
+    ],
+    "giants-castle": [
+      29.346,
+      -29.346,
+      13
+    ],
+    "island": [
+      29.2,
+      -28.95,
+      9
+    ],
+    "monks-cowl": [
+      29.124,
+      -29.048,
+      13
+    ],
+    "royal-natal": [
+      28.943,
+      -28.69,
+      13
+    ],
+    "sentinel": [
+      28.88,
+      -28.743,
+      13
+    ],
+    "tugela-falls": [
+      28.893,
+      -28.752,
+      13
+    ]
+  },
+  "garminContextBounds": [
+    28.65,
+    -29.4,
+    29.75,
+    -28.5
+  ],
+  "garminFamilyId": 4892,
+  "garminFilename": "OpenBareMap-Northern-Drakensberg.img",
+  "garminPackageRevision": "2.0.0-r1",
+  "garminTileStartId": 48920001,
+  "garminUseSourceOutline": true,
+  "garminVersionedDelivery": true,
+  "gridCRS": "EPSG:32735",
+  "gridExtent": [
+    660000,
+    770000,
+    6740000,
+    6850000
+  ],
+  "gridName": "WGS 84 / UTM zone 35S",
+  "gridSource": "utm-grid",
+  "id": "northern-drakensberg",
+  "ignoreSourceHeaderBounds": true,
+  "inspectionNames": [
+    "Cathedral Peak"
+  ],
+  "label": "Northern Drakensberg",
+  "labelGlyphs": "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz",
+  "mapVersion": "2.0.0",
+  "maxzoom": 14,
+  "minorWaterwayMinzoom": 10,
+  "minzoom": 4,
+  "name": "OpenBareMap Northern Drakensberg",
+  "nativeLanguage": "en",
+  "optionalBasemapLayers": [
+    "ferry",
+    "island_name",
+    "cycling_route",
+    "railway",
+    "station",
+    "hiking_route",
+    "boundary"
+  ],
+  "permanentIce": false,
+  "projectedCRS": "EPSG:32735",
+  "repairClippedCoastline": true,
+  "requireBogFeatures": false,
+  "sourceBaseOverrides": {
+    "lesotho": "https://download.geofabrik.de/africa/lesotho/",
+    "south-africa": "https://download.geofabrik.de/africa/south-africa/"
+  },
+  "sourceBaseURL": "https://download.geofabrik.de/africa/",
+  "sourceCacheRegion": "south-africa",
+  "sourceDate": "2026-11-26",
+  "sourceOutputStem": "northern-drakensberg",
+  "sourceSlugs": [
+    "south-africa",
+    "lesotho"
+  ],
+  "styleRevision": "2.0.0-northern-drakensberg-r1",
+  "terrainAttribution": "Copernicus DEM GLO-30 \u00b7 European Union / ESA \u00b7 DLR / Airbus",
+  "terrainBounds": [
+    28,
+    -30,
+    30,
+    -28
+  ],
+  "terrainNotice": "Northern Drakensberg elevation: Copernicus DEM GLO-30 Public (AWS 2021 release).\n\nproduced using Copernicus WorldDEM-30 \u00a9 DLR e.V. 2010-2014 and \u00a9 Airbus Defence and Space GmbH 2014-2018 provided under COPERNICUS by the European Union and ESA; all rights reserved\n\nThe organisations in charge of the Copernicus programme by law or by delegation do not incur any liability for any use of the Copernicus WorldDEM-30.\n\nLicense: https://dataspace.copernicus.eu/sites/default/files/media/files/2025-06/copernicus_contributing_mission_data_access_v2_cop_dem_licenses.pdf\nSource: https://registry.opendata.aws/copernicus-dem/\nVertical datum: EGM2008 orthometric metres. Native approximately 30 m cells are bilinearly resampled to point-aligned Int16 HGT for the shared terrain pipeline. Ocean-only cells absent from the official public inventory are zero.\n",
+  "terrainProvider": "copernicus-glo30",
+  "townlands": false,
+  "validationAnchors": {
+    "amphitheatre": [
+      28.89,
+      -28.761
+    ],
+    "cathedral-peak": [
+      29.063,
+      -28.951
+    ],
+    "giants-castle": [
+      29.346,
+      -29.346
+    ],
+    "monks-cowl": [
+      29.124,
+      -29.048
+    ],
+    "royal-natal": [
+      28.943,
+      -28.69
+    ],
+    "sentinel": [
+      28.88,
+      -28.743
+    ],
+    "tugela-falls": [
+      28.893,
+      -28.752
+    ]
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "combinedSHA256": "7eaea05a82bff26224473c4a217f6b8b24f22bbce920574a6bee5f2aaf16c01f",
+  "command": [
+    "/opt/homebrew/opt/openjdk@21/libexec/openjdk.jdk/Contents/Home/bin/java",
+    "-Xmx6g",
+    "-jar",
+    "/Volumes/Extreme SSD/Projects/OpenBareMap/work/eight-map-release/git-openbaremap/garmin/tools/splitter-r654/splitter.jar",
+    "--mapid=48940001",
+    "--description=OpenBareMap Mount Rainier",
+    "--max-nodes=1000000",
+    "--max-threads=2",
+    "--keep-complete=true",
+    "--output=pbf",
+    "--polygon-file=/Volumes/Extreme SSD/Projects/OpenBareMap/work/eight-map-release/git-openbaremap/regions/mount-rainier/garmin/coverage.poly",
+    "--output-dir=/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/5a16016edf00/mount-rainier/garmin/split",
+    "--ignore-osm-bounds=true",
+    "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/5a16016edf00/mount-rainier/garmin/combined.osm.pbf"
+  ],
+  "coverageSHA256": "c2cb8e071191756a7688566fd050fbfd5550869a3f8e84adcf6005f56cff666f",
+  "ignoreSourceHeaderBounds": true
+}

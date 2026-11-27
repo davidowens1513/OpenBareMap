@@ -1,0 +1,21 @@
+{
+  "combinedSHA256": "3dc0591d92aecc4ab6c071dbd2ed937461ea07b4d87046dd30b644474bc88922",
+  "command": [
+    "/opt/homebrew/opt/openjdk@21/libexec/openjdk.jdk/Contents/Home/bin/java",
+    "-Xmx6g",
+    "-jar",
+    "/Volumes/Extreme SSD/Projects/OpenBareMap/work/eight-map-release/git-openbaremap/garmin/tools/splitter-r654/splitter.jar",
+    "--mapid=48950001",
+    "--description=OpenBareMap Vancouver Island West Coast Trail",
+    "--max-nodes=1000000",
+    "--max-threads=2",
+    "--keep-complete=true",
+    "--output=pbf",
+    "--polygon-file=/Volumes/Extreme SSD/Projects/OpenBareMap/work/eight-map-release/git-openbaremap/regions/vancouver-island-west-coast-trail/garmin/coverage.poly",
+    "--output-dir=/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/5a16016edf00/vancouver-island-west-coast-trail/garmin/split",
+    "--ignore-osm-bounds=true",
+    "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/5a16016edf00/vancouver-island-west-coast-trail/garmin/combined.osm.pbf"
+  ],
+  "coverageSHA256": "d8d5742ad874fd9f7a81a7a8c39451d80c4f70b255644941cf17285b5ffd1080",
+  "ignoreSourceHeaderBounds": true
+}

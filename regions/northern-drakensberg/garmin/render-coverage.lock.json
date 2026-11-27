@@ -1,0 +1,68 @@
+{
+  "bounds": [
+    28.65,
+    -29.4,
+    29.75,
+    -28.5
+  ],
+  "contextEnvelope": [
+    28.65,
+    -29.4,
+    29.75,
+    -28.5
+  ],
+  "drawPriority": 25,
+  "format": "openbaremap-garmin-render-footprint-v1",
+  "geometry": {
+    "bytes": 753,
+    "path": "regions/northern-drakensberg/garmin/render-coverage.geojson",
+    "sha256": "d85fffe01991646adc7f5c16990b8a7006caee7fe2c5b1a65243f6035c64b976"
+  },
+  "inputs": [
+    {
+      "bytes": 22678,
+      "path": "data/regions/northern-drakensberg/south-africa.poly",
+      "sha256": "1eeaabc1d26bc118cbe7971a8d3a43c3c984c790872ecbc86cd0963cb84b7209",
+      "url": "https://download.geofabrik.de/africa/south-africa/south-africa.poly"
+    },
+    {
+      "bytes": 5711,
+      "path": "data/regions/northern-drakensberg/lesotho.poly",
+      "sha256": "0bc0d9e081bc1c8add4c63998512ca78817015a6f5f217bd331cfe298159f795",
+      "url": "https://download.geofabrik.de/africa/lesotho/lesotho.poly"
+    }
+  ],
+  "knownDestinationsCovered": {
+    "amphitheatre": [
+      28.89,
+      -28.761
+    ],
+    "cathedral-peak": [
+      29.063,
+      -28.951
+    ],
+    "giants-castle": [
+      29.346,
+      -29.346
+    ],
+    "monks-cowl": [
+      29.124,
+      -29.048
+    ],
+    "royal-natal": [
+      28.943,
+      -28.69
+    ],
+    "sentinel": [
+      28.88,
+      -28.743
+    ],
+    "tugela-falls": [
+      28.893,
+      -28.752
+    ]
+  },
+  "purpose": "Rectangular Garmin tiles may overlap other countries. Do not fill their padding with sea, land or land-cover polygons.",
+  "region": "northern-drakensberg",
+  "transparentNativeMap": true
+}

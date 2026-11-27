@@ -1,0 +1,38 @@
+{
+  "areaSquareDegrees": 0.9899999999999998,
+  "bounds": [
+    28.65,
+    -29.4,
+    29.75,
+    -28.5
+  ],
+  "entireRequestedFootprintCovered": true,
+  "exactFootprint": null,
+  "inputs": [
+    {
+      "bytes": 22678,
+      "path": "data/regions/northern-drakensberg/south-africa.poly",
+      "sha256": "1eeaabc1d26bc118cbe7971a8d3a43c3c984c790872ecbc86cd0963cb84b7209",
+      "url": "https://download.geofabrik.de/africa/south-africa/south-africa.poly"
+    },
+    {
+      "bytes": 5711,
+      "path": "data/regions/northern-drakensberg/lesotho.poly",
+      "sha256": "0bc0d9e081bc1c8add4c63998512ca78817015a6f5f217bd331cfe298159f795",
+      "url": "https://download.geofabrik.de/africa/lesotho/lesotho.poly"
+    }
+  ],
+  "knownDestinationsCovered": [
+    "amphitheatre",
+    "cathedral-peak",
+    "giants-castle",
+    "island",
+    "monks-cowl",
+    "royal-natal",
+    "sentinel",
+    "tugela-falls"
+  ],
+  "operation": "Requested rectangular crop; source outlines cover all destination anchors",
+  "polygons": 1,
+  "sha256": "54fa567f31760ed1d54092da72352e5530076a5e6980e6a7e1a744b9b835a78b"
+}

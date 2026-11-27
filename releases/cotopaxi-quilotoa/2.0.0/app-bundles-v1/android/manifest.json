@@ -1,0 +1,33 @@
+{
+  "bytes": 75382213,
+  "datasets": {
+    "basemap": {
+      "path": "maps/basemap.mbtiles",
+      "sha256": "3d9aa7a8e59e20c65877cd30d3118e0d424530476c8f5864e517777135fb1ad9"
+    },
+    "coast": {
+      "derivedFrom": "89ebf7ea2810f84dfa204a4a466834ff33f9bedb613d14fc54788c26a74f9680",
+      "path": "maps/coast.mbtiles",
+      "sha256": "129aa1875a26c5f0a59d111702af9b40904b47c448cf52e1a6dde95326429587"
+    },
+    "grid": {
+      "path": "maps/grid.mbtiles",
+      "sha256": "dea9e533bea0978d027b9cc3dd23a550dcbb03f8a7332b6d349b649ad8629eb0"
+    },
+    "hillshade": {
+      "path": "maps/hillshade.mbtiles",
+      "sha256": "369be9aedbb4d8020299467868703a1659c54ef43f0abb6279084bab4820c96f"
+    },
+    "topography": {
+      "path": "maps/topography.mbtiles",
+      "sha256": "89ebf7ea2810f84dfa204a4a466834ff33f9bedb613d14fc54788c26a74f9680"
+    }
+  },
+  "instructionsSHA256": "aac7f0a799d14cdc370175c7478766638c754cead225a58a746df675e34666f9",
+  "instructionsURL": "https://downloads.appsbyonzy.dev/OpenBareMap/cotopaxi-quilotoa/2.0.0/app-bundles-v1/android/instructions.txt",
+  "localPath": "releases/cotopaxi-quilotoa/2.0.0/app-bundles-v1/android/OpenBareMap-Cotopaxi-Quilotoa-Android-Bundle.zip",
+  "mapManifestSHA256": "e9b45b4d6f9c42efd50e60a660cc96ee27ffe843698653d0ce905173a2ae5346",
+  "r2Key": "OpenBareMap/cotopaxi-quilotoa/2.0.0/app-bundles-v1/android/OpenBareMap-Cotopaxi-Quilotoa-Android-Bundle.zip",
+  "sha256": "6d362a746847453a61b97ac42d2f9da415f723bc00c3945694d849558da08034",
+  "url": "https://downloads.appsbyonzy.dev/OpenBareMap/cotopaxi-quilotoa/2.0.0/app-bundles-v1/android/OpenBareMap-Cotopaxi-Quilotoa-Android-Bundle.zip"
+}

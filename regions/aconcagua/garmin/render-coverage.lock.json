@@ -1,0 +1,68 @@
+{
+  "bounds": [
+    -70.35,
+    -33.25,
+    -69.25,
+    -32.45
+  ],
+  "contextEnvelope": [
+    -70.35,
+    -33.25,
+    -69.25,
+    -32.45
+  ],
+  "drawPriority": 25,
+  "format": "openbaremap-garmin-render-footprint-v1",
+  "geometry": {
+    "bytes": 752,
+    "path": "regions/aconcagua/garmin/render-coverage.geojson",
+    "sha256": "3818c8e726b41b910a3c88da51e5d0ef5f0014e3231ce734413757caa13e7934"
+  },
+  "inputs": [
+    {
+      "bytes": 14403,
+      "path": "data/regions/aconcagua/argentina.poly",
+      "sha256": "76f8a0212f268e796ad1a13a22184cd313bcc02700e44ef5be9e71c1b3a628f5",
+      "url": "https://download.geofabrik.de/south-america/argentina/argentina.poly"
+    },
+    {
+      "bytes": 4371,
+      "path": "data/regions/aconcagua/chile.poly",
+      "sha256": "a2c053d95312ba82997dda3deeb995a5ccff285d74db545d68b04a95facd26d3",
+      "url": "https://download.geofabrik.de/south-america/chile/chile.poly"
+    }
+  ],
+  "knownDestinationsCovered": {
+    "aconcagua": [
+      -70.0109,
+      -32.6532
+    ],
+    "confluencia": [
+      -69.97,
+      -32.76
+    ],
+    "horcones": [
+      -69.942,
+      -32.825
+    ],
+    "los-penitentes": [
+      -69.852,
+      -32.838
+    ],
+    "plaza-de-mulas": [
+      -70.059,
+      -32.646
+    ],
+    "puente-del-inca": [
+      -69.912,
+      -32.825
+    ],
+    "uspallata": [
+      -69.348,
+      -32.593
+    ]
+  },
+  "purpose": "Rectangular Garmin tiles may overlap other countries. Do not fill their padding with sea, land or land-cover polygons.",
+  "region": "aconcagua",
+  "transparentNativeMap": true
+}

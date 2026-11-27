@@ -1,0 +1,20 @@
+{
+  "inputs": [
+    {
+      "path": "regions/garibaldi-whistler/garmin/inputs/contours.geojson.gz",
+      "sha256": "eaf2e5d6810852a24f9883d39e437ee26d60c8d7c67f95bee8753fc9f3df914d",
+      "uncompressedSHA256": "776be28c2d1adcc392a8cb7226c043d7300a7144f713c6d9b7973faee462f39f"
+    },
+    {
+      "path": "regions/garibaldi-whistler/garmin/inputs/landcover.geojson.gz",
+      "sha256": "842df0a6db87324a2c57b2452a9453c6a1282841f80828605c9a763dc3740b17",
+      "uncompressedSHA256": "16dcfea0c44b9092a1ea3be1e2e77819e5b1e375d687181a9ab70079718a1b63"
+    },
+    {
+      "path": "regions/garibaldi-whistler/garmin/inputs/land.geojson.gz",
+      "sha256": "7198a6bcc9d5d167c67bc4c95ed528a4a690ecb51a3be1d288897eb88e1f8416",
+      "uncompressedSHA256": "577de67ab68bf7c3f44b78216979d9d31df4d94be3e1f1ae33458ba5823e989f"
+    }
+  ],
+  "region": "garibaldi-whistler"
+}

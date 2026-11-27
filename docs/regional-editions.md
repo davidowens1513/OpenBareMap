@@ -207,6 +207,32 @@ done
 python3 scripts/stage_balkans_editions.py --website /path/to/AppsByOnzy-Website/site/index.html
 ```
 
+## Eight-map November 2026 release
+
+This release adds eight independent `2.0.0` editions: Gran Sasso, Northern Drakensberg, Cape Peninsula, Mount Rainier, Vancouver Island West Coast Trail, Garibaldi & Whistler, Cotopaxi & Quilotoa and Aconcagua. Garmin family IDs are `4891` through `4898`; mobile resources use storage revision `r3`, and Garmin packages use revision `2.0.0-r1`.
+
+Generate the profiles, then build and validate each region:
+
+```sh
+PYTHONPATH=work/python python3 scripts/prepare_eight_map_release.py
+for region in gran-sasso northern-drakensberg cape-peninsula mount-rainier \
+  vancouver-island-west-coast-trail garibaldi-whistler cotopaxi-quilotoa aconcagua; do
+  PYTHONPATH=work/python python3 scripts/run_full_region.py --region "$region"
+done
+```
+
+Build the app integration bundles and previews under `work/<region>-release`, then stage both catalogues and the website from clean OpenBareMap, BareGPS Worldwide and AppsByOnzy Website checkouts:
+
+```sh
+PYTHONPATH=work/python python3 scripts/stage_eight_map_release.py \
+  --website ../AppsByOnzy-Website/site/index.html \
+  --worldwide ../BareGPS-Worldwide/Distribution/worldwide-catalog-v1.json
+```
+
+The staging command requires all eight completed `validation.json` records with Ireland preservation checks. It writes a 67-edition app catalogue, merges the eight Worldwide records into the existing catalogue, creates the eight area pages and coverage diagrams, updates the homepage, directory and sitemap, and builds a deployable website archive. Add `--publish-assets` only after inspecting those outputs.
+
+Gran Sasso, Mount Rainier, Garibaldi & Whistler, Cotopaxi & Quilotoa and Aconcagua were checked for permanent ice. Gran Sasso contains two OpenStreetMap glacier polygons and no current permanent-snow polygon; the map nevertheless includes distinct glacier and permanent-snow styling and legend entries. Mount Rainier, Garibaldi & Whistler, Cotopaxi & Quilotoa and Aconcagua contain 34, 181, 2 and 242 glacier polygons respectively. The other three source extracts contain no glacier or permanent-snow polygons.
+
 ## Nepal trekking
 
 The Nepal maps use a shared 22 November 2026 Geofabrik OpenStreetMap extract,

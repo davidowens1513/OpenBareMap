@@ -1,0 +1,166 @@
+{
+  "appBundleName": "Cotopaxi-Quilotoa",
+  "bounds": [
+    -79.15,
+    -1.1,
+    -78.25,
+    -0.45
+  ],
+  "clipBasemap": true,
+  "clipSource": true,
+  "clipTerrainToBounds": true,
+  "coastContextBounds": [
+    -81,
+    -3,
+    -77,
+    1
+  ],
+  "contourIntervalMetres": 20,
+  "coverage": "Cotopaxi National Park and the Quilotoa Loop, including Latacunga, the Cotopaxi refuges, Laguna Limpiopungo, Quilotoa, Chugchil\u00e1n and Isinliv\u00ed.",
+  "destinationLabels": {
+    "chugchilan": "Chugchil\u00e1n",
+    "cotopaxi": "Cotopaxi",
+    "isinlivi": "Isinliv\u00ed",
+    "island": "Cotopaxi & Quilotoa",
+    "jose-rivas-refuge": "Jos\u00e9 Rivas Refuge",
+    "latacunga": "Latacunga",
+    "limpiopungo": "Laguna Limpiopungo",
+    "quilotoa": "Quilotoa"
+  },
+  "destinations": {
+    "chugchilan": [
+      -78.922,
+      -0.756,
+      13
+    ],
+    "cotopaxi": [
+      -78.437,
+      -0.68,
+      13
+    ],
+    "isinlivi": [
+      -78.87,
+      -0.662,
+      13
+    ],
+    "island": [
+      -78.7,
+      -0.775,
+      9
+    ],
+    "jose-rivas-refuge": [
+      -78.438,
+      -0.658,
+      13
+    ],
+    "latacunga": [
+      -78.617,
+      -0.935,
+      13
+    ],
+    "limpiopungo": [
+      -78.473,
+      -0.626,
+      13
+    ],
+    "quilotoa": [
+      -78.899,
+      -0.866,
+      13
+    ]
+  },
+  "garminContextBounds": [
+    -79.15,
+    -1.1,
+    -78.25,
+    -0.45
+  ],
+  "garminFamilyId": 4897,
+  "garminFilename": "OpenBareMap-Cotopaxi-Quilotoa.img",
+  "garminPackageRevision": "2.0.0-r1",
+  "garminTileStartId": 48970001,
+  "garminUseSourceOutline": true,
+  "garminVersionedDelivery": true,
+  "gridCRS": "EPSG:32717",
+  "gridExtent": [
+    700000,
+    810000,
+    9870000,
+    9960000
+  ],
+  "gridName": "WGS 84 / UTM zone 17S",
+  "gridSource": "utm-grid",
+  "id": "cotopaxi-quilotoa",
+  "ignoreSourceHeaderBounds": true,
+  "inspectionNames": [
+    "Latacunga",
+    "Cotopaxi"
+  ],
+  "label": "Cotopaxi & Quilotoa",
+  "labelGlyphs": "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz\u00c1\u00c9\u00cd\u00d1\u00d3\u00da\u00dc\u00e1\u00e9\u00ed\u00f1\u00f3\u00fa\u00fc",
+  "mapVersion": "2.0.0",
+  "maxzoom": 14,
+  "minorWaterwayMinzoom": 10,
+  "minzoom": 4,
+  "name": "OpenBareMap Cotopaxi & Quilotoa",
+  "nativeLanguage": "es",
+  "optionalBasemapLayers": [
+    "ferry",
+    "island_name",
+    "cycling_route",
+    "railway",
+    "station",
+    "hiking_route",
+    "boundary"
+  ],
+  "permanentIce": true,
+  "projectedCRS": "EPSG:32717",
+  "repairClippedCoastline": true,
+  "requireBogFeatures": false,
+  "sourceBaseURL": "https://download.geofabrik.de/south-america/ecuador/",
+  "sourceDate": "2026-11-26",
+  "sourceSlugs": [
+    "ecuador"
+  ],
+  "styleRevision": "2.0.0-cotopaxi-quilotoa-r1",
+  "terrainAttribution": "Copernicus DEM GLO-30 \u00b7 European Union / ESA \u00b7 DLR / Airbus",
+  "terrainBounds": [
+    -80,
+    -2,
+    -78,
+    0
+  ],
+  "terrainNotice": "Cotopaxi & Quilotoa elevation: Copernicus DEM GLO-30 Public (AWS 2021 release).\n\nproduced using Copernicus WorldDEM-30 \u00a9 DLR e.V. 2010-2014 and \u00a9 Airbus Defence and Space GmbH 2014-2018 provided under COPERNICUS by the European Union and ESA; all rights reserved\n\nThe organisations in charge of the Copernicus programme by law or by delegation do not incur any liability for any use of the Copernicus WorldDEM-30.\n\nLicense: https://dataspace.copernicus.eu/sites/default/files/media/files/2025-06/copernicus_contributing_mission_data_access_v2_cop_dem_licenses.pdf\nSource: https://registry.opendata.aws/copernicus-dem/\nVertical datum: EGM2008 orthometric metres. Native approximately 30 m cells are bilinearly resampled to point-aligned Int16 HGT for the shared terrain pipeline. Ocean-only cells absent from the official public inventory are zero.\n",
+  "terrainProvider": "copernicus-glo30",
+  "townlands": false,
+  "validationAnchors": {
+    "chugchilan": [
+      -78.922,
+      -0.756
+    ],
+    "cotopaxi": [
+      -78.437,
+      -0.68
+    ],
+    "isinlivi": [
+      -78.87,
+      -0.662
+    ],
+    "jose-rivas-refuge": [
+      -78.438,
+      -0.658
+    ],
+    "latacunga": [
+      -78.617,
+      -0.935
+    ],
+    "limpiopungo": [
+      -78.473,
+      -0.626
+    ],
+    "quilotoa": [
+      -78.899,
+      -0.866
+    ]
+  }
+}

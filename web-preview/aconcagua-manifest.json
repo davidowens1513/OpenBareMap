@@ -1,0 +1,41 @@
+{
+  "regions": {
+    "aconcagua": {
+      "basemap": {
+        "sourceSHA256": "e44397e89e21b45105da941e5e1e3c10049bef94d2765cffd3a69ed9aa9bef5b",
+        "bytes": 4168720,
+        "sha256": "347c99555ed7fcab4ce58803a9e8ed40fd138f12b111d647568ff584727bff94",
+        "tiles": 2482
+      },
+      "grid": {
+        "sourceSHA256": "a650ab254a7ce7dfa5267f1e245ba4ff665363e730587fab489f9411d7607107",
+        "bytes": 981050,
+        "sha256": "cc72e3746e444ae2e9660b8a85c9299693d7399f560c55d626d5b1ebf719c3b7",
+        "tiles": 3129
+      },
+      "hillshade": {
+        "sourceSHA256": "da57e14c8d0e0f8aba580a97139e985a40f11662c271af987b001a63a81d626c",
+        "bytes": 10424045,
+        "sha256": "10156d14d8e3077ae670ca8d6c5b6c9af3068acee5ce9a54120f81c6d5302e2a",
+        "tiles": 251
+      },
+      "topography": {
+        "sourceSHA256": "01484a408cdf477a1443d31be05e5c4e22cef1e226d7d1f8ca5b3c6325288a7c",
+        "bytes": 96735398,
+        "sha256": "af078538de604f0573930a9cdfe325f55c9c398c48047dc2364037961a26ca4a",
+        "tiles": 50634
+      },
+      "coast": {
+        "sourceSHA256": "4d0322631861801dc8bf44f65316e0556279f9c29261bf4db9e0e6cefe3476df",
+        "bytes": 204811,
+        "sha256": "081258995dca38a8706c6eb13a0b58be16b66ae55a911bb385a68477d49555e6",
+        "tiles": 3328
+      }
+    }
+  },
+  "pmtilesPython": "3.8.1",
+  "pmtilesJS": "4.5.0",
+  "librarySHA256": "caf981bc46f6327ee7e65d5dc964d89d38a69f60edca2bd4c5c890c21b554c6c",
+  "dataOrigin": "https://downloads.appsbyonzy.dev/OpenBareMap/aconcagua/2.0.0/preview",
+  "scope": "Complete selected map tiles; no regional or zoom sampling."
+}

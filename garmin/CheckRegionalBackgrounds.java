@@ -73,6 +73,14 @@ public class CheckRegionalBackgrounds {
    case "zagori-vikos-gorge" -> new double[][]{{20.62,39.95},{20.90,39.74},{21.16,39.90}};
    case "mount-olympus" -> new double[][]{{22.21,40.06},{22.50,40.21},{22.64,39.91}};
    case "menalon-trail" -> new double[][]{{21.90,37.65},{22.10,37.83},{22.30,37.65}};
+   case "gran-sasso" -> new double[][]{{13.20,42.50},{14.00,42.50},{13.60,42.20}};
+   case "northern-drakensberg" -> new double[][]{{28.55,-28.95},{29.85,-28.95},{29.20,-29.45}};
+   case "cape-peninsula" -> new double[][]{{18.20,-34.10},{18.65,-34.10},{18.42,-33.75}};
+   case "mount-rainier" -> new double[][]{{-122.10,46.85},{-121.40,46.85},{-121.75,47.10}};
+   case "vancouver-island-west-coast-trail" -> new double[][]{{-125.40,48.70},{-124.20,48.70},{-124.80,49.05}};
+   case "garibaldi-whistler" -> new double[][]{{-123.35,50.00},{-122.60,50.00},{-123.00,50.30},{-123.00,49.60}};
+   case "cotopaxi-quilotoa" -> new double[][]{{-79.20,-0.75},{-78.20,-0.75},{-78.70,-1.15}};
+   case "aconcagua" -> new double[][]{{-70.40,-32.80},{-69.20,-32.80},{-70.05,-33.30}};
    default -> throw new IllegalArgumentException(args[0]);
   };
   int tiles=0,polygons=0;Set<Integer> resolutions=new TreeSet<>();

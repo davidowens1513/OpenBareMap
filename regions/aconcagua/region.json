@@ -1,0 +1,174 @@
+{
+  "appBundleName": "Aconcagua",
+  "bounds": [
+    -70.35,
+    -33.25,
+    -69.25,
+    -32.45
+  ],
+  "clipBasemap": true,
+  "clipSource": true,
+  "clipTerrainToBounds": true,
+  "coastContextBounds": [
+    -72,
+    -35,
+    -68,
+    -31
+  ],
+  "contourIntervalMetres": 20,
+  "coverage": "Aconcagua Provincial Park and the high Andes approaches from Argentina and Chile, including Horcones, Confluencia, Plaza de Mulas, Puente del Inca and Los Penitentes.",
+  "destinationLabels": {
+    "aconcagua": "Aconcagua",
+    "confluencia": "Confluencia",
+    "horcones": "Horcones",
+    "island": "Aconcagua",
+    "los-penitentes": "Los Penitentes",
+    "plaza-de-mulas": "Plaza de Mulas",
+    "puente-del-inca": "Puente del Inca",
+    "uspallata": "Uspallata"
+  },
+  "destinations": {
+    "aconcagua": [
+      -70.0109,
+      -32.6532,
+      13
+    ],
+    "confluencia": [
+      -69.97,
+      -32.76,
+      13
+    ],
+    "horcones": [
+      -69.942,
+      -32.825,
+      13
+    ],
+    "island": [
+      -69.8,
+      -32.85,
+      9
+    ],
+    "los-penitentes": [
+      -69.852,
+      -32.838,
+      13
+    ],
+    "plaza-de-mulas": [
+      -70.059,
+      -32.646,
+      13
+    ],
+    "puente-del-inca": [
+      -69.912,
+      -32.825,
+      13
+    ],
+    "uspallata": [
+      -69.348,
+      -32.593,
+      13
+    ]
+  },
+  "garminContextBounds": [
+    -70.35,
+    -33.25,
+    -69.25,
+    -32.45
+  ],
+  "garminFamilyId": 4898,
+  "garminFilename": "OpenBareMap-Aconcagua.img",
+  "garminPackageRevision": "2.0.0-r1",
+  "garminTileStartId": 48980001,
+  "garminUseSourceOutline": true,
+  "garminVersionedDelivery": true,
+  "gridCRS": "EPSG:32719",
+  "gridExtent": [
+    370000,
+    480000,
+    6320000,
+    6410000
+  ],
+  "gridName": "WGS 84 / UTM zone 19S",
+  "gridSource": "utm-grid",
+  "id": "aconcagua",
+  "ignoreSourceHeaderBounds": true,
+  "inspectionNames": [
+    "Aconcagua",
+    "Puente del Inca"
+  ],
+  "label": "Aconcagua",
+  "labelGlyphs": "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz\u00c1\u00c9\u00cd\u00d1\u00d3\u00da\u00dc\u00e1\u00e9\u00ed\u00f1\u00f3\u00fa\u00fc",
+  "mapVersion": "2.0.0",
+  "maxzoom": 14,
+  "minorWaterwayMinzoom": 10,
+  "minzoom": 4,
+  "name": "OpenBareMap Aconcagua",
+  "nativeLanguage": "es",
+  "optionalBasemapLayers": [
+    "ferry",
+    "island_name",
+    "cycling_route",
+    "railway",
+    "station",
+    "hiking_route",
+    "boundary"
+  ],
+  "permanentIce": true,
+  "projectedCRS": "EPSG:32719",
+  "repairClippedCoastline": true,
+  "requireBogFeatures": false,
+  "sourceBaseOverrides": {
+    "argentina": "https://download.geofabrik.de/south-america/argentina/",
+    "chile": "https://download.geofabrik.de/south-america/chile/"
+  },
+  "sourceBaseURL": "https://download.geofabrik.de/south-america/",
+  "sourceCacheRegion": "patagonia",
+  "sourceDate": "2026-11-22",
+  "sourceOutputStem": "aconcagua",
+  "sourceSlugs": [
+    "argentina",
+    "chile"
+  ],
+  "styleRevision": "2.0.0-aconcagua-r1",
+  "terrainAttribution": "Copernicus DEM GLO-30 \u00b7 European Union / ESA \u00b7 DLR / Airbus",
+  "terrainBounds": [
+    -71,
+    -34,
+    -69,
+    -32
+  ],
+  "terrainCacheRegion": "patagonia",
+  "terrainNotice": "Aconcagua elevation: Copernicus DEM GLO-30 Public (AWS 2021 release).\n\nproduced using Copernicus WorldDEM-30 \u00a9 DLR e.V. 2010-2014 and \u00a9 Airbus Defence and Space GmbH 2014-2018 provided under COPERNICUS by the European Union and ESA; all rights reserved\n\nThe organisations in charge of the Copernicus programme by law or by delegation do not incur any liability for any use of the Copernicus WorldDEM-30.\n\nLicense: https://dataspace.copernicus.eu/sites/default/files/media/files/2025-06/copernicus_contributing_mission_data_access_v2_cop_dem_licenses.pdf\nSource: https://registry.opendata.aws/copernicus-dem/\nVertical datum: EGM2008 orthometric metres. Native approximately 30 m cells are bilinearly resampled to point-aligned Int16 HGT for the shared terrain pipeline. Ocean-only cells absent from the official public inventory are zero.\n",
+  "terrainProvider": "copernicus-glo30",
+  "townlands": false,
+  "validationAnchors": {
+    "aconcagua": [
+      -70.0109,
+      -32.6532
+    ],
+    "confluencia": [
+      -69.97,
+      -32.76
+    ],
+    "horcones": [
+      -69.942,
+      -32.825
+    ],
+    "los-penitentes": [
+      -69.852,
+      -32.838
+    ],
+    "plaza-de-mulas": [
+      -70.059,
+      -32.646
+    ],
+    "puente-del-inca": [
+      -69.912,
+      -32.825
+    ],
+    "uspallata": [
+      -69.348,
+      -32.593
+    ]
+  }
+}

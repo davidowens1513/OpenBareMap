@@ -1,0 +1,52 @@
+{
+  "builderSHA256": "df45d47a59e968508a89136d44d799aaf2bba52547b211e0dff68a5b0e0f6cfc",
+  "contextBounds": [
+    -125,
+    48,
+    -121,
+    52
+  ],
+  "note": "Contour payloads preserved exactly while extending land background outside edition coverage.",
+  "oldTopography": {
+    "bytes": 37875712,
+    "path": "releases/garibaldi-whistler/2.0.0/maps/topography.mbtiles",
+    "sha256": "672ebbace126bad16a59861b350e2fddfc5225ff8c1b5a075614c5a06bb613a0",
+    "validation": {
+      "empty_tile_count": 61610,
+      "logical_tiles_sha256": "aba0f145d17ae855c83a15392d0b96b0697c4978b37af33a78c8d49b0d0624ff",
+      "tile_count": 67672
+    }
+  },
+  "output": {
+    "bytes": 37732352,
+    "path": "releases/garibaldi-whistler/2.0.0/maps/topography-context.mbtiles",
+    "sha256": "a96712b25c35a6166b124c5416d8e51624ba2062ef27dfcb5f947fe9213e5ed5",
+    "validation": {
+      "empty_tile_count": 61610,
+      "logical_tiles_sha256": "aba0f145d17ae855c83a15392d0b96b0697c4978b37af33a78c8d49b0d0624ff",
+      "tile_count": 67672
+    }
+  },
+  "replacement": {
+    "changed_tiles": 4349,
+    "path": "build/garibaldi-whistler-coast-context/combined.mbtiles",
+    "replacement_feature_instances": 21364,
+    "sha256": "4e678773d78f5c42c3bb1ea4019a25a9154004d92827e673f5d349985ae91ba3",
+    "unchanged_other_layers_sha256": "83449c566ac2b59b9ea4df6f1108510fdc3e9232677b63ee5e4d4aec78285edc",
+    "validation": {
+      "empty_tile_count": 61610,
+      "logical_tiles_sha256": "aba0f145d17ae855c83a15392d0b96b0697c4978b37af33a78c8d49b0d0624ff",
+      "tile_count": 67672
+    }
+  },
+  "source": {
+    "accessed_utc": "2026-10-25T12:59:16.751893+00:00",
+    "bytes": 928538219,
+    "http_headers_path": "data/land-polygons.headers",
+    "license": "ODbL 1.0; OpenStreetMap contributors",
+    "path": "data/land-polygons-split-4326.zip",
+    "sha256": "5911e273096f9585425a17c30a8a98785cc33ed2718ff88987768933b8a327f7",
+    "source_snapshot": "HTTP Last-Modified 2026-10-25T03:43:12Z; this is file publication, not a guaranteed OSM snapshot timestamp",
+    "url": "https://osmdata.openstreetmap.de/download/land-polygons-split-4326.zip"
+  }
+}

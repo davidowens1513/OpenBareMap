@@ -1,0 +1,152 @@
+{
+  "familyId": 4891,
+  "garminPackageRevision": "2.0.0-r1",
+  "inspection": {
+    "anchorLabels": {
+      "L'Aquila": "L'Aquila"
+    },
+    "bounds": [
+      13.249940872192383,
+      42.24998474121094,
+      13.950061798095703,
+      42.75003433227539
+    ],
+    "coastPolygonsByLevel": {
+      "0": {
+        "0x32": 19,
+        "0x54": 19
+      },
+      "1": {
+        "0x32": 19,
+        "0x54": 19
+      },
+      "2": {
+        "0x32": 19,
+        "0x54": 19
+      },
+      "3": {
+        "0x32": 19,
+        "0x54": 19
+      },
+      "4": {
+        "0x32": 19,
+        "0x54": 19
+      }
+    },
+    "contoursByLevel": {
+      "0": {
+        "0x20": 11411,
+        "0x22": 2846
+      },
+      "1": {
+        "0x20": 9180,
+        "0x22": 2277
+      },
+      "2": {
+        "0x22": 2160
+      },
+      "3": {
+        "0x10008": 1994
+      },
+      "4": {}
+    },
+    "lineInstancesAtHighestDetail": {
+      "0x1": 258,
+      "0x10001": 1463,
+      "0x10002": 151,
+      "0x10004": 39,
+      "0x10005": 1130,
+      "0x10006": 466,
+      "0x1000b": 1215,
+      "0x14": 62,
+      "0x16": 4348,
+      "0x18": 7181,
+      "0x1c": 125,
+      "0x1e": 30,
+      "0x1f": 139,
+      "0x2": 135,
+      "0x20": 11411,
+      "0x22": 2846,
+      "0x3": 1031,
+      "0x4": 897,
+      "0x6": 11384,
+      "0x7": 14947,
+      "0xa": 9588
+    },
+    "logicalCombinedSHA256": "1bce4036427faeec47a9eaa5d00d9aafcc6fb218cc2fe46b20d84b75959371ed",
+    "logicalHashNote": "Internal file names, sizes and payloads; only CommonHeader creation-date bytes 14..20 are zeroed for hashing. IMG archive headers are excluded. Output bytes are never modified.",
+    "logicalTileSHA256": {
+      "48910001.img": "40fea0f7eafad3b8114209b4cd957fb2a23f162e005ec05b54579cff52f0fb08",
+      "48910002.img": "77351b9a245b3492a522b1d5d5a5cfe2485239485a6699a066ffcd711864f774",
+      "48910003.img": "df7b3237a4e26d9936460d1a584ccd2b18fc1f50b0e60c22e8620045a12711bf",
+      "48910004.img": "f8e93b09097a1bea8962f17bf4d7520935a1988dfd610858d7be884003b7ca96",
+      "48910005.img": "3e4c3f78a4adfa14e9351c2822c9c339ed14c233956eebe9b3f699dca98de357",
+      "48910006.img": "acc727f84bd41a7066a1f76f450e4e681ac0229f0aaa08e08b375aadb777392f",
+      "48910007.img": "303c5b01ff59bd3a2f56c4d394e1be8c5a8284d64eefa9c449e0d586b2ad5280",
+      "48910008.img": "ff53162dd083b16320e4221bc91008e8a56de3b0ea9fcf1fabf01b91ed6ed7f7",
+      "48910009.img": "5cbe3dd43d8edd7678946563bee9f03f61cf943aba109a2cc636f33356da31ae",
+      "48910010.img": "f1878a74d95099716e5ed3b51d0d67000dcced3c08cced573d63b0a85e753fd8",
+      "48910011.img": "750279c2d9c03de629c10fa12850161793e90dac27a6bd37ac5470de93c4d700",
+      "48910012.img": "b69d645669b9f970636bede2b5ed551b79698ef6dc0df771111b45235aa75068",
+      "48910013.img": "e1e6d8ff1923974ba6fb51bb294a7fe8a6b73c80bfc8a0ea4d8f42557f6e555f",
+      "48910014.img": "d763cf59a20bc12b0ce3ea4ab97bfbf4a6deea39d4a6c5def1c0dbe48496128b",
+      "48910015.img": "6216eb83735c8c2264f16bd08dee91c73c460d92b8544d9cd8e71dfd7257c940",
+      "48910016.img": "33671aa5e6efe48704bb0079e6e1e63dc9a17f43085ff29e6607117978d930c1",
+      "48910017.img": "49cca50b3079655095a27ed7d645854b39d6d0e97933e683d51ef321344b0b74",
+      "48910018.img": "15f0c0c067cdfb0fa2dd94135565e3c9a2242d3bcbddf2388beec9911d9ce438",
+      "48910019.img": "56a6a933e8ed526c6bb9d67eff3793fbcda8a3c6ce10fbfe1d01ffff87866c91"
+    },
+    "pointInstancesAtHighestDetail": {
+      "0x100": 2,
+      "0x10001": 71,
+      "0x10002": 112,
+      "0x10003": 993,
+      "0x10004": 15,
+      "0x10006": 3512,
+      "0x2f0b": 1465,
+      "0x600": 3,
+      "0x6603": 53,
+      "0x6615": 55,
+      "0x6616": 409,
+      "0x800": 158,
+      "0xb00": 577,
+      "0xc00": 260
+    },
+    "polygonInstancesAtHighestDetail": {
+      "0x10101": 26733,
+      "0x10102": 24604,
+      "0x10103": 1134,
+      "0x10104": 30685,
+      "0x10105": 3,
+      "0x10106": 108,
+      "0x10109": 40830,
+      "0x1010a": 3787,
+      "0x1010b": 298,
+      "0x1010c": 2,
+      "0x13": 43259,
+      "0x32": 19,
+      "0x3c": 1295,
+      "0x50": 35327,
+      "0x51": 27,
+      "0x54": 19
+    },
+    "routing": false,
+    "subfileBytes": {
+      "DEM": 3836354,
+      "LBL": 256580,
+      "MPS": 1547,
+      "RGN": 19508398,
+      "SRT": 912,
+      "TRE": 332280,
+      "TYP": 3037
+    },
+    "tiles": 19
+  },
+  "output": {
+    "bytes": 24057856,
+    "path": "regions/gran-sasso/garmin/dist/OpenBareMap-Gran-Sasso.img",
+    "sha256": "67c12e8edd1de37d9928cc0a284365c3ddc67ae788b9cb648445091f5ac45089"
+  },
+  "routing": false,
+  "status": "compiled and structurally inspected; hardware rendering pending"
+}

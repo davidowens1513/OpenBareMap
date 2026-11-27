@@ -1,0 +1,371 @@
+{
+  "coverage": "Aconcagua Provincial Park and the high Andes approaches from Argentina and Chile, including Horcones, Confluencia, Plaza de Mulas, Puente del Inca and Los Penitentes.",
+  "coverageAnchors": {
+    "aconcagua": {
+      "coordinate": [
+        -70.0109,
+        -32.6532
+      ],
+      "featuresInNeighbouringDetailedTiles": 378
+    },
+    "confluencia": {
+      "coordinate": [
+        -69.97,
+        -32.76
+      ],
+      "featuresInNeighbouringDetailedTiles": 60
+    },
+    "horcones": {
+      "coordinate": [
+        -69.942,
+        -32.825
+      ],
+      "featuresInNeighbouringDetailedTiles": 146
+    },
+    "los-penitentes": {
+      "coordinate": [
+        -69.852,
+        -32.838
+      ],
+      "featuresInNeighbouringDetailedTiles": 161
+    },
+    "plaza-de-mulas": {
+      "coordinate": [
+        -70.059,
+        -32.646
+      ],
+      "featuresInNeighbouringDetailedTiles": 183
+    },
+    "puente-del-inca": {
+      "coordinate": [
+        -69.912,
+        -32.825
+      ],
+      "featuresInNeighbouringDetailedTiles": 289
+    },
+    "uspallata": {
+      "coordinate": [
+        -69.348,
+        -32.593
+      ],
+      "featuresInNeighbouringDetailedTiles": 862
+    }
+  },
+  "datasets": {
+    "basemap": {
+      "empty_tile_count": 20,
+      "logical_tiles_sha256": "7feeaad548f0875577ba17e211048f692f1cfe3c36fc35e5c0851b899ee6fd2b",
+      "tile_count": 2482
+    },
+    "grid": {
+      "empty_tile_count": 0,
+      "logical_tiles_sha256": "a4c3e70e650375d181af8f3614256501072cb9a30a6a99ddaa233b316db0791b",
+      "tile_count": 3129
+    },
+    "hillshade": {
+      "empty_tile_count": 0,
+      "logical_tiles_sha256": "3597d38a3499af376b199cafdd71220bf9e44c5ced86cd96129f1b4af5a04a21",
+      "tile_count": 251
+    },
+    "topography": {
+      "empty_tile_count": 44471,
+      "logical_tiles_sha256": "435931aa519f41c2cc514f9ecd1fc36321048965ba9957290f0fc30be2a67250",
+      "tile_count": 50634
+    }
+  },
+  "detail": {
+    "basemap": {
+      "boundaries": 8239,
+      "contours": 0,
+      "permanentIce": {
+        "glacier": 3361,
+        "permanent_snow": 0
+      }
+    },
+    "topography": {
+      "boundaries": 0,
+      "contours": 226937
+    }
+  },
+  "garmin": {
+    "familyId": 4898,
+    "garminPackageRevision": "2.0.0-r1",
+    "inspection": {
+      "anchorLabels": {
+        "Aconcagua": "Aconcagua",
+        "Puente del Inca": "Puente del Inca"
+      },
+      "bounds": [
+        -70.35009384155273,
+        -33.25003623962402,
+        -69.25000190734863,
+        -32.44992256164551
+      ],
+      "coastPolygonsByLevel": {
+        "0": {
+          "0x32": 9,
+          "0x54": 17
+        },
+        "1": {
+          "0x32": 9,
+          "0x54": 17
+        },
+        "2": {
+          "0x32": 9,
+          "0x54": 17
+        },
+        "3": {
+          "0x32": 9,
+          "0x54": 17
+        },
+        "4": {
+          "0x32": 9,
+          "0x54": 17
+        }
+      },
+      "contoursByLevel": {
+        "0": {
+          "0x20": 37832,
+          "0x22": 9472
+        },
+        "1": {
+          "0x20": 26560,
+          "0x22": 6669
+        },
+        "2": {
+          "0x22": 6096
+        },
+        "3": {
+          "0x10008": 5481
+        },
+        "4": {}
+      },
+      "lineInstancesAtHighestDetail": {
+        "0x10001": 6,
+        "0x10005": 1,
+        "0x10006": 409,
+        "0x14": 19,
+        "0x16": 290,
+        "0x18": 1157,
+        "0x1c": 403,
+        "0x1e": 166,
+        "0x1f": 196,
+        "0x2": 74,
+        "0x20": 37832,
+        "0x22": 9472,
+        "0x4": 4,
+        "0x6": 640,
+        "0x7": 318,
+        "0xa": 173
+      },
+      "logicalCombinedSHA256": "f1decd3fd91fb7ad1b58914e4172b4a39302cb8b696649a80e9b3628acabbaf8",
+      "logicalHashNote": "Internal file names, sizes and payloads; only CommonHeader creation-date bytes 14..20 are zeroed for hashing. IMG archive headers are excluded. Output bytes are never modified.",
+      "logicalTileSHA256": {
+        "48980001.img": "08a353d3c1f29b24d96a44f05743472daf00f7e889b49b356d106024b3b828fa",
+        "48980002.img": "3018593ab547f32656aa8087b581a3fcac7cf081e8a6dc43fe25052c677ae5bb",
+        "48980003.img": "d95f777a70f2c0ec78ad550e5106173540c755999717edf3ba7ff6bd85a95eff",
+        "48980004.img": "f92b9e39b6d378bf73a3c0aedec4e28bbff5e6eeefc7947b9abe00de5bc4d8f6",
+        "48980005.img": "a21d674d8f86c771e5a2a205edd5ee552583c0506b99b2fb8642054a5b0771d3",
+        "48980006.img": "1a83c1766a3fe6d35ffc6a13257d6ac75715b7e4b0eeee932dbc8c843913210b",
+        "48980007.img": "408893a9be0670593ae9f0d820d3431437efcec284f51c477d07f99883f91957",
+        "48980008.img": "315fe011d1492f101e1a753ba2b0eaaaa63e4fb9fc77ec73846574177bce3ad5",
+        "48980009.img": "e39e193b27af9586b6493fb3988706855aaa3cb31df4c01247e94f77da2c26f1"
+      },
+      "pointInstancesAtHighestDetail": {
+        "0x10001": 21,
+        "0x10002": 73,
+        "0x10003": 9,
+        "0x10004": 1,
+        "0x10006": 232,
+        "0x2f0b": 28,
+        "0x6603": 14,
+        "0x6615": 22,
+        "0x6616": 544,
+        "0x800": 10,
+        "0xb00": 17,
+        "0xc00": 43
+      },
+      "polygonInstancesAtHighestDetail": {
+        "0x10101": 594,
+        "0x10102": 48,
+        "0x10103": 9,
+        "0x10104": 4,
+        "0x10109": 54,
+        "0x1010a": 144,
+        "0x1010b": 33,
+        "0x1010c": 368,
+        "0x13": 802,
+        "0x32": 9,
+        "0x3c": 181,
+        "0x50": 10,
+        "0x51": 41,
+        "0x54": 17
+      },
+      "routing": false,
+      "subfileBytes": {
+        "DEM": 11026761,
+        "LBL": 44873,
+        "MPS": 747,
+        "RGN": 18321777,
+        "SRT": 912,
+        "TRE": 224469,
+        "TYP": 3037
+      },
+      "tiles": 9
+    },
+    "output": {
+      "bytes": 29712384,
+      "path": "regions/aconcagua/garmin/dist/OpenBareMap-Aconcagua.img",
+      "sha256": "50ec2363770db645245e447ba7fbf821d82ee66e1c6248f0ddf687a4931af8b9"
+    },
+    "routing": false,
+    "status": "compiled and structurally inspected; hardware rendering pending"
+  },
+  "geometryProcessing": {
+    "contours": 15279,
+    "grid": {
+      "grid_10km": 22,
+      "grid_1km": 202
+    },
+    "landcover": {
+      "empty_source_areas": [],
+      "features": 1108,
+      "permanentIce": {
+        "glacier": 242,
+        "permanent_snow": 0
+      },
+      "retained": 262,
+      "smoothed": 846
+    }
+  },
+  "irelandGarminPackageRevision": "2.0.1-trail-detail-r1",
+  "irelandPreserved": true,
+  "labelGlyphs": {
+    "Open Sans Bold": true,
+    "Open Sans Regular": true,
+    "Open Sans Semibold": true
+  },
+  "landBackground": {
+    "aconcagua": {
+      "coordinate": [
+        -70.0109,
+        -32.6532
+      ],
+      "verifiedZooms": [
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    },
+    "confluencia": {
+      "coordinate": [
+        -69.97,
+        -32.76
+      ],
+      "verifiedZooms": [
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    },
+    "horcones": {
+      "coordinate": [
+        -69.942,
+        -32.825
+      ],
+      "verifiedZooms": [
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    },
+    "los-penitentes": {
+      "coordinate": [
+        -69.852,
+        -32.838
+      ],
+      "verifiedZooms": [
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    },
+    "plaza-de-mulas": {
+      "coordinate": [
+        -70.059,
+        -32.646
+      ],
+      "verifiedZooms": [
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    },
+    "puente-del-inca": {
+      "coordinate": [
+        -69.912,
+        -32.825
+      ],
+      "verifiedZooms": [
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    },
+    "uspallata": {
+      "coordinate": [
+        -69.348,
+        -32.593
+      ],
+      "verifiedZooms": [
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    }
+  },
+  "packages": {
+    "android": {
+      "checkedFiles": 43,
+      "nativeDeviceRenderingTested": false,
+      "sourceFiles": {
+        "basemap": "maps/basemap.mbtiles",
+        "coast": "maps/coast.mbtiles",
+        "hillshade": "maps/hillshade.mbtiles",
+        "topography": "maps/topography.mbtiles",
+        "utm-grid": "maps/grid.mbtiles"
+      }
+    },
+    "ios": {
+      "checkedFiles": 46,
+      "nativeDeviceRenderingTested": false,
+      "sourceFiles": {
+        "basemap": "maps/basemap.mbtiles",
+        "coast": "maps/coast.mbtiles",
+        "hillshade": "maps/hillshade.mbtiles",
+        "topography": "maps/topography.mbtiles",
+        "utm-grid": "maps/grid.mbtiles"
+      }
+    }
+  },
+  "permanentIceSourceCounts": {
+    "glacier": 242,
+    "permanent_snow": 0
+  },
+  "region": "aconcagua",
+  "status": "automated checks passed; visual and hardware acceptance pending"
+}

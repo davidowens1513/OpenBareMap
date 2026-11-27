@@ -1,0 +1,33 @@
+{
+  "bytes": 94710568,
+  "datasets": {
+    "basemap": {
+      "path": "maps/basemap.mbtiles",
+      "sha256": "b46889f6d85f39b9a6b45c1014aaaa666cff483b0dd4e2b844ce2069bc369420"
+    },
+    "coast": {
+      "derivedFrom": "b3e337ac0f3adffaf5055cc7c259e5cb038d15c820c15845a48725cfec350bb3",
+      "path": "maps/coast.mbtiles",
+      "sha256": "173a62dcd576a5ea1e06c37f32ebe5c34b995592105d0f73dc4dc04a6284ac93"
+    },
+    "grid": {
+      "path": "maps/grid.mbtiles",
+      "sha256": "073b099d5e1aad88e424553c0e1045aed5d32c13c69656a0a0bd747fd32aa8d7"
+    },
+    "hillshade": {
+      "path": "maps/hillshade.mbtiles",
+      "sha256": "8843ea7afd20629a35ae4d9abf4b98072ccb643b5f2bbe716fb9af2986b2fcc7"
+    },
+    "topography": {
+      "path": "maps/topography.mbtiles",
+      "sha256": "b3e337ac0f3adffaf5055cc7c259e5cb038d15c820c15845a48725cfec350bb3"
+    }
+  },
+  "instructionsSHA256": "8f60864e044498f47361ef2829e21abfaf9d40189b03d7eaaa70fb3f4fe412ac",
+  "instructionsURL": "https://downloads.appsbyonzy.dev/OpenBareMap/gran-sasso/2.0.0/app-bundles-v1/android/instructions.txt",
+  "localPath": "releases/gran-sasso/2.0.0/app-bundles-v1/android/OpenBareMap-Gran-Sasso-Android-Bundle.zip",
+  "mapManifestSHA256": "638cf20cf9c598d27e5f0bb452bf356b062fdddaedd58251bdf76ca9348965b7",
+  "r2Key": "OpenBareMap/gran-sasso/2.0.0/app-bundles-v1/android/OpenBareMap-Gran-Sasso-Android-Bundle.zip",
+  "sha256": "5b8a107c1e1188361db1267655c68e69d4dbbb26446bb3d55001a91aa6a114d6",
+  "url": "https://downloads.appsbyonzy.dev/OpenBareMap/gran-sasso/2.0.0/app-bundles-v1/android/OpenBareMap-Gran-Sasso-Android-Bundle.zip"
+}

@@ -1,0 +1,58 @@
+{
+  "bounds": [
+    13.25,
+    42.25,
+    13.95,
+    42.75
+  ],
+  "contextEnvelope": [
+    13.25,
+    42.25,
+    13.95,
+    42.75
+  ],
+  "drawPriority": 25,
+  "format": "openbaremap-garmin-render-footprint-v1",
+  "geometry": {
+    "bytes": 1098,
+    "path": "regions/gran-sasso/garmin/render-coverage.geojson",
+    "sha256": "46d5e642023a7a7daef1574fa1f2047aa515444e6766e483af44b9f8cec601cd"
+  },
+  "inputs": [
+    {
+      "bytes": 1410,
+      "path": "data/regions/gran-sasso/sud.poly",
+      "sha256": "0aa952089c59dd862774fa53c8576c4e081fd196f8efe0e4c97ab87267850711",
+      "url": "https://download.geofabrik.de/europe/italy/sud/sud.poly"
+    }
+  ],
+  "knownDestinationsCovered": {
+    "asserigi": [
+      13.5147,
+      42.4236
+    ],
+    "campo-imperatore": [
+      13.5582,
+      42.4427
+    ],
+    "corno-grande": [
+      13.5656,
+      42.4697
+    ],
+    "laquila": [
+      13.3995,
+      42.3498
+    ],
+    "pietracamela": [
+      13.555,
+      42.523
+    ],
+    "prati-di-tivo": [
+      13.5741,
+      42.4992
+    ]
+  },
+  "purpose": "Rectangular Garmin tiles may overlap other countries. Do not fill their padding with sea, land or land-cover polygons.",
+  "region": "gran-sasso",
+  "transparentNativeMap": true
+}

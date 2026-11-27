@@ -1,0 +1,35 @@
+{
+  "bytes": 58628579,
+  "datasets": {
+    "basemap": {
+      "path": "maps/basemap.mbtiles",
+      "sha256": "77b2779d0fa6120e3268c1650222bfc29830fd4f4744b3b7e81e04cb5006c368"
+    },
+    "coast": {
+      "derived_from": "a5a2d35d726a8569cef277e30cc3e564059e0e06f8ecd3627e16df0c7f8bbcce",
+      "maxzoom": 12,
+      "operation": "Preserve land-layer MVT bytes only through zoom 12; omit other layers.",
+      "path": "maps/coast.mbtiles",
+      "sha256": "3e00a1a0cf5fe18e8a439eabf8f5888e908ad721298f884fb5d7fd774aa9e55c"
+    },
+    "grid": {
+      "path": "maps/grid.mbtiles",
+      "sha256": "1e410e6e6b3a9424e2ee5f198eb8783e1e44b2c12d9156612f7457790cf0abde"
+    },
+    "hillshade": {
+      "path": "maps/hillshade.mbtiles",
+      "sha256": "6847c2157358eba1473331966a267970563a16a3d3a7aa1c5e4df8ef48ae8a6e"
+    },
+    "topography": {
+      "path": "maps/topography.mbtiles",
+      "sha256": "a5a2d35d726a8569cef277e30cc3e564059e0e06f8ecd3627e16df0c7f8bbcce"
+    }
+  },
+  "instructionsSHA256": "491813a34be814c706740c7b0fb2519fecc0df42f562717aaabfb612b627c0e5",
+  "instructionsURL": "https://downloads.appsbyonzy.dev/OpenBareMap/vancouver-island-west-coast-trail/2.0.0/app-bundles-v1/ios/instructions.txt",
+  "localPath": "releases/vancouver-island-west-coast-trail/2.0.0/app-bundles-v1/ios/OpenBareMap-Vancouver-Island-West-Coast-Trail-iOS-Bundle.zip",
+  "mapManifestSHA256": "70658bed443ba5d2e8e8622f7f2dac6b9dd87b0fdad1a51d1473813765d14387",
+  "r2Key": "OpenBareMap/vancouver-island-west-coast-trail/2.0.0/app-bundles-v1/ios/OpenBareMap-Vancouver-Island-West-Coast-Trail-iOS-Bundle.zip",
+  "sha256": "a0178fe1877c9542d23186224d924524432309d307b35e5afe1a107803af286f",
+  "url": "https://downloads.appsbyonzy.dev/OpenBareMap/vancouver-island-west-coast-trail/2.0.0/app-bundles-v1/ios/OpenBareMap-Vancouver-Island-West-Coast-Trail-iOS-Bundle.zip"
+}

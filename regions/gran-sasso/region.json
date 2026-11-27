@@ -1,0 +1,162 @@
+{
+  "appBundleName": "Gran-Sasso",
+  "bounds": [
+    13.25,
+    42.25,
+    13.95,
+    42.75
+  ],
+  "clipBasemap": true,
+  "clipSource": true,
+  "clipTerrainToBounds": true,
+  "coastContextBounds": [
+    12,
+    41,
+    15,
+    44
+  ],
+  "contourIntervalMetres": 20,
+  "coverage": "Gran Sasso e Monti della Laga, including Campo Imperatore, Corno Grande, Prati di Tivo, Assergi, L\u2019Aquila and the principal mountain approaches.",
+  "destinationLabels": {
+    "asserigi": "Assergi",
+    "campo-imperatore": "Campo Imperatore",
+    "corno-grande": "Corno Grande",
+    "island": "Gran Sasso",
+    "laquila": "L\u2019Aquila",
+    "pietracamela": "Pietracamela",
+    "prati-di-tivo": "Prati di Tivo"
+  },
+  "destinations": {
+    "asserigi": [
+      13.5147,
+      42.4236,
+      13
+    ],
+    "campo-imperatore": [
+      13.5582,
+      42.4427,
+      13
+    ],
+    "corno-grande": [
+      13.5656,
+      42.4697,
+      13
+    ],
+    "island": [
+      13.6,
+      42.5,
+      9
+    ],
+    "laquila": [
+      13.3995,
+      42.3498,
+      13
+    ],
+    "pietracamela": [
+      13.555,
+      42.523,
+      13
+    ],
+    "prati-di-tivo": [
+      13.5741,
+      42.4992,
+      13
+    ]
+  },
+  "garminContextBounds": [
+    13.25,
+    42.25,
+    13.95,
+    42.75
+  ],
+  "garminFamilyId": 4891,
+  "garminFilename": "OpenBareMap-Gran-Sasso.img",
+  "garminPackageRevision": "2.0.0-r1",
+  "garminTileStartId": 48910001,
+  "garminUseSourceOutline": true,
+  "garminVersionedDelivery": true,
+  "gridCRS": "EPSG:32633",
+  "gridExtent": [
+    350000,
+    420000,
+    4670000,
+    4740000
+  ],
+  "gridName": "WGS 84 / UTM zone 33N",
+  "gridSource": "utm-grid",
+  "id": "gran-sasso",
+  "ignoreSourceHeaderBounds": true,
+  "inspectionNames": [
+    "L'Aquila"
+  ],
+  "label": "Gran Sasso",
+  "labelGlyphs": "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz\u00c0\u00c8\u00c9\u00cc\u00d2\u00d9\u00e0\u00e8\u00e9\u00ec\u00f2\u00f9",
+  "mapVersion": "2.0.0",
+  "maxzoom": 14,
+  "minorWaterwayMinzoom": 10,
+  "minzoom": 4,
+  "name": "OpenBareMap Gran Sasso",
+  "nativeLanguage": "it",
+  "optionalBasemapLayers": [
+    "ferry",
+    "island_name",
+    "cycling_route",
+    "railway",
+    "station",
+    "hiking_route",
+    "boundary"
+  ],
+  "permanentIce": true,
+  "permanentIceSourceNote": "Glacier and permanent snowfield outlines are from OpenStreetMap.",
+  "projectedCRS": "EPSG:32633",
+  "repairClippedCoastline": true,
+  "requiredPermanentIce": [
+    "glacier"
+  ],
+  "requireBogFeatures": false,
+  "sourceBaseOverrides": {
+    "sud": "https://download.geofabrik.de/europe/italy/sud/"
+  },
+  "sourceBaseURL": "https://download.geofabrik.de/europe/italy/",
+  "sourceDate": "2026-11-26",
+  "sourceSlugs": [
+    "sud"
+  ],
+  "styleRevision": "2.0.0-gran-sasso-r1",
+  "terrainAttribution": "Copernicus DEM GLO-30 \u00b7 European Union / ESA \u00b7 DLR / Airbus",
+  "terrainBounds": [
+    13,
+    42,
+    14,
+    43
+  ],
+  "terrainNotice": "Gran Sasso elevation: Copernicus DEM GLO-30 Public (AWS 2021 release).\n\nproduced using Copernicus WorldDEM-30 \u00a9 DLR e.V. 2010-2014 and \u00a9 Airbus Defence and Space GmbH 2014-2018 provided under COPERNICUS by the European Union and ESA; all rights reserved\n\nThe organisations in charge of the Copernicus programme by law or by delegation do not incur any liability for any use of the Copernicus WorldDEM-30.\n\nLicense: https://dataspace.copernicus.eu/sites/default/files/media/files/2025-06/copernicus_contributing_mission_data_access_v2_cop_dem_licenses.pdf\nSource: https://registry.opendata.aws/copernicus-dem/\nVertical datum: EGM2008 orthometric metres. Native approximately 30 m cells are bilinearly resampled to point-aligned Int16 HGT for the shared terrain pipeline. Ocean-only cells absent from the official public inventory are zero.\n",
+  "terrainProvider": "copernicus-glo30",
+  "townlands": false,
+  "validationAnchors": {
+    "asserigi": [
+      13.5147,
+      42.4236
+    ],
+    "campo-imperatore": [
+      13.5582,
+      42.4427
+    ],
+    "corno-grande": [
+      13.5656,
+      42.4697
+    ],
+    "laquila": [
+      13.3995,
+      42.3498
+    ],
+    "pietracamela": [
+      13.555,
+      42.523
+    ],
+    "prati-di-tivo": [
+      13.5741,
+      42.4992
+    ]
+  }
+}

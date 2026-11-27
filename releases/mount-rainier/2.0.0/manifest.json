@@ -1,0 +1,106 @@
+{
+  "acceptance": "Automated checks only; see validation and visual-review records for actual reviewed scope.",
+  "coverage": "Mount Rainier National Park and its approaches, including Paradise, Sunrise, Longmire, Carbon River, Mowich Lake and the Wonderland Trail.",
+  "datasets": {
+    "basemap": {
+      "bytes": 7725056,
+      "path": "releases/mount-rainier/2.0.0/maps/basemap.mbtiles",
+      "sha256": "e30e330657bde64d9e1d5771b804bc5cb76ed78738c381963fcbd6e8f1e0b3a5",
+      "validation": {
+        "empty_tile_count": 0,
+        "logical_tiles_sha256": "d820b761ce6d245a581b1202d9d109ff496d00dfb31f91e3bce96fc77e18f800",
+        "tile_count": 1075
+      }
+    },
+    "grid": {
+      "bytes": 364544,
+      "path": "releases/mount-rainier/2.0.0/maps/grid.mbtiles",
+      "sha256": "dc4be24620139d5afc0702512b84f7fcddc713aeb91226038d0d1224b28ccc2c",
+      "validation": {
+        "empty_tile_count": 0,
+        "logical_tiles_sha256": "4c3775363263a2c5c6a5a6daa59762cf71d9604b8315dd35fcc27adfd9be401e",
+        "tile_count": 1061
+      }
+    },
+    "hillshade": {
+      "bytes": 3342336,
+      "path": "releases/mount-rainier/2.0.0/maps/hillshade.mbtiles",
+      "sha256": "8d1b7ffff35953f05dab46a42446bccc655bd5ce56757fabc72a1c997d5046cb",
+      "validation": {
+        "empty_tile_count": 0,
+        "logical_tiles_sha256": "af0b0350e00e69cf62ada4257e68334e2f1788f7db0e8655cbea4fa59f45988e",
+        "tile_count": 107
+      }
+    },
+    "topography": {
+      "bytes": 24555520,
+      "path": "releases/mount-rainier/2.0.0/maps/topography-context.mbtiles",
+      "sha256": "ea4e0f662416c265a49607d87695b82f284eeeb2bdc0dd6dcd0525ae3ea3f859",
+      "validation": {
+        "empty_tile_count": 59309,
+        "logical_tiles_sha256": "e2ba6749996c9081699d025f2f2a763027da625809a1f78626963ea923638e09",
+        "tile_count": 64484
+      }
+    }
+  },
+  "garmin": {
+    "bytes": 7672832,
+    "path": "regions/mount-rainier/garmin/dist/OpenBareMap-Mount-Rainier.img",
+    "sha256": "395dd6f5146414c45dc7bda9fc1830346049e8e87fe391ae090b493536a3f4f7"
+  },
+  "geometryReport": {
+    "path": "build/mount-rainier-geometry/geometry-report.json",
+    "sha256": "9559698f698d448ad0405179b16604b0cb24dece9e64c0d6588d84983f640049"
+  },
+  "hostAppsModified": false,
+  "mapVersion": "2.0.0",
+  "osm": {
+    "bytes": 3230748,
+    "operation": "Complete-feature bbox extraction with nested relation references",
+    "path": "data/regions/mount-rainier/washington-261120.osm.clipped.osm.pbf",
+    "replicationTimestamp": "2026-11-20T21:21:21Z",
+    "sha256": "351a46a50a267c2822e5ff973f8a94b1fff81b30985e34d0d827d8053c6b48ee",
+    "snapshot_date": "2026-11-20",
+    "url": "https://download.geofabrik.de/north-america/us/washington/washington-261120.osm.pbf"
+  },
+  "packages": {
+    "android": {
+      "archive": {
+        "bytes": 41298921,
+        "path": "regions/mount-rainier/android/OpenBareMap-Android.zip",
+        "sha256": "a5d5c584dc48ce5bbe7077769e196b1ed795a8abaeb93a8200fd699c89e970b3"
+      },
+      "checksumsSHA256": "b429389901efd11b1fceccf2be4b7e6844c385bcd12963dd81ea95d02830ddff",
+      "manifestSHA256": "50e67bf74a97a72817102b74d8b1366e48b51ab06ec4dd9fea5b94bea2f82711",
+      "path": "regions/mount-rainier/android",
+      "validationSHA256": "bab121c3f6b6e79cd360cb697d83014b8bff2d89b9b05c476b06e87b5bb5a0de"
+    },
+    "ios": {
+      "checksumsSHA256": "6756dfaf424ff4284929b68ce80e9ee50fd01e9835a57baa880cf659b1c1ddc9",
+      "manifestSHA256": "dc5cefd110fa5ed9e589b167a5fb28c0669c88b44ed1b1aa02a18c953cc6aa54",
+      "path": "regions/mount-rainier/ios",
+      "validationSHA256": "5fb67b3989e95be0befe7dce61c549e323d35cd5340fa016afa80c490668b6c0"
+    }
+  },
+  "pythonRuntime": {
+    "packages": {
+      "Pillow": "12.3.0",
+      "certifi": "2026.10.23",
+      "charset-normalizer": "3.5.2",
+      "idna": "3.20",
+      "numpy": "2.5.4",
+      "osmium": "4.3.2",
+      "pyproj": "3.8.0",
+      "requests": "2.34.2",
+      "shapely": "2.2.0",
+      "urllib3": "2.8.0"
+    },
+    "platform": "macOS-27.2.1-arm64-arm-64bit-Mach-O",
+    "python": "3.14.5 (main, May 10 2026, 10:21:34) [Clang 21.0.0 (clang-2100.0.123.102)]",
+    "requirementsSHA256": "427f12ff8b49bfebac0a7d453c2f65bd15d6695584b18e6ecee1fdfeed20a36c"
+  },
+  "region": "mount-rainier",
+  "styleSHA256": "cc656ebff7488202ab7a209a01a42b72801bace8e994861d184dcb1ad93fd24c",
+  "terrainLockSHA256": "a0820000db1a4c30ae0e7f9ee562fd17c7a9aef486d15c2a41d8d82946a71f67",
+  "validation": "validation.json"
+}

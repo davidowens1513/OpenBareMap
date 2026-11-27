@@ -1,0 +1,66 @@
+{
+  "bounds": [
+    18.25,
+    -34.38,
+    18.58,
+    -33.82
+  ],
+  "contextEnvelope": [
+    18.25,
+    -34.38,
+    18.58,
+    -33.82
+  ],
+  "drawPriority": 25,
+  "format": "openbaremap-garmin-render-footprint-v1",
+  "geometry": {
+    "bytes": 752,
+    "path": "regions/cape-peninsula/garmin/render-coverage.geojson",
+    "sha256": "c331543b3c0ff934481d6aec9cac4a5f96b2d108219d06e78b99f8287ed1983b"
+  },
+  "inputs": [
+    {
+      "bytes": 22678,
+      "path": "data/regions/cape-peninsula/south-africa.poly",
+      "sha256": "1eeaabc1d26bc118cbe7971a8d3a43c3c984c790872ecbc86cd0963cb84b7209",
+      "url": "https://download.geofabrik.de/africa/south-africa/south-africa.poly"
+    }
+  ],
+  "knownDestinationsCovered": {
+    "cape-point": [
+      18.497,
+      -34.357
+    ],
+    "cape-town": [
+      18.4241,
+      -33.9249
+    ],
+    "chapmans-peak": [
+      18.36,
+      -34.087
+    ],
+    "constantia-nek": [
+      18.406,
+      -34.011
+    ],
+    "lions-head": [
+      18.389,
+      -33.935
+    ],
+    "silvermine": [
+      18.424,
+      -34.087
+    ],
+    "simons-town": [
+      18.433,
+      -34.193
+    ],
+    "table-mountain": [
+      18.4098,
+      -33.9628
+    ]
+  },
+  "purpose": "Rectangular Garmin tiles may overlap other countries. Do not fill their padding with sea, land or land-cover polygons.",
+  "region": "cape-peninsula",
+  "transparentNativeMap": true
+}

@@ -1,0 +1,21 @@
+{
+  "combinedSHA256": "f7fceec42d2713c6ecb5dfcdd2a35bfed56dff808448bf43c6665d13910d2887",
+  "command": [
+    "/opt/homebrew/opt/openjdk@21/libexec/openjdk.jdk/Contents/Home/bin/java",
+    "-Xmx6g",
+    "-jar",
+    "/Volumes/Extreme SSD/Projects/OpenBareMap/work/eight-map-release/git-openbaremap/garmin/tools/splitter-r654/splitter.jar",
+    "--mapid=48970001",
+    "--description=OpenBareMap Cotopaxi & Quilotoa",
+    "--max-nodes=1000000",
+    "--max-threads=2",
+    "--keep-complete=true",
+    "--output=pbf",
+    "--polygon-file=/Volumes/Extreme SSD/Projects/OpenBareMap/work/eight-map-release/git-openbaremap/regions/cotopaxi-quilotoa/garmin/coverage.poly",
+    "--output-dir=/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/5a16016edf00/cotopaxi-quilotoa/garmin/split",
+    "--ignore-osm-bounds=true",
+    "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/5a16016edf00/cotopaxi-quilotoa/garmin/combined.osm.pbf"
+  ],
+  "coverageSHA256": "55baadd04b48799f7b4e02aaed2a4dfd5c9d6d40afcd58d8f0b6fbb37f201293",
+  "ignoreSourceHeaderBounds": true
+}

@@ -1,0 +1,29 @@
+{
+  "accessed_utc": "2026-11-27T11:42:56.572633+00:00",
+  "inputs": [
+    {
+      "bytes": 425147820,
+      "path": "data/regions/south-africa/south-africa-261126.osm.pbf",
+      "replicationTimestamp": "2026-11-26T21:21:01Z",
+      "sha256": "cbcca096c63d6f7f677fecef074ef58f736e5332da1b8dd4878d70a60f8cb3bc",
+      "url": "https://download.geofabrik.de/africa/south-africa/south-africa-261126.osm.pbf"
+    }
+  ],
+  "osm": {
+    "bytes": 17966102,
+    "operation": "Complete-feature bbox extraction with nested relation references",
+    "path": "data/regions/cape-peninsula/south-africa-261126.osm.clipped.osm.pbf",
+    "replicationTimestamp": "2026-11-26T21:21:01Z",
+    "sha256": "ec75dd3612011a997fcd057ed2697d86db1eea39e2542f9b6964e16a7ec52463",
+    "snapshot_date": "2026-11-26",
+    "url": "https://download.geofabrik.de/africa/south-africa/south-africa-261126.osm.pbf"
+  },
+  "polygons": [
+    {
+      "bytes": 22678,
+      "path": "data/regions/cape-peninsula/south-africa.poly",
+      "sha256": "1eeaabc1d26bc118cbe7971a8d3a43c3c984c790872ecbc86cd0963cb84b7209",
+      "url": "https://download.geofabrik.de/africa/south-africa/south-africa.poly"
+    }
+  ]
+}

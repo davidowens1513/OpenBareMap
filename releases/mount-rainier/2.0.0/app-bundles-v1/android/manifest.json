@@ -1,0 +1,33 @@
+{
+  "bytes": 41327397,
+  "datasets": {
+    "basemap": {
+      "path": "maps/basemap.mbtiles",
+      "sha256": "e30e330657bde64d9e1d5771b804bc5cb76ed78738c381963fcbd6e8f1e0b3a5"
+    },
+    "coast": {
+      "derivedFrom": "ea4e0f662416c265a49607d87695b82f284eeeb2bdc0dd6dcd0525ae3ea3f859",
+      "path": "maps/coast.mbtiles",
+      "sha256": "e27b4701da55cf1ee13ccb4b63028f04561b65ef8acac6444d585e05b0f48cb4"
+    },
+    "grid": {
+      "path": "maps/grid.mbtiles",
+      "sha256": "dc4be24620139d5afc0702512b84f7fcddc713aeb91226038d0d1224b28ccc2c"
+    },
+    "hillshade": {
+      "path": "maps/hillshade.mbtiles",
+      "sha256": "8d1b7ffff35953f05dab46a42446bccc655bd5ce56757fabc72a1c997d5046cb"
+    },
+    "topography": {
+      "path": "maps/topography.mbtiles",
+      "sha256": "ea4e0f662416c265a49607d87695b82f284eeeb2bdc0dd6dcd0525ae3ea3f859"
+    }
+  },
+  "instructionsSHA256": "abe562317c4646e74f602e7529dd37fb71424153418581ecc5d5d463227c98fc",
+  "instructionsURL": "https://downloads.appsbyonzy.dev/OpenBareMap/mount-rainier/2.0.0/app-bundles-v1/android/instructions.txt",
+  "localPath": "releases/mount-rainier/2.0.0/app-bundles-v1/android/OpenBareMap-Mount-Rainier-Android-Bundle.zip",
+  "mapManifestSHA256": "50e67bf74a97a72817102b74d8b1366e48b51ab06ec4dd9fea5b94bea2f82711",
+  "r2Key": "OpenBareMap/mount-rainier/2.0.0/app-bundles-v1/android/OpenBareMap-Mount-Rainier-Android-Bundle.zip",
+  "sha256": "90353f3841e0b727967efd63a2fe024a19bfc75c4a439b83208ace26bee947ef",
+  "url": "https://downloads.appsbyonzy.dev/OpenBareMap/mount-rainier/2.0.0/app-bundles-v1/android/OpenBareMap-Mount-Rainier-Android-Bundle.zip"
+}

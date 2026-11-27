@@ -1,0 +1,39 @@
+{
+  "features": [
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              -123.3,
+              49.65
+            ],
+            [
+              -123.3,
+              50.25
+            ],
+            [
+              -122.65,
+              50.25
+            ],
+            [
+              -122.65,
+              49.65
+            ],
+            [
+              -123.3,
+              49.65
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "properties": {
+        "purpose": "Limit opaque native background and land-cover polygons; retain complete accepted OSM and terrain inputs",
+        "region": "garibaldi-whistler"
+      },
+      "type": "Feature"
+    }
+  ],
+  "type": "FeatureCollection"
+}

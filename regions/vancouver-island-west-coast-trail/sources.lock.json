@@ -1,0 +1,29 @@
+{
+  "accessed_utc": "2026-11-27T11:40:08.650582+00:00",
+  "inputs": [
+    {
+      "bytes": 1249592139,
+      "path": "data/regions/canadian-rockies/british-columbia-261120.osm.pbf",
+      "replicationTimestamp": "2026-11-20T21:21:21Z",
+      "sha256": "aef7151390073b8a944562f4b15bbdd8de73945428457644efc5f3113803bac8",
+      "url": "https://download.geofabrik.de/north-america/canada/british-columbia/british-columbia-261120.osm.pbf"
+    }
+  ],
+  "osm": {
+    "bytes": 6318085,
+    "operation": "Complete-feature bbox extraction with nested relation references",
+    "path": "data/regions/vancouver-island-west-coast-trail/british-columbia-261120.osm.clipped.osm.pbf",
+    "replicationTimestamp": "2026-11-20T21:21:21Z",
+    "sha256": "30c8af24485558a30c19da9b7ae12fa193cd5fb5fd50984c60a37a9788c60321",
+    "snapshot_date": "2026-11-20",
+    "url": "https://download.geofabrik.de/north-america/canada/british-columbia/british-columbia-261120.osm.pbf"
+  },
+  "polygons": [
+    {
+      "bytes": 2671,
+      "path": "data/regions/vancouver-island-west-coast-trail/british-columbia.poly",
+      "sha256": "fce9475100adfe7030b6cad9a58759ff8c09473a78b339fe3452e240e976b408",
+      "url": "https://download.geofabrik.de/north-america/canada/british-columbia/british-columbia.poly"
+    }
+  ]
+}

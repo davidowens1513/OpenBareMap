@@ -1,0 +1,20 @@
+{
+  "inputs": [
+    {
+      "path": "regions/gran-sasso/garmin/inputs/contours.geojson.gz",
+      "sha256": "514816ce6c7a227565787127ffaf6787488165532718fd45993c7273bf199b62",
+      "uncompressedSHA256": "ba8446793803e93f6cc81326442eb3a2de24ca9aca3155f9f7a1674bb66bbab6"
+    },
+    {
+      "path": "regions/gran-sasso/garmin/inputs/landcover.geojson.gz",
+      "sha256": "e8951348ae807c28f3f2d65e9bd0b2ce5b2f018ee52d77517371043f271b4687",
+      "uncompressedSHA256": "6901493f2a0bb7758cb4b79342fc2736d489dbd3715dbc7bc7fcf3bb17a5113e"
+    },
+    {
+      "path": "regions/gran-sasso/garmin/inputs/land.geojson.gz",
+      "sha256": "263a2cf2e8cd56bb9a6f356023597ae9cb1c04d95a6a5a114abef9ad83b789c3",
+      "uncompressedSHA256": "b75f77e2b7a13f6ae1498ea383ad21259771dc06044ddc536e82ba512c62a8da"
+    }
+  ],
+  "region": "gran-sasso"
+}

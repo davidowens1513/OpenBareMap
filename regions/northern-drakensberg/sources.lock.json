@@ -1,0 +1,42 @@
+{
+  "accessed_utc": "2026-11-27T11:39:00.682158+00:00",
+  "inputs": [
+    {
+      "bytes": 425147820,
+      "path": "data/regions/south-africa/south-africa-261126.osm.pbf",
+      "replicationTimestamp": "2026-11-26T21:21:01Z",
+      "sha256": "cbcca096c63d6f7f677fecef074ef58f736e5332da1b8dd4878d70a60f8cb3bc",
+      "url": "https://download.geofabrik.de/africa/south-africa/south-africa-261126.osm.pbf"
+    },
+    {
+      "bytes": 127730584,
+      "path": "data/regions/south-africa/lesotho-261126.osm.pbf",
+      "replicationTimestamp": "2026-11-26T21:21:01Z",
+      "sha256": "436daf822421ad6ff7f87b82eebd8d34449c3c6b17ae83bc4d868d155c94bdea",
+      "url": "https://download.geofabrik.de/africa/lesotho/lesotho-261126.osm.pbf"
+    }
+  ],
+  "osm": {
+    "bytes": 19997658,
+    "operation": "Complete-feature bbox extraction with nested relation references, then libosmium sorted merge; duplicate OSM objects resolved by version",
+    "path": "data/regions/northern-drakensberg/northern-drakensberg-261126.osm.pbf",
+    "replicationTimestamp": "2026-11-26T21:21:01Z",
+    "sha256": "ce45d3d97885211bc30e1e39f02c788e5abc26a556f485e815cb65fce7fbc905",
+    "snapshot_date": "2026-11-26",
+    "url": null
+  },
+  "polygons": [
+    {
+      "bytes": 22678,
+      "path": "data/regions/northern-drakensberg/south-africa.poly",
+      "sha256": "1eeaabc1d26bc118cbe7971a8d3a43c3c984c790872ecbc86cd0963cb84b7209",
+      "url": "https://download.geofabrik.de/africa/south-africa/south-africa.poly"
+    },
+    {
+      "bytes": 5711,
+      "path": "data/regions/northern-drakensberg/lesotho.poly",
+      "sha256": "0bc0d9e081bc1c8add4c63998512ca78817015a6f5f217bd331cfe298159f795",
+      "url": "https://download.geofabrik.de/africa/lesotho/lesotho.poly"
+    }
+  ]
+}

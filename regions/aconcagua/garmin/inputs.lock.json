@@ -1,0 +1,20 @@
+{
+  "inputs": [
+    {
+      "path": "regions/aconcagua/garmin/inputs/contours.geojson.gz",
+      "sha256": "573039c28658a2e6d2d73c0878bfb8123d72f5c16dc29e55a92414422c79fdd8",
+      "uncompressedSHA256": "353d3824f35037b90ceff0f79c5f18b0c5fdfea07f54a60b27f610e654164c0c"
+    },
+    {
+      "path": "regions/aconcagua/garmin/inputs/landcover.geojson.gz",
+      "sha256": "48f3af2533eb198de250d51214f7b8b5a04e39f044975048289be559dd11be43",
+      "uncompressedSHA256": "85efa9175a378276ba72a2bea5c1728ce6abfe70e70927bf4b2b783013faeb9c"
+    },
+    {
+      "path": "regions/aconcagua/garmin/inputs/land.geojson.gz",
+      "sha256": "caea6faa6e641ca749d7d2d73128a865253f746fb9f6bafb8c401adeb9fdcf82",
+      "uncompressedSHA256": "483fa9bc623a66cc1fcca7078525c852a89a393c8f543c1bc2870e7ff433eb11"
+    }
+  ],
+  "region": "aconcagua"
+}

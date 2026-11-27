@@ -1,0 +1,32 @@
+{
+  "areaSquareDegrees": 0.5850000000000039,
+  "bounds": [
+    -79.15,
+    -1.1,
+    -78.25,
+    -0.45
+  ],
+  "entireRequestedFootprintCovered": true,
+  "exactFootprint": null,
+  "inputs": [
+    {
+      "bytes": 6268,
+      "path": "data/regions/cotopaxi-quilotoa/ecuador.poly",
+      "sha256": "3fe34889cc5953bbe968b6ea8f9cbab02505e69f1f025d26ec2e12d2a2cae813",
+      "url": "https://download.geofabrik.de/south-america/ecuador/ecuador.poly"
+    }
+  ],
+  "knownDestinationsCovered": [
+    "chugchilan",
+    "cotopaxi",
+    "isinlivi",
+    "island",
+    "jose-rivas-refuge",
+    "latacunga",
+    "limpiopungo",
+    "quilotoa"
+  ],
+  "operation": "Requested rectangular crop; source outlines cover all destination anchors",
+  "polygons": 1,
+  "sha256": "55baadd04b48799f7b4e02aaed2a4dfd5c9d6d40afcd58d8f0b6fbb37f201293"
+}

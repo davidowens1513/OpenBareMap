@@ -1,0 +1,106 @@
+{
+  "acceptance": "Automated checks only; see validation and visual-review records for actual reviewed scope.",
+  "coverage": "Cape Town and the Cape Peninsula, including Table Mountain, Lion\u2019s Head, Silvermine, Chapman\u2019s Peak, Cape Point and the False Bay coast.",
+  "datasets": {
+    "basemap": {
+      "bytes": 20316160,
+      "path": "releases/cape-peninsula/2.0.0/maps/basemap.mbtiles",
+      "sha256": "987c829be5f6c8e480ea9c0159721222c02bd2b63581632c1ad2ae58cb34bf39",
+      "validation": {
+        "empty_tile_count": 4,
+        "logical_tiles_sha256": "ebbd42005cc89c68bfe02a6185412db4bd71bc7c86363bd420b6c059b9202469",
+        "tile_count": 385
+      }
+    },
+    "grid": {
+      "bytes": 278528,
+      "path": "releases/cape-peninsula/2.0.0/maps/grid.mbtiles",
+      "sha256": "49142639f0a86de70f14fee2cca8238fa513f65061379c5ccae04cdc1b8f6230",
+      "validation": {
+        "empty_tile_count": 0,
+        "logical_tiles_sha256": "8119a091ff350797e5baf23ef69ab7e1abc7487395895b80af119ccc4107730c",
+        "tile_count": 713
+      }
+    },
+    "hillshade": {
+      "bytes": 749568,
+      "path": "releases/cape-peninsula/2.0.0/maps/hillshade.mbtiles",
+      "sha256": "524f7e706279aca3783b893b365eb7fd5f71721c8f21c6df5af866d46a9b86f5",
+      "validation": {
+        "empty_tile_count": 0,
+        "logical_tiles_sha256": "ca7c4731b313ed46e81668b97a48c84817ade8e86ff0c20bfc5c163c6321f6d1",
+        "tile_count": 44
+      }
+    },
+    "topography": {
+      "bytes": 3407872,
+      "path": "releases/cape-peninsula/2.0.0/maps/topography-context.mbtiles",
+      "sha256": "3f434a7e7d54fa70c0b1046a314625a34729fa6e62a3d2f50ecdb7928e09b62d",
+      "validation": {
+        "empty_tile_count": 16315,
+        "logical_tiles_sha256": "a84d6cecf3d873d5e0e264a3a5733de7e47515b653016ed56fa47b2777d2c435",
+        "tile_count": 17607
+      }
+    }
+  },
+  "garmin": {
+    "bytes": 5574656,
+    "path": "regions/cape-peninsula/garmin/dist/OpenBareMap-Cape-Peninsula.img",
+    "sha256": "ecd84dca2438d03950394be3d94e9cc0ae3b6b81f59e0a96f0d14e2b33cb1af3"
+  },
+  "geometryReport": {
+    "path": "build/cape-peninsula-geometry/geometry-report.json",
+    "sha256": "593ba5de2555ea0bb1b6baef91c3f55e35145b88fdea6cd1ea6ab4f2a6db2c4a"
+  },
+  "hostAppsModified": false,
+  "mapVersion": "2.0.0",
+  "osm": {
+    "bytes": 17966102,
+    "operation": "Complete-feature bbox extraction with nested relation references",
+    "path": "data/regions/cape-peninsula/south-africa-261126.osm.clipped.osm.pbf",
+    "replicationTimestamp": "2026-11-26T21:21:01Z",
+    "sha256": "ec75dd3612011a997fcd057ed2697d86db1eea39e2542f9b6964e16a7ec52463",
+    "snapshot_date": "2026-11-26",
+    "url": "https://download.geofabrik.de/africa/south-africa/south-africa-261126.osm.pbf"
+  },
+  "packages": {
+    "android": {
+      "archive": {
+        "bytes": 28740734,
+        "path": "regions/cape-peninsula/android/OpenBareMap-Android.zip",
+        "sha256": "4e99ec2e1f2be98b3207b2ed388a759e30d996f335ad082834a0a783a734c5e2"
+      },
+      "checksumsSHA256": "bfd06203859a89c95a95aa4a6bcdb1a64c63cd2f7aa4a97b3025c5fdc0b32666",
+      "manifestSHA256": "4f01712ae0026b4398a8215fe6fe754f93fef204aec0668ce1014fc724aeb8a8",
+      "path": "regions/cape-peninsula/android",
+      "validationSHA256": "8034386ec75237017e275124f15aff2e9a5d360df999150c0b9af7558fc8ee58"
+    },
+    "ios": {
+      "checksumsSHA256": "b1a0e3fbc8d8288daeb05aaf5c4631ac356ff3b1ea6ad524100110de8b2401ac",
+      "manifestSHA256": "c2f9623c0be066e8267bc9229fc54825c396aeb80a14ec9a4b5e31fd5d9917a0",
+      "path": "regions/cape-peninsula/ios",
+      "validationSHA256": "3f75979d9816a979ae79629fd101e7a186804d7bc087e33fb01ad97005907087"
+    }
+  },
+  "pythonRuntime": {
+    "packages": {
+      "Pillow": "12.3.0",
+      "certifi": "2026.10.23",
+      "charset-normalizer": "3.5.2",
+      "idna": "3.20",
+      "numpy": "2.5.4",
+      "osmium": "4.3.2",
+      "pyproj": "3.8.0",
+      "requests": "2.34.2",
+      "shapely": "2.2.0",
+      "urllib3": "2.8.0"
+    },
+    "platform": "macOS-27.2.1-arm64-arm-64bit-Mach-O",
+    "python": "3.14.5 (main, May 10 2026, 10:21:34) [Clang 21.0.0 (clang-2100.0.123.102)]",
+    "requirementsSHA256": "427f12ff8b49bfebac0a7d453c2f65bd15d6695584b18e6ecee1fdfeed20a36c"
+  },
+  "region": "cape-peninsula",
+  "styleSHA256": "5cf0842baf895a8cac46139ced22e03783b6960801bd66c7ac777782e2d69ce6",
+  "terrainLockSHA256": "6fef604ff5338825adbc2824bcb75173abbc5f935d4942d94d7a0e795bbe2c35",
+  "validation": "validation.json"
+}

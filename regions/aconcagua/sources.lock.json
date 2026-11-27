@@ -1,0 +1,42 @@
+{
+  "accessed_utc": "2026-11-27T11:41:00.357824+00:00",
+  "inputs": [
+    {
+      "bytes": 436458588,
+      "path": "data/regions/patagonia/argentina-261122.osm.pbf",
+      "replicationTimestamp": "2026-11-22T21:20:48Z",
+      "sha256": "74687e0ab3e9559183cc635e1a4ac2eeea527094ffb2b0156e03416bb07c184f",
+      "url": "https://download.geofabrik.de/south-america/argentina/argentina-261122.osm.pbf"
+    },
+    {
+      "bytes": 352540467,
+      "path": "data/regions/patagonia/chile-261122.osm.pbf",
+      "replicationTimestamp": "2026-11-22T21:20:48Z",
+      "sha256": "2fdfe88365825b0ee1c38d1777af5dcec396adc100882932675625934cdddeae",
+      "url": "https://download.geofabrik.de/south-america/chile/chile-261122.osm.pbf"
+    }
+  ],
+  "osm": {
+    "bytes": 12340190,
+    "operation": "Complete-feature bbox extraction with nested relation references, then libosmium sorted merge; duplicate OSM objects resolved by version",
+    "path": "data/regions/aconcagua/aconcagua-261122.osm.pbf",
+    "replicationTimestamp": "2026-11-22T21:20:48Z",
+    "sha256": "2c9a9d79e0a68e63fb558889d66772bbe25c4668362977bb69122d6163a0ab26",
+    "snapshot_date": "2026-11-22",
+    "url": null
+  },
+  "polygons": [
+    {
+      "bytes": 14403,
+      "path": "data/regions/aconcagua/argentina.poly",
+      "sha256": "76f8a0212f268e796ad1a13a22184cd313bcc02700e44ef5be9e71c1b3a628f5",
+      "url": "https://download.geofabrik.de/south-america/argentina/argentina.poly"
+    },
+    {
+      "bytes": 4371,
+      "path": "data/regions/aconcagua/chile.poly",
+      "sha256": "a2c053d95312ba82997dda3deeb995a5ccff285d74db545d68b04a95facd26d3",
+      "url": "https://download.geofabrik.de/south-america/chile/chile.poly"
+    }
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "features": [
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              -124.8191,
+              48.44423
+            ],
+            [
+              -124.86873494560612,
+              48.42
+            ],
+            [
+              -125.35,
+              48.42
+            ],
+            [
+              -125.35,
+              49.02
+            ],
+            [
+              -124.2,
+              49.02
+            ],
+            [
+              -124.2,
+              48.42
+            ],
+            [
+              -124.69897511842925,
+              48.42
+            ],
+            [
+              -124.8191,
+              48.44423
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "properties": {
+        "purpose": "Limit opaque native background and land-cover polygons; retain complete accepted OSM and terrain inputs",
+        "region": "vancouver-island-west-coast-trail"
+      },
+      "type": "Feature"
+    }
+  ],
+  "type": "FeatureCollection"
+}

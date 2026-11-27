@@ -1,0 +1,35 @@
+{
+  "bytes": 28769596,
+  "datasets": {
+    "basemap": {
+      "path": "maps/basemap.mbtiles",
+      "sha256": "987c829be5f6c8e480ea9c0159721222c02bd2b63581632c1ad2ae58cb34bf39"
+    },
+    "coast": {
+      "derived_from": "3f434a7e7d54fa70c0b1046a314625a34729fa6e62a3d2f50ecdb7928e09b62d",
+      "maxzoom": 12,
+      "operation": "Preserve land-layer MVT bytes only through zoom 12; omit other layers.",
+      "path": "maps/coast.mbtiles",
+      "sha256": "3d76db731c75230e06a69c25032c12ea4b0adea72d5ccbbf5fd70efd1d9a4b37"
+    },
+    "grid": {
+      "path": "maps/grid.mbtiles",
+      "sha256": "49142639f0a86de70f14fee2cca8238fa513f65061379c5ccae04cdc1b8f6230"
+    },
+    "hillshade": {
+      "path": "maps/hillshade.mbtiles",
+      "sha256": "524f7e706279aca3783b893b365eb7fd5f71721c8f21c6df5af866d46a9b86f5"
+    },
+    "topography": {
+      "path": "maps/topography.mbtiles",
+      "sha256": "3f434a7e7d54fa70c0b1046a314625a34729fa6e62a3d2f50ecdb7928e09b62d"
+    }
+  },
+  "instructionsSHA256": "820f373e7bcdd68982480ae2b1c5cda786caa06d0b5a5709b70bbabc534eff7b",
+  "instructionsURL": "https://downloads.appsbyonzy.dev/OpenBareMap/cape-peninsula/2.0.0/app-bundles-v1/ios/instructions.txt",
+  "localPath": "releases/cape-peninsula/2.0.0/app-bundles-v1/ios/OpenBareMap-Cape-Peninsula-iOS-Bundle.zip",
+  "mapManifestSHA256": "c2f9623c0be066e8267bc9229fc54825c396aeb80a14ec9a4b5e31fd5d9917a0",
+  "r2Key": "OpenBareMap/cape-peninsula/2.0.0/app-bundles-v1/ios/OpenBareMap-Cape-Peninsula-iOS-Bundle.zip",
+  "sha256": "feddd32331768656caa108a1c1a46e96d2ca6be82a718ffba656a5e3c9932705",
+  "url": "https://downloads.appsbyonzy.dev/OpenBareMap/cape-peninsula/2.0.0/app-bundles-v1/ios/OpenBareMap-Cape-Peninsula-iOS-Bundle.zip"
+}

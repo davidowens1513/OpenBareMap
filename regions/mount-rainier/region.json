@@ -1,0 +1,171 @@
+{
+  "appBundleName": "Mount-Rainier",
+  "bounds": [
+    -122.05,
+    46.65,
+    -121.45,
+    47.05
+  ],
+  "clipBasemap": true,
+  "clipSource": true,
+  "clipTerrainToBounds": true,
+  "coastContextBounds": [
+    -124,
+    45,
+    -120,
+    49
+  ],
+  "contourIntervalMetres": 20,
+  "coverage": "Mount Rainier National Park and its approaches, including Paradise, Sunrise, Longmire, Carbon River, Mowich Lake and the Wonderland Trail.",
+  "destinationLabels": {
+    "carbon-river": "Carbon River",
+    "island": "Mount Rainier",
+    "longmire": "Longmire",
+    "mount-rainier": "Mount Rainier",
+    "mowich-lake": "Mowich Lake",
+    "paradise": "Paradise",
+    "sunrise": "Sunrise",
+    "white-river": "White River"
+  },
+  "destinations": {
+    "carbon-river": [
+      -121.897,
+      46.993,
+      13
+    ],
+    "island": [
+      -121.75,
+      46.849999999999994,
+      9
+    ],
+    "longmire": [
+      -121.812,
+      46.75,
+      13
+    ],
+    "mount-rainier": [
+      -121.7603,
+      46.8523,
+      13
+    ],
+    "mowich-lake": [
+      -121.861,
+      46.933,
+      13
+    ],
+    "paradise": [
+      -121.735,
+      46.786,
+      13
+    ],
+    "sunrise": [
+      -121.642,
+      46.914,
+      13
+    ],
+    "white-river": [
+      -121.534,
+      46.902,
+      13
+    ]
+  },
+  "garminContextBounds": [
+    -122.05,
+    46.65,
+    -121.45,
+    47.05
+  ],
+  "garminFamilyId": 4894,
+  "garminFilename": "OpenBareMap-Mount-Rainier.img",
+  "garminPackageRevision": "2.0.0-r1",
+  "garminTileStartId": 48940001,
+  "garminUseSourceOutline": true,
+  "garminVersionedDelivery": true,
+  "gridCRS": "EPSG:32610",
+  "gridExtent": [
+    570000,
+    620000,
+    5160000,
+    5220000
+  ],
+  "gridName": "WGS 84 / UTM zone 10N",
+  "gridSource": "utm-grid",
+  "id": "mount-rainier",
+  "ignoreSourceHeaderBounds": true,
+  "inspectionNames": [
+    "Mount Rainier",
+    "Longmire"
+  ],
+  "label": "Mount Rainier",
+  "labelGlyphs": "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz",
+  "mapVersion": "2.0.0",
+  "maxzoom": 14,
+  "minorWaterwayMinzoom": 10,
+  "minzoom": 4,
+  "name": "OpenBareMap Mount Rainier",
+  "nativeLanguage": "en",
+  "optionalBasemapLayers": [
+    "ferry",
+    "island_name",
+    "cycling_route",
+    "railway",
+    "station",
+    "hiking_route",
+    "boundary"
+  ],
+  "permanentIce": true,
+  "projectedCRS": "EPSG:32610",
+  "repairClippedCoastline": true,
+  "requireBogFeatures": false,
+  "sourceBaseOverrides": {
+    "washington": "https://download.geofabrik.de/north-america/us/washington/"
+  },
+  "sourceBaseURL": "https://download.geofabrik.de/north-america/us/",
+  "sourceCacheRegion": "us-national-parks",
+  "sourceDate": "2026-11-20",
+  "sourceSlugs": [
+    "washington"
+  ],
+  "styleRevision": "2.0.0-mount-rainier-r1",
+  "terrainAttribution": "Copernicus DEM GLO-30 \u00b7 European Union / ESA \u00b7 DLR / Airbus",
+  "terrainBounds": [
+    -123,
+    46,
+    -121,
+    48
+  ],
+  "terrainCacheRegion": "us-national-parks",
+  "terrainNotice": "Mount Rainier elevation: Copernicus DEM GLO-30 Public (AWS 2021 release).\n\nproduced using Copernicus WorldDEM-30 \u00a9 DLR e.V. 2010-2014 and \u00a9 Airbus Defence and Space GmbH 2014-2018 provided under COPERNICUS by the European Union and ESA; all rights reserved\n\nThe organisations in charge of the Copernicus programme by law or by delegation do not incur any liability for any use of the Copernicus WorldDEM-30.\n\nLicense: https://dataspace.copernicus.eu/sites/default/files/media/files/2025-06/copernicus_contributing_mission_data_access_v2_cop_dem_licenses.pdf\nSource: https://registry.opendata.aws/copernicus-dem/\nVertical datum: EGM2008 orthometric metres. Native approximately 30 m cells are bilinearly resampled to point-aligned Int16 HGT for the shared terrain pipeline. Ocean-only cells absent from the official public inventory are zero.\n",
+  "terrainProvider": "copernicus-glo30",
+  "townlands": false,
+  "validationAnchors": {
+    "carbon-river": [
+      -121.897,
+      46.993
+    ],
+    "longmire": [
+      -121.812,
+      46.75
+    ],
+    "mount-rainier": [
+      -121.7603,
+      46.8523
+    ],
+    "mowich-lake": [
+      -121.861,
+      46.933
+    ],
+    "paradise": [
+      -121.735,
+      46.786
+    ],
+    "sunrise": [
+      -121.642,
+      46.914
+    ],
+    "white-river": [
+      -121.534,
+      46.902
+    ]
+  }
+}

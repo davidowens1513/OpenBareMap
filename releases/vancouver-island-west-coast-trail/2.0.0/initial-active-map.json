@@ -1,0 +1,52 @@
+{
+  "contourIntervalMetres": 20,
+  "coverage": "Vancouver Island\u2019s West Coast Trail between Pachena Bay and Port Renfrew, including Bamfield, Nitinat Narrows, Carmanah, Walbran and the Juan de Fuca coast.",
+  "datasets": {
+    "basemap": {
+      "bytes": 11669504,
+      "path": "releases/vancouver-island-west-coast-trail/2.0.0/maps/basemap.mbtiles",
+      "sha256": "77b2779d0fa6120e3268c1650222bfc29830fd4f4744b3b7e81e04cb5006c368",
+      "validation": {
+        "empty_tile_count": 831,
+        "logical_tiles_sha256": "36b3134acfff516ee113eedb8d15b10d601d3d6ee23eb5515b26f7f20ff6a2c5",
+        "tile_count": 3058
+      }
+    },
+    "grid": {
+      "bytes": 1028096,
+      "path": "releases/vancouver-island-west-coast-trail/2.0.0/maps/grid.mbtiles",
+      "sha256": "1e410e6e6b3a9424e2ee5f198eb8783e1e44b2c12d9156612f7457790cf0abde",
+      "validation": {
+        "empty_tile_count": 0,
+        "logical_tiles_sha256": "b8d4e73e760fa633752d153cce04824cf15d2226e0430c92c687aa5b981c82d2",
+        "tile_count": 3037
+      }
+    },
+    "hillshade": {
+      "bytes": 5505024,
+      "path": "releases/vancouver-island-west-coast-trail/2.0.0/maps/hillshade.mbtiles",
+      "sha256": "6847c2157358eba1473331966a267970563a16a3d3a7aa1c5e4df8ef48ae8a6e",
+      "validation": {
+        "empty_tile_count": 0,
+        "logical_tiles_sha256": "1cc4c325d37ecd790c5c1c50aba3e9c80e07df030b5a58b01d63a417b9233805",
+        "tile_count": 165
+      }
+    },
+    "topography": {
+      "bytes": 33284096,
+      "path": "releases/vancouver-island-west-coast-trail/2.0.0/maps/topography.mbtiles",
+      "sha256": "a41bf765ec224d49d23b0550974b9a28bf059701f1a6fb83eaed488012b6b6f4",
+      "validation": {
+        "empty_tile_count": 43132,
+        "logical_tiles_sha256": "2c55d430309a268e3492885490d432c9025d05a8579a440fdfe343d9e07974c0",
+        "tile_count": 47907
+      }
+    }
+  },
+  "format": "openbaremap-development-viewer-v1",
+  "localBorders": false,
+  "mapVersion": "2.0.0",
+  "region": "vancouver-island-west-coast-trail",
+  "storageRevision": "2.0.0-vancouver-island-west-coast-trail-r1",
+  "styleRevision": "2.0.0-vancouver-island-west-coast-trail-r1"
+}

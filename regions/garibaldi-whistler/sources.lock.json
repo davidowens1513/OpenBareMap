@@ -1,0 +1,29 @@
+{
+  "accessed_utc": "2026-11-27T11:44:10.183848+00:00",
+  "inputs": [
+    {
+      "bytes": 1249592139,
+      "path": "data/regions/canadian-rockies/british-columbia-261120.osm.pbf",
+      "replicationTimestamp": "2026-11-20T21:21:21Z",
+      "sha256": "aef7151390073b8a944562f4b15bbdd8de73945428457644efc5f3113803bac8",
+      "url": "https://download.geofabrik.de/north-america/canada/british-columbia/british-columbia-261120.osm.pbf"
+    }
+  ],
+  "osm": {
+    "bytes": 7810140,
+    "operation": "Complete-feature bbox extraction with nested relation references",
+    "path": "data/regions/garibaldi-whistler/british-columbia-261120.osm.clipped.osm.pbf",
+    "replicationTimestamp": "2026-11-20T21:21:21Z",
+    "sha256": "f78f4f38999eef670291a6f1b8b71087c1c469a41efa3fec6dc63ba49f921a98",
+    "snapshot_date": "2026-11-20",
+    "url": "https://download.geofabrik.de/north-america/canada/british-columbia/british-columbia-261120.osm.pbf"
+  },
+  "polygons": [
+    {
+      "bytes": 2671,
+      "path": "data/regions/garibaldi-whistler/british-columbia.poly",
+      "sha256": "fce9475100adfe7030b6cad9a58759ff8c09473a78b339fe3452e240e976b408",
+      "url": "https://download.geofabrik.de/north-america/canada/british-columbia/british-columbia.poly"
+    }
+  ]
+}

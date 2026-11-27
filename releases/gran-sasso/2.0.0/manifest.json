@@ -1,0 +1,106 @@
+{
+  "acceptance": "Automated checks only; see validation and visual-review records for actual reviewed scope.",
+  "coverage": "Gran Sasso e Monti della Laga, including Campo Imperatore, Corno Grande, Prati di Tivo, Assergi, L\u2019Aquila and the principal mountain approaches.",
+  "datasets": {
+    "basemap": {
+      "bytes": 61083648,
+      "path": "releases/gran-sasso/2.0.0/maps/basemap.mbtiles",
+      "sha256": "b46889f6d85f39b9a6b45c1014aaaa666cff483b0dd4e2b844ce2069bc369420",
+      "validation": {
+        "empty_tile_count": 4,
+        "logical_tiles_sha256": "1e12a1ec214ae679eede585eda850f6d8a0ae097f5febfd45ea8b902b9cc77c1",
+        "tile_count": 1432
+      }
+    },
+    "grid": {
+      "bytes": 507904,
+      "path": "releases/gran-sasso/2.0.0/maps/grid.mbtiles",
+      "sha256": "073b099d5e1aad88e424553c0e1045aed5d32c13c69656a0a0bd747fd32aa8d7",
+      "validation": {
+        "empty_tile_count": 0,
+        "logical_tiles_sha256": "2a3b3031a6646589eb76ad9b22641404087dd55d27880bd271c280ff4c46909d",
+        "tile_count": 1428
+      }
+    },
+    "hillshade": {
+      "bytes": 4526080,
+      "path": "releases/gran-sasso/2.0.0/maps/hillshade.mbtiles",
+      "sha256": "8843ea7afd20629a35ae4d9abf4b98072ccb643b5f2bbe716fb9af2986b2fcc7",
+      "validation": {
+        "empty_tile_count": 0,
+        "logical_tiles_sha256": "d1496978a8f8b5a4fd787ec42e4c8d45d4ab47c367a83f2c20f0d49fef3faaf2",
+        "tile_count": 120
+      }
+    },
+    "topography": {
+      "bytes": 24653824,
+      "path": "releases/gran-sasso/2.0.0/maps/topography-context.mbtiles",
+      "sha256": "b3e337ac0f3adffaf5055cc7c259e5cb038d15c820c15845a48725cfec350bb3",
+      "validation": {
+        "empty_tile_count": 24317,
+        "logical_tiles_sha256": "b59fc9a5c59cfe2cb73d3d60ee30510fd9babcb04821e5b9fb37f8972cc0b12c",
+        "tile_count": 27169
+      }
+    }
+  },
+  "garmin": {
+    "bytes": 24057856,
+    "path": "regions/gran-sasso/garmin/dist/OpenBareMap-Gran-Sasso.img",
+    "sha256": "67c12e8edd1de37d9928cc0a284365c3ddc67ae788b9cb648445091f5ac45089"
+  },
+  "geometryReport": {
+    "path": "build/gran-sasso-geometry/geometry-report.json",
+    "sha256": "bcdc83f1af8781423fdc4fb5a7b124715099378fac3aa5fe4075050aa8ce13e2"
+  },
+  "hostAppsModified": false,
+  "mapVersion": "2.0.0",
+  "osm": {
+    "bytes": 35587836,
+    "operation": "Complete-feature bbox extraction with nested relation references",
+    "path": "data/regions/gran-sasso/sud-261126.osm.clipped.osm.pbf",
+    "replicationTimestamp": "2026-11-26T21:21:01Z",
+    "sha256": "a96e61c21f0191c056a905a3f6b90b701f6cbf704b1b8c4f0498a9816adcc817",
+    "snapshot_date": "2026-11-26",
+    "url": "https://download.geofabrik.de/europe/italy/sud/sud-261126.osm.pbf"
+  },
+  "packages": {
+    "android": {
+      "archive": {
+        "bytes": 94682135,
+        "path": "regions/gran-sasso/android/OpenBareMap-Android.zip",
+        "sha256": "da22e619861330f77618dac4f45c733cd4189bd94cfc4f7ca7bced52fb3d9d18"
+      },
+      "checksumsSHA256": "38df047b660935a8b6782598feae8a57e7dfdf1df64c1e1c11b2799c488040a6",
+      "manifestSHA256": "638cf20cf9c598d27e5f0bb452bf356b062fdddaedd58251bdf76ca9348965b7",
+      "path": "regions/gran-sasso/android",
+      "validationSHA256": "dbc5635d667fee3b373a0ec2983bcc424020d931e97a531ff1395feb58175aaf"
+    },
+    "ios": {
+      "checksumsSHA256": "9eb9f112ce3e10afd7dc42cacf3ea9e4fbf66ed604f02703b175c65b74dd6524",
+      "manifestSHA256": "7c1b2c3a9a12306dbd6e5d79b9bf570d71a10af265908b2523f69dee6a8ed851",
+      "path": "regions/gran-sasso/ios",
+      "validationSHA256": "1da48b829f690279bfff595a08bdafcae65e10b4c356ae20bccc4088921cfd38"
+    }
+  },
+  "pythonRuntime": {
+    "packages": {
+      "Pillow": "12.3.0",
+      "certifi": "2026.10.23",
+      "charset-normalizer": "3.5.2",
+      "idna": "3.20",
+      "numpy": "2.5.4",
+      "osmium": "4.3.2",
+      "pyproj": "3.8.0",
+      "requests": "2.34.2",
+      "shapely": "2.2.0",
+      "urllib3": "2.8.0"
+    },
+    "platform": "macOS-27.2.1-arm64-arm-64bit-Mach-O",
+    "python": "3.14.5 (main, May 10 2026, 10:21:34) [Clang 21.0.0 (clang-2100.0.123.102)]",
+    "requirementsSHA256": "427f12ff8b49bfebac0a7d453c2f65bd15d6695584b18e6ecee1fdfeed20a36c"
+  },
+  "region": "gran-sasso",
+  "styleSHA256": "6aff55f84a3739390440b12bc30d448189d8a4c1ba1861dc24b58741ff79ffed",
+  "terrainLockSHA256": "c90ca021227b38ba017a04c77b01861cc754a3c0fe6a00a1cf9d703892b5c4e0",
+  "validation": "validation.json"
+}

@@ -1,0 +1,39 @@
+{
+  "features": [
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              -122.05,
+              46.65
+            ],
+            [
+              -122.05,
+              47.05
+            ],
+            [
+              -121.45,
+              47.05
+            ],
+            [
+              -121.45,
+              46.65
+            ],
+            [
+              -122.05,
+              46.65
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "properties": {
+        "purpose": "Limit opaque native background and land-cover polygons; retain complete accepted OSM and terrain inputs",
+        "region": "mount-rainier"
+      },
+      "type": "Feature"
+    }
+  ],
+  "type": "FeatureCollection"
+}

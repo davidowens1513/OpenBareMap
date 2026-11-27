@@ -1,0 +1,52 @@
+{
+  "builderSHA256": "df45d47a59e968508a89136d44d799aaf2bba52547b211e0dff68a5b0e0f6cfc",
+  "contextBounds": [
+    -124,
+    45,
+    -120,
+    49
+  ],
+  "note": "Contour payloads preserved exactly while extending land background outside edition coverage.",
+  "oldTopography": {
+    "bytes": 24686592,
+    "path": "releases/mount-rainier/2.0.0/maps/topography.mbtiles",
+    "sha256": "6b019dac22039d01e19b295179db697fdf4408b6e46fa2bdbac95a297279ecca",
+    "validation": {
+      "empty_tile_count": 59309,
+      "logical_tiles_sha256": "e2ba6749996c9081699d025f2f2a763027da625809a1f78626963ea923638e09",
+      "tile_count": 64484
+    }
+  },
+  "output": {
+    "bytes": 24555520,
+    "path": "releases/mount-rainier/2.0.0/maps/topography-context.mbtiles",
+    "sha256": "ea4e0f662416c265a49607d87695b82f284eeeb2bdc0dd6dcd0525ae3ea3f859",
+    "validation": {
+      "empty_tile_count": 59309,
+      "logical_tiles_sha256": "e2ba6749996c9081699d025f2f2a763027da625809a1f78626963ea923638e09",
+      "tile_count": 64484
+    }
+  },
+  "replacement": {
+    "changed_tiles": 4209,
+    "path": "build/mount-rainier-coast-context/combined.mbtiles",
+    "replacement_feature_instances": 14795,
+    "sha256": "5dfb21807e98a3f9b0c4b4538ce19040a186e8efee204ff1744cc557feadb469",
+    "unchanged_other_layers_sha256": "b6f6acf6231825575b8fece44798f6521469ae446141b61314ca01a8a58bf4b8",
+    "validation": {
+      "empty_tile_count": 59309,
+      "logical_tiles_sha256": "e2ba6749996c9081699d025f2f2a763027da625809a1f78626963ea923638e09",
+      "tile_count": 64484
+    }
+  },
+  "source": {
+    "accessed_utc": "2026-10-25T12:59:16.751893+00:00",
+    "bytes": 928538219,
+    "http_headers_path": "data/land-polygons.headers",
+    "license": "ODbL 1.0; OpenStreetMap contributors",
+    "path": "data/land-polygons-split-4326.zip",
+    "sha256": "5911e273096f9585425a17c30a8a98785cc33ed2718ff88987768933b8a327f7",
+    "source_snapshot": "HTTP Last-Modified 2026-10-25T03:43:12Z; this is file publication, not a guaranteed OSM snapshot timestamp",
+    "url": "https://osmdata.openstreetmap.de/download/land-polygons-split-4326.zip"
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "bounds": [
+    -125.35,
+    48.42,
+    -124.2,
+    49.02
+  ],
+  "contextEnvelope": [
+    -125.35,
+    48.42,
+    -124.2,
+    49.02
+  ],
+  "drawPriority": 25,
+  "format": "openbaremap-garmin-render-footprint-v1",
+  "geometry": {
+    "bytes": 1024,
+    "path": "regions/vancouver-island-west-coast-trail/garmin/render-coverage.geojson",
+    "sha256": "9d6ee1e68ffc2a98942dd453ebb0cd290ddd1f8aa56b6171ee467dfe7af974b8"
+  },
+  "inputs": [
+    {
+      "bytes": 2671,
+      "path": "data/regions/vancouver-island-west-coast-trail/british-columbia.poly",
+      "sha256": "fce9475100adfe7030b6cad9a58759ff8c09473a78b339fe3452e240e976b408",
+      "url": "https://download.geofabrik.de/north-america/canada/british-columbia/british-columbia.poly"
+    }
+  ],
+  "knownDestinationsCovered": {
+    "bamfield": [
+      -125.137,
+      48.835
+    ],
+    "carmanah": [
+      -124.704,
+      48.612
+    ],
+    "gordon-river": [
+      -124.414,
+      48.508
+    ],
+    "nitinat-narrows": [
+      -124.787,
+      48.663
+    ],
+    "pachena-bay": [
+      -125.108,
+      48.825
+    ],
+    "port-renfrew": [
+      -124.421,
+      48.555
+    ],
+    "walbran": [
+      -124.668,
+      48.584
+    ]
+  },
+  "purpose": "Rectangular Garmin tiles may overlap other countries. Do not fill their padding with sea, land or land-cover polygons.",
+  "region": "vancouver-island-west-coast-trail",
+  "transparentNativeMap": true
+}

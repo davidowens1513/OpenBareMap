@@ -1,0 +1,41 @@
+{
+  "regions": {
+    "garibaldi-whistler": {
+      "basemap": {
+        "sourceSHA256": "3399b99d00fb7b085bd2cea26ec3cc6595f69afe7f35d74c71dede203e178218",
+        "bytes": 13766074,
+        "sha256": "10ec66b78b852995100a7a7f4f4f8a18ca90b363c2ca314c65d191daf01fb860",
+        "tiles": 1861
+      },
+      "grid": {
+        "sourceSHA256": "47d649a6b3072ed153004bc81c6ab920c8a691a9528f8470845b46ff041324e5",
+        "bytes": 483926,
+        "sha256": "760f9fc67edf406e137353fc67a2f2024fc56829a9e0f6a67ed9438b95d2a2c7",
+        "tiles": 1850
+      },
+      "hillshade": {
+        "sourceSHA256": "f508e054aa98ff19f79a9183f2f732b4f50a786935d133bfa5e45e26605b43d4",
+        "bytes": 5057055,
+        "sha256": "89f5773f406af88d5d0e03586b5eb32bd6f23b9300fb34857de87a2dc523dd8d",
+        "tiles": 143
+      },
+      "topography": {
+        "sourceSHA256": "a96712b25c35a6166b124c5416d8e51624ba2062ef27dfcb5f947fe9213e5ed5",
+        "bytes": 32249843,
+        "sha256": "ea0b536bae0334b2abd9471b0769f041105afd86d2ef6f02c8e06d6c054ded84",
+        "tiles": 67672
+      },
+      "coast": {
+        "sourceSHA256": "e3824396ffaadc1d85efde563f4095139fb16a70813423eced0c50c9272e2ef4",
+        "bytes": 1547327,
+        "sha256": "151b8daed47ccc092891217b53d323a9779e84b6cc36600dd659fed166a3b802",
+        "tiles": 4470
+      }
+    }
+  },
+  "pmtilesPython": "3.8.1",
+  "pmtilesJS": "4.5.0",
+  "librarySHA256": "caf981bc46f6327ee7e65d5dc964d89d38a69f60edca2bd4c5c890c21b554c6c",
+  "dataOrigin": "https://downloads.appsbyonzy.dev/OpenBareMap/garibaldi-whistler/2.0.0/preview",
+  "scope": "Complete selected map tiles; no regional or zoom sampling."
+}

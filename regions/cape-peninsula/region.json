@@ -1,0 +1,177 @@
+{
+  "appBundleName": "Cape-Peninsula",
+  "bounds": [
+    18.25,
+    -34.38,
+    18.58,
+    -33.82
+  ],
+  "clipBasemap": true,
+  "clipSource": true,
+  "clipTerrainToBounds": true,
+  "coastContextBounds": [
+    17,
+    -36,
+    20,
+    -32
+  ],
+  "contourIntervalMetres": 20,
+  "coverage": "Cape Town and the Cape Peninsula, including Table Mountain, Lion\u2019s Head, Silvermine, Chapman\u2019s Peak, Cape Point and the False Bay coast.",
+  "destinationLabels": {
+    "cape-point": "Cape Point",
+    "cape-town": "Cape Town",
+    "chapmans-peak": "Chapman\u2019s Peak",
+    "constantia-nek": "Constantia Nek",
+    "island": "Cape Peninsula",
+    "lions-head": "Lion\u2019s Head",
+    "silvermine": "Silvermine",
+    "simons-town": "Simon\u2019s Town",
+    "table-mountain": "Table Mountain"
+  },
+  "destinations": {
+    "cape-point": [
+      18.497,
+      -34.357,
+      13
+    ],
+    "cape-town": [
+      18.4241,
+      -33.9249,
+      13
+    ],
+    "chapmans-peak": [
+      18.36,
+      -34.087,
+      13
+    ],
+    "constantia-nek": [
+      18.406,
+      -34.011,
+      13
+    ],
+    "island": [
+      18.415,
+      -34.1,
+      9
+    ],
+    "lions-head": [
+      18.389,
+      -33.935,
+      13
+    ],
+    "silvermine": [
+      18.424,
+      -34.087,
+      13
+    ],
+    "simons-town": [
+      18.433,
+      -34.193,
+      13
+    ],
+    "table-mountain": [
+      18.4098,
+      -33.9628,
+      13
+    ]
+  },
+  "garminContextBounds": [
+    18.25,
+    -34.38,
+    18.58,
+    -33.82
+  ],
+  "garminFamilyId": 4893,
+  "garminFilename": "OpenBareMap-Cape-Peninsula.img",
+  "garminPackageRevision": "2.0.0-r1",
+  "garminTileStartId": 48930001,
+  "garminUseSourceOutline": true,
+  "garminVersionedDelivery": true,
+  "gridCRS": "EPSG:32734",
+  "gridExtent": [
+    240000,
+    280000,
+    6190000,
+    6260000
+  ],
+  "gridName": "WGS 84 / UTM zone 34S",
+  "gridSource": "utm-grid",
+  "id": "cape-peninsula",
+  "ignoreSourceHeaderBounds": true,
+  "inspectionNames": [
+    "Cape Town",
+    "Hout Bay"
+  ],
+  "label": "Cape Peninsula",
+  "labelGlyphs": "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz",
+  "mapVersion": "2.0.0",
+  "maxzoom": 14,
+  "minorWaterwayMinzoom": 10,
+  "minzoom": 4,
+  "name": "OpenBareMap Cape Peninsula",
+  "nativeLanguage": "en",
+  "optionalBasemapLayers": [
+    "ferry",
+    "island_name",
+    "cycling_route",
+    "railway",
+    "station",
+    "hiking_route",
+    "boundary"
+  ],
+  "permanentIce": false,
+  "projectedCRS": "EPSG:32734",
+  "repairClippedCoastline": true,
+  "requireBogFeatures": false,
+  "sourceBaseURL": "https://download.geofabrik.de/africa/south-africa/",
+  "sourceCacheRegion": "south-africa",
+  "sourceDate": "2026-11-26",
+  "sourceSlugs": [
+    "south-africa"
+  ],
+  "styleRevision": "2.0.0-cape-peninsula-r1",
+  "terrainAttribution": "Copernicus DEM GLO-30 \u00b7 European Union / ESA \u00b7 DLR / Airbus",
+  "terrainBounds": [
+    18,
+    -35,
+    19,
+    -33
+  ],
+  "terrainNotice": "Cape Peninsula elevation: Copernicus DEM GLO-30 Public (AWS 2021 release).\n\nproduced using Copernicus WorldDEM-30 \u00a9 DLR e.V. 2010-2014 and \u00a9 Airbus Defence and Space GmbH 2014-2018 provided under COPERNICUS by the European Union and ESA; all rights reserved\n\nThe organisations in charge of the Copernicus programme by law or by delegation do not incur any liability for any use of the Copernicus WorldDEM-30.\n\nLicense: https://dataspace.copernicus.eu/sites/default/files/media/files/2025-06/copernicus_contributing_mission_data_access_v2_cop_dem_licenses.pdf\nSource: https://registry.opendata.aws/copernicus-dem/\nVertical datum: EGM2008 orthometric metres. Native approximately 30 m cells are bilinearly resampled to point-aligned Int16 HGT for the shared terrain pipeline. Ocean-only cells absent from the official public inventory are zero.\n",
+  "terrainProvider": "copernicus-glo30",
+  "townlands": false,
+  "validationAnchors": {
+    "cape-point": [
+      18.497,
+      -34.357
+    ],
+    "cape-town": [
+      18.4241,
+      -33.9249
+    ],
+    "chapmans-peak": [
+      18.36,
+      -34.087
+    ],
+    "constantia-nek": [
+      18.406,
+      -34.011
+    ],
+    "lions-head": [
+      18.389,
+      -33.935
+    ],
+    "silvermine": [
+      18.424,
+      -34.087
+    ],
+    "simons-town": [
+      18.433,
+      -34.193
+    ],
+    "table-mountain": [
+      18.4098,
+      -33.9628
+    ]
+  }
+}

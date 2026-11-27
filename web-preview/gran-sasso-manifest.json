@@ -1,0 +1,41 @@
+{
+  "regions": {
+    "gran-sasso": {
+      "basemap": {
+        "sourceSHA256": "b46889f6d85f39b9a6b45c1014aaaa666cff483b0dd4e2b844ce2069bc369420",
+        "bytes": 59982366,
+        "sha256": "f2b8108811e37f55703a27a8cfdcd34b3a94a532e469ea3a5d708b76db1ca997",
+        "tiles": 1432
+      },
+      "grid": {
+        "sourceSHA256": "073b099d5e1aad88e424553c0e1045aed5d32c13c69656a0a0bd747fd32aa8d7",
+        "bytes": 422324,
+        "sha256": "d1d8fc56f9ec4701b5066c1fc869f48ad5fd1270d1214adb94753e2985d5d926",
+        "tiles": 1428
+      },
+      "hillshade": {
+        "sourceSHA256": "8843ea7afd20629a35ae4d9abf4b98072ccb643b5f2bbe716fb9af2986b2fcc7",
+        "bytes": 4415108,
+        "sha256": "7fbca30dc58b7cd9a18f96c0f039c5740e440b9bc0d8d82d4b3fc8d679452065",
+        "tiles": 120
+      },
+      "topography": {
+        "sourceSHA256": "b3e337ac0f3adffaf5055cc7c259e5cb038d15c820c15845a48725cfec350bb3",
+        "bytes": 22063694,
+        "sha256": "7db44d4c41f83c17f9b52fda0d4fede0429de8f98346616404c526730407089d",
+        "tiles": 27169
+      },
+      "coast": {
+        "sourceSHA256": "173a62dcd576a5ea1e06c37f32ebe5c34b995592105d0f73dc4dc04a6284ac93",
+        "bytes": 120707,
+        "sha256": "1be795276f0cc359de311d01351313631d66443c549d6340625e09a2783e414a",
+        "tiles": 1798
+      }
+    }
+  },
+  "pmtilesPython": "3.8.1",
+  "pmtilesJS": "4.5.0",
+  "librarySHA256": "caf981bc46f6327ee7e65d5dc964d89d38a69f60edca2bd4c5c890c21b554c6c",
+  "dataOrigin": "https://downloads.appsbyonzy.dev/OpenBareMap/gran-sasso/2.0.0/preview",
+  "scope": "Complete selected map tiles; no regional or zoom sampling."
+}

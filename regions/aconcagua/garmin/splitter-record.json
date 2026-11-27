@@ -1,0 +1,21 @@
+{
+  "combinedSHA256": "f789dfa9e66dacc28ab851a19da58f0cfcc108890588b49dd0501de926f3b8ee",
+  "command": [
+    "/opt/homebrew/opt/openjdk@21/libexec/openjdk.jdk/Contents/Home/bin/java",
+    "-Xmx6g",
+    "-jar",
+    "/Volumes/Extreme SSD/Projects/OpenBareMap/work/eight-map-release/git-openbaremap/garmin/tools/splitter-r654/splitter.jar",
+    "--mapid=48980001",
+    "--description=OpenBareMap Aconcagua",
+    "--max-nodes=1000000",
+    "--max-threads=2",
+    "--keep-complete=true",
+    "--output=pbf",
+    "--polygon-file=/Volumes/Extreme SSD/Projects/OpenBareMap/work/eight-map-release/git-openbaremap/regions/aconcagua/garmin/coverage.poly",
+    "--output-dir=/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/5a16016edf00/aconcagua/garmin/split",
+    "--ignore-osm-bounds=true",
+    "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/5a16016edf00/aconcagua/garmin/combined.osm.pbf"
+  ],
+  "coverageSHA256": "f72a2f63dbfd22949a25014e8fbf255e7a4290316255baa328cc5ee84063a3b5",
+  "ignoreSourceHeaderBounds": true
+}

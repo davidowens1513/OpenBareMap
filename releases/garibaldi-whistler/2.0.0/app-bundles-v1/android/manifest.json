@@ -1,0 +1,33 @@
+{
+  "bytes": 64134218,
+  "datasets": {
+    "basemap": {
+      "path": "maps/basemap.mbtiles",
+      "sha256": "3399b99d00fb7b085bd2cea26ec3cc6595f69afe7f35d74c71dede203e178218"
+    },
+    "coast": {
+      "derivedFrom": "a96712b25c35a6166b124c5416d8e51624ba2062ef27dfcb5f947fe9213e5ed5",
+      "path": "maps/coast.mbtiles",
+      "sha256": "e3824396ffaadc1d85efde563f4095139fb16a70813423eced0c50c9272e2ef4"
+    },
+    "grid": {
+      "path": "maps/grid.mbtiles",
+      "sha256": "47d649a6b3072ed153004bc81c6ab920c8a691a9528f8470845b46ff041324e5"
+    },
+    "hillshade": {
+      "path": "maps/hillshade.mbtiles",
+      "sha256": "f508e054aa98ff19f79a9183f2f732b4f50a786935d133bfa5e45e26605b43d4"
+    },
+    "topography": {
+      "path": "maps/topography.mbtiles",
+      "sha256": "a96712b25c35a6166b124c5416d8e51624ba2062ef27dfcb5f947fe9213e5ed5"
+    }
+  },
+  "instructionsSHA256": "e874f6fcbe2b57e385ffb78ff9803fd1c1d9bf6bc388970c041c32646ffd7994",
+  "instructionsURL": "https://downloads.appsbyonzy.dev/OpenBareMap/garibaldi-whistler/2.0.0/app-bundles-v1/android/instructions.txt",
+  "localPath": "releases/garibaldi-whistler/2.0.0/app-bundles-v1/android/OpenBareMap-Garibaldi-Whistler-Android-Bundle.zip",
+  "mapManifestSHA256": "27363a304e6e349e4d186395009ad1933ec9954e6f18e3a97f920d994ec89aef",
+  "r2Key": "OpenBareMap/garibaldi-whistler/2.0.0/app-bundles-v1/android/OpenBareMap-Garibaldi-Whistler-Android-Bundle.zip",
+  "sha256": "b8e3d23b1a8863047278f8cb89101213e674b32701d3275121971210d1a142a0",
+  "url": "https://downloads.appsbyonzy.dev/OpenBareMap/garibaldi-whistler/2.0.0/app-bundles-v1/android/OpenBareMap-Garibaldi-Whistler-Android-Bundle.zip"
+}

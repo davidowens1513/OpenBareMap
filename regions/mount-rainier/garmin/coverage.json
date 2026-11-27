@@ -1,0 +1,32 @@
+{
+  "areaSquareDegrees": 0.23999999999999688,
+  "bounds": [
+    -122.05,
+    46.65,
+    -121.45,
+    47.05
+  ],
+  "entireRequestedFootprintCovered": true,
+  "exactFootprint": null,
+  "inputs": [
+    {
+      "bytes": 3343,
+      "path": "data/regions/mount-rainier/washington.poly",
+      "sha256": "9b61b3551b35e747adae77d57a7f299998be331815afbac8ec4dcd44f9dfdd59",
+      "url": "https://download.geofabrik.de/north-america/us/washington/washington.poly"
+    }
+  ],
+  "knownDestinationsCovered": [
+    "carbon-river",
+    "island",
+    "longmire",
+    "mount-rainier",
+    "mowich-lake",
+    "paradise",
+    "sunrise",
+    "white-river"
+  ],
+  "operation": "Requested rectangular crop; source outlines cover all destination anchors",
+  "polygons": 1,
+  "sha256": "c2cb8e071191756a7688566fd050fbfd5550869a3f8e84adcf6005f56cff666f"
+}

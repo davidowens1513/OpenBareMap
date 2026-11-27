@@ -1,0 +1,38 @@
+{
+  "areaSquareDegrees": 0.8799999999999923,
+  "bounds": [
+    -70.35,
+    -33.25,
+    -69.25,
+    -32.45
+  ],
+  "entireRequestedFootprintCovered": true,
+  "exactFootprint": null,
+  "inputs": [
+    {
+      "bytes": 14403,
+      "path": "data/regions/aconcagua/argentina.poly",
+      "sha256": "76f8a0212f268e796ad1a13a22184cd313bcc02700e44ef5be9e71c1b3a628f5",
+      "url": "https://download.geofabrik.de/south-america/argentina/argentina.poly"
+    },
+    {
+      "bytes": 4371,
+      "path": "data/regions/aconcagua/chile.poly",
+      "sha256": "a2c053d95312ba82997dda3deeb995a5ccff285d74db545d68b04a95facd26d3",
+      "url": "https://download.geofabrik.de/south-america/chile/chile.poly"
+    }
+  ],
+  "knownDestinationsCovered": [
+    "aconcagua",
+    "confluencia",
+    "horcones",
+    "island",
+    "los-penitentes",
+    "plaza-de-mulas",
+    "puente-del-inca",
+    "uspallata"
+  ],
+  "operation": "Requested rectangular crop; source outlines cover all destination anchors",
+  "polygons": 1,
+  "sha256": "f72a2f63dbfd22949a25014e8fbf255e7a4290316255baa328cc5ee84063a3b5"
+}

@@ -1,0 +1,52 @@
+{
+  "contourIntervalMetres": 20,
+  "coverage": "The Northern Drakensberg escarpment from Royal Natal and the Amphitheatre to Cathedral Peak, Giant\u2019s Castle and the adjoining Lesotho highlands.",
+  "datasets": {
+    "basemap": {
+      "bytes": 30343168,
+      "path": "releases/northern-drakensberg/2.0.0/maps/basemap.mbtiles",
+      "sha256": "57af0bd8507c7be5fb5795194fc78c3e374b6faaa8e8d6ee495e11d1d970b3c6",
+      "validation": {
+        "empty_tile_count": 4,
+        "logical_tiles_sha256": "0d9541ab144c83c9befce1c5b0d3c77eb52145f82f3edd9a3aa158aa8d27631d",
+        "tile_count": 3254
+      }
+    },
+    "grid": {
+      "bytes": 1273856,
+      "path": "releases/northern-drakensberg/2.0.0/maps/grid.mbtiles",
+      "sha256": "082dcab7c8346845be35fdb77acb93d342ec826a0145b315569582c7c105fc14",
+      "validation": {
+        "empty_tile_count": 0,
+        "logical_tiles_sha256": "2020f2f9326349ede0c0f3d1820d45f82704b2b28c0684fe9178a4a5bef5ca33",
+        "tile_count": 3273
+      }
+    },
+    "hillshade": {
+      "bytes": 9945088,
+      "path": "releases/northern-drakensberg/2.0.0/maps/hillshade.mbtiles",
+      "sha256": "fdfbf678502baf0df824edb43f3fd8b66ca333dfbe56d8dcd6c567c5dbefd89b",
+      "validation": {
+        "empty_tile_count": 0,
+        "logical_tiles_sha256": "6807b5a13f50f0a0d1003eba8dcf561be931f1fea9f7b61a247d3d0703e69a9c",
+        "tile_count": 263
+      }
+    },
+    "topography": {
+      "bytes": 58241024,
+      "path": "releases/northern-drakensberg/2.0.0/maps/topography-context.mbtiles",
+      "sha256": "266957c4ae05af84c05ac46363450512134d4f11bb5610b7b2dfe58262c850eb",
+      "validation": {
+        "empty_tile_count": 45016,
+        "logical_tiles_sha256": "113a904e0f668dfc907318a711e20e02aa1800405b4cabc1b98b5624cbdcc57c",
+        "tile_count": 51317
+      }
+    }
+  },
+  "format": "openbaremap-development-viewer-v1",
+  "localBorders": false,
+  "mapVersion": "2.0.0",
+  "region": "northern-drakensberg",
+  "storageRevision": "2.0.0-northern-drakensberg-r3",
+  "styleRevision": "2.0.0-northern-drakensberg-r1"
+}

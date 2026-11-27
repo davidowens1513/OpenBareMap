@@ -1,0 +1,32 @@
+{
+  "areaSquareDegrees": 0.6899999999999965,
+  "bounds": [
+    -125.35,
+    48.42,
+    -124.2,
+    49.02
+  ],
+  "entireRequestedFootprintCovered": true,
+  "exactFootprint": null,
+  "inputs": [
+    {
+      "bytes": 2671,
+      "path": "data/regions/vancouver-island-west-coast-trail/british-columbia.poly",
+      "sha256": "fce9475100adfe7030b6cad9a58759ff8c09473a78b339fe3452e240e976b408",
+      "url": "https://download.geofabrik.de/north-america/canada/british-columbia/british-columbia.poly"
+    }
+  ],
+  "knownDestinationsCovered": [
+    "bamfield",
+    "carmanah",
+    "gordon-river",
+    "island",
+    "nitinat-narrows",
+    "pachena-bay",
+    "port-renfrew",
+    "walbran"
+  ],
+  "operation": "Requested rectangular crop; source outlines cover all destination anchors",
+  "polygons": 1,
+  "sha256": "d8d5742ad874fd9f7a81a7a8c39451d80c4f70b255644941cf17285b5ffd1080"
+}

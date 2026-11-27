@@ -1,0 +1,62 @@
+{
+  "bounds": [
+    -123.3,
+    49.65,
+    -122.65,
+    50.25
+  ],
+  "contextEnvelope": [
+    -123.3,
+    49.65,
+    -122.65,
+    50.25
+  ],
+  "drawPriority": 25,
+  "format": "openbaremap-garmin-render-footprint-v1",
+  "geometry": {
+    "bytes": 758,
+    "path": "regions/garibaldi-whistler/garmin/render-coverage.geojson",
+    "sha256": "10aab0ba57efdce996547b89e08994c199152689ef682d72b1e8094ac94ba447"
+  },
+  "inputs": [
+    {
+      "bytes": 2671,
+      "path": "data/regions/garibaldi-whistler/british-columbia.poly",
+      "sha256": "fce9475100adfe7030b6cad9a58759ff8c09473a78b339fe3452e240e976b408",
+      "url": "https://download.geofabrik.de/north-america/canada/british-columbia/british-columbia.poly"
+    }
+  ],
+  "knownDestinationsCovered": {
+    "black-tusk": [
+      -123.042,
+      49.968
+    ],
+    "elfin-lakes": [
+      -122.988,
+      49.761
+    ],
+    "garibaldi-lake": [
+      -123.031,
+      49.934
+    ],
+    "panorama-ridge": [
+      -123.027,
+      49.955
+    ],
+    "squamish": [
+      -123.156,
+      49.701
+    ],
+    "wedgemount-lake": [
+      -122.806,
+      50.171
+    ],
+    "whistler": [
+      -122.957,
+      50.116
+    ]
+  },
+  "purpose": "Rectangular Garmin tiles may overlap other countries. Do not fill their padding with sea, land or land-cover polygons.",
+  "region": "garibaldi-whistler",
+  "transparentNativeMap": true
+}

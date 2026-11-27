@@ -1,0 +1,31 @@
+{
+  "areaSquareDegrees": 0.34999999999999964,
+  "bounds": [
+    13.25,
+    42.25,
+    13.95,
+    42.75
+  ],
+  "entireRequestedFootprintCovered": true,
+  "exactFootprint": null,
+  "inputs": [
+    {
+      "bytes": 1410,
+      "path": "data/regions/gran-sasso/sud.poly",
+      "sha256": "0aa952089c59dd862774fa53c8576c4e081fd196f8efe0e4c97ab87267850711",
+      "url": "https://download.geofabrik.de/europe/italy/sud/sud.poly"
+    }
+  ],
+  "knownDestinationsCovered": [
+    "asserigi",
+    "campo-imperatore",
+    "corno-grande",
+    "island",
+    "laquila",
+    "pietracamela",
+    "prati-di-tivo"
+  ],
+  "operation": "Requested rectangular crop; source outlines cover all destination anchors",
+  "polygons": 1,
+  "sha256": "728c104ee4c76ebd5916428514e50a4a36b3229645e0885e3881d757a79927a1"
+}

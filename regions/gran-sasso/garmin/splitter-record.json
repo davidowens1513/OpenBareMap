@@ -1,0 +1,21 @@
+{
+  "combinedSHA256": "ffe881aa6f5acf552baec0855dfbfd65a82f825eb7372f27bef0fe9331c99992",
+  "command": [
+    "/opt/homebrew/opt/openjdk@21/libexec/openjdk.jdk/Contents/Home/bin/java",
+    "-Xmx6g",
+    "-jar",
+    "/Volumes/Extreme SSD/Projects/OpenBareMap/work/eight-map-release/git-openbaremap/garmin/tools/splitter-r654/splitter.jar",
+    "--mapid=48910001",
+    "--description=OpenBareMap Gran Sasso",
+    "--max-nodes=1000000",
+    "--max-threads=2",
+    "--keep-complete=true",
+    "--output=pbf",
+    "--polygon-file=/Volumes/Extreme SSD/Projects/OpenBareMap/work/eight-map-release/git-openbaremap/regions/gran-sasso/garmin/coverage.poly",
+    "--output-dir=/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/5a16016edf00/gran-sasso/garmin/split",
+    "--ignore-osm-bounds=true",
+    "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/5a16016edf00/gran-sasso/garmin/combined.osm.pbf"
+  ],
+  "coverageSHA256": "728c104ee4c76ebd5916428514e50a4a36b3229645e0885e3881d757a79927a1",
+  "ignoreSourceHeaderBounds": true
+}

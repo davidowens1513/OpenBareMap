@@ -1,0 +1,177 @@
+{
+  "appBundleName": "Vancouver-Island-West-Coast-Trail",
+  "bounds": [
+    -125.35,
+    48.42,
+    -124.2,
+    49.02
+  ],
+  "clipBasemap": true,
+  "clipSource": true,
+  "clipTerrainToBounds": true,
+  "coastContextBounds": [
+    -127,
+    47,
+    -123,
+    51
+  ],
+  "contourIntervalMetres": 20,
+  "coverage": "Vancouver Island\u2019s West Coast Trail between Pachena Bay and Port Renfrew, including Bamfield, Nitinat Narrows, Carmanah, Walbran and the Juan de Fuca coast.",
+  "destinationLabels": {
+    "bamfield": "Bamfield",
+    "carmanah": "Carmanah",
+    "gordon-river": "Gordon River",
+    "island": "Vancouver Island West Coast Trail",
+    "nitinat-narrows": "Nitinat Narrows",
+    "pachena-bay": "Pachena Bay",
+    "port-renfrew": "Port Renfrew",
+    "walbran": "Walbran Creek"
+  },
+  "destinations": {
+    "bamfield": [
+      -125.137,
+      48.835,
+      13
+    ],
+    "carmanah": [
+      -124.704,
+      48.612,
+      13
+    ],
+    "gordon-river": [
+      -124.414,
+      48.508,
+      13
+    ],
+    "island": [
+      -124.775,
+      48.72,
+      9
+    ],
+    "nitinat-narrows": [
+      -124.787,
+      48.663,
+      13
+    ],
+    "pachena-bay": [
+      -125.108,
+      48.825,
+      13
+    ],
+    "port-renfrew": [
+      -124.421,
+      48.555,
+      13
+    ],
+    "walbran": [
+      -124.668,
+      48.584,
+      13
+    ]
+  },
+  "garminContextBounds": [
+    -125.35,
+    48.42,
+    -124.2,
+    49.02
+  ],
+  "garminFamilyId": 4895,
+  "garminFilename": "OpenBareMap-Vancouver-Island-West-Coast-Trail.img",
+  "garminPackageRevision": "2.0.0-r1",
+  "garminTileStartId": 48950001,
+  "garminUseSourceOutline": true,
+  "garminVersionedDelivery": true,
+  "gridCRS": "EPSG:32610",
+  "gridExtent": [
+    320000,
+    420000,
+    5360000,
+    5440000
+  ],
+  "gridName": "WGS 84 / UTM zone 10N",
+  "gridSource": "utm-grid",
+  "id": "vancouver-island-west-coast-trail",
+  "ignoreSourceHeaderBounds": true,
+  "inspectionNames": [
+    "Bamfield",
+    "Port Renfrew"
+  ],
+  "label": "Vancouver Island West Coast Trail",
+  "labelGlyphs": "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz",
+  "mapVersion": "2.0.0",
+  "maxzoom": 14,
+  "minorWaterwayMinzoom": 10,
+  "minzoom": 4,
+  "name": "OpenBareMap Vancouver Island West Coast Trail",
+  "nativeLanguage": "en",
+  "optionalBasemapLayers": [
+    "ferry",
+    "island_name",
+    "cycling_route",
+    "railway",
+    "station",
+    "hiking_route",
+    "boundary"
+  ],
+  "overviewLandAnchors": {
+    "walbran": [
+      -124.668,
+      48.584
+    ]
+  },
+  "permanentIce": false,
+  "projectedCRS": "EPSG:32610",
+  "repairClippedCoastline": true,
+  "requireBogFeatures": false,
+  "sourceBaseOverrides": {
+    "british-columbia": "https://download.geofabrik.de/north-america/canada/british-columbia/"
+  },
+  "sourceBaseURL": "https://download.geofabrik.de/north-america/canada/",
+  "sourceCacheRegion": "canadian-rockies",
+  "sourceDate": "2026-11-20",
+  "sourceSlugs": [
+    "british-columbia"
+  ],
+  "styleRevision": "2.0.0-vancouver-island-west-coast-trail-r1",
+  "terrainAttribution": "Copernicus DEM GLO-30 \u00b7 European Union / ESA \u00b7 DLR / Airbus",
+  "terrainBounds": [
+    -126,
+    48,
+    -124,
+    50
+  ],
+  "terrainCacheRegion": "canadian-rockies",
+  "terrainNotice": "Vancouver Island West Coast Trail elevation: Copernicus DEM GLO-30 Public (AWS 2021 release).\n\nproduced using Copernicus WorldDEM-30 \u00a9 DLR e.V. 2010-2014 and \u00a9 Airbus Defence and Space GmbH 2014-2018 provided under COPERNICUS by the European Union and ESA; all rights reserved\n\nThe organisations in charge of the Copernicus programme by law or by delegation do not incur any liability for any use of the Copernicus WorldDEM-30.\n\nLicense: https://dataspace.copernicus.eu/sites/default/files/media/files/2025-06/copernicus_contributing_mission_data_access_v2_cop_dem_licenses.pdf\nSource: https://registry.opendata.aws/copernicus-dem/\nVertical datum: EGM2008 orthometric metres. Native approximately 30 m cells are bilinearly resampled to point-aligned Int16 HGT for the shared terrain pipeline. Ocean-only cells absent from the official public inventory are zero.\n",
+  "terrainProvider": "copernicus-glo30",
+  "townlands": false,
+  "validationAnchors": {
+    "bamfield": [
+      -125.137,
+      48.835
+    ],
+    "carmanah": [
+      -124.704,
+      48.612
+    ],
+    "gordon-river": [
+      -124.414,
+      48.508
+    ],
+    "nitinat-narrows": [
+      -124.787,
+      48.663
+    ],
+    "pachena-bay": [
+      -125.108,
+      48.825
+    ],
+    "port-renfrew": [
+      -124.421,
+      48.555
+    ],
+    "walbran": [
+      -124.668,
+      48.584
+    ]
+  }
+}

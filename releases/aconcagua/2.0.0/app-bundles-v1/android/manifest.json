@@ -1,0 +1,33 @@
+{
+  "bytes": 122725127,
+  "datasets": {
+    "basemap": {
+      "path": "maps/basemap.mbtiles",
+      "sha256": "e44397e89e21b45105da941e5e1e3c10049bef94d2765cffd3a69ed9aa9bef5b"
+    },
+    "coast": {
+      "derivedFrom": "01484a408cdf477a1443d31be05e5c4e22cef1e226d7d1f8ca5b3c6325288a7c",
+      "path": "maps/coast.mbtiles",
+      "sha256": "4d0322631861801dc8bf44f65316e0556279f9c29261bf4db9e0e6cefe3476df"
+    },
+    "grid": {
+      "path": "maps/grid.mbtiles",
+      "sha256": "a650ab254a7ce7dfa5267f1e245ba4ff665363e730587fab489f9411d7607107"
+    },
+    "hillshade": {
+      "path": "maps/hillshade.mbtiles",
+      "sha256": "da57e14c8d0e0f8aba580a97139e985a40f11662c271af987b001a63a81d626c"
+    },
+    "topography": {
+      "path": "maps/topography.mbtiles",
+      "sha256": "01484a408cdf477a1443d31be05e5c4e22cef1e226d7d1f8ca5b3c6325288a7c"
+    }
+  },
+  "instructionsSHA256": "f2a4112b763a899587b1dbae188cb8c0e82aad340668fb786dcd313ffaf536db",
+  "instructionsURL": "https://downloads.appsbyonzy.dev/OpenBareMap/aconcagua/2.0.0/app-bundles-v1/android/instructions.txt",
+  "localPath": "releases/aconcagua/2.0.0/app-bundles-v1/android/OpenBareMap-Aconcagua-Android-Bundle.zip",
+  "mapManifestSHA256": "65e9bd7dc923720a150dbb3581b09cf6540ab1f4a1632cc959576b86dff42fc3",
+  "r2Key": "OpenBareMap/aconcagua/2.0.0/app-bundles-v1/android/OpenBareMap-Aconcagua-Android-Bundle.zip",
+  "sha256": "528a14b1a2e10bddfa3ec0f591798f3d4567daac7b8d34c7b3a078f719f615d3",
+  "url": "https://downloads.appsbyonzy.dev/OpenBareMap/aconcagua/2.0.0/app-bundles-v1/android/OpenBareMap-Aconcagua-Android-Bundle.zip"
+}

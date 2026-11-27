@@ -1,0 +1,52 @@
+{
+  "builderSHA256": "df45d47a59e968508a89136d44d799aaf2bba52547b211e0dff68a5b0e0f6cfc",
+  "contextBounds": [
+    12,
+    41,
+    15,
+    44
+  ],
+  "note": "Contour payloads preserved exactly while extending land background outside edition coverage.",
+  "oldTopography": {
+    "bytes": 24711168,
+    "path": "releases/gran-sasso/2.0.0/maps/topography.mbtiles",
+    "sha256": "0040903fea28f5966ac171e7c644c09481c1281c3f87cb09839f18a5b7c0d232",
+    "validation": {
+      "empty_tile_count": 24317,
+      "logical_tiles_sha256": "b59fc9a5c59cfe2cb73d3d60ee30510fd9babcb04821e5b9fb37f8972cc0b12c",
+      "tile_count": 27169
+    }
+  },
+  "output": {
+    "bytes": 24653824,
+    "path": "releases/gran-sasso/2.0.0/maps/topography-context.mbtiles",
+    "sha256": "b3e337ac0f3adffaf5055cc7c259e5cb038d15c820c15845a48725cfec350bb3",
+    "validation": {
+      "empty_tile_count": 24317,
+      "logical_tiles_sha256": "b59fc9a5c59cfe2cb73d3d60ee30510fd9babcb04821e5b9fb37f8972cc0b12c",
+      "tile_count": 27169
+    }
+  },
+  "replacement": {
+    "changed_tiles": 1539,
+    "path": "build/gran-sasso-coast-context/combined.mbtiles",
+    "replacement_feature_instances": 2408,
+    "sha256": "8a6a1325ecc888996b89c042d9d7541cda6c42f3f5e48e4df8c8bfdb27408dff",
+    "unchanged_other_layers_sha256": "09a0036c0a33910b2c7c985d74ef13eee1fb2d124abcbd30ad4a55a48ab8ccdf",
+    "validation": {
+      "empty_tile_count": 24317,
+      "logical_tiles_sha256": "b59fc9a5c59cfe2cb73d3d60ee30510fd9babcb04821e5b9fb37f8972cc0b12c",
+      "tile_count": 27169
+    }
+  },
+  "source": {
+    "accessed_utc": "2026-10-25T12:59:16.751893+00:00",
+    "bytes": 928538219,
+    "http_headers_path": "data/land-polygons.headers",
+    "license": "ODbL 1.0; OpenStreetMap contributors",
+    "path": "data/land-polygons-split-4326.zip",
+    "sha256": "5911e273096f9585425a17c30a8a98785cc33ed2718ff88987768933b8a327f7",
+    "source_snapshot": "HTTP Last-Modified 2026-10-25T03:43:12Z; this is file publication, not a guaranteed OSM snapshot timestamp",
+    "url": "https://osmdata.openstreetmap.de/download/land-polygons-split-4326.zip"
+  }
+}

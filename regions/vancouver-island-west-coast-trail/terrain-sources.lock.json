@@ -1,0 +1,240 @@
+{
+  "accessed_utc": "2026-11-27T11:36:52.164682+00:00",
+  "assets": [
+    {
+      "bytes": 777970,
+      "operation": "Bilinear resampling of Copernicus GLO-30 to point-aligned Int16 HGT, EGM2008 heights",
+      "path": "data/regions/vancouver-island-west-coast-trail/elevation/N48W126.hgt.gz",
+      "sha256": "b3271a09f8295291f9108bdd15f7475af1bdde2851502e50c83d9bbef654cfe5",
+      "url": null
+    },
+    {
+      "bytes": 9385885,
+      "operation": "Bilinear resampling of Copernicus GLO-30 to point-aligned Int16 HGT, EGM2008 heights",
+      "path": "data/regions/vancouver-island-west-coast-trail/elevation/N48W125.hgt.gz",
+      "sha256": "a99bc8569dc4867616fe37e240a5d8854ab491c8b00a1b51dff56d58160ca3f3",
+      "url": null
+    },
+    {
+      "bytes": 14095453,
+      "operation": "Bilinear resampling of Copernicus GLO-30 to point-aligned Int16 HGT, EGM2008 heights",
+      "path": "data/regions/vancouver-island-west-coast-trail/elevation/N49W126.hgt.gz",
+      "sha256": "34314fcfd97e232b4bd010d47bda79f274c78ddb213cce39af0e6d67b6a56919",
+      "url": null
+    },
+    {
+      "bytes": 8870556,
+      "operation": "Bilinear resampling of Copernicus GLO-30 to point-aligned Int16 HGT, EGM2008 heights",
+      "path": "data/regions/vancouver-island-west-coast-trail/elevation/N49W125.hgt.gz",
+      "sha256": "d3aeec6ddf83b53f41375468d8de5c276ccaae104f82bcd65a596c2f1b311b90",
+      "url": null
+    }
+  ],
+  "commands": [
+    [
+      "/Applications/QGIS.app/Contents/MacOS/gdalbuildvrt",
+      "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-Copernicus-wb469_w3/source.vrt",
+      "/Volumes/Extreme SSD/Projects/OpenBareMap/work/eight-map-release/git-openbaremap/data/regions/canadian-rockies/copernicus/Copernicus_DSM_COG_10_N48_00_W126_00_DEM.tif",
+      "/Volumes/Extreme SSD/Projects/OpenBareMap/work/eight-map-release/git-openbaremap/data/regions/canadian-rockies/copernicus/Copernicus_DSM_COG_10_N48_00_W125_00_DEM.tif",
+      "/Volumes/Extreme SSD/Projects/OpenBareMap/work/eight-map-release/git-openbaremap/data/regions/canadian-rockies/copernicus/Copernicus_DSM_COG_10_N49_00_W126_00_DEM.tif",
+      "/Volumes/Extreme SSD/Projects/OpenBareMap/work/eight-map-release/git-openbaremap/data/regions/canadian-rockies/copernicus/Copernicus_DSM_COG_10_N49_00_W125_00_DEM.tif"
+    ],
+    [
+      "/Applications/QGIS.app/Contents/MacOS/gdalwarp",
+      "-q",
+      "-overwrite",
+      "-of",
+      "GTiff",
+      "-ot",
+      "Int16",
+      "-t_srs",
+      "EPSG:4326",
+      "-te",
+      "-126.00013888888888",
+      "47.99986111111111",
+      "-124.99986111111112",
+      "49.00013888888889",
+      "-ts",
+      "3601",
+      "3601",
+      "-r",
+      "bilinear",
+      "-dstnodata",
+      "0",
+      "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-Copernicus-wb469_w3/source.vrt",
+      "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-Copernicus-wb469_w3/N48W126.hgt.tif"
+    ],
+    [
+      "/Applications/QGIS.app/Contents/MacOS/gdal_translate",
+      "-q",
+      "-of",
+      "SRTMHGT",
+      "-a_nodata",
+      "-32768",
+      "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-Copernicus-wb469_w3/N48W126.hgt.tif",
+      "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-Copernicus-wb469_w3/N48W126.hgt"
+    ],
+    [
+      "/Applications/QGIS.app/Contents/MacOS/gdalwarp",
+      "-q",
+      "-overwrite",
+      "-of",
+      "GTiff",
+      "-ot",
+      "Int16",
+      "-t_srs",
+      "EPSG:4326",
+      "-te",
+      "-125.00013888888888",
+      "47.99986111111111",
+      "-123.99986111111112",
+      "49.00013888888889",
+      "-ts",
+      "3601",
+      "3601",
+      "-r",
+      "bilinear",
+      "-dstnodata",
+      "0",
+      "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-Copernicus-wb469_w3/source.vrt",
+      "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-Copernicus-wb469_w3/N48W125.hgt.tif"
+    ],
+    [
+      "/Applications/QGIS.app/Contents/MacOS/gdal_translate",
+      "-q",
+      "-of",
+      "SRTMHGT",
+      "-a_nodata",
+      "-32768",
+      "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-Copernicus-wb469_w3/N48W125.hgt.tif",
+      "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-Copernicus-wb469_w3/N48W125.hgt"
+    ],
+    [
+      "/Applications/QGIS.app/Contents/MacOS/gdalwarp",
+      "-q",
+      "-overwrite",
+      "-of",
+      "GTiff",
+      "-ot",
+      "Int16",
+      "-t_srs",
+      "EPSG:4326",
+      "-te",
+      "-126.00013888888888",
+      "48.99986111111111",
+      "-124.99986111111112",
+      "50.00013888888889",
+      "-ts",
+      "3601",
+      "3601",
+      "-r",
+      "bilinear",
+      "-dstnodata",
+      "0",
+      "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-Copernicus-wb469_w3/source.vrt",
+      "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-Copernicus-wb469_w3/N49W126.hgt.tif"
+    ],
+    [
+      "/Applications/QGIS.app/Contents/MacOS/gdal_translate",
+      "-q",
+      "-of",
+      "SRTMHGT",
+      "-a_nodata",
+      "-32768",
+      "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-Copernicus-wb469_w3/N49W126.hgt.tif",
+      "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-Copernicus-wb469_w3/N49W126.hgt"
+    ],
+    [
+      "/Applications/QGIS.app/Contents/MacOS/gdalwarp",
+      "-q",
+      "-overwrite",
+      "-of",
+      "GTiff",
+      "-ot",
+      "Int16",
+      "-t_srs",
+      "EPSG:4326",
+      "-te",
+      "-125.00013888888888",
+      "48.99986111111111",
+      "-123.99986111111112",
+      "50.00013888888889",
+      "-ts",
+      "3601",
+      "3601",
+      "-r",
+      "bilinear",
+      "-dstnodata",
+      "0",
+      "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-Copernicus-wb469_w3/source.vrt",
+      "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-Copernicus-wb469_w3/N49W125.hgt.tif"
+    ],
+    [
+      "/Applications/QGIS.app/Contents/MacOS/gdal_translate",
+      "-q",
+      "-of",
+      "SRTMHGT",
+      "-a_nodata",
+      "-32768",
+      "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-Copernicus-wb469_w3/N49W125.hgt.tif",
+      "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-Copernicus-wb469_w3/N49W125.hgt"
+    ]
+  ],
+  "coverage": [
+    -126,
+    48,
+    -124,
+    50
+  ],
+  "dataset": "Copernicus DEM GLO-30 Public, AWS 2021 release",
+  "grid": "3601 by 3601 signed 16-bit point-aligned HGT cells; ocean cells zero",
+  "oceanCellReview": [],
+  "sourceAssets": [
+    {
+      "bytes": 1110900,
+      "path": "data/regions/canadian-rockies/copernicus/tileList.txt",
+      "sha256": "10604e3052c98a09e9216f1a8f0a555a04148419757575f783d4937fd44316dc",
+      "url": "https://copernicus-dem-30m.s3.amazonaws.com/tileList.txt"
+    },
+    {
+      "bytes": 2875164,
+      "path": "data/regions/canadian-rockies/copernicus/Copernicus_DSM_COG_10_N48_00_W126_00_DEM.tif",
+      "sha256": "fa2857d3ec0270c0925b7de89060242faff72b6a89ab3a89a45624407ed5577e",
+      "url": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N48_00_W126_00_DEM/Copernicus_DSM_COG_10_N48_00_W126_00_DEM.tif"
+    },
+    {
+      "bytes": 30258799,
+      "path": "data/regions/canadian-rockies/copernicus/Copernicus_DSM_COG_10_N48_00_W125_00_DEM.tif",
+      "sha256": "ca57cee44c2a9ac659f8ac0a86f3f701282f1a1f2ba4eae20a6bc4c0ad4114d7",
+      "url": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N48_00_W125_00_DEM/Copernicus_DSM_COG_10_N48_00_W125_00_DEM.tif"
+    },
+    {
+      "bytes": 40731898,
+      "path": "data/regions/canadian-rockies/copernicus/Copernicus_DSM_COG_10_N49_00_W126_00_DEM.tif",
+      "sha256": "3b376712a49ad509ba5773db844a184b670ffec1b2333f6cc99bddcf8a79e8cd",
+      "url": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N49_00_W126_00_DEM/Copernicus_DSM_COG_10_N49_00_W126_00_DEM.tif"
+    },
+    {
+      "bytes": 28866043,
+      "path": "data/regions/canadian-rockies/copernicus/Copernicus_DSM_COG_10_N49_00_W125_00_DEM.tif",
+      "sha256": "a8bf470c4212b277838d01d441a002764fe5dce15279828a53c1bbc77efd1552",
+      "url": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N49_00_W125_00_DEM/Copernicus_DSM_COG_10_N49_00_W125_00_DEM.tif"
+    }
+  ],
+  "sourceDocumentation": "https://registry.opendata.aws/copernicus-dem/",
+  "toolchain": {
+    "gdal_translate": {
+      "path": "/Applications/QGIS.app/Contents/MacOS/gdal_translate",
+      "sha256": "20bee1aad39868f3aa506312cad8415bbe12fa004cbf75b27114f527178b632a"
+    },
+    "gdalbuildvrt": {
+      "path": "/Applications/QGIS.app/Contents/MacOS/gdalbuildvrt",
+      "sha256": "5694fb873506db8342bedbf18635fe6d3dbf97971dc25f2ea7f94ff4f6f77b30"
+    },
+    "gdalwarp": {
+      "path": "/Applications/QGIS.app/Contents/MacOS/gdalwarp",
+      "sha256": "da68256b5787bd76d876a409fd452cc8290be13c6f28aece569242682a003057"
+    }
+  },
+  "verticalDatum": "EGM2008 orthometric metres"
+}

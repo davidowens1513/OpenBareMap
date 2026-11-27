@@ -1,0 +1,142 @@
+{
+  "accessed_utc": "2026-11-27T11:41:15.724773+00:00",
+  "assets": [
+    {
+      "bytes": 1653119,
+      "operation": "Bilinear resampling of Copernicus GLO-30 to point-aligned Int16 HGT, EGM2008 heights",
+      "path": "data/regions/cape-peninsula/elevation/S35E018.hgt.gz",
+      "sha256": "ffe6def2ec991fc340d7ef842491db27832c04b8c68be3549451739d0dd301e8",
+      "url": null
+    },
+    {
+      "bytes": 5728993,
+      "operation": "Bilinear resampling of Copernicus GLO-30 to point-aligned Int16 HGT, EGM2008 heights",
+      "path": "data/regions/cape-peninsula/elevation/S34E018.hgt.gz",
+      "sha256": "28f20ce9daf80b45202f748dfe54c8eddc768e94eb8b3140443d6fdb38595b5d",
+      "url": null
+    }
+  ],
+  "commands": [
+    [
+      "/Applications/QGIS.app/Contents/MacOS/gdalbuildvrt",
+      "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-Copernicus-qihn9nm2/source.vrt",
+      "/Volumes/Extreme SSD/Projects/OpenBareMap/work/eight-map-release/git-openbaremap/data/regions/cape-peninsula/copernicus/Copernicus_DSM_COG_10_S35_00_E018_00_DEM.tif",
+      "/Volumes/Extreme SSD/Projects/OpenBareMap/work/eight-map-release/git-openbaremap/data/regions/cape-peninsula/copernicus/Copernicus_DSM_COG_10_S34_00_E018_00_DEM.tif"
+    ],
+    [
+      "/Applications/QGIS.app/Contents/MacOS/gdalwarp",
+      "-q",
+      "-overwrite",
+      "-of",
+      "GTiff",
+      "-ot",
+      "Int16",
+      "-t_srs",
+      "EPSG:4326",
+      "-te",
+      "17.999861111111112",
+      "-35.00013888888889",
+      "19.000138888888888",
+      "-33.99986111111111",
+      "-ts",
+      "3601",
+      "3601",
+      "-r",
+      "bilinear",
+      "-dstnodata",
+      "0",
+      "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-Copernicus-qihn9nm2/source.vrt",
+      "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-Copernicus-qihn9nm2/S35E018.hgt.tif"
+    ],
+    [
+      "/Applications/QGIS.app/Contents/MacOS/gdal_translate",
+      "-q",
+      "-of",
+      "SRTMHGT",
+      "-a_nodata",
+      "-32768",
+      "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-Copernicus-qihn9nm2/S35E018.hgt.tif",
+      "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-Copernicus-qihn9nm2/S35E018.hgt"
+    ],
+    [
+      "/Applications/QGIS.app/Contents/MacOS/gdalwarp",
+      "-q",
+      "-overwrite",
+      "-of",
+      "GTiff",
+      "-ot",
+      "Int16",
+      "-t_srs",
+      "EPSG:4326",
+      "-te",
+      "17.999861111111112",
+      "-34.00013888888889",
+      "19.000138888888888",
+      "-32.99986111111111",
+      "-ts",
+      "3601",
+      "3601",
+      "-r",
+      "bilinear",
+      "-dstnodata",
+      "0",
+      "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-Copernicus-qihn9nm2/source.vrt",
+      "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-Copernicus-qihn9nm2/S34E018.hgt.tif"
+    ],
+    [
+      "/Applications/QGIS.app/Contents/MacOS/gdal_translate",
+      "-q",
+      "-of",
+      "SRTMHGT",
+      "-a_nodata",
+      "-32768",
+      "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-Copernicus-qihn9nm2/S34E018.hgt.tif",
+      "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-Copernicus-qihn9nm2/S34E018.hgt"
+    ]
+  ],
+  "coverage": [
+    18,
+    -35,
+    19,
+    -33
+  ],
+  "dataset": "Copernicus DEM GLO-30 Public, AWS 2021 release",
+  "grid": "3601 by 3601 signed 16-bit point-aligned HGT cells; ocean cells zero",
+  "oceanCellReview": [],
+  "sourceAssets": [
+    {
+      "bytes": 1110900,
+      "path": "data/regions/cape-peninsula/copernicus/tileList.txt",
+      "sha256": "10604e3052c98a09e9216f1a8f0a555a04148419757575f783d4937fd44316dc",
+      "url": "https://copernicus-dem-30m.s3.amazonaws.com/tileList.txt"
+    },
+    {
+      "bytes": 6376250,
+      "path": "data/regions/cape-peninsula/copernicus/Copernicus_DSM_COG_10_S35_00_E018_00_DEM.tif",
+      "sha256": "aa9f76201f649aaf945d9d6a54bac04f56a36553523b9a413b2d533fc78a2886",
+      "url": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_S35_00_E018_00_DEM/Copernicus_DSM_COG_10_S35_00_E018_00_DEM.tif"
+    },
+    {
+      "bytes": 33743971,
+      "path": "data/regions/cape-peninsula/copernicus/Copernicus_DSM_COG_10_S34_00_E018_00_DEM.tif",
+      "sha256": "1a41c3310b250d0e03c590c4f3d431f4c8b7f613dbad00cbe58b9f4588c045aa",
+      "url": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_S34_00_E018_00_DEM/Copernicus_DSM_COG_10_S34_00_E018_00_DEM.tif"
+    }
+  ],
+  "sourceDocumentation": "https://registry.opendata.aws/copernicus-dem/",
+  "toolchain": {
+    "gdal_translate": {
+      "path": "/Applications/QGIS.app/Contents/MacOS/gdal_translate",
+      "sha256": "20bee1aad39868f3aa506312cad8415bbe12fa004cbf75b27114f527178b632a"
+    },
+    "gdalbuildvrt": {
+      "path": "/Applications/QGIS.app/Contents/MacOS/gdalbuildvrt",
+      "sha256": "5694fb873506db8342bedbf18635fe6d3dbf97971dc25f2ea7f94ff4f6f77b30"
+    },
+    "gdalwarp": {
+      "path": "/Applications/QGIS.app/Contents/MacOS/gdalwarp",
+      "sha256": "da68256b5787bd76d876a409fd452cc8290be13c6f28aece569242682a003057"
+    }
+  },
+  "verticalDatum": "EGM2008 orthometric metres"
+}

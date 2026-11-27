@@ -1,0 +1,41 @@
+{
+  "regions": {
+    "cotopaxi-quilotoa": {
+      "basemap": {
+        "sourceSHA256": "3d9aa7a8e59e20c65877cd30d3118e0d424530476c8f5864e517777135fb1ad9",
+        "bytes": 9107863,
+        "sha256": "c495b72c5ba394d8dc2bd0a0621138387cf9fd9672581682b7bab633df213796",
+        "tiles": 1729
+      },
+      "grid": {
+        "sourceSHA256": "dea9e533bea0978d027b9cc3dd23a550dcbb03f8a7332b6d349b649ad8629eb0",
+        "bytes": 575825,
+        "sha256": "1d7790606548bf780c07ee96bfd99b615aae0aeb71cbb273307e4817164871a6",
+        "tiles": 1784
+      },
+      "hillshade": {
+        "sourceSHA256": "369be9aedbb4d8020299467868703a1659c54ef43f0abb6279084bab4820c96f",
+        "bytes": 5884217,
+        "sha256": "c061627bcb7620810e141e05c788a799b3fc5aab1ba0a694f9d8b18c767579fb",
+        "tiles": 138
+      },
+      "topography": {
+        "sourceSHA256": "89ebf7ea2810f84dfa204a4a466834ff33f9bedb613d14fc54788c26a74f9680",
+        "bytes": 50801484,
+        "sha256": "2c6c3f92c76c7ce6b0c565ed582ba965a736a4832e6af608a0cdcf8282af076c",
+        "tiles": 41259
+      },
+      "coast": {
+        "sourceSHA256": "129aa1875a26c5f0a59d111702af9b40904b47c448cf52e1a6dde95326429587",
+        "bytes": 300778,
+        "sha256": "4b26cfadd3e147e5d89a2e052a3bcbbc1b034d35d8980f561cd20f45e4886b46",
+        "tiles": 2736
+      }
+    }
+  },
+  "pmtilesPython": "3.8.1",
+  "pmtilesJS": "4.5.0",
+  "librarySHA256": "caf981bc46f6327ee7e65d5dc964d89d38a69f60edca2bd4c5c890c21b554c6c",
+  "dataOrigin": "https://downloads.appsbyonzy.dev/OpenBareMap/cotopaxi-quilotoa/2.0.0/preview",
+  "scope": "Complete selected map tiles; no regional or zoom sampling."
+}

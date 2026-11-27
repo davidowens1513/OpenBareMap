@@ -1,0 +1,29 @@
+{
+  "accessed_utc": "2026-11-27T11:38:26.112883+00:00",
+  "inputs": [
+    {
+      "bytes": 126160482,
+      "path": "data/regions/cotopaxi-quilotoa/ecuador-261126.osm.pbf",
+      "replicationTimestamp": "2026-11-26T21:21:01Z",
+      "sha256": "84767726cace50aa79be75856074ea6220e72af5ea19a15482326f17c152b8ab",
+      "url": "https://download.geofabrik.de/south-america/ecuador/ecuador-261126.osm.pbf"
+    }
+  ],
+  "osm": {
+    "bytes": 6308684,
+    "operation": "Complete-feature bbox extraction with nested relation references",
+    "path": "data/regions/cotopaxi-quilotoa/ecuador-261126.osm.clipped.osm.pbf",
+    "replicationTimestamp": "2026-11-26T21:21:01Z",
+    "sha256": "f008f89c7de9c0f0f8b94c6a4a510108636b1a4ece0d5866bd2c13306fc3d98e",
+    "snapshot_date": "2026-11-26",
+    "url": "https://download.geofabrik.de/south-america/ecuador/ecuador-261126.osm.pbf"
+  },
+  "polygons": [
+    {
+      "bytes": 6268,
+      "path": "data/regions/cotopaxi-quilotoa/ecuador.poly",
+      "sha256": "3fe34889cc5953bbe968b6ea8f9cbab02505e69f1f025d26ec2e12d2a2cae813",
+      "url": "https://download.geofabrik.de/south-america/ecuador/ecuador.poly"
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "bounds": [
+    -79.15,
+    -1.1,
+    -78.25,
+    -0.45
+  ],
+  "contextEnvelope": [
+    -79.15,
+    -1.1,
+    -78.25,
+    -0.45
+  ],
+  "drawPriority": 25,
+  "format": "openbaremap-garmin-render-footprint-v1",
+  "geometry": {
+    "bytes": 752,
+    "path": "regions/cotopaxi-quilotoa/garmin/render-coverage.geojson",
+    "sha256": "7af38f9339856e1867b2a2863de49456d750c7acd81cabf45b76d4b499ccf2f9"
+  },
+  "inputs": [
+    {
+      "bytes": 6268,
+      "path": "data/regions/cotopaxi-quilotoa/ecuador.poly",
+      "sha256": "3fe34889cc5953bbe968b6ea8f9cbab02505e69f1f025d26ec2e12d2a2cae813",
+      "url": "https://download.geofabrik.de/south-america/ecuador/ecuador.poly"
+    }
+  ],
+  "knownDestinationsCovered": {
+    "chugchilan": [
+      -78.922,
+      -0.756
+    ],
+    "cotopaxi": [
+      -78.437,
+      -0.68
+    ],
+    "isinlivi": [
+      -78.87,
+      -0.662
+    ],
+    "jose-rivas-refuge": [
+      -78.438,
+      -0.658
+    ],
+    "latacunga": [
+      -78.617,
+      -0.935
+    ],
+    "limpiopungo": [
+      -78.473,
+      -0.626
+    ],
+    "quilotoa": [
+      -78.899,
+      -0.866
+    ]
+  },
+  "purpose": "Rectangular Garmin tiles may overlap other countries. Do not fill their padding with sea, land or land-cover polygons.",
+  "region": "cotopaxi-quilotoa",
+  "transparentNativeMap": true
+}

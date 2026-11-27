@@ -1,0 +1,21 @@
+{
+  "combinedSHA256": "815edbddea2e7cbc79106ea7f51f79f5eb39c0cc0e619b5b0a0a58f334465dea",
+  "command": [
+    "/opt/homebrew/opt/openjdk@21/libexec/openjdk.jdk/Contents/Home/bin/java",
+    "-Xmx6g",
+    "-jar",
+    "/Volumes/Extreme SSD/Projects/OpenBareMap/work/eight-map-release/git-openbaremap/garmin/tools/splitter-r654/splitter.jar",
+    "--mapid=48920001",
+    "--description=OpenBareMap Northern Drakensberg",
+    "--max-nodes=1000000",
+    "--max-threads=2",
+    "--keep-complete=true",
+    "--output=pbf",
+    "--polygon-file=/Volumes/Extreme SSD/Projects/OpenBareMap/work/eight-map-release/git-openbaremap/regions/northern-drakensberg/garmin/coverage.poly",
+    "--output-dir=/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/5a16016edf00/northern-drakensberg/garmin/split",
+    "--ignore-osm-bounds=true",
+    "/var/folders/rs/8kgplch52b10g5tjrkpkf6jh0000gn/T/OpenBareMap-builds/5a16016edf00/northern-drakensberg/garmin/combined.osm.pbf"
+  ],
+  "coverageSHA256": "54fa567f31760ed1d54092da72352e5530076a5e6980e6a7e1a744b9b835a78b",
+  "ignoreSourceHeaderBounds": true
+}

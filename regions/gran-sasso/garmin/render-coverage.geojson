@@ -1,0 +1,55 @@
+{
+  "features": [
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              13.25,
+              42.251474537361744
+            ],
+            [
+              13.25,
+              42.60240009063444
+            ],
+            [
+              13.36925,
+              42.60228
+            ],
+            [
+              13.33831,
+              42.69798
+            ],
+            [
+              13.466954919936654,
+              42.75
+            ],
+            [
+              13.95,
+              42.75
+            ],
+            [
+              13.95,
+              42.25
+            ],
+            [
+              13.25171083255086,
+              42.25
+            ],
+            [
+              13.25,
+              42.251474537361744
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "properties": {
+        "purpose": "Limit opaque native background and land-cover polygons; retain complete accepted OSM and terrain inputs",
+        "region": "gran-sasso"
+      },
+      "type": "Feature"
+    }
+  ],
+  "type": "FeatureCollection"
+}

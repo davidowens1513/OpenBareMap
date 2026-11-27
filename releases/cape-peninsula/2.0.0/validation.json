@@ -1,0 +1,393 @@
+{
+  "coverage": "Cape Town and the Cape Peninsula, including Table Mountain, Lion\u2019s Head, Silvermine, Chapman\u2019s Peak, Cape Point and the False Bay coast.",
+  "coverageAnchors": {
+    "cape-point": {
+      "coordinate": [
+        18.497,
+        -34.357
+      ],
+      "featuresInNeighbouringDetailedTiles": 302
+    },
+    "cape-town": {
+      "coordinate": [
+        18.4241,
+        -33.9249
+      ],
+      "featuresInNeighbouringDetailedTiles": 30488
+    },
+    "chapmans-peak": {
+      "coordinate": [
+        18.36,
+        -34.087
+      ],
+      "featuresInNeighbouringDetailedTiles": 2358
+    },
+    "constantia-nek": {
+      "coordinate": [
+        18.406,
+        -34.011
+      ],
+      "featuresInNeighbouringDetailedTiles": 3613
+    },
+    "lions-head": {
+      "coordinate": [
+        18.389,
+        -33.935
+      ],
+      "featuresInNeighbouringDetailedTiles": 17270
+    },
+    "silvermine": {
+      "coordinate": [
+        18.424,
+        -34.087
+      ],
+      "featuresInNeighbouringDetailedTiles": 4780
+    },
+    "simons-town": {
+      "coordinate": [
+        18.433,
+        -34.193
+      ],
+      "featuresInNeighbouringDetailedTiles": 3513
+    },
+    "table-mountain": {
+      "coordinate": [
+        18.4098,
+        -33.9628
+      ],
+      "featuresInNeighbouringDetailedTiles": 5582
+    }
+  },
+  "datasets": {
+    "basemap": {
+      "empty_tile_count": 4,
+      "logical_tiles_sha256": "ebbd42005cc89c68bfe02a6185412db4bd71bc7c86363bd420b6c059b9202469",
+      "tile_count": 385
+    },
+    "grid": {
+      "empty_tile_count": 0,
+      "logical_tiles_sha256": "8119a091ff350797e5baf23ef69ab7e1abc7487395895b80af119ccc4107730c",
+      "tile_count": 713
+    },
+    "hillshade": {
+      "empty_tile_count": 0,
+      "logical_tiles_sha256": "ca7c4731b313ed46e81668b97a48c84817ade8e86ff0c20bfc5c163c6321f6d1",
+      "tile_count": 44
+    },
+    "topography": {
+      "empty_tile_count": 16315,
+      "logical_tiles_sha256": "a84d6cecf3d873d5e0e264a3a5733de7e47515b653016ed56fa47b2777d2c435",
+      "tile_count": 17607
+    }
+  },
+  "detail": {
+    "basemap": {
+      "boundaries": 2423,
+      "contours": 0
+    },
+    "topography": {
+      "boundaries": 0,
+      "contours": 11820
+    }
+  },
+  "garmin": {
+    "familyId": 4893,
+    "garminPackageRevision": "2.0.0-r1",
+    "inspection": {
+      "anchorLabels": {
+        "Cape Town": "Cape Town",
+        "Hout Bay": "Hout Bay"
+      },
+      "bounds": [
+        18.249921798706055,
+        -34.37999725341797,
+        18.580026626586914,
+        -33.8199520111084
+      ],
+      "coastPolygonsByLevel": {
+        "0": {
+          "0x32": 3,
+          "0x54": 68
+        },
+        "1": {
+          "0x32": 3,
+          "0x54": 47
+        },
+        "2": {
+          "0x32": 3,
+          "0x54": 38
+        },
+        "3": {
+          "0x32": 3,
+          "0x54": 12
+        },
+        "4": {
+          "0x32": 3,
+          "0x54": 5
+        }
+      },
+      "contoursByLevel": {
+        "0": {
+          "0x20": 2065,
+          "0x22": 230
+        },
+        "1": {
+          "0x20": 1851,
+          "0x22": 187
+        },
+        "2": {
+          "0x22": 177
+        },
+        "3": {
+          "0x10008": 167
+        },
+        "4": {}
+      },
+      "lineInstancesAtHighestDetail": {
+        "0x1": 465,
+        "0x10001": 206,
+        "0x10002": 2,
+        "0x10003": 5,
+        "0x10004": 197,
+        "0x10005": 1144,
+        "0x10006": 68,
+        "0x1000b": 30,
+        "0x14": 1056,
+        "0x16": 19734,
+        "0x18": 431,
+        "0x1a": 2,
+        "0x1c": 141,
+        "0x1f": 47,
+        "0x2": 99,
+        "0x20": 2065,
+        "0x22": 230,
+        "0x3": 822,
+        "0x4": 826,
+        "0x6": 18537,
+        "0x7": 17124,
+        "0xa": 696
+      },
+      "logicalCombinedSHA256": "abdd61361939d1ac4a85c778278b10539bc86330c47ff0d0599731824ccd34fb",
+      "logicalHashNote": "Internal file names, sizes and payloads; only CommonHeader creation-date bytes 14..20 are zeroed for hashing. IMG archive headers are excluded. Output bytes are never modified.",
+      "logicalTileSHA256": {
+        "48930001.img": "e959bdbb447690cd519d0075adaeda43e86e3b57c3a2ed813e86acb63d0d916e",
+        "48930002.img": "9f674cdd6f95ad1e71103fdfa86cb79b643ac04f971c09a960a97bab69905da8",
+        "48930003.img": "0d5c17f1eef88e213c80d0dcbaced3aefb1dca84f96631a6759a74bb2da04d3c"
+      },
+      "pointInstancesAtHighestDetail": {
+        "0x100": 1,
+        "0x10001": 150,
+        "0x10002": 144,
+        "0x10003": 618,
+        "0x10004": 68,
+        "0x10006": 5905,
+        "0x2f0b": 2515,
+        "0x600": 4,
+        "0x650c": 27,
+        "0x6603": 74,
+        "0x6615": 4,
+        "0x6616": 75,
+        "0x800": 7,
+        "0xb00": 30,
+        "0xc00": 371
+      },
+      "polygonInstancesAtHighestDetail": {
+        "0x10101": 332,
+        "0x10102": 1203,
+        "0x10103": 131,
+        "0x10104": 326,
+        "0x10105": 75,
+        "0x10106": 192,
+        "0x10109": 137,
+        "0x1010a": 7,
+        "0x13": 83831,
+        "0x32": 3,
+        "0x3c": 698,
+        "0x50": 321,
+        "0x51": 124,
+        "0x54": 68
+      },
+      "routing": false,
+      "subfileBytes": {
+        "DEM": 635152,
+        "LBL": 302429,
+        "MPS": 299,
+        "RGN": 4551175,
+        "SRT": 912,
+        "TRE": 56930,
+        "TYP": 2982
+      },
+      "tiles": 3
+    },
+    "output": {
+      "bytes": 5574656,
+      "path": "regions/cape-peninsula/garmin/dist/OpenBareMap-Cape-Peninsula.img",
+      "sha256": "ecd84dca2438d03950394be3d94e9cc0ae3b6b81f59e0a96f0d14e2b33cb1af3"
+    },
+    "routing": false,
+    "status": "compiled and structurally inspected; hardware rendering pending"
+  },
+  "geometryProcessing": {
+    "contours": 2315,
+    "grid": {
+      "grid_10km": 13,
+      "grid_1km": 112
+    },
+    "landcover": {
+      "empty_source_areas": [
+        {
+          "area_id": 43819951,
+          "outer_ring_sizes": [],
+          "reason": "invalid area (area_id=43819951)"
+        },
+        {
+          "area_id": 43819953,
+          "outer_ring_sizes": [],
+          "reason": "invalid area (area_id=43819953)"
+        }
+      ],
+      "features": 2627,
+      "retained": 264,
+      "smoothed": 2363
+    }
+  },
+  "irelandGarminPackageRevision": "2.0.1-trail-detail-r1",
+  "irelandPreserved": true,
+  "labelGlyphs": {
+    "Open Sans Bold": true,
+    "Open Sans Regular": true,
+    "Open Sans Semibold": true
+  },
+  "landBackground": {
+    "cape-point": {
+      "coordinate": [
+        18.497,
+        -34.357
+      ],
+      "verifiedZooms": [
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    },
+    "cape-town": {
+      "coordinate": [
+        18.4241,
+        -33.9249
+      ],
+      "verifiedZooms": [
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    },
+    "chapmans-peak": {
+      "coordinate": [
+        18.36,
+        -34.087
+      ],
+      "verifiedZooms": [
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    },
+    "constantia-nek": {
+      "coordinate": [
+        18.406,
+        -34.011
+      ],
+      "verifiedZooms": [
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    },
+    "lions-head": {
+      "coordinate": [
+        18.389,
+        -33.935
+      ],
+      "verifiedZooms": [
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    },
+    "silvermine": {
+      "coordinate": [
+        18.424,
+        -34.087
+      ],
+      "verifiedZooms": [
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    },
+    "simons-town": {
+      "coordinate": [
+        18.433,
+        -34.193
+      ],
+      "verifiedZooms": [
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    },
+    "table-mountain": {
+      "coordinate": [
+        18.4098,
+        -33.9628
+      ],
+      "verifiedZooms": [
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    }
+  },
+  "packages": {
+    "android": {
+      "checkedFiles": 43,
+      "nativeDeviceRenderingTested": false,
+      "sourceFiles": {
+        "basemap": "maps/basemap.mbtiles",
+        "coast": "maps/coast.mbtiles",
+        "hillshade": "maps/hillshade.mbtiles",
+        "topography": "maps/topography.mbtiles",
+        "utm-grid": "maps/grid.mbtiles"
+      }
+    },
+    "ios": {
+      "checkedFiles": 46,
+      "nativeDeviceRenderingTested": false,
+      "sourceFiles": {
+        "basemap": "maps/basemap.mbtiles",
+        "coast": "maps/coast.mbtiles",
+        "hillshade": "maps/hillshade.mbtiles",
+        "topography": "maps/topography.mbtiles",
+        "utm-grid": "maps/grid.mbtiles"
+      }
+    }
+  },
+  "region": "cape-peninsula",
+  "status": "automated checks passed; visual and hardware acceptance pending"
+}

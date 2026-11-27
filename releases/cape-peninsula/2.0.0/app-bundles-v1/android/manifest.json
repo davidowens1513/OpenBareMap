@@ -1,0 +1,33 @@
+{
+  "bytes": 28769185,
+  "datasets": {
+    "basemap": {
+      "path": "maps/basemap.mbtiles",
+      "sha256": "987c829be5f6c8e480ea9c0159721222c02bd2b63581632c1ad2ae58cb34bf39"
+    },
+    "coast": {
+      "derivedFrom": "3f434a7e7d54fa70c0b1046a314625a34729fa6e62a3d2f50ecdb7928e09b62d",
+      "path": "maps/coast.mbtiles",
+      "sha256": "3d76db731c75230e06a69c25032c12ea4b0adea72d5ccbbf5fd70efd1d9a4b37"
+    },
+    "grid": {
+      "path": "maps/grid.mbtiles",
+      "sha256": "49142639f0a86de70f14fee2cca8238fa513f65061379c5ccae04cdc1b8f6230"
+    },
+    "hillshade": {
+      "path": "maps/hillshade.mbtiles",
+      "sha256": "524f7e706279aca3783b893b365eb7fd5f71721c8f21c6df5af866d46a9b86f5"
+    },
+    "topography": {
+      "path": "maps/topography.mbtiles",
+      "sha256": "3f434a7e7d54fa70c0b1046a314625a34729fa6e62a3d2f50ecdb7928e09b62d"
+    }
+  },
+  "instructionsSHA256": "0d2c613c3d50208f01bbe9495c965c476b3026746647e75153df341ae05d9372",
+  "instructionsURL": "https://downloads.appsbyonzy.dev/OpenBareMap/cape-peninsula/2.0.0/app-bundles-v1/android/instructions.txt",
+  "localPath": "releases/cape-peninsula/2.0.0/app-bundles-v1/android/OpenBareMap-Cape-Peninsula-Android-Bundle.zip",
+  "mapManifestSHA256": "4f01712ae0026b4398a8215fe6fe754f93fef204aec0668ce1014fc724aeb8a8",
+  "r2Key": "OpenBareMap/cape-peninsula/2.0.0/app-bundles-v1/android/OpenBareMap-Cape-Peninsula-Android-Bundle.zip",
+  "sha256": "6fd4e501332af53210464e962a095c119eef890f8284671dfa95e40e9a658794",
+  "url": "https://downloads.appsbyonzy.dev/OpenBareMap/cape-peninsula/2.0.0/app-bundles-v1/android/OpenBareMap-Cape-Peninsula-Android-Bundle.zip"
+}

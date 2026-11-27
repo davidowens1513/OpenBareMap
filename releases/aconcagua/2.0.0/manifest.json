@@ -1,0 +1,106 @@
+{
+  "acceptance": "Automated checks only; see validation and visual-review records for actual reviewed scope.",
+  "coverage": "Aconcagua Provincial Park and the high Andes approaches from Argentina and Chile, including Horcones, Confluencia, Plaza de Mulas, Puente del Inca and Los Penitentes.",
+  "datasets": {
+    "basemap": {
+      "bytes": 4751360,
+      "path": "releases/aconcagua/2.0.0/maps/basemap.mbtiles",
+      "sha256": "e44397e89e21b45105da941e5e1e3c10049bef94d2765cffd3a69ed9aa9bef5b",
+      "validation": {
+        "empty_tile_count": 20,
+        "logical_tiles_sha256": "7feeaad548f0875577ba17e211048f692f1cfe3c36fc35e5c0851b899ee6fd2b",
+        "tile_count": 2482
+      }
+    },
+    "grid": {
+      "bytes": 1155072,
+      "path": "releases/aconcagua/2.0.0/maps/grid.mbtiles",
+      "sha256": "a650ab254a7ce7dfa5267f1e245ba4ff665363e730587fab489f9411d7607107",
+      "validation": {
+        "empty_tile_count": 0,
+        "logical_tiles_sha256": "a4c3e70e650375d181af8f3614256501072cb9a30a6a99ddaa233b316db0791b",
+        "tile_count": 3129
+      }
+    },
+    "hillshade": {
+      "bytes": 10637312,
+      "path": "releases/aconcagua/2.0.0/maps/hillshade.mbtiles",
+      "sha256": "da57e14c8d0e0f8aba580a97139e985a40f11662c271af987b001a63a81d626c",
+      "validation": {
+        "empty_tile_count": 0,
+        "logical_tiles_sha256": "3597d38a3499af376b199cafdd71220bf9e44c5ced86cd96129f1b4af5a04a21",
+        "tile_count": 251
+      }
+    },
+    "topography": {
+      "bytes": 101969920,
+      "path": "releases/aconcagua/2.0.0/maps/topography-context.mbtiles",
+      "sha256": "01484a408cdf477a1443d31be05e5c4e22cef1e226d7d1f8ca5b3c6325288a7c",
+      "validation": {
+        "empty_tile_count": 44471,
+        "logical_tiles_sha256": "435931aa519f41c2cc514f9ecd1fc36321048965ba9957290f0fc30be2a67250",
+        "tile_count": 50634
+      }
+    }
+  },
+  "garmin": {
+    "bytes": 29712384,
+    "path": "regions/aconcagua/garmin/dist/OpenBareMap-Aconcagua.img",
+    "sha256": "50ec2363770db645245e447ba7fbf821d82ee66e1c6248f0ddf687a4931af8b9"
+  },
+  "geometryReport": {
+    "path": "build/aconcagua-geometry/geometry-report.json",
+    "sha256": "eb9a47da05f46d854771f00913bdb62250a9bcddf9e48292ddcc6ba19f733260"
+  },
+  "hostAppsModified": false,
+  "mapVersion": "2.0.0",
+  "osm": {
+    "bytes": 12340190,
+    "operation": "Complete-feature bbox extraction with nested relation references, then libosmium sorted merge; duplicate OSM objects resolved by version",
+    "path": "data/regions/aconcagua/aconcagua-261122.osm.pbf",
+    "replicationTimestamp": "2026-11-22T21:20:48Z",
+    "sha256": "2c9a9d79e0a68e63fb558889d66772bbe25c4668362977bb69122d6163a0ab26",
+    "snapshot_date": "2026-11-22",
+    "url": null
+  },
+  "packages": {
+    "android": {
+      "archive": {
+        "bytes": 122696691,
+        "path": "regions/aconcagua/android/OpenBareMap-Android.zip",
+        "sha256": "a9b92da80e06558d6e8f87d52608ecf0566cc2ad3327564fdbe571b3fe616e8b"
+      },
+      "checksumsSHA256": "950acc6a4587fba976b26ac422826db2bb51ac38f0cb6b820493ef04e580e70c",
+      "manifestSHA256": "65e9bd7dc923720a150dbb3581b09cf6540ab1f4a1632cc959576b86dff42fc3",
+      "path": "regions/aconcagua/android",
+      "validationSHA256": "f08831164e0c653a4314a3f9e4d270a5ac10740bbb09f4adecd908180ea507cf"
+    },
+    "ios": {
+      "checksumsSHA256": "8ab001c1bc8b42b36af293746df2c30dc519fc8b3bbe92c3b31ca3d25b69ebd5",
+      "manifestSHA256": "5fd744571edb10270df7cd5f4c71ee35f68d873c5b382954cd18a083d31ff953",
+      "path": "regions/aconcagua/ios",
+      "validationSHA256": "0e2896a2e5388019a59a95eda53794ae12c1da8e1e62cfd4c8f3a73f2b6e4c18"
+    }
+  },
+  "pythonRuntime": {
+    "packages": {
+      "Pillow": "12.3.0",
+      "certifi": "2026.10.23",
+      "charset-normalizer": "3.5.2",
+      "idna": "3.20",
+      "numpy": "2.5.4",
+      "osmium": "4.3.2",
+      "pyproj": "3.8.0",
+      "requests": "2.34.2",
+      "shapely": "2.2.0",
+      "urllib3": "2.8.0"
+    },
+    "platform": "macOS-27.2.1-arm64-arm-64bit-Mach-O",
+    "python": "3.14.5 (main, May 10 2026, 10:21:34) [Clang 21.0.0 (clang-2100.0.123.102)]",
+    "requirementsSHA256": "427f12ff8b49bfebac0a7d453c2f65bd15d6695584b18e6ecee1fdfeed20a36c"
+  },
+  "region": "aconcagua",
+  "styleSHA256": "3f0be4da590213e17eaf0d04555398a1f830e23814c38ccf10b3d64db1cb6428",
+  "terrainLockSHA256": "2d593c3c91e316fbf57dca417fd93882be77888e7c34f16768cd611c3b18e904",
+  "validation": "validation.json"
+}

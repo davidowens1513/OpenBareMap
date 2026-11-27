@@ -1,0 +1,20 @@
+{
+  "inputs": [
+    {
+      "path": "regions/vancouver-island-west-coast-trail/garmin/inputs/contours.geojson.gz",
+      "sha256": "00add93243bb5e16e891326ee9cac0bafae4921e28b437675cbdb791e49bbd11",
+      "uncompressedSHA256": "bf18e5ef8b81816d468e471aa823228618eafaf98f4819bbe3d17a1d812a2094"
+    },
+    {
+      "path": "regions/vancouver-island-west-coast-trail/garmin/inputs/landcover.geojson.gz",
+      "sha256": "f04bbf2c8c787ebb74c7a8409cc84865568b1522fed93b65e3767c2dce7375ff",
+      "uncompressedSHA256": "211bcf0486b57ccf9974e48b8e78aba121a45dcec2c80de3cfdb5f43a8149a8c"
+    },
+    {
+      "path": "regions/vancouver-island-west-coast-trail/garmin/inputs/land.geojson.gz",
+      "sha256": "a8f225760d132988cf2311c8177ba92f3890e45cd7c0be8fc07b3c16553d02ce",
+      "uncompressedSHA256": "d81ace21eb926cce9e7246cc8dfa1d4bd1a7a6347380b1835360be94d92ee11b"
+    }
+  ],
+  "region": "vancouver-island-west-coast-trail"
+}

@@ -1,0 +1,52 @@
+{
+  "builderSHA256": "df45d47a59e968508a89136d44d799aaf2bba52547b211e0dff68a5b0e0f6cfc",
+  "contextBounds": [
+    27,
+    -31,
+    31,
+    -27
+  ],
+  "note": "Contour payloads preserved exactly while extending land background outside edition coverage.",
+  "oldTopography": {
+    "bytes": 58359808,
+    "path": "releases/northern-drakensberg/2.0.0/maps/topography.mbtiles",
+    "sha256": "40b7d2fbc97fef0a6822f4906f3d07976aee180d3cfc18e19020e9bf96b84d79",
+    "validation": {
+      "empty_tile_count": 45016,
+      "logical_tiles_sha256": "113a904e0f668dfc907318a711e20e02aa1800405b4cabc1b98b5624cbdcc57c",
+      "tile_count": 51317
+    }
+  },
+  "output": {
+    "bytes": 58241024,
+    "path": "releases/northern-drakensberg/2.0.0/maps/topography-context.mbtiles",
+    "sha256": "266957c4ae05af84c05ac46363450512134d4f11bb5610b7b2dfe58262c850eb",
+    "validation": {
+      "empty_tile_count": 45016,
+      "logical_tiles_sha256": "113a904e0f668dfc907318a711e20e02aa1800405b4cabc1b98b5624cbdcc57c",
+      "tile_count": 51317
+    }
+  },
+  "replacement": {
+    "changed_tiles": 3280,
+    "path": "build/northern-drakensberg-coast-context/combined.mbtiles",
+    "replacement_feature_instances": 4493,
+    "sha256": "e8c744d62d41c679b6b5ed25a40f40367f9a87df280c6c1e3b5f47ba1d4f3252",
+    "unchanged_other_layers_sha256": "ddc453558c26cb6c16335545c67150405ad412dfb42dfda4b5b5e87929d0ae07",
+    "validation": {
+      "empty_tile_count": 45016,
+      "logical_tiles_sha256": "113a904e0f668dfc907318a711e20e02aa1800405b4cabc1b98b5624cbdcc57c",
+      "tile_count": 51317
+    }
+  },
+  "source": {
+    "accessed_utc": "2026-10-25T12:59:16.751893+00:00",
+    "bytes": 928538219,
+    "http_headers_path": "data/land-polygons.headers",
+    "license": "ODbL 1.0; OpenStreetMap contributors",
+    "path": "data/land-polygons-split-4326.zip",
+    "sha256": "5911e273096f9585425a17c30a8a98785cc33ed2718ff88987768933b8a327f7",
+    "source_snapshot": "HTTP Last-Modified 2026-10-25T03:43:12Z; this is file publication, not a guaranteed OSM snapshot timestamp",
+    "url": "https://osmdata.openstreetmap.de/download/land-polygons-split-4326.zip"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "inputs": [
+    {
+      "path": "regions/northern-drakensberg/garmin/inputs/contours.geojson.gz",
+      "sha256": "ce5c6cd688da35e1819759ca610d25fc2aca69cc4b8efc60bdc3ff674bca760d",
+      "uncompressedSHA256": "dadc48d5ee03747cd926877ab2e11e5d2be9ec24eed20cfb1972ede1f0c2b5b9"
+    },
+    {
+      "path": "regions/northern-drakensberg/garmin/inputs/landcover.geojson.gz",
+      "sha256": "bc6ef1703b2a368c9436e2cbc39bfb89a1e342925586792d10fdf6c3cc04e65d",
+      "uncompressedSHA256": "2319fe5e2527fbaa6638987065058f24c87977e0c18744d0535bc80c176223fd"
+    },
+    {
+      "path": "regions/northern-drakensberg/garmin/inputs/land.geojson.gz",
+      "sha256": "f7fb60edcc7a6bb91c635fd9706f2d554a238df0dc95fd99d4f0b1ae624360f3",
+      "uncompressedSHA256": "a59f474d437aa8b2a4347390a1d93e6a20dacec8e81c0b7abdc568e05b6ac265"
+    }
+  ],
+  "region": "northern-drakensberg"
+}

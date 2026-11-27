@@ -1,0 +1,106 @@
+{
+  "acceptance": "Automated checks only; see validation and visual-review records for actual reviewed scope.",
+  "coverage": "Cotopaxi National Park and the Quilotoa Loop, including Latacunga, the Cotopaxi refuges, Laguna Limpiopungo, Quilotoa, Chugchil\u00e1n and Isinliv\u00ed.",
+  "datasets": {
+    "basemap": {
+      "bytes": 9973760,
+      "path": "releases/cotopaxi-quilotoa/2.0.0/maps/basemap.mbtiles",
+      "sha256": "3d9aa7a8e59e20c65877cd30d3118e0d424530476c8f5864e517777135fb1ad9",
+      "validation": {
+        "empty_tile_count": 2,
+        "logical_tiles_sha256": "5187a23b0d3496a200ad9999a2bc30089d1f8cdf89480f0e8697b893df481505",
+        "tile_count": 1729
+      }
+    },
+    "grid": {
+      "bytes": 684032,
+      "path": "releases/cotopaxi-quilotoa/2.0.0/maps/grid.mbtiles",
+      "sha256": "dea9e533bea0978d027b9cc3dd23a550dcbb03f8a7332b6d349b649ad8629eb0",
+      "validation": {
+        "empty_tile_count": 0,
+        "logical_tiles_sha256": "9ae238b0f08fbeeeaaeec4c741ad0acf922c9f277338b249fff6ae6c1a1395c5",
+        "tile_count": 1784
+      }
+    },
+    "hillshade": {
+      "bytes": 6000640,
+      "path": "releases/cotopaxi-quilotoa/2.0.0/maps/hillshade.mbtiles",
+      "sha256": "369be9aedbb4d8020299467868703a1659c54ef43f0abb6279084bab4820c96f",
+      "validation": {
+        "empty_tile_count": 0,
+        "logical_tiles_sha256": "861235f9b4a61848f5cc401e0d6c777491624385bc69db58e8216e69d482b8c7",
+        "tile_count": 138
+      }
+    },
+    "topography": {
+      "bytes": 54489088,
+      "path": "releases/cotopaxi-quilotoa/2.0.0/maps/topography-context.mbtiles",
+      "sha256": "89ebf7ea2810f84dfa204a4a466834ff33f9bedb613d14fc54788c26a74f9680",
+      "validation": {
+        "empty_tile_count": 37032,
+        "logical_tiles_sha256": "d9f3e97d85f0c96fad7323218eeff2c718dddd451096a327eb25344917a079b8",
+        "tile_count": 41259
+      }
+    }
+  },
+  "garmin": {
+    "bytes": 19526656,
+    "path": "regions/cotopaxi-quilotoa/garmin/dist/OpenBareMap-Cotopaxi-Quilotoa.img",
+    "sha256": "0e5584dc9ce024a1cb3fe7990609bcf510303e47ffbc75e622e8f84d4302eab9"
+  },
+  "geometryReport": {
+    "path": "build/cotopaxi-quilotoa-geometry/geometry-report.json",
+    "sha256": "86d4f5bf091295bd4ad25da1e8e8c9484ff3be03330dda3e3363e8a18365db40"
+  },
+  "hostAppsModified": false,
+  "mapVersion": "2.0.0",
+  "osm": {
+    "bytes": 6308684,
+    "operation": "Complete-feature bbox extraction with nested relation references",
+    "path": "data/regions/cotopaxi-quilotoa/ecuador-261126.osm.clipped.osm.pbf",
+    "replicationTimestamp": "2026-11-26T21:21:01Z",
+    "sha256": "f008f89c7de9c0f0f8b94c6a4a510108636b1a4ece0d5866bd2c13306fc3d98e",
+    "snapshot_date": "2026-11-26",
+    "url": "https://download.geofabrik.de/south-america/ecuador/ecuador-261126.osm.pbf"
+  },
+  "packages": {
+    "android": {
+      "archive": {
+        "bytes": 75353751,
+        "path": "regions/cotopaxi-quilotoa/android/OpenBareMap-Android.zip",
+        "sha256": "f8d4dbbceeb6b7e5ac9ae302714a88ab12fa0381c7e4054135ec8af0d20dcb72"
+      },
+      "checksumsSHA256": "a68db35ed4f69443523ce4432ddb27722400222d0ad4b29f2d6e98bc138f1fff",
+      "manifestSHA256": "e9b45b4d6f9c42efd50e60a660cc96ee27ffe843698653d0ce905173a2ae5346",
+      "path": "regions/cotopaxi-quilotoa/android",
+      "validationSHA256": "c38ec764abbc3de86e08f8365b68d47314082663f00d26cf4e4f0877359c6955"
+    },
+    "ios": {
+      "checksumsSHA256": "908e7acf90330cbbe8896a1b8d3eeb442b76778239d148aab75be2e7a118f19e",
+      "manifestSHA256": "ad0bdedbb2f109421f0a8cacbebb67145e68ff74ecdc644add0a029be35a7d00",
+      "path": "regions/cotopaxi-quilotoa/ios",
+      "validationSHA256": "9143edfc7883c1604f080e4cc52581dc1794292b3f09fad5dc4d6c472957d0a9"
+    }
+  },
+  "pythonRuntime": {
+    "packages": {
+      "Pillow": "12.3.0",
+      "certifi": "2026.10.23",
+      "charset-normalizer": "3.5.2",
+      "idna": "3.20",
+      "numpy": "2.5.4",
+      "osmium": "4.3.2",
+      "pyproj": "3.8.0",
+      "requests": "2.34.2",
+      "shapely": "2.2.0",
+      "urllib3": "2.8.0"
+    },
+    "platform": "macOS-27.2.1-arm64-arm-64bit-Mach-O",
+    "python": "3.14.5 (main, May 10 2026, 10:21:34) [Clang 21.0.0 (clang-2100.0.123.102)]",
+    "requirementsSHA256": "427f12ff8b49bfebac0a7d453c2f65bd15d6695584b18e6ecee1fdfeed20a36c"
+  },
+  "region": "cotopaxi-quilotoa",
+  "styleSHA256": "27eebc408e2e876cb5e66c093d86f3f7b1e3195dc8aaf725ca3bfb5351fc5e06",
+  "terrainLockSHA256": "ed4d92b9c2c2f37771bea04c2c09de32b7972d618c0d100cb51ef8ee08b700ed",
+  "validation": "validation.json"
+}

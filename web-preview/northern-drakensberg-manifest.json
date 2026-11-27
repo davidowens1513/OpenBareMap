@@ -1,0 +1,41 @@
+{
+  "regions": {
+    "northern-drakensberg": {
+      "basemap": {
+        "sourceSHA256": "57af0bd8507c7be5fb5795194fc78c3e374b6faaa8e8d6ee495e11d1d970b3c6",
+        "bytes": 28305354,
+        "sha256": "6b6b58a5e6c3ab9c0f292ce18ffb5e683729b812318ba1a1f11e709a4227078a",
+        "tiles": 3254
+      },
+      "grid": {
+        "sourceSHA256": "082dcab7c8346845be35fdb77acb93d342ec826a0145b315569582c7c105fc14",
+        "bytes": 1081500,
+        "sha256": "8d3cff4bd72456801f072db57d9a91bca185aa0901eab42e5a3ec5feeb7ec145",
+        "tiles": 3273
+      },
+      "hillshade": {
+        "sourceSHA256": "fdfbf678502baf0df824edb43f3fd8b66ca333dfbe56d8dcd6c567c5dbefd89b",
+        "bytes": 9726211,
+        "sha256": "e869ba12ae28270518edc88cb8086fec02fc8ceb357b22e863e33364905cd9e2",
+        "tiles": 263
+      },
+      "topography": {
+        "sourceSHA256": "266957c4ae05af84c05ac46363450512134d4f11bb5610b7b2dfe58262c850eb",
+        "bytes": 52970462,
+        "sha256": "1509e54584a85d1d557ec53f9382a952489df4ce07b3aa69814aca6573c1005a",
+        "tiles": 51317
+      },
+      "coast": {
+        "sourceSHA256": "e2577f6a0be13e815687203ff1a99b6aaa9713223c88b04ac9910de62bd8272c",
+        "bytes": 61884,
+        "sha256": "48f55d26d0e54bc26ebe24fa66dcae7f78fb9a8912c177f98e97d1d73412f7e6",
+        "tiles": 3359
+      }
+    }
+  },
+  "pmtilesPython": "3.8.1",
+  "pmtilesJS": "4.5.0",
+  "librarySHA256": "caf981bc46f6327ee7e65d5dc964d89d38a69f60edca2bd4c5c890c21b554c6c",
+  "dataOrigin": "https://downloads.appsbyonzy.dev/OpenBareMap/northern-drakensberg/2.0.0/preview",
+  "scope": "Complete selected map tiles; no regional or zoom sampling."
+}

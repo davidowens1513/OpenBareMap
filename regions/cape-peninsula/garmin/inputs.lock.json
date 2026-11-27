@@ -1,0 +1,20 @@
+{
+  "inputs": [
+    {
+      "path": "regions/cape-peninsula/garmin/inputs/contours.geojson.gz",
+      "sha256": "99de41928bf0ddb0002128ac19608055b8315d3baf7eb2946812b18463bfe01d",
+      "uncompressedSHA256": "4dbbf8cafbcd8cc72a1d59d3dad4af280f3db7405102c3bab8bb7e883663cd1a"
+    },
+    {
+      "path": "regions/cape-peninsula/garmin/inputs/landcover.geojson.gz",
+      "sha256": "01219a3629fc73073d0789e54fce020be528ac198d42780b594e1ee7bafa9b5e",
+      "uncompressedSHA256": "02aae91a120e787e7f499e5d01ad39c78744dec53f486684a182203c46b790e1"
+    },
+    {
+      "path": "regions/cape-peninsula/garmin/inputs/land.geojson.gz",
+      "sha256": "1bf3d789d7e891d039c8fa9f11b3f07e1cff795b8ed523d89a2a5ac3f05d56fe",
+      "uncompressedSHA256": "b6f0201055cab35d6a1008657eb49f70eb365e34bb5b88efc80a3e92fef8de25"
+    }
+  ],
+  "region": "cape-peninsula"
+}

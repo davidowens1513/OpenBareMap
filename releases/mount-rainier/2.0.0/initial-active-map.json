@@ -1,0 +1,52 @@
+{
+  "contourIntervalMetres": 20,
+  "coverage": "Mount Rainier National Park and its approaches, including Paradise, Sunrise, Longmire, Carbon River, Mowich Lake and the Wonderland Trail.",
+  "datasets": {
+    "basemap": {
+      "bytes": 7725056,
+      "path": "releases/mount-rainier/2.0.0/maps/basemap.mbtiles",
+      "sha256": "e30e330657bde64d9e1d5771b804bc5cb76ed78738c381963fcbd6e8f1e0b3a5",
+      "validation": {
+        "empty_tile_count": 0,
+        "logical_tiles_sha256": "d820b761ce6d245a581b1202d9d109ff496d00dfb31f91e3bce96fc77e18f800",
+        "tile_count": 1075
+      }
+    },
+    "grid": {
+      "bytes": 364544,
+      "path": "releases/mount-rainier/2.0.0/maps/grid.mbtiles",
+      "sha256": "dc4be24620139d5afc0702512b84f7fcddc713aeb91226038d0d1224b28ccc2c",
+      "validation": {
+        "empty_tile_count": 0,
+        "logical_tiles_sha256": "4c3775363263a2c5c6a5a6daa59762cf71d9604b8315dd35fcc27adfd9be401e",
+        "tile_count": 1061
+      }
+    },
+    "hillshade": {
+      "bytes": 3342336,
+      "path": "releases/mount-rainier/2.0.0/maps/hillshade.mbtiles",
+      "sha256": "8d1b7ffff35953f05dab46a42446bccc655bd5ce56757fabc72a1c997d5046cb",
+      "validation": {
+        "empty_tile_count": 0,
+        "logical_tiles_sha256": "af0b0350e00e69cf62ada4257e68334e2f1788f7db0e8655cbea4fa59f45988e",
+        "tile_count": 107
+      }
+    },
+    "topography": {
+      "bytes": 24686592,
+      "path": "releases/mount-rainier/2.0.0/maps/topography.mbtiles",
+      "sha256": "6b019dac22039d01e19b295179db697fdf4408b6e46fa2bdbac95a297279ecca",
+      "validation": {
+        "empty_tile_count": 59309,
+        "logical_tiles_sha256": "e2ba6749996c9081699d025f2f2a763027da625809a1f78626963ea923638e09",
+        "tile_count": 64484
+      }
+    }
+  },
+  "format": "openbaremap-development-viewer-v1",
+  "localBorders": false,
+  "mapVersion": "2.0.0",
+  "region": "mount-rainier",
+  "storageRevision": "2.0.0-mount-rainier-r1",
+  "styleRevision": "2.0.0-mount-rainier-r1"
+}

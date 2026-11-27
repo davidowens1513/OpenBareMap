@@ -1,0 +1,41 @@
+{
+  "regions": {
+    "mount-rainier": {
+      "basemap": {
+        "sourceSHA256": "e30e330657bde64d9e1d5771b804bc5cb76ed78738c381963fcbd6e8f1e0b3a5",
+        "bytes": 7026816,
+        "sha256": "20c627d72b94795d8600b179585905bf579239dfc1ae2f426e0354a6afe8710b",
+        "tiles": 1075
+      },
+      "grid": {
+        "sourceSHA256": "dc4be24620139d5afc0702512b84f7fcddc713aeb91226038d0d1224b28ccc2c",
+        "bytes": 299652,
+        "sha256": "a6712b826ab0a43622ee0d05ee2c856cbf0f4e2e3fd3d492bfef9031526ed42a",
+        "tiles": 1061
+      },
+      "hillshade": {
+        "sourceSHA256": "8d1b7ffff35953f05dab46a42446bccc655bd5ce56757fabc72a1c997d5046cb",
+        "bytes": 3252887,
+        "sha256": "705488882cfb1c8bf3ddbc73db58f5182552078c92cfb58a6752d8e18898ac5a",
+        "tiles": 107
+      },
+      "topography": {
+        "sourceSHA256": "ea4e0f662416c265a49607d87695b82f284eeeb2bdc0dd6dcd0525ae3ea3f859",
+        "bytes": 19977690,
+        "sha256": "57fb531fd6bfd2d948050dbd339109cc5d79e6a6721a33fdc87e26e2eee4d84c",
+        "tiles": 64484
+      },
+      "coast": {
+        "sourceSHA256": "e27b4701da55cf1ee13ccb4b63028f04561b65ef8acac6444d585e05b0f48cb4",
+        "bytes": 1138134,
+        "sha256": "54ccf69a1da330f56235f00d1e692132f95e74b94ee31cf97ed32461c7ca531f",
+        "tiles": 4244
+      }
+    }
+  },
+  "pmtilesPython": "3.8.1",
+  "pmtilesJS": "4.5.0",
+  "librarySHA256": "caf981bc46f6327ee7e65d5dc964d89d38a69f60edca2bd4c5c890c21b554c6c",
+  "dataOrigin": "https://downloads.appsbyonzy.dev/OpenBareMap/mount-rainier/2.0.0/preview",
+  "scope": "Complete selected map tiles; no regional or zoom sampling."
+}

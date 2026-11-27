@@ -13,11 +13,14 @@ EUROPEAN_WALKING_REGIONS = ('camino-frances', 'cinque-terre')
 WORLDWIDE_TREKKING_REGIONS = ('cusco-inca-trail', 'kilimanjaro', 'fiordland')
 COAST_AND_ATLAS_REGIONS = ('rota-vicentina', 'high-atlas-toubkal', 'lycian-way')
 BALKANS_REGIONS = ('peaks-of-the-balkans', 'durmitor', 'zagori-vikos-gorge', 'mount-olympus', 'menalon-trail')
+EIGHT_MAP_RELEASE_REGIONS = ('gran-sasso', 'northern-drakensberg', 'cape-peninsula', 'mount-rainier',
+                             'vancouver-island-west-coast-trail', 'garibaldi-whistler',
+                             'cotopaxi-quilotoa', 'aconcagua')
 PERMANENT_ICE = {
     'glacier': ('Glacier', '#badde9', '#709bab', '0x1010c'),
     'permanent_snow': ('Permanent snowfield', '#f0f8fc', '#93b3c3', '0x1010d'),
 }
-REGIONS = ('ireland', 'england-wales', 'scotland', 'sierra-nevada', 'pyrenees', 'dolomites', 'faroe-islands','norway-south','norway-central','norway-north', 'balearic-islands', 'corsica', 'sardinia', 'sicily', 'crete', 'cyprus', 'malta', 'canary-islands', 'madeira') + ALPS_REGIONS + US_PARK_REGIONS + ('picos-de-europa', 'high-tatras') + CANADIAN_ROCKIES_REGIONS + ICELAND_PATAGONIA_REGIONS + NEPAL_REGIONS + EUROPEAN_WALKING_REGIONS + ('amalfi-bay-of-naples',) + WORLDWIDE_TREKKING_REGIONS + COAST_AND_ATLAS_REGIONS + ('camino-portugues', 'camino-del-norte', 'azores') + BALKANS_REGIONS
+REGIONS = ('ireland', 'england-wales', 'scotland', 'sierra-nevada', 'pyrenees', 'dolomites', 'faroe-islands','norway-south','norway-central','norway-north', 'balearic-islands', 'corsica', 'sardinia', 'sicily', 'crete', 'cyprus', 'malta', 'canary-islands', 'madeira') + ALPS_REGIONS + US_PARK_REGIONS + ('picos-de-europa', 'high-tatras') + CANADIAN_ROCKIES_REGIONS + ICELAND_PATAGONIA_REGIONS + NEPAL_REGIONS + EUROPEAN_WALKING_REGIONS + ('amalfi-bay-of-naples',) + WORLDWIDE_TREKKING_REGIONS + COAST_AND_ATLAS_REGIONS + ('camino-portugues', 'camino-del-norte', 'azores') + BALKANS_REGIONS + EIGHT_MAP_RELEASE_REGIONS
 
 
 def clips_to_coverage(edition):
