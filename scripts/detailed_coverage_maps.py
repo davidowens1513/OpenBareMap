@@ -16,7 +16,7 @@ SPECS = {
         'labels': [('marblemount', 10, -10), ('cascade-pass', 10, 34), ('sahale-arm', 10, -22)],
         'roads': [[(-121.55, 48.52), (-121.244, 48.527), (-121.10, 48.57), (-120.75, 48.59)], [(-121.244, 48.527), (-121.17, 48.50), (-121.075, 48.475)]],
         'rivers': [[(-121.55, 48.50), (-121.30, 48.52), (-121.12, 48.50), (-120.82, 48.57)]],
-        'road_labels': [('SR 20', -121.38, 48.535), ('Cascade River Road', -121.19, 48.485)], 'scale': 10,
+        'road_labels': [('SR 20', -121.38, 48.535), ('Cascade River Road', -121.30, 48.470)], 'scale': 10,
     },
     'white-mountains': {
         'labels': [('mount-washington', 10, -14), ('pinkham-notch', 10, 28), ('crawford-notch', -175, 24), ('franconia-notch', -170, -10), ('lincoln', 10, 24)],
@@ -65,7 +65,7 @@ SPECS = {
         'roads': [[(-77.35, -10.10), (-77.155, -10.151), (-76.989, -10.138), (-76.883, -10.084)], [(-77.15, -10.75), (-76.994, -10.474), (-76.917, -10.40)]],
         'rivers': [[(-76.90, -9.80), (-76.91, -10.27), (-76.99, -10.47), (-77.05, -10.75)]],
         'waters': [[(-76.96, -10.30), (-76.91, -10.29), (-76.89, -10.25), (-76.94, -10.24)], [(-76.94, -10.44), (-76.89, -10.43), (-76.88, -10.39), (-76.92, -10.38)]],
-        'road_labels': [('Chiquián approach', -77.23, -10.17)], 'scale': 30,
+        'road_labels': [('Chiquián approach', -77.34, -10.23)], 'scale': 30,
     },
     'cerro-castillo': {
         'labels': [('las-horquetas', -155, -12), ('laguna-chiguay', 10, -12), ('cerro-castillo', -155, -12), ('laguna-castillo', -175, 25), ('villa-cerro-castillo', 10, 25)],
@@ -152,7 +152,7 @@ def coverage_svg(region):
 <g fill="#1c3026" stroke="#fffefa" stroke-width="4" paint-order="stroke" stroke-linejoin="round" font-family="Arial,sans-serif" font-size="21" font-weight="700">{''.join(labels)}</g>
 <g fill="#765f43" stroke="#fffefa" stroke-width="3" paint-order="stroke" font-family="Arial,sans-serif" font-size="17" font-weight="700">{''.join(road_labels)}</g>
 <g fill="#1c3026" font-family="Arial,sans-serif" font-size="23" font-weight="700" text-anchor="middle"><rect x="784" y="13" width="43" height="62" rx="9" fill="#fffefa" fill-opacity=".88"/><text x="805.5" y="39">N</text><path d="M805.5 46l-8 18 8-5 8 5z"/></g></g>
-<g font-family="Arial,sans-serif" font-size="24" fill="#1c3026"><rect y="450" width="840" height="48" fill="#fafbf7"/><path d="M0 450H840" stroke="#c8d5c6"/><rect x="20" y="464" width="25" height="20" rx="3" fill="#c2ddbf" stroke="#146b35" stroke-width="2.5"/><text x="57" y="483">Map coverage</text>{footer_route}<path d="M{scale_start} 467v12h{scale_start + scale_pixels:.1f}v-12" fill="none" stroke="#1c3026" stroke-width="2.5"/><text x="{scale_start + scale_pixels + 14:.1f}" y="483">{scale_km} km</text></g></svg>\n'''
+<g font-family="Arial,sans-serif" font-size="24" fill="#1c3026"><rect y="450" width="840" height="48" fill="#fafbf7"/><path d="M0 450H840" stroke="#c8d5c6"/><rect x="20" y="464" width="25" height="20" rx="3" fill="#c2ddbf" stroke="#146b35" stroke-width="2.5"/><text x="57" y="483">Map coverage</text>{footer_route}<path d="M{scale_start} 467v12h{scale_pixels:.1f}v-12" fill="none" stroke="#1c3026" stroke-width="2.5"/><text x="{scale_start + scale_pixels + 14:.1f}" y="483">{scale_km} km</text></g></svg>\n'''
 
 
 if __name__ == '__main__':

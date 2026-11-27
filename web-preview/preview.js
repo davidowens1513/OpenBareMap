@@ -1,6 +1,6 @@
 const regionSelect=document.getElementById('region');
 regionSelect.addEventListener('change',()=>window.location.assign(regionSelect.value));
-const region=await fetch('./region.json').then(r=>r.json());
+const region=await fetch('./region.json?v=20261127-route-metadata').then(r=>r.json());
 const protocol=new pmtiles.Protocol();maplibregl.addProtocol('pmtiles',protocol.tile);
 const bounds=[[region.bounds[0],region.bounds[1]],[region.bounds[2],region.bounds[3]]];
 const status=document.getElementById('status');

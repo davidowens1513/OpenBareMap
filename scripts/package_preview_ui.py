@@ -4,12 +4,18 @@ import argparse,html,shutil,json
 from pathlib import Path
 from regions import ROOT,profile
 
-def grouped_options(catalog,selected):
+def grouped_options(catalog,selected,groups=None):
+ catalog_ids=[item['id'] for item in catalog]
+ if len(catalog_ids)!=len(set(catalog_ids)):
+  raise ValueError('Preview catalogue region IDs must be unique')
  entries={item['id']:item for item in catalog}
- groups=json.loads((ROOT/'config/preview-region-groups.json').read_text())
+ if groups is None:
+  groups=json.loads((ROOT/'config/preview-region-groups.json').read_text())
  ordered=[region for group in groups for region in group['regions']]
- if len(ordered)!=76 or len(set(ordered))!=76 or set(ordered)!=set(entries):
-  raise ValueError('Preview groups must contain every one of the 76 catalogued regions exactly once')
+ if len(ordered)!=len(set(ordered)):
+  raise ValueError('Preview groups must contain every catalogued region exactly once')
+ if len(ordered)!=len(catalog_ids) or set(ordered)!=set(catalog_ids):
+  raise ValueError('Preview groups must contain every catalogued region exactly once')
  result=[]
  for group in groups:
   result.append('<optgroup label="'+html.escape(group['label'],quote=True)+'">')
