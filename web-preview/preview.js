@@ -7,8 +7,9 @@ const status=document.getElementById('status');
 if(region.coverageBoundary){
   const note=document.createElement('span');
   const coverageLabel=region.coverageBoundaryLabel||'25 km coverage limit';
+  const featureLabel=region.routeCorridor?(region.routeOverlayLabel||'Camino Francés'):'national park';
   note.className='coverage-note';
-  note.textContent=`Purple: national park · Dashed: ${coverageLabel}`;
+  note.textContent=`Purple: ${featureLabel} · Dashed: ${coverageLabel}`;
   document.querySelector('header').append(note);
 }
 const mapPadding=()=>({top:Math.max(155,document.querySelector('header').getBoundingClientRect().bottom+20),left:30,right:30,bottom:40});

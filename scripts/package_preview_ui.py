@@ -4,6 +4,21 @@ import argparse,html,shutil,json
 from pathlib import Path
 from regions import ROOT,profile
 
+def grouped_options(catalog,selected):
+ entries={item['id']:item for item in catalog}
+ groups=json.loads((ROOT/'config/preview-region-groups.json').read_text())
+ ordered=[region for group in groups for region in group['regions']]
+ if len(ordered)!=76 or len(set(ordered))!=76 or set(ordered)!=set(entries):
+  raise ValueError('Preview groups must contain every one of the 76 catalogued regions exactly once')
+ result=[]
+ for group in groups:
+  result.append('<optgroup label="'+html.escape(group['label'],quote=True)+'">')
+  for region in group['regions']:
+   entry=entries[region]
+   result.append('<option value="'+html.escape(entry['url'],quote=True)+'"'+(' selected' if region==selected else '')+'>'+html.escape(entry['label'])+'</option>')
+  result.append('</optgroup>')
+ return ''.join(result)
+
 def package_ui(output,regions=None):
  output=Path(output);assets=output/'assets';(assets/'legends').mkdir(parents=True,exist_ok=True)
  catalog=json.loads((ROOT/'config/preview-regions.json').read_text())
@@ -16,7 +31,7 @@ def package_ui(output,regions=None):
   p=profile(region);directory=output/region;directory.mkdir(exist_ok=True)
   for name in ['index.html','legend.html']:
    text=(ROOT/'web-preview'/name).read_text().replace('{{REGION}}',html.escape(p['label'],quote=True)).replace('{{ID}}',region)
-   options=''.join('<option value="'+html.escape(e['url'],quote=True)+'"'+(' selected' if e['id']==region else '')+'>'+html.escape(e['label'])+'</option>' for e in catalog)
+   options=grouped_options(catalog,region)
    text=text.replace('{{REGION_OPTIONS}}',options)
    (directory/name).write_text(text)
   (directory/'region.json').write_text(json.dumps(p,indent=2)+'\n')

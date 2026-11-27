@@ -177,6 +177,7 @@ def add_route_settings(slug):
         'coverageBoundaryLabel': '12 km Jordan Trail walking and access corridor',
         'boundaryAttribution': 'Route alignment © OpenStreetMap contributors, ODbL; official section names and endpoints checked against the Jordan Trail Association.',
         'routeOverlayId': 'jordan-trail-route',
+        'routeOverlayLabel': 'Jordan Trail',
         'optionalBasemapLayers': ['water_name', 'cycling_route', 'ferry', 'island_name'],
     })
     write(path, edition)

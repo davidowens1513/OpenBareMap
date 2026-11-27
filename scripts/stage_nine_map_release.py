@@ -7,10 +7,9 @@ import json
 from pathlib import Path
 import shutil
 
-from shapely.geometry import shape
-
 from openbaremap import ROOT
 from regions import NINE_MAP_RELEASE_REGIONS, profile
+from detailed_coverage_maps import coverage_svg as detailed_coverage_svg
 import stage_eight_map_release as base
 from stage_mountain_editions import publish, stage, stage_website_archive
 from stage_worldwide_trekking import merge_worldwide_catalogue
@@ -67,45 +66,9 @@ def source_note(region):
 
 
 def coverage_svg(region):
-    document = base.coverage_svg_original(region)
-    if region != 'jordan-trail-dana-petra-wadi-rum':
-        return document
-    coverage = shape(json.loads(
-        (ROOT / 'regions' / region / 'garmin/render-coverage.geojson').read_text()
-    )['features'][0]['geometry'])
-    route_document = json.loads((ROOT / 'regions' / region / 'jordan-trail-route.geojson').read_text())
-    routes = [shape(feature['geometry']) for feature in route_document['features']]
-    minimum_x, minimum_y, maximum_x, maximum_y = coverage.bounds
-    width = max(maximum_x - minimum_x, 0.01)
-    height = max(maximum_y - minimum_y, 0.01)
-    scale = min(740 / width, 370 / height)
-    offset_x = (840 - width * scale) / 2
-    offset_y = (450 - height * scale) / 2
-
-    def point(coordinate):
-        x = offset_x + (coordinate[0] - minimum_x) * scale
-        y = offset_y + (maximum_y - coordinate[1]) * scale
-        return f'{x:.1f},{y:.1f}'
-
-    parts = []
-    for route in routes:
-        lines = route.geoms if route.geom_type == 'MultiLineString' else (route,)
-        parts.extend('M' + ' L'.join(point(coordinate) for coordinate in line.coords) for line in lines)
-    overlay = (
-        f'<path d="{" ".join(parts)}" fill="none" stroke="#7337a8" stroke-width="5" '
-        'stroke-linecap="round" stroke-linejoin="round"/>'
-    )
-    document = document.replace('<g fill="#1c3026"', overlay + '\n<g fill="#1c3026"', 1)
-    document = document.replace(
-        '<text x="57" y="483">Published map coverage</text>',
-        '<text x="57" y="483">Published map coverage</text>'
-        '<path d="M335 474H375" stroke="#7337a8" stroke-width="5" stroke-linecap="round"/>'
-        '<text x="388" y="483">Jordan Trail</text>',
-    )
-    return document
+    return detailed_coverage_svg(region)
 
 
-base.coverage_svg_original = base.coverage_svg
 base.coverage_svg = coverage_svg
 
 

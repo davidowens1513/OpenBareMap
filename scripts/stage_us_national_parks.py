@@ -92,9 +92,11 @@ def stage_homepage(website, regions, collections, count):
         )
     block = (
         f'\n{start}\n<div id="us-national-parks" style="margin-top:2rem"><h3>US National Parks</h3>'
-        '<p>Ten parks in nine offline maps with 20-metre contours, hillshade and hiking trails.</p>'
-        f'<h4>Download all nine maps</h4>{collection_links}'
-        f'<div class="map-regions">{"".join(cards)}</div></div>\n{end}\n'
+        f'<div class="map-regions">{"".join(cards)}</div>'
+        '<div class="collection-downloads us-national-parks-collection"><h4>US National Parks collection</h4>'
+        '<p>Nine maps covering ten parks, with Yellowstone and Grand Teton in one map.</p>'
+        f'<p class="tool-subtitle">Version {VERSION} · collection</p>'
+        f'<strong>Download all nine US national park maps</strong>{collection_links}</div></div>\n{end}\n'
     )
     page = page[:position] + block + page[position:]
     return re.sub(r'Currently there are \d+ maps available', f'Currently there are {count} maps available', page, count=1)

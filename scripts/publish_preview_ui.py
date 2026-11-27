@@ -15,7 +15,9 @@ def stage(output):
  for prefix,regions in groups.items():
   folder=output/prefix;package_ui(folder,regions)
   for p in folder.rglob('*'):
-   if p.is_file() and p.name not in ['index.html','preview.css','preview.js']:p.unlink()
+   if not p.is_file() or p.name in ['index.html','preview.css','preview.js']:continue
+   if p.name=='region.json' and json.loads(p.read_text()).get('routeOverlayLabel'):continue
+   p.unlink()
  # The older England/Wales address always leads to the active release.
  legacy=output/'OpenBareMap/preview-v2/england-wales/index.html';latest=next(e['url'] for e in catalog if e['id']=='england-wales')
  if legacy.exists():
