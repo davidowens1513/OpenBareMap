@@ -29,6 +29,7 @@ SITE_ROOTS = ('openbaremap', 'site')
 APP_COUNT_PATTERNS = (
     r'\b\d+(?= OpenBareMap editions from within the app)',
     r'\b\d+(?= offline hiking maps with)',
+    r'(?<=selected areas \(currently )\d+(?=\))',
 )
 
 
