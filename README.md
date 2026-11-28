@@ -1,12 +1,12 @@
 # OpenBareMap 2.0
 
-**[Browse all OpenBareMap maps](https://appsbyonzy.dev/maps/)**
+**[Browse all OpenBareMap maps](https://openbaremap.com/maps/)**
 
 OpenBareMap is an offline topographic map for hiking, available in **76 regional editions** across Europe, North and South America, Asia, Africa and New Zealand. Each edition has **20 m contours**, its own source coverage, map databases and platform packages. Mobile bundles are integration components for apps using MapLibre Native. Garmin downloads are display-only maps.
 
 ## Downloads and incorporation instructions
 
-The [Apps by Onzy website](https://appsbyonzy.dev/) has its own [website repository](https://github.com/davidowens1513/AppsByOnzy-Website). Make homepage changes and publish the site from that checkout.
+The [AppsByOnzy-Website repository](https://github.com/davidowens1513/AppsByOnzy-Website) maintains and publishes both the [OpenBareMap catalogue](https://openbaremap.com/) and the [Apps by Onzy website](https://appsbyonzy.dev/).
 
 The [US National Parks build and release guide](docs/regional-editions.md#us-national-parks) covers nine editions, with Yellowstone and Grand Teton in a shared map.
 
