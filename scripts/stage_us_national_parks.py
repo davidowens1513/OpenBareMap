@@ -22,6 +22,7 @@ from shapely.geometry import mapping, shape
 
 from build_app_distribution import archive_tree, build_one
 from openbaremap import ROOT, digest, write
+from publish_preview_ui import publish as publish_preview_ui, stage as stage_preview_ui
 from regions import US_PARK_REGIONS, profile
 from verify_app_distribution import read_hash
 
@@ -286,10 +287,67 @@ def upload_release_assets(output, upload_workers=4):
     return plan, verified
 
 
+CATALOGUES = (
+    ('app-bundles-catalog.json', APP_CATALOGUE),
+    ('worldwide-catalog-v1.json', WORLDWIDE_CATALOGUE),
+)
+
+
+def public_catalogue(key):
+    request = Request(PUBLIC + key, headers={'Cache-Control': 'no-cache', 'User-Agent': 'Mozilla/5.0'})
+    with urlopen(request, timeout=30) as response:
+        return response.read()
+
+
+def prepare_catalogues(output, regions, backup):
+    prepared = []
+    for filename, key in CATALOGUES:
+        path = output / filename
+        staged = json.loads(path.read_text())
+        previous = public_catalogue(key)
+        (backup / filename).write_bytes(previous)
+        live = json.loads(previous)
+        if isinstance(staged['regions'], list):
+            entries = {entry['id']: entry for entry in live['regions']}
+            entries.update({entry['id']: entry for entry in staged['regions'] if entry['id'] in regions})
+            live['regions'] = list(entries.values())
+        else:
+            live['regions'].update({region: staged['regions'][region] for region in regions})
+            live['mapVersions'].update({region: staged['mapVersions'][region] for region in regions})
+        if isinstance(live['regions'], list):
+            data = json.dumps(live, separators=(',', ':'), ensure_ascii=False) + '\n'
+            if len(data.encode()) > 5_000_000:
+                raise ValueError('The merged Worldwide app catalogue exceeds its 5 MB limit')
+            path.write_text(data)
+        else:
+            write(path, live)
+        prepared.append((path, key, previous))
+    return prepared, len(live['regions'])
+
+
 def publish(output, website, *, regions=US_PARK_REGIONS, render_homepage=stage_homepage, preview_manifests=None,
-            upload_workers=4):
+            upload_workers=4, prepare_release=None):
     if preview_manifests is None:
         preview_manifests = {'preview/manifest.json': 'us-national-parks-manifest.json'}
+    stamp = datetime.now(timezone.utc).strftime('%Y%m%dT%H%M%S.%fZ')
+    backup = output / 'previous-catalogues' / stamp
+    backup.mkdir(parents=True)
+    catalogues, count = prepare_catalogues(output, regions, backup)
+    print(f'Previous catalogues saved in {backup}', flush=True)
+    plan = json.loads((output / 'release-plan.json').read_text())
+    if any(asset['key'] in (APP_CATALOGUE, WORLDWIDE_CATALOGUE) for asset in plan['assets']):
+        raise ValueError('Download asset list must exclude public catalogues')
+    navigation = output / ('navigation-' + stamp)
+    homepage = None
+    if prepare_release is not None:
+        prepare_release(plan, count)
+        previews = json.loads((output / 'preview-regions.json').read_text())
+        stage_preview_ui(navigation, catalog=previews)
+    elif render_homepage is not None:
+        homepage = output / 'index.html'
+        homepage.write_text(render_homepage(website, plan['regions'], plan['downloads'], count))
+        stage_website_archive(website, homepage, output / plan.get('websiteArchive', 'appsbyonzy-us-national-parks.zip'))
+
     plan, verified = upload_release_assets(output, upload_workers)
     receipts = output / 'public-verification.json'
     preview_tiles = [item for item in plan['assets'] if item['key'].endswith('.pmtiles')]
@@ -311,29 +369,15 @@ def publish(output, website, *, regions=US_PARK_REGIONS, render_homepage=stage_h
     with ThreadPoolExecutor(max_workers=min(6, upload_workers)) as pool:
         list(pool.map(verify_range, preview_tiles))
 
-    for filename, key in [('app-bundles-catalog.json', APP_CATALOGUE),
-                          ('worldwide-catalog-v1.json', WORLDWIDE_CATALOGUE)]:
-        path = output / filename
-        staged = json.loads(path.read_text())
-        request = Request(PUBLIC + key, headers={'Cache-Control': 'no-cache', 'User-Agent': 'Mozilla/5.0'})
-        with urlopen(request, timeout=30) as response:
-            live = json.load(response)
-        if isinstance(staged['regions'], list):
-            entries = {entry['id']: entry for entry in live['regions']}
-            entries.update({entry['id']: entry for entry in staged['regions'] if entry['id'] in regions})
-            live['regions'] = list(entries.values())
-        else:
-            live['regions'].update({region: staged['regions'][region] for region in regions})
-            live['mapVersions'].update({region: staged['mapVersions'][region] for region in regions})
-        if isinstance(live['regions'], list):
-            data = json.dumps(live, separators=(',', ':'), ensure_ascii=False) + '\n'
-            if len(data.encode()) > 5_000_000:
-                raise ValueError('The merged Worldwide app catalogue exceeds its 5 MB limit')
-            path.write_text(data)
-        else:
-            write(path, live)
-        record_receipt(verified, receipts, *transfer_asset({'key': key, 'path': str(path.relative_to(ROOT)),
-                                                          'bytes': path.stat().st_size, 'sha256': digest(path)}, verified))
+    if prepare_release is not None:
+        publish_preview_ui(navigation)
+    for _path, key, previous in catalogues:
+        if public_catalogue(key) != previous:
+            raise ValueError(f'Public catalogue changed during staging: {key}. Restage the release.')
+    for path, key, _previous in catalogues:
+        item = {'key': key, 'path': str(path.relative_to(ROOT)),
+                'bytes': path.stat().st_size, 'sha256': digest(path)}
+        record_receipt(verified, receipts, *transfer_asset(item, verified))
 
     shutil.copyfile(output / 'app-bundles-catalog.json', ROOT / 'distribution/app-bundles-v1/catalog.json')
     for manifest, filename in preview_manifests.items():
@@ -354,11 +398,11 @@ def publish(output, website, *, regions=US_PARK_REGIONS, render_homepage=stage_h
         shutil.copyfile(output / 'garmin-manifests' / region / 'manifest.json', target)
 
     shutil.copyfile(output / 'preview-regions.json', ROOT / 'config/preview-regions.json')
-    # Refresh existing preview menus after all new destinations are reachable.
-    navigation = output / ('navigation-' + datetime.now(timezone.utc).strftime('%Y%m%d%H%M%S'))
-    run(sys.executable, 'scripts/publish_preview_ui.py', '--output', navigation)
-    website.write_text(render_homepage(website, plan['regions'], plan['downloads'], len(live['regions'])))
-    stage_website_archive(website, website, output / plan.get('websiteArchive', 'appsbyonzy-us-national-parks.zip'))
+    if prepare_release is None:
+        # Historical single-site releases still refresh their preview menus here.
+        run(sys.executable, 'scripts/publish_preview_ui.py', '--output', navigation)
+    if homepage is not None and homepage != website:
+        shutil.copyfile(homepage, website)
     print('Public downloads and preview ranges verified. The website checkout is ready for deployment.', flush=True)
 
 

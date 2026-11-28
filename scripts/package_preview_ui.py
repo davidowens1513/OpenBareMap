@@ -25,9 +25,9 @@ def grouped_options(catalog,selected,groups=None):
   result.append('</optgroup>')
  return ''.join(result)
 
-def package_ui(output,regions=None):
+def package_ui(output,regions=None,*,catalog=None):
  output=Path(output);assets=output/'assets';(assets/'legends').mkdir(parents=True,exist_ok=True)
- catalog=json.loads((ROOT/'config/preview-regions.json').read_text())
+ catalog=list(catalog) if catalog is not None else json.loads((ROOT/'config/preview-regions.json').read_text())
  selected=regions or [item['id'] for item in catalog]
  published={item['id'] for item in catalog}
  catalog += [{'id':region,'label':profile(region)['label'],'url':'../'+region+'/index.html'}

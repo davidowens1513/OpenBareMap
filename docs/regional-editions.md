@@ -225,11 +225,11 @@ Build the app integration bundles and previews under `work/<region>-release`, th
 
 ```sh
 PYTHONPATH=work/python python3 scripts/stage_eight_map_release.py \
-  --website ../AppsByOnzy-Website/site/index.html \
+  --website-repo ../AppsByOnzy-Website \
   --worldwide ../BareGPS-Worldwide/Distribution/worldwide-catalog-v1.json
 ```
 
-The staging command requires all eight completed `validation.json` records with Ireland preservation checks. It writes a 67-edition app catalogue, merges the eight Worldwide records into the existing catalogue, creates the eight area pages and coverage diagrams, updates the homepage, directory and sitemap, and builds a deployable website archive. Add `--publish-assets` only after inspecting those outputs.
+The staging command requires all eight completed `validation.json` records with Ireland preservation checks. It merges these editions into the catalogue baseline and stages both sites. Follow the collection publishing steps below.
 
 Gran Sasso, Mount Rainier, Garibaldi & Whistler, Cotopaxi & Quilotoa and Aconcagua were checked for permanent ice. Gran Sasso contains two OpenStreetMap glacier polygons and no current permanent-snow polygon; the map nevertheless includes distinct glacier and permanent-snow styling and legend entries. Mount Rainier, Garibaldi & Whistler, Cotopaxi & Quilotoa and Aconcagua contain 34, 181, 2 and 242 glacier polygons respectively. The other three source extracts contain no glacier or permanent-snow polygons.
 
@@ -259,15 +259,44 @@ done
 
 The permanent-ice audit distinguishes glaciers from permanent snowfields and excludes temporary snow. North Cascades, San Juan Mountains, Aoraki / Mount Cook & Westland and Upper Svaneti contain 575, 4, 690 and 269 OSM glacier features respectively. The current INAIGEM 2026 layer supplies Cordillera Blanca with 1,819 source polygons grouped into 495 official glacier identifiers (404.24498249 km²), and Cordillera Huayhuash with 392 source polygons grouped into 83 identifiers (48.12673235 km²); seven Huayhuash rock glaciers are excluded. The historical figure of 722 for Cordillera Blanca is the 1970 Hidrandina inventory, not the current map feature count. Chile DGA’s Inventario Público de Glaciares 2022 v2 supplies 503 Cerro Castillo glacier bodies (98.48910007 km²); 19 rock glaciers are excluded. The source locks record service/archive checksums, selection rules, dates, area totals and attribution.
 
-The Jordan corridor follows 12 pinned OSM relations from Dana to Wadi Rum, checked against the Jordan Trail Association’s official section names and endpoints. Its area-page coverage diagram includes the through-route. Build each edition’s app kits and preview under `work/<region>-release`, then stage the 76-edition catalogues and website:
+The Jordan corridor follows 12 pinned OSM relations from Dana to Wadi Rum, checked against the Jordan Trail Association’s official section names and endpoints. Its area-page coverage diagram includes the through-route. Build each edition’s app kits and preview under `work/<region>-release`, then stage the merged catalogues and both websites:
 
 ```sh
 PYTHONPATH=work/python python3 scripts/stage_nine_map_release.py \
-  --website ../AppsByOnzy-Website/site/index.html \
+  --website-repo ../AppsByOnzy-Website \
   --worldwide ../BareGPS-Worldwide/Distribution/worldwide-catalog-v1.json
 ```
 
-Add `--publish-assets` only after inspecting the local release plan, generated area pages, coverage SVGs and documentation. The publisher verifies object hashes and PMTiles range responses before updating the public catalogues.
+### Publishing a collection after the domain move
+
+Use the current `main` of AppsByOnzy-Website and the current Worldwide distribution
+catalogue as baselines. Define the next collection using the same
+`collection_cli` entry point as the eight- and nine-map scripts, with the
+new region IDs, countries, groups and work folder. Register each edition
+in the appropriate group in `config/preview-region-groups.json`.
+
+Run the collection staging command without `--publish-assets`. Review the
+release plan, generated map cards, area pages, coverage graphics and both
+site archives. The standalone catalogue, area directory and sitemap live
+under `openbaremap/`. The Apps by Onzy count is updated under `site/`.
+New coverage SVGs are generated when an area has no checked-in illustration.
+Review or update an existing illustration if the geographic footprint changes.
+
+Rerun the same command with `--publish-assets` after review. The publisher
+merges against the live catalogue bytes, saves both originals in
+`previous-catalogues/<timestamp>/` under the release folder, and regenerates
+and validates both archives before uploading any release assets. It checks
+download readbacks and PMTiles range responses before replacing the
+catalogues. Publish one collection at a time. The catalogue objects are
+written separately. If only one write succeeds, retry the same staged
+release or restore the saved originals to recover the previous list.
+
+From the release folder, deploy `openbaremap-pages.zip` to the OpenBareMap
+Pages project and `appsbyonzy-pages.zip` to the Apps by Onzy Pages project.
+Then verify the new map pages and use **Check for New Maps** in BareGPS
+Worldwide. Commit the website updates and the Worldwide distribution
+catalogue, and use the Worldwide catalogue import script to refresh the
+bundled fallback for future app builds.
 
 ## Nepal trekking
 

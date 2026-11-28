@@ -3,7 +3,6 @@
 
 import argparse
 from html.parser import HTMLParser
-import json
 from pathlib import Path
 import re
 from urllib.error import HTTPError
@@ -11,6 +10,7 @@ from urllib.request import Request, urlopen
 
 from openbaremap import ROOT
 from regions import NINE_MAP_RELEASE_REGIONS
+from stage_map_collection import validate_release
 
 
 class Links(HTMLParser):
@@ -46,24 +46,6 @@ def check_readme(path):
     return missing
 
 
-def check_site(site):
-    missing = []
-    for path in sorted(site.rglob('*')):
-        if not path.is_file() or path.suffix.lower() not in ('.html', '.svg', '.xml'):
-            continue
-        parser = Links()
-        parser.feed(path.read_text(errors='replace'))
-        for value in parser.targets:
-            target = local_target(path.parent, value, site)
-            if target is None:
-                continue
-            if target.is_dir():
-                target = target / 'index.html'
-            if not target.exists():
-                missing.append(f'{path.relative_to(site)} -> {value}')
-    return missing
-
-
 def public_urls():
     text = (ROOT / 'README.md').read_text()
     urls = set(re.findall(r'https://downloads\.appsbyonzy\.dev/[^)" ]+', text))
@@ -86,26 +68,18 @@ def check_public(urls):
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument('--website', type=Path, required=True)
+    parser.add_argument('--website-repo', type=Path, required=True)
+    parser.add_argument('--publication', type=Path, default=ROOT / 'work/nine-map-publication')
     parser.add_argument('--public', action='store_true')
     args = parser.parse_args()
     missing = check_readme(ROOT / 'README.md') + check_readme(ROOT / 'distribution/README.md')
-    missing.extend(check_site(args.website.resolve()))
-    publication = ROOT / 'work/nine-map-publication'
-    for name in ('app-bundles-catalog.json', 'worldwide-catalog-v1.json'):
-        count = len(json.loads((publication / name).read_text())['regions'])
-        if count != 76:
-            missing.append(f'{name} contains {count} regions, expected 76')
-    for region in NINE_MAP_RELEASE_REGIONS:
-        for relative in (f'maps/{region}/index.html', f'maps/{region}/coverage.svg'):
-            if not (args.website.parent / relative).is_file():
-                missing.append(relative)
+    count = validate_release(args.publication, args.website_repo.resolve())
     if args.public:
         missing.extend(check_public(public_urls()))
     if missing:
         raise SystemExit('Link check failed:\n' + '\n'.join(missing))
     public = len(public_urls()) if args.public else 0
-    print(f'Link check passed: two READMEs, complete website tree, 76-entry catalogues'
+    print(f'Link check passed: two READMEs, both website roots, {count}-entry catalogues'
           f'{f", and {public} new public URLs" if args.public else ""}.')
 
 

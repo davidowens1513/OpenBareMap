@@ -1,22 +1,12 @@
 #!/usr/bin/env python3
-"""Stage or publish the nine-map 27 November 2026 OpenBareMap release."""
-
-import argparse
-from html import escape
-import json
-from pathlib import Path
-import shutil
+"""Stage or publish the nine-map November 2026 OpenBareMap release."""
 
 from openbaremap import ROOT
-from regions import NINE_MAP_RELEASE_REGIONS, profile
-from detailed_coverage_maps import coverage_svg as detailed_coverage_svg
-import stage_eight_map_release as base
-from stage_mountain_editions import publish, stage, stage_website_archive
-from stage_worldwide_trekking import merge_worldwide_catalogue
+from regions import NINE_MAP_RELEASE_REGIONS
+from stage_map_collection import collection_cli
 
 
 OUTPUT = ROOT / 'work/nine-map-publication'
-ARCHIVE = 'appsbyonzy-nine-map-release.zip'
 COUNTRIES = {
     'north-cascades': 'USA',
     'white-mountains': 'USA',
@@ -41,77 +31,5 @@ GROUPS = {
 }
 
 
-base.EIGHT_MAP_RELEASE_REGIONS = NINE_MAP_RELEASE_REGIONS
-base.OUTPUT = OUTPUT
-base.ARCHIVE = ARCHIVE
-base.COUNTRIES = COUNTRIES
-base.GROUPS = GROUPS
-
-
-def source_note(region):
-    lock = ROOT / 'regions' / region / 'sources.lock.json'
-    if not lock.exists():
-        return ''
-    record = json.loads(lock.read_text())
-    notes = ['© OpenStreetMap contributors']
-    ice = record.get('permanentIce')
-    if ice and ice.get('attribution'):
-        notes.append(ice['attribution'])
-    boundary = ROOT / 'regions' / region / 'boundary-source.json'
-    if boundary.exists():
-        for source in json.loads(boundary.read_text()).get('sources', []):
-            if source.get('attribution'):
-                notes.append(source['attribution'])
-    return ' · '.join(notes)
-
-
-def coverage_svg(region):
-    return detailed_coverage_svg(region)
-
-
-base.coverage_svg = coverage_svg
-
-
-def area_page(region, entries):
-    page = base.area_page_original(region, entries)
-    return page.replace(
-        'Published mobile map footprint · © OpenStreetMap contributors',
-        'Published mobile map footprint · ' + escape(source_note(region)),
-    )
-
-
-base.area_page_original = base.area_page
-base.area_page = area_page
-
-
-def main():
-    parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument('--website', type=Path, required=True)
-    parser.add_argument('--worldwide', type=Path, required=True)
-    parser.add_argument('--publish-assets', action='store_true')
-    args = parser.parse_args()
-    manifests = {
-        f'../{region}-release/preview/manifest.json': f'{region}-manifest.json'
-        for region in NINE_MAP_RELEASE_REGIONS
-    }
-    if args.publish_assets:
-        publish(OUTPUT, args.website, regions=NINE_MAP_RELEASE_REGIONS,
-                render_homepage=base.render_homepage, preview_manifests=manifests,
-                upload_workers=6)
-        plan = json.loads((OUTPUT / 'release-plan.json').read_text())
-        base.update_website(args.website, plan['regions'])
-        shutil.copyfile(OUTPUT / 'worldwide-catalog-v1.json', args.worldwide)
-    else:
-        OUTPUT.mkdir(parents=True, exist_ok=True)
-        stage(OUTPUT, args.website, regions=NINE_MAP_RELEASE_REGIONS,
-              render=base.render_homepage, archive=ARCHIVE, version_garmin=True)
-        merge_worldwide_catalogue(OUTPUT / 'worldwide-catalog-v1.json', args.worldwide,
-                                  regions=NINE_MAP_RELEASE_REGIONS)
-        plan = json.loads((OUTPUT / 'release-plan.json').read_text())
-        base.update_website(args.website, plan['regions'], OUTPUT / 'index.html')
-    stage_website_archive(args.website, args.website, OUTPUT / ARCHIVE)
-    print('Nine-map release staged with catalogues, area pages and website archive.', flush=True)
-
-
 if __name__ == '__main__':
-    main()
+    collection_cli(__doc__, OUTPUT, NINE_MAP_RELEASE_REGIONS, COUNTRIES, GROUPS)
